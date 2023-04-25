@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check."
-  ms.date: 2/8/2023
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -36,4 +36,4 @@ quiz:
       explanation: "This role is used for an Azure Active Directory investigation."
     - content: "Security Operations Analyst"
       isCorrect: false
-      explanation: "This role is used in Microsoft Sentinel investigations" 
+      explanation: "This role is used in Microsoft Sentinel investigations"

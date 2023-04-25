@@ -2,7 +2,7 @@ You can use Microsoft Intune to manage the devices and apps that your company's 
 
 Suppose that you're the administrator of a company with several thousand employees. You have multiple issues that you must check. First, you need to make sure your tenant is running successfully. Next, you need to troubleshoot why an individual end user is having device compliance issues. The third thing you want to do is get an overall enrollment status report of all the end users for your tenant. 
 
-Microsoft Endpoint Manager provides the tools, reports, and resources you need to confirm the state of your Microsoft Enterprise Mobility + Security solution. This module will provide details about each of the above resources.
+Microsoft Intune provides the tools, reports, and resources you need to confirm the state of your Microsoft Enterprise Mobility + Security solution. This module will provide details about each of the above resources.
 
 ## Learning objectives
 

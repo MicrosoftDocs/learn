@@ -26,7 +26,7 @@ What's the difference between the controller-based approach and minimal API?
    app.MapGet("/todos", await (TodoDb db) => db.Todos.ToListAsync());
    app.MapPost("/todos", await (Todo todo) => {});
    app.MapPut("/todos", (Todo todo) => {});
-   app.MapDelete("/todos/{id}", (int id) => {}});
+   app.MapDelete("/todos/{id}", (int id) => {});
    ```
 
 The same functionality is still there. You still configure a database, set up CORS, and add authentication in much the same way that you're used to.

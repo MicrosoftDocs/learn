@@ -1,4 +1,4 @@
-You're familiar with the basic features and benefits of Private Link. Now let's investigate how Private Link works. In particular, let's consider how it works with Private Endpoint and Private Link Service to offer private access to Azure services. This information will help you evaluate whether Private Link is the right solution for your company.
+You're familiar with the basic features and benefits of Private Link. Now let's investigate how Private Link works. In particular, let's consider how it works with Private Endpoint and Private Link Service to offer private access to Azure services. This information helps you evaluate whether Private Link is the right solution for your company.
 
 ## How Private Link fits into an Azure virtual network
 
@@ -54,7 +54,7 @@ Once you create the Private Link Service resource, Azure issues an *alias* for t
 
 * *prefix*. A name you supply for the custom service.
 * *guid*. A globally unique ID generated automatically by Azure.
-* *suffix*. The text region.azure.privatelinkservice; region is the region where the Private Link Service is deployed.
+* *suffix*. The text *region.azure.privatelinkservice*; region is the region where the Private Link Service is deployed.
 
 You share the Private Link Service alias with the consumers of your custom service. Each consumer then sets up a Private Endpoint in their own Azure virtual network. The consumer then maps the endpoint to the Private Link Service alias.
 

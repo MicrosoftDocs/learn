@@ -3,7 +3,7 @@ uid: learn.connect-app-to-azure-storage
 metadata:
   title: Connect an app to Azure Storage
   description: 'Create a simple application and add configuration, client library references, and C# or JavaScript code to connect it to Azure Storage.'
-  ms.date: 09/24/2018
+  ms.date: 03/24/2023
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial

@@ -9,6 +9,12 @@ The distributed tracing tool is available from the ASE on which the packet core 
 
 If you can't find the root cause of an issue with the distributed tracing tool, Azure Private 5G Core allows you to [collect a diagnostics package](#collect-and-share-a-diagnostics-package) from the relevant site. The package can then be used by Azure support engineers to assist you. In addition, Azure Private 5G Core allows you to use the [*UPF Trace (UPFT)* tool](#perform-data-plane-packet-capture) to do data plane packet analysis.
 
+## Video: Issue diagnosis
+
+The following video provides an overview of how to diagnose issues in Azure Private 5G Core:
+
+> [!VIDEO 9c711355-a0a0-460a-b9e9-28ceee39d603]
+
 ## Access the distributed tracing tool
 
 The URL for accessing the distributed tracing tool is as follows:

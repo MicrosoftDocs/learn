@@ -1,3 +1,4 @@
+
 When virtual networks are peered, you can configure Azure VPN Gateway in the peered virtual network as a _transit point_. In this scenario, a peered virtual network uses the remote VPN gateway to gain access to other resources.
 
 Consider a scenario where three virtual networks in the same region are connected by virtual network peering. Virtual network A and virtual network B are each peered with a hub virtual network. The hub virtual network contains several resources, including a gateway subnet and an Azure VPN gateway. The VPN gateway is configured to allow VPN gateway transit. Virtual network B accesses resources in the hub, including the gateway subnet, by using a remote VPN gateway. 
@@ -6,7 +7,7 @@ Consider a scenario where three virtual networks in the same region are connecte
 
 ### Things to know about Azure VPN Gateway
 
-Let's take a closer look at how Azure VP Gateway is implemented with Azure Virtual Network peering.
+Let's take a closer look at how Azure VPN Gateway is implemented with Azure Virtual Network peering.
 
 - A virtual network can have only one VPN gateway.
 

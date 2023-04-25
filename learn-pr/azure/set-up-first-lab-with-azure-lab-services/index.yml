@@ -8,7 +8,7 @@ metadata:
   author: mikejo5000
   ms.author: mikejo
   manager: jmartens
-  ms.topic: interactive-tutorial
+  ms.topic: module-build-your-first
   ms.prod: learning-azure 
 title: Set up your first lab using Azure Lab Services
 summary: "Quickly set up and provide on-demand access to pre-configured labs (virtual machines) to support your learning scenarios"

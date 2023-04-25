@@ -1,4 +1,4 @@
-In this section, you follow along with Amita and Andy as they talk about how to incorporate Selenium UI tests into the release pipeline. They begin by walking through the tests that Amita normally does manually. Then they map Amita's manual steps to automated test cases.
+In this section, you'll follow along with Amita and Andy as they talk about how to incorporate Selenium UI tests into the release pipeline. They begin by walking through the tests that Amita normally does manually. Then they map Amita's manual steps to automated test cases.
 
 ## Run UI tests manually
 
@@ -29,7 +29,7 @@ Amita opens a Windows laptop and launches Google Chrome. She goes to the web app
 
 Amita clicks the **Download game** button. The modal window appears.
 
-:::image type="content" source="../media/4-website-download-game-modal.png" alt-text="A browser showing the Download game modal window on the Space Game website.":::
+:::image type="content" source="../media/4-website-download-game-modal.png" alt-text="Screenshot of a browser showing the Download game modal window on the Space Game website.":::
 
 **Andy:** Great. What modal windows do you check next?
 
@@ -37,11 +37,11 @@ Amita clicks the **Download game** button. The modal window appears.
 
 Amita clicks each of the four thumbnail images to show the example game screens.
 
-:::image type="content" source="../media/4-website-game-screens.png" alt-text="A browser showing the game screen modal window on the Space Game website.":::
+:::image type="content" source="../media/4-website-game-screens.png" alt-text="Screenshot of a browser showing the game screen modal window on the Space Game website.":::
 
 Next Amita clicks the top player on the leaderboard. The player's profile appears.
 
-:::image type="content" source="../media/4-website-leaderboard.png" alt-text="A browser showing the leaderboard modal window on the Space Game website.":::
+:::image type="content" source="../media/4-website-leaderboard.png" alt-text="Screenshot of a browser showing the leaderboard modal window on the Space Game website.":::
 
 **Amita:** That covers the modal window tests. I run these tests on Windows because that's what most players use to visit our site. I run the tests on Chrome, and when I have time I also run them on Firefox and Microsoft Edge.
 
@@ -63,11 +63,11 @@ In a Selenium test, you can locate an HTML element by its:
 
 The locator you use depends on the way your HTML code is written and the kinds of queries you want to perform.
 
-In an HTML document, the `id` attribute specifies a unique identifier for an HTML element. Here you'll use the `id` attribute to query for elements on the page because each identifier must be unique. This makes the `id` attribute one of the easiest ways to query for elements in a Selenium test.
+In an HTML document, the `id` attribute specifies a unique identifier for an HTML element. Here, you'll use the `id` attribute to query for elements on the page because each identifier must be unique. This makes the `id` attribute one of the easiest ways to query for elements in a Selenium test.
 
 ## Get the ID for each HTML element
 
-Here you follow along with Amita and Andy as they collect the ID for each button that Amita clicks and for each resulting modal window.
+Here, you follow along with Amita and Andy as they collect the ID for each button that Amita clicks and for each resulting modal window.
 
 **Andy:** I can see why these tests take so long and can be so frustrating. You're going to love automating them. I promise.
 
@@ -79,13 +79,13 @@ Let's start by getting the `id` attribute for the **Download game** button.
 > You can follow these steps if you want to, or just read along. The next section provides all of the `id` attributes that you need when you run the automated tests.
 
 1. In Google Chrome, go to the _Space Game_ home page.
-1. Right-click the **Download game** button. Then select **Inspect**.
+1. Right-click the **Download game** button, then select **Inspect**.
 
     The developer tools window opens. The HTML code for the **Download game** button is highlighted.
 
 1. Examine the highlighted code and note the `id` attribute. Copy the `id` for later.
 
-    :::image type="content" source="../media/4-website-inspect-button.png" alt-text="A browser showing the developer tools window and a selected HTML element.":::
+    :::image type="content" source="../media/4-website-inspect-button.png" alt-text="Screenshot of a browser showing the developer tools window and a selected HTML element.":::
 
 1. Select the **Download game** button. Then repeat steps 2 and 3 to get the `id` attribute for the modal window that appears.
 1. Repeat the process for the four game screens and the top player on the leaderboard.

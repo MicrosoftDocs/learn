@@ -1,3 +1,4 @@
+
 Logging and monitoring the health of your services is a vital component of production applications. Azure Administrators determine the causes of failures and try to identify any problems before they occur.
 
 Azure Monitor is an important tool to help you in this process. It enables you to gather monitoring and diagnostic information about the health of your services. You can use this information to visualize and analyze the causes of problems that might occur in your app.

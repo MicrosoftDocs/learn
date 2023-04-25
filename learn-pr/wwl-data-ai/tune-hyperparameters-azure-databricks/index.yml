@@ -3,7 +3,7 @@ uid: learn.wwl.tune-hyperparameters-azure-databricks
 metadata:
   title: Tune hyperparameters with Azure Databricks
   description: "Tune hyperparameters with Azure Databricks"
-  ms.date: 10/13/2022
+  ms.date: 03/27/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -17,6 +17,7 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with using Python to train machine learning models in Azure Databricks.
 iconUrl: /training/achievements/hyperparameters-azure-databricks.svg
+hidden: true
 levels:
 - advanced
 roles:

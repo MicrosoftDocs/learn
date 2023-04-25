@@ -1,8 +1,8 @@
 You can use Node.js to find and return information about files and folders.
 
-Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders by store ID.
+Tailwind Traders has many physical stores all over the world. Each night, these stores create a file called *sales.json* that contains the total for all their sales for the previous day. These files are organized in folders named by store ID.
 
-In this exercise, you'll write a Node.js program that can search for files called *sales.json* in a folder.
+In this exercise, you write a Node.js program that can search for files called *sales.json* in a folder.
 
 ## Sign in to the sandbox
 
@@ -48,7 +48,7 @@ You need to find all the files in only the topmost location: the *stores* folder
    const fs = require("fs").promises;
    ```
 
-1. Create a `main` method. This method will be the entry point for your code. The last line of code in this file will invoke the `main` method.
+1. Create a `main` method. This method is the entry point for your code. The last line of code in this file invokes the `main` method.
 
    ```javascript
    const fs = require("fs").promises;
@@ -68,7 +68,7 @@ You need to find all the files in only the topmost location: the *stores* folder
    }
    ```
 
-1. Add an array at the top, which will hold the paths to all the sales files that the program finds.
+1. Add an array at the top, to hold the paths to all the sales files that the program finds.
 
    ```javascript
    async function findSalesFiles(folderName) {
@@ -172,7 +172,7 @@ You need to find all the files in only the topmost location: the *stores* folder
            // Make sure the discovered file is a sales.json file
            if (item.name === "sales.json") {
              // store the file path in the salesFiles array
-             salesFiles.push(`${folderName}/${item.name}`);
+             await salesFiles.push(`${folderName}/${item.name}`);
            }
          }
        }
@@ -212,7 +212,7 @@ You need to find all the files in only the topmost location: the *stores* folder
    ]
    ```
 
-Excellent! You've successfully written a command-line program that will traverse any directory and find all the *sales.json* files inside.
+Excellent! You've successfully written a command-line program that can traverse any directory and find all the *sales.json* files inside.
 
 However, the way that the path to subfolders was constructed in this example is a little clumsy because it requires concatenating strings together. Also, you might run into issues on other operating systems (like Windows) that use different path separators. 
 
@@ -223,7 +223,7 @@ In the next section, you'll learn how to construct paths that work across operat
 If you got stuck at any point in this exercise, here's the completed code. Remove everything in *index.js* and replace it with this solution.
 
 ```javascript
-const fs = require("fs");
+const fs = require("fs").promises;
 
 async function findSalesFiles(folderName) {
   // this array will hold sales files as they are found
@@ -243,7 +243,7 @@ async function findSalesFiles(folderName) {
         // Make sure the discovered file is a sales.json file
         if (item.name === "sales.json") {
           // store the file path in the salesFiles array
-          salesFiles.push(`${folderName}/${item.name}`);
+          await salesFiles.push(`${folderName}/${item.name}`);
         }
       }
     }

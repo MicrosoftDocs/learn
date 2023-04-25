@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn-wwl.migrate-sql-workloads-azure-sql-databases
 metadata:
-  title: Migrate SQL workloads to Azure SQL Databases
-  description: "Migrate SQL workloads to Azure SQL Databases"
-  ms.date: 01/07/2021
+  title: Migrate SQL workloads to Azure SQL databases
+  description: "Migrate SQL workloads to Azure SQL databases"
+  ms.date: 02/27/2023
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Migrate SQL workloads to Azure SQL Databases
+title: Migrate SQL workloads to Azure SQL databases
 summary: In this module, you will learn to demonstrate the benefits and processes for moving a SQL Server database to Azure SQL Database.
 abstract: |
   By the end of this module, you'll be able to:

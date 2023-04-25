@@ -1,3 +1,4 @@
+
 Azure Monitor is a key resource to keep watch on how all your Azure resources are performing, and to trigger alerts if there is any sort of problem. Monitoring your systems and updating them as needed is as important as your initial secure setup.
 
 ## Scenario

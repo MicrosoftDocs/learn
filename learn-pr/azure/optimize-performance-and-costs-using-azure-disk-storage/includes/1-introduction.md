@@ -8,9 +8,9 @@ You must evaluate Azure Disk Storage types and capabilities and propose a storag
 
 In this module, you'll learn more about:
 
-- The disk types that are available in Azure
-- How disk performance works
-- Performance-scaling options
+- The disk types that are available in Azure.
+- How disk performance works.
+- Performance-scaling options.
 
 ## Prerequisites
 

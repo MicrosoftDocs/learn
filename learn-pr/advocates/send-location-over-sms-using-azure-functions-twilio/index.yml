@@ -4,7 +4,7 @@ metadata:
   title: Share your location as a text message using Azure Functions and Twilio
   description: Learn how to use location tracking on your phone mixed with Azure Functions and Twilio to share your location with your friends as a text message.
   ms.date: 05/06/2022
-  author: acomfort248 
+  author: softchris 
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

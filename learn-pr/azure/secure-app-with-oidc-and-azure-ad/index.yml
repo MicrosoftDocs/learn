@@ -4,8 +4,8 @@ metadata:
   title: Secure your application by using OpenID Connect and Azure AD
   description: In this module, you will learn how to enable users to authenticate in multiple systems by using their Azure AD identities.
   ms.date: 07/17/2019
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  author: davidmu1
+  ms.author: davidmu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Secure your application by using OpenID Connect and Azure AD
@@ -18,6 +18,7 @@ abstract: |
 prerequisites: | 
   - Basic knowledge of C#
   - Basic knowledge of Azure AD
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free)
 iconUrl: /training/achievements/secure-app-with-oidc-and-azure-ad.svg
 levels:
 - intermediate

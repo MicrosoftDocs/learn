@@ -3,7 +3,7 @@ uid: learn.design-a-geographically-distributed-application
 metadata:
   title: Design a geographically distributed application
   description: Build an application that spans multiple geographic locations for high availability and resiliency.
-  ms.date: 11/07/2019
+  ms.date: 03/17/2023
   author: jboeshart
   ms.author: jaboes
   ms.topic: interactive-tutorial

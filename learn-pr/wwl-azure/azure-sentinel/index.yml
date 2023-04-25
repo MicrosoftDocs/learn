@@ -3,7 +3,7 @@ uid: learn.wwl.azure-sentinel
 metadata:
   title: Configure and monitor Microsoft Sentinel
   description: "Use Azure Sentinel to discover, track, and respond to security breaches within your Azure environment."
-  ms.date: 01/07/2022
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -11,7 +11,7 @@ metadata:
 title: Configure and monitor Microsoft Sentinel
 summary: Use Azure Sentinel to discover, track, and respond to security breaches within your Azure environment.
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
   - Explain what Azure Sentinel is and how it is used
   - Deploy Azure Sentinel
   - Connect data to Azure Sentinel, like Azure Logs, Azure AD, and others
@@ -27,6 +27,7 @@ roles:
 products:
 - azure
 - azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

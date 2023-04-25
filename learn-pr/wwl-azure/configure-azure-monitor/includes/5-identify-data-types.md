@@ -1,3 +1,4 @@
+
 Azure Monitor can collect data from various sources. You can think of the collected data as being categorized by tier. Tiers can include data collected from many sources, such as:
 - Your application
 - The operating system

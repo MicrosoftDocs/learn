@@ -41,7 +41,7 @@ Because the Teams storage locations are complex, there are several other conside
 
 - Impromptu and scheduled meeting messages are stored in the same way as group chat messages, so for this data, select the Teams chats location when you configure your retention policy.
 
-- For guest users in a meeting that your organization hosts, any messages from the meeting are stored in both your users mailbox and a shadow mailbox that's granted to the guest account. Retention policies aren't supported for shadow mailboxes but they can be reported as included in a "organization-wide" retention policy. 
+- For guest users in a meeting that your organization hosts, any messages from the meeting are stored in both your users mailbox and a shadow mailbox that's granted to the guest account. Retention policies aren't supported for shadow mailboxes but they can be reported as included in an "organization-wide" retention policy. 
 
 - For external users joining by using an account from another Microsoft 365 organization, your retention policies can't delete messages for this user because they're stored in that user's mailbox in another tenant.
 
@@ -49,5 +49,5 @@ It's also important to know what happens to the data of users, when they leave t
 
 | Documents and Files| Chat messages| Channel messages|
 | :--- | :--- | :--- |
-| Because files and documents stored in a team are located on SharePoint Online sites, the same behavior as for SharePoint Online and OneDrive applies.| If a user leaves the organization and the according account is deleted, the chat messages that are subject to retention are stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. | Channel messages posted by a user are stored in the Azure database and the mailbox of the teams. When a user leaves the organization, those data remains unaffected.|
+| Because files and documents stored in a team are located on SharePoint Online sites, the same behavior as for SharePoint Online and OneDrive applies.| If a user leaves the organization and the according account is deleted, the chat messages that are subject to retention are stored in an inactive mailbox. The chat messages remain subject to any retention policy that was placed on the user before their mailbox was made inactive, and the contents are available to an eDiscovery search. | Channel messages posted by a user are stored in the Azure database and the mailbox of the teams. When a user leaves the organization, their data remains unaffected.|
 

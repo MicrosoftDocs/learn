@@ -5,8 +5,8 @@ metadata:
   title: Introduction to quantum algorithms
   description: Short introduction to several famous quantum algorithms.
   ms.date: 09/09/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: bradben
+  ms.author: brbenefield
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

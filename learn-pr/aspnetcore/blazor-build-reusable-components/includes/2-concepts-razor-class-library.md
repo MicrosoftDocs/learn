@@ -18,7 +18,7 @@ You can also create projects on a command-line interface by running the followin
 
 ```dotnetcli
 dotnet new razorclasslib -o MyProjectName
-``` 
+```
 
 This template delivers an initial component named *Component1*, which contains several important features that your components can use:
 
@@ -54,7 +54,7 @@ A class library is a common package delivery structure in .NET applications, and
 ```
 
 - The project file contains an SDK reference to *Microsoft.NET.Sdk.Razor* to declare that it contains and creates Razor content as a Razor class library.
-- The `SupportedPlatform` entry declares that this library can be used in a `browser` platform - namely WebAssembly.
+- The `SupportedPlatform` entry declares that this library can be used in a `browser` platform, namely WebAssembly.
 - The `PackageReference` to the `Microsoft.AspNetCore.Components.Web` library gives access to the base Blazor components that are shipped with the framework. This lets you use those simple components to help you build more complex components.
 
 ### Razor component contents

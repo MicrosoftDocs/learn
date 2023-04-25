@@ -21,7 +21,6 @@ prerequisites: |
   - Intermediate knowledge of Azure management, including the ability to navigate the Azure portal and run Azure CLI commands.
   - Intermediate knowledge of containerization and container orchestration by using Kubernetes.
 iconUrl: /learn/achievements/generic-badge.svg
-hidden: true
 levels: 
   - intermediate
 roles: 

@@ -1,3 +1,4 @@
+
 Azure Monitor helps you maximize the availability and performance of your applications and services.
 
 In this module, you identified the features and usage cases for Azure Monitor. You examined how to configure and interpret metrics and logs. You explored the Azure Monitor components and data types. You learn how to configure Azure Monitor Logs (Log Analytics) activity Log monitoring.

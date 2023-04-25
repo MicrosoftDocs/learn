@@ -1,20 +1,21 @@
 Now you're ready to update your pipeline to deploy to both your test and production environments. In this unit, you'll update your pipeline to use templates so that you can reuse the stages across the environments.
 
-During the process, you'll: 
+During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a pipeline template for the lint stage.
-> * Add a pipeline template that defines the stages required to deploy to any environment.
-> * Update your pipeline to use the templates.
-> * Run your pipeline and view the results.
+>
+> - Add a pipeline template for the lint stage.
+> - Add a pipeline template that defines the stages required to deploy to any environment.
+> - Update your pipeline to use the templates.
+> - Run your pipeline and view the results.
 
 ## Add a pipeline template for the lint stage
 
 The lint stage happens only once during the pipeline run, regardless of how many environments the pipeline deploys to. So, you don't really need to use templates for the lint stage. But to keep your main pipeline definition file simple and easy to read, you decide to define the lint stage in a template.
 
-1. In Visual Studio Code, create a new folder named *pipeline-templates* inside the *deploy* folder.
+1. In Visual Studio Code, create a new folder named _pipeline-templates_ inside the _deploy_ folder.
 
-1. Create a new file in the *pipeline-templates* folder named *lint.yml*.
+1. Create a new file in the _pipeline-templates_ folder named _lint.yml_.
 
    :::image type="content" source="../media/5-visual-studio-code-lint-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the lint dot Y M L file.":::
 
@@ -24,17 +25,17 @@ The lint stage happens only once during the pipeline run, regardless of how many
 
    The lint stage is the same as the lint stage already in the pipeline, but now it's in a separate pipeline template file.
 
-1. Close the file and save your changes.
+1. Save your changes and close the file.
 
 ## Add a pipeline template for deployment
 
-Create a pipeline template that defines all of the stages required to deploy each of your environments. You'll use template parameters to specify the settings that might differ between environments.
+Create a pipeline template that defines all of the stages required to deploy each of your environments. You use template parameters to specify the settings that might differ between environments.
 
-1. Create a new file in the *pipeline-templates* folder named *deploy.yml*.
+1. Create a new file in the _pipeline-templates_ folder named _deploy.yml_.
 
-   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the deploy dot Y M L file.":::
+   :::image type="content" source="../media/5-visual-studio-code-deploy-yml-file.png" alt-text="Screenshot of Visual Studio Code Explorer, with the pipeline-templates folder and the deploy dot YML file.":::
 
-   This file will represent all of the deployment activities that run for each of your environments.
+   This file represents all of the deployment activities that run for each of your environments.
 
 1. Paste the following pipeline template parameters into the file:
 
@@ -73,7 +74,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    Notice that the `appServiceAppHostName` variable definition incorporates the `environmentType` parameter when it refers to the stage that published the host name. This parameter ensures that each smoke test stage runs against the correct environment.
 
-1. Verify that your *deploy.yml* file now looks like the following example:
+1. Verify that your _deploy.yml_ file now looks like the following example:
 
    :::code language="yaml" source="code/5-deploy.yml" :::
 
@@ -81,13 +82,13 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 ## Update the pipeline definition to use the templates
 
-1. Open the *azure-pipelines.yml* file.
+1. Open the _azure-pipelines.yml_ file.
 
 1. Update the file to use the new templates by replacing the contents with the following code:
 
    :::code language="yaml" source="code/5-pipeline.yml" :::
 
-   This pipeline runs the lint stage once. Then it uses the *deploy.yml* template file twice: once per environment. This keeps the pipeline definition clear and easy to understand. Also, the comments help explain what's happening.
+   This pipeline runs the lint stage once. Then it uses the _deploy.yml_ template file twice: once per environment. This keeps the pipeline definition clear and easy to understand. Also, the comments help explain what's happening.
 
 1. Save your changes.
 
@@ -121,7 +122,7 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
    Wait for the pipeline to finish running.
 
-1. Select the **Test** tab to show the test results from this pipeline run.
+1. Select the **Tests** tab to show the test results from this pipeline run.
 
    Notice that there are now four test results. The smoke test runs on both the test and production environments, so you see the results for both sets of tests.
 
@@ -137,11 +138,11 @@ Create a pipeline template that defines all of the stages required to deploy eac
 
 1. Select the deployment, and select the **Changes** tab.
 
-   Notice that **Changes** tab shows you the list of commits included in the deployment. This helps you to see exactly what has changed in your environment over time.
+   Notice that **Changes** tab shows you the list of commits included in the deployment. This information helps you to see exactly what has changed in your environment over time.
 
    :::image type="content" source="../media/5-environment-commits.png" alt-text="Screenshot of Azure Pipelines that shows the production environment's deployment details, with a list of commits.":::
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true). 
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyWebsiteProduction** resource group.
 

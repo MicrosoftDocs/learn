@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.sql-database-security.demonstration
+title: Perform Try-This exercises
+metadata:
+  title: Perform Try-This exercises
+  description: "Perform Try-This exercises"
+  ms.date: 04/06/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  zone_pivot_groups: None
+durationInMinutes: 15
+content: |
+  [!include[](includes/15-demonstration.md)]

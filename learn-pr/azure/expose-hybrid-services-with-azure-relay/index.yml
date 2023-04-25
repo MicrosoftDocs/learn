@@ -3,7 +3,7 @@ uid: learn.expose-hybrid-services-with-azure-relay
 metadata:
   title: Expose hybrid services securely with Azure Relay
   description: Securely expose services that run in your on-premises network to clients in the cloud, without having to open a port on your firewall or make intrusive changes to your corporate network infrastructure.
-  ms.date: 02/21/2020
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial

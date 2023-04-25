@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-microsoft-365-threat-protection
 metadata:
   title: Introduction to Microsoft 365 threat protection
   description: "Introduction to Microsoft 365 threat protection"
-  ms.date: 12/08/2022
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
@@ -15,7 +15,8 @@ abstract: |
   You should now be able to:
   - Understand Microsoft 365 Defender solution by domain
   - Understand Microsoft 365 Defender role in a Modern SOC
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/introduction-microsoft-365-threat-protection.svg
 levels:
 - intermediate
@@ -25,6 +26,7 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - m365
+- m365-threat-protection
 subjects:
 - cloud-security
 - security

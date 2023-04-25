@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-devices-windows-autopilot
+metadata:
+  title: MD-102 1-Deploy Devices using Windows Autopilot
+  description: "Use Autopilot to deploy new hardware or refreshing an existing hardware with the organization’s desired configuration, without using the traditional imaging process."
+  ms.date: 04/05/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy Devices using Windows Autopilot
+summary: Use Autopilot to deploy new hardware or refreshing an existing hardware with the organization’s desired configuration, without using the traditional imaging process.
+abstract: |
+  After completing this module, you will be able to:
+  - Explain the benefits of modern deployment for new devices.
+  - Describe the process of preparing for an Autopilot deployment.
+  - Describe the process of registering devices in Autopilot.
+  - Describe the different methods and scenarios of Autopilot deployments.
+  - Describe how to troubleshoot common Autopilot issues.
+  - Describe the process of deployment using traditional methods.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.deploy-devices-windows-autopilot.introduction
+- learn.wwl.deploy-devices-windows-autopilot.use-autopilot-for-modern-deployment
+- learn.wwl.deploy-devices-windows-autopilot.examine-requirements-for
+- learn.wwl.deploy-devices-windows-autopilot.prepare-device-ids-for-autopilot
+- learn.wwl.deploy-devices-windows-autopilot.implement-device-registration-out-of-box-customization
+- learn.wwl.deploy-devices-windows-autopilot.examine-autopilot-scenarios
+- learn.wwl.deploy-devices-windows-autopilot.troubleshoot
+- learn.wwl.deploy-devices-windows-autopilot.knowledge-check
+- learn.wwl.deploy-devices-windows-autopilot.summary
+badge:
+  uid: learn.wwl.deploy-devices-windows-autopilot.badge

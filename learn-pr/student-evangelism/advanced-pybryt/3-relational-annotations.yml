@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which expression below creates an annotation asserting that either `a1` or `a2` are satisfied?"
+    - content: "Which of the following expressions creates an annotation asserting that either `a1` or `a2` are satisfied?"
       choices:
         - content: "`a1 | a2`"
           isCorrect: true
@@ -26,7 +26,7 @@ quiz:
         - content: "`a1 & a2`"
           isCorrect: false
           explanation: "Not quite. This annotation requires both `a1` and `a2` to be satisfied."
-    - content: "Which of the following calls creates an annotation asserting that `v2` comes **strictly after** `v1` (that is, the timestamps of `v1` and `v2` can't be the same)?"
+    - content: "Which of the following calls creates an annotation asserting that `v2` comes **strictly after** `v1`. That is, the timestamps of `v1` and `v2` can't be the same?"
       choices:
         - content: "`v2.after(v1)`"
           isCorrect: false
@@ -36,7 +36,7 @@ quiz:
           explanation: "Not quite. Remember that the `BeforeAnnotation` is satisfied as long as the timestamps occur in _non-decreasing_ order."
         - content: "`~v1.after(v2)`"
           isCorrect: true
-          explanation: "Correct! This annotation asserts that the ordering of `[v2, v1]` must not be in non-decreasing order (that is, in strictly increasing order)."
+          explanation: "Correct! This annotation asserts that the ordering of `[v2, v1]` must not be in nondecreasing order (that is, in strictly increasing order)."
     - content: |
         Suppose we create an annotation `ann` with:
 

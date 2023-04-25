@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.execute-mobile-application-management.prepare-line-of-business-apps-app-protection-policies
+title: Prepare line-of-business apps for app protection policies
+metadata:
+  title: Prepare line-of-business apps for app protection policies
+  description: "Prepare line-of-business apps for app protection policies"
+  ms.date: 03/17/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: intune
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-prepare-line-of-business-apps-app-protection-policies.md)]

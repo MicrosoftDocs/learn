@@ -1,3 +1,4 @@
+
 As part of the sign-in experience for accounts in Azure AD, there are several ways that users can authenticate themselves. Historically, a username and password is the most common way a user would provide credentials. With modern authentication and security features in Azure AD, that basic password should be supplemented or replaced with more secure authentication methods.
 
 :::image type="content" source="../media/authentication-methods-4b9b6734.png" alt-text="Screenshot of the strengths and preferred authentication methods in Azure A D.":::
@@ -70,28 +71,28 @@ The FIDO (Fast IDentity Online) Alliance helps to promote open authentication sp
 
 ## Enable FIDO2 security key method
 
-1. Sign into the Azure portal.
-1. Browse to **Azure Active Directory** \- **Security** \- **Authentication methods** \- **Authentication method policy**.
-1. Under the method **FIDO2 Security Key**, choose the following options:
+1.  Sign into the Azure portal.
+2.  Browse to **Azure Active Directory** \- **Security** \- **Authentication methods** \- **Authentication method policy**.
+3.  Under the method **FIDO2 Security Key**, choose the following options:
     
     
      -  **Enable** \- Yes or No
      -  **Target** \- All users or Select users
-1. **Save** the configuration.
+4.  **Save** the configuration.
 
 ### Manage user registration and FIDO2 security keys
 
-1. Browse to **https://myprofile.microsoft.com**.
-1. Sign in if you haven't already.
-1. Select **Security Info**.
-1. If the user already has at least one Azure AD Multi-Factor Authentication method registered, they can immediately register a FIDO2 security key.
-1. If they don't have at least one Azure AD Multi-Factor Authentication method registered, they must add one.
-1. Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
-1. Choose **USB device** or **NFC device**.
-1. Have your key ready and choose **Next**.
-1. A box will appear and ask the user to create/enter a PIN for your security key and then perform the required gesture for the key, either biometric or touch.
-1. The user will be returned to the combined registration experience and asked to provide a meaningful name for the key so the user can identify which one if they have multiple. Select **Next**.
-1. Select **Done** to complete the process.
+1.  Browse to **https://myprofile.microsoft.com**.
+2.  Sign in if you haven't already.
+3.  Select **Security Info**.
+4.  If the user already has at least one Azure AD Multi-Factor Authentication method registered, they can immediately register a FIDO2 security key.
+5.  If they don't have at least one Azure AD Multi-Factor Authentication method registered, they must add one.
+6.  Add a FIDO2 security key by selecting **Add method** and choosing **Security key**.
+7.  Choose **USB device** or **NFC device**.
+8.  Have your key ready and choose **Next**.
+9.  A box will appear and ask the user to create/enter a PIN for your security key and then perform the required gesture for the key, either biometric or touch.
+10. The user will be returned to the combined registration experience and asked to provide a meaningful name for the key so the user can identify which one if they have multiple. Select **Next**.
+11. Select **Done** to complete the process.
 
 ### Sign in with passwordless credential
 

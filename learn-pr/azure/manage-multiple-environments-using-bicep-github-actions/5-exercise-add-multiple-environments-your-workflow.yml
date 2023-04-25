@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Add multiple environments to your workflow
   description: Update a deployment workflow to deploy to two environments, and use a called workflow with parameters.
-  ms.date: 11/08/2021
+  ms.date: 02/24/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial

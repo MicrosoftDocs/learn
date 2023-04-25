@@ -1,20 +1,20 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.sc-100-recommend-security-best-practices
 metadata:
-  title: 'SC-100: Recommend security best practices'
-  description: 'SC-100: Recommend security best practices'
-  ms.date: 10/19/2022
+  title: 'SC-100: Recommend Security Best Practices'
+  description: This learning path shows you how to use critical Microsoft security best practices to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: 'SC-100: Recommend security best practices'
+title: 'SC-100: Recommend Security Best Practices'
 prerequisites: |
-  - Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
-  - Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
+  *   Conceptual knowledge of security policies, requirements, zero trust architecture, and management of hybrid environments
+  *   Working experience with zero trust strategies, applying security policies, and developing security requirements based on business goals
 summary: |
   You'll learn how to use critical Microsoft security best practices to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
-iconUrl: /learn/achievements/generic-trophy.svg
+iconUrl: /training/achievements/sc-100-recommend-security-best-practices.svg
 levels:
 - advanced
 roles:

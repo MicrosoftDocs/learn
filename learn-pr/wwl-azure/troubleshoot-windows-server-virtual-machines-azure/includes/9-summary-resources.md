@@ -27,3 +27,4 @@ Use these resources to discover more.
 - [Troubleshoot Remote Desktop connections to an Azure virtual machine](/troubleshoot/azure/virtual-machines/troubleshoot-rdp-connection)
 
 - [Introduction to Azure Bastion](/training/modules/intro-to-azure-bastion)
+

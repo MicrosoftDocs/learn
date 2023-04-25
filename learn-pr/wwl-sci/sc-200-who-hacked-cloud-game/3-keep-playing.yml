@@ -2,13 +2,13 @@
 uid: learn.wwl.sc-200-who-hacked-cloud-game.keep-playing
 title: Keep playing to find the culprit!
 metadata:
-  title: Keep playing to find the culprit
+  title: Keep playing to find the culprit!
   description: "Keep playing the Who Hacked? game."
-  ms.date: 2/6/2023
+  ms.date: 02/17/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/3-keep-playing.md)]

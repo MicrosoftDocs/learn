@@ -3,16 +3,16 @@ uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-defender-for-endpoint
 metadata:
   title: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
   description: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
-  ms.date: 11/05/2021
+  ms.date: 02/17/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: 'SC-200: Mitigate threats using Microsoft Defender for Endpoint'
 prerequisites: |
   - Basic understanding of Microsoft 365
   - Intermediate understanding of Windows 10 devices
-  - Understanding of Microsoft Defender like you could learn from learning path SC-200: Mitigate threats using Microsoft Defender
+  - Understanding of Microsoft Defender by completing learning path SC-200: Mitigate threats using Microsoft Defender
 summary: |
   Implement the Microsoft Defender for Endpoint platform to detect, investigate, and respond to advanced threats.  This learning path aligns with exam SC-200: Microsoft Security Operations Analyst.
 iconUrl: /training/achievements/mitigate-threats-using-microsoft-defender-for-endpoint.svg
@@ -21,8 +21,14 @@ levels:
 roles:
 - security-operations-analyst
 products:
+- m365-security-center
+- mdatp
 - windows
+- microsoft-defender
 subjects:
+- compliance
+- device-management
+- security
 - threat-protection
 modules:
 - learn-m365.m365-security-threat-protect

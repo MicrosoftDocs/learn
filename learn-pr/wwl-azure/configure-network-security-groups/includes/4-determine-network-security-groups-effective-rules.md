@@ -33,8 +33,6 @@ Azure processes rules for inbound traffic for all VMs in the configuration. Azur
 
 - NSG inbound rules for a subnet in a VM take precedence over NSG inbound rules for a NIC in the same VM.
 
-- To allow inbound traffic on port 80 to reach a VM, both the NSG for the subnet in a VM, and the NSG for a NIC in the same VM, must define a rule to allow inbound traffic on port 80 from the internet.
-
 #### Outbound traffic effective rules
 
 Azure processes rules for outbound traffic by first examining NSG associations for NICs in all VMs. 
@@ -42,8 +40,6 @@ Azure processes rules for outbound traffic by first examining NSG associations f
 - When an NSG is created, Azure creates the default security rule `AllowInternetOutbound` for the group. The default behavior is to allow all outbound traffic to the internet. If an NSG has a subnet or NIC, the rules for the subnet or NIC can override the default Azure security rules.
 
 - NSG outbound rules for a NIC in a VM take precedence over NSG outbound rules for a subnet in the same VM.
-
-- To deny outbound traffic on port 80 to leave a VM, both the NSG for the subnet in a VM, and the NSG for a NIC in the same VM, must define a rule to deny outbound traffic on port 80 to the internet.
 
 ### Things to consider when creating effective rules
 

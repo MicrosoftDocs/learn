@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.azure-netapp-files-with-vmware-solution
+metadata:
+  title: Using Azure NetApp Files with Azure VMware Solution
+  description: This module helps you understand Azure NetApp Files and how to use it with the Azure VMware Solution. 
+  ms.date: 02/21/2023
+  author: PageWriter-MSFT
+  ms.author: b-ahibbard
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Using Azure NetApp Files with Azure VMware Solution
+summary: |
+  This module helps you understand Microsoft Azure NetApp Files and how to use it with the Azure VMware Solution. 
+abstract: |
+  In this module, you'll demonstrate your ability to:
+   - Apply mission-critical design principles to an existing architecture to make it fault tolerant.
+   - Define key strategies for observing the overall health of the system
+prerequisites: |
+    - Basic understanding of virtual machines. 
+    - Basic understanding of Azure VMware Solution. 
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- advanced
+roles:
+- administrator
+- database-administrator
+- solution-architect
+products:
+- azure-netapp-files
+- azure-vmware-solution
+subjects:
+- cloud-computing
+- storage
+- migration
+units:
+- learn.azure.azure-netapp-files-with-vmware-solution.introduction
+- learn.azure.azure-netapp-files-with-vmware-solution.what-is-azure-netapp-files
+- learn.azure.azure-netapp-files-with-vmware-solution.prepare-to-attach
+- learn.azure.azure-netapp-files-with-vmware-solution.map-azure-netapp-files-shares
+- learn.azure.azure-netapp-files-with-vmware-solution.knowledge-check
+- learn.azure.azure-netapp-files-with-vmware-solution.summary
+badge:
+  uid: learn.azure-netapp-files-with-vmware-solution.badge

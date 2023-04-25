@@ -5,8 +5,8 @@ metadata:
   unitType: learning-content  
   title: When to use Azure SQL Edge
   description: When to use Azure SQL Edge
-  ms.date: 03/26/2021  
-  author: rwestmsft
+  ms.date: 02/27/2023
+  author: rwestMSFT
   ms.author: randolphwest  
   manager: jroth
   ms.topic: interactive-tutorial 

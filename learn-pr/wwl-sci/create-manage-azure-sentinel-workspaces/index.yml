@@ -24,9 +24,11 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
+- azure-log-analytics
 subjects:
 - threat-protection
+- cloud-security
 units:
 - learn.wwl.create-manage-azure-sentinel-workspaces.introduction
 - learn.wwl.create-manage-azure-sentinel-workspaces.plan-for-workspace

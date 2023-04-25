@@ -28,7 +28,7 @@ A hub-spoke architecture can be achieved via a customer-managed hub infrastructu
 
 Azure Virtual WAN is a networking service that provides optimized and automated branch connectivity to, and through, Azure. Azure regions serve as hubs that you can choose to connect your branches to. You can apply the Azure backbone to also connect branches and enjoy branch-to-VNet connectivity. Azure Virtual WAN brings together many Azure cloud connectivity services such as site-to-site VPN, ExpressRoute, point-to-site user VPN into a single operational interface. Connectivity to Azure VNets is established by using virtual network connections.
 
-**Reference architecture**: [Hub-spoke topology with Azure Virtual WAN](/azure/architecture/reference-architectures/hybrid-networking/hub-spoke)
+**Reference architecture**: [Hub-spoke topology with Azure Virtual WAN](/azure/architecture/networking/hub-spoke-vwan-architecture)
 
 The Azure Virtual WAN architecture includes the benefits of standard hub-spoke network topology and introduces several advantages:
 - Full meshed hub among Azure virtual networks

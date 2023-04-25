@@ -4,13 +4,11 @@ title: Create the local network gateway
 metadata:
   title: Create the local network gateway
   description: "Create the local network gateway"
-  ms.date: 01/18/2023
+  ms.date: 02/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-create-local-network-gateway.md)]

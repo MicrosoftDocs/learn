@@ -12,11 +12,11 @@ When choosing storage, consider the differences between Premium Storage and Stan
 
 ## What are unmanaged and managed disks?
 
-All Azure VM disks reside in Azure Storage accounts. An Azure Storage account is a logical namespace that, depending on its type, is capable of hosting different types of objects, including blobs, tables, queues, and files. When deploying an Azure VM, you must choose the type of disks that will host the operating system disk, and optionally, data disks. You can use unmanaged or managed disk types.
+All Azure VM disks reside in Azure Storage accounts. An Azure Storage account is a logical namespace that, depending on its type, is capable of hosting different types of objects, including blobs, tables, queues, and files. When deploying an Azure VM, you must choose the type of disks that host the operating system disk, and optionally, data disks. You can use unmanaged or managed disk types.
 
 ### Unmanaged disks
 
-The use of unmanaged disks involves potentially significant administrative overhead. You must decide how many storage accounts you will create, then create those accounts, then decide how you will distribute .vhd disk files across them. You must also manually implement resiliency provisions by ensuring that when provisioning two or more Azure VMs into the same availability set, their respective storage accounts don't reside in the same storage stamp.
+The use of unmanaged disks involves potentially significant administrative overhead. You must decide how many storage accounts you create, then create those accounts, then decide how you distribute .vhd disk files across them. You must also manually implement resiliency provisions by ensuring that when provisioning two or more Azure VMs into the same availability set, their respective storage accounts don't reside in the same storage stamp.
 
 ### Managed disks
 
@@ -40,7 +40,7 @@ You can eliminate this administrative overhead by using managed disks. With this
 > Ensure that you select the appropriate disk type when you deploy your VMs. Although you can convert Azure VM unmanaged disks to managed disks, this requires stopping and deallocating all VMs in the availability set. In addition, there is no support for converting managed disks to unmanaged disks.
 ## What are the common storage issues?
 
-Aside from the performance issues we discussed earlier in this module, you might occasionally encounter storage problems with your Azure VMs. There are a number of common issues that you might encounter. These include:
+Aside from the performance issues we discussed earlier in this module, you might occasionally encounter storage problems with your Azure VMs. There are many common issues that you might encounter. These include:
 
 - Cannot extend an encrypted OS volume in Windows
 
@@ -110,15 +110,15 @@ If you attempt to create an Azure VM by uploading a VHD, the operation might fai
 
 *ErrorCode: InvalidVhd*
 
-*ErrorMessage: The specified cookie value in VHD footer indicates that disk 'diskname' with blob https://xxxxxx.blob.core.windows.net/vhds/samplename.vhd is not a supported VHD. Disk is expected to have cookie value 'conectix'.*
+*ErrorMessage: The specified cookie value in VHD footer indicates that disk 'diskname' with blob `https://xxxxxx.blob.core.windows.net/vhds/samplename.vhd` is not a supported VHD. Disk is expected to have cookie value 'conectix'.*
 
 This can occur for two reasons:
 
 - Your VHD is corrupt or not supported. In this circumstance, you should rebuild the VHD.
 
-- The VHD you're uploading doesn't comply with the 1 MB alignment. The disk size should be 1 MB * N. For example, the disk should be 102,401 MB.
+- The VHD you're uploading doesn't comply with the 1-MB alignment. The disk size should be 1 MB * N. For example, the disk should be 102,401 MB.
 
-To resolve the 1 MB alignment issue, use the `Resize-VHD` Windows PowerShell cmdlet:
+To resolve the 1-MB alignment issue, use the `Resize-VHD` Windows PowerShell cmdlet:
 
 1. Install the Hyper-V role on Windows Server
 

@@ -14,8 +14,12 @@ You can also now use Azure Blob Storage features to help your organization minim
 
 - [Optimize costs for Blob storage with reserved capacity](/azure/storage/blobs/storage-blob-reserved-capacity)
 
-- [Hot, Cool, and Archive access tiers for blob data](/azure/storage/blobs/access-tiers-overview?tabs=azure-portal)
+- [Hot, cool, and archive access tiers for blob data](/azure/storage/blobs/access-tiers-overview?tabs=azure-portal)
+
+- [Best practices for using blob access tiers](/azure/storage/blobs/access-tiers-best-practices)
 
 - [Optimize costs by automatically managing the data lifecycle](/azure/storage/blobs/lifecycle-management-overview?tabs=azure-portal)
 
 - [Estimating Pricing for Azure Block Blob Deployments](https://azure.github.io/Storage/docs/application-and-user-data/code-samples/estimate-block-blob/)
+
+- [Estimate the cost of archiving data](/azure/storage/blobs/archive-cost-estimation)

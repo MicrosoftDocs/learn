@@ -73,7 +73,7 @@ After you connect your data sources to Microsoft Sentinel, you get data visualiz
 
 To confirm that your connectors work, go to the Azure portal. In the Azure portal, select **Microsoft Sentinel**, and then select the workspace that you used when you enabled Microsoft Sentinel.
 
-:::image type="content" source="../media/sentinel-analytics.png" alt-text="Screenshot of the Microsoft Sentinel - Analytics overview page." border="false":::
+:::image type="content" source="../media/sentinel-analytics.png" alt-text="Screenshot of the Microsoft Sentinel Analytics overview page." border="false":::
 
 The main body of the overview page provides insight into the security status of your workspace. The following screenshot shows the events and alerts over time section.
 

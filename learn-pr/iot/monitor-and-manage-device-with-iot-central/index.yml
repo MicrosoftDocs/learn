@@ -1,0 +1,46 @@
+### YamlMime:Module
+uid: learn.monitor-manage-device-with-iotcentral
+metadata:
+  title: Build your first Azure IoT Central application to manage your coffee machines
+  description: Create an Azure IoT Central application to monitor and manage an IoT device.
+  ms.date: 03/16/2023
+  author: asergaz
+  ms.author: sergaz
+  ms.reviewer: adchukwu
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-build-your-first
+  ms.prod: learning-azure
+title: Build your first Azure IoT Central application to manage your coffee machines
+summary: Create an Azure IoT Central custom application to monitor telemetry, observe the state of the coffee machine simulator, send commands and configure rules for maintenance notifications.
+abstract: |
+  Upon completion of this module, you'll be able to:
+  - Create an Azure IoT Central custom application
+  - Connect a coffee machine simulator to your application
+  - Monitor telemetry and send commands to the simulator
+  - Configure rules for maintenance notifications
+prerequisites: |
+  - Basic familiarity with IT terms and concepts
+iconUrl: /training/achievements/monitor-and-manage-device-with-iot-central.svg
+levels: 
+- beginner
+roles: 
+- administrator
+- developer
+products: 
+- azure-iot-central
+subjects:
+- iot
+units:
+- learn.monitor-manage-device-with-iotcentral.introduction
+- learn.monitor-manage-device-with-iotcentral.create-azure-iot-central-application
+- learn.monitor-manage-device-with-iotcentral.define-coffee-machine-device-template
+- learn.monitor-manage-device-with-iotcentral.create-coffee-machine-device-template
+- learn.monitor-manage-device-with-iotcentral.define-coffee-machine-device-simulator
+- learn.monitor-manage-device-with-iotcentral.connect-coffee-machine-device-simulator
+- learn.monitor-manage-device-with-iotcentral.monitor-manage-coffee-machines
+- learn.monitor-manage-device-with-iotcentral.configure-rules-actions
+- learn.monitor-manage-device-with-iotcentral.knowledge-check
+- learn.monitor-manage-device-with-iotcentral.summary
+badge:
+  uid: learn.monitor-manage-device-with-iotcentral.badge

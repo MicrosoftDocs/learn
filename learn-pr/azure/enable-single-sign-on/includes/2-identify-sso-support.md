@@ -1,18 +1,18 @@
-A team asked the administrator of the retail company to add a new application to help with company promotion. The administrator searches for the application in the Azure Active Directory (Azure AD) application gallery and identifies single sign-on support for it. 
+A team asked the IT administrator of the commercial bank to add a new application to help with company promotion. The administrator searches for the application in the Azure Active Directory (Azure AD) application gallery and identifies single sign-on support for it. 
 
-Employees in the retail company likely already have an account in the tenant for the organization, but for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successfully testing it with single sign-on configured.
+Employees in the bank likely already have an account in the tenant for the organization, but for testing single sign-on for the application, the administrator should create a test user account. The administrator makes the application available to employees after successfully testing it with single sign-on configured.
 
 ## Azure AD application gallery
 
-Azure AD has a gallery that contains thousands of pre-integrated applications. Many of the applications that the retail company uses are probably already in the gallery. When the administrator adds an application to the company's tenant, the following tasks are completed:
+Azure AD application gallery is a catalogue of thousands of pre-integrated applications. Many of the applications that the commercial bank uses are probably already in the gallery. When you add an application from the gallery, you must complete the following tasks:
 
-- Properties are configured for managing the application
-- Users are assigned access
-- Single sign-on is set up so that the users can sign in with their Azure AD credentials
+- Configure properties for managing the application
+- Grant access to users
+- Set up single sign-on so that the users can sign in with their Azure AD credentials
 
 You can use the following filters when searching for the application in the gallery:
 
-- **Single sign-on options**: Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked. Listed as **Single Sign-on Mode** on the overview pane for an application in the gallery.
+- **Single sign-on**: Search for applications that support these SSO types: SAML, OpenID Connect (OIDC), Password, or Linked.
 - **User account management**: The only option available is automated provisioning.
 - **Categories**: When an application is added to the gallery, it can be classified in a specific category. Many categories are available, such as Business management, Collaboration, or Education.
 

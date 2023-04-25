@@ -25,7 +25,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
 prerequisites: |
   - A web browser
   - Visual Studio Code and Live Server extension, installed

@@ -6,7 +6,7 @@ metadata:
   description: "Connect Microsoft Defender legacy connectors"
   ms.date: 11/14/2022
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

@@ -3,28 +3,29 @@ Your team has built some security-hardened Bicep files that are compliant with y
 During the process, you'll:
 
 > [!div class="checklist"]
-> * Add a lint job to the workflow.
-> * Add a workflow job to publish the template spec.
-> * Manually run the workflow and verify that it finishes successfully.
-> * Check the published template spec in Azure.
+>
+> - Add a lint job to the workflow.
+> - Add a workflow job to publish the template spec.
+> - Manually run the workflow and verify that it finishes successfully.
+> - Check the published template spec in Azure.
 
 ## Add a lint job to your workflow
 
 Your repository contains a draft of a workflow that you can use as a starting point.
 
-1. In Visual Studio Code, expand the *.github* folder in the root of the repository. Then, expand the *workflows* folder.
+1. In Visual Studio Code, expand the _.github/workflows_ folder in the root of the repository.
 
-1. Open the *template-spec-linux-app-service.yml* file.
+1. Open the _template-spec-linux-app-service.yml_ file.
 
    :::image type="content" source="../media/4-visual-studio-code-workflow.png" alt-text="Screenshot of Visual Studio Code that shows the location of the workflow definition file.":::
 
-   The workflow definition includes two triggers. In this exercise, you won't modify the Bicep file for the template spec, so the `push` trigger never fires. To try out your workflow, you manually invoke it by using the `workflow_dispatch` trigger.
+   The workflow definition includes two triggers. In this exercise, you don't modify the Bicep file for the template spec, so the `push` trigger never fires. To try out your workflow, you manually invoke it by using the `workflow_dispatch` trigger.
 
 1. At the bottom of the file, where you see a comment that says **To be added**, add the following lint job definition:
 
    :::code language="yaml" source="code/4-workflow.yml" range="22-28" highlight="2-7" :::
 
-   Your repository has a *bicepconfig.json* file that configures the linter to emit errors instead of warnings. Any failures during the lint job will cause the workflow to fail.
+   Your repository has a _bicepconfig.json_ file that configures the linter to emit errors instead of warnings. Any failures during the lint job will cause the workflow to fail.
 
    > [!TIP]
    > YAML files are sensitive to indentation. Whether you type or paste this code, make sure your indentation is correct. Later in this exercise, you'll see the complete YAML workflow definition so that you can verify that your file matches.
@@ -33,20 +34,20 @@ Your repository contains a draft of a workflow that you can use as a starting po
 
 Now, you can add a second job to publish the template spec to Azure.
 
-1. Add the following code at the end of the *template-spec-linux-app-service.yml* file:
+1. Add the following code at the end of the _template-spec-linux-app-service.yml_ file:
 
    :::code language="yaml" source="code/4-workflow.yml" range="30-51" :::
 
-   This job checks out the code from your repository and signs in to Azure by using GitHub secret that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
+   This job checks out the code from your repository and signs in to Azure by using the GitHub secrets that you created earlier. It then runs the `az ts create` command to publish the template spec to Azure.
 
    > [!TIP]
-   > To keep things simple, your workflow uses the workflow's *run number* as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
+   > To keep things simple, your workflow uses the workflow's _run number_ as the template spec's version number. In the next unit, you'll learn about a more complex versioning scheme.
 
 1. Save your changes to the file.
 
 ## Verify and commit your workflow definition
 
-1. Verify that your *template-spec-linux-app-service.yml* file looks like the following example:
+1. Verify that your _template-spec-linux-app-service.yml_ file looks like the following example:
 
    :::code language="yaml" source="code/4-workflow.yml" highlight="23-51" :::
 
@@ -74,7 +75,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
    :::image type="content" source="../media/4-actions.png" alt-text="Screenshot of GitHub that shows the Actions tab.":::
 
-   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed.
+   Failed workflow runs are listed already, but you don't need to worry about them. They failed because the workflow definitions weren't yet completed when you created the repository.
 
 1. Select the **template-spec-linux-app-service** workflow, select the **Run workflow** button, and then select **Run workflow**.
 
@@ -96,7 +97,7 @@ Now, you can add a second job to publish the template spec to Azure.
 
 You can also view the published template spec in the Azure portal.
 
-1. In your browser, go to the [Azure portal](https://portal.azure.com?azure-portal=true).
+1. In your browser, go to the [Azure portal](https://portal.azure.com).
 
 1. Go to the **ToyReusable** resource group, and select the **linux-app-service** template spec.
 

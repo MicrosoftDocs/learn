@@ -4,19 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/10/2023
+  ms.date: 03/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "What's the best backup method for the company's production virtual machines?"
     choices:
@@ -29,7 +26,6 @@ quiz:
     - content: "Azure Site Recovery"
       isCorrect: false
       explanation: "Incorrect. Azure Site Recovery is better for scenarios involving replication, failover, and fall back."
-  
   - content: "Which option should you recommend to back up the Engineering database disks?"
     choices:
     - content: "Azure virtual machine backup"
@@ -41,7 +37,6 @@ quiz:
     - content: "Azure managed disks snapshots"
       isCorrect: true
       explanation: "Correct. Azure snapshots can be taken at any time, and can be used to quickly restore a database data disk."
-
   - content: "A recent malware attack deleted several virtual machine backups. How long are backup items available in a soft delete state?"
     choices:
     - content: "14 days"

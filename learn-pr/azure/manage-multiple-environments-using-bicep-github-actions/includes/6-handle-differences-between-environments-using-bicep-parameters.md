@@ -1,4 +1,4 @@
-You've already learned about Bicep parameters. They help you specify values that can change between deployments of your Bicep files. 
+You've already learned about Bicep parameters. They help you specify values that can change between deployments of your Bicep files.
 
 Parameters are commonly used to support the differences between your environments. For example, in your non-production environments, you often want to deploy inexpensive SKUs of your Azure resources. In production, you want to deploy SKUs that have better performance. And you might want to use different names for resources in each environment.
 
@@ -24,11 +24,11 @@ Here's an example parameter file:
 
 Parameter files can be committed to your Git repository alongside your Bicep file. You can then refer to the parameter file in your workflow template where you execute your deployment.
 
-It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files *parameters.ENVIRONMENT_NAME.json*, like *parameters.Production.json*. Then, you can use a workflow template input to automatically select the correct parameter file based on an input value.
+It's a good idea to establish a consistent environment-naming strategy for parameter files. For example, you might name your parameter files _parameters.ENVIRONMENT_NAME.json_, like _parameters.Production.json_. Then, you can use a workflow template input to automatically select the correct parameter file based on an input value.
 
 :::code language="yaml" source="code/6-parameter-file.yml" highlight="4, 19" :::
 
-When you use parameter files, your workflow YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is especially helpful when you have a large number of parameters. 
+When you use parameter files, your workflow YAML files don't need to contain a list of parameters that need to be passed to your deployment steps individually. This is especially helpful when you have a large number of parameters.
 
 A parameter file keeps the parameter values together in a single JSON file. The parameter files are also part of your Git repository, so they can get versioned in the same way as all your other code.
 
@@ -37,7 +37,7 @@ A parameter file keeps the parameter values together in a single JSON file. The 
 
 ## Workflow variables
 
-GitHub Actions enables you to store *workflow variables*, which are useful for values that might be different between environments. They're also useful for values that you want to define only once and then reuse throughout your workflow.
+GitHub Actions enables you to store _workflow variables_, which are useful for values that might be different between environments. They're also useful for values that you want to define only once and then reuse throughout your workflow.
 
 ### Variables defined in a YAML file
 
@@ -49,11 +49,11 @@ You can define variables and set their values within a YAML file. This is useful
 
 Like Bicep parameter files, YAML files aren't suitable for secrets. Instead, you can define secrets by using the GitHub web interface. You can change the variable values at any time, and the workflow will read the updated values the next time it runs. GitHub Actions tries to hide the secrets' values in the workflow logs. This means you can store values that your Bicep file then accepts as parameters with the `@secure()` decorator.
 
-[!include[Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
+[!INCLUDE [Best-effort protection for secrets](../../includes/github-actions-secret-best-effort.md)]
 
-When you create a secret, GitHub enables you to choose whether to scope it to your entire Git repository or to a specific environment. Environment-scoped secrets honor the protection rules you configure on your environments. This means that, if you configure a required reviewer rule, a workflow can't access the secrets' values until the specified GitHub user has approved your pipeline to deploy to that environment.
+When you create a secret, GitHub enables you to choose whether to scope it to your entire Git repository or to a specific environment. Environment-scoped secrets honor the protection rules you configure on your environments. This means that, if you configure a required reviewer rule, a workflow can't access the secrets values until the specified GitHub user has approved your pipeline to deploy to that environment.
 
-Environment-scoped secrets can be very helpful, but they don't easily work with Azure Resource Manager's preflight validation or what-if operations. These operations need to communicate with Azure, which means they need a workload identity. You generally want to provide deployment approval *after* the preflight validation or what-if operations are completed, so that you but have a high degree of confidence in the changes that you're deploying. So, if you use environment-scoped secrets, the human review process happens too early in your workflow.
+Environment-scoped secrets can be helpful, but they don't easily work with Azure Resource Manager's preflight validation or what-if operations. These operations need to communicate with Azure, which means they need a workload identity. You generally want to provide deployment approval _after_ the preflight validation or what-if operations are completed, so that you but have a high degree of confidence in the changes that you're deploying. So, if you use environment-scoped secrets, the human review process happens too early in your workflow.
 
 For this reason, in this module's exercises you don't use environment-scoped secrets. Instead, you create repository-scoped secrets with predictable names that include the environment name. This enables your workflow to identify the correct secret to use for each environment. In your own workflows, you might choose to use repository-scoped secrets, environment-scoped secrets, or even a mixture of both.
 
@@ -92,7 +92,7 @@ Also, keep in mind that parameters are often used in Bicep when resources need t
 
 ### Use workflow variables for small sets of parameters
 
-If you have only a small number of parameters for your Bicep files, consider defining variables in your YAML file.
+If you have only a few parameters for your Bicep files, consider defining variables in your YAML file.
 
 ### Use parameter files for large sets of parameters
 
@@ -110,7 +110,7 @@ GitHub can automatically scan your repository for secrets that have been acciden
 
 ### Combine approaches
 
-It's common to combine multiple approaches to handle your parameters. For example, you can store the majority of your parameter values in parameter files, and then just set secure values by using a secret. The following example illustrates the combination:
+It's common to combine multiple approaches to handle your parameters. For example, you can store most your parameter values in parameter files, and then set secure values by using a secret. The following example illustrates the combination:
 
 :::code language="yaml" source="code/6-multiple.yml" highlight="17-18, 39-41" :::
 

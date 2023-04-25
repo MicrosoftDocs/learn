@@ -4,9 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Multiple-choice questions
-  ms.date: 05/25/2021
+  ms.date: 02/27/2023
   author: tomreidnz
   ms.author: jasdeb
+  ms.reviewer: franksolomon
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -17,11 +18,11 @@ quiz:
     choices:
     - content: "Removing rows of data makes our model more powerful"
       isCorrect: false
-      explanation: "Incorrect. While removing bad data makes models perform better, solely removing data does not make models more powerful."
-    - content: "Cleaning data helps us select features that will be helpful for the model’s performance"
+      explanation: "Incorrect. While removing bad data makes models perform better, only removing data does not make models more powerful."
+    - content: "Cleaning data helps us select features that will help the performance of the model"
       isCorrect: false
       explanation: "Incorrect. Cleaning data might help us select features, but cleaning data is used to fix problems with the data."
-    - content: "Removing rows that have errors prevents these from misleading the training process"
+    - content: "Removing rows that have errors prevents these rows from misleading the training process"
       isCorrect: true
       explanation: "Correct. Cleaning data helps prevent errors from incomplete or error-prone data points."
   - content: 'What kind of data are best encoded with one-hot vectors?'
@@ -34,26 +35,26 @@ quiz:
       explanation: "Incorrect. This kind of data can simply be encoded in a single column as a 0 and a 1."
     - content: "Categorical data with three or more values"
       isCorrect: true
-      explanation: "Correct. One-hot vectors are best used with multiple classes or categories so models can better interpret them."
+      explanation: "Correct. One-hot vectors are best used with multiple classes or categories so that models can better interpret them."
   - content: 'What is a data sample? What is a population?'
     choices:
     - content: "A sample is all possible data we care about. A population is the subset of that data which we actually have on hand"
       isCorrect: false
-      explanation: "Incorrect. A sample is a portion, or subset, of the data we care about. A population is all the data which we could get."
-    - content: "Both population and sample mean data we train our model with."
+      explanation: "Incorrect. A sample is a portion, or subset, of the data we care about. A population is all the available data."
+    - content: "Both population and sample refer to data we use to train our model."
       isCorrect: false
-      explanation: "Incorrect. While we can train models with population and sample data, they mean different things."
+      explanation: "Incorrect. Although we can train models with population and sample data, they mean different things."
     - content: "A population is all possible data we care about. A sample is the subset of that data which we actually have on hand."
       isCorrect: true
       explanation: "Correct. A population is all the possible data we could collect for a data set, and a sample is a portion of the data which we already have."
-  - content: "You have a model that isn't performing well. Which of these will definitely **not** help improve its performance?"
+  - content: "You have a model that does not perform well. Which of these will definitely **not** help improve its performance?"
     choices:
     - content: "Adding additional samples (rows)"
       isCorrect: false
-      explanation: "Incorrect. Adding rows of data is likely to help your dataset be more representative, and so help your model train."
-    - content: "Adding a small number of features (columns) that you know are related to what the model is trying to predict"
+      explanation: "Incorrect. Adding rows of data will likely help your dataset become more representative, and so help your model train."
+    - content: "Adding a small number of features (columns) that you know relate to what the model is trying to predict"
       isCorrect: false
       explanation: "Incorrect. So long as you have enough rows of data, adding relevant features is likely to help your model train."
-    - content: "Adding a large number of features that you know aren't related to what the model is trying to predict."
+    - content: "Adding a large number of features that you know have no relation to what the model is trying to predict."
       isCorrect: true
       explanation: "Correct. Adding additional features that aren't relevant will probably harm its performance"

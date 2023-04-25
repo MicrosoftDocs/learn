@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-routing-preference
+metadata:
+  title: Introduction to Azure Routing Preference
+  description: "Describe routing preference and routing preference unmetered in Azure and recognize scenarios where routing preference is applicable."
+  ms.date: 03/20/2023
+  author: asudbring
+  ms.author: allensu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Routing Preference
+summary: Describe what routing preference is and its options that helps you decide which routing preference option is appropriate for your application or service.
+abstract: |
+  By the end of this module, you're able to:
+    - Evaluate whether routing preference is right for network cost savings and the routing of traffic for your application or service.
+    - Describe how the routing preference options of "Internet" and "Microsoft network" affect the routing of network traffic and the differences of both.
+    - Describe what routing preference unmetered is and its requirements.
+prerequisites: |
+  - Familiarity with Azure Virtual Networks
+  - Familiarity with network routing
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - network-engineer
+  - administrator
+  - student
+  - solution-architect
+products:
+  - azure-virtual-network
+subjects:
+  - networking
+  - cloud-computing
+units:
+- learn.intro-to-azure-routing-preference.introduction
+- learn.intro-to-azure-routing-preference.what-is-routing-preference
+- learn.intro-to-azure-routing-preference.how-routing-preference-works
+- learn.intro-to-azure-routing-preference.when-to-use-routing-preference
+- learn.intro-to-azure-routing-preference.knowledge-check
+- learn.intro-to-azure-routing-preference.summary
+badge:
+  uid: learn.intro-to-azure-routing-preference.badge

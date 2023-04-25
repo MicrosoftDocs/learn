@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.oversee-device-profiles
+metadata:
+  title: Oversee device profiles
+  description: "This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied."
+  ms.date: 03/14/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+title: Oversee device profiles
+summary: This module introduces students to monitoring profiles to ensure correct assignments and resolving conflicts when multiple profiles are applied.
+abstract: |
+  After completing this module, you will be able to:
+  *   Monitor the assignments of profiles.
+  *   Understand how profiles are synchronized and how to manually force synchronization.
+  *   Use PowerShell to execute and monitor scripts on devices.
+prerequisites: |
+  *   Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later.
+  *   Strong understanding of computer networking, client security, and application concepts.
+  *   Experience using Active Directory Domain Services.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+subjects:
+- device-management
+units:
+- learn.wwl.oversee-device-profiles.introduction
+- learn.wwl.oversee-device-profiles.monitor-device-profiles-intune
+- learn.wwl.oversee-device-profiles.manage-device-sync-intune
+- learn.wwl.oversee-device-profiles.manage-devices-intune-use-scripts
+- learn.wwl.oversee-device-profiles.knowledge-check
+- learn.wwl.oversee-device-profiles.summary
+badge:
+  uid: learn.wwl.oversee-device-profiles.badge

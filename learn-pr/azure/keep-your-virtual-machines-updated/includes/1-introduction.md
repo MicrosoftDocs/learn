@@ -2,7 +2,7 @@
 
 As a part of your effort to keep your infrastructure secure, you need to ensure that the virtual machines in your cloud environment are  up-to-date with the latest security and critical updates. 
 
-You will learn about Azure Update Management. You will learn how to deploy Update Management to a  virtual machine and how to schedule automatic deployment of critical and security updates.
+You will learn about Azure Update Management, how to deploy Update Management to a virtual machine and schedule automatic deployment of critical and security updates.
 
 ## Learning objectives
 
