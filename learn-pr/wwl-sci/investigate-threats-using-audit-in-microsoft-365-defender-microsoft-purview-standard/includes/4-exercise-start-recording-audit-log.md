@@ -1,4 +1,3 @@
-## Start recording activity in the Unified Audit Log
 
 You have already learned that Audit (Standard) is enabled by default for all organizations with the appropriate subscription, but you still have to start the recording. In this exercise you'll explore the following:
 
