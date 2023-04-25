@@ -1,4 +1,4 @@
-Azure IoT Central is an IoT application platform as a service (aPaaS) that reduces the burden and cost of developing, managing, and maintaining IoT solutions. Use IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business. IoT Central streamlines the development of a complex and continually evolving IoT infrastructure by letting you to focus your efforts on determining the business impact you can create with the IoT data stream.
+Azure IoT Central is an IoT application platform as a service (aPaaS) that reduces the burden and cost of developing, managing, and maintaining IoT solutions. Use IoT Central to quickly evaluate your IoT scenario and assess the opportunities it can create for your business. IoT Central streamlines the development of a complex and continually evolving IoT infrastructure, by letting you to focus your efforts on determining the business impact you can create with the IoT data stream.
 
 The web UI lets you quickly connect devices, monitor device conditions, create rules, and manage devices and their data throughout their life cycle. Furthermore, it enables you to act on device insights by extending IoT intelligence into line-of-business applications. Once you've used IoT Central to evaluate your IoT scenario, you can then build your enterprise ready solutions by using the power of Azure IoT platform.
 
@@ -6,7 +6,7 @@ The web UI lets you quickly connect devices, monitor device conditions, create r
 
 You can quickly deploy a new IoT Central application and then customize it to your specific requirements. Application templates in Azure IoT Central are a tool to help you kickstart your IoT solution development. You can use application templates for everything from getting a feel for what is possible, to fully customizing your application to fit your scenario.
 
-The screenshot below is an IoT Central application using the *in-store analytics checkout* application template
+The following screenshot is an IoT Central application using the *in-store analytics checkout* application template:
 
 ![Screenshot of an IoT Central application dashboard using the in-store analytics checkout template](../media/2-in-store-analytics-checkout-dashboard.png)
 
