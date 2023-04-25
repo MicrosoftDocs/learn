@@ -21,6 +21,6 @@ Now that you have a central location for your data, your organization can manage
 
 - [Use private endpoints for your Microsoft Purview account](/azure/purview/catalog-private-link-end-to-end)
 
-- [Microsoft Purview Studio](https://web.purview.azure.com)
+- [Microsoft Purview Governance Portal](https://web.purview.azure.com)
 
 - [Connect to your Microsoft Purview and scan data sources privately and securely](/azure/purview/catalog-private-link-end-to-end)

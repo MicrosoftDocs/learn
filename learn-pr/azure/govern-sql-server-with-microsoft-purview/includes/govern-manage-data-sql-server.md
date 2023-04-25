@@ -14,7 +14,7 @@ You must ensure that the account that you’ll use to scan the data on your SQL 
 
 When you configure security, store the SQL login password in *Azure Key Vault*, a cloud service that helps securely store secrets. Ensure that Azure Key Vault is connected to your Microsoft Purview account.
 
-Establish connectivity with an on-premises network by using either a virtual private network (VPN) or **Azure ExpressRoute.** For higher security configuration, consider setting up an Microsoft Purview portal private endpoint to enable connectivity with a private link to Microsoft Purview Studio. You can also enable connectivity to the on-premises SQL server through the public endpoint.
+Establish connectivity with an on-premises network by using either a virtual private network (VPN) or **Azure ExpressRoute.** For higher security configuration, consider setting up an Microsoft Purview portal private endpoint to enable connectivity with a private link to Microsoft Purview Governance Portal. You can also enable connectivity to the on-premises SQL server through the public endpoint.
 
 ## Create and manage self-hosted integration runtime
 
@@ -59,7 +59,7 @@ Use Azure Key Vault to store credentials for accessing a data source from SQL Se
 
 Once you create the Azure Key Vault and configure the secret, follow these steps to enable integration between Microsoft Purview and the Azure Key Vault:
 
-1. To open the Management Center, in Microsoft Purview Studio, select the **Management** link, and then select **Credentials**.
+1. To open the Management Center, in Microsoft Purview Governance Portal, select the **Management** link, and then select **Credentials**.
 
 1. To start the wizard for creating a new connection, on the **Credentials** pane, select **Manage Key Vault connections**, and then select **+New**.
 
@@ -96,7 +96,7 @@ The next step is to create a credentials object that you’ll use to authenticat
 When you meet all the prerequisites, use the Azure portal to register your on-premises SQL Server data source by performing the following steps:
 
 
-1. In Microsoft Purview Studio, from the **navigation** pane, select **Data map**.
+1. In Microsoft Purview Governance Portal, from the **navigation** pane, select **Data map**.
 
 1. On the **Sources** pane, select **Register**.
 
@@ -137,7 +137,7 @@ The SQL Server scanning process captures metadata such as names and file sizes b
 
 Use the following steps to scan an on-premises SQL Server instance:
 
-1. In Microsoft Purview Studio, from the **navigation** pane, select **Data map**.
+1. In Microsoft Purview Governance Portal, from the **navigation** pane, select **Data map**.
 
 1. Select the SQL Server source that you registered previously and then select the **New scan** button.
 
@@ -183,7 +183,7 @@ The procedures for governing the data from SQL Server in an Azure VM are very si
 
 ## Use the Data map tab to examine, manage, or delete scans
 
-The **Data map** tab in Microsoft Purview Studio contains existing scans and all previous scans that occurred. It also contains status and metrics for each scan that occurs.
+The **Data map** tab in Microsoft Purview Governance Portal contains existing scans and all previous scans that occurred. It also contains status and metrics for each scan that occurs.
 
 After selecting the **Data map** tab, select the existing scan that you would like to manage and then select **Edit scan** to make changes to the scan. If you no longer want or need a scan, use a similar procedure to select and then delete the scan.
 

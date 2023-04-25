@@ -1,4 +1,4 @@
-Azure Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and Software-as-a-Service (SaaS) data. 
+Microsoft Purview is a unified data governance service that helps you manage and govern your on-premises, multicloud, and Software-as-a-Service (SaaS) data. 
 
 ## Module scenario
 

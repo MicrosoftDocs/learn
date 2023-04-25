@@ -24,7 +24,7 @@ Before you add an Amazon RDS database as an Microsoft Purview data source, ensur
 
 Deploy Microsoft Purview Scanner in a Microsoft account in AWS. Microsoft Purview Scanner needs access to Amazon RDS, and for this purpose, you must create a dedicated role in the AWS portal. For the AWS role, provide the **Microsoft Account ID** and the **External ID** from Microsoft Purview.
 
-To obtain the Microsoft Account ID and the External ID, in **Microsoft Purview Studio**, on the **Management pane**, create a new **Credentials** object. For the **Authentication method**, select **Role ARN**.
+To obtain the Microsoft Account ID and the External ID, in **Microsoft Purview Governance Portal**, on the **Management pane**, create a new **Credentials** object. For the **Authentication method**, select **Role ARN**.
 
 Obtain the **Role ARN** value from the created AWS role. You’ll need it in the next step to create an Microsoft Purview credential.
 
@@ -32,9 +32,9 @@ Obtain the **Role ARN** value from the created AWS role. You’ll need it in the
 
 ### Create an Microsoft Purview credential for your Amazon RDS
 
-Use Microsoft Purview Studio to create a credentials object needed to scan the data source from Amazon RDS. Ensure that there is an integration between Microsoft Purview and Azure Key vault, and then follow these steps:
+Use Microsoft Purview Governance Portal to create a credentials object needed to scan the data source from Amazon RDS. Ensure that there is an integration between Microsoft Purview and Azure Key vault, and then follow these steps:
 
-1. To open the Management Center, in Microsoft Purview Studio, select the **Management** link, and then select **Credentials**.
+1. To open the Management Center, in Microsoft Purview Governance Portal, select the **Management** link, and then select **Credentials**.
 
 1. Select **New**, and then, in the **New credential** pane:
 
@@ -90,9 +90,9 @@ As result of provisioning of the AWS PrivateLink, you’ll get a **ServiceName**
 
 ## Register an Amazon RDS source
 
-Once you establish a connection, you should start sourcing your data by registering the data sources using Microsoft Purview Studio:
+Once you establish a connection, you should start sourcing your data by registering the data sources using Microsoft Purview Governance Portal:
 
-1. In Microsoft Purview Studio, from the **navigation** pane, select **Data map**.
+1. In Microsoft Purview Governance Portal, from the **navigation** pane, select **Data map**.
 
 1. On the **Sources** pane, select **Register**.
 
@@ -123,13 +123,13 @@ Before you begin scanning an Amazon RDS database’s data source, you must prepa
 You also need to create a credentials object in Microsoft Purview to use when you scan your Amazon RDS database. Create the credentials object in the Microsoft Purview Management area and configure it with the **SQL Authentication** method. The credentials object should contain the details for the Key Vault service that’s storing the authentication information.
 
 >[!Tip]
->To create a credential object to use for scanning an Amazon RDS database, use the same procedure as the one described in the **Prepare credentials in Azure Key Vault** section in the **Govern and manage data from SQL Server by using Azure Purview** unit.
+>To create a credential object to use for scanning an Amazon RDS database, use the same procedure as the one described in the **Prepare credentials in Azure Key Vault** section in the **Govern and manage data from SQL Server by using Microsoft Purview** unit.
 
 ### Create a scan rule set
 
 Microsoft Purview provides default scan rule sets that group scan rules together. To set up different configurations based on your business needs, create a custom scan rule set by following these steps:
 
-1. In Microsoft Purview Studio, select **Data Map**.
+1. In Microsoft Purview Governance Portal, select **Data Map**.
 
 1. Select **Scan rule sets** and then select **+New**.
 
