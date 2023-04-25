@@ -1,7 +1,9 @@
+
+
 SAP HANA on Azure VMs can be backed up by using the following two methods:
 
- -  HANA backup to the file system in an Azure Linux VM
- -  HANA backup based on storage snapshots using either the Azure storage blob snapshot feature manually or Azure VM Level Backup
+- HANA backup to the file system in an Azure Linux VM
+- HANA backup based on storage snapshots using either the Azure storage blob snapshot feature manually or Azure VM Level Backup
 
 SAP doesn't provide recommendations regarding the choice between the two methods. SAP lists the pros and cons, so one can determine which to use depending on the situation and available storage technology.
 
@@ -13,11 +15,11 @@ The subject of consistency becomes even more challenging in a case where a singl
 
 Assuming there is an XFS file system spanning four Azure virtual disks, the following steps provide a consistent snapshot that represents the HANA data area:
 
-1.  Prepare the HANA snapshot.
-2.  Freeze the file system (for example, use xfs\_freeze).
-3.  Create all necessary blob snapshots on Azure.
-4.  Unfreeze the file system.
-5.  Confirm the HANA snapshot.
+1. Prepare the HANA snapshot.
+2. Freeze the file system (for example, use xfs\_freeze).
+3. Create all necessary blob snapshots on Azure.
+4. Unfreeze the file system.
+5. Confirm the HANA snapshot.
 
 > [!NOTE]
 > For safety it is recommended that you use the procedure above in all cases, no matter which file system.
