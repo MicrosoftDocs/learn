@@ -99,7 +99,7 @@ Another solution for SQL Server on Linux is its ability to run in containers orc
 
 Many organizations have data in different systems. That might be because different teams had different requirements when they selected their system, because you merged with another company, or for some other historical reason. It has traditionally been difficult to integrate data across these system boundaries to answer questions for users.
 
-Suppose you have data in SQL Server that records sales for your product catalog, but the data that records how much it costs to make your products is in a SAP HANA database. You want to create a report that analyzes profit margins. You'll need information from both databases. In the past, you could:
+Suppose you have data in SQL Server that records sales for your product catalog, but the data that records how much it costs to make your products is in an SAP HANA database. You want to create a report that analyzes profit margins. You'll need information from both databases. In the past, you could:
 
 - Use an Extract, Transform, Load (ETL) package to migrate data from one database system to the other.
 - Query both databases and then write some custom code to join and integrate the results into a single report.
