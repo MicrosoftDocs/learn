@@ -6,7 +6,7 @@ Here, you'll learn why you should consider running SQL Server on Linux.
 
 ## Why use SQL Server on Linux?
 
-Linux is a collection of operating systems, or distributions, that run on the Linux kernel. It's a popular operating system choice both for on-premises and cloud-based deployments. SQL Server is a popular Relational Database Management System (RDBMS) that has traditionally only run on the Windows operating system. From SQL Server 2017 onwards, Microsoft has supported SQL Server installations on Linux operating systems.
+Linux is a collection of operating systems—or distributions—that run on the Linux kernel. It's a popular operating system choice both for on-premises and cloud-based deployments. SQL Server is a popular Relational Database Management System (RDBMS) that has traditionally only run on the Windows operating system. From SQL Server 2017 onwards, Microsoft has supported SQL Server installations on Linux operating systems.
 
 If you want to run SQL Server, remember that you're not limited to the Windows platform. Because Linux is open source, you can install it on low-cost commodity hardware, reducing the operating system licensing expense. Linux also has a smaller footprint and lower hardware requirements, which make it faster to spin up Linux-based VMs over Windows-based servers.
 
