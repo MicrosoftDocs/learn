@@ -1,5 +1,5 @@
 
-The Microsoft identity platform for developers is a set of tools which includes authentication service, open-source libraries, and application management tools. 
+The Microsoft identity platform for developers is a set of tools that includes authentication service, open-source libraries, and application management tools. 
 
 After completing this module, you'll be able to:
 

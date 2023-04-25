@@ -82,5 +82,3 @@ In this section you'll use the sandbox to download the sample app and set variab
     > You can use the up arrow on your keyboard to scroll through previous commands.
 
 1. Once deployment is completed switch back to the browser from step 2 in the "Create the web app" section above and refresh the page.
-
-
