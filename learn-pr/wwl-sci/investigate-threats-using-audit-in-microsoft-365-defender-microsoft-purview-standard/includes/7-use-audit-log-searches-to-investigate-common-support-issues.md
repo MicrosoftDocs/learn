@@ -1,4 +1,3 @@
-## Use audit log searches to investigate common support issues
 
 This unit describes how organizations can use the audit log search tool to help them investigate the following common support issues:
 
