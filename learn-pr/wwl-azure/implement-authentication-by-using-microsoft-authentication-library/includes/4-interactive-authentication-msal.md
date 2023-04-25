@@ -1,5 +1,5 @@
 
-In this exercise you'll learn how to perform the following actions:
+In this exercise you learn how to perform the following actions:
 
 * Register an application with the Microsoft identity platform
 * Use the `PublicClientApplicationBuilder` class in MSAL.NET
@@ -25,9 +25,6 @@ In this exercise you'll learn how to perform the following actions:
     | **Name** | `az204appreg` |
     | **Supported account types** | Select **Accounts in this organizational directory only** |
     | **Redirect URI (optional)** | Select **Public client/native (mobile & desktop)** and enter `http://localhost` in the box to the right. |
-
-    Below are more details on the **Supported account types**.
-
 
 1. Select **Register**.
 
@@ -58,7 +55,7 @@ Azure Active Directory assigns a unique application (client) ID to your app, and
 
 ## Build the console app
 
-In this section you will add the necessary packages and code to the project.
+In this section, you add the necessary packages and code to the project.
 
 ### Add packages and using statements
 
@@ -83,7 +80,7 @@ In this section you will add the necessary packages and code to the project.
 
 ### Add code for the interactive authentication
 
-1. We'll need two variables to hold the Application (client) and Directory (tenant) IDs. You can copy those values from the portal. Add the code below and replace the string values with the appropriate values from the portal.
+1. You need two variables to hold the Application (client) and Directory (tenant) IDs. You can copy those values from the portal. Add the following code and replace the string values with the appropriate values from the portal.
 
     ```csharp
     private const string _clientId = "APPLICATION_CLIENT_ID";
@@ -107,7 +104,7 @@ In this section you will add the necessary packages and code to the project.
 
 ### Acquire a token
 
-When you registered the *az204appreg* app it automatically generated an API permission `user.read` for Microsoft Graph. We'll use that permission to acquire a token.
+When you registered the *az204appreg* app, it automatically generated an API permission `user.read` for Microsoft Graph. You use that permission to acquire a token.
 
 1. Set the permission scope for the token request. Add the following code below the `PublicClientApplicationBuilder`.
 
@@ -125,7 +122,7 @@ When you registered the *az204appreg* app it automatically generated an API perm
 
 ## Review completed application
 
-The contents of the *Program.cs* file should resemble the example below.
+The contents of the *Program.cs* file should resemble the following example:
 
 ```csharp
 using System;
@@ -159,9 +156,9 @@ namespace az204_auth
 
 1. In the Visual Studio Code terminal run `dotnet build` to check for errors, then `dotnet run` to run the app. 
 
-1. The app will open the default browser prompting you to select the account you want to authenticate with. If there are multiple accounts listed select the one associated with the tenant used in the app.
+1. The app opens the default browser prompting you to select the account you want to authenticate with. If there are multiple accounts listed select the one associated with the tenant used in the app.
 
-1. If this is the first time you've authenticated to the registered app you will receive a **Permissions requested** notification asking you to approve the app to read data associated with your account. Select **Accept**.
+1. If this is the first time you've authenticated to the registered app you receive a **Permissions requested** notification asking you to approve the app to read data associated with your account. Select **Accept**.
 
     :::image type="content" source="../media/permission-consent.png" alt-text="Select **Accept** to grant the permission.":::    
 
