@@ -33,7 +33,7 @@ The developers shouldn't only be focusing on just their own code. Single codebas
     :::column-end:::
 :::row-end:::
 
-Shift left security. Don't treat security as an afterthought. The sooner you start addressing security considerations the easier and cheeper it is to implement them.
+Shift left security. Don't treat security as an afterthought. The sooner you start addressing security considerations the easier and cheaper it is to implement them.
 Remember the Zero Trust principles and apply them in your apps in systems:
 
 -**Verify explicitly.** Always authenticate and authorize based on all available data points, including user, application and device identity, location etc.

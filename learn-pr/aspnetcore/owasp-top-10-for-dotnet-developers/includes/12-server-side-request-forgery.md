@@ -2,7 +2,7 @@
 This category (SSRF) describes situations whenever a web application is fetching a remote resource without validating the user-supplied URL. It allows an attacker to coerce the application to send a crafted request to an unexpected destination.
 
 Attacker may also use this functionality to import untrusted data into code that expects to only read data from trusted sources, and as such circumvent input validation.
-Url, or query string, seen in web browser's address bar, when used as input parameter could be a perfect example of user input needing sanitization.
+URL, or query string, seen in web browser's address bar, when used as input parameter could be a perfect example of user input needing sanitization.
 
 During code review, you came across seemingly harmless REST web GET request shown by code snippet below:
 
@@ -12,7 +12,7 @@ var client = new HttpClient();
 HttpResponseMessage response = await client.GetAsync(url);
 ```
 
-Without validation of the supplied url the attacker can hijack the network connection and control the request schema by supplying **ldap://**, **jar://** or **file://** instead of **https://**. Furthermore, POST method will allow the attacker to force the application to send a crafted request to an unexpected destination.
+Without validation of the supplied URL the attacker can hijack the network connection and control the request schema by supplying **ldap://**, **jar://** or **file://** instead of **https://**. Furthermore, POST method will allow the attacker to force the application to send a crafted request to an unexpected destination.
 
 In certain situations, with carefully formulated URL, the attacker may be able to:
 
@@ -23,7 +23,7 @@ In certain situations, with carefully formulated URL, the attacker may be able t
 > [!IMPORTANT]
 > User-controlled data should not be trusted. Validate all input to  and ensure that the request is being sent to the expected destination.
 
-An allowlist or blocklist should be enforced (like IP addresses and host names).
+An allow list or blocklist should be enforced (like IP addresses and host names).
 
 Correct user input validation can protect your application from a few OWASP Top 10 items.
 

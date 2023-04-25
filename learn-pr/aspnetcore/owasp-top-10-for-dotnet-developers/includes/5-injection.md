@@ -1,9 +1,9 @@
 
-The injection category is attributed to an application accepting data as input and processing it as instruction instead of as data​.
+The injection category describes instances when an application accepts data as input and processes it as instruction instead of as data​.
 
-Let's consider how your application handles input data.
+Let's consider how your team's application handles input data.
 
-.NET provides build-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card or date validators are only a few examples of the build-in validators that can spare you the effort of writing and maintaining custom code.
+.NET provides built-in capabilities for data annotation and validation. The attributes from `System.ComponentModel.DataAnnotations` namespace can decode your data model to provide the necessary validation functionality. Email, phone, credit card or date validators are only a few examples of the built-in validators that can spare you the effort of writing and maintaining custom code.
 
 ```csharp
 using System.ComponentModel.DataAnnotations; ​
@@ -22,27 +22,27 @@ public class ExampleModel ​
 
 ### SQL Injection
 
-Injection can take different forms and shapes, from SQL, process to command injection.
-Simple example of SQL injection could be the following statement, where `username` in an unsanitised query input parameter:
+Injection attacks can take many forms, i.e. SQL or command injection.
+The following statement is a simple example of SQL injection, where `username` in an unsanitised query input parameter:
 
 ```sql
 string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
 ```
 
-Without validation of user input, a malicious actor could supplement a genuine user name for a crafted part of SQL statement `a';DROP TABLE users;--` resulting in change of query intentions:
+Without validating the user input, a malicious actor could supplement a genuine user name for a crafted part of a SQL statement `a';DROP TABLE users;--` resulting in a change of query intentions:
 
 ```sql
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
-As a result the table containing user information will be removed from database. In similar way statement can be crafted to extraction data prior to data table deletion.
+As a result, the table containing user information will be removed from the database. In a similar way, statements can be crafted to extract data prior to data table deletion.
 
 ### File Input Validation
 
-In client-server scenarios, make sure the input is validated on both client and server side.
-Additionally, if validation passes on the server, process the form and send back a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors.Validation details from server may give the malicious actor more insights on how your app logic works if displayed on the client side.
+In client-server scenarios, make sure the input is validated on both the client and the server side.
+Additionally, if validation passes on the server, process the form and send a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors. Validation details from the server may give the malicious actor more insights on how your app logic works if displayed on the client side.
 
-Input validation also includes the way you handle file upload. Following example (from ASP.NET Blazor component) attempts to validate correctness of file before uploading it to Azure Blob Storage, including check for expected extension, max file size and overriding supplied filename with a random name.
+Input validation also includes the way you handle file uploads. The following example from an ASP.NET Blazor component attempts to validate file correctness before uploading it to Azure Blob Storage, including checking for the expected extension and max file size, as well as overriding the supplied filename with a random name.
 
 ```csharp actor
 <InputFile OnChange = "@LoadFile" />
@@ -81,9 +81,9 @@ Input validation also includes the way you handle file upload. Following example
 
 ### Code Review Notes
 
-Your team uses Entity Framework Core (Object-Relational Mapping) as the glue between the C# code and database which eliminates the need for writing your own SQL queries and prevents from SQL injection.
-You've noticed that every single user input, uploaded files or form entry fields, are always validated. Sanitization and normalization of user input is a must.
+Your team uses Entity Framework Core (Object-Relational Mapping) as the glue between the C# code and database. Simply using ORM eliminates the need for writing your own SQL queries and prevents from SQL injection.
+You've noticed that every single user input, uploaded files or form entry fields are always validated. Sanitization and normalization of user input is a must.
 
 As a golden rule, ensure validation is performed whenever you're processing user input. Never assume any user data input as safe to process until proven otherwise.
 
-You decided, as an exercise, to check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert there might be a room for improvement in your validation logic.
+You decided, as an exercise, to check if your web app is correctly validating user input by typing in `<iframe src="javascript:alert('HACKED')">` into a text input area. If a browser displays an alert, there might be a room for improvement in your validation logic.
