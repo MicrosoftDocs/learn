@@ -66,7 +66,7 @@ SQL Server on Linux supports advanced security features such as Always Encrypted
 
 - **Dynamic data masking** masks a portion of the data. Four different kinds of masks are available: masking all the data in a column, masking email addresses, random number masking for numerical data, and custom string masking. You could use custom string masking, for example, to mask all but the last four digits in a Social Security Number.
 
-- **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as personally identifiable information. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
+- **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as personal data. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
 
 - **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you're aware of the weaknesses that your server configuration and database designs may cause, you can mitigate them and prevent common attacks. Vulnerability Assessment is another ADS service.
 
