@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.dotnet-connect-four.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Four multiple-choice questions
+  ms.date: 03/15/2023
+  author: softchris
+  ms.author: chnoring
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: How do you respond to a click event?
+    choices:
+    - content: Use @click="handler".
+      isCorrect: false
+      explanation: Incorrect. You should type @onclick="handler" not @click="handler".
+    - content: Use onclick="handler".
+      isCorrect: false
+      explanation: Incorrect. You should type @onclick="handler" not onclick="handler".
+    - content: Use click="handler"
+      isCorrect: true
+      explanation: Correct.
+  - content: In what component method would you place logic that would initialize your component?
+    choices:
+    - content: In the OnInitialized method
+      isCorrect: true
+      explanation: Correct. This method is a good place to place such code.
+    - content: In the constructor
+      isCorrect: false
+      explanation: Incorrect.OnInitialized is the recommended method to call such code. 
+    - content: In the OnStart method
+      isCorrect: false
+      explanation: Incorrect. There's no such method OnStart. OnInitialized is the recommended method to call such code. 
+  - content: How can a component handle a specific route?
+    choices:
+    - content: Add a @route directive at the top of the component
+      isCorrect: false
+      explanation: Incorrect. The directive is called @page not @route
+    - content: Add a @page directive at the top of the component, for example @page "/my-component"
+      isCorrect: true
+      explanation: Correct.
+    - content: Inject the `RouteManager` class and register the route and its handler
+      isCorrect: false
+      explanation: Incorrect. There's no such class `RouteManager`
+     
+
+        
