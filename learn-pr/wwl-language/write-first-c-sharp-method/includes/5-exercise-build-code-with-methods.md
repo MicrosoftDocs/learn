@@ -6,7 +6,7 @@ When you use plain language to describe steps in code, without strictly adhering
 
 ## Use methods to structure code
 
-Suppose you are a candidate in a coding interview. The interviewer wants you to write a program that checks whether an IPv4 address is valid or invalid. You are given the following rules:
+Suppose you're a candidate in a coding interview. The interviewer wants you to write a program that checks whether an IPv4 address is valid or invalid. You're given the following rules:
 
 - A valid IPv4 address consists of four numbers separated by dots
 - Each number must not contain leading zeroes
