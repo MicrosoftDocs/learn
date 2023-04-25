@@ -6,7 +6,7 @@ You can add, edit, or remove a policy by using any of the following methods:
 * Azure CLI
 * REST APIs
 
-Below are the steps and some examples for the Portal and Azure CLI.
+The following are the steps and some examples for the Portal and Azure CLI.
 
 ## Azure portal
 
@@ -32,7 +32,7 @@ There are two ways to add a policy through the Azure portal: Azure portal List v
 
 ### Azure portal Code view
 
-1. Follow the first three steps above in the **List view** section. 
+1. Follow the first three steps in the **List view** section. 
 
 1. Select the **Code view** tab. The following JSON is an example of a policy that  moves a block blob whose name begins with *log* to the cool tier if it has been more than 30 days since the blob was modified.
 
@@ -78,4 +78,4 @@ az storage account management-policy create \
     --resource-group <resource-group>
 ```
 
-A lifecycle management policy must be read or written in full. Partial updates are not supported.
+A lifecycle management policy must be read or written in full. Partial updates aren't supported.
