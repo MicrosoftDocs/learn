@@ -13,18 +13,18 @@ durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: "What is the purpose of using runtime parameters in Azure DevOps pipelines?"
+  - content: "What is the purpose of using runtime parameters in Azure Pipelines?"
     choices:
     - content: "To pass dynamic values to a pipeline at queue time."
       isCorrect: true
       explanation: "Correct. Runtime parameters allow the user to specify values that can be used in the pipeline definition, such as branch names, stage names, environment names, etc. These values can be entered manually or selected from a predefined list when queueing the pipeline."
     - content: "To store sensitive information such as passwords and tokens."
       isCorrect: false
-      explanation: "Incorrect. Sensitive information should be stored in pipeline variables or variable groups, and marked as secrets, to ensure they are encrypted and not exposed in logs or scripts."
+      explanation: "Incorrect. Sensitive information should be stored in pipeline variables or variable groups, and marked as secrets, to ensure they're encrypted and not exposed in logs or scripts."
     - content: "To define reusable steps or stages that can be referenced in multiple pipelines."
       isCorrect: false
       explanation: "Incorrect. Reusable steps or stages are defined using templates, which are YAML files that can be imported and customized in other pipeline definitions."
-  - content: "What is the benefit of using variable groups in Azure DevOps pipelines?"
+  - content: "What is the benefit of using variable groups in Azure Pipelines?"
     choices:
     - content: "To create dynamic variables that can be modified at runtime."
       isCorrect: false
@@ -34,8 +34,8 @@ quiz:
       explanation: "Correct. Variable groups allow the user to organize and manage variables that are used across multiple pipelines or stages, and update them in one place. They can also be linked to Azure Key Vault to store secrets."
     - content: "To encrypt and hide variables from logs and scripts."
       isCorrect: false
-      explanation: "Incorrect. Encrypting and hiding variables are done by marking them as secrets, not by putting them in variable groups. Variable groups can contain both secrets and non-secrets."
-  - content: "What is the purpose of using templates in Azure DevOps pipelines?"
+      explanation: "Incorrect. Encrypting and hiding variables are done by marking them as secrets, not by putting them in variable groups. Variable groups can contain both secrets and nonsecrets."
+  - content: "What is the purpose of using templates in Azure Pipelines?"
     choices:
     - content: "To create dynamic pipelines that can be modified at queue time or runtime."
       isCorrect: false
