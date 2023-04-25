@@ -1,4 +1,3 @@
-## Summary and resources
 
 Microsoft Purview provides two auditing solutions: Audit (Standard) and Audit (Premium). This module explored Microsoft Purview Audit (Standard). The next module focuses on Microsoft Purview Audit (Premium).
 
