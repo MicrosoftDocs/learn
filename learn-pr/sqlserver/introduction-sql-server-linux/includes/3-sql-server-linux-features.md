@@ -51,7 +51,7 @@ ALTER DATABASE <database name> SET COMPATIBILITY_LEVEL = 150;
 
 SQL Server on Linux supports advanced security features such as Always Encrypted, row-level security and dynamic data masking to protect data on disk, in memory, or in transit. These features are all supported in all editions, including Standard Edition:
 
-- **Transparent Data Encryption (TDE)** encrypts data-at-rest when it is stored in database files. The data is protected against malicious users both in the database and in backups.
+- **Transparent Data Encryption (TDE)** encrypts data-at-rest when it's stored in database files. The data is protected against malicious users both in the database and in backups.
 
 - **Always Encrypted** ensures that only users who own data can view and process it. Users who manage data, like the database administrators, can't view it. If you use Always Encrypted:
 
@@ -66,7 +66,7 @@ SQL Server on Linux supports advanced security features such as Always Encrypted
 
 - **Dynamic data masking** masks a portion of the data. Four different kinds of masks are available: masking all the data in a column, masking email addresses, random number masking for numerical data, and custom string masking. You could use custom string masking, for example, to mask all but the last four digits in a Social Security Number.
 
-- **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as Personally Identifiable Information. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
+- **Data Discovery and Classification** identifies, labels, and reports on the sensitive data in your databases, such as personally identifiable information. It's a tool within SQL Server Management Studio (SSMS) that makes it easier to comply with data privacy legislation and harden the databases that contain the most valuable data. Data Discovery and Classification is a service that is part of the Advanced Data Security (ADS) package.
 
 - **Vulnerability Assessment** identifies vulnerabilities in your databases. Once you're aware of the weaknesses that your server configuration and database designs may cause, you can mitigate them and prevent common attacks. Vulnerability Assessment is another ADS service.
 
@@ -115,7 +115,7 @@ With PolyBase, you can create an external table in SQL Server. An external table
 
 In machine learning, large datasets are used to model the behavior of some complex system. When a model has been developed that accurately predicts the observed behavior of the system, it's used to predict how that system might behave in the future. Sophisticated libraries of code, often open-source, have been developed that can prepare your dataset, add features to it, train a model, evaluate the accuracy of the trained model, and deploy those models for other clients to call. These libraries are written in the R and Python languages.
 
-SQL Server Machine Learning Services allows you to run these R and Python scripts against the data in your SQL Server databases. You can add the popular machine learning and data science frameworks, including PyTorch, TensorFLow, SciKit-Learn, and others.
+SQL Server Machine Learning Services allows you to run these R and Python scripts against the data in your SQL Server databases. You can add the popular machine learning and data science frameworks, including PyTorch, TensorFlow, SciKit-Learn, and others.
 
 > [!NOTE]
 > > On Linux operating systems, SQL Server Machine Learning is supported in SQL Server 2019 or later. To use it, you must add extra packages. For example, if you want to use Python for all machine learning code, install the **mssql-mlservices-mlm-py-9.4.7** package. The equivalent package for R is **install mssql-mlservices-mlm-r-9.4.7**.
