@@ -23,5 +23,4 @@ This hybrid feature allows for on-premises compute resources combined with Azure
 
 Unlike traditional on-premises storage systems, keeping your SQL Server data files on Azure allows you to scale capacity resources, without the need to purchase additional hardware or make changes to the existing infrastructure, which often requires downtime. This flexibility would allow Woodgrove Bank to optimize their storage costs, as they only pay for the amount of storage they consume.
 
-You can learn more about SQL Server data files on Azure Storage in the article, [SQL Server data files in Microsoft Azure](https://learn.microsoft.com/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure).
-
+You can learn more about SQL Server data files on Azure Storage in the article, [SQL Server data files in Microsoft Azure](/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure).

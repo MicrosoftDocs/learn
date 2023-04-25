@@ -51,12 +51,12 @@ To configure the link feature, you must follow the same steps regardless of whet
 
 You can use either a wizard in SSMS or scripts. The main advantage of using scripts is that they can be automated, which can improve your deployment process, saving time and effort. 
 
-- Replicate a database by using [Azure SQL Managed Instance link wizard available in SSMS](https://learn.microsoft.com/azure/azure-sql/managed-instance/managed-instance-link-use-ssms-to-replicate-database).
+- Replicate a database by using [Azure SQL Managed Instance link wizard available in SSMS](/azure/azure-sql/managed-instance/managed-instance-link-use-ssms-to-replicate-database).
 
-- Replicate a database by using [T-SQL and PowerShell scripts.](https://learn.microsoft.com/azure/azure-sql/managed-instance/managed-instance-link-use-scripts-to-replicate-database)
+- Replicate a database by using [T-SQL and PowerShell scripts.](/azure/azure-sql/managed-instance/managed-instance-link-use-scripts-to-replicate-database)
 
 There are a few SQL Server features that are not supported by Azure SQL Managed Instance link. For example, you can't enable the link feature if the functionality that's used on the primary  SQL Server database isn't supported on Azure SQL Managed Instance, such as file tables and file streams.
 
-For the full list of supported features, see [Limitations of Azure SQL Managed Instance link](https://learn.microsoft.com/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?#limitations).
+For the full list of supported features, see [Limitations of Azure SQL Managed Instance link](/azure/azure-sql/managed-instance/managed-instance-link-feature-overview?#limitations).
 
 As we've seen, Azure SQL Managed Instance link feature enables organizations to confidently extend their SQL Server environments to Azure while also benefiting from the scalability, performance, and security features that Azure SQL Managed Instance offers.

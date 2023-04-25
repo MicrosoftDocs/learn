@@ -17,11 +17,11 @@ SQL Server 2022 allows you to select the pay-as-you-go billing option during set
 
 :::image type="content" source="../media/module-2-overview-azure-sql-arc-payg.png" alt-text="Screenshot showing the Overview blade highlighting the license type option.":::
 
-To learn more about the benefits of using Azure Hybrid Benefit to optimize existing SQL Server licensing investments, see [Manage SQL Server license and billing options](https://learn.microsoft.com/sql/sql-server/azure-arc/manage-license-type).
+To learn more about the benefits of using Azure Hybrid Benefit to optimize existing SQL Server licensing investments, see [Manage SQL Server license and billing options](/sql/sql-server/azure-arc/manage-license-type).
 
 ### Streamline your SQL Server estate with Best Practices Assessment
 
-Best Practices Assessment provides valuable insights into the overall configuration estate of SQL Server instances and databases. By identifying areas for improvement and implementing recommended best practices, organizations can ensure their databases comply with product best practices. 
+Best Practices Assessment provides valuable insights into the overall configuration estate of SQL Server instances and databases. By identifying areas for improvement and implementing recommended best practices, organizations can ensure their databases comply with product best practices.
 
 Assessments can take anywhere from a few minutes to an hour and may cause up to a 5-10% CPU impact on the server.
 
@@ -45,7 +45,7 @@ Microsoft Defender for Cloud is available for Azure Arc-enables SQL Servers. By 
 
 :::image type="content" source="../media/module-2-azure-arc-defender.png" alt-text="Diagram showing the Arc-enabled Security products and infrastructure that can be protected.":::
 
-To learn more about how to configure Arc-enabled SQL Server with Microsoft Defender for Cloud, see [Protect Azure Arc-enabled SQL Server with Microsoft Defender for Cloud](https://learn.microsoft.com/sql/sql-server/azure-arc/configure-advanced-data-security).
+To learn more about how to configure Arc-enabled SQL Server with Microsoft Defender for Cloud, see [Protect Azure Arc-enabled SQL Server with Microsoft Defender for Cloud](/sql/sql-server/azure-arc/configure-advanced-data-security).
 
 ### Configure your Azure Arc-enabled SQL Server
 
@@ -55,10 +55,10 @@ Before you add an Azure Arc-enabled SQL Server, you need:
 
 - A virtual or physical machine running SQL Server 2022
 - A user or service principal with the following permissions:
-    - `Azure Connected Machine Onboarding` role
-    - `Microsoft.AzureArcData/register/action`
-    - `Microsoft.HybridCompute/machines/extensions/read`
-    - `Microsoft.HybridCompute/machines/extensions/write`
+  - `Azure Connected Machine Onboarding` role
+  - `Microsoft.AzureArcData/register/action`
+  - `Microsoft.HybridCompute/machines/extensions/read`
+  - `Microsoft.HybridCompute/machines/extensions/write`
 - PowerShell
 - Register Microsoft.AzureArcData and Microsoft.HybridCompute resource providers
 
@@ -71,31 +71,31 @@ You can follow the steps below to enable Azure Arc for SQL Server using the conn
 1. Select **Run script**, and download it.
 1. Execute the script on the host machine.
 
-For more details on how to configure Azure Arc-enabled SQL Server, see [Connect your SQL Server to Azure Arc](https://learn.microsoft.com/sql/sql-server/azure-arc/connect).
+For more details on how to configure Azure Arc-enabled SQL Server, see [Connect your SQL Server to Azure Arc](/sql/sql-server/azure-arc/connect).
 
 ### Deployments options
 
 Depending on your deployment needs, you may choose between interactive or scalable methods to onboard SQL Server instances to Azure Arc, which can handle multiple instances simultaneously and increase productivity. 
 
-To use these methods, you'll need to install the Azure Connected Machine agent along with the Azure extension for SQL Server, which provides direct connectivity to Azure. 
+To use these methods, you'll need to install the Azure Connected Machine agent along with the Azure extension for SQL Server, which provides direct connectivity to Azure.
 
 #### Interactively
 
 There are three interactively onboarding methods for adding existing SQL Server instances to Azure Arc:
 
-- [Connect SQL Server to Azure Arc](https://learn.microsoft.com/sql/sql-server/azure-arc/connect)
-- [Connect SQL Server to Azure Arc on a server already connected to Azure Arc](https://learn.microsoft.com/sql/sql-server/azure-arc/connect)
-- Connect through an [installer](https://learn.microsoft.com/sql/sql-server/azure-arc/connect-with-installer)
+- [Connect SQL Server to Azure Arc](/sql/sql-server/azure-arc/connect)
+- [Connect SQL Server to Azure Arc on a server already connected to Azure Arc](/sql/sql-server/azure-arc/connect)
+- Connect through an [installer](/sql/sql-server/azure-arc/connect-with-installer)
 
 #### At scale
 
 There are three scalable onboarding options for adding existing SQL Server instances to Azure Arc:
 
-- Using the [automatic Arc-enabled SQL Server registration](https://learn.microsoft.com/sql/sql-server/azure-arc/connect-at-scale-policy?#connect-at-scale-using-the-automatic-arc-enabled-sql-server-registration-method-recommended) method
-- Using a [script](https://learn.microsoft.com/sql/sql-server/azure-arc/connect-at-scale-script)
-- Using a [configuration Manager custom task sequence](https://learn.microsoft.com/sql/sql-server/azure-arc/onboard-configuration-manager-custom-task)
+- Using the [automatic Arc-enabled SQL Server registration](/sql/sql-server/azure-arc/connect-at-scale-policy?#connect-at-scale-using-the-automatic-arc-enabled-sql-server-registration-method-recommended) method
+- Using a [script](/sql/sql-server/azure-arc/connect-at-scale-script)
+- Using a [configuration Manager custom task sequence](/sql/sql-server/azure-arc/onboard-configuration-manager-custom-task)
 
-Both interactive or scalable methods allow you to manage your SQL Server instances that are hosted outside of Azure by using the connected machine agent and the Azure Arc extension. 
+Both interactive or scalable methods allow you to manage your SQL Server instances that are hosted outside of Azure by using the connected machine agent and the Azure Arc extension.
 
 ### Current features and capabilities
 

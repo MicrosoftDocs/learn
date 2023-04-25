@@ -21,7 +21,7 @@ Like Azure SQL Managed Instance and Azure SQL Database, SQL Server 2022 supports
 
 As we can see, SQL Server 2022 uses Azure AD to provide secure and simplified access management for users.
 
-To see the Azure AD authentication methods available on SQL Server 2022, see [Azure Active Directory authentication for SQL Server](https://learn.microsoft.com/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-overview)
+To see the Azure AD authentication methods available on SQL Server 2022, see [Azure Active Directory authentication for SQL Server](/sql/relational-databases/security/authentication-access/azure-ad-authentication-sql-server-overview)
 
 ## Microsoft Purview access policies for SQL Server
 
@@ -44,7 +44,7 @@ To learn more about Microsoft Purview access policies for SQL Server 2022, see [
 To run this exercise, make sure you meet these requirements before you start:
 
 * SQL Server 2022 (16.x) or later is installed.
-* SQL Server is [connected to Azure](https://learn.microsoft.com/sql/sql-server/azure-arc/connect?tabs=windows). 
+* SQL Server is [connected to Azure](/sql/sql-server/azure-arc/connect?tabs=windows).
 * Azure Key Vault. The user setting up Azure AD admin should have the **Contributor** role on Azure Key Vault.
 * *SQL Server – Azure Arc* resource should have the **Contributor** role for the server.
 
@@ -63,12 +63,12 @@ To run this exercise, make sure you meet these requirements before you start:
 ### Grant permission to the Azure AD application
 
 1. Navigate to **Azure Active Directory** on Azure portal.
- 
+
 1. Select **App registrations**.
 
-    :::image type="content" source="../media/module-2-azure-ad-02.png" alt-text="Screenshot showing SQL Server Management Studio with authentication dialog.":::
+    :::image type="content" source="../media/module-2-azure-ad-02.png" alt-text="Screenshot showing App registrations menu in the Azure portal.":::
 
-1. Select the newly created application. The application should have a name in the format of <hostname>-<instanceName><uniqueNumber>.
+1. Select the newly created application. The application should have a name in the format of `<hostname>-<instanceName><uniqueNumber>`.
 
 1. Select the **API permissions** menu, then select **Grant admin consent**.
 
@@ -78,4 +78,4 @@ You can now connect to SQL Server using Azure AD authentication:
 
 :::image type="content" source="../media/module-2-azure-ad-01.png" alt-text="Screenshot showing SQL Server Management Studio with authentication dialog.":::
 
-As we've seen SQL Server 2022 provides simplified access management for SQL Server users authenticating using Azure AD. 
+As we've seen SQL Server 2022 provides simplified access management for SQL Server users authenticating using Azure AD.

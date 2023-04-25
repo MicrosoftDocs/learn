@@ -41,7 +41,7 @@ For SQL Server 2022, the landing zone is customer-managed and can be hosted anyw
 
 ## Exercise: Create Azure Synapse Link for SQL Server 2022
 
-To run this exercise, make sure you're running SQL Server 2022 with the latest [**AdventureWorks**](https://learn.microsoft.com/sql/samples/adventureworks-install-configure) database. You will also need a SQL Server user with read access to the source database.
+To run this exercise, make sure you're running SQL Server 2022 with the latest [**AdventureWorks**](/sql/samples/adventureworks-install-configure) database. You will also need a SQL Server user with read access to the source database.
 
 1. Select your Synapse Analytics workspace or create a new one on Azure portal.
 
@@ -85,7 +85,7 @@ Create the linked service responsible to communicate with your SQL Server 2022.
 
 1. Select **Create**.
 
-1. For the landing zone, you can either use a pre-existing **ADLS Gen2** storage accounts or create a new one. Make sure that you've granted your Azure Synapse workspace managed identity permissions to the Azure Data Lake Storage Gen2 storage account that's used as the landing zone. For more information, see [Grant permissions to a managed identity in an Azure Synapse workspace - Azure Synapse Analytics](https://learn.microsoft.com/azure/synapse-analytics/security/how-to-grant-workspace-managed-identity-permissions#grant-the-managed-identity-permissions-to-adls-gen2-storage-account).
+1. For the landing zone, you can either use a pre-existing **ADLS Gen2** storage accounts or create a new one. Make sure that you've granted your Azure Synapse workspace managed identity permissions to the Azure Data Lake Storage Gen2 storage account that's used as the landing zone. For more information, see [Grant permissions to a managed identity in an Azure Synapse workspace - Azure Synapse Analytics](/azure/synapse-analytics/security/how-to-grant-workspace-managed-identity-permissions#grant-the-managed-identity-permissions-to-adls-gen2-storage-account).
 
 Next, create the linked service responsible to communicate with your landing zone on Azure Data Lake Storage Gen2.
 

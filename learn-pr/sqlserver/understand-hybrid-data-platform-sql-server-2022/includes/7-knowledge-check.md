@@ -5,6 +5,7 @@ durationInMinutes: 8
 
 Choose the best response for each of the questions below. Then select **Check your answers**.
 
+<!--
 ## Quiz title: Check your knowledge
 
 ## Multiple Choice
@@ -27,3 +28,4 @@ What is one way in which Microsoft Purview policies can provide access to SQL Se
 () Creating a login and mapping it to a Purview policy{{That's incorrect. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account.}}
 (x) Creating a policy in Purview based on an Azure Active Directory (Azure AD) account{{That's correct. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account.}}
 () Creating a role in SQL Server that maps to a Purview policy{{That's incorrect. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account.}}
+-->
