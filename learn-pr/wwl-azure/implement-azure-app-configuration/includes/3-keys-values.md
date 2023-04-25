@@ -11,13 +11,13 @@ You can use any unicode character in key names entered into App Configuration ex
 
 ### Design key namespaces
 
-There are two general approaches to naming keys used for configuration data: flat or hierarchical. These methods are similar from an application usage standpoint, but hierarchical naming offers a number of advantages:
+There are two general approaches to naming keys used for configuration data: flat or hierarchical. These methods are similar from an application usage standpoint, but hierarchical naming offers many advantages:
 
 * Easier to read. Instead of one long sequence of characters, delimiters in a hierarchical key name function as spaces in a sentence.
 * Easier to manage. A key name hierarchy represents logical groups of configuration data.
 * Easier to use. It's simpler to write a query that pattern-matches keys in a hierarchical structure and retrieves only a portion of configuration data.
 
-Below are some examples of how you can structure your key names into a hierarchy:
+Following are some examples of how you can structure your key names into a hierarchy:
 
 * Based on component services
 
