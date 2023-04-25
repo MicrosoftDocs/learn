@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -26,9 +26,9 @@ quiz:
       explanation: "Incorrect. When defining a stored procedure in Azure portal, input parameters are always sent as a string to the stored procedure."
   - content: "Which of the following would one use to validate properties of an item being created?"
     choices:
-    - content: "Pre-trigger"
+    - content: "Pretrigger"
       isCorrect: true
-      explanation: "Correct. Pre-triggers can be used to conform data before it's added to the container."
+      explanation: "Correct. Pretriggers can be used to conform data before it's added to the container."
     - content: "Post-trigger"
       isCorrect: false
       explanation: "Incorrect. Post-triggers run after an item is created."

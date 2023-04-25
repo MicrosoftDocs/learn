@@ -1,4 +1,3 @@
-## Implement Microsoft Purview Audit (Standard)
 
 Microsoft Purview Audit (Standard) is enabled by default for most Microsoft 365 and Office 365 organizations. As a result, there's only a few things an organization must do before it can search the audit log.
 

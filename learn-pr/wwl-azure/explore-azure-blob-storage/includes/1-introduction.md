@@ -4,5 +4,5 @@ Azure Blob storage is Microsoft's object storage solution for the cloud. Blob st
 After completing this module, you'll be able to:
 
 * Identify the different types of storage accounts and the resource hierarchy for blob storage.
-* Explain how data is securely stored and protected through redundancy.
-* Create a block blob storage account by using the Azure Cloud Shell. 
+* Explain how data is securely stored.
+* Enable a storage account for static website hosting. 
