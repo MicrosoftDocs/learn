@@ -2,8 +2,8 @@
 uid: learn.wwl.az-204-integrate-caching-content-delivery-within-solutions
 metadata:
   title: 'AZ-204: Implement caching for solutions'
-  description: 'AZ-204: Implement caching for solutions'
-  ms.date: 04/24/2023
+  description: Learn how to improve the performance and scalability of your applications by integrating Azure Cache for Redis and Azure Content Delivery Network in to your solution.
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
