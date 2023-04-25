@@ -1,9 +1,9 @@
 ### YamlMime:Module
-uid: learn.wwl.create-c-sharp-methods-parameters
+uid: learn.languages.create-c-sharp-methods-parameters
 metadata:
   title: Create C# methods with parameters
   description: "This module covers method parameters, including pass-by-reference and pass-by-value parameter types. This module also covers optional and named arguments."
-  ms.date: 03/29/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -41,4 +41,4 @@ units:
 - learn.wwl.create-c-sharp-methods-parameters.knowledge-check
 - learn.wwl.create-c-sharp-methods-parameters.summary
 badge:
-  uid: leaen.wwl.create-c-sharp-methods-parameters.badge
+  uid: leaen.languages.create-c-sharp-methods-parameters.badge
