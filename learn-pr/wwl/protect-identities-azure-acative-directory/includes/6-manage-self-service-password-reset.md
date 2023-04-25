@@ -1,4 +1,5 @@
 
+
 When you use only on-premises AD DS, your users can't reset their forgotten passwords by themselves. AD DS in Windows Server doesn't natively support self-service password reset.
 
 Azure AD optionally provides the self-service password reset functionality. If you use Azure AD Premium P1 or P2 licensing, you can extend this functionality to your local AD DS, when you use the self-service password reset together with the password writeback functionality. When you do this, passwords that users reset in Azure AD are written back to AD DS on premises. This means that a user can change his or her password in both a cloud or on-premises environment.
