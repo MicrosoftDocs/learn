@@ -9,7 +9,7 @@ By default, Azure Container Instances are stateless. If the container crashes or
 
 ## Deploy container and mount volume
 
-To mount an Azure file share as a volume in a container by using the Azure CLI, specify the share and volume mount point when you create the container with `az container create`. Below is an example of the command:
+To mount an Azure file share as a volume in a container by using the Azure CLI, specify the share and volume mount point when you create the container with `az container create`. Following is an example of the command:
 
 ```azurecli
 az container create \
@@ -30,7 +30,7 @@ The `--dns-name-label` value must be unique within the Azure region where you cr
 
 You can also deploy a container group and mount a volume in a container with the Azure CLI and a YAML template. Deploying by YAML template is the preferred method when deploying container groups consisting of multiple containers.
 
-The following YAML template defines a container group with one container created with the `aci-hellofiles` image. The container mounts the Azure file share *acishare* created previously as a volume. An example YAML file is show below.
+The following YAML template defines a container group with one container created with the `aci-hellofiles` image. The container mounts the Azure file share *acishare* created previously as a volume. Following is an example YAML file.
 
 ```yaml
 apiVersion: '2019-12-01'
