@@ -14,7 +14,7 @@ metadata:
 title: Introduction to Azure IoT Central
 summary: |
   Determine when to use Azure IoT Central to quickly evaluate your IoT scenario.
-  Describe how Azure IoT Central can help you connect, monitor, and control IoT assets.
+  Describe how Azure IoT Central can help you connect, monitor, and manage IoT assets.
 abstract: |
   Upon completion of this module, you'll be able to:
     - Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario and the opportunities it can create for your business.
