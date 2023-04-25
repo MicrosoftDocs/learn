@@ -154,7 +154,7 @@ Using Bash variables can make the setup process more convenient and less error-p
       --output tsv)
     ```
 
-### Create the Azure resources
+### Create Azure resources
 
 > [!NOTE]
 > In this tutorial, default network settings are used for learning purposes. These settings enable your website to be accessed from the internet. However, in practice, you may choose to configure an Azure virtual network that places your website in a network that is not internet-routable and is only accessible by you and your team. Later, you could reconfigure your network to make the website available to your users.
@@ -237,95 +237,94 @@ Using Bash variables can make the setup process more convenient and less error-p
 > [!IMPORTANT]
 > The unit [Clean up your Azure DevOps environment](/training/modules/deploy-kubernetes/5-clean-up-environment?azure-portal=true) in this module includes crucial steps for cleanup. It is recommended to perform these steps to avoid running out of free build minutes. Even if you don't finish this module, it is important to follow the cleanup steps.
 
-## Create pipeline variables in Azure Pipelines
+## Create a variable group
 
-In [Automate Docker container deployments with Azure Pipelines](/training/modules/deploy-docker?azure-portal=true), you added a variable to your pipeline that stores the name of your Azure Container Registry. Here you do the same.
+In this section you will be adding a variable to your pipeline to store the name of your Azure Container Registry. Defining the name of your Azure Container Registry instance as a variable in your pipeline configuration is recommended over hard-coding it. This makes your configuration more reusable and in case the name of your instance changes, you can easily update the variable and trigger your pipeline without having to modify your configuration.
 
-You could hard-code this name in your pipeline configuration, but if you define it as a variable, your configuration will be more reusable. Plus, if the name of your instance changes, you can update the variable and trigger your pipeline without modifying your configuration.
+1. Log in to your Azure DevOps organization, and then navigate to your project.
 
-To add the variables:
-
-1. In Azure DevOps, go to your **Space Game - web - Kubernetes** project.
-
-1. Under **Pipelines**, select **Library**.
+1. Select **Pipelines**, and then select **Library** from the left navigation pane.
 
     :::image type="content" source="../media/3-pipelines-library.png" alt-text="Screenshot of Azure Pipelines showing the Library menu option.":::
 
-1. Select **+ Variable group**.
+1. Select **Variable groups**, and then select **+ Variable group** to add a new variable group.
 
-1. Under **Properties**, enter *Release* for the variable group name.
+1. In the **Properties** section, enter *Release* for the variable group name.
 
-1. Under **Variables**, select **Add**.
+1. Under the **Variables** section, select **Add**.
 
-1. For the name of your variable, enter *RegistryName*. For the value, enter the login server for your Azure Container Registry, such as *tailspinspacegame4692.azurecr.io*.
+1. Enter *RegistryName* for the variable name, and for the value, enter the login server of your Azure Container Registry, such as *tailspinspacegame4692.azurecr.io*.
 
-1. Near the top of the page, select **Save** to save your variable to the pipeline.
-
-    Your variable group resembles this one:
+1. At the top of the page, select **Save** to save your pipeline variable. This is an example of what your variable group might look like
 
     :::image type="content" source="../media/3-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group. The group contains one variable.":::
 
-## Create required service connections
+## Create service connections
 
-Here, you create service connections that enable Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. Azure Pipelines uses these service connections to push your containers, as well as to instruct your AKS cluster to pull them in to update the deployed service.
+The next step is to create service connections that allow Azure Pipelines to access your Azure Container Registry and Azure Kubernetes Service instances. By creating these service connections, Azure Pipelines can push your containers and instruct your AKS cluster to pull them in to update the deployed service.
 
 > [!IMPORTANT]
-> Ensure that you're signed in to both the Azure portal and Azure DevOps under the same Microsoft account.
+> Make sure that you are signed in to the Azure portal and Azure DevOps with the same Microsoft account.
 
-1. In Azure DevOps, go to your **Space Game - web - Kubernetes** project.
+### Create a Docker Registry service connection
 
-1. From the lower corner of the page, select **Project settings**.
+1. Log in to your Azure DevOps organization, and then navigate to your project.
 
-1. Under **Pipelines**, select **Service connections**.
+1. Select **Project settings** from the bottom corner of the page.
+
+1. Select **Service connections** under the **Pipelines** section.
 
 1. Select **New service connection**, then select **Docker Registry**, and then select **Next**.
 
-1. Near the top of the page, select **Azure Container Registry**.
+1. Near the top of the page, select **Azure Container Registry**, and then select **Service Principal** for authentication type.
 
 1. Enter the following values for each setting:
 
-    | Setting               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Subscription    | Your Azure subscription                          |
-    | Azure container registry  | **Select the one you created earlier** |
-    | Service connection name | *Container Registry Connection*          |
+    | Setting                   | Value                                      |
+    |---------------------------|--------------------------------------------|
+    | Subscription              | Your Azure subscription                    |
+    | Azure container registry  | *Select the one you created earlier*       |
+    | Service connection name   | *Container Registry Connection*            |
 
-1. Ensure that **Grant access permission to all pipelines** is selected.
+1. Make sure that the checkbox for **Grant access permission to all pipelines** is selected.
 
-1. Select **Save**.
+1. Select **Save** when you're done.
 
-1. Select **New service connection**, then select **Kubernetes**, and then select **Next**.
+### Create ARM service connection
 
-1. Near the top of the page, select **Azure Subscription**.
+Now you will create an Azure Resource Manager service connection to authenticate with your AKS cluster. We're using an ARM service connection instead of Kubernetes because long-lived tokens are no longer created by default since Kubernetes 1.24. Check out this DevOps blog post for more details: [Service Connection guidance for AKS customers using Kubernetes tasks](https://devblogs.microsoft.com/devops/service-connection-guidance-for-aks-customers-using-kubernetes-tasks/).
+
+1. Select **New service connection**, select **Azure Resource Manager**, and then select **Next**.
+
+1. Select **Service Principal (automatic)**, and then select **Next**.
+
+1. Select **Subscription** for scope level.
 
 1. Enter the following values for each setting.
 
-    | Setting               | Value                                        |
-    |---------------------|----------------------------------------------|
-    | Subscription    | Your Azure subscription                          |
-    | Cluster  | *Select the one you created earlier* |
-    | Namespace | *default*          |
-    | Service connection name | *Kubernetes Cluster Connection*          |
+    | Setting                 | Value                                      |
+    |-------------------------|--------------------------------------------|
+    | Subscription            | Your Azure subscription                    |
+    | Resource group          | *Select the one you created earlier*       |
+    | Service connection name | *Kubernetes Cluster Connection*            |
 
-1. Ensure that **Grant access permission to all pipelines** is selected.
+1. Make sure that the checkbox for **Grant access permission to all pipelines** is selected.
 
-1. Select **Save**.
+1. Select **Save** when you're done.
 
-### Create the environment
+### Create a pipeline environment
 
-1. Under **Pipelines**, select **Environments**.
+1. Select **Pipelines**, and then select **Environments**.
 
     :::image type="content" source="../media/3-pipelines-environments.png" alt-text="Screenshot of Azure Pipelines showing the Environments menu option.":::
 
-1. Select **Create environment**.
+1. Select **Create environment** to create a new environment.
 1. Under **Name**, enter *spike*.
-1. Under **Resource**, select **Kubernetes**.
-1. Select **Next**.
-1. Under **Provider**, select **Azure Kubernetes Service**.
-1. Under **Azure subscription**, select your subscription.
-1. Under **Cluster**, select the AKS cluster you created earlier.
-1. Under **Namespace**, **Existing** and **default**.
-1. Select **Validate and create**.
+1. Select **Kubernetes** from the **Resource** section, and then select **Next**.
+1. Select **Azure Kubernetes Service** for the **Provider**.
+1. Select your **Azure subscription** and the **Cluster** you created earlier.
+1. Under **Namespace**, select **Existing** and then pick **default** from the dropdown menu.
+1. Select **Validate and create** when you're done.
 
 ## Update the Kubernetes deployment manifest in your GitHub source project
 
