@@ -24,7 +24,7 @@ Notice in the data, that we have 10 rows of data containing a list of different 
 
 Notice that the addresses of many of the companies are similar with for example "188, Quuen St Brisbane" and "188 queen street brisbane". These addresses are fictitious, but we can clearly see that there's a data quality issue that we're hoping to fix.
 
-The "person_id" column is referring to the identifier of an Employee of which is somewhere within one of the other files and hence we'll be create what CluedIn calls **Edges** or **Relationships** between this column and the column of another Domain.
+The "person_id" column is referring to the identifier of an Employee of which is somewhere within one of the other files and hence we'll create what CluedIn calls **Edges** or **Relationships** between this column and the column of another Domain.
 
 ### Contacts.csv
 
@@ -214,7 +214,7 @@ Now we'll create the secure credentials that Microsoft Purview and Azure Data Fa
 
 1. In CluedIn, go to the **Datasources** section under **Integration** in CluedIn and you'll notice that your 7 files are now showing in CluedIn. However, there will only be the metadata that is registered.
 
-    :::image type="content" source="../media/CluedIn_DataSources_Purview.png" alt-text="Screenshot of the CluedIn integrations screen, showing the data sources.":::
+    :::image type="content" source="../media/cluedin-data-sources-purview.png" alt-text="Screenshot of the CluedIn integrations screen, showing the data sources.":::
 
 # Connect CluedIn to Azure Data Factory
 

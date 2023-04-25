@@ -1,6 +1,6 @@
 Deploy a data technology stack that provides data governance, data quality, data lineage, data enrichment, and data standardization layers to your Azure ecosystem. Combine the power of Microsoft Purview, Azure Data Factory, and CluedIn into a powerhouse of data governance and data quality. This data pipeline takes raw data and surfaces high quality and ready-for-insight data to downstream systems and users.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this module, you'll be able to:
 

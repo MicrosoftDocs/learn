@@ -18,7 +18,7 @@ So far in the exercise, we have found that most our records were able to actuall
 
 1. Create a new deduplication project called **Products** and select the Entity Type of **Product**.
 
-    :::image type="content" source="../media/Deduplication_Product.png" alt-text="Screenshot of the CluedIn Create Duplication Project window.":::
+    :::image type="content" source="../media/deduplication-product.png" alt-text="Screenshot of the CluedIn Create Duplication Project window.":::
 
 1. Give the project a useful description and select **Create**.
 
