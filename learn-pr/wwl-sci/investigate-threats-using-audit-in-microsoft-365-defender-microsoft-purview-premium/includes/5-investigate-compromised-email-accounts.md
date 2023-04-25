@@ -1,4 +1,3 @@
-## Investigate compromised email accounts using Purview Audit (Premium)
 
 A compromised user account is also referred to as an account takeover. It's a type of attack where an attacker gains access to a user account and operates as the user. These types of attacks sometimes cause more damage than the attacker may have intended.
 
