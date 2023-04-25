@@ -1,4 +1,3 @@
-## Implement Microsoft Purview Audit (Premium)
 
 If an organization has a subscription and end-user licensing that supports Audit (Premium), it should perform the following steps to set up and use the Audit (Premium) capabilities.
 
