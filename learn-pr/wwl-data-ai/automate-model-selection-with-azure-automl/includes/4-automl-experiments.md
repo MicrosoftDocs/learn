@@ -34,7 +34,7 @@ When using the SDK to run an automated machine learning experiment, you can subm
 Alternatively:
 
 * Specify a dataset, dataframe, or numpy array of *X* values containing the training features, with a corresponding *y* array of label values.
-* Optionally, specify *X_valid* and *y_valid* datasets, dataframes, or numpy arrays of *X_valid* values to be used for validation.
+* Optionally, specify *X_valid* and *y_valid* data asset, dataframes, or numpy arrays of *X_valid* values to be used for validation.
 
 ### Specify the primary metric
 
