@@ -1,4 +1,4 @@
-Most networked applications need to work with secrets, such as database connection strings or passwords. When perform machine learning on Azure, we normally use secrets to access training data or look at results. Particularly when working with private data, it’s important to make sure the secrets are properly managed.
+Most networked applications need to work with secrets, such as database connection strings or passwords. When performing machine learning on Azure, we normally use secrets to access training data or look at results. Particularly when working with private data, it’s important to make sure the secrets are properly managed.
 
 ## Don’t store secrets in source code
 
@@ -68,7 +68,7 @@ The output is the original password that we stored:
 Your secret is 'hVFkk965BuUv' 
 ```
 
-### Working with remote runs
+### Working with remote jobs
 
 The above provides a generic solution to using Key Vault. Typically, with Azure Machine Learning, you will be executing code through a remote run.
 
@@ -76,13 +76,13 @@ The standard flow for using secrets in this context is:
 
 - Log in to Azure and connect to your workspace,
 - Set a secret in Workspace Key Vault,
-- Submit a remote run, then
-- Within the remote run, get the secret from Key Vault and use it.
+- Submit a remote job, then
+- Within the remote job, get the secret from Key Vault and use it.
 
-When using the Python SDK and a run, secrets can be easily accessed directly. This is because a submitted run is aware of its workspace. For example:
+When using the Python SDK and a job, secrets can be easily accessed directly. This is because a submitted run is aware of its workspace. For example:
 
 ```Python
-# Code in submitted run 
+# Code in submitted job run 
 from azureml.core import Experiment, Run 
  
 run = Run.get_context() 
