@@ -1,5 +1,6 @@
 
 
+
 Before making any purchasing decisions, organizations should carefully plan their requirements for new systems. Most organizations have a mix of old and new devices. They can replace some of these devices with new equipment and upgrade others to Windows 11. Upgrades require careful planning to ensure they work correctly and efficiently. During the upgrade process, correct any previous operating system misconfiguration.
 
 The Planning stage includes:
