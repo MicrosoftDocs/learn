@@ -1,4 +1,3 @@
-## Export, configure and view audit log records
 
 After you search the audit log and download the search results to a CSV file, the file contains a column named **AuditData**. This column contains additional information about each event. The data in this column is formatted as a JSON object, which contains multiple properties that are configured as **property:value** pairs separated by commas.
 

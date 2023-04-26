@@ -21789,6 +21789,31 @@
       "source_path": "learn-pr/wwl-azure/work-with-cosmos-db/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/work-with-cosmos-db/8-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-api-management/8-import-api.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/8-exercise-import-api",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/5-azure-storage-redundancy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/6-create-block-blob-storage-account.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/7-summary",
+      "redirect_document_id": false
     }
   ]
 }
