@@ -3,7 +3,7 @@ uid: learn.azure.intro-cloud-everyone
 metadata:
   title: Introduction to Cloud for Everyone
   description: Introduction to Cloud for Everyone
-  ms.date: 02/24/2019
+  ms.date: 04/25/2023
   author: PhilStollery
   ms.author: tinaes
   ms.topic: interactive-tutorial
@@ -12,10 +12,10 @@ title: Introduction to Cloud for Everyone
 summary: Learn about Cloud for Everyone.
 abstract: | 
   In this module, you will:
-  - Learn about diversity and inclusion
-  - Learn about inclusive culture
-  - Learn about Inclusive Marketing
-  - Learn about Cloud for Everyone
+  - Learn about diversity and inclusion.
+  - Learn about inclusive culture.
+  - Learn about Inclusive Marketing.
+  - Learn about Cloud for Everyone.
 prerequisites: | 
   - None
 iconUrl: /training/achievements/intro-cloud-everyone.svg

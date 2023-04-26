@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium.introduction
-title: Introduction
+title: Introduction to threat investigation with Microsoft Purview Audit (Premium)
 metadata:
-  title: Introduction
-  description: "Introduction."
+  title: Introduction to threat investigation with Microsoft Purview Audit (Premium)
+  description: "Introduction to threat investigation with Microsoft Purview Audit (Premium)."
   ms.date: 3/22/2023
   author: wwlpublish
   ms.author: kelawson

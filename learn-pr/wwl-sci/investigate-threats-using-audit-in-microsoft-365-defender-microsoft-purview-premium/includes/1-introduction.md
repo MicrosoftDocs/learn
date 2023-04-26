@@ -1,4 +1,3 @@
-## Introduction to threat investigation with Microsoft Purview Audit (Premium)
 
 You're a Security Operations Analyst working at a company that is implementing Microsoft Purview and Microsoft 365 Defender solutions.  You have already implemented Microsoft Purview Audit (Standard) and used it to search the Unified Audit Log (UAL). Now you need to understand how to setup and implement Microsoft Purview Audit (Premium). Your manager has asked you to create audit log retention policies and to conduct forensic investigations.
 
