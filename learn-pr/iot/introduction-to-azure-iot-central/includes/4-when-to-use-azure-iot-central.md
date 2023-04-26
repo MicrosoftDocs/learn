@@ -30,7 +30,7 @@ Now that you have the list of criteria and an illustration of the decision proce
 | --- | --- | --- |
 | **Experience** | As stated in our scenario, your team don't have experience working on IoT projects. Therefore, the solution you design has to account for lack of skills and experience. | Yes |
 | **Customization** | You and your team would like to design a custom notification system for the cloud application to notify store managers with critical alerts. It needs to integrate with the current messaging system. | Yes - use rules to trigger external actions |
-| **Production-ready** | The scenario is on it's experimental stage and device environment telemetry data will be enabled in one store only. If there's enough business impact, a dedicated team will develop a production-ready solution to deploy on all stores. | Yes |
+| **Production-ready** | The scenario is on it's experimental stage and device environment telemetry data will be enabled in one store only. If there's enough business impact, a dedicated team will then be assigned to develop a production-ready solution using PaaS IoT services to deploy on all stores. | Yes |
 
 ## Create a retail application
 
