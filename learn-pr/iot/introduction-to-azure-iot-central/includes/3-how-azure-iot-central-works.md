@@ -76,7 +76,7 @@ For long-term storage and control over archiving and retention policies, you can
 
 ### Business automation
 
-*Rules* in IoT Central let your trigger external actions, such as to send an email or fire an event, in response to conditions within IoT Central. For example, you can notify a retailer if the ambient temperature for a device reaches a threshold.
+*Rules* in IoT Central let your trigger external actions, such as to send an email or fire an event, in response to conditions within IoT Central. For example, you can notify a store manager if the ambient temperature for a device reaches a threshold.
 
 ### Additional computation
 
