@@ -1,31 +1,25 @@
-Your company stores extensive data in on-premises SQL Server databases. Much of that data is correlated with existing data sets in your Azure database solution. Additionally, some of your company’s data sources are hosted in Azure VMs. You decide to use Microsoft Purview to discover and create a unique catalog of all your data sets.
+Your company stores extensive data in on-premises SQL Server databases. Much of that data is correlated with existing data sets in your Azure database solution. Additionally, some of your company’s data sources are hosted on Azure Virtual Machines. You decide to use Microsoft Purview to discover and create a unique catalog of all your data sets since it can connect to all your resources.
 
 ## Register data sources from on-premises SQL Server
 
 To register data sources from a SQL Server on-premises, first ensure you can register data sources successfully from a SQL Server instance that’s running either in your on-premises datacenter or in Azure VM by ensuring that:
 
-- Your Microsoft Purview account is configured for other data sources.
+- You have the data source administrator role and data reader roles on collection where you want your data sources to reside. These roles are required to register a data source.
 
-- You’ve configured the Data source administrator role and Data reader roles, which are required to register a data source.
+- Configure either SQL Authentication or Windows Authentication for your SQL Server. Use **SQL Server Management Studio** to change and configure the authentication mode to support both SQL Server and Windows Authentication modes.
 
-To ensure that you can register the data from SQL Server successfully, configure either SQL Authentication or Windows Authentication. Use **SQL Server Management Studio** to change and configure the authentication mode to support both SQL Server and Windows Authentication modes.
-
-You must ensure that the account that you’ll use to scan the data on your SQL server has permission to access the master database because the Microsoft Purview scanner must enumerate the **sys.databases** that reside in the master database.
-
-When you configure security, store the SQL login password in *Azure Key Vault*, a cloud service that helps securely store secrets. Ensure that Azure Key Vault is connected to your Microsoft Purview account.
-
-Establish connectivity with an on-premises network by using either a virtual private network (VPN) or **Azure ExpressRoute.** For higher security configuration, consider setting up an Microsoft Purview portal private endpoint to enable connectivity with a private link to Microsoft Purview Governance Portal. You can also enable connectivity to the on-premises SQL server through the public endpoint.
+- The SQL account that you’ll use to access the data on your SQL server has permission to access the master database. The Microsoft Purview scanner must enumerate the **sys.databases** that resides in the master database.
 
 ## Create and manage self-hosted integration runtime
 
-The next step is to create a [self-hosted integration runtime (SHIR)](/azure/purview/manage-integration-runtimes) in your Microsoft Purview account. Microsoft Purview uses the SHIR component to run data scans across different network environments. You first must create a Microsoft integration runtime in your Microsoft Purview account, and then download and install binaries on the on-premises machine that runs any supported 64-bit version of the Windows operating system.
+The next step is to create a [self-hosted integration runtime (SHIR)](/azure/purview/manage-integration-runtimes) in your Microsoft Purview account. Microsoft Purview uses the SHIR component to run data scans across different network environments. You first must create a Microsoft integration runtime in your Microsoft Purview account, and then download and install the SHIR on the on-premises machine that runs any supported 64-bit version of the Windows operating system.
 
 :::image type="content" source="../media/3-data-map-integration-runtime-settings.png" alt-text="Screenshot of the Data map integration runtime settings pane." border="true" lightbox="../media/3-data-map-integration-runtime-settings.png":::
 
 >[!Note]
 >SHIR installation on a domain controller isn’t supported.
 
-Also, you should configure an appropriate power plan on the computer on which you install SHIR to avoid hibernation, which prevents SHIR from responding to data requests.
+Also you should configure an appropriate power plan on the computer on which you install SHIR to avoid hibernation, which prevents SHIR from responding to data requests.
 
 ## Register the Microsoft integration runtime on your computer
 
@@ -102,7 +96,7 @@ When you meet all the prerequisites, use the Azure portal to register your on-pr
 
 1. On the **Register sources** pane, select **SQL Server** and then select **Continue**.
 
-    :::image type="content" source="../media/3-register-sql-server.png" alt-text="Screenshot of the Microsoft Purview Data map page with the Sources pane open and S Q L Server selected as the register source." border="true" lightbox="../media/3-register-sql-server.png":::
+    :::image type="content" source="../media/3-register-sql-server.png" alt-text="Screenshot of the Microsoft Purview Data Map page with the Sources pane open and S Q L Server selected as the register source." border="true" lightbox="../media/3-register-sql-server.png":::
 
 1. On the **Register sources (SQL Server)** pane, in the **Name** text box, enter a name for the source.
 
@@ -117,7 +111,7 @@ When you meet all the prerequisites, use the Azure portal to register your on-pr
 
 Now that your data source is integrated with your Microsoft Purview account, you’re ready to create *scan rule sets*, which are a group of scan rules that you associate with a scan.
 
-:::image type="content" source="../media/3-system-scan-set-rule.png" alt-text="Screenshot of the Microsoft Purview Data map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="true" lightbox="../media/3-system-scan-set-rule.png":::
+:::image type="content" source="../media/3-system-scan-set-rule.png" alt-text="Screenshot of the Microsoft Purview Data Map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="true" lightbox="../media/3-system-scan-set-rule.png":::
 
 You can create a custom scan rule set that includes different file types or classifications:
 
@@ -169,7 +163,7 @@ Use the following steps to scan an on-premises SQL Server instance:
 
 ## Govern and manage data from SQL Server in an Azure VM by using Microsoft Purview 
 
-The procedures for governing the data from SQL Server in an Azure VM are very similar to the procedures to govern data from SQL Server that were described previously:
+The procedures for governing the data from SQL Server in an Azure VM are similar to the procedures to govern data from SQL Server that were described previously:
 
 1. Create and manage self-hosted integration runtime.
 
@@ -193,10 +187,10 @@ To scan a data source, ensure that you provide an account that has the required 
 
 Use the following steps to resolve the issue:
 
-1. Verify that you have all prerequisites and have followed all authentication steps for the source you are connecting to.
+1. Verify that you have all prerequisites and have followed all authentication steps for the source you're connecting to.
 
-1. Verify that the permissions for the Microsoft Purview managed identity are set up correctly in Azure Key Vault. Ensure that you are using the right secret name and version.
+1. Verify that the permissions for the Microsoft Purview managed identity are set up correctly in Azure Key Vault. Ensure that you're using the right secret name and version.
 
 1. Verify that Azure Role Based Access Control (RBAC) is granted at least **Reader** role on the resource or is inherited from a higher scope such as a resource group or a subscription.
 
-1. If you are using private link to connect to your data source, ensure that self-hosted integration runtime is set up correctly.
+1. If you're using private link to connect to your data source, ensure that self-hosted integration runtime is set up correctly.
