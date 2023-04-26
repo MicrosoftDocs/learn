@@ -13,6 +13,6 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: module-intro-to-product
   ms.prod: learning-azure
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/2-what-is-azure-iot-central.md)]
