@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium.investigate-compromised-email-accounts
+title: Investigate compromised email accounts using Purview Audit (Premium)
+metadata:
+  title: Investigate compromised email accounts using Purview Audit (Premium)
+  description: "Investigate compromised email accounts using Purview Audit (Premium)."
+  ms.date: 3/22/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-investigate-compromised-email-accounts.md)]
