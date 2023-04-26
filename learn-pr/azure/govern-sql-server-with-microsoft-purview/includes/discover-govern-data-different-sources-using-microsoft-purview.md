@@ -46,7 +46,7 @@ Manage discovered data assets in Microsoft Purview by creating a collection, whi
 
 :::image type="content" source="../media/2-data-map-collections.png" alt-text="Screenshot showing the Data map Collections pane." border="true" lightbox="../media/2-data-map-collections.png":::
 
-Here are some of the available roles:
+Here are some of the available roles you can assign to users:
 
 | Role assignment| Role permissions|
 |------------------------|------------------------------------------------------------------------------------------------------------------------------|
@@ -86,13 +86,3 @@ Some available data insights include:
 - Classification insights. An organization’s security administrators typically use this report to understand the types of information being used and scanned.
 
 - Sensitivity Labeling insights. This report has details about the sensitivity labels found during a scan.
-
-## Use connectors to access data sources
-
-Microsoft Purview natively supports a large number of source systems by offering connectors to many Microsoft data sources and non-Microsoft products such as SAP, Amazon RDS, and Teradata. You can host these sources in a multicloud environment or at your on-premises datacenter. The connectors are used to discover your data estate and to visualize data assets using Microsoft Purview Data Map.
-
-## Manage discovered data by creating a collection
-
-Manage discovered data assets in Microsoft Purview by creating a collection, which organizes assets and enables you to control access by granting users differing levels of permissions. You can also delegate ownership of data sources and assets by assigning roles to specific collections, which can contain subcollections. By default, subcollections inherit permissions from the parent collection.
-
-:::image type="content" source="../media/2-data-map-collections.png" alt-text="Screenshot showing the Data map Collections pane." border="true" lightbox="../media/2-data-map-collections.png":::
