@@ -4,11 +4,11 @@ Let's start with the basics. What are passwords, and what are they for? In the s
 
 Credentials are the combination of a username and a password. The username is the identifier of your user account, such as your email address or a name that you chose. The password is the *secret* part of your credentials.
 
-Some accounts let you create a special username that's different from your email address. Others might require that you use your personal email address. In any case, the username is not meant to be a secret, but the password is.
+Some accounts let you create a special username that's different from your email address. Others might require that you use your personal email address. In any case, the username isn't meant to be a secret, but the password is.
 
 ## How secret are your passwords?
 
-Many passwords are not as secret as people think they are. *Billions* of username/password combinations are currently for sale, but even more are available for free. Where did they all come from? Previous breaches. Thousands of breaches happen every year. Those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
+Many passwords aren't as secret as people think they are. *Billions* of username/password combinations are currently for sale, but even more are available for free. Where did they all come from? Previous breaches. Thousands of breaches happen every year. Those breaches expose all kinds of personal data, along with account information that often includes usernames and passwords.
 
 What is a *data breach*, and why should you care? A data breach is theft of information that shouldn't be public. This often happens when a hacker takes advantage of flaws in a security system or just takes the data after a company accidentally exposes a database with no security settings turned on. That information can then be used for identity theft, blackmail, harassment, and other crimes.
 
@@ -32,7 +32,7 @@ But how do you remember a different password for every account? What if you have
 - Write them in a notebook and store the notebook in a safe. This is secure because hackers usually can't physically access your safe and open it.
 - Use a password manager. This is secure because password managers are designed solely to store passwords. A password manager can be opened only with a key (the secret password or passphrase) that's known only to the person who owns it. Password managers are also convenient, so they're more likely to be used.
 
-Because storing a notebook of passwords in a safe is not convenient, a password manager is the better option for most people who use a computer and/or smartphone. A password manager is your safest option if you treat it carefully. In this case, *carefully* means that you should:
+Because storing a notebook of passwords in a safe isn't convenient, a password manager is the better option for most people who use a computer and/or smartphone. A password manager is your safest option if you treat it carefully. In this case, *carefully* means that you should:
 
 - Use a passphrase instead of a short password.
 - Use *multifactor authentication* to secure it even further.
@@ -85,7 +85,7 @@ First, you'll need to find a trusted password manager. Here are four common, con
 
 All of these except 1Password have free plans that you can use indefinitely. At the time of this writing, 1Password has a free trial for 14 days only.
 
-To test any of these password managers, simply download the program to your computer or smartphone and give it a try. You should be able to use all except 1Password for free, without a credit card. Most of them have additional features available for a fee.
+To test any of these password managers, download the program to your computer or smartphone and give it a try. You should be able to use all except 1Password for free, without a credit card. Most of them have additional features available for a fee.
 
 You should also consider installing your password manager's *browser extension* (the program that runs in your internet browser). These extensions make signing in online while using that browser much more convenient, while still being secure.
 
