@@ -22,6 +22,7 @@ prerequisites: |
   - Knowledge of Azure services
   - Knowledge of various data sources such as Azure SQL database and Azure SQL database managed instances 
   - Knowledge of the concepts around data governance
+  - A Microsoft Purview account
 
 iconUrl: /training/achievements/generic-badge.svg
 levels:

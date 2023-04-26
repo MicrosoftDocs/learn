@@ -4,7 +4,7 @@ You’ve decided to use a Microsoft Purview account to connect to data sources t
 
 ## Register an Azure SQL Database source with a Microsoft Purview account
 
-You’ve already set up a Microsoft Purview account by adding the Data Source Administrator role to the account and by configuring the Data Reader role to register a data source.
+Prepare your Microsoft Purview account making sure you have Data Source Administrator permissions and Data Reader permissions on the collection where you're going to register your data source.
 
 Before you can register an Azure SQL database source, you need to ensure that the Microsoft Purview account has connectivity to the database and has the correct credentials to access it.
 
@@ -39,7 +39,7 @@ To access an Azure SQL Database from your Microsoft Purview account, use one of 
 
 Use the following steps to register an Azure SQL Database source in Microsoft Purview:
 
-1. In the Microsoft Azure portal, select your **Microsoft Purview** account, select **Microsoft Purview Studio**, and then select **Data map**.
+1. In the Microsoft Azure portal, select your **Microsoft Purview** account, select **Microsoft Purview governance portal**, and then select **Data map**.
 
 1. On the **Data map** pane, select **Collections**, and then either create a new collection or select an existing collection.
 
@@ -83,7 +83,7 @@ To scan your Azure SQL database with system-managed or user-managed identities, 
 
 To scan an Azure SQL Database that’s been configured using managed identities, follow these steps:
 
-1. In the Azure portal, select your **Microsoft Purview** account, and then select **Microsoft Purview Studio**.
+1. In the Azure portal, select your **Microsoft Purview** account, and then select **Microsoft Purview governance portal**.
 
 1. To observe the collection hierarchy, select **Data map**, and then select **Sources**.
 
@@ -128,9 +128,9 @@ To scan an Azure SQL Database that’s been configured using a service principal
 
 ### Scan an Azure SQL Database configured with SQL authentication
 
-To configure a scan of a database configured with SQL authentication, you need to connect your Microsoft Purview Account with the Azure Key Vault service. This service stores the passwords for the account used to scan the SQL database. Use Microsoft Purview Studio to integrate the Key Vault service and your Microsoft Purview account:
+To configure a scan of a database configured with SQL authentication, you need to connect your Microsoft Purview Account with the Azure Key Vault service. This service stores the passwords for the account used to scan the SQL database. Use Microsoft Purview governance portal to integrate the Key Vault service and your Microsoft Purview account:
 
-1. In Microsoft Purview studio, select the **Management** page, select **Credentials**, and then, in the toolbar, select **Manage Key Vault connections**.
+1. In Microsoft Purview governance portal, select the **Management** page, select **Credentials**, and then, in the toolbar, select **Manage Key Vault connections**.
 
 1. On the **Manage Key Vault connections** pane, select **New**, provide a name for the connection, and then select the existing Key Vault.
 
@@ -139,7 +139,7 @@ To configure a scan of a database configured with SQL authentication, you need t
 >[!Note]
 >Be sure to configure the access policy for Azure Key Vault to grant **Get** and **List** secret permission for your Microsoft Purview account.
 
-:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Azure Purview." border="true" lightbox="../media/2-add-access-policy.png":::
+:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Microsoft Purview." border="true" lightbox="../media/2-add-access-policy.png":::
 
 After you establish a connection with Azure Key Vault, create credentials that use **SQL** **authentication** for your Azure SQL database.
 
