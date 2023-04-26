@@ -12,22 +12,24 @@ Microsoft Purview is designed to address these issues and to help enterprises ge
 
 ## What will we be doing?
 
-In this module, you’ll get a high-level overview of the process to register data sources stored in an Azure SQL database and in an Azure SQL Managed Instance. You’ll learn how you can use Microsoft Purview to help with these processes by:
+In this module, you’ll get a high-level overview of the process to register data sources stored in an Azure SQL database and in an Azure SQL Managed Instance and govern them in Microsoft Purview. 
 
-- Identifying prerequisites.
+In this module we'll:
 
-- Setting up the correct network connections and security requirements.
+- Identify prerequisites.
 
-- Configuring required credentials.
+- Set up the correct network connections and security requirements.
 
-- Registering data sources.
+- Configure required credentials.
 
-- Creating scan rule sets.
+- Register data sources.
 
-- Creating a scan.
+- Create scan rule sets.
 
-- Retrieving insights reports.
+- Create a scan.
+
+- Retrieve insights reports.
 
 ## What is the main goal?
 
-By the end of this module, you’ll be able to describe the process of connecting different data sources running in Azure. You’ll also be able to use Microsoft Purview to help you manage your enterprise data environment and your various data sources.
+By the end of this module, you’ll be able to describe the process of registering and scanning Azure data sources in Microsoft Purview. You’ll also be able to use Microsoft Purview to help you manage your enterprise data environment and your various data sources.
