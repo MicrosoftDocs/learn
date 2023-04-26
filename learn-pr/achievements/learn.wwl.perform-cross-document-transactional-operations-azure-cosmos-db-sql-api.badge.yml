@@ -4,5 +4,5 @@ achievementUid: >-
 metadata:
   title: >-
     Microsoft Badge: Perform cross-document transactional operations with the
-    Azure Cosmos DB SQL API was issued by Microsoft
+    Azure Cosmos DB for NoSQL was issued by Microsoft
 socialImageUrl: /training/achievements/azure-cosmos-db-implement-cross-document-social.png
