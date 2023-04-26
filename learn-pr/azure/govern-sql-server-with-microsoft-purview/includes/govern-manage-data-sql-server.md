@@ -96,7 +96,7 @@ When you meet all the prerequisites, use the Azure portal to register your on-pr
 
 1. On the **Register sources** pane, select **SQL Server** and then select **Continue**.
 
-    :::image type="content" source="../media/3-register-sql-server.png" alt-text="Screenshot of the Microsoft Purview Data Map page with the Sources pane open and S Q L Server selected as the register source." border="true" lightbox="../media/3-register-sql-server.png":::
+    :::image type="content" source="../media/3-register-sql-server.png" alt-text="Screenshot of the Microsoft Purview Data Map page with the Sources pane open and SQL Server selected as the register source." border="true" lightbox="../media/3-register-sql-server.png":::
 
 1. On the **Register sources (SQL Server)** pane, in the **Name** text box, enter a name for the source.
 
