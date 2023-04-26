@@ -1,4 +1,5 @@
 
+
 Microsoft Defender for Endpoint is an enterprise endpoint security platform designed to help enterprise networks **prevent**, **detect**, **investigate**, and **respond** to advanced threats.
 
 Defender for Endpoint uses the following combination of technology built into Windows 10 and Microsoft's robust cloud service:
