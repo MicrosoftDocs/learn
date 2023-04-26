@@ -11,7 +11,7 @@ metadata:
 title: Explore Cognitive Services for Vision (preview)
 summary: Cognitive Services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Describe the capabilities available in Azure Cognitive Services for Vision.
   - Understand the benefits provided by Microsoft's Florence foundation model.
   - Analyze images using Image Analysis 4.0.

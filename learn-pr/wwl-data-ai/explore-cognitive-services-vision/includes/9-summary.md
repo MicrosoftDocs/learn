@@ -12,7 +12,7 @@ Now that you have completed this module, you should be able to:
 
 ## Clean up
 
-You must clean up any Azure resources created during the exercises in this module to avoid being charged for unused services and resources. If you did not delete your resource group in Unit 7 - Exercise - Train a custom object detection model in Vision Studio, follow these instructions:
+You must clean up any Azure resources created during the exercises in this module to avoid being charged for unused services and resources. If you didn't delete your resource group in Unit 7 - Exercise - Train a custom object detection model in Vision Studio, follow these instructions:
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 2. In the left-hand navigation menu, select **Resource Groups**, and then select the `rg-ms-learn-vision` resource group you created as part of the exercise in Unit 5.

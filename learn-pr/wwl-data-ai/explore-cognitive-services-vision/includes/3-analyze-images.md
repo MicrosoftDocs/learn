@@ -13,7 +13,7 @@ Image captions are accessible through the **Caption** and **Dense Captions** fea
 
 **Caption** generates a single sentence describing the image, evaluating the image's content holistically. This feature can be helpful for activities such as auto-generating alternative image text.
 
-**Dense Captions** provides supplementary information by also generating descriptive phrases for individual objects within the image. These additional captions can help enhance the understanding of the elements that make up the image. The Dense Captions API response includes bounding box coordinates of the described image regions. This feature can be used to generate descriptions for different parts of an image.
+**Dense Captions** provides supplementary information by also generating descriptive phrases for individual objects within the image. These captions can help enhance the understanding of the elements that make up the image. The Dense Captions API response includes bounding box coordinates of the described image regions. This feature can be used to generate descriptions for different parts of an image.
 
 ### Use natural language queries to search photos
 
@@ -31,11 +31,11 @@ Tagging images involves using AI to identify content within an image, such as ob
 | :-----: | :----: |
 | ![A photograph of a building which is used as an example of the input to Image Analysis 4.0.](../media/03-building-original-image.png) |![A screenshot of the generated tags that Image Analysis 4.0 provides for the image of a building.](../media/03-building-tags.png) |
 
-Image tagging evaluates all image content, not just the main subject, such as a person in the foreground. As such, tags will also be generated for image contents, such as the setting (indoor or outdoor), activities, landscapes, landmarks, colors, plants, animals, and other detected objects and actions.
+Image tagging evaluates all image content, not just the main subject, such as a person in the foreground. Tags are generated for image contents, such as the setting (indoor or outdoor), activities, landscapes, landmarks, colors, plants, animals, and other detected objects and actions.
 
 ### Detect objects in images
 
-Object detection is similar to tagging, but the API returns a tag plus the bounding box coordinates for each object found in the image. For example, if a picture contains a dog, cat, and person, the object detection operation will list those objects with their pixel coordinates in the image. You can use this functionality to process the relationships between the objects in an image. It also lets you determine whether multiple instances of the same object exist in an image.
+Object detection is similar to tagging, but the API returns a tag plus the bounding box coordinates for each object found in the image. For example, if a picture contains a dog, cat, and person, the object detection operation lists those objects with their pixel coordinates in the image. You can use this functionality to process the relationships between the objects in an image. It also lets you determine whether multiple instances of the same object exist in an image.
 
 The object detection function only finds objects and living things, which can be localized with bounding boxes. At the same time, the tag function can also include contextual terms like "indoor," which are more generalized to the image contents.
 
@@ -47,7 +47,7 @@ Image Analysis 4.0 enables developers to extract printed or handwritten text fro
 | :-----: | :------------: |
 | ![An image of a receipt with bounding boxes surrounding the items listed.](../media/03-receipt-with-bounding-boxes.png) |![A screenshot of the generated tags that Image Analysis 4.0 provides for the image of a receipt](../media/03-ocr-text.png) |
 
-The new unified performance-enhanced API in Image Analysis 4.0 provides a fast, synchronous API for scenarios that include running OCR on single images that are not text-heavy, allowing OCR to be embedded in near real-time user experiences to enrich content understanding and follow-up user actions with rapid turn-around times.
+The new unified performance-enhanced API in Image Analysis 4.0 provides a fast, synchronous API for scenarios that include running OCR on single images that aren't text-heavy, allowing OCR to be embedded in near real-time user experiences to enrich content understanding and follow-up user actions with rapid turn-around times.
 
 ### Create image thumbnails using smart cropping
 
@@ -59,7 +59,7 @@ The Smart cropping API takes one or more aspect ratios and returns the bounding 
 
 **People detection** in Image Analysis 4.0 represents an enhancement to the underlying object detection model, specifically created to detect people appearing in images. For each person detected, the bounding box coordinates of the person are returned, along with a confidence score.
 
-People detection does not attempt to distinguish faces within the image or predict or classify facial attributes.
+People detection doesn't attempt to distinguish faces within the image or predict or classify facial attributes.
 
 ### Background removal
 

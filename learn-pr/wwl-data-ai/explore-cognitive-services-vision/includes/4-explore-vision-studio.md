@@ -9,7 +9,7 @@ Using Studio, you can experiment with the services and learn what they offer wit
 
 ## Try-it-out experiences
 
-Vision Studio provides access to many try-it-out experiences for the different capabilities available through Vision and Image Analysis 4.0. These experiences leverage prebuilt, pre-configured models for performing various computer vision tasks. The try-it-out experiences allow you to upload images and receive JSON and text responses, helping you test the features and observe return values quickly using a no-code approach.
+Vision Studio provides access to many try-it-out experiences for the different capabilities available through Vision and Image Analysis 4.0. These experiences use prebuilt, pre-configured models for performing various computer vision tasks. The try-it-out experiences allow you to upload images and receive JSON and text responses, helping you test the features and observe return values quickly using a no-code approach.
 
 Demo experiences are provided for the following capabilities, broken down by category:
 

@@ -15,17 +15,17 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which Image Analysis 4.0 feature should you use to generate an English sentence describing image contents, plus additional descriptions for other objects and regions within the image?"
+  - content: "Which Image Analysis 4.0 feature should you use to generate an English sentence describing image contents, plus descriptions for other objects and regions within the image?"
     choices:
     - content: "Caption"
       isCorrect: false
-      explanation: "Incorrect. Caption will generate a single, human-readable English sentence describing the image but will not create additional tags for individual objects and regions within the image."
+      explanation: "Incorrect. Caption generates a single, human-readable English sentence describing the image but doesn't create tags for individual objects and regions within the image."
     - content: "Dense Captions"
       isCorrect: true
       explanation: "Correct. Dense Captions generates a single, human-readable English sentence describing the image and also creates tags for individual objects and regions within the image."
     - content: "Tags"
       isCorrect: false
-      explanation: "Incorrect. Tags creates a list of labels or tags for the image and other features detected within it."
+      explanation: "Incorrect. The Tags feature creates a list of labels or tags for the image and other features detected within it."
   - content: "Object detection models are used to do what?"
     choices:
     - content: "Classify images based on their primary subject matter."
@@ -44,7 +44,7 @@ quiz:
       explanation: "Correct. In Image Analysis 4.0, the data-labeling workflow in Azure Machine Learning generates the COCO file for your training data. Azure Machine Learning allows you to manually label your images and generate a COCO file that can be imported into Vision Studio."
     - content: "Use the Vision Studio COCO file generator utility after manually labeling your images in the Dataset."
       isCorrect: false
-      explanation: "Incorrect. Vision Studio does not contain a COCO file generator utility."
+      explanation: "Incorrect. Vision Studio doesn't contain a COCO file generator utility."
     - content: "Import a COCO file created manually in Visual Studio Code."
       isCorrect: false
-      explanation: "Incorrect. COCO files are JSON files that can be created manually using tools like Visual Studio Code. However, this is not the easiest way to generate the file."
+      explanation: "Incorrect. COCO files are JSON files that can be created manually using tools like Visual Studio Code. However, using Visual Studio Code to create a COCO file isn't the easiest way to generate the file."
