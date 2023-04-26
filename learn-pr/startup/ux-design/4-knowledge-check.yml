@@ -20,7 +20,7 @@ quiz:
       explanation: "Although the operative word in this sentence is experience, User Experience isn't to be confused with a user's personal experience."
     - content: "How a user interacts with and experiences a product or service."
       isCorrect: true
-      explanation: "*At its core, UX is how a product feels to your user while they interact with your product. The full experience from a user's first contact until its last.*"
+      explanation: "At its core, UX is how a product feels to your user while they interact with your product. The full experience from a user's first contact until its last."
     - content: "A product's level of usability based on the user's opinion."
       isCorrect: false
       explanation: "When discussing a product's level of usability, there will be a certain level of objectivity tied to the opinion(s) of other users, which is why it's important to have as much research conducted and tested as possible to yield the best vantage points."

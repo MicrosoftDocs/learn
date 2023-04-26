@@ -1,6 +1,6 @@
 ﻿Now that we have gone over the fundamentals of what UX consists of, let’s consider design thinking and why it is necessary on your journey as a founder.
 
-Whether you are a product manager, designer, or do any work around the topic of innovation, you are most likely going to have refer to design thinking.
+Whether you are a product manager, designer, or do any work around the topic of innovation, you are most likely going to have referred to design thinking.
 
 User experience and design thinking are closely related. Design thinking is a creative problem-solving process that involves understanding user needs, exploring solutions, and testing ideas to create innovative products and services. UX is the practice of designing products and services that are easy to use and provide a positive experience for users. Design thinking is an important part of UX, as it helps to ensure that products and services are designed with the user in mind.
 
@@ -10,19 +10,19 @@ Design thinking is often used as a framework for UX design, as it helps designer
 
 1. Understanding your user; (expound 1-2 sentences)
 
-    [ ![An image of 2 hearts, visually displaying the concept of empathy.](../media/empathize.png)](../media/empathize_highres.png#lightbox)
+    [ ![Two hearts with a link between each other, visually displaying the concept of empathy.](../media/empathize.png)](../media/empathize-high-resolution.png#lightbox)
 
     **Empathize** - Understanding your user is an impetus to achieving empathy when looking to understand your user at their core.
 
 2. Challenging assumptions; (expound 1-2 sentences)
 
-    [ ![A conceptual image of 2 people researching and making observations that results in understanding the user.](../media/understand-user.png)](../media/understand-user_highres.png#lightbox)
+    [ ![Two people in front of a large notepad and an idea cloud, symbolizing research. A right arrow points to a laptop with a heart on the screen and a person in front, symbolizing understanding of the user.](../media/understand-user.png)](../media/understand-user-high-resolution.png#lightbox)
 
     **Challenge assumptions** - The first step to challenging assumptions is to establish a hypothesis in which your research will look to prove or disprove your assumption(s).
 
 3. Creating solutions that allow you to prototype and test the assumptions out; (expound 1-2 sentences)
 
-    [ ![A conceptual image of 2 phones, marked A and B, separated by a lab beaker, with a green checkmark on the B image.](../media/hypothosis.png)](../media/hypothosis_highres.png#lightbox)
+    [ ![A conceptual image of 2 phones, marked A and B, separated by a lab beaker, with a green checkmark on the B image.](../media/hypothesis.png)](../media/hypothesis-high-resolution.png#lightbox)
 
     **A/B Testing** - One of the most effective ways to test a hypothesis is to build and allow your user(s) to test assumptions out in order to refine the most optimal solution.
 
@@ -32,7 +32,7 @@ When it comes to the five steps of design thinking, it’s important to note tha
 
 ## Five stages of design thinking
 
-[ ![5 icons are displayed in this image. A heart, representing empathize. A clipboard, representing define. A light bulb, representing ideate. A laptop screen, representing prototype. And a beaker, representing test.](../media/design-thinking.png)](../media/design-thinking_highres.png#lightbox)
+[ ![Diagram of the five stages of design thinking, starting with empathize, moving to define, ideate, prototype, and ending with test.](../media/design-thinking.png)](../media/design-thinking-high-resolution.png#lightbox)
 
 **Empathize** - To be able to deliver the best product or experiences, you first need to understand who your users are and what they need. What are the biggest challenges and pain points? To avoid operating under assumptions, it’s best to spend as much time observing, engaging, and talking to potential users to gain better insight as to what an optimal solution looks like for them.
 

@@ -1,8 +1,8 @@
-﻿At its core, UX (User Experience) is how a product feels to your user while they interact with your product. This refers to the full experience of the user’s first exposure of the product until their last. Whether it’s a positive or negative experience for your user, UX is about understanding the various needs of your users and how to meet them. A well though-out and strategized UX creates a friendly environment for users to fulfill their needs simply and without any hassle. UX design demonstrates a complete understanding of the user.
+﻿At its core, UX (User Experience) is how a product feels to your user while they interact with your product. This refers to the full experience of the user’s first exposure of the product until their last. Whether it’s a positive or negative experience for your user, UX is about understanding the various needs of your users and how to meet them. A well thought and strategized UX creates a friendly environment for users to fulfill their needs simply and without any hassle. UX design demonstrates a complete understanding of the user.
 
 Here’s a look at some of the factors that influence User Experience:
 
-[ ![A chart that displays the 7 factors that influence user experience: Valuable, useful, usable, findable, credible, desirable, and accessible.](../media/user-experience-chart.png)](../media/user-experience-chart_highres.png#lightbox)
+[ ![A chart that displays the 7 factors that influence user experience: Valuable, useful, usable, findable, credible, desirable, and accessible.](../media/user-experience-chart.png)](../media/user-experience-chart-high-resolution.png#lightbox)
 
 You want to use a balance of the aforementioned factors to generate a quality User Experience. Let’s dig in:
 
@@ -26,6 +26,6 @@ A beta version of the product was released originally to test how users could au
 
 When the final version of the product was released, we decided to implement a “notifications” section inside of the Settings tab that allows you to select or toggle whether you would like to receive desktop and sound alerts.
 
-[ ![Graphical user interface of a sample web-based application.](../media/2-ux-considerations-krashaio.png)](../media/2-ux-considerations-krashaio.png#lightbox)
+[ ![Screenshot of Graphical user interface of a sample web-based application.](../media/2-ux-considerations-krashaio.png)](../media/2-ux-considerations-krashaio.png#lightbox)
 
 To create the best user experience, and give your users a comfortable feel with your product, these seven factors of influence must be included into their initial product journey. Remember, UX is about fulfilling the users’ needs with little to no room for hassle or difficulties. As a founder, you always want to maintain and keep the UX as fluid as possible.
