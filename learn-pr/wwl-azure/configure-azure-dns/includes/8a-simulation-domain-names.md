@@ -4,7 +4,7 @@ In this unit, you'll configure DNS name resolution and create a private DNS zone
 
 ## Architecture
 
-![Screenshot of the simulation page.](../media/700dnsarch.png)
+![Screenshot of the simulation page.](../media/700dns-arch.png)
 
 ## Objectives
 
@@ -22,6 +22,6 @@ In this unit, you'll configure DNS name resolution and create a private DNS zone
 > [!NOTE]
 > Click on the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning. 
 
-[![Screenshot of the simulation page.](../media/simulation-networks-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)
+[![Hyperlinked image of the intro to the lab simulation.](../media/simulation-networks-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Configure%20DNS%20settings%20in%20Azure)
 
 
