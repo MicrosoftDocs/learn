@@ -35,9 +35,9 @@ quiz:
     - content: "Device templates"
       isCorrect: false
       explanation: "Incorrect. A device template is the blueprint that defines the characteristics and behavior of a type of device."
-    - content: "REST api"
+    - content: "REST API"
       isCorrect: false
-      explanation: "Incorrect. IoT Central REST api purpose is to build integrations that let other applications and services manage your application."
+      explanation: "Incorrect. IoT Central REST API purpose is to build integrations that let other applications and services manage your application."
   - content: "A small tech startup has plans to develop a line of tracking devices. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision their devices with little to no code to evaluate the scenario. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
     choices:
     - content: "Yes. All IoT Central solutions require code to be written both in the cloud and on the devices."
