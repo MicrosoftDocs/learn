@@ -106,12 +106,13 @@ When you meet all the prerequisites, use the Azure portal to register your on-pr
 
     :::image type="content" source="../media/3-register-sql-server-on-premises.png" alt-text="Screenshot of the Register sources S Q L Server pane displaying a name, server endpoint I P address, and collection." border="true"  lightbox="../media/3-register-sql-server-on-premises.png":::
 
-
 ## Scan data from SQL Server on-premises
 
 Now that your data source is integrated with your Microsoft Purview account, you’re ready to create *scan rule sets*, which are a group of scan rules that you associate with a scan.
 
-:::image type="content" source="../media/3-system-scan-set-rule.png" alt-text="Screenshot of the Microsoft Purview Data Map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous." border="true" lightbox="../media/3-system-scan-set-rule.png":::
+:::image type="complex" source="../media/3-system-scan-set-rule.png" alt-text="Screenshot of the Microsoft Purview Data Map window." lightbox="../media/3-system-scan-set-rule.png":::
+   Screenshot of the Microsoft Purview Data Map window with Scan rule sets selected, with the SqlServer pane open, listing these System rules: government, financial, base, persona, security, and miscellaneous.
+:::image-end:::
 
 You can create a custom scan rule set that includes different file types or classifications:
 
