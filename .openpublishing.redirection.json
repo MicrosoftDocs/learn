@@ -21839,6 +21839,66 @@
       "source_path": "learn-pr/wwl-azure/work-azure-blob-storage/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/8-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/2-azure-pipelines-github-repos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/3-build-aspnet-web-apps-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/4-exercise-build-aspnet-web-apps-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/5-provision-azure-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/6-exercise-provision-azure-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/7-deploy-aspnet-web-app-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/8-exercise-deploy-aspnet-web-app-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "/azure/deploy-aspnet-apps-azure-app-service-pipelines/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
     }
   ]
 }
+
+
+
+
+
