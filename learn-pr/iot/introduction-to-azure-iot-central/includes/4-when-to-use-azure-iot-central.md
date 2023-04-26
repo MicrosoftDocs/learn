@@ -50,4 +50,4 @@ As shown in the preceding application architecture diagram, you can use the appl
 * **4**. Transform the environmental conditions within the stores into insights that the store team can use to improve the customer experience.
 * **5**. Export the aggregated insights into existing or new business applications to provide useful and timely information to retail staff.
 
-You can follow the complete [tutorial on how to use and customize the IoT Central *In-store Analytics - Checkout* application template](/azure/iot-central/retail/tutorial-in-store-analytics-create-app).
+For more details, you can follow the complete [tutorial on how to use and customize the IoT Central *In-store Analytics - Checkout* application template](/azure/iot-central/retail/tutorial-in-store-analytics-create-app).
