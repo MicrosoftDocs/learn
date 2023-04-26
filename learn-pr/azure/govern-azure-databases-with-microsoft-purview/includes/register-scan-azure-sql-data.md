@@ -49,15 +49,11 @@ Use the following steps to register an Azure SQL Database source in Microsoft Pu
 
     :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview."  border="true" lightbox="../media/2-register-azure-sql-database.png":::
 
-
 1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL Server, enter the public **endpoint**, select the **collection**, and then select **Register.**
 
 1. The Azure SQL Database is now listed under the selected collection.
 
     :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane." border="true" lightbox="../media/2-provide-name-sql.png":::
-
-
-
 
 ## Scan an Azure SQL Database
 
@@ -115,7 +111,7 @@ To scan an Azure SQL Database that’s been configured using managed identities,
 
 1. On the **Review your scan** pane, select **Save and run**.
 
-### Scan an Azure SQL Database configured with service principal for authentication</a>
+### Scan an Azure SQL Database configured with service principal for authentication
 
 The service principal created in Azure AD must be granted the necessary permission to get metadata from your Azure SQL Database. To grant this permission, configure the Azure SQL Database with Azure AD authentication. Additionally, create an Azure AD user in the Azure SQL Database for your service principal.
 
@@ -143,9 +139,9 @@ To configure a scan of a database configured with SQL authentication, you need t
 
 After you establish a connection with Azure Key Vault, create credentials that use **SQL** **authentication** for your Azure SQL database.
 
-When you create the scan for Azure SQL Database, follow the same procedure described for creating a scan configured with service principal for authentication, but select **SQLAuthentication** for **Credentials**.
+When you create the scan for Azure SQL Database, follow the same procedure described for creating a scan configured with service principal for authentication, but select **SQL Authentication** for **Credentials**.
 
-### Manage the existing scan
+### Manage the scan
 
 To check the status of the scan after the data scan finishes, navigate to the Microsoft Purview collection that contains your data source, and then select **View Details**.
 
