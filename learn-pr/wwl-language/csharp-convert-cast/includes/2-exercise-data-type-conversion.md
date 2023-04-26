@@ -355,7 +355,7 @@ When you're converting using `Convert.ToInt32()`, the literal float value is pro
 
 You covered several important concepts of data conversion and casting:
 
-- Prevent a runtime error while perform a data conversion
+- Prevent a runtime error while performing a data conversion
 - Perform an explicit cast to tell the compiler you understand the risk of losing data
 - Rely on the compiler to perform an implicit cast when performing an expanding conversion
 - Use the `()` cast operator and the data type to perform a cast (for example, `(int)myDecimal`)
