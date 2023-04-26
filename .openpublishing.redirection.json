@@ -21876,7 +21876,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "azure/deploy-aspnet-apps-azure-app-service-pipelines/7-deploy-aspnet-web-app-pipelines.yml",
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/7-deploy-aspnet-web-app-pipelines.yml",
       "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
       "redirect_document_id": false
     },
