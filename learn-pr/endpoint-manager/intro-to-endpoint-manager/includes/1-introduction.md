@@ -35,7 +35,7 @@ An MDM or MAM solution must accomplish the following tasks:
 - Use a single, unified mobile solution to enforce these policies, and help manage devices, apps, users, and groups.
 - Protect your company information by helping to control the way your workforce accesses and shares its data.
 
-By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your users to make them extremely productive. For instance, users can automatically get their certs, wireless network profiles, and VPN settings without having to manually configure them. This allows users be more productive because they don't have to do any manual configuration, but it also helps users be protected because they have the right settings.
+By implementing a management infrastructure, you can provide IT services, apps, protection, and configuration to your users to make them extremely productive. For instance, users can automatically get their certs, wireless network profiles, and VPN settings without having to manually configure them. This allows users to be more productive because they don't have to do any manual configuration, but it also helps users be protected because they have the right settings.
 
 Microsoft Intune combines these services and tools in one location. You may know and already be using these services and tools, including Microsoft Intune, Microsoft Endpoint Configuration Manager, Desktop Analytics, co-management, and Windows Autopilot. These services are part of the Microsoft 365 stack of services to help protect your organization's endpoints, by securing access, protecting data, and responding to and managing risk.
 
