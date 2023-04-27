@@ -7,7 +7,7 @@ Then you create a Traffic Manager profile based on endpoint priority. This profi
 
 ## Architecture diagram
 
-:::image type="content" source="../media/6-exercise-create-traffic-manager-profile-using-azure-portal.png" alt-text="Traffic manager profile pointed to two app service plans":::
+:::image type="content" source="../media/6-exercise-create-traffic-manager-profile-using-azure-portal.png" alt-text="Screenshot of the traffic manager profile pointed to two app service plans.":::
 
 ## Objectives
 
