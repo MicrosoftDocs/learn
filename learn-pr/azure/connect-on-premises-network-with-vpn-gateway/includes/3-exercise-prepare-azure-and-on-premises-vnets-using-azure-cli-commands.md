@@ -78,7 +78,7 @@ In this unit, you configure the virtual networks with a subnet, add a gateway su
         --local-address-prefixes 172.16.255.0/27
     ```
 
-    This gateway describes the Azure network that you're connecting to. Update the IP address specified as the remote gateway (which is in Azure) later.
+    This gateway describes the Azure network that you're connecting to. You update the IP address specified as the remote gateway (which is in Azure) later.
 
 ## Verify the topology
 
