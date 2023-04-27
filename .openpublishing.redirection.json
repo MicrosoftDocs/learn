@@ -21794,6 +21794,111 @@
       "source_path": "learn-pr/wwl-azure/explore-api-management/8-import-api.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-api-management/8-exercise-import-api",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/5-azure-storage-redundancy.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/6-create-block-blob-storage-account.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/6-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/7-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-blob-storage/3-develop-blob-storage-dotnet.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/4-develop-blob-storage-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-blob-storage/4-manage-container-properties-metadata-dotnet.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/5-manage-container-properties-metadata-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-blob-storage/5-set-retrieve-properties-metadata-rest.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/6-set-retrieve-properties-metadata-rest",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-blob-storage/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-blob-storage/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-blob-storage/8-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/index.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/2-azure-pipelines-github-repos.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/3-build-aspnet-web-apps-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/4-exercise-build-aspnet-web-apps-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/5-provision-azure-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/6-exercise-provision-azure-resources.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/7-deploy-aspnet-web-app-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/8-exercise-deploy-aspnet-web-app-pipelines.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/9-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-aspnet-apps-azure-app-service-pipelines/10-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/paths/build-applications-with-azure-devops/",
+      "redirect_document_id": false
     }
   ]
 }
+
+
+
+
+

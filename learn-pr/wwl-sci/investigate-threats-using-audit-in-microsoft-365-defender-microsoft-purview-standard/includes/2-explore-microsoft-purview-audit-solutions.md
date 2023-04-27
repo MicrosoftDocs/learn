@@ -1,4 +1,3 @@
-## Explore Microsoft Purview auditing solutions
 
 Microsoft Purview auditing solutions provide an integrated solution to help organizations effectively respond to:
 
