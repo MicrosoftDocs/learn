@@ -32,7 +32,7 @@ quiz:
     choices:
     - content: "/24"
       isCorrect: true
-      explanation: "Correct, The minimum address space is /24 to create a hub.."
+      explanation: "Correct, The minimum address space is /24 to create a hub."
     - content: "/25"
       isCorrect: false
       explanation: "Incorrect, a /25 will cause an error."
