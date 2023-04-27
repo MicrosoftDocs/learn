@@ -1672,3 +1672,8 @@ achievements:
   title: Build edge AI solutions with Azure Percept
   summary: Build edge AI solutions with Azure Percept
   iconUrl: /training/achievements/azure-percept/azure-percept.svg  
+- uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.badge
+  type: badge
+  title: Deploy ASP.NET web apps with Azure Pipelines
+  summary: Deploy ASP.NET web apps with Azure Pipelines
+  iconUrl: /training/achievements/deploy-aspnet-apps-azure-app-service-pipelines.svg
