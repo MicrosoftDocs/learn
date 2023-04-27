@@ -33,7 +33,7 @@ Let's create a VNet for this exercise:
 1. In the **Virtual Network** page, select **Create**.
 1. In **Create virtual network**, enter or select this information in the **Basics** tab:
    - **Project details**:
-      - **Subscription**: *Select you subscription*
+      - **Subscription**: *Select your subscription*
       - **Resource group**: `MLResourceGroup`
    - **Instance details**
       - **Name**: `MLVNet`
@@ -54,7 +54,7 @@ Let's create a VNet for this exercise:
 
 We just added a VNet to our resource group, but is it restricting access to our **ml-workspace**?
 
-We can test that using [Azure Machine Learning Studio](/azure/machine-learning/overview-what-is-machine-learning-studio) to access the contents of the workspace.
+We can test that using [Azure Machine Learning studio](/azure/machine-learning/overview-what-is-machine-learning-studio) to access the contents of the workspace.
 
 > [!TIP] 
 > The Azure Machine Learning studio is a web portal with high-level tools for model training, deployment, and asset management.
@@ -88,7 +88,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 1. Select the **Private endpoint connections** tab.
 1. Add a new **Private endpoint** with the following settings:
    - **Project details**:
-      - **Subscription**: *Select you subscription*
+      - **Subscription**: *Select your subscription*
       - **Resource group**: `MLResourceGroup`
    - **Instance details**
       - **Name**: `MLPrivateEndpoint`
@@ -113,7 +113,7 @@ To accomplish that, we need to define a [Private Endpoint](/azure/private-link/p
 
 We can make sure our workspace is inside the VNet now by testing if we still have access to its resources:
 
-1. Reload the Azure Machine Learning Studio window (or [open the Studio](https://ml.azure.com/) again):
+1. Reload the Azure Machine Learning studio window (or [open the Studio](https://ml.azure.com/) again):
 
    > [!div class="mx-imgBorder"]
    > ![Screenshot showing the workspace with warnings on the page.](../media/workspace-with-warnings.png)
@@ -137,5 +137,5 @@ In this unit you've covered the following topics:
 - What a Virtual Network is and some of its uses
 - Creating an Azure Virtual Network
 - Creating subnets in a Virtual Network
-- How to use Private Endpoints to secure network access to you Machine Learning workspaces
-- Accessing a workspace using Azure Machine Learning Studio and check if resources are blocked
+- How to use Private Endpoints to secure network access to your Machine Learning workspaces
+- Accessing a workspace using Azure Machine Learning studio and check if resources are blocked

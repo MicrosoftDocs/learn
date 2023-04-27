@@ -4,7 +4,7 @@ Most networked applications need to work with secrets, such as database connecti
 
 Storing secrets in source code is impractical and a security anti-pattern. This is for multiple reasons:
 
-- Changing passwords means updating source code, which can mean rebuilding and re-publishing applications.
+- Changing passwords means updating source code, which can mean rebuilding and republishing applications.
 - Hard-coded secrets make it awkward to work with different environments, such as staging and production environments. This also increases the risk of inadvertent modification or destruction of production environment data during development.
 - All people with access to the source code gain access to all secrets. This makes it near impossible to ensure that only senior team members have access to sensitive resources. It also means that any sharing, or leak, of your source code also provides outside parties with your security keys.
 - Source control, such as git, will typically retain old passwords in history. This means future team members gain access to all historical passwords.
@@ -13,7 +13,7 @@ One of the best alternatives to storing secrets in source code is to make them a
 
 ## Azure Key Vault
 
-Azure Key Vault provides secure storage of generic secrets for applications in Azure-hosted environments. Any type of secret can be stored, so long as its value is no larger than 25kb and it can be read and returned as a string. Secrets are named, and their content type (such as password or certificate) can optionally be stored alongside the value to provide a hint that assists in its interpretation when retrieved.
+Azure Key Vault provides secure storage of generic secrets for applications in Azure-hosted environments. Any type of secret can be stored, so long as its value is no larger than 25 kb and it can be read and returned as a string. Secrets are named, and their content type (such as password or certificate) can optionally be stored alongside the value to provide a hint that assists in its interpretation when retrieved.
 
 Secrets stored in Azure Key Vault are encrypted, optionally at the hardware level. This is handled transparently, and requires no action from the user or the application requesting the secrets. They can also be temporarily disabled, and automatically activate or expire on a certain date.
 
@@ -70,7 +70,7 @@ Your secret is 'hVFkk965BuUv'
 
 ### Working with remote jobs
 
-The above provides a generic solution to using Key Vault. Typically, with Azure Machine Learning, you will be executing code through a remote run.
+The above provides a generic solution to using Key Vault. Typically, with Azure Machine Learning, you'll be executing code through a remote run.
 
 The standard flow for using secrets in this context is:
 

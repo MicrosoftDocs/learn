@@ -3,7 +3,7 @@ uid: learn.azure.azure-machine-learning-security
 metadata:
   title: Explore security concepts in Azure Machine Learning
   description: "<div|Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate. </div|"
-  ms.date: 04/26/2023
+  ms.date: 04/27/2023
   author: wwlpublish
   ms.author: jasdeb
   ms.topic: interactive-tutorial
