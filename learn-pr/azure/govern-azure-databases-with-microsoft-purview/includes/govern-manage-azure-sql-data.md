@@ -93,7 +93,7 @@ Use the **classification insight** report to get an overview of the number of:
 
 Use sensitivity labels to indicate the sensitivity of your organization’s data. For example, you can apply a sensitivity label to a project name that’s confidential within your organization, even though that same term isn’t confidential in other organizations.
 
-Applying sensitivity labels to assets ensures that you can properly classify and protect the important assets in your organization. You can apply sensitivity labels manually or automatically based on the sensitivity of discovered data. Also, you can create auto-labeling rules to include one or more classifications or types of sensitive information.
+Applying sensitivity labels to assets ensures that you can properly classify and protect the important assets in your organization. You can apply sensitivity labels manually or automatically based on the sensitivity of discovered data. Also, you can create autolabeling rules to include one or more classifications or types of sensitive information.
 
 The **Sensitivity label insights** report has details about the sensitivity labels found during a scan. It includes the following detailed information:
 
