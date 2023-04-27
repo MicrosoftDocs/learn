@@ -22,8 +22,6 @@ Microsoft Purview creates a storage account as a managed resource within the sam
 
 :::image type="content" source="../media/purview-managed-resources.png" alt-text="Screenshot showing the create Microsoft Purview account window, with the Managed resources section shown, and the managed resource group name box highlighted with the default name included.":::
 
-A managed Event Hubs namespace can also be optionally provisioned to support Atlas Kafka topics messages. You can choose this at creation, but it can be enabled and disabled anytime after creation.
-
 ## Microsoft Purview Data Map
 
 The Microsoft Purview Data Map provides the foundation for data governance and discovery in Microsoft Purview. The data map captures and organizes metadata from your data landscape so you can know what kind of data you’re storing and where.
@@ -56,7 +54,7 @@ Each Capacity Unit:
 
 ## Scanning
 
-Scanning is a core action that Microsoft Purview uses to populate its Data Map. After your Microsoft Purview account is created, resources are registered, and then they're **scanned**. During scanning, Microsoft Purview gathers metadata about the data assets inside your storage source. For example, the number of files or the kind of data that's stored.
+Scanning is a core action that Microsoft Purview uses to populate its Data Map. After your Microsoft Purview account is created, resources are registered, and then they're **scanned**. During scanning, Microsoft Purview gathers metadata about the data assets inside your storage source. For example, the number of files or the kind of data that's stored. It can also apply classifications to your data to identify sensitive information, like credit card numbers, or addresses.
 
 The compute required for this automated population of the Data Map is serverless (**pay as you go**), run on logical compute units called vCores. Duration of these jobs can vary based on the number of systems scanned, data assets (files or tables, for example) in the scanned systems, number of data classifications you want to identify, the shape of the data, and performance of the system scanned. Scanning is billed based on the number of vCore Hours consumed, which is the number of compute units needed to process the data, and the amount of time those units were needed.
 

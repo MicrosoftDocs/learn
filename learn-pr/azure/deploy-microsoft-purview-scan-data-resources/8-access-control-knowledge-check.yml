@@ -25,6 +25,17 @@ quiz:
     - content: "Data reader"
       isCorrect: true
       explanation: "Data readers have access to read catalog data objects."
+  - content: "What type of object can help organize data sources into logical groups?"
+    choices:
+    - content: "Collections"
+      isCorrect: true
+      explanation: "Microsoft Purview uses Collections to organize data sources to reflect your data use landscape."
+    - content: "Buckets"
+      isCorrect: false
+      explanation: "Microsoft Purview doesn't use buckets to organize data."
+    - content: "Groups"
+      isCorrect: false
+      explanation: "Microsoft Purview doesn't use groups to organize data."
   - content: "Which of the following roles would provide a user the ability to register new data sources?"
     choices:
     - content: "Data curator"

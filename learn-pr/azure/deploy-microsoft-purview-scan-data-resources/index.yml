@@ -48,7 +48,6 @@ units:
 - learn.deploy-microsoft-purview-scan-data-resources.access-control-knowledge-check
 - learn.deploy-microsoft-purview-scan-data-resources.register-scan
 - learn.deploy-microsoft-purview-scan-data-resources.register-scan-exercise
-- learn.deploy-microsoft-purview-scan-data-resources.register-scan-knowledge-check
 - learn.deploy-microsoft-purview-scan-data-resources.summary
 badge:
   uid: learn.deploy-microsoft-purview-scan-data-resources.badge
