@@ -38,8 +38,8 @@ With Visual Studio open, create a UWP C# project. Give the project a meaningful 
 A wide variety of controls are built to accept user input. In this unit, we use a few of the most common controls to get basic information from a user. This information is text, numeric, date, and true or false Boolean values.
 
 - `Button`. The `Button` is one of the most popular and natural ways that a user interacts with an application. When it's selected, it triggers a **Click** event that you can use to run logic.
-- `TextBox`. By using this control, the user can enter text information. It has a **Text** property that you can read anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
-- `Slider`. By using this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
+- `TextBox`. With this control, the user can enter text information. It has a **Text** property that you can read anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
+- `Slider`. With this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
 - `DatePicker`. As the name suggests, by using this control, the user can enter a date value. With many `DatePicker` controls, the user can select the date from a pop-up menu or enter a value by using text.
 - `RadioButton`. This control is like a `CheckBox`. But it's round in appearance and can be grouped with other `RadioButton`s for exclusive selection.
 
@@ -807,9 +807,9 @@ The `Slider` control's **ValueChanged** event passes the user's selection inside
 
 You usually set `SecondNumber` directly with **e.NewValue**. By doing it this way, you can prevent a user from interacting with parts of your UI. But it still provides visual feedback.
 
-Finally, let's add the ability to append a date stamp to the calculation output. By using the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
+Finally, let's add the ability to append a date stamp to the calculation output. When you use the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
 
-Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. By using the `CheckBox`, the user can select whether or not the output gets a date stamp:
+Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. When you use the `CheckBox`, the user can select whether or not the output gets a date stamp:
 
 ```xml
 <Page
@@ -1354,8 +1354,8 @@ With Visual Studio open, create a WPF C# project. Give the project a meaningful 
 A wide variety of controls are built to accept user input. In this unit, we use a few of the most common controls to get basic information from a user. This information is text, numeric, date, and true or false Boolean values.
 
 - `Button`. The `Button` is one of the most popular and natural ways that a user interacts with an application. When it's selected, it triggers a **Click** event you can use to run logic.
-- `TextBox`. By using this control, the user can enter text information. You can read its **Text** property anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
-- `Slider`. By using this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
+- `TextBox`. with this control, the user can enter text information. You can read its **Text** property anytime. Or you can subscribe to the **TextChanged** event to get character-by-character changes.
+- `Slider`. with this control, the user can slide a handle to set a **Value** between a **Minimum** and **Maximum** range of numbers with a preset precision. For example, a volume slider sets a value between 0 and 100 percent at 1 percent increments.
 - `DatePicker`. As the name suggests, by using this control, the user can enter a date value. With many `DatePicker` controls, the user can select the date from a pop-up menu or enter a value by using text.
 - `RadioButton`. This control is similar to a `CheckBox`. But it's round in appearance and can be grouped with other `RadioButton`s for exclusive selection.
 
@@ -1540,7 +1540,7 @@ namespace UserInput
 ```
 
 > [!IMPORTANT]
-> Notice the new `using` statements at the top of the file. They do the same thing that **xmlns** does for XAML. By using these statements, the file you're working in can access to code in the namespace. In the preceding code snippet, by using the `System.Linq` namespace, we can use the `LastOrDefault()` method.
+> Notice the new `using` statements at the top of the file. They do the same thing that **xmlns** does for XAML. With these statements, the file you're working in can access to code in the namespace. In the preceding code snippet, by using the `System.Linq` namespace, we can use the `LastOrDefault()` method.
 
 Before we move forward, let's add a `double SecondNumber` property to hold the value of a second number. We use it for a later math operation:
 
@@ -2105,9 +2105,9 @@ The `Slider` control's **ValueChanged** event passes the user's selection inside
 
 You usually set `SecondNumber` directly with **e.NewValue**. By doing it this way, you can prevent a user from interacting with parts of your UI. But it still provides visual feedback.
 
-Finally, let's add the ability to append a date stamp to the calculation output. By using the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
+Finally, let's add the ability to append a date stamp to the calculation output. When you use the `DatePicker` control, you can accept date values from the user. You don't have to parse text from a `TextBox` into a correct `DateTime` object.
 
-Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. By using the `CheckBox`, the user can select whether or not the output gets a date stamp:
+Add the following **CalculationDatePicker** `DatePicker` and **IncludeDateCheckBox** `CheckBox` to the XAML. When you use the `CheckBox`, the user can select whether or not the output gets a date stamp:
 
 ```xml
 <Window x:Class="UserInput.MainWindow"
