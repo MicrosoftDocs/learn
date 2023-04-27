@@ -17,10 +17,10 @@ quiz:
     choices:
     - content: "By restricting access to projects to specific users or groups, thus ensuring that only specific users or groups are able to view and modify the project resources where they are authorized."
       isCorrect: true
-      explanation: "Setting separate permissions to each project helps you to keep control of who can access project resources and not let a breach in one project to affect other projects."
+      explanation: "Correct. Setting separate permissions to each project helps you to keep control of who can access project resources and not let a breach in one project to affect other projects."
     - content: "By exporting the data in the compromised project to a new project and then deleting the compromised project."
       isCorrect: false
-      explanation: "Exporting the data of a compromised project into a new project does not guarantee that other projects won't be affected. Also, deleting the compromised project after a breach has taken place won't prevent a possible security impact on other projects."
+      explanation: "Incorrect. Exporting the data of a compromised project into a new project does not guarantee that other projects won't be affected. Also, deleting the compromised project after a breach has taken place won't prevent a possible security impact on other projects."
     - content: "By setting up a rule that locks access to all projects if a security breach is detected."
       isCorrect: false
       explanation: "It is not possible to set up a rule that locks access to all projects if a security breach is detected."
