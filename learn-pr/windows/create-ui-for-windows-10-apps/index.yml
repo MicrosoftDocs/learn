@@ -18,7 +18,7 @@ abstract: |
  This module supports both UWP and WPF app development platforms.
 prerequisites: |
  - A computer that runs the current release of Windows 10. To verify that you're running the latest version, go to **Settings** > **Windows Update**.
- - [Visual Studio 2022](visualstudio/releases/2022/system-requirements) installed.
+ - [Visual Studio 2022](/visualstudio/releases/2022/system-requirements) installed.
  - Basic knowledge of Windows 10 app development.
 iconUrl: /training/achievements/creating-ui-windows10-apps.svg
 levels:
