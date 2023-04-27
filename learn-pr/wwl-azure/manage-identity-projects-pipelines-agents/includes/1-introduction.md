@@ -6,7 +6,7 @@ In this module, learn the importance of managing identity for projects, pipeline
 
 After completing this module, students and professionals can:
 
-- Configure a Microsoft-hosted pool
+- Configure Microsoft-hosted agents and pools
 - Configure agents for projects
 - Configure agent identities
 - Configure the scope of a service connection

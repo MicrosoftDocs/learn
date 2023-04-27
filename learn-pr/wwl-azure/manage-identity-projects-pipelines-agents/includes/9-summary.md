@@ -2,7 +2,7 @@ In this module, you learned the importance of managing identity for projects, pi
 
 You learned how to describe the benefits and usage of:
 
-- Configure a Microsoft-hosted pool
+- Configure Microsoft-hosted agents and pools
 - Configure agents for projects
 - Configure agent identities
 - Configure the scope of a service connection
