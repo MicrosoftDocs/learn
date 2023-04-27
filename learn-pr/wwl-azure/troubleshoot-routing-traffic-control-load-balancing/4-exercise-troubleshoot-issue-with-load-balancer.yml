@@ -4,9 +4,9 @@ title: 'Exercise: Troubleshoot routing, traffic control and load balancing issue
 metadata:
   title: 'Exercise: Troubleshoot routing, traffic control and load balancing issues'
   description: "Exercise: Troubleshoot routing, traffic control and load balancing issues"
-  ms.date: 08/08/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: true

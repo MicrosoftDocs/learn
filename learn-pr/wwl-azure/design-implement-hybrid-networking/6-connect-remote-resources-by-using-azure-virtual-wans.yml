@@ -4,7 +4,7 @@ title: Connect remote resources by using Azure Virtual WANs
 metadata:
   title: Connect remote resources by using Azure Virtual WANs
   description: "Connect remote resources by using Azure Virtual WANs"
-  ms.date: 01/05/2023
+  ms.date: 04/27/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
@@ -28,14 +28,14 @@ quiz:
     - content: "Azure WAN is a collection of on-premises networks connected to each other through VPNs."
       isCorrect: false
       explanation: "Incorrect, Azure WAN connects VNets, on-premises networks and individual computers to the Microsoft backbone."
-  - content: "What is the purpose of associating a connection to a route table?"
+  - content: "What is the minimum address space needed for a hub?"
     choices:
-    - content: "Associating a connection to a route table allows the traffic to be sent to the destinations indicated as routes in the route table."
+    - content: "/24"
       isCorrect: true
-      explanation: "Correct, Associating a connection to a route table allows the traffic to be sent to the destination indicated as routes in the route table. Each connection is associated to one route table."
-    - content: "Associating a connection to a route table allows the connection to dynamically propagate routes to other route tables."
+      explanation: "Correct, The minimum address space is /24 to create a hub."
+    - content: "/25"
       isCorrect: false
-      explanation: "Incorrect, Connections dynamically propagate routes to a specified route table."
-    - content: "Associating a connection to a route table allows users to be authenticated."
+      explanation: "Incorrect, a /25 will cause an error."
+    - content: "/32"
       isCorrect: false
-      explanation: "Incorrect, Users aren't authenticated using route tables."
+      explanation: "Incorrect, a /32 will cause an error."
