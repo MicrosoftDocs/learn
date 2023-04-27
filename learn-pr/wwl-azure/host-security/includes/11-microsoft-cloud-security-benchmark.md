@@ -12,7 +12,7 @@ The **Microsoft cloud security benchmark (MCSB)** provides prescriptive best pra
 **Comprehensive multicloud security framework**: Organizations often have to build an internal security standard to reconcile security controls across multiple cloud platforms to meet security and compliance requirements on each of them. This often requires security teams to repeat the same implementation, monitoring, and assessment across the different cloud environments (**often for different compliance standards**). This creates unnecessary overhead, cost, and effort. To address this concern, we enhanced the **Azure Security Benchmark (ASB)** to the **Microsoft cloud security benchmark (MCSB)** to help you quickly work with different clouds by:
 
  -  Providing a single control framework to easily meet the security controls across clouds
- -  Providing consistent user experience for monitoring and enforcing the multi-cloud security benchmark in Defender for Cloud
+ -  Providing consistent user experience for monitoring and enforcing the multicloud security benchmark in Defender for Cloud
  -  Staying aligned with Industry Standards (e.g., Center for Internet Security, National Institute of Standards and Technology, Payment Card Industry)
 
 :::image type="content" source="../media/mcsb-vs-other-frameworks-7167558f.png" alt-text="Screenshot showing the Microsoft cloud security benchmark versus other Cloud for Internet Security framework.":::
