@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
+  ms.custom: references_regions
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false
