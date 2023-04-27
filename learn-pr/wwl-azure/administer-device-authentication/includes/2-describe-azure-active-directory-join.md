@@ -1,4 +1,5 @@
 
+
 With Windows 11 or later, in addition to joining an AD DS domain, you can now join a device to Azure AD. Along with creating user accounts in Azure AD, you can now have objects that represent devices in Azure AD, and you can manage devices that are joined to Azure AD from the cloud.
 
 Before you decide whether you want to join a device to an AD DS domain or to Azure AD, it’s important to understand the difference between these two concepts. Devices that join an AD DS domain must run a supported operating system version; for example, Home editions of the Windows and Windows RT operating systems do not support joining a domain. Devices that are capable of joining an AD DS domain usually access on-premises applications and services. Devices also can access some cloud resources if you integrate the domain accounts and Microsoft accounts.
