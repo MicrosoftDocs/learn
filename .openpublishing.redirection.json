@@ -21814,6 +21814,16 @@
       "source_path": "learn-pr/wwl-azure/explore-azure-blob-storage/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-azure-blob-storage/7-summary",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/11-register-scan-knoweldge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-microsoft-purview-scan-data-resources/11-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/12-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-microsoft-purview-scan-data-resources/11-summary",
+      "redirect_document_id": false
     }
   ]
 }
