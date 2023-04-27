@@ -74,7 +74,7 @@ Create the linked service responsible to communicate with your SQL Server 2022.
     - **Name**: SQLServerLS
     - **Description**: Connection to AdventureWorksLT database
     - **Connect via integration runtime**: 
-        - Select to create a new Self-Hosted integration runtime, and choose **Option 1** to launch and install it on the same server where SQL Server is installed.
+        - Select to create a new Self-Hosted integration runtime, and choose **Option 1** to launch and install it on the same server where SQL Server is installed. Skip the installation step if the integration runtime is already installed.
     - **Server name**: *Select your SQL Server instance name*
     - **Database name**: AdventureWorksLT
     - **Authentication type**: SQL authentication
@@ -135,7 +135,7 @@ Next, create the linked service responsible to communicate with your landing zon
 
     >[NOTE!] 
     > In case of the error *'Some unknown error happened: FileSystem not found.'*, ensure that there's a container in the storage account you designated as the landing zone, with the same name on the **landing zone folder path** when registering the linked service for your landing zone.
+    
+    > In case of the error *'The database master key is missing.'*, run `DROP MASTER KEY` and `CREATE MASTER KEY` to recreate the master key in the SQL pool, and select **Start** to initiate the link connection again.
 
-After the replication has started, you can check the dedicated SQL pool on the **Data** hub, and expanding the **Tables** node. Alternatively, you can also run a `SELECT` statement to verify the data.
-
- 
+After the replication has started, you can navigate to the **Tables** node on the **Data** hub for the dedicated SQL pool and expand it to check the new replicated tables. You can also insert dummy data into **Sales.SalesPerson** or **Person.EmailAddress** at the source, and execute a `SELECT` statement at the destination to confirm if the data has been replicated.
