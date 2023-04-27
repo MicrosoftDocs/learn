@@ -1,3 +1,5 @@
+Congratulations! You've deployed a Microsoft Purview account, registered a source, and scanned that source!
+
 You were requested by Fabrikam to help establish the foundation for effective data usage and unified data governance. You created a Microsoft Purview proof of concept by creating a Microsoft Purview account, creating collections, assigning permissions, and registering and scanning your first data source.
 
 Using Microsoft Purview as a central catalog, Fabrikam can now begin to discover a complete and comprehensive overview of their data estate by reviewing the scanned assets in Microsoft Purview and registering more data sources.
