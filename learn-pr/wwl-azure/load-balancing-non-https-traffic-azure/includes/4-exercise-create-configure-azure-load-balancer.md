@@ -22,5 +22,5 @@ In this lab, you will create an internal load balancer for the fictional Contoso
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-[![Screenshot of the simulation page.](../media/simulation-lb-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)
+[![Screenshot of the simulation page.](../media/simulation-load-balancer-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Create%20and%20configure%20an%20Azure%20load%20balancer)
 
