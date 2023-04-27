@@ -73,7 +73,7 @@ Using the @mention system in your Pull Request message, you can ask for feedback
 
 Pull Requests help contribute to projects and for managing changes to shared repositories.
 
-If you're using a Fork &amp; Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.
+If you're using a Fork & Pull Model, Pull Requests provide a way to notify project maintainers about the changes you'd like them to consider.
 
 If you're using a Shared Repository Model, Pull Requests help start code review and conversation about proposed changes before they're merged into the main branch.
 
