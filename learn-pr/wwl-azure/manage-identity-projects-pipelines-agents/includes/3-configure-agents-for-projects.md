@@ -1,0 +1,36 @@
+In this unit, we'll explore how to configure agents for projects in Azure DevOps. Agents are responsible for running the tasks specified in your pipelines, and configuring them correctly is essential for ensuring smooth execution and maintaining a secure environment.
+
+## Agent selection in Azure Pipelines
+
+Azure Pipelines provides two types of agents: Microsoft-hosted agents and self-hosted agents. As discussed in the previous unit, Microsoft-hosted agents are pre-configured virtual machines provided and managed by Microsoft. In contrast, self-hosted agents are instances that you deploy and manage within your own infrastructure.
+
+When configuring agents for your projects, consider the following factors:
+
+**- Resource requirements:** Microsoft-hosted agents may not always have the necessary resources or software to execute specific tasks. In such cases, you might need to use self-hosted agents with custom configurations.
+**- Security and compliance:** Some organizations have strict security or compliance requirements that necessitate the use of self-hosted agents. These agents can be deployed within your organization's infrastructure, providing better control over security and data handling.
+
+## Configuring agents for projects
+
+To configure agents for your projects, follow these steps:
+
+1. Determine whether you need to use Microsoft-hosted agents or self-hosted agents based on your project requirements.
+2. If using Microsoft-hosted agents, select the appropriate agent pool and configure permissions as described in the previous unit.
+3. If using self-hosted agents, deploy and configure the agent on your infrastructure by following the [official documentation](https://docs.microsoft.com/azure/devops/pipelines/agents/v2-windows).
+4. Update your pipeline YAML file to specify the desired agent pool using the pool property, as demonstrated in the previous unit.
+5. Configure permissions for your pipeline, ensuring that the principle of least privilege is followed.
+
+## Challenge yourself
+
+To practice configuring agents for projects, complete the following steps:
+
+1. Choose a project in your Azure DevOps environment and decide whether to use Microsoft-hosted agents or self-hosted agents based on the project's requirements.
+2. Configure the agent pool and permissions as appropriate.
+3. Create a new pipeline for the project and update the pipeline YAML file to use the configured agent pool.
+4. Configure permissions for the pipeline, adhering to the principle of least privilege.
+5. Execute the pipeline and verify that it runs successfully using the chosen agent pool.
+
+For more information about agents configuration, see:
+
+- [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
+- [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
+- [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)
