@@ -3,7 +3,7 @@ In this exercise, you create an internal load balancer for the fictional Contoso
 
 ## Architecture diagram
 
-:::image type="content" source="../media/3-exercise-monitor-load-balancer-resource-using-azure-monitor.png" alt-text="Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs":::
+:::image type="content" source="../media/3-exercise-monitor-load-balancer-resource-using-azure-monitor.png" alt-text="Diagram illustrating the load balancer architecture that will be created in the exercise - includes load balancer, VNet, subnet, Bastionsubnet, and VMs.":::
 
 ## Objectives
 
