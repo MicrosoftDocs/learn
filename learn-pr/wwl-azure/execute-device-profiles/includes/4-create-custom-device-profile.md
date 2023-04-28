@@ -1,11 +1,12 @@
 
+
 Intune may not have all the built-in settings you need or want. In other situations, you may want to use a setting available in other device profiles. To add these settings, create a device profile, and configure the profile with custom device settings. If you're looking for a specific Windows setting, remember that the Windows device restriction profile contains many settings that are built into Intune, and don't require custom values. Furthermore, new functionality is added to Intune frequently so you should always check to see if the setting you need is available as a native Intune setting.
 
 #### Create a custom profile for Windows 10 and later devices
 
 Use the Microsoft Intune custom profile for Windows 10 and later to deploy Open Mobile Alliance Uniform Resource Identifier (OMA-URI) values. These settings are used to control features on devices. Windows makes many Configuration Service Provider (CSP) settings available, such as Policy CSP.
 
-1.  In the Endpoint Manager admin center, create a device profile for Windows 10 and later as described in the previous unit, selecting **Custom** as the profile type.
+1.  In the Microsoft Intune admin center, create a device profile for Windows 10 and later as described in the previous unit, selecting **Custom** as the profile type.
 2.  On the Configuration tab, in Custom OMA-URI Settings, select **Add** to create a new setting. You can also select **Export** to create a list of all the values you configured in a comma-separated values (.csv) file.
 3.  For each OMA-URI setting you want to add, enter the following information:
     
@@ -53,7 +54,7 @@ Use the Microsoft Intune iOS/iPadOS or macOS custom profile to assign settings t
 
 This capability allows you to assign settings that aren't configurable with other Apple device profile types in Intune.
 
-1.  In the Endpoint Manager admin center, create a device profile for iOS/iPadOS or macOS as described in the previous unit, selecting **Custom** as the profile type.
+1.  In the Microsoft Intune admin center, create a device profile for iOS/iPadOS or macOS as described in the previous unit, selecting **Custom** as the profile type.
 2.  On the Custom Configuration Profile pane, configure each of the following settings:
     
      -  **Custom configuration profile name**: Provide a name for the policy as displayed on the device, and in Intune status.
