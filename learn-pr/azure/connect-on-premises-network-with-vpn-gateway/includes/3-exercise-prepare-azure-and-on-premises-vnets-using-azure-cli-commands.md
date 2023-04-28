@@ -1,14 +1,14 @@
-Your company is now ready to deploy a site-to-site VPN. This VPN will allow your on-premises servers to connect to resources in Azure. You can then start to securely share data from each of your sites, and you can use resources hosted in Azure across your organization. 
+Your company is now ready to deploy a site-to-site VPN that allows your on-premises servers to connect to resources in Azure. You can then start to securely share data from each of your sites, and you can use resources hosted in Azure across your organization. 
 
-You'll start by creating your Azure-side resources and on-premises network resources. For this deployment, you'll use the following network topology.
+Start by creating your Azure-side resources and on-premises network resources. For this deployment, you use the following network topology.
 
 ![Diagram of network topology for unit 3 exercise.](../media/3-network-topology-used-in-exercise.svg)
 
-In this exercise, you'll simulate an on-premises datacenter (HQ-Network) by using an additional Azure virtual network. There are many makes and models of on-premises VPN devices, and it won't be possible to describe their configuration in this unit. The logical method of configuration is the same for a VPN device. You just need to replace the steps for HQ-Network with steps tailored to your on-premises device.
+In this exercise, we simulate an on-premises datacenter (HQ-Network) by using an additional Azure virtual network. There are many makes and models of on-premises VPN devices, and it isn't possible to describe their configuration in this unit. The logical method of configuration is the same for a VPN device. You just need to replace the steps for HQ-Network with steps tailored to your on-premises device.
 
-In the previous diagram, notice that the local network gateway names in each location reflect the *target* networks rather than the *source* network. This is a good practice. It clarifies that the local network gateway refers to the *other* network that you're connecting to.
+In the previous diagram, notice that the local network gateway names in each location reflect the *target* networks rather than the *source* network. This naming convention is a good practice. It clarifies that the local network gateway refers to the *other* network that you're connecting to.
 
-In this unit, you'll configure the virtual networks with a subnet, add a gateway subnet, and then create the local network gateway by using the Azure CLI.
+In this unit, you configure the virtual networks with a subnet, add a gateway subnet, and then create the local network gateway by using the Azure CLI.
 
 ## Create the Azure-side resources
 
@@ -43,7 +43,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
         --local-address-prefixes 10.1.0.0/16
     ```
 
-    This gateway represents the on-premises network that you're connecting to. The IP address specified as the remote gateway (which is the simulated on-premises network) will need to be updated later because it doesn't exist yet in our scenario.
+    This gateway represents the on-premises network that you're connecting to. The IP address specified as the remote gateway (which is the simulated on-premises network) must be updated later because it doesn't exist yet in our scenario.
 
 ## Create the simulated on-premises network and supporting resources
 
@@ -78,7 +78,7 @@ In this unit, you'll configure the virtual networks with a subnet, add a gateway
         --local-address-prefixes 172.16.255.0/27
     ```
 
-    This gateway describes the Azure network that you're connecting to. You'll update the IP address specified as the remote gateway (which is in Azure) later.
+    This gateway describes the Azure network that you're connecting to. You update the IP address specified as the remote gateway (which is in Azure) later.
 
 ## Verify the topology
 

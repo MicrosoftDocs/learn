@@ -1,5 +1,6 @@
 
 
+
 Deployments comprise the activities that make a computer device available for use. The general deployment process consists of several interrelated activities, with transitions between the build and deployment phases.
 
 The desktop deployment life cycle provides a framework for the tasks required to deploy a software application or operating system successfully. It would be best if you understood the lifecycle phases to properly plan for the resources and tools needed for effective implementation. The critical phases of the desktop deployment lifecycle are Building and Deploying.
