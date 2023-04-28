@@ -13,6 +13,6 @@ metadata:
     - ignite-2022
     - engagement-fy23
   ms.prod: learning-azure
-durationInMinutes: 8
+durationInMinutes: 4
 content: |
   [!include[](includes/prepare-purchasing-azure-savings-plan-for-compute.md)]
