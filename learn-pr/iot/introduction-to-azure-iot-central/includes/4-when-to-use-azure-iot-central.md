@@ -8,7 +8,7 @@ Here, you'll learn about the criteria used when deciding if IoT Central is right
 
 IoT Central is a ready-made environment and its primary interface is a web UI. You can use application templates for everything from getting a feel for what is possible, to fully customizing your application to fit your scenario. Some users may find that IoT Central doesn't provide all the functionality their solution needs to evaluate the scenario, though it's worth considering the options to export data to other services and applications or extend it with the REST api. 
 
-If you want to demonstrate the business impact you can create with the IoT data stream, before investing time in developing a production-ready solution, using IoT Central is the fastest and easiest way to achieve it. If your team has plenty of skills and experience developing IoT solutions, then you should start with a fully customizable solution using the platform as a service (PaaS) IoT services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service (DPS)*. When using PaaS, the same solution you create for demonstration purposes can be easily migrated to production. Because IoT Central uses IoT Hub and DPS services internally, there are ways to move from aPaaS and PaaS solutions.
+If you want to demonstrate the business impact you can create with the IoT data stream, before investing time in developing a production-ready solution, using IoT Central is the fastest and easiest way to achieve it. If your team has plenty of skills and experience developing IoT solutions, then you should start with a fully customizable solution using the platform as a service (PaaS) IoT services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service (DPS)*. When using PaaS, the same solution you create for demonstration purposes can be easily migrated to production. Because IoT Central uses IoT Hub and DPS services internally, you can migrate from an aPaaS to a PaaS solution.
 
 Let's take a look at some of the criteria you should consider when determining if IoT Central is best for you:
 
@@ -20,11 +20,11 @@ Let's take a look at some of the criteria you should consider when determining i
 
 ## Apply the criteria
 
-Let's apply these criteria to the requirements of the IoT solution from the example scenario introduced in the first unit. The following flowchart illustrates the decision process you'll use to determine if IoT Central can meet the needs of the retail company scenario. The decision process is based on the criteria defined in this unit.
+Apply these criteria to the requirements of the IoT solution from the example scenario introduced in the first unit. The following flowchart illustrates the decision process you'll use to determine if IoT Central can meet the needs of the retail company scenario. The decision process is based on the criteria defined in this unit.
 
 > [[IMAGE OF DECISION CRITERIA CHART]]
 
-Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This comparison allows you to determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
+Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This process lets you determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
 
 | Criteria | Requirement | Use Azure IoT Central? |
 | --- | --- | --- |
@@ -50,4 +50,4 @@ As shown in the preceding application architecture diagram, you can use the appl
 * **4**. Transform the environmental conditions within the stores into insights that the store team can use to improve the customer experience.
 * **5**. Export the aggregated insights into existing or new business applications to provide useful and timely information to retail staff.
 
-For more details, you can follow the complete [tutorial on how to use and customize the IoT Central *In-store Analytics - Checkout* application template](/azure/iot-central/retail/tutorial-in-store-analytics-create-app).
+To learn more, see the [tutorial on how to use and customize the IoT Central *In-store Analytics - Checkout* application template](/azure/iot-central/retail/tutorial-in-store-analytics-create-app).
