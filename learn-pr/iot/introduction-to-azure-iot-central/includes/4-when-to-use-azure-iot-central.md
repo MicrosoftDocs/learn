@@ -6,9 +6,9 @@ Here, you'll learn about the criteria used when deciding if IoT Central is right
 
 ## Decision criteria
 
-IoT Central is a ready-made environment and its primary interface is a web UI. You can use application templates for everything from getting a feel for what is possible, to fully customizing your application to fit your scenario. Some users may find that IoT Central doesn't provide all the functionality their solution needs to evaluate the scenario, though it's worth considering the options to export data to other services and applications or extend it with the REST API. 
+IoT Central is a ready-made environment and its primary interface is a web UI. You can use application templates for everything from getting a feel for what is possible, to fully customizing your application to fit your scenario. Some users may find that IoT Central doesn't provide all the functionality their solution needs to evaluate the scenario, though it's worth considering the options to export data to other services and applications or extend it with the REST API.
 
-If you want to demonstrate the business impact you can create with the IoT data stream, before investing time in developing a production-ready solution, using IoT Central is the fastest and easiest way to achieve it. If your team has plenty of skills and experience developing IoT solutions, then you should start with a fully customizable solution using the platform as a service (PaaS) IoT services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service (DPS)*. When using PaaS, the same solution you create for demonstration purposes can be easily migrated to production. Because IoT Central uses IoT Hub and DPS services internally, you can migrate from an aPaaS to a PaaS solution.
+If you want to demonstrate the business impact you can create by using an IoT solution, before investing time in developing a production-ready solution, using IoT Central is the fastest and easiest way to achieve it. If your team has plenty of skills and experience developing IoT solutions, then you should start with a fully customizable solution using the platform as a service (PaaS) IoT services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service (DPS)*. When using PaaS, the same solution you create for demonstration purposes can be easily migrated to production. Because IoT Central uses IoT Hub and DPS services internally, there are ways to move from aPaaS and PaaS solutions.
 
 Let's take a look at some of the criteria you should consider when determining if IoT Central is best for you:
 
@@ -16,7 +16,7 @@ Let's take a look at some of the criteria you should consider when determining i
 | --- | --- |
 | **Experience** | A common obstacle to producing successful IoT solutions is a lack of skills and experience. Therefore, it's crucial that you consider the skills and abilities of your IoT team. IoT Central is intended for users and teams that may not be experienced IoT professionals. |
 | **Customization** | Like most aPaaS solutions, IoT Central provides a ready-to-use application and there are fewer customization options available when compared with PaaS solutions. Before selecting IoT Central to evaluate your IoT scenario, ensure that you can leverage the built-in analytics for your needs or alternatively, export data to other services and applications or use the REST API. |
-| **Production-ready** | IoT Central isn't meant to be used on a production environment. If your IoT solution already has a solid evidence of the business impact that the IoT data stream can create, then use the PaaS services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service (DPS)*. If you started with IoT Central and now need to move to a production environment, then you can use the *IoT Central migrator tool* to migrate devices seamlessly from IoT Central to a PaaS solution that uses IoT Hub and DPS. |
+| **Production-ready** | Use IoT Central as proof-of-concept to evaluate your IoT solution. If your IoT solution already has a solid evidence of the business impact that the IoT data stream can create, then use the PaaS services such as: *Azure IoT Hub* and *DPS*. If you started with IoT Central and now need to move to a production environment, then you can use the *IoT Central migrator tool* to migrate devices seamlessly from IoT Central to a PaaS solution that uses IoT Hub and DPS. |
 
 ## Apply the criteria
 
@@ -44,10 +44,10 @@ Run the following IoT Central application that uses the *In-store Analytics - Ch
 
 As shown in the preceding application architecture diagram, you can use the application template to:
 
-* **1**. Connect various IoT sensors to an IoT Central application instance.
-* **2**. Monitor and manage the health of the sensor network and any gateway devices in the environment.
-* **3**. Create custom rules around the environmental conditions within a store to trigger alerts for store managers.
-* **4**. Transform the environmental conditions within the stores into insights that the store team can use to improve the customer experience.
-* **5**. Export the aggregated insights into existing or new business applications to provide useful and timely information to retail staff.
+1. Connect various IoT sensors to an IoT Central application instance.
+2. Monitor and manage the health of the sensor network and any gateway devices in the environment.
+3. Create custom rules around the environmental conditions within a store to trigger alerts for store managers.
+4. Transform the environmental conditions within the stores into insights that the store team can use to improve the customer experience.
+5. Export the aggregated insights into existing or new business applications to provide useful and timely information to retail staff.
 
 To learn more, see the [tutorial on how to use and customize the IoT Central *In-store Analytics - Checkout* application template](/azure/iot-central/retail/tutorial-in-store-analytics-create-app).

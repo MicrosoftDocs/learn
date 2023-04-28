@@ -70,17 +70,11 @@ Although IoT Central has built-in analytics features, you can export data to oth
 
 Reasons to export data include:
 
-### Storage and analysis
+- **Storage and analysis:** For long-term storage and control over archiving and retention policies, you can continuously export your data to other storage destinations. Use of separate storage also lets you use other analytics tools to derive insights and view the data in your solution.
 
-For long-term storage and control over archiving and retention policies, you can continuously export your data to other storage destinations. Use of separate storage also lets you use other analytics tools to derive insights and view the data in your solution.
+- **Business automation:** *Rules* in IoT Central let your trigger external actions, such as to send an email or fire an event, in response to conditions within IoT Central. For example, you can notify a store manager if the ambient temperature for a device reaches a threshold.
 
-### Business automation
-
-*Rules* in IoT Central let your trigger external actions, such as to send an email or fire an event, in response to conditions within IoT Central. For example, you can notify a store manager if the ambient temperature for a device reaches a threshold.
-
-### Additional computation
-
-You may need to transform or do computations on your data before it can be used either in IoT Central or another service. For example, you could add local weather information to the location data reported by a store.
+- **Additional computation:** You may need to transform or do computations on your data before it can be used either in IoT Central or another service. For example, you could add local weather information to the location data reported by a store.
 
 ## Extend with REST API
 

@@ -15,12 +15,12 @@ The following screenshot is an IoT Central application using the *In-store Analy
 Every device connected to IoT Central uses a *device template*. A device template is the blueprint that defines the characteristics and behavior of a type of device such as the:
 
 - Telemetry it sends. Examples include temperature and humidity. Telemetry is streaming data.
-- Business properties that an operator can modify. Examples include a store address and a last serviced date.
+- Cloud properties that an operator can modify. Examples include a store address and a last serviced date.
 - Device properties that are set by a device and are read-only in the application. For example, the state of a fan as either on or off.
 - Properties that are set by an operator and that determine the behavior of the device. For example, a target temperature for the device.
 - Commands that are called by an operator and that run on a device. For example, a command to remotely reboot a device.
 
-You can quickly connect certified devices to your IoT Central Application:
+You can create your own custom device templates or connect an [IoT Plug and Play](/azure/iot-develop/overview-iot-plug-and-play) certified device by using a device template provided by the manufacturer:
 
 ![Screenshot of new device template options when at the IoT Central application](../media/2-in-store-analytics-checkout-newdevicetemplate.png)
 
