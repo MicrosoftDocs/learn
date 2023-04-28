@@ -4,13 +4,11 @@ title: Share team knowledge using Azure Project Wiki
 metadata:
   title: Share team knowledge using Azure Project Wiki
   description: "Share team knowledge using Azure Project Wiki"
-  ms.date: 02/10/2023
+  ms.date: 04/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 45
 content: |
-  [!include[](includes/6-share-team-knowledge-azure-project-wiki.md)]
+  [!include[](includes/5-share-team-knowledge-azure-project-wiki.md)]

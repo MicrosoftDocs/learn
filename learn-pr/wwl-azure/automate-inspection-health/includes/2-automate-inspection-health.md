@@ -1,3 +1,4 @@
+
 Inspection of the release pipeline and release is something you should consider from the start.
 
 When you run multiple deployments a day, you want to:
@@ -39,4 +40,4 @@ Reporting is the most static approach to inspection but also the most evident in
 
 Creating a dashboard that shows the status of your build and releases combined with team-specific information is, in many cases, a valuable asset to get insights.
 
-Read more at [About dashboards, charts, reports, &amp; widgets](/azure/devops/report/dashboards/overview).
+Read more at [About dashboards, charts, reports, & widgets](/azure/devops/report/dashboards/overview).
