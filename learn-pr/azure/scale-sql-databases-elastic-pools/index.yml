@@ -17,7 +17,7 @@ abstract: |
   - Add databases to an elastic pool.
   - Configure database performance in an elastic pool.
 prerequisites: |
-  - Basic knowledge of the Azure Portal
+  - Basic knowledge of the Azure portal
   - Basic knowledge of Azure SQL Server
 iconUrl: /training/achievements/azure-scale-azure-sql-databases-elastic-pools.svg
 badge:
