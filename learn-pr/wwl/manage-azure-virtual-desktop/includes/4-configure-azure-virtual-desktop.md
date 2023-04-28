@@ -1,5 +1,6 @@
 
 
+
 ## Create and connect to a Windows 11 desktop with Azure Virtual Desktop
  
 Azure Virtual Desktop is a desktop and app virtualization service that runs on the cloud. This tutorial shows you a simple method to deploy a Windows 11 Enterprise desktop in Azure Virtual Desktop using the Azure portal and how to connect to it. To learn more about the terminology used for Azure Virtual Desktop, see [Azure Virtual Desktop terminology.](/azure/virtual-desktop/environment-setup)
