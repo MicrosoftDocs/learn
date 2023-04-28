@@ -14856,16 +14856,6 @@
       "redirect_document_id": true
     },
     {
-      "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/6-knowledge-check.md",
-      "redirect_url": "/training/modules/share-knowledge-within-teams/7-knowledge-check",
-      "redirect_document_id": true
-    },
-    {
-      "source_path": "learn-pr/wwl-azure/share-knowledge-within-teams/7-summary.md",
-      "redirect_url": "/training/modules/share-knowledge-within-teams/8-summary",
-      "redirect_document_id": true
-    },
-    {
       "source_path": "learn-pr/wwl-azure/configure-provision-environments/5-set-up-test-infrastructure.md",
       "redirect_url": "/training/modules/configure-provision-environments/",
       "redirect_document_id": false
