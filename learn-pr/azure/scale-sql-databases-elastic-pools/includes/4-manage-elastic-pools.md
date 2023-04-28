@@ -20,10 +20,10 @@ The following chart provides a comparison of the two pricing models:
 
 The Azure portal displays the results of your pool settings as an estimated monthly bill. The following charts display the DTU-based pricing and vCore-based pricing models:
 
-#### DTU-based Pricing Model
+#### DTU-based pricing model
 
 ![Screenshot showing the DTU Pricing Model.](../media/DTUPricing.png)
 
-#### vCore-based Pricing Model
+#### vCore-based pricing model
 
 ![Screenshot showing the vCore Pricing Model.](../media/VCorePricing.png)
