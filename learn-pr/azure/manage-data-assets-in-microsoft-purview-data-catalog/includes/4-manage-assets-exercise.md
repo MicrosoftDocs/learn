@@ -71,7 +71,7 @@ Now that we've made an edit to an individual asset, let's add some information a
 
     :::image type="content" source="../media/manage-assets-exercise/select-bulk-edit-inline.png" alt-text="Screenshot of the selected assets page with the bulk edit button highlighted at the top." lightbox="../media/manage-assets-exercise/select-bulk-edit.png":::
 
-1. On the Bulk edit page we can select multiple attributes to edit. In our example below, we've already made an update to Owner, so we can select Classification, Term, Expert, or Certified. We'll discuss terms in the next section, so let's select Classification.
+1. On the Bulk edit page we can select multiple attributes to edit. In our example below, we have already made an update to Owner, so we can select Classification, Term, Expert, or Certified. We'll discuss terms in the next section, so let's select Classification.
 
     :::image type="content" source="../media/manage-assets-exercise/select-attribute-to-modify-inline.png" alt-text="Screenshot of the Edit bulk asset page with the first dropdown selected, showing all options, with classification highlighted." lightbox="../media/manage-assets-exercise/select-attribute-to-modify.png":::
 
