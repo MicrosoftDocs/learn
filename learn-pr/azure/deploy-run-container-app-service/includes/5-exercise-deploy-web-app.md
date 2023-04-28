@@ -6,7 +6,7 @@ In this unit, you'll create a new web app by using the Docker image stored in Az
 
 ## Enable Docker access to the Azure Container Registry
 
-You'll use Docker to log in to the registry, and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
+You'll use Docker to log in to the registry and pull the web image that you want to deploy. Docker needs a username and password to perform this action. The Container Registry enables you to set the registry name as the username and the admin access key as the password to allow Docker to log in to your container registry.
 
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true), and go to **All resources**. The **All resources** pane appears.
 
@@ -40,10 +40,13 @@ You're now ready to create your web app.
     | Publish | **Docker Container** |
     | Operating System | **Linux** |
     | Region | Select the same location that is close to you from previous exercise. |
-    | **App Service Plan** |
-    | App Service plan | Use the default. |
+    | **Pricing plans** |
+    | Linux plan | Use the default. |
+    | Pricing plan | Use the default. |
+    | **Zone redundancy** |
+    | Zone redundancy | Use the default. |
 
-1. Select **Next:&nbsp;Docker&nbsp;&gt;**.
+1. Select **Next: Docker**.
 
 1. On the **Docker** tab, enter the following values for each setting.
 
@@ -67,7 +70,7 @@ You're now ready to create your web app.
 
 ::: zone pivot="csharp"
 
-3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image.
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image:
 
     ![Screenshot of the sample Docker image.](../media/5-sample-web-app-dotnet.png)
 
@@ -75,7 +78,7 @@ You're now ready to create your web app.
 
 ::: zone pivot="javascript"
 
-3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image.
+3. After the cold-start delay while your app's Docker image loads and starts, you'll see a page like the following image:
 
     ![Screenshot of the sample Welcome to Express.](../media/5-sample-web-app-node.png)
 
