@@ -1,38 +1,64 @@
-In this unit, we will explore the process of configuring Microsoft-hosted agents and pools in Azure DevOps. Microsoft-hosted pools provide a convenient and scalable way to run your build and release pipelines without having to manage your own infrastructure. These pools include a set of pre-configured agents with popular software and tools installed, ensuring that you have the necessary resources to execute your pipelines.
+In this unit, learn how to configure Microsoft-hosted agents and agent pools in Azure DevOps, focusing on security best practices.Microsoft-hosted agents are virtual machines maintained by Microsoft, and agent pools enable you to organize and manage these agents efficiently.
 
-## What are Microsoft-hosted agents and pools?
+## Microsoft-hosted agents
 
-Microsoft-hosted agents are virtual machines provided and managed by Microsoft, which are used to run your build and release pipelines. These agents come with a variety of pre-installed software, ensuring that your pipelines have access to the tools they need.
+Microsoft-hosted agents are preconfigured virtual machines provided and managed by Microsoft. These agents come with numerous preinstalled tools and software, which make them suitable for running a wide range of tasks in your pipelines.
 
-Microsoft-hosted pools are groups of Microsoft-hosted agents that you can use to run your pipelines. By configuring a Microsoft-hosted pool, you can ensure that your pipelines have access to the necessary resources and can scale as needed without having to manage your own infrastructure.
+## Agent pools
 
-## Configuring Microsoft-hosted agents and pools
+Agent pools are groups of agents that can be shared across multiple projects and pipelines. By organizing your agents into pools, you can manage their access and permissions more efficiently, ensuring that your projects and pipelines remain secure.
 
-To configure a Microsoft-hosted pool in Azure DevOps, follow these steps:
+## Security best practices for Microsoft-hosted agents and agent pools
 
-1. Sign in to your Azure DevOps organization and navigate to the Organization settings page.
-2. Select Agent pools from the menu on the left side.
-3. You should see a list of available pools, including the default Microsoft-hosted pool called "Azure Pipelines." To use this pool, simply reference it in your pipeline YAML file using the following syntax:
+To maintain a secure environment in Azure DevOps, it's essential to follow security best practices when configuring Microsoft-hosted agents and agent pools. Some key security considerations include:
 
-    ```YAML
-    pool:
-      vmImage: 'ubuntu-latest'
-    
-    ```
+- **Role-based access control (RBAC):** Azure DevOps uses RBAC to manage access to agent pools. Roles such as "Administrator," "User," and "Reader" can be assigned to users or groups to grant different levels of access to agent pools. Ensure that you only grant the necessary permissions to team members to maintain a secure environment.
+- **Limiting scope:** When creating service connections for your pipelines, it's important to limit the scope of access. This helps prevent unauthorized access and reduces the potential impact of a security breach. Always grant the minimum set of permissions required for a specific task.
+- **Securing secrets:** Ensure that secrets like API keys, passwords, and tokens are securely stored using Azure Key Vault or another secure storage solution. Avoid storing secrets in plain text or in code repositories.
+- **Regularly review permissions:** Periodically review and update permissions for users and groups to ensure that they have the appropriate level of access based on their current roles and responsibilities.
 
-    Replace 'ubuntu-latest' with the appropriate image for your needs. You can find a list of available Microsoft-hosted agent images in the official documentation.
+# Configuring permissions for Microsoft-hosted agent pools
+
+To configure permissions for Microsoft-hosted agent pools:
+
+1. In Azure DevOps, navigate to the Organization settings.
+2. Under Pipelines, select Agent pools.
+3. Select on the agent pool for which you want to configure permissions.
+4. Select on the Security tab.
+5. Here, you can add users or groups and assign them specific roles like "Administrator," "User," or "Reader." Make sure to grant the least privilege necessary for each team member to perform their tasks.
+6. You can also configure permissions for specific pipelines by clicking on the Pipelines tab and selecting the pipeline for which you want to configure permissions.
+
+## Using Azure Pipelines agent pool in your pipelines
+
+To use a specific agent pool in your Azure Pipelines, you need to specify the name of the image, using the YAML VM Image Label from [this](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted) table. For example, consider the following YAML file:
+
+```YAML
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest # This is the default if you don't specify a pool or vmImage.
+
+steps:
+- script: echo "Hello, World!"
+  displayName: 'Run a simple script'
+
+```
+
+Replace 'ubuntu-latest' with the name of the agent pool you want. This YAML file is a simple pipeline configuration that uses the specified agent pool to run a single script step, which prints "Hello, World!".
+
+With this YAML configuration, when the pipeline is triggered, it runs on an agent from the specified agent pool. Make sure that the agent pool you use has the necessary tools and capabilities to execute the tasks defined in your pipeline.
 
 ## Challenge yourself
 
-Now that you've learned how to configure a Microsoft-hosted pool, try the following challenge to test your understanding:
+To practice configuring permissions for Microsoft-hosted agent pools and pipelines, complete the following steps:
 
-1. Create a simple YAML pipeline in Azure DevOps that uses the Microsoft-hosted pool with the 'windows-latest' VM image.
-2. Add a script task that echoes "Hello, Azure DevOps!" to the console.
-3. Run the pipeline and verify that the output displays the message "Hello, Azure DevOps!"
+1. Create a new pipeline and configure its permissions as described above.
+2. Verify that the permissions granted to users and groups adhere to the principle of least privilege.
+3. Modify the pipeline to use the agent pool by updating the pool property in the pipeline YAML file.
+4. Execute the pipeline and verify that it runs successfully.
 
-Once you've completed this challenge, you'll have successfully configured and used a Microsoft-hosted pool in Azure DevOps. In the next unit, we'll explore how to configure agents for projects, further enhancing your understanding of identity management in Azure DevOps.
-
-For more information about Hosted Agents, see:
+For more information about Microsoft-hosted agents and pools, see:
 
 - [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
 - [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
