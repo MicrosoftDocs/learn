@@ -2,18 +2,18 @@
 uid: learn.iot.connect-iot-edge-device-to-iot-central
 metadata:
   title: Connect an IoT Edge device to your IoT Central application
-  description: In this module, you'll learn how to connect an IoT Edge device to your IoT Central application
+  description: Prepare your IoT Central application to connect an IoT Edge device and use Azure Functions to filter data before sending it to the cloud.
   author: dominicbetts
   ms.author: dobett
-  ms.date: 01/11/2023
+  ms.date: 04/28/2023
   ms.reviewer: rangv
   manager: lizross
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.prod: learning-azure
 title: Connect an IoT Edge device to your IoT Central application
-summary: In this module, you'll prepare an IoT Central application to connect an IoT Edge device to. You'll add some dashboards that enable an operator to manage the IoT Edge device. You'll deploy an IoT Edge device to virtual machine and connect the device to your IoT Central application. You'll use Azure Functions to add filtering capabilities to the IoT Edge device.
+summary: Prepare your IoT Central application to connect an IoT Edge device to. You'll add some dashboards that enable an operator to manage the IoT Edge device. You'll deploy an IoT Edge device to a virtual machine and connect the device to your IoT Central application. Then you'll use Azure Functions to add filtering capabilities to the IoT Edge device.
 abstract:  | 
-  In this module, you will:
+  Upon completion of this module, you'll be able to:
   - Create an IoT Central application
   - Import and IoT Edge deployment manifest into IoT Central
   - Add an IoT Edge device template to your application
@@ -36,12 +36,12 @@ roles:
 - developer
 - solution-architect
 products:
-- azure
+- azure-iot
 - azure-iot-central
 - azure-iot-edge
 - azure-functions
 subjects:
-- device-management
+- iot
 units:
 - learn.iot.connect-iot-edge-device-to-iot-central.introduction
 - learn.iot.connect-iot-edge-device-to-iot-central.implement-iot-application-with-edge-pattern
