@@ -21940,6 +21940,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/11-register-scan-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/deploy-microsoft-purview-scan-data-resources/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/deploy-microsoft-purview-scan-data-resources/12-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/deploy-microsoft-purview-scan-data-resources/11-summary",
       "redirect_document_id": true
