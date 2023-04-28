@@ -27,7 +27,8 @@ levels:
 roles: 
 - administrator
 - developer
-products: 
+products:
+- azure-iot
 - azure-iot-central
 subjects:
 - iot
