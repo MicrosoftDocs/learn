@@ -1,7 +1,8 @@
 
+
 The Devices feature provides additional details into the devices you manage, including their hardware and the apps installed. To view all your devices, and their properties do the following:
 
-1.  Sign in to the **Endpoint Manager admin center**.
+1.  Sign in to the **Microsoft Intune admin center**.
 2.  Select **Devices** and then select **All Devices**. Select an individual device to view.
 
 The **Overview** page is displayed by default. It shows the device name, and lists some key properties of the device, including whether it's a bring-your-own-device (BYOD) device, when it checked in, and more. The actions available depend on the device platform, and the configuration of the device.

@@ -4,13 +4,11 @@ title: Optimize the target system
 metadata:
   title: Optimize the target system
   description: "Optimize the target system"
-  ms.date: 01/26/2022
+  ms.date: 04/27/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/6-optimize-target-system.md)]
