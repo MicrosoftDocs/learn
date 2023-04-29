@@ -5,8 +5,8 @@ metadata:
   title: Describe drive symmetry considerations in Azure Stack HCI
   description: Overview of drive symmetry considerations in Azure Stack HCI.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
