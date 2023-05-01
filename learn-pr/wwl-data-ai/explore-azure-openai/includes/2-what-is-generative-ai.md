@@ -7,6 +7,4 @@ Let's identify where OpenAI models fit into the AI landscape.
 - **Deep learning** models use layers of algorithms in the form of artificial neural networks to return results for more complex use cases. Azure AI services are built on deep learning models. You can check out this article to learn more about the [difference between machine learning and deep learning.](/azure/machine-learning/concept-deep-learning-vs-machine-learning?azure-portal=true)
 - **Generative AI** models can produce new content based on what is described in the input. The OpenAI models are a collection of generative AI models that can produce language, code, and images. 
 
-![Illustration of generative AI's place within machine learning.](../media/generative-ai.png)
-
 Next you'll learn how Azure OpenAI gives users the ability to combine Azure's enterprise-grade solutions with many of OpenAI's same generative AI models.
