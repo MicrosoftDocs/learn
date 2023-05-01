@@ -5,8 +5,8 @@ metadata:
   title: Introduction to Azure Blueprints
   description: Introduction to Azure Blueprints and how to use to implement governance.
   ms.date: 05/09/2022
-  author: ricmmartins
-  ms.author: ricmart
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Intro to Azure blueprints

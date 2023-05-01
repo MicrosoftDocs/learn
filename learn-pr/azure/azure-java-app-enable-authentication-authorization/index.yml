@@ -5,8 +5,8 @@ metadata:
   title: Sign in users with Azure Active Directory in a Java web app
   description: Learn how to authenticate users with Azure Active Directory and get authorized access to data in a Java web app using Microsoft Authentication Library.
   ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Sign in users with Azure Active Directory in a Java web app
