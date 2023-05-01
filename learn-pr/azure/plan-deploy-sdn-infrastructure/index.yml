@@ -4,9 +4,9 @@ metadata:
   moduleType: standard
   title: Plan for and deploy SDN infrastructure on Azure Stack HCI
   description: This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI.
-  ms.date: 04/28/2023
-  author: LBN-commits
-  ms.author: v-lanai
+  ms.date: 05/01/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan for and deploy SDN infrastructure on Azure Stack HCI
