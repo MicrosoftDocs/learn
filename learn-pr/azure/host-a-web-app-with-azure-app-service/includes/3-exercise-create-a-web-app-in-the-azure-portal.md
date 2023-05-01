@@ -27,7 +27,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Runtime stack | .NET 6 (LTS) | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
     | Region | East US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
+    | **Pricing plans** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | Pricing plan | Free F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
 
@@ -59,7 +59,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Java web server stack | Apache Tomcat 9.0 | The platform on which you want your application to run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
     | Region | East US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
+    | **Pricing plans** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | Pricing plan | F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
 
@@ -90,7 +90,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Runtime stack | Node 16 LTS | The platform on which your application will run. Your choice may affect whether you have a choice of operating system; for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
     | Region | East US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
+    | **Pricing plans** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | Pricing plan | F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
 
@@ -121,7 +121,7 @@ Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?
     | Runtime stack | Python 3.8 | The platform on which your application will run. Your choice may affect whether you have a choice of operating system - for some runtime stacks, App Service supports only one operating system. |
     | Operating System | Linux | The operating system used on the virtual servers that will run your app. |
     | Region | East US | The geographical region from which your app will be hosted. |
-    | **App Service Plan** |
+    | **Pricing plans** |
     | Linux Plan | Accept default | The name of the App Service plan that will power your app. By default, the wizard will create a new plan in the same region as the web app. |
     | Pricing plan | F1 | The pricing tier of the service plan being created. The pricing plan determines the performance characteristics of the virtual servers that power your app and the features to which it has access. Select **Free F1** in the drop-down. |
 
