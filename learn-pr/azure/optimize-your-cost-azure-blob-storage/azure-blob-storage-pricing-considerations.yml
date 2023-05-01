@@ -5,8 +5,8 @@ metadata:
   title: Describe Azure Blob Storage pricing considerations
   description: Describe Azure Blob Storage pricing considerations.
   ms.date: 02/23/2023
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
