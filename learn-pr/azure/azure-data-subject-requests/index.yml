@@ -4,7 +4,7 @@ metadata:
   title: Responding to Data Subject Requests (DSRs)
   description: Know, understand, and be able to describe Data Subject Requests (DSRs), and learn how to manage DSRs on Azure and Microsoft 365.
   ms.date: 11/13/2020
-  author: micrum
+  author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: This is a summary unit.
   ms.date: 5/6/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
