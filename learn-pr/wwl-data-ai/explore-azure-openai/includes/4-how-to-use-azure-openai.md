@@ -21,7 +21,7 @@ These OpenAI models fall into a few main families:
 Azure OpenAI's AI models can all be trained and customized with fine-tuning. We won't go into custom models here, but you can learn more on the [fine-tuning your model](/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio?azure-portal=true) Azure documentation.
 
 > [!IMPORTANT]
-> Generative AI models *always* have a *probability* of reflecting true values. Higher performing models, such as models that have been fine-tuned for specific tasks, do a better job of returning responses that reflect true values. It is important to review the output of generative AI models. Additionally, the models provided by Azure OpenAI are trained on data prior to October 2019 and do not browse the internet, so they may not have knowledge of current events. 
+> Generative AI models *always* have a *probability* of reflecting true values. Higher performing models, such as models that have been fine-tuned for specific tasks, do a better job of returning responses that reflect true values. It is important to review the output of generative AI models. 
 
 #### Playground 
 
