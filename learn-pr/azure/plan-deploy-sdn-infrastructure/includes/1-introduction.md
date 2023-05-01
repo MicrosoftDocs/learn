@@ -20,4 +20,4 @@ In this module, we explore the architecture and core capabilities of SDN on Azur
 
 ## What is the main goal?
 
-By the end of this module, you'll be able to describe the architecture and core benefits of SDN on Azure Stack HCI. You'll also be able to deploy SDN on Azure Stack HCI. This information prepares you for the tasks of implementing such SDN components as Datacenter Firewall and Software Load Balancer.
+By the end of this module, you can describe the architecture and core benefits of SDN on Azure Stack HCI, and deploy SDN on Azure Stack HCI. This information prepares you for the tasks of implementing SDN components such as Datacenter Firewall and Software Load Balancer.

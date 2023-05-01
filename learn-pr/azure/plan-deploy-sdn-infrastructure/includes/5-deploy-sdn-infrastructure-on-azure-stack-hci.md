@@ -23,7 +23,7 @@ The following screenshot depicts the **Review** page of the SDN Express deployme
     > [!NOTE]
     > If you intend to manage your SDN environment by using VMM, you must use either of the two VMM deployment methods.
 
-- Windows Admin Center. This option uses the Azure Stack HCI cluster deployment wizard Windows Admin Center extension to set up an Azure Stack HCI cluster, including its Storage Spaces Direct (also known as S2D)-based storage and Network Controller VMs. The extension also supports installing SDN into an existing cluster. The wizard guides you through installing required operating system features, configuring networking, creating the cluster, deploying Storage Spaces Direct, and, optionally, implementing SDN.
+- Windows Admin Center. This option uses the Azure Stack HCI cluster deployment wizard Windows Admin Center extension to set up an Azure Stack HCI cluster, including its Storage Spaces Direct (also known as S2D)-based storage and Network Controller VMs. The extension also supports installing SDN into an existing cluster. The wizard guides you through installing the required operating system features and configuring networking. Then, it leads you through creating the cluster, deploying Storage Spaces Direct, and, optionally, implementing SDN.
 
     > [!NOTE]
     > As of November 2021, the Windows Admin Center extension doesn't support provisioning of Software Load Balancer Multiplexer or Gateway VMs.
