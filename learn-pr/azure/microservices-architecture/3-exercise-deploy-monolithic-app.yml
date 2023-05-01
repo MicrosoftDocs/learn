@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Deploy a monolithic application on App Service
   description: Exercise - Deploy a monolithic application on App Service
   ms.date: 08/30/2019
-  author: davidcberry13
-  ms.author: daberry
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Deploy a monolithic application on App Service

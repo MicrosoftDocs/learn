@@ -4,7 +4,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
 
 ## Add a dev container
 
-1. Return to VS Code and the project you cloned earlier
+1. Return to VS Code and the project you cloned earlier.
 1. Press <kbd>F1</kbd> to open the Command Palette.
 1. Type **add dev container** and select **Dev Containers: Add Development Container Configuration Files**.
 1. Select the following options:
@@ -13,7 +13,7 @@ In this exercise, you'll add a dev container and open the Products Dashboard pro
    | ------------------------------------------- | ----------- |
    | Select a container configuration template   | Python 3    |
    | Python version                              | 3.11        |
-   | Select additional features to install       | Select "OK" |
+   | Select additional features to install       | Select **OK** |
 
 > [!IMPORTANT]
 > In the first step when selecting a configuration template, you may need to select "Show All Definitions..." from the list, and then select Python once the full set of templates loads.
@@ -35,14 +35,14 @@ The container will begin building. The initial build might take a few minutes be
 
 ## View the Remote Indicator
 
-When the container build is complete, you can see that you're connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
+When the container build is complete, you can confirm that you're connected to the container by examining the Remote Indicator. You should also now see your project files loaded in VS Code.
 
-- Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now says, "Dev Container: Python 3".
+- Examine the Remote Indicator by viewing the bottom left-hand corner of VS Code. Notice that it now displays "Dev Container: Python 3".
 
-    :::image type="content" source="../media/remote-indicator.png" alt-text="Remote indicator with text that says dev container python 3":::
+    :::image type="content" source="../media/remote-indicator.png" alt-text="Screenshot of the Remote Indicator with text that says dev container python 3":::
 
 > [!IMPORTANT]
-> You may see notifications about Pylance or improving performance on Windows. You can safely dismiss any notifications that you see in VS Code. You won't need to do those things.
+> You might see notifications about Pylance or improving performance on Windows. You can safely dismiss any notifications that you see in VS Code. You won't need to do those things.
 
 ## Inspect the container
 
@@ -57,7 +57,7 @@ When the container build is complete, you can see that you're connected to the c
     python --version
     ```
 
-    The terminal's output should be the version of Python being used in the container.
+    The terminal's output should be the version of Python used in the container.
 
 ## Install project dependencies
 
@@ -81,4 +81,4 @@ When the container build is complete, you can see that you're connected to the c
 
 Great work! You have a Python web application with [Flask](https://flask.palletsprojects.com/) running on your machine, and you might not know what those things even are. That's OK! You don't have to. The container takes care of setting up the entire environment.
 
-In the next section, you'll learn how to use the "devcontainer.json" file to automate the dependency install, and customize VS Code for this Python project.
+In the next section, you'll learn how to use the `devcontainer.json` file to automate the dependency install and customize VS Code for this Python project.

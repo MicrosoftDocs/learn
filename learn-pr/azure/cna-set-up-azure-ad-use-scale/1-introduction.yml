@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to setting up apps for use and scale
   ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
