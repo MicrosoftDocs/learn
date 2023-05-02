@@ -1,5 +1,3 @@
-# Organize a project and repository structure
-
 There are different ways to organize a project and repository structure in Azure DevOps.
 
 In the banking institution example, you would need to securely organize your different projects and repositories to allow for team collaboration or isolation as needed.
@@ -8,7 +6,7 @@ Here, you’ll examine fundamental concepts for giving access and permissions, b
 
 ## Best practices for organizing projects and repositories
 
-Overall, it is advisable to use your business structure as a guide for the number of organizations, projects, and teams that you create in Azure DevOps. Have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
+Overall, it's advisable to use your business structure as a guide for the number of organizations, projects, and teams that you create in Azure DevOps. Have at least one organization, which may represent your company, your larger collection of code projects, or even multiple related business units.
 
 An organization in Azure DevOps is a mechanism for organizing and connecting groups of related projects. Examples include business divisions, regional divisions, or other enterprise structures. You can choose one organization for your entire company or separate organizations for specific business units.
 

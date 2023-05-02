@@ -1,5 +1,3 @@
-# Introduction
-
 Suppose you work as a software director at a banking institution. The banking institution has decided to adopt Azure DevOps as their primary software development platform. You have several development teams working on different projects and applications, and you need a secure project and repository structure that will allow each team to work independently in some projects, and collaborate in others, while ensuring that their code is secure and meets cybersecurity and banking regulations.
 
 This module shows you how to create and organize a secure project and repository structure, assign access and permissions, separate a project into team projects and repositories, separate secure files between projects, and move the security repository away from a project. Once you know the possible structures you can apply, you’ll be able to configure a project and repository structure that adapts to your business structure and needs and supports secure pipelines.

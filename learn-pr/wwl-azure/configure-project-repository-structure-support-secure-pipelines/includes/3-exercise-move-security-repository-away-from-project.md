@@ -1,8 +1,6 @@
-# Exercise - Move the security repository away from a project
-
 As seen in the previous unit, an important part of configuring a secure project and repository structure is separating projects as necessary.
 
-Recall that in the banking institution example, it’ll be necessary to separate projects to increase security across pipelines and make sure that protected resources can’t be accessed by unauthorized users.
+Recall that in the banking institution example, it will be necessary to separate projects to increase security across pipelines and make sure that protected resources can’t be accessed by unauthorized users.
 
 In this exercise, you’ll move the security repository away from an application project into a second project.
 

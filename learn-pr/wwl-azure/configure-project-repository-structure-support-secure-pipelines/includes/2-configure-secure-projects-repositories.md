@@ -1,5 +1,3 @@
-# Configure secure projects and repositories
-
 Organizations often have different development teams working on multiple projects and applications.
 
 In our banking institution example, it would be necessary to configure a project a repository structure that supports secure access and permissions to pipelines.
@@ -24,7 +22,7 @@ With the creation of an organization, collection, or project—Azure DevOps crea
 
 Each team added to a project is automatically added as a project-level group. There are several permissions you can set up at the project level, and you can grant them by adding a user or group to the **Project Administrators** group, or you can grant select project-level permissions to a custom security group or to a user.
 
-To manage permissions or groups at the project level, you must be a member of the **Project Administrators** security group. If you created the project, you are automatically added as a member of this group. Users who wish to get added to this group would need to request permissions from a member of the Project Administrators group. Consider adding users to the Project Administrators group when they are tasked with adding or managing teams, area and iteration paths, repositories, service hooks, and service end points.
+To manage permissions or groups at the project level, you must be a member of the **Project Administrators** security group. If you created the project, you're automatically added as a member of this group. Users who wish to get added to this group would need to request permissions from a member of the Project Administrators group. Consider adding users to the Project Administrators group when they are tasked with adding or managing teams, area and iteration paths, repositories, service hooks, and service end points.
 
 There are five possible assignments made to a permission. They grant or restrict access as indicated:
 
