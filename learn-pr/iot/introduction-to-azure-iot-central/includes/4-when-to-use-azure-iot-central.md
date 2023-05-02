@@ -15,7 +15,7 @@ Let's take a look at some of the criteria you should consider when determining i
 | Criteria | Analysis |
 | --- | --- |
 | **Experience** | A common obstacle to producing successful IoT solutions is a lack of skills and experience. Therefore, it's crucial that you consider the skills and abilities of your IoT team. IoT Central is intended for users and teams that may not be experienced IoT professionals. |
-| **Customization** | Like most aPaaS solutions, IoT Central provides a ready-to-use application and there are fewer customization options available when compared with PaaS solutions. Before selecting IoT Central to evaluate your IoT scenario, ensure that you can leverage the built-in analytics for your needs or alternatively, export data to other services and applications or use the REST API. |
+| **Customization** | Like most aPaaS solutions, IoT Central provides a ready-to-use application and there are fewer customization options available when compared with PaaS solutions. Before selecting IoT Central to evaluate your IoT scenario, ensure that you can use the built-in analytics for your needs or alternatively, export data to other services and applications or use the REST API. |
 | **Production-ready** | Use IoT Central as proof-of-concept to evaluate your IoT solution. If your IoT solution already has a solid evidence of the business impact that the IoT data stream can create, then use the PaaS services such as: *Azure IoT Hub* and *DPS*. If you started with IoT Central and now need to move to a production environment, then you can use the *IoT Central migrator tool* to migrate devices seamlessly from IoT Central to a PaaS solution that uses IoT Hub and DPS. |
 
 ## Apply the criteria
@@ -26,18 +26,17 @@ Apply these criteria to the requirements of the IoT solution from the example sc
 
 Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This process lets you determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
 
-
 | Criteria | Requirement | Use Azure IoT Central? |
 | --- | --- | --- |
-| **Experience** | As stated in our scenario, your team don't have experience working on IoT projects. Therefore, the solution you design has to account for lack of skills and experience. | Yes |
+| **Experience** | As stated in our scenario, your team doesn't have experience working on IoT projects. Therefore, the solution you design has to account for lack of skills and experience. | Yes |
 | **Customization** | You and your team would like to design a custom notification system for the cloud application to notify store managers with critical alerts. It needs to integrate with the current messaging system. | Yes - use rules to trigger external actions |
-| **Production-ready** | The scenario is on it's experimental stage and device environment telemetry data will be enabled in one store only. If there's enough business impact, a dedicated team will then be assigned to develop a production-ready solution using PaaS IoT services to deploy on all stores. | Yes |
+| **Production-ready** | The scenario is on its experimental stage and device environment telemetry data will be enabled in one store only. If there's enough business impact, a dedicated team will then be assigned to develop a production-ready solution using PaaS IoT services to deploy on all stores. | Yes |
 
 ## Create a retail application
 
 Based on the analysis of the decision criteria, IoT Central is the ideal platform to evaluate the retail company scenario and assess the opportunities it can create for the business. You also found that there's an industry-focused application template ready to be used and possible to customize afterwards.
 
-The following steps create an IoT Central application that uses the *In-store Analytics - Checkout* template so you can get a feel for what is possible:
+The following steps create an IoT Central application that uses the *In-store Analytics - Check out* template so you can get a feel for what is possible:
 
 1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
 
