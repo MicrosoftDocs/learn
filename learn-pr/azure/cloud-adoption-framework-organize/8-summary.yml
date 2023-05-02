@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: Summary of the Cloud Adoption Framework organizational alignment module.
   ms.date: 05/10/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

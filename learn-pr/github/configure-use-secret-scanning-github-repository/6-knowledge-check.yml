@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check for Configure and use secret scanning in your GitHub repository module
   ms.date: 11/25/2021
-  author: lucie-docs
-  ms.author: lucielenaour
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

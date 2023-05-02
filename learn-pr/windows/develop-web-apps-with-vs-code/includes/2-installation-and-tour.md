@@ -2,39 +2,39 @@ To begin, let's download and install Visual Studio Code locally, then take a sho
 
 ## Download
 
-Browse to [https://code.visualstudio.com](https://code.visualstudio.com) and select the stable build for your platform. The Insiders Edition is like using a beta test version of the next update, but is not applicable for this learning module. If you don't see your specific platform, select [Other downloads](https://code.visualstudio.com/#alt-downloads) to see all currently supported builds.
+Browse to [https://code.visualstudio.com](https://code.visualstudio.com) and select the stable build for your platform. The Insiders Edition is like using a beta test version of the next update, but isn't applicable for this learning module. If you don't see your specific platform, select [Other downloads](https://code.visualstudio.com/#alt-downloads) to see all currently supported builds.
 
 ## Install
 
-During installation, be sure to check out the options presented and select any opt-in features you'd like. These options are mostly for convenience and personal preference, so you can accept the defaults to simplify your installation. Below are the Windows options and their defaults.
+During installation, be sure to check out the options presented and select any opt-in features you'd like. These options are mostly for convenience and personal preference, so you can accept the defaults to simplify your installation. The following image shows the Windows options and their defaults.
 
-![Windows installation options.](../media/install-options.PNG)
+![Screenshot that shows the Windows installation options for Visual Studio Code.](../media/2-visual-studio-code-install-options-2023.png)
 
-Take a moment on first run to check for available updates. On Windows, this can be easily done using the **Help** pulldown menu and selecting **Check for Updates**. This option may appear in other pulldown menu locations on other platforms.
+Take a moment on first run to check for available updates. On Windows, updates can be done using the **Help** pulldown menu and selecting **Check for Updates**. This option may appear in other pulldown menu locations on other platforms.
 
 ## Tour
 
-Let's take a look at a few key features of the user interface, and a short tour of Visual Studio Code's core functionality. When you first run Visual Studio Code, you should see a "Welcome" page similar to the screenshot below. If you don't see the Welcome page, you can access it using the **Help > Welcome** dropdown menu item.
+Let's take a look at a few key features of the user interface, and a short tour of Visual Studio Code's core functionality. When you first run Visual Studio Code, you should see a "Welcome" page similar to the following screenshot. If you don't see the Welcome page, you can access it using the **Help > Welcome** dropdown menu item.
 
-![First run after installation.](../media/welcome.PNG)
+:::image type="content" source="../media/2-visual-studio-code-welcome.png" alt-text="Screenshot that shows the Visual Studio Code Welcome screen after the initial installation." lightbox="../media/2-visual-studio-code-welcome.png":::
 
 ### User interface
 
-The first thing you'll probably notice is how simple the interface seems to be. This is intentional, but hides the true power of this editor. For now, familiarize yourself with the main UI components.
+The first thing you probably notice is how simple the interface seems to be. This simplicity is intentional, but hides the true power of this editor. For now, familiarize yourself with the main UI components.
 
-![User interface components.](../media/interface.PNG)
+![Screenshot that shows the Visual Studio Code user interface components with arrow callouts and keyboard shortcuts displayed.](../media/2-visual-studio-code-interface-2023.png)
 
-One UI function you are likely to find quite valuable is the Command Palette (F1 on any platform, Ctrl + Shift + P on Windows, and listed under the **View** dropdown menu). It's a great starting place if you have an idea what you'd like to do in Visual Studio Code, but can't recall exactly how to do it.
+One UI function you're likely to find valuable is the Command Palette, which is F1 on any platform, Ctrl + Shift + P on Windows, and is listed under the **View** dropdown menu. It's a great starting place if you have an idea of what you'd like to do in Visual Studio Code, but can't recall exactly how to do it.
 
-![Command palette.](../media/F1.PNG)
+:::image type="content" source="../media/2-visual-studio-code-command-palette.png" alt-text="Screenshot that shows Visual Studio Code with the command palette open." lightbox="../media/2-visual-studio-code-command-palette.png":::
 
-By default, the Command Palette comes up in Command mode, signified by the `>` prompt. This mode includes most Visual Studio Code functionality, including finding keyboard shortcuts. But there's far more available here. For a list, press F1 + backspace to remove the command prompt (`>`) and type a question mark (`?`). Take a moment to explore these modes if you'd like.
+By default, the Command Palette comes up in Command mode, signified by the `>` prompt. This mode includes most Visual Studio Code functionality, including finding keyboard shortcuts. But there's far more available here. For a list, press F1 + backspace to remove the command prompt `>` and type a question mark `?`. Take a moment to explore these modes if you'd like.
 
 ### Color themes
 
-Changing the look of your editor is a big deal to most of us. Visual Studio Code makes it easy with Themes. On the Welcome page, select **Color theme** under **Customize** and you'll see something like the following.
+Changing the look of your editor is important to most of us. Visual Studio Code makes it easy with Themes. On the Welcome page, select **Color theme** under **Customize** and you see something like the following screenshot:
 
-![Color themes list.](../media/color-themes.PNG)
+:::image type="content" source="../media/2-visual-studio-code-color-themes-2023.png" alt-text="Screenshot that shows Visual Studio Code with the Color theme options displayed." lightbox="../media/2-visual-studio-code-color-themes-2023.png":::
 
 > [!NOTE]
 > You can also get to this list in other ways, such as the Command palette, pulldown menus, and keyboard shortcuts.
@@ -43,8 +43,8 @@ Take this opportunity to try our different color themes. If the default themes a
 
 ### Tools and extensions
 
-Click on the **Tools and languages** topic under **Customize** and you'll see the left pane expand to show the current list of available extensions, similar to what you see below. You can also use the **View** menu and select **Extensions**. Note that the first option adds the filter `@category:"programming languages"` to the extensions list, to show only extensions in that category. You can edit this filter yourself, or clear it with the **Clear Extensions Input** button (highlighted in the screenshot below).
+Select **Tools and languages** under **Customize** and see the left pane expand to show the current list of available extensions, similar to what you see in the next screenshot. You can also use the **View** menu and select **Extensions**. The first option adds the filter `@category:"programming languages"` to the extensions list, to show only extensions in that category. You can edit this filter yourself, or clear it with the **Clear Extensions Input** button.
 
-![Tools and Languages Extensions.](../media/tools-list.PNG)
+:::image type="content" source="../media/2-visual-studio-code-extensions.png" alt-text="Screenshot that shows the Extensions menu selected in Visual Studio Code.":::
 
-We won't install any of these right now, but feel free to take a moment to scroll through the list to get an idea of the varied options available. We'll discuss extensions in more depth in the next unit.
+We're not installing any of these extensions right now, but take a moment to scroll through the list to get an idea of the various options. We'll discuss extensions in more depth in the next unit.

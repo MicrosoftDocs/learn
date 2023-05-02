@@ -3,6 +3,6 @@ Data sets have unique lifecycles. Early in the lifecycle, people access some dat
 
 After completing this module, you'll be able to:
 
-* Describe how each of the access tiers are optimized.
+* Describe how each of the access tiers is optimized.
 * Create and implement a lifecycle policy. 
 * Rehydrate blob data stored in an archive tier.

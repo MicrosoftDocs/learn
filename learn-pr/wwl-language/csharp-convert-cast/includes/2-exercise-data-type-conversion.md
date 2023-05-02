@@ -1,5 +1,6 @@
 
 
+
 There are multiple techniques to perform a data type conversion. The technique you choose depends on your answer to two important questions:
 
 - Is it possible, depending on the value, that attempting to change the value's data type would throw an exception at run time?
@@ -56,7 +57,7 @@ This module includes hands-on activities that guide you through the process of b
 
 The C# compiler attempts to accommodate your code, but doesn't compile operations that could result in an exception. When you understand the C# compiler's primary concern, understanding why it functions a certain way is easier.
 
-### Write code that attempts to add an int and a string and save the result in an int
+### Write code that attempts to add an `int` and a `string` and save the result in an `int`
 
 1. Ensure that you have Visual Studio Code open and Program.cs displayed in the Editor panel.
 
@@ -309,18 +310,17 @@ The `Convert` class has many helper methods to convert a value from one type int
 
     You should see the following output:
 
-    
     ```Output
     35
     ```
-    
+
     > [!NOTE]
     > Why is the method name `ToInt32()`? Why not `ToInt()`? `System.Int32` is the name of the underlying data type in the .NET Class Library that the C# programming language maps to the keyword `int`. Because the `Convert` class is also part of the .NET Class Library, it is called by its full name, not its C# name. By defining data types as part of the .NET Class Library, multiple .NET languages like Visual Basic, F#, IronPython, and others can share the same data types and the same classes in the .NET Class Library.
-    
+
     The `ToInt32()` method has 19 overloaded versions allowing it to accept virtually every data type.
-    
+
     you used the `Convert.ToInt32()` method with a string here, but you should probably use `TryParse()` when possible.
-    
+
     So, when should you use the `Convert` class? The `Convert` class is best for converting fractional numbers into whole numbers (`int`) because it rounds up the way you would expect.
 
 ## Compare casting and converting a `decimal` into an `int`
@@ -356,7 +356,7 @@ When you're converting using `Convert.ToInt32()`, the literal float value is pro
 
 You covered several important concepts of data conversion and casting:
 
-- Prevent a runtime error while perform a data conversion
+- Prevent a runtime error while performing a data conversion
 - Perform an explicit cast to tell the compiler you understand the risk of losing data
 - Rely on the compiler to perform an implicit cast when performing an expanding conversion
 - Use the `()` cast operator and the data type to perform a cast (for example, `(int)myDecimal`)

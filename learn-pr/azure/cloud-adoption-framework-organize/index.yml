@@ -5,8 +5,8 @@ metadata:
   title: Use the Cloud Adoption Framework to manage organizational alignment
   description: To deliver an effective operating model for the cloud, it's important to establish appropriately staffed organizational structures. This module explores the available operational models as your organization moves from an on-premises IT environment to the cloud.
   ms.date: 05/10/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Use the Cloud Adoption Framework to manage organizational alignment

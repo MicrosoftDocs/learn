@@ -1,4 +1,5 @@
 
+
 Windows Hello for Business provides organizations with a rich set of granular policy settings with which they can use to manage their devices and users. As noted before, you can manage and deploy Windows Hello for Business by using Group Policy or by using a modern management approach, with Microsoft Intune.
 
 ### Manage Windows Hello for Business with Intune

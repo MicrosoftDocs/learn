@@ -1,3 +1,4 @@
+
 An event-driven architecture enables you to connect to the core application without needing to modify the existing code. When an event occurs, you can react with specific code to respond to the event. An event-driven application uses the _send and forget_ principle. An event is sent toward the next system, which can be another service, an event hub, a stream, or a message broker.
 
 Let's reconsider our design for the Tailwind Traders product demo application, and examine how to use a Web API that runs in Azure. When a new product review or demo video is uploaded, we need to notify all mobile apps on user devices around the world that are interested in the products. Azure Event Grid is an ideal solution for this requirement.
