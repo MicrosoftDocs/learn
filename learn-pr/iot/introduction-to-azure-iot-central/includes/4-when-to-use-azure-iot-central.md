@@ -22,7 +22,7 @@ Let's take a look at some of the criteria you should consider when determining i
 
 Apply these criteria to the requirements of the IoT solution from the example scenario introduced in the first unit. The following flowchart illustrates the decision process you'll use to determine if IoT Central can meet the needs of the retail company scenario. The decision process is based on the criteria defined in this unit.
 
-> [[IMAGE OF DECISION CRITERIA CHART]]
+:::image type="complex" source="../media/4-when-iot-central-flow-sml.png" alt-text="Diagram that summarizes the decision process for determining if Azure IoT Central is a good option for an IoT solution." border="false" lightbox="../media/4-when-iot-central-flow-lrg.png":::
 
 Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This process lets you determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
 
@@ -36,9 +36,32 @@ Now that you have the list of criteria and an illustration of the decision proce
 
 Based on the analysis of the decision criteria, IoT Central is the ideal platform to evaluate the retail company scenario and assess the opportunities it can create for the business. You also found that there's an industry-focused application template ready to be used and possible to customize afterwards.
 
-Run the following IoT Central application that uses the *In-store Analytics - Checkout* template to get a feel for what is possible:
+The following steps create an IoT Central application that uses the *In-store Analytics - Checkout* template so you can get a feel for what is possible:
 
-> [[ARM TEMPLATE HERE THAT WILL CREATE AZURE IOT CENTRAL WITH IN-STORE ANALYTICS - Checkout APPLICATION TEMPLATE]]
+1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
+
+    ```azurecli
+    APP_NAME="in-store-analytics-$RANDOM"
+    echo "Your application name is: $APP_NAME"
+    ```
+
+    Make a note of the application name just in case the shell times out and loses the environment variable.
+
+1. Run the following command in the Cloud Shell to create an IoT Central application in the sandbox:
+
+    ```azurecli
+    az iot central app create \
+    --resource-group <rgn>[sandbox resource group name]</rgn> \
+    --name $APP_NAME --sku ST2 --location centralus \
+    --subdomain $APP_NAME --template iotc-store \
+    --display-name 'Store Analytics'
+    echo "You can now navigate to: https://$APP_NAME.azureiotcentral.com/dashboards"
+
+    ```
+
+    Expect this command to take a minute or two to run.
+
+1. In another browser tab or window, navigate to the URL shown in the output of the previous command.
 
 :::image type="content" source="../media/4-store-analytics-architecture-frame.png" alt-text="Diagram of the in-store analytics application architecture." border="false":::
 
