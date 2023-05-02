@@ -31,11 +31,11 @@ products:
 subjects:
 - development-tools
 units:
-- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.introduction
-- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.get-started-test-debug-exception
-- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.examine-code-debug
-- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.examine-code-exception
-- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.knowledge-check
-- learn.wwl.review-principles-code-debugging-exception-handling-c-sharp.summary
+- learn.languages.review-principles-code-debugging-exception-handling-c-sharp.introduction
+- learn.languages.review-principles-code-debugging-exception-handling-c-sharp.get-started-test-debug-exception
+- learn.languages.review-principles-code-debugging-exception-handling-c-sharp.examine-code-debug
+- learn.languages.review-principles-code-debugging-exception-handling-c-sharp.examine-code-exception
+- learn.languages.review-principles-code-debugging-exception-handling-c-sharp.knowledge-check
+- learn.languages.review-principles-code-debugging-exception-handling-c-sharp.summary
 badge:
   uid: learn.languages.review-principles-code-debugging-exception-handling-c-sharp.badge
