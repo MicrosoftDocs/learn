@@ -8,6 +8,7 @@ Data classification is a basic way for organizations to determine and assign rel
 Large organizations such as Microsoft, governments, and military entities have been using data classification for decades to manage their data's integrity.
 
 Successful data classification requires a:
+
 - Broad awareness of an organization’s needs.
 - Thorough understanding of where an organization’s data assets are located.
 
