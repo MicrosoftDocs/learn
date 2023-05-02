@@ -20,9 +20,9 @@ If you can understand the states of your data throughout its lifecycle, together
 
 Data can be categorized into levels of classifications. When data is classified in one of these levels, it has to adhere to this classification, whatever its current state. For example, when data is classified as highly confidential, it's expected to stick to this level of classification whether it's in process, in transit, or at rest.
 
-Classification is based on the importance of the data to the business and its stakeholders. All data has some level of impact. This impact can be financial, legal, or reputational. 
+Classification is based on the importance of the data to the business and its stakeholders. All data has some level of impact. This impact can be financial, legal, or reputational.
 
-Customer data can be leaked, or a company's internal data might have been distributed online for all to access. The impact on the organization and its customers can be devastating. That's why data is classified according to its expected impact on the business and stakeholders.
+Customer data can be leaked, or a company's internal data might be distributed online for all to access. The impact on the organization and its customers can be devastating. For these reasons, data is classified according to its expected impact on the business and stakeholders.
 
 The terms for classification can vary between organizations, but they generally fall into the following levels: high, medium, and low. For example, an organization might have these three classifications:
 
