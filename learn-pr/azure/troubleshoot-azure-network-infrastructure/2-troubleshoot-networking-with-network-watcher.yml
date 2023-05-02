@@ -4,8 +4,8 @@ metadata:
   title: Troubleshoot a network by using Network Watcher monitoring and diagnostic tools
   description: In this unit, you'll learn about the features of Azure Network Watcher that you can use to diagnose problems in an Azure virtual network.
   ms.date: 09/03/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Troubleshoot a network by using Network Watcher monitoring and diagnostic tools

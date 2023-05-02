@@ -1,4 +1,4 @@
-Video games are a staple of modern-day culture. They provide entertainment, connect communities, and foster shared experiences. When accessibility efforts are intentionally included throughout the entire gaming development process, these experiences can be enjoyed by more players.
+Video games are a staple of modern-day culture. They provide entertainment, connect communities, and foster shared experiences. When accessibility efforts are intentionally included throughout the entire gaming development process, more players can enjoy these experiences.
 
 Consider the following scenario: You're a member of a new development team that wants to create experiences that are as accessible as possible for more players. Accessibility is an established core priority, but your team has little experience in the game accessibility space. They're unsure where to start. They want an approachable way to establish a foundational knowledge of accessible game, platform, and hardware development.
 
@@ -25,6 +25,6 @@ Your team wants to understand the following concepts:
 
 After you complete this module, you'll be able to:
 
- - Discuss the relationship between vision, audio, cognition, and input and gaming.
- - Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can introduce unintentional barriers for players.
- - Describe the concept of diverse player experiences and the importance of considering these experiences in gaming accessibility.
+- Discuss the relationship between vision, audio, cognition, and input and gaming.
+- Identify common visual, hearing, cognitive, and input-based elements within gaming experiences that can introduce unintentional barriers for players.
+- Describe the concept of diverse player experiences and the importance of considering these experiences in gaming accessibility.

@@ -5,8 +5,8 @@ metadata:
   title: Encrypt, deduplicate, and compress volumes
   description: Validate the process of encrypting, deduplicating, and compressing volumes.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

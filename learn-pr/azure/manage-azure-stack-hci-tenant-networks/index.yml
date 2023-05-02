@@ -4,8 +4,8 @@ metadata:
   title: 'Manage Azure Stack HCI tenant networks'
   description: Azure Stack HCI provides a highly flexible and more secure multitenant networking environment.
   ms.date: 12/28/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Manage Azure Stack HCI tenant networks'

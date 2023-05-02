@@ -1,4 +1,5 @@
 
+
 Print and web designers understand that putting too much information in a small space will overwhelm the viewer. So, they strategically use whitespace, or negative space, to break up information to maximize the viewer's ability to consume the primary message of their work.
 
 Developers can use a similar strategy when writing code in an editor. By using white space to convey meaning, developers can increase the clarity of their code's intent.
