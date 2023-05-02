@@ -1,4 +1,5 @@
 
+
 A software developer once famously said, "The hardest part of software development is naming things." Not only does the name of a variable have to follow certain syntax rules, it should also be used to make the code more human-readable and understandable. That's a lot to ask of one line of code!
 
 ## Variable name rules
@@ -18,12 +19,9 @@ Conventions are suggestions that are agreed upon by the software development com
 
 **Variable name conventions**
 
-- Variable names should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word. 
-    >For example: `string thisIsCamelCase;`.
-- Variable names should be descriptive and meaningful in your application. You should choose a name for your variable that represents the kind of data it will hold (not the data type).  
-    >For example: `bool orderComplete;`, NOT `bool isComplete;`.
-- Variable names should be one or more entire words appended together. Don't use contractions because the name of the variable may be unclear to others who are reading your code. 
-    >For example: `decimal orderAmount;`, NOT `decimal odrAmt;`.
+- Variable names should use **camel case**, which is a style of writing that uses a lower-case letter at the beginning of the first word and an upper-case letter at the beginning of each subsequent word.    >For example: `string thisIsCamelCase;`.
+- Variable names should be descriptive and meaningful in your application. You should choose a name for your variable that represents the kind of data it will hold (not the data type).     >For example: `bool orderComplete;`, NOT `bool isComplete;`.
+- Variable names should be one or more entire words appended together. Don't use contractions because the name of the variable may be unclear to others who are reading your code.    >For example: `decimal orderAmount;`, NOT `decimal odrAmt;`.
 - Variable names shouldn't include the data type of the variable. You might see some advice to use a style like `string strMyValue;`. It was a popular style years ago. However, most developers don't follow this advice anymore and there are good reasons not to use it.
 
 The example `string firstName;` follows all of these rules and conventions, assuming I want to use this variable to store data that represents someone's first name.
