@@ -26,6 +26,6 @@ Azure OpenAI's AI models can all be trained and customized with fine-tuning. We 
 
 In the Azure OpenAI Studio, you can experiment with OpenAI models in Playgrounds. You can type in prompts, and see responses without having to code.  
 
-![Screenshot of the Azure OpenAI Studio ChatGPT playground where it is possible to test some capabilities of the service without code.](../media/azure-openai-chatgpt-playground.png)
+![Screenshot of the Azure OpenAI Studio Chat playground where it is possible to test some capabilities of the service without code.](../media/azure-openai-chat-playground.png)
 
-![Screenshot of the Azure OpenAI Studio GPT-3 playground where it is possible to test some capabilities of the service without code.](../media/azure-openai-gpt-3-playground.png)
+![Screenshot of the Azure OpenAI Studio Completions playground where it is possible to test some capabilities of the service without code.](../media/azure-openai-completions-playground.png)
