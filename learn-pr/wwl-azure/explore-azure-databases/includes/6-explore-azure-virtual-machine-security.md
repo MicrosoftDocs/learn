@@ -1,3 +1,5 @@
+
+
 ## Network security
 
 For network security, consider implementing a perimeter network, with a managed or hosted firewall in front of the subnet for Web Dispatcher. For storage security, ensure that data is encrypted in transit and at rest. To encrypt Azure VM disks, you can use Azure Disk Encryption. This feature uses the BitLocker feature of Windows and DM-Crypt for Linux to provide volume encryption for the operating system and the data disks. The solution also works with Azure Key Vault to help you control and manage the disk-encryption keys and secrets. Data on the virtual machine disks are encrypted at rest in Azure storage. For SAP HANA data-at-rest encryption, we recommend using the SAP HANA native encryption technology.

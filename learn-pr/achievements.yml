@@ -1657,3 +1657,23 @@ achievements:
   title: Use MLflow to track experiments in Azure Databricks
   summary: When you run data science and machine learning experiments at scale, you can use MLflow to track experiment runs and metrics.
   iconUrl: /training/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
+- uid: learn.azure-percept.explore.badge
+  type: badge
+  title: Explore Azure Percept
+  summary: Explore Azure Percept
+  iconUrl: /training/achievements/azure-percept/explore-azure-percept.svg
+- uid: learn.azure-percept.prerequisites.badge
+  type: badge
+  title: Azure Percept prerequisites
+  summary: Azure Percept prerequisites
+  iconUrl: /training/achievements/azure-percept/azure-percept-prerequisites.svg
+- uid: learn.azure-percept.trophy
+  type: trophy
+  title: Build edge AI solutions with Azure Percept
+  summary: Build edge AI solutions with Azure Percept
+  iconUrl: /training/achievements/azure-percept/azure-percept.svg  
+- uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.badge
+  type: badge
+  title: Deploy ASP.NET web apps with Azure Pipelines
+  summary: Deploy ASP.NET web apps with Azure Pipelines
+  iconUrl: /training/achievements/deploy-aspnet-apps-azure-app-service-pipelines.svg

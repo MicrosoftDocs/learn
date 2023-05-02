@@ -1,5 +1,6 @@
 
 
+
 In this step, you'll define the method to display the results of the animal groups. You'll also complete the animal group assignments for the other visiting schools. Let's get started!
 
 ## Develop your method

@@ -15,7 +15,7 @@ quiz:
 
   questions:
 
-  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool."
+  - content: "Which of the following scenarios would likely benefit from a SQL elastic pool?"
     choices:
     - content: "You're hosting several SQL servers to track election data for a regional election."
       isCorrect: false

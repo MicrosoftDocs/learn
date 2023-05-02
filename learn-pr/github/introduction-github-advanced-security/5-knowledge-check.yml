@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check - Introduction to GitHub Advanced Security
   description: Knowledge check - Introduction to GitHub Advanced Security module
   ms.date: 1/28/2022
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 5 # user input: the estimate time to complete the unit

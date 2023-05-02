@@ -1,4 +1,5 @@
 
+
 ## Use Azure CLI and Azure PowerShell with Azure Virtual Desktop
 
 There's an Azure CLI extension and an Azure PowerShell module for Azure Virtual Desktop that you can use to create, update, delete, and interact with Azure Virtual Desktop service objects as alternatives to using the Azure portal. They're part of [Azure CLI](/cli/azure/what-is-azure-cli) and [Azure PowerShell](/powershell/azure/what-is-azure-powershell), which cover a wide range of Azure services.
