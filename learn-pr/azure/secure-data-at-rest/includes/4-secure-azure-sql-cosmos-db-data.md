@@ -14,7 +14,7 @@ Transparent data encryption ensures that an entire database is encrypted through
 
 The database encryption key is decrypted at the moment the database is started. Afterward, this same database encryption key is used to decrypt the database, and encrypt it again when the time comes.
 
-You can manually enable transparent data encryption for an SQL database on Azure, through Azure PowerShell, Transact-SQL, or the Azure portal. In the Azure portal, look for transparent data encryption under **Security** in your SQL database, and then select **ON**.
+You can manually enable transparent data encryption for an SQL database on Azure, through Azure PowerShell, Transact-SQL, or the Azure portal. In the Azure portal, select your SQL database and look for **Transparent data encryption** under **Security**. Then, select **ON**.
 
 The following example shows how you can configure transparent data encryption in the portal:
 
