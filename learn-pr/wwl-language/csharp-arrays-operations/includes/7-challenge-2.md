@@ -1,6 +1,5 @@
 
 
-
 Data comes in many formats. In this challenge you have to parse the individual "Order IDs", and output the "OrderIDs" sorted and tagged as "Error" if they are not exactly four characters in length.
 
 1. Select and delete all code lines in the Visual Studio Code Editor.
@@ -19,8 +18,6 @@ Data comes in many formats. In this challenge you have to parse the individual "
 
 1. Save and run your code
 
-```
-
     Your code must produce the following output:
 
     ```Output
@@ -33,8 +30,5 @@ Data comes in many formats. In this challenge you have to parse the individual "
     C235
     G3003   - Error
     ```
-
-> [!IMPORTANT]
-> Here's a hint: As you loop through each element in your array, you'll need a decision statement. The decision statement will need to use a method on the string class to determine if a string starts with a specific letter. If you need help, you may want to review other modules in this learning path.
 
 Whether you get stuck and need to peek at the solution or you finish successfully, continue on to view a solution to this challenge.
