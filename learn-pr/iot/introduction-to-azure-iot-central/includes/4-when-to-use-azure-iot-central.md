@@ -26,6 +26,7 @@ Apply these criteria to the requirements of the IoT solution from the example sc
 
 Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This process lets you determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
 
+
 | Criteria | Requirement | Use Azure IoT Central? |
 | --- | --- | --- |
 | **Experience** | As stated in our scenario, your team don't have experience working on IoT projects. Therefore, the solution you design has to account for lack of skills and experience. | Yes |
