@@ -61,7 +61,7 @@ The following steps create an IoT Central application that uses the *In-store An
 
     Expect this command to take a minute or two to run.
 
-1. In another browser tab or window, navigate to the URL shown in the output of the previous command.
+1. In another browser tab or window, navigate to the URL shown in the output of the previous command. Wait for a minute or two before start seeing simulated data on the dashboards.
 
 :::image type="content" source="../media/4-store-analytics-architecture-frame.png" alt-text="Diagram of the in-store analytics application architecture." border="false":::
 

@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-iot-central.when-to-use-azure-iot-central
 title: When to use Azure IoT Central
+sandbox: true
+interactive: bash
 metadata:
   title: When to use Azure IoT Central
   description: Learn when to use Azure IoT Central.
