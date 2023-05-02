@@ -15,6 +15,15 @@ The company that develops the software had secure build and updated integrity pr
 Many applications now include auto-update functionality, where updates are downloaded without sufficient integrity verification and applied to the previously trusted application.
 Supply chain verification suggests depending only on vetted and verified libraries and components.
 
+:::row:::
+    :::column:::
+        :::image type="content" source="../media/devops-metrics.png" alt-text="Microsoft Defender for DevOps":::
+    :::column-end:::
+    :::column:::
+        Leverage automation when possible. Explore free and vendor offerings for CI/CD integrated security tooling. An example could be Defender for DevOps [extension for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms-securitydevops.microsoft-security-devops-azdevops), bringing credential, dependency and static analysis scanning to your workflow.
+    :::column-end:::
+:::row-end:::
+
 ### Code Review Notes
 
 As you and your team adopt secure CI/CD practices, you want to make sure:

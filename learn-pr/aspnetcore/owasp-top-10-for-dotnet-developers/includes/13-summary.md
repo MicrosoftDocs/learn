@@ -9,44 +9,16 @@ We started by explaining the threat landscape and complexity associated with mod
 
 No matter if you are designing a brand new green field application or contributing to large-scale open source project best, security principles apply. Shift security left and conduct security requirement and design reviews, perform threat modeling, use automation to scan for vulnerabilities as you write code (with static code analysis tools) and as part of the CI/CD process. Follow compartmentalization best practices zero trust and least-privilege principles.
 
-:::row:::
-    :::column:::
-        :::image type="content" source="../media/devops-metrics.png" alt-text="Microsoft Defender for DevOps":::
-    :::column-end:::
-    :::column:::
-        Leverage automation when possible. Explore free and vendor offerings for CI/CD integrated security tooling. An example could be Defender for DevOps [extension for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms-securitydevops.microsoft-security-devops-azdevops), bringing credential, dependency and static analysis scanning to your workflow.
-    :::column-end:::
-:::row-end:::
-
 The developers shouldn't only be focusing on just their own code. Single codebase monolith applications of the past give place to microservice architecture. Distributed applications are made up of lots of moving parts, all of which are integral to their operation.
 
-:::row:::
-    :::column:::
-        Whether with Azure DevOps, GitHub Advanced Security or any other service, remember to
-        - Shift security left by automatically finding vulnerabilities early in your development workflows
-        - Ensure the security and compliance of your open source components
-        - Bring the expertise of top security researchers to your software projects
-    :::column-end:::
-
-    :::column:::
-        :::image type="content" source="../media/dependency-graph.png" alt-text="GitHub Advanced Security":::
-    :::column-end:::
-:::row-end:::
-
 Shift left security. Don't treat security as an afterthought. The sooner you start addressing security considerations the easier and cheaper it is to implement them.
-Remember the Zero Trust principles and apply them in your apps in systems:
-
--**Verify explicitly.** Always authenticate and authorize based on all available data points, including user, application and device identity, location etc.
-
--**User least privilege access.** Limit user, application, and device access with granular permissions, role assignments, just-in-time and just-enough-access (JIT/JEA).
-
--**Assume breach.** Mentality help minimize the blast radius for breaches and prevent lateral movement. Enable swift replacement and rotation of credentials. Keep sessions, network access, and data encrypted end to end. Build and test durable and repeatable backup and restore processes. Avoid insecure legacy authentication and authorization protocols.
+Remember the Zero Trust principles and apply them in your apps in systems
 
 Security code reviews, automation of security checks with SAST, DAST and SCA, and threat modeling can identify most of the OWASP Top 10 items.
 
-Be on a look out for unverified user input.
+**Be on a look out for unverified user input.**
 
-Security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code. Try thinking about the design. What files you include in the project? What choices do you make about libraries you reference in your code? How do you handle security and authorization? Where do you store and build your code? How you deploy the application?
+Finally, security is a journey, not a destination. With the right mindset, you can improve the quality and security standpoint of an application before you’ve even written a single line of code. Try thinking about the design. What files you include in the project? What choices do you make about libraries you reference in your code? How do you handle security and authorization? Where do you store and build your code? How you deploy the application?
 
 ## Learn more
 

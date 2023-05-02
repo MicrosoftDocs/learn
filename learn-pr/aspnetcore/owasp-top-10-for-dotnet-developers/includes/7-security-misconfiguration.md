@@ -13,12 +13,12 @@ Security misconfiguration can manifest itself in many places, from `web.config` 
 :::image type="content" source="../media/pipeline.png" alt-text="Azure DevOps Library linked with Azure KeyVault":::
 
 The example above demonstrates one of many native integrations between Azure DevOps and Azure Cloud where Azure DevOps Library is linked with Azure KeyVault to securely access secret pipeline parameters.
-Secret values should never be found in codebase. The same practice applies to infrastructure as code (IaC) release workflows and CI/CD services themselves.
+Secret values should never be found in a codebase. The same practice applies to infrastructure as code (IaC) release workflows and CI/CD services themselves.
 
 As the new addition to the team, be on a lookout for default accounts and their passwords being enabled and unchanged. Use secure settings for your application servers, frameworks, libraries and databases. As you familiarize yourself with your team's codebase take this opportunity to remove any unused features, components, accounts or services from your applications.
 
 ### Code Review Notes
 
-As you review the code, configuration and deployment settings you noticed separate set of credentials and configuration for development, QA and production environments. Your web app takes advantage of Azure KeyVault for storing, and if need be rotating, secrets like connection strings and API keys. You also noticed lack of any e Dynamic Application Security Testing (DAST) pipeline tasks that can help with  detection of misconfigurations. You're planning to explore Marketplace for potential tools.
+As you review the code, configuration, and deployment settings, you noticed a separate set of credentials and configuration for development, QA and production environments. Your web app takes advantage of Azure KeyVault for storing and rotating secrets like connection strings and API keys. You also noticed a lack of any Dynamic Application Security Testing (DAST) pipeline tasks that can help with detecting misconfigurations. You're planning to explore the Azure Marketplace for potential tools.
 
 Security is everyone's responsibility, it's shared between cloud provider and you, application developers and architects.
