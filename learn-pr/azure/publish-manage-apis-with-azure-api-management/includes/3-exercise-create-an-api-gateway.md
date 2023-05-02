@@ -81,11 +81,11 @@ The final task in this exercise is to create an API gateway in the Azure portal.
     | Region | Select an available region. |
     | Resource Name | `apim-NorthWindShoes<random number>`, replacing `random number` with your own series of numbers to ensure that the name is globally unique. |
     | Organization Name | `NorthWindShoes`. The name of your organization for use in the developer portal and email notifications.|
-    | Administrator Email | The email address to receive all system notifications. |
+    | Administrator Email | The email address to receive all system notifications. You can enter your own email address.  |
     | Pricing Tier | `Consumption` |
 
    > [!NOTE]
-   > The consumption plan is much faster to generate output during the testing process. The overall experience is similar to the other pricing tiers.
+   > The Consumption tier is much faster to generate output during the testing process. The overall experience is similar to the other pricing tiers.
 
 1. Select **Review + create** to validate your settings.
 
