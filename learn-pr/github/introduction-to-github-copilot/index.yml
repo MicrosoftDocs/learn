@@ -1,0 +1,87 @@
+### YamlMime:Module
+uid: learn.introduction-to-github-copilot
+metadata:
+  title: Introduction to GitHub Copilot          # Do not edit: title must be "Introduction to (product)"
+  description: "TODO"             # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 2/6/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: a-a-ron      # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: a-a-ron           # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
+  ms.prod: learning-azure         # Edit as appropriate for your portfolio area
+###########################################################################
+###
+### Do not edit: title must be "Introduction to (product)"
+###
+title: Introduction to GitHub Copilot
+
+## Introduction
+
+GitHub Copilot is an Artificial Intelligence (AI) pair programmer that suggests code in your editor including GitHub.com, Visual Studio Code, Visual Studio, JetBrains IDEs, and Neovim as an unobtrusive extension.
+
+## Learning objectives
+
+By the end of this module, you'll be able to:
+
+- Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions
+- Enable GitHub Copilot for Business for your enterprise
+- Learn how to configure GitHub Copilot
+- Troubleshoot GitHub Copilot
+
+## Prerequisites
+
+- A GitHub account
+- Introduction to GitHub
+- Communicate effectively on GitHub by using Markdown
+- Introduction to GitHub Administration
+
+###########################################################################
+###
+### Do not edit: will be replaced by the module icon when available
+###
+iconUrl: /learn/achievements/generic-badge.svg
+###########################################################################
+###
+### Do not edit: level must be 'beginner'
+###
+levels:
+  - beginner
+###########################################################################
+###
+### Specify the target roles.
+### Use value(s) from the role taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role)
+###
+roles:
+  - developer
+###########################################################################
+###
+### Specify the covered products.
+### Use value(s) from the product taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product)
+###
+products:
+- github
+###########################################################################
+###
+### Specify the subject areas.
+### Use value(s) from the subject taxonomy (https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject)
+###
+subjects:
+  - cloud-computing
+###########################################################################
+###
+### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
+###
+units:
+- learn.introduction-to-github-copilot.introduction
+- learn.introduction-to-github-copilot.about-{product}
+- learn.introduction-to-github-copilot.using-{product}
+- learn.introduction-to-github-copilot.enable-github-{product}-for-business-enterprise
+- learn.introduction-to-github-copilot.configure-{product}
+- learn.introduction-to-github-copilot.troubleshoot-{product}
+- learn.introduction-to-github-copilot.knowledge-check
+- learn.introduction-to-github-copilot.summary
+###########################################################################
+###
+### TODO verify your badge
+###
+badge:
+  uid: learn.introduction-to-github-copilot.badge
