@@ -8,7 +8,7 @@ Microsoft-hosted agents are preconfigured virtual machines provided and managed 
 
 Agent pools are groups of agents that can be shared across multiple projects and pipelines. By organizing your agents into pools, you can manage their access and permissions more efficiently, ensuring that your projects and pipelines remain secure.
 
-## Security best practices for Microsoft-hosted agents and agent pools
+### Applying the principle of least privilege in Azure DevOps
 
 To maintain a secure environment in Azure DevOps, it's essential to follow security best practices when configuring Microsoft-hosted agents and agent pools. Some key security considerations include:
 
@@ -17,7 +17,7 @@ To maintain a secure environment in Azure DevOps, it's essential to follow secur
 - **Securing secrets:** Ensure that secrets like API keys, passwords, and tokens are securely stored using Azure Key Vault or another secure storage solution. Avoid storing secrets in plain text or in code repositories.
 - **Regularly review permissions:** Periodically review and update permissions for users and groups to ensure that they have the appropriate level of access based on their current roles and responsibilities.
 
-# Configuring permissions for Microsoft-hosted agent pools
+## Configuring permissions for Microsoft-hosted agent pools
 
 To configure permissions for Microsoft-hosted agent pools:
 

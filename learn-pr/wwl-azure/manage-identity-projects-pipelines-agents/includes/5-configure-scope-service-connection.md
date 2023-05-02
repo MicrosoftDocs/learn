@@ -35,6 +35,7 @@ Execute the pipeline and verify that it runs successfully, accessing the externa
 
 For more information about service connections, see:
 
+- [Use Azure Active Directory service principals & managed identities](https://learn.microsoft.com/azure/devops/integrate/get-started/authentication/service-principal-managed-identity)
 - [Azure Pipelines agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/agents/)
 - [Microsoft-hosted agents.](https://learn.microsoft.com/azure/devops/pipelines/agents/hosted/)
 - [Create and manage agent pools.](https://learn.microsoft.com/azure/devops/pipelines/agents/pools-queues/)

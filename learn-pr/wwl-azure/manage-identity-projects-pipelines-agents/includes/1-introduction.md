@@ -6,11 +6,11 @@ In this module, learn the importance of managing identity for projects, pipeline
 
 After completing this module, students and professionals can:
 
-- Configure Microsoft-hosted agents and pools
-- Configure agents for projects
-- Configure agent identities
-- Configure the scope of a service connection
-- Convert to a managed identity in Azure DevOps
+- Configure Microsoft-hosted agents and pools.
+- Configure agents for projects.
+- Configure agent identities.
+- Configure the scope of a service connection.
+- Convert to a managed identity in Azure DevOps.
 
 ### Prerequisites
 
