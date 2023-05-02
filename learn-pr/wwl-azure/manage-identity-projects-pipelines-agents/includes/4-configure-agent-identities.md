@@ -14,7 +14,7 @@ There are two types of agent identities:
 Managed identities provide several benefits when used in Azure DevOps:
 
 - **Improved security:** They eliminate the need to store sensitive credentials in your pipeline, reducing the risk of credential exposure.
-- **Simplified management:** You can manage identities though Azure, reducing the overhead of identity management in Azure DevOps.
+- **Simplified management:** You can manage identities through Azure, reducing the overhead of identity management in Azure DevOps.
 - **Fine-grained access control:** Managed identities allow you to define the exact permissions and access levels required for your pipelines and agents.
 - **Auditing and monitoring:** Authentication and authorization events are logged, making it easier to track access and detect potential security threats.
 
