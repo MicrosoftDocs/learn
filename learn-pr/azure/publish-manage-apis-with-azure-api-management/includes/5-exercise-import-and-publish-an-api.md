@@ -5,15 +5,15 @@ You're now ready to import and publish an API so that partners can access invent
 Here, you'll import an API that exposes an OpenAPI endpoint. You'll test the imported API using visualization, and then publish the API.
 
  > [!NOTE]
- > This exercise uses the resources in the active sandbox together with resources that you set up in the previous exercise. 
+ > This exercise uses the resources that you set up in the previous exercise.
 
 ## Import the API
 
-The first part of the exercise is to import Northwind Shoes into an API Management gateway.
+The first part of the exercise is to import the NorthWind Shoes API into an API Management gateway.
 
 1. In the Azure portal resource menu or from the **Home** page, select **All Resources**, and then select your API Management service.
 
-1. In the API Management service menu, under **APIs**, select **APIs**. The **APIS** pane appears.
+1. In the API Management service menu, under **APIs**, select **APIs**. The **APIs** pane appears.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** pane appears.
 
