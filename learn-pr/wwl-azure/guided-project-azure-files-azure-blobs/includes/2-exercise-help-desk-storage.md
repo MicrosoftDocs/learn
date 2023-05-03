@@ -8,10 +8,11 @@ The IT department needs to prototype different storage scenarios and to train ne
 | --- | --- |
 | :::image type="content" source="../media/task1.png" alt-text="Diagram with one storage account." border="true"::: | <ul><li>Establish a naming convention. </li><li> Create a storage account. </li><li>Configure basic settings for security and networking. </li></ul> |
 
+
+**Exercise instructions**
+
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
-
-**Lab instructions**
 
 1. Create and deploy a resource group to hold all your guided project resources. [Learn more about resource groups](/azure/azure-resource-manager/management/manage-resource-groups-portal)
     - In the Azure portal, search for and select **Resource groups**.
