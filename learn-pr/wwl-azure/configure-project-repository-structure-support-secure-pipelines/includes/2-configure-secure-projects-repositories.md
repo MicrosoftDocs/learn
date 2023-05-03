@@ -101,12 +101,19 @@ You can separate a project into multiple team projects to organize work and mana
 To separate a project into two or more team projects:
 
 1. Log in to your Azure DevOps account and navigate to the project you want to separate.
+
 2. Click on the **Project settings** icon in the lower left corner of the left-hand navigation menu.
+
 3. In the **Project settings** menu, select **Overview** and then click on **Create team project**.
+
 4. In the **Create a team project** dialog box, enter a name for the new team project and select the process template you want to use. You can also choose whether to copy settings from the existing project to the new team project.
+
 5. Click **Create** to create the new team project.
+
 6. You can now switch between the different team projects by clicking on the **Project** drop-down menu in the upper left corner of the Azure DevOps interface.
+
 7. You can manage permissions and settings for each team project separately by going to the **Project settings** menu and selecting the appropriate team project.
+
 8. You can also set up cross-project communication and collaboration by adding users or groups from other team projects to your current team project.
 
 ## Separate a project into several repositories
@@ -116,13 +123,21 @@ As a Project Admin, you have the ability to create, delete and rename repositori
 To create multiple repositories in a project, you can follow these steps:
 
 1. Sign in to your Azure DevOps account and navigate to the project where you want to create the repositories.
+
 2. Click on the **Repos** option in the left-hand menu.
+
 3. Click on the **+ New repository** button.
+
 4. Choose **Git** as the type of repository you want to create.
+
 5. Enter a name for your repository and a description if desired.
+
 6. Choose whether you want to create the repository in a new or existing project. If you choose to create the repository in an existing project, select the project from the dropdown menu.
+
 7. Choose whether you want to add a README file to the repository or not.
+
 8. Click on the **Create** button to create the repository.
+
 9. Repeat steps 3-8 to create additional repositories as needed.
 
 > [!NOTE]
