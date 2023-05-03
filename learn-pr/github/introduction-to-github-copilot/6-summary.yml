@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-github-copilot.summary
+uid: learn.github.introduction-to-github-copilot.summary
 title: Summary
 metadata:
   title: summary
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 2/6/2023
+  description: Review what you've learned.
+  ms.date: 5/2/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: github
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

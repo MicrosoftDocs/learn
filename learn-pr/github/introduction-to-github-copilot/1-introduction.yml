@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-github-copilot.introduction
+uid: learn.github.introduction-to-github-copilot.introduction
 title: Introduction
 metadata:
   title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 2/6/2023
+  description: "GitHub Copilot is an AI pair programmer that offers autocomplete-style suggestions as you code. You can receive suggestions from GitHub Copilot either by starting to write the code you want to use, or by writing a natural language comment describing what you want the code to do."
+  ms.date: 5/2/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: github
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

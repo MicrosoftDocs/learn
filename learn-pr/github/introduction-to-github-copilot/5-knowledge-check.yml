@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-github-copilot.knowledge-check
+uid: learn.github.introduction-to-github-copilot.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 2/6/2023
+  description: Check what you've learned.
+  ms.date: 5/2/2023
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: github
 durationInMinutes: 5
 ###########################################################################
 
@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: “What is GitHub Copilot?”
+  - content: “What is GitHub Copilot”?
     choices:
     - content: “GitHub Copilot is an AI pair programmer that you can use to get code suggestions.”
       isCorrect: true
@@ -29,19 +29,19 @@ quiz:
       explanation: "JavaScript is well represented in public repositories and is one of GitHub Copilot's best supported languages."
     - content: "GitHub Copilot can write a comment describing logic and you can add your suggested code to implement the solution."
       isCorrect: false
-      explanation: "You can write a comment describing the logic you want and GitHub Copilot will immediately suggest code to implement the solution."
-  - content: “What are GitHub Copilot’s supported integrated development environments extensions?”
+      explanation: "You can write a comment describing the logic you want and GitHub Copilot displays suggested code to implement the solution."
+  - content: “What are the supported integrated development environment extensions for GitHub Copilot?”
     choices:
     - content: “Visual Studio Code and Visual Studio”
       isCorrect: false
-      explanation: “Although these two IDEs are support by GitHub Copilot there are more IDEs the platform supports than just these two”
-    - content: “GitHub.com, Visual Studio Code, Visual Studio, Neovim, and Jetbrains”
+      explanation: “Although these two IDEs are support by GitHub Copilot, platform supports than just these two IDEs.”
+    - content: “GitHub.com, Visual Studio Code, Visual Studio, Neovim, and Jet brains”
       isCorrect: false
-      explanation: “Although GitHub.com is supported, it does not need an extension.”
-    - content: “Visual Studio Code, Visual Studio, Neovim, and Jetbrains”
+      explanation: “Although GitHub.com is supported, it doesn't need an extension.”
+    - content: “Visual Studio Code, Visual Studio, Neovim, and Jet brains”
       isCorrect: true
-      explanation: "Correct! All of the IDEs listed above have supported GitHub extensions."
-  - content: “What is GitHub X?”
+      explanation: "Correct! All of the IDEs listed have supported GitHub extensions."
+  - content: “What is GitHub X”?
     choices:
     - content: “GitHub's vision for the future of AI-powered software development.”
       isCorrect: true

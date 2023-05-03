@@ -1,8 +1,8 @@
 :::image type="content" source="../media/github-copilot.png" alt-text="The logo icon for GitHub Copilot that shows the copilot icon in the middle with a blue and green swirl around the logo." border="false":::
 
-It's no secret that AI is disrupting the technology landscape. AI is profoundly changing the way the world works and how each organization and team operate. These advancements in AI will serve as a catalyst and dramatically improve the productivity of developers around the world if we use and apply it well.
+It's no secret that AI is disrupting the technology landscape. AI is profoundly changing the way the world works and how each organization and team operate. These advancements in AI serve as a catalyst and dramatically improve the productivity of developers around the world as we use and apply it well.
 
-When it comes to developers, adding AI features to the developer tools you use and love will help you collaborate, develop, test, and ship your products faster and more efficiently than ever before.
+When it comes to developers, adding AI features to the developer tools you use and love helps you collaborate, develop, test, and ship your products faster and more efficiently than ever before.
 
 GitHub Copilot is a service that provides you with an AI pair programmer that works with all of the popular programming languages and dramatically accelerates overall developer productivity. In recent research, GitHub and Microsoft have found that developers experience a significant productivity boost when working on real world projects and tasks when using GitHub Copilot. In fact, in less than two years since its launch, developers have experienced the following while using GitHub Copilot.
 
@@ -10,13 +10,13 @@ GitHub Copilot is a service that provides you with an AI pair programmer that wo
 - 55% faster overall developer productivity
 - 74% of developers feel more focused on satisfying work
 
-Developed in collaboration with OpenAI, GitHub Copilot is powered by OpenAI Codex, an AI system created by OpenAI. OpenAI Codex has broad knowledge of how people use code and is significantly more capable than GPT-3 in code generation, in part, because it was trained on a data set that includes a much larger concentration of public source code.
+Developed in collaboration with OpenAI, GitHub Copilot is powered by OpenAI Codex, an AI system created by OpenAI. OpenAI Codex has broad knowledge of how people use code and is more capable than GPT-3 in code generation, in part, because it was trained on a data set that includes a larger concentration of public source code.
 
 GitHub Copilot is available as an extension for Visual Studio Code, Visual Studio, Neovim, and the JetBrains suite of integrated development environments (IDEs).
 
 ## GitHub Copilot X
 
-GitHub Copilot started a new age of software development as an AI pair programmer that keeps developers in the flow by auto-completing comments and code, but AI-powered auto-completion is just the starting point. GitHub Copilot X is the vision for the future of AI-powered software development adopting OpenAI's newest GPT-4 models. Below are some of the upcoming features with GitHub Copilot X.
+GitHub Copilot started a new age of software development as an AI pair programmer that keeps developers in the flow by autocompleting comments and code, but AI-powered autocompletion is just the starting point. GitHub Copilot X is the vision for the future of AI-powered software development adopting OpenAI's newest GPT-4 models.
 
 GitHub Copilot X extends past the editor and into a readily accessible AI assistant throughout the entire development life cycle.
 
@@ -24,7 +24,7 @@ Here are some features you can expect from GitHub Copilot X coming soon.
 
 ### A ChatGPT-like experience in your editor with GitHub Copilot Chat
 
-Copilot X will bring a chat interface to the editor that’s focused on developer scenarios and natively integrates with VS Code and Visual Studio. It recognizes what code a developer has typed, what error messages are shown, and it’s deeply embedded into the IDE. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
+Copilot X brings a chat interface to the editor that’s focused on developer scenarios and natively integrates with VS Code and Visual Studio. It recognizes what code a developer has typed, what error messages are shown, and it’s deeply embedded into the IDE. A developer can get in-depth analysis and explanations of what code blocks are intended to do, generate unit tests, and even get proposed fixes to bugs.
 
 ### Copilot for Pull Requests
 
