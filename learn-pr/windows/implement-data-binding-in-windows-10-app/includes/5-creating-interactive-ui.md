@@ -119,13 +119,13 @@ In the next lesson, we examine how you can use data binding to display multiple 
 
 ![Tech logo.](../media/tech-wpf.png)
 
-In the previous lessons, you built a simple form UI, prompting the user to enter a name and, with a button, to display a greeting. In this lesson, you'll make the form a bit more user-friendly by disabling or hiding the **Submit** button until at least three characters have been entered.
+In the previous lessons, you created a simple form UI, prompting the user to enter a name and, with a button, display a greeting. In this lesson, you'll make the form a bit more user-friendly by disabling or hiding the **Submit** button until at least three characters have been entered.
 
 First, let's examine exactly when the `MainWindowDataContext.UserName` value is set through the binding.
 
 #### 1. Place a breakpoint
 
-Open the MainWindowDataContext.cs file, and find the line that contains the `UserName` property.
+Open the `MainWindowDataContext.cs` file, and find the line that contains the `UserName` property.
 
 ```cs
 public string UserName { get; set; }
@@ -143,10 +143,10 @@ Stop debugging by pressing Shift+F5 or selecting **Debug / Stop Debugging**.
 
 To provide accurate feedback on when the **Submit** button is enabled, we can't wait until focus is lost on the `TextBox`. Luckily, there's a way to change the behavior of the binding. You can force it to update the `UserName` property (which is the source, as we're talking about a `TwoWay` binding) whenever the text property changes. We need to change the `UpdateSourceTrigger` of the binding, which is set to `LostFocus` by default. `UpdateSourceTrigger` defines the circumstance that causes the source to be updated.
 
-Open MainWindow.xaml, and find the `TextBox`. Then, change the binding by adding `UpdateSourceTrigger=PropertyChanged`. The entire `TextBox` tag now should look like the following:
+Open `MainWindow.xaml`, and find the `TextBox`. Then, change the binding by adding `UpdateSourceTrigger=PropertyChanged`. The entire `TextBox` tag now should look like the following:
 
 ```xml
-<TextBox Name="tbUserName" 
+<TextBox Name="tbName" 
          Margin="10" 
          Width="150" 
          VerticalAlignment="Center" 
@@ -155,25 +155,25 @@ Open MainWindow.xaml, and find the `TextBox`. Then, change the binding by adding
 
 If you debug the app now, you can see that the breakpoint gets hit with every keystroke and text change. Great!
 
-You might recall that when we used UI-to-UI binding to display the greeting, every keystroke fired off the binding. In that case, the binding was defined on the `TextBlock`, and therefore the source was the `TextBox.Text` property, which does change with every keystroke. `UpdateSourceTrigger` affects data flow in the other direction: from the binding source to the control the binding is defined on (the binding target).
+You might recall that when we used UI-to-UI binding to display the greeting, every keystroke triggered the binding. In that case, the binding was defined on the `TextBlock`, and therefore the source was the `TextBox.Text` property, which does change with every keystroke. `UpdateSourceTrigger` affects data flow in the other direction: from the binding source to the control the binding is defined on (the binding target).
 
 #### 5. Add the `IsSubmitAllowed` property
 
-Next, you add a Boolean property that indicates whether submitting the form is allowed. Open MainWindowDataContext.cs, and add a new property to the `MainWindowDataContext` class.
+Next, you add a Boolean property that indicates whether submitting the form is allowed. Open `MainWindowDataContext.cs` and add a new property to the `MainWindowDataContext` class.
 
 ```cs
-public bool IsSubmitAllowed => !string.IsNullOrEmpty(UserName);
+public bool IsSubmitAllowed => !string.IsNullOrWhiteSpace(UserName);
 ```
 
-This is a very simple validation: if the text entered is not null or empty, we accept it as a username.
+This is a very simple validation: if the text entered is not null, empty or solely white-space characters, we accept it as a username.
 
 #### 6. Re-evaluate `IsSubmitAllowed` after every change to `UserName`
 
-We have to tell the UI framework when to re-evaluate this property and reflect it on the UI. The best way to do this is to call `RaisePropertyChanged` in the setter of the `UserName` property. To be able to add code to the setter, it needs to be converted to a full property. Replace the `UserName` property with the following:
+We have to advise the UI framework when to re-evaluate this property and reflect it on the UI. The best way to do this is to call `RaisePropertyChanged` in the setter of the `UserName` property. To be able to add code to the setter, it needs to be converted to a full property. Replace the `UserName` property with the following:
 
 ```cs
-private string _userName;
-public string UserName
+private string? _userName;
+public string? UserName
 {
     get { return _userName; }
     set
@@ -184,11 +184,11 @@ public string UserName
 }
 ```
 
-Note that we don't use `INotifyPropertyChanged` for this property, because we still don't have a situation where the `UserName` property is changed from the code. However, every time the text changes in the `TextBox`, we have to tell the UI that the `IsSubmitAllowed` property might have changed and should be re-evaluated.
+Note that we don't use `INotifyPropertyChanged` for this property. That's because we still don't have a situation where the `UserName` property is changed from the code. However, every time the text changes in the `TextBox`, we have to tell the UI that the `IsSubmitAllowed` property might have changed and should be re-evaluated.
 
 #### 7. Bind the `IsSubmitAllowed` property to the button's `IsEnabled` property
 
-Now you're done with the code. Head back to MainPage.xaml and find the **Submit** button. Add the `IsEnabled` attribute so that the button's XAML now looks like the following:
+Now you're done with the code. Head back to `MainWindow.xaml` and find the **Submit** button. Add the `IsEnabled` attribute so that the button's XAML now looks like the following:
 
 ```xml
 <Button Margin="10" 
@@ -201,13 +201,13 @@ Now you're done with the code. Head back to MainPage.xaml and find the **Submit*
 
 If you run the app now, you should see that the **Submit** button is disabled by default. It will be enabled as soon as you type something in it.
 
-While this example performs some validation, Windows Presentation Foundation (WPF) has a rich set of validation features that will be shown in a later module.
+While this example performs some basic validation, WPF has a rich set of validation features that will be demonstrated in a subsequent module.
 
 ![Screenshot of app, with Submit button disabled.](../media/submit-disabled_wpf.png)
 
 ### Summary
 
-In this lesson, you've seen how binding can be debugged. You have learned about the `UpdateSourceTrigger` binding option, and have seen further examples of data binding. You've also seen an example of how the look and behavior of the UI can be changed without touching the C# code, if you're using data binding properly.
+In this lesson, you've seen how bindings can be debugged. You have learned about the `UpdateSourceTrigger` binding option, and have seen further examples of data binding. You've also seen an example of how, if you're using data binding properly, the look and behavior of the UI can be changed without touching the C# code.
 
 In the next lesson, we examine how you can use data binding to display multiple items in a list.
 

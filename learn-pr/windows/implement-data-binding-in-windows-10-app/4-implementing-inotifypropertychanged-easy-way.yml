@@ -4,7 +4,7 @@ uid: learn-windows.windows-10-ui-and-data.4-implementing-inotifypropertychanged-
 metadata:
   title: Implementing INotifyPropertyChanged the easy way
   description: Learn a useful technique to make data binding easier in your Windows app.
-  ms.date: 10/18/2022
+  ms.date: 05/03/2023
   displayType: one-Column
   author: QuinnRadich
   ms.author: quradic
