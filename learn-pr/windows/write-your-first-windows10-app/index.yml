@@ -4,8 +4,8 @@ metadata:
   title: Write your first Windows 10 application
   description: Learn how to create apps in the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
   ms.date: 12/10/2018
-  author: PeterTurcan
-  ms.author: v-pettur
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Write your first Windows 10 application

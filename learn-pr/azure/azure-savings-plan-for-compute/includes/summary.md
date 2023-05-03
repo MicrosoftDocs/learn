@@ -1,4 +1,4 @@
-In this module, you've learned how you can leverage Azure savings plan for compute to help your company optimize their recurring charges for Azure resources. Following your recommendation, the company successfully transitioned to the new pricing model, realizing significant cost savings. 
+In this module, you've learned how you can use Azure savings plan for compute to help your company optimize their recurring charges for Azure resources. Following your recommendation, the company successfully transitioned to the new pricing model, realizing significant cost savings. 
 
 #### References
 

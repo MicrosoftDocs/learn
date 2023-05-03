@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/24/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ durationInMinutes: 5
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following consistency levels below offers the greatest throughput?"
+  - content: "Which of the following consistency levels offers the greatest throughput?"
     choices:
     - content: "Strong"
       isCorrect: false
@@ -24,3 +24,14 @@ quiz:
     - content: "Eventual"
       isCorrect: true
       explanation: "Correct. The eventual consistency level offers the greatest throughput at the cost of weaker consistency."
+  - content: "What are request units (RUs) in Azure Cosmos DB?"
+    choices:
+    - content: "A unit of measurement used to express the cost of all database operations in Azure Cosmos DB."
+      isCorrect: true
+      explanation: "Correct. RUs represent the normalized cost of all database operations in Azure Cosmos DB, including writes, point reads, and queries."
+    - content: "A unit of time used to measure the duration of database operations."
+      isCorrect: false
+      explanation: "Incorrect. RUs represent system resources such as CPU, IOPS, and memory that are required to perform the database operations supported by Azure Cosmos DB."
+    - content: "A unit of storage used to measure the amount of data stored in Azure Cosmos DB."
+      isCorrect: false
+      explanation: "Incorrect. RUs represent the cost of all database operations in Azure Cosmos DB, not the amount of data stored."

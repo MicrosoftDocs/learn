@@ -1,4 +1,3 @@
-## Explore Microsoft Purview Audit (Premium)
 
 In the Microsoft Purview Audit (Standard) module, you learned that the Unified Audit Log (UAL) provides organizations with the ability to log and search for audited activities. It also enables an organization to power its forensic, IT, compliance, and legal investigations.
 

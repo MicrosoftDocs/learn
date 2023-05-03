@@ -5,8 +5,8 @@ metadata:
   title: Design a conceptual architecture with private and hybrid cloud deployment models
   description: Overview of the available services on Azure for protecting data based on a typical data classification.
   ms.date: 02/08/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

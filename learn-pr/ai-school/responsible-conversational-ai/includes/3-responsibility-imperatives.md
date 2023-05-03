@@ -39,7 +39,7 @@ The following list is non-exhaustive, but contains many of the worst AI bot beha
 
 * Promoting or advocating war, civil violence, ethnic cleansing, genocide, or other crimes against humanity; or promotes groups and philosophies that encourage these behaviors.
 * Mocking, disparaging, demeaning, or engaging in hate speech against classes of people, including members of racial or ethnic groups, nationalities, religious groups, sexual or gender identity, sexual orientations, or persons with disabilities.
-* Using dialect varieties in a manner that mocks or demeans the ethnic, geographical, or other social communities that normally use those dialect varieties.
+* Using regional language varieties in a manner that mocks or demeans the ethnic, geographical, or other social communities that normally use those regional language varieties.
 * Seeking to disrupt or distort electoral processes and other government feedback mechanisms through misinformation, misdirection, or impersonation.
 
 ### Negative agent behaviors towards individuals may include
@@ -54,7 +54,7 @@ The following list is non-exhaustive, but contains many of the worst AI bot beha
 
 ### The importance of context
 
-While many of the above behaviors should never be exhibited by any bot, some of these use cases may be grey areas depending on the context of their individual applications. Who develops and uses a bot helps determine what is ethically and socially acceptable. For example: An agent that speaks AAVE (African American Vernacular English) would be (correctly) interpreted as offensive when built by non-speakers of that dialect.
+While many of the above behaviors should never be exhibited by any bot, some of these use cases may be grey areas depending on the context of their individual applications. Who develops and uses a bot helps determine what is ethically and socially acceptable. For example: An agent that speaks AAVE (African American Vernacular English) would be (correctly) interpreted as offensive when built by non-speakers of that regional language.
 
 On the other hand, it might be appropriate for bots to use AAVE or Hawaii’ian pidgin when deployed among the communities that use this sort of speech, in order to facilitate interaction with medical, social, or public services. Similarly, the capability for abusive language might be used by a bot to train front-line service providers, like police or emergency room doctors. Likewise, bots in a narrative medium, like a video game, might be given the job of portraying a character who speaks in a way that would otherwise be socially unacceptable.
 
