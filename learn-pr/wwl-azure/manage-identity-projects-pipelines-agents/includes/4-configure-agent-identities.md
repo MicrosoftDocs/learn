@@ -1,4 +1,4 @@
-In this unit, learn how to configure self-hosted agent identities. These features provide a secure alternative to personal access tokens (PATs) for authentication and authorization in Azure DevOps.
+In this unit, learn how to configure self-hosted agent identities using Managed Identities. These features provide a secure alternative to personal access tokens (PATs) for authentication and authorization in Azure DevOps.
 
 ## Understanding agent identities
 
