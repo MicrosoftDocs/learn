@@ -6,9 +6,9 @@ Azure Pipelines provides two types of agents: **Microsoft-hosted agents** and **
 
 When configuring agents for your projects, consider the following factors:
 
-**- Resource requirements:** Microsoft-hosted agents may not always have the necessary resources or software to execute specific tasks. In such cases, you might need to use self-hosted agents with custom configurations.
+- **Resource requirements**: Microsoft-hosted agents may not always have the necessary resources or software to execute specific tasks. In such cases, you might need to use self-hosted agents with custom configurations.
 
-**- Security and compliance:** Some organizations have strict security or compliance requirements that necessitate the use of self-hosted agents. These agents can be deployed within your organization's infrastructure, providing better control over security and data handling.
+- **Security and compliance**: Some organizations have strict security or compliance requirements that necessitate the use of self-hosted agents. These agents can be deployed within your organization's infrastructure, providing better control over security and data handling.
 
 ## Configuring agents for projects
 

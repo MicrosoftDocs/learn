@@ -2,7 +2,7 @@ Security and access control are crucial in managing projects, pipelines, and age
 
 In this module, learn the importance of managing identity for projects, pipelines, and agents in Azure DevOps and gaining the skills to configure and manage these components effectively. As you progress through the module, discover fundamental concepts and best practices crucial for ensuring smooth operations and heightened security in your Azure DevOps environment.
 
-### Learning objectives
+## Learning objectives
 
 After completing this module, students and professionals can:
 
@@ -12,7 +12,7 @@ After completing this module, students and professionals can:
 - Configure the scope of a service connection.
 - Convert to a managed identity in Azure DevOps.
 
-### Prerequisites
+## Prerequisites
 
 For some exercises, you must create an Azure DevOps Organization and a Team Project. If you don't have it yet, see the following:
 

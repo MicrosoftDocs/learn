@@ -1,4 +1,4 @@
-In this unit, learn how to configure Microsoft-hosted agents and agent pools in Azure DevOps, focusing on security best practices.Microsoft-hosted agents are virtual machines maintained by Microsoft, and agent pools enable you to organize and manage these agents efficiently.
+In this unit, learn how to configure Microsoft-hosted agents and agent pools in Azure DevOps, focusing on security best practices. Microsoft-hosted agents are virtual machines maintained by Microsoft, and agent pools enable you to organize and manage these agents efficiently.
 
 ## Microsoft-hosted agents
 
