@@ -26,6 +26,6 @@ A beta version of the product was released originally to test how users could au
 
 When the final version of the product was released, we decided to implement a “notifications” section inside of the Settings tab that allows you to select or toggle whether you would like to receive desktop and sound alerts.
 
-[ ![Screenshot of Graphical user interface of a sample web-based application.](../media/2-ux-considerations-krashaio.png)](../media/2-ux-considerations-krashaio.png#lightbox)
+[ ![Screenshot of Graphical user interface of a sample web-based application.](../media/2-ux-considerations-krashaio.png)](../media/2-ux-considerations-krashaio-high-resolution.png#lightbox)
 
 To create the best user experience, and give your users a comfortable feel with your product, these seven factors of influence must be included into their initial product journey. Remember, UX is about fulfilling the users’ needs with little to no room for hassle or difficulties. As a founder, you always want to maintain and keep the UX as fluid as possible.
