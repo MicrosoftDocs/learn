@@ -8,6 +8,9 @@ The company needs storage for their offices and departments. This content is pri
 | --- | --- |
 | :::image type="content" source="../media/task3.png" alt-text="Diagram with one storage account and two blob containers." border="true"::: | <ul><li>Create a storage account.<li>Create a storage container with restricted access.</li><li>Configure a shared access signature for partners.</li><li>Back up the public website storage.<li>Implement lifecycle management to move content to the cool tier.</li></ul>|
 
+> [!NOTE]
+> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+
 **Lab instructions**
 
 1. Create a storage account for the internal private company documents.

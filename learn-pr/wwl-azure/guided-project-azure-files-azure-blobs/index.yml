@@ -18,9 +18,9 @@ abstract: |
   *   Configure encryption for storage.
   *   Configure networking​ for storage.
 prerequisites: |
-  *   Experience using the Azure portal to create resources.
-  *   Experience with blob and file storage.
-  *   The prerequisites can be obtained by completing the other modules in this learning path.
+  •	Experience using the Azure portal to create resources.
+  •	Basic knowledge of unstructured data like blob sand files.
+  •	Basic knowledge of security concepts like identities, permissions, and encryption.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate

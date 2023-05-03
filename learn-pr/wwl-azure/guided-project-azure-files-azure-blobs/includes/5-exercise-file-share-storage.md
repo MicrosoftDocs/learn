@@ -8,6 +8,9 @@
 | --- | --- |
 | :::image type="content" source="../media/task4.png" alt-text="Diagram with a storage account, file share, and directory." border="true"::: | <ul><li>Create a storage account. </li><li> Configure a file share and directory. </li><li> Configure snapshots and practice restoring files. </li><li> Restrict access to a specific virtual network and subnet. </li></ul> |
 
+> [!NOTE]
+> To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
+
 **Lab instructions**
 
 1. Create a storage account for the finance department's shared files.  [Learn more about storage accounts for Azure Files deployments](/azure/storage/files/storage-files-planning#management-concepts)
