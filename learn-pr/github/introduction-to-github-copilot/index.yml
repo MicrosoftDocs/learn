@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: github
 title: Introduction to GitHub Copilot
-summary: GitHub Copilot is an Artificial Intelligence (AI) pair programmer that suggests code in your editor including GitHub.com, Visual Studio Code, Visual Studio, JetBrains IDEs, and Neovim as an unobtrusive extension.
+summary: GitHub Copilot uses the OpenAI Codex to suggest code and entire functions in real-time, right from your editor.
 abstract: |
   In this module, you will:
   - Understand how GitHub Copilot can help you code by offering autocomplete-style suggestions

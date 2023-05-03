@@ -7,7 +7,7 @@ Powered by OpenAI Codex, GitHub Copilot's generative pretrained language model i
 
 ## Learning objectives
 
-By the end of this module, you are able to:
+By the end of this module, you're able to:
 
 - Explain what GitHub Copilot is and the advantages it provides
 - Understand the availability of GitHub Copilot for individuals and Businesses

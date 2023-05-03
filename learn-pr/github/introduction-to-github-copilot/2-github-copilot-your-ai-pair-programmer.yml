@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.github.introduction-to-github-copilot.what-is-{product}
+uid: learn.github.introduction-to-github-copilot.github-copilot-your-ai-pair-programmer
 title: GitHub Copilot, your AI pair programmer
 metadata:
   title: GitHub Copilot, your AI pair programmer
-  description: "Trained on billions of lines of code, GitHub Copilot turns natural language prompts into coding suggestions across dozens of languages."
+  description: "GitHub Copilot, trained on billions of lines of code, turns natural language prompts into coding suggestions across dozens of languages."
   ms.date: 5/2/2023
   author: a-a-ron
   ms.author: aastewar
