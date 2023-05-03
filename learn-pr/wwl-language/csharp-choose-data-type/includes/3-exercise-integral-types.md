@@ -45,7 +45,7 @@ This module includes hands-on activities that guide you through the process of b
 ### Use the MinValue and MaxValue properties for each signed integral type
 
 1. Ensure that you have Visual Studio Code open and Program.cs displayed in the Editor panel.
-   > [!NOTE]   > Program.cs should be empty. If if isn't, select and delete all code lines.
+   **Program.cs should be empty.** If if isn't, select and delete all code lines.
 
 1. To see the value ranges for the various data types, type the following code into the Visual Studio Code Editor.
    ```csharp   Console.WriteLine("Signed integral types:");
@@ -58,7 +58,7 @@ This module includes hands-on activities that guide you through the process of b
    A Terminal panel should open, and should include a command prompt showing that the Terminal is open to your TestProject folder location.
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
-   > [!NOTE]   > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+   If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
    You should see the following output:
    ```Output   Signed integral types:   sbyte  : -128 to 127   short  : -32768 to 32767   int    : -2147483648 to 2147483647   long   : -9223372036854775808 to 9223372036854775807   ```
 
