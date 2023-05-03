@@ -150,7 +150,7 @@ Open `MainWindow.xaml`, and find the `TextBox`. Then, change the binding by addi
          Margin="10" 
          Width="150" 
          VerticalAlignment="Center" 
-         Text="{x:Bind Logic.UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+         Text="{Binding UserName, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
 ```
 
 If you debug the app now, you can see that the breakpoint gets hit with every keystroke and text change. Great!
