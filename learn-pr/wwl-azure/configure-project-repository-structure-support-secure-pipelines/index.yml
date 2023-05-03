@@ -12,11 +12,11 @@ title: Configure a project and repository structure to support secure pipelines
 summary: "This module is designed to help learners understand the importance of configuring a secure project and repository structure to support pipelines in Azure DevOps. The module covers fundamental concepts and best practices for organizing the project and repository structure and moving the security repository away from the application project."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Separate a project into team projects and repositories"
-    - "Separate secure files between projects"
-    - "Move the security repository away from a project"
-    - "Assign project and repository permissions"
-    - "Organize a project and repository structure"
+    - Separate a project into team projects and repositories
+    - Separate secure files between projects
+    - Move the security repository away from a project
+    - Assign project and repository permissions
+    - Organize a project and repository structure
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg
