@@ -6,7 +6,7 @@ Here, you'll learn how Azure API Management works, and how to set up an API gate
 
 ## Azure API management
 
-The Azure API management service is hosted in the Azure cloud and is positioned between your APIs and the Internet. Your API Management instance acts as an **Azure API gateway**.
+The Azure API management service is hosted in the Azure cloud and is positioned between your APIs and the internet. Your API Management instance acts as an **Azure API gateway**.
 
 When you publish your APIs, you use the Azure portal to control how particular APIs are exposed to consumers. You might want some APIs to be freely available to developers, for demo purposes, and access to other APIs to be tightly controlled.
 
@@ -21,7 +21,7 @@ For developers, API Management provides a range of benefits.
 - **Connections to any API**. In many businesses, APIs are located across different countries or regions and use different formats. API Management lets you add all of these disparate APIs into a single modern interface.
 - **Analytics**. As you develop your APIs, it's useful to see how often your APIs are being called and by which types of systems. API Management allows you to visualize this data within the Azure portal. 
 - **Security**. Security is paramount when dealing with system data. Unauthorized breaches can cost companies money, time lost in reworking code, and reputational loss. Security tools that you can use with Azure API management include OAuth 2.0 user authorization, and integration with Azure Active Directory.
-- **Pricing tiers**. API Management offers tiers with different capabilities for request throughput, SLA, network isolation, upgrade flexibility, and so on. When you create an Azure API management gateway, choose the tier that meets your needs.
+- **Pricing tiers**. API Management offers tiers with different capabilities for request throughput, SLA, network isolation, upgrade flexibility, and so on. When you create an Azure API management gateway, you choose the tier that meets your needs.
 
 ## API management setup
 

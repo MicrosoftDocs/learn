@@ -1,4 +1,4 @@
-A subscription key is used to restrict access to an API.
+A subscription key is one way to restrict access to an API.
 
 In the shoe company example, NorthWind Shoes are working with a supplier and want them to directly access the Inventory API. Partner access must be restricted using a subscription key for all calls to the API.
 
@@ -6,9 +6,9 @@ Here, you'll obtain a subscription key for your API. You'll then test access to 
 
 ## Obtain subscription key
 
-Partners are given their key as part of an onboarding process. In this exercise, you'll add a subscription specifically for the NorthWindShoes API. Once you've got a key, you follow the same process for using the key in API calls.
+Partners are given their key as part of an onboarding process. In this exercise, you'll add a subscription specifically for the NorthWindShoes API. Once you've got a key, you follow a standard process for using the key in API calls.
 
-1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All resources**, and then select your API Management instance.
 
 1. In the left menu pane, under **APIs**, select **Subscriptions**.
 

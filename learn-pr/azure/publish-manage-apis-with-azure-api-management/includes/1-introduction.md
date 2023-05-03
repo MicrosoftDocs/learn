@@ -15,6 +15,6 @@ In this module, you will:
 
 ## Prerequisites
 
-- Familiarity with basic concepts of web APIs, such as operations, endpoints, and API standards such as OpenAPI
-- Experience using command line tools such as Git
+- Familiarity with basic concepts of web APIs, including operations, endpoints, and API standards such as OpenAPI.
+ - Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
 - [!include[](../../../includes/azure-subscription-prerequisite.md)]

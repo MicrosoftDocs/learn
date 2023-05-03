@@ -43,7 +43,7 @@ Using the Azure portal, you select **APIs**, and then **+ Add API**. You start b
 
 :::image type="content" source="../media/4-apim-import.png" alt-text="Screenshot of Azure portal showing API Management service with the APIs section highlighted and selected.":::
 
-You then provide a link to your API specification as a URL or file, and a name for the API. Here's an example for an OpenAPI import
+You then provide a link to your API specification as a URL or file, and a name for the API. Here's an example for an OpenAPI import.
 
 ![Screenshot of create from OpenAPI specification import settings with OpenAPI specification and display name fields highlighted.](../media/4-api-details.png)
 

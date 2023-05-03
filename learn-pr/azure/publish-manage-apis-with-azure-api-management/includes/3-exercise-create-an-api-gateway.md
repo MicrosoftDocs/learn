@@ -80,15 +80,15 @@ The final task in this exercise is to create an API gateway in the Azure portal.
     | **Instance details** |
     | Region | Select an available region. |
     | Resource Name | `apim-NorthWindShoes<random number>`, replacing `random number` with your own series of numbers to ensure that the name is globally unique. |
-    | Organization Name | `NorthWindShoes`. The name of your organization for use in the developer portal and email notifications.|
-    | Administrator Email | The email address to receive all system notifications. You can enter your own email address.  |
+    | Organization Name | `NorthWindShoes`. The name of your organization for use in the developer portal and email notifications. (The developer portal and notifications aren't available in all service tiers.)|
+    | Administrator Email | The email address to receive all system notifications.   |
     | Pricing Tier | `Consumption` |
 
    > [!NOTE]
-   > The Consumption tier is much faster to generate output during the testing process. The overall experience is similar to the other pricing tiers.
+   > The Consumption tier provides fast deployment for testing and has a pay-for-use pricing model. The overall API management experience is similar to the other pricing tiers.
 
 1. Select **Review + create** to validate your settings.
 
-1. When validation has passed, select **Create**. Deployment may take several minutes to complete. When deployment has completed, you'll see the gateway listed in the Azure resources. You'll also receive an email message. It may take several minutes for deployment to complete.
+1. When validation has passed, select **Create**. Deployment may take several minutes to complete. When deployment has completed, you'll see the API Management instance listed in the Azure resources. It may take several minutes for deployment to complete.
 
 1. When deployment is complete, select **Go to resource** to view the pane for your API Management service.

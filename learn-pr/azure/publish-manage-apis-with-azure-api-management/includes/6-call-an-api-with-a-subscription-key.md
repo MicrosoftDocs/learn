@@ -17,7 +17,7 @@ A subscription key is a unique auto-generated string, which is passed through in
 
 An application that calls a protected API must include the key in the request.
 
-You can regenerate these subscription keys at any time. For example, if you suspect that a key has been shared with unauthorized users.
+You can regenerate these subscription keys at any time. For example, regenerate subscription keys if you suspect that a key has been shared with unauthorized users.
 
 ![Subscription keys.](../media/6-subscription-keys.png)
 
