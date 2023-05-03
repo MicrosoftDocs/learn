@@ -174,9 +174,9 @@ You now know how to use `{x:Bind`} to create a fast and automatic way of getting
 
 #### 1. Create the project
 
-If it's not running already, open Visual Studio. Create a new C# Windows Universal project by using the **WPF App (.NET Framework)** template. Call it **DatabindingSampleWPF**, and then select **OK**. This is the project you will work with during the entire UI and Data module.
+If it's not running already, open Visual Studio. Create a new C# WPF project by using the **WPF Application** template. Call it **DatabindingSampleWPF**, and then select **OK**. This is the project you will work with during the entire UI and Data module.
 
-![Screenshot of the Visual Studio Create a new project dialog box.](../media/createproject_wpf.png)
+![Screenshot of the Visual Studio Create a new WPF project dialog box.](../media/createproject_wpf.png)
 
 #### 2. Create the Clock class
 
@@ -263,7 +263,7 @@ public class Clock : INotifyPropertyChanged
 We also have to implement the interface by adding the `PropertyChanged` event to the class.
 
 ```cs
-public event PropertyChangedEventHandler PropertyChanged;
+public event PropertyChangedEventHandler? PropertyChanged;
 ```
 
 #### 6. Invoke the `PropertyChanged` event every second
@@ -293,9 +293,9 @@ The first line in the constructor creates the timer with a one-second interval, 
 `PropertyChanged?.Invoke` is shorthand for checking whether an event is null and, if not, invoking it. Like most events, the first argument is the sender (`this`). The second argument for the `PropertyChanged` event is a newly created `PropertyChangedEventArgs` object, which has a constructor expecting a string as the property name. So the subscribers to the `PropertyChanged` event (in this case, the WPF system) will receive the name of the updated property, and can act accordingly.
 
 > [!TIP]
-> Don't use string literals (such as `"CurrentTime"`) for the property name. Using the string itself is prone to typos, which can result in hard-to-debug issues when the UI is not being updated. Additionally, an innocent renaming of the property can also introduce errors if the string constants are not updated. It's a good practice to always use the `nameof` expression, which is immune to typos and can follow renamings.
+> Don't use string literals (such as `"CurrentTime"`) for the property name. Using the string itself is prone to typos, which can result in hard-to-debug issues when the UI is not being updated. Additionally, an innocent renaming of the property can also introduce errors if the string constants are not updated. It's a good practice to always use the `nameof` expression, which is immune to typos and can follow rename operations.
 
-The entire Clock.cs should look like the following:
+The entire `Clock.cs` should look like the following:
 
 ```cs
 namespace DatabindingSampleWPF
