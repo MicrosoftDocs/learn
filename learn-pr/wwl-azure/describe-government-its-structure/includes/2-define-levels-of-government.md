@@ -6,7 +6,7 @@ Within the United States, there are several levels of Government.
 
 ## The federal government
 
-The National Government is also known as the United States Government (USG) or the federal government. The federal government provides for national defense, conducts foreign affairs, and addresses issues that are national or global in scope. These issues cannot be addressed at only a state or local level, such as air pollution, climate, or interstate commerce.
+The National Government is also known as the United States Government (USG) or the federal government. The federal government provides for national/regional defense, conducts foreign affairs, and addresses issues that are national/regional or global in scope. These issues cannot be addressed at only a state or local level, such as air pollution, climate, or interstate commerce.
 
 These responsibilities of the National Government are defined in the United States Constitution. For those duties not defined in the U.S. Constitution, those responsibilities are assigned to the states.
 
