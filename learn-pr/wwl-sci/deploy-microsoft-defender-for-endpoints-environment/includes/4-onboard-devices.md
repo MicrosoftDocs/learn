@@ -13,7 +13,7 @@ When accessing your Microsoft 365 Defender portal settings for Endpoints for the
 
 1. In Discovery setup, make sure **Standard discovery (recommended)** is selected.
 
-   > [!HINT]
+   > [!TIP]
    > If you do not see the option, refresh the page.
 
 :::image type="content" source="../media/settings-device-discovery.png" alt-text="Screenshot of the Settings Device discovery options.":::
