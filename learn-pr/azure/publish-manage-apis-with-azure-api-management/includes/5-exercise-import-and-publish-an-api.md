@@ -42,7 +42,7 @@ The last part of the exercise is to test the API and visualize the results using
 
 1. Select the first GET operation, **Find the details of the specified product**. The details appear in the test console.
 
-1. Under **Template parameters**, enter a numerical character into the value for the productid parameter.
+1. Under **Template parameters**, enter a numerical value for the product ID parameter.
 
    :::image type="content" source="../media/5-test-with-param.png" alt-text="Test pane with product ID value highlighted." lightbox="../media/5-test-with-param.png":::
 
