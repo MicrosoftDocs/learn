@@ -6,7 +6,9 @@ You learned how to:
 -   Design solutions for network monitoring
 
 ## Learn more with security documentation
-- [Plan for landing zone network segmentation - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-landing-zone-network-segmentation)
+
+- [Implement network segmentation patterns - Microsoft Azure Well-Architected Framework | Microsoft Learn](https://learn.microsoft.com/azure/architecture/framework/security/design-network-segmentation)
+- [Azure network security groups overview | Microsoft Learn](https://learn.microsoft.com/azure/virtual-network/network-security-groups-overview)
 - [Microsoft Defender for DNS - the benefits and features | Microsoft Learn](https://learn.microsoft.com/azure/defender-for-cloud/defender-for-dns-introduction)
 - [Plan for traffic inspection - Cloud Adoption Framework | Microsoft Learn](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/plan-for-traffic-inspection)
 
