@@ -10,7 +10,7 @@ When accessing your Microsoft 365 Defender portal settings for Endpoints for the
    >**Note:** If you do not see the **Device discovery** option under **Settings**, 
   logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
-1. In Discovery setup make sure **Standard discovery (recommended)** is selected.
+1. In Discovery setup, make sure **Standard discovery (recommended)** is selected.
 
    >**Hint:** If you do not see the option, refresh the page.
 
@@ -20,7 +20,7 @@ When accessing your Microsoft 365 Defender portal settings for Endpoints for the
 ## Onboard devices
 
 
-You'll need to go to the onboarding section of the Microsoft 365 Defender portal to onboard any of the supported devices.  Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device.
+You need to go to the onboarding section of the Microsoft 365 Defender portal to onboard any of the supported devices.  Depending on the device, you are guided with appropriate steps and provided management and deployment tool options suitable for the device.
 
 In general, to onboard devices to the service:
 
