@@ -1,4 +1,3 @@
-## Search the Unified Audit Log (UAL)
 
 An organization can use the audit log search tool in the Microsoft Purview compliance portal to search the unified audit log. By doing so, the organization can view user and administrator activity. For example, an organization may need to determine if a user viewed a specific document or purged an item from their mailbox.
 

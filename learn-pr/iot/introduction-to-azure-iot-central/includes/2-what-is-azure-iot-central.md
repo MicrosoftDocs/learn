@@ -40,7 +40,7 @@ IoT solutions are valuable for business and personal use. However, building IoT 
 
 ## How to leverage Azure IoT Central
 
-Capturing data from IoT devices is a common motivating factor for the development of IoT solutions, and may be why you're interested in creating your own. IoT data is often used to make critical business decisions and predictions, like those introduced in the previous unit for our national grocery store chain scenario. Let's explore how Azure IoT Central can help us **collect**, **monitor** and **analyze** this scenario's IoT data.
+Capturing data from IoT devices is a common motivating factor for the development of IoT solutions, and may be why you're interested in creating your own. IoT data is often used to make critical business decisions and predictions, like those introduced in the previous unit for our national/regional grocery store chain scenario. Let's explore how Azure IoT Central can help us **collect**, **monitor** and **analyze** this scenario's IoT data.
 
 :::image type="content" source="../media/2-collect-monitor-analyze-decide.svg" alt-text="Diagram showing the process of collecting, monitoring and analyzing IoT data." border="false" lightbox="../media/2-collect-monitor-analyze-decide.svg":::
 

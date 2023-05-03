@@ -4,13 +4,11 @@ title: Manually install single-instance SAP HANA on Azure virtual machines
 metadata:
   title: Manually install single-instance SAP HANA on Azure virtual machines
   description: "Manually install single-instance SAP HANA on Azure virtual machines"
-  ms.date: 07/07/2022
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 8
 content: |
   [!include[](includes/4-manually-install-single-instance-sap-hana-azure-virtual-machines.md)]

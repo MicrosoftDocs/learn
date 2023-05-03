@@ -1,4 +1,3 @@
-## Manage audit log retention policies
 
 Organizations can create and manage audit log retention policies in the Microsoft Purview compliance portal. Audit log retention policies are part of the Microsoft Purview Audit (Premium) solution. An audit log retention policy lets an organization specify how long it wants to retain audit logs. Audit logs can be retained for up to 10 years. Retention policies can be created based on the following criteria:
 

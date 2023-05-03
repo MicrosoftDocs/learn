@@ -1,4 +1,3 @@
-## Introduction to threat investigation with the Unified Audit Log (UAL)
 
 Thousands of user and admin activities performed in Microsoft 365 services and solutions are captured, recorded, and retained in the Unified Audit Log (UAL). Audit records for these events are searchable using the Microsoft Purview or Microsoft 365 Defender portal Audit Search, or by using the Microsoft Exchange policy-and-compliance-audit PowerShell cmdlets.
 

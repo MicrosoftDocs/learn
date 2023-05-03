@@ -4,9 +4,9 @@ title: Troubleshoot latency issues within a virtual network
 metadata:
   title: Troubleshoot latency issues within a virtual network
   description: "Troubleshoot latency issues within a virtual network"
-  ms.date: 08/04/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false

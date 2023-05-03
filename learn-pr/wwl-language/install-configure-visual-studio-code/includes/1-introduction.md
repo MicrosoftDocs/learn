@@ -1,5 +1,6 @@
 
 
+
 Software development is more than just writing code, it's a process. Larger coding projects can take months or even years to complete and can be complex. The process of writing, debugging, testing, updating/versioning, and releasing code is a significant undertaking. To help with this process, developers use a specialized tool known as an *integrated development environment* (IDE).
 
 An IDE typically includes a suite of tools that support the software development process from beginning to end, a process known as the development lifecycle. The IDE tools enable the developer to work more efficiently and can help the developer, or team of developers, to write, debug, test, publish, and version their code more easily. A good IDE is a programmer's best friend.
