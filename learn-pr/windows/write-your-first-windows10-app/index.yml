@@ -3,7 +3,7 @@ uid: learn-windows.writing-windows-10-apps
 metadata:
   title: Write your first Windows 10 application
   description: Learn how to create apps in the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
-  ms.date: 12/10/2018
+  ms.date: 05/02/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
 iconUrl: /training/achievements/write-your-first-windows10-app.svg
 prerequisites: |
  - A computer running the current release of Windows 10. To verify that you're running the latest version, go to Settings > Windows Update.
- - [Visual Studio 2017](/visualstudio/productinfo/vs2017-system-requirements-vs) installed on that computer.
+ - [Visual Studio 2022](/visualstudio/releases/2022/system-requirements) installed on the computer.
  - Knowledge of C# or similar programming language.
 levels:
 - beginner
