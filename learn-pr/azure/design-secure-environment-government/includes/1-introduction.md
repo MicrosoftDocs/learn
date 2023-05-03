@@ -11,4 +11,4 @@ In this module, you will:
 ## Prerequisites
 
 * Familiarity with current workloads that could benefit from moving to the cloud.
-* Familiarity with protection requirements across a variety of data classification.
+* Familiarity with protection requirements across various data classifications.
