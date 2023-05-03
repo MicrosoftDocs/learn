@@ -9,6 +9,6 @@ metadata:
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
-durationInMinutes: 15
+durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-explore-image-analysis.md)]

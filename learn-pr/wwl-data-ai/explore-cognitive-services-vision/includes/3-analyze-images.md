@@ -9,7 +9,7 @@ Accessible via the Vision SDK and REST APIs, Image Analysis 4.0 provides develop
 
 Image captions are accessible through the **Caption** and **Dense Captions** features of Image Analysis 4.0. Both features use the latest groundbreaking Florence-based AI models to analyze an image to understand and generate a human-readable English sentence or phrase describing its content.
 
-![Image containing an overall description, plus bounding boxes and the captions generated for each region/object.](../media/03-vision-studio-image-captioning.png)
+![Screenshot of image with an overall description, plus bounding boxes and the captions generated for each region/object.](../media/03-vision-studio-image-captioning.png)
 
 **Caption** generates a single sentence describing the image, evaluating the image's content holistically. This feature can be helpful for activities such as auto-generating alternative image text.
 
