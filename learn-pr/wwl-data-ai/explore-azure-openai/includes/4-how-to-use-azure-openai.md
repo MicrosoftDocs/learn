@@ -7,7 +7,7 @@ Currently you need to [apply](https://aka.ms/oaiapply?azure-portal=true) for acc
 
 ![Screenshot showing the Azure OpenAI Studio UI get started page with options for exploring the service.](../media/azure-openai-studio-start.png)
 
-In the Azure OpenAI Studio, you can build AI models and deploy them for public consumption in software applications. Azure OpenAI's capabilities are made possible by specific generative AI models. Different models are optimized for different tasks; some models excel at summarization and providing general unstructured responses, and others are built to generate code or unique images from text input.
+In the [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true), you can build AI models and deploy them for public consumption in software applications. Azure OpenAI's capabilities are made possible by specific generative AI models. Different models are optimized for different tasks; some models excel at summarization and providing general unstructured responses, and others are built to generate code or unique images from text input.
 
 These Azure OpenAI models fall into a few main families:
 - GPT-4
@@ -23,8 +23,10 @@ Azure OpenAI's AI models can all be trained and customized with fine-tuning. We 
 
 #### Playgrounds 
 
-In the Azure OpenAI Studio, you can experiment with OpenAI models in playgrounds. In the *Completions* playground, you can type in prompts, and see responses without having to code. In the *Chat* playground, you can test parameters for a chat assistant. The assistant will try to mimic the responses you include in tone, rules, and format you've defined in your system message.
+In the Azure OpenAI Studio, you can experiment with OpenAI models in playgrounds. In the *Completions* playground, you can type in prompts, configure parameters, and see responses without having to code.
 
 ![Screenshot of the Azure OpenAI Studio Completions playground where it is possible to test some capabilities of the service without code.](../media/azure-openai-completions-playground.png)
+
+In the *Chat* playground, you can use the assistant setup to instruct the model about how it should behave. The assistant will try to mimic the responses you include in tone, rules, and format you've defined in your system message.
 
 ![Screenshot of the Azure OpenAI Studio Chat playground where it is possible to test some capabilities of the service without code.](../media/azure-openai-chat-playground.png)

@@ -1,4 +1,4 @@
-Suppose you want to help your team understand the latest artificial intelligence (AI) innovations in the news. They would like to evaluate the opportunities these innovations support and understand what is done to keep AI advancements ethical.
+Suppose you want to help your team understand the latest artificial intelligence (AI) innovations in the news. Your team would like to evaluate the opportunities these innovations support and understand what is done to keep AI advancements ethical.
 
 You share with your team that today, stable AI models are regularly put into production and used commercially around the world. For example, Microsoft's existing Azure AI services have been handling the needs of businesses for many years to date. In 2022, OpenAI, an AI research company, created a chatbot known as ChatGPT and an image generation application known as DALL-E. These technologies were built with AI models which can take natural language input from a user and return a machine-created human-like response.
 
