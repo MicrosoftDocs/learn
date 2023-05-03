@@ -13,7 +13,7 @@ A second project was started in 2006, with similar disastrous results. The two e
 #### Why did these attempts fail?
 
 - **Big design up front** – 200-person team spent six months creating the requirements.
-- **Shifting priorities** – a national disaster happened partway through the project, resulting in massive scope change – and another 300-person team worked for six months, which resulted in 600 pages of requirements.
+- **Shifting priorities** – a disaster happened partway through the project, resulting in massive scope change – and another 300-person team worked for six months, which resulted in 600 pages of requirements.
 - **Wasted effort and rework** led to missed deadlines and team burnout – 700,000 lines of code being written and re-written.
 
 In December 2010, a Scrum studio was set up and co-located. Staff was reduced from 400 on the original projects to 40. Design went from 600 pages of requirements to 670 user stories. The team shipped code and demonstrated new features every two weeks. After a few sprints, it became possible to forecast rough timescales and plan incremental business changes. They were code complete by December 2011.
