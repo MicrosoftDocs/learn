@@ -3,7 +3,7 @@ uid: learn.wwl.explore-fundamentals-of-stream-processing
 metadata:
   title: Explore fundamentals of real-time analytics
   description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions.</span|  </div|<div| </div|"
-  ms.date: 05/02/2023
+  ms.date: 05/03/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
