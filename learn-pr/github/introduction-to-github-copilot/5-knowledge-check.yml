@@ -34,7 +34,7 @@ quiz:
     choices:
     - content: “Visual Studio Code and Visual Studio”
       isCorrect: false
-      explanation: “Although these two IDEs are support by GitHub Copilot, platform supports than just these two IDEs.”
+      explanation: “Although these two IDEs are support by GitHub Copilot, the platform supports more than just these two IDEs.”
     - content: “GitHub.com, Visual Studio Code, Visual Studio, Neovim, and Jet brains”
       isCorrect: false
       explanation: “Although GitHub.com is supported, it doesn't need an extension.”
