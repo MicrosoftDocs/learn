@@ -1,4 +1,4 @@
-In this exercise we'll use the data catalog to search and browse for data and look at the details of an asset.
+In this exercise, we'll use the data catalog to search and browse for data and look at the details of an asset.
 
 ## Open the data catalog
 
