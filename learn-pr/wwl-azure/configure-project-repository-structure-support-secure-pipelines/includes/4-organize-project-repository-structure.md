@@ -78,7 +78,7 @@ When you build a GitHub forked pull request, Azure Pipelines ensures the pipelin
 
 Users in your organization with the right permissions can create new branches containing new or updated code. That code can run through the same pipeline as your protected branches. Further, if the YAML file in the new branch is changed, then the updated YAML will be used to run the pipeline. While this design allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
 
-If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model.](https://learn.microsoft.com/en-us/azure/devops/organizations/security/permissions?view=azure-devops&tabs=preview-page#git-repository-object-level) In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
+If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model.](https://learn.microsoft.com/azure/devops/organizations/security/permissions) In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
 
 - **Keep sensitive files out with .gitignore**
 

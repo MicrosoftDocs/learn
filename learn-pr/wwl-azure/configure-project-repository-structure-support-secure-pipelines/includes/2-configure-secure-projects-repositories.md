@@ -58,7 +58,7 @@ Here's what you need to know about permission settings:
 
 • When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.
 
-• Consider granting the [work item query folders Contribute.](https://learn.microsoft.com/en-us/azure/devops/boards/queries/set-query-permissions?view=azure-devops) permission to users or groups that require the ability to create and share work item queries for the project.
+• Consider granting the [work item query folders Contribute.](https://learn.microsoft.com/azure/devops/boards/queries/set-query-permissions) permission to users or groups that require the ability to create and share work item queries for the project.
 
 **Don't:**
 
