@@ -3,7 +3,7 @@ uid: learn-windows.writing-windows-10-apps
 metadata:
   title: Write your first Windows 10 application
   description: Learn how to create apps in the most popular Windows development frameworks - UWP, WPF, and Windows Forms.
-  ms.date: 05/02/2023
+  ms.date: 05/03/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
