@@ -1,3 +1,5 @@
+
+
 This phase includes monitoring, operating, and administrating the system. In migration scenarios, from the SAP perspective, this phase involves the same tasks that were part of the operational model in the source environment. Azure-specific tasks include:
 
 1. Monitoring and analyzing Azure resource billing.

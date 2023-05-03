@@ -23,7 +23,7 @@ On an Azure AD-joined or registered device, user authentication happens using mo
 
 With Azure AD DS-joined devices, applications can use the Kerberos and New Technology LAN Manager (NTLM) protocols for authentication, so can support legacy applications migrated to run on Azure VMs as part of a lift-and-shift strategy. The following table outlines differences in how the devices are represented and can authenticate themselves against the directory:
 
-| **Aspect**                      | **Azure AD-joined**                                       | **Azure AD-joined**                                                                            |
+| **Aspect**                      | **Azure AD-joined**                                       | **Azure AD DS-joined**                                                                         |
 | ------------------------------- | --------------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
 | Device controlled by            | Azure AD                                                  | Azure AD Domain Services managed domain                                                        |
 | Representation in the directory | Device objects in the Azure AD directory                  | Computer objects in the Azure AD DS managed domain                                             |

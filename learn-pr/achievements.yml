@@ -1622,3 +1622,58 @@ achievements:
   title: Debug C# console applications (Get started with C#, Part 6)
   summary: Learn how to debug C# console applications in Visual Studio Code and how to implement exception handling using the try-catch pattern. Configure the C# debugger tools in Visual Studio Code and use the debugger tools to isolate and fix logic issues. Examine the exception types provided by .NET and the properties of exception objects, then implement exception handling and throw customized exception objects.
   iconUrl: /training/achievements/generic-trophy.svg
+- uid: learn.wwl.get-started-azure-databricks.badge
+  type: badge
+  title: Get started with Azure Databricks
+  summary: Azure Databricks enables you to build highly scalable data processing and machine learning solutions.
+  iconUrl: /training/achievements/get-started-with-azure-databricks.svg
+- uid: learn.wwl.manage-machine-learning-models-azure-databricks.badge
+  type: badge
+  title: Manage machine learning models in Azure Databricks
+  summary: In Azure Databricks, you can deploy and manage machine learning models that you have trained.
+  iconUrl: /training/achievements/manage-machine-learning-models-in-azure-databricks.svg
+- uid: learn.wwl.prepare-data-for-machine-learning-azure-databricks.badge
+  type: badge
+  title: Prepare data for machine learning with Azure Databricks
+  summary: Before using data to train a machine learning model, it's important to prepare the data appropriately.
+  iconUrl: /training/achievements/prepare-data-for-machine-learning-with-azure-databricks.svg
+- uid: learn.wwl.use-data-loading-best-practices-azure-synapse-analytics.badge
+  type: badge
+  title: Use data loading best practices in Azure Synapse Analytics
+  summary: Learn the best practices you need to adopt to load data into a data warehouse in Azure Synapse Analytics.
+  iconUrl: /training/achievements/use-data-loading-best-practices-in-azure-synapse-analytics.svg
+- uid: learn.wwl.work-data-azure-databricks.badge
+  type: badge
+  title: Work with data in Azure Databricks
+  summary: To work with data in Azure Databricks, you can use the *dataframe* object.
+  iconUrl: /training/achievements/work-with-data-in-azure-databricks.svg
+- uid: learn.wwl.train-machine-learning-model-azure-databricks.badge
+  type: badge
+  title: Train a machine learning model with Azure Databricks
+  summary: Machine learning involves using data to train a predictive model. Azure Databricks support multiple commonly used machine learning frameworks that you can use to train models.
+  iconUrl: /training/achievements/train-a-machine-learning-model-with-azure-databricks.svg
+- uid: learn.wwl.use-mlflow-to-track-experiments-azure-databricks.badge
+  type: badge
+  title: Use MLflow to track experiments in Azure Databricks
+  summary: When you run data science and machine learning experiments at scale, you can use MLflow to track experiment runs and metrics.
+  iconUrl: /training/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
+- uid: learn.azure-percept.explore.badge
+  type: badge
+  title: Explore Azure Percept
+  summary: Explore Azure Percept
+  iconUrl: /training/achievements/azure-percept/explore-azure-percept.svg
+- uid: learn.azure-percept.prerequisites.badge
+  type: badge
+  title: Azure Percept prerequisites
+  summary: Azure Percept prerequisites
+  iconUrl: /training/achievements/azure-percept/azure-percept-prerequisites.svg
+- uid: learn.azure-percept.trophy
+  type: trophy
+  title: Build edge AI solutions with Azure Percept
+  summary: Build edge AI solutions with Azure Percept
+  iconUrl: /training/achievements/azure-percept/azure-percept.svg  
+- uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.badge
+  type: badge
+  title: Deploy ASP.NET web apps with Azure Pipelines
+  summary: Deploy ASP.NET web apps with Azure Pipelines
+  iconUrl: /training/achievements/deploy-aspnet-apps-azure-app-service-pipelines.svg

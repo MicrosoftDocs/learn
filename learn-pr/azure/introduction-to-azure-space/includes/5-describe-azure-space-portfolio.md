@@ -20,7 +20,7 @@ Products that fall under this category help meet needs around space-based connec
 Products that fall under this category help end users create insights from space data. Some of the key Azure capabilities are:
 
 - Connect spacecraft to Azure with the ability to command satellites and downlink to the cloud.
-- A fully managed satellite ground network to provide global coverage for earth observation and remote sensing satellites.
+- A fully managed satellite ground network to provide global coverage for earth observation and remote-sensing satellites.
 - A single control plane to manage antennas from one powerful application.
 - Rapid data processing to derive insights and create clarity.
 - Use Azure to create analytics pipelines.

@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-openai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  ms.date: 2/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What do you need in order to test a generative AI model using the Azure OpenAI Service Studio?"
+    choices:
+    - content: "A deployed model name and Azure command line interface."
+      isCorrect: false
+      explanation: "You would use the Studio in place of the Azure command line interface, not in combination."
+    - content: "An Azure OpenAI resource and an Azure Cognitive Services resource."
+      isCorrect: false
+      explanation: "In this case, you do not need an Azure Cognitive Services resource."
+    - content: "An Azure OpenAI resource, a deployed model, and a playground."
+      isCorrect: true
+      explanation: ""
+  - content: "Which parameter could you adjust to change the randomness or creativeness of the completions returned?"
+    choices:
+    - content: "Temperature"
+      isCorrect: true
+      explanation: ""
+    - content: "Frequency penalty"
+      isCorrect: false
+      explanation: ""
+    - content: "Stop sequence"
+      isCorrect: false
+      explanation: ""
+  - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
+    choices:
+    - content: "GPT-3"
+      isCorrect: false
+      explanation: ""
+    - content: "Chat"
+      isCorrect: true
+      explanation: ""
+    - content: "Bot"
+      isCorrect: false
+      explanation: ""

@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.deploy-microsoft-configuration-manager
+metadata:
+  title: MD-102 3-Deploy using Endpoint Configuration Manager
+  description: "This module explains the common day to day tasks that Administrators would use Configuration Manager to perform."
+  ms.date: 04/03/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Deploy using Microsoft Configuration Manager
+summary: This module explains the common day to day tasks that Administrators would use Configuration Manager to perform.
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe the capabilities of Configuration Manager.
+  - Describe the key components of Configuration Manager.
+  - Describe how to troubleshoot Configuration Manager deployments.
+prerequisites: |
+  - Strong technical skills installing, maintaining, and troubleshooting the Windows 10 OS or later
+  - Strong understanding of computer networking, client security, and application concepts
+  - Experience using Active Directory Domain Services
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- windows
+- configuration-manager
+- intune
+units:
+- learn.wwl.deploy-microsoft-configuration-manager.introduction
+- learn.wwl.deploy-microsoft-configuration-manager.explore-client-deployment-using
+- learn.wwl.deploy-microsoft-configuration-manager.examine-deployment-components-of
+- learn.wwl.deploy-microsoft-configuration-manager.manage-client-deployment-using
+- learn.wwl.deploy-microsoft-configuration-manager.plan-place-upgrades-using
+- learn.wwl.deploy-microsoft-configuration-manager.knowledge-check
+- learn.wwl.deploy-microsoft-configuration-manager.summary
+badge:
+  uid: learn.wwl.deploy-microsoft-configuration-manager.badge

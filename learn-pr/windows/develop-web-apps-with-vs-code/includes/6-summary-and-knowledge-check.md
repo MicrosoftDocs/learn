@@ -4,9 +4,9 @@ In this module, you learned:
 - How to download and install Visual Studio Code.
 - How to install extensions for basic web development.
 - How to the use basic editor functionality of Visual Studio Code.
-- How to write and test a simple web app.
+- How to write and test a basic web app.
 
-This module has only given an introduction, but you can continue with more modules to pick up on more and more features. For a fully detailed treatment of Visual Studio Code features, see the links provided below.
+This module has only given an introduction, but you can continue with more modules to pick up on more features.
 
 ## Further Information
 

@@ -1,3 +1,5 @@
+
+
 > [!NOTE]
 > *Azure Monitoring Extension*, *Enhanced Monitoring*, and *Azure Extension for SAP* describe one and the same item. It describes a VM extension that needs to be deployed by you to provide some basic data about the Azure infrastructure to the SAP Host Agent. SAP Notes might refer to it as *Monitoring Extension* or *Enhanced monitoring*. In Azure, we are referring to it as *Azure Extension for SAP.*
 
@@ -9,7 +11,7 @@ There are two versions of the Azure Extension for SAP. Check the prerequisites f
 
 ## **Standard version of Azure Extension for SAP**
 
-This version is the current standard Azure Extension for SAPcovered in this module. There are some exceptions where Microsoft recommends to install the new Azure Extension for SAP.
+This version is the current standard Azure Extension for SAPcovered in this module. There are some exceptions where Microsoft recommends installing the new Azure Extension for SAP.
 
 ## **New version of Azure Extension for SAP**
 

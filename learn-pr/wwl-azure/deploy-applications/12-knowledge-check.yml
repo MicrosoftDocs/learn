@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-applications.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/04/2023
+  author: wwlpublish
+  ms.author: rstearman
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/12-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Northwind Traders is deploying both Win32 apps and LOB apps. During deployment, the company no longer wants to be limited to a single MSI installation file, and it wants to use one tool to deploy both types of apps. Which tool should Northwind Traders use that meets these requirements?"
+    choices:
+    - content: "Intune Management Extension"
+      isCorrect: true
+      explanation: "Correct. With the Intune Management Extension, deployment is no longer limited to a single MSI installation file. When deploying both Win32 apps and LOB apps, consider using the Intune Management Extension exclusively. Deploying both types during an Autopilot enrollment may fail."
+    - content: "Autopilot"
+      isCorrect: false
+      explanation: "Incorrect. Deploying both Win32 apps and LOB apps during an Autopilot enrollment may fail. Try again."
+    - content: "Configuration Manager"
+      isCorrect: false
+      explanation: "Incorrect. Configuration Manager is limited to a single MSI installation file. Try again."
+  - content: "What are the five phases in the Microsoft Intune application lifecycle?"
+    choices:
+    - content: "Add, Deploy, Configure, Conditional Access, and Retire"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the five phases in the Microsoft Intune application lifecycle. Try again."
+    - content: "Add, Deploy, Versioning, Protect, and Retire"
+      isCorrect: false
+      explanation: "Incorrect. These items aren't the five phases in the Microsoft Intune application lifecycle. Try again."
+    - content: "Add, Deploy, Configure, Protect, and Retire"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Intune app lifecycle begins when an app is added and progresses through additional phases until you retire the app."

@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.enable-reliable-messaging-for-big-data-applications-using-azure-event-hubs.3-exercise-create-an-event-hub-using-azure-cli
-title: Exercise - Use the Azure CLI to Create an Event Hub
+title: Exercise - Use the Azure CLI to Create an event hub
 metadata:
-  title: Exercise - Use the Azure CLI to Create an Event Hub
-  description: Use the Azure CLI to Create an Event Hub
-  ms.date: 08/26/2019
+  title: Exercise - Use the Azure CLI to Create an event hub
+  description: Use the Azure CLI to Create an event hub
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial

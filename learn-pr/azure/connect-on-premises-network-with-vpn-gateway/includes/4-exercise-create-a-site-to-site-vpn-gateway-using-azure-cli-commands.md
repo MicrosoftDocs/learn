@@ -1,10 +1,10 @@
 You're now ready to complete your site-to-site VPN gateway by creating the public IP addresses, virtual network gateways, and connections. Remember that you used placeholders for the public IP address references when you created your local network gateways. So one of your tasks now is to update these gateways with the actual public IP addresses assigned to your virtual network gateways.
 
-Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you'll see how to update the local network gateways. You can use the same commands to update any configuration elements in the local network gateways, like remote network address spaces.
+Ideally, the public IP addresses and virtual network gateways should be created *before* the local network gateways. In this exercise, you see how to update the local network gateways. You can use the same commands to update any configuration elements in the local network gateways, like remote network address spaces.
 
 ## Create the Azure-side VPN gateway
 
-First, you'll create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you'll use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
+First, you create the VPN gateway for the Azure end of the connection. It can take up to 45 minutes to create a virtual network gateway. To save time, you use Azure CLI commands with the `--no-wait` parameter. This parameter lets you create both virtual network gateways simultaneously to minimize the overall time required to create these resources.
 
 1. Run the following command in Cloud Shell to create the **PIP-VNG-Azure-VNet-1** public IP address.
 
@@ -40,7 +40,7 @@ First, you'll create the VPN gateway for the Azure end of the connection. It can
 
 ## Create the on-premises VPN gateway
 
-Next, you'll create a VPN gateway to simulate an on-premises VPN device.
+Next, you create a VPN gateway to simulate an on-premises VPN device.
 
 1. Run the following command in Cloud Shell to create the **PIP-VNG-HQ-Network** public IP address.
 
@@ -96,9 +96,9 @@ Next, you'll create a VPN gateway to simulate an on-premises VPN device.
 > [!IMPORTANT]
 > Your virtual network gateways must be successfully deployed before you start the next exercise. A gateway can take up to 30+ minutes to complete. If the ProvisioningState does not show "Succeeded" yet, you need to wait.
 
-In this section, you'll update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them.
+In this section, you update the remote gateway IP address references that are defined in the local network gateways. You can't update the local network gateways until you've created the VPN gateways and an IPv4 address is assigned to and associated with them.
 
-1. Run the following Azure CLI command to check whether both virtual network gateways have been created.  The initial state will show **Updating**.  You want to see **Succeeded** on both VNG-Azure-VNet-1 and VNG-HQ-Network.
+1. Run the following Azure CLI command to check whether both virtual network gateways have been created. The initial state shows **Updating**. You want to see **Succeeded** on both VNG-Azure-VNet-1 and VNG-HQ-Network.
 
     ```azurecli
     az network vnet-gateway list \
@@ -155,9 +155,9 @@ In this section, you'll update the remote gateway IP address references that are
 
 ## Create the connections
 
-You'll now complete the configuration by creating the connections from each VPN gateway to the local network gateway that contains the public IP address references for that gateway's remote network.
+You complete the configuration by creating the connections from each VPN gateway to the local network gateway that contains the public IP address references for that gateway's remote network.
 
-1. Create the shared key to use for the connections. In the following command, replace `<shared key>` with a text string to use for the IPSec pre-shared key. The pre-shared key is a string of printable ASCII characters no longer than 128 characters. It can't contain special characters, like hyphens and tildes. You'll use this pre-shared key on both connections.
+1. Create the shared key to use for the connections. In the following command, replace `<shared key>` with a text string to use for the IPSec preshared key. The preshared key is a string of printable ASCII characters no longer than 128 characters. It can't contain special characters, like hyphens and tildes. You use this preshared key on both connections.
 
     > [!NOTE]
     > In this example, any set of numbers will work for a shared key: SHAREDKEY=123456789. In production environments, we recommend using a string of printable ASCII characters no longer than 128 characters *without* special characters, like hyphens or tildes.
@@ -188,7 +188,7 @@ You'll now complete the configuration by creating the connections from each VPN 
         --local-gateway2 LNG-Azure-VNet-1
     ```
 
-You've now finished the configuration of the site-to-site connection. This may take a few minutes, but the tunnels should automatically connect and become active.
+You have now finished the configuration of the site-to-site connection. It may take a few minutes, but the tunnels should automatically connect and become active.
 
 ## Verification steps
 
@@ -204,7 +204,7 @@ Let's confirm that the VPN tunnels are connected.
         --query '{Name:name,ConnectionStatus:connectionStatus}'
     ```
 
-    You should see output like below indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting` or `Unknown`, wait a minute or two and rerun the command. The connections can take a few minutes to fully connect.
+    You should see output like the following, indicating the connection is successful. If the `ConnectionStatus` shows as `Connecting` or `Unknown`, wait a minute or two, and rerun the command. The connections can take a few minutes to fully connect.
 
     ```output
     Name                        ConnectionStatus

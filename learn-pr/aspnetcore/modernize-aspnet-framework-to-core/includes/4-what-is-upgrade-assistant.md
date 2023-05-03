@@ -26,7 +26,7 @@ It upgrades apps from the following versions of .NET:
 
 to the latest Standard Term Support (STS), Long Term Support (LTS), or Preview versions of .NET.
 
-The tool also supports upgrades:
+The command line version of Upgrade Assistant tool also supports upgrades:
 
 - from Xamarin.Forms to .NET MAUI
 - from WCF to Core WCF

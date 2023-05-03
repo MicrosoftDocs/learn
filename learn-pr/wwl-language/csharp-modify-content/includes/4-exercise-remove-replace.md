@@ -1,10 +1,11 @@
 
 
+
 In this exercise, you'll remove characters from a string using the `Remove()` method and replace characters using the `Replace()` method.
 
 Sometimes, you'll need to modify the contents of the string, removing or replacing characters. While you could replace characters with the tools you already know, it requires a bit of temporarily storing and stitching strings back together. Fortunately, the `string` data type has other built-in methods, `Remove()` and `Replace()`, for these specialized scenarios.
 
-## Use the Remove() method
+## Use the `Remove()` method
 
 You would typically use `Remove()` when there's a standard and consistent position of the characters you want to remove from the string.
 
@@ -42,7 +43,7 @@ In the following steps you will need to remove the customer's name to format the
 
     The `Remove()` method works similarly to the `Substring()` method. You supply a starting position and the length to remove those characters from the string.
 
-## Use the Replace() method
+## Use the `Replace()` method
 
 You would use the `Replace()` method when you must replace one or more characters with a different character (or no character). The `Replace()` method is different from the other methods you've used so far, it will replace every instance of the given characters, not just the first or last instance.
 

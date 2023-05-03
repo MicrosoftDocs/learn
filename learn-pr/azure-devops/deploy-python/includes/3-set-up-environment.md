@@ -1,4 +1,4 @@
-In this part, you make sure that your Azure DevOps organization is set up to complete the rest of this module. You also create the Azure App Service environment that you'll deploy to.
+In this unit, you'll make sure that your Azure DevOps organization is set up to complete the rest of this module. You'll also create the Azure App Service environment that you'll deploy to.
 
 To accomplish these goals, you:
 
@@ -15,23 +15,24 @@ You don't need an Azure subscription to work with Azure DevOps, but here you'll 
 
 If you use different Microsoft accounts to sign in to Azure and Azure DevOps, add a user to your DevOps organization under the Microsoft account that you use to sign in to Azure. For more information, see [Add users to your organization or project](/azure/devops/organizations/accounts/add-organization-users?azure-portal=true&tabs=browser). When you add the user, choose the **Basic** access level.
 
-Then sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
+Then, sign out of Azure DevOps and sign in. Use the Microsoft account that you use to sign in to your Azure subscription.
 
 ## Fork the GitHub repo
 
-Here you fork the GitHub repo required for this project. It's a basic Python web app built by using the Django framework.
+Here, you fork the GitHub repo required for this project. It's a basic Python web app built by using the Django framework.
 
 1. Go to the [Python with Django repo](https://github.com/MicrosoftDocs/mslearn-python-django?azure-portal=true).
 1. Select **Fork** and then select your account.
+1. Select **Create fork**.
 
 ## Create the Azure App Service environment
 
-Here you create the App Service required to deploy the Python app.
+Here, you create the App Service required to deploy the Python app.
 
 > [!IMPORTANT]
 > You need your own Azure subscription to complete the exercises in this module.
 
-In this module, you use the Azure CLI to spin up the Azure App Service that will host the Python app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
+In this module, you use the Azure CLI to spin up the Azure App Service that hosts the Python app. You can access the Azure CLI from a terminal or through Visual Studio Code. Here, you access the Azure CLI from Azure Cloud Shell. This browser-based shell experience is hosted in the cloud. In Cloud Shell, the Azure CLI is configured for use with your Azure subscription.
 
 ### Bring up Cloud Shell through the Azure portal
 
@@ -65,15 +66,15 @@ To make commands easier to run, start by selecting a default region. After you s
     az configure --defaults location=<REGION>
     ```
 
-    This example sets `westus2` as the default region:
+    This example sets `eastus` as the default region:
 
     ```azurecli
-    az configure --defaults location=westus2
+    az configure --defaults location=eastus
     ```
 
 ### Create the Azure resources
 
-This solution requires several Azure resources for deployment, which you create now.
+This solution requires several Azure resources for deployment, which you'll create now.
 
    > [!NOTE]
    > For learning purposes, here you use the default network settings. These settings make your site accessible from the internet. In practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
@@ -109,7 +110,7 @@ This solution requires several Azure resources for deployment, which you create 
       --runtime "PYTHON|3.9"
     ```
 
-    The name must be globally unique, so here we use `$RANDOM` to append a random number to the name. In practice, you would choose a name that reflects your application. If this step fails due to a naming conflict, try running it again.
+    The name must be globally unique, so here we use `$RANDOM` to append a random number to the name. In practice, you'd choose a name that reflects your application. If this step fails due to a naming conflict, try running it again.
 
 1. Run the following `az webapp list` command to list the host name and state of the App Service instance.
 
@@ -130,7 +131,7 @@ This solution requires several Azure resources for deployment, which you create 
 
 1. As an optional step, navigate your browser to the host name. Verify that it's running and that the default home page appears.
 
-    Here's what you see:
+    Here's what you get:
 
     :::image type="content" source="../media/3-app-service-default.png" alt-text="A screenshot of the default home page on Azure App Service.":::
 

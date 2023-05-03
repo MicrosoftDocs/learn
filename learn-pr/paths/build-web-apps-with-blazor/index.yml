@@ -31,5 +31,6 @@ modules:
 - learn.use-forms-in-blazor-web-apps
 - learn.build-interactive-components-blazor-web-apps
 - learn.blazor-build-reusable-components
+- learn.gh-dotnet-connectfour
 trophy:
   uid: learn.aspnet.build-blazor-webapps.trophy
