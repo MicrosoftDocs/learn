@@ -7,9 +7,8 @@ When accessing your Microsoft 365 Defender portal settings for Endpoints for the
 
 1. In the Settings menu page, select Device discovery.
 
-   > [!Note]
-   > If you do not see the **Device discovery** option under **Settings**, 
-  logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
+   > [!NOTE]
+   > If you do not see the **Device discovery** option under **Settings**, logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
 1. In Discovery setup, make sure **Standard discovery (recommended)** is selected.
 
