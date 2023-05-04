@@ -14,6 +14,6 @@ Customers using Azure's public cloud capabilities, benefit from rapid feature gr
 
 The [Azure Stack](https://azure.microsoft.com/overview/azure-stack/) portfolio of products, include Azure data protection technologies and intelligent edge capabilities. These products allow customers to process confidential and secret data in secure isolated infrastructure within the public multi-tenant cloud. They also give customer’s full operational control of top secret data on-premises and at the edge.
 
-Azure Stack Hub (formerly Azure Stack) and Azure Stack Edge (formerly Azure Data Box Edge) allow customers to process highly sensitive data using a private or hybrid cloud and pursue digital transformation using Microsoft intelligent cloud and an intelligent edge approach. For many government customers, the primary driving factors behind these efforts are enforcing data sovereignty, addressing custom compliance requirements, and applying maximum available protection to highly sensitive data.  
+Azure Stack Hub (formerly Azure Stack) and Azure Stack Edge allow customers to process highly sensitive data using a private or hybrid cloud and pursue digital transformation using Microsoft intelligent cloud and an intelligent edge approach. For many government customers, the primary driving factors behind these efforts are enforcing data sovereignty, addressing custom compliance requirements, and applying maximum available protection to highly sensitive data.  
 
 Now let's take a closer look at how data is protected to meet data protection and privacy requirements.
