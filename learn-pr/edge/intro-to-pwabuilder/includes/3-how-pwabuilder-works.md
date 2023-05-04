@@ -11,12 +11,11 @@ The app manifest and service worker files are crucial components of a PWA. PWABu
 
 1. **App Manifest:** The app manifest is a JSON file that provides metadata about your PWA, such as its name, description, icons, theme color, and display settings. PWABuilder generates an app manifest based on your existing website's information, which you can customize to ensure it aligns with your brand identity and desired user experience. PWABuilder also provides the ability to edit the JSON using a GUI.
 
-  :::image type="content" source="../media/3-manifest.png" alt-text="Screenshot displaying manifest page." lightbox="../media/3-manifest.png":::
+    :::image type="content" source="../media/3-manifest.png" alt-text="Screenshot displaying manifest page." lightbox="../media/3-manifest.png":::
 
 1. **Service Worker:** Service workers are JavaScript files that run in the background, separate from the main browser thread, enabling features like caching, offline functionality, and push notifications. PWABuilder creates a default service worker file with a basic caching strategy, which you can modify to suit your app's specific requirements and optimize its performance.
 
-  :::image type="content" source="../media/3-service-worker.png" alt-text="Screenshot displaying service worker page." lightbox="../media/3-service-worker.png":::
-
+    :::image type="content" source="../media/3-service-worker.png" alt-text="Screenshot displaying service worker page." lightbox="../media/3-service-worker.png":::
 
 ## Develop Contoso EcoEmporium's PWA with PWABuilder
 
