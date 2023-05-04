@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-c-sharp-part-2
 metadata:
   title: Create and run simple C# console applications (Get started with C#, Part 2)
   description: Use Visual Studio Code to develop C# console applications that implement arrays, foreach loops, and if statements.
-  ms.date: 05/03/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
