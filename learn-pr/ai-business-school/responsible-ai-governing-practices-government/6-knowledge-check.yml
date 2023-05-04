@@ -31,7 +31,7 @@ quiz:
       explanation: "Incorrect. While there are just a few established best practices for implementing AI in government scenarios, this doesn't necessitate a multistakeholder approach."
   - content: "Why should governments customize their responsible AI governance model?"
     choices:
-    - content: "Governments should tailor their responsible AI governance model to reflect their national priorities and culture."
+    - content: "Governments should tailor their responsible AI governance model to reflect their national/regional priorities and culture."
       isCorrect: true
       explanation: "Correct. It's important that governments take their nation’s priorities and culture into account when customizing their responsible AI governance model."
     - content: "Governments should tailor their responsible AI governance model to reflect the needs of their biggest businesses."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Incorrect. The desires of a nation’s head of state shouldn't solely dictate how a government customizes their responsible AI governance model."
     - content: "Governments don't have to tailor their responsible AI governance model, they can implement a model used by another nation."
       isCorrect: false
-      explanation: "Incorrect. Every nation is different, so every government should customize their responsible AI governance model to reflect national priorities and culture."
+      explanation: "Incorrect. Every nation is different, so every government should customize their responsible AI governance model to reflect national/regional priorities and culture."
   - content: "What is the key advantage of a hybrid governance model?"
     choices:
     - content: "A hybrid governance model ensures all agencies adhere to the same strict guidelines for responsible AI development and deployment."
