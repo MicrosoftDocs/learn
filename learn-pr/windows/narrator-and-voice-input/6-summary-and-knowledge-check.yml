@@ -3,7 +3,7 @@ title: Summary
 uid: learn-windows.narrator-and-voice-input.6-summary-and-knowledge-check
 metadata:
   title: Summary
-  description: This knowledge check will test your knowledge of adding inclusivity to an app.
+  description: This knowledge check tests your knowledge of adding inclusivity to an app.
   ms.date: 5/24/2019
   author: alvinashcraft
   ms.author: aashcraft
@@ -19,10 +19,10 @@ quiz:
     - content: What UI element property is checked for and used by the Narrator first?
       choices:
       - content: x:Name
-        explanation: This is the name to reference the UI element when coding, but it is not used by the Narrator.
+        explanation: This property is the name to reference the UI element when coding, but it isn't used by the Narrator.
         isCorrect: false
       - content: Content
-        explanation: This is used, but not as a first choice.
+        explanation: This property is used, but not as a first choice.
         isCorrect: false
       - content: AutomationPropertes.HelpText
         explanation: This property is spoken, but not as the name of the UI element.
@@ -36,10 +36,10 @@ quiz:
         explanation: Correct. Microphone and speech recognition permissions are both necessary for custom voice recognition.
         isCorrect: true
       - content: Microphone and two-factor authentication.
-        explanation: One of these permissions is necessary, but the other is not.
+        explanation: One of these permissions is necessary, but the other isn't.
         isCorrect: false
       - content: Protocol and speech recognition.
-        explanation: One of these permissions is necessary, but the other is not.
+        explanation: One of these permissions is necessary, but the other isn't.
         isCorrect: false
       - content: Accessibility and speech synthesis.
         explanation: Neither of these are permissions that need to be set.
@@ -47,7 +47,7 @@ quiz:
     - content: What happens when you clearly say, without pauses, "three times twenty equals" to the Windows speech recognition tool, with the calculator in focus?
       choices:
       - content: The calculator display shows "3 * 20".
-        explanation: This does not map to a button.
+        explanation: This doesn't map to a button.
         isCorrect: false
       - content: The calculator display shows "60".
         explanation: Even with pauses this shouldn't happen, as "20" won't be mapped to a button.
