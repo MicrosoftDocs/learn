@@ -38,7 +38,7 @@ With innovation happening in every corner of the government, interagency collabo
 
 ## India
 
-India’s policymakers intend to use AI to solve pressing social challenges such as income inequality and food insecurity, so they're cautious about overregulating it. NITI Aayog, a government think tank established with the aim of achieving the Sustainable Development Goals, created a national strategy for AI that emphasizes an “AI for all” approach. Anna Roy, advisor to NITI Aayog, says India prefers to keep an “open mind” when it comes to the ethics of AI and focuses on funding academic and commercial research.<sup>3</sup>
+India’s policymakers intend to use AI to solve pressing social challenges such as income inequality and food insecurity, so they're cautious about overregulating it. NITI Aayog, a government think tank established with the aim of achieving the Sustainable Development Goals, created a strategy for AI that emphasizes an “AI for all” approach. Anna Roy, advisor to NITI Aayog, says India prefers to keep an “open mind” when it comes to the ethics of AI and focuses on funding academic and commercial research.<sup>3</sup>
 
 India chose to implement a responsible AI governance model that provides their departments with key guiding principles for engaging with AI responsibly, then empowers them to execute their own projects as they see fit. They believe deeply that India can play an important role in testing AI use cases across healthcare, education, agriculture, and more that will fulfill inclusive AI criteria under the “AI for all” mandate.
 
