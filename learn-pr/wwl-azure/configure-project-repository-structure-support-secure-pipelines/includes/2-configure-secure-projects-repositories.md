@@ -42,31 +42,31 @@ There are five possible assignments made to a permission. They grant or restrict
 
 Here's what you need to know about permission settings:
 
-• **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
+- **Allow** or **Deny** explicitly grants or restricts users from performing specific tasks, and are usually inherited from group membership.
 
-• **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
+- **Not set** implicitly denies users the ability to perform tasks that require that permission, but allows membership in a group that does have that permission set to take precedence, also known as **Allow (inherited)** or **Inherited allow** and **Deny (inherited)** or **Inherited deny**.
 
-• For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
+- For most groups and almost all permissions, **Deny** overrides **Allow**. If a user belongs to two groups, and one of them has a specific permission set to **Deny**, that user is not able to perform tasks that require that permission even if they belong to a group that has that permission set to **Allow**.
 
 **When assigning permissions:**
 
 **Do:**
 
-• Use Azure Active Directory, Active Directory, or Windows security groups when managing lots of users.
+- Use Azure Active Directory, Active Directory, or Windows security groups when managing lots of users.
 
-• When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.
+- When adding teams, consider what permissions you want to assign to team leads, scrum masters, and other team members who may need to create and modify area paths, iteration paths, and queries.
 
-• When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.
+- When adding many teams, consider creating a **Team Administrators** custom group where you allocate a subset of the permissions available to **Project Administrators**.
 
-• Consider granting the [work item query folders Contribute.](https://learn.microsoft.com/azure/devops/boards/queries/set-query-permissions) permission to users or groups that require the ability to create and share work item queries for the project.
+- Consider granting the [work item query folders Contribute.](https://learn.microsoft.com/azure/devops/boards/queries/set-query-permissions) permission to users or groups that require the ability to create and share work item queries for the project.
 
 **Don't:**
 
-• Don't add users to multiple security groups which contain different permission levels. In certain cases, a **Deny** permission level may override an **Allow** permission level.
+- Don't add users to multiple security groups which contain different permission levels. In certain cases, a **Deny** permission level may override an **Allow** permission level.
 
-• Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to **Deny** for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.
+- Don't change the default assignments made to the valid users groups. If you remove or set the **View instance-level information** permission to **Deny** for one of the Valid Users groups, no users in the group are able to access the project, collection, or deployment, depending on the group you set.
 
-• Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
+- Don't assign permissions that are noted as 'Assign only to service accounts' to user accounts.
 
 You can change the project-level permissions for any project-level group, except the Project Administrators group. This is by design.
 
