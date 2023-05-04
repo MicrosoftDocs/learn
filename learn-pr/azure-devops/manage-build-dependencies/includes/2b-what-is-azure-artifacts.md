@@ -60,7 +60,7 @@ Ensuring the security of your packages is as important as ensuring the security 
 
 ### Feed permissions
 
-Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
+Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Collaborator and your project team is a Reader.
 
 ### Configure the pipeline to access security and license ratings
 
