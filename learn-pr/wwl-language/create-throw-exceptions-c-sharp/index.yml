@@ -33,12 +33,12 @@ products:
 subjects:
 - development-tools
 units:
-- learn.languages.create-throw-exceptions-c-sharp.introduction
-- learn.languages.create-throw-exceptions-c-sharp.examine-create-exception-c-sharp
-- learn.languages.create-throw-exceptions-c-sharp.exercise-create-throw-exception-c-sharp
-- learn.languages.create-throw-exceptions-c-sharp.exercise-challenge-create-throw-exception
-- learn.languages.create-throw-exceptions-c-sharp.review-solution-create-throw-exception-challenge
-- learn.languages.create-throw-exceptions-c-sharp.knowledge-check
-- learn.languages.create-throw-exceptions-c-sharp.summary
+- learn.wwl.create-throw-exceptions-c-sharp.introduction
+- learn.wwl.create-throw-exceptions-c-sharp.examine-create-exception-c-sharp
+- learn.wwl.create-throw-exceptions-c-sharp.exercise-create-throw-exception-c-sharp
+- learn.wwl.create-throw-exceptions-c-sharp.exercise-challenge-create-throw-exception
+- learn.wwl.create-throw-exceptions-c-sharp.review-solution-create-throw-exception-challenge
+- learn.wwl.create-throw-exceptions-c-sharp.knowledge-check
+- learn.wwl.create-throw-exceptions-c-sharp.summary
 badge:
   uid: learn.wwl.create-throw-exceptions-c-sharp.badge
