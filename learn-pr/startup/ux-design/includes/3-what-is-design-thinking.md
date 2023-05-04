@@ -22,7 +22,7 @@ Design thinking is often used as a framework for UX design, as it helps designer
 
 3. Creating solutions that allow you to prototype and test the assumptions out; (expound 1-2 sentences)
 
-    [ ![A conceptual image of 2 phones, marked A and B, separated by a lab beaker, with a green checkmark on the B image.](../media/hypothesis.png)](../media/hypothesis-high-resolution.png#lightbox)
+    [ ![Diagram of 2 phones, marked A and B, separated by a lab beaker, with a green checkmark on the B image.](../media/hypothesis.png)](../media/hypothesis-high-resolution.png#lightbox)
 
     **A/B Testing** - One of the most effective ways to test a hypothesis is to build and allow your user(s) to test assumptions out in order to refine the most optimal solution.
 
