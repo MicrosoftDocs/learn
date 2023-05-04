@@ -20,7 +20,7 @@ There are many parameters that you can adjust to change the performance of your 
 
 ## Chat Playground
 
-The Chat playground (preview) is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context. 
+The Chat playground is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context. 
 
 In the Chat playground, you're able to add *few-shot examples*. The term few-shot refers to providing a few of examples to help the model learn what it needs to do. You can think of it in contrast to zero-shot, which refers to providing no examples. 
 
