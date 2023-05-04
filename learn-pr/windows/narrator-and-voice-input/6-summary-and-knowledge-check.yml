@@ -42,12 +42,12 @@ quiz:
         explanation: One of these permissions is necessary, but the other isn't.
         isCorrect: false
       - content: Accessibility and speech synthesis.
-        explanation: Neither of these are permissions that need to be set.
+        explanation: Neither of these permissions need to be set.
         isCorrect: false
     - content: What happens when you clearly say, without pauses, "three times twenty equals" to the Windows speech recognition tool, with the calculator in focus?
       choices:
       - content: The calculator display shows "3 * 20".
-        explanation: This doesn't map to a button.
+        explanation: This entry doesn't map to a button.
         isCorrect: false
       - content: The calculator display shows "60".
         explanation: Even with pauses this shouldn't happen, as "20" won't be mapped to a button.
