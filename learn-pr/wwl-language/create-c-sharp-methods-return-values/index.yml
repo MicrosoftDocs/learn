@@ -3,7 +3,7 @@ uid: learn.wwl.create-c-sharp-methods-return-values
 metadata:
   title: Create C# methods that return values
   description: "This module covers the return keyword and returning values from methods."
-  ms.date: 04/25/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -24,10 +24,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.create-c-sharp-methods-return-values.introduction
