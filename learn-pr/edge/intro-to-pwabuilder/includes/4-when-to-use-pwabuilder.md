@@ -8,10 +8,10 @@
 
 By carefully considering these factors, you can make an informed decision about whether PWABuilder is the right choice for your project. Ultimately, the decision will depend on your specific requirements, resources, and priorities.
 
-## Evaluate EcoEmporium's project
+## Evaluate Contoso EcoEmporium's project
 
-EcoEmporium's team evaluated their project objectives and requirements, focusing on the need for a seamless app-like experience across devices and network conditions. They discovered PWABuilder and recognized its potential to simplify PWA development for their team.
+Contoso EcoEmporium's team evaluated their project objectives and requirements, focusing on the need for a seamless app-like experience across devices and network conditions. They discovered PWABuilder and recognized its potential to simplify PWA development for their team.
 
 They considered the time and resources available and found that PWABuilder could save time and effort by automating key PWA components. Before deciding, they explored alternative tools and frameworks, comparing features and support. They also considered long-term maintenance and updates, realizing PWABuilder would help keep their PWA up-to-date with evolving web standards.
 
-After this analysis, EcoEmporium concluded that PWABuilder was the right choice for their project, enabling efficient PWA development and deployment that met their requirements and priorities.
+After this analysis, Contoso EcoEmporium concluded that PWABuilder was the right choice for their project, enabling efficient PWA development and deployment that met their requirements and priorities.
