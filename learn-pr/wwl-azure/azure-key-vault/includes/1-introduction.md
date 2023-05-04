@@ -1,3 +1,4 @@
+
 An organization needs a secure place to store certificates and secrets. Azure Key Vault gives a cloud-based vault where you can secure store and programmatically access your secrets and certificates to protect your applications, identities, and data.
 
 ## Scenario
@@ -10,7 +11,7 @@ A security engineer uses Azure Key Vault to manage certificates and secrets, you
 
 ## Skills measured
 
-Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Secure data and applications (20-25%)
 

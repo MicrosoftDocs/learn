@@ -1,3 +1,4 @@
+
 Protecting your keys is essential to protecting your identity and data in the cloud.
 
 **Azure Key Vault** helps safeguard cryptographic keys and secrets that cloud applications and services use. Key Vault streamlines the key management process and enables you to maintain control of keys that access and encrypt your data. Developers can create keys for development and testing in minutes, and then migrate them to production keys. Security administrators can grant (and revoke) permission to keys, as needed.

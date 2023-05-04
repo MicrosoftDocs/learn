@@ -4,13 +4,11 @@ title: Create Key Vault keys
 metadata:
   title: Create Key Vault keys
   description: "Create Key Vault keys"
-  ms.date: 04/04/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: None
 content: |
   [!include[](includes/6-keys.md)]

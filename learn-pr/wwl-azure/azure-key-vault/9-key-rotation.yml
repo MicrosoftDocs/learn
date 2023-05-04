@@ -4,13 +4,11 @@ title: Configure key rotation
 metadata:
   title: Configure key rotation
   description: "Configure key rotation"
-  ms.date: 04/04/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: None
 content: |
   [!include[](includes/9-key-rotation.md)]
