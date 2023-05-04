@@ -24,7 +24,7 @@ quiz:
     - content: "To simplify the process of creating and deploying PWAs"
       isCorrect: true
       explanation: "Correct. PWABuilder is a tool that simplifies the process of creating and deploying PWAs, making it easier for developers to build web applications with features similar to native mobile apps."
-  - content: "How did EcoEmporium's team evaluate whether to use PWABuilder for their project?"
+  - content: "How did Contoso EcoEmporium's team evaluate whether to use PWABuilder for their project?"
     choices:
     - content: "They evaluated their project objectives and requirements"
       isCorrect: false
