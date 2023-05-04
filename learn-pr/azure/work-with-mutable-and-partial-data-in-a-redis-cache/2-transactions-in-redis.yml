@@ -5,8 +5,8 @@ metadata:
   title: Transactions in Azure Cache for Redis
   description: Transactions in Azure Cache for Redis
   ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

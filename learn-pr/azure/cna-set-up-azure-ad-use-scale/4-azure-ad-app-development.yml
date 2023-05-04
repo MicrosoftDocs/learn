@@ -5,8 +5,8 @@ metadata:
   title: Azure AD app development
   description: Azure AD app development
   ms.date: 05/19/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
