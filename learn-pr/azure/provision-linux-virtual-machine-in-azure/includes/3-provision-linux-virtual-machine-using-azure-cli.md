@@ -7,7 +7,7 @@ To use Azure CLI interactively, launch a shell available within your operating s
 
 If you want to avoid installing Azure CLI, you can use Azure Cloud Shell. Azure Cloud Shell is an interactive, authenticated shell that you can use to manage Azure resources from a web browser. Azure Cloud Shell can run Bash and Azure PowerShell, and it has the current version of Azure CLI already preinstalled. To access Azure Cloud Shell, open the [Azure Cloud Shell](https://shell.azure.com/) link in a web browser or launch it from the Azure portal by selecting the Azure Cloud Shell icon next to the global search textbox.
 
-![The Azure Cloud Shell icon in the Azure portal](../media/image11.png)
+![The Azure Cloud Shell icon in the Azure portal](../media/azure-portal-cloud-shell-icon.png)
 
 > [!NOTE]
 > Azure Cloud Shell provides the benefit of built-in authentication, which uses the credentials you provide when accessing your Azure subscription from your web browser. This eliminates the need for running the **az login** command at the beginning of each session, which is required when you run Azure CLI locally.
@@ -144,6 +144,6 @@ The Azure VM will begin running shortly afterwards, usually within a couple of m
 
 At this point, you'll be able to connect to the Azure VM by running the following command (after replacing the *\<public_ip_address>* placeholder with the IP address you identified in the Azure CLI-generated output) from the computer where the private key is stored:
 
-```bash
+```azurecli
 ssh azureuser@<public_ip_address>
 ```
