@@ -14,7 +14,7 @@ The app manifest and service worker files are crucial components of a PWA. PWABu
 
 ## Develop Contoso EcoEmporium's PWA with PWABuilder
 
-EcoEmporium's development team used PWABuilder to transform their existing website into a PWA, streamlining the process and optimizing it for various devices. They started by inputting their website's URL into PWABuilder, which then analyzed the site for PWA compatibility and suggested improvements to enhance its readiness. These improvements involved optimizing images, reducing the number of HTTP requests, and minifying JavaScript and CSS files to reduce their file size.
+Contoso EcoEmporium's development team used PWABuilder to transform their existing website into a PWA, streamlining the process and optimizing it for various devices. They started by inputting their website's URL into PWABuilder, which then analyzed the site for PWA compatibility and suggested improvements to enhance its readiness. These improvements involved optimizing images, reducing the number of HTTP requests, and minifying JavaScript and CSS files to reduce their file size.
 
 Following the recommendations, the development team made the necessary adjustments to their website. They then utilized PWABuilder's automatic generation of the app manifest and service worker files, minimizing the need for manual configuration. This allowed them to focus on customizing their PWA's appearance, behavior, and settings to better align with EcoEmporium's brand identity and meet their needs.
 
