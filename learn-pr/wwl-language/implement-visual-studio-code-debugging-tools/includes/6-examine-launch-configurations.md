@@ -92,7 +92,8 @@ To edit the `console` attribute:
 1. Select the colon and assigned value, and then enter a colon character.
 
 1. Notice that when you overwrite the existing information with a colon, Visual Studio Code IntelliSense displays the three options in a dropdown list.
-  ![Screenshot showing the console attribute options for a launch configuration.](../media/launch-configuration-console.png)
+
+   ![Screenshot showing the console attribute options for a launch configuration.](../media/launch-configuration-console.png)
 
 1. Select either **integratedTerminal** or **externalTerminal**.
 
@@ -116,7 +117,29 @@ The following screenshot shows how you could configure the launch.json file to i
 
 ```json
 "version": "0.2.0",
-"configurations": [   {       "name": "Launch Project123",       "type": "coreclr",       "request": "launch",       "preLaunchTask": "buildProject123",       "program": "${workspaceFolder}/Project123/bin/Debug/net7.0/Project123.dll",       "args": [],       "cwd": "${workspaceFolder}/Project123",       "console": "internalConsole",       "stopAtEntry": false   },   {       "name": "Launch Project456",       "type": "coreclr",       "request": "launch",       "preLaunchTask": "buildProject456",       "program": "${workspaceFolder}/Project456/bin/Debug/net7.0/Project456.dll",       "args": [],       "cwd": "${workspaceFolder}/Project456",       "console": "internalConsole",       "stopAtEntry": false   }
+"configurations": [
+    {
+        "name": "Launch Project123",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "buildProject123",
+        "program": "${workspaceFolder}/Project123/bin/Debug/net7.0/Project123.dll",
+        "args": [],
+        "cwd": "${workspaceFolder}/Project123",
+        "console": "internalConsole",
+        "stopAtEntry": false
+    },
+    {
+        "name": "Launch Project456",
+        "type": "coreclr",
+        "request": "launch",
+        "preLaunchTask": "buildProject456",
+        "program": "${workspaceFolder}/Project456/bin/Debug/net7.0/Project456.dll",
+        "args": [],
+        "cwd": "${workspaceFolder}/Project456",
+        "console": "internalConsole",
+        "stopAtEntry": false
+    }
 ]
 ```
 
@@ -128,7 +151,31 @@ The following screenshot shows how you could configure the tasks.json file. In t
 
 ```json
 "version": "2.0.0",
-"tasks": [   {       "label": "buildProject123",       "command": "dotnet",       "type": "process",       "args": [           "build",           "${workspaceFolder}/Project123/Project123.csproj",           "/property:GenerateFullPaths=true",           "/consoleloggerparameters:NoSummary"       ],       "problemMatcher": "$msCompile"   },   {       "label": "buildProject456",       "command": "dotnet",       "type": "process",       "args": [           "build",           "${workspaceFolder}/Project456/Project456.csproj",           "/property:GenerateFullPaths=true",           "/consoleloggerparameters:NoSummary"       ],       "problemMatcher": "$msCompile"   }
+"tasks": [
+    {
+        "label": "buildProject123",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+            "build",
+            "${workspaceFolder}/Project123/Project123.csproj",
+            "/property:GenerateFullPaths=true",
+            "/consoleloggerparameters:NoSummary"
+        ],
+        "problemMatcher": "$msCompile"
+    },
+    {
+        "label": "buildProject456",
+        "command": "dotnet",
+        "type": "process",
+        "args": [
+            "build",
+            "${workspaceFolder}/Project456/Project456.csproj",
+            "/property:GenerateFullPaths=true",
+            "/consoleloggerparameters:NoSummary"
+        ],
+        "problemMatcher": "$msCompile"
+    }
 ]
 ```
 
