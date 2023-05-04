@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Knowledge check
   questions:
-  - content: "Which of the following best describes the Azure CLI?"
+  - content: "Which of the following statements best describes the Azure CLI?"
     choices:
     - content: "Azure CLI is the only tool that can be used to create and configure Linux VMs."
       isCorrect: false

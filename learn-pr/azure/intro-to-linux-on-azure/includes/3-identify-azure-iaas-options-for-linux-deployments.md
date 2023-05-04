@@ -5,7 +5,9 @@ IaaS enables you to create a private, virtual datacenter for your organization a
 With scale sets, you can distribute your workloads to achieve high availability, redundancy, load balancing, and manual and automatic elastic scale. Common use cases include the following:
 
 - Large scale SaaS applications, stateless workloads, container workloads like Kubernetes, dev test, and load balanced front-end web applications
+
 - On-premises applications you want to migrate for cloud-scale manageability and economics 
+
 - Specialized workloads for high-performance computing and batch processing.
 
 [![Virtual machine scale sets](../media/virtual-machine-scale-sets-inline.png)](../media/virtual-machine-scale-sets-expanded.png#lightbox)
@@ -39,8 +41,11 @@ Three of the largest Linux vendors &mdash; [Red Hat](https://www.redhat.com/en/r
 After choosing a Linux distribution and virtual machine configuration, you take the following basic steps:
 
 - Instantiate the Linux images on your virtual machines.
+
 - Connect your virtual machines with one another and with the internet by using the virtual private networking built into Azure. 
+
 - Configure basic storage such as an operating system, paging/swap, and data disk.
+
 - As you build out your Linux IaaS environment, consider adding security, backup, and other capabilities by incorporating additional Azure infrastructure tools and services. These tools and services are summarized later in this module.
 
 ## Virtual networking and network appliances
@@ -66,7 +71,7 @@ In your on-premises Linux environment, you probably use a variety of storage mec
 
 [![Azure Storage options.](../media/azure-storage-inline.png)](../media/azure-storage-expanded.png#lightbox)
 
-Azure managed disks are one component of the [Azure Storage](/azure/storage/common/storage-introduction) platform. Azure managed disks are block-level virtual storage volumes managed by Azure and used with Azure virtual machines. At a minimum, VMs typically require an operating system disk containing the boot volume, a temporary disk for managing paging and swap files, and a data disk. 
+Azure managed disks are one component of the [Azure Storage](/azure/storage/common/storage-introduction) platform. Azure managed disks are block-level virtual storage volumes managed by Azure and used with Azure virtual machines. At a minimum, VMs typically require an operating system disk that contains the boot volume, a temporary disk for managing paging and swap files, and a data disk. 
 
 Storage options include these workload-specific services: 
 
@@ -90,7 +95,7 @@ Azure Storage data objects are accessible from anywhere in the world over HTTP o
 
 ## When to use Azure IaaS resources for Linux deployments
 
-Some organizations want to take a very hands-on approach with all aspects of their infrastructure, from the choice of virtual machine configurations to storage and network optimization to building custom development environments. For those organizations, IaaS is an appropriate approach.
+Some organizations want to take a hands-on approach with all aspects of their infrastructure, from the choice of virtual machine configurations to storage and network optimization to building custom development environments. For those organizations, IaaS is an appropriate approach.
 
 With Azure IaaS resources, you manage the virtual infrastructure while Azure manages the physical infrastructure. Here are some of the reasons you might use IaaS:
 

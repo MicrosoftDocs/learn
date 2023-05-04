@@ -22,7 +22,7 @@ Azure service platforms are managed with the common Azure Resource Manager acces
 
 ## When to use Azure PaaS resources for Linux deployments
 
-If your goal is to create new applications and services quickly, use PaaS to gain greater agility and reusability by adopting modern development tools and advanced application architectures. Integrate cutting-edge capabilities such as AI and advanced analytics via pre-built solutions found in Azure Marketplace. 
+If your goal is to create new applications and services quickly, use PaaS to gain greater agility and reusability by adopting modern development tools and advanced application architectures. Integrate cutting-edge capabilities such as AI and advanced analytics via prebuilt solutions found in Azure Marketplace. 
 
 Typical scenarios include:
 
