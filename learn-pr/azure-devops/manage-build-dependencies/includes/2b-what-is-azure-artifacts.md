@@ -52,7 +52,7 @@ Feeds in Azure Artifacts have three different views by default. These views are 
 * Prerelease. The @prerelease view contains all packages that have a label in their version number.
 * Local. The @local view contains all release and prerelease packages and the packages downloaded from upstream sources.
 
-You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt-in to prereleases of a certain quality level.
+You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt in to prereleases of a certain quality level.
 
 ## Package security in Azure Artifacts
 
