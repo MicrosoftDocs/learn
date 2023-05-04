@@ -18,10 +18,10 @@ quiz:
   questions:   
   - content: "It's considered to be good practice to come up with your own, home-grown encryption algorithm?"  
     choices:
-    - content: "Yes"
+    - content: "Yes."
       isCorrect: false
       explanation: "Incorrect. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."
-    - content: "No"
+    - content: "No."
       isCorrect: true
       explanation: "Correct. Rely on industry standard encryption and hashing implementations. Review the documentation to ensure you're using strong algorithms."    
 
@@ -31,9 +31,9 @@ quiz:
     - content: "Encryption."
       isCorrect: false
       explanation: "Incorrect. Encryption deals with maintaining confidentiality and integrity of the data by converting the data into an unreadable format to protect it from unauthorized access."    
-    - content: "Hashing"
+    - content: "Hashing."
       isCorrect: false
       explanation: "Incorrect. Hashing is a one-way cryptographic function while encryption and encoding is designed to work both ways."
-    - content: "Encoding"
+    - content: "Encoding."
       isCorrect: true
       explanation: "Correct!"    

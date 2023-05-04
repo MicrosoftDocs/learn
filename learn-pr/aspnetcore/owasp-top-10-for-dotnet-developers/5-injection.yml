@@ -21,10 +21,10 @@ quiz:
     - content: "Using an object relational mapper (ORM)."
       isCorrect: false
       explanation: "Entity Framework with LINQ is a powerful way of querying many relational database engines."
-    - content: "Using stored procedures"
+    - content: "Using stored procedures."
       isCorrect: false
       explanation: "Stored procedures are the most effective way of countering the SQL Injection vulnerability."
-    - content: "Using parameterized queries"
+    - content: "Using parameterized queries."
       isCorrect: false
       explanation: "Use parameterized queries where a direct SQL query must be used."
     - content: "At least one or combinations of few techniques should be used, including Entity Framework and input validation"

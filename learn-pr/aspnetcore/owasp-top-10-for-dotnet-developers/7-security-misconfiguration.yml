@@ -18,12 +18,12 @@ quiz:
   questions:
   - content: "In context of Secure DevOps, what does SDL stand for?"
     choices:
-    - content: "Schema Definition Language"
+    - content: "Schema Definition Language."
       isCorrect: false
       explanation: "Not quite"
-    - content: "Security Development Lifecycle"
+    - content: "Security Development Lifecycle."
       isCorrect: true
       explanation: "Correct! You may come across similar acronym SDLC, which means the same."
-    - content: "Supplier Document List"
+    - content: "Supplier Document List."
       isCorrect: false
       explanation: "Almost there!"
