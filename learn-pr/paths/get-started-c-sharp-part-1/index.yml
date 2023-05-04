@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-c-sharp-part-1
 metadata:
   title: Write your first code using C# (Get started with C#, Part 1)
   description: Learn the basic syntax and thought processes required to build simple applications using C#.
-  ms.date: 04/17/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -53,6 +53,9 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
 subjects:
