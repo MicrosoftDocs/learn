@@ -128,10 +128,10 @@ One project containing multiple repos works well if the products/services are wo
 
 Base your decision for one vs. many repositories on the following factors and tips:
 
-- code dependencies and architecture
+- Code dependencies and architecture.
 
-- put each independently deployable product or service in its own repository
+- Put each independently deployable product or service in its own repository.
 
-- don’t separate a codebase into many repositories if you expect to make coordinated code changes across those repos, as no tools can help coordinate those changes
+- Don’t separate a codebase into many repositories if you expect to make coordinated code changes across those repos, as no tools can help coordinate those changes.
 
-- if you have many disconnected services, one repo per service is a good strategy
+- If you have many disconnected services, one repo per service is a good strategy.
