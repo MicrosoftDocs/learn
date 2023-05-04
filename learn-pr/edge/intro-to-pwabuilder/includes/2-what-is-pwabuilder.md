@@ -11,7 +11,7 @@ PWAs offer several advantages over traditional web apps and native mobile apps:
  - Lower development and maintenance costs: PWAs leverage a single codebase, reducing the cost and complexity of developing and maintaining separate native apps for different platforms.
  - Enhanced discoverability: PWAs can be found and accessed through search engines, social media, and other online channels, making it easier for users to discover and share your app.
 
-## Analyze EcoEmporium's app needs
+## Analyze Contoso EcoEmporium's app needs
 
 Utilizing the advantages of PWAs, EcoEmporium, the eco-friendly e-commerce company, aims to enhance the online shopping experience for its customers. Through cross-platform compatibility, they can efficiently cater to Windows, Android, and iOS users with a single codebase, eliminating the need for multiple native apps. This streamlined approach allows the company to focus on updates, ensuring customers can always access the latest features for a smooth shopping experience. The company can allocate more resources to sourcing and offering high-quality, eco-friendly products by reducing development and maintenance costs. Furthermore, the PWA's discoverability through search engines and social media allows a broader audience to access and share the platform, ultimately promoting sustainable shopping choices across the digital landscape.
 
