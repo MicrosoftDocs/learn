@@ -61,7 +61,7 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/3-move-blobs-using-cli",
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/3-move-blobs-using-cli.md",
       "redirect_url": "/training/modules/copy-blobs-using-azure-cli/1-introduction",
       "redirect_document_id": false
     },
@@ -71,27 +71,27 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/5-move-blobs-using-azcopy",
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/5-move-blobs-using-azcopy.md",
       "redirect_url": "/training/modules/copy-blobs-using-azcopy/1-introduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/6-exercise-move-blobs-using-azcopy",
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/6-exercise-move-blobs-using-azcopy.md",
       "redirect_url": "/training/modules/copy-blobs-using-azcopy/3-exercise-move-blobs-using-azcopy",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/7-move-blobs-using-net-storage-client",
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/7-move-blobs-using-net-storage-client.md",
       "redirect_url": "/training/modules/copy-blobs-using-dotnet/1-introduction",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/8-exercise-move-blobs-using-net-storage-client",
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/8-exercise-move-blobs-using-net-storage-client.md",
       "redirect_url": "/training/modules/copy-blobs-using-dotnet/3-exercise-move-blobs-using-dotnet",
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/9-summary",
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/9-summary.md",
       "redirect_url": "/training/paths/copy-blobs-from-command-line-and-code/index",
       "redirect_document_id": false
     },
