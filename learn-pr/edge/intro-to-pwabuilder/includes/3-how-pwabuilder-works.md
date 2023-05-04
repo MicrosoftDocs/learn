@@ -18,4 +18,4 @@ Contoso EcoEmporium's development team used PWABuilder to transform their existi
 
 Following the recommendations, the development team made the necessary adjustments to their website. They then utilized PWABuilder's automatic generation of the app manifest and service worker files, minimizing the need for manual configuration. This allowed them to focus on customizing their PWA's appearance, behavior, and settings to better align with Contoso EcoEmporium's brand identity and meet their needs.
 
-Throughout the development process, EcoEmporium's team took advantage of the resources, documentation, and developer community support provided by PWABuilder. This assistance proved invaluable in helping them understand and navigate the PWA development process, ultimately leading to a successful deployment of their eco-friendly PWA.
+Throughout the development process, Contoso EcoEmporium's team took advantage of the resources, documentation, and developer community support provided by PWABuilder. This assistance proved invaluable in helping them understand and navigate the PWA development process, ultimately leading to a successful deployment of their eco-friendly PWA.
