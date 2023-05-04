@@ -10,7 +10,7 @@ In this module, you practice storing business data securely by using Azure Blob 
 
 Your organization is migrating storage to Azure. As the Azure Administrator your help is needed to configure the storage requirements. Your analysis shows that different audiences have different storage requirements. 
 
-:::image type="content" source="../media/taskoverview.png" alt-text="Diagram of customer requirements." border="false":::
+:::image type="content" source="../media/task-overview.png" alt-text="Diagram of customer requirements." border="false":::
 
 * The IT department needs storage for test and development scenarios. They also need to train new personnel on how to properly configure the storage.  
 * The company website needs storage. Customers use the website to order products. The storage must be highly available with low latency.   
