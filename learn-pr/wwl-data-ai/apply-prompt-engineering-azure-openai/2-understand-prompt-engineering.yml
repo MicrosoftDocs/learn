@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering
-title: Enter learning content title
+title: Understand prompt engineering
 metadata:
-  title: learning-content
+  title: Understand prompt engineering
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 5/2/2023
   author: ivorb

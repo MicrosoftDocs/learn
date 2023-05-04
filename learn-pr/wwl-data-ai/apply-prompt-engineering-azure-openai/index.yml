@@ -9,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.prod: learning-azure
 title: Apply prompt engineering with Azure OpenAI
-summary: "Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process allows for the creation of accurate and relevant responses, optimizing the performance of the model."
+summary: "Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model."
 abstract: |
   By the end of this module, you'll be able to:
     - "TODO learning objective 1"
