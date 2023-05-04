@@ -17,6 +17,8 @@ Utilizing the advantages of PWAs, Contoso EcoEmporium, the eco-friendly e-commer
 
 So, what is PWABuilder?
 
+:::image type="content" source="../media/2-pwa-homepage.png" alt-text="Screenshot displaying PWABuilder homepage." lightbox="../media/2-pwa-homepage.png":::
+
 To allow users to take advantage of PWAs, PWABuilder was created. It is an open-source, community-driven project developed by Microsoft that helps streamline the process of deploying Progressive Web Apps (PWAs). It offers a user-friendly interface and tools for generating the essential components of a PWA, such as the app manifest and service worker files, while providing guidance and best practices throughout the development process.
 
 ## PWABuilder's Purpose in Simplifying the PWA Creation Process
@@ -26,6 +28,8 @@ The primary goal of PWABuilder is to make PWA development more accessible and ef
  - Automatically generating app manifest and service worker files based on your website's information and settings, reducing the need for manual configuration.
  - Offering a range of customization options that allow you to tailor your PWA's appearance, behavior, and settings to meet your specific needs.
  - Providing resources, documentation, and developer community support to help you navigate the PWA development process with ease.
+
+  :::image type="content" source="../media/2-webboard-report.png" alt-text="Screenshot displaying PWABuilder report card page." lightbox="../media/2-webboard-report.png":::
 
 ## The Role of PWABuilder in Packaging PWAs
 
