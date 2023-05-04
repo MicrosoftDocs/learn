@@ -60,15 +60,12 @@ The following statement is a rule to detect MFA failures across multiple applica
 The where operator for ResultDescription will filter the result set for results including "MFA".  Next, the statement "summarize" produces a distinct count of application names and group by User and IP Address.  Finally, there's a check against a variable created (threshold) to see if the number exceeds the allowed amount.
 
 ```kusto
-let timeframe = 1d;
-
-let threshold = 3;
-
+let timeframe = 30d;
+let threshold = 1;
 SigninLogs
 | where TimeGenerated >= ago(timeframe)
-| where ResultDescription has "MFA"
+| where ResultDescription has "Invalid password"
 | summarize applicationCount = dcount(AppDisplayName) by UserPrincipalName, IPAddress
 | where applicationCount >= threshold
 
 ```
-
