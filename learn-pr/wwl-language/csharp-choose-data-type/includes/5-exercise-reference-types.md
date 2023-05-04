@@ -18,18 +18,36 @@ You'll next write some code that illustrates these ideas more clearly.
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
 1. Update your code in the Visual Studio Code Editor as follows:
-   ```csharp   int[] data;   ```    The previous code defines a variable that can hold a value of type `int` array.
-   At this point, `data` is merely a variable that could hold a reference, or rather, a memory address of a value in the heap. Because it's not pointing to a memory address, it's called a *null reference*.
+
+    ```csharp
+    int[] data;
+    ```
+  
+    The previous code defines a variable that can hold a value of type `int` array.
+
+    At this point, `data` is merely a variable that could hold a reference, or rather, a memory address of a value in the heap. Because it's not pointing to a memory address, it's called a *null reference*.
 
 1. Create an instance of `int` array using the `new` keyword
-   Update your code in the Visual Studio Code Editor to create and assign a new instance of `int` array, using the following code:
-   ```csharp   int[] data;   data = new int[3];   ```
-   The `new` keyword informs .NET Runtime to create an instance of `int` array, and then coordinate with the operating system to store the array sized for three int values in memory. The .NET Runtime complies, and returns a memory address of the new `int` array. Finally, the memory address is stored in the variable data. The `int` array's elements default to the value `0`, because that is the default value of an `int`.
+
+    Update your code in the Visual Studio Code Editor to create and assign a new instance of `int` array, using the following code:
+
+    ```csharp
+    int[] data;
+    data = new int[3];
+    ```
+
+    The `new` keyword informs .NET Runtime to create an instance of `int` array, and then coordinate with the operating system to store the array sized for three int values in memory. The .NET Runtime complies, and returns a memory address of the new `int` array. Finally, the memory address is stored in the variable data. The `int` array's elements default to the value `0`, because that is the default value of an `int`.
 
 1. Modify the code example to perform both operations in a single line of code
-   The two lines of code in the previous step are typically shortened to a single line of code to both declare the variable, and create a new instance of the `int` array. Modify the code from step 3 to the following.
-   ```csharp   int[] data = new int[3];      ```
-   While there's no output to observe, hopefully this exercise added clarity to how the C# syntax relates to the steps of the process for working with reference types.
+
+    The two lines of code in the previous step are typically shortened to a single line of code to both declare the variable, and create a new instance of the `int` array. Modify the code from step 3 to the following.
+
+    ```csharp
+    int[] data = new int[3];
+    
+    ```
+
+    While there's no output to observe, hopefully this exercise added clarity to how the C# syntax relates to the steps of the process for working with reference types.
 
 ### What's different about the C\# string data type?
 
