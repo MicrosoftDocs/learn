@@ -1,6 +1,7 @@
 
 
 
+
 In this challenge exercise, you need to use the Visual Studio Code debugger tools to isolate and fix the issues that are preventing the `MakeChange` method from successfully balancing the till. Once your application is updated, you need to verify your results.
 
 ## Specification
