@@ -79,7 +79,7 @@ The first step in creating a secure application is listing all the secrets you w
 
 5. Save the changes to the JSON file, and commit/push your changes to the repository.
 
-## Step 2: Create a new variable group
+## Step 3: Create a new variable group
 
 The next step is to create a new variable group in Azure DevOps to store the tokens you created in Step 1.
 
@@ -95,7 +95,7 @@ The next step is to create a new variable group in Azure DevOps to store the tok
 4. Make sure click on the "Lock" icon to secure the variable.
 5. Click on "Save" to create the variable group.
 
-## Step 3: Create a YAML Pipeline and import the variable group
+## Step 4: Create a YAML Pipeline and import the variable group
 
 The next step is to create a YAML pipeline in Azure Pipelines, or use existing definitions. This pipeline builds your application and references the tokens you created in Step 1.
 
@@ -138,7 +138,7 @@ The next step is to create a YAML pipeline in Azure Pipelines, or use existing d
 
 7. Click on "Save" to save the pipeline file with the new task, and commit.
 
-## Step 4: Run your release pipeline
+## Step 5: Run your release pipeline
 
 The last step is to run your release pipeline to build your application and replace the tokens with the values you stored in the variable group.
 
