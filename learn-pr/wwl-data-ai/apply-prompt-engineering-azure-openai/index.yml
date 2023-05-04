@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.apply-prompt-engineering-azure-openai
+metadata:
+  title: Apply prompt engineering with Azure OpenAI
+  description: "In this module, learn how prompt engineering can help to create and fine-tune prompts for natural language processing models. This involves designing and testing various prompts to optimize the performance of the model in generating accurate and relevant responses."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.prod: learning-azure
+title: Apply prompt engineering with Azure OpenAI
+summary: "Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process allows for the creation of accurate and relevant responses, optimizing the performance of the model."
+abstract: |
+  By the end of this module, you'll be able to:
+    - "TODO learning objective 1"
+    - "TODO learning objective 2"
+    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+prerequisites: |
+  - "TODO prerequisite 1"
+  - "TODO prerequisite 2"
+  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+iconUrl: /learn/achievements/generic-badge.svg
+levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+  - TODO
+roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+  - TODO
+products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+  {{products}}
+subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+  - TODO
+units:
+- learn.wwl.apply-prompt-engineering-azure-openai.introduction
+- learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering
+- learn.wwl.apply-prompt-engineering-azure-openai.generate-quality-responses-with-instructions
+- learn.wwl.apply-prompt-engineering-azure-openai.provide-context-to-improve-accuracy
+- learn.wwl.apply-prompt-engineering-azure-openai.exercise
+- learn.wwl.apply-prompt-engineering-azure-openai.knowledge-check
+- learn.wwl.apply-prompt-engineering-azure-openai.summary
+badge:
+  uid: learn.wwl.apply-prompt-engineering-azure-openai.badge
