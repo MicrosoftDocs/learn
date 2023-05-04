@@ -17,7 +17,8 @@ summary: |
   
   :::row:::
   :::column:::
-    <img src="/training/achievements/csharp-first-steps.svg" width="101" alt="Screenshot of the trophy for the Write your first code using C# (Get started with C#, Part 1) learning path." role="presentation"></img>
+    <img src="/training/achievements/csharp-first-steps.svg" width="101" alt="Screenshot of the 
+    for the Write your first code using C# (Get started with C#, Part 1) learning path." role="presentation"></img>
     
     [Write your first code using C# (Get started with C#, Part 1)](../get-started-c-sharp-part-1/index.yml)
   :::column-end:::
@@ -70,4 +71,4 @@ modules:
 - learn.wwl.guided-project-debug-handle-exceptions-c-sharp-console-application
 - learn.wwl.challenge-project-debug-c-sharp-console-application
 trophy:
-  uid: learn.wwl.get-started-c-sharp-part-6
+  uid: learn.wwl.get-started-c-sharp-part-6.trophy
