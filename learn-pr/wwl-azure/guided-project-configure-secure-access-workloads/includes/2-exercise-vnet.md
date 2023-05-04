@@ -3,7 +3,7 @@
 
 The IT department needs network isolation and segmentation for the web application. Once the virtual network is created, the next step would be to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
 
-To provide network isolation and segmentation for the web application you will create an Azure virtual network and configure subnets and virtual network peering to achieve secure and isolated network communication.  
+To provide network isolation and segmentation for the web application, you create an Azure virtual network and configure subnets and virtual network peering to achieve secure and isolated network communication.  
 
 ### **Architecture diagram**
 

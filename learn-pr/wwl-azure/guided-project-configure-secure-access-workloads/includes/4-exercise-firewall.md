@@ -2,11 +2,11 @@
 
 ## **Scenario** 
 
-Your oganization is looking to protect the web application from malicious traffic and block unauthorized access.
+Your organization is looking to protect the web application from malicious traffic and block unauthorized access.
 
-In addition to NSG and ASG, a firewall can be configured to add an extra layer of security to the web application. A firewall protects the web application from malicious traffic and blocks unauthorized access with polices you configure. Azure Policy allows you to define a rule hierarchy and enforce compliance. 
+In addition to NSG and ASG, a firewall can be configured to add an extra layer of security to the web application. A firewall protects the web application from malicious traffic and blocks unauthorized access with policies you configure. Azure Policy allows you to define a rule hierarchy and enforce compliance. 
 
-In this task you will configure application rules and network rules for the firewall using Firewall Policy. You can use Azure Firewall Policy to manage rule sets that the Azure Firewall uses to filter traffic.
+In this task you configure application rules and network rules for the firewall using Firewall Policy. You can use Azure Firewall Policy to manage rule sets that the Azure Firewall uses to filter traffic.
 
 ### Architecture Diagram
 

@@ -1,7 +1,7 @@
 
 ## **Scenario** 
 
-Your organization requires workloads to record and resolve domain names internally in virtual networks. Virtual machines in virtual networks can use domain name instead of IPs for internal communication. In that case, the domain names will be resolved by a private DNS zone through a virtual network link. 
+Your organization requires workloads to record and resolve domain names internally in virtual networks. Virtual machines in virtual networks can use domain name instead of IPs for internal communication. In that case, the domain names will be resolved with a private DNS zone through a virtual network link. 
 
 ### **Architecture diagram**
 

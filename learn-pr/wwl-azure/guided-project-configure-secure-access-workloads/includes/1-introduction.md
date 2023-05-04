@@ -2,7 +2,7 @@
 
 Welcome to this interactive skills validation experience. Completing this module helps prepare you for the ***Configure secure access to your workloads using Azure virtual networking*** assessment.
 
-In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice. The skills validated include creating and configuring virtual networks, network security groups, and Firewalls. Also, confiring routing and DNS to improve the security posture of the network. 
+In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice. The skills validated include creating and configuring virtual networks, network security groups, and Firewalls. Also, configuring routing and DNS to improve the security posture of the network. 
 
 > [!NOTE]
 > This is a guided project module where you complete an end-to-end project by following step-by-step instructions. 
@@ -17,12 +17,12 @@ Your organization has a web application hosted on Azure. As the Azure Administra
 - Route traffic to the firewall.
 - Record and resolve domain names internally. 
 
-In this lab, you will leverage Azure networking services to meet these requirements. 
+In this guided project, you leverage Azure networking services to meet these requirements. 
 
 
 ## Skilling areas
 
-You've used the Azure documentation to [review your networking options](/azure/networking/fundamentals/networking-overview). The project requires configuring virtual networks, network security groups, and Firewalls. Also, confiring routing and DNS to improve the security posture of the network. For each area listed, the subtasks you need to become familiar with have been identified.
+You've used the Azure documentation to [review your networking options](/azure/networking/fundamentals/networking-overview). The project requires configuring virtual networks, network security groups, and Firewalls. Also, configuring routing and DNS to improve the security posture of the network. For each area listed, the subtasks you need to become familiar with have been identified.
 
 | Skilling area | Skilling task |
 | --- | --- | 
