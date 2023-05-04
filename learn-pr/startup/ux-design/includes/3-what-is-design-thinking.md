@@ -16,7 +16,7 @@ Design thinking is often used as a framework for UX design, as it helps designer
 
 2. Challenging assumptions; (expound 1-2 sentences)
 
-    [ ![Two people in front of a large notepad and an idea cloud, symbolizing research. A right arrow points to a laptop with a heart on the screen and a person in front, symbolizing understanding of the user.](../media/understand-user.png)](../media/understand-user-high-resolution.png#lightbox)
+    [ ![Diagram of two people in front of a large notepad and an idea cloud, symbolizing research. A right arrow points to a laptop with a heart on the screen and a person in front, symbolizing understanding of the user.](../media/understand-user.png)](../media/understand-user-high-resolution.png#lightbox)
 
     **Challenge assumptions** - The first step to challenging assumptions is to establish a hypothesis in which your research will look to prove or disprove your assumption(s).
 
