@@ -6,7 +6,7 @@ The company needs storage for their offices and departments. This content is pri
 
 | Storage Plan | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task3.png" alt-text="Diagram with one storage account and two blob containers." border="true"::: | <ul><li>Create a storage account.<li>Create a storage container with restricted access.</li><li>Configure a shared access signature for partners.</li><li>Back up the public website storage.<li>Implement lifecycle management to move content to the cool tier.</li></ul>|
+| :::image type="content" source="../media/task-3.png" alt-text="Diagram with one storage account and two blob containers." border="true"::: | <ul><li>Create a storage account.<li>Create a storage container with restricted access.</li><li>Configure a shared access signature for partners.</li><li>Back up the public website storage.<li>Implement lifecycle management to move content to the cool tier.</li></ul>|
 
 **Exercise instructions**
 
