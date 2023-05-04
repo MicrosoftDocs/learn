@@ -16,7 +16,7 @@ If that explanation seems too complicated, don't worry. The main thing you need 
 
 Let's try to make our bot do something useful. Consider the problem of learning the capital/major cities of different countries/regions. Our first exercise is to turn our bot into a "capital dictionary" that returns the capital/major city of any given country/region.
 
-The [list of national capital/major cities][List of national capital/major cities] on Wikipedia highlights an important fairness and data complexity problem. Some countries/regions, like Switzerland, might not have a *de jure* capital/major city. Other countries/regions, like Israel, have a capital/major city that's not officially recognized by all other countries/regions.
+The [list of capital/major cities][List of capital/major cities] on Wikipedia highlights an important fairness and data complexity problem. Some countries/regions, like Switzerland, might not have a *de jure* capital/major city. Other countries/regions, like Israel, have a capital/major city that's not officially recognized by all other countries/regions.
 
 To make our bot as responsible as possible, we have to keep these tricky situations in mind. Unfortunately, there's no easy way to solve this problem.  For this module, we'll choose the simplest solution, which is to cite our data source. To implement a more complex approach, here are some options to consider:
 
@@ -150,5 +150,5 @@ We've now programmed our bot to inform users about a countries'/regions' capital
 
 <!-- Links -->
 
-[List of national capitals/major cities]: https://en.wikipedia.org/wiki/List_of_national_capitals
+[List of capitals/major cities]: https://en.wikipedia.org/wiki/List_of_national_capitals
 [SimpleMaps]: https://simplemaps.com/data/world-cities?azure-portal=true

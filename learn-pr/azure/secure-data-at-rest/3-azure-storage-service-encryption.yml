@@ -5,8 +5,8 @@ metadata:
   title: Secure data at rest by using Azure Storage Service Encryption
   description: Secure data at rest by using Azure Storage Service Encryption
   ms.date: 10/29/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Your organization has Linux virtual machines on Azure, and you want to enable Azure Disk Encryption to help secure all of the OS disks. How can you achieve this?
+  - content: Your organization has Linux virtual machines on Azure. How can you enable Azure Disk Encryption to help secure all of the OS disks?
     choices:
     - content: Ensure that the key vault and the virtual machines are in the same region. Create a backup, enable disk encryption, and then sign in to the machine to monitor it during encryption.
       isCorrect: false

@@ -48,7 +48,7 @@ In this task, we'll step through a scenario where we receive a DSR from a user, 
    - DSR form received today
    - Identity verified today, as follows
      - Avery Howard is a financial planning client who resides in the United Kingdom.
-     - Avery was contacted, and they provided verification with a national ID card.
+     - Avery was contacted, and they provided verification with a national/regional ID card.
 
     |Field|Details|
     |---|---|
