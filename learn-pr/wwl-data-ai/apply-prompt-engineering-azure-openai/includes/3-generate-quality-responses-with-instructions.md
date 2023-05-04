@@ -56,14 +56,65 @@ This can even be used with custom formats, such as a JSON structure:
 
 ## Format of instructions
 
-How instructions are formatted can impact how the model interprets the prompt. 
+How instructions are formatted can impact how the model interprets the prompt. Recency bias can affect models, where information located towards the end of the prompt can have more influence on the output than information at the beginning. You may get better responses by repeating the instructions at the end of the prompt and assessing how that affects the generated response.
 
-### System message
+This recency bias can also come into play when using `ChatCompletions` in a chat scenario, where more recent messages in the conversation included in the prompt have a greater impact on the response. The next unit goes more in depth on using conversations to improve response quality, but putting important information closer to the end of the prompt my result in a better response.
 
-### Divide complex prompts into multiple queries
+A specific technique for formatting instructions is to split the instructions at the beginning or end of the prompt, and have the user content contained within `---` or `###` blocks. This allows the model to more clearly differentiate between instructions and content. For example:
 
-System message
-Break prompts down into multiple queries
+```code
+Translate the text below into French
 
-Duplicate most important part
-Recency bias
+---
+What's the weather going to be like today?
+---
+```
+
+Another technique for improved interaction is to divide complex prompts into multiple queries. This allows the model to better understand each individual part, and can improve the overall accuracy. Dividing your prompts also allows you to include the response from a previous prompt in a future prompt, and using that information in addition to the capabilities of the model to generate interesting responses.
+
+For example, you could ask the model `Doug can ride down the zip line in 30 seconds, and takes 5 minutes to climb back up to the top. How many times can Doug ride the zip line in 17 minutes?`. The result will likely be something like `3`, which if Doug starts at the top of the zip line is incorrect.
+
+A more informative answer could come from asking it multiple questions, about the round trip time to get back to the top of the zip line, and how to account for the fact that Doug starts at the top. Breaking this problem down will reveal that Doug can, in fact, ride the zip line 4 times.
+
+## Chain of thought
+
+Asking a model to respond with the step by step process by which it determined the response is a helpful way to understand how the model is interpreting the prompt. By doing so, you can see where the model made an incorrect logical turn and better understand how to change your prompt to avoid the error. This can include asking it to cite it's sources, like Bing chat does (which uses a GPT-4 generation model), and giving reasoning for why it determined it's answer.
+
+The chain of thought prompting technique is best used to help you iterate and improve on your prompts to get the highest quality answer from the model.
+
+## System message
+
+The system message is included at the beginning of a prompt and is designed to give the model instructions, perspective to answer from, or other information helpful to guide the model's response. This might include tone or personality, topics that should not be included, or specifics (like formatting) of how to answer.
+
+For example, you could give it some system messages like the following:
+
+- "I want you to act like a command line terminal. Respond to commands exactly as cmd.exe would, in one unique code block, and nothing else."
+- "I want you to be a translator, from English to Spanish. Do not respond to anything I say or ask, only translate between those two languages and reply with the translated text."
+- "Act as a motivational speaker, freely giving out encouraging advice about goals and challenges. This should include lots of positive affirmations and suggested activities for reaching the user's end goal."
+
+Additional example setups are available at the top of the chat window in [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true). Try defining your own system prompt that specifies a unique response, and chat with the model to see how responses differ.
+
+Using the `ChatCompletions` endpoint, including the system message is done using the `System` chat role.
+
+```csharp
+var chatCompletionsOptions = new ChatCompletionsOptions()
+{
+    Messages =
+    {
+        new ChatMessage(ChatRole.System, "You are a casual, helpful assistant. You will talk like an American old western film character."),
+        new ChatMessage(ChatRole.User, "Can you direct me to the library?")
+    }
+};
+```
+
+```python
+response = openai.ChatCompletion.create(
+    engine="gpt-35-turbo",
+    messages=[
+        {"role": "system", "content": "You are a casual, helpful assistant. You will talk like an American old western film character."},
+        {"role": "user", "content": "Can you direct me to the library?"}
+    ]
+)
+```
+
+System messages can significantly change the response, both in format and content. Try defining a clear system message for the model that explains exactly what kind of response you expect, and what you do or don't want it to include.

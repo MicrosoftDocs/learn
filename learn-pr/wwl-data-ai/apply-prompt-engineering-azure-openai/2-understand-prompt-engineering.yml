@@ -20,6 +20,6 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.prod: TODO
   ms.service: TODO
-durationInMinutes: 1
+durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-prompt-engineering.md)]
