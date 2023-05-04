@@ -12,7 +12,7 @@ Azure Key Vault helps address the following issues:
  -  **Secrets management**. You can use Azure Key Vault to securely store and tightly control access to tokens, passwords, certificates, API keys, and other secrets.
  -  **Key management**. You use Azure Key Vault as a key management solution, making it easier to create and control the encryption keys used to encrypt your data.
  -  **Certificate management**. Azure Key Vault is also a service that lets you easily provision, manage, and deploy public and private SSL/TLS certificates for use with Azure and your internal connected resources.
- -  **Store secrets backed by hardware security modules (HSMs)**. The secrets and keys can be protected either by software, or FIPS 140-2 Level 2 validates HSMs.
+ -  **Store secrets backed by hardware security modules (HSMs)**. The secrets and keys can be protected either by software, or FIPS 140-2 Level 2 validated HSMs.
 
 Azure Key Vault is designed to support application keys and secrets. Key Vault is not intended as storage for user passwords.
 
