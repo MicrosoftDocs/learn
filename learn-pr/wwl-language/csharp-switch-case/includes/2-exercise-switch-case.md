@@ -1,4 +1,5 @@
 
+
 A `switch` statement is a C# selection statement that provides an alternative to an `if-elseif-else` branching construct. The `switch` statement provides advantages over an `if-elseif-else` construct when evaluating a single value against a list of known matching values.
 
 Consider the following scenario:
