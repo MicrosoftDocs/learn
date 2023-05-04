@@ -10,7 +10,7 @@ Design thinking is often used as a framework for UX design, as it helps designer
 
 1. Understanding your user; (expound 1-2 sentences)
 
-    [ ![Two hearts with a link between each other, visually displaying the concept of empathy.](../media/empathize.png)](../media/empathize-high-resolution.png#lightbox)
+    [ ![Diagram of two hearts with a link between each other, visually displaying the concept of empathy.](../media/empathize.png)](../media/empathize-high-resolution.png#lightbox)
 
     **Empathize** - Understanding your user is an impetus to achieving empathy when looking to understand your user at their core.
 
