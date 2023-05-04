@@ -37,7 +37,7 @@ quiz:
       explanation: ""
   - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
     choices:
-    - content: "GPT-3"
+    - content: "Completions"
       isCorrect: false
       explanation: ""
     - content: "Chat"
