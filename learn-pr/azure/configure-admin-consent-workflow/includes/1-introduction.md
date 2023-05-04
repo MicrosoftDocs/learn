@@ -22,4 +22,4 @@ You'll undertake the following tasks in this learn module:
 
 ## What is the main goal?
 
-In this module, you'll be able configure admin consent workflow in the Azure Portal. The workflow will enable designated reviewers to evaluate and respond to admin consent requests.
+In this module, you'll be able configure admin consent workflow in the Azure portal. The workflow enables designated reviewers to evaluate and respond to admin consent requests.
