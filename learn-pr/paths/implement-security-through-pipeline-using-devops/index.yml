@@ -13,6 +13,7 @@ summary: "This learning path helps you prepare for the Implement security throug
 prerequisites: |
   - None
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
   - intermediate
 roles:
