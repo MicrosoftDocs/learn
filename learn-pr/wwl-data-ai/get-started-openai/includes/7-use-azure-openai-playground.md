@@ -1,6 +1,6 @@
 Playgrounds are useful interfaces in Azure OpenAI Studio that you can use to experiment with your deployed models without needing to develop your own client application. Azure OpenAI Studio offers multiple playgrounds with different parameter tuning options.  
 
-## Completions Playground
+## Completions playground
 The Completions playground allows you to make calls to your deployed models through a text-in, text-out interface and to adjust parameters. You need to select the deployment name of your model under Deployments. Optionally, you can use the provided examples to get you started, and then you can enter your own prompts. 
 
 ![Screenshot of the Azure OpenAI Studio portal's completions playground.](../media/azure-openai-completions-playground.png)
@@ -18,7 +18,7 @@ There are many parameters that you can adjust to change the performance of your 
 - **Pre-response text**: Insert text after the user’s input and before the model’s response. This can help prepare the model for a response.
 - **Post-response text**: Insert text after the model’s generated response to encourage further user input, as when modeling a conversation.
 
-## Chat Playground
+## Chat playground
 
 The Chat playground is based on a conversation-in, message-out interface. You can initialize the session with a system message to set up the chat context. 
 
