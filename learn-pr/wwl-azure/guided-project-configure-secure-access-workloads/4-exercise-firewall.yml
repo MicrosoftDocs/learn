@@ -9,6 +9,6 @@ metadata:
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 60
+durationInMinutes: 30
 content: |
   [!include[](includes/4-exercise-firewall.md)]
