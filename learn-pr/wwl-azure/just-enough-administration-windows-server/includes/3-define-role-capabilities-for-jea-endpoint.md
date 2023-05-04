@@ -33,4 +33,3 @@ Using the following process can help you decide how to configure your role capab
 1. Create custom functions with validation logic to replace complex commands.
 
 1. Test and monitor the list of allowed commands over time and modify as needed.
-
