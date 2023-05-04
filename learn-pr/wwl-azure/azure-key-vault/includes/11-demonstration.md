@@ -1,4 +1,3 @@
-
 Use these Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we will explore the Azure Key Vault.

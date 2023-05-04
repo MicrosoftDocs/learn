@@ -1,4 +1,3 @@
-
 Azure Key Vault is a cloud based secure vault to store your certificates and secrets for use in your Azure solutions.
 
 You should be able to:

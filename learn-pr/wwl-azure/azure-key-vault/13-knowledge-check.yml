@@ -9,7 +9,9 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:

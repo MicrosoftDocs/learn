@@ -1,4 +1,3 @@
-
 You always want to make sure you can back up keys, certificates, and even secrets from your Key Vault if there is an emergency. There are two primary features to do this:
 
  -  Azure Key Vault Soft-delete
