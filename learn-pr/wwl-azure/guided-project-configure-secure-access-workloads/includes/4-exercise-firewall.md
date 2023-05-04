@@ -34,19 +34,15 @@ In this task you will configure application rules and network rules for the fire
     |Virtual network | **app-vnet** (RG1)|
     |Public IP address | Add new: **fwpip**|
 
-[Learn more on creating a firewall](/azure/firewall/tutorial-firewall-deploy-portal), [creating route tables](/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
+    [Learn more on creating a firewall](/azure/firewall/tutorial-firewall-deploy-portal), [creating route tables](/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
 
-1. Record the private IP address of **app-vnet-firewall** in the following Private IP Address text box: @lab.TextBox(PrivateIP)
+1. Record the private and public IP address of **app-vnet-firewall**.
 
-1. Record the public IP address of **app-vnet-firewall** in the following Public IP Address text box:  @lab.TextBox(PublicIP)
-
-1. Create a route table named ++app-vnet-firewall-rt++ in the **RG1** resource group by using the East US region.
+1. Create a route table named **app-vnet-firewall-rt** in the **RG1** resource group by using the East US region.
 
 1. Associate the **app-vnet-firewall-rt** route table to the **frontend** and **backend** subnets in **app-vnet**. 
 
-1. Create a route in the **app-vnet-firewall-rt** named ++outbound-firewall++ with address prefix ++0.0.0.0/0++ and **Next hop type**  ++Virtual Appliance++. Use the private IP address of the firewall ++@lab.Variable(PrivateIP)++ for the **Next hop address**.
-
-[Learn more on creating route tables](/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
+1. Create a route in the **app-vnet-firewall-rt** named **outbound-firewall** with address prefix **0.0.0.0/0** and **Next hop type**  **Virtual Appliance**. Use the private IP address of the firewall **@lab.Variable(PrivateIP)** for the **Next hop address**. [Learn more on creating route tables](/azure/virtual-network/manage-route-table) and [associating a route table to a subnet](/azure/virtual-network/tutorial-create-route-table-portal#associate-a-route-table-to-a-subnet).
 
 
 

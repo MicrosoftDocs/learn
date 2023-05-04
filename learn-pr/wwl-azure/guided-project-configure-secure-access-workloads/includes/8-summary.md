@@ -18,3 +18,12 @@ In this module, you learned how to:
 
 ## Learn more with online training
 
+- [Configure Azure Virtual Networks](/training/modules/configure-virtual-networks/9-simulation-create-networks?ns-enrollment-type=learningpath&ns-enrollment-id=learn.az-104-manage-virtual-networks)
+- [Exercise - Design and implement IP addressing for Azure virtual networks](/training/modules/design-ip-addressing-for-azure/5-exercise-implement-vnets)
+- [Configure virtual network peering](/training/modules/configure-vnet-peering/6-simulation-peering?ns-enrollment-type=learningpath&ns-enrollment-id=learn.az-104-manage-virtual-networks) 
+- [Distribute your services across Azure virtual networks and integrate them by using virtual network peering](/training/modules/integrate-vnets-with-vnet-peering/)
+- [Configure Network Security Groups](/training/modules/configure-network-security-groups/7-simulation-create-network-groups)
+- [Exercise: Deploy and configure Azure Firewall using the Azure portal](/training/modules/design-implement-network-security-monitoring/7-exercise-deploy-configure-azure-firewall-using-azure-portal)
+
+
+

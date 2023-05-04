@@ -52,7 +52,7 @@ To provide network isolation and segmentation for the web application you will c
     |Peering link name|**app-vnet-to-sharedservices**|
     |Peering link name | **sharedservices-to-app-vnet**|
 
-[Learn more about Virtual Network Peering](/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal)
+    [Learn more about Virtual Network Peering](/azure/virtual-network/virtual-network-manage-peering?tabs=peering-portal)
 
 1. Verify that the peering status of both VNets is Connected.
 

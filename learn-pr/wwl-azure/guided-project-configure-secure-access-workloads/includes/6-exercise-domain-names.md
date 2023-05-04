@@ -17,4 +17,4 @@ Your organization requires workloads to record and resolve domain names internal
 
 1. Create a DNS record set for VM2 named **backend** that is Type A with IP address **10.1.1.4** 
 
-1. Verify that contoso.com has a record set named backend
+1. Verify that **contoso.com** has a record set named **backend**
