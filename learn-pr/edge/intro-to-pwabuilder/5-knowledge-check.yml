@@ -37,7 +37,7 @@ quiz:
       explanation: "Incorrect alone. Although considering long-term maintenance and updates is important when deciding on a tool, as it may impact the overall success of the project, there's a better option to select."
     - content: "All of the above"
       isCorrect: true
-      explanation: "Correct. All of these factors were considered by the EcoEmporium team when evaluating whether to use PWABuilder for their project."
+      explanation: "Correct. All of these factors were considered by the Contoso EcoEmporium team when evaluating whether to use PWABuilder for their project."
   - content: "Which key component makes PWAs stand out compared to traditional web apps and native mobile apps?"
     choices:
     - content: "Reliability"
