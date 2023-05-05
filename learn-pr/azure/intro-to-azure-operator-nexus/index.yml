@@ -13,9 +13,9 @@ title: Introduction to Azure Operator Nexus
 summary: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
 abstract: |
   After completing this module, you'll be able to:
-  -Describe Operator Nexus hybrid systems architecture.
-  -Explain Operator Nexus deployment options. 
-  -Describe Operator Nexus Resource Providers.
+  - Describe Operator Nexus hybrid systems architecture.
+  - Explain Operator Nexus deployment options. 
+  - Describe Operator Nexus Resource Providers.
 
 prerequisites: |
   - Conceptual knowledge of Azure compute solutions.
