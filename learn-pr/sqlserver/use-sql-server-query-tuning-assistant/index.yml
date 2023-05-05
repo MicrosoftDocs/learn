@@ -8,7 +8,7 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
 title: Use the SQL Server Query Tuning Assistant
 summary: The Query Store feature introduced in SQL Server 2016 continuously monitors the performance of your queries. It caches query plans and gathers information that you can use to troubleshoot slow running queries. You can enable Query Store on any database on an instance of SQL Server 2016 or higher, including databases that have been migrated and continue to operate with an older compatibility level. The Query Tuning Assistant works alongside the Query Store. It uses the query performance statistics gathered when a database was migrated with its original compatibility level and compares them to the metrics gathered after the compatibility level is moved. By analyzing the differences, QTA finds queries that are regressing.
 abstract: |
