@@ -11,6 +11,7 @@ metadata:
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
   ms.custom: team=devex engagement-fy23
   ms.devlang: javascript
+  ms.service: app-service
 title: Deploy Node.js to Azure App Service
 summary: "Create Azure service resources for an Node.js web app. Configure, secure, and deploy the web app. Review the logs after deployment."
 abstract: |
