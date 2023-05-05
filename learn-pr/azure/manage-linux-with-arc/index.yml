@@ -8,6 +8,7 @@ metadata:
   ms.author: johnmarc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-arc
 title: Manage Linux with Arc
 summary: In this module, you'll discover how to manage Linux machines and systems using Azure Arc, SSH, and Ansible. 
 abstract: |
