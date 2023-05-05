@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learn-aspnetcore
   
+  ms.service: aspnet-core
 title: Accessibility and screen readers
 durationInMinutes: 2
 content: |
