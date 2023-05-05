@@ -9,13 +9,25 @@ For example, say you want to create a product description for a new water bottle
 **Write a product description for a new water bottle**
 
 ```code
-Introducing the latest addition to our product line - the innovative and eco-friendly water bottle. Made from high-quality, BPA-free materials, this bottle is designed to keep your beverages at the perfect temperature for hours. Its sleek and stylish design makes it the perfect accessory for any outdoor activity or workout session. With its convenient carrying handle and leak-proof lid, you can take it with you wherever you go, without worrying about spills or leaks. Plus, its easy-to-clean design ensures that you can use it again and again, making it the perfect choice for anyone looking for a reliable and sustainable water bottle.
+Introducing the latest addition to our product line - the innovative and eco-friendly water bottle.
+Made from high-quality, BPA-free materials, this bottle is designed to keep your beverages at the
+perfect temperature for hours. Its sleek and stylish design makes it the perfect accessory for any
+outdoor activity or workout session. With its convenient carrying handle and leak-proof lid, you 
+can take it with you wherever you go, without worrying about spills or leaks. Plus, its easy-to-clean
+design ensures that you can use it again and again, making it the perfect choice for anyone looking 
+for a reliable and sustainable water bottle.
 ```
 
 **Write a product description for a new water bottle that is 100% recycled. Be sure to include that it comes in natural colors with no dyes, and each purchase removes 10 pounds of plastic from our oceans**
 
 ```code
-Introducing our newest water bottle, the eco-friendly choice for the conscious consumer. Made from 100% recycled materials and available in natural colors with no dyes, this bottle is not only stylish but also sustainable. Each purchase of this bottle removes 10 pounds of plastic from our oceans, making it a responsible choice for those who care about the environment. Its durable and leak-proof design makes it perfect for outdoor activities, while its easy-to-carry handle makes it convenient to take on the go. Join us in our mission to reduce plastic waste and choose this eco-friendly water bottle for your daily hydration needs.
+Introducing our newest water bottle, the eco-friendly choice for the conscious consumer. Made from 
+100% recycled materials and available in natural colors with no dyes, this bottle is not only 
+stylish but also sustainable. Each purchase of this bottle removes 10 pounds of plastic from 
+our oceans, making it a responsible choice for those who care about the environment. Its durable 
+and leak-proof design makes it perfect for outdoor activities, while its easy-to-carry handle 
+makes it convenient to take on the go. Join us in our mission to reduce plastic waste and choose 
+this eco-friendly water bottle for your daily hydration needs.
 ```
 
 Including specifics that need to be included lets the model know what information to add to the description, making it more accurate to the new product.
@@ -42,6 +54,7 @@ Specifying the structure of your output can have a large impact on your results.
 This technique can be used with custom formats, such as a JSON structure:
 
 **Put two fictional characters into JSON of the following format**
+
 **{**  
   **firstNameFictional:**  
   **jobFictional:**

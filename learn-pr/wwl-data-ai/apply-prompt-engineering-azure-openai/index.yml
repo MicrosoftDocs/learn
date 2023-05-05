@@ -20,9 +20,8 @@ abstract: |
 prerequisites: |
   - Familiarity with Azure and the Azure portal.
   - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
-  - Experience programming with C# or Python.
-  If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
-  Before starting this module, we recommend you complete the previous modules in the [Develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/) learning path
+  - Experience programming with C# or Python. If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+  - Before starting this module, we recommend you complete the previous modules in the [Develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/) learning path
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate

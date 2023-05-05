@@ -14,28 +14,6 @@ durationInMinutes: 2
 content: |
 quiz:
   questions:
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
   - content: "How can developers optimize the performance of Azure OpenAI models?"
     choices:
     - content: "By using complex instructions that are difficult to understand"
