@@ -9,6 +9,8 @@ metadata:
   manager: nitinme
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: cognitive-services 
+  ms.subservice: personalizer 
 title: Introduction to Personalizer
 summary: Discover the services available on Azure to personalize experiences for your users.
 abstract: | 
