@@ -11,4 +11,16 @@ metadata:
   ms.service: operator-nexus
 durationInMinutes: 5
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  questions:
+  - content: "What is the function of Resource Providers in Azure?"
+    choices:
+    - content: "Resource Providers are responsible for managing Azure resources such as virtual machines, storage accounts, and databases."
+      isCorrect: true
+      explanation: "Correct! Resource Providers are responsible for managing Azure resources such as virtual machines, storage accounts, and databases. They provide the necessary operations to create, read, update, and delete resources."
+    - content: "Resource Providers are responsible for managing Azure subscriptions and billing."
+      isCorrect: false
+      explanation: "Incorrect. Resource Providers are not responsible for managing Azure subscriptions and billing. This is the responsibility of the billing and subscription management team."
+    - content: "Resource Providers are responsible for managing Azure Active Directory and user access."
+      isCorrect: false
+      explanation: "Incorrect. Resource Providers are not responsible for managing Azure Active Directory and user access. This is the responsibility of the identity and access management team."
