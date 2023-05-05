@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.apply-prompt-engineering-azure-openai
 metadata:
-  title: Apply prompt engineering with Azure OpenAI
+  title: Apply prompt engineering with the Azure OpenAI Service
   description: "In this module, learn how prompt engineering can help to create and fine-tune prompts for natural language processing models. Prompt engineering involves designing and testing various prompts to optimize the performance of the model in generating accurate and relevant responses."
   ms.date: 5/2/2023
   author: ivorb
@@ -10,7 +10,7 @@ metadata:
   ms.prod: learning-azure
   ms.service: cognitive-services
   ms.subservice: openai 
-title: Apply prompt engineering with Azure OpenAI
+title: Apply prompt engineering with the Azure OpenAI Service
 summary: "Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model."
 abstract: |
   By the end of this module, you'll be able to:
