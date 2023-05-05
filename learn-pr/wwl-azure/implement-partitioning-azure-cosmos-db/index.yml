@@ -8,6 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: cosmos-db
 title: Implement partitioning in Azure Cosmos DB
 summary: Learn how partitions are organized in Azure Cosmos DB and how to choose an appropriate partition key for your solution.
 abstract: |
