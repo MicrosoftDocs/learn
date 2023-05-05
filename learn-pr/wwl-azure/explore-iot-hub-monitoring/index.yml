@@ -8,6 +8,7 @@ metadata:
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: iot-hub
 title: Explore IoT Hub monitoring
 summary: This module provides you with experience configuring IoT Hub monitoring for your solution, setting up and triggering alerts, and reviewing the diagnostics logs.
 abstract: |
