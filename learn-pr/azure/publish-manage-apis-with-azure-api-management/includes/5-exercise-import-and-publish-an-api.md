@@ -13,7 +13,7 @@ The first part of the exercise is to import the NorthWind Shoes API into an API 
 
 1. In the Azure portal resource menu or from the **Home** page, select **All Resources**, and then select your API Management service.
 
-1. In the API Management service menu, under **APIs**, select **APIs**, and then **+ API**.
+1. In the API Management service menu, under **APIs**, select **APIs**, and then **+ Add API**.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** pane appears.
 
