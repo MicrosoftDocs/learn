@@ -10,6 +10,7 @@ metadata:
   manager: jroth
   ms.topic: interactive-tutorial  
   ms.prod: learning-azure
+  ms.service: mysql
 title: Introduction to Azure Database for MySQL
 summary: Azure Database for MySQL is a managed database as a service offering that can handle mission-critical workloads with predictable performance and dynamic scalability.
 abstract: |
