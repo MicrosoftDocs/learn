@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: What is Rust
 summary: A quick introduction to Rust language features and how Rust compares with other programming languages.
 abstract: |
