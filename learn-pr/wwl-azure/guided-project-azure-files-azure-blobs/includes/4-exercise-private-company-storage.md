@@ -2,13 +2,13 @@
 
 The company needs storage for their offices and departments. This content is private to the company and shouldn't be shared without consent. The company wants to use this storage to back up the public website storage. Also, to reduce costs the storage should reside in the least expensive storage tier.
 
-**Architecture diagram**
+## Architecture diagram
 
 | Storage Plan | Tasks|
 | --- | --- |
 | :::image type="content" source="../media/task-3.png" alt-text="Diagram with one storage account and two blob containers." border="true"::: | <ul><li>Create a storage account.<li>Create a storage container with restricted access.</li><li>Configure a shared access signature for partners.</li><li>Back up the public website storage.<li>Implement lifecycle management to move content to the cool tier.</li></ul>|
 
-**Exercise instructions**
+## Exercise instructions
 
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).

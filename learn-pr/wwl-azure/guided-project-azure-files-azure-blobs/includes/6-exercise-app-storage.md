@@ -3,13 +3,13 @@
 
 The company is designing and developing a new app. Developers need to ensure the storage is only accessed using keys and managed identities. The developers would like to use role-based access control. To help with testing, protected immutable storage is needed. 
 
-**Architecture diagram**
+## Architecture diagram
 
 | Storage Plan  | Tasks|
 | --- | --- |
 | :::image type="content" source="../media/task-5.png" alt-text="Diagram with a storage account, managed identities, and a key vault." border="true"::: | <ul><li>Create a storage account. </li><li> Configure a user-assigned managed identity. </li><li>  Configure a system-assigned managed identity.</li><li>  Configure a key vault with key.  </li><li>  Configure a container with immutable storage. </li><li>  Configure an encryption scope. </li></ul> |
 
-**Exercise instructions**
+## Exercise instructions
 
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
