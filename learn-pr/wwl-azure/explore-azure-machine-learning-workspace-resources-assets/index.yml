@@ -8,6 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Explore Azure Machine Learning workspace resources and assets
 summary: As a data scientist, you can use Azure Machine Learning to train and manage your machine learning models. Learn what Azure Machine Learning is, and get familiar with all its resources and assets.
 abstract: |
