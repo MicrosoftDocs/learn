@@ -10,6 +10,7 @@ metadata:
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: rtos
 title: Introduction to Azure RTOS NetX Duo
 summary: Learn the basics of Azure RTOS NetX Duo.
 abstract: |
