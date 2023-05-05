@@ -24,6 +24,9 @@ If you aren't using GitHub Codespaces, obtain the project files and open them in
 
 Let's take a moment to get familiar with the existing code in the ContosoPizza folder. The project is an ASP.NET Core web app created using the `dotnet new webapp` command. The changes your teammates made are:
 
+> [!TIP]
+> Don't spend too much time reviewing these files. Your teammates have already done the work to create the database and the service to read and write pizzas to the database. You'll be building a UI that consumes that service in the next unit.
+
 - A *Models* folder was added to the project.
   - The model folder contains a `Pizza` class that represents a pizza.
 - A *Data* folder was added to the project.
@@ -39,9 +42,6 @@ Entity Framework Core generated a few things, too:
   - The migrations folder contains code to create the database schema.
 - The SQLite database file *ContosoPizza.db* was generated.
   - If you have the [SQLite extension](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite) installed (or you're using GitHub Codespaces), you can view the database by right-clicking the file and selecting **Open Database**. The database schema is shown in the **SQLite Explorer** tab of the Explorer pane.
-
-> [!TIP]
-> Don't spend too much time reviewing these files. Your teammates have already done the work to create the database and the service to read and write pizzas to the database. You'll be building a UI that consumes that service in the next unit.
 
 ## Review the Razor Pages project structure
 
