@@ -8,6 +8,8 @@ metadata:
   ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: waf
+  ms.subservice: waf-pillar-reliability
 title: Microsoft Azure Well-Architected Framework - Reliability
 summary: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by incorporating reliability into your architecture.
 abstract: |
