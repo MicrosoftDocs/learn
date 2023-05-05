@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   #ms.learn-contact: jediet
+  ms.service: cache
 title: Work with mutable and partial data in Azure Cache for Redis
 summary: Use Azure Cache for Redis to store frequently accessed data. Learn how to create transactions, manage memory, and use the cache-aside pattern.
 abstract: |
