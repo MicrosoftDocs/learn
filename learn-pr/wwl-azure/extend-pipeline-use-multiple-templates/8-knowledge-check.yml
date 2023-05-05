@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extend-pipeline-use-multiple-templates.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+quiz:
+  questions:
+  - content: "What is a nested template in Azure Pipelines?"
+    choices:
+    - content: "A default template for specific technologies and their dependencies."
+      isCorrect: false
+      explanation: "Incorrect. Default templates don't automatically implement nested templates."
+    - content: "A template that is designed to run only on specific agents."
+      isCorrect: false
+      explanation: "Incorrect. All templates can run in one or more agents based on the pipeline configuration."
+    - content: "A template that includes another template inside it."
+      isCorrect: true
+      explanation: "Correct. A nested template is a template that includes another template inside it. It allows for greater code reuse and easier management of pipelines."
+  - content: "How can you share secret variables across multiple pipelines in Azure Pipelines?"
+    choices:
+    - content: "By defining the variable in each pipeline separately."
+      isCorrect: false
+      explanation: "Incorrect. Defining the variable in each pipeline separately will limit the scope of your variables."
+    - content: "By using variable groups and defining secret variables."
+      isCorrect: true
+      explanation: "Correct. By using variable groups and defining secret variables. It ensures that the variable is securely stored and can be accessed by multiple pipelines."
+    - content: "By defining the variable in a script and sharing it across multiple pipelines."
+      isCorrect: false
+      explanation: "Incorrect. It's possible to use templates and implement variable groups to share cross pipelines, but not by using scripts sharing cross pipelines."
+  - content: "What is the purpose of conditionally removing script tasks from templates in Azure Pipelines?"
+    choices:
+    - content: "To improve security by preventing unnecessary execution of scripts."
+      isCorrect: true
+      explanation: "Correct. To improve security by preventing unnecessary execution of scripts. It helps reduce the pipeline's attack surface and prevent potential security vulnerabilities."
+    - content: "To improve the performance of the pipeline."
+      isCorrect: false
+      explanation: "False. Only removing script tasks from templates doesn't directly help improve security in the pipeline or improve performance."
+    - content: "To reduce the amount of code in templates."
+      isCorrect: false
+      explanation: "False. Reducing the amount of code in templates is good to make it easy to manage and read, but don't directly help improve security."
