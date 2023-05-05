@@ -8,6 +8,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: language-understanding 
 title: Build a Language Understanding model
 summary: The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language.
 abstract: |
