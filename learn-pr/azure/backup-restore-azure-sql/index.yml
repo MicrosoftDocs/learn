@@ -9,6 +9,8 @@ metadata:
   manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: sql-db-mi
+  ms.subservice: backup-restore
 title: Back up and restore your Azure SQL database
 summary: Protect the data in your Azure SQL database and recover from data loss or corruption with backup and restore.
 abstract: | 
