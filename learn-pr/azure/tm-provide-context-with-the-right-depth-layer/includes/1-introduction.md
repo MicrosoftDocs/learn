@@ -11,10 +11,10 @@ Data-flow diagram depth layers help you understand how much context to include. 
 
 ## Learning objectives
 
-In this module, you'll be able to:
+In this module, you'll:
 
 - Learn the differences between the data-flow diagram depth layers.
-- Know when to use each layer.
+- Learn when to use each layer.
 
 ## Prerequisites
 
