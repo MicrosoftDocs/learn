@@ -8,6 +8,7 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  ms.service: xamarin
 title: Prepare to publish your Xamarin app
 summary: "After your app is code complete, you still need to take many steps to prepare it for submission to a store. In this module, you'll see how to prepare your app for publishing."
 abstract: |
