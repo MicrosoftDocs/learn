@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: vpn-gateway 
 title: Configure Azure VPN Gateway
 summary: Learn how to create VPN gateways and securely connect your company sites to Azure.
 abstract: |
