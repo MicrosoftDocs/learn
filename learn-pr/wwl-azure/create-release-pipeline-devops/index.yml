@@ -8,6 +8,8 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
 title: Create a release pipeline
 summary: This module describes Azure Pipelines capabilities, build and release tasks.
 abstract: |
