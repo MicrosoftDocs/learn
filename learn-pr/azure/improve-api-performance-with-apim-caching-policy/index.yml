@@ -8,6 +8,7 @@ metadata:
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: api-management
 title: Improve the performance of an API by adding a caching policy in Azure API Management
 summary: |
   API Management policies are configurable modules that you can add to APIs to change 
