@@ -29,6 +29,5 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn.wwl.provision-virtual-machines-azure.summary
 badge:
   uid: learn.wwl.provision-virtual-machines-azure.badge
