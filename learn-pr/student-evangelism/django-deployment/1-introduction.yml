@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-django
   ms.custom: team=nextgen
+  ms.service: azure
 title: Deploy to Azure
 durationInMinutes: 1
 content: |

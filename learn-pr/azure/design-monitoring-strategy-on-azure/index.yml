@@ -8,6 +8,7 @@ metadata:
   ms.author: kaprince
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure
 title: Design a holistic monitoring strategy on Azure
 summary: Use monitoring services on Azure to bring operational excellence to your applications and infrastructure.
 abstract: | 

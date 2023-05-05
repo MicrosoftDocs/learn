@@ -9,6 +9,7 @@ metadata:
   ms.author: yenchiho
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to Elastic on Azure
 summary: Discover the unique benefits of running Elastic on Azure and the different deployment options that support your Linux workloads.
 abstract: |
