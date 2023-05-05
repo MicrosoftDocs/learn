@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.provision-virtual-machines-azure.introduction
 - learn.wwl.provision-virtual-machines-azure.explore-azure
-- learn.wwl.provision-virtual-machines-azure.determine-appropriate-virtual-machine-size
 - learn.wwl.provision-virtual-machines-azure.exercise-create-virtual-machine-by-using-azure-cli
 - learn.wwl.provision-virtual-machines-azure.knowledge-check
 - learn.wwl.provision-virtual-machines-azure.summary
