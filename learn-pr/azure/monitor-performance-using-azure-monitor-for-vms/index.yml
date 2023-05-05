@@ -13,6 +13,8 @@ metadata:
   - team=cloud_advocates
   ms.contributors:
   - shkuehn-12042020
+  ms.service: azure-monitor
+  ms.subservice: insights
 summary: Deploy monitoring for workloads on virtual machines. Set up a log analytics workspace, onboard virtual machines to Azure Monitor VM Insights, and build log queries by using Kusto Query Language.
 abstract: |
   - Evaluate Azure Monitor Logs and Azure Monitor VM Insights.
