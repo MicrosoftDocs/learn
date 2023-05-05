@@ -8,6 +8,8 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Create multi-page Xamarin.Forms apps with stack and tab navigation
 summary: "Analyze your app's page structure and choose the appropriate navigation paradigm. Implement stack navigation by using NavigationPage, and tab navigation with TabbedPage."
 abstract: |

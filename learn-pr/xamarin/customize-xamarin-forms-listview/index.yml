@@ -8,6 +8,8 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Customize a Xamarin.Forms ListView
 summary: Create custom cell layouts that fit the shape of your data. Group related cells together to help your users find what they're interested in.
 abstract: |
