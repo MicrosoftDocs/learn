@@ -8,6 +8,7 @@ metadata:
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.devlang: csharp
 title: Format alphanumeric data for presentation in C#
 summary: Use C# to format strings with white space, special characters, padding, and alignment. Give context to numeric data like currency, percentages, and numbers with decimals.
 abstract: |

@@ -8,6 +8,7 @@ metadata:
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.devlang: csharp
 title: Guided project - Develop conditional branching and looping structures in C#
 summary: Gain experience developing a console app that implements selection and iteration statements to achieve app specifications.
 abstract: |

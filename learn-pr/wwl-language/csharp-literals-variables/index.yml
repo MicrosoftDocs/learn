@@ -8,6 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.devlang: csharp
 title: Store and retrieve data using literal and variable values in C#
 summary: Use data in your applications by creating literal values and variable values of different data types.
 abstract: |
