@@ -34,12 +34,13 @@ subjects:
 units:
 - learn.create-razor-pages-aspnet-core.1-introduction
 - learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages
+- learn.create-razor-pages-aspnet-core.exercise-customize-the-project
+- learn.create-razor-pages-aspnet-core.work-in-progress
 - learn.create-razor-pages-aspnet-core.3-setup-environment
 - learn.create-razor-pages-aspnet-core.4-run-razor-pages-project
 - learn.create-razor-pages-aspnet-core.5-create-new-razor-page-and-form
 - learn.create-razor-pages-aspnet-core.6-create-pagemodel
 - learn.create-razor-pages-aspnet-core.7-exercise-create-pagemodel
 - learn.create-razor-pages-aspnet-core.10-summary
-iconUrl: /training/achievements/aspnetcore/create-a-web-ui-with-aspnet-core.svg
 badge:
   uid: learn.create-razor-pages-aspnet-core.badge
