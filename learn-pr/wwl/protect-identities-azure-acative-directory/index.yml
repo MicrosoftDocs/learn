@@ -8,6 +8,7 @@ metadata:
   ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: active-directory-ds
 title: Protect identities in Azure Active Directory
 summary: This module introduces students to the various authentication methods used to protect identities.
 abstract: |
