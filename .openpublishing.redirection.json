@@ -22068,6 +22068,11 @@
       "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/6-create-deploy-resource-manager-template.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/2-azure-resource-manager-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
