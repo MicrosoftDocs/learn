@@ -22053,11 +22053,11 @@
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-exercise-data-explorer.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
-
-
-
-
-
