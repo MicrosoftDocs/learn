@@ -8,6 +8,9 @@ metadata:
   ms.author: kadelane
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: t-sql
 title: Combine multiple tables with JOINs in T-SQL
 summary: Explore T-SQL queries accessing data from multiple tables with various kinds of JOIN operations.
 abstract: |
