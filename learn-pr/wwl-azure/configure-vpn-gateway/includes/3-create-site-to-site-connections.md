@@ -22,4 +22,4 @@ Before we start looking at the configuration details, there are few notes to rev
 - **Step 6: Configure the VPN device**. The on-premises step is needed only when configuring a site-to-site connection. If you're following these steps to create another type of VPN gateway configuration, you might not need to complete this step.
 
 > [!Important]
-> Take time to carefully plan your network configuration before you begin the implementaton. Identifying your IP addresses before you begin configuration is critical. Consider a scenario where a duplicate IP address range exists on both sides of your VPN connection. In this case, traffic won't route as expected. Create a map of IP addresses and ranges to ensure all traffic flows as expected.
+> Take time to carefully plan your network configuration before you begin the implementation. Identifying your IP addresses before you begin configuration is critical. Consider a scenario where a duplicate IP address range exists on both sides of your VPN connection. In this case, traffic won't route as expected. Create a map of IP addresses and ranges to ensure all traffic flows as expected.

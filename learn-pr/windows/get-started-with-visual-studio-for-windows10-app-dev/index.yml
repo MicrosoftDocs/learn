@@ -4,8 +4,8 @@ metadata:
   title: Start developing Windows 10 apps in Visual Studio
   description: Learn how to use Visual Studio in GitHub to create, debug, and deploy Windows 10 applications with themes, refactoring, and code snippets.
   ms.date: 04/19/2023
-  author: JohnKennedy
-  ms.author: jken
+  author: alvinashcraft
+  ms.author: aashcraft
   manager: jmartens
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
