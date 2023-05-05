@@ -2,7 +2,7 @@ By providing context to the AI model, it allows the model to better understand w
 
 ## Conversation history
 
-Conversation history enables the model to continue responding in a similar way (such as tone or formatting) as well as allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
+Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
 
 Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground in [Azure OpenAI Studio](https://oai.azure.com/portal/chat?azure-portal=true), include conversation history automatically which results in a richer, more meaningful conversation. In the **Parameters** section below the chat window of the Azure OpenAI Studio chat playground, you can specify how many past messages you want included. Try reducing that to 1 or increasing to max to see how different amounts of history impact the conversation.
 
@@ -13,7 +13,7 @@ Chat systems can also utilize the summarization capabilities of the model to sav
 
 Using a user defined example conversation is what is called *few shot learning*, which provides the model examples of how it should respond to a given query.
 
-For example, by providing the model a couple prompts and the expected response, it will continue in the same pattern without instructing it what to do:
+For example, by providing the model a couple prompts and the expected response, it continues in the same pattern without instructing it what to do:
 
 ```code
 User: That was an awesome experience
@@ -71,13 +71,13 @@ While not ideal, similar results can be achieved with the `Completions` endpoint
 
 Including content for the model to use to respond with allows it to answer with greater accuracy. This content can be thought of in two ways: primary and supporting content.
 
-Primary content refers to content that is the subject of the query, such a sentence to translate or an article to summarize. This content is often included at the beginning or end of the prompt (and can be differentiated by `---` blocks, as mentioned in the previous unit), with instructions explaining what to do with it.
+Primary content refers to content that is the subject of the query, such a sentence to translate or an article to summarize. This content is often included at the beginning or end of the prompt (as an instruction and differentiated by `---` blocks, as mentioned in the previous unit), with instructions explaining what to do with it.
 
 For example, say I have a long article that I want to summarize. I could put it in a `---` block in my prompt, then end with `Summarize this article and identify three takeaways in a bulleted list`.
 
-Supporting content is content that may alter the response, but isn't the focus or subject of the prompt. This could include things like names, preferences, future date to include in the response, and so on. Providing supporting content allows the model to respond more completely, accurately, and be more likely to include the desired information.
+Supporting content is content that may alter the response, but isn't the focus or subject of the prompt. Examples of supporting content include things like names, preferences, future date to include in the response, and so on. Providing supporting content allows the model to respond more completely, accurately, and be more likely to include the desired information.
 
-Grounding content allows the model to provide reliable answers by providing content for the model to draw answer from. This could be an essay or article that you then ask questions about, a company FAQ document, or information that is more recent than the data the model was trained on. If you need more reliable and current responses, grounding content is highly recommended.
+Grounding content allows the model to provide reliable answers by providing content for the model to draw answer from. Grounding content could be an essay or article that you then ask questions about, a company FAQ document, or information that is more recent than the data the model was trained on. If you need more reliable and current responses, grounding content is highly recommended.
 
 ## Cues
 
@@ -91,7 +91,7 @@ Write a join query to get customer names with purchases in the past 30 days betw
 SELECT
 ```
 
-The model response picks up where the prompt left off, continuing in SQL, even though we never asked for a specific language. This can be done with python code, by giving code comments about the desired app and including `import` as a leading word at the end of the prompt, or similar in your desired language.
+The model response picks up where the prompt left off, continuing in SQL, even though we never asked for a specific language. Other examples could be to help with python code, by giving code comments about the desired app and including `import` as a leading word at the end of the prompt, or similar in your desired language.
 
 Another example, given a large collection of customer reviews in a prompt, and ending with:
 

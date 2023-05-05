@@ -2,7 +2,7 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai
 metadata:
   title: Apply prompt engineering with Azure OpenAI
-  description: "In this module, learn how prompt engineering can help to create and fine-tune prompts for natural language processing models. This involves designing and testing various prompts to optimize the performance of the model in generating accurate and relevant responses."
+  description: "In this module, learn how prompt engineering can help to create and fine-tune prompts for natural language processing models. Prompt engineering involves designing and testing various prompts to optimize the performance of the model in generating accurate and relevant responses."
   ms.date: 5/2/2023
   author: ivorb
   ms.author: berryivor
