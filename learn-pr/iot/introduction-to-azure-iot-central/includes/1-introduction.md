@@ -4,7 +4,7 @@ Azure IoT Central is Microsoft's solution to common issues faced when building I
 
 ## Example scenario
 
-Suppose you work in the IT department of a national grocery store chain. In recent years, corporate has received several customer complaints about long wait times in checkout lanes. You've found that current company policy used for staff scheduling doesn't meet the needs of every local store.
+Suppose you work in the IT department of a national/regional grocery store chain. In recent years, corporate has received several customer complaints about long wait times in checkout lanes. You've found that current company policy used for staff scheduling doesn't meet the needs of every local store.
 
 As the lead developer, you've been tasked with designing a solution that will allow each store to **collect**, **monitor**, and **analyze** data from different types of IoT devices for the first time. These devices will differ in sensor types, such as: proximity sensors at entrances to monitor traffic, optical sensors on building exteriors and accelerometers on shopping carts. The data will contain confidential information and should be secured so competitors don't have access to it.
 

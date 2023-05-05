@@ -96,7 +96,7 @@ It's required to register the data source in Microsoft Purview before setting up
 
     :::image type="content" source="../media/dp-3300-module-33-lab-55-1.png" alt-text="Screenshot of the Open Microsoft Purview governance portal.":::
 
-1. Create the collection hierarchy using the **Collections** menu, and assign permissions to individual subcollections, as required.
+1. Select **Data Map** > **Collections** from the left pane to open collection management page. Create the collection hierarchy using the **Collections** menu, and assign permissions to individual sub-collections, as required.
  
     :::image type="content" source="../media/dp-3300-module-33-lab-44.png" alt-text="Screenshot that shows the collection menu to assign access control permissions to the collection hierarchy.":::
 
