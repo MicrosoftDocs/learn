@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Handle the Pizza form submission
 durationInMinutes: 7
 content: |
-  [!include[](includes/7-exercise-create-pagemodel.md)]
+  [!include[](includes/10-exercise-create-pagemodel.md)]

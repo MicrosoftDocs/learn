@@ -11,7 +11,7 @@ metadata:
 title: Explore the Razor Pages project
 durationInMinutes: 10
 content: |
-  [!include[](includes/4-explore-razor-pages-project.md)]
+  [!include[](includes/7-explore-razor-pages-project.md)]
 quiz:
   title: Check your knowledge
   questions:
