@@ -2,14 +2,15 @@
 uid: learn.wwl.apply-prompt-engineering-azure-openai.generate-quality-responses-with-instructions
 title: Generate quality responses with instructions
 metadata:
+  zone_pivot_groups: dev-lang-csharp-python
   title: Generate quality responses with instructions
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Use quality instructions in prompts to generate quality responses from Azure OpenAI"
   ms.date: 5/2/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: TODO
-  ms.service: TODO
+  ms.service: cognitive-services
+  ms.subservice: openai 
 durationInMinutes: 14
 content: |
   [!include[](includes/3-generate-quality-responses-with-instructions.md)]

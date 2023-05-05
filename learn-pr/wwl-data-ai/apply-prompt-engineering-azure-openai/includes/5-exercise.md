@@ -5,4 +5,4 @@ Now let's use prompt engineering in an application that uses Azure OpenAI models
 
 Launch the exercise and follow the instructions.
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/mslearn-openai/Instructions/Labs/03-prompt-engineering.html?azure-portal=true) 
+[![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/openai-prompt-engineering-lab?azure-portal=true)

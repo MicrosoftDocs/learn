@@ -1,10 +1,71 @@
 By providing context to the AI model, it allows the model to better understand what you are asking for or what it should know to provide the best answer. Context can be provided in several ways.
 
-## Few shot examples
+## Conversation history
 
-What are few shot examples
-Examples including prompts and responses/formats
-Include how Chat works in Azure OpenAI, including previous chats/summarizing chat history
+Conversation history enables the model to continue responding in a similar way (such as tone or formatting) as well as allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
+
+Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground in [Azure OpenAI Studio](https://oai.azure.com/portal/chat?azure-portal=true), include conversation history automatically which results in a richer, more meaningful conversation. In the **Parameters** section below the chat window of the Azure OpenAI Studio chat playground, you can specify how many past messages you want included. Try reducing that to 1 or increasing to max to see how different amounts of history impact the conversation.
+
+> [!NOTE]
+> More conversation history included in the prompt means a larger the number of input tokens are used. You will have to determine what the correct balance is for your use case, considering the token limit of the model you are using.
+
+Chat systems can also utilize the summarization capabilities of the model to save on input tokens. An app can choose to summarize past messages and include that summary in the conversation history, then provide only the past couple messages verbatim to the model.
+
+Using a user defined example conversation is what is called *few shot learning*, which provides the model examples of how it should respond to a given query.
+
+For example, by providing the model a couple prompts and the expected response, it will continue in the same pattern without instructing it what to do:
+
+```code
+User: That was an awesome experience
+Assistant: positive
+User: I won't do that again
+Assistant: negative
+User: That was not worth my time
+Assistant: negative
+User: You can't miss this
+Assistant:
+```
+
+The `ChatCompletions` endpoint is optimized to include chat history. As part of defining the prompt, you can include as much conversation as you want.
+
+::: zone pivot="csharp"
+```csharp
+var chatCompletionsOptions = new ChatCompletionsOptions()
+{
+    Messages =
+    {
+        new ChatMessage(ChatRole.System, "You are a helpful assistant."),
+        new ChatMessage(ChatRole.User, "That was an awesome experience"),
+        new ChatMessage(ChatRole.Assistant, "positive"),
+        new ChatMessage(ChatRole.User, "I won't do that again"),
+        new ChatMessage(ChatRole.Assistant, "negative"),
+        new ChatMessage(ChatRole.User, "That was not worth my time"),
+        new ChatMessage(ChatRole.Assistant, "negative"),
+        new ChatMessage(ChatRole.User, "You can't miss this")
+    }
+};
+```
+
+::: zone-end
+::: zone pivot="python"
+```python
+response = openai.ChatCompletion.create(
+    engine="gpt-35-turbo",
+    messages=[
+        {"role": "system", "content": "You are a helpful assistant."},
+        {"role": "user", "content": "That was an awesome experience"},
+        {"role": "assistant", "content": "positive"},
+        {"role": "user", "content": "I won't do that again"},
+        {"role": "assistant", "content": "negative"},
+        {"role": "user", "content": "That was not worth my time"},
+        {"role": "assistant", "content": "negative"},
+        {"role": "user", "content": "You can't miss this"}
+    ]
+)
+```
+::: zone-end
+
+While not ideal, similar results can be achieved with the `Completions` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages in the previous unit.
 
 ## Primary, supporting, and grounding content
 

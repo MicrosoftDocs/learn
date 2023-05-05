@@ -96,6 +96,8 @@ Additional example setups are available at the top of the chat window in [Azure 
 
 Using the `ChatCompletions` endpoint, including the system message is done using the `System` chat role.
 
+::: zone pivot="csharp"
+
 ```csharp
 var chatCompletionsOptions = new ChatCompletionsOptions()
 {
@@ -107,6 +109,10 @@ var chatCompletionsOptions = new ChatCompletionsOptions()
 };
 ```
 
+::: zone-end
+
+::: zone pivot="python"
+
 ```python
 response = openai.ChatCompletion.create(
     engine="gpt-35-turbo",
@@ -116,5 +122,7 @@ response = openai.ChatCompletion.create(
     ]
 )
 ```
+
+::: zone-end
 
 System messages can significantly change the response, both in format and content. Try defining a clear system message for the model that explains exactly what kind of response you expect, and what you do or don't want it to include.
