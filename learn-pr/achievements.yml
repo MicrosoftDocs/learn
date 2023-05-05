@@ -1687,3 +1687,8 @@ achievements:
   title: Create and deploy Azure Resource Manager templates
   summary: Learn how Azure Resource Manager (ARM) can help streamline deployments, choose the correct deployment mode for your solution, and create and deploy an ARM template.
   iconUrl: /training/achievements/azure-resource-manager-create-deploy.svg
+- uid: learn.wwl.provision-virtual-machines-azure.badge
+  type: badge
+  title: Provision virtual machines in Azure
+  summary: Learn the availability and sizing options of Azure Virtual Machines, and how to create a virtual machine by using the Azure CLI.
+  iconUrl: /training/achievements/virtual-machines-provisions.svg
