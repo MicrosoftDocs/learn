@@ -22118,6 +22118,11 @@
       "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/5-azure-virtual-machine-azure-cli.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/2-azure-virtual-machines-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
