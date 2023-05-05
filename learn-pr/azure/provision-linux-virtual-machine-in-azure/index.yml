@@ -8,7 +8,7 @@ metadata:
   description: Learn about different methods of provisioning Linux virtual machines in Microsoft Azure.
   ms.topic: interactive-tutorial
 title: Provisioning a Linux virtual machine in Microsoft Azure
-summary: The purpose of this module is to provide the reader with guidance for provisioning Linux VMs in Azure using common provisioning tools. After reviewing this material, the reader should be able to deploy a Linux virtual machine using each of the methods described.
+summary: Azure allows you to use several common provisioning tools to deploy Linux virtual machines (VMs), to include Terraform, Bicep, the Azure portal, and the Azure CLI. After completing this module, you should be able to deploy a Linux virtual machine using each of the methods described.
 abstract: |
   After completing this module, you'll be able to:
   - Provision a Linux virtual machine (VM) by using the Azure portal.
