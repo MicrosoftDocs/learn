@@ -8,6 +8,7 @@ metadata:
   ms.author: johnmarc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: automanage
 title: Optimizing IT operations and management with Azure Automanage
 summary: In this module, you'll discover how to optimize IT operations and management with Azure Automanage. 
 abstract: |
