@@ -8,7 +8,7 @@
 
 | Network solution | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task-4.png" alt-text="Diagram of a firewall policy." border="true"::: | <ul><li>Create and configure a firewall policy </li><li> Create an application rule collection. </li><li> Create a network rule collection. </li></ul> |
+| :::image type="content" source="../media/task-4.png" alt-text="Diagram that shows a firewall policy." border="true"::: | <ul><li>Create and configure a firewall policy </li><li> Create an application rule collection. </li><li> Create a network rule collection. </li></ul> |
 
 ## Exercise instructions
 

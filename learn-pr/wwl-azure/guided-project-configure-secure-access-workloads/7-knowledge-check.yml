@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "Create a VPN connection between the two virtual Networks."
       isCorrect: false
-      explanation: "Incorrect. VPN connection is not the easiest, most cost effective soltuion."
+      explanation: "Incorrect. VPN connection is not the easiest, most cost effective solution."
     - content: "Create an ExpressRoute connection between the two virtual Networks."
       isCorrect: false
-      explanation: "Incorrect. An ExpressRoute connection is not the easiest, most cost effective soltuion."
+      explanation: "Incorrect. An ExpressRoute connection is not the easiest, most cost effective solution."
     - content: "Create a virtual network peering connection."
       isCorrect: true
-      explanation: "Correct. In general, virtual network peering is the easiet and most cost effective solution to connect resrouces in two different regions."
+      explanation: "Correct. In general, virtual network peering is the easiest and most cost effective solution to connect resrouces in two different regions."
   - content: "Consider a Scenario where an NSG has two rules for inbound traffic to the back-end web servers. There's an allow rule with a priority of 200, and a deny rule with a priority of 150. Which of the security rules takes precedence?"
     choices:
     - content: "The allow rule takes precedence."
@@ -36,7 +36,7 @@ quiz:
       explanation: "Correct. The deny rule takes precedence because it's processed first. The rule with priority 150 is processed before the rule with priority 200."
     - content: "The rule that was created first takes precedence."
       isCorrect: false
-      explanation: "Inorrect. Rules are processed according to the specified priority."
+      explanation: "Incorrect. Rules are processed according to the specified priority."
   - content: "How would you describe the IP address for an Azure Firewall implementation?"
     choices:
     - content: "A firewall has a dynamically assigned public IP address."

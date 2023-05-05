@@ -12,7 +12,7 @@ In this task you configure application rules and network rules for the firewall 
 
 | Network solution | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task-3.png" alt-text="Diagram with one virtual network with a firewall and route table" border="true"::: | <ul><li>Create an Azure Firewall.</li><li>Create and configure a firewall policy.</li><li>Create and configure a route table.</li><li>Link a route to a subnet.</li></ul>|
+| :::image type="content" source="../media/task-3.png" alt-text="Diagram that shows one virtual network with a firewall and route table." border="true"::: | <ul><li>Create an Azure Firewall.</li><li>Create and configure a firewall policy.</li><li>Create and configure a route table.</li><li>Link a route to a subnet.</li></ul>|
 
 ## Exercise instructions
 
