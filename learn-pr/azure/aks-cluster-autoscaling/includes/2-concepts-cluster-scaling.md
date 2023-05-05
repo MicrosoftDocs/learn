@@ -10,7 +10,7 @@ A single node is a single VM. It has a limited amount of resources like CPU and 
 
 ## Cluster scalability
 
-To remedy that problem, the operator needs to scale out the cluster itself, adding more VMs to the NodePool. *Cluster scaling* can be done using the Azure CLI with the `az aks scale` command. Or, in the Azure portal, by selecting your AKS cluster object, selecting **Node Pools** under **Settings**, and then selecting **Scale**.
+To remedy that problem, the operator needs to scale out the cluster itself, adding more VMs to the NodePool. *Cluster scaling* can be done using the Azure CLI with the `az aks scale` command. Or, in the Azure portal, by selecting your AKS cluster object, selecting **Node pools** under **Settings**, and then selecting **Scale**.
 
 :::image type="content" source="../media/2-portal-scale.png" alt-text="Screen that shows the Azure portal scalability button on node pools menu.":::
 

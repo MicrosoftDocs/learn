@@ -45,7 +45,7 @@ quiz:
     - content: "When a replica set manages the pod."
       isCorrect: false
       explanation: "Incorrect. All managed pods are removed."
-    - content: "If there's a PDB and this PDB is too restrictive with the minimum number of pods in the cluster."
+    - content: "If there's a PDB and the PDB is too restrictive with the minimum number of pods in the cluster."
       isCorrect: true
       explanation: "Correct. Among others, this situation is one in which the autoscaler doesn't remove a node."
     - content: "When the node runs Windows containers"
