@@ -8,6 +8,7 @@ metadata:
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: storage
 title: Describe Azure storage services
 summary: This module introduces you to storage in Azure, including things such as different types of storage and how a distributed infrastructure can make your data more resilient.
 abstract: |

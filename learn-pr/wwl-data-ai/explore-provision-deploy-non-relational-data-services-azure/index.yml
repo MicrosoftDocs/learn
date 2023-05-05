@@ -8,6 +8,7 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: storage
 title: Explore Azure Storage for non-relational data
 summary: Azure Storage is a core service in Microsoft Azure that is commonly used to store non-relational data.
 abstract: |

@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: storage
 title: Configure Azure Storage with tools
 summary: Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy.
 abstract: |
