@@ -31,7 +31,6 @@ products:
 subjects:
 - data-modeling
 units:
-- learn.wwl.create-deploy-azure-resource-manager-templates.set-correct-deployment-mode
 - learn.wwl.create-deploy-azure-resource-manager-templates.summary
 badge:
   uid: learn.wwl.create-deploy-azure-resource-manager-templates.badge
