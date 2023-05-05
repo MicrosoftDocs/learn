@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Configure virtual machine extensions
 summary: Learn how to use virtual machine extensions to automate virtual machine deployments.
 abstract: |
