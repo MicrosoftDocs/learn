@@ -9,6 +9,7 @@ metadata:
   ms.author: memildin
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: defender-for-cloud
 title: Identify security threats with Microsoft Defender for Cloud
 summary: In this module, you’ll discover how to detect and respond to threats with Microsoft Defender for Cloud.
 abstract: | 
