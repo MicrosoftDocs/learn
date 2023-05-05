@@ -8,6 +8,8 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-agents
 title: Manage Azure Pipeline agents and pools
 summary: This module explores differences between Microsoft-hosted and self-hosted agents, detail job types, and introduces agent pools configuration. You will understand typical situations to use agent pools and how to manage its security. Also, it explores communication to deploy using Azure Pipelines to target servers.
 abstract: |
