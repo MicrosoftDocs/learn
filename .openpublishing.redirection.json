@@ -22108,6 +22108,11 @@
       "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/3-azure-virtual-machine-availability-options.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/4-azure-virtual-machine-sizes.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
     }
   ]
 }
