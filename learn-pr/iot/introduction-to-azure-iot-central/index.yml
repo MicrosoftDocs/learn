@@ -11,6 +11,7 @@ metadata:
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: iot-central
 title: Introduction to Azure IoT Central
 summary: "Describe how Azure IoT Central can help you collect, monitor, and analyze IoT data. Determine the types of IoT solutions Azure IoT Central can be used to implement."
 abstract: |
