@@ -1,16 +1,16 @@
 
 
-## **Scenario** 
+## Scenario
 
  Azure Firewall policy is a top-level resource that contains security and operational settings for Azure Firewall. It allows you to define a rule hierarchy and enforce compliance. In this task you configure application rules and network rules for the firewall using Firewall Policy. You can use Azure Firewall Policy to manage rule sets that the Azure Firewall uses to filter traffic.
 
-### **Architecture diagram**
+### Architecture diagram
 
 | Network solution | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task4.png" alt-text="Diagram of a firewall policy." border="true"::: | <ul><li>Create and configure a firewall policy </li><li> Create an application rule collection. </li><li> Create a network rule collection. </li></ul> |
+| :::image type="content" source="../media/task-4.png" alt-text="Diagram of a firewall policy." border="true"::: | <ul><li>Create and configure a firewall policy </li><li> Create an application rule collection. </li><li> Create a network rule collection. </li></ul> |
 
-## **Exercise instructions**
+## Exercise instructions
 
 1.  Create an **application rule collection** in **fw-policy** that contains a single Target FQDN rule by using the values in the following table. For any property that is not specified, use the default value.
 

@@ -1,15 +1,15 @@
 
-## **Scenario** 
+## Scenario
 
 Your organization requires workloads to record and resolve domain names internally in virtual networks. Virtual machines in virtual networks can use domain name instead of IPs for internal communication. In that case, the domain names will be resolved with a private DNS zone through a virtual network link. 
 
-### **Architecture diagram**
+### Architecture diagram
 
 |Network solution | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task5.png" alt-text="Diagram of Azure DNS linked to a virtual network." border="true"::: | <ul><li>Create and configure a private DNS zone. </li><li> Create and configure DNS records. </li><li>  Configure DNS settings on a virtual network.</li></ul> |
+| :::image type="content" source="../media/task-5.png" alt-text="Diagram of Azure DNS linked to a virtual network." border="true"::: | <ul><li>Create and configure a private DNS zone. </li><li> Create and configure DNS records. </li><li>  Configure DNS settings on a virtual network.</li></ul> |
 
-## **Exercise instructions**
+## Exercise instructions
 
 1. Create a private DNS Zone named ****Contoso.com**** in the ****RG1**** resource group. 
 

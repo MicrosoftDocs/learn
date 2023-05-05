@@ -1,6 +1,6 @@
 
 
-## **Scenario** 
+## Scenario
 
 Your organization requires control of the network traffic to and from the web application. To further enhance the security of the web application, network security groups (NSG) and application security groups (ASG) can be configured. NSG is a security layer that filters network traffic to and from Azure resources, while ASG allows grouping of resources to be managed collectively. These security groups provide fine-grained control over the network traffic to and from the web application components.
 
@@ -8,9 +8,9 @@ Your organization requires control of the network traffic to and from the web ap
 
 | Network solution  | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task2.png" alt-text="Diagram with one ASG and NSG associated to a virtual network ." border="true"::: | <ul><li>Create an NSG. </li><li> Create NSG rules. </li><li> Associate an NSG to a subnet. </li><li> Create and use Application Security Groups in NSG rules. </li></ul> |
+| :::image type="content" source="../media/task-2.png" alt-text="Diagram with one ASG and NSG associated to a virtual network ." border="true"::: | <ul><li>Create an NSG. </li><li> Create NSG rules. </li><li> Associate an NSG to a subnet. </li><li> Create and use Application Security Groups in NSG rules. </li></ul> |
 
-## **Exercise instructions**
+## Exercise instructions
 
 1. Create a new **application security group** named **app-backend-asg** in the **East US** region by using the **RG1** resource group.
 

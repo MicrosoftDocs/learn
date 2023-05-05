@@ -1,17 +1,17 @@
 
-## **Scenario** 
+## Scenario 
 
 The IT department needs network isolation and segmentation for the web application. Once the virtual network is created, the next step would be to configure virtual network peering. This allows the virtual networks to communicate with each other securely and privately.
 
 To provide network isolation and segmentation for the web application, you create an Azure virtual network and configure subnets and virtual network peering to achieve secure and isolated network communication.  
 
-### **Architecture diagram**
+### Architecture diagram
 
 | Network solution  | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task1.png" alt-text="Diagram with two virtual networks that are peered." border="true"::: | <ul><li>Create a virtual network </li><li> Create a subnet. </li><li>Configure vnet peering. </li></ul> |
+| :::image type="content" source="../media/task-1.png" alt-text="Diagram with two virtual networks that are peered." border="true"::: | <ul><li>Create a virtual network </li><li> Create a subnet. </li><li>Configure vnet peering. </li></ul> |
 
-## **Exercise instructions**
+## Exercise instructions
 
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
