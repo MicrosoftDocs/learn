@@ -4,8 +4,8 @@ metadata:
   title: Integrate adaptive cards into Windows 10 Timeline
   description: Learn how to develop a simple adaptive card to enhance the appearance in Windows 10 Timeline of your Universal Windows Platform app.
   ms.date: 02/28/2019
-  author: rmcmurray
-  ms.author: robmcm
+  author: alvinashcraft
+  ms.author: aashcraft
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Integrate adaptive cards into Windows 10 Timeline
