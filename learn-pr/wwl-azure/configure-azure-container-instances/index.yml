@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: container-instances
 title: Configure Azure Container Instances
 summary: Learn how to configure Azure Container Instances including container groups.
 abstract: |
