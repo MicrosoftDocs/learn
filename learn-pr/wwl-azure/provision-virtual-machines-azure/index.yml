@@ -30,7 +30,6 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.provision-virtual-machines-azure.introduction
-- learn.wwl.provision-virtual-machines-azure.explore-azure
 - learn.wwl.provision-virtual-machines-azure.knowledge-check
 - learn.wwl.provision-virtual-machines-azure.summary
 badge:
