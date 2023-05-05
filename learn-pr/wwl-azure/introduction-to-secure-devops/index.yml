@@ -8,6 +8,7 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-devops
 title: Introduction to Secure DevOps
 summary: This module introduces DevSecOps concepts, SQL injection attacks, threat modeling, and security for continuous integration.
 abstract: |
