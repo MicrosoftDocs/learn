@@ -35,7 +35,6 @@ units:
 - learn.wwl.create-deploy-azure-resource-manager-templates.explore
 - learn.wwl.create-deploy-azure-resource-manager-templates.explore-conditional-deployment
 - learn.wwl.create-deploy-azure-resource-manager-templates.set-correct-deployment-mode
-- learn.wwl.create-deploy-azure-resource-manager-templates.exercise-by-using-visual-studio-code
 - learn.wwl.create-deploy-azure-resource-manager-templates.knowledge-check
 - learn.wwl.create-deploy-azure-resource-manager-templates.summary
 badge:
