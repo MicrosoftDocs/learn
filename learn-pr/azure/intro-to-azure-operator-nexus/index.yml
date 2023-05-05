@@ -20,7 +20,7 @@ abstract: |
 prerequisites: |
   - Conceptual knowledge of Azure compute solutions.
   - Working experience with virtual machines, containers, and virtual networks.
-  - Knowledge of AZ-900, AZ-104, AZ-305
+  - Knowledge of AZ-900, AZ-104, AZ-305.
 iconUrl: /learn/achievements/intro-to-azure-private-5g-core.svg
 levels:
   - intermediate
@@ -37,12 +37,5 @@ subjects:
   - networking
 units:
 - learn.intro-to-azure-operator-nexus.introduction
-- learn.intro-to-azure-operator-nexus.what-is-operator-nexus
-- learn.intro-to-azure-operator-nexus.integrate-hybrid-cloud-consistency
-- learn.intro-to-azure-operator-nexus.operator-nexus-systems
-- learn.intro-to-azure-operator-nexus.operator-nexus-on-premises-infrastructure
-- learn.intro-to-azure-operator-nexus.resource-providers-for-operator-nexus
-- learn.intro-to-azure-operator-nexus.knowledge-check
-- learn.intro-to-azure-operator-nexus.summary
 badge:
   uid: learn.intro-to-azure-private-5g-core.badge
