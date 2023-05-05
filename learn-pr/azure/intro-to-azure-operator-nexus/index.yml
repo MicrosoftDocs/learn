@@ -3,14 +3,14 @@ uid: learn.intro-to-azure-operator-nexus
 hidden: true
 metadata:
   title: Introduction to Azure Operator Nexus
-  description: "Discover the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
+  description: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
   ms.date: 05/05/2023
   author: lnyswonger
   ms.author: lnyswonger
   ms.topic: interactive-tutorial
   ms.service: operator-nexus
 title: Introduction to Azure Operator Nexus
-summary: "Discover the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
+summary: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
 abstract: |
   After completing this module, you'll be able to:
   -Describe Operator Nexus hybrid systems architecture.
