@@ -8,6 +8,7 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-functions
 title: Introduction to Azure Functions
 summary: Learn how to
 abstract: |

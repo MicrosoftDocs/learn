@@ -8,6 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-functions
 title: Develop Azure Functions
 summary: Learn how to create and deploy Azure Functions.
 abstract: |
