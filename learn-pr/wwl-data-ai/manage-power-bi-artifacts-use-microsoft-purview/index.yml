@@ -8,6 +8,7 @@ metadata:
   ms.author: shlindsay
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: powerbi
 title: Manage Power BI assets by using Microsoft Purview
 summary: Improve data governance and asset discovery using Power BI and Microsoft Purview integration.
 abstract: |
