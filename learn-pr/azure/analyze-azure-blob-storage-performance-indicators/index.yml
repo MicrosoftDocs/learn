@@ -8,6 +8,7 @@ metadata:
   ms.author: schoag
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: blobs
 title: 'Analyze performance indicators for Azure Blob Storage'
 summary: Learn how to analyze the performance indicators for Azure Blob Storage.
 abstract:  | 
