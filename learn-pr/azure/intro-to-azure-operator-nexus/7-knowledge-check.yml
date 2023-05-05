@@ -24,3 +24,25 @@ quiz:
     - content: "Resource Providers are responsible for managing Azure Active Directory and user access."
       isCorrect: false
       explanation: "Incorrect. Resource Providers are not responsible for managing Azure Active Directory and user access. This is the responsibility of the identity and access management team."
+  - content: "What is the function of a Network Packet Broker (NPB)?"
+    choices:
+    - content: "NPBs are used to filter mirrored traffic from select routing domains and forward them to probes."
+      isCorrect: true
+      explanation: "Correct! NPBs are used to filter mirrored traffic from select routing domains and forward them to probes. NPBs receive mirrored packets from the ToRs in each rack, and send out filtered traffic to the CEs, to be routed to the probes."
+    - content: "NPBs are used to manage network subscriptions and billing."
+      isCorrect: false
+      explanation: "Incorrect. NPBs are not used to manage network subscriptions and billing. This is the responsibility of the billing and subscription management team."
+    - content: "NPBs are used to manage Azure Active Directory and user access."
+      isCorrect: false
+      explanation: "Incorrect. NPBs are not used to manage Azure Active Directory and user access. This is the responsibility of the identity and access management team."
+  - content: "What service helps you manage your Azure, on-premises, and multi-cloud environments?"
+    choices:
+    - content: "Azure Arc"
+      isCorrect: true
+      explanation: "Correct! Azure Arc is a service that helps you manage your Azure, on-premises, and multi-cloud environments. Azure Arc enables you to manage servers, Kubernetes clusters, and applications across on-premises, multi-cloud, and edge environments from a single control plane. With Azure Arc, you can apply Azure management capabilities such as Azure Policy and Azure Security Center to your hybrid environments."
+    - content: "Azure AD"
+      isCorrect: false
+      explanation: "Incorrect. Azure AD is a cloud-based identity and access management service that helps you secure access to your applications and resources. It is not a service that helps you manage your Azure, on-premises, and multi-cloud environments."
+    - content: "Azure DevOps"
+      isCorrect: false
+      explanation: "Incorrect. Azure DevOps is a set of services for building, testing, and deploying applications to any platform or cloud. It is not a service that helps you manage your Azure, on-premises, and multi-cloud environments."
