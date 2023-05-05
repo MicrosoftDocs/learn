@@ -8,6 +8,7 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Connect syslog data sources to Microsoft Sentinel
 summary: Learn about the Syslog connector's configuration options which will enable you to parse Syslog data.
 abstract: |
