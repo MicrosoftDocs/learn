@@ -1,4 +1,5 @@
 
+
 Windows offers advanced techniques for managing user profiles and data. By using cloud-based services such as Enterprise State Roaming and Microsoft OneDrive, companies can seamlessly empower their users to transition between various device platforms. With these services, employees can effortlessly access their data from any device and transfer their settings from one Windows device to another.
 
 ### Enterprise State Roaming

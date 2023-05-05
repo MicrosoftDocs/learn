@@ -13,4 +13,4 @@ The design of internal data-handling policies that your organization develops sh
 Data protection officers (DPOs) must understand data-handling requirements based on the laws and regulations of their state/country/region and their organization’s internal policies. Such understanding can help DPOs define appropriate procedures for data collection, storage, and protection and technology use.
 
 > [!NOTE]
-> Microsoft provides compliance offerings that you can use to help your organization align with national, regional, and industry-specific requirements governing data collection and use.
+> Microsoft provides compliance offerings that you can use to help your organization align with national/regional and industry-specific requirements governing data collection and use.

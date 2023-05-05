@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.azure.copy-blobs-using-dotnet
 metadata:
-  title: Copy and move blobs from one container or storage account to another using the .NET Storage Client.
+  title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
   description: Use the .NET Storage Client to migrate files between Azure storage accounts.
   ms.date: 04/20/2023
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Copy and move blobs from one container or storage account to another using the .NET Storage Client.
+title: Copy and move blobs from one container or storage account to another using the .NET Storage Client
 summary: Learn how to use the .NET Storage Client to copy and move blobs between contains and storage accounts both synchronously and asynchronously.
 abstract: |
   By the end of this module, you'll be able to:

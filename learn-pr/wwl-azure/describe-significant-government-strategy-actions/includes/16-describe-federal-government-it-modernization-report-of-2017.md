@@ -12,7 +12,7 @@
 
         The report prioritizes the modernization of “High Risk, High Value Assets”, which it refers to as HVAs.
 
-        These HVAs are specifically called out because of the risk their lack of modernization presents to the national security of the United States.
+        These HVAs are specifically called out because of the risk their lack of modernization presents to the security of the United States.
 
     :::column-end:::
 :::row-end:::
