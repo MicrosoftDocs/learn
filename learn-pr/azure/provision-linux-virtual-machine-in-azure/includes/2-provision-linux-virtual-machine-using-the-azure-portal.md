@@ -23,7 +23,7 @@ The process of deploying Azure resources by using the Azure portal involves the 
 
 ### Initiate the provisioning wizard
 
-On the Virtual machines page, select the + Create link. This step is the same regardless of the resource type you provision.
+On the Virtual machines page, select the **+ Create** link. This step is the same regardless of the resource type you provision.
 
 ![The portal virtual machines page has the create menu and the Azure virtual machine option selected.](../media/azure-portal-create-virtual-machine-start.png)
 
@@ -60,7 +60,7 @@ The settings on this page configure the target subscription (either an existing 
   - Generate a new key pair
   - Select an existing key stored in Azure
   - Provide an existing RSA public key in the Privacy Enhanced Mail (PEM) format 
-- Whether you want to allow connectivity to the deployed Azure VM from the internet via Transmission Control Protocol (TCP) port 22.
+- Whether you want to allow connectivity to the deployed Azure VM from the internet via Transmission Control Protocol (TCP) port 22 (SSH).
 
 ![The Basics page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-basic.png)
 
