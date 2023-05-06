@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.time-and-series-functions
+title: time-and-series-functions
+metadata:
+  title: time-and-series-functions
+  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 5/5/2023
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.prod: TODO
+  ms.service: TODO
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-time-and-series-functions.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "In SQL Server 2022, which function is used to obtain a given date rounded down to a specified level of granularity, such as year, month, or day, without needing to specify the width of the datepart intervals from the origin time?"
+    choices: 
+    - content: "DATETRUNC"
+      isCorrect: true
+      explanation: "DATETRUNC rounds down a given date to a specified level of granularity, such as year, month, or day, without needing to specify the width of the datepart intervals from the origin time."
+    - content: "DATE_BUCKET"
+      isCorrect: false
+      explanation: "DATE_BUCKET returns the start of each date-time interval based on a specified origin, time unit, and the width of the intervals."
+    - content: "DATEPART"
+      isCorrect: false
+      explanation: "DATEPART returns the specified part of a date or time value."
+  - content: "What enhancement was added to the FIRST_VALUE and LAST_VALUE functions in SQL Server 2022?"
+    choices:
+    - content: "The ability to filter rows based on a condition before selecting the first or last value."
+      isCorrect: false
+      explanation: "The enhancement added to the FIRST_VALUE and LAST_VALUE functions in SQL Server 2022 is the ability to IGNORE NULLS or RESPECT NULLS, not to filter rows based on a condition."
+    - content: "The ability to IGNORE NULLS or RESPECT NULLS."
+      isCorrect: true
+      explanation: "In SQL Server 2022, the FIRST_VALUE and LAST_VALUE functions were enhanced by adding the ability to IGNORE NULLS or RESPECT NULLS. This option allows you to control the handling of null values in the ordered set of rows when obtaining the first or last value."
+    - content: "The ability to compute the first and last value based on a sliding window of rows."
+      isCorrect: false
+      explanation: "Although window functions in SQL Server do allow you to work with sliding windows of rows, the enhancement added to the FIRST_VALUE and LAST_VALUE functions in SQL Server 2022 is the ability to IGNORE NULLS or RESPECT NULLS."

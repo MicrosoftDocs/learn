@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.is-not-distinct-from
+title: When to use {product}
+metadata:
+  title: when-to-use-{product}
+  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 5/5/2023
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.prod: TODO
+  ms.service: TODO
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-is-not-distinct-from.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "What is the primary difference between the '=' operator and the 'IS NOT DISTINCT FROM' operator?"
+    choices: 
+    - content: "There's no difference; they both compare values for equality in the same exact way."
+      isCorrect: false
+      explanation: "While both '=' and 'IS NOT DISTINCT FROM' compare values for equality, they handle NULL values differently."
+    - content: "'IS NOT DISTINCT FROM handles NULL values in comparisons, while the '=' operator doesn't."
+      isCorrect: true
+      explanation: "'IS NOT DISTINCT FROM' Compares the equality of two expressions and guarantees a true or false result, even if one or both operands are NULL. The '=' operator returns UNKNOWN when one or both expressions are NULL."
+    - content: "The '=' operator can compare any data type, while 'IS NOT DISTINCT FROM' can only compare string values."
+      isCorrect: false
+      explanation: "Both '=' and 'IS NOT DISTINCT FROM' operators can compare various data types."
+  - content: "How does the `IS NOT DISTINCT FROM` predicate treat NULL values in comparisons?"
+    choices:
+    - content: "As unknown values"
+      isCorrect: false
+      explanation: "The `IS [NOT] DISTINCT FROM` predicate treats NULL values as known values in comparisons, making it easier to work with NULL values."
+    - content: "As known values"
+      isCorrect: true
+      explanation: "The `IS [NOT] DISTINCT FROM` predicate treats NULL values as known values in comparisons, making it easier to work with NULL values."
+    - content: "As zero values"
+      isCorrect: false
+      explanation: "The `IS [NOT] DISTINCT FROM` predicate doesn't treat NULL values as zero values, but as known values in comparisons."
+      

@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.bit-manipulation
+title: bit-manipulation
+metadata:
+  title: bit-manipulation
+  description: "TODO this field is for search engine optimization and isn't user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 5/5/2023
+  author: {{githubUsername}}
+  ms.author: {{msUser}}
+  ms.topic: interactive-tutorial
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.prod: TODO
+  ms.service: TODO
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-bit-manipulation.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "In SQL Server 2022, which function can be used to determine how many bits are turned on (set to 1) in a binary value?"
+    choices:
+    - content: "GET_BIT"
+      isCorrect: false
+      explanation: "GET_BIT is used for retrieving a specific bit's value, not determining how many bits are set to 1."
+    - content: "BIT_COUNT"
+      isCorrect: true
+      explanation: "BIT_COUNT calculates the number of bits set to 1 in a binary value."
+    - content: "SET_BIT"
+      isCorrect: false
+      explanation: "SET_BIT is used for changing the value of a specific bit, not counting the number of bits set to 1."
+  - content: "Which function in SQL Server 2022 can be used to modify the value of a specific bit within a binary value?"
+    choices:
+    - content: "GET_BIT"
+      isCorrect: false
+      explanation: "GET_BIT is used for retrieving a specific bit's value, not changing the value of a specific bit."
+    - content: "BIT_COUNT"
+      isCorrect: false
+      explanation: "BIT_COUNT is used for counting the number of bits set to 1, not changing the value of a specific bit."
+    - content: "SET_BIT"
+      isCorrect: true
+      explanation: "SET_BIT is used for changing the value of a specific bit within a binary value."

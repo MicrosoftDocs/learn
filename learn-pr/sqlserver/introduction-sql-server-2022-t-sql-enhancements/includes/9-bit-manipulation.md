@@ -29,7 +29,7 @@ DeviceId | CollectionDateTime | SensorStatus
 795159 | 2/11/2023 12:51:48.592 | 0xFD
 948705 | 2/11/2023 12:51:56.321 | 0x05
 
-For this example, let's create the sample database, table and populate it. Obviously in a real world scenario, the database would already exist and populated by your IoT Devices. Always make sure you use a test SQL Server to run these examples and don't run them on a production server.
+For this example, let's create the sample database, table and populate it. Obviously in a real world scenario, the database would already exist and automatically populated by your IoT Devices. *Always make sure you use a test SQL Server to run these examples and don't run them on a production server*.
 
 ```sql
 CREATE DATABASE SQL2022Workshop_BitDB;
