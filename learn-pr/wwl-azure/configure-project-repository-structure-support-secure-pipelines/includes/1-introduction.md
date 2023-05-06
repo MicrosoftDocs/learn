@@ -23,7 +23,7 @@ To get the most out of this course, we recommend that you understand Azure DevOp
 
 For study recommendations, see:
 
-[Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction?branch=release-configure-secure-access-pipeline-resources)
+- [Configure secure access to pipeline resources - Introduction.](/training/modules/configure-secure-access-pipeline-resources/1-introduction)
 
 Ensure you have all the necessary resources and access to Azure DevOps before starting the course.
 
