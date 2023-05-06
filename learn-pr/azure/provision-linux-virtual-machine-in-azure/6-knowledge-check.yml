@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 7
 quiz:
-  title: Knowledge check
+  title: Check your knowledge
   questions:
   - content: "Which deployment tool should you choose for multiple cloud deployments that include Azure and Amazon Web Services (AWS)?"
     choices:
