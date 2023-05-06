@@ -10,10 +10,8 @@ In this task, you'll take a look at an application that tracks medication times 
 1. In the Visual Studio Code Editor, delete any existing code from the previous exercises.
 
 1. Copy and paste the following code into the Visual Studio Code Editor:
-   ```c#   int[] times = {800, 1200, 1600, 2000};   int diff = 0;
-   Console.WriteLine("Enter current GMT");   int currentGMT = Convert.ToInt32(Console.ReadLine());
-   Console.WriteLine("Current Medicine Schedule:");
-   /* Format and display medicine times */   foreach (int val in times)   {       string time = val.ToString();       int len = time.Length;
+   ```c#   using System;
+   int[] times = {800, 1200, 1600, 2000};   int diff = 0;      Console.WriteLine("Enter current GMT");   int currentGMT = Convert.ToInt32(Console.ReadLine());      Console.WriteLine("Current Medicine Schedule:");      /* Format and display medicine times */   foreach (int val in times)   {       string time = val.ToString();       int len = time.Length;
        if (len >= 3)       {           time = time.Insert(len - 2, ":");       }       else if (len == 2)       {           time = time.Insert(0, "0:");       }       else       {           time = time.Insert(0, "0:0");       }
        Console.Write($"{time} ");   }
    Console.WriteLine();
@@ -27,10 +25,11 @@ In this task, you'll take a look at an application that tracks medication times 
        Console.Write($"{time} ");   }
    Console.WriteLine();   ```
 
-1. Notice that there's a `foreach` loop that's repeated with identical code. The loop formats the integer values in `times` to a military time format and displays them. There's also another repeated `for` loop to adjust the times according to the time zone difference. 
+1. Notice that there's several `for`-loops that are repeated with identical code. 
+   There are two `foreach` loops that format and display the medicine times. There are another two  `for` loops that adjust the times according to the time zone difference. 
    As you write code, you may find yourself repeating blocks of code to do the same task. That's a perfect opportunity to consolidate your code by using a method to perform the task instead. Let's practice!
 
-### Crete methods to perform the repeated tasks
+### Create methods to perform the repeated tasks
 
 Now that you've identified repeated code, you can create a method to contain the code and remove the duplicates. Using methods has the added bonus of shortening your code and improving readability! The `foreach` loops format and display the time values, so you can give the method a name that clearly reflects that task. You can do the same with the `for` loop that adjusts the times. Let's get started!
 
@@ -44,7 +43,7 @@ Now that you've identified repeated code, you can create a method to contain the
            if (len >= 3)           {               time = time.Insert(len - 2, ":");           }           else if (len == 2)           {               time = time.Insert(0, "0:");           }           else           {               time = time.Insert(0, "0:0");           }
            Console.Write($"{time} ");       }
        Console.WriteLine();   }   ```
-   You can include the call to `Console.WriteLine` to append a new line after the times are displayed. Now you can replace the repeated code with a call to the method. Next, you'll create a method to adjust the times according to the time zone difference.
+   In this method, you include the call to `Console.WriteLine` at the end to append a new line after the times are displayed. Next, you'll create another method to adjust the times according to the time zone difference.
 
 1. Enter a new blank code line at the end of the previous code.
 
@@ -58,31 +57,31 @@ Now that you've identified repeated code, you can create a method to contain the
 
 In this task, you'll delete the repeated blocks of code and replace them with calls to the methods you created.
 
-1. Locate the first instance of the repeated code:
+1. Locate the first instance of the repeated `foreach` loop under the comment "Format and display medicine times":
    ```c#   Console.WriteLine("Current Medicine Schedule:");
    /* Format and display medicine times */   foreach (int val in times)   {       ...   }
    Console.WriteLine();
    Console.WriteLine("Enter new GMT");   ```
 
-1. Replace the code you identified with a call to the `DisplayTimes` method:
+1. Replace the code you identified with a call to the `DisplayTimes` method. The replacement should result in the following code:
    ```c#   Console.WriteLine("Current Medicine Schedule:");   DisplayTimes();
    Console.WriteLine("Enter new GMT");   ```
    Next, you'll replace the second instance of the repeated code.
 
-1. Locate the following code:
+1. Locate the second instance of the `foreach` loop under the comment "Format and display medicine times":
    ```c#   Console.WriteLine("New Medicine Schedule:");
    /* Format and display medicine times */   foreach (int val in times)   {       ...   }      Console.WriteLine();   ```
 
-1. Replace the code you identified with a call to the `DisplayTimes` method:
+1. Replace the code you identified with a call to the `DisplayTimes` method. The replacement should result in the following code:
    ```c#   Console.WriteLine("New Medicine Schedule:");   DisplayTimes();   ```
    Notice how using a method in place of a large block of code provides more clarity and makes the code easier to understand. Let's do the same with the `AdjustTimes` method you created.
 
-1. Locate the following code:
+1. Locate the following code with the duplicated `for`-loops:
    ```c#   else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0)    {       diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));
        /* Adjust the times by adding the difference, keeping the value within 24 hours */       for (int i = 0; i < times.Length; i++)        {           times[i] = ((times[i] + diff)) % 2400;       }   }    else    {       diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));
        /* Adjust the times by adding the difference, keeping the value within 24 hours */       for (int i = 0; i < times.Length; i++)        {           times[i] = ((times[i] + diff)) % 2400;       }   }   ```
 
-1. Replace the instances of repeated code with calls to your `AdjustTimes` method:
+1. Replace the instances of repeated code under the comment "Adjust the times by adding the difference" with calls to your `AdjustTimes` method. The replacement should result in the following code:
    ```c#   else if (newGMT <= 0 && currentGMT <= 0 || newGMT >= 0 && currentGMT >= 0)    {       diff = 100 * (Math.Abs(newGMT) - Math.Abs(currentGMT));       AdjustTimes();   }    else    {       diff = 100 * (Math.Abs(newGMT) + Math.Abs(currentGMT));       AdjustTimes();   }   ```
    Now all of the duplicated code has been replaced by your new method. Notice how much more readable and concise your code looks!
 
