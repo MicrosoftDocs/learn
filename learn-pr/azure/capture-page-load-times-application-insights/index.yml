@@ -8,6 +8,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: application-insights
 title: Capture and view page load times in your Azure web app with Application Insights
 summary: >
   Application Insights is an Azure service that you can use to 
