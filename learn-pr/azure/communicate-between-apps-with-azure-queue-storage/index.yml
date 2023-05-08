@@ -8,6 +8,7 @@ metadata:
   ms.author: normesta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: queues
 title: Communicate between applications with Azure Queue storage
 summary: Implement the publish-subscribe pattern in the cloud using Azure Queue storage.
 abstract:  | 
