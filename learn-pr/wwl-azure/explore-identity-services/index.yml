@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: sap-on-azure
 title: Explore identity services for SAP on Azure
 summary: This module explores using identity services to design multiple authentication and authorization scenarios Azure facilitates, that includes support for a range of identity providers.
