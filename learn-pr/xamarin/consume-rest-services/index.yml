@@ -7,7 +7,6 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
   ms.service: xamarin
 title: "Consume REST web services in Xamarin apps"
 summary: "Consume a REST web service by using HttpClient and perform basic CRUD operations. You will detect when your device is connected to the internet to provide a good user experience and take advantage of the native networking stacks to get top performance."
