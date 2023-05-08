@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learn-aspnetcore
   
+  ms.service: aspnet-core
 title: Exercise - Create the sample application
 durationInMinutes: 5
 content: |
