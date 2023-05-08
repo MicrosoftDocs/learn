@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Track model training with MLflow in jobs
 summary: Learn how to track model training with MLflow in jobs when running scripts.
 abstract: |

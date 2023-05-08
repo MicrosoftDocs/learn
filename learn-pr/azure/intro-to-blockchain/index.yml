@@ -8,7 +8,6 @@ metadata:
   manager: eliotgra
   ms.author: mosagie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to blockchain on Azure
 summary: Discover how blockchain protocols enable trust. Learn to assess scenarios for when to use blockchain and decide if it's right for your solution.
 abstract: |

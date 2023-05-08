@@ -8,7 +8,6 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.devlang: bicep
 title: Deploy child and extension resources by using Bicep
 summary: |

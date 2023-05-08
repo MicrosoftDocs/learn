@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure application security features
 summary: Register your company applications then use Azure security features to configure and monitor secure access to the application.
 abstract: |
