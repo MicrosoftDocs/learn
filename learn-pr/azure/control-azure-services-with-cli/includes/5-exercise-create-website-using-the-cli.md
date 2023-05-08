@@ -1,17 +1,17 @@
 Next, let's use the Azure CLI to create a resource group, then to deploy a web app into this resource group.
 
-[!INCLUDE[Azure Sandbox regions note](learn-pr\includes\azure-sandbox-regions-first-mention-note.md)]
+[!INCLUDE[Azure Sandbox regions note](../../../includes/azure-sandbox-regions-first-mention-note.md)]
 
 ### Using a resource group
 
-When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. However, signing in is unnecessary when you're using the browser-based Cloud Shell sandbox environment.
+When you're working with your own machine and Azure subscription, you need to sign in to Azure using the `az login` command. However, signing in is unnecessary when you're using the browser-based Cloud Shell sandbox environment.
 
 Next, you'd normally create a resource group for all your related Azure resources with an `az group create` command, but for this exercise, the following resource group has been created for you: **<rgn>[sandbox resource group name]</rgn>**.
 
 > [!NOTE]
 > For this exercise, we're using East US as the region. If you encounter an issue when you create the app service plan, select a different region from the previous list.
 
-1. Your first step in this exercise will be to create several variables that you'll use in later commands.
+1. Your first step in this exercise is to create several variables to use in later commands.
 
    ```bash
    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
@@ -59,7 +59,7 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
    az appservice plan list --output table
    ```
 
-   You'll get a response like the following example:
+   You get a response like the following example:
 
    ```output
    Kind    Location    MaximumNumberOfWorkers    Name                NumberOfSites    ResourceGroup                               Status
@@ -69,9 +69,9 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
 
 ### Steps to create a web app
 
-Next, you'll create the web app in your service plan. You can deploy the code at the same time, but for our example, we'll create the web app and deploy the code as separate steps.
+Next, create the web app in your service plan. You can deploy the code at the same time, but for our example, we create the web app and deploy the code as separate steps.
 
-1. To create the web app, you'll supply the web app name and the name of the app plan you created above. Just like the app plan name, the web app name must be unique. The variables that you created earlier will assign random values that should be sufficient for this exercise.
+1. To create the web app, supply the web app name and the name of the app plan you created previously. Just like the app plan name, the web app name must be unique. The variables that you created earlier assign random values that should be sufficient for this exercise.
 
    ```azurecli
    az webapp create --name $AZURE_WEB_APP --resource-group $RESOURCE_GROUP --plan $AZURE_APP_PLAN
@@ -83,7 +83,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    az webapp list --output table
    ```
 
-   You'll get a response like the following example:
+   You get a response like the following example:
 
    ```output
    Name               Location    State    ResourceGroup                               DefaultHostName                      AppServicePlan
@@ -91,7 +91,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    popupwebapp-12345  East US  Running  Learn-12345678-1234-1234-1234-123456789abc  popupwebapp-12345.azurewebsites.net  popupappplan-54321
    ```
 
-   Make a note of the **DefaultHostName** listed in the table; this address is the URL for the new website. Azure will make your website available through the unique app name in the `azurewebsites.net` domain. For example, if your app name was "popupwebapp-12345", then your website URL would be: `http://popupwebapp-12345.azurewebsites.net`.
+   Make a note of the **DefaultHostName** listed in the table; this address is the URL for the new website. Azure makes your website available through the unique app name in the `azurewebsites.net` domain. For example, if your app name was "popupwebapp-12345", then your website URL would be: `http://popupwebapp-12345.azurewebsites.net`.
 
 1. Your site has a "quickstart" page created by Azure that you can see either in a browser, or with CURL, just use the **DefaultHostName**:
 
@@ -99,7 +99,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    curl $AZURE_WEB_APP.azurewebsites.net
    ```
 
-   You'll get the default HTML for the sample app returned.
+   You get the default HTML for the sample app returned.
 
 ### Steps to deploy code from GitHub
 
