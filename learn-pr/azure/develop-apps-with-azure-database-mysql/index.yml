@@ -10,7 +10,6 @@ metadata:
   ms.reviewer: maghan
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
   ms.service: mysql
   ms.subservice: flexible-server
 title: Develop applications with Azure Database for MySQL - Flexible Server
