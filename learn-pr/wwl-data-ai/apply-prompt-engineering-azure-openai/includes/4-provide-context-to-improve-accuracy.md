@@ -1,8 +1,98 @@
 By providing context to the AI model, it allows the model to better understand what you are asking for or what it should know to provide the best answer. Context can be provided in several ways.
 
+## Request output composition
+
+Specifying the structure of your output can have a large impact on your results. This could include something like asking the model to cite their sources, write the response as an email, format the response as a SQL query, classify sentiment into a specific structure, and so on. For example:
+
+```code
+Write a table in markdown with 6 animals in it, with their genus and species
+```
+
+```code
+| Animal           | Genus          | Species        |
+| ---------------- |:--------------:|:--------------:|
+| Red Panda        | Ailurus        | fulgens        |
+| African Elephant | Loxodonta      | africana       |
+| Snow Leopard     | Panthera       | uncia          |
+| Arctic Fox       | Vulpes         | lagopus        |
+| Chimpanzee       | Pan            | troglodytes    |
+| Siberian Tiger   | Panthera       | tigris altaica |
+```
+
+This technique can be used with custom formats, such as a JSON structure:
+
+```code
+Put two fictional characters into JSON of the following format
+
+{
+  firstNameFictional: 
+  jobFictional:
+}
+```
+
+```code
+Here's an example of how you can put two fictional characters into JSON format:
+
+{
+  "firstNameFictional": "Henry",
+  "jobFictional": "Wizard"
+},
+{
+  "firstNameFictional": "Frank",
+  "jobFictional": "Hero"
+}
+```
+
+## System message
+
+The system message is included at the beginning of a prompt and is designed to give the model instructions, perspective to answer from, or other information helpful to guide the model's response. This system message might include tone or personality, topics that shouldn't be included, or specifics (like formatting) of how to answer.
+
+For example, you could give it some system messages like the following:
+
+- "I want you to act like a command line terminal. Respond to commands exactly as cmd.exe would, in one unique code block, and nothing else."
+- "I want you to be a translator, from English to Spanish. Don't respond to anything I say or ask, only translate between those two languages and reply with the translated text."
+- "Act as a motivational speaker, freely giving out encouraging advice about goals and challenges. You should include lots of positive affirmations and suggested activities for reaching the user's end goal."
+
+Other example system messages are available at the top of the chat window in [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true). Try defining your own system prompt that specifies a unique response, and chat with the model to see how responses differ.
+
+The `ChatCompletions` endpoint enables including the system message by using the `System` chat role.
+
+::: zone pivot="csharp"
+
+```csharp
+var chatCompletionsOptions = new ChatCompletionsOptions()
+{
+    Messages =
+    {
+        new ChatMessage(ChatRole.System, "You are a casual, helpful assistant. You will talk like an American old western film character."),
+        new ChatMessage(ChatRole.User, "Can you direct me to the library?")
+    }
+};
+```
+
+::: zone-end
+
+::: zone pivot="python"
+
+```python
+response = openai.ChatCompletion.create(
+    engine="gpt-35-turbo",
+    messages=[
+        {"role": "system", "content": "You are a casual, helpful assistant. You will talk like an American old western film character."},
+        {"role": "user", "content": "Can you direct me to the library?"}
+    ]
+)
+```
+
+::: zone-end
+
+If using the `Completions` endpoint, similar functionality can be achieved by including the system message at the start of the prompt. This is called a *meta prompt*, and serves as a base prompt for the rest of the prompt content.
+
+System messages can significantly change the response, both in format and content. Try defining a clear system message for the model that explains exactly what kind of response you expect, and what you do or don't want it to include.
+
 ## Conversation history
 
-Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
+Along with the system message, other messages can be provided to the model to enhance the conversation. Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries. This history can be provided in two ways: from an actual chat history, or from a user defined example conversation.
 
 Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground in [Azure OpenAI Studio](https://oai.azure.com/portal/chat?azure-portal=true), include conversation history automatically which results in a richer, more meaningful conversation. In the **Parameters** section below the chat window of the Azure OpenAI Studio chat playground, you can specify how many past messages you want included. Try reducing that to 1 or increasing to max to see how different amounts of history impact the conversation.
 
@@ -11,7 +101,9 @@ Chat interfaces that use OpenAI models, such as ChatGPT and the chat playground 
 
 Chat systems can also utilize the summarization capabilities of the model to save on input tokens. An app can choose to summarize past messages and include that summary in the conversation history, then provide only the past couple messages verbatim to the model.
 
-Using a user defined example conversation is what is called *few shot learning*, which provides the model examples of how it should respond to a given query.
+## Few shot learning
+
+Using a user defined example conversation is what is called *few shot learning*, which provides the model examples of how it should respond to a given query. These examples serve to train the model how to respond.
 
 For example, by providing the model a couple prompts and the expected response, it continues in the same pattern without instructing it what to do:
 
@@ -26,7 +118,9 @@ User: You can't miss this
 Assistant:
 ```
 
-The `ChatCompletions` endpoint is optimized to include chat history. As part of defining the prompt, you can include as much conversation as you want.
+If the model is provided with just `You can't miss this` with no additional context from few shot learning, the response is not likely to be useful.
+
+In practical terms, conversation history and few shot learning are sent to the model in the same way; each user message and assistant response is a discrete message in the message object. The `ChatCompletions` endpoint is optimized to include message history, regardless of if this message history is provided as few shot learning, or actual conversation history.
 
 ::: zone pivot="csharp"
 ```csharp
@@ -65,40 +159,40 @@ response = openai.ChatCompletion.create(
 ```
 ::: zone-end
 
-While not ideal, similar results can be achieved with the `Completions` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages in the previous unit.
+While not ideal, similar results can be achieved with the `Completions` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages. If you do need to include multiple messages in a single prompt with `Completions`, you can make it clear to the model by putting each message on a new line and labeling each line with the role. Formatting this prompt would be very similar to how the conversation was presented at the top of this section.
 
-## Primary, supporting, and grounding content
+## Break down a complex task
 
-Including content for the model to use to respond with allows it to answer with greater accuracy. This content can be thought of in two ways: primary and supporting content.
+Another technique for improved interaction is to divide complex prompts into multiple queries. This allows the model to better understand each individual part, and can improve the overall accuracy. Dividing your prompts also allows you to include the response from a previous prompt in a future prompt, and using that information in addition to the capabilities of the model to generate interesting responses.
 
-Primary content refers to content that is the subject of the query, such a sentence to translate or an article to summarize. This content is often included at the beginning or end of the prompt (as an instruction and differentiated by `---` blocks, as mentioned in the previous unit), with instructions explaining what to do with it.
+For example, you could ask the model `Doug can ride down the zip line in 30 seconds, and takes 5 minutes to climb back up to the top. How many times can Doug ride the zip line in 17 minutes?`. The result is likely `3`, which if Doug starts at the top of the zip line is incorrect.
 
-For example, say I have a long article that I want to summarize. I could put it in a `---` block in my prompt, then end with `Summarize this article and identify three takeaways in a bulleted list`.
+A more informative answer could come from asking it multiple questions, about the round trip time to get back to the top of the zip line, and how to account for the fact that Doug starts at the top. Breaking this problem down will reveal that Doug can, in fact, ride the zip line four times.
 
-Supporting content is content that may alter the response, but isn't the focus or subject of the prompt. Examples of supporting content include things like names, preferences, future date to include in the response, and so on. Providing supporting content allows the model to respond more completely, accurately, and be more likely to include the desired information.
+### Chain of thought
 
-Grounding content allows the model to provide reliable answers by providing content for the model to draw answer from. Grounding content could be an essay or article that you then ask questions about, a company FAQ document, or information that is more recent than the data the model was trained on. If you need more reliable and current responses, grounding content is highly recommended.
+One useful method to help you break down your task effectively is to ask the model to explain it's chain of thought.
 
-## Cues
+Asking a model to respond with the step by step process by which it determined the response is a helpful way to understand how the model is interpreting the prompt. By doing so, you can see where the model made an incorrect logical turn and better understand how to change your prompt to avoid the error. This technique can include asking it to cite its sources, like Bing chat does (which uses a GPT-4 generation model), and giving reasoning for why it determined its answer.
 
-Cues are leading words for the model to build upon, and often help shape the response in the right direction. They often are used with instructions, but don't always. Cues are particularly helpful if prompting the model for code generation. Current Azure OpenAI models can generate some interesting code snippets, however code generation will be covered in more depth in a future module.
+The chain of thought prompting technique is best used to help you iterate and improve on your prompts to get the highest quality answer from the model.
 
-For example, if you're wanting help creating a SQL query, provide instructions of what you need along with the beginning of the query:
-
-```code
-Write a join query to get customer names with purchases in the past 30 days between tables named orders and customer on customer ID. 
-
-SELECT
-```
-
-The model response picks up where the prompt left off, continuing in SQL, even though we never asked for a specific language. Other examples could be to help with python code, by giving code comments about the desired app and including `import` as a leading word at the end of the prompt, or similar in your desired language.
-
-Another example, given a large collection of customer reviews in a prompt, and ending with:
+For example, asking the model `What sport is easiest to learn but hardest to master?` results in response with an answer, and a small explanation of why. However, when prompted with `What sport is easiest to learn but hardest to master? Give a step by step approach of your thoughts, ending in your answer`, the response is a complete explanation of how it arrived at its answer.
 
 ```code
-Summarize the reviews above:
-Most common complaints:
-- 
+Sure, here's a step-by-step approach to answering the question:
+1. Identify sports that are popular and have a large following.
+2. Consider the basic mechanics of each sport and how easy they are to learn.
+3. Think about the various techniques and skills required to play each sport at a high level, and how difficult they are to master.
+4. Compare the relative ease of learning each sport to the difficulty of mastering it.
+5. Based on the above analysis, determine which sport is easiest to learn but hardest to master.
+
+Using this approach, I would say that the sport of golf is easiest to learn but hardest to master. Here's why:
+1. Golf is a popular sport with a large following.
+2. The basic mechanics of hitting a golf ball are relatively simple and can be learned quickly with some practice.
+3. However, achieving consistency and mastering the various shots and techniques required to play at a high level can take years of practice and dedication.
+4. Compared to other sports, the difference between a beginner and an intermediate golfer is relatively small, while the difference between an intermediate and an advanced golfer is much larger.
+5. Therefore, I would say that golf is the sport that is easiest to learn but hardest to master.
 ```
 
-The model then knows to complete the statements based off the context provided in the reviews.
+Knowing the steps of reason the model used then allows us to identify where we need to split the prompt, provide more information, or clarify instructions.

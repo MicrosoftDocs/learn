@@ -11,6 +11,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: openai 
-durationInMinutes: 9
+durationInMinutes: 15
 content: |
   [!include[](includes/4-provide-context-to-improve-accuracy.md)]
