@@ -8,7 +8,6 @@ metadata:
   ms.author: orthomas
   ms.reviewer: mimckitt
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.service: virtual-machine-scale-sets
 title: Introduction to Azure Virtual Machine Scale Sets
