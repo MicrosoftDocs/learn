@@ -8,7 +8,6 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: sql-database
 title: "Scale multiple Azure SQL Databases with SQL elastic pools"
 summary: "SQL elastic pools allow you to manage performance and cost for a collection of SQL databases."
