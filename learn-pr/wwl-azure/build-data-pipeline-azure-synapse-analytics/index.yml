@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: synapse-analytics
   ms.subservice: pipeline
 title: Build a data pipeline in Azure Synapse Analytics
