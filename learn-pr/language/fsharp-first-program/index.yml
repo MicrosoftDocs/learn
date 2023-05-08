@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
   ms.custom: team=nextgen
   ms.devlang: fsharp
 title: Store and retrieve data by using F#
