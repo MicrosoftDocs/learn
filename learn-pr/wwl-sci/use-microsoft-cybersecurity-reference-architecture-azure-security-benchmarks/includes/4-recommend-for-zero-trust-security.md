@@ -1,3 +1,4 @@
+
 A Zero Trust approach to security is required to be effective at keeping up with threats, changes to cloud platforms, and changes in business
 models responding to a rapidly evolving world. You can find best practices for adopting a Zero Trust approach to security throughout the
 Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft cloud security benchmark (MCSB). Most modern security controls support a Zero Trust strategy, so this section will focus primarily on best practices related to the first and most visible priority for Zero Trust - modernizing
