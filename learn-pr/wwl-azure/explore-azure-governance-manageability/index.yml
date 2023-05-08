@@ -8,6 +8,7 @@ metadata:
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Explore governance and manageability for SAP on Azure
 summary: This module explores using the Azure Governance collection of concepts and services that are designed to enable management of Azure resources at scale
 abstract: |
