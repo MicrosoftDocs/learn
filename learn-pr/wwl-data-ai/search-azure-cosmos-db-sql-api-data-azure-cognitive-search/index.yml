@@ -8,6 +8,8 @@ metadata:
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Search Azure Cosmos DB for NoSQL data with Azure Cognitive Search
 summary: Index Azure Cosmos DB for NoSQL data with Azure Cognitive Search.
 abstract: |

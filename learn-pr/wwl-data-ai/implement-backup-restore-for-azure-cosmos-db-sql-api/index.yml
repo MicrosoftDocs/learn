@@ -8,6 +8,8 @@ metadata:
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Implement backup and restore for Azure Cosmos DB for NoSQL
 summary: We will learn to use the two backup models Azure Cosmos DB provides.
 abstract: |
