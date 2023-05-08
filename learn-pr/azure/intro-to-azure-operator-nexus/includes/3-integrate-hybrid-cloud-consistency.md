@@ -1,1 +1,1 @@
-Content in development.
+The hybrid architecture of the Operator Nexus platform uses the robust and rich set of capabilities and services that Azure provides, such as Azure Monitoring.
