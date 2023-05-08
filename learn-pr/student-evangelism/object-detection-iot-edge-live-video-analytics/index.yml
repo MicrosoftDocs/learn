@@ -7,7 +7,6 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
   ms.service: iot-edge
 title: "Object detection on Edge devices with Live Video Analytics using YOLO model"
