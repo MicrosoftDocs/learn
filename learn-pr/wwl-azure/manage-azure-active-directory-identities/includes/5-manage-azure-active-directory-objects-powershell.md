@@ -1,4 +1,5 @@
 
+
 You can also manage users, groups, and devices by using the Microsoft Azure Active Directory module for Windows PowerShell module. To run the Microsoft Azure Active Directory module for Windows PowerShell module, you need the following requirements:
 
  -  **Operating system**. You must be running either Windows 7 or newer, or Windows Server 2008 R2 or newer.
