@@ -8,7 +8,6 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
   ms.devlang: bicep
 title: Build your first Bicep deployment workflow by using GitHub Actions

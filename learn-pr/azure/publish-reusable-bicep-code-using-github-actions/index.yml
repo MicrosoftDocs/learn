@@ -8,7 +8,6 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
   ms.devlang: bicep
 title: Publish reusable Bicep code by using GitHub Actions

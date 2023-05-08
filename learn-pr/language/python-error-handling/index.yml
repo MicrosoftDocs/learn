@@ -9,7 +9,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.devlang: python
 title: Python error handling
 summary: Handle exceptions and create useful error messages. Improve your skills by using exceptions for code flow control.

@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: nextgen
   ms.devlang: r
 title:  Introduction to classification models by using R and tidymodels

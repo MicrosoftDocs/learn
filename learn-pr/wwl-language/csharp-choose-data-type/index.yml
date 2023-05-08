@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.devlang: csharp
 title: Choose the correct data type in your C# code
 summary: Learn the difference between many data types, how they work, what they do, and how to choose one over another.

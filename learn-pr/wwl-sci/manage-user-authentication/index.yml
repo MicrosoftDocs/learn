@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage user authentication
 summary: There are multiple options for authentication in Azure AD. Learn how to implement and manage the right authentications for users based on business needs.
 abstract: |

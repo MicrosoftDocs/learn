@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Create stored procedures and user-defined functions
 summary: Learn how to use Stored procedures to group T-SQL statements so they can be used and reused whenever needed.  You may need to execute stored procedures that someone else has created or create your own.
 abstract: |

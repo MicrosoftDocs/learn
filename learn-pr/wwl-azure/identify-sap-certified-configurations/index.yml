@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Identify SAP-certified configurations
 summary: Help identify prerequisites, deployment options, and SAP-certified configurations available to you when deploying SAP products in Azure.
 abstract: |

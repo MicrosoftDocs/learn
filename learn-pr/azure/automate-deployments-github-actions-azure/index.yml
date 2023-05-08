@@ -9,7 +9,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure  
 title: Architect full-stack applications and automate deployments with GitHub
 summary: In the language of your choice (Node.js, Python, or .NET), deploy an end-to-end solution to solve the real-world scenario of catching the bus. You'll learn how to architect a solution that uses Azure SQL Database, Azure Functions, Azure Static Web Apps, Logic Apps, Visual Studio Code, and GitHub Actions.
 abstract: |

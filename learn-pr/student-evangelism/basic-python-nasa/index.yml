@@ -7,7 +7,6 @@ metadata:
   author: drguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen, py-fresh-zinc, engagement-fy23
   ms.devlang: python
 title: Write basic Python in Notebooks

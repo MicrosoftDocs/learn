@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design and implement network monitoring
 summary: You learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher.
 abstract: |
