@@ -1,6 +1,6 @@
 To start with the scalability project your company wants to achieve, you first need to understand what scalability is and how it's applied to Kubernetes itself and its applications.
 
-In this chapter, we review some concepts of scalability.
+In this chapter, we review some scalability concepts.
 
 ## Scalability
 

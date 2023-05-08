@@ -1,6 +1,6 @@
 Your company is experiencing increased demand for its video rendering service because of its international expansion. You're looking for ways to scale the product to provide a better experience for all customers. You wanted to understand how to use native Kubernetes scaling to do it without too many changes in your infrastructure.
 
-You discovered that by using the Kubernetes HorizontalPodAutoscaler resource, you can automatically scale up and down your deployment. You found that you can scale your service transparently, while still serving all of your website users well.
+You discovered that by using the Kubernetes HorizontalPodAutoscaler resource, you can automatically scale up and down your deployment. You found that you can scale your service transparently while still serving all of your website users well.
 
 ## Clean up resources
 
