@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Implement generic types and traits
 summary: "Understand what generic types and traits are and how to use them in Rust."
 abstract:  |
