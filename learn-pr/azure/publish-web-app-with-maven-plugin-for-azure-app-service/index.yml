@@ -7,7 +7,6 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: app-service-web
 title: Develop Java web app on Azure using Maven
 summary: Use the Maven plugin for Azure App Service to develop a Java web app and deploy the app to Azure.
