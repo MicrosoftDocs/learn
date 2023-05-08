@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: load-balancer
 title: Configure Azure Load Balancer
 summary: Learn how to configure an internal or public load balancer.
 abstract: |
