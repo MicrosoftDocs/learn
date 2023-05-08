@@ -10,6 +10,7 @@ metadata:
   manager: jmartens  
   ms.topic: interactive-tutorial
   ms.prod: learning-azure 
+  ms.service: devtest-lab
 title: Set up your first development lab by using Azure DevTest Labs
 summary: "Create a development virtual machine from a base image and pre-install required software. You'll use a Remote Desktop client to access the VM."
 abstract: |
