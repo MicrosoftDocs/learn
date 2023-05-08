@@ -8,6 +8,8 @@ metadata:
   ms.author: masoucou
   ms.topic: interactive-tutorial
   ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: "Customize layout in Xamarin.Forms XAML pages"
 summary: "Create consistent user interfaces across different devices by using StackLayout and Grid."
 abstract: |
