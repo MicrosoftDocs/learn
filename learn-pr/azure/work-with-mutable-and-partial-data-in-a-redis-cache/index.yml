@@ -7,7 +7,6 @@ metadata:
   author: JesseDietrichson
   ms.author: jediet
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   #ms.learn-contact: jediet
   ms.service: cache
 title: Work with mutable and partial data in Azure Cache for Redis
