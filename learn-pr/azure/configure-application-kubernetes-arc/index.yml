@@ -7,7 +7,6 @@ metadata:
   author: mijacobs
   ms.author: mijacobs
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-arc
   ms.subservice: azure-arc-kubernetes
 title: Implement Azure App Service on Kubernetes with Arc

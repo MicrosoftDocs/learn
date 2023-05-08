@@ -8,7 +8,6 @@ metadata:
   ms.author: mikeray
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
   ms.service: azure-arc
   ms.subservice: azure-arc-data
