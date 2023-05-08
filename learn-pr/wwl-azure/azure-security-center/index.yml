@@ -8,6 +8,7 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: defender-for-cloud
 title: Enable and manage Microsoft Defender for Cloud
 summary: Use Microsoft Defender for Cloud to strengthen security posture and protect workloads against modern threats in Azure.
 abstract: |
