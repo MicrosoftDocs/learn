@@ -8,7 +8,6 @@ metadata:
   author: kengaderdus
   ms.author: kengaderdus
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
   ms.service: active-directory
   ms.subservice: B2C
 title: Authenticate users in a Node web app by using Azure Active Directory B2C
