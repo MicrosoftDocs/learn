@@ -7,7 +7,6 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
   ms.service: azure-sphere
 title: "Introduction to Azure Sphere"
