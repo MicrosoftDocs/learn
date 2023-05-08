@@ -8,7 +8,8 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-blazor
+  ms.prod: dotnet-architecture
+  ms.technology: blazor 
 title: "Improve how forms and validation work in Blazor web apps"
 summary: "Learn how to use forms in Blazor, add event handlers, and validate the data a user submits. By using Blazor form components you can validate client-side forms without writing client-side JavaScript to handle the validations."
 abstract: |
