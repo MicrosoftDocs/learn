@@ -8,6 +8,8 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure-functions
+  ms.subservice: durable
 title: Implement Durable Functions
 summary: Learn how Durable Functions can simplify complex, stateful coordination requirements in serverless applications.
 abstract: |
