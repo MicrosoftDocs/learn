@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: files 
 title: Configure Azure Files and Azure File Sync
 summary: Learn how to configure Azure Files and Azure File Sync.
 abstract: |
