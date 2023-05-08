@@ -7,7 +7,7 @@ metadata:
   author: markamos
   ms.author: quradic
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: vs-code
 title: Develop web applications with Visual Studio Code
 summary: Learn how to develop apps with Visual Studio Code, and use its features to create and test a basic web application.
 abstract: |
