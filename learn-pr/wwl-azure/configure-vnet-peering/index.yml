@@ -8,6 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: virtual-network
 title: Configure Azure Virtual Network peering
 summary: Learn to configure an Azure Virtual Network peering connection and address transit and connectivity concerns.
 abstract: |
