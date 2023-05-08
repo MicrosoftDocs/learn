@@ -8,7 +8,6 @@ metadata:
   author: tchristiani
   ms.author: terrychr
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cache
 title: Implement Pub/Sub and Streams in Azure Cache for Redis
 summary: >

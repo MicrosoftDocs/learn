@@ -7,7 +7,6 @@ metadata:
   author: coderandhiker
   ms.author: chrisrt
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cache
 title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
 summary: Learn how to use Azure Cache for Redis to store session data and improve the scalability of web applications.
