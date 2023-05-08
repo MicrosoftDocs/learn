@@ -7,7 +7,6 @@ metadata:
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: key-vault
   ms.subservice: secrets
 title: Configure and manage secrets in Azure Key Vault
