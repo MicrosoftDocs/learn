@@ -9,7 +9,6 @@ metadata:
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
-  ms.prod: learning-azure
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-release
 title: Manage release cadence in Azure Pipelines by using deployment patterns
