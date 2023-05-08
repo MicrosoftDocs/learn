@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: msteams
 title: Share knowledge within teams
 summary: This module describes how to share knowledge within teams, Azure DevOps Wikis, and integration with Azure Boards.
