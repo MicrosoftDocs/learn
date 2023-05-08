@@ -8,7 +8,6 @@ metadata:
   author: guywi-ms
   ms.author: guywild
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
   ms.service: azure-monitor
   ms.subservice: logs
 title: Guided project - Analyze logs in Azure Monitor with KQL

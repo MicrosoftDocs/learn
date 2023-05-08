@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-monitor
   ms.subservice: virtual-machines
 title: Implement Azure Monitoring for SAP workloads on Azure VMs
