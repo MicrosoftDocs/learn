@@ -7,7 +7,6 @@ metadata:
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: app-service
 title: Deploy and run a containerized web app with Azure App Service
 summary: > 
