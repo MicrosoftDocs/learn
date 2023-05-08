@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cognitive-services
   ms.subservice: computer-vision
 title: Read text with the Computer Vision service
