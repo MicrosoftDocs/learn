@@ -8,6 +8,7 @@ metadata:
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Configure and monitor Microsoft Sentinel
 summary: Use Azure Sentinel to discover, track, and respond to security breaches within your Azure environment.
 abstract: |
