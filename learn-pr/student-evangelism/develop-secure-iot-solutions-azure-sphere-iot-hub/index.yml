@@ -7,7 +7,6 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
   ms.service: azure-sphere
 title: "Develop secure IoT Solutions for Azure Sphere with IoT Hub"
