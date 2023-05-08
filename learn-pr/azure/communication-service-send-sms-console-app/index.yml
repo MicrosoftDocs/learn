@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-communication-services 
   ms.subservice: sms
 title: Send an SMS message from a C# console application with Azure Communication Services

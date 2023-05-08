@@ -8,7 +8,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-communication-services 
   ms.subservice: calling 
 title: Create a voice calling web app with Azure Communication Services
