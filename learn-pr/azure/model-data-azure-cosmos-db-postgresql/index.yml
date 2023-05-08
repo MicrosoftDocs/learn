@@ -12,7 +12,6 @@ metadata:
   manager: jroth
   ms.reviewer: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cosmos-db
   ms.subservice: postgresql
 title: Model data for Azure Cosmos DB for PostgreSQL
