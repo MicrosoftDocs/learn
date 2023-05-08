@@ -7,7 +7,6 @@ metadata:
   author: mosabami
   ms.author: aayodeji
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-kubernetes-services
 title: Azure Kubernetes Services Governance with Azure Policy
 summary: >
