@@ -9,6 +9,7 @@ metadata:
   manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
+  ms.service: sql-db-mi
 title: Provision an Azure SQL database to store application data
 summary: Use the Azure Portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
 abstract: |

@@ -8,6 +8,7 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: sql-db-mi
 title: Secure MySQL
 summary: Learn about security and encryption in Azure Database for MySQL.
 abstract: |
