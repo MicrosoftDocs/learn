@@ -7,7 +7,6 @@ metadata:
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
   ms.service: azure-functions
 title: Execute an Azure Function with triggers
