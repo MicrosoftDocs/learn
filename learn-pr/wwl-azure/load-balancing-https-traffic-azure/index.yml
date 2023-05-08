@@ -8,6 +8,7 @@ metadata:
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: azure
 title: Load balance HTTP(S) traffic in Azure
 summary: You'll learn how to design load balancer solutions for HTTP(S) traffic and how to implement Azure Application Gateway and Azure Front Door.
 abstract: |
