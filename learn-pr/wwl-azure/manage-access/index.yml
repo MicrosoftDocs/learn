@@ -8,6 +8,7 @@ metadata:
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Manage access for Azure Virtual Desktop
 summary: Azure Virtual Desktop uses Azure role-based access controls (RBAC) to assign roles to users and admins. Azure Virtual Desktop has additional roles that let you separate management roles for host pools, app groups, and workspaces.
 abstract: |
