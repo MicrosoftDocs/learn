@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cognitive-search
 title: Maintain an Azure Cognitive Search solution
 summary: Maintain the performance, cost, and reliability of your Azure Cognitive Search solutions.
