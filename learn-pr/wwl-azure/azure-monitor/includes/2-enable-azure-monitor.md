@@ -23,7 +23,7 @@ This pipe uses the Azure Monitor single pipeline for getting access to the monit
 
 ### Microsoft Defender for Cloud security alerts
 
-Security Center automatically collects, analyzes, and integrates log data from your Azure resources; the network; and connected partner solutions, like firewall and endpoint protection solutions, to detect real threats and reduce false positives. Security Center displays a list of prioritized security alerts along with the information you need to quickly investigate the problem and recommendations for how to remediate an attack.
+Microsoft Defender for Cloud automatically collects, analyzes, and integrates log data from your Azure resources; the network; and connected partner solutions, like firewall and endpoint protection solutions, to detect real threats and reduce false positives. Microsoft Defender for Cloud displays a list of prioritized security alerts along with the information you need to quickly investigate the problem and recommendations for how to remediate an attack.
 
 The following sections describe how you can configure data to be streamed to an event hub. The steps assume that you already have Microsoft Defender for Cloud configured in your Azure subscription.
 
