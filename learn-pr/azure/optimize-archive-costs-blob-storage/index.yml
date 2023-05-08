@@ -8,6 +8,7 @@ metadata:
   ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: blobs
 title: Optimize storage performance and costs using Blob storage tiers
 summary: Compare storage tiers and assign appropriate levels for data types.  Use Azure tools and code to retrieve and set storage tier for accounts and blobs.
 abstract: | 

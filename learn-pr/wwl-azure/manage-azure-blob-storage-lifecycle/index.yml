@@ -8,6 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: blobs
 title: Manage the Azure Blob storage lifecycle
 summary: Learn how to manage data availability throughout the Azure Blob storage lifecycle.
 abstract: |

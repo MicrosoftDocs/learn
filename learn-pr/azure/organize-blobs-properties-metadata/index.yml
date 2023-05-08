@@ -8,6 +8,7 @@ metadata:
   ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: blobs
 title: Organize Azure storage blobs with properties and metadata
 summary: Compare the types of properties and metadata associated with Azure storage blobs, and examine the methods used to view and modify these values. Add code to .NET Core apps to retrieve and modify metadata.
 abstract: |
