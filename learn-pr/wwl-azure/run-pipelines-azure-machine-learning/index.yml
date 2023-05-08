@@ -8,6 +8,8 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: machine-learning
+  ms.subservice: pipelines
 title: Run pipelines in Azure Machine Learning
 summary: Learn how to create and use components to build pipeline in Azure Machine Learning. Run and schedule Azure Machine Learning pipelines to automate machine learning workflows.
 abstract: |
