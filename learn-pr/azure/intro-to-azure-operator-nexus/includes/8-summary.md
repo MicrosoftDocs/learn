@@ -3,7 +3,7 @@ This module introduced you to Azure Operator Nexus, which enables you to execute
 In this module, you learned how to:
 
 - Describe the Operator Nexus solution.
-- Describe the On-Premises infrastructure.
+- Describe the on-premises infrastructure.
 - Describe Operator Nexus integrated systems architecture.
 - Explain Operator Nexus deployment Resource Providers.
 
