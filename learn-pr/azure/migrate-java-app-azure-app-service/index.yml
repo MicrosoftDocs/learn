@@ -7,7 +7,6 @@ metadata:
   author: v-ksreedevan
   ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: app-service 
   ms.subservice: web-apps
 title: Migrate Java web applications to Azure App Service

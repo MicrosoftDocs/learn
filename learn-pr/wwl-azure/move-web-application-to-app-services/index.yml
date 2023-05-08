@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: app-service 
   ms.subservice: web-apps
 title: Migrate a web app to Azure App Service
