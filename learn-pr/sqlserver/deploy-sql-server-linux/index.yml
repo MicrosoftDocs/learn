@@ -8,7 +8,8 @@ metadata:
   ms.author: randolphwest
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
+  ms.technology: sql-linux
 title: Deploy SQL Server on Linux
 summary: Learn about the software and hardware prerequisites to run SQL Server on Linux and then discover the straightforward steps to install SQL Server on Linux. You will also learn additional tasks, such as installing command-line tools.
 abstract: |
