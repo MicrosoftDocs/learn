@@ -8,7 +8,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial 
-  ms.prod: learning-language
   ms.service: azure-python
   ms.devlang: python
 title: Use 'while' and 'for' loops in Python
