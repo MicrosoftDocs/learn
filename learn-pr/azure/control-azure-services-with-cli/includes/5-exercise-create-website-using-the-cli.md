@@ -1,16 +1,21 @@
 Next, let's use the Azure CLI to create a resource group, then to deploy a web app into this resource group.
 
+[!INCLUDE[Azure Sandbox regions note](learn-pr\includes\azure-sandbox-regions-first-mention-note.md)]
+
 ### Using a resource group
 
 When you're working with your own machine and Azure subscription, you'll need to first sign in to Azure using the `az login` command. However, signing in is unnecessary when you're using the browser-based Cloud Shell sandbox environment.
 
 Next, you'd normally create a resource group for all your related Azure resources with an `az group create` command, but for this exercise, the following resource group has been created for you: **<rgn>[sandbox resource group name]</rgn>**.
 
+> [!NOTE]
+> For this exercise, we're using East US as the region. If you encounter an issue when you create the app service plan, select a different region from the previous list.
+
 1. Your first step in this exercise will be to create several variables that you'll use in later commands.
 
    ```bash
    export RESOURCE_GROUP=<rgn>[sandbox resource group name]</rgn>
-   export AZURE_REGION=centralus
+   export AZURE_REGION=eastus
    export AZURE_APP_PLAN=popupappplan-$RANDOM
    export AZURE_WEB_APP=popupwebapp-$RANDOM
    ```
@@ -21,7 +26,7 @@ Next, you'd normally create a resource group for all your related Azure resource
    az group list --output table
    ```
 
-   [!include[](../../../includes/azure-cloudshell-copy-paste-tip.md)]
+   [!INCLUDE[Copy paste tip](../../../includes/azure-cloudshell-copy-paste-tip.md)]
 
 1. As you do more Azure development, you can end up with several resource groups. If you have several items in the group list, you can filter the return values by adding a `--query` option. Try the following command:
 
@@ -59,7 +64,7 @@ When you run Web Apps using the Azure App Service, you pay for the Azure compute
    ```output
    Kind    Location    MaximumNumberOfWorkers    Name                NumberOfSites    ResourceGroup                               Status
    ------  ----------  ------------------------  ------------------  ---------------  ------------------------------------------  --------
-   app     Central US  3                         popupappplan-54321  0                Learn-12345678-1234-1234-1234-123456789abc  Ready
+   app     East US     3                         popupappplan-54321  0                Learn-12345678-1234-1234-1234-123456789abc  Ready
    ```
 
 ### Steps to create a web app
@@ -83,7 +88,7 @@ Next, you'll create the web app in your service plan. You can deploy the code at
    ```output
    Name               Location    State    ResourceGroup                               DefaultHostName                      AppServicePlan
    -----------------  ----------  -------  ------------------------------------------  -----------------------------------  ------------------
-   popupwebapp-12345  Central US  Running  Learn-12345678-1234-1234-1234-123456789abc  popupwebapp-12345.azurewebsites.net  popupappplan-54321
+   popupwebapp-12345  East US  Running  Learn-12345678-1234-1234-1234-123456789abc  popupwebapp-12345.azurewebsites.net  popupappplan-54321
    ```
 
    Make a note of the **DefaultHostName** listed in the table; this address is the URL for the new website. Azure will make your website available through the unique app name in the `azurewebsites.net` domain. For example, if your app name was "popupwebapp-12345", then your website URL would be: `http://popupwebapp-12345.azurewebsites.net`.
