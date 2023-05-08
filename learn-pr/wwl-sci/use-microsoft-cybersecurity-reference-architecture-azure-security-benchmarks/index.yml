@@ -2,7 +2,7 @@
 uid: learn.wwl.use-microsoft-cybersecurity-reference-architecture-azure-security-benchmarks
 metadata:
   title: Recommend security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|This module will show you how to use guidance in Microsoft Cybersecurity Reference Architectures and Microsoft Cloud Security Benchmarks to help an organization apply Zero Trust principles and secure their infrastructure.</span|  </div|"
+  description: "This module will show you how to use guidance in Microsoft Cybersecurity Reference Architectures and Microsoft Cloud Security Benchmarks to help an organization apply Zero Trust principles and secure their infrastructure."
   ms.date: 05/08/2023
   author: wwlpublish
   ms.author: hrasheed
@@ -25,6 +25,7 @@ roles:
 - security-engineer
 - solution-architect
 products:
+- mdatp
 - microsoft-defender
 subjects:
 - cloud-security
