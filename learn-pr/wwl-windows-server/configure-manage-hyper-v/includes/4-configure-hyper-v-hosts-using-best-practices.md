@@ -15,13 +15,13 @@ The Contoso Hyper-V administrator needs to plan for the deployment of various wo
 
 Perhaps the most important best practice is to ensure that you provision the Hyper-V host with adequate hardware. Make sure that the Hyper-V host has appropriate processing capacity, enough RAM, and fast and redundant storage. Provision the Hyper-V host with multiple network adapters and designate a team to each group of adapters. A Hyper-V host that's provisioned with inadequate hardware resources will reduce the performance of all the VMs that the server hosts.
 
-## Deploy VMs on separate disks
+## Deploy VMs on separate drives
 
-The host server's OS and the VM files should be stored on separate disks, because:
+The host server's OS and the VM files should be stored on separate drives, because:
 
-- Using separate disks minimizes contention by ensuring that any disk read/write operations required by the VM files don't conflict with read/write operations required by the host's OS.
+- Using separate drives minimizes contention by ensuring that any disk read/write operations required by the VM files don't conflict with read/write operations required by the host's OS.
 
-- Using separate disks enables the host's OS volume to grow, without consuming all of the disk space that's available to the VM files.
+- Using separate drives enables the host's OS volume to grow, without consuming all of the disk space that's available to the VM files.
 
 You should use SSDs where possible because SSDs have faster read-write speeds and consume less power than standard HDDs.
 
@@ -57,7 +57,7 @@ Managing Hyper-V by using the Server Core configuration provides the following b
 
 Use Best Practices Analyzer to identify configuration-specific issues that need to be addressed. You can also use resource metering to monitor how hosted VMs are utilizing their allocated server resources and to determine which VMs use a disproportionate amount of a host's resources.
 
->[!TIP]
+> [!TIP]
 > If the performance of a VM has an adverse impact on the performance of another VM that's on the same Hyper-V host server, consider migrating the VMs to different hosts.
 
 ## Use generation 2 VMs if supported by the guest OS

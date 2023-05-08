@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identity-projects-pipelines-agents.configure-microsoft-hosted-agent-pools
+title: Configure a Microsoft-hosted pool
+metadata:
+  title: Configure a Microsoft-hosted pool
+  description: "Configure a Microsoft-hosted pool."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-configure-microsoft-hosted-agent-pools.md)]
