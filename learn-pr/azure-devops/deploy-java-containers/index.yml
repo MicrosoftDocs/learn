@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: devdivchpfy22
+  ms.service: azure-devops-pipelines
 title: Automate Java container deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for Java containers.
 abstract: |
