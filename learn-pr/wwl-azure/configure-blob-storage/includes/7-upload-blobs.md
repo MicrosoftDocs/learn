@@ -1,3 +1,4 @@
+
 A blob can be any type of data and any size file. Azure Storage offers three types of blobs: *block blob*, *page blob*, and *append blob*. 
 
 ### Things to know about blob types
