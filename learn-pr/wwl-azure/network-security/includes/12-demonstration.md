@@ -39,7 +39,7 @@ In this task, we will review networking rules, confirm the public IP page does n
 
 **Retest the public IP address**
 
-1.  On the **virtual machine,,** return to the **browser**.
+1.  On the **virtual machine,** return to the **browser**.
 2.  Refresh the default public IP IIS HTML page: `http://public_IP_address/default.htm`. This page should now display.
 
 ## Task 2 - Application service groups
