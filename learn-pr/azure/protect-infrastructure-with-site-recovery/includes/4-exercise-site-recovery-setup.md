@@ -2,32 +2,34 @@ Azure Site Recovery automates the setup of recovery from one region to another. 
 
 Currently, two VMs are running the company's patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
 
-:::image type="content" source="../media/4-environment.svg" alt-text="Diagram showing resources and infrastructure of primary region with storage account, hr-records, patient-recors will be replicated in a recovery vault in a recovery region.":::
+:::image type="content" source="../media/4-environment.svg" alt-text="Diagram showing resources and infrastructure of primary region with storage account, hr-records, patient-records will be replicated in a recovery vault in a recovery region.":::
 
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
 > [!NOTE]
-> This exercise is optional, but depends on resources and an environment that was created in the previous unit. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
-> If you want to complete this exercise, but you don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and first complete the exercises in the previous unit.
+> This exercise is optional but depends on resources and an environment that was created in the previous unit. If you don't have an Azure account, you can read through the instructions to understand how to use backup virtual machines with Azure Backup.
+> If you want to complete this exercise, but don't have an Azure subscription, or prefer not to use your account, you will need to create a [free account](https://azure.microsoft.com/free/?azure-portal=true) and first complete the exercises in the previous unit.
 
 ## Create a recovery services vault
 
-1. If not already signed in, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your own credentials.
+1. If not already signed in, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your credentials.
 
-1. On the Azure portal **Home** page, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+1. On the Azure portal homepage, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
+    :::image type="content" source="../media/azure-homepage.png" alt-text="Diagram showing Azure homepage":::
 
-1. In the left menu pane, select **IT & Management Tools**, then search for **Backup and Site Recovery**. 
- 
+1. In the left pane, select **IT & Management Tools**, then search for **Backup and Site Recovery**.
+
 1. Select **Create**. The **Create Recovery Services vault** page appears.
 
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** > **Project Details** tab, enter the following values for each setting.
 
     | Setting | Value |
     |---------|-------|
     | **Project Details** |
     | Subscription | *your subscription* |
-    | Resource group | From the dropdown list, select **east-coast-rg**. |
-    | **Instance Details** |
+    | Resource group | From the dropdown list, select **east-coast-rg** |
+
+1. On the **Basics** > **Instance Details** tab, enter the following values for each setting.
     | Vault name | **asr-vault** |
     | Region | **East US 2** |
 
