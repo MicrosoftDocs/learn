@@ -8,7 +8,6 @@ metadata:
   ms.author: rabououn
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: Azure Pipelines
 title: Automate multi-container Kubernetes deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for multiple containers to Kubernetes.
