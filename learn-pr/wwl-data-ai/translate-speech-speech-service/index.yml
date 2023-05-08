@@ -8,6 +8,8 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: cognitive-services 
+  ms.subservice: speech-service
 title: Translate speech with the speech service
 summary: Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
 abstract: |
