@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: applied-ai-services
   ms.subservice: forms-recognizer
 title: Extract data from forms with Form Recognizer
