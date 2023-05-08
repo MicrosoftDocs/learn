@@ -8,6 +8,7 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: event-hubs
 title: Explore Azure Event Hubs
 summary: Learn how Azure Event Hubs captures events and how to scale your processing application.
 abstract: |
