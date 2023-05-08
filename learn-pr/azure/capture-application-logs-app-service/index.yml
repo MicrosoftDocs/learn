@@ -8,6 +8,7 @@ metadata:
   ms.author: msangapu
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: app-service
 title: Capture Web Application Logs with App Service Diagnostics Logging
 summary: Use application logs in Azure Web Apps to help debug web app code.
 abstract: | 
