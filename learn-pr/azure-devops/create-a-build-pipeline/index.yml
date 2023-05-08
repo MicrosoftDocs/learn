@@ -8,7 +8,6 @@ metadata:
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-build
 title: Create a build pipeline with Azure Pipelines

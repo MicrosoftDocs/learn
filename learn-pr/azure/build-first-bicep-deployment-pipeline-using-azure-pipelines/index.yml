@@ -8,7 +8,6 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
   ms.service: azure-devops-pipelines
 title: Build your first Bicep deployment pipeline by using Azure Pipelines
