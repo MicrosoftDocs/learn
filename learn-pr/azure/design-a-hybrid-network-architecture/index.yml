@@ -7,7 +7,6 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
   ms.service: azure
 title: Design a hybrid network architecture on Azure
