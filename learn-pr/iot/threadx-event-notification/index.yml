@@ -10,6 +10,7 @@ metadata:
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: rtos
 title: Use a counting semaphore for event notification in Azure RTOS ThreadX
 summary: Learn when to use a mutex and a counting semaphore and consolidate your understanding of the differences.
 abstract: |

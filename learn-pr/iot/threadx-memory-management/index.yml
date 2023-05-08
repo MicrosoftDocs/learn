@@ -10,6 +10,7 @@ metadata:
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: rtos
 title: Azure RTOS ThreadX memory management
 summary: Learn about the memory management options that are available in Azure RTOS ThreadX.
 abstract: |

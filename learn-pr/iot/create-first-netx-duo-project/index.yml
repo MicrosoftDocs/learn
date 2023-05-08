@@ -10,6 +10,7 @@ metadata:
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: rtos
 title: Create the first Azure RTOS NetX Duo project
 summary: The first Azure RTOS NetX Duo project is built and run.
 abstract: |
