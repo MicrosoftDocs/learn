@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cognitive-services
   ms.subservice: language-understanding 
 title: Publish and use a Language Understanding app

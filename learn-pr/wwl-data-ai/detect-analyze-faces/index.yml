@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cognitive-services
   ms.subservice: face-api
 title: Detect and analyze faces with the Face service
