@@ -7,7 +7,6 @@ metadata:
   author: sethmanheim
   ms.author: sethm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
   ms.service: azure-stack
   ms.subservice: azure-stack-hci
