@@ -7,7 +7,6 @@ metadata:
   author: PageWriter-MSFT
   ms.author: b-ahibbard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-vmware
 title: Using Azure NetApp Files with Azure VMware Solution
 summary: |
