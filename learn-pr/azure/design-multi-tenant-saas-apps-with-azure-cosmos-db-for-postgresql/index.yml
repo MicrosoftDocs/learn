@@ -8,7 +8,6 @@ metadata:
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: cosmos-db
   ms.subservice: postgresql
 title: Design multi-tenant SaaS apps with Azure Cosmos DB for PostgreSQL

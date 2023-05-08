@@ -8,7 +8,6 @@ metadata:
   ms.author: sidandrews
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: vscode-azure-extension-update-completed, engagement-fy23
   ms.service: cosmos-db
 title: Build a Node.js app for Azure Cosmos DB Core (SQL) in Visual Studio Code
