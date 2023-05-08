@@ -7,7 +7,6 @@ metadata:
   author: tchristiani
   ms.author: terrychr
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: azure-arc
   ms.subservice: azure-arc-data-sqlmi
 title: Monitor Azure Arc-enabled SQL Managed Instance security performance
