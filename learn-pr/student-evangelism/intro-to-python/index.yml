@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-python
   ms.custom: team=nextgen, py-fresh-zinc
+  ms.devlang: python
 title: Introduction to Python
 summary: Learn how to write a few lines of Python code, declare variables, and work with
   console input and output
