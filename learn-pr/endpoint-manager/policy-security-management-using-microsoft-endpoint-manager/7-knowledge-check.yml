@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "An assigned group is a group of users or devices that you manually add into a static group. A dynamic group is a group of users or devices that are automatically assigned based on an expression you create. In addition, dynamic groups requires Azure AD Premium."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct!"
     - content: "An assigned group is a group of users or devices that automatically set. A dynamic group is a group of users that you manually set."
       isCorrect: false
       explanation: "An assigned group is a group of users or devices that you manually add into a static group. A dynamic group is a group of users or devices that are automatically assigned based on an expression you create. In addition, dynamic groups requires Azure AD Premium."
@@ -42,7 +42,7 @@ quiz:
       explanation: "Assign a policy using a device group when it doesn't matter who's signed in."
     - content: "If you want to apply policy settings on a device, regardless of who's signed in, then assign your policies to a device group."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct!"
     - content: "If you don't want to have any policy settings for the device, use a device group."
       isCorrect: false
       explanation: "Assign a policy using a device group when it doesn't matter who's signed in."
@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: "Yes. Using tenant attach in a co-managed endpoint management scenario, you can integrate Configuration Manager with Microsoft Defender ATP to gain access to security tasks that help enterprises detect, investigate, and respond to advanced attacks on their networks."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct!"
     - content: "No. You can only integrate Microsoft Defender ATP with Intune."
       isCorrect: false
       explanation: "Using tenant attach in a co-managed endpoint management scenario, you can integrate Configuration Manager with Microsoft Defender ATP to gain access to security tasks that help enterprises detect, investigate, and respond to advanced attacks on their networks."

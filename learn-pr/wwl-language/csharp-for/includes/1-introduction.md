@@ -1,4 +1,5 @@
 
+
 There are several ways to add looping logic in your application, and depending on the context, each provides a nuanced set of features that have both pros and cons.
 
 Suppose you're about to start working on an application that processes string and numeric data using single dimensional and multidimensional arrays. After an initial review, you realize that `foreach` statements do not support looping logic that will be required in many cases. You'll need another approach for iterating through multidimensional arrays, and for situations where `foreach` loops don't provide the level of iteration control that's needed. You need to gain experience using `for` statements if you're going to succeed on this project.
