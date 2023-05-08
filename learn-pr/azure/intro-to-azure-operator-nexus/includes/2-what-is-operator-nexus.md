@@ -1,4 +1,4 @@
-Azure Operator Nexus is a cutting-edge hybrid cloud platform designed for telecommunication operators. It is carrier-grade and provides next-generation services. Operator Nexus extends Azure management and services to the operator's premises, ensuring seamless integration and optimal performance.
+Azure Operator Nexus is a cutting-edge hybrid cloud platform designed for telecommunication operators. It's carrier-grade and provides next-generation services. Operator Nexus extends Azure management and services to the operator's premises, ensuring seamless integration and optimal performance.
 
 ## Why use Operator Nexus?
 
@@ -34,25 +34,25 @@ Operator Nexus is a Kubernetes-based platform that utilizes CNCF compliant Azure
 
 To meet Operators' high-performing network workload needs, the Operator Nexus platform adheres to several key design principles:
 
-- **High Availability:** The platform ensures there is no single point of workload failure.
+- **High Availability:** The platform ensures there's no single point of workload failure.
 
 - **High Capacity and Scalability:** The platform provides uniform Data Plane and Control Plane scale, allowing for scaling of forwarding tables, network segments, and Layer 2 segment extension. It includes virtual device mobility, forwarding path optimization, and virtualized networks. The platform also supports multi-tenant on shared physical infrastructure.
 
 - **Cost and Power Efficiency:** The platform uses off-the-shelf hardware with several power profiles to ensure applicability to all data center power requirements.
 
-- **Simplicity:** The platform uses a Leaf Spine Architecture with EVPN/VXLAN, predictable traffic flow, high-bandwidth, low-latency, non-blocking server-to-server connectivity.
+- **Simplicity:** The platform uses a Leaf Spine Architecture with EVPN/VXLAN, predictable traffic flow, high-bandwidth, low-latency, nonblocking server-to-server connectivity.
 
-- **Modularity:** The platform uses the same hardware and rack design for all BOM options. Integrators may pre-configure a rack before shipment to the operator’s location.
+- **Modularity:** The platform uses the same hardware and rack design for all BOM options. Integrators may preconfigure a rack before shipment to the operator’s location.
 
 - **Flexibility:** The platform allows operators to choose various instance sizes and uplink bandwidth speeds.
 
-- **Non-disruptive Expansion:** The platform allows the introduction of net-new racks without impacting existing racks or re-cabling, etc.
+- **Non-disruptive Expansion:** The platform allows the introduction of net-new racks without impacting existing racks or recabling, etc.
 
 - **Longevity:** The platform supports a lifespan of five years, during which time it supports performance improvements in the virtualized network functions without demanding new physical deployments.
 
-## What Operator Nexus is not
+## What Operator Nexus isn't
 
-While it's important to understand what Operator Nexus is, it's also helpful to realize what it is not:
+While it's important to understand what Operator Nexus is, it's also helpful to realize what it isn't:
 
 - A customizable infrastructure: Operator Nexus relies on preconfigured systems that are in a constant known state, without support for customizing hardware.
 
@@ -60,4 +60,4 @@ While it's important to understand what Operator Nexus is, it's also helpful to 
 
 - A solution that eliminates the responsibility for the underlying infrastructure: In Azure public cloud, Microsoft hosts and manages the Azure cloud physical and virtualization infrastructure. With Operator Nexus, the Telco operator hosts the infrastructure and is responsible for implementing and maintaining its resiliency and availability.
 
-- The same as Azure Stack Hub: Azure Stack Hub enables customers to run Azure IaaS and PaaS services on-premises by providing a consistent cloud experience across on-premises, edge, and public cloud environments. It is installed on hardware that is shipped and installed by Microsoft or its partners. While both Operator Nexus and Azure Stack Hub are on-premises solutions, this is the only similarity between them.
+- The same as Azure Stack Hub: Azure Stack Hub enables customers to run Azure IaaS and PaaS services on-premises by providing a consistent cloud experience across on-premises, edge, and public cloud environments. Microsoft or its partners install it on the hardware they ship. Although both Operator Nexus and Azure Stack Hub are on-premises solutions, they only share this similarity.
