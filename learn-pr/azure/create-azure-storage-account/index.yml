@@ -8,6 +8,7 @@ metadata:
   ms.author: tamram
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: storage
 title: Create an Azure Storage account
 summary: Create an Azure Storage account with the correct options for your business needs.
 abstract: | 
