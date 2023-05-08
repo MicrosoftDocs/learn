@@ -8,6 +8,7 @@ metadata:
   ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
+  ms.service: microsoft-365
 title: Manage data loss prevention policies and reports in Microsoft 365
 summary: Learn how to manage data loss prevention policies and mitigate data loss prevention policy violations.
 abstract: |
