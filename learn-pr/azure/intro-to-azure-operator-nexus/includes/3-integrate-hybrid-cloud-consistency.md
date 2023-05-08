@@ -9,7 +9,7 @@ Using a hybrid architecture allows organizations to:
 - Provide an integrated infrastructure experience across network, compute, and storage.
 - Integrate with third-party tools such as ServiceNow using Azure capabilities.
 
-:::image type="content" source="../media/operator-nexus-hybrid-architecture.png" alt-text="TBD" border="false":::
+:::image type="content" source="../media/operator-nexus-hybrid-architecture.png" alt-text="Screenshot of Azure's integrated management and security features, including Azure Active Directory, Microsoft Defender, Azure Monitor, and resource management." border="false":::
 
 The hybrid architecture of Operator Nexus provides four major components, each of which brings significant benefits: 
 
