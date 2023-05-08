@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: active-directory
   ms.subservice: pim
 title: Configure Azure AD privileged identity management
