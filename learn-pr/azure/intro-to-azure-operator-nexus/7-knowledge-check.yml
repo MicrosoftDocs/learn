@@ -11,6 +11,7 @@ metadata:
   ms.service: operator-nexus
 durationInMinutes: 5
 content: |
+  [!include[](includes/7-knowledge-check.md)]
 quiz:
   questions:
   - content: "Which resource provider delivers Software Defined Networking (SDN) and Network Function Virtualization (NFV) features for the private cloud on Operator Nexus?"
