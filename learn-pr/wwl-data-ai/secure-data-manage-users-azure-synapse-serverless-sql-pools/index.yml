@@ -8,6 +8,8 @@ metadata:
   ms.author: jamesh
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.service: synapse-analytics
+  ms.subservice: sql
 title: Secure data and manage users in Azure Synapse serverless SQL pools
 summary: Learn how you can set up security when using Azure Synapse serverless SQL pools
 abstract: |
