@@ -8,6 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.devlang: csharp
 title: Perform basic string formatting in C#
 summary: Combine literal and variable text data that contain special characters, formatting, and Unicode into meaningful messages for the end user.
 abstract: |

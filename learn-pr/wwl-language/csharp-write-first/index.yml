@@ -8,6 +8,7 @@ metadata:
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+  ms.devlang: csharp
 title: Write your first C# code
 summary: Get started by writing code examples to learn the basics of the C# syntax!
 abstract: |
