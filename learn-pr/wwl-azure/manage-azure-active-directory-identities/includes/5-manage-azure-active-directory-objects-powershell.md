@@ -18,7 +18,7 @@ You're then prompted for administrator credentials. Once you provide your admini
 
 #### Create users by using bulk import
 
-To create multiple users in bulk, you can either import a .csv file containing account information, such as exporting from an existing on-premises directory, or use Azure PowerShell scripting to generate multiple accounts. To use bulk import, you first must assemble your user information, which might include the following:
+You can import a .csv file containing account information to create multiple users in bulk, such as exporting from an existing on-premises directory, or use Azure PowerShell scripting to generate multiple accounts. To use bulk import, you first must assemble your user information, which might include the following table:
 
 | UserName            | FirstName | LastName | DisplayName   | JobTitle   | Department |
 | ------------------- | --------- | -------- | ------------- | ---------- | ---------- |
@@ -35,7 +35,7 @@ FabriceC@adatum.com,Fabrice,Canel,Fabrice Canel,Attorney,Legal
 GarretV@adatum.com,Garret,Vargas,Garret Vargas,Operations,Operations
 ```
 
-You can then use Microsoft Azure Active Directory module for Windows PowerShell commands to process this .csv file and create the user accounts as shown below:
+You can then use Microsoft Azure Active Directory module for Windows PowerShell commands to process this .csv file and create the user accounts as shown in the following example:
 
 ```
 $users = Import-Csv C:\Users.csv
