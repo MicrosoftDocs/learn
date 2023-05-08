@@ -9,7 +9,6 @@ metadata:
   ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: rtos
 title: Introduction to Azure RTOS
 summary: Learn the basics of RTOS.

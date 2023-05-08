@@ -9,7 +9,6 @@ metadata:
   ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: rtos
 title: Azure RTOS ThreadX fundamentals
 summary: Learn the fundamentals of Azure RTOS ThreadX.
