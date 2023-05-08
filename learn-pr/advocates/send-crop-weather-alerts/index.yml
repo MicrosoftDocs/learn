@@ -7,7 +7,6 @@ metadata:
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
   ms.service: azure-maps
 title: Use Twilio and Azure Maps to receive text message weather alerts
