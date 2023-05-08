@@ -21,7 +21,7 @@ So, what is PWABuilder?
 
 To allow users to take advantage of PWAs, PWABuilder was created. It is an open-source, community-driven project developed by Microsoft that helps streamline the process of deploying Progressive Web Apps (PWAs). It offers a user-friendly interface and tools for generating the essential components of a PWA, such as the app manifest and service worker files, while providing guidance and best practices throughout the development process.
 
-## PWABuilder's Purpose in Simplifying the PWA Creation Process
+## PWABuilder's purpose in simplifying the PWA creation process
 
 The primary goal of PWABuilder is to make PWA development more accessible and efficient for developers of all skill levels. It achieves this by:
  - Analyzing your existing website or web app for PWA compatibility and providing feedback on how to improve its readiness.
@@ -31,10 +31,10 @@ The primary goal of PWABuilder is to make PWA development more accessible and ef
 
   :::image type="content" source="../media/2-webboard-report.png" alt-text="Screenshot displaying PWABuilder report card page." lightbox="../media/2-webboard-report.png":::
 
-## The Role of PWABuilder in Packaging PWAs
+## The role of PWABuilder in packaging PWAs
 
 One of the most significant advantages of PWABuilder is its ability to package PWAs for various platforms and app stores, thus expanding their reach and availability to a broader audience. This process involves creating platform-specific packages that bundle the PWA with the components to run seamlessly on the target platform. PWABuilder supports packaging PWAs for platforms like Android, iOS, and Windows.
 
-## Windows Packaging
+## Windows packaging
 
 For Windows, PWABuilder generates a Microsoft Store-compatible package, allowing your PWA to be discovered, installed, and updated through the Microsoft Store on Windows devices. Packaging your PWA for Windows allows you to take advantage of platform-specific features such as Live Tiles and deep integration with the Windows operating system.

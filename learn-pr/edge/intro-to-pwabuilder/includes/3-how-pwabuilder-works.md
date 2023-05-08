@@ -5,7 +5,7 @@
 1. **Test:** PWABuilder allows you to test your PWA on various devices and platforms to ensure a consistent user experience. This helps identify and fix any issues before deployment.
 1. **Download and Deploy:** Download and integrate the generated files into your project. Follow the instructions to deploy your PWA and make it accessible to users.
 
-## PWABuilder in Generating App Manifest and Service Worker Files
+## PWABuilder in generating app manifest and service worker files
 
 The app manifest and service worker files are crucial components of a PWA. PWABuilder automates their creation to simplify the development process:
 
