@@ -9,7 +9,7 @@ For example, if we want an OpenAI model to generate product descriptions, we can
 Prompt engineering can also help mitigate bias and improve fairness in AI models. By designing prompts that are diverse and inclusive, we can ensure that the model isn't biased towards a particular group or perspective.
 
 > [!IMPORTANT]
-> No matter how good of a prompt you can design, responses from AI models should never be taken as fact or completely free from bias. Always use AI responsibly. For more information, see Microsoft's [transparency note](/legal/cognitive-services/openai/transparency-note) on Azure OpenAI and see [Microsoft's AI principles](https://www.microsoft.com/ai/responsible-ai) for more information.
+> No matter how good of a prompt you can design, responses from AI models should never be taken as fact or completely free from bias. Always use AI responsibly. For more information, see Microsoft's [transparency note](/legal/cognitive-services/openai/transparency-note) on Azure OpenAI and [Microsoft's AI principles](https://www.microsoft.com/ai/responsible-ai).
 
 In addition, prompt engineering can help us understand which references the model uses to generate its response. LLMs have a ton of parameters and the logic it follows is largely unknown to users, so it can be confusing how it arrives at the response it gives. By designing prompts that are easy to understand and interpret, we can help humans better understand how the model is generating its responses. This can be particularly important in domains such as healthcare, where it's critical to understand how the model is making decisions.
 
@@ -23,7 +23,7 @@ Functionally, `ChatCompletions` has the option of defining a system message for 
 
 In terms of model availability, both endpoints can utilize similar models, including `gpt-35-turbo`, but only `ChatCompletions` can be used with `gpt-4` generation models.
 
-The `Completions` endpoint can still achieve similar results, but more care must be taken to format the prompt clearly for the AI model to understand. Most examples given in this module most clearly translates to `ChatCompletions`, however you can reformat it for use with `Completions`.
+The `Completions` endpoint can still achieve similar results, but more care must be taken to format the prompt clearly for the AI model to understand. Most of the examples given in this module clearly translates to `ChatCompletions`, however you can reformat it for use with `Completions`.
 
 It's worth noting that `ChatCompletions` can also be used for non chat scenarios, where any instructions are included in the system message and user content is provided in the user role message.
 

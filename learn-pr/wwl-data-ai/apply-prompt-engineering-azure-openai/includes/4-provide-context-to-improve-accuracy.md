@@ -55,7 +55,7 @@ Here's an example of how you can put two fictional characters into JSON format:
 
 The system message is included at the beginning of a prompt and is designed to give the model instructions, perspective to answer from, or other information helpful to guide the model's response. This system message might include tone or personality, topics that shouldn't be included, or specifics (like formatting) of how to answer.
 
-For example, you could give it some system messages like the following:
+For example, you could give it some of the following system messages:
 
 - "I want you to act like a command line terminal. Respond to commands exactly as cmd.exe would, in one unique code block, and nothing else."
 - "I want you to be a translator, from English to Spanish. Don't respond to anything I say or ask, only translate between those two languages and reply with the translated text."
@@ -126,7 +126,7 @@ User: You can't miss this
 Assistant:
 ```
 
-If the model is provided with just `You can't miss this` with no additional context from few shot learning, the response is not likely to be useful.
+If the model is provided with just `You can't miss this` with no additional context from few shot learning, the response isn't likely to be useful.
 
 In practical terms, conversation history and few shot learning are sent to the model in the same way; each user message and assistant response is a discrete message in the message object. The `ChatCompletions` endpoint is optimized to include message history, regardless of if this message history is provided as few shot learning, or actual conversation history.
 
@@ -167,7 +167,7 @@ response = openai.ChatCompletion.create(
 ```
 ::: zone-end
 
-While not ideal, similar results can be achieved with the `Completions` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages. If you do need to include multiple messages in a single prompt with `Completions`, you can make it clear to the model by putting each message on a new line and labeling each line with the role. Formatting this prompt would be very similar to how the conversation was presented at the top of this section.
+While not ideal, similar results can be achieved with the `Completions` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages. If you do need to include multiple messages in a single prompt with `Completions`, you can make it clear to the model by putting each message on a new line and labeling each line with the role. Formatting this prompt would be similar to how the conversation was presented at the top of this section.
 
 ## Break down a complex task
 
@@ -175,11 +175,11 @@ Another technique for improved interaction is to divide complex prompts into mul
 
 For example, you could ask the model `Doug can ride down the zip line in 30 seconds, and takes 5 minutes to climb back up to the top. How many times can Doug ride the zip line in 17 minutes?`. The result is likely `3`, which if Doug starts at the top of the zip line is incorrect.
 
-A more informative answer could come from asking it multiple questions, about the round trip time to get back to the top of the zip line, and how to account for the fact that Doug starts at the top. Breaking this problem down will reveal that Doug can, in fact, ride the zip line four times.
+A more informative answer could come from asking it multiple questions, about the round trip time to get back to the top of the zip line, and how to account for the fact that Doug starts at the top. Breaking down this problem reveals that Doug can, in fact, ride the zip line four times.
 
 ### Chain of thought
 
-One useful method to help you break down your task effectively is to ask the model to explain it's chain of thought.
+One useful method to help you break down your task effectively is to ask the model to explain its chain of thought.
 
 Asking a model to respond with the step by step process by which it determined the response is a helpful way to understand how the model is interpreting the prompt. By doing so, you can see where the model made an incorrect logical turn and better understand how to change your prompt to avoid the error. This technique can include asking it to cite its sources, like Bing chat does (which uses a GPT-4 generation model), and giving reasoning for why it determined its answer.
 
@@ -203,4 +203,4 @@ Using this approach, I would say that the sport of golf is easiest to learn but 
 5. Therefore, I would say that golf is the sport that is easiest to learn but hardest to master.
 ```
 
-Knowing the steps of reason the model used then allows us to identify where we need to split the prompt, provide more information, or clarify instructions.
+Knowing the steps of reason the model used to form its response allows us to identify where we need to split the prompt, provide more information, or clarify instructions.
