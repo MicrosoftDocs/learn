@@ -30,6 +30,5 @@ products:
 subjects:
 - database
 units:
-- learn.wwl.implement-partitioning-azure-cosmos-db.summary
 badge:
   uid: learn.wwl.implement-partitioning-azure-cosmos-db.badge
