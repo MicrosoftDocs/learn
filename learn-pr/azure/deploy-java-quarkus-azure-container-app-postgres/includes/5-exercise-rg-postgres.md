@@ -18,7 +18,7 @@ export AZ_POSTGRES_SERVER_NAME="psql-${AZ_PROJECT}"
 ```
 
 > [!NOTE]
-> You can name your Azure resources the way you want, but we recommend to check [this documentation](https://learn.microsoft.com/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
+> You can name your Azure resources the way you want, but we recommend to check [this documentation](/azure/cloud-adoption-framework/ready/azure-best-practices/resource-abbreviations) that gives you abbreviations for many Azure resources (for example, `rg` for Resource Groups or `ca` for Azure Container Apps).
 
 Make sure to replace the placeholders when needed. These environment variables are used throughout this module.
 
