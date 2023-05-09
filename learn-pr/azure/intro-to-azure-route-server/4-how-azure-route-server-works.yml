@@ -6,8 +6,8 @@ metadata:
   title: How does Azure Route Server work?
   description: This unit describes the key features of Azure Route Server and provides an overview of how it works.
   ms.date: 11/23/2021
-  author: LBN-commits
-  ms.author: v-lanai
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

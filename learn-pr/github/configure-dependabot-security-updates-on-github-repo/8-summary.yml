@@ -6,8 +6,8 @@ metadata:
   title: Summary
   description: The goal of this module was to explain how you can use GitHub Dependabot to help manage your dependencies and identify vulnerabilities that can affect the security of your project.
   ms.date: 1/5/2022
-  author: sterling463
-  ms.author: csterling 
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

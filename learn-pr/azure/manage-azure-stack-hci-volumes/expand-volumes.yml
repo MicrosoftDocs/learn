@@ -5,8 +5,8 @@ metadata:
   title: Expand volumes
   description: As part of your Azure Stack HCI evaluation, assess the process of expanding volumes.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

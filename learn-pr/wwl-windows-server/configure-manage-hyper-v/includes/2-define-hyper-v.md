@@ -1,6 +1,6 @@
 Hyper-V can subdivide the hardware capacity of a single host computer by allocating the host's hardware resources to multiple VMs. Hyper-V provides an isolated space for each VM to run its own operating system (OS) that's independent of the host's OS and other VMs.
 
-As a new Windows Server administrator for Contoso, you must identify the considerations for installing and configuring Hyper-V on Windows Server 2019 to ensure that workloads are optimized and stable.
+As a new Windows Server administrator for Contoso, you must identify the considerations for installing and configuring Hyper-V on Windows Server to ensure that workloads are optimized and stable.
 
 > [!NOTE]
 > Hyper-V is available as a server role for Windows Server, as a feature in 64-bit versions of Windows client OS, and as a standalone product called *Microsoft Hyper-V Server*. Each Hyper-V version includes similar features, and this module focuses on the Hyper-V Server role for Windows Server.
@@ -10,7 +10,7 @@ As a new Windows Server administrator for Contoso, you must identify the conside
 Hyper-V's general features can be grouped as listed in the following table.
 
 |Feature|Description|
-|||
+|---|---|
 |Management and connectivity|You can manage your Hyper-V environment with the Hyper-V Manager, Hyper-V module for Windows PowerShell, Virtual Machine Connection (VMConnect), and Windows PowerShell Direct.|
 |Portability|To make it easier to move or distribute a VM, Hyper-V provides features such as live migration, storage migration, and standard import/export functionality.|
 |Disaster recovery and backup|Hyper-V supports Hyper-V Replica, which creates copies of VMs in other physical locations. These copies can be used to restore VM instances as needed. Other features such as production checkpoints and support for Volume Shadow Copy Service (VSS) facilitate application-consistent backups of VM states.|
@@ -35,7 +35,7 @@ An operating system that runs in a VM is referred to as a *guest operating syste
 - These Linux editions: CentOS, Red Hat Enterprise Linux, Debian, Oracle Linux, SUSE, and Ubuntu
 - FreeBSD
 
->[!IMPORTANT]
+> [!IMPORTANT]
 > Support is provided by Microsoft only for issues found in Microsoft operating systems and in integration services.
 
 ## Example use cases for Hyper-V
@@ -102,7 +102,13 @@ The main steps in the process are:
 
 1. After the server restarts, use the **Windows PowerShell** `Get-WindowsFeature` cmdlet to verify that Hyper-V has been installed.
 
-> [!NOTE]
-> If you install the Hyper-V Server role on a server that contains the Server Core installation option, the `-IncludeManagementTools` parameter will only install the Hyper-V Module for Windows PowerShell.
+    > [!NOTE]
+    > If you install the Hyper-V Server role on a server that contains the Server Core installation option, the `-IncludeManagementTools` parameter will only install the Hyper-V Module for Windows PowerShell.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfsh]
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4Mfsh]
+---
+
+
+
+---

@@ -1,4 +1,5 @@
 
+
 Selection and iteration statements use code blocks to group-together the code lines that should be executed, skipped, or iterated over. But that's not the only purpose for code blocks. Code blocks can also be used to control or limit variable accessibility. Variable "scope" refers to the portion of an application where a variable is accessible. Understanding how a code block affects variable scope is an important part of computer programming.
 
 Suppose you're working on large application that uses nested iteration and selection statements to process array data. Your application uses variables to help accomplish common tasks throughout the application. Some variables serve the same purpose in different portions of the application, and you've made some attempt to reuse the variable names. As your application grows, you start seeing unexpected results for calculations, and errors that report a variable that is uninitialized or doesn't exist. You need to improve the approach you're using to declare and access variables, and you need to improve your understanding of variable scope.
