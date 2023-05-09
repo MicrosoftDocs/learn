@@ -14,6 +14,6 @@ In this module, you learned about the following areas:
 
 ## Learn more
 
-Use the following resources to learn more about SQL Server 2022:
+Use the following resource to learn more about SQL Server 2022:
 
-- [What's new in SQL Server 2022 - Language](/sql/sql-server/what-s-new-in-sql-server-2022?view=sql-server-ver16#language)
+- [What's new in SQL Server 2022 - Language](/sql/sql-server/what-s-new-in-sql-server-2022#language)

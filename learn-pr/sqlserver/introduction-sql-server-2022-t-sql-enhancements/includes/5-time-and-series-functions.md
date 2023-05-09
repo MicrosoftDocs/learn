@@ -36,8 +36,9 @@ WHERE CustomerID = @CustomerID
 ```
 
 Results:
-FirstOrderId | LastOrderId
----|---
-64134 | 75036
+
+| FirstOrderId | LastOrderId |
+| --- | --- |
+| 64134 | 75036 |
 
 This introduction to the new or enhanced functions in SQL Server 2022 date and series functions should help you find easier ways to tackle some of those problems. While you're reviewing some of our date and series functions, also check out our new `GENERATE_SERIES` function that allows you to generate a series of values in a specified range with a given increment.
