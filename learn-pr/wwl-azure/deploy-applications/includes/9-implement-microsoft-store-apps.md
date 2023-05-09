@@ -1,4 +1,5 @@
 
+
 Deploying applications to devices can be challenging for administrators, especially when dealing with many devices. The process can be time-consuming, complex, and prone to errors. The challenges may include the following:
 - Managing multiple versions of the same app.
 - Ensuring app compatibility with different devices.
@@ -14,7 +15,7 @@ Let us examine the necessary steps for adding and deploying a Microsoft Store ap
 1. Choose **Select** at the bottom of the page to begin creating an app from the Microsoft Store. The app creation experience has three steps:
     - App information
     - Assignments
-    - Assignments
+    - Review + create
 
 ## Step 2: Search the Microsoft Store
 The Microsoft Store provides a large variety of apps designed to work on your Microsoft devices. Within Intune, you can search and add the apps you want to assign to your workforce at your organization.
