@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/08/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -39,7 +39,7 @@ quiz:
     - content: "Vulnerability assessments"
       isCorrect: false
       explanation: "There is no vulnerability checking in the application gateway."
-  - content: "A company is configuring a Network Security Group. To configure the group to allow traffic from public sources, what rule needs to be add to the default rules?"
+  - content: "A company is configuring a Network Security Group. To configure the group to allow traffic from public sources, what rule needs to be added to the default rules?"
     choices:
     - content: "Allow all virtual networks inbound and outbound"
       isCorrect: false
@@ -50,7 +50,7 @@ quiz:
     - content: "Allow Internet inbound"
       isCorrect: true
       explanation: "Allow Internet inbound. NSGs have default inbound and outbound rules. There is a default allow Internet outbound rule, but not an allow Internet inbound rule."
-  - content: "An organization has web servers in different regions and this organization wants optimize the availability of the servers. Which of the network security is best suited for this purpose?"
+  - content: "An organization has web servers in different regions and this organization wants to optimize the availability of the servers. Which of the network security is best suited for this purpose?"
     choices:
     - content: "Azure Application Gateway"
       isCorrect: false
