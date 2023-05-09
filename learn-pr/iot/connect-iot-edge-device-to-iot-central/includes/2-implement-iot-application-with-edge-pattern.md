@@ -1,6 +1,6 @@
 To verify your solution design you need an IoT Central application with a device template for your IoT Edge device.
 
-Recall that you planned to build an environmental monitoring solution for your stores with IoT Central - IoT Central lets you create custom dashboards, implement command and control, and integrate with other back-office systems. To collect data and manage local sensors, you planned to install an IoT Edge device in each store. The IoT Edge device will connect to your IoT Central application to send telemetry collected from the sensors and respond to commands sent from the application.
+You plan to evaluate an environmental monitoring solution for your stores with IoT Central. To collect data and manage local sensors, you plan to install an IoT Edge device in each store. The IoT Edge device will connect to your IoT Central application to send telemetry collected from the sensors and respond to commands sent from the application.
 
 Here, you'll review some core IoT Central and IoT Edge concepts, and learn how to create a device template for your IoT Edge devices in IoT Central.
 
