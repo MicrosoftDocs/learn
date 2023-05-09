@@ -22173,6 +22173,11 @@
       "source_path": "learn-pr/wwl-azure/implement-durable-functions/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
     }
   ]
 }
