@@ -1,4 +1,4 @@
-Suppose you work for a national grocery chain that has many critical applications running on SQL Server. These applications include the product ordering system, business intelligence for analyzing customer spending habits, and the e-commerce website that provides deliveries. 
+Suppose you work for a national/regional grocery chain that has many critical applications running on SQL Server. These applications include the product ordering system, business intelligence for analyzing customer spending habits, and the e-commerce website that provides deliveries. 
 
 These applications use SQL Server 2005 or SQL Server 2008. You want to upgrade them immediately to avoid problems with the old hardware on which they run. You also don't want to face potential security issues, as fixes and patches are no longer available. Also, you're keen to use the many new features in SQL Server 2019.
 

@@ -23,7 +23,7 @@ Let's get started.
 
 With Visual Studio open, create a UWP C# project. Give the project a meaningful name for this lesson. An example is **UsingControlsApp.Uwp**.
 
-![Screenshot that shows the Visual Studio New Project window. Blank App is selected in the Windows Universal option under Visual C Sharp.](../media/new-project-uwp.png)
+:::image type="content" source="../media/1-create-new-project-uwp.png" alt-text="Screenshot that shows the Configure your new project window with red boxes around the Blank App (Universal Windows) project type, the Project name text box, and the Create button.":::
 
 #### Understand size
 
@@ -491,7 +491,7 @@ You've got the fundamentals of some basic layouts and adding controls to the UI.
 
 With Visual Studio open, create a WPF C# project. Give the project a meaningful name for this lesson. An example is **UsingControlsApp.Wpf**.
 
-![Screenshot that shows the Visual Studio New Project window. WPF App is selected. Name field is highlighted with an arrow pointed at the OK button.](../media/new-project-wpf.png)
+:::image type="content" source="../media/1-create-new-project-wpf.png" alt-text="Screenshot that shows the Configure your new project window with red boxes around the WPF Application project type, the Project name text box, and the Next button.":::
 
 #### Understand size
 
@@ -505,14 +505,13 @@ These properties work the same way for all controls. So understanding the simple
 
 Open **MainWindow.xaml** if it's not already open. Add a `Rectangle` with a *Blue* **Background** to the `Grid`:
 
-
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -527,16 +526,15 @@ Now you see the following image in the designer:
 
 The blue `Rectangle` fills the entire `Grid` because the default **HorizontalAlignment** and **VerticalAlignment** of a `Rectangle` is *Stretch*. To constrain the `Rectangle`, give the control an explicit **Width** and **Height** value.
 
-
 Let's start by setting the **Width** of the `Rectangle` to 200 pixels:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -550,18 +548,17 @@ The width of the `Rectangle` is constrained to 200 pixels because we defined an 
 
 ![Screenshot that shows a blue rectangle with width set at 200 pixels.](../media/wpf-blue-rectangle-with-width.png)
 
-
 The `Rectangle` still fills the space vertically. To constrain it, set the **Height**.
 
 Give the `Rectangle` a **Height** of 200 pixels:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -582,20 +579,21 @@ Now the `Rectangle` is in the middle of the `Grid`.
 #### Alignment and margin
 
 The order that you add the elements in code matters. An example is when we put the `Grid` on top of the `Page`. These things are important to know as you build your UI:
-* Why certain elements are placed where they are.
-* Why some elements are on top of others. 
+
+- Why certain elements are placed where they are.
+- Why some elements are on top of others.
 
 We need to look not only at the order elements are added in the code but also at the alignment and margin of those elements. Let's visualize these settings with another `Rectangle`.
 
 Add another `Rectangle` with *LightBlue* **Background**. But this time, set the **Width** and **Height** to 100 pixels:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -612,7 +610,7 @@ Add another `Rectangle` with *LightBlue* **Background**. But this time, set the 
 
 Now you see the new `Rectangle` on top of the previous `Rectangle`.
 
-![Light blue rectangle.](../media/wpf-lightblue-rectangle.png)
+![Screenshot that shows a light blue rectangle.](../media/wpf-lightblue-rectangle.png)
 
 > [!NOTE]
 > Remember this important feature of XAML when you build your user interfaces. In a layout control like a `Grid`, the order the controls are defined in the code is the layer order they have in the UI.
@@ -622,12 +620,12 @@ In this example, the light blue rectangle covers the darker blue rectangle becau
 Set the first `Rectangle`'s **HorizontalAlignment** to *Left*:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -655,12 +653,12 @@ It retains the **Width** and **Height** values. But the **HorizontalAlignment** 
 Now set the `Rectangle`'s **VerticalAlignment** to *Top*:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -677,7 +675,6 @@ Now set the `Rectangle`'s **VerticalAlignment** to *Top*:
 </Window>
 ```
 
-
 Notice that the `Rectangle` moved to the top-left corner.
 
 ![Screenshot that shows the rectangle at the top left corner of the grid.](../media/wpf-left-top-aligned-rectangled.png)
@@ -687,12 +684,12 @@ That looks like a tight fit. Let's add some space between the edges of the `Rect
 When you set **Margin**, you use a *left, top, right, bottom* pattern for the values. Give the `Rectangle` a 20-pixel **Margin** on the left and the top:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -709,10 +706,10 @@ When you set **Margin**, you use a *left, top, right, bottom* pattern for the va
     </Grid>
 </Window>
 ```
+
 Now you see 20 pixels of space between the left side and top of the `Rectangle`.
 
 ![Screenshot that shows the blue rectangle at the top left corner with a 20 pixel gap from the edges of the grid.](../media/wpf-rectangle-with-margin.png)
-
 
 To get the same margin value all around, use a single number like `Margin="20"`. This setting is the same as `Margin="20,20,20,20"`.
 
@@ -728,12 +725,12 @@ You learned how to use some basic layout properties. Now let's apply that knowle
 Add a `TextBlock` to the `Grid` and set the **Text** property to *I'm a TextBlock*:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -755,17 +752,17 @@ Add a `TextBlock` to the `Grid` and set the **Text** property to *I'm a TextBloc
 
 Now you see the text at the top left of the `Grid`. The default alignment of the entire `TextBlock` container is *Stretch*, like the rectangles. But the **text alignment** is top left.
 
-![TextBlock.](../media/wpf-textblock.png)
+![Screenshot that shows a TextBlock in the top left corner above the blue rectangle.](../media/wpf-textblock.png)
 
 To center the text over the light blue `Rectangle`, change the `TextBlock` **VerticalAlignment** and **HorizontalAlignment** to *Center*:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -789,17 +786,17 @@ To center the text over the light blue `Rectangle`, change the `TextBlock` **Ver
 
 Now you see the text centered on the page. But it's on top of the light blue `Rectangle`.
 
-![Centered TextBlock.](../media/wpf-textblock-centered.png)
+![Screenshot that shows a centered TextBlock in the light blue rectangle.](../media/wpf-textblock-centered.png)
 
 Finally, let's try some `TextBlock` font properties: **FontFamily**, **FontSize**, and **FontWeight**:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -835,12 +832,12 @@ The `Button` is this type of control. To set the text that's in the `Button`, yo
 Add a `Button` to the `Grid` and set the **Content** to *I'm a button*:
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -886,12 +883,12 @@ Let's wrap up this lesson by **combining everything you learned** to adjust the 
 - **FontFamily** to *Arial*
 
 ```xml
-<Window x:Class="UsingControlsApp.Wpf.MainWindow"
+<Window x:Class="UsingControlsApp.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:UsingControlsApp.Wpf"
+        xmlns:local="clr-namespace:UsingControlsApp"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
@@ -926,7 +923,7 @@ Let's wrap up this lesson by **combining everything you learned** to adjust the 
 
 Now you see the `Button` at the bottom center with the assigned font properties.
 
-![Finished button.](../media/wpf-button-finished.png)
+![Screenshot that shows the I'm a button button in the bottom center.](../media/wpf-button-finished.png)
 
 You've got the fundamentals of some basic layouts and adding controls to the UI. Now let's use these elements to accept user input. From button selections to accepting text input, the next lesson speeds things up as we build a functional application.
 
@@ -934,8 +931,9 @@ You've got the fundamentals of some basic layouts and adding controls to the UI.
 
 ### Summary
 
-In this unit, you learned how to begin using controls in desktop applications. You'll find that UWP and WPF share a lot of features:
-* The same type of controls.
-* The same markup and coding languages. 
+In this unit, you learned how to begin using controls in desktop applications. You can see that UWP and WPF share many features:
+
+- The same type of controls.
+- The same markup and coding languages.
 
 You can reuse most of what you learned and see which platform you'd rather use.

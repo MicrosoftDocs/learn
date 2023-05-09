@@ -27,7 +27,7 @@ quiz:
       explanation: "Correct."
   - content: "You would like to summarize a paragraph of text. Which generative AI model family would you use to solve for this workload?"
     choices:
-    - content: "GPT-3."
+    - content: "GPT."
       isCorrect: true
       explanation: "Correct."
     - content: "Codex."

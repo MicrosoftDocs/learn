@@ -1,29 +1,32 @@
-When you publish an API, you often want some level of control over who can access the API through the gateway. Subscription keys are used to restrict access to an API.
+When you publish an API, you often want some level of control over who can access the API through the gateway. Subscription keys are one way to restrict access to an API.
 
 Here, you'll learn how to use subscription keys to secure your APIs.
 
 ## Subscriptions and keys
 
-To protect your APIs, you can use a subscription key.
+To protect your APIs, you can use a subscription key. 
 
-A subscription key is a unique auto-generated string, which is passed through in the headers of the client request. The key is directly related to a subscription, which can be scoped to different areas, giving granular control over permissions and policies. The three main subscription scopes are:
+> [!NOTE]
+> In production API Management environments, you'd typically combine a subscription key with other mechanisms to protect your APIs from unauthorized use, such as certificate authentication or OAuth 2.0 authorization. These are outside the scope of this module.
+
+A subscription key is a unique auto-generated string, which is passed through in the headers of the client request, or as a query string in the URL. The key is directly related to a subscription, which can be scoped to different areas, giving granular control over permissions and policies. The main subscription scopes are:
 
 - All APIs
-- A Single API
+- A single API
 - A product
 
 An application that calls a protected API must include the key in the request.
 
-You can regenerate these subscription keys at any time. For example, if you suspect that a key has been shared with unauthorized users.
+You can regenerate these subscription keys at any time. For example, regenerate subscription keys if you suspect that a key has been shared with unauthorized users.
 
 ![Subscription keys.](../media/6-subscription-keys.png)
 
 Every subscription has two keys, a primary and a secondary. Having two keys makes it easier when you do need to regenerate a key. For example, if you want to change the primary key and avoid downtime, use the secondary key in your apps.
 
-For products where subscriptions are enabled, you must supply a key when making calls to APIs in that product. As a developer, you can obtain a key by submitting a subscription request. This process is a core part of the API Management (APIM) workflow.
+For products where subscriptions are enabled, you must supply a key when making calls to APIs in that product. As a developer, you can obtain a key by submitting a subscription request. This process is a core part of the API Management workflow.
 
  > [!NOTE]
-> Creating new users and giving them their subscription keys so they can access the API is a core part of the APIM workflow, but is outside the scope of this module.
+> Creating new users and giving them their subscription keys so they can access the API is a core part of the API Management workflow, but is outside the scope of this module.
 
 ## Call an API with the subscription key
 
@@ -31,11 +34,9 @@ Applications must include a valid key in all HTTP requests when they make calls 
 
 The default header name is **Ocp-Apim-Subscription-Key**, and the default query string is **subscription-key**.
 
-To test out your API calls, you can use the developer portal, or command-line tools, such as **curl**. Here's an example of a GET request using the developer portal, showing the subscription key header.
+To test out your API calls, you can use the developer portal (if it's available in your service tier), a command-line tool such as **curl**, or other tools such as Postman. 
 
-:::image type="content" source="../media/6-key-header-portal.png" alt-text="Call API from developer portal." loc-scope="other":::
-
-Here's how you can pass a key in the request header using **curl**:
+Here's an example of a GET request that passes a key in the request header using the **curl** command:
 
 ```bash
 curl --header "Ocp-Apim-Subscription-Key: <key string>" https://<apim gateway>.azure-api.net/api/path

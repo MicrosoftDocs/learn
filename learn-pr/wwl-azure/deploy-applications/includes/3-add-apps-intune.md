@@ -1,4 +1,5 @@
 
+
 Before you can assign, monitor, configure, or protect apps, you must add them to Microsoft Intune. The users of apps and devices at your company (your company's workforce) might have several app requirements. Before adding apps to Intune and making them available to your workforce, you must assess and understand a few app fundamentals. You must understand the various types of apps that are available for Intune. You must assess the app requirements, such as the platforms and capabilities that your workforce needs. You must determine whether to use Intune to manage the devices (including apps) or have Intune manage the apps without managing the devices. Finally, you must determine the apps and capabilities that your workforce needs, and who needs them.
 
 You can add the following app types in Intune:

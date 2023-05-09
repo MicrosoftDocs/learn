@@ -1,5 +1,6 @@
 
 
+
 There are multiple techniques to perform a data type conversion. The technique you choose depends on your answer to two important questions:
 
 - Is it possible, depending on the value, that attempting to change the value's data type would throw an exception at run time?

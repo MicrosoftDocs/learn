@@ -1,4 +1,4 @@
-In this unit, you'll learn accessibility considerations and best practices related to accessible hardware connections and the operation of mechanical parts. By applying this learning, you can create more accessible experiences for players.
+In this unit, learn accessibility considerations and best practices related to accessible hardware connections and the operation of mechanical parts. By applying this learning, you can create more accessible experiences for players.
 
 ## Provide standard hardware connections
 
@@ -6,7 +6,7 @@ Many players who use assistive technologies (AT) like Braille readers or adaptiv
 
 Many AT devices only support standard hardware connection types. Standard hardware connections are nonproprietary forms of connecting one device to another. USB is considered the standard connection for physical connection types. For wireless connections, Bluetooth is considered the standard.
 
-In addition to any other connection types that your device will feature, standard connections like USB ports and Bluetooth pairing compatibility should also be provided. Standard connections ensure that players can connect and use their assistive technologies to engage in gameplay.
+In addition to any other connection types that your device features, standard connections like USB ports and Bluetooth pairing compatibility should also be provided. Standard connections ensure that players can connect and use their assistive technologies to engage in gameplay.
 
 ## Consider device weight and shape
 
@@ -54,7 +54,7 @@ Button size and activation force are equally important when you create accessibl
 
 The movements a player must perform to use a device also influence device accessibility. For example, to adjust settings for a volume "knob," players must grasp and twist their hand or wrist to either side. These motions can pose difficulty for some players. Holding down a button for a prolonged period to initiate Bluetooth pairing mode can also place physical demands on some players.
 
-When you design and create new devices, consider avoiding activation methods that require players to perform twisting motions or prolonged time to complete an action. In cases where this isn't possible, provide alternative methods to perform these actions that are less physically demanding. For example, consider software-based device management applications that can run on the player's phone, console, or PC.
+When you design and create new devices, consider avoiding activation methods that require players to perform twisting motions or prolonged time to complete an action. In cases where this avoidance isn't possible, provide alternative methods to perform these actions that are less physically demanding. For example, consider software-based device management applications that can run on the player's phone, console, or PC.
 
 The following image shows the ear cup dials on an Xbox gaming headset. Players must twist the dials to adjust the volume and chat mixer values. For players who are unable to perform twisting motions, an opportunity to adjust volume and chat mixer volumes is provided through the Xbox Accessories app. This app allows players to use the input device of their choice to raise and lower headset values without hands-on twisting motions.
 
@@ -64,7 +64,7 @@ The following image shows the ear cup dials on an Xbox gaming headset. Players m
 
 ### Component location
 
-Another important consideration is the location of the controls on a device. Consider a headset with the volume controls located on the left ear cup and the noise cancellation controls located on the right ear cup. A player with limited movement in one arm or an amputation might only be able to reach the side with volume controls and not the noise cancellation controls on the other side of the device.
+Another important consideration is the location of the controls on a device. Consider a headset with the volume controls located on the left ear cup and the noise cancellation controls located on the right ear cup. A player with limited movement in one arm or an amputation might only be able to reach the side with volume controls. They might not be able to reach the noise cancellation controls on the other side of the device.
 
 In this situation, the location of the controls can't be moved. An alternative approach could include a software option that allows players to swap the controls for volume and noise cancellation between the right and left ear cups. This option would support this player in "accessing" both control types despite only being able to physically reach one side of their device while it's on their head.
 

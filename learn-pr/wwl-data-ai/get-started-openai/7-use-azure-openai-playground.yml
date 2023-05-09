@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-openai.use-azure-openai-playground
-title: Test models in Azure OpenAI Studio's playground
+title: Test models in Azure OpenAI Studio's playgrounds
 metadata:
-  title: Test models in Azure OpenAI Studio's playground
-  description: This unit explains how to use Azure OpenAI Studio's playground feature to test models. The unit also explores the concept of fine-tuning a generative AI model.
+  title: Test models in Azure OpenAI Studio's playgrounds
+  description: This unit explains how to use Azure OpenAI Studio's playgrounds to test models. The unit also explores the concept of fine-tuning a generative AI model.
   ms.date: 2/27/2023
   author: sherzyang
   ms.author: sheryang

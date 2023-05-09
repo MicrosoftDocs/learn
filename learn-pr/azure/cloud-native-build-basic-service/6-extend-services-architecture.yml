@@ -5,8 +5,8 @@ metadata:
   title: Extend the services architecture
   description: Define how services work together and the role of additional services.
   ms.date: 05/15/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
