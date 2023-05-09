@@ -6,18 +6,20 @@ metadata:
   ms.date: 5/5/2023               
   author: MScalopez
   ms.author: calopez
+  ms.reviewer: vanto
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Introduction to SQL Server 2022 T-SQL enhancements
 summary: Learn the new and improved SQL Server 2022 functions that will enhance the querying and creation of T-SQL objects.
 abstract: |
   In this module, you'll be able to:
-  - Learn about new core T-SQL enhancements
-  - Explore new core T-SQL enhancements
-  - Hands-on exercises with new core T-SQL enhancements
+  - Understand the new and enhanced T-SQL features in SQL Server 2022.
+  - Utilize new functions and capabilities to optimize database performance and maintainability.
+  - Adapt to the evolving needs of modern database administrators and developers.
 prerequisites: |
-  - Basic working knowledge of SQL Server, including deployment, security, query processing.
-  - Fundamental knowledge of the T-SQL language.
+  - SQL Server 2022
+  - Basic working knowledge of SQL Server and query processing.
+  - Fundamental knowledge of the Transact-SQL (T-SQL) language.
   - Familiarity with SQL Server functions and operators.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:

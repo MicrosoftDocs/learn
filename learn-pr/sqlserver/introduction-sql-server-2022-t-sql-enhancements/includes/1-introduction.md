@@ -22,6 +22,7 @@ Upon completing this module, should be able to:
 
 ## Prerequisites
 
-- Basic working knowledge of SQL Server, including deployment, security, query processing
-- Fundamental knowledge of the T-SQL language
+- SQL Server 2022
+- Basic working knowledge of SQL Server and query processing
+- Fundamental knowledge of the Transact-SQL (T-SQL) language
 - Familiarity with SQL Server functions and operators
