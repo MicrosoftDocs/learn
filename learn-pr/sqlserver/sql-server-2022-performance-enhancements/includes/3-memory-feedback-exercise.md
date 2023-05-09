@@ -1,9 +1,13 @@
 > [!NOTE]
 > This exercise will be leveraging the following githib repository:
 >
-> https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop
+> https://github.com/microsoft/sqlworkshops-sql2022workshop/tree/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf
 >
 > Before continuing with the exercise access lab ensure that the pre-requisites have been completed and setup has been completed.
+
+Imagine you are a database administrator for the World Wide Importers Corporation. You need to understand how memory grant feedback is different in SQL Server 2022 than in previous versions. To understand this, we'll simulate an out of date statistics exercise. Then we'll review the persistance of the memory grant feedback that is new to SQL Server 2022 and requires the Query Store.
+
+In this exercise, you'll learn how to see how memory grant feedback can improve query performance automatically, including persisting feedback to the Query Store.
 
 ## Prerequisites
 
@@ -11,7 +15,7 @@
 - A virtual machine (VM) or computer with at minimum 2 CPUs and 8 GB of memory.
 - Install the latest version of [SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms).
 
-## Setup the exercise
+## Set up the exercise
 
 1. Create a directory called `c:\sql_sample_databases` to store backups and files.
 
@@ -20,7 +24,7 @@
    > [!NOTE]
    > If you try to restore the default sample `WideWorldImportersDW` database, you can use the [extendwwidw.sql](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/persistedmgf/extendwwidw.sql) script to customize the database for the exercise.
 
-1. [Restore](/sql/t-sql/statements/restore-statements-transact-sql) the `WideWorldImportersDW` database to your SQL Server 2022 instance. You may need to change the directory paths for the location of your backup and where you will restore the database files.
+1. [Restore](/sql/t-sql/statements/restore-statements-transact-sql) the `WideWorldImportersDW` database to your SQL Server 2022 instance using SSMS. You may need to change the directory paths for the location of your backup and where you will restore the database files.
 
    ```sql
    USE master;
@@ -50,12 +54,6 @@
    ALTER DATABASE WideWorldImportersDW SET QUERY_STORE CLEAR ALL;
    GO
    ```
-
-## Memory grant feedback scenario
-
-In this exercise you will learn how to see how memory grant feedback can improve query performance automatically, including persisting feedback to the Query Store.
-
-As a database administrator for the World Wide Importers Corporation, you need to understand how memory grant feedback is different in SQL Server 2022 than in previous versions. To understand this, we'll simulate an out of date statistics exercise. Then we'll review the persistance of the memory grant feedback that is new to SQL Server 2022 and requires the Query Store.
 
 ## Exercise 1
 
