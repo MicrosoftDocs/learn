@@ -85,16 +85,22 @@ Because you haven't yet deployed the _Space Game_ website to your App Service en
 To run the tests locally:
 
 1. In Visual Studio Code, open the integrated terminal.
-1. From the terminal, ensure that you're in your project's root directory. Here's an example:
+1. Run the following commands in the terminal.
+    ```dotnetcli
+    dotnet build --configuration Release
+    dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
+    ```
+1. Make a note of the local website link, in this example it is `http://localhost:5000`.
+1. Open a new bash terminal window in Visual Studio Code. From the new terminal, ensure that you're in your project's root directory. Here's an example:
 
     ```bash
     cd ~/mslearn-tailspin-spacegame-web-deploy
     ```
 
-1. Export the `SITE_URL` environment variable.
+1. Export the `SITE_URL` environment variable. Use the locally running link that you got from the previous step.
 
     ```bash
-    export SITE_URL="http://tailspin-spacegame-web.azurewebsites.net"
+    export SITE_URL="http://localhost:5000"
     ```
 
     This variable points to the _Space Game_ website that Microsoft hosts.
