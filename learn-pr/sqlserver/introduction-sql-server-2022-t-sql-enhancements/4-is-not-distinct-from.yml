@@ -5,10 +5,10 @@ metadata:
   title: Enhance expression comparisons with IS [NOT] DISTINCT FROM
   description: "Compares the equality of two expressions and guarantees a true or false result, even if one or both operands are NULL."
   ms.date: 5/5/2023
-  author: wwlpublish
-  ms.author: MScalopez
+  author: MScalopez
+  ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-sqlserver
 durationInMinutes: 7
 content: |
   [!include[](includes/4-is-not-distinct-from.md)]

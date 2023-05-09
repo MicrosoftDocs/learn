@@ -4,10 +4,10 @@ metadata:
   title: Introduction to SQL Server 2022 T-SQL enhancements
   description: "SQL Server 2022 introduces a range of new features and enhancements, providing powerful tools and capabilities that optimize performance and offer better control on SQL objects manipulation and creation."
   ms.date: 5/5/2023               
-  author: wwlpublish
-  ms.author: MScalopez
+  author: MScalopez
+  ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-sqlserver
 title: Introduction to SQL Server 2022 T-SQL enhancements
 prerequisites: |
   - Basic working knowledge of SQL Server, including deployment, security, query processing.
@@ -25,7 +25,16 @@ roles:
 - devops-engineer
 products:
 - sql-server
-modules:
-- learn.introduction-sql-server-2022-t-sql-enhancements
-trophy:
-  uid: learn.introduction-sql-server-2022-t-sql-enhancements.trophy
+units:
+- learn.introduction-sql-server-2022-t-sql-enhancements.introduction
+- learn.introduction-sql-server-2022-t-sql-enhancements.resumable-constraints-and-wait-low-priority-index
+- learn.introduction-sql-server-2022-t-sql-enhancements.select-window
+- learn.introduction-sql-server-2022-t-sql-enhancements.is-not-distinct-from
+- learn.introduction-sql-server-2022-t-sql-enhancements.time-and-series-functions
+- learn.introduction-sql-server-2022-t-sql-enhancements.string-and-other-functions
+- learn.introduction-sql-server-2022-t-sql-enhancements.process-json-data
+- learn.introduction-sql-server-2022-t-sql-enhancements.aggregate-functions
+- learn.introduction-sql-server-2022-t-sql-enhancements.bit-manipulation
+- learn.introduction-sql-server-2022-t-sql-enhancements.summary
+badge:
+  uid: learn.introduction-sql-server-2022-t-sql-enhancements.badge

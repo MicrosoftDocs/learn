@@ -5,10 +5,10 @@ metadata:
   title: Named window definition with the SELECT WINDOW clause
   description: "Named window definition in the WINDOW clause determines the partitioning and ordering of a rowset before the window function which uses the window in OVER clause is applied."
   ms.date: 5/5/2023
-  author: wwlpublish
-  ms.author: MScalopez
+  author: MScalopez
+  ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: learning-sqlserver
 durationInMinutes: 6
 content: |
   [!include[](includes/3-select-window.md)]
