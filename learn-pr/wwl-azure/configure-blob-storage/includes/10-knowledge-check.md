@@ -3,4 +3,4 @@ Your organization has an extensive video library that's accessed thousands of ti
 
 ### Answer the following questions
 
-Choose the best response for each of the questions below. Then select **Check your answers**.
+Choose the best response for each question. Then select **Check your answers**.
