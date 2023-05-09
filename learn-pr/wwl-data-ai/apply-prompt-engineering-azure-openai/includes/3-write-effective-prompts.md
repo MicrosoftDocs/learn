@@ -6,9 +6,13 @@ Asking the Azure OpenAI model clearly for what you want is one way to get desire
 
 For example, say you want to create a product description for a new water bottle. Consider the answer associated with each prompt:
 
+**Prompt**
+
 ```code
 Write a product description for a new water bottle
 ```
+
+**Response**
 
 ```code
 Introducing the latest addition to our product line - the innovative and eco-friendly water bottle.
@@ -20,11 +24,17 @@ design ensures that you can use it again and again, making it the perfect choice
 for a reliable and sustainable water bottle.
 ```
 
+Versus a similar prompt, with clear instructions.
+
+**Prompt**
+
 ```code
 Write a product description for a new water bottle that is 100% recycled. Be sure to include that
 it comes in natural colors with no dyes, and each purchase removes 10 pounds of plastic from our 
 oceans
 ```
+
+**Response**
 
 ```code
 Introducing our newest water bottle, the eco-friendly choice for the conscious consumer. Made from 

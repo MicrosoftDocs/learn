@@ -4,9 +4,13 @@ By providing context to the AI model, it allows the model to better understand w
 
 Specifying the structure of your output can have a large impact on your results. This could include something like asking the model to cite their sources, write the response as an email, format the response as a SQL query, classify sentiment into a specific structure, and so on. For example:
 
+**Prompt**
+
 ```code
 Write a table in markdown with 6 animals in it, with their genus and species
 ```
+
+**Response**
 
 ```code
 | Animal           | Genus          | Species        |
@@ -21,6 +25,8 @@ Write a table in markdown with 6 animals in it, with their genus and species
 
 This technique can be used with custom formats, such as a JSON structure:
 
+**Prompt**
+
 ```code
 Put two fictional characters into JSON of the following format
 
@@ -29,6 +35,8 @@ Put two fictional characters into JSON of the following format
   jobFictional:
 }
 ```
+
+**Response**
 
 ```code
 Here's an example of how you can put two fictional characters into JSON format:
