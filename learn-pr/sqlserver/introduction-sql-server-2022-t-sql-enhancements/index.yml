@@ -26,7 +26,6 @@ roles:
 - database-administrator
 - data-engineer
 - developer
-- devops-engineer
 products:
 - sql-server
 units:
