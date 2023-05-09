@@ -37,7 +37,6 @@ units:
 - learn.wwl.implement-durable-functions.discover-four-function-types
 - learn.wwl.implement-durable-functions.explore-task-hubs
 - learn.wwl.implement-durable-functions.explore-durable-orchestrations
-- learn.wwl.implement-durable-functions.control-timing
 - learn.wwl.implement-durable-functions.send-wait-for-events
 - learn.wwl.implement-durable-functions.knowledge-check
 - learn.wwl.implement-durable-functions.summary
