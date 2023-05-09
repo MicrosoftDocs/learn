@@ -78,6 +78,19 @@ var ChatCompletionOptions = new ChatCompletionOptions()
 };
 ```
 
+**Response**
+
+```code
+{
+    "role": "assistant", 
+    "content": "Well howdy there, stranger! The library, huh?
+                Y'all just head down the main road till you hit the town 
+                square. Once you're there, take a left and follow the street 
+                for a spell. You'll see the library on your right, can’t 
+                miss it. Happy trails!"
+}
+```
+
 ::: zone-end
 
 ::: zone pivot="python"
@@ -90,6 +103,19 @@ response = openai.ChatCompletion.create(
         {"role": "user", "content": "Can you direct me to the library?"}
     ]
 )
+```
+
+**Response**
+
+```code
+{
+    "role": "assistant", 
+    "content": "Well howdy there, stranger! The library, huh?
+                Y'all just head down the main road till you hit the town 
+                square. Once you're there, take a left and follow the street 
+                for a spell. You'll see the library on your right, can’t 
+                miss it. Happy trails!"
+}
 ```
 
 ::: zone-end
