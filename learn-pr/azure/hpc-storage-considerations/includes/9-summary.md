@@ -39,9 +39,9 @@ Here are some locality items for your checklist:
 - Source data on-premises, in Azure, or both?
 - Results data on-premises, in Azure, or both?
 - Will HPC workloads in Azure be coordinated with source-data modification timelines?
-    - Timelines will help to inform the risk of stale data. 
+  - Timelines will help to inform the risk of stale data. 
 - Sensitive/HIPAA data?
-    - Data sensitivity will help inform the level of authentication and encryption required.
+  - Data sensitivity will help inform the level of authentication and encryption required.
 
 Locality awareness will help you determine whether you can use copying, caching, or synchronization as your data movement strategy.
 
@@ -60,9 +60,10 @@ Every consideration affects performance, so these numbers represent a guide that
 
 Account for the client access protocol required. As we discussed, there are different versions of NFS (and SMB, the Windows client protocol). If you plan to use NFSv4, be clear about what features of the protocol are required (like ACLs).
 
-Here are some items for your checklist: 
+Here are some items for your checklist:
+
 - NFS versions required
-    - If v4, expected protocol behaviors (ACLs, encryption)
+  - If v4, expected protocol behaviors (ACLs, encryption)
 - Parallel file system solution
 
 ## Total capacity requirement ##
@@ -70,6 +71,7 @@ Here are some items for your checklist:
 Storage capacity in Azure is the next consideration. It helps to inform the overall cost of the solution. If you plan to store a large amount of data for a long time, you might want to consider *tiering* as part of the storage solution. Tiering provides lower-cost storage options combined with higher-cost but higher-performance storage in a hot tier.
 
 Some items for your list:
+
 - Total capacity required
 - Total hot-tier capacity required
 - Total warm-tier capacity required
@@ -81,7 +83,8 @@ A note on cold-tier capacity: archive tiers combine lower costs for storing data
 
 Add your authentication/authorization requirements to the checklist. At minimum, adding them ensures you include the appropriate supporting systems, like an LDAP server or Active Directory environment, to your architecture. But if you need to support capabilities like UID/GID mapping to Active Directory users, you need to confirm that the storage solution supports that capability.
 
-For your list: 
+For your list:
+
 - Local (UID/GID on file server only)
 - Directory (LDAP, Active Directory)
 - UID/GID mapping to Active Directory users?
