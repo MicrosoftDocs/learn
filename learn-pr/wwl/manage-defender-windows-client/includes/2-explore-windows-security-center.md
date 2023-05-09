@@ -1,4 +1,5 @@
 
+
 The Windows Security Center, a component in Windows 11 and later versions, encompasses all facets of security for the operating system, user accounts, and applications on a particular device. Evolving from earlier iterations of Microsoft Defender anti-malware software, the Windows Security Center provides a comprehensive suite of security features designed to maintain the safety of your Windows device throughout its supported lifetime.
 
 Windows Security Center is turned on, by default and it works from the moment you install Windows operating system. It covers the following areas:
