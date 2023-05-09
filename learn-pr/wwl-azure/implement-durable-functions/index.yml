@@ -32,7 +32,6 @@ subjects:
 - data-analytics
 - serverless-compute
 units:
-- learn.wwl.implement-durable-functions.send-wait-for-events
 - learn.wwl.implement-durable-functions.summary
 badge:
   uid: learn.wwl.implement-durable-functions.badge
