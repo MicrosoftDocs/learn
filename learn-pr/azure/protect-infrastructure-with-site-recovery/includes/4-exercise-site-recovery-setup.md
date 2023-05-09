@@ -31,10 +31,10 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 
 1. On the **Basics** > **Instance Details** tab, enter the following values for each setting.
     | Vault name | **asr-vault** |
-    | Region | **East US 2** |
+    | Region | **(US) East US 2** |
 
 1. Select **Review + create**, and after validation passes, then select **Create**. It may take a few minutes for the deployment to complete.
- 
+
 1. After deployment completes, select **Go to resource** to view your **asr-vault** Recovery Services vault.
 
 ## Enable replication
@@ -45,12 +45,12 @@ In this task, you'll replicate the two VMs that you created in the previous unit
 
 1. In the command bar, select **Replicate**, then select **Azure virtual machines** from the dropdown list. The **Enable replication** pane appears.
 
-1. Enter the following values in the specified tabs, leaving other fields at their default values. Select **Next** to advance to the next tab.
+1. Enter the following values in the specified tabs, leaving other fields at their default values.
 
+    On the **Source** tab:
     | Setting | Value |
     |---------|-------|
-    | **Source** tab |
-    | Source location | **West US 2** |
+    | Region | **(US) West US 2** |
     | Source resource group | **west-coast-rg** |
     | **Virtual machines** tab |
     | Select both VMs | **hr-records** and **patient-records**|
@@ -58,15 +58,16 @@ In this task, you'll replicate the two VMs that you created in the previous unit
     | Target location | **East US 2** |
     | Target subscription | Select  **Customize**. In the **Target subscription** field, select your Azure subscription and select **OK**. |
 
-    :::image type="content" source="../media/4-enable-replication-source.png" alt-text="Screenshot showing the source options for replication.":::
+    :::image type="content" source="../media/source.png" alt-text="Screenshot showing the source options for replication.":::
 
-1. On the **Enable replication** pane, select **Enable replication**. It may take a few moments for deployment to the east-coast-rg to complete. 
+1. Select **Next** to advance to the next tab.
+1. On the **Enable replication** pane, select **Enable replication**. It may take a few moments for deployment to the east-coast-rg to complete.
 
 ## Monitor replication progress
 
 You can review the progress of your site recovery job by selecting **Notifications** in the global controls in the upper right corner of your Azure portal.
 
-1. In the **Notifications** pane, you will see that **Enabling replication for 2 vm(s)** is still running. Select the link. 
+1. In the **Notifications** pane, you will see that **Enabling replication for 2 vm(s)** is still running. Select the link.
 
 1. The **Site Recovery jobs** lists all site recovery actions you have completed in this module.
 
