@@ -1692,3 +1692,8 @@ achievements:
   title: Provision virtual machines in Azure
   summary: Learn the availability and sizing options of Azure Virtual Machines, and how to create a virtual machine by using the Azure CLI.
   iconUrl: /training/achievements/virtual-machines-provisions.svg
+- uid: learn.wwl.implement-durable-functions.badge
+  type: badge
+  title: Implement Durable Functions
+  summary: Learn how Durable Functions can simplify complex, stateful coordination requirements in serverless applications.
+  iconUrl: /training/achievements/3-implement-durable-functions.svg
