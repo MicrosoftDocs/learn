@@ -22138,6 +22138,91 @@
       "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/7-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/6-timers-durable-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/3-durable-functions-types-features.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/2-durable-functions-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/5-durable-orchestrations-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/4-durable-functions-task-hubs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/7-external-events-durable-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/3-cosmos-db-choose-partition-key.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/4-create-synthetic-partition-key.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/2-cosmos-db-partitions-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
     }
   ]
 }
