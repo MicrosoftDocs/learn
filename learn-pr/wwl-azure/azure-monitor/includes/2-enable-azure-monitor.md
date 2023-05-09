@@ -31,7 +31,7 @@ The following sections describe how you can configure data to be streamed to an 
 
 Azure Event Hubs is a streaming platform and event ingestion service that can transform and store data by using any real-time analytics provider or batching/storage adapters. Use Event Hubs to stream log data from Azure Monitor to a Microsoft Sentinel or a partner SIEM and monitoring tools.
 
-### What data can be sent into a event hub?
+### What data can be sent into an event hub?
 
 Within your Azure environment, there are several 'tiers' of monitoring data, and the method of accessing data from each tier varies slightly. Typically, these tiers can be described as:
 
