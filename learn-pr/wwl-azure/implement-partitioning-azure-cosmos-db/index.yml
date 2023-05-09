@@ -31,7 +31,6 @@ subjects:
 - database
 units:
 - learn.wwl.implement-partitioning-azure-cosmos-db.introduction
-- learn.wwl.implement-partitioning-azure-cosmos-db.explore-partitions
 - learn.wwl.implement-partitioning-azure-cosmos-db.knowledge-check
 - learn.wwl.implement-partitioning-azure-cosmos-db.summary
 badge:
