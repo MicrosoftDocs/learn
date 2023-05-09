@@ -22158,6 +22158,11 @@
       "source_path": "learn-pr/wwl-azure/implement-durable-functions/2-durable-functions-overview.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/5-durable-orchestrations-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
     }
   ]
 }
