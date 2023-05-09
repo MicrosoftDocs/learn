@@ -14,10 +14,12 @@ The Azure services used in this module are as follows:
 - Azure IoT Hub
 - Deployment Script
 
-To simplify the setup and use of these Azure services, you can use an Azure Resource Manager template (ARM template). This ARM template helps to automate Azure service deployment for your wind farm experience. A base framework has been established for you and a Visual Studio solution has been provided for your reference and use. You need to edit configuration parameters and run commands using Azure CLI to build and deploy the ARM template. By using the ARM template with the Azure CLI, you define the key Azure infrastructure that needs to be deployed. Just like application code, you can store the ARM template infrastructure code in a source repository and version it. Anyone on your team can run the code and deploy similar environments with their own configuration parameters.
+To simplify the setup and use of these Azure services, you can use an Azure Resource Manager template (ARM template). This ARM template helps to automate Azure service deployment for your wind farm experience. A base framework has been established for you and a Visual Studio solution has been provided for your reference and use. You need to edit configuration parameters and run commands using Azure CLI to build and deploy the ARM template.
+
+By using the ARM template with the Azure CLI, you define the key Azure infrastructure that needs to be deployed. Just like application code, you can store the ARM template infrastructure code in a source repository and version it. Anyone on your team can run the code and deploy similar environments with their own configuration parameters.
 
 ARM templates can be either a Bicep or JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. The template uses declarative syntax, which lets you state what you intend to deploy without having to write the sequence of programming commands to create it. In the template, you specify the resources to deploy and the properties for those resources.
 
 Use a new template language called Bicep. Bicep provides a syntax that is easier to use for creating templates. Bicep and JSON templates offer the same capabilities and you can convert the template between the two languages. The Bicep file used for this module has been created for you.
 
-ARM templates can be run using the Azure CLI at a Windows command prompt or Azure PowerShell. PowerShell offers some tab completion features not available at a command prompt and is the preferred shell for this module. You aren't required to run any of the Azure CLI commands with elevated permissions.
+ARM templates can be run using the Azure CLI at a Command Prompt window or Azure PowerShell. PowerShell offers some tab completion features not available at a command prompt and is the preferred shell for this module. You aren't required to run any of the Azure CLI commands with elevated permissions.

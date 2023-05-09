@@ -1,14 +1,14 @@
 > [!IMPORTANT]
 > This module creates Azure resources. If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources. Instructions for removing all resources are included at the end of the module.
 
-This module assumes you have Azure CLI installed. You can run commands from the command prompt or Azure PowerShell. We recommend PowerShell. The module also assumes you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
+This module assumes you have Azure CLI installed. You can run commands from a Command Prompt window or Azure PowerShell. We recommend PowerShell. The module also assumes you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
 
 > [!IMPORTANT]
 > If you belong to an organization, you might need to coordinate with your IT Team to create your Azure Active Directory (Azure AD) user account and grant the appropriate privileges. Also, Guest accounts associated with your Azure subscription don't meet the minimum requirements. You must have a member account.
 
 The ARM template logic has been integrated into a connection prefab that drives a data simulator.
 
-## Download the Visual Studio solution and the ARM template
+## Download the solution and ARM template
 
 In the previous unit, you cloned or downloaded [the repository from GitHub](https://aka.ms/mr-adt-mslearn).
 
@@ -24,7 +24,8 @@ In the previous unit, you cloned or downloaded [the repository from GitHub](http
 
 1. Sign in to Azure by using the [az login](/cli/azure/reference-index#az-login) command. This command opens a browser window and prompts for authentication.
 
-   - If the command fails to open the appropriate browser window, use this command: `az login --use-device-code`. This device code flow returns a unique code. [Open the device sign-in page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal.
+   > [!NOTE]
+   > If the command fails to open the appropriate browser window, use this command: `az login --use-device-code`. This device code flow returns a unique code. [Open the device sign-in page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal.
 
    :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the Shell using the Windows PowerShell environment to run the az login command.":::
 
@@ -32,15 +33,15 @@ In the previous unit, you cloned or downloaded [the repository from GitHub](http
 
 1. Set the `$projectname` variable. This value is the base unique name for the Azure resources that you create in this exercise. Extra random characters are appended to the project name. Make sure your values are enclosed in double quotes.
 
+   > [!NOTE]
+   > Variables in PowerShell start with the `$` symbol.
+
    ```console
    $projectname="myproj"
    ```
 
    > [!IMPORTANT]
    > Your project name is a maximum of 14 characters. It can contain only lowercase letters, numbers, and the hyphen character.
-
-   > [!NOTE]
-   > Variables in PowerShell start with the `$` symbol.
 
 1. Set the App Registration name, which can be a maximum of 14 characters. This value is the name of the application registration for your mixed reality app.
 
@@ -56,9 +57,9 @@ Run the following command to create a service principal and configure its access
 az ad sp create-for-rbac --name ${appreg} --role Contributor --scopes /subscriptions/<SUBSCRIPTION-ID> > AppCredentials.txt
 ```
 
+The output from this command is redirected from standard output to *AppCredentials.txt* text file. The command creates the file in the same directory where your run the command. Any errors that might occur are displayed in your PowerShell console. Open the file to retrieve the credentials to configure the telemetry simulator application later.
+
 > [!NOTE]
-> The output from this command is redirected from standard output to *AppCredentials.txt* text file. The command creates the file in the same directory where your run the command. Any errors that might occur are displayed in your PowerShell console. Open the file to retrieve the credentials to configure the telemetry simulator application later.
->
 > Be careful where you keep this file, because it contains credentials. Consider deleting the file after completing this learning path.
 
 :::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of the command-line interface using the PowerShell environment to set app product and registration names and create the app registration.":::
@@ -77,7 +78,7 @@ az ad sp create-for-rbac --name ${appreg} --role Contributor --scopes /subscript
    echo $objectid
    ```
 
-3. Create and set a variable for the UserID:
+3. Create and set a variable for the user ID.
 
    ```console
    $userid=$(az ad signed-in-user show --query objectId -o tsv)

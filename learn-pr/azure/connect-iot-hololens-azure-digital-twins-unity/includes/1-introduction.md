@@ -1,4 +1,4 @@
-Visualizing assets in an immersive setting lets you experience the right data in the right context, at the right time. Adding connectivity of your assets to operations data makes your assets more intelligent and reflective of physical assets or processes.
+Visualizing assets in an immersive setting lets you experience the right data in the right context at the right time. Adding connectivity of your assets to operations data makes your assets more intelligent and reflective of physical assets or processes.
 
 ## Example scenario
 

@@ -6,8 +6,8 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 ## Begin the wind farm device simulation
 
 1. In Visual Studio, open *DeviceSimulator.sln*.
-1. Run the DeviceSimulator by pressing the **Play** button or **F5**.
-1. A console window opens displaying Turbine IDs and messages indicating connectivity and device retrieval and creation.
+1. Run the device simulator by selecting the **Play** button or **F5**.
+1. A console window opens that displays turbine IDs and messages indicating connectivity and device retrieval and creation.
 
    :::image type="content" source="../media/device-simulator.png" alt-text="Screenshot of the command window open and running the device simulator solution. Turbine IDs and connectivity messages are displayed.":::
 
@@ -17,7 +17,7 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 
 ## Launch the digital twin in Unity editor
 
-1. Press the **Play** button in the Unity Editor. The editor switches to the **Game** tab automatically and begins rendering your scene. The data in the UI panels reflect the data being generated from the `DeviceSimulator` application running.
+1. Select the **Play** button in the Unity editor. The editor switches to the **Game** tab automatically and begins rendering your scene. The data in the UI panels reflect the data being generated from the `DeviceSimulator` application running.
 
    :::image type="content" source="../media/simulated-turbine-telemetry.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running.":::
 
@@ -29,10 +29,10 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 
    :::image type="content" source="../media/simulated-turbine-event.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running and updated turbine data.":::
 
-1. Observe wind turbine performance data by selecting the scriptable object of interest. Select **Assets** > **ScriptableObjects** > **Turbine Site Data** > **T103** and examine the incoming data in the **Wind Turbine Data** section of the **Inspector** panel. You should see the **Time Interval, Wind Speed, Ambient Temperature, Rotor Speed and Power** fluctuate as new telemetry messages are consumed by the application.
+1. Observe wind turbine performance data by selecting the scriptable object of interest. Select **Assets** > **ScriptableObjects** > **Turbine Site Data** > **T103**. Examine the incoming data in the **Wind Turbine Data** section of the **Inspector** panel. You should see the **Time Interval**, **Wind Speed**, **Ambient Temperature**, **Rotor Speed**, and **Power** fluctuate as new telemetry messages are consumed by the application.
 
    :::image type="content" source="../media/wind-turbine-so.png" alt-text="Screenshot of the Unity Inspector with a turbine prefab selected.":::
 
 ## Stop the DeviceSimulator
 
-Stopping the simulator is important to ensure you avoid unnecessary charges to your Azure account. Press **Ctrl**+**C** in the command prompt window or the **Stop** button in Visual Studio.
+Stopping the simulator is important to ensure you avoid unnecessary charges to your Azure account. Press **Ctrl**+**C** in the command prompt window or Select **Stop** in Visual Studio.

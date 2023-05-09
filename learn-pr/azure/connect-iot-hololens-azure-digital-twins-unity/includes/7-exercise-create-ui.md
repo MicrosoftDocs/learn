@@ -23,7 +23,7 @@ Create Azure Digital Twins equipped User Interfaces (UIs) to provide a window in
 ## Customize colors for data ranges in UI
 
 1. Navigate to **Assets** > **ScriptableObjects** > **Telemetry Range Data** in the Project window.
-1. Select one of the four Telemetry ranges:
+1. Select one of the four telemetry ranges:
 
    - **RangeAmbientTemperature**
    - **RangePower**
@@ -34,7 +34,7 @@ Create Azure Digital Twins equipped User Interfaces (UIs) to provide a window in
 
 ## Position the UI in the main scene
 
-1. Select the **OperateSceneUI** Game Object in the hierarchy.
+1. Select the **OperateSceneUI** game object in the hierarchy.
 1. Position the UI in the scene as you would any other game object. Consider how the user is likely to view the turbine data and where you would expect the User Interface to be relative to the turbine assets.
 
    :::image type="content" source="../media/position-ui-expanded.png" alt-text="Screenshot of the Unity editor with the operate scene ui prefab running in the main scene. UI prefab is positioned closer to the terrain." lightbox="../media/position-ui.png":::
