@@ -2,9 +2,9 @@ Azure Key Vault is a secure secret, key, and certificate store. Azure Key Vault 
 
 In this unit, learn ways to use Azure Key Vault with YAML pipelines for security tokens and secrets management.
 
-Prerequisites:
+## Prerequisite
 
-- Azure Key Vault, Service Principal and YAML Pipeline. Follow the steps to create the resources: [Use Azure Key Vault to secure secrets](/training/modules/configure-secure-access-azure-repos-from-pipelines/5-use-azure-key-vault-secure-secrets)
+Azure Key Vault, Service Principal and YAML Pipeline. Follow the steps to create the resources: [Use Azure Key Vault to secure secrets](/training/modules/configure-secure-access-azure-repos-from-pipelines/5-use-azure-key-vault-secure-secrets)
 
 ## Reference Azure Key Vault in a variable group
 
