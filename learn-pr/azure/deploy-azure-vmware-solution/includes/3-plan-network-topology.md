@@ -36,7 +36,7 @@ The following table shows an example of how to carve up the /22 CIDR network add
 
 During Azure VMware Solution deployment, you can select an existing virtual network, create a new one, or leave the field blank.
 
-If you select an existing virtual network, you must designate a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit.If you create a brand-new virtual network, you must create a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit. When you either select a virtual network or create a new one, all the ExpressRoute configurations to peer the circuit into Azure are done for you while the environment is provisioned in Azure.
+If you select an existing virtual network, you must designate a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit. If you create a brand-new virtual network, you must create a GatewaySubnet for the Azure VMware Solution ExpressRoute circuit. When you either select a virtual network or create a new one, all the ExpressRoute configurations to peer the circuit into Azure are done for you while the environment is provisioned in Azure.
 
 If you leave the virtual network blank, you'll have to create a virtual network gateway and peer the ExpressRoute circuit to Azure after Azure VMware Solution finishes deployment.
 
