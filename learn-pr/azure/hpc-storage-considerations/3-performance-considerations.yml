@@ -6,7 +6,7 @@ metadata:
   description: A discussion of the five performance factors that affect storage and how to determine which tools to use to determine your HPC workload's performance requirements.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

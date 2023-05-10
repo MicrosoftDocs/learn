@@ -6,7 +6,7 @@ metadata:
   description: A discussion of how data is accessed across wide area networks and the various approaches you can take to move data to and from Azure.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

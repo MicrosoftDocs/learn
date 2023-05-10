@@ -5,7 +5,7 @@ metadata:
   description: We discuss various factors that influence high-performance computing (HPC) storage selection in Azure. We review NFS, file access, directory services, parallel file systems, and hybrid file-access considerations.
   ms.date: 05/10/2023
   author: scjescho
-  ms.author: scjescho
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Understand factors that influence HPC storage selection in Azure
