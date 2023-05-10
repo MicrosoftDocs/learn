@@ -2,13 +2,13 @@ There are some key NFS concepts we want to discuss in the context of choosing yo
 
 ## NFS considerations ##
 
-There are two main versions of the NFS protocol: NFSv3 and NFSv4.*x* (v4.1 and v4.2). The full scope of the differences between these two versions is outside the goals of this module. But there are a handful of issues related to authentication and authorization that we identify here. We won't discuss the history of the two protocols or why there are two. We'll just say that many users are still running NFSv3 in their environments.
+There are two main versions of the NFS protocol: NFSv3 and NFSv4.*x* (v4.1 and v4.2). The full scope of the differences between these two versions is outside the goals of this module. But there are a handful of issues related to authentication and authorization that we identify here. We don't need to discuss the history of the two protocols or why there are two. It's enough to know that many users are still running NFSv3 in their environments.
 
-Let's start by discussing some topics specific to the use of NFSv3.
+Let's start with considerations that are specific to the use of NFSv3.
 
 ### NFSv3 and groups ###
 
-NFSv3 is a simple file-system protocol that passes API requests to NFS clients and servers. We mentioned earlier that a user is represented by a UID and has a primary group GID association. We also mentioned that a user can be associated with a larger number of groups. For the purposes of NFS, these group assignments are known as *auxiliary groups*. The UID and GID information is passed with requests, which the NFS server uses to determine the appropriate level of access.
+NFSv3 is a simple file-system protocol that passes API requests to NFS clients and servers. We mentioned earlier that a UID represents a user and that users have a primary group GID association. We also mentioned that a user can be associated with a larger number of groups. For the purposes of NFS, these group assignments are known as *auxiliary groups*. The UID and GID information is passed with requests, which the NFS server uses to determine the appropriate level of access.
 
 NFSv3 has a limit on the total number of GID values it passes. NFSv3 supports the passing of only 16 auxiliary groups for any given UID. If you're using more than 16 group assignments in meaningful ways (such as fine-grained access management), this limitation might affect you. NAS vendors like NetApp have added an extension to the NFS protocol that supports the communication of all group mappings. This extension is known as *extended group* support. If you're assessing HPC storage and are using large numbers of GID assignments, you should verify whether the proposed solution supports this capability.
 
@@ -46,7 +46,7 @@ NFSv4.*x* introduces some key improvements to NFS. Let's focus on the main impro
 
 NFSv4 introduced full support for the use of Kerberos for authentication of users and encryption of all NFS traffic. There was an attempt to integrate Kerberos with NFSv3, but because of the use of NLM/NSM and other external protocols, only data payloads are encrypted.
 
-In NFSv3, all access is assumed to be trusted unless it's explicitly blocked by export policies. By using Kerberos, you can now authenticate based on trusted machines.
+Unless explicitly blocked by export policies, all access in NFSv3 is trusted. By using Kerberos, you can now authenticate based on trusted machines.
 
 Encryption of all NFS traffic is supported. You can encrypt all traffic from NFS client to NFS server (rather than just on specific network segments).
 
@@ -56,7 +56,7 @@ A key consideration is that not all NFSv4-compatible services support Kerberos. 
 
 ### NFSv4 and network ports ###
 
-One advantage of NFSv4 over NFSv3 is that NFSv4 uses a single TCP port (port 2049) for all traffic. If you have an NFSv4 environment in an Azure virtual network or located in your datacenter and need to provide access between firewalls, it's easier to support NFSv4.
+One advantage of NFSv4 over NFSv3 is that NFSv4 uses a single TCP port (port 2049) for all traffic. If you have an NFSv4 environment in an Azure virtual network or located in your datacenter, it's easier to provide access between firewalls when you support NFSv4.
 
 ### NFSv4 and ACLs ###
 
