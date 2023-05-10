@@ -2,7 +2,7 @@
 uid: learn.wwl.ingest-dataflows-gen2-fabric
 metadata:
   title: Ingest Data with Dataflows Gen2 in Microsoft Fabric
-  description: "Ingest Data with Dataflows Gen2 in Microsoft Fabric"
+  description: "Data ingestion is crucial in analytics. Microsoft Fabric's Data Factory offers Dataflows (Gen2) for visually creating multi-step data ingestion and transformation using Power Query Online."
   ms.date: 05/10/2023
   author: wwlpublish
   ms.author: anrudduc
