@@ -39,8 +39,6 @@ For added assurance, when you use Azure Key Vault, you can import or generate ke
  -  The toolset includes attestation from Thales that the Azure Key Vault security world was also generated on a genuine HSM manufactured by Thales.
  -  Microsoft uses separate KEKs and separate security worlds in each geographical region. This separation ensures that your key can be used only in data centers in the region in which you encrypted it. For example, a key from a European customer cannot be used in data centers in North American or Asia.
 
-If you have access to Thales HSM, smartcards, and support software you can walk through an exercise detailed at the link above. It is suggested to review the steps even if you cannot perform the exercise.
-
-For more information,
+For more information,<br>
 
 [Implementing bring your own key for Azure Key Vault](/azure/key-vault/key-vault-hsm-protected-keys).
