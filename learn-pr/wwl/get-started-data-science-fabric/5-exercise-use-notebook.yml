@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-science-fabric.exercise-use-notebook
+title: Exercise - Train and track a model in Microsoft Fabric
+metadata:
+  title: Exercise - Train and track a model in Microsoft Fabric
+  description: "Exercise - Train and track a model in Microsoft Fabric"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+durationInMinutes: 45
+content: |
+  [!include[](includes/5-exercise-use-notebook.md)]
