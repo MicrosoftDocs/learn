@@ -1,6 +1,6 @@
 In Microsoft Fabric, you can create a Dataflow (Gen2) in the Data Factory workload or Power BI workspace, or directly in the lakehouse. Since our scenario is focused on data ingestion, let's look at the **Data Factory** workload experience. Dataflows (Gen2) use Power Query Online to visualize transformations. See an overview of the interface:
 
-![Overview of Power Query Online interface](../media/power-query-online-overview.png)
+![Screenshot of the Power Query Online interface.](../media/power-query-online-overview.png)
 
 ### 1. Power Query ribbon
 
@@ -33,11 +33,11 @@ The Query Settings pane primarily includes **Applied Steps**. Each transformatio
 
 While this visual interface is helpful, you can also view the M code through **Advanced editor**.
 
-![Advanced editor with sample code](../media/power-query-advanced-editor.png)
+![Screenshot of the advanced editor with sample code](../media/power-query-advanced-editor.png)
 
 In the Query settings pane, you can see a **Data Destination** field where you can set the Lakehouse as your destination.
 
 > [!TIP]
 > If made available, data analysts can also connect to the dataflow through Power BI Desktop.
 >
-> ![Power BI Desktop Get Data Connectors window with Power Platform selected including Power BI datasets, Lakehouses, Dataflows, and more.](../media/power-bi-desktop-dataflow-connectors.png)
+> ![Screenshot of Power BI Desktop Get Data Connectors window with Power Platform selected including Power BI datasets, Lakehouses, Dataflows, and more.](../media/power-bi-desktop-dataflow-connectors.png)
