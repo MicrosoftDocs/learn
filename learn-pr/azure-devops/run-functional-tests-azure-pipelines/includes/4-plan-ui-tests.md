@@ -21,7 +21,7 @@ Amita takes a deep breath.
 Amita opens a Windows laptop and launches Google Chrome. She goes to the web app and verifies that the home page opens.
 
 > [!TIP]
-> If you want to follow along with Amita's manual tests, you can run a local copy of the Space Game website. In the Visual Studio Code terminal, run the following commands and then click the link that looks like `Now listening on: http://localhost:5000`.
+> If you want to follow along with Amita's manual tests, you can run a local copy of the Space Game website. In the Visual Studio Code terminal run the following commands and then click the link that looks like `Now listening on: http://localhost:5000`.
 >
 > ```
 > git fetch upstream selenium
