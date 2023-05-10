@@ -46,7 +46,7 @@ There's also a *default dataset* automatically created for you in Fabric. It inh
 New tables in the Lakehouse are automatically added to the default dataset. Users can also manually select tables or views from the warehouse they want included in the model for more flexibility. Objects that are in the default dataset are created as a layout in the model view.
 
 > [!NOTE]
-> Default Datasets follow the current limitations for datasets in Power BI. See [Default Power BI datasets](https://learn.microsoft.com/en-us/fabric/data-warehouse/limitations) for more information.
+> Default Datasets follow the current limitations for datasets in Power BI. See [Default Power BI datasets](https://learn.microsoft.com/fabric/data-warehouse/limitations) for more information.
 
 ## Visualize data
 
