@@ -1,6 +1,10 @@
-In this unit, you'll learn how to configure pipeline access to credential secrets using Azure DevOps and Azure Key Vault. Securing access to sensitive information, such as passwords and API keys, is essential to DevOps. By following the steps outlined in this unit, you can keep your project secure and protected.
+Securing access to sensitive information, such as passwords and API keys, is essential to DevOps. 
 
-## Step 1: Create your Azure Key Vault and Service Principal
+In this unit, learn how to configure pipeline access to credential secrets using Azure DevOps and Azure Key Vault.
+
+By following the steps outlined in this unit, you can keep your project secure and protected.
+
+## Create an Azure Key Vault and Service Principal
 
 The first step in securing access to credential secrets is to store them in Azure Key Vault. This service allows you to store and manage secrets, keys, and certificates securely and provides you with the ability to control access to these secrets.
 
@@ -14,7 +18,7 @@ The first step in securing access to credential secrets is to store them in Azur
 4. Assign the service principal to the Key Vault following [this guide](https://learn.microsoft.com/azure/key-vault/general/assign-access-policy-portal).
 5. Once you've created your Key Vault, you need to store the secrets that you want to use in your pipeline. You can create secrets directly in your Key Vault, or from the Azure DevOps.
 
-## Step 2: Create secrets in Azure Key Vault
+## Create secrets in Azure Key Vault
 
 1. In the Azure portal, go to the Azure Key Vault that you created in step 1.
 2. Open the "Secrets" option and click on the "Generate/Import" button.
@@ -22,7 +26,7 @@ The first step in securing access to credential secrets is to store them in Azur
     ![Screenshot of Azure Key Vault showing how to add a new secret.](../media/new-secret-azure-key-vault.png)
 4. Once you've created your secret, you can use it in your pipeline.
 
-## Step 3: Create secrets in Azure DevOps
+## Create secrets in Azure DevOps
 
 1. In Azure DevOps, go to the Azure DevOps organization and project that you want to use.
 2. Click on Library and then open your Variable group.
@@ -39,7 +43,7 @@ The first step in securing access to credential secrets is to store them in Azur
 6. Select the secret that you want to use in your pipeline and click OK to add it to your Variable group.
 7. Save the Variable group.
 
-## Step 4: Grant Azure DevOps Access to Key Vault
+## Grant Azure DevOps Access to Key Vault
 
 Now that you've stored your secrets in Azure Key Vault, you need to grant Azure DevOps access to the Key Vault so that your pipeline can retrieve the secrets.
 
@@ -51,7 +55,7 @@ Now that you've stored your secrets in Azure Key Vault, you need to grant Azure 
 6. Add a new policy, and then select the Azure DevOps service connection that you created in step 4.
 7. Assign the "Get" and "List" permissions to the service connection.
 
-## Step 5: Use Secrets in Your Pipeline
+## Use secrets in your pipeline
 
 Once you have granted Azure DevOps access to your Key Vault, you can now use the secrets in your pipeline.
 

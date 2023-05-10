@@ -14,7 +14,7 @@ Secure Files help to maintain the security and privacy of sensitive files, reduc
 
 In this unit, you go through the steps to configure Secure Files in Azure DevOps and demonstrate how to access these files in your pipelines.
 
-## Step 1: Creating a Secure File
+## Create a Secure File
 
 1. Go to the Azure DevOps project where you want to store the secure file.
 2. Navigate to the Library tab in the Pipelines section.
@@ -24,7 +24,7 @@ In this unit, you go through the steps to configure Secure Files in Azure DevOps
 
     ![Screenshot of Azure DevOps project Library showing the steps to upload Secure Files.](../media/secure-file-upload.png)
 
-## Step 2: Adding the Secure File to the pipeline
+## Add the secure file to the pipeline
 
 1. Go to your pipeline where you want to use the Secure File.
 2. Click to edit your existing pipeline, or create a new pipeline.

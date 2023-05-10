@@ -1,6 +1,6 @@
 In this unit, learn how to configure self-hosted agent identities using Managed Identities. These features provide a secure alternative to personal access tokens (PATs) for authentication and authorization in Azure DevOps.
 
-## Understanding agent identities
+## Understand agent identities
 
 An agent identity is a security principal that represents the agent in Azure DevOps. It's used to authenticate the agent with Azure DevOps and determine the agent's permissions and access levels.
 
@@ -42,7 +42,7 @@ Create your Managed Identity in Azure and assign the appropriate permissions to 
 
     ![Screenshot of security tab in Azure DevOps adding the new managed identity DevOpsSecurity to the security group.](../media/add-managed-identity-security-group.png)
 
-## Configuring agent identities
+## Configure agent identities
 
 1. In Azure DevOps, navigate to your project and select Project settings.
 2. Under Pipelines, click Agent pools.

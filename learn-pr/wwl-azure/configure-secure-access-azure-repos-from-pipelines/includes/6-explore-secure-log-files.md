@@ -1,6 +1,6 @@
 This unit explores how to access and secure log files in Azure Pipelines and secure them from displaying secrets in plain text.
 
-## Accessing Log Files in Azure Pipelines
+## Access log files in Azure Pipelines
 
 The job details page provides detailed information about the pipeline run, including the tasks executed, their status, and any output generated.
 
@@ -15,7 +15,7 @@ You can access the logs for a specific pipeline run by following these steps:
 
 You can also access the logs for a specific task by clicking on the task name, or download logs for the entire job by clicking on the "Download logs" link.
 
-## Securing Log Files in Azure Pipelines
+## Secure log files
 
 Securing log files in Azure Pipelines is crucial to ensure that sensitive information, such as secrets and credentials, isn't displayed in plain text. Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
 
