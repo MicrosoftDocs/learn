@@ -14,7 +14,7 @@ df = spark.read.load('Files/mydata.csv', format='csv', header=True)
 df.write.format("delta").saveAsTable("mytable")
 ```
 
-The code specifies that the table should be saved in delta format with a specified table name. The data for the table is saved in Parquet files (regardless of the format of the source file you loaded into the dataframe) in the **Tables** storage area in the lakehouse, along with a **_delta_log** folder containing the transaction logs for the table. The table will listed in the **Tables** folder for the lakehouse in the **Data explorer** pane.
+The code specifies that the table should be saved in delta format with a specified table name. The data for the table is saved in Parquet files (regardless of the format of the source file you loaded into the dataframe) in the **Tables** storage area in the lakehouse, along with a **_delta_log** folder containing the transaction logs for the table. The table will be listed in the **Tables** folder for the lakehouse in the **Data explorer** pane.
 
 ## *Managed* vs *external* tables
 
