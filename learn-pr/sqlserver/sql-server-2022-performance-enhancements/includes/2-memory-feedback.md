@@ -1,6 +1,6 @@
 Prior to SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query, and could result in some cases of different feedback adjustments that could lead to the query processor disabling memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method to look at memory grants over several executions before using a memory grant feedback.
 
-Additionally, prior to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan was evicted, memory grant feedback would have to be recalculated on new query executions. In SQL Server 2022, if the Query Store is enabled, memory grant feedback is persisted in the Query Store. You can view memory grant feedback persistance using the **sys.query_store_plan_feedback** catalog view.
+Additionally, prior to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan was evicted, memory grant feedback would have to be recalculated on new query executions. In SQL Server 2022, if the Query Store is enabled, memory grant feedback is persisted in the Query Store. You can view memory grant feedback persistence using the **sys.query_store_plan_feedback** catalog view.
 
 ## Batch mode memory grant feedback
 
@@ -19,11 +19,11 @@ GROUP BY hash_unique_bigint_id
 ORDER BY MAX(max_elapsed_time_microsec) DESC;
 ```
 
-:::image type="content" source="../media/memory-grant-high-spills.png" alt-text="Screenshot of an batch mode adaptive memory grant feedback query execution with high spills.":::
+:::image type="content" source="../media/memory-grant-high-spills.png" alt-text="Screenshot of a batch mode adaptive memory grant feedback query execution with high spills.":::
 
 With memory grant feedback enabled for the second execution, the duration is 1 second (down from 88 seconds). The spills are removed entirely, and the grant is higher:
 
-:::image type="content" source="../media/memory-grant-no-spills.png" alt-text="Screenshot of an batch mode adaptive memory grant feedback query execution with no spills.":::
+:::image type="content" source="../media/memory-grant-no-spills.png" alt-text="Screenshot of a batch mode adaptive memory grant feedback query execution with no spills.":::
 
 ## Memory grant feedback sizing
 
@@ -57,7 +57,7 @@ ALTER DATABASE [<database name>] SET COMPATIBILITY_LEVEL = 150;
 
 As with batch mode memory grant feedback, row mode memory grant feedback activity is visible using the `memory_grant_updated_by_feedback` extended event.
 
-Memory grant feedback doesn't require the Query Store. However, the persistance improvements introduced in SQL Server 2022 require the Query Store to be enabled for the database and in a `read write` state.
+Memory grant feedback doesn't require the Query Store. However, the persistence improvements introduced in SQL Server 2022 require the Query Store to be enabled for the database and in a `read write` state.
 
 Starting with row mode memory grant feedback, two new query plan attributes is shown for actual post-execution plans: `IsMemoryGrantFeedbackAdjusted` and `LastRequestedMemory`, which are added to the `MemoryGrantInfo` query plan XML element.
 
