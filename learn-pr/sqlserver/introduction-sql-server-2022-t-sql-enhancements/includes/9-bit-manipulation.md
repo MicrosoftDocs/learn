@@ -1,10 +1,10 @@
-SQL Server 2022 introduces new functions for bit manipulation, making it easier to work with binary data. Common scenarios that benefit from bit manipulation could be IOT environments, cryptographic applications, data compression, and network protocols.
+SQL Server 2022 introduces new functions for bit manipulation, making it easier to work with binary data. Common scenarios that benefit from bit manipulation could be Internet of Things (IoT) environments, cryptographic applications, data compression, and network protocols.
 
 These functions provide a powerful and efficient way to manage binary data, helping to identify issues and make better decisions across different situations.
 
 ## GET_BIT
 
-The `GET_BIT` function retrieves the value of a specific bit in a binary value. It's useful when accessing individual bits in binary data structures, such as sensor statuses in IOT systems.
+The `GET_BIT` function retrieves the value of a specific bit in a binary value. It's useful when accessing individual bits in binary data structures, such as sensor statuses in IoT systems.
 
 ## BIT_COUNT
 
@@ -16,7 +16,7 @@ The `LEFT_SHIFT` and `RIGHT_SHIFT` functions shift the bits of a binary value to
 
 ## SET_BIT
 
-The `SET_BIT` function sets the value of a specific bit in a binary value. It's useful for modifying particular bits in binary data structures, such as simulating sensor issues or toggling between different states in an IOT environment.
+The `SET_BIT` function sets the value of a specific bit in a binary value. It's useful for modifying particular bits in binary data structures, such as simulating sensor issues or toggling between different states in an IoT environment.
 
 ## Simplify bit manipulation is SQL queries with GET_BIT and BIT_COUNT
 
@@ -29,7 +29,7 @@ DeviceId | CollectionDateTime | SensorStatus
 795159 | 2/11/2023 12:51:48.592 | 0xFD
 948705 | 2/11/2023 12:51:56.321 | 0x05
 
-For this example, let's create the sample database, table and populate it. Obviously in a real world scenario, the database would already exist and automatically populated by your IoT Devices. *Always make sure you use a test SQL Server to run these examples and don't run them on a production server*.
+For this example, let's create the sample database, table and populate it. Obviously in a real world scenario, the database would already exist and automatically populated by your IoT devices. *Always make sure you use a test SQL Server to run these examples and don't run them on a production server*.
 
 ```sql
 CREATE DATABASE SQL2022Workshop_BitDB;
@@ -70,7 +70,7 @@ WHERE SensorStatus > 0x00
 Let's cleanup the sample database we created.
 
 ```sql
-USE TempDB
+USE tempdb;
 GO
 DROP DATABASE SQL2022Workshop_BitDB;
 GO

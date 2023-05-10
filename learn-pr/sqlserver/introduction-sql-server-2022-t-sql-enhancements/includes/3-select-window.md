@@ -11,7 +11,7 @@ Imagine you're a database developer working on an e-commerce application. You ha
 - The total sales per product.
 - A moving average for the last three sales.
 - The sum of sales for each product over the last three orders.
-- A Running total for both products on that date.
+- A running total for both products on that date.
 
 Using the `SELECT` statement with the `WINDOW` clause, you can easily achieve this report with a single query. Here's an example of how to do this query:
 

@@ -6,7 +6,7 @@ The JSON_OBJECT function constructs a JSON object by specifying key-value pairs.
 
 ## ISJSON
 
-The ISJSON function checks if the input string contains valid JSON, returning 1 if true and 0 if false. In SQL Server 2022, it was enhanced to support json_type_constraint, allowing you to check for the JSON types of VALUE, ARRAY, OBJECT or SCALAR.
+The ISJSON function checks if the input string contains valid JSON, returning 1 if true and 0 if false. In SQL Server 2022, it was enhanced to support `json_type_constraint`, allowing you to check for the JSON types of `VALUE`, `ARRAY`, `OBJECT` or `SCALAR`.
 
 ## JSON_PATH_EXISTS
 
@@ -18,7 +18,7 @@ The JSON_ARRAY function constructs a JSON array by specifying elements. It simpl
 
 ## Simplify JSON processing with JSON_OBJECT and JSON_PATH_EXISTS
 
-Imagine you're a DBA for a large financial institution.  Your IT department installed a monitoring software for the whole network.  The software created a database called *CollectionDB*. To monitor your SQL Servers' query statistics, this database has a table called *QueryRequestStats* with the columns *CollectionTime*, *ServerName*, *session_id* and *QueryStats*.  The *QueryStats* column needs to be in JSON format. You must create the collection script that populates this table with the query text, plan and general statistics every 5 minutes. To minimize the overhead, you decide to only collect nonsleeping and nonbackground. Additionally, your team asks for a query against this table that would return the top 10 requests by cpu usage that have a query text populated for the collection date time of `2023-03-29 12:54:00.000`. Run the following queries in SQL Server Management Studio (SSMS) to save and retrieve this data.
+Imagine you're a DBA for a large financial institution.  Your IT department installed a monitoring software for the whole network.  The software created a database called *CollectionDB*. To monitor your SQL Servers' query statistics, this database has a table called *QueryRequestStats* with the columns *CollectionTime*, *ServerName*, *session_id* and *QueryStats*.  The *QueryStats* column needs to be in JSON format. You must create the collection script that populates this table with the query text, plan and general statistics every 5 minutes. To minimize the overhead, you decide to only collect nonsleeping and nonbackground. Additionally, your team asks for a query against this table, that would return the top 10 requests by CPU usage that have a query text populated for the collection date time of `2023-03-29 12:54:00.000`. Run the following queries in SQL Server Management Studio (SSMS) to save and retrieve this data.
 
 ```sql
 -- Query to collect data, run it every 5 minutes
@@ -48,7 +48,7 @@ WHERE er.status NOT IN  ('sleeping', 'background')
 	AND session_id > 50
 	AND session_id != @@SPID
 
--- Query to return the top 10 requests by cpu usage that have a query text for the collection time `2023-03-29 12:54:00.000`
+-- Query to return the top 10 requests by CPU usage that have a query text for the collection time `2023-03-29 12:54:00.000`
 SELECT  *
 FROM CollectionDB.dbo.QueryRequestStats
 WHERE JSON_PATH_EXISTS(QueryStats, '$.sql_text.text') = 1

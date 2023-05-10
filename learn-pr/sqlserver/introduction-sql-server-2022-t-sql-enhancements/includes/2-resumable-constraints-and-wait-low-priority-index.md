@@ -1,8 +1,8 @@
-New enhancements have been added to SQL Server 2022 to help control index creation and large table unique and primary key constraints creation. These improvements include extending the WAIT_AT_LOW_PRIORITY clause to the CREATE INDEX command and introducing the resumable operation feature for adding table constraints using the ALTER TABLE ADD CONSTRAINT command. By incorporating these features, we can better manage lock contention, minimize how the operations affect other queries and transactions, and ultimately enhance overall database performance and maintainability.
+New enhancements have been added to SQL Server 2022 to help control the creation of indexes, and unique and primary key constraints for large tables. These improvements include extending the `WAIT_AT_LOW_PRIORITY` clause to the `CREATE INDEX` command, and introducing the resumable operation feature for adding table constraints, using the `ALTER TABLE ADD CONSTRAINT` command. By incorporating these features, we can better manage lock contention, minimize how the operations affect other queries and transactions, and ultimately enhance overall database performance and maintainability.
 
-## Resumable Add Table Constraints
+## Resumable add table constraints
 
-The resumable add table constraint feature in SQL Server 2022 provides enhanced flexibility and control over constraint operations on large tables by allowing you to pause and resume an `ALTER TABLE ADD CONSTRAINT` operation to accommodate maintenance windows, recover from failures such as database failovers or insufficient disk space, and perform constraint operations on large tables even with limited log size availability.
+The resumable add table constraint feature in SQL Server 2022 provides enhanced flexibility and control over constraint operations on large tables, by allowing you to pause and resume an `ALTER TABLE ADD CONSTRAINT` operation to accommodate maintenance windows, recover from failures such as database failovers or insufficient disk space, and perform constraint operations on large tables, even with limited log size availability.
 
 ## Constraint creation flexibility using the RESUMABLE predicate
 
@@ -12,7 +12,7 @@ With the resumable add table constraints feature in SQL Server 2022, you can ach
 
 ```sql
 -- Example 1: Add a PRIMARY KEY constraint with resumable operation and a MAX_DURATION of 120 minutes
-ALTER TABLE [AdventureWorks2012].[Sales].[SalesOrderDetail]
+ALTER TABLE [AdventureWorks2022].[Sales].[SalesOrderDetail]
 ADD CONSTRAINT [PK_SalesOrderDetail_SalesOrderID_SalesOrderDetailID] 
 	PRIMARY KEY (SalesOrderID, SalesOrderDetailID)
 WITH (ONLINE = ON, RESUMABLE = ON, MAX_DURATION = 120);
@@ -27,13 +27,13 @@ Assume that it's late in the day and the *PK_SalesOrderDetail_SalesOrderID_Sales
 SELECT sql_text, state_desc, percent_complete FROM sys.index_resumable_operations;
 
 -- To pause the constraint run the following command
-ALTER INDEX ALL ON [AdventureWorks2012].[Sales].[SalesOrderDetail] PAUSE
+ALTER INDEX ALL ON [AdventureWorks2012].[Sales].[SalesOrderDetail] PAUSE;
 ```
 
 The next morning, to continue the constraint creation, you run the following command:
 
 ```sql
-ALTER INDEX ALL ON [AdventureWorks2012].[Sales].[SalesOrderDetail] RESUME
+ALTER INDEX ALL ON [AdventureWorks2012].[Sales].[SalesOrderDetail] RESUME;
 ```
 
 ## WAIT_AT_LOW_PRIORITY
@@ -54,8 +54,8 @@ WITH (ONLINE = ON (WAIT_AT_LOW_PRIORITY (MAX_DURATION = 10 MINUTES, ABORT_AFTER_
 
 ```sql
 -- Example 2: Terminate blocking transactions after waiting 10 minutes for low priority locks
-CREATE NONCLUSTERED INDEX idx_CustomerID_OrderDate ON [AdventureWorks2012].[Sales].[SalesOrderHeader] (CustomerID, OrderDate)
+CREATE NONCLUSTERED INDEX idx_CustomerID_OrderDate ON [AdventureWorks2022].[Sales].[SalesOrderHeader] (CustomerID, OrderDate)
 WITH (ONLINE = ON (WAIT_AT_LOW_PRIORITY (MAX_DURATION = 10 MINUTES, ABORT_AFTER_WAIT = BLOCKERS)));
 ```
 
-SQL Server 2022 introduces the WAIT_AT_LOW_PRIORITY option to the CREATE INDEX statement and resumable add table constraints feature, enhancing control over database operations. DBAs can manage lock contention, reduce the load on resources, and boost performance and maintainability. These improvements highlight a commitment to optimizing SQL Server for modern database administrators.
+SQL Server 2022 introduces the `WAIT_AT_LOW_PRIORITY` option to the `CREATE INDEX` statement and resumable add table constraints feature, enhancing control over database operations. DBAs can manage lock contention, reduce the load on resources, and boost performance and maintainability. These improvements highlight a commitment to optimizing SQL Server for modern database administrators.

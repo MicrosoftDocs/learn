@@ -19,11 +19,11 @@ Imagine you're a database developer working on a new e-commerce application. You
 
 - The *UnitPriceDiscount* is distinct from *zero*, or in other words that it has a discount.
 - The subcategory is *Road Bikes*.
-- The Order date was on *July 31, 2013*
+- The Order date was on *July 31, 2013*.
 - The bike was color *Yellow*.
 - The line total is greater than *15,000*.
 
-Additionally, using the previous definition, you also want to find all the rows where the Discount is 10%. Do note that not all orders have a discount so the discount field could be *NULL*.
+Additionally, using the previous definition, you also want to find all the rows where the Discount is 10 percent. Not all orders have a discount, so the discount field could be *NULL*.
 
 Using the `IS [NOT] DISTINCT FROM` predicate, you can quickly and easily write queries to achieve these goals. Run the following queries in SQL Server Management Studio (SSMS) to find the desired data:
 
@@ -65,7 +65,7 @@ SELECT SOD.SalesOrderID
       ,SOD.LineTotal
 FROM AdventureWorks2012.Sales.SalesOrderDetail SOD
 	JOIN AdventureWorks2012.Sales.SalesOrderHeader SOH ON SOD.SalesOrderID = SOH.SalesOrderID
-	JOIN  AdventureWorks2012.Production.Product P ON P.ProductID = SOD.ProductID
+	JOIN  AdventureWorks2022.Production.Product P ON P.ProductID = SOD.ProductID
 	JOIN  AdventureWorks2012.Production.ProductSubcategory PSC ON P.ProductSubcategoryID = PSC.ProductSubcategoryID
 WHERE Color = 'Yellow'
 	AND UnitPriceDiscount IS NOT DISTINCT FROM 0.10

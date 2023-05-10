@@ -2,15 +2,15 @@ In SQL Server 2022, new features have been added to several of our string manipu
 
 ## LTRIM, RTRIM, and TRIM
 
-In SQL Server 2022, LTRIM and RTRIM functions have been enhanced with an optional characters parameter that allows you to specify a set of characters to be removed from the beginning or end of the string. The TRIM function has also been enhanced to remove specified characters from the start, end or both of a string using the LEADING, TRAILING or BOTH keywords.
+In SQL Server 2022, LTRIM and RTRIM functions have been enhanced with an optional *characters* parameter that allows you to specify a set of characters to be removed from the beginning or end of the string. The TRIM function has also been enhanced to remove specified characters from the start, end or both of a string using the LEADING, TRAILING or BOTH keywords.
 
 ## STRING_SPLIT
 
-SQL Server 2022 adds a third optional ordinal parameter to the end of the STRING_SPLIT function, enabling the option to create a 1-based index values of each substring's position in the input string. By default the function has the value of zero or disabled, to enable it, set it to the value of 1, or enabled. The output rows might be in any order since the order isn't guaranteed to match the order of the original string.
+SQL Server 2022 adds a third optional *ordinal* parameter to the end of the STRING_SPLIT function, enabling the option to create a 1-based index array of values for each substring's position in the input string. By default, the function has the value of zero or *disabled*. To enable it, set it to the value of 1, or *enabled*. The output rows might be in any order, since the sort order isn't guaranteed to match the order of the original string.
 
 ## Easily remove prefix and postfix characters using LTRIM, RTRIM and TRIM
 
-The marketing team needs to send some fliers to our customers for our latest holiday sale, but would like to know if any of them are using a P.O. Box. They ask our DBA team to list our customers whose address is a P.O. box, and just return the name of the customer name, the postal code and the Number. When you use the new capability of LTRIM, RTRIM and TRIM you should be able to easily return the requested data.
+The marketing team needs to send some fliers to our customers for our latest holiday sale, but would like to know if any of them are using a P.O. Box. They ask our DBA team to list our customers whose address is a P.O. Box, and return the name of the customer name, the postal code and the number. When you use the new capability of LTRIM, RTRIM and TRIM you should be able to easily return the requested data.
 
 ```sql
 SELECT P.FirstName + ' ' + ISNULL(P.MiddleName,'') + ' ' + P.LastName AS Name

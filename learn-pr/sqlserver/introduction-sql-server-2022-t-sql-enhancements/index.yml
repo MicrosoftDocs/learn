@@ -17,7 +17,7 @@ abstract: |
   - Utilize new functions and capabilities to optimize database performance and maintainability.
   - Adapt to the evolving needs of modern database administrators and developers.
 prerequisites: |
-  - SQL Server 2022
+  - SQL Server 2022.
   - Basic working knowledge of SQL Server and query processing.
   - Fundamental knowledge of the Transact-SQL (T-SQL) language.
   - Familiarity with SQL Server functions and operators.
