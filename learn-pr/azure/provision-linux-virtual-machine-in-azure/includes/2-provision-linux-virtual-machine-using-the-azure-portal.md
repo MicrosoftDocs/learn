@@ -1,16 +1,20 @@
 To access your Azure subscription by using the Azure portal, you must first sign in with an authorized account. After you're successfully authenticated, the Azure portal's home page displays. This page provides links to core services, recently accessed and favorite resources, built-in management tools, and online documentation. It also serves as a convenient entry point into your Azure environment.
 
-If the functionality you're looking for isn't present on the home page, you can locate it by using either the portal menu or the global search textbox. Both options are available on every portal page to which you navigate. The portal menu simplifies accessing commonly used features and resource types. It's available in the flyout and docked mode. The global search identifies matches for the text you enter across all services, resources, resource groups, marketplace offers, Azure Active Directory (Azure AD) objects, and online documentation. By default, the global search box displays the text Search resources, services, and docs (G+/).
+If the functionality you're looking for isn't present on the home page, you can locate it by using either the portal menu or the global search textbox. Both options are available on every portal page to which you navigate.
+
+- The portal menu simplifies accessing commonly used features and resource types, and it's available in the flyout and docked mode. 
+
+- The global search identifies matches for the text you enter across all services, resources, resource groups, marketplace offers, Azure Active Directory (Azure AD) objects, and online documentation. (By default, the global search box displays the text "Search resources, services, and docs (G+/)".)
+
+Because the global search box offers a more comprehensive and consistent behavior, all procedures covered in this module will use this option.
 
 ![Screenshot of the portal menu and the global search textbox](../media/azure-portal-search-textbox.png)
 
-> [!NOTE]
-> Because the global search box offers a more comprehensive and consistent behavior, all procedures covered in this module will use this option.
-
-> [!NOTE]
-> For more information about the Azure portal interface, refer to [What is the Azure portal?](/azure/azure-portal/azure-portal-overview)
-
 To navigate to the portal page dedicated to the provisioning and management of Azure VMs, in the global search box, start entering the phrase virtual machines, which designates the Azure resource type you intend to provision. The global search box displays a list of search results even before you've entered the entire phrase. In the search results list, in the Services section, locate the Virtual machines entry. Selecting this entry will automatically open the Virtual machines page of the portal.
+
+> [!NOTE]
+> 
+> For more information about the Azure portal interface, refer to [What is the Azure portal?](/azure/azure-portal/azure-portal-overview)
 
 ## Deploy a Linux VM by using the Azure portal
 
@@ -32,10 +36,8 @@ On the Virtual machines page, select the **+ Create** link. This step is the sam
 The settings you assign at this stage will determine the properties of the deployed resource. Although you can modify most of the settings after deployment, there are some settings that are immutable. The immutable settings include the resource name and the operating system (OS) image, so it's important to carefully consider their assignments. In addition, some of the modifiable settings might impact the resource availability if changed after deployment. For example, you can change the resource group of an online Azure VM, but moving it across virtual networks, subscriptions, and regions (although possible) will result in downtime. Similarly, changing the Azure VM size, while straightforward and commonly done, requires an OS restart. 
 
 > [!NOTE]
-> Microsoft doesn't support moving resources across subscriptions associated with different Azure AD tenants.
-
-> [!NOTE]
-> Provisioning of multiple resources that are part of a larger deployment should follow a planning stage that determines their optimal configuration, including a naming convention.
+> 
+> Microsoft doesn't support moving resources across subscriptions associated with different Azure AD tenants, and provisioning multiple resources that are part of a larger deployment should follow a planning stage that determines their optimal configuration, including a naming convention.
 
 The settings displayed by the Azure VM provisioning wizard in the Azure portal are grouped into the following pages:
 
@@ -65,6 +67,7 @@ The settings on this page configure the target subscription (either an existing 
 ![The Basics page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-basic.png)
 
 > [!CAUTION]
+> 
 > If you deploy an individual Azure VM for testing or evaluation purposes, you might choose to allow connectivity from the internet due to the convenience it provides. However, in general, you should avoid exposing Azure VMs to connections originating from the internet without additional constraints. To enhance security in such scenarios, consider implementing Azure Bastion or just-in-time (JIT) VM access, which is available as part of the Microsoft Defender for Cloud service. Azure also offers hybrid connectivity options, including Site-to-Site (S2S) virtual private network (VPN), Point-to-Site (P2S) VPN, and Azure ExpressRoute. All three options eliminate the need for assigning public IP addresses to Azure VM network interfaces for connections originating from your on-premises datacenter or designated, internet-connected computers.
 
 ##### Disks
@@ -78,6 +81,7 @@ You use Disks settings to specify the type and encryption of the disk hosting th
 In addition to the Basic grouping, networking is another critical part of Azure VM configuration that warrants careful consideration. Every Azure VM uses its network interface to attach to a subnet of a virtual network. Therefore, having a virtual network with at least one subnet is a prerequisite when provisioning an Azure VM. The Azure portal facilitates implementing this prerequisite by choosing an IP address space that doesn't overlap with any existing virtual network in your subscription, and by suggesting the virtual network and subnet names. For test or evaluation scenarios, this is a viable option. However, for any larger deployments, you should design your network environment first. This category also provides additional, more granular settings that you can use to restrict inbound internet traffic. Lastly, to minimize network latency, ensure that accelerated networking is enabled.
 
 > [!NOTE]
+> 
 > Support for accelerated networking depends on the Azure VM size.
 
 ![The networking page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-networking.png)
@@ -87,6 +91,7 @@ In addition to the Basic grouping, networking is another critical part of Azure 
 From the Management page, you can enable several optional settings to enhance the manageability of your Azure VM. These settings control support for Microsoft Defender for Cloud and Azure AD authentication. You can also use them to schedule-based auto-shutdown, automatic backups, and patch orchestration.
 
 > [!NOTE]
+> 
 > Support for patch orchestration depends on the OS image.
 
 ![The Management page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-management.png)

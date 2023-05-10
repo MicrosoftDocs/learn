@@ -21,7 +21,7 @@ resource virtualNetwork 'Microsoft.Network/virtualNetworks@2021-05-01' = {
 
 ## Deploy a Linux VM by using Bicep templates
 
-Working with Bicep involves authoring and deploying templates. To simplify and enhance the authoring experience, use Visual Studio Code with the Bicep extension. The same extension also supports Bicep-based deployments. If you prefer to trigger a deployment from a command line or as part of a scripted task, you can install and use Bicep CLI as a standalone utility or use it directly from within an Azure CLI session. Azure CLI will install the Bicep CLI automatically during the first invocation of any az bicep command. To perform a manual installation, run az bicep install.
+Working with Bicep involves authoring and deploying templates. To simplify and enhance the authoring experience, use Visual Studio Code with the Bicep extension. The same extension also supports Bicep-based deployments. If you prefer to trigger a deployment from a command line or as part of a scripted task, you can install and use Bicep CLI as a standalone utility or use it directly from within an Azure CLI session. The Azure CLI will install the Bicep CLI automatically during the first invocation of any `az bicep` command. However, to perform a manual installation of BIcep, run `az bicep install`.
 
 Effectively, the process of provisioning an Azure VM running Linux by using Bicep typically involves the following sequence of high-level steps:
 
@@ -30,8 +30,7 @@ Effectively, the process of provisioning an Azure VM running Linux by using Bice
 1. Author a Bicep template.
 1. Initiate deployment of the Bicep template.
 
-> [!NOTE]
-> When you deploy Bicep templates, a task referred to as transpilation automatically converts them into equivalent Azure Resource Manager templates. You can also perform a conversion between the Bicep and Azure Resource Manager formats by running the bicep build and bicep decompile commands, respectively.
+When you deploy Bicep templates, a task referred to as transpilation automatically converts them into equivalent Azure Resource Manager templates. You can also perform a conversion between the Bicep and Azure Resource Manager formats by running the bicep build and bicep decompile commands, respectively.
 
 To identify the suitable VM image and size, follow the steps described in the earlier units of this module. This unit focuses on Bicep-specific tasks.
 
@@ -40,7 +39,8 @@ To identify the suitable VM image and size, follow the steps described in the ea
 To author a Bicep template, start by launching a Visual Studio Code session with the Bicep extension installed. Next, create a file named main.bicep. Add the following content to the file, and then save the change:
 
 > [!NOTE]
-> Although the file name is arbitrary, we recommend you choose a name that reflects the file content or purpose. Set the extension to .bicep.
+> 
+> The filenames that you choose for your Bicep files are arbitrary, although it's a good practice to choose a name that reflects the file content or purpose, and you should use ".bicep" for the file extension.
 
 ```bicep
 @description('The name of your virtual machine')
@@ -232,11 +232,12 @@ output sshCommand string = 'ssh ${adminUsername}@${publicIPAddress.properties.dn
 ```
 
 > [!NOTE]
-> This template is based on the content of the GitHub repo Azure Quickstart Templates.
+> 
+> This template is based on the content of the GitHub repo [Azure Quickstart Templates](https://azure.microsoft.com/resources/templates/).
 
 ## Initiate deployment of the Bicep template
 
-After saving the _main.bicep_ file, you can proceed with a template-based deployment. First, launch an Azure CLI session on your local computer, and run **az login** to authenticate. You'll need to provide the credentials of a user with sufficient privileges to provision resources in your Azure subscription. Next, change the current directory to the one where the _main.bicep_ file resides. Alternatively, you can start an Azure Cloud Shell Bash session and upload that file into your home directory within the Azure Cloud Shell environment.
+After saving the _main.bicep_ file, you can proceed with a template-based deployment. First, launch an Azure CLI session on your local computer, and run `az login` to authenticate. You'll need to provide the credentials of a user with sufficient privileges to provision resources in your Azure subscription. Next, change the current directory to the one where the _main.bicep_ file resides. Alternatively, you can start an Azure Cloud Shell Bash session and upload that file into your home directory within the Azure Cloud Shell environment.
 
 Next, run the following command from an authenticated Azure CLI session to create a resource group, which will contain all resources that are part of the subsequent deployment:
 
@@ -257,15 +258,16 @@ az deployment group create --resource-group rg-lnx-bcp --template-file main.bice
 ```
 
 > [!NOTE]
-> This command includes the **--parameters** switch, which in this case sets the name of the local administrator for the Azure VM that you're deploying. Azure CLI will prompt you to provide the corresponding password because the default value of the **adminPasswordOrKey** parameter isn't set.
+> 
+> This command includes the `--parameters` switch, which in this case sets the name of the local administrator for the Azure VM that you're deploying. Azure CLI will prompt you to provide the corresponding password because the default value of the `adminPasswordOrKey` parameter isn't set.
 
-The Azure VM should begin running shortly, typically within a few minutes. To connect to it, identify the fully qualified domain name (FQDN) associated with its network interface by reviewing the output generated by the deployment. Alternatively, you can use the **shCommand** value. When prompted, provide the newly set password to authenticate when establishing an SSH connection.
+The Azure VM should begin running shortly, typically within a few minutes. To connect to it, identify the fully qualified domain name (FQDN) associated with its network interface by reviewing the output generated by the deployment. Alternatively, you can use the `shCommand` value. When prompted, provide the newly set password to authenticate when establishing an SSH connection.
 
 In case you didn't record the Bicep deployment's output values, you can display them again by running the following command:
 
 ```azurecli
 az deployment group show \
-  --resource-group rg-lnx-bcp  \
+  --resource-group rg-lnx-bcp \
   --name main \
   --query properties.outputs
 ```
@@ -280,11 +282,11 @@ The JSON-formatted output should resemble the following content:
   },
   "fqdn": {
     "type": "String",
-    "value": "lnx-bcp-vm-shuvttxoxi4bc.eastus.cloudapp.azure.com"
+    "value": "lnx-bcp-vm-example.eastus.cloudapp.azure.com"
   },
   "sshCommand": {
     "type": "String",
-    "value": "ssh azureuser@lnx-bcp-vm-shuvttxoxi4bc.eastus.cloudapp.azure.com"
+    "value": "ssh azureuser@lnx-bcp-vm-example.eastus.cloudapp.azure.com"
   }
 }
 ```

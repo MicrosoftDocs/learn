@@ -2,23 +2,19 @@ Terraform implements and controls a target infrastructure by using configuration
 
 Although there are several Terraform providers that support Azure infrastructure management, AzureRM is of particular relevance. The AzureRM provider facilitates provisioning and configuration of common Azure IaaS resources, such as virtual machines, storage accounts, and networking interfaces. There are also additional non-cloud-specific providers that you might want to incorporate into your deployments. These include the random provider, which helps with avoiding resource naming conflicts by generating pseudo-random character strings, and the tls provider that simplifies management of asymmetric keys for securing Linux authentication.
 
-Terraform is available as a single binary downloadable from the [Hashicorp website](https://developer.hashicorp.com/terraform/downloads). This binary implements the Terraform command-line interface (CLI), which you can then invoke from a shell session to initialize Terraform and process configuration files.
+Terraform is available as a single binary downloadable from the [Hashicorp website](https://developer.hashicorp.com/terraform/downloads). This binary implements the Terraform command-line interface (CLI), which you can then invoke from a shell session to initialize Terraform and process configuration files. You can use Terraform CLI from any of the shells that support Azure CLI.
 
 > [!NOTE]
-> You can use Terraform CLI from any of the shells that support Azure CLI.
-
-> [!NOTE]
-> When using Azure Cloud Shell, make sure you run the current version of Terrrafom by following the instructions provided in the Microsoft Learn document, Configure Terraform in Azure Cloud Shell with Bash.
+> 
+> When using Azure Cloud Shell, make sure you run the current version of Terrrafom by following the instructions provided in the Microsoft Learn article [Configure Terraform in Azure Cloud Shell with Bash](/azure/developer/terraform/get-started-cloud-shell-bash).
 
 ## Deploy a Linux VM by using Terraform
 
 Terraform offers the ability to define, preview, and deploy resources to a provider-specific cloud infrastructure. The provisioning process begins with creating configuration files that use the HCL syntax, which enables you to designate the target cloud environment&mdash;such as Azure&mdash;and the resources that make up your cloud infrastructure. After all relevant configuration files are in place (typically within the same file system location), you can generate an execution plan that allows you to preview the resulting infrastructure changes before the actual deployment. This requires you to initialize Terraform to download the provider modules necessary to implement cloud resources. After you validate the changes, you apply the execution plan to deploy the infrastructure.
 
 > [!NOTE]
-> Generating an execution plan is optional, but we recommend you do so because it enables you to identify any impact from the planned deployment without affecting the target environment.
-
-> [!NOTE]
-> When you deploy Azure resources interactively, Terraform supports Azure CLI authentication transparently by reusing your credentials to access the target Azure subscription.
+> 
+> Generating an execution plan is optional, but we recommend you do so because it enables you to identify any impact from the planned deployment without affecting the target environment. When you deploy Azure resources interactively, Terraform supports Azure CLI authentication transparently by reusing your credentials to access the target Azure subscription.
 
 The process of provisioning an Azure VM running Linux by using Terraform typically involves the following sequence of high-level steps:
 
@@ -33,12 +29,11 @@ To identify the suitable VM image and size, follow the steps described in Unit 4
 
 ### Create configuration files
 
-To deploy a Linux VM by using Terraform, you begin by creating a directory that will host configuration files. Next, create a file named _providers.tf_ that enforces the Terraform version and designates the providers you'll rely on when defining the resources included in your deployment. 
-
 > [!NOTE]
-> The file name is arbitrary, although it's a good practice to choose a name that reflects the file content or purpose. The extension should be set to .tf.
+> 
+> The filenames that you choose for your Terraform files are arbitrary, although it's a good practice to choose a name that reflects the file content or purpose, and you should use ".tf" for the file extension.
 
-The file should have the content displayed in the following code snippet:
+To deploy a Linux VM by using Terraform, you begin by creating a directory that will host configuration files. Next, create a file named _providers.tf_ that enforces the Terraform version and designates the providers you'll rely on when defining the resources included in your deployment. This file should have the content displayed in the following code snippet:
 
 ```terraform
 terraform {
@@ -64,9 +59,6 @@ provider "azurerm" {
   features {}
 }
 ```
-
-> [!NOTE]
-> Although the file name you create is arbitrary, it's good practice to choose a name that reflects the file content or purpose. in addition, the extension should be set to .tf.
 
 In the same directory, create a file named _main.tf_ using the following code, which defines the Azure VM configuration and its dependencies:
 
