@@ -48,7 +48,7 @@ You'll observe how this feature validates DOP values for an eligible query until
    > [!IMPORTANT]
    > If you have permission issues to restore the backup, you can try to copy the backup into the default `data` folder for your SQL Server installation and try the restore again. You'll need to edit the restore script accordingly. The default for most instances is `C:\Program Files\Microsoft SQL Server\MSSQL16.MSSQLSERVER\MSSQL\DATA.`
 
-## DOP feedback exercise
+## Exercise - DOP feedback
 
 1. Execute the following script in SSMS to configure MAXDOP to 0 for your SQL Server instance.
 

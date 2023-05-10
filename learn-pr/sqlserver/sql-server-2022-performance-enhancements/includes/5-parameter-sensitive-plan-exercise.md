@@ -77,7 +77,7 @@ Mode 160.
     GO
     ```
 
-## Exercise - viewing PSP optimization for a single query execution
+## Exercise - Viewing PSP optimization for a single query execution
 
 To help us understand what is happening within the Wide World Importers
 database, lets look at the PSP optimization for a single query execution executing under the older database compatibility mode of 150.
@@ -149,7 +149,7 @@ run the first query in this exercise again.
 
    ![Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing a switch of the query plan from Index Seek to Clustered Index Scan.](../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-index-scan-2.png)
 
-## Exercise - workload problem for PSP
+## Exercise - Workload problem for PSP
 
 1. Execute the following script to clear plan cache and query store. Remember that dbcompat is still set to 150.
 
@@ -226,7 +226,7 @@ values in the table.
 
 For more information on parameter sensitivity, see [Query processing architecture guide](/sql/relational-databases/query-processing-architecture-guide#parameter-sensitivity).
 
-## Exercise - solve the parameter sniffing problem with no code changes
+## Exercise - Solve the parameter sniffing problem with no code changes
 
 SQL Server 2022 enhancements to PSP can solve the parameter sniffing problem observed in the last exercise with no code changes. SQL Server 2022 with compatibility mode 160 will improve performance and scalability of your queries.
 
