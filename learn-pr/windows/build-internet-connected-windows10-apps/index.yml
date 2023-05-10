@@ -4,8 +4,8 @@ metadata:
   title: Build internet-connected Windows apps
   description: Learn how to build apps with Azure Cognitive Services that can find images based on text descriptions and write an app that connects to a NASA image service.
   ms.date: 04/07/2023
-  author: PeterTurcan
-  ms.author: jken
+  author: alvinashcraft
+  ms.author: aashcraft
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 title: Write internet-connected Windows apps

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.extend-pipeline-use-multiple-templates.rewrite-main-deployment-pipeline
+title: Rewrite the main deployment pipeline
+metadata:
+  title: Rewrite the main deployment pipeline
+  description: "Rewrite the main deployment pipeline."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-rewrite-main-deployment-pipeline.md)]

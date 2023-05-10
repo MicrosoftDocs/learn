@@ -1,5 +1,6 @@
 
 
+
 The partnership between SAP and Microsoft extends beyond the Azure hosting infrastructure. For instance, SAP apps and data integrate with Microsoft Teams and Office to improve collaboration and enhance the user experience. Services and connectors that integrate with SAP products and services are available for Power BI analytics, Azure Data Factory, Azure Data Lake, and others. Additionally, an [Azure Marketplace search](https://azuremarketplace.microsoft.com/marketplace/apps/?search=sap) results in multiple related SAP and third-party images, templates, and services that work with SAP products and services.
 
 - You can interact with SAP data directly from Microsoft Office applications including Office 365, Teams, and Skype for Business.
