@@ -1,4 +1,5 @@
 
+
 Mobile Application Management (MAM) is a crucial aspect of mobile device management, and this module will give you an introduction. The module will cover several key considerations for implementing MAM, including its benefits, challenges, and use cases.
 
 In addition to understanding the fundamental concepts of MAM, you'll also be introduced to the management of MAM in Configuration Manager. You'll learn how to configure MAM policies in Configuration Manager and how to use the Configuration Manager console to manage app protection policies.

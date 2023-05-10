@@ -41,14 +41,14 @@ quiz:
       - content: UWP apps have access to their own runtime APIs and don't necessarily use .NET.
         explanation: Correct! The sample apps here are similar because they both use C# and XAML. But you might notice that the XAML controls are just a little bit different.
         isCorrect: true
-    - content: What is Windows Template Studio (WTS) useful for?
+    - content: What is Template Studio useful for?
       choices:
-      - content: WTS creates a new UWP app that has the basic features and structure that you want.
-        explanation: WTS handles all the generic work for implementing your app's structure, letting you focus on the functionality that makes it unique.
+      - content: Template Studio creates a new UWP app that has the basic features and structure that you want.
+        explanation: Template Studio handles all the generic work for implementing your app's structure, letting you focus on the functionality that makes it unique.
         isCorrect: true
-      - content: WTS helps you set up the XAML for your UWP or WPF app.
-        explanation: WTS doesn't just provide XAML code, and it works only for UWP apps.
+      - content: Template Studio helps you set up the XAML for your UWP or WPF app.
+        explanation: Template Studio doesn't just provide XAML code, and it works only for UWP apps.
         isCorrect: false
-      - content: WTS makes it easy to add new features to your existing UWP app.
-        explanation: WTS works only on new UWP apps or on apps that were created with WTS.
+      - content: Template Studio makes it easy to add new features to your existing UWP app.
+        explanation: Template Studio works only on new UWP apps or on apps that were created with Template Studio.
         isCorrect: false

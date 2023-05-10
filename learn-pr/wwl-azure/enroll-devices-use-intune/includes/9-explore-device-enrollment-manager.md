@@ -33,7 +33,7 @@ Devices that are enrolled with a device enrollment manager account have the foll
 
 ### Add a device enrollment manager
 
-1.  Sign in to **Microsoft Intune admin center** located at https://endpoint.microsoft.com.
+1.  Sign in to **Microsoft Intune admin center** located at https://intune.microsoft.com.
 2.  In the left navigation, select **Devices** \- **Enroll devices** \- **Device enrollment managers**.
 3.  Select **Add**. On the **Add User** panel, enter a user principal name for the DEM user, and select **Add**. The DEM user is added to the list of DEM users.
 

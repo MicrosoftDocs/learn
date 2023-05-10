@@ -152,7 +152,7 @@ In this task, you'll run your application from the Integrated Terminal and verif
 
 1. To verify that your code is working as expected, check that the output of your application is similar to the following output (taking into account the randomly generated numbers):
 
-    ```
+    ```Output
     17 29 46 36 3 
     ```
 
