@@ -48,7 +48,7 @@ After loading data into the lakehouse, you can use various tools and techniques 
 
 - **Data Pipelines**: Orchestrate complex data transformation logic that operates on data in the lakehouse through a sequence of activities (such as dataflows, Spark jobs, and other control flow logic).
 
-## Analyze and visualize data in a Lakehouse
+## Analyze and visualize data in a lakehouse
 
 The data in your lakehouse tables is included in a dataset that defines a relational model for your data. You can edit this dataset (or create other datasets), defining custom measures, hierarchies, aggregations, and other elements of a data model. You can then use the dataset as the source for a Power BI report that enables you to visualize and analyze the data.
 
