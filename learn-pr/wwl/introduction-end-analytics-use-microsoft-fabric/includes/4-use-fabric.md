@@ -32,7 +32,7 @@ All Fabric items (lakehouses, notebooks, pipelines, etc.) are stored in OneLake 
 
 Workspaces must be in Premium capacity to use Fabric. If you don't have access to Premium capacity, you aren't able to use Fabric. Select **Trial** in the **Premium capacity settings** section of the **Workspace settings** page to enable Premium capacity for your workspace.
 
-![Screenshot of the Power BI workspace settings..](../media/workspace-settings.png)
+![Screenshot of the Power BI workspace settings.](../media/workspace-settings.png)
 
 > [!NOTE]
 > For more information on enabling Premium capacity in a workspace, see [Premium capacity settings](https://learn.microsoft.com/power-bi/collaborate-share/service-create-the-new-workspaces#premium-capacity-settings).
