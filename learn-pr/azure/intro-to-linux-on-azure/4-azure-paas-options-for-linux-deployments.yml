@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-identify-azure-paas-options-for-linux-deployments.md)]
+  [!include[](includes/4-azure-paas-options-for-linux-deployments.md)]
 quiz:
   title: Knowledge check
   questions:

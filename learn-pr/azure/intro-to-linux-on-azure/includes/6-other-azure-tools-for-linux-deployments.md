@@ -1,6 +1,6 @@
-As you learned, Azure tools enable you to create a private, virtual datacenter for your organization. Use the same virtual datacenter for both your IaaS and PaaS implementations. It's another example of how Azure offers developers and IT pros freedom of choice. 
+As you've learned in the preceding units of this module, Azure tools enable you to create a private, virtual datacenter for your organization. Use the same virtual datacenter for both your IaaS and PaaS implementations. It's another example of how Azure offers developers and IT pros freedom of choice.
 
-Whether you choose IaaS, PaaS, database as a service, or a combination, you can find tools and services built into Azure to control and manage deployments. Some of these tools and services come directly from members of the open-source community, while others were developed by the Azure team to help make Azure more compatible with Linux.
+Whether you choose IaaS, PaaS, DBaaS, or a combination of these services, you can find tools and services built into Azure to control and manage deployments. Some of these tools and services come directly from members of the open-source community, while others were developed by the Azure team to help make Azure more compatible with Linux.
 
 ## Examples of open-source tools
 
@@ -10,9 +10,9 @@ Monitor your Linux environment on Azure with Prometheus, a popular open-source m
 
 ### Terraform
 
-To simplify common IT Ops and DevOps tasks, use Terraform, an open-source declarative coding tool. Terraform works with Bash or Azure PowerShell for Linux. 
+To simplify common IT Ops and DevOps tasks, use Terraform, an open-source declarative coding tool. Terraform works with Bash or Azure PowerShell for Linux.
 
-- Define and provision datacenter and cloud-based infrastructure, including Azure. 
+- Define and provision datacenter and cloud-based infrastructure, including Azure.
 - Provision core platform capabilities such as management groups, policies, users, groups, and policies.
 - Provision Azure DevOps projects and pipelines to automate regular infrastructure and application deployments.
 - Provision Azure resources required by your applications.
@@ -31,17 +31,17 @@ Azure CLI works with several shells, including Windows PowerShell, PowerShell, C
 
 ## Azure portal
 
-The [Azure portal](/azure/azure-portal/) is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface and you can build, manage, and monitor everything from Linux virtual machines to simple web apps to complex cloud deployments in the portal. 
+The [Azure portal](/azure/azure-portal/) is a web-based, unified console that provides an alternative to command-line tools. With the Azure portal, you can manage your Azure subscription by using a graphical user interface and you can build, manage, and monitor everything from Linux virtual machines to simple web apps to complex cloud deployments in the portal.
 
 ## Azure Resource Manager
 
 As you begin building out your Linux environment on Azure, complexity will likely increase to where you want a more centralized management tool. [Azure Resource Manager](/azure/azure-resource-manager/management/overview) provides a management layer that enables you to create, update, and delete resources in your Azure account. Use features like access control, locks, and tags, to secure and organize your resources after deployment.
 
-When you send a request through any of the Azure APIs, tools, SDKs, or through Azure CLI, Resource Manager receives the request. It authenticates and authorizes the request before forwarding it to the appropriate Azure service. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools. 
+When you send a request through any of the Azure APIs, tools, SDKs, or through Azure CLI, Resource Manager receives the request. It authenticates and authorizes the request before forwarding it to the appropriate Azure service. Because all requests are handled through the same API, you see consistent results and capabilities in all the different tools.
 
 The following image shows the role Azure Resource Manager plays in handling Azure requests.
 
-![Azure Resource Manager.](../media/azure-resource-manager.png)
+![Diagram that illustrates the Azure Resource Manager.](../media/azure-resource-manager.png)
 
 ## Security tools and capabilities
 
@@ -49,11 +49,11 @@ Azure provides multilayered security across physical datacenters, infrastructure
 
 ## Business continuity and disaster recovery
 
-Azure offers an end-to-end backup and disaster recovery solution for Linux that's simple, secure, scalable, and cost-effective &mdash; and can be integrated with on-premises data protection solutions. In the case of service disruption or accidental deletion or corruption of data, recover your business services in a timely and orchestrated manner. Components of the solution include: 
+Azure offers an end-to-end backup and disaster recovery solution for Linux that's simple, secure, scalable, and cost-effective &mdash; and can be integrated with on-premises data protection solutions. In the case of service disruption or accidental deletion or corruption of data, recover your business services in a timely and orchestrated manner. Components of the solution include:
 
 - **Azure Backup** &mdash; Back up cloud and on-site resources to the Azure cloud securely with no management or maintenance required. Azure Backup automatically allocates and manages backup storage, and it uses a pay-as-you-go model, meaning you only pay for the storage you consume.
 
-- **Azure Site Recovery** &mdash; Ensure business continuity by keeping business apps and workloads running during outages. Site Recovery [replicates](/azure/site-recovery/azure-to-azure-quickstart) workloads running on physical and virtual machines from a primary site to a secondary location. 
+- **Azure Site Recovery** &mdash; Ensure business continuity by keeping business apps and workloads running during outages. Site Recovery [replicates](/azure/site-recovery/azure-to-azure-quickstart) workloads running on physical and virtual machines from a primary site to a secondary location.
 
 - **Azure Archive Storage** &mdash; Provides a low-cost means of delivering durable, highly available, secure cloud storage and data management for data that's rarely accessed.
 
@@ -63,4 +63,4 @@ Use [Azure Migrate](/azure/migrate/migrate-services-overview) to simplify migrat
 
 ## Other services
 
-The services mentioned in this section are some of the core services used to manage your Linux infrastructure more effectively on Azure. But many other services and apps are available from Azure and third parties. You can view free and pay-as-you-go Azure services at [azure.microsoft.com/free](https://azure.microsoft.com/free) and partner apps and services at [azuremarketplace.microsoft.com/marketplace/apps](https://azuremarketplace.microsoft.com/marketplace/apps). Categories range from migration, security, and networking to containers, machine learning, and IoT. Browsing there is a great way to explore the scope of what's possible on Azure. 
+The services mentioned in this section are some of the core services used to manage your Linux infrastructure more effectively on Azure. But many other services and apps are available from Azure and third parties. You can view free and pay-as-you-go Azure services at [azure.microsoft.com/free](https://azure.microsoft.com/free) and partner apps and services at [azuremarketplace.microsoft.com/marketplace/apps](https://azuremarketplace.microsoft.com/marketplace/apps). Categories range from migration, security, and networking to containers, machine learning, and IoT. Browsing there is a great way to explore the scope of what's possible on Azure.

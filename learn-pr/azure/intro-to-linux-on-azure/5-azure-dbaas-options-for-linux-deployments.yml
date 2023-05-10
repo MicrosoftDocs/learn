@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/5-identify-database-as-a-service-options-for-linux-deployments.md)]
+  [!include[](includes/5-azure-dbaas-options-for-linux-deployments.md)]

@@ -1,4 +1,4 @@
-Azure offers fully managed databases as services, which automate tasks like configuring and managing high availability, disaster recovery, backups, and data replication, saving you time and money. You can choose among relational, NoSQL, and in-memory databases that span proprietary and open-source engines. 
+Azure offers fully managed Databases as Services (DBaaS), which automate tasks like configuring and managing high availability, disaster recovery, backups, and data replication, saving you time and money. You can choose among relational, NoSQL, and in-memory databases that span proprietary and open-source engines. 
 
 A partial list of the fully managed databases available on Azure includes:
 

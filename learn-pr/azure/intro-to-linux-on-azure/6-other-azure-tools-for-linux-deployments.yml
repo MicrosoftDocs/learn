@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |
-  [!include[](includes/6-identify-other-azure-tools-and-services-for-linux-deployments.md)]
+  [!include[](includes/6-other-azure-tools-for-linux-deployments.md)]
 quiz:
   title: Knowledge check
   questions:
