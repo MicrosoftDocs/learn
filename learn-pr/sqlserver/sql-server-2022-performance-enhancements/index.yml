@@ -13,7 +13,7 @@ summary: "Learn about and use the Intelligent Query Processing feature enhanceme
 abstract: |
   At the end of this module, you'll be able to:
   - Understand the key functionality behind Intelligent Query Processing and when to implement the feature
-  - Understand Automatic performance healing with memory grant feedback persistance
+  - Understand Automatic performance healing with memory grant feedback persistence
   - Know how to get consistent performance with Parameter Sensitive Plan optimization
   - Gain parallel efficiency with DOP Feedback
 prerequisites: |

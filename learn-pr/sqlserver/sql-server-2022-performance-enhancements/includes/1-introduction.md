@@ -34,6 +34,6 @@ To do this, you'll be utilizing the Intelligent Query Processing advancements in
 At the end of this module, you'll be able to:
 
 - Understand the key functionality behind Intelligent Query Processing and when to implement the feature
-- Understand automatic performance healing with memory grant feedback persistance
+- Understand automatic performance healing with memory grant feedback persistence
 - Know how to get consistent performance with Parameter Sensitive Plan optimization
 - Gain parallel efficiency with DOP Feedback
