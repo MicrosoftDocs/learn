@@ -18,7 +18,7 @@ The course is divided into several modules, each covering a specific topic relat
 
 ## Why should I take the implement security through a pipeline using DevOps learning path?
 
-People in these modules are interested in designing and implementing DevOps processes. Also, they're preparing for the [Implement security through a pipeline using DevOps](about:blank) credential.
+Completing this module helps prepare you for the **Implement security through a pipeline using DevOps** assessment.
 
 ### Learning objectives
 
