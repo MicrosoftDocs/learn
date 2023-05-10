@@ -15,7 +15,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
     :::image type="content" source="../media/2-environment-setup/k8s-path.png" alt-text="Screenshot of the explorer pane in Visual Studio Code, with the context menu for the k8s folder displayed." border="true":::
 
-1. In the new terminal pane, sign in to the Azure CLI. If you're using GitHub Codespaces, include the `--use-device-code` flag. If you are using Visual Studio Code, you can optionally omit the flag.
+1. In the new terminal pane, sign in to the Azure CLI. If you're using GitHub Codespaces, include the `--use-device-code` flag. If you're using Visual Studio Code, you can optionally omit the flag.
 
     ```azurecli
     az login --use-device-code
@@ -27,7 +27,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
     az account show -o table
     ```
 
-    If the wrong subscription is selected, select the correct one using the [az account set](/cli/azure/account#az-account-set) command.
+    If the wrong subscription is selected, use the [az account set](/cli/azure/account#az-account-set) command to select the correct one.
 
 1. Run the quickstart script:
 

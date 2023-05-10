@@ -204,7 +204,7 @@ Complete the following steps to test the Retry policy:
 
 1. Enter the discount code *:::no-loc text="FAIL 2 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
+    You receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 2 failure(s) configured for code \"DISC-10\"!!":::**.
 1. Replace the existing discount code with *:::no-loc text="DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
     The operation appears to be successful on the first try after a brief wait. The resilient BFF handles retries transparently from the user's perspective. Notice that the 10 USD discount was applied.
@@ -229,7 +229,7 @@ To test the Circuit Breaker policy, configure the code for 20 failures by using 
 1. Place an item in the shopping bag and begin the checkout procedure.
 1. Enter the discount code *:::no-loc text="FAIL 20 DISC-10":::* and select **:::no-loc text="APPLY":::**.
 
-    You'll receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 20 failure(s) configured for code \"DISC-10\"!!":::**.
+    You receive the following confirmation message with the number of failures configured for the code: **:::no-loc text="CONFIG: 20 failure(s) configured for code \"DISC-10\"!!":::**.
 1. Enter the discount code *:::no-loc text="DISC-10":::* again and select **:::no-loc text="APPLY":::**.
 1. Wait about 20 seconds. An HTTP 500 error message appears.
 1. Select **:::no-loc text="APPLY":::** again. The error message is received again in about 20 seconds.

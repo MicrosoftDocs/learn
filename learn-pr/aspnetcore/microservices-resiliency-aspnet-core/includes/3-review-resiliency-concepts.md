@@ -1,4 +1,4 @@
-Resiliency is the ability to recover from transient failures. The app's recovery strategy restores normal function with minimal user impact. Failures are unavoidable, and your app must respond in a way that minimizes downtime and data loss. In an ideal situation, your app handles failures gracefully without affecting the user.
+Resiliency is the ability to recover from transient failures. The app's recovery strategy restores normal function with minimal user impact. Failures are unavoidable in cloud environments, and your app must respond in a way that minimizes downtime and data loss. In an ideal situation, your app handles failures gracefully without affecting the user.
 
 Because microservice environments are volatile, apps should be designed to handle partial failures. Partial failure examples include code exceptions, network outages, unresponsive server processes, and hardware failures. Even planned activities, such as moving containers to a different node within a Kubernetes cluster, can cause transient failures.
 
@@ -10,7 +10,7 @@ There are two fundamental approaches to resiliency: code and infrastructure. Eac
 
 ### Code-based resiliency
 
-To implement code-based resiliency, this module uses Polly, which is a .NET library for resilience and transient failure handling. It's used to build failure-handling code with a fluent, easy-to-understand syntax in a thread-safe manner. There are several resilience policies that define failure-handling behavior. In this module, you'll apply the Retry and Circuit Breaker policies to HTTP client operations.
+To implement code-based resiliency, this module uses Polly, which is a .NET library for resilience and transient failure handling. It uses a fluent, easy-to-understand syntax to build failure-handling code in a thread-safe manner. There are several resilience policies that define failure-handling behavior. In this module, you'll apply the Retry and Circuit Breaker policies to HTTP client operations.
 
 Resiliency with Polly is defined in code, but startup-time configuration for some parameters is supported.
 

@@ -99,4 +99,4 @@ In the preceding image, you can see that:
 - The first two requests, labeled as "1" and "2", fail when getting the values.
 - The third request, labeled as "3", succeeds and returns the expected value, labeled as "4".
 
-In this unit, you've seen the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. The next step is to add code-based resiliency to the coupon service by using Polly.
+In this unit, you saw the *:::no-loc text="eShopOnContainers":::* app's existing checkout process. The next step is to add code-based resiliency to the coupon service by using Polly.
