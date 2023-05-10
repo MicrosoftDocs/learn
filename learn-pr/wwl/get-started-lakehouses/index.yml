@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.wwl.get-started-lakehouses
 metadata:
-  title: Get started with Lakehouses in Microsoft Fabric
-  description: "Get started with Lakehouses in Microsoft Fabric"
+  title: Get started with lakehouses in Microsoft Fabric
+  description: "Get started with lakehouses in Microsoft Fabric"
   ms.date: 05/10/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: powerbi
-title: Get started with Lakehouses in Microsoft Fabric
+title: Get started with lakehouses in Microsoft Fabric
 summary: Lakehouses merge data lake storage flexibility with data warehouse analytics. Microsoft Fabric offers a lakehouse solution for comprehensive analytics on a single SaaS platform.
 abstract: |
   In this module, you'll learn how to:
