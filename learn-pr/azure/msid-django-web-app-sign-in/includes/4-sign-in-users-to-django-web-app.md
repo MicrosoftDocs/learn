@@ -3,24 +3,18 @@ Users need to authenticate whenever they're accessing protected resources. In ou
 <!-- Pattern for simple chunks (repeat as needed) -->
 ## OAuth 2.0 authorization code flow
 
-The OAuth 2.0 authorization code flow is common when websites or custom applications use Azure AD as a federated authentication provider. When the application needs a user to sign in, or needs an access token to act on their behalf, it redirects the user over to Azure AD’s authorization endpoint to authenticate. The user signs in using their email and password and in turn Azure AD redirects the user upon a successful sign-in back to a specific URL in the app.
+When the application needs a user to sign in, or needs an access token to act on their behalf, it redirects the user over to Azure AD’s authorization endpoint to authenticate. Azure AD redirects the user upon a successful sign-in back to a specific URL in the app and includes an authorization code that only Azure AD can read. The web app takes this authorization code, which is valid for a short time, and includes it in a request to the Azure AD token endpoint. This flow is the OAuth 2.0 authorization code flow.
 
-When Azure AD redirects the user back to the web app, it includes an authorization code. The authorization code is an encoded string that only Azure AD can read. The web app takes this authorization code, which is valid for a short time, and includes it in a request to the Azure AD token endpoint.
-
-## ID tokens
-
-Apps can request for an ID token after successful sign-in. Azure AD issues your app with an ID token once the user is signed-in. ID tokens are JSON web tokens (JWT). These ID tokens consist of a header, payload, and signature. The header and signature are used to verify the authenticity of the token, while the payload contains the information about the user requested by your client.
+Azure AD issues your app with an ID token once the user is signed-in. The header and signature of the ID token are used to verify the authenticity of the token, while the payload contains the information about the user requested by your client.
 
 ## Sign-in process
 
-The first step of the sign-in process is to send a request to the `/authorize` endpoint on Azure AD. MSAL Python constructs an `/authorize` request URL and the browser is redirected to this URL. The user is presented with a sign-in prompt by Azure AD. If the sign-in attempt is successful, the user's browser is redirected back to this app's `/redirect` endpoint. In our case, the redirect endpoint is `/auth/redirect`. A successful request to this endpoint will contain an authorization code. The web app uses this authorization code to acquire an ID token and an access token from Azure AD.
-
-If the request is successful, MSAL Python validates the signature and nonce of the incoming token. If these checks succeed, it returns the resulting *id_token*, *access_token* and plaintext *id_token_claims* in a dictionary. It's the application's responsibility to store these tokens securely.
+The first step of the sign-in process is to send a request to the `/authorize` endpoint on Azure AD. The user is presented with a sign-in prompt by Azure AD. If the sign-in attempt is successful, the user's browser is redirected back to this app's `/redirect` endpoint. In our case, the redirect endpoint is `/auth/redirect`. A successful request to this endpoint will contain an authorization code. The web app uses this authorization code to acquire an ID token and an access token from Azure AD. It's the application's responsibility to store these tokens securely.
 
 <!-- Pattern for complex chunks (repeat as needed) -->
 ## Sign-in to a Django web app
 
-When signing in users to a Django web app, we use the [Microsoft identity web Python library](). This library acts a wrapper of the MSAL for Python library and handles much of the required MSAL for Python configurations. In the *aad.config.json* file, we configure the following endpoints to be used during the auth flow.
+When signing in users to a Django web app, we use the Microsoft identity web Python library. This library acts a wrapper of the MSAL for Python library and handles much of the required MSAL for Python configurations. In the *aad.config.json* file, we configure the following endpoints to be used during the auth flow.
 
 ```json
     "auth_endpoints": {

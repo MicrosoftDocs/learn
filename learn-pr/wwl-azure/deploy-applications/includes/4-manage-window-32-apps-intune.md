@@ -1,4 +1,5 @@
 
+
 Intune standalone now supports Win32 app management capabilities. While there are some limitations on what types of apps that can be deployed, customers now have a choice on whether to use Intune or Configuration Manager for Win32 app deployment. With the Intune Management Extension, deployment is no longer limited to a single MSI installation file.
 
 In order to deploy Win32 apps, the following criteria must be met:
