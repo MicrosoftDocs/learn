@@ -92,6 +92,16 @@ Now that there's a page handler to handle the form submission, let's add the for
     - The `@Html.DisplayNameFor` method is used to display the display name for the `IsGlutenFree` property. This is a Razor helper method that's used to display the display name for a property. Doing the label this way ensures that the checkbox is selected when the user clicks the label.
     - A submit button is added to the form to post the form data to the server. At runtime, the browser will send an HTTP POST request to the server when the user clicks the submit button.
 
+1. At the bottom of the page, add the following code:
+
+    ```razor
+    @section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+    }
+    ```
+
+    This injects the client-side validation scripts into the page. The client-side validation scripts are used to validate the user's input before the form is submitted to the server.
+
 1. Save your changes and test the form. Enter a new pizza and select the **Create** button. The page should refresh and display the new pizza in the list.
 
 ## Add a page handler to delete pizzas
