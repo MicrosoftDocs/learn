@@ -1,2 +1,3 @@
 
+
 In this module, you learned about the Windows Security Center, which offers a suite of security features for Windows clients, including Microsoft Defender Antivirus and Windows Defender Firewall. To ensure proper configuration, these features should be managed centrally within organizations. Although default settings provide basic protection, administrators must employ policies to tailor security settings according to the organization's infrastructure and security policies. Configuration can be achieved using popular management tools like Microsoft Endpoint Manager or Group Policy, providing learners with a solid foundation for managing security settings effectively.
