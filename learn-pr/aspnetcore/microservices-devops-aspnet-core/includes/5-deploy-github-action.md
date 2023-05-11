@@ -73,11 +73,11 @@ Complete the following steps to create a GitHub action that deploys the coupon s
 
 1. On the **:::no-loc text="Commit changes":::** screen, select **:::no-loc text="Commit directly to the main branch":::** and then select **:::no-loc text="Commit changes":::**.
 
-You can find the *build.yml* and *deploy.yml* GitHub Actions definitions in the repository's *:::no-loc text=".github/workflows":::* directory. To make changes, you can update the appropriate file and push the changes to the `main` branch. Alternatively, you can create a pull request (PR). If you create a PR, the action triggers when the PR merges to the `main` branch.
+Once you commit the workflows, you can find the *build.yml* and *deploy.yml* GitHub Actions definitions in the repository's *:::no-loc text=".github/workflows":::* directory. To make changes, you can update the appropriate file and push the changes to the `main` branch. Alternatively, you can create a pull request (PR). If you create a PR, the action triggers when the PR merges to the `main` branch.
 
 ## Trigger a deployment
 
-To trigger a deployment, you increment the `appVersion` in the coupon service's Helm chart. Helm charts define service specifications in a YAML template format. You increment the app version in the Helm chart to cause the pod to be replaced when you deploy the chart to AKS with `helm upgrade`.
+To trigger a deployment, you increment the `appVersion` in the coupon service's Helm chart. Helm charts define service specifications in a YAML template format. It's important to increment the app version in the Helm chart to cause the pod to be replaced when you deploy the chart to AKS with `helm upgrade`.
 
 1. From the **:::no-loc text="Code":::** tab in your forked repository, open the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file for editing, and update the `appVersion` property value to `1.1.0`:
 
