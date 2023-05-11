@@ -4,7 +4,7 @@ Parameters and variables are essential components for customizing pipeline behav
 
 Parameters and variables are critical to pipeline customization, as they allow for flexibility and enable pipeline scripts to be more dynamic. You can use it to store values such as connection strings, environment variables, and other sensitive data. Properly defining their data types is also essential to avoid unexpected errors or vulnerabilities arising from incorrect usage.
 
-### Add a parameter or variable to your pipeline
+## Add a parameter or variable to your pipeline
 
 ```YAML
 parameters:
@@ -38,7 +38,7 @@ variables:
    value: myValue   
 ```
 
-### Use the correct data types when defining your parameters
+## Use the correct data types when defining your parameters
 
 Azure Pipelines supports the following data types:
 
@@ -50,7 +50,7 @@ Azure Pipelines supports the following data types:
 
 Unlike variables, pipeline parameters can't be changed by a pipeline while it's running. Parameters have data types such as `number` and `string`, and they can be restricted to a subset of values. Restricting the parameters is useful when a user-configurable part of the pipeline should take a value only from a constrained list. The setup ensures that the pipeline won't take arbitrary data.
 
-### Define secrets as secret variables or as a part of a variable group
+## Define secrets as secret variables or as a part of a variable group
 
 You can use Azure Key Vault to store secrets and then reference them in your pipeline script.
 
@@ -71,7 +71,7 @@ variables:
 
 ```
 
-### Use the `readonly` property to ensure that variables aren't changed by a pipeline while it's running
+## Use the `readonly` property to ensure that variables aren't changed by a pipeline while it's running
 
 It's useful when you want to ensure that a variable isn't changed by a pipeline while it's running. For example, you can use this property to ensure that a variable isn't changed by a pipeline while it's running.
 
