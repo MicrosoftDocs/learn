@@ -1,6 +1,6 @@
 In IoT Central, dashboards are used primarily to view and assess the property, telemetry, and state information of devices.
 
-Administrators create a default organization dashboard using either an industry focused application template or the Custom application template when they create the Azure IoT Central application. If your application was created from one of the industry focused templates, your application will have a pre-defined organization dashboard to start. If your application was created from the Custom application template, your default organization dashboard will display a blank layout that you can customize yourself.
+Administrators create a default organization dashboard using either an industry focused application template or the custom application template when they create an Azure IoT Central application. If your application was created from one of the industry focused templates, your application will have a pre-defined organization dashboard to start. If your application was created from the custom application template, your default organization dashboard will display a blank layout that you can customize yourself.
 
 As an administrator, you can create more organization dashboards that are associated with a specific organization. An organization dashboard is only visible to users who have access to the organization the dashboard is associated with.
 
@@ -15,35 +15,32 @@ In addition to configuring dashboards, IoT Central administrators are often resp
 
 ## Create a dashboard
 
-Open your Dashboard page from the left pane of the IoT Central application. To create a new dashboard from scratch, select **+ New dashboard** in the upper-left corner of the page. To create a new dashboard by copying the current dashboard, select **Copy**. In the **Create dashboard** or **Duplicate dashboard** panel, give your dashboard a name and select either **Organization** or **Personal** as the dashboard type. If you're creating an organization dashboard, choose the organization the dashboard is associated with. An organization dashboard and its tiles only show the devices that are visible to the organization and any of its suborganizations.
+Open your **Dashboards** page from the left pane of the IoT Central application. To create a new dashboard from scratch, select **Go to dashboard catalog** &gt; **+ New**. To create a new dashboard by copying the current dashboard, select **Copy**. In the **Create dashboard** or **Duplicate dashboard** panel, give your dashboard a name and select either **Organization** or **Personal** as the dashboard type. If you're creating an organization dashboard, choose the organization the dashboard is associated with. An organization dashboard and its tiles only show the devices that are visible to the organization and any of its suborganizations.
 
 ## Add tiles to a dashboard
 
 If you're in a role with the appropriate permissions, you can customize an organization dashboard. All users can customize personal dashboards.
 
-Open your Dashboard page from the left pane of the IoT Central application. To begin customizing the dashboard, select **Edit** at the top-left of the Dashboard page. Selecting **Edit** opens the **Edit dashboard** panel, which can be used to add and remove tiles in order to customize the dashboard. Selecting either **New dashboard** or **Copy** will also open a dashboard in edit mode.
+Open your Dashboard page from the left pane of the IoT Central application. To begin customizing the dashboard, select **Edit** at the top-left of the Dashboard page. Selecting **Edit** opens the dashboard in edit mode where you add, customize, and remove tiles in order to customize the dashboard. Selecting either **New dashboard** or **Copy** will also open a dashboard in edit mode.
 
 You have two initial options when preparing to add a tile to your dashboard, **Start with a visual** and **Start with a device**.
 
 For example, to add a line chart tile to track telemetry values reported by one or more devices over time:
 
-1.  Select **Start with a Visual**, Line chart, and then **Add tile**, or just drag the tile onto the canvas.
-2.  To edit the tile, select its **pencil** button. Enter a **Title** and select a **Device Group**. In the **Devices** list, select the devices to show on the tile.
-3.  After you select all the devices to show on the tile, select **Update**.
-4.  After you finish adding and customizing tiles on the dashboard, select **Save**.
+1. Select **Start with a visual**, **Line chart**, and then **Add tile**, or just drag the tile onto the canvas.
+1. To edit the tile, select its **pencil** icon. Enter a **Title** and select a **Device group**. In the **Devices** list, select the devices to show on the tile.
+1. After you select all the devices to show on the tile, select **Update**.
+1. After you finish adding and customizing tiles on the dashboard, select **Save**.
 
     :::image type="content" source="../media/m12-l05-dashboard-add-tiles-a2d83481.png" alt-text="Screenshot that shows how to add a tile to the dashboard in the IoT Central application.":::
-
-
-Each tile has a pre-selected graph, chart, etc. that will be displayed when the tile is created. However, users can choose to edit and change this visualization.
 
 ## Edit tiles
 
 To edit a tile on the dashboard, first select **Edit** at the top left of the page, which will open edit mode for the dashboard and all its tiles. This provides you with the following options:
 
- -  The **square** button lets you resize the tile.
- -  The **pencil** button lets you edit the visualization. For example, for a line chart you can choose to show the legend and axes and choose the time range to plot.
- -  The **copy** button lets you create a duplicate of the tile.
+- The **square** icon lets you resize the tile.
+- The **pencil** icon lets you edit the visualization. For example, for a line chart you can choose to show the legend and axes and choose the time range to plot.
+- The **copy** icon lets you create a duplicate of the tile.
 
 ## Tile types
 
@@ -75,7 +72,7 @@ The following table describes the types of tiles that you can add to a dashboard
 :::row-end:::
 :::row:::
   :::column:::
-    Line Chart
+    Line chart
   :::column-end:::
   :::column:::
     Line chart tiles plot one or more aggregate telemetry values for one or more devices over a time period. For example, you can display a line chart to plot the average temperature and pressure of one or more devices during the past hour.
@@ -83,7 +80,7 @@ The following table describes the types of tiles that you can add to a dashboard
 :::row-end:::
 :::row:::
   :::column:::
-    Bar Chart
+    Bar chart
   :::column-end:::
   :::column:::
     Bar chart tiles plot one or more aggregate telemetry values for one or more devices over a time period. For example, you can display a bar chart to show the average temperature and pressure of one or more devices during the past hour.
@@ -91,7 +88,7 @@ The following table describes the types of tiles that you can add to a dashboard
 :::row-end:::
 :::row:::
   :::column:::
-    Pie Chart
+    Pie chart
   :::column-end:::
   :::column:::
     Pie chart tiles display one or more aggregate telemetry values for one or more devices over a time period.
@@ -99,7 +96,7 @@ The following table describes the types of tiles that you can add to a dashboard
 :::row-end:::
 :::row:::
   :::column:::
-    Heat Map
+    Heat map
   :::column-end:::
   :::column:::
     Heat map tiles display information, represented in colors, about one or more devices.
@@ -107,7 +104,7 @@ The following table describes the types of tiles that you can add to a dashboard
 :::row-end:::
 :::row:::
   :::column:::
-    Event History
+    Event history
   :::column-end:::
   :::column:::
     Event history tiles display the events for a device over a time period. For example, you can use them to show all the valve open and valve close events for one or more devices during the past hour.
@@ -201,6 +198,13 @@ The following table describes the types of tiles that you can add to a dashboard
     Number of devices tiles display the number of devices in a device group.
   :::column-end:::
 :::row-end:::
-
+:::row:::
+  :::column:::
+    Data explorer query
+  :::column-end:::
+  :::column:::
+    Data explorer query tiles display a saved data explorer query.
+  :::column-end:::
+:::row-end:::
 
 For more information about creating and customizing dashboards, see: [Create and manage dashboards](/azure/iot-central/core/howto-manage-dashboards)
