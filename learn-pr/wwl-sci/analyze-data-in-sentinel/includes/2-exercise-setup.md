@@ -69,7 +69,7 @@ In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the *Search by name or provider* search box, search for and select **Azure Activity**. The **Azure Activity** details pane appears.
 
-1. Select **Open connector page**. The **Azure Activity** pane reappears.
+1. Select **Open connector page**.
 
 1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
