@@ -18,13 +18,13 @@ abstract: |
   -	Visualize the data in mixed reality by using Azure SignalR Service
   -	Send data updates from mixed-reality app back to Azure Digital Twins
 prerequisites: |
-  - Set up a mixed reality project for Azure Digital Twins in a Unity module
-  - Build a 3D scene in Unity with Maps SDK module
-  - Configure 3D assets in a Unity scene module
-  - Azure service creation and configuration
-  - Domain User Azure Active Directory, not Guest
   - An Azure subscription
-  - [Install the Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
+  - A mixed-reality project for Azure Digital Twins in a Unity module
+  - A 3D scene in Unity that uses the Bing Maps SDK module
+  - Configured 3D assets in a Unity scene module
+  - Azure service creation and configuration knowledge
+  - Domain User Azure Active Directory permissions (not Guest)
+  - [The Azure CLI for Windows](/cli/azure/install-azure-cli-windows?tabs=azure-cli)
   - Basic Azure CLI knowledge
   - Basic Azure PowerShell knowledge
   - Desktop Development with C++ workload installed in Visual Studio

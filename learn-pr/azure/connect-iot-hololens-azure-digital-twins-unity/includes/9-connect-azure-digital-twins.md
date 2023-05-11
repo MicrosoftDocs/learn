@@ -1,4 +1,4 @@
-Under real-world conditions, wind farm operations aren't continuous. At times, turbine assets experience anomalies that might exceed operating thresholds. Under these circumstances, turbine assets send an alert signal that operators and engineers intercept, analyze, and take action upon. To resolve a turbine asset alert on Azure Digital Twins from the mixed-reality app, send requests to the Azure Digital Twins REST API.
+Under real-world conditions, wind farm operations aren't continuous. At times, turbine assets experience anomalies that might exceed operating thresholds. Under these circumstances, turbine assets send an alert signal that operators and engineers receive, analyze, and take action upon. To resolve a turbine asset alert on Azure Digital Twins from the mixed-reality app, send requests to the Azure Digital Twins REST API.
 
 To make requests to the REST API, you need to authenticate. In the context of this learning module, you authenticate using app credentials, corresponding to an *App Registration*. These credentials represent an app, not an individual, and need to be copied into the Unity project. When the app is built, these credentials are compiled directly into the app. We don't recommend this approach to authentication for production systems because it doesn't require the user to sign in. As such, it doesn't prevent unauthorized user access. Use this approach for simplicity's sake in this learning module.
 
@@ -19,7 +19,7 @@ These credentials and URL need to be transferred to your Unity project, so that 
 ## Add Azure Digital Twins credentials
 
 1. Navigate to the **Credentials** folder in the Unity project panel: **Assets** > **ScriptableObjects** > **AzureDigitalTwin** > **Credentials**.
-1. Create a scriptable object for the credentials by selecting **Assets** > **Create** > **Scriptable Objects** > **Credentials** > **ADT Rest API Credentials**.
+1. Create a scriptable object for the credentials by selecting **Assets** > **Create** > **ScriptableObjects** > **Credentials** > **ADT Rest API Credentials**.
 
    :::image type="content" source="../media/create-credential-asset.png" alt-text="Screenshot of the Unity assets menu open showing the create, scriptable objects, credentials, adt rest api credentials menu selection.":::
 

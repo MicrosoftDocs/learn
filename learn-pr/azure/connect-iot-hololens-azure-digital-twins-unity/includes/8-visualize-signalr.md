@@ -9,21 +9,21 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 1. Run the device simulator by selecting the **Play** button or **F5**.
 1. A console window opens that displays turbine IDs and messages indicating connectivity and device retrieval and creation.
 
-   :::image type="content" source="../media/device-simulator.png" alt-text="Screenshot of the command window open and running the device simulator solution. Turbine IDs and connectivity messages are displayed.":::
+   :::image type="content" source="../media/device-simulator.png" alt-text="Screenshot of the command window open and running the device simulator solution with turbine IDs and connectivity messages displayed.":::
 
 1. Press any key to begin the simulation. If configured properly and connected to the correct Azure services, there are a series of streaming console messages *Message Received*, which indicate that the Azure Digital Twins service has acknowledged the receipt of the simulated IoT data.
 
-   :::image type="content" source="../media/device-simulator-2.png" alt-text="Screenshot of the command window open and running the device simulator solution. Console messages are displayed from the simulated IoT data.":::
+   :::image type="content" source="../media/device-simulator-2.png" alt-text="Screenshot of the command window open and running the device simulator solution with console messages displayed from the simulated IoT data.":::
 
 ## Launch the digital twin in Unity editor
 
 1. Select the **Play** button in the Unity editor. The editor switches to the **Game** tab automatically and begins rendering your scene. The data in the UI panels reflect the data being generated from the `DeviceSimulator` application running.
 
-   :::image type="content" source="../media/simulated-turbine-telemetry.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running.":::
+   :::image type="content" source="../media/simulated-turbine-telemetry.png" alt-text="Screenshot of the Unity editor in play mode with the device simulator running." lightbox="../media/simulated-turbine-telemetry.png":::
 
 1. Navigate in the **Game** tab by pressing and holding your right mouse button while you navigate. Move the scene so that the white circle hovers over a turbine or a turbine name in the **Site Overview Menu** panel, you see the **Turbine Panel** with specifics for that Turbine asset.
 
-   :::image type="content" source="../media/device-simulator-3.png" alt-text="Screenshot of the command window open and running the device simulator solution. Updated console messages are displayed from the simulated IoT data.":::
+   :::image type="content" source="../media/device-simulator-3.png" alt-text="Screenshot of the command window open and running the device simulator solution with updated console messages are displayed from the simulated IoT data.":::
 
 1. Observe what happens to the data displayed in the **Site Overview Menu** and **Turbine Panel** in your Unity **Game** view.
 
@@ -35,4 +35,4 @@ Use the Visual Studio **s** solution to simulate an operating wind farm. Send te
 
 ## Stop the DeviceSimulator
 
-Stopping the simulator is important to ensure you avoid unnecessary charges to your Azure account. Press **Ctrl**+**C** in the command prompt window or Select **Stop** in Visual Studio.
+Stopping the simulator is important to ensure you avoid unnecessary charges to your Azure account. Press **Ctrl**+**C** in the command prompt window or select **Stop** in Visual Studio.

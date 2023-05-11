@@ -22,4 +22,4 @@ ARM templates can be either a Bicep or JavaScript Object Notation (JSON) file th
 
 Use a new template language called Bicep. Bicep provides a syntax that is easier to use for creating templates. Bicep and JSON templates offer the same capabilities and you can convert the template between the two languages. The Bicep file used for this module has been created for you.
 
-ARM templates can be run using the Azure CLI at a Command Prompt window or Azure PowerShell. PowerShell offers some tab completion features not available at a command prompt and is the preferred shell for this module. You aren't required to run any of the Azure CLI commands with elevated permissions.
+ARM templates can be run using the Azure CLI in a Command Prompt window or Windows PowerShell. PowerShell offers tab completion features not available at a command prompt and is the preferred shell for this module. You aren't required to run any of the Azure CLI commands with elevated permissions.

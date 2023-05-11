@@ -39,7 +39,7 @@ To navigate to individual turbines and view details in mixed reality:
 ## Stop the DeviceSimulator
 
 1. Stopping the simulator is important to ensure you avoid unnecessary charges to your Azure account.
-1. Press **Ctrl**+**C** in the command window or the **Stop** button in Visual Studio.
+1. Press **Ctrl**+**C** in the command window or select **Stop** in Visual Studio.
 
    > [!IMPORTANT]
    > Be aware that this simulation generates a significant amount of data simulating real world operations and Azure consumption occurs. Remember to stop the simulator whenever it is not needed to avoid unnecessary charges on your Azure account.

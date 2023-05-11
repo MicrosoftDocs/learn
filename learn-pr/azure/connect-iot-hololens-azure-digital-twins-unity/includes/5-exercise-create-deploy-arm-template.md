@@ -1,10 +1,10 @@
 > [!IMPORTANT]
 > This module creates Azure resources. If you don't plan to use this module again or if you don't complete the module, be sure to remove the created resources. Instructions for removing all resources are included at the end of the module.
 
-This module assumes you have Azure CLI installed. You can run commands from a Command Prompt window or Azure PowerShell. We recommend PowerShell. The module also assumes you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
+This module assumes that you have Azure CLI installed. You can run commands from a Command Prompt window or Windows PowerShell. We recommend PowerShell. The module also assumes that you have an Azure account. You need the Contributor and User Access Administrator roles on the Azure subscription, or Owner.
 
 > [!IMPORTANT]
-> If you belong to an organization, you might need to coordinate with your IT Team to create your Azure Active Directory (Azure AD) user account and grant the appropriate privileges. Also, Guest accounts associated with your Azure subscription don't meet the minimum requirements. You must have a member account.
+> If you belong to an organization, you might need to coordinate with your IT Team to create your Azure Active Directory (Azure AD) user account and grant the appropriate privileges. Also, guest accounts associated with your Azure subscription don't meet the minimum requirements. You must have a member account.
 
 The ARM template logic has been integrated into a connection prefab that drives a data simulator.
 
@@ -27,11 +27,11 @@ In the previous unit, you cloned or downloaded [the repository from GitHub](http
    > [!NOTE]
    > If the command fails to open the appropriate browser window, use this command: `az login --use-device-code`. This device code flow returns a unique code. [Open the device sign-in page](https://aka.ms/devicelogin) in your browser and enter the code displayed in your terminal.
 
-   :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the Shell using the Windows PowerShell environment to run the az login command.":::
+   :::image type="content" source="../media/az-login-results.png" alt-text="Screenshot of the output of the Windows PowerShell command running the az login command.":::
 
 ## Set variables in PowerShell
 
-1. Set the `$projectname` variable. This value is the base unique name for the Azure resources that you create in this exercise. Extra random characters are appended to the project name. Make sure your values are enclosed in double quotes.
+1. Set the `$projectname` variable. This value is the base unique name for the Azure resources that you create in this exercise. Extra random characters are appended to the project name. Make sure that your values are enclosed in double quotes.
 
    > [!NOTE]
    > Variables in PowerShell start with the `$` symbol.
@@ -62,11 +62,11 @@ The output from this command is redirected from standard output to *AppCredentia
 > [!NOTE]
 > Be careful where you keep this file, because it contains credentials. Consider deleting the file after completing this learning path.
 
-:::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of the command-line interface using the PowerShell environment to set app product and registration names and create the app registration.":::
+:::image type="content" source="../media/az-app-reg.png" alt-text="Screenshot of setting the app product and registration names and creating the app registration in PowerShell.":::
 
 ## Obtain the object ID of the App Registration and the user ID
 
-1. Create and set a variable for the `ObjectID` in PowerShell by using the following commands.
+1. Create and set a variable for the `ObjectID` in PowerShell by using the following command.
 
    ```console
    $objectid=$(az ad sp list --display-name ${appreg} --query [0].objectId --output tsv)
@@ -90,7 +90,7 @@ The output from this command is redirected from standard output to *AppCredentia
    echo $userid
    ```
 
-   :::image type="content" source="../media/object-and-user-id.png" alt-text="Screenshot of the command-line interface using the Windows PowerShell environment to get the apps object and user ID.":::
+   :::image type="content" source="../media/object-and-user-id.png" alt-text="Screenshot of using the Windows PowerShell environment to get the apps object and user ID.":::
 
 ## Create the Azure resource group
 
@@ -107,7 +107,9 @@ Pay particular attention to the location. It must be `eastus`. This region is on
 Deploy the supplied *bicep* file to your resource group and redirect the output to a text file called *ARM_deployment_out.txt*. This process can take 10-15 minutes to complete.
 
 ```console
-az deployment group create --template-file azuredeploy.bicep --resource-group ${projectname}-rg --parameters projectName=${projectname} userId=${userid} appRegObjectId=${objectid} > ARM_deployment_out.txt
+az deployment group create --template-file azuredeploy.bicep --resource-group ${projectname}-rg `
+   --parameters projectName=${projectname} userId=${userid} appRegObjectId=${objectid} `
+   > ARM_deployment_out.txt
 ```
 
 The file is for reference only. It isn't required for the rest of this module.
@@ -133,12 +135,13 @@ This command downloads and installs the extension. If it's already installed, th
 Query the Azure deployment by using the [az deployment group show](/cli/azure/deployment/group#az-deployment-group-show) command in PowerShell. This command redirects the output to a file named *Azure_config_settings.txt* in the same directory in which you run the command.
 
 ```console
-az deployment group show --name azuredeploy --resource-group ${projectname}-rg --query properties.outputs.importantInfo.value > Azure_config_settings.txt
+az deployment group show --name azuredeploy --resource-group ${projectname}-rg `
+   --query properties.outputs.importantInfo.value > Azure_config_settings.txt
 ```
 
 ## Query Azure deployment for resource group connection parameter
 
-1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the Resource Group connection string parameter. You use this value later in the module. The command redirects the output and appends it to the file named *Azure_config_settings.txt* in the same directory in which you run the command. You created this file in the previous section. The two `>` symbols indicate that the command appends rather than overwrites.
+1. Use the [az iot hub connection-string show](/cli/azure/iot/hub/connection-string#az-iot-hub-connection-string-show) command to query the IoT hub for the resource group connection string parameter. You use this value later in the module. The command redirects the output and appends it to the file named *Azure_config_settings.txt* in the same directory in which you run the command. You created this file in the previous section. The two `>` symbols indicate that the command appends rather than overwrites.
 
    ```console
    az iot hub connection-string show --resource-group ${projectname}-rg >> Azure_config_settings.txt
@@ -150,4 +153,4 @@ az deployment group show --name azuredeploy --resource-group ${projectname}-rg -
    get-content Azure_config_settings.txt
    ```
 
-   :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of the command-line interface running the get-content command prompt.":::
+   :::image type="content" source="../media/query-azure-deployment-to-file.png" alt-text="Screenshot of running the get-content command in PowerShell." lightbox="../media/query-azure-deployment-to-file.png":::

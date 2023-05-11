@@ -2,7 +2,7 @@ Visualizing assets in an immersive setting lets you experience the right data in
 
 ## Example scenario
 
-In this scenario, each of the wind turbines in your wind farm needs to be connected to a simulated data stream representing real-world Internet of Things (IoT) data feeds. You want each turbine UI panel to react to events, display operational information, and have the map focus on the selected turbine in the scene.
+In this scenario, each of the wind turbines in your wind farm needs to be connected to a simulated data stream representing real-world Internet of Things (IoT) data feeds. You want each turbine user interface (UI) panel to react to events, display operational information, and have the map focus on the selected turbine in the scene.
 
 ## What are we doing?
 

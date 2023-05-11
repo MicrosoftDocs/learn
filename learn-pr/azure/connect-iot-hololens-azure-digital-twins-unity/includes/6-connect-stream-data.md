@@ -6,9 +6,9 @@ Azure SignalR Service simplifies the process of adding real-time web functionali
 
 The Azure SignalR Service can be easily integrated with other Azure services, which opens up other possible scenarios. For example, Azure Functions can use the REST API to push notifications to the Azure SignalR Service, which then pushes data to connected clients in real time. Used together with IoT Hub, the Azure SignalR Service can enable real-time sensor data to be transmitted to connected clients to support real-time monitoring scenarios.
 
-Real-time scenarios often come with high-frequency data flows and large quantities of concurrent connections between the client and server. They require nontrivial infrastructure setup to get the functionality up and running at scale. Configuring this infrastructure at scale is difficult. The configuration usually requires application specific logic at various network layers. The Azure SignalR Service handles those issues, so you can focus on the application logic that delivers real-time connected experiences. You can scale real-time functionality dynamically while paying only for what you use. The service also inherits that Azure SignalR Service capabilities for persistent connections over various transports.
+Real-time scenarios often come with high-frequency data flows and large quantities of concurrent connections between the client and server. They require nontrivial infrastructure setup to get the functionality up and running at scale. Configuring this infrastructure at scale is difficult. The configuration usually requires application specific logic at various network layers. The Azure SignalR Service handles those issues, so you can focus on the application logic that delivers real-time connected experiences. You can scale real-time functionality dynamically while paying only for what you use. The service also inherits Azure SignalR Service capabilities for persistent connections over various transports.
 
-Azure SignalR Service has been used in a wide variety of industries for any application type that requires real-time content updates. We list some examples that are good to use Azure SignalR Service:
+Azure SignalR Service has been used in a wide variety of industries for any application type that requires real-time content updates. Here are some examples that are good to use Azure SignalR Service:
 
 - **High frequency data updates:** gaming, voting, polling, and auction
 - **Dashboards and monitoring:** company dashboard, financial market data, instant sales update, multi-player game leader board, and IoT monitoring
@@ -22,7 +22,7 @@ Azure SignalR Service has been used in a wide variety of industries for any appl
 
 For your wind turbine use case, the communication layer between the Azure Digital Twins wind turbine data and your mixed reality device uses the Azure SignalR Service and a SignalR client embedded in the mixed-reality app.
 
-To expose the data to your client app by using Azure Digital Twins, you need to connect to the Azure SignalR Service. The mixed-reality app that you're building implements a SignalR client to connect to the SignalR service. Establishing communication between the SignalR client and the Azure SignalR service requires the client to invoke the **negotiate** function in the SignalR service.
+To expose the data to your client app by using Azure Digital Twins, you need to connect to the Azure SignalR Service. The mixed-reality app that you're building implements a SignalR client to connect to the SignalR service. Establishing communication between the SignalR client and the Azure SignalR service requires the client to invoke the `negotiate` function in the SignalR service.
 
 Configure your `DeviceSimulator` with your Azure Digital Twins connection parameters and authentication details captured in the previous exercise.
 
@@ -44,7 +44,7 @@ Configure your `DeviceSimulator` with your Azure Digital Twins connection parame
 
 ## Configure the device simulator with primary connection string
 
-Configure the **DeviceSimulator** with the primary connection string for the IoT Hub created by the ARM template.
+Configure the `DeviceSimulator` with the primary connection string for the IoT Hub created by the ARM template.
 
 1. From the *Azure_config_settings.txt* file or from the output of your `get-content` command in PowerShell, locate the key/value pair for the `connectionString` key and copy the value. It should look similar to:
 
@@ -52,7 +52,7 @@ Configure the **DeviceSimulator** with the primary connection string for the IoT
    HostName=myprojHubxxxxxxxxxx.azure-devices.net;SharedAccessKeyName=iothubowner;SharedAccessKey= xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx”
    ```
 
-1. In your Visual Studio *DeviceSimulator* solution, open the `AzureIoTHub.cs` file in the editor and paste your connectionString value copied in the previous step into the **iotHubConnectionString** string variable.
+1. In your Visual Studio `DeviceSimulator` solution, open the *AzureIoTHub.cs* file in the editor and paste your `connectionString` value copied in the previous step into the **iotHubConnectionString** string variable.
 
    :::image type="content" source="../media/host-name-cs-expanded.png" alt-text="Screenshot of the Device Simulator solution open in Visual Studio. The Azure IoT Hub dot cs file is open and iot hub connection string value is added." lightbox="../media/host-name-cs.png":::
 
@@ -71,30 +71,30 @@ Configure the **DeviceSimulator** with the authentication keys created by the AR
 
    :::image type="content" source="../media/prop-updater-expanded.png" alt-text="Screenshot of the Device Simulator solution in Visual Studio. The prop updater dot cs file is open and client, secret, and tenant ID values are added." lightbox="../media/prop-updater.png":::
 
-1. Save your work in Visual Studio by selecting **File** > **Save All**.
+1. Select **File** > **Save All** to save your work in Visual Studio.
 
-Connect your Azure Digital Twins prefab in Unity to the digital twins so that you can receive simulated telemetry data from the DeviceSimulator.
+Connect your Azure Digital Twins prefab in Unity to the digital twins so that you can receive simulated telemetry data from the `DeviceSimulator`.
 
 ## Add the Azure Digital Twins connection prefab
 
 Add the Azure Digital Twins connection prefab asset to your Unity scene and configure.
 
 1. Return to your Unity project.
-1. Select the `ADTConnection` game object in the Hierarchy. If it's missing from your hierarchy, drag the **Assets** > **ADTPrefabs** > **ADTConnection** prefab asset to your scene hierarchy.
+1. Select the `ADTConnection` game object in the **Hierarchy**. If it's missing from your hierarchy, drag the **Assets** > **ADTPrefabs** > **ADTConnection** prefab asset to your scene hierarchy.
 
    :::image type="content" source="../media/hierarchy-adt.png" alt-text="Screenshot of the Unity Hierarchy with the main scene highlighted.":::
 
-1. Open the text file that you created in the last exercise containing the key Azure Digital Twins configuration parameters *Azure_config_settings.txt* using a text editor. Alternatively, if your PowerShell session remains active, look for the output from your `get-content` command.
+1. Open the text file that you created in the last exercise, *Azure_config_settings.txt*, in a text editor. The file contains the key Azure Digital Twins configuration parameters. Alternatively, if your PowerShell session remains active, look for the output from your `get-content` command.
 1. From the *Azure_config_settings.txt* file or from the output of your `get-content` command in PowerShell, locate the key/value pair for the `signalRNegotiatePath` key and copy the value. It should look similar to:
 
    ```console
    https://myprojfuncappxxxxxxxxxx.azurewebsites.net/api/negotiate
    ```
 
-1. Add this value to the **Url** parameter under the **ADT Data Handler (Script)** Component with the **Function Url** obtained in Step 3. Include everything in the URL up to and including `…/api`. Don't include the last backslash nor the word "negotiate".
+1. Add this value to the **Url** parameter under **ADT Data Handler (Script)** with the **Function Url** obtained in Step 3. Include everything in the URL up to and including `…/api`. Don't include the last backslash nor the word "negotiate".
 
-   :::image type="content" source="../media/adt-function-url.png" alt-text="Screenshot of the Unity editor with the Azure Digital Twins connection prefab selected and the ADT data handler script added. Main scene is in play mode and shows the terrain prefab.":::
+   :::image type="content" source="../media/adt-function-url.png" alt-text="Screenshot of the Unity editor with the Azure Digital Twins connection prefab selected and the ADT data handler script added. Main scene is in play mode and shows the terrain prefab." lightbox="../media/adt-function-url.png":::
 
 1. **Save** the scene.
 
-Now that the Azure services are set up and the appropriate pointers are within your Unity scene, you can create a User Interface (UI) to visualize the operations data.
+Now that the Azure services are set up and the appropriate pointers are within your Unity scene, you can create a user interface (UI) to visualize the operations data.

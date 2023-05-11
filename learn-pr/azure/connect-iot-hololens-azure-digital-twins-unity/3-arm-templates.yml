@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.connect-iot-hololens-azure-digital-twins-unity.arm-templates
-title: Azure Resource Manager (ARM) templates
+title: Azure Resource Manager templates
 metadata:
   title: Azure Resource Manager templates
   description: Understand how to use several Azure services together, bring data to your Digital Twin, and add two-way communication in Unity and in mixed reality.
