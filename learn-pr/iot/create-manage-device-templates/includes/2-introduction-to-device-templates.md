@@ -18,7 +18,7 @@ As an example, a builder could create a device template for a connected fan that
 - Sends location property.
 - Sends fan motor error events.
 - Sends fan operating state.
-- Provides a writeable fan speed property.
+- Provides a writable fan speed property.
 - Provides a command to restart the device.
 - Gives you customized views of the device.
 - Gives you customized views that let you manage the device.

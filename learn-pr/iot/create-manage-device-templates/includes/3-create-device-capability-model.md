@@ -201,10 +201,10 @@ The following table shows the configuration settings for a property capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Writeable
+    writable
   :::column-end:::
   :::column:::
-    If the property isn't writeable, the device can report property values to IoT Central. If the property is writeable, the device can report property values to IoT Central and IoT Central can send property updates to the device.
+    If the property isn't writable, the device can report property values to IoT Central. If the property is writable, the device can report property values to IoT Central and IoT Central can send property updates to the device.
   :::column-end:::
 :::row-end:::
 :::row:::

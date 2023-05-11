@@ -4,8 +4,8 @@ Suppose you work for a company that needs to build an IoT solution, but lacks th
 
 In this module, you will:
 
- -  Review the Azure IoT Central UI tools for device management.
- -  Examine device management with device groups.
- -  Examine device management at scale using jobs.
+- Review the Azure IoT Central UI tools for device management.
+- Examine device management with device groups.
+- Examine device management at scale using jobs.
 
 By the end of this module, you will be able to describe the device management options that Azure IoT Central provides.
