@@ -85,14 +85,14 @@ Magnification tools can help players with low vision enlarge screen elements to 
 
 Online player communication tools like voice chat might be inaccessible for players with disabilities who can't hear what others are saying aloud.
 
-Players who can't speak aloud or choose not to are unable to respond to other players in the voice channel. AT like speech-to-text and text-to-speech are intended to make communication experiences between players accessible.
+Players who can't speak aloud or choose not to are unable to respond to other players in the voice channel. AT like speech to text and text to speech are intended to make communication experiences between players accessible.
 
 The gaming platform you're shipping on might provide these tools for certain chat functionality. For in-game chat, some of these tools require the use of specific APIs for games to make use of them. There are also nonplatform services that exist that developers can integrate as part of their games to provide such functionality, such as PlayFab Party chat.
 
-- **Speech-to-text**: Transcribes incoming speech from other players into text onscreen in real time. Players who can't hear voice chat can read what other players have said aloud on their screen.
-- **Text-to-speech**: Converts text typed by the player into synthesized audio that's read aloud to all other players in the voice channel. This feature allows players who can't speak verbally to have their thoughts expressed aloud to the rest of the players in their party.
+- **Speech to text**: Transcribes incoming speech from other players into text onscreen in real time. Players who can't hear voice chat can read what other players have said aloud on their screen.
+- **Text to speech**: Converts text typed by the player into synthesized audio that's read aloud to all other players in the voice channel. This feature allows players who can't speak verbally to have their thoughts expressed aloud to the rest of the players in their party.
 
-:::image type="content" source="../media/player-comms.png" alt-text="A screenshot that shows the Xbox Accessibility Game and chat transcription settings. Two columns of settings are shown. The left column of settings is labeled Party chat options. Underneath are two checkboxes: Speech-to-text and Text-to-speech. A list box is labeled Text-to-speech voice: Guy. The right column of settings is labeled Game transcription. Underneath are three checkboxes: Speech-to-text, Text-to-speech, and Let games read to me. A list box is labeled In-game chat voice: Microsoft Mark. Text on the screen reads: Turn on speech-to-text to transcribe other players' voices into text on your device, when you are in a system party chat session.":::
+:::image type="content" source="../media/player-comms.png" alt-text="A screenshot that shows the Xbox Accessibility Game and chat transcription settings. Two columns of settings are shown. The left column of settings is labeled Party chat options. Underneath are two checkboxes: Speech to text and Text to speech. A list box is labeled Text to speech voice: Guy. The right column of settings is labeled Game transcription. Underneath are three checkboxes: Speech to text, Text to speech, and Let games read to me. A list box is labeled In-game chat voice: Microsoft Mark. Text on the screen reads: Turn on speech to text to transcribe other players' voices into text on your device, when you are in a system party chat session.":::
 
 ### Captioning
 

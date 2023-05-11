@@ -1,6 +1,6 @@
-In the previous exercise, you learned how to create an application that read a text file, converted the contents to speech, and then created an audio file with the results. The results worked well for your company's video needs, but your manager would like to know if there was some way to exert greater control over the results of your application's text-to-speech operations. For example, your video team would like to have multiple virtual speakers in a single audio file, and they'd like to alter some of the playback parameters, such as the speaking rate and the pitch.
+In the previous exercise, you learned how to create an application that read a text file, converted the contents to speech, and then created an audio file with the results. The results worked well for your company's video needs, but your manager would like to know if there was some way to exert greater control over the results of your application's text to speech operations. For example, your video team would like to have multiple virtual speakers in a single audio file, and they'd like to alter some of the playback parameters, such as the speaking rate and the pitch.
 
-Fortunately for you, Azure Cognitive Services' text-to-speech features work with Speech Synthesis Markup Language (SSML), which you can use to customize the speech that your application will create.
+Fortunately for you, Azure Cognitive Services' text to speech features work with Speech Synthesis Markup Language (SSML), which you can use to customize the speech that your application will create.
 
 There's a wealth of information about SSML in the [Improve synthesis with Speech Synthesis Markup Language (SSML)](/azure/cognitive-services/speech-service/speech-synthesis-markup) article, and far too much information to include in this unit. With that in mind, this unit will contain a brief overview of SSML that will help you get started.
 
@@ -43,7 +43,7 @@ To specify different voices, you would wrap text within different `<voice>` elem
 
 > [!NOTE]
 > 
-> For a list of voices that you can use, see the **Text-to-speech** section of [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support#text-to-speech).
+> For a list of voices that you can use, see the **Text to speech** section of [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support.md?tabs=tts#prebuilt-neural-voices).
 
 ### Adjusting the speaking rate and pitch
 
@@ -111,7 +111,7 @@ The `<break>` element is excellent for controlling when a voice should speak, wh
 
 ### Helping the speech synthesis engine with unfamiliar words
 
-If your application requires words that Azure Cognitive Services' text-to-speech features have a difficult time pronouncing, you can enclose the difficult words within a `<phoneme>` element, then you can use the `ph` attribute to spell out the pronunciation using the appropriate phonetic alphabet as specified by the `alphabet` attribute.
+If your application requires words that Azure Cognitive Services' text to speech features have a difficult time pronouncing, you can enclose the difficult words within a `<phoneme>` element, then you can use the `ph` attribute to spell out the pronunciation using the appropriate phonetic alphabet as specified by the `alphabet` attribute.
 
 ```xml
 <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
@@ -125,7 +125,7 @@ If your application requires words that Azure Cognitive Services' text-to-speech
 > 
 > For more information about working with phonetic alphabets, see [Speech service phonetic sets](/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets).
 
-## Creating a text-to-speech application for SSML files
+## Creating a text to speech application for SSML files
 
 The process to create an application that will convert SSML to speech using Azure Cognitive Services is similar to the text file that you created in the previous exercise. With that in mind, your application will have to accomplish all of the following tasks.
 
