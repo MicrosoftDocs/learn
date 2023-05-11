@@ -5,7 +5,7 @@ There are several roles that work together to administer Microsoft Fabric for yo
 > [!NOTE]
 > See [What is Microsoft Fabric administration?](/fabric/admin/fabric-roles-responsibilities) for specific details on the different admin roles and responsibilities.
 
-As a Fabric admin, you work primarily in the Fabric admin portal. You may also need familiarize yourself with: the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), the [Microsoft 365 Security & Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center), [Azure Active Directory in the Azure portal](/azure/active-directory/fundamentals/active-directory-whatis), [PowerShell cmdlets](/powershell/power-bi/overview), and [administrative APIs and SDK](/rest/api/power-bi/admin).
+As a Fabric admin, you work primarily in the Fabric admin portal. You may also need to familiarize yourself with: the [Microsoft 365 admin center](/microsoft-365/admin/admin-overview/admin-center-overview), the [Microsoft 365 Security & Microsoft Purview compliance portal](/microsoft-365/compliance/microsoft-365-compliance-center), [Azure Active Directory in the Azure portal](/azure/active-directory/fundamentals/active-directory-whatis), [PowerShell cmdlets](/powershell/power-bi/overview), and [administrative APIs and SDK](/rest/api/power-bi/admin).
 
 ## Describe admin tasks
 
