@@ -9,9 +9,11 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Implement security through a pipeline using DevOps'
-summary: "This learning path helps you prepare for the Implement security through a pipeline credential using Azure DevOps. Learn how to configure and secure Azure Pipelines. You'll also get opportunities to practice hands-on skills. These skills include configuring secure access to pipeline resources, configuring, and validating permissions, configuring a project and repository structure, extending a pipeline, configuring pipelines to use variables and parameters securely, and managing identity for projects, pipelines, and agents."
+summary: "This learning path helps you prepare for the Implement security through a pipeline assessment using Azure DevOps. Learn how to configure and secure Azure Pipelines. You'll also get opportunities to practice hands-on skills. These skills include configuring secure access to pipeline resources, configuring, and validating permissions, configuring a project and repository structure, extending a pipeline, configuring pipelines to use variables and parameters securely, and managing identity for projects, pipelines, and agents."
 prerequisites: |
-  - None
+  - Basic knowledge of Azure DevOps.
+  - Basic knowledge of security concepts like identities and permissions.
+  - Experience using the Azure portal to create resources like Azure Key Vault and set permissions.
 iconUrl: /training/achievements/generic-trophy.svg
 hidden: true
 levels:

@@ -16,7 +16,7 @@ In this unit, you'll learn how to secure your pipeline secrets using Azure DevOp
 
     ![Screenshot of Azure Pipelines showing how to add a new secret variable in the pipeline UI.](../media/new-secret-variable-pipeline.png)
 
-## Create a secret in Azure DevOps Variable Group
+## Create a secret in Azure DevOps variable group
 
 1. Open your Azure DevOps project and navigate to the Pipelines section.
 2. Click on Library in the left-hand menu.
@@ -28,7 +28,7 @@ In this unit, you'll learn how to secure your pipeline secrets using Azure DevOp
 
     ![Screenshot of Azure Pipelines showing how to add a new variable to the Variable Group.](../media/new-variable-variable-group.png)
 
-## Allow your Variable Group to be used in your pipeline
+## Allow variable groups use in your pipeline
 
 1. Open your Variable Group.
 2. Click in the Pipeline permissions button.

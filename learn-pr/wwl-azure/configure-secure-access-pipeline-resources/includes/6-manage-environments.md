@@ -1,10 +1,12 @@
 You can use Environments to isolate different application stages, such as development, testing, and production. Azure DevOps provides an environment management feature that makes it easy to manage the environments used in your pipelines. In this unit, you'll learn how to configure and manage environments and how to use them in YAML pipelines.
 
-## Why use Environment in Azure DevOps?
+In this unit, learn how to create, manage and consume environments in Azure DevOps.
+
+## Why use environments in Azure DevOps?
 
 Using Environments in Azure DevOps provides traceability from code to the physical deployment targets, improve resource health/availability visibility, and support zero downtime deployments using deployment strategies (runOnce, canary, blueGreen, and rolling). Also, you can easily manage the deployment of the application to different stages.
 
-## Step 1: Configuring Environments
+## Configure environments
 
 While an environment is a grouping of resources, the resources represent actual deployment targets. The Kubernetes resource and virtual machine resource types are currently supported.
 
@@ -22,7 +24,7 @@ While an environment is a grouping of resources, the resources represent actual 
     > [!NOTE]
     > Adding resources to the environment is optional. You can create an empty environment and reference it from deployment jobs. This lets you record the deployment history against the environment.
 
-## Step 2: Managing Environments and security
+## Manage environments and security
 
 1. Go to the Environments page.
 2. Select an environment, such as Development.
@@ -34,7 +36,7 @@ While an environment is a grouping of resources, the resources represent actual 
 
     ![Screenshot of Azure Pipelines showing how to configure environments and add pipeline permissions.](../media/add-pipeline-environment.png)
 
-## Step 3: Using Environments in YAML pipelines
+## Use environments in YAML pipelines
 
 Here's an example YAML pipeline that deploys an application to the Development environment:
 
