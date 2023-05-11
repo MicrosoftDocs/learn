@@ -13,14 +13,14 @@ Most of the same remote actions available on physical devices, are available for
  -  Full Scan
  -  Update Windows Defender
 
-There are three remote actions that are unique to Cloud PCs and will be available if a Cloud PC is selected.
+There are three remote actions that are unique to Cloud PCs and are available if a Cloud PC is selected.
 
  -  Reprovisioning
  -  Resize
  -  Collect diagnostics
 ### Reprovisioning
 
-The Reprovision remote action lets admins reprovision Cloud PCs. When a reprovision is triggered, the Cloud PC will be deleted and recreated as a new Cloud PC. All user data, applications, customizations, and the like will be deleted.
+The Reprovision remote action allows admins to reprovision Cloud PCs. When this action is initiated, the Cloud PC is reset to its initial state. Note, that user data, applications, and customizations aren't automatically deleted - this depends on the specific configuration of the Cloud PC and the policies in place to handle user data during reprovisioning. It's recommended to always ensure data backup before initiating a reprovision.
 
  -  You're testing different Cloud PC configurations.
  -  Your provisioned Cloud PC is misbehaving.
@@ -56,8 +56,8 @@ Resizing a Cloud PC involves the following steps:
 3.  Select **Resize**. 
     -  When triggering a resize, the Cloud PC will be rebooted and the user will be immediately disconnected from their current session. Make sure the user saves all their work to avoid any potential data loss.
     -  If there are available licenses, the upgrade/downgrade will take place.
-    -  If you have a combination of paid and trial licenses, the resize feature will use your paid licenses first. After these licenses run out, the resize operation will use your trial licenses.
-    -  If there are no licenses in your inventory, the resizing will fail. You can contact your procurement admin to request more licenses. After the license has been purchased and added to the inventory in the Microsoft Admin Center, you can retry the resize operation.
+    -  The resize feature will prioritize your paid licenses when you have a mix of paid and trial licenses. Once your paid licenses are exhausted, the resize operation will utilize your trial licenses.
+    -  The resizing process will be unsuccessful if your inventory lacks the necessary licenses. To rectify this, contact your procurement administrator to acquire additional licenses. Once additional licenses have been purchased and incorporated into the inventory via the Microsoft Admin Center, you can attempt the resizing operation again.
 
 ### Learn More
 -  [Device management overview for Cloud PCs](/windows-365/enterprise/device-management-overview?azure-portal=true)
