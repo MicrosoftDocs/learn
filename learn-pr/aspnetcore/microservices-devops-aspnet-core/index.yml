@@ -24,7 +24,7 @@ prerequisites: |
   - Conceptual knowledge of containers and AKS.
   - Access to an Azure subscription with **Owner** permissions.
   - Access to a GitHub account.
-  - Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, set up as described in [Development container](../includes/dev-containers/required.md).
+  - Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, including Docker and the necessary Visual Studio Code extensions installed.
 levels:
   - intermediate
 roles:
