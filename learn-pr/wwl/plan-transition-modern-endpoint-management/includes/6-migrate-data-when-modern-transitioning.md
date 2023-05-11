@@ -8,7 +8,7 @@ Starting with Windows 10, Azure Active Directory (Azure AD) users gain the abili
 
 Enterprise State Roaming also offers:
 
- -  **Separation of corporate and consumer data**. Organizations have full control over their data, ensuring that there's no mixing of corporate data within a consumer cloud account or consumer data within an enterprise cloud account.
+ -  **Separation of corporate and consumer data**. Organizations possess complete control over their data, guaranteeing that there's no commingling of corporate data within a consumer cloud account or consumer data within an enterprise cloud account.
  -  **Enhanced security**. Data is automatically encrypted before leaving the user’s Windows device by using Azure Rights Management (Azure RMS), and data stays encrypted at rest in the cloud. All content stays encrypted at rest in the cloud, except for the namespaces, like settings names and Windows app names.
  -  **Better management and monitoring**. Provides control and visibility over who syncs settings in your organization and on which devices through the Azure AD portal integration.
 

@@ -6,12 +6,12 @@ To utilize modern methods, it's essential to have Windows 11 installed on the ta
 
 Modern deployment can change an installed Windows 11 operating system in many ways, such as:
 
- -  Removing pre-installed software.
+ -  Removing preinstalled software.
  -  Upgrading a Windows 11 edition.
  -  Joining a Windows 11 device to AD DS or Microsoft Azure Active Directory (Azure AD).
- -  When enrolling a Windows 11 device in a mobile device management (MDM) solution like Configuration Manager or Intune, it enables the device to undergo a final stage of more advanced customization. This includes configuring various settings, policies, and management features specific to the MDM solution being used.
+ -  Enrolling a Windows 11 device in a mobile device management (MDM) solution such as Configuration Manager or Intune facilitates an advanced customization phase for the device. During this stage, various settings, policies, and management features specific to the MDM solution are configured, enhancing the device's overall customization and management capabilities.
  -  Restricting the Administrator account creation.
- -  Creating and auto-assigning devices to configuration groups based on a device's profile.
+ -  Creating and autoassigning devices to configuration groups based on a device's profile.
  -  Customizing OOBE content specific to the organization.
 
 ### Modern transition considerations
@@ -22,10 +22,10 @@ As you begin the transition from a traditional delivery of an OS to a more moder
 |------------------|:-----:|:-----------------------:|:--------------------:|
 | Require the creation of golden images | Yes | Yes | No |
 | Ability to reset existing OS | No | No | Yes |
-| Ability to perform a bare metal build | Yes | Yes | No |
+| Ability to perform a bare metal builds | Yes | Yes | No |
 | Can be used with any preinstalled operating system | Yes | Yes | Windows 10/11 only |
 | Installation of applications during OS deployment/provisioning | Yes | Yes | Yes |
-| Deployment of applications post-build | No | Yes | Yes |
+| Deployment of applications post-builds | No | Yes | Yes |
 | Migration of user data | Yes - USMT | Yes - USMT | Yes - OneDrive/ESR |
 | Perform an in-place upgrade | Yes | Yes | Yes (in combination with Configuration Manager) |
 
@@ -44,4 +44,4 @@ While modern methods of management are preferred due to their ease of configurat
  -  Deploying a series of complex applications and their dependencies to a device that is already co-managed.
  -  Dealing with hardware failures on a device that necessitate network connectivity for application installation or joining a corporate Active Directory domain.
 
-These situations typically arise when addressing tasks such as client storage drive replacements, performing bare-metal deployments, or when the devices lack support for an upgrade path to the desired operating system.
+These scenarios commonly occur when handling tasks such as replacing client storage drives, conducting bare-metal deployments, or dealing with devices that can't be upgraded to the desired operating system.

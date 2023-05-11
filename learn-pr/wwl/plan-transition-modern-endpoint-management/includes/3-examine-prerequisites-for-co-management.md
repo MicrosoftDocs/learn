@@ -35,7 +35,7 @@ After you've joined your on-premises Active Directory devices to Azure AD, you c
 
 ### Transition workloads to Intune
 
-Once you have completed the necessary preparations in Intune and configured your Windows devices for co-management, the next step is to determine the specific workloads that you want to transition to Intune. However, before making any switches, it's crucial to ensure that the corresponding workload has been appropriately configured and deployed within Intune. These steps ensure that all workloads on your devices are consistently managed by one of the designated management tools.
+Once you have completed the necessary preparations in Intune and configured your Windows devices for co-management, the next step is to determine the specific workloads that you want to transition to Intune. However, before making any switches, it's crucial to ensure that the corresponding workload has been appropriately configured and deployed within Intune. By following these steps, you can ensure that one of the designated management tools consistently manages all workloads on your devices.
 
 The following list features some of the workloads that you can transition to Intune:
 
@@ -59,6 +59,6 @@ The following list features some of the workloads that you can transition to Int
  -  Device Configuration
      -  Device Configuration is essentially the settings you configure using Group Policy.
  -  Microsoft 365 Select-to-Run apps
-     -  After moving the workload, the app shows up in the Company Portal on the device.
+     -  Once the workload has been moved, the app will appear in the Company Portal on the device.
 
 The recommended approach is to prioritize devices with simple configuration settings and migrate those workloads to Intune first. This process may include tasks such as configuring Endpoint Protection, Windows Update policies, software deployment, and device configuration policies that align with existing Group Policy settings.
