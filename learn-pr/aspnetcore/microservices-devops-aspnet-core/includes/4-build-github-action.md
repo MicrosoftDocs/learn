@@ -22,7 +22,7 @@ The `build-and-push-docker-image` job in the GitHub action takes the following s
   - `Build and push Docker image` uses the `docker/build-push-action@v1.1.0` action to build the container image and push it to Container Registry.
 
 > [!IMPORTANT]
-> Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice is kept in a separate repository.
+> Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice would be kept in a separate repository.
 
 Complete the following steps to create the GitHub Actions build action:
 
@@ -81,7 +81,7 @@ You've finished creating the build workflow for your CI/CD pipeline.
 
 ## Trigger the build
 
-The Marketing department wants to start a campaign to track discount code usage, so they can better understand which discount codes are most effective in boosting sales. To support this campaign, make the following changes in the code.
+The Marketing department wants to start a campaign to track discount code usage, so they can better understand which discount codes are the most effective in boosting sales. To support this campaign, make the following changes in the code.
 
 1. In your forked repository, select the **:::no-loc text="Code":::** tab, and navigate to and open the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file.
 1. Select the edit icon to open the file for editing.
@@ -100,15 +100,15 @@ The Marketing department wants to start a campaign to track discount code usage,
 
 ## Monitor the build
 
-To view the real-time progress of the build, complete the following steps:
+To view the real-time progress of the build:
 
-1. In your forked repository, select the **:::no-loc text="Actions":::** tab.
+1. In your repository, select the **:::no-loc text="Actions":::** tab.
 1. Select the most recent workflow run listed for the **:::no-loc text="eShop build":::** workflow. The name of the run is the commit message you used in the previous step.
 
    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="Screenshot that shows the most recent eShop build on the workflows page." lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
 
 1. Select the **:::no-loc text="build-and-push-docker-image":::** task.
-1. Wait a few minutes. Note that the build fails on the `Run unit tests` step, and the `Build and push Docker image` step doesn't run because the previous step failed.
+1. Wait a few minutes. Observe that the build fails on the `Run unit tests` step, and the `Build and push Docker image` step doesn't run because the previous step failed.
 
    :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="Screenshot that shows build and push docker image selected, and a failure next to Run unit tests in the workflow steps." lightbox="../media/4-build-github-action/failed-unit-tests.png":::
 
@@ -119,7 +119,7 @@ To view the real-time progress of the build, complete the following steps:
 
    This edit causes the test to always pass. This test is for illustrative purposes only. Real tests should test actual functionality.
 
-1. The build workflow triggers automatically. When the build completes successfully, all steps are prefixed with a check mark. Expand any task to show the output generated during its execution. For example:
+1. The build workflow triggers automatically. When the build completes successfully, all steps are prefixed with a check mark. Expand any task to show the output generated during its execution, as in the following example:
 
    :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="Screenshot showing output for a successful build." lightbox="../media/4-build-github-action/build-workflow-success.png":::
 

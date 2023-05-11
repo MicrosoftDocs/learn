@@ -77,7 +77,7 @@ You can find the *build.yml* and *deploy.yml* GitHub Actions definitions in the 
 
 ## Trigger a deployment
 
-To trigger a deployment, you increment the `appVersion` in the coupon service's Helm chart. Helm charts define service specifications in a YAML template format. It's important to increment the app version in the Helm chart to cause the pod to be replaced when the chart is deployed to AKS with `helm upgrade`.
+To trigger a deployment, you increment the `appVersion` in the coupon service's Helm chart. Helm charts define service specifications in a YAML template format. It's important to increment the app version in the Helm chart to cause the pod to be replaced when you deploy the chart to AKS with `helm upgrade`.
 
 1. From the **:::no-loc text="Code":::** tab in your forked repository, open the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file for editing, and update the `appVersion` property value to `1.1.0`:
 
@@ -92,9 +92,9 @@ To trigger a deployment, you increment the `appVersion` in the coupon service's 
 
    :::image type="content" source="../media/5-deploy-github-action/eshop-deploy-workflow.png" alt-text="Screenshot showing the eShop deploy workflow listed on the workflows page." lightbox="../media/5-deploy-github-action/eshop-deploy-workflow.png":::
 
-1. Select the **:::no-loc text="deploy-to-aks":::** task to see details of the `deploy-to-aks` job for this workflow run. Between **:::no-loc text="Set up job":::** and **:::no-loc text="Complete job":::** are the custom steps the `deploy-to-aks` job defines.
+1. Select the **:::no-loc text="deploy-to-aks":::** task to see details of the `deploy-to-aks` job for this workflow run. Between **:::no-loc text="Set up job":::** and **:::no-loc text="Complete job":::** are the custom steps that the `deploy-to-aks` job defines.
 
-   :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Screenshot that shows deploy to aks job selected with a list of all the steps completed." border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
+   :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Screenshot that shows the deploy-to-aks job selected with a list of all the steps completed." border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
 
     
 
@@ -116,7 +116,7 @@ To trigger a deployment, you increment the `appVersion` in the coupon service's 
    coupon-74fd48bbd-rqgfd         0/1     ContainerCreating   0             22s
    ```
 
-   In the preceding output, notice that a new `coupon` pod was created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
+   In the preceding output, notice that a new `coupon` pod is created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
 1. Once the new pod's *:::no-loc text="Ready":::* status displays `1/1`, press **Ctrl+C** to stop the `kubectl` watch mode.
 1. Run the following command to check the coupon service deployment history:
@@ -141,7 +141,7 @@ Complete the following steps to verify that your change is deployed:
 1. Sign in from the **:::no-loc text="LOGIN":::** page.
 1. Add your favorite products to the shopping bag by selecting the images.
 1. Select the shopping bag icon in the upper right, and select **:::no-loc text="CHECKOUT":::**.
-1. Enter the code *:::no-loc text="DISC-5":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a five USD discount, and select **:::no-loc text="APPLY":::**.
+1. Enter the code *:::no-loc text="DISC-5":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a five dollar USD discount, and select **:::no-loc text="APPLY":::**.
 1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 1. Back in the command shell, select the **:::no-loc text="Centralized logging":::** URL.
 1. In the Seq logs search text box, enter *Get coupon DISC-5* and press Enter.

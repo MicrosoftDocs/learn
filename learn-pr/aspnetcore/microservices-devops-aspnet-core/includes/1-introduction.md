@@ -2,7 +2,7 @@ Imagine that you work as a software developer for an online retailer named *:::n
 
 To fulfill project requirements and enhance your team's agile development practices, you decide to implement continuous integration and continuous deployment (CI/CD) through [GitHub Actions](https://help.github.com/actions/getting-started-with-github-actions/about-github-actions). CI/CD pipelines use a series of automated steps to compile, test, configure, and deploy apps from build through all environments.
 
-Because each microservice deploys independently, you start by enabling CI/CD for a single service. You begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers), the companion reference app for the [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices) guide.
+You begin with a simplified, revamped version of [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eShopOnContainers), the companion reference app for the [.NET Microservices: Architecture for Containerized .NET Applications](/dotnet/architecture/microservices) guide. Because each microservice deploys independently, you start by enabling CI/CD for a single service.
 
 The new app version includes a discount coupon that buyers can use in the shopping basket at checkout time. An ASP.NET Core web API named the *coupon service* supports the new feature. In this module, you use GitHub Actions to implement a CI/CD pipeline for the coupon service.
 
@@ -24,6 +24,6 @@ This module guides you through the following steps:
 - Conceptual knowledge of containers and AKS.
 - Access to an Azure subscription with **Owner** permissions.
 - Access to a GitHub account.
-- Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, set up as described in [Development container](../../includes/dev-containers/required.md).
+- Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, set up as described in the following section.
 
 [!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]

@@ -1,6 +1,6 @@
 In this unit, you complete the following tasks:
 
-- Verify the app deployed correctly.
+- Verify that the app deployed correctly.
 - Create an Azure Active Directory (Azure AD) service principal to deploy to Azure Container Registry and Azure Kubernetes Service (AKS) from GitHub.
 - Create secrets to store sensitive data that GitHub Actions uses.
 
@@ -22,7 +22,7 @@ You can begin exploring these services (when ready):
 
 Even though the app has deployed, it might take a few minutes to come online. Take the following steps to verify that the app is deployed and online:
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically, every 10 seconds.
+1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
    :::image type="content" source="../media/3-permissions-secrets/health-check.png" alt-text="Screenshot that shows the Health check page." border="true" lightbox="../media/3-permissions-secrets/health-check.png":::
 
@@ -44,7 +44,7 @@ Even though the app has deployed, it might take a few minutes to come online. Ta
 
    1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
-You've verified that the app successfully deployed to AKS and is working properly. The discount code feature is supported by the coupon service. Next, you build a CI/CD pipeline to automate the build and deployment of the coupon service.
+You've verified that the app successfully deployed to AKS and is working properly. The coupon service supports the discount code feature. Next, you build a CI/CD pipeline to automate the build and deployment of the coupon service.
 
 ## Create a service principal to deploy from GitHub
 
@@ -56,7 +56,7 @@ GitHub Actions publishes the container image to Azure Container Registry, so the
    az account show --query 'id' --output tsv
    ```
 
-1. Run the following command to create an Azure AD service principal to allow access from GitHub. Replace the `<subscription-id>` placeholder with the Subscription ID you just obtained.
+1. Run the following command to create an Azure AD service principal to allow access from GitHub. Replace the `<subscription-id>` placeholder with your Subscription ID.
 
    ```azurecli
    az ad sp create-for-rbac --sdk-auth --name http://eshop-learn-sp --role Contributor --scopes /subscriptions/<subscription-id>
@@ -86,13 +86,13 @@ GitHub Actions publishes the container image to Azure Container Registry, so the
    > [!NOTE]
    > The deprecated `--sdk-auth` warning is a known issue.
 
-1. Copy the preceding JSON output in the brackets. You use this JSON information in the next step.
+1. Copy the preceding JSON output and brackets. You use this JSON information in the next step.
 
 ## Create the secrets
 
 The GitHub Actions runner uses credentials to interact with Container Registry and AKS. The service principal and the credentials for the container registry are sensitive information. It's best to store sensitive information as encrypted *secrets* in a secure location.
 
-Complete the following steps to securely store the sensitive information as environment variables in your repository. Repository administrators should manage the secrets to be accessed by the GitHub Actions runner.
+Complete the following steps to securely store the sensitive information as environment variables in your repository. Repository administrators should manage the secrets for the GitHub Actions runner to access.
 
 1. In your forked GitHub repository, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets and variables":::** > **:::no-loc text="Actions":::**.
 1. On the **:::no-loc text="Actions secrets and variables":::** page, select **:::no-loc text="New repository secret":::**.
@@ -116,7 +116,7 @@ Complete the following steps to securely store the sensitive information as envi
    cat ../../config.txt
    ```
 
-   With all five secrets configured, you should see the following list under **:::no-loc text="Repository secrets":::** on the **:::no-loc text="Actions secrets and variables":::** page:
+   When all five secrets are configured, you should see the following list under **:::no-loc text="Repository secrets":::** on the **:::no-loc text="Actions secrets and variables":::** page:
 
    :::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Screenshot that shows the list of Repository secrets on the Actions secrets and variables page." lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
