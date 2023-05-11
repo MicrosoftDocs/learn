@@ -1,4 +1,5 @@
 
+
 Managing Cloud PCs is just like managing any other device. You apply configuration profiles and assign apps. You apply quality and feature updates using update rings. You apply security policies in the same manor as physical devices. While you might specify separate policies just for Cloud PCs, the method is no different.
 
 ### Remote actions

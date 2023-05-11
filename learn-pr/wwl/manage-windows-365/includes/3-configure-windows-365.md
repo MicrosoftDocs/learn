@@ -1,4 +1,5 @@
 
+
 Setting up Windows 365 is primarily done in the Endpoint Manager admin center. The following is a general summary of the basic steps needed to set up your system to provision on-demand Cloud PCs to your users.
 
 ### Assign licenses to users
