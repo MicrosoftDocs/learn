@@ -50,9 +50,9 @@ To get the logs from the control plane components, you need to enable Diagnostic
 
 :::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of Diagnostic settings. The Add diagnostic setting button is highlighted." lightbox="../media/6-enable-diagnostic-settings.png":::
 
-:::image type="content" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of Diagnostic settings. Kubernetes API Server, Kubernetes Controller Manager, Kubernetes Scheduler categories are selected."  lightbox="../media/6-control-plane-diagnostic-settings.png":::
-
 Highlighted below are the most important control plane components. Make sure you select to push to the Log Analytics Workspace and select the desired one.
+
+:::image type="content" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of Diagnostic settings. Kubernetes API Server, Kubernetes Controller Manager, Kubernetes Scheduler categories are selected."  lightbox="../media/6-control-plane-diagnostic-settings.png":::
 
 After this, you can query the logs in the Logs view:
 

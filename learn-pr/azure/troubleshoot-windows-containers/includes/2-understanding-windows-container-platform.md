@@ -31,7 +31,7 @@ In the image above, you can see a diagram of the operation calls from a Kubernet
 Points of failure could appear at the container, runtime, HCS/HNS, and kubelet level. If you're troubleshooting a Windows container environment, here are some general troubleshooting steps you can follow:
 
 - Check container or application logs.
-- Check for host OS and container runtime logs
+- Check for host OS and container runtime logs.
 - Restart the runtime.
 - Prune all resources.
 - Make sure you're using the latest version. Upgrade to it if it's not the case.
