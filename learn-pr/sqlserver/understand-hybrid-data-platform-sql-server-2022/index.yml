@@ -16,6 +16,7 @@ abstract: |
   *   Describe how Azure Arc-enabled SQL Server works
   *   Understand how to implement near real time analytics with Azure Synapse Link for SQL Server
   *   Explain cloud connected technologies that support security with Azure Active Directory authentication
+  *   Explore Microsoft Purview access policies for SQL Server
   *   Describe the services that support SQL Server data files in a hybrid platform
 prerequisites: |
   * Basic working knowledge of SQL Server, including deployment, security, query processing, and high availability
@@ -34,6 +35,7 @@ units:
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.azure-arc-enabled
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.near-real-time-analytics-synapse-link-for-sql
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.azure-active-directory-azure-ad-authentication
+- learn.wwl.understand-hybrid-data-platform-sql-server-2022.microsoft-purview-with-sql-server
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.summary
 badge:

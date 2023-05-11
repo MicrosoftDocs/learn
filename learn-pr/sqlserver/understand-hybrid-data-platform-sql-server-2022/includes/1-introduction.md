@@ -56,6 +56,7 @@ At the end of this module, you will be able to:
 - Discover best practices for disaster recovery using Azure SQL Managed Instance
 - Understand how to implement near real time analytics with Azure Synapse Link for SQL Server
 - Explain cloud connected technologies that support security with Azure Active Directory (Azure AD) authentication
+- Explore Microsoft Purview access policies for SQL Server
 
 ## Prerequisites
 
