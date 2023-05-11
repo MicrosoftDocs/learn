@@ -6,8 +6,8 @@ The JSON file that defines the device model uses the Digital Twin Definition Lan
 
 A typical IoT device is made up of:
 
- -  Custom parts, which are the things that make your device unique.
- -  Standard parts, which are things that are common to all devices.
+- Custom parts, which are the things that make your device unique.
+- Standard parts, which are things that are common to all devices.
 
 These parts are called interfaces in a device model. Interfaces define the details of each part your device implements. Interfaces are reusable across device models. In DTDL, a component refers to another interface, which may defined in a separate DTDL file or in a separate section of the file.
 
@@ -15,30 +15,30 @@ These parts are called interfaces in a device model. Interfaces define the detai
 
 To create a device model, you can:
 
- -  Use IoT Central to create a custom model from scratch.
- -  Import a model from a JSON file. A device builder might have used Visual Studio Code to author a device capability model for your application.
- -  Select one of the devices from the Device Catalog. This option imports the device capability model that the manufacturer has published for this device. A device capability model imported like this is automatically published.
+- Use IoT Central to create a custom model from scratch.
+- Import a model from a JSON file. A device builder might have used Visual Studio Code to author a device capability model for your application.
+- Select one of the devices from the **Device Catalog**. This option imports the device capability model that the manufacturer has published for this device. A device capability model imported like this is automatically published.
 
 ## Manage a device model
 
 After you create a device model, you can:
 
- -  Add capabilities and inherited interfaces to the model. A model must have at least one interface.
- -  Edit model metadata, such as its ID, namespace, and name.
- -  Delete the model.
+- Add capabilities and inherited interfaces to the model. A model must have at least one interface.
+- Edit model metadata, such as its ID, namespace, and name.
+- Delete the model.
 
 ## Interfaces and components
 
 To view and manage the interfaces in your device model:
 
-1.  Go to Device Templates page and select the device template you created. The interfaces are listed in the Models section of the device template.
-2.  Select the ellipsis to add an inherited interface or component to the root interface.
-3.  To export a model or interface select Export.
-4.  To view or edit the DTDL for an interface or a capability, select Edit DTDL.
+1. Go to **Device templates** page and select the device template you created. The interfaces are listed in the **Model** section of the device template.
+2. Select the ellipsis to add an inherited interface or component to the root interface.
+3. To export a model or interface select **Export**.
+4. To view or edit the DTDL for an interface or a capability, select **Edit DTDL**.
 
 ### Capabilities
 
-Select + Add capability to add capability to an interface or component. For example, you can add Target Temperature capability to a SensorTemp component.
+Select **+ Add capability** to add capability to an interface or component. For example, you can add *Target Temperature* capability to a *SensorTemp* component.
 
 ### Telemetry
 
@@ -56,10 +56,10 @@ The following table shows the configuration settings for a telemetry capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Display Name
+    Display name
   :::column-end:::
   :::column:::
-    The display name for the telemetry value used on dashboards and forms.
+    The display name for the telemetry value used on views and forms.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -72,15 +72,15 @@ The following table shows the configuration settings for a telemetry capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Capability Type
+    Capability type
   :::column-end:::
   :::column:::
-    Telemetry.
+    Telemetry
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Semantic Type
+    Semantic type
   :::column-end:::
   :::column:::
     The semantic type of the telemetry, such as temperature, state, or event. The choice of semantic type determines which of the following fields are available.
@@ -91,7 +91,7 @@ The following table shows the configuration settings for a telemetry capability:
     Schema
   :::column-end:::
   :::column:::
-    The telemetry data type, such as double, string, or vector. The available choices are determined by the semantic type. Schema isn't available for the event and state semantic types.
+    The telemetry data type such as double, string, or vector. The available choices are determined by the semantic type. Schema isn't available for the event and state semantic types.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -99,12 +99,12 @@ The following table shows the configuration settings for a telemetry capability:
     Severity
   :::column-end:::
   :::column:::
-    Only available for the event semantic type. The severities are Error, Information, or Warning.
+    Only available for the event semantic type. The severities are **Error**, **Information**, or **Warning**.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    State Values
+    State values
   :::column-end:::
   :::column:::
     Only available for the state semantic type. Define the possible state values, each of which has display name, name, enumeration type, and value.
@@ -115,15 +115,15 @@ The following table shows the configuration settings for a telemetry capability:
     Unit
   :::column-end:::
   :::column:::
-    A unit for the telemetry value, such as mph, %, or °C.
+    A unit for the telemetry value, such as **mph**, **%**, or **°C**.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Display Unit
+    Display unit
   :::column-end:::
   :::column:::
-    A display unit for use on dashboards and forms.
+    A display unit for use on views and forms.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -143,6 +143,7 @@ The following table shows the configuration settings for a telemetry capability:
   :::column-end:::
 :::row-end:::
 
+Additional customizations are available depending on the schema value. For example, if the schema is **String**, you can specify the minimum and maximum length of the string.
 
 ### Properties
 
@@ -160,10 +161,10 @@ The following table shows the configuration settings for a property capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Display Name
+    Display name
   :::column-end:::
   :::column:::
-    The display name for the property value used on dashboards and forms.
+    The display name for the property value used on views and forms.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -176,7 +177,7 @@ The following table shows the configuration settings for a property capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Capability Type
+    Capability type
   :::column-end:::
   :::column:::
     Property.
@@ -184,7 +185,7 @@ The following table shows the configuration settings for a property capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Semantic Type
+    Semantic type
   :::column-end:::
   :::column:::
     The semantic type of the property, such as temperature, state, or event. The choice of semantic type determines which of the following fields are available.
@@ -211,12 +212,12 @@ The following table shows the configuration settings for a property capability:
     Severity
   :::column-end:::
   :::column:::
-    Only available for the event semantic type. The severities are Error, Information, or Warning.
+    Only available for the event semantic type. The severities are **Error**, **Information**, or **Warning**.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    State Values
+    State values
   :::column-end:::
   :::column:::
     Only available for the state semantic type. Define the possible state values, each of which has display name, name, enumeration type, and value.
@@ -227,15 +228,15 @@ The following table shows the configuration settings for a property capability:
     Unit
   :::column-end:::
   :::column:::
-    A unit for the property value, such as mph, %, or °C.
+    A unit for the property value, such as **mph**, **%**, or **°C**.
   :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
-    Display Unit
+    Display unit
   :::column-end:::
   :::column:::
-    A display unit for use on dashboards and forms.
+    A display unit for use on views and forms.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -255,7 +256,6 @@ The following table shows the configuration settings for a property capability:
   :::column-end:::
 :::row-end:::
 
-
 ### Commands
 
 You can call device commands from IoT Central. Commands optionally pass parameters to the device and receive a response from the device. For example, you can call a command to reboot a device in 10 seconds.
@@ -272,10 +272,10 @@ The following table shows the configuration settings for a command capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Display Name
+    Display name
   :::column-end:::
   :::column:::
-    The display name for the command used on dashboards and forms.
+    The display name for the command used on views and forms.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -288,7 +288,7 @@ The following table shows the configuration settings for a command capability:
 :::row-end:::
 :::row:::
   :::column:::
-    Capability Type
+    Capability type
   :::column-end:::
   :::column:::
     Command.

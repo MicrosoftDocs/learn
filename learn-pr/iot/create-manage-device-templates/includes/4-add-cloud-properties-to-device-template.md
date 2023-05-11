@@ -12,10 +12,10 @@ The following table shows the configuration settings for a cloud property:
 :::row-end:::
 :::row:::
   :::column:::
-    Display Name
+    Display name
   :::column-end:::
   :::column:::
-    The display name for the cloud property value used on dashboards and forms.
+    The display name for the cloud property value used on views and forms.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -28,10 +28,10 @@ The following table shows the configuration settings for a cloud property:
 :::row-end:::
 :::row:::
   :::column:::
-    Semantic Type
+    Semantic type
   :::column-end:::
   :::column:::
-    The semantic type of the property, such as temperature, state, or event. The choice of semantic type determines which of the following fields are available.
+    The semantic type of the property, such as none or state. The choice of semantic type determines which of the following fields are available.
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -40,5 +40,37 @@ The following table shows the configuration settings for a cloud property:
   :::column-end:::
   :::column:::
     The cloud property data type, such as double, string, or vector. The available choices are determined by the semantic type.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Unit
+  :::column-end:::
+  :::column:::
+    A unit for the cloud property value, such as **mph**, **%**, or **°C**.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Display unit
+  :::column-end:::
+  :::column:::
+    A display unit for use on views and forms.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Comment
+  :::column-end:::
+  :::column:::
+    Any comments about the cloud property capability.
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    Description
+  :::column-end:::
+  :::column:::
+    A description of the cloud property capability.
   :::column-end:::
 :::row-end:::

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/14/2022
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -17,15 +17,15 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A developer needs to create a device template in Azure IoT Central. What are the four components of a device template?"
+  - content: "A developer needs to create a device template in Azure IoT Central. What are the two components of a device template?"
     choices:
-    - content: "Device capability model, Cloud properties, Views, and Customizations."
+    - content: "Device capability model and Views."
       isCorrect: true
-      explanation: "Correct. The four components are Device capability model, Cloud properties, Views, and Customizations."
-    - content: "Device connectivity model, Cloud properties, Views, and Customizations."
+      explanation: "Correct. The two components are the device capability model and the views."
+    - content: "Device connectivity model and Views."
       isCorrect: false
       explanation: "Incorrect. \"Device connectivity model\" is not a component of a device template."
-    - content: "Device capability model, Cloud properties, Views, and Controls."
+    - content: "Device capability model and Controls."
       isCorrect: false
       explanation: "Incorrect. \"Controls\" is not a component of a device template."
   - content: "The device model section of a device template is made up of one or more interfaces. Which of the following choices describes the items that can be added to an interface?"
