@@ -65,7 +65,7 @@ In this task, you'll deploy Microsoft Sentinel connectors to Azure Activity.
 
 1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
 
-1. Select the **Parameters** tab, choose your *<yourName>-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
+1. Select the **Parameters** tab, choose your *yourName-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
 
 1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action will apply the subscription configuration to send the information to the Log Analytics workspace.
 
