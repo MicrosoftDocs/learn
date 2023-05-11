@@ -1,10 +1,10 @@
-﻿Kubernetes, also known as "K8s" informally, is one of the most well-liked tools for managing the deployment, scaling, and operation of containerized applications. It is maintained by the Cloud Native Computing Foundation (CNCF).
+﻿Kubernetes, also known as "K8s" informally, is one of the most well-liked tools for managing the deployment, scaling, and operation of containerized applications. It's maintained by the Cloud Native Computing Foundation (CNCF).
 
 Kubernetes is formed from controlplanes and workers. Controlplanes are responsible serving k8s api, scheduling containers, storing cluster state, controller manager. The workers got kubelet, kube-proxy, and the runtime. Below is a high-level overview of the Kubernetes architecture.
 
 :::image type="content" source="../media/5-kubernetes-cluster.png" alt-text="Diagram showing Kubernetes controlplanes and workers in Kubernetes architecture.":::
 
-Managing Kubernetes can get tricky. Azure Kubernetes Services (AKS) helps you manage the overhead involved, reducing complexity and management tasks, such as upgrades. In the next sections, we will explore Kubernetes components and how you can troubleshoot each of them. Keep in mind that AKS abstracts a lot of the infrastructure for you, but you are still responsible for worker nodes and troubleshooting the applications on top of an AKS cluster.
+Managing Kubernetes can get tricky. Azure Kubernetes Services (AKS) helps you manage the overhead involved, reducing complexity and management tasks, such as upgrades. In the next sections, we'll explore Kubernetes components and how you can troubleshoot each of them. Keep in mind that AKS abstracts a lot of the infrastructure for you, but you're still responsible for worker nodes and troubleshooting the applications on top of an AKS cluster.
 
 ## Kubelet
 
@@ -59,7 +59,7 @@ The above command will return the extended specification of the specified pod, a
 
 ## Connect to AKS Windows node RDP
 
-As a managed Kubernetes service, you should not have to manually manage Windows nodes on AKS. The node lifecycle is managed for you by Azure, but in some cases, you might want to check what's going on with the Windows node, in order to troubleshoot a potential problem. On those cases, you can enable RDP to the Windows nodes running on an AKS cluster.
+As a managed Kubernetes service, you shouldn't have to manually manage Windows nodes on AKS. The node lifecycle is managed for you by Azure, but in some cases, you might want to check what's going on with the Windows node, in order to troubleshoot a potential problem. On those cases, you can enable RDP to the Windows nodes running on an AKS cluster.
 
 First you need to deploy a Windows node to the same subnet as your AKS cluster, this is basically a jump box. Then add an inbound security rule for 3389(RDP port) to connect to the jump box. Next, you need the internal IP address of the target node, which you can retrieve using kubectl describe node:
 
@@ -121,7 +121,7 @@ The YAML specification above describes a deployment of an IIS image, as you can 
 
 ## Registry authentication
 
-By default, Kubernetes cluster don't have the credential to log into private container registries and in these cases, your Kubernetes cluster will be in a fault state as the nodes can't pull the images you'd like to deploy. To avoid it, you need to configure registry authentication manually as part of your deployment and cluster configuration. However, if you are using Azure Container Registry (ACR), Microsoft makes the integration easy and you can simply run:
+By default, Kubernetes cluster don't have the credential to log into private container registries and in these cases, your Kubernetes cluster will be in a fault state as the nodes can't pull the images you'd like to deploy. To avoid it, you need to configure registry authentication manually as part of your deployment and cluster configuration. However, if you're using Azure Container Registry (ACR), Microsoft makes the integration easy and you can simply run:
 
 ```bash
 az aks update -n myAKSCluster -g myResourceGroup –attach-acr <acr-name>
@@ -162,7 +162,7 @@ When analyzing a pod, you might encounter it in a faulty state. Here are some co
 
 - **Waiting**
 
-   When the container is in waiting state, it means that it is scheduled, but it's unable to run. First step would be to use kubectl describe pod, which might give us the latest events and potential clues on why it cannot run on the associated node. Usual root causes are incorrect image name, or image not in indicated registry.
+   When the container is in waiting state, it means that it's scheduled, but it's unable to run. First step would be to use kubectl describe pod, which might give us the latest events and potential clues on why it can't run on the associated node. Usual root causes are incorrect image name, or image not in indicated registry.
 
 - **CrashLoopBackOff**
 
@@ -174,7 +174,7 @@ When analyzing a pod, you might encounter it in a faulty state. Here are some co
    kubectl logs <pod name>
    ```
 
-   The above command will show the existing logs for the specified pod. If you need to catch the logs in realtime, for a running application, you can use:
+   The above command will show the existing logs for the specified pod. If you need to catch the logs in real time, for a running application, you can use:
 
    ```powershell
    kubectl logs -f <pod name>

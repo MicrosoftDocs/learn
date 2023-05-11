@@ -1,8 +1,8 @@
-﻿To get started, we will look at tools that are provided by Microsoft to help you troubleshoot Windows containers.
+﻿To get started, we'll look at tools that are provided by Microsoft to help you troubleshoot Windows containers.
 
 ## Application and container logs
 
-When it comes to standards, container and application log is based on Standard Output (STDOUT/STDERR). That is not the case for some Windows applications and the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of that, tools that look for container and application logs on STDOUT will not be able to see the logs from Windows apps on containers. To solve that, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
+When it comes to standards, container and application log is based on Standard Output (STDOUT/STDERR). That isn't the case for some Windows applications and the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of that, tools that look for container and application logs on STDOUT won't be able to see the logs from Windows apps on containers. To solve that, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
 
 To use LogMonitor, you need to add it to your container image via the Dockerfile. As you recall, a Dockerfile is the recipe for building a container. In a Dockerfile there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application, therefore the ENTRYPOINT will look like this:
 
@@ -98,7 +98,7 @@ hcsdiag.exe list
 hcsdiag.exe console -uvm <id>
 ```
 
-The command above will list the containers (and VMs) available in the system. You can then specify the id of the container you want to open a PowerShell session to.
+The command above will list the containers (and VMs) available in the system. You can then specify the ID of the container you want to open a PowerShell session to.
 
 ## Checking container runtime logs
 
@@ -106,7 +106,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 - **Docker Daemon**
 
-   To get the logs from the Docker Daemon, you can check the Event Viewer. You can accomplish this from Powershell:
+   To get the logs from the Docker Daemon, you can check the Event Viewer. You can accomplish this from PowerShell:
 
    ```powershell
    Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time
@@ -134,7 +134,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 - **Host Compute Service logs**
 
-   Both Docker Daemon and containerd depend on the HCS. When troubleshooting, you can retrieve HCS logs with Powershell:
+   Both Docker Daemon and containerd depend on the HCS. When troubleshooting, you can retrieve HCS logs with PowerShell:
 
    ```powershell
    Get-WinEvent -LogName Microsoft-Windows-Hyper-V-Compute-Admin
@@ -157,4 +157,4 @@ As you can gather from the previous sections, there are many moving pieces when 
 Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
 ```
 
-The above script will run several tests on the system automatically. Any failures will be in red, and there is a pass/fail summary at the end. You can leverage this information to further troubleshoot your system.
+The above script will run several tests on the system automatically. Any failures will be in red, and there's a pass/fail summary at the end. You can leverage this information to further troubleshoot your system.

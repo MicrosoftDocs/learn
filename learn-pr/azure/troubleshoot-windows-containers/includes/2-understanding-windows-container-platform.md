@@ -14,13 +14,13 @@ When troubleshooting a Windows container environment, it's important to keep in 
 
 ## Host Compute Service (HCS)
 
-HCS is a management service, which acts as a layer of abstraction above the low-level functionality. The HCS is a stable API  that the runtime (Docker, containerd) can build upon, and it is also easier to use. Making a Windows container with the HCS is just a single API call. Making a Hyper-V Container instead just means adding a flag when calling into the API. 
+HCS is a management service, which acts as a layer of abstraction above the low-level functionality. The HCS is a stable API  that the runtime (Docker, containerd) can build upon, and it's also easier to use. Making a Windows container with the HCS is just a single API call. Making a Hyper-V Container instead just means adding a flag when calling into the API. 
 
 ## Host Networking Service (HNS)
 
 HNS is the management service for container networking. It works similarly to HCS. HNS responsibilities include creating the network (Hyper-V virtual switch), network namespaces, assigns IP, DNS rules to the created endpoint.
 
-In the image above, you can see a diagram of the operation calls from a Kubernetes environment. We will cover Kubernetes in a later section, but for now, it's important to understand what happens under the hood when a Windows container is created:
+In the image above, you can see a diagram of the operation calls from a Kubernetes environment. We'll cover Kubernetes in a later section, but for now, it's important to understand what happens under the hood when a Windows container is created:
 
 - User apply Kubernetes deployment manifest (yaml) with kubectl.
 - Kubernetes scheduler will assign the deployment to a node.
@@ -28,11 +28,11 @@ In the image above, you can see a diagram of the operation calls from a Kubernet
 - The runtime will call the lower-level APIs to HCS and HNS to actually create the container and its network. This applies for both Docker and containerd, although the Docker container runtime is being deprecated from the Kubernetes platform.
 - Container is started and the application inside of it starts as well.
 
-Points of failure could appear at the container, runtime, HCS/HNS, and kubelet level. If you are troubleshooting a Windows container environment, here are some general troubleshooting steps you can follow:
+Points of failure could appear at the container, runtime, HCS/HNS, and kubelet level. If you're troubleshooting a Windows container environment, here are some general troubleshooting steps you can follow:
 
 - Check container or application logs.
 - Check for host OS and container runtime logs
 - Restart the runtime.
 - Prune all resources.
-- Make sure you are using the latest version. Upgrade to it if it's not the case.
+- Make sure you're using the latest version. Upgrade to it if it's not the case.
 - Reset to defaults, or fresh install of the runtime.

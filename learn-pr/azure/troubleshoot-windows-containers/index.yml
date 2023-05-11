@@ -7,12 +7,12 @@ metadata:
   ms.date: 05/11/2023
   author: vrapolinario
   ms.author: viniap
-  ms.topic: Interactive-tutorial
+  ms.topic: interactive-tutorial
   ms.prod: learning-azure
 summary: >
   Learn about the Windows containers platform and how to troubleshoot it. Learn various troubleshooting techniques, using Docker, Azure, Windows tools, Azure Monitor, and more.
 abstract: |
-  After completing this module, you will be able to:
+  After completing this module, you'll be able to:
   - Explain how troubleshooting Windows containers differs from Virtual Machines.
   - Troubleshoot Windows containers on Windows hosts.
   - Troubleshoot Windows containers with Docker.
