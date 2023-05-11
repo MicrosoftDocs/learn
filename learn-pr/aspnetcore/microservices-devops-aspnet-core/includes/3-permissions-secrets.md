@@ -18,7 +18,7 @@ You can begin exploring these services (when ready):
 ```
 
 > [!TIP]
-> You can also find these URLs in the *deployment-urls.txt* file in the root of the project.
+> You can also find these URLs in the *deployment-urls.txt* file in the root of the GitHub project.
 
 Even though the app has deployed, it might take a few minutes to come online. Take the following steps to verify that the app is deployed and online:
 
@@ -40,15 +40,15 @@ Even though the app has deployed, it might take a few minutes to come online. Ta
    1. Select the **:::no-loc text="CHECKOUT":::** button.
    1. Enter the code *:::no-loc text="DISC-10":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a 10 USD discount, and select **:::no-loc text="APPLY":::**.
 
-        :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the discount code text box." border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
+      :::image type="content" source="../media/3-permissions-secrets/discount-code-field.png" alt-text="Shopping basket with the discount code text box." border="true" lightbox="../media/3-permissions-secrets/discount-code-field.png":::
 
-    1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
+   1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
-You've successfully verified that the app deployed to AKS and is working properly. The discount code feature is supported by the coupon service. Next, you build a CI/CD pipeline to automate the build and deployment of the coupon service.
+You've verified that the app successfully deployed to AKS and is working properly. The discount code feature is supported by the coupon service. Next, you build a CI/CD pipeline to automate the build and deployment of the coupon service.
 
 ## Create a service principal to deploy from GitHub
 
-You use GitHub Actions to publish the container image to Container Registry. To configure permissions so the Actions runner can connect to Azure, complete the following steps.
+GitHub Actions publishes the container image to Azure Container Registry, so the GitHub runner must have permissions to connect to Azure. The following steps create an Azure AD service principal to act as the GitHub Actions identity in Azure.
 
 1. Run the following command in the Visual Studio Code terminal to display your Subscription ID.
 
@@ -86,19 +86,19 @@ You use GitHub Actions to publish the container image to Container Registry. To 
    > [!NOTE]
    > The deprecated `--sdk-auth` warning is a known issue.
 
-1. Copy the preceding JSON output from the terminal. You use the credentials from the JSON information for the next step.
+1. Copy the preceding JSON output in the brackets. You use this JSON information in the next step.
 
 ## Create the secrets
 
-The service principal and the credentials for the container registry are sensitive information. The GitHub Actions runner needs the credentials to interact with Container Registry and AKS. It's a best practice to store sensitive information as encrypted *secrets* in a secure location.
+The GitHub Actions runner uses credentials to interact with Container Registry and AKS. The service principal and the credentials for the container registry are sensitive information. It's best to store sensitive information as encrypted *secrets* in a secure location.
 
-Repository administrators should manage the secrets to be accessed by the GitHub Actions runner. Complete the following steps to securely store the sensitive information as environment variables in your repository.
+Complete the following steps to securely store the sensitive information as environment variables in your repository. Repository administrators should manage the secrets to be accessed by the GitHub Actions runner.
 
 1. In your forked GitHub repository, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets and variables":::** > **:::no-loc text="Actions":::**.
 1. On the **:::no-loc text="Actions secrets and variables":::** page, select **:::no-loc text="New repository secret":::**.
 1. On the **:::no-loc text="New secret":::** page, under **:::no-loc text="Name":::** enter *AZURE_CREDENTIALS*, and under **:::no-loc text="Secret":::** enter the JSON output you copied from the Visual Studio Code terminal.
 
-   Your settings should look similar to the following screenshot:
+   The settings should look similar to the following screenshot:
 
    :::image type="content" source="../media/3-permissions-secrets/add-github-secrets.png" alt-text="Screenshot of the New secret page to set environment variable secrets in GitHub." border="true" lightbox="../media/3-permissions-secrets/add-github-secrets.png":::
 
@@ -116,8 +116,8 @@ Repository administrators should manage the secrets to be accessed by the GitHub
    cat ../../config.txt
    ```
 
-   With all five secrets configured, you see the following list under **:::no-loc text="Repository secrets":::** on the **:::no-loc text="Actions secrets and variables":::** page:
+   With all five secrets configured, you should see the following list under **:::no-loc text="Repository secrets":::** on the **:::no-loc text="Actions secrets and variables":::** page:
 
    :::image type="content" source="../media/3-permissions-secrets/github-secrets.png" alt-text="Screenshot that shows the list of Repository secrets on the Actions secrets and variables page." lightbox="../media/3-permissions-secrets/github-secrets.png":::
 
-In this unit, you verified that the app deployed correctly. You then created an Azure AD service principal and stored related sensitive information as GitHub secrets.
+In this unit, you verified that the app deployed correctly. You then created an Azure AD service principal for GitHub access and stored related sensitive information as GitHub secrets.

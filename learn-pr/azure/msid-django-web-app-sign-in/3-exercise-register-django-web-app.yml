@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Register Django web app in Azure AD tenant
   description: Step by step exercise to register a Django web app to an Azure AD tenant using the Azure portal. Create a client secret to use with your Django web app.
-  ms.date: 10/18/2022
+  ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
   ms.topic: interactive-tutorial

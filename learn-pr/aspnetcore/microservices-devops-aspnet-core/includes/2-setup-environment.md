@@ -1,8 +1,8 @@
-In this unit, you use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS). This unit uses a script to keep focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
+In this unit, you use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS). This unit uses a script to keep the focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
 
-The following diagram shows the app's solution architecture. This module focuses on adding CI/CD for the coupon service shown at the bottom of the following diagram.
+The following diagram shows the app's solution architecture. This module focuses on adding CI/CD for the coupon service microservice.
 
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram that shows the eShopOnContainers solution architecture." lightbox="../../media/microservices/eshop-architecture.png":::
+:::image type="content" source="../media/2-setup-environment/eshop-architecture.png" alt-text="Diagram that shows the eShopOnContainers solution architecture."  border="false" lightbox="../media/2-setup-environment/eshop-architecture.png":::
 
 The quickstart script completes the following steps to deploy a modified version of the [*:::no-loc text="eShopOnContainers":::*](https://github.com/dotnet-architecture/eshoponcontainers) app.
 
