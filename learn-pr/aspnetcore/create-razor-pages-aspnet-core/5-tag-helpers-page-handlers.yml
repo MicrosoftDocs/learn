@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.exercise---add-a-new-razor-page
-title: Exercise - Add a new Razor page
+uid: learn.create-razor-pages-aspnet-core.tag-helpers-and-page-handlers
+title: Tag Helpers and Page Handlers
 metadata:
-  title: Exercise - Add a new Razor page
+  title: Tag Helpers and Page Handlers
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 5/10/2023
+  ms.date: 5/11/2023
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
@@ -22,4 +22,4 @@ metadata:
   ms.service: TODO
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-exercise-add-new-razor-page.md)]
+  [!include[](includes/5-tag-helpers-page-handlers.md)]

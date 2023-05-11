@@ -123,7 +123,7 @@ The Pizza List page will depend on the existing `PizzaService` object to retriev
 1. Save the file.
 
 > [!IMPORTANT]
-> Keep a close eye on the terminal window with `dotnet watch`. Sometimes your code might contain what it calls a *rude edit*. This means that the code you changed can't be recompiled without restarting the application. If prompted to restart the app, press `y` (yes) or `a` (always). If all else fails, stop the application by pressing **Ctrl+C** in the terminal window, and then restart it by running `dotnet watch` again.
+> Keep a close eye on the terminal window with `dotnet watch` every time you save your file. Sometimes your code might contain what it calls a *rude edit*. This means that the code you changed can't be recompiled without restarting the application. If prompted to restart the app, press `y` (yes) or `a` (always). If all else fails, stop the application by pressing **Ctrl+C** in the terminal window, and then restart it by running `dotnet watch` again.
 
 ## Display the list of pizzas
 
@@ -143,6 +143,7 @@ Now that the page has access to the list of pizzas, you'll use that list to disp
                 <th scope="col">Delete</th>
             </tr>
         </thead>
+        <tbody>
         @foreach (var pizza in Model.PizzaList)
         {
             <tr>
@@ -157,6 +158,7 @@ Now that the page has access to the list of pizzas, you'll use that list to disp
                 </td>
             </tr>
         }
+        </tbody>
     </table>
     ```
 
@@ -164,17 +166,17 @@ Now that the page has access to the list of pizzas, you'll use that list to disp
 
     - A `<table>` element is created to display the list of pizzas.
     - A `<thead>` element is created to hold the table header.
-    - The `@foreach` statement iterates over the list of pizzas.
+    - The `@foreach` statement inside the `<tbody>` iterates over the list of pizzas.
         - The `Model` property refers to the `PizzaListModel` object that was created in the code-behind file.
         - The `PizzaList` property refers to the `PizzaList` property that was defined in the code-behind file.
     - Each iteration of the `@foreach` statement creates a `<tr>` element to hold the pizza data:
         - Razor syntax is used to display the pizza data in the `<td>` elements. This syntax is used to display the properties of the `Pizza` object that's stored in the `pizza` variable.
         - `Price` is formatted using C# string interpolation.
-        - A ternary operator is used to display the value of the `IsGlutenFree` property as "✔️" or a blank cell.
+        - A ternary expression is used to display the value of the `IsGlutenFree` property as "✔️" or a blank cell.
         - A form is created to delete the pizza.
             - The `asp-page-handler` attribute indicates that the form should be submitted to the `Delete` handler in the code-behind file. You'll create that handler in a later unit.
             - The `asp-route-id` attribute indicates that the `Id` property of the `Pizza` object should be passed to the `Delete` handler.
 
 1. Save the file. In the browser, the Pizza List page refreshes with the list of pizzas.
 
-Good work! You've created a Razor page that displays a list of pizzas. In the next unit, you'll learn about tag helpers and page handlers..
+Good work! You've created a Razor page that displays a list of pizzas. In the next unit, you'll learn about tag helpers and page handlers.
