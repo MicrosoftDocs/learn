@@ -8,7 +8,7 @@ If the functionality you're looking for isn't present on the home page, you can 
 
 Because the global search box offers a more comprehensive and consistent behavior, all procedures covered in this module will use this option.
 
-![Screenshot of the portal menu and the global search textbox](../media/azure-portal-search-textbox.png)
+![Screenshot showing the portal menu and the global search textbox.](../media/azure-portal-search-textbox.png)
 
 To navigate to the portal page dedicated to the provisioning and management of Azure VMs, in the global search box, start entering the phrase virtual machines, which designates the Azure resource type you intend to provision. The global search box displays a list of search results even before you've entered the entire phrase. In the search results list, in the Services section, locate the Virtual machines entry. Selecting this entry will automatically open the Virtual machines page of the portal.
 
@@ -29,7 +29,7 @@ The process of deploying Azure resources by using the Azure portal involves the 
 
 On the Virtual machines page, select the **+ Create** link. This step is the same regardless of the resource type you provision.
 
-![The portal virtual machines page has the create menu and the Azure virtual machine option selected.](../media/azure-portal-create-virtual-machine-start.png)
+![Screenshot showing the Create menu and the Azure virtual machine option.](../media/azure-portal-create-virtual-machine-start.png)
 
 ### Assign resource-specific settings
 
@@ -55,16 +55,16 @@ The settings on this page configure the target subscription (either an existing 
 
 - The Azure VM name.
 - Availability options.
-- OS image. 
+- OS image.
 - Name of the administrator account
-- Depending on your choice of the authentication type, either the corresponding password or the secure shell protocol (SSH) key. 
-- Whether you want to: 
+- Depending on your choice of the authentication type, either the corresponding password or the secure shell protocol (SSH) key.
+- Whether you want to:
   - Generate a new key pair
   - Select an existing key stored in Azure
-  - Provide an existing RSA public key in the Privacy Enhanced Mail (PEM) format 
+  - Provide an existing RSA public key in the Privacy Enhanced Mail (PEM) format
 - Whether you want to allow connectivity to the deployed Azure VM from the internet via Transmission Control Protocol (TCP) port 22 (SSH).
 
-![The Basics page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-basic.png)
+![Screenshot showing the Basics tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-basic.png)
 
 > [!CAUTION]
 > 
@@ -74,7 +74,7 @@ The settings on this page configure the target subscription (either an existing 
 
 You use Disks settings to specify the type and encryption of the disk hosting the Azure VM OS. You can also attach one or more data disks, although this option is available at any point following the deployment. The maximum number of data disks that an Azure VM supports depends on its size.
 
-![The disks page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-disks.png)
+![Screenshot showing the Disks tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-disks.png)
 
 ##### Networking
 
@@ -84,7 +84,7 @@ In addition to the Basic grouping, networking is another critical part of Azure 
 > 
 > Support for accelerated networking depends on the Azure VM size.
 
-![The networking page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-networking.png)
+![Screenshot showing the Networking tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-networking.png)
 
 ##### Management
 
@@ -94,13 +94,13 @@ From the Management page, you can enable several optional settings to enhance th
 > 
 > Support for patch orchestration depends on the OS image.
 
-![The Management page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-management.png)
+![Screenshot showing the Management tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-management.png)
 
 ##### Monitoring
 
 You use the Monitoring page to enable monitoring settings. These include automatic alerts that notify you about potential resource utilization issues, and boot and operating system diagnostics.
 
-![The Monitoring page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-monitoring.png)
+![Screenshot showing the Monitoring tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-monitoring.png)
 
 ##### Advanced
 
@@ -112,17 +112,17 @@ This page provides miscellaneous options that allow you to further customize pla
 - Minimizing latency between multiple Azure VMs by ensuring that they're part of the same placement proximity group.
 - Minimizing costs by using capacity reservations.
 
-![The Advanced page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-advanced.png)
+![Screenshot showing the Advanced tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-advanced.png)
 
 ##### Tags
 
 You use this page to create descriptive labels (_tags_) that you want to assign to the resource. Tags help organize resources based on your own custom criteria, facilitating functionality such as multiple-resource management, inventory, and billing.
 
-![The Tags page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-tags.png)
+![Screenshot showing the Tags tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-tags.png)
 
 ### Validate the assigned settings
 
-After completing the configuration steps in the various pages of the provisioning wizard, you'll reach the final page titled **Review + create**. 
+After completing the configuration steps in the various pages of the provisioning wizard, you'll reach the final page titled **Review + create**.
 
 #### Review + create
 
@@ -132,4 +132,4 @@ At this point, the Azure portal will automatically invoke a validation task, whi
 
 If validation is successful, select Create to initiate the deployment. Your Azure VM should be running shortly.
 
-![The Review + create page of the Create a virtual machine wizard displays.](../media/azure-portal-create-virtual-machine-review.png)
+![Screenshot showing the Review + create tab of the Create a virtual machine wizard.](../media/azure-portal-create-virtual-machine-review.png)
