@@ -55,8 +55,6 @@ When users deploy an AKS cluster, the Kubernetes control plane and all nodes are
 
 Advanced networking, Azure Active Directory (Azure AD) integration, monitoring, and other features can be configured during the deployment process.
 
-Details on the core concepts are available [here](https://microsoft-my.sharepoint.com/personal/pankajgoyal_microsoft_com/Documents/Documents/aks/concepts-clusters-workloads).
-
 #### Virtual Machines
 
 Operator Nexus Virtual Machine (VM) gives Operators the flexibility to run legacy virtualized workloads that aren’t available as containerized network functions.
