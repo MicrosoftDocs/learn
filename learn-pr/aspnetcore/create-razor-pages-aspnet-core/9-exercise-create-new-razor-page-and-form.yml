@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Add a Pizza list page with a form
 durationInMinutes: 8
 content: |
-  [!include[](includes/8-exercise-create-new-razor-page-and-form.md)]
+  [!include[](includes/9-exercise-create-new-razor-page-and-form.md)]

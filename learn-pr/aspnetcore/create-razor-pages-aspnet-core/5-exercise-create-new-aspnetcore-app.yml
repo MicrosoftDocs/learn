@@ -11,4 +11,4 @@ metadata:
 title: Exercise - Create new ASP.NET Core app
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-create-new-aspnetcore-app.md)]
+  [!include[](includes/5-exercise-create-new-aspnetcore-app.md)]

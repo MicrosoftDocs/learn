@@ -3,7 +3,7 @@ Your team has split up the work for the pizza inventory management app. Your tea
 
 ## Obtain the project files
 
-If you're using GitHub Codespaces, just open the project in the browser, select **Code**, and then create a new codespace on the `main` branch.
+If you're using GitHub Codespaces, just open the repository in the browser, select **Code**, and then create a new codespace on the `main` branch.
 
 If you aren't using GitHub Codespaces, obtain the project files and open them in Visual Studio Code with the following steps:
 
@@ -20,19 +20,22 @@ If you aren't using GitHub Codespaces, obtain the project files and open them in
     code .
     ```
 
+> [!TIP]
+> If you've got a compatible container runtime installed, you can use the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to open the project in a container. This will ensure you have the correct version of .NET and other dependencies installed.
+
 ## Review the your teammates' work
 
-Let's take a moment to get familiar with the existing code in the ContosoPizza folder. The project is an ASP.NET Core web app created using the `dotnet new webapp` command. The changes your teammates made are:
+Let's take a moment to get familiar with the existing code in the ContosoPizza folder. The project is an ASP.NET Core web app created using the `dotnet new webapp` command. The changes your teammates made are described below.
 
 > [!TIP]
-> Don't spend too much time reviewing these files. Your teammates have already done the work to create the database and the service to read and write pizzas to the database. You'll be building a UI that consumes that service in the next unit.
+> Don't spend too much time reviewing these changes. Your teammates have already done the work to create the database and the service to read and write pizzas to the database, but they didn't make any UI changes. You'll be building a UI that consumes their service in the next unit.
 
 - A *Models* folder was added to the project.
   - The model folder contains a `Pizza` class that represents a pizza.
 - A *Data* folder was added to the project.
-  - The data folder contains a `PizzaContext` class that represents the database context. It inherits from the `DbContext` class from Entity Framework Core.
+  - The data folder contains a `PizzaContext` class that represents the database context. It inherits from the `DbContext` class from Entity Framework Core. Entity Framework Core is an object-relational mapper (ORM) that makes it easier to work with databases.
 - A *Services* folder was added to the project.
-  - The services folder contains a `PizzaService` class that represents a service to read and write pizzas to the database.
+  - The services folder contains a `PizzaService` class that exposes methods to list and add pizzas.
   - The `PizzaService` class uses the `PizzaContext` class to read and write pizzas to the database.
   - The class is registered for dependency injection in *Program.cs* (line 10).
 
@@ -60,7 +63,7 @@ Other noteworthy observations:
 
 - **Razor page files and their paired `PageModel` class file**
 
-    Razor pages are stored in the *Pages* directory. A `PageModel` class allows separation of a Razor page's logic and presentation, defines page handlers for requests, and encapsulates data properties and logic scoped to its Razor page.
+    Razor pages are stored in the *Pages* directory. As noted above, each Razor page has a *.cshtml* file and a *.cshtml.cs* `PageModel` class file. The `PageModel` class allows separation of a Razor page's logic and presentation, defines page handlers for requests, and encapsulates data properties and logic scoped to its Razor page.
 
 - **The *Pages* directory structure and routing requests**
 
@@ -83,7 +86,7 @@ Other noteworthy observations:
 
 - **Layout and other shared files**
 
-    There are several files that are shared across multiple pages. These files determine common layout elements and page imports. The following table describes the purpose of each file:
+    There are several files that are shared across multiple pages. These files determine common layout elements and page imports. The following table describes the purpose of each file.
 
     | File                                            | Description                                                                                                            |
     |-------------------------------------------------|------------------------------------------------------------------------------------------------------------------------|
@@ -92,31 +95,57 @@ Other noteworthy observations:
     | *Pages/Shared/_Layout.cshtml*                   | This is the layout specified by the `_ViewStart.cshtml` file. Implements common layout elements across multiple pages. |
     | *Pages/Shared/_ValidationScriptsPartial.cshtml* | Provides validation functionality to all pages.                                                                        |
 
+## Run the project for the first time
+
+Let's run the project so we can see it in action.
+
+1. Right-click on the *ContosoPizza* folder in the **Explorer** and select **Open in Integrated Terminal**. This opens a terminal window in the context of the project folder.
+1. In the terminal window, enter the following command:
+
+    ```dotnetcli
+    dotnet watch
+    ```
+
+    This command:
+
+    - Builds the project.
+    - Starts the app.
+    - Watches for file changes and restarts the app when it detects a change.
+
+1. The IDE prompts you to open the app in a browser. Select **Open in Browser**.
+
+    > [!TIP]
+    > You can also open the app by finding the URL in the terminal window. Hold **Ctrl** and click the URL to open it in a browser.
+
+1. Compare the rendered home page to *Pages/Index.cshtml* in the IDE:
+
+    - Observe the combination of HTML, Razor Syntax, and C# code in the file.
+      - Razor Syntax is denoted by `@` characters.
+      - C# code is enclosed in `@{ }` blocks.
+    Take note of the directives at the top of the file:
+      - The `@page` directive specifies that this file is a Razor page.
+      - The `@model` directive specifies the model type for the page (in this case, `IndexModel`, which is defined in *Pages/Index.cshtml.cs*).
+    - Review the C# code block.
+      - The code sets the value of the `Title` item within the `ViewData` dictionary to "Home page".
+      - The `ViewData` dictionary is used to pass data between the Razor page and the `IndexModel` class.
+      - At runtime, the `Title` value is used to set the page's `<title>` element.
+
+Leave the app running in the terminal window. We'll use it in the upcoming units. Leave the browser tab with the running Contoso Pizza app, too. You'll make changes to the app and the browser will automatically refresh to display the changes.
+
 ## Customize the landing page
 
 Let's make a few changes to the landing page to make it more relevant to the pizza app.
 
-1. Open *Pages/Index.cshtml*.
-1. Observe the combination of HTML, Razor Syntax, and C# code in the file.
-    - Razor Syntax is denoted by `@` characters.
-    - The C# code is enclosed in `@{ }` blocks.
-1. Take note of the directives at the top of the file:
-    - The `@page` directive specifies that this file is a Razor page.
-    - The `@model` directive specifies the model type for the page (in this case, `IndexModel`, which is defined in *Pages/Index.cshtml.cs*).
-1. Review the C# code block.
-    - The code sets the value of the `Title` item within the `ViewData` dictionary to "Home page".
-    - The `ViewData` dictionary is used to pass data between the Razor page and the `IndexModel` class.
-    - At runtime, the `Title` value is used to set the page's `<title>` element.
-1. Replace the code in the C# code block with the following code:
+1. In *Pages/Index.cshtml*, replace the code in the C# code block with the following code:
 
     ```csharp
-    ViewData["Title"] = "Contoso Pizza Home";
+    ViewData["Title"] = "The Home for Pizza Lovers";
     TimeSpan timeInBusiness = DateTime.Now - new DateTime(2018, 8, 14);
     ```
 
     The preceding code:
 
-    - Sets the value of the `Title` item within the `ViewData` dictionary to "Contoso Pizza Home".
+    - Sets the value of the `Title` item within the `ViewData` dictionary to "The Home for Pizza Lovers".
     - Calculates the amount of time that has passed since the business opened.
 
 1. Modify the HTML as follows:
@@ -138,17 +167,8 @@ Let's make a few changes to the landing page to make it more relevant to the piz
     - Displays the number of days that have passed since the business opened.
         - The `@` character is used to switch from HTML to Razor Syntax.
         - The `Convert.ToInt32` method is used to convert the `TotalDays` property of the `timeInBusiness` variable to an integer.
+        - The `Convert` class is part of the `System` namespace, which is imported automatically by the `<ImplicitUsings>` element in the *ContosoPizza.csproj* file.
 
-1. Before we run the app, let's review `Index.cshtml.cs`. Open the file and note the following:
-    - The `IndexModel` class inherits from ASP.NET Core's `PageModel` class. This class provides the model for the page, along with a built-in set of properties and methods.
-    - An `ILogger` instance is injected into the class's constructor.
-        - The `ILogger` instance is used to log messages to the console.
-    - The `OnGet` method is called when the page is requested.
-        - There's currently nothing in the method, but this is where you would add code to retrieve data from a database or other data source.
+1. Save the file. The browser tab with the app automatically refreshes to display the changes.
 
-## Run the project
-
-Let's run the project so we can see the changes we made to the landing page.
-
-1. Save all your changes.
-1. In the 
+You've made your first changes to a Razor page! In the next unit, you'll add a new page to the app to display a list of pizzas.
