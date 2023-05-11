@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/05/2023
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -26,11 +26,11 @@ quiz:
     - content: "Create the task sequences by building it from scratch"
       isCorrect: false
       explanation: "Incorrect. This item isn't the best practice that Holly should follow when creating the golden image. Try again."
-  - content: "What's the primary role of the Microsoft Desktop Toolkit?"
+  - content: "What's the primary role of the Microsoft Deployment Toolkit?"
     choices:
     - content: "Manage your Windows upgrades"
       isCorrect: false
-      explanation: "Incorrect. To manage your Windows upgrades and begin the journey to Windows as a Service (WaaS), you should look for tools that exist in the modern managed toolset, such as Microsoft Endpoint Manager or Windows Update for Business (WuFB). Try again."
+      explanation: "Incorrect. To manage your Windows upgrades and begin the journey to Windows as a Service (WaaS), you should look for tools that exist in the modern managed toolset, such as Microsoft Intune or Windows Update for Business (WuFB). Try again."
     - content: "Build and rebuild your devices with a specific set of configurations"
       isCorrect: true
       explanation: "Correct. The role of MDT is not to manage your Windows upgrades. Its primary focus is building and rebuilding your devices with a specific set of configurations."
