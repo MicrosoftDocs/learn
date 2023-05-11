@@ -1,6 +1,8 @@
-In this unit, you'll learn to manage and audit permissions using Azure DevOps. Managing permissions are essential to maintaining security and control over your pipelines and resources. By setting permissions, you can restrict access to sensitive data and ensure that only authorized users can access certain features.
+Managing permissions are essential to maintaining security and control over your pipelines and resources. By setting permissions, you can restrict access to sensitive data and ensure that only authorized users can access certain features.
 
-## Managing organization permissions
+In this unit, learn how to manage and audit permissions using Azure DevOps.
+
+## Manage organization permissions
 
 You can also set permissions for specific projects. The steps and configuration are similar to the organization-level permissions.
 
@@ -12,13 +14,15 @@ To configure permissions for an organization:
 4. Click on "Permissions," and select the type of permissions you want to set (for example, "General," "Repos," "Pipelines," "Auditing," etc.).
 5. Choose the level of permission you want to assign (for example, "Allow," "Deny," or "Not set").
 
-## Auditing permissions
+## Audit permissions
 
 Audit logs provide a record of every operation that occurs in Azure DevOps, including all changes made to work items, builds, releases, and pipelines.
 
 By reviewing audit logs, administrators and security professionals can identify unauthorized access attempts, suspicious activity, or compliance violations. This information can help prevent security breaches and ensure compliance with regulations and organizational policies.
 
 In addition, audit logs can help teams identify issues and improve their processes by providing detailed information about what actions were taken and by whom. By regularly reviewing audit logs, teams can identify potential problems and take corrective measures to prevent them.
+
+To configure auditing for your organization:
 
    1. Sign in to your Azure DevOps organization.
    2. Click on Organization Settings at the bottom left and in Policies under the Security section.

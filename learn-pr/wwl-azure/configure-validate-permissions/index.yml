@@ -9,15 +9,16 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure and validate permissions
-summary: "This module is designed to help learners understand the importance of configuring and validating permissions for users, pipelines, and approvals in Azure DevOps. The module covers fundamental concepts and best practices for configuring and validating user permissions, pipeline permissions, approval and branch checks, and auditing and managing permissions."
+summary: "This module covers fundamental concepts and best practices for configuring and validating user permissions, pipeline permissions, approval and branch checks, and auditing and managing permissions."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Configure and validate user permissions
-    - Configure and validate pipeline permissions
-    - Configure and validate approval and branch checks
-    - Manage and audit permissions in Azure DevOps
+  In this module, you practice how to:
+    - Configure and validate user permissions.
+    - Configure and validate pipeline permissions.
+    - Configure and validate approval and branch checks.
+    - Manage and audit permissions in Azure DevOps.
 prerequisites: |
-  - None
+  - Basic knowledge of Azure DevOps to manage branches.
+  - Basic knowledge of security concepts like user and pipeline permissions.
 iconUrl: /training/achievements/generic-trophy.svg
 hidden: true
 levels:

@@ -1,6 +1,6 @@
-In this unit, you'll learn how to configure pipeline access to packages stored in Azure Artifacts. It involves creating and managing feed permissions, which allow you to control who can access and manage your packages. By controlling access to these packages, you can ensure that only authorized users can access and use the packages in your projects.
+In this unit, learn how to configure pipeline access to packages stored in Azure Artifacts. It involves creating and managing feed permissions, which allow you to control who can access and manage your packages. By controlling access to these packages, you can ensure that only authorized users can access and use the packages in your projects.
 
-## Configuring pipeline access to packages in YAML
+## Configure pipeline access to packages in YAML
 
 1. Navigate to your Azure DevOps organization and select the project that contains the Azure Artifacts repository you want to configure.
 2. In the left-side menu, select Artifacts.

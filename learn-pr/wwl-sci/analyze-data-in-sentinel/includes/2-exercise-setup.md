@@ -71,14 +71,19 @@ In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. Select **Open connector page**. The **Azure Activity** pane reappears.
 
-1. Select the **Configure Azure Activity logs** link.
+1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
 
-1. Select your subscription, and then select **Connect**.
+1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
 
-1. When you receive a status of **Connected**, close all open panels to return to **Microsoft Sentinel | Data connector**.
+1. Select the **Parameters** tab, choose your *<yourName>-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
+
+1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action will apply the subscription configuration to send the information to the Log Analytics workspace.
+
+1. Select the **Review + Create** button to review the configuration.
+
+1. Select **Create** to finish.
 
 :::image type="content" source="../media/07-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel connector." border="true":::
 
-> [!Note]
-> The connector for Azure Activity could take 20 minutes to send data in Microsoft Sentinel. You can proceed with rest of the steps and with other units of this module.
-
+> [!NOTE]
+> The connector for Azure Activity could take 15 minutes to show **Connected** in Microsoft Sentinel. You can proceed with rest of the steps and with other units of this module.
