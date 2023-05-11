@@ -1,4 +1,5 @@
 
+
 To enable co-management for your on-premises Active Directory devices, you must configure your devices as hybrid Azure AD joined devices.
 
 Before you start enabling hybrid Azure AD joined devices in your organization, you need to make sure that:

@@ -1,4 +1,5 @@
 
+
 When migrating a user to new device or performing an in-place migration, consideration should be given for what user and app settings should be retained and what method should be used to ensure this information is retained.
 
 ### Synchronize the user state

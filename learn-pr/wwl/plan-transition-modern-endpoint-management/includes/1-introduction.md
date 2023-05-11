@@ -1,4 +1,5 @@
 
+
 You can prepare, deploy, and manage a device provisioned from Windows Autopilot, and maximize investment in Configuration Manager through co-management to begin the modern journey. This module will explore considerations and review the planning of this transition, focusing on two paths: migration and newly provisioned devices.
 
 ### Objectives

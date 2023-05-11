@@ -1,4 +1,5 @@
 
+
 Modern deployment methods take a different approach to OS deployment. Modern methods serve to remove the imaging process wherever possible. Instead of completely wiping the existing data and replacing it, these options transform the existing operating system with little or no user interaction and without deploying a new image. The outcome is the same; a device that functions as if a fresh install of Windows was performed, but no images were involved in the process. Because of this, modern deployment options are typically faster, more efficient, and have lower network utilization.
 
 Modern methods do require that Windows 11 be installed on the target device. For devices still running Windows 7 or 8.1, the in-place upgrade method is recommended (in-place upgrade is examined in the next unit). For devices running another operating system or no operating system, traditional methods must be used. But once the device has Windows 11 installed, there are few reasons to continue using traditional methods such as imaging. Even for new devices, which typically come with some edition of Windows 11, imaging isn't necessary to transform the OS to the desired edition and configuration.
@@ -22,7 +23,7 @@ As you begin the transition from a traditional delivery of an OS to a more moder
 | Require the creation of golden images | Yes | Yes | No |
 | Ability to reset existing OS | No | No | Yes |
 | Ability to perform a bare metal build | Yes | Yes | No |
-| Can be used with any preinstalled operating system | Yes | Yes | Windows 11 only |
+| Can be used with any preinstalled operating system | Yes | Yes | Windows 10/11 only |
 | Installation of applications during OS deployment/provisioning | Yes | Yes | Yes |
 | Deployment of applications post-build | No | Yes | Yes |
 | Migration of user data | Yes - USMT | Yes - USMT | Yes - OneDrive/ESR |
