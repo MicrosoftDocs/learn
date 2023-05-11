@@ -4,7 +4,7 @@ When troubleshooting Windows Autopilot, the key things to verify are:
 
  -  **Configuration:** Has Azure AD and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?
  -  **Network connectivity:** Can the device access the services described in Windows Autopilot networking requirements?
- -  **Autopilot OOBE behavior:** Were only the expected out-of-box experience screens displayed? Was the Azure AD credentials page customized with organization-specific details as expected?
+ -  **Autopilot OOBE behavior:** Where only the expected out-of-box experience screens displayed? Was the Azure AD credentials page customized with organization-specific details as expected?
  -  **Azure AD join issues:** Was the device able to join Azure AD?
  -  **MDM enrollment issues:** Was the device able to enroll in Microsoft Intune (or an equivalent MDM service)?
 
@@ -24,9 +24,9 @@ To see details related to the Autopilot profile settings and OOBE flow, Windows 
 | 171      | Error  | "AutopilotManager failed to set TPM identity confirmed. HRESULT=\[error code\]." This event indicates an issue performing TPM attestation, needed to complete the self-deploying mode process. |
 | 172      | Error  | "AutopilotManager failed to set Autopilot profile as available. HRESULT=\[error code\]." This event is typically related to event ID 171. |
 
-### Windows AutoPilot Diagnostics
+### Windows Autopilot Diagnostics
 
-Windows AutoPilot can now aggregate many of the troubleshooting techniques seen above into a more easily readable format to isolate issues that occur. This function can be executed from a PowerShell command directly on the device.
+Windows Autopilot can now aggregate many of the troubleshooting techniques listed into a more easily readable format to isolate issues that occur. This function can be executed from a PowerShell command directly on the device.
 
 Open PowerShell command and enter the following (Accept download prompts):
 
@@ -36,13 +36,13 @@ Install-Script Get-AutoPilotDiagnostics -force
 Get-AutoPilotDiagnostics -Online
 ```
 
-Once connected to the tenant with an account that has appropriate credentials, through the GraphAPI extensions for Intune, a list of policies, apps, and status will be displayed.
+Once connected to the tenant with an account that has appropriate credentials, through the GraphAPI extensions for Intune, a list of policies, apps, and status is displayed.
 
 ### Troubleshoot Azure AD join issues
 
 The most common issue joining a device to Azure AD is related to Azure AD permissions. Ensure the correct configuration is in place to allow users to join devices to Azure AD. Errors can also happen if the user has exceeded the number of devices that they're allowed to join, as configured in Azure AD.
 
-Error code 801C0003 will typically be reported on an error page titled "Something went wrong." This error means that the Azure AD join failed.
+Typically displayed on a "Something went wrong" error page, the error code 801C0003 signifies that the attempt to join Azure AD was unsuccessful.
 
 ### Troubleshoot Intune enrollment issues
 
