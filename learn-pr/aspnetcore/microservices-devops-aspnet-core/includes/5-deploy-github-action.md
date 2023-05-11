@@ -77,7 +77,7 @@ You can find the *build.yml* and *deploy.yml* GitHub Actions definitions in the 
 
 ## Trigger a deployment
 
-To trigger a deployment, you increment the `appVersion` in the coupon service's Helm chart. Helm charts define service specifications in a YAML template format. It's important to increment the app version in the Helm chart to cause the pod to be replaced when you deploy the chart to AKS with `helm upgrade`.
+To trigger a deployment, you increment the `appVersion` in the coupon service's Helm chart. Helm charts define service specifications in a YAML template format. You increment the app version in the Helm chart to cause the pod to be replaced when you deploy the chart to AKS with `helm upgrade`.
 
 1. From the **:::no-loc text="Code":::** tab in your forked repository, open the *:::no-loc text="deploy/k8s/helm-simple/coupon/Chart.yaml":::* file for editing, and update the `appVersion` property value to `1.1.0`:
 
@@ -96,13 +96,7 @@ To trigger a deployment, you increment the `appVersion` in the coupon service's 
 
    :::image type="content" source="../media/5-deploy-github-action/deploy-to-aks-task.png" alt-text="Screenshot that shows the deploy-to-aks job selected with a list of all the steps completed." border="true" lightbox="../media/5-deploy-github-action/deploy-to-aks-task.png":::
 
-    
-
-1. Select the **:::no-loc text="Actions":::** tab again. When the deployment completes, you see a variation of the following screen:
-
-   :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Screenshot that shows All workflows selected and a list of three workflows." border="true" lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
-
-1. In the Visual Studio Code terminal, run the following command to monitor the coupon service pods in your AKS cluster. The `--selector` flag filters the list to only pods for the coupon service, and the `--watch` flag instructs `kubectl` to watch for changes. 
+1. In the terminal, run the following command to monitor the coupon service pods in your AKS cluster. The `--selector` flag filters the list to only pods for the coupon service, and the `--watch` flag instructs `kubectl` to watch for changes. 
 
     ```bash
     kubectl get pods --selector service=coupon --watch
@@ -119,13 +113,14 @@ To trigger a deployment, you increment the `appVersion` in the coupon service's 
    In the preceding output, notice that a new `coupon` pod is created. When the new pod is ready, the old one is terminated. This process makes the transition to the new version as smooth as possible.
 
 1. Once the new pod's *:::no-loc text="Ready":::* status displays `1/1`, press **Ctrl+C** to stop the `kubectl` watch mode.
+
 1. Run the following command to check the coupon service deployment history:
 
    ```bash
    helm history eshoplearn-coupon
     ```
 
-   The history shows the new coupon service version has been deployed.
+   The history shows that the new coupon service version has been deployed.
 
    ```console
    REVISION   UPDATED                    STATUS        CHART          APP VERSION   DESCRIPTION
@@ -133,18 +128,22 @@ To trigger a deployment, you increment the `appVersion` in the coupon service's 
    2          Thu Sep 10 19:51:10 2020   deployed      coupon-0.1.0   1.1.0         Upgrade complete
    ```
 
-## Verify the deployment
+1. Select the **:::no-loc text="Actions":::** tab again. When the deployment completes, you see a variation of the following screen:
 
-Complete the following steps to verify that your change is deployed:
+   :::image type="content" source="../media/5-deploy-github-action/deployment-action-completed.png" alt-text="Screenshot that shows a list of three workflows." lightbox="../media/5-deploy-github-action/deployment-action-completed.png":::
+
+## Verify the app
+
+Complete the following steps to verify that your app still works:
 
 1. Select the **:::no-loc text="Web SPA application":::** URL in *deployment-urls.txt* to launch the app.
 1. Sign in from the **:::no-loc text="LOGIN":::** page.
 1. Add your favorite products to the shopping bag by selecting the images.
 1. Select the shopping bag icon in the upper right, and select **:::no-loc text="CHECKOUT":::**.
-1. Enter the code *:::no-loc text="DISC-5":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a five dollar USD discount, and select **:::no-loc text="APPLY":::**.
+1. You can only use each discount code once, and you already used the 10 USD discount, so enter *:::no-loc text="DISC-5":::* in the **:::no-loc text="HAVE A DISCOUNT CODE?":::** text box for a five USD discount. Then select **:::no-loc text="APPLY":::**.
 1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
-1. Back in the command shell, select the **:::no-loc text="Centralized logging":::** URL.
-1. In the Seq logs search text box, enter *Get coupon DISC-5* and press Enter.
+1. In *deployment-urls.txt*, select the **:::no-loc text="Centralized logging":::** URL.
+1. In the Seq logs search text box, enter *Get coupon DISC-5*.
  
    The logs filter to display the **Get coupon DISC-5** entry:
 
@@ -152,7 +151,7 @@ Complete the following steps to verify that your change is deployed:
 
 ## Roll back the deployment
 
-During production issues, one common mitigation is to revert a deployment to a known good deployment. Use the following command to roll back from version 1.1.0 to 1.0.0.
+One common mitigation for production issues is to revert to a known good deployment. Use the following command to roll back from version 1.1.0 to 1.0.0.
 
 ```bash
 helm rollback eshoplearn-coupon
@@ -165,6 +164,6 @@ Rollback was a success! Happy Helming!
 ```
 
 > [!NOTE]
-> In a real-life scenario, you deploy the build's artifacts to multiple environments. For example, you might have development, testing, and staging environments. You can trigger the deployment workflows by events like merging PRs. You can add quality or approval gates, such as a stakeholder's PR approval, to prevent unexpected deployments to production.
+> In a real-life scenario, you deploy the build's artifacts to multiple environments. For example, you might have development, testing, and staging environments. You can trigger deployment workflows by events like merging PRs. You can add quality or approval gates, such as a stakeholder's PR approval, to prevent unexpected deployments to production.
 
 In this unit, you created a GitHub action to deploy the coupon service to AKS. To test the deployment workflow, you incremented the coupon service version in its Helm chart. When the deployment workflow finished, you searched the Seq logs to confirm that the discount code redemption message was present. Finally, you rolled back the AKS coupon service to version 1.0.0.

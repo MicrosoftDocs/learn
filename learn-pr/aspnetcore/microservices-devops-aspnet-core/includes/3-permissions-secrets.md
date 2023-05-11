@@ -6,7 +6,7 @@ In this unit, you complete the following tasks:
 
 ## Verify the deployment to AKS
 
-After the app deploys to AKS, the Visual Studio Code terminal displays a variation of the following message:
+After the app deploys to AKS, the terminal displays a variation of the following message:
 
 ```console
 The eShop-Learn application has been deployed to "http://000.0.000.00" (IP: 000.0.000.00).
@@ -50,7 +50,7 @@ You've verified that the app successfully deployed to AKS and is working properl
 
 GitHub Actions publishes the container image to Azure Container Registry, so the GitHub runner must have permissions to connect to Azure. The following steps create an Azure AD service principal to act as the GitHub Actions identity in Azure.
 
-1. Run the following command in the Visual Studio Code terminal to display your Subscription ID.
+1. Run the following command in the terminal to display your Subscription ID.
 
    ```azurecli
    az account show --query 'id' --output tsv
@@ -96,7 +96,7 @@ Complete the following steps to securely store the sensitive information as envi
 
 1. In your forked GitHub repository, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets and variables":::** > **:::no-loc text="Actions":::**.
 1. On the **:::no-loc text="Actions secrets and variables":::** page, select **:::no-loc text="New repository secret":::**.
-1. On the **:::no-loc text="New secret":::** page, under **:::no-loc text="Name":::** enter *AZURE_CREDENTIALS*, and under **:::no-loc text="Secret":::** enter the JSON output you copied from the Visual Studio Code terminal.
+1. On the **:::no-loc text="New secret":::** page, under **:::no-loc text="Name":::** enter *AZURE_CREDENTIALS*, and under **:::no-loc text="Secret":::** enter the JSON output you copied from the terminal.
 
    The settings should look similar to the following screenshot:
 
@@ -110,7 +110,7 @@ Complete the following steps to securely store the sensitive information as envi
    - `REGISTRY_PASSWORD`
    - `REGISTRY_USERNAME`
 
-   To get the values for the secrets, run the following command in the Visual Studio Code terminal:
+   To get the values for the secrets, run the following command in the terminal:
 
    ```bash
    cat ../../config.txt

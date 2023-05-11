@@ -22,9 +22,9 @@ The *cleanup-service-principal.sh* script:
 
 1. Uses the following Azure CLI command to return a list of service principal identifiers from Azure AD:
 
-    ```azurecli
-    az ad sp list --show-mine --query "[?contains(displayName,'eshop-learn-sp')].appId" --output tsv
-    ```
+   ```azurecli
+   az ad sp list --show-mine --query "[?contains(displayName,'eshop-learn-sp')].appId" --output tsv
+   ```
 
 1. Filters the service principals to the following identifiers:
 
