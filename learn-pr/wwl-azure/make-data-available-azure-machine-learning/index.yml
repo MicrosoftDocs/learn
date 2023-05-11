@@ -3,7 +3,7 @@ uid: learn.wwl.make-data-available-azure-machine-learning
 metadata:
   title: Make data available in Azure Machine Learning
   description: "Make data available in Azure Machine Learning"
-  ms.date: 01/13/2023
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Create and use datastores.
   - Create and use data assets.
 prerequisites: ""
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/make-data-available-azure-machine-learning.svg
 levels:
 - beginner
 roles:
