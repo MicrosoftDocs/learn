@@ -27,7 +27,7 @@ Let's review how Azure Synapse Link for SQL works:
 
 **5.** The linked connection signals the self-hosted runtime to synchronize data based on the selected tables. These tables are extracted from SQL Server as a snapshot in the form of Parquet files and stored in the landing zone. The ingestion service automatically retrieves these Parquet files from the landing zone and converts them into T-SQL such as `CREATE TABLE` statements. These statements are executed in the SQL dedicated pools to synchronize the data.
 
-**6.** The replication service monitors committed log changes for data on SQL Server, adds them to the change feed queue, and then transforms them into Parquet files. These files are temporarily stored in the landing zone before being converted into T-SQL statements and added to the SQL dedicated pools for synchronization.
+**6.** The SQL Server engine monitors committed log changes, adds them to the change feed queue, and then transforms them into Parquet files. These files are temporarily stored in the landing zone before being converted into T-SQL statements and added to the SQL dedicated pools for synchronization.
 
 You have the option to configure the steps above through Azure portal or PowerShell.
 
@@ -35,9 +35,7 @@ You have the option to configure the steps above through Azure portal or PowerSh
 
 With Azure Synapse Link for SQL, you have the flexibility to pause the data replication from the link connection and then resume it as needed. You don't have to worry about data cleanup in the landing zone, as a background thread is responsible for removing committed files within approximately 24 hours, given that the link connection remains running. 
 
-When the link is stopped then the entire landing zone folder is removed. 
-
-For SQL Server 2022, the landing zone is customer-managed and can be hosted anywhere.
+When the link is stopped then the entire landing zone folder is removed automatically.
 
 ## Exercise: Create Azure Synapse Link for SQL Server 2022
 

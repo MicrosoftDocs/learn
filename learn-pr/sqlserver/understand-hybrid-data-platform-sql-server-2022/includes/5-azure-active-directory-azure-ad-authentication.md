@@ -31,7 +31,7 @@ In SQL Server 2022, you no longer have to grant access to user individually to y
 
 Access policies include two different types:
 
-* **Data:** A data access policy allows an Azure AD account to log into SQL Server and have access to read data from user tables in any database for the instance.
+* **Data:** A data access policy allows an Azure AD account to log into SQL Server and have access to read data from user tables in any database for the instance. This feature is currently in public preview.
 
 * **DevOps:** A DevOps access policy allows an Azure AD account to log into SQL Server and perform specific tasks, such as Performance Monitoring or Security Auditing.
 

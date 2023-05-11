@@ -7,6 +7,8 @@ Azure Arc-enabled SQL Server enables you to manage and govern a hybrid infrastru
 
 With Azure Arc-enabled SQL Server, you can take advantage of several Azure services while still operating on-premises.
 
+In addition to free inventory management, Azure Arc-enabled SQL Server now also offers automated backups and patching. This means that you can easily keep track of your SQL Server instances and ensure that they are always up-to-date and backed up, without having to manually perform these tasks.
+
 Let's review some important features available on Azure Arc-enabled SQL Server.
 
 ### Cost efficiency with pay-as-you-go model

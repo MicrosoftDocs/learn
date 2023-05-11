@@ -34,7 +34,6 @@ units:
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.azure-arc-enabled
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.near-real-time-analytics-synapse-link-for-sql
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.azure-active-directory-azure-ad-authentication
-- learn.wwl.understand-hybrid-data-platform-sql-server-2022.store-data-files-azure-storage
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
 - learn.wwl.understand-hybrid-data-platform-sql-server-2022.summary
 badge:
