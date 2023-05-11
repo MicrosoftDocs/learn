@@ -9,7 +9,7 @@ The service that manages the Operator Nexus infrastructure is hosted in Azure. O
 
 ### Network Fabric Automation
 
-Operator Nexus includes [Network Fabric Automation (NFA)](https://microsoft-my.sharepoint.com/personal/pankajgoyal_microsoft_com/Documents/Documents/AzON Learning Modules/howto-configure-network-fabric-controller.md) which enables operators to build, operate and manage carrier grade network fabrics. The reliable and distributed cloud services model supports the operators’ telco network functions. Operators can interact with Operator Nexus to provision the network fabric via Zero-Touch Provisioning (ZTP), as well as perform complex network implementations via a workflow driven, API model.
+Operator Nexus includes Network Fabric Automation (NFA) which enables operators to build, operate and manage carrier grade network fabrics. The reliable and distributed cloud services model supports the operators’ telco network functions. Operators can interact with Operator Nexus to provision the network fabric via Zero-Touch Provisioning (ZTP), as well as perform complex network implementations via a workflow driven, API model.
 
 ### Cluster manager
 
@@ -17,7 +17,7 @@ The Cluster Manager (CM) is hosted on Azure and manages the lifecycle of all on-
 
 ### Bare metal and cluster management
 
-Operator Nexus includes capabilities to manage the bare metal hosts in operators’ premises. Operators can provision the bare metal hosts using Operator Nexus and can interact to restart, shutdown, or re-image, for example. One important component of the service is Cluster Manager. [Cluster Manager](https://microsoft-my.sharepoint.com/personal/pankajgoyal_microsoft_com/Documents/Documents/AzON Learning Modules/howto-cluster-manager.md) provides the lifecycle management of Kubernetes clusters that are made of the bare metal hosts.
+Operator Nexus includes capabilities to manage the bare metal hosts in operators’ premises. Operators can provision the bare metal hosts using Operator Nexus and can interact to restart, shutdown, or re-image, for example. One important component of the service is Cluster Manager. Cluster Manager provides the lifecycle management of Kubernetes clusters that are made of the bare metal hosts.
 
 ## Operator Nexus key components
 
