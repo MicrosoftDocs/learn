@@ -1,6 +1,6 @@
-The hybrid architecture of the Operator Nexus platform uses the robust and rich set of capabilities and services that Azure provides, such as Azure Monitoring.  Nexus uses the Azure centralized cloud management services for simplified management of the on-premises infrastructure and policy management. The hybrid environment provides end-to-end (E2E) visibility, security, and life cycle management of the on-premises network stack. 
+The hybrid architecture of the Operator Nexus platform uses the robust and rich set of capabilities and services that Azure provides, such as Azure Monitoring.  Nexus uses the Azure centralized cloud management services for simplified management of the on-premises infrastructure and policy management. The hybrid environment provides end-to-end (E2E) visibility, security, and life cycle management of the on-premises network stack.
 
-Using a hybrid architecture allows organizations to: 
+Using a hybrid architecture allows organizations to:
 
 - Take advantage of their Azure experience and tools.
 - Deploy infrastructure consistently every time using common APIs.
@@ -11,7 +11,7 @@ Using a hybrid architecture allows organizations to:
 
 :::image type="content" source="../media/operator-nexus-hybrid-architecture.png" alt-text="Screenshot of Azure's integrated management and security features, including Azure Active Directory, Microsoft Defender, Azure Monitor, and resource management." border="false":::
 
-The hybrid architecture of Operator Nexus provides four major components, each of which brings significant benefits: 
+The hybrid architecture of Operator Nexus provides four major components, each of which brings significant benefits:
 
 - **Common identity platform:** Azure Active Directory (Azure AD) is a common identity platform that provides single-sign on (SSO) across on-premises and the cloud, making it simple for users to safely access the applications and assets they need. Admins can manage security and governance controls and also have the flexibility to adjust permissions without affecting the user experience. It also ensures consistency as users cross network or cloud boundaries.
 
