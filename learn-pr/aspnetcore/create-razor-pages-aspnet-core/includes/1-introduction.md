@@ -8,10 +8,11 @@ Suppose you're an employee of a pizza company named Contoso Pizza. Your manager 
 
 In this module, you will:
 
-* Understand when and why to use Razor Pages for your ASP.NET Core app.
-* Use the .NET CLI to create a Razor Pages app.
-* Create a form that supports the app's product data management requirements.
-* Run and test the web app.
+- Understand when and why to use Razor Pages for your ASP.NET Core app.
+- Review an existing ASP.NET Core app that uses Razor Pages.
+- Create a new Razor Page that supports the app's product data management requirements.
+- Use tag helpers to reduce the context switching between HTML and C#.
+- Use Razor Page handlers to handle HTTP requests.
 
 At the end of this module, there are links to content providing deeper dives for each feature area introduced.
 

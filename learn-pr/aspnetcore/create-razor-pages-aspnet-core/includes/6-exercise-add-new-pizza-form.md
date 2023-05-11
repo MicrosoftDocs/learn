@@ -128,6 +128,6 @@ There's one last piece to add to the Pizza List page: a page handler to delete p
     - The `DeletePizza` method is called on the `_service` object to delete the pizza.
     - The `RedirectToAction` method is used to redirect the user to the `Get` page handler, which will re-render the page with the updated list of pizzas.
 
-1. Save your changes and test the **Delete** button for a pizza. The page should refresh and the your selected pizza should be removed from the list.
+1. Save your changes and test the **Delete** button for a pizza. The page should refresh and the selected pizza should be removed from the list.
 
 Congratulations! You've successfully created a Razor Page that displays a list of pizzas, allows the user to add new pizzas, and allows the user to delete pizzas.

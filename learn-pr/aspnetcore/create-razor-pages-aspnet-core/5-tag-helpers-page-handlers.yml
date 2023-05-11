@@ -1,25 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.create-razor-pages-aspnet-core.tag-helpers-and-page-handlers
-title: Tag Helpers and Page Handlers
+uid: learn.create-razor-pages-aspnet-core.5-tag-helpers-page-handlers
+title: Tag helpers and page handlers
 metadata:
-  title: Tag Helpers and Page Handlers
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Tag helpers and page handlers
+  description: "Learn about using tag handlers to reduce the context switching between HTML and C#. Then learn about page handlers and how they can be used to handle HTTP requests."
   ms.date: 5/11/2023
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-durationInMinutes: 1
+  ms.prod: aspnet-core
+durationInMinutes: 4
 content: |
   [!include[](includes/5-tag-helpers-page-handlers.md)]
