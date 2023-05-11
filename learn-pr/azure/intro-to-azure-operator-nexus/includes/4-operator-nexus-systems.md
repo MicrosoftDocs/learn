@@ -36,7 +36,7 @@ The **Network Cloud Resource Provider (RP)** is the primary Operator-facing comp
 - Infrastructure (compute, network and storage)
 - Tenant Infrastructure (ex. VNF VMs).
 
-Log Analytics has a rich analytical toolset that operators can use for troubleshooting or correlating for operational insights. Azure Monitor allows operators to specify alerts.
+Log Analytics has a rich analytical tool set that operators can use for troubleshooting or correlating for operational insights. Azure Monitor allows operators to specify alerts.
 
 ### Host-level software components
 
