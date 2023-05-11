@@ -16,6 +16,9 @@ This branch contains the _Space Game_ project that you worked with in previous m
     git checkout -B selenium upstream/selenium
     ```
 
+   > [!TIP]
+   > If you followed along with Amita's manual test in the previous unit, you may have run these commands already. If you already ran them in the previous unit, you may still run them again now.
+
     Recall that *upstream* refers to the Microsoft GitHub repository. Your project's Git configuration understands the upstream remote because you set up that relationship. You set it up when you forked the project from the Microsoft repository and cloned it locally.
 
     Shortly, you'll push this branch up to your GitHub repository, known as `origin`.
