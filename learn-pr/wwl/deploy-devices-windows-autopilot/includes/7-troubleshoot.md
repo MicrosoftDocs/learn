@@ -1,6 +1,6 @@
 
 
-When troubleshooting Windows Autopilot, the key things to verify are:
+When troubleshooting Windows Autopilot, it is important to verify the following key factors:
 
  -  **Configuration:** Has Azure AD and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?
  -  **Network connectivity:** Can the device access the services described in Windows Autopilot networking requirements?
@@ -48,7 +48,7 @@ Typically displayed on a "Something went wrong" error page, the error code 801C0
 
 [See this article](/troubleshoot/mem/intune/device-enrollment/troubleshoot-device-enrollment-in-intune) for assistance with Intune enrollment issues. Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
 
-Error code 80180018 will typically be reported on an error page titled "Something went wrong." This error means that the MDM enrollment failed.
+When encountering the error code 80180018, it's typically accompanied by an error page titled "Something went wrong." This specific error indicates a failed MDM enrollment process.
 
 ### Troubleshoot Device Import
 

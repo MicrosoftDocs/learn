@@ -23,7 +23,7 @@ Most organizations purchase new devices from an Original Equipment Manufacturer 
 
 It's no longer necessary to reimage the device when it already has Windows 11 or later. Regardless of the OEM image configuration or installed applications, Autopilot can reconfigure the device to suit the organization's requirements, including installing Line-Of-Business Apps and even changing the edition (such as switching from Pro to Enterprise).
 
-From the user's perspective, powering on the device provides an OOBE, with the organization deciding which options remain user-configurable, including the ability to deliver a zero-touch installation (ZTI) experience where the device is ready to use after simply plugging it in and turning it on.
+From the user's standpoint, turning on the device initiates an Out-of-Box Experience (OOBE), during which the organization determines which options can be configured by the user. This includes the possibility of delivering a zero-touch installation (ZTI) experience, where the device is ready for use by plugging it in and powering it on.
 
 ### Refresh existing devices
 
