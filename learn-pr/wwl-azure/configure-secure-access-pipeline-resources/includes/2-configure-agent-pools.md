@@ -25,7 +25,7 @@ Pipeline permissions for the Azure Pipelines agent pool can't be configured, as 
 
 The **Security** action in the Agent pools tab is used to control the security of all project agent pools in a project. Role memberships for individual project agent pools are automatically inherited from what you define here. By default, the following groups are added to the Administrator role of 'All agent pools': Build Administrators, Release Administrators, Project Administrators.
 
-### Steps to configure pipeline access to agent pools
+## Configure pipeline access to agent pools
 
 By configuring pipeline access to agent pools, you can ensure that your pipelines are executed on the right set of agents and that the right level of permissions is granted to the pipelines. You can restrict access to specific pipelines or allow all pipelines to use a specific agent pool.
 

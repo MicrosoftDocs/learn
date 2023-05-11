@@ -1,8 +1,8 @@
 When using Azure DevOps for pipeline automation, it's crucial to limit the access of pipelines to only the repositories they need. It helps to ensure that the pipelines are only making changes and deploying code to the correct places and minimizes the risk of unintended actions that could cause security or stability issues.
 
-In this unit, you'll learn how to configure pipeline access to repositories using Azure DevOps. It's essential to ensure that the pipeline has the necessary permissions to access and integrate with the repository. With the proper configuration, you can maintain the security and privacy of your code while ensuring that the pipeline can access it efficiently.
+In this unit, learn how to configure pipeline access to repositories using Azure DevOps. It's essential to ensure that the pipeline has the necessary permissions to access and integrate with the repository. With the proper configuration, you can maintain the security and privacy of your code while ensuring that the pipeline can access it efficiently.
 
-## Step 1: Protect access to repositories in YAML pipelines setting
+## Protect access to repositories
 
 Azure DevOps provides a permissions mechanism for Azure Repos in the form of the Protect access to repositories in the YAML pipelines setting. This setting makes a YAML pipeline explicitly ask permission to access all Azure Repos repositories. It's a default configuration.
 
@@ -13,7 +13,7 @@ To verify or disable it for your project:
 3. Go to Project Settings, then click on Settings under Pipelines.
 4. Under general, toggle the option Protect access to repositories in YAML pipelines to disable or enable it.
 
-## Step 2: Configuring pipeline access to the repository
+## Configure pipeline access to the repository
 
 Once you confirm your settings, you can configure pipeline access to the repository.
 
@@ -40,7 +40,7 @@ This step will checkout the code from the specified repository and reference, an
 
 When running the pipeline using more than one repository, the pipeline asks permission to access the "eShopOnWeb", MyWebApp and "implement-security-through-pipeline-using-devops" repositories.
 
-## Step 3: Authorize specific pipelines to access the repository
+## Authorize specific pipelines to access the repository
 
 By restricting pipeline access to specific repositories, you can ensure that only authorized pipelines have access to the codebase and its sensitive information. It helps to prevent unauthorized access to sensitive data, such as passwords, API keys, and other confidential information that (shouldn't) may be stored in the codebase.
 

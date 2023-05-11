@@ -6,7 +6,7 @@ In this unit, identify and restrict insecure use of parameters and variables in 
 
 Secure usage of parameters and variables is essential to ensure the security of your pipeline and the projects it supports. Insecure parameters and variables can lead to data breaches, unauthorized access, and other security risks. They can also lead to unexpected behavior or errors that can impact the reliability and stability of your pipeline.
 
-### Identify insecure use of parameters and variables
+## Identify insecure use of parameters and variables
 
 Here are some steps to identify insecure use of parameters and variables in Azure Pipelines:
 
@@ -16,7 +16,7 @@ Here are some steps to identify insecure use of parameters and variables in Azur
 - Check your template files for any parameters or variables storing sensitive information.
 - Check your repository for any parameters or variables storing sensitive information, for example, `appconfig.json`, `appsettings.json`, `secrets.json`, etc.
 
-### Restrict insecure use of parameters and variables
+## Restrict insecure use of parameters and variables
 
 Here are some steps to restrict the insecure use of parameters and variables in Azure Pipelines:
 

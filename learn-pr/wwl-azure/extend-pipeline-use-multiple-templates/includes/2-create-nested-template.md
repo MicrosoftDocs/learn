@@ -1,4 +1,8 @@
-In this unit, you learn how to create a nested template using YAML pipelines in Azure DevOps. A nested template is a reusable YAML file that contains a set of tasks that can be called from another YAML file. This approach can simplify the pipeline's maintenance and management over time and reduce the amount of duplication in the pipeline configuration.
+A nested template is a reusable YAML file that contains a set of tasks that can be called from another YAML file. This approach can simplify the pipeline's maintenance and management over time and reduce the amount of duplication in the pipeline configuration.
+
+In this unit, learn how to create a nested template using YAML pipelines in Azure DevOps.
+
+## YAML templates and security benefits
 
 Using templates in YAML pipelines can provide several security advantages, such as:
 
@@ -7,8 +11,6 @@ Using templates in YAML pipelines can provide several security advantages, such 
 - **Easier permissions management and access:** With nested templates, you can better manage access control to the templates and configuration files, giving you granular control over who can access and modify specific pipeline components.
 - **Better pipeline version control:** Separating pipeline configuration into smaller, more manageable pieces makes it easier to manage changes and version control, which can help prevent errors and conflicts that can lead to security issues.
 - **Simplified pipeline maintenance:** By applying the power of nested templates, it's possible to reduce the duplication in the pipeline configuration, which can help simplify the pipeline's maintenance and management over time.
-
-In this unit, create a nested template that can be called from the main pipeline.
 
 ## Create a YAML file for the nested template
 
