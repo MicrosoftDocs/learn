@@ -1,15 +1,13 @@
 In this unit, explore the benefits of using Managed Identity and Service Principals in Azure DevOps for service connections and services.
 
-## Understanding Managed Identity and Service Principals
+## Understanding managed identity and service principals
 
 > [!IMPORTANT]
 > Follow the steps from the previous unit [**Configure agent identities**](/training/modules/manage-identity-projects-pipelines-agents/4-configure-agent-identities) to create a Managed identity. You'll need this identity to complete the steps in this unit.
 
 Managed Identity and Service Principals are two ways to authenticate and authorize access to Azure resources. Both provide a secure way to grant your Azure Pipelines access to Azure services without having to store credentials in the pipeline configuration.
 
-## Converting to a Managed Identity
-
-To start using Managed Identity in Azure DevOps, you need to convert your existing service connections to use Managed Identity.
+## Convert to a managed identity
 
 1. Navigate to your Azure DevOps project, and then go to 'Project settings' then 'Service connections.'
 2. Identify the service connection you want to convert to use a managed identity. Click in Edit and make a note of its settings, such as the scope and roles assigned to it. Also, make sure you know the pipelines using this service connection.
