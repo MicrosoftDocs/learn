@@ -22,16 +22,16 @@ quiz:
     choices:
     - content: 'Customer service'
       isCorrect: false
-      explanation: 'Approaching the work with a customer-centric mindset is crucial to SRE, but customer service was not part of its origin.'
+      explanation: "Approaching the work with a customer-centric mindset is crucial to SRE, but customer service wasn't part of its origin."
     - content: 'Mainframe operations'
       isCorrect: false
-      explanation: 'Though we can learn from other operations specialties, SRE did not start with this one.'
+      explanation: "Though we can learn from other operations specialties, SRE didn't start with this one."
     - content: 'Software engineering'
       isCorrect: true
       explanation: 'SRE was started with software engineering mindset.'
     - content: 'Architecture'
       isCorrect: false
-      explanation: 'Architecture (especially software architecture) is definitely a component of SRE work, but it was not part of its origin.'
+      explanation: "Architecture (especially software architecture) is definitely a component of SRE work, but it wasn't part of its origin."
 
   - content: 'Which came first, DevOps or SRE?'
     choices:
@@ -59,7 +59,7 @@ quiz:
       isCorrect: true
     - content: 'Coding and ticket systems'
       isCorrect: false
-      explanation: 'While coding is important (more so in SRE), ticket systems are not central to SRE.'
+      explanation: "While coding is important (more so in SRE), ticket systems aren't central to SRE."
     - content: 'Help desk automation and bug tracking'
       isCorrect: false
-      explanation: 'Though useful, help desk automation is not core to either operations practice.'
+      explanation: "Though useful, help desk automation isn't core to either operations practice."
