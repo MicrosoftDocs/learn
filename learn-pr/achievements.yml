@@ -1712,3 +1712,8 @@ achievements:
   title: 5G business models for Azure cloud technologies in enterprise
   summary: This module introduces 5G business models for Azure cloud technologies.
   iconUrl: /training/achievements/student-evangelism/5g-business-models.svg
+- uid: learn.oxford.5g-tech-azure-cloud.badge
+  type: badge
+  title: Enterprise 5G technologies for Azure Cloud Services
+  summary: We introduce Enterprise 5G technologies for Azure
+  iconUrl: /training/achievements/student-evangelism/5g-technologies-for-azure-cloud-services.svg
