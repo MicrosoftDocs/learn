@@ -1,4 +1,5 @@
 
+
 As we've seen from MDT, you can use Configuration Manager to create and deploy Windows images to devices. While many of the concepts are similar, Configuration Manager uses its own interface to manage the import and creation of boot images and the OS images. The deployment is handled through a combination of task sequences and target collections for which objects reside.
 
 #### Task Sequences

@@ -1,9 +1,10 @@
 
+
 Boot images in MDT and Configuration Manager are Windows PE images that initiate a Windows deployment, accessed through various mediums such as CD, ISO, USB or network. The boot images then connect to the deployment share to begin the deployment. Configuration Manager also allows for the creation of MDT boot images within its UI when both tools are integrated.
 
 Configuration Manager provides two default boot images: One to support x86 platforms and the other to support x64 platforms. These images are stored in the `i386` or `x64` folders in the following share on the site server:
 
-**\\\\&lt;SiteServerName&gt;\\SMS\_&lt;sitecode&gt;\\osd\\boot\\**
+**\\\\< SiteServerName >\\SMS\_< sitecode >\\osd\\boot\\**
 
 The default boot images are updated or regenerated depending on the action that you take. You can customize boot images in many ways to facilitate troubleshooting or expand capability; however, you must consider some key concepts:
 
