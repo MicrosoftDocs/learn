@@ -25,17 +25,6 @@ quiz:
     - content: "Capacity is a collection of items that are logically grouped together."
       isCorrect: false
       explanation: "Incorrect. Capacity isn't related to the grouping of items."
-  - content: "Which of the following statements is true about delegation in Fabric?"
-    choices:
-    - content: "Delegation allows you to assign specific administrative tasks to other users."
-      isCorrect: true
-      explanation: "Correct. Delegation allows admins to assign specific administrative tasks to other users, which can reduce their workload and ensure that the appropriate users have the necessary permissions to perform their roles effectively."
-    - content: "Delegation allows you to delegate your reporting tasks to other users."
-      isCorrect: false
-      explanation: "Incorrect. Delegation isn't related to reporting tasks."
-    - content: "Delegation allows you to create new users in the organization."
-      isCorrect: false
-      explanation: "Incorrect. Creating new users in the organization isn't a task that can be delegated."
   - content: "Which of the following statements is true about the difference between promotion and certification in Fabric?"
     choices:
     - content: "Promotion and certification both allow any workspace member to endorse content."
