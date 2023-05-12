@@ -23,6 +23,7 @@ Docker provides a mechanism to remotely execute a command inside the container a
 ```powershell
 docker exec -ti <container id> cmd.exe
 ```
+
 Alternatively to docker exec, you can also open an interactive session to a container when you create it:
 
 ```powershell
