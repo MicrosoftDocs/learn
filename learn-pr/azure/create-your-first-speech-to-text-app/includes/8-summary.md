@@ -1,6 +1,6 @@
-In this module, you learned how Microsoft's Azure Cognitive Services provide developers with APIs to create applications that take advantage of Azure's speech-to-text features.
+In this module, you learned how Microsoft's Azure Cognitive Services provide developers with APIs to create applications that take advantage of Azure's speech to text features.
 
-You created an Azure Cognitive Services account, which you used to create two speech-to-text applications:
+You created an Azure Cognitive Services account, which you used to create two speech to text applications:
 
 - A command-line application that used single-shot recognition to convert simple speech to text.
 
@@ -14,4 +14,4 @@ You also learned how you can improve your recognition results by providing a lis
 
 - [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support)
 
-- [Get started with speech-to-text](/azure/cognitive-services/speech-service/get-started-speech-to-text)
+- [Get started with speech to text](/azure/cognitive-services/speech-service/get-started-speech-to-text)
