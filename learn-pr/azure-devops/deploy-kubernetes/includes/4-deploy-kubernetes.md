@@ -83,7 +83,7 @@ In this unit, you'll learn how to:
 
 ### Kubernetes manifest task
 
-The [Kubernetes manifest task](/azure/devops/pipelines/tasks/deploy/kubernetes-manifest-v1?azure-portal=true) is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined as follows:
+The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernetes-manifest-v1?azure-portal=true) is designed to manage all of the mainstream deployment operations required for Kubernetes. It supports multiple `action` options that range from creating secrets to deploying images. In this case, the `createSecret` action will be used, along with the additional parameters defined as follows:
 
 * `action` indicates the feature to run. In this case, `createSecret` creates the shared secret.
 * `connectionType` specifies the type of service connection to use. Options: *azureResourceManager* or *kubernetesServiceConnection*.

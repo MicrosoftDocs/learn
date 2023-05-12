@@ -111,7 +111,7 @@ To simplify the execution of commands, begin by setting a default region. Once y
 
 1. Select a **region** from the Name column in the output that is geographically close to you. For instance, you could choose *eastasia* or *westus2*.
 
-1. Run the following command to set your default region. Replace <REGION> with the name of the region you chose earlier.
+1. Run the following command to set your default region. Replace *REGION* with the name of the region you chose earlier.
 
     ```azurecli
     az configure --defaults location=<REGION>
