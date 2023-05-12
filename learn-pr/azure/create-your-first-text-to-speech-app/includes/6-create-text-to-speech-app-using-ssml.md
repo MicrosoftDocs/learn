@@ -43,7 +43,7 @@ To specify different voices, you would wrap text within different `<voice>` elem
 
 > [!NOTE]
 > 
-> For a list of voices that you can use, see the **Text to speech** section of [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support.md?tabs=tts#prebuilt-neural-voices).
+> For a list of voices that you can use, see the **Text to speech** section of [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support?tabs=tts#prebuilt-neural-voices).
 
 ### Adjusting the speaking rate and pitch
 
