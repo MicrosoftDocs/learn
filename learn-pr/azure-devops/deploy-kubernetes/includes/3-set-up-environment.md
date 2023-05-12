@@ -319,25 +319,21 @@ Now you will create an Azure Resource Manager service connection to authenticate
     :::image type="content" source="../media/3-pipelines-environments.png" alt-text="Screenshot of Azure Pipelines showing the Environments menu option.":::
 
 1. Select **Create environment** to create a new environment.
-1. Under **Name**, enter *spike*.
-1. Select **Kubernetes** from the **Resource** section, and then select **Next**.
-1. Select **Azure Kubernetes Service** for the **Provider**.
-1. Select your **Azure subscription** and the **Cluster** you created earlier.
-1. Under **Namespace**, select **Existing** and then pick **default** from the dropdown menu.
-1. Select **Validate and create** when you're done.
+1. In the **Name** field, enter *Dev*.
+1. Select **None** from the **Resource** section, and then select **Create** to create your pipeline environment.
 
 ## Update the Kubernetes deployment manifest
 
 In this section you will be updating the Kubernetes manifest *deployment.yml* to point to the container registry you created earlier.
 
-1. Navigate to the GitHub repository created for this module, which can be found under the name "mslearn-tailspin-spacegame-web-kubernetes" in your GitHub account.
+1. Navigate to your GitHub account and select the repository you forked for this module: "mslearn-tailspin-spacegame-web-kubernetes".
 
-1. Open the file at *manifests/deployment.yml* in edit mode.
+1. Open the *manifests/deployment.yml* file in edit mode.
 
     :::image type="content" source="../media/3-github-edit-mode.png" alt-text="Screenshot of GitHub showing the location of the edit mode icon.":::
 
-1. Change the container image references to use your ACR login server. The following code uses *tailspinspacegame2439.azurecr.io* as an example.
+1. Change the container image references to use your ACR login server. The following manifest uses *tailspinspacegame2439.azurecr.io* as an example.
 
     [!code-yml[](code/3-1-deployment.yml?highlight=17,37)]
 
-1. Commit the changes to the `main` branch.
+1. Commit the changes to your `main` branch.
