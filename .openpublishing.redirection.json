@@ -22263,6 +22263,46 @@
       "source_path": "learn-pr/achievements/learn.oxford.deploy-5g-services-with-azure.trophy.yml",
       "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
       "redirect_document_id": false
-   }
+   },
+   {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/2-business-functions.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/3-how-5g-works.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/4-when-use.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },    
+  {
+    "source_path": "learn-pr/achievements/learn.oxford.5g-business-models.badge.yml",
+    "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  }
   ]
 }
