@@ -9,7 +9,7 @@ metadata:
   ms.author: casoper
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-add-new-pizza-form.md)]
 quiz:
@@ -19,10 +19,10 @@ quiz:
       choices:
       - content: "Use either an `OnPost` or `OnPostAsync` method."
         isCorrect: true
-        explanation: "Either an `OnPost` or `OnPostAsync` method should be used to process form submissions."
+        explanation: "Correct! Either an `OnPost` or `OnPostAsync` method should be used to process form submissions."
       - content: "Use an `OnGet` method."
         isCorrect: false
-        explanation: "An `OnGet` method should be used to load information, but not to modify information."
+        explanation: "Incorrect. An `OnGet` method should be used to load information, but not to modify information."
       - content: "Use a `DataAnnotation` to handle form submission."
         isCorrect: false
-        explanation: "You use a `DataAnnotation` to set validation rules, but not to process the form submission."
+        explanation: "Incorrect. You use a `DataAnnotation` to set validation rules, but not to process the form submission."

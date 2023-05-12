@@ -37,7 +37,7 @@ units:
 - learn.create-razor-pages-aspnet-core.2-why-when-use-razor-pages
 - learn.create-razor-pages-aspnet-core.3-exercise-customize-project
 - learn.create-razor-pages-aspnet-core.4-exercise-add-new-razor-page
-- learn.create-razor-pages-aspnet-core.5-tag-helpers-and-page-handlers
+- learn.create-razor-pages-aspnet-core.5-tag-helpers-page-handlers
 - learn.create-razor-pages-aspnet-core.6-exercise-add-new-pizza-form
 - learn.create-razor-pages-aspnet-core.7-summary
 badge:
