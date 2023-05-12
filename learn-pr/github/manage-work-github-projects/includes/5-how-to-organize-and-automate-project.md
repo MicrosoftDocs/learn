@@ -21,7 +21,7 @@ You have the ability to control whether or not your Project is public or private
 To change your Project's visibility:
 
 1. First navigate to your Project.
-1. In the top-right, click the three dots at the top the menu.
+1. In the top-right, click the three dots at the top menu.
 1. Then select the Settings to access to your Project.
 1. Next to the Visibility in the "Danger zone," select Private or Public.
 

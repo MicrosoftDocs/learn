@@ -51,7 +51,7 @@ Adding an iteration field to your Project can help you and your team visualize t
 1. Then click on New field.
 1. Type in the name of your iteration, some examples are Project Phase or Sprint.
 
-   :::image type="content" source="../media/4-iteration-field.png" alt-text="Iteration Field Date Editing Field with the options to edit start date and duration in weeks."":::
+   :::image type="content" source="../media/4-iteration-field.png" alt-text="Iteration Field Date Editing Field with the options to edit start date and duration in weeks.":::
 
 1. Next you can change the duration of each iteration, type a new number, then select the dropdown and click either days or weeks.
 1. Then make sure to click **Save**.

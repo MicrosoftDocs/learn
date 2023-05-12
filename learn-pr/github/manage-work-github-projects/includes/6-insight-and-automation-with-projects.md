@@ -20,7 +20,7 @@ As mentioned above there are two types of charts you can create from insights: c
 
 You can create current charts to visualize your Project items. For example, you can create charts to show how many items are assigned to each individual, or how many issues are assigned to each upcoming iteration. You can also use filters to manipulate the data used to build your chart. For example, you can create a chart showing how much upcoming work you have, but limit those results to particular labels or assignees.
 
-:::image type="content" source="../media/6-current-chart-example.png" alt-text="Example of a current bar chart tracking the amount of hours spent per 7 iteration phases and color coded by amount of time spent on Bugs, Feedback, Backend, and UI work.":::
+:::image type="content" source="../media/6-current-chart-example.png" alt-text="Example of a current bar chart tracking the amount of hours spent per seven iteration phases and color coded by amount of time spent on Bugs, Feedback, Backend, and UI work.":::
 
 #### Historical charts
 
@@ -33,7 +33,7 @@ Historical charts are currently available as a feature preview for organizations
 Creating charts is simple, below are the steps to follow for when you want to create a new chart.
 
 1. Navigate to your Project.
-1. In the top-right, to access insights, click the line graph button, when you hover above the button, it'll be labeled as Insights.
+1. In the top-right, to access insights, click the line graph button, when you hover above the button, it will be labeled as Insights.
 1. In the menu on the left, click New chart.
 1. Above the chart, type filters to change the data used to build the chart.
 1. To the right of the filter text box, click Save changes.
@@ -80,7 +80,7 @@ To enable automation first go to the top-right corner of your Project and click 
 1. Below click on Set and click Status:Todo.
 1. Finally in the right corner of the page, ensure the toggle is turned On.
 
-Congratulations! You've just automated your Project!
+Congratulations! You have just automated your Project!
 
 ## GitHub Actions with workflows
 
@@ -90,4 +90,4 @@ Learn more about automating workflows for your Project here, see the article, "A
 
 ### GraphQL API
 
-If you are using GraphQL in GitHub, you can also utilize an API to help automate your Project. For more information on using GraphQL API, see the article, "Using the GraphQL API to automate your projects" at the end of the module.
+If you're using GraphQL in GitHub, you can also utilize an API to help automate your Project. For more information on using GraphQL API, see the article, "Using the GraphQL API to automate your projects" at the end of the module.

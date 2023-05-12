@@ -31,7 +31,7 @@ quiz:
       explanation: "Although an iteration field may help you keep track of where your team is with a particular phase of your project, it unfortunately doesn't specific changes to an issue or pull request you've put in your Project."
     - content: "Allows you to reverse the changes you made to your Project."
       isCorrect: false
-      explanation: "An iteration field helps you and your team break down your Project into different phases, unfortunately it does not help reverse changes."
+      explanation: "An iteration field helps you and your team break down your Project into different phases, unfortunately it doesn't help reverse changes."
     - content: "Allows you to create sequential phases of your project and group issues and pull request based on the phase."
       isCorrect: true
       explanation: "An iteration field helps you and your team break down your Project into different phases, allowing you to prioritize what comes first and implement timelines in order to keep you on track to accomplish your goals."
@@ -61,7 +61,7 @@ quiz:
     choices:
     - content: "Red Zone"
       isCorrect: false
-      explanation: "Although the section is technically red, this is not the name of the section."
+      explanation: "Although the section is technically red, this isn't the name of the section."
     - content: "Visibility and Access"
       isCorrect: false
       explanation: "Single select field allows you to create multiple groups like Priority grouping in order to help you organize and prioritize your Project."
