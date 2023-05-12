@@ -59,7 +59,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 ## Task 3: Configure Microsoft Sentinel connectors
 
-In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
+In this task, you deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the Azure portal, select **Home**, and then search for and select **Microsoft Sentinel**.
 
@@ -75,9 +75,9 @@ In this task, you'll deploy a Microsoft Sentinel connector to Azure Activity.
 
 1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
 
-1. Select the **Parameters** tab, choose your *<yourName>-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
+1. Select the **Parameters** tab, choose your *yourName-sentinel* workspace from the **Primary Log Analytics workspace** drop-down list.
 
-1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action will apply the subscription configuration to send the information to the Log Analytics workspace.
+1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
 
 1. Select the **Review + Create** button to review the configuration.
 
