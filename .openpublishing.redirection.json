@@ -22228,6 +22228,11 @@
       "source_path": "learn-pr/paths/deploy-5g-services/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.oxford.deploy-5g-services-with-azure.trophy.yml",
+      "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+      "redirect_document_id": false
+   }
   ]
 }
