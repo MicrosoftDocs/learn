@@ -10611,6 +10611,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/6-handle-interactions-with-pagemodel-methods.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/7-exercise-create-pagemodel.yml",
       "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
