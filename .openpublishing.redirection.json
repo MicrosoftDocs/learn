@@ -10607,22 +10607,22 @@
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/3-setup-environment.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/3-exercise-create-new-aspnetcore-app",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/4-run-razor-pages-project.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/4-explore-razor-pages-project",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/5-new-razor-page-create-form.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/5-exercise-create-new-razor-page-and-form",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/6-create-pagemodel.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/6-handle-interactions-with-pagemodel-methods",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
@@ -10632,7 +10632,7 @@
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/8-deploy-test.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/7-exercise-create-pagemodel",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
@@ -10642,7 +10642,37 @@
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/10-summary.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/8-summary",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/3-exercise-create-new-aspnetcore-app.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/4-explore-razor-pages-project.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/5-exercise-create-new-razor-page-and-form.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/6-handle-interactions-with-pagemodel-methods.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/7-exercise-create-pagemodel.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/8-summary.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
@@ -22223,6 +22253,16 @@
       "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/paths/deploy-5g-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.oxford.deploy-5g-services-with-azure.trophy.yml",
+      "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+      "redirect_document_id": false
+   }
   ]
 }
