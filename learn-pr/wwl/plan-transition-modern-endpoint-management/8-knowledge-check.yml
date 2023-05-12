@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Moving completely to cloud-based management using Intune"
       isCorrect: true
-      explanation: "Correct. Smaller organizations should consider moving to 100% cloud-based management using Intune if: The OS configuration capabilities provided by Autopilot meet deployment needs. Applications are modern and relatively simple installs. There is'nt an excessive number of existing legacy applications. The existing configuration management deployment is relatively simple. Server management requirements can be accomplished with other tools such as Windows Admin Center."
+      explanation: "Correct. Smaller organizations should consider moving to 100% cloud-based management using Intune if: The OS configuration capabilities provided by Autopilot meet deployment needs. Applications are modern and relatively simple installs. There isn't an excessive number of existing legacy applications. The existing configuration management deployment is relatively simple. Server management requirements can be accomplished with other tools such as Windows Admin Center."
     - content: "Use Configuration Manager"
       isCorrect: false
       explanation: "Incorrect. This solution is more applicable for enterprise organizations that tend to have more complexity in their infrastructure, legacy systems and applications. Try again."
