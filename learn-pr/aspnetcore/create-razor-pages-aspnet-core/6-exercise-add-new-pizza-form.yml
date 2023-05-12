@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.create-razor-pages-aspnet-core.6-exercise-add-new-pizza-form
-title: Exercise - Add New Pizza Form
+title: Exercise - Add new pizza form
 metadata:
-  title: Exercise - Add New Pizza Form
+  title: Exercise - Add new pizza form
   description: "Add a form to the page that allows users to add a new pizza."
   ms.date: 5/11/2023
   author: camsoper
@@ -17,7 +17,7 @@ quiz:
   questions:
     - content: "What method would you use to handle form submission in a `PageModel`?"
       choices:
-      - content: "Use either an `OnPost` or `OnPostAsync` method."
+      - content: "Use an `OnPost` (or `OnPostAsync`) method."
         isCorrect: true
         explanation: "Correct! Either an `OnPost` or `OnPostAsync` method should be used to process form submissions."
       - content: "Use an `OnGet` method."

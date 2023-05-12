@@ -1,12 +1,10 @@
-In the previous unit, you created a Razor Page that displays a list of pizzas. You used the `@` symbol to switch contexts between HTML and C#. In this unit, you'll learn about *tag helpers*. Tag helpers are a special kind of HTML element that can contain C# code. They're a great way to add C# code to your HTML without having to switch contexts. They also make your HTML easier to read and maintain.
-
-You'll also learn about *page handlers*. Page handlers are methods that handle browser requests. You'll use page handlers in the next unit to add and delete pizzas.
+In the previous unit, you created a Razor Page that displays a list of pizzas. You used the `@` symbol to switch contexts between HTML and C#. In this unit, you'll learn about *tag helpers*. Tag helpers are a special kind of HTML element that can contain C# code. You'll also learn about *page handlers*. Page handlers are methods that handle browser requests. You'll use page handlers in the next unit to add and delete pizzas.
 
 ## Tag helpers
 
-Tag Helpers are used to address the inefficiencies of context switching between HTML and C#. Most of ASP.NET Core's built-in Tag Helpers extend standard HTML elements. Tag Helpers provide extra server-side attributes for HTML elements, making the elements more robust.
+Tag helpers are used to address the inefficiencies of context switching between HTML and C#. Most of ASP.NET Core's built-in Tag helpers extend standard HTML elements. Tag helpers provide extra server-side attributes for HTML elements, making the elements more robust.
 
-There are four Tag Helpers you should know for this project: **Partial**, **Label**, **Input**, and **Validation Summary Message**.
+There are four tag helpers you should know for this project: **Partial**, **Label**, **Input**, and **Validation Summary Message**.
 
 ### Partial Tag Helper
 
@@ -14,7 +12,7 @@ There are four Tag Helpers you should know for this project: **Partial**, **Labe
 <partial name="_ValidationScriptsPartial" />
 ```
 
-This injects the contents of the `_ValidationScriptsPartial.cshtml` file into the page. The `_ValidationScriptsPartial.cshtml` file contains JavaScript that's used to validate form input, so it needs to be included on every page that contains a form.
+This injects the contents of the `_ValidationScriptsPartial.cshtml` file into a page. The `_ValidationScriptsPartial.cshtml` file contains JavaScript that's used to validate form input, so it needs to be included on every page that contains a form.
 
 ### Label tag helper
 

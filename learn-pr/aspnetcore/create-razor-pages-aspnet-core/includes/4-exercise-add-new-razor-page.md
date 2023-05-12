@@ -1,4 +1,4 @@
-In the previous unit, you obtained the source code for the Contoso Pizza project. Then you made some reviewed the project, ran it, and made some simple changes to the home page. In this unit, you'll add a new Razor page to the project.
+In the previous unit, you obtained the source code for the Contoso Pizza project. Then you made some simple changes to the home page. In this unit, you'll add a new Razor page to the project.
 
 ## Create the Pizza List page
 
@@ -38,14 +38,15 @@ To create a new Razor page, you'll use the .NET CLI.
 
     This adds a heading to the page, as well as two HTML comment placeholders for functionality you'll add later.
 
-1. Save the file.
+1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
+1. Return to the terminal running `dotnet watch` and press **Ctrl+R** to reload the app and detect the new files.
 
 ## Add the Pizza List page to the navigation menu
 
 This would be a good time to test the page, but you can't do that yet because the page isn't linked to the navigation menu. You'll do that now.
 
 1. Open *Pages/Shared/_Layout.cshtml*.
-1. In the `<ul>` element with the `navbar-nav` class, note the `<li>` elements that contain the links to the *Home* and *Privacy* pages. Add the following code after the `<li>` element containing the *Privacy* link:
+1. In the `<ul>` element with the `navbar-nav` class (starts on line 21), note the `<li>` elements that contain the links to the *Home* and *Privacy* pages. Add the following code to the end of the list, after the `<li>` element containing the *Privacy* link:
 
     ```razor
     <li class="nav-item">
@@ -55,7 +56,7 @@ This would be a good time to test the page, but you can't do that yet because th
 
     This adds a link to the *PizzaList* page to the navigation menu.
 
-1. Save the file. In the browser, the home page refreshes with the new navigation menu link.
+1. Save the file. The browser tab with the app automatically refreshes to display the changes. If you're using GitHub Codespaces, the file saves automatically, but you'll need to refresh the browser tab manually.
 1. Select the *Pizza List 🍕* link in the navigation menu. The Pizza List page appears.
 
 ## Register the PizzaService class with the dependency injection container
@@ -71,9 +72,11 @@ The Pizza List page will depend on the existing `PizzaService` object to retriev
 
     This code registers the `PizzaService` class with the dependency injection container. The `AddScoped` method indicates that a new `PizzaService` object should be created for each HTTP request. Now the `PizzaService` can be injected into any Razor page.
 
-1. Save the file.
+1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
 
 ## Display a list of pizzas
+
+Let's modify the `PageModel` class for the Pizza List page to retrieve the list of pizzas from the `PizzaService` object and store it in a property.
 
 1. Open *Pages/PizzaList.cshtml.cs*.
 1. Add the following `using` statements to the top of the file:
@@ -91,13 +94,12 @@ The Pizza List page will depend on the existing `PizzaService` object to retriev
     public class PizzaListModel : PageModel
     {
         private readonly PizzaService _service;
+        public IList<Pizza> PizzaList { get;set; } = default!;
 
         public PizzaListModel(PizzaService service)
         {
             _service = service;
         }
-
-        public IList<Pizza> PizzaList { get;set; } = default!;
 
         public void OnGet()
         {
@@ -110,20 +112,18 @@ The Pizza List page will depend on the existing `PizzaService` object to retriev
 
     - A private readonly `PizzaService` named `_service` is created. This variable will hold a reference to a `PizzaService` object.
         - The `readonly` keyword indicates that the value of the `_service` variable can't be changed after it's set in the constructor.
-    - The constructor accepts a `PizzaService` object.
-        - The `PizzaService` object is provided by dependency injection.
     - Defines a `PizzaList` property that will hold the list of pizzas.
         - The `IList<Pizza>` type indicates that the `PizzaList` property will hold a list of `Pizza` objects.
         - `PizzaList` is initialized to `default!` to indicate to the compiler that it will be initialized later, so null safety checks aren't required.
+    - The constructor accepts a `PizzaService` object.
+        - The `PizzaService` object is provided by dependency injection.
     - Defines an `OnGet` method that retrieves the list of pizzas from the `PizzaService` object and stores it in the `PizzaList` property.
 
     > [!TIP]
     > If you need help understanding null safety, see [Null safety in C#](/training/modules/csharp-null-safety/).
 
-1. Save the file.
-
-> [!IMPORTANT]
-> Keep a close eye on the terminal window with `dotnet watch` every time you save your file. Sometimes your code might contain what it calls a *rude edit*. This means that the code you changed can't be recompiled without restarting the application. If prompted to restart the app, press `y` (yes) or `a` (always). If all else fails, stop the application by pressing **Ctrl+C** in the terminal window, and then restart it by running `dotnet watch` again.
+1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
+1. Return to the terminal running `dotnet watch` and press **Ctrl+R** to reload the app with the registered service and the new constructor for `PizzaListModel`.
 
 ## Display the list of pizzas
 
@@ -177,6 +177,8 @@ Now that the page has access to the list of pizzas, you'll use that list to disp
             - The `asp-page-handler` attribute indicates that the form should be submitted to the `Delete` handler in the code-behind file. You'll create that handler in a later unit.
             - The `asp-route-id` attribute indicates that the `Id` property of the `Pizza` object should be passed to the `Delete` handler.
 
-1. Save the file. In the browser, the Pizza List page refreshes with the list of pizzas.
+1. Save the file. In the browser, the Pizza List page refreshes with the list of pizzas. If you're using GitHub Codespaces, the file saves automatically, but you'll need to refresh the browser tab manually.
+
+:::image type="content" source="../media/pizza-list.png" alt-text="Screenshot of the Pizza List page with the working list.":::
 
 Good work! You've created a Razor page that displays a list of pizzas. In the next unit, you'll learn about tag helpers and page handlers.

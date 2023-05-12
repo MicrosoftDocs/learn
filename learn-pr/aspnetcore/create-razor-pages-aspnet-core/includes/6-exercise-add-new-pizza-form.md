@@ -44,7 +44,8 @@ Let's start by adding properties to the `PizzaListModel` class to represent the 
     - The `NewPizza` property is used to add a new pizza to the `_service` object.
     - The `RedirectToAction` method is used to redirect the user to the `Get` page handler, which will re-render the page with the updated list of pizzas.
 
-1. Save your changes.
+1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
+1. Return to the terminal running `dotnet watch` and press **Ctrl+R** to reload the app.
 
 Now that there's a page handler to handle the form submission, let's add the form to the Razor Page.
 
@@ -56,7 +57,7 @@ Now that there's a page handler to handle the form submission, let's add the for
     <div class="form-group">
         <label asp-for="NewPizza.Name" class="control-label"></label>
         <input asp-for="NewPizza.Name" class="form-control" />
-        <span asp-validation-for="Pizza.Name" class="text-danger"></span>
+        <span asp-validation-for="NewPizza.Name" class="text-danger"></span>
     </div>
     <div class="form-group">
         <label asp-for="NewPizza.Size" class="control-label"></label>
@@ -102,7 +103,11 @@ Now that there's a page handler to handle the form submission, let's add the for
 
     This injects the client-side validation scripts into the page. The client-side validation scripts are used to validate the user's input before the form is submitted to the server.
 
-1. Save your changes and test the form. Enter a new pizza and select the **Create** button. The page should refresh and display the new pizza in the list.
+1. Save the file. In the browser, the Pizza List page refreshes with the new form. If you're using GitHub Codespaces, the file saves automatically, but you'll need to refresh the browser tab manually.
+
+    :::image type="content" source="../media/pizza-list-with-form.png" alt-text="Screenshot of the PizzaList page with the new pizza form.":::
+
+1. Enter a new pizza and select the **Create** button. The page should refresh and display the new pizza in the list.
 
 ## Add a page handler to delete pizzas
 
@@ -128,6 +133,7 @@ There's one last piece to add to the Pizza List page: a page handler to delete p
     - The `DeletePizza` method is called on the `_service` object to delete the pizza.
     - The `RedirectToAction` method is used to redirect the user to the `Get` page handler, which will re-render the page with the updated list of pizzas.
 
-1. Save your changes and test the **Delete** button for a pizza. The page should refresh and the selected pizza should be removed from the list.
+1. Save the file. If you're using GitHub Codespaces, the file saves automatically.
+1. Test the **Delete** button for a pizza. The page should refresh and the selected pizza should be removed from the list.
 
 Congratulations! You've successfully created a Razor Page that displays a list of pizzas, allows the user to add new pizzas, and allows the user to delete pizzas.
