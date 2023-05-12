@@ -1390,7 +1390,7 @@ achievements:
 - uid: learn.create-voice-activated-webxr-app-with-babylonjs.badge
   type: badge
   title: Create and deploy a voice activated WebXR app with Babylon.js and Azure Cognitive Services
-  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
+  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech to text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
   iconUrl: /training/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
 - uid: learn.azure.intro-to-custom-commands.badge
   type: badge
@@ -1419,8 +1419,8 @@ achievements:
   iconUrl: /training/achievements/language-translator-mixed-reality.svg
 - uid: learn.azure.intro-to-speech-to-text.badge
   type: badge
-  title: Introduction to Speech-to-text
-  summary: Speech-to-text enables the real-time transcription of audio streams into text.
+  title: Introduction to Speech to text
+  summary: Speech to text enables the real-time transcription of audio streams into text.
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
 - uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
   type: badge
@@ -1429,8 +1429,8 @@ achievements:
   iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
-  title: Introduction to Text-to-speech
-  summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
+  title: Introduction to Text to speech
+  summary: Text to speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
   iconUrl: /training/achievements/intro-to-text-to-speech.svg
 - uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics.badge
   type: badge
@@ -1702,3 +1702,8 @@ achievements:
   title: Implement partitioning in Azure Cosmos DB
   summary: Learn how partitions are organized in Azure Cosmos DB and how to choose an appropriate partition key for your solution.
   iconUrl: /training/achievements/2-implement-partitioning-in-azure-cosmos-db.svg
+- uid: learn.oxford.deploy-5g-services-with-azure.trophy
+  type: trophy
+  title: Deploy 5G services with Azure
+  summary: This learning path aims to explain learners how to use Azure to deploy 5G services
+  iconUrl: /training/achievements/deploy-5g-services-with-azure.svg

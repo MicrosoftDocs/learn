@@ -1,4 +1,5 @@
 
+
 In this module, you'll learn how Microsoft Sentinel gives you the ability to identify anomalies in your Azure environment and helps you manage incidents.
 
 You're a security engineer for Contoso, Ltd., a midsize financial services company in London with a New York branch office. Contoso uses Microsoft 365, Azure Active Directory (Azure AD), Azure AD Identity Protection, Microsoft Defender for Cloud Apps, Microsoft Defender for Identity, Microsoft Defender for Endpoint, Microsoft Defender for Office 365, Intune Endpoint Protection, and Microsoft Azure Information Protection.
