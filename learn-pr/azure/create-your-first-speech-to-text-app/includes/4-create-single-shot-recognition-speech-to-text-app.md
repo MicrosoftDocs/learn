@@ -1,4 +1,4 @@
-In the previous exercise, you learned how to create an Azure Cognitive Services account using the Azure Command Line Interface (CLI). Now that you have an Azure Cognitive Services account to work with, you can begin working on your speech-to-text application.
+In the previous exercise, you learned how to create an Azure Cognitive Services account using the Azure Command Line Interface (CLI). Now that you have an Azure Cognitive Services account to work with, you can begin working on your speech to text application.
 
 Your first challenge is to create an application that your company can use to transcribe the brief memos from your medical clients. Azure Cognitive Services provides two different types of speech recognition that you can use for your development:
 
