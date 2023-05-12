@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.5g-business-models
+hidden: true
 metadata:
   title: "5G business models for Azure cloud technologies in enterprise"
   description: "This module introduces 5G business models for Azure cloud technologies."

@@ -358,7 +358,7 @@ az servicebus topic subscription show \
      --topic-name salesperformancemessages \
      --name Americas \
      --query messageCount \
-     --namespace-name <namespace-name> \
+     --namespace-name <namespace-name> 
 ```
 
 If you replace `Americas` with `EuropeAndAsia` in this code to see the current message count for the `EuropeAndAsia` subscription, you'll see that the message count is `1`. In the preceding code, only `Americas` was set to retrieve topic messages, so that message is still waiting for `EuropeAndAsia` to retrieve it.
