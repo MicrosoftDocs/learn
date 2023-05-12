@@ -21,7 +21,7 @@ prerequisites: |
   - Strong technical skills installing, maintaining, and troubleshooting the Windows 11 OS or later.
   - Strong understanding of computer networking, client security, and application concepts.
   - Experience using Active Directory Domain Services.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/azure-active-directory-manage-identities.svg
 levels:
 - intermediate
 roles:
