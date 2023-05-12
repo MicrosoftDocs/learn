@@ -1,5 +1,6 @@
 ### YamlMime:Module
 uid: learn.oxford.5g-tech-azure-cloud
+hidden: true
 metadata:
   title: Enterprise 5G technologies for Azure Cloud Services
   description: "We introduce Enterprise 5G technologies for Azure"
