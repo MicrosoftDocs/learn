@@ -19,8 +19,8 @@ To view the connector page, do the following steps:
 
 1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
 
-> [!NOTE]
-> To apply the policy to your existing resources, you need to create a remediation task checkbox.
+   > [!NOTE]
+   > To apply the policy to your existing resources, you need to create a remediation task checkbox.
 
 1. Select the **Review + Create** button to review the configuration.
 
