@@ -32,7 +32,7 @@ Now it's time to make sure the application works as expected. In this step, buil
 
 1. Open a new terminal.
 
-1. Start the application with hot reloads enabled using [`dotnet watch`](/dotnet/core/tools/dotnet-watch)
+1. Start the application with hot reloads enabled using [`dotnet watch`](/dotnet/core/tools/dotnet-watch).
 
     ```bash
     dotnet watch run --non-interactive

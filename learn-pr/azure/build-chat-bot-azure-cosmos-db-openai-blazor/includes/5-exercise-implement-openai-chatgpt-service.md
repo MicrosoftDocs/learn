@@ -134,7 +134,7 @@ At this point, your application should have a thorough enough implementation of 
 
 1. Open a new terminal.
 
-1. Start the application with hot reloads enabled using [`dotnet watch`](/dotnet/core/tools/dotnet-watch)
+1. Start the application with hot reloads enabled using `dotnet watch`.
 
     ```bash
     dotnet watch run --non-interactive
