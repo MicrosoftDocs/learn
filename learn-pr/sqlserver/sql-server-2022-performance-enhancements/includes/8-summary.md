@@ -3,7 +3,7 @@ By upgrading to SQL Server 2022, you can utilize the many performance enhancemen
 In this module, you've learned to:
 
 - Understand the key functionality behind Intelligent Query Processing and when to implement the feature
-- Understand Automatic performance healing with memory grant feedback persistance
+- Understand Automatic performance healing with memory grant feedback persistence
 - Know how to get consistent performance with Parameter Sensitive Plan optimization
 - Gain parallel efficiency with DOP Feedback
 

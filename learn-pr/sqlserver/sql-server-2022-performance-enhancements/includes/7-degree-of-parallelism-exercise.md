@@ -192,14 +192,14 @@ You'll observe how this feature validates DOP values for an eligible query until
 
 1. You can also view the improvement in performance through the **Top Resource Consuming Queries** report. Open the **WideWorldImporters** > **Query Store** > **Top Resource Consuming Queries** in SSMS **Object Explorer** to open the report.  
 
-   ![Screenshot of SSMS Query Store and selecting the Top Resource Consuming Queries report.](../media/degree-of-parallelism-feedback-exercise-top-resource-consuming-queries.jpg)
+   ![Screenshot of SSMS Query Store and selecting the Top Resource Consuming Queries report.](../media/degree-of-parallelism-exercise-top-resource-consuming-queries.jpg)
 
 1. Change **Statistic** to `Avg` and **Metric** to `Duration (ms)`. You can see the decrease in time until stabilization of DOP.
 
-   ![Screenshot of SSMS viewing the Top Resource Consuming Queries report.](../media/degree-of-parallelism-feedback-exercise-top-resource-consuming-queries-report.jpg)
+   ![Screenshot of SSMS viewing the Top Resource Consuming Queries report.](../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report.jpg)
 
 1. Change the **Metric** to `CPU Time (ms)` and observe. You can see the decrease in CPU.
 
-   ![Screenshot of SSMS viewing the Top Resource Consuming Queries report and looking at CPU usage.](../media/degree-of-parallelism-feedback-exercise-top-resource-consuming-queries-report-cpu.jpg)
+   ![Screenshot of SSMS viewing the Top Resource Consuming Queries report and looking at CPU usage.](../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report-cpu.jpg)
 
    This above report shows you the real benefit of DOP feedback. There's a significant reduction in CPU resources required to achieve a similar or lower duration for the query without any user action.
