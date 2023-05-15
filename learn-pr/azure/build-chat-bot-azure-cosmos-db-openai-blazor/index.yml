@@ -3,7 +3,7 @@ uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor
 metadata:
   title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and ASP.NET Blazor
   description: |
-    This module walks through the steps to connect an existing ASP.NET Core Blazor WebAssembly application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the ChatGPT model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
+    This module walks through the steps to connect an existing ASP.NET Core Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the ChatGPT model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
   moduleType: guided-project
   manager: jroth
   author: seesharprun

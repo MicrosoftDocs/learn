@@ -10,7 +10,7 @@ Your development team has built a chat bot interface with ASP.NET Core Blazor th
 
 ## What are we doing?
 
-This module walks through the steps to connect an existing ASP.NET Core Blazor WebAssembly application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the ChatGPT model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
+This module walks through the steps to connect an existing ASP.NET Core Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the ChatGPT model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
 
 In short, the application will:
 
@@ -21,4 +21,4 @@ In short, the application will:
 
 ## What is the main goal?
 
-By the end of this module, you're able to author .NET classes that connect to Azure Cosmos DB for NoSQL or Azure OpenAI. The classes you author implement common operations using their respective SDKs. Finally, the classes you author are then used in an ASP.NET Core Blazor WebAssembly application.
+By the end of this module, you're able to author .NET classes that connect to Azure Cosmos DB for NoSQL or Azure OpenAI. The classes you author implement common operations using their respective SDKs. Finally, the classes you author are then used in an ASP.NET Core Blazor application.

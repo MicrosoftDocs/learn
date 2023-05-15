@@ -1,4 +1,4 @@
-You're updating an existing .NET solution that has an ASP.NET Blazor WebAssembly application as it's sole project. This project includes service classes for data storage and conversation that are implemented with placeholders. Here, we discuss the overall goals of the project and how you're going to implement the data store and conversational functionality. Additionally, we cover how to set up the Azure resources that you need.
+You're updating an existing .NET solution that has an ASP.NET Blazor application as it's sole project. This project includes service classes for data storage and conversation that are implemented with placeholders. Here, we discuss the overall goals of the project and how you're going to implement the data store and conversational functionality. Additionally, we cover how to set up the Azure resources that you need.
 
 ## Project overview
 
