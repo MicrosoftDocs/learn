@@ -100,7 +100,7 @@ To delete either a real or simulated device from your Azure IoT Central applicat
 Cloud properties are the device metadata associated with the device, such as city and serial number. Writable properties control the behavior of a device. In other words, they enable you to provide inputs to your device. Device properties are set by the device and are read-only within IoT Central. You can view and update properties on the **Device Details** views for your device.
 
 1. Select **Devices** on the left pane.
-1. Select the device template of the device whose properties you want to change, and the select the target device.
+1. Select the device template of the device whose properties you want to change, and then select the target device.
 1. Select the view that contains properties for your device. This view enables you to see the properties of your device and their current values. Cloud properties and writable properties have editable fields, while device properties are read-only. For writable properties, you can see their sync status at the bottom of the field. A **Save** button is located at the top of the page.
 1. Modify the properties to the values you need. You can modify multiple properties one at a time and update them all at the same time.
 1. Select **Save**. If you saved writable properties, the values are sent to your device. When the device confirms the change for the writable property, the status returns back to synced. If you saved a cloud property, the value is updated.

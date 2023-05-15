@@ -9,7 +9,7 @@ A typical IoT device is made up of:
 - Custom parts, which are the things that make your device unique.
 - Standard parts, which are things that are common to all devices.
 
-These parts are called interfaces in a device model. Interfaces define the details of each part your device implements. Interfaces are reusable across device models. In DTDL, a component refers to another interface, which may defined in a separate DTDL file or in a separate section of the file.
+These parts are called interfaces in a device model. Interfaces define the details of each part your device implements. Interfaces are reusable across device models. In DTDL, a component refers to another interface, which may be defined in a separate DTDL file or in a separate section of the file.
 
 ## Approaches for creating a device model
 
