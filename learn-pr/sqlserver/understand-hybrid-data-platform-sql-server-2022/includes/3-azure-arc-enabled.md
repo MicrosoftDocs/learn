@@ -45,8 +45,6 @@ One of the major advantages of Microsoft Defender for Cloud is its centralized m
 
 Microsoft Defender for Cloud is available for Azure Arc-enables SQL Servers. By configuring it, you'll safeguard your database estate and get a list of recommended security actions to minimize your overall exposure.
 
-:::image type="content" source="../media/module-2-azure-arc-defender.png" alt-text="Diagram showing the Arc-enabled Security products and infrastructure that can be protected.":::
-
 To learn more about how to configure Arc-enabled SQL Server with Microsoft Defender for Cloud, see [Protect Azure Arc-enabled SQL Server with Microsoft Defender for Cloud](/sql/sql-server/azure-arc/configure-advanced-data-security).
 
 ### Configure your Azure Arc-enabled SQL Server
