@@ -12,7 +12,7 @@ metadata:
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 4/19/2023
+  ms.date: 5/15/2023
 durationInMinutes: 6
 content: |
   [!include[](includes/3-setup-starter-app.md)]

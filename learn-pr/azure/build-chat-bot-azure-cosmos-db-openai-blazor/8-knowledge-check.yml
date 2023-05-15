@@ -12,36 +12,29 @@ metadata:
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 4/19/2023
+  ms.date: 5/15/2023
 durationInMinutes: 5
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: |
+      Which NuGet package should you use to interact with data in Azure Cosmos DB for NoSQL from a .NET application?
     choices:
-    - content: ""
+    - content: |
+        Microsoft.Azure.WebJobs.Extensions.CosmosDB
+      isCorrect: false
+      explanation: |
+        This extension is used with Azure Functions to support Azure Cosmos DB bindings.
+    - content: |
+        Microsoft.Azure.Cosmos
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: |
+        This library is the official SDK to manage data in an Azure Cosmos DB for NoSQL account.
+    - content: |
+        Azure.ResourceManager.CosmosDB
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: |
+        This library is used to manage Azure Cosmos DB resources, but not data.
   - content: ""
     choices:
     - content: ""
