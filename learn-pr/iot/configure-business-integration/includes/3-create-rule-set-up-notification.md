@@ -4,11 +4,11 @@ Devices use telemetry to send numerical data from the device. A rule triggers wh
 
 ## Create a rule in the IoT Central UI
 
-You can open a new rule in the IoT Central UI as follows:.
+You can open a new rule in the IoT Central UI as follows:
 
-1.  In the left pane, select **Rules**.
-2.  To add a new rule, select **+ New**.
-3.  Enter a name that identifies the rule, and then press **Enter**.
+1. In the left pane, select **Rules**.
+1. To add a new rule, select **+ New**.
+1. Enter a name that identifies the rule.
 
 With your rule open in the UI, you can set the target devices, define conditions for the rule
 
@@ -39,8 +39,4 @@ If you no longer need a rule, delete it by opening the rule and choosing **Delet
 
 ## Enable or disable a rule
 
-Choose the rule you want to enable or disable. Toggle the Enabled / Disabled button in the rule to enable or disable the rule for all devices that are scoped in the rule.
-
-## Enable or disable a rule for a device
-
-Choose the rule you want to enable or disable. Add a filter in the **Scopes** section to include or exclude a certain device in the device template.
+Choose the rule you want to enable or disable. Toggle the **Enabled** / **Disabled** button in the rule to enable or disable the rule for all devices that are scoped in the rule.

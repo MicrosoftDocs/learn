@@ -4,9 +4,9 @@ Suppose you work for a company that needs to build an IoT solution, but lacks th
 
 In this module, you will:
 
- -  Examine the configuration of Rules in Azure IoT Central.
- -  Examine how to configure a rule with condition-based actions.
- -  Examine the Azure IoT Central Dashboard page for administrators.
- -  Examine the Azure IoT Central data analytics UI.
+- Examine the configuration of rules in Azure IoT Central.
+- Examine how to configure a rule with condition-based actions.
+- Examine the Azure IoT Central dashboard page for administrators.
+- Examine the Azure IoT Central data analytics UI.
 
 By the end of this module, you will be able to describe the Azure IoT Central features that support business integration, data analytics, and administration.
