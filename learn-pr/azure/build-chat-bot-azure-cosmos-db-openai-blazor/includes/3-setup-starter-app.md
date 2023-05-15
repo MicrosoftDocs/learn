@@ -40,6 +40,6 @@ Now it's time to make sure the application works as expected. In this step, buil
 
 1. Visual Studio Code launches an in-tool simple browser with the web application running. In the web application, create a new chat session with at least one message. The AI assistant responds with the prebaked string values that you observed during the guided tour of the project's code.
 
-    :::image type="content" source="../media/starter-application.png" lightbox="../media/starter-application.png" alt-text="Screenshot of" border="false":::
+    :::image type="content" source="../media/starter-application.png" lightbox="../media/starter-application.png" alt-text="Screenshot of the application running without a connection to Azure OpenAI or Azure Cosmos DB.":::
 
 1. Close the terminal.
