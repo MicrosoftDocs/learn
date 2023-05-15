@@ -1,6 +1,6 @@
 The `OpenAiService` class contains a stub implementation of a service that can send prompts to an AI assistant and parse the responses.
 
-There are a few key requirements we try to tackle in this exercise:
+There are a few key requirements to tackle in this exercise:
 
 - Import the .NET SDK for Azure OpenAI
 - Add the Azure OpenAI endpoint and key to the application settings
@@ -26,7 +26,7 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI/1.0.0-bet
 
 1. Open the `cosmoschatgpt.csproj` project file.
 
-1. Observe the entry that was created for the `Azure.AI.OpenAI` package:
+1. Observe the entry that was created for the `Azure.AI.OpenAI` package.
 
     ```xml
     <ItemGroup>
@@ -39,7 +39,7 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI/1.0.0-bet
 
 ## Add application settings
 
-In a .NET application, it's common to use the configuration providers to inject new settings into your application. For this application, we use the `appsettings.Development.json` file to provide the most current values for our Azure OpenAI endpoint and key.
+In a .NET application, it's common to use the configuration providers to inject new settings into your application. For this application, use the `appsettings.Development.json` file to provide the most current values for the Azure OpenAI endpoint and key.
 
 1. In the root of the project, create a new file named **appsettings.Development.json**.
 
@@ -58,22 +58,18 @@ In a .NET application, it's common to use the configuration providers to inject 
 1. Within the `OpenAi` property, create two new properties for the `Endpoint` and `Key`. Use the Azure OpenAI endpoint and key settings you recorded earlier in this project.
 
     ```json
-    {
-      "OpenAi": {
-        "Endpoint": "<your-azure-openai-endpoint>",
-        "Key": "<your-azure-openai-key>"
-      }
+    "OpenAi": {
+      "Endpoint": "<your-azure-openai-endpoint>",
+      "Key": "<your-azure-openai-key>"
     }
     ```
 
     Assuming the name of the Azure OpenAI account is **nybncrsna76fo-openai** and the key is `4bf98cb194cdf0f9001eae3259a76ed8`, you would configure the JSON object like this example. The key in this example is fictitious.
 
     ```json
-    {
-      "OpenAi": {
-        "Endpoint": "https://nybncrsna76fo-openai.openai.azure.com/",
-        "Key": "4bf98cb194cdf0f9001eae3259a76ed8"
-      }
+    "OpenAi": {
+      "Endpoint": "https://nybncrsna76fo-openai.openai.azure.com/",
+      "Key": "4bf98cb194cdf0f9001eae3259a76ed8"
     }
     ```
 
@@ -81,7 +77,7 @@ In a .NET application, it's common to use the configuration providers to inject 
 
 ## Add required members and a client instance
 
-Finally, we can implement the class variables required to use the Azure OpenAI client. At this step, implement a few static prompts and create a new instance of the `OpenAIClient` class.
+Finally, implement the class variables required to use the Azure OpenAI client. At this step, implement a few static prompts and create a new instance of the `OpenAIClient` class.
 
 1. Open the **Services/OpenAiService.cs** file.
 
@@ -186,7 +182,7 @@ At this point, your constructor should include enough logic to create a client i
     ```
 
     > [!IMPORTANT]
-    > At this point, you will see two new build warnings that we are not using our static string variables. We will resolve these warnings in the next exercise.
+    > At this point, you will see two new build warnings that the application is not using the static string variables. You will resolve these warnings in the next exercise.
 
 1. Close the terminal.
 
@@ -226,7 +222,7 @@ At this point, your constructor should include enough logic to create a client i
     }
     ```
 
-1. Within the **OpenAiService.cs** code file, review the constructor to make sure that your code matches this sample.
+1. Within the **OpenAiService** class, review the constructor to make sure that your code matches this sample.
 
     ```csharp
     ArgumentNullException.ThrowIfNullOrEmpty(deploymentName);

@@ -206,3 +206,5 @@ At this point, your application should have a thorough enough implementation of 
         return completions.Choices[0].Message.Content.TrimEnd('.');
     }
     ```
+
+---
