@@ -120,7 +120,7 @@ The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernete
 1. Select **Pipelines**, and then select your pipeline to view the logs as your pipeline runs.
 1. Once the pipeline run is complete, select **Environments** from the left pane, and then select the **Dev** environment to view your deployment jobs.
 1. Now let's go check out our deployed web app and API endpoint. To do so, we will need to get the external IP addresses for both the *web* and *leaderboard* services.
-1. Navigate to Azure Portal, select your AKS cluster, and then select **Services amd ingresses**.
+1. Navigate to Azure portal, select your AKS cluster, and then select **Services and ingresses**.
 
     :::image type="content" source="../media/aks-external-ip.png" alt-text="Screenshot of how to find the external IPs for your web and leaderboard services.":::
 
@@ -128,7 +128,7 @@ The [Kubernetes manifest task](/azure/devops/pipelines/tasks/reference/kubernete
 
     :::image type="content" source="../media/4-space-game.png" alt-text="Screenshot of the Space Game web site.":::
 
-1. Go back to your Azure Portal window where you left off and then copy the **External IP** for your **leaderboard** service. This IP address is where the leaderboard API is publicly hosted.
+1. Go back to your Azure portal window where you left off and then copy the **External IP** for your **leaderboard** service. This IP address is where the leaderboard API is publicly hosted.
 1. Replace the placeholder in the link below with the external IP you just copied. You can also add a `pageSize=10` query parameter to make it easier to view the JSON response in your browser. Use a URL like the one below in a new browser tab.
 
     ```
