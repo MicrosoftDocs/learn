@@ -1,8 +1,11 @@
 In this unit, learn how to configure Microsoft-hosted agents and agent pools in Azure DevOps, focusing on security best practices. Microsoft-hosted agents are virtual machines maintained by Microsoft, and agent pools enable you to organize and manage these agents efficiently.
 
-## Microsoft-hosted agents
+## Types of Azure DevOps Agents
 
-Microsoft-hosted agents are preconfigured virtual machines provided and managed by Microsoft. These agents come with numerous preinstalled tools and software, which make them suitable for running a wide range of tasks in your pipelines.
+Azure DevOps provides two types of agents:
+
+- **Microsoft-hosted agents**: These are agents managed by Microsoft. They are pre-configured and ready to use, with various software already installed. Microsoft-hosted agents are updated regularly and provide a highly scalable option for running your pipelines.
+- **Self-hosted agents**: These are agents that you manage on your infrastructure. They provide more control over the environment and can be customized to your requirements. Self-hosted agents are ideal for scenarios where you need specific tools or configurations not available on Microsoft-hosted agents.
 
 ## Agent pools
 
