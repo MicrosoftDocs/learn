@@ -21,7 +21,7 @@ As an admin, you may be responsible for a wide range of tasks to keep the Fabric
 
 Specific tasks may vary depending on the needs of your organization and the complexity of your Fabric implementation.
 
-## Administrator Tools
+## Describe admin tools
 
 You need to familiarize yourself with a few tools to effectively implement the tasks outlined above. Fabric admins can perform most admin tasks using one or more of the following tools: the Fabric admin portal, PowerShell cmdlets, admin APIs and SDKs, and the admin monitoring workspace.
 
