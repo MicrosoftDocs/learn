@@ -1,6 +1,6 @@
 
 
-When troubleshooting Windows Autopilot, it is important to verify the following key factors:
+When troubleshooting Windows Autopilot, it's important to verify the following key factors:
 
  -  **Configuration:** Has Azure AD and Microsoft Intune (or an equivalent MDM service) been configured as specified in Windows Autopilot configuration requirements?
  -  **Network connectivity:** Can the device access the services described in Windows Autopilot networking requirements?
@@ -48,10 +48,10 @@ Typically displayed on a "Something went wrong" error page, the error code 801C0
 
 [See this article](/troubleshoot/mem/intune/device-enrollment/troubleshoot-device-enrollment-in-intune) for assistance with Intune enrollment issues. Common issues include incorrect or missing licenses assigned to the user or too many devices enrolled for the user.
 
-When encountering the error code 80180018, it's typically accompanied by an error page titled "Something went wrong." This specific error indicates a failed MDM enrollment process.
+When encountering the error code 80180018, it's accompanied by an error page titled "Something went wrong." This specific error indicates a failed MDM enrollment process.
 
 ### Troubleshoot Device Import
 
-When importing a device CSV file, if nothing happens and a *'400' error appears in network trace with error body "Cannot convert the literal '\[DEVICEHASH\]' to the expected type 'Edm.Binary'* error appears, the device hash within the file is either corrupted or the hash may not be properly padded in the file. This may require a minor edit to the file.
+If you experience a scenario where importing a device CSV file results in no action and a *'400' error appears in network trace with error body "Cannot convert the literal '\[DEVICEHASH\]' to the expected type 'Edm.Binary'* error appears, the device hash within the file is either corrupted or the hash may not be properly padded in the file. To resolve this issue, a minor edit to the file might be necessary to ensure the device hash is in the correct format.
 
 For more information, see [Troubleshooting Windows Autopilot (level100/200)](https://aka.ms/AA6d57a) and [Troubleshooting Windows Autopilot](https://aka.ms/AA80h34).
