@@ -68,6 +68,8 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     );
     ```
 
+1. Save the **Services/OpenAiService.cs** file.
+
 ## Ask the AI model to summarize a conversation
 
 Now, send the AI model a different system prompt, your current conversation, and session ID so the AI model can summarize the conversation in a couple of words.
