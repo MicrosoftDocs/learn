@@ -1707,3 +1707,18 @@ achievements:
   title: Deploy 5G services with Azure
   summary: This learning path aims to explain learners how to use Azure to deploy 5G services
   iconUrl: /training/achievements/deploy-5g-services-with-azure.svg
+- uid: learn.oxford.5g-business-models.badge
+  type: badge
+  title: 5G business models for Azure cloud technologies in enterprise
+  summary: This module introduces 5G business models for Azure cloud technologies.
+  iconUrl: /training/achievements/student-evangelism/5g-business-models.svg
+- uid: learn.oxford.5g-tech-azure-cloud.badge
+  type: badge
+  title: Enterprise 5G technologies for Azure Cloud Services
+  summary: We introduce Enterprise 5G technologies for Azure
+  iconUrl: /training/achievements/student-evangelism/5g-technologies-for-azure-cloud-services.svg
+- uid: learn.oxford.intro-5g-azure.badge
+  type: badge
+  title: Introduction to 5G for Azure in the Enterprise
+  summary: We introduce 5G for Azure in the Enterprise
+  iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
