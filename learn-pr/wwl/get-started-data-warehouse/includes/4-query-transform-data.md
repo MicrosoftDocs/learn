@@ -1,7 +1,5 @@
 Now that you know how to implement a data warehouse in Fabric, let's prepare the data for analytics.
 
-## Query and transform data
-
 There are two ways to query data from your data warehouse. The *Visual query editor* provides a no-code, drag-and-drop experience to create your queries. If you're comfortable with T-SQL, you may prefer to use the *SQL query editor* to write your queries. In both cases, you can create tables, views, and stored procedures to query data in the data warehouse and Lakehouse.
 
 There's also a SQL endpoint, where you can connect from any tool.
