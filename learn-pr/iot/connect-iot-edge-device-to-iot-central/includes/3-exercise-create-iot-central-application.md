@@ -19,7 +19,7 @@ The following steps create an IoT Central application and generate an API token 
 
 1. Run the following commands in the Cloud Shell to generate a unique name for your IoT Central application and save it in an environment variable to use later:
 
-    ```azurecli-interactive
+    ```azurecli
     APP_NAME="store-manager-$RANDOM"
     echo "Your application name is: $APP_NAME"
     ```
@@ -28,7 +28,7 @@ The following steps create an IoT Central application and generate an API token 
 
 1. Run the following command in the Cloud Shell to create an IoT Central application in the sandbox:
 
-    ```azurecli-interactive
+    ```azurecli
     az iot central app create \
     --resource-group <rgn>[sandbox resource group name]</rgn> \
     --name $APP_NAME --sku ST2 --location centralus \
