@@ -1,8 +1,3 @@
----
-title: Near real-time analytics with Azure Synapse Link for SQL
-durationInMinutes: 16
----
-
 Azure Synapse Analytics is a powerful cloud-based solution for Enterprise Data Warehousing (EDW), engineered to harness the computing capability of Massively Parallel Processing (MPP) by enabling rapid execution of queries on petabytes of data, making it the ideal platform for large-scale data analytics.
 
 With near real-time analytics capabilities available on SQL Server 2022, you can replicate data to dedicated SQL pools using Azure Synapse Link for SQL.
@@ -49,8 +44,8 @@ To run this exercise, make sure you're running SQL Server 2022 with the latest [
 1. On the **Manage** page, select the **SQL pools** tab.
 1. Create a new dedicated SQL pool or select the row for a pre-existing dedicated SQL pool and use its **&#9655;** icon to start it; confirming that you want to resume it when prompted. 
 
-    >[NOTE!]
-    >This dedicated SQL pool is the target where we're going to replicate SQL Server data to.
+    > [!NOTE]
+    > This dedicated SQL pool is the target where we're going to replicate SQL Server data to.
 
 1. On the **Home** page, select **New**, and then **SQL script**.
 
@@ -108,7 +103,7 @@ Next, create the linked service responsible to communicate with your landing zon
 
         :::image type="content" source="../media/module-2-synapse-link-04.png" alt-text="Screenshot showing the New link connection page.":::
 
-    >[NOTE!] 
+    > [!NOTE]
     > Some target tables display an error due to the use of custom data types or because data in the source table is not compatible with the default structure type of *clustered columnstore index*.
 
 1. Select **Continue**.
@@ -120,7 +115,7 @@ Next, create the linked service responsible to communicate with your landing zon
 
     :::image type="content" source="../media/module-2-synapse-link-06.png" alt-text="Screenshot showing the connection settings configuration.":::
 
-    >[NOTE!] 
+    > [!NOTE]
     > You can generate a Landing Zone SAS token, selecting **+ Generate token**.
 
 1. With the new Azure Synapse Link connection open, you can update the target table name, distribution type, and structure type.
@@ -131,9 +126,9 @@ Next, create the linked service responsible to communicate with your landing zon
  
     :::image type="content" source="../media/module-2-synapse-link-07.png" alt-text="Screenshot showing the start process of the link connection.":::
 
-    >[NOTE!] 
+    > [!NOTE]
     > In case of the error *'Some unknown error happened: FileSystem not found.'*, ensure that there's a container in the storage account you designated as the landing zone, with the same name on the **landing zone folder path** when registering the linked service for your landing zone.
-    
+    >
     > In case of the error *'The database master key is missing.'*, run `DROP MASTER KEY` and `CREATE MASTER KEY` to recreate the master key in the SQL pool, and select **Start** to initiate the link connection again.
 
 After the replication has started, you can navigate to the **Tables** node on the **Data** hub for the dedicated SQL pool and expand it to check the new replicated tables. You can also insert dummy data into **Sales.SalesPerson** or **Person.EmailAddress** at the source, and execute a `SELECT` statement at the destination to confirm if the data has been replicated.

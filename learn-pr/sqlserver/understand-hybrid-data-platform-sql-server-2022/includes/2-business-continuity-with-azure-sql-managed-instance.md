@@ -1,15 +1,10 @@
----
-title: Ensure Business Continuity with Azure SQL Managed Instance
-durationInMinutes: 7
----
-
 Running and maintaining a Disaster Recovery (DR) solution on-premises can be challenging, costly and time consuming.
 
 Starting with SQL Server 2022, you now have the flexibility to extend your on-premises disaster recovery environment to Azure, which allows you to fail over and fail back between SQL Server instances and Azure SQL Managed Instance by using the link feature.
 
 In addition to the flexibility of failover and failback options, Azure SQL Managed Instance offers a fully functional instance of SQL Server on Azure that is highly compatible with the latest SQL Server release.
 
-:::image type="content" source="../media/module-2-azuresql-offerings.png" alt-text="Diagram showing the various Azure SQL offerings available, including SQL Server on Azure Virtual Machine, Azure SQL Managed Instance, Azure SQL Database, and Azure SQL Edge.":::
+:::image type="content" source="../media/module-2-azure-sql-offerings.png" alt-text="Diagram showing the various Azure SQL offerings available, including SQL Server on Azure Virtual Machine, Azure SQL Managed Instance, Azure SQL Database, and Azure SQL Edge.":::
 
 ### Use case scenario
 
@@ -23,7 +18,7 @@ Azure SQL Managed Instance link feature allows you to replicate your SQL Server 
 
 One of the advantages of using Azure SQL Managed Instance is that it is a platform as a service (PaaS), which means that the latest hardware maintenance, patching, and updates are applied and managed automatically by Azure. This ensures that your database environment is always up-to-date and secure, while also reducing the risk of downtime due to hardware failures or software vulnerabilities.
 
-:::image type="content" source="../media/module-2-sqlmi-linkfeature.png" alt-text="Diagram showing the replication of databases from the primary replica to the secondary replica through the distributed availability group (AG).":::
+:::image type="content" source="../media/module-2-sql-managed-instance-link-feature.png" alt-text="Diagram showing the replication of databases from the primary replica to the secondary replica through the distributed availability group (AG).":::
 
 As we can see above, the link feature uses distributed availability group (DAG) and it is scoped per database (one link per one database). This allows you to consolidate multiple parallel SQL Server databases into an Azure SQL Managed Instance or scale them out across multiple instances and regions worldwide.
 

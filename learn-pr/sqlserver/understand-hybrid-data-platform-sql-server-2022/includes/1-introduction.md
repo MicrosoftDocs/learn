@@ -1,8 +1,3 @@
----
-title: Introduction
-durationInMinutes: 18
----
-
 In this module, you'll learn about SQL Server 2022 scenarios that can be extended to the cloud and understand the advantages of using a hybrid approach to increase productivity and innovation, and how you can connect to Azure for managing disaster recovery, near real-time analytics, and enhancements to authentication.
 
 Understanding how SQL Server operates as a hybrid data platform can be valuable in modernizing your data estate, improving scalability and control. Moreover, the hybrid data platform enables you to explore the benefits of cloud computing before fully migrating to Azure, providing a valuable, low-risk opportunity to evaluate performance and reliability metrics before a full commitment.
@@ -19,7 +14,7 @@ A cloud connected service can also be adopted in mixed ways, such as storing SQL
 
 SQL Server 2022 connects to the cloud with the following Azure services as seen in the following diagram:
 
-:::image type="content" source="../media/module-2-sql-server-2022-cloud-connected.png" alt-text="SQL Server 2022 is Cloud Connected":::
+:::image type="content" source="../media/module-2-sql-server-2022-cloud-connected.png" alt-text="Diagram of SQL Server 2022 cloud connected capabilities.":::
 
 ### Increased agility and innovation
 

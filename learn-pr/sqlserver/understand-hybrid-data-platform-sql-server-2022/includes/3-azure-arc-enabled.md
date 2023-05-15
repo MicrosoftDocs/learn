@@ -1,8 +1,3 @@
----
-title: Simplify management with Azure Arc-enabled SQL Server
-durationInMinutes: 8
----
-
 Azure Arc-enabled SQL Server enables you to manage and govern a hybrid infrastructure regardless of the physical location of the database infrastructure. Moreover, Azure Arc-enabled SQL Server allows organizations to extend their on-premises database environment to Azure, providing a unified management experience. 
 
 With Azure Arc-enabled SQL Server, you can take advantage of several Azure services while still operating on-premises.
@@ -39,13 +34,11 @@ SQL Server 2022 introduces a new feature that allows you to use Azure Active Dir
 
 ### Secure Azure Arc-enabled SQL Server with Microsoft Defender for Cloud
 
-Microsoft Defender for Cloud is a cloud-based security solution designed to provide advanced protection against multiple attacks and vulnerabilities. It's a comprehensive solution that uses intelligent capabilities to detect and respond to threats in real-time. 
+Microsoft Defender for Cloud is a cloud-based security solution designed to provide advanced protection against multiple attacks and vulnerabilities. It's a comprehensive solution that uses intelligent capabilities to detect and respond to threats in real-time.
 
 One of the major advantages of Microsoft Defender for Cloud is its centralized management feature, which provides a single place for managing security across multiple cloud-based environments. This centralized view simplifies security management and seamlessly integrates with other Microsoft security tools for comprehensive protection, such as Azure Sentinel, to provide a comprehensive security solution for your organization.
 
 Microsoft Defender for Cloud is available for Azure Arc-enables SQL Servers. By configuring it, you'll safeguard your database estate and get a list of recommended security actions to minimize your overall exposure.
-
-:::image type="content" source="../media/module-2-azure-arc-defender.png" alt-text="Diagram showing the Arc-enabled Security products and infrastructure that can be protected.":::
 
 To learn more about how to configure Arc-enabled SQL Server with Microsoft Defender for Cloud, see [Protect Azure Arc-enabled SQL Server with Microsoft Defender for Cloud](/sql/sql-server/azure-arc/configure-advanced-data-security).
 

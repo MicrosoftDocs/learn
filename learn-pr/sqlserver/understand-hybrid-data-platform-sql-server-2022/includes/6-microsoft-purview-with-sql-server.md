@@ -1,8 +1,3 @@
----
-title: Microsoft Purview access policies for SQL Server
-durationInMinutes: 3
----
-
 Microsoft Purview is a unified data governance solution that allows you to manage and govern your infrastructure anywhere. 
 
 In SQL Server 2022, you no longer have to grant access to user individually to your SQL Server instance. Instead, you can use Microsoft Purview to manage data access policies at scale. This allows you to simplify access management and ensure consistent policies across your organization.
