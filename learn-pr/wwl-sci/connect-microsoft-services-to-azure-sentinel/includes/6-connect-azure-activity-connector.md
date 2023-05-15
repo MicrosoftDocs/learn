@@ -1,7 +1,7 @@
 The Azure Activity Log is a subscription log that provides insight into subscription-level events that occur in Azure. The events included are from Azure Resource Manager operational data, service health events, write operations taken on the resources in your subscription, and the status of activities performed in Azure.
 
 > [!IMPORTANT]
-> A prerequisite requires you to be assigned the owner role on the relevant subscription
+> Prerequisites requires your user to be assigned the owner role on the relevant subscription.
 
 To view the connector page, do the following steps:
 
