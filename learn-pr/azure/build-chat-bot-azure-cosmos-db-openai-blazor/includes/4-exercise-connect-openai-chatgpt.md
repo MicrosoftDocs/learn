@@ -18,7 +18,7 @@ The [`Azure.AI.OpenAI`](https://www.nuget.org/packages/Azure.AI.OpenAI/1.0.0-bet
     dotnet add package Azure.AI.OpenAI --version 1.0.0-beta.5
     ```
 
-1. Build the .NET project.
+1. Build the .NET project again.
 
     ```bash
     dotnet build

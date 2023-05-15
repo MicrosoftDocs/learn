@@ -12,7 +12,7 @@ After you complete this exercise, you'll have a general understanding of the pro
 
 This application uses [CodeTour](https://github.com/microsoft/codetour), a Visual Studio Code extension to walk you through a guided tour of the codebase. Here, you walk through the codebase and orient yourself to the application that you're working on through this project.
 
-1. Open the **Command Palette*, search for the **CodeTour** commands, and then select **CodeTour: Start Tour**.
+1. Open the **Command Palette**, search for the **CodeTour** commands, and then select **CodeTour: Start Tour**.
 
     :::image type="content" source="../media/start-codetour-command-palette.png" alt-text="Screenshot of the Command Palette option to start the primary guided tour of the codebase.":::
 
@@ -32,13 +32,7 @@ Now it's time to make sure the application works as expected. In this step, buil
 
 1. Open a new terminal.
 
-1. Build the .NET project using [`dotnet build`](/dotnet/core/tools/dotnet-build).
-
-    ```bash
-    dotnet build
-    ```
-
-1. Start the application with hot reloads enabled using [dotnet watch](/dotnet/core/tools/dotnet-watch)
+1. Start the application with hot reloads enabled using [`dotnet watch`](/dotnet/core/tools/dotnet-watch)
 
     ```bash
     dotnet watch run --non-interactive
