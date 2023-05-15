@@ -13,18 +13,7 @@ metadata:
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "What language is used to perform Real-Time Analytics queries in Microsoft Fabric?"
-    choices:
-    - content: "KQL"
-      isCorrect: true
-      explanation: "Correct. Kusto Query Language is used to query Real-Time Analytics tables."
-    - content: "SQL"
-      isCorrect: false
-      explanation: "Incorrect. SQL is used to query tables in a lakehouse or data warehouse."
-    - content: "PySpark"
-      isCorrect: false
-      explanation: "Incorrect. PySpark is used to run Python code in Apache Spark."
-  - content: "Which keyword is used to limit the results of a query to a specified number of rows?"
+  - content: "Which KQL keyword is used to limit the results of a query to a specified number of rows?"
     choices:
     - content: "`select`"
       isCorrect: false
@@ -35,7 +24,7 @@ quiz:
     - content: "`project`"
       isCorrect: false
       explanation: "Incorrect. `project` is used to return specific columns."
-  - content: "Which keyword is used to group and aggregate data?"
+  - content: "Which KQL keyword is used to group and aggregate data?"
     choices:
     - content: "`group_by`"
       isCorrect: false
