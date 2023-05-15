@@ -21,7 +21,7 @@ prerequisites: |
   - Basic working knowledge of SQL Server and query processing.
   - Fundamental knowledge of the Transact-SQL (T-SQL) language.
   - Familiarity with SQL Server functions and operators.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
