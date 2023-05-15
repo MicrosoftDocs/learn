@@ -2,7 +2,6 @@ Let's start with the simplest service to implement, `OpenAiService`. This servic
 
 In this exercise, we have a few key requirements:
 
-- Send sets of prompts to the AI model deployment and parse various completions.
 - Send a question from the user to the AI assistant and ask for a response.
 - Send a series of prompts to the AI assistant and ask for a summarization of the conversation.
 
