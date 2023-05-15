@@ -1,4 +1,5 @@
 
+
 As a security engineer working for Contoso, you recently noticed that a significant number of VMs were deleted from your Azure subscription. You want to analyze this occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM. You can then investigate the incident to determine the details, and close the incident when you're finished.
 
 In this exercise, you'll create a Microsoft Sentinel analytics rule, delete a VM, and investigate the incident created by the rule.

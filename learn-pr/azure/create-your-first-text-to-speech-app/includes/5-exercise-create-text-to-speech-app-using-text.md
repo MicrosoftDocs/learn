@@ -1,12 +1,12 @@
 In this exercise, you'll create a text file that you'll use to create an audio file by using the Azure Cognitive Services speech synthesizer.
 
-## Create your text-to-speech application
+## Create your text to speech application
 
 1. In the Cloud Shell on the right, create a directory for your application, then switch folders to your new folder.
 
     ```bash
-    mkdir text-to-speech
-    cd text-to-speech
+    mkdir text to speech
+    cd text to speech
     ```
 
 1. Create a new .NET Core application.
@@ -25,7 +25,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
     This command should take a few seconds to complete.
 
-## Add the code for your text-to-speech application
+## Add the code for your text to speech application
 
 1. In the Cloud Shell on the right, open the *Program.cs* file.
 
@@ -155,7 +155,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
     -rw-r--r-- 1 user   user     1328 Oct  1 11:11 Program.cs
     -rw-r--r-- 1 user   user      413 Oct  1 11:11 Shakespeare.txt
     -rw-r--r-- 1 user   user   955282 Oct  1 11:11 Shakespeare.wav
-    -rw-r--r-- 1 user   user      348 Oct  1 11:11 text-to-speech.csproj
+    -rw-r--r-- 1 user   user      348 Oct  1 11:11 text to speech.csproj
     ```
 
 ## Optional: Listen to your WAVE file
@@ -164,7 +164,7 @@ In this exercise, you'll create a text file that you'll use to create an audio f
 
 ## Optional: Change the voice
 
-The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property that you can use to specify a voice other than the default. You can find a list of voices that you can use in the **Text-to-speech** section of the [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support#text-to-speech) article.
+The `SpeechConfig` class has a `SpeechSynthesisVoiceName` property that you can use to specify a voice other than the default. You can find a list of voices that you can use in the **Text to speech** section of the [Language and voice support for the Speech service](/azure/cognitive-services/speech-service/language-support#text-to-speech) article.
 
 To specify the voice, use the following steps.
 
@@ -195,4 +195,4 @@ To specify the voice, use the following steps.
     using var speechSynthesizer = new SpeechSynthesizer(speechConfig, null);
     ```
 
-    When you make this change and recompile your application, the text-to-speech synthesis will use the new voice.
+    When you make this change and recompile your application, the text to speech synthesis will use the new voice.

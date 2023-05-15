@@ -1,6 +1,6 @@
 You can use Azure Site Recovery as part of your organization's disaster recovery process.
 
-Your organization has multiple workloads, some running in the cloud and some remaining on-premises. To protect these workloads, you need to understand how to use Site Recovery as part of your BCDR plan, and how it can be used with other Azure solutions.
+Your organization has multiple workloads, some running in the cloud and some remaining on-premises. To protect these workloads, you need to understand how to use Site Recovery as part of your BCDR plan and how it can be used with other Azure solutions.
 
 In this unit, you see how Site Recovery simplifies your BCDR process. You see the different types of machines and scenarios that are supported with Site Recovery, and you learn how to integrate your existing network with Site Recovery.
 
@@ -8,7 +8,7 @@ In this unit, you see how Site Recovery simplifies your BCDR process. You see th
 
 Site Recovery helps you simplify your BCDR. You can configure and manage your replication, failover, and failback, all through the Azure portal, Azure CLI, or Azure PowerShell. Use Site Recovery to replicate different types of targets. For example, Site Recovery can help you configure disaster recovery for Azure virtual machines. You can replicate Azure virtual machines from a primary to a secondary region. Your on-premises virtual machines can be replicated too, along with workloads such as SQL Server.
 
-When you replicate over to Azure, the replicated virtual machine disks go into Azure storage and are kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you, using the disks replicated from the source.
+When you replicate over to Azure, the replicated virtual machine disks go into Azure storage and are kept resilient as a result. If a failover is triggered, Azure virtual machines are created for you using the disks replicated from the source.
 
 Site Recovery helps you meet your recovery time objective because it can perform continuous replication for your virtual machines. Replication can occur as often as every 30 seconds for your virtual machines. This frequency means reduced recovery time objective (RTO).
 
@@ -24,7 +24,7 @@ If you're using other BCDR technologies, you may be able to integrate them too. 
 
 Let's look at a solution that incorporates Azure Backup and Site Recovery.
 
-![Site Recovery and Azure Backup.](../media/3-asr-backup-diagram.png)
+:::image type="content" source="../media/3-asr-backup-diagram.png" alt-text="Screenshot showing Site Recovery and Azure Backup.":::
 
 Here we have an on-premises environment that has a Hyper-V host server for hosting virtual machines. You want to back up all the files and folders in this virtual machine to Azure. You also want to protect any workloads running on the virtual machine, and keep running them even if the virtual machine fails. Azure Backup and Site Recovery can be used together as part of a single solution.
 
