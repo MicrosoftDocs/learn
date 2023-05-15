@@ -43,6 +43,7 @@ quiz:
       explanation: "They developed roughly in parallel."
     - content: "Neither, they developed roughly in parallel."
       isCorrect: true
+      explanation: "Correct. They developed roughly in parallel."
 
   - content: "Is SRE the next evolutionary step from DevOps?"
     choices:
@@ -57,6 +58,7 @@ quiz:
     choices:
     - content: "Automation and monitoring/observability."
       isCorrect: true
+      explanation: "Both operations practices emphasize eliminating menial tasks through automation and using monitoring/observation to improve processes."
     - content: "Coding and ticket systems."
       isCorrect: false
       explanation: "While coding is important (more so in SRE), ticket systems aren't central to SRE."
