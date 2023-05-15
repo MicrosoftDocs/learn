@@ -1,4 +1,4 @@
-The hybrid architecture of the Operator Nexus platform uses the robust and rich set of capabilities and services that Azure provides, such as Azure Monitoring.  Nexus uses the Azure centralized cloud management services for simplified management of the on-premises infrastructure and policy management. The hybrid environment provides end-to-end (E2E) visibility, security, and life cycle management of the on-premises network stack.
+The hybrid architecture of the Operator Nexus platform uses the robust and rich set of capabilities and services that Azure provides, such as Azure Monitoring.  Nexus uses Azure centralized cloud management services for simplified management of the on-premises infrastructure and for policy management. The hybrid environment provides end-to-end (E2E) visibility, security, and life cycle management of the on-premises network stack.
 
 Using a hybrid architecture allows organizations to:
 
@@ -19,4 +19,4 @@ The hybrid architecture of Operator Nexus provides four major components, each o
 
 - **Integrated monitoring, logging, and alerting:** Azure Monitor provides integrated monitoring, logging, and alerting, offering seamless access to on-premises collected logs and metrics for deep observability insights from all Nexus sources.
 
-- **Integrated access to and management of on-premises resources:** Azure Resource Manager enables the creation, update, and deletion of resources. When a user sends a request from Azure, the Resource Manager receives the request, authenticates, authorizes the request, and then sends the request to the Azure service. The Azure service performs the requested action. Because all requests are handled through the same API, users see consistent results and capabilities in all the different tools.
+- **Integrated access to and management of on-premises resources:** Azure Resource Manager enables the creation, update, and deletion of resources. When a user sends a request from Azure, the Resource Manager receives, authenticates, and authorizes the request, and then sends the request to the Azure service. The Azure service performs the requested action. Because all requests are handled through the same API, users see consistent results and capabilities whichever tool they use.
