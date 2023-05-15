@@ -2,7 +2,7 @@ If it really is true that in some sense “you are what you do”, then we’ve 
 
 ### Virtuous cycle #1: SLIs and SLOs
 
-Earlier in this module, we made a big deal about working towards the “appropriate level of reliability”. This is precisely the place where that concept gets brought to bear.
+Earlier in this module, we emphasized our point about working towards the “appropriate level of reliability”. This section is precisely the place where that concept gets brought to bear.
 
 Let’s say you have a new service you're planning to bring to production (either one that has been constructed or one that is still in the planning process). As part of that process, it's important to make some decisions about its desired reliability. If you aren't writing all of the code yourself, these decisions are made (and this point is crucial) in collaboration with the developers making the thing.
 
@@ -40,9 +40,9 @@ In a separate module, we talk in considerably more detail about SLIs, SLOs, and 
 
 ## Virtuous cycle #2: blameless postmortems
 
-The idea of a postmortem—the retrospective analysis of a significant, typically undesired event—isn't even remotely specific to site reliability engineering. It isn't even uncommon to the operations world. One thing that is closer to being distinctive is SRE’s insistence that postmortems need to be “blameless.” They need to focus on the failure of the process or the technology during the incident, not the actions of specific people. “What was it about the process we had in place that allowed X to do the thing that led to the failure? What information did that person not have available, or even prominent at the moment that led to them coming to the wrong conclusion? What guardrails should have been in place so that it wasn’t possible to have such a catastrophic failure?” These are the sort of questions that are asked in a blameless postmortem.
+The idea of a postmortem—the retrospective analysis of a significant, typically undesired event—isn't even remotely specific to site reliability engineering. It isn't even uncommon to the operations world. One thing that is closer to being distinctive is SRE’s insistence that postmortems need to be “blameless.” They need to focus on the failure of the process or the technology during the incident, not the actions of specific people. “What was it about the process we had in place that allowed X to do the thing that led to the failure? What information did that person not have available, or even prominent at the moment that led to them coming to the wrong conclusion? What guardrails should have been in place so that it wasn’t possible to have such a catastrophic failure?” These questions are the sort asked in a blameless postmortem.
 
-The tenor and direction of these questions is crucial. They're searching for ways to improve the systems or processes, not ways to punish the individuals whose use of those systems or processes in good faith contributed to the outage. It's important to remember “You can’t fire your way to reliable”. In our experience, an organization that fires a person every time there's a production incident (with few exceptions), doesn't learn from those incidents. Instead, they're left with a single individual, shaking in the corner, afraid to make any changes to anything at all.
+The tenor and direction of these questions is crucial. We're searching for ways to improve the systems or processes, not ways to punish the individuals whose use of those systems or processes in good faith contributed to the outage. It's important to remember “You can’t fire your way to reliable”. In our experience, an organization that fires a person every time there's a production incident (with few exceptions), doesn't learn from those incidents. Instead, they're left with a single individual, shaking in the corner, afraid to make any changes to anything at all.
 
 But a well functioning post-mortem process in an organization creates a virtuous cycle. It lets the organization learn from its outages and continuously improve its systems (providing proper analysis and follow-up is done).
 

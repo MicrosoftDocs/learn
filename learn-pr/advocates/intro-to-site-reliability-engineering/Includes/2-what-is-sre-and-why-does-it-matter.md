@@ -19,7 +19,7 @@ This picture is a screenshot of what a PHP app (without other debugging support 
 
 Why are we looking at these examples? Each of them represents an application that potentially took a business huge amounts of time, energy, and resources to create. But if the application isn’t up--if it isn’t operational when a customer needed to access it--if it isn’t reliable--it does no one, especially the business any good. In fact, a lack of reliability can do actual harm (reputational, economic, contractual, morale, and so on) to a business.
 
-This importance is why SRE chooses to focus on reliability as a fundamental property, perhaps the fundamental property of the service, system, or product. Reliability can encompass many things (as we discuss later), but lets move on to the second crucial part of the definition.
+This importance is why SRE chooses to focus on reliability as a fundamental property, perhaps the fundamental property of the service, system, or product. Reliability can encompass many things (as we discuss later), but let's move on to the second crucial part of the definition.
 
 ## Appropriate levels of reliability
 
@@ -29,11 +29,11 @@ You may not have caught it the first time you read the definition, but let's emp
 
 Why does that word matter so much?
 
-An important observation made by the SRE world is there are few systems and services that have to be 100% reliable. Life and death situations like aviation, medical devices, etc. are a notable exception.
+An important observation made in the SRE world is that there are few systems and services that have to be 100% reliable. Life and death situations like aviation, medical devices, etc. are a notable exception.
 
-In fact, there are few situations where it's even desirable. The effort and resources (and hence the cost) needed to achieve greater reliability rises at a steep rate as greater reliability is sought. Put another way, chasing after reliability you don’t need is a waste of time and money. _You want to achieve the appropriate level of reliability in your system, services, and products._
+In fact, there are few situations where it's even desirable. The effort and resources (and hence the cost) needed to achieve greater reliability rises at a steep rate as greater reliability is sought. Put another way, chasing after reliability you don’t need is a waste of time and money. *You want to achieve the appropriate level of reliability in your system, services, and products.*
 
-The level needs to match the business needs and be pragmatic. For example, our customers might connect to you over a network that isn’t 100% reliable (let’s say it's up 90% of the time). Spending the effort and money to make sure your service is 95% reliable is by definition a waste of time and money. _You want to achieve the appropriate level of reliability in your system, services, and products._
+The level needs to match the business needs and be pragmatic. For example, our customers might connect to you over a network that isn’t 100% reliable (let’s say it's up 90% of the time). Spending the effort and money to make sure your service is 95% reliable is by definition a waste of time and money. *You want to achieve the appropriate level of reliability in your system, services, and products.*
 
 SRE takes this pragmatism one more step. If we can now think about there being a desirable level of reliability, is there something we should do if we're successful at meeting or surpassing that level? Similarly, what if we don’t achieve it? We answer these questions later in the module.
 

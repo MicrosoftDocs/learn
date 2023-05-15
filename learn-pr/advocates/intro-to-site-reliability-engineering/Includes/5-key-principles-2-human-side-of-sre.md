@@ -4,7 +4,7 @@ A successful operations process is one that achieves the desired reliability and
 
 The first is a focus on the notion of “toil”. In an SRE context, toil refers to operations work being done by a human that has certain characteristics. Toil has no long term redeeming value. It doesn't move the service forward in any meaningful way. It's often repetitive and largely manual (even though it could be automated). As the service or systems gets bigger over time, the number of requests for that system will also probably increase in quantity at a proportional rate and require even more manual labor.
 
-For example, a service may require the SRE team to incur operational loads that are considered toil:
+For example, a service may require the SRE team to incur operational loads like these that are considered toil:
 
 - Resetting something every week.
 - Provisioning new accounts and disk space by hand.

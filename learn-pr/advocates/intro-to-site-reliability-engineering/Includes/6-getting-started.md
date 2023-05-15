@@ -34,7 +34,7 @@ Even more SRE content is making its way to conferences like [Velocity](https://c
 
 It's important to remember that SRE isn't an “all or nothing” proposition. If you want to start exploring how to bring SRE into your environment, you can begin to adopt SRE principles and practices in small steps.
 
-Mikey Dickerson, is a well known SRE based on work at what would become the United States Digital Service. They were responsible for saving healthcare.gov. Mikey has proposed a hierarchy of reliability in homage to Maslow’s hierarchy of needs. It's quoted in the [Practices section](https://landing.google.com/sre/book/chapters/part3.html) of the first SRE book.
+Mikey Dickerson, is a well known SRE based on his work at what would become the United States Digital Service. They were responsible for saving healthcare.gov. He's proposed a hierarchy of reliability in homage to Maslow’s hierarchy of needs. It's quoted in the [Practices section](https://landing.google.com/sre/book/chapters/part3.html) of the first SRE book.
 
 This hierarchy proposes that you must first get functional and trustworthy monitoring in your environment. Monitoring has to be a first step towards SRE for your environment as well. You can’t tell if something is reliable (or is getting better or worse) if you can’t measure it.
 
