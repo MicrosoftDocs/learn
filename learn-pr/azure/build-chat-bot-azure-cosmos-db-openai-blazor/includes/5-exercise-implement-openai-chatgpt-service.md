@@ -7,7 +7,7 @@ In this exercise, we have a few key requirements:
 
 ## Ask the AI model a question
 
-First, implement a question-answer conversation by sending a system prompt, a question, and session ID so the AI model can provide an answer in the context of the current conversation. Make sure you parse the number of tokens it takes to parse the prompt and return a response (or completion in this context).
+First, implement a question-answer conversation by sending a system prompt, a question, and session ID so the AI model can provide an answer in the context of the current conversation. Make sure you measure the number of tokens it takes to parse the prompt and return a response (or completion in this context).
 
 1. Open the **Services/OpenAiService.cs** file.
 

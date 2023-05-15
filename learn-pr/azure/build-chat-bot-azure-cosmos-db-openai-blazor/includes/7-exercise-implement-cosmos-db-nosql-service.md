@@ -278,6 +278,9 @@ Finally, combine the query and transactional batch functionality to remove multi
         .WithParameter("@sessionId", sessionId);
     ```
 
+    > [!NOTE]
+    > If you apply a `type` filter in this query, you may inadvertently miss related messages or sessions that should be bulk removed as part of this operation.
+
 1. Create a new `FeedIterator<dynamic>` using `GetItemQueryIterator` and the query you built.
 
     ```csharp
@@ -345,46 +348,140 @@ Now, your application has a full implementation of Azure OpenAI and Azure Cosmos
 
 ### [Review code](#tab/review-code)
 
-1. Review the `GetSessionsAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-
-    ```
-
-1. Review the `GetSessionMessagesAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
-
-    ```csharp
-
-    ```
-
 1. Review the `InsertSessionAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    public async Task<Session> InsertSessionAsync(Session session)
+    {
+        PartitionKey partitionKey = new(session.SessionId);
 
+        return await _container.CreateItemAsync<Session>(
+            item: session,
+            partitionKey: partitionKey
+        ); 
+    }
     ```
 
 1. Review the `InsertMessageAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    public async Task<Message> InsertMessageAsync(Message message)
+    {
+        PartitionKey partitionKey = new(message.SessionId);
 
+        Message newMessage = message with { TimeStamp = DateTime.UtcNow };
+
+        return await _container.CreateItemAsync<Message>(
+            item: newMessage,
+            partitionKey: partitionKey
+        );  
+    }
+    ```
+
+1. Review the `GetSessionsAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+
+    ```csharp
+    public async Task<List<Session>> GetSessionsAsync()
+    {
+        QueryDefinition query = new ("SELECT DISTINCT * FROM c WHERE c.type = @type")
+            .WithParameter("@type", nameof(Session));
+
+        FeedIterator<Session> response = _container.GetItemQueryIterator<Session>(query);
+
+        List<Session> output = new();
+        while (response.HasMoreResults)
+        {
+            FeedResponse<Session> results = await response.ReadNextAsync();
+            output.AddRange(results);
+        }
+        return output;
+    }
+    ```
+
+1. Review the `GetSessionMessagesAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+
+    ```csharp
+    public async Task<List<Message>> GetSessionMessagesAsync(string sessionId)
+    {
+        QueryDefinition query = new QueryDefinition("SELECT * FROM c WHERE c.sessionId = @sessionId AND c.type = @type")
+            .WithParameter("@sessionId", sessionId)
+            .WithParameter("@type", nameof(Message));
+
+        FeedIterator<Message> response = _container.GetItemQueryIterator<Message>(query);
+
+        List<Message> output = new();
+        while (response.HasMoreResults)
+        {
+            FeedResponse<Message> results = await response.ReadNextAsync();
+            output.AddRange(results);
+        }
+        return output;
+    }
     ```
 
 1. Review the `UpdateSessionAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    public async Task<Session> UpdateSessionAsync(Session session)
+    {
+        PartitionKey partitionKey = new(session.SessionId);
 
+        return await _container.ReplaceItemAsync(
+            item: session,
+            id: session.Id,
+            partitionKey: partitionKey
+        );
+    }
     ```
 
 1. Review the `UpsertMessagesBatchAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    public async Task UpsertMessagesBatchAsync(params Message[] messages)
+    {
+        if (messages.Select(m => m.SessionId).Distinct().Count() > 1)
+        {
+            throw new ArgumentException("All items must have the same partition key.");
+        }
 
+        PartitionKey partitionKey = new(messages.First().SessionId);
+
+        TransactionalBatch batch = _container.CreateTransactionalBatch(partitionKey);
+        foreach (var message in messages)
+        {
+            batch.UpsertItem(
+                item: message
+            );
+        }
+        await batch.ExecuteAsync();
+    }
     ```
 
 1. Review the `DeleteSessionAndMessagesAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    public async Task DeleteSessionAndMessagesAsync(string sessionId)
+    {
+        PartitionKey partitionKey = new(sessionId);
 
+        QueryDefinition query = new QueryDefinition("SELECT c.id FROM c WHERE c.sessionId = @sessionId")
+            .WithParameter("@sessionId", sessionId);
+
+        FeedIterator<Message> response = _container.GetItemQueryIterator<Message>(query);
+
+        TransactionalBatch batch = _container.CreateTransactionalBatch(partitionKey);
+        while (response.HasMoreResults)
+        {
+            FeedResponse<Message> results = await response.ReadNextAsync();
+            foreach (var item in results)
+            {
+                batch.DeleteItem(
+                    id: item.Id
+                );
+            }
+        }
+        await batch.ExecuteAsync();
+    }
     ```
 
 ---

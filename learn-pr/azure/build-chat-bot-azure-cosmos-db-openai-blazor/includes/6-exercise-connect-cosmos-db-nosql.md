@@ -1,4 +1,4 @@
-The `CosmosDbService` class contains a stub implementation of a service similar to the `OpenAiService` class you worked on previously in this module. The difference here's that this class uses the .NET SDK for Azure Cosmos DB, which works slightly different.
+The `CosmosDbService` class contains a stub implementation of a service similar to the `OpenAiService` class you worked on previously in this module. In contrast, this class uses the .NET SDK for Azure Cosmos DB, which works slightly different.
 
 There are a few key requirements to tackle in this exercise:
 
@@ -12,7 +12,7 @@ The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Co
 
 1. Open a new terminal.
 
-1. Import version `3.32.3` of the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`].
+1. Import version `3.32.3` of the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`.
 
     ```bash
     dotnet add package Microsoft.Azure.Cosmos --version 3.32.3
@@ -64,7 +64,7 @@ Use the `appsettings.Development.json` file again to provide current values for 
     }
     ```
 
-    Assuming the name of the Azure Cosmos DB account is **nybncrsna76fo** and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example. The key in this example is fictitious.
+    Assuming the name of the Azure Cosmos DB account is **nybncrsna76fo** and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example.
 
     ```json
     "CosmosDb": {
@@ -72,6 +72,9 @@ Use the `appsettings.Development.json` file again to provide current values for 
       "Key": "Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh=="
     }
     ```
+
+    > [!NOTE]
+    > The key in this example is fictitious.
 
 1. Save the **appsettings.Development.json** file.
 

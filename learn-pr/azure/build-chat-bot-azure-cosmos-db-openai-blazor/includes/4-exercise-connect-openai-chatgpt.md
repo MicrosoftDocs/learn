@@ -64,7 +64,7 @@ In a .NET application, it's common to use the configuration providers to inject 
     }
     ```
 
-    Assuming the name of the Azure OpenAI account is **nybncrsna76fo-openai** and the key is `4bf98cb194cdf0f9001eae3259a76ed8`, you would configure the JSON object like this example. The key in this example is fictitious.
+    Assuming the name of the Azure OpenAI account is **nybncrsna76fo-openai** and the key is `4bf98cb194cdf0f9001eae3259a76ed8`, you would configure the JSON object like this example.
 
     ```json
     "OpenAi": {
@@ -72,6 +72,9 @@ In a .NET application, it's common to use the configuration providers to inject 
       "Key": "4bf98cb194cdf0f9001eae3259a76ed8"
     }
     ```
+
+    > [!NOTE]
+    > The key in this example is fictitious.
 
 1. Save the **appsettings.Development.json** file.
 
