@@ -1,6 +1,8 @@
-Securing access to services is essential when working with pipelines in Azure DevOps. Service connections allow you to store your pipelines' credentials to access external resources, such as databases, web APIs, and other systems. In this unit, you'll learn how to use secrets for services and service connection secrets in Azure Pipelines using YAML.
+Securing access to services is essential when working with pipelines in Azure DevOps. Service connections allow you to store your pipelines' credentials to access external resources, such as databases, web APIs, and other systems. 
 
-## Step 1: Create a Service Connection
+In this unit, learn how to use secrets for services and service connection secrets in Azure Pipelines using YAML.
+
+## Create a service connection
 
 1. Go to your Azure DevOps project.
 2. Navigate to the Project settings.
@@ -12,7 +14,7 @@ Securing access to services is essential when working with pipelines in Azure De
 
     ![Screenshot of Azure DevOps showing how to add a new service connection for Service Bus.](../media/new-service-connection-bus.png)
 
-## Step 2: Store the service connection as variables
+## Store the service connection using variables
 
 1. Go to your pipeline definition.
 2. Click on Edit.
@@ -27,7 +29,7 @@ Securing access to services is essential when working with pipelines in Azure De
     > [!IMPORTANT]
     > Unlike normal variables, they are not automatically decrypted into script environment variables. You need to map secret variables explicitly.
 
-## Step 3: Use the Service Connection in YAML
+## Use the service connection in YAML
 
 In your pipeline definition, add the following YAML code to use the service connection secrets:
 

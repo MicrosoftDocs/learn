@@ -1,4 +1,5 @@
 
+
 The following graphic provides an overview of how Microsoft 365 Defender and Microsoft Sentinel are integrated in a Modern Security Operations Center (SOC).                                                                                                                                                                                   
 
 :::image type="content" source="../media/security-operations.png" alt-text="Diagram that shows the layers and technologies of Security Operations.":::
@@ -29,7 +30,7 @@ We'll start with handling reactive alerts – which begins with:
 
     Key learnings for Triage and Automation:
     - **90% true positive** - We recommend setting a quality standard of 90% true positive for any alert feeds that will require an analyst to respond so analysts aren’t required to respond to a high volume of false alarms.
-    - **Alert Ratio** – In Microsoft’s experience from our Cyber Defense Operation Center, XDR alerts produce most of the high-quality alerts, with the remainders coming from user reported issues, classic log query based alerts, and other sources
+    - **Alert Ratio** – In Microsoft’s experience from our Cyber Defense Operations Center, XDR alerts produce most of the high-quality alerts, with the remainders coming from user reported issues, classic log query based alerts, and other sources
     - **Automation** is a key enabler for triage teams as it helps empower these analysts and reduce the burden of manual effort (for example, provide automated investigation and then prompt them for a human review before approving the remediation sequence that was automatically built for this incident).
     - **Tool Integration** - One of the most powerful time saving technologies that improved time to remediation in Microsoft’s CDOC is the integration of XDR tools together into Microsoft 365 Defender so analysts have a single console for endpoint, email, identity, and more. This integration enables analysts to rapidly discover and clean up attacker phishing emails, malware, and compromised accounts before they can do significant damage.
     - **Focus** - These teams can't maintain their high speed of resolution for all types of technologies and scenarios, so they keep their focus narrow on a few technical areas and/or scenarios. Most often this is on user productivity, like email, endpoint AV alerts (versus EDR that goes into investigations), and first response for user reports.

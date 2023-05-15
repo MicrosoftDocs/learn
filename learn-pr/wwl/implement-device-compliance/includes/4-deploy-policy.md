@@ -1,4 +1,5 @@
 
+
 Before an organization can implement device compliance policies, it must first satisfy the following prerequisites:
 
  -  It must be licensed for Azure AD Premium P1 or Azure AD Premium P2 and Intune. Both are part of Microsoft 365 or Enterprise Mobility + Security, but they can also be obtained separately.
@@ -16,12 +17,12 @@ You can deploy compliance policy to users in user groups or devices in device gr
 :::image type="content" source="../media/ios-compliance-policy-332bcd0d.png" alt-text="Screenshot showing the steps to create compliance policy.":::
 
 
-Compliance policy settings can be found in the Endpoint Manager admin center, in **Devices** &gt; **Compliance policies**.
+Compliance policy settings can be found in the Microsoft Intune admin center, in **Devices** > **Compliance policies**.
 
 When implementing compliance policies, there are some general compliance settings that need to be configured.
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center**.
-2.  Select **Devices** &gt; **Compliance policies** &gt; **Compliance policy settings**. The following options will be available:
+1.  Sign in to the **Microsoft Intune admin center**.
+2.  Select **Devices** > **Compliance policies** > **Compliance policy settings**. The following options will be available:
     
      -  **Mark devices with no compliance policy assigned as**. This property has two values:
         
@@ -38,8 +39,8 @@ When implementing compliance policies, there are some general compliance setting
 
 Compliance policies are configured similar to other Intune configuration policies.
 
-1.  Sign in to the **Microsoft Endpoint Manager admin center**.
-2.  Select **Devices** &gt; **Compliance policies** &gt; **Policies** &gt; **Create Policy**.
+1.  Sign in to the **Microsoft Intune admin center**.
+2.  Select **Devices** > **Compliance policies** > **Policies** > **Create Policy**.
 3.  Select a platform for this policy and then select **Create** to open the Create policy configuration window.
 4.  After providing a name on the Basics tab, on the **Compliance settings** tab, expand the available categories, and configure settings for your policy. Different options will display depending on the platform selected. Examples of compliance settings can be:
     

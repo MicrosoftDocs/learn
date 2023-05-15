@@ -10,7 +10,7 @@ When configuring agents for your projects, consider the following factors:
 
 - **Security and compliance**: Some organizations have strict security or compliance requirements that necessitate the use of self-hosted agents. These agents can be deployed within your organization's infrastructure, providing better control over security and data handling.
 
-## Configuring agents for projects
+## Configure agents for projects
 
 To configure agents for your projects:
 

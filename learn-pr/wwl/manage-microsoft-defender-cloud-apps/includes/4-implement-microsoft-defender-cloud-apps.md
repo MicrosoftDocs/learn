@@ -1,4 +1,5 @@
 
+
 In this module, you'll learn about the seven steps to initiate the use of Microsoft Defender for Cloud Apps.
 
 Before proceeding with any other actions, it's essential to understand how to access the Microsoft Defender for Cloud Apps portal. Access to the portal is necessary for us to take advantage of the various features and functionalities offered by the tool. Therefore, it's imperative to follow the appropriate steps to access the portal before we can utilize Microsoft Defender for Cloud Apps to its fullest potential.

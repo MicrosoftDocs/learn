@@ -14,7 +14,7 @@ Follow these best practices when configuring the scope of a service connection:
 - **Monitor usage:** Keep track of service connection usage across your pipelines to identify any unusual activity or unauthorized access.
 - **Use managed identities when possible:** Managed identities provide a secure way to authenticate with Azure services without having to store credentials in your pipeline. Use managed identities for Azure resources whenever possible.
 
-## Configure the Scope of a Service Connection
+## Configure the scope of a service connection
 
 1. Sign in to your Azure DevOps portal, navigate to your project, and then go to 'Project settings' and 'Service connections.'
 2. Click on 'New service connection' and choose the type of connection you want to create, for example, 'Azure Resource Manager.'
