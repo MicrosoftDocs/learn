@@ -186,7 +186,7 @@ In the Inspector, enter your secret key in the **Direct Line Secret Key** field.
 First, let's test the bot by asking how many **Tracked Objects** are stored in the database.
 
 > [!NOTE]
-> Run the application from the HoloLens 2, as services like *text-to-speech* may not be available on your system.
+> Run the application from the HoloLens 2, as services like *Text to speech* may not be available on your system.
 
 Run the application on your HoloLens 2 and select the *Chat Bot* button next to the main menu.
 After the bot greets you, ask **how many objects do we have?**

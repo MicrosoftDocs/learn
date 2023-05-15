@@ -21,7 +21,7 @@ Within an organization, you can take one of these approaches:
 
 A single project puts all of the work at the same "portfolio" level for the entire organization. Your work has the same set of repos and iteration paths. With a single project, teams share source repos, build definitions, release definitions, reports, and package feeds. You might have a large product or service that's managed by many teams. Those teams have tight inter-dependencies across the product life cycle. You create a project and divide the work using teams and area paths. This setup gives your teams visibility into each other's work, so the organization stays aligned. Your teams use the same taxonomy for work item tracking, making it easier to communicate and stay consistent.
 
-### Many projects
+### Multiple projects
 
 If you decide to create a project team for each distinct product or feature team, each team will have its own backlog. You can configure teams and backlogs into a hierarchical structure so you can more easily track progress across teams, manage portfolios, and generate rollup data. Having several projects shifts the administration burden and gives your teams more autonomy to manage the project as the team decides. It also provides greater control of security and access to assets across the different projects. However, having team independence with many projects creates some alignment challenges. If each project is using a different process or iteration schedule, it can make communication and collaboration difficult if the taxonomies aren't the same.
 
@@ -30,7 +30,6 @@ When you're considering many projects, keep in mind that Git repo portability ma
 When you map projects to business units, your company gets a single organization and sets up many projects with one or more projects representing a business unit. All Azure DevOps assets of the company are contained within this organization and located within a given region (for example, Western Europe).
 
 Consider the following guidance for mapping your projects to business units:
-
 
 |  | **One project, many teams** | **One organization, many projects, and teams** | **Many organizations** |
 |---------|-------------------------|---------|---------|
@@ -44,7 +43,7 @@ Consider the following guidance for mapping your projects to business units:
 | **Information overload**    |    By default, all assets are visible to users who make use of “favorites” and similar mechanisms to avoid “information overload.”                     |   Reduced risk of information overload; most project assets hidden across project boundaries.     |   Assets across organizations are isolated, reducing risk of information overload.     |
 | **Administrative overhead**    |    Much administration is delegated down to individual teams. Easiest for user licensing and org-level administration. More work may be needed if alignment is required between efforts.                     |  More administration at the project level. More overhead, but can be useful when projects have different administrative needs.      |  As with more projects, there's more administrative overhead, which enables more flexibility between orgs.     |
 
-### Organizing and securing repositories
+### Organize and secure repositories
 
 Because of Git's design, protection at a branch level will only carry you so far. Users with push access to a repo can usually create new branches. If you use GitHub open-source projects, anyone with a GitHub account can fork your repository and propose contributions back. Since pipelines are associated with a repository and not with specific branches, you must assume the code and YAML files are untrusted.
 
@@ -52,49 +51,29 @@ If you build public repositories from GitHub, you must consider your stance on f
 
 To protect your products from contributed code, consider the following recommendations:
 
-- **Don’t provide secrets to fork builds**
+- **Don’t provide secrets to fork builds**: By default, your pipelines are configured to build forks, but secrets and protected resources aren’t made available to the jobs in those pipelines by default. Don’t turn off this latter protection.
 
-By default, your pipelines are configured to build forks, but secrets and protected resources aren’t made available to the jobs in those pipelines by default. Don’t turn off this latter protection.
+- **Consider manually triggering fork builds**: You can turn off automatic fork builds and instead use pull request comments as a way to manually building these contributions. This setting will give you an opportunity to review the code before triggering a build.
 
-- **Consider manually triggering fork builds**
+- **Use Microsoft-hosted agents for fork builds**: Don't run builds from forks on self-hosted agents. By doing so, you're effectively providing a path to external organizations to run outside code on machines inside your corporate network. Use Microsoft-hosted agents whenever possible. For your self-hosted agent, use some form of network isolation and ensure agents don't persist their state between jobs.
 
-You can turn off automatic fork builds and instead use pull request comments as a way to manually building these contributions. This setting will give you an opportunity to review the code before triggering a build.
-
-- **Use Microsoft-hosted agents for fork builds**
-
-Don't run builds from forks on self-hosted agents. By doing so, you're effectively providing a path to external organizations to run outside code on machines inside your corporate network. Use Microsoft-hosted agents whenever possible. For your self-hosted agent, use some form of network isolation and ensure agents don't persist their state between jobs.
-
-- **Review code changes**
-
-Before you run your pipeline on a forked pull-request, carefully review the proposed changes, and make sure you're comfortable running it.
+- **Review code changes**: Before you run your pipeline on a forked pull-request, carefully review the proposed changes, and make sure you're comfortable running it.
 
 The version of the YAML pipeline you'll run is the one from the pull request. Thus, pay special attention to changes to the YAML code and to the code that runs when the pipeline runs, such as command line scripts or unit tests.
 
-- **GitHub token scope limitation**
+- **GitHub token scope limitation**: When you build a GitHub forked pull request, Azure Pipelines ensures the pipeline can't change any GitHub repository content. This restriction applies *only* if you use the  [Azure Pipelines GitHub app.](https://github.com/marketplace/azure-pipelines) to integrate with GitHub. If you use other forms of GitHub integration, for example, the OAuth app, the restriction isn't enforced.
 
-When you build a GitHub forked pull request, Azure Pipelines ensures the pipeline can't change any GitHub repository content. This restriction applies *only* if you use the  [Azure Pipelines GitHub app.](https://github.com/marketplace/azure-pipelines) to integrate with GitHub. If you use other forms of GitHub integration, for example, the OAuth app, the restriction isn't enforced.
-
-- **User branches**
-
-Users in your organization with the right permissions can create new branches containing new or updated code. That code can run through the same pipeline as your protected branches. Further, if the YAML file in the new branch is changed, then the updated YAML will be used to run the pipeline. While this design allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
+- **User branches**: Users in your organization with the right permissions can create new branches containing new or updated code. That code can run through the same pipeline as your protected branches. Further, if the YAML file in the new branch is changed, then the updated YAML will be used to run the pipeline. While this design allows for great flexibility and self-service, not all changes are safe (whether made maliciously or not).
 
 If your pipeline consumes source code or is defined in Azure Repos, you must fully understand the [Azure Repos permissions model.](https://learn.microsoft.com/azure/devops/organizations/security/permissions) In particular, a user with **Create Branch** permission at the repository level can introduce code to the repo even if that user lacks **Contribute** permission.
 
-- **Keep sensitive files out with .gitignore**
+- **Keep sensitive files out with .gitignore**: To help avoid the risk of someone inadvertently committing sensitive data, such as an API key or private configuration data is to build and maintain .gitignore files. These files instruct client tools, such as the git command line utility, to ignore paths and patterns when aggregating files for a commit.
 
-To help avoid the risk of someone inadvertently committing sensitive data, such as an API key or private configuration data is to build and maintain .gitignore files. These files instruct client tools, such as the git command line utility, to ignore paths and patterns when aggregating files for a commit. 
+- **Remove sensitive data from a repository**: Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
 
-- **Remove sensitive data from a repository**
+- **Create branch protection rules**: You can create branch protection rules to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
 
-Project participants should always be on the lookout for commits containing data that should not be included in the repository or its history.
-
-- **Create branch protection rules**
-
-You can create branch protection rules to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
-
-- **Add a CODEOWNERS file**
-
-By adding a CODEOWNERS file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they are configured for.
+- **Add a CODEOWNERS file**: By adding a CODEOWNERS file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they are configured for.
 
 ## Possible project and repository structures
 
@@ -106,23 +85,23 @@ The following image displays a sample of how your company could structure its or
 
 ### Shared repo vs. forked repos
 
-It is recommended to use a shared repo within a trusted organization. Developers use branches to maintain isolation of their changes from one another. With a good branching and release strategy, a single repo can scale to support concurrent development for more than a thousand developers. For more information about branching and release strategy, see [Branch strategically.](https://github.com/MicrosoftDocs/azure-devops-docs/blob/main/docs/repos/tfvc/branch-strategically.md) 
+It is recommended to use a shared repo within a trusted organization. Developers use branches to maintain isolation of their changes from one another. With a good branching and release strategy, a single repo can scale to support concurrent development for more than a thousand developers. For more information about branching and release strategy, see [Branch strategically.](https://github.com/MicrosoftDocs/azure-devops-docs/blob/main/docs/repos/tfvc/branch-strategically.md)
 
-Forks can be useful when you're working with vendor teams that shouldn't have direct access to update the main repository. Forks can also be useful in scenarios where many developers contribute infrequently, such as in an open-source project. 
+Forks can be useful when you're working with vendor teams that shouldn't have direct access to update the main repository. Forks can also be useful in scenarios where many developers contribute infrequently, such as in an open-source project.
 
 When you're working with forks, you may want to maintain a separate project to isolate the forked repos from the main repo. There may be added administrative overhead, but it keeps the main project cleaner. For more information, see [Fork your repository.](https://github.com/MicrosoftDocs/azure-devops-docs/blob/main/docs/repos/git/forks.md)
 
 ## Create a project and repository structure
 
-Creating a clear project and repository structure is fundamental for improving security and you can do it by following an incremental approach. The security recommendations you choose to implement will depend a lot on the needs, practices, and policies of your organization. 
+Creating a clear project and repository structure is fundamental for improving security and you can do it by following an incremental approach. The security recommendations you choose to implement will depend a lot on the needs, practices, and policies of your organization.
 
 You can start by separating groups of resources by team projects, and defining what resources your pipeline can access based on project settings and containment. Every job in your pipeline receives an access token with permissions to read open resources. If you decide to shut off pipeline access to some of these resources, then your decision applies to all pipelines in a project as a specific pipeline can’t be granted access to an open resource. That’s why it is advised that you isolate project resources from one another.
 
 You would usually create one repository per project but, as previously discussed, it is also possible to create multiple repositories. Azure Repos provides two types of repositories: Git and TFVC. Projects can have repos of each type. What you need to know is that:
 
-- **Git** is a distributed version control system that allows multiple developers to work on the same codebase at the same time. It enables a great amount of flexibility in developer workflows and integrates with nearly every relevant tool in the developer ecosystem. By default, new projects have an empty Git repository and there’s no limit on the amount of Git repos that can be added to a project. 
+- **Git** is a distributed version control system that allows multiple developers to work on the same codebase at the same time. It enables a great amount of flexibility in developer workflows and integrates with nearly every relevant tool in the developer ecosystem. By default, new projects have an empty Git repository and there’s no limit on the amount of Git repos that can be added to a project.
 
-- **TFVC**, on the other hand, is a centralized version control system that allows developers to manage their code changes in a centralized repository. Unlike Git, only one TFVC repository is allowed for a project. But, within that repo, folders, and branches are used to organize code for multiple products and services, if wanted. 
+- **TFVC**, on the other hand, is a centralized version control system that allows developers to manage their code changes in a centralized repository. Unlike Git, only one TFVC repository is allowed for a project. But, within that repo, folders, and branches are used to organize code for multiple products and services, if wanted.
 
 One project containing multiple repos works well if the products/services are working on a coordinated release schedule. If developers are frequently working with multiple repos, keep them in a single project to ensure the processes remain shared and consistent. It’s easier to manage repo access within a single project, as access control and options like case enforcement and max file size get set at the project level. You can manage the access controls and settings individually, even if your repos are in a single project. If the products stored in multiple repos work on independent schedules or processes, you can split them into multiple projects.
 

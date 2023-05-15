@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction
   ms.date: 09/24/2018
-  author: KumudD
-  ms.author: kumud
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3

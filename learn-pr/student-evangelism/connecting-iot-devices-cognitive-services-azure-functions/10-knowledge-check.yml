@@ -27,13 +27,13 @@ quiz:
       explanation: "Function code is deployed in the cloud."
   - content: "Suppose that you’re task with deploying a cognitive speech API into your function app. In what order would you perform the following steps to create a speech translation app?"
     choices:
-    - content: " Trigger the function - speech recognition - removing speech disfluencies – translation – text-to-speech"
+    - content: " Trigger the function - speech recognition - removing speech disfluencies – translation – text to speech"
       isCorrect: true
       explanation: "You need to trigger the function, recognize the speech,  remove speech disfluencies, translate the text and produce the translated audio."
-    - content: "Trigger the function - removing speech disfluencies – translation – text-to-speech"
+    - content: "Trigger the function - removing speech disfluencies – translation – text to speech"
       isCorrect: false
       explanation: "You need to recognize the speech after triggering the function."
-    - content: "Speech recognition - removing speech disfluencies – translation - text-to-speech"
+    - content: "Speech recognition - removing speech disfluencies – translation - text to speech"
       isCorrect: false
       explanation: "You need to trigger the function to execute the code"
   - content: "Suppose you want to develop an application using the Cognitive service API in the Azure function. How do you access the Cognitive Service API from your application?"
