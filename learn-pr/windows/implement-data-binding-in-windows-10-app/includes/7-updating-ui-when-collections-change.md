@@ -270,7 +270,7 @@ public void AddSelectedColorToFavorites()
 }
 ```
 
-When this method is called, `SelectedColor` should filled with the color that should be added to the favorites list, but it's best not to make assumptions.
+When this method is called, `SelectedColor` should be filled with the color being added to the favorites list, but it's best not to make assumptions.
 
 With this, we're done with the code (for now). Let's turn our attention to the XAML.
 

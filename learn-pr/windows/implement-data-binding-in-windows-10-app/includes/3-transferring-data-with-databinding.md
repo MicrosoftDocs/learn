@@ -349,7 +349,7 @@ If you're not familiar with the `$"Hello {Username}"` syntax, it is the equivale
 
 Let's test drive what we've done so far! Run the app by pressing F5 or Ctrl+F5. Enter your name, select the **Submit** button, and a dialog box should greet you.
 
-![Screenshot of sample app with new greeting dialog box that displays "Hello Andrew!" with a Close button.](../media/messagedialog_wpf.png)
+![Screenshot of sample app with new greeting dialog box that displays "Hello Andrew!" with a Close button.](../media/messagedialog-wpf.png)
 
 #### 6. Implement the `IsNameNeeded` property
 
