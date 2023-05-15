@@ -56,7 +56,7 @@ Before using `yum` to install, you must add a configuration file:
     sudo curl -o /etc/yum.repos.d/mssql-server.repo https://packages.microsoft.com/config/rhel/7/mssql-server-2019.repo
     ```
 
-1. If you're asked for a password, use the password displayed earlier, and then press Enter.
+1. If you're asked for a password, use the password displayed earlier, and then press **Enter**.
 1. To install SQL Server, run this command:
 
     ```bash
@@ -134,4 +134,4 @@ You can now use the `sqlcmd` tool to create a database:
     GO
     ```
 
-1. To exit the `sqlcmd` tool and SSH, run the command `exit` twice.
+1. To exit the `sqlcmd` tool and SSH, run the command *exit* twice.

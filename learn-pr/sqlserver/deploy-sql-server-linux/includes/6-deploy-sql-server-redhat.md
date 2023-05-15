@@ -24,11 +24,11 @@ To install SQL Server on RHEL, complete these tasks:
 > [!NOTE]
 > If you need to update SQL Server to the latest version, use the `yum update mssql-server` command.
 
-You complete these tasks in the next exercise.
+Complete these tasks in the next exercise.
 
 ## Configure SQL Server on RHEL
 
-Configure SQL Server by running the `/opt/mssql/bin/msssql-conf setup` command and specifying the edition of SQL Server you require, and the SQL Server system administrator (sa) password.
+Configure SQL Server by running the `/opt/mssql/bin/msssql-conf setup` command. Specify the edition of SQL Server you require and the SQL Server system administrator (sa) password.
 
 ## Install SQL Server tools
 

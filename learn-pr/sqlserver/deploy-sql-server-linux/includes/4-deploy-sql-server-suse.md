@@ -25,7 +25,7 @@ To install SQL Server on SUSE, complete these tasks:
 > [!NOTE]
 > If you need to update SQL Server to the latest version, you can use the `zypper update -t mssql-server` command.
 
-You'll complete these tasks in the next exercise.
+Complete these tasks in the next exercise.
 
 ## Configure SQL Server on SUSE
 

@@ -81,7 +81,7 @@ Before you use SQL Server, you must specify the edition that you want and the sy
 1. If prompted, enter your password.
 1. To select the **Evaluation edition**, press *1*.
 1. Type *Yes* to accept the license terms.
-1. For the system administrator password, type *Pa$$w0rd*, and then press Enter.
+1. For the system administrator password, type *Pa$$w0rd*, and then press **Enter**.
 1. Confirm the password.
 1. To confirm that SQL Server 2019 is running, run this command:
 
@@ -100,7 +100,7 @@ SQL Server is installed. Now install the administrative tools:
     sudo zypper --gpg-auto-import-keys refresh
     ```
 
-1. If any of the SUSE repositories is unavailable, type *i*, and then press Enter. If you're warned about a repository signed with an unknown key, type *yes*.
+1. If any of the SUSE repositories is unavailable, type *i*, and then press **Enter**. If you're warned about a repository signed with an unknown key, type *yes*.
 1. To install SQL Server command-line tools, run this command:
 
     ```bash
@@ -153,4 +153,4 @@ Now you can use the newly installed `sqlcmd` tool to create a database.
     GO
     ```
 
-1. To exit the `sqlcmd` tool and SSH, run the command `exit` twice.
+1. To exit the `sqlcmd` tool and SSH, run the command *exit* twice.

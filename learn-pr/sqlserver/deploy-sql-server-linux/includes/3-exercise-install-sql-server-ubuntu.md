@@ -1,8 +1,8 @@
-To install SQL Server on Ubuntu, you use the `apt-get` tool.
+To install SQL Server on Ubuntu, Use the `apt-get` tool.
 
 You're a database administrator at the wholesale company Wide World Importers. You want to benefit from SQL Server without having to change the server operating systems. Now you've decided to deploy SQL Server on an Ubuntu server. So that SQL Server is ready to be used by your developers, configure the SQL Server package and install command-line tools.
 
-In this article, you see how to deploy SQL Server on Ubuntu, install command-line tools, and create a database on SQL Server.
+In this exercise, you see how to deploy SQL Server on Ubuntu, install command-line tools, and create a database on SQL Server.
 
 ## Create an Ubuntu virtual machine
 

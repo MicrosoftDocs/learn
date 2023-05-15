@@ -8,7 +8,7 @@ In this exercise, you see how to deploy SQL Server on a container with Docker.
 
 Before you can run any containers, begin by installing the Docker container host software. Follow these steps:
 
-1. If you haven't completed the exercise in unit 3, then start by installing a new Ubuntu 18.04 LTS server. This command takes a couple of minutes to complete. If you have completed unit 3, you can skip this step:
+1. If you haven't completed the exercise in unit 3, then start by installing a new Ubuntu 18.04 LTS server. This command takes a couple of minutes to complete. If you have completed unit 3, you can skip this section:
 
     ```azurecli
     export UBUNTUPASSWORD=$(openssl rand -base64 32)
@@ -23,7 +23,7 @@ Before you can run any containers, begin by installing the Docker container host
         --size Standard_D2s_v3   
     ```
 
-1. In the Cloud Shell on the right, enter these commands.
+1. In the Cloud Shell, enter these commands.
 
     ```bash
     export IPADDRESS=$(az vm show -d \
@@ -126,4 +126,4 @@ Now that SQL Server is running in the container, you can create a database in it
     quit
     ```
 
-1. To exit the container and SSH, run the command `exit` twice.
+1. To exit the container and SSH, run the command *exit* twice.

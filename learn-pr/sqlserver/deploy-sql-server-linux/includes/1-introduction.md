@@ -6,7 +6,7 @@ You have a range of Linux distributions and use containers, and want to learn ho
 
 ## Learning objectives
 
-In this module, you see how to deploy SQL Server to Linux and to containers.
+In this module, learn how to deploy SQL Server to Linux and to containers.
 
 - Deploy SQL Server 2019 on Ubuntu
 - Deploy SQL Server 2019 on SUSE
