@@ -18,7 +18,7 @@ content: |
 quiz:
   questions:
   - content: |
-      Which NuGet package should you use to interact with data in Azure Cosmos DB for NoSQL from a .NET application?
+      Which NuGet package is used to interact with data in Azure Cosmos DB for NoSQL from a .NET application?
     choices:
     - content: |
         Microsoft.Azure.WebJobs.Extensions.CosmosDB
@@ -35,47 +35,39 @@ quiz:
       isCorrect: false
       explanation: |
         This library is used to manage Azure Cosmos DB resources, but not data.
-  - content: ""
+  - content: |
+      After importing the `Azure.AI.OpenAI` library and namespace, which class is used to connect to an Azure OpenAI endpoint and model deployment?
     choices:
-    - content: ""
+    - content: |
+        `OpenAiClient`
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: |
+        The `OpenAiClient` class is a client class to connect to Azure OpenAI and make data-plane requests.
+    - content: |
+        `Completions`
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: |
+        The `Completions` class contains responses (choices) and utilization metadata about a request.
+    - content: |
+        `ChatMessage`
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: |
+        The `ChatMessage` class contains metadata about the role and content sent to a model for a completion response.
+  - content: |
+      Which property is required to be the same of all items in a transactional batch within Azure Cosmos DB for NoSQL?
     choices:
-    - content: ""
+    - content: |
+        eTag
+      isCorrect: false
+      explanation: |
+        The `_etag` for each item is typically distinct and changes anytime the item is changed. This property is typically used to implement optimistic concurrency.
+    - content: |
+        Unique identifier (&#105;&#100;)
+      isCorrect: false
+      explanation: |
+        The **&#105;&#100;** for each item is distinct within the context of the logical partition. You shouldn't expect this property to be the same within a transactional batch.
+    - content: |
+        Partition key
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: |
+        The partition key value of each item must match exactly within a transactional batch. If an item in the batch has a different partition key value, the transactional batch fails.
