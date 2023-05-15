@@ -49,7 +49,7 @@ Azure Service Bus message queues are intended for enterprise applications, such 
 
 #### Business scenario
 
-Consider the scenario where a customer is watching to a video by with the product demo app. You can support the actions by using publish-subscribe topic attributes:
+Consider the scenario where a customer is watching a video on an app. The app supports both user history and fan lists. You can support both actions by using publish-subscribe topic attributes:
 
 - The mobile app sends a message to the `Watched` topic.
 

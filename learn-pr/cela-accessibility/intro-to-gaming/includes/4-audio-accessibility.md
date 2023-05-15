@@ -24,7 +24,7 @@ General approaches to support these players include:
 
 - An option to enable subtitles and captions for all important character dialogue.
 - Representing audio cues like enemy footsteps through visual cues within the UI or within captions.
-- Supporting accessible player-to-player communication tools like text-to-speech chat and speech-to-text chat.
+- Supporting accessible player-to-player communication tools like text to speech chat and speech to text chat.
 
 ### Gaming and partial hearing
 

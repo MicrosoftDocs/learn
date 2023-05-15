@@ -1,4 +1,5 @@
 
+
 Like any business, Contoso faces technology-related threats to its organization. Microsoft Sentinel can help Contoso's IT team organize, investigate, and track these threats from creation to resolution. The threats are called *incidents*.
 
 ## Key concepts
