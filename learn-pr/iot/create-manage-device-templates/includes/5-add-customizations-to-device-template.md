@@ -1,5 +1,7 @@
 Use customizations when you need to modify an imported interface or add IoT Central-specific features to a capability. For example, you can change the display name and units of a property.
 
+:::image type="content" source="../media/customizations.png" alt-text="Screenshot that shows the customization options in a device template.":::
+
 The following table shows the configuration settings for customizations:
 
 :::row:::

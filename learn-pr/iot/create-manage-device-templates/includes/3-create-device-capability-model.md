@@ -32,9 +32,11 @@ After you create a device model, you can:
 To view and manage the interfaces in your device model:
 
 1. Go to **Device templates** page and select the device template you created. The interfaces are listed in the **Model** section of the device template.
-2. Select the ellipsis to add an inherited interface or component to the root interface.
-3. To export a model or interface select **Export**.
-4. To view or edit the DTDL for an interface or a capability, select **Edit DTDL**.
+1. Select the ellipsis to add an inherited interface or component to the root interface.
+1. To export a model or interface select **Export**.
+1. To view or edit the DTDL for an interface or a capability, select **Edit DTDL**.
+
+:::image type="content" source="../media/interfaces-components.png" alt-text="Screenshot that shows the interfaces and components in a device template.":::
 
 ### Capabilities
 
