@@ -13,7 +13,7 @@ For each call to the REST API, you need the endpoint and a key from your Azure O
 
 ## Completions
 
-Once you've deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. The most common endpoint is `completions`, which generates the completion of your prompt.
+Once you've deployed a model in your AOAI resource, you can send a prompt to the service using a `POST` request. One endpoint is `completions`, which generates the completion of your prompt.
 
 ```rest
 curl https://YOUR_ENDPOINT_NAME.openai.azure.com/openai/deployments/YOUR_DEPLOYMENT_NAME/completions?api-version=2022-12-01\
