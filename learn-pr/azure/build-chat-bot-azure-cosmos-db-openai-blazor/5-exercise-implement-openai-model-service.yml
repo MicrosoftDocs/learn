@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-chatgpt-service
+uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-model-service
 title: Exercise - Implement the Azure OpenAI service
 metadata:
   unitType: exercise
@@ -15,4 +15,4 @@ metadata:
   ms.date: 5/15/2023
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-exercise-implement-openai-chatgpt-service.md)]
+  [!include[](includes/5-exercise-implement-openai-model-service.md)]

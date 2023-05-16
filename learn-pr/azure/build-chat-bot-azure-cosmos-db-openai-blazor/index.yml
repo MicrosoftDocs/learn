@@ -51,8 +51,8 @@ units:
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.introduction
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.prepare
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-setup-starter-app
-- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-openai-chatgpt
-- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-chatgpt-service
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-openai-model
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-model-service
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-cosmos-db-nosql
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-cosmos-db-nosql-service
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
