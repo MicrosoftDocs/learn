@@ -2,17 +2,17 @@ One crucial part of building a cloud migration and modernization strategy is to 
 
 Business and IT-driven goals point to migration and modernization triggers, which determine the strategy for moving applications to the cloud. For IT-based triggers, *migration* of your workloads is best. When you're presented with business-focused goals, we recommend *modernizing* your applications.
 
-![Graphic showing the two migration and modernization choices.](../media/migrate-or-modern-2.png)
+:::image type="content" source="../media/migrate-or-modern-2.png" alt-text="Diagram showing the two migration and modernization choices.":::
 
 With migration, the workloads are moved to the cloud unchanged. With modernization, the application code is changed or the application is rewritten or replaced to use new cloud technologies.
 
 At Tailwind Traders, you could develop a decision tree to help you to evaluate your applications:
 
-![Graphic of a decision tree showing PaaS or IaaS based on future development on an application.](../media/modernize-decision-tree.png)
+:::image type="content" source="../media/modernize-decision-tree.png" alt-text="Diagram of a decision tree showing PaaS or IaaS based on future development on an application.":::
 
-As the solution architect on the Tailwind Traders team, you need to understand the triggers for your **migration** or **modernization**.
+As the solution architect on the Tailwind Traders team, you need to understand the triggers for your migration or modernization.
 
-![Graphic showing the triggers for a migration or modernization project.](../media/migration-triggers-2.png)
+:::image type="content" source="../media/migration-triggers-2.png" alt-text="Diagram showing the triggers for a migration or modernization project.":::
 
 ## Migration triggers
 
@@ -34,7 +34,7 @@ The expiration of datacenter contracts is an excellent opportunity to begin the 
 - Moving datacenter operations to the cloud frees you from recurring contract expenses, and provides built-in scalability and other key
 management features that make it much easier to run your datacenter efficiently.
 
-### Cash flow challenges & resource constraints
+### Cash flow challenges and resource constraints
 
 One of the most impactful incentives of the cloud and adopting a more flexible operating model is the opportunity to eliminate large upfront investments in physical infrastructure assets. Identifying areas to optimize costs and free up resources for growth and innovation is critical to establishing your business case for migrating to the cloud. Companies often struggle to meet their growth needs or can't provide the resources requested by IT teams. The cloud changes this with an almost infinite scale of the Azure datacenters.
 
@@ -42,7 +42,7 @@ One of the most impactful incentives of the cloud and adopting a more flexible o
 
 Maintaining a physical datacenter can cause serious cash flow challenges with investments reserved for infrastructure. Moving to the cloud helps you shift from capital expenses (CAPEX) to an operational expenditures (OPEX) model since you no longer pay for physical datacenter costs or the associated hardware and software. Instead, you only pay for the resources you use on the cloud, and you can scale up or down as needed, providing more cash flow flexibility across an organization.
 
-![Graphic showing the shift from CAPEX to OPEX.](../media/capex-to-opex.png)
+:::image type="content" source="../media/capex-to-opex.png" alt-text="Diagram showing the shift from CAPEX to OPEX.":::
 
 ### Business continuity
 
@@ -62,10 +62,10 @@ Azure was designed for business continuity and disaster recovery with solutions 
 
 - [Azure paired regions](/azure/best-practices-availability-paired-regions?azure-portal=true)
 - [Azure Storage](/azure/storage/common/storage-redundancy?azure-portal=true) redundancy and replication
-- [Azure Site Recovery](https://azure.microsoft.com/services/site-recovery/?azure-portal=true) for virtual machine replication and failover
-- [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) for data protection and recovery
+- [Azure Site Recovery](https://azure.microsoft.com/products/site-recovery/) for virtual machine replication and failover
+- [Azure Backup](https://azure.microsoft.com/products/backup) for data protection and recovery
 
-![Diagram showing an Azure Site Recovery deployment to two regions.](../media/azure-site-recovery.png)
+:::image type="content" source="../media/azure-site-recovery.png" alt-text="Diagram showing an Azure Site Recovery deployment to two regions.":::
 
 ### Cybersecurity threats
 
@@ -75,9 +75,9 @@ The growing evolution of cybersecurity threats, increased need to protect people
 
 - Traditional IT solutions are incapable of keeping up with the evolving threat landscape of advanced cyber attacks, and many businesses feel more vulnerable. The cloud offers built-in security solutions, which provide comprehensive protection against advanced threats.
 - Azure is secured with a various physical, infrastructure, and operational controls that allow organizations to take actions that ensure their applications and data are protected, backed up, and compliant.
-  - [Azure Backup](https://azure.microsoft.com/services/backup/?azure-portal=true) protects your environment from ransomware attacks and recovers maliciously or accidentally deleted backup data.
-  - [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center/?azure-portal=true) provides unified infrastructure security management to protect your resources.
-  - [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/?azure-portal=true) provides intelligent security analytics across your entire enterprise.
+  - [Azure Backup](https://azure.microsoft.com/products/backup) protects your environment from ransomware attacks and recovers maliciously or accidentally deleted backup data.
+  - [Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud) provides unified infrastructure security management to protect your resources.
+  - [Microsoft Sentinel](https://azure.microsoft.com/products/microsoft-sentinel) provides intelligent security analytics across your entire enterprise.
 
 ## Modernization triggers
 

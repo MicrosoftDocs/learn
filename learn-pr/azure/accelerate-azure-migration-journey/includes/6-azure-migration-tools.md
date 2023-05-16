@@ -15,7 +15,7 @@ The [Cloud Adoption Framework (CAF)](/azure/cloud-adoption-framework/?azure-port
 
 The CAF brings together cloud adoption best practices from Microsoft employees, partners, and customers. It provides a set of tools, guidance, and narratives that help shape technology, business, and people strategies for driving desired business outcomes during your cloud adoption effort.
 
-![Graphic showing the Cloud Adoption Framework process.](../media/cloud-adoption-framework-overview-new.png)
+:::image type="content" source="../media/cloud-adoption-framework-overview-new.png" alt-text="Diagram showing the Cloud Adoption Framework process.":::
 
 Review the guidance for each methodology.
 - Learn more about CAF in this [overview](/azure/cloud-adoption-framework/overview/?azure-portal=true).
@@ -25,7 +25,7 @@ Review the guidance for each methodology.
 
 [Azure Migrate](https://azure.microsoft.com/products/azure-migrate) is the central hub of Azure cloud migration services and tools to discover, assess, and migrate workloads to the cloud. Your organization can get all of the Azure migration tools and guidance you need to plan and implement your move to the cloud and track your progress using a central dashboard that provides intelligent insights.
 
-![Screenshot of Azure Migrate get started screen.](../media/azure-migrate.png)
+:::image type="content" source="../media/azure-migrate.png" alt-text="Screenshot of the Azure Migrate get started screen.":::
 
 Tailwind Traders can use a comprehensive approach to migrating your application and data center estate. Get support for critical migration workloads like Windows, SQL and Linux Server, databases, data, web apps, and virtual desktops. Migrate to destinations including Azure Virtual Machines, Azure VMware Solution, Azure App Service, and Azure SQL Database. Migrations are holistic across VMware, Hyper-V, physical server, and cloud-to-cloud migration.
 
@@ -58,7 +58,7 @@ You can execute a complete migration with near-zero downtime:
 - Highly resilient and self-healing migration service provides reliable outcomes with near-zero downtime.
 - Supports Microsoft SQL Server, MySQL, PostgreSQL, MongoDB, and Oracle migration to Azure from on-premises and other clouds.
 
-![Graphic showing how to migrate popular databases to Azure.](../media/database-migration-service.png)
+:::image type="content" source="../media/database-migration-service.png" alt-text="Diagram showing how to migrate popular databases to Azure.":::
 
 ## Azure App Service Migration Assistant
 
@@ -74,7 +74,7 @@ Versions of the Azure App Service Migration Assistant:
 
 You can also get a free compatibility report for your external app. The tool allows you to run a scan on your web app’s public URL to report the technologies it uses and whether App Service fully supports them. If compatible, you’re guided to download the migration assistant to simplify your migration.
 
-![Graphic showing URL test for Application Migration.](../media/url-test.png)
+:::image type="content" source="../media/url-test.png" alt-text="Diagram showing URL test for application migration.":::
 
 ## SMART Tool
 
@@ -82,7 +82,7 @@ The Strategic Migration Assessment and Readiness Tool (SMART) helps you prepare 
 
 The tool's output contains a readiness heatmap tool that helps to identify the areas where you need to focus on being successful.
 
-![Graphic showing the SMART Assessment Tool.](../media/smart-tool.png)
+:::image type="content" source="../media/smart-tool.png" alt-text="Diagram showing the SMART Assessment Tool.":::
 
 This tool addresses your readiness across all dimensions of migration, from initial strategy to ongoing management. By answering a few questions, you get a customized report that helps you plan and close gaps.
 

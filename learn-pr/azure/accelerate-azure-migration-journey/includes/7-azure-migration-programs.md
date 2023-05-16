@@ -6,7 +6,7 @@ The following programs are available to support your Azure migration:
 - FastTrack for Azure
 - Azure Expert managed service providers (MSPs)
 
-![Graphic showing the path to the Cloud Programs.](../media/path-to-cloud.png)
+:::image type="content" source="../media/path-to-cloud.png" alt-text="Diagram showing the path to the Cloud Programs.":::
 
 ## Azure Migration and Modernization Program
 
@@ -19,7 +19,7 @@ Here are some of the benefits available from AMMP:
 - Free Azure migration tools, including Azure Migrate to assess and migrate workloads, and Microsoft Cost Management to optimize costs.
 - Offers and incentives to offset transition costs, including Azure Hybrid Benefit and free Extended Security Updates for Windows Server and SQL Server 2008.
 
-![Graphic showing the Azure Migration and Modernization Program Project Phases.](../media/ammp-phases-2.png)
+:::image type="content" source="../media/ammp-phases-2.png" alt-text="Diagram showing the Azure Migration and Modernization Program project phases.":::
 
 ### Self-guided digital support
 
@@ -46,7 +46,7 @@ Ask your Microsoft account team or Microsoft partner to nominate you. If your pr
 
 To qualify, customers must be working with a Microsoft partner and meet the criteria of the program:
 
-![Graphic showing the FastTrack program requirements.](../media/fast-track.png)
+:::image type="content" source="../media/fast-track.png" alt-text="Diagram showing the FastTrack program requirements.":::
 
 ### What qualifies as an Azure project?
 

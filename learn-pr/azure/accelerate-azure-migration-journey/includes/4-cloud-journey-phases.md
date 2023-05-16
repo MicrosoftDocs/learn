@@ -6,7 +6,7 @@ The phases of your migration journey at Tailwind Traders include:
 - Implementation
 - Operations
 
-![Graphic showing the Phases of the Cloud Journey.](../media/cloud-journey-2.png)
+:::image type="content" source="../media/cloud-journey-2.png" alt-text="Diagram showing the phases of the Cloud Journey.":::
 
 > [!IMPORTANT]
 > The [Cloud Adoption Framework](/azure/cloud-adoption-framework/?azure-portal=true) is a collection of documentation, implementation guidance, best practices, and tools from Microsoft that are proven to accelerate your cloud adoption journey.
@@ -67,7 +67,7 @@ Making the business case for migration and modernization is likely to be an iter
 
 At the highest level, the formula for business justification is simple. But the subtle data points required to populate the formula can be difficult to align. On a basic level, the business justification focuses on the return on investment (ROI) associated with the proposed technical change. The generic formula for ROI is:
 
-![Graphic showing the Return on Investment calculation.](../media/formula-roi.png)
+:::image type="content" source="../media/formula-roi.png" alt-text="Diagram showing the Return on Investment calculation.":::
 
 #### Holistic plan
 
@@ -87,7 +87,7 @@ Executing on the plan is where the act of moving to the cloud starts to unfold. 
 
 During the move to the cloud, use a wave-based approach to execute a manageable set of workloads. *Migrate* and *modernize* in waves with an iterative approach. Pick a manageable-sized cohort of workloads for each wave and perform the move using automated tools. Select the target cloud services to move your workloads into, like Azure IaaS for infrastructure or Azure App Service for web apps.
 
-![Graphic showing a migration and modernization wave.](../media/migration-modernization-waves.png)
+:::image type="content" source="../media/migration-modernization-waves.png" alt-text="Diagram showing a migration and modernization wave.":::
 
 #### Building cloud skills
 
@@ -107,7 +107,7 @@ To migrate your applications and create the new modernized versions, you first n
 
 #### Migration and modernization
 
-The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/migration/migration-modernization-program/) has determined that projects with six to eight applications in a wave enjoy the most success. This approach lets teams work in a focused manner, thereby increasing the quality of migration and modernization, and it allows improvements along the way. This program also helps assess and plan which workloads can be modernized, and the process to accomplish it.
+The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.com/solutions/migration/migration-modernization-program) has determined that projects with six to eight applications in a wave enjoy the most success. This approach lets teams work in a focused manner, thereby increasing the quality of migration and modernization, and it allows improvements along the way. This program also helps assess and plan which workloads can be modernized, and the process to accomplish it.
 
 ## Operations
 
@@ -115,7 +115,7 @@ The [Azure Migration and Modernization Program (AMMP)](https://azure.microsoft.c
 
 The preceding steps create actionable approaches to deliver on the Cloud Adoption Framework's Manage methodology.
 
-![Graphic showing Business Alignment in the Cloud Adoption Framework.](../media/cloud-adoption-framework-manage.png)
+:::image type="content" source="../media/cloud-adoption-framework-manage.png" alt-text="Diagram showing Business Alignment in the Cloud Adoption Framework.":::
 
 ### Governance
 
@@ -127,7 +127,7 @@ Governance is a key factor to the long-term success of any effort. The speed to 
 
 [Azure Policy](/azure/governance/policy/overview?azure-portal=true) is an important tool when implementing the policies of your business. Azure Policy helps to enforce organizational standards and to assess compliance at-scale. Through its compliance dashboard, it provides an aggregated view to evaluate the overall state of the environment, with the ability to drill down to the per-resource, per-policy granularity. It also helps to bring your resources to compliance through bulk remediation for existing resources and automatic remediation for new resources.
 
-![Screenshot of the Azure Portal showing the Policy dashboard.](../media/select-assignments.png)
+:::image type="content" source="../media/select-assignments.png" alt-text="Screenshot of the Azure Portal showing the Policy dashboard.":::
 
 ### Manage
 
@@ -137,7 +137,7 @@ Putting the proper foundation down for moving to the cloud is critical. However,
 
 Once workloads have been moved into the cloud, Microsoft Defender for Cloud can help manage security for these applications. This protection can be provided at the network level using Azure Firewall, the identity level in Azure Active Directory, or by sending alerts of particular activities with Microsoft Sentinel.
 
-![Graphic showing Microsoft Defender for Cloud features.](../media/manage-security.png)
+:::image type="content" source="../media/manage-security.png" alt-text="Diagram showing Microsoft Defender for Cloud features.":::
 
 #### Business continuity
 
@@ -145,4 +145,4 @@ Business continuity is still important to Tailwind Traders after the migration a
 
 By moving their applications to Azure, Tailwind Traders is able to manage their end-to-end business continuity solution both in the cloud and on-premises in an easy to deploy, cost-effect, secure, and scalable manner.
 
-![Graphic showing business continuity features in Azure.](../media/manage-business-continuity.png)
+:::image type="content" source="../media/manage-business-continuity.png" alt-text="Diagram showing business continuity features in Azure.":::

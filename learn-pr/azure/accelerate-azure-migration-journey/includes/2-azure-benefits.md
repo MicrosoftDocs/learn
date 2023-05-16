@@ -13,7 +13,7 @@ The cloud delivers fundamental technology benefits that can help your enterprise
 
 Datacenters are expensive. The costs of real estate, power, servers, storage, networks, and operations staff affect a company's bottom line. When customers migrate to modernize workloads in Azure, they convert upfront capital expenditures to operating expenditures that can be paid over time. Your cash flow improves by only paying for what you need. You can also achieve cost savings and efficiency.
 
-![Graph showing the difference between pay as you go Azure resources and reserved instance pricing.](../media/optimize-it-spend.png)
+:::image type="content" source="../media/optimize-it-spend.png" alt-text="Graph showing the difference between pay as you go Azure resources and reserved instance pricing.":::
 
 In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-impact-azure-iaas/?azure-portal=true), customers report a 25 percent increase in productivity of IT staff, $10M in savings from avoided hardware, software, and staff costs, and a 478 percent return on investments.
 
@@ -21,7 +21,7 @@ In a [Forrester study](https://azure.microsoft.com/resources/forrester-economic-
 
 If you have existing SQL Server or Windows Server licenses, you can reuse your licenses in the cloud by using the Azure hybrid benefit for exclusive savings. You can be confident you’re getting the best price on any cloud as Azure costs 5x less than AWS for Windows Server and SQL Server.
 
-![Two bar graphs showing AWS vs Azure costs for Windows and SQL Server with Azure being less expensive than AWS.](../media/azure-vs-aws.png)
+:::image type="content" source="../media/azure-vs-aws.png" alt-text="Two bar graphs showing AWS vs Azure costs for Windows and SQL Server with Azure being less expensive than AWS.":::
 
 Azure hybrid benefit is a licensing benefit that helps you to significantly reduce the costs of running your workloads in the cloud. It works by letting you use your on-premises Software Assurance-enabled Windows Server and SQL Server licenses on Azure. This benefit also applies to RedHat and SUSE Linux subscriptions.
 
@@ -35,7 +35,7 @@ Unlike many other public cloud providers, traffic between Azure datacenters stay
 
 The Microsoft global wide area network (WAN) plays an essential part in delivering a great cloud service experience. It offers near-perfect availability, high capacity, and the flexibility to respond to unpredictable demand spikes. In addition to having more datacenter regions than any of our competitors, Microsoft’s network is also one of the largest in the world.
 
-![An image of the world with the Azure network shown with connections under the ocean.](../media/network.png)
+:::image type="content" source="../media/network.png" alt-text="Diagram of the world with the Azure network shown with connections under the ocean.":::
 
 ### Availability zones
 
@@ -43,7 +43,7 @@ An [availability zone](/azure/availability-zones/az-overview?azure-portal=true) 
 
 To ensure resiliency, there's a minimum of three separate zones in all enabled regions. The physical separation of availability zones within a region protects applications and data from datacenter failures. Zone-redundant services replicate your applications and data across availability zones to protect from single-points-of-failure. With availability zones, Azure offers an industry best 99.99% VM uptime. The complete [Azure service-level agreement (SLA)](https://azure.microsoft.com/support/legal/sla/?azure-portal=true) explains the guaranteed availability of Azure as a whole.
 
-![Diagram showing a web application and SQL servers in three availability zones.](../media/zones.png)
+:::image type="content" source="../media/zones.png" alt-text="Diagram showing a web application and SQL servers in three availability zones.":::
 
 ### Maintenance and Service Health alerts
 
@@ -57,7 +57,7 @@ Microsoft uses predictive techniques to determine when a server might fail, so t
 
 Azure has a full service health dashboard and sends alerts when issues occur. You can connect to the dashboard to receive information about the [status](https://status.azure.com/status/?azure-portal=true) of the Azure infrastructure and your services. Azure Service Health provides tailored information for your resources in the Azure portal.
 
-![Azure Status dashboard is shown including the current status of services in the Americas, Europe, and Asia Pacific.](../media/azure-status.png)
+:::image type="content" source="../media/azure-status.png" alt-text="Screenshot of Azure Status dashboard showing the current status of services in the Americas, Europe, and Asia Pacific.":::
 
 ### Security
 
@@ -69,7 +69,7 @@ These ongoing investments protect workloads across your hybrid environments with
 
 Microsoft uses a wide variety of physical, infrastructure, and operational controls to help secure Azure, but there are more actions you need to take to help safeguard your workloads. Use [Microsoft Defender for Cloud](https://azure.microsoft.com/products/defender-for-cloud) to protect your hybrid cloud workloads.
 
-![Azure Portal is shown in the Defender for Cloud with recommendations.](../media/security-portal.png)
+:::image type="content" source="../media/security-portal.png" alt-text="Screenshot of the security portal in Defender for Cloud with recommendations.":::
 
 #### Start with a secure foundation
 
@@ -91,9 +91,9 @@ Hybrid configurations deployed to Azure provide flexibility in the timing of mig
 
 Migrating to the cloud also allows for more flexibility and scalability and the ability to command growing or diminishing resources to capably meet business demands. When you plan for peak usage through on-premises systems, your servers are typically under-utilized, as you need more capacity than average to accommodate spikes when they occur. The cloud releases you from this model, enabling a scale-when-you-need-it approach.
 
-Increase agility with best-in-class Azure infrastructure that scales to your business needs. With almost limitless scale, customers can scale up or out using [Infrastructure as a Service (IaaS)](https://azure.microsoft.com/overview/what-is-azure/iaas/?azure-portal=true) or [Platform as a Service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/?azure-portal=true).
+Increase agility with best-in-class Azure infrastructure that scales to your business needs. With almost limitless scale, customers can scale up or out using [infrastructure as a service (IaaS)](https://azure.microsoft.com/overview/what-is-azure/iaas/?azure-portal=true) or [platform as a service (PaaS)](https://azure.microsoft.com/overview/what-is-paas/?azure-portal=true).
 
-![Diagram showing Paas or Iaas services from Azure.](../media/paas-iaas.png)
+:::image type="content" source="../media/paas-iaas.png" alt-text="Diagram showing Paas or Iaas services from Azure.":::
 
 ### Azure autoscale
 
