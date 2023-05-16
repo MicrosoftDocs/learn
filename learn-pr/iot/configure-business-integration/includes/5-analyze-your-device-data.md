@@ -27,7 +27,7 @@ Once you've queried your data, you can start visualizing it on the line chart. Y
 
 :::image type="content" source="../media/data-explorer.png" alt-text="Screenshot that shows how to configure the data explorer UI in IoT Central.":::
 
-- **Time editor panel**: By default you seeyour data from the last day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an **Interval size** slider that controls the bucket or the interval size used to aggregate the data.
+- **Time editor panel**: By default you see your data from the last day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an **Interval size** slider that controls the bucket or the interval size used to aggregate the data.
 
   - **Inner date range slider tool**: Use the two endpoint controls by dragging them over the time span you want. This inner date range is constrained by the outer date range slider control.
 
