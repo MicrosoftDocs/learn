@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 16
 content: |
-  [!include[](includes/2-configure-secure-projects-repositories.md)]
+  [!include[](includes/3-configure-secure-projects-repositories.md)]

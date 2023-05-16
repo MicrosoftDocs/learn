@@ -24,7 +24,7 @@ quiz:
     - content: "Grant users full access to all pipelines."
       isCorrect: false
       explanation: "Incorrect. Incorrect. Granting full access allows unauthorized users to have access to your pipelines."
-  - content: "What is the purpose of Approval in Azure DevOps?"
+  - content: "What is the purpose of an Approval in Azure DevOps?"
     choices:
     - content: "An approval is a way to automatically test code changes before merging them into a branch."
       isCorrect: false

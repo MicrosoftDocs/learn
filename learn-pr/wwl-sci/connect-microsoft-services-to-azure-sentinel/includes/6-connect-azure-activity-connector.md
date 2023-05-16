@@ -1,7 +1,7 @@
 The Azure Activity Log is a subscription log that provides insight into subscription-level events that occur in Azure. The events included are from Azure Resource Manager operational data, service health events, write operations taken on the resources in your subscription, and the status of activities performed in Azure.
 
 > [!IMPORTANT]
-> A prerequisite requires you to be assigned the owner role on the relevant subscription
+> Prerequisites require your user to be assigned the owner role on the relevant subscription.
 
 To view the connector page, do the following steps:
 
@@ -11,7 +11,7 @@ To view the connector page, do the following steps:
 
 1. Select **Open connector page**.
 
-1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard>**.
+1. In the Configuration area, scroll down and under "2. Connect your subscriptions..." select **Launch Azure Policy Assignment Wizard**.
 
 1. In the **Basics** tab, select the ellipsis button (...) under **Scope** and select your "Azure subscription" from the drop-down list and click **Select**.
 
@@ -20,7 +20,7 @@ To view the connector page, do the following steps:
 1. Select the **Remediation** tab and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
 
    > [!NOTE]
-   > To apply the policy to your existing resources, you need to create a remediation task checkbox.
+   > To apply the policy to your existing resources, you need to create a remediation task.
 
 1. Select the **Review + Create** button to review the configuration.
 
