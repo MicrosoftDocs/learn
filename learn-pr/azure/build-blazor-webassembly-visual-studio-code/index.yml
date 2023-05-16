@@ -3,7 +3,7 @@ uid: learn.build-web-app-blazor-webassembly-vscode
 metadata:
   title: Build a web app with Blazor
   description: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
-  ms.date: 08/31/2022
+  ms.date: 05/16/2023
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
