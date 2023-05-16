@@ -1,8 +1,8 @@
-Applications can connect to Azure Cosmos DB for NoSQL or Azure OpenAI using their respective .NET SDKs. These SDKs can extend existing .NET applications with NoSQL data storage and ChatGPT conversational functionality with relatively low friction.
+Applications can connect to Azure Cosmos DB for NoSQL or Azure OpenAI using their respective .NET SDKs. These SDKs can extend existing .NET applications with NoSQL data storage and AI completion functionality with relatively low friction.
 
 The .NET SDK for Azure Cosmos DB for NoSQL is useful for business applications that need to manage various account resources including databases, containers, and items. The SDK can perform queries that return multiple items, operations on specific items, and even transactions that batch operations together over multiple items.
 
-The .NET SDK for Azure OpenAI provides a streamlined interface for interacting with the various models available for deployment. Specifically, the SDK includes classes to interface directly with the ChatGPT model, send prompts, fine tune the requests, and parse the completion responses.
+The .NET SDK for Azure OpenAI provides a streamlined interface for interacting with the various models available for deployment. Specifically, the SDK includes classes to interface directly with the model, send prompts, fine tune the requests, and parse the completion responses.
 
 ## Example scenario
 
@@ -10,11 +10,11 @@ Your development team has built a chat bot interface with ASP.NET Core Blazor th
 
 ## What are we doing?
 
-This module walks through the steps to connect an existing ASP.NET Core Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the ChatGPT model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
+This module walks through the steps to connect an existing ASP.NET Core Blazor application to an Azure Cosmos DB for NoSQL account and an Azure OpenAI account. Your application sends prompts to the model in Azure OpenAI and parses the responses. Your application also stores various conversation sessions and their corresponding messages as items colocated in a single container within Azure Cosmos DB for NoSQL.
 
 In short, the application will:
 
-- **Connect** to Azure OpenAI's ChatGPT model using the .NET SDK
+- **Connect** to Azure OpenAI's model using the .NET SDK
 - **Send** prompts to the model and parse the completion response.
 - **Connect** to Azure Cosmos DB for NoSQL using the .NET SDK
 - **Manage** items with individual operations, queries, and transactional batches

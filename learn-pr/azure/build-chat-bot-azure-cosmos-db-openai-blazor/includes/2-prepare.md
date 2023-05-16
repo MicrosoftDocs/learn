@@ -2,7 +2,7 @@ You're updating an existing .NET solution that has an ASP.NET Blazor application
 
 ## Project overview
 
-This project's goal is to implement two service classes for data storage and conversation. For the data storage service class, use the Azure Cosmos DB for NoSQL .NET SDK to create, update, query, and delete multiple items in a pre-existing container.
+This project's goal is to implement two service classes for data storage and completions. For the data storage service class, use the Azure Cosmos DB for NoSQL .NET SDK to create, update, query, and delete multiple items in a pre-existing container.
 
 The key tasks you need to do are:
 
@@ -41,7 +41,7 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
     > [!NOTE]
     > On average, this deployment can take five to ten minutes.
 
-### Observe the running final application
+### Observe the deployed application
 
 After the deployment is complete, you can retrieve the output of the deployment to find the URI of the currently running application. Use this moment to learn how the application is intended to work after you're done with this project.
 
@@ -65,7 +65,7 @@ After the deployment is complete, you can retrieve the output of the deployment 
 
 1. In a new browser window, open the deployed web application. Take this moment to try to ask the AI assistant a few questions. Create at least two chat conversations. You come back to these conversations later in this project.
 
-    :::image type="content" source="../media/running-final-application.png" lightbox="../media/running-final-application.png" alt-text="Screenshot of the deployed web application using ChatGPT.":::
+    :::image type="content" source="../media/running-final-application.png" lightbox="../media/running-final-application.png" alt-text="Screenshot of the deployed web application using Azure OpenAI.":::
 
 1. Optionally, navigate to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) to view your resource group, data store (Azure Cosmos DB), AI model (Azure OpenAI), and running web application (Azure App Service).
 

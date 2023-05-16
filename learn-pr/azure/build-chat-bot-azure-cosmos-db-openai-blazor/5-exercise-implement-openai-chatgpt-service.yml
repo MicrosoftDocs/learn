@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-chatgpt-service
-title: Exercise - Implement the Azure OpenAI ChatGPT service
+title: Exercise - Implement the Azure OpenAI service
 metadata:
   unitType: exercise
-  title: Exercise - Implement the Azure OpenAI ChatGPT service
+  title: Exercise - Implement the Azure OpenAI service
   description: |
-    Implement the service methods created to connect to Azure OpenAI ChatGPT. In those methods, send prompts to the service, parse the response, and measure the token count utilization.    
+    Implement the service methods created to connect to Azure OpenAI. In those methods, send prompts to the service, parse the response, and measure the token count utilization.    
   author: seesharprun
   manager: jroth
   ms.author: sidandrews

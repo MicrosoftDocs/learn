@@ -13,7 +13,7 @@ With the .NET SDKs for Azure Cosmos DB for NoSQL and Azure OpenAI, you were able
   - [Get started with Azure OpenAI Service](/training/modules/get-started-openai/)
 - **Quickstart**
   - [Azure Cosmos DB for NoSQL SDK for .NET](/azure/cosmos-db/nosql/quickstart-dotnet)
-  - [Azure OpenAI ChatGPT](/azure/cognitive-services/openai/chatgpt-quickstart)
+  - [Azure OpenAI](/azure/cognitive-services/openai/chatgpt-quickstart)
 - **Developer reference**
   - [ASP.NET Core Blazor](/aspnet/core/blazor/)
-  - [ChatGPT in Azure OpenAI](/azure/cognitive-services/openai/how-to/chatgpt)
+  - [GPT 3.5 Turbo in Azure OpenAI](/azure/cognitive-services/openai/how-to/chatgpt)

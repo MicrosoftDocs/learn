@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-openai-chatgpt
-title: Exercise - Connect to Azure OpenAI ChatGPT
+title: Exercise - Connect to Azure OpenAI
 metadata:
   unitType: exercise
-  title: Exercise - Connect to Azure OpenAI ChatGPT
+  title: Exercise - Connect to Azure OpenAI
   description: |
     Import the Azure.AI.OpenAI package from NuGet. Next, create a client instance. Then, configure the deployment name and maximum token count.
   author: seesharprun
