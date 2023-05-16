@@ -50,9 +50,9 @@ subjects:
   - compliance
 units:
 - learn.wwl.configure-project-repository-structure-support-secure-pipelines.introduction
+- learn.wwl.configure-project-repository-structure-support-secure-pipelines.organize-project-repository-structure
 - learn.wwl.configure-project-repository-structure-support-secure-pipelines.configure-secure-projects-repositories
 - learn.wwl.configure-project-repository-structure-support-secure-pipelines.exercise-move-security-repository-away-from-project
-- learn.wwl.configure-project-repository-structure-support-secure-pipelines.organize-project-repository-structure
 - learn.wwl.configure-project-repository-structure-support-secure-pipelines.knowledge-check
 - learn.wwl.configure-project-repository-structure-support-secure-pipelines.summary
 badge:

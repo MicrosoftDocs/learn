@@ -1,4 +1,4 @@
-In the previous unit, you obtained the source code for the Contoso Pizza project. Then you made some simple changes to the home page. In this unit, you'll add a new Razor page to the project.
+In the previous unit, you obtained the source code for the Contoso Pizza project, and then you made some simple changes to the home page. In this unit, you'll add a new Razor page to the project.
 
 ## Create the Pizza List page
 
@@ -43,7 +43,7 @@ To create a new Razor page, you'll use the .NET CLI.
 
 ## Add the Pizza List page to the navigation menu
 
-This would be a good time to test the page, but you can't do that yet because the page isn't linked to the navigation menu. You'll do that now.
+This would be a good time to test the page, but you can't do that yet because the page isn't linked in the navigation menu. You'll do that now.
 
 1. Open *Pages/Shared/_Layout.cshtml*.
 1. In the `<ul>` element with the `navbar-nav` class (starts on line 21), note the `<li>` elements that contain the links to the *Home* and *Privacy* pages. Add the following code to the end of the list, after the `<li>` element containing the *Privacy* link:
@@ -61,7 +61,7 @@ This would be a good time to test the page, but you can't do that yet because th
 
 ## Register the PizzaService class with the dependency injection container
 
-The Pizza List page will depend on the existing `PizzaService` object to retrieve the list of pizzas. You'll use dependency injection to provide the `PizzaService` object to the page. In order for that to happen, you must register the `PizzaService` class with the container.
+The Pizza List page depends on the `PizzaService` object to retrieve the list of pizzas. You'll use dependency injection to provide the `PizzaService` object to the page. In order for that to happen, you must register the `PizzaService` class with the container.
 
 1. Open *Program.cs*.
 1. In the section that adds services to the container, add the following code:
