@@ -31,7 +31,7 @@ It's recommended to follow the principle of least privilege, granting users only
 
 ## Add users to specific teams
 
-You can create teams or groups based on your organizational structure if you have many users and groups. Teams is a collection of users and groups with access to a specific project. You can add users and groups to a team and then add the team to a particular pipeline. This way, you can manage permissions for many users and groups in a single place.
+You can create teams or groups based on your organizational structure if you have many users and groups. Teams is a collection of users and groups with access to a specific project. You can add users to a team and then add the team to a particular pipeline. This way, you can manage permissions for many users and groups in a single place.
 
 1. Open the Azure DevOps project and select the Project settings.
 2. In the Project Settings menu, select the Teams option under General.

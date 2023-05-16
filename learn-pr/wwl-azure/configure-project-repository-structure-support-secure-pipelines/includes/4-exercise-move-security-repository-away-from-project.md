@@ -2,6 +2,9 @@ As seen in the previous unit, an important part of configuring a secure project 
 
 Recall that in the banking institution example, it will be necessary to separate projects to increase security across pipelines and make sure that protected resources can’t be accessed by unauthorized users.
 
+> [!NOTE]
+> Depending on your strategy and structure organization, you can use a single project, multiple projects, or a combination of both. It is possible to have a single project with multiple repositories or multiple projects with a single repository each. You can define individual permissions for each repository and project.
+
 In this exercise, you’ll move the security repository away from an application project into a second project.
 
 ## Create a new repository
