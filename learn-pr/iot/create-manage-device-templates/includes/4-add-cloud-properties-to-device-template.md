@@ -1,5 +1,7 @@
 Use cloud properties to store information about devices in IoT Central. Cloud properties are never sent to a device. For example, you can use cloud properties to store the name of the customer who has installed the device, or the device's last service date.
 
+:::image type="content" source="../media/cloud-property.png" alt-text="Screenshot that shows a cloud property in a device template.":::
+
 The following table shows the configuration settings for a cloud property:
 
 :::row:::

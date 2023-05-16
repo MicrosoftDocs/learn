@@ -26,6 +26,8 @@ To view an individual device:
 1. Select a device template. The right-hand pane of the **Devices** page lists the devices created from the chosen device template.
 1. Select an individual device to see the device details page for that device.
 
+:::image type="content" source="../media/device-details.png" alt-text="Screenshot that shows the overview page for a temperature controller device.":::
+
 ## Add a device
 
 To add a device to your Azure IoT Central application:
@@ -35,6 +37,8 @@ To add a device to your Azure IoT Central application:
 1. Select **+ New**.
 1. Turn the **Simulated** toggle to **On** or **Off**. A real device is for a physical device that you connect to your Azure IoT Central application. A simulated device has sample data generated for you by Azure IoT Central.
 1. Select **Create**.
+
+:::image type="content" source="../media/create-device.png" alt-text="Screenshot that shows adding a simulated temperature controller device.":::
 
 Your new device now appears in your device list for this template. Select the device to see the device details page that contains all views for the device.
 

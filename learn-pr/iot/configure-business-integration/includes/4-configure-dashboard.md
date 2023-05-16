@@ -32,7 +32,7 @@ For example, to add a line chart tile to track telemetry values reported by one 
 1. After you select all the devices to show on the tile, select **Update**.
 1. After you finish adding and customizing tiles on the dashboard, select **Save**.
 
-    :::image type="content" source="../media/m12-l05-dashboard-add-tiles-a2d83481.png" alt-text="Screenshot that shows how to add a tile to the dashboard in the IoT Central application.":::
+    :::image type="content" source="../media/dashboard-tiles.png" alt-text="Screenshot that shows how to add a tile to the dashboard in the IoT Central application.":::
 
 ## Edit tiles
 

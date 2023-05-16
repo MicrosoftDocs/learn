@@ -36,6 +36,8 @@ To version a device template:
 3. Select *Version* at the top of the page and give the template a new name. IoT Central suggests a new name, which you can edit.
 4. Select **Create**.
 
+:::image type="content" source="../media/version-device-template.png" alt-text="Screenshot that shows device template versioning.":::
+
 Now you've created a new template with a unique identity that isn't attached to any existing devices.
 
 ## Version an interface

@@ -1,5 +1,7 @@
 Views let you define views and forms that let an operator monitor and interact with a device. Views use visualizations such as charts to show telemetry and property values. You can create default views, custom views, and forms.
 
+:::image type="content" source="../media/device-template-views.png" alt-text="Screenshot that shows the options for generating views in a device template.":::
+
 ## Default views
 
 Generating default views is a quick way to visualize your important device information. The three default views are:

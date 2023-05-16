@@ -42,18 +42,24 @@ As a builder, you have several options for creating device templates:
 As a builder, you can quickly start building out your solution by using an IoT Plug and Play certified device. See the list in the Azure IoT Device Catalog. IoT Central integrates with the device catalog so you can import a device capability model from any of these IoT Plug and Play certified devices. To create a device template from one of these devices in IoT Central:
 
 1. Go to the **Device templates** page in your IoT Central application.
-2. Select **+ New**, and then select any of the IoT Plug and Play certified devices from the catalog. IoT Central creates a device template based on this device capability model.
-3. Add any cloud properties, customizations, or views to your device template.
-4. Select **Publish** to make the template available for operators to view and connect devices.
+1. Select **+ New**, and then select any of the IoT Plug and Play certified devices from the catalog. IoT Central creates a device template based on this device capability model.
+
+  :::image type="content" source="../media/device-catalog.png" alt-text="Screenshot that shows the device catalog browser in IoT Central.":::
+
+1. Add any cloud properties, customizations, or views to your device template.
+1. Select **Publish** to make the template available for operators to view and connect devices.
 
 ### Create a device template from scratch
 
 To create a device template in IoT Central:
 
 1. Go to the **Device templates** page in your IoT Central application.
-2. Select **+ New** &gt; **IoT device** &gt; **Next: Customize**.
-3. Enter a name for your template, such as *Environmental Sensor*.
-4. Press **Enter**. IoT Central creates an empty device template.
+1. Select **+ New** &gt; **IoT device** &gt; **Next: Customize**.
+
+  :::image type="content" source="../media/new-custom-device-template.png" alt-text="A screenshot that shows creating a new device template from scratch.":::
+
+1. Enter a name for your template, such as *Environmental Sensor*.
+1. Press **Enter**. IoT Central creates an empty device template.
 
 ## Publish and manage a device template
 

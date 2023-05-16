@@ -23,11 +23,11 @@ You'll need to start by choosing a device group, and the telemetry that you want
 
 ## Interact with your data
 
-Once you've queried your data, you can start visualizing it on the line chart. You can show/hide telemetry, change the time duration, view telemetry in a data grid.
+Once you've queried your data, you can start visualizing it on the line chart. You can show/hide telemetry, change the time duration, view telemetry in a data grid:
 
-- **Time editor panel**: By default your data from the last day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an **Interval size** slider that controls the bucket or the interval size used to aggregate the data.
+:::image type="content" source="../media/data-explorer.png" alt-text="Screenshot that shows how to configure the data explorer UI in IoT Central.":::
 
-  :::image type="content" source="../media/m12-l03-iot-central-analyze-time-editor-panel-c6cddfee.png" alt-text="Screenshot that shows how to configure the analytics UI in IoT Central.":::
+- **Time editor panel**: By default you see your data from the last day. You can drag either end of the time slider to change the time duration. You can also use the calendar control to select one of the predefined time buckets or select a custom time range. Time control also has an **Interval size** slider that controls the bucket or the interval size used to aggregate the data.
 
   - **Inner date range slider tool**: Use the two endpoint controls by dragging them over the time span you want. This inner date range is constrained by the outer date range slider control.
 
@@ -35,9 +35,9 @@ Once you've queried your data, you can start visualizing it on the line chart. Y
 
   - **Increase and decrease date range buttons**: Increase or decrease your time span by selecting either button for the interval you want.
 
-  - **Interval-size slider**: Use it to zoom in and out of intervals over the same time span. This action provides more precise control of movement between large slices of time. You can use it to see granular, high-resolution views of your data, even down to milliseconds. The slider's default starting point is set as the most optimal view of the data from your selection, which balances resolution, query speed, and granularity.
+  - **Interval-size slider**: Zoom in and out of intervals over the same time span. This action provides more precise control of movement between large slices of time. You can use it to see granular, high-resolution views of your data, even down to milliseconds. The slider's default starting point is set as the most optimal view of the data from your selection, which balances resolution, query speed, and granularity.
 
-  - **Date range picker**: With this web control, you can easily select the date and time ranges you want. You can also use the control to switch between different time zones. After you make the changes to apply to your current workspace, select Save.
+  - **Date range picker**: Easily select the date and time ranges you want. You can also use the control to switch between different time zones. After you make the changes to apply to your current workspace, select **Save**.
 
   > [!TIP]
   > Interval size is determined dynamically based on the selected time span. Smaller time spans will enable aggregating the data into granular intervals of up to a few seconds.
