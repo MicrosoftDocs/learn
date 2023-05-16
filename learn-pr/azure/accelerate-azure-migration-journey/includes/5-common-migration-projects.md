@@ -1,6 +1,6 @@
 Azure provides access to a comprehensive set of cloud services. As developers and IT professionals, you can use these services to build, deploy, and manage applications on a range of tools and frameworks through a global network of datacenters. 
 
-There are common migration and modernization projects that take place in most businesses.
+Common migration and modernization projects include:
 
 - .NET and Java applications
 - SQL Server
@@ -12,9 +12,9 @@ There are common migration and modernization projects that take place in most bu
 - DevTest
 
 > [!NOTE]
-> Connect to the Cloud Adoption Framework for more information about all these [migration and modernization scenarios](/azure/cloud-adoption-framework/scenarios/?azure-portal=true).
+> Connect to the Cloud Adoption Framework (CAF) for more information about these [migration and modernization scenarios](/azure/cloud-adoption-framework/scenarios/?azure-portal=true).
 
-For all workloads, the decision to migrate or modernize drives the solution that's chosen. With a *migration*, the workload is moved into an IaaS running on virtual machines (VM) in Azure. With a *modernize* approach, PaaS components are used to deploy the application after changes are made to the code base or architecture.
+For all workloads, the decision to migrate or modernize drives the solution that's chosen. With a *migration*, the workload is moved into an IaaS running on virtual machines (VMs) in Azure. With a *modernize* approach, PaaS components are used to deploy the application after changes are made to the code base or architecture.
 
 ## .NET and Java applications
 
@@ -30,9 +30,9 @@ When you modernize an application, you use additional cloud provider services to
 
 For a .NET or Java web application, you can migrate to Azure App Services with minor changes to your codebase. The advantages of employing modernized services in this scenario include: lower cost and management, using your current application as-is or with some minor code or configuration changes, and connecting to new infrastructure services.
 
-If you take your modernization to the next level, you can redesign some or all of your application as part of the modernization process. This is when you would transform it with a modular architecture. In this scenario, you modify or extend an existing application’s codebase to optimize it for a cloud platform and better scalability. Cloud provider services can be used directly as back-end services of modern apps, which are highly scalable and reliable. The advantages include: improving agility by applying innovative DevOps practices, bringing new Azure capabilities to existing apps, and cost-effectively meeting scalability requirements.
+If you take your modernization to the next level, you can redesign some parts of your applications. This is when you would transform it with a modular architecture. In this scenario, you modify or extend an existing application’s codebase to optimize it for a cloud platform and better scalability. Cloud provider services can be used directly as back-end services of modern apps, which are highly scalable and reliable. The advantages include: improving agility by applying innovative DevOps practices, bringing new Azure capabilities to existing apps, and cost-effectively meeting scalability requirements.
 
-The final modernization scenario you can use for your applications is to completely rebuild them. The rebuild strategy revises the existing application by aggressively adopting PaaS or even SaaS architecture. The advantages of this strategy include: building new applications using cloud-native technologies, faster development if your existing application is slowing you down, innovation opportunities that take advantage of advancements in technology like AI, blockchain, and IoT.
+The final modernization scenario you can use for your applications is to completely rebuild them. The rebuild strategy revises the existing application by aggressively adopting PaaS or even SaaS architecture. The advantages of this strategy include: building new applications using cloud-native technologies, faster development if your existing application is slowing you down, and innovation opportunities that take advantage of advancements in technology like AI, blockchain, and IoT.
 
 :::image type="content" source="../media/migrate-applications.png" alt-text="Diagram showing how to migrate .NET and Java applications.":::
 
@@ -52,7 +52,7 @@ Azure is the cloud that knows SQL Server best. There are many options for the mi
 
 ### SQL Server on a virtual machine
 
-A typical reason for migrating SQL to Azure is that a two-tier application is being moved, a Windows .NET front-end application connected to SQL Server running on VMs. These applications can be migrated by simply moving the servers by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) to Azure and hosting them using IaaS. They run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
+A typical reason for migrating SQL to Azure is that a two-tier application is being moved, a Windows .NET front-end application connected to SQL Server running on VMs. These applications can be migrated by simply moving the servers by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and hosting them using IaaS. They run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
 
 ### Azure SQL Server Managed Instance
 
@@ -71,13 +71,13 @@ You can also modernize your SQL Server by moving to an Azure SQL Database. Azure
 
 ## Open-source databases
 
-Azure has broad support for open-source databases. There's support for moving MySQL and PostgreSQL to fully managed Azure services, which help achieve minimal downtime and built-in high availability (HA), monitoring, and security. There are many options for the migration of these applications, including both a migration path and a modernization path.
+Azure has broad support for open-source databases. There's support for moving MySQL and PostgreSQL to fully managed Azure services, which helps achieve minimal downtime and built-in high availability (HA), monitoring, and security. There are many options for the migration of these applications, including both a migration path and a modernization path.
 
 :::image type="content" source="../media/migrate-modernize-opensource-db.png" alt-text="Diagram showing how to migrate OSS Databases.":::
 
 ### Migrate
 
-When migrating Linux or Windows server hosting an open-source database to Azure, the experience is similar to migrating a Windows SQL Server. When you host these databases on a VM in Azure, they can be moved by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
+To migrate a Linux or Windows server that hosts an open-source database to Azure, the experience is similar to migrating a Windows SQL Server. When you host these databases on a VM in Azure, they can be moved by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true) and run just as they did in the datacenter, only now they're connected to a virtual network running in Azure.
 
 ### Modernize
 
@@ -117,7 +117,7 @@ While an IaaS migration to Azure might not be modernizing the applications thems
 
 ## VMware
 
-Using [Azure VMware Solution](https://azure.microsoft.com/products/azure-vmware) VMware workloads run natively on Azure. These workloads can be seamlessly moved from your data center to Azure and integrate your VMware environment with Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
+Using [Azure VMware Solution](https://azure.microsoft.com/products/azure-vmware), VMware workloads run natively on Azure. These workloads can be seamlessly moved from your datacenter to Azure. Tailwind Traders can keep managing your existing environments with the same VMware tools you already know while you modernize your applications with Azure native services.
 
 > [!IMPORTANT]
 > Azure VMware Solution is a Microsoft service, verified by VMware, that runs on Azure infrastructure.
@@ -136,7 +136,7 @@ Learn more about [deploying Azure VMware solutions](/azure/cloud-adoption-framew
 
 ## SAP
 
-Azure is SAP-certified to run your mission-critical SAP applications. Azure is the industry's most performant and scalable SAP cloud infrastructure, offering 192-gigabyte to 12-terabyte SAP HANA–certified virtual machines in more regions than any other public cloud provider.
+Azure is SAP-certified to run your mission-critical SAP applications. Azure is the industry's most performant and scalable SAP cloud infrastructure, offering 192-gigabyte to 12-terabyte SAP HANA-certified VMs in more regions than any other public cloud provider.
 
 :::image type="content" source="../media/migrate-modernize-sap.png" alt-text="Diagram showing how to migrate to SAP to Azure.":::
 
@@ -154,11 +154,11 @@ Moving an organization's end-user desktops to the cloud is a common scenario. Do
 
 :::image type="content" source="../media/migrate-modernize-vdi.png" alt-text="Diagram showing how to modernize VDI in Azure.":::
 
-# Migrate
+### Migrate
 
 The migration option for VDI is like other server migrations. Your current Remote Desktop Services VMs move to Azure running in IaaS. This can be done by using [Azure Migrate](https://azure.microsoft.com/services/azure-migrate/?azure-portal=true).
 
-# Modernize
+### Modernize
 
 To modernize VDI implementations, take existing Citrix, VMware, or Remote Desktop Services farms and replace them with a PaaS solution called [Azure Virtual Desktop](https://azure.microsoft.com/services/virtual-desktop/?azure-portal=true).
 
