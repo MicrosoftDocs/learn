@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 21
 content: |
-  [!include[](includes/4-organize-project-repository-structure.md)]
+  [!include[](includes/2-organize-project-repository-structure.md)]

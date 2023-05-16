@@ -48,23 +48,6 @@ Some common permissions are:
 
     ![Screenshot of Azure Pipelines showing how to manage folder security in the pipeline.](../media/manage-pipeline-folder-security.png)
 
-## Set branch-level pipeline triggers
-
-1. Open your YAML file that contains your pipeline definition.
-2. In the trigger section of your YAML file, add a branches subsection and specify which branches you want to include or exclude using include and exclude keywords.
-3. (Optional) You can also add a paths subsection and specify which files or folders you want to include or exclude using include and exclude keywords.
-4. For example, this YAML snippet triggers a run of the pipeline only when there are changes in main branch under src directory:
-
-    ```YAML
-    trigger:
-      branches:
-        include:
-        - main
-      paths:
-        include:
-        - src/*
-    ```
-
 ## Challenge yourself
 
 1. Set organization-level pipeline permissions to allow only Project Administrators to create new pipelines across all projects in your organization.

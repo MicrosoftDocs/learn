@@ -22383,6 +22383,21 @@
     "source_path": "learn-pr/achievements/learn.oxford.introduction-5g-services-on-azure.badge.yml",
     "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/2-configure-secure-projects-repositories.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/3-configure-secure-projects-repositories",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/3-exercise-move-security-repository-away-from-project.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-organize-project-repository-structure.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/2-organize-project-repository-structure",
+    "redirect_document_id": false
   }
   ]
 }
