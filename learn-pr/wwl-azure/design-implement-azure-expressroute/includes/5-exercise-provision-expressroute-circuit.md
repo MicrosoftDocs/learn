@@ -19,5 +19,5 @@ In this exercise, you will create an ExpressRoute circuit using the Azure portal
 > [!NOTE]
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
-[![Screenshot of the simulation page.](../media/simulation-er-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Provision%20an%20ExpressRoute%20circuit)
+[![Screenshot of the simulation page.](../media/simulation-expressroute-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Provision%20an%20ExpressRoute%20circuit)
 
