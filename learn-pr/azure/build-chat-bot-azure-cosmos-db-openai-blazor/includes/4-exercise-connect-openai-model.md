@@ -100,17 +100,16 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
 1. Create a new string variable named `_systemPromptText` with a static block of text to send to the AI assistant before each prompt.
 
     ```csharp
-    private readonly string _systemPromptText = @"
+    private readonly string _systemPrompt = @"
         You are an AI assistant that helps people find information.
-        Provide concise answers that are polite and professional.
-        If you do not know an answer, reply with ""I do not know the answer to your question.""
-    ";
+        Provide concise answers that are polite and professional." + Environment.NewLine;
     ```
 
-1. Create another new string variable named `_summarizePromptText` with a static block of text to send to the AI assistant with instructions on how to summarize a conversation.
+1. Create another new string variable named `_summarizePrompt` with a static block of text to send to the AI assistant with instructions on how to summarize a conversation.
 
     ```csharp
-    private readonly string _summarizePromptText = @"Please summarize the following text into two words.";
+    private readonly string _summarizePrompt = @"
+        Summarize this prompt in one or two words to use as a label in a button on a web page" + Environment.NewLine;
     ```
 
 1. Within the constructor of the class, add two extra lines of code to check if the endpoint or key is null. Use `ArgumentNullException.ThrowIfNullOrEmpty` to throw an error early if either of these values are null.
@@ -129,10 +128,10 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
     _deploymentName = deploymentName;
     ```
 
-1. Now, let's look at the string constructor parameter that specifies the max number of tokens. This parameter needs to be parsed into an integer and saved in the `_maxTokens` variable. If it's not parsed successfully, default to a value of `3000`.
+1. Now, let's look at the string constructor parameter that specifies the max number of conversation tokens. This parameter needs to be parsed into an integer and saved in the `_maxConversationTokens` variable. If it's not parsed successfully, default to a value of `3000`.
 
     ```csharp
-    _maxTokens = Int32.TryParse(maxTokens, out _maxTokens) ? _maxTokens : 3000;
+    _maxConversationTokens = Int32.TryParse(maxConversationTokens, out _maxConversationTokens) ? _maxConversationTokens : 3000;
     ```
 
     > [!TIP]
@@ -171,21 +170,14 @@ At this point, your constructor should include enough logic to create a client i
     MSBuild version 17.5.1+f6fdcf537 for .NET
       Determining projects to restore...
       All projects are up-to-date for restore.
-    /workspaces/cosmosdb-chatgpt/Services/OpenAiService.cs(19,29): warning CS0414: The field 'OpenAiService._summarizePromptText' is assigned but its value is never used [/workspaces/cosmosdb-chatgpt/cosmoschatgpt.csproj]
-    /workspaces/cosmosdb-chatgpt/Services/OpenAiService.cs(14,29): warning CS0414: The field 'OpenAiService._systemPromptText' is assigned but its value is never used [/workspaces/cosmosdb-chatgpt/cosmoschatgpt.csproj]
       cosmoschatgpt -> /workspaces/cosmosdb-chatgpt/bin/Debug/net7.0/cosmoschatgpt.dll
+    
     Build succeeded.
-
-    /workspaces/cosmosdb-chatgpt/Services/OpenAiService.cs(19,29): warning CS0414: The field 'OpenAiService._summarizePromptText' is assigned but its value is never used [/workspaces/cosmosdb-chatgpt/cosmoschatgpt.csproj]
-    /workspaces/cosmosdb-chatgpt/Services/OpenAiService.cs(14,29): warning CS0414: The field 'OpenAiService._systemPromptText' is assigned but its value is never used [/workspaces/cosmosdb-chatgpt/cosmoschatgpt.csproj]
-        2 Warning(s)
+        0 Warning(s)
         0 Error(s)
     
-    Time Elapsed 00:00:05.66
+    Time Elapsed 00:00:02.67
     ```
-
-    > [!IMPORTANT]
-    > At this point, you will see two new build warnings that the application is not using the static string variables. You will resolve these warnings in the next exercise.
 
 1. Close the terminal.
 
@@ -194,6 +186,7 @@ At this point, your constructor should include enough logic to create a client i
 1. Review the *OpenAiService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
+    using Cosmos.Chat.GPT.Models;
     using Azure;
     using Azure.AI.OpenAI;
     
@@ -202,21 +195,22 @@ At this point, your constructor should include enough logic to create a client i
     public class OpenAiService
     {
         private readonly string _deploymentName = String.Empty;
-        private readonly int _maxTokens = default;
+        private readonly int _maxConversationTokens = default;
+        
         private readonly OpenAIClient _client;
-        private readonly string _systemPromptText = @"
+        
+        private readonly string _systemPrompt = @"
             You are an AI assistant that helps people find information.
-            Provide concise answers that are polite and professional.
-            If you do not know an answer, reply with ""I do not know the answer to your question.""
-        ";
-        private readonly string _summarizePromptText = @"Please summarize the following text into two words.";
+            Provide concise answers that are polite and professional." + Environment.NewLine;
+        private readonly string _summarizePrompt = @"
+            Summarize this prompt in one or two words to use as a label in a button on a web page" + Environment.NewLine;
 
-        public int MaxTokens
+        public int MaxConversationTokens
         {
-            get => _maxTokens;
+            get => _maxConversationTokens;
         }
 
-        public OpenAiService(string endpoint, string key, string deploymentName, string maxTokens)
+        public OpenAiService(string endpoint, string key, string deploymentName, string maxConversationTokens)
         {
             // Implementation removed for brevity
         }
@@ -229,12 +223,14 @@ At this point, your constructor should include enough logic to create a client i
 
     ```csharp
     ArgumentNullException.ThrowIfNullOrEmpty(deploymentName);
-    ArgumentNullException.ThrowIfNullOrEmpty(maxTokens);
+    ArgumentNullException.ThrowIfNullOrEmpty(maxConversationTokens);
+
     ArgumentNullException.ThrowIfNullOrEmpty(endpoint);
     ArgumentNullException.ThrowIfNullOrEmpty(key);
-
+    
     _deploymentName = deploymentName;
-    _maxTokens = Int32.TryParse(maxTokens, out _maxTokens) ? _maxTokens : 3000;
+
+    _maxConversationTokens = Int32.TryParse(maxConversationTokens, out _maxConversationTokens) ? _maxConversationTokens : 3000;
 
     Uri uri = new(endpoint);
     AzureKeyCredential credential = new(key);

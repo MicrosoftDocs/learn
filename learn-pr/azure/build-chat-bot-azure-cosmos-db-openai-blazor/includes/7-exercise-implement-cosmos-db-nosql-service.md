@@ -82,7 +82,7 @@ There are two main use cases where the application needs to retrieve multiple it
 1. Create a new variable named `query` of type [`QueryDefinition`](/dotnet/api/microsoft.azure.cosmos.querydefinition) with the SQL query `SELECT DISTINCT * FROM c WHERE c.type = @type`. Use the fluent `WithParameter` method to assign the name of the `Session` class as the value for the parameter.
 
     ```csharp
-    QueryDefinition query = new ("SELECT DISTINCT * FROM c WHERE c.type = @type")
+    QueryDefinition query = new QueryDefinition("SELECT DISTINCT * FROM c WHERE c.type = @type")
         .WithParameter("@type", nameof(Session));
     ```
 
@@ -191,10 +191,10 @@ There are scenarios when either a single session requires an update or more than
     );
     ```
 
-1. Within the `UpsertMessagesBatchAsync` method, remove any existing placeholder code:
+1. Within the `UpsertSessionBatchAsync` method, remove any existing placeholder code:
 
     ```csharp
-    public async Task UpsertMessagesBatchAsync(params Message[] messages)
+    public async Task UpsertSessionBatchAsync(params dynamic[] messages)
     {
     }
     ```
@@ -274,17 +274,17 @@ Finally, combine the query and transactional batch functionality to remove multi
 1. Using the same `sessionId` method parameter, build a `QueryDefinition` object that finds all items that match the session identifier. Use a query parameter for the `sessionId` and ensure that you don't filter the query on the type of item.
 
     ```csharp
-    QueryDefinition query = new QueryDefinition("SELECT c.id FROM c WHERE c.sessionId = @sessionId")
+    QueryDefinition query = new QueryDefinition("SELECT VALUE c.id FROM c WHERE c.sessionId = @sessionId")
         .WithParameter("@sessionId", sessionId);
     ```
 
     > [!NOTE]
     > If you apply a `type` filter in this query, you may inadvertently miss related messages or sessions that should be bulk removed as part of this operation.
 
-1. Create a new `FeedIterator<dynamic>` using `GetItemQueryIterator` and the query you built.
+1. Create a new `FeedIterator<string>` using `GetItemQueryIterator` and the query you built.
 
     ```csharp
-    FeedIterator<Message> response = _container.GetItemQueryIterator<Message>(query);
+    FeedIterator<string> response = _container.GetItemQueryIterator<string>(query);
     ```
 
 1. Create a `TransactionalBatch` named `batch` using `CreateTransactionalBatch` and the partition key variable.
@@ -293,12 +293,12 @@ Finally, combine the query and transactional batch functionality to remove multi
     TransactionalBatch batch = _container.CreateTransactionalBatch(partitionKey);
     ```
 
-1. Create a *while loop* to iterate through all pages of results. Within the while loop, get the next page of results and use a *foreach loop* to iterate through all items per page. Within the foreach loop, add an operation to delete the item to the batch using `batch.DeleteItem`.
+1. Create a *while loop* to iterate through all pages of results. Within the while loop, get the next page of results and use a *foreach loop* to iterate through all item identifiers per page. Within the foreach loop, add a batch operation to delete the item using `batch.DeleteItem`.
 
     ```csharp
     while (response.HasMoreResults)
     {
-        FeedResponse<Message> results = await response.ReadNextAsync();
+        FeedResponse<string> results = await response.ReadNextAsync();
         foreach (var item in results)
         {
             batch.DeleteItem(
@@ -383,7 +383,7 @@ Now, your application has a full implementation of Azure OpenAI and Azure Cosmos
     ```csharp
     public async Task<List<Session>> GetSessionsAsync()
     {
-        QueryDefinition query = new ("SELECT DISTINCT * FROM c WHERE c.type = @type")
+        QueryDefinition query = new QueryDefinition("SELECT DISTINCT * FROM c WHERE c.type = @type")
             .WithParameter("@type", nameof(Session));
 
         FeedIterator<Session> response = _container.GetItemQueryIterator<Session>(query);
@@ -434,10 +434,10 @@ Now, your application has a full implementation of Azure OpenAI and Azure Cosmos
     }
     ```
 
-1. Review the `UpsertMessagesBatchAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
+1. Review the `UpsertSessionBatchAsync` method of the *CosmosDbService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
-    public async Task UpsertMessagesBatchAsync(params Message[] messages)
+    public async Task UpsertSessionBatchAsync(params dynamic[] messages)
     {
         if (messages.Select(m => m.SessionId).Distinct().Count() > 1)
         {
@@ -464,19 +464,19 @@ Now, your application has a full implementation of Azure OpenAI and Azure Cosmos
     {
         PartitionKey partitionKey = new(sessionId);
 
-        QueryDefinition query = new QueryDefinition("SELECT c.id FROM c WHERE c.sessionId = @sessionId")
+        QueryDefinition query = new QueryDefinition("SELECT VALUE c.id FROM c WHERE c.sessionId = @sessionId")
             .WithParameter("@sessionId", sessionId);
 
-        FeedIterator<Message> response = _container.GetItemQueryIterator<Message>(query);
+        FeedIterator<string> response = _container.GetItemQueryIterator<string>(query);
 
         TransactionalBatch batch = _container.CreateTransactionalBatch(partitionKey);
         while (response.HasMoreResults)
         {
-            FeedResponse<Message> results = await response.ReadNextAsync();
-            foreach (var item in results)
+            FeedResponse<string> results = await response.ReadNextAsync();
+            foreach (var itemId in results)
             {
                 batch.DeleteItem(
-                    id: item.Id
+                    id: itemId
                 );
             }
         }

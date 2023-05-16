@@ -11,39 +11,39 @@ First, implement a question-answer conversation by sending a system prompt, a qu
 
 1. Open the **Services/OpenAiService.cs** file.
 
-1. Within the `AskAsync` method, remove any existing placeholder code:
+1. Within the `GetChatCompletionAsync` method, remove any existing placeholder code:
 
     ```csharp
-    public async Task<(string response, int promptTokens, int responseTokens)> AskAsync(string sessionId, string prompt)
+    public async Task<(string response, int promptTokens, int responseTokens)> GetChatCompletionAsync(string sessionId, string userPrompt)
     {
     }
     ```
 
-1. Create a new variable of type `ChatMessage` named `systemPrompt`. Set the role of the message to `ChatRole.System` and pass in the static `_systemPromptText` variable as the body of the message.
+1. Create a new variable of type `ChatMessage` named `systemMessage`. Set the role of the message to `ChatRole.System` and pass in the static `_systemPrompt` variable as the body of the message.
 
     ```csharp
-    ChatMessage systemPrompt = new(ChatRole.System, _systemPromptText);
+    ChatMessage systemMessage = new(ChatRole.System, _systemPrompt);
     ```
 
-1. Create another `ChatMessage` variable named `userPrompt`. For this variable, the role should be `ChatRole.User` and use the `prompt` constructor parameter for the message's content.
+1. Create another `ChatMessage` variable named `userMessage`. For this variable, the role should be `ChatRole.User` and use the `userPrompt` constructor parameter for the message's content.
 
     ```csharp
-    ChatMessage userPrompt = new(ChatRole.User, prompt);
+    ChatMessage userMessage = new(ChatRole.User, userPrompt);
     ```
 
-1. Create a new variable named `options` of type `ChatCompletionsOptions`. Add the two message variables to the `Messages` list, set the value of `User` to the `sessionId` constructor parameter, set `MaxTokens` to the `_maxTokens` variable, and set the remaining properties to the recommended values here.
+1. Create a new variable named `options` of type `ChatCompletionsOptions`. Add the two message variables to the `Messages` list, set the value of `User` to the `sessionId` constructor parameter, set `MaxTokens` to the `MaxConversationTokens` property, and set the remaining properties to the recommended values here.
 
     ```csharp
     ChatCompletionsOptions options = new()
     {
         Messages = {
-            systemPrompt,
-            userPrompt
+            systemMessage,
+            userMessage
         },
         User = sessionId,
-        MaxTokens = _maxTokens,
-        Temperature = 0.5f,
-        NucleusSamplingFactor = 0.95f,
+        MaxTokens = MaxConversationTokens,
+        Temperature = 0.3f,
+        NucleusSamplingFactor = 0.5f,
         FrequencyPenalty = 0,
         PresencePenalty = 0
     };
@@ -58,7 +58,7 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     > [!TIP]
     > The `GetChatCompletionsAsync` method returns an object of type `Task<Response<ChatCompletions>>`. The `Response<T>` class contains a implicit conversion to type `T` allowing you to select a type based on your application's needs. You can store the result as either `Response<ChatCompletions>` to get the full metadata from the response or just `ChatCompletions` if you only care about the content of the result itself.
 
-1. Finally, return a tuple as the result of the `AskAsync` method with the content of the completion as a string, the number of tokens associated with the prompt, and the number of tokens for the response.
+1. Finally, return a tuple as the result of the `GetChatCompletionAsync` method with the content of the completion as a string, the number of tokens associated with the prompt, and the number of tokens for the response.
 
     ```csharp
     return (
@@ -77,36 +77,36 @@ Now, send the AI model a different system prompt, your current conversation, and
 1. Within the `SummarizeAsync` method, remove any existing placeholder code:
 
     ```csharp
-    public async Task<string> SummarizeAsync(string sessionId, string prompt)
+    public async Task<string> SummarizeAsync(string sessionId, string userPrompt)
     {
     }
     ```
 
-1. Create a `ChatMessage` variable named `summarizePrompt`. For this variable, use the `User` role and the `_summarizePromptText` variable for content.
+1. Create a `ChatMessage` variable named `systemMessage`. For this variable, use the `User` role and the `_summarizePrompt` variable for content.
 
     ```csharp
-    ChatMessage summarizePrompt = new(ChatRole.User, _summarizePromptText);
+    ChatMessage systemMessage = new(ChatRole.User, _summarizePrompt);
     ```
 
-1. Create another `ChatMessage` variable named `userPrompt`. Use the `User` role again and use the `prompt` constructor parameter for the message's content.
+1. Create another `ChatMessage` variable named `userMessage`. Use the `User` role again and use the `userPrompt` constructor parameter for the message's content.
 
     ```csharp
-    ChatMessage userPrompt = new(ChatRole.User, prompt);
+    ChatMessage userMessage = new(ChatRole.User, userPrompt);
     ```
 
-1. Create a `ChatCompletionsOptions` variable named `options` with the two message variables in the `Messages` list, `User` set to the `sessionId` constructor parameter, `MaxTokens` set to the `_maxTokens` variable, and the remaining properties to the recommended values here:
+1. Create a `ChatCompletionsOptions` variable named `options` with the two message variables in the `Messages` list, `User` set to the `sessionId` constructor parameter, `MaxTokens` set to the `MaxTokens` to the `MaxConversationTokens` property, and the remaining properties to the recommended values here:
 
     ```csharp
     ChatCompletionsOptions options = new()
     {
         Messages = {
-            summarizePrompt,
-            userPrompt
+            systemMessage,
+            userMessage
         },
         User = sessionId,
-        MaxTokens = _maxTokens,
-        Temperature = 0.5f,
-        NucleusSamplingFactor = 0.95f,
+        MaxTokens = MaxConversationTokens,
+        Temperature = 0.0f,
+        NucleusSamplingFactor = 1.0f,
         FrequencyPenalty = 0,
         PresencePenalty = 0
     };
@@ -118,10 +118,11 @@ Now, send the AI model a different system prompt, your current conversation, and
     ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
     ```
 
-1. Return the content of the completion as a string as the result of the `SummarizeAsync` method. Use `String.TrimEnd` to remove extra punctuation from the end of the summary.
+1. Return the content of the completion as a string as the result of the `SummarizeAsync` method. Trim the `"` character from the beginning and end of the string.
 
     ```csharp
-    return completions.Choices[0].Message.Content.TrimEnd('.');
+    return completions.Choices[0].Message.Content
+        .Trim('"');
     ```
 
 1. Save the **Services/OpenAiService.cs** file.
@@ -151,25 +152,25 @@ At this point, your application should have a thorough enough implementation of 
 1. Review the `AskAsync` method of the *OpenAiService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
-    public async Task<(string response, int promptTokens, int responseTokens)> AskAsync(string sessionId, string prompt)
+    public async Task<(string response, int promptTokens, int responseTokens)> GetChatCompletionAsync(string sessionId, string userPrompt)
     {
-        ChatMessage systemPrompt = new(ChatRole.System, _systemPromptText);
-        ChatMessage userPrompt = new(ChatRole.User, prompt);
+        ChatMessage systemMessage = new(ChatRole.System, _systemPrompt);
+        ChatMessage userMessage = new(ChatRole.User, userPrompt);
 
         ChatCompletionsOptions options = new()
         {
             Messages = {
-                systemPrompt,
-                userPrompt
+                systemMessage,
+                userMessage
             },
             User = sessionId,
-            MaxTokens = _maxTokens,
-            Temperature = 0.5f,
-            NucleusSamplingFactor = 0.95f,
+            MaxTokens = 256,
+            Temperature = 0.3f,
+            NucleusSamplingFactor = 0.5f,
             FrequencyPenalty = 0,
             PresencePenalty = 0
         };
-    
+
         ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
 
         return (
@@ -183,28 +184,29 @@ At this point, your application should have a thorough enough implementation of 
 1. Review the `SummarizeAsync` method of the *OpenAiService.cs* code file to make sure that your code matches this sample.
 
     ```csharp
-    public async Task<string> SummarizeAsync(string sessionId, string prompt)
+    public async Task<string> SummarizeAsync(string sessionId, string userPrompt)
     {
-        ChatMessage summarizePrompt = new(ChatRole.User, _summarizePromptText);
-        ChatMessage userPrompt = new(ChatRole.User, prompt);
+        ChatMessage systemMessage = new(ChatRole.User, _summarizePrompt);
+        ChatMessage userMessage = new(ChatRole.User, userPrompt);
 
         ChatCompletionsOptions options = new()
         {
             Messages = {
-                summarizePrompt,
-                userPrompt
+                systemMessage,
+                userMessage
             },
             User = sessionId,
-            MaxTokens = _maxTokens,
-            Temperature = 0.5f,
-            NucleusSamplingFactor = 0.95f,
+            MaxTokens = 200,
+            Temperature = 0.0f,
+            NucleusSamplingFactor = 1.0f,
             FrequencyPenalty = 0,
             PresencePenalty = 0
         };
-    
+
         ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
-        
-        return completions.Choices[0].Message.Content.TrimEnd('.');
+
+        return completions.Choices[0].Message.Content
+            .Trim('"');
     }
     ```
 
