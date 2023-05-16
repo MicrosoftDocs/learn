@@ -1,4 +1,4 @@
-Now that we know the basics of blockchain, let's see how it works behind the scenes. This information should help you decide whether blockchain will work for your scenario.
+Now that we know the basics of blockchain, let's see how it works behind the scenes. This information should help you decide whether blockchain works for your scenario.
 
 ## How is data distributed?
 
@@ -42,7 +42,7 @@ There are several blockchain consensus algorithms including proof of work, proof
 
 ## What is a block?
 
-A block is a cluster of data within the blockchain that stores transaction information. The number of transactions in a block is usually time-based. For example, the illustration shows a block containing transactions that occurred in the past 10 minutes.
+A block is a cluster of data within the blockchain that stores transaction information. The number of transactions in a block is typically time-based. For example, the illustration shows a block containing transactions that occurred in the past 10 minutes.
 
 ![Example of several transactions representing a block. The order of transactions result in a given state.](../media/block.png)
 
@@ -52,7 +52,7 @@ Through consensus, validated blocks are added to the blockchain at each node. Be
 
 You would think that if you have control of the ledger in your node, you could just change the data in your copy. How can it be immutable?
 
-Blockchain uses a cryptographic hash to create link between blocks. By linking blocks, the order of transactions can be agreed upon through the consensus algorithm. A **cryptographic hash** is an algorithm that maps data of an arbitrary size to a bit representation of fixed size. You can think of it as a digital fingerprint. Bitcoin uses the SHA-256 hash algorithm. If you used a SHA-256 hash function on a 100 page document, the function output is a 256-bit hash value. If you changed just one character in the document and regenerated the hash, the output is a different 256-bit hash value. Now, imagine if we use a block as the input to the hash function. The output is a unique hash value for the data in the block.
+Blockchain uses a cryptographic hash to create a link between blocks. By linking blocks, the order of transactions can be agreed upon through the consensus algorithm. A **cryptographic hash** is an algorithm that maps data of an arbitrary size to a bit representation of fixed size. You can think of it as a digital fingerprint. Bitcoin uses the SHA-256 hash algorithm. If you use an SHA-256 hash function on a 100 page document, the function output is a 256-bit hash value. If you change just one character in the document and regenerated the hash, the output is a different 256-bit hash value. Now, imagine if we use a block as the input to the hash function. The output is a unique hash value for the data in the block.
 
 ![A block is sent through a hash function and a cryptographic hash is generated.](../media/hash.png)
 
@@ -73,7 +73,7 @@ Blockchain allows us to store data that is consistent and can be trusted. How do
 
 In our scenario, we need logic to transfer responsibility of the product from one participant to another. We also need to use data from IoT temperature sensor to know if the temperature is too high.
 
-A decentralized application (DApp) is an application on a distributed computing system. In this module, we'll focus on using the Ethereum blockchain protocol. Ethereum DApps are called smart contracts. A smart contract contains logic that is executed as part of a transaction. On Ethereum, you program the logic using a programming language called Solidity.
+A decentralized application (DApp) is an application on a distributed computing system. In this module, we focus on using the Ethereum blockchain protocol. Ethereum DApps are called smart contracts. A smart contract contains logic that is executed as part of a transaction. On Ethereum, you program the logic using a programming language called Solidity.
 
 Smart contracts are deployed to the blockchain and are referenced by an address. To use a smart contract, you create an instance. A smart contract instance contains state data and program logic. In our scenario, a smart contract instance contains data such as, the responsible participant, location, and if the product temperature is out of compliance. We can execute functions to transfer responsibility or receive temperature telemetry for the instance.
 
@@ -84,10 +84,10 @@ When the responsibility of a product transfers to another party, a transaction i
 
 ![A smart contract transaction is sent to one node and copied to the other peer nodes.](../media/smart-contract-transaction.png)
 
-What if during shipment the refrigeration unit fails and the temperature of the ice cream goes above freezing? An IoT temperature sensor monitors the ice cream temperature and sends transactions periodically. If the temperature is above freezing, the smart contract logic marks the shipment as non-compliant.
+What if during shipment the refrigeration unit fails and the temperature of the ice cream goes above freezing? An IoT temperature sensor monitors the ice cream temperature and sends transactions periodically. If the temperature is above freezing, the smart contract logic marks the shipment as noncompliant.
 
 ![A smart contract transaction executes logic to set the shipment to out of compliance due to the temperature. The transaction is copied and executed on other peer nodes.](../media/iot-transaction.png)
 
-Because the transaction is included in a chain of blocks, there is an immutable record of when the shipment became non-compliant. The ice cream shop can refuse delivery and can avoid food safety issues.
+Because the transaction is included in a chain of blocks, there's an immutable record of when the shipment became noncompliant. The ice cream shop can refuse delivery and can avoid food safety issues.
 
-Just like data in the blockchain, a smart contract is immutable. Once deployed, the logic cannot be changed. Therefore, you can trust that smart contract logic always executes the same on all nodes. Any code changes require a new smart contract be deployed at a new address.
+Just like data in the blockchain, a smart contract is immutable. Once deployed, the logic can't be changed. Therefore, you can trust that smart contract logic always executes the same on all nodes. Any code changes require a new smart contract be deployed at a new address.
