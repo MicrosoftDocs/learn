@@ -9,6 +9,6 @@ metadata:
   ms.author: hudequei
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-durationInMinutes: 5
+durationInMinutes: 8
 content: |
   [!include[](includes/6-create-external-table-as-select.md)]
