@@ -2,9 +2,8 @@ In this exercise, we use CETAS to export a table as Parquet.
 
 ## Prerequisites
 
-- A SQL Server 2022 instance installed and running.
-- **PolyBase Query Service for External Data** installed.
-- [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database.
+- The **PolyBase Query Service for External Data** feature installed on SQL Server 2022.
+- [AdventureWorks2022](/sql/samples/adventureworks-install-configure) sample database is used in this exercise. Restore the sample database to your server.
 - The SQL Server 2022 instance must have internet connectivity.
 - An Azure Subscription with a storage account and a blob storage container created. For more information, see [Quickstart: Upload, download, and list blobs with the Azure portal](/azure/storage/blobs/storage-quickstart-blobs-portal).
 - A blob container SAS Token created with READ, WRITE, LIST and CREATE permissions to be used for CETAS. For more information, see [CREATE EXTERNAL TABLE AS SELECT (CETAS) Permissions](/sql/t-sql/statements/create-external-table-as-select-transact-sql#permissions).
@@ -64,7 +63,7 @@ You're working with the business analytics team, and need to export older data f
     )
     ```
 
-1. Create external file format for Parquet.
+1. Create the external file format for Parquet.
 
     ```sql
     -- PARQUET FILE FORMAT
@@ -121,7 +120,7 @@ You're working with the business analytics team, and need to export older data f
 
 To keep the data manageable, your company has decided that data that is older than 2014 should be moved from the database. However, all of the data must still be accessible. For this example, we export the data through CETAS, and generate several external tables that we can query later on. We'll go through an example of using a view with UNION statements to query the data, as well as creating a single external table that uses a wildcard search to search through the subfolders of the exported data.
 
-1. Start by cloning the original table, as we want to simulate exporting and removing the data, but don't necessarily want to delete the current data source.
+1. Start by cloning the original table, as we want to simulate exporting and removing the data, but don't necessarily want to delete the current data source. Run the following in SSMS:
 
     ```sql
     -- CLONE TABLE
@@ -202,7 +201,7 @@ To keep the data manageable, your company has decided that data that is older th
     GO
     ```
 
-1. After executing these three commands, you should able to see the following external tables:
+1. After executing these three commands, you should able to see the following external tables in SSMS **Object Explorer**. Open the sample database > **Tables** > **External Tables**:
 
    :::image type="content" source="../media/external-tables-2011-2013.png" alt-text="Screenshot of SSMS showing the external tables for 2011, 2012, and 2013.":::
 
@@ -259,11 +258,11 @@ GROUP BY DATEPART(YYYY, [DUEDATE])
 ORDER BY [YEAR]
 ```
 
-Each method has its own advantages and disadvantages. For exploration purposes, the wildcard search method is recommended, since it's easier to use and more flexible. As for the view method, it's recommended for repetitive requests since it usually performs better, and it also can be combined with physical tables.
+Each method has its own advantages and disadvantages. For exploration purposes, the wildcard search method is recommended since it's easier to use and more flexible. As for the view method, it's recommended for repetitive requests since it usually performs better, and it also can be combined with physical tables.
 
 ## Folder elimination and metadata information
 
-Both external tables and OPENROWSET can use the filepath function to collect and filter information based on the file metadata. The `filepath` function returns the full path of the file, the folder name, and the file name. That information can be used to further improve the search capabilities of both the external table and OPENROWSET commands.
+Both external tables and OPENROWSET can use the `filepath` function to collect and filter information based on the file metadata. The `filepath` function returns the full path of the file, the folder name, and the file name. That information can be used to further improve the search capabilities of both the external table and OPENROWSET commands.
 
 ```sql
 SELECT
@@ -296,9 +295,9 @@ WHERE
  r.filepath(1) IN ('2011')
 ```
 
-The end result is the same, but by leveraging the metadata for folder elimination, you guarantee that your query will only access the required folders, instead of scanning across the entire data source, making it better for query performance. With that information in mind, you can use it to help design our own storage architecture to better leverage the capabilities. For example
+The end result is the same, but by leveraging the metadata for folder elimination, you guarantee that your query will only access the required folders, instead of scanning across the entire data source, making it better for query performance. With that information in mind, you can use it to help design your own storage architecture to better leverage the capabilities. For example, here's a sample folder architecture:
 
-:::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing the folder architecture in the storage container.":::
+:::image type="content" source="../media/folder-elimination-architecture.png" alt-text="Screenshot showing a folder architecture example in a storage container.":::
 
 This is how our query would look like:
 

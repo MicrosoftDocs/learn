@@ -6,13 +6,13 @@ The following illustrates the database relationship with PolyBase objects.
 
 :::image type="content" source="../media/polybase-objects.png" alt-text="An image of PolyBase objects in SQL Server.":::
 
-- **External file format:** Is used to define how SQL Server works with a particular file type. External file format determines the type of file, field terminator, delimiter, compression, encoding and much more. For more information, see [CREATE EXTERNAL FILE FORMAT (Transact-SQL)](/sql/t-sql/statements/create-external-file-format-transact-sql).
+- **External file format:** The CREATE EXTERNAL FILE FORMAT command is used to define how SQL Server works with a particular file type. External file format determines the type of file, field terminator, delimiter, compression, encoding and much more. For more information, see [CREATE EXTERNAL FILE FORMAT (Transact-SQL)](/sql/t-sql/statements/create-external-file-format-transact-sql).
 
-- **External table:** It creates a virtual table pointing to the external source of data that is either a file or another database table. Whenever this table is used, SQL Server fetches the data from the source. This grants both users and applications the same level of flexibility of working with a regular table without the complexity of administering the original data. For more information, see [CREATE EXTERNAL TABLE (Transact-SQL)](/sql/t-sql/statements/create-external-table-transact-sql).
+- **External table:** The CREATE EXTERNAL TABLE command creates a virtual table pointing to the external source of data that is either a file or another database table. Whenever this table is used, SQL Server fetches the data from the source. This grants both users and applications the same level of flexibility of working with a regular table without the complexity of administering the original data. For more information, see [CREATE EXTERNAL TABLE (Transact-SQL)](/sql/t-sql/statements/create-external-table-transact-sql).
 
-- **External data source:** Holds the required information to access an external data source. The external data source can be a storage location (for example, Azure Blob storage, Azure Data Lake Storage Gen2, or S3 compatible object storage) or another database server. For more information, see [CREATE EXTERNAL DATA SOURCE (Transact-SQL)](/sql/t-sql/statements/create-external-data-source-transact-sql).
+- **External data source:** The CREATE EXTERNAL DATA SOURCE command creates a data source that holds the required information to access an external data source. The external data source can be a storage location (for example, Azure Blob storage, Azure Data Lake Storage Gen2, or S3-compatible object storage) or another database server. For more information, see [CREATE EXTERNAL DATA SOURCE (Transact-SQL)](/sql/t-sql/statements/create-external-data-source-transact-sql).
 
-- **Database scoped credential:** Holds the credential information used by the external data source. For more information, see
+- **Database scoped credential:** The CREATE DATABASE SCOPED CREDENTIAL command creates a credential that holds the credential information used by the external data source. For more information, see
 [CREATE DATABASE SCOPED CREDENTIAL (Transact-SQL)](/sql/t-sql/statements/create-database-scoped-credential-transact-sql).
 
 - **Database master key:** The database master key (DMK) is a symmetric key used to protect the private keys of certificates and asymmetric keys that are present in the database. The DMK is used as a security mechanism to safely store all the external credential and data source information. For more information, see [CREATE MASTER KEY (Transact-SQL)](/sql/t-sql/statements/create-master-key-transact-sql).
@@ -41,7 +41,7 @@ Some prefixes changed from previous version of SQL Server for compatibility reas
 
 ## Supported file formats for PolyBase
 
-SQL Server 2022 supports the following File Formats:
+SQL Server 2022 supports the following file formats:
 
 - CSV
 - Parquet

@@ -14,7 +14,7 @@ In this training module, we'll go over the data virtualization options in SQL Se
 
 Data virtualization relies on three principles:
 
-- **Data abstraction:** hides the complexities of accessing data from the underlying data system, their formats and structures.
+- **Data abstraction:** Hides the complexities of accessing data from the underlying data system, their formats and structures.
 
 - **Zero replication:** Unlike traditional ETL, data virtualization doesn't need to collect the data into a separate repository to transform it to the destination format. It handles transformation and aggregation on-the-fly.
 

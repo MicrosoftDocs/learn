@@ -10,7 +10,7 @@ Continuing from the previous exercise, you'll now connect and create an external
 ## Prerequisite
 
 - In addition to the prerequisites established in the previous exercise, you need to have an Azure SQL Database to complete this exercise. If you don't have a logical server and database in Azure SQL Database, you can create one using the article, [Quickstart: Create a single database - Azure SQL Database](/azure/azure-sql/database/single-database-create-quickstart).
-- In order to connect to another database, we need the PolyBase services to be running. Make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine services** are running in SQL Server Configuration Manager.
+- In order to connect to another database, we need the PolyBase services to be running. Make sure the **SQL Server PolyBase Data Movement** and **SQL Server PolyBase Engine** services are running in SQL Server Configuration Manager.
 
 - For this exercise, we assume the following Azure SQL Database resource information:
 
@@ -85,7 +85,7 @@ RECONFIGURE
 
 ## Use OPENROWSET to access the database in Azure SQL Database
 
-We'll be using [OPENROWSET](/sql/t-sql/functions/openrowset-transact-sql) to connect to the `polybase2022test` database in Azure SQL Database, and query the `tblAuthors` table. We need to specify a provider. In this example, we're using the MSOLEDBSQL provider, which should be installed with SQL Server 2022. We'll also need specify the user and password in this example.
+We'll be using [OPENROWSET](/sql/t-sql/functions/openrowset-transact-sql) to connect to the `polybase2022test` database in Azure SQL Database, and query the `tblAuthors` table. We need to specify a provider. In this example, we're using the MSOLEDBSQL provider, which should be installed with SQL Server 2022. We also need to specify the SQL authentication user and password in this example.
 
 ```sql
 SELECT 

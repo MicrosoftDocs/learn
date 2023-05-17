@@ -24,7 +24,7 @@ RECONFIGURE;
 > [!NOTE]
 > The optional feature, **PolyBase Query Service for External Data** must be installed. Refer to the unit on installing PolyBase.
 >
-> For this exercise, since we'll be querying parquet files using only PolyBase v3, SQL Server PolyBase Data Movement and SQL Server PolyBase Engine does not need to be enabled or configured.
+> For this exercise, since we'll be querying parquet files using only PolyBase v3, SQL Server PolyBase Data Movement and SQL Server PolyBase Engine services does not need to be enabled or configured.
 
 ## Create a database
 
@@ -110,9 +110,9 @@ To access and explore the data, we can use OPENROWSET. OPENROWSET is optimized f
 
 **OPENROWSET** values:
 
-- BULK: file name and extension, BULK will automatically append with the data information from the data source. This means the full file location is `abs://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet`
-- FORMAT: since we'll be accessing a Parquet file, the format should be `PARQUET`.
-- Data source: This is the connection information. In this case, our newly created data source `Public_Covid`.
+- **BULK**: File name and extension, BULK will automatically append with the data information from the data source. This means the full file location is `abs://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet`
+- **FORMAT**: Since we'll be accessing a Parquet file, the format should be `PARQUET`.
+- **DATA SOURCE**: This is the connection information. In this case, our newly created data source `Public_Covid`.
 
 For more information on the public dataset, see [Bing COVID-19](/azure/open-datasets/dataset-bing-covid-19).
 
@@ -147,7 +147,7 @@ We can see in this case that we can use all of T-SQL's flexibility and query the
 
 ## Schema discovery of external table
 
-To create an external table, the first step is to determine the columns and type. Since the schema comes from an external file, it might be time consuming to precisely determine the data types and ranges. Fortunately we can use Stored Procedure, [sp_describe_first_result_set (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-describe-first-result-set-transact-sql) to speed up this process.
+To create an external table, the first step is to determine the columns and type. Since the schema comes from an external file, it might be time consuming to precisely determine the data types and ranges. Fortunately we can use the stored procedure, [sp_describe_first_result_set (Transact-SQL)](/sql/relational-databases/system-stored-procedures/sp-describe-first-result-set-transact-sql) to speed up this process.
 
 ```sql
 DECLARE @tsql NVARCHAR(MAX) = 'SELECT  TOP 1000 *
@@ -162,11 +162,11 @@ GO
 
 :::image type="content" source="../media/schema-discovery.png" alt-text="Image of the schema results of the external Parquet data source in SQL Server Management Studio.":::
 
-We can see the stored procedure returned the column names, types, length, precision and even the collation of the data source.
+We can see that `sp_describe_first_result_set` returned the column names, types, length, precision and even the collation of the data source.
 
 ## Create external file format
 
-Since we have to reference the Parquet file to the external table, we first need to run `CREATE EXTERNAL FILE FORMAT` to add it. The file format definition is important for external tables because it specifies the actual layout as well as compression type.
+Since we have to reference the Parquet file to the external table, we first need to run `CREATE EXTERNAL FILE FORMAT` to add the Parquet file format. The file format definition is important for external tables because it specifies the actual layout as well as compression type.
 
 Run the following in SSMS:
 
@@ -180,7 +180,7 @@ GO
 
 ## Create external table
 
-Finally, with all the information we just acquired, and the external file format created, we can create the external table using the below in SSMS:
+Finally, with all the information we just acquired, and the external file format created, we can create the external table using the below script in SSMS:
 
 ```sql
 IF EXISTS (SELECT * FROM sys.external_file_formats WHERE name = 'ParquetFileFormat')
@@ -227,6 +227,6 @@ GO
 ```
 
 > [!NOTE]
-> The column name must match the columns that are stored in the parquet file. Otherwise, SQL Server wouldn’t be able to identify the column and would return `NULL`.
+> The column name must match the columns that are stored in the Parquet file. Otherwise, SQL Server wouldn’t be able to identify the column and would return `NULL`.
 
 After creating the external table `ext_covid_data`, we can also add statistics on the updated column for efficiency. For more information about statics on external table, see [CREATE STATISTICS (Transact-SQL)](/sql/t-sql/statements/create-statistics-transact-sql).

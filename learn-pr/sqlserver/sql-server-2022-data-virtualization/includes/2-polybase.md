@@ -22,7 +22,7 @@ Some of the main differences of object storage compared to traditional file syst
 
 - Files can have different attributes, like tags.
 
-- Object storage inn general, are the go-to solution for Big Data, Machine Learning, and Analytics platforms.
+- Object storage in general, are the go-to solution for Big Data, Machine Learning, and analytics platforms.
 
 - Object storage are a more cost-effective solution to scale and easier to maintain.
 
@@ -32,7 +32,7 @@ Some of the main differences of object storage compared to traditional file syst
 
 Amazon Web Services (AWS) established the S3 standard, the framework. Now S3-compatible object storage solutions are being offered by every major storage provider, like Cloudian, Dell, MinIO, PureStorage, just to name a few. If the solution offers compatibility with S3 REST APIs, it'll be compatible with SQL Server 2022.  
 
-Some object storage partners offer the ability to run their solution as software, capable of virtualizing your current storage. You can install and try on your own laptop or even a virtual machine.
+Some object storage partners offer the ability to run their solution as software, capable of virtualizing your current storage. You can install and try on your own machine or virtual machine (VM).
 
 Object storage can be used for data virtualization, and also for backup and restore scenarios through the use of the `BACKUP TO URL` command. For more information, see [SQL Server backup and restore with S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
 
@@ -53,7 +53,7 @@ For more information on object storage providers, see [Providers of S3-compatibl
 
 PolyBase can be installed with the SQL Server installation executable during initial setup, or added as a feature later on. On the **Feature Selection** page of the SQL Server setup.exe, select **PolyBase Query Service for External Data**.
 
-:::image type="content" source="../media/polybase-setup-during-sql-server-install.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase option.":::
+:::image type="content" source="../media/polybase-setup-during-sql-server-install.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase option." lightbox="../media/polybase-setup-during-sql-server-install.png:::
 
 PolyBase services require firewall ports to be enabled in order to connect to external data sources.
 
@@ -94,9 +94,9 @@ For complete information and prerequisites on the PolyBase installation, see:
 
 ## PolyBase services vs PolyBase feature
 
-SQL Server 2022 adds support within the database engine using REST API interfaces to access data in Azure Blob storage, Azure Data Lake Storage Gen2, S3 compatible object storage providers (that includes file formats such as Parquet, Delta, and CSV).
+SQL Server 2022 adds support within the database engine using REST API interfaces to access data in Azure Blob storage, Azure Data Lake Storage Gen2, S3-compatible object storage providers (that includes file formats such as Parquet, Delta, and CSV).
 
-This new architecture does not require PolyBase services to be running or configured, only PolyBase feature enabled on an instance-level using `sp_configure` option.
+This new architecture does not require PolyBase services to be running or configured, only PolyBase feature enabled on an instance-level using the `sp_configure` option.
 
 For all the other already existing data sources, such as SQL Server, Oracle, MongoDB, or ODBC-based data source, PolyBase will use PolyBase services.
 
