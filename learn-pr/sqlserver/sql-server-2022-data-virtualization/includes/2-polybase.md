@@ -53,7 +53,7 @@ For more information on object storage providers, see [Providers of S3-compatibl
 
 PolyBase can be installed with the SQL Server installation executable during initial setup, or added as a feature later on. On the **Feature Selection** page of the SQL Server setup.exe, select **PolyBase Query Service for External Data**.
 
-:::image type="content" source="../media/polybase-setup-during-sql-server-install.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase option." lightbox="../media/polybase-setup-during-sql-server-install.png:::
+:::image type="content" source="../media/polybase-setup-during-sql-server-install.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase option." lightbox="../media/polybase-setup-during-sql-server-install.png":::
 
 PolyBase services require firewall ports to be enabled in order to connect to external data sources.
 
