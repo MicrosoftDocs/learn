@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Working with data and properties in React components
 summary: The goal of React components is to create reusable blocks of code and UI. To support reusability, you can pass data into components through the use of properties. We will see how to add properties to a component, and work with complex data types such as arrays.

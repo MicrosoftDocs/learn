@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: data-factory
 title: Execute existing SSIS packages in Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will see how you can integrate SQL Server Integration Services packages into an Azure Data Factory solution
 abstract: |

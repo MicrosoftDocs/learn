@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-vue
   ms.custom: team=nextgen
 title: Work with data and events in Vue.js
 summary: Dynamic web applications typically allow users to interact with the page and data. In this module, you'll see how to add forms to a Vue.js page and respond to user events. You'll also see how to add computed values that can be calculated based on updates to the data.

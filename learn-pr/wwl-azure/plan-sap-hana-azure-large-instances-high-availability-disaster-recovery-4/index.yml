@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
+  ms.subservice: azure-large-instances
 title: Plan SAP HANA on Azure (Large Instances) high availability and disaster recovery
 summary: Considerations to plan for SAP HANA on Azure (Large Instances) high availability and disaster recovery.
 abstract: |

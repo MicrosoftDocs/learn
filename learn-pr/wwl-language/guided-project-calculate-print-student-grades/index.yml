@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Guided project - Calculate and print student grades
 summary: Learn to develop an application that will calculate and display results based on given data.
 abstract: |

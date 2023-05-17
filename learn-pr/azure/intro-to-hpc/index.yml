@@ -7,7 +7,6 @@ metadata:
   author: padmalathas
   ms.author: padmalathas
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to high-performance computing (HPC) on Azure
 summary: Discover the services available on Azure for your high-performance computing workloads.
 abstract: | 

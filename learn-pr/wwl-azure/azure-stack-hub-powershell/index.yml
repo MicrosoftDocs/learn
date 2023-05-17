@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Azure Stack Hub PowerShell
 summary: |
   See how resource providers in Azure Stack Hub can be configure with PowerShell to enhance Azure capabilities.

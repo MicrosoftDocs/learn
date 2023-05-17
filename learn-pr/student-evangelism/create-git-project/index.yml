@@ -7,7 +7,6 @@ metadata:
   author: mshumba
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-git
   ms.custom: team=nextgen
 title: How to create and modify a Git project
 summary: Learn how to create, modify and track changes on a project using Git.
