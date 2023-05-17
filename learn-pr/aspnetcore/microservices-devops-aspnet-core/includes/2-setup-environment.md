@@ -14,17 +14,19 @@ The quickstart script completes the following steps to deploy an updated version
 
 1. In a new browser window, fork the [MicrosoftDocs/mslearn-microservices-devops-aspnet-core](https://github.com/MicrosoftDocs/mslearn-microservices-devops-aspnet-core) repository to your own GitHub account. For instructions, see [Fork a repo](https://docs.github.com/get-started/quickstart/fork-a-repo).
 
+1. Set up the dev environment.
+
    - To use GitHub Codespaces, create a new codespace using the `main` branch of your forked repository.
 
    - To use Visual Studio Code:
      1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
-     1. Search for and select **Dev Containers: Clone Repository in Container Volume**, and select **Got it** if prompted.
+     1. Search for and select **Dev Containers: Clone Repository in Container Volume**.
      1. Select your forked repository and branch. Visual Studio Code creates your development container.
 
 1. After the project loads in the container, expand the *deploy/k8s* directory in the Visual Studio Code **Explorer** pane. This directory contains the scripts to use in this module.
 
    > [!NOTE]
-   > By default, Visual Studio Code displays *k8s* on the same line as *deploy* because *deploy*  contains only the *k8s* subdirectory.
+   > By default, Visual Studio Code **Explorer** displays *k8s* on the same line as *deploy* because *deploy*  contains only the *k8s* subdirectory.
    
 1. Right-click the *k8s* directory and select **Open in Integrated Terminal**.
 

@@ -6,7 +6,7 @@ In this unit, you complete the following tasks:
 
 ## Verify the deployment to AKS
 
-After the app deploys to AKS, the terminal displays a variation of the following message:
+After the app deploys to AKS, the terminal displays the URLs for your app:
 
 ```console
 The eShop-Learn application has been deployed to "http://000.0.000.00" (IP: 000.0.000.00).
@@ -20,14 +20,13 @@ You can begin exploring these services (when ready):
 > [!TIP]
 > You can also find these URLs in the *deployment-urls.txt* file in the root of the GitHub project.
 
-Even though the app has deployed, it might take a few minutes to come online. Take the following steps to verify that the app is deployed and online:
+Even though the app has deployed, it might take a few minutes to come online. While the app is starting up, you might receive an HTTP 503 or 502 response from the server. Retry after about one minute. The [Seq](https://datalust.co/seq) logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
+
+To verify that the app is deployed online and working correctly:
 
 1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
    :::image type="content" source="../media/3-permissions-secrets/health-check.png" alt-text="Screenshot that shows the Health check page." border="true" lightbox="../media/3-permissions-secrets/health-check.png":::
-
-   > [!NOTE]
-   > While the app is starting up, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the :::no-loc text="eShopOnContainers"::: web app. The app home page appears:
 

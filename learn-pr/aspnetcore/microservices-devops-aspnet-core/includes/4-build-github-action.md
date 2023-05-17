@@ -16,13 +16,13 @@ In this unit, you complete the following tasks:
 The `build-and-push-docker-image` job in the GitHub action takes the following steps:
 
 - Executes the xUnit tests for the coupon service.
-- Builds the Docker image and pushes it to a private Azure Container Registry instance used for the modified coupon container image. You don't have permission to modify the Microsoft-owned container registry the original image was retrieved from.
+- Builds the Docker image and pushes it to a private Azure Container Registry instance used for the modified coupon container image. You don't have permission to modify the Microsoft-owned container registry for the original image.
 - Runs three steps in an `ubuntu-latest` runner, two of which use the following actions available from the [GitHub Actions Marketplace](https://github.com/marketplace?type=actions):
   - `Get code from the repository` uses the `actions/checkout@v1` action to check out the `main` branch.
   - `Build and push Docker image` uses the `docker/build-push-action@v1.1.0` action to build the container image and push it to Container Registry.
 
 > [!IMPORTANT]
-> Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice would be kept in a separate repository.
+> Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple in this example. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice would be kept in a separate repository.
 
 Complete the following steps to create the GitHub Actions build action:
 
@@ -124,7 +124,7 @@ To view the real-time progress of the build:
    :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="Screenshot showing output for a successful build." lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
 > [!NOTE]
-> You could move the `dotnet test` command to the *:::no-loc text="Dockerfile":::*. In this example, you run `dotnet test` in GitHub Actions for the following reasons:
+> You could move the `dotnet test` command to the *:::no-loc text="Dockerfile":::*. This example runs `dotnet test` in GitHub Actions so you can:
 >
 > - Understand how to run .NET Core CLI commands in GitHub Actions.
 > - Understand how the failure of a step can prevent execution of the remaining build steps.
