@@ -7,7 +7,6 @@ metadata:
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Create a threat model using data-flow diagram elements
 summary: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and helpful context.
 abstract: |

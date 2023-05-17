@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Threat detection with Microsoft Sentinel analytics
 summary: In this module, you learned how Microsoft Sentinel Analytics can help the SecOps team identify and stop cyber attacks.
 abstract: |

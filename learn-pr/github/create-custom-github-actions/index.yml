@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Create and publish custom GitHub actions
 summary: Learn how to write your own GitHub actions and identify the metadata, syntax, and workflow commands to create custom workflows. Learn best practices for documenting and versioning your action, and how to publish your action to the GitHub Marketplace.
 abstract: |

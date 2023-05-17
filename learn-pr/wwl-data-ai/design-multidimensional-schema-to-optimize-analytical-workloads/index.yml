@@ -7,8 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: synapse-analytics
 title: Analyze data in a relational data warehouse
 summary: Relational data warehouses are a core element of most enterprise Business Intelligence (BI) solutions, and are used as the basis for data models, reports, and analysis.
 abstract: |

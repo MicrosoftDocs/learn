@@ -7,7 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.service: private-5g-core
 title: Introduction to Azure Private 5G Core
 summary: "Learn about the capabilities of Azure Private 5G Core and how you can use it to deploy a private mobile network."
 abstract: |
