@@ -90,7 +90,7 @@ We'll be using the publicly available COVID parquet dataset that is stored on Az
 - Container name: `public`
 - Container full path: `public/curated/covid-19/bing_covid-19_data/latest`
 
-For a complete list of data sources and corresponding prefixes, see the article on [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql?view=sql-server-ver16&tabs=dedicated#location--prefixpathport-3).
+For a complete list of data sources and corresponding prefixes, see the article on [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql?view=sql-server-ver16&preserve-view=true&tabs=dedicated#location--prefixpathport-3).
 
 ```sql
 IF EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'Public_Covid') DROP EXTERNAL DATA SOURCE Public_Covid

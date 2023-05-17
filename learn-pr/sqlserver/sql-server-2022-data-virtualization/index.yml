@@ -2,14 +2,14 @@
 uid: learn.sql-server-2022-data-virtualization
 metadata:
   title: Introduction to SQL Server 2022 data virtualization
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "A Training module that introduces the data virtualization concepts in SQL Server 2022, and the benefits of PolyBase."
   ms.date: 05/16/2023
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: Introduction to SQL Server 2022 data virtualization
-summary: "Data virtualization and enhanced PolyBase features introduced in SQL Server 2022"
+summary: "Data virtualization and enhanced PolyBase features introduced in SQL Server 2022."
 abstract: |
   By the end of this module, you'll be able to:
 

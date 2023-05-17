@@ -47,7 +47,7 @@ S3-compatible object storage solutions can run locally, in your network, in the 
 | [MinIO](https://min.io/solutions/sqlserver) | Multi-Cloud Object Storage |
 | [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) | Pure FlashBlade |
 
-For more information on object storage providers, see [Providers of S3-compatible object storage](sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
+For more information on object storage providers, see [Providers of S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
 
 ## PolyBase installation
 
