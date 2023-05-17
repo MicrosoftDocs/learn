@@ -3,7 +3,7 @@ uid: learn.wwl.run-pipelines-azure-machine-learning
 metadata:
   title: Run pipelines in Azure Machine Learning
   description: "Run pipelines in Azure Machine Learning"
-  ms.date: 04/17/2023
+  ms.date: 05/17/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
