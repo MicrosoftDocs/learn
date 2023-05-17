@@ -16,12 +16,12 @@ abstract: |
   - Securely store sensitive information that GitHub Actions uses.
   - Implement an action to build the container image for a microservice.
   - Modify and commit the microservice code to trigger a build.
-  - Implement an action to deploy a container to an Azure Kubernetes Service (AKS) cluster.
+  - Implement an action to deploy the updated container to an Azure Kubernetes Service (AKS) cluster.
   - Modify and commit a Helm chart to trigger the deployment.
-  - Revert the microservice to a previous deployment.
+  - Revert the microservice to the previous deployment.
 prerequisites: |
   - Conceptual knowledge of DevOps practices.
-  - Conceptual knowledge of containers and AKS.
+  - Conceptual knowledge of containers, Docker, and AKS.
   - Access to an Azure subscription with **Owner** permissions.
   - Access to a GitHub account.
   - Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, including Docker and the necessary Visual Studio Code extensions installed.

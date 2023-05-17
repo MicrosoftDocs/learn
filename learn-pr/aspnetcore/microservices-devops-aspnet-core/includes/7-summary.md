@@ -6,7 +6,7 @@ In this module, you:
 - Modified the coupon service code to trigger a build.
 - Implemented a GitHub action to deploy the coupon service container to the Azure Kubernetes Service (AKS) cluster.
 - Modified the coupon service's Helm chart to trigger a deployment to AKS.
-- Reverted the coupon service to a previous deployment.
+- Reverted the coupon service to the previous deployment.
 
 [!INCLUDE[de-provision your Azure resources](../../includes/microservices/remove-az-resources.md)]
 

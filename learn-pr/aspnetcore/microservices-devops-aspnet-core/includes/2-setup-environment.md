@@ -1,10 +1,10 @@
-In this unit, you use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS). This unit uses a script to keep the focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
+In this unit, you use a script to deploy the existing *:::no-loc text="eShopOnContainers":::* app to Azure Kubernetes Service (AKS). Using a script keeps the focus on the learning objectives. The script outputs colored text to indicate the commands being executed. You can inspect the script and the output to better understand the commands used.
 
-The following diagram shows the app's solution architecture. This module focuses on adding CI/CD for the coupon service microservice.
+The following diagram shows the app's solution architecture. This module focuses on adding continuous integration and continuous deployment (CI/CD) for the coupon microservice.
 
 :::image type="content" source="../media/2-setup-environment/eshop-architecture.png" alt-text="Diagram that shows the eShopOnContainers solution architecture."  border="false" lightbox="../media/2-setup-environment/eshop-architecture.png":::
 
-The quickstart script completes the following steps to deploy a modified version of the [*:::no-loc text="eShopOnContainers":::*](https://github.com/dotnet-architecture/eshoponcontainers) app.
+The quickstart script completes the following steps to deploy an updated version of the [*:::no-loc text="eShopOnContainers":::*](https://github.com/dotnet-architecture/eshoponcontainers) app.
 
 - Provisions AKS and Azure Container Registry resources.
 - Deploys the containers to the fully managed AKS service.
@@ -17,7 +17,7 @@ The quickstart script completes the following steps to deploy a modified version
    - To use GitHub Codespaces, create a new codespace using the `main` branch of your forked repository.
 
    - To use Visual Studio Code:
-     1. Make sure Docker is running. In a new window, press **Ctrl**+**Shift**+**P** to open the command palette.
+     1. Make sure Docker is running. In a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette.
      1. Search for and select **Dev Containers: Clone Repository in Container Volume**, and select **Got it** if prompted.
      1. Select your forked repository and branch. Visual Studio Code creates your development container.
 

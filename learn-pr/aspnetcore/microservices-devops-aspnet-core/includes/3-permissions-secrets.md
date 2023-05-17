@@ -29,7 +29,7 @@ Even though the app has deployed, it might take a few minutes to come online. Ta
    > [!NOTE]
    > While the app is starting up, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which are viewable at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
-1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the :::no-loc text="eShopOnContainers"::: web app. The following page appears:
+1. After all the services are healthy, select the **:::no-loc text="Web SPA application":::** link in the command shell to test the :::no-loc text="eShopOnContainers"::: web app. The app home page appears:
 
     :::image type="content" source="../../media/microservices/eshop-spa.png" alt-text="Screenshot that shows the eShop single page app." border="true" lightbox="../../media/microservices/eshop-spa.png":::
 
@@ -44,7 +44,7 @@ Even though the app has deployed, it might take a few minutes to come online. Ta
 
    1. Select **:::no-loc text="PLACE ORDER":::** to complete the purchase.
 
-You've verified that the app successfully deployed to AKS and is working properly. The coupon service supports the discount code feature. Next, you build a CI/CD pipeline to automate the build and deployment of the coupon service.
+You've verified that the app successfully deployed to AKS and is working properly, and that the coupon service supports the discount code feature. Next, you build a CI/CD pipeline to automate the build and deployment of the coupon service.
 
 ## Create a service principal to deploy from GitHub
 
@@ -86,13 +86,13 @@ GitHub Actions publishes the container image to Azure Container Registry, so the
    > [!NOTE]
    > The deprecated `--sdk-auth` warning is a known issue.
 
-1. Copy the preceding JSON output and brackets. You use this JSON information in the next step.
+1. Copy the JSON output and brackets to use in the next step.
 
 ## Create the secrets
 
-The GitHub Actions runner uses credentials to interact with Container Registry and AKS. The service principal and the credentials for the container registry are sensitive information. It's best to store sensitive information as encrypted *secrets* in a secure location.
+The GitHub Actions runner uses credentials to interact with Container Registry and AKS. The service principal and the credentials for the container registry are sensitive information. It's best to store sensitive information as encrypted *secrets* in a secure location. GitHub provides a built-in location to store secrets and other variables.
 
-Complete the following steps to securely store the sensitive information as environment variables in your repository. Repository administrators should manage the secrets for the GitHub Actions runner to access.
+Complete the following steps to securely store the sensitive information as environment variables in your repository. Repository administrators should manage the secrets that the GitHub Actions runner can access.
 
 1. In your forked GitHub repository, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets and variables":::** > **:::no-loc text="Actions":::**.
 1. On the **:::no-loc text="Actions secrets and variables":::** page, select **:::no-loc text="New repository secret":::**.
