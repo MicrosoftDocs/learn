@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Understand app management using Microsoft Intune
 summary: As part of application management, Microsoft Intune helps you configure apps, protect app data, manage app policy assignments, and implement app security rules. 
 abstract: | 

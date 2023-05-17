@@ -7,7 +7,6 @@ metadata:
   author: cynthn
   ms.author: cynthn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Keep your virtual machines updated
 summary: Deploy the Azure Update Management solution to update virtual machines in your cloud environment.
 abstract: |

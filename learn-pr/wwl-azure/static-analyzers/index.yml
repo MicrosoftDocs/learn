@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Static analyzers
 summary: This module introduces the static analyzers SonarCloud and CodeQL in GitHub.
 abstract: |

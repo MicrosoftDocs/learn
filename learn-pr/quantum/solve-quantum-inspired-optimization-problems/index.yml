@@ -7,7 +7,6 @@ metadata:
   author: bradben
   ms.author: brbenefield
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Solve optimization problems by using quantum-inspired optimization
 summary: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
 abstract: |

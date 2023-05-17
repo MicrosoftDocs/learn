@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Explore monitoring requirements of Azure for SAP workloads
 summary: This module covers monitoring of data from several Azure systems and tools to support SAP on Azure workloads.
 abstract: |

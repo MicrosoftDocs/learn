@@ -8,7 +8,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: bicep
 title: Share Bicep modules by using private registries
 summary: |
   Reuse Bicep modules to reduce code duplication and increase the quality of your deployments.

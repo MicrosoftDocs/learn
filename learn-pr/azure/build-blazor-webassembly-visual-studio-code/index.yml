@@ -7,7 +7,8 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: aspnet-core
+  ms.technology: aspnetcore-blazer
 title: Build a web app with Blazor
 summary: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
 abstract: | 

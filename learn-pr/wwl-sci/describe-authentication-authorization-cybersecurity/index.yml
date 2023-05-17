@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe authentication and authorization in cybersecurity
 summary: Secure authentication and authorization are a cornerstone of protecting against cybersecurity threats. Learn about common identity-based attacks, different authentication methods, and ways to protect against unauthorized access.
 abstract: |

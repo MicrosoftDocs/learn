@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-search
 title: Search data outside the Azure platform in Azure Cognitive Search using Azure Data Factory
 summary: Use Azure Data Factory to add data that resides inside or outside the Azure platform into your search indexes.
 abstract: |

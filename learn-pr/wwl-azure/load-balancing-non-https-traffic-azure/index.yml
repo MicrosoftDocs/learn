@@ -8,7 +8,7 @@ metadata:
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.custom: references_regions
-  ms.prod: learning-azure
+  ms.service: load-balancer
 title: Load balance non-HTTP(S) traffic in Azure
 summary: You learn the different load balancer options in Azure and how to choose and implement the right Azure solution for non-HTTP(S) traffic.
 abstract: |

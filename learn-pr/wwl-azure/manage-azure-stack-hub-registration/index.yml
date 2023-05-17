@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hub
 title: Manage Azure Stack Hub registration
 summary: 'Certificates with appropriate DNS names for each Azure Stack Hub public infrastructure endpoint are necessary. This module helps you to prepare for Exam AZ-600: Configuring and Operating a Hybrid Cloud with Microsoft Azure Stack Hub.'
 abstract: |
