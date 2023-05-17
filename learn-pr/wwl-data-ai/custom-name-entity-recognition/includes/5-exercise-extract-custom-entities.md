@@ -102,16 +102,15 @@ After you've labeled your data, you need to train your model.
 
 In real world applications, it's important to evaluate and improve your model to verify it's performing as you expect. Two pages on the left show you the details of your trained model, and any testing that failed.
 
-1. Select **View model details** and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
-2. Select **Improve model**. Your model is already selected in the drop-down, and it defaults to show incorrect predictions only. Toggle that selection to see the documents you indicated for testing and what was extracted.
+1. Select **Model performance** on the left side menu, and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
 
 ## Deploy your model
 
 When you're satisfied with the training of your model, it's time to deploy it, which allows you to start extracting entities through the API.
 
-1. On the left panel, select **Deploying model**
+1. On the left panel, select **Deploying a model**
 2. Select **Add deployment**, then enter the name `customExtractAds` and select `ExtractAds` from the model drop-down
-3. Click **Submit** to deploy your model
+3. Click **Deploy** to deploy your model
 
 ## Send entity recognition task to your model
 
