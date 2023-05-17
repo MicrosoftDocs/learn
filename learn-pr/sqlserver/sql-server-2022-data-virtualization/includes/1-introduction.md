@@ -1,10 +1,10 @@
-Data virtualization in SQL Server 2022 integrates data at query time, without replicating or moving the original data. It is the ability to access the data where it lives.
+Data virtualization in SQL Server 2022 integrates data at query time, without replicating or moving the original data. It's the ability to access the data where it lives.
 
 The following figure shows the full extent of data virtualization support in SQL Server 2022.
 
 :::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2022.":::
 
-In this training module, we'll go over the data virtualization options in SQL Server 2022, including topics about:
+In this training module, we'll go over the data virtualization options in SQL Server 2022, including:
 
 - PolyBase
 - REST API connectors such as Azure Data Lake Storage, Azure Blob storage, and S3 compatible object storage that allow for new access with data virtualization
@@ -16,7 +16,7 @@ Data virtualization relies on three principles:
 
 - **Data abstraction:** hides the complexities of accessing data from the underlying data system, their formats and structures.
 
-- **Zero replication:** Unlike traditional ETL, data virtualization does not need to “collect” the data into a separate repository to transform it to the destination format. It handles transformation and aggregation on-the-fly.
+- **Zero replication:** Unlike traditional ETL, data virtualization doesn't need to collect the data into a separate repository to transform it to the destination format. It handles transformation and aggregation on-the-fly.
 
 - **Real-time data:** Since data virtualization connects to the data source on-the-fly, it always delivers the latest available data.
 
