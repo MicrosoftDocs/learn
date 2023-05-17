@@ -16,7 +16,7 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: Standard S pricing tier
     - **Storage account**: Create new
-      - **Name**: CustomNER
+      - **Name**: *Enter a unique name*
       - **Account kind**: Storage (general purpose v1)
       - **Performance**: Standard
       - **Replication**: Locally redundant storage (LRS)
