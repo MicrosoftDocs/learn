@@ -1,3 +1,4 @@
+
 The following private package sources will give you a starting point for finding the most relevant feeds.
 
 ## Private
@@ -17,69 +18,10 @@ There are two options for private feeds:
 
 The following table contains a non-exhaustive list of self-hosting options and SaaS offerings to host package privately feeds for each type covered.
 
-:::row:::
-  :::column:::
-    **Package type**
-  :::column-end:::
-  :::column:::
-    **Self-hosted private feed**
-  :::column-end:::
-  :::column:::
-    **SaaS private feed**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    NuGet
-  :::column-end:::
-  :::column:::
-    NuGet server
-  :::column-end:::
-  :::column:::
-    Azure Artifacts, MyGet
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    NPM
-  :::column-end:::
-  :::column:::
-    Sinopia, CNPMjs, Verdaccio
-  :::column-end:::
-  :::column:::
-    [NPMjs](https://www.npmjs.com/), MyGet, Azure Artifacts
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Maven
-  :::column-end:::
-  :::column:::
-    Nexus, Artifactory, Archivia
-  :::column-end:::
-  :::column:::
-    Azure Artifacts, Bintray, JitPack
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Docker
-  :::column-end:::
-  :::column:::
-    Portus, Quay, Harbor
-  :::column-end:::
-  :::column:::
-    Docker Hub, Azure Container Registry, Amazon Elastic Container Registry
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Python
-  :::column-end:::
-  :::column:::
-    PyPI Server
-  :::column-end:::
-  :::column:::
-    Gemfury
-  :::column-end:::
-:::row-end:::
+| **Package type** | **Self-hosted private feed** | **SaaS private feed**                                                   |
+| ---------------- | ---------------------------- | ----------------------------------------------------------------------- |
+| NuGet            | NuGet server                 | Azure Artifacts, MyGet                                                  |
+| NPM              | Sinopia, CNPMjs, Verdaccio   | [NPMjs](https://www.npmjs.com/), MyGet, Azure Artifacts                 |
+| Maven            | Nexus, Artifactory, Archivia | Azure Artifacts, Bintray, JitPack                                       |
+| Docker           | Portus, Quay, Harbor         | Docker Hub, Azure Container Registry, Amazon Elastic Container Registry |
+| Python           | PyPI Server                  | Gemfury                                                                 |
