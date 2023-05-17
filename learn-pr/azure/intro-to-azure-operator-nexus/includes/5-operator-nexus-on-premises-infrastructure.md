@@ -2,6 +2,8 @@ The Operator Nexus hardware architecture is designed to support the requirements
 
 Keeping abreast of hardware evolution entails a thoughtful balance between supporting the latest hardware technology and allowing the rapid delivery of new software features. This approach may entail introducing bundles of new hardware on a consistent and predictable timeline. This approach reduces the certification timeline by minimizing the number of SKUs required.
 
+:::image type="content" source="../media/multi-rack-architecture.png" alt-text="Screenshot of Operator Nexus system comprising on-premises infrastructure and workload racks that include off-the-shelf COTS servers." border="false":::
+
 The Operator Nexus BOM uses a refreshed rack hardware design over the earlier generations of Network Cloud. It:
 
 - Reduces the number of different network elements by using a single network device that can support a TOR-only configuration or CE/TOR configuration.

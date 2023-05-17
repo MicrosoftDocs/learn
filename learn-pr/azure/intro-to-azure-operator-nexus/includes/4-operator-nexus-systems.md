@@ -35,6 +35,8 @@ For **observability**, Operator Nexus automatically streams metrics and logs fro
 
 Log Analytics has a rich analytical tool set that operators can use for troubleshooting or correlating for operational insights. Azure Monitor allows operators to specify alerts.
 
+:::image type="content" source="../media/nexus-architecture.png" alt-text="Screenshot of Operator Nexus system comprising on-premises infrastructure and workload racks that include off-the-shelf COTS servers." border="false":::
+
 ### Host-level software components
 
 #### Host operating system (OS)
