@@ -10,6 +10,45 @@ SQL Server 2022 now supports CSV, Parquet, and Deltafiles stored on Azure Storag
 
 SQL Server 2022 can now use `Create External Table as Select` (CETAS), together with commands like `OPENROWSET`, `Create External Table`  (CET), and all the new T-SQL enhancements, making SQL Server 2022 a powerful data hub.
 
+## S3-compatible object storage
+
+SQL Server 2022 introduces object storage integration to the data platform, enabling you to integrate SQL Server with S3-compatible object storage in addition to Azure Storage. To provide this integration, SQL Server has been enhanced with a new S3 connector, which uses the S3 REST API to connect to any provider of S3-compatible object storage.  
+
+Object storage, also known as object-based storage, is a strategy that manages and manipulates data storage as distinct units, called objects. These objects are kept in a single storehouse and are not ingrained in files inside other folders. Instead, object storage combines the pieces of data that make up a file, adds all its relevant metadata to that file, and attaches a custom identifier.
+
+Some of the main differences of object storage compared to traditional file system are:
+
+- Compared to file system, object storage keeps metadata embedded on the file.
+
+- Files can have different attributes, like tags.
+
+- Object storage inn general, are the go-to solution for Big Data, Machine Learning, and Analytics platforms.
+
+- Object storage are a more cost-effective solution to scale and easier to maintain.
+
+- Object storage is optimized for Big Data, Internet of Things (IoT) workloads, and large amounts of data.
+
+- Object storage is not recommended for high transactional workloads.
+
+Amazon Web Services (AWS) established the S3 standard, the framework. Now S3-compatible object storage solutions are being offered by every major storage provider, like Cloudian, Dell, MinIO, PureStorage, just to name a few. If the solution offers compatibility with S3 REST APIs, it'll be compatible with SQL Server 2022.  
+
+Some object storage partners offer the ability to run their solution as software, capable of virtualizing your current storage. You can install and try on your own laptop or even a virtual machine.
+
+Object storage can be used for data virtualization, and also for backup and restore scenarios through the use of the `BACKUP TO URL` command. For more information, see [SQL Server backup and restore with S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
+
+S3-compatible object storage solutions can run locally, in your network, in the cloud, or in a hybrid environment. For more information about object storage, benefits, how to install, guides and how to test it, check some of our storage partners websites:
+
+| Provider | Solution |
+|--|--|
+| [Cloudian](https://cloudian.com/sql) | HyperStore |
+| [Dell](https://www.dell.com/en-us/dt/products-solutions/trial-software-download/eula/isilonsoftwaredownload.htm) | Isildon OneFS |
+| [Dell](https://github.com/EMCECS/ECS-CommunityEdition) | ECS Community Edition |
+| [Hitachi](https://www.hitachivantara.com/en-us/pdf/white-paper/microsoft-sql-server-2022-with-hcp-backup-to-object-polybase-validation.pdf) | Hitachi Content Platform (HCP) |
+| [MinIO](https://min.io/solutions/sqlserver) | Multi-Cloud Object Storage |
+| [Pure Storage](https://www.purestorage.com/products/unstructured-data-storage/flashblade-s.html) | Pure FlashBlade |
+
+For more information on object storage providers, see [Providers of S3-compatible object storage](sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage#providers-of-s3-compatible-object-storage).
+
 ## PolyBase installation
 
 PolyBase can be installed with the SQL Server installation executable during initial setup, or added as a feature later on. On the **Feature Selection** page of the SQL Server setup.exe, select **PolyBase Query Service for External Data**.

@@ -4,11 +4,11 @@ The following figure shows the full extent of data virtualization support in SQL
 
 :::image type="content" source="../media/sql-server-2022-data-virtualization.png" alt-text="Diagram of the data virtualization options in SQL Server 2022.":::
 
-In this training module, we'll go over the data virtualization options offered in SQL Server 2022, including topics about:
+In this training module, we'll go over the data virtualization options in SQL Server 2022, including topics about:
 
 - PolyBase
 - REST API connectors such as Azure Data Lake Storage, Azure Blob storage, and S3 compatible object storage that allow for new access with data virtualization
-- T-SQL for data virtualization
+- Transact-SQL (T-SQL) used for data virtualization, including OPENROWSET, CREATE EXTERNAL TABLE (CET), and CREATE EXTERNAL TABLE as SELECT (CETAS)
 
 ## Principles of data virtualization
 
@@ -51,15 +51,12 @@ Data virtualization use cases:
 By the end of this module, you'll be able to:
 
 - Understand the benefits and principles of data virtualization
-- The evolution of PolyBase starting with SQL Server 2016 through SQL Server 2022
-- Enable and use the PolyBase feature
+- Know what PolyBase is, and how you can leverage its capabilities
+- Be familiar with object storage solutions
+- Install and configure PolyBase on SQL Server 2022
+- Access external data on SQL Server 2022 using PolyBase
 
 ## Prerequisites
 
 - Basic working knowledge of SQL Server
 - Fundamental knowledge of the T-SQL language and be able to execute queries in SQL Server Management Studio on a SQL Server 2022 instance
-
-## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

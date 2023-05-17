@@ -1,7 +1,7 @@
 In this exercise, you'll: 
 
 - Enable the PolyBase feature.
-- Create a database called `Chapter2_Demo1`.
+- Create a database called `Demo1`.
 - Create a database master key to secure the database scoped credential.
 - Create a database scoped credential to access the data source.
 - Create the data source.
@@ -28,25 +28,25 @@ RECONFIGURE;
 
 ## Create a database
 
-Run the following command in SSMS to create a database named `Chapter2_Demo1` for this exercise.
+Run the following command in SSMS to create a database named `Demo1` for this exercise.
 
 ```sql
 USE MASTER
 GO
-IF EXISTS (SELECT * FROM sys.databases WHERE [name] = 'Chapter2_Demo1')
+IF EXISTS (SELECT * FROM sys.databases WHERE [name] = 'Demo1')
 BEGIN
-    ALTER DATABASE Chapter2_Demo1 SET SINGLE_USER WITH ROLLBACK IMMEDIATE
-    DROP DATABASE IF EXISTS Chapter2_Demo1
+    ALTER DATABASE Demo1 SET SINGLE_USER WITH ROLLBACK IMMEDIATE
+    DROP DATABASE IF EXISTS Demo1
 END
 GO
-CREATE DATABASE Chapter2_Demo1
+CREATE DATABASE Demo1
 GO
 
-USE Chapter2_Demo1
+USE Demo1
 GO
 ```
 
-If the database was already created before, the script will drop and recreate the database with the name `Chapter2_Demo1`.
+If the database was already created before, the script will drop and recreate the database with the name `Demo1`.
 
 ## Create the database master key
 
@@ -56,7 +56,7 @@ A database master key must be created to ensure the database scoped credential s
 DECLARE @randomWord VARCHAR(64) = NEWID();
 DECLARE @createMasterKey NVARCHAR(500) = N'
 IF NOT EXISTS (SELECT * FROM sys.symmetric_keys WHERE name = ''##MS_DatabaseMasterKey##'')
-	CREATE MASTER KEY ENCRYPTION BY PASSWORD = '  + QUOTENAME(@randomWord, '''')
+    CREATE MASTER KEY ENCRYPTION BY PASSWORD = '  + QUOTENAME(@randomWord, '''')
 EXECUTE sp_executesql @createMasterKey
 GO
 SELECT * FROM sys.symmetric_keys
@@ -69,8 +69,8 @@ The database scoped credential is responsible for storing the credentials that w
 
 ```sql
 IF EXISTS (SELECT * FROM sys.database_scoped_credentials WHERE name = 'PublicCredential') 
-	DROP DATABASE SCOPED CREDENTIAL PublicCredential
-GO	
+    DROP DATABASE SCOPED CREDENTIAL PublicCredential
+GO
 
 CREATE DATABASE SCOPED CREDENTIAL PublicCredential
 WITH IDENTITY = 'SHARED ACCESS SIGNATURE',
@@ -80,7 +80,7 @@ GO
 
 ## Create the data source
 
-We’ll be using the publicly available COVID parquet dataset that is stored on Azure Blob storage (ABS). We'll also be using the previously created database scoped credential `PublicCredential` to establish the connection.
+We'll be using the publicly available COVID parquet dataset that is stored on Azure Blob storage (ABS). We'll also be using the previously created database scoped credential `PublicCredential` to establish the connection.
 
 **LOCATION** values:
 
@@ -90,11 +90,11 @@ We’ll be using the publicly available COVID parquet dataset that is stored on 
 - Container name: `public`
 - Container full path: `public/curated/covid-19/bing_covid-19_data/latest`
 
-For a complete list of data sources and corresponding prefixes, see [Supported Data Sources].
+For a complete list of data sources and corresponding prefixes, see the article on [CREATE EXTERNAL DATA SOURCE](/sql/t-sql/statements/create-external-data-source-transact-sql?view=sql-server-ver16&tabs=dedicated#location--prefixpathport-3).
 
 ```sql
 IF EXISTS (SELECT * FROM sys.external_data_sources WHERE name = 'Public_Covid') DROP EXTERNAL DATA SOURCE Public_Covid
-GO	
+GO
 
 CREATE EXTERNAL DATA SOURCE Public_Covid
 WITH (
@@ -111,18 +111,18 @@ To access and explore the data, we can use OPENROWSET. OPENROWSET is optimized f
 **OPENROWSET** values:
 
 - BULK: file name and extension, BULK will automatically append with the data information from the data source. This means the full file location is `abs://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest/bing_covid-19_data.parquet`
-- FORMAT: since we’ll be accessing a Parquet file, the format should be `PARQUET`.
+- FORMAT: since we'll be accessing a Parquet file, the format should be `PARQUET`.
 - Data source: This is the connection information. In this case, our newly created data source `Public_Covid`.
 
 For more information on the public dataset, see [Bing COVID-19](/azure/open-datasets/dataset-bing-covid-19).
 
 ```sql
-SELECT  TOP 1000 *
+SELECT TOP 1000 *
 FROM OPENROWSET 
-    (BULK 'bing_covid-19_data.parquet'
-    , FORMAT = 'PARQUET'
-    , DATA_SOURCE = 'Public_Covid')
-    as [COVID_Dataset]
+     (BULK 'bing_covid-19_data.parquet'
+     , FORMAT = 'PARQUET'
+     , DATA_SOURCE = 'Public_Covid')
+     AS [COVID_Dataset]
 ```
 
 ## Manipulate the data
@@ -131,20 +131,19 @@ Run the following command in SSMS:
 
 ```sql
 SELECT [COVID_Dataset].admin_region_1, 
-	   SUM(CAST([COVID_Dataset].confirmed AS BIGINT)) AS Confirmed
+       SUM(CAST([COVID_Dataset].confirmed AS BIGINT)) AS Confirmed
 FROM OPENROWSET 
-    (BULK 'bing_covid-19_data.parquet'
-    , FORMAT = 'PARQUET'
-    , DATA_SOURCE = 'Public_Covid')
-    AS [COVID_Dataset]
-WHERE  [COVID_Dataset].country_region = 'United States' AND 
-	   [COVID_Dataset].admin_region_1  IS NOT NULL
+     (BULK 'bing_covid-19_data.parquet'
+     , FORMAT = 'PARQUET'
+     , DATA_SOURCE = 'Public_Covid')
+     AS [COVID_Dataset]
+WHERE [COVID_Dataset].country_region = 'United States' AND 
+      [COVID_Dataset].admin_region_1  IS NOT NULL
 GROUP BY [COVID_Dataset].admin_region_1 
 ORDER BY confirmed DESC
 ```
 
-We can see in this case that we can leverage all the T-SQL flexibility and query the Parquet file in real-time, as if it is a regular table.
-As mentioned before, OPENROWSET is optimized for ad-hoc execution for data exploration. If recurring access is needed, external tables are usually best suited since they can also leverage statistics.
+We can see in this case that we can use all of T-SQL's flexibility and query the Parquet file in real-time, as if it's a regular table. As mentioned before, OPENROWSET is optimized for ad-hoc execution for data exploration. If recurring access is needed, external tables are best suited since they can also leverage statistics.
 
 ## Schema discovery of external table
 
@@ -198,21 +197,21 @@ CREATE EXTERNAL TABLE ext_covid_data
 ( 
 id					int,	
 updated				date,
-confirmed				int,
-confirmed_change			int,
-deaths					int,
-deaths_change				smallint,
-recovered				int,
-recovered_change			int,
-latitude				float,
-longitude				float,
-iso2					varchar(8000),
-iso3					varchar(8000),
-country_region			varchar(8000),
-admin_region_1			varchar(8000),
-iso_subdivision			varchar(8000),
-admin_region_2			varchar(8000),
-load_time				datetime2(7)
+confirmed			int,
+confirmed_change	int,
+deaths				int,
+deaths_change		smallint,
+recovered			int,
+recovered_change	int,
+latitude			float,
+longitude			float,
+iso2				varchar(8000),
+iso3				varchar(8000),
+country_region		varchar(8000),
+admin_region_1		varchar(8000),
+iso_subdivision		varchar(8000),
+admin_region_2		varchar(8000),
+load_time			datetime2(7)
 )
 WITH 
 (

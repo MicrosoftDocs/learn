@@ -19,7 +19,7 @@ The following illustrates the database relationship with PolyBase objects.
 
 Another way of understanding PolyBase workflow is through the diagram below:
 
-:::image type="content" source="../media/polybase-objects.png" alt-text="An image of PolyBase workflow.":::
+:::image type="content" source="../media/polybase-workflow.png" alt-text="An image of PolyBase workflow.":::
 
 ## Supported PolyBase data sources
 
@@ -54,8 +54,8 @@ For Delta files, SQL Server can read it, but it cannot export a table result as 
 
 PolyBase uses three operators to query or virtualize the data:
 
-- **OPENROWSET**: Lightweight command that allows the SQL engine to access data outside of SQL Server, either a file or another database. Recommended for loading data or data exploration, optimized for ad-hoc execution. For more information, see [OPENROWSET (Transact-SQL)](/sql/t-sql/functions/openrowset-transact-sql).
+- **OPENROWSET**: OPENROWSET is a lightweight command that allows the SQL engine to access data outside of SQL Server, either a file or another database. OPENROWSET is recommended for loading data or data exploration, optimized for ad-hoc execution. For more information, see [OPENROWSET (Transact-SQL)](/sql/t-sql/functions/openrowset-transact-sql).
 
-- **CREATE EXTERNAL TABLE (CET):** Creates a table where the data stays in its original location outside of SQL Server. When the table is selected, the SQL engine will provide the requested data to the user. External table benefits from reusability and can leverage the use of statistics for better performance. For more information, see [CREATE EXTERNAL TABLE (Transact-SQL)](/sql/t-sql/statements/create-external-table-transact-sql).
+- **CREATE EXTERNAL TABLE (CET):** The CET command creates a table where the data stays in its original location outside of SQL Server. When the table is selected, the SQL engine will provide the requested data to the user. External table benefits from reusability and can leverage the use of statistics for better performance. For more information, see [CREATE EXTERNAL TABLE (Transact-SQL)](/sql/t-sql/statements/create-external-table-transact-sql).
 
-- **CREATE EXTERNAL TABLE as SELECT (CETAS):** It performs a combination of operations in a single command. First, CETAS allows SQL Server to transform and convert a given data stored inside or outside the database. Second, it then exports the data to a different location, either a network location or Azure. Finally, it creates an external table targeting the newly exported data. For more information, see [CREATE EXTERNAL TABLE AS SELECT (Transact-SQL)](/sql/t-sql/statements/create-external-table-as-select-transact-sql).
+- **CREATE EXTERNAL TABLE as SELECT (CETAS):** CETAS performs a combination of operations in a single command. First, CETAS allows SQL Server to transform and convert a given data stored inside or outside the database. Second, it then exports the data to a different location, either a network location or Azure. Finally, it creates an external table targeting the newly exported data. We will go over CETAS and it's use cases in a later unit. For more information, see [CREATE EXTERNAL TABLE AS SELECT (Transact-SQL)](/sql/t-sql/statements/create-external-table-as-select-transact-sql).
