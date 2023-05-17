@@ -10,7 +10,7 @@ On Windows client (Windows 10 or Windows 11) you can install Docker Desktop. Doc
 
 When troubleshooting a Windows container environment, it's important to keep in mind the different levels of interactions that take place from when you specify a command (i.e.: start a container) from the GUI or CLI all the way down to the Operating System.
 
-:::image type="content" source="../media/1-windows-container-architecture.png" alt-text="Diagram showing Windows container architecture.":::
+:::image type="content" source="../media/1-windows-container-architecture.png" alt-text="Diagram that shows the components that are called when the Orchestrator requests an action on the Operating System.":::
 
 ## Host Compute Service (HCS)
 

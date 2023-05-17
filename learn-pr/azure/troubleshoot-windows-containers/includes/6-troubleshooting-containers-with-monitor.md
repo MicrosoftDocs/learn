@@ -2,7 +2,9 @@
 
 First, we need to understand what type of logs, metrics does AKS generate. These can be structured as layers.
 
-:::image type="content" source="../media/6-aks-logs-structure.png" alt-text="Diagram that shows AKS log metrics." lightbox="../media/6-aks-logs-structure.png":::
+:::image type="complex" border="false" source="../media/6-aks-logs-structure.png" alt-text="Diagram that shows the different levels of components that need to be managed." lightbox="../media/6-aks-logs-structure.png":::
+   Diagram that shows the different levels of components that need to be managed, their description and what are the monitoring requirements for each one.
+:::image-end:::
 
 Out of the box, AKS offers some basic monitoring (cpu, disk, memory) around nodes, but it's not very useful to understand possible issues in your cluster or applications. To have visibility across containerized application, cluster health, audit logs, etc. setting up Container insights is recommended.
 
@@ -12,7 +14,9 @@ Below are some of the components of an Azure Monitor solution that help you trou
 
 Container insights is a feature designed to monitor the performance of container workloads deployed to the cloud. It gives you performance visibility by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API. After you enable monitoring from Kubernetes clusters, metrics and Container logs are automatically collected for you through a containerized version of the Log Analytics agent. Below you can see a high-level overview of the Container Insights architecture.
 
-:::image type="content" source="../media/6-container-insights.png" alt-text="Diagram that shows a high-level overview of the Container Insights architecture." lightbox="../media/6-container-insights.png":::
+:::image type="complex" border="false" source="../media/6-container-insights.png" alt-text="Diagram that shows the different components managed by Container Insights." lightbox="../media/6-container-insights.png":::
+   Diagram that shows the different components managed by Container Insights, where the data is stored, and actions that can be performed for troubleshooting purposes.
+:::image-end:::
 
 Enabling Container Insights requires having a Log Analytics workspace and an Azure Monitoring workspace with an Azure Managed Grafana.
 
@@ -40,7 +44,9 @@ Let's go over troubleshooting the application/container first:
 
 ## Container
 
-:::image type="content" source="../media/6-application-container-insights.png" alt-text="Screenshot of application insights with Container view is selected." lightbox="../media/6-application-container-insights.png":::
+:::image type="complex" border="false" source=" ../media/6-application-container-insights.png" alt-text="Screenshot of the Azure portal showing the Container Insights pane." lightbox="../media/6-application-container-insights.png":::
+   Screenshot of the Azure portal showing the Container Insights pane. The Containers tab, the selected container, and the options on the Live Events tab are highlighted.
+:::image-end:::
 
 One way you can check your running container, is by going to the insights tab on the left side blade, Containers view and selecting your container. By doing this, you gain quick information over the container, its logs and events. For example, if you enabled Log Monitor on an IIS instance running on AKS, you can see the IIS events directly on the Azure portal.
 
@@ -48,15 +54,17 @@ One way you can check your running container, is by going to the insights tab on
 
 To get the logs from the control plane components, you need to enable Diagnostic Settings, as in the image below:
 
-:::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of Diagnostic settings. The Add diagnostic setting button is highlighted." lightbox="../media/6-enable-diagnostic-settings.png":::
+:::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic settings pane. The link to + Add diagnostic setting is highlighted." lightbox="../media/6-enable-diagnostic-settings.png":::
 
 Highlighted below are the most important control plane components. Make sure you select to push to the Log Analytics Workspace and select the desired one.
 
-:::image type="content" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of Diagnostic settings. Kubernetes API Server, Kubernetes Controller Manager, Kubernetes Scheduler categories are selected."  lightbox="../media/6-control-plane-diagnostic-settings.png":::
+:::image type="complex" border="false" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic setting configuration pane." lightbox="../media/6-control-plane-diagnostic-settings.png":::
+   Screenshot of the Azure portal showing the Diagnostic setting configuration pane. The categories Kubernetes API Server, Kubernetes Controller Manager, and Kubernetes Scheduler are highlighted along with the destination details of Send to Log Analytics workspace, and the workspace name.
+:::image-end:::
 
 After this, you can query the logs in the Logs view:
 
-:::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of Logs view with query and results shown." lightbox="../media/6-container-logs-query.png":::
+:::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of the Azure portal showing the Logs pane. The query AzureDiagnostics | where Category == 'kube-scheduler' is highlighted." lightbox="../media/6-container-logs-query.png":::
 
 ## Windows Exporter on Azure Kubernetes Service
 
@@ -64,4 +72,4 @@ Another option to monitor your Windows AKS nodes is by using the windows-exporte
 
 Once you have Prometheus configured and Windows-exporter enabled, the Windows node related data should be in your Azure Monitor Workspace. You can use a Grafana dashboard to see the relevant metrics you enabled for your Windows node:
 
-:::image type="content" source="../media/6-grafana-dashboard.png" alt-text="Screenshot of Windows Exporter." lightbox="../media/6-grafana-dashboard.png":::
+:::image type="content" source="../media/6-grafana-dashboard.png" alt-text="Screenshot of the Grafana dashboard. The server name akswin000000 is highlighted." lightbox="../media/6-grafana-dashboard.png":::

@@ -2,7 +2,7 @@
 
 Kubernetes is formed from controlplanes and workers. Controlplanes are responsible serving k8s api, scheduling containers, storing cluster state, controller manager. The workers got kubelet, kube-proxy, and the runtime. Below is a high-level overview of the Kubernetes architecture.
 
-:::image type="content" source="../media/5-kubernetes-cluster.png" alt-text="Diagram showing Kubernetes controlplanes and workers in Kubernetes architecture.":::
+:::image type="content" source="../media/5-kubernetes-cluster.png" alt-text="Diagram that shows the components of the Kubernetes control plane and the worker nodes.":::
 
 Managing Kubernetes can get tricky. Azure Kubernetes Services (AKS) helps you manage the overhead involved, reducing complexity and management tasks, such as upgrades. In the next sections, we'll explore Kubernetes components and how you can troubleshoot each of them. Keep in mind that AKS abstracts a lot of the infrastructure for you, but you're still responsible for worker nodes and troubleshooting the applications on top of an AKS cluster.
 
