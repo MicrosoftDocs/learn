@@ -40,12 +40,12 @@ sp_configure 'allow polybase export'
 
 In order to use CETAS, you need permission on three different levels:
 
-1. Permission to access and read the source of the data.
-   - If the data resides outside of SQL Server, either on a network share or another database server, the SQL Server service account must have permissions to access the data source.
-1. Permission on SQL Server 2022 for the user to use the CETAS command.
-   - In order for the database user to execute the CETAS command, they need the **ADMINISTER BULK OPERATIONS**, **ALTER ANY EXTERNAL DATA SOURCE**, and **ALTER ANY EXTERNAL FILE FORMAT** permissions.
-1. Permission on the destination in which you'll write the result of CETAS.
-   - To be able to write to the destination of the CETAS command, Parquet, or CSV file, you'll need *write* permissions on the destination. For example, to write to a Azure Blob Storage or Azure Data Lake Storage Gen2, you'll need the **LIST**, **READ**, **CREATE**, and **WRITE** permissions on those destinations.
+- Permission to access and read the source of the data.
+  - If the data resides outside of SQL Server, either on a network share or another database server, the SQL Server service account must have permissions to access the data source.
+- Permission on SQL Server 2022 for the user to use the CETAS command.
+  - In order for the database user to execute the CETAS command, they need the **ADMINISTER BULK OPERATIONS**, **ALTER ANY EXTERNAL DATA SOURCE**, and **ALTER ANY EXTERNAL FILE FORMAT** permissions.
+- Permission on the destination in which you'll write the result of CETAS.
+  - To be able to write to the destination of the CETAS command, Parquet, or CSV file, you'll need *write* permissions on the destination. For example, to write to an Azure Blob Storage or Azure Data Lake Storage Gen2, you'll need the **LIST**, **READ**, **CREATE**, and **WRITE** permissions on those destinations.
 
 For more information about permissions for CETAS, see [CREATE EXTERNAL TABLE AS SELECT (CETAS) Permissions](/sql/t-sql/statements/create-external-table-as-select-transact-sql#permissions).
 

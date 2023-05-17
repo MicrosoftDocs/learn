@@ -24,7 +24,7 @@ Some of the main differences of object storage compared to traditional file syst
 
 - Object storage in general, are the go-to solution for Big Data, Machine Learning, and analytics platforms.
 
-- Object storage are a more cost-effective solution to scale and easier to maintain.
+- Object storage is a more cost-effective solution to scale and easier to maintain.
 
 - Object storage is optimized for Big Data, Internet of Things (IoT) workloads, and large amounts of data.
 

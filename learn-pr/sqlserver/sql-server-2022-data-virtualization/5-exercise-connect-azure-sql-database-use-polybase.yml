@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-sqlserver
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-exercise-connect-azure-sql-database-using-polybase.md)]
+  [!include[](includes/5-exercise-connect-azure-sql-database-use-polybase.md)]

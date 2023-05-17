@@ -38,7 +38,7 @@ Major benefits of data virtualization:
 
 Data virtualization use cases:
 
-- **Data hub:** SQL Server can be used as a centralized hub that connects, protects, and query different data sources and files, hiding all the complexity of the application. There's no need to use an ETL tool to aggregate and to copy or move the data to a stagging area.
+- **Data hub:** SQL Server can be used as a centralized hub that connects, protects, and query different data sources and files, hiding all the complexity of the application. There's no need to use an ETL tool to aggregate and to copy or move the data to a staging area.
 
 - **In-database analytics:** Use and combine all SQL Server capabilities and familiarity when using data virtualization.
 

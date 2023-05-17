@@ -36,7 +36,7 @@ units:
 - learn.sql-server-2022-data-virtualization.polybase
 - learn.sql-server-2022-data-virtualization.polybase-credentials-data-sources
 - learn.sql-server-2022-data-virtualization.exercise-query-parquet-file
-- learn.sql-server-2022-data-virtualization.exercise-connect-azure-sql-database-using-polybase
+- learn.sql-server-2022-data-virtualization.exercise-connect-azure-sql-database-use-polybase
 - learn.sql-server-2022-data-virtualization.create-external-table-as-select
 - learn.sql-server-2022-data-virtualization.exercise-create-external-table-as-select
 - learn.sql-server-2022-data-virtualization.summary
