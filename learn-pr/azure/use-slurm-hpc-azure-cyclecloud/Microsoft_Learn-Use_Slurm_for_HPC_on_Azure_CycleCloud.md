@@ -596,7 +596,7 @@ following steps:
 2.  On the Create a New Cluster page, review the available options, and
     in the Schedulers section, select Slurm.
 
-<img src="media/image1.png" style="width:9.45082in;height:6.33388in"
+<img src="image1.png" style="width:9.45082in;height:6.33388in"
 alt="A screenshot depicting the Create a New Cluster page of the Azure CycleCloud web application." />
 
 3.  On the About tab of the New Slurm Cluster page, in the Cluster Name
@@ -639,7 +639,7 @@ alt="A screenshot depicting the Create a New Cluster page of the Azure CycleClou
     - **Subnet ID.** The Azure virtual network subnet that will host
       cluster node VMs.
 
-<img src="media/image2.png" style="width:9.45082in;height:6.33388in"
+<img src="image2.png" style="width:9.45082in;height:6.33388in"
 alt="A screenshot depicting the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." />
 
 5.  On the Network Attached Storage page configure whether you will use
@@ -689,7 +689,7 @@ alt="A screenshot depicting the Required Settings tab of the New Slurm Cluster p
       whether the head node can be accessed from internet addresses and
       whether execute nodes can be accessed from the internet.
 
-#### <img src="media/image3.png" style="width:17.46077in;height:12.58509in"
+#### <img src="image3.png" style="width:17.46077in;height:12.58509in"
 alt="A screenshot depicting the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." />
 
 7.  Cloud-init allows you to pass custom configuration settings to
