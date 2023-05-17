@@ -48,7 +48,7 @@ The final modernization scenario you can use for your applications is to complet
 
 Azure is the cloud that knows SQL Server best. There are many options for the migration and modernization of these applications.
 
-:::image type="content" source="../media/migrate-sql.png" alt-text="Diagram showing how to migrate Window & SQL Server to Azure.":::
+:::image type="content" source="../media/migrate-sql.png" alt-text="Diagram showing how to migrate Windows & SQL Server to Azure.":::
 
 ### SQL Server on a virtual machine
 
@@ -94,7 +94,7 @@ Each database provides a fully managed PaaS offering with flexibility in the com
 - Azure Database [migration guides](/data-migration/?step=1)
 - [Migrate MySQL to Azure Database for MySQL](/azure/mysql/migrate/mysql-on-premises-azure-db/01-mysql-migration-guide-intro)
 - [Migrate PostgreSQL to Azure Database for PostgreSQL](/azure/postgresql/howto-migrate-using-dump-and-restore)
-- [Migrate MariaDB to Azure Database for MariadDB](/azure/mariadb/howto-migrate-dump-restore)
+- [Migrate MariaDB to Azure Database for MariaDB](/azure/mariadb/howto-migrate-dump-restore)
 - Migrate on-premises Linux application to [Azure VMs](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm/?azure-portal=true)
 - Migrate an on-premises Linux application to [Azure VMs and Azure Database for MySQL](/azure/cloud-adoption-framework/migrate/azure-best-practices/contoso-migration-rehost-linux-vm-mysql/?azure-portal=true)
 
@@ -104,7 +104,7 @@ Azure has broad support for Linux and Windows virtual machines. Tailwind Traders
 
 With an Azure IaaS migration, there isn't a modernization path similar to the other services. However, modernization can be done with tools to support your IaaS environment. Modernization of IaaS could be doing things like using Azure Backup to back your VMs instead of an on-premises backup solution. Other modern services that can be used to improve an IaaS environment in Azure is Defender for Cloud for monitoring VMs or Microsoft Sentinel for a modern security information event management (SIEM) and security orchestration automated response (SOAR) service in Azure. Azure Advisor and Azure Policy can help by recommending ways to optimize an IaaS deployment as well as govern the services deployed to Azure.
 
-While an IaaS migration to Azure might not be modernizing the applications themselves, the other modern services can be used provide a modernized toolset for managing your IaaS deployment.
+While an IaaS migration to Azure might not be modernizing the applications themselves, the other modern services can be used to provide a modernized toolset for managing your IaaS deployment.
 
 :::image type="content" source="../media/migrate-modernize-infra.png" alt-text="Diagram showing migrate and modernize OSS apps on Azure.":::
 
@@ -138,7 +138,7 @@ Learn more about [deploying Azure VMware solutions](/azure/cloud-adoption-framew
 
 Azure is SAP-certified to run your mission-critical SAP applications. Azure is the industry's most performant and scalable SAP cloud infrastructure, offering 192-gigabyte to 12-terabyte SAP HANA-certified VMs in more regions than any other public cloud provider.
 
-:::image type="content" source="../media/migrate-modernize-sap.png" alt-text="Diagram showing how to migrate to SAP to Azure.":::
+:::image type="content" source="../media/migrate-modernize-sap.png" alt-text="Diagram showing how to migrate SAP to Azure.":::
 
 A commissioned [Forrester Consulting TEI study](https://azure.microsoft.com/resources/sap-on-azure-forrester-tei/?azure-portal=true) showed that organizations can experience a three-year ROI of more than 100 percent after moving their legacy SAP infrastructure to Azure, with investment payback in nine months.
 

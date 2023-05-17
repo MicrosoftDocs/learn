@@ -143,6 +143,6 @@ Once workloads have been moved into the cloud, Microsoft Defender for Cloud can 
 
 Business continuity is still important to Tailwind Traders after the migration and modernization process, both for applications that have been moved to the cloud and applications that still exist on-premises. Insuring that Azure resources have backups in place and can be recovered when needed.
 
-By moving their applications to Azure, Tailwind Traders is able to manage their end-to-end business continuity solution both in the cloud and on-premises in an easy to deploy, cost-effect, secure, and scalable manner.
+By moving their applications to Azure, Tailwind Traders is able to manage their end-to-end business continuity solution both in the cloud and on-premises in an easy to deploy, cost-effective, secure, and scalable manner.
 
 :::image type="content" source="../media/manage-business-continuity.png" alt-text="Diagram showing business continuity features in Azure.":::
