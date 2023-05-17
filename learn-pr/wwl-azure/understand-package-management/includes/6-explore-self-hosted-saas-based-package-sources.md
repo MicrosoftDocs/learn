@@ -1,4 +1,3 @@
-
 The following private package sources will give you a starting point for finding the most relevant feeds.
 
 ## Private

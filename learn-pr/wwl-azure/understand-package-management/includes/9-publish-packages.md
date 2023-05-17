@@ -1,4 +1,3 @@
-
 As software is developed and components are written, you'll most likely produce components as dependencies packaged for reuse.
 
 Discussed previously was guidance to find components that can be isolated into dependencies.

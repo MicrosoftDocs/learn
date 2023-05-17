@@ -9,7 +9,9 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
@@ -48,4 +50,3 @@ quiz:
     - content: "Python."
       isCorrect: false
       explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
-interactive: bash
