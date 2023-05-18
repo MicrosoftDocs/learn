@@ -23,7 +23,7 @@ There are many different climate commitment strategies that an organisation can 
 
 ## Carbon Neutral
 
-To achieve carbon neutrality an organisation must measure its emissions then match the total emissions through caron reduction projects.  This can include carbon removal projects and carbon avoidance.  
+To achieve carbon neutrality an organisation must measure its emissions then match the total emissions through carbon reduction projects.  This can include carbon removal projects and carbon avoidance.  
 
 Carbon neutral is an internationally recognised standard, [PAS 2060](https://info.eco-act.com/hubfs/0%20-%20Downloads/PAS%202060/PAS%202060%20factsheet%20EN.pdf).  To be carbon neutral you must cover all emissions in scope 1 and 2, and all scope 3 emissions that contribute to more than 1% of the total. 
 
