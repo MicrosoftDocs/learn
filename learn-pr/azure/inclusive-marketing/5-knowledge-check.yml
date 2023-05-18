@@ -18,7 +18,7 @@ quiz:
     - content: Gender, Ethnicity, Sexual orientation, Social orientation.
       isCorrect: false
       explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual."
-    - content: Empowering others, diving deeper to understand and examine, listening more, caring about every individual, empowering others.
+    - content: Empowering others, diving deeper to understand and examine, listening more, caring about every individual.
       isCorrect: true
       explanation: Correct
     - content: Racial, religious, ethnic, social class, physical abilities
