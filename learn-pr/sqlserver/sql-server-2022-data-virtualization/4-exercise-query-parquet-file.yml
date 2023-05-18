@@ -3,7 +3,7 @@ uid: learn.sql-server-2022-data-virtualization.exercise-query-parquet-file
 title: Exercise - Query Parquet file
 metadata:
   title: Exercise - Query Parquet file
-  description: "An exercise on using PolyBase to query an external data source Parquet file, as well as manipulate the data."
+  description: "An exercise on using PolyBase to query an external data source Parquet file, and manipulate the data."
   ms.date: 05/16/2023
   author: HugoMSFT
   ms.author: hudequei

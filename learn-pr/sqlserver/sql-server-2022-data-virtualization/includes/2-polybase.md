@@ -4,7 +4,7 @@ PolyBase is the feature that SQL Server uses to enable the data virtualization c
 
 ## PolyBase enhancements in SQL Server 2022
 
-SQL Server 2022 introduces the newest version of PolyBase, and with it the capability to query data where it lives, virtualize data, and use REST APIs. REST APIs enable SQL Server to be both more flexible and lightweight, while expanding its range of supported connectors and file formats.
+SQL Server 2022 introduces the newest version of PolyBase, including the capability to query data where it lives, virtualize data, and use REST APIs. REST APIs enable SQL Server to be both more flexible and lightweight, while expanding its range of supported connectors and file formats.
 
 SQL Server 2022 now supports CSV, Parquet, and Delta files stored on Azure Blob Storage, Azure Data Lake Storage Gen2, or any simple storage service (S3)–compatible object storage. The S3-compatible object storage can be an on-premises, in the cloud, or a hybrid solution.
 
@@ -12,9 +12,9 @@ SQL Server 2022 can now use `Create External Table as Select` (CETAS), together 
 
 ## S3-compatible object storage
 
-SQL Server 2022 now supports S3-compatible object storage, as well as Azure Storage. To enable this integration, SQL Server 2022 uses a new REST API connector framework architecture that follow the S3 framework. Any object storage that supports the S3 framework will also work with SQL Server 2022.
+SQL Server 2022 now supports S3-compatible object storage, as well as Azure Storage. To enable this integration, SQL Server 2022 uses a new REST API connector framework architecture that follows the S3 framework. Any object storage that supports the S3 framework will also work with SQL Server 2022.
 
-Object storage, also known as object-based storage, is a strategy that manages and manipulates data storage as distinct units, called objects. These objects are kept in a single storehouse and are not ingrained in files inside other folders. Instead, object storage combines the pieces of data that make up a file, adds all its relevant metadata to that file, and attaches a custom identifier.
+Object storage, also known as object-based storage, is a strategy that manages and manipulates data storage as distinct units, called objects. These objects are kept in a single storehouse and aren't ingrained in files inside other folders. Instead, object storage combines the pieces of data that make up a file, adds all its relevant metadata to that file, and attaches a custom identifier.
 
 Some of the main differences of object storage compared to traditional file system are:
 
@@ -26,13 +26,13 @@ Some of the main differences of object storage compared to traditional file syst
 
 - Object storage is optimized for large amounts of data, such as Big Data, Internet of Things (IoT), Machine Learning, and analytics.
 
-- Object storage is not recommended for high transactional workloads.
+- Object storage isn't recommended for high transactional workloads.
 
-Amazon Web Services (AWS) established the S3 standard, the framework. Now S3-compatible object storage solutions are being offered by every major storage provider, like Cloudian, Dell, MinIO, PureStorage, just to name a few. If the solution offers compatibility with S3 REST APIs, it'll be compatible with SQL Server 2022.  
+Amazon Web Services (AWS) established the S3 standard, the framework. Now S3-compatible object storage solutions are being offered by every major storage provider, like Cloudian, Dell, MinIO, PureStorage, just to name a few. If the solution offers compatibility with S3 REST APIs, it will be compatible with SQL Server 2022.  
 
 Some object storage partners offer the ability to run their solution as software, capable of virtualizing your current storage. You can install and try on your own machine or virtual machine (VM).
 
-Object storage can be used for data virtualization, and also for backup and restore scenarios through the use of the `BACKUP TO URL` command. For more information, see [SQL Server backup and restore with S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
+Object storage can be used for data virtualization, and also for backup and restore scenarios by using the `BACKUP TO URL` command. For more information, see [SQL Server backup and restore with S3-compatible object storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-s3-compatible-object-storage).
 
 S3-compatible object storage solutions can run locally, in your network, in the cloud, or in a hybrid environment. For more information about object storage, benefits, how to install, guides and how to test it, check some of our storage partners websites:
 
@@ -59,7 +59,7 @@ By default, PolyBase uses ports ranging from 16450 to 16460.
 
 :::image type="content" source="../media/polybase-port-ranges.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase port range configuration.":::
 
-The setup wizard will install two PolyBase services:
+The setup wizard installs two PolyBase services:
 
 - **SQL Server PolyBase Engine**, which:  
   - Service executable: `mpdwsvc.exe -dweng`
@@ -94,9 +94,9 @@ For complete information and prerequisites on the PolyBase installation, see:
 
 SQL Server 2022 introduces the new architecture of PolyBase, REST API-based. This new architecture is used to access Azure Data Lake Storage Gen2, Azure Blob Storage, any S3-compatible object Storage, and file formats such as Parquet, Delta, and CSV files.
 
-This new architecture does not require PolyBase services to be running or configured, only PolyBase feature enabled on an instance-level using the `sp_configure` option.
+This new architecture doesn't require PolyBase services to be running or configured, only PolyBase feature enabled on an instance-level using the `sp_configure` option.
 
-For all the other already existing data sources, such as SQL Server, Oracle, MongoDB, or ODBC-based data source, PolyBase will use PolyBase services.
+For all the other already existing data sources, such as SQL Server, Oracle, MongoDB, or ODBC-based data source, PolyBase uses PolyBase services.
 
 |Data Source |PolyBase services |PolyBase feature REST API |
 |---------|---------|---------|
@@ -106,7 +106,7 @@ For all the other already existing data sources, such as SQL Server, Oracle, Mon
 |SQL Server |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: | :::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Oracle |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Teradata |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
-|MongoDB or CosmosDB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
+|MongoDB or Cosmos DB API for MongoDB |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Generic ODBC |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 |Bulk Operations |:::image type="content" source="../media/yes-icon.svg" border="false" alt-text="Yes"::: |:::image type="content" source="../media/no-icon.svg" border="false" alt-text="No"::: |
 

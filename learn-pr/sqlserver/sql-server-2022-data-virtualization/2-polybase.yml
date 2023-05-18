@@ -35,7 +35,7 @@ quiz:
     choices: 
     - content: "True"
       isCorrect: false
-      explanation: "SQL Server 2022 only supports object storage that are S3-compatible."
+      explanation: "SQL Server 2022 only supports object storage that is S3-compatible."
     - content: "False"
       isCorrect: true
-      explanation: "SQL Server 2022 only supports object storage that are S3-compatible."
+      explanation: "SQL Server 2022 only supports object storage that is S3-compatible."
