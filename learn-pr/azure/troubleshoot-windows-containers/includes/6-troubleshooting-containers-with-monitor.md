@@ -44,7 +44,7 @@ Let's go over troubleshooting the application/container first:
 
 ## Container
 
-:::image type="complex" border="false" source=" ../media/6-application-container-insights.png" alt-text="Screenshot of the Azure portal showing the Container Insights pane." lightbox="../media/6-application-container-insights.png":::
+:::image type="complex" border="false" source=" ../media/6-application-container-insights.png" alt-text="Screenshot of the Azure portal showing the Container Insights pane.":::
    Screenshot of the Azure portal showing the Container Insights pane. The Containers tab, the selected container, and the options on the Live Events tab are highlighted.
 :::image-end:::
 
@@ -54,17 +54,17 @@ One way you can check your running container, is by going to the insights tab on
 
 To get the logs from the control plane components, you need to enable Diagnostic Settings, as in the image below:
 
-:::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic settings pane. The link to + Add diagnostic setting is highlighted." lightbox="../media/6-enable-diagnostic-settings.png":::
+:::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic settings pane. The link to + Add diagnostic setting is highlighted.":::
 
 Highlighted below are the most important control plane components. Make sure you select to push to the Log Analytics Workspace and select the desired one.
 
-:::image type="complex" border="false" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic setting configuration pane." lightbox="../media/6-control-plane-diagnostic-settings.png":::
+:::image type="complex" border="false" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic setting configuration pane.":::
    Screenshot of the Azure portal showing the Diagnostic setting configuration pane. The categories Kubernetes API Server, Kubernetes Controller Manager, and Kubernetes Scheduler are highlighted along with the destination details of Send to Log Analytics workspace, and the workspace name.
 :::image-end:::
 
 After this, you can query the logs in the Logs view:
 
-:::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of the Azure portal showing the Logs pane. The query AzureDiagnostics | where Category == 'kube-scheduler' is highlighted." lightbox="../media/6-container-logs-query.png":::
+:::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of the Azure portal showing the Logs pane. The query AzureDiagnostics | where Category == 'kube-scheduler' is highlighted.":::
 
 ## Windows Exporter on Azure Kubernetes Service
 

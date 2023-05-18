@@ -4,7 +4,7 @@
 
 When it comes to standards, container and application log is based on Standard Output (STDOUT/STDERR). That isn't the case for some Windows applications and the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of that, tools that look for container and application logs on STDOUT won't be able to see the logs from Windows apps on containers. To solve that, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
 
-To use LogMonitor, you need to add it to your container image via the Dockerfile. As you recall, a Dockerfile is the recipe for building a container. In a Dockerfile there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application, therefore the ENTRYPOINT will look like this:
+To use LogMonitor, you need to add it to your container image via the Dockerfile. As you recall, a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application, therefore the ENTRYPOINT will look like this:
 
 ```powershell
 ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\MyApp.exe", "myparameter"]
@@ -98,7 +98,7 @@ hcsdiag.exe list
 hcsdiag.exe console -uvm <id>
 ```
 
-The command above will list the containers (and VMs) available in the system. You can then specify the ID of the container you want to open a PowerShell session to.
+The command will list the containers (and VMs) available in the system. You can then specify the ID of the container you want to open a PowerShell session to.
 
 ## Checking container runtime logs
 
@@ -112,7 +112,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
    Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time
    ```
 
-   The command above will return the logs from the Docker Daemon. If you want to enable debug log level, you need first to modify the dockerd service parameters:
+   The command will return the logs from the Docker Daemon. If you want to enable debug log level, you need first to modify the dockerd service parameters:
 
    ```powershell
    sc.exe config docker binpath= "\"C:\Program Files\Docker\dockerd.exe\" --run-service -D"
@@ -145,13 +145,13 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
 
 When using Windows containers, you need to pay attention to the Windows version of container image and host. The Windows operating system has four levels of versioning: major, minor, build and revision. For example, version 10.0.14393.103 would have a major version of 10, a minor version of 0, a build number of 14393, and a revision number of 103.
 
-With the exception of Windows Server 2022 and Windows 11, Windows containers are blocked from starting when the build number between the container host and the container image are different. For example, when the container host is version 10.0.14393.\* (Windows Server 2016) and you attempt to run a container with an image version 10.0.16299.\* (Windows Server version 1709) the OS compute service will return a version incompatibility error.
+Except for Windows Server 2022 and Windows 11, Windows containers are blocked from starting when the build number between the container host and the container image are different. For example, when the container host is version 10.0.14393.\* (Windows Server 2016) and you attempt to run a container with an image version 10.0.16299.\* (Windows Server version 1709) the OS compute service will return a version incompatibility error.
 
 For Windows containers running with process isolation, the build number must exactly match the host. For Hyper-V containers, the build number of the container image can be lower than the container host. For example: You can run a Windows Server 2019 container image on a Windows Server 2022 host using Hyper-V isolation.
 
 ## PowerShell Debug Script
 
-As you can gather from the previous sections, there are many moving pieces when running Windows containers, and everything should be properly configured. You now know how to look into the Windows components when something goes wrong, but to makes thing even easier, Microsoft created a PowerShell script to try and catch some basic misconfigurations. You can leverage that script with PowerShell:
+As you can gather from the previous sections, there are many moving pieces when running Windows containers, and everything should be properly configured. You now know how to look into the Windows components when something goes wrong, but to make things even easier, Microsoft created a PowerShell script to try and catch some basic misconfigurations. You can leverage that script with PowerShell:
 
 ```powershell
 Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression

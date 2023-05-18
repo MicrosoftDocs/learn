@@ -121,7 +121,7 @@ The YAML specification above describes a deployment of an IIS image, as you can 
 
 ## Registry authentication
 
-By default, Kubernetes cluster don't have the credential to log into private container registries and in these cases, your Kubernetes cluster will be in a fault state as the nodes can't pull the images you'd like to deploy. To avoid it, you need to configure registry authentication manually as part of your deployment and cluster configuration. However, if you're using Azure Container Registry (ACR), Microsoft makes the integration easy and you can simply run:
+By default, Kubernetes clusters don't have the credential to log into private container registries and in these cases, your Kubernetes cluster will be in a fault state as the nodes can't pull the images you'd like to deploy. To avoid it, you need to configure registry authentication manually as part of your deployment and cluster configuration. However, if you're using Azure Container Registry (ACR), Microsoft makes the integration easy and you can simply run:
 
 ```bash
 az aks update -n myAKSCluster -g myResourceGroup –attach-acr <acr-name>
@@ -166,7 +166,7 @@ When analyzing a pod, you might encounter it in a faulty state. Here are some co
 
 - **CrashLoopBackOff**
 
-   When this message appears it means that the runtime is unable to run the image. Once again, kubectl describe pod is the first step to identify potential issues. Reasons for this state varies, but are usually around can be application failure, or mismatch between container version and host version. To see why the application failed, you can query for the logs. Make sure you use LogMonitor to include all of the logs to STDOUT. Kubectl logs should retrieve the logs and potentially inform of other issues with the application or pod. 
+   When this message appears it means that the runtime is unable to run the image. Once again, kubectl describe pod is the first step to identify potential issues. Reasons for this state vary, but are usually around can be application failure, or mismatch between container version and host version. To see why the application failed, you can query for the logs. Make sure you use LogMonitor to include all of the logs to STDOUT. Kubectl logs should retrieve the logs and potentially inform of other issues with the application or pod. 
 
    To retrieve the logs of a container, you can use:
 
