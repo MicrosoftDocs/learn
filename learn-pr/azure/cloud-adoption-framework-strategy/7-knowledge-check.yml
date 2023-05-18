@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check
   description: Test your knowledge of strategy methodology.
   ms.date: 04/25/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

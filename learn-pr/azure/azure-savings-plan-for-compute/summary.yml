@@ -4,12 +4,14 @@ title: Summary
 metadata:
   title: Summary
   description: Summary.
-  ms.date: 10/06/2022
-  author: mpolicht
-  ms.author: kyleikeda
+  ms.date: 04/28/2023
+  author: bandersmsft
+  ms.author: banders
+  ms.reviewer: onwokolo
   ms.topic: interactive-tutorial
   ms.custom:
     - ignite-2022
+    - engagement-fy23
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |

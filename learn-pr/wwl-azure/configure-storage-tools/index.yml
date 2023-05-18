@@ -3,7 +3,7 @@ uid: learn.wwl.configure-storage-tools
 metadata:
   title: Configure Azure Storage with tools
   description: "Learn how to configure Azure Storage with tools like Azure Storage Explorer and AZCopy."
-  ms.date: 02/07/2023
+  ms.date: 04/06/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial

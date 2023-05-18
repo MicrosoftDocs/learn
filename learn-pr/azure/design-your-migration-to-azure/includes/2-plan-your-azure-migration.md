@@ -1,6 +1,6 @@
 Your first task is to plan your company's migration to Azure. You need to put together a plan to present to your leadership team to get their support and approval.
 
-In this unit, you'll cover some considerations and methods that you can use to plan your migration to Azure. Every situation is different, but by following some standard principles, you can achieve your goals in the best possible way and in the shortest amount of time.
+In this unit, we cover some considerations and methods you can use to plan your migration to Azure. Every situation is different, but by following some standard principles, you can achieve your goals in the best possible way and in the shortest amount of time.
 
 ## Azure migration framework
 
@@ -22,15 +22,15 @@ For each application, there are multiple migration options:
 
 - **Rehost**: Recreate your existing infrastructure in Azure. Choosing this approach has the least impact because it requires minimal changes. It typically involves moving virtual machines from your data center to virtual machines on Azure.
 - **Refactor**: Move services running on virtual machines to platform-as-a-service (PaaS) services. This approach can reduce operational requirements, improve release agility, and keep your costs low. Small enhancements to run more efficiently in the cloud can have large impacts on performance.
-- **Rearchitect**: You might be forced to rearchitect some systems so that they can be migrated. Other apps could be changed to become cloud native, or to take advantage of new approaches to software such as containers or microservices.
-- **Rebuild**: You might need to rebuild software if the cost to rearchitect it is more than that of starting from scratch.
-- **Replace**: While you're reviewing your estate, it's possible you'll find that third-party applications could completely replace your custom applications. Evaluate software-as-a-service (SaaS) options that can be used to replace existing applications.
+- **Rearchitect**: You might be forced to rearchitect some systems so they can be migrated. Other apps could be changed to become cloud native, or to take advantage of new approaches to software such as containers or microservices.
+- **Rebuild**: You might need to rebuild software if it costs more to rearchitect than it does to start from scratch.
+- **Replace**: While you're reviewing your estate, you may find that third-party applications could completely replace your custom applications. Evaluate software-as-a-service (SaaS) options that can be used to replace existing applications.
 
 Review each application to determine which option is the best fit.
 
 ### Involve key stakeholders
 
-Applications are used by specific sections of the business. The owners and superusers of applications have a wealth of experience on which to call. Involving these people in the planning stage increases the chance of a successful migration. These resources can offer guidance in areas where the person running the migration project might have knowledge gaps. Often, each area of the business will appoint business owners to manage specific sections.
+Applications are used by specific sections of the business. The owners and superusers of applications have a wealth of experience on which to call. Involving these people in the planning stage increases the chance of a successful migration. These resources can offer guidance in areas where the person running the migration project might have knowledge gaps. Often, each area of the business appoints business owners to manage specific sections.
 
 ### Estimate cost savings
 
@@ -42,7 +42,7 @@ Several tools and services are available to help you plan and complete the four 
 
 | Service or tool | Stage | Use |
 |------|-------|-------|
-| [Azure Migrate](/azure/migrate/migrate-overview)                   | Assess and migrate   | Performs assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, as well as databases, data, virtual desktop infrastructure, and web applications, to Azure. |
+| [Azure Migrate](/azure/migrate/migrate-overview)                   | Assess and migrate   | Performs assessment and migration of VMware VMs, Hyper-V VMs, cloud VMs, and physical servers, to Azure. Also performs assessment and migration of databases, data, virtual desktop infrastructure, and web applications, to Azure. |
 | [Service Map](/azure/azure-monitor/insights/service-map)           | Assess   | Maps communication between application components on Windows or Linux. Helps you identify dependencies when scoping what to migrate. |
 | [Azure TCO Calculator](https://azure.microsoft.com/pricing/tco/calculator)                   | Assess   | Estimates your monthly running costs in Azure versus on-premises. |
 | [Azure Database Migration Service](/azure/dms/dms-overview)        | Migrate  | Uses the Data Migration Assistant and the Azure portal to migrate database workloads to Azure. |
@@ -56,7 +56,7 @@ Several tools and services are available to help you plan and complete the four 
 
 ### Deploy cloud infrastructure targets
 
-You'll need destination systems and services on Azure to which you can migrate. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you'll use to do the migration, Azure Migrate and the Azure Database Migration Service, will create the required Azure resources for you.
+You need destination systems and services on Azure to which you can migrate. The scope of your migration has been defined as your company's current VMware machines and existing relational databases. In this scenario, you don't need to create the resources in Azure beforehand. The two tools you use to do the migration, Azure Migrate and the Azure Database Migration Service, can create the required Azure resources for you.
 
 In other situations, you may need to set up resources in Azure to have them available as a migration destination.
 
@@ -64,7 +64,7 @@ In other situations, you may need to set up resources in Azure to have them avai
 
 It's often best to start with a small migration instead of migrating a large, business-critical workload. This approach lets you become familiar with the tools, processes, and procedures for migration. It can reduce the risk of issues when you migrate larger workloads. As you become more comfortable with the migration process, you can progress to larger and more business-critical workloads.
 
-Each tool will guide you through the migration. The steps to complete them are covered in later units. At a high level, the steps are:
+Each tool guides you through the migration. The steps to complete them are covered in later units. At a high level, the steps are:
 
 1. Prepare the source (vCenter Server) and target (Azure) environments.
 1. Set up and start the replication between the two.
@@ -94,7 +94,7 @@ Use Microsoft Cost Management to start analyzing your Azure costs at different m
 
 ### Review opportunities to improve
 
-Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of additional discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
+Microsoft Cost Management shows you cost-reduction advice from Azure Advisor. The advice includes suggestions like reducing the performance of underused VMs, making use of extra discounts, or reserving resources instead of paying as you go. Azure Advisor also shows you recommendations for network security, high availability, and performance. Review the recommendations that Advisor presents to further optimize your environment.
 
 ![Heading image for the Monitor stage.](../media/2-monitor.png)
 
@@ -111,4 +111,4 @@ You can set up alerts based on a range of data sources, such as:
 
 It's also important to have event logging and visibility into security events across your enterprise. Microsoft Sentinel provides security information and event-management (SIEM) capabilities, along with artificial intelligence to help you protect against, detect, and respond to security events. This information helps security operations (SecOps) teams triage critical alerts and prioritize work effectively.
 
-The remainder of this module will focus on the Assess and Migrate stages. You'll find additional resources to help you with the Optimize and Monitor stages in the **Learn more** section at the end of this module.
+The remainder of this module focuses on the Assess and Migrate stages. There are more resources to help you with the Optimize and Monitor stages in the **Learn more** section at the end of this module.

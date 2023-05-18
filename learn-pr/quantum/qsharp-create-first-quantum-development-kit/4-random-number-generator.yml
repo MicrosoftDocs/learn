@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Create a quantum random number generator
   description: Write classical code to extend your random bit program to generate larger numbers.
   ms.date: 05/19/2020
-  author: KittyYeungQ
-  ms.author: kitty
+  author: SoniaLopezBravo
+  ms.author: sonialopez
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   show_latex: true

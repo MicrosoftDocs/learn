@@ -12,7 +12,7 @@ Hyper-V supports the following virtual network adapter types:
 A virtual switch is used to control how network traffic flows between the VMs hosted on a Hyper-V Server, in addition to the flow of network traffic between the VMs and the rest of the organizational network. The following table details the three types of virtual switches: internal, external, and private.
 
 |Type|Description|
-|||
+|---|---|
 |Internal|An *internal virtual switch* is used to communicate between each of the VMs on a Hyper-V host, and to communicate between the VMs and the Hyper-V host.|
 |External|An *external virtual switch*  is used to map a network to a specific network adapter or network adapter team. Hyper-V also supports mapping an external network to a wireless network adapter. To map an external network to a wireless adapter, install the Wireless local area network (LAN) service on the Hyper-V host server and ensure that the Hyper-V Server has a compatible network adapter.|
 |Private|A *private switch* facilitates communication between the VMs on the same Hyper-V host. Private switches can't be used to communicate between the Hyper-V host and VMs.|
@@ -75,4 +75,10 @@ The main steps in the process are:
 1. Use the **Windows PowerShell** `New-VMSwitch` cmdlet to create a new network switch.
 1. Use the **Windows PowerShell** `Get-VMSwitch` cmdlet to observe all Hyper-V network switches, including the one you just created.
 
- >[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MzHL]
+ > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4MzHL]
+
+---
+
+
+
+---

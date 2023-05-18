@@ -4,7 +4,7 @@ title: Create and use a compute instance
 metadata:
   title: Create and use a compute instance
   description: "Learn about how to create and use a compute instance in Azure Machine Learning. A compute instance is ideal for experimentation and development of machine learning models."
-  ms.date: 01/17/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

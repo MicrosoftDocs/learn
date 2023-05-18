@@ -65,7 +65,7 @@ In more complex scenarios, you can include language-switching logic. This logic 
 
 Build *accessibility practices* into your bot to broaden your potential audience. A responsible conversational bot accepts user input as text or speech - from a keypad, mouse, or touch-screen, and also from a microphone. When you include *speech support*, you make the bot usable for users with visual impairment. Your bot also becomes more attractive to users who don't want to type.
 
-You can add a speech interface to your bot with the Azure Speech service. The Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML). The bot also needs speech support from the conversation client. Web chat control integrates with the Microsoft Speech SDK to support both text-to-speech and speech-to-text.
+You can add a speech interface to your bot with the Azure Speech service. The Bot Framework supports embedding speech data into messages in the form of **Simple Speech Markup Language** (SSML). The bot also needs speech support from the conversation client. Web chat control integrates with the Microsoft Speech SDK to support both text to speech and speech to text.
 
 > [!NOTE]
 > To support more communication channels, you can receive speech as an attachment. You can then use the Speech SDK to convert the attachment to text on the server side.

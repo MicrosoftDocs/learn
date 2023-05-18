@@ -17,7 +17,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following can you do with the fs module?"
+    - content: "Which of the following operations can you do with the fs module?"
       choices:
         - content: "List the contents of a folder"
           isCorrect: true

@@ -3,7 +3,7 @@ uid: learn.intro-to-containers
 metadata:
   title: Build a containerized web application with Docker
   description: Use Docker to build, store, and manage private container images with the Azure Container Registry.  
-  ms.date: 04/05/2019
+  ms.date: 03/21/2022
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
@@ -12,11 +12,11 @@ title: Build a containerized web application with Docker
 summary: Package a web app so that it can be deployed as a Docker image and run from an Azure Container Instance.
 abstract: |
   In this module, you will:
-  - Create a Dockerfile for a new container image based on a starter image from Docker Hub
-  - Add files to an image using Dockerfile commands
-  - Configure an image’s startup command with Dockerfile commands
-  - Build and run a web application packaged in a Docker image
-  - Deploy a Docker image using the Azure Container Instance service
+  - Create a Dockerfile for a new container image based on a starter image from Docker Hub.
+  - Add files to an image using Dockerfile commands.
+  - Configure an image's startup command with Dockerfile commands.
+  - Build and run a web application packaged in a Docker image.
+  - Deploy a Docker image using the Azure Container Instance service.
 prerequisites: |
   - Familiarity with basic web application development concepts
   - A Docker subscription 

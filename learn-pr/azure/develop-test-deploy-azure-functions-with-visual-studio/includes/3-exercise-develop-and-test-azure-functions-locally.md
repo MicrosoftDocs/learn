@@ -5,25 +5,25 @@ In the luxury watch online website scenario, there's a requirement for a functio
 In this exercise, you'll implement and test a version of this function locally using Visual Studio.
 
 > [!NOTE]
-> Before starting this exercise, make sure you have VS 2019 installed, along with the Web & Cloud workload extensions **ASP.NET and web development** and **Azure development**.
+> Before starting this exercise, make sure you have VS 2022 installed, along with the Web & Cloud workload extensions **ASP.NET and web development** and **Azure development**.
 
 ## Create an Azure Function App
 
 Create an Azure Function App using an **Azure Functions** template.
 
-1. Launch **Visual Studio Installer** and on the **Visual Studio 2019** start page, select **Modify**. 
+1. Launch **Visual Studio Installer** and on the **Visual Studio 2022** start page, select **Modify**.
 
 1. Ensure **ASP.NET and web development** and **Azure development** are selected and available (if not select **Install while downloading**) and then select **Close**.
 
-    :::image type="content" source="../media/3-visual-studio-extensions.png" alt-text="Screenshot of Visual Studio 2019 with asp dot net and Azure development workloads highlighted.":::
+    :::image type="content" source="../media/3-visual-studio-extensions.png" alt-text="Screenshot of Visual Studio 2022 with asp dot net and Azure development workloads highlighted.":::
 
-1. On the **Visual Studio 2019** start page, select **Launch**.
+1. On the **Visual Studio 2022** start page, select **Launch**.
 
-1. On the **Get started** menu, select **Create a new project**. The **Create a new project** page appears. 
+1. On the **Get started** menu, select **Create a new project**. The **Create a new project** page appears.
 
 1. Search for or scroll to **Azure Functions** template, and then select **Next**.
 
-    :::image type="content" source="../media/3-create-project.png" alt-text="Screenshot of Visual Studio 2019 Create a new project page with Azure functions template highlighted." :::
+    :::image type="content" source="../media/3-create-project.png" alt-text="Screenshot of Visual Studio 2022 Create a new project page with Azure Functions template highlighted." :::
 
 1. The **Configure your new project** page appears. Enter the following values.
 
@@ -36,17 +36,18 @@ Create an Azure Function App using an **Azure Functions** template.
   
     :::image type="content" source="../media/3-configure-project.png" alt-text="Screenshot of Configure your new project page with create highlighted." loc-scope="vs":::
 
-1. Select **Create**.
+1. Select **Next**.
 
-1. The **Create a new Azure Functions application** page appears. 
+1. The **Additional information** page appears.
 
 1. Select the following values.
 
     | Field | Value |
     | ---- | ---- |
-    | **Dotnet version** | *.NET Core 3 (LTS)* or *.NET Core 2* |
+    | **Dotnet version** | *.NET 6.0 (Long Term Support) |
     | **Function trigger** | *Http trigger* |
-    | **Storage account** | *Storage emulator* |
+    | **Use Azurite for runtime storage account (AzureWebJobsStorage)** | *Checked* |
+    | **Enable Docker** | *Unchecked* |
     | **Authorization level** | *Anonymous* |
 
     If a Visual Studio notification shows that updates are ready, select **Refresh**.
@@ -57,7 +58,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
     Visual Studio creates the `WatchPortalFunction` project and displays the Functions App source code file `Function1.cs` in the code editor window. The file contains the code for a class named `Function1`.
 
-    As shown in the example code below, the `Function1` class contains boilerplate code from the HTTP trigger template. The `Run` method is annotated with the `[FunctionName ("Function1")]` attribute. In the previous unit, we learned that the boilerplate parameters for the `Run` method are an `HttpRequest` object containing the details of the request that triggered the function, and a trace log entry for recording trace information.
+    As shown in the following example code, the `Function1` class contains boilerplate code from the HTTP trigger template. The `Run` method is annotated with the `[FunctionName ("Function1")]` attribute. In the previous unit, we learned that the boilerplate parameters for the `Run` method are an `HttpRequest` object containing the details of the request that triggered the function, and a trace log entry for recording trace information.
 
     ```csharp
     namespace WatchPortalFunction
@@ -146,7 +147,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
     :::image type="content" source="../media/3-azure-functions-runtime.png" alt-text="Screenshot of the Azure Functions runtime window. The runtime has started the Azure Function App, and is displaying the URLs for the Function1 and WatchInfo Azure Functions." loc-scope="vs":::
 
-1. Open a web browser, and enter the URL `http://localhost:7071/api/WatchInfo?model=abc`. This request triggers the `WatchInfo` function and passes the model `abc` as the query string parameter. The web browser should display the dummy details generated by the Azure Function.
+1. Open a web browser, and enter the URL `http://localhost:7071/api/WatchInfo?model=abc`. This request triggers the `WatchInfo` function and passes the model `abc` as the query string parameter. The web browser should display the dummy details generated by the function.
 
     :::image type="content" source="../media/3-azure-functions-response.png" alt-text="Screenshot of a web browser triggering the WatchInfo Azure Function. The function has returned the dummy details for the model specified in the query string of the URL provided." loc-scope="vs":::
 
@@ -172,7 +173,7 @@ Create an Azure Function App using an **Azure Functions** template.
 
 1. To continue running the method and return to the web browser, press <kbd>F5</kbd>. The same error message should display.
 
-1. In the web browser, enter the URL with a query string and a model parameter. Step through the Azure Function in the debugger, and verify that the model is retrieved correctly. The `model` variable should be populated with the value of the parameter, and the details of the model returned as an `OkObjectResult` object.
+1. In the web browser, enter the URL with a query string and a model parameter. Step through the function in the debugger, and verify that the model is retrieved correctly. The `model` variable should be populated with the value of the parameter, and the details of the model returned as an `OkObjectResult` object.
 
 1. On the menu bar, select **Debug** > **Stop Debugging**.
 

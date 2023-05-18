@@ -1,8 +1,8 @@
 Azure Cognitive Services is a product bundle that enables customers to access multiple services - such as vision, language, and speech - by using a single API key.
 
-For your company's transcription department, you'll focus on Azure Cognitive Services' speech-to-text features to transcribe your clients' audio files into text that you can return to your clients.
+For your company's transcription department, you'll focus on Azure Cognitive Services' speech to text features to transcribe your clients' audio files into text that you can return to your clients.
 
-However, before you can create an application that uses Azure Cognitive Services - such as Speech-to-Text - you need to create an Azure Cognitive Services account.
+However, before you can create an application that uses Azure Cognitive Services - such as speech to text - you need to create an Azure Cognitive Services account.
 
 In the next unit, you'll complete an exercise that uses the Azure Command Line Interface (CLI) to create an Azure Cognitive Services account. However, you can also use the Azure portal, which is described in the following section.
 

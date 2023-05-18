@@ -5,7 +5,7 @@ In this exercise, you'll create an Azure Active Directory (Azure AD) group to ma
 
 ## Add a new group
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>).
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true).
 
 1. Go to the Azure Active Directory you created earlier in this module.
 

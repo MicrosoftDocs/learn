@@ -118,9 +118,9 @@ You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines.
 
 #### Microsoft-hosted CI/CD
 
-If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service by default for every organization. [Consult the Azure DevOps documentation](/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
+If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service ([request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)) for every organization.  [Consult the Azure DevOps documentation](/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
 
-If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. Microsoft charges based on the number of jobs you want to run at a time, not the number of agents registered.
+If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. When you follow this training module using GitHub Codespaces, you're using a self-hosted agent that runs in the container used to host your GitHub Codespaces project.
 
 #### Plan a strategy for concurrent pipelines
 

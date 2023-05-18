@@ -18,7 +18,7 @@ You'll also learn about the key components of Azure Data Factory. These are:
 
 ## Azure Data Factory functions
 
-Azure Data Factory consists of several functions that combine to provide your data engineers with a complete data analytics platform.
+Azure Data Factory consists of several functions that combine to provide your data engineers with a complete data-analytics platform.
 
 ### Connect and collect
 
@@ -28,7 +28,7 @@ The first part of the process is to collect the required data from the appropria
 - Unstructured
 - Semi-structured
 
-In addition, this disparate data might arrive at different speeds and intervals. With Azure Data Factory, you can use the copy activity to move data from various sources to a single, centralized data store in the cloud. After you've copied the data, you use other systems to transform and analyze it.
+In addition, this disparate data might arrive at different speeds and intervals. With Azure Data Factory, you can use the copy activity to move data from various sources to a single centralized data store in the cloud. After you've copied the data, you use other systems to transform and analyze it.
 
 The copy activity performs the following high-level steps:
 
@@ -44,9 +44,9 @@ The copy activity performs the following high-level steps:
 
 3. Write data to the destination data store (known as the *sink*).
 
-This process is summarized in the following graphic.
+This process is summarized in the following graphic:
 
-:::image type="content" source="../media/copy-activity-overview.png" alt-text="A graphic depicts the preceding process.":::
+:::image type="content" source="../media/copy-activity-overview.png" alt-text="Graphic that depicts the preceding process.":::
 
 ### Transform and enrich
 
@@ -73,7 +73,7 @@ After Azure Data Factory has refined the raw data, you can load the data into wh
 
 ### Monitor
 
-After you've successfully built and deployed your data integration pipeline, it's important that you can monitor your scheduled activities and pipelines. This enables you to track success and failure rates. Azure Data Factory provides support for pipeline monitoring by using one of the following:
+After you've successfully built and deployed your data-integration pipeline, it's important that you can monitor your scheduled activities and pipelines. This allows you to track success and failure rates. Azure Data Factory provides support for pipeline monitoring by using one of the following:
 
 - Azure Monitor
 - API
@@ -83,7 +83,7 @@ After you've successfully built and deployed your data integration pipeline, it'
 
 ## Azure Data Factory components
 
-Azure Data Factory is comprised of the components described in the following table.
+Azure Data Factory is composed of the components described in the following table:
 
 | Component            | Description                                                  |
 | -------------------- | ------------------------------------------------------------ |
@@ -94,11 +94,11 @@ Azure Data Factory is comprised of the components described in the following tab
 | Data flows           | Enable your data engineers to develop data transformation logic without needing to write code. Data flows are run as activities within Azure Data Factory pipelines that use scaled-out Apache Spark clusters. |
 | Integration runtimes | Azure Data Factory uses the compute infrastructure to provide the following data integration capabilities across different network environments: data flow, data movement, activity dispatch, and SSIS package execution. In Azure Data Factory, an integration runtime provides the bridge between the activity and linked services. |
 
-As indicated in the following graphic, these components work together to provide a complete end-to-end platform for data engineers. By using Data Factory, you can: 
+As indicated in the following graphic, these components work together to provide a complete end-to-end platform for data engineers. By using Data Factory, you can:
 
 - Set triggers on-demand and schedule data processing based on your needs.
 - Associate a pipeline with a trigger, or manually start it as and when needed.  
-- Connect to linked services, such as on-premises apps and data, or Azure services via integration runtimes.
-- Monitor all of your pipeline runs natively in the Azure Data Factory user experience, or by using Azure Monitor. 
+- Connect to linked services (such as on-premises apps and data) or Azure services via integration runtimes.
+- Monitor all of your pipeline runs natively in the Azure Data Factory user experience or by using Azure Monitor.
 
-:::image type="content" source="../media/adf-concepts.png" alt-text="A graphic depicts the interaction of the components described in the preceding table.":::
+:::image type="content" source="../media/adf-concepts.png" alt-text="Graphic that depicts the interaction of the components described in the preceding table.":::

@@ -1,6 +1,6 @@
 The app management lifecycle for Intune and Configuration Manager apps begins when an app is added and progresses through more phases until you remove the app. To help you get started with app management in Intune, let's take a look at these phases in more detail.
 
-![App management lifecycle in Microsoft Endpoint Manager.](../media/intro-to-endpoint-manager-20.png)
+![App management lifecycle in Microsoft Intune.](../media/intro-to-endpoint-manager-20.png)
 
 ## Add
 

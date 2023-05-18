@@ -4,9 +4,11 @@ metadata:
   moduleType: standard
   title: Enable secure external collaboration for your applications with Azure AD B2B
   description: Azure AD B2B collaboration lets you securely share your company's applications and services with guest users from any other organization, while maintaining control over your own corporate data.
-  ms.date: 06/29/2022
+  ms.date: 03/15/2023
   author: msmimart
   ms.author: mimart
+  ms.service: active-directory
+  manager: celestedg
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Enable secure external collaboration for your applications with Azure AD B2B
@@ -31,8 +33,9 @@ subjects:
 units:
 - learn.enable-external-collaboration-with-b2b.1-introduction
 - learn.enable-external-collaboration-with-b2b.2-azure-ad-b2b-overview
-- learn.enable-external-collaboration-with-b2b.3-collaborate-externally-b2b
-- learn.enable-external-collaboration-with-b2b.4-enable-mfa-b2b
-- learn.enable-external-collaboration-with-b2b.5-summary
+- learn.enable-external-collaboration-with-b2b.3-enable-mfa-b2b
+- learn.enable-external-collaboration-with-b2b.4-collaborate-externally-b2b
+- learn.enable-external-collaboration-with-b2b.5-knowledge-check
+- learn.enable-external-collaboration-with-b2b.6-summary
 badge:
   uid: learn.enable-external-collaboration-with-b2b.badge

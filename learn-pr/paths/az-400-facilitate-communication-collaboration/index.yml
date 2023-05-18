@@ -5,8 +5,8 @@ metadata:
   description: "Explore DevOps capabilities such as continuous planning and continuous collaboration and prepare for Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions."
   brand: azure
   ms.date: 06/25/2020
-  author: kathrynee
-  ms.author: kaelli
+  author: chcomley
+  ms.author: chcomley
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: "Facilitate communication and collaboration"

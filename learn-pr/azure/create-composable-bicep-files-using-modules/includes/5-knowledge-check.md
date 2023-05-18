@@ -1,6 +1,6 @@
 Consider the following two Bicep files.
 
-*main.bicep*:
+_main.bicep_:
 
 ```bicep
 module storage1 'modules/stor.bicep' = {
@@ -8,10 +8,10 @@ module storage1 'modules/stor.bicep' = {
 }
 ```
 
-*modules/stor.bicep*:
+_modules/stor.bicep_:
 
 ```bicep
-resource storageAccount 'Microsoft.Storage/storageAccounts@2021-02-01' = {
+resource storageAccount 'Microsoft.Storage/storageAccounts@2022-09-01' = {
   name: 'mystorageaccount'
   location: resourceGroup().location
   kind: 'StorageV2'

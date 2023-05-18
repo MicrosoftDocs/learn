@@ -112,12 +112,12 @@ In this task, you'll run the code and verify that the output is correct.
 1. To verify that your code is working as expected, compare the output of your application with the following output:
 
     ```Output
-    Student		Grade
+    Student         Grade
 
-    Sophia:     94	A
-    Nicolas:    83	B
-    Zahirah:    83	B
-    Jeong:      95	A
+    Sophia:         94.6    A
+    Nicolas:        83.6    B
+    Zahirah:        83.4    B
+    Jeong:          95.4    A
     ```
 
     If your code displays different results, you'll need to review your code to find your error and make updates. Run the code again to see if you've fixed the problem. Continue updating and running your code until your code produces the expected results.

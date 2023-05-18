@@ -22,7 +22,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure-powershell
 prerequisites: |
  - Be able to start a terminal.
  - Understand what PowerShell is. 

@@ -5,8 +5,8 @@ metadata:
   title: Create your first Azure Quantum workspace
   description: Learn to create an Azure Quantum workspace.
   ms.date: 01/01/2021
-  author: KittyYeungQ
-  ms.author: kitty
+  author: aviviano
+  ms.author: amvivian
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

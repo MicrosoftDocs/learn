@@ -1,4 +1,4 @@
-Here, we'll discuss how Azure HPC Cache works. You'll learn how the different storage and network elements come together to provide a faster storage experience, such as:
+Here, we discuss how Azure HPC Cache works. You learn how the different storage and network elements come together to provide a faster storage experience, such as:
 
 - Source data
 - Data access
@@ -8,7 +8,7 @@ Here, we'll discuss how Azure HPC Cache works. You'll learn how the different st
 
 Without a caching solution, clients directly access the source data. When clients use the caching service, they access HPC Cache for faster access to data instead of directly accessing the source data.
 
-HPC Cache reads data from a customer storage target like network-attached storage (NAS) in the customer datacenter. It stores frequently accessed data in memory and on high-speed drives.
+HPC Cache reads data from a customer storage target like network-attached storage (NAS) in the customer datacenter, and stores frequently accessed data in memory and on high-speed drives.
 
 ## How the cache manages the data
 

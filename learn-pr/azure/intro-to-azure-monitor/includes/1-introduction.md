@@ -1,4 +1,4 @@
-Performance might be one of the many reasons you may be hosting your infrastructure or applications on Azure. The deployment of resources shouldn't be the end of your interaction. How do you know if you're gaining benefits with Azure hosting? How can you prove your return on investment? Are there aspects to your applications that are not giving the performance you or your users expect?
+Performance might be one of the many reasons you host your infrastructure or applications on Azure. The deployment of resources shouldn't be the end of your interaction. How do you know if you're gaining benefits with Azure hosting? How can you prove your return on investment? Are there aspects to your applications that are not giving the performance you or your users expect?
 
 Monitoring your Azure resources provides insights into many aspects of performance, security, and health.
 

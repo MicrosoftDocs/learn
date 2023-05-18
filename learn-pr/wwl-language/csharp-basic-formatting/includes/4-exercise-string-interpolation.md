@@ -1,5 +1,6 @@
 
 
+
 While string concatenation is simple and convenient, *string interpolation* is growing in popularity in situations where you need to combine many literal strings and variables into a single formatted message.
 
 ## What is string interpolation?

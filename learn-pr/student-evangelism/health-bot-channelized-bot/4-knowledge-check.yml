@@ -30,26 +30,26 @@ quiz:
           explanation: "No, we can't use sign-in credentials."
         
 
-    - content: "In which section do you upload an icon for the bot?"
+    - content: "Where do you upload an icon for the bot?"
       choices:
-        - content: "Finish"
+        - content: "Basic information"
           isCorrect: false
-          explanation: "Incorrect. The Finish section is for final touches."
-        - content: "Capabilities"
+          explanation: "Incorrect. Basic information section is for descriptive and developer information."
+        - content: "App features"
           isCorrect: false
-          explanation: "No, the Capabilities section doesn’t have an option for uploading an icon."
-        - content: "Details"
+          explanation: "No, App features doesn’t have an option for uploading an icon."
+        - content: "Branding"
           isCorrect: true
-          explanation: "Yes, you upload the icon in the Details section, in the Branding subsection. The dimensions should be 192 x 192."
+          explanation: "Yes, you upload the icon in Branding, in the Configure menu. The dimensions should be 192 x 192."
 
-    - content: "Which of the following options isn't one of the options in the Test and Distribute subsection?"
+    - content: "Which of the following options isn't one of the options in the Publish menu?"
       choices:
-        - content: "Install"
+        - content: "App package"
           isCorrect: false
-          explanation: Incorrect. This option is in that subsection and is used to install your app on Teams for testing.
-        - content: "Publish"
+          explanation: Incorrect. This option is in that menu and is used to review your icons, app manifest, and app definition.
+        - content: "Publish to org"
           isCorrect: false
-          explanation: Incorrect. This option is in that subsection and is used to publish your app to your tenant's app catalog or the Teams app store.
-        - content: "Delete"
+          explanation: Incorrect. This option is in that menu and is used to publish your app to your organization's app catalog or the Teams app store.
+        - content: "Delete app"
           isCorrect: true
-          explanation: Correct. This option is available in the main section. 
+          explanation: Correct. This option is available in the main section of the app page. 

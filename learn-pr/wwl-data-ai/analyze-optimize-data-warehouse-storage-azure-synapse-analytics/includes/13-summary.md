@@ -1,3 +1,4 @@
+
 You have learned how to analyze and optimize your data warehouse storage on Azure Synapse Analytics SQL Pools for analytical workloads.
 
 In this module, you have:

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.machine-learning-azure-databricks.understand-machine-learning
+title: Understand principles of machine learning
+metadata:
+  title: Understand principles of machine learning
+  description: "Understand principles of machine learning"
+  ms.date: 03/22/2023
+  author: wwlpublish
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: azure-databricks
+durationInMinutes: 5
+content: |
+  [!include[](includes/2-understand-machine-learning.md)]

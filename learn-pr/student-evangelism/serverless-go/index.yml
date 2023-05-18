@@ -22,7 +22,7 @@ levels:
 roles:
   - developer
 products:
-  - vs
+  - vs-code
 prerequisites: |
   - Visual Studio Code is recommended, but it's perfectly fine to use any text editor or IDE.
 subjects:

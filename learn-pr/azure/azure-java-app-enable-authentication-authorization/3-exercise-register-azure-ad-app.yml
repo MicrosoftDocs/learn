@@ -6,8 +6,8 @@ metadata:
   title: Exercise - Register an application with Azure AD
   description: In this exercise, you will register a web application with Azure AD through the Azure portal.
   ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

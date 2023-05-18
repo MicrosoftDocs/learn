@@ -16,7 +16,7 @@ Use these resources to discover more.
 
 - [Troubleshoot problems on the DHCP server](/windows-server/troubleshoot/troubleshoot-problems-on-dhcp-server)
 
-- [Analyze DHCP Server Log Files](/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd183591(v=ws.10))
+- [Analyze DHCP Server Log Files](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd183591(v=ws.10))
 
 - [Troubleshooting DNS servers](/windows-server/networking/dns/troubleshoot/troubleshoot-dns-server)
 

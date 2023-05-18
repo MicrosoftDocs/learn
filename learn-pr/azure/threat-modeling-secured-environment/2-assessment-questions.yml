@@ -4,8 +4,8 @@ metadata:
   title: Security assessment questions to ask before using a client application in a PAW
   description: Assess the state of security for the client application to be used in your secured environment by asking the right questions.
   ms.date: 05/27/2021
-  author: rodrigosantos
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Assessment questions

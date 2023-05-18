@@ -14,9 +14,9 @@ Now that you're familiar with security best practices, learn to [Automate DevOps
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [About security alerts for vulnerable dependencies](https://help.github.com/github/managing-security-vulnerabilities/about-security-alerts-for-vulnerable-dependencies?azure-portal=true)
+- [Viewing and updating Dependabot alerts](https://docs.github.com/code-security/dependabot/dependabot-alerts/viewing-and-updating-dependabot-alerts)
 - [Dependabot official site](https://github.com/dependabot)
 - [Security apps on GitHub Marketplace](https://github.com/marketplace/category/security?azure-portal=true)
-- [Adding a security policy to your repository](https://help.github.com/github/managing-security-vulnerabilities/adding-a-security-policy-to-your-repository?azure-portal=true)
-- [Ignoring files](https://help.github.com/github/using-git/ignoring-files?azure-portal=true)
-- [Removing sensitive data from a repository](https://help.github.com/github/authenticating-to-github/removing-sensitive-data-from-a-repository?azure-portal=true)
+- [Adding a security policy to your repository](https://docs.github.com/code-security/getting-started/adding-a-security-policy-to-your-repository)
+- [Ignoring files](https://docs.github.com/get-started/getting-started-with-git/ignoring-files)
+- [Removing sensitive data from a repository](https://docs.github.com/authentication/keeping-your-account-and-data-secure/removing-sensitive-data-from-a-repository)

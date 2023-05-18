@@ -3,7 +3,7 @@ uid: learn.health-bot-built-in-scenarios
 metadata:
   title: Azure Health Bot built-in scenarios
   description: Identify the different built-in scenarios associated with Azure Health Bot and create a Web Chat channel.
-  ms.date: 07/27/2021
+  ms.date: 03/09/2023
   author: Dwitrisha
   ms.author: chnoring
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ roles:
 - developer
 - student
 products:
-- vs
+- azure
 prerequisites: |
  - Introduction to Azure Health Bot
  - Basic Azure Health Bot

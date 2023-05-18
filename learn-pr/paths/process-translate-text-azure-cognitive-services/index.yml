@@ -10,9 +10,9 @@ metadata:
   ms.prod: learning-azure
 title: Process and translate text with Azure Cognitive Services
 prerequisites: |
-  Before starting this learning path, you will need
+  Before starting this learning path, you'll need
   - Familiarity with Microsoft Azure and the Azure portal.
-  - Experience programming with C# or Python. If you are new to programming, consider completing the [Take your first steps with C#](../csharp-first-steps/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
+  - Experience programming with C# or Python. If you're new to programming, consider completing the [Take your first steps with C#](../get-started-c-sharp-part-1/index.yml) or [Python for beginners](../beginner-python/index.yml) learning path first.
 summary: |
   A large volume of the data that applications need to process is in text format. Using Azure Cognitive Services, you can create apps that extract semantic meaning from text and translate it between languages.
 iconUrl: /training/achievements/process-and-translate-text-with-azure-cognitive-services.svg

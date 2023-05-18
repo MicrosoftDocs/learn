@@ -6,8 +6,9 @@ metadata:
   ms.date: 12/09/2022
   author: marleva
   ms.author: maevan
+  manager: jasonh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 title: Create a SaaS offer for the commercial marketplace
 summary: This module provides a high-level overview of SaaS offers in the commercial marketplace
 abstract: |
@@ -27,8 +28,8 @@ roles:
 - technology-manager
 - administrator
 products:
-- azure
 - azure-marketplace
+- azure
 subjects:
 - marketing-sales
 - cloud-computing

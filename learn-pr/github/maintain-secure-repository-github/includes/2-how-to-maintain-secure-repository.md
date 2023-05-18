@@ -87,7 +87,7 @@ While `.gitignore` can be useful in helping contributors avoid committing sensit
 
 ## Branch protection rules
 
-You can create a [branch protection rule](https://docs.github.com/en/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
+You can create a [branch protection rule](https://docs.github.com/github/administering-a-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule) to enforce certain workflows for one or more branches, such as requiring an approving review or passing status checks for all pull requests merged into the protected branch.
 
 You can leverage the workflows that protect the branch to: 
 
@@ -98,7 +98,7 @@ You can leverage the workflows that protect the branch to:
 
 ## Add a CODEOWNERS file
 
-By adding a [CODEOWNERS](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they are configured for.
+By adding a [CODEOWNERS](https://docs.github.com/github/creating-cloning-and-archiving-repositories/creating-a-repository-on-github/about-code-owners#codeowners-syntax) file to your repository, you can assign individual team members or entire teams as code owners to paths in your repository. These code owners are then required for pull-request reviews on any changes to files in a path that they are configured for.
 
 ```
 # Changes to files with the js extensions need to be reviewed by the js-owner user/group:

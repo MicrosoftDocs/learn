@@ -1,12 +1,12 @@
 The external and internal developer teams want to work together, so you decide to create guest user access for the external developer team. 
 
-You'll use the Azure portal to invite business-to-business (B2B) collaboration users. You can invite guest users to an Azure Active Directory (Azure AD) organization, group, or application. After you invite a user, their account is added to Azure AD, with a guest user type.
+Use the Azure portal to invite business-to-business (B2B) collaboration users. You can invite guest users to an Azure Active Directory (Azure AD) organization, group, or application. After you invite a user, their account is added to Azure AD, with a guest user type.
 
 After you add a guest user to the organization, send them a direct link to a shared app. Have the guest user open the redemption URL in the invitation email.
 
 ## Add guest users to the organization
 
-1. Sign in to the [Azure portal](<https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true>), and under **Azure services**, select **Azure Active Directory**. The **Overview** pane for your Azure AD appears.
+1. Sign in to the [Azure portal](https://portal.azure.com?azure-portal=true), and under **Azure services**, select **Azure Active Directory**. The **Overview** pane for your Azure AD appears.
 
 1. In the left menu pane, under **Manage**, select **Users**. The **All users** pane appears.
 
@@ -14,7 +14,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
    :::image type="content" source="../media/7-new-guest-user.png" alt-text="Screenshot that shows the New guest user button.":::
 
-   The **New user** pane appears.
+   The **New user** pane opens.
 
 1. Confirm **Invite user** is selected.
 

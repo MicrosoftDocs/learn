@@ -1,14 +1,16 @@
 Azure Container Instance is a service that loads and runs Docker images on demand. The Azure Container Instance service can retrieve an image from a registry, such as Docker Hub or Azure Container Registry.
 
-Your organization wants to use Azure to run its web apps. For this reason, it makes sense to store the images in Azure Container Registry, and run them using the Azure Container Instance service.  
+Your organization wants to use Azure to run its web apps. For this reason, it makes sense to store the images in Azure Container Registry and run them using the Azure Container Instance service.  
 
 In this unit, you'll learn how to upload a Docker image to Azure Container Registry. Then, you'll run the image using the Azure Container Instance service.
 
 ## Use Azure Container Registry to store a container
 
-Azure Container Registry is a registry hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are *private*, meaning they require authentication to push or pull images. Azure Container Registry runs in the cloud, and provides similar levels of scalability and availability to other Azure services.
+Azure Container Registry is a registry-hosting service provided by Azure. Each Azure Container Registry resource you create is a separate registry with a unique URL. These registries are *private*, meaning they require authentication to push or pull images. Azure Container Registry runs in the cloud and provides similar levels of scalability and availability to other Azure services.
 
-You can create a registry using the Azure portal, or the Azure Command Line Interface (CLI). You can use the Cloud Shell in the Azure portal or a local install of the Azure CLI. Keep in mind that you'll have to create a resource group before you can create the registry. When creating a resource group, we recommend choosing the nearest region. In this example, our resource group's name is `mygroup`, and the location is US West.
+You can create a registry using the Azure portal or the Azure Command Line Interface (CLI). You can use the Cloud Shell in the Azure portal or a local install of the Azure CLI. Keep in mind that you'll have to create a resource group before you can create the registry. When creating a resource group, we recommend choosing the nearest region. In this example, our resource group's name is `mygroup`, and the location is US West.
+
+You don't need to run any of the following commands. We'll do that in the next exercise.
 
 > [!NOTE]
 > You need a unique name for your container. You can check to see if a name is already in use [here](/rest/api/containerregistry/registries/checknameavailability).

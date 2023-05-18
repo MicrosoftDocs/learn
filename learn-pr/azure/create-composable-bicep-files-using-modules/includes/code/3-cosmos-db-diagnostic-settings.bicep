@@ -1,6 +1,6 @@
 param logAnalyticsWorkspaceId string = ''
 
-resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2020-04-01' = {
+resource cosmosDBAccount 'Microsoft.DocumentDB/databaseAccounts@2022-08-15' = {
   // ...
 }
 

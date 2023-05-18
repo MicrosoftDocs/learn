@@ -30,7 +30,7 @@ roles:
   - developer
   - data-scientist
 products:
-  - vs
+  - azure
 units:
 - learn.beginner-python.intro-python-lists.introduction
 - learn.beginner-python.intro-python-lists.create-use-lists

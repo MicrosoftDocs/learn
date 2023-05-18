@@ -1,3 +1,5 @@
+
+
 To install a scale-out SAP HANA, you need to perform the following high-level steps:
 
 1. Create new or use an existing Azure VNet.
@@ -9,7 +11,7 @@ To install a scale-out SAP HANA, you need to perform the following high-level st
 7. After changing the global.ini parameter, restart the SAP HANA instance.
 8. Add additional worker nodes.
 
-For details, refer to [Add Hosts Using the Command-Line Interface](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/en-US/0d9fe701e2214e98ad4f8721f6558c34.html).
+For details, refer to [Add Hosts Using the Command-Line Interface](https://help.sap.com/viewer/6b94445c94ae495c83a19646e7c3fd56/2.0.00/0d9fe701e2214e98ad4f8721f6558c34.html).
 
 Specify the internal network for SAP HANA inter-node communication during the installation or afterward using, for example, the local hdblcm. For details, refer to [SAP Note \#2183363](https://launchpad.support.sap.com/#/notes/2183363).
 

@@ -48,7 +48,7 @@ DDoS Protection Standard monitors actual traffic utilization and constantly comp
 
 During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:
 
- -  Ensure packets conform to internet specifications and are not malformed.
+ -  Ensure packets conform to internet specifications and aren't malformed.
  -  Interact with the client to determine if the traffic is potentially a spoofed packet (e.g: SYN Auth or SYN Cookie or by dropping a packet for the source to retransmit it).
  -  Rate-limit packets if no other enforcement method can be performed.
 

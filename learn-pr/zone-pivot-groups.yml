@@ -408,3 +408,11 @@ groups:
       title: GitHub
     - id: azurerepos
       title: Azure Repos
+- id: azure-pipelines-agent-hosting
+  title: Azure Pipelines agent type
+  prompt: Choose your training module development environment
+  pivots:
+    - id: ms-hosted-agents
+      title: Local development environment using a Microsoft-hosted agent
+    - id: github-codespaces-agent
+      title: GitHub Codespaces development environment using a self-hosted agent

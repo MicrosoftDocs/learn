@@ -1,5 +1,6 @@
 
 
+
 In this exercise, you'll modify the console output from the previous exercise to achieve the specified reporting format.
 
 ## Format the console output
@@ -24,7 +25,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 1. On the blank code line that you created, to add a header for course information, enter the following code:
 
     ```csharp
-    Console.WriteLine("Course\t\t\tGrade\tCredit Hours");
+    Console.WriteLine("Course\t\t\t\tGrade\tCredit Hours");
 
     ```
 
@@ -102,7 +103,7 @@ In this task, you'll run the code and verify that the output is correct.
     int trailingDigits = (int) (gradePointAverage * 100) - (leadingDigit * 100);
 
     Console.WriteLine($"Student: {studentName}\n");
-    Console.WriteLine("Course\t\t\tGrade\tCredit Hours");
+    Console.WriteLine("Course\t\t\t\tGrade\tCredit Hours");
 
     Console.WriteLine($"{course1Name}\t\t\t{course1Grade}\t\t{course1Credit}");
     Console.WriteLine($"{course2Name}\t\t\t{course2Grade}\t\t{course2Credit}");
