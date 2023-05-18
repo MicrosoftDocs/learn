@@ -7,7 +7,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Application scalability on AKS with HorizontalPodAutoscalers
 summary: Scale your applications to match your load by using native scalability features present in Kubernetes.
 abstract: |

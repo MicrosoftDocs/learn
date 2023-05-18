@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Enumerate objects in the pipeline
 summary: This module explains how to enumerate objects in the pipeline so that you can work with one object at a time during automation.
 abstract: |

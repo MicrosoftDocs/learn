@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Recommend a ransomware strategy by using Microsoft Security Best Practices
 summary: "You'll learn how to execute the three important phases of ransomware protection: create a recovery plan, limit the scope of damage, make it hard to get in."
 abstract: |

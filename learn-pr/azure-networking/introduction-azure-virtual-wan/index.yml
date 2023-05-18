@@ -7,7 +7,7 @@ metadata:
   author: cherylmc
   ms.author: cherylmc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-wan
 title: "Introduction to Azure Virtual WAN"
 summary: Consider constructing a wide area network (WAN) using software-defined Azure Virtual WAN networking services.
 abstract: |

@@ -9,7 +9,7 @@ metadata:
   ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Azure RTOS ThreadX — Analyze thread behavior with timing facilities
 summary: Now that you have created your first Hello World project, have you thought about analyzing the behavior of your system? If so, this is the module you should investigate.
 abstract: |

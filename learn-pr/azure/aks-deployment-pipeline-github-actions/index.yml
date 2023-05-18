@@ -7,7 +7,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: github
+  ms.service: azure-kubernetes-service
 title: Azure Kubernetes Service deployment pipeline and GitHub Actions
 summary: Rapidly deploy a containerized application to Azure Kubernetes Services (AKS) by using GitHub Actions triggered by GitHub events.
 abstract: |

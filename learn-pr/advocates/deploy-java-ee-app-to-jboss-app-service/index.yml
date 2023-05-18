@@ -7,7 +7,6 @@ metadata:
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: yoterada-03082021
 title: Deploy a Java EE (Jakarta EE) application to Azure

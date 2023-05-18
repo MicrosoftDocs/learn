@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Create a labeled dataset using Azure Machine Learning data labeling tools
 summary: Learn how to use Azure Machine Learning data labeling to create, manage, and monitor data labeling projects.
 abstract: |

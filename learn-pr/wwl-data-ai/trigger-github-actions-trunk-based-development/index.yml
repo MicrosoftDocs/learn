@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Trigger GitHub Actions with trunk-based development
 summary: Learn how to protect your main branch and how to trigger tasks in the machine learning workflow based on changes to the code.
 abstract: |

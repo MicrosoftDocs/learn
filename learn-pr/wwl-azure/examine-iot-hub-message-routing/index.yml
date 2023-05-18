@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-hub
 title: Examine IoT Hub message routing
 summary: This module introduces you to IoT Hub message routing, the common message format implemented by IoT Hub, IoT Hub’s service-facing endpoints, and the message routing query syntax.
 abstract: |

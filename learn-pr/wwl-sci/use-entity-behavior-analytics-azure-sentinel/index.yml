@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Identify threats with Behavioral Analytics
 summary: Learn how to use entity behavior analytics in Microsoft Sentinel to identify threats inside your organization.
 abstract: |
