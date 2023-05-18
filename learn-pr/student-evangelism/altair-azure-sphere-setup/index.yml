@@ -7,8 +7,8 @@ metadata:
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Set up the Altair emulator and Azure Sphere
 summary: Learn how to set up the Altair 8800 emulator and the Azure Sphere development environment.
 abstract:  |

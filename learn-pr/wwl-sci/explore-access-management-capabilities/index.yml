@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: active-directory
 title: Describe the access management capabilities of Azure AD
 summary: A key function of Azure AD is to manage access.  Learn about the access management capabilities, its use cases, and benefits.
 abstract: |

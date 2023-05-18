@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
+  ms.service: purview
 title: 'Govern data from Azure databases with Microsoft Purview'
 summary: Govern data from Azure SQL and Azure SQL Managed instance databases using Microsoft Purview.
 abstract:  | 

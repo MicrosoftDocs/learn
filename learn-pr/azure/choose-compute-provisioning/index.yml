@@ -7,7 +7,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Choose a compute provisioning solution for your application
 summary: Discover the services and tools available to automate the deployment and configuration of your Azure infrastructure.
 abstract: | 

@@ -7,7 +7,6 @@ metadata:
   author: JefferyMitchell
   ms.author: jemitche
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Organizational design principles for enterprise-scale architecture 
 summary: Evaluate the critical design areas for enterprise enrollment and Azure Active Directory (Azure AD) tenants, identity and access management, and management group and subscription organization.
 abstract: | 

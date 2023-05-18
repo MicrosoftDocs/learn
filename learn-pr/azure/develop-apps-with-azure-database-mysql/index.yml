@@ -10,7 +10,8 @@ metadata:
   ms.reviewer: maghan
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: mysql
+  ms.subservice: flexible-server
 title: Develop applications with Azure Database for MySQL - Flexible Server
 summary: Learn to create applications that connect to and query Azure Database for MySQL - Flexible Server. Develop and deploy applications faster by integrating with Azure App Service, Azure Kubernetes Service, Azure DevOps, or GitHub.
 abstract: |

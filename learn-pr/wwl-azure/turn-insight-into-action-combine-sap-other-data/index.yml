@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Turn insight into action by combining SAP and other data
 summary: Explore using Azure Synapse Analytics to combine data from SAP and other sources, and how Power Platform is used to display and analyze business data to turn insights into action.
 abstract: |

@@ -9,7 +9,7 @@ metadata:
   ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Azure RTOS ThreadX first project
 summary: Learn how to create a Hello World project by using Azure RTOS ThreadX.
 abstract: |
