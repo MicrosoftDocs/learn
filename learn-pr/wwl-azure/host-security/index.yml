@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure and manage host security
 summary: Learn to lock down the devices, virtual machines, and other components that run your applications in Azure.
 abstract: |

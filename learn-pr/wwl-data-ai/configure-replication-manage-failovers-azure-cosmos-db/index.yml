@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
 title: Configure replication and manage failovers in Azure Cosmos DB
 summary: Replicate data across the globe and manage automatic or manual failovers in Azure Cosmos DB.
 abstract: |

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Azure networking services
 summary: In this module, you take a look at several of the core networking resources that are available in Azure. You learn about Azure Virtual Network, which you can configure into a customized network environment that meets your company's needs. You also learn how you can use Azure VPN Gateway and Azure ExpressRoute to create secure communication tunnels between your company's different locations.
 abstract: |

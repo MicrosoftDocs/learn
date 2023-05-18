@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
+  ms.subservice: mldata
 title: Make data available in Azure Machine Learning
 summary: Learn about how to connect to data from the Azure Machine Learning workspace. You'll be introduced to datastores and data assets.
 abstract: |

@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
 title: Implement error handling with Transact-SQL
 summary: Transact-SQL is a powerful declarative language that lets you explore and manipulate your database. As the complexity of your programs increase, so does the risk of errors occurring.
 abstract: |

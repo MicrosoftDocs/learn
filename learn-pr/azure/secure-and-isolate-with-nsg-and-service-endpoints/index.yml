@@ -7,7 +7,6 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Secure and isolate access to Azure resources by using network security groups and service endpoints
 summary: Network security groups and service endpoints help you secure your virtual machines and Azure services from unauthorized network access.
 abstract: | 

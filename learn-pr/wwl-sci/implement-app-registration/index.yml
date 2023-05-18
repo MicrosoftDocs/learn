@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement app registration
 summary: Line of business developed in-house need registration in Azure AD and assigned to users for a secure Azure solution. Explore how to implement app registration.
 abstract: |

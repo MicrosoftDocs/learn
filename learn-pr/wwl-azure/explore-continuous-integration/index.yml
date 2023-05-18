@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore continuous integration
 summary: This module details continuous integration practice and the pillars for implementing it in the development lifecycle, its benefits, and properties.
 abstract: |

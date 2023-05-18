@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore performance-based design
 summary: Explore normalization for relational databases. Investigate the impact of proper datatype usage. Compare types of indexes.
 abstract: |
