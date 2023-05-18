@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-search
 title: Create an Azure Cognitive Search solution
 summary: Unlock the hidden insights in your data with Azure Cognitive Search.
 abstract: |

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to open-source database migration on Azure
 summary: In this module, you'll learn about the issues and considerations for migrating on-premises open-source databases to Azure, the services that Azure provides to help you migrate your databases, and how to plan a migration.
 abstract: |

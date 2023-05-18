@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
 title: Describe identity concepts
 summary: Learn about the key concepts of authentication and authorization and why identity is important in securing corporate resources. You'll also learn about some identity-related services.
 abstract: |

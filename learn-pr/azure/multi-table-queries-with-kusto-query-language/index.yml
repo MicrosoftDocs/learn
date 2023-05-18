@@ -8,7 +8,7 @@ metadata:
   author: shsagir
   ms.author: shsagir
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: kusto
 title: Write multi-table queries by using Kusto Query Language
 summary: Write advanced queries in Kusto Query Language to gain deeper insights by combining data from several tables. Learn how to use the table-level operators `lookup`, `join`, `union`, and `materialize`, and the new aggregation functions `arg_min` and `arg_max`. You'll also communicate these results visually in charts.
 abstract: |

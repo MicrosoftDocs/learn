@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-cli
 title: Create Azure resources by using Azure CLI
 summary: This module explains Azure CLI to create Azure resources, run templates, and detail Azure CLI commands.
 abstract: |

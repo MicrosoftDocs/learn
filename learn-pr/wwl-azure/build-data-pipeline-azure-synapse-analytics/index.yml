@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.service: synapse-analytics
+  ms.subservice: pipeline
 title: Build a data pipeline in Azure Synapse Analytics
 summary: Pipelines are the lifeblood of a data analytics solution. Learn how to use Azure Synapse Analytics pipelines to build integrated data solutions that extract, transform, and load data across diverse systems.
 abstract: |

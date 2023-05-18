@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design and implement private access to Azure Services
 summary: You'll learn to design and implement private access to Azure Services with Azure Private Link, and virtual network service endpoints.
 abstract: |

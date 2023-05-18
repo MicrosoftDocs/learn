@@ -8,7 +8,7 @@ metadata:
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: purview 
 title: Deploy Microsoft Purview and scan an Azure Data Lake resource using the Azure portal
 summary: "Microsoft Purview is a data governance service that allows you to understand and manage data in your business by answering questions like: What kind of data do I have? Where is my sensitive data? Where did my data come from? This guide will help you get started with Microsoft Purview by deploying a Microsoft Purview account through the Azure portal, and registering an Azure Storage data source."
 abstract: |

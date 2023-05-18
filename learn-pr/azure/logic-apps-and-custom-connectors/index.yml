@@ -7,8 +7,8 @@ metadata:
   author: ecfan
   ms.author: estfan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW
+  ms.service: logic-apps
 title: Call an API from an Azure Logic Apps workflow using a custom connector
 summary: Call any Web API from a logic app workflow using the custom connector.
 abstract: |

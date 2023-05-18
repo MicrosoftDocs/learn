@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: t-sql
 title: Use built-in functions and GROUP BY in Transact-SQL
 summary: Learn how to use functions in Transact-SQL, and how to group aggregated results.
 abstract: |

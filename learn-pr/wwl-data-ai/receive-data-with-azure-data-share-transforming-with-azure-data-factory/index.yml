@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: data-factory
 title: Send and receive data using Azure Data Share and transform data using Azure Data Factory
 summary: Learn how to ingest data from Azure Data Share into Azure Data Factory pipelines to build automated ingestion pipelines.
 abstract: |

@@ -8,7 +8,8 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.service: azure-python
+  ms.devlang: python
 title: Create and manage projects in Python
 summary: To manage projects, you need a virtual environment, packages that will help you develop faster, and a strategy for maintaining packages.
 abstract: |

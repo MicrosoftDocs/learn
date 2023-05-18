@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: identity-platform
 title: Explore the Microsoft identity platform
 summary: Learn the core features and functionality of the Microsoft identity platform including authentication, libraries, and app management tools.
 abstract: |

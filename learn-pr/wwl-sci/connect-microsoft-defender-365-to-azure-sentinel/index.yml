@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Connect Microsoft 365 Defender to Microsoft Sentinel
 summary: Learn about the configuration options and data provided by Microsoft Sentinel connectors for Microsoft 365 Defender.
 abstract: |

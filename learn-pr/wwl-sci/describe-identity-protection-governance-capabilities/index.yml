@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: active-directory
 title: Describe the identity protection and governance capabilities of Azure AD
 summary: Azure AD provides identity protection and governance capabilities.  Learn about these capabilities, the use cases, and benefits.
 abstract: |

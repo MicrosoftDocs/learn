@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Examine approaches to device management at scale
 summary: This module introduces you to the approaches for applying device management tasks to large numbers of devices based on device properties or other identifying characteristics.
 abstract: |

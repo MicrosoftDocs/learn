@@ -7,7 +7,7 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot network security issues with Microsoft Azure
 summary: Troubleshoot network issues revolving around WAF, NSG, Azure Firewall, latency within a virtual network.
 abstract: |

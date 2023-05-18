@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 title: Create Power BI model relationships
 summary: Power BI model relationships form the basis of a tabular model. Define Power BI model relationships, set up relationships, recognize DAX relationship functions, and describe relationship evaluation.
 abstract: |

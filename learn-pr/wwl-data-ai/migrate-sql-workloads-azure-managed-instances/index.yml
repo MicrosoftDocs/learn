@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-managed-instance 
 title: Migrate SQL workloads to Azure Managed Instances
 summary: Learners will be able to demonstrate the benefits and processes for moving a SQL Server database to an Azure SQL Database Managed Instance.
 abstract: |
