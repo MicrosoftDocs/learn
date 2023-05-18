@@ -7,7 +7,6 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Dynamically meet changing web app performance requirements with autoscale rules
 summary: Respond to periods of high activity by incrementally adding resources, and then removing these resources when activity drops, to reduce costs.
 abstract: |

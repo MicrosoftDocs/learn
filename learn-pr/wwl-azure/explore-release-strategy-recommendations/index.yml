@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore release recommendations
 summary: This module explores the critical release strategy recommendations that organizations must consider when designing automated deployments and explains how to define components of a release pipeline and artifact sources, create approves, and configure release gates.
 abstract: |

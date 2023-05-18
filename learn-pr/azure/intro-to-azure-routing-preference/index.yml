@@ -7,7 +7,6 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to Azure Routing Preference
 summary: Describe what routing preference is and its options that helps you decide which routing preference option is appropriate for your application or service.
 abstract: |

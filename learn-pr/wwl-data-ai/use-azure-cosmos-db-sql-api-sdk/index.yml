@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Use the Azure Cosmos DB for NoSQL SDK
 summary: Learn about the Microsoft.Azure.Cosmos library, and then download the library to use in a .NET application.
 abstract: |

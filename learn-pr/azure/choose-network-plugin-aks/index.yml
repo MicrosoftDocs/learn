@@ -8,7 +8,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure-kubernetes-service
 title: Choose the best networking plugin for AKS
 summary: "Understand the key differences and considerations when selecting between Azure CNI and kubenet, two networking plugin options for an Azure Kubernetes Service cluster."
 abstract: |

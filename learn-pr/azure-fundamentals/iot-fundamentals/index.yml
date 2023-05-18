@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot
 title: Choose the best Azure IoT service for your application
 summary: Examine Azure IoT services, and choose the right service for your scenario.
 abstract: |

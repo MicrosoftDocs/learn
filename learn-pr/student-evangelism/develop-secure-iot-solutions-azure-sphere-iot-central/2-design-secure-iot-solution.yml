@@ -8,8 +8,8 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-central
   ms.custom: team=nextgen
+  ms.service: azure-sphere
 durationInMinutes: 2 # dummy number at present
 content: |
   [!include[](includes/2-design-secure-iot-solution.md)]

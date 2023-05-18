@@ -7,7 +7,7 @@ metadata:
   author: Justinha
   ms.author: justinha
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Allow users to reset their password with Azure Active Directory self-service password reset
 summary: Evaluate self-service password reset to allow users in your organization to reset their passwords or unlock their accounts. Set up, configure, and test self-service password reset.
 abstract: | 
