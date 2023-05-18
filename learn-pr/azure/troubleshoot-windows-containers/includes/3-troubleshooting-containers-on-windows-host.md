@@ -10,7 +10,7 @@ To use LogMonitor, you need to add it to your container image via the Dockerfile
 ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\MyApp.exe", "myparameter"]
 ```
 
-When using LogMonitor, you can treat Windows Containers just like Linux ones, using the "docker logs" command to fetch the output. Other logging solutions such as Azure Monitor, will also be able to catch the logs from the container.
+When using LogMonitor, you can treat Windows Containers just like Linux ones, using the "docker logs" command to fetch the output. Other logging solutions such as Azure Monitor, is also able to catch the logs from the container.
 
 When running inside your container, LogMonitor also needs a configuration file so that it knows which events/files to aggregate.
 
@@ -61,7 +61,7 @@ Below you can find an example JSON config and a Dockerfile for an IIS instance:
   }
 ```
 
-The above JSON example will collect the application logs from EventLog that are tagged as Warning or Errors. It will also capture the logs from the C:\inetpu\logs folder (which is the default log for IIS). Finally, it will also capture the ETW logs coming from the IIS providers.
+The above JSON example collects the application logs from EventLog that are tagged as Warning or Errors. It also captures the logs from the C:\inetpu\logs folder (which is the default log for IIS). Finally, it also captures the ETW logs coming from the IIS providers.
 
 Below is a Dockerfile example to monitor a web application running on IIS:
 
