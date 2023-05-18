@@ -8,7 +8,7 @@ In this unit you'll learn:
 
 ## Creating an organization level Project
 
-First we want to lay the foundation of your Project by creating a new Project. This is fairly simple and you can do this relatively quickly.
+First we want to lay the foundation of your Project by creating a new Project. This task is fairly simple and can be completed relatively quickly.
 
 1. First, in the top right corner of GitHub.com, click your profile photo, then click Your organizations.
 
@@ -19,7 +19,7 @@ First we want to lay the foundation of your Project by creating a new Project. T
 1. Once on **Your organization page**, click the name of your organization you want to create a new Project for.
 1. Under your organization name, click Projects.
 1. Then click the green button labeled New Project.
-1. Next a pop-up will prompt you to select either a template or an empty Project. Let's select a **Start from scratch** option and select **Table** and then click the green **Create button**.
+1. Next a pop-up prompts you to select either a template or an empty Project. Let's select a **Start from scratch** option and select **Table** and then click the green **Create button**.
 
 You just created a Project!
 
@@ -31,7 +31,7 @@ Let's define your Project in a couple of different ways so that your team can ea
 
 1. To edit your Project's name, description and README navigate to your newly created Project and in the top right, click the three dots to open the menu.
 1. In the menu, click Settings.
-1. And here you can edit the name of the Project and it will save automatically.
+1. Edit the name of the Project and it saves automatically.
 1. Next add a short 5-7 word description of the Project and make sure to click Save afterwards.
 1. Then to update your Project's README, under README, type out a bit more information for your team to understand why you created this Project and what you hope to accomplish with it. And when you're done make sure to click Save.
 
@@ -50,7 +50,7 @@ Let's go through the different ways to add issues and pull requests to your Proj
 
    :::image type="content" source="../media/3-project-list-view-url-sample.png" alt-text="Screenshot of a Project in List view with an example of a URL of an Issue being pasted into the Projects.":::
 
-1. Finally press return and your issue or pull request will appear as a task in your Project.
+1. Press return. Your issue or pull request appears as a task in your Project.
 
 ### Searching for an existing issue and pull request
 
@@ -64,15 +64,15 @@ Let's go through the different ways to add issues and pull requests to your Proj
 
 ### Bulk adding issues and pull request
 
-If you have an existing repository that you'd like to track using Projects bulk adding issues and pull requests saves you time and enables you to start organizing your team faster.
+If you have an existing repository that you'd like to track using Projects, you can save time by bulk adding issues and pull requests. It will allow you to start organizing your team faster.
 
 1. First, in the bottom row of the Project, click +.
 1. Next, click Add item from repository.
-1. To change the repository, click the dropdown and select a repository. The issues and pull requests will populate.
+1. To change the repository, click the dropdown and select a repository. The issues and pull requests populate.
 1. You can either select all or select the ones you want to include.
 
    :::image type="content" source="../media/3-bulk-adding-issues-and-pr.png" alt-text="Screenshot of Bulk Adding Issues and Pull requests from a Repository, with the option to search for specific Issues or Pull Requests highlighted.":::
 
 1. Once you're ready to add the issues and pull requests to your Project, click on the green button titled Add selected item in the bottom right corner.
 
-In the next unit you'll learn how to organize and prioritize your Project in order to keep your tasks on track.
+In the next unit, you'll learn how to organize and prioritize your Project in order to keep your tasks on track.
