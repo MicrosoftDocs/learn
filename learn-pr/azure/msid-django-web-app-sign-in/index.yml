@@ -2,8 +2,8 @@
 uid: learn.msid-django-web-app-sign-in
 metadata:
   moduleType: standard
-  title: Enable user sign-in to your Django web app using Azure AD
-  description: Create a Django web app that signs in users using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant and sign in the user to a Django web app.
+  title: Enable user sign-in to your Django web app by using Azure AD
+  description: Create a Django web app that signs in users by using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant, and sign in the user to a Django web app.
   ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
@@ -19,17 +19,17 @@ abstract: |
 prerequisites: |
   - Beginner level Python 3.8+ and Django web framework.
   - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
-  - An Azure Active Directory (Azure AD) tenant that you manage as a Global administrator.
+  - An Azure AD tenant that you manage as a Global administrator.
   - A user account in your own Azure AD tenant.
 iconUrl: /learn/achievements/msid-django-web-app-sign-in.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles:
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products:
   - azure-active-directory
   - msal-python
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
   - identity-access
 units:
 - learn.msid-django-web-app-sign-in.introduction
