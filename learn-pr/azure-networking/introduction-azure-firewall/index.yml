@@ -7,7 +7,7 @@ metadata:
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: firewall
 title: "Introduction to Azure Firewall"
 summary: Describe how Azure Firewall protects Azure Virtual Network resources, including the Azure Firewall features, rules, deployment options, and administration with Azure Firewall Manager.
 abstract: |

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows-server
+  ms.technology: ad-ds
 title: Manage advanced features of AD DS
 summary: Learn about advanced AD DS administration tasks, including creating trust relationships, implementing Enhanced Security Administrative Environment (ESAE) forests, monitoring and troubleshooting AD DS replication, and creating custom AD DS partitions.
 abstract: |

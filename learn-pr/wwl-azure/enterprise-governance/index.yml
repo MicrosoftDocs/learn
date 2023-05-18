@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design an enterprise governance strategy
 summary: Learn to use RBAC and Azure Policy to limit access to your Azure solutions, and determine which method is right for your security goals.
 abstract: |

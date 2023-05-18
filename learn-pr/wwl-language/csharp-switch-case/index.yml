@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Branch the flow of code using the switch-case construct in C#
 summary: Learn how to add branching logic that matches one variable or expression against many possible values.
 abstract: |

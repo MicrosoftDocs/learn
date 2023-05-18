@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: bneeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365-security
+  ms.subservice: mde
 title: Perform device investigations in Microsoft Defender for Endpoint
 summary: Microsoft Defender for Endpoint provides detailed device information, including forensics information. Learn about information available to you through Microsoft Defender for Endpoint that will aid in your investigations.
 abstract: |

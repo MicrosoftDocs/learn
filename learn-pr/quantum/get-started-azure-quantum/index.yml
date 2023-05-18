@@ -7,7 +7,7 @@ metadata:
   author: aviviano
   ms.author: amvivian
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-quantum
 title: Get started with Azure Quantum
 summary: Learn how to get started with Azure Quantum, what it has to offer, and how to create an Azure Quantum workspace to run jobs in the cloud.
 abstract: |

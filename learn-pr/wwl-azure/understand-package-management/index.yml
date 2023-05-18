@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Understand package management
 summary: This module describes package feeds, common public package sources, and how to create and publish packages.
 abstract: |

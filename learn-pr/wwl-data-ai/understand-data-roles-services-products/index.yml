@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Understand data roles, services, and products
 summary: Data is so widespread that many services and roles are needed to manage the data of an organization. This module covers types of data products, Azure data services, and the roles of data professionals.
 abstract: |
