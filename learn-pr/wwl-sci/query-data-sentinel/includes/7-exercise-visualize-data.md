@@ -10,7 +10,7 @@ In this exercise, explore logs and Microsoft Sentinel Workbooks. You perform the
 - Create and edit a custom workbook to visualize important data.
 
 > [!NOTE]
-> You must have completed the [Query and visualize data with Microsoft Sentinel Workbooks](2-exercise-setup) unit before you can complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
+> You must have completed the [Query and visualize data with Microsoft Sentinel Workbooks](../2-exercise-setup.yml) unit before you can complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
 ### Task 1: Work with Logs in Microsoft Sentinel
 

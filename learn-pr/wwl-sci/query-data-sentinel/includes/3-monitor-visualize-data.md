@@ -46,7 +46,7 @@ The following screenshot displays the logs collected in Microsoft Sentinel solut
 
 ### Queries pane
 
-Use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Queries** pane help you to write an accurate query by providing suggestions and automatically filling the expected elements of the query.
+Use the **Queries** pane to create queries that retrieve data based on the expression that you provide. The **Queries** pane helps you to write an accurate query by providing suggestions and automatically filling the expected elements of the query.
 
 Take advantage of the capabilities of the Kusto Query Language (KQL) to write a query that retrieves data from the logs. The following example illustrates how to use KQL code in your queries to identify deleted virtual machines.
 

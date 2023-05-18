@@ -22,7 +22,7 @@ On the **Azure AD Sign-in logs** page, you can expand the time range or filter t
 
 :::image type="content" source="../media/05-filter-users.png" alt-text="Screenshot that displays Sign-in Analysis with filtering of the users that sign-in to the Azure portal." border="true":::
 
-Contoso is interested in identifying the failed sign-in attempts. YOu can display these accounts by selecting the information tiles, and then select a tile or a row to display more information such as:
+Contoso is interested in identifying the failed sign-in attempts. You can display these accounts by selecting the information tiles, and then select a tile or a row to display more information such as:
 
 - **Sign-ins by location**. This section indicates the location from which the user signed in to Azure AD.
 - **Location sign-in details**. This section displays the users, their sign-in status, and the time of the sign-in attempt.
