@@ -4,7 +4,7 @@
 
 When it comes to standards, container and application log is based on Standard Output (STDOUT/STDERR). That isn't the case for some Windows applications and the Windows OS. Traditionally, Windows apps and OS logs go to other places, such as EventLogs, EventTraces, and custom log files. Because of that, tools that look for container and application logs on STDOUT won't be able to see the logs from Windows apps on containers. To solve that, Microsoft created a tool called LogMonitor to bridge this gap and aggregate all logs inside the Windows container to STDOUT.
 
-To use LogMonitor, you need to add it to your container image via the Dockerfile. As you recall, a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application, therefore the ENTRYPOINT will look like this:
+To use LogMonitor, you need to add it to your container image via the Dockerfile. As you recall, a Dockerfile is the recipe for building a container. In a Dockerfile, there are multiple directives including FROM, ADD, ENTRYPOINT, etc. ENTRYPOINT is PID 1 of the container, and the container will exit when the ENTRYPOINT process terminates. To capture the STDOUT/STDERR of the container, the LogMonitor works as a wrapper around your application, therefore the ENTRYPOINT looks like this:
 
 ```powershell
 ENTRYPOINT ["C:\\LogMonitor\\LogMonitor.exe", "C:\\MyApp.exe", "myparameter"]
@@ -98,7 +98,7 @@ hcsdiag.exe list
 hcsdiag.exe console -uvm <id>
 ```
 
-The command will list the containers (and VMs) available in the system. You can then specify the ID of the container you want to open a PowerShell session to.
+The command lists the containers (and VMs) available in the system. You can then specify the ID of the container you want to open a PowerShell session to.
 
 ## Checking container runtime logs
 
@@ -112,7 +112,7 @@ Sometimes there might be issues with the runtime setup. To check the logs of the
    Get-EventLog -LogName Application -Source Docker -After (Get-Date).AddMinutes(-5) | Sort-Object Time
    ```
 
-   The command will return the logs from the Docker Daemon. If you want to enable debug log level, you need first to modify the dockerd service parameters:
+   The command returns the logs from the Docker Daemon. If you want to enable debug log level, you need first to modify the dockerd service parameters:
 
    ```powershell
    sc.exe config docker binpath= "\"C:\Program Files\Docker\dockerd.exe\" --run-service -D"
@@ -157,4 +157,4 @@ As you can gather from the previous sections, there are many moving pieces when 
 Invoke-WebRequest https://aka.ms/Debug-ContainerHost.ps1 -UseBasicParsing | Invoke-Expression
 ```
 
-The above script will run several tests on the system automatically. Any failures will be in red, and there's a pass/fail summary at the end. You can leverage this information to further troubleshoot your system.
+The above script runs several tests on the system automatically. Any failures are in red, and there's a pass/fail summary at the end. You can leverage this information to further troubleshoot your system.

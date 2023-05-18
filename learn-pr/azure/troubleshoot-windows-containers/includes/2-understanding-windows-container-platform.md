@@ -2,7 +2,7 @@
 
 Under the hood, Moby can use either the Docker Runtime (dockerd) or containerd. Containerd is also an Open-Source project that serves as container runtime that can be used on Windows or Linux and be called by Docker, Kubernetes, etc. As an industry, containerd is being widely adopted as the preferred container runtime.
 
-When you interact with containers, you use either a Command-Line Interface (CLI) or a Graphical User Interface (GUI). For example, Docker Desktop provides both a CLI and GUI. Moby provides a CLI only. The CLI or GUI then interact with the container runtime, such as dockerd or containerd. The container runtime will in turn send the command to the Operating System.
+When you interact with containers, you use either a Command-Line Interface (CLI) or a Graphical User Interface (GUI). For example, Docker Desktop provides both a CLI and GUI. Moby provides a CLI only. The CLI or GUI then interacts with the container runtime, such as dockerd or containerd. The container runtime will in turn send the command to the Operating System.
 
 On Windows client (Windows 10 or Windows 11) you can install Docker Desktop. Docker Desktop will install all the required components in the Operating System, including Windows Subsystem for Linux (for Linux containers). You can then use either the GUI or the CLI to run either Linux containers or Windows containers. However, Windows client can run containers for development and testing only. For production workloads, you can use Windows Server. On Windows Server you can install either Moby, MCR or another supported tool for running with containerd.
 
@@ -14,7 +14,7 @@ When troubleshooting a Windows container environment, it's important to keep in 
 
 ## Host Compute Service (HCS)
 
-HCS is a management service, which acts as a layer of abstraction above the low-level functionality. The HCS is a stable API  that the runtime (Docker, containerd) can build upon, and it's also easier to use. Making a Windows container with the HCS is just a single API call. Making a Hyper-V Container instead just means adding a flag when calling into the API. 
+HCS is a management service, which acts as a layer of abstraction above the low-level functionality. The HCS is a stable API  that the runtime (Docker, containerd) can build upon, and it's also easier to use. Making a Windows container with the HCS is just a single API call. Making a Hyper-V Container instead just means to add a flag when calling into the API.
 
 ## Host Networking Service (HNS)
 
@@ -22,7 +22,7 @@ HNS is the management service for container networking. It works similarly to HC
 
 In the image above, you can see a diagram of the operation calls from a Kubernetes environment. We'll cover Kubernetes in a later section, but for now, it's important to understand what happens under the hood when a Windows container is created:
 
-- User apply Kubernetes deployment manifest (yaml) with kubectl.
+- User applies Kubernetes deployment manifest (yaml) with kubectl.
 - Kubernetes scheduler assigns the deployment to a node.
 - Kubelet (Kubernetes agent running on all nodes) sees the pending container and calls the runtime to create the container.
 - The runtime will call the lower-level APIs to HCS and HNS to actually create the container and its network. This applies for both Docker and containerd, although the Docker container runtime is being deprecated from the Kubernetes platform.
