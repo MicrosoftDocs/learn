@@ -3,11 +3,11 @@ uid: learn.sql-server-2022-security-scalability-availability
 metadata:
   title: Exploring new capabilities in security, scalability, and availability in SQL Server 2022         # Do not edit: title must be "Introduction to (product)"
   description: "TODO"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 3/2/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: VanMSFT      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: vanto          # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-sqlserver         # Edit as appropriate for your portfolio area
+  ms.date: 05/17/2023
+  author: VanMSFT
+  ms.author: vanto
+  ms.topic: interactive-tutorial
+  ms.prod: learning-sqlserver
 ###########################################################################
 ###
 ### Do not edit: title must be "Introduction to (product)"
