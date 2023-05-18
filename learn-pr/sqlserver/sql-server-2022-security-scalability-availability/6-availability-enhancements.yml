@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
-uid: learn.sql-server-2022-security-scalability-availability.knowledge-check
+uid: learn.sql-server-2022-security-scalability-availability.availability-enhancements
 title: Knowledge check
 metadata:
   title: Knowledge check
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 3/2/2023
+  ms.date: 05/17/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-sqlserver
 durationInMinutes: 1
+content: |
+  [!include[](includes/6-availability-enhancements.md)]
 ###########################################################################
 ###
 ### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
@@ -33,7 +35,6 @@ durationInMinutes: 1
 ###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
 ###
 ###########################################################################
-content: |
 quiz:
   questions:
   - content: ""
