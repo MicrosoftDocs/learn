@@ -20,13 +20,17 @@ As mentioned above there are two types of charts you can create from insights: c
 
 You can create current charts to visualize your Project items. For example, you can create charts to show how many items are assigned to each individual, or how many issues are assigned to each upcoming iteration. You can also use filters to manipulate the data used to build your chart. For example, you can create a chart showing how much upcoming work you have, but limit those results to particular labels or assignees.
 
-:::image type="content" source="../media/6-current-chart-example.png" alt-text="Example of a current bar chart tracking the amount of hours spent per seven iteration phases and color coded by amount of time spent on Bugs, Feedback, Backend, and UI work.":::
+:::image type="content" source="../media/6-current-chart-example.png" alt-text="Screenshot example of a current bar chart tracking the amount of hours spent per seven iteration phases and color coded by amount of time spent on Bugs, Feedback, Backend, and UI work.":::
 
 #### Historical charts
 
 Historical charts are currently available as a feature preview for organizations using GitHub Team and are generally available for organizations using GitHub Enterprise Cloud. Historical charts are time-based charts that allow you to view your Project's trends and progress. You can view the number of items, grouped by status and other fields, over time. The default "Burn up" chart shows item status over time, allowing you to visualize progress and spot patterns over time.
 
-:::image type="content" source="../media/6-historical-chart-example.png" alt-text="Example of a historic stacked area line graph showing the amount of hours spent on to dos, in progress, and completed tasks during the month of July.":::
+:::image type="content" source="../media/6-historical-chart-example.png" alt-text="":::
+
+:::image type="complex" border="false" source="../media/6-historical-chart-example.png" alt-text="Screenshot example of a historic stacked area line graph showing progress during the month of July.":::
+   Screenshot example of a historic stacked area line graph showing the amount of hours spent on to dos, in progress, and completed tasks during the month of July.
+:::image-end:::
 
 ### Creating and customizing charts
 
@@ -70,11 +74,13 @@ To enable automation first go to the top-right corner of your Project and click 
 
 1. Next, in the menu, click **Workflows**.
 
-   :::image type="content" source="../media/6-automation-workflows-menu.png" alt-text="Workflows menu on Projects that contains the options, Workflows, Archived items, and Settings with Workflows highlighted.":::
+   :::image type="content" source="../media/6-automation-workflows-menu.png" alt-text="Screenshot of the Workflows menu on Projects that contains the options, Workflows, Archived items, and Settings with Workflows highlighted.":::
 
 1. In the left column, under Default workflows, select **Item added to project**.
 
-   :::image type="content" source="../media/6-automation-default-workflows-items.png" alt-text="An image of the menu to enable workflows once an action occurs. Options include Item added to Project, Item reopened, Item closed, Code changes requested, Code review approved, Pull request merged with Item added to Project highlighted.":::
+   :::image type="complex" border="false" source="../media/6-automation-default-workflows-items.png" alt-text="Screenshot of the menu to enable workflows once an action occurs.":::
+    Screenshot of the menu to enable workflows once an action occurs. Options include Item added to Project, Item reopened, Item closed, Code changes requested, Code review approved, Pull request merged with Item added to Project highlighted.
+:::image-end:::
 
 1. Now in the center of the page, where it says When, ensure that both issues and pull requests are selected.
 1. Below click on Set and click Status:Todo.

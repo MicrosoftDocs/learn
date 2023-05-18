@@ -1,4 +1,4 @@
-﻿Now that you've created your Project, added issues and pull requests, and it's now organize, let's talk about how to:
+﻿Now that you've created your Project, added issues and pull requests, and it's now organized, let's talk about how to:
 
 - Provide visibility and access to your Project
 - And how to close and delete your Project
@@ -25,7 +25,7 @@ To change your Project's visibility:
 1. Then select the Settings to access to your Project.
 1. Next to the Visibility in the "Danger zone," select Private or Public.
 
-   :::image type="content" source="../media/5-danger-zone-settings.png" alt-text="Danger Zone settings with the option to make your Project Public or Private.":::
+   :::image type="content" source="../media/5-danger-zone-settings.png" alt-text="Screenshot of the Danger Zone settings with the option to make your Project Public or Private.":::
 
 ### Who has access and who can manage access to your Project
 
@@ -62,13 +62,13 @@ Types of Roles and access to your Project
    - Change their role in your Project
    - Or remove them from your Project
 
-   :::image type="content" source="../media/5-manage-access-settings.png" alt-text="Manage access settings with the ability to add a single collaborator or team and select their role or remove them.":::
+   :::image type="content" source="../media/5-manage-access-settings.png" alt-text="Screenshot of the Manage access settings with the ability to add a single collaborator or team and select their role or remove them.":::
 
 ### Adding a Project to a team
 
 You can add Projects to your team to give the whole team collaborator access to their Projects. When you add a Project to a team, that Project is listed on the team's Projects page, making it easier for members to identify which Projects a particular team uses.
 
-Teams are granted read permissions on any Project they're added to. To change permissions see the above section, Who has access and who can manage access to your Project
+Teams are granted read permissions on any Project they're added to. To change permissions see the above section, "[Who has access and who can manage access to your Project](#who-has-access-and-who-can-manage-access-to-your-project)".
 
 Steps to adding Projects to teams:
 
@@ -84,7 +84,7 @@ Steps to adding Projects to teams:
 
 You can list relevant Projects in a repository so your team can access information they need to stay up-to-date. But it is worth noting you can only list Projects that are owned by the same user or organization that owns the repository. In order for repository members to see a Project listed in a repository, they must have visibility to the Project.
 
-To change permissions see the above section, Who has access and who can manage access to your project.
+To change permissions see the above section, "[Who has access and who can manage access to your Project](#who-has-access-and-who-can-manage-access-to-your-project)".
 
 Here are the steps to add a Project to a repository:
 
@@ -92,7 +92,7 @@ Here are the steps to add a Project to a repository:
 1. Click Projects.
 1. Next, click **Add project**.
 
-   :::image type="content" source="../media/5-add-project.png" alt-text="Green Add project button to add to a repository.":::
+   :::image type="content" source="../media/5-add-project.png" alt-text="screenshot of the green Add project button to add to a repository.":::
 
 1. In the search bar that appears, search for Projects that are owned by the same user or organization that owns the repository.
 1. Then, click on a Project to list the Project in your repository.
@@ -116,6 +116,6 @@ Below are steps on how to navigate to them:
 
    - If you select **Delete project**, you'll be prompted to read the warnings, then type the name of your Project into the text box.
 
-   :::image type="content" source="../media/5-danger-zone-options.png" alt-text="Danger zone section with the option to change visibility, close Project and delete Project with delete Project highlighted.":::
+   :::image type="content" source="../media/5-danger-zone-options.png" alt-text="Screenshot of the Danger zone section with the option to change visibility, close Project and delete Project with delete Project highlighted.":::
 
 Next up, we'll be reviewing insights and automation in Projects.

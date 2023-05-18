@@ -39,7 +39,7 @@ quiz:
     choices:
     - content: "Date"
       isCorrect: false
-      explanation: "The Date field allows you assign a date to the issue or pull request in your project."
+      explanation: "The Date field allows you to assign a date to the issue or pull request in your project."
     - content: "Single select"
       isCorrect: true
       explanation: "Single select field allows you to create multiple groups like Priority grouping in order to help you organize and prioritize your Project."
