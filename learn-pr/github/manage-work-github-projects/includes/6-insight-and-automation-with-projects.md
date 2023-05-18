@@ -26,8 +26,6 @@ You can create current charts to visualize your Project items. For example, you 
 
 Historical charts are currently available as a feature preview for organizations using GitHub Team and are generally available for organizations using GitHub Enterprise Cloud. Historical charts are time-based charts that allow you to view your Project's trends and progress. You can view the number of items, grouped by status and other fields, over time. The default "Burn up" chart shows item status over time, allowing you to visualize progress and spot patterns over time.
 
-:::image type="content" source="../media/6-historical-chart-example.png" alt-text="":::
-
 :::image type="complex" border="false" source="../media/6-historical-chart-example.png" alt-text="Screenshot example of a historic stacked area line graph showing progress during the month of July.":::
    Screenshot example of a historic stacked area line graph showing the amount of hours spent on to dos, in progress, and completed tasks during the month of July.
 :::image-end:::
