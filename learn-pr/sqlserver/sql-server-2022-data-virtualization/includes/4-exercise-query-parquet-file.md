@@ -98,8 +98,8 @@ GO
 
 CREATE EXTERNAL DATA SOURCE Public_Covid
 WITH (
-    LOCATION = 'abs://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest',',
-        CREDENTIAL = [PublicCredential]
+    LOCATION = 'abs://pandemicdatalake.blob.core.windows.net/public/curated/covid-19/bing_covid-19_data/latest',
+    CREDENTIAL = [PublicCredential]
 )
 GO
 ```

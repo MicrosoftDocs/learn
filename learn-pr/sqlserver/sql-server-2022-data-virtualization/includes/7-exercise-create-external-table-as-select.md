@@ -1,4 +1,10 @@
-In this exercise, we use CETAS to export a table as Parquet.
+In this exercise, you'll:
+
+- Use CETAS to export a table as Parquet.
+- Use CETAS to move cold data out of the database.
+- Use a view to query the data that includes an external table.
+- Use wildcard search to query the data.
+- learn about folder elimination and metadata information
 
 ## Prerequisites
 
@@ -9,9 +15,9 @@ In this exercise, we use CETAS to export a table as Parquet.
 - A blob container SAS Token created with READ, WRITE, LIST and CREATE permissions to be used for CETAS. For more information, see [CREATE EXTERNAL TABLE AS SELECT (CETAS) Permissions](/sql/t-sql/statements/create-external-table-as-select-transact-sql#permissions).
 - To create a SAS token, see [Create shared access signature (SAS) tokens for your storage containers](/azure/cognitive-services/translator/document-translation/how-to-guides/create-sas-tokens).
 
-## Scenario using CETAS to export a table as Parquet
+## Use CETAS to export a table as Parquet
 
-You're working with the business analytics team, and need to export older data from a table to an Azure Blob Storage container. You would rather the business analytics team run their report queries that use data older than 2012 from this exported data, than running their reports directly querying SQL Server.
+Imagine that you're working with the business analytics team, and need to export older data from a table to an Azure Blob Storage container. You would rather the business analytics team run their report queries that use data older than 2012 from this exported data, than running their reports directly querying SQL Server.
 
 1. Configure PolyBase.
 
@@ -31,6 +37,8 @@ You're working with the business analytics team, and need to export older data f
 1. Execute the following query to understand the data that you want to export. In this case, we're looking for any data that is from 2012 or older.
 
     ```sql
+    Use AdventureWorks2022
+    GO
     -- RECORDS BY YEARS
     SELECT COUNT(*) AS QTY, DATEPART(YYYY, [DUEDATE]) AS [YEAR]
     FROM  [PURCHASING].[PURCHASEORDERDETAIL] 
@@ -116,7 +124,7 @@ You're working with the business analytics team, and need to export older data f
 
    Now that the data has been exported to Parquet, the data can be easily accessible through the external table. The business analytics team can query the external table, or point their reporting tool at the Parquet file.
 
-## Scenario using CETAS to move cold data out of the database
+## Use CETAS to move cold data out of the database
 
 To keep the data manageable, your company has decided that data that is older than 2014 should be moved from the database. However, all of the data must still be accessible. For this example, we export the data through CETAS, and generate several external tables that we can query later on. We'll go through an example of using a view with UNION statements to query the data, as well as creating a single external table that uses a wildcard search to search through the subfolders of the exported data.
 

@@ -6,13 +6,13 @@ PolyBase is the feature that SQL Server uses to enable the data virtualization c
 
 SQL Server 2022 introduces the newest version of PolyBase, and with it the capability to query data where it lives, virtualize data, and use REST APIs. REST APIs enable SQL Server to be both more flexible and lightweight, while expanding its range of supported connectors and file formats.
 
-SQL Server 2022 now supports CSV, Parquet, and Deltafiles stored on Azure Storage Account v2, Azure Data Lake Storage Gen2, or any simple storage service (S3)–compatible object storage. The S3-compatible object storage can be an on-premises offering or an offering in the cloud.
+SQL Server 2022 now supports CSV, Parquet, and Delta files stored on Azure Blob Storage, Azure Data Lake Storage Gen2, or any simple storage service (S3)–compatible object storage. The S3-compatible object storage can be an on-premises, in the cloud, or a hybrid solution.
 
 SQL Server 2022 can now use `Create External Table as Select` (CETAS), together with commands like `OPENROWSET`, `Create External Table`  (CET), and all the new T-SQL enhancements, making SQL Server 2022 a powerful data hub.
 
 ## S3-compatible object storage
 
-SQL Server 2022 introduces object storage integration to the data platform, enabling you to integrate SQL Server with S3-compatible object storage in addition to Azure Storage. To provide this integration, SQL Server has been enhanced with a new S3 connector, which uses the S3 REST API to connect to any provider of S3-compatible object storage.  
+SQL Server 2022 now supports S3-compatible object storage, as well as Azure Storage. To enable this integration, SQL Server 2022 uses a new REST API connector framework architecture that follow the S3 framework. Any object storage that supports the S3 framework will also work with SQL Server 2022.
 
 Object storage, also known as object-based storage, is a strategy that manages and manipulates data storage as distinct units, called objects. These objects are kept in a single storehouse and are not ingrained in files inside other folders. Instead, object storage combines the pieces of data that make up a file, adds all its relevant metadata to that file, and attaches a custom identifier.
 
@@ -22,11 +22,9 @@ Some of the main differences of object storage compared to traditional file syst
 
 - Files can have different attributes, like tags.
 
-- Object storage in general, are the go-to solution for Big Data, Machine Learning, and analytics platforms.
-
 - Object storage is a more cost-effective solution to scale and easier to maintain.
 
-- Object storage is optimized for Big Data, Internet of Things (IoT) workloads, and large amounts of data.
+- Object storage is optimized for large amounts of data, such as Big Data, Internet of Things (IoT), Machine Learning, and analytics.
 
 - Object storage is not recommended for high transactional workloads.
 
@@ -61,7 +59,7 @@ By default, PolyBase uses ports ranging from 16450 to 16460.
 
 :::image type="content" source="../media/polybase-port-ranges.png" alt-text="Image of the setup executable of SQL Server showing the PolyBase port range configuration.":::
 
-After the feature installation, there's two PolyBase services installed:
+The setup wizard will install two PolyBase services:
 
 - **SQL Server PolyBase Engine**, which:  
   - Service executable: `mpdwsvc.exe -dweng`
@@ -94,7 +92,7 @@ For complete information and prerequisites on the PolyBase installation, see:
 
 ## PolyBase services vs PolyBase feature
 
-SQL Server 2022 adds support within the database engine using REST API interfaces to access data in Azure Blob storage, Azure Data Lake Storage Gen2, S3-compatible object storage providers (that includes file formats such as Parquet, Delta, and CSV).
+SQL Server 2022 introduces the new architecture of PolyBase, REST API-based. This new architecture is used to access Azure Data Lake Storage Gen2, Azure Blob Storage, any S3-compatible object Storage, and file formats such as Parquet, Delta, and CSV files.
 
 This new architecture does not require PolyBase services to be running or configured, only PolyBase feature enabled on an instance-level using the `sp_configure` option.
 

@@ -31,3 +31,11 @@ quiz:
     - content: "False"
       isCorrect: false
       explanation: "The PolyBase services don't need to be running, but the PolyBase Query Service for External Data option needs to be installed."
+  - content: "SQL Server 2022 supports any type of object storage."
+    choices: 
+    - content: "True"
+      isCorrect: false
+      explanation: "SQL Server 2022 only supports object storage that are S3-compatible."
+    - content: "False"
+      isCorrect: true
+      explanation: "SQL Server 2022 only supports object storage that are S3-compatible."

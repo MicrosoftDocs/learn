@@ -80,7 +80,7 @@ Here's an example of using CETAS to export a table from SQL Server as Parquet:
 ```sql
 CREATE EXTERNAL TABLE ext_sales
 WITH (
-      LOCATION = '/cetas’,
+      LOCATION = '/cetas',
       DATA_SOURCE = s3_eds,
       FILE_FORMAT = ParquetFileFormat
      ) AS
@@ -97,7 +97,7 @@ Here's an example of using CETAS to read a delta file and exporting as Parquet:
 ```sql
 CREATE EXTERNAL TABLE Delta_to_Parquet
 WITH (
-        LOCATION = '/backup/sales’,
+        LOCATION = '/backup/sales',
         DATA_SOURCE = s3_parquet,
         FILE_FORMAT = ParquetFileFormat
       ) AS
