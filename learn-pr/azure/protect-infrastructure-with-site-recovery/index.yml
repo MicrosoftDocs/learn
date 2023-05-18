@@ -7,7 +7,7 @@ metadata:
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: site-recovery
 title: Protect your Azure infrastructure with Azure Site Recovery
 summary: Provide disaster recovery for your Azure infrastructure by customizing replication, failover, and failback of Azure virtual machines with Azure Site Recovery.
 abstract: | 

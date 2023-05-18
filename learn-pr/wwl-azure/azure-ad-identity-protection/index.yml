@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Deploy Azure AD identity protection
 summary: Protect identities in Azure AD using Conditional Access, MFA, access reviews, and other capabilities.
 abstract: |

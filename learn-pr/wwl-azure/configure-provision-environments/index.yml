@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Provision and test environments
 summary: This module details target environment provisioning, service connections creation process, and test infrastructure setup. You will learn how to configure functional test automation and run availability tests.
 abstract: |

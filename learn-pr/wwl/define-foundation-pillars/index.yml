@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sallybre
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
 title: 'Define the foundation pillars of DevOps: Architecture and Technology'
 summary: 'There are three things required to make DevOps happen: the cultural component, tools and technology, and architecture. Discover the last two foundation pillars of DevOps, Architecture and Technology!'
 abstract: |

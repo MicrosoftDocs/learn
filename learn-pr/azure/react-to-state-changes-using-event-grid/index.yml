@@ -7,7 +7,7 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: event-grid
 title: React to state changes in your Azure services by using Event Grid
 summary: Build a serverless application architecture, automate your operations, and integrate applications by handling Azure events with Event Grid.
 abstract: | 

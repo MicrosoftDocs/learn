@@ -8,7 +8,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Deploy a containerized application on Azure Kubernetes Service
 summary: Rapidly deploy a containerized application hosted on Azure Container Services or any other registrar to Azure Kubernetes Service by using declarative manifest files.
 abstract: |

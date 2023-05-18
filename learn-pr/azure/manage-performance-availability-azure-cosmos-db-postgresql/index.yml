@@ -12,7 +12,8 @@ metadata:
   manager: jroth
   ms.reviewer: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: postgresql
 title: Manage performance and availability in Azure Cosmos DB for PostgreSQL
 summary: |
   Azure Cosmos DB for PostgreSQL provides a highly scalable distributed database solution, reliably and securely managed on Azure. Scaled resources, read replication, and data availability can be managed to improve performance in Azure Cosmos DB for PostgreSQL.

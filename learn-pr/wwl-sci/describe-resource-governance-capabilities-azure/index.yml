@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe resource governance capabilities in Azure
 summary: Azure governance capabilities provide mechanisms and processes for organizations to maintain control over their applications and resources. Learn how Azure policy, Blueprints, and Microsoft Purview help organizations govern their resources and applications.
 abstract: |

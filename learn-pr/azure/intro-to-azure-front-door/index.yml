@@ -8,7 +8,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: frontdoor
 title: Introduction to Azure Front Door
 summary: Describe how Azure Front Door provides a fast, reliable, and secure modern cloud content delivery network. Determine whether Azure Front Door can help you transform your global consumer and enterprise apps into more secure, high-performing, personalized modern apps.
 abstract: |
