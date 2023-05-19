@@ -40,6 +40,8 @@ Data virtualization use cases:
 
 - **Data hub:** SQL Server can be used as a centralized hub that connects, protects, and query different data sources and files, hiding all the complexity of the application. There's no need to use an ETL tool to aggregate and to copy or move the data to a staging area.
 
+   :::image type="content" source="../media/sql-server-data-hub.png" alt-text="Image of SQL Server as a data hub for data virtualization.":::
+
 - **In-database analytics:** Use and combine all SQL Server capabilities and familiarity when using data virtualization.
 
 - Off-load or export data to other data sources.

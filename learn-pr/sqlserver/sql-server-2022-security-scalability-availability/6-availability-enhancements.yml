@@ -1,94 +1,34 @@
 ### YamlMime:ModuleUnit
 uid: learn.sql-server-2022-security-scalability-availability.availability-enhancements
-title: Knowledge check
+title: Availability enhancements in SQL Server 2022
 metadata:
-  title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  title: Availability enhancements in SQL Server 2022
+  description: "Learn about the availability enhancements in SQL Server 2022, including contained availability groups, snapshot backups, and backup compression."
   ms.date: 05/17/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
-durationInMinutes: 1
+durationInMinutes: 10
 content: |
   [!include[](includes/6-availability-enhancements.md)]
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-### Question content requirements:
-###  - Write 5 questions
-###  - Questions 1,2 must test this Learning Objective: "Describe how (attributes) of (product) work to (solve problem)"
-###      Guidance: These two questions can be short, no need for a long scenario to analyze. Test if they understand how the product works.
-###      Example: "What differentiates an action from a control action in a Logic App?"
-###  - Questions 3,4,5 must test this Learning Objective: "Evaluate whether (product) is appropriate to (general product use case)"
-###      Guidance: Use scenario questions that ask the learner to analyze a situation with the "when to use" criteria presented in the module.
-###      Example: "A financial company is building a system to let brokers trade financial instruments. The system must monitor market conditions, detect changes, and execute trades. It will need to handle a large volume of transactions quickly. The faster it completes trades, the more of an advantage the company will have over its competitors. Which requirement of this system would be difficult for Azure Logic Apps to satisfy?"
-###
-###########################################################################
 quiz:
+  title: Knowledge check - Choose the best answer
   questions:
-  - content: ""
-    choices:
-    - content: ""
+  - content: "A contained availability group replicates which objects?"
+    choices: 
+    - content: "Linked Servers."
+      isCorrect: false
+      explanation: "A contained availability group does replicate Linked Servers, but also more objects on the list."
+    - content: "SQL Agent Jobs."
+      isCorrect: false
+      explanation: "A contained availability group does replicate SQL Agent Jobs, but also more objects on the list."
+    - content: "Logins."
+      isCorrect: false
+      explanation: "A contained availability group does replicate logins, but also more objects on the list."
+    - content: "A, B, and C."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct."
+    - content: "B and C."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "A contained availability group also replicates Linked Servers."

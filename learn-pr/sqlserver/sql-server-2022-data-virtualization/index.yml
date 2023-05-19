@@ -26,6 +26,8 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
+  - database-administrator
+  - data-engineer
   - administrator
 products:
   - sql-server

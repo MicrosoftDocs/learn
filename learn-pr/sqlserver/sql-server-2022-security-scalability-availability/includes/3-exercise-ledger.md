@@ -1,12 +1,7 @@
 
-Imagine that you are an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage the employee's salaries. You were asked to audit the data in the database to make sure the data is correct and no one has tampered with it.
+Imagine that you're an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage employees salaries. You were asked to audit the data in the database to make sure the data is correct and no one has tampered with it.
 
-<!--
-- Alice, who is an auditor.
-- Jay, the DBA of the company. He thinks he should earn more money for the type of work he's doing :)
-Jay wants to maliciously increase his salary. Because he's the DBA of the Contoso database, he thinks he can perform updates in the Employees table without anyone noticing. Unfortunately for Jay, the Employees table is an updatable ledger table, which means his change, along with his identity and the timestamp, have been persisted in a tamper-evident ledger data structures. -->
-
-In this exercise, we see how you can use ledger in a real world scenario of auditing data using ledger tables. We will perform the following tasks:
+In this exercise, we see how you can use ledger in a real world scenario of auditing data using ledger tables. We'll perform the following tasks:
 
 - Create a database called `ContosoHR`.
 - create an updatable ledger table called `Employees`.
@@ -14,11 +9,9 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 - Verify the data can be fully trusted.
 - Query the history table and ledger views to see the tracking that is taking place and the relationship between the tables.
 
-## Prerequisistes
+## Prerequisites
 
-- SQL Server 2022.
-- SQL Server must be configured for mixed mode authentication.
-- Virtual machine or computer with minimum 2 CPUs with 8 GB of RAM.
+- SQL Server 2022 installed.
 - The latest version of SQL Server Management Studio (SSMS).
 
 ## Create the database and ledger table
@@ -29,7 +22,6 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     USE master;
     GO
     -- Create the ContosoHR database
-    --
     DROP DATABASE IF EXISTS ContosoHR;
     GO
     CREATE DATABASE ContosoHR;
@@ -38,7 +30,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     GO
     ```
 
-1. Create an updatable ledger table for employees by executing the following script:
+1. Create an updatable ledger table for `Employees` by executing the following script:
 
     ```sql
     USE ContosoHR;
@@ -65,7 +57,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 
     ![Screenshot of the newly created ledger table in SSMS Object Explorer.](../media/ssms-object-explorer.png)
 
-1. Populate the Employees table with some sample data by executing the following script:
+1. Populate the `Employees` table with some sample data by executing the following script:
 
     ```sql
     USE ContosoHR;
@@ -89,7 +81,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 
 ## Explore the data using ledger views
 
-1. Examine the columns using a SELECT query. The following script has two examples of how to query the data. The first example uses the `*` wildcard to return all columns. The second example lists out all the columns. Notice how the table has additional columns that are not part of the original table definition. These columns are used by the ledger feature to track the changes to the data.
+1. Examine the columns using a `SELECT` query. The following script has two examples of how to query the data. The first example uses the `*` wildcard to return all columns. The second example lists out all the columns. Notice how the table has other columns that aren't part of the original table definition. These columns are used by the ledger feature to track the changes to the data.
 
     ```sql
     USE ContosoHR;
@@ -105,7 +97,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     GO
     ```
 
-1. Look at the employees ledger view by executing the following SELECT query. This is a view from the `Employees` table and a ledger history table. The ledger has the transaction information from hidden columns in the table, plus an indication of what type of operation was performed on the ledger for a specific row.
+1. Look at the `Employees_Ledger` view by executing the following `SELECT` query. This is a view from the `Employees` table and a ledger history table. The ledger has the transaction information from hidden columns in the table, plus an indication of what type of operation was performed on the ledger for a specific row.
 
     ```sql
     USE ContosoHR;
@@ -145,7 +137,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     GO
     ```
 
-1. To verify the integrity of the ledger, let's generate a digest by executing the stored procecedure `sp_generate_database_ledger_digest`. Save the output value (including the brackets) to be used for verifying the ledger.
+1. To verify the integrity of the ledger, let's generate a digest by executing the stored procedure `sp_generate_database_ledger_digest`. Save the output value (including the brackets) to be used for verifying the ledger.
 
     ```sql
     USE ContosoHR;
@@ -165,16 +157,16 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 
 ## Make changes to the data
 
-Now that we've looked at some of the functionality of ledger in SQL Server 2022, let's make some changes to the data and see how the ledger tracks the changes. This will help you in your task of auditing the data in the `ContosoHR` database, and specifically, the `Employees` table.
+Now that we've looked at some of the functionality of ledger in SQL Server 2022, let's make some changes to the data and see how the ledger tracks the changes. This helps you in your task of auditing the data in the `ContosoHR` database, and specifically, the `Employees` table.
 
-1. Pretend that Jay, an employee at the company has logged into the database, and executes the query below to add $50,000 to their salary. Unfortunately for Jay, the `Employees` table is an updatable ledger table. That means their change, along with their identity and the timestamp have been persisted in a tamper-evident ledger data structures.
+1. Pretend that Jay, an employee at the company has logged into the database, and executes the following query to add 50,000 to their salary. Unfortunately for Jay, the `Employees` table is an updatable ledger table. That means their change, along with their identity and the timestamp have been persisted in a tamper-evident ledger data structure.
 
     ```sql
     UPDATE [dbo].[Employees] SET [Salary] = [Salary] + 50000
     WHERE [FirstName] = N'Jay' AND [LastName] = N'Adams'
     ```
 
-1. If you use a SELECT query on the `Employees` table, you can see that Jay's salary has been updated from earlier.
+1. If you use a `SELECT` query on the `Employees` table, you can see that Jay's salary has been updated from earlier.
 
     ```sql
     SELECT * FROM [dbo].[Employees]
@@ -211,10 +203,10 @@ Let's assume that a few weeks later, you're doing a routine audit of changes in 
 
    By using this digest, we know that:
 
-   - The data is valid based on the time the digest was captured
-   - The internal blocks match the current data changes for the update to Jay's salary. If someone had to fake the data for the `Employees` table without doing a T-SQL UPDATE command to make the system *think* Jay's current salary was 50,000 more than it really is, the system would have raised an error that hashes of the changes don't match the current data. You would see a `Ledger verification failed` message.
+   - The data is valid based on the time the digest was captured.
+   - The internal blocks match the current data changes for the update to Jay's salary. If someone had to fake the data for the `Employees` table without doing a T-SQL `UPDATE` command to make the system *think* Jay's current salary was 50,000 more than it really is, the system would have raised an error that hashes of the changes don't match the current data. You would see a `Ledger verification failed` message.
 
-1. Now that you've verified the data hasn't been tampered with, you browse the content of the ledger view for the `Employees` table. You notice a suspicious update operation performed by Jay, who will not be able to effectively deny they have updated their salary. The data in the ledger table has been cryptographically verified as genuine and it clearly shows Jay's **UserName** as the account who updated the salary. To verify this, run the query below.
+1. Now that you've verified the data hasn't been tampered with, you browse the content of the ledger view for the `Employees` table. You notice a suspicious update operation performed by Jay, who won't be able to effectively deny they have updated their salary. The data in the ledger table has been cryptographically verified as genuine and it clearly shows Jay's **UserName** as the account who updated the salary. To verify this, run the following query.
 
     ```sql
         SET NOCOUNT ON

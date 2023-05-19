@@ -1,176 +1,56 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+There are many availability enhancements to SQL Server 2022, but in this unit, we go over three of the major enhancements: 
 
-    Goal: state what's in this unit and how it aligns to the 'evaluate' learning objective.
+- Contained availability groups
+- Cross-platform snapshot backups
+- Intel&reg; QuickAssist backup compression
 
-    Pattern:
-        One paragraph of 2 sentences:
-            Sentence 1: State that this unit addresses ("when to use it").
-            Sentence 2: State that this unit targets this learning objective: "Evaluate whether (product) is appropriate to (general product use case)."
-        Decision criteria as a bulleted list.
+For a list of other availability enhancements, see the following diagram and [What's new in SQL Server 2022](/sql/sql-server/what-s-new-in-sql-server-2022#availability).
 
-    Heading: none
+![Image of the SQL Server 2022 availability enhancements.](../media/availability-enhancements-list.png)
 
-    Example: "Here, we'll discuss how you can decide whether Logic Apps is the right choice for a workflow. We'll list some criteria that indicate whether Logic Apps will meet your performance and functional goals.
-        * Integration
-        * Performance
-        * Conditionals
-        * Connectors"
--->
-TODO: add your topic sentences(s)
-TODO: add your bulleted list of key things covered
-* TODO
-* TODO
-* TODO
+## Contained availability groups
 
-<!-- 2. Decision criteria introduction --------------------------------------------------------------------------------
+With the introduction of contained availability groups in SQL Server 2022, instance level objects are now replicated in a contained system database in the availability group along with the user databases. This allows you to failover the entire instance, including the system databases, to another instance in the availability group. This is a significant improvement over previous versions of SQL Server, where you could only failover user databases.
 
-    Goal: Lead-in to the criteria discussion.
+A contained availability group is an [Always On availability group](/sql/database-engine/availability-groups/windows/overview-of-always-on-availability-groups-sql-server) that supports:
 
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: describing the negative ("when not to use") at a high level.
-            Sentence 3: transition/lead-in to the detailed discussion.
+- Managing metadata objects (users, logins, permissions, SQL Agent jobs, etc.) at the availability group level in addition to the instance level.
+- Specialized contained system databases within the availability group.
 
-    Heading: "## Decision criteria"
+### Challenges with previous versions of SQL Server
 
-    Example:
-        "Decision criteria"
-         "Logic Apps helps you coordinate the flow of data through disparate systems. The cases where Logic Apps might not be the best option typically involve real-time requirements, complex business rules, or use of non-standard services. Here's some discussion of each of these factors."
--->
-## Decision criteria
-TODO: add your 3 lead-in sentences
+Always On availability groups generally consist of one or more user databases intended to operate as a coordinated group, and those databases are replicated to one or more secondary replicas. In previous versions of SQL Server, objects such as users, logins, permissions, and SQL Agent Jobs, which are stored in one of the system databases (`master` or `msdb`) weren't replicated to the secondary replicas. This meant that if you had to failover to a secondary replica, you would have to manually recreate the logins, users, and SQL Agent jobs on the secondary replica. For applications or users that connect to an Always On availability group database, the database administrator (DBA) must ensure that any changes to those objects are duplicated across all replicas. This was a manual process that could be time consuming and error prone.
 
-<!-- 3a. Decision criteria (for simple criteria) ----------------------------------------------------
+Contained availability groups solve the challenges by extending the concept of the group of databases being replicated to include relevant portions of the `master` and `msdb` databases. Contained availability groups are different from contained databases. Contained databases use a different mechanism for the user accounts, storing the user information within the database itself. Contained databases only replicate logins and users, and the scope of the replicated login or user is limited to that single database (and its replicas).
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for simple criteria where the analysis is brief and does not require a visual element.
+In contrast, in a contained availability group, you can create users, logins, and permissions at the availability group level, and they'll *automatically* be consistent across replicas in the availability group, as well as consistent across databases within that contained availability group. This saves the DBA from having to manually make these changes themselves.
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+![Image of the contained availability challenges and properties.](../media/contained-availability-group-challenge.png)
 
-    Heading: none, this content will be the 'body' for the "Decision criteria" heading above.
+### How does a contained availability group work?
 
-    Pattern:
-        No heading.
-        Place both the criteria and analysis into a table.
+Each contained availability group has its own `master` and `msdb` system databases, named after the name of the availability group. For example, in contained availability group `MyAG`, you'll have databases named `MyAG_master` and `MyAG_msdb`. These system databases are automatically seeded to new replicas and updates are replicated to these databases just like any other database in an availability group. This means that when you add an object such as a login, or SQL Agent Job while connected to the contained availability group, you're able to authenticate using the login created in the contained availability group, and see the SQL Agent Job when the contained availability group fails over to another instance.
 
-    Example:
-        | | |
-        | --- | --- |
-        | **Criteria** | **Analysis**|
-        | **Integration** | The key question to ask when you're considering Logic Apps is "do I need to integrate services?".... |
-        | **Performance** | The next consideration is performance. The Logic Apps execution engine scales your apps automatically.... |
-        | **Conditionals** | Logic Apps provides control constructs like Boolean expressions, switch statements, and loops.... |
-        | **Connectors** | The last consideration is whether there are pre-built connectors for all the services you need to access. |
-        |   |   |
--->
-TODO: add your topic sentences(s)
+![A flow diagram of the contained availability group.](../media/contained-availability-group-flow.png)
 
-<!-- 3b. Decision criteria (for complex criteria) ----------------------------------------------------------
+To be able to effectively utilize the features of a contained availability group, you must create a listener for the contained availability group. The listener is used to connect to the contained availability group, and is the only way to access the environment of the contained availability group. If you were to connect to one of the *instances* hosting the contained availability group rather than directly to the contained availability group through the listener, you would be in the environment of the instance, and not the contained availability group. This means that if you create a login or SQL Agent Job while connected to the instance, it wouldn't be replicated to the other replicas in the contained availability group.
 
-    Note:
-        Choose either 3a or 3b for your content; do not do both.
-        This pattern is for complex criteria where the analysis of each criterion needs both and a visual element.
+## Cross-platform snapshot backups
 
-    Goal: Describe in detail each criterion that helps the "when to use it" decision.
+Snapshot backups provide a quick method to back up large SQL Server databases by avoiding the need to stream SQL Server files into backup file(s). Snapshots have been supported for SQL Server in previous versions, but has required a program that uses the Virtual Device Interface (VDI). This option allows you to take a snapshot backup of a database without the need to use VDI. Windows and SQL Server have provided methods to support snapshot backups using the Volume Snapshot Service (VSS) and the SQL Writer service (which uses VDI).
 
-    Pattern:
-        For each criterion, repeat this pattern:
-            1. H3 of the criterion.
-            2. 1-3 paragraphs of discussion/analysis.
-            3. Visual like an image, table, list, code sample, or blockquote.
-            
-    Example:
-        H3: "Integration"
-        Prose: The key question to ask when you're considering Logic Apps is _"do I need to integrate services?"_ Logic Apps work well when you need to get multiple applications and systems to work together. That's what they were designed to do. If you're building an app with no external connections, Logic Apps is probably not the best option."
-        Visual: (image preferred)
--->
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+SQL Server 2022 provides built-in support for snapshot backups without VDI using the `ALTER DATABASE` T-SQL statement option `SUSPEND_FOR_SNAPSHOT_BACKUP`. When this statement is executed, SQL Server suspends all input/output (I/O) on database and transaction log files. Users can then use storage provider snapshot technologies to create a consistent snapshot backup from the underlying SQL Server database and transaction log files. The backup process is completed by backing up small amounts of metadata information into a file. This allows I/O to now continue for database and transaction log files.
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+Snapshot backups can be restored with the T-SQL `RESTORE` statement specifying the metadata backup file and all database and transaction log files from the snapshot backup.
 
-### (criterion)
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
+This new method now allows snapshot backups to be performed across both Windows and Linux operating systems without relying on VSS, SQL Writer, or custom VDI applications.
 
-<!-- 4. Apply-the-criteria introduction --------------------------------------------------------------------------------
+For more information, see [Create a Transact-SQL snapshot backup](/sql/relational-databases/backup-restore/create-a-transact-sql-snapshot-backup).
 
-    Goal: Lead-in to the example applications of the criteria.
+## Intel&reg; QuickAssist backup compression
 
-    Pattern:
-        1 paragraph consisting of 3 sentences
-            Sentence 1: summarizing the criteria from a positive view ("when to use").
-            Sentence 2: Acknowledge that there are cases for which (product) won't work and/or there are edge cases that are difficult to decide.
-            Sentence 3: transition/lead-in to the detailed discussion.
+SQL Server supports options to compress a backup, which can save large amounts of space for the target backup file. The process of compression can take a significant number of CPU cycles for threads within SQL Server that are compressing the backup file.
 
-    Heading: "## Apply the criteria"
+SQL Server 2022 can use a new compression technique powered by Intel&reg; QuickAssist Technology (QAT). When a backup is executed using Intel&reg; QuickAssist compression, the processing for compression is offloaded to the Intel&reg; QuickAssist hardware versus the CPUs in the system. This provides more CPU cycles for queries and applications while the backup is being compressed.
 
-    Example:
-        "Apply the criteria"
-         "Logic Apps works best when you're integrating multiple services with some added control logic. The decision is often a judgment call though. Let's think about how to apply these criteria to our example processes."
--->
-## Apply the criteria
-TODO: add your 3 lead-in sentences
-
-<!-- 5. Apply the criteria examples -----------------------------------------------------------------------------
-
-    Goal: Apply the criteria to the 2-3 customer tasks in the scenario described in your introduction unit.
-
-    Pattern:
-        For each customer task, repeat this pattern:
-            1. "### Should (scenario subtask) use (product)?".
-            2. 1-3 paragraphs of discussion/analysis (first sentence should answer yes/no about whether the product is suitable).
-            3. Visual like an image, table, list, code sample, or blockquote.
-
-    Example:
-        H3: "Should the video-archive utility use Logic Apps?"
-        Prose: "The video archive task is a good fit for Logic Apps even though it doesn't integrate multiple systems. Logic Apps has a built-in timer trigger and an Azure blob connector that are perfect to implement this process...."
-        Visual: (image preferred)
--->
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-### Should (scenario subtask) use (product)?
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- 6. Guidance summary (optional) ------------------------------------------------
-
-    Goal: Job-aid for future use to help customers evaluate their own tasks against the criteria.
-
-    Pattern:
-        1. Heading "## Guidance summary"
-        2. Lead-in sentence acknowledging that this is a summary/repeat of previous material.
-        3. Visual like a flowchart (as an image) or rubric (as a table).
-
-    Example:
-        "The following flowchart summarizes the key questions to ask when you're considering using Logic Apps."
-        <flowchart image>
--->
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+For more information, see [Integrated acceleration and offloading](/sql/relational-databases/integrated-acceleration/overview).

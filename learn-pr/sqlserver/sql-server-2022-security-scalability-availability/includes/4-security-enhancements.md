@@ -44,13 +44,13 @@ TDS 8.0 provides the following benefits:
 
 - TDS login communication is fully protected under the Transport Layer System (TLS) protocol.
 - The latest TLS 1.3 version is now supported.
-- Applications must specify a certificate for encryption purposes instead of relying on the `TrustServerCertificate` option. This requirements can help prevent man-in-the-middle attacks.
+- Applications must specify a certificate for encryption purposes instead of relying on the `TrustServerCertificate` option. This requirement can help prevent man-in-the-middle attacks.
 
 For more information, see [TDS 8.0 and TLS 1.3 support](/sql/relational-databases/security/networking/tds-8-and-tls-1-3) and [Connect to SQL Server with strict encryption](/sql/relational-databases/security/networking/connect-with-strict-encryption).
 
 ## Granular UNMASK permissions for dynamic data masking
 
-Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to specify how much sensitive data to reveal with minimal effect on the application layer. By masking the result set of a query, you can hide the sensitive data in the result set of a query over designated database fields, while the data in the database is not changed.
+Dynamic data masking helps prevent unauthorized access to sensitive data by enabling customers to specify how much sensitive data to reveal with minimal effect on the application layer. By masking the result set of a query, you can hide the sensitive data in the result set of a query over designated database fields, while the data in the database isn't changed.
 
 Previously, dynamic data masking only masked data at the column-level. Starting with SQL Server 2022, you can prevent unauthorized access to sensitive data and gain control by masking it to an unauthorized user at different levels of the database. You can grant or revoke UNMASK permission at the database-level, schema-level, table-level or at the column-level to a user or database role. This enhancement provides a more granular way to control and limit unauthorized access to data stored in the database and improve data security management.
 
