@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.ask-questions-of-data-with-openai-dotnet.2-azure-openai-text-completions-overview
+title: Overview Azure OpenAI and Text Completions
+metadata:
+  title: Overview Azure OpenAI and Text Completions
+  description: An overview of what Azure OpenAI is and the benefits of using text completions to query your data
+  ms.date: 05/19/2023
+  author: codemillmatt
+  ms.author: masoucou
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-azure-openai-text-completions-overview.md)]

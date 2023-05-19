@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.ask-questions-of-data-with-openai-dotnet
+metadata:
+  title: Enable users to ask questions of their data with Azure OpenAI Completions
+  description: Learn how to use the .NET SDK with the Azure OpenAI service to gain insights into your data by asking questions in regular, everyday language.
+  ms.date: 05/18/2023
+  author: codemillmatt
+  ms.author: chrisrt
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Enable users to ask questions of their data with Azure OpenAI Completions
+summary: Learn how to use the .NET SDK with the Azure OpenAI service to gain insights into your data by asking questions in regular, everyday language.
+abstract: |
+  In this module, you will:
+  - Learn how to use the Azure OpenAI .NET SDK
+  - Gain a foundational understanding of Azure OpenAI Completions
+  - Learn tips on improving completion quality
+prerequisites: |
+  - Some C# programming experience
+  - Basic familiarity with Azure OpenAI Service
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- dotnet
+subjects:
+- cloud-computing
+units:
+- learn.azure.ask-questions-of-data-with-openai-dotnet.1-introduction
+- learn.azure.ask-questions-of-data-with-openai-dotnet.2-azure-openai-text-completions-overview
+- learn.azure.ask-questions-of-data-with-openai-dotnet.3-exercise-install-sdk-create-completion
+- learn.azure.ask-questions-of-data-with-openai-dotnet.4-improve-completion-quality
+- learn.azure.ask-questions-of-data-with-openai-dotnet.5-exercise-improve-completion-quality
+- learn.azure.ask-questions-of-data-with-openai-dotnet.6-summary
+
+badge:
+  uid: learn.azure.ask-questions-of-data-with-openai-dotnet.badge
