@@ -40,7 +40,7 @@ The Slurm job scheduler has the following important functions:
 
 When you use Slurm to run a job on a Linux HPC cluster, the following high level steps occur:
 
-1. Job submission. The first step is that a user will submit a job to the Slurm scheduler through the creation of a job script that includes resource requirements and the set of commands required by the job.
+1. Job submission. The first step is that a user submits a job to the Slurm scheduler through the creation of a job script that includes resource requirements and the set of commands required by the job.
 1. Job allocation. The next stage involves the Slurm scheduler examining the job's resource requirements, such as the number of nodes, CPUs, and memory needed, as well as any other constraints like partition and time limits. Based on these requirements, the scheduler determines the best available resources to allocate for the job, considering the current cluster usage and other pending jobs.
 1. Job queuing. The scheduler determines if the requested resources are available. If the resources are immediately available, the job executes. If the requested resources aren't available immediately, the job is placed in a queue. The scheduler continuously evaluates the queued jobs and their priorities to allocate resources as they become available.
 1. Job execution. Once the required resources are allocated to the job, the Slurm job starts executing on the assigned nodes. Tasks specified in the script run on nodes.
@@ -56,8 +56,8 @@ You use a set of command line utilities to perform actions on a compute cluster 
 |sacct     |Reports job and job step accounting information about jobs that are active or completed. |
 |salloc    |Use to allocate resources for a job in real time. Allows you to spawn a shell and enact srun commands as a way of initiating parallel tasks.  |
 |sattach   |Attach standard input, output and error signal capabilities to a currently running job or job step.|
-|sbatch    |Use this to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.     |
-|scancel   |Use this to transfer a file on nodes needed.     |
+|sbatch    |Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.     |
+|scancel   |Use this command to transfer a file on nodes needed.     |
 |scontrol  |Slurm administrative tool that allows you to view and modify the Slurm state. Most scontrol commands require root privileges.          |
 |Sinfo     |Displays information on partitions and nodes managed by Slurm.                                         |
 |Sprio     |View information on the components impacting a job's priority.                                         |

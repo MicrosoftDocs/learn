@@ -26,7 +26,7 @@ quiz:
           explanation: Incorrect. Displays information on partitions and nodes managed by Slurm.
         - content: "sbatch"
           isCorrect: false
-          explanation: Incorrect. Use this to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.
+          explanation: Incorrect. Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.
     - content: "You have a job that has a large number of complex sequential steps with each new step depending on calculations performed in the previous step. Which type of Azure CycleCloud partition would be appropriate for this job?"
       choices:
         - content: "HTC partition"
@@ -48,4 +48,4 @@ quiz:
           explanation: Incorrect. Use this tool to run a job task.
         - content: "sbatch"
           isCorrect: false
-          explanation: Incorrect. Use this to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.
+          explanation: Incorrect. Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.

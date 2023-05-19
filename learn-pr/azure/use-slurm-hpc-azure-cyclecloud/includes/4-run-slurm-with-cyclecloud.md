@@ -25,15 +25,15 @@ You can deploy a HPC cluster using Azure CycleCloud by performing the following 
 
    :::image type="content" border="false" source="../media/4-new-cluster-settings.png" alt-text="A screenshot depicting the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster-settings.png":::
 
-1. On the Network Attached Storage page configure whether you'll use the Builtin or External NFS options for the network attached storage mount. When you select Builtin the scheduler node will be configured as a NSF server that functions as the mountpoint for other nodes. If you specify External NFS you can then provide the details of a network attached storage device such as Azure NetApp Files, HPC Cache, or a specially configured VM running an NFS server.
+1. On the Network Attached Storage page configure whether you'll use the Builtin or External NFS options for the network attached storage mount. When you select Builtin the scheduler node will be configured as a NFS server that functions as the mountpoint for other nodes. If you specify External NFS you can then provide the details of a network attached storage device such as Azure NetApp Files, HPC Cache, or a specially configured VM running an NFS server.
 1. On the Advanced Settings page you can specify the following settings:
 
    - **Slurm Version**. The version of Slurm that will be used with the cluster.
    - **Job Accounting**. Whether you want to enable job accounting and the settings you'll chose to store accounting data.
-   - **Shutdown Policy**. You can chose between terminating the instance or deallocating the instance.
+   - **Shutdown Policy**. You can choose between terminating the instance or deallocating the instance.
    - **Credentials**. The credentials used to connect to the associated Azure subscription.
-   - **Scheduler OS**. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can chose a custom image.
-   - **HPC OS**. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can chose a custom image.
+   - **Scheduler OS**. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can choose a custom image.
+   - **HPC OS**. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can choose a custom image.
    - **Scheduler Cluster Init**. Custom instructions to apply to the scheduler VM.
    - **HTC Cluster Init**. Custom instructions to apply to HTC nodes.
    - **Advanced Networking**. Allows you to enable Return Proxy, whether the head node can be accessed from internet addresses and whether execute nodes can be accessed from the internet.
@@ -50,7 +50,7 @@ CycleCloud automatically sets the amount of available memory for Slurm to use fo
 
 ## Configuring Slurm Partitions
 
-The default template that ships with Azure CycleCloud has two partitions (hpc and htc), and you can define custom nodearrays that map directly to Slurm partitions. For example, to create a GPU partition, add the following section to your cluster template:
+The default template that ships with Azure CycleCloud has two partitions (hpc and htc), and you can define custom node arrays that map directly to Slurm partitions. For example, to create a GPU partition, add the following section to your cluster template:
 
 ```
 [[nodearray gpu]]
