@@ -10,7 +10,6 @@ metadata:
   ms.service: digital-twins
 title: Connect IoT data to mixed reality with Azure Digital Twins and Unity
 summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twins and visualize data in Unity and mixed reality.
-
 abstract: |
   By the end of this module, you'll be able to:
 
