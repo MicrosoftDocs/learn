@@ -7,7 +7,6 @@ metadata:
   author: pierreroman
   ms.author: pierrer
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: pierrer-06212021
 title: Automate the deployment of JSON ARM templates by using GitHub Actions

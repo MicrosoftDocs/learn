@@ -1,10 +1,10 @@
 There are many services available to train machine learning models. Which service you use depends on factors like:
 
-- What type of model you need to train
-- Whether you need full control over model training
-- How much time you want to invest in model training
-- Which services are already used by your colleagues
-- Which programming language you’re comfortable with
+- What type of model you need to train.
+- Whether you need full control over model training.
+- How much time you want to invest in model training.
+- Which services are already within your organization.
+- Which programming language you’re comfortable with.
 
 Within Azure, there are several services available for training machine learning models. When you choose to work with Azure instead of training a model on a local device, you’ll have access to scalable and cost-effective compute. For example, you’ll be able to use compute only for the time needed to train a model, and not pay for the compute when it’s not used. 
 

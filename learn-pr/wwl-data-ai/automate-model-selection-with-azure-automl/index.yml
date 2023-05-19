@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Automate machine learning model selection with Azure Machine Learning
 summary: Learn how to use automated machine learning in Azure Machine Learning to find the best model for your data.
 abstract: |

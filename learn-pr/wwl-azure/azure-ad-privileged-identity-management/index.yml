@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
+  ms.subservice: pim
 title: Configure Azure AD privileged identity management
 summary: Ensure that your privileged identities have extra protection and are accessed only with the least amount of access needed to do the job.
 abstract: |

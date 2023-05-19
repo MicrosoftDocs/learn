@@ -46,6 +46,56 @@
       "redirect_document_id": true
     },
     {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/index.md",
+      "redirect_url": "/training/paths/copy-blobs-from-command-line-and-code/index",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/1-introduction.md",
+      "redirect_url": "/training/paths/copy-blobs-from-command-line-and-code/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/2-choosing-a-tool-and-strategy.md",
+      "redirect_url": "/training/paths/copy-blobs-from-command-line-and-code/index",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/3-move-blobs-using-cli.md",
+      "redirect_url": "/training/modules/copy-blobs-using-azure-cli/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/4-exercise-move-blobs-using-cli.md",
+      "redirect_url": "/training/modules/copy-blobs-using-azure-cli/3-exercise-move-blobs-using-azure-cli",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/5-move-blobs-using-azcopy.md",
+      "redirect_url": "/training/modules/copy-blobs-using-azcopy/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/6-exercise-move-blobs-using-azcopy.md",
+      "redirect_url": "/training/modules/copy-blobs-using-azcopy/3-exercise-move-blobs-using-azcopy",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/7-move-blobs-using-net-storage-client.md",
+      "redirect_url": "/training/modules/copy-blobs-using-dotnet/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/8-exercise-move-blobs-using-net-storage-client.md",
+      "redirect_url": "/training/modules/copy-blobs-using-dotnet/3-exercise-move-blobs-using-dotnet",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/copy-blobs-from-command-line-and-code/9-summary.md",
+      "redirect_url": "/training/paths/copy-blobs-from-command-line-and-code/index",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/intro-to-azure-data-lake-storage/index.md",
       "redirect_url": "/training/modules/introduction-to-azure-data-lake-storage/index",
       "redirect_document_id": true
@@ -10557,22 +10607,22 @@
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/3-setup-environment.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/3-exercise-create-new-aspnetcore-app",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/4-run-razor-pages-project.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/4-explore-razor-pages-project",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/5-new-razor-page-create-form.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/5-exercise-create-new-razor-page-and-form",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/6-create-pagemodel.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/6-handle-interactions-with-pagemodel-methods",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
@@ -10582,7 +10632,7 @@
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/8-deploy-test.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/7-exercise-create-pagemodel",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
@@ -10592,7 +10642,37 @@
     },
     {
       "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/10-summary.md",
-      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/8-summary",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/3-exercise-create-new-aspnetcore-app.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },    
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/4-explore-razor-pages-project.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/5-exercise-create-new-razor-page-and-form.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/6-handle-interactions-with-pagemodel-methods.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/7-exercise-create-pagemodel.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/create-razor-pages-aspnet-core/8-summary.yml",
+      "redirect_url": "/training/modules/create-razor-pages-aspnet-core/",
       "redirect_document_id": false
     },
     {
@@ -22003,11 +22083,321 @@
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-exercise-data-explorer.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/3-azure-resource-manager-templates.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/6-create-deploy-resource-manager-template.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/2-azure-resource-manager-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/4-azure-resource-manager-conditional-deployment.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/5-azure-resource-manager-deployment-modes.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/3-azure-virtual-machine-availability-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/4-azure-virtual-machine-sizes.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/5-azure-virtual-machine-azure-cli.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/2-azure-virtual-machines-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/provision-virtual-machines-azure/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-implement-iaas-solutions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/6-timers-durable-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/3-durable-functions-types-features.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/2-durable-functions-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/5-durable-orchestrations-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/4-durable-functions-task-hubs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/7-external-events-durable-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-durable-functions/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/implement-azure-functions/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/3-cosmos-db-choose-partition-key.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/4-create-synthetic-partition-key.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/2-cosmos-db-partitions-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/implement-partitioning-azure-cosmos-db/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/az-204-develop-solutions-that-use-azure-cosmos-db/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/deploy-5g-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.oxford.deploy-5g-services-with-azure.trophy.yml",
+      "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+      "redirect_document_id": false
+   },
+   {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/2-business-functions.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/3-how-5g-works.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/4-when-use.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/5g-business-models/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },    
+  {
+    "source_path": "learn-pr/achievements/learn.oxford.5g-business-models.badge.yml",
+    "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/2-what.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/3-how.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/4-when.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/enterprise-5g-technologies/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/achievements/learn.oxford.5g-tech-azure-cloud.badge.yml",
+    "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/2-what.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/3-how.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/4-when.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/5-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/student-evangelism/intro-5g-enterprise/6-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/achievements/learn.oxford.introduction-5g-services-on-azure.badge.yml",
+    "redirect_url": "learn-pr/paths/get-started-with-azure-private-5g-core/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/2-configure-secure-projects-repositories.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/3-configure-secure-projects-repositories",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/3-exercise-move-security-repository-away-from-project.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-organize-project-repository-structure.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/2-organize-project-repository-structure",
+    "redirect_document_id": false
+  }
   ]
 }
-
-
-
-
-

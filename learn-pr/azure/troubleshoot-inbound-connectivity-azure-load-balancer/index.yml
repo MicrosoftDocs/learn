@@ -7,7 +7,7 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: load-balancer
 title: Troubleshoot inbound network connectivity for Azure Load Balancer
 summary: Review multidimensional metrics for the load balancer in Azure Monitor Metrics, and check health probe status for the load balancer.
 abstract: | 

@@ -7,7 +7,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools
 summary: Use Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
 abstract: | 

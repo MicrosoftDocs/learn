@@ -7,7 +7,6 @@ metadata:
   author: sguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-reactors
   ms.custom: team=nextgen
 title: 'Unsupervised learning: Clustering'
 summary: Learn about k-means clustering - how to use it, the kinds of results to expect, and how to interpret the data.

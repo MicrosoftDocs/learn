@@ -9,6 +9,7 @@ metadata:
   ms.author: dapine
   ms.topic: interactive-tutorial # do we need ms.topic?
   ms.prod: aspnet-core
+  ms.technology: aspnetcore-signalr
 title: Replace client-side polling with ASP.NET Core SignalR
 summary: In this module, you'll use ASP.NET Core SignalR to replace client-side polling functionality in an existing web app.
 abstract: |

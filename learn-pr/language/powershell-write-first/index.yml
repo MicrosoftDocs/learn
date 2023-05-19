@@ -7,7 +7,6 @@ metadata:
   author: michaeltlombardi
   ms.author: mlombardi
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Write your first PowerShell code
 summary: In this module, you begin learning the basics of programming by writing and running code in PowerShell.
 abstract: |

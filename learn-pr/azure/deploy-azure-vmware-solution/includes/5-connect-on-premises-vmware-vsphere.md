@@ -1,32 +1,33 @@
-After Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution solution deploys onto dedicated, bare-metal servers. These servers are given to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers can make use of Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
+After the Azure VMware Solution is deployed, network connectivity is the next step for a successful deployment. The Azure VMware Solution solution deploys onto dedicated, bare-metal servers. These servers are given to a single customer. The bare-metal servers need to connect to the Azure network backbone so customers use Azure resources. The Azure VMware Solution-provided Azure ExpressRoute circuit helps the environment talk to Azure services. To reach the on-premises environment, a customer-provided ExpressRoute circuit is used, along with an ExpressRoute Global Reach configuration.
 
 ## Create an Azure Bastion resource
 
-After Azure VMware Solution is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure infrastructure as a service (IaaS) environment. You use Azure Bastion initially to connect to the jump host that will allow you to log into the Azure VMware Solution vCenter and NSX environments.
+After the Azure VMware Solution is deployed, you'll create an Azure Bastion resource. The Azure Bastion resource provides secure RDP connectivity to your Azure infrastructure as a service (IaaS) environment. You use Azure Bastion initially to connect to the jump host that will allow you to log into the Azure VMware Solution vCenter and NSX environments.
 
 When the ExpressRoute circuits and ExpressRoute Global Reach have been configured for hybrid connectivity, you no longer need the Azure Bastion resource. Your company might still want to keep the resource as a backup in case you have connectivity issues with the ExpressRoute circuits in the future.
 
 To create an Azure Bastion resource:
 
-1. In the Azure portal, search for **Bastion**.
+1. In the Azure portal, search for **Bastions**.
+1. Select **Create** in the menu bar.
 1. On the **Create a Bastion** page, configure a new Azure Bastion resource with the following details:
 
     :::image type="content" source="../media/5-create-azure-bastion-host.png" alt-text="Screenshot of the Azure portal showing how to create an Azure Bastion host, with fields containing example values.":::
 
     | Field | Value |
     | ----------- | -------- |
-    | Subscription | Select the same subscription where Azure VMware Solution is deployed. |
-    | Resource group | Select an existing resource group or create a new one. |
-    | Name | Specify a name for the new Bastion resource. |
-    | Region | Select the same region where Azure VMware Solution is deployed. |
-    | Tier | Select **Basic**. This provides the functionality we need for this example. Bastion can always be upgraded to **Standard** and have more instance counts. |
-    | Instance Count | Defaults to 2 when **Basic** is chosen. |
-    | Virtual network | Select the virtual network that was created when you deployed Azure VMware Solution. |
-    | Subnet | Azure Bastion requires a dedicated subnet. For the virtual network created during the Azure VMware Solution deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet**, and then create a subnet with the name **AzureBastionSubnet** and at /27 or higher. |
-    | Public IP address | The public IP allows RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both Azure VMware Solution and Azure Bastion. This new public IP is separate from the Azure VMware Solution deployment. |
-    | Public IP address name | Provide a name for the public IP-address resource. |
-    | Public IP address SKU | By default, this setting is prepopulated to **Standard** because Azure Bastion supports only the Standard Public IP SKU. |
-    | Assignment | By default, this setting is pre-populated to **Static**. The best practice is to leave assignment at static. |
+    | **Subscription** | Select the same subscription where Azure VMware Solution is deployed. |
+    | **Resource group** | Select an existing resource group or create a new one. |
+    | **Name** | Specify a name for the new Bastion resource. |
+    | **Region** | Select the same region where Azure VMware Solution is deployed. |
+    | **Tier** | Select **Basic**. This provides the functionality we need for this example. You can always upgrade Bastion to **Standard** to have more instance counts. |
+    | **Instance Count** | Defaults to 2 when **Basic** is chosen. |
+    | **Virtual network** | Select the virtual network that was created when you deployed Azure VMware Solution. |
+    | **Subnet** | Azure Bastion requires a dedicated subnet. For the virtual network created during the Azure VMware Solution deployment, select **Manage subnet configuration** to create the dedicated subnet. Select **+Subnet**, and then create a subnet with the name **AzureBastionSubnet** and at /27 or higher. |
+    | **Public IP address** | The public IP allows RDP and SSH over port 443 to Azure Bastion. Create a new public IP and place the resource in the same region as both Azure VMware Solution and Azure Bastion. This new public IP is separate from the Azure VMware Solution deployment. |
+    | **Public IP address name** | Provide a name for the public IP-address resource. |
+    | **Public IP address SKU** | By default, this setting is prepopulated to **Standard** because Azure Bastion supports only the Standard Public IP SKU. |
+    | **Assignment** | By default, this setting is pre-populated to **Static**. The best practice is to leave assignment at static. |
 
 ## Create an Azure VM to use as a jump host
 
@@ -61,11 +62,9 @@ To create an ExpressRoute Global Reach authorization key in the private cloud:
 
 ## Peer the Azure VMware Solution private cloud to the on-premises environment by using the authorization key
 
-After the authorization key is created, the Azure VMware Solution ExpressRoute circuit can be peered to the on-premises circuit. 
-You can configure the peering by using either the Azure portal or the Azure CLI in Cloud Shell.
+After the authorization key is created, you can peer the Azure VMware Solution ExpressRoute circuit to the on-premises circuit. You can configure the peering by using either the Azure portal or the Azure CLI in Cloud Shell.
 
-For either method, you'll need the resource ID and authorization key of the Azure VMware Solution private-cloud 
-ExpressRoute circuit for peering.
+For either method, you'll need the resource ID and authorization key of the Azure VMware Solution private-cloud ExpressRoute circuit for peering.
 
 ### Use the Azure portal to configure peering
 

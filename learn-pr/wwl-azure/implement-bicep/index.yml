@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: yasa
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: Bicep
 title: Implement Bicep
 summary: This module explains Bicep and how it integrates with different tools such as Azure CLI and Visual Studio Code for environment deployment configuration.
 abstract: |
