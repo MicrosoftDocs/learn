@@ -7,7 +7,6 @@ metadata:
   author: bmitchell287
   ms.author: brendm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Develop Java web app on Azure using IntelliJ
 summary: Create a web app in IntelliJ and deploy the app to Azure by using Azure Toolkit for IntelliJ.
 abstract: | 

@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Create workspace resources for getting started with Azure Machine Learning
 summary: In this module, you'll learn how to create resources for getting started with Azure Machine Learning.
 abstract: |

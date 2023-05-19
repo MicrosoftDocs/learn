@@ -3,19 +3,19 @@ uid: learn.wwl.create-azure-cognitive-search-solution
 metadata:
   title: Create an Azure Cognitive Search solution
   description: "Create an Azure Cognitive Search solution"
-  ms.date: 07/30/2021
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-search
 title: Create an Azure Cognitive Search solution
 summary: Unlock the hidden insights in your data with Azure Cognitive Search.
 abstract: |
-  In this module you will learn how to:
+  In this module you'll learn how to:
   - Create an Azure Cognitive Search solution
   - Develop a search application
 prerequisites: |
-  - Familiarity with with Microsoft Azure
+  - Familiarity with Microsoft Azure
   - Application development experience with C# or Python
 iconUrl: /training/achievements/create-an-azure-cognitive-search-solution.svg
 levels:

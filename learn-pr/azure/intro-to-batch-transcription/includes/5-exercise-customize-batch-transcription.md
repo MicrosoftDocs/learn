@@ -6,7 +6,7 @@ The first step to train a model is to upload training data. For more information
 
 1. Sign in to the [Custom Speech portal](https://speech.microsoft.com/customspeech)
 
-1. Go to **Speech-to-text** > **Custom Speech**
+1. Go to **Speech to text** > **Custom Speech**
 
     :::image type="content" source="../media/5-azure-speech-portal.png" alt-text="Screenshot showing the home page of the speech portal with a red line around custom models.":::
 

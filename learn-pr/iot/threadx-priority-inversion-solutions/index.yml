@@ -9,7 +9,6 @@ metadata:
   ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: ThreadX priority inversion solutions
 summary: Learn how preemption threshold and priority inheritance work as solutions to priority inversion in Azure RTOS ThreadX.
 abstract: |

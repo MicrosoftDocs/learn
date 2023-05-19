@@ -3,7 +3,7 @@ uid: learn.wwl.explore-endpoint-management
 metadata:
   title: MD-102 Explore endpoint management
   description: This learning path explains the concepts of supporting the desktop through its entire lifecycle. Students will also be introduced to Azure Active Directory and learn the similarities and differences between Azure AD and Active Directory DS and how to synchronize between the two.
-  ms.date: 03/14/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ prerequisites: |
   - Experience using Active Directory Domain Services.
 summary: |
   This learning path is designed to provide a comprehensive understanding of enterprise desktops, Windows editions, and Azure Active Directory. It includes exploring various Windows editions, including their features and installation methods. It delves into Azure Active Directory, highlighting its similarities and differences with AD DS and how to synchronize the two. Furthermore, learners will better understand managing Azure Active Directory identities. Overall, this learning path equips learners with the necessary knowledge and skills to effectively support enterprise desktops and manage Azure Active Directory identities.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/explore-endpoint-management.svg
 levels:
 - intermediate
 roles:

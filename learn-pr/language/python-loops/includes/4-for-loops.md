@@ -18,7 +18,7 @@ You can also determine the number of items in a list by using `len`. So you coul
 > [!NOTE]
 > Python has many types that can be looped over. These types are known as *iterables*.
 
-Python lists are iterable, and they can be used with a `for` loop. You use a `for` loop with iterables where you'll loop a known number of times, once for each item in the iterable.
+Python lists are iterable, and they can be used with a `for` loop. You use a `for` loop with iterables where you loop a known number of times, once for each item in the iterable.
 
 ## About `for` loops
 

@@ -39,7 +39,7 @@ The guidelines are separated into 23 individual sections that focus on specific 
 - [XAG 116: Time limits](/gaming/accessibility/xbox-accessibility-guidelines/116)
 - [XAG 117: Visual distractions](/gaming/accessibility/xbox-accessibility-guidelines/117)
 - [XAG 118: Photosensitivity](/gaming/accessibility/xbox-accessibility-guidelines/118)
-- [XAG 119: Speech-to-text/Text-to-speech chat](/gaming/accessibility/xbox-accessibility-guidelines/119)
+- [XAG 119: Speech to text/Text-to-speech chat](/gaming/accessibility/xbox-accessibility-guidelines/119)
 - [XAG 120: Communication experiences](/gaming/accessibility/xbox-accessibility-guidelines/120)
 - [XAG 121: Accessible feature documentation](/gaming/accessibility/xbox-accessibility-guidelines/121)
 - [XAG 122: Accessible customer support](/gaming/accessibility/xbox-accessibility-guidelines/122)

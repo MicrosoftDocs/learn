@@ -7,7 +7,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design a geographically distributed application
 summary: Build an application that spans multiple geographic locations for high availability and resiliency.
 abstract: | 

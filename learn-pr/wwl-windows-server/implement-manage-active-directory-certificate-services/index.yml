@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.service: active-directory
 title: Implement and manage Active Directory Certificate Services
 summary: Learn about the Active Directory Certificate Services (AD CS) concepts and administration tasks, including types of certification authorities (CAs), the process of issuing and revoking certificates, and establishing certificate trusts.
 abstract: |

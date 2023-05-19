@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Work with scripting constructs in Windows PowerShell
 summary: This module explains how to use scripting constructs for iteration and decision making in Windows PowerShell.
 abstract: |

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement storage security
 summary: Ensure your data is stored, transferred, and accessed in a secure way using Azure storage and file security features.
 abstract: |
