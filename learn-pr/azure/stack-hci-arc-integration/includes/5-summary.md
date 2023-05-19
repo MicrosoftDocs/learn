@@ -11,7 +11,7 @@ You can learn more by visiting the following webpages:
 - [Azure Stack HCI solution overview](/azure-stack/hci/overview/?azure-portal=true)
 - [Azure Arc overview](/azure/azure-arc/overview/?azure-portal=true)
 - [What is Azure Arc enabled servers?](/azure/azure-arc/servers/overview/?azure-portal=true)
-- [Azure Arc enabled SQL Server](/sql/sql-server/azure-arc/overview?view=sql-server-ver15%2f%3fazure-portal%3dtrue)
+- [Azure Arc enabled SQL Server](/sql/sql-server/azure-arc/overview)
 - [What is Azure Arc enabled Kubernetes?](/azure/azure-arc/kubernetes/overview/?azure-portal=true)
 - [What is on-premises Kubernetes with Azure Kubernetes Service on Azure Stack HCI and Windows Server?](/azure/aks/hybrid/overview?azure-portal=true)
 - [What are Azure Arc enabled data services?](/azure/azure-arc/data/overview/?azure-portal=true)
