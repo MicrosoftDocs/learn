@@ -2,7 +2,7 @@ The map for the *Improve your Reliability* learning path is based on a model fro
 
 :::image type="content" source="../media/dickerson-hierarchy.png" alt-text="a diagram of a pyramid showing the seven levels of the hierarchy of reliability.":::
 
-The model is patterned after Abraham Maslow's hierarchy of needs addressing human motivation. As with Maslow's hierarchy, to progress up the hierarchy you need to make sure that each of the lower levels has been addressed first. The levels on which we focus in this learning path, from bottom to top, are:
+The model is patterned after Abraham Maslow's *hierarchy of needs*, which addresses human motivation. As with Maslow's hierarchy, to progress up the hierarchy you need to make sure that each of the lower levels has been addressed first. The levels on which we focus in this learning path, from bottom to top, are:
 
 ## Monitoring
 
@@ -22,7 +22,7 @@ The next level up is a focus on our testing, release, and deployment processes. 
 
 ## Capacity planning/scaling
 
-Success and the growth that comes with it, can be just as much a threat to reliability as any problem with a system. A customer can't tell the difference between a system that's down because there's a bug in the code, and one that's down because too many people are trying to simultaneously access it and it's unable to handle the load. This level of the hierarchy directs us to pay attention to capacity planning and scaling as ways of addressing that threat.
+Success and the growth that comes with it, can be just as much a threat to reliability as any problem with a system. A customer can't tell the difference between a system that's down because there's a bug in the code, and one that's down because it's unable to handle the load of too many people trying to simultaneously access it. This level of the hierarchy directs us to pay attention to capacity planning and scaling as ways of addressing that threat.
 
 ## Dev process and user experience
 

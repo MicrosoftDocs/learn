@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "CorrectReliability problems cause organizations to lose which of the following?"
+  - content: "Reliability problems cause organizations to lose which of the following?"
     choices:
     - content: "Security"
       isCorrect: false

@@ -18,17 +18,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which is the first, foundational level in the Dickerson hierarchy of reliability?'
+  - content: "Which is the first, foundational level in the Dickerson hierarchy of reliability?"
     choices:
-    - content: 'Incident response'
+    - content: "Incident response"
       isCorrect: false
       explanation: "This answer isn't the first level in the hierarchy of reliability."
-    - content: 'Testing/Release'
+    - content: "Testing/Release"
       isCorrect: false
       explanation: "This answer isn't the first level in the hierarchy of reliability."
-    - content: 'Capacity/Scale'
+    - content: "Capacity/Scale"
       isCorrect: false
       explanation: "This answer isn't the first level in the hierarchy of reliability."     
-    - content: 'Monitoring'
+    - content: "Monitoring"
       isCorrect: true
-      explanation: 'Correct.'     
+      explanation: "Correct."     

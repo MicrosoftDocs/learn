@@ -1,6 +1,6 @@
 Earlier in this module, we claimed that modern operations practices can help. However, we didn't say very much about what those practices were or why looking to them for assistance makes sense. Let's discuss that now as a prelude to the map we use to navigate our reliability work.
 
-In this module and throughout the Modern Operations learning path, we use the term _modern operations practices_ as a container for two different practices:
+In this module and throughout the Modern Operations learning path, we use the term *modern operations practices* as a container for two different practices:
 
 - DevOps
 - Site reliability engineering (SRE)

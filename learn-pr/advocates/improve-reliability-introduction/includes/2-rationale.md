@@ -1,4 +1,4 @@
-Whatever your role in the construction and operations of production systems, reliability tends to be the number one worry that keeps you awake, unable to go to sleep at night. It's ironically also reliability issues that most often wake you with a page at 2:00 a.m.
+Whatever your role in the construction and operations of production systems, reliability tends to be the number one worry that leaves you unable to go to sleep at night. Ironically, reliability issues are also most likely to wake you up with a page at 2:00 a.m.
 
 You've seen the ugly red dashboards when something goes wrong and worse, the angry posts from affected customers on social media when reliability becomes an issue.
 

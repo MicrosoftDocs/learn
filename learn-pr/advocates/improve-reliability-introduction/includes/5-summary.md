@@ -1,4 +1,4 @@
-Improving your reliability can definitely be a challenge. But it's a necessary challenge to see that your efforts succeed. In this module, you:
+Improving your reliability can definitely be a challenge, but it's a necessary challenge that's vindicated when your efforts succeed. In this module, you:
 
 - Learned why reliability is crucial to your success.
 - Gained a deeper understanding of the impact of reliability difficulties.
