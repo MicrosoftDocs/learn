@@ -1,4 +1,4 @@
-In the previous unit, you added QR code functionality to aid users in enabling multi-factor authentication. In this unit, you'll learn about authorization based on claims and policies. 
+In the previous unit, you added QR code functionality to enable multi-factor authentication. In this unit, you learn about authorization based on claims and policies. 
 
 ## Authorization vs. authentication
 
@@ -10,7 +10,7 @@ Authorization refers to the process that determines what an authenticated user i
 
 ## Claims and policy-based authorization
 
-Claims are name-value pairs describing what the subject *is* (**not** what it can *do*!). Claims are assigned by a trusted authority and are used to enforce authorization policies.
+Claims are name-value pairs describing what the subject *is*, **not** what it can *do*! Claims are assigned by a trusted authority and are used to enforce authorization policies.
 
 Consider a government-issued ID. The ID displays your attributes. These are claims. Interested parties can observe the ID, verify its source and authenticity, and make decisions based on the attributes. The decisions enforce a policy.
 
@@ -18,4 +18,4 @@ Look to bars and taverns for a more concrete example. Alice wants to purchase an
 
 ## Summary
 
-In this unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In the next unit, you'll use Identity to store claims and apply policies for conditional access.
+In this unit, you learned the difference between authentication and authorization. You also learned how claims are used by policies for authorization. In the next unit, you can use Identity to store claims and apply policies for conditional access.

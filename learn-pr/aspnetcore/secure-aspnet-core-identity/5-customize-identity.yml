@@ -3,7 +3,7 @@ uid: learn.secure-aspnet-core-identity.4-customize-identity
 metadata:
   title: Exercise - Customize Identity
   description: Learn how to customize the Identity framework in an ASP.NET Core web app.
-  ms.date: 03/16/2022
+  ms.date: 05/18/2023
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
