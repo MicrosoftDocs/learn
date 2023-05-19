@@ -152,6 +152,11 @@ achievements:
   title: Machine learning crash course
   summary: Machine learning crash course
   iconUrl: /training/achievements/ml-crash-course.svg
+- uid: learn.azure.copy-blobs-from-command-line-and-code.badge
+  type: badge
+  title: Copy and move blobs from one container or storage account to another from the command line and in code
+  summary: Use .NET, AzCopy, and Azure CLI to migrate files between Azure storage accounts.
+  iconUrl: /training/achievements/copy-blobs-from-command-line-and-code.svg
 - uid: learn.introduction-to-regression.badge
   type: badge
   title: Predict numeric values with regression
@@ -1385,7 +1390,7 @@ achievements:
 - uid: learn.create-voice-activated-webxr-app-with-babylonjs.badge
   type: badge
   title: Create and deploy a voice activated WebXR app with Babylon.js and Azure Cognitive Services
-  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
+  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech to text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
   iconUrl: /training/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
 - uid: learn.azure.intro-to-custom-commands.badge
   type: badge
@@ -1414,8 +1419,8 @@ achievements:
   iconUrl: /training/achievements/language-translator-mixed-reality.svg
 - uid: learn.azure.intro-to-speech-to-text.badge
   type: badge
-  title: Introduction to Speech-to-text
-  summary: Speech-to-text enables the real-time transcription of audio streams into text.
+  title: Introduction to Speech to text
+  summary: Speech to text enables the real-time transcription of audio streams into text.
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
 - uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
   type: badge
@@ -1424,8 +1429,8 @@ achievements:
   iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
-  title: Introduction to Text-to-speech
-  summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
+  title: Introduction to Text to speech
+  summary: Text to speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
   iconUrl: /training/achievements/intro-to-text-to-speech.svg
 - uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics.badge
   type: badge
@@ -1677,3 +1682,43 @@ achievements:
   title: Deploy ASP.NET web apps with Azure Pipelines
   summary: Deploy ASP.NET web apps with Azure Pipelines
   iconUrl: /training/achievements/deploy-aspnet-apps-azure-app-service-pipelines.svg
+- uid: learn.wwl.create-deploy-azure-resource-manager-templates.badge
+  type: badge
+  title: Create and deploy Azure Resource Manager templates
+  summary: Learn how Azure Resource Manager (ARM) can help streamline deployments, choose the correct deployment mode for your solution, and create and deploy an ARM template.
+  iconUrl: /training/achievements/azure-resource-manager-create-deploy.svg
+- uid: learn.wwl.provision-virtual-machines-azure.badge
+  type: badge
+  title: Provision virtual machines in Azure
+  summary: Learn the availability and sizing options of Azure Virtual Machines, and how to create a virtual machine by using the Azure CLI.
+  iconUrl: /training/achievements/virtual-machines-provisions.svg
+- uid: learn.wwl.implement-durable-functions.badge
+  type: badge
+  title: Implement Durable Functions
+  summary: Learn how Durable Functions can simplify complex, stateful coordination requirements in serverless applications.
+  iconUrl: /training/achievements/3-implement-durable-functions.svg
+- uid: learn.wwl.implement-partitioning-azure-cosmos-db.badge
+  type: badge
+  title: Implement partitioning in Azure Cosmos DB
+  summary: Learn how partitions are organized in Azure Cosmos DB and how to choose an appropriate partition key for your solution.
+  iconUrl: /training/achievements/2-implement-partitioning-in-azure-cosmos-db.svg
+- uid: learn.oxford.deploy-5g-services-with-azure.trophy
+  type: trophy
+  title: Deploy 5G services with Azure
+  summary: This learning path aims to explain learners how to use Azure to deploy 5G services
+  iconUrl: /training/achievements/deploy-5g-services-with-azure.svg
+- uid: learn.oxford.5g-business-models.badge
+  type: badge
+  title: 5G business models for Azure cloud technologies in enterprise
+  summary: This module introduces 5G business models for Azure cloud technologies.
+  iconUrl: /training/achievements/student-evangelism/5g-business-models.svg
+- uid: learn.oxford.5g-tech-azure-cloud.badge
+  type: badge
+  title: Enterprise 5G technologies for Azure Cloud Services
+  summary: We introduce Enterprise 5G technologies for Azure
+  iconUrl: /training/achievements/student-evangelism/5g-technologies-for-azure-cloud-services.svg
+- uid: learn.oxford.intro-5g-azure.badge
+  type: badge
+  title: Introduction to 5G for Azure in the Enterprise
+  summary: We introduce 5G for Azure in the Enterprise
+  iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg

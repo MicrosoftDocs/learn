@@ -1,4 +1,4 @@
-Think of security in layers, and the network layer is important. You need to lock down the network with tools like security groups, Bastion, and Front Door. When, a bad-actor has to invest time and effort to break into your network or gain access to resources if they break in the more likely they are to leave you alone.
+Network security could be defined as the process of protecting resources from unauthorized access or attack by applying controls to network traffic. The goal is to ensure that only legitimate traffic is allowed. Azure includes a robust networking infrastructure to support your application and service connectivity requirements. Network connectivity is possible between resources located in Azure, between on-premises and Azure hosted resources, and to and from the internet and Azure.
 
 ## Scenario
 
@@ -10,7 +10,7 @@ A security engineer uses network security features to restrict, monitor, and man
 
 ## Skills measured
 
-Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Securing the Azure platform your cloud solutions run on is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Implement platform protection (15-20%)
 

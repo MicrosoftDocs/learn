@@ -4,7 +4,7 @@ Azure Storage encryption for data at rest protects your data by ensuring your or
 
 Examine the following characteristics of Azure Storage encryption.
 
-- Data is encrypted automatically before it's persisted to Azure Managed Disks, Azure Blob Storage, Azure Queue Storage, Azure Cosmos DB (Azure Table Storage), or Azure Files.
+- Data is encrypted automatically before it's persisted to Azure Managed Disks, Azure Blob Storage, Azure Queue Storage, Azure Cosmos DB, Azure Table Storage, or Azure Files.
 
 - Data is automatically decrypted before it's retrieved.
 

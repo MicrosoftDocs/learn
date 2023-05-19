@@ -4,13 +4,11 @@ title: Create blob containers
 metadata:
   title: Create blob containers
   description: "Create blob containers"
-  ms.date: 03/27/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/3-create-blob-containers.md)]

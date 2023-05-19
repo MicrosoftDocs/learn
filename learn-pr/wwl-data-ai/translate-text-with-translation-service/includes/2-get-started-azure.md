@@ -1,7 +1,7 @@
 Microsoft Azure provides cognitive services that support translation. Specifically, you can use the following services:
 
 - The **Translator** service, which supports text-to-text translation.
-- The **Speech** service, which enables speech-to-text and speech-to-speech translation.
+- The **Speech** service, which enables speech to text and speech-to-speech translation.
 
 ## Azure resources for Translator and Speech
 
@@ -32,8 +32,8 @@ The Translator API offers some optional configuration to help you fine-tune the 
 
 The Speech service includes the following application programming interfaces (APIs):
 
-- **Speech-to-text** - used to transcribe speech from an audio source to text format.
-- **Text-to-speech** - used to generate spoken audio from a text source.
+- **Speech to text** - used to transcribe speech from an audio source to text format.
+- **Text to speech** - used to generate spoken audio from a text source.
 - **Speech Translation** - used to translate speech in one language to text or speech in another.
 
 You can use the **Speech Translation** API to translate spoken audio from a streaming source, such as a microphone or audio file, and return the translation as text or an audio stream. This enables scenarios such as real-time closed captioning for a speech or simultaneous two-way translation of a spoken conversation.

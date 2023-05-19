@@ -7,8 +7,8 @@ metadata:
   author: ecfan
   ms.author: estfan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ROBOTS: INDEX,FOLLOW
+  ms.service: logic-apps
 title: "Introduction to Azure Logic Apps"
 summary: "Characterize the types of business processes that Azure Logic Apps can automate. Describe the function of connectors, triggers, and actions and show how you combine them to create an app."
 abstract: |
