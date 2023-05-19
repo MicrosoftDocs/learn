@@ -166,7 +166,7 @@ When analyzing a pod, you might encounter it in a faulty state. Here are some co
 
 - **CrashLoopBackOff**
 
-   When this message appears it means that the runtime is unable to run the image. Once again, kubectl describe pod is the first step to identify potential issues. Reasons for this state vary, but are usually around can be application failure, or mismatch between container version and host version. To see why the application failed, you can query for the logs. Make sure you use LogMonitor to include all of the logs to STDOUT. Kubectl logs should retrieve the logs and potentially inform of other issues with the application or pod. 
+   When this message appears it means that the runtime is unable to run the image. Once again, kubectl describe pod is the first step to identify potential issues. Reasons for this state vary, but are usually around application failure, or mismatch between container version and host version. To see why the application failed, you can query for the logs. Make sure you use LogMonitor to include all of the logs to STDOUT. Kubectl logs should retrieve the logs and potentially inform of other issues with the application or pod.
 
    To retrieve the logs of a container, you can use:
 
