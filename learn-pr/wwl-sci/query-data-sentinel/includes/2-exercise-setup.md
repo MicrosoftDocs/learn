@@ -1,4 +1,4 @@
-The Query and visualize data in Microsoft Sentinel exercise in this module is an optional unit. However, if you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
+This *query and visualize data* exercise is an optional unit. If you want to perform this exercise, you need access to an Azure subscription where you can create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
 
 > [!NOTE]
 > If you choose to perform the exercise in this module, be aware that you might incur costs in your Azure Subscription. To estimate the cost, refer to [Microsoft Sentinel Pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
@@ -9,7 +9,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. Select the following link:
 
-   [![Deploy To Azure.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https://raw.githubusercontent.com/MicrosoftDocs/mslearn-security-ops-sentinel/main/mslearn-query-data-sentinel/sentinel-template.json?azure-portal=true)
+   [![Deploy To Azure.](https://aka.ms/deploytoazurebutton)](https://portal.azure.com/#create/Microsoft.Template/uri/https%3A%2F%2Fraw.githubusercontent.com%2FMicrosoftDocs%2Fmslearn-security-ops-sentinel%2Fmain%2Fmslearn-query-data-sentinel%2Fsentinel-template.json?azure-portal=true)
 
    You're prompted to sign in to Azure.
 
@@ -62,13 +62,7 @@ In this task, you deploy a Microsoft Sentinel connector to Azure Activity.
 
    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot of the Microsoft Sentinel Data connectors page." border="true":::
 
-1. Select **Launch Azure Policy Assignment** wizard.
-1. In the **Basics** tab, select the button with the three dots under **Scope** to select your resources assignment scope.
-1. Select your **Subscription** and **Resource Group**, then choose **Select**.
-1. Select **Next** to continue and **Next** again to continue to the **Parameters** tab.
-1. In the **Parameters** tab, choose your Microsoft Sentinel workspace from the Log Analytics workspace dropdown list.
-1. To apply the policy on your existing resources, select the **Remediation** tab and select **Create a remediation task**.
-1. Select **Review + Create**, then select **Create**.
+1. In the **Azure Activity** screen, under **Instructions**, verify your **Prerequisites** and then follow the **Configuration** steps.
 1. When you receive a status of **Connected**, close all open panels to return to the **Microsoft Sentinel | Data connector** panel.
 
 > [!NOTE]

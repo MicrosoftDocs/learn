@@ -2,7 +2,7 @@ Microsoft Sentinel provides several templates that are ready for use. You can us
 
 ## Microsoft Sentinel Workbooks
 
-Most of the data connectors Microsoft Sentinel uses to ingest data come with their own workbooks. You can get better insight into the data that is being ingested by using tables and visualizations, including bar and pie charts. You can also make your own workbooks from the beginning instead of using the predefined templates.
+Most of the data connectors Microsoft Sentinel uses to ingest data come with their own workbooks. You can get insights into the data that is being ingested by using tables and visualizations, including bar and pie charts. You can also make your own workbooks from scratch instead of using the predefined templates.
 
 ## Workbook page
 

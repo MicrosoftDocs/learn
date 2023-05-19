@@ -32,7 +32,7 @@ After you add the text, select the **Preview** tab to preview how your content a
 
 ## Query item
 
-You can create a different query from the logs and visualize the data as text, charts, or grids. You can write the query using KQL, and then format the data using various visualizations including:
+You can create a different query from the logs and visualize the data as text, charts, or grids. You can write the query using KQL. Then format the data using various visualizations including:
 
 - Grids (or tables)
 - Area charts
@@ -89,7 +89,7 @@ SecurityAlert
 
 In the previous example, the query indicates the visualization type for the data. You can also use the query without including the *render* parameter. Use the **Visualization** dropdown menu to select one of the offered types of visualizations:
 
-:::image type="content" source="../media/06-visualization-menu.png" alt-text="Screenshot of the Visualization drop-down menu options." border="true":::
+:::image type="content" source="../media/06-visualization-menu.png" alt-text="Screenshot of the Visualization dropdown menu options." border="true":::
 
 ## Grid visualizations
 
@@ -104,7 +104,7 @@ You can use parameters in your interactive workbook to manipulate the results of
 You can create the following parameter types:
 
 - **Text**. You can enter arbitrary text.
-- **Drop down**. You can modify the appearance of a query step to include a dropdown menu in which you can select a value from a set of values. In this parameter type, you can enter a KQL query or a JSON string to provide the choices for the drop-down list.
+- **Drop down**. You can modify the appearance of a query step to include a dropdown menu in which you can select a value from a set of values. In this parameter type, you can enter a KQL query or a JSON string to provide the choices for the dropdown list.
 - **Time range picker**. You can select from prepopulated time ranges or select a custom range.
 - **Resource picker**. You can select one or more Azure resources.
 - **Subscription picker**. You can select one or more Azure subscription resources.

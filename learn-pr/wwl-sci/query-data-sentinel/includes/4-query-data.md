@@ -12,13 +12,13 @@ KQL provides you with the ability to create, store, and run interactive analytic
 
 A query is a read-only request that processes data and returns the results of this processing without modifying the data or metadata. Similar to SQL queries, KQL queries use schema entities that are organized in a hierarchy such as databases, tables, and columns. A schema is a collection of tables grouped under logical categories. The queries consist of sequences of query statements that are delimited by a semicolon (;).
 
-When you construct a query, you start with either a table name or a search command. For example, the following query retrieves all records from the **Event** table:
+When you construct a query, you start with either a table name or a search command. For example, the following query retrieves all records from the `Event` table:
 
 ```kusto
 Event
 ```
 
-You can use the pipe (|) character to separate commands. The output of the first command becomes the input of the next command. You can add any number of commands to a single query. The following query retrieves the records from the **Event** table, and then searches them for the term **error** in any property:
+You can use the pipe (|) character to separate commands. The output of the first command becomes the input of the next command. You can add any number of commands to a single query. The following query retrieves the records from the `Event` table, and then searches them for the term `error` in any property:
 
 ```kusto
 Event
@@ -41,7 +41,7 @@ AzureActivity
 | where ActivityStatus == 'Accepted'
 ```
 
-By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit **TimeGenerated** filter to the query or use the **Time range** control. For example, the following query returns data from the preceding hour:
+By default, Log Analytics limits queries to a time range of the past 24 hours. To set a different time range, you can add an explicit `TimeGenerated` filter to the query or use the `Time range` control. For example, the following query returns data from the preceding hour:
 
 ```kusto
 

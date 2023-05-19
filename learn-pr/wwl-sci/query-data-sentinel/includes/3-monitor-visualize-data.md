@@ -34,7 +34,7 @@ Select **Run** to start a predefined query. This action redirects you to the que
 
 ### Query Explorer
 
-The **Query Explorer** link on the page header to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
+Use the Query Explorer to access your previously saved queries. You can also access some **Solution Queries** that basically filter the most common queries that you can use to filter the data. From the **Solution Queries** list, you can either run the query or organize the query in the favorites section by selecting the star symbol.
 
 ### Tables pane
 
@@ -72,7 +72,7 @@ The header toolbar provides more interaction with the query, as displayed in the
 
   - **Export to CSV**. Export all the columns, both visible and hidden, into a CSV file that you can open with Microsoft Excel.
   - **Export to CSV-Displayed Columns**. Export only those columns that are displayed in the results windows of the query.
-  - **Export to Power BI (M query)**. Create and download a **PowerBIQuery.txt** file that you can open with Microsoft Power BI application.
+  - **Export to Power BI (M query)**. Create and download a *PowerBIQuery.txt* file that you can open with Microsoft Power BI application.
 
   You can pin the results of the query into a private or shared dashboard to quickly examine the results of the query.
 

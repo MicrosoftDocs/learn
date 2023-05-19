@@ -20,15 +20,17 @@ In this exercise, explore logs and Microsoft Sentinel Workbooks. You perform the
     > [!NOTE]
     > When you open the **Logs** page for the first time, you might be redirected to the **Queries** window. Close the **Queries** window and return to the **New Query 1** section.
 
-1. On the **Microsoft Sentinel | Logs** page, in the **Tables** pane, from the **Group by: Solution** drop-down menu, select **Category**.
-1. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the cursor over the **Azure Activity** table or use the && key to navigate to the table, and then select **Preview data**.
+1. On the **Microsoft Sentinel | Logs** page, in the **Tables** pane, from the **Group by: Solution** dropdown menu, select **Category**.
+1. In the **Tables** pane, from the list of tables, expand the **Azure Resources** category, move the cursor over the **Azure Activity** table or use the **Tab** key to navigate to the table, and then select **Preview data**.
 1. In the **AzureActivity** window, select **See in query editor**. This option enables you to preview the data and to check if the results are as you expect before you actually run a query with it.
 
    :::image type="content" source="../media/07-tables-pane.png" alt-text="Screenshot of the Tables pane." border="true":::
 
    In the **Query** section, you can observe the query structure. This query searches and presents the last 10 events from the Azure Activity log. The first row in the query, `AzureActivity` specifies the table used in the query. The second line contains a `where` statement that filters the records from the last day. The third line contains another statement to filter only the last 10 events.
 
-1. The query results section presents the results of the query. You can expand any of the records to review the values in the table. Select the name of any column to sort the results by that column. Select the filter icon next to it to provide a filter condition. This approach is similar to adding a filter condition to the query itself except that this filter is cleared if you run the query again. If you select the **Columns** dropdown menu, you can filter the columns from the table that you want to display. By selecting **Group columns**, you can group records by a particular column.
+   The query results section presents the results of the query. You can expand any of the records to review the values in the table. Select the name of any column to sort the results by that column.
+
+1. Select the filter icon next to it to provide a filter condition. This approach is similar to adding a filter condition to the query itself except that this filter is cleared if you run the query again. If you select the **Columns** dropdown menu, you can filter the columns from the table that you want to display. By selecting **Group columns**, you can group records by a particular column.
 
    :::image type="content" source="../media/07-query-result.png" alt-text="Screenshot of the Query results with the previous items called out." border="true":::
 
@@ -61,13 +63,13 @@ In this exercise, explore logs and Microsoft Sentinel Workbooks. You perform the
    | **Parameter name** | Level |
    | **Display name** | Level |
    | **Parameter type** | From the dropdown menu, select **Drop down**. |
-   | **Required?** | Select this check box. |
-   | **Allow multiple selections** | Select this check box. |
-   | **Limit multiple selections** | Don't select this check box. |
+   | **Required?** | Select this checkbox. |
+   | **Allow multiple selections** | Select this checkbox. |
+   | **Limit multiple selections** | Don't select this checkbox. |
    | **Delimiter** | Retain the default values. |
    | **Quote with** | Retain the default values. |
    | **Explanation** | This parameter filters the events based on the level. |
-   | **Hide parameter in reading mode** | Don't select this check box. |
+   | **Hide parameter in reading mode** | Don't select this checkbox. |
    | **Get data from** | Query |
 
 1. In the **Log Analytics workspace Logs Query** section, enter the following query, and then select **Run Query**.
@@ -84,7 +86,7 @@ In this exercise, explore logs and Microsoft Sentinel Workbooks. You perform the
 1. Select **Save** to commit the changes, and notice the parameter step now includes a parameter called **Level**.
 
     > [!TIP]
-    > In the edit mode, you can select the ellipsis icon next to the **Edit** option to display a new drop-down menu. From that menu, you can move this step to different parts of the workbook. You can also clone or remove the step from the workbook.
+    > In the edit mode, you can select the ellipsis icon next to the **Edit** option to display a new dropdown menu. From that menu, you can move this step to different parts of the workbook. You can also clone or remove the step from the workbook.
 
 1. On the header bar, select the **Save as** icon to save the customized workbook.
 1. In the **Title** field, provide a name for the new workbook, and then select **Save**.
