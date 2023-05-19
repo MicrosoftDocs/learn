@@ -23,7 +23,7 @@ The operations supported inside the secure enclaves are:
 | [BETWEEN (Transact-SQL)](/sql/t-sql/language-elements/between-transact-sql) | Supported | Supported | Supported |
 | [IN (Transact-SQL)](/sql/t-sql/language-elements/in-transact-sql) | Supported | Supported | Supported |
 | [LIKE (Transact-SQL)](/sql/t-sql/language-elements/like-transact-sql) | Supported | Supported | Supported |
-| [DISTINCT](/sql/t-sql/queries/select-transact-sql.md#c-using-distinct-with-select) | Supported | Supported | Supported |
+| [DISTINCT](/sql/t-sql/queries/select-transact-sql#c-using-distinct-with-select) | Supported | Supported | Supported |
 | [Joins](/sql/relational-databases/performance/joins) | Supported | Supported | Only nested loop joins supported |
 | [SELECT - ORDER BY Clause (Transact-SQL)](/sql/t-sql/queries/select-order-by-clause-transact-sql) | Supported | Supported | Not supported |
 | [SELECT - GROUP BY- Transact-SQL](/sql/t-sql/queries/select-group-by-transact-sql) | Supported | Supported | Not supported |
