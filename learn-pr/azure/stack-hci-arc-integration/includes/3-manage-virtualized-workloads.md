@@ -9,7 +9,7 @@ For any Arc-enabled server running Windows or Linux, including Azure Stack HCI V
 | Overview | Provides basic information about the Azure resource and the corresponding Arc-enabled server, including status, location, subscription, computer name, operating system, and tags. |
 | Activity log | Lists Azure Resource Manager-based changes affecting the state of the Azure resource representing the Arc-enabled server, including information identifying the initiator of that change. |
 | Access control | Enables you to view, grant, and revoke permissions to perform management tasks on the Azure resource representing the Arc-enabled server. |
-| Tags | Allow you to view, assign, and remove tags consisting of name/value pairs, which gives you a mechanism to label and categorize the Azure resource representing the Arc-enabled server in an arbitrary manner. You can also use them to facilitate consolidated billing by applying tags that map to cost centers reflecting your charge-back policies. |
+| Tags | Allow you to view, assign, and remove tags consisting of name/value pairs, which give you a mechanism to label and categorize the Azure resource representing the Arc-enabled server in an arbitrary manner. You can also use them to facilitate consolidated billing by applying tags that map to cost centers reflecting your charge-back policies. |
 | Extensions | Allow you to automate configuration of the operating system and applications running within the Arc-enabled server by using VM extensions. |
 | Locks | Allow you to prevent accidental changes or deletions of the Azure resource corresponding to the Arc-enabled server. |
 | Policies | Allow you to audit operating system and application settings of the Arc-enabled server. |
