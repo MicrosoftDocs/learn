@@ -2,7 +2,7 @@ In this unit, you build and host the new and updated container images in Azure C
 
 ## Container images in Azure Container Registry
 
-You host container images in container registries. Often, a public container registry like Docker Hub is sufficient. Private container registries, such as Azure Container Registry, are more appropriate for enterprise scenarios. Only your team and services have access to a private container registry. All the container images used to initially deploy the :::no-loc text="eShopOnContainers"::: app to Azure Kubernetes Service (AKS) are from one of the Container Registry endpoints.
+You host container images for microservices solutions in container registries. Often, a public container registry like Docker Hub is sufficient. Private container registries, such as Azure Container Registry, are more appropriate for enterprise scenarios. Only your team and services have access to your private container registry. All the container images used to deploy the :::no-loc text="eShopOnContainers"::: app to Azure Kubernetes Service (AKS) are from one of the Container Registry endpoints.
 
 The following diagram shows the relationships among Docker container images, container registries such as Container Registry, and AKS or other Kubernetes deployments.
 
@@ -72,7 +72,7 @@ After the updated app installs and is online, verify that the changes were succe
    1. Select **CHECKOUT**.
    1. Scroll to the **HAVE A DISCOUNT CODE?** field.
 
-      :::image type="content" source="../media/7-update-aks-deployment/discount-code-field.png" alt-text="Screenshot of the the shopping basket with the coupon code text box." lightbox="../media/7-update-aks-deployment/discount-code-field.png":::
+      :::image type="content" source="../media/7-update-aks-deployment/discount-code-field.png" alt-text="Screenshot of the shopping basket with the coupon code text box." lightbox="../media/7-update-aks-deployment/discount-code-field.png":::
 
    1. Enter the code *:::no-loc text="DISC-15":::* for a 15 USD discount, and select **APPLY**.
    1. Select **PLACE ORDER** to complete the purchase.

@@ -1,7 +1,7 @@
 In this module, you: 
 
 - Examined an existing ASP.NET Core microservice that runs in Azure Kubernetes Service (AKS).
-- Implemented a new ASP.NET Core microservice, and containerized it.
+- Coded, implemented, and containerized a new ASP.NET Core microservice.
 - Published the Docker image to Azure Container Registry.
 - Deployed the Docker container to the existing app in AKS.
 

@@ -1,13 +1,20 @@
-## Coupon service design
+There are many ways to implement a coupon code feature in an e-commerce app. The following sections summarize the requirements, technology stack, and interservice integration for the :::no-loc text="eShopOnContainers"::: coupon service.
 
-There are many ways to implement a coupon code feature in an e-commerce app. The following sections summarize the requirements, technology stack, and interservice integration for the current implementation.
+### Coupon microservice
+
+Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. As you complete and deploy the ASP.NET Core *Coupon.API* microservice project to the existing :::no-loc text="eShopOnContainers"::: app in production, you learn how to:
+
+- Design a microservice by using Domain-Driven Design (DDD).
+- Containerize the microservice by using Docker.
+- Publish the container image to a Azure Container Registry.
+- Deploy the container to an existing Azure Kubernetes Service (AKS) cluster.
 
 ## Business requirements
 
 The coupon feature for the :::no-loc text="eShopOnContainers"::: app has the following business requirements:
 
 - To get a discount, a user applies a coupon code from the checkout page. All coupon codes are prefixed with *:::no-loc text="DISC-":::* and suffixed with an unsigned integer indicating the US dollar (USD) amount to deduct from the order total. For example, *:::no-loc text="DISC-30":::* deducts 30 USD.
-- The coupon service validates that the coupon code is available before letting it be used.
+- The coupon service validates that the coupon code is available before allowing it to be used.
 - After the payment processes, the ordering service requests coupon validation during the order process.
 - Upon validation, the coupon is assigned to the order and isn't available for any other order by that user.
 - If an order is canceled, the assigned coupon is released for any other order to use.
@@ -26,7 +33,7 @@ You implement the coupon service like a create, read, update, delete (CRUD) serv
 |`Discount`|The discount amount represented in USD currency.|
 |`Code`    |The coupon code.|
 |`Consumed`|A flag that indicates whether the coupon code has been used.|
-|`OrderId` |The unique identifier of the associated order the coupon code has been applied to.|
+|`OrderId` |The unique identifier of the order the coupon code is applied to.|
 
 The `Coupon` model is the centerpiece of all business logic in the *:::no-loc text="Coupon.API":::* project. The coupon service only concerns itself with the domain of coupons, but it relies on the other services to interact with other domains, such as determining whether an order is valid.
 

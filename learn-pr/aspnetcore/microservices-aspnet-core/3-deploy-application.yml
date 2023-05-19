@@ -2,7 +2,7 @@
 uid: learn.microservices-aspnet-core.3-deploy-application
 metadata:
   title: Exercise - Deploy the application
-  description: Deploy the starter sample application and review the code in the project.
+  description: Deploy the starter sample application and review the code directories in the project.
   ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper

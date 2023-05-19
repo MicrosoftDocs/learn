@@ -8,6 +8,8 @@ The quickstart script completes the following steps to deploy a modified version
 - Deploys the containers to the fully managed AKS service.
 - Displays connection information upon completion.
 
+To run the quickstart script:
+
 1. In your dev environment, expand the *deploy/k8s* directory in the Visual Studio Code **Explorer** pane. This directory contains the scripts to use in this module.
 
    > [!NOTE]
@@ -39,7 +41,7 @@ The quickstart script completes the following steps to deploy a modified version
 
    [!INCLUDE[Quickstart note](../../includes/microservices/quickstart.md)]
 
-You can review the code while the script is deploying the Docker containers to AKS.
+While the script deploys the the Docker containers to AKS, review the other code directories in the dev environment.
 
 ## Review the code
 

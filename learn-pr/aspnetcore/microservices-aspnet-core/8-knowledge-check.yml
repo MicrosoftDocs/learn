@@ -18,14 +18,14 @@ quiz:
       choices:
       - content: "Data is stored in a master data store that all microservices interact with."
         isCorrect: false
-        explanation: "A shared data store doesn't provide autonomy, and applying data schema updates can cause runtime conflicts for services that access athe same resources."
+        explanation: "A shared data store doesn't provide autonomy, and applying data schema updates can cause runtime conflicts for services that access the same resources."
       - content: "Each microservice implements its own data store that's best optimized for its workload, storage needs, and read/write patterns."
         isCorrect: true
         explanation: "Data isolation gives every microservice the autonomy to independently apply data schema updates, without affecting other services in the production environment."
-      - content: "Services don't directly store data. They send data to an event bus and it's then processed by a data repository service."
+      - content: "Services don't store data directly. The services send data to an event bus and a data repository service then processes it."
         isCorrect: false
         explanation: "The event bus is used for interservice communication, not data persistence."
-    - content: "In the ASP.NET Core health checks middleware, what purpose does the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serve?"
+    - content: "In the ASP.NET Core health checks middleware, what is the purpose of the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices`?"
       choices:
       - content: "Configures a Kubernetes liveness probe by using HTTP `GET`."
         isCorrect: false
@@ -38,7 +38,7 @@ quiz:
         explanation: "To map health check endpoints in ASP.NET Core, you call `endpoints.MapHealthChecks(\"/liveness\");` in the `Startup.Configure` method."
     - content: "What is the benefit of using Azure Container Registry?"
       choices:
-      - content: "Container Registry allows public access to container images. Consequently, developers can access the images without authenticating."
+      - content: "Container Registry allows public access to container images, so developers can access the images without authenticating."
         isCorrect: false
         explanation: "Container Registry is a private registry. Images can't be accessed without authentication."
       - content: "Container Registry is a private container registry and provides granular access control for development teams."
