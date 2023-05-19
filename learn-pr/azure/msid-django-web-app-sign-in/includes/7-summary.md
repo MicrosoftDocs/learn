@@ -1,6 +1,6 @@
 Your banking company needed to provide its users access to protected resources. You needed to create a secure web app that asks the users to authenticate themselves before getting access to these resources.
 
-The Microsoft identity platform helps you build applications that your users and customers can sign in to by using several identity types. You created a Django web app and secured it by using the Microsoft identity platform. You created a single-tenant app registration in an Azure AD tenant and configured a Django web app by using the app registration details. Finally, by using the Microsoft identity web library for Python, you authenticated users by using their sign-in credentials: username and password.
+The Microsoft identity platform helps you build applications that your users and customers can sign in to by using several identity types. You created a Django web app and secured it by using the Microsoft identity platform. You created a single-tenant app registration in an Azure Active Directory (Azure AD) tenant and configured a Django web app by using the app registration details. Finally, by using the Microsoft identity web library for Python, you authenticated users by using their sign-in credentials: username and password.
 
 If the banking company decided to build its own authentication system, it would have to:
 

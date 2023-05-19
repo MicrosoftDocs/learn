@@ -1,4 +1,4 @@
-You must register your web app with Azure AD to enable user authentication. In our example, the banking company intends to build a Django web app to allow its customers to access services. Here, you register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You also create a test user for testing purposes.
+You must register your web app with Azure Active Directory (Azure AD) to enable user authentication. In our example, the banking company intends to build a Django web app to allow its customers to access services. Here, you register a single-tenant web app in Azure AD and configure a Django app to use the registration details. You also create a test user for testing purposes.
 
 ## Register a single-tenant web application
 

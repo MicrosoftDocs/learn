@@ -49,20 +49,22 @@ In addition to these endpoints, you define `sign_in_status` and `token_details` 
 
 ## Create templates
 
-Django templates help you create HTML files that are loaded when a user accesses an endpoint. In your Django *templates* folder, create an *auth* folder and store your template files in there:
+Django templates help you create HTML files that are loaded when a user accesses an endpoint. 
 
-```bash
-|---templates
-    |
-    |---auth
-    |   |
-    |   |--401.html
-    |   |--auth-bar-items.html
-    |   |--status.html
-    |   |--token.html
-    |---content.html
-    |---layout.html
-```
+1. In your Django *templates* folder, create an *auth* folder and store your template files in there:
+
+    ```bash
+    |---templates
+        |
+        |---auth
+        |   |
+        |   |--401.html
+        |   |--auth-bar-items.html
+        |   |--status.html
+        |   |--token.html
+        |---content.html
+        |---layout.html
+    ```
 
 1. Create the *401.html* template. This template is the file that's loaded when the user tries to access a protected page without authorization.
 

@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct. The redirect URI is the location where the authorization server sends the user after successful sign-in. A successful request to this endpoint contains an authorization code."
     - content: "It's the location where the user is prompted for credentials to sign in."
       isCorrect: false
-      explanation: "The redirect URI is not where the user enters credentials."
+      explanation: "The redirect URI isn't where the user enters credentials."
     - content: "The user sends the authorization code to the redirect endpoint after signing in."
       isCorrect: false
       explanation: "The authorization server sends the authorization code to the redirect URI after successful sign-in."
