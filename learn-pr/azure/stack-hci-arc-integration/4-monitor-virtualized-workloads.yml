@@ -32,9 +32,9 @@ quiz:
     - content: "Activity log"
       isCorrect: false
       explanation: "That's incorrect. Activity log provides a list of recent operations and events on the cluster along with their status, time, associated subscription, and initiating user."
-    - content: "Access control."
+    - content: "Access control"
       isCorrect: false
       explanation: "That's incorrect. Access control settings allow an administrator to review and modify role assignments that grant permissions to the Azure resource."
-    - content: "Tags."
+    - content: "Tags"
       isCorrect: true
       explanation: "That's correct. Tags allow an administrator to categorize resources and facilitate consolidated billing."
