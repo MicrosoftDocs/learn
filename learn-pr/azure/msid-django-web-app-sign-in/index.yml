@@ -9,18 +9,18 @@ metadata:
   ms.author: shermanouko
   ms.topic: interactive-tutorial
   ms.service: active-directory
-title: Enable user sign-in to your Django web app using Azure AD
-summary: Create a Django web app that signs in users using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant and sign in the user to a Django web app.
+title: Enable user sign-in to your Django web app by using Azure AD
+summary: Create a Django web app that signs in users by using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant, and sign in the user to a Django web app.
 abstract: |
   By the end of this module, you'll be able to:
-    - Register web application in an Azure AD tenant.
-    - Configure Django web application to use its Azure AD tenant app registration details.
-    - Sign-in user to a Django web application to obtain an ID token.
+    - Register a web application in an Azure AD tenant.
+    - Configure a Django web application to use its Azure AD tenant's app registration details.
+    - Sign-in a user to a Django web application to obtain an ID token.
 prerequisites: |
-  - Beginner level Python 3.8+ and Django web framework.
-  - An Azure account with an [active subscription](https://azure.microsoft.com/free/).
-  - An Azure AD tenant that you manage as a Global administrator.
-  - A user account in your own Azure AD tenant.
+  - Beginner-level Python 3.8+ and Django web framework
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free/)
+  - An Azure AD tenant that you manage as a Global Administrator
+  - A user account in your own Azure AD tenant
 iconUrl: /learn/achievements/msid-django-web-app-sign-in.svg
 levels:
   - intermediate

@@ -21,7 +21,7 @@ quiz:
       explanation: "Correct. The first step of the sign-in process is to send a request to the `/authorize` endpoint on Azure AD."
     - content: "The app sends an authorization code to Azure AD."
       isCorrect: false
-      explanation: "The first step in the user sign-in process for a web application is to send a request to the `/authorize` endpoint on Azure AD. Azure AD sends an authorization code to the `/redirect` endpoint after a successful sign-in attempt."
+      explanation: "Azure AD sends an authorization code to the `/redirect` endpoint after a successful sign-in attempt."
     - content: "Azure AD presents the user with a sign-in prompt."
       isCorrect: false
       explanation: "The sign-in prompt is presented to the user after the request to the `/authorize` endpoint is sent."
@@ -43,7 +43,7 @@ quiz:
       explanation: "Correct. The redirect URI is the location where the authorization server sends the user after successful sign-in. A successful request to this endpoint contains an authorization code."
     - content: "It's the location where the user is prompted for credentials to sign in."
       isCorrect: false
-      explanation: "The redirect URI is the location where the authorization server sends the user after successful sign-in. A successful request to this endpoint contains an authorization code."
+      explanation: "The redirect URI is not where the user enters credentials."
     - content: "The user sends the authorization code to the redirect endpoint after signing in."
       isCorrect: false
       explanation: "The authorization server sends the authorization code to the redirect URI after successful sign-in."
