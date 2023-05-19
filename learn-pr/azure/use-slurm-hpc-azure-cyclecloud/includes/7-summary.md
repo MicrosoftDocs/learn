@@ -5,6 +5,6 @@
 - [Slurm Support and Development]( https://www.schedmd.com/)
 - [Slurm on GitHub](https://github.com/SchedMD/)
 - [High Performance Computing](/azure/architecture/topics/high-performance-computing)
-- [What is Azure CycleCloudL](/azure/cyclecloud/overview)
+- [What is Azure CycleCloud?](/azure/cyclecloud/overview)
 - [Azure CycleCloud on GitHub](https://github.com/Azure/cyclecloud-slurm)
 - [Learning Path: Run high-performance computing (HPC) applications on Azure](/training/paths/run-high-performance-computing-applications-azure/)

@@ -15,13 +15,13 @@ quiz:
   questions:
     - content: "Which command can you use to display information on jobs, partitions, and nodes managed by Slurm?"
       choices:
-        - content: "Sstat"
+        - content: "sstat"
           isCorrect: false
           explanation: Incorrect. View information about resources utilized by running jobs or job steps.
-        - content: "Sview"
+        - content: "sview"
           isCorrect: true
           explanation: Correct. Sview allows you to view state information on jobs, partitions, and nodes managed by Slurm.
-        - content: "Sinfo"
+        - content: "sinfo"
           isCorrect: false
           explanation: Incorrect. Displays information on partitions and nodes managed by Slurm.
         - content: "sbatch"

@@ -59,12 +59,12 @@ You use a set of command line utilities to perform actions on a compute cluster 
 |sbatch    |Use this command to submit a job script for later execution. These scripts generally include one or more srun commands to initiate parallel tasks.     |
 |scancel   |Use this command to transfer a file on nodes needed.     |
 |scontrol  |Slurm administrative tool that allows you to view and modify the Slurm state. Most scontrol commands require root privileges.          |
-|Sinfo     |Displays information on partitions and nodes managed by Slurm.                                         |
-|Sprio     |View information on the components impacting a job's priority.                                         |
+|sinfo     |Displays information on partitions and nodes managed by Slurm.                                         |
+|sprio     |View information on the components impacting a job's priority.                                         |
 |squeue    |View the state of jobs or job steps.                                                                   |
-|Srun      |Use this command to submit a job for execution or to trigger job steps in real time. You can use srun to specify resource requirements such as minimum and maximum node count, processor count, and node characteristics.           |
-|Sstat     |View information about resources utilized by running jobs or job steps.                                |
+|srun      |Use this command to submit a job for execution or to trigger job steps in real time. You can use srun to specify resource requirements such as minimum and maximum node count, processor count, and node characteristics.           |
+|sstat     |View information about resources utilized by running jobs or job steps.                                |
 |strigger  |Configure or view event triggers such as what to do when a node fails or a job approaches a time limit.|
-|Sview     |View state information on jobs, partitions, and nodes managed by Slurm                                 |
+|sview     |View state information on jobs, partitions, and nodes managed by Slurm                                 |
 
 You can learn more about Slurm commands at: https://slurm.schedmd.com/quickstart.html
