@@ -88,7 +88,7 @@ Congratulations! You have just automated your Project!
 
 ## GitHub Actions with workflows
 
-GitHub Actions enables you the most customization for your Project's automation. You can use GitHub Actions to automate your project management tasks by creating workflows. Each workflow contains a series of tasks that are performed automatically every time the workflow runs. For example, you can create a workflow that runs every time an issue is created to add a label, leave a comment, and move the issue onto a project board.
+GitHub Actions enables the most customization for your Project's automation. You can use GitHub Actions to automate your project management tasks by creating workflows. Each workflow contains a series of tasks that are performed automatically every time the workflow runs. For example, you can create a workflow that runs every time an issue is created to add a label, leave a comment, and move the issue onto a project board.
 
 Learn more about automating workflows for your Project here, see the article, "Automating Projects using Actions" at the end of the module.
 

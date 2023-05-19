@@ -5,7 +5,7 @@ You learned about:
 - How to build an organization Project
 - How to automate and organize your Project
 
-## Learn More
+## Learn more
 
 Here are some links to more information on the topics we discussed in this module:
 

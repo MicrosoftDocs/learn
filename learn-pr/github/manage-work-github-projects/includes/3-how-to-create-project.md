@@ -1,4 +1,4 @@
-﻿Imagine you want to organize your team's feature backlog. Projects, GitHub's built in program management tool, is a perfect way to organize and prioritize your team's work in a single space.
+﻿Imagine you want to organize your team's feature backlog. Projects, GitHub's built-in program management tool, is a perfect way to organize and prioritize your team's work in a single space.
 
 In this unit you'll learn:
 
@@ -71,7 +71,7 @@ If you have an existing repository that you'd like to track using Projects, you 
 1. To change the repository, click the dropdown and select a repository. The issues and pull requests populate.
 1. You can either select all or select the ones you want to include.
 
-   :::image type="content" source="../media/3-bulk-adding-issues-and-pr.png" alt-text="Screenshot of Bulk Adding Issues and Pull requests from a Repository, with the option to search for specific Issues or Pull Requests highlighted.":::
+   :::image type="content" source="../media/3-bulk-add-issues-and-pr.png" alt-text="Screenshot of Bulk Adding Issues and Pull requests from a Repository, with the option to search for specific Issues or Pull Requests highlighted.":::
 
 1. Once you're ready to add the issues and pull requests to your Project, click on the green button titled Add selected item in the bottom right corner.
 
