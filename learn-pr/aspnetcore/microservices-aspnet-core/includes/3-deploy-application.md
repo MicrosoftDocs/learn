@@ -41,7 +41,7 @@ To run the quickstart script:
 
    [!INCLUDE[Quickstart note](../../includes/microservices/quickstart.md)]
 
-While the script deploys the the Docker containers to AKS, review the other code directories in the dev environment.
+While the script deploys the Docker containers to AKS, review the other code directories in the dev environment.
 
 ## Review the code
 

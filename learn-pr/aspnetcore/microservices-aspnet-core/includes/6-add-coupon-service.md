@@ -154,7 +154,7 @@ Observe the following features in the *:::no-loc text="src/Services/Coupon/Coupo
 
 ## Apply more configuration changes
 
-To make other configuration changes for the coupon service, run the following script in the terminal :
+To make other configuration changes for the coupon service, run the following script in the terminal:
 
 ```bash
 ./implementation-script.sh

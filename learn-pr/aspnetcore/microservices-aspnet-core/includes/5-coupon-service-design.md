@@ -6,7 +6,7 @@ Microservices are small enough for a feature team to independently build, test, 
 
 - Design a microservice by using Domain-Driven Design (DDD).
 - Containerize the microservice by using Docker.
-- Publish the container image to a Azure Container Registry.
+- Publish the container image to Azure Container Registry.
 - Deploy the container to an existing Azure Kubernetes Service (AKS) cluster.
 
 ## Business requirements
