@@ -2,7 +2,7 @@ In this unit, you verify that the :::no-loc text="eShopOnContainers"::: app depl
 
 ## Verify the deployment to AKS
 
-After the app deploys to AKS, the terminal displays a variation of the following message showing the URLs for the app UI, logging service, and web status pages:
+After the app deploys to AKS, the terminal displays a variation of the following message showing the URLs for the app UI, logging service, and web status pages. You can select the URLs to go to the pages.
 
 ```console
 The eShop-Learn application has been deployed to "http://000.0.000.00" (IP: 000.0.000.00).
@@ -14,13 +14,13 @@ You can begin exploring these services (when ready):
 ```
 
 > [!TIP]
-> You can also find the URLs in *modules/microservices-aspnet-core/deployment-urls.txt*.
+> You can also find the URLs in the *modules/microservices-aspnet-core/deployment-urls.txt* file.
 
 Even though the app has deployed, it might take a few minutes to come online. While the app is starting up, you might initially receive an HTTP 503 or 502 response from the server. Retry after about one minute. The :::no-loc text="Seq"::: logs, which you can see at the **:::no-loc text="Centralized logging":::** URL, are available before the other endpoints.
 
 Once the URLs are available, take the following steps to verify that the app is deployed, online, and working correctly.
 
-1. Select the **:::no-loc text="General application status":::** link in the command shell to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
+1. Select the **:::no-loc text="General application status":::** URL to view the *:::no-loc text="WebStatus":::* health checks dashboard. The resulting page displays the status of each microservice in the deployment. The page refreshes automatically every 10 seconds.
 
    :::image type="content" source="../media/4-review-code-verify-deployment/health-check.png" alt-text="Screenshot of the Health check page." lightbox="../media/4-review-code-verify-deployment/health-check.png":::
 

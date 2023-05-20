@@ -4,9 +4,9 @@ In this unit, you use a script to deploy the existing :::no-loc text="eShopOnCon
 
 The quickstart script completes the following steps to deploy a modified version of the [:::no-loc text="eShopOnContainers":::](https://github.com/dotnet-architecture/eshoponcontainers) reference app:
 
-- Provisions AKS and Azure Container Registry resources.
-- Deploys the containers to the fully managed AKS service.
-- Displays connection information upon completion.
+1. Provisions AKS and Azure Container Registry resources.
+1. Deploys the containers to the fully managed AKS service.
+1. Displays connection information upon completion.
 
 To run the quickstart script:
 
@@ -54,6 +54,6 @@ Each of the following subdirectories in *src* contains a containerized .NET proj
 | *:::no-loc text="Aggregators/":::* | Services to aggregate across multiple microservices for certain cross-service operations. An HTTP aggregator is implemented in the *:::no-loc text="ApiGateways/Aggregators/Web.Shopping.HttpAggregator":::* project. |
 | *:::no-loc text="BuildingBlocks/":::* | Services that provide cross-cutting functionality, such as the event bus for interservice events. |
 | *:::no-loc text="Services/":::* | Projects that implement the app's business logic. Each microservice is autonomous, with its own data store. The microservices showcase different software patterns, including Create-Read-Update-Delete (CRUD), Domain-Driven Design (DDD), and Command and Query Responsibility Segregation (CQRS). The new *:::no-loc text="Coupon.API":::* project is present, but incomplete. |
-| *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces. *:::no-loc text="WebSPA":::* is the storefront UI built with Angular. *:::no-loc text="WebStatus":::* is the health checks dashboard for monitoring the operational status of each service. |
+| *:::no-loc text="Web/":::* | ASP.NET Core apps that implement user interfaces. *:::no-loc text="WebSPA":::* is the storefront UI built with Angular. *:::no-loc text="WebStatus":::* is the health check dashboard for monitoring the operational status of each service. |
 
 In the next unit, you verify that the app installed and works correctly, and learn more about the design and code for the new coupon feature.

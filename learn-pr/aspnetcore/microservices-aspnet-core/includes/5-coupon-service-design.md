@@ -2,7 +2,7 @@ There are many ways to implement a coupon code feature in an e-commerce app. The
 
 ### Coupon microservice
 
-Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. As you complete and deploy the ASP.NET Core *Coupon.API* microservice project to the existing :::no-loc text="eShopOnContainers"::: app in production, you learn how to:
+Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. As you complete the ASP.NET Core *Coupon.API* microservice project and deploy it to the existing :::no-loc text="eShopOnContainers"::: app in production, you learn how to:
 
 - Design a microservice by using Domain-Driven Design (DDD).
 - Containerize the microservice by using Docker.
@@ -35,7 +35,7 @@ You implement the coupon service like a create, read, update, delete (CRUD) serv
 |`Consumed`|A flag that indicates whether the coupon code has been used.|
 |`OrderId` |The unique identifier of the order the coupon code is applied to.|
 
-The `Coupon` model is the centerpiece of all business logic in the *:::no-loc text="Coupon.API":::* project. The coupon service only concerns itself with the domain of coupons, but it relies on the other services to interact with other domains, such as determining whether an order is valid.
+The `Coupon` model is the centerpiece of all business logic in the *:::no-loc text="Coupon.API":::* project. The coupon service concerns itself only with the domain of coupons, but it relies on the other services to interact with other domains, such as determining whether an order is valid.
 
 ## Technology stack
 

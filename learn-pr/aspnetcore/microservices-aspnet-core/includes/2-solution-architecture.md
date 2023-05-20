@@ -1,17 +1,17 @@
-In this unit, you prepare your dev environment and learn about microservices architecture and the :::no-loc text="eShopOnContainers"::: app.
+In this unit, you learn about microservices architecture and the :::no-loc text="eShopOnContainers"::: app while your dev environment loads.
 
-## Install the development environment
+## Prepare the development environment
 
-Make sure you have the ability to use dev containers with [GitHub Codespaces](https://github.com/features/codespaces) (costs may apply), or with [Visual Studio Code and a supported Docker environment on your local machine](/training/modules/use-docker-container-dev-env-vs-code).
+Make sure you're set up to use dev containers with [GitHub Codespaces](https://github.com/features/codespaces) (costs may apply), or with [Visual Studio Code and a supported Docker environment on your local machine](/training/modules/use-docker-container-dev-env-vs-code).
 
 - To use the *mslearn-aspnet-core* dev environment with GitHub Codespaces, go to your [codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces) and create a new codespace using the `main` branch.
 
-- To install the *mslearn-aspnet-core* dev environment in Visual Studio Code:
+- To install the *mslearn-aspnet-core* dev environment locally in Visual Studio Code:
 
   1. From a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Dev Containers: Clone Repository in Container Volume**.
   1. Provide the following repository URL: `https://github.com/MicrosoftDocs/mslearn-aspnet-core`.
 
-While your dev environment initializes, read the following section to learn about microservices architecture and the :::no-loc text="eShopOnContainers"::: app.
+While your dev environment loads, read the following section to learn about microservices architecture and the :::no-loc text="eShopOnContainers"::: app.
 
 ## Solution architecture
 
@@ -27,17 +27,17 @@ The following diagram shows the app architecture, including the new **Coupon mic
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram showing the eShopOnContainers solution architecture." border="false" lightbox="../../media/microservices/eshop-architecture.png":::
 
-The preceding diagram doesn't show all the services that are present in the Azure Kubernetes Service (AKS) deployment, such as [Seq](https://datalust.co/seq) for unified logging and the *:::no-loc text="WebStatus":::* web app.
+The preceding diagram doesn't show all the services that are present in this Azure Kubernetes Service (AKS) deployment, such as [Seq](https://datalust.co/seq) for unified logging and the *:::no-loc text="WebStatus":::* web app.
 
 ### Data storage
 
-There's no single master data store that all services interact with. This data isolation gives every microservice the autonomy to independently apply data schema updates without affecting other services in the production environment.
+In a microservices architecture, there's no single master data store that all services interact with. This data isolation gives every microservice the autonomy to independently apply data schema updates without affecting other services in the production environment.
 
 Each microservice can implement the data store that's best optimized for its workload, storage needs, and read/write patterns. Data store choices include relational, document, key-value, and graph-based. For example, the *catalog* service stores its data in a SQL Server on Linux database. The *basket* service uses a Redis cache for storage.
 
 ### Authentication and authorization
 
-The *:::no-loc text="WebSPA ":::* UI client app delegates authentication and authorization to an **Identity microservice** that also serves as a Security Token Service (STS). The identity service is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative to hosting an STS is to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory), which offers identity and access management as a service.
+The *:::no-loc text="WebSPA ":::* client app delegates authentication and authorization to an **Identity microservice** that also serves as a Security Token Service (STS). The identity service is a containerized ASP.NET Core project that uses [IdentityServer 4](https://identityserver4.readthedocs.io), a popular OpenID Connect and OAuth 2.0 framework for ASP.NET Core. An alternative to hosting an STS is to use [Azure Active Directory (Azure AD)](https://azure.microsoft.com/services/active-directory), which offers identity and access management as a service.
 
 The identity service in the diagram is configured to allow direct access, so it bypasses the API gateway. The full *:::no-loc text="eShopOnContainers":::* app that this sample is based on uses multiple API gateways separated by business areas. The smaller implementation in this module doesn't require another API gateway.
 
@@ -51,7 +51,7 @@ Any service can publish an event to the event bus, and each service is responsib
 
 ### API gateway
 
-The *:::no-loc text="WebSPA":::* UI client app accesses the microservices via the API gateway. Among other advantages, API gateways enhance security and decouple backend services from individual clients.
+The *:::no-loc text="WebSPA":::* UI client app accesses the microservices via the **API gateway**. Among other advantages, API gateways enhance security and decouple backend services from individual clients.
 
 The :::no-loc text="WebSPA"::: ASP.NET Core MVC and Angular storefront app is accessible via a public IP address. HTTP requests from the app to the microservices route through the API gateway, which is an example of the [Backends-For-Frontends](/azure/architecture/patterns/backends-for-frontends) pattern.
 
@@ -61,11 +61,6 @@ Real-world scenarios use managed API gateway services like [Azure API Management
 
 ### Coupon service
 
-Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. In this module, you complete and deploy an ASP.NET Core microservice project named *Coupon.API* to the existing :::no-loc text="eShopOnContainers"::: app in production. In this process, you learn how to:
-
-- Design microservices by using Domain-Driven Design (DDD).
-- Containerize services by using Docker.
-- Publish container images to a container registry.
-- Deploy containers to an existing Kubernetes cluster.
+Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. In this module, you complete and deploy an ASP.NET Core microservice project named *Coupon.API* to the existing :::no-loc text="eShopOnContainers"::: app in production.
 
 In the next unit, you deploy the :::no-loc text="eShopOnContainers"::: app and further investigate its code.

@@ -36,7 +36,7 @@ To add the `GetCouponByCodeAsync` method to the coupon service:
 
 ## Add health checking
 
-Add real-time HTTP health checking to the coupon service. Apply the following changes in the *Startup.cs* file in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory.
+To add real-time HTTP health checking to the coupon service, apply the following changes in the *Startup.cs* file in the *:::no-loc text="src/Services/Coupon/Coupon.API":::* directory.
 
 1. In the `ConfigureServices` method, invoke the custom `AddCustomHealthCheck` extension method immediately after the `AddSwagger` method call, as follows:
 
@@ -62,15 +62,15 @@ Add real-time HTTP health checking to the coupon service. Apply the following ch
                tags: new string[] { "couponcollection" });
      ```
 
-     The preceding `AddCustomHealthCheck` code adds:
+     The preceding `AddCustomHealthCheck` code:
 
-     - A health check named `self` that returns an HTTP success status code for each request to the coupon service's health endpoint.
-     - A check for its MongoDB dependency by using the `AddMongoDb` extension method implemented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb) NuGet package.
+     - Adds a health check named `self` that returns an HTTP success status code for each request to the coupon service's health endpoint.
+     - Adds a check for the MongoDB dependency by using the `AddMongoDb` extension method implemented in the [AspNetCore.HealthChecks.MongoDb](https://www.nuget.org/packages/AspNetCore.HealthChecks.MongoDb) NuGet package.
 
      > [!TIP]
      > The open-source project [AspNetCore.Diagnostics.HealthChecks](https://github.com/Xabaril/AspNetCore.Diagnostics.HealthChecks) provides various custom health check implementations for ASP.NET Core projects. This MongoDB implementation is just one example.
 
-1. In the `Configure` method, replace the `// Add the endpoints.MapHealthChecks code` comment with the following highlighted code:
+1. In the `Configure` method in *Startup.cs*, replace the `// Add the endpoints.MapHealthChecks code` comment with the following highlighted code:
 
    :::code language="csharp" source="../code/src/services/coupon/coupon.api/Startup.cs" id="snippet_ConfigureMethod" highlight="29-37":::
 
@@ -134,7 +134,7 @@ Add real-time HTTP health checking to the coupon service. Apply the following ch
 
 ## Build the project
 
-Save all your changes. In the terminal pane, run the following command to build the coupon service project:
+Save your changes to the *CouponController.cs* and *Startup.cs* files. In the terminal pane, run the following command to build the coupon service project:
 
 ```dotnetcli
 dotnet build ../../src/Services/Coupon/Coupon.API/
@@ -152,15 +152,15 @@ Observe the following features in the *:::no-loc text="src/Services/Coupon/Coupo
 - The final image contains the ASP.NET Core runtime and the published coupon service artifacts.
 - When you start a container from the final image, you start the coupon service by running `dotnet Coupon.API.dll`.
 
-## Make more configuration changes
+## Apply more configuration changes
 
-Run the following script in the terminal to make other configuration changes for the coupon service:
+To make other configuration changes for the coupon service, run the following script in the terminal :
 
 ```bash
 ./implementation-script.sh
 ```
 
-To create an object in a Kubernetes cluster, you must provide the object specification in a YAML file. The Helm template functionality generates and sends the YAML to the cluster.
+To create an object in a Kubernetes cluster, you provide the object specification in a YAML file. The Helm template functionality generates and sends the YAML to the cluster.
 
 The preceding script creates a Helm chart for the coupon service in the *:::no-loc text="deploy/k8s/helm-simple/coupon":::* directory. The Helm chart for the coupon service is composed of the following files:
 
