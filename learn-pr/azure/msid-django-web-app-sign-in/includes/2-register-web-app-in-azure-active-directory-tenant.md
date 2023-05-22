@@ -4,9 +4,9 @@ Organizations often want to keep their data safe from unauthenticated and unauth
 
 An Azure AD tenant is used to represent an organization. An Azure AD tenant is also the context within which you will register and manage your apps.
 
-You will need access to an Azure AD tenant in order to use the Microsoft identity platform for identity and access management. 
+You need access to an Azure AD tenant to use the Microsoft identity platform for identity and access management. 
 
-Each Azure AD tenant is distinct and separate from other Azure AD tenants. It has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant can allow authentications only from accounts within your tenant (single tenant apps) or from all tenants (multi-tenant apps).
+Each Azure AD tenant has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant allows authentications only from accounts within your tenant (single tenant apps) or from all tenants (multi-tenant apps).
 
 The Microsoft identity platform helps you build applications your users and customers can sign in to using several identity types. These identities include:
 

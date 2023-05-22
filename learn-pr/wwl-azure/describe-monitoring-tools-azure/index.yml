@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Describe monitoring tools in Azure
 summary: This module covers tools that you can use to monitor your Azure environment.
 abstract: |

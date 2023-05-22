@@ -88,7 +88,7 @@ Here's the output:
 | これは日本語で書かれた文書です。            | Japanese(1.0)              |
 ```
 
-The service did a pretty good job of identifying the languages. It did confidently identify the Danish phrase as being Norwegian. In fairness, even linguists argue whether Danish and Norwegian are distinct languages or are dialects of the same language. (Danes and Norwegians have no doubts on the subject.)
+The service did a pretty good job of identifying the languages. It did confidently identify the Danish phrase as being Norwegian. In fairness, even linguists argue whether Danish and Norwegian are distinct languages or are minor languages of the same language. (Danes and Norwegians have no doubts on the subject.)
 
 ### Try it yourself
 

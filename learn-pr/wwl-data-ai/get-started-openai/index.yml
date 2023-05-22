@@ -7,13 +7,14 @@ metadata:
   author: sheryang
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: cognitive-services 
+  ms.subservice: openai
 title: Get started with Azure OpenAI Service
 summary: This module provides engineers with the skills to begin building an Azure OpenAI Service solution.
 abstract: |
   By the end of this module, you'll be able to:
     - Create an Azure OpenAI Service resource and understand types of Azure OpenAI base models.
-    - Use the Azure OpenAI Studio, console, or REST API to deploy a base model and test it in the Studio playground.
+    - Use the Azure OpenAI Studio, console, or REST API to deploy a base model and test it in the Studio's playgrounds.
     - Generate completions to prompts and begin to manage model parameters.
 prerequisites: |
   - Familiarity with Azure and the Azure portal.

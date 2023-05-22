@@ -17,6 +17,6 @@ If you haven't completed the [Get started with AI on Azure](/training/modules/ge
 
 As part of Microsoft's commitment to using AI responsibly, access to Azure OpenAI is currently limited. Customers that wish to use Azure OpenAI must submit a registration form for both initial experimentation access, and again for approval for use in production.
 
-Additional registration is required for customers who want to modify content filters and abuse monitoring.
+Additional registration is required for customers who want to modify content filters or modify abuse monitoring settings.
 
 To apply for access and learn more about the limited access policy, see the [Azure OpenAI limited access](/legal/cognitive-services/openai/limited-access?azure-portal=true) documentation.

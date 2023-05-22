@@ -3,11 +3,10 @@ uid: learn.wwl.guided-project-calculate-final-gpa
 metadata:
   title: Guided project - Calculate final GPA
   description: "Guided project - Calculate final GPA"
-  ms.date: 04/13/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Guided project - Calculate final GPA
 summary: Gain experience developing an application that will calculate and display results based on given data.
 abstract: |
@@ -27,6 +26,9 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
 subjects:

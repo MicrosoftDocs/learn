@@ -1,5 +1,6 @@
 
 
+
 It's essential that you select the most suitable edition for your organization before you install Windows. The different editions of Windows address the needs of consumers, from individuals to large enterprises. This unit describes the various features of each edition available for Windows and later.
 
 | **Windows 10 / Windows 11 Edition** | **Audience**                                                                      | **Availability**                                                    |
@@ -7,8 +8,8 @@ It's essential that you select the most suitable edition for your organization b
 | Home                                | Individual home use                                                               | Everyone                                                            |
 | Pro                                 | Small and mid-sized businesses, advanced users                                    | Everyone                                                            |
 | Pro for Workstations                | Users with advanced performance and storage requirements                          | Everyone                                                            |
-| Enterprise                          | Large enterprise organizations                                                    | Available to Volume License customers                               |
-| Enterprise LTSC                     | Large enterprise organizations with restrictive change requirements               | Large enterprise organizations with restrictive change requirements |
+| Enterprise                          | Large enterprise organizations                                                    | Available to Volume LicenseMicrosoft Volume Licensing, Microsoft Enterprise Agreement, Microsoft Store for Education or Microsoft Cloud Solution Provider program|
+| Enterprise LTSC                     | Large enterprise organizations with restrictive change requirements               | Microsoft Volume Licensing, Microsoft Enterprise Agreement, or Microsoft Cloud Solution Provider program |
 | Pro Education                       | Comparable to Pro for school staff, administrators, teachers, and students        | Available to academic Volume License customers                      |
 | Education                           | Comparable to Enterprise for school staff, administrators, teachers, and students | Available to academic Volume License customers                      |
 | IoT Core/Enterprise                 | Fixed purpose and appliance devices                                               | Available through Windows IoT Distributors                          |
@@ -74,7 +75,6 @@ Some of the features Enterprise edition provides:
  -  **Microsoft Application Virtualization (App-V):** Enables organizations to deliver Win32 applications to users as virtual applications.
  -  **Microsoft User Experience Virtualization (UE-V):** Capture user-customized Windows and application settings and store them on a centrally managed network.
  -  **License rights:** For virtual desktops and edition step-up from Pro edition using cloud activation.
- -  **Desktop Analytics:** Insights and recommendations about your computers, applications, and drivers.
  -  **DirectAccess:** While this feature is supported, it’s recommended that organizations use “Always On VPN,” which is available in Home, Pro, Enterprise, and Education editions.
 
 #### Enterprise LTSC

@@ -3,7 +3,7 @@ uid: learn.wwl.manage-defender-windows-client
 metadata:
   title: MD-102 3-Manage Microsoft Defender in Windows client
   description: "This module explains the built-in security features of Windows clients and how to implement them using policies."
-  ms.date: 03/31/2023
+  ms.date: 05/10/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial

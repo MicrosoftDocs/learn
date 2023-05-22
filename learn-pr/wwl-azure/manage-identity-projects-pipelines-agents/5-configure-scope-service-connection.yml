@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identity-projects-pipelines-agents.configure-scope-service-connection
+title: Configure the scope of a service connection
+metadata:
+  title: Configure the scope of a service connection
+  description: "Configure the scope of a service connection."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-configure-scope-service-connection.md)]

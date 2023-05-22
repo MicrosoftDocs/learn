@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: data-share
 title: Introduction to Azure Data Share
 summary: Learn how to use Azure Data Share for securely sending and receiving data to both external organizations or for inter-departmental transfers.
 abstract: |

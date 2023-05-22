@@ -3,7 +3,7 @@ uid: learn.wwl.challenge-project-debug-c-sharp-console-application
 metadata:
   title: Challenge project - Debug a C# console application using Visual Studio Code
   description: "This module helps you evaluate your debugging skills. You start with a C# console application that contains code logic issues and a specification that describes the requirements. You’re challenged to demonstrate your ability to identify and fix the issues using the Visual Studio Code debugger tools."
-  ms.date: 03/20/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -22,9 +22,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- dotnet-framework
 - vs-code
 subjects:
 - development-tools

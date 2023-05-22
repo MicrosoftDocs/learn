@@ -1,3 +1,4 @@
+
 You should have learned the role that Microsoft 365 Defender plays in a modern SOC.
 
 You should now be able to:

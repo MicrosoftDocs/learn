@@ -8,7 +8,8 @@ metadata:
   ms.author: randolphwest
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
+  ms.technology: sql-linux
 title: Introduction to SQL Server on Linux
 summary: Learn the benefits of installing SQL Server on Linux.
 abstract: |

@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Your organization has Linux virtual machines on Azure, and you want to enable Azure Disk Encryption to help secure all of the OS disks. How can you achieve this?
+  - content: Your organization has Linux virtual machines on Azure. How can you enable Azure Disk Encryption to help secure all of the OS disks?
     choices:
     - content: Ensure that the key vault and the virtual machines are in the same region. Create a backup, enable disk encryption, and then sign in to the machine to monitor it during encryption.
       isCorrect: false
