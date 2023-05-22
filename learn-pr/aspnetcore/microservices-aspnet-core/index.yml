@@ -3,7 +3,7 @@ uid: learn.microservices-aspnet-core
 metadata:
   title: Create and deploy a cloud-native ASP.NET Core microservice
   description: Learn how to create and containerize an ASP.NET Core microservice and deploy it to Azure Kubernetes Service (AKS).
-  ms.date: 05/17/2023
+  ms.date: 05/22/2023
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial
