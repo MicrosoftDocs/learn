@@ -2,7 +2,7 @@ In this unit, you build and host the new and updated container images in Azure C
 
 ## Container images in Azure Container Registry
 
-You host container images for microservices solutions in container registries. Often, a public container registry like Docker Hub is sufficient. Private container registries like Azure Container Registry are more appropriate for enterprise scenarios. Only your team and services have access to your private container registry. Each container image used to deploy the :::no-loc text="eShopOnContainers"::: app to AKS is from a Container Registry endpoint.
+Microservices solutions host their container images in container registries. A public container registry like Docker Hub is often sufficient. Private container registries like Azure Container Registry are more appropriate for enterprise scenarios. Only your team and services have access to your private container registry. Each container image used to deploy the :::no-loc text="eShopOnContainers"::: app to AKS is from a Container Registry endpoint.
 
 The following diagram shows the relationships among Docker container images, container registries such as Container Registry, and AKS or other Kubernetes deployments.
 
@@ -12,7 +12,7 @@ The following diagram shows the relationships among Docker container images, con
 1. The developer sends YAML configuration files to AKS. The configuration files specify which container images to use.
 1. AKS retrieves the images from Container Registry, and uses the images to build and run the containers.
 
-Because this learning path doesn't allow you to make changes to the :::no-loc text="eShopOnContainers"::: app owner's container registry, you host the coupon service container image and the modified *:::no-loc text="WebSPA":::* app container image on your private container registry. The `helm install` command specifies which container registry to use when you install the Helm charts to AKS.
+Because you don't have access to the :::no-loc text="eShopOnContainers"::: app owner's container registry, you host the coupon service container image and the modified *:::no-loc text="WebSPA":::* app container image in your private container registry. The `helm install` command specifies which container registry to use when you install the Helm charts to AKS.
 
 ## Build the coupon service
 
@@ -24,7 +24,7 @@ Run the following script in the terminal to build the coupon service and *:::no-
 
 The preceding script builds the container images in Container Registry by using the `az acr build` command, with the provided *:::no-loc text="Dockerfile":::* files for the *:::no-loc text="Coupon.API":::* and *:::no-loc text="WebSPA":::* projects.
 
-The solution doesn't build in your development container but in the cloud with the container image in Container Registry. The terminal shows the `az acr build` command with the correct parameters, similar to the following example:
+The solution doesn't build in your development container but in the cloud by using the container image in Container Registry. The terminal shows the `az acr build` command with the correct parameters, similar to the following example:
 
 ```azurecli
 az acr build --registry eshoplearn \

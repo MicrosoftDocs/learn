@@ -21,11 +21,11 @@ The coupon feature for the :::no-loc text="eShopOnContainers"::: app has the fol
 
 ## Domain design model
 
-The :::no-loc text="eShopOnContainers"::: app uses Domain-Driven Design (DDD), a design pattern where the code structure and language, including class names, methods, and variables, match the business domain. The DDD pattern describes independent problem areas as bounded contexts, and emphasizes a common language to describe these problems.
+The :::no-loc text="eShopOnContainers"::: app uses Domain-Driven Design (DDD), a design pattern that makes the code structure and language, including class names, methods, and variables, match the business domain. The DDD pattern describes independent problem areas as bounded contexts, and emphasizes a common language to describe these problems.
 
 Determining where to draw the domain boundaries is an essential task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain.
 
-You implement the coupon service like a create, read, update, delete (CRUD) service, and you clearly define the boundaries within the coupon domain. The service represents a coupon as a `Coupon` object, using the class defined at *:::no-loc text="src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs":::*. This class encapsulates the following attributes of a coupon:
+You implement the coupon service like a create, read, update, delete (CRUD) service, and you clearly define the boundaries within the coupon domain. The service represents a coupon as a `Coupon` object, using the class defined at *:::no-loc text="src/Services/Coupon/Coupon.API/Infrastructure/Models/Coupon.cs":::*. The class encapsulates the following attributes of a coupon:
 
 |Property  |Description |
 |----------|------------|
@@ -33,7 +33,7 @@ You implement the coupon service like a create, read, update, delete (CRUD) serv
 |`Discount`|The discount amount represented in USD currency.|
 |`Code`    |The coupon code.|
 |`Consumed`|A flag that indicates whether the coupon code has been used.|
-|`OrderId` |The unique identifier of the order the coupon code is applied to.|
+|`OrderId` |The unique identifier of the order the coupon code has been applied to.|
 
 The `Coupon` model is the centerpiece of all business logic in the *:::no-loc text="Coupon.API":::* project. The coupon service concerns itself only with the domain of coupons, but it relies on the other services to interact with other domains, such as determining whether an order is valid.
 
@@ -49,7 +49,7 @@ Microservice architectures are technology agnostic. This characteristic gives de
 
 ## Ordering service event integration
 
-The app routes orders submitted through the UI to the ordering service via the API gateway. The ordering service then validates the coupon with the coupon service. The following diagram shows the event messaging flow between the ordering and coupon services.
+The app routes orders submitted through the UI to the ordering service via the API gateway. The ordering service then validates the coupon with the coupon service. The following diagram shows the event messaging flow between the ordering and coupon microservices.
 
 :::image type="content" source="../media/5-coupon-service-design/coupon-ordering-event-bus.png" alt-text="Diagram showing the event messaging flow between the ordering and coupon services." border="false" lightbox="../media/5-coupon-service-design/coupon-ordering-event-bus.png":::
 

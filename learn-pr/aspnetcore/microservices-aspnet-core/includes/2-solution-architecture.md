@@ -4,9 +4,11 @@ In this unit, you learn about microservices architecture and the :::no-loc text=
 
 Make sure you're set up to use dev containers with [GitHub Codespaces](https://github.com/features/codespaces) (costs may apply), or with [Visual Studio Code and a supported Docker environment on your local machine](/training/modules/use-docker-container-dev-env-vs-code).
 
-- To use the *mslearn-aspnet-core* dev environment with GitHub Codespaces, go to your [codespaces for the MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces) and create a new codespace using the `main` branch.
+Load the *mslearn-aspnet-core* dev environment by using one of the following procedures:
 
-- To install the *mslearn-aspnet-core* dev environment locally in Visual Studio Code:
+- For GitHub Codespaces, go to the codespace for the [MicrosoftDocs/mslearn-aspnet-core repository](https://github.com/MicrosoftDocs/mslearn-aspnet-core/codespaces) and create a new codespace using the `main` branch.
+
+- For local Visual Studio Code:
 
   1. From a new Visual Studio Code window, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>P</kbd> to open the command palette, and then search for and select **Dev Containers: Clone Repository in Container Volume**.
   1. Provide the following repository URL: `https://github.com/MicrosoftDocs/mslearn-aspnet-core`.
@@ -27,7 +29,7 @@ The following diagram shows the app architecture, including the new **Coupon mic
 
 :::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram showing the eShopOnContainers solution architecture." border="false" lightbox="../../media/microservices/eshop-architecture.png":::
 
-The preceding diagram doesn't show all the services that are present in this Azure Kubernetes Service (AKS) deployment, such as [Seq](https://datalust.co/seq) for unified logging and the *:::no-loc text="WebStatus":::* web app.
+The preceding diagram doesn't show some of the services that are present in this Azure Kubernetes Service (AKS) deployment, such as [Seq](https://datalust.co/seq) for unified logging and the *:::no-loc text="WebStatus":::* web app.
 
 ### Data storage
 
@@ -61,6 +63,6 @@ Real-world scenarios use managed API gateway services like [Azure API Management
 
 ### Coupon service
 
-Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. In this module, you complete and deploy an ASP.NET Core microservice project named *Coupon.API* to the existing :::no-loc text="eShopOnContainers"::: app in production.
+Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. In this module, you complete and deploy an ASP.NET Core microservice project named Coupon.API to the existing :::no-loc text="eShopOnContainers"::: app in production.
 
 In the next unit, you deploy the :::no-loc text="eShopOnContainers"::: app and further investigate its code.

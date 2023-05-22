@@ -160,9 +160,9 @@ To make other configuration changes for the coupon service, run the following sc
 ./implementation-script.sh
 ```
 
-To create an object in a Kubernetes cluster, you provide the object specification in a YAML file. The Helm template functionality generates and sends the YAML to the cluster.
+To create an object in a Kubernetes cluster, you must provide the object specification in a YAML file. The preceding script uses Helm template functionality to generate the YAML and send it to the cluster.
 
-The preceding script creates a Helm chart for the coupon service in the *:::no-loc text="deploy/k8s/helm-simple/coupon":::* directory. The Helm chart for the coupon service is composed of the following files:
+The script creates a Helm chart for the coupon service in the *:::no-loc text="deploy/k8s/helm-simple/coupon":::* directory, composed of the following files:
 
 - *:::no-loc text="Chart.yaml":::*
 - *:::no-loc text="templates/configmap.yaml":::*
