@@ -34,6 +34,8 @@ Stay tuned for any updates regarding contributions in the future. We appreciate 
 
 External users can provide feedback by clicking on the **Report an issue** email alias located at the bottom of any learning unit. The English alias is `learn-en-us@microsoft.com`. If the user is viewing the site in any other language, they will be able to access the localized versions of the alias. Although this is one-way feedback, the content, engineering, and localization teams review and triage all incoming feedback on a daily basis.
 
+Microsoft Employees: Please review [Getting Started with Microsoft Learn](https://aka.ms/MSLearnGetStarted)
+
 ### Code of Conduct
 
 This project has adopted the [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/). For more information see the [Code of Conduct FAQ](https://opensource.microsoft.com/codeofconduct/faq/) or contact [opencode@microsoft.com](mailto:opencode@microsoft.com) with any additional questions or comments.
