@@ -1,8 +1,8 @@
 There are many ways to implement a coupon code feature in an e-commerce app. The following sections summarize the requirements, technology stack, and interservice integration for the :::no-loc text="eShopOnContainers"::: coupon service.
 
-### Coupon microservice
+## Coupon microservice
 
-Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other systems. As you complete the ASP.NET Core *Coupon.API* microservice project and deploy it to the existing :::no-loc text="eShopOnContainers"::: app in production, you learn how to:
+Microservices are small enough for a feature team to independently build, test, and deploy to production multiple times a day, without affecting other services. As you complete the ASP.NET Core *Coupon.API* microservice project and deploy it to the existing :::no-loc text="eShopOnContainers"::: app in production, you learn how to:
 
 - Design a microservice by using Domain-Driven Design (DDD).
 - Containerize the microservice by using Docker.
@@ -13,7 +13,7 @@ Microservices are small enough for a feature team to independently build, test, 
 
 The coupon feature for the :::no-loc text="eShopOnContainers"::: app has the following business requirements:
 
-- To get a discount, a user applies a coupon code from the checkout page. All coupon codes are prefixed with *:::no-loc text="DISC-":::* and suffixed with an unsigned integer indicating the US dollar (USD) amount to deduct from the order total. For example, *:::no-loc text="DISC-30":::* deducts 30 USD.
+- To get a discount, a user applies a coupon code from the checkout page. Coupon codes are prefixed with *:::no-loc text="DISC-":::* and suffixed with an unsigned integer indicating the US dollar (USD) amount to deduct from the order total. For example, *:::no-loc text="DISC-30":::* deducts 30 USD.
 - The coupon service validates that the coupon code is available before allowing it to be used.
 - After the payment processes, the ordering service requests coupon validation during the order process.
 - Upon validation, the coupon is assigned to the order and isn't available for any other order by that user.
@@ -21,7 +21,7 @@ The coupon feature for the :::no-loc text="eShopOnContainers"::: app has the fol
 
 ## Domain design model
 
-The :::no-loc text="eShopOnContainers"::: app uses Domain-Driven Design (DDD), a design pattern that makes the code structure and language, including class names, methods, and variables, match the business domain. The DDD pattern describes independent problem areas as bounded contexts, and emphasizes a common language to describe these problems.
+The :::no-loc text="eShopOnContainers"::: app uses Domain-Driven Design (DDD), a design pattern where the code structure and language, including class names, methods, and variables, match the business domain. The DDD pattern describes independent problem areas as bounded contexts, and emphasizes a common language to describe these problems.
 
 Determining where to draw the domain boundaries is an essential task when designing and defining a microservices-based solution. For each bounded context, you must identify and define the entities, value objects, and aggregates that model your domain.
 
