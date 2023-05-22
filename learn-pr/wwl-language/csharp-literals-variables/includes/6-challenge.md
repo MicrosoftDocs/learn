@@ -1,5 +1,6 @@
 
 
+
 In this challenge, you'll write code that will combine literal and variable values into a single message.
 
 ### Challenge: Display literal and variable values

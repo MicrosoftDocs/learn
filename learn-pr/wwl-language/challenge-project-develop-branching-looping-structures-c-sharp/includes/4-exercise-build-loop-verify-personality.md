@@ -1,6 +1,7 @@
 
 
 
+
 The Contoso Pets app is used to help find new homes for abandoned pets. Your goal in this challenge is to develop the app features used to ensure that we have a completed dataset for each animal in the ourAnimals array.
 
 ## Specification

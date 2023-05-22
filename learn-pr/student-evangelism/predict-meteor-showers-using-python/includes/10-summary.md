@@ -11,5 +11,5 @@ Although lists of meteor showers and other space events may seem commonplace in 
 
 You're now equipped to gather data on other celestial (or earthly) events and to explore that data through code to gain understanding and new perspectives. This module is a first step to creating models that computers can run on their own to make predictions. It all starts with one person's curiosity. 
 
-> [!TIP]
-> Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/Aln9p6farRg?azure-portal=true) in a new tab.
+> [!IMPORTANT]
+> In this module, you created a GitHub Codespaces environment. You may want to stop your codespace when you're not actively using it, or you may want to delete it if you no longer want to use it.

@@ -11,8 +11,8 @@ metadata:
   title: Get started with Azure Private 5G Core
   description: Learn about Azure Private 5G Core and ways to deploy, monitor, and manage the Azure Private 5G Core service.
   ms.date: 12/28/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
 prerequisites: |

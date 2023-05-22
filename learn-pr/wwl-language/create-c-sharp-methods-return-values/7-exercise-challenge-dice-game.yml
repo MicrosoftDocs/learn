@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-c-sharp-methods-return-values.exercise-challenge-dice-game
-title: Complete the challenge
+title: Exercise - Complete the challenge to add methods to make the game playable
 metadata:
-  title: Complete the challenge
-  description: "Complete the challenge"
-  ms.date: 03/21/2023
+  title: Exercise - Complete the challenge to add methods to make the game playable
+  description: "Exercise - Complete the challenge to add methods to make the game playable"
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 3
+durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-challenge-dice-game.md)]

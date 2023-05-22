@@ -3,8 +3,8 @@ uid: learn.azure.azure-machine-learning-security.azure-key-vault
 title: Keys and secrets with Azure Key Vault
 metadata:
   title: Keys and secrets with Azure Key Vault
-  description: "When to use Azure Machine Learning"
-  ms.date: 11/09/2022
+  description: "Keys and secrets with Azure Key Vault"
+  ms.date: 04/28/2023
   author: wwlpublish
   ms.author: jasdeb
   ms.topic: interactive-tutorial

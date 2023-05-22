@@ -1,13 +1,13 @@
 
-Typically, a client application will use a client library to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the Redis clients page. 
+Typically, a client application uses a client library to form requests and execute commands on a Redis cache. You can get a list of client libraries directly from the Redis clients page. 
 
 ## Executing commands on the Redis cache
 
-A popular high-performance Redis client for the .NET language is [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis). The package is available through NuGet and can be added to your .NET code using the command line or IDE. Below are examples of how to use the client.
+A popular high-performance Redis client for the .NET language is [StackExchange.Redis](https://github.com/StackExchange/StackExchange.Redis). The package is available through NuGet and can be added to your .NET code using the command line or IDE. Following are examples of how to use the client.
 
 ### Connecting to your Redis cache with StackExchange.Redis
 
-Recall that we use the host address, port number, and an access key to connect to a Redis server. Azure also offers a connection string for some Redis clients which bundles this data together into a single string. It will look something like the following (with the `cache-name` and `password-here` fields filled in with real values):
+Recall that we use the host address, port number, and an access key to connect to a Redis server. Azure also offers a connection string for some Redis clients that bundles this data together into a single string. It looks something like the following (with the `cache-name` and `password-here` fields filled in with real values):
 
 ```
 [cache-name].redis.cache.windows.net:6380,password=[password-here],ssl=True,abortConnect=False
@@ -15,7 +15,7 @@ Recall that we use the host address, port number, and an access key to connect t
 
 You can pass this string to **StackExchange.Redis** to create a connection the server.
 
-Notice that there are two additional parameters at the end:
+Notice that there are two more parameters at the end:
 
 * **ssl** - ensures that communication is encrypted.
 * **abortConnection** - allows a connection to be created even if the server is unavailable at that moment.
@@ -37,7 +37,7 @@ var connectionString = "[cache-name].redis.cache.windows.net:6380,password=[pass
 var redisConnection = ConnectionMultiplexer.Connect(connectionString);
 ```
 
-Once you have a `ConnectionMultiplexer`, there are 3 primary things you might want to do:
+Once you have a `ConnectionMultiplexer`, there are three primary things you might want to do:
 
 * Access a Redis Database. This is what we will focus on here.
 * Make use of the publisher/subscriber features of Redis. This is outside the scope of this module.
@@ -54,9 +54,9 @@ IDatabase db = redisConnection.GetDatabase();
 > [!TIP]
 > The object returned from `GetDatabase` is a lightweight object, and does not need to be stored. Only the `ConnectionMultiplexer` needs to be kept alive.
 
-Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions which return `Task` objects to make them compatible with the `async` and `await` keywords.
+Once you have a `IDatabase` object, you can execute methods to interact with the cache. All methods have synchronous and asynchronous versions that return `Task` objects to make them compatible with the `async` and `await` keywords.
 
-Here is an example of storing a key/value in the cache:
+Following is an example of storing a key/value in the cache:
 
 ```csharp
 bool wasSet = db.StringSet("favorite:flavor", "i-love-rocky-road");
@@ -106,16 +106,16 @@ Here are some of the more common ones that work with single keys, you can [read 
 
 ### Executing other commands
 
-The `IDatabase` object has an `Execute` and `ExecuteAsync` method which can be used to pass textual commands to the Redis server. For example:
+The `IDatabase` object has an `Execute` and `ExecuteAsync` method that can be used to pass textual commands to the Redis server. For example:
 
 ```csharp
 var result = db.Execute("ping");
 Console.WriteLine(result.ToString()); // displays: "PONG"
 ```
 
-The `Execute` and `ExecuteAsync` methods return a `RedisResult` object which is a data holder that includes two properties:
+The `Execute` and `ExecuteAsync` methods return a `RedisResult` object that is a data holder that includes two properties:
 
-* `Type` which returns a `string` indicating the type of the result - "STRING", "INTEGER", etc.
+* `Type` that returns a `string` indicating the type of the result - "STRING", "INTEGER", etc.
 * `IsNull` a true/false value to detect when the result is `null`.
 
 You can then use `ToString()` on the `RedisResult` to get the actual return value.
@@ -137,7 +137,7 @@ id=9470 addr=16.183.122.155:54967 fd=13 name=DESKTOP-BBBBBB age=0 idle=0 flags=N
 
 ### Storing more complex values
 
-Redis is oriented around binary safe strings, but you can cache off object graphs by serializing them to a textual format - typically XML or JSON. For example, perhaps for our statistics, we have a `GameStats` object which looks like:
+Redis is oriented around binary safe strings, but you can cache off object graphs by serializing them to a textual format - typically XML or JSON. For example, perhaps for our statistics, we have a `GameStats` object that looks like:
 
 ```csharp
 public class GameStat
@@ -189,7 +189,7 @@ Console.WriteLine(stat.Sport); // displays "Soccer"
 
 ## Cleaning up the connection
 
-Once you are done with the Redis connection, you can `Dispose` the `ConnectionMultiplexer`. This will close all connections and shutdown the communication to the server.
+Once you're done with the Redis connection, you can `Dispose` the `ConnectionMultiplexer`. This closes all connections and shutdown the communication to the server.
 
 ```csharp
 redisConnection.Dispose();

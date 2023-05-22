@@ -10,7 +10,7 @@ You're all done with the tasks for this module. You'll now move the work item to
 ::: zone pivot="github-codespaces-agent"
 
 > [!IMPORTANT]
-> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free GitHub Codespaces [included usage hours and storage](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) ([check your usage](https://docs.github.com/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage)). Be sure to do the cleanup steps even if you don't complete this module.
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free GitHub Codespaces [included usage hours and storage](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) ([charges may apply if you exceed the free tier - check your usage](https://docs.github.com/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage)). Be sure to do the cleanup steps even if you don't complete this module.
 
 ::: zone-end
 

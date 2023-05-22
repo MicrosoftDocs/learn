@@ -1,5 +1,7 @@
 
 
+
+
 Use Visual Studio Code to develop update the Contoso Pets adoption C# console application. The application already creates sample data on pets available for adoption, and is able to display the pet's description information. The application provides searching with a single term within the description data for each dog. The main feature addition is search with multiple terms. The secondary improvement is to the "search status" animation and includes adding a search countdown in the animation.
 
 ## Project specification overview
@@ -64,22 +66,22 @@ Use Visual Studio Code as your development environment, and test your applicatio
 Use the following steps to prepare for the Guided project exercises.
 1. Download a zip file containing the code folders for the challenge project.
     
-    - In a browser, navigate to: [Lab Files](https://github.com/MicrosoftLearning/Challenge-project-Work-with-variable-data-in-CSharp/archive/refs/heads/main.zip) and download the zip file.
+    - In a browser, open the link [Challenge-Project-variable-data-in-CSharp-main.zip](https://github.com/MicrosoftLearning/Challenge-project-Work-with-variable-data-in-CSharp/archive/refs/heads/main.zip) to download the zip file (Challenge-Project-variable-data-in-CSharp-main.zip).
 
 1. Unzip the downloaded files locally (or in the sandbox if you aren't using a local dev environment)
 
     1. On your local machine, navigate to your downloads folder
-    1. Right-click the GuidedProject.zip file, and then select **Extract all**
+    1. Right-click the Challenge-Project-variable-data-in-CSharp-main.zip file, and then select **Extract all**
     1. Make note of the extracted files location (the location of the root folder)
 
 1. Open the root GuidedProject folder in Visual Studio Code
 
     1. Open Visual Studio Code locally (or open MS Learn sandbox and open Visual Studio Code if you aren't using a local dev environment)
     1. In Visual Studio Code, on the **File** menu, select **Open Folder**
-    1. Navigate to the folder that contains your extracted files, expand the folder structure to locate the folder named "GuidedProject".
-    1. Select **ChallengeProject** and then select **Select Folder**
+    1. Navigate to the folder that contains your extracted files, expand the folder structure to locate the folder named "Challenge-Project-variable-data-in-CSharp-main".
+    1. Select **Challenge-Project-variable-data-in-CSharp-main** and then select **Select Folder**
 
-        - The Visual Studio Code EXPLORER view should show the **GuidedProject** folder and two subfolders named **Final** and **Starter**.
+        - The Visual Studio Code EXPLORER view should show two subfolders named **Final** and **Starter**.
 
 ## Starter file review
 

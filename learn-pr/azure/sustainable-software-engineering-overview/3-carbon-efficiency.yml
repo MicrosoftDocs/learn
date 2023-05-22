@@ -4,14 +4,13 @@ title: "Principle 1: Carbon efficiency"
 metadata:
   title: "Principle 1: Carbon efficiency"
   description: The first principle of sustainable software engineering is to build applications that are carbon efficient. In this unit, you'll learn about carbon, its unit of measurement, and why it's so important.
-  ms.date: 03/01/2023
+  ms.date: 04/13/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.contributors:
   - tozimmergren
-  - vknight
   - simont
 durationInMinutes: 2
 content: |

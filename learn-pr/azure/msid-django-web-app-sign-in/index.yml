@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Enable user sign-in to your Django web app using Azure AD
   description: Create a Django web app that signs in users using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant and sign in the user to a Django web app.
-  ms.date: 02/08/2022
+  ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
   ms.topic: interactive-tutorial

@@ -1,4 +1,4 @@
-Contoso, a global entity, hosts multiple SQL Server instances with various versions in their on-premises environment. The IT staff wants to explore multicloud strategy, in order to use cloud service providers around the world. Azure Arc-enabled data services, provides a single pane of glass and unified tools for management, deployment, and data sovereignty compliance in certain markets.
+Contoso, a global entity, hosts multiple SQL Server instances with various versions in their on-premises environment. The IT staff wants to explore multicloud strategy, in order to use cloud service providers around the world. Azure Arc-enabled data services provides a single pane of glass and unified tools for management, deployment, and data sovereignty compliance in certain markets.
 
 ## What is Azure Arc-enabled data services?
 

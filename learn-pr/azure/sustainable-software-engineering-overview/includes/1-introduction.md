@@ -4,8 +4,9 @@ Sustainable Software Engineering is an emerging discipline at the intersection o
 
 By the end of this module, you'll be able to:
 
-- Identify the eight principles of Sustainable Software Engineering.
+- Identify the six principles of Sustainable Software Engineering.
 - Understand the two philosophies of Sustainable Software Engineering.
+- Apply Sustainable Software Engineering practices when working with the [Microsoft Azure Well-Architected Framework sustainability guidance](/azure/architecture/framework/sustainability/).
 
 ## Prerequisites
 

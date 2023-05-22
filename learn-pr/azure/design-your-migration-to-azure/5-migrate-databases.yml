@@ -3,7 +3,7 @@ uid: learn.design-your-migration-to-azure.5-migrate-databases
 metadata:
   title: Migrate databases with Azure Database Migration Service
   description: Learn how to use Azure Database Migration Service, which provides a way to move on-premises SQL Server databases efficiently to the Azure cloud platform.
-  ms.date: 07/30/2019
+  ms.date: 04/13/2023
   author: v-ksreedevan
   ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "When you're choosing a destination for your on-premises database, which destination guarantees 100% compatibility with the SQL Server Database Engine and includes all the other features of SQL Server?"
     choices:
-    - content: "Azure SQL Database managed instance"
+    - content: "Azure SQL Managed Instance"
       isCorrect: false
       explanation: "Managed instances offer 100% database engine compatibility, but are missing some minor features of the full, on-premises SQL Server product."
     - content: "Single Azure SQL Database instance"
@@ -36,4 +36,4 @@ quiz:
       explanation: "These permissions must both be added to the account that's used to connect to the source SQL Server instance during a planned migration."
     - content: "CONTROL SERVICES, CONTROL DATA"
       isCorrect: false
-      explanation: "Neither CONTROL SERVICES nor CONTROL DATA is a supported permission."
+      explanation: "CONTROL SERVICES and CONTROL DATA aren't supported permissions."

@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: An overview of the content covered in the module, and resources for further learning.
   ms.date: 02/08/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2 
