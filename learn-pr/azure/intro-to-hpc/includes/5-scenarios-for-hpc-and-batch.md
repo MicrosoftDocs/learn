@@ -2,7 +2,7 @@ Each high-performance computing (HPC) challenge has its own requirements, and of
 
 As the solution architect for the engineering organization, you need to use HPC solutions on Azure to solve the complex tasks that the organization faces. These tasks include rendering 3D models of the facilities the company designs, and storing large amounts of statistical data. The essence of HPC is to use many computers, or computers that have highly specified CPU, GPU, and memory configurations, to deal with complex, time-consuming tasks.
 
-Here, you'll learn about some typical HPC use cases. This knowledge should help you to identify future problems that might be addressed by using HPC solutions.
+Here, you learn about some typical HPC use cases. This knowledge should help you to identify future problems that might be addressed by using HPC solutions.
 
 ## Common HPC use cases
 
@@ -38,7 +38,7 @@ This diagram shows a possible architecture that you can use to publish a CAD sof
 
 ### Computational fluid dynamics
 
-Computational fluid dynamics use mathematics to model fluid flows, both free-flowing and in interaction with solid surfaces. These simulations are taxing from a compute point of view, and provide a good use case for some of the more intricate aspects of the H-Series VMs you saw earlier. These aspects include InfiniBand networking capabilities and an ability to interact via Message Passing Interface (MPI).
+Computational fluid dynamics use mathematics to model fluid flows, both free-flowing and in interaction with solid surfaces. These simulations are taxing from a compute point of view. They provide a good use case for some of the more intricate aspects of the H-Series VMs you saw earlier. These aspects include InfiniBand networking capabilities and an ability to interact via Message Passing Interface (MPI).
 
 
 ## Decision Criteria
@@ -59,7 +59,7 @@ Computational fluid dynamics use mathematics to model fluid flows, both free-flo
 
 - A CPU (the brain) can work on various different calculations, while a GPU (the brawn) is best at focusing all the computing abilities on a specific task.
 
-- While individual CPU cores are faster (as measured by CPU clock speed), smarter (as measured by available instruction sets), sheer number of GPU cores and the massive amount of parallelism that they offer, make up the single-core clock speed difference and limited instruction sets.
+- While individual CPU cores are faster as measured by CPU clock speed, and smarter as measured by available instruction sets. The sheer number of GPU cores and the massive amount of parallelism that they offer, make up the single-core clock speed difference and limited instruction sets.
 
 - __CPU__  
 
