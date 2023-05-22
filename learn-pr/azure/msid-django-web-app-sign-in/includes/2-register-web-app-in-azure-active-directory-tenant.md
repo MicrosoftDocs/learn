@@ -10,9 +10,9 @@ Each Azure AD tenant has its own representation of work and school identities, c
 
 The Microsoft identity platform helps you build applications that your users and customers can sign in to by using several identity types. These identities include:
 
-- Work or school accounts, provisioned through Azure AD
-- Personal Microsoft accounts, like Skype, Xbox, and Outlook.com
-- Social or local accounts, by using Azure AD B2C
+- Work or school accounts, provisioned through Azure AD.
+- Personal Microsoft accounts, like Skype, Xbox, and Outlook.com.
+- Social or local accounts, by using Azure AD B2C.
 
 This module focuses on authenticating a work or school accounts provisioned through Azure AD.
 

@@ -4,9 +4,9 @@ In this exercise, you sign in users to your Django banking app. The users will p
 
 ## Create routes
 
-The *aad.config.json* configuration file defines some authentication endpoints that your Django web app will use. These endpoints are registered as `msal_urls`. 
+The *aad.config.json* configuration file defines some authentication endpoints that your Django web app will use. These endpoints are registered as `msal_urls`.
 
-In addition to these endpoints, you define `sign_in_status` and `token_details` endpoints for testing purposes. The `sign_in_status` endpoint will display whether the user is signed in or not. The `token_details` endpoint will display details of the ID token.
+In addition to these endpoints, you define `sign_in_status` and `token_details` endpoints for testing purposes. The `sign_in_status` endpoint displays whether the user is signed in or not. The `token_details` endpoint displays details of the ID token.
 
 1. In the *views.py* file, create the following views:
 

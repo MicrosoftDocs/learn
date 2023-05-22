@@ -30,7 +30,7 @@ Apps that use the Microsoft identity platform are registered and managed in Azur
 The web app needs a client secret to sign in with Azure AD and exchange the authorization code for an access token.
 
 1. On the app's registration pane, select **Certificates & secrets** to open the pane where you can generate secrets and upload certificates.
-1. In the **Client secrets** section, select **+ New client secret**.
+1. In the **Client secrets** section, select **+ New client secret** to open the **Add a client secret** panel.
 
     :::image type="content" source="../media/03-app-certificates-and-secrets.png" alt-text="Screenshot of the Azure portal that shows the pane for creating certificates and secrets." :::
 
@@ -120,7 +120,7 @@ To configure your Django web app to use the Azure AD app registration details, e
 
 ## Check your work
 
-At this point, you've registered a single-tenant web app in Azure AD. You then configured a Django web app to use the app registration details.
+At this point, you've registered a single-tenant web app in Azure AD. You've also configured a Django web app to use the app registration details.
 
 Run your Django project by using the following command to confirm that it's working well:
 

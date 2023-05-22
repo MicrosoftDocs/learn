@@ -41,8 +41,8 @@ Register these URLs as MSAL URLs in the project's *urls.py* file:
     path(f'{settings.AAD_CONFIG.django.auth_endpoints.prefix}/', include(msal_urls)),
 ```
 
-This code sets up middleware and hooks up all necessary endpoints for the authentication process into your Django app under a route prefix (*/auth* by default). For example, the `redirect` endpoint is at */auth/redirect*.
+This code sets up middleware and hooks up all necessary endpoints for the authentication process into your Django app under a route prefix (`/auth` by default). For example, the `redirect` endpoint is at `/auth/redirect`.
 
-When a user goes to */auth/sign_in* and completes a sign-in attempt, the resulting identity data is put into the session. This data can be accessed through the request object at *request.identity_context_data*.
+When a user goes to `/auth/sign_in` and completes a sign-in attempt, the resulting identity data is put into the session. This data can be accessed through the request object at `request.identity_context_data`.
 
 When an endpoint is decorated with `@ms_identity_web.login_required`, the application allows requests to the endpoint only from authenticated (signed-in) users. If the user isn't signed in, the app throws a `401: unauthorized` error, and the browser is redirected to the 401 handler.
