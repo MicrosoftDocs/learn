@@ -32,7 +32,7 @@ The quickstart script completes the following steps to deploy an updated version
 
    ![Screenshot of the Explorer pane in Visual Studio Code, showing the context menu for the k8s folder with Open in Integrated Terminal selected.](../media/2-setup-environment/k8s-path.png)
 
-1. In the new terminal pane, sign in to the Azure CLI. If you use GitHub Codespaces, include the `--use-device-code` flag. If you use Visual Studio Code, the flag is optional.
+1. In the new terminal pane, sign in to the Azure CLI. If you use GitHub Codespaces, include the `--use-device-code` flag and follow the prompts. If you use Visual Studio Code, the flag is optional.
 
    ```azurecli
    az login --use-device-code
