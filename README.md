@@ -24,21 +24,15 @@ To view all of the available landing pages, you can navigate to them from the he
 
 ## Contributions and feedback
 
-We welcome contributions and feedback. How you contribute depends on who you are and the sort of changes you'd like to contribute. For more information about how to understand the content files, view our [create a module](https://review.learn.microsoft.com/learn-docs/docs/create-a-module#implementation) documentation.
+### Notice: Repository Not Currently Accepting Public Contributions
 
-### Microsoft employees
+Thank you for your interest in contributing to the 'MicrosoftDocs/learn' repository. Your enthusiasm and support for the project are greatly appreciated. However, please be aware that we are **not currently accepting public contributions** to this repository.
 
-* **Minor updates**: See the [Docs contributor guide](https://review.learn.microsoft.com/help/contribute/) for more information.
+While this may be disappointing, this decision has been made to ensure the consistency of the content within the repository. The repository is publicly available for **Instructor Led Training** purposes, and we encourage you to continue exploring the project.
 
-* **New content + major changes**: If you want to create a new module or submit major changes, please fill out the [new content request form](https://aka.ms/docs/welcome). Once you've agreed to a plan, you'll work with the right employees to help get training, bring in that content, or write new content.
+Stay tuned for any updates regarding contributions in the future. We appreciate your understanding.
 
-For more information about contributing to Microsoft Learn, see the [Microsoft Learn contributor guide](https://review.learn.microsoft.com/help/learn).
-
-**Report an issue + provide feedback**: Email: [learn-en-us@microsoft.com](learn-en-us@microsoft.com)
-
-### External users
-
-At this time, Microsoft Learn content is not open for public contributions. External users can provide feedback by clicking on the **Report an issue** email alias located at the bottom of any learning unit. The English alias is `learn-en-us@microsoft.com`. If the user is viewing the site in any other language, they will be able to access the localized versions of the alias. Although this is one-way feedback, the content, engineering, and localization teams review and triage all incoming feedback on a daily basis.
+External users can provide feedback by clicking on the **Report an issue** email alias located at the bottom of any learning unit. The English alias is `learn-en-us@microsoft.com`. If the user is viewing the site in any other language, they will be able to access the localized versions of the alias. Although this is one-way feedback, the content, engineering, and localization teams review and triage all incoming feedback on a daily basis.
 
 ### Code of Conduct
 
