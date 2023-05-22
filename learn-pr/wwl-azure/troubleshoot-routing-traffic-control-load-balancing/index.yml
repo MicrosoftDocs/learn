@@ -7,7 +7,7 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure 
 title: Troubleshoot routing, traffic control and load balancing in Microsoft Azure
 summary: Troubleshoot network issues revolving around routing and traffic control and load- balancing.
 abstract: |

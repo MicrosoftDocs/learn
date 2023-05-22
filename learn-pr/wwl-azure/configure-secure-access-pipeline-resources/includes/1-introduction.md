@@ -1,14 +1,16 @@
 While a DevOps culture enables development and operations teams to deploy applications faster, going faster over a cliff doesn't help.
 
-Security is a crucial part of DevOps. DevSecOps is a continuous and ongoing effort that requires the attention of everyone.
-
 Cloud environments brought unprecedented infrastructure and scale to DevOps teams. They can be approached by some of the most nefarious actors on the internet, as they risk the security of their business with every application deployment.
 
 How do you ensure your applications are secure and stay secure with continuous integration and delivery? How can you find and fix security issues early in the process?
 
-DevSecOps incorporates the security team and their capabilities into your DevOps practices making security the responsibility of everyone on the team.
+  ![Diagram showing DevOps, Secure DevOps and Security intersections.](../media/secure-devops.png)
 
-Securing applications is a continuous process encompassing secure infrastructure, designing architecture with layered security, continuous security validation, and monitoring attacks.
+DevOps is about working faster. Security is about-emphasizing thoroughness. Security concerns are typically addressed at the end of the cycle. It can potentially create unplanned work right at the end of the pipeline. Secure DevOps integrates DevOps with security into a set of practices designed to meet the goals of both DevOps and safety effectively.
+
+A Secure DevOps pipeline allows development teams to work fast without breaking their project by introducing unwanted security vulnerabilities.
+
+## What will you learn?
 
 You'll learn best practices for securing pipelines in Azure DevOps, how to configure secure access to pipeline resources, secure access to Azure Repos from pipelines, manage permissions, structure projects and repositories for security, extend pipelines with multiple templates, secure variables, and parameters, and manage identity for projects, pipelines, and agents.
 

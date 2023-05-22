@@ -39,7 +39,7 @@ Some common permissions are:
 - **View build pipeline:** Allows viewing existing pipelines and their runs.
 - **Queue builds:** Allows queuing new runs for existing pipelines.
 
-## To set folder-level pipeline permissions
+## Set folder-level pipeline permissions
 
 1. Open your Azure DevOps project and select Pipelines under Pipelines.
 2. Select a folder from the list of folders, or create a new one by selecting New folder.
@@ -47,23 +47,6 @@ Some common permissions are:
 4. Modify the permissions associated with an Azure DevOps group or an individual user.
 
     ![Screenshot of Azure Pipelines showing how to manage folder security in the pipeline.](../media/manage-pipeline-folder-security.png)
-
-## To set branch-level pipeline triggers
-
-1. Open your YAML file that contains your pipeline definition.
-2. In the trigger section of your YAML file, add a branches subsection and specify which branches you want to include or exclude using include and exclude keywords.
-3. (Optional) You can also add a paths subsection and specify which files or folders you want to include or exclude using include and exclude keywords.
-4. For example, this YAML snippet triggers a run of the pipeline only when there are changes in main branch under src directory:
-
-    ```YAML
-    trigger:
-      branches:
-        include:
-        - main
-      paths:
-        include:
-        - src/*
-    ```
 
 ## Challenge yourself
 

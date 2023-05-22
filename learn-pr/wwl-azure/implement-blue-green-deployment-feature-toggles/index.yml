@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement blue-green deployment and feature toggles
 summary: This module describes the blue-green deployment process and introduces feature toggle techniques to implement in the development process.
 abstract: |

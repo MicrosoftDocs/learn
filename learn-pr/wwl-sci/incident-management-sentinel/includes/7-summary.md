@@ -1,4 +1,5 @@
 
+
 Contoso needs to manage and mitigate security threats in its environment. As lead system engineer, you're tasked with meeting this goal.
 
 In this module, you learned about using Microsoft Sentinel to detect and investigate issues in an environment. You practiced using rules and alerts to investigate and identify anomalies in the company's Azure Activity log.
