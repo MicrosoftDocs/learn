@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/19/2023
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Basic"
       isCorrect: true
-      explanation: "That’s correct. Standard SKU public IP addresses support  both dynamic and static allocation allocation methods."
+      explanation: "That’s correct. Standard SKU public IP addresses support  both dynamic and static allocation methods."
     - content: "Standard"
       isCorrect: false
       explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
@@ -63,13 +63,13 @@ quiz:
     choices:
     - content: "DDoS Protection Basic"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. DDoS Protection Standard has several advantages over the Basic service, including logging, alerting, and telemetry."
     - content: "DDoS Protection Standard"
       isCorrect: true
-      explanation: "That’s correct. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s correct. DDoS Protection Standard has several advantages over the Basic service, including logging, alerting, and telemetry."
     - content: "Both Basic and Standard"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. DDoS Protection Standard has several advantages over the Basic service, including logging, alerting, and telemetry."
   - content: "In a cross-premises scenario, where a single or multiple Azure IaaS-hosted SAP workloads are integrated into an existing on-premises SAP environment, which of the following deployments is supported?"
     choices:
     - content: "Different layers of SAP applications are run in different deployment methods."
