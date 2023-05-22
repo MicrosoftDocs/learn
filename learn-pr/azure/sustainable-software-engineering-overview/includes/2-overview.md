@@ -6,7 +6,7 @@ Six principles of Sustainable Software Engineering form a shared understanding o
 
 1. **Carbon Efficiency**: Build applications that are carbon efficient.
 
-1. **Electricity Efficiency**: Build applications that are energy-efficient.
+1. **Electricity Efficiency**: Build applications that are energy efficient.
 
 1. **Carbon Awareness**: Consume electricity with the lowest carbon intensity.
 
@@ -29,7 +29,7 @@ Alongside the six principles of Sustainable Software Engineering, there are two 
 
 1. **Everyone has a part to play in the climate solution**
 
-    If you're reading this document and identify as Green, know you're part of a massive global movement of people who care and are taking action. Greens work in every discipline across engineering, from designing silicon to designing user experiences.
+    If you're reading this document and identify as a Sustainable Software Engineer, know you're part of a massive global movement of people who care and are taking action. Sustainable Software Engineers work in every discipline across engineering, from designing silicon to designing user experiences.
 
     Nothing happens in isolation, everything is connected, and small changes lead to significant changes. Normalizing sustainability discussions in technical meetings empowers others to raise their voices. That's how you create change in any organization.
 

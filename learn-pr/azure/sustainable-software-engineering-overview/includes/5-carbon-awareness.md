@@ -2,11 +2,11 @@
 
 ## Carbon awareness
 
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwOVB]
-
 Not all electricity is produced in the same way. In different locations and times, electricity is made using various sources with varying carbon emissions. Some sources, such as wind, solar, or hydroelectric, are clean, renewable sources that emit no carbon. Other fossil fuel sources emit varying amounts of carbon to produce electricity. For example, gas-burning power plants emit less carbon than coal-burning power plants.
 
-### Caron Intensity 
+### Carbon Intensity
+
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwOVB]
 
 The carbon intensity of electricity is a measure of how many carbon (CO<sub>2</sub>eq) emissions are produced per kilowatt-hour of electricity consumed.
 
@@ -32,11 +32,15 @@ Reducing the amount of electricity consumed in your applications can decrease th
 
 ### Marginal carbon intensity
 
-If you consume more energy, that energy comes from the marginal power plant. That power plant can control the energy it outputs. Renewables can't control the sun or the wind, so marginal power plants are often powered by fossil fuels.
+Typically, a marginal power plant is a system that can react quickly to changes in electricity demand, such as a gas turbine.
+
+If you consume more energy, that energy comes from the marginal power plant. It however cannot be a wind turbine or solar cells, as you can’t command them to produce more.
+
+ That power plant can control the energy it outputs. Renewables can't control the sun or the wind, so marginal power plants are often powered by fossil fuels.
 
 The marginal plant emits carbon, and at any moment, we have the carbon intensity of the energy mix in the grid and the carbon intensity of the energy that would have to be brought online to meet new demand. That's called the marginal carbon intensity.
 
-Fossil-fueled power plants rarely reach zero; they have a minimum functioning threshold. Some don't scale and are considered a consistent always-on base load. Because of this, we can sometimes reach the perverse scenario where we throw away (curtail) renewable energy created for free to consume energy from fossil-fuel power plants made with a fuel that costs money.
+Fossil-fueled power plants rarely reach zero; they have a minimum functioning threshold. Some don't scale and are considered a consistent always-on base load. Because of this, we can sometimes reach the unreasonable scenario where we throw away (curtail) renewable energy created for free to consume energy from fossil-fuel power plants made with a fuel that costs money.
 
 ![Illustration showing free renewable engergy.](../media/5-carbon-intensity-3.svg)
 
@@ -66,7 +70,7 @@ Several services allow you to obtain real-time data regarding the current carbon
 
 - [WattTime](https://www.watttime.org/): Free for a single grid region, premium solutions for multi-grid, and real-time marginal emissions.
 
-[Demand shifting](https://principles.green/principles/carbon-intensity/#heading-demand-shifting) is the strategy of moving compute to regions or times when the carbon intensity is less; or, to put it another way, when the supply of renewable electricity is high.
+[Demand shifting](https://learn.greensoftware.foundation/carbon-awareness#demand-shaping) is the strategy of moving compute to regions or times when the carbon intensity is less; or, to put it another way, when the supply of renewable electricity is high.
 
 Demand shaping is a similar strategy, but instead of moving demand to a different region or time, we shape our demand to match the existing supply.
 
