@@ -10,7 +10,7 @@ There are many availability enhancements to SQL Server 2022, but in this unit, w
 
 For a list of other availability enhancements, see the following diagram and [What's new in SQL Server 2022](/sql/sql-server/what-s-new-in-sql-server-2022#availability).
 
-:::image type="content" source="../media/availability-enhancements-list.png" alt-text="Image of the SQL Server 2022 availability enhancements.":::
+:::image type="content" source="../media/availability-enhancements-list.png" alt-text="Diagram of the SQL Server 2022 availability enhancements.":::
 
 ## Contained availability groups
 
@@ -29,7 +29,7 @@ Contained availability groups solve the challenges by extending the concept of t
 
 In contrast, in a contained availability group, you can create users, logins, and permissions at the availability group level, and they'll *automatically* be consistent across replicas in the availability group, as well as consistent across databases within that contained availability group. This saves the DBA from having to manually make these changes themselves.
 
-:::image type="content" source="../media/contained-availability-group-challenge.png" alt-text="Image of the contained availability challenges and properties.":::
+:::image type="content" source="../media/contained-availability-group-challenge.png" alt-text="Diagram of the contained availability groups challenges and properties.":::
 
 ### How does a contained availability group work?
 

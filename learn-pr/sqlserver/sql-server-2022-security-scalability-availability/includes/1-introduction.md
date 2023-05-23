@@ -4,13 +4,13 @@ ms.custom:
 ---
 In this module, we explore some of the new capabilities in security, scalability, and availability of SQL Server 2022.
 
-:::image type="content" source="../media/secure-scalable-available.png" alt-text="Image of the SQL Server 2022 features for security, scalability, and availability.":::
+:::image type="content" source="../media/secure-scalable-available.png" alt-text="Diagram of the SQL Server 2022 features for security, scalability, and availability.":::
 
 ## Security enhancements in SQL Server 2022
 
 SQL Server provides security capabilities to protect your data through authentication, encryption, and authorization. SQL Server 2022 enhances security through several new capabilities. Here are some of the highlighted features:
 
-:::image type="content" source="../media/security-enhancements.png" alt-text="Image of the SQL Server 2022 security enhancements.":::
+:::image type="content" source="../media/security-enhancements.png" alt-text="Diagram of the SQL Server 2022 security enhancements.":::
 
 In the following units, we'll go over:
 

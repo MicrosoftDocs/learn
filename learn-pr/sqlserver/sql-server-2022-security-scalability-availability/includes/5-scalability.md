@@ -34,7 +34,7 @@ As in prior versions of SQL Server, SQL Server 2022 has introduced further impro
 
 One of the biggest performance issues we see with scaling a SQL Server environment is with `tempdb`. `tempdb` is a system database that is used to store temporary objects such as global or local temporary tables, temporary stored procedures, table variables, table-valued functions, and cursors. `tempdb` is also used for row versioning, online index operations, snapshots, and triggers. `tempdb` is a shared resource, used for nearly every SQL Server workload, and all sessions in the SQL Server instance uses the one `tempdb` database.
 
-:::image type="content" source="../media/tempdb-what-is-stored.png" alt-text="Image of the operations stored in the tempdb database.":::
+:::image type="content" source="../media/tempdb-what-is-stored.png" alt-text="Diagram of the operations stored in the tempdb database.":::
 
 Another `tempdb` use is to internally spill to disk when there isn't enough memory available for a process or there's an inaccurate estimate that causes SQL Server to spill to `tempdb`. As we have started pushing towards bigger machines with larger workloads, we have started seeing concurrency issues emerge in the `tempdb` space in three key areas:
 
