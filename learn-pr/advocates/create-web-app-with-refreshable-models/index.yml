@@ -7,7 +7,6 @@ metadata:
   ms.date: 12/22/2022
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Build a Web App with Refreshable Machine Learning Models
 summary: Build a web app powered by machine learning models trained using Custom Vision AI service, and learn how to refresh them with GitHub Actions.

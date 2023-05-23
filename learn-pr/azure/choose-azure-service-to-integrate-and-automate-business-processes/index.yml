@@ -7,7 +7,6 @@ metadata:
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Choose the best Azure service to automate your business processes
 summary: "Microsoft Azure provides several different ways to host and execute code or workflows without using Virtual Machines (VMs) including Azure Functions, Microsoft Power Automate, Azure Logic Apps, and Azure WebJobs. In this module, you will learn about these technologies and how to choose the right one for a given scenario."
 abstract: | 

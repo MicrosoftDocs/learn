@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Migrate your repository by using GitHub best practices"
 summary: Learn to move your existing project to GitHub from a legacy version control system.
 abstract: |

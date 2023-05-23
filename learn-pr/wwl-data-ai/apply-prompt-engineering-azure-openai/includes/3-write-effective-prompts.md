@@ -68,6 +68,9 @@ What's the weather going to be like today?
 ---
 ```
 
+> [!NOTE]
+> Best practices for section markers may change with future versions.
+
 ## Primary, supporting, and grounding content
 
 Including content for the model to use to respond with allows it to answer with greater accuracy. This content can be thought of in two ways: primary and supporting content.

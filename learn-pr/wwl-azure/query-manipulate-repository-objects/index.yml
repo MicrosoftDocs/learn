@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Query and manipulate repository objects by using CIM and WMI methods
 summary: This module explains how to use CIM and WMI to make changes by using methods. Discovering and understanding these methods is an important step in querying and manipulating the repository information.
 abstract: |

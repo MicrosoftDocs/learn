@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Detect, analyze, and recognize faces
 summary: The ability for applications to detect human faces, analyze facial features and emotions, and identify individuals is a key artificial intelligence capability.
 abstract: |

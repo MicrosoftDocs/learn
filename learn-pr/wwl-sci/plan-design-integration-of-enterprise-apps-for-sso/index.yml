@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Plan and design the integration of enterprise apps for SSO
 summary: Enterprise app deployment enables control over which users can access the apps, easily log into apps with single-sign-on, and provide integrated usage reports.
 abstract: |

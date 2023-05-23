@@ -7,7 +7,7 @@ metadata:
   author: PageWriter-MSFT
   ms.author: b-ahibbard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-vmware
 title: Using Azure NetApp Files with Azure VMware Solution
 summary: |
   This module helps you understand Microsoft Azure NetApp Files and how to use it with the Azure VMware Solution. 

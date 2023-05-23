@@ -8,7 +8,7 @@ metadata:
   ms.author: randolphwest
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
 title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit
 summary: Microsoft Assessment and Planning toolkit is a standalone application that automates the inventory of the Microsoft Platform. You can discover information about your Windows deployments, Microsoft 365 installations, and SQL Server instances. This module shows you how to install MAP on your client machine, and then use it to discover SQL Server instances within your corporate environment.
 abstract: |

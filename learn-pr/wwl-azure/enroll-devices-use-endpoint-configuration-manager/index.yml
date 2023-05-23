@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: configuration-manager
+  ms.prod: configuration-manager 
 title: Enroll devices using Microsoft Configuration Manager
 summary: This module introduces students to client deployment options and some of the high-level management and monitoring options that are available using Configuration Manager.
 abstract: |

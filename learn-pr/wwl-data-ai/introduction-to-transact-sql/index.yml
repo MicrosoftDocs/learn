@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: t-sql
 title: Introduction to Transact-SQL
 summary: This module provides an introduction to relational databases, the SQL language and Transact-SQL. You'll learn what kinds of statements make up the SQL language and look at the SELECT statement in detail.
 abstract: |
