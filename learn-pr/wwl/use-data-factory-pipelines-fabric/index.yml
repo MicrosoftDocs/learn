@@ -21,7 +21,6 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric and data orchestration.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - beginner
 roles:
