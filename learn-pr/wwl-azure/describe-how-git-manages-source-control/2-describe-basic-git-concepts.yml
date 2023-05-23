@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-how-git-manages-source-control.describe-basic-git-concepts
+title: Describe basic git concepts
+metadata:
+  title: Describe basic git concepts
+  description: "Describe basic git concepts"
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-describe-basic-git-concepts.md)]

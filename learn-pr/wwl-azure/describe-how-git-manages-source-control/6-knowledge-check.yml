@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-how-git-manages-source-control.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/23/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What’s the command syntax to incorporate changes made in one branch to another branch?"
+    choices:
+    - content: "git merge"
+      isCorrect: true
+      explanation: "That’s correct. git merge incorporates changes from one branch into another branch."
+    - content: "git add"
+      isCorrect: false
+      explanation: "That’s incorrect. git add stages a change that you’ve made."
+    - content: "git clone"
+      isCorrect: false
+      explanation: "That’s incorrect. git clone clones, or copies, a repository."
+  - content: "How do you change between branches in a git repository?"
+    choices:
+    - content: "git branch"
+      isCorrect: false
+      explanation: "That’s incorrect. git branch can be used to list branches for a current repository or create a new branch."
+    - content: "git checkout"
+      isCorrect: true
+      explanation: "That’s correct. git checkout changes which git repository branch you’re working within."
+    - content: "git clone"
+      isCorrect: false
+      explanation: "That’s incorrect. git clone clones, or copies, a remote repository."
