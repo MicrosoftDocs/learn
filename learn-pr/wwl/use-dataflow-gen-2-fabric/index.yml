@@ -23,7 +23,6 @@ abstract: |
 prerequisites: |
   Before you start this module, you should be familiar with Microsoft Fabric lakehouses and core concepts.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:
