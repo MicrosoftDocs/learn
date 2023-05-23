@@ -20,7 +20,6 @@ abstract: |
 prerequisites: |
   You should be familiar with basic data concepts and terminology.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - beginner
 roles:

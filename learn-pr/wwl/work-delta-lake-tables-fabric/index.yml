@@ -22,7 +22,6 @@ abstract: |
 prerequisites: |
   Before starting this module, you should be familiar with Microsoft Fabric lakehouses and Apache Spark.
 iconUrl: /training/achievements/generic-badge.svg
-hidden: true
 levels:
 - intermediate
 roles:
