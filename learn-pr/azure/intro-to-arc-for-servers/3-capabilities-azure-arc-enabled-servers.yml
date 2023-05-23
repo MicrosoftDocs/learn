@@ -32,7 +32,7 @@ quiz:
     - content: "Review Azure Advisor."
       isCorrect: false
       explanation: "That's incorrect. Azure Advisor is limited to cloud resources only."
-    - content: Search through the activity logs in the Azure portal."
+    - content: "Search through the activity logs in the Azure portal."
       isCorrect: false
       explanation: "That's incorrect. The activity log records events affecting the Azure resources only."
     - content: "Apply Azure Guest Configuration-based policy."
