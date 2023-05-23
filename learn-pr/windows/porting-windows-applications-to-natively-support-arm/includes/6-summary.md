@@ -2,10 +2,10 @@ In this module, you learned that Arm-based devices are becoming increasingly pop
 
 ## References
 
-*[Windows on Arm overview](https://learn.microsoft.com/windows/arm/overview)
-*[Arm64EC (Emulation Compatible) builds](https://learn.microsoft.com/windows/arm/arm64ec)
-*[Arm64X binary encapsulation](https://learn.microsoft.com/windows/arm/arm64x-pe)
-*[Visual Studio for Arm](https://learn.microsoft.com/visualstudio/install/visual-studio-on-arm-devices)
+*[Windows on Arm overview](/windows/arm/overview)
+*[Arm64EC (Emulation Compatible) builds](/windows/arm/arm64ec)
+*[Arm64X binary encapsulation](/windows/arm/arm64x-pe)
+*[Visual Studio for Arm](/visualstudio/install/visual-studio-on-arm-devices)
 *[Microsoft Windows 11 Preview arm64 virtual machine marketplace link]( https://azuremarketplace.microsoft.com/marketplace/apps/microsoftwindowsdesktop.windows11preview-arm64?tab=Overview)
 *[Ampere Altra announcement]( https://azure.microsoft.com/blog/azure-virtual-machines-with-ampere-altra-arm-based-processors-generally-available/)
 Remote debugging (visual studio)

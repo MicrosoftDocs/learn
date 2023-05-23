@@ -4,11 +4,11 @@ metadata:
   title: Porting Windows applications to natively support Arm-based processors  # Do not edit: title must be "Introduction to (product)"
   description: "Learn about Windows on Arm, its benefits and capabilities and how to add a Arm configuraiton build to an existing application."               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 5/6/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: codingbandit        # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: mattwoj@microsoft.com             # Alias     of the Microsoft employee either authoring or project-managing this content
+  author: mattwojo        # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: mattwoj             # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.prod: windows
-  ms.service: arm
+  ms.technology: arm
 title: Porting Windows applications to natively support Arm-based processors
 summary: "Describe Windows on Arm, its benefits and capabilities and how to add a Arm build configuration to an existing application."
 abstract: |
