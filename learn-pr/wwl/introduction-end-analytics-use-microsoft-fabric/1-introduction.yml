@@ -8,6 +8,10 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |

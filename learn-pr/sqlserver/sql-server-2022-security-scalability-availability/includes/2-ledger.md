@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 How do you know your data has or hasn't been tampered with? Can you prove that your data hasn't been tampered with to auditors and regulators? How can you establish trust with your customers, partners, or stakeholders in a world that is largely digital and controlled by data that is shared by many? Distributed blockchain technologies have been a game changer for establishing trust, but they're complex, introduce new programming languages and environments, offer limited data management capabilities, and have poor performance compared to relational database systems. What if there was a simpler and more performant alternative to establish trust across organizational boundaries?
 
 Ledger is a technology that offers the power of blockchain in Azure SQL and SQL Server. Ledger allows establishing trust across different business entities while maintaining the simplicity and performance of a relational database. The data is centrally managed, and you can cryptographically attest to other parties that your data can be trusted and hasn't been tampered with. This is especially useful if your records need to be audited.

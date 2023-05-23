@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now it's your turn to create a data warehouse in Fabric and analyze your data.
 
 > [!NOTE]

@@ -1,4 +1,7 @@
-
+---
+ms.custom:
+  - build-2023
+---
 Imagine that you're an auditor for the Contoso company. The HR department of Contoso is using a simple web application to manage employees salaries. You were asked to audit the data in the database to make sure the data is correct and no one has tampered with it.
 
 In this exercise, we see how you can use ledger in a real world scenario of auditing data using ledger tables. We'll perform the following tasks:

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 By upgrading to SQL Server 2022, you can utilize the many performance enhancements introduced into Intelligent Query Processing (IQP). By utilizing memory grant feedback, you're improving query performance automatically by persisting feedback to the Query Store. Parameter Sensitive Plan solves parameter sniffing with no code changes, and improves performance and scalability with your queries. Degree of Parallelism feedback helps users find the parallel efficiency of queries, while lowering the CPU resources utilized for the query and improves query performance, without any user action needed.
 
 In this module, you've learned to:

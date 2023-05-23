@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now it's your chance to build a KQL database and run some KQL queries.
 
 > [!NOTE]

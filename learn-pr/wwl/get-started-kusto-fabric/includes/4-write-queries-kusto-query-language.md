@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 To query data from a table in a KQL database, you can use the **Kusto Query Language (KQL)**, which is used to write queries in Azure Data Explorer, Azure Monitor Log Analytics, Azure Sentinel, and Azure Fabric. KQL is a read-only request to process data and return results. KQL queries are made of one or more query statements.
 
 A query statement consists of a table name followed by one or more operators that `take`, `filter`, `transform`, `aggregate`, or `join` data. For example:

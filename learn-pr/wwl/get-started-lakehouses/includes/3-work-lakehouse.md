@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now that you understand the core capabilities of a Microsoft Fabric Lakehouse, let's explore how to work with one.
 
 ## Create and explore a lakehouse

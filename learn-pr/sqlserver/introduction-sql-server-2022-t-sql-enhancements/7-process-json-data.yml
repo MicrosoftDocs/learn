@@ -9,6 +9,8 @@ metadata:
   ms.author: calopez
   ms.reviewer: vanto
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
   ms.prod: learning-sqlserver
 durationInMinutes: 6
 content: |
@@ -38,4 +40,3 @@ quiz:
     - content: "Ability to create JSON arrays"
       isCorrect: false
       explanation: "The enhancement made to the ISJSON function in SQL Server 2022 was the support for json_type_constraint. Creating JSON arrays is a feature of the JSON_ARRAY function."
-

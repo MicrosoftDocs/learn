@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In this module, we explore some of the new capabilities in security, scalability, and availability of SQL Server 2022.
 
 ![Image of the SQL Server 2022 features for security, scalability, and availability.](../media/secure-scalable-available.png)

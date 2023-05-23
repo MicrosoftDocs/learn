@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Delta Lake is an open-source storage layer that adds relational database semantics to Spark-based data lake processing. Tables in Microsoft Fabric lakehouses are Delta tables, which is signified by the triangular Delta (**&#9652;**) icon on tables in the lakehouse user interface.
 
 ![Screenshot of tables in a Microsoft Fabric lakehouse.](../media/delta-table.png)

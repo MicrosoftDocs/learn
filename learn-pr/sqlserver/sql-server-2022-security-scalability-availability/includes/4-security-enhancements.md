@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In this unit, we'll explore some of the security enhancements to SQL Server 2022 that helps protect and manage your data.
 
 - Always Encrypted enhancements

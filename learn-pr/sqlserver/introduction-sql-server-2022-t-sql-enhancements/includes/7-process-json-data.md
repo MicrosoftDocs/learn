@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 The addition of three new functions and the improvement of ISJSON in SQL Server 2022 helps developers work with JSON objects more effectively and easily. These functions help meet the increasing need for better handling of popular data formats in applications and APIs.
 
 ## JSON_OBJECT

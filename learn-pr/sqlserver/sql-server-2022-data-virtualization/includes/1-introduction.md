@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Data virtualization in SQL Server 2022 integrates data at query time, without replicating or moving the original data. It's the ability to access the data where it lives.
 
 The following figure shows the full extent of data virtualization support in SQL Server 2022.

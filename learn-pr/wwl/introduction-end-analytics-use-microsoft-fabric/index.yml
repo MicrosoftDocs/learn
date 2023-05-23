@@ -7,6 +7,10 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
   ms.prod: learning-azure
 title: Introduction to end-to-end analytics using Microsoft Fabric
 summary: Discover how Microsoft Fabric can meet your enterprise's analytics needs in one platform. Learn about Microsoft Fabric, how it works, and identify how you can use it for your analytics needs.

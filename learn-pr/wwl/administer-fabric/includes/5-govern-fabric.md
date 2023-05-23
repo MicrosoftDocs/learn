@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Fabric has a few built-in governance features to help you manage and control your data. *Endorsement* is a way for you as an admin to designate specific Fabric items as trusted and approved for use across the organization.
 
 Admins can also make use of the *scanner API* to scan Fabric items for sensitive data, and the *data lineage* feature to track the flow of data through Fabric.

@@ -1,4 +1,7 @@
-
+---
+ms.custom:
+  - build-2023
+---
 In this unit, we want to take a closer look at the command, CREATE EXTERNAL TABLE as SELECT (CETAS) and the benefits it provides.
 
 CETAS supports Azure Blob Storage, Azure Data Lake Storage Gen 2, and S3-compatible object storage. CETAS also supports exporting file formats as either a CSV or Parquet file. CETAS most powerful capability relies on combining it with other SELECT operations, such as in combination with OPENROWSET, or other external tables. This combination allows CETAS to be used in different and flexible ways.

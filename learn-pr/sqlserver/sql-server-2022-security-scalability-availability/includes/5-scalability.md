@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now let's look at scalability, and how new features in SQL Server 2022 can help significantly improve the performance of your workloads. By upgrading to SQL Server 2022, you can see significant improvements just by using the default configurations and features that were added to help scalability. 
 
 In this unit, we'll go over:

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 SQL Server 2022 introduces a range of new features and enhancements, providing powerful tools and capabilities that optimize performance and offer better control on SQL object creation. This module explores some of the key T-SQL features included in the latest release, such as resumable constraints, low priority options, `SELECT WINDOW` functions, new `JSON` functions, and more. With these new features, database administrators and developers can better manage database operations, improve efficiency, and adapt to the evolving needs of modern data management.
 
 In this module, we cover the following topics:

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 There are many availability enhancements to SQL Server 2022, but in this unit, we go over three of the major enhancements: 
 
 - Contained availability groups

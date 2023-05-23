@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Managing database security can become complex as the size and complexity of the database environment grows, making it challenging to maintain a consistent security posture across all databases and systems. 
 
 Azure AD provides a cloud-based centralized authentication authority that employs advanced authentication methods. SQL Server 2022 has introduced support for logins and users that are based on Azure AD accounts. 

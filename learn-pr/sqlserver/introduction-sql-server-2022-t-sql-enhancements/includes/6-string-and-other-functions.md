@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In SQL Server 2022, new features have been added to several of our string manipulation functions, enhancing them for greater flexibility. Previously, SQL Server provided LTRIM, RTRIM, and TRIM functions to remove leading and trailing spaces. In SQL Server 2022, these functions have been enhanced to allow specifying a set of characters to remove. Additionally, the STRING_SPLIT function now offers an optional parameter for returning an index value of each substring's position in the input string.
 
 ## LTRIM, RTRIM, and TRIM

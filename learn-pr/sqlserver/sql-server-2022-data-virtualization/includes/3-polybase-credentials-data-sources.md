@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now that we have a better understanding of the principles of data virtualization and its operators, it's important to understand how security and connectivity work. We'll go over the objects used with PolyBase.
 
 Even though the PolyBase feature needs to be enabled on an instance level, PolyBase operators (for example, *OPENROWSET*, *CET*, and *CETAS*) and objects works on a database level. Every data source, external file format, and external credential are tied to a particular database.

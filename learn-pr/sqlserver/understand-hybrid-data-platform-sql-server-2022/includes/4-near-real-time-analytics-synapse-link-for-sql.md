@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Azure Synapse Analytics is a powerful cloud-based solution for Enterprise Data Warehousing (EDW), engineered to harness the computing capability of Massively Parallel Processing (MPP) by enabling rapid execution of queries on petabytes of data, making it the ideal platform for large-scale data analytics.
 
 With near real-time analytics capabilities available on SQL Server 2022, you can replicate data to dedicated SQL pools using Azure Synapse Link for SQL.

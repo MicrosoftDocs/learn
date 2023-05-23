@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Dataflows (Gen2) provide an excellent option for data transformations in Microsoft Fabric. The combination of dataflows and pipelines is useful when you need to perform additional operations on the transformed data.
 
 Data pipelines are easily created in the Data Factory and Data Engineering workloads. Pipelines are a common concept in data engineering and offer a wide variety of activities to orchestrate. Some common activities include:

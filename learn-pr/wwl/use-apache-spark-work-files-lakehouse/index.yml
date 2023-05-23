@@ -9,6 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 title: Use Apache Spark in Microsoft Fabric
 summary: Apache Spark is a core technology for large-scale data analytics. Microsoft Fabric provides support for Spark clusters, enabling you to analyze and process data in a Lakehouse at scale.
 abstract: |

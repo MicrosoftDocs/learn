@@ -1,4 +1,7 @@
-
+---
+ms.custom:
+  - build-2023
+---
 > [!NOTE]
 > This exercise will be leveraging the following githib repository:
 >

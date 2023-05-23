@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 SQL Server 2022 is a powerful hybrid data platform that offers a range of features to manage data and improve analytics. By using Azure SQL Managed Instance link feature, you can set up a hybrid disaster recovery solution. 
 
 Additionally, you can take advantage of advanced authentication options available in Azure AD to access SQL Server 2022. Finally, with Microsoft Purview, you can create data access policies without managing individual logins or roles per SQL Server instance, simplifying access management across your organization.

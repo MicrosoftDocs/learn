@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In this exercise, you'll: 
 
 - Enable the PolyBase feature.

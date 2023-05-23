@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 The optimizer in SQL Server will in some cases run pieces of the query plan called operators using parallelism with multiple concurrent threads. The number of threads used for a query plan operator is called Degree of Parallelism (DOP).
 
 The Degree of Parallelism (DOP) that a query is executed can greatly affect its performance. Anytime a query is using parallelism, there's always the question of whether it's using the right amount of parallelism. Sometimes, if the DOP is too high, it can introduce inefficiencies into the query execution. If the DOP is too low, we may be missing some of the increase speed that parallelism can provide.  

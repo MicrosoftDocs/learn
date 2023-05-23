@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 A **Lakehouse** presents as a database and is built on top of a data lake using Delta format tables. Lakehouses combine the SQL-based analytical capabilities of a relational data warehouse and the flexibility and scalability of a data lake. Lakehouses store all data formats and can be used with various analytics tools and programming languages. As cloud-based solutions, lakehouses can scale automatically and provide high availability and disaster recovery.
 
 Some benefits of a lakehouse include:

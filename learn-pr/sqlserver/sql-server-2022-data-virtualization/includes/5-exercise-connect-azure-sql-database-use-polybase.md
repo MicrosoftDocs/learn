@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Continuing from the previous exercise, you'll now connect and create an external table from a database in Azure SQL Database using PolyBase. For this exercise, you'll:
 
 - Create a database called `Demo2` in SQL Server 2022.

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 With the introduction of APPROX_PERCENTILE_DISC and APPROX_PERCENTILE_CONT in SQL Server 2022, Microsoft addresses the challenge of efficiently computing percentiles in large datasets when an approximation is acceptable. These functions deliver quicker query execution and lower memory consumption, enabling users to effectively examine data distribution and derive valuable insights without sacrificing system performance.
 
 ## APPROX_PERCENTILE_DISC
