@@ -8,6 +8,9 @@ metadata:
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Explore Cognitive Services for Vision (preview)
 summary: Cognitive Services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
 abstract: |

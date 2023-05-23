@@ -22395,6 +22395,16 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/3-solution-architecture.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/microservices-aspnet-core/2-solution-architecture",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/aspnetcore/microservices-aspnet-core/2-deploy-application.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/microservices-aspnet-core/3-deploy-application",
+    "redirect_document_id": true
+  },
+  {
     "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-organize-project-repository-structure.yml",
     "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/2-organize-project-repository-structure",
     "redirect_document_id": false
