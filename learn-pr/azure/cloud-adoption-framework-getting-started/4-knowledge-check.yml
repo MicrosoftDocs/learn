@@ -22,7 +22,7 @@ quiz:
       explanation: Before you look at teams and organizations, there might be a more efficient source of help.
     - content: Improve controls
       isCorrect: true
-      explanation: When adoption stops entirely, it's commonly the outcome of some fear, uncertainty, or doubt. The team needs to build confidence in its ability and be sure that its decisions won't hurt the company. The guide on [enabling customer success](/azure/cloud-adoption-framework/get-started/enable) can help with each of the common blockers here.
+      explanation: When adoption stops entirely, it's commonly the outcome of some fear, uncertainty, or doubt. The team needs to build confidence in its ability and be sure that its decisions don't hurt the company. The guide on [enabling customer success](/azure/cloud-adoption-framework/get-started/enable) can help with each of the common blockers here.
     - content: Accelerate adoption
       isCorrect: false
       explanation: Fast is good, but trying to move faster might not address this blocker.
@@ -98,4 +98,4 @@ quiz:
       explanation: Fast is good, but trying to move faster might not address this blocker.
     - content: Align foundation
       isCorrect: true
-      explanation: There are many ways to adopt the cloud and several decisions to make along the way. Clear documentation of your [foundational decisions](/azure/cloud-adoption-framework/get-started/cloud-concepts?azure-portal=true) will help new team members understand your environment and decisions quickly.
+      explanation: There are many ways to adopt the cloud and several decisions to make along the way. Clear documentation of your [foundational decisions](/azure/cloud-adoption-framework/get-started/cloud-concepts?azure-portal=true) helps new team members understand your environment and decisions quickly.

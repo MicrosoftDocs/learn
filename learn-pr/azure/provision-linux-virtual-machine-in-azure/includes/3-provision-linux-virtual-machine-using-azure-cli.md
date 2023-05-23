@@ -81,7 +81,7 @@ az vm image list --location eastus --publisher Canonical --offer 0001-com-ubuntu
 In addition to image availability, you also should ensure that the VM size you intend to use is available in the Azure region that will host your deployment. To confirm this, run the following command:
 
 ```azurecli
-az vm image list --location eastus --publisher Canonical --offer 0001-com-ubuntu-server-jammy --sku 22_04-lts --all --output table
+az vm list-sizes --location eastus --output table
 ```
 
 Identify the VM size suitable for your sample deployment from the listing and note the value in the Name column. You'll need to enter the name in the identical format when running the Azure CLI command that initiates the Azure VM provisioning. Assume you chose Standard_F4s.

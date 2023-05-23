@@ -9,6 +9,9 @@ metadata:
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 durationInMinutes: 45
 content: |
   [!include[](includes/5-exercise-explore-image-analysis.md)]

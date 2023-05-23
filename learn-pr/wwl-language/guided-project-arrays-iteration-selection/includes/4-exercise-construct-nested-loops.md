@@ -223,8 +223,6 @@ In this task, you'll relocate the code that calculates and reports Sophia's scor
     Your code should match the following code:
 
     ```csharp
-    using System;
-    
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     
@@ -381,7 +379,7 @@ In this task, you'll update the code that performs student score calculations us
 
 1. Create another `else if` statement to assign the `emmaScores` array to `studentScores` when `currentStudent == "Emma"`.
 
-1. Create an `else` statement to assign the `loganScores` array to `studentScores` when `currentStudent == "Logan"`.
+1. Create an `else if` statement to assign the `loganScores` array to `studentScores` when `currentStudent == "Logan"`.
 
 1. Ensure that your `foreach` code block matches the following code:
 
@@ -523,8 +521,6 @@ In this task, you'll update the code that performs student score calculations us
     Your full application should now match the following code:
 
     ```csharp
-    using System;
-    
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     

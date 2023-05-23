@@ -1,5 +1,4 @@
 
-
 Once you have your network and perimeter secure, you need to lock down the host machines where your applications run. Installing updates, using jump boxes to only access servers, and following Microsoft Defender for Cloud recommendations are great tools to keep your hosts secure.
 
 ## Scenario
