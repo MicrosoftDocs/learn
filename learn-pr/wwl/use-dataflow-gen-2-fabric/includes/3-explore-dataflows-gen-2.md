@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In Microsoft Fabric, you can create a Dataflow (Gen2) in the Data Factory workload or Power BI workspace, or directly in the lakehouse. Since our scenario is focused on data ingestion, let's look at the **Data Factory** workload experience. Dataflows (Gen2) use Power Query Online to visualize transformations. See an overview of the interface:
 
 ![Screenshot of the Power Query Online interface.](../media/power-query-online-overview.png)

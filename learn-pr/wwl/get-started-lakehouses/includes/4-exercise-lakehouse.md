@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In this exercise, explore Microsoft Fabric lakehouse tasks like creating a lakehouse, importing data, querying tables with SQL, and generating reports. The exercise emphasizes the importance of the lakehouse as a central component in data engineering, warehousing, and analytics, enabling users to effectively manage and analyze their data within the lakehouse environment.
 
 > [!NOTE]

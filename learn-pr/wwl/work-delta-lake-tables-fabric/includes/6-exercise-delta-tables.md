@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now it's your turn to use Apache Spark to work with delta tables in a Microsoft Fabric lakehouse.
 
 > [!NOTE]

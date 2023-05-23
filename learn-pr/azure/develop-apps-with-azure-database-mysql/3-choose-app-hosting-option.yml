@@ -10,6 +10,9 @@ metadata:
   ms.author: shaithal
   ms.reviewer: maghan
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

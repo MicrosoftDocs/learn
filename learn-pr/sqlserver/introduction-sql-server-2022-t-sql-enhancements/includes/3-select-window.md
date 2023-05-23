@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 SQL Server 2022 introduces the `WINDOW` clause in `SELECT` statements, making it easier to perform complex window functions and calculations on your data.
 
 ## SELECT - WINDOW

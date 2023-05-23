@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
   ms.prod: learning-azure
 title: Use Data Factory pipelines in Microsoft Fabric
 summary: Microsoft Fabric includes Data Factory capabilities, including the ability to create pipelines that orchestrate data ingestion and transformation tasks.

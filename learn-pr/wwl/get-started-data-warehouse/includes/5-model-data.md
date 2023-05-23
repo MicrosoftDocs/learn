@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 A *data model* defines the *relationships* between the different tables in the dataset, the rules for how data is aggregated and summarized, and the calculations or *measures* that are used to derive insights from the data. These relationships and measures are included in the dataset, which is then used to create reports in Power BI.
 
 You can easily switch between the **Data**, **Query**, and **Model** view Fabric using the menu in the bottom left corner of the screen. The **Data** view shows the tables in the dataset, the **Query** view shows the SQL queries that are used to create the dataset, and the **Model** view shows the data model.

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In this module, you learn about the Intelligent Query Processing (IQP) features that were enhanced in SQL Server 2022.
 
 IQP is a family of capabilities built into the query processor in the database engine designed to accelerate performance with no code changes. The next generation of Intelligent Query Processing is built on a foundation of capabilities found in SQL Server 2017 and 2019, as seen in the following figure:

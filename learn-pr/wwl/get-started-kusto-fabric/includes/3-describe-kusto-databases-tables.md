@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Let's explore the core elements of Synapse Real-Time Analytics (RTA) in Microsoft Fabric.
 
 ## Real-Time Analytics core components

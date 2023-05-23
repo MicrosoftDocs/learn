@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 New enhancements have been added to SQL Server 2022 to help control the creation of indexes, and unique and primary key constraints for large tables. These improvements include extending the `WAIT_AT_LOW_PRIORITY` clause to the `CREATE INDEX` command, and introducing the resumable operation feature for adding table constraints, using the `ALTER TABLE ADD CONSTRAINT` command. By incorporating these features, we can better manage lock contention, minimize how the operations affect other queries and transactions, and ultimately enhance overall database performance and maintainability.
 
 ## Resumable add table constraints

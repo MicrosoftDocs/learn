@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 ## quiz title: Check your knowledge
 
 ## Multiple Choice

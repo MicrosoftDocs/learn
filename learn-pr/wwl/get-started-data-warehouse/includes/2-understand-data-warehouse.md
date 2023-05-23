@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 The process of building a modern data warehouse typically consists of:
 
 - Data ingestion - moving data from source systems into a data warehouse.

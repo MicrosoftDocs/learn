@@ -9,6 +9,8 @@ metadata:
   ms.author: calopez
   ms.reviewer: vanto
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
   ms.prod: learning-sqlserver
 durationInMinutes: 7
 content: |

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Security and monitoring are critical aspects of managing your data warehouse.
 
 ## Security

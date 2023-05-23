@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Azure Arc-enabled SQL Server enables you to manage and govern a hybrid infrastructure regardless of the physical location of the database infrastructure. Moreover, Azure Arc-enabled SQL Server allows organizations to extend their on-premises database environment to Azure, providing a unified management experience. 
 
 With Azure Arc-enabled SQL Server, you can take advantage of several Azure services while still operating on-premises.

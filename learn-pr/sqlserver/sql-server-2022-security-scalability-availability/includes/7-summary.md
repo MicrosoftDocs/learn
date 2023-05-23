@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 SQL Server 2022 provides a rich set of features to help you secure your data, scale your workloads, and ensure your data is available when you need it.
 
 We saw in this module how SQL Server 2022 enhances security through ledger, and improvements in Always Encrypted with secure enclaves, server roles, and dynamic data masking.

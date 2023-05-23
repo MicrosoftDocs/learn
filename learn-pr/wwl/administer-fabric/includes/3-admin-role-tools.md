@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Now that you understand the Fabric architecture and what you and your colleagues may be doing with the product, let's look at the admin role and the tools you use to manage the platform.
 
 There are several roles that work together to administer Microsoft Fabric for your organization. If you're a Microsoft 365 admin, a Power Platform admin, or a Fabric capacity admin, you are involved in administering Fabric. The Power BI admin role will transition to become the Fabric admin.

@@ -9,6 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: powerbi
+  ms.custom:
+    - build-2023
 title: Administer Microsoft Fabric
 summary: Microsoft Fabric is a SaaS solution for end-to-end data analytics. As an administrator, you can configure features and manage access to suit your organization's needs.
 abstract: |

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Microsoft Fabric security is based on [Power BI security](/power-bi/enterprise/service-admin-power-bi-security). Your role as an admin is to manage security for the Fabric environment, including managing users and groups, and managing how users interact with Fabric in terms of sharing and distribution of content.
 
 ## Manage users: assign and manage licenses

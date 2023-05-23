@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Prior to SQL Server 2022, memory grant feedback was based on the most recent execution for a specific query, and could result in some cases of different feedback adjustments that could lead to the query processor disabling memory grant feedback for a specific query. In SQL Server 2022, memory grant feedback uses a percentile method to look at memory grants over several executions before using a memory grant feedback.
 
 Additionally, prior to SQL Server 2022, memory grant feedback was only stored in a cached plan in memory. If the cache plan was evicted, memory grant feedback would have to be recalculated on new query executions. In SQL Server 2022, if the Query Store is enabled, memory grant feedback is persisted in the Query Store. You can view memory grant feedback persistence using the **sys.query_store_plan_feedback** catalog view.

@@ -8,6 +8,8 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
   ms.prod: learning-sqlserver
 durationInMinutes: 2
 content: |

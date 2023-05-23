@@ -9,6 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 title: Get started with lakehouses in Microsoft Fabric
 summary: Lakehouses merge data lake storage flexibility with data warehouse analytics. Microsoft Fabric offers a lakehouse solution for comprehensive analytics on a single SaaS platform.
 abstract: |

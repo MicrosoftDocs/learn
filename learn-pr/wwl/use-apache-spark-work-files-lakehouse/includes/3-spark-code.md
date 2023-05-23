@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 To edit and run Spark code in Microsoft Fabric, you can use *notebooks*, or you can define a *Spark job*.
 
 ## Notebooks

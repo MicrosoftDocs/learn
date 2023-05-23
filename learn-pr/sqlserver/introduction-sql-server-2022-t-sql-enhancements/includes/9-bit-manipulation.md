@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 SQL Server 2022 introduces new functions for bit manipulation, making it easier to work with binary data. Common scenarios that benefit from bit manipulation could be Internet of Things (IoT) environments, cryptographic applications, data compression, and network protocols.
 
 These functions provide a powerful and efficient way to manage binary data, helping to identify issues and make better decisions across different situations.

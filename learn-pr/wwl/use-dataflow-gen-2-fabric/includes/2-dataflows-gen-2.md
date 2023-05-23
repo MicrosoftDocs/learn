@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In our scenario, you need to develop a data model that can standardize the data and provide access to the business. By using Dataflows (Gen2), you can connect to the various data sources, and then prep and transform the data. To allow access, you can land the data directly into your Lakehouse or use a data pipeline for other destinations.
 
 ## What is a dataflow?

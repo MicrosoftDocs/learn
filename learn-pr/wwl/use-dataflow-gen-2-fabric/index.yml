@@ -9,6 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 title: Ingest Data with Dataflows Gen2 in Microsoft Fabric
 summary: Data ingestion is crucial in analytics. Microsoft Fabric's Data Factory offers Dataflows (Gen2) for visually creating multi-step data ingestion and transformation using Power Query Online.
 abstract: |

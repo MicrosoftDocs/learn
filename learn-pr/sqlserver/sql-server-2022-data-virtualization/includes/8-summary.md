@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 In this module, you learned about the data virtualization capabilities of SQL Server 2022, and Polybase, the feature SQL Server uses to enable data virtualization.
 
 You should now have a better understanding of:

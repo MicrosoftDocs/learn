@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 You can work with delta tables (or delta format files) to retrieve and modify data in multiple ways.
 
 ## Using Spark SQL
@@ -73,4 +77,3 @@ Alternatively, you can specify a timestamp by using the `timestampAsOf` option:
 
 ```python
 df = spark.read.format("delta").option("timestampAsOf", '2022-01-01').load(delta_path)
-

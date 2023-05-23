@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, real-time analytics, and business intelligence. It offers a comprehensive suite of services, including:
 
 - data warehousing

@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 SQL Server 2022 enhances the query language with a new predicate, `IS [NOT] DISTINCT FROM`, designed to simplify comparison operations involving `NULL` values.
 
 ## IS [NOT] DISTINCT FROM Predicate

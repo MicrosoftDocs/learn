@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 Running and maintaining a Disaster Recovery (DR) solution on-premises can be challenging, costly and time consuming.
 
 Starting with SQL Server 2022, you now have the flexibility to extend your on-premises disaster recovery environment to Azure, which allows you to fail over and fail back between SQL Server instances and Azure SQL Managed Instance by using the link feature.

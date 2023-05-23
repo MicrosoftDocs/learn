@@ -9,6 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: powerbi
+  ms.custom:
+    - build-2023
 title: Work with Delta Lake tables in Microsoft Fabric
 summary: Tables in a Microsoft Fabric lakehouse are based on the Delta Lake storage format commonly used in Apache Spark. By using the enhanced capabilities of delta tables, you can create advanced analytics solutions.
 abstract: |

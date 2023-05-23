@@ -1,3 +1,7 @@
+---
+ms.custom:
+  - build-2023
+---
 With the introduction of `DATE_BUCKET`, `DATETRUNC`, `GENERATE_SERIES`, `FIRST_VALUE`, and `LAST_VALUE` in SQL Server 2022, Microsoft tackles the challenges of efficiently working with dates, time periods, and generating value series. These functions improved ease of use, allowing users to effortlessly manipulate time periods and series and derive meaningful insights without hindering system performance.
 
 ## DATETRUNC
