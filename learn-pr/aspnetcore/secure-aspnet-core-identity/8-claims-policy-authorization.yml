@@ -20,7 +20,7 @@ quiz:
       choices:
       - content: "There can be no authentication without authorization."
         isCorrect: false
-        explanation: "Incorrect. Authorization is dependant on authentication, not the other way around."
+        explanation: "Incorrect. Authorization is dependent on authentication, not the other way around."
       - content: "There can be no authorization without authentication."
         isCorrect: true
         explanation: "Correct! Before you can be concerned with what a subject can *do*, you must first authenticate who the subject *is*."
