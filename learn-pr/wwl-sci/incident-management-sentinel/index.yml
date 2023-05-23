@@ -2,14 +2,14 @@
 uid: learn.azure.incident-management-sentinel
 metadata:
   title: Security incident management in Microsoft Sentinel
-  description: "Security incident management in Microsoft Sentinel"
-  ms.date: 05/12/2023
+  description: Learn about security incidents, incident evidence and entities, incident management, and how to use Microsoft Sentinel to handle incidents.
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: microsoft-sentinel
 title: Security incident management in Microsoft Sentinel
-summary: In this module, you'll investigate Microsoft Sentinel incident management, learn about Microsoft Sentinel events and entities, and discover ways to resolve incidents.
+summary: Learn about security incidents, incident evidence and entities, incident management, and how to use Microsoft Sentinel to handle incidents.
 abstract: |
   In this module, you will:
   - Understand Microsoft Sentinel incident management
