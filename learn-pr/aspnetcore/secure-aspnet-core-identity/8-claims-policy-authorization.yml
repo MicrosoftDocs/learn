@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.claims-policy-authorization
+uid: learn.secure-aspnet-core-identity.8-claims-policy-authorization
 title: Claims and policy-based authorization in ASP.NET Core
 metadata:
   title: Claims and policy-based authorization in ASP.NET Core
