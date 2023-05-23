@@ -32,7 +32,7 @@ With Azure Arc-enabled servers, the connection to Azure relies on the Connected 
 - The Connected Machine agent installed on the server
 - An Azure subscription
 
-Connecting the agent to your subscription creates an Azure Resource Manager object representing the server. From that point on, you can use the Azure portal, Azure command-line tools, or REST API to manage the server. Additionally, you can onboard non-Azure machines connected to Azure Automation Update Management with a point-and-click experience in Azure portal. You can also onboard machines to Azure Arc directly from Windows Admin Center.
+Connecting the agent to your subscription creates an Azure Resource Manager object representing the server. From that point on, you can use the Azure portal, Azure command line tools, or REST API to manage the server. Additionally, you can onboard non-Azure machines connected to Azure Automation Update Management with a point-and-click experience in Azure portal. You can also onboard machines to Azure Arc directly from Windows Admin Center.
 
 ![Screenshot that depicts the multiple options to onboard to Azure Arc-enabled servers for single server, multiple servers, and update management](../media/2-multiple-gen-script.png)
 
