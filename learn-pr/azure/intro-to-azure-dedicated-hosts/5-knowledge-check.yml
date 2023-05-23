@@ -14,28 +14,28 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What are the additional configuration layers required to run VMs on a dedicated host? "
+  - content: "What are the extra configuration layers required to run VMs on a dedicated host? "
     choices:
     - content: "Host reservations, Hosts, Size sets, Instances"
       isCorrect: false
       explanation: "Incorrect. Host reservations and Size sets don't exist"
     - content: "Host groups, Scale reservations, Size families, Cores"
       isCorrect: false
-      explanation: "Incorrect. Scale reservations do not exist. Cores is a layer of standard virtual machines."
+      explanation: "Incorrect. Scale reservations don't exist. Cores are a layer of standard virtual machines."
     - content: "Host groups, Hosts, Size families, Instances"
       isCorrect: true
       explanation: "Correct. All these layers are required to run a virtual machine on a dedicated host."
-  - content: "How does dedicated hosts compare to reserved instances?"
+  - content: "How do dedicated hosts compare to reserved instances?"
     choices:
     - content: "They're the same feature"
       isCorrect: false
-      explanation: "Incorrect. Reserved instances is a feature to reserve multi-tenant VMs and save money on scalable workloads."
+      explanation: "Incorrect. Reserved instances are a feature to reserve multi-tenant VMs and save money on scalable workloads."
     - content: "Reserved instances functionality is included in dedicated hosts"
       isCorrect: true
       explanation: "Correct. With Dedicated hosts you reserve the whole host server. There's no need to reserve VM space on said host."
     - content: "Reserved instances are a different type of dedicated host"
       isCorrect: false
-      explanation: "Incorrect. Reserved instances is a feature to reserve multi-tenant VMs and save money on scalable workloads. They do not guarantee a specific host or present the same feature set as dedicated hosts. "  
+      explanation: "Incorrect. Reserved instances are a feature to reserve multi-tenant VMs and save money on scalable workloads. They don't guarantee a specific host or present the same feature set as dedicated hosts. "  
   - content: "How many VMs can run on a single dedicated host?"
     choices:
     - content: "As many as you can fit"
