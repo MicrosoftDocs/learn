@@ -31,7 +31,7 @@ The *hello world* program runs a simple quantum random number generator and disp
 
 Some things to note:
 
-- **The kernel**: In the upper right of the notebook, you can see that the notebook is running the **Python 3 (ipykernel)** kernel, which is the default Python shell for Juptyer Notebooks. When you create a notebook in Azure Quantum, you can select either the **Python 3 (ipykernel)** or the **Azure Quantum Q#** kernel. Both kernels are fully compatible with Q# code.
+- **The kernel**: In the upper right of the notebook, you can see that the notebook is running the **Python 3 (ipykernel)** kernel, which is the default Python shell for Jupyter Notebooks. When you create a notebook in Azure Quantum, you can select either the **Python 3 (ipykernel)** or the **Azure Quantum Q#** kernel. Both kernels are fully compatible with Q# code.
 - **1st cell**: Preloads your subscription information to connect to the Azure Quantum service.
 - **2nd cell**: Retrieves the available targets (quantum computers and simulators) in your workspace.
 - **3rd and 4th cells**: The Q# code that defines the program. Note the *%%qsharp* magic command which allows you to enter Q# code directly into the notebook when using the **Python 3 (ipykernel)**.
@@ -52,7 +52,7 @@ The *hello world* program runs a simple quantum random number generator and disp
 
 Some things to note:
 
-- **The kernel**: In the upper right of the notebook, you can see that the notebook is running the **Python 3 (ipykernel)** kernel, which is the default Python shell for Juptyer Notebooks. When you create a notebook in Azure Quantum, you can select either the **Python 3 (ipykernel)** or the **Azure Quantum Q#** kernel. Both kernels are fully compatible with Q# code.
+- **The kernel**: In the upper right of the notebook, you can see that the notebook is running the **Python 3 (ipykernel)** kernel, which is the default Python shell for Jupyter Notebooks. When you create a notebook in Azure Quantum, you can select either the **Python 3 (ipykernel)** or the **Azure Quantum Q#** kernel. Both kernels are fully compatible with Q# code.
 - **1st cell**: Preloads your subscription information to connect to the Azure Quantum service.
 - **2nd cell**: Retrieves the available targets (quantum computers and simulators) in your workspace.
 - **3rd and 4th cells**: The Q# code that defines the program. Note the *%%qsharp* magic command which allows you to enter Q# code directly into the notebook when using the **Python 3 (ipykernel)**.
