@@ -14,7 +14,7 @@ Let's review some characteristics of availability sets.
 
 - You can create a virtual machine and an availability set at the same time.
 
-   A virtual machine can only be added to an availability set when the virtual machine is created. To change the availability set for a virtual, you need to delete and then recreate the virtual machine.
+   A virtual machine can only be added to an availability set when the virtual machine is created. To change the availability set for a virtual machine, you need to delete and then recreate the virtual machine.
 
 - You can build availability sets by using the Azure portal, Azure Resource Manager (ARM) templates, scripting, or API tools.
 
