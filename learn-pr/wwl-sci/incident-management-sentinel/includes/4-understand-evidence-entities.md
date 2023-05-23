@@ -3,11 +3,11 @@ Microsoft Sentinel uses various sources of security information to create incide
 
 ## Incident evidence
 
-Incident *evidence* consists of the security event information and related Microsoft Sentinel assets that identify threats in the Microsoft Sentinel environment. Evidence displays how Microsoft Sentinel has identified a threat. Evidence links you back to the specific resources you can use to increase your awareness of incident details.
+Incident *evidence* consists of the security event information and related Microsoft Sentinel assets that identify threats in the Microsoft Sentinel environment. Evidence shows how Microsoft Sentinel has identified a threat, and links back to specific resources that can increase your awareness of incident details.
 
 ### Events
 
-Events link you back to one or more specific events from the Log Analytics workspaces associated with Microsoft Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse.
+Events link you back to one or more specific events from the Log Analytics workspace associated with Microsoft Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse.
 
 If a query attached to a Microsoft Sentinel analytics rule returns events, it attaches the events to the generated incident for potential further review. You can use these events to understand the scope and frequency of the incident before you investigate further.
 

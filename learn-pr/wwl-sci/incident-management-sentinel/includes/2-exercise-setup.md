@@ -1,12 +1,13 @@
 
+To set up the Azure environment for the optional incident management exercise, complete the following steps.
+
 ## Prerequisites
 
-To complete the optional exercise in this module, you need access to an Azure subscription. If you don't have a subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true).
+To complete this optional exercise, you need access to an Azure subscription. If you don't have a subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true).
 
 > [!NOTE]
 > Be aware that this exercise creates resources that might incur costs in your Azure subscription. To estimate the costs, see [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel/).
 
-To set up the Azure environment for the incident management exercise, complete the following steps.
 
 ## Deploy the Azure Resource Manager template
 

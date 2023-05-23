@@ -3,7 +3,7 @@ As a Contoso security engineer, you need to analyze the deletions of virtual mac
 
 In this exercise, you create a Microsoft Sentinel analytics rule to detect when a VM is deleted. You then delete the VM you created at the beginning of this module, and investigate and resolve the incident the rule created.
 
-To do this exercise, make sure you completed the setup exercise at the beginning of the module.
+To complete this exercise, make sure you finished the setup exercise at the beginning of the module and the Azure Activity connector now shows a status of **Connected**.
 
 ## Create an analytics rule from the wizard
 
@@ -41,7 +41,7 @@ Create an analytics rule that creates an incident when a VM is deleted in the Co
 
 1. Scroll down to view or set the following configuration options:
 
-   - Expand the  **Entity mapping** section to define the entities that return as part of the query rule, to use for in-depth analysis. For this exercise, use the default values.
+   - Expand the  **Entity mapping** section to define the entities that return as part of the query rule, which you can use for in-depth analysis. For this exercise, use the default values.
    - In the **Query scheduling** section, configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
    - In the **Alert threshold** section, you can specify the number of positive results that can return for the rule before an alert is generated. Use the default value of **is greater than 0**.
    - In the **Event grouping** section, accept the default selection **Group all events into a single alert**.
@@ -59,12 +59,12 @@ Create an analytics rule that creates an incident when a VM is deleted in the Co
 
 **Review and create**
 
-1. Select **Next: Automated response**, and then select **Next: Review**.
+1. Select **Next: Review**.
 1. On the **Review and create** tab, when validation is successful, select **Create**.
 
 ## Delete a VM
 
-To test rule detection and incident creation, delete the VM you created. 
+To test rule detection and incident creation, delete the VM you created during setup.
 
 1. In the Azure portal, search for and select **Virtual machines**.
 2. On the **Virtual machines** page, select the checkbox next to named **simple-vm**, and then select **Delete** from the toolbar.
@@ -87,12 +87,12 @@ In this step, you investigate the incident Microsoft Sentinel created when you d
 1. In the left pane of the **Incident** page, observe the totals for **Events**, **Alerts**, and **Bookmarks** in the **Evidence** section.
 1. At the bottom of the pane, select **Investigate**.
 1. On the **Investigation** page, select the following items in the investigation graph:
-   - The **Deleted VMs** incident item in the center of the page shows the details of the incident.
-   - The user entity represents your user account, indicating that you deleted the VM.
+   - The **Deleted VMs** incident item in the center of the page showing the details of the incident.
+   - The user entity representing your user account, indicating that you deleted the VM.
 1. At the top of the **Investigate** page, select **Status** > **Closed**.
 1. In the **Select classification** drop-down menu, select **Benign Positive - Suspicious but expected**.
 1. In the **Comment** field, enter *Testing incident creation and resolution steps*, and then select **Apply**.
-1. Select the close icons to close the **Investigate** and **Incidents** pages.
+1. Select the close icons to close the **Investigate** and **Incident** pages.
 1. On the **Incidents** page, observe that **Open incidents** and **Active incidents** now have values of **0**.
 
 You've successfully created a Microsoft Sentinel analytics rule, deleted a VM to create an incident, and investigated and closed the incident the rule created.
