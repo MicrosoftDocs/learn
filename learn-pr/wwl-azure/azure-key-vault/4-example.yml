@@ -4,13 +4,10 @@ title: Review a secure Key Vault example
 metadata:
   title: Review a secure Key Vault example
   description: "Review a secure Key Vault example"
-  ms.date: 05/11/2023
+  ms.date: 05/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
 content: |
   [!include[](includes/4-example.md)]

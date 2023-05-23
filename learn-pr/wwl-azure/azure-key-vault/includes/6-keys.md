@@ -1,6 +1,7 @@
+
 Cryptographic keys in Key Vault are represented as JSON Web Key (JWK) objects. There are two types of keys, depending on how they were created.
 
- -  **Soft keys**: A key processed in software by Key Vault, but is encrypted at rest using a system key that is in a Hardware Security Module (HSM). Clients may import an existing RSA or EC (Elliptic Curve) key, or request that Key Vault generate one.
+ -  **Soft keys**: A key processed in software by Key Vault, but is encrypted at rest using a system key that is in an Hardware Security Module (HSM). Clients may import an existing RSA or EC (Elliptic Curve) key, or request that Key Vault generate one.
  -  **Hard keys**: A key processed in an HSM (Hardware Security Module). These keys are protected in one of the Key Vault HSM Security Worlds (there's one Security World per geography to maintain isolation). Clients may import an RSA or EC key, in soft form or by exporting from a compatible HSM device. Clients may also request Key Vault to generate a key.
 
 ## Key operations
