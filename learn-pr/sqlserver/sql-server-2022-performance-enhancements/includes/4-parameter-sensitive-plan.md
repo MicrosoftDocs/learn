@@ -26,7 +26,7 @@ For eligible plans, the initial compilation produces a dispatcher plan that cont
 - **Predicate cardinality range**:
   At runtime, the cardinality of each predicate is evaluated based on runtime parameter values. The dispatcher places the cardinality values into three predicate cardinality ranges at compile time. For example, the PSP optimization feature can create three ranges that would represent low, medium, and high cardinality ranges, as shown in the following diagram.
 
-  ![Image of parameter sensitive plan boundaries](../media/parameter-sensitive-plan-boundaries.png)
+  :::image type="content" source="../media/parameter-sensitive-plan-boundaries.png" alt-text="Image of parameter sensitive plan boundaries.":::
 
   In other words, when a parameterized query is initially compiled, the PSP optimization feature generates a shell plan known as a dispatcher plan. The dispatcher expression has the logic that places queries into query variants based on the runtime values of parameters. When actual execution begins, the dispatcher performs two steps:
 

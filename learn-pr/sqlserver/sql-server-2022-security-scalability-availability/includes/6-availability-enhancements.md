@@ -10,7 +10,7 @@ There are many availability enhancements to SQL Server 2022, but in this unit, w
 
 For a list of other availability enhancements, see the following diagram and [What's new in SQL Server 2022](/sql/sql-server/what-s-new-in-sql-server-2022#availability).
 
-![Image of the SQL Server 2022 availability enhancements.](../media/availability-enhancements-list.png)
+:::image type="content" source="../media/availability-enhancements-list.png" alt-text="Image of the SQL Server 2022 availability enhancements.":::
 
 ## Contained availability groups
 
@@ -29,13 +29,13 @@ Contained availability groups solve the challenges by extending the concept of t
 
 In contrast, in a contained availability group, you can create users, logins, and permissions at the availability group level, and they'll *automatically* be consistent across replicas in the availability group, as well as consistent across databases within that contained availability group. This saves the DBA from having to manually make these changes themselves.
 
-![Image of the contained availability challenges and properties.](../media/contained-availability-group-challenge.png)
+:::image type="content" source="../media/contained-availability-group-challenge.png" alt-text="Image of the contained availability challenges and properties.":::
 
 ### How does a contained availability group work?
 
 Each contained availability group has its own `master` and `msdb` system databases, named after the name of the availability group. For example, in contained availability group `MyAG`, you'll have databases named `MyAG_master` and `MyAG_msdb`. These system databases are automatically seeded to new replicas and updates are replicated to these databases just like any other database in an availability group. This means that when you add an object such as a login, or SQL Agent Job while connected to the contained availability group, you're able to authenticate using the login created in the contained availability group, and see the SQL Agent Job when the contained availability group fails over to another instance.
 
-![A flow diagram of the contained availability group.](../media/contained-availability-group-flow.png)
+:::image type="content" source="../media/contained-availability-group-flow.png" alt-text="A flow diagram of the contained availability group.":::
 
 To be able to effectively utilize the features of a contained availability group, you must create a listener for the contained availability group. The listener is used to connect to the contained availability group, and is the only way to access the environment of the contained availability group. If you were to connect to one of the *instances* hosting the contained availability group rather than directly to the contained availability group through the listener, you would be in the environment of the instance, and not the contained availability group. This means that if you create a login or SQL Agent Job while connected to the instance, it wouldn't be replicated to the other replicas in the contained availability group.
 

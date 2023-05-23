@@ -14,7 +14,7 @@ In SQL Server 2022, we introduced a new feature called DOP feedback. The optimiz
 
 DOP feedback never increases the DOP. At best, DOP feedback will revert to a stable previous DOP, and it works incrementally. Instead of trying to drastically lower the DOP all at once, DOP feedback tries a slightly lower DOP. If the DOP is good, it might try another slightly lower DOP. If the new, even lower DOP is good, DOP feedback might try to reduce again down to the DOP of two, although it will not make a parallel plan become serial. If the new, lower DOP isn't as good, we go back to the previous known good DOP and keep the query at that level.
 
-![Image showing that DOP feedback reduces the Degree of Parallelism in a stepwise fashion, incrementally decreasing the Degree of Parallelism and verifying at each step.](../media/degree-of-parallelism-feedback-step.png)
+:::image type="content" source="../media/degree-of-parallelism-feedback-step.png" alt-text="Image showing that DOP feedback reduces the Degree of Parallelism in a stepwise fashion, incrementally decreasing the Degree of Parallelism and verifying at each step.":::
 
 ## DOP feedback example
 

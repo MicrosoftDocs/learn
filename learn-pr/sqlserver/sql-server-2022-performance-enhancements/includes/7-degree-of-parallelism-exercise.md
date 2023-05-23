@@ -112,7 +112,7 @@ You'll observe how this feature validates DOP values for an eligible query until
 
 1. Right-click the new **Extended Events** session in **Object Explorer** in SSMS and select **Watch Live Data**.
 
-   ![Screenshot of SSMS Extended Events and selecting Watch Live Data.](../media/degree-of-parallelism-feedback-exercise-xevent-live-data.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-xevent-live-data.jpg" alt-text="Screenshot of SSMS Extended Events and selecting Watch Live Data.":::
   
 1. Execute the following script to set Query Store settings and database setting for DOP feedback.
 
@@ -142,7 +142,7 @@ You'll observe how this feature validates DOP values for an eligible query until
 1. Run **[workload_index_scan_users.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/dopfeedback/workload_index_scan_users.cmd)** from a Command Prompt.  
 
    > [!NOTE]
-   > If you are using a named instance, edit **workload_index_scan_users.cmd** to use `-S .\<instance name>`
+   > If you are using a named instance, edit **workload_index_scan_users.cmd** to use `-S.\<instance name>`
 
    The script takes around 15 minutes to run.
 
@@ -150,13 +150,13 @@ You'll observe how this feature validates DOP values for an eligible query until
   
    You should see a series of events like below.
 
-   ![Screenshot of SSMS Extended Events showing a live data view of DOP feedback.](../media/degree-of-parallelism-feedback-exercise-xevent-live-data-view.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-xevent-live-data-view.jpg" alt-text="Screenshot of SSMS Extended Events showing a live data view of DOP feedback.":::
 
-   You should first see a `dop_feedback_eligible_query` event. The event takes several minutes to first appear. Then you'll see a series of `dop_feedback_provided` and `dop_feedback_validation` events until you see a final `dop_feedback_stabilized` event with a `feedback_dop value` of 2. Depending on your system, it's possible the system can stabilize at a DOP value of 4.
+   You should first see a `dop_feedback_eligible_query` event. The event can take 5-10 minutes to first appear. Then you'll see a series of `dop_feedback_provided` and `dop_feedback_validation` events until you see a final `dop_feedback_stabilized` event with a `feedback_dop value` of 2. Depending on your system, it's possible the system can stabilize at a DOP value of 4.
 
    The `dop_feedback_stabilized` event shows the reason for stabilization. In this case, the validation for DOP 2 stabilized because the query has reached the minimum DOP value.
 
-   ![Screenshot of SSMS Extended Events showing a live data view of DOP feedback stabilized reason.](../media/degree-of-parallelism-feedback-exercise-xevent-feedback-reason.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-xevent-feedback-reason.jpg" alt-text="Screenshot of SSMS Extended Events showing a live data view of DOP feedback stabilized reason.":::
 
    When feedback is provided and feedback state is stable, the feedback is persisted to Query Store.
 
@@ -178,7 +178,7 @@ You'll observe how this feature validates DOP values for an eligible query until
 
    You'll notice a small decrease in `avg_duration_ms` and decrease in needed CPU across the various `last_dop` values.
 
-   ![Screenshot of SSMS query stats results.](../media/degree-of-parallelism-feedback-exercise-query-stats.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-query-stats.jpg" alt-text="Screenshot of SSMS query stats results.":::
 
 1. Run the following script to see the persisted DOP feedback.
 
@@ -191,18 +191,18 @@ You'll observe how this feature validates DOP values for an eligible query until
 
 1. Examine the values in the `feedback_desc` field to see the `BaselineStats` and `LastGoodFeedback` values.  
 
-   ![Screenshot of SSMS Query Store plan feedback results.](../media/degree-of-parallelism-feedback-exercise-query-store-plan-feedback.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-feedback-exercise-query-store-plan-feedback.jpg" alt-text="Screenshot of SSMS Query Store plan feedback results.":::
 
 1. You can also view the improvement in performance through the **Top Resource Consuming Queries** report. Open the **WideWorldImporters** > **Query Store** > **Top Resource Consuming Queries** in SSMS **Object Explorer** to open the report.  
 
-   ![Screenshot of SSMS Query Store and selecting the Top Resource Consuming Queries report.](../media/degree-of-parallelism-exercise-top-resource-consuming-queries.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-exercise-top-resource-consuming-queries.jpg" alt-text="Screenshot of SSMS Query Store and selecting the Top Resource Consuming Queries report.":::
 
 1. Change **Statistic** to `Avg` and **Metric** to `Duration (ms)`. You can see the decrease in time until stabilization of DOP.
 
-   ![Screenshot of SSMS viewing the Top Resource Consuming Queries report.](../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report.jpg" alt-text="Screenshot of SSMS viewing the Top Resource Consuming Queries report.":::
 
 1. Change the **Metric** to `CPU Time (ms)` and observe. You can see the decrease in CPU.
 
-   ![Screenshot of SSMS viewing the Top Resource Consuming Queries report and looking at CPU usage.](../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report-cpu.jpg)
+   :::image type="content" source="../media/degree-of-parallelism-exercise-top-resource-consuming-queries-report-cpu.jpg" alt-text="Screenshot of SSMS viewing the Top Resource Consuming Queries report and looking at CPU usage.":::
 
    This above report shows you the real benefit of DOP feedback. There's a significant reduction in CPU resources required to achieve a similar or lower duration for the query without any user action.
