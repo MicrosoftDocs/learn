@@ -45,7 +45,7 @@ Create an analytics rule that creates an incident when a VM is deleted in the Co
    - In the **Query scheduling** section, configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
    - In the **Alert threshold** section, you can specify the number of positive results that can return for the rule before an alert is generated. Use the default value of **is greater than 0**.
    - In the **Event grouping** section, accept the default selection **Group all events into a single alert**.
-   - In the **Suppression** section, for **Stop running the query after the alert is generated**, accept the default of **Off**.
+   - In the **Suppression** section, for **Stop running the query after the alert is generated**, leave the default of **Off**.
    - In the **Results simulation** section, select **Test with current data**, and observe the results.
 
 1. Select **Next: Incident settings**.
@@ -86,16 +86,16 @@ In this step, you investigate the incident Microsoft Sentinel created when you d
 1. Select **View full details**.
 1. In the left pane of the **Incident** page, observe the totals for **Events**, **Alerts**, and **Bookmarks** in the **Evidence** section.
 1. At the bottom of the pane, select **Investigate**.
-7. In the investigation graph on the **Investigation** page:
-   - Select **Deleted VMs** in the center of the page, and observe the details of the incident.
-   - Select the entity on the graph that represents a user. This is your user account, indicating that you deleted the VM.
+1. On the **Investigation** page, select the following items in the investigation graph:
+   - The **Deleted VMs** incident item in the center of the page shows the details of the incident.
+   - The user entity represents your user account, indicating that you deleted the VM.
 1. At the top of the **Investigate** page, select **Status** > **Closed**.
-8. In the **Select classification** drop-down menu, select **Benign Positive - Suspicious but expected**.
-9. In the **Comment** field, enter *Testing incident creation and resolution steps*, and then select **Apply**.
+1. In the **Select classification** drop-down menu, select **Benign Positive - Suspicious but expected**.
+1. In the **Comment** field, enter *Testing incident creation and resolution steps*, and then select **Apply**.
 1. Select the close icons to close the **Investigate** and **Incidents** pages.
 1. On the **Incidents** page, observe that **Open incidents** and **Active incidents** now have values of **0**.
 
-You've successfully created a Microsoft Sentinel analytics rule, deleted a VM to create an incident, and investigated and resolved the incident the rule created.
+You've successfully created a Microsoft Sentinel analytics rule, deleted a VM to create an incident, and investigated and closed the incident the rule created.
 
 ## Clean up resources
 

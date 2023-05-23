@@ -7,7 +7,9 @@ Incident *evidence* consists of the security event information and related Micro
 
 ### Events
 
-Events link you back to one or more specific events from the Log Analytics workspaces associated with Microsoft Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse. If a query attached to a Microsoft Sentinel analytics rule returns events, it attaches the events to the generated incident for potential further review. You can use these events to understand the scope and frequency of the incident before you investigate further.
+Events link you back to one or more specific events from the Log Analytics workspaces associated with Microsoft Sentinel. On their own, these workspaces typically contain thousands of events that are too numerous to manually parse.
+
+If a query attached to a Microsoft Sentinel analytics rule returns events, it attaches the events to the generated incident for potential further review. You can use these events to understand the scope and frequency of the incident before you investigate further.
 
 ### Alerts
 

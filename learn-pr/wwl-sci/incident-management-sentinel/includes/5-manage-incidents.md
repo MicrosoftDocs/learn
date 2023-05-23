@@ -1,23 +1,22 @@
 
-After you start using Microsoft Sentinel to generate incidents, you and the Contoso IT team can investigate these incidentes. Microsoft Sentinel has advanced investigation and analysis tools you can use to gather information and determine remediation steps.
+After you start using Microsoft Sentinel to generate incidents, you and the Contoso IT team can investigate the incidents. Microsoft Sentinel has advanced investigation and analysis tools you can use to gather information and determine remediation steps.
 
 ## Review incidents
 
 To identify and resolve security issues, first investigate any incidents. The Microsoft Sentinel **Overview** page provides a list of the most recent incidents for quick reference. For more details and a complete overview of incidents, use the **Incidents** page, which displays all incidents in the current workspace and details about those incidents.
 
-The **Incidents** page provides a complete list of incidents in Microsoft Sentinel. The page also provides basic incident information, including severity, ID, title, alerts, product names, created time, last update time, owner, and status. You can sort by any incident column and filter the incident list by name, severity, status, product name, or owner.
+The **Incidents** page provides a complete list of incidents in Microsoft Sentinel. The page also provides basic incident information. Information includes severity, ID, title, alerts, product names, created time, last update time, owner, and status. You can sort by any incident column and filter the incident list by name, severity, status, product name, or owner.
 
-:::image type="content" source="../media/5-incidents-page.png" alt-text="Screenshot of a list of incidents in Microsoft Sentinel."  lightbox="../media/5-incidents-page.png"::::::
+:::image type="content" source="../media/5-incidents-page.png" alt-text="Screenshot of a list of incidents in Microsoft Sentinel." lightbox="../media/5-incidents-page.png":::
 
 From this page, you can take various steps to investigate incidents.
 
 > [!IMPORTANT]
 > Azure Active Directory (Azure AD) users who investigate incidents must be members of the Directory Reader role.
 
-
 ## Examine incident details
 
-Select any incident on the **Incidents** page to display more information about the incident. The **Incident** pane provides a description of the incident and lists the related evidence, entities, and tactics. The pane also contains links to associated workbooks and the analytic rule that generated the incident. This information can help you clarify the nature, context, and course of action for the incident.
+Select any incident on the **Incidents** page to display more information about the incident. The **Incident** pane provides a description of the incident and lists the related evidence, entities, and tactics. The pane also contains links to associated workbooks and the analytics rule that generated the incident. This information can help you clarify the nature, context, and course of action for the incident.
 
 :::image type="content" source="../media/5-incident-details.png" alt-text="Screenshot of the incident details pane." :::
 
@@ -45,15 +44,15 @@ When you set the status to **Closed**, you're prompted to choose one of the foll
 
 - **True Positive - Suspicious activity**
 - **Benign Positive - Suspicious but expected**
-- **False Positive - Incorrect alert logic
+- **False Positive - Incorrect alert logic**
 - **False Positive - Inaccurate data**
 - **Undetermined**
 
 ### Severity
 
-Incident severity is set by the rule or Microsoft security source that generated the incident. In most cases, incident severity remains unchanged, but you might change the severity if you decide that the incident is more or less severe than initially classified. Severity options are **Informational**, **Low**, **Medium**, and **High**.
+The rule or Microsoft security source that generated the incident initially sets the severity. In most cases, incident severity remains unchanged, but you might change the severity if you decide that the incident is more or less severe than initially classified. Severity options are **Informational**, **Low**, **Medium**, and **High**.
 
-### Perform deep analysis with an investigation graph
+## Use the investigation graph
 
 You can further investigate an incident by selecting **Investigate** on the **Incident** page. This action opens the investigation graph, a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts.
 

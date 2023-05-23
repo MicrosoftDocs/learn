@@ -13,9 +13,9 @@ Imagine that you're a security engineer for Contoso, Ltd., a midsize financial s
 
 Contoso uses Microsoft Defender for Cloud as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
 
-Recently, the company's Azure Activity log showed a significant number of VMs were deleted from the Azure subscription. You want to analyze this occurrence and be alerted when similar activity occurs in the future.
+Recently, the company's Azure Activity log showed that a significant number of VMs were deleted from the Azure subscription. You need to analyze this occurrence and be alerted when similar activity occurs in the future.
 
-Microsoft Sentinal is a cloud application that can help you create and investigate an incident when someone deletes an existing VM. In this module, you learn how to use Microsoft Sentinel to help protect Contoso's resources.
+Microsoft Sentinel is a cloud application that can help you protect Contoso's resources. In this module, you learn how to use Microsoft Sentinel to create and investigate an incident when someone deletes an existing VM.
 
 ## Learning objectives
 
@@ -25,10 +25,10 @@ Microsoft Sentinal is a cloud application that can help you create and investiga
 
 ## Prerequisites
 
-- Familiarity with security operations in an organization
-- Basic experience with Azure services
-- Knowledge of operational concepts, such as monitoring, logging, and alerting
-- Basic knowledge of Microsoft Sentinel rules
+- Familiarity with security operations in an organization.
+- Basic experience with Azure services.
+- Knowledge of operational concepts, such as monitoring, logging, and alerting.
+- Basic knowledge of Microsoft Sentinel rules.
 
 > [!NOTE]
 > If you choose to do the optional exercise in this module, you might incur charges in your Azure subscription. To estimate the costs, see [Microsoft Sentinel pricing](https://azure.microsoft.com/pricing/details/azure-sentinel).

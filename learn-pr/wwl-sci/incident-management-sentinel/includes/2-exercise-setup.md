@@ -46,10 +46,10 @@ Next, deploy the Azure Activity log connector for Microsoft Sentinel.
 
 1. In the [Azure portal](https://portal.azure.com), search for and select **Microsoft Sentinel**.
 1. On the **Microsoft Sentinel** page, select the Microsoft Sentinel workspace you created.
-1. On the workspace page, select **Data connectors** under **Configuration** in the left navigation.
+1. On the workspace page, select **Data connectors** under **Configuration** in the left menu.
 1. On the **Data connectors** page, search for and select **Azure Activity**, and then select **Open connector page** on the **Azure Activity** screen.
 1. At the bottom of the **Azure Activity** page, select **Launch Azure Policy Assignment Wizard**.
-1. In the **Basics** tab of the wizard, select the ellipsis ***...*** under **Scope**, on the **Scopes** pane select your subscription, and then select **Select**.
+1. In the **Basics** tab of the wizard, select the ellipsis ***...*** under **Scope**. On the **Scopes** pane, select your subscription and then select **Select**.
 1. Select the **Parameters** tab, and choose your Microsoft Sentinel workspace from the **Primary Log Analytics workspace** drop-down list.
 1. Select the **Remediation** tab, and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
 1. Select the **Review + Create** button to review the configuration, and then select **Create**.
