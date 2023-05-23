@@ -10,7 +10,7 @@ Register for free and sign up for a [pay-as-you-go subscription](https://azure.m
 
 ### [Free Trial](#tab/free)
 
-Sign up for a [free trial subscription for 30 days](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). With the Azure Quantum Credits, you'll have $500 (USD) to use in each quantum hardware provider. After you've been signed up for 30 days or once you've consumed all you Azure Quantum Credits (whichever occurs first), you **must** upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go). After you exhaust your Azure Quantum Credits, you'll only pay for the services you use, and you can cancel anytime.
+Sign up for a [free trial subscription for 30 days](https://azure.microsoft.com/free/?WT.mc_id=A261C142F). With the Azure Quantum Credits, you'll have $500 (USD) to use in each quantum hardware provider. After you've been signed up for 30 days or once you've consumed all your Azure Quantum Credits (whichever occurs first), you **must** upgrade to a [pay-as-you-go subscription](https://azure.microsoft.com/pricing/purchase-options/pay-as-you-go). After you exhaust your Azure Quantum Credits, you'll only pay for the services you use, and you can cancel anytime.
 
 In addition, the free Azure trial gets you started with $200 (USD) in Azure credits to be used in Azure first-party services (Azure Quantum is not eligible) within the first 30 days of sign-up.
 
