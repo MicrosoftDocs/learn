@@ -6,7 +6,7 @@ metadata:
   description: "Introduction to porting Windows applications to natively support Arm-based processors"
   ms.date: 5/18/2023
   author: mattwojo
-  ms.author: mattwoj@microsoft.com
+  ms.author: mattwoj
   ms.topic: module-standard-task-based
   ms.prod: windows
   ms.technology: arm
