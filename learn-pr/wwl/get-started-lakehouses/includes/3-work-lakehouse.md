@@ -34,7 +34,7 @@ You can load data into the Lakehouse multiple ways, including:
 - **Shortcuts**: Connect to external file storage, such as OneLake or Azure Data Lake Store Gen2 locations.
 
   > [!NOTE]
-  > Fabric *Shortcuts* enable you to integrate data into your lakehouse while keeping it stored in external storage. For more information, see [OneLake shortcuts documentation](https://review.learn.microsoft.com/fabric/onelake/onelake-shortcuts?branch=release-public-preview) in the Microsoft Fabric documentation.
+  > Fabric *Shortcuts* enable you to integrate data into your lakehouse while keeping it stored in external storage. For more information, see [OneLake shortcuts documentation](https://learn.microsoft.com/fabric/onelake/onelake-shortcuts) in the Microsoft Fabric documentation.
 
 ## Explore and transform data in a lakehouse
 
