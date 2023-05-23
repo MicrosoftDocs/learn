@@ -31,7 +31,8 @@ quiz:
     choices:
     - content: "Windows Server 2012 R2"
       isCorrect: false
-      explanation: "Incorrect. The Azure Connected Machine agent supports all versions of Windows Server operating system that have'nt reached their end of support stage."
+      explanation: "Incorrect. The Azure Connected Machine agent supports all versions of Windows Server operating system that haven't reached their end of support stage."
+
     - content: "Red Hat Enterprise Linux 7 (x64)."
       isCorrect: false
       explanation: "Incorrect. The Azure Connected Machine agent supports Red Hat Enterprise Linux 7 (x64)."
