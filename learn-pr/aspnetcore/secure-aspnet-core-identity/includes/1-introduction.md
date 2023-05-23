@@ -37,7 +37,7 @@ Using the *.devcontainer* requires only:
 * [Git](https://git-scm.com/docs/gitcli)
 * [Docker Desktop](https://www.docker.com/products/docker-desktop/), [Rancher Desktop](https://rancherdesktop.io/), or similar
 
-If you don't want to install **any** local tools, you can also use the *.devcontainer* using [GitHub Codespaces](https://github.com/features/codespaces) ([charges might apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing)).
+If you don't want to install **any** local tools, you can also use the *.devcontainer* in [GitHub Codespaces](https://github.com/features/codespaces) ([charges might apply](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-codespaces#codespaces-pricing)).
 
 ## Get started
 
