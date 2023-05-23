@@ -13,7 +13,7 @@ In this unit, we'll explore some of the security enhancements to SQL Server 2022
 
 Always Encrypted with secure enclaves allows some computations on plaintext data inside a secure enclave on the server side. A secure enclave is a protected region of memory within the Database Engine process. The secure enclave appears as an opaque box to the rest of the Database Engine and other processes on the hosting machine. There's no way to view any data or code inside the enclave from the outside, even with a debugger. These properties make the secure enclave a trusted execution environment that can safely access cryptographic keys and sensitive data in plaintext, without compromising data confidentiality.
 
-![Diagram for the flow of Always Encrypted in Azure SQL Database or SQL Server.](../media/always-encrypted-data-flow.png)
+:::image type="content" source="../media/always-encrypted-data-flow.png" alt-text="Diagram for the flow of Always Encrypted in Azure SQL Database or SQL Server.":::
 
 SQL Server 2022 adds additional support for confidential queries with JOIN, GROUP BY and ORDER BY operations on encrypted columns.
 

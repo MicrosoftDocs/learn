@@ -4,14 +4,14 @@ title: Exercise - Degree of Parallelism feedback
 metadata:
   title: Exercise - Degree of Parallelism feedback
   description: "An exercise utilizing the Degree of Parallelism feedback feature to show query performance increase and see what's happening behind the scenes of setting DOP."
-  ms.date: 5/10/2023
+  ms.date: 05/23/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
   ms.custom:
     - build-2023
   ms.prod: learning-sqlserver
-durationInMinutes: 10
+durationInMinutes: 20
 content: |
   [!include[](includes/7-degree-of-parallelism-exercise.md)]
 quiz:
@@ -19,15 +19,15 @@ quiz:
   questions:
   - content: "Parallel efficiency is defined as:"
     choices:
-    - content: "Dynamically calculating the best setting for sp_configure."
+    - content: "A. Dynamically calculating the best setting for sp_configure."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "The lowest DOP setting for a query to achieve similar duration across executions while lowering CPU."
+    - content: "B. The lowest DOP setting for a query to achieve similar duration across executions while lowering CPU."
       isCorrect: true
       explanation: "Correct."
-    - content: "A MAXDOP setting for the database that lowers the overall CPU for the system."
+    - content: "C. A MAXDOP setting for the database that lowers the overall CPU for the system."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "B and C."
+    - content: "D. B and C."
       isCorrect: false
       explanation: "Incorrect."

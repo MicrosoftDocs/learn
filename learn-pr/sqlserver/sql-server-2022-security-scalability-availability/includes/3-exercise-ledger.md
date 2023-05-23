@@ -58,7 +58,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
 
     If you inspect the newly created table in SSMS **Object Explorer**, you'll notice the table has a new icon with a checkmark that indicates it's a ledger table.
 
-    ![Screenshot of the newly created ledger table in SSMS Object Explorer.](../media/ssms-object-explorer.png)
+    :::image type="content" source="../media/ssms-object-explorer.png" alt-text="Screenshot of the newly created ledger table in SSMS Object Explorer.":::
 
 1. Populate the `Employees` table with some sample data by executing the following script:
 
@@ -109,7 +109,7 @@ In this exercise, we see how you can use ledger in a real world scenario of audi
     GO
     ```
 
-   ![Screenshot of the ledger view for the Employees table in SSMS.](../media/ssms-get-employees-ledger.png)
+   :::image type="content" source="../media/ssms-get-employees-ledger.png" alt-text="Screenshot of the ledger view for the Employees table in SSMS.":::
 
 1. To get a better understanding of the definition of the ledger view, you can execute the following query:
 
@@ -175,7 +175,7 @@ Now that we've looked at some of the functionality of ledger in SQL Server 2022,
     SELECT * FROM [dbo].[Employees]
     ```
 
-   ![Screenshot of the updated Employees table in SSMS.](../media/ssms-updated-salary.png)
+   :::image type="content" source="../media/ssms-updated-salary.png" alt-text="Screenshot of the updated Employees table in SSMS.":::
 
 ## Auditing the data
 
@@ -190,7 +190,7 @@ Let's assume that a few weeks later, you're doing a routine audit of changes in 
     GO
     ```
 
-   ![Screenshot of the results of the ledger digest in SSMS.](../media/ssms-copy-digest.png)
+   :::image type="content" source="../media/ssms-copy-digest.png" alt-text="Screenshot of the results of the ledger digest in SSMS.":::
 
 1. Use the `sp_verify_database_ledger` stored procedure to verify that the historical data in your database wasn't tampered with. Replace `<YOUR DATABASE DIGEST>` with the digest you copied in the previous step.
 
@@ -202,7 +202,7 @@ Let's assume that a few weeks later, you're doing a routine audit of changes in 
 
    If the verification is successful and your data hasn't been tampered with, you'll see the following **Message**:
 
-   ![Screenshot of the results of the ledger verification in SSMS.](../media/ssms-ledger-verification-success.png)
+   :::image type="content" source="../media/ssms-ledger-verification-success.png" alt-text="Screenshot of the results of the ledger verification in SSMS.":::
 
    By using this digest, we know that:
 
