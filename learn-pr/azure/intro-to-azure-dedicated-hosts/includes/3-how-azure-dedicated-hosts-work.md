@@ -40,11 +40,13 @@ Standard_D64ds_v4 | 1
 An example of a mixed size deployment using the size family from the previous table might look like this:
 
 Total host core count: 64 cores
+
 VM Qty. | VM Size | Cores per VM | Sum of cores
 |---|---|---|---|
 8 VMs | Standard_D2ds_v4 | 2 cores | 16 cores
 3 VMs |  Standard_D4ds_v4 | 4 cores | 12 cores
 2 VMs |  Standard_D16ds_v4 | 16 cores | 32 cores
+
 Remaining cores for future VMs on the same host: 4 cores
 
 ## How dedicated hosts differs from reserved instances
