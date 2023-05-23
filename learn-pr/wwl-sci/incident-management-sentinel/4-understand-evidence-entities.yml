@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is evidence in a Microsoft Sentinel incident?"
+  - content: "Which of the following items is evidence in a Microsoft Sentinel incident?"
     choices:
     - content: "IP address."
       isCorrect: false

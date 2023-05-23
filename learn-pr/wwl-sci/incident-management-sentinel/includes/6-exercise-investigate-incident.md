@@ -73,7 +73,7 @@ To test rule detection and incident creation, delete the VM you created during s
 
 Give the operation several minutes to complete before you proceed to the next step.
 
-## Investigate an incident
+## Investigate the incident
 
 In this step, you investigate the incident Microsoft Sentinel created when you deleted the VM. It might take up to 30 minutes for the incident to appear in Microsoft Sentinel.
 
