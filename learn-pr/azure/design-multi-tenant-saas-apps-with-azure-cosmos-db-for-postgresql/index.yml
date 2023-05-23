@@ -8,6 +8,8 @@ metadata:
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial
+  ms.service: cosmos-db
+  ms.subservice: postgresql
   ms.custom:
     - build-2023
     - build-2023-dataai

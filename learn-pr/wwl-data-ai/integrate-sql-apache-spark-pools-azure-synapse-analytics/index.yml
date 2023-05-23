@@ -7,6 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
+  ms.service: synapse-analytics
+  ms.subservice: spark
   ms.custom:
     - build-2023
     - build-2023-dataai

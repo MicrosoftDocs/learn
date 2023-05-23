@@ -10,6 +10,8 @@ metadata:
   ms.reviewer: maghan
   manager: jroth
   ms.topic: interactive-tutorial
+  ms.service: mysql
+  ms.subservice: flexible-server
   ms.custom:
     - build-2023
     - build-2023-dataai
