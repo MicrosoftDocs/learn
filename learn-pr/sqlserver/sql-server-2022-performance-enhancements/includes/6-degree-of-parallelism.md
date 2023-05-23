@@ -14,7 +14,7 @@ In SQL Server 2022, we introduced a new feature called DOP feedback. The optimiz
 
 DOP feedback never increases the DOP. At best, DOP feedback will revert to a stable previous DOP, and it works incrementally. Instead of trying to drastically lower the DOP all at once, DOP feedback tries a slightly lower DOP. If the DOP is good, it might try another slightly lower DOP. If the new, even lower DOP is good, DOP feedback might try to reduce again down to the DOP of two, although it will not make a parallel plan become serial. If the new, lower DOP isn't as good, we go back to the previous known good DOP and keep the query at that level.
 
-![Image showing that DOP feedback reduces the Degree of Parallelism in a stepwise fashion, incrementally decreasing the Degree of Parallelism and verifying at each step.](../media/degree-of-parallelism-feedback-step.png)
+:::image type="content" source="../media/degree-of-parallelism-feedback-step.png" alt-text="Diagram showing that DOP feedback reduces the Degree of Parallelism in a stepwise fashion, incrementally decreasing the Degree of Parallelism and verifying at each step.":::
 
 ## DOP feedback example
 
@@ -22,7 +22,7 @@ A query is compiled with a Degree of Parallelism of 8. If DOP feedback detects a
 
 ## DOP feedback architecture
 
-:::image type="content" source="../media/degree-of-parallelism-feedback-architecture.png" alt-text="An image of Degree of Parallelism feedback architecture.":::
+:::image type="content" source="../media/degree-of-parallelism-feedback-architecture.png" alt-text="A diagram of Degree of Parallelism feedback architecture.":::
 
 DOP feedback requires the Query Store to be enabled, database compatibility level 160, and a database setting called `DOP_FEEDBACK` to be enabled.  
 With these settings, the optimizer will work in coordination with Query Store background tasks to look for repetitive and long-running queries that could benefit from a lower DOP. A feedback cycle is used to validate an adjusted query duration (factoring out waits) won't regress with a lower DOP value, and that lower overall CPU is observed for the query. After a period of validation, a lower DOP is considered stabilized and will be persisted in the Query Store. The optimizer continues to validate lower DOP values in a stepwise down fashion to find the best parallel efficiency or a minimum DOP, which is 2. DOP feedback will never increase DOP and will honor the MAXDOP setting for a query depending on server, database, resource governor, or query hint that has been applied.
