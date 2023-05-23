@@ -1,4 +1,4 @@
-In this module, you've seen what the Azure Database for PostgreSQL offering looks like. You created an Azure Database for PostgreSQL server using the Azure portal and adjusted the firewall. Finally, you connected to the Azure Database for PostgreSQL server using psql in Azure Cloud Shell and queried the database.
+In this module, you've seen what the Azure Database for PostgreSQL offering looks like. You created an Azure Database for PostgreSQL server using the Azure portal and adjusted the firewall. You connected to the Azure Database for PostgreSQL server using psql in Azure Cloud Shell and queried the database.
 
 ## Clean up
 
