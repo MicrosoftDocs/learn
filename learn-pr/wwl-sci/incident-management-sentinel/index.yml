@@ -11,15 +11,14 @@ metadata:
 title: Security incident management in Microsoft Sentinel
 summary: Learn about security incidents, incident evidence and entities, incident management, and how to use Microsoft Sentinel to handle incidents.
 abstract: |
-  In this module, you will:
-  - Understand Microsoft Sentinel incident management
-  - Explore Microsoft Sentinel evidence and entity management
-  - Investigate and manage incident resolution
+  - Understand Microsoft Sentinel incident management.
+  - Explore Microsoft Sentinel evidence and entities.
+  - Use Microsoft Sentinel to investigate security incidents and manage incident resolution.
 prerequisites: |
-  - Familiarity with security operations in an organization
-  - Basic experience with Azure services
-  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting
-  - Basic knowledge of Microsoft Sentinel rules
+  - Familiarity with security operations in an organization.
+  - Basic experience with Azure services.
+  - Basic knowledge of operational concepts, such as monitoring, logging, and alerting.
+  - Basic knowledge of Microsoft Sentinel rules.
 iconUrl: /training/achievements/incident-management-sentinel.svg
 levels:
 - intermediate

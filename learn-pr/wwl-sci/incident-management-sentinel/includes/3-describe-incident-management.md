@@ -1,7 +1,7 @@
 
-Technology-related threats to an organization are called *incidents*. Incident management is the complete process of incident investigation, from incident creation to in-depth investigation and finally resolution.
+Technology-related threats to an organization are called *incidents*. Incident management is the complete process of incident investigation, from incident creation to in-depth investigation and resolution. Microsoft Sentinel can help your IT team organize, investigate, and track incidents from creation through resolution.
 
-You can use Microsoft Sentinel to review detailed incident information, assign an incident owner, set and maintain incident severity, and manage incident status. Microsoft Sentinel provides a complete incident management environment to handle these steps. Microsoft Sentinel can help your IT team organize, investigate, and track incidents from creation through resolution.
+You can use Microsoft Sentinel to review detailed incident information, assign an incident owner, set and maintain incident severity, and manage incident status. Microsoft Sentinel provides a complete incident management environment to handle these steps. 
 
 ## Key concepts
 
@@ -15,7 +15,7 @@ It's important to understand the following key Microsoft Sentinel incident manag
 
 ### Microsoft Sentinel Overview page
 
-Incident management in Microsoft Sentinel begins on the overview page, where you can review the current Microsoft Sentinel environment. The overview page contains a list of the most recent incidents, along with other important Microsoft Sentinel information. You can use this page to understand the general security situation before investigating incidents.
+Incident management in Microsoft Sentinel begins on the **Overview** page, where you can review the current Microsoft Sentinel environment. The **Overview** page shows a list of the most recent incidents, along with other important Microsoft Sentinel information. You can use this page to understand the general security situation before investigating incidents.
 
-:::image type="content" source="../media/3-sentinel-overview.png" alt-text="A screen capture of the Microsoft Sentinel overview page." lightbox="../media/3-sentinel-overview.png":::
+:::image type="content" source="../media/3-sentinel-overview.png" alt-text="A screen capture of the Microsoft Sentinel Overview page." lightbox="../media/3-sentinel-overview.png":::
 

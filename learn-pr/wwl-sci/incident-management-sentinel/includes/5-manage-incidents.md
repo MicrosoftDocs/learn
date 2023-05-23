@@ -16,7 +16,7 @@ From this page, you can take various steps to investigate incidents.
 
 ## Examine incident details
 
-Select any incident on the **Incidents** page to display more information about the incident. The **Incident** pane provides a description of the incident and lists the related evidence, entities, and tactics. The pane also contains links to associated workbooks and the analytics rule that generated the incident. This information can help you clarify the nature, context, and course of action for the incident.
+Select any incident on the **Incidents** page to display more information about the incident in the right pane. This pane provides a description of the incident and lists the related evidence, entities, and tactics. The pane also contains links to associated workbooks and the analytics rule that generated the incident. This information can help you clarify the nature, context, and course of action for the incident.
 
 :::image type="content" source="../media/5-incident-details.png" alt-text="Screenshot of the incident details pane." :::
 

@@ -54,5 +54,5 @@ Next, deploy the Azure Activity log connector for Microsoft Sentinel.
 1. Select the **Remediation** tab, and select the **Create a remediation task** checkbox. This action applies the subscription configuration to send the information to the Log Analytics workspace.
 1. Select the **Review + Create** button to review the configuration, and then select **Create**.
 
-The connector for Azure Activity connector might take 15-30 minutes to display a status of **Connected**. While the connector deploys, continue to the following units to learn about incidents in Microsoft Sentinel.
+The Azure Activity connector might take up to an hour to display a status of **Connected**. While the connector deploys, continue to the following units to learn about incidents in Microsoft Sentinel.
 

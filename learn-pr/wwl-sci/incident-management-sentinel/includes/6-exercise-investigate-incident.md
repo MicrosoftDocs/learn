@@ -64,7 +64,7 @@ Create an analytics rule that creates an incident when a VM is deleted in the Co
 
 ## Delete a VM
 
-Next, you delete the VM you created, to test rule detection and incident creation.
+To test rule detection and incident creation, delete the VM you created. 
 
 1. In the Azure portal, search for and select **Virtual machines**.
 2. On the **Virtual machines** page, select the checkbox next to named **simple-vm**, and then select **Delete** from the toolbar.
