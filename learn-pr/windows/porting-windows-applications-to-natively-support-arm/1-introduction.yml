@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to porting Windows applications to natively support Arm-based processors"
+  ms.date: 5/18/2023
+  author: codingbandit
+  ms.author: {{msUser}}
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.service: arm
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]

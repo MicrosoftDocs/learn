@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.learn-windows-on-arm
+metadata:
+  title: Porting Windows applications to natively support Arm-based processors  # Do not edit: title must be "Introduction to (product)"
+  description: "Learn about Windows on Arm, its benefits and capabilities and how to add a Arm configuraiton build to an existing application."               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 5/6/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: codingbandit        # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: {{msUser}}             # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.prod: windows
+  ms.service: arm
+title: Porting Windows applications to natively support Arm-based processors
+summary: "Describe Windows on Arm, its benefits and capabilities and how to add a Arm build configuration to an existing application."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe Windows on Arm.
+    - Understand why providing an Arm-native build for Windows applications is important.
+    - Configure an Arm64 build using Visual Studio.
+    - Troubleshoot common issues experienced with Arm builds.
+
+prerequisites: |
+  Before completing this module, you should have the following prerequisite tooling, knowledge and experience:
+    - Familiarity with Visual Studio and compiling source code at a beginner level.
+    - Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
+    - Have Visual Studio 2022 installed with the .NET desktop development workload.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  ['vs', 'windows-11', 'dotnet']
+subjects:
+  - custom-app-development
+units:
+- learn.learn-windows-on-arm.introduction
+- learn.learn-windows-on-arm.introduction-to-windows-applications-on-arm
+- learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
+- learn.learn-windows-on-arm.troubleshoot-common-arm-support-issues
+- learn.learn-windows-on-arm.knowledge-check
+- learn.learn-windows-on-arm.summary
+badge:
+  uid: learn.learn-windows-on-arm.badge
