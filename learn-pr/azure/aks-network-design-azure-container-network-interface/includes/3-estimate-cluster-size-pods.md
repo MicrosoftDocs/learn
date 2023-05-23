@@ -8,7 +8,7 @@ You need to fully understand the architecture of your application. From there, y
 
 It's often a good idea to set up a load testing environment. You can use a load tester to simulate typical or peak demand scenarios. The data from load tests help you understand how your application works in different situations. This information is useful when determining the number of pods needed to make sure your application remains responsive in all situations.
 
-## How many pods are we running?
+## How many pods should you run?
 
 Let's review the scenario outlined in the Introduction unit. We're going to deploy a new online web store that's made up of multiple services. You approach the developers working on the new store and ask for information about the services that are being built. The following table shows how many replicas of each service are needed.
 

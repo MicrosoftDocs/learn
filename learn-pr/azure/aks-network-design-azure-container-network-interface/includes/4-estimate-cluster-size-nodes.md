@@ -34,7 +34,7 @@ Your Kubernetes cluster is updated frequently. Updates keep the cluster safe fro
 > [!TIP]
 > The number of nodes updated at a time is configurable, with one being the default value. Upgrading more than one node at a time can decrease the overall time taken to upgrade a cluster, but you'll need to account for those extra nodes as part of your planning.
 
-## How many nodes are we running?
+## How many nodes should you run?
 
 Calculating the number of nodes to run, means we need to understand our application's processor and memory requirements. Ask the development teams to provide you with the results of their performance testing and details of how much processor and memory the services need. The results include the baseline requirements along with the maximum amounts that could be reached during busier periods.
 
