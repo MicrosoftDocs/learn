@@ -9,7 +9,7 @@ metadata:
   ms.author: bobward
   ms.reviewer: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
 title: Introduction to SQL Server 2022
 summary: |
   Learn about new major capabilities of SQL Server 2022 from cloud connected features to core engine capabilities.

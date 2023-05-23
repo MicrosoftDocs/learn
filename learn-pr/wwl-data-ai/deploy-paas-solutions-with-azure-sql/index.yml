@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
 title: Deploy PaaS solutions with Azure SQL
 summary: Provision and deploy Azure SQL Database and Azure SQL managed instance. Select the appropriate options when performing a migration to the SQL PaaS  platform.
 abstract: |

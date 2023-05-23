@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: t-sql
 title: Implement transactions with Transact-SQL
 summary: Learn how to construct transactions to control the behavior of multiple Transact-SQL statements. You will learn how to determine whether an error has occurred, and when to roll back statements.
 abstract: |

@@ -1,6 +1,3 @@
----
-title:Exercise - set up service connections
----
 In this exercise, you'll investigate Service Connections.
 
 > [!NOTE]

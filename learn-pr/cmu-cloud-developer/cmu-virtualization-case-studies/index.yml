@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Virtualization case study
 summary: Dive deeper into resource sharing and virtualization with case studies of how real cloud providers use virtualization.

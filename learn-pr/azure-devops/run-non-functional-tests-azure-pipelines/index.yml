@@ -9,7 +9,7 @@ metadata:
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
 title: Run nonfunctional tests in Azure Pipelines
 summary: Run automated load tests by using Apache JMeter, a form of nonfunctional testing, in Azure Pipelines.
 abstract: |

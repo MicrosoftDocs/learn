@@ -7,7 +7,7 @@ metadata:
   author: Nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Optimize compute costs on Azure Kubernetes Service (AKS)
 summary: Explore cost-optimization strategies to use on Azure for your cloud-native application-development process. Azure Kubernetes Service (AKS) offers features that you can use to manage compute costs on your AKS cluster. These features include node autoscaling, AKS spot node pools, and Azure Policy.
 abstract: |

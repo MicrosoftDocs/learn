@@ -68,7 +68,7 @@ The `ChatCompletion` endpoint enables including the system message by using the 
 ::: zone pivot="csharp"
 
 ```csharp
-var ChatCompletionOptions = new ChatCompletionOptions()
+var ChatCompletionsOptions = new ChatCompletionsOptions()
 {
     Messages =
     {
@@ -158,7 +158,7 @@ In practical terms, conversation history and few shot learning are sent to the m
 
 ::: zone pivot="csharp"
 ```csharp
-var ChatCompletionOptions = new ChatCompletionOptions()
+var ChatCompletionsOptions = new ChatCompletionsOptions()
 {
     Messages =
     {

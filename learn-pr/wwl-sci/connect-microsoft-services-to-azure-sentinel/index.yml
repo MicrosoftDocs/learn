@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Connect Microsoft services to Microsoft Sentinel
 summary: Learn how to connect Microsoft 365 and Azure service logs to Microsoft Sentinel.
 abstract: |

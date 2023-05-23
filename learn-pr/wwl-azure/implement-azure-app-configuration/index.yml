@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-app-configuration
 title: Implement Azure App Configuration
 summary: Learn how to use Azure App Configuration service to centrally manage and secure your configuration settings, and to manage app features.
 abstract: |

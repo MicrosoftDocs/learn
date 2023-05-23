@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Run component-based pipelines in Azure Machine Learning with CLI (v2)
 summary: Use components to easily share and reuse code and use component-based pipelines to create machine learning workflows.
 abstract: |
