@@ -31,11 +31,11 @@ You've received a new requirement that the Pizza List page should be visible onl
 
 1. In *Pages/Pizza.cshtml*, add checks to hide administrator UI elements from non-administrators:
 
-    ***New pizza* form**
+    Hide **New pizza** form
 
     [!code-cshtml[](../code/pages/pizza.cshtml?name=snippet_create&highlight=2-3,20)]
 
-    ***Delete pizza* button**
+    Hide **Delete pizza** button
 
     [!code-cshtml[](../code/pages/pizza.cshtml?name=snippet_delete&highlight=8-9,11,21-22,28)]
 
@@ -45,7 +45,7 @@ You've received a new requirement that the Pizza List page should be visible onl
 
 There's one more thing you should lock down. There's a page that should be accessible only to administrators, conveniently named *Pages/AdminsOnly.cshtml*. Let's create a policy to check the `IsAdmin=True` claim.
 
-1. In the *Program.cs*, make the following changes:
+1. In *Program.cs*, make the following changes:
     1. Incorporate the following highlighted code:
 
         [!code-csharp[](../code/program-after-customization.cs?range=14-23&highlight=5-8)]

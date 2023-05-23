@@ -3,7 +3,7 @@ uid: learn.secure-aspnet-core-identity.summary
 metadata:
   title: Summary
   description: Review what you learned about adding Identity to an existing ASP.NET Core Razor Pages project.
-  ms.date: 05/18/2023
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
   ms.topic: interactive-tutorial

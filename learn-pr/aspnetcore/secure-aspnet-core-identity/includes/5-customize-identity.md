@@ -242,6 +242,9 @@ That's everything! Let's test the changes to the registration form and confirmat
 
     Navigate to the URL with <kbd>Ctrl</kbd>+*click*. The confirmation screen displays.
 
+    > [!NOTE]
+    > If you're using GitHub Codespaces, you might need to add `-7192` to the first part of the forwarded URL. For example, `scaling-potato-5gr4j4-7192.preview.app.github.dev`.
+
 1. Select **Login** and sign in with the new user. The app's header now contains **Hello, [First name] [Last name]!**.
 1. In the **SQL Server** pane in VS Code, right-click on the **RazorPagesPizza** database and select **New query**. In the tab that appears, enter the following query and press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to run it.
 

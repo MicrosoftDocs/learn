@@ -2,11 +2,11 @@ In the previous unit, you added QR code functionality to enable multi-factor aut
 
 ## Authorization vs. authentication
 
-Everything you've learned about Identity so far has been regarding authentication. Authentication is a process in which a user is verified to be who they claim to be.
+Everything you've learned about Identity so far has been about *authentication*. Authentication is a process in which a user is verified to be who they claim to be.
 
 Consider a sign-in form. When you enter your username in the form, you're claiming to be **you**. The form *authenticates* you as the person you claim to be by verifying your password.
 
-Authorization refers to the process that determines what an authenticated user is allowed to do. For example, an administration screen might be limited to users with a claim of `IsAdmin=True`. Since claims are associated with an identity, there can be no authorization without authentication.
+*Authorization* refers to the process that determines what an authenticated user is allowed to do. For example, an administration screen might be limited to users with a claim of `IsAdmin=True`. Since claims are associated with an identity, there can be no authorization without authentication.
 
 ## Claims and policy-based authorization
 

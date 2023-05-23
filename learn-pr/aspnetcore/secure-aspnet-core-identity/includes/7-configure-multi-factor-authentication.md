@@ -1,8 +1,8 @@
-In the previous unit, you learned how ASP.NET Core Identity implements TOTP for MFA. In this unit, you customize the existing **Configure authenticator app** form to provide a QR code containing the registration key.
+In the previous unit, you learned how ASP.NET Core Identity implements time-based one-time password (TOTP) for multi-factor authentication (MFA). In this unit, you customize the existing **Configure authenticator app** form to provide a QR code that contains the registration key.
 
 ## Generating QR codes
 
-Multiple strategies exist for generating the QR code. An example in the documentation includes [using a client-side JavaScript library](/aspnet/core/security/authentication/identity-enable-qrcodes). In this unit, however, a third-party NuGet package is used to generate the QR code with C# on the server. The resulting QR code image is injected into an HTML placeholder element as a base-64 encoded string.
+Multiple strategies exist for generating the QR code. An example in the documentation uses a [client-side JavaScript library](/aspnet/core/security/authentication/identity-enable-qrcodes). In this unit, however, a third-party NuGet package is used to generate the QR code with C# on the server. The resulting QR code image is injected into an HTML placeholder element as a base-64 encoded string.
 
 ## Add a QR code service
 
@@ -93,7 +93,7 @@ You've made all the changes needed for a QR code on the **Configure authenticato
 1. Select the **Add authenticator app** button.
 1. Follow the on-screen instructions to register and verify your authenticator app for this user.
 
-    Using Microsoft Authenticator on Android as an example, follow these steps to add the account to the app:
+    For example, using Microsoft Authenticator on Android, follow these steps to add the account to the app:
 
     1. Open the Microsoft Authenticator app.
     1. Select the kebab menu (vertical ellipsis) in the upper right.
