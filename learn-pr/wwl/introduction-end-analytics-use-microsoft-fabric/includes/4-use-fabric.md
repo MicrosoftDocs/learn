@@ -11,7 +11,7 @@ Before you can explore the end-to-end capabilities of Microsoft Fabric, it must 
 Fabric can be enabled at the tenant level or capacity level, meaning that it can be enabled for the entire organization or for specific groups of users. If you don't have access to Fabric, contact your Power BI administrator to find out if it's available to you.
 
 > [!IMPORTANT]
-> You'll need a trial license to use Fabric. See [Get a trial license](https://docs.microsoft.com/power-platform/admin/signup-quickstart) for more information.
+> You'll need a trial license to use Fabric. See [Get a trial license](https://learn.microsoft.com/fabric/get-started/fabric-trial) for more information.
 
 ## Check your access
 
