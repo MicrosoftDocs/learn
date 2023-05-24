@@ -36,7 +36,7 @@ subjects:
 - cloud-computing
 modules:
 - learn.wwl.introduction-data-platform-modernization
-- learn-wwl.assess-sql-server-databases-for-migration-to-azure-sql
+- learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql
 - learn-sqlserver.test-optimize-sql-server-databases-using-dea
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
