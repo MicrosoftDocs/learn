@@ -22,7 +22,7 @@ Periodic updates initiated by Azure itself can also affect the VMs. These mainte
 
 Each Availability Zone has a distinct power source, network, and cooling. By designing your solutions to use replicated VMs in zones, you can protect your apps and data from the loss of a data center. If one zone is compromised, then replicated apps and data are instantly available in another zone.
 
-## Virtual Machines Scale Sets 
+## Virtual Machines Scale Sets
 
 [Azure virtual machine scale sets](/azure/virtual-machines/flexible-virtual-machine-scale-sets) let you create and manage a group of load balanced VMs. The number of VM instances can automatically increase or decrease in response to demand or a defined schedule. Scale sets provide high availability to your applications, and allow you to centrally manage, configure, and update many VMs. There's no cost for the scale set itself, you only pay for each VM instance that you create.
 
@@ -30,7 +30,7 @@ Virtual machines in a scale set can also be deployed into multiple availability 
 
 ## Load balancer
 
-Combine the [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) with an availability zone or availability set to get the most application resiliency. The Azure Load Balancer distributes traffic between multiple virtual machines. For our Standard tier virtual machines, the Azure Load Balancer is included. Not all virtual machine tiers include the Azure Load Balancer. For more information about load balancing your virtual machines, see **Load Balancing virtual machines** for [Linux](https://learn.microsoft.com/azure/virtual-machines/linux/tutorial-load-balancer) or [Windows](https://learn.microsoft.com/azure/virtual-machines/windows/tutorial-load-balancer).
+Combine the [Azure Load Balancer](/azure/load-balancer/load-balancer-overview) with an availability zone or availability set to get the most application resiliency. The Azure Load Balancer distributes traffic between multiple virtual machines. For our Standard tier virtual machines, the Azure Load Balancer is included. Not all virtual machine tiers include the Azure Load Balancer. For more information about load balancing your virtual machines, see **Load Balancing virtual machines** for [Linux](/azure/virtual-machines/linux/tutorial-load-balancer) or [Windows](/azure/virtual-machines/windows/tutorial-load-balancer).
 
 ## Azure Storage redundancy
 
