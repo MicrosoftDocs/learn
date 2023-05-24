@@ -3,7 +3,7 @@ When migrating databases to any of the Azure SQL offerings, it’s important to 
 
 Several migration tools provide the database assessment feature, which involves validating the code and schema of the source database to ensure compliance with the requirements of the target platform. This validation helps detect any inconsistencies, errors, or deprecated features that need to be addressed before the migration, ensuring a smooth and error-free transition.
 
-## Identifying compatibility issues
+## Identify compatibility issues
 
 Migration tools can identify breaking changes, behavior changes, and deprecated features. You can use these tools to check against a migration target without having to have that target installed anywhere. This allows you to quickly assess a database to see the impact of migrating without any initial setup or licensing cost.
 
@@ -22,13 +22,13 @@ Different migration tools perform comprehensive assessments on the source SQL Se
 
 Understanding the assessment rules used in the migration process is important because it allows you to identify and address potential issues or challenges before migrating your SQL Server database to Azure SQL Database. By familiarizing yourself with these rules, you gain valuable insights into the specific requirements for a successful migration.
 
-For example, one of the rules that you'll find in the assessment guidelines for migrating your SQL Server database to Azure SQL Database is the ***LinkedServer*** rule. This rule checks for the presence of linked servers, which are not supported in Azure SQL Database. By reviewing this rule, you can identify any linked server dependencies and plan for alternative approaches or modifications in your application to ensure a successful transition to Azure SQL Database.
+For example, one of the rules in the assessment guidelines for migrating your SQL Server database to Azure SQL Database is the ***LinkedServer*** rule. This rule checks for the presence of linked servers, which aren't supported in Azure SQL Database. By reviewing this rule, you can identify any linked server dependencies and plan for alternative approaches or modifications in your application to ensure a successful transition to Azure SQL Database.
 
-To learn more about the rules used to assess the feasibility of migrating your SQL Server database to Azure SQL Database or Azure SQL Managed Instance, please refer to the following links: [Assessment rules for SQL Server to Azure SQL Database migration](https://learn.microsoft.com/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-assessment-rules) and [Assessment rules for SQL Server to Azure SQL Managed Instance migration](https://learn.microsoft.com/azure/azure-sql/migration-guides/managed-instance/sql-server-to-sql-managed-instance-assessment-rules).
+To learn more about the rules used to assess the feasibility of migrating your SQL Server database to Azure SQL Database or Azure SQL Managed Instance, refer to the following links: [Assessment rules for SQL Server to Azure SQL Database migration](https://learn.microsoft.com/azure/azure-sql/migration-guides/database/sql-server-to-sql-database-assessment-rules) and [Assessment rules for SQL Server to Azure SQL Managed Instance migration](https://learn.microsoft.com/azure/azure-sql/migration-guides/managed-instance/sql-server-to-sql-managed-instance-assessment-rules).
 
 ## Other supported scenarios
 
-Apart from migrating a database, there are several other scenarios where using an assessment tool may be worthwhile. For example:
+There are several other scenarios where using an assessment tool may be worthwhile. For example:
 
 - **Upgrading to a new version:** If you're upgrading your databases to a newer version of SQL Server, you may want to use a migration tool to assess compatibility and identify any deprecated features or breaking changes that could impact your workloads.
 

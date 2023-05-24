@@ -11,7 +11,7 @@ The organization has a large number of different databases that underpin busines
 
 Your main responsibility is to identify what is needed and ultimately migrate several SQL Server databases from on-premises servers to Azure with as minimum disruption as possible.
 
-In this module, you'll learn about common compatibility issues and blockers, as well as the various tools and options available for assessing and migrating SQL Server databases to Azure SQL.
+In this module, you learn about common compatibility issues and blockers, as well as the various tools and options available for assessing and migrating SQL Server databases to Azure SQL.
 
 ## Learning objectives
 

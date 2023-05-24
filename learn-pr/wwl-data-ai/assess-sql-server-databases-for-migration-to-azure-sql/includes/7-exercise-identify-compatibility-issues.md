@@ -1,7 +1,7 @@
 
-In our scenario, you've been asked to assess the readiness of a legacy SQL Server database for migration to Azure SQL Database. Your task is to perform an assessment of their legacy database and identify any potential compatibility issues or changes that need to be made before migration. You should also review the schema of the database and identify any features or configurations that are not supported in Azure SQL Database.
+In our scenario, you've been asked to assess the readiness of a legacy SQL Server database for migration to Azure SQL Database. Your task is to perform an assessment of their legacy database and identify any potential compatibility issues or changes that need to be made before migration. You should also review the schema of the database and identify any features or configurations that aren't supported in Azure SQL Database.
 
-You already have Azure Data Studio installed in your machine with access to the database, and installing additional tools requires approval from the IT department. You need to use the most appropriate tool for your specific requirement.
+You already have Azure Data Studio installed in your machine with access to the database, and installing other tools requires approval from the IT department. You need to use the most appropriate tool for your specific requirement.
 
 > [!NOTE]
 > To complete this exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
@@ -28,9 +28,9 @@ ALTER TABLE [Person].[Person] ADD [Next] VARCHAR(5);
 In this scenario, you'll run the Azure migration extension for Azure Data Studio and run the compatibility assessments level, then view the results for an Azure SQL Database target.
 
 1. Launch Azure Data Studio, select **New Connection** to establish a connection to the SQL Server instance with the **AdventureWorks** database.
-1. After the connection succeed, right click on the instance name, and select **Manage**.
+1. After the connection succeeds, right click on the instance name, and select **Manage**.
 1. Once the dashboard shows, select **Azure SQL Migration** on the General section.
-1. Select **Migrate to Azure SQL**. The extension wizard will show.
+1. Select **Migrate to Azure SQL**. The extension wizard page will show.
 1. On **Step 1: Databases for assessment**, select the **AdventureWorks** database, then select **Next**.
 1. On **Step 2: Assessment results and recommendations**, wait for the assessment to complete.
 

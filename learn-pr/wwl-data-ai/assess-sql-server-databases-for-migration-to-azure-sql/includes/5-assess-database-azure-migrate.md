@@ -1,5 +1,5 @@
 
-The Azure portal offers tools to assess your current on-premises workloads, providing insights for migration planning. With Azure Migrate, you can perform an agentless environment discovery or use agents to conduct a dependency analysis. This will help identify the dependencies between different components in your environment. 
+The Azure portal offers tools to assess your current on-premises workloads, providing insights for migration planning. With Azure Migrate, you can perform an agentless environment discovery or use agents to conduct a dependency analysis. This helps identify the dependencies between different components in your environment. 
 
 ## What is Azure Migrate?
 
@@ -9,7 +9,7 @@ Additionally, Azure Migrate supports discovery and assessment of different SQL S
 
 Various tools are available within Azure Migrate, such as **Azure Migrate: Discovery and Assessment and Migration and Modernization**, which can be integrated with other Azure services, independent software vendor (ISV) offerings, and support the assessment, migration, and modernization of servers, databases, web apps, and virtual desktops. 
 
-For example, if you are assessing the entire SQL Server data estate at scale on VMware, you can use Azure Migrate to get Azure SQL deployment recommendations, target sizing, and monthly estimates.
+For example, if you're assessing the entire SQL Server data estate at scale on VMware, you can use Azure Migrate to get Azure SQL deployment recommendations, target sizing, and monthly estimates.
 
 :::image type="content" source="../media/2-azure-migrate.png" alt-text="Screenshot of the Azure portal's Azure Migrate Overview Get Started screen." lightbox="../media/2-azure-migrate.png":::
 
@@ -25,7 +25,7 @@ There are three assessment types that you can create using the **Azure Migrate: 
 
 - **SQL Server discovery and assessment** 
 
-    It supports SQL Server deployments running in VMware, Microsoft Hyper-V, and physical environments as well as IaaS services of other public clouds. It provides an agentless discovery, cost estimation and optimal Azure SQL configuration. It does require an Azure Migrate appliance that you deploy on-premises. This tool is suitable for workloads where you need to assess the readiness of both virtual machines and physical servers, not limited to just SQL Servers.
+    It supports SQL Server deployments running in VMware, Microsoft Hyper-V, and physical environments, in addition to IaaS services of other public clouds. It provides an agentless discovery, cost estimation and optimal Azure SQL configuration. It does require an Azure Migrate appliance that you deploy on-premises. This tool is suitable for workloads where you need to assess the readiness of both virtual machines and physical servers, not limited to just SQL Servers.
          
     :::image type="content" source="../media/5-azure-migrate-2.png" alt-text="Screenshot of the Azure Migrate: Discovery and assessment tool in Azure Migrate dashboard." lightbox="../media/2-azure-migrate.png":::
 
@@ -41,13 +41,13 @@ There are three assessment types that you can create using the **Azure Migrate: 
 
 ### **Data Migration Assistant (DMA)** 
 
-We'll learn more about DMA in the next unit. However, it is important to note that DMA is used when running a **Database (only)** assessment in Azure Migrate. For migrations to Azure SQL, DMA also checks feature parity to uncover partially or unsupported features in Azure. To take full advantage of the features offered by Azure Migrate, you'll have to install and create an assessment project using DMA, and then upload the assessment report to Azure Migrate.
+We'll learn more about DMA in the next unit. However, it's important to note that DMA is used when running a **Database (only)** assessment in Azure Migrate. For migrations to Azure SQL, DMA also checks feature parity to uncover partially or unsupported features in Azure. To take full advantage of the features offered by Azure Migrate, you have to install and create an assessment project using DMA, and then upload the assessment report to Azure Migrate.
 
 :::image type="content" source="../media/5-azure-migrate-dma.png" alt-text="Screenshot showing how to upload a Data Migration Assistant assessment to Azure Migrate." lightbox="../media/2-azure-migrate.png":::
 
 ## Exercise: Assess a database and sync results in Azure Migrate
 
-To run this exercise, ensure you follow the steps below before proceeding:
+To run this exercise, ensure you follow these steps before proceeding:
 
 > [!NOTE]
 > To complete this exercise, you need access to an Azure subscription to create Azure resources. If you don't have an Azure subscription, create a [free account](https://azure.microsoft.com/free/?azure-portal=true) before you begin.
@@ -83,7 +83,7 @@ To run this exercise, ensure you follow the steps below before proceeding:
     - **Project name -** <*provide a name of your preference*>
     - **Assessment type -** Database Engine
     - **Source server type -** SQL Server 
-    - **Target server type -** Azure SQL Database. This is the target server you'll be assessing for compatibility.
+    - **Target server type -** Azure SQL Database. This is the target server you'll assess for compatibility.
 1. Select **Create**
 1. On the assessment page, select **Check feature parity**. Select **Next**.
 1. On the **Connect to a server** sidebar, provide the connection details about your source server. Select **Connect**.
@@ -101,7 +101,7 @@ To run this exercise, ensure you follow the steps below before proceeding:
 
 ### Task 4: Review results in Azure Migrate
 
-1. On the **Databases (only)** section in Azure Migrate, select **Refresh**. This will make sure the dashboard is updated accordingly.
+1. On the **Databases (only)** section in Azure Migrate, select **Refresh**. This makes sure the dashboard is updated accordingly.
 
     :::image type="content" border="false" source="../media/5-azure-migrate-assess.png" alt-text="Screenshot of the Azure Migrate: Database Assessment results after the assessment report was uploaded."::: 
 
