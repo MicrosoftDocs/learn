@@ -2,7 +2,7 @@ As you saw in the previous exercise, setting up an Azure Database for PostgreSQL
 
 Another key feature of Azure Database for PostgreSQL is flexibility. It supports many different libraries and drivers that developers can use to develop applications. Nearly all popular programming languages have libraries to connect and develop PostgreSQL databases.
 
-Most language client libraries used to connect to PostgreSQL server are external projects and are distributed independently. The libraries listed in the links in Unit 9 - Summary are supported on the Windows, Linux, and Mac platforms.
+Most language client libraries used to connect to PostgreSQL server are external projects and are distributed independently. The libraries listed in the links in the summary in unit 9 are supported on the Windows, Linux, and Mac platforms.
 
 ## Advantages of developing applications with PostgreSQL
 
@@ -16,8 +16,8 @@ In this scenario, you're rapidly developing a contactless payment app. Using Azu
 :::column-end:::
 :::column span="2":::
 
-#### "If you're not tied to any legacy system and have the freedom to choose a database back-end, we recommend PostgreSQL, which achieves a fine balance between cost, features, speed and stability."
+### "If you're not tied to any legacy system and have the freedom to choose a database back-end, we recommend PostgreSQL, which achieves a fine balance between cost, features, speed and stability."
 
-###### \- The Definitive Guide to Django
+\- *The Definitive Guide to Django*
 :::column-end:::
 :::row-end:::

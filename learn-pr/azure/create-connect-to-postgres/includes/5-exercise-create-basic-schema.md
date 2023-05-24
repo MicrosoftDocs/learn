@@ -1,4 +1,4 @@
-Set up the database and connect to it from an app. In this exercise, you:
+Set up the database and connect to it from an app. In this exercise:
 
 * Configure the firewall so you can connect to the database service
 * Connect to the database service using Azure Cloud Shell
@@ -8,7 +8,7 @@ Set up the database and connect to it from an app. In this exercise, you:
 
 ## Configure a server-level firewall rule
 
-Azure has an automatic firewall for the server. It prevents all external parties from connecting to the server. In the portal, create a firewall rule to allow us to connect externally.
+Azure has an automatic firewall for the server. It prevents all external parties from connecting to the server. In the Azure portal, create a firewall rule to allow us to connect externally.
 
 1. Go to the Azure portal.
 
@@ -33,7 +33,7 @@ Use the psql command-line utility to connect to the Azure Database for PostgreSQ
 
 To run the code in this article in Azure Cloud Shell:
 
-1. Either in the sandbox or the Azure portal, start Cloud Shell.
+1. Either in the sandbox or the Azure portal, start Cloud Shell. For this example, be sure that **Bash** is selected as the shell type, not PowerShell.
 
 1. Select **Copy** on the following code block to copy the code.
 
@@ -43,13 +43,13 @@ To run the code in this article in Azure Cloud Shell:
 
 1. Paste the code into the Cloud Shell session by selecting **Ctrl** + **Shift** + **V** on Windows and Linux, or by selecting **Cmd** + **Shift** + **V** on macOS.
 
-1. Replace `{server-name}` with the server name you chose in Unit 3.
+1. Replace `{server-name}` with the server name you chose in unit 3.
 
 1. Press **Enter** to run the code and set your server name.
 
 ### Connect to the server
 
-To connect to the server, use the server name in a connection command, and the password from Exercise 3.
+To connect to the server, use the server name in a connection command, and the password from unit 3 of this module.
 
 1. Copy the connection command for the Azure Database for PostgreSQL instance.
 

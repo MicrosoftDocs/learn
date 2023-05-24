@@ -178,7 +178,10 @@ Now add to the application the code to retrieve user data from the database.
 1. Return to the code editor.
 
     * On line 14, replace the value of the string `connectionString` with the value from the clipboard.
-        * Make sure you leave the quotation marks around your connection string.
+
+    > [!NOTE]
+    > Make sure you leave the quotation marks around your connection string.
+
     * In the connection string, replace the text:
         * `{your_password}` with the password for the database
         * `{your_database}` with `paymentapp`

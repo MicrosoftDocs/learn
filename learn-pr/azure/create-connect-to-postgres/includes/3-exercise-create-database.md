@@ -51,10 +51,8 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
    - Select **OK**.
 
-   - Select **Review + create**.
-
     :::image type="content" source="../media/3e-form.png" alt-text="Screenshot shows the Configure page for the server with the Backup Retention Period slider set to 35 days.":::
 
-1. Select **Create**.
+1. Select **Review + create**, then select **Create**.
 
 Congratulations! Your database is being deployed to Azure.

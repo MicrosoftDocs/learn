@@ -6,14 +6,14 @@ Azure Database for PostgreSQL runs the open-source, community edition of Postgre
 
 Azure Database for PostgreSQL is a fully managed Platform as a Service (PaaS). The main benefit of this configuration is that Azure manages maintenance and security obligations.
 
-Alternatively, you can also run PostgreSQL Server workloads as Infrastructure as a Service (IaaS) on either Azure or on-premises servers. These options offer full control over the database engine. However, this control comes at the cost of added responsibility for many database administration (DBA) tasks, including:
+Alternatively, you can also run PostgreSQL Server workloads as Infrastructure as a Service (IaaS) on either Azure or on-premises servers. These options offer full control over the database engine. However, this control comes at the cost of added responsibility for many database administration tasks, including:
 
 * Database management
 * Applying patches
 * Making backups
 * Managing virtual machines
 
-With PaaS, you can pass these responsibilities to Azure. Additionally, setting up your database to ensure high availability to another datacenter requires very little hands-on configuration or administration.
+With PaaS, you can pass these responsibilities to Azure. Additionally, setting up your database to ensure high availability requires very little hands-on configuration or administration.
 
 #### More control with a Flexible Server
 
@@ -23,7 +23,7 @@ Some situations require more granular server control. In these cases, Azure Data
 
 This module uses an example scenario to explain key PostgreSQL concepts and processes.
 
-In this scenario, you work for Woodgrove Bank. You've been asked to develop a new contactless payment app that works from six feet away. You've already created a proof-of-concept app that uses a relational database, hosted on an on-premises server. Development continues, with plans to trial the app in a small city.
+In this scenario, you work for Woodgrove Bank. You've been asked to develop a new contactless payment app that works from six feet away. You've already created a proof-of-concept app that uses a relational database, hosted on an on-premises server. Development continues, with plans for a trial of the app in a small city.
 
 You realize the trial can bring many new users and high volumes of new data. The on-premises server could become overloaded, causing slow transaction times or timeout errors. You understand that the database solution must be scaled, both for capacity and performance. For maximum utility and data redundancy, it's also better to host data in more than one location. This approach requires a move away from the current on-premises database server without compromising security.
 
