@@ -35,10 +35,10 @@ quiz:
       explanation: "Correct. Only one database can be placed into a single availability group for one Azure SQL Managed Instance link."
     - content: "Multiple databases"
       isCorrect: false
-      explanation: "Incorrect. Multiple databases aren't supported. However, it’s possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
+      explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
     - content: "Multiple databases, as long as the database size is less than a certain limit"
       isCorrect: false
-      explanation: "Incorrect. Multiple databases aren't supported. However, it’s possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
+      explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
   - content: "What is one way in which Microsoft Purview policies can provide access to SQL Server?"
     choices:
     - content: "Creating a login and mapping it to a Purview policy"
