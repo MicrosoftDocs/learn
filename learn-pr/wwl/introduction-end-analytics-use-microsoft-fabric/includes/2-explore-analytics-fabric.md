@@ -18,13 +18,13 @@ OneLake is built on top of *Azure Data Lake Storage* (ADLS) and supports data in
 
 What this means is that all of the compute engines in Fabric automatically store their data in OneLake in the open-source Delta Lake format. Data that is stored in OneLake is then directly accessible by all of the compute engines without needing to be moved or copied.
 
-One important feature of OneLake is the ability to create shortcuts, which are embedded references within OneLake that point to other files or storage locations. Shortcuts allow you to quickly source your existing cloud data without having to copy it, and enables Fabric workloads to derive data from the same source and always be in sync.
+One important feature of OneLake is the ability to create shortcuts, which are embedded references within OneLake that point to other files or storage locations. Shortcuts allow you to quickly source your existing cloud data without having to copy it, and enables Fabric experiences to derive data from the same source and always be in sync.
 
 ![Screenshot of the OneLake architecture displaying the Delta-Parquet storage format as the foundation for serverless compute.](../media/onelake-storage.png)
 
-## Explore Fabric's workloads
+## Explore Fabric's experiences
 
-Fabric offers a set of analytics workloads that are designed to accomplish specific tasks and work together seamlessly. Fabric's workloads include the following experiences:
+Fabric offers a set of analytics experiences that are designed to accomplish specific tasks and work together seamlessly. Fabric's experiences include:
 
 - **Synapse Data Engineering**: data engineering with a Spark platform for data transformation at scale.
 - **Synapse Data Warehouse**: data warehousing with industry-leading SQL performance and scale to support data use.
@@ -33,7 +33,7 @@ Fabric offers a set of analytics workloads that are designed to accomplish speci
 - **Data Factory**: data integration combining Power Query with the scale of Azure Data Factory to move and transform data.
 - **Power BI**: business intelligence for translating data to decisions.
 
-Fabric provides a comprehensive data analytics solution by unifying all these workloads on a single platform.
+Fabric provides a comprehensive data analytics solution by unifying all these experiences on a single platform.
 
 ## Explore security and governance
 
@@ -42,7 +42,6 @@ Fabric's OneLake is centrally governed and open for collaboration. Data is secur
 In the admin center you can manage groups and permissions,  configure data sources and gateways, and monitor usage and performance. You can also access the Fabric admin APIs and SDKs in the admin center, which you'd use to automate common tasks and integrate Fabric with other systems.
 
 > [!NOTE]
-> For more information about Fabric administration, see [What is Microsoft Fabric admin](https://learn.microsoft.com/fabric/admin/admin-overview).
-<!-- double check this link -->
+> For more information about Fabric administration, see [What is Microsoft Fabric admin](https://learn.microsoft.com/fabric/admin/microsoft-fabric-admin).
 
 Your Fabric tenant is natively integrated with Microsoft Purview Information Protection. Fabric uses Microsoft Purview Information Protection’s sensitivity labels to help your organization classify and protect sensitive data, from ingestion to export.
