@@ -4,6 +4,9 @@ title: Exercise - Read and query items
 metadata:
   unitType: exercise
   title: Exercise - Read and query items
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   description: |
     Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to point read items and perform straightforward queries.
   sandbox: true

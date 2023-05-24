@@ -1,5 +1,6 @@
 
 
+
 It is possible to establish direct connectivity to an Azure virtual network from a physical computer or virtual machine not hosted in Azure by using one of the following methods:
 
 - **A point-to-site VPN**, which connects individual computers to an Azure virtual network via a Secure Socket Tunneling Protocol (SSTP) tunnel or OpenVPN over the internet.
