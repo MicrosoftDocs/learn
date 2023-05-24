@@ -1,4 +1,5 @@
 
+
 You might need to account for additional network requirements as part of a deployment of Azure Virtual Machines (VMs) or large instances of SAP HANA on Azure.
 
 ## Azure Virtual Machines

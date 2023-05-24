@@ -4,12 +4,11 @@ title: Explore Microsoft Defender for Cloud recommendations
 metadata:
   title: Explore Microsoft Defender for Cloud recommendations
   description: "Explore Microsoft Defender for Cloud recommendations"
-  ms.date: 05/04/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
   [!include[](includes/12-security-center-recommendations.md)]

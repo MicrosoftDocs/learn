@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.azure-arc-enabled
+title: Simplify management with Azure Arc-enabled SQL Server
+metadata:
+  title: Simplify management with Azure Arc-enabled SQL Server
+  description: "Simplify management with Azure Arc-enabled SQL Server"
+  ms.date: 04/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-azure-arc-enabled.md)]
