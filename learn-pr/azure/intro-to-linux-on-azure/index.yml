@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.introduction-to-linux-on-azure
+metadata:
+  ms.author: chasecrum
+  author: chasecrum
+  ms.date: 05/01/2023
+  title: Introduction to Linux on Azure
+  description: This module introduces the services and platforms that Azure provides for Linux environments.
+  ms.topic: interactive-tutorial
+title: Introduction to Linux on Azure
+summary: This module helps you understand the types of services and platforms Azure provides for Linux environments. Perhaps you're exploring the migration of Linux-based workloads to the cloud or you're looking at rearchitecting Linux-based applications to increase agility and reduce time to market. After reviewing this material, you should be able to choose which types of services you'll need to start planning your Linux environment.
+abstract: |
+  By the end of this module, you'll be able to 
+  - Identify the Azure infrastructure as a service (IaaS) and platform as a service (PaaS) resources and services available for Linux deployments.  
+  - Determine which virtual machine images will be most suitable for your IaaS deployment.
+  - Identify Microsoft-supported Linux distributions.
+  - Identify additional Azure tools and services you can use.
+prerequisites: |
+  - Ability to configure and administer a Linux server
+  - Access to a Microsoft Azure account
+  - Ability to navigate the Azure portal
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- administrator
+- solution-architect
+products:
+- azure
+units:
+- learn.introduction-to-linux-on-azure.introduction
+- learn.introduction-to-linux-on-azure.what-is-linux-on-azure
+- learn.introduction-to-linux-on-azure.identify-azure-iaas-options-for-linux-deployments
+- learn.introduction-to-linux-on-azure.identify-azure-paas-options-for-linux-deployments
+- learn.introduction-to-linux-on-azure.identify-database-as-a-service-options-for-linux-deployments
+- learn.introduction-to-linux-on-azure.identify-other-azure-tools-and-services-for-linux-deployments
+- learn.introduction-to-linux-on-azure.summary
+badge:
+  uid: learn.introduction-to-linux-on-azure-badge

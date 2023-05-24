@@ -1,12 +1,12 @@
 In this exercise, you'll create an application that uses single-shot recognition to transcribe a sample audio file that you'll download.
 
-## Create your speech-to-text application
+## Create your speech to text application
 
 1. In the Cloud Shell on the right, create a directory for your application, then change to your new directory.
 
     ```bash
-    mkdir speech-to-text
-    cd speech-to-text
+    mkdir speech to text
+    cd speech to text
     ```
 
 1. Create a new .NET Core application.
@@ -35,7 +35,7 @@ curl -L https://aka.ms/ShakespeareWAV -o Shakespeare.wav
 
 You'll use this WAVE file for the application in this exercise, and the application in the next exercise.
 
-## Add the code for your text-to-speech application
+## Add the code for your text to speech application
 
 1. In the Cloud Shell on the right, open the *Program.cs* file.
 
@@ -155,7 +155,7 @@ You'll use this WAVE file for the application in this exercise, and the applicat
     -rw-r--r-- 1 user   user     1476 Oct  1 11:11 Program.cs
     -rw-r--r-- 1 user   user       98 Oct  1 11:11 Shakespeare.txt
     -rwxr-xr-x 1 user   user   978242 Oct  1 11:11 Shakespeare.wav
-    -rw-r--r-- 1 user   user      348 Oct  1 11:11 speech-to-text.csproj
+    -rw-r--r-- 1 user   user      348 Oct  1 11:11 speech to text.csproj
     ```
 
     You'll notice that the size of the text file is small; in this example, it's only 98 bytes.
@@ -172,6 +172,6 @@ You'll use this WAVE file for the application in this exercise, and the applicat
     The following quotes are from Act 2, scene seven of William Shakespeare's play as you like it.
     ```
 
-    If you listened to the sample WAVE file, you would notice that this text is only the first few seconds of the audio. Because we used the `RecognizeOnceAsync()` method of the `SpeechRecognizer`, the speech-to-text recognition stopped when the speaker paused.
+    If you listened to the sample WAVE file, you would notice that this text is only the first few seconds of the audio. Because we used the `RecognizeOnceAsync()` method of the `SpeechRecognizer`, the speech to text recognition stopped when the speaker paused.
 
-In the next exercise, you'll learn how to continue the speech-to-text recognition for the entire audio file.
+In the next exercise, you'll learn how to continue the speech to text recognition for the entire audio file.

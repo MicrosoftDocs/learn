@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-hub
   ms.custom: team=nextgen
+  ms.service: iot
 title: "Introduction to Azure IoT"
 summary: "Explain the significance of Azure IoT and the problems it solves. Describe Azure IoT components and explain how you combine them to solve IoT solutions, which create value for enterprises."
 

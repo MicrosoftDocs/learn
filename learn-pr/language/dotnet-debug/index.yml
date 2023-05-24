@@ -7,7 +7,7 @@ metadata:
   author: jongalloway
   ms.author: jogallow
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
 title: Interactively debug .NET apps with the Visual Studio Code debugger
 summary: Learn how to efficiently debug your .NET app by using Visual Studio Code to fix your bugs quickly.
 abstract: |

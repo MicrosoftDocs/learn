@@ -3,10 +3,11 @@ uid: learn.configure-admin-consent-workflow
 metadata:
   moduleType: standard
   title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
+  ms.service: active-directory
 
   description: Configure the admin consent workflow to enable users to request admin consent right from the screen. Designated reviewers view and respond to the requests through the Azure portal.
 
-  ms.date: 01/17/2023
+  ms.date: 05/04/2023
   author: omondiatieno
   ms.author: jomondi
   ms.topic: interactive-tutorial

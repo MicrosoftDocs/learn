@@ -1,10 +1,11 @@
 
+
 Windows 365 is a cutting-edge cloud-based service that simplifies how you create and manage virtual machines. It automatically generates a new Windows virtual machine called Cloud PCs for your end users. With Windows 365, each Cloud PC is assigned to an individual user, providing them with a dedicated Windows device. By using Windows 365, you can experience the benefits of Microsoft 365, which include increased productivity, enhanced security, and seamless collaboration. With these features, Windows 365 offers a flexible and scalable solution to support your organization's growth and changing needs.
 
 Windows 365 is available in two editions:
 
  -  **Windows 365 Business:** Windows 365 Business is made specifically for use in smaller companies (up to 300 seats) who want ready-to-use Cloud PCs with simple management options. There are no licensing prerequisites to set up Windows 365 Business. There are no dependencies on Azure or Active Directory. Purchases are made through the Microsoft 365 admin center or the Windows 365 product site. For more information, see [Getting started with Windows 365 Business and Cloud PCs](/windows-365/business/get-started-windows-365-business).
- -  **Windows 365 Enterprise:** Windows 365 Enterprise is for larger companies who want unlimited seats for creating Cloud PCs. It includes options to create custom Cloud PCs based on your created device images, more management options, and full integration with Microsoft Intune. It leverages Azure AD and AD DS domains. For more information, see [What is Windows 365 Enterprise?](/windows-365/enterprise/overview).
+ -  **Windows 365 Enterprise:** Windows 365 Enterprise is designed for larger organizations seeking unlimited seats to create Cloud PCs. It offers the flexibility to build custom Cloud PCs using your own device images, provides additional management options, and seamlessly integrates with Microsoft Intune. Windows 365 Enterprise utilizes Azure AD and AD DS domains to enhance its functionality. For more information, see [What is Windows 365 Enterprise?](/windows-365/enterprise/overview).
 
 ## Compare Windows 365 Business and Enterprise
 
@@ -43,7 +44,7 @@ Windows 365 is available in two editions:
 | Capability | Windows 365 Business | Windows 365 Enterprise |
 | --- | --- | --- |
 | Management | Users can restart, reset, rename, and troubleshoot their Cloud PCs on the Windows 365 homepage. | Users can restart, rename, and troubleshoot their Cloud PCs on the Windows 365 homepage. |
-| Role | By default, each user is a Standard User on their Cloud PC. To grant Local Administrator permissions to a specific user on a Cloud PC, see [Remote management actions](/windows-365/business/remotely-manage-business-cloud-pcs#remote-management-actions). To grant Local Administrator permissions for Cloud PCs that you create in the future, see [Change organizational default settings](/windows-365/business/change-organization-default-settings). | By default, each user is assigned a standard user role on their Cloud PC. This role can be changed by the admin in the Microsoft Intune admin center. |
+| Role | By default, each user is a Standard User on their Cloud PC. To grant Local Administrator permissions to a specific user on a Cloud PC, see [Remote management actions](/windows-365/business/remotely-manage-business-cloud-pcs#remote-management-actions). To grant Local Administrator permissions for Cloud PCs that you create in the future, see [Change organizational default settings](/windows-365/business/change-organization-default-settings). | By default, each user is assigned a standard user role on their Cloud PC. The administrator has the capability to modify this role within the Microsoft Intune admin center. |
 | Access | Users can access their Cloud PC at windows365.microsoft.com or by using Microsoft Remote Desktop or the Windows 365 app. | Users can access their Cloud PC at windows365.microsoft.com or by using Microsoft Remote Desktop or the Windows 365 app. |
 | Platform | Any platform that supports Microsoft Remote Desktop clients or the Windows 365 app. | Any platform that supports Microsoft Remote Desktop clients or the Windows 365 app. |
 
@@ -53,7 +54,7 @@ Windows 365 is available in two editions:
 | Conditional Access | Conditional Access policies can be deployed only by using Azure AD with an Azure AD P1 license. | Conditional Access policies can be deployed by using the Microsoft Intune admin center or Azure AD. |
 | Per-user multi-factor authentication (MFA) | Only MFA using Azure AD Conditional Access is supported. Legacy per-user MFA isn't supported. | Legacy per-user MFA is supported for user connections to Hybrid Azure AD joined Cloud PCs. It's not supported for user connections to Azure AD joined Cloud PCs. |
 | Security baselines | Not supported. | Dedicated Security Baselines can be edited and deployed by using Microsoft Endpoint Manager. |
-| Microsoft Defender for Endpoint | Supported if the customer separately has the requisite E5 license. | Integration with Defender for Endpoint. If the customer has an E5 license, all Cloud PCs will respond to Defender for Endpoint policies and show up in MDE dashboards. |
+| Microsoft Defender for Endpoint | Supported if the customer separately has the requisite E5 license. | Integration with Defender for Endpoint. If the customer has an E5 license, all Cloud PCs respond to Defender for Endpoint policies and show up in MDE dashboards. |
 
 ### Access cloud PCs
 

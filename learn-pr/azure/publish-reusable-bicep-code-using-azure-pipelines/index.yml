@@ -8,8 +8,8 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: engagement-fy23
+  ms.service: azure-devops-pipelines
 title: Publish reusable Bicep code by using Azure Pipelines
 summary: |
   Publish Azure template specs and Bicep modules by using a deployment pipeline. Automatically validate and add versioning to your reusable Bicep code.

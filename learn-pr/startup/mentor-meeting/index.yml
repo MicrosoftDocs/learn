@@ -7,7 +7,6 @@ metadata:
   author: turoczy
   ms.author: v-rturoczy
   ms.topic: interactive-tutorial
-  ms.prod: learning-consumer
 title: Make the most of a mentor meeting
 summary: >
   As a startup founder with limited time, engaging with mentors is one of the most expedient ways to gain critical insights and avoid common errors. Effectively managing your meetings with mentors can be the most effective way of starting that relationship on a positive note.
@@ -19,7 +18,7 @@ abstract: |
 prerequisites: | 
     - Familiarity with meeting etiquette 
     - Basic familiarity with mentorship in a business context
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/make-the-most-of-a-mentor-meeting.svg
 ratingEnabled: false
 levels:
 - beginner

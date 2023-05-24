@@ -8,7 +8,8 @@ metadata:
   ms.author: alfredodeza
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-language # Edit as appropriate for your portfolio area
+  ms.service: azure-python
+  ms.devlang: python
 title: Get started with testing in Python
 summary: "Start testing with Python using the unittest module. Get exposed to other testing concepts like functional and integration testing."
 abstract: |

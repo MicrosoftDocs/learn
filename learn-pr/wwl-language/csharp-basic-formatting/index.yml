@@ -3,7 +3,7 @@ uid: learn.languages.csharp-basic-formatting
 metadata:
   title: Perform basic string formatting in C#
   description: "Perform basic string formatting in C#"
-  ms.date: 04/13/2023
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -24,6 +24,9 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
 subjects:

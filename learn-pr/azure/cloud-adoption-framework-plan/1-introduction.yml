@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to adoption planning
   ms.date: 02/22/2021
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

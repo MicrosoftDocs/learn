@@ -8,7 +8,7 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
 abstract: | 
   After completing this module, you'll be able to:
   - Identify what separates elite performers from low performers

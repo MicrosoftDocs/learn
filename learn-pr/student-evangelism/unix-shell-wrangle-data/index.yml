@@ -9,7 +9,6 @@ metadata:
   author: trallard
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Use the UNIX shell to wrangle log data
 summary: Learn how to use the UNIX shell to wrangle data and inspect data files.

@@ -8,7 +8,6 @@ metadata:
   ms.author: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Building and running a UDP echo server
 summary: Design, build, and run a UDP echo server.
 abstract: |

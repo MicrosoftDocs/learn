@@ -1,26 +1,26 @@
 ### YamlMime:Module
 uid: learn-pr.azure.govern-sql-server-with-microsoft-purview
 metadata:
-  title: 'Govern Microsoft SQL Server anywhere by using Microsoft Purview'
-  description: Microsoft Purview is a unified data governance service that helps you manage and govern your Microsoft SQL Server data.
-  ms.date: 4/19/2022
+  title: 'Govern multicloud relational databases using Microsoft Purview'
+  description: Microsoft Purview is a unified data governance service that allows you to manage data across your data estate, including on premises SQL Servers, SQL Servers hosted on Azure virtual machines, and Amazon RDS.
+  ms.date: 4/25/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
-title: 'Govern Microsoft SQL Server anywhere by using Microsoft Purview'
-summary: Govern Microsoft SQL Server anywhere by using Microsoft Purview.
+  ms.service: purview
+title: 'Govern multicloud relational databases using Microsoft Purview'
+summary: Govern your relational databases where they are using Microsoft Purview.
 abstract:  | 
   After completing this module, you’ll be able to:
-  - Govern and manage data from an on-premises SQL Server by using Microsoft Purview
-  - Govern and manage data from SQL Server running in an Azure VM by using Microsoft Purview
-  - Govern and manage data from Amazon RDS by using Microsoft Purview
+  - Govern and manage data from an on-premises SQL Server using Microsoft Purview
+  - Govern and manage data from SQL Server running in an Azure VM using Microsoft Purview
+  - Govern and manage data from Amazon RDS using Microsoft Purview
 
 prerequisites: |
   To get the best learning experience from this module, you should have:
-  - Knowledge of Microsoft Azure accounts and services
+  - A Microsoft Purview account
   - Knowledge of various data sources such as SQL Server or Azure Cosmos DB
   - Knowledge of data governance concepts
   

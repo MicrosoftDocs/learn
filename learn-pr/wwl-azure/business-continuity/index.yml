@@ -3,11 +3,11 @@ uid: learn.wwl.business-continuity
 metadata:
   title: Troubleshoot business continuity with Microsoft Azure
   description: "Businesses rely on data for decision making, compliance, and for day-to-day operations. When systems fail for any reason, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery. AZ720 AZ-720 az-720 networking"
-  ms.date: 09/27/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot business continuity with Microsoft Azure
 summary: Businesses rely on data and if systems fail, data backups must be reliable so that data can be recovered. This module covers some of the issues you may encounter when troubleshooting Azure backup and recovery.
 abstract: |

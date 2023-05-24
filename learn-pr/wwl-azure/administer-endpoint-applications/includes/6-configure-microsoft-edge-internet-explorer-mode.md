@@ -1,4 +1,5 @@
 
+
 For Windows 11 and later, Microsoft Edge is the default browser experience. However, legacy web applications may still exist that were originally written for Internet Explorer 11. 
 
 > [!NOTE]
@@ -30,7 +31,7 @@ Only those sites that you specifically configure (via policy) will use IE mode, 
 
 #### To enable Internet Explorer Mode in Microsoft Edge using Intune
 
-1.  In the Endpoint Manager admin center, select **Devices**, then select **Windows** platform, then select **Configuration Profiles**.
+1.  In the Microsoft Intune admin center, select **Devices**, then select **Windows** platform, then select **Configuration Profiles**.
 2.  Select **Create Profile**.
 3.  Enter the following properties:
     
@@ -49,7 +50,7 @@ Before you can start using either IE Mode, you must create an IE Mode site list 
 
 This tool helps you create error-free XML documents with simple n+1 versioning and URL verification. We recommend using this tool if your site list is relatively small. There are two versions of this tool, both supported on Windows 8.1 and Windows 10. We recommend that you only use Enterprise Mode Site List Manager (schema v.2) because the Enterprise Mode schema has been updated to v.2 to be easier to read and to provide a better foundation for future capabilities.
 
-When you are configuring a site list, all sites that have the element **<open-in>IE11</open-in>** will now open in IE mode. Sites that have an additional compat-mode tag, such as **<compat-mode>IE7Enterprise</compat-mode>**, will open using compatibility mode for that browser version.
+When you're configuring a site list, all sites that have the element **<open-in>IE11</open-in>** will now open in IE mode. Sites that have an additional compat-mode tag, such as **<compat-mode>IE7Enterprise</compat-mode>**, will open using compatibility mode for that browser version.
 
 You can download version 2 of the tool from here: [https://www.microsoft.com/download/details.aspx?id=49974](https://www.microsoft.com/download/details.aspx?id=49974).
 
@@ -67,7 +68,7 @@ In addition to all the functionality of the Enterprise Mode Site List Manager to
 
 Updates to your site list are made by submitting new change requests, which are then approved by a designated group of people, put into a pre-production environment for testing, and then deployed immediately, or scheduled for deployment later.
 
-If your list is too large to add individual sites, or if you've more than one person managing the site list, we recommend using the Enterprise Site List Portal.
+If your list is too large to add individual sites, or if you have more than one person managing the site list, we recommend using the Enterprise Site List Portal.
 
 ### Enable Enterprise Site Mode
 

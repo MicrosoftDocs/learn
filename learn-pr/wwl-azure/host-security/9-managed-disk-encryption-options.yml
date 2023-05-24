@@ -4,12 +4,11 @@ title: Managed disk encryption options
 metadata:
   title: Managed disk encryption options
   description: "Managed disk encryption options"
-  ms.date: 04/17/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
   [!include[](includes/9-managed-disk-encryption-options.md)]

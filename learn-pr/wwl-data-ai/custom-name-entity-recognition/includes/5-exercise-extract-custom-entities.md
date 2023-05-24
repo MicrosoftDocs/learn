@@ -15,12 +15,9 @@ If you haven't already done so, create a **Language service** resource in your A
     - **Region**: *Choose any available region*:
     - **Name**: *Enter a unique name*.
     - **Pricing tier**: Standard S pricing tier
-    - **Storage account**: Create new
-      - **Name**: CustomNER
-      - **Account kind**: Storage (general purpose v1)
-      - **Performance**: Standard
-      - **Replication**: Locally redundant storage (LRS)
-    - **Legal terms**: Selected.
+    - **Storage account**: New storage account
+      - **Storage account name**: *Enter a unique name*.
+      - **Storage account type**: Standard LRS
     - **Responsible AI notice**: Selected.
 
     > [!TIP]
@@ -41,7 +38,7 @@ After you've created the language service and storage account, you'll need to up
 
 2. In the [Azure portal](https://portal.azure.com?azure-portal=true), navigate to the storage account you created, and select it
 
-3. In your storage account, select **Containers** from the left menu, located below **Data storage**. On the screen that appears, select **+ Container**. Give the container a name `customNER`, and set **Public access level** to *Container (anonymous read access for containers and blobs)*.
+3. In your storage account, select **Containers** from the left menu, located below **Data storage**. On the screen that appears, select **+ Container**. Give the container a name `customner`, and set **Public access level** to *Container (anonymous read access for containers and blobs)*.
 
     > [!NOTE]
     > When you configure a storage account outside of this module, be careful to assign the appropriate access level. To learn more about each access level, see the [docs on Azure Storage](/azure/storage/blobs/anonymous-read-access-configure).
@@ -63,11 +60,11 @@ Once configuration is complete, create a custom named entity recognition project
 2. Under the **Extract information** section, select **Custom named entity recognition**
 3. Select **Create new project**
 4. In the **Create a project** pop out, choose the following and create your project:
-    - **Connect storage**: *This  value is likely already filled. Change resource to* CustomNER *if it isn't already*
+    - **Connect storage**: *This  value is likely already filled. Change resource to* customner *if it isn't already*
     - **Name**: customNERLab
     - **Description**: *Enter short description*
     - **Text primary language**: English (US)
-    - **Blob store container**: customNER
+    - **Blob store container**: customner
     - **Are your files labeled with classes?**: No, I need to label my files as part of this project
 
 ## Label your data
@@ -88,10 +85,10 @@ Now that your project is created, you need to label your data to train your mode
 
 After you've labeled your data, you need to train your model.
 
-1. Select **Train model** on the left side menu
-2. Click **Start a training job**
-3. Enter a name `ExtractAds`
-4. Choose **Automatically split the testing set from training data**
+1. Select **Training jobs** on the left side menu
+3. Click **Start a training job**
+4. Enter a name `ExtractAds`
+5. Choose **Automatically split the testing set from training data**
 
     > [!TIP]
     > In your own extraction projects, use the testing split that best suits your data. For more consistent data and larger datasets, the Language service will automatically split the testing set by percentage. With smaller datasets, it's important to train with the right variety of possible input documents.
@@ -105,16 +102,15 @@ After you've labeled your data, you need to train your model.
 
 In real world applications, it's important to evaluate and improve your model to verify it's performing as you expect. Two pages on the left show you the details of your trained model, and any testing that failed.
 
-1. Select **View model details** and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
-2. Select **Improve model**. Your model is already selected in the drop-down, and it defaults to show incorrect predictions only. Toggle that selection to see the documents you indicated for testing and what was extracted.
+1. Select **Model performance** on the left side menu, and select your `ExtractAds` model. There you can see the scoring of your model, performance metrics, and when it was trained. You'll be able to see if any testing documents failed, and these failures help you understand where to improve.
 
 ## Deploy your model
 
 When you're satisfied with the training of your model, it's time to deploy it, which allows you to start extracting entities through the API.
 
-1. On the left panel, select **Deploying model**
+1. On the left panel, select **Deploying a model**
 2. Select **Add deployment**, then enter the name `customExtractAds` and select `ExtractAds` from the model drop-down
-3. Click **Submit** to deploy your model
+3. Click **Deploy** to deploy your model
 
 ## Send entity recognition task to your model
 

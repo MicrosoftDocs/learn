@@ -152,6 +152,11 @@ achievements:
   title: Machine learning crash course
   summary: Machine learning crash course
   iconUrl: /training/achievements/ml-crash-course.svg
+- uid: learn.azure.copy-blobs-from-command-line-and-code.badge
+  type: badge
+  title: Copy and move blobs from one container or storage account to another from the command line and in code
+  summary: Use .NET, AzCopy, and Azure CLI to migrate files between Azure storage accounts.
+  iconUrl: /training/achievements/copy-blobs-from-command-line-and-code.svg
 - uid: learn.introduction-to-regression.badge
   type: badge
   title: Predict numeric values with regression
@@ -1385,14 +1390,14 @@ achievements:
 - uid: learn.create-voice-activated-webxr-app-with-babylonjs.badge
   type: badge
   title: Create and deploy a voice activated WebXR app with Babylon.js and Azure Cognitive Services
-  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech-to-text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
+  summary: Create a voice activated WebXR app using Babylon.js and the Azure Speech to text API under Azure Cognitive Services, and then deploy the app using Azure Blob Storage.
   iconUrl: /training/achievements/create-voice-activated-webxr-app-with-babylonjs.svg
 - uid: learn.azure.intro-to-custom-commands.badge
   type: badge
   title: Introduction to Custom Commands
   summary: Custom Commands makes it easy to build voice commanding apps optimized for voice-first interaction experiences. It provides a straightforward authoring and hosting experience on a single interface, helping you to focus on building the best solution for your voice-commanding scenarios.
   iconUrl: /training/achievements/intro-to-custom-commands.svg
-- uid: learn.azure.model-partition-data-azure-cosmos-db
+- uid: learn.azure.model-partition-data-azure-cosmos-db.badge
   type: badge
   title: Model and partition your data in Azure Cosmos DB  
   summary: Identify key access patterns for a sample e-commerce application. Define the data model for each of the entities, along with containers to store the data with a partition key that will result in an efficient and scalable data store for this e-commerce application.
@@ -1414,8 +1419,8 @@ achievements:
   iconUrl: /training/achievements/language-translator-mixed-reality.svg
 - uid: learn.azure.intro-to-speech-to-text.badge
   type: badge
-  title: Introduction to Speech-to-text
-  summary: Speech-to-text enables the real-time transcription of audio streams into text.
+  title: Introduction to Speech to text
+  summary: Speech to text enables the real-time transcription of audio streams into text.
   iconUrl: /training/achievements/intro-to-speech-to-text.svg
 - uid: learn.build-dotnet-app-cosmos-db-sql-api.badge
   type: badge
@@ -1424,8 +1429,8 @@ achievements:
   iconUrl: /training/achievements/build-dotnet-app-cosmos-db-sql-api.svg
 - uid: learn.azure.intro-to-text-to-speech.badge
   type: badge
-  title: Introduction to Text-to-speech
-  summary: Text-to-speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
+  title: Introduction to Text to speech
+  summary: Text to speech converts text into human-like speech, along with the ability to create a unique, custom voice to use in your applications.
   iconUrl: /training/achievements/intro-to-text-to-speech.svg
 - uid: learn.wwl.ingest-data-streams-with-azure-stream-analytics.badge
   type: badge
@@ -1452,7 +1457,7 @@ achievements:
   title: Train and package an Azure machine learning module for deployment to IoT Edge device
   summary: Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT Edge device. You'll check that your container image was successfully created and stored in the Azure container registry. You'll view the data from the deployed module from the IoT Edge.
   iconUrl: /training/achievements/student-evangelism/train-and-package-an-azure-machine-learning-module-for-deployment-to-iot-edge.svg
-- uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db
+- uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.badge
   type: badge
   title: Optimize databases by using advanced modeling patterns for Azure Cosmos DB
   summary: Identify strategies for managing relationships between data entities, such as customers and sales data. Improve data-model performance and scaling by pre-aggregating and denormalizing your data. Use change feed to maintain the referential integrity of your data.
@@ -1657,3 +1662,63 @@ achievements:
   title: Use MLflow to track experiments in Azure Databricks
   summary: When you run data science and machine learning experiments at scale, you can use MLflow to track experiment runs and metrics.
   iconUrl: /training/achievements/use-mlflow-to-track-experiments-in-azure-databricks.svg
+- uid: learn.azure-percept.explore.badge
+  type: badge
+  title: Explore Azure Percept
+  summary: Explore Azure Percept
+  iconUrl: /training/achievements/azure-percept/explore-azure-percept.svg
+- uid: learn.azure-percept.prerequisites.badge
+  type: badge
+  title: Azure Percept prerequisites
+  summary: Azure Percept prerequisites
+  iconUrl: /training/achievements/azure-percept/azure-percept-prerequisites.svg
+- uid: learn.azure-percept.trophy
+  type: trophy
+  title: Build edge AI solutions with Azure Percept
+  summary: Build edge AI solutions with Azure Percept
+  iconUrl: /training/achievements/azure-percept/azure-percept.svg  
+- uid: learn.azure.deploy-aspnet-apps-azure-app-service-pipelines.badge
+  type: badge
+  title: Deploy ASP.NET web apps with Azure Pipelines
+  summary: Deploy ASP.NET web apps with Azure Pipelines
+  iconUrl: /training/achievements/deploy-aspnet-apps-azure-app-service-pipelines.svg
+- uid: learn.wwl.create-deploy-azure-resource-manager-templates.badge
+  type: badge
+  title: Create and deploy Azure Resource Manager templates
+  summary: Learn how Azure Resource Manager (ARM) can help streamline deployments, choose the correct deployment mode for your solution, and create and deploy an ARM template.
+  iconUrl: /training/achievements/azure-resource-manager-create-deploy.svg
+- uid: learn.wwl.provision-virtual-machines-azure.badge
+  type: badge
+  title: Provision virtual machines in Azure
+  summary: Learn the availability and sizing options of Azure Virtual Machines, and how to create a virtual machine by using the Azure CLI.
+  iconUrl: /training/achievements/virtual-machines-provisions.svg
+- uid: learn.wwl.implement-durable-functions.badge
+  type: badge
+  title: Implement Durable Functions
+  summary: Learn how Durable Functions can simplify complex, stateful coordination requirements in serverless applications.
+  iconUrl: /training/achievements/3-implement-durable-functions.svg
+- uid: learn.wwl.implement-partitioning-azure-cosmos-db.badge
+  type: badge
+  title: Implement partitioning in Azure Cosmos DB
+  summary: Learn how partitions are organized in Azure Cosmos DB and how to choose an appropriate partition key for your solution.
+  iconUrl: /training/achievements/2-implement-partitioning-in-azure-cosmos-db.svg
+- uid: learn.oxford.deploy-5g-services-with-azure.trophy
+  type: trophy
+  title: Deploy 5G services with Azure
+  summary: This learning path aims to explain learners how to use Azure to deploy 5G services
+  iconUrl: /training/achievements/deploy-5g-services-with-azure.svg
+- uid: learn.oxford.5g-business-models.badge
+  type: badge
+  title: 5G business models for Azure cloud technologies in enterprise
+  summary: This module introduces 5G business models for Azure cloud technologies.
+  iconUrl: /training/achievements/student-evangelism/5g-business-models.svg
+- uid: learn.oxford.5g-tech-azure-cloud.badge
+  type: badge
+  title: Enterprise 5G technologies for Azure Cloud Services
+  summary: We introduce Enterprise 5G technologies for Azure
+  iconUrl: /training/achievements/student-evangelism/5g-technologies-for-azure-cloud-services.svg
+- uid: learn.oxford.intro-5g-azure.badge
+  type: badge
+  title: Introduction to 5G for Azure in the Enterprise
+  summary: We introduce 5G for Azure in the Enterprise
+  iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg

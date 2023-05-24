@@ -1,4 +1,5 @@
 
+
 The Configuration Manager client installation on a Windows computer allows not only the site to manage the device, but ultimately allows both the IT administrator and the end user to benefit from what it can provide.
 
 #### Benefits of the Configuration Manager client

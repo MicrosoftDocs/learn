@@ -7,7 +7,6 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Get started with Django
 summary: Django is one of the most popular Python web frameworks. It's especially powerful when working with a data-driven application, where the main goal is to provide a front end to a database. Django comes with numerous features built in to streamline the development process. In this module, we explore the benefits of Django, how to install it, and how to create your first project.

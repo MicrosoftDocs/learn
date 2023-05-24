@@ -1,3 +1,5 @@
+
+
 General network considerations for deployment of SAP workloads on Azure are outlined in [SAP Note #2015553](https://launchpad.support.sap.com/#/notes/2015553) and deal with the following aspects of networking:
 
 ## Network security
@@ -15,4 +17,4 @@ General network considerations for deployment of SAP workloads on Azure are outl
 
 - “Customers should use a good quality (low latency, sufficient bandwidth, no packet loss) connection between their datacenter and Azure. Customers also should verify and monitor that the bandwidth between on-premises and Azure is sufficient to handle the communication workload.”
 
-Azure VMs and SAP HANA on Azure (Large Instances) can benefit from the use of Accelerated Networking and Proximity Placement Groups.
+Azure VMs can benefit from the use of Accelerated Networking and Proximity Placement Groups.

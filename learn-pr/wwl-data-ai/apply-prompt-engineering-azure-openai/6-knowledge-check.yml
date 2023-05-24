@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your understanding of the content presented in this module."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 2
+content: |
+quiz:
+  questions:
+  - content: "How can developers optimize the performance of Azure OpenAI models?"
+    choices:
+    - content: "By using complex instructions that are difficult to understand"
+      isCorrect: false
+      explanation: "Complex instructions can lead to confusion and errors in the response."
+    - content: "By providing clear and descriptive instructions"
+      isCorrect: true
+      explanation: "Clear and descriptive instructions help the model generate a response that closely matches what the developer is looking for."
+    - content: "By using vague prompts"
+      isCorrect: false
+      explanation: "Vague prompts can lead to inaccurate and irrelevant responses."
+  - content: "What is the purpose of the system message in a prompt?"
+    choices:
+    - content: "To give the model instructions, perspective, or other information helpful to guide its response"
+      isCorrect: true
+      explanation: "The system message is included at the beginning of a prompt and is designed to give the model instructions, perspective to answer from, or other information helpful to guide the model's response."
+    - content: "To give the model a specific answer to generate"
+      isCorrect: false
+      explanation: "Giving the model a specific answer to generate can limit its capabilities and lead to less accurate responses."
+    - content: "To provide filler information to the model"
+      isCorrect: false
+      explanation: "Providing irrelevant information to the model can confuse it and lead to less accurate responses."
+  - content: "What is the purpose of providing conversation history to an AI model?"
+    choices:
+    - content: "Providing conversation history to an AI model is irrelevant and has no effect on the AI's performance."
+      isCorrect: false
+      explanation: "Conversation history helps the model continue responding in a similar way and allows the user to reference previous content in subsequent queries."
+    - content: "To limit the number of input tokens used by the model"
+      isCorrect: false
+      explanation: "Conversation history increases the number of input tokens used by the model."
+    - content: "To enable the model to continue responding in a similar way and allow the user to reference previous content in subsequent queries"
+      isCorrect: true
+      explanation: "Conversation history enables the model to continue responding in a similar way (such as tone or formatting) and allow the user to reference previous content in subsequent queries."

@@ -1,5 +1,7 @@
 
 
+
+
 The `string.Format()` method is used to perform composite formatting such as in the example:
 
 ```csharp
@@ -83,7 +85,7 @@ You can also call a second *overloaded* version of the method and pass in whatev
 
 Now, apply this newfound knowledge to another real world scenario.
 
-## Exercise - Working with padded strings
+## Working with padded strings
 
 Suppose you work for a payment processing company that still supports legacy mainframe systems. Often, those systems require data to be input in specific columns. For example, store the Payment ID in columns 1 through 6, the payee's name in columns 7 through 30, and the Payment Amount in columns 31 through 40. Also, importantly, the Payment Amount is right-aligned.
 
@@ -169,7 +171,7 @@ Next, add a fictitious Payment Amount and make sure to use `PadLeft()` to right-
     769   Mr. Stephen Ortega       $5,000.00
     ```
 
-This is pretty close to what you understood the legacy system maintainers were looking for.
+This output is pretty close to what you understood the legacy system maintainers were looking for.
 
 ### Add a line of numbers above the output to more easily confirm the result
 
