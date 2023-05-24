@@ -24,11 +24,11 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
     | Parameter | Value |
     |:----------|:------|
-    | On the **Basics** tab, under **Project details**:        |
-    | **Subscription**   | Leave as **Concierge subscription** |
-    | **Resource group** | learn-xxx                           |
+    | On the **Basics** tab, under **Project details**:         |
+    | **Subscription**   | Leave as **Concierge subscription**. |
+    | **Resource group** | learn-xxx                            |
     | Under **Server details**:                                                       |
-    | **Server name**       | *Choose a unique name*, such as payment-server-demo     |
+    | **Server name**       | Choose a unique name, such as *payment-server-demo*.    |
     | **Data source**       | Leave as **none**.                                      |
     | **Location**          | Leave the default, or use a region that's close to you. |
     | **Version**           | Leave the default version.                              |

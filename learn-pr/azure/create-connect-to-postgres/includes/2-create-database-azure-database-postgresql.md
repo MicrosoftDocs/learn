@@ -36,7 +36,7 @@ Backups can restore data to any point in time within the last 35 days. Backups a
 
 Azure Database for PostgreSQL automatically provides up to 100% of your provisioned server storage as backup storage at no extra cost. For example, if you provision a server with 250 GB of storage, you have 250 GB of storage available for server backups at no extra charge.
 
-During payment app database deployment, set a 35-day retention period. You don't have to worry about running out of storage with the *auto-grow* feature enabled. Azure automatically increases the size of the storage, if needed.
+During payment app database deployment, set a 35-day retention period. You don't have to worry about running out of storage with the *autogrow* feature enabled. Azure automatically increases the size of the storage, if needed.
 
 ### Geo vs Local: Backup redundancy options
 
