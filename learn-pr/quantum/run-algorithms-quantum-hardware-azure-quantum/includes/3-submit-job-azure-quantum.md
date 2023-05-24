@@ -9,7 +9,7 @@ To get started, copy the sample notebook from the notebook gallery.
 1. Select your Azure Quantum workspace in the [Azure portal](https://portal.azure.com).
 1. Select **Notebooks**.
 1. Select **Sample gallery**.
-1. Select the **Parallel QRNG** notebook , and select **Copy to My Notebooks**.
+1. Select the **Parallel QRNG** notebook and select **Copy to My Notebooks**.
 
 You can find the sample notebook found under **My Notebooks**. Next, you can run the notebook.
 
