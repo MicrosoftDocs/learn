@@ -39,10 +39,10 @@ products:
 units:
   - learn.azure.troubleshoot-windows-containers.introduction
   - learn.azure.troubleshoot-windows-containers.understanding-container-platform
-  - learn.azure.troubleshoot-windows-containers.troubleshooting-on-windows-host
-  - learn.azure.troubleshoot-windows-containers.troubleshooting-on-docker
-  - learn.azure.troubleshoot-windows-containers.troubleshooting-on-aks
-  - learn.azure.troubleshoot-windows-containers.troubleshooting-with-monitor
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-windows-host
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-docker
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-aks
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-monitor
   - learn.azure.troubleshoot-windows-containers.knowledge-check
   - learn.azure.troubleshoot-windows-containers.summary
 badge:

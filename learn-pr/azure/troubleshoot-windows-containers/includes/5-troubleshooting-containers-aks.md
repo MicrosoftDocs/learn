@@ -10,7 +10,7 @@ Managing Kubernetes can get tricky. Azure Kubernetes Services (AKS) helps you ma
 
 Kubelet is an agent that runs on each node in a Kubernetes cluster. Its primary responsibility is to ensure that containers are running on the node as expected. It communicates with the Kubernetes control plane to get instructions on what containers should be running and how they should be configured, and then takes actions to ensure that those containers are running and healthy.
 
-Since Kubelet is an important component of the Kubernetes architecture, it's important to understand its responsible, which are the following tasks:
+Since Kubelet is an important component of the Kubernetes architecture, it's important to understand its responsibilities, which are the following tasks:
 
 - Pulling container images from a container registry.
 - Starting and stopping containers.
@@ -75,7 +75,7 @@ az aks update -g myResourceGroup -n myAKSCluster --windows-admin-password $WINDO
 
 And finally RDP from the jump box to the target Kubernetes node. From there you can follow the all the troubleshooting ideas described so far to solve your issue.
 
-## Node Selector
+## Node selector
 
 By default, Kubernetes doesn't know if a container should be scheduled on Linux or Windows. If you want to schedule a pod/deployment to a Windows node, you need to specify a nodeSelector.
 

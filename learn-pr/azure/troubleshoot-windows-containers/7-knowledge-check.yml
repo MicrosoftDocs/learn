@@ -1,8 +1,8 @@
 ﻿### YamlMime:ModuleUnit
 uid: learn.azure.troubleshoot-windows-containers.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
+  title: Knowledge check
   description: This content is part of the "Troubleshooting Windows Containers" module.
   ms.date: 05/11/2023
   author: vrapolinario
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 5
 quiz:
-  title: Knowledge Check
+  title: Knowledge check
   questions:
   - content: "Windows containers require version compatibility between container host and container image. Which of the following statements is true?"
     choices:

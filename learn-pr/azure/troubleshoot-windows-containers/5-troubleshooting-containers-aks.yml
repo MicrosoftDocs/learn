@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.troubleshoot-windows-containers.troubleshooting-on-aks
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-aks
 title: Troubleshooting Windows containers on Azure Kubernetes Service
 metadata:
   title: Troubleshooting Windows containers on Azure Kubernetes Service
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |
-  [!include[](includes/5-troubleshooting-containers-on-aks.md)]
+  [!include[](includes/5-troubleshooting-containers-aks.md)]

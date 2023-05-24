@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.troubleshoot-windows-containers.troubleshooting-with-monitor
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-monitor
 title: Troubleshooting Windows Containers with Azure Monitor
 metadata: 
   title: Troubleshooting Windows Containers with Azure Monitor
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 8
 content: |
-  [!include[](includes/6-troubleshooting-containers-with-monitor.md)]
+  [!include[](includes/6-troubleshooting-containers-monitor.md)]

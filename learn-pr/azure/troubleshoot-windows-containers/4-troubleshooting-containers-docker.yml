@@ -1,5 +1,5 @@
 ﻿### YamlMime:ModuleUnit
-uid: learn.azure.troubleshoot-windows-containers.troubleshooting-on-docker
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-docker
 title: Troubleshooting Windows containers on Docker
 metadata:
   title: Troubleshooting Windows containers on Docker
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
-  [!include[](includes/4-troubleshooting-cotainers-on-docker.md)]
+  [!include[](includes/4-troubleshooting-containers-docker.md)]

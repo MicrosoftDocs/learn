@@ -10,7 +10,7 @@ Out of the box, AKS offers some basic monitoring (cpu, disk, memory) around node
 
 Below are some of the components of an Azure Monitor solution that help you troubleshoot your environment.
 
-## Container Insights
+## Container insights
 
 Container insights is a feature designed to monitor the performance of container workloads deployed to the cloud. It gives you performance visibility by collecting memory and processor metrics from controllers, nodes, and containers that are available in Kubernetes through the Metrics API. After you enable monitoring from Kubernetes clusters, metrics and Container logs are automatically collected for you through a containerized version of the Log Analytics agent. Below you can see a high-level overview of the Container Insights architecture.
 
@@ -30,7 +30,7 @@ Make sure you enable LogMonitor for your Windows containers so the Log Analytics
 
 Azure Monitoring workspace is a unique environment for Prometheus metrics. This workspace will be used to store your AKS metrics.
 
-## Azure Managed Grafana
+## Azure managed Grafana
 
 This is a managed Grafana instance to visualize the metrics stored in the Azure Monitoring workspace, you can also bring your own Grafana instance.
 
@@ -44,7 +44,7 @@ Let's go over troubleshooting the application/container first:
 
 ## Container
 
-:::image type="complex" border="false" source=" ../media/6-application-container-insights.png" alt-text="Screenshot of the Azure portal showing the Container Insights pane.":::
+:::image type="complex" border="false" source=" ../media/6-application-container-insights.png" alt-text="Screenshot of the Azure portal showing the Container Insights pane." lightbox="../media/6-application-container-insights.png":::
    Screenshot of the Azure portal showing the Container Insights pane. The Containers tab, the selected container, and the options on the Live Events tab are highlighted.
 :::image-end:::
 
@@ -54,17 +54,17 @@ One way you can check your running container, is by going to the insights tab on
 
 To get the logs from the control plane components, you need to enable Diagnostic Settings, as in the image below:
 
-:::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic settings pane. The link to + Add diagnostic setting is highlighted.":::
+:::image type="content" source="../media/6-enable-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic settings pane. The link to + Add diagnostic setting is highlighted." lightbox="../media/6-enable-diagnostic-settings.png":::
 
 Highlighted below are the most important control plane components. Make sure you select to push to the Log Analytics Workspace and select the desired one.
 
-:::image type="complex" border="false" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic setting configuration pane.":::
+:::image type="complex" border="false" source="../media/6-control-plane-diagnostic-settings.png" alt-text="Screenshot of the Azure portal showing the Diagnostic setting configuration pane." lightbox="../media/6-control-plane-diagnostic-settings.png":::
    Screenshot of the Azure portal showing the Diagnostic setting configuration pane. The categories Kubernetes API Server, Kubernetes Controller Manager, and Kubernetes Scheduler are highlighted along with the destination details of Send to Log Analytics workspace, and the workspace name.
 :::image-end:::
 
 After this, you can query the logs in the Logs view:
 
-:::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of the Azure portal showing the Logs pane. The query AzureDiagnostics | where Category == 'kube-scheduler' is highlighted.":::
+:::image type="content" source="../media/6-container-logs-query.png" alt-text="Screenshot of the Azure portal showing the Logs pane. The query AzureDiagnostics | where Category == 'kube-scheduler' is highlighted." lightbox="../media/6-container-logs-query.png":::
 
 ## Windows Exporter on Azure Kubernetes Service
 

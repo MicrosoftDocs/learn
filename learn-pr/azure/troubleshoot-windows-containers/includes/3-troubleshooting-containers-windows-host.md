@@ -149,7 +149,7 @@ Except for Windows Server 2022 and Windows 11, Windows containers are blocked fr
 
 For Windows containers running with process isolation, the build number must exactly match the host. For Hyper-V containers, the build number of the container image can be lower than the container host. For example: You can run a Windows Server 2019 container image on a Windows Server 2022 host using Hyper-V isolation.
 
-## PowerShell Debug Script
+## PowerShell debug script
 
 As you can gather from the previous sections, there are many moving pieces when running Windows containers, and everything should be properly configured. You now know how to look into the Windows components when something goes wrong, but to make things even easier, Microsoft created a PowerShell script to try and catch some basic misconfigurations. You can leverage that script with PowerShell:
 
