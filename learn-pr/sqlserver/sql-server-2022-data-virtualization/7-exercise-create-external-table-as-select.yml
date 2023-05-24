@@ -4,7 +4,7 @@ title: Exercise - CREATE EXTERNAL TABLE as SELECT
 metadata:
   title: Exercise - CREATE EXTERNAL TABLE as SELECT
   description: "An exercise on using CREATE EXTERNAL TABLE as SELECT (CETAS)."
-  ms.date: 05/16/2023
+  ms.date: 05/23/2023
   author: HugoMSFT
   ms.author: hudequei
   ms.topic: interactive-tutorial

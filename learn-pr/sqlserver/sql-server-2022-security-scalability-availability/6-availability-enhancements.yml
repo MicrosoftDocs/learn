@@ -4,7 +4,7 @@ title: Availability enhancements in SQL Server 2022
 metadata:
   title: Availability enhancements in SQL Server 2022
   description: "Learn about the availability enhancements in SQL Server 2022, including contained availability groups, snapshot backups, and backup compression."
-  ms.date: 05/17/2023
+  ms.date: 05/23/2023
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
@@ -19,18 +19,18 @@ quiz:
   questions:
   - content: "A contained availability group replicates which objects?"
     choices: 
-    - content: "Linked Servers."
+    - content: "A. Linked Servers."
       isCorrect: false
       explanation: "A contained availability group does replicate Linked Servers, but also more objects on the list."
-    - content: "SQL Agent Jobs."
+    - content: "B. SQL Agent Jobs."
       isCorrect: false
       explanation: "A contained availability group does replicate SQL Agent Jobs, but also more objects on the list."
-    - content: "Logins."
+    - content: "C. Logins."
       isCorrect: false
       explanation: "A contained availability group does replicate logins, but also more objects on the list."
-    - content: "A, B, and C."
+    - content: "D. A, B, and C."
       isCorrect: true
       explanation: "Correct."
-    - content: "B and C."
+    - content: "E. B and C."
       isCorrect: false
       explanation: "A contained availability group also replicates Linked Servers."

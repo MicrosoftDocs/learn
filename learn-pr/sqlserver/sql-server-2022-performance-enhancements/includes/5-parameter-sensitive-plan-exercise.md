@@ -98,17 +98,17 @@ database, lets look at the PSP optimization for a single query execution executi
     GO
     ```
 
-    ![Screenshot of SSMS with the script to execute the GetStockItemsbySupplier stored procedure.](../media/parameter-senstive-plan-exercise-execute-stored-proc.png)
+    :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc.png" alt-text="Screenshot of SSMS with the script to execute the GetStockItemsbySupplier stored procedure.":::
 
 1. Select the **Messages** tab in the output pane of the query. Notice that the query runs under 1 second.
 
-   ![Screenshot of SSMS with the output message of the GetStockItemsbySupplier stored procedure.](../media/parameter-senstive-plan-exercise-execute-stored-proc-message.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-message.png" alt-text="Screenshot of SSMS with the output message of the GetStockItemsbySupplier stored procedure.":::
 
 1. Check the timings for `SET STATISTICS TIME ON` from the second query
 execution. The query is run twice so the second execution won't require
 a compile, which is reflected in **Execution 2** in the above screenshot. This is the time we want to compare.
 
-   ![Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing Index Seek.](../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-seek.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-seek.png" alt-text="Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing Index Seek.":::
 
    The query plan uses an **Index Seek** reflected in the above screenshot. When this plan is within the procedure cache, the business unit reports that performance exceeds the service level agreement (SLA).
 
@@ -117,6 +117,8 @@ a compile, which is reflected in **Execution 2** in the above screenshot. This i
     ```sql
     USE WideWorldImporters;
     GO
+    SET STATISTICS TIME ON;
+    GO
     ALTER DATABASE SCOPED CONFIGURATION CLEAR PROCEDURE_CACHE;
     GO
     -- The best plan for this parameter is an index scan
@@ -124,11 +126,11 @@ a compile, which is reflected in **Execution 2** in the above screenshot. This i
     GO
     ```
 
-   ![Screenshot of SSMS with the script to execute the GetStockItemsbySupplier stored procedure with a suuplier value of 4.](../media/parameter-senstive-plan-exercise-execute-stored-proc-2.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-2.png" alt-text="Screenshot of SSMS with the script to execute the GetStockItemsbySupplier stored procedure with a supplier value of 4.":::
 
    This may take a few minutes to run. If you look at the **Execution plan**, the query is using a **Clustered Index Scan** and **Parallelism**.
 
-   ![Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing Clustered Index Scan.](../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-index-scan.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-index-scan.png" alt-text="Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing Clustered Index Scan.":::
 
    When this query runs, the business unit reports that the query runs long but is acceptable for the information being requested and meets the SLA. However, after the `EXEC Warehouse.GetStockItemsbySupplier 4` query runs, the business unit notices the query, `EXEC Warehouse.GetStockItemsbySupplier 2` executes slower than before and no longer meets the SLA agreement.
 
@@ -147,11 +149,11 @@ run the first query in this exercise again.
 
    You see that the query executes quickly (less than one second). However, the timing from `SET STATISTICS TIME ON` is longer than the previous execution. Examine the messages recorded from setting statistics time to on. We can see a significant increase in **SQL Server Execution Times**.
 
-   ![Screenshot of SSMS with the output message of the GetStockItemsbySupplier stored procedure showing an increase in SQL Server Execution Times.](../media/parameter-senstive-plan-exercise-execute-stored-proc-message-2.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-message-2.png" alt-text="Screenshot of SSMS with the output message of the GetStockItemsbySupplier stored procedure showing an increase in SQL Server Execution Times.":::
 
    If you look at the **Execution plan**, it now shows the query is using a clustered index scan and parallelism. The query plan that was compiled when running `EXEC Warehouse.GetStockItemsbySupplier 4`.
 
-   ![Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing a switch of the query plan from Index Seek to Clustered Index Scan.](../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-index-scan-2.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-execute-stored-proc-execution-plan-index-scan-2.png" alt-text="Screenshot of SSMS with the execution plan of the GetStockItemsbySupplier stored procedure showing a switch of the query plan from Index Seek to Clustered Index Scan.":::
 
 ## Exercise - Workload problem for PSP
 
@@ -168,43 +170,43 @@ run the first query in this exercise again.
 
 1. Set up Performance Monitor ([perfmon](https://techcommunity.microsoft.com/t5/ask-the-performance-team/windows-performance-monitor-overview/ba-p/375481)) to capture **Processor\\% Processor Time** (not Processor Information) and **SQL Server:SQL Statistics\\Batch Requests/sec** counters.
 
-   ![Screenshot of Performance Monitor.](../media/parameter-senstive-plan-exercise-2-select-performance-monitor.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-select-performance-monitor.png" alt-text="Screenshot of Performance Monitor.":::
 
 1. Select **Performance Monitor** by opening **Performance** > **Monitoring Tools**. Select the plus icon to add the counters **Processor\\% Processor Time** and **SQL Server:SQL Statistics\\Batch
 Requests/sec** counters.
 
-   ![Screenshot of Performance Monitor and selecting the plus sign.](../media/parameter-senstive-plan-exercise-2-select-plus-sign.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-select-plus-sign.png" alt-text="Screenshot of Performance Monitor and selecting the plus sign.":::
 
 1. After you have selected the plus icon, an **Add Counters** menu is displayed.
 Add the **Processor\\% Processor Time** and **SQL Server:SQL Statistics\\Batch Requests/sec** counters, and then select **OK**. The counters are in alphabetical order.
 
-   ![Screenshot of Performance Monitor and adding counters.](../media/parameter-senstive-plan-exercise-2-add-counters.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-add-counters.png" alt-text="Screenshot of Performance Monitor and adding counters.":::
 
 1. Use the **X** icon to remove **% Processor Time (Processor Information)** from the counters.
 
-   ![Screenshot of Performance Monitor and removing counters.](../media/parameter-senstive-plan-exercise-2-remove-counter.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-remove-counter.png" alt-text="Screenshot of Performance Monitor and removing counters.":::
 
 1. With the performance counters ready, let's simulate a workload against
 our Wide World Importers database. Run **[workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd)** from the Command Prompt or within a PowerShell terminal. This should finish quickly. The parameter used is the number of users. In this case, we're using `10`. You may want to increase this for machines with 8 CPUs or more. Make sure that you are in the directory you downloaded as part of the prerequisites.
 
    > [!NOTE]
-   > If you are using a named instance, edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to use `-S .\<instance name>`
+   > If you are using a named instance, edit **workload_index_seek.cmd** and **workload_index_scan.cmd** to use `-S.\<instance name>`
 
-   ![Screenshot of Command Prompt for executing workload_index_seek.cmd.](../media/parameter-senstive-plan-exercise-2-index-seek-command.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-command.png" alt-text="Screenshot of Command Prompt for executing workload_index_seek.cmd.":::
 
    Observe the performance monitor counters we set up previously.
 
-   ![Screenshot of Performance Monitor after running an index seek query.](../media/parameter-senstive-plan-exercise-2-index-seek-performance.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-performance.png" alt-text="Screenshot of Performance Monitor after running an index seek query.":::
 
 1. Now run **[workload_index_scan.cmd](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_scan.cmd)** from the command prompt or within a PowerShell terminal. This should take longer, but now locks into cache a plan for a scan.
 
-   ![Screenshot of Command Prompt for executing workload_index_scan.cmd.](../media/parameter-senstive-plan-exercise-2-index-scan-command.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-scan-command.png" alt-text="Screenshot of Command Prompt for executing workload_index_scan.cmd.":::
 
 1. Run **[workload_index_seek.cmd 10](https://github.com/microsoft/sqlworkshops-sql2022workshop/blob/main/sql2022workshop/03_BuiltinQueryIntelligence/pspopt/workload_index_seek.cmd)** again from the command prompt or within a PowerShell terminal.
 
    Observe the performance monitor counters we set up previously. You'll notice a higher **% Processor Time** (CPU), and lower **Batch Requests/sec**. You'll also observe that the workload doesn't finish in a few seconds as before.
 
-   ![Screenshot of Performance Monitor after running an index scan and index seek query.](../media/parameter-senstive-plan-exercise-2-index-seek-performance-2.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-index-seek-performance-2.png" alt-text="Screenshot of Performance Monitor after running an index scan and index seek query.":::
 
 1. Press \<Ctrl\>+\<C\> in the command window or PowerShell terminal to
 cancel the workload for **workload_index_seek.cmd**, as it can take
@@ -226,7 +228,7 @@ values in the table.
 
    The differences in `supplier_count` explain why "one size does not fit all" for the stored procedure based on parameter values. The seek business process returns data for `SupplierID` 2, which when initially executed, the optimizer compiles a query plan that uses a clustered index seek. However, when we execute the scan business process, the optimizer compiles a query plan that uses a clustered index scan. This new plan is stored within the procedure cache and is the one used for future queries. When this happens, we can see by the above performance metrics the query doesn't scale for those `SupplierID`s with a lower supplier count due to the skew in the data. This parameter sensitivity also known as *parameter sniffing* would require attention of the DBA and could require coding changes to ensure that the query scales when using parameters for `SupplierID`.
 
-   ![Screenshot of SSMS after running the stored procedures in the exercise showing the differences in supplier_count.](../media/parameter-senstive-plan-exercise-2-supplier-count.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-2-supplier-count.png" alt-text="Screenshot of SSMS after running the stored procedures in the exercise showing the differences in supplier_count.":::
 
 For more information on parameter sensitivity, see [Query processing architecture guide](/sql/relational-databases/query-processing-architecture-guide#parameter-sensitivity).
 
@@ -252,11 +254,12 @@ optimization. Run the following in SSMS to set your compatibility mode to 160 a
 level 160 by executing the following T-SQL.
 
     ```sql
-    SELECT name,compatibility_level from sys.databases
-    WHERE name =\'WideWorldImporters\'
+    SELECT name, compatibility_level 
+    FROM sys.databases
+    WHERE name = 'WideWorldImporters'
     ```
 
-   ![Screenshot of SSMS checking compatibility mode.](../media/parameter-senstive-plan-exercise-3-check-compatibility-mode.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-check-compatibility-mode.png" alt-text="Screenshot of SSMS checking compatibility mode.":::
 
 1. Resume capturing Performance Monitor by selecting the play button.
 
@@ -268,15 +271,15 @@ level 160 by executing the following T-SQL.
 
    Observe the Performance Monitor counters and you'll see consistent performance.
 
-   ![Screenshot of Performance Monitor showing consistent performance from running the index scan and index seek queries.](../media/parameter-senstive-plan-exercise-3-performance-monitor-consistent.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-performance-monitor-consistent.png" alt-text="Screenshot of Performance Monitor showing consistent performance from running the index scan and index seek queries.":::
 
 1. To observe why there's a performance difference, look in the Query Store. Open the **WideWorldImporters** > **Query Store** > **Top Resource Consuming Queries** in SSMS **Object Explorer** to open the report. There will be two plans for the same stored procedure. The one difference is that there's a new option applied to the query for each procedure, which is why there are two different *queries* in the Query Store.
 
-   ![Screenshot of SSMS Query Store Top Resource Consuming Queries report.](../media/parameter-senstive-plan-exercise-3-query-store-top-resources-report.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-top-resources-report.png" alt-text="Screenshot of SSMS Query Store Top Resource Consuming Queries report.":::
 
-   ![Screenshot of SSMS Query Store Top Resource Consuming Queries report showing the first variant of the query that we ran.](../media/parameter-senstive-plan-exercise-3-query-store-top-resources-variant-1.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-top-resources-variant-1.png" alt-text="Screenshot of SSMS Query Store Top Resource Consuming Queries report showing the first variant of the query that we ran.":::
 
-   ![Screenshot of SSMS Query Store Top Resource Consuming Queries report showing the second variant of the query that we ran.](../media/parameter-senstive-plan-exercise-3-query-store-top-resources-variant-2.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-top-resources-variant-2.png" alt-text="Screenshot of SSMS Query Store Top Resource Consuming Queries report showing the second variant of the query that we ran.":::
 
 1. Execute the following script to look at the Query Store plan. Look into the details of the results to see the query text is the same but slightly different
 with the option to use variants. You'll see that the `query_hash` is the same value.
@@ -302,7 +305,7 @@ with the option to use variants. You'll see that the `query_hash` is the same va
     GO
     ```
 
-   ![Screenshot of SSMS showing the same query_hash for the query store plan](../media/parameter-senstive-plan-exercise-3-same-query-hash.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-same-query-hash.png" alt-text="Screenshot of SSMS showing the same query_hash for the query store plan.":::
 
 1. Execute the following script and observe the text of the query is from the stored procedure without variant options. This is the text from the *parent plan*.
 
@@ -320,7 +323,7 @@ with the option to use variants. You'll see that the `query_hash` is the same va
     GO
     ```
 
-   ![Screenshot of SSMS showing the parent plan for the query store plan](../media/parameter-senstive-plan-exercise-3-query-store-parent-plan.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-parent-plan.png" alt-text="Screenshot of SSMS showing the parent plan for the query store plan.":::
 
 1. Execute the following script. If you select the `dispatcher_plan` value, you'll see a graphical plan operator called **MULTIPLE PLAN**.
 
@@ -336,9 +339,9 @@ with the option to use variants. You'll see that the `query_hash` is the same va
     GO
     ```
 
-   ![Screenshot of SSMS showing the dispatcher plan for the query store plan](../media/parameter-senstive-plan-exercise-3-query-store-dispatcher-plan.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-dispatcher-plan.png" alt-text="Screenshot of SSMS showing the dispatcher plan for the query store plan.":::
 
-   ![Screenshot of SSMS showing the multiple plan for the query store plan](../media/parameter-senstive-plan-exercise-3-query-store-multiple-plan.png)
+   :::image type="content" source="../media/parameter-senstive-plan-exercise-3-query-store-multiple-plan.png" alt-text="Screenshot of SSMS showing the multiple plan for the query store plan.":::
 
 1. To find the parent stored procedure of the statements from variants,
 execute the following script. Scroll left and right on the results and you'll see the `parent_query_id`, `query_variant_query_id`,
