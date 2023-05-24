@@ -3,10 +3,11 @@ uid: learn.wwl.explore-fundamentals-of-stream-processing
 metadata:
   title: Explore fundamentals of real-time analytics
   description: "Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions."
-  ms.date: 05/04/2023
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 title: Explore fundamentals of real-time analytics
 summary: Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions.
 abstract: |
@@ -37,7 +38,6 @@ units:
 - learn.wwl.explore-fundamentals-of-stream-processing.exercise-analyze-streaming-data
 - learn.wwl.explore-fundamentals-of-stream-processing.explore-apache-spark-microsoft-azure
 - learn.wwl.explore-fundamentals-of-stream-processing.exercise-process-streaming-data-using-spark
-- learn.wwl.explore-fundamentals-of-stream-processing.data-explorer
 - learn.wwl.explore-fundamentals-of-stream-processing.knowledge-check
 - learn.wwl.explore-fundamentals-of-stream-processing.summary
 badge:
