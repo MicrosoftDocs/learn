@@ -1,3 +1,4 @@
+
 An organization needs a secure place to store certificates and secrets. Azure Key Vault gives a cloud-based vault where you can secure store and programmatically access your secrets and certificates to protect your applications, identities, and data.
 
 ## Scenario

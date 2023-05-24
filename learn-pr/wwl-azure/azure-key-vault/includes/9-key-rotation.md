@@ -1,3 +1,4 @@
+
 Once you have keys and secrets stored in the key vault it's important to think about a rotation strategy. There are several ways to rotate the values:
 
  -  As part of a manual process

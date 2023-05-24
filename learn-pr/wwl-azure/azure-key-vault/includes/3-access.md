@@ -1,3 +1,4 @@
+
 Access to a key vault is controlled through two interfaces: the **management plane**, and the **data plane**. The management plane is where you manage Key Vault itself. Operations in this plane include creating and deleting key vaults, retrieving Key Vault properties, and updating access policies. The data plane is where you work with the data stored in a key vault. You can add, delete, and modify keys, secrets, and certificates from here.
 
 :::image type="content" source="../media/az500-key-vault-access-edb72125.png" alt-text="Users and apps authenticate and then are authorized to the management or data plane.":::
