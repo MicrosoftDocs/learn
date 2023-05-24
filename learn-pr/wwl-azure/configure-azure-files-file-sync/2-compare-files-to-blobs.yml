@@ -4,13 +4,11 @@ title: Compare storage for file shares and blob data
 metadata:
   title: Compare storage for file shares and blob data
   description: "Compare storage for file shares and blob data"
-  ms.date: 03/30/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-compare-files-to-blobs.md)]

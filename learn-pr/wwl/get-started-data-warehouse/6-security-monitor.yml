@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.security-monitor
+title: Secure and monitor your data warehouse
+metadata:
+  title: Secure and monitor your data warehouse
+  description: "Secure and monitor your data warehouse"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-power-bi
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-security-monitor.md)]
