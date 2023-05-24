@@ -139,6 +139,8 @@ To back up a key vault object, you must have:
 
 3. Navigate to the key you want to restore.
 
+4. Select **Restore Backup**.
+
 ## :::image type="content" source="../media/azure-key-vault-restore-back-up-control-example-244106f1.png" alt-text="Screenshot showing Key Vault restore back up control."::: 
 
 5. Navigate to the location where you stored the encrypted blob.
