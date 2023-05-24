@@ -2,7 +2,7 @@
 uid: learn.wwl.design-data-ingestion-strategy-for-machine-learning-projects
 metadata:
   title: Design a data ingestion strategy for machine learning projects
-  description: "Azure Machine Learning Python SDK v2"
+  description: "Learn how to design a data ingestion solution for training data used in machine learning projects."
   ms.date: 05/24/2023
   author: wwlpublish
   ms.author: madiepev
