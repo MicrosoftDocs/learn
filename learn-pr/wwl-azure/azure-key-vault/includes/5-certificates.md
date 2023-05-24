@@ -1,4 +1,3 @@
-
 Key Vault certificates support provides for management of your x509 certificates and enables:
 
  -  A certificate owner to create a certificate through a Key Vault creation process or through the import of an existing certificate. Includes both self-signed and CA-generated certificates.
