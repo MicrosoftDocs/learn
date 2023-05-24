@@ -6,7 +6,7 @@ How do you know your data has or hasn't been tampered with? Can you prove that y
 
 Ledger is a technology that offers the power of blockchain in Azure SQL and SQL Server. Ledger allows establishing trust across different business entities while maintaining the simplicity and performance of a relational database. The data is centrally managed, and you can cryptographically attest to other parties that your data can be trusted and hasn't been tampered with. This is especially useful if your records need to be audited.
 
-![Diagram for flow of ledger in Azure SQL Database or SQL Server.](../media/ledger-table-architecture.png)
+:::image type="content" source="../media/ledger-table-architecture.png" alt-text="Diagram for flow of ledger in Azure SQL Database or SQL Server.":::
 
 ## How does ledger work
 
