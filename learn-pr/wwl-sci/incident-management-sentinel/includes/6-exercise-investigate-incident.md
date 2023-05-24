@@ -10,7 +10,7 @@ To complete this exercise, make sure you finished the setup exercise at the begi
 Create an analytics rule that creates an incident when a VM is deleted in the Contoso Azure subscription.
 
 1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the Microsoft Sentinel workspace you created.
-1. On your Microsoft Sentinel page, select **Analytics** under **Configuration** in the left navigation.
+1. On your Microsoft Sentinel page, select **Analytics** under **Configuration** in the left menu.
 1. On the **Analytics** page, select **Create** > **Scheduled query rule**.
 
 **General tab**
@@ -18,7 +18,7 @@ Create an analytics rule that creates an incident when a VM is deleted in the Co
 1. On the **General** tab of the wizard, provide the following information.
 
    - **Name**: Enter *Deleted VMs*.
-   - **Description**: Enter a description to help other security analysts understand what the rule does.
+   - **Description**: Enter a description to help others understand what the rule does.
    - **Tactics and techniques**: Select **Initial Access**.
    - **Severity**: Select **Medium**.
    - **Status**: Select **Enabled**.
@@ -67,7 +67,7 @@ Create an analytics rule that creates an incident when a VM is deleted in the Co
 To test rule detection and incident creation, delete the VM you created during setup.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the **Virtual machines** page, select the checkbox next to named **simple-vm**, and then select **Delete** from the toolbar.
+2. On the **Virtual machines** page, select the checkbox next to **simple-vm**, and then select **Delete** from the toolbar.
 3. On the **Delete Resources** pane, enter *delete* in the **Enter "delete" to confirm deletion** field, and then select **Delete**.
 1. Select **Delete** again.
 
@@ -104,6 +104,6 @@ To avoid incurring costs, delete the Azure resources that you created in this mo
 1. In the Azure portal, search for **Resource groups**.
 1. On the **Resource groups** page, select **azure-sentinel-rg**.
 1. On the **azure-sentinel-rg** page, select **Delete resource group** from the top menu bar.
-1. On the **Delete a resourced group** page, under **Enter resource group name to confirm deletion**, enter *azure-sentinel-rg*.
+1. On the **Delete a resource group** page, under **Enter resource group name to confirm deletion**, enter *azure-sentinel-rg*.
 1. Select **Delete**, and then select **Delete** again.
 

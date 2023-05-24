@@ -26,9 +26,9 @@ In the incident details pane, select **View full details** to open the **Inciden
 
 Each incident Microsoft Sentinel creates has attached metadata that you can view and manage. This information lets you:
 
+- Assign and track incident ownership.
 - Set and track the status of an incident from creation to resolution.
 - Set and review severity.
-- Assign and track incident ownership.
 
 :::image type="content" source="../media/5-incident-settings.png" alt-text="The screenshot displays the section of the Incidents page where you can assign ownership, status, and severity." :::
 
@@ -56,7 +56,7 @@ The rule or Microsoft security source that generated the incident initially sets
 
 You can further investigate an incident by selecting **Investigate** on the **Incident** page. This action opens the investigation graph, a visual tool that helps to identify entities involved in the attack and the relationships between those entities. If the incident involves multiple alerts over time, you can also review the alert timeline and correlations between alerts.
 
-:::image type="content" source="../media/5-investigation-graph.png" alt-text="The screenshot shows the investigation graph.":::
+:::image type="content" source="../media/5-investigation-graph.png" alt-text="The screenshot shows the investigation graph." lightbox="../media/5-investigation-graph.png":::
 
 ### Review entity details
 

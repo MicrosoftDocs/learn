@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.3-describe-incident-management
-title: Incident management
+title: Understand incidents
 metadata:
-  title: Incident management
-  description: Learn about incident management in Microsoft Sentinel.
-  ms.date: 05/12/2023
+  title: Understand incidents
+  description: Learn about incident definitions, key concepts, and overview in Microsoft Sentinel.
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.4-understand-evidence-entities
-title: Evidence and entities
+title: Incident evidence and entities
 metadata:
-  title: Evidence and entities
-  description: Understand evidence and entities in Microsoft Sentinel.
+  title: Incident evidence and entities
+  description: Understand incident evidence and entities in Microsoft Sentinel.
   ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "IP address."
       isCorrect: false
-      explanation: "An IP address is an entity."
+      explanation: "An IP address is an entity, not evidence."
     - content: "Username."
       isCorrect: false
-      explanation: "A username is an entity."
+      explanation: "A username is an entity, not evidence."
     - content: "Event."
       isCorrect: true
       explanation: "An event is evidence."
     - content: "Host name."
       isCorrect: false
-      explanation: "A host name is an entity."
+      explanation: "A host name is an entity, not evidence."

@@ -1,7 +1,5 @@
 
-Imagine that you're a security engineer for Contoso, Ltd., a midsize financial services company in London with a New York branch office. Contoso uses Microsoft Defender for Cloud as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
-
-Contoso uses the following Microsoft security management products:
+Imagine that you're a security engineer for Contoso, Ltd., a midsize financial services company in London with a New York branch office. Contoso uses the following Microsoft security management products:
 
 - Microsoft 365
 - Azure Active Directory (Azure AD)
@@ -13,14 +11,16 @@ Contoso uses the following Microsoft security management products:
 - Intune Endpoint Protection
 - Azure Information Protection
 
+Contoso uses Microsoft Defender for Cloud as threat protection for resources that run on Azure and on-premises. The company also monitors and protects other non-Microsoft assets.
+
 Recently, the company's Azure Activity log showed that a significant number of VMs were deleted from the Azure subscription. You need to analyze this occurrence and be alerted when similar activity occurs in the future.
 
-Microsoft Sentinel is a cloud application that can help you protect Contoso's resources. In this module, you learn how to use Microsoft Sentinel to create and investigate an incident when someone deletes an existing VM.
+Microsoft Sentinel is a cloud application that can help you protect Contoso's resources. In this module, you learn how to use Microsoft Sentinel to create and investigate an incident when a Contoso user deletes an existing VM.
 
 ## Learning objectives
 
-- Learn about Microsoft Sentinel incident management.
-- Explore Microsoft Sentinel events and entities.
+- Learn about security incidents and Microsoft Sentinel incident management.
+- Explore Microsoft Sentinel incident evidence and entities.
 - Use Microsoft Sentinel to investigate security incidents and manage incident resolution.
 
 ## Prerequisites
