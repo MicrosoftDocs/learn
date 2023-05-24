@@ -22408,6 +22408,11 @@
     "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-organize-project-repository-structure.yml",
     "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/2-organize-project-repository-structure",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-data-explorer.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing/",
+    "redirect_document_id": false
   }
   ]
 }
