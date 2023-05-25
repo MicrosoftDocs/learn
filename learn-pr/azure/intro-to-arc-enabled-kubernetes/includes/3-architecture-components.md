@@ -4,14 +4,14 @@ In this unit, you learn about the architecture and benefits of Azure Arc-enabled
 
 Azure Arc uses locally installed agents to establish a trusted channel with Azure. For Kubernetes clusters running anywhere, and Azure Kubernetes Services (AKS) clusters running on Azure Stack HCI, connection to Azure requires deploying several agents as pods within a dedicated cluster namespace. The agents are responsible for synchronizing state to Azure, collecting Azure Arc logs and metrics, and processing configuration requests.
 
-The Kubernetes agents run in the `azure-arc` namespace in the Kubernetes cluster. These agents are responsible for the following operations:
+The agents run in the `azure-arc` namespace in the Kubernetes cluster, and are responsible for the following operations:
 
 - Maintaining an authenticated connection to Azure and synchronizing cluster metadata with the corresponding Azure resource.
 - Gathering cluster metadata, including cluster version, node count, and Azure Arc agent version.
 - Monitoring for agent updates, compliance state, and source control configuration resources applied on the cluster.
 - Orchestrating interactions between Azure Arc components.
 
-### Key benefits of Azure Arc-enabled Kubernetes
+## Azure Arc-enabled Kubernetes benefits
 
 In addition to the general Azure Arc benefits the previous unit described, Azure Arc-enabled Kubernetes offers the following capabilities:
 
@@ -19,13 +19,13 @@ In addition to the general Azure Arc benefits the previous unit described, Azure
 
   GitOps enables automatic deployment of configurations that reside in a Git repository. Those configurations describe the desired state of Kubernetes. You can enforce specific GitOps-based configurations by using Azure Policy, which also provides centralized compliance reporting.
 
-- Enforcement of run-time policies affecting the cluster and its pods by using Azure Policy for Kubernetes and centralized policy compliance reporting.
+- Enforcement of runtime policies that affect the cluster and its pods by using Azure Policy for Kubernetes and centralized policy compliance reporting.
 
   For example, you can enforce the use of HTTPS for ingress traffic that targets your Azure Arc-enabled Kubernetes clusters, or ensure that containers listen only on specific ports that you designate.
   
-- Azure Monitor Container Insights.
+- Azure Monitor Container insights.
 
   This capability provides a rich monitoring experience for containers running anywhere, including Azure Arc-enabled Kubernetes and AKS on Azure Stack HCI.
 
-You learn more about these features in the following units of this module.
+You learn more about these features in the next units of this module.
 

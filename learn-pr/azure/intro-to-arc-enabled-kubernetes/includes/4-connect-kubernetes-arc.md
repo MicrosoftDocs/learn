@@ -2,7 +2,7 @@ In this unit, you learn how to connect a Kubernetes cluster to Azure Arc. Azure 
 
 ## Connect a Kubernetes cluster to Azure Arc
 
-To connect a Kubernetes cluster to Azure Arc, you deploy the Azure Arc agents for Kubernetes into the `azure-arc` namespace on the cluster. This process consists of the following high-level steps:
+To connect a Kubernetes cluster to Azure Arc, you deploy the Azure Arc agents for Kubernetes into the `azure-arc` namespace on the cluster. The process consists of the following high-level steps.
 
 ### Prerequisites
 
@@ -35,5 +35,5 @@ After you deploy the agent on a cluster, you can use the following Azure Arc-ena
 
 Azure Arc-enabled Kubernetes provides a *cluster connect* feature that lets you access Arc-enabled Kubernetes clusters from anywhere, allowing for interactive development and debugging. This feature lets you securely connect to your clusters without requiring any inbound port to be enabled on the firewall. A reverse proxy agent that runs on the cluster can securely start a session with the Azure Arc service in an outbound manner.
 
-You can use cluster connect to provide cluster access to Azure services for custom locations and their deployed resources. You can even use hosted agents or runners from Azure Pipelines, GitHub Actions, or any other hosted continuous integration and continuous deployment (CI/CD) service to deploy applications to on-premises clusters, without requiring self-hosted agents.
+You can use cluster connect to provide cluster access to Azure services for custom locations and their deployed resources. You can use hosted agents or runners from Azure Pipelines, GitHub Actions, or any hosted continuous integration and continuous deployment (CI/CD) service to deploy applications to on-premises clusters, without needing self-hosted agents.
 

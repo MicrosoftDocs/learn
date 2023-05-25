@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.5-policy
 metadata:
   title: Integrate with Azure Policy for Kubernetes
   description: Learn about Azure Policy for Kubernetes and how to integrate it with an Azure Arc-enabled Kubernetes cluster.
-  ms.date: 01/05/2023
+  ms.date: 05/25/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -20,16 +20,16 @@ quiz:
   questions:
   - content: "Which Kubernetes component implements the Azure Policy for Kubernetes agents?"
     choices:
-    - content: "A service"
+    - content: "A service."
       isCorrect: false
       explanation: "A service provides internal or external inbound connectivity, which isn't applicable for Azure Policy."
-    - content: "An admission controller"
+    - content: "An admission controller."
       isCorrect: true
       explanation: "Azure Policy for Kubernetes is an extension of Gatekeeper, an open-source, Kubernetes-based OPA admission controller."
-    - content: "An ingress controller"
+    - content: "An ingress controller."
       isCorrect: false
       explanation: "An ingress controller provides inbound connectivity, which isn't applicable for Azure Policy."
-    - content: "A namespace"
+    - content: "A namespace."
       isCorrect: false
       explanation: "A namespace isn't capable of running an agent."
   - content: "Which of the following isn't a capability of Azure Policy for Kubernetes?"
@@ -37,7 +37,7 @@ quiz:
     - content: "Reporting auditing and compliance data."
       isCorrect: false
       explanation: "Azure Policy for Kubernetes reports this data to Azure Policy, so you can review status via the Azure portal."
-    - content: "Checking periodically for Azure Policy assignments"
+    - content: "Checking periodically for Azure Policy assignments."
       isCorrect: false
       explanation: "Azure Policy for Kubernetes checks regularly for assignments that target the Kubernetes cluster."
     - content: "Deploying policy definitions into the cluster as custom resources."

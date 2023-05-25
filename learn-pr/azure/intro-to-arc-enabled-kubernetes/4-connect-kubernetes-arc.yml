@@ -32,7 +32,7 @@ quiz:
     - content: "Azure Kubernetes Service Contributor"
       isCorrect: false
       explanation: "This role allows read and write access to Azure Kubernetes Service (AKS) clusters, but doesn't allow you to connect a Kubernetes cluster to Azure Arc."
-  - content: "Which of the following isn't required to connect a Kubernetes cluster to Azure Arc?"
+  - content: "Which of the following isn't a requirement for connecting a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "Multiple Azure subscriptions"
       isCorrect: true

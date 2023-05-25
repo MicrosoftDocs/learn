@@ -1,16 +1,18 @@
-Kubernetes deployments can be very complex, with multiple layers of abstraction obscuring implementation details, and hundreds or thousands of containers hosting workloads. Comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. You can use Azure Monitor to help meet this goal.
+Kubernetes deployments can be complex, with multiple layers of abstraction obscuring implementation details, and hundreds or thousands of containers hosting workloads. Comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. You can use Azure Monitor to help meet this goal.
 
-In this unit, you learn about Azure Monitor Container Insights and how to implement it for Azure Arc-enabled Kubernetes clusters.
+In this unit, you learn about Azure Monitor Container insights and how to implement it for Azure Arc-enabled Kubernetes clusters.
 
 ## Azure Monitor basics
 
-Azure Monitor extends comprehensive cloud-based management functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Monitor supports collecting and monitoring metrics, activity and diagnostics logs, and events from Azure services, Arc-enabled resources, and resources in on-premises datacenters and third-party clouds. Organizations that maintain on-premises infrastructure can benefit from Monitor functionality to:
+Azure Monitor extends comprehensive cloud-based management functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Monitor collects and monitors metrics, activity and diagnostics logs, and events from Azure services, Arc-enabled resources, and on-premises datacenter and third-party cloud resources.
+
+Organizations that maintain on-premises infrastructure can use the following Monitor functionality:
 
 - Track, audit, or troubleshoot past events.
 - Optimize administration of existing deployments.
 - Forecast and plan capacity for future deployments.
 
-Monitor provides a quick way to assess the status of your environment by using the Azure portal. You can also access Monitor data by using Azure PowerShell, Azure CLI, REST API, and .NET SDK. 
+Monitor provides a quick way to assess the status of your environment by using the Azure portal. You can also access Monitor data by using Azure PowerShell, Azure CLI, REST API, or .NET SDK commands.
 
 Monitor lets you archive collected data in Azure Storage for longterm analysis or compliance purposes, or route the data to Azure Stream Analytics or non-Microsoft services by using Event Hubs. You also can store and analyze near real-time and historical data by using Log Analytics.
 

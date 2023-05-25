@@ -1,6 +1,6 @@
 A primary benefit of Azure Arc is to facilitate implementation of DevOps principles, which apply established development practices to operations. DevOps increases agility without jeopardizing the stability of the IT environment. 
 
-Azure Arc-enabled Kubernetes supports GitOps, a DevOps practice that streamlines application releases by reducing manual deployment effort. In this unit, you learn about GitOps and how to configure it for an Azure Arc-enabled Kubernetes cluster.
+Azure Arc-enabled Kubernetes supports GitOps, a DevOps practice that streamlines application releases by reducing manual deployment effort. In this unit, you learn about GitOps and how to configure it for Azure Arc-enabled Kubernetes clusters.
 
 ## GitOps basics
 
@@ -14,7 +14,7 @@ Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps
 
 The following diagram shows a GitOps flow that uses Flux to deploy cluster configurations and application updates.
 
-:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." border="false" lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
+:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
 
 ## Configure GitOps
 
@@ -53,8 +53,8 @@ You can also use Azure Policy to automate the configuration process, so you can 
 1. Search for **Configure Kubernetes clusters with specified GitOps configuration**, and select one of the built-in policy definitions.
 1. Select **Assign**, and create a policy assignment by specifying the following settings:
 
-   - Set the **Scope** to the management group, subscription, or resource group where the policy assignment will apply.
-   - Optionally, specify **Exclusions** to designate any subscopes of resources where the policy shouldn't apply.
+   - Set the **Scope** to the management group, subscription, or resource group where the policy assignment applies.
+   - Optionally, specify **Exclusions** to designate any resource subscopes where the policy shouldn't apply.
    - Set **Policy enforcement** to **Enabled**.
    - On the **Parameters** tab, set values for the `sourceControlConfiguration` parameters that set the association between Git repositories and corresponding components of the Azure Arc-enabled Kubernetes cluster.
    - On the **Remediation** tab, select **Create a remediation task** and **Create a Managed Identity**. The identity must have the **Contributor** role.
