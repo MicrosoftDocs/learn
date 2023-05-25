@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365-security
+  ms.subservice: m365d
 title: Describe threat protection with Microsoft 365 Defender
 summary: Protect against cyber threats with Microsoft 365 Defender across endpoints, identities, email, and applications.
 abstract: |

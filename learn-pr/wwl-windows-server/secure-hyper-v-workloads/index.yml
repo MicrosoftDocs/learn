@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows
+  ms.technology: hyper-v
 title: Secure Hyper-V workloads
 summary: Learn about securing Hyper-V workloads in Windows Server 2019, installing and configuring the Host Guardian Service (HGS), the attestation modes available with the HGS, and the creation and deployment of shielded virtual machines (VMs).
 abstract: |

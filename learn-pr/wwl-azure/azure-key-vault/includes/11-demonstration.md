@@ -1,4 +1,4 @@
-Use this Try-This exercises to get some hands-on experience with Azure.
+Use these Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we'll explore the Azure Key Vault.
 
@@ -64,7 +64,7 @@ In this task, we'll configure access policies and test access.
     az keyvault secret show --name <secret_name> --vault-name <keyvault_name>
     
     ```
-15. Explain that adding the RBAC role grants access to the Key Vault control plane. It does not grant access to the data in the Key Vault.
+15. Explain that adding the RBAC role grants access to the Key Vault control plane. It does not grant access to the date in the Key Vault.
 16. Return to your Key Vault and create an access policy.
 17. Under **Settings**, select **Access policies** and then **Add Access Policy**.
      -  Configure from the template (optional): **Key, Secret, & Certificate Management**

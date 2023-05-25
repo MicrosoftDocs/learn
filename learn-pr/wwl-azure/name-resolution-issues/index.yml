@@ -7,7 +7,7 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot name resolution issues in Microsoft Azure
 summary: Name resolution is the process of matching the name of a computer to its network address. This module looks at name resolution issues for public networks, private networks, and internal networks that connect to Azure.
 abstract: |

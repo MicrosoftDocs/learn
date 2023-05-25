@@ -7,7 +7,7 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: service-bus
 title: Implement message-based communication workflows with Azure Service Bus
 summary: Write C# code in a custom application that sends and receives messages using Azure Service Bus topics and queues.
 abstract: |

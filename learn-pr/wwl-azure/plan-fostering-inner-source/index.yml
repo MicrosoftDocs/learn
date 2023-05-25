@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Plan foster inner source
 summary: This module explains how to use Git to foster inner sources across the organization, implement Fork and its workflows.
 abstract: |

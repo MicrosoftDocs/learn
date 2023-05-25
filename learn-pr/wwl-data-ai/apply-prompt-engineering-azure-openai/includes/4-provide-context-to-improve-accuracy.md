@@ -63,12 +63,12 @@ For example, you could give it some of the following system messages:
 
 Other example system messages are available at the top of the chat window in [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true). Try defining your own system prompt that specifies a unique response, and chat with the model to see how responses differ.
 
-The `ChatCompletions` endpoint enables including the system message by using the `System` chat role.
+The `ChatCompletion` endpoint enables including the system message by using the `System` chat role.
 
 ::: zone pivot="csharp"
 
 ```csharp
-var chatCompletionsOptions = new ChatCompletionsOptions()
+var ChatCompletionsOptions = new ChatCompletionsOptions()
 {
     Messages =
     {
@@ -76,6 +76,19 @@ var chatCompletionsOptions = new ChatCompletionsOptions()
         new ChatMessage(ChatRole.User, "Can you direct me to the library?")
     }
 };
+```
+
+**Response**
+
+```code
+{
+    "role": "assistant", 
+    "content": "Well howdy there, stranger! The library, huh?
+                Y'all just head down the main road till you hit the town 
+                square. Once you're there, take a left and follow the street 
+                for a spell. You'll see the library on your right, can’t 
+                miss it. Happy trails!"
+}
 ```
 
 ::: zone-end
@@ -92,9 +105,22 @@ response = openai.ChatCompletion.create(
 )
 ```
 
+**Response**
+
+```code
+{
+    "role": "assistant", 
+    "content": "Well howdy there, stranger! The library, huh?
+                Y'all just head down the main road till you hit the town 
+                square. Once you're there, take a left and follow the street 
+                for a spell. You'll see the library on your right, can’t 
+                miss it. Happy trails!"
+}
+```
+
 ::: zone-end
 
-If using the `Completions` endpoint, similar functionality can be achieved by including the system message at the start of the prompt. This is called a *meta prompt*, and serves as a base prompt for the rest of the prompt content.
+If using the `Completion` endpoint, similar functionality can be achieved by including the system message at the start of the prompt. This is called a *meta prompt*, and serves as a base prompt for the rest of the prompt content.
 
 System messages can significantly change the response, both in format and content. Try defining a clear system message for the model that explains exactly what kind of response you expect, and what you do or don't want it to include.
 
@@ -128,11 +154,11 @@ Assistant:
 
 If the model is provided with just `You can't miss this` with no additional context from few shot learning, the response isn't likely to be useful.
 
-In practical terms, conversation history and few shot learning are sent to the model in the same way; each user message and assistant response is a discrete message in the message object. The `ChatCompletions` endpoint is optimized to include message history, regardless of if this message history is provided as few shot learning, or actual conversation history.
+In practical terms, conversation history and few shot learning are sent to the model in the same way; each user message and assistant response is a discrete message in the message object. The `ChatCompletion` endpoint is optimized to include message history, regardless of if this message history is provided as few shot learning, or actual conversation history.
 
 ::: zone pivot="csharp"
 ```csharp
-var chatCompletionsOptions = new ChatCompletionsOptions()
+var ChatCompletionsOptions = new ChatCompletionsOptions()
 {
     Messages =
     {
@@ -167,7 +193,7 @@ response = openai.ChatCompletion.create(
 ```
 ::: zone-end
 
-While not ideal, similar results can be achieved with the `Completions` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages. If you do need to include multiple messages in a single prompt with `Completions`, you can make it clear to the model by putting each message on a new line and labeling each line with the role. Formatting this prompt would be similar to how the conversation was presented at the top of this section.
+While not ideal, similar results can be achieved with the `Completion` endpoint by including the conversation exchange within the single prompt, much like we saw with system messages. If you do need to include multiple messages in a single prompt with `Completion`, you can make it clear to the model by putting each message on a new line and labeling each line with the role. Formatting this prompt would be similar to how the conversation was presented at the top of this section.
 
 ## Break down a complex task
 

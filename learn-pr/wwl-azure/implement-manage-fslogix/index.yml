@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: fslogix
 title: Implement and manage FSLogix
 summary: A user profile contains data elements about a user information like desktop settings, persistent network connections, and application settings.
 abstract: |

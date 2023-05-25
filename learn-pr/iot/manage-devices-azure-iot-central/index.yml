@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-central
 title: Manage devices in Azure IoT Central
 summary: This module introduces you to the device management capabilities provided by Azure IoT Central and how to use the Azure IoT Central UI tools to perform device management at scale with device groups and jobs.
 abstract: |

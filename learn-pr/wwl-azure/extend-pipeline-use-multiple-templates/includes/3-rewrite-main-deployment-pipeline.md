@@ -1,6 +1,6 @@
 Azure Pipelines allows you to define build and release processes using YAML templates. Templates are reusable and enable you to define your pipelines declaratively. It means you can define your pipelines as code, commit the code to your source control repository, and have it versioned and managed like any other code.
 
-In this unit, you'll examine the template types to use YAML templates in Azure Pipelines and rewrite the main deployment pipeline with examples of template usage.
+In this unit, examine the template types to use YAML templates in Azure Pipelines and rewrite the main deployment pipeline with examples of template usage.
 
 ## Template types and usage
 

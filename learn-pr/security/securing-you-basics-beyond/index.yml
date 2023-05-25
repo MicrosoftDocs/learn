@@ -7,7 +7,6 @@ metadata:
   author: jboeshart
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Securing you: Basics and beyond"
 summary: Security-related advice can be hard to understand and follow. Many people have asked for a simple description of how to secure their computers and online accounts without needing in-depth training or hours of study. This module will give you simple advice you can follow, tools you can use, and pitfalls to avoid, to ensure that you can remain secure online.
 abstract: | 

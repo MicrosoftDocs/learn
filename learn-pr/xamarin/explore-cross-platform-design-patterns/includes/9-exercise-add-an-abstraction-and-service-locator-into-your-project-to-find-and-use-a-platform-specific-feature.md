@@ -3,13 +3,13 @@
 In this exercise, you'll define a service to convert text to speech. Then you'll use a service locator to find the implementation of the platform-specific service. The service will allow your users to select a quote and hear the application speak it.
 
 > [!NOTE]
-> The Xamarin.Essentials NuGet package includes text-to-speech functionality. That functionality relies on the same APIs you'll use here, but it doesn't require any platform-specific code.
+> The Xamarin.Essentials NuGet package includes text to speech functionality. That functionality relies on the same APIs you'll use here, but it doesn't require any platform-specific code.
 
 This exercise is a continuation of the previous exercise. Use your existing solution as the starting point for these steps. To start from here, open the completed solution from the previous **exercise1** > **final** folder in your copy of the cloned or downloaded [!INCLUDE [module-exercise-repo](module-exercise-repo.md)].
 
-## Use an interface to create the text-to-speech engine's abstraction 
+## Use an interface to create the text to speech engine's abstraction 
 
-Start by defining your abstraction. You'll have each platform use its text-to-speech engine to read stored quotes to the user. First you'll define an interface called `ITextToSpeech` with a single method called `Speak`. The interface needs to go in your shared code. You'll place it in the GreatQuotes .NET Standard library.
+Start by defining your abstraction. You'll have each platform use its text to speech engine to read stored quotes to the user. First you'll define an interface called `ITextToSpeech` with a single method called `Speak`. The interface needs to go in your shared code. You'll place it in the GreatQuotes .NET Standard library.
 
 1. Open the starter project **GreatQuotes.sln** or continue with the previous exercise.
 1. Create a new interface source file in the `GreatQuotes` project. Name it **ITextToSpeech.cs**.
@@ -38,9 +38,9 @@ Next you'll add a service locator. To save time, add an existing implementation.
 
 ## Register the abstractions with the service locator
 
-Register your implementations for the text-to-speech functionality in each of the platform-specific projects.
+Register your implementations for the text to speech functionality in each of the platform-specific projects.
 
-1. Add implementations of the text-to-speech engine for each platform. Your **exercise2** > **assets** folder contains two implementations. You'll find one for iOS and one for Android.
+1. Add implementations of the text to speech engine for each platform. Your **exercise2** > **assets** folder contains two implementations. You'll find one for iOS and one for Android.
 1. Add each implementation to the appropriate platform-specific project, based on the name:
     - **TextToSpeechService.Android.cs** goes into the **Android** project.
     - **TextToSpeechService.iOS.cs** goes into the **iOS** project.
@@ -56,11 +56,11 @@ Register your implementations for the text-to-speech functionality in each of th
     ServiceLocator.Instance.Add<ITextToSpeech, TextToSpeechService>();
     ```
 
-## Update the QuoteManager with text-to-speech behavior
+## Update the QuoteManager with text to speech behavior
 
-Add support to call the text-to-speech service in your shared code and invoke it from each platform.
+Add support to call the text to speech service in your shared code and invoke it from each platform.
 
-1. Add a method to the shared `QuoteManager.cs` class that will invoke the text-to-speech service.
+1. Add a method to the shared `QuoteManager.cs` class that will invoke the text to speech service.
 1. Name the method `SayQuote` and have it take `GreatQuote` as the parameter.
 1. Look up the `ITextToSpeech` abstraction by using the service-locator `Resolve` method.
 1. Make sure the returning value isn't `null`. If the value isn't `null`, use the `Speak` method to say the quote and author.
@@ -89,9 +89,9 @@ Add support to call the text-to-speech service in your shared code and invoke it
     }
     ```
 
-## Update the QuoteDetailPage with text-to-speech behavior
+## Update the QuoteDetailPage with text to speech behavior
 
-1. You'll update `QuoteDetailPage` to allow a user to tap a quote. The text-to-speech engine will then speak the quote text. In the page's XAML, add `TapGestureRecognizer` to the quote text label and set `NumberOfTapsRequired` equal to one.
+1. You'll update `QuoteDetailPage` to allow a user to tap a quote. The text to speech engine will then speak the quote text. In the page's XAML, add `TapGestureRecognizer` to the quote text label and set `NumberOfTapsRequired` equal to one.
 1. Set an event handler for the `Tapped` event of `TapGestureRecognizer`.
 
     Your label's XAML declaration should now look something like this code:

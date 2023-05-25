@@ -4,6 +4,9 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   description: |
     Check your knowledge on creating, managing, and querying items and resources in an Azure Cosmos DB for NoSQL account using the .NET SDK library from NuGet.
   author: seesharprun

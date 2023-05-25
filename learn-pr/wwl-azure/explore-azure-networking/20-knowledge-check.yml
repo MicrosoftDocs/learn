@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/21/2023
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: "Which Azure SKU of public IP addresses supports both dynamic and static allocation methods?"
     choices:
-    - content: "Infrastructure"
+    - content: "Basic"
       isCorrect: true
-      explanation: "That’s correct. Network Protection SKU public IP addresses support only the static allocation method."
-    - content: "Network Protection"
+      explanation: "That’s correct. Standard SKU public IP addresses support  both dynamic and static allocation methods."
+    - content: "Standard"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection SKU public IP addresses support only the static allocation method."
-    - content: "IP Protection"
+      explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
+    - content: "Both Basic and Standard"
       isCorrect: false
-      explanation: "That’s incorrect. IP Protection SKU public IP addresses support only the static allocation method."
+      explanation: "That’s incorrect. Standard SKU public IP addresses support only the static allocation method."
   - content: "What is the maximum backend pool size of the Standard SKU of Azure load balancer?"
     choices:
     - content: "300 instances"
@@ -63,13 +63,13 @@ quiz:
     choices:
     - content: "DDoS Protection Basic"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. DDoS Protection Standard has several advantages over the Basic service, including logging, alerting, and telemetry."
     - content: "DDoS Protection Standard"
       isCorrect: true
-      explanation: "That’s correct. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s correct. DDoS Protection Standard has several advantages over the Basic service, including logging, alerting, and telemetry."
     - content: "Both Basic and Standard"
       isCorrect: false
-      explanation: "That’s incorrect. DDoS Protection Standard have several advantages over the Basic service, including logging, alerting, and telemetry."
+      explanation: "That’s incorrect. DDoS Protection Standard has several advantages over the Basic service, including logging, alerting, and telemetry."
   - content: "In a cross-premises scenario, where a single or multiple Azure IaaS-hosted SAP workloads are integrated into an existing on-premises SAP environment, which of the following deployments is supported?"
     choices:
     - content: "Different layers of SAP applications are run in different deployment methods."

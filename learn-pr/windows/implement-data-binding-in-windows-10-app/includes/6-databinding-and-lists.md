@@ -2,11 +2,11 @@
 
 ![Tech logo of U W P and W P F. W P F appears dimmed.](../media/tech-uwp.png)
 
-So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
+So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding concepts to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
 
 #### 1. Create the `ColorDescriptor` class
 
-Let's create this class. Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and enter `ColorDescriptor` as the class name. Select **Add** to create the class.
+Let's create a class to represent a color. Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and enter `ColorDescriptor` as the class name. Select **Add** to create the class.
 
 `ColorDescriptor` contains two properties: the color itself as a `Windows.UI.Color` object, and a color name. It also has a constructor that fills these properties, a `ToString()` method that displays the color's name, and hex values for the R, G, and B color components. Here's the entire `ColorDescriptor` class.
 
@@ -210,13 +210,13 @@ The next lesson illustrates how you can select items from a `ListBox` or a dropd
 
 ![Tech logo of U W P and W P F. U W P appears dimmed.](../media/tech-wpf.png)
 
-So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of the `ColorDescriptor` class.
+So far, you've only used data binding to display and edit the properties of a single object. In this lesson, you'll apply data binding concepts to display a collection of objects. To make things simple, these objects will be colors. More specifically, they'll be multiple instances of a `ColorDescriptor` class.
 
 #### 1. Create the `ColorDescriptor` class
 
-Let's create this class. Right-click the `DatabindingSampleWPF` project in **Solution Explorer**, select **Add / Class**, and enter `ColorDescriptor` as the class name. Select **Add** to create the class.
+Let's create the class to represent a color. Right-click the `DatabindingSampleWPF` project in **Solution Explorer**, select **Add / Class**, and enter `ColorDescriptor` as the class name. Select **Add** to create the class.
 
-`ColorDescriptor` contains two properties: the color itself as a `Windows.UI.Color` object, and a color name. It also has a constructor that fills these properties, a `ToString()` method that displays the color's name, and hex values for the R, G, and B color components. Here's the entire `ColorDescriptor` class.
+`ColorDescriptor` contains two properties: the color itself as a `System.Windows.Media.Color` object, and a color name. It also has a constructor that sets these properties, a `ToString()` method that displays the color's name, and hex values for the R, G, and B color components. Here's the entire `ColorDescriptor` class.
 
 ```cs
 using System.Windows.Media;
@@ -243,7 +243,7 @@ namespace DatabindingSampleWPF
 }
 ```
 
-Replace the default contents of the ColorDescriptor.cs file with the preceding code.
+Replace the default contents of the `ColorDescriptor.cs` file with the preceding code.
 
 #### 2. Create the ColorList.xaml page
 
@@ -253,7 +253,7 @@ To display the color list, we'll use a new XAML file. Right-click the `Databindi
 
 #### 3. Set the startup XAML file
 
-Now if you launch the application, it opens with **MainWindow**. Because you're going to be working with the newly created ColorList.xaml, it'd be nice to have that display on startup. To make it happen, open App.xaml, and find the `StratupUri` attribute of the root `Application` element.
+Now if you launch the application, it opens with **MainWindow**. Because you're going to be working with the newly created `ColorList.xaml`, it'd be nice to have that display on startup. To make it happen, open `App.xaml`, and find the `StratupUri` attribute of the root `Application` element.
 
 ```xml
 StartupUri="MainWindow.xaml"
@@ -265,9 +265,9 @@ Replace `MainWindow` with `ColorList`, and verify that the **ColorList** is show
 
 #### 4. Create the `DataContext` for the color list
 
-We'll continue the previously introduced best practice of creating a separate `DataContext` class for the new XAML window. So, go ahead and create a new class, called `ColorListDataContext`.
+We'll continue the previously introduced best practice of creating a separate `DataContext` class for the new XAML window. So, we'll go ahead and create a new class, called `ColorListDataContext`.
 
-Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and then enter `ColorListLogic` as the class' name. Select **Add** to create the class, and paste the following into the file:
+Right-click the `DatabindingSample` project in **Solution Explorer**, select **Add / Class**, and then enter `ColorListDataContext` as the class' name. Select **Add** to create the class, and paste the following into the file:
 
 ```cs
 using System.Collections.ObjectModel;
@@ -291,7 +291,6 @@ namespace DatabindingSampleWPF
                new ColorDescriptor(Colors.Blue, "blue"),
                new ColorDescriptor(Colors.Black, "black")
             };
-
         }
     }
 }
@@ -301,7 +300,7 @@ The `ColorListDataContext` class is very simple (for now). It has a property cal
 
 #### 5. Display the colors in a `ListBox`
 
-The next step is to display the colors in our app. As before, we need to create an instance of the `ColorListDataContext` class in ColorList.xaml, and set it as the `DataContext` for the entire window. Open up ColorList.xaml, and add this right after the `<Window ...>` tag:
+The next step is to display the colors in our app. As before, we need to create an instance of the `ColorListDataContext` class in `ColorList.xaml`, and set it as the `DataContext` for the entire window. Open up `ColorList.xaml`, and add this right after the `<Window ...>` tag:
 
 ```xml
 <Window.DataContext>
@@ -309,9 +308,9 @@ The next step is to display the colors in our app. As before, we need to create 
 </Window.DataContext>
 ```
 
-You need to compile the code at this point, so that the XAML designer can pick up on the newly defined `ColorListDataContext` class.
+You need to compile the code at this point, so that the XAML designer can resolve the newly defined `ColorListDataContext` class.
 
-Then, copy the following XAML inside the `<Grid>` tag:
+Then, copy the following XAML markup inside the `<Grid>` tag:
 
 ```xml
 <ListBox ItemsSource="{Binding LotsOfColors}" 
@@ -329,7 +328,7 @@ If you run the app now, it shows the colors in a `ListBox`! But it's not too nic
 
 #### 6. Define a template for the items
 
-It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property, and its name. Something like this:
+It'd be nice to have a template that shows the actual color stored in the `ColorDescriptor.Color` property and its name. Something like this:
 
 ![Screenshot fo template.](../media/colortemplate-plan.png)
 
@@ -346,10 +345,10 @@ To code this in XAML, we can put a colored `Rectangle` and a `TextBlock` in a `S
 </StackPanel>
 ```
 
-This is one of the strengths of XAML and data binding. Almost every complex visual is based off of templates that you can redefine. To use the above `StackPanel` as a template, we need to put it inside a `DataTemplate`. A `DataTemplate` needs to define a `DataType`, which is the type of data the template can be applied to. In our case, it is the `ColorDescriptor` class. So, the `DataTemplate` looks like this:
+This is one of the strengths of XAML and data binding. Almost every complex visual is based off of templates that you can redefine. To use the above `StackPanel` as a template, we need to put it inside a `DataTemplate`:
 
 ```xml
-<DataTemplate x:DataType="local:ColorDescriptor">
+<DataTemplate>
     <!-- template content comes here -->
 </DataTemplate>
 ```
@@ -368,7 +367,7 @@ How data is rendered in a `ListBox` (and lots of other controls) is controlled b
 
 Later, you will see how a `DataTemplate` can be reused in multiple places by defining it as a resource.
 
-Now the whole `ListBox` looks like this (if you haven't followed along, replace the entire `<ListBox>` tag with the following XAML):
+Now, the markup for the entire `ListBox` looks like this (if you haven't followed along, replace the entire `<ListBox>` element with the following XAML):
 
 ```xml
 <ListBox ItemsSource="{Binding LotsOfColors}" 
@@ -377,7 +376,7 @@ Now the whole `ListBox` looks like this (if you haven't followed along, replace 
          HorizontalAlignment="Left" 
          VerticalAlignment="Top">
     <ListBox.ItemTemplate>
-        <DataTemplate x:DataType="local:ColorDescriptor">
+        <DataTemplate>
             <StackPanel Orientation="Horizontal">
                 <Rectangle Width="80" 
                            Height="20">
@@ -409,10 +408,10 @@ This is called [XAML Hot Reload](/visualstudio/xaml-tools/xaml-hot-reload), and 
 
 ### Summary
 
-This lesson showed you the basics of displaying multiple items in a `ListBox`. There are other controls available for similar purposes, such as `ItemsControl`, `ListView`, and `GridView`. But the basic principles are the same: bind your list (`IEnumerable`, `List<>`) of objects to the `ItemsSource` property, and define `DataTemplates` to control how the individual list items are displayed and behave. You can also redefine the layout of these items, and even the look of the container controls themselves (although this is beyond the scope of this module).
+This lesson walked through the basics of displaying multiple items in a `ListBox`. There are other controls available for similar purposes, such as `ItemsControl`, `ListView`, and `GridView`. But the basic principles are the same: bind your list (`IEnumerable`, `List<>`) of objects to the `ItemsSource` property, and define a `DataTemplate` to control how the individual list items are displayed and behave. You can also redefine the layout of these items, and even the look of the container controls themselves (although this is beyond the scope of this module).
 
-Note that the code never had to deal with the `ListBox` itself. It just created a collection of business objects (`ColorDescriptor`), and the XAML runtime took care of expanding the template for every item.
+Note that the logic code never had any knowledge of the `ListBox` control. It just created a collection of business objects (`ColorDescriptor`), and the XAML runtime handled the rendering of the template for each item.
 
-The next lesson illustrates how you can select items from a `ListBox` or a dropdown, and change the content of lists from code so that adding and removing elements are reflected on the UI.
+The next lesson illustrates how you can select items from a `ListBox` or a `ComboBox`, and change the content of lists from code so that adding and removing elements is reflected on the UI.
 
 ::: zone-end

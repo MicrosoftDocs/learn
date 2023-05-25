@@ -8,7 +8,8 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.service: azure-python
+  ms.devlang: python
 title: Get started with Jupyter notebooks for Python
 summary: Use Jupyter notebooks to run Python. Build a spaceship manual that has interactive, runnable Markdown and code elements.
 abstract: |
