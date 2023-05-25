@@ -32,11 +32,11 @@ Permanently deleting, purging, a key vault is possible via a POST operation on t
 Exceptions are:
 
  -  When the Azure subscription has been marked as *undeletable*. In this case, only the service may then perform the actual deletion, and does so as a scheduled process.
- -  When the--enable-purge-protection argument is enabled on the vault itself. In this case, Key Vault waits for 90 days from when the original secret object was marked for deletion to permanently delete the object.
+ -  When the enable-purge-protection argument is enabled on the vault itself. In this case, Key Vault waits for 90 days from when the original secret object was marked for deletion to permanently delete the object.
 
 ## Key vault recovery
 
-Upon deleting a key vault object, such as a key, the service will places the object in a deleted state, making it inaccessible to any retrieval operations. While in this state, the key vault object can only be listed, recovered, or forcefully/permanently deleted. To view the objects, use the Azure CLI az keyvault key list-deleted command, or the PowerShell Get-AzKeyVault -InRemovedState command.
+Upon deleting a key vault object, such as a key, the service will place the object in a deleted state, making it inaccessible to any retrieval operations. While in this state, the key vault object can only be listed, recovered, or forcefully/permanently deleted. To view the objects, use the Azure CLI az keyvault key list-deleted command, or the PowerShell Get-AzKeyVault -InRemovedState command.
 
 At the same time, Key Vault will schedule the deletion of the underlying data corresponding to the deleted key vault or key vault object for execution after a predetermined retention interval. The DNS record corresponding to the vault is also retained during the retention interval.
 
@@ -114,18 +114,18 @@ To back up a key vault object, you must have:
 
 3. Navigate to the key you want to back up.
 
-### :::image type="content" source="../media/azure-key-vault-key-entry-list-example-100d7123.png" alt-text="Screenshot showing a Key Vault entry."::: 
+   :::image type="content" source="../media/azure-key-vault-key-entry-list-example-100d7123.png" alt-text="Screenshot showing a Key Vault entry."::: 
 
 4. Select the object
 
 5. Select **Download Back up**
 
-:::image type="content" source="../media/azure-portal-key-vault-download-back-up-example-04bb8301.png" alt-text="Screenshot showing Key Vault download back up control.":::
+   :::image type="content" source="../media/azure-portal-key-vault-download-back-up-example-04bb8301.png" alt-text="Screenshot showing Key Vault download back up control.":::
 
 
 6. Select **Download**
 
-:::image type="content" source="../media/azure-portal-creating-an-azure-key-vault-backup-example-032c52d7.png" alt-text="Screenshot showing creating a back up procedure and control operation.":::
+   :::image type="content" source="../media/azure-portal-creating-an-azure-key-vault-backup-example-032c52d7.png" alt-text="Screenshot showing creating a back up procedure and control operation.":::
 
 
 7. Store the encrypted blob in a secure location.
@@ -140,7 +140,7 @@ To back up a key vault object, you must have:
 
 4. Select **Restore Backup**.
 
-## :::image type="content" source="../media/azure-key-vault-restore-back-up-control-example-244106f1.png" alt-text="Screenshot showing Key Vault restore back up control."::: 
+   :::image type="content" source="../media/azure-key-vault-restore-back-up-control-example-244106f1.png" alt-text="Screenshot showing Key Vault restore back up control."::: 
 
 5. Navigate to the location where you stored the encrypted blob.
 
