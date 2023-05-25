@@ -11,7 +11,7 @@ In this task, you delete a VM to test rule detection and incident creation.
 
 1. In the Azure portal, search for and select **Virtual machines**.
 2. On the **Virtual machines** page, select the check box beside the virtual machine labeled **simple-vm**, and then select **Delete** from the toolbar.
-3. In the **Delete Resources** pane, enter **delete** to confirm the deletion, and then select **Delete**.
+3. In the **Delete Resources** pane, confirm the deletion and then select **Delete**.
 
 ## Manage Microsoft Sentinel threat-hunting queries
 
@@ -19,7 +19,7 @@ In this task, you create and manage threat-hunting queries to review events rela
 
 1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Sentinel workspace.
 2. On the **Microsoft Sentinel** page, on the menu bar, in the **Threat management** section, select **Hunting**.
-3. On the **Hunting** page, select **New Query**.
+3. On the **Hunting** page, select the **Queries** tab. Then choose **New Query**.
 4. On the **Create custom query** page, provide the following inputs, and then select **Create**.
 
    - **Name**: Enter **Deleted VMs**.

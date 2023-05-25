@@ -3,7 +3,7 @@ uid: learn.azure.hunt-threats-sentinel.7-summary
 metadata:
   title: Summary
   description: Summary of threat hunting using Microsoft Sentinel.
-  ms.date: 05/26/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
