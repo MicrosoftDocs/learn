@@ -3,73 +3,13 @@ Any application that outsources authentication to Azure AD needs to be registere
 
 ### Azure AD application scenarios
 
-:::row:::
-  :::column:::
-    **Frontend**
-  :::column-end:::
-  :::column:::
-    **Authentication**
-  :::column-end:::
-  :::column:::
-    **Backend**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Single page application are frontends that run in a browser
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint
-  :::column-end:::
-  :::column:::
-    Web API
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Web apps are applications that authenticate a user in a web browser to a web application
-  :::column-end:::
-  :::column:::
-    Azure AD WS-Federation or SAML Endpoint
-  :::column-end:::
-  :::column:::
-    Web application
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Native apps are applications that call a web API on behalf of a user
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint and Azure AD Token Endpoint
-  :::column-end:::
-  :::column:::
-    Web API
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Web API apps are web applications that need to get resources from a web API
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint and Azure AD Token Endpoint
-  :::column-end:::
-  :::column:::
-    Web application and Web API
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Service-to-service applications are daemon or server application that needs to get resources from a web API
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint and Azure AD Token Endpoint
-  :::column-end:::
-  :::column:::
-    Web API
-  :::column-end:::
-:::row-end:::
-
+| **Frontend**                                                                                                | **Authentication**                                          | **Backend**                 |
+| ----------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------- | --------------------------- |
+| Single page application are frontends that run in a browser                                                 | Azure AD Authorization Endpoint                             | Web API                     |
+| Web apps are applications that authenticate a user in a web browser to a web application                    | Azure AD WS-Federation or SAML Endpoint                     | Web application             |
+| Native apps are applications that call a web API on behalf of a user                                        | Azure AD Authorization Endpoint and Azure AD Token Endpoint | Web API                     |
+| Web API apps are web applications that need to get resources from a web API                                 | Azure AD Authorization Endpoint and Azure AD Token Endpoint | Web application and Web API |
+| Service-to-service applications are daemon or server application that needs to get resources from a web API | Azure AD Authorization Endpoint and Azure AD Token Endpoint | Web API                     |
 
 Azure AD represents applications following a specific model that's designed to fulfill two main functions:
 
