@@ -83,11 +83,11 @@ The company is designing and developing a new app. Developers need to ensure the
 1. The developers require an encryption scope that enables infrastructure encryption. [Learn more about infrastructure encryption](/azure/storage/common/infrastructure-encryption-enable?tabs=portal)
 
     - Continue working with your new storage account. 
-    - In the **Security + networking ** blade, select **Encryption**.
+    - In the **Security + networking** blade, select **Encryption**.
      -In the **Encryption scopes** tab, click **Add**.
         - Give your encryption scope a **name**. 
         - The encryption type is **Microsoft-managed key**.
-        - Set infrastructure encryption to ** Enable**. 
+        - Set infrastructure encryption to **Enable**. 
 
 
 > [!NOTE]
