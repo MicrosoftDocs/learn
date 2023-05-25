@@ -42,7 +42,7 @@ ssh root@127.0.0.1 -L 9990:localhost:9990 -p $PORT_NUMBER
 
 You see the following messages when you sign in to the server.
 
-```bash
+```output
 The authenticity of host '[127.0.0.1]:59445 ([127.0.0.1]:59445)' can't be established.
 ECDSA key fingerprint is SHA256:vHsp1b3+7NtnHISvZ6aKS82pww+e5L6CUc9fKaPZGDQ.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -166,8 +166,7 @@ You can also confirm the RESTful endpoints of your application from **Runtime** 
 :::image type="content" source="../media/jboss-admin-console-4.png" alt-text="Screenshot that shows RESTful endpoints on the admin console.":::
 
 > [!WARNING]
-> If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration will be cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, configure this in a startup script.
-For example, we created the `createMySQLDataSource.sh` as a startup script in a previous unit.
+> If you directly access the remote server via the JBoss CLI command or web console and add or update a configuration, the configuration will be cleared and deleted after the Azure App Service instance is restarted. To persist the configuration, configure this in a startup script. For example, we created the `createMySQLDataSource.sh` as a startup script in a previous unit.
 
 ## Open a log stream
 
@@ -180,7 +179,7 @@ az webapp log tail --name ${WEBAPP_NAME} --resource-group ${RESOURCEGROUP_NAME}
 
 After you run the command, you get your log output:
 
-```azurecli
+```output
 az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
   -g jakartaee-app-on-jboss-1606464084546-rg
 
@@ -195,6 +194,6 @@ az webapp log tail  -n jakartaee-app-on-jboss-1606464084546 \
 
 ## Exercise summary
 
-In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) application to JBoss EAP on Azure App Service. Then you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
+In this unit, you learned how to configure and deploy a Java EE 8 (Jakarta EE) application to JBoss EAP on Azure App Service. Then, you used a `DataSource` object for connecting MySQL to JBoss EAP in a startup script.
 
 You also learned how to access the remote server from both the CLI and the GUI by using a TCP tunnel. Finally, you accessed the log file from a local machine.
