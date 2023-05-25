@@ -7,7 +7,7 @@ Subscriptions are a unit of management, billing, and scale within Azure. They pl
  -  application portfolios
 
 > [!NOTE]
-> ou should review the subscription limits as documented in Billing accounts and scopes in the Azure portal. This guidance is primarily aimed at customers using Enterprise Agreements, Microsoft Customer Agreements (Enterprise) or Microsoft Partner Agreements (CSP).
+> You should review the subscription limits as documented in Billing accounts and scopes in the Azure portal. This guidance is primarily aimed at customers using Enterprise Agreements, Microsoft Customer Agreements (Enterprise) or Microsoft Partner Agreements (CSP).
 
 ## Subscriptions considerations
 
