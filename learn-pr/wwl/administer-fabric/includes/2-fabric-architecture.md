@@ -32,4 +32,4 @@ Fabric *items* are the building blocks of the Fabric platform. They're the objec
 Understanding Fabric concepts is important for you as an admin, because it helps you understand how to manage the Fabric environment.
 
 > [!NOTE]
-> See [Enable Microsoft Fabric for your organization](https://github.com/MicrosoftDocs/fabric-docs-pr/blob/release-public-preview/docs/admin/admin-switch.md) to learn how to opt in to the Fabric public preview.
+> See [Enable Microsoft Fabric for your organization](https://learn.microsoft.com/fabric/admin/fabric-switch) to learn how to opt in to the Fabric public preview.

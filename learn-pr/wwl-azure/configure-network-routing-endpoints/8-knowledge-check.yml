@@ -4,19 +4,16 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/26/2023
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which statement best describes Azure routing?"
     choices:
@@ -29,7 +26,6 @@ quiz:
     - content: "Azure gateways are needed to route traffic between subnets."
       isCorrect: false
       explanation: "Incorrect. Gateways aren't needed to route traffic between subnets."
-
   - content: "What's a valid next hop type?"
     choices:
     - content: "Load Balancer"
@@ -40,13 +36,12 @@ quiz:
       explanation: "Incorrect. ExpressRoute isn't a valid next hop type."
     - content: "Internet"
       isCorrect: true
-      explanation: "Correct. The valid next hop choices are virtual appliance, virtual network gateway, virtual network, internet, and none."      
-  
+      explanation: "Correct. The valid next hop choices are virtual appliance, virtual network gateway, virtual network, internet, and none."
   - content: "How can you extend the company's private address space with direct connections to Azure resources?"
     choices:
     - content: "Virtual network endpoints"
       isCorrect: true
-      explanation: "Correct. Virtual network endpoints extend the private address space in Azure. Endpoints restrict the flow of traffic. As service endpoints are created, Azure creates routes in the route table to direct the traffic."    
+      explanation: "Correct. Virtual network endpoints extend the private address space in Azure. Endpoints restrict the flow of traffic. As service endpoints are created, Azure creates routes in the route table to direct the traffic."
     - content: "User-defined routes"
       isCorrect: false
       explanation: "Incorrect. User-defined routes are created so Azure virtual appliances can handle the traffic both between subnets and to the internet."

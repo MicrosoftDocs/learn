@@ -22,5 +22,3 @@ Items in workspaces are best distributed through a workspace app or the workspac
 
 You can manage sharing and distribution both internally and outside of your organization, in compliance with your organization's policies and procedures.
 
-> [!NOTE]
-> See [Share items](https://github.com/MicrosoftDocs/fabric-docs-pr/blob/release-public-preview/docs/get-started/share-items.md) to learn more about sharing items in Fabric.
