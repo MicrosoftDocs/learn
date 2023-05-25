@@ -1,3 +1,4 @@
+
 This module explored agile development practices and helped define and configure teams and tools for collaboration.
 
 You learned how to describe the benefits and usage of:
@@ -15,4 +16,4 @@ You learned how to describe the benefits and usage of:
  -  [Agile Board \| Trello](https://trello.com/b/DnZvFigA/agile-board).
  -  [Agile Alliance](https://www.agilealliance.org/).
  -  [12 Principles Behind the Agile Manifesto \| Agile Alliance](https://www.agilealliance.org/agile101/12-principles-behind-the-agile-manifesto).
- -  [Jira \| Issue &amp; Project Tracking Software \| Atlassian](https://www.atlassian.com/software/jira).
+ -  [Jira \| Issue & Project Tracking Software \| Atlassian](https://www.atlassian.com/software/jira).

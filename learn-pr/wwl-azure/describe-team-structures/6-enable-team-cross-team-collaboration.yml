@@ -4,13 +4,10 @@ title: Enable in-team and cross-team collaboration
 metadata:
   title: Enable in-team and cross-team collaboration
   description: "Enable in-team and cross-team collaboration"
-  ms.date: 11/29/2022
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
 content: |
   [!include[](includes/6-enable-team-cross-team-collaboration.md)]

@@ -1,3 +1,4 @@
+
 While developing agile methods does not require specific tooling, tools can often enhance the achieved outcomes.
 
 It is essential to realize that the vital tool for agile development is the process itself.

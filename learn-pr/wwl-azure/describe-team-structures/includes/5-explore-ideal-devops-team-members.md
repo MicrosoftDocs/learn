@@ -1,3 +1,4 @@
+
 For a successful DevOps transformation, the aim is to find team members with the following characteristics:
 
  -  They already think there is a need to change.

@@ -1,3 +1,4 @@
+
 ## Waterfall
 
 Traditional software development practices involve:
