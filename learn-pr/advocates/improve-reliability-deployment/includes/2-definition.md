@@ -13,7 +13,7 @@ Our focus as part of this learning path is how to best deploy software for relia
 
 ## Scenario: The epic deployment
 
-The word _epic_ means "grand, monumental, or vast." But in the context of this discussion, it's not a good thing. The term was "epic" was coined by Jez Humble in his book _Continuous Delivery:  Reliable Software Releases through Build, Test, and Deployment Automation_ because it represents a massive (and massively disruptive) undertaking. Here’s an example of how it typically happens:
+The word _epic_ means "grand, monumental, or vast." But in the context of this discussion, it's not a good thing. The term "epic" was coined by Jez Humble in his book _Continuous Delivery:  Reliable Software Releases through Build, Test, and Deployment Automation_ because it represents a massive (and massively disruptive) undertaking. Here’s an example of how it typically happens:
 
 - An organization develops a sales-related application. This application is updated exactly two times per year.
 - During these updates all the new features, bug fixes (large and small), and dependency updates are deployed.

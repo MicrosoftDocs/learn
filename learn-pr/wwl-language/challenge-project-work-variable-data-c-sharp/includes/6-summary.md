@@ -1,5 +1,7 @@
 
 
+
+
 Your challenge was to update an application to support multiple term search and to improve the "search status" information animation.
 
 In this module, you developed code that combines:
@@ -11,9 +13,9 @@ In this module, you developed code that combines:
 - Creating and manipulating string arrays, and sorting array data
 - Modifying and building complex strings from multiple data sources, and formatting data for display
 
-You delivered functionality to your Contos pet app team, including:
+You delivered functionality to your Contoso pet app team, including:
 
 - Gather the pet characteristics for multiple search term inputs
-- Stored search input terms in a sorted array
+- Store search input terms in a sorted array
 - Display the dogs that have a term match
-- Provided an improved search status animation with a countdown
+- Provide an improved search status animation with a countdown

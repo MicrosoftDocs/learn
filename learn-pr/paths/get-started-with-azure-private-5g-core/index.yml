@@ -1,6 +1,5 @@
 ### YamlMime:LearningPath
 uid: learn.get-started-with-azure-private-5g-core
-hidden: true
 title: Get started with Azure Private 5G Core
 summary: |
   Azure Private 5G Core offers simple, scalable, and secure deployment of private 5G core networks on an Azure Arc-managed edge platform within the Azure private multi-access edge compute solution.
@@ -11,8 +10,8 @@ metadata:
   title: Get started with Azure Private 5G Core
   description: Learn about Azure Private 5G Core and ways to deploy, monitor, and manage the Azure Private 5G Core service.
   ms.date: 12/28/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.service: learning-private-5g-core
 prerequisites: |

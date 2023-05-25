@@ -2,8 +2,8 @@
 uid: learn.wwl.get-started-c-sharp-part-1
 metadata:
   title: Write your first code using C# (Get started with C#, Part 1)
-  description: "Learn the basic syntax and thought processes required to build simple applications using C#"
-  ms.date: 02/24/2023
+  description: Learn the basic syntax and thought processes required to build simple applications using C#.
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -31,7 +31,6 @@ summary: |
     [Add logic to C# console applications (Get started with C#, Part 3)](../get-started-c-sharp-part-3/index.yml) 
   :::column-end:::
   :::row-end:::
-
   :::row:::
    :::column:::
     <img src="/training/achievements/csharp-data.svg" width="101" alt="Screenshot of the trophy for the Work with variable data in C# console applications (Get started with C#, Part 4) learning path." role="presentation"></img>
@@ -54,9 +53,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- vs-code
 subjects:
 - development-tools
 modules:

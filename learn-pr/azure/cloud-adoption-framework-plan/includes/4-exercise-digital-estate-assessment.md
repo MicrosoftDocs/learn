@@ -168,7 +168,7 @@ Here are a few recommendations:
 
 - **Start small, then go big:** Start by moving applications and workloads that present minimal risk and complexity to build confidence in your migration strategy. Analyze Azure Migrate assessment recommendations and your CMDB repository to find and migrate dev/test workloads that might be candidates for pilot migrations. Feedback and learnings from pilot migrations can be helpful as you begin migrating production workloads.
 
-- **Comply:** Azure maintains the largest compliance portfolio in the industry in terms of breadth and depth of offerings. Use compliance requirements to prioritize migrations so that applications and workloads comply with your national, regional, and industry-specific standards and laws. This is especially true for organizations that deal with business-critical processes, hold sensitive information, or are in heavily regulated industries. In these types of organizations, standards and regulations abound, might change often, and can be difficult to keep up with.
+- **Comply:** Azure maintains the largest compliance portfolio in the industry in terms of breadth and depth of offerings. Use compliance requirements to prioritize migrations so that applications and workloads comply with your national/regional and industry-specific standards and laws. This is especially true for organizations that deal with business-critical processes, hold sensitive information, or are in heavily regulated industries. In these types of organizations, standards and regulations abound, might change often, and can be difficult to keep up with.
 
 ## Finalize the migration plan
 

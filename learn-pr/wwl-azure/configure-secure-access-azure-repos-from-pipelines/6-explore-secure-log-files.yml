@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.explore-secure-log-files
+title: Explore and secure log files
+metadata:
+  title: Explore and secure log files
+  description: "Explore and secure log files."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/6-explore-secure-log-files.md)]

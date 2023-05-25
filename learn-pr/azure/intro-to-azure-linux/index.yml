@@ -3,15 +3,14 @@ uid: learn.azure.intro-to-azure-linux
 metadata:
   title: Introduction to Linux on Azure
   description: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure.  
-  ms.date: 6/26/2020
+  ms.date: 04/12/2023
   author: ChaseCrum
   ms.author: chasecrum
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to Linux on Azure
 summary: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure. 
 abstract: |
-  By the end of this module, you will be able to:
+  By the end of this module, you'll be able to:
 
   - Differentiate between Linux on Azure infrastructure as a service (IaaS) and platform as a service (PaaS) computing, and the value of each
   - Describe Azure tools and services that bring additional value to Linux workloads

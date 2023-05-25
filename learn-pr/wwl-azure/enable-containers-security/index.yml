@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Enable Containers security
 summary: Explore how to secure your applications running within containers and how to securely connect to them.
 abstract: |

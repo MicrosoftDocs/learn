@@ -59,7 +59,7 @@ SELECT stg.*
 FROM dbo.StageCustomers AS stg
 JOIN dbo.DimCustomer AS dim
 ON stg.CustNo = dim.CustomerAltKey
-AND stg.StreeetAddress <> dim.StreetAddress;
+AND stg.StreetAddress <> dim.StreetAddress;
 
 ```
 

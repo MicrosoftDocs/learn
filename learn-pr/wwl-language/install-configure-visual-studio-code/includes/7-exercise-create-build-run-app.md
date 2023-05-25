@@ -1,7 +1,9 @@
 
+
+
 The .NET software development kit (SDK) includes a command-line interface (CLI) that can be accessed from Visual Studio Code's integrated Terminal. During this training, you use .NET CLI commands to create new console applications, build your project code, and run your applications.
 
-For example, the following .NET CLI command to create a new console application in the specified folder location:
+For example, the following .NET CLI command will create a new console application in the specified folder location:
 
 ```dotnetcli
 dotnet new console -o ./CsharpProjects/TestProject
@@ -14,7 +16,7 @@ The structure of a CLI command consists of the following three parts:
 - The command arguments: `-o ./CsharpProjects/TestProject` in this example.
 
 > [!NOTE]
-> Command arguments are optional parameters that can be used to provide additional information. The previous command could be run without specifying the optional folder location: `dotnet new console`. In this case, the new console application would be created at the folder location specified by the command prompt.
+> Command arguments are optional parameters that can be used to provide additional information. The previous command could be run without specifying the optional folder location. For example: `dotnet new console`. In this case, the new console application would be created at the current folder location.
 
 In this exercise, you use Visual Studio Code to create a new project folder, create a new console application using a CLI command, customize the application in the Visual Studio Code Editor, and then build and run your app.
 
@@ -51,7 +53,7 @@ To begin, you create a console application in a folder location that's easy to f
     C:\Users\someuser\Desktop>
     ```
 
-1. At the Terminal command prompt, to create a new console application in a specified folder, type **dotnet new console -o ./CsharpProjects/TestProject** and then press Enter.
+1. At the Terminal command prompt, to create a new console application in a specified folder, type **`dotnet new console -o ./CsharpProjects/TestProject`** and then press Enter.
 
     ![Screenshot showing a command being entered in the Visual Studio Code terminal panel.](../media/visual-studio-code-terminal-command.png)
 
@@ -105,7 +107,7 @@ In this task, you use the EXPLORER view to open your code project folder, custom
 
     The `dotnet build` command builds the project and its dependencies into a set of binaries. The binaries include the project's code in Intermediate Language (IL) files with a .dll extension. Depending on the project type and settings, other files may also be included. If you're curious, you can find the TestProject.dll file in the EXPLORER panel at a folder location that's similar to the following path:
 
-    `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net6.0\`
+    `C:\Users\someuser\Desktop\CsharpProjects\TestProject\bin\Debug\net7.0\`
 
     > [!NOTE]
     > Your folder path will reflect your account and the folder path to your TestProject folder.

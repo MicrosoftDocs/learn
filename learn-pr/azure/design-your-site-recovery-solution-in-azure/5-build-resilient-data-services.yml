@@ -4,9 +4,9 @@ title: Build resilient data services
 metadata:
   title: Build resilient data services
   description: Build resilient data services
-  ms.date: 11/18/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 05/10/2023
+  author: ankitaduttaMSFT
+  ms.author: ankitadutta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

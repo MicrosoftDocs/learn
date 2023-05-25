@@ -4,8 +4,8 @@ metadata:
   title: Learn how to threat model a client application to use in a PAW
   description: Get started with assessing a client application to be used in a secured environment with threat modeling.
   ms.date: 05/27/2021
-  author: rodrigosantos
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-threat-modeling
 title: Introduction

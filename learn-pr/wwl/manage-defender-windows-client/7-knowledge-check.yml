@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/31/2023
+  ms.date: 05/10/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Contoso has implemented Microsoft Defender Antivirus on all company devices to help prevent spyware and other unwanted software from running on any of its computers. As a best practice, Contoso schedules a daily Quick scan on each device. When running a scan using Microsoft Defender Antivirus, what does Microsoft Defender do when it detects a potentially harmful file?"
+  - content: "Contoso has implemented Microsoft Defender Antivirus on all company devices to help prevent spyware and other unwanted software from running on any of its computers. As a best practice, Contoso schedules a daily Quick scan on each device. If Microsoft Defender Antivirus identifies a potentially dangerous file during a scan, what action does it take?"
     choices:
     - content: "Flags it as being potentially infected"
       isCorrect: false

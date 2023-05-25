@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 04/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following is a limitation of the Azure SQL Managed Instance link feature?"
+    choices:
+    - content: "The link feature can only replicate databases of a certain size."
+      isCorrect: false
+      explanation: "Incorrect. There's no specific database size limit."
+    - content: "The link feature cannot replicate databases that use In-Memory OLTP objects on the General Purpose service tier."
+      isCorrect: true
+      explanation: "Correct. Replicating databases that use In-Memory OLTP objects is not supported on the General Purpose service tier of Azure SQL Managed Instance."
+    - content: "The link feature cannot replicate databases that use columnstore indexes."
+      isCorrect: false
+      explanation: "Incorrect. Columnstore indexes are supported."
+  - content: "How many databases can be placed into a single availability group for one Azure SQL Managed Instance link?"
+    choices:
+    - content: "Only one database"
+      isCorrect: true
+      explanation: "Correct. Only one database can be placed into a single availability group for one Azure SQL Managed Instance link."
+    - content: "Multiple databases"
+      isCorrect: false
+      explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
+    - content: "Multiple databases, as long as the database size is less than a certain limit"
+      isCorrect: false
+      explanation: "Incorrect. Multiple databases aren't supported. However, it's possible to replicate multiple databases in a single SQL Server instance by establishing multiple links."
+  - content: "What is one way in which Microsoft Purview policies can provide access to SQL Server?"
+    choices:
+    - content: "Creating a login and mapping it to a Purview policy"
+      isCorrect: false
+      explanation: "That's incorrect. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account."
+    - content: "Creating a policy in Purview based on an Azure Active Directory (Azure AD) account"
+      isCorrect: true
+      explanation: "That's correct. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account."
+    - content: "Creating a role in SQL Server that maps to a Purview policy"
+      isCorrect: false
+      explanation: "That's incorrect. One way is creating a policy in Purview based on an Azure Active Directory (Azure AD) account."

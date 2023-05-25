@@ -1,15 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.azure-security-center.mitre-attack
-title: Mitre Attack - Cloud Matrix
+title: MITRE Attack matrix
 metadata:
-  title: Mitre Attack - Cloud Matrix
-  description: "Mitre Attack"
-  ms.date: 04/05/2023
+  title: MITRE Attack matrix
+  description: "MITRE Attack matrix"
+  ms.date: 04/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/2-mitre-attack.md)]

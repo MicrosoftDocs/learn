@@ -64,7 +64,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     </voice>
     ```
 
-    Like the last two code excerpts, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch, and also contains `<break>` elements that add a pause between phrases. However, this excerpt also contains a `<phoneme>` element that helps the text-to-speech engine to pronounce an older English word that it might not know how to pronounce.
+    Like the last two code excerpts, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch, and also contains `<break>` elements that add a pause between phrases. However, this excerpt also contains a `<phoneme>` element that helps the text to speech engine to pronounce an older English word that it might not know how to pronounce.
 
 1. When you've finished adding all of the code, your XML file should resemble the following example.
 
@@ -105,7 +105,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
 1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
 
-## Update the code for your text-to-speech application for SSML
+## Update the code for your text to speech application for SSML
 
 1. In the Cloud Shell on the right, open the *Program.cs* file.
 
@@ -201,7 +201,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     -rw-r--r-- 1 user   user      413 Oct  1 11:11 Shakespeare.txt
     -rw-r--r-- 1 user   user   978260 Oct  1 11:11 Shakespeare.wav
     -rw-r--r-- 1 user   user     1117 Oct  1 11:11 Shakespeare.xml
-    -rw-r--r-- 1 user   user      348 Oct  1 11:11 text-to-speech.csproj
+    -rw-r--r-- 1 user   user      348 Oct  1 11:11 text to speech.csproj
     ```
 
 ## Optional: Listen to your WAVE file

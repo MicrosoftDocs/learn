@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.keep-your-virtual-machines-updated.5-exercise-use-azure-log-analytics-and-schedule-updates
-title: Exercise - Use azure log analytics and schedule updates
+title: Exercise - Use Azure log analytics and schedule updates
 metadata:
-  title: Exercise - Use azure log analytics and schedule updates
-  description: Exercise - Use azure log analytics and schedule updates
+  title: Exercise - Use Azure log analytics and schedule updates
+  description: Exercise - Use Azure log analytics and schedule updates
   ms.date: 12/21/2018
   author: cynthn
   ms.author: cynthn

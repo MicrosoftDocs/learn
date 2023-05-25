@@ -10,12 +10,12 @@ In this module, you created resources using your Azure subscription. You want to
 
    1. In the **Overview** tab of the resource group, select **Delete resource group**.
 
-   1. A dialog box appears prompting you to confirm the deletion. Enter the name of the resource group again, and select **Delete**. This will delete all of the resources we created in this module.
+   1. A dialog box appears prompting you to confirm the deletion. Enter the name of the resource group again, and select **Delete**. Select **Delete** again to confirm deletion. This will delete all of the resources we created in this module.
 
 ## Learn more
 
-- [Container Registry](https://azure.microsoft.com/services/container-registry/)
-- [Use a custom Docker image for Web App for Containers](/azure/app-service/containers/tutorial-custom-docker-image)
+- [Azure Container Registry](https://azure.microsoft.com/services/container-registry/)
+- [Migrate custom software to Azure App Service using a custom container](/azure/app-service/tutorial-custom-container)
 - [Tutorial: Build and deploy container images in the cloud with Azure Container Registry Tasks](/azure/container-registry/container-registry-tutorial-quick-task)
 - [Tutorial: Automate container image builds in the cloud when you commit source code](/azure/container-registry/container-registry-tutorial-build-task)
 - [List of Azure CLI commands to manage private Azure Container Registries](/cli/azure/acr)

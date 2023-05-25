@@ -1,5 +1,7 @@
 
 
+
+
 As you continue your development work for a logistics company, you will be building a series of small applications.  Combined, the applications take data from one partner's system, modify the data, then pass it to an internal system in the format it requires.
 
 To perform this transformation on the data, you'll need to accept incoming data as a string, parse it into smaller data elements, then manipulate it to match a different format. But how can you parse the string data into smaller data elements?
@@ -10,7 +12,7 @@ The variables of type `string` have many built-in methods that convert a single 
 
 When processing data from other computer systems, sometimes it's formatted or encoded in a way that's not useful for your purposes. In those cases, you can use the `string` data type's Array methods to parse a larger string into an array.
 
-### Use the ToCharArray() to reverse a string
+### Use the `ToCharArray()` to reverse a `string`
 
 1. Delete or use the line comment operator `//` to comment out all of the code from the previous exercises.
 
@@ -64,7 +66,7 @@ Next, you'll reverse the order of the chars in the array, then use the `Write` m
 
     ```
 
-### Combine all of the chars into a new comma-separated-value string using Join
+### Combine all of the chars into a new comma-separated-value string using `Join()`
 
 Perhaps you need to separate each element of the char array using a comma, as is common when working with data that is represented as ASCII text. To do that, you'll comment out the line of code you added in Step 2 and use the `String` class' `Join()` method, passing in the char you want to delimit each segment (the comma) and the array itself.
 
@@ -89,7 +91,7 @@ Perhaps you need to separate each element of the char array using a comma, as is
 
     ```
 
-### Split the new comma-separated-value string into an array of strings
+### `Split()` the comma-separated-value string into an array of strings
 
 To complete the code, you'll use the `Split()` method, which is used with variables of type `string` to create an array of strings.
 

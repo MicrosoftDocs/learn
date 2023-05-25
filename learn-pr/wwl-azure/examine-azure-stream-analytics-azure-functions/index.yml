@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: stream-analytics
 title: Examine Azure Stream Analytics and Azure Functions
 summary: This module introduces you to processing IoT data with Azure Stream Analytics and Azure Functions, the capabilities provided by the ASA service, and the configuration options for ASA inputs, outputs, and queries.
 abstract: |

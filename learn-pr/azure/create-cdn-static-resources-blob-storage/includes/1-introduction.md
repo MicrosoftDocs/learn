@@ -1,6 +1,6 @@
 Azure Content Delivery Networks (CDNs) can help reduce latency and improve performance for high-bandwidth content.
 
-Imagine you're the web administrator for a global company that produces and delivers online training videos. Your videos are well rated by your users, and your company is expanding into new regions. You want to ensure you maintain your high ratings as you expand. If users experience slow page loads, or videos take a long time to start playing, your new target customers may rate your content poorly or not use your services at all.
+Imagine you're the web administrator for a global company that produces and delivers online training videos. Your users rate your videos well, and your company is expanding into new regions. You want to ensure you maintain your high ratings as you expand. If users experience slow page loads, or videos take a long time to start playing, your new target customers may rate your content poorly or not use your services at all.
 
 Your site is hosted using Azure Blob storage's static website hosting feature. It's based on static content, where site content is only changed when new videos are published every few weeks. This approach helps manage costs while still enabling your site to scale as the business grows. You need to find a way to optimize the performance of your website and ensure your media assets, including large video files, download quickly and reliably.
 

@@ -72,7 +72,7 @@ Bayesian sampling chooses hyperparameter values based on the Bayesian optimizati
 ```python
 from azure.ai.ml.sweep import Uniform, Choice
 
-command_job_for_sweep = command_job(
+command_job_for_sweep = job(
     batch_size=Choice(values=[16, 32, 64]),    
     learning_rate=Uniform(min_value=0.05, max_value=0.1),
 )
@@ -83,5 +83,5 @@ sweep_job = command_job_for_sweep.sweep(
 )
 ```
 
-You can only use Bayesian sampling with **choice**, **uniform**, and **quniform** parameter expressions, and you can't combine it with an early-termination policy.
+You can only use Bayesian sampling with **choice**, **uniform**, and **quniform** parameter expressions.
 

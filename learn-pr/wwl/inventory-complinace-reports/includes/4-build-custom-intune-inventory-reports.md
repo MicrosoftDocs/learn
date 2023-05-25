@@ -1,4 +1,5 @@
 
+
 You can use the Intune Data Warehouse to build professional looking reports that provide insight into your enterprise mobile environment. For example, some of the reports include:
 
  -  Trend of users enrolling in Intune so you can optimize your license purchases
@@ -41,7 +42,7 @@ With a client authenticated to Azure AD, the OData URL connects to the RESTful e
     
     ```
 3.  Open **Power BI Desktop**.
-4.  Choose **Home** &gt; **Get Data**. Select **OData feed**.
+4.  Choose **Home** > **Get Data**. Select **OData feed**.
 5.  Type or paste the OData URL into the URL box.
 6.  Authenticate to Azure AD for your tenant from the Power BI desktop client by signing in on the Organizational account tab.
 7.  Select the desired tables needed for reporting.

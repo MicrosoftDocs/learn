@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.case-study-design-security-solutions-infrastructure
+metadata:
+  title: "Case study: Design security solutions for infrastructure"
+  description: "Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+  ms.date: 4/4/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+title: "Case study: Design security solutions for infrastructure"
+summary: "Apply your cybersecurity architect skills on a real business scenario in the area of infrastructure security. You analyze design requirements, answer conceptual and technical questions and design a solution to meet the business needs."
+abstract: |
+  You learn:
+  -   How to analyze business requirements
+  -   How to match technical capabilities to meet those needs
+  -   How to design cohesive solutions that incorporate all of the required functions
+prerequisites: |
+  -   Advanced experience and knowledge in identity and access, platform protection, security operations, securing data and securing applications.
+  -   Experience with hybrid and cloud implementations.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - advanced
+roles:
+  - security-engineer
+  - solution-architect
+products: 
+  - entra
+  - azure-active-directory
+  - azure-active-directory-connect
+  - azure-active-directory-domain
+  - azure-active-directory-pass-through-authentication
+subjects: 
+  - security
+  - cloud-security
+units:
+- learn.wwl.case-study-design-security-solutions-infrastructure.introduction
+- learn.wwl.case-study-design-security-solutions-infrastructure.case-study-description
+- learn.wwl.case-study-design-security-solutions-infrastructure.case-study-answers
+- learn.wwl.case-study-design-security-solutions-infrastructure.conceptual-walkthrough
+- learn.wwl.case-study-design-security-solutions-infrastructure.technical-walkthrough
+- learn.wwl.case-study-design-security-solutions-infrastructure.knowledge-check
+- learn.case-study-design-security-solutions-infrastructure.summary
+badge:
+  uid: learn.wwl.case-study-design-security-solutions-infrastructure.badge

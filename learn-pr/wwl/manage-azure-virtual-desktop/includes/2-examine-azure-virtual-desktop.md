@@ -1,9 +1,10 @@
 
 
+
 Azure Virtual Desktop, a cloud-based desktop and app virtualization service on Microsoft Azure, offers access to remote desktops and apps across various devices, including Windows, Mac, iOS, Android, and Linux. It also supports most modern browsers for accessing experiences hosted on Azure Virtual Desktop.
 ## Optimal User Experience 
 
-Azure Virtual Desktop allows users to connect via any device with internet access using a native or the Azure Virtual Desktop HTML5 web client. Users experience minimal load times since session host VMs are close to the apps and services connected to the data center or cloud. Containerized user profiles enable fast user sign-ins through FSLogix. Personal (persistent) desktops can be provided for individual ownership, allowing users to modify programs without affecting others.
+Azure Virtual Desktop allows users to connect via any device with internet access using a native client or the Azure Virtual Desktop HTML5 web client. Users experience minimal load times since session host VMs are close to the apps and services connected to the data center or cloud. Containerized user profiles enable fast user sign-ins through FSLogix. Personal (persistent) desktops can be provided for individual ownership, allowing users to modify programs without affecting others.
 ## Enhanced Security 
 
 Centralized security management for user desktops is achieved with Azure Active Directory (Azure AD), enabling multifactor authentication and granular role-based access controls. Running data and apps on remote servers reduces the risk of confidential data on personal devices. User sessions are isolated in single and multi-session environments, and Azure Virtual Desktop uses reverse connect technology for more secure connections.

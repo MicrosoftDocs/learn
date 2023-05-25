@@ -3,22 +3,22 @@ uid: learn.azure.intro-to-java-azure
 metadata:
   title: Introduction to Java on Azure
   description: In this module, you'll begin to discover the opportunities for Java developers on Azure.
-  ms.date: 11/16/2020
+  ms.date: 05/01/2023
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
   - sakriema-01262021
+  ms.service: azure-java
 title: Introduction to Java on Azure
 summary: In this module, we discuss Java's various frameworks and architectures. We then give an overview of typical deployment offers for your Java solutions on Azure.
 abstract: |
  By the end of this module, you'll be able to:
 
- - Differentiate between types of Java applications
- - Explain the opportunities for Java developers on Azure
+ - Differentiate between types of Java applications.
+ - Explain the opportunities for Java developers on Azure.
  
 prerequisites: |
 

@@ -4,9 +4,9 @@ title: Use Azure Site Recovery as part of your BCDR plan
 metadata:
   title: Use Azure Site Recovery as part of your BCDR plan
   description: Use Azure Site Recovery as part of your BCDR plan
-  ms.date: 11/18/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 05/10/2023
+  author: ankitaduttaMSFT
+  ms.author: ankitadutta
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

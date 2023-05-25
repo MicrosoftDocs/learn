@@ -5,10 +5,9 @@ metadata:
   title: Introduction to GitHub Advanced Security          # Do not edit: title must be "Introduction to (product)"
   description: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."             # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 09/15/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: davenowell      # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: dapolite           # Alias     of the Microsoft employee either authoring or project-managing this content
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-azure
 title: Introduction to GitHub Advanced Security
 summary: "This module will help you become familiar with GitHub's Advanced Security features and best practices. As you learn about these features, you'll identify critical areas for eliminating security gaps."
 abstract: |
