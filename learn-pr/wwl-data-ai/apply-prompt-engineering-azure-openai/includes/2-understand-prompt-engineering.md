@@ -2,6 +2,8 @@ The quality of the input prompts we send to LLMs, like those available in Azure 
 
 ## What is prompt engineering
 
+LLMs are single models trained on huge amounts of data and can generate text, images, code, and creative content based on the most likely continuation of the prompt.
+
 Prompt engineering is the process of designing and optimizing prompts to better utilize LLMs. Designing effective prompts is critical to the success of prompt engineering, and it can significantly improve the AI model's performance on specific tasks. Providing relevant, specific, unambiguous, and well structured prompts can help the model better understand the context and generate more accurate responses.
 
 For example, if we want an OpenAI model to generate product descriptions, we can provide it with a detailed description that describes the features and benefits of the product. By providing this context, the model can generate more accurate and relevant product descriptions.
@@ -17,15 +19,15 @@ There are different methods to utilize when engineering your own prompts, many o
 
 ## Considerations for API endpoints
 
-Before exploring how prompt engineering can improve the output of Azure OpenAI models, it's important to consider how the different endpoints can utilize the methods discussed in this module. While both `Completions` and `ChatCompletions` can both achieve similar results, `ChatCompletions` provides the most flexibility in building your prompts, and is optimized for chat scenarios.
+Before exploring how prompt engineering can improve the output of Azure OpenAI models, it's important to consider how the different endpoints can utilize the methods discussed in this module. While both `Completion` and `ChatCompletion` can both achieve similar results, `ChatCompletion` provides the most flexibility in building your prompts, and is optimized for chat scenarios.
 
-Functionally, `ChatCompletions` has the option of defining a system message for the AI model, in addition to built-in structure to provide previous messages in the prompt. If using `Completions`, this functionality can be achieved with what's called a *meta prompt*. These topics are covered in more detail in a later unit.
+Functionally, `ChatCompletion` has the option of defining a system message for the AI model, in addition to built-in structure to provide previous messages in the prompt. If using `Completion`, this functionality can be achieved with what's called a *meta prompt*. These topics are covered in more detail in a later unit.
 
-In terms of model availability, both endpoints can utilize similar models, including `gpt-35-turbo`, but only `ChatCompletions` can be used with `gpt-4` generation models.
+In terms of model availability, both endpoints can utilize similar models, including `gpt-35-turbo`, but only `ChatCompletion` can be used with `gpt-4` generation models.
 
-The `Completions` endpoint can still achieve similar results, but more care must be taken to format the prompt clearly for the AI model to understand. Most of the examples given in this module clearly translates to `ChatCompletions`, however you can reformat it for use with `Completions`.
+The `Completion` endpoint can still achieve similar results, but more care must be taken to format the prompt clearly for the AI model to understand. Most of the examples given in this module clearly translate to `ChatCompletion`, however you can reformat it for use with `Completion`.
 
-It's worth noting that `ChatCompletions` can also be used for non chat scenarios, where any instructions are included in the system message and user content is provided in the user role message.
+It's worth noting that `ChatCompletion` can also be used for non chat scenarios, where any instructions are included in the system message and user content is provided in the user role message.
 
 ## Adjusting model parameters
 

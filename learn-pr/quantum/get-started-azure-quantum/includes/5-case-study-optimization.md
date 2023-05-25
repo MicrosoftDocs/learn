@@ -2,12 +2,11 @@ Azure Quantum offers solutions that enable some divisions of the space team to r
 
 There are other optimization problems of interest, such as optimizing travel time between planets, prioritizing job schedules, or finding the equilibrium configuration of certain proteins of a recently discovered form of life.
 
-
-Complex optimization problems exist across every industry: vehicle routing, supply chain management, portfolio optimization, power grid management, and many others. Optimization algorithms are also at the core of many machine learning methods.
+Complex optimization problems exist across every industry: vehicle routing, supply-chain management, portfolio optimization, power-grid management, and many others. Optimization algorithms are also at the core of many machine learning methods.
 
 Solving these real-world problems results in high-value benefits, such as reduced costs, accelerated processes, or reduced risks. Many real-world optimization problems are still unsolvable by classical computing, despite the advancement in both algorithms and computing power over the past decades.
 
-Emulating quantum effects on classical computers has led to the development of new types of quantum solutions called *quantum-inspired* algorithms. These algorithms allow us to use some of the advantages of quantum computing approaches on classical hardware, which provides a speedup over traditional approaches.
+Emulating quantum effects on classical computers has led to the development of new types of quantum solutions called *quantum-inspired* algorithms. These algorithms allow us to use some of the advantages of quantum-computing approaches on classical hardware, which provides a speedup over traditional approaches.
 
 Using quantum solutions on classical hardware also prepares us for the future of quantum optimization on actual quantum hardware.
 
@@ -17,7 +16,7 @@ The following sections describe case studies in applications of optimization.
 
 Traffic congestion results in a significant time and cost burden in many metropolitan areas. Another important use case for vehicle routing is the efficient evacuation of large urban areas.
 
-One example of applying quantum-inspired optimization is to significantly reduce both traffic congestion and travel time. Ford and Microsoft have worked together on a solution that shows a more than 70 percent decrease in traffic congestion and a reduction of average travel time of approximately 8 percent. Preliminary studies used up to 5,000 vehicles and compared the solution to the best routes provided by Bing Maps.
+One example of applying quantum-inspired optimization is to significantly reduce both traffic congestion and travel time. Ford and Microsoft have worked together on a solution that shows a more than 70 percent decrease in traffic congestion and a reduction of average travel time of approximately eight percent. Preliminary studies used up to 5,000 vehicles and compared the solution to the best routes provided by Bing Maps.
 
 [Traffic optimization](https://arxiv.org/abs/1708.01625?azure-portal=true) of approximately 400 vehicles takes 20 seconds on a quantum annealing machine. In the case study, the quantum-inspired algorithms tackle a comparable problem in only 0.02 seconds on a single CPU core.
 
@@ -25,7 +24,7 @@ Larger problems might also be accelerated through the use of specialized hardwar
 
 ## Material design
 
-Staples of modern life include compact electronics, energy-efficient transportation, and innovative buildings and construction techniques. They're owed to advancements in science that allow researchers to create materials whose chemical structures maximize certain physical properties, such as strength, electrical characteristics, and weight. 
+Staples of modern life include compact electronics, energy-efficient transportation, and innovative buildings and construction techniques. They're owed to advancements in science that allow researchers to create materials whose chemical structures maximize certain physical properties, such as strength, electrical characteristics, and weight.
 
 Designing materials to maximize these properties requires simulating the complex quantum physics that dictate how the atoms that make up these materials interact with the world around them. For most molecules, this simulation represents a problem that's intractable through traditional computers or methods.
 
@@ -51,7 +50,7 @@ Simulating the characteristics of complex molecules is difficult. So the develop
 
 Simulating aerodynamics is another area that requires heavy computation. On a windmill farm, the placement of windmill locations is critical. Windmills harness power from the wind but can also disrupt airflow and hinder the farm from utilizing the wind's maximum power.
 
-Although airflow and turbulence are seemingly classical and macroscopic phenomena, it's possible to get inspiration from quantum mechanical systems. An example is an electron behaving like a spinning top, and approximating it as a mechanical engine of interacting rotors.
+Although airflow and turbulence are seemingly classical and macroscopic phenomena, it's possible to get inspiration from quantum mechanical systems. An example is an electron behaving like a spinning top and approximating it as a mechanical engine of interacting rotors.
 
 Microsoft Quantum Network member Qubit Engineering is creating rotor models to simulate what turbulence looks like in the air. Azure Quantum has tools to solve these rotor models in order to find minimum and maximum energy configurations. Those tools help Qubit Engineering apply quantum theories to calculate the optimum placement of windmills.
 

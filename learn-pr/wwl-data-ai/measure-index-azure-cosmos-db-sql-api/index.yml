@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Measure index performance in Azure Cosmos DB for NoSQL
 summary: Measure the performance of an indexing policy in Azure Cosmos DB for NoSQL.
 abstract: |

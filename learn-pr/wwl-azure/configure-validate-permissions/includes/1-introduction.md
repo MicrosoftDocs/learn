@@ -1,8 +1,8 @@
-Azure DevOps is a robust platform that can help you streamline your software development and deployment processes. However, ensuring that only authorized users can access the pipelines, environments, and other resources are crucial. Failure to properly manage and validate user permissions can result in serious security issues and potentially put your organization at risk.
+Azure DevOps is a robust platform that can help streamline software development and deployment processes. However, ensuring only authorized users can access the pipelines, environments, and other resources is crucial. Failure to properly manage and validate user permissions can result in serious security issues and potentially put an organization at risk.
 
-Azure Pipelines also involves security risks you must be aware of and mitigate. For example, you need to protect your secrets, control access to your pipelines and resources, and monitor your pipeline activities for any anomalies.
+Azure Pipelines also involves security risks you must be aware of and mitigate. For example, to protect secrets, control access to pipelines and resources, and monitor pipeline activities for anomalies.
 
-In this module, you explore the key concepts and best practices for configuring and validating permissions in Azure DevOps. Also, how to configure user permissions, pipeline permissions, approval, branch checks, and auditing and managing permissions.
+This module explores the key concepts and best practices for configuring and validating permissions in Azure DevOps. Learn how to configure user permissions, pipeline permissions, approval, branch checks, and auditing and managing permissions.
 
 ### Learning objectives
 

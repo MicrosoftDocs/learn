@@ -3,11 +3,11 @@ uid: learn.azure.analyze-data-in-sentinel
 metadata:
   title: Threat detection with Microsoft Sentinel analytics
   description: "Threat detection with Microsoft Sentinel analytics"
-  ms.date: 01/27/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Threat detection with Microsoft Sentinel analytics
 summary: In this module, you learned how Microsoft Sentinel Analytics can help the SecOps team identify and stop cyber attacks.
 abstract: |

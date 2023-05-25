@@ -4,19 +4,18 @@ title: "Improve your reliability with modern operations practices: An introducti
 metadata:
   title: "Improve your reliability with modern operations practices: An introduction"
   description: Discover a map for navigating reliability challenges and sustainably achieving the appropriate level of reliability in your systems, services, and products.
-  ms.date: 05/21/2020
+  ms.date: 05/19/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 summary: The reliability of your systems, services, and products are crucial to your success and the success of your organization. Learn how to approach those challenges.
 abstract: |
-  By the end of this module, you will be able to:
-  - Express why reliability is crucial to your success
-  - Describe modern operations practices that offer tools you can use to work on your reliability challenges
-  - Explain the Dickerson hierarchy of reliability and the map it provides for approaching reliability challenges
+  By the end of this module, you're able to:
+  - Express why reliability is crucial to your success.
+  - Describe modern operations practices that offer tools you can use to work on your reliability challenges.
+  - Explain the Dickerson hierarchy of reliability and the map it provides for approaching reliability challenges.
 iconUrl: /training/achievements/improve-reliability-introduction.svg
 levels:
 - beginner

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement perimeter security
 summary: Prevent attacks before they get to your Azure solutions. Use the concepts of defense in depth and zero trust to secure Azure perimeter.
 abstract: |

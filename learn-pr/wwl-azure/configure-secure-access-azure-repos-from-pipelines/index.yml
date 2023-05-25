@@ -11,13 +11,14 @@ metadata:
 title: Configure secure access to Azure Repos from pipelines
 summary: "This module is designed to help learners understand the importance of securing access to Azure Repos from pipelines and how to do it using Azure DevOps. The module covers fundamental concepts and best practices for securing access to packages, credential secrets, secrets for services, and Azure Key Vault."
 abstract: |
-  By the end of this module, you'll be able to:
-    - Configure pipeline access to packages
-    - Configure credential secrets, and secrets for services
-    - Ensure that the secrets are in the Azure Key Vault
-    - Ensure that secrets aren't in the logs
+  In this module, you practice how to:
+    - Configure pipeline access to packages.
+    - Configure credential secrets, and secrets for services.
+    - Ensure that the secrets are in the Azure Key Vault.
+    - Ensure that secrets aren't in the logs.
 prerequisites: |
-  - None
+  - Basic knowledge of Azure Pipelines and YAML.
+  - Basic knowledge of security concepts like Azure Key Vault and permissions.
 iconUrl: /training/achievements/generic-trophy.svg
 hidden: true
 levels:

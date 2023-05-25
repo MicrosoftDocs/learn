@@ -38,7 +38,10 @@ For each driver, you have the environment variable that maps to the location of 
 
 The unit tests code is already set up to read these environment variables. These variables tell Selenium where to find the driver executable files. To run the unit tests locally, you need to export these same environment variables.
 
-From Visual Studio Code, go to the terminal. Then run these commands. Replace the path shown with the full path to your **mslearn-tailspin-spacegame-web-deploy** project:
+From Visual Studio Code, go to the terminal. Then run these commands. Replace the path shown with the full path to your **mslearn-tailspin-spacegame-web-deploy** project.
+
+> [!IMPORTANT]
+> Make sure to run these commands and set the environment variables in the same terminal window that you use to run the tests.
 
 # [Windows](#tab/export-windows)
 
@@ -84,17 +87,23 @@ Because you haven't yet deployed the _Space Game_ website to your App Service en
 
 To run the tests locally:
 
-1. In Visual Studio Code, open the integrated terminal.
-1. From the terminal, ensure that you're in your project's root directory. Here's an example:
+1. In Visual Studio Code, go to the integrated terminal and open a new terminal window.
+1. Run the following commands in the new terminal window.
+    ```dotnetcli
+    dotnet build --configuration Release
+    dotnet run --configuration Release --no-build --project Tailspin.SpaceGame.Web
+    ```
+1. Make a note of the local website link, in this example it is `http://localhost:5000`.
+1. Switch back to the terminal window where you set the environment variables in the previous step, and ensure that you're in your project's root directory. Here's an example:
 
     ```bash
     cd ~/mslearn-tailspin-spacegame-web-deploy
     ```
 
-1. Export the `SITE_URL` environment variable.
+1. Export the `SITE_URL` environment variable. Use the locally running link that you got from the previous step.
 
     ```bash
-    export SITE_URL="http://tailspin-spacegame-web.azurewebsites.net"
+    export SITE_URL="http://localhost:5000"
     ```
 
     This variable points to the _Space Game_ website that Microsoft hosts.

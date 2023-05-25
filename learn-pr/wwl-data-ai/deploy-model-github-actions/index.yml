@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Deploy a model with GitHub Actions
 summary: Learn how to automate and test model deployment with GitHub Actions and the Azure Machine Learning CLI (v2).
 abstract: |

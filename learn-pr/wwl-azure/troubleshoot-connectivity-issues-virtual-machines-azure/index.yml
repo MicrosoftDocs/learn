@@ -7,7 +7,7 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot connectivity issues with virtual machines in Microsoft Azure
 summary: Troubleshoot deployment, connectivity, and authorization issues with Azure Bastion and just in time access to Virtual Machines.
 abstract: |

@@ -138,11 +138,9 @@ A job has the following attributes besides its name:
 
 ## Dependencies
 
-You can define dependencies between jobs using the `dependsOn` property. It lets you specify sequences and fan-out and fan-in scenarios.
+When you define multiple stages in a pipeline, by default, they run sequentially in the order in which you define them in the YAML file. The exception to this is when you add dependencies. With dependencies, stages run in the order of the `dependsOn` requirements.
 
-A sequential dependency is implied if you don't explicitly define a dependency.
-
-If you want jobs to run parallel, you need to specify `dependsOn: []`.
+Pipelines must contain at least one stage with no dependencies.
 
 Let's look at a few examples. Consider this pipeline:
 
@@ -173,7 +171,7 @@ jobs:
 
 
 - job: B
-  dependsOn: [] # this removes the implicit dependency on previous stage and causes this to run in parallel
+  dependsOn: [] # this removes the implicit dependency on previous stage and causes this to run in parallel.
   steps:
   # steps omitted for brevity
 

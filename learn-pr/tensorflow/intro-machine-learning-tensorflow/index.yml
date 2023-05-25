@@ -7,7 +7,6 @@ metadata:
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
 title: Going beyond Keras - customizing with TensorFlow

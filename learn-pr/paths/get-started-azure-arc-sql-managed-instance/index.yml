@@ -9,7 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.manager: jroth
-  ms.custom: 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Implement Azure Arc-enabled SQL Managed Instance in your hybrid environment
 summary:  |
   Learn how to work with Azure Arc enabled servers, data services and Kubernetes.
