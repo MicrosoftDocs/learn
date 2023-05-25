@@ -1,0 +1,41 @@
+﻿### YamlMime:Module
+uid: learn.github.introduction-to-github-copilot-for-business
+title: Introduction to GitHub Copilot for Business
+metadata:
+  title: Introduction to GitHub Copilot for Business
+  description: GitHub Copilot for Business builds the power of generative AI into an editor extension that suggests code in real-time. By using context to provide and synthesize code to match, it allows developers to convert comments to code, autofill repetitive code, and show alternatives.
+  ms.date: 05/23/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+summary: > 
+  Learn about the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals, specific use cases and customer stories for GitHub Copilot for Business, and how to enable it. 
+abstract: |
+  At the end of this module, you'll be able to: 
+  - Understand the difference between GitHub Copilot for Business versus GitHub Copilot for Individuals.
+  - Learn about specific use cases for GitHub Copilot for Business and hear how customers are enhancing their productivity.
+  - Review how to enable GitHub Copilot for Business.
+prerequisites: |
+  - Basic understanding of GitHub fundamentals.
+  - A GitHub Enterprise Cloud account.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels: 
+  - beginner
+roles: 
+  - administrator
+  - developer
+  - solution-architect
+  - devops-engineer
+products: 
+  - github
+units:
+  - learn.github.introduction-to-github-copilot-for-business.introduction
+  - learn.github.introduction-to-github-copilot-for-business.about
+  - learn.github.introduction-to-github-copilot-for-business.use-cases-customer-stories
+  - learn.github.introduction-to-github-copilot-for-business.how-to-get-started
+  - learn.github.introduction-to-github-copilot-for-business.knowledge-check
+  - learn.github.introduction-to-github-copilot-for-business.summary
+badge:
+  uid: learn.github.introduction-to-github-copilot-for-business.badge
