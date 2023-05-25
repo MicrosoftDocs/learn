@@ -66,4 +66,4 @@ If you have tables in the lakehouse, and you want to be able to query it in your
  With a Fabric data warehouse, you don't have to copy data from the lakehouse to the data warehouse. You can query data in the lakehouse directly from the data warehouse using cross-database querying.
 
 > [!IMPORTANT]
-> Working with tables in the Fabric data warehouse currently has some limitations. See [Tables in data warehousing in Microsoft Fabric](https://github.com/MicrosoftDocs/fabric-docs-pr/blob/release-public-preview/docs/data-warehouse/tables.md) for more information.
+> Working with tables in the Fabric data warehouse currently has some limitations. See [Tables in data warehousing in Microsoft Fabric](https://learn.microsoft.com/fabric/data-warehouse/tables) for more information.

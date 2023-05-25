@@ -1,0 +1,48 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-windows-containers.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Troubleshooting Windows Containers" module.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 5
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "Windows containers require version compatibility between container host and container image. Which of the following statements is true?"
+    choices:
+    - content: "A Windows Server 2022 image can run on a Windows Server 2016 container host."
+      isCorrect: false
+      explanation: "Incorrect. (Windows Server 2022 is a newer version than Windows Server 2016. Images of Windows Server 2022 require a Windows Server 2022 host to run.)"
+    - content: "A Windows Server 2019 image can run on a Windows Server 2022 container host in process isolation."
+      isCorrect: false
+      explanation: "Incorrect. (Windows Server 2019 is older than Windows Server 2022. While it can run on Windows Server 2022, Windows Server 2019 images would require hypervisor isolation.)"
+    - content: "A Windows container image can run in process isolation as long as the container host and container image have the same build number."
+      isCorrect: true
+      explanation: "Correct. (Windows containers require version compatibility between host and container. Process isolation supports only the same version, while hypervisor isolation allows a newer host version to run earlier container image versions.) "
+  - content: "Which of the following commands provides details on the state of a pod and its latest events? "
+    choices:
+    - content: "kubectl get pod -n &lt;namespace&gt;"
+      isCorrect: false
+      explanation: "Incorrect. (kubectl get pod only lists the pods within the query parameters. While it provides the pod state, it doesn't provide the latest events.)"
+    - content: "kubectl describe pod &lt;pod id&gt; -n &lt;namespace&gt;"
+      isCorrect: true
+      explanation: "Correct. (kubectl describe pod provides the status and latest events of a pod, in addition to any other relevant information about it for troubleshooting purposes.)"
+    - content: "kubectl get node -o wide"
+      isCorrect: false
+      explanation: "Incorrect. (kubectl get node provides details on the nodes within the query search and doesn't provide any information on pods.)"
+  - content: "What is the main benefit of LogMonitor?"
+    choices:
+    - content: "Allows users to set it as the ENTRYPOINT for their container images."
+      isCorrect: false
+      explanation: "Incorrect. (While it's possible to use LogMonitor as the ENTRYOINT, you might have other alternatives for it. LogMonitor's main purpose is to send logs and events from Windows containers to STDOUT.)"
+    - content: "Sends custom logs, event logs, and ETW traces to STDOUT so other tools can consume it."
+      isCorrect: true
+      explanation: "Correct. (LogMonitor's purpose is to send logs and events from Windows containers to STDOUT.)"
+    - content: "Can be used to monitor the state of a background service."
+      isCorrect: false
+      explanation: "Incorrect. (While it's possible to use LogMonitor to monitor the state of a background service, LogMonitor won't take any actions on it and the container will exit. LogMonitor's main purpose is to send logs and events from Windows containers to STDOUT.)"
