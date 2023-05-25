@@ -25,7 +25,7 @@ quiz:
       explanation: "Incorrect. Spark supports Python, but it is not a single virtual server."
     - content: "A distributed platform for parallel data processing using multiple languages."
       isCorrect: true
-      explanation: "Correct. Spark provides a highly scalable distributed platform on which you can run code written in many languages to process data."
+      explanation: "Correct. Spark provides a highly-scalable distributed platform on which you can run code written in many languages to process data."
   - content: "You need to use Spark to analyze data in a parquet file. What should you do?"
     choices:
     - content: "Load the parquet file into a dataframe."
