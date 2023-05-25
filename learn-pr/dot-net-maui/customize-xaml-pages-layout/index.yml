@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: dotnet-mobile
+  ms.technology: dotnet-maui
 title: Customize layout in .NET MAUI XAML pages
 summary: Create consistent user interfaces across different devices by using StackLayout and Grid.
 abstract: |

@@ -9,7 +9,7 @@ metadata:
   ms.author: orthomas
   ms.custom: team=cloud_advocates
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: load-balancer
 title: Introduction to Azure Load Balancer
 summary: This module explains what Azure Load Balancer does, how it works, and when you should choose to use Load Balancer as a solution to meet your organization's needs.  
 abstract: |

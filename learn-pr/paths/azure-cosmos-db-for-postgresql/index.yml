@@ -8,6 +8,8 @@ metadata:
   description: Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure.
   ms.custom:
     - ignite-2022
+    - build-2023
+    - build-2023-dataai
   ms.date: 02/22/2023
   author: seesharprun
   ms.author: sidandrews
@@ -32,5 +34,6 @@ modules:
   - learn.extend-functionality-of-azure-cosmos-db-postgresql-using-extensions
   - learn.manage-performance-availability-azure-cosmos-db-postgresql
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql
+  - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql
 trophy:
   uid: learn.azure-cosmos-db-for-postgresql.trophy

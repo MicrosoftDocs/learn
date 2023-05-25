@@ -1,3 +1,5 @@
+
+
 Azure Resource Manager supports a declarative deployment methodology, based on deployment templates. A template is a JSON-formatted file that defines a collection of resources that you intend to provision together in the same resource group or a subscription. The resulting deployment populates the target resource group or the subscription according to the template’s content.
 
 Templates offer some unique benefits comparing with traditional deployment methods that rely on the GUI or scripting and programming languages. Like scripts, they facilitate deployment of multicomponent solutions in an automated manner. However, unlike scripts, they do not explicitly specify individual steps required to provision these solutions. Instead, they simply define their intended end state. This way, they rely on the intelligence built into the Azure platform to deploy all necessary resources in the most optimal way. This results in minimized deployment time and reduces the potential for errors. If needed, you have the option to define dependencies between resources to control the resource-provisioning sequence.

@@ -3,7 +3,7 @@ uid: learn.expose-hybrid-services-with-azure-relay.5-exercise-send-requests-thro
 metadata:
   title: Exercise - Send requests through an Azure Relay hybrid connection
   description: In this exercise, you'll complete a listener app and a sender app that exchange messages through Azure Relay.
-  ms.date: 02/21/2020
+  ms.date: 04/04/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial

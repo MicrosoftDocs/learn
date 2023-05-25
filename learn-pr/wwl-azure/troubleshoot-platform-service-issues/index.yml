@@ -3,11 +3,11 @@ uid: learn.wwl.troubleshoot-platform-service-issues
 metadata:
   title: Troubleshoot platform-as-a-service issues in Microsoft Azure
   description: "To benefit from Azure PaaS services, you must be able to troubleshoot connectivity issues quickly and effectively both from an on-premises user to an Azure PaaS service and between PaaS services. AZ720 AZ-720 az-720 networking"
-  ms.date: 07/14/2022
-  author: wwlpublish
-  ms.author: lola
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot platform-as-a-service issues in Microsoft Azure
 summary: To benefit from Azure PaaS services, you must be able to troubleshoot connectivity issues quickly and effectively both from an on-premises user to an Azure PaaS service and between PaaS services.
 abstract: |

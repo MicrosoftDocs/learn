@@ -9,7 +9,7 @@ metadata:
   ms.author: maevan
   manager: jasonh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: marketplace
 durationInMinutes: 6
 content: |
   [!include[](includes/3-web-storefronts.md)]

@@ -3,11 +3,10 @@ uid: learn.wwl.use-css-styles
 metadata:
   title: Use CSS styles in a webpage
   description: "Use CSS styles in a webpage"
-  ms.date: 03/03/2023
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Use CSS styles in a webpage
 summary: Demonstrates how to apply formatting to basic HTML by using styles and Cascading Style Sheets.
 abstract: |

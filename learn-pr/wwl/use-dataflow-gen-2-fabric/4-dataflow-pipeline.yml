@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-dataflows-gen2-fabric.dataflow-pipeline
+title: Integrate Dataflows (Gen2) and Pipelines in Microsoft Fabric
+metadata:
+  title: Integrate Dataflows (Gen2) and Pipelines in Microsoft Fabric
+  description: "Integrate Dataflows (Gen2) and Pipelines in Microsoft Fabric"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-dataflow-pipeline.md)]

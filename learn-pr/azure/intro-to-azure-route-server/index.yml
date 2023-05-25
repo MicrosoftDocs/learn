@@ -4,11 +4,11 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Route Server         
   description: Evaluate whether Microsoft Azure Route Server is appropriate for resolving delays and outages in network communication.       
-  ms.date: 5/10/2021            
-  author: LBN-commits   
-  ms.author: v-lanai           
+  ms.date: 03/24/2023            
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: route-server
 title: Introduction to Azure Route Server
 summary: Describe Microsoft Azure Route Server, discuss scenarios of usage, learn how it works, and explore basic steps for its deployment and configuration.
 abstract: |
@@ -17,10 +17,10 @@ abstract: |
     - Recognize scenarios where Azure Route Server is applicable.
     - Describe the high-level steps for Azure Route Server deployment.
 prerequisites: |
-  - Experience with Azure virtual machines (VMs).
-  - Experience with Azure virtual networks.
-  - Experience with routing and routing protocols.
-  - The ability to navigate the Azure portal and use Azure PowerShell.
+  - Experience with Azure virtual machines (VMs)
+  - Experience with Azure virtual networks
+  - Experience with routing and routing protocols
+  - The ability to navigate the Azure portal and use Azure PowerShell
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner

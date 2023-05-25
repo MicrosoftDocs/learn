@@ -3,10 +3,14 @@ uid: learn.wwl.get-started-ai-fundamentals
 metadata:
   title: Get started with AI on Azure
   description: "Get started with AI on Azure"
-  ms.date: 01/27/2023
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
+  ms.service: azure 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 title: Get started with AI on Azure
 summary: With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone.

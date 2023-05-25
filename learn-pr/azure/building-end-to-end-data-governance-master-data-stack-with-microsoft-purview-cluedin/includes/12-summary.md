@@ -1,0 +1,3 @@
+Delivering high quality data throughout the business is no small feat, but in this module we were able to complete an agile data pipeline to provide good, quality data to our end users. CluedIn has a flexible modeling experience so that you don't have to find that perfect model for your data before data can flow, and Microsoft Purview provides a platform for monitoring and governing the data throughout its lifecycle.
+
+Master Data is no longer a long-winded project, but can be an agile, quick-win approach to applying a level of business-level governance and management over your data.

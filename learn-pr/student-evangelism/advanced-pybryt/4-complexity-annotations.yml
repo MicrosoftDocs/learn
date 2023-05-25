@@ -41,7 +41,7 @@ quiz:
           explanation: "Not quite. `TimeComplexity` annotations only accept one position argument."
         - content: '`pybryt.TimeComplexity(cplx.logarithmic or cplx.linear, name="foo")`'
           isCorrect: false
-          explanation: "Not quite. `cplx.logarithmic or cplx.linear` would just evaluate to the first truthy value, in this case `cplx.logarithmic`."
+          explanation: "Not quite. `cplx.logarithmic or cplx.linear` would just evaluate to the first value, in this case `cplx.logarithmic`."
         - content: '`pybryt.TimeComplexity(cplx.logarithmic, name="foo") | pybryt.TimeComplexity(cplx.linear, name="foo")`'
           isCorrect: true
           explanation: "Correct!"

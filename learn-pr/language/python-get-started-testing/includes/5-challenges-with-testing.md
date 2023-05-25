@@ -38,7 +38,7 @@ Automation is all about removing repetitive tasks and reducing the steps necessa
 
 Some of the challenges come from a lack of testing, while others are related to poor testing experiences and not knowing what techniques to apply. We've already mentioned _legacy code_ in this module, and how untested code can keep growing in size and complexity. Test coverage tools can accurately tell you which code paths are tested, and which aren't being covered by existing tests.
 
-Relying on tooling and testing libraries is a great way to reduce the amount of effort it takes to produce good tests. Depending on the language and application being tested, you must find solutions that can make testing easier and more robust. 
+Relying on tooling and testing libraries is a great way to reduce the amount of effort it takes to produce good tests. Depending on the language and application being tested, you must find solutions that can make testing easier and more robust.
 
 Here are some examples of what those tools should be:
 

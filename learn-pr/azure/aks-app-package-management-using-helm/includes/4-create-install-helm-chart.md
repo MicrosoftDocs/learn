@@ -1,6 +1,6 @@
 Helm makes it simple to deploy applications to any Kubernetes clusters by using Helm charts. You use Helm to template your application's deployment information as a Helm chart, which you then use to deploy your application.
 
-Assume your development team already deploys your company's drone tracking website to your Azure Kubernetes Service cluster. The team creates three files to deploy the website.
+Assume your development team already deploys your company's drone-tracking website to your Azure Kubernetes Service cluster. The team creates three files to deploy the website:
 
 - A deployment manifest that describes how to install and run the application on the cluster.
 
@@ -8,9 +8,9 @@ Assume your development team already deploys your company's drone tracking websi
 
 - An ingress manifest that describes how the traffic from outside the cluster routed to the web app.
 
-The team deploys these files to each of the three environments as part of the software development life cycle. Each of the three files is updated with variables and values that are specific to the environment. Since each file is hardcoded, the maintenance of these files is error-prone.
+The team deploys these files to each of the three environments as part of the software development lifecycle. Each of the three files is updated with variables and values that are specific to the environment. Since each file is hardcoded, the maintenance of these files is error-prone.
 
-Here you'll see how to create and install a Helm chart.
+Here, you'll see how to create and install a Helm chart.
 
 ## How does Helm process a chart?
 
@@ -26,7 +26,7 @@ The `Chart.yaml` is one of the required files in a Helm chart definition and pro
 
 The three required fields are:
 
-- The `apiVersion `. This value is the chart API version to use. You set the version to `v2` for Charts that use Helm 3.
+- The `apiVersion`. This value is the chart API version to use. You set the version to `v2` for Charts that use Helm 3.
 
 - The `name` of the chart.
 
@@ -60,7 +60,7 @@ appVersion: 1.0.0
 
 Notice the inclusion of the `type` field above. You can create charts to install either applications or libraries. The default chart type is `application` and can be set to `library` to specify the chart will install a library.
 
-Many optional fields are available to tailer the chart deployment process. For example, you can use the `dependencies` field to specify additional requirements for the chart. For example, a web app that depends on a database.
+Many optional fields are available to tailer the chart deployment process. For example, you can use the `dependencies` field to specify additional requirements for the chart, like a web app that depends on a database.
 
 Detail coverage of all optional fields is outside the scope of this module. However, a link to the Helm documentation is available in the summary section of the module.
 
@@ -68,9 +68,9 @@ Detail coverage of all optional fields is outside the scope of this module. Howe
 
 A Helm Chart template is a file describes different deployment type manifest files. Chart templates are written in the Go template language and provides additional template functions to automate the creation of Kubernetes object manifest files.
 
-Template files are stored in the `templates/` folder of a chart and processed by the template engine to create the final object manifest. 
+Template files are stored in the `templates/` folder of a chart and processed by the template engine to create the final object manifest.
 
-For example, the development team uses the following deployment manifest file to deploy the drone tracking website.
+For example, the development team uses the following deployment manifest file to deploy the drone-tracking website:
 
 ```yml
 apiVersion: apps/v1
@@ -146,7 +146,7 @@ You may also use predefined values to extract data from the contents of the `Cha
 
 The syntax to include value names in a template file is done by enclosing the value name in double curly braces, for example, `{{.Release.Name}}`. Notice the use of a period in front of the value name. When you use a period in this way, the period functions as a lookup operator and indicates the variable's current scope.
 
-For example, the following YAML snippet contains a dictionary defined in a values file.
+For example, the following YAML snippet contains a dictionary defined in a values file:
 
 ```yml
 object:
@@ -161,7 +161,7 @@ To access the value in a template, you can use the following syntax:
 
 A **supplied** value allows you to process arbitrary values in the chart template. The `values.yaml` file defines these values.
 
-In the example, the development team allows for three configurable values. A container registry name, a docker release tag, and a Kubernetes pull policy.
+In the example, the development team allows for three configurable values: a container registry name, a docker release tag, and a Kubernetes pull policy.
 
 ```yml
 apiVersion: apps/v1
@@ -175,7 +175,7 @@ kind: Deployment
           ...
 ```
 
-Here is an example of the `values.yaml` file.
+Here's an example of the `values.yaml` file:
 
 ```yaml
 apiVersion: v2
@@ -243,17 +243,17 @@ bitnami/aspnet-core             1.3.18          3.1.19        ASP.NET Core is an
 
 Helm provides an option for you to generate the manifest files that the template engine creates from the chart. This feature allows you to test the chart before a release by combining two additional parameters. These parameters are `--dry-run` and `debug`.
 
-The `--dry-run` parameter makes sure that the installation is simulated, and the `--debug` parameter enables verbose output. Here is an example of the `--dry-run` enabled command.
+The `--dry-run` parameter makes sure that the installation is simulated, and the `--debug` parameter enables verbose output. Here is an example of the `--dry-run` enabled command:
 
 ```bash
 helm install --debug --dry-run my-drone-webapp ./drone-webapp
 ```
 
-The command lists information about the values used and all generated files. You may have to scroll to view all of the generated output.
+The command lists information about the values used and all generated files. You might have to scroll to view all of the generated output.
 
 ## How to install a Helm chart
 
-You use the `helm install` command to install a chart. A Helm chart can be installed from any of the following  locations.
+You use the `helm install` command to install a chart. You can install a Helm chart from any of the following locations:
 
 - Chart folder
 
@@ -261,17 +261,17 @@ You use the `helm install` command to install a chart. A Helm chart can be insta
 
 - A Helm repository
 
-However, the required parameters differ depending on the location of the chart. In all cases, the install command requires the name of the chart you want to install, and a name for the release the installation will create.
+However, the required parameters differ depending on the location of the chart. In all cases, the install command requires the name of the chart you want to install and a name for the release the installation will create.
 
-A local chart can be installed using an unpacked chart folder of files or a packed `.tgz` tar archive. To install a chart, the helm command references the local file system for the chart's location. Here is an example of the install command that will deploy a release of an unpacked chart with the name `drone-webapp`.
+You can install a local chart using an unpacked chart folder of files or a packed `.tgz` tar archive. To install a chart, the helm command references the local file system for the chart's location. Here's an example of the install command that will deploy a release of an unpacked chart with the name `drone-webapp`:
 
 ```bash
 helm install my-drone-webapp ./drone-webapp
 ```
 
-In the above example, the `my-drone-webapp` parameter is the name of the release and the `./my-drone-webapp` parameter is the name of the unpacked chart package.
+In the preceding example, the `my-drone-webapp` parameter is the name of the release and the `./my-drone-webapp` parameter is the name of the unpacked chart package.
 
-A packed chart is installed by referencing the packed chart filename. The following example shows the syntax for the same application now packed as a tar archive.
+A packed chart is installed by referencing the packed chart filename. The following example shows the syntax for the same application now packed as a tar archive:
 
 ```bash
 helm install my-drone-webapp ./drone-webapp.tgz
@@ -279,7 +279,7 @@ helm install my-drone-webapp ./drone-webapp.tgz
 
 When installing a chart from a Helm repository, you use a chart reference as the chart's name. The chart reference includes two parameters, the repository name and the name of the chart.
 
-Here is an example of the install command that installs a default configured ASP.NET Core application from the marketplace Helm repository.
+Here's an example of the install command that installs a default configured ASP.NET Core application from the marketplace Helm repository:
 
 ```bash
 helm install my-release azure-marketplace/aspnet-core

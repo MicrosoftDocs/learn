@@ -16,7 +16,7 @@ Check out reports, podcasts, and training resources to learn more about how gove
 
 * Read Understanding Machine Learning: A Guide for Government Leaders white paper to review the core concepts of machine learning to make informed decisions about incorporating it into your organization.
 
-For example, you can to listen to the ["Intelligent Technologies" episode](http://govpod.mpsn.libsynpro.com/001-predictive-technologies) of our government podcast series to hear how national and municipal governments can use AI, the Internet of Things (IoT), blockchain, and other transformative technologies to improve their services. 
+For example, you can to listen to the ["Intelligent Technologies" episode](http://govpod.mpsn.libsynpro.com/001-predictive-technologies) of our government podcast series to hear how national/regional and municipal governments can use AI, the Internet of Things (IoT), blockchain, and other transformative technologies to improve their services. 
 
 * Read our [whitepaper on Microsoft’s vision for AI in action the enterprise](https://query.prod.cms.rt.microsoft.com/cms/api/am/binary/RE4CKw1).
   

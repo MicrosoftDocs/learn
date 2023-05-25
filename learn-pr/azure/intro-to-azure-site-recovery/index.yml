@@ -3,18 +3,18 @@ uid: learn.intro-to-azure-site-recovery
 metadata:
   title: Introduction to Azure Site Recovery
   description: This module explains what Azure Site Recovery does, how it works, and when you should choose to use Azure Site Recovery as a solution to meet your organization's needs.
-  ms.date: 10/25/2022
+  ms.date: 04/13/2023
   author: orin-thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: site-recovery
 title: Introduction to Azure Site Recovery
 summary: This module explains what Azure Site Recovery does, how it works, and when you should choose to use Azure Site Recovery as a solution to meet your organization's needs.
 abstract: |
   In this module, you'll:
-  - Learn about Azure Site Recovery and its capabilities
-  - Determine whether Azure Site Recovery meets the needs of your organization
-  - Understand the difference between Azure Site Recovery and Azure Backup
+  - Learn about Azure Site Recovery and its capabilities.
+  - Determine whether Azure Site Recovery meets the needs of your organization.
+  - Understand the difference between Azure Site Recovery and Azure Backup.
 prerequisites: |
   - Understanding of basic networking concepts
   - Understanding of basic high availability and disaster recovery concepts

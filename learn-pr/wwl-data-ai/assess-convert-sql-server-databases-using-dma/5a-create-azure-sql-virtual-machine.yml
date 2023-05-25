@@ -8,6 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-sqlserver
 azureSandbox: false
 labModal: false

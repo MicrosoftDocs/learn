@@ -2,6 +2,7 @@
 achievementUid: learn.wwl.replicate-monitor-azure-cosmos-db-api-for-mongodb-account.badge
 metadata:
   title: >-
-    Microsoft Badge: Replicate and monitor an Azure Cosmos DB API for MongoDB
+    Microsoft Badge: Replicate and monitor an Azure Cosmos DB for MongoDB
     account was issued by Microsoft
-socialImageUrl: /training/achievements/generic-badge-social.png
+socialImageUrl: >-
+  /training/achievements/replicate-monitor-azure-cosmos-db-api-mongodb-account-social.png

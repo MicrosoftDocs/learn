@@ -5,8 +5,8 @@ metadata:
   title: What are GitHub's products?
   description: An overview of each GitHub product including a look at the pricing options of each plan and paid features.
   ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

@@ -8,7 +8,8 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-language
+  ms.service: azure-python
+  ms.devlang: python
 title: Use Boolean logic in Python
 summary: Explore how to use Boolean logic in Python to craft complex expressions that apply conditional logic.
 abstract: | 
@@ -25,7 +26,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - azure
 units:
 - learn.beginner-python.use-boolean-types.introduction
 - learn.beginner-python.use-boolean-types.what-are-if-statements

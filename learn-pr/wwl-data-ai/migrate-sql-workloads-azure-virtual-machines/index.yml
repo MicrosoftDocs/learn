@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Migrate SQL workloads to Azure virtual machines
 summary: Learners will be able to demonstrate the benefits and processes for moving a SQL Server database to an Azure virtual machine.
 abstract: |

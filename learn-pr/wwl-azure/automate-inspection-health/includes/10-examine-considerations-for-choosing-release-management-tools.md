@@ -1,3 +1,4 @@
+
 When choosing the right Release Management tool, you should look at the possibilities of all the different components and map them to your needs.
 
 There are many tools available in the marketplace, from which we'll discuss some in the next chapter. The most important thing to notice is that not every vendor or tool treats Release Management differently.

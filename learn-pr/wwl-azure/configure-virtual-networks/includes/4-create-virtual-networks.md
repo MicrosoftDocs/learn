@@ -1,3 +1,5 @@
+
+
 You can create new virtual networks at any time. You can also add virtual networks when you create a virtual machine.
 
 ### Things to know about creating virtual networks
@@ -20,7 +22,7 @@ Review the following requirements for creating a virtual network.
 
    - The range for one subnet can't overlap with other subnet IP address ranges in the same virtual network.
 
-- You can create a virtual network in the Azure portal. Provide the Azure storage subscription, resource group, virtual network name, and service region for the network.
+- You can create a virtual network in the Azure portal. Provide the Azure subscription, resource group, virtual network name, and service region for the network.
 
    :::image type="content" source="../media/create-virtual-networks-b4f1fd40.png" alt-text="Screenshot that shows how to create a virtual network in the Azure portal.":::
 

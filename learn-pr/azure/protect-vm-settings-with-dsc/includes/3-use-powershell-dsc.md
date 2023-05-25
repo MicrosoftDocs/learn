@@ -1,4 +1,4 @@
-You use PowerShell DSC to specify the desired state for a VM. In this unit, you'll learn more about PowerShell DSC and how to use it to control the state of your VMs. In the example scenario, you use PowerShell DSC to make sure that IIS for Windows Server is installed and configured consistently across all of your web servers.
+You use PowerShell DSC to specify the desired state for a VM. In this unit, you learn more about PowerShell DSC and how to use it to control the state of your VMs. In the example scenario, you use PowerShell DSC to make sure that IIS for Windows Server is installed and configured consistently across all of your web servers.
 
 By the end of this unit, you'll:
 
@@ -33,13 +33,13 @@ The following table lists some of the built-in PowerShell DSC resources.
 | WindowsOptionalFeature | Adds or removes an optional role or feature on a node |
 | WindowsProcess         | Manages a Windows process                          |
 
-For more complex resources, like Active Directory integration, use the DSC Resource Kit, which is updated monthly. You'll find the link to this resource at the end of the module.
+For more complex resources, like Active Directory integration, use the DSC Resource Kit, which is updated monthly. You can find a link to the DSC Resource Kit in the Summary at the end of this module.
 
-The resource you want to configure must already be part of the VM or part of the VM image. Otherwise, the job will fail to compile and run.
+The resource you want to configure must already be part of the VM or part of the VM image. Otherwise, the job fails to compile and run.
 
 ## Anatomy of a DSC code block
 
-A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers aren't part of the syntax. They are denoted as comments and they refer to sections in the discussion that follows. 
+A DSC code block contains four sections. Use the following example to take a closer look. In the example, the numbers aren't part of the syntax. They're denoted as comments and they refer to sections in the discussion that follows. 
 
 ```powershell
 Configuration MyDscConfiguration {              ##1
@@ -156,6 +156,4 @@ The following diagram shows the LCM's process to manage the desired state on the
 
 ![Diagram that shows how the VM polls Azure Automation.](../media/3-vm-pulls-dsc.png)
 
-Credentials are handled natively by your Automation account. This management reduces the complexity of securing and working with credentials.
-
-
+Your Automation account handles the credentials natively. This management reduces the complexity of securing and working with credentials.

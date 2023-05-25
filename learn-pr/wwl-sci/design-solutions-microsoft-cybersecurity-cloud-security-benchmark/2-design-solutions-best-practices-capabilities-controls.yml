@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark.design-solutions-best-practices-capabilities-controls
+title: Design solutions with best practices for capabilities and controls
+metadata:
+  title: Design solutions with best practices for capabilities and controls
+  description: "SC-100 preparatory content on topic: Design solutions with best practices for capabilities and controls."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-design-solutions-best-practices-capabilities-controls.md)]

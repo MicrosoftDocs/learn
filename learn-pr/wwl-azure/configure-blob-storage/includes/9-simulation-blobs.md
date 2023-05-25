@@ -1,3 +1,4 @@
+
 ## Lab scenario
 
 Your organization is migrating storage to Azure. As the Azure Administrator you need to:

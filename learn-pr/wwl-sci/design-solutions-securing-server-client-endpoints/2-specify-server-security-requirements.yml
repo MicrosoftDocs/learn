@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.design-solutions-securing-server-client-endpoints.specify-server-security-requirements
+title: Specify server security requirements
+metadata:
+  title: Specify server security requirements
+  description: "SC-100 preparatory unit on the topic: specify server security requirements."
+  ms.date: 3/14/2023
+  author: hrasheed-msft
+  ms.author: hrasheed
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 10
+content: |
+  [!include[](includes/2-specify-server-security-requirements.md)]

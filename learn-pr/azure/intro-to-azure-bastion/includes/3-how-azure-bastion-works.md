@@ -1,4 +1,4 @@
-RDP and SSH are often the primary means used to connect to remote IaaS VMs, but exposing these management ports to the internet poses significant security risks. In this unit, we'll describe how you can connect securely with these protocols by deploying Azure Bastion at the public side of your perimeter network. In this unit, you'll learn about:
+RDP and SSH are often the primary means used to connect to remote IaaS VMs, but exposing these management ports to the internet poses significant security risks. In this unit, we describe how you can connect securely with these protocols by deploying Azure Bastion at the public side of your perimeter network. In this unit, you learn about:
 
 - The Azure Bastion architecture.
 - How Azure Bastion provides secure RDP/SSH connections to hosted VMs.

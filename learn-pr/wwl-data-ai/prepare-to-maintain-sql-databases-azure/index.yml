@@ -3,11 +3,11 @@ uid: learn.wwl.prepare-to-maintain-sql-databases-azure
 metadata:
   title: Prepare to maintain SQL databases on Azure
   description: "Prepare to maintain SQL databases on Azure"
-  ms.date: 02/21/2023
+  ms.date: 03/06/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-database
 title: Prepare to maintain SQL databases on Azure
 summary: Explore the role of a database administrator on Azure. Describe SQL Server-based offerings on Azure.
 abstract: |

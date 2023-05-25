@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Set up Azure Cosmos DB
   description: Setup of Azure Cosmos DB
   ms.date: 04/24/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

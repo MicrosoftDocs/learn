@@ -9,7 +9,8 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.service: azure-python
+  ms.devlang: python
 title: Introduction to lists in Python
 summary: You'll often work with multiple values in a program. In Python, you can group data together by using lists. In this module, you'll learn how to use lists and what the most common tasks with lists are.
 abstract: | 
@@ -30,7 +31,7 @@ roles:
   - developer
   - data-scientist
 products:
-  - vs
+  - azure
 units:
 - learn.beginner-python.intro-python-lists.introduction
 - learn.beginner-python.intro-python-lists.create-use-lists

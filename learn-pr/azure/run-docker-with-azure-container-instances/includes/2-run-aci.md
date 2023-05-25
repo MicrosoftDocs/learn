@@ -1,4 +1,4 @@
-Here, you'll create a container in Azure and expose it to the Internet with a fully qualified domain name (FQDN).
+Create a container in Azure and expose it to the Internet with a fully qualified domain name (FQDN).
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -23,15 +23,15 @@ For scenarios where you need full container orchestration, including service dis
 
     :::image type="icon" source="../media/2-portal-cloudshell-access.png":::
 
-1. Create a new resource group with the name **learn-deploy-aci-rg** so that it will be easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group; for example, **East US**.
+1. Create a new resource group with the name **learn-deploy-aci-rg** so that it's easier to clean up these resources when you're finished with the module. If you choose a different resource group name, remember it for the rest of the exercises in this module. You also need to choose a region in which you want to create the resource group; for example, **East US**.
 
     ```azurecli
     az group create --name learn-deploy-aci-rg --location eastus
     ```
 
-    You'll create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, you'll deploy a container that hosts a small web app. You can also select the location to place the image; you'll use the **East US** region, but you can change it to a location close to you.
+    Create a container by providing a name, a Docker image, and an Azure resource group to the `az container create` command. You can optionally expose the container to the Internet by specifying a DNS name label. In this example, deploy a container that hosts a small web app. You can also select the location to place the image; we use the **East US** region, but you can change it to a location close to you.
 
-1. You'll provide a DNS name to expose your container to the Internet. Your DNS name must be unique. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name:
+1. Provide a DNS name to expose your container to the Internet. Your DNS name must be unique. For learning purposes, run this command from Cloud Shell to create a Bash variable that holds a unique name:
 
     ```azurecli
     DNS_NAME_LABEL=aci-demo-$RANDOM

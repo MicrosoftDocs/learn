@@ -23,7 +23,7 @@ roles:
   - developer
   - student
 products:
-  - vs
+  - vs-code
   - dotnet
   - aspnet-core
 prerequisites: |

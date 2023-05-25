@@ -3,12 +3,13 @@ uid: learn.azure-sql-performance
 metadata:
   title: Deliver consistent performance with Azure SQL
   description: Deliver consistent performance with Azure SQL
-  ms.date: 08/05/2020
+  ms.date: 03/15/2023
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
+  ms.subservice: performance
 title: Deliver consistent performance with Azure SQL
 summary: Azure SQL has the capabilities and tools to allow you to deliver consistent performance for your application. In this module, you will learn key aspects of configuration, monitoring, and intelligent performance for Azure SQL.
 abstract: | 

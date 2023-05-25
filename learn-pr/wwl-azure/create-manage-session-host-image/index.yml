@@ -3,11 +3,11 @@ uid: learn.wwl.create-manage-session-host-image
 metadata:
   title: Create and manage session host image for Azure Virtual Desktop
   description: "Create and manage session host image for Azure Virtual Desktop"
-  ms.date: 08/03/2022
+  ms.date: 03/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Create and manage session host image for Azure Virtual Desktop
 summary: A Shared Image Gallery simplifies custom image sharing across your organization. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations.
 abstract: |
@@ -17,7 +17,8 @@ abstract: |
   *  Plan for image update and management.
   *  Create and use a Shared Image Gallery (SIG) for Azure Virtual Desktop.
   *  Install language packs in Azure Virtual Desktop.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/4-create-and-manage-session-host-image.svg
 levels:
 - intermediate

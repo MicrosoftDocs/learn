@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Why is Batch Transcription particularly useful for call-centers and similar scenarios?'
+  - content: 'Why is Batch Transcription especially useful for call-centers and similar scenarios?'
     choices:
     - content: "It can transcribe audio recordings live"
       isCorrect: false
@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct. As programming languages can readily use JSON formatting, Batch Transcription returns the extracted information in standard JSON formatting so the data is easier to work with."
   - content: 'What is a benefit of creating a Custom Speech model?'
     choices:
-    - content: "Custom Speech models can be useful when very large numbers of unique phrases are needed."
+    - content: "Custom Speech models can be useful when large numbers of unique phrases are needed."
       isCorrect: true
       explanation: "Correct. Custom models can be trained to your industry-specific terminology and unique names."
     - content: "Custom models are the minimum requirement to have Batch Transcription working."
@@ -47,4 +47,4 @@ quiz:
       explanation: "Incorrect. Custom Speech models are an advanced customization that is entirely optional."
     - content: "Custom Speech is required to use languages other than US English."
       isCorrect: false
-      explanation: "Incorrect. Batch Transcription supports numerous languages ‘out of the box’ and Custom Speech does not allow one to add additional languages."
+      explanation: "Incorrect. Batch Transcription supports numerous languages ‘out of the box’ and Custom Speech doesn't allow you to add more languages."

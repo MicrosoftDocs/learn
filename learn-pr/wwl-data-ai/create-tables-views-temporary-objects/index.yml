@@ -3,11 +3,10 @@ uid: learn.wwl.create-tables-views-temporary-objects
 metadata:
   title: Create tables, views, and temporary objects
   description: "Create tables, views, and temporary objects"
-  ms.date: 10/09/2021
+  ms.date: 04/12/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Create tables, views, and temporary objects
 summary: Learn how to use Transact-SQL to create tables, views, and temporary objects for your databases.
 abstract: |

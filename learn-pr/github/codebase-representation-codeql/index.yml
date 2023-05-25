@@ -4,10 +4,9 @@ metadata:
   title: "Identify security vulnerabilities in your codebase with CodeQL" # user input: module title for browser tab and search results
   description: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: a description for site search and SEO
   ms.date: 2/10/2022
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial # do we need ms.topic?
-  ms.prod: learning-azure
 title: Identify security vulnerabilities in your codebase with CodeQL
 summary: "In this module, you'll learn about CodeQL. You'll review information about how CodeQL enables you to analyze the code in your GitHub repository and identify security vulnerabilities." # user input: introductory summary (https://review.learn.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main)
 abstract: | # user input: learning objectives (https://review.learn.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)

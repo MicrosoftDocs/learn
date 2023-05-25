@@ -2,13 +2,13 @@ Your organization grows, and demand rises in Europe and Asia. Your organization 
 
 You've been asked to choose appropriate provisioning tools. Your tools should also be easy to use and easily customizable.
 
-In this exercise, you'll provision a web server to meet the requirements.
+In this exercise, you provision a web server to meet the requirements.
 
 ## Provision a web server
 
-You need to use several tools to provision a web server. Using an Azure Resource Manager template, you can define the environment for your web server. The Resource Manager template can also help you define a desired state configuration (DSC) for your web server. By linking to a DSC extension handler in the Resource Manager template, both the environment and the desired state are applied when you provision the web server. The DSC extension handler helps enforce the DSC state that you defined.
+You need to use several tools to provision a web server. Using an Azure Resource Manager template, you can define the environment for your web server. The Resource Manager template can also help you define a desired state configuration (DSC) for your web server. When you link to a DSC extension handler in the Resource Manager template, both the environment and the desired state are applied when you provision the web server. The DSC extension handler helps enforce the DSC state that you defined.
 
-In the following exercise, you'll use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
+In the following exercise, you use a Resource Manager template to provision a virtual machine. The DSC extension handler that's included in the template enforces your state on the virtual machine. You use an Azure storage account to host your DSC configuration file.
 
 ## Clone the configuration and template
 
@@ -71,11 +71,11 @@ The State Configuration is defined in the *Webserver.ps1* file, which includes t
     ls -al
     ```
 
-    Notice that the repository contains both the *Webserver.ps1* file, and the *Webserver.zip* compressed file. You will use the zipped file later in this exercise.
+    Notice that the repository contains both the *Webserver.ps1* file, and the *Webserver.zip* compressed file. You use the zipped file later in this exercise.
 
 ## Configure the template
 
-The GitHub repository that you cloned also contains a Resource Manager template. Let's edit the template to add the location of the zipped configuration file to it.
+The GitHub repository that you cloned, also contains a Resource Manager template. Let's edit the template to add the location of the zipped configuration file to it.
 
 1. In Cloud Shell, run this command to open the template:
 
@@ -118,7 +118,7 @@ The GitHub repository that you cloned also contains a Resource Manager template.
 
 ## Validate your template
 
-Now that you have a completed template and zipped configuration file, you can use the Azure CLI to deploy them. Before you deploy, validate your files to see if the deployment will be successful.
+Now that you have a completed template and a zipped configuration file, you can use the Azure CLI to deploy them. Before you deploy, validate your files to see if the deployment can succeed.
 
 1. In Cloud Shell, run this command to validate your deployment. When prompted for a password, enter a complex password of your choice.
 
@@ -129,7 +129,7 @@ Now that you have a completed template and zipped configuration file, you can us
         --parameters vmName=hostVM1 adminUsername=serveradmin
     ```
 
-1. If your deployment is validated, you'll see information about your deployment. Pay special attention to the `error` property, which is near the beginning of the output and can be found by scrolling back through the output text. It should be `null`.
+1. If your deployment is validated, the output shows information about your deployment. Pay special attention to the `error` property, which is near the beginning of the output and can be found by scrolling back through the output text. It should be `null`.
 
     :::image type="content" source="../media/5-error-null.png" alt-text="Screenshot of Cloud Shell showing a successful template validation with a callout highlighting the error property set to null." loc-scope="other"::: <!-- no-loc -->
 
@@ -176,4 +176,4 @@ Now that you know the template is valid, you can deploy it.
 
     :::image type="content" source="../media/5-iis-server-runs.png" alt-text="Screenshot of the default IIS page on the virtual machine that was deployed." loc-scope="other" lightbox="../media/5-iis-server-runs.png" :::
 
-Congratulations! You have successfully provisioned a web server using a Resource Manager template, and enforced a Desired State Configuration (DSC) on your virtual machine using a DSC extension handler.
+Congratulations! You successfully provisioned a web server using a Resource Manager template, and enforced a Desired State Configuration (DSC) on your virtual machine using a DSC extension handler.

@@ -4,14 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Check your understanding so far.
-  author: KittyYeungQ
-  ms.author: kitty
+  author: aviviano
+  ms.author: amvivian
   ms.date: 01/01/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |
-   Choose the best response for each question. Then select **Check your answers**.
+   Choose the best response for each question, then select **Check your answers**.
 
 quiz:
   title: Check your knowledge

@@ -22,7 +22,7 @@ quiz:
       explanation: "Correct. As part of your API policies, you can set usage quotas by subscription or another value. Those quotas are then enforced when each API request enters the Azure API Management gateway."
     - content: "Developer portal"
       isCorrect: false
-      explanation: "Incorrect. Developers use this portal to subscribe to your APIs. Those subscriptions are subject to the usage quotas you set, which are enforced by the Azure API Management gateway."
+      explanation: "Incorrect. Developers use this portal to subscribe to your APIs. Those subscriptions are subject to the usage quotas you set. The Azure API Management gateway enforces the usage quotas."
     - content: "Administration interface"
       isCorrect: false
       explanation: "Incorrect. You use the Azure API Management administration interface to set usage quotas, not to enforce them."
@@ -33,10 +33,10 @@ quiz:
       explanation: "Incorrect. You should only use versions for relatively major or breaking changes to the API."
     - content: "API product"
       isCorrect: false
-      explanation: "Incorrect. A product is a group of APIs and is not related to making changes to APIs."
+      explanation: "Incorrect. A product is a group of APIs and isn't related to making changes to APIs."
     - content: "API revision"
       isCorrect: true
-      explanation: "Correct. You use revisions for relatively minor or non-breaking changes to the API."
+      explanation: "Correct. You use revisions for relatively minor or nonbreaking changes to the API."
   - content: "Suppose an API product manager wants their organization to respond more quickly with API revisions that satisfy customer suggestions. Which one of the following actions would help them meet their goal?"
     choices:
     - content: "Standardizing API specifications"

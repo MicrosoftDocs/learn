@@ -7,7 +7,7 @@ metadata:
   author: Sean-Kerawala
   ms.author: sekerawa
   ms.topic: interactive-tutorial
-  ms.prod: learning-mrtk
+  ms.prod: hololens
 title: Enable eye-tracking and voice commands for objects on the HoloLens 2
 summary: Use eye-tracking and voice commands in your unity project and enhance user experience
 abstract: |

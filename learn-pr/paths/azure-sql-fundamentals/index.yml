@@ -4,9 +4,9 @@ metadata:
   title: Azure SQL fundamentals
   description: Learn how to deploy, secure, monitor and troubleshoot Azure SQL database.
   brand: azure
-  ms.date: 08/05/2020
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 03/15/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Azure SQL fundamentals

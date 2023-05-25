@@ -1,18 +1,18 @@
-Organizations may need to adjust the information that an API publishes at short notice, for example, to comply with a change of legislation or address a new security threat.
+Organizations may need to adjust the information that an API publishes at short notice. For example, to comply with a change of legislation or address a new security threat.
 
-The government census API exposes details about the URL from which the API is being called from. This information could allow a malicious user to attempt to access the census data by bypassing the API Management gateway and exposing a less secure endpoint. As lead developer, you want to mask these URLs within the response body of the API.
+The government census API exposes details about the URL from which the API is being called. This information could allow a malicious user to attempt to access the census data by bypassing the API Management gateway and exposing a less secure endpoint. As lead developer, you want to mask these URLs within the response body of the API.
 
-Here, you will learn how to use API Management policies that manipulate the content of API response headers and bodies.
+Here, you learn how to use API Management policies that manipulate the content of API response headers and bodies.
 
 ## Why transform a response?
 
 The response body of an API call contains the data that is being requested. In the Census API, for example, the response body contains the JSON data for the respondents. You can also see how the body contains URL links to view individual people:
 
-![Links in Response Body.](../media/4-links-in-body.png)
+:::image type="content" source="../media/4-links-in-body.png" alt-text="Screenshot of a default HTTP response with the href value highlighted, showing an unmasked URL link.":::
 
 These links are based on the Census API endpoints and need to be masked to show the API Management URLs instead.
 
-To achieve this configuration, we will create a transformation policy.
+To achieve this configuration, create a transformation policy.
 
 > [!NOTE]
 > It's best practice to secure the back-end API by configuring it to require a client certificate, and then configuring API Management to supply that certificate. In this configuration, no one can call the back-end API directly and circumvent your API Management gateway because they don't have a certificate that's recognized by the back end.
@@ -35,4 +35,4 @@ A transformation policy modifies the content of an API call. Some transformation
 | **Transform XML using an XSLT** | Applies an XSL transformation to the XML in the request or response body. |
 | | |
 
-You will use the **Mask URLs in Content** transform to alter the links in the following exercise.
+In the following exercise, you use the **Mask URLs in Content** transform to alter the links.

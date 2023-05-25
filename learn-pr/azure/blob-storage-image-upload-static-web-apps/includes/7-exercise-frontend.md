@@ -1,8 +1,8 @@
-Now you are going to create your application frontend. This is what your users will see. A form they will use to submit their images to your application. The web frontend will take care of contacting the Azure Functions REST API you created in the previous exercise. From the API the frontend will obtain a Shared Access Signature that will be used to authenticate and authorize users to upload their images to your storage backend. 
+Now, we'll create your application frontend. Your users will see the frontend as a form they can use to submit their images to your application. The web frontend will take care of contacting the Azure Functions REST API you created in the previous exercise. The frontend will obtain a shared access signature from the API to authenticate and authorize users to upload their images to your storage backend. 
 
 ## Create the frontend HTML
 
-1. Start by creating an `index.html` file in the root folder, and add the following code to it:
+1. In Visual Studio Code, create an `index.html` file in the root folder and add the following code to it:
 
     ```html
     <!DOCTYPE html>
@@ -42,7 +42,7 @@ Now you are going to create your application frontend. This is what your users w
 
 2. Create a `src` folder and add an `index.js` file there.
 
-3. Implement the `blobUpload` function like this:
+3. Implement the `blobUpload` function as follows:
 
     ```javascript
     const { BlockBlobClient, AnonymousCredential } = require("@azure/storage-blob");
@@ -63,14 +63,14 @@ Now you are going to create your application frontend. This is what your users w
 
 ## Use the Azure Blob Storage SDK with Webpack
 
-1. Install Webpack by running the following commands in your projects root folder:
+1. Install Webpack by running the following commands in your project's root folder:
 
     ```bash
     npm install webpack --save-dev
     npm install webpack-cli --save-dev
     ```
 
-2. Edit your `package.json` file and add `"build": "webpack --mode=development"` to the `scripts` key, so it ends up looking like this:
+2. Edit your `package.json` file and add `"build": "webpack --mode=development"` to the `scripts` key, so it matches the following code:
 
     ```json
     "scripts": {
@@ -80,7 +80,7 @@ Now you are going to create your application frontend. This is what your users w
       }
     ```
 
-3. Run `webpack` by typing:
+3. Run `webpack` by entering the following command in your terminal:
 
     ```bash
     npm run build
@@ -88,23 +88,23 @@ Now you are going to create your application frontend. This is what your users w
 
 ## Run your project locally
 
-Now it's time to test your project locally.
+Now, it's time to test your project locally.
 
-1. Press `F5` to start the Azure Functions project in debug mode.
- 
-2. Wait till VSCode has launched your project. You'll see a URL like the following in the console. Copy it and open it in your browser:
+1. In Visual Studio Code, press <kbd>F5</kbd> to start the Azure Functions project in debug mode.
 
-    ```
+2. Wait until VS Code has launched your project. You'll see a URL like the following in the console. Copy it and open it in your browser:
+
+    ```output
     http://localhost:7071/api/credentials
     ```
 
-You will see the return value of the function displayed in your browser screen, looking like this:
+You'll see the return value of the function displayed in your browser. It should resemble the following:
 
-:::image type="content" source="../media/api-result.png" alt-text="API result in the browser":::
+:::image type="content" source="../media/api-result.png" alt-text="Screenshot of the API result in the browser window.":::
 
 ## Test your project using Live Server
 
-Then it's time to run the frontend side of the project. For that you are going to use Live Server.
+Now, let's run the frontend side of the project. To accomplish this, we'll use Live Server.
 
 1. You need to configure Live Server so it forwards calls to your `credentials` API to the Azure Functions backend running on your machine. Add the following configuration key into your `.vscode/settings.json` file.
 
@@ -116,16 +116,16 @@ Then it's time to run the frontend side of the project. For that you are going t
         }
     ```
 
-2. In the VS Code file tree, right-click on your `index.html` file and select `Open with Live Server` from the contextual menu.
+2. In the file tree, right-click on your `index.html` file and select `Open with Live Server` from the contextual menu.
 
-3. Navigate to `http://localhost:5500/` to see your app running on the browser. It should look something like this:
+3. Navigate to `http://localhost:5500/` to see your app running on the browser. It should look something like the following:
 
-    :::image type="content" source="../media/frontend.png" alt-text="Frontend app in the browser":::
+    :::image type="content" source="../media/frontend.png" alt-text="Screenshot of the frontend app in the browser window.":::
 
-4. Select an image for uploading.
+4. Select an image to upload.
 
-5. Go to your storage account in Azure portal. Click on `Storage Explorer`, then select `Blob Storage` and click on the `images` container. Your image will be there like in the following screenshot.
+5. Go to your storage account in Azure portal. Select **Storage browser**, then select **Blob containers** and select the **images** container. Your image should be listed.
 
-    :::image type="content" source="../media/container-image.png" alt-text="Storage Explorer listing the uploaded image":::
+    :::image type="content" source="../media/container-image.png" alt-text="Screenshot of the Storage browser listing the uploaded image":::
 
 Congratulations! You just upload an image to Azure Blog Storage directly from your static web app, all thanks to the SAS token generated by your Azure Function.

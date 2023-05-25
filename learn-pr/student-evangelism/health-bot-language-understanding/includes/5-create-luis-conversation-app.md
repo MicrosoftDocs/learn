@@ -1,4 +1,4 @@
-In this unit, you'll train a conversation app in LUIS that will take in examples of queries that might be asked in the Azure Health Bot instance, which then trigger the appropriate response or scenario. Before you get started, make sure that you've already created a Health Bot instance by using the Azure portal.
+In this unit, you'll train a conversation app in LUIS that takes in examples of queries that might be asked in the Azure Health Bot instance. These queries then trigger the appropriate response or scenario. Before you get started, make sure that you've already created a Health Bot instance by using the Azure portal.
 
 Creating a LUIS app with Language Understanding consists of two main tasks:
 
@@ -14,11 +14,11 @@ For each of the authoring and prediction tasks, you need a resource in your Azur
 
 The separation of resources is useful to track resource utilization for language model training separately from client applications that use the model to generate predictions.
 
-If you choose to create a Language Understanding resource, you'll be prompted to choose authoring, prediction, or both. If you choose both, *two* resources are created, one for authoring and one for prediction.
+If you choose to create a Language Understanding resource, you're prompted to choose authoring, prediction, or both. If you choose both, *two* resources are created, one for authoring and one for prediction.
 
-Alternatively, you can use a dedicated Language Understanding resource for authoring, but deploy your model to a generic Cognitive Services resource for prediction. When your client application uses other Cognitive Services in addition to Language Understanding, this approach enables you to manage access to all the Cognitive Services being used, including the Language Understanding prediction service, through a single endpoint and key.
+Alternatively, you can use a dedicated Language Understanding resource for authoring, but deploy your model to a generic Cognitive Services resource for prediction. When your client application uses other Cognitive Services in addition to Language Understanding, you can manage access to all the Cognitive Services being used through a single endpoint and key.
 
-In this module, you'll use the Language Understanding resource.
+In this module, you're using the Language Understanding resource.
 
 ## Create a LUIS resource in Azure
 
@@ -30,20 +30,16 @@ In this module, you'll use the Language Understanding resource.
 
    :::image type="content" source="../media/4-create-luis.png" alt-text="Screenshot that shows creating a LUIS resource." lightbox="../media/4-create-luis.png":::
 
-1. On the page that appears, fill in the details for your **LUIS Application**. For Create options, choose **Both**.
+1. For **Create options**, select **Both**. Make sure you select the same **resource group** where you created your Azure Health Bot earlier and then enter a name for your **LUIS** resource. Select your **location** and **pricing tier** of choice for both Authoring and Prediction resources. Use the location of the Prediction resource when you integrate your LUIS application into the Azure Health Bot later. Once done, select **Review + create.**
 
-   :::image type="content" source="../media/4-create-luis-options.png" alt-text="Screenshot that shows selecting a the options in the LUIS configuration." lightbox="../media/4-create-luis-options.png":::
-
-1. Make sure you select the same **resource group** where you created your Azure Health Bot earlier and then enter a name for your **LUIS** resource. Select your **location** and **pricing tier** of choice for both Authoring and Prediction resources.  You will use the location of the Prediction resource when you integrate your LUIS application into the Azure Health Bot later. Once done, select **Review + create.**
-
-   :::image type="content" source="../media/4-review-create-luis.png" alt-text="Screenshot that shows reviewing the LUIS resources created." lightbox="../media/4-review-create-luis.png":::
+   :::image type="content" source="../media/5-health-bot-create-luis-app.png" alt-text="Screenshot that shows reviewing the LUIS resources created.":::
 
 1. Select the **Create** option once the review is done.
 
-   :::image type="content" source="../media/4-create-luis-all.png" alt-text="Screenshot that shows selecting the review and create LUIS service." lightbox="../media/4-create-luis-all.png":::
+   :::image type="content" source="../media/5-health-bot-create-luis-final.png" alt-text="Screenshot that shows selecting the review and create LUIS service.":::
 
    > [!NOTE]
-   > You can alternatively create Prediction and Authoring resources on the LUIS portal after creating your LUIS app.
+   > Alternatively, you can create Prediction and Authoring resources on the LUIS portal after creating your LUIS app.
 
 ## Sign in to the LUIS portal
 
@@ -68,11 +64,11 @@ In this module, you'll use the Language Understanding resource.
 
    :::image type="content" source="../media/4-new-authoring.png" alt-text="Screenshot that shows creating a new authoring resource.":::
 
-1. Under the **Create new Azure Cognitive Services account** menu that appears, select the subscription where you want to create your authoring resource. Then select the resource group that you provisioned when you created your health bot earlier.
+1. Under the **Create a new authoring resource** menu that appears, select the subscription where you want to create your authoring resource. Select the resource group that you provisioned when you created your health bot earlier, and then select your pricing tier.
 
    Select the location where you want to create this resource, and then select **Done**.
 
-   :::image type="content" source="../media/4-authoring-resource.png" alt-text="Screenshot that shows authoring resource details.":::
+   :::image type="content" source="../media/5-health-bot-authoring-resource.png" alt-text="Screenshot that shows authoring resource details.":::
 
    The next time you sign in to LUIS, you can select the same authoring resource that you've created.
 
@@ -95,13 +91,13 @@ You've finished creating your authoring resource for LUIS. Now you can begin to 
 
 1. After your conversation app is created, you can access it from the LUIS home page.
 
-   :::image type="content" source="../media/4-app-details.png" alt-text="Screenshot that shows filling in app details." lightbox="../media/4-app-details.png":::
+   :::image type="content" source="../media/5-health-bot-app-details.png" alt-text="Screenshot that shows filling in app details." lightbox="../media/5-health-bot-app-details.png":::
 
 ## Add entities to your conversation app
 
-An *entity* is a word in your utterance that your LUIS app can identify and do something with. In this case, your LUIS app will be used to book an appointment with a doctor. You'll create a *doctor_type* entity that includes a list of the different types of doctors that your customer might want to make an appointment with.
+An *entity* is a word in your utterance that your LUIS app can identify and do something with. In this case, your LUIS app is used to book an appointment with a doctor. You're creating a *doctor_type* entity that includes a list of the different types of doctors that your customer might want to make an appointment with.
 
-For this entity, you'll create a sublist that identifies the type of doctor. An example is *dermatologist*. You'll also add synonyms that might be used to refer to that type of doctor. An example is *skin doctor*. Then you'll create a prebuilt time entity to recognize the time to book the appointment.
+For this entity, create a sublist that identifies the type of doctor. An example is *dermatologist*. You'll also add synonyms that might be used to refer to that type of doctor. An example is *skin doctor*. Then you'll create a prebuilt time entity to recognize the time to book the appointment.
 
 1. From the LUIS home page, select your conversation app.
 
@@ -119,7 +115,7 @@ For this entity, you'll create a sublist that identifies the type of doctor. An 
 
 ## Create intents for your conversation app
 
-An *intent* is an action you want to perform on one or more entities. In this case, you'll define an intent to book appointments. Then you'll specify sample utterances that indicate the kind of language used to indicate the intent.
+An *intent* is an action you want to perform on one or more entities. In this case, you're defining an intent to book appointments. Then specify sample utterances that indicate the kind of language used to indicate the intent.
 
 1. On the **Language Understanding** page for your app, in the pane on the left, select **Intents**. Select **Create** to create an intent.
 
@@ -141,7 +137,7 @@ An *intent* is an action you want to perform on one or more entities. In this ca
    - How do you make a booking?
    - I need to schedule some time with a doctor.
   
-   You'll see that some of the words, specifically those that have to do with the type of doctors, location, and time, are underlined. Underlining shows that LUIS has successfully recognized the entities that you created earlier from the utterances that you just entered.
+   You'll see that some of the words, specifically words that have to do with the type of doctors, location, and time, are underlined. Underlining shows that LUIS has successfully recognized the entities that you created earlier from the utterances that you just entered.
 
    :::image type="content" source="../media/4-enter-example.png" alt-text="Screenshot that shows entering example intents." lightbox="../media/4-enter-example.png":::
 
@@ -165,7 +161,7 @@ Now you're ready to use the data you've provided in the form of entities, intent
    > [!NOTE]
    > You might initially see that all these test utterances are classified as having a BookAppointment intent. This situation happens if you haven't trained the app on enough samples.
 
-1. On the **Test** pane, select the incorrectly classified test utterances. You'll see a pane open on the right. Under **Top-scoring intent**, select **Assign to a new intent**. In the dropdown box that appears, assign your test utterance to the correct intent.
+1. On the **Test** pane, select the incorrectly classified test utterances. You'll see a pane open. Under **Top-scoring intent**, select **Assign to a new intent**. In the dropdown box that appears, assign your test utterance to the correct intent.
 
    :::image type="content" source="../media/4-correct-model.png" alt-text="Screenshot that shows assigning an utterance to a new intent." lightbox="../media/4-correct-model.png":::
 

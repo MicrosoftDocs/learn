@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
 title: Sort and filter results in T-SQL
 summary: Learn how to sort and filter query results
 abstract: |

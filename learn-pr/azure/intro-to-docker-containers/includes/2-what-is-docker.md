@@ -1,8 +1,8 @@
-Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploy applications. We'll also briefly describe some of the challenges faced by our teams.
+Before we start our quick tour of Docker containers, let's have a look at how our team develops and deploys applications. We'll also briefly describe some of the challenges faced by our teams.
 
 The process of developing and managing applications in your company typically includes one or more teams. There's a development team that creates the software, and an operations team responsible for the deployment of these applications. The operations team is also responsible for the management of the application hosting infrastructure.
 
-For example, assume we're developing an order tracking portal that our company's various outlets will use. Several environments host our applications during the app's development and publish process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
+For example, assume we're developing an order tracking portal that our company's various outlets will use. Several environments host our applications during the app's development and publishing process. First, the development team develops and tests the software in a development environment. From here, the software is then deployed to a quality assurance (QA) environment, followed by pre-production, and a final production environment.
 
 There are several challenges that we'll need to consider in the above scenario:
 
@@ -58,7 +58,7 @@ The Docker Engine consists of several components configured as a client-server i
 
 **The Docker client**
 
-The Docker client is a command-line application named `docker` that provides us with a command line interface (CLI) to interact with a Docker server. The `docker` command uses the Docker REST API to send instructions to either a local or remote server and functions as the primary interface we use to manage our containers.
+There are two alternatives for Docker client: A command-line application named `docker` or a Graphical User Interface (GUI) based application called Docker Desktop. Both the CLI and Docker Desktop interact with a Docker server. The `docker` commands from the CLI or Docker Desktop use the Docker REST API to send instructions to either a local or remote server and functions as the primary interface we use to manage our containers.
 
 **The Docker server**
 

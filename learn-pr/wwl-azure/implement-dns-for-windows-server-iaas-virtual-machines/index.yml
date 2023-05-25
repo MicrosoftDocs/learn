@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: windows-server
 title: Implement DNS for Windows Server IaaS VMs
 summary: In this module, you’ll learn to configure DNS for Windows Server IaaS VMs, choose the appropriate DNS solution for your organization’s needs, and run a DNS server in a Windows Server Azure IaaS VM.
 abstract: |

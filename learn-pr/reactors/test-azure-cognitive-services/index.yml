@@ -6,9 +6,10 @@ metadata:
   ms.date: 06/23/2022
   author: aahill
   ms.author: aahi
+  manager: nitinme
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: cognitive-services 
 title: Test Azure Cognitive Services  
 summary: Learn how to test Azure Cognitive Services for data science operations.
 abstract: |

@@ -1,6 +1,6 @@
 In this exercise, you'll create an application that uses continuous recognition to transcribe the sample audio file that you downloaded in the previous exercise.
 
-## Modify the code for your text-to-speech application
+## Modify the code for your text to speech application
 
 1. In the Cloud Shell on the right, open the *Program.cs* file.
 
@@ -166,7 +166,7 @@ In this exercise, you'll create an application that uses continuous recognition 
     -rw-r--r-- 1 user   user     2926 Oct  1 11:11 Program.cs
     -rw-r--r-- 1 user   user      412 Oct  1 11:11 Shakespeare.txt
     -rwxr-xr-x 1 user   user   978242 Oct  1 11:11 Shakespeare.wav
-    -rw-r--r-- 1 user   user      348 Oct  1 11:11 speech-to-text.csproj
+    -rw-r--r-- 1 user   user      348 Oct  1 11:11 speech to text.csproj
     ```
 
     You'll notice that the size of the text file is larger than the result of the previous exercise. This difference in file size is because the continuous speech recognition converted more of the audio file.
@@ -187,7 +187,7 @@ In this exercise, you'll create an application that uses continuous recognition 
     They have their exits and their entrances, and one man in his time plays many parts, his act being seven ages.
     ```
 
-    If you listened to the sample WAVE file, you would notice that this text now contains the entirety of the audio. Because we used the `StartContinuousRecognitionAsync()` method of the `SpeechRecognizer`, the speech-to-text recognition continued even when the speaker paused.
+    If you listened to the sample WAVE file, you would notice that this text now contains the entirety of the audio. Because we used the `StartContinuousRecognitionAsync()` method of the `SpeechRecognizer`, the speech to text recognition continued even when the speaker paused.
 
 ## Improve your application's recognition results
 

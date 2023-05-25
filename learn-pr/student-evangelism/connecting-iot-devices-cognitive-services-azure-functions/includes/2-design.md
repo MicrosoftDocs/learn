@@ -9,7 +9,7 @@ You'll use the following components in the design of the solution:
    - Serverless Application Environments
    
    In this module, we use Azure functions only. Azure Functions enable you to develop serverless applications. You run small pieces of code (called "functions").  Specific events trigger the function to run the code.
-- **Cognitive Speech Service:** The Speech service is an API that provides you speech-to-text, text-to-speech, and speech translation functionality into a single Azure subscription. In this module, you'll use the Cognitive Speech service to integrate real-time speech translation.  
+- **Cognitive Speech Service:** The Speech service is an API that provides you speech to text, text to speech, and speech translation functionality into a single Azure subscription. In this module, you'll use the Cognitive Speech service to integrate real-time speech translation.  
 
 - **Visual Studio Code**: is a source-code editor. You use Visual Studio Code as a development tool for the IoT device.  
 
