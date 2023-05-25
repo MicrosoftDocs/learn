@@ -1,13 +1,15 @@
 
-Users can choose between online or offline migration based on their business needs. They can also configure a self-hosted integration runtime to access backup files from the source SQL Server instance in their on-premises environment. The extension also provides a secure and improved user experience for migrating Transparent Data Encryption (TDE) databases and SQL Server and Windows logins to Azure SQL.
+When using Azure migration extension for Azure Data Studio, users can choose between online or offline migration based on the Azure target selected. They can also configure a self-hosted integration runtime to access backup files from the source SQL Server instance in their on-premises environment. 
+
+The extension also provides a secure and improved user experience for migrating Transparent Data Encryption (TDE) databases and SQL Server and Windows logins to Azure SQL.
 
 ## Install Azure migration extension for Azure Data Studio
 
-As a prerequisite, you need to install [Azure Data Studio](https://learn.microsoft.com/sql/azure-data-studio/download-azure-data-studio). The extension is available to be installed in Azure Data Studio marketplace. 
+As a prerequisite, you need to install [Azure Data Studio](https://learn.microsoft.com/sql/azure-data-studio/download-azure-data-studio) first. The extension is available in Azure Data Studio marketplace.
 
 :::image type="content" border="false" source="../media/4-install-migration-extension.png" alt-text="Screenshot of the Azure migration extension for Azure Data Studio available in the marketplace.":::
 
-To install the migration extension, you can follow these steps:
+To install the migration extension, follow these steps:
 
 1. Open the extensions manager in Azure Data Studio.
 1. Search for ***Azure SQL Migration*** and select the extension.
@@ -19,9 +21,9 @@ To install the migration extension, you can follow these steps:
 
 ## Assess database readiness
 
-As we've seen, the migration extension performs detailed evaluation of the source SQL Server instance by executing multiple rules to identify critical issues that must be addressed before migrating your SQL Server database to Azure SQL.
+The migration extension performs detailed evaluation of the source SQL Server instance by executing multiple rules to identify critical issues that must be addressed before migrating your SQL Server database to Azure SQL.
 
-An Azure account isn't required for assessments or SKU recommendations. Not requiring an Azure account for assessments or SKU recommendations has the benefit of enabling users to evaluate the feasibility and cost of migrating their databases to Azure without the need to commit to creating an Azure account. This saves time and effort for users who are still in the decision-making process.
+An Azure account isn't required for assessments or SKU recommendations. Not requiring an Azure account for assessments or SKU recommendations has the benefit of enabling users to evaluate the readiness and cost of migrating their databases to Azure without the need to commit to creating an Azure account. This saves time and effort for users who are still in the decision-making process.
 
 :::image type="content" border="false" source="../media/4-assessment-page.png" alt-text="Screenshot of the assessment results page for the migration extension wizard.":::
 
@@ -42,7 +44,7 @@ While the Azure recommendations feature doesn't provide price estimates due to t
 As we can see, once you initiate the Azure Migration extension wizard, you have the option to select **Get Azure recommendation** to enable performance data collection. 
 
 > [!IMPORTANT]
-> The performance data is collected from all databases on a specific instance. The collected data can be used multiple times for the migration of different source databases.
+> We collect performance data from all databases on a specific instance simultaneously, and the same data can be used multiple times for migrating different source databases.
 
 ## Assessment automation
 

@@ -9,7 +9,7 @@ The [Azure SQL Migration extension for Azure Data Studio](https://learn.microsof
 
 Additionally, the migration extension is a lightweight tool that provides support for both online and offline migration modes, enabling you to migrate from SQL Server to Azure SQL Managed Instance, Azure SQL Database, or SQL Server on Azure Virtual Machine. However, please note that for SQL Server to Azure SQL Database migration, only the offline migration mode is currently available.
 
-> [NOTE!]
+> [!NOTE]
 > To a list of the features supported by the extension, see [Azure SQL migration extension for Azure Data Studio](https://learn.microsoft.com/sql/azure-data-studio/extensions/azure-sql-migration-extension)
 
 ## Azure Migrate
@@ -20,7 +20,7 @@ These tools include *Azure Migrate: Discovery and assessment*, which evaluates y
 
 Azure Migrate is suitable for larger-scale migrations and scenarios.
 
-> [NOTE!]
+> [!NOTE]
 > To see a list of integrated tools supported by Azure Migrate, see [Integrated tools](https://learn.microsoft.com/azure/migrate/migrate-services-overview#integrated-tools)
 
 ## Data Migration Assistant (DMA)

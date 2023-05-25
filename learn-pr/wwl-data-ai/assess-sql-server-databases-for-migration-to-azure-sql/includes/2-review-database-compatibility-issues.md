@@ -11,10 +11,7 @@ An example of an incompatibility that may prevent migration to Azure SQL Databas
 
 You can run the assessment on one or more databases and on one or more instances. The size of each selected database affects the time it takes to run the assessment.
 
-It’s best practice to run assessments on a development or test version of the database. After assessments are complete, you may decide to run the same checks on the production database. 
-
-> [!NOTE] 
-> When you need to run the assessment in production, ensure you do it at the time of lowest activity so as not to impact users.
+It’s best practice to run assessments on a development or test version of the database. After assessments are complete, you may decide to run the same checks on the production database. When it's time to run the assessment in production, ensure it's done at the time of lowest activity so as not to impact users.
 
 ### Assessment rules
 

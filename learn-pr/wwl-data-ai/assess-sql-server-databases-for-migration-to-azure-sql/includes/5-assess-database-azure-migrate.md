@@ -1,13 +1,13 @@
 
-The Azure portal offers tools to assess your current on-premises workloads, providing insights for migration planning. With Azure Migrate, you can perform an agentless environment discovery or use agents to conduct a dependency analysis. This helps identify the dependencies between different components in your environment. 
+Azure Migrate offers tools to assess your current on-premises workloads, providing insights for migration planning. Also, you can perform an agentless environment discovery or use agents to conduct a dependency analysis. This helps identify the dependencies between different components in your environment. 
 
 ## What is Azure Migrate?
 
 Azure Migrate simplifies the process of migrating, modernizing, and optimizing your Azure environment by offering a wide range of comprehensive services. It covers all pre-migration steps, including discovery, assessments, and right-sizing of on-premises resources for infrastructure, data, and applications. Additionally, Azure Migrate allows integration with third-party tools, expanding its capabilities to support a wide range of use-cases.
 
-Additionally, Azure Migrate supports discovery and assessment of different SQL Server deployments, such as SQL Server Always On Failover Cluster Instances (FCI) and Always On Availability Groups (AG).
+Azure Migrate supports discovery and assessment of different SQL Server deployments, such as SQL Server Always On Failover Cluster Instances (FCI) and Always On Availability Groups (AG).
 
-Various tools are available within Azure Migrate, such as **Azure Migrate: Discovery and Assessment and Migration and Modernization**, which can be integrated with other Azure services, independent software vendor (ISV) offerings, and support the assessment, migration, and modernization of servers, databases, web apps, and virtual desktops. 
+There are several tools available in Azure Migrate, such as **Azure Migrate: Discovery and Assessment and Migration and Modernization**, which can be integrated with other Azure services, independent software vendor (ISV) offerings, and support the assessment, migration, and modernization of servers, databases, web apps, and virtual desktops. 
 
 For example, if you're assessing the entire SQL Server data estate at scale on VMware, you can use Azure Migrate to get Azure SQL deployment recommendations, target sizing, and monthly estimates.
 
@@ -17,7 +17,7 @@ During the discovery phase, Azure Migrate can also be used to scan the network a
 
 ## Assessment tools
 
-The Azure Migrate hub includes for assessment include these main tools:
+The Azure Migrate hub for assessment includes these tools:
 
 ### Azure Migrate: Discovery and assessment
 
@@ -111,3 +111,4 @@ To run this exercise, ensure you follow these steps before proceeding:
 
     :::image type="content" border="false" source="../media/5-azure-migrate-assess-2.png" alt-text="Screenshot of the assessed databases page results after the assessment report was uploaded."::: 
 
+Note that the report is now available on Azure Migrate, and different teams can reference it. Take a moment to review the assessment results, and the columns in the assessment report. 

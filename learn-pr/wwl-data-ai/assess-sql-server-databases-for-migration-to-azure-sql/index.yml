@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Assess SQL Server databases for migration to Azure SQL
-summary: The Data Migration Assistant (DMA) is a standalone application that can find compatibility issues between versions of databases. It also shows you new features that would enhance the performance of your database when upgraded.
+summary: Learn multiple assessment tools that facilitate the migration of databases to Azure, including the Azure SQL Migration extension for Azure Data Studio, Azure Migrate, and Data Migration Assistant.
 abstract: |
   In this module, you'll:
    - Understand common compatibility issues and blockers that may prevent a migration to Azure SQL.
