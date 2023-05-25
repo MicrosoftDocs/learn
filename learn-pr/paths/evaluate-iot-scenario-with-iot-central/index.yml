@@ -11,7 +11,7 @@ metadata:
   ms.reviewer: adchukwu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure-iot-central
 prerequisites: |
   - Basic familiarity with IT terms and concepts
 iconUrl: http://via.placeholder.com/120x120

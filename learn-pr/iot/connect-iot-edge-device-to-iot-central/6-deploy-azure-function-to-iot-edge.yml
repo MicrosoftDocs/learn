@@ -3,7 +3,7 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.deploy-azure-function-to-i
 title: Use Azure Functions to filter data at the edge
 metadata:
   title: Use Azure Functions to filter data at the edge
-  description: Use Azure Functions to filter data at the edge
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
   ms.date: 05/24/2023

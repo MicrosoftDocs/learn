@@ -3,7 +3,7 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-deploy-and-manage
 title: Exercise - Deploy an IoT Edge device and manage it from IoT Central
 metadata:
   title: Exercise - Deploy an IoT Edge device and manage it from IoT Central
-  description: Exercise - Deploy an IoT Edge device and manage it from IoT Central
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
   ms.date: 05/24/2023
