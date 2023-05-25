@@ -29,7 +29,7 @@ The following steps outline the commands for those tasks:
 
 1. Create an Azure resource group.
 
-   `MYSQL_RES_GRP_NAME` must by unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you run the command `az account list-locations --output table`.
+   `MYSQL_RES_GRP_NAME` must be unique within your subscription. `MYSQL_LOCATION` must be one of the values returned in the `Name` column when you run the command `az account list-locations --output table`.
 
    ```azurecli
    az group create --name $MYSQL_RES_GRP_NAME --location $MYSQL_LOCATION
