@@ -52,7 +52,7 @@ All Microsoft Sentinel hunting queries use Kusto Query Language (KQL) syntax use
 
 You can also create your own custom queries by using KQL code to hunt for threats.
 
-:::image type="content" source="../media/3-create-custom-query-page.png" alt-text="The page for creating a custom query in Microsoft Sentinel." :::
+:::image type="content" source="../media/3-create-custom-query-page.png" alt-text="Screenshot that shows the page for creating a custom query in Microsoft Sentinel." :::
 
 Custom queries allow you to define the following:
 
