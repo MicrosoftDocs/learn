@@ -23,9 +23,9 @@ quiz:
     - content: "APPROX_PERCENTILE_CONT"
       isCorrect: false
       explanation: "APPROX_PERCENTILE_CONT interpolates between data points to provide a more accurate estimate."
-    - content: "PERCENTILE_CONT"
+    - content: "PERCENTILE_DISC"
       isCorrect: true
-      explanation: "PERCENTILE_CONT computes the exact value at a specified percentile without interpolating between data points."
+      explanation: "PERCENTILE_DISC computes the exact value at a specified percentile without interpolating between data points."
     - content: "APPROX_PERCENTILE_DISC"
       isCorrect: false
       explanation: "APPROX_PERCENTILE_DISC efficiently calculates the nearest existing data point, but it doesn't compute the exact value without interpolating between data points."
