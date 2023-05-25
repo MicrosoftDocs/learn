@@ -16,7 +16,7 @@ You're planning to implement your filter using Azure Functions to run as one of 
 
 You can use multiple languages to create a function for Azure Functions. The following steps outline how to build an IoT Edge module that contains a function implemented in C#:
 
-1. Create a project that includes the scaffolding for an Azure Function module. You can create such a project using Visual Studio code, or at the command line using the `dotnet` command.
+1. Create a project that includes the scaffolding for an Azure Function module. You can create such a project using Visual Studio Code, or at the command line using the `dotnet` command.
 1. Implement the business logic for the function in C#.
 1. Build the project to generate a Docker image that contains the function and required Azure Functions runtime.
 1. Upload the Docker image to a container registry.
