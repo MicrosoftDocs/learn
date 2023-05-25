@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-device-templates.introduction-to-device-templates
+title: Review device template capabilities
+metadata:
+  title: Review device template capabilities
+  description: "Review device template capabilities"
+  ms.date: 05/11/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-introduction-to-device-templates.md)]

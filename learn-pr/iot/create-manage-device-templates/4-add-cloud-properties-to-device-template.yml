@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-device-templates.add-cloud-properties-to-device-template
+title: Examine the cloud property capability type in a device template
+metadata:
+  title: Examine the cloud properties section of a device template
+  description: "Examine the cloud properties section of a device template"
+  ms.date: 05/11/2023
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-add-cloud-properties-to-device-template.md)]
