@@ -31,7 +31,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - security
 - classification-analysis
