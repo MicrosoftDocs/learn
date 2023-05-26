@@ -29,11 +29,11 @@ Always check to see what security features your frameworks offer. **Never** roll
 
 The .NET Core framework has countless security features. Here are a few core starting places in the documentation:
 
-* [Authentication - Identity Management](/aspnet/core/security/authentication/index?view=aspnetcore-2.1)
-* [Authorization](/aspnet/core/security/authorization/index?view=aspnetcore-2.1)
-* [Data Protection](/aspnet/core/security/data-protection/index?view=aspnetcore-2.1)
-* [Secure Configuration](/aspnet/core/security/data-protection/configuration/index?view=aspnetcore-2.1)
-* [Security Extensibility APIs](/aspnet/core/security/data-protection/extensibility/index?view=aspnetcore-2.1)
+* [Authentication - Identity Management](/aspnet/core/security/authentication/index?view=aspnetcore-2.1&preserve-view=true)
+* [Authorization](/aspnet/core/security/authorization/index?view=aspnetcore-2.1&preserve-view=true)
+* [Data Protection](/aspnet/core/security/data-protection/index?view=aspnetcore-2.1&preserve-view=true)
+* [Secure Configuration](/aspnet/core/security/data-protection/configuration/index?view=aspnetcore-2.1&preserve-view=true)
+* [Security Extensibility APIs](/aspnet/core/security/data-protection/extensibility/index?view=aspnetcore-2.1&preserve-view=true)
 
 Each of these features was written by experts in their field, then battered with tests to ensure that they work as intended, and only as intended. Other frameworks offer similar features; check with the vendor that provides the framework to find out what they have in each category.
 
