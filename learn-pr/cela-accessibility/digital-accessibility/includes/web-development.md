@@ -20,7 +20,7 @@ For more information, explore the W3C [ARIA Landmarks Example](https://w3c.githu
 
 ## Page structure
 
-Websites should also include a programmatic title or proper formatting of headings. If a web page doesn't have a title or uses heading elements improperly, then it may be difficult for people who use screen readers to know where they are on a given page.
+Websites should also include a programmatic title or proper formatting of headings. Web pages that don't have a title or use heading elements improperly, make it difficult for people who use screen readers to know where they are on a given page.
 
 To avoid these issues:
 
@@ -30,9 +30,7 @@ To avoid these issues:
 
 ## Color
 
-The use of color is an essential consideration when creating any web page, just as it is when creating any other digital content. Ensure color isn't the only visual means of conveying information, indicating
-an action, prompting a response, or distinguishing a visual element. When color alone is used, people who are blind or colorblind may not be able to tell which fields are required, which items are selected, and so
-on. Ensure that text and images of text provide a color contrast ratio of at least 4.5 to 1. There are several free color contrast analyzers available online. For example, you can use the [Color Contrast Analyzer in Accessibility Insights in Windows](https://accessibilityinsights.io/docs/en/windows/getstarted/colorcontrast) to ensure accessible contrast ratios.
+As with any digital content, the use of color is an essential consideration when creating a web page. You should ensure that color isn't the only visual means of conveying information, indicating an action, prompting a response, or distinguishing a visual element. When color alone is used, people who are blind or colorblind may not be able to tell which fields are required, which items are selected, and so on. Ensure that text and images of text provide a color contrast ratio of at least 4.5 to 1. Several color contrast analyzers are available online for free. For example, you can use the [Color Contrast Analyzer in Accessibility Insights in Windows](https://accessibilityinsights.io/docs/en/windows/getstarted/colorcontrast) to ensure accessible contrast ratios.
 
  A few exceptions to this guideline include:
 
@@ -46,13 +44,13 @@ Large on-screen text for accessibility purposes
 
 ## Data tables
 
-Data tables can be difficult for some assistive technology (AT) applications, such as screen readers. To make data tables as accessible as possible, when you use tables in your website, be sure to do the following:
+Data tables can be difficult for some assistive technology (AT) applications, such as screen readers. To make data tables as accessible as possible, when you use tables in your website, be sure to take the following steps:
 
 - Use native HTML table elements (`table`, `thead`, `tbody`, `tr`, `th`, and `td`).
-- Properly identify table headers (use the th element).
+- Properly identify table headers (use the `th` element).
 - With complex tables (more than one row of headers), ensure headers are associated with the right data.
-- Use the scope attribute to identify whether the cell is a header for a row, column, or group of rows or columns (using the values row, col, rowgroup, or colgroup).
-- Add an `id` attribute to any cell used as a header for other cells, and then reference the appropriate `id` value using a headers attribute in each data cell.
+- Use the scope attribute to identify whether the cell is a header for a row, column, or group of rows or columns (using the values *row*, *col*, *rowgroup*, or *colgroup*).
+- Add an `id` attribute to any cell used as a header for other cells, and then reference the appropriate `id` value using a `headers` attribute in each data cell.
 
 :::image type="content" source="../media/data-table-html.png" alt-text="Data table and its corresponding native HTML table elements.":::
 
@@ -62,14 +60,14 @@ If these steps aren't taken, people who use assistive technology may have diffic
 
 If error messages aren't clearly identified, people using assistive technology may not be able to complete a form accurately on a website. Timed responses may prevent people who use assistive technology from being able to complete a form or use a web application.
 
-After validation, you can ensure error messages are clearly indicated by:
+After validation, you can clearly indicate error messages by:
 
 - Using a consistent method to point out error messages.
 - Identifying the field(s) in error.
 - Identifying error fields at the beginning of the form.
 - Identifying error fields in the label for each field.
 
-Suggestions for alternative inputs must be provided when possible. However, this isn't necessary when doing so would defeat the purpose of the form. For example, when the form is part of a test, a suggestion for alternative inputs could potentially provide a clue or answer to a question, which may not be appropriate.
+Suggestions for alternative inputs must be provided when possible. However, this approach isn't necessary when doing so would defeat the purpose of the form. For example, when the form is part of a test, a suggestion for alternative inputs could potentially provide a clue or answer to a question, which may not be appropriate.
 
 Error prevention should be provided for legal or financial transactions. One option is to allow people to review their inputs before making a final submission.
 
@@ -79,8 +77,7 @@ People who use screen readers may navigate a web page by viewing a list of the w
 
 If several links on a web page have the same name but point to different URLs, people may become confused. Ensure link names are meaningful, unique, and descriptive, whether in or out of context.
 
-If generic, nondescriptive link names appear out of context, such as in an "Additional Resources" list, a person who is using a screen reader won't have any context or understanding as to what the link is, or why
-it has been provided. These examples show a list with generic, inaccessible link names, and a list with accessible, descriptive link names.
+Avoid generic, nondescriptive link names that appear out of context, such as in an "Additional Resources" list. A person who is using a screen reader doesn't have any context or understanding as to what the link is, or why it has been provided. These examples show a list with generic, inaccessible link names, and a list with accessible, descriptive link names.
 
 **Accessible links example:**
 
@@ -98,7 +95,7 @@ Series of generic, nondescriptive link names
 
 People who are blind can't see images, and rely on website developers and content authors to describe them.
 
-People who have low vision may have difficulty reading an image of text because it's pixelated when magnified, or the contrast isn't strong enough, or the image is too small.
+People who have low vision may have difficulty reading an image of text because it's pixelated when magnified. Other difficulties occur when the contrast isn't strong enough, or the image is too small.
 
 Provide brief, specific, and informative alternative text for images such as photos and buttons.  
 
@@ -128,6 +125,6 @@ Example of image and decorative border
 
 \<img src=\"border.gif\" alt=\"\" /\>
 
-The accessible example doesn't include any text; however, the fact that the alt attribute is included but shows no text indicates to someone using a screen reader that the image is decorative, and doesn't contain critical information.
+The accessible example doesn't include any text. However, the fact that the `alt` attribute is included but shows no text, indicates to someone using a screen reader that the image is decorative and doesn't contain critical information.
 
 For more information about improving accessibility, explore the [W3C Inaccessible Home Page Before and After Demonstration](https://www.w3.org/WAI/demos/bad/before/home.html).
