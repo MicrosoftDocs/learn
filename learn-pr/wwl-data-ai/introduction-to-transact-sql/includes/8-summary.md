@@ -1,6 +1,6 @@
 In this module, you learned how to:
 
-- Understand what SQL is and how it is used
+- Understand what SQL is and how it's used
 - Identify database objects in schemas
 - Identify SQL statement types
 - Use the SELECT statement to query tables in a database
