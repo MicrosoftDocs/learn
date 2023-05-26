@@ -59,5 +59,3 @@ While it's important to understand what Operator Nexus is, it's also helpful to 
 - A solution that eliminates the need for infrastructure and platform software updates: Telco operators must update the Operator Nexus management bundle and run-time bundle regularly.
 
 - A solution that eliminates the responsibility for the underlying infrastructure: In Azure public cloud, Microsoft hosts and manages the Azure cloud physical and virtualization infrastructure. With Operator Nexus, the Telco operator hosts the infrastructure and is responsible for ensuring its resiliency and availability.
-
-- The same as Azure Stack Hub: Azure Stack Hub enables customers to run Azure IaaS and PaaS services on-premises by providing a consistent cloud experience across on-premises, edge, and public cloud environments. Microsoft or its partners install it on the hardware they ship. Although both Operator Nexus and Azure Stack Hub are on-premises solutions, they only share this similarity.
