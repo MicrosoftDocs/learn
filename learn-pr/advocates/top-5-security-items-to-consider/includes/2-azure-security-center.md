@@ -54,7 +54,7 @@ For production systems, you definitely want to keep Microsoft Defender for Cloud
 
 1. Select **Environment settings** from the left-hand menu.
 
-1. Next, select the ellipses next to your the subscription for which you want to downgrade, then select **Edit settings**.
+1. Next, select the ellipses next to the subscription for which you want to downgrade, then select **Edit settings**.
 
 1. A new page will appear that looks like the image below. Toggle the **Defender CSPM** plan to **Off**.
 
