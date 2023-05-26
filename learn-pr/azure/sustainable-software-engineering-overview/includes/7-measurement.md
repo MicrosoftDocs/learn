@@ -1,4 +1,4 @@
-The Greenhouse Gas (GHG) protocol is the most commonly used method for organizations to measure their total carbon emissions. While software emissions can be calculated using this approach, it can be difficult. A better-suited calculation is the Software Carbon Intensity (SCI) calculation.
+The [Greenhouse Gas (GHG) protocol](https://learn.greensoftware.foundation/measurement/#the-ghg-protocol) is the most commonly used method for organizations to measure their total carbon emissions. While software emissions can be calculated using this approach, it can be difficult. A better-suited calculation is the [Software Carbon Intensity (SCI)](https://learn.greensoftware.foundation/measurement/#software-carbon-intensity-specification) calculation.
 
 ## Greenhouse Gas Protocol
 
@@ -28,6 +28,6 @@ Energy is the power consumed by the hardware and is measured in kilowatt-hours. 
 
 Carbon intensity is the amount of carbon equivalent for the particular time and location the software is running and is measured in grams of carbon equivalent per kilowatt-hour.
 
-![Diagram of SCI Calculation.](../media/7-measurement-sci-image.svg)
+![Diagram of SCI Calculation.](../media/7-measurement-sci-image.png)
 
 The calculation multiplies the energy consumed by the carbon intensity. The amount of carbon emitted through the hardware is then added to the sum. This gives a score that can be applied to each functional unit. For example, if the software is an API, the functional unit might be a single call to that API. This makes the score an intensity rather than a total.

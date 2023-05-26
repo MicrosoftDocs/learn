@@ -4,7 +4,7 @@ Over the years, many terms have been used interchangeably when discussing an app
 
 There are many ways to reduce emissions. Understanding the exact reduction mechanism when planning to work toward these targets is essential.
 
-![Diagram of mechanism to reduce emissions.](../media/8-climate-commitments-reduction-terms.svg)
+![Diagram of mechanism to reduce emissions.](../media/8-climate-commitments-reduction-terms.png)
 
 At the highest level, there are offsets or abatement. Offsetting involves reducing emissions elsewhere, whereas reduction or elimination involves not emitting carbon in the first place. It's understood that it's impossible not to emit carbon in today's society, and offsets provide an approach to supplement carbon reduction.
 
@@ -16,7 +16,7 @@ Compensation, sometimes called avoidance, involves paying someone else not to em
 
 There are many different climate commitment strategies that an organization can commit to. Understanding the various meanings and implications can help identify the right strategy.
 
-![Diagram of climate commitment strategies.](../media/8-climate-commitments-strategies.svg)
+![Diagram of climate commitment strategies.](../media/8-climate-commitments-strategies.png)
 
 ## Carbon neutral
 
