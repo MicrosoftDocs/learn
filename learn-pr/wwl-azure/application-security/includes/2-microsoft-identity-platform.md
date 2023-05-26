@@ -35,95 +35,18 @@ The Microsoft Authentication Library can be used in many application scenarios, 
 
 ### Languages and frameworks
 
-:::row:::
-  :::column:::
-    **Library**
-  :::column-end:::
-  :::column:::
-    **Supported platforms and frameworks**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL for Android
-  :::column-end:::
-  :::column:::
-    Android
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL Angular
-  :::column-end:::
-  :::column:::
-    Single-page apps with Angular and Angular.js frameworks
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL for iOS and macOS
-  :::column-end:::
-  :::column:::
-    iOS and macOS
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL Go (Preview)
-  :::column-end:::
-  :::column:::
-    Windows, macOS, Linux
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL Java
-  :::column-end:::
-  :::column:::
-    Windows, macOS, Linux
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL.js
-  :::column-end:::
-  :::column:::
-    JavaScript/TypeScript frameworks such as Vue.js, Ember.js, or Durandal.js
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL.NET
-  :::column-end:::
-  :::column:::
-    .NET Framework, .NET Core, Xamarin Android, Xamarin iOS, Universal Windows Platform
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL Node
-  :::column-end:::
-  :::column:::
-    Web apps with Express, desktop apps with Electron, Cross-platform console apps
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL Python
-  :::column-end:::
-  :::column:::
-    Windows, macOS, Linux
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    MSAL React
-  :::column-end:::
-  :::column:::
-    Single-page apps with React and React-based libraries (Next.js, Gatsby.js)
-  :::column-end:::
-:::row-end:::
-
+| **Library**            | **Supported platforms and frameworks**                                              |
+| ---------------------- | ----------------------------------------------------------------------------------- |
+| MSAL for Android       | Android                                                                             |
+| MSAL Angular           | Single-page apps with Angular and Angular.js frameworks                             |
+| MSAL for iOS and macOS | iOS and macOS                                                                       |
+| MSAL Go (Preview)      | Windows, macOS, Linux                                                               |
+| MSAL Java              | Windows, macOS, Linux                                                               |
+| MSAL.js                | JavaScript/TypeScript frameworks such as Vue.js, Ember.js, or Durandal.js           |
+| MSAL.NET               | .NET Framework, .NET Core, Xamarin Android, Xamarin iOS, Universal Windows Platform |
+| MSAL Node              | Web apps with Express, desktop apps with Electron, Cross-platform console apps      |
+| MSAL Python            | Windows, macOS, Linux                                                               |
+| MSAL React             | Single-page apps with React and React-based libraries (Next.js, Gatsby.js)          |
 
 ### Migrate apps that use ADAL to MSAL
 

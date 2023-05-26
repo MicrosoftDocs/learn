@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-apache-spark-work-files-lakehouse.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "You want to use Apache Spark to explore data interactively in Microsoft Fabric. What should you create?"
+    choices:
+    - content: "A Spark job definition."
+      isCorrect: false
+      explanation: "Incorrect. A Spark job definition will run Spark code, but is not the best choice for interactive analytics."
+    - content: "A Data Factory pipeline."
+      isCorrect: false
+      explanation: "Incorrect. A Data Factory pipeline is not an interactive Spark environment."
+    - content: "A notebook."
+      isCorrect: true
+      explanation: "Correct. Notebooks enable you to run Spark code interactively."
+  - content: "You need to use Spark to analyze data in a CSV file. What's the simplest way to accomplish this goal?"
+    choices:
+    - content: "Load the file into a dataframe."
+      isCorrect: true
+      explanation: "Correct. You can load data from files in many formats, including CSV, into a Spark dataframe."
+    - content: "Import the data into a table in a warehouse."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to load the data into a warehouse in order to analyze it with Spark."
+    - content: "Convert the data to Parquet format."
+      isCorrect: false
+      explanation: "Incorrect. While you could load the data into Spark from a Parquet file, you do not need to convert the data from CSV format in order to use it in Spark."
+  - content: "Which method is used to split the data across folders when saving a dataframe?"
+    choices:
+    - content: "`splitBy`"
+      isCorrect: false
+      explanation: "That's incorrect. The `splitBy` method isn't used to partition data across folders"
+    - content: "`distributeBy`"
+      isCorrect: false
+      explanation: "That's incorrect. The `distributeBy` method isn't used to split across folders when saving a DataFrame."
+    - content: "`partitionBy`"
+      isCorrect: true
+      explanation: "That's correct. The `partitionBy` method partitions the dataframe based on specified columns."
