@@ -1,4 +1,4 @@
-Over the years, many terms have been used interchangeably when discussing an approach to reduce emissions. It's essential to have a common understanding of these terms to work towards an agreed goal.  
+Over the years, many terms have been used interchangeably when discussing an approach to reduce emissions. It's essential to have a common understanding of these terms to work towards an agreed goal.
 
 ## Carbon reduction methodologies
 

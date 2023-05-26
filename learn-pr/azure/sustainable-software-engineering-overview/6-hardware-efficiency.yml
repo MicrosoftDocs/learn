@@ -4,7 +4,7 @@ title: "Principle 4: Hardware efficiency"
 metadata:
   title: "Principle 4: Hardware efficiency"
   description: The fourth principle of sustainable software engineering is to build applications that are hardware efficient. In this unit, you'll learn about the concept of embodied carbon, and how significant is it in the overall carbon calculation for your application and how it relates to hardware.
-  ms.date: 04/13/2023
+  ms.date: 05/26/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial

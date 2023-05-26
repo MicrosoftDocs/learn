@@ -4,17 +4,17 @@
 
 Six principles of Sustainable Software Engineering form a shared understanding of what it means to be a Sustainable Software Engineer. The subsequent units in this module provide a basic introduction to these principles.
 
-1. **Carbon Efficiency**: Build applications that are carbon efficient.
+- **Carbon Efficiency**: Build applications that are carbon efficient.
 
-1. **Electricity Efficiency**: Build applications that are energy efficient.
+- **Electricity Efficiency**: Build applications that are energy efficient.
 
-1. **Carbon Awareness**: Consume electricity with the lowest carbon intensity.
+- **Carbon Awareness**: Consume electricity with the lowest carbon intensity.
 
-1. **Hardware Efficiency**: Build applications that are hardware efficient.
+- **Hardware Efficiency**: Build applications that are hardware efficient.
 
-1. **Measurement**: Improve sustainability through measurement.
+- **Measurement**: Improve sustainability through measurement.
 
-1. **Climate Commitments**: Defining the exact mechanism of carbon reduction.
+- **Climate Commitments**: Defining the exact mechanism of carbon reduction.
 
 These six principles are independent of the following:
 

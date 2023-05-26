@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: This module checks the knowledge gained so far.
-  ms.date: 04/13/2023
+  ms.date: 05/26/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial
@@ -44,10 +44,10 @@ quiz:
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "As discussed under Principle 1: Carbon Efficiency, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
+      explanation: "As discussed under the Carbon Efficiency principle, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
     - content: "False"
       isCorrect: false
-      explanation: "As discussed under Principle 1: Carbon Efficiency, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
+      explanation: "As discussed under the Carbon Efficiency principle, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
   - content: "What is the single most significant cause of carbon emissions?"
     choices:
     - content: "Agriculture"

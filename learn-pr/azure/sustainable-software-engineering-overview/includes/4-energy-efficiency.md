@@ -8,7 +8,7 @@ Because we can draw a direct line from electricity to carbon emissions, we can c
 
 From the applications running on your smartphone to training machine-learning models running in data centers, all software consumes electricity in its execution. One of the best ways to reduce electricity consumption and our software's subsequent carbon pollution emissions is to make our applications more energy-efficient.
 
-This is why the second principle of Sustainable Software Engineering is to **build applications that are energy-efficient**.
+This is why this principle of Sustainable Software Engineering is to **build applications that are energy-efficient**.
 
 As sustainable engineers, we need to understand electricity. Our journey doesn't start with the computer; it begins with how the electricity that powers our computers is made.
 

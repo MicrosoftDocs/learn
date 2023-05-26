@@ -1,11 +1,11 @@
 In this module, you learned about the emerging discipline of Sustainable Software Engineering. The units in this module focused on each of the six principles that software engineers can use to make decisions that have a meaningful impact on the carbon pollution of their applications.
 
-1. **Carbon efficiency**: Build applications that are carbon efficient
-1. **Energy efficiency**: Build applications that are energy-efficient
-1. **Carbon awareness**: Build applications that are carbon-aware
-1. **Hardware efficiency**: Build applications that are hardware efficient
-1. **Measurement**: Learn how to measure carbon emissions.
-1. **Climate commitments**: Defining the exact mechanism of carbon reduction.
+- **Carbon efficiency**: Build applications that are carbon efficient
+- **Energy efficiency**: Build applications that are energy-efficient
+- **Carbon awareness**: Build applications that are carbon-aware
+- **Hardware efficiency**: Build applications that are hardware efficient
+- **Measurement**: Learn how to measure carbon emissions.
+- **Climate commitments**: Defining the exact mechanism of carbon reduction.
 
 In addition, you also learned about the two philosophies of Sustainable Software Engineering:
 
