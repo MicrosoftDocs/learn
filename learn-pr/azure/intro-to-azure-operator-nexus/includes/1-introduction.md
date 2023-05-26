@@ -1,9 +1,11 @@
-You work as a network engineer for a large telecommunications company. Your company has recently started exploring the use of cloud technology to improve their services and reduce costs. Your team has been tasked with finding a solution to deploy and manage Container Network Functions (CNF) and Virtualized Network Functions (VNF) in your on-premises environment. The company wants to have more control over the deployment and management of these workloads, while still being able to take advantage of the benefits of the Azure public cloud.
+You work as a sales engineer for a cloud technology company that provides solutions to telecommunications operators. Your company has developed a new platform called Azure Operator Nexus, which unlocks new hybrid cloud use cases for telco operators. The platform applies a subset of IaaS and PaaS services available in the Azure public cloud to deploy network-intensive workloads in telco operator data center and edge locations, while automating the lifecycle management of the infrastructure.
 
-You have heard about Azure Operator Nexus and are curious if it can help solve your company's problem. You need to learn more about the platform's architecture, deployment options, and edge and disconnected solutions to determine if it's the right fit for your company's needs.
+You have a meeting scheduled with a potential client, a large telecommunications company, that is interested in using cloud technology to improve their services and reduce costs. They're struggling with managing their on-premises network functions and are looking for a solution that can help them deploy and manage Container Network Functions (CNF) and Virtualized Network Functions (VNF) more efficiently.
+
+You plan to present Azure Operator Nexus as a solution that can meet their needs. You'll need to explain the platform's integrated systems architecture, deployment options, and edge and disconnected solutions to convince the client that Azure Operator Nexus is the right fit for their business. You'll also need to address any questions or concerns they may have about the platform and demonstrate how it can help them achieve their business goals.
 
 ## Learning objectives
-Azure Operator Nexus unlocks new hybrid cloud use cases for telecommunication operators (Telco). Operator Nexus applies a subset of IaaS and PaaS services available in the Azure public cloud to deploy network-intensive workloads in Telco operator datacenter and edge locations. The platform automates lifecycle management of the infrastructure.
+Azure Operator Nexus unlocks new hybrid cloud use cases for telecommunication operators (Telco). Operator Nexus applies a subset of IaaS and PaaS services available in the Azure public cloud to deploy network-intensive workloads in Telco operator datacenter and edge locations.
 
 After completing this module, you'll be able to:
 
