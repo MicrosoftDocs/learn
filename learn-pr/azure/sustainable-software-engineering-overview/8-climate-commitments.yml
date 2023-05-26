@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.sustainable-software-engineering-overview.8-climate-commitments
-title: "Principle 6: Climate commitments"
+title: "Principle: Climate commitments"
 metadata:
-  title: "Principle 6: Climate commitments"
-  description: The sixth principle of sustainable software engineering is about measuring carbon emissions, and how to calculate your Software Carbon Intensity (SCI) scores.
+  title: "Principle: Climate commitments"
+  description: This principle of sustainable software engineering is about measuring carbon emissions, and how to calculate your Software Carbon Intensity (SCI) scores.
   ms.date: 05/26/2023
   author: Zimmergren
   ms.author: tozimmergren
