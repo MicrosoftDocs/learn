@@ -22,10 +22,9 @@ abstract: |
 prerequisites: |
   For the best learning experience from this module, you need basic understanding and familiarity with the following technologies:
   - Containerization and Kubernetes architecture
-  - Azure portal and Azure CLI interfaces
+  - Azure portal and Azure CLI
   - Azure Monitor and Azure Policy
   - GitOps principles and processes
-  Some units list more specific prerequisites.
 iconUrl: /training/achievements/intro-to-arc-enabled-kubernetes.svg
 levels:
 - beginner

@@ -10,7 +10,7 @@ To address these capacity and agility challenges, IT management has decided to m
 
 Your engineering team is tasked with exploring and evaluating Azure Arc capabilities for Kubernetes-based workloads. You must determine how Contoso can benefit from the Azure Arc hybrid management model and pursue a multivendor strategy while maintaining some on-premises containerized workloads.
 
-In this module, you learn how Azure Arc helps with Kubernetes cluster management and monitoring. You can then implement these capabilities at Contoso to help optimize and simplify their operations.
+In this module, you learn how Azure Arc helps with Kubernetes cluster management and monitoring. You can then implement these capabilities at Contoso to help optimize and simplify its operations.
 
 ## Learning objectives
 

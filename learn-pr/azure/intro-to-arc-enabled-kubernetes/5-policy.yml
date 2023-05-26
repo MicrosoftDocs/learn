@@ -32,7 +32,7 @@ quiz:
     - content: "A namespace."
       isCorrect: false
       explanation: "A namespace isn't capable of running an agent."
-  - content: "Which of the following isn't a capability of Azure Policy for Kubernetes?"
+  - content: "Which of the following capabilities isn't part of Azure Policy for Kubernetes?"
     choices:
     - content: "Reporting auditing and compliance data."
       isCorrect: false

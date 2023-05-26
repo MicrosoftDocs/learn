@@ -56,7 +56,7 @@ You can also use Azure Policy to automate the configuration process, so you can 
    - Set the **Scope** to the management group, subscription, or resource group where the policy assignment applies.
    - Optionally, specify **Exclusions** to designate any resource subscopes where the policy shouldn't apply.
    - Set **Policy enforcement** to **Enabled**.
-   - On the **Parameters** tab, set values for the `sourceControlConfiguration` parameters that set the association between Git repositories and corresponding components of the Azure Arc-enabled Kubernetes cluster.
+   - On the **Parameters** tab, set values for the *sourceControlConfiguration* parameters that set the association between Git repositories and corresponding components of the Azure Arc-enabled Kubernetes cluster.
    - On the **Remediation** tab, select **Create a remediation task** and **Create a Managed Identity**. The identity must have the **Contributor** Azure role-based access control (Azure RBAC) role.
    
 1. Select **Review + create**, and then select **Create**.

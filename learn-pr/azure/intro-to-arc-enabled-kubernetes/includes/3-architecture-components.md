@@ -6,7 +6,7 @@ Azure Arc uses locally installed agents to establish a trusted channel with Azur
 
 The agents run in the `azure-arc` namespace in the Kubernetes cluster, and are responsible for synchronizing state to Azure, collecting Azure Arc logs and metrics, and processing configuration requests.
 
-The Azure Arc agents do the following activities:
+The Azure Arc agents do the following tasks:
 
 - Maintain an authenticated connection to Azure and synchronize cluster metadata with the corresponding Azure resource.
 - Gather cluster metadata, including cluster version, node count, and Azure Arc agent version.
@@ -23,7 +23,7 @@ In addition to the general Azure Arc benefits the previous unit described, Azure
 
 - Enforcement of runtime policies that affect the cluster and its pods by using Azure Policy for Kubernetes and centralized policy compliance reporting.
 
-  For example, you can enforce the use of HTTPS for ingress traffic that targets your Azure Arc-enabled Kubernetes clusters, or ensure that containers listen only on specific ports that you designate.
+  For example, you can enforce the use of HTTPS for ingress traffic that targets your Azure Arc-enabled Kubernetes clusters, or ensure that containers listen only on specific ports.
   
 - Azure Monitor container insights.
 

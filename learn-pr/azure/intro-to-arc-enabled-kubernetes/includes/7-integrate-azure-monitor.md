@@ -41,7 +41,7 @@ Azure Monitor container insights extend Monitor to collect metrics on controller
 Container insights provide the following capabilities:
 
 - Identify containers running on each cluster node and their average processor and memory utilization, to help detect resource bottlenecks.
-- Identify containers running in individual pods, letting you track the pod's overall performance.
+- Identify containers running in individual pods to let you track the pod's overall performance.
 - Evaluate resource utilization of workloads running on the host that are unrelated to the standard processes that support the pod.
 - Compare the behavior of the cluster under average and heaviest loads, to help assess capacity needs and estimate the maximum load the cluster can sustain.
 - Configure alerts to proactively notify you when resource utilization exceeds acceptable thresholds or when a health state change occurs in the cluster.
