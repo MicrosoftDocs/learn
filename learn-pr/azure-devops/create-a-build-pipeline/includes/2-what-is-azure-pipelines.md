@@ -1,5 +1,3 @@
-Microsoft Azure Pipelines is a cloud service you can use to automatically build, test, and deploy your code project. You can also make it available to other users, and it works with just about any language or project type.
-
 Mara is excited about replicating the team's build process on Azure Pipelines. Amita, the tester, finally has some free time and wants to catch up. Mara decides that now is a great time to tell her about her plan: setting up an automated build pipeline for the *Space Game* web site by using Azure Pipelines.
 
 When she hears Mara's plan, Amita is a bit hesitant. But because Mara's plan is to replicate the build process but not replace it, she's also curious. She knows the build process could use some improvements.
@@ -25,20 +23,6 @@ And Azure Pipelines works with many different languages and app types. If we wan
 **Amita:** Okay, so your goal right now is to build the app and let me know when it's ready?
 
 **Mara:** Right! Of course, I've got bigger plans. I know you're all going to love this first step, so I want to build on it to give us true continuous integration.
-
-## What is continuous integration?
-
-Continuous integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
-
-CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full main branch (also known as the trunk).
-
-In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
-
-**Ask Abel**
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSx]
-
-Let's check back in with Mara and Amita.
 
 **Amita:** Give me the 5-minute rundown on continuous integration.
 
