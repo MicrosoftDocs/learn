@@ -1,7 +1,5 @@
 Azure Operator Nexus is a cutting-edge hybrid cloud platform designed for telecommunication operators, providing carrier-grade next-generation services. Operator Nexus extends Azure management and services to the operator's premises, ensuring seamless integration and optimal performance.
 
-## Video: Introduction to Azure Operator Nexus
-
 The following video introduces Azure Operator Nexus:
 
 > [!VIDEO 40a5ddc4-b2b9-4d7a-bb6f-d8eb9df81562]
