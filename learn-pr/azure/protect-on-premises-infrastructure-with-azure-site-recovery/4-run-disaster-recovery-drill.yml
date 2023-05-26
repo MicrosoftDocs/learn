@@ -2,7 +2,7 @@
 uid: learn.protect-on-premises-infrastructure-with-azure-site-recovery.4-run-disaster-recovery-drill
 metadata:
   title: Run a disaster recovery drill
-  description: Understand recovery time and recovery point objectives, and see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
+  description: Understand recovery time and recovery point objectives. Then, see how a recovery drill can test that Azure Site Recovery was configured correctly to meet these objectives.
   ms.date: 08/01/2019
   author: ankitaduttaMSFT
   ms.author: ankitadutta
@@ -15,18 +15,18 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of these is the correct meaning of a recovery time objective (RTO)?"
+  - content: "Which of these choices best defines a recovery time objective (RTO)?"
     choices:
-    - content: The measure of the maximum amount of data that can be lost during a disaster
+    - content: The measure of the maximum amount of data that can be lost during a disaster.
       isCorrect: false
       explanation: This description is that of a recovery point objective (RPO).
-    - content: The measure of the time between the disaster starting and the business recovering from the disaster
+    - content: The measure of the time between the disaster starting and the business recovering from the disaster.
       isCorrect: false
       explanation: This measurement has no bearing on an RTO.
-    - content: The measure of the maximum amount of time the business can survive if a disaster happens
+    - content: The measure of the maximum amount of time the business can survive if a disaster happens.
       isCorrect: true
       explanation: An RTO is the amount of time that data can be lost via an outage before it impacts the company significantly.
-    - content: The measure of the maximum amount of data that's recoverable from a backup
+    - content: The measure of the maximum amount of data that's recoverable from a backup.
       isCorrect: false
       explanation: This measurement has no impact on the RTO.
   - content: "When you monitor a recovery from the recovery services vault, which of the following statistics can be viewed on the Site Recovery dashboard?"
@@ -36,7 +36,7 @@ quiz:
       explanation: All of these items can be viewed from the Recovery Services vault dashboard.
     - content: Replicated items, vault status, and network status
       isCorrect: false
-      explanation: These aren't items that can be viewed from the Recovery Services dashboard.
+      explanation: These items can't be viewed from the Recovery Services dashboard.
     - content: Monitoring of configuration issues, vault status, and DHCP replication status
       isCorrect: false
-      explanation: These aren't items that can be viewed from the Recovery Services dashboard.
+      explanation: These items can't be viewed from the Recovery Services dashboard.

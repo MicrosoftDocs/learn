@@ -104,4 +104,4 @@ You can monitor sweep jobs in Azure Machine Learning studio. The sweep job will 
 Additionally, you can evaluate and compare models by visualizing the trials in the studio. You can adjust each chart to show and compare the hyperparameter values and metrics for each trial.
 
 > [!Tip]
-> Learn more about how to [visualize hyperparameter tuning jobs](//azure/machine-learning/how-to-tune-hyperparameters#visualize-hyperparameter-tuning-jobs?azure-portal=true).
+> Learn more about how to [visualize hyperparameter tuning jobs](/azure/machine-learning/how-to-tune-hyperparameters#visualize-hyperparameter-tuning-jobs?azure-portal=true).
