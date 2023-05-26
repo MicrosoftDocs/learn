@@ -4,13 +4,11 @@ title: Describe custom sensitive information types with exact data match
 metadata:
   title: Describe custom sensitive information types with exact data match
   description: "Describe custom sensitive information types with exact data match"
-  ms.date: 04/18/2023
+  ms.date: 05/26/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
-azureSandbox: false
-labModal: false
 durationInMinutes: 9
 content: |
   [!include[](includes/4-describe-custom-with-exact-data-match.md)]
