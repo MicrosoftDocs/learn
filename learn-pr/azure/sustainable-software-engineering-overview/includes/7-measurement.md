@@ -16,7 +16,7 @@ Indirect emissions from the production of electricity or heat that you use. For 
 
 Indirect emissions that come from other activities. A typical example for a business is emission from activities within the supply chain, production of purchased materials, transportation of goods and services, and use of sold products.
 
-![Diagram of GHG Scopes.](../media/7-measurement-ghg-image.svg)
+![Diagram of GHG Scopes.](../media/7-measurement-ghg-image.jpg)
 
 ## Software Carbon Intensity Calculation
 
@@ -28,6 +28,6 @@ Energy is the power consumed by the hardware and is measured in kilowatt-hours. 
 
 Carbon intensity is the amount of carbon equivalent for the particular time and location the software is running and is measured in grams of carbon equivalent per kilowatt-hour.
 
-![Diagram of SCI Calculation.](../media/7-measurement-sci-image.png)
+![Diagram of SCI Calculation.](../media/7-measurement-sci-image.jpg)
 
 The calculation multiplies the energy consumed by the carbon intensity. The amount of carbon emitted through the hardware is then added to the sum. This gives a score that can be applied to each functional unit. For example, if the software is an API, the functional unit might be a single call to that API. This makes the score an intensity rather than a total.
