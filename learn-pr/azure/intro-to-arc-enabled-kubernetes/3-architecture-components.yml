@@ -40,9 +40,9 @@ quiz:
     - content: "Use of Azure Policy for Kubernetes"
       isCorrect: false
       explanation: "Azure Policy-based runtime policies are a benefit of Azure Arc-enabled Kubernetes."
-    - content: "Use of Azure Monitor Container Services."
+    - content: "Use of Azure Monitor container insights."
       isCorrect: false
-      explanation: "You can use Azure Monitor Container Services with Azure Arc-enabled Kubernetes."
+      explanation: "You can use Azure Monitor container insights with Azure Arc-enabled Kubernetes."
     - content: "Cluster creation management"
       isCorrect: true
       explanation: "Azure Arc-enabled Kubernetes doesn't provide a way to manage cluster creation."

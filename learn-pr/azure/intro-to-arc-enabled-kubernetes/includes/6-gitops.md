@@ -4,7 +4,7 @@ Azure Arc-enabled Kubernetes supports GitOps, a DevOps practice that streamlines
 
 ## GitOps basics
 
-GitOps uses a Git repository to host configuration files that represent the expected state of a resource. An agent running on the Kubernetes cluster monitors the state of the repository. When there's a change in the repository, the agent pulls the changed files to the cluster and applies the new configuration.
+GitOps for Kubernetes uses a Git repository to host configuration files that represent the expected state of a resource. An agent running on the Kubernetes cluster monitors the state of the repository. When there's a change in the repository, the agent pulls the changed files to the cluster and applies the new configuration.
 
 In the context of Azure Arc-enabled Kubernetes clusters, a Git repository hosts a Kubernetes cluster configuration, including its resources such as pods and deployments. A pod or set of pods running on the cluster polls the status of the repository. Once the pod detects a change, it pulls and applies the new configuration to the cluster, ensuring that the cluster remains in the desired state.
 
@@ -24,7 +24,7 @@ The following diagram shows the process of applying GitOps-based configurations 
 
 :::image type="content" source="../media/6-arc-enabled-k8s-gitops.png" alt-text="Diagram showing the process of applying GitOps-based configuration to multiple Azure Arc-enabled clusters." border="false":::
 
-GitOps is enabled in a Kubernetes cluster as a `Microsoft.KubernetesConfiguration/extensions/microsoft.flux` cluster extension resource. To create `fluxConfigurations`, the `microsoft.flux` extension must be installed in the cluster. The extension installs automatically when you create the first `Microsoft.KubernetesConfiguration/fluxConfigurations` in a cluster. You can also install the extension manually before you create your configurations.
+GitOps is enabled in a Kubernetes cluster as a `Microsoft.KubernetesConfiguration/extensions/microsoft.flux` cluster extension resource. To create `fluxConfigurations`, the `microsoft.flux` extension must be installed in the cluster. The extension installs automatically when you create the first `Microsoft.KubernetesConfiguration/fluxConfigurations` instance in a cluster. You can also install the extension manually before you create your configurations.
 
 Each association between an Azure Arc-enabled Kubernetes cluster configuration and its corresponding GitOps repository resides in Azure as part of the Azure Arc-enabled Kubernetes cluster Azure resource. You can configure the association by using Azure management interfaces like the Azure portal or Azure CLI.
 
@@ -57,7 +57,7 @@ You can also use Azure Policy to automate the configuration process, so you can 
    - Optionally, specify **Exclusions** to designate any resource subscopes where the policy shouldn't apply.
    - Set **Policy enforcement** to **Enabled**.
    - On the **Parameters** tab, set values for the `sourceControlConfiguration` parameters that set the association between Git repositories and corresponding components of the Azure Arc-enabled Kubernetes cluster.
-   - On the **Remediation** tab, select **Create a remediation task** and **Create a Managed Identity**. The identity must have the **Contributor** role.
+   - On the **Remediation** tab, select **Create a remediation task** and **Create a Managed Identity**. The identity must have the **Contributor** Azure role-based access control (Azure RBAC) role.
    
 1. Select **Review + create**, and then select **Create**.
 

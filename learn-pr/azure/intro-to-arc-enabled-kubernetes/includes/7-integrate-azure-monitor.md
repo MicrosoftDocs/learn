@@ -1,12 +1,12 @@
-Kubernetes deployments can be complex, with multiple layers of abstraction obscuring implementation details, and hundreds or thousands of containers hosting workloads. Comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity. You can use Azure Monitor to help meet this goal.
+Kubernetes deployments can be complex, with multiple layers of abstraction obscuring implementation details, and hundreds or thousands of containers hosting workloads. Comprehensive insight into the state of the Kubernetes environment is essential for operational stability and business continuity.
 
-In this unit, you learn about Azure Monitor Container insights and how to implement it for Azure Arc-enabled Kubernetes clusters.
+You can use Azure Monitor to help meet this goal. In this unit, you learn about Azure Monitor container insights and how to use them for Azure Arc-enabled Kubernetes clusters.
 
 ## Azure Monitor basics
 
 Azure Monitor extends comprehensive cloud-based management functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Monitor collects and monitors metrics, activity and diagnostics logs, and events from Azure services, Arc-enabled resources, and on-premises datacenter and third-party cloud resources.
 
-Organizations that maintain on-premises infrastructure can use the following Monitor functionality:
+Organizations that maintain on-premises infrastructure can use Monitor to:
 
 - Track, audit, or troubleshoot past events.
 - Optimize administration of existing deployments.
@@ -28,9 +28,9 @@ You can set up and use Monitor alerts to:
 - Trigger remediation actions.
 - Raise incidents and create work items by using the integration between Monitor and your internal IT Service Management platform.
 
-## Azure Monitor Container insights
+## Azure Monitor container insights
 
-Azure Monitor Container insights extends Monitor to collect metrics on controllers, nodes, and containers in the following environments:
+Azure Monitor container insights extend Monitor to collect metrics on controllers, nodes, and containers in the following environments:
 
 - Managed Kubernetes clusters hosted on Azure Kubernetes Service (AKS)
 - Self-managed Kubernetes clusters hosted on Azure by using AKS Engine
@@ -38,19 +38,19 @@ Azure Monitor Container insights extends Monitor to collect metrics on controlle
 - Self-managed Kubernetes clusters hosted on Azure Stack or on-premises
 - Azure Arc-enabled Kubernetes
 
-Container insights provides the following capabilities:
+Container insights provide the following capabilities:
 
-- Identifies containers running on each cluster node and their average processor and memory utilization, to help detect resource bottlenecks.
-- Identifies containers running in individual pods, letting you track the pod's overall performance.
-- Evaluates resource utilization of workloads running on the host that are unrelated to the standard processes that support the pod.
-- Compares the behavior of the cluster under average and heaviest loads, to help assess capacity needs and estimate the maximum load the cluster can sustain.
-- Configures alerts to proactively notify you when resource utilization exceeds acceptable thresholds or when a health state change occurs in the cluster.
+- Identify containers running on each cluster node and their average processor and memory utilization, to help detect resource bottlenecks.
+- Identify containers running in individual pods, letting you track the pod's overall performance.
+- Evaluate resource utilization of workloads running on the host that are unrelated to the standard processes that support the pod.
+- Compare the behavior of the cluster under average and heaviest loads, to help assess capacity needs and estimate the maximum load the cluster can sustain.
+- Configure alerts to proactively notify you when resource utilization exceeds acceptable thresholds or when a health state change occurs in the cluster.
 
 ## Monitor Azure Arc-enabled Kubernetes clusters
 
-Azure Monitor Container insights relies on a containerized version of the *omsagent* Log Analytics agent for Linux. This agent runs in the monitored cluster to collect performance metrics and logs from cluster nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected  data to Azure.
+Azure Monitor container insights rely on a containerized version of the *omsagent* Log Analytics agent for Linux. This agent runs in the monitored cluster to collect performance metrics and logs from cluster nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected data to Azure.
 
-Use the following high-level steps to implement Azure Monitor Container insights for Azure Arc-enabled Kubernetes deployments. You can use either a Bash or PowerShell script for setup.
+Use the following high-level steps to implement Azure Monitor container insights for Azure Arc-enabled Kubernetes deployments. You can use either a Bash or PowerShell script for setup.
 
 ### Prerequisites
 

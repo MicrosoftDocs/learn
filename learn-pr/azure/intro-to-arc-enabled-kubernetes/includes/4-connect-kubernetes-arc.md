@@ -22,8 +22,6 @@ To complete the process, you need:
 1. Connect the Kubernetes cluster to Azure by running the `az connectedk8s connect` Azure CLI command. This command installs the agents on the cluster and creates the cluster resource in the specified resource group.
 1. Verify the connection by running the `az connectedk8s list` command to list connected clusters.
 
-### Azure Arc-enabled Kubernetes functionality
-
 After you deploy the agent on a cluster, you can use the following Azure Arc-enabled Kubernetes functionality:
 
 - Organize and track Kubernetes clusters by using Azure and Azure Graph Explorer.

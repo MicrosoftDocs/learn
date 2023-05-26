@@ -2,11 +2,11 @@ In this unit, you learn the basics of Kubernetes and Azure Arc, and their key ca
 
 ## Kubernetes basics
 
-Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered server nodes. Some servers are control plane nodes, and manage the other worker nodes.
+Kubernetes is an extensible, Linux-based, open-source platform for orchestrating containerized workloads. To ensure resiliency, each Kubernetes deployment consists of multiple, clustered server nodes. Some servers are control plane nodes that manage the other worker nodes.
 
-Worker nodes host containerized workloads as Kubernetes pods. A pod corresponds roughly to a container, although it can include multiple tightly coupled containers that run on the same node.
+The worker nodes host containerized workloads as Kubernetes pods. A pod roughly corresponds to a container, although it can include multiple tightly coupled containers that run on the same node.
 
-Besides this container-based isolation, Kubernetes can also isolate pods and other resources like deployments into namespaces. Namespaces form logical boundaries to provide isolation between users and external applications that access different containerized workloads. Namespaces also let you restrict permissions to create, view, or manage resources within a cluster.
+Besides container-based isolation, Kubernetes can also isolate pods and other resources like deployments into namespaces. Namespaces form logical boundaries to provide isolation between users and external applications that access different containerized workloads. Namespaces also let you restrict permissions to create, view, or manage resources within a cluster.
 
 ## Kubernetes benefits
 
@@ -58,7 +58,7 @@ Azure Arc supports Azure integration for the following types of resources that r
 - Azure Arc-enabled Kubernetes for a wide range of Kubernetes distributions.
 - Azure Stack HCI on-premises physical clusters with virtualized workloads and containerized workloads.
 - AKS running on Azure Stack HCI clusters.
-- Azure Arc-enabled data services, such as Azure SQL Managed Instance, running on Azure Arc-enabled Kubernetes or AKS on Azure Stack HCI.
+- Azure Arc-enabled data services, such as Azure SQL Managed Instance, running on Azure Arc-enabled Kubernetes or AKS on Azure Stack HCI clusters.
 
 > [!NOTE]
 > For production environments, verify that the Azure Arc features you intend to use are generally available.

@@ -1,4 +1,6 @@
-In this module, you learned how Azure Arc-enabled Kubernetes clusters can help organizations optimize and simplify their operations. While Contoso continues to operate in a hybrid environment, its IT staff can minimize management overhead for their containerized workloads with Azure Arc-enabled Kubernetes. Contoso can extend the scope of services like Azure Policy and Azure Monitor to on-premises Kubernetes clusters. By embracing GitOps, Contoso can streamline updates to cluster configuration across their environment, and minimize the risk of configuration drift.
+In this module, you learned how Azure Arc-enabled Kubernetes clusters can help organizations optimize and simplify their operations. While Contoso continues to operate in a hybrid environment, its IT staff can minimize management overhead for their containerized workloads with Azure Arc-enabled Kubernetes.
+
+Contoso can use Azure Arc-enabled Kubernetes to extend the scope of Azure services like Azure Policy and Azure Monitor to on-premises Kubernetes clusters. By embracing GitOps, Contoso can streamline updates to cluster configuration across their environment, and minimize the risk of configuration drift.
 
 ## Learn more
 
