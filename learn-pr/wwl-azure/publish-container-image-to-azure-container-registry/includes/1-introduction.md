@@ -3,7 +3,7 @@ Azure Container Registry (ACR) is a managed, private Docker registry service bas
 
 After completing this module, you'll be able to:
 
-* Explain the features and benefits Azure Container Registry offers
+- Explain the features and benefits Azure Container Registry offers
 * Describe how to use ACR Tasks to automate builds and deployments
 * Explain the elements in a Dockerfile
 * Build and run an image in the ACR by using Azure CLI
