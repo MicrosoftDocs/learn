@@ -1,4 +1,3 @@
-
 The [Agile Alliance](https://www.agilealliance.org/) says its mission is to support people who explore and apply agile values and principles. Also, practices to make building software solutions more effective, humane, and sustainable.
 
 They have published a [Manifesto for Agile Software Development](https://www.agilealliance.org/agile101/the-agile-manifesto/).

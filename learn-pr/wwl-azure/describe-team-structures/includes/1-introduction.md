@@ -1,4 +1,3 @@
-
 Starting to apply Agile practices in your company is not easy. It demands collaboration from your teams, stakeholder support, and training.
 
 This module explores agile development practices and helps to define and to configure teams and tools for collaboration.

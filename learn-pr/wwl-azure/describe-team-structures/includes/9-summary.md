@@ -1,4 +1,3 @@
-
 This module explored agile development practices and helped define and configure teams and tools for collaboration.
 
 You learned how to describe the benefits and usage of:

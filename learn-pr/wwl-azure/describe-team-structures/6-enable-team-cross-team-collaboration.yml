@@ -9,5 +9,8 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/6-enable-team-cross-team-collaboration.md)]

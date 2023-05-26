@@ -1,4 +1,3 @@
-
 Effective collaboration is critical for well-functioning Agile teams. Enabling it requires cultural changes, cross-functional team collaboration, and tooling.
 
 ## Cultural changes
