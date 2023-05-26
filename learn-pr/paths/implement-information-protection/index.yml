@@ -23,7 +23,6 @@ roles:
 - risk-practitioner
 products:
 - microsoft-purview
-- m365-information-protection
 subjects:
 - information-protection-governance
 modules:
