@@ -8,7 +8,7 @@ The first step in any data science or machine learning solution is to collect an
 
 Select this [Excel file](https://github.com/MicrosoftDocs/mslearn-collect-manipulate-data-python-nasa/blob/main/DATA/NASA/RocketLaunchDataCompleted.xlsx?azure-portal=true) link to download the file. We'll use it for the exercises in this module.
 
-The Excel file contains the weather data for the days of individual crewed and uncrewed launches. We also added data for the two days surrounding the launches to see if there were any patterns that might be interesting. Here's a screenshot from the Excel file.
+The Excel file contains the weather data for the days of individual crewed and uncrewed launches. We also added data for the two days surrounding the launches to see if there were any patterns that might be interesting. Here's a screenshot from the Excel file Excel.
 
 :::image type="content" source="../media/excel.png" alt-text="Screenshot that shows Excel data." loc-scope="Azure":::
 
