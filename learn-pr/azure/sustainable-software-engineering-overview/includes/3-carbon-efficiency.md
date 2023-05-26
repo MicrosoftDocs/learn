@@ -1,4 +1,5 @@
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJFI]
+_The content in the video is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
 Working with sustainability means different things to different people, which is a challenge when it comes to communication and deciding what to optimize. For Sustainable Software Engineering, our focus is carbon, and that's why we start with the principle to build applications that are *carbon efficient*.
 

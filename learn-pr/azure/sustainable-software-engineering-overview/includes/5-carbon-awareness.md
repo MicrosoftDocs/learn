@@ -1,4 +1,5 @@
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWxeEn]
+_The content in the video is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
 ## Carbon awareness
 
