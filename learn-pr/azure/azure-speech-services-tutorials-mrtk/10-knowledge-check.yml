@@ -40,7 +40,7 @@ quiz:
       choices:
         - content: "Speech"
           isCorrect: true
-          explanation: "The unification of speech-to-text, text-to-speech and speech-translation into a single Azure subscription."
+          explanation: "The unification of speech to text, text to speech and speech translation into a single Azure subscription."
         - content: "LUIS"
           isCorrect: false
           explanation: "A natural language understanding AI service to allow users to interact with applications."

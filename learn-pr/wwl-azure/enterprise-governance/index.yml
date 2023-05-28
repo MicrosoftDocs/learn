@@ -3,7 +3,7 @@ uid: learn.wwl.enterprise-governance
 metadata:
   title: Design an enterprise governance strategy
   description: "Learn to use RBAC and Azure Policy to limit access to your Azure solutions, and determine which method is right for your security goals."
-  ms.date: 02/27/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial

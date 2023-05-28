@@ -1,3 +1,4 @@
+
 The following cloud guide demonstrates Microsoft 365 Defender and Microsoft Sentinel working together to investigate a security incident in a hybrid environment.   
 
 

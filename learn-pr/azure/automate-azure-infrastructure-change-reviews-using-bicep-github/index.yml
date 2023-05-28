@@ -8,7 +8,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: bicep
 title: Automate Azure infrastructure change reviews by using Bicep and GitHub
 summary: |
   Add checks to pull requests that run automatically during your code reviews. Run the Bicep linter on your code, and deploy the resources to a temporary environment to enable further automated and manual testing.
@@ -18,18 +18,18 @@ abstract: |
     - Determine how you want to create ephemeral environments in your Azure environment.
     - Create ephemeral environments within pull requests.
 prerequisites: |
-  You should be familiar with using:
+  **Required knowledge and skills**:
     - Bicep, including creating and deploying basic files.
     - Azure, including the Azure portal, subscriptions, resource groups, and resources.
     - Basic Git commands, including cloning, committing files, and pushing changes to GitHub.
     - Pull requests in GitHub, including creating, reviewing, and merging pull requests.
     - Basic GitHub Actions workflows, including triggers and secrets for connecting to your Azure environment.
 
-  To work through the exercises in the module, you'll need:
+  **Account requirements**:
     - An Azure account, with the ability to create resource groups and Azure Active Directory applications.
     - A GitHub account.
 
-  You'll also need the following installed locally:
+  **Software requirements**:
     - [Visual Studio Code](https://code.visualstudio.com)
     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep)
     - The latest [Azure CLI](/cli/azure/install-azure-cli) tools *or* the latest [Azure PowerShell](/powershell/azure/install-az-ps) version

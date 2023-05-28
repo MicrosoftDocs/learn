@@ -18,7 +18,7 @@ The basic workflow looks like this:
 
 ### Create a virtual environment
 
-You create a virtual environment by calling the `venv` module. The module expects a name as an argument.
+You create a virtual environment by calling the `venv` module. The module expects a name as an argument. You'll set up your own virtual environment in the next unit, so you don't need to run any of the following code.
 
 Take the following steps:
 

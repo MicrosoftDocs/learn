@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-performance-enhancements.degree-of-parallelism
+title: Degree of Parallelism (DOP) feedback
+metadata:
+  title: Degree of Parallelism (DOP) feedback
+  description: "Learn about Degree of Parallelism (DOP) feedback introduced in SQL Server 2022."
+  ms.date: 05/23/2023
+  author: VanMSFT
+  ms.author: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-degree-of-parallelism.md)]

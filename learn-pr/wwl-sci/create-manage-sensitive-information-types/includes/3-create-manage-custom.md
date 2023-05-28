@@ -1,3 +1,4 @@
+
 A common usage scenario for a custom sensitive information type is to protect stored employee IDs, cost center numbers, and other human resources and finance department-specific data against accidental loss. Since most organizations use individual patterns for this information, they can't use a default built-on sensitive information type.  
 
 Instead, they need to create a custom sensitive information type to use at a later stage of implementation in a data loss prevention policy, a sensitivity label, or for a retention policy or label.

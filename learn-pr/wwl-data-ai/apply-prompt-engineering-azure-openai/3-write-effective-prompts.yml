@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.write-effective-prompts
+title: Write more effective prompts
+metadata:
+  title: Write more effective prompts
+  description: "Write more effective prompts to generate quality responses from Azure OpenAI"
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-write-effective-prompts.md)]

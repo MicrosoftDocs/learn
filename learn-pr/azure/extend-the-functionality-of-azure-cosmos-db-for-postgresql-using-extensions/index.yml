@@ -12,7 +12,8 @@ metadata:
   manager: jroth
   ms.reviewer: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: postgresql
 title: Extend the functionality of Azure Cosmos DB for PostgreSQL using extensions
 summary: |
   Use PostgreSQL extensions to enhance and extend the functionality of Azure Cosmos DB for PostgreSQL. PostgreSQL allows you to extend the functionality of a database by using extensions. Extensions allow for bundling multiple related SQL objects together in a single package that can be loaded or removed from the database with a single command. After being loaded in the database, extensions can function like built-in features.

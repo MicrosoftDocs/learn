@@ -2,7 +2,7 @@ Image generation models can take a prompt, a base image, or both, and create som
 
 ## DALL-E
 
-In addition to natural language capabilities, these generative AI models can edit and create images. The model that works with images is called DALL-E. Much like GPT models, subsequent versions of DALL-E are appended onto the name, such as DALL-E 2. Image capabilities generally fall into the three categories of image creation, editing an image, and creating variations of an image. 
+In addition to natural language capabilities, generative AI models can edit and create images. The model that works with images is called DALL-E. Much like GPT models, subsequent versions of DALL-E are appended onto the name, such as DALL-E 2. Image capabilities generally fall into the three categories of image creation, editing an image, and creating variations of an image. 
 
 ## Image generation
 

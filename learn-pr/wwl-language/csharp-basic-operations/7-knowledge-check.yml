@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/25/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
@@ -15,10 +15,10 @@ quiz:
   questions:
   - content: "Which of the following lines of code will fail to output the text `Windows 11`?"
     choices:
-    - content: "`Console.WriteLine(\"Windows \" + 7 + 4)`"
+    - content: "`Console.WriteLine(\"Windows \" + 7 + 4);`"
       isCorrect: true
       explanation: "Correct!"
-    - content: "`Console.WriteLine(\"Windows \" + 11)`"
+    - content: "`Console.WriteLine(\"Windows \" + 11);`"
       isCorrect: false
       explanation: "Incorrect. This line correctly concatenates 11 to the string"
     - content: "`Console.Write(\"Windows \" + 1 + 1);`"
@@ -45,7 +45,7 @@ quiz:
       explanation: "Correct. Correct!"
     - content: "1"
       isCorrect: false
-      explanation: "Incorrect. Since `5` and `10` are `int` literals, dividing them would normally equal `0.5`, however, the `.5`` would be truncated."
+      explanation: "Incorrect. Since `5` and `10` are `int` literals, dividing them would normally equal `0.5`, however, the `.5` would be truncated."
   - content: "Which of the following lines of code uses the *addition assignment* operator?"
     choices:
     - content: "`value += 5;`"
@@ -54,6 +54,6 @@ quiz:
     - content: "`value++;`"
       isCorrect: false
       explanation: "Incorrect. This line of code doesn't use the addition assignment operator."
-    - content: "value = value + 5;"
+    - content: "`value = value + 5;`"
       isCorrect: false
       explanation: "Incorrect. This line of code doesn't use the *addition assignment* operator."

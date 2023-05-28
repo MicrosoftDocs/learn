@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Create and manage session host image for Azure Virtual Desktop
 summary: A Shared Image Gallery simplifies custom image sharing across your organization. Custom images can be used to bootstrap deployment tasks like preloading applications, application configurations, and other OS configurations.
 abstract: |

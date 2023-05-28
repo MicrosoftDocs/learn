@@ -47,6 +47,6 @@ quiz:
     - content: "Events should be precise and lightweight."
       isCorrect: true
       explanation: "Correct. All events should be as precise and lightweight as possible to save network load and simplicity."
-    - content: "Events should always follow a convention."
+    - content: "Events should always follow a naming convention."
       isCorrect: false
       explanation: "Naming conventions might be helpful, but for the overall event, building other things are more important."

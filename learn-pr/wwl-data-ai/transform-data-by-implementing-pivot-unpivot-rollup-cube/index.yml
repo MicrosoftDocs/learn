@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Transform data by implementing pivot, unpivot, rollup, and cube
 summary: Learn how to transform data using Transact-SQL.
 abstract: |
