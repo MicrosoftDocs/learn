@@ -1,3 +1,4 @@
+
 Sensitive information types help identify sensitive items, such as credit card numbers and EU debit card numbers. They search for specific patterns and validate data by examining its format, checksums, and relevant keywords or other information. Internal functions carry out some of this functionality.
 
 Microsoft 365 offers over 100 built-in sensitive information types. These types help identify and protect data like credit card numbers, bank account numbers, and passport numbers. They use patterns defined by regular expressions (regex) or functions to detect sensitive information. These built-in definitions can help organizations to quickly deploy solutions in Microsoft 365 to protect company data, using data loss prevention (DLP), retention labels and policies and sensitivity labels.

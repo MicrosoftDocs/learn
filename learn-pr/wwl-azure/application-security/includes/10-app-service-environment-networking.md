@@ -19,63 +19,14 @@ If you use a smaller subnet, be aware of the following limitations:
 
 App Service Environment has the following network information at creation:
 
-:::row:::
-  :::column:::
-    **Address type**
-  :::column-end:::
-  :::column:::
-    **Description**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    App Service Environment virtual network
-  :::column-end:::
-  :::column:::
-    The virtual network deployed into.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    App Service Environment subnet
-  :::column-end:::
-  :::column:::
-    The subnet deployed into.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Domain suffix
-  :::column-end:::
-  :::column:::
-    The domain suffix that is used by the apps made.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Virtual IP (VIP)
-  :::column-end:::
-  :::column:::
-    The VIP type is used. The two possible values are internal and external.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Inbound address
-  :::column-end:::
-  :::column:::
-    The inbound address is the address at which your apps are reached. If you have an internal VIP, it's an address in your App Service Environment subnet. If the address is external, it's a public-facing address.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Default outbound addresses
-  :::column-end:::
-  :::column:::
-    The apps use this address, by default, when making outbound calls to the internet.
-  :::column-end:::
-:::row-end:::
-
+| **Address type**                        |                                                                                                  **Description**                                                                                                  |
+|:--------------------------------------- |:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
+| App Service Environment virtual network |                                                                                        The virtual network deployed into.                                                                                         |
+| App Service Environment subnet          |                                                                                             The subnet deployed into.                                                                                             |
+| Domain suffix                           |                                                                                 The domain suffix that is used by the apps made.                                                                                  |
+| Virtual IP (VIP)                        |                                                                     The VIP type is used. The two possible values are internal and external.                                                                      |
+| Inbound address                         | The inbound address is the address at which your apps are reached. If you have an internal VIP, it's an address in your App Service Environment subnet. If the address is external, it's a public-facing address. |
+| Default outbound addresses              |                                                                The apps use this address, by default, when making outbound calls to the internet.                                                                 |
 
 :::image type="content" source="../media/app-service-environment-networking-page-in-azure-f216027c.png" alt-text="Screenshot showing App Service Environment IP address page.":::
 
