@@ -32,11 +32,12 @@ If Python is installed, the output shows the Python version number. If you need 
 > [!IMPORTANT]
 > If you're using Windows, make sure that the folder location where you installed Python is added to your PATH environment variable. If you miss this step you'll receive an error message "Python isn't found", even after performing the installation. To fix this, you would need to follow these steps to add python to your PATH environment variable:
 >
-> 1. Find the directory with your python.exe file
-> 1. Copy the path to the directory, which could look something like: _"C:\Users\<USER>\AppData\Local\Programs\Python ..."_
-> 1. Open the Start menu and  for **Edit the system environment variables**, which opens up a System Properties window.
+> 1. Find the directory with your python.exe file. You can type **python where** in the command prompt terminal to locate the python.exe file
+> 1. Copy the path value "C:\\\<python path>", you will add it to the **Path** variable in step 6
+> 1. Click the Start menu and type **Edit the system environment variables**, which opens up a System Properties window.
 > 1. Under the Advanced tab, click on the **Environment Variables** button.
-> 1. Under the user variables, double click on the variable **path**, then select **New** and paste in the copied path
+> 1. Under the user variables, double click on the variable called **Path**, which will pop up a window with a list of paths
+> 1. Click **New** and paste in the copied path.
 > 1. Once inserted, click **Ok** and Python should now be reachable from any location in your computer
 >
 >_Note: To verify the path configuration was successful, open a new command prompt terminal and type python to see the python version info. In case you are unable to still run a python command, restart your computer for the changes to be effected_ 
