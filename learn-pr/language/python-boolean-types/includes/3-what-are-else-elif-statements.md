@@ -65,7 +65,7 @@ elif test_expression:
 
 You can combine `if`, `elif`, and `else` statements to create programs with complex conditional logic. Remember that an `elif` statement is run only when the `if` condition is `false`.  Also note that an `if` block can have only one `else` block, but it can have multiple `elif` blocks.
 
-Let's look at the example again with an added `elif` statement:
+Let's look at an example with an `if`, an `elif` and an `else` statement:
 
 ```python
 a = 27
