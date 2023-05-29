@@ -7,7 +7,7 @@ metadata:
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: Azure
 title: Core Cloud Services - Set up CORS for your website and storage assets
 summary: Set up Cross-Origin Resource Sharing (CORS) for your Azure website and storage assets in order to allow cross-domain access to your resources.
 abstract: |

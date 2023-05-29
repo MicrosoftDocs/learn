@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 title: Introduction to Cluster Shared Volumes
 summary: Learn about the core functionality, benefits, use cases, and implementation of Cluster Shared Volumes (CSV) in Windows Server 2019.
 abstract: |

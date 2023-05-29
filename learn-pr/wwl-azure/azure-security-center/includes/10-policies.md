@@ -19,7 +19,7 @@ Defender for Cloud offers the following options for working with security initia
  -  **Add your own custom initiatives** \- If you want to customize the security initiatives applied to your subscription, you can do so within Defender for Cloud. You'll then receive recommendations if your machines don't follow the policies you create.
  -  **Add regulatory compliance standards as initiatives** \- Defender for Cloud's regulatory compliance dashboard shows the status of all the assessments within your environment in the context of a particular standard or regulation (such as **Azure Center for Internet Security (CIS)**, **National Institute of Standards and Technology (NIST) Special Publications (SP) SP 800-53 Rev.4**, **Swift’s Customer Security Program (CSP) Call Session Control Function (CSCF) v2020)**.
 
-### Example: Builtin security initiative
+**Example:** Builtin security initiative
 
 :::image type="content" source="../media/cis-microsoft-azure-cloud-security-benchmark-example-384c86d7.png" alt-text="Screenshot showing an example of the CIS Microsoft Azure Foundations Benchmark.":::
 
@@ -32,6 +32,6 @@ To implement these policy definitions (**whether built-in** or **custom**), you'
 
 There are different types of policies in Azure Policy. Defender for Cloud mainly uses '**Audit**' policies that **check specific conditions** and **configurations** and **then report on compliance**. There are also "**Enforce**' policies that can be used to **apply security settings**.
 
-### Example: Built-in security policy
+**Example:** Built-in security policy
 
 :::image type="content" source="../media/assign-policy-basics-policy-definition-compute-90aece43.png" alt-text="Screenshot showing an example of a basic policy definition to audit VMs without managed disks.":::

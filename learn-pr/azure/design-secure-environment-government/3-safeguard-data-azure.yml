@@ -5,8 +5,8 @@ metadata:
   title: Safeguard data with Azure
   description: Overview of the benefits of implementing Azure solutions for protecting public sector data.
   ms.date: 02/08/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

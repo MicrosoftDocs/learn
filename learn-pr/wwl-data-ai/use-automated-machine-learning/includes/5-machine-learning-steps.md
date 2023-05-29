@@ -10,7 +10,7 @@ These are the same steps in the automated machine learning process with Azure Ma
 ## Prepare data 
 Machine learning models must be trained with existing data. Data scientists expend a lot of effort exploring and pre-processing data, and trying various types of model-training algorithms to produce accurate models, which is time consuming, and often makes inefficient use of expensive compute hardware.
 
-In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *dataset*. You can create your own dataset in Azure Machine Learning studio. 
+In Azure Machine Learning, data for model training and other operations is usually encapsulated in an object called a *data asset*. You can create your own data asset in Azure Machine Learning studio. 
 
 ![Screenshot of selecting data for an automated machine learning job.](../media/auto-machine-learning-select-data.png)
 

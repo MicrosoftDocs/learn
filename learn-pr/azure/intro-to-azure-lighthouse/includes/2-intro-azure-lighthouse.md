@@ -5,7 +5,7 @@ Your manager has heard that Azure Lighthouse may provide a better way of accessi
 In this unit, you'll get an introduction to Azure Lighthouse, and the core features and benefits it delivers for managed service providers like Contoso and their customers.
 
 >[!TIP]
-> Though this module focuses on enabling the delivery of services under a commercial arrangement between a managed service provider and their customer, the same features and benefits are available to any organization managing multiple Azure tenant environments. This includes large Enterprises such as multi-national organizations or franchisors and their franchisees.
+> Though this module focuses on enabling the delivery of services under a commercial arrangement between a managed service provider and their customer, the same features and benefits are available to any organization managing multiple Azure tenant environments. This includes large Enterprises such as multi-national/regional organizations or franchisors and their franchisees.
 
 ## What is Azure Lighthouse?
 

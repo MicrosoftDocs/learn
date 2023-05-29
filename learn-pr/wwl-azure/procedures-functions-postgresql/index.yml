@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: postgresql
 title: Procedures and functions in PostgreSQL
 summary: PostgreSQL supports stored procedures and functions to make SQL queries reusable. In this module, you'll learn how to create and run stored procedures and functions.
 abstract: |

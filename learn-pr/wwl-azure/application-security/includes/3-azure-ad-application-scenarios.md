@@ -1,101 +1,53 @@
 
-Any application that outsources authentication to Azure AD needs to be registered in a directory. This step involves telling Azure AD about your application, including:
+Applications can sign in users themselves or delegate sign-in to an identity provider.
 
-### Azure AD application scenarios
+## Register an application
 
-:::row:::
-  :::column:::
-    **Frontend**
-  :::column-end:::
-  :::column:::
-    **Authentication**
-  :::column-end:::
-  :::column:::
-    **Backend**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Single page application are frontends that run in a browser
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint
-  :::column-end:::
-  :::column:::
-    Web API
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Web apps are applications that authenticate a user in a web browser to a web application
-  :::column-end:::
-  :::column:::
-    Azure AD WS-Federation or SAML Endpoint
-  :::column-end:::
-  :::column:::
-    Web application
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Native apps are applications that call a web API on behalf of a user
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint and Azure AD Token Endpoint
-  :::column-end:::
-  :::column:::
-    Web API
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Web API apps are web applications that need to get resources from a web API
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint and Azure AD Token Endpoint
-  :::column-end:::
-  :::column:::
-    Web application and Web API
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Service-to-service applications are daemon or server application that needs to get resources from a web API
-  :::column-end:::
-  :::column:::
-    Azure AD Authorization Endpoint and Azure AD Token Endpoint
-  :::column-end:::
-  :::column:::
-    Web API
-  :::column-end:::
-:::row-end:::
+For an identity provider to know that a user has access to a particular app, both the user and the application must be registered with the identity provider. When you register your application with **Azure Active Directory (Azure AD)**, you're providing an identity configuration for your application that allows it to integrate with the Microsoft identity platform. Registering the app also allows you to:
 
+ -  Customize the branding of your application in the sign-in dialog box. This branding is important because signing in is the first experience a user will have with your app.
+ -  Decide if you want to allow users to sign in only if they belong to your organization. This architecture is known as a single-tenant application. Or, you can allow users to sign in by using any work or school account, which is known as a multi-tenant application. You can also allow personal Microsoft accounts or a social account from LinkedIn, Google, and so on.
+ -  Request scope permissions. For example, you can request the "**user.read**" scope, which grants permission to read the profile of the signed-in user.
+ -  Define scopes that define access to your web **application programming interface (API)**. Typically, when an app wants to access yourAPI, it will need to request permissions to the scopes you define.
+ -  Share a secret with the Microsoft identity platform that proves the app's identity. Using a secret is relevant in the case where the app is a confidential client application. A confidential client application is an application that can hold credentials securely, like a web client. A trusted back-end server is required to store the credentials.
 
-Azure AD represents applications following a specific model that's designed to fulfill two main functions:
+After the app is registered, it's given a unique identifier that it shares with the Microsoft identity platform when it requests tokens. If the app is a confidential client application, it will also share the secret or the public key depending on whether certificates or secrets were used.
 
- -  Identify the app according to the authentication protocols it supports. This involves enumerating all the identifiers, URLs, secrets, and related information that Azure AD needs at authentication time. Here, Azure AD:
-     -  Holds all the data needed to support authentication at run time.
-     -  Holds all the data for deciding which resources an app might need to access, whether it should fulfill a particular request, and under what circumstances it should fulfill the request.
-     -  Supplies the infrastructure for implementing app provisioning both within the app developer's tenant and to any other Azure AD tenant.
- -  Handle user consent during token request time and facilitate the dynamic provisioning of apps across tenants. Here, Azure AD:
-     -  Enables users and administrators to dynamically grant or deny consent for the app to access resources on their behalf.
-     -  Enables administrators to ultimately decide what apps are allowed to do, which users can use specific apps, and how directory resources are accessed.
+The Microsoft identity platform represents applications by using a model that fulfills two main functions:
 
-In Azure AD, an application object describes an application as an abstract entity. Developers work with applications. At deployment time, Azure AD uses a specific application object as a blueprint to create a service principal, which represents a concrete instance of an application within a directory or tenant. It's the service principal that defines what the app can do in a specific target directory, who can use it, what resources it has access to, and so on. Azure AD creates a service principal from an application object through consent.
+ -  Identify the app by the authentication protocols it supports.
+ -  Provide all the identifiers, **Uniform Resource Locators (URLs)**, secrets, and related information that are needed to authenticate.
 
-The following diagram depicts a simplified Azure AD provisioning flow driven by consent.
+The Microsoft identity platform:
 
-:::image type="content" source="../media/az500-app-scenarios-c8726e2a.png" alt-text="Provisioning steps described in the text.":::
+ -  Holds all the data required to support authentication at runtime.
+ -  Holds all the data for deciding what resources an app might need to access, and under what circumstances a given request should be fulfilled.
+ -  Provides infrastructure for implementing app provisioning within the app developer's tenant, and to any other Azure AD tenant.
+ -  Handles user consent during token request time and facilitates the dynamic provisioning of apps across tenants.
+
+Consent is the process of a resource owner granting authorization for a client application to access protected resources, under specific permissions, on behalf of the resource owner. The Microsoft identity platform enables:
+
+ -  Users and administrators to dynamically grant or deny consent for the app to access resources on their behalf.
+ -  Administrators to ultimately decide what apps are allowed to do and which users can use specific apps, and how the directory resources are accessed.
+
+## Multi-tenant apps
+
+In the Microsoft identity platform, an **application object** describes an application. At deployment time, the Microsoft identity platform uses the application object as a blueprint to create a service principal, which represents a concrete instance of an application within a directory or tenant. The service principal defines what the app can actually do in a specific target directory, who can use it, what resources it has access to, and so on. The Microsoft identity platform creates a service principal from an application object through consent.
+
+The following diagram shows a simplified Microsoft identity platform provisioning flow driven by consent. It shows **two tenants**: ***A*** and ***B***.
+
+ -  ***Tenant A*** owns the application.
+ -  ***Tenant B*** is instantiating the application via a service principal.
+
+:::image type="content" source="../media/microsoft-identity-platform-provisioning-flow-driven-by-consent-56dd20d0.jpg" alt-text="Screenshot showing a Microsoft identity platform provisioning flow driven by consent example.":::
 
 
 In this provisioning flow:
 
-1.  A user from B tries to sign in with the app.
-2.  Azure AD gets and verifies the user credentials.
-3.  Azure AD prompts the user to consent for the app to gain access to tenant B.
-4.  Azure AD uses the application object in A as a blueprint for creating a service principal in B.
+1.  A user from tenant B attempts to sign in with the app. The authorization endpoint requests a token for the application.
+2.  The user credentials are acquired and verified for authentication.
+3.  The user is prompted to provide consent for the app to gain access to tenant B.
+4.  The Microsoft identity platform uses the application object in tenant A as a blueprint for creating a service principal in tenant B.
 5.  The user receives the requested token.
 
-You can repeat this process as many times as you want for other tenants (C, D, and so on). Directory A keeps the blueprint for the app (application object). Users and admins of all the other tenants where the app is given consent to retain control over what the application can do through the corresponding service principal object in each tenant.
-
-When an application is given permission to access resources in a tenant (upon registration or consent), a service principal object is created. The Microsoft Graph **ServicePrincipal entity** defines the schema for a service principal object's properties.
+You can repeat this process for more tenants. Tenant A retains the blueprint for the **app (application object)**. Users and admins of all the other tenants where the app is given consent keep control over what the application is allowed to do via the corresponding service principal object in each tenant.

@@ -4,12 +4,11 @@ title: Register an application with App Registration
 metadata:
   title: Register an application with App Registration
   description: "Register an application with App Registration"
-  ms.date: 02/24/2023
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/4-app-registration.md)]

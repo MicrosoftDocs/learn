@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.azure-vmware-solution.using-frrouting-nva
+title: Using FRRouting as an NVA
+metadata:
+  title: Using FRRouting as an NVA
+  description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
+  ms.date: 03/23/2023
+  author: Mahesh-MSFT
+  ms.author: maksh 
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
+durationInMinutes: 2
+content: |
+  [!include[](includes/8-using-frrouting-nva.md)]

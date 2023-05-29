@@ -3,21 +3,20 @@ uid: learn.azure.deploy-java-ee-app-to-app-service
 metadata:
   title: Deploy a Java EE (Jakarta EE) application to Azure
   description: Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
-  ms.date: 02/01/2021
+  ms.date: 05/25/2023
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: yoterada-03082021
 title: Deploy a Java EE (Jakarta EE) application to Azure
 summary: Deploy a Java EE (Jakarta EE) application to JBoss EAP on Azure App Service and bind it to Azure Database for MySQL.
 abstract: |
   After completing this module, you'll be able to:
-  - Create and manage an Azure Database for MySQL instance
-  - Deploy a Java EE application to JBoss EAP on App Service
-  - Create a data source and bind the Java EE application to MySQL
-  - Access and manage the Java EE application on JBoss
+  - Create and manage an Azure Database for MySQL instance.
+  - Deploy a Java EE application to JBoss EAP on App Service.
+  - Create a data source and bind the Java EE application to MySQL.
+  - Access and manage the Java EE application on JBoss.
 iconUrl: /training/achievements/deploy-java-ee-app-to-app-service.svg
 levels:
   - beginner

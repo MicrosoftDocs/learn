@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.exercise
+title: Exercise - Utilize prompt engineering in your application
+metadata:
+  title: Exercise - Utilize prompt engineering in your application
+  description: "Develop an application that uses prompt engineering to improve the quality of responses from Azure OpenAI."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise.md)]

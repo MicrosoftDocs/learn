@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.work-compute-resources-azure-machine-learning.compute-targets
-title: Create and use a compute instance
+title: Choose the appropriate compute target
 metadata:
-  title: Create and use a compute instance
+  title: Choose the appropriate compute target
   description: "Learn about the different available compute targets in Azure Machine Learning, and how to choose when to use which type."
-  ms.date: 01/17/2023
+  ms.date: 04/10/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial

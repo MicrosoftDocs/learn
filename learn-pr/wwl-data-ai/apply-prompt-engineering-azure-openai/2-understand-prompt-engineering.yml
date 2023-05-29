@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering
+title: Understand prompt engineering
+metadata:
+  title: Understand prompt engineering
+  description: "Understand what prompt engineering is and how it can be used to improve the quality of responses from Azure OpenAI."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-prompt-engineering.md)]

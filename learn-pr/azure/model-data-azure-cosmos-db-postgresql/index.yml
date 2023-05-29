@@ -12,7 +12,8 @@ metadata:
   manager: jroth
   ms.reviewer: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: postgresql
 title: Model data for Azure Cosmos DB for PostgreSQL
 summary: |
   Azure Cosmos DB for PostgreSQL provides a highly scalable distributed relational database solution, reliably and securely managed on Azure. To effectively model data for distributed tables in Azure Cosmos DB for PostgreSQL, data usage and distribution must be taken into consideration.

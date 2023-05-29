@@ -1,20 +1,21 @@
 ### YamlMime:Module
 uid: learn.build-app-with-scale-sets
 metadata:
-  title: Build a scalable application with virtual machine scale sets
-  description: Enable your application to automatically adjust to changes in load while minimizing costs with virtual machine scale sets.
-  ms.date: 10/03/2022
+  title: Build a scalable application with Virtual Machine Scale Sets
+  description: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
+  ms.date: 04/11/2023
   author: ju-shim
   ms.author: jushiman
+  ms.reviewer: mimckitt
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Build a scalable application with virtual machine scale sets
-summary: Enable your application to automatically adjust to changes in load while minimizing costs with virtual machine scale sets.
+  ms.service: virtual-machine-scale-sets
+title: Build a scalable application with Virtual Machine Scale Sets
+summary: Enable your application to automatically adjust to changes in load while minimizing costs with Virtual Machine Scale Sets.
 abstract: |
   In this module, you will:
-  - Identify the features and capabilities of virtual machine scale sets.
-  - Identify the use cases for running applications on virtual machine scale sets.
-  - Deploy an application on a virtual machine scale set.
+  - Identify the features and capabilities of Virtual Machine Scale Sets.
+  - Identify the use cases for running applications on Virtual Machine Scale Sets.
+  - Deploy an application on a Virtual Machine Scale Set.
 prerequisites: |
   - Basic knowledge of Azure virtual machines
   - Basic knowledge of load-balancing concepts

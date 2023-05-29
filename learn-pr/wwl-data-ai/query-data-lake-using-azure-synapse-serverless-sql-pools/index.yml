@@ -3,7 +3,7 @@ uid: learn.wwl.query-data-lake-using-azure-synapse-serverless-sql-pools
 metadata:
   title: Use Azure Synapse serverless SQL pool to query files in a data lake
   description: "Use Azure Synapse serverless SQL pool to query files in a data lake"
-  ms.date: 07/07/2022
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   - Query CSV, JSON, and Parquet files using a serverless SQL pool
   - Create external database objects in a serverless SQL pool
 prerequisites: |
-  Consider completing the [Explore data analytics in Azure](/training/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/training/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
+  Consider completing the [Explore data analytics in Azure](/learn/paths/azure-data-fundamentals-explore-data-warehouse-analytics?azure-portal=true) and [Get started querying with Transact-SQL](/learn/paths/get-started-querying-with-transact-sql?azure-portal-true) learning paths before starting this module. You will need knowledge of:
   - Analytical data workloads in Microsoft Azure
   - Querying data with Transact-SQL
 iconUrl: /training/achievements/query-data-in-the-lake-using-azure-synapse-serverless-sql-pools.svg

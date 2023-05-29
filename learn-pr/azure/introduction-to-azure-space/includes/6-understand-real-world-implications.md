@@ -5,7 +5,7 @@ So how do these technologies affect the world around us? There are numerous scen
 ### First example: Reporting
 
 - **Scenario**: I run a multinational agricultural company, and I need more accurate reporting of yields and shortages.
-- **Outcome**: Earth observation sensors enable object detection and classification, allowing for monitoring of changes over time and precision reports on crop health.
+- **Outcome**: Earth-observation sensors enable object detection and classification, allowing for monitoring of changes over time and precision reports on crop health.
 
 ### Second example: Connectivity
 
@@ -16,12 +16,12 @@ So how do these technologies affect the world around us? There are numerous scen
 
 ### First example: Optimization
 
-- **Scenario**: I'm a SATCOM operator, and I would like to virtualize my ground segment, lower costs, and expand my business through cloud.
+- **Scenario**: I'm a SATCOM operator, and I'd like to virtualize my ground segment, lower costs, and expand my business through cloud.
 - **Outcome**: Operators can use co-location services, access networking services, and use a platform for virtualization.
 
 ### Second example: Infrastructure savings
 
-- **Scenario**: I'd like to operate my satellite, downlink data, and process data without investing, building, and maintaining my own ground station antenna and data center.
+- **Scenario**: I'd like to operate my satellite, downlink data, and process data without investing, building, and maintaining my own ground station antenna and datacenter.
 - **Outcome**: Operators can operate satellites, downlink data, transfer data to Azure cloud using Azure networking, process data to produce imagery, and use Azure AI/ML and analytics services to gain further insight from earth observation data.
 
 In the next unit, you'll review what you've learned in this module.

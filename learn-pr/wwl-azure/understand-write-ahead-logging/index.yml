@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Understand write-ahead logging
 summary: Azure Database for PostgreSQL is an ACID compliant database service. Write-ahead logging ensures changes are both atomic and durable. In this module, you learn how Azure Database for PostgreSQL implements write-ahead logging.
 abstract: |

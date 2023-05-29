@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/12/2023
+  ms.date: 04/03/2023
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
       explanation: "Incorrect. Read-only won't let you make updates, only view."
   - content: "What are the two views you can use to see the assets within a Power BI workspace?"
     choices:
-    - content: "Line and lineage view."
+    - content: "List and lineage view."
       isCorrect: true
       explanation: "Correct. You can see line items or relationship representation with lineage view."
     - content: "Line and relationship view."

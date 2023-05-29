@@ -47,7 +47,7 @@ There are several points to consider when deciding whether Azure Logic Apps is t
 
 #### Business application
 
-Take a few minutes to learn how a construction rental company is automating workflows and providing an innovative customer experience with [Azure Logic Apps](https://customers.microsoft.com/story/cramo-professional-services-azure). 
+Take a few minutes to learn how [Azure Logic Apps](https://customers.microsoft.com/story/1567549472346870706-eon-esmartsystems-azure-en) distributes data from drones inspecting power lines. 
 
 You can use the following flowchart for other questions to ask as you plan for using Azure Logic Apps.
 

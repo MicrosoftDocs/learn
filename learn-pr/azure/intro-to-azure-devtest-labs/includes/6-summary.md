@@ -2,7 +2,7 @@ In this module, you wanted to evaluate whether Azure DevTest Labs would be a goo
 
 You now understand how to quickly provision environments by using reusable templates and formulas. Also, you've seen how to spin up PaaS resources, such as Azure Service Fabric, by using Azure Resource Manager templates (ARM templates). You know how to create IaaS VMs and assign them to users.
 
-Finally, you were introduced to various ways to manage the cost of DevTest Labs. Use policies to govern such things as VM size and autoshutdown schedules.
+Finally, you were introduced to various ways to manage the cost of DevTest Labs, by using policies to govern such things as VM size and autoshutdown schedules.
 
 ## Learn more
 

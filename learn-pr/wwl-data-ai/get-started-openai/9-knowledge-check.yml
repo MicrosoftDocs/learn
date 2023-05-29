@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-openai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This unit contains a knowledge check which can help learners reinforce their understanding of the material.
+  ms.date: 2/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure 
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "What Azure OpenAI base model can you deploy to access the capabilities of ChatGPT?"
+    choices:
+    - content: "text-davinci-003"
+      isCorrect: false
+      explanation: ""
+    - content: "gpt-35-turbo"
+      isCorrect: true
+      explanation: ""
+    - content: "text-embedding-ada-002 (Version 2)"
+      isCorrect: false
+      explanation: ""
+  - content: "Which parameter could you adjust to change the randomness or creativeness of the completions returned?"
+    choices:
+    - content: "Temperature"
+      isCorrect: true
+      explanation: ""
+    - content: "Frequency penalty"
+      isCorrect: false
+      explanation: ""
+    - content: "Stop sequence"
+      isCorrect: false
+      explanation: ""
+  - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
+    choices:
+    - content: "Completions"
+      isCorrect: false
+      explanation: ""
+    - content: "Chat"
+      isCorrect: true
+      explanation: ""
+    - content: "Bot"
+      isCorrect: false
+      explanation: ""

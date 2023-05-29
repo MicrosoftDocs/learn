@@ -3,7 +3,7 @@ uid: learn.design-your-migration-to-azure.3-assess-your-environment
 metadata:
   title: Assess your environment with Azure Migrate
   description: An overview of Azure Migrate, a service that assesses readiness and assists you with the migration to Azure from an on-premises environment.
-  ms.date: 07/30/2019
+  ms.date: 04/13/2023
   author: v-ksreedevan
   ms.author: v-ksreedevan
   ms.topic: interactive-tutorial
@@ -36,4 +36,4 @@ quiz:
       explanation: "Download and install the collector appliance first, and then install the dependency agents."
     - content: "Install the collector appliance on the vCenter Server, install dependency agents on each on-premises VM, create the assessment, and then edit the default properties of the assessment to your requirements."
       isCorrect: true
-      explanation: "This is the correct answer. Remember that installing the dependency agents is optional. Also, you don't need to edit the assessment properties if the defaults are sufficient."
+      explanation: "Correct. Remember that installing the dependency agents is optional. Also, you don't need to edit the assessment properties if the defaults are sufficient."

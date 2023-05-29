@@ -6,7 +6,7 @@ Operational and security teams can use a single interface to monitor and protect
 
 ## Example scenario
 
-In this unit, you'll learn about the OT challenges that a building management company might deal with, and how it would start evaluating a security service that fits its needs.
+In this unit, you'll learn about the OT challenges that a building-management company might deal with, and how it would start evaluating a security service that fits its needs.
 
 For example, suppose you're the Chief Operations Officer (COO) for a smart building-management company. Your team is responsible for the daily, efficient functioning and safety of building services. Campuses in one city include 50 buildings that total 5 million square feet of residential space and 5 million square feet of office space.
 
@@ -17,20 +17,20 @@ As COO, you're responsible for:
 - **Increasing safety** against unauthorized guests.
 - **Enhancing services** in conference rooms.
 
-To reach these goals, you installed new building management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors.
+To reach these goals, you installed new building-management systems, CCTV cameras, conferencing equipment, intelligent HVAC systems, efficient elevator systems, and occupancy sensors.
 
 You know that the technologies newly integrated into the OT architecture have increased the security attack surface in the OT network. For example, networked elevator controls improve elevator usage, power consumption, and user experience, but the controls also introduce services that are accessible remotely and might be easy to penetrate.
 
-You start a search for a security service that fits the needs of the security and operation teams.
+You start a search for a security service that fits the needs of the security and operations teams.
 
-Both security and operation officers must be able to view:
+Both security and operations officers must be able to view:
 
 - **All equipment** running in the operational network, which includes vendor-specific equipment running on proprietary protocols.
 - **Communications paths** between the various subsystems, and between any unauthorized connections to the internet or corporate subnetworks.
 
 The teams also want to be alerted about any unauthorized actions or unplanned activities that might occur. For example, teams need to know if elevator controllers were reconfigured at an unplanned time. They also need to know if controllers monitoring fire detectors were accessed remotely when remote access is unauthorized.
 
-Both security and operations teams need to respond to immediate threats and carry out ongoing operational and network security tasks. For example, both teams need to secure network switch configurations. They also need to install firmware updates on programmable logic controllers and security patches on building-management-system workstations.
+Both security and operations teams need to respond to immediate threats and carry out ongoing operational and network security tasks. For example, both teams need to secure network-switch configurations. They also need to install firmware updates on programmable logic controllers and security patches on building-management-system workstations.
 
 - **The IT security operations center (SOC) team** works with standard security solutions, but it currently has no visibility into OT network assets or connections. The team can't be alerted when equipment is compromised, updated at unplanned times, or accessed without the right credentials.
 - **The OT team** manages its asset inventory by using digital spreadsheets. The team manages system architecture by using CAD systems. Data about dated firmware, OS versions, patch levels, and installed software and firmware is managed in communications between vendors and the OT staff.

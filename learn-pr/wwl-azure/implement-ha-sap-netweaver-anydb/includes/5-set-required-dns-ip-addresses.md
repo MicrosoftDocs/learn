@@ -1,3 +1,5 @@
+
+
 Complete the following steps:
 
 1. In the Azure portal, in the **DNS servers** pane, make sure that your virtual network DNS servers option is set to **Custom DNS**. Select your settings based on the type of network you have:

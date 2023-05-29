@@ -4,13 +4,11 @@ title: Explore SAProuter
 metadata:
   title: Explore SAProuter
   description: "Explore SAProuter"
-  ms.date: 06/30/2022
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/18-explore-saprouter.md)]

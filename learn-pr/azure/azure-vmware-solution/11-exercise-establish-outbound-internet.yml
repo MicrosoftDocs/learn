@@ -1,0 +1,42 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.azure-vmware-solution.exercise-establish-outbound-internet
+title: Exercise - establish outbound internet connectivity
+metadata:
+  title: Exercise - establish outbound internet connectivity
+  description: This content is part of the "Secure outbound internet connectivity for Azure VMware Solution" module.
+  ms.date: 03/23/2023
+  author: Mahesh-MSFT
+  ms.author: maksh
+  ms.topic: interactive-tutorial
+  ms.prod: azure-vmware-solution
+durationInMinutes: 10
+content: |
+  [!include[](includes/11-exercise-establish-outbound-internet.md)]
+quiz:
+  title: Knowledge Check
+  questions:
+    - content: "You have multiple Azure Firewall instances globally. Which mode is best for configuring rules?"
+      choices:
+        - content: "Firewall Policy."
+          isCorrect: true
+          explanation: "Correct. You should use Azure Firewall Policy for managing global instances."
+        - content: "Rules."
+          isCorrect: false
+          explanation: "Incorrect. You should use Azure Firewall Policy for managing global instances."
+        - content: "All of the above."
+          isCorrect: false
+          explanation: "Incorrect. You should use Azure Firewall Policy for managing global instances."
+    - content: "When Azure VMware Solution guest VMs reach an internet destination using Azure Firewall, which IP address will the destination receive?"
+      choices:
+        - content: "Azure VMware Solution guest VMs private IP address."
+          isCorrect: false
+          explanation: "Incorrect. Destination will receive Azure Firewall's public IP address."
+        - content: "The NVA's public IP address."
+          isCorrect: false
+          explanation: "Incorrect. Destination will receive Azure Firewall's public IP address."
+        - content: "Azure Firewall's public IP address."
+          isCorrect: true
+          explanation: "Correct. Destination will receive Azure Firewall's public IP address."
+        - content: "NSX Edge's Public IP address."
+          isCorrect: false
+          explanation: "Incorrect. Destination will receive Azure Firewall's public IP address."

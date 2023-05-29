@@ -19,7 +19,7 @@ quiz:
     - content: "The shipment is out of compliance temporarily. However, when the freezer is repaired, the temperature returns to freezing. The last transaction from the IoT temperature sensor updates the temperature in the ledger. Therefore, the shipment appears to be in compliance."
       isCorrect: false
       explanation: "Smart contract logic sets the state to out of compliance when the temperature is above freezing. We can assume that the logic doesn't change the shipment status back to be in compliance once the temperature returns to freezing. Therefore, the status of the shipment would be out of compliance regardless of the current shipment temperature."
-    - content: "Smart contract logic sets the shipment non-compliant when the temperature is too high. The ice cream shop can check if the shipment is out of compliance before accepting delivery."
+    - content: "Smart contract logic sets the shipment to noncompliant when the temperature is too high. The ice cream shop can check if the shipment is out of compliance before accepting delivery."
       isCorrect: true
       explanation: "The smart contract logic sets the state to out of compliance. We can assume that the logic doesn't change the shipment status back to be in compliance once the temperature returns to freezing."
     - content: "You need to audit the blockchain history to determine compliance. Once you investigate the blockchain history, you can mark the shipment as being out of compliance."
@@ -27,18 +27,18 @@ quiz:
       explanation: "Blockchain keeps a history of all transactions and you can use the history to perform an audit. However, since we can use logic to determine if the temperature is too high, smart contract logic sets the state to out of compliance. The ice cream shop can check if the shipment is out of compliance before accepting delivery."
   - content: "Why is blockchain immutable?"
     choices:
-    - content: "Blockchain uses hashes to tamper-proof the data in the blockchain. Validation would detect the invalid blocks. Bad blocks would be thrown out during consensus. Therefore, blockchain cannot be changed in a healthy blockchain network."
+    - content: "Blockchain uses hashes to tamper-proof the data in the blockchain. Validation would detect the invalid blocks. Bad blocks would be thrown out during consensus. Therefore, blockchain can't be changed in a healthy blockchain network."
       isCorrect: true
-      explanation: "By using hashes to link blocks, validations, and consensus. Blockchain is extremely difficult to alter. Therefore, it is considered immutable."
-    - content: "Blockchain ledgers are read only for participants by default. Only processes with the granted permission can write data. Since ledgers are read only to participants, they are immutable."
+      explanation: "By using hashes to link blocks, validations, and consensus. Blockchain is extremely difficult to alter. Therefore, it's considered immutable."
+    - content: "Blockchain ledgers are read only for participants by default. Only processes with the granted permission can write data. Since ledgers are read only to participants, they're immutable."
       isCorrect: false
-      explanation: "While there are private or *permissioned* blockchains, it is the use of hashes, validation, and consensus that ensures data is tamper-proof."
-    - content: "Immutability depends on how you configure the blockchain network. It can be configured to be read only or immutable. However, blockchain is fully configurable. You can configure nodes to allow administrators to make changes to transaction history. The changes are synchronized automatically."
+      explanation: "While blockchains can be private or *permissioned*, it's the use of hashes, validation, and consensus that ensures data is tamper-proof."
+    - content: "Immutability depends on how you configure the blockchain network. It can be configured as read only or immutable. However, blockchain is fully configurable. You can configure nodes to allow administrators to make changes to transaction history. The changes are synchronized automatically."
       isCorrect: false
       explanation: "You can't configure blockchain history to be modifiable. Blockchain uses hashes, validation, and consensus to ensure data is tamper-proof."
   - content: "How do smart contracts enable business workflows?"
     choices:
-    - content: "Smart contracts use pre-defined business workflow logic for common business scenarios."
+    - content: "Smart contracts use predefined business workflow logic for common business scenarios."
       isCorrect: false
       explanation: "Smart contracts use logic you define in a programming language like Solidity. You program the smart contract based on the requirements of the workflow."
     - content: "Smart contracts are client applications you write that call the blockchain to execute transactions and change ledger state."

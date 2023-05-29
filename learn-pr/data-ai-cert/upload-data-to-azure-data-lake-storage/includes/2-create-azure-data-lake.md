@@ -5,7 +5,7 @@ Before you can upload or transfer data into a data lake, you need to create one.
 
 ## Create a resource group
 
-Create a new resource group to hold the data lake storage. You'll use the resource group to administer related services and applications together. A resource group will also make resource cleanup easier when you finish this module.
+Create a new resource group to hold the data lake storage. You use the resource group to administer related services and applications together. A resource group also makes resource clean up easier when you finish this module.
 
 To create a resource group in the Azure portal, follow these steps:
 
@@ -25,9 +25,9 @@ To create a resource group in the Azure portal, follow these steps:
     | Subscription         | Subscription you choose to work in.                          |
     | Resource group       | Enter *mslearn-datalake-test*                                |
     | **Resource details** |                                                              |
-    | Region               | Select a location for the resource group. Typically, you'll want a location that's close to you or to the data you'll work with. |
+    | Region               | Select a location for the resource group. Typically, you want a location that's close to you or to the data you work with. |
 
-    ![Screenshot showing Azure create a resource group pane.](../media/2-create-resource-group.png)
+   :::image type="content" source="../media/2-create-resource-group.png" alt-text="Screenshot showing Azure create a resource group pane.":::
 
 1. Select **Review + create**.
 
@@ -37,7 +37,7 @@ To create a resource group in the Azure portal, follow these steps:
 
 ## Create a Data Lake Storage Gen2 account
 
-You'll create a Data Lake Storage Gen2 account the same way you create an Azure Blob store, but with one different setting.
+You create a Data Lake Storage Gen2 account the same way you create an Azure Blob store, but with one different setting.
 
 1. On the **Resource Group** page, select **Create resources**. The **Create a resource** page appears.
 
@@ -50,16 +50,16 @@ You'll create a Data Lake Storage Gen2 account the same way you create an Azure 
     | Setting              | Value                                                        |
     | -------------------- | ------------------------------------------------------------ |
     | **Project details**  |                                                              |
-    | Subscription         | Same subscription as the *Data Lake Storage Gen2 account* you just created. |
+    | Subscription         | Same subscription as the *Data Lake Storage Gen2 account* you created. |
     | Resource group       | From the dropdown list, select *mslearn-datalake-test*       |
     | **Instance details** |                                                              |
     | Storage account name | Enter a unique name for your storage account. The name must be unique across all of Azure. You might have to try a few variations to find a unique name. Try using the prefix *dlakedata* with some numbers. A green check mark indicates you've entered a valid name. |
     | **Region**           | From the dropdown list, select *(US) Central US*.            |
 
-1. Accept the defaults for the reminder of the settings. 
+1. Accept the defaults for the remainder of the settings.
 
-    ![Screenshot showing the Basics tab for Create a storage account.](../media/2-create-storage-account-basics.png)
-    
+   :::image type="content" source="../media/2-create-storage-account-basics.png" alt-text="Screenshot showing the Basics tab for Create a storage account.":::
+
 1. Select **Next : Advanced**.
 
 1. On the **Advanced** tab, select the following value for the setting. Accept default values for all other settings.
@@ -69,7 +69,7 @@ You'll create a Data Lake Storage Gen2 account the same way you create an Azure 
     | **Data Lake Storage Gen2**    |                   |
     | Enable hierarchical namespace | *check* (Enabled) |
   
-    ![Screenshot showing the Advanced tab for Create storage account.](../media/2-create-storage-account.png)
+   :::image type="content" source="../media/2-create-storage-account.png" alt-text="Screenshot showing the Advanced tab for Create storage account.":::
 
 1. Select **Review + create** to create the storage account.
 

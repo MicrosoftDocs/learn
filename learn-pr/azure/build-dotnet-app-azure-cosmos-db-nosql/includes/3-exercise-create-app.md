@@ -8,79 +8,6 @@ As the first step to creating your project's application, you need to create a .
 
 After you complete this exercise, you'll have a simple .NET application that successfully connects to your API for NoSQL account, but doesn't perform any operations yet.
 
-## Persist connection string
-
-Here, you get the connection string again and store it in an *environment variable* that is accessible from your .NET application.
-
-01. Create a `resourceGroup` shell variable with the value prescribed here.
-
-    ```azurecli
-    resourceGroup="<rgn>[sandbox resource group name]</rgn>"
-    ```
-
-01. Query your resource group for the single Azure Cosmos DB account you created earlier in this project.
-
-    ```azurecli
-    az cosmosdb list \
-        --resource-group $resourceGroup \
-        --query [0].name \
-        --output tsv
-    ```
-
-01. Use the same query again to save the name of the account in the `accountName` shell variable.
-
-    ```azurecli
-    accountName=$(az cosmosdb list \
-        --resource-group $resourceGroup \
-        --query [0].name \
-        --output tsv)
-    ```
-
-01. Get the `Primary SQL Connection String` credential from the account and save it in a shell variable named `connectionString`.
-
-    ```azurecli
-    connectionString=$(az cosmosdb keys list \
-        --name $accountName \
-        --resource-group $resourceGroup \
-        --type connection-strings \
-        --query "connectionStrings[?description=='Primary SQL Connection String'].connectionString" \
-        --output tsv)
-    ```
-
-01. To validate, output the connection string to the terminal.
-
-    ```azurecli
-    echo $connectionString
-    ```
-
-01. Save the `connectionString` shell variable as a new environment variable named `COSMOS_CONNECTION_STRING`.
-
-    ```azurecli
-    export COSMOS_CONNECTION_STRING=$connectionString
-    ```
-
-## Build and persist the project directory
-
-Azure Cloud Shell persists files across sessions using Azure Files. A file share is mounted to the shell's running instance in the *clouddrive* directory. Here, you create your project folder in that directory.
-
-01. Change to the already mounted *clouddrive* directory.
-
-    ```bash
-    cd ~/clouddrive
-    ```
-
-01. Create a new directory named *inventory* to be persisted across sessions.
-
-    ```bash
-    mkdir inventory
-    ```
-
-01. Change to the newly created *clouddrive/inventory* directory.
-
-    ```bash
-    cd ~/clouddrive/inventory
-    ```
-
 ## Create a .NET console project
 
 The .NET CLI creates and manages .NET projects within a specified directory. Here, you use the CLI to create a new console application and add a package reference to the SDK.
@@ -94,10 +21,10 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     > [!TIP]
     > Since you did not specify a project name or a directory, the command will create the new project in the current directory and name the project to match the directory's name (inventory).
 
-01. Add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK from NuGet.
+01. Add a package reference to version **3** of the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK from NuGet.
 
     ```dotnetcli
-    dotnet add package Microsoft.Azure.Cosmos
+    dotnet add package Microsoft.Azure.Cosmos --version 3.*
     ```
 
 01. Build the .NET project to ensure you've correctly configured your project.
@@ -109,37 +36,23 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     The output of the command should be similar to this example.
 
     ```output
-    Microsoft (R) Build Engine version 17.2.0+41abc5629 for .NET
-    Copyright (C) Microsoft Corporation. All rights reserved.
-    
+    MSBuild version 17.5.0+6f08c67f3 for .NET
       Determining projects to restore...
       All projects are up-to-date for restore.
-      inventory -> /usr/csuser/clouddrive/inventory/bin/Debug/net6.0/inventory.dll
+      dotnet-env-azure-cosmos-db -> /workspaces/dotnet-env-azure-cosmos-db/bin/Debug/net7.0/dotnet-env-azure-cosmos-db.dll
     
     Build succeeded.
         0 Warning(s)
         0 Error(s)
     
-    Time Elapsed 00:00:11.00
-    ```
-
-01. Open the code editor using the `code` command in the current directory.
-
-    ```bash
-    code .
+    Time Elapsed 00:00:05.96
     ```
 
 ## Connect to the account
 
 Now, the .NET project should be built and ready for you to add your own custom code. You have access to the <xref:Microsoft.Azure.Cosmos> namespace and all of the classes necessary to connect to the API for NoSQL. Here, you open the *Program.cs* file and implement code to connect to the account using the client classes of the SDK.
 
-01. Open the *Program.cs* file within the code editor for the Azure Cloud Shell.
-
-    > [!TIP]
-    > If you are not familiar with the Azure Cloud Shell's integrated editor, use the file explorer to select and open the *Program.cs* option.
-    >
-    > :::image type="content" source="../media/cloud-shell-code-editor.png" alt-text="Screenshot of the Azure Cloud Shell integrated editor with the Program.cs file highlighted." lightbox="../media/cloud-shell-code-editor.png":::
-    >
+01. Open the *Program.cs* file within the code editor.
 
 01. Delete all existing code from the file.
 
@@ -160,10 +73,10 @@ Now, the .NET project should be built and ready for you to add your own custom c
 
 01. Add the following lines of code within the `GetClient` local function.
 
-    01. Create a string variable named `connectionString`. Set the initial value of the variable to the result of calling <xref:System.Environment.GetEnvironmentVariable(System.String)> passing in the name of the `COSMOS_CONNECTION_STRING` environment variable.
+    01. Create a constant string variable named `connectionString`. Set the value of the variable to the connection string you recorded earlier in this module.
 
         ```csharp
-        string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+        const string connectionString = "AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;";
         ```
 
     01. Print the connection string to the console.
@@ -233,18 +146,18 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 
 ### [Review code](#tab/review-code)
 
-01. Review the *inventory.csproj* project file to ensure that the project configuration matches this sample.
+01. Review the *\*.csproj* project file to ensure that the project configuration matches this sample.
 
     ```xml
     <Project Sdk="Microsoft.NET.Sdk">    
       <PropertyGroup>
         <OutputType>Exe</OutputType>
-        <TargetFramework>net6.0</TargetFramework>
+        <TargetFramework>net7.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
       </PropertyGroup>    
       <ItemGroup>
-        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.29.0" />
+        <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.*" />
       </ItemGroup>    
     </Project>
     ```
@@ -266,7 +179,7 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 01. Within the *Program.cs* code file, review the `GetClient` local function to make sure that your code matches this sample.
 
     ```csharp
-    string connectionString = Environment.GetEnvironmentVariable("COSMOS_CONNECTION_STRING")!;
+    const string connectionString = "AccountEndpoint=https://<account-name>.documents.azure.com:443/;AccountKey=<account-key>;";
 
     Console.WriteLine($"[Connection string]:\t{connectionString}");
 

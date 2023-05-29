@@ -1,29 +1,35 @@
 
-As a security engineer working for Contoso, you recently noticed that a significant number of VMs were deleted from your Azure subscription. You want to analyze this occurrence and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM. You can then investigate the incident to determine the details, and close the incident when you're finished.
+As a Contoso security engineer, you need to analyze the deletions of virtual machines (VMs) from the Contoso Azure subscription, and be alerted when a similar activity occurs in the future. You decide to implement an analytics rule to create an incident when someone deletes an existing VM. You can then investigate the incident to determine the details, and close the incident when you're finished.
 
-In this exercise, you'll create a Microsoft Sentinel analytics rule, delete a VM, and investigate the incident created by the rule.
+In this exercise, you create a Microsoft Sentinel analytics rule to detect when a VM is deleted. You then delete the VM you created at the beginning of this module, and investigate and resolve the incident the rule created.
 
-> [!NOTE]
-> To complete this exercise, you need to complete the setup exercise earlier in the module. If you haven't, please do it now.
+To complete this exercise, make sure you finished the setup exercise at the beginning of the module and the Azure Activity connector now shows a status of **Connected**.
 
-## Task 1: Create an analytics rule from the wizard
+## Create an analytics rule from the wizard
 
-In this task, you'll create an analytics rule that will create an incident when a VM is deleted in the Contoso Azure subscription.
+Create an analytics rule that creates an incident when a VM is deleted in the Contoso Azure subscription.
 
-1. In the Azure portal, search for and select **Microsoft Sentinel**, then select the previously created Sentinel workspace.
-2. In the **Configuration** section, select **Analytics**.
-3. Select **Microsoft Sentinel | Analytics**, select **Create**, then select **Scheduled query rule**.
-4. On the **General** page of the Analytics Rule wizard, provide the following inputs, then select **Next: Set rule logic**.
+1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the Microsoft Sentinel workspace you created.
+1. On your Microsoft Sentinel page, select **Analytics** under **Configuration** in the left menu.
+1. On the **Analytics** page, select **Create** > **Scheduled query rule**.
 
-   - **Name**: **Deleted VMs**
-   - **Description**: Enter a detailed description that will help other security analysts understand what the rule does.
-   - **Tactics**: Select **Initial Access**.
+**General tab**
+
+1. On the **General** tab of the wizard, provide the following information.
+
+   - **Name**: Enter *Deleted VMs*.
+   - **Description**: Enter a description to help others understand what the rule does.
+   - **Tactics and techniques**: Select **Initial Access**.
    - **Severity**: Select **Medium**.
-   - **Status**: Select **Enable**.
+   - **Status**: Select **Enabled**.
 
    :::image type="content" source="../media/6-analytics-rule-wizard-create-new-rule.png" alt-text="Screenshot of the page for creating a new rule in the Analytics Rule wizard." border="true":::
 
-5. On the **Set rule logic** page, in the **Rule query** section, enter the following query:
+1. Select **Next: Set rule logic**.
+
+**Set rule logic tab**
+
+1. On the **Set rule logic** tab, in the **Rule query** section, enter the following query:
 
     ```kusto
    AzureActivity
@@ -33,67 +39,71 @@ In this task, you'll create an analytics rule that will create an incident when 
    | extend IPCustomEntity = CallerIpAddress
     ```
 
-6. In the **Result simulation** section, select **Test with current data**, and then observe the results.
-7. Still on the **Set rule logic** page, scroll down to view the following configuration options:
+1. Scroll down to view or set the following configuration options:
 
-   - In the  **Entity mapping** section, you can define the entities that are returned as part of the query rule that you can use to perform in-depth analysis. Use the default values.
-   - In the **Query Scheduling** section, you can configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
-   - In the **Alert threshold** section, you can specify the number of positive results that can be returned for the rule before an alert is generated. Use the default values.
+   - Expand the  **Entity mapping** section to define the entities that return as part of the query rule, which you can use for in-depth analysis. For this exercise, use the default values.
+   - In the **Query scheduling** section, configure how often the query should run, and how far back in history to observe. Set **Run query every** to **5 minutes**.
+   - In the **Alert threshold** section, you can specify the number of positive results that can return for the rule before an alert is generated. Use the default value of **is greater than 0**.
    - In the **Event grouping** section, accept the default selection **Group all events into a single alert**.
-   - In the **Suppression** section, you can configure **Stop running the query after the alert is generated** to  **On**  or  **Off**. Accept the default values.
-  
-8. Select **Next: Incident setting (Preview)**.
-9. On the **Incident setting (Preview)** page, ensure that **Create incidents from alerts triggered by this analytics rule** is set to **Enabled**.
-10. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents. Ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
-11. Ensure that **Reopen closed matching incidents** is **Disabled**, and then select **Next: Automated response**.
-12. On the **Automated response** page, select **Next: Review**.
-13. On the **Review and Create** page, verify that the validation was successful, and then select **Create**.
+   - In the **Suppression** section, for **Stop running the query after the alert is generated**, leave the default of **Off**.
+   - In the **Results simulation** section, select **Test with current data**, and observe the results.
 
-## Task 2: Delete a VM
+1. Select **Next: Incident settings**.
 
-In this task, you'll delete a VM to test rule detection and incident creation.
+**Incident settings tab**
+
+1. On the **Incident settings** tab, ensure that **Create incidents from alerts triggered by this analytics rule** is set to **Enabled**.
+1. In the **Alert grouping** section, select **Enabled** to group related alerts into incidents. Ensure that **Grouping alerts into a single incident if all the entities match (recommended)** is selected.
+1. Ensure that **Reopen closed matching incidents** is **Disabled**.
+1. Select **Next: Automated response**.
+
+**Review and create**
+
+1. Select **Next: Review**.
+1. On the **Review and create** tab, when validation is successful, select **Create**.
+
+## Delete a VM
+
+To test rule detection and incident creation, delete the VM you created during setup.
 
 1. In the Azure portal, search for and select **Virtual machines**.
-2. On the **Virtual machines** page, select the check box beside the virtual machine named **simple-vm**, and then select **Delete** from the toolbar.
-3. On the **Delete Resources** pane, enter **yes** in the **Confirm delete** field, and then select **Delete**.
+2. On the **Virtual machines** page, select the checkbox next to **simple-vm**, and then select **Delete** from the toolbar.
+3. On the **Delete Resources** pane, enter *delete* in the **Enter "delete" to confirm deletion** field, and then select **Delete**.
+1. Select **Delete** again.
 
-  > [!NOTE]
-  > Be sure to give the operation several minutes to complete before proceeding to the next step.
+Give the operation several minutes to complete before you proceed to the next step.
 
-## Task 3: Investigate an incident
+## Investigate the incident
 
-In this task, you'll investigate the incident created when you deleted the VM in Task 2. It might take up to 20 minutes for the incident to appear in Microsoft Sentinel.
+In this step, you investigate the incident Microsoft Sentinel created when you deleted the VM. It might take up to 30 minutes for the incident to appear in Microsoft Sentinel.
 
-1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
-2. In the **Threat management** section, select **Incidents**.
-3. On the **Incidents** page, select the incident with the title **Deleted VMs**.
-4. On the details pane, observe the details of the incident, including **Owner**, **Status**, and **Severity**. Then:
+1. In the Azure portal, search for and select **Microsoft Sentinel**, and then select your Microsoft Sentinel workspace.
+1. On your Microsoft Sentinel page, select **Incidents** under **Threat management** in the left navigation.
+1. On the **Incidents** page, select the incident with the title **Deleted VMs**.
+1. In the **Deleted VMs** details pane on the right, observe the details of the incident, including **Owner**, **Status**, and **Severity**. Apply the following updates:
+   - Select **Owner** > **Assign to me** > **Apply**.
+   - Select **Status** > **Active** > **Apply**.
+1. Select **View full details**.
+1. In the left pane of the **Incident** page, observe the totals for **Events**, **Alerts**, and **Bookmarks** in the **Evidence** section.
+1. At the bottom of the pane, select **Investigate**.
+1. On the **Investigation** page, select the following items in the investigation graph:
+   - The **Deleted VMs** incident item in the center of the page showing the details of the incident.
+   - The user entity representing your user account, indicating that you deleted the VM.
+1. At the top of the **Investigate** page, select **Status** > **Closed**.
+1. In the **Select classification** drop-down menu, select **Benign Positive - Suspicious but expected**.
+1. In the **Comment** field, enter *Testing incident creation and resolution steps*, and then select **Apply**.
+1. Select the close icons to close the **Investigate** and **Incident** pages.
+1. On the **Incidents** page, observe that **Open incidents** and **Active incidents** now have values of **0**.
 
-   1. Select **Owner** > **Assign to me** > **Apply**.
-   1. Select **Status** > **Active** > **Apply**.
-   1. Select **View full details**.
-5. On the **Incident** page, under the **Evidence** section, observe the totals for **Events**, **Alerts**, and **Bookmarks**.
-6. At the bottom of the pane on the left side, select **Investigate**.
-7. On the **Investigation** page:
-
-   1. Select **Deleted VMs** in the center of the page and observe the details of the incident.
-   1. Select the entity on the graph that represents a user. This is your user account, indicating that you deleted the VM.
-   1. Select **Status** > **Closed**.
-8. In the **Select classification** drop-down menu, select **Benign Positive - suspicious but expected**.
-9. In the **Comment** field, enter **Testing incident creation and resolution steps**, and then select **Apply**.
-10. At the top of the page, select **Microsoft Sentinel** to return to the Microsoft Sentinel home page, and then select **Incidents** on the menu pane.
-11. On the **Incidents** page, observe that **Open incidents** and **Active incidents** now have values of 0.
-
-## Results
-
-After you complete this exercise, you'll have created a Microsoft Sentinel analytics rule, deleted a VM, and investigated the incident created by the rule.
+You've successfully created a Microsoft Sentinel analytics rule, deleted a VM to create an incident, and investigated and closed the incident the rule created.
 
 ## Clean up resources
 
-To avoid incurring costs, delete the Azure resources that you created in this exercise when you're finished with them. To do this, complete the following steps:
+To avoid incurring costs, delete the Azure resources that you created in this module when you're finished with them. To delete the resources, complete the following steps:
 
 1. In the Azure portal, search for **Resource groups**.
-2. Select **azure-sentinel-rg**.
-3. On the header bar, select **Delete resource group**.
-4. In the **TYPE THE RESOURCE GROUP NAME** field, enter `azure-sentinel-rg` and select **Delete**.
+1. On the **Resource groups** page, select **azure-sentinel-rg**.
+1. On the **azure-sentinel-rg** page, select **Delete resource group** from the top menu bar.
+1. On the **Delete a resource group** page, under **Enter resource group name to confirm deletion**, enter *azure-sentinel-rg*.
+1. Select **Delete**, and then select **Delete** again.
 

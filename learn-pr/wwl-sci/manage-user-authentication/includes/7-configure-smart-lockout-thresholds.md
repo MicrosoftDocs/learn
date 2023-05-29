@@ -6,7 +6,7 @@ By default, smart lockout locks the account from sign-in attempts for one minute
 
 Smart lockout tracks the last three bad-password hashes to avoid incrementing the lockout counter for the same password. If someone enters the same bad password multiple times, this behavior won't cause the account to lock out.
 
-Federated deployments that use AD FS 2016 and AD DS 2019 can enable similar benefits using AD FS Extranet Lockout and Extranet Smart Lockout.
+Federated deployments that use AD FS 2016 and AF FS 2019 can enable similar benefits using AD FS Extranet Lockout and Extranet Smart Lockout.
 
 Smart lockout is always on, for all Azure AD customers, with these default settings that offer the right mix of security and usability. Customization of the smart lockout settings, with values specific to your organization, requires Azure AD Premium P1 or higher licenses for your users.
 

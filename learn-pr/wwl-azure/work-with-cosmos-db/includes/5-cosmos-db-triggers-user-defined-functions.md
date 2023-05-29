@@ -1,11 +1,11 @@
 
-Azure Cosmos DB supports pre-triggers and post-triggers. Pre-triggers are executed before modifying a database item and post-triggers are executed after modifying a database item. Triggers are not automatically executed, they must be specified for each database operation where you want them to execute. After you define a trigger, you should register it by using the Azure Cosmos DB SDKs.
+Azure Cosmos DB supports pretriggers and post-triggers. Pretriggers are executed before modifying a database item and post-triggers are executed after modifying a database item. Triggers aren't automatically executed, they must be specified for each database operation where you want them to execute. After you define a trigger, you should register it by using the Azure Cosmos DB SDKs.
 
-For examples of how to register and call a trigger, see [pre-triggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) and [post-triggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#post-triggers).
+For examples of how to register and call a trigger, see [pretriggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) and [post-triggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#post-triggers).
 
-## Pre-triggers
+## Pretriggers
 
-The following example shows how a pre-trigger is used to validate the properties of an Azure Cosmos item that is being created, it adds a timestamp property to a newly added item if it doesn't contain one. 
+The following example shows how a pretrigger is used to validate the properties of an Azure Cosmos item that is being created, it adds a timestamp property to a newly added item if it doesn't contain one. 
 
 ```javascript
 function validateToDoItemTimestamp() {
@@ -26,11 +26,11 @@ function validateToDoItemTimestamp() {
 }
 ```
 
-Pre-triggers cannot have any input parameters. The request object in the trigger is used to manipulate the request message associated with the operation. In the previous example, the pre-trigger is run when creating an Azure Cosmos item, and the request message body contains the item to be created in JSON format.
+Pretriggers can't have any input parameters. The request object in the trigger is used to manipulate the request message associated with the operation. In the previous example, the pretrigger is run when creating an Azure Cosmos item, and the request message body contains the item to be created in JSON format.
 
-When triggers are registered, you can specify the operations that it can run with. This trigger should be created with a `TriggerOperation` value of `TriggerOperation.Create`, which means using the trigger in a replace operation is not permitted.
+When triggers are registered, you can specify the operations that it can run with. This trigger should be created with a `TriggerOperation` value of `TriggerOperation.Create`, which means using the trigger in a replace operation isn't permitted.
 
-For examples of how to register and call a pre-trigger, visit the [pre-triggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) article.
+For examples of how to register and call a pretrigger, visit the [pretriggers](/azure/cosmos-db/sql/how-to-use-stored-procedures-triggers-udfs#pre-triggers) article.
 
 ## Post-triggers
 
@@ -70,11 +70,11 @@ function updateMetadataCallback(err, items, responseOptions) {
 }
 ```
 
-One thing that is important to note is the transactional execution of triggers in Azure Cosmos DB. The post-trigger runs as part of the same transaction for the underlying item itself. An exception during the post-trigger execution will fail the whole transaction. Anything committed will be rolled back and an exception returned.
+One thing that is important to note is the transactional execution of triggers in Azure Cosmos DB. The post-trigger runs as part of the same transaction for the underlying item itself. An exception during the post-trigger execution fails the whole transaction. Anything committed is rolled back and an exception returned.
 
 ## User-defined functions
 
-The following sample creates a UDF to calculate income tax for various income brackets. This user-defined function would then be used inside a query. For the purposes of this example assume there is a container called "Incomes" with properties as follows:
+The following sample creates a UDF to calculate income tax for various income brackets. This user-defined function would then be used inside a query. For the purposes of this example assume there's a container called "Incomes" with properties as follows:
 
 ```json
 {

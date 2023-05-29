@@ -3,22 +3,22 @@ uid: learn.compliance-endpoint-manager
 metadata:
   title: Learn how to analyze and resolve compliance issues using Microsoft Intune
   description: In this module, you'll learn about analyzing and resolving compliance issues using Microsoft Intune. 
-  ms.date: 10/26/2020
+  ms.date: 05/04/2023
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Analyze and resolve compliance issues using Microsoft Intune
-summary: Microsoft Intune provides a number of methods to analyze, troubleshoot, and resolve compliance issues. In this module, you will learn about such things as tenant status, health dashboards, troubleshooting portals, reports, and more.
+summary: Microsoft Intune provides many methods to analyze, troubleshoot, and resolve compliance issues. In this module, you'll learn about such things as tenant status, health dashboards, troubleshooting portals, reports, and more.
 abstract: | 
   In this module, you will:
-  - Learn about Intune tenant status
-  - Review the service health dashboard  
-  - Understand the troubleshooting portal
-  - Review Intune reports
-  - Understand Endpoint analytics
-  - Learn about connector status
-  - Learn about client health with co-management
+  - Learn about Intune tenant status.
+  - Review the service health dashboard. 
+  - Understand the troubleshooting portal.
+  - Review Intune reports.
+  - Understand Endpoint analytics.
+  - Learn about connector status.
+  - Learn about client health with co-management.
 prerequisites: None
 iconUrl: /training/achievements/compliance-endpoint-manager.svg
 ratingEnabled: true

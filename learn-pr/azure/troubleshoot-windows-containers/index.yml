@@ -1,0 +1,49 @@
+﻿### YamlMime:Module
+uid: learn.azure.troubleshoot-windows-containers
+title: Troubleshooting Windows Containers
+metadata: 
+  title: Troubleshooting Windows Containers
+  description: Learn about the Windows containerization platform and how to troubleshoot it. Learn various troubleshooting techniques, using Docker, Azure, or native Windows tools.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+summary: >
+  Learn about the Windows containers platform and how to troubleshoot it. Learn various troubleshooting techniques, using Docker, Azure, Windows tools, Azure Monitor, and more.
+abstract: |
+  After completing this module, you'll be able to:
+  - Explain how troubleshooting Windows containers differs from Virtual Machines.
+  - Troubleshoot Windows containers on Windows hosts.
+  - Troubleshoot Windows containers with Docker.
+  - Troubleshoot Windows containers on Azure.
+  - Leverage open-source tools to troubleshoot Windows containers.
+prerequisites: |
+  - Knowledge of operating system virtualization concepts, such as Hyper-V and Windows containers at intermediate level.
+  - Knowledge of command-line based applications at intermediate level.
+  - Knowledge of Kubernetes and Azure Kubernetes Service at basic level.
+  - Knowledge of monitoring and observability tools, such as Azure Monitor, Prometheus, and Grafana at basic level.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - intermediate
+roles: 
+  - administrator
+  - developer
+  - devops-engineer
+  - support-engineer
+products: 
+  - azure-kubernetes-service
+  - azure-monitor
+  - azure-log-analytics
+units:
+  - learn.azure.troubleshoot-windows-containers.introduction
+  - learn.azure.troubleshoot-windows-containers.understanding-container-platform
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-windows-host
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-docker
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-aks
+  - learn.azure.troubleshoot-windows-containers.troubleshooting-monitor
+  - learn.azure.troubleshoot-windows-containers.knowledge-check
+  - learn.azure.troubleshoot-windows-containers.summary
+badge:
+  uid: learn.azure.troubleshoot-windows-containers.badge

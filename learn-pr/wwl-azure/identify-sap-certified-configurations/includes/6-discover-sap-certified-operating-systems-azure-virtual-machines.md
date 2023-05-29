@@ -1,3 +1,5 @@
+
+
 SAP-certified operating systems supported for SAP products on Azure VMs are listed in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533) and, at the time of authoring, include:
 
 - Microsoft Windows Server 2008 R2, 2012 (R2), 2016, 2019, and 2022

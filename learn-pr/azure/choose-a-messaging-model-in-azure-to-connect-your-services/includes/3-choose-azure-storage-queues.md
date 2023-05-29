@@ -1,4 +1,4 @@
-Suppose you are planning the architecture for your music-sharing application. You want to ensure that music files are uploaded to the web API reliably from the mobile app. You then want to deliver the details about new songs directly to the app when an artist adds new music to their collection. This scenario is a perfect use of a message-based system and Azure offers two solutions to this problem:
+Suppose you're planning the architecture for your music-sharing application. You want to ensure that music files are uploaded to the web API reliably from the mobile app. You then want to deliver the details about new songs directly to the app when an artist adds new music to their collection. This scenario is a perfect use of a message-based system and Azure offers two solutions to this problem:
 
 - Azure Queue Storage
 - Azure Service Bus
@@ -17,7 +17,7 @@ Both of these services are based on the idea of a *queue*, which holds sent mess
 
 Azure Service Bus topics are like queues, but can have multiple subscribers. When a message is sent to a topic instead of a queue, multiple components can be triggered to do their work. Imagine in a music-sharing application, a user is listening to a song. The mobile app might send a message to the "Listened" topic. That topic will have a subscription for "UpdateUserListenHistory", and a different subscription for "UpdateArtistsFanList". Each of those functions is handled by a different component that receives its own copy of the message.
 
-Internally, topics use queues. When you post to a topic, the message is copied and dropped into the queue for each subscription. The queue means that the message copy will stay around to be processed *by each subscription branch* even if the component processing that subscription is too busy to keep up.
+Internally, topics use queues. When you post to a topic, the message is copied and dropped into the queue for each subscription. The queue means that the message copy stays around to be processed *by each subscription branch* even if the component processing that subscription is too busy to keep up.
 
 ## Benefits of queues
 
@@ -31,9 +31,9 @@ Queues are used by distributed applications as a temporary storage location for 
 
 Queuing systems usually guarantee delivery of each message in the queue to a destination component. However, these guarantees can take different approaches:
 
-- **At-Least-Once Delivery**: In this approach, each message is guaranteed delivery to at least one of the components that retrieve messages from the queue. Note, however, that in certain circumstances, it is possible that the same message may be delivered more than once. For example, if there are two instances of a web app retrieving messages from a queue, ordinarily each message goes to only one of those instances. However, if one instance takes a long time to process the message, and a time-out expires, the message may be sent to the other instance as well. Your web app code should be designed with this possibility in mind.
+- **At-Least-Once Delivery**: In this approach, each message is guaranteed delivery to at least one of the components that retrieve messages from the queue. Note, however, that in certain circumstances, it's possible that the same message may be delivered more than once. For example, if there are two instances of a web app retrieving messages from a queue, ordinarily each message goes to only one of those instances. However, if one instance takes a long time to process the message, and a time-out expires, the message may be sent to the other instance as well. Your web app code should be designed with this possibility in mind.
 
-- **At-Most-Once Delivery**: In this approach, each message is not guaranteed for delivery, and there is a small chance that it may not arrive. However, unlike At-Least-Once delivery, there is no chance that the message will be delivered twice. This is sometimes referred to as *automatic duplicate detection*.
+- **At-Most-Once Delivery**: In this approach, each message isn't guaranteed for delivery, and there's a small chance that it may not arrive. However, unlike At-Least-Once delivery, there's no chance that the message will be delivered twice. This is sometimes referred to as *automatic duplicate detection*.
 
 - **First-In-First-Out (FIFO)**: In most messaging systems, messages usually leave the queue in the same order in which they were added, but you should consider whether this delivery is guaranteed. If your distributed application requires that messages are processed in precisely the correct order, you must choose a queue system that includes a FIFO guarantee.
 
@@ -46,11 +46,11 @@ For example, consider an e-commerce application. When the user clicks the **Buy*
 - A message with the total and payment details is sent to a credit card processor.
 - A message with the receipt information is sent to a database to generate an invoice for the customer
 
-In this case, we want to make sure _all_ messages get processed, or none of them are processed. We won't be in business long if the credit card message is not delivered, and all our orders are fulfilled without payment! You can avoid these kinds of problems by grouping the two messages into a transaction. Message transactions succeed or fail as a single unit - just like in the database world. If the credit card details message delivery fails, so will the order details message.
+In this case, we want to make sure _all_ messages get processed, or none of them are processed. We won't be in business long if the credit card message isn't delivered, and all our orders are fulfilled without payment! You can avoid these kinds of problems by grouping the two messages into a transaction. Message transactions succeed or fail as a single unit - just like in the database world. If the credit card details message delivery fails, so will the order details message.
 
 ## Which service should I choose?
 
-Having understood that the communication strategy for this architecture should be a message, you must choose whether to use Azure Storage queues or Azure Service Bus, both of which can be used to store and deliver messages between your components. Each has a slightly different feature set, which means you can choose one or the other, or use both, depending on the problem you are solving.
+Having understood that the communication strategy for this architecture should be a message, you must choose whether to use Azure Storage queues or Azure Service Bus. Both technologies can be used to store and deliver messages between your components. Each has a slightly different feature set, which means you can choose one or the other, or use both, depending on the problem you're solving.
 
 #### Use Service Bus topics if you:
 
@@ -64,7 +64,7 @@ Having understood that the communication strategy for this architecture should b
 - Want to receive messages without polling the queue.
 - Need to provide a role-based access model to the queues.
 - Need to handle messages larger than 64 KB but less than 100 MB. The maximum message size supported by the standard tier is 256 KB and the premium tier is 100 MB. 
-- Queue size will not grow larger than 1 TB. The maximum queue size for the standard tier is 80 GB and for the premium tier, it's 1 TB. 
+- Queue size won't grow larger than 1 TB. The maximum queue size for the standard tier is 80 GB and for the premium tier, it's 1 TB. 
 - Want to publish and consume batches of messages.
 
 Queue storage isn't quite as feature rich, but if you don't need any of those features, it can be a simpler choice. In addition, it's the best solution if your app has any of the following requirements.

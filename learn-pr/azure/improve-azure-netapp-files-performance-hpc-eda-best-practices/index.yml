@@ -8,7 +8,7 @@ metadata:
   author: mengruts  
   ms.author: mengtsai  
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-netapp-files
 title: Improve Azure NetApp Files performance for your EDA and HPC applications by using best practices  
 summary: Learn how to improve Azure NetApp Files performance for your EDA and HPC applications by using best practices. 
 abstract: | 
