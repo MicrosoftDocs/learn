@@ -28,4 +28,4 @@ Conversations in a bot are composed of *activities*, which represent events such
 
 Bots developed with the Bot Framework SDK are designed to run as cloud services in Azure, but while developing your bot, you'll need a way to test it before you deploy it into production.
 
-The Bot Framework Emulator is an application that enables you to run your bot a local or remote web application and connect to it from an interactive web chat interface that you can use to test your bot. Details of activity events are captured and shown in the testing interface, so you can monitor your bots behavior as you submit messages and review the responses.
+The Bot Framework Emulator is an application that enables you to run your bot local or remote web applications and connect to it from an interactive web chat interface that you can use to test your bot. Details of activity events are captured and shown in the testing interface, so you can monitor your bots behavior as you submit messages and review the responses.

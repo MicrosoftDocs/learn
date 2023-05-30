@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.work-delta-lake-tables-fabric.understand-delta-lake
+title: Understand Delta Lake
+metadata:
+  title: Understand Delta Lake
+  description: "Understand Delta Lake"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-understand-delta-lake.md)]

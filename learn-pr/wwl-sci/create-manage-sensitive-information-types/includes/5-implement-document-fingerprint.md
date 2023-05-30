@@ -1,3 +1,4 @@
+
 Information workers in your organization handle many kinds of sensitive information during a typical day. Document Fingerprinting in Microsoft 365 makes it easier for you to protect this information by identifying standard forms that are used throughout your organization. 
 
 Configuring a document fingerprint as a custom sensitive information type allows you to prevent unintended sharing of documents created from official company templates. For example, human resources documents, possibly containing personal information, or patent documents containing intellectual property may be identified by document fingerprinting even if the content doesn't meet other sensitive information type criteria.
