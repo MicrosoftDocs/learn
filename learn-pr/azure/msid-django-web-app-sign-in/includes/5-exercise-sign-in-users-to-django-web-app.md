@@ -1,10 +1,14 @@
-Authentication is the process of proving that you are who you say you are. Users accessing protected resources need to authenticate by providing credentials that identify them such as a username and password. In this exercise, you'll sign-in users to your Django banking app. The users will provide their username and passwords credentials for them to be allowed access to the app.
+Authentication is the process of proving that you are who you say you are. Users who want to access protected resources need to authenticate by providing credentials that identify them, such as a username and password. 
+
+In this exercise, you sign in users to your Django banking app. The users will provide the username and password credentials that will allow them to access the app.
 
 ## Create routes
 
-The config file, *aad.config.json* file, defines some auth endpoints to be used by our Django web app. These endpoints are registered as *msal_urls*. In addition to these endpoints, we define *sign_in_status* and *token_details* endpoints for testing purposes. The *sign_in_status* endpoint will display whether the user is signed-in or not while the *token_details* endpoint will display details of the ID token.
+The *aad.config.json* configuration file defines some authentication endpoints that your Django web app will use. These endpoints are registered as `msal_urls`.
 
-1. In your *views.py* file, create the following views:
+In addition to these endpoints, you define `sign_in_status` and `token_details` endpoints for testing purposes. The `sign_in_status` endpoint displays whether the user is signed in or not. The `token_details` endpoint displays details of the ID token.
+
+1. In the *views.py* file, create the following views:
 
     ```python
         from django.shortcuts import render
@@ -20,7 +24,7 @@ The config file, *aad.config.json* file, defines some auth endpoints to be used 
             return render(request, 'auth/token.html')
     ```
 
-1. Register the endpoints in your *urls.py* file. Your file should contain the following code:
+1. Register the endpoints in the *urls.py* file. Your file should contain the following code:
 
     ```python
         from django.contrib import admin
@@ -45,22 +49,24 @@ The config file, *aad.config.json* file, defines some auth endpoints to be used 
 
 ## Create templates
 
-Django templates help us create html files that get loaded when an endpoint is accessed. In your Django templates folder, we create an auth folder and store our templates files in there. Our folder structure will look as shown:
+Django templates help you create HTML files that are loaded when a user accesses an endpoint. 
 
-```bash
-|---templates
-    |
-    |---auth
-    |   |
-    |   |--401.html
-    |   |--auth-bar-items.html
-    |   |--status.html
-    |   |--token.html
-    |---content.html
-    |---layout.html
-```
+1. In your Django *templates* folder, create an *auth* folder and store your template files in there:
 
-1. Create the *401.html* template. This template is the file that gets loaded when the user tries to access a protected page without authorization.
+    ```bash
+    |---templates
+        |
+        |---auth
+        |   |
+        |   |--401.html
+        |   |--auth-bar-items.html
+        |   |--status.html
+        |   |--token.html
+        |---content.html
+        |---layout.html
+    ```
+
+1. Create the *401.html* template. This template is the file that's loaded when the user tries to access a protected page without authorization.
 
     ```html
         {% extends '../content.html' %}
@@ -75,7 +81,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         {% endblock %}
     ```
 
-1. Create the *status.html* template. This template provides the status of the user. It shows whether the user is signed in or not. It's also loaded when the user navigates to the */auth/sign_in_status* endpoint.
+1. Create the *status.html* template. This template provides the status of the user. It shows whether the user is signed in or not. It's also loaded when the user goes to the `/auth/sign_in_status` endpoint.
 
     ```html
         {% extends '../content.html' %}
@@ -100,7 +106,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         {% endblock %}
     ```
 
-1. Create the *token.html* template. This template is loaded when the user accesses the */auth/token_details* endpoint. It displays the ID token details.
+1. Create the *token.html* template. This template is loaded when the user accesses the `/auth/token_details` endpoint. It displays the ID token details.
 
     ```html
         {% extends '../content.html' %}
@@ -119,7 +125,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         {% endblock %}
     ```
 
-1. Create the *auth-bar-items.html* template. This template displays the sign-in or sign-out button depending on whether the user is signed-in or not.
+1. Create the *auth-bar-items.html* template. This template displays the sign-in or sign-out button, depending on whether the user is signed in or not.
 
     ```html
         <ul class="nav navbar-nav navbar-right">
@@ -138,9 +144,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         </ul>
     ```
 
-1. Finally, we create the two shared template files. These templates are the *layout.html* and *content.html* files.
-
-    *5.a layout.html*
+1. Create the *layout.html* shared template:
 
     ```html
         {% load static %}
@@ -182,7 +186,7 @@ Django templates help us create html files that get loaded when an endpoint is a
         </html>
     ```
 
-    *5.b content.html*
+1. Finally, create the *content.html* shared template:
 
     ```html
         {% extends './layout.html' %}
@@ -226,9 +230,9 @@ Django templates help us create html files that get loaded when an endpoint is a
         {% endblock %}
     ```
 
-## Create a context processor for our templates
+## Create a context processor for your templates
 
-We then create a context processor to pass data to our templates. Context processors make the function available and usable in all templates in our projects. We create a context processor called *context_processors.py*.
+Create a context processor called *context_processors.py* to pass data to your templates. Context processors make the function available and usable in all templates in your projects.
 
 ```python
     from django.urls import reverse
@@ -248,25 +252,7 @@ We then create a context processor to pass data to our templates. Context proces
 
 ```
 
-Ensure you register this context processor in your settings file.
-
-<!-- 5. Validation -------------------------------------------------------------------------------------------
-
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
-
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
-
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+Be sure to register this context processor in your settings file.
 
 ## Check your work
 
@@ -277,16 +263,12 @@ To check whether your app is working well, run the following commands in the roo
     python manage.py runserver localhost:8000
 ```
 
-Navigate to `http://localhost:8000`. You should see a screen that looks like the one shown below:
+Go to `http://localhost:8000`. A page that says you're not signed in should appear.
 
-![Screenshot of web app sign-in page.](../media/05-sign-in-user.png)
+![Screenshot of a web app sign-in page.](../media/05-sign-in-user.png)
 
-Select the sign-in button and enter your username (the test user we created) and password. On successful sign-in, you should see the following screen:
+Select the sign-in button and enter your username (the test user that you created) and password. On successful sign-in, a page that says you're signed in as a test user should appear.
 
-![Screenshot of web app after successful sign-in.](../media/05-succesfully-signed-in.png)
+![Screenshot of a web app after successful sign-in.](../media/05-succesfully-signed-in.png)
 
-To view the ID token details, select the ID token details button
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+To view the ID token details, select the **ID Token Details** button.
