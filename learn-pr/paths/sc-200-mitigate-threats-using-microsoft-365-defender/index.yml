@@ -45,5 +45,6 @@ modules:
 - learn-m365.m365-compliance-insider-manage-insider-risk
 - learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard
 - learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium
+- learn.wwl.investigate-threats-with-content-search-in-microsoft-purview
 trophy:
   uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy
