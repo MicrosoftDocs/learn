@@ -12,11 +12,11 @@ To start using GitHub Codespaces, follow these steps:
 >[!NOTE]
 >If the Jupyter Notebook template isn't displayed in the quick start templates, select **See all** to list all available templates.
 
-The Jupyter Notebook codespace launches and should look similar to the following screenshot:
+The Jupyter Notebook Codespace launches and should look similar to the following screenshot:
 
 :::image type="content" source="../media/codespaces-welcome.png" alt-text="Screenshot that shows a new Jupyter Notebooks codespaces environment.":::
 
-The Jupyter Notebook codespace provides a workspace with Visual Studio Code, Python, and Jupyter Notebooks in your browser.  
+The Jupyter Notebook Codespace provides a workspace with Visual Studio Code, Python, and Jupyter Notebooks in your browser.  
 
 >[!TIP]
 >For personal GitHub accounts, you can use 120 core hours of Codespaces a month for free. For more information on billing, see [About billing for GitHub Codespaces](https://docs.github.com/en/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces). For more information on how to use Codespaces, see [GitHub Codespaces overview](https://docs.github.com/en/codespaces/overview).
@@ -24,13 +24,13 @@ The Jupyter Notebook codespace provides a workspace with Visual Studio Code, Pyt
 > [!NOTE]
 > Instead of using GitHub Codespaces, you can set up a development environment on your own computer by following the instructions in the [Visual Studio Code data science setup docs](https://code.visualstudio.com/docs/python/data-science-tutorial).
 
-After you've created your codespace, follow these steps to get your environment ready:
+After you've created your Codespace, follow these steps to get your environment ready:
 1. Create a folder called `over-the-moon`. 
-2. Open the folder in your codespace.
+2. Open the folder in your Codespace.
 3. Create a folder inside that folder called `sample-return`.
 4. Create a folder inside that folder called `data`.
 5. Create a file called `sample-return.ipynb` in the `sample-return` folder.
-6. Open the `sample-return.ipynb` file in your codespace.
+6. Open the `sample-return.ipynb` file in your Codespace.
 
 Your environment should look like this:
 
@@ -48,7 +48,7 @@ Copy the contents of the `rocksamples.csv` file in GitHub and save to a new CSV 
 1. Name the file `rocksamples.csv`.
 1. Paste the copied data into the file. A message may appear asking you if you want to paste data from another source into your file. Select **Allow** to paste the data into your file.
 
-Your codespaces environment should look like this:
+Your Codespaces environment should look like this:
 
 :::image type="content" source="../media/vscode-data.png" alt-text="Screenshot that shows an example of a Codespaces folder structure with data.":::
 
