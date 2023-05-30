@@ -1,7 +1,7 @@
 
-If you review all of the commands available for Git, you might be overwhelmed. There are over 100 commands, and even trying to keep track of them, much less know how to use them correctly, is daunting.
+Reviewing all of the possible Git commands is overwhelming. There are over 100 commands, and even trying to keep track of them, much less know how to use them correctly, is daunting.
 
-While all of the commands have a use, and true Git experts are familiar with most, if not all of the commands, you can effectively use Git for collaboration and development with a handful of basic commands. Having an understanding of how and when to use these basic commands will get you headed in the right direction.
+While all of the commands have a use, you can effectively use Git for collaboration and development with a handful of basic commands. Having an understanding of how and when to use these basic commands will get you headed in the right direction.
 
 All Git commands start with the word `git`, and then the operator. In most cases, the operator is self-explanatory, but we’ll go through some just in case.
 
@@ -9,14 +9,14 @@ All Git commands start with the word `git`, and then the operator. In most cases
 
 If you’re starting from scratch and want to create a new repository, use git init. With the git init command, you can create a new repository with default values, or you can specify values for the new repository. If you haven’t run git config yet, you may want to specify the name for the default branch.
 
-:::image type="content" source="../media/git-init-command.png" alt-text="Screenshot of the":::
-
-
 `git init --initial-branch main`
 
-You can also set permission when you initially create the repository with the --shared flag. By default, it will be a private repository, but you can change that on the initial setup.
+:::image type="content" source="../media/git-init-command-76c9e6ac.png" alt-text="Screenshot of the git init command for the initial branch.":::
 
-`git init --initial-branch main --shared all` would create a new repository with the default branch being main and it would be shared with anyone that wanted to connect to it.
+
+You can also set permission when you initially create the repository with the --shared flag. By default, it will be a private repository, but you can change that on the initial setup.<br>
+
+`git init --initial-branch main --shared all` would create a new repository with the default branch being main. Anyone that wants to connect with the new repository can.
 
 ## git config
 
@@ -27,12 +27,9 @@ The first command you’ll likely need is git config. git config sets several co
 > [!NOTE]
 > When setting up your configuration, you can set things globally (for all projects on which you collaborate), or for the current repository. Use the --global flag for global settings.
 
-:::image type="content" source="../media/git-config-command.png" alt-text="Screenshot of the":::
+Identity<br>
 
-
-### Identity
-
-When you’re collaborating on a project with others, it’s important to know the identity of people making changes. With git config you can set the name and email address associated with all of your changes.
+When you’re collaborating on a project with others, it’s important to know the identity of people making changes. With git config, you can set the name and email address associated with all of your changes.
 
 `git config user.name “<your name>”`
 
@@ -40,9 +37,12 @@ When you’re collaborating on a project with others, it’s important to know t
 
 ### Default branch
 
-The default branch name is the name that Git will use if you create a new repository with the git init command. The system currently uses master as the default branch, but industry trends are shifting to main. It’s recommended to use main as your default branch.
+The default branch name is the name that Git will use if you create a new repository with the git init command. The system may use **master** as the default branch, but industry trends are shifting to **main**. It’s recommended to use main as your default branch.
 
 `git config --global init.defaultBranch <branch name>`
+
+:::image type="content" source="../media/git-config-command-4501d576.png" alt-text="Screenshot of the git config command setting the default branch to main.":::
+
 
 ## git clone
 
@@ -50,13 +50,11 @@ git clone is the command that you’ll likely start most projects with, unless y
 
 git clone is the command that copies (or clones) a repository to your local computer. By running the git clone command, you create a full and complete copy of the remote or origin repo, including branches, history, and other metadata.
 
-When you clone a repository you can specify the location. If you don’t specify where to place the repo, it will be placed in the current working folder (where you’re issuing the command from).
+When you clone a repository, you can specify the location. If you don’t specify where to place the repo, it will be placed in the current working folder (where you’re issuing the command from).
 
 `git clone <source repo URL> <path or location to place the clone>`
 
-`git clone https://github.com/github/training-kit.git c:/git-repos/`
-
-:::image type="content" source="../media/git-clone-command.png" alt-text="Screenshot of the":::
+:::image type="content" source="../media/git-clone-command-0a512bf1.png" alt-text="Screenshot of the clone command cloning the github training repo.":::
 
 
 ## git branch
@@ -67,14 +65,15 @@ git branch lets you create a new branch or see what branches currently exist for
 
 `git branch --list`
 
+:::image type="content" source="../media/git-branch-command-67457c1e.png" alt-text="Screenshot of the list command":::
+
+
 To create a new branch based on the current branch you’re working within, you use the git branch command along with the name of the new branch, `git branch <new branch name>`
 
 `git branch training` would create a new branch in your repo named testing.
 
-:::image type="content" source="../media/git-branch-command.png" alt-text="Screenshot of the":::
-
-
-Important: Using branches effectively is critical to your success using git. You seldom want to be working on the main or primary branch. Instead, you work on a targeted or focused branch (such as bug fixes or feature development) and then move the changes back to the main branch after the updated code is tested.
+> [!IMPORTANT]
+> Using branches effectively is critical to your success using git. You seldom want to be working on the main or primary branch. Instead, you work on a targeted or focused branch (such as bug fixes or feature development) and then move the changes back to the main branch after the updated code is tested.<br>
 
 ## git checkout
 
@@ -82,15 +81,15 @@ git checkout lets you quickly change between different branches in your git repo
 
 If you’re working on a new feature, then need to go work on bugs for a while, you might have to:
 
- -  Change branches to the bug branch
- -  Update files in the bug branch
- -  Update the bug branch
- -  Change back to your feature branch
-
-:::image type="content" source="../media/git-checkout-command.png" alt-text="Screenshot of the":::
-
+ -  Change branches to the bug branch.
+ -  Update files in the bug branch.
+ -  Update the bug branch.
+ -  Change back to your feature branch.
 
 `git checkout <branch name>`
+
+:::image type="content" source="../media/git-checkout-command-18adfcc0.png" alt-text="Screenshot of the git checkout command for the training branch.":::
+
 
 ## git add
 
@@ -99,12 +98,15 @@ Working on and saving your local files doesn’t automatically update the git re
 git add takes the changes you’ve made locally and adds those files to git’s “staging area”. The staging is just a way that git keeps track of changed files before they’re added into your local repository.
 
 > [!NOTE]
-> If you make additional changes after you run the git add command, you’ll need to run the command again before progressing.
+> If you make more changes after you run the git add command, you’ll need to run the command again before progressing.
 
 `git add`
 
-:::image type="content" source="../media/git-add-command.png" alt-text="Screenshot of the":::
+:::image type="content" source="../media/git-add-command-6aadd79a.png" alt-text="Screenshot of the git add command":::
 
+
+> [!IMPORTANT]
+> git add is the command you use to add OR delete files. The command is simply indicating that there's an update to the repository. Additionally, you can update the status of multiple files with one git add command by using . instead of the file name ex: `git add .`
 
 ## git commit
 
@@ -114,7 +116,7 @@ The commit is what everyone may see at some point in the future. It’s importan
 
 `git commit -m “<your message>”`
 
-:::image type="content" source="../media/git-commit-command.png" alt-text="Screenshot of the":::
+:::image type="content" source="../media/git-commit-command-792a6dfc.png" alt-text="Screenshot of the git commit command.":::
 
 
 ## git push
@@ -125,7 +127,7 @@ When you use the git push command, it pushes your current branch, along with all
 
 `git push`
 
-:::image type="content" source="../media/git-push-command.png" alt-text="Screenshot of the":::
+:::image type="content" source="../media/git-push-command-1ffa886f.png" alt-text="Screenshot of the git push command.":::
 
 
 ## git status
@@ -138,4 +140,4 @@ To make sure you’re in the right branch before pushing, you can use git status
 
 `git status`
 
-:::image type="content" source="../media/git-status-command.png" alt-text="Screenshot of the":::
+:::image type="content" source="../media/git-status-branch-indicator-92b4a2d0.png" alt-text="Screenshot of the git status command.":::
