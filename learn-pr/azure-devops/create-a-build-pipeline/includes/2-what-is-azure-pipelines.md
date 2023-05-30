@@ -56,11 +56,11 @@ And that's it. I know we can do this.
 
 ## Implement and manage build infrastructure
 
-Now that you and the team are familiar with Azure Pipelines, let's discuss a few of the configuration details. Specifically, we'll talk a bit more about build agents, integrating with third-party systems, managing your pipeline configuration, and using concurrent pipelines.
+Now that you and the team are familiar with Azure Pipelines, let's discuss a few of the configuration details. Specifically, we'll talk a bit more about build agents.
 
 ### Build agents
 
-As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software, you need at least one agent. As you add more code and people, you'll eventually need more than one agent. There are two main types of agents.
+As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software, you need at least one agent. As you add more code and people, you'll eventually need more than one agent. There are two main categories of agents.
 
 * **Microsoft-hosted agents** are agents managed by Microsoft, and maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a new agent for each job in the pipeline. In this module, when you choose **Local development environment using a Microsoft-hosted agent**, you are running your pipeline on a Microsoft-hosted agent. To run pipelines on a Microsoft-hosted agent, your organization must have at least one Microsoft-hosted parallel job. [Check your Microsoft-hosted parallel jobs count](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) to ensure that you have at least one Microsoft-hosted parallel job. If your Microsoft-hosted parallel jobs coint is zero (new Azure DevOps organizations typically have zero parallel jobs), you can [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
 
