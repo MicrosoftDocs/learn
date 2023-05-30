@@ -20,7 +20,7 @@ In this module, you'll:
 > [!TIP]
 > You can skip installing the tools below by using GitHub Codespaces as your IDE. In another browser tab, navigate to the [GitHub repository containing the starter app for this module](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core), select the **Code** button, and create a new codespace on the `main` branch. For more information, see [Create a Codespace](https://docs.github.com/github/developing-online-with-codespaces/creating-a-codespace).
 >
-> Alternatively, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for Visual Studio Code. With the extension installed, press **F1** to open the command pallette, then search for and select **Dev Containers: Clone Repository in Container Volume** and provide the URL `https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core`. This will clone the repository and open it in a container with all the required tools installed.
+> Alternatively, if you have a compatible container environment installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for Visual Studio Code. With the extension installed, press **F1** to open the command pallette, then search for and select **Dev Containers: Clone Repository in Container Volume** and provide the URL `https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core`. This will clone the repository and open it in a container with all the required tools installed.
 
 The following tools are required:
 
