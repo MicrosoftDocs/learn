@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
 uid: learn.iot.evaluate-iot-scenario-with-iot-central
-title: Evaluate your IoT Scenario with Azure IoT Central
-summary: Learn how to to quickly evaluate your IoT scenario with Azure IoT Central and assess the opportunities it can create for your business.
+title: Evaluate your IoT Scenario by using Azure IoT Central
+summary: Learn how to to quickly evaluate your IoT scenario by using Azure IoT Central and assess the opportunities it can create for your business.
 metadata:
-  title: Evaluate your IoT Scenario with Azure IoT Central
-  description: Learn how to to quickly evaluate your IoT scenario with Azure IoT Central and assess the opportunities it can create for your business.
+  title: Evaluate your IoT Scenario by using Azure IoT Central
+  description: Learn how to to quickly evaluate your IoT scenario by using Azure IoT Central and assess the opportunities it can create for your business.
   ms.date: 05/25/2023
   author: asergaz
   ms.author: sergaz
@@ -13,7 +13,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure-iot-central
 prerequisites: |
-  - Basic familiarity with IT terms and concepts
+  - Basic familiarity with IoT terms and concepts
 iconUrl: http://via.placeholder.com/120x120
 levels:
 - beginner
@@ -26,7 +26,6 @@ products:
 - azure
 - azure-iot
 - azure-iot-central
-- azure-iot-hub
 - azure-iot-edge
 subjects:
 - iot

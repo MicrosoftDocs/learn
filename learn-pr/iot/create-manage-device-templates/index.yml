@@ -13,7 +13,7 @@ metadata:
 title: Create and manage device templates in Azure IoT Central
 summary: Examine the features and component sections of the device template, a blueprint that defines the characteristics and behaviors of a type of device that connects to your application.
 abstract: |
-  Upon completion of this module, you will be able to:
+  After you complete this module, you'll be able to:
   - Describe the features and components of a device template.
   - Describe the component sections of a device template.
   - Describe how to version a device template.
