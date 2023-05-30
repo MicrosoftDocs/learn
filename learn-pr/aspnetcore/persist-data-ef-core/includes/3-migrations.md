@@ -34,7 +34,7 @@ If you aren't using GitHub Codespaces, obtain the project files and open them in
         - A topping may be used on one or many pizzas.
         - A pizza may have one sauce, but a sauce may be used on many pizzas.
 
-1. In the **Explorer**, right-click on the *ContosoPizza* directory and select **Open in Integrated Termimal**. This opens a terminal pane scoped to the *ContosoPizza* directory.
+1. In the **Explorer**, right-click on the *ContosoPizza* directory and select **Open in Integrated Terminal**. This opens a terminal pane scoped to the *ContosoPizza* directory.
 1. Build the app with the following command:
 
     ```dotnetcli
