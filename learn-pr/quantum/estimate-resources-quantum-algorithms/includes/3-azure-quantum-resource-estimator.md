@@ -8,11 +8,12 @@ The Azure Quantum Resource Estimator takes a [quantum intermediate representatio
 
 ## How does the Azure Quantum Resource Estimator work?
 
-The Azure Quantum Resource Estimator takes a set of three inputs that are called *target parameters*, and which have predefined values, to easily get you started:
+The Azure Quantum Resource Estimator takes some inputs that are called *target parameters*, and which have predefined values, to easily get you started:
 
 - `qubitParams`, a physical qubit model.
 - `qecScheme`, a QEC scheme.
 - `errorBudget`, an error budget.
+- `constraints` - the constraints on the component-level
 
 ### Physical qubit models
 
@@ -77,11 +78,37 @@ For more information, see [QEC in the Azure Quantum Resource Estimator](/azure/q
 
 The total error budget sets the overall allowed error for the algorithm. The allowed error is the number of times the algorithm is allowed to fail. The value of the error budget must be between 0 and 1, and the default value is 0.001. The default value corresponds to 0.1 percent and means that the algorithm is allowed to fail once in 1,000 executions. This parameter is highly specific to the application. For example, if you're running Shor’s algorithm for factoring integers, a large value for the error budget can be tolerated because you can check that the output is indeed the prime factors of the input. On the other hand, a smaller error budget might be needed for an algorithm that solves a problem that has a solution that can't be efficiently verified.
 
+The error budget $\epsilon$ corresponds to the sum of three parts:
+
+$$ \epsilon = \epsilon_{\log} + \epsilon_{\rm dis} + \epsilon_{\rm syn} $$
+
+```JSON
+{
+    "errorBudget": {
+        "logical": <double>, // Required
+        "tStates": <double>, // Optional
+        "rotations": <double> // Optional
+    }
+}
+
 For more information, see [Error budget in the Azure Quantum Resource Estimator](/azure/quantum/overview-resources-estimator#error-budget).
+
+### Constraints
+
+You can use `constraints` parameters to apply constraints on the component-level. By adjusting constraints, you can optimize the estimates toward reducing the number of qubits or toward reducing the runtime. 
+
+```JSON
+{
+    "constraints": {
+        "logicalDepthFactor": <double>, // controll execution time 
+        "maxTFactories": <int> // control number of qubits
+    }
+}
+```
 
 ## What is the result of a resource estimation job?
 
-The Azure Quantum Resource Estimator takes the target parameters `{qubitParams, qecScheme, errorBudget}` and a QIR algorithm. It computes a pre-layout and post-layout estimation of the logical resources that are required to run this type of algorithm in this type of computational scenario.
+The Azure Quantum Resource Estimator takes the target parameters `{qubitParams, qecScheme, errorBudget, constraints}` and your quantum algorithm. It computes a pre-layout and post-layout estimation of the logical resources that are required to run this type of algorithm in this type of computational scenario.
 
 The resource estimator computes the logical and physical estimation of the algorithm. It calculates the QEC code distance, and from this value, the number of physical qubits needed to encode one logical qubit. It calculates the number of logical qubits, T gates, rotation gates, control gates, measurements, T factory physical values, and total runtime, among other values.
 
