@@ -9,7 +9,9 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -48,4 +50,3 @@ quiz:
     - content: "Secrets management."
       isCorrect: false
       explanation: "Incorrect. Azure Key Vault helps with Secrets management, Key management, Certificate management, and store secrets backed by hardware security modules."
-interactive: bash

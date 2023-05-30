@@ -9,7 +9,8 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 40
 content: |
   [!include[](includes/11-integrate-azure-key-vault-with-azure-devops.md)]
-interactive: bash
