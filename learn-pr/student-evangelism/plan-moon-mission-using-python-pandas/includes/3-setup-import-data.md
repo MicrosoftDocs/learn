@@ -44,7 +44,7 @@ Copy the contents of the `rocksamples.csv` file in GitHub and save to a new CSV 
 
 1. Open the [`rocksamples.csv`](https://github.com/drguthals/learnwithdrg/blob/main/OverTheMoon/sample-return/data/rocksamples.csv) file in GitHub.
 1. In the upper-right corner, select the copy icon. The file contents are copied.
-1. In Codespaces, select the `data` folder and then select **New File**. 
+1. In Codespaces, select the `over-the-moon/data` folder and then select **New File**. 
 1. Name the file `rocksamples.csv`.
 1. Paste the copied data into the file. A message may appear asking you if you want to paste data from another source into your file. Select **Allow** to paste the data into your file.
 
