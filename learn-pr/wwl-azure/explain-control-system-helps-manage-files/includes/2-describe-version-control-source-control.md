@@ -17,6 +17,9 @@ If you're collaborating on the list, you’ll need a system that makes sure ever
 
 If you add something to the list, everyone will know that there’s a new item on the list, and they’ll be able to review the list with the new addition. When someone takes something off the list, everyone will see that the list was updated.
 
+:::image type="content" source="../media/merged-lists-5b6b4e37.jpg" alt-text="Illustration of a sample shopping list, showing two lists merging into one list.":::
+
+
 ## Combined version and source control systems
 
 While version and source control systems have a slightly different purpose, both types of systems can be helpful for software development. In fact, there are some systems that provide both version and source control.
