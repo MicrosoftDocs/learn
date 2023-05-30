@@ -7,14 +7,14 @@ To preview a sample of results returned by a search:
         
         OR
      -  Select **eDiscovery**, select **Standard**, select a case on the **eDiscovery (Standard)** page, and then on the **Searches** tab, select a search associated with the case that you want to review.
-2.  On the detail pane that appears for the selected search, the **Summary** tab is displayed by default. Review the summary information that pertains to the search.
-3.  At the bottom of the **Summary** tab, select the **Review sample** button.
+1.  On the detail pane that appears for the selected search, the **Summary** tab is displayed by default. Review the summary information that pertains to the search.
+1.  At the bottom of the **Summary** tab, select the **Review sample** button.
     
     :::image type="content" source="../media/preview-search-results-1-def5b00c.png" alt-text="Screenshot of the detail pane for a search that shows the review sample button highlighted.":::
     
-4.  A page is displayed containing a sample of the search results. In the list of search results, select an item to view its contents in the reading pane.
+1.  A page is displayed containing a sample of the search results. In the list of search results, select an item to view its contents in the reading pane.
     
-    :::image type="content" source="../media/preview-search-results-2-fb06bc8f.png" alt-text="Screenshot showing a sample of the search results, with an item selected and displaying its contents in the detail pane.":::
+    :::image type="content" source="../media/preview-search-results-2-fb06bc8f.png" alt-text="Screenshot showing a sample of the search results, with an item selected and displaying its contents in the detail pane." lightbox="../media/preview-search-results-2-fb06bc8f.png":::
     
     
     > [!NOTE]

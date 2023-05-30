@@ -62,7 +62,7 @@ The first step is to prepare the search results for exporting. When you prepare 
      -  **Only items that have an unrecognized format, are encrypted, or weren't indexed for other reasons.** This option exports only unindexed items.
 1. Under **Export Exchange content as**, choose one of the following options:
     
-    :::image type="content" source="../media/exchange-export-options-88d887af.png" alt-text="Screenshot showing the options for exporting the Exchange content that's described below this image.":::
+    :::image type="content" source="../media/exchange-export-options-88d887af.png" alt-text="Screenshot showing the options for exporting the Exchange content search results.":::
     
     
     
@@ -72,7 +72,7 @@ The first step is to prepare the search results for exporting. When you prepare 
      -  **Individual messages.** Exports search results as individual email messages, using the .msg format. If you select this option, email search results are exported to a folder in the file system. The folder path for individual messages is the same as the one used if you exported the results to a PST file.
 1. Configure the remaining options:
     
-    :::image type="content" source="../media/other-export-options-3d93d52c.png" alt-text="Screenshot showing the remaining export options that are described below this image.":::
+    :::image type="content" source="../media/other-export-options-3d93d52c.png" alt-text="Screenshot showing the remaining export options for the content search results.":::
     
     
     
