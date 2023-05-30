@@ -1,5 +1,4 @@
 
-
 ## Managed disk Encryption Options
 
 There are several types of encryption available for your managed disks, including Azure Disk Encryption (ADE), Server-Side Encryption (SSE), and encryption at the host.

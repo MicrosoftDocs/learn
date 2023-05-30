@@ -1,4 +1,5 @@
 
+
 Azure implements a default routing configuration that facilitates basic connectivity, including ability to reach the internet and communicate with other resources on the same or directly connected virtual networks. You can modify this default configuration in two ways:
 
 - **Creating user-defined routes**, which are route tables with one or more rules altering the default routing behavior and associate them with virtual network subnets. These rules apply to any traffic leaving these subnets and targeting IP address ranges that you referenced as prefixes in the route table. These rules allow you to affect routing behavior between subnets in the same virtual network, between connected virtual networks, between on-premises networks and Azure virtual networks in hybrid scenarios, and on traffic from virtual network subnets to the internet.

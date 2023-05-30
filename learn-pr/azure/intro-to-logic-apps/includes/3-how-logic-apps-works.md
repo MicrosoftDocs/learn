@@ -1,8 +1,8 @@
-Now that we know the basics of Azure Logic Apps, let's see how it works behind the scenes. This information should help you decide whether Azure Logic Apps will work for you without any customization. In cases where you do need create custom components, you'll be able to determine how difficult it will be.
+Now that we know the basics of Azure Logic Apps, let's see how it works behind the scenes. This information should help you decide whether Azure Logic Apps can work for you without any customization. So that in cases where you do need to create custom components, you're able to determine how difficult it could be.
 
 ## What is a connector?
 
-A *connector* is a component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Azure Logic Apps provides hundreds of pre-built connectors that you can use to create your apps.
+A *connector* is a component that provides an interface to an external service. For example, the Twitter connector allows you to send and retrieve tweets, while the Office 365 Outlook connector lets you manage your email, calendar, and contacts. Azure Logic Apps provides hundreds of prebuilt connectors that you can use to create your apps.
 
 A connector uses the external service's REST or SOAP API to do its work. When you use a connector in your logic app workflow, the connector calls the service's underlying API for you. The following illustration shows the Twitter connector and its use of the Twitter REST API.
 
@@ -10,13 +10,13 @@ A connector uses the external service's REST or SOAP API to do its work. When yo
 
 ## Custom connectors
 
-You can write custom connectors to access services that don't have pre-built connectors. The services must have a REST or SOAP API. The requirement that the services provide an API shouldn't be too surprising since connectors are essentially wrappers around that underlying API.
+You can write custom connectors to access services that don't have prebuilt connectors. The services must have a REST or SOAP API. The requirement that the services provide an API shouldn't be too surprising since connectors are essentially wrappers around that underlying API.
 
 To create a custom connector, you first generate an OpenAPI or Postman description of the API. You then use that API description to create a custom connector resource in the Azure portal. You can give your connector a name, an icon, and a description for each operation. The following illustration shows an example of the process. Notice that there's no coding involved.
 
 ![Diagram shows the steps required to create a custom connector to a service that has an existing REST API.](../media/custom-connector.png)
 
-You can use your new connector in your own apps and share it with other people in your organization. You can also submit your connector to Microsoft for certification. Once your connector is certified, it will be included in the set of connectors available to all users.
+You can use your new connector in your own apps and share it with other people in your organization. You can also submit your connector to Microsoft for certification. Once your connector is certified, it's included in the set of connectors available to all users.
 
 ## What are triggers and actions?
 
@@ -83,7 +83,7 @@ The following diagram shows the use for the *condition* statement in the social 
 
 ## What is the workflow designer?
 
-The workflow designer is a graphical tool for creating your workflows. The designer provides canvas surface where you add a trigger and actions to your workflow. For example, the social media monitoring app uses the trigger named **When a new tweet is posted**, a control action known as a _condition_, and actions named **Detect sentiment**, **Insert row**, and **Send an email**. The following screenshot shows the social media monitoring workflow in the designer:
+The workflow designer is a graphical tool for creating your workflows. The designer provides a canvas surface where you add a trigger and actions to your workflow. For example, the social media monitoring app uses the trigger named **When a new tweet is posted**, a control action known as a *condition*, and actions named **Detect sentiment**, **Insert row**, and **Send an email**. The following screenshot shows the social media monitoring workflow in the designer:
 
 :::image type="complex" source="../media/social-media-complete-in-the-designer.png" alt-text="Screenshot shows the social media monitoring app in the workflow designer.":::
 Screenshot shows an example workflow in the designer. Each step is represented as a rectangular shape for the starting trigger and each action. Arrows connect the rectangles to show the execution flow through the app.

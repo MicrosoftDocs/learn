@@ -1,5 +1,6 @@
 
 
+
 Azure Administrators must be familiar with Azure Active Directory and its concepts.
 
 In this module, you learned about Azure AD features and explored implementation scenarios. You reviewed the main components of Azure AD, including tenants, identities, and accounts, and learned how they're related. You compared Active Directory Domain Services to Azure AD, and discovered how different Azure AD editions support features. You explored the benefits of the Azure AD join and self-service password reset (SSPR) features, and considered how to implement them for your organization.
