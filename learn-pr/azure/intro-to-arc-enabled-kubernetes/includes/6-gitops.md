@@ -2,7 +2,7 @@ A primary benefit of Azure Arc is to facilitate implementation of DevOps princip
 
 Azure Arc-enabled Kubernetes supports GitOps, a DevOps practice that streamlines application releases by reducing manual deployment effort. In this unit, you learn about GitOps and how to configure it for Azure Arc-enabled Kubernetes clusters.
 
-## GitOps basics
+## GitOps for Kubernetes
 
 GitOps for Kubernetes uses a Git repository to host configuration files that represent the expected state of a resource. An agent running on the Kubernetes cluster monitors the state of the repository. When there's a change in the repository, the agent pulls the changed files to the cluster and applies the new configuration.
 
@@ -36,7 +36,7 @@ Use the following high-level steps to implement GitOps with an Azure Arc-enabled
 - Read and write permissions on the `Microsoft.Kubernetes/connectedClusters` resource type.
 - The latest version of Azure CLI, with the latest `k8s-configuration` and `k8s-extension` extension packages.
 - Registration of the required service providers on the Azure subscription.
-- Outbound connectivity for the GitOps agents. For details regarding target URLs and ports, refer to your Kubernetes product documentation.
+- Outbound connectivity for the GitOps agents. For details regarding target URLs and ports, refer to your product documentation.
 
 ### Configuration steps
 

@@ -20,15 +20,15 @@ quiz:
   questions:
   - content: "What component implements Azure Monitor container insights?"
     choices:
-    - content: "omsagent"
+    - content: "Azure Monitor Agent"
       isCorrect: true
-      explanation: "Container insights rely on a containerized version of the omsagent Log Analytics agent for Linux that runs in the monitored cluster."
+      explanation: "Container insights rely on a containerized version of the Log Analytics agent for Linux that runs in the monitored cluster."
     - content: "Flux"
       isCorrect: false
       explanation: "Flux configures GitOps for Azure Arc-enabled Kubernetes, and isn't used directly to implement container insights."
-    - content: "Istio"
+    - content: "OMSAgent"
       isCorrect: false
-      explanation: "Istio is an open-source service mesh platform, and isn't used directly to implement container insights."
+      explanation: "The legacy OMSAgent name has changed to Azure Monitor Agent. Queries, rules, and scripts that referred to `omsagent` should now refer to `ama-logs`."
     - content: "CoreDNS"
       isCorrect: false
       explanation: "CoreDNS provides name resolution in Kubernetes clusters, and isn't used directly to implement container insights."

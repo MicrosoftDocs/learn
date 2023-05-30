@@ -71,7 +71,7 @@ The following Azure Arc benefits apply across different types of resources conne
 
 - The ability to organize all organizational resources by using Azure management groups, subscriptions, resource groups, and tags.
 - A single, comprehensive inventory of assets across multiple clouds and on-premises, including support for searching and indexing by using Azure Resource Graph.
-- A consolidated view of Azure and Azure Arc-enabled resources via the Azure portal, Azure CLI, Azure PowerShell, or Representational State Transfer Application Programming Interfaces (REST APIs).
+- A consolidated view of Azure and Azure Arc-enabled resources via the Azure portal, Azure CLI, Azure PowerShell, or REST APIs.
 - Delegation of permissions on the management plane by using Azure role-based access control (Azure RBAC).
 - Support for resource context access to Log Analytics data.
 

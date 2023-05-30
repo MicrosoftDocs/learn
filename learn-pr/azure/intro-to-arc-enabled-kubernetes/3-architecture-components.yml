@@ -32,15 +32,15 @@ quiz:
     - content: "kube-public"
       isCorrect: false
       explanation: "This namespace is used by shared application workloads."
-  - content: "Which of the following capabilities isn't a feature of Azure Arc-enabled Kubernetes?"
+  - content: "Which of the following capabilities isn't a benefit of Azure Arc-enabled Kubernetes?"
     choices:
     - content: "GitOps-based configuration and workload management"
       isCorrect: false
       explanation: "GitOps-based configuration and workload management is a benefit of Azure Arc-enabled Kubernetes."
-    - content: "Use of Azure Policy for Kubernetes"
+    - content: "Azure Policy for Kubernetes"
       isCorrect: false
       explanation: "Azure Policy-based runtime policies are a benefit of Azure Arc-enabled Kubernetes."
-    - content: "Use of Azure Monitor container insights."
+    - content: "Azure Monitor container insights"
       isCorrect: false
       explanation: "You can use Azure Monitor container insights with Azure Arc-enabled Kubernetes."
     - content: "Cluster creation management"

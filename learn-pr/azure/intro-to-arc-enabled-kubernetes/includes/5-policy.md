@@ -8,9 +8,9 @@ Azure Policy is a service that helps manage and evaluate internal and regulatory
 
 ## Azure Policy for Kubernetes
 
-Azure Policy for Kubernetes uses Open Policy Agent (OPA), an open source, general-purpose, platform-agnostic engine that supplies policy evaluation and enforcement. OPA provides a declarative language that lets you create policy definitions along with the corresponding Application Programming Interface (API).
+Azure Policy for Kubernetes uses Open Policy Agent (OPA), an open-source, general-purpose, platform-agnostic policy evaluation and enforcement engine. OPA and its REST APIs provide a declarative language that lets you create and manage policy definitions.
 
-Azure Policy for Kubernetes extends Gatekeeper, which is an open-source, Kubernetes-based implementation of an OPA admission controller. This admission controller acts as follows:
+Azure Policy for Kubernetes is an extension of Gatekeeper, an open-source, Kubernetes-based OPA admission controller. This admission controller acts as follows:
 
 1. Intercepts requests for the Kubernetes cluster control plane to create or update its resources, such as pods or deployments.
 1. Evaluates each request against the policies you define, and logs each request it evaluates.
@@ -49,7 +49,7 @@ To implement Azure Policy for Kubernetes on connected clusters, you need to inst
 - A user account or service principal in the Azure AD tenant that has at least the **Kubernetes Cluster - Azure Arc Onboarding** Azure RBAC built-in role.
 - Helm 3, ideally the latest release.
 - Azure CLI version 2.12.0 or later.
-- Outbound connectivity to Azure. For details regarding target URLs and ports, refer to your Kubernetes product documentation.
+- Outbound connectivity to Azure. For details regarding target URLs and ports, refer to your product documentation.
 
 ### Installation steps
 
