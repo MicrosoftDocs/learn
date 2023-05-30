@@ -1,11 +1,8 @@
-
-
-
-Often, you'll want to perform mathematical operations on numeric data. You'll start with addition in this unit, and expand to other operations in the next unit because there's an important lesson to learn about how the C# compiler parses and interprets your code.
+Often, you want to perform mathematical operations on numeric data. You'll start with addition in this unit, and expand to other operations in the next unit because there's an important lesson to learn about how the C# compiler parses and interprets your code.
 
 ## Add two numeric values
 
-To add two numbers together, you'll use the *addition operator*, which is the plus symbol `+`. Yes, the same plus symbol `+` that you use for string concatenation is also used for addition. The reuse of one symbol for multiple purposes is sometimes called "overloading the operator" and happens frequently in C#.
+To add two numbers together, you use the *addition operator*, which is the plus symbol `+`. Yes, the same plus symbol `+` that you use for string concatenation is also used for addition. The reuse of one symbol for multiple purposes is sometimes called "overloading the operator" and happens frequently in C#.
 
 In this instance, the C# compiler understands what you're attempting to do. The compiler parses your code and sees that the `+` (the operator) is surrounded by two numeric values (the operands). Given the data types of the variables (both are `int`s), it figures out that you intended to add those two values.
 
@@ -74,7 +71,7 @@ Instead of adding the `int` variable `widgetsSold` to the literal `int` `7`, the
 1. Run the code and you'll see the following result in the output console:
 
     ```Output
-    OuBob sold 14 widgets.
+    Bob sold 14 widgets.
     ```
 
 The parentheses symbol `()` becomes another overloaded operator. In this case, the opening and closing parentheses form the *order of operations* operator, just like you might use in a mathematical formula. You indicate that you want the inner-most parentheses resolved first resulting in the addition of `int` values `widgetsSold` and the value `7`. Once that is resolved, then it will implicitly convert the result to a string so that it can be concatenated with the rest of the message.
