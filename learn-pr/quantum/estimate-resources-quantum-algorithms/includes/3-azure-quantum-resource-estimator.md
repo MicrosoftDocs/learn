@@ -100,12 +100,11 @@ You can use `constraints` parameters to apply constraints on the component-level
 ```JSON
 {
     "constraints": {
-        "logicalDepthFactor": <double>, /
-        "maxTFactories": <int>
+        "logicalDepthFactor": <double>, // controll execution time 
+        "maxTFactories": <int> // control number of qubits
     }
 }
 ```
-
 
 ## What is the result of a resource estimation job?
 
