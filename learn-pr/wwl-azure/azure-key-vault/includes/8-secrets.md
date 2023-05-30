@@ -31,7 +31,7 @@ The encryption leaf key of the key hierarchy is unique to each key vault. The en
 In addition to the secret data, the following attributes may be specified:
 
  -  ***exp***: IntDate, optional, **default is forever**. The ***exp* (expiration time)** attribute identifies the expiration time on or after which the secret data **SHOULD NOT** be retrieved, except in particular situations. This field is for informational purposes only as it informs users of key vault service that a particular secret may not be used. Its value MUST be a number containing an IntDate value.
- -  ***nbf***: IntDate, optional, **default is now**. The ***nbf* (not before)** attribute identifies the time before which the secret data **SHOULD NOT** be retrieved, except in particular situations. This field is for informational purposes only. Its value **MUST** be a number containing an IntDate value.
+ -  ***nbf***: IntDate, optional, **default is now**. The ***nbf* (not before)** attribute identifies the time before which the secret data **SHOULD NOT** be retrieved, except in particluar situations. This field is for informational purposes only. Its value **MUST** be a number containing an IntDate value.
  -  ***enabled***: boolean, optional, **default is true**. This attribute specifies whether the secret data can be retrieved. The enabled attribute is used with *nbf* and *exp* when an operation occurs between *nbf* and *exp*, it will only be permitted if enabled is set to true. Operations outside the *nbf* and *exp* window are automatically disallowed, except in particular situations.
 
 There are more read-only attributes that are included in any response that includes secret attributes:
@@ -75,8 +75,4 @@ You can specify more application-specific metadata in the form of tags. Key Vaul
 
 ## Usage Scenarios
 
-| **When to use**                                                                                                                                               | **Examples**                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Securely store, manage lifecycle, and monitor credentials for service-to-service communication like passwords, access keys, service principal client secrets. | Use Azure Key Vault with a Virtual MachineUse Azure Key Vault with an Azure Web Application |
-
-## 
+## :::image type="content" source="../media/azure-key-vault-usage-scenarios-164b7bf4.png" alt-text="Screeshot showing when to use Azure Key Vault usage scenarios."::: 
