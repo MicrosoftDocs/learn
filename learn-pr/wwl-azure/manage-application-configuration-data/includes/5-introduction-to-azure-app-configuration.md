@@ -1,3 +1,4 @@
+
 Azure App Configuration is a service for central management of application settings and feature flags.
 
 Modern programs include distributed components, each that needs its settings.
