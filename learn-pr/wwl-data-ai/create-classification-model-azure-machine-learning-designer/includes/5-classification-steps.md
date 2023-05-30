@@ -51,7 +51,7 @@ Metrics that can be derived from the confusion matrix include:
 - **Recall**: The fraction of positive cases correctly identified: the number of true positives divided by (the number of true positives plus false negatives).
 - **F1 Score**: An overall metric that essentially combines precision and recall.
 
-Of these metric, *accuracy* may be the most intuitive. However, you need to be careful about using accuracy as a measurement of how well a model performs. Using the model that predicts 15% of patients have diabetes, when actually 25% of patients have diabetes, we can calculate the following metrics:
+Of these metrics, *accuracy* may be the most intuitive. However, you need to be careful about using accuracy as a measurement of how well a model performs. Using the model that predicts 15% of patients have diabetes, when actually 25% of patients have diabetes, we can calculate the following metrics:
 
 The *accuracy* of the model is: (10+70)/ 100 = 80%. 
 
