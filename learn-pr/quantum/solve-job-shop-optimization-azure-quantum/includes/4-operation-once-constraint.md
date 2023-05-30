@@ -19,7 +19,7 @@ Recall the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-According to this constraint, $x_{i,t}$ for a specific operation should equal 1 *once and only once* from $t = 0 \rightarrow T - 1$ because it should start once and only once during the allowed time.
+According to this constraint, $x_{i,t}$ for a specific operation should equal 1 *once and only once* from $t = 0 \rightarrow T - 1$. It should start once and only once during the allowed time.
 
 In this case, you need to assign a penalty if the sum of $x_{i,t}$ for each operation across all allowed times doesn't equal exactly 1.
 
@@ -77,7 +77,7 @@ As seen previously, you want to assign a penalty whenever the sum of $x_{i,t}$ v
 
 $$g(x) = \sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2.$$
 
-Let's break that down:
+To break that expression down:
 
 - $\left(\sum_{0\leq t < T} x_{i,t}\right) - 1$
 

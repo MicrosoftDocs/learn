@@ -4,11 +4,11 @@ The precedence constraint is defined as follows:
 
 |                               | Description                                   | Penalty condition |
 |:------------------------------|:----------------------------------------------|:------------------|
-| **Precedence constraint** | Operations in a job must take place in order. | Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
+| **Precedence constraint**     | Operations in a job must take place in order. | Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished. That is, they start out of order.|
 
 ## Implement precedence constraint
 
-Let's take job 1 ($J_{1}$) as an example:
+Take job 1 ($J_{1}$) as an example:
 
 - $J_{1}$: Recalibrate navigation system
   - $O_{2}$: Reboot the system (*2 minutes*)
@@ -63,7 +63,7 @@ You sum that penalty over all the operations of a job ($J_{n}$) for all the jobs
 
 $$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}.$$
 
-Let's break that down:
+To break that expression down:
 
 - $k_{n-1} \leq i < k_{n}$
 
@@ -77,7 +77,7 @@ Let's break that down:
 
   This expression represents the table you saw in the example, where $t$ is allowed to vary from $0 \rightarrow T - 1$. Assign a penalty whenever the constraint is violated. That is, when $s < t + p_{i}$.
 
-  This expression translates to a nested `for` loop: the outer loop has limits $0 \leq t < T$ and the inner loop has limits $0 \leq s < t + p_{i}$
+  This expression translates to a nested `for` loop: the outer loop has limits $0 \leq t < T$ and the inner loop has limits $0 \leq s < t + p_{i}$.
 
 ## Code
 

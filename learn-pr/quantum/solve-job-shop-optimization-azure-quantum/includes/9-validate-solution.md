@@ -37,7 +37,7 @@ As you can see from this chart:
 - Operations are started once and only once
 - Each machine only has one operation running at a time
 
-In this particular instance, you can also tell that the solver scheduled the repair tasks in such a way that the total time to complete them all, the makespan, was minimized. Both machines are continuously in operation, with no time gaps between scheduled operations. This solution is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, remember that these solvers are heuristics. They aren't guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
+In this instance, you can also tell that the solver scheduled the repair tasks in such a way that the total time to complete them all, the makespan, was minimized. Both machines are continuously in operation, with no time gaps between scheduled operations. This solution is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, remember that these solvers are heuristics. They aren't guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
 
 Depending on how well the cost function is defined and the weights are tuned, the solver has varying degrees of success. This fact reinforces the importance of verifying and evaluating returned solutions. Verifying solutions enables tuning of the problem definition and parameters, such as weights/coefficients, in order to improve solution quality.
 

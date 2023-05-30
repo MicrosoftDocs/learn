@@ -149,7 +149,7 @@ def extract_start_times(jobs_ops_map:dict, matrix:List[List[int]]):
 
 ## Results
 
-Finally, you take the config returned by the solver and read out the results.
+Finally, you take the `config` returned by the solver and read out the results.
 
 Add a new call to the notebook and copy the following lines:
 

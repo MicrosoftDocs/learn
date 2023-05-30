@@ -29,7 +29,7 @@ Now that you understand the problem scenario and how to define the cost function
 
 You can find this tutorial in Jupyter notebook format in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true). You can modify and experiment with the code.
 
-## Learn more about Azure Quantum & the Quantum development kit
+## Learn more about Azure Quantum and the Quantum development kit
 
 If this module has piqued your interest, be sure to check out other Microsoft Learn modules that explore Azure Quantum.
 

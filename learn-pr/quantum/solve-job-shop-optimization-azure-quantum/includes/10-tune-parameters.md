@@ -10,7 +10,7 @@ The importance attributed to each term can be adjusted using the weights $\alpha
 
 Intuitively, it should be clear that satisfying the constraints is more important than minimizing the makespan. An invalid solution, even with a very small makespan, would be useless to you. The weights of the cost function can be used to reflect this fact. As a rule of thumb, breaking a single constraint should be around 5-10x more expensive than any valid solution.
 
-Start with an upper bound on the value of the cost function for any valid solution. At worst, a valid solution, meaning that $f(x) = g(x) = h(x) = 0$, contributes at most $m \cdot c_{T-1+max(p_i)}$ to the cost function. This solution is the case when $m$ operations, all taking $max(p_i)$ to complete, are scheduled at the last time step $T-1$. For convenience, let's say that this situation should result in a cost function value of $1$. You can compute what the value of $\delta$ should be to achieve this value. The code example you've been working with uses the following parameters:
+Start with an upper bound on the value of the cost function for any valid solution. At worst, a valid solution, meaning that $f(x) = g(x) = h(x) = 0$, contributes at most $m \cdot c_{T-1+max(p_i)}$ to the cost function. This solution is the case when $m$ operations, all taking $max(p_i)$ to complete, are scheduled at the last time step $T-1$. For convenience, say that this situation should result in a cost function value of $1$. You can compute what the value of $\delta$ should be to achieve this value. The code example you've been working with uses the following parameters:
 
 $$ m = 2,\ T = 10,\ max(p_i) = 2,\ M_{lb} = 4,\ c_t = \frac{m^{t-M_{lb}}}{m-1} $$
 

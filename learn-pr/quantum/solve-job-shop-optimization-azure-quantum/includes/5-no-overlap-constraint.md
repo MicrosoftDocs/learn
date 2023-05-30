@@ -65,7 +65,7 @@ As you saw from the tables in the example, for the configuration to be valid, th
 
 $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \textit{m}$$
 
-Let's break that down:
+To break that expression down:
 
 - $\sum_{i,t,k,s}$
 
