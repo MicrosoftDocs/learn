@@ -16,9 +16,11 @@ The job script submitted through the scheduler will add the job to a job queue. 
 
 There are several basic strategies that schedulers can use to determine which job to run next:
 
-- First Come, First Serve Jobs are run in the exact same order in which they first enter the queue. The advantage is that every job will definitely be run, however, only small set of jobs might wait for an inadequately long time compared to their actual execution time.
-- Shortest Job First Based on the execution, time declared in the job script, the scheduler estimates the job execution time. The jobs are ranked in the ascending order of the execution time. While short jobs will start after a short waiting time, long running jobs (or at least jobs declared as such) might never actually start.
-- Backfilling: Scheduler maintains the concept of First Come, First Serve without preventing long running jobs to execute. The scheduler runs the job only when the first job in the queue can be executed. If otherwise, the scheduler goes through the rest of the queue to check whether another job can be executed without extending the waiting time of the first job in queue. If it finds such a job, the scheduler runs that job. Small jobs will usually encounter short queue times.
+- First Come, First Serve. Jobs are run in the exact same order in which they first enter the queue. The advantage is that every job will definitely be run, however, only small set of jobs might wait for an inadequately long time compared to their actual execution time.
+
+- Shortest Job First. Based on the execution, time declared in the job script, the scheduler estimates the job execution time. The jobs are ranked in the ascending order of the execution time. While short jobs will start after a short waiting time, long running jobs (or at least jobs declared as such) might never actually start.
+
+- Backfilling. Scheduler maintains the concept of First Come, First Serve without preventing long running jobs to execute. The scheduler runs the job only when the first job in the queue can be executed. If otherwise, the scheduler goes through the rest of the queue to check whether another job can be executed without extending the waiting time of the first job in queue. If it finds such a job, the scheduler runs that job. Small jobs will usually encounter short queue times.
 
 ## Resource manager
 

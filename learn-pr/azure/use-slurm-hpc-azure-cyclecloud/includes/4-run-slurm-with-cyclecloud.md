@@ -12,31 +12,31 @@ You can deploy a HPC cluster using Azure CycleCloud by performing the following 
 1. On the About tab of the New Slurm Cluster page, in the Cluster Name text box, provide a name for the Slurm cluster.
 1. On the Required Settings tab of the New Slurm Cluster page, in the Cluster Name text box, configure the following settings:
 
-   - **Region**. This defines which datacenter will host cluster nodes.
-   - **Scheduler VM Type**. Allows you to specify the VM SKU of the virtual machine that will host the job scheduler.
-   - **HPC VM Type**. Allows you to specify the VM SKU of the virtual machine that will host HPC partition workloads.
-   - **HTC VM Type**. Allows you to specify the VM SKU of the virtual machine that will host HTC partition workloads.
-   - **Autoscale**. Allows you to enable or disable the starting and stopping of VM instances that host partition nodes when those nodes are required or no longer required.
-   - **Max HPC Cores**. The maximum number of CPU cores that can be allocated to HPC partitions when autoscaling.
-   - **Max HTC Cores**. The maximum number of CPU cores that can be allocated to HTC partitions when autoscaling.
-   - **Max VMs per Scaleset**. Maximum number of VMs that can be used to host partition workloads.
-   - **Use Spot Instances**. Whether you want to allow Azure spot instances to be used. Whilst spot instances are substantially cheaper to run, they can be removed without warning which can impact job execution.
-   - **Subnet ID**. The Azure virtual network subnet that will host cluster node VMs.
+   - Region. This defines which datacenter will host cluster nodes.
+   - Scheduler VM Type. Allows you to specify the VM SKU of the virtual machine that will host the job scheduler.
+   - HPC VM Type. Allows you to specify the VM SKU of the virtual machine that will host HPC partition workloads.
+   - HTC VM Type. Allows you to specify the VM SKU of the virtual machine that will host HTC partition workloads.
+   - Autoscale. Allows you to enable or disable the starting and stopping of VM instances that host partition nodes when those nodes are required or no longer required.
+   - Max HPC Cores. The maximum number of CPU cores that can be allocated to HPC partitions when autoscaling.
+   - Max HTC Cores. The maximum number of CPU cores that can be allocated to HTC partitions when autoscaling.
+   - Max VMs per Scaleset. Maximum number of VMs that can be used to host partition workloads.
+   - Use Spot Instances. Whether you want to allow Azure spot instances to be used. Whilst spot instances are substantially cheaper to run, they can be removed without warning which can impact job execution.
+   - Subnet ID. The Azure virtual network subnet that will host cluster node VMs.
 
    :::image type="content" border="false" source="../media/4-new-cluster-settings.png" alt-text="A screenshot depicting the Required Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster-settings.png":::
 
 1. On the Network Attached Storage page configure whether you'll use the Builtin or External NFS options for the network attached storage mount. When you select Builtin the scheduler node will be configured as a NFS server that functions as the mountpoint for other nodes. If you specify External NFS you can then provide the details of a network attached storage device such as Azure NetApp Files, HPC Cache, or a specially configured VM running an NFS server.
 1. On the Advanced Settings page you can specify the following settings:
 
-   - **Slurm Version**. The version of Slurm that will be used with the cluster.
-   - **Job Accounting**. Whether you want to enable job accounting and the settings you'll chose to store accounting data.
-   - **Shutdown Policy**. You can choose between terminating the instance or deallocating the instance.
-   - **Credentials**. The credentials used to connect to the associated Azure subscription.
-   - **Scheduler OS**. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can choose a custom image.
-   - **HPC OS**. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can choose a custom image.
-   - **Scheduler Cluster Init**. Custom instructions to apply to the scheduler VM.
-   - **HTC Cluster Init**. Custom instructions to apply to HTC nodes.
-   - **Advanced Networking**. Allows you to enable Return Proxy, whether the head node can be accessed from internet addresses and whether execute nodes can be accessed from the internet.
+   - Slurm Version. The version of Slurm that will be used with the cluster.
+   - Job Accounting. Whether you want to enable job accounting and the settings you'll chose to store accounting data.
+   - Shutdown Policy. You can choose between terminating the instance or deallocating the instance.
+   - Credentials. The credentials used to connect to the associated Azure subscription.
+   - Scheduler OS. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can choose a custom image.
+   - HPC OS. Which Linux operating system is used to host the scheduler. The default is CentOS 8 but you can choose a custom image.
+   - Scheduler Cluster Init. Custom instructions to apply to the scheduler VM.
+   - HTC Cluster Init. Custom instructions to apply to HTC nodes.
+   - Advanced Networking. Allows you to enable Return Proxy, whether the head node can be accessed from internet addresses and whether execute nodes can be accessed from the internet.
 
     :::image type="content" border="false" source="../media/4-new-cluster-advanced-settings.png" alt-text="A screenshot depicting the Advanced Settings tab of the New Slurm Cluster page of the Azure CycleCloud web application." lightbox="../media/4-new-cluster-advanced-settings.png":::
 
