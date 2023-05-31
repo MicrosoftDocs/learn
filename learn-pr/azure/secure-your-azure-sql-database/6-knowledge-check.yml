@@ -8,7 +8,7 @@ metadata:
   ms.author: vanto
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Knowledge check
 durationInMinutes: 5
 content: |

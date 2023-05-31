@@ -7,7 +7,7 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Protect your data
 durationInMinutes: 10
 content: |

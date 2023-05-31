@@ -8,7 +8,7 @@ metadata:
   ms.author: vanto
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 interactive: bash
 azureSandbox: true
 title: Exercise - Control who can access your database
