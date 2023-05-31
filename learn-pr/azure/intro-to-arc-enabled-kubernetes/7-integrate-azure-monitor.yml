@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
 metadata:
-  title: Integrate an Azure Arc-enabled Kubernetes cluster with Azure Monitor
-  description: In this unit, you'll learn about Azure Monitor Container Insights and how to implement it.
+  title: Use Azure Monitor container insights for Azure Arc-enabled Kubernetes
+  description: Learn about Azure Monitor and Azure Monitor container insights, and how to implement container insights for Azure Arc-enabled Kubernetes clusters.
   ms.date: 01/05/2023
   author: JnHs
   ms.author: jenhayes
@@ -11,38 +11,38 @@ metadata:
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
-title: Integrate an Azure Arc-enabled Kubernetes cluster with Azure Monitor
+title: Use Azure Monitor container insights for Azure Arc-enabled Kubernetes
 durationInMinutes: 5
 content: |
   [!include[](includes/7-integrate-azure-monitor.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What component is used to implement Azure Monitor Container Insights?"
+  - content: "What component implements Azure Monitor container insights?"
     choices:
-    - content: "omsagent"
+    - content: "Azure Monitor Agent"
       isCorrect: true
-      explanation: "Azure Monitor Container Insights relies on a containerized version of the Log Analytics agent for Linux named omsagent, running in the monitored cluster."
+      explanation: "Container insights rely on a containerized version of the Log Analytics agent for Linux that runs in the monitored cluster."
     - content: "Flux"
       isCorrect: false
-      explanation: "Flux is used to configure GitOps for Azure Arc-enabled Kubernetes. It isn't used directly to implement Azure Monitor Container Insights."
-    - content: "Istio"
+      explanation: "Flux configures GitOps for Azure Arc-enabled Kubernetes, and isn't used directly to implement container insights."
+    - content: "OMSAgent"
       isCorrect: false
-      explanation: "Istio is an open source service mesh platform. It isn't used directly to implement Azure Monitor Container Insights."
+      explanation: "The legacy OMSAgent name has changed to Azure Monitor Agent. Queries, rules, and scripts that referred to `omsagent` should now refer to `ama-logs`."
     - content: "CoreDNS"
       isCorrect: false
-      explanation: "CoreDNS provides name resolution in Kubernetes clusters. It isn't used directly to implement Azure Monitor Container Insights."
-  - content: "What Azure resource do you have to provision before you can implement Azure Monitor Container Insights?"
+      explanation: "CoreDNS provides name resolution in Kubernetes clusters, and isn't used directly to implement container insights."
+  - content: "What Azure resource do you have to provision before you can implement Azure Monitor container insights?"
     choices:
     - content: "Azure Automation account"
       isCorrect: false
-      explanation: "Azure Monitor Container Insights doesn't require an Automation account."
+      explanation: "Container insights don't require an Automation account."
     - content: "Azure Key Vault"
       isCorrect: false
-      explanation: "Azure Monitor Container Insights doesn't require a Key Vault."
-    - content: "Azure storage account"
+      explanation: "Container insights don't require Key Vault."
+    - content: "Azure Storage account"
       isCorrect: false
-      explanation: "Azure Monitor Container Insights doesn't require a storage account."
+      explanation: "Container insights don't require a storage account."
     - content: "Log Analytics workspace"
       isCorrect: true
-      explanation: "An Azure Log Analytics workspace is a prerequisite, since this workspace is where Kubernetes cluster telemetry will reside."
+      explanation: "A Log Analytics workspace is a prerequisite, because Kubernetes cluster telemetry resides in this workspace."
