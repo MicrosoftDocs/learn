@@ -17,7 +17,7 @@ abstract: |
   - Identify the function of basic git commands.
   - Explain the function of intermediate git commands.
 prerequisites: |
-  A personal computer running Windows, Mac OS, or Linux.
+  A personal computer running Windows, macOS, or Linux.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

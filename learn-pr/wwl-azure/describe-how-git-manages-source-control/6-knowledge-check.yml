@@ -19,21 +19,21 @@ quiz:
     choices:
     - content: "git merge"
       isCorrect: true
-      explanation: "That’s correct. git merge incorporates changes from one branch into another branch."
+      explanation: "Correct. git merge incorporates changes from one branch into another branch."
     - content: "git add"
       isCorrect: false
-      explanation: "That’s incorrect. git add stages a change that you’ve made."
+      explanation: "Incorrect. git add stages a change that you’ve made."
     - content: "git clone"
       isCorrect: false
-      explanation: "That’s incorrect. git clone clones, or copies, a repository."
+      explanation: "Incorrect. git clone clones, or copies, a repository."
   - content: "How do you change between branches in a git repository?"
     choices:
     - content: "git branch"
       isCorrect: false
-      explanation: "That’s incorrect. git branch can be used to list branches for a current repository or create a new branch."
+      explanation: "Incorrect. git branch can be used to list branches for a current repository or create a new branch."
     - content: "git checkout"
       isCorrect: true
-      explanation: "That’s correct. git checkout changes which git repository branch you’re working within."
+      explanation: "Correct. git checkout changes which git repository branch you’re working within."
     - content: "git clone"
       isCorrect: false
-      explanation: "That’s incorrect. git clone clones, or copies, a remote repository."
+      explanation: "Incorrect. git clone clones, or copies, a remote repository."

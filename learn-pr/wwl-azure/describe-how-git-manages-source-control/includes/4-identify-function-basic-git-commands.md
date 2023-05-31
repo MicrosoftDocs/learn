@@ -14,7 +14,7 @@ If you’re starting from scratch and want to create a new repository, use git i
 :::image type="content" source="../media/git-init-command-76c9e6ac.png" alt-text="Screenshot of the git init command for the initial branch.":::
 
 
-You can also set permission when you initially create the repository with the --shared flag. By default, it will be a private repository, but you can change that on the initial setup.<br>
+You can also set permission when you initially create the repository with the --shared flag. By default, it will be a private repository, but you can change that on the initial setup.
 
 `git init --initial-branch main --shared all` would create a new repository with the default branch being main. Anyone that wants to connect with the new repository can.
 
@@ -27,7 +27,7 @@ The first command you’ll likely need is git config. git config sets several co
 > [!NOTE]
 > When setting up your configuration, you can set things globally (for all projects on which you collaborate), or for the current repository. Use the --global flag for global settings.
 
-Identity<br>
+### Identity
 
 When you’re collaborating on a project with others, it’s important to know the identity of people making changes. With git config, you can set the name and email address associated with all of your changes.
 
@@ -54,7 +54,7 @@ When you clone a repository, you can specify the location. If you don’t specif
 
 `git clone <source repo URL> <path or location to place the clone>`
 
-:::image type="content" source="../media/git-clone-command-0a512bf1.png" alt-text="Screenshot of the clone command cloning the github training repo.":::
+:::image type="content" source="../media/git-clone-command-0a512bf1.png" alt-text="Screenshot of the clone command cloning the GitHub training repo.":::
 
 
 ## git branch

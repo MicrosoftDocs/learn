@@ -13,7 +13,7 @@ Some of the key Git concepts you should know about are:
 
 The first concept is the repository. A repository (repo) is the top level project or folder that your code or files are organized within. It’s the same as folder structures on your computer. Just like a folder structure on your compute, you can set it up however you want, in whatever order makes the most sense for your project. For example, if you want all of the documentation in one folder, all of the code in a second folder, and media or images in a third folder, you can do that.
 
-## Distributed system<br>
+## Distributed system
 
 In some version or source control systems, all of the files reside in a central or core location and you only “check out” the file you’re working on. When you’re done working on the file, you check it back in. If you want to see the version history or any of the notes that have been made during updates, you need to check the central location for that information.
 

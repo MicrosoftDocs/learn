@@ -21,5 +21,4 @@ When you log into a version control site, the developers for that site determine
 
 By getting familiar with the Git commands, you can perform tasks in any of the Git-based version control systems quickly and efficiently, without worrying about how the developers built the user interface. Additionally, many integrated development environments (IDEs) also support interacting with a Git-based repository from the command line from within the IDE.
 
-:::image type="content" source="../media/git-bash-interface-20398a2c.png" alt-text="Screenshot of the git bash interface with the git help command run.":::
-<br>
+:::image type="content" source="../media/git-bash-interface-20398a2c.png" alt-text="Screenshot of the git bash interface with the git help command run":::
