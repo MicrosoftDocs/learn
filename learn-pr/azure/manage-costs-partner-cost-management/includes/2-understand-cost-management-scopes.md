@@ -6,7 +6,7 @@ Two hierarchies are applicable to Microsoft Cost Management. Each node in either
 
 The Azure *billing hierarchy* is in your partner tenant. Cost Management uses the billing hierarchy specifically to manage your organization's billing data and invoices. Cost Management uses the billing hierarchy's permission roles to manage payments, costs, and accounts. The permission roles are *global admin* and *admin agent* for a direct partner or an indirect partner, as set in Partner Center.
 
-Contoso's subscriptions and resources themselves are in the Azure *resource entity* hierarchy. This hierarchy is located in the customer's (Contoso's) tenant. Resource management and the associated permissions are governed by Azure role-based access control (RBAC). 
+Contoso's subscriptions and resources themselves are in the Azure *resource entity* hierarchy. This hierarchy is located in the customer's (Contoso's) tenant. Resource management and the associated permissions are governed by Azure role-based access control (RBAC).
 
 We'll focus on only Fabrikam's billing hierarchy in this module. To learn more about the scopes available to Contoso in its tenant, see [Azure RBAC scopes](/azure/cost-management-billing/costs/understand-work-scopes?WT.mc_id=costmanagementcontent_docsacmhorizontal_-inproduct-learn#azure-rbac-scopes).
 
@@ -18,7 +18,7 @@ The following diagram shows the full hierarchical structure of Cost Management s
 
 The billing account represents the root node of Fabrikam's presence within Azure. All costs across your customers roll up into this scope. Note the following nuances about costs viewed at this scope:
 
-- **Consumption-based costs**: Invoice costs are available in Cost Management only for customers on the Azure plan under the Microsoft Customer Agreement. An example of a consumption-based product is a virtual machine that has been created for Contoso and is billed hourly.
+- **Consumption-based costs**: Invoice costs are available in Cost Management only for customers on the Azure plan under the Microsoft Customer Agreement. An example of a consumption-based product is a virtual machine that's been created for Contoso and is billed hourly.
 - **Purchase-based costs**: Invoice costs are available in Cost Management for customers on the Azure plan for both the Microsoft Customer Agreement and the classic CSP agreement.
 - **Currency**: Regardless of different customer-billed currencies, budgets set at the billing account scope are evaluated in US dollars across your customers, subscriptions, resources, and resource groups.
 
@@ -45,6 +45,6 @@ Only the users with *global admin* and *admin agent* roles can manage and view c
 
 ## Export of cost data
 
-Partners with access to billing scopes in a partner tenant can export their cost and usage data to an Azure storage blob. The blob must be on a subscription in the partner tenant that's not a shared service subscription or a customer's subscription. 
+Partners with access to billing scopes in a partner tenant can export their cost and usage data to an Azure storage blob. The blob must be on a subscription in the partner tenant that's not a shared service subscription or a customer's subscription.
 
 To enable export of cost data, we recommended that you set up an independent pay-as-you-go subscription in the partner tenant to host the exported cost data. Users with RBAC access to the subscription can also export the cost data to an Azure storage blob hosted in any subscription in the customer tenant. For more information, see [Create an export in a partner tenant or customer tenant](/azure/cost-management-billing/costs/get-started-partners#create-an-export-in-a-partner-tenant-or-customer-tenant).
