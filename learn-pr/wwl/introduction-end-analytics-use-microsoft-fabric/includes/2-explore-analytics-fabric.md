@@ -8,15 +8,15 @@ In addition to a simple, shared user experience, Fabric is a unified *software-a
 
 ## Explore OneLake
 
-*OneLake* is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric's OneLake architecture facilitates collaboration between data team members and saves time by eliminating the need to move and copy data between different systems and teams. OneCopy is a key component of OneLake that enables data to be copied between different regions and clouds without moving or duplicating data.
+*OneLake* is Fabric's lake-centric architecture that provides a single, integrated environment for data professionals and the business to collaborate on data projects. Fabric's OneLake architecture facilitates collaboration between data team members and saves time by eliminating the need to move and copy data between different systems and teams. OneCopy is a key component of OneLake that allows you to read data from a single copy, without moving or duplicating data.
 
 Think of it like OneDrive for data; OneLake combines storage locations across different regions and clouds into a single logical lake, without moving or duplicating data. Similar to how Office applications are prewired to use your organizational OneDrive, all the compute workloads in Fabric are preconfigured to work with OneLake. Fabric's data warehousing, data engineering (Lakehouses and Notebooks), data integration (pipelines and dataflows), real-time analytics, and Power BI all use OneLake as their native store without needing any extra configuration.
 
 ![Screenshot of the Fabric architecture built on OneLake.](../media/fabric-introduction.png)
 
-OneLake is built on top of *Azure Data Lake Storage* (ADLS) and supports data in any file format, including Delta Parquet, CSV, JSON, and more.
+OneLake is built on top of *Azure Data Lake Storage* (ADLS) and data can be stored in any format, including Delta, Parquet, CSV, JSON, and more.
 
-What this means is that all of the compute engines in Fabric automatically store their data in OneLake in the open-source Delta Lake format. Data that is stored in OneLake is then directly accessible by all of the compute engines without needing to be moved or copied.
+What this means is that all of the compute engines in Fabric automatically store their data in OneLake. Data that is stored in OneLake is then directly accessible by all of the compute engines without needing to be moved or copied. For tabular data, the analytical engines in Fabric will write data in delta-parquet format and all engines interact with the format seamlessly.
 
 One important feature of OneLake is the ability to create shortcuts, which are embedded references within OneLake that point to other files or storage locations. Shortcuts allow you to quickly source your existing cloud data without having to copy it, and enables Fabric experiences to derive data from the same source and always be in sync.
 
