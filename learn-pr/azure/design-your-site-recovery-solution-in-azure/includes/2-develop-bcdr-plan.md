@@ -20,7 +20,7 @@ RPO refers to how much data loss is acceptable for your application if there's a
 
 RTO is the maximum duration of acceptable downtime for your application. For example, you might find it unacceptable for your application to be down for longer than four hours because of the potential loss to the business after this time. Critical applications require a shorter RTO.
 
-:::image type="content" source="../media/2-rto-rpo.png" alt-text="Screenshot that shows RPO as the loss of data and RTO as the time to recover from disaster.":::
+:::image type="content" source="../media/2-rto-rpo.png" alt-text="Diagram that shows RPO as the loss of data and RTO as the time to recover from disaster.":::
 
 Contractual or regulatory requirements can often influence the RPO and RTO for your application. The RPO and RTO might also vary per application. Less critical applications might have larger values for RPO and RTO, whereas business-critical applications might have a smaller tolerance for downtime and data loss. You calculate RTO and RPO based on your organization's understanding of the risk and the cost incurred from the loss of data and downtime.
 
@@ -34,7 +34,7 @@ Identify and inventory the services that you depend on, so you can incorporate t
 
 Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Site Recovery has plans that help automate your disaster recovery. It enables you to define how machines are failed over and the order in which they're restarted after being successfully failed over. In this way, Site Recovery helps to automate tasks and further reduce your RTO. You can also use Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
 
-:::image type="content" source="../media/2-asr.png" alt-text="Screenshot that shows the role of Azure Site Recovery in replicating the workloads on three virtual machines in the East US region to the West US region.":::
+:::image type="content" source="../media/2-asr.png" alt-text="Diagram that shows the role of Azure Site Recovery in replicating the workloads on three virtual machines in the East US region to the West US region.":::
 
 ## Data backups
 
@@ -62,7 +62,7 @@ These region pairs are also used for replication. Storage services and many PaaS
 
 An availability set is a logical grouping capability in Azure. It ensures that the VM resources you place within it are isolated from each other when they're deployed within an Azure datacenter. Availability sets consist of *update domains* and *fault domains*.
 
-:::image type="content" source="../media/2-availability-sets.png" alt-text="Screenshot that shows update domains and fault domains in an availability set.":::
+:::image type="content" source="../media/2-availability-sets.png" alt-text="Diagram that shows update domains and fault domains in an availability set.":::
 
 Update domains help ensure that a subset of your application's servers keep running when the VM hosts in an Azure datacenter require downtime for maintenance. Most updates to VM hosts can be performed without affecting the VMs running on them, but there are occasions when this type of update isn't possible.
 
@@ -78,4 +78,4 @@ Availability zones are independent physical datacenter locations within a region
 
 *Zonal services* are services (like virtual machines) that you can deploy to specific zones within a region. Other services are *zone-redundant services* and replicate across the availability zones in the specific Azure region. Both types help ensure that within an Azure region, there are no single points of failure.
 
-:::image type="content" source="../media/2-availability-zones.png" alt-text="Screenshot that shows three availability zones with a failure in one but no impact to the other two.":::
+:::image type="content" source="../media/2-availability-zones.png" alt-text="Diagram that shows three availability zones with a failure in one but no impact to the other two.":::
