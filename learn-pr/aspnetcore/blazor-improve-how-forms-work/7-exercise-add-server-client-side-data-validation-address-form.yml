@@ -9,7 +9,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-add-server-client-side-data-validation-address-form.md)]

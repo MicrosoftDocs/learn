@@ -8,7 +8,7 @@ metadata:
   author: csharpfritz
   ms.author: jefritz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   zone_pivot_groups: vsandcode
 durationInMinutes: 8
 content: |
