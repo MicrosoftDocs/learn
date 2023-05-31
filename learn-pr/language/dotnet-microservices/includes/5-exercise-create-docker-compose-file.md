@@ -42,18 +42,18 @@ In this exercise, you'll create a Docker Compose YAML file, then use the Docker 
 1. To build the container images, open a command prompt, navigate to the directory with the **docker-compose.yml** file, and run the following command:
 
     ```bash
-    docker-compose build
+    docker compose build
     ```
 
 1. Then, to start both the website and the web API, run this command:
 
     ```bash
-    docker-compose up
+    docker compose up
     ```
 
-1. After a bit of output, the website and web API will be running. You should see something similar to the following output:
+1. After a bit of output, the website and web API will be running. You should get something similar to the following output:
 
-    ```bash
+    ```output
     Attaching to docker-aspnet-pizza_backend_1, docker-aspnet-pizza_frontend_1
     ```
 
