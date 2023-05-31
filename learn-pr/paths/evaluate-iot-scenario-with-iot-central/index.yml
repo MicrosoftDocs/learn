@@ -14,7 +14,7 @@ metadata:
   ms.prod: azure-iot-central
 prerequisites: |
   - Basic familiarity with IoT terms and concepts
-iconUrl: /training/achievements/iot/evaluate-iot-scenario-with-iot-central.svg
+iconUrl: /learn/achievements/iot/evaluate-iot-scenario-with-iot-central.svg
 levels:
 - beginner
 - intermediate
