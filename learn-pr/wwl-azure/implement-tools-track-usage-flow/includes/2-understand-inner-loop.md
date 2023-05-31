@@ -13,9 +13,9 @@ There are other things that a developer does. It's the right set of steps did re
 
 Exactly what goes into an individual developer's inner loop will depend significantly on the technologies they're working with, the tools being used, and their preferences.
 
-If I were working on a library, my inner loop would include coding, building, testing execution &amp; debugging with regular commits to my local Git repository.
+If I were working on a library, my inner loop would include coding, building, testing execution & debugging with regular commits to my local Git repository.
 
-On the other hand, if I were doing some web front-end work, I would probably be optimized around hacking on HTML &amp; JavaScript, bundling, and refreshing the browser (followed by regular commits).
+On the other hand, if I were doing some web front-end work, I would probably be optimized around hacking on HTML & JavaScript, bundling, and refreshing the browser (followed by regular commits).
 
 :::image type="content" source="../media/different-inner-loop-5e065ff3.png" alt-text="Different Inner Loops":::
 

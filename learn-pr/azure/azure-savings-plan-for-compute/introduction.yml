@@ -12,7 +12,7 @@ metadata:
   ms.custom:
     - ignite-2022
     - engagement-fy23
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/introduction.md)]
