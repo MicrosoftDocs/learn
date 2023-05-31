@@ -8,7 +8,7 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-deploy-a-web-app-by-using-deployment-slots.md)]
