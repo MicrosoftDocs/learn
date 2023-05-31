@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.sql-server-2022-security-scalability-availability.security-enhancements
+title: Learn about the security enhancements in SQL Server 2022
+metadata:
+  title: Learn about the security enhancements in SQL Server 2022
+  description: "A unit discussing SQL Server 2022 security enhancements."
+  ms.date: 05/23/2023
+  author: VanMSFT
+  ms.author: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-security-enhancements.md)]

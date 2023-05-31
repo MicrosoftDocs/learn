@@ -4,12 +4,13 @@ title: Exercise - Connect to Power BI from Synapse
 metadata:
   title: Exercise - Connect to Power BI from Synapse
   description: "Exercise - Connect to Power BI from Synapse"
-  ms.date: 03/30/2021
+  ms.date: 05/16/2023
   author: wwlpublish
   ms.author: chtestao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-exercise-connect-to-from-synapse.md)]

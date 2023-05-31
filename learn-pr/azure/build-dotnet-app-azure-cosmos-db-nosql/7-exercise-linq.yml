@@ -4,6 +4,9 @@ title: Exercise - Enumerate items using language-integrated query (LINQ)
 metadata:
   unitType: exercise
   title: Exercise - Enumerate items using language-integrated query (LINQ)
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   description: |
     Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to build queries using the C# LINQ method syntax.
   sandbox: true

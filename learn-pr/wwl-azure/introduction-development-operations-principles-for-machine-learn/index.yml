@@ -8,6 +8,10 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.service: azure-devops
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.prod: learning-azure
 title: Introduction to DevOps principles for machine learning
 summary: Get familiar with DevOps principles and tools relevant for MLOps workloads.
 abstract: |

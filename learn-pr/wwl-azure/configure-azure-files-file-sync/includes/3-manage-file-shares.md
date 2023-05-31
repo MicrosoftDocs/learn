@@ -1,3 +1,4 @@
+
 To access your files, you need an Azure storage account. After you have a storage account, you can create and configure a file share by using Azure Files in the Azure portal.
 
 :::image type="content" source="../media/create-file-shares-bf2e2f1d.png" alt-text="Screenshot that shows how to configure a new Azure Files share in the Azure portal.":::

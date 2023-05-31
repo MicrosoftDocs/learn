@@ -10,8 +10,8 @@ See [Getting Started with Kusto Queries.](/azure/data-explorer/kusto/concepts/)
 
 Note: This walkthrough continues the previous lesson on Azure Log Analytics, and the walkthrough started within it.
 
-1. Log in to [Azure portal](https://portal.azure.com) and navigate to the log analytics workspace. From the left blade in the log analytics workspace, click Logs. It will open the Logs window, ready for you to start exploring all the data points captured into the workspace.
-1. To query the logs, we'll need to use the Kusto Query Language. Run the following query to list the last heartbeat of each machine connected to the log analytics workspace.
+1.  Log in to [Azure portal](https://portal.azure.com) and navigate to the log analytics workspace. From the left blade in the log analytics workspace, click Logs. It will open the Logs window, ready for you to start exploring all the data points captured into the workspace.
+2.  To query the logs, we'll need to use the Kusto Query Language. Run the following query to list the last heartbeat of each machine connected to the log analytics workspace.
     
     ```csharp
     // Last heartbeat of each computer
@@ -21,7 +21,7 @@ Note: This walkthrough continues the previous lesson on Azure Log Analytics, and
     
     ```
 
-1. Show a list of all distinct counters being captured.
+3.  Show a list of all distinct counters being captured.
     
     ```csharp
     // What data is being collected?
@@ -31,12 +31,12 @@ Note: This walkthrough continues the previous lesson on Azure Log Analytics, and
     
     ```
 
-1. Show a count of the data points collected in the last 24 hours. The result shows that we have 66M data points. We can query against them in near real time to analyze and correlate insights.
+4.  Show a count of the data points collected in the last 24 hours. The result shows that we have 66M data points. We can query against them in near real time to analyze and correlate insights.
     
     :::image type="content" source="../media/count-data-points-collected-eb1adb35.png" alt-text="Count of Data Points Collected":::
     
 
-1. Run the following query to generate the max CPU Utilization trend over the last 24 hours, aggregated at a granularity of 1 min. Render the data as a time chart.
+5.  Run the following query to generate the max CPU Utilization trend over the last 24 hours, aggregated at a granularity of 1 min. Render the data as a time chart.
     
     ```csharp
     Perf
@@ -50,7 +50,7 @@ Note: This walkthrough continues the previous lesson on Azure Log Analytics, and
     :::image type="content" source="../media/cpu-utilization-cd08686a.png" alt-text="CPU Utilization":::
     
 
-1. Run the following query to see all the processes running on that machine contributing to the CPU Utilization. Render the data in a pie chart.
+6.  Run the following query to see all the processes running on that machine contributing to the CPU Utilization. Render the data in a pie chart.
     
     ```csharp
     Perf

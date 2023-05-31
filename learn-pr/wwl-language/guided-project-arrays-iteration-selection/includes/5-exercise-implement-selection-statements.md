@@ -127,8 +127,6 @@ In this task, you'll develop an `if-elseif-else` structure that can be used to a
     Your Program.cs code should match the following code:
 
     ```csharp
-    Using System;
-    
     // initialize variables - graded assignments
     int currentAssignments = 5;
     
@@ -415,7 +413,7 @@ You will be using these extra credit scores and the application requirements pro
 
     ```csharp
     // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-    sumAssignmentScores += (decimal)score / 10;    
+    sumAssignmentScores += score / 10;    
     ```
 
 1. On the Visual Studio Code **File** menu, click **Save**.
@@ -425,8 +423,6 @@ You will be using these extra credit scores and the application requirements pro
     Ensure that your updated application matches the following code:
 
     ```csharp
-    Using System;
-    
     // initialize variables - graded assignments
     int examAssignments = 5;
     
@@ -482,7 +478,7 @@ You will be using these extra credit scores and the application requirements pro
     
             else
                 // add the extra credit points to the sum - bonus points equal to 10% of an exam score
-                sumAssignmentScores += (decimal)score / 10;
+                sumAssignmentScores += score / 10;
         }
     
         currentStudentGrade = (decimal)(sumAssignmentScores) / examAssignments;

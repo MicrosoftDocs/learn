@@ -2,11 +2,11 @@ There are many advantages to be gained from a cloud solution for development tes
 
 In your e-commerce company, you've decided to use Azure DevTest Labs to manage training environments to quickly onboard new developers. You also want to know whether DevTest Labs can help you manage your testing and staging environments.
 
-In this unit, you'll learn about common business problems that DevTest Labs can help to address.
+In this unit, you learn about common business problems that DevTest Labs can help to address.
 
 ## Cloud or on-premises solutions
 
-In today's environments, developers might find that on-premises solutions take a long time to set up. They're often slowed down by approval processes and red tape. There might also be problems caused by a limited hardware budget. These drawbacks can produce the following issues:
+In today's environments, developers might find that on-premises solutions take a long time to set up. They're often made too slow by approval processes and red tape. There might also be problems caused by a limited hardware budget. These drawbacks can produce the following issues:
 
 - Compromised agility
 - Limited software licensing
@@ -23,7 +23,7 @@ In contrast, because an on-premises environment doesn't have the same flexibilit
 - Costs can be prohibitive
 - Usage isn't predictable
 
-You can help eliminate these problems by using the features in the following table:
+You can help eliminate these problems by using these Azure DevTest Labs features:
 
 | Feature | Description |
 | ------- | ----------- |
@@ -44,9 +44,9 @@ These use cases are described in the following sections.
 
 Developing software is a complex and often difficult process. Because there are many aspects to consider, it's often easier to manage it in the cloud. For example, using the cloud can help with the following tasks:
 
-- Ensure that every developer on the team has the same libraries and applications, so that everything works the same for all parties.
-- Provide a fresh development machine to new developers, so they can start contributing immediately.
-- Enable remote working.
+- Ensuring that every developer on the team has the same libraries and applications, so that everything works the same for all parties.
+- Providing a fresh development machine to new developers, so they can start contributing immediately.
+- Enabling remote working.
 
 ### Test environments
 

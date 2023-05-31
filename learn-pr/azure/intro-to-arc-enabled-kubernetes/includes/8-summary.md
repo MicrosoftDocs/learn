@@ -1,15 +1,15 @@
-In this module, you learned how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations. 
+In this module, you learned how Azure Arc-enabled Kubernetes can help organizations optimize and simplify their operations. While Contoso continues to operate in a hybrid environment, its IT staff can minimize management overhead for their containerized workloads by using Azure Arc-enabled Kubernetes clusters.
 
-While Contoso will continue to operate in a hybrid environment for the foreseeable future, its IT staff will be able to minimize management overhead of their containerized workloads with Azure Arc-enabled Kubernetes technology. They'll be able to extend the scope of such services as Azure Policy and Azure Monitor to on-premises Kubernetes clusters. By embracing the GitOps approach, Contoso will streamline updates to cluster configuration across their entire environment and minimize the risks associated with configuration drift.
+Contoso can use Azure Arc-enabled Kubernetes to extend the scope of Azure services like Azure Policy and Azure Monitor to their on-premises Kubernetes clusters. By embracing GitOps, Contoso can streamline updates to cluster configuration across their environments, and minimize the risk of configuration drift.
 
 ## Learn more
 
-You can learn more by reviewing the following resources:
+To learn more, see the following resources:
 
-- [Azure Arc documentation](/azure/azure-arc?azure-portal=true)
+- [Azure Arc documentation](/azure/azure-arc)
 - [Connect an Azure Arc-enabled Kubernetes cluster](/azure/azure-arc/kubernetes/connect-cluster)
 - [What is Azure Arc-enabled Kubernetes?](/azure/azure-arc/kubernetes/overview)
-- [Deploy configurations using GitOps on Arc-enabled Kubernetes cluster](/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2)
+- [Deploy configurations using GitOps on Arc-enabled Kubernetes clusters](/azure/azure-arc/kubernetes/tutorial-use-gitops-flux2)
 - [Use Azure Policy to apply cluster configurations at scale](/azure/azure-arc/kubernetes/use-azure-policy-flux-2)
-- [Enable monitoring of Azure Arc-enabled Kubernetes cluster](/azure/azure-monitor/insights/container-insights-enable-arc-enabled-clusters)
+- [Enable monitoring of Azure Arc-enabled Kubernetes clusters](/azure/azure-monitor/insights/container-insights-enable-arc-enabled-clusters)
 - [Azure Arc Jumpstart](https://azurearcjumpstart.io/)
