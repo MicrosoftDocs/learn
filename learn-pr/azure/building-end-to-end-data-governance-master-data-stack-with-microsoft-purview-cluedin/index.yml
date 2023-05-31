@@ -7,7 +7,7 @@ metadata:
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Build an end to end data governance and master data management stack with Microsoft Purview and CluedIn
 summary: |
   Deploy a data technology stack that provides data governance, data quality, data lineage, data enrichment, and data standardization layers to your Azure ecosystem.
