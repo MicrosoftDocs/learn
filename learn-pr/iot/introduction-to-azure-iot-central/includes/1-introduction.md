@@ -4,4 +4,4 @@ Suppose you work at a retail company as the IT expert. Your company found that e
 
 In this module, you'll determine when to use IoT Central to quickly evaluate your IoT scenario. You'll then create and deploy an end-to-end solution using IoT Central *In-store Analytics - Checkout* application template to digitally connect and monitor a store's environment through various sensor devices, and assess the opportunities it can create for your business.
 
-Upon completion of this module, you'll be able to evaluate whether IoT Central is appropriate to quickly assess your IoT scenario and describe how IoT Central works to quickly connect devices, monitor device conditions, create rules, manage devices and their data throughout their life cycle, and extend IoT intelligence into line-of-business applications.
+After you complete this module, you'll be able to evaluate whether IoT Central is appropriate to quickly assess your IoT scenario and describe how IoT Central works to quickly connect devices, monitor device conditions, create rules, manage devices and their data throughout their life cycle, and extend IoT intelligence into line-of-business applications.
