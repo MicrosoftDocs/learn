@@ -9,7 +9,7 @@ metadata:
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-call-protected-web-api.md)]
