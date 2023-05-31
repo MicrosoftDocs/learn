@@ -10,7 +10,7 @@ metadata:
   ms.reviewer: rangv
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 azureSandbox: true
 interactive: bash
