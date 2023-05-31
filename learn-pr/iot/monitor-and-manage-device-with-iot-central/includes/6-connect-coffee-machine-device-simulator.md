@@ -27,7 +27,7 @@ To run the C# application, you need the following configuration values:
 
 Use the Azure Cloud Shell to set the environment variables used by the C# application.
 
-```azurecli-interactive
+```azurecli
 export ID_SCOPE=<The ID scope you made a note of previously>
 export DEVICE_ID=<The Device ID you made a note of previously>
 export DEVICE_KEY=<The Primary key you made a note of previously>
@@ -48,7 +48,7 @@ The following steps show you how to create a client application that implements 
 
 1. Execute the following command in the Azure Cloud Shell to create a `coffee-maker` folder and navigate to it:
 
-    ```azurecli-interactive
+    ```azurecli
     mkdir ~/coffee-maker
     cd ~/coffee-maker
     ```
