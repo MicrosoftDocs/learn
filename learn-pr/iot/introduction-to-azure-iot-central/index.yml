@@ -3,14 +3,14 @@ uid: learn.introduction-to-azure-iot-central
 metadata:
   title: Introduction to Azure IoT Central
   description: Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario.
-  ms.date: 04/19/2023
+  ms.date: 05/28/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-intro-to-product
-  ms.prod: learning-azure
+  ms.prod: azure-iot-central
 title: Introduction to Azure IoT Central
 summary: |
   Determine when to use Azure IoT Central to quickly evaluate your IoT scenario.
@@ -29,6 +29,7 @@ roles:
 - developer
 - solution-architect
 products:
+- azure-iot
 - azure-iot-central
 subjects:
 - iot

@@ -3,16 +3,16 @@ uid: learn.introduction-to-azure-iot-central.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your understanding of what we've covered in this module.
-  ms.date: 04/19/2023
+  description: This content is a part of Introduction to Azure IoT Central.
+  ms.date: 05/28/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-intro-to-product
-  ms.prod: learning-azure
-durationInMinutes: 7
+  ms.prod: azure-iot-central
+durationInMinutes: 5
 content: |
 quiz:
   questions:
