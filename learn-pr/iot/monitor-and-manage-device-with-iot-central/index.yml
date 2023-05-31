@@ -21,7 +21,7 @@ abstract: |
   - Configure rules for maintenance notifications
 prerequisites: |
   - Basic familiarity with IoT terms and concepts
-iconUrl: /training/achievements/monitor-and-manage-device-with-iot-central.svg
+iconUrl: /training/achievements/iot/monitor-manage-device-with-iotcentral.svg
 levels: 
 - beginner
 roles: 

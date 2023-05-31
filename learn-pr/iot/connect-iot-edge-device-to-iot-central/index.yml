@@ -30,7 +30,7 @@ prerequisites: |
   - Experience using IoT Edge at the beginner level
   - Experience administering an IoT Central application using the web UI at the intermediate level
   - Experience managing device templates and devices in an IoT central application using the web UI at the intermediate level
-iconUrl: /training/achievements/connect-iot-edge-device-to-iot-central.svg
+iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
 levels:
 - intermediate
 roles:
