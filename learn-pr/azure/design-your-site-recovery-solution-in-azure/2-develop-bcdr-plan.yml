@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: List the differences between Azure Backup and Azure Site Recovery, and identify a scenario where you would use Azure Backup or Azure Site Recovery.
+  - content: What's the difference between Azure Backup and Azure Site Recovery?
     choices:
     - content: Azure Site Recovery helps protect Azure VMs, whereas Azure Backup helps protect only on-premises targets. You would use Azure Site Recovery to trigger a failover from on-premises virtual machines to an Azure environment.
       isCorrect: false
@@ -23,7 +23,7 @@ quiz:
     - content: Azure Site Recovery can help keep workloads running, whereas Azure Backup can help keep data safe.
       isCorrect: true
       explanation: You use Azure Site Recovery and Azure Backup together to help ensure that you have a good business continuity and disaster recovery process in place. You would use Azure Site Recovery to trigger a failover from on-premises virtual machines to an Azure environment.
-    - content: Azure Site Recovery is for retaining long-term data, whereas Azure Backup is only for short-term data retention. You would use Azure Backup to trigger a test failover on from an on-premises infrastructure to an Azure infrastructure.
+    - content: Azure Site Recovery is for retaining long-term data, whereas Azure Backup is for retaining short-term data. You would use Azure Backup to trigger a test failover on from an on-premises infrastructure to an Azure infrastructure.
       isCorrect: false
       explanation: Azure Site Recovery isn't for long-term data retention. Azure Backup is for long-term data retention. You have 9,999 retention points. With daily usage, you wouldn't run out of retention points for 27 years. You also wouldn't use Azure Backup to trigger a test failover to another site; you would use Azure Site Recovery.
   - content: What are some Azure features that contribute to high availability of virtual machines?

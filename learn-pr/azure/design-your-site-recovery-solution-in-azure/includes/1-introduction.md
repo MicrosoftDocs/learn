@@ -13,4 +13,4 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Basic knowledge of business continuity and disaster recovery practices
+- Basic knowledge of BCDR practices
