@@ -8,4 +8,4 @@ In this module, you will:
 - Examine the component sections of a device template.
 - Examine how to version a device template.
 
-By the end of this module, you will be able to describe the features and component sections of an Azure IoT Central device template.
+After you complete this module, you'll be able to describe the features and component sections of an Azure IoT Central device template.

@@ -9,4 +9,4 @@ In this module, you will:
 - Examine the Azure IoT Central dashboard page for administrators.
 - Examine the Azure IoT Central data analytics UI.
 
-By the end of this module, you will be able to describe the Azure IoT Central features that support business integration, data analytics, and administration.
+After you complete this module, you'll be able to describe the Azure IoT Central features that support business integration, data analytics, and administration.

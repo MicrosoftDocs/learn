@@ -6,4 +6,4 @@ To test the solution before deploying it to your stores, you'll run the IoT Edge
 
 In this module, you'll configure an IoT Central application with a device template that defines the capabilities of the IoT Edge device. You'll add some dashboards that enable an operator to view telemetry from the IoT Edge device, set properties, and control it with commands. You'll deploy an IoT Edge device to a virtual machine and connect the device to your IoT Central application. When the basic scenario is working, you'll use an Azure function to add filtering capabilities to the IoT Edge device.
 
-Upon completion of this module, you'll be able to implement an IoT application pattern that includes edge devices to manage local devices and filter data.
+After you complete this module, you'll be able to implement an IoT application pattern that includes edge devices to manage local devices and filter data.

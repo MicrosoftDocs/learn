@@ -8,4 +8,4 @@ In this module, you will:
 - Examine device management with device groups.
 - Examine device management at scale using jobs.
 
-By the end of this module, you will be able to describe the device management options that Azure IoT Central provides.
+After you complete this module, you'll be able to describe the device management options that Azure IoT Central provides.

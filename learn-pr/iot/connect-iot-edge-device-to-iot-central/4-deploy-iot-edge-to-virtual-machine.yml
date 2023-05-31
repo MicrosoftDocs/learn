@@ -3,7 +3,7 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.deploy-iot-edge-to-virtual
 title: Deploy an IoT Edge enabled Linux VM
 metadata:
   title: Deploy an IoT Edge enabled Linux VM
-  description: Deploy an IoT Edge enabled Linux VM
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
   ms.date: 05/24/2023

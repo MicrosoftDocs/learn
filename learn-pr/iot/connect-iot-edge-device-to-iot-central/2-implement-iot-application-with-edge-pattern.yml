@@ -3,7 +3,7 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.implement-iot-application-
 title: Implement the IoT application with IoT Edge pattern
 metadata:
   title: Implement the IoT application with IoT Edge pattern
-  description: Implement the IoT application with IoT Edge pattern
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
   ms.date: 05/24/2023

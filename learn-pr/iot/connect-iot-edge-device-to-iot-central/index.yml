@@ -10,11 +10,11 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.prod: azure-iot-central
 title: Connect an Azure IoT Edge device to your Azure IoT Central application
-summary: Prepare your Azure IoT Central application to connect an Azure IoT Edge device to. You'll add some dashboards that enable an operator to manage the IoT Edge device. You'll deploy an IoT Edge device to a virtual machine and connect the device to your IoT Central application. Then you'll use Azure Functions to add filtering capabilities to the IoT Edge device.
+summary: Prepare your IoT Central application to connect an IoT Edge device and use Azure Functions to filter data before sending it to the cloud. You'll add dashboards to IoT Central and deploy an IoT Edge device to a virtual machine.
 abstract:  | 
-  Upon completion of this module, you'll be able to:
+  After you complete this module, you'll be able to:
   - Create an IoT Central application
   - Import and IoT Edge deployment manifest into IoT Central
   - Add an IoT Edge device template to your application
@@ -30,10 +30,11 @@ prerequisites: |
   - Experience using IoT Edge at the beginner level
   - Experience administering an IoT Central application using the web UI at the intermediate level
   - Experience managing device templates and devices in an IoT central application using the web UI at the intermediate level
-iconUrl: /training/achievements/connect-iot-edge-device-to-iot-central.svg
+iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
 levels:
 - intermediate
 roles:
+- administrator
 - developer
 - solution-architect
 products:
