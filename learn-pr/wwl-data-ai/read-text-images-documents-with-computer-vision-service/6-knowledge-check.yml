@@ -33,10 +33,10 @@ quiz:
       isCorrect: false
       explanation: "Incorrect: There are more than 160 languages available for printed text via the Read API."
     - content: "Nine languages, including Chinese, French, German, Italian, Japanese, Korean, Portuguese, and Spanish."
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect: There are more than 160 languages available for printed text via the Read API."
     - content: "Over 160 different languages."
-      isCorrect: false
+      isCorrect: true
       explanation: "Correct: There are more than 160 languages available for printed text via the Read API."
   - content: "You've scanned a letter into PDF format and need to extract the text it contains. What should you do?"
     choices:
