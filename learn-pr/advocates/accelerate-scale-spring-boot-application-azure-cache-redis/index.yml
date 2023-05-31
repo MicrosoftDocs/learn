@@ -2,23 +2,24 @@
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis
 metadata:
   title: Accelerate and scale a Spring Boot application with Azure Cache for Redis
-  description: In this module, you'll learn what Azure Cache for Redis is, and how to use it with a Java and Spring Boot application. You'll use it to cache some business data through Spring Data Redis, and to store HTTP session data through Spring Session.
+  description: 
   author: judubois
   ms.author: judubois
-  ms.date: 01/20/2021
+  ms.date: 05/30/2023
   ms.topic: interactive-tutorial
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021
   ms.service: cache
 title: Accelerate and scale a Spring Boot application with Azure Cache for Redis
-summary: Explore Azure Cache for Redis, and learn how to use it with a Java and Spring Boot application.
+summary: Learn how to use Azure Cache for Redis with a Java Spring Boot application to cache business data through Spring Data Redis and store HTTP session data through Spring Session.
 abstract: | 
- By the end of this tutorial, you'll be able to:
   - Describe the main uses of Azure Cache for Redis.
   - Use Azure Cache for Redis to cache business data through Spring Data Redis.
   - Use Azure Cache for Redis to store HTTP session data through Spring Session.
 prerequisites:  |
-  - Familiarity with developing and running Java applications
+  - Familiarity with Java and Spring Boot applications
+  - The Azure CLI installed
+  - Access to an Azure subscription
   - Beginner-level experience with cloud infrastructure
 iconUrl: /training/achievements/accelerate-scale-spring-boot-application-azure-cache-redis.svg
 levels:
