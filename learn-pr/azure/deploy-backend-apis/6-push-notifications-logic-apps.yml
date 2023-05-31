@@ -9,7 +9,7 @@ metadata:
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure  
+  ms.service: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/6-push-notifications-logic-apps.md)]
