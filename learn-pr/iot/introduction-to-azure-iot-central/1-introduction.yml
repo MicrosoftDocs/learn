@@ -11,7 +11,7 @@ metadata:
   ms.reviewer: adchukwu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]
