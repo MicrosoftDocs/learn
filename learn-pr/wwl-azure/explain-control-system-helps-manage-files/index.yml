@@ -16,7 +16,7 @@ abstract: |
   - Explain the benefits of using a source control system.
   - Describe how software helps interact with source control systems.
 prerequisites: |
-  A personal computer running Windows, Mac OS, or Linux.
+  A personal computer running Windows, macOS, or Linux.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
