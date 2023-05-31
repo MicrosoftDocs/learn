@@ -8,7 +8,7 @@ Let's follow these four steps as they appear in Azure Designer.
 
 ## Prepare data 
 
-Azure machine learning designer has several pre-built components that can be used to prepare data for training. These components enable you to clean data, normalize features, join tables, and more. 
+Azure Machine Learning designer has several pre-built components that can be used to prepare data for training. These components enable you to clean data, normalize features, join tables, and more. 
 ![Screenshot of designer components that can be used to prepare data.](../media/prepare-data-example.png)
 
 ## Train model 
@@ -17,13 +17,13 @@ To train a classification model, you need a dataset that includes historical *fe
 
 It's common practice to train the model using a subset of the data, while holding back some data with which to test the trained model. This enables you to compare the labels that the model predicts with the actual known labels in the original dataset.
 
-You will use *designer*'s **Score Model** component to generate the predicted class label value. Once you connect all the components, you will want to run an experiment, which will use the data asset on the canvas to train and score a model.  
+You'll use *designer*'s **Score Model** component to generate the predicted class label value. Once you connect all the components, you'll want to run an experiment, which will use the data asset on the canvas to train and score a model.  
 
 ![Screenshot of designer components that can be connected to train a classification model.](../media/classification-train-model-example.png)
 
 ## Evaluate performance 
 
-After training a model, it is important to evaluate its performance. There are many performance metrics and methodologies for evaluating how well a model makes predictions. You can review evaluation metrics on the completed job page by right-clicking on the **Evaluate model** component.  
+After training a model, it's important to evaluate its performance. There are many performance metrics and methodologies for evaluating how well a model makes predictions. You can review evaluation metrics on the completed job page by right-clicking on the **Evaluate model** component.  
 
 ![Screenshot of a right click on the evaluate model in completed jobs to see evaluation results.](../media/evaluate-model-example.png)
 
@@ -33,13 +33,13 @@ The confusion matrix is a tool used to assess the quality of a classification mo
 
 In a binary classification model where you're predicting one of two possible values, the confusion matrix is a 2x2 grid showing the predicted and actual value counts for classes **1** and **0**. It categorizes the model's results into four types of outcomes. Using our diabetes example these outcomes can look like: 
 - *True Positive*: The model predicts the patient has diabetes, and the patient does actually have diabetes.
-- *False Positive*: The model predicts the patient has diabetes, but the patient does not actually have diabetes. 
-- *False Negative*: The model predicts the patient does not have diabetes, but the patient actually does have diabetes. 
-- *True Negative*: The model predicts the patient does not have diabetes, and the patient actually does not have diabetes.  
+- *False Positive*: The model predicts the patient has diabetes, but the patient doesn't actually have diabetes. 
+- *False Negative*: The model predicts the patient doesn't have diabetes, but the patient actually does have diabetes. 
+- *True Negative*: The model predicts the patient doesn't have diabetes, and the patient actually doesn't have diabetes.  
 
 ![Screenshot of a confusion matrix terms showing true and false positives, as well as true and false negatives.](../media/confusion-matrix-terms.png)
 
-Suppose you have data for 100 patients. You create a model that predicts a patient does not have diabetes 15% of the time, so it *predicts* 15 people have diabetes and *predicts* 85 people do not have diabetes. In actuality, suppose 25 people *actually* do have diabetes and 75 people *actually* do not have diabetes. This information can be presented in a confusion matrix such as the one below: 
+Suppose you have data for 100 patients. You create a model that predicts a patient doesn't have diabetes 15% of the time, so it *predicts* 15 people have diabetes and *predicts* 85 people do not have diabetes. In actuality, suppose 25 people *actually* do have diabetes and 75 people *actually* do not have diabetes. This information can be presented in a confusion matrix such as the one below: 
 
 ![Screenshot of a confusion matrix showing actual and predicted value counts.](../media/confusion-matrix.png)
 
