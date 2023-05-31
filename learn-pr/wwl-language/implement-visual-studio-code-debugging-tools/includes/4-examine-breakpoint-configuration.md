@@ -70,7 +70,7 @@ A 'Logpoint' is a variant of a breakpoint that does not "break" into the debugge
 
 Logpoints can include a conditional 'expression' and/or 'hit count' to further control when logging messages are generated. For example, you can combine a Logpoint message of `i = {i}` with Hit Count condition `>4`to generate log messages as follows:
 
-![Screenshot showing the output of a Log Message breakpoint combined with Hit Count.](../media/breakpoints-logmessage-hitcount.png)
+![Screenshot showing the output of a Log Message breakpoint combined with Hit Count.](../media/breakpoints-log-message-hitcount.png)
 
 ## Recap
 
