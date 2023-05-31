@@ -1,6 +1,6 @@
 Congratulations! You saved the day and completed all the repair tasks before disaster occurred.
 
-![Image showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit.](../media/spaceship-core.png)
+:::image type="content" source="../media/spaceship-core.png" alt-text="Diagram showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit." border="false":::
 
 In this module, you learned:
 
@@ -9,31 +9,31 @@ In this module, you learned:
 - How to define an objective function
 - How to combine these penalty and objective functions and assign weights to form a cost function
 - How to submit the cost function to Azure Quantum
-- How to understand & parse the results
+- How to understand and parse the results
 - How to validate the results
 - How to tune the problem parameters
 
 ## Next steps
 
-Now that you understand the problem scenario and how to define the cost function, you can perform a number of experiments to deepen your understanding and improve the solution defined above:
+Now that you understand the problem scenario and how to define the cost function, you can experiment to improve this solution:
 
 - Modify the problem definition:
-  - Change the number of jobs, operations, and/or machines
+  - Change the number of jobs, operations, and machines
     - Vary the number of operations in each job
     - Change operation runtimes
     - Change machine assignments
-    - Add/remove machines
+    - Add or remove machines
 - Rewrite the penalty functions to improve their efficiency
 - Tune the parameters
-- Try using a different solver (such as `ParallelTempering`)
+- Try using a different solver, such as `ParallelTempering`
 
-You can find this tutorial in Jupyter notebook format in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true) - this will allow you to modify and experiment with the code.
+You can find this tutorial in Jupyter notebook format in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true). You can modify and experiment with the code.
 
-## Learn more about Azure Quantum & the Quantum development kit
+## Learn more about Azure Quantum and the Quantum development kit
 
-If this has piqued your interest, be sure to check out other Microsoft Learn modules that explore Azure Quantum.
+If this module has piqued your interest, be sure to check out other Microsoft Learn modules that explore Azure Quantum.
 
-If you're curious to learn more about quantum computing, be sure to check out the [Microsoft Quantum documentation](/quantum/?azure-portal=true). There, you'll find comprehensive reference material, including:
+If you're curious to learn more about quantum computing, be sure to check out [Microsoft Quantum documentation](/quantum/?azure-portal=true). There, find comprehensive reference materials, including:
 
 - Fundamental concepts around quantum computing.
 - Quickstarts and tutorials.

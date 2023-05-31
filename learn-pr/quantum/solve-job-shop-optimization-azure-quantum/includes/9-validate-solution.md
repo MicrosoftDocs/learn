@@ -27,25 +27,25 @@ Operation start times (grouped into jobs):
 Makespan (time taken to complete all operations): 6
 ```
 
-In this instance, it is possible to visually verify that the solution does not have any constraint violations. The Gantt chart shown below demonstrates this:
+In this instance, it's possible to visually verify that the solution doesn't have any constraint violations. This Gantt chart demonstrates this fact:
 
-![Gantt chart showing the start times for all operations and their assigned machines.](../media/gantt-chart.png)
+:::image type="content" source="../media/gantt-chart.png" alt-text="Screenshot of a Gantt chart showing the start times for all operations and their assigned machines." border="false":::
 
-As you can see from the visual above:
+As you can see from this chart:
 
 - Operations belonging to the same job happen in order
 - Operations are started once and only once
 - Each machine only has one operation running at a time
 
-In this particular instance, you can also tell that the solver scheduled the repair tasks in such a way that the **total time to complete them all (the makespan) was minimized** - both machines are continuously in operation, with no time gaps between scheduled operations. This is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, you must remember that these solvers are heuristics and are therefore not guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
+In this instance, you can also tell that the solver scheduled the repair tasks in such a way that the total time to complete them all, the makespan, was minimized. Both machines are continuously in operation, with no time gaps between scheduled operations. This solution is the solution with the lowest possible cost, also known as the global minimum for the cost function. However, remember that these solvers are heuristics. They aren't guaranteed to find the best solution possible, particularly when the problem definition becomes more complex.
 
-Depending on how well the cost function is defined and the weights are tuned, the solver will have varying degrees of success. This reinforces the importance of verifying and evaluating returned solutions, to enable tuning of the problem definition and parameters (such as weights/coefficients) in order to improve solution quality.
+Depending on how well the cost function is defined and the weights are tuned, the solver has varying degrees of success. This fact reinforces the importance of verifying and evaluating returned solutions. Verifying solutions enables tuning of the problem definition and parameters, such as weights/coefficients, in order to improve solution quality.
 
-For larger or more complex problems, it will not always be possible to verify the solution by eye. It is therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, as well as evaluating how good the solutions are (at least relative to solutions returned previously). This capability is also useful when it comes to tuning weights and penalty functions.
+For larger or more complex problems, it isn't always possible to verify the solution by eye. It's therefore common practice to implement some code to verify that solutions returned from the optimizer are valid, and evaluating how good the solutions are, at least relative to solutions returned previously. This capability is also useful when it comes to tuning weights and penalty functions.
 
-You can perform this validation using the following code snippet, which checks the solution against all three constraints before declaring the solution valid or not. If any of the constraints are violated, the solution will be marked as invalid. An example of an invalid solution has also been included, for comparison.
+You can perform this validation using the following code snippet, which checks the solution against all three constraints before declaring the solution valid or not. If any of the constraints are violated, the solution is marked as invalid. An example of an invalid solution has also been included, for comparison.
 
-Click **+ Code** to add another new cell and add the following lines:
+Select **+ Code** to add another new cell and add the following lines:
 
 ```python
 def check_precedence(processing_time, jobs):
@@ -148,7 +148,7 @@ print()
 validate_solution(matrix, machines_ops_map, processing_time, jobs_ops_map)
 ```
 
-When you run this code, you will see the following in the output window:
+When you run this code, you see the following results:
 
 ```output
            Job ID: [0, 0, 1, 1, 2, 2]
@@ -171,9 +171,9 @@ Operation start times (grouped into jobs):
 Solution is valid.
 ```
 
-As you can see, the result returned by the Azure Quantum solver has been confirmed as valid (it does not violate any of the constraints).
+As you can see, the result returned by the Azure Quantum solver has been confirmed as valid. It doesn't violate any of the constraints.
 
-The final step in solving this problem is to map this solution back to your repair tasks - below is shown the order in which your repair tasks should be completed to finish as quickly (and safely) as possible. If two tasks have the same order number, they can be performed at the same time by different crew members using different tools:
+The final step in solving this problem is to map this solution back to your repair tasks. This table shows the order in which your repair tasks should be completed to finish as quickly and safely as possible. If two tasks have the same order number, different crew members using different tools can perform them at the same time.
 
 |Repair task|Required tool|Order|
 |---|---|---|
@@ -189,4 +189,4 @@ The final step in solving this problem is to map this solution back to your repa
 
 Congratulations, you can now start the repairs and avoid disaster!
 
-![Image showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit.](../media/spaceship-core.png)
+:::image type="content" source="../media/spaceship-core.png" alt-text="Diagram showing a cross-section of the spaceship, with rooms such as life support, the reactor and the cockpit." border="false":::
