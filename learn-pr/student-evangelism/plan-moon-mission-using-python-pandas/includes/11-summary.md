@@ -12,7 +12,7 @@ In this module, you have:
 The data journey can take many turns. With your new data-wrangling skills, you should feel empowered to find other datasets or cut the data that's used here in new ways. By doing so, you'll uncover new information about space exploration and Moon sample recovery, or about another problem you might be interested in.
 
 > [!TIP]
-> Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/jyFHnO7-4Gc?azure-portal=true) in a new tab.
+> Remember, this module is part of a multimodal learning experience. [Follow along with a video walkthrough of the module](https://youtu.be/jyFHnO7-4Gc) in a new tab.
 
 And with that, our champion ends her journey to the Moon.
 
