@@ -13,7 +13,7 @@ But what does it mean?
 
 ## Compare the data
 
-The interesting thing about predicting how much sample each Artemis mission can bring back is that we don't yet know the full specs of the spacecraft that the Artemis mission plans on using. Using some information from the [NASA Factsheet on the Space Launch System (SLS) and Orion Modules](https://www.nasa.gov/sites/default/files/atoms/files/0080_sls_fact_sheet_sept2020_09082020_final_0.pdf?azure-portal=true), we have data on weights and payloads.
+The interesting thing about predicting how much sample each Artemis mission can bring back is that we don't yet know the full specs of the spacecraft that the Artemis mission plans on using. Using some information from the [NASA Factsheet on the Space Launch System (SLS) and Orion Modules](https://www.nasa.gov/sites/default/files/atoms/files/0080_sls_fact_sheet_sept2020_09082020_final_0.pdf), we have data on weights and payloads.
 
 A *payload* is basically the total amount of weight that a rocket can get up through our atmosphere and into space. So the likelihood that the payload number is more accurate than the exact weights of each module is high, because deciding the payload will likely affect each of the other design decisions.
 
