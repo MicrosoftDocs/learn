@@ -8,7 +8,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to Azure application delivery services
 summary: |
   In this learning path, you'll learn how to distribute network traffic to load balance workloads with Azure application delivery services.
