@@ -82,7 +82,7 @@ Templates for Flask need to be created in a folder named **templates**, which is
                             <option value="de">German</option>
                         </select>
                     </div>
-                    <div style="margin-top: 5px;">
+                    <div>
                         <button type="submit" class="btn btn-success">Translate!</button>
                     </div>
                 </form>
