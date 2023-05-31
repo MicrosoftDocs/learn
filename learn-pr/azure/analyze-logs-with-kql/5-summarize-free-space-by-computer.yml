@@ -9,7 +9,7 @@ metadata:
   author: guywi-ms
   ms.author: guywild
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-summarize-free-space-by-computer.md)]
