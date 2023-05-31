@@ -14,6 +14,6 @@ metadata:
   ms.custom: engagement-fy23
   ms.topic: module-build-your-first
   ms.prod: azure-iot-central
-durationInMinutes: 12
+durationInMinutes: 10
 content: |
   [!include[](includes/6-connect-coffee-machine-device-simulator.md)]

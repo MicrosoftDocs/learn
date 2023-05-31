@@ -13,6 +13,6 @@ metadata:
   ms.prod: azure-iot-central
 azureSandbox: false
 labModal: false
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
   [!include[](includes/4-add-cloud-properties-to-device-template.md)]
