@@ -1,8 +1,8 @@
-Next, you will submit the problem to Azure Quantum.
+Next, submit the problem to Azure Quantum.
 
-This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum Optimization solvers available (for example, `ParallelTempering`). You can find further information on the various solvers available through the Azure Quantum Optimization service on the [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true) documentation page.
+This code submits the terms to the Azure Quantum `SimulatedAnnealing` solver. You could also have used the same problem definition with any of the other Azure Quantum Optimization solvers available, for example, `ParallelTempering`. For more information on the various solvers available through the Azure Quantum Optimization service, see [Microsoft QIO provider](/azure/quantum/provider-microsoft-qio?azure-portal=true).
 
-Add another new cell and copy the following lines to run the job run synchronously, however this could also be submitted asynchronously as shown in the next subsection.
+Add another new cell and copy the following lines to run the job run synchronously. This job could also be submitted asynchronously as shown in the next section.
 
 ```python
 
@@ -17,14 +17,14 @@ config = result['configuration']
 print(config)
 ```
 
-```console
+```output
 ......
 {'0': 1, '10': 0, '11': 0, '1': 0, '12': 1, '2': 0, '13': 0, '3': 0, '14': 0, '4': 0, '15': 0, '5': 0, '16': 0, '6': 0, '17': 0, '7': 0, '18': 0, '8': 0, '19': 0, '9': 0, '20': 1, '30': 0, '31': 0, '21': 0, '32': 1, '22': 0, '33': 0, '23': 0, '34': 0, '24': 0, '35': 0, '25': 0, '36': 0, '26': 0, '37': 0, '27': 0, '38': 0, '28': 0, '39': 0, '29': 0, '40': 0, '50': 0, '41': 0, '51': 0, '42': 0, '52': 0, '43': 1, '53': 0, '44': 0, '54': 1, '45': 0, '55': 0, '46': 0, '56': 0, '47': 0, '57': 0, '48': 0, '58': 0, '49': 0, '59': 0}
 ```
 
 ## Run job asynchronously
 
-Alternatively, a job can be run asynchronously, as shown below:
+Alternatively, a job can be run asynchronously:
 
 ```python
 # Submit problem to solver
@@ -149,7 +149,7 @@ def extract_start_times(jobs_ops_map:dict, matrix:List[List[int]]):
 
 ## Results
 
-Finally, you take the config returned by the solver and read out the results.
+Finally, you take the `config` returned by the solver and read out the results.
 
 Add a new call to the notebook and copy the following lines:
 
@@ -249,4 +249,4 @@ fig.update_xaxes(tick0=0, dtick=1)
 fig.show()
 ```
 
-For this small problem instance, the solver quickly returned a solution. For bigger, more complex problems you may need to run the job asynchronously, as shown earlier in this unit.
+For this small problem instance, the solver quickly returned a solution. For bigger, more complex problems you might need to run the job asynchronously, as shown earlier in this unit.
