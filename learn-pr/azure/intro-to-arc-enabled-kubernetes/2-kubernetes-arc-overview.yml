@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
 metadata:
-  title: What are Kubernetes and Azure Arc?
-  description: In this unit you'll learn about Kubernetes and Azure Arc, and the key benefits that they provide.
+  title: Overview of Kubernetes and Azure Arc
+  description: Learn about the basics of Kubernetes and Azure Arc, and their key benefits, capabilities, and challenges.
   ms.date: 01/05/2023
   author: JnHs
   ms.author: jenhayes
@@ -11,14 +11,14 @@ metadata:
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
-title: What are Kubernetes and Azure Arc?
+title: Overview of Kubernetes and Azure Arc
 durationInMinutes: 9
 content: |
   [!include[](includes/2-kubernetes-arc-overview.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the format of the Kubernetes manifest files supported by Azure Arc?"
+  - content: "What's the file format of the manifest files that Kubernetes uses?"
     choices:
     - content: "XML"
       isCorrect: false
@@ -32,7 +32,7 @@ quiz:
     - content: "TXT"
       isCorrect: false
       explanation: "Kubernetes doesn't recognize TXT format for manifest files."
-  - content: "Which technology makes it possible to deploy Azure Kubernetes Service (AKS) in on-premises datacenters?"
+  - content: "Which technology makes it possible to deploy AKS in on-premises datacenters?"
     choices:
     - content: "GKS"
       isCorrect: false

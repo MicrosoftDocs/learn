@@ -75,8 +75,4 @@ You can specify more application-specific metadata in the form of tags. Key Vaul
 
 ## Usage Scenarios
 
-| **When to use**                                                                                                                                               | **Examples**                                                                                |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
-| Securely store, manage lifecycle, and monitor credentials for service-to-service communication like passwords, access keys, service principal client secrets. | Use Azure Key Vault with a Virtual MachineUse Azure Key Vault with an Azure Web Application |
-
-## 
+## :::image type="content" source="../media/azure-key-vault-usage-scenarios-164b7bf4.png" alt-text="Screeshot showing when to use Azure Key Vault usage scenarios."::: 
