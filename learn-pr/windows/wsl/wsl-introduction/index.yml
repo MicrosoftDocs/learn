@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: dev-environment
   ms.technology: windows-subsystem-for-linux
+  manager: jken
 title: Get started with Windows Subsystem for Linux (WSL)
 summary: Get started with WSL by installing a Linux distribution, setting up a development environment, exploring recommended tools and workflows, learning what WSL can and can't do, trying some basic commands, and assessing whether WSL is the right fit for your needs.
 abstract: |
