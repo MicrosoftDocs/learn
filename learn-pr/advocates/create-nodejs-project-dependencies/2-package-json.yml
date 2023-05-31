@@ -3,10 +3,10 @@ uid: learn.azure.create-nodejs-project-dependencies.2-package-json
 title: Configure the package.json
 metadata:
   title: Configure the package.json
-  description: This unit will explain how you can configure a package.json file to describe a project better. It will also cover how to create and run various scripts that can help you manage a project throughout its lifetime.
+  description: This unit explains how you can configure a package.json file to describe a project better. It also covers how to create and run various scripts that can help you manage a project throughout its lifetime.
   author: GitHubber17
   ms.author: chnoring
-  ms.date: 05/10/2022
+  ms.date: 05/30/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: team=nextgen
