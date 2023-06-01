@@ -9,7 +9,7 @@ metadata:
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-connect-to-cache.md)]
