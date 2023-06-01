@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/18-explore-nfs-v4-1-volumes-azure-netapp-files.md)]

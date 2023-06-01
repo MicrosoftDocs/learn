@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/16-explore-premium-storage-write-accelerator-m-series-virtual-machines.md)]

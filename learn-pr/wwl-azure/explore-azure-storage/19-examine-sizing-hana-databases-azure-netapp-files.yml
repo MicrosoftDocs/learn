@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/19-examine-sizing-hana-databases-azure-netapp-files.md)]

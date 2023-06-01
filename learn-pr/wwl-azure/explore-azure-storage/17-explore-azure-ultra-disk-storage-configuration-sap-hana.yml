@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/17-explore-azure-ultra-disk-storage-configuration-sap-hana.md)]

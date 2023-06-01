@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/13-explore-azure-virtual-machine-nfs-storage.md)]
