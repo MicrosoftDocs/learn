@@ -27,9 +27,9 @@ The Windows Server failover cluster needs to contain at least three machines. Th
 
 You can use SQL Database auto-failover groups to configure the failover and replication of database groups on a SQL Database server. You put together defined policies that can perform failovers based on your needs. If necessary, you can also manually trigger failovers. SQL Database can automatically fail over your databases to a secondary server in a secondary region if a failure occurs.
 
-SQL Database auto-failover secondary databases can be used as readable secondary databases. You can use these secondary databases to service read access to data for any connecting clients and spread usage and demand between primary and secondary databases.
+SQL Database auto-failover secondary databases can be used as readable databases. You can use these secondary databases to service read access to data for any connecting clients and spread usage and demand between primary and secondary databases.
 
-If you're using automatic failover policies, and a failure occurs on at least one database in your primary database group, an automatic failover is triggered to the secondary databases. Your endpoints remain the same during failover. When the problem that caused the failure has been addressed and you're ready, you can fail back to your original location. You can manually fail over your groups back to their original location.
+If you're using automatic failover policies, and a failure occurs on at least one database in your primary database group, an automatic failover is triggered to the secondary databases. Your endpoints remain the same during failover. When the problem that caused the failure has been addressed and you're ready, you can fail back to your original location. You can manually fail over your groups to their original location.
 
 Databases in one database server can be included in a single auto-failover group. You can also put all databases in an elastic pool in a single failover group. When primary databases are part of an elastic pool, your secondary databases are also provisioned in an elastic pool. This pool has the same name as the primary elastic pool.
 
@@ -47,9 +47,9 @@ SQL Database does backups automatically for you in the background. It creates ba
 
 SQL Database keeps backups in storage blobs that provide read access. It then copies those backups into a paired datacenter.
 
-Databases can be restored to a backed-up version. If you configured long-term retention, this backup might be available for up to 10 years. You can restore deleted databases back to the time before their deletion, and up to the retention limit in your retention policy.
+Databases can be restored to a backed-up version. If you configured long-term retention, this backup might be available for up to 10 years. You can restore deleted databases back to the time before their deletion and up to the retention limit in your retention policy.
 
-SQL Database can restore databases to a different geographical region. This process is done through geo-restore, which makes it possible to recover databases from one region to another in case something happens to an entire region.
+SQL Database can restore databases to a different geographical region. This process is done through geo-restore, which enables the recovery of databases from one region to another if something happens to an entire region.
 
 ## Geo-replicate with Azure Cosmos DB
 

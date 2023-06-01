@@ -32,7 +32,7 @@ Identify and inventory the services that you depend on, so you can incorporate t
 
 ## Azure Site Recovery
 
-Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Azure Site Recovery has plans that help automate disaster recovery. It enables you to define how machines are failed over and the order in which they're restarted after being successfully failed over. In this way, Azure Site Recovery helps to automate tasks and further reduce your RTO. You can also use Azure Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
+Azure Site Recovery is a service that provides BCDR features for your applications in Azure, on-premises, and in other cloud providers. Site Recovery has plans that help automate disaster recovery. It enables you to define how machines are failed over and the order in which they're restarted after being successfully failed over. In this way, Site Recovery helps to automate tasks and further reduce your RTO. You can also use Site Recovery to periodically test failovers and the overall effectiveness of the recovery process.
 
 :::image type="content" source="../media/2-asr.png" alt-text="Diagram that shows the role of Azure Site Recovery in replicating the workloads on three virtual machines in the East US region to the West US region.":::
 
@@ -46,7 +46,7 @@ You can use Azure Backup for your backup process. The Azure Backup service provi
 
 Azure Backup offers specialized backup solutions for Azure and on-premises VMs. Azure Backup also enables workloads like SQL Server or SAP HANA running on Azure VMs to have enterprise-class backup and restore options.
 
-Both Azure Backup and Azure Site Recovery aim to make the system more resilient to faults and failures. However, the primary goal of Azure Backup is to maintain copies of stateful data that allow you to go back in time. Azure Site Recovery replicates the data in almost real time and allows for a failover. [Learn more about Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/).
+Both Azure Backup and Azure Site Recovery aim to make the system more resilient to faults and failures. However, the primary goal of Azure Backup is to maintain copies of stateful data that allow you to go back in time. Site Recovery replicates the data in almost real time and allows for a failover. [Learn more about Azure Backup](/training/modules/protect-virtual-machines-with-azure-backup/).
 
 ## Azure resilience features
 

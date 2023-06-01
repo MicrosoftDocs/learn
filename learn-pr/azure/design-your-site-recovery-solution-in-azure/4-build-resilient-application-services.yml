@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: As illustrated in the previous diagram, you're running your infrastructure partially in the cloud and partially on-premises. How can you enable real-time switching of traffic if there are future power issues?
+  - content: As illustrated in the previous diagram, you're running your infrastructure partially in the cloud and partially on-premises. How can you enable real-time switching of traffic if there are future power interruptions?
     choices:
     - content: Use Azure Traffic Manager to probe the health of the endpoints.
       isCorrect: true

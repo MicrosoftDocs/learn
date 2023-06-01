@@ -1,22 +1,20 @@
-To build resilience into your applications, you must take various measures. Your organization needs you to meet recovery requirements, while keeping down costs and complexity as much as possible.
+Your organization needs you to meet recovery requirements, while keeping down costs and complexity as much as possible.
 
-In this unit, you learn how geo-redundancy and availability clusters can help. You learn what's involved in failovers and failbacks for your applications. By the end of this unit, you'll understand why and how you should implement a monitoring and notification strategy.
+In this unit, you learn how geo-redundancy and availability clusters can help you build resilience into your applications. You learn what's involved in failovers and failbacks for your applications. By the end of this unit, you'll understand why and how you should implement a monitoring and notification strategy.
 
 ## Add geo-redundancy for your applications
 
-Your applications run on infrastructure. You must be able to keep your applications running, regardless of what happens to the infrastructure. You also want to keep running your applications even if something happens to an entire geographical region where your infrastructure operates.
+You must be able to keep your applications running, regardless of what happens to the infrastructure that hosts them. Natural disasters and other problems could cause an entire geographical area to lose power or internet access. To respond to these problems gracefully and keep your applications running, you should make sure that geo-redundancy is in place. But, it can be costly if it isn't done right.
 
-Natural disasters and other problems could cause an entire geographical area to lose power or internet access. To respond to these problems gracefully and keep your applications running, you should make sure that geo-redundancy is in place. But, it can be costly if it isn't done right.
-
-You can use Azure to make your on-premises applications geo-redundant. The benefit of running redundant infrastructure for your applications in Azure is that you're not responsible for maintaining and securing a physical location. Also, you don't have to face any traditionally associated costs.
+You can use Azure to make your on-premises applications geo-redundant. The benefit of running a redundant infrastructure for your applications in Azure is that you're not responsible for maintaining and securing a physical location (along with the associated costs).
 
 With Azure, you can add redundancy to your applications with regions that might be on the other side of the world, and there's no maintenance for you to handle. When maintenance is done for you, you can achieve geo-redundancy more easily and cost effectively.
 
-You can extend the on-premises network to a virtual network that's running a replica of your infrastructure in a different region inside Azure by using a VPN site-to-site connection. Azure Traffic Manager can help you monitor the health of your on-premises network. If something happens to the on-premises location, you could use the replica infrastructure in Azure that's located in an entirely different region.
+You can extend the on-premises network to a virtual network that's running a replica of your infrastructure in a different region inside Azure by using a VPN site-to-site connection. Azure Traffic Manager can help you monitor the health of your on-premises network. If something happens to the on-premises location, you could use the replica infrastructure in Azure that's located in a different region.
 
 Similarly, you could set up geo-redundancy for your applications running inside Azure. For example, if your applications run on a group of Azure virtual machines in a virtual network, you can replicate the same setup in another region for geo-redundancy.
 
-Through virtual network peering, you connect two separate virtual networks that are treated as one. Traffic for these two networks doesn't go through the public internet or a gateway. Resources can directly connect to other resources as though they were in the same network.
+Through virtual network peering, you connect two separate virtual networks that are treated as one. Traffic for these two networks doesn't go through the public internet or a gateway. Resources can directly connect to other resources as though they're in the same network.
 
 In this case, Traffic Manager looks at both regions for you by monitoring the health of each endpoint. If something happens to your primary region, Traffic Manager routes demand to your secondary region.
 
@@ -42,18 +40,18 @@ You could also use Azure Virtual Machine Scale Sets to create an active-active c
 
 ## Fail over and fail back your applications
 
-Your organization has infrastructure for its applications running on-premises. You must help ensure that your organization meets compliance requirements and achieves business continuity goals. By using Azure Site Recovery and Traffic Manager together, you can fail over to Azure, and then fail back to keep the applications running.
+Your organization has an infrastructure for its applications running on-premises. You must help ensure that your organization meets compliance requirements and achieves business continuity goals. By using Azure Site Recovery and Traffic Manager together, you can fail over to Azure and then fail back to keep the applications running.
 
-If there's a failure, you can smoothly redirect client traffic to an infrastructure created for you in Azure. Use Traffic Manager to create a Traffic Manager profile and set a priority routing method. Then, create two endpoints: one for your on-premises environment and another for the environment that you want to set up in Azure.
+If there's a failure, you can smoothly redirect client traffic to an infrastructure created for you in Azure. Use Traffic Manager to create a profile and set a priority routing method. Then, create two endpoints: one for your on-premises environment and another for the environment that you want to set up in Azure.
 
-Because you're normally running an on-premises environment and want another one in Azure only to fail over to, you can set two priorities:
+Because you normally run an on-premises environment and want another one in Azure only to fail over to, you can set two priorities:
 
 - Priority 1 for the on-premises environment
 - Priority 2 for your environment in Azure
 
 This priority is how Traffic Manager knows how to route the traffic between the two environments. Traffic Manager keeps routing traffic to your on-premises environment until it notices that the endpoint isn't healthy anymore. If that's the case, Traffic Manager routes traffic to your second environment, in Azure.
 
-Azure Site Recovery only starts running your virtual machines in Azure if a failover is triggered. If a disaster occurs, you can use Azure Site Recovery to start a failover from the on-premises environment to the Azure environment.
+Azure Site Recovery starts running your virtual machines in Azure only if a failover is triggered. If a disaster occurs, you can use Azure Site Recovery to start a failover from the on-premises environment to the Azure environment.
 
 Traffic Manager enables you to set the probing frequency to monitor your endpoints. You configure Traffic Manager to monitor the health of your endpoints every 30 seconds for regular probes, down to 10-second intervals for faster probes.
 
