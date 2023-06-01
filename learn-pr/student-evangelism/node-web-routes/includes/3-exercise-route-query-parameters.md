@@ -23,13 +23,11 @@ This exercise teaches both techniques.
    cd node-essentials/nodejs-http/exercise-express-routing/parameters
    ```
 
-   The outline of the directory should look like this:
+  The *parameters* directory should contain these files:
 
-   ```bash
-   -| app.js
-   -| package.json
-   -| package-lock.json
-   ```
+  - app.js
+  - package.json
+  - package-lock.json
 
 1. The *package.json* file contains the dependency `express`. In the terminal, run the following command to install it:
 
