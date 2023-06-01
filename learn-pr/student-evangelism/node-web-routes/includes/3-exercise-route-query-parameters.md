@@ -37,6 +37,9 @@ This exercise teaches both techniques.
 
     `npm` reads from the `dependencies` section in *package.json*.
 
+   > [!NOTE]
+   > If you see a warning about an old version of `npm`, follow the instructions to fix the issue before you move to the next step.
+
 1. Open *app.js* to inspect it. The file should look like this:
 
    ```javascript
@@ -70,6 +73,8 @@ This exercise teaches both techniques.
 
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
+
+   The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
 
 ## Implement two routes
 

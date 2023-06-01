@@ -21,17 +21,15 @@ It's common to construct an API with many resources. Each resource can have seve
    cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
    ```
 
-   The outline of the directory should look like this:
+   The *reading-writing* directory should contain these files:
 
-   ```bash
-   -| app.js
-   -| client-get.js
-   -| client-post.js
-   -| client-put.js
-   -| client-delete.js
-   -| client-delete-route.js
-   -| package.json
-   ```
+   - app.js
+   - client-get.js
+   - client-post.js
+   - client-put.js
+   - client-delete.js
+   - client-delete-route.js
+   - package.json
 
 1. The *package.json* file contains an `express` dependency. In the terminal, run the following command to install it:
 
@@ -40,6 +38,9 @@ It's common to construct an API with many resources. Each resource can have seve
    ```
 
    `npm` reads from the `dependencies` section in *package.json*.
+
+   > [!NOTE]
+   > If you see a warning about an old version of `npm`, follow the instructions to fix the issue before you move to the next step.
 
 1. Open *app.js* to inspect it. The file should look like this:
 
@@ -68,6 +69,7 @@ It's common to construct an API with many resources. Each resource can have seve
    app.get('/products', (req, res) => {
      // implement
    })
+
    app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
 
