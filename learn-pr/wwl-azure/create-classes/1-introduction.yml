@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.introduction
+title: Intruduction
+metadata:
+  title: Intruduction
+  description: "The purpose of this lesson is to differentiate between a class and an object, and to create a class."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]
+interactive: csharp

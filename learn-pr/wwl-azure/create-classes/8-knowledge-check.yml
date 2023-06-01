@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a class?"
+    choices:
+    - content: "An object stored in memory."
+      isCorrect: false
+      explanation: "Incorrect. While a class is the blueprint for an object which is stored in memory, a class itself is not stored in memory."
+    - content: "Something for which you receive a letter grade."
+      isCorrect: false
+      explanation: "Incorrect. This is not the kind of class being discussed here."
+    - content: "A blueprint that you can use to create an object."
+      isCorrect: true
+      explanation: "Correct! A class defines what an object contains and what it can do."
+  - content: "What is an object?"
+    choices:
+    - content: "It's a term used to describe an entity or thing."
+      isCorrect: false
+      explanation: "Incorrect. While the term object can be used in this way, it is not we mean when we refer to an object in programming."
+    - content: "A data record that represents a single entity."
+      isCorrect: false
+      explanation: "Incorrect. An object is not thought of as a data record."
+    - content: "An object is an in-memory instance of a class."
+      isCorrect: true
+      explanation: "Correct! An object in an in-memory \"instance\" of a class."
+  - content: "What is a constructor?"
+    choices:
+    - content: "A 64-bit native data variable."
+      isCorrect: false
+      explanation: "Incorrect. While you can pass variables into a constructor, a constructor itself is not a data variable."
+    - content: "Tools that can be used to build related objects."
+      isCorrect: false
+      explanation: "Incorrect. Constructors are not tools to build related object."
+    - content: "Constructors are method used to initialize your object with any initial values required by your object."
+      isCorrect: true
+      explanation: "Correct! The primary job of a constructor is to initialize your object with any values it might require."
+  - content: "What does the term object lifecycle refer to?"
+    choices:
+    - content: "It refers to the Circle of Life."
+      isCorrect: false
+      explanation: "Incorrect. Lifecyle as it is being discussed here does not refer to the Circle of Life."
+    - content: "Lifecycle refers to the birth and death of an object."
+      isCorrect: false
+      explanation: "Incorrect. Although somewhat accurate, this answer is wrong as it does not give enough details and does not refer to the allocation and deallocation of memory."
+    - content: "The process of allocating and deallocating memory for your objects is called the Class Lifecycle."
+      isCorrect: true
+      explanation: "Correct! Class lifecycle refers to the process of allocating and deallocating memory for an object and when it occurs."

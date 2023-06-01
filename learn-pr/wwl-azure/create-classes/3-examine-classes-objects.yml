@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.examine-classes-objects
+title: Classes and Objects
+metadata:
+  title: Classes and Objects
+  description: "This unit continues the descriptions of classes and objects. It goes into more detail about what specifically classes and objects are."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-examine-classes-objects.md)]
+interactive: csharp

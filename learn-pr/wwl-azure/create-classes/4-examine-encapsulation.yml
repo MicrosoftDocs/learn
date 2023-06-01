@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.examine-encapsulation
+title: Encapsulation
+metadata:
+  title: Encapsulation
+  description: "This unit describes what encapsulation is and what it's used for."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-examine-encapsulation.md)]
+interactive: csharp
