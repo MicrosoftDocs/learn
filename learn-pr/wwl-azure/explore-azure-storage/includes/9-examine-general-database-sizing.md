@@ -1,5 +1,6 @@
 
 
+
 When you plan your disk layout, find the optimal configuration based on the following factors:
 
 - The number of data files
