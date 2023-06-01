@@ -8,7 +8,7 @@ This learning path also builds on the [Get started with Azure DevOps](../../../p
 
 Here, you ensure that your Azure DevOps organization is set up to complete the rest of this module. You do this by running a template that creates a project for you in Azure DevOps.
 
-The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project.
+The modules in this learning path form a progression, where you follow the Tailspin web team through their DevOps journey. For learning purposes, each module has an associated Azure DevOps project, so you can start each module even if you haven't completed the previous modules.
 
 ### Run the template
 
@@ -36,8 +36,6 @@ On the Azure DevOps Demo Generator site, to run the template, do these steps:
 
 > [!IMPORTANT]
 > The [Clean up your Azure DevOps environment](/training/modules/create-a-build-pipeline/9-clean-up-environment?azure-portal=true) unit at the end of this module provides important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)), or GitHub Codespaces [included usage hours and storage](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts) ([charges may apply if you exceed the free tier - check your usage](https://docs.github.com/billing/managing-billing-for-github-codespaces/viewing-your-github-codespaces-usage)). Be sure to do the cleanup steps even if you don't complete this module.
-
-[!include[](../../shared/includes/project-visibility.md)]
 
 ## Move the work item to Doing
 
