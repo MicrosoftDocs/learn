@@ -27,17 +27,17 @@ quiz:
     - content: "Telemetry, properties, and device twins"
       isCorrect: false
       explanation: "Incorrect. Device twins aren't a device capability. Device twins are JSON documents that store device state information including metadata, configurations, and conditions."
-  - content: "What can let your trigger external actions, such as to send an email or fire an event, in response to conditions within Azure IoT Central."
+  - content: "What can let you trigger external actions, such as to send an email or fire an event, in response to device conditions within Azure IoT Central?"
     choices:
     - content: "Rules"
       isCorrect: true
-      explanation: "Correct. Rules let you trigger external actions, such as to send an email or fire an event, in response to conditions within IoT Central."
+      explanation: "Correct. Rules let you trigger external actions, such as to send an email or fire an event, in response to device conditions within IoT Central."
     - content: "Device templates"
       isCorrect: false
       explanation: "Incorrect. A device template is the blueprint that defines the characteristics and behavior of a type of device."
     - content: "REST API"
       isCorrect: false
-      explanation: "Incorrect. IoT Central REST API purpose is to build integrations that let other applications and services manage your application."
+      explanation: "Incorrect. IoT Central REST API purpose is to enable automation and build integrations that let other applications and services manage your application."
   - content: "A small tech startup has plans to develop a line of tracking devices. Due to budget limitations, they aren't able to hire experienced IoT professionals. The startup wants an IoT solution that allows them to quickly provision their devices with little to no code to evaluate the scenario. One of their senior developers doesn't believe Azure IoT Central will work. Is this senior developer correct?"
     choices:
     - content: "Yes. All IoT Central solutions require code to be written both in the cloud and on the devices."
@@ -46,9 +46,9 @@ quiz:
     - content: "Yes. IoT Central solutions always require users to write code for the cloud application to function."
       isCorrect: false
       explanation: "Incorrect. IoT Central cloud applications are built to function \"right out of the box\"."
-    - content: "No. IoT Central has the IoT Plug and Play feature that lets users use IoT Plug and Play certified devices and build solutions without writing any code."
+    - content: "No. IoT Central integrates natively with IoT Plug and Play, allowing the users to use IoT Plug and Play certified devices and build solutions without writing any code."
       isCorrect: true
-      explanation: "Correct. The IoT Plug and Play feature in IoT Central enables solution builders to use IoT Plug and Play certified devices and build solutions without writing code for the cloud."
+      explanation: "Correct. The IoT Plug and Play native integration with IoT Central enables solution builders to use IoT Plug and Play certified devices and build solutions without writing code for both the devices and cloud."
   - content: "A warehouse owner wants to automate their inventory management system. The owner would like to place sensors on each shelf of the warehouse to monitor item availability and programmatically replenish low inventory. The warehouse's IT department is in search of an IoT solution that will allow them to securely test the scenario. Which of the following benefits of Azure IoT Central makes this possible?"
     choices:
     - content: "Big Data Management"
@@ -60,14 +60,3 @@ quiz:
     - content: "Security & Compliance"
       isCorrect: true
       explanation: "Correct. IoT Central's Security & Compliance features allow builders to create a secure IoT solution, including secure communication between devices and the cloud."
-  - content: "An online retail company built an IoT solution using IoT Central to help them monitor inventory in each of their warehouses. They evaluated the business impact on one warehouse and are confident about the results. What should they do to expand the solution to all of their warehouses in-production?"
-    choices:
-    - content: "Create a new IoT Central application for each warehouse."
-      isCorrect: false
-      explanation: "Incorrect. IoT Central isn't meant to be used on a production environment."
-    - content: "Scale the existing IoT Central application to handle more devices."
-      isCorrect: false
-      explanation: "Incorrect. IoT Central isn't meant to be used on a production environment."
-    - content: "Use the platform as a service (PaaS) services such as: *Azure IoT Hub* and *IoT Hub Device Provisioning Service* and if needed migrate devices from IoT Central using the *IoT Central migrator tool*."
-      isCorrect: true
-      explanation: "Correct. IoT Central isn't meant to be used on a production environment. If your IoT solution already has a solid evidence of the business impact that the IoT data stream can create, then use the PaaS IoT services. If you started with IoT Central and now need to move to a production environment, then you can use the *IoT Central migrator tool* to migrate devices seamlessly from IoT Central to a PaaS solution."
