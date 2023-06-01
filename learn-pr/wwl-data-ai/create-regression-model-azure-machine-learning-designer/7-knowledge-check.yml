@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 06/01/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -41,9 +41,9 @@ quiz:
     - content: "Data is split into two sets in order to create two models, one model with the training set and a different model with the validation set."
       isCorrect: false
       explanation: "Incorrect. The validation set is used to test the model created with the training set."
-    - content: "Splitting data into two sets enables you to compare the labels that the model predicts with the actual known labels in the original dataset."
+    - content: "Splitting data into two sets enables you to train the model with the training set and test the model on unseen data from the test set."
       isCorrect: true
-      explanation: "Correct. You want to test the model created with training data on validation data to see how well the model performs with data it was not trained on."
+      explanation: "Correct. When you test the model with unseen data from the test set, you can compare the model's predicted labels against the test set's labels."
     - content: "Only split data when you use the Azure Machine Learning Designer, not in other machine learning scenarios."
       isCorrect: false
       explanation: "Incorrect. Splitting data into training and validation sets is an important part of all machine learning scenarios."
