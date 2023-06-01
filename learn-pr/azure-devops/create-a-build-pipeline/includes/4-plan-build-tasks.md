@@ -101,28 +101,11 @@ The "@" in the task name, for example `DotNetCoreCLI@2`, refers to the task's ve
 
 ## How are tasks used in a pipeline?
 
-Next, Mara's going to map the existing script commands to Azure Pipelines tasks.
+Next, Mara's going to map the existing script commands to Azure Pipelines tasks. A Pipeline is created using a YAML file, which is a compact format that makes it easy to structure the kind of data that's in configuration files. Pipeline YAML files are typically maintained directly with your app's source code.
 
-Mara can use one of two methods to configure her pipeline:
-
-* The visual designer: Here, you drag tasks onto a form, and then configure each task to do exactly what you need.
-
-    :::image type="content" source="../media/4-visual-designer.png" alt-text="Screenshot of the Azure Pipelines visual designer showing build tasks for a .NET application.":::
-
-* A YAML file: YAML is a compact format that makes it easy to structure the kind of data that's in configuration files. You typically maintain this YAML file directly with your app's source code.
-
-Mara considers her options. She's used YAML previously to define similar build tasks and configurations. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
-
-_Pipeline as code_ refers to the concept of expressing your build definitions as code. In this short video, Abel explains the concept of pipeline as code:
-
-**Ask Abel**
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LB7y]
+Mara's used YAML previously to define similar build tasks and configurations. She also likes the idea of maintaining the build definition as code, just as she would any other part of her project.
 
 To define her build, Mara chooses to use Visual Studio Code to create a YAML file. In it, she enters all the Azure Pipelines tasks that she'll use to replace the existing script commands.
-
-> [!NOTE]
-> The underlying process that Azure Pipelines uses is the same whether you use the visual designer or a YAML file. The difference is mainly in how you define your pipeline tasks.
 
 ## Map script commands to Azure Pipelines tasks
 
@@ -157,5 +140,7 @@ More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`
 | `dotnet restore` | `DotNetCoreCLI@2`    |
 | `dotnet build`   | `DotNetCoreCLI@2`    |
 | `dotnet publish` | `DotNetCoreCLI@2`    |
+
+For more information about the other common task shorcuts, see [YAML scheme reference for Azure Pipelines - steps](/azure/devops/pipelines/yaml-schema/steps).
 
 You'll soon create a YAML file of your own that uses these tasks.
