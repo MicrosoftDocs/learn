@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: sql-db-mi
 title: Provision an Azure SQL database to store application data
-summary: Use the Azure Portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
+summary: Use the Azure portal and Cloud Shell to provision, connect, and manage Azure SQL databases.
 abstract: |
   In this module, you'll learn:
   - Why Azure SQL Database is a good choice for running your relational database.
