@@ -28,12 +28,11 @@ The company is designing and developing a new app. Developers need to ensure the
     - Click **Create**.
         - Use your guided project resource group. 
         - Give your managed identity a name.
-        - Be sure to **Save** your changes. 
     - Click **Review and create** and then **Create**. 
 
 1. Assign the correct permissions to the user-assigned managed identity. The identity only needs read and list containers and blobs. [Learn more about how to assign Azure roles](/azure/role-based-access-control/role-assignments-portal)
     
-    - Use the **Access Control (IAM)** blade for your storage account. 
+    - Browse to your storage account and select the **Access Control (IAM)** blade.
     - Click **Add role assignment**.
     - Search for and select the **Storage Data Blob Reader** role. 
     - On the **Members** tab, select **Managed identity**.
@@ -61,10 +60,7 @@ The company is designing and developing a new app. Developers need to ensure the
 
     - Select the storage account and the **Encryption** blade.
     - On the **Encryption** tab, select **Customer-managed keys**.
-        - Click **Select key vault and key**. 
-        - Set the **Key store type** to **Key vault**.
-        - Give your key vault a **name** and create a **key**.
-        - Click **Select**. 
+        - Select your key vault and key. 
         - Ensure the **Identity type** is **System-assigned**
         - **Save** your changes. 
 

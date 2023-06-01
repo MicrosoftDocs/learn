@@ -18,7 +18,7 @@ The company website supplies product images, videos, marketing literature, and c
     - In the portal, search for and select **Storage accounts**.  
     - Click **+ Create**. 
     - Select your guided project resource group.  
-    - Provide a **Storage account name**. 
+    - Set the **Storage account name** to **publicwebsite<xxxx>**. Make the storage account name unique by changing the **<xxxx>** identifier.  
     - Click **Review** and then **Create**.
     - Wait for the storage account to deploy, and then click **Go to resource**.
          

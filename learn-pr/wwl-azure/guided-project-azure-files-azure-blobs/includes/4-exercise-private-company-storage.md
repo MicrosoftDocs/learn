@@ -1,6 +1,6 @@
 
 
-The company needs storage for their offices and departments. This content is private to the company and shouldn't be shared without consent. The company wants to use this storage to back up the public website storage. Also, to reduce costs the storage should reside in the least expensive storage tier.
+The company needs storage for their offices and departments. This content is private to the company and shouldn't be shared without consent. This storage requires high availability if there's a regional outage. The company wants to use this storage to back up the public website storage. 
 
 ## Architecture diagram
 
@@ -17,7 +17,7 @@ The company needs storage for their offices and departments. This content is pri
     - In the portal, search for and select **Storage accounts**.  
     - Click **+ Create**. 
     - Select your guided project resource group.  
-    - Provide a **Storage account name**. 
+    - Set the **Storage account name** to **private**. 
     - Click **Review** and then **Create** the storage account. 
     - Wait for the storage account to deploy, and then click **Go to resource**.
 
@@ -25,7 +25,6 @@ The company needs storage for their offices and departments. This content is pri
 
     - In the storage account, select the **Redundancy** blade. 
     - Ensure **Geo-redundant storage (GRS)** is selected.
-    - Ensure **Make read access to data available in the event of regional availability** isn't checked. 
     - **Save** your changes.
     - Refresh the page and review the primary and secondary zone information. 
 
@@ -70,14 +69,14 @@ The company needs storage for their offices and departments. This content is pri
   
 1. The public website files need to be backed up to another storage account. [Learn more about object replication](/azure/storage/blobs/object-replication-overview)
 
-    - In the **private** storage account, create a container called **backup**. Use the default values.
-    - Navigate to the **Task 2 public** storage account.
+    - In your storage account, create a new container called **backup**. Use the default values.
+    - Navigate to your **publicwebsite** storage account. This storage account was created in the previous exercise. 
         - Select the **Object replication** blade. 
-        - Click **Create replication rules** and set the **Destination storage account** to **Task 3** storage account.
+        - Click **Create replication rules** and set the **Destination storage account** to **private** storage account.
         - Set the **Source container** to **public** and the **Destination container** to **backup**.
         - **Create** the replication rule. 
-    - Upload a file to the **public** container. 
-    - In the **Task 3** storage account, refresh the **private** container.
+        - Upload a file to the **public** container. This will be your replication test file. 
+    - Return to the **private** storage account and refresh the **backup** container.
     - Ensure the newly uploaded file was copied to the **backup** container. 
     - It may take 2-3 minutes for the file to appear. 
 

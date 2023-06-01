@@ -33,7 +33,7 @@
 
     - Select your file share and click **+ Add directory**. 
     - Name the new directory **finance**.
-    - Click **Upload** to add a file to your new directory.
+    - Browse to the new **finance directory** and add a file to it. 
 
 1. Similar to blob storage, you need to protect against accidental deletion of files. You decide to use snapshots. [Learn more about file snapshots](/azure/storage/files/storage-snapshots-files)
     

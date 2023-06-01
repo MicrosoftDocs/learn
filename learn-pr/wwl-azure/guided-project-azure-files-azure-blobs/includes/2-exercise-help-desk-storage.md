@@ -38,24 +38,24 @@ The IT department needs to prototype different storage scenarios and to train ne
     - Refresh the page and notice the content only exists in the primary data center. 
 
 1. The storage account should only accept requests from secure connections. [Learn more about requiring secure transfer from secure connections](/azure/storage/common/storage-require-secure-transfer)
-    - Use the **Overview** blade, in the **Security** section.
-    - Ensure **Require secure transfer for REST API operations** is **Enabled**.
-    - You can also view this information from the **Configuration** blade.
+    - In the **Settings** section, click the **Configuration** blade.
+    - Ensure **Secure transfer required** is **Enabled**.
+    - Be sure to **Save** your changes. 
 
 1. The storage account should use at least TLS version 1.2. [Learn more about transport layer security (TLS)](//azure/storage/common/transport-layer-security-configure-minimum-version?tabs=portal)
-    - Use the **Overview** blade, in the **Security** section.
+    - In the **Settings** section, click the **Configuration** blade.
     - Ensure the **Minimal TLS version** is set to **Version 1.2**. 
-    - You can also view this information from **Configuration** blade. 
+
 
 1. Until the storage is needed again, disable requests to the storage account for both shared keys and shared access signatures. [Learn more about disabling shared keys](/azure/storage/common/shared-key-authorization-prevent?tabs=portal#disable-shared-key-authorization)
-    - Use the **Overview** blade, in the **Security** section. 
-    - Ensure **Storage account key access** is **Disabled**. 
+    - In the **Settings** section, click the **Configuration** blade.
+    - Ensure **Allow storage account key access** is **Disabled**. 
     - Be sure to **Save** your changes. 
 
 1. Ensure the storage account allows public access from all networks.  
-    - On the **Networking** blade, ensure **Public network access** is set to **Enabled from all networks**.
+    - In the **Security + networking** section, click the **Networking** blade.
+    - Ensure **Public network access** is set to **Enabled from all networks**.
     - Be sure to **Save** your changes. 
-    - You can also view this information from the **Overview** blade, in the **Networking** section. 
 
 > [!NOTE]
 > For additional practice complete the [Create an Azure Storage Account](/training/modules/create-azure-storage-account/) module. The module has a sandbox where you can practice creating a storage account.
