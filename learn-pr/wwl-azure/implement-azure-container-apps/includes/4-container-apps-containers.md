@@ -1,5 +1,6 @@
 
 
+
 Azure Container Apps manages the details of Kubernetes and container orchestration for you. Containers in Azure Container Apps can use any runtime, programming language, or development stack of your choice.
 
 :::image type="content" source="../media/azure-container-apps-containers.png" alt-text="Diagram showing how containers for an Azure Container App are grouped together in pods inside revision snapshots.":::

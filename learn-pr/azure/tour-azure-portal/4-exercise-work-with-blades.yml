@@ -8,7 +8,7 @@ metadata:
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 # interactive: azure-portal
 azureSandbox: true
 durationInMinutes: 10
