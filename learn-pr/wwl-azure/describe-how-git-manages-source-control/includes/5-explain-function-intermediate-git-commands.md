@@ -13,7 +13,7 @@ git pull reaches out to the remote branch and checks if there are updates needed
 
 
 > [!NOTE]
-> git pull updates the branch you’re currently working within. Make sure you run git checkout &lt;branch&gt; to the branch you want to update first.
+> git pull updates the branch you’re currently working within. Make sure you run git checkout <branch> to the branch you want to update first.
 
 ## git merge
 
