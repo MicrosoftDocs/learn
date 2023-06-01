@@ -8,6 +8,7 @@ metadata:
   ms.author: aashcraft
   ms.topic: interactive-tutorial
   ms.prod: w10
+  manager: jken
 title: Introduction to Windows 10 development
 summary: Learn the basics of Windows 10 development, and get your computer ready for writing Windows apps.
 abstract:  |
