@@ -1,5 +1,6 @@
 
 
+
 Another Azure storage type is called [Azure Ultra disk](/azure/virtual-machines/disks-types#ultra-disks). The significant difference between Azure storage offered so far and Ultra disk is that the disk capabilities are not bound to the disk size anymore. As a customer you can define these capabilities for Ultra disk:
 
 - Size of a disk ranging from 4 GiB to 65,536 GiB
