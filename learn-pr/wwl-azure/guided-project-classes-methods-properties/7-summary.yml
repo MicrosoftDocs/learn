@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-classes-methods-properties.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]
+interactive: csharp

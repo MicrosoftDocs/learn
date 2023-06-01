@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-classes-methods-properties.exercise-create-application
+title: Exercise-Create Application
+metadata:
+  title: Exercise-Create Application
+  description: "The purpose of this lesson is to begin building the LangtonsAnt project using classes and methods."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-exercise-create-application.md)]
+interactive: csharp

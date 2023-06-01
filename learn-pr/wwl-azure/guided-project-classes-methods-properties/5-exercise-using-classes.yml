@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-classes-methods-properties.exercise-using-classes
+title: Exercise-Using Classes
+metadata:
+  title: Exercise-Using Classes
+  description: "How to introduce incremental enhancements to your application."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+content: |
+  [!include[](includes/5-exercise-using-classes.md)]
+interactive: csharp
