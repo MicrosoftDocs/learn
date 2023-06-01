@@ -20,7 +20,6 @@ Let's take a look at some of the criteria you should consider when determining i
 
 Apply these criteria to the requirements of the IoT solution from the example scenario introduced in the first unit. The following flowchart illustrates the decision process you'll use to determine if IoT Central can meet the needs of the retail company scenario. The decision process is based on the criteria defined in this unit.
 
-<!-- TODO - Change the diagram when design team sends it -->
 :::image type="content" source="../media/4-when-iot-central-flow-sml.png" alt-text="Diagram that summarizes the decision process for determining if Azure IoT Central is a good option for an IoT solution." lightbox="../media/4-when-iot-central-flow-lrg.png":::
 
 Now that you have the list of criteria and an illustration of the decision process, you can apply the criteria to the requirements of the retail company scenario. This process lets you determine if IoT Central can help you quickly evaluate the IoT scenario, and assess the opportunities it can create for the business.
