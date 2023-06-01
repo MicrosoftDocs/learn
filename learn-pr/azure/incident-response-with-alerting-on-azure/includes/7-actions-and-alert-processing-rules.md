@@ -1,4 +1,4 @@
-When an alert is fired, AAzure Monitor, Azure Service Health, and Azure Advisor use action groups to notify users about the alert and take an action. An action group is a collection of notification preferences and actions that are executed when the alert is fired. You can run one or more actions for each triggered alert.
+When an alert is fired, Azure Monitor, Azure Service Health, and Azure Advisor use action groups to notify users about the alert and take an action. An action group is a collection of notification preferences and actions that are executed when the alert is fired. You can run one or more actions for each triggered alert.
 
 Azure Monitor can perform any of the following actions:
 
@@ -14,7 +14,7 @@ Azure Monitor can perform any of the following actions:
 
 Once you've created an action group, you can reuse that action group as often as you want. For example, after you've created an action to email your company's operations team, you can add that action group to all service health events.
 
-While you are creating the alert rule, you can either create a new action group or add an existing action group to the alert rule. You can also edit an existing alert to add an action group.
+While you're creating the alert rule, you can either create a new action group or add an existing action group to the alert rule. You can also edit an existing alert to add an action group.
 
 ## Alert processing rules
 
@@ -28,4 +28,4 @@ You can use alert processing rules to:
 
 You can apply alert processing rules to different resource scopes, from a single resource, or to an entire subscription. You can also use them to apply various filters or have the rule work on a predefined schedule.
 
-You can control when the alert processing rule will apply. By default the rule is always active, but you can select a one-time window for this rule to apply, or you can have set a recurrence, such as a weekly recurrence.
+You can control when the alert processing rule applies. By default the rule is always active, but you can select a one-time window for this rule to apply, or you can have set a recurrence, such as a weekly recurrence.

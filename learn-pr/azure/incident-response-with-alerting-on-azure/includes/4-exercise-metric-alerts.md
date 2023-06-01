@@ -81,7 +81,7 @@ You can use either the Azure portal or the CLI to create a metric alert. In this
     | Enable upon creation | Yes (checked) |
     | Automatically resolve alerts | Yes (checked) |
 
-    :::image type="content" source="../media/4-metric-alert-details.png" alt-text="Screenshot that shows the completed settings for the Alert rule details section.":::
+    :::image type="content" source="../media/4-metric-alert-details.png" alt-text="Screenshot that shows the completed settings for the Alert rule details section." lightbox="../media/4-metric-alert-details.png":::
 
 1. Select **Review + create** to validate your input, and then select **Create**.
 
