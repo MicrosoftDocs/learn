@@ -10,10 +10,7 @@ Set up the database and connect to it from an app. In this exercise:
 
 Azure has an automatic firewall for the server. It prevents all external parties from connecting to the server. In the Azure portal, create a firewall rule to allow us to connect externally.
 
-1. Go to the Azure portal.
-
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Go to the [Azure portal](https://portal.azure.com)..
 
 1. Select **All Resources** from the left-hand menu, and select your newly created server. The **Overview** page for your server opens and provides options for further configuration.
 
@@ -33,7 +30,7 @@ Use the psql command-line utility to connect to the Azure Database for PostgreSQ
 
 To run the code in this article in Azure Cloud Shell:
 
-1. Either in the sandbox or the Azure portal, start Cloud Shell. For this example, be sure that **Bash** is selected as the shell type, not PowerShell.
+1. In the Azure portal, start Cloud Shell. For this example, be sure that **Bash** is selected as the shell type, not **PowerShell**.
 
 1. Select **Copy** on the following code block to copy the code.
 
