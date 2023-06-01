@@ -113,13 +113,13 @@ The code contains an Express application. The next step is to implement two rout
 1. To implement the route `/products`, locate the following code:
 
    ```javascript
-   app.get('/products', (req, res) => {})
+   app.get("/products", (req, res) => {});
    ```
 
    Replace it with this code:
 
    ```javascript
-   app.get('/products', (req, res) => {
+   app.get("/products", (req, res) => {
      const page = +req.query.page;
      const pageSize = +req.query.pageSize;
   
@@ -130,7 +130,7 @@ The code contains an Express application. The next step is to implement two rout
      } else {
        res.json(products);
      }
-   })
+   });
    ```
 
 1. In the terminal, run the following command to start the app and test the code:
@@ -166,6 +166,6 @@ The code contains an Express application. The next step is to implement two rout
    }]
    ```
 
-   Because there are only three records, the second page should contain only one record. 
+   Because the code contains only three records, the second page should contain only one record. 
    
    You've now successfully applied query parameters to limit the response.
