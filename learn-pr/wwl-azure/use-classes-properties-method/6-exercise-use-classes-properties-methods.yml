@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.exercise-use-classes-properties-methods
+title: Exercise-Using Classes, Properties, and Methods
+metadata:
+  title: Exercise-Using Classes, Properties, and Methods
+  description: "This unit provides exercises for this module"
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/6-exercise-use-classes-properties-methods.md)]
+interactive: csharp

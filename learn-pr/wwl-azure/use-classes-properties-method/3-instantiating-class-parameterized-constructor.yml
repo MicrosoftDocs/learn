@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.instantiating-class-parameterized-constructor
+title: Instantiating a Class with a Parameterized Constructor
+metadata:
+  title: Instantiating a Class with a Parameterized Constructor
+  description: "This unit talks about passing parameters into a constructor."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-instantiating-class-parameterized-constructor.md)]
+interactive: csharp

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.instantiate-class
+title: Instantiating A Class
+metadata:
+  title: Instantiating A Class
+  description: "This unit talks about how you instantiate a class."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 12
+content: |
+  [!include[](includes/2-instantiate-class.md)]
+interactive: csharp

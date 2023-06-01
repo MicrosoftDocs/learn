@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.use-properties-methods
+title: Using Properties and Methods
+metadata:
+  title: Using Properties and Methods
+  description: "This unit talks about how properties and methods are used."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/4-use-properties-methods.md)]
+interactive: csharp

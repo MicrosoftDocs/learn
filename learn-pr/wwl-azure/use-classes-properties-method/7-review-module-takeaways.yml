@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.review-module-takeaways
+title: Module Review and Takeaways
+metadata:
+  title: Module Review and Takeaways
+  description: "This unit reviews the use of classes, properties, and methods."
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-review-module-takeaways.md)]
+interactive: csharp

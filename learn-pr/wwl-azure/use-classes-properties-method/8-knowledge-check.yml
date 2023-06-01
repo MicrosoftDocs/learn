@@ -1,0 +1,70 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-classes-properties-method.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 06/01/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do you instantiate a class?"
+    choices:
+    - content: "Use the 'create-instance' keyword."
+      isCorrect: false
+      explanation: "Incorrect. There is no such keyword."
+    - content: "Take your blueprint to your contractor to force instantiation."
+      isCorrect: false
+      explanation: "Incorrect. This is a nonsense answer to see if you are still awake."
+    - content: "Declare a variable of that class type and populate the variable by instantiating it, passing the instantiation of the object into your declared variable."
+      isCorrect: true
+      explanation: "Correct! This is an accurate description of how an object can be instantiated."
+  - content: "Which of the following statements demonstrates how to instantiate a class that returns a Customer object?"
+    choices:
+    - content: "'integer myCustomer = new Customer(\"Sasha Cohen\");'."
+      isCorrect: false
+      explanation: "Incorrect. The return type is a Customer, not an integer."
+    - content: "'Custormer myCustomer = Customer (\"Sasha Cohen\");'."
+      isCorrect: false
+      explanation: "Incorrect. The \"new\" keyword is missing."
+    - content: "'Custormer myCustomer = new Customer(\"Sasha Cohen\");'."
+      isCorrect: true
+      explanation: "Correct! This is an accurate description of how an object can be instantiated."
+  - content: "Which of these statements is the correct way to instantiate an object?"
+    choices:
+    - content: "'Custormer myCustomer = new Customer(string \"Sasha Cohen\");'."
+      isCorrect: false
+      explanation: "Incorrect. You do not need to define the type of the parameter being passed in when calling a method."
+    - content: "'Custormer.name \"Sasha Cohen\";'."
+      isCorrect: false
+      explanation: "Incorrect. This demostrates how a parameter is passed into a property. Customer.name is a property, not a method."
+    - content: "'Custormer myCustomer = new Customer(\"Sasha Cohen\");'."
+      isCorrect: true
+      explanation: "Correct! This method shows the correct way to pass parameters into a method."
+  - content: "Which of these statements is the correct way to set property?"
+    choices:
+    - content: "'myCustomer = \"Sasha Cohen\";'."
+      isCorrect: false
+      explanation: "Incorrect. This example is missing the name of the property, e.g., \"name\"."
+    - content: "'myCustomer.name(\"Sasha Cohen\");'."
+      isCorrect: false
+      explanation: "Incorrect. This is a method, not a property."
+    - content: "'myCustomer.name \"Sasha Cohen\";'."
+      isCorrect: true
+      explanation: "Correct! This method shows the correct way to set the myCustomer.name property to \"Sasha Cohen\"."
+  - content: "Which of the following best describes the use of a static class method?"
+    choices:
+    - content: "'myCustomer \"Sasha Cohen\";'."
+      isCorrect: false
+      explanation: "Incorrect. This example is missing the name of the property, e.g., \"name\"."
+    - content: "'myCustomer.name(\"Sasha Cohen\");'."
+      isCorrect: false
+      explanation: "Incorrect. This is a method, not a property."
+    - content: "'myCustomer.name \"Sasha Cohen\";'."
+      isCorrect: true
+      explanation: "Correct! This method shows the correct way to set the myCustomer.name property to \"Sasha Cohen\"."
