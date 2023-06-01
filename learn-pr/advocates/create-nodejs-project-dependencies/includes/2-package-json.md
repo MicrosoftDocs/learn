@@ -76,4 +76,4 @@ You invoke actions by entering the command `npm run <action>`. For example, `npm
 
 The `start` and `test` action are *special* in that you can omit the word `run` in the command. Rather than entering the command `npm run start`, you can enter `npm start`.
 
-These four actions are a good starting point for any Node.js project, but each project will probably have a few more scripts that are specific to the project itself. 
+These four actions are a good starting point for any Node.js project, but each project will probably have a few more scripts that are specific to the project itself.
