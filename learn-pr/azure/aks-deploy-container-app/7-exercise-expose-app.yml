@@ -8,7 +8,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Exercise - Enable network access to an application
 durationInMinutes: 10
 sandbox: false

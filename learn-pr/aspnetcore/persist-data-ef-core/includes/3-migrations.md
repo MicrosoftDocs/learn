@@ -1,33 +1,30 @@
 In this unit, you'll create C# entity classes that will map to tables in a local SQLite database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
 
-> [!NOTE]
-> This module uses the [.NET CLI (Command Line Interface)](/dotnet/core/tools/) and [Visual Studio Code](https://code.visualstudio.com) for local development. After completing this module, you can apply its concepts using a development environment like Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, & macOS).
+## Obtain the project files
 
-[!include[](../../../includes/dotnet6-sdk-version.md)]
+If you're using GitHub Codespaces, just [navigate to the repository in your browser](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core), select **Code**, and then create a new codespace on the `main` branch.
 
-## Get the starter code
+If you aren't using GitHub Codespaces, obtain the project files and open them in Visual Studio Code with the following steps:
 
-1. From a terminal, run the following command to clone the starter code repository:
+1. Open a command shell and clone the project from GitHub using the command line:
 
-    ```cmd
+    ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core
     ```
 
-    The preceding command creates a local copy of the starter code repository. The app manages pizzas, their toppings, and their sauces.
+1. Navigate to the `mslearn-create-razor-pages-aspnet-core` directory and open the project in Visual Studio Code:
 
-1. Switch to the `ContosoPizza` directory in the repository you cloned and open it in Visual Studio Code.
-
-    ```cmd
-    cd mslearn-persist-data-ef-core\ContosoPizza
+    ```bash
+    cd mslearn-create-razor-pages-aspnet-core
     code .
     ```
 
-    > [!NOTE]
-    > If you get a message to update dependencies, select **Yes**.
+> [!TIP]
+> If you've got a compatible container runtime installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to open the repository in a container with the tools preinstalled.
 
 1. Review the code:
 
-    - The project is an ASP.NET Core web API.
+    - The project, an ASP.NET Core web API, is located in the *ContosoPizza* directory. The file paths referred to in this module are relative to this directory.
     - *Services/PizzaService.cs* is a service class that defines CRUD (**C**reate, **R**ead, **U**pdate, **D**elete) methods. All the methods currently throw `System.NotImplementedException`.
     - In *Program.cs*, `PizzaService` is registered with ASP.NET Core's dependency injection system.
     - *Controllers/PizzaController.cs* is an `ApiController` that exposes an endpoint for HTTP **POST**, **GET**, **PUT**, and **DELETE** verbs. These verbs call the corresponding CRUD methods on `PizzaService`. `PizzaService` is injected into `PizzaController`'s constructor.
@@ -37,7 +34,8 @@ In this unit, you'll create C# entity classes that will map to tables in a local
         - A topping may be used on one or many pizzas.
         - A pizza may have one sauce, but a sauce may be used on many pizzas.
 
-1. Open a Visual Studio Code terminal (<kbd>Ctrl</kbd>+<kbd>`</kbd>). Build the app with the following command:
+1. In the **Explorer**, right-click on the *ContosoPizza* directory and select **Open in Integrated Terminal**. This opens a terminal pane scoped to the *ContosoPizza* directory.
+1. Build the app with the following command:
 
     ```dotnetcli
     dotnet build
@@ -46,6 +44,11 @@ In this unit, you'll create C# entity classes that will map to tables in a local
     The code should build with no warnings or errors.
 
 ## Add NuGet packages and EF Core tools
+
+The database engine you'll be working with in this module is SQLite. SQLite is a lightweight, file-based database engine. It's a good choice for development and testing, and it's also a good choice for small-scale production deployments.
+
+> [!NOTE]
+> As mentioned earlier, database providers in EF Core are pluggable. SQLite is a good choice for this module because it's lightweight and cross-platform. You can use the same code to work with different database engines, such as SQL Server and PostgreSQL. You can even use multiple database engines in the same app.
 
 Before you start, you need to add the required packages.
 
@@ -78,10 +81,10 @@ Before you start, you need to add the required packages.
 
 ## Wire up models and DbContext
 
-Now, you'll add and configure a `DbContext` implementation, which will serve as the gateway through which you'll interact with the database.
+Now you'll add and configure a `DbContext` implementation, which will serve as the gateway through which you'll interact with the database.
 
-1. In the project root directory, add a new folder called *Data*.
-1. In *Data* directory, create a new file named *PizzaContext.cs*. Add the following code to the empty file:
+1. Right-click on the *ContosoPizza* directory and add a new folder called *Data*.
+1. In the *Data* directory, create a new file named *PizzaContext.cs*. Add the following code to the empty file:
 
     ```csharp
     using Microsoft.EntityFrameworkCore;
@@ -132,11 +135,12 @@ Now, you'll add and configure a `DbContext` implementation, which will serve as 
 
     The preceding code resolves dependencies in the previous step.
 
-1. Save all your changes and build the app.
+1. Save all your changes. Github Codespaces saves your changes automatically.
+1. Build the app in the terminal with `dotnet build`. The build should succeed with no warnings or errors.
 
 ## Create and run a migration
 
-You've done all you need to create a migration for creating your initial database.
+You've done all you need to create a migration that you can use to create your initial database.
 
 1. Run the following command to generate a migration for creating the database tables:
 
@@ -164,21 +168,17 @@ You've done all you need to create a migration for creating your initial databas
 
 ## Inspect the database
 
-EF Core created a database for your app. Let's take a look inside the database.
+EF Core created a database for your app. Let's take a look inside the database using the [SQLite extension](https://marketplace.visualstudio.com/items?itemName=alexcvzz.vscode-sqlite&azure-portal=true).
 
-1. In Visual Studio Code, press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>X</kbd> to open the **Extensions** tab.
-1. In the search box, search for `vscode-sqlite`. A community-provided SQLite extension is displayed.
-1. Install the extension, if needed.
-1. Press <kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>E</kbd> to return to the **Explorer** tab.
-1. Right-click on the *ContosoPizza.db* file. Select **Open Database**.
+1. In the **EXPLORER**, right-click on the *ContosoPizza.db* file. Select **Open Database**.
 
     :::image type="content" source="../media/open-database.png" alt-text="The Open Database menu option":::
 
-    A **SQLITE EXPLORER** pane opens on the **Explorer** tab.
+    A **SQLITE EXPLORER** pane opens on the **EXPLORER**.
 
     :::image type="content" source="../media/sqlite-pane.png" alt-text="The SQLite pane (collapsed)":::
 
-1. Expand the **SQLITE EXPLORER** pane and all its child nodes. Right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints.
+1. Expand the **SQLITE EXPLORER** pane and all its child nodes. Right-click **ContosoPizza.db**. Select **Show Table 'sqlite_master'** to view the full database schema and constraints created by the migration.
 
     :::image type="content" source="../media/sqlite-explorer.png" alt-text="The SQLite Explorer pane":::
 
@@ -192,10 +192,7 @@ EF Core created a database for your app. Let's take a look inside the database.
 
 ## Change the model and update the database schema
 
-Your manager at Contoso Pizza has given you some new requirements that force you to change your entity models. In the following steps, you're going to modify the models using mapping attributes, sometimes also called "data annotations".
-
-> [!TIP]
-> Instead of mapping attributes, you can use [the `ModelBuilder` fluent API](/ef/core/modeling/#use-fluent-api-to-configure-a-model) to configure how your models are mapped to the database.
+Your manager at Contoso Pizza has given you some new requirements that force you to change your entity models. In the following steps, you're going to modify the models using mapping attributes, sometimes also called "data annotations."
 
 1. In *Models\Pizza.cs*, make the following changes:
 
@@ -255,7 +252,7 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     1. Add a `Pizzas` property of type  `ICollection<Pizza>?` to make `Pizza`-`Topping` a many-to-many relationship.
     1. Add a `[JsonIgnore]` attribute to the `Pizzas` property.
 
-        > [!NOTE]
+        > [!IMPORTANT]
         > This is to prevent `Topping` entities from including the `Pizzas` property when the web API code serializes the response to JSON. Without this, a serialized collection of toppings would include a collection of every pizza that uses the topping. Each pizza in *that* collection would contain a collection of toppings, which each would again contain a collection of pizzas. This type of infinite loop is called a *circular reference* and can't be serialized.
 
     ```csharp
@@ -279,7 +276,7 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     }
     ```
 
-1. Save all your changes and build.
+1. Save all your changes and run `dotnet build`.
 
 1. Run the following command to generate a migration for creating the database tables:
 
@@ -290,7 +287,7 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     A migration named *:::no-loc text="ModelRevisions":::* is created.
 
     > [!NOTE]
-    > The message "An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy." is displayed. This is because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. This is OK because we don't yet have any data in our database. However, in general it's a good idea to check the generated migration when this warning is displayed to make sure no data is deleted or truncated by the migration.
+    > The message *An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy* is displayed. This is because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. This is OK because we don't yet have any data in our database. However, in general it's a good idea to check the generated migration when this warning is displayed to make sure no data is deleted or truncated by the migration.
 
 1. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
 
@@ -317,6 +314,9 @@ Your manager at Contoso Pizza has given you some new requirements that force you
     > [!TIP]
     > EF Core database providers handle mapping model schema to a particular database's features. While SQLite doesn't implement a corresponding constraint for `MaxLength`, other databases like SQL Server and PostgreSQL do.
 
-1. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database.
+1. In the **SQLITE EXPLORER** pane, right-click the `_EFMigrationsHistory` table and select **Show Table**. The table contains a list of all migrations applied to the database. Since you've run two migrations, there are two entries: One for the *InitialCreate* migration, and another for *ModelRevisions*.
+
+> [!NOTE]
+> This exercise used mapping attributes (data annotations) to map models to the database. As an alternative to mapping attributes, you can use [the `ModelBuilder` fluent API](/ef/core/modeling/#use-fluent-api-to-configure-a-model) to configure models. Both approaches are valid, but some developers prefer one approach over the other.
 
 You've used migrations to define and update a database schema. In the next unit, you'll finish the methods in `PizzaService` that manipulate data.

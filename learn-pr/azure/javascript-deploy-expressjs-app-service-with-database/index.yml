@@ -7,10 +7,11 @@ metadata:
   ms.date: 10/19/2022
   author: diberry
   ms.author: diberry
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.custom: team=devex engagement-fy23
   ms.devlang: javascript
   ms.service: app-service
+  manager: mcleans
 title: Deploy Node.js server with MongoDB database to Azure App Service
 summary: "Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service."
 abstract: |

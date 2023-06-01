@@ -2,8 +2,8 @@
 uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
   title: Introduction to Azure Arc-enabled Kubernetes
-  description: Introduction to Azure Arc-enabled Kubernetes
-  ms.date: 01/05/2023
+  description: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their operations.
+  ms.date: 05/30/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -13,20 +13,18 @@ metadata:
   ms.service: azure-arc
   ms.subservice: azure-arc-kubernetes
 title: Introduction to Azure Arc-enabled Kubernetes
-summary: In this module, you'll learn how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
+summary: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their operations.
 abstract: |
-  In this module you will:
-  - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
-  - Connect Kubernetes clusters to Azure Arc.
-  - Manage Azure Arc-enabled Kubernetes cluster configurations by using GitOps.
-  - Integrate Azure Arc-enabled Kubernetes clusters with Azure services such as Azure Monitor and Azure Policy.
+  - Learn about Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
+  - Learn how to connect Kubernetes clusters to Azure Arc.
+  - See how to use GitOps to manage Azure Arc-enabled Kubernetes cluster configurations.
+  - Find out how to integrate Azure Arc-enabled Kubernetes with Azure Monitor and Azure Policy.
 prerequisites: |
-  - Containerization and its concepts
-  - Kubernetes architecture and its concepts
-  - Azure Resource Manager
-  - Azure Policy
-  - Azure command-line interface (CLI)
-  - GitOps principles
+  For the best learning experience from this module, you need basic understanding and familiarity with the following technologies:
+  - Containerization and Kubernetes architecture
+  - Azure portal and Azure CLI
+  - Azure Monitor and Azure Policy
+  - GitOps principles and processes
 iconUrl: /training/achievements/intro-to-arc-enabled-kubernetes.svg
 levels:
 - beginner
