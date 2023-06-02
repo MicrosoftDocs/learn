@@ -4,7 +4,7 @@ Recall that in the retail company scenario you'll *connect*, *monitor*, and *man
 
 Here, you'll learn how IoT Central works to quickly connect devices, monitor device conditions, create rules, manage devices and their data throughout their life cycle, and extend IoT intelligence into line-of-business applications.
 
-:::image type="content" source="../media/3-iotcentral-architecture.png" alt-text="Diagram that shows the high-level architecture of an I o T Central solution." border="false" lightbox="../media/3-iotcentral-architecture.png":::
+:::image type="content" source="../media/3-iot-central-architecture.png" alt-text="Diagram that shows the high-level architecture of an I o T Central solution." border="false" lightbox="../media/3-iot-central-architecture.png":::
 
 Key capabilities in an IoT Central application include:
 

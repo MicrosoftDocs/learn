@@ -8,7 +8,7 @@ You can quickly deploy a new IoT Central application and then customize it to yo
 
 The following screenshot is an IoT Central application using the *In-store Analytics - Checkout* application template:
 
-![Screenshot of an IoT Central application dashboard using the in-store analytics checkout template](../media/2-in-store-analytics-checkout-dashboard.png)
+![Screenshot of an IoT Central application dashboard using the in-store analytics checkout template.](../media/2-in-store-analytics-checkout-dashboard.png)
 
 ## Connect devices
 
@@ -22,7 +22,7 @@ Every device connected to IoT Central uses a *device template*. A device templat
 
 You can create your own custom device templates or connect an [IoT Plug and Play](/azure/iot-develop/overview-iot-plug-and-play) certified device by using a device template provided by the manufacturer:
 
-![Screenshot of new device template options when at the IoT Central application](../media/2-in-store-analytics-checkout-newdevicetemplate.png)
+![Screenshot of new device template options when at the IoT Central application.](../media/2-in-store-analytics-checkout-new-device-template.png)
 
 ## Manage devices
 
@@ -42,6 +42,6 @@ The following video walks you through monitoring device connectivity status:
 
 As an application platform, IoT Central lets you transform your IoT data into the business insights that drive actionable outcomes. Rules, data export, and the REST API are examples of how you can integrate IoT Central with line-of-business applications:
 
-![How IoT Central can transform your IoT data](../media/2-iotcentral-transform.png)
+![Diagram that demonstrates how IoT Central can transform your IoT data.](../media/2-iot-central-transform.png)
 
 You can generate business insights, such as determining machine efficiency trends or predicting future energy usage on a factory floor, by building custom analytics pipelines to process telemetry from your devices and store the results. Configure data exports in your IoT Central application to export telemetry, device property changes, and device template changes to other services where you can analyze, store, and visualize the data with your preferred tools.
