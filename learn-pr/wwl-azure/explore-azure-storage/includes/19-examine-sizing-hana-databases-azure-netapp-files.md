@@ -1,6 +1,7 @@
 
 
 
+
 The throughput of an Azure NetApp volume is a function of the volume size and Service level, as documented in [Service level for Azure NetApp Files](/azure/azure-netapp-files/azure-netapp-files-service-levels).
 
 It is important to understand the performance relationship between the volume size and the physical limits for an Logical Interface (LIF) of the Storage Virtual Machine (SVM).
