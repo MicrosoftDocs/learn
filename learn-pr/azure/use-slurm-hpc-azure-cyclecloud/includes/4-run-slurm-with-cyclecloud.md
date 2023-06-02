@@ -48,7 +48,7 @@ CycleCloud automatically sets the amount of available memory for Slurm to use fo
 
 `slurm.dampen_memory=20`
 
-## Configuring Slurm Partitions
+## Configuring Slurm partitions
 
 The default template that ships with Azure CycleCloud has two partitions (hpc and htc), and you can define custom node arrays that map directly to Slurm partitions. For example, to create a GPU partition, add the following section to your cluster template:
 
@@ -70,7 +70,7 @@ The default template that ships with Azure CycleCloud has two partitions (hpc an
         AssociatePublicIpAddress = $ExecuteNodesPublic
 ```
 
-## Editing existing Slurm Clusters
+## Editing existing Slurm clusters
 
 If you modify and apply changes to an existing Slurm cluster, it's necessary to rebuild the slurm.conf file and update the existing nodes in the cluster. You can do this using a script that is present on Slurm clusters deployed in Azure cyclecloud using a special script named cyclecloud_slurm.sh that is located in the /opt/cycle/slurm directory on the Slurm scheduler node. Once you've made any changes to the cluster, run the following script as root with the apply_changes parameter. For example:
 
@@ -79,7 +79,7 @@ If you modify and apply changes to an existing Slurm cluster, it's necessary to 
 
 If you make changes that impact nodes that participate in a Message Passing Interface (MPI) partition.
 
-## Disabling Autoscale for nodes or partitions
+## Disabling autoscale for nodes or partitions
 
 You can disable autoscale for a running Slurm cluster by editing the slurm.conf file directly. You can exclude either individual nodes or entire partitions from being autoscaled.
 
