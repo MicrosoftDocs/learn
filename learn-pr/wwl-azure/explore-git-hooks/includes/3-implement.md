@@ -20,7 +20,7 @@ Let's start by exploring client-side Git hooks. Navigate to the repo .git\\hooks
 
 
 > [!NOTE]
-> If you open that folder, you'll find a file called precommit.sample. To enable it, rename it to pre-commit by removing the .sample extension and making the script executable.
+> If you open that folder, you'll find a file called pre-commit.sample. To enable it, rename it to pre-commit by removing the .sample extension and making the script executable.
 
 The script is found and executed when you attempt to commit using git commit. You commit successfully if your pre-commit script exits with a 0 (zero). Otherwise, the commit fails. If you're using Windows, simply renaming the file won't work.
 
