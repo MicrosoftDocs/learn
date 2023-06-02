@@ -21,11 +21,13 @@ abstract: |
 prerequisites: |
   **Required knowledge and skills**:
     - Familiarity with forking and cloning a GitHub repo
+
   **Account requirements**:
     - An Azure DevOps organization
       - To use Microsoft-hosted agents, your Azure DevOps organization must have access to **Microsoft-hosted** parallel jobs. [Check your parallel jobs and request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
       - You can use GitHub Codespaces to complete the module, even if your Azure DevOps organization doesn't have any parallel jobs.
     - A GitHub account
+
   **Software requirements**:
     - If using GitHub Codespaces to complete the module, there are no software requirements as all software is included in the Codespaces
     - If using a local development environment with Microsoft-hosted agents, you must have the following software installed:
