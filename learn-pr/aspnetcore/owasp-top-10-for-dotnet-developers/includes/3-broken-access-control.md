@@ -10,7 +10,7 @@ Let's consider a ASP.NET Core controller, like the one shown below. A controller
 
 :::row:::
     :::column:::
-        Plane ASP.NET controller with no authorization attributes, no access restrictions applied.
+        Plain ASP.NET controller with no authorization attributes, no access restrictions applied.
 ```csharp
 
 public class AccountController : Controller​
