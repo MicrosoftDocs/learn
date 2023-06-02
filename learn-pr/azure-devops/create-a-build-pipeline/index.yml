@@ -29,7 +29,7 @@ prerequisites: |
     - A [GitHub](https://github.com/join) account
 
   **Software requirements**:
-    - If using GitHub Codespaces to complete the module, there are no software requirements as all software is included in the Codespaces
+    - If using GitHub Codespaces to complete the module, there are no software requirements as all software is included in the Codespace
     - If using a local development environment with Microsoft-hosted agents, you must have the following software installed:
       - [Visual Studio Code](https://code.visualstudio.com)
       - [.NET 6.0 SDK](https://dotnet.microsoft.com/download/dotnet/6.0)
