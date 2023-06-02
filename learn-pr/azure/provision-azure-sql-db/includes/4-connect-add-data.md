@@ -102,7 +102,7 @@ Now that you understand a bit about your database, let's connect to it using `sq
 
 Remember that CRUD stands for *Create*, *Read*, *Update*, and *Delete*. These terms refer to operations you perform on table data, and are the four basic operations you need for your app. Now's a good time to verify you can perform each of them.
 
-1. Run the following `az sql db show-connection-string` command to get the connection string to the **Logistics** database in a format that `sqlcmd` can use:
+1. Run the following `az sql db show-connection-string` command to get the connection string to the `Logistics` database in a format that `sqlcmd` can use:
 
     ```azurecli
     az sql db show-connection-string --client sqlcmd --name Logistics
