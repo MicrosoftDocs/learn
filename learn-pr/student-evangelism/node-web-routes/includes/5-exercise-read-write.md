@@ -46,32 +46,32 @@ It's common to construct an API with many resources. Each resource can have seve
 1. Open *app.js* to inspect it. The file should look like this:
 
    ```javascript
-   const express = require('express')
-   const app = express()
-   const port = 3000
-
-   let bodyParser = require('body-parser');
-   app.use(bodyParser.json());
-
-   let products = [];
-
-   app.post('/products', function(req, res) {
-     // implement
-   });
-
-   app.put('/products', function(req, res) {
-     // implement
-   });
-
-   app.delete('/products/:id', function(req, res) {
-     // implement
-   });
-
-   app.get('/products', (req, res) => {
-     // implement
-   })
-
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+    const express = require('express')
+    const app = express()
+    const port = 3000
+    
+    let bodyParser = require('body-parser');
+    app.use(bodyParser.json());
+    
+    let products = [];
+    
+    app.post('/products', function (req, res) {
+      // implement
+    });
+    
+    app.put('/products', function (req, res) {
+      // implement
+    });
+    
+    app.delete('/products/:id', function (req, res) {
+      // implement
+    });
+    
+    app.get('/products', (req, res) => {
+      // implement
+    })
+    
+    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
    The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
@@ -122,8 +122,8 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement writing, locate this code:
 
    ```javascript
-   app.post('/products', function(req, res) {
-     // implement
+   app.post('/products', function (req, res) {
+      // implement
    });
    ```
 
@@ -178,7 +178,9 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement the ability to update your data, locate the code that looks like this:
 
    ```javascript
-   app.put('/products', function(req, res) {});
+   app.put('/products', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -242,7 +244,9 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement deleting, locate the code that looks like this:
 
    ```javascript
-   app.delete('/products/:id', function(req, res) {});
+   app.delete('/products/:id', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
