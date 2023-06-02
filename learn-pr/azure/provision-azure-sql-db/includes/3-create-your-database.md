@@ -82,7 +82,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | Subscription | Select your subscription |
     | Resource group | Select an existing resource group or select **Create new** |
     | **Database details** |
-    | Database name | _Logistics_ |
+    | Database name | `Logistics` |
     | Server | _[See step 5]_ |
     | Want to use SQL elastic pool? | *No* |
     | Compute + storage | _[See step 6]_ |
