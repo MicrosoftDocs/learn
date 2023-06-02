@@ -13,7 +13,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]

@@ -2,7 +2,7 @@ Azure DevTest Labs uses various objects to configure each lab to your requiremen
 
 In the e-commerce scenario, you want to know how to use objects, such as artifacts and policies, to manage environments and govern their usage.
 
-In this unit, you'll learn what these objects are and how they govern the behavior of your lab. Using these objects provides a flexible and secure environment for training, testing, and development.
+In this unit, you learn what these objects are and how they govern the behavior of your lab. Using these objects provides a flexible and secure environment for training, testing, and development.
 
 ## Objects in DevTest Labs
 
@@ -22,7 +22,7 @@ The following sections describe these objects in more detail.
 
 An environment refers to a collection of Azure resources in a lab. Azure DevTest Labs has a public repository of Azure Resource Manager templates (ARM templates) you can use to create environments. The environment repository gets you started quickly in a preconfigured environment that has few input parameters. For example, you can use PaaS resources such as Azure Service Fabric or the Web Apps feature of Azure App Service. This setup is similar to the artifacts repository available in the Azure portal for each lab.
 
-When you create environments or templates, you can either store them in the environment repository to share with others, or you can set up your own Git repository.
+When you create environments or templates, you can store them in the environment repository to share with others. Or, you can set up your own Git repository.
 
 ## Artifacts
 

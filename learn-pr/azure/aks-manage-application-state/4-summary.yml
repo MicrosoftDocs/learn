@@ -10,7 +10,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
+  ms.service: azure
 title: Summary
 durationInMinutes: 2
 content: |
