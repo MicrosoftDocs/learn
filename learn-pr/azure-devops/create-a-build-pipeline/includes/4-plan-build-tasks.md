@@ -94,7 +94,7 @@ Let's break this task down a bit more:
   * `arguments` specifies additional arguments to pass to the command.
   * `projects` specifies which projects to build. This example uses the wildcard pattern `**/*.csproj`.
     Both `**` and `*.csproj` are examples of what are called *glob patterns*.
-    The `**` part specifies to search the current directory and all child directories. The `*.csproj` part specifies any .csproj file.
+    The `**` part specifies to search the current directory and all child directories. The `*.csproj` part specifies any **.csproj** file.
     Wildcards let you act on multiple files without specifying each one. If you need to act on a specific file only, you can specify that file instead of using wildcards.
 
 The "@" in the task name, for example `DotNetCoreCLI@2`, refers to the task's version. As new task versions become available, you can gradually migrate to the latest version to take advantage of new features.

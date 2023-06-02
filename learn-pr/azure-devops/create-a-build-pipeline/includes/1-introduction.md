@@ -37,7 +37,7 @@ After completing this module, you'll be able to:
 - Publish your builds so others can access them.
 - Use templates to build multiple configurations.
 
-## Prerequisites
+## Configure your environment
 
 The modules in this learning path and previous learning path form a progression.
 
