@@ -25,4 +25,4 @@ The documentation provides lots more information, including tutorials and sample
 
 To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
 
-If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](/sql/tools/sqlcmd-utility?view=sql-server-2017).
+If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](/sql/tools/sqlcmd-utility).
