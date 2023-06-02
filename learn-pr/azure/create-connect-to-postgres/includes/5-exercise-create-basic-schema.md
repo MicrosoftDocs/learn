@@ -1,7 +1,7 @@
 Set up the database and connect to it from an app. In this exercise:
 
 * Configure the firewall so you can connect to the database service
-* Connect to the database service using Azure Cloud Shell
+* Connect to the database service using Azure [Cloud Shell](https://shell.azure.com/)
 * Create a database called `paymentapp`
 * Create a `payment_users` table and load the names and age of two users
 * Run an update query to update a users age
@@ -10,10 +10,7 @@ Set up the database and connect to it from an app. In this exercise:
 
 Azure has an automatic firewall for the server. It prevents all external parties from connecting to the server. In the Azure portal, create a firewall rule to allow us to connect externally.
 
-1. Go to the Azure portal.
-
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Go to the [Azure portal](https://portal.azure.com)..
 
 1. Select **All Resources** from the left-hand menu, and select your newly created server. The **Overview** page for your server opens and provides options for further configuration.
 
@@ -29,11 +26,11 @@ Azure has an automatic firewall for the server. It prevents all external parties
 
 ## Use psql to connect in Azure Cloud Shell
 
-Use the psql command-line utility to connect to the Azure Database for PostgreSQL server. To start with, save the name of the database server in the Cloud Shell on the right of your screen.
+Use the psql command-line utility to connect to the Azure Database for PostgreSQL server. To start with, save the name of the database server in  [Azure Cloud Shell](https://shell.azure.com/).
 
-To run the code in this article in Azure Cloud Shell:
+Run the code in this article in [Azure Cloud Shell](https://shell.azure.com/):
 
-1. Either in the sandbox or the Azure portal, start Cloud Shell. For this example, be sure that **Bash** is selected as the shell type, not PowerShell.
+1. In the Azure portal, start [Cloud Shell](https://shell.azure.com/). For this example, be sure that **Bash** is selected as the shell type, not **PowerShell**.
 
 1. Select **Copy** on the following code block to copy the code.
 
@@ -41,7 +38,7 @@ To run the code in this article in Azure Cloud Shell:
     SERVERNAME={server-name}
     ```
 
-1. Paste the code into the Cloud Shell session by selecting **Ctrl** + **Shift** + **V** on Windows and Linux, or by selecting **Cmd** + **Shift** + **V** on macOS.
+1. Paste the code into the [Cloud Shell](https://shell.azure.com/) session by selecting **Ctrl** + **Shift** + **V** on Windows and Linux, or by selecting **Cmd** + **Shift** + **V** on macOS.
 
 1. Replace `{server-name}` with the server name you chose in unit 3.
 
@@ -57,7 +54,7 @@ To connect to the server, use the server name in a connection command, and the p
     psql --host=$SERVERNAME.postgres.database.azure.com --port=5432 --username=paymentadmin@$SERVERNAME.postgres.database.azure.com --dbname=postgres
     ```
 
-1. Paste the code into the Cloud Shell session, and press **Enter**.
+1. Paste the code into the [Cloud Shell](https://shell.azure.com/) session, and press **Enter**.
 
 1. Enter your password, and press **Enter** to connect.
 
@@ -91,7 +88,7 @@ First, create a table and load it with some account data.
 
 ### Create the users table
 
-1. In the Cloud Shell window, run the following query to create a table called `payment_users`.
+1. In the [Cloud Shell](https://shell.azure.com/) window, run the following query to create a table called `payment_users`.
 
     ```sql
     CREATE TABLE payment_users (
@@ -113,7 +110,7 @@ First, create a table and load it with some account data.
 
 Now that you have a table, insert some data into it.
 
-In the Cloud Shell window, run the following query to insert a couple rows of data.
+In the [Cloud Shell](https://shell.azure.com/) window, run the following query to insert a couple rows of data.
 
 ```sql
 INSERT INTO payment_users (user_id, user_name, age_in_years) VALUES (1, 'John', 45);

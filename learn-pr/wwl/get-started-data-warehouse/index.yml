@@ -7,8 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-power-bi
-  ms.service: powerbi
+  ms.prod: learning-azure
+  ms.service: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai
@@ -30,8 +30,7 @@ roles:
 - data-analyst
 - data-engineer
 products:
-- azure-synapse-analytics
-- power-bi
+- fabric
 subjects:
 - data-analytics
 - data-warehousing

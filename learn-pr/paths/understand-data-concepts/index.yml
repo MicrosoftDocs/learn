@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Understand data concepts
 prerequisites: |
   - You should be familiar with basic computing concepts and terminology.
