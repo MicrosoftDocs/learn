@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 11
 content: |
   [!include[](includes/13-explore-best-practices-for-module-10.md)]

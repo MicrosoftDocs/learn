@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/18-summary.md)]
