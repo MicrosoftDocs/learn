@@ -1,4 +1,4 @@
-You're all done with the tasks for this module. You'll now move the work item to the **Done** state on Azure Boards, and clean up your Azure DevOps environment.
+You're all done with the tasks for this module. You'll now clean up your Azure DevOps environment.
 
 ::: zone pivot="ms-hosted-agents"
 
