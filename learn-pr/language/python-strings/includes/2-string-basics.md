@@ -22,7 +22,7 @@ fact = "The Moon has no atmosphere."
 fact + "No sound can be heard on the Moon."
 ```
 
-You might expect the output to be `The Moon has no atmosphere.No sound can be heard on the Moon.`
+You might expect the output to be: `The Moon has no atmosphere.No sound can be heard on the Moon.`
 
 Although it might look as though we've modified the variable `fact`, a quick check of the value reveals that the original value is unchanged:
 
@@ -109,8 +109,3 @@ multiline = """Facts about the Moon: There is no atmosphere. There is no sound."
  print(multiline)
 ```
 
-```Output
-Facts about the Moon:
- There is no atmosphere.
- There is no sound
-```

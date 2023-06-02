@@ -16,8 +16,6 @@ heading_upper = heading.title()
 print(heading_upper)
 ```
 
-Output: `Temperatures And Facts About The Moon`
-
 ## Split a string
 
 A common string method is `.split()`. Without arguments, the method will separate the string at every space. This would create a list of every word or number that's separated by a space:
