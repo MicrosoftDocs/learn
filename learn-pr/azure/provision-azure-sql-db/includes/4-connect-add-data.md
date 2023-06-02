@@ -70,7 +70,7 @@ Here, you use the `az` utility to list your databases and show some information 
     ]
     ```
 
-    *Logistics* is your database. Like SQL Server, *master* includes server metadata, such as sign-in accounts and system configuration settings.
+    `Logistics` is your database. Like SQL Server, the `master` system database includes server metadata, such as logins and system configuration settings.
 
 1. Run the following `az sql db show` command to get details about the `Logistics` database:
 
