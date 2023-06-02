@@ -127,6 +127,6 @@ This table associates the script commands with the new Azure Pipelines tasks:
 | `dotnet build`   | `DotNetCoreCLI@2`    |
 | `dotnet publish` | `DotNetCoreCLI@2`    |
 
-There's no built-in task type that runs node-Sass or prints the date to a file. For those, Mara uses the `CmdLine@2` task, which lets her run any command that she wants. More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`. For more information about the other common task shorcuts, see [YAML scheme reference for Azure Pipelines - steps](/azure/devops/pipelines/yaml-schema/steps).
+There's no built-in task type that runs node-Sass or prints the date to a file. For those, Mara uses the `CmdLine@2` task, which lets her run any command that she wants. More commonly, you'll see the `script` task, which is a shortcut for `CmdLine@2`. For more information about the other common task shortcuts, see [YAML scheme reference for Azure Pipelines - steps](/azure/devops/pipelines/yaml-schema/steps).
 
 You'll soon create a YAML file of your own that uses these tasks.
