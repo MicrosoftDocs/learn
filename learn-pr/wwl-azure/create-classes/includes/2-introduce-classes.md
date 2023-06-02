@@ -6,17 +6,18 @@ You can also create custom types that don’t represent any of the previously me
 
 When you design an application, you identify new types that you require to build your application. If you're building an application that represents a house, you might have a house class that represents a house. The house class would have a bedroom, living room, bathroom, dining room, etcetera. The user of your application can enter the rooms, perhaps turn on or off the light in the room, exit the room and so on.
 
-##Properties
+## Properties
 
 When we talk about classes and what they're composed of we're essentially talking about Properties and Methods. Properties help your object keep track of information, helping you “get” data, and “set” (input) data in your object. They're a mechanism to read, write, validate, or compute a value in your object, allowing data to be accessed easily. 
 
-##Methods
+## Methods
 
 Classes do things, or perform actions, using methods. A method is a block of code that contains a series of programming code statements. A program causes the statements to be executed by calling the method and specifying any required method arguments. Arguments are the data you pass into a method that your code processes. In C#, every executed instruction is performed in the context of a method.
 
-##Creating a Class
+## Creating a Class
 
 In order to create a class, you use the class keyword. Adding methods and properties to the class is covered later in this module.
+
 ```CSharp
 public class House
 {
