@@ -1,6 +1,6 @@
-On a Windows Data Science Virtual Machine (DSVM), the graphical desktop is available via Remote Desktop Protocol.
+On a Windows Data Science Virtual Machine (DSVM), the graphical desktop is available via Remote Desktop Protocol (RDP).
 
-With SSH, you can connect to the command line of the Data Science Virtual Machine. Both Windows and Ubuntu DSVM images support SSH connection.
+With SSH, you can connect to the command line of the DSVM. Both Windows and Ubuntu DSVM images support SSH connection.
 
 ## Connect to a Windows server by using RDP
 
@@ -16,11 +16,11 @@ To connect to a Windows DSVM with Remote Desktop:
 
 1. Open the file in Microsoft Remote Desktop to connect.
 
-![Screenshot of the portal showing the RDP file download page.](../media/download-rdp-file.png)
+    :::image type="content" source="../media/download-rdp-file.png" alt-text="Screenshot of the portal showing the RDP file download page.":::
 
 ## Connect to the command line by using SSH
 
-To access the command line of your DSVM, you'll use:
+To access the command line of your DSVM, you use:
 
 - An SSH client running in a terminal on your local machine.
 - The username and password that you specified during creation.
