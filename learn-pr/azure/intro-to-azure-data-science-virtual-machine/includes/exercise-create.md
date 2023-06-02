@@ -32,7 +32,7 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
     | Image | Data Science Virtual Machine - Ubuntu 20.04 - X64 Gen2 |
     | VM architecture | x64 |
     | Security type | Standard |
-    | Size | Standard_DS1_v2. If that's not the selected value: <br> - Select **See all sizes** link <br> - Enter **DS1\_** in the search box <br> - Select the **DS1\_v2** row <br> - Select **Select** to choose that size and return to the configuration screen |
+    | Size | Standard_DS1_v2. If that's not the selected value: <br> - Select **See all sizes** link. <br> - Enter **DS1\_** in the search box. <br> - Select the **DS1\_v2** row. <br> - Select that size and return to the configuration screen. |
     | **Administrator account**| |
     | Authentication type | Password |
     | Username | Enter a string from 1 to 64 characters long. |

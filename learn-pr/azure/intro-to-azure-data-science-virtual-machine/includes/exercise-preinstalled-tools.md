@@ -10,7 +10,7 @@ The DSVM comes with tools preinstalled for:
 
 You can add more programming languages, desktop applications, database tools, and so forth.
 
-## List and activate a Python conda environment
+## Activate a Python conda environment
 
 The conda package manager is a popular way to manage Python programming environments. It's the default environment manager that the DSVM uses. The DSVM comes with several environments configured to work with popular data science and machine learning packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
 

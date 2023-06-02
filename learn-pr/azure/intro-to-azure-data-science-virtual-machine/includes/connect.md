@@ -49,7 +49,7 @@ Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 
 ### Connect by using an SSH client from the command line
 
-From a terminal or a PowerShell console, run the following code. Replace your username and the IP address for `1.1.1.1`.
+From a terminal or a PowerShell console, run the following code. Replace `UserName` and `1.1.1.1` with your username and IP address.
 
 ```bash
 ssh UserName@1.1.1.1
