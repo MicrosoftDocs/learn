@@ -24,7 +24,7 @@ Referring to our scenario, let's say that you've decided to work on an Ubuntu DS
     | --- | --- |
     | **Project details**| |
     | Subscription | *Concierge Subscription* |
-    | Resource group | Select \[sandbox resource group name\]. This group is the sandbox resource group. |
+    | Resource group | Select <rgn>[sandbox resource group name]</rgn>. This group is the sandbox resource group. |
     | **Instance details**| |
     | Virtual machine name | Enter *test-ubuntu-dsvm* |
     | Region | Select a region near you. It should be the same as the resource group. |
