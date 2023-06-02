@@ -1,20 +1,20 @@
-In this unit, the precedence constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the precedence constraint is defined. You learn how to represent it mathematically and then transform it to code.
 
 The precedence constraint is defined as follows:
 
-| Constraint | Penalty condition |
-|---|---|
-|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
+|                               | Description                                   | Penalty condition |
+|:------------------------------|:----------------------------------------------|:------------------|
+| **Precedence constraint**     | Operations in a job must take place in order. | Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished. That is, they start out of order.|
 
-## Worked example
+## Implement precedence constraint
 
-Let's take job 1 ($J_{1}$) as an example:
+Take job 1 ($J_{1}$) as an example:
 
 - $J_{1}$: Recalibrate navigation system
   - $O_{2}$: Reboot the system (*2 minutes*)
   - $O_{3}$: Locate the three nearest stellar landmarks (*2 minutes*)
 
-Let's formulate the penalty conditions for $O_{2}$ and $O_{3}$: you want to add a penalty if $O_{3}$ starts before $O_{2}$ finishes. First, you'll define the terms and set some of their values:
+Formulate the penalty conditions for $O_{2}$ and $O_{3}$. You want to add a penalty if $O_{3}$ starts before $O_{2}$ finishes. First, define the terms and set some of their values:
 
 $$\text{Total allowed time } T = 4$$
 $$O_{2} \text{ processing time: } p_{2} = 2$$
@@ -23,7 +23,7 @@ $$O_{2} \text{ starts at time } \textit{t} \text{, and finishes at time } t+p_{2
 $$O_{2} \text{ starts at any time } 0 \leq t < T $$
 $$O_{3} \text{ can start at time } s \geq t + p_{2} $$
 
-$O_{2}$’s finishing time is given by adding its processing time $p_{2}$ (which is 2 minutes) to its start time $t$. You can see the start and end times for $O_{2}$ in the table below:
+$O_{2}$'s finishing time is given by adding its processing time $p_{2}$, which is 2 minutes, to its start time $t$. You can see the start and end times for $O_{2}$ in this table:
 
 | $t$ | $t + p_{2}$|
 |---|---|
@@ -31,7 +31,7 @@ $O_{2}$’s finishing time is given by adding its processing time $p_{2}$ (which
 |1|3|
 |2|4|
 
-To avoid violating this constraint, the start time of $O_{3}$ (denoted by $s$) must be greater than or equal to the end time of $O_{2}$, like you see in the next column:
+To avoid violating this constraint, the start time of $O_{3}$, denoted by $s$, must be greater than or equal to the end time of $O_{2}$, like you see in the added column:
 
 | $t$ | $t + p_{2}$|$s \geq t+p_{2}$|
 |---|---|---|
@@ -40,9 +40,9 @@ To avoid violating this constraint, the start time of $O_{3}$ (denoted by $s$) m
 |2|4|4|
 ||**Valid configuration?**|✔|
 
-The ✔ means that any $s$ value in this column is valid, as it doesn't violate the precedence constraint.
+The ✔ means that any $s$ value in this column is valid, because it doesn't violate the precedence constraint.
 
-Conversely, if $s$ is less than $t + p_{2}$ (meaning $O_{3}$ starts before $O_{2}$ finishes), you need to add a penalty. Invalid $s$ values for this example are shown in the rightmost column:
+Conversely, if $s$ is less than $t + p_{2}$, meaning $O_{3}$ starts before $O_{2}$ finishes, you need to add a penalty. Invalid $s$ values for this example are shown in the rightmost column:
 
 | $t$ | $t + p_{2}$|$s \geq t+p_{2}$|$s < t+p_{2}$|
 |---|---|---|---|
@@ -51,38 +51,39 @@ Conversely, if $s$ is less than $t + p_{2}$ (meaning $O_{3}$ starts before $O_{2
 |2|4|4|0, 1, 2, 3|
 ||**Valid configuration?**|✔|✘|
 
-In the table above, ✘ has been used to denote that any $s$ value in the last column is invalid, as it violates the precedence constraint.
+In the table, ✘ has been used to denote that any $s$ value in the last column is invalid, because it violates the precedence constraint.
 
 ## Penalty formulation
 
-This is formulated as a penalty by counting every time consecutive operations $O_{i}$ and $O_{i + 1}$ in a job take place out of order.
+This value is formulated as a penalty by counting every time consecutive operations $O_{i}$ and $O_{i + 1}$ in a job take place out of order.
   
-As you saw above: for an operation $O_{i}$, if the start time of $O_{i + 1}$ (denoted by $s$) is less than the start time of $O_{i}$ (denoted by $t$) plus its processing time $p_{i}$, then that counts as a penalty. Mathematically, this penalty condition looks like: $s < t + p_{i}$.
+As you saw already, for an operation $O_{i}$, if the start time of $O_{i + 1}$, denoted by $s$, is less than the start time of $O_{i}$, denoted by $t$, plus its processing time $p_{i}$, then that counts as a penalty. Mathematically, this penalty condition looks like: $s < t + p_{i}$.
 
 You sum that penalty over all the operations of a job ($J_{n}$) for all the jobs:
+
 $$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}.$$
 
-Let's break that down:
+To break that expression down:
 
 - $k_{n-1} \leq i < k_{n}$
 
-  This means you sum over all operations for a single job.
+  This expression means that you sum over all operations for a single job.
 
 - $s < t + p_{i}$
 
-  This is the penalty condition - any operation that satisfies this condition is in violation of the precedence constraint.
+  This expression is the penalty condition. Any operation that satisfies this condition is in violation of the precedence constraint.
 
 - $x_{i, t}\cdot x_{i+1, s}$
 
-  This represents the table you saw in the example above, where $t$ is allowed to vary from $0 \rightarrow T - 1$ and you assign a penalty whenever the constraint is violated (when $s < t + p_{i}$).
+  This expression represents the table you saw in the example, where $t$ is allowed to vary from $0 \rightarrow T - 1$. Assign a penalty whenever the constraint is violated. That is, when $s < t + p_{i}$.
 
-  This translates to a nested `for` loop: the outer loop has limits $0 \leq t < T$ and the inner loop has limits $0 \leq s < t + p_{i}$
+  This expression translates to a nested `for` loop: the outer loop has limits $0 \leq t < T$ and the inner loop has limits $0 \leq s < t + p_{i}$.
 
 ## Code
 
-Using the mathematical formulation and the breakdown above, you can now translate this constraint function to code. You will see the `weight` argument included in this code snippet - this will be assigned a value later on when you call the function. 
+Using the mathematical formulation and the breakdown, you can now translate this constraint function to code. The `weight` argument is included in this code snippet. This argument is assigned a value later on when you call the function.
 
-Click **+ Code** to add another new cell and add the following lines:
+Select **+ Code** to add another new cell and add the following lines:
 
 ```python
 """

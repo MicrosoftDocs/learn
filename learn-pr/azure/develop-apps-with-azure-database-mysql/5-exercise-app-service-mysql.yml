@@ -15,7 +15,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-app-service-mysql.md)]

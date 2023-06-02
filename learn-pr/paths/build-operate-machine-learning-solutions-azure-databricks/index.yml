@@ -7,8 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.service: azure-databricks
+  ms.service: azure
 title: Machine learning with Azure Databricks
 prerequisites: |
   This learning path assumes that you  have experience of using Python to explore data and train machine learning models with common open source frameworks, like Scikit-Learn, PyTorch, and TensorFlow.
