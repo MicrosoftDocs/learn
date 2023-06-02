@@ -8,7 +8,7 @@ To connect to a Windows DSVM with Remote Desktop:
 
 1. If necessary, download the [Microsoft Remote Desktop client](https://www.microsoft.com/p/microsoft-remote-desktop/9wzdncrfj3ps?portal=true).
 
-1. Go to the DSVM in the portal.
+1. Go back to the DSVM in the Azure portal.
 
 1. Select **Connect** > **RDP**.
 
@@ -47,7 +47,7 @@ If the `State` value of `OpenSSH.Client` isn't `Installed`, run:
 Add-WindowsCapability -Online -Name OpenSSH.Client~~~~0.0.1.0
 ```
 
-## Connect by using an SSH client from the command line
+### Connect by using an SSH client from the command line
 
 From a terminal or a PowerShell console, run the following code. Replace your username and the IP address for `1.1.1.1`.
 
