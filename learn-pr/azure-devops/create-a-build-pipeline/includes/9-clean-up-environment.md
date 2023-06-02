@@ -3,7 +3,7 @@ You're all done with the tasks for this module. You'll now move the work item to
 ::: zone pivot="ms-hosted-agents"
 
 > [!IMPORTANT]
-> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)). Be sure to do the cleanup steps even if you don't complete this module.
+> This page has important cleanup steps. Cleaning up helps ensure that you don't run out of free build minutes for Microst-hosted agents ([check your usage](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)). Be sure to do the cleanup steps even if you didn't complete this module.
 
 ::: zone-end
 
@@ -27,7 +27,7 @@ Select one of the following options:
 This option deletes your Azure DevOps project, including what's on Azure Boards and your build pipeline. In future modules, you'll be able to run another template that brings up a new project in a state where this one leaves off. Select this option if you don't need your Azure DevOps project for future reference.
 
 > [!TIP]
-> This project isn't needed for subsequent training modules, as each module includes a template that creates a new project that includes the required work from previous modules.
+> This project isn't needed for subsequent training modules, as each module includes a template that creates a new project that includes the required steps from previous modules.
 
 To delete the project:
 
