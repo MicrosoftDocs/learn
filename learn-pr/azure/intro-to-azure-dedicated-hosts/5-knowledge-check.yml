@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What are the extra configuration layers required to run VMs on a dedicated host? "
+  - content: "What are the additional prerequisites required to run VMs on a dedicated host? "
     choices:
     - content: "Host reservations, Hosts, Size sets, Instances"
       isCorrect: false
@@ -24,21 +24,21 @@ quiz:
       explanation: "Incorrect. Scale reservations don't exist. Cores are a layer of standard virtual machines."
     - content: "Host groups, Hosts, Size families, Instances"
       isCorrect: true
-      explanation: "Correct. All these layers are required to run a virtual machine on a dedicated host."
-  - content: "How do dedicated hosts compare to reserved instances?"
+      explanation: "Correct. All these prerequisites are required to run a virtual machine on a dedicated host."
+  - content: "How do maintenance schedules work with dedicated hosts"
     choices:
-    - content: "They're the same feature"
+    - content: "Azure never does maintenance on dedicated hosts."
       isCorrect: false
-      explanation: "Incorrect. Reserved instances are a feature to reserve multi-tenant VMs and save money on scalable workloads."
-    - content: "Reserved instances functionality is included in dedicated hosts"
+      explanation: "Incorrect. Azure still requires occasional maintenance to function properly, however a 35 day notice is given prior to said maintenance. You can choose to perform this maintenance at any time during this time window."
+    - content: "The user selects a maintenance window within a set time window."
       isCorrect: true
-      explanation: "Correct. With Dedicated hosts you reserve the whole host server. There's no need to reserve VM space on said host."
-    - content: "Reserved instances are a different type of dedicated host"
+      explanation: "Correct. Users get a warning 35 days in advance of any major maintenance. You can choose to perform this maintenance at any time during this time window."
+    - content: "Users are given a set time when maintenance will occur."
       isCorrect: false
-      explanation: "Incorrect. Reserved instances are a feature to reserve multi-tenant VMs and save money on scalable workloads. They don't guarantee a specific host or present the same feature set as dedicated hosts. "  
+      explanation: "Incorrect. Azure never performs maintenance on a host without informing the user. You'll get a warning 35 days in advance of any major maintenance. You can choose to perform this maintenance at any time during this time window."  
   - content: "How many VMs can run on a single dedicated host?"
     choices:
-    - content: "As many as you can fit"
+    - content: "As many as the host can fit"
       isCorrect: true
       explanation: "Correct. As long as the sum of the sizes is less than the host's resources, you can run as many VMs as you want."
     - content: "As many as you want as long as they're identical sizes"
