@@ -9,7 +9,7 @@ metadata:
   author: whhender 
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/5-knowledge-check.md)]

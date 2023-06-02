@@ -85,5 +85,3 @@ Monitoring is the act of collecting and analyzing data to determine the performa
 ### Perform security penetration testing
 
 Validating security defenses is as important as testing any other functionality. Make [penetration testing](https://learn.microsoft.com/azure/security/fundamentals/pen-testing) a standard part of your build and deployment process. Schedule regular security tests and vulnerability scanning on deployed applications, and monitor for open ports, endpoints, and attacks.
-
-Fuzz testing is a method for finding program failures (code errors) by supplying malformed input data to program interfaces (entry points) that parse and consume this data. [Microsoft Security Risk Detection](https://www.microsoft.com/security-risk-detection/) is a cloud-based tool that you can use to look for bugs and other security vulnerabilities in your software before you deploy it to Azure. The tool is designed to catch vulnerabilities before you deploy software so you don't have to patch a bug, deal with crashes, or respond to an attack after the software is released.

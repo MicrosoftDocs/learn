@@ -2,9 +2,9 @@ Companies often require their developer teams to develop products by using sever
 
 In our e-commerce scenario, you want to speed up the developer onboarding process. A good solution is to use Azure DevTest Labs. It simplifies onboarding by allowing developers and administrators to manage VMs and platform as a service (PaaS) resources within a predefined budget. You can then use on-premises solutions to spin up test servers and development VMs in minutes rather than days.
 
-Virtualization is the process of creating a software-based, or *virtual* version of a computer. A VM is a computer file, typically called an image, that behaves like an actual computer. It has a CPU, memory, disks to store your files, and can connect to the internet. Each VM is independent from one another and the physical host machine. For more information, see [What is a virtual machine?](https://azure.microsoft.com/overview/what-is-a-virtual-machine/#overview).
+Virtualization is the process of creating a software-based, or *virtual* version of a computer. A VM is a computer file (typically called an image) that behaves like an actual computer. It has a CPU, memory, disks to store your files, and can connect to the internet. Each VM is independent from one another and the physical host machine. For more information, see [What is a virtual machine?](https://azure.microsoft.com/overview/what-is-a-virtual-machine/#overview).
 
-In this unit, you'll learn about the capabilities and features of Azure DevTest Labs.
+In this unit, you learn about the capabilities and features of Azure DevTest Labs.
 
 ## The DevTest Labs environment
 
@@ -18,7 +18,7 @@ To help you create and manage environments for development, testing, and staging
 - Manage formulas to tailor custom builds to a specific situation.
 - Manage artifacts to install software extensions on VMs after they're provisioned.
 - Set autostart and autoshutdown schedules.
-- Claim a pre-created VM without going through the creation process.
+- Claim a precreated VM without going through the creation process.
 
 ## Cost control and governance
 
@@ -35,11 +35,11 @@ In DevTest Labs, you can track the cost of environments and the costs incurred b
 
 To ensure security, DevTest Labs environments give you close control over the use of Azure resources. A lab owner can allow users access to only the PaaS resources they need. The owner provides approved configurations without giving access to any other Azure resources.
 
-For our scenario's e-commerce company, which needs to onboard new developers rapidly, DevTest Labs also allows developers to customize their environments in a controlled way. For example, the lab owner can allow lab users to add or remove Azure resources within the managed resource group only. Because the user's not granted access to the entire Azure subscription, it's easier to track and manage resources.
+DevTest Labs also allows developers to customize their environments in a controlled way. For example, the e-commerce company in our scenario needs to onboard new developers rapidly. With DevTest Labs, the lab owner can allow lab users to add or remove Azure resources within the managed resource group only. Because the user's not granted access to the entire Azure subscription, it's easier to track and manage resources.
 
 ## Create IaaS and PaaS resources
 
-PaaS and infrastructure as a service (IaaS) resources are both available within Azure DevTest Labs. PaaS resources, such as an Azure web app, provide a more managed solution. IaaS resources give you additional control but come with more responsibilities. For example, for VMs you manage the operating system. You handle both PaaS and IaaS resources in the *Environments* area.
+PaaS and infrastructure as a service (IaaS) resources are both available within Azure DevTest Labs. PaaS resources, such as an Azure web app, provide a more managed solution. IaaS resources give you more control but come with more responsibilities. For example, for VMs you manage the operating system. You handle both PaaS and IaaS resources in the *Environments* area.
 
 You support and configure PaaS and IaaS resources by using Azure Resource Manager templates (ARM templates). An ARM template is a JavaScript Object Notation (JSON) file that defines the infrastructure and configuration for your project. In the template, you specify the resources to deploy and the resource properties. You can version an ARM template under source control, such as a Git repository, and manage it like any other code file. By using ARM templates, you enable consistent deployment and management of environments. For more information, see [What are ARM templates?](/azure/azure-resource-manager/templates/overview).
 
@@ -53,7 +53,7 @@ With Azure Lab Services, you create simple and controlled classroom lab environm
 
 DevTest Labs is similar to Lab Services in some respects, but it gives you greater control over the infrastructure and configuration within a custom lab. Your lab can be more than a classroom environment. For example, you can create labs for testing and staging software.
 
-The two products' main differences are highlighted in the following table:
+The main differences between the two products are highlighted in the following table:
 
 | Feature | Azure Lab Services | Azure DevTest Labs
 | -------- | ----------- | ----------- |
