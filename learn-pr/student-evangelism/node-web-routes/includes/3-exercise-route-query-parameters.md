@@ -83,7 +83,7 @@ The code contains an Express application. The next step is to implement two rout
 - `/products/:id`: This route should return a single product.
 - `/products`: This route should return all products, or as many products that query parameters ask for.
 
-1. To implement the route `/products/:id`, locate the following code:
+1. To implement the route `/products/:id`, locate the following code in the *app.js* file in the *parameters* directory:
 
    ```javascript
    app.get("/products/:id", (req, res) => {});

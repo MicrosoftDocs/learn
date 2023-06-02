@@ -30,6 +30,7 @@ It's common to construct an API with many resources. Each resource can have seve
    - client-delete.js
    - client-delete-route.js
    - package.json
+   - package-lock.json
 
 1. The *package.json* file contains an `express` dependency. In the terminal, run the following command to install it:
 
@@ -77,9 +78,9 @@ It's common to construct an API with many resources. Each resource can have seve
 
 ## Implement routes
 
-To implement routes, add a little code and then test it. Do this method by method until you have a fully functional API.
+To implement routes, add a little code and then test it. Continue method by method until you have a fully functional API. Make your changes in the *app.js* file in the *reading-writing* directory.
 
-1. Support reading from the API. Locate the part of the code that looks like this:
+1. To support reading from the API, locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
