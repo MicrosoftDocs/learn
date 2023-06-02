@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 durationInMinutes: 6
 content: |
   [!include[](includes/17-knowledge-check.md)]

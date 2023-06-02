@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 durationInMinutes: 1
 content: |
   [!include[](includes/16-bring-all-together.md)]

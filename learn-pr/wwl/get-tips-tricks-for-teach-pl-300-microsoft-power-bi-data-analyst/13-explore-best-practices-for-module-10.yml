@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 durationInMinutes: 2
 content: |
   [!include[](includes/13-explore-best-practices-for-module-10.md)]
