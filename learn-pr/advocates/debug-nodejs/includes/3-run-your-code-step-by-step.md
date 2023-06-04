@@ -25,9 +25,9 @@ You can add this statement at any point in your code, like this:
 
 Because a debugger has full access to the execution environment, a malicious actor could also use it to inject arbitrary code in your Node.js process. That's why, by default, Node.js doesn't allow you to debug a running program. You have to enable a special mode called *inspector* mode to allow debugging.
 
-You need the `--inspect` option to allow a Node.js process to listen for a debugger client that will attach itself to the process, and take control of your program execution.
+You need the `--inspect` option to allow a Node.js process to listen for a debugger client that attaches itself to the process and takes control of your program execution.
 
-By default, when Node.js is started with the `--inspect` option, it will listen on host 127.0.0.1 on port 9229. You can also specify a custom host and port by using the syntax `--inspect=<HOST>:<PORT>`.
+By default, when Node.js is started with the `--inspect` option, it listens on host 127.0.0.1 on port 9229. You can also specify a custom host and port by using the syntax `--inspect=<HOST>:<PORT>`.
 
 > [!IMPORTANT]
 > Avoid binding the Node.js debugger port to a public IP address or to 0.0.0.0. Otherwise, any clients that can connect to your IP address could potentially connect and control your Node.js process. By doing so, an attacker can remotely run arbitrary code on your execution environment. This action could lead to a potentially severe security breach.
@@ -49,7 +49,7 @@ For example, you can use [node-inspect](https://github.com/nodejs/node-inspect).
 node inspect <YOUR_SCRIPT>.js
 ```
 
-The node-inspect debugger will run Node.js with inspect mode enabled, and launch at the same time as the integrated interactive debugger. It will pause execution just before your code starts. You should see the debugger prompt that indicates it has successfully launched.
+The node-inspect debugger runs Node.js with inspect mode enabled and launches at the same time as the integrated interactive debugger. It pauses execution just before your code starts. You should see the debugger prompt that indicates it has successfully launched.
 
 ```bash
 node inspect myscript.js
@@ -82,4 +82,4 @@ To get information about the current execution point, run these commands:
 - `list(<N>)`: List your source code with *N* lines before and after the current execution point.
 - `exec <EXPR>`: Evaluate an expression within the current execution context. This command is useful to help you get information about the current state. For example, you can get the value of a variable named `i` by using `exec i`.
 
-That's quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press <kbd>Ctrl+D</kbd>, or select the command `.exit`.
+Those are quite a few commands to remember. Thankfully, you can also use the `help` command to show the complete list of available commands. To exit the debugger at any time, press <kbd>Ctrl+D</kbd>, or select the command `.exit`.

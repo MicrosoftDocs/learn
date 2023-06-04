@@ -8,7 +8,7 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.service: powerbi
+  ms.service: fabric
   ms.custom:
     - build-2023
     - build-2023-dataai
@@ -30,7 +30,7 @@ roles:
 - data-engineer
 - data-scientist
 products:
-- power-bi
+- fabric
 subjects:
 - data-science
 - machine-learning

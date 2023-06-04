@@ -5,12 +5,9 @@ In this exercise:
 - Create an Azure Database for PostgreSQL instance in the Azure portal
 - Change the pricing tier and backup options
 
-The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources to complete the exercises, for free.
+[!INCLUDE[azure-exercise-subscription-prerequisite](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
-1. Sign in to the Azure portal by using the same account that you activated the sandbox with.
-
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. Select **Create a resource** > **Databases** > **Azure Database for PostgreSQL**. You can also use the **Search** functionality to find this category. Select **Create**.
 
@@ -24,9 +21,9 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
     | Parameter | Value |
     |:----------|:------|
-    | On the **Basics** tab, under **Project details**:         |
+    | On the **Basics** tab, under **Project details**: |
     | **Subscription**   | Leave as **Concierge subscription**. |
-    | **Resource group** | learn-xxx                            |
+    | **Resource group** | learn-xxxxx (xxxxx = any name you choose) |
     | Under **Server details**:                                                       |
     | **Server name**       | Choose a unique name, such as *payment-server-demo*.    |
     | **Data source**       | Leave as **none**.                                      |
@@ -37,7 +34,8 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
     | **Admin username**            | **paymentadmin**                |
     | **Password/Confirm password** |  Choose and confirm a password. |
 
-1. Note the password and server name for later use.
+    > [!NOTE]
+    > You need the resource group, server name, username and password for later use.
 
 1. Under the **Compute + storage** option, select **Configure server**.
 
@@ -55,4 +53,4 @@ The Azure Sandbox gives you a safe, sandboxed environment to use Azure resources
 
 1. Select **Review + create**, then select **Create**.
 
-Congratulations! Your database is being deployed to Azure.
+**Congratulations! Your database is being deployed to Azure.**
