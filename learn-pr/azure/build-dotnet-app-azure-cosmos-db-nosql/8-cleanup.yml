@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.build-dotnet-app-azure-cosmos-db-nosql.prepare
+uid: learn.build-dotnet-app-azure-cosmos-db-nosql.cleanup
 title: Clean up
 metadata:
   unitType: learning-content
