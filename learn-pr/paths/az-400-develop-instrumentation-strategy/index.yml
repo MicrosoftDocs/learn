@@ -8,7 +8,7 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: "Develop an instrumentation strategy"
 summary: |
   Learn how logging, telemetry, and monitoring give you full visibility into what's happening in your environment.
