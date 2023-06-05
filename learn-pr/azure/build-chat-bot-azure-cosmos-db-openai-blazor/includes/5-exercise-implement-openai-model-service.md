@@ -141,6 +141,9 @@ At this point, your application should have a thorough enough implementation of 
     dotnet watch run --non-interactive
     ```
 
+    > [!TIP]
+    > The **Hot Reload** feature is enabled here if you need to make a small correction to the application's code. For more information, see [.NET Hot Reload support for ASP.NET Core](/aspnet/core/test/hot-reload).
+
 1. Visual Studio Code launches the in-tool simple browser again with the web application running. In the web application, create a new chat session and ask the AI assistant a question. The AI assistant now responds with a completion created by the model. You should also notice that the *token* UI fields are now populated with real-world token usage for each completion and prompt.
 
     :::image type="content" source="../media/openai-implemented-application.png" lightbox="../media/openai-implemented-application.png" alt-text="Screenshot of the application running with a connection Azure OpenAI.":::

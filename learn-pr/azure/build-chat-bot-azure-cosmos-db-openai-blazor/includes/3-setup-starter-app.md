@@ -43,3 +43,6 @@ Now it's time to make sure the application works as expected. In this step, buil
     :::image type="content" source="../media/starter-application.png" lightbox="../media/starter-application.png" alt-text="Screenshot of the application running without a connection to Azure OpenAI or Azure Cosmos DB.":::
 
 1. Close the terminal.
+
+    > [!IMPORTANT]
+    > Closing the terminal releases the port so you can rebuild and run this application again later in this project. If you forget to close the terminal, you may run into issues with the application's port already being in use when debugging later in the project.
