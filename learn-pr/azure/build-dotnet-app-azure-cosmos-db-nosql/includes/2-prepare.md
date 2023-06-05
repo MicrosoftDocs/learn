@@ -118,12 +118,12 @@ A [development container](https://containers.dev/) environment is available with
 
 1. Wait for the codespace to start. This startup process can take a few minutes.
 
-1. Open a new terminal in the editor.
+1. Open a new terminal in the codespace.
 
     > [!TIP]
     > You can use the main menu to navigate to the **Terminal** menu option and then select the **New Terminal** option.
     >
-    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the menu option to open a new terminal.":::
+    > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
 1. Validate that .NET 7 is installed in your environment:
 
