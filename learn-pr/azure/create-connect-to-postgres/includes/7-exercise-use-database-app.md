@@ -11,9 +11,9 @@ In this exercise:
 
 ## Download the data and webapp
 
-1. If your Azure Cloud Shell is still connected to the database, exit with `\q`.
+1. If your [Azure Cloud Shell](https://shell.azure.com/) is still connected to the database, exit with `\q`.
 
-1. In the Cloud Shell window, run the following command to download the data files and application code.
+1. In the [Cloud Shell](https://shell.azure.com/) window, run the following command to download the data files and application code.
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-create-connect-postgresql.git payment-app
@@ -65,7 +65,6 @@ Connect to the database again, and load the CSV data into the database.
     SELECT * from payment_users;
     ```
 
-1. Exit from the database and return to the Azure Cloud Shell.
 
     ```sql
     \q
@@ -75,7 +74,7 @@ Connect to the database again, and load the CSV data into the database.
 
 Now that you have more data to query, deploy the webapp, then connect it to the database.
 
-1. In Cloud Shell, go to the **payment-app** folder.
+1. In [Cloud Shell](https://shell.azure.com/), go to the **payment-app** folder.
 
     ```bash
     cd ~/payment-app
@@ -86,24 +85,25 @@ Now that you have more data to query, deploy the webapp, then connect it to the 
     ```bash
     WEBAPPNAME=payment-app-$RANDOM
     az webapp up \
-        --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
+        --resource-group "<rgn>[your resource group name]</rgn>" \
         --location centralus \
         --sku F1 \
         --name $WEBAPPNAME
+        --os-type Linux
     ```
 
-   If you're running this command outside the sandbox, you might encounter an error. Supply a value for the `--os-type` parameter. For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
+    For more information, see [az webapp up](/cli/azure/webapp#az-webapp-up).
 
 1. When the webapp has been deployed, the output shows an *App_url* with the URL of the web site. Open the URL in a new tab.
 
     > [!NOTE]
-    > If you select the URL directly from the Azure Cloud Shell, there might be an extra `"` on the end of the URL, causing the website to not connect. If necessary, remove the `"` from the end of the URL.
+    > If you select the URL directly from the [Azure Cloud Shell](https://shell.azure.com/), there might be an extra `"` on the end of the URL, causing the website to not connect. If necessary, remove the `"` from the end of the URL.
 
 ## Add code to the web app to query the paymentapp database
 
 Now add to the application the code to retrieve user data from the database.
 
-1. In Cloud Shell, go to the *payment-app/Models* folder.
+1. In [Cloud Shell](https://shell.azure.com/), go to the *payment-app/Models* folder.
 
     ```bash
     cd ~/payment-app/Models
@@ -166,10 +166,7 @@ Now add to the application the code to retrieve user data from the database.
 
     The data for each user is _userID_, _userName_, and _userAge_.
 
-1. Leave the code editor open, and switch to the Azure portal in a new tab.
-
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Leave the code editor open, and switch to the [Azure portal](https://portal.azure.com) in a new tab.
 
 1. In the Azure portal menu, select your server, **payment-server-demo**.
 
@@ -299,7 +296,7 @@ If your program doesn't properly query the user data, come back to this file and
 
 The application can now retrieve the course data. Now, update the app to display the data to the user.
 
-1. In Cloud Shell, move to the *payment-app/Pages* folder.
+1. In [Cloud Shell](https://shell.azure.com/), move to the *payment-app/Pages* folder.
 
     ```bash
     cd ~/payment-app/Pages
@@ -414,7 +411,7 @@ The completed *Index.cshtml* file should contain the following code.
 
 With the application fully configured to retrieve and display the course data to the user, you can deploy the updated version.
 
-1. In Cloud Shell, return to the *payment-app* folder.
+1. In [Cloud Shell](https://shell.azure.com/), return to the *payment-app* folder.
 
     ```bash
     cd ~/payment-app
@@ -424,8 +421,12 @@ With the application fully configured to retrieve and display the course data to
 
     ```bash
     az webapp up \
-        --resource-group "<rgn>[Sandbox resource group name]</rgn>" \
+        --resource-group "<rgn>[your resource group name]</rgn>" \
         --name $WEBAPPNAME
     ```
 
 1. After the new web app is deployed, select the link for the app. It should now display a list of users with the data that's stored in the database.
+
+[!INCLUDE [azure-exercise-subscription-cleanup](../../../includes/azure-exercise-subscription-cleanup.md)]
+
+To delete a resource group, use [az group delete](/azure/azure-resource-manager/management/manage-resource-groups-cli).
