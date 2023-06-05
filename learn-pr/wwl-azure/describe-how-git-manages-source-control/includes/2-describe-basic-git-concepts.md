@@ -36,7 +36,7 @@ With a software development project, you might need to have different versions o
  -  a test version of the code where you test out new features and make updates that may never make it to a public release.
  -  a break/fix version of the code, where the only updates made to the code from the current live version are fixes for errors that come up.
 
-With all of those versions needed, you might think you have to keep four different repositories. However, with branches, you can have all of those, and more, within the same repository. Branches let you create copes of the existing code and then branch-off to work on something that doesn’t impact the main, or live, version of the code.
+With all of those versions needed, you might think you have to keep four different repositories. However, with branches, you can have all of those, and more, within the same repository. Branches let you create copies of the existing code and then branch-off to work on something that doesn’t impact the main, or live, version of the code.
 
 Later, if you find something you want to incorporate from one of your branches back into the main version of the code, you can easily do that by “merging” the branched code back into the main code. This way you can work on a fix or new feature, and when the new feature is working and has been tested, you can merge it into the live branch and deploy the feature to the public.
 
@@ -50,7 +50,7 @@ When you clone a repo to your computer, you’re creating a copy of all of the f
 
 When you’re making changes, you can decide if you want to include those changes in your local repo or both your local repo and the original repo. If you want to keep your changes and add them to your local repo, you’ll need to commit the changes. Commit simply tells your local repo to update the file. When you commit, you’ll need to enter a comment letting anyone else who comes across your changes what you did.
 
-If you want to synch those changes back to the original repo, you’ll need to push the changes back to the original repo after you commit them to your local repo.
+If you want to sync those changes back to the original repo, you’ll need to push the changes back to the original repo after you commit them to your local repo.
 
 A commit saves the updates that you made to your local repo, so you can always revert back to those later. However, only people with access to your local repo will see those updates. If you’re working with other developers, any updates you commit won’t be available to them.
 
