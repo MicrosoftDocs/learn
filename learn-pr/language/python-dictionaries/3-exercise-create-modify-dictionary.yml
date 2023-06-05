@@ -11,6 +11,6 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 7
 sandbox: true
 notebook: notebooks/3-exercise-create-modify.ipynb

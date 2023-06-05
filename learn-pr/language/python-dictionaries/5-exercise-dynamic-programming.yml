@@ -11,6 +11,6 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 5
 sandbox: true
 notebook: notebooks/5-exercise-dynamic-programming.ipynb
