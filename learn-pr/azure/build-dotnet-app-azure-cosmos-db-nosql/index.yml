@@ -49,6 +49,7 @@ units:
   - learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-create-items
   - learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-read-query
   - learn.build-dotnet-app-azure-cosmos-db-nosql.exercise-linq
+  - learn.build-dotnet-app-azure-cosmos-db-nosql.cleanup
   - learn.build-dotnet-app-azure-cosmos-db-nosql.knowledge-check
   - learn.build-dotnet-app-azure-cosmos-db-nosql.summary
 badge:
