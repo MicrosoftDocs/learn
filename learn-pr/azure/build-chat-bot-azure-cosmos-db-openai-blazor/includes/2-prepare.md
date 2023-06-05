@@ -20,9 +20,9 @@ To complete this project, you need an Azure Cosmos DB for NoSQL account and an A
 > [!TIP]
 > This "zero-touch" Bicep template also includes the final application running in Azure App Service. You can always check this out if you want to see a fully working solution.
 
-### Deploy Bicep template
+### Deploy infrastructure from template
 
-This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-Samples/cosmosdb-chatgpt) GitHub repository for both the Azure Resource Manager templated deployment and the application code. In this step, create a new deployment using the Bicep template from this repository.
+This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-Samples/cosmosdb-chatgpt) GitHub repository for both the Azure Resource Manager templated deployment and the application code. In this step, create a new deployment using the Bicep template to deploy your resources using "infrastructure as code".
 
 1. Create a new shell variable named **resourceGroupName** with the name of the Azure resource group that has already been created on your behalf.
 
