@@ -59,7 +59,7 @@ To configure policies
      -  **Key**: **OS edition**
      -  **Operator**: **==**
      -  **Value**: **Enterprise multi-session**
-     -  Select **Apply**. The filtered list now shows all configuration profile categories that support Windows 10 or Windows 11 Enterprise multi-session. The scope for a policy is shown in parantheses. For user scope it shows as (User) and all the rest are policies with device scope.
+     -  Select **Apply**. The filtered list now shows all configuration profile categories that support Windows 10 or Windows 11 Enterprise multi-session. The scope for a policy is shown in parentheses. For user scope it shows as (User) and all the rest are policies with device scope.
 8.  From the filtered list, pick the categories that you want.
      -  For each category you pick, select the settings that you want to apply to your new configuration profile.
      -  For each setting, select the value that you want for this configuration profile.
@@ -74,4 +74,4 @@ Windows 10 or Windows 11 Administrative Templates are supported for Windows 10 o
 
  -  ADMX-backed policies are supported. Some policies aren't yet available in the Settings catalog.
  -  ADMX-ingested policies are supported, including Office and Microsoft Edge settings available in Office administrative template files and Microsoft Edge administrative template files.
- -  ADMX - ingested policies are not supported for user targetting at this time.
+ -  ADMX - ingested policies are not supported for user targeting at this time.

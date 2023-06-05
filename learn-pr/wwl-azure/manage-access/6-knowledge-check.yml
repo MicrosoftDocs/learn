@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Assign a role"
       isCorrect: true
-      explanation: "That's correct. Azure Virtual Desktop has a delegated access model that lets you define the amount of access a user can have by assigning them a role. A role assignment has three components: security principle, role definition, and scope. The Azure Virtual Desktop delegated access model is based on the Azure RBAC model."
+      explanation: "That's correct. Azure Virtual Desktop has a delegated access model that lets you define the amount of access a user can have by assigning them a role. A role assignment has three components: security principal, role definition, and scope. The Azure Virtual Desktop delegated access model is based on the Azure RBAC model."
     - content: "Assign the Desktop Virtualization Reader role to the group."
       isCorrect: false
       explanation: "That's incorrect. The Desktop Virtualization Reader role lets you view everything in the deployment but doesn't let you make any changes."
