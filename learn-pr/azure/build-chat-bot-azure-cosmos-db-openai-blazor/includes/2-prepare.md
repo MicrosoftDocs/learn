@@ -48,34 +48,6 @@ This project uses the [azure-samples/cosmosdb-chatgpt](https://github.com/Azure-
 
 Your template deployed Azure Cosmos DB for NoSQL and Azure OpenAI accounts and then stored their credentials in the Azure App Service web app's configuration. Now, you have the choice of using the Azure portal or Azure CLI to retrieve the credentials for each service.
 
-#### [Azure portal](#tab/azure-portal)
-
-Use the [Azure portal](/azure/azure-portal) to get the credentials from the Azure OpenAI and Azure Cosmos DB resources.
-
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
-
-1. Select **Resource Groups** and then select the `<rgn>[sandbox resource group name]</rgn>` resource group.
-
-    :::image type="content" source="../media/portal-resource-group.png" lightbox="../media/portal-resource-group.png" alt-text="Screenshot of the resource group page with an Azure Cosmos DB and Azure OpenAI resource.":::
-
-1. On the **Resource Groups** page, expand the **Essentials** panel and observe the **Deployments** header. The status for the deployment should be **Succeeded** at this point.
-
-1. Now, select the **Azure Cosmos DB** account to navigate to the resource's page.
-
-    :::image type="content" source="../media/portal-database-account.png" alt-text="Screenshot of the Azure Cosmos DB for NoSQL resource page.":::
-
-1. Select the **Keys** option in the **Settings** section of the resource navigation menu. Record the value of the **URI** and **PRIMARY KEY** fields. You use these values later.
-
-    :::image type="content" source="../media/portal-database-account-credentials.png" alt-text="Screenshot of the credentials for an Azure Cosmos DB for NoSQL account.":::
-
-1. Return to the **Resource Groups** page. Select the **Azure OpenAI** account.
-
-    :::image type="content" source="../media/portal-openai-account.png" alt-text="Screenshot of the Azure OpenAI resource page.":::
-
-1. In the **Settings** section of the resource navigation menu, select **Keys and Endpoint**. Record the value of the **ENDPOINT** and **KEY 1** fields. You also use these values later.
-
-    :::image type="content" source="../media/portal-openai-account-credentials.png" alt-text="Screenshot of the credentials for an Azure OpenAI account.":::
-
 #### [Azure CLI](#tab/azure-cli)
 
 Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosmos DB credentials to use in your local development environment. In this section, you filter the output of the various commands to return your endpoint and connection string to use with the .NET SDKs of both Azure OpenAI and Azure Cosmos DB for NoSQL.
@@ -144,6 +116,34 @@ Use `az webapp config` from the Azure CLI to get the Azure OpenAI and Azure Cosm
     ```
 
 1. Record the value of the endpoint and key for both the Azure Cosmos DB for NoSQL and Azure OpenAI accounts. You use these credentials later in this project to connect to each account.
+
+#### [Azure portal](#tab/azure-portal)
+
+Use the [Azure portal](/azure/azure-portal) to get the credentials from the Azure OpenAI and Azure Cosmos DB resources.
+
+1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true).
+
+1. Select **Resource Groups** and then select the `<rgn>[sandbox resource group name]</rgn>` resource group.
+
+    :::image type="content" source="../media/portal-resource-group.png" lightbox="../media/portal-resource-group.png" alt-text="Screenshot of the resource group page with an Azure Cosmos DB and Azure OpenAI resource.":::
+
+1. On the **Resource Groups** page, expand the **Essentials** panel and observe the **Deployments** header. The status for the deployment should be **Succeeded** at this point.
+
+1. Now, select the **Azure Cosmos DB** account to navigate to the resource's page.
+
+    :::image type="content" source="../media/portal-database-account.png" alt-text="Screenshot of the Azure Cosmos DB for NoSQL resource page.":::
+
+1. Select the **Keys** option in the **Settings** section of the resource navigation menu. Record the value of the **URI** and **PRIMARY KEY** fields. You use these values later.
+
+    :::image type="content" source="../media/portal-database-account-credentials.png" alt-text="Screenshot of the credentials for an Azure Cosmos DB for NoSQL account.":::
+
+1. Return to the **Resource Groups** page. Select the **Azure OpenAI** account.
+
+    :::image type="content" source="../media/portal-openai-account.png" alt-text="Screenshot of the Azure OpenAI resource page.":::
+
+1. In the **Settings** section of the resource navigation menu, select **Keys and Endpoint**. Record the value of the **ENDPOINT** and **KEY 1** fields. You also use these values later.
+
+    :::image type="content" source="../media/portal-openai-account-credentials.png" alt-text="Screenshot of the credentials for an Azure OpenAI account.":::
 
 ---
 
