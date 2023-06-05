@@ -1,17 +1,20 @@
-Redis is an open-source in-memory data store that improves the speed and scalability of applications in the cloud. Azure Cache for Redis offers a fully-managed, secure Redis data cache and messaging broker that provides high throughput and low-latency access to application data.
 
-In this module, you learn the main use cases for Redis, and how to create and configure an Azure Cache for Redis instance. You develop a Spring Boot application that uses Azure Cache for Redis to store business and session data, and use Spring Boot and Azure App Service to run and scale your application in the cloud.
+[Redis](https://redis.io) is an open-source, BSD licensed, in-memory data store that improves the speed and scalability of applications. [Azure Cache for Redis](https://azure.microsoft.com/services/cache) offers a fully-managed, secure Redis database, cache, and message broker that provides high throughput and low latency access to application data.
+
+In this module, you learn about the main Redis use cases, and how to create and configure an Azure Cache for Redis instance. You develop a Spring Boot application that uses Azure Cache for Redis to store business and session data, and use Maven and Azure App Service to deploy and run your application in the cloud.
 
 ## Learning goals
 
-- Describe and differentiate the main use cases for Azure Cache for Redis.
+- Describe and differentiate the main Azure Cache for Redis use cases.
 - Configure a Spring Boot application to cache business objects through Spring Data Redis.
-- Configure Spring Session to replicate HTTP session data between server nodes.
+- Use Spring Session to store and replicate HTTP session data between server nodes.
 
 ## Prerequisites
 
-- A code editor installed, and familiarity with developing and running Java and Spring Boot applications.
+- Familiarity with developing and running Java applications.
+- A Java JDK installed.
+- A development environment with all necessary tools for building and running Java and Spring Boot applications, including Spring Initializr.
 - The [Azure CLI](/cli/azure/install-azure-cli) installed. You can check your Azure CLI version by running `az --version`.
-- Access to an Azure subscription. If you don't have one, [create a free account]().
-- Beginner-level experience with cloud infrastructure.
+- Access to an Azure subscription. If you don't have one, [create an account for free]().
+- Beginner-level experience with Azure cloud infrastructure.
 
