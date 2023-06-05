@@ -30,11 +30,11 @@ Azure Virtual Desktop uses Azure role-based access control (RBAC) while publishi
 Run the following cmdlet to add Azure Active Directory users to an app group:
 
 ```powershell
-New-AzRoleAssignment -SignInName -RoleDefinitionName
+New-AzRoleAssignment -SignInName <userupn> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <appgroupname> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
 ```
 
 Run the following cmdlet to add Azure Active Directory user group to an app group:
 
 ```powershell
-New-AzRoleAssignment -ObjectId -RoleDefinitionName
+New-AzRoleAssignment -ObjectId <usergroupobjectid> -RoleDefinitionName "Desktop Virtualization User" -ResourceName <appgroupname> -ResourceGroupName <resourcegroupname> -ResourceType 'Microsoft.DesktopVirtualization/applicationGroups'
 ```
