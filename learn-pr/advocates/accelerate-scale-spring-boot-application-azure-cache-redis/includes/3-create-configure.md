@@ -10,7 +10,7 @@ While your Azure Cache for Redis instance deploys, read the following sections t
 
 [Azure Cache for Redis](https://azure.microsoft.com/services/cache) is a managed version of Redis that Azure maintains and operates in the cloud. Azure Cache for Redis offers all the benefits of Redis, including high throughput and performance to handle millions of requests per second. Azure also provides the advantages of a managed cloud service, like automatic patches, updates, scaling, and provisioning.
 
-Azure Cache for Redis offers several service tiers. The advanced tiers provide clustering, replication, and high availability for the most critical workloads.
+Azure Cache for Redis offers several service tiers. The advanced tiers provide clustering, geo-replication, and high availability for the most critical workloads.
 
 ## Azure Cache for Redis use cases
 
@@ -18,7 +18,7 @@ Redis and Azure Cache for Redis provide the following main use cases:
 
 - A *distributed cache* speeds up applications that rely on SQL databases. Redis can lower the cost of an application, because scaling a Redis cluster is cheaper than scaling a database.
 - An *HTTP session data store* stores session data, which allows scaling of session-based applications. Applications that use JavaServer Faces (JSF) or that store security data in the user session typically use this mechanism.
-- A *message broker* solution implements publish/subscribe or queue architectures between services.
+- A *message broker* solution implements publish/subscribe or queue architectures.
 
 ## Use Redis with Java
 

@@ -67,7 +67,7 @@ Add a new Spring MVC REST controller to your application to use for testing sess
 HTTP sessions are user-specific and are maintained through a cookie. You can use either of the following methods to test whether sessions are working correctly:
 
 - Point your browser to `http://localhost:8080/session` and reload the page several times.
-- Use the following command line:
+- Run the following command line several times:
 
   ```bash
   curl -b cookie.txt -c cookie.txt http://127.0.0.1:8080/session
@@ -81,4 +81,4 @@ Either method produces output that displays your HTTP session ID with a number t
 
 To check whether sessions are persisted correctly, restart your server and verify that your session data isn't lost.
 
-In the next unit, you deploy your application to the cloud and cluster HTTP sessions between your local machine and the cloud service.
+In the next unit you deploy your application to the cloud, and cluster HTTP sessions between your local machine and the cloud service.

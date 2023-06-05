@@ -13,8 +13,8 @@ In this module, you learn about the main Redis use cases, and how to create and 
 
 - Familiarity with developing and running Java applications.
 - A Java JDK installed.
-- A development environment with all necessary tools for building and running Java and Spring Boot applications, including Spring Initializr.
-- The [Azure CLI](/cli/azure/install-azure-cli) installed. You can check your Azure CLI version by running `az --version`.
-- Access to an Azure subscription. If you don't have one, [create an account for free]().
+- A development environment with all necessary tools for building and running Java and Spring Boot applications.
+- The [Azure CLI](/cli/azure/install-azure-cli) installed.
+- Access to an Azure subscription. If you don't have one, [create an account for free](https://azure.microsoft.com/free).
 - Beginner-level experience with Azure cloud infrastructure.
 

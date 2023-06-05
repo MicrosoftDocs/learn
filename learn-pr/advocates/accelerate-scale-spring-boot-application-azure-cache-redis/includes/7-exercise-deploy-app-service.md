@@ -91,4 +91,4 @@ Use your application URL to run the same client URL (cURL) commands in the cloud
    curl -b cookie.txt -c cookie.txt https://$AZ_REDIS_NAME-webapp.azurewebsites.net/session
    ```
 
-Your local server and your cloud service use the same Redis instance, so they'e clustered. Data that you write in one instance is available in the other instance. The cloud service can scale out by adding more nodes that all use the same Redis instance to store both business data and session data.
+Your local server and your cloud service use the same Redis instance, so they're clustered. Data that you write in one instance is available in the other instance. The cloud service can scale out by adding more nodes that all use the same Redis instance to store both business data and session data.

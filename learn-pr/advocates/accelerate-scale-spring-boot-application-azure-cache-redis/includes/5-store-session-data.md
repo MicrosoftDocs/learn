@@ -10,13 +10,13 @@ One problem is that HTTP session replication mechanisms aren't standardized, but
 
 ## Spring Session
 
-[Spring Session](https://spring.io/projects/spring-session) is a Spring subproject that provides a generic solution for configuring HTTP session replication. Spring Session supports Redis as one of several backend mechanism options. Spring Session replicates all session data within Redis, so when the application scales out, each node has access to the user sessions.
+[Spring Session](https://spring.io/projects/spring-session) is a Spring subproject that provides a generic solution for configuring HTTP session replication. Spring Session supports Redis as one of several backend options. Spring Session replicates all session data within Redis, so when the application scales out, each node has access to the user sessions.
 
 Spring Session configuration is similar to the previous Spring Data configuration, and illustrates another recommended Redis usage scenario.
 
 ## Use Spring Session with Redis
 
-Some of this configuration is the same as for Spring Data Redis, and you need to do it only once for both solutions. As in the Spring Data configuration, you typically use [Spring Initializr](https://start.spring.io/) and do the following main tasks:
+Some of the configuration is the same as for Spring Data Redis, and you need to do it only once for both solutions. As in the Spring Data configuration, you typically use [Spring Initializr](https://start.spring.io/) and do the following main tasks:
 
 1. Add the Spring Session Redis library to your application.
 1. Configure your *application.yml* file to connect to your Azure Cache for Redis instance.

@@ -11,7 +11,7 @@ metadata:
   ms.contributors: judubois-03112021
   ms.service: cache
 title: Accelerate a Spring Boot application with Azure Cache for Redis
-summary: Learn how to use Azure Cache for Redis with a Java Spring Boot application to cache business data through Spring Data Redis and store HTTP session data through Spring Session.
+summary: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
 abstract: | 
   - Describe and differentiate the main Azure Cache for Redis use cases.
   - Configure a Spring Boot application to cache business objects through Spring Data Redis.
@@ -19,7 +19,7 @@ abstract: |
 prerequisites:  |
   - Familiarity with developing and running Java applications.
   - A Java JDK installed.
-  - A development environment with all necessary tools for building and running Java and Spring Boot applications, including Spring Initializr.
+  - A development environment with all necessary tools for building and running Java and Spring Boot applications.
   - The Azure CLI installed.
   - Access to an Azure subscription.
   - Beginner-level experience with Azure cloud infrastructure.

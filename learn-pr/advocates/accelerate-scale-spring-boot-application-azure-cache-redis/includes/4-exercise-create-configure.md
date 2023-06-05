@@ -148,7 +148,7 @@ curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=w
        --name $AZ_REDIS_NAME
    ```
 
-   Copy the `primaryKey` value to use in the next step.
+   Copy the `primaryKey` value from the output to use in the next step.
 
 ## Configure Spring Boot to connect to Azure Cache for Redis
 
@@ -169,7 +169,7 @@ spring.redis.ssl=true
    ./mvnw spring-boot:run
    ```
 
-1. With the application running, store some data in Redis by using the following command line:
+1. With the application running, store some data in Redis by using the following command:
 
    ```bash
    curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:8080
