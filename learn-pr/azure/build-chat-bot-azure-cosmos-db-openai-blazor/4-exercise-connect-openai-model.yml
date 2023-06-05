@@ -14,6 +14,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 6/5/2023
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-connect-openai-model.md)]

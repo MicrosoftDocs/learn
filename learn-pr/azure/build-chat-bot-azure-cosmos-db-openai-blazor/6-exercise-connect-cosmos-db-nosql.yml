@@ -14,6 +14,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.date: 6/5/2023
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/6-exercise-connect-cosmos-db-nosql.md)]
