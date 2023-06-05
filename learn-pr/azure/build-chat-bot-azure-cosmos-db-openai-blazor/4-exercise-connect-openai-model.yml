@@ -8,11 +8,12 @@ metadata:
     Import the Azure.AI.OpenAI package from NuGet. Next, create a client instance. Then, configure the deployment name and maximum token count.
   author: seesharprun
   manager: jroth
+  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/15/2023
+  ms.date: 6/5/2023
 durationInMinutes: 5
 content: |
   [!include[](includes/4-exercise-connect-openai-model.md)]

@@ -11,7 +11,7 @@ metadata:
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/15/2023
+  ms.date: 6/5/2023
 title: Guided project - Build a chat bot using Azure OpenAI, Azure Cosmos DB for NoSQL, and ASP.NET Blazor
 summary: |
   Connect an existing ASP.NET Core Blazor web application to Azure Cosmos DB for NoSQL and Azure OpenAI using their .NET SDKs. Your code manages and queries items in an API for NoSQL container. Your code also sends prompts to Azure OpenAI and parses the responses.
@@ -55,6 +55,7 @@ units:
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-openai-model-service
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-connect-cosmos-db-nosql
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.exercise-implement-cosmos-db-nosql-service
+- learn.build-chat-bot-azure-cosmos-db-openai-blazor.cleanup
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.knowledge-check
 - learn.build-chat-bot-azure-cosmos-db-openai-blazor.summary
 badge:

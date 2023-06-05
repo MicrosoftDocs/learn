@@ -8,11 +8,12 @@ metadata:
     Import the Microsoft.Azure.Cosmos package from NuGet. Next, create a client instance. Then, configure the database and container connections.
   author: seesharprun
   manager: jroth
+  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/15/2023
+  ms.date: 6/5/2023
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-connect-cosmos-db-nosql.md)]

@@ -8,11 +8,12 @@ metadata:
     Implement the service methods created to connect to Azure OpenAI. In those methods, send prompts to the service, parse the response, and measure the token count utilization.    
   author: seesharprun
   manager: jroth
+  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/15/2023
+  ms.date: 6/5/2023
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-implement-openai-model-service.md)]

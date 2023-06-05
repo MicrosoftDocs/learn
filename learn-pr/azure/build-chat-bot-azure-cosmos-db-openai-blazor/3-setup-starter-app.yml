@@ -8,11 +8,12 @@ metadata:
     Open the starter ASP.NET Blazor web application in Visual Studio Code. Then, run the application for the first time to validate that it builds and runs successfully.
   author: seesharprun
   manager: jroth
+  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/15/2023
+  ms.date: 6/5/2023
 durationInMinutes: 6
 content: |
   [!include[](includes/3-setup-starter-app.md)]

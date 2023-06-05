@@ -8,11 +8,12 @@ metadata:
     Implement the service methods created to connect to Azure Cosmos DB for NoSQL. In those methods, create items, query containers, and perform transactional batch operations.
   author: seesharprun
   manager: jroth
+  sandbox: true
   ms.author: sidandrews
   ms.reviewer: mjbrown
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 5/15/2023
+  ms.date: 6/5/2023
 durationInMinutes: 13
 content: |
   [!include[](includes/7-exercise-implement-cosmos-db-nosql-service.md)]
