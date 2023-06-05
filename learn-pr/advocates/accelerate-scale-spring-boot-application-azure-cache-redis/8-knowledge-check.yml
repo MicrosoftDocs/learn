@@ -15,7 +15,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following use cases is not a main Redis use case?"
+    - content: "Which of the following features isn't a main Redis use case?"
       choices:
         - content: "Distributed cache."
           isCorrect: false
@@ -40,9 +40,9 @@ quiz:
         - content: "Sends messages to every application node to invalidate stale data, so the nodes can then retrieve that data from a persistent database."
           isCorrect: false
           explanation: "Incorrect. Some alternative caching solutions use this mechanism, but Azure Cache for Redis doesn't."
-        - content: "Stores cached data in a SQL database, so that application nodes can retrieve it easily."
+        - content: "Stores cached data in an SQL database, so that application nodes can retrieve it easily."
           isCorrect: false
-          explanation: "Incorrect. Spring Session can use a SQL database to store data as an alternative, but that's a less effective solution than Azure Cache for Redis."
+          explanation: "Incorrect. Spring Session can use an SQL database to store data as an alternative, but that's a less effective solution than Azure Cache for Redis."
     - content: "What's the difference between Redis and Azure Cache for Redis?"
       choices:
         - content: "Azure Cache for Redis is a limited version of Redis that focuses only on caching."

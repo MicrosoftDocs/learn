@@ -1,7 +1,7 @@
 
-[Redis](https://redis.io) is an open-source, BSD licensed, in-memory data store that improves the speed and scalability of applications. [Azure Cache for Redis](https://azure.microsoft.com/services/cache) offers a fully-managed, secure Redis database, cache, and message broker that provides high throughput and low latency access to application data.
+[Redis](https://redis.io) is an open-source, BSD licensed, in-memory data store that improves the speed and scalability of applications. [Azure Cache for Redis](https://azure.microsoft.com/services/cache) offers a fully managed, secure Redis database, cache, and message broker that provides high throughput and low latency access to application data.
 
-In this module, you learn about the main Redis use cases, and how to create and configure an Azure Cache for Redis instance. You develop a Spring Boot application that uses Azure Cache for Redis to store business and session data, and use Maven and Azure App Service to deploy and run your application in the cloud.
+In this module, you learn about the main Redis use cases, and how to create and configure an Azure Cache for Redis instance. You develop a Spring Boot application that uses Azure Cache for Redis to store business and session data. You then use Maven and Azure App Service to deploy and run your application in the cloud.
 
 ## Learning goals
 

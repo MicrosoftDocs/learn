@@ -2,7 +2,7 @@
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis
 metadata:
   title: Accelerate a Spring Boot application with Azure Cache for Redis
-  description: 
+  description: Learn how to use Azure Cache for Redis to cache business data and HTTP session data in a Java Spring Boot application, then publish the application to the cloud.
   author: judubois
   ms.author: judubois
   ms.date: 06/05/2023
