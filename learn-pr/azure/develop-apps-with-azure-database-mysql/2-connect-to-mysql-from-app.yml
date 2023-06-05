@@ -13,7 +13,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
   zone_pivot_groups: dev-lang-php-python-java
 durationInMinutes: 5
 content: |
