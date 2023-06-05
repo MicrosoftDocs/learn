@@ -8,7 +8,7 @@ metadata:
   ms.author: cwatson
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Send notifications when an alert is fired using action groups.
+title: Use action groups and alert processing rules to send notifications when an alert is fired
 durationInMinutes: 10
 content: |
   [!include[](includes/7-actions-and-alert-processing-rules.md)]
