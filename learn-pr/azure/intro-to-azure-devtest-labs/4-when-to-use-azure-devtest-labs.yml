@@ -8,7 +8,7 @@ metadata:
   author: RoseHJM
   ms.author: rosemalcolm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: When to use Azure DevTest Labs
 durationInMinutes: 10
 content: |

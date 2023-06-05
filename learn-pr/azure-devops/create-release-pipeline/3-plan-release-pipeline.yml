@@ -9,7 +9,7 @@ metadata:
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/3-plan-release-pipeline.md)]

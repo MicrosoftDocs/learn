@@ -13,7 +13,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-build-your-first
-  ms.prod: learning-azure
+  ms.prod: azure-iot-central
 durationInMinutes: 6
 content: |
   [!include[](includes/8-configure-rules-actions.md)]

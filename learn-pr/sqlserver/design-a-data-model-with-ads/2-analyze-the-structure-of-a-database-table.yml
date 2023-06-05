@@ -8,7 +8,7 @@ metadata:
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/2-analyze-the-structure-of-a-database-table.md)]

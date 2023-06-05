@@ -6,8 +6,9 @@ metadata:
   ms.date: 01/12/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: api-management
+  manager: mcleans
 title: Control authentication for your APIs with Azure API Management
 summary: Discover how to protect your APIs from unauthorized use with API keys and client certificate authentication.
 abstract: | 

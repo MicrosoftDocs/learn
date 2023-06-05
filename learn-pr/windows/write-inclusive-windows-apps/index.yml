@@ -8,6 +8,7 @@ metadata:
   ms.author: aashcraft
   ms.topic: interactive-tutorial
   ms.prod: windows
+  manager: jken
 title: Add principles of inclusive design to your Windows app
 summary: Inclusive app design provides support for users with visual or motor skills impairment. This module will show you how to support such users in a Windows app.
 abstract: |

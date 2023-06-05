@@ -8,7 +8,7 @@ Let's perform a restore from automated Azure SQL Database backups.
 
 It can take up to 15 minutes for the first successful backup to finish. We need to make sure that backups are running before we continue the exercise.
 
-1. Run the following PowerShell command in Azure Cloud Shell to validate that continuous backups are running.
+1. Run the following PowerShell command in Azure Cloud Shell to validate that continuous backups are running:
 
     ```powershell
     Get-AzSqlDatabaseRestorePoint `
@@ -17,7 +17,7 @@ It can take up to 15 minutes for the first successful backup to finish. We need 
         -ServerName $sqlserver.ServerName
     ```
 
-    You should see an output similar to the following code if your backups are running. If the command returns no value, a backup hasn't started yet. Rerun this command in a couple of minutes.
+    You should get an output similar to the following code if your backups are running. If the command returns no value, a backup hasn't started yet. Rerun this command in a couple of minutes.
 
     ```output
     ResourceGroupName        : <rgn>[sandbox resource group name]</rgn>
@@ -38,7 +38,7 @@ Let's start by simulating a mistaken database modification.
 
 1. On the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, select **erpserver-NNNN**, select **SQL databases**, and then select the **sql-erp-db** database.
 
-1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
+1. Select **Query editor (preview)**, then sign in with the **dbadmin** user and the password that you specified for this account.
 
 1. Let's drop the **Person** table that we created earlier. In a new query window, run this command.
 
@@ -46,7 +46,7 @@ Let's start by simulating a mistaken database modification.
     DROP TABLE Person
     ```
 
-1. To check the tables in the database, select **New Query**. Then in the **Query 2** window, run this command to list all tables in the database.
+1. To check the tables in the database, select **New Query**. Then, in the **Query 2** window, run this command to list all tables in the database:
 
     ```sql
     SELECT schema_name(t.schema_id) as schema_name,
@@ -74,8 +74,8 @@ The **Person** table was mistakenly deleted. Now, let's restore the database to 
     | Select source | Point-in-time |
     | Database name | sql-erp-db-restored |
     | Restore point | Select a time 10 minutes ago, before you dropped the **Person** table |
-    | Target server | erpserver-xxxxx |
-    | Want to use SQL elastic pool | No |
+    | Server | erpserver-xxxxx |
+    | Want to use SQL elastic pool? | No |
     | Compute + storage | Default value |
     | Backup storage redundancy | Geo-redundant backup storage |
 
@@ -89,9 +89,9 @@ The restored database should contain the **Person** table. You can check that in
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) menu or from the **Home** page, select **All resources**, and then select the **sql-erp-db-restored** database.
 
-1. Select **Query editor**, and then sign in with the **dbadmin** user and the password that you specified for this account.
+1. Select **Query editor (preview)**, and then sign in with the **dbadmin** user and the password that you specified for this account.
 
-1. To check the tables in the database, in the **Query 1** window, run this command.
+1. To check the tables in the database, in the **Query 1** window, run this command:
 
     ```sql
     SELECT schema_name(t.schema_id) as schema_name,
@@ -104,7 +104,7 @@ The restored database should contain the **Person** table. You can check that in
 
     ![Screenshot of results after querying for the tables in the database.](../media/7-query-after-restore-1.png)
 
-1. Confirm that the data is in the table by running this command.
+1. Confirm that the data is in the table by running this command:
 
     ```sql
     SELECT * FROM Person
@@ -114,4 +114,4 @@ The restored database should contain the **Person** table. You can check that in
 
     ![Screenshot of confirmed results after querying for the tables in the database.](../media/7-query-after-restore-2.png)
 
-You've now seen how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that you've properly defined the backup and restore procedures.
+You've now learned how you can restore a database if something unintended happens to the data. You've familiarized yourself with the restore process. You can now assure your organization that you've properly defined the backup and restore procedures.
