@@ -24,11 +24,12 @@ Let's say you want to display the list of all rainfall. You can type out the nam
 
 for key in rainfall.keys():
     print(f'{key}: {rainfall[key]}cm')
+```
 
-# Output:
-# october: 3.5cm
-# november: 4.2cm
-# december: 2.1cm
+```python
+october: 3.5cm
+november: 4.2cm
+december: 2.1cm
 ```
 
 > [!NOTE]

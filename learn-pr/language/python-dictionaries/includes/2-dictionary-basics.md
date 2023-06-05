@@ -44,8 +44,10 @@ You can read values inside a dictionary. Dictionary objects have a `get` method 
 
 ```python
 print(planet.get('name'))
+```
 
-# Displays Earth
+```Output
+Earth
 ```
 
 As you might suspect, accessing values in a dictionary is a common operation. Fortunately, there's a shortcut. You can also pass the key into square bracket notation (`[ ]`). This method uses less code than `get`, and most programmers use this syntax instead. You could rewrite the preceding example by using the following:
