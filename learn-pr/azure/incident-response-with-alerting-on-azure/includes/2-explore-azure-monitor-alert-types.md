@@ -40,7 +40,7 @@ Every alert or notification available in Azure Monitor is the product of a rule.
     - **3**: Informational
     - **4**: Verbose
 
-:::image type="content" source="../media/2-creating-an-alert.png" alt-text="Screenshot of the Create rule page in the Azure Monitor portal..":::
+:::image type="content" source="../media/2-creating-an-alert.png" alt-text="Screenshot of the Create rule page in the Azure Monitor portal.":::
 
 ## Scope of alert rules
 
