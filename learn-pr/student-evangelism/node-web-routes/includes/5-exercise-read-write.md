@@ -282,8 +282,8 @@ The API responds with an empty array because you haven't written any data to it 
    You should see the following output:
 
    ```output
-   Received data {"name":"product","id":1}
-   Connection closed
+   response {"name":"product","id":1}
+   Closed connection
    ```
   
 1. To check the code, run this command:
