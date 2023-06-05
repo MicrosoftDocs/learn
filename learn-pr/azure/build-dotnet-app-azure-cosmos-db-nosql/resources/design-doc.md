@@ -22,7 +22,7 @@
 
 ## Summary
 
-Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code will create resources, coordinate multiple operations, and query items.
+Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform common operations. Your code creates resources, coordinate multiple operations, and query items.
 
 ## Learning objectives
 
@@ -33,22 +33,22 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
 
 ## Subtasks
 
-| Subtask | What part of the introduction scenario does this subtask satisfy? | How will you assess it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask will you combine it with? |
+| Subtask | What part of the introduction scenario does this subtask satisfy? | How are you assessing it? (Exercise or Knowledge check) | Which learning objective(s) does this help meet? | Does the subtask have enough learning content to justify an entire unit? If not, which other subtask are combined with it? |
 | ---- | ---- | ---- | ---- | ---- |
-| Connect to account | "use best practices" | Knowledge check | 1 | yes |
-| Create resources | "perform common tasks" | Exercise | 2 | yes |
-| Orchestrate multiple operations | "perform common tasks" | Exercise | 3 | no, combine with "create resources" |
-| Query results | "query data" | Exercise | 4 | yes |
+| Connect to account | "use best practices" | Knowledge check | `1` | yes |
+| Create resources | "perform common tasks" | Exercise | `2` | yes |
+| Orchestrate multiple operations | "perform common tasks" | Exercise | `3` | no, combine with "create resources" |
+| Query results | "query data" | Exercise | `4` | yes |
 
 ## Outline
 
 1. Introduction
     - Prose table-of-contents
-      - This module walks through the steps to connect to an Azure Cosmos DB for NoSQL account from a .NET application. Your application will create a database and container resource if they don't already exist. You'll then use both individual and orchestrated operations to create multiple items within the container. Once the data is populated, you'll query the items.
+      - This module walks through the steps to connect to an Azure Cosmos DB for NoSQL account from a .NET application. Your application creates a database and container resource if they don't already exist. You then use both individual and orchestrated operations to create multiple items within the container. Once the data is populated, you query the items.
     - Scenario
-      - Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you'll build will add multiple items using the .NET SDK for Azure Cosmos DB for NoSQL. Although the version you build in this project is the first version of the application, you'll try to use the documented best practices when using the SDK.
+      - Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you build adds multiple items using the .NET SDK for Azure Cosmos DB for NoSQL. Although the version you build in this project is the first version of the application, you try to use the documented best practices when using the SDK.
     - Terminal learning objective (goal)
-      - By the end of this module, you'll be able to create a .NET application that connects to Azure Cosmos DB for NoSQL and perform standard operations and queries.
+      - By the end of this module, you're able to create a .NET application that connects to Azure Cosmos DB for NoSQL and perform standard operations and queries.
 1. Prepare
     - Project overview
     - Setup
@@ -86,12 +86,12 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
 
 | Unit | Minutes |
 | --- | --- |
-| Introduction | 2 |
-| Prepare | 4 |
-| Exercise: Create .NET app and reference SDK | 12 |
-| Exercise: Create account resources | 10 |
-| Exercise: Query and read items | 10 |
-| Exercise: Enumerate items using language-intergrated query | 10 |
-| Knowledge check | 5 |
-| Summary | 2 |
-| **TOTAL** | **55** |
+| Introduction | `2` |
+| Prepare | `4` |
+| Exercise: Create .NET app and reference SDK | `12` |
+| Exercise: Create account resources | `10` |
+| Exercise: Query and read items | `10` |
+| Exercise: Enumerate items using language-intergrated query | `10` |
+| Knowledge check | `5` |
+| Summary | `2` |
+| **TOTAL** | **`55`** |
