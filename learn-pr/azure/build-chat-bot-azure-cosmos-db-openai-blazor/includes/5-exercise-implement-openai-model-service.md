@@ -31,7 +31,7 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     ChatMessage userMessage = new(ChatRole.User, userPrompt);
     ```
 
-1. Create a new variable named `options` of type `ChatCompletionsOptions`. Add the two message variables to the `Messages` list, set the value of `User` to the `sessionId` constructor parameter, set `MaxTokens` to the `MaxConversationTokens` property, and set the remaining properties to the recommended values here.
+1. Create a new variable named `options` of type `ChatCompletionsOptions`. Add the two message variables to the `Messages` list, set the value of `User` to the `sessionId` constructor parameter, set `MaxTokens` to `4000`, and set the remaining properties to the recommended values here.
 
     ```csharp
     ChatCompletionsOptions options = new()
@@ -41,7 +41,7 @@ First, implement a question-answer conversation by sending a system prompt, a qu
             userMessage
         },
         User = sessionId,
-        MaxTokens = MaxConversationTokens,
+        MaxTokens = 4000,
         Temperature = 0.3f,
         NucleusSamplingFactor = 0.5f,
         FrequencyPenalty = 0,
@@ -49,10 +49,13 @@ First, implement a question-answer conversation by sending a system prompt, a qu
     };
     ```
 
-1. Asynchronously invoke the `GetChatCompletionsAsync` method of the Azure OpenAI client variable (`_client`). Pass in the name of the deployment (`_deploymentName`) and the `options` variable you created. Store the result in a variable named `completions` of type `ChatCompletions`.
+    > [!TIP]
+    > **4096** is the maximum number of tokens for the **gpt-35-turbo** model. We're just rounding down here to simplify things.
+
+1. Asynchronously invoke the `GetChatCompletionsAsync` method of the Azure OpenAI client variable (`_client`). Pass in the name of the model (`_modelName`) and the `options` variable you created. Store the result in a variable named `completions` of type `ChatCompletions`.
 
     ```csharp
-    ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
+    ChatCompletions completions = await _client.GetChatCompletionsAsync(_modelName, options);
     ```
 
     > [!TIP]
@@ -94,7 +97,7 @@ Now, send the AI model a different system prompt, your current conversation, and
     ChatMessage userMessage = new(ChatRole.User, userPrompt);
     ```
 
-1. Create a `ChatCompletionsOptions` variable named `options` with the two message variables in the `Messages` list, `User` set to the `sessionId` constructor parameter, `MaxTokens` set to the `MaxTokens` to the `MaxConversationTokens` property, and the remaining properties to the recommended values here:
+1. Create a `ChatCompletionsOptions` variable named `options` with the two message variables in the `Messages` list, `User` set to the `sessionId` constructor parameter, `MaxTokens` set to `200`, and the remaining properties to the recommended values here:
 
     ```csharp
     ChatCompletionsOptions options = new()
@@ -104,7 +107,7 @@ Now, send the AI model a different system prompt, your current conversation, and
             userMessage
         },
         User = sessionId,
-        MaxTokens = MaxConversationTokens,
+        MaxTokens = 200,
         Temperature = 0.0f,
         NucleusSamplingFactor = 1.0f,
         FrequencyPenalty = 0,
@@ -112,10 +115,10 @@ Now, send the AI model a different system prompt, your current conversation, and
     };
     ```
 
-1. Invoke `_client.GetChatCompletionsAsync` asynchronously with the deployment name (`_deploymentName`) and the `options` variable as parameters. Store the result in a variable named `completions` of type `ChatCompletions`.
+1. Invoke `_client.GetChatCompletionsAsync` asynchronously with the model name (`_modelName`) and the `options` variable as parameters. Store the result in a variable named `completions` of type `ChatCompletions`.
 
     ```csharp
-    ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
+    ChatCompletions completions = await _client.GetChatCompletionsAsync(_modelName, options);
     ```
 
 1. Return the content of the completion as a string as the result of the `SummarizeAsync` method. Trim the `"` character from the beginning and end of the string.
@@ -167,14 +170,14 @@ At this point, your application should have a thorough enough implementation of 
                 userMessage
             },
             User = sessionId,
-            MaxTokens = 256,
+            MaxTokens = 4000,
             Temperature = 0.3f,
             NucleusSamplingFactor = 0.5f,
             FrequencyPenalty = 0,
             PresencePenalty = 0
         };
 
-        ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
+        ChatCompletions completions = await _client.GetChatCompletionsAsync(_modelName, options);
 
         return (
             response: completions.Choices[0].Message.Content,
@@ -206,7 +209,7 @@ At this point, your application should have a thorough enough implementation of 
             PresencePenalty = 0
         };
 
-        ChatCompletions completions = await _client.GetChatCompletionsAsync(_deploymentName, options);
+        ChatCompletions completions = await _client.GetChatCompletionsAsync(_modelName, options);
 
         return completions.Choices[0].Message.Content
             .Trim('"');

@@ -58,18 +58,22 @@ In a .NET application, it's common to use the configuration providers to inject 
 1. Within the `OpenAi` property, create two new properties for the `Endpoint` and `Key`. Use the Azure OpenAI endpoint and key settings you recorded earlier in this project.
 
     ```json
-    "OpenAi": {
-      "Endpoint": "<your-azure-openai-endpoint>",
-      "Key": "<your-azure-openai-key>"
+    {
+      "OpenAi": {
+        "Endpoint": "<your-azure-openai-endpoint>",
+        "Key": "<your-azure-openai-key>"
+      }
     }
     ```
 
     Assuming the name of the Azure OpenAI account is **nybncrsna76fo-openai** and the key is `4bf98cb194cdf0f9001eae3259a76ed8`, you would configure the JSON object like this example.
 
     ```json
-    "OpenAi": {
-      "Endpoint": "https://nybncrsna76fo-openai.openai.azure.com/",
-      "Key": "4bf98cb194cdf0f9001eae3259a76ed8"
+    {
+      "OpenAi": {
+        "Endpoint": "https://nybncrsna76fo-openai.openai.azure.com/",
+        "Key": "4bf98cb194cdf0f9001eae3259a76ed8"
+      }
     }
     ```
 
@@ -122,20 +126,11 @@ Finally, implement the class variables required to use the Azure OpenAI client. 
     > [!TIP]
     > When you run the application, this will throw an error right away if either of these settings don't have a valid value provided through the **appsettings.Development.json** file.
 
-1. Next, take the deployment name that is a parameter of the constructor and save it to the `_deploymentName` variable.
+1. Next, take the model name that is a parameter of the constructor and save it to the `_modelName` variable.
 
     ```csharp
-    _deploymentName = deploymentName;
+    _modelName = modelName;
     ```
-
-1. Now, let's look at the string constructor parameter that specifies the max number of conversation tokens. This parameter needs to be parsed into an integer and saved in the `_maxConversationTokens` variable. If it's not parsed successfully, default to a value of `3000`.
-
-    ```csharp
-    _maxConversationTokens = Int32.TryParse(maxConversationTokens, out _maxConversationTokens) ? _maxConversationTokens : 3000;
-    ```
-
-    > [!TIP]
-    > This block of code takes advantage of a ternary operator to return a value whether the max tokens count is parsed from configuration or not.
 
 1. Finally, create a new instance of the `OpenAIClient` class using the endpoint to build a `Uri` and the key to build an `AzureKeyCredential`.
 
@@ -176,7 +171,7 @@ At this point, your constructor should include enough logic to create a client i
         0 Warning(s)
         0 Error(s)
     
-    Time Elapsed 00:00:02.67
+    Time Elapsed 00:00:02.93
     ```
 
 1. Close the terminal.
@@ -194,8 +189,7 @@ At this point, your constructor should include enough logic to create a client i
     
     public class OpenAiService
     {
-        private readonly string _deploymentName = String.Empty;
-        private readonly int _maxConversationTokens = default;
+        private readonly string _modelName = String.Empty;
         
         private readonly OpenAIClient _client;
         
@@ -205,12 +199,7 @@ At this point, your constructor should include enough logic to create a client i
         private readonly string _summarizePrompt = @"
             Summarize this prompt in one or two words to use as a label in a button on a web page" + Environment.NewLine;
 
-        public int MaxConversationTokens
-        {
-            get => _maxConversationTokens;
-        }
-
-        public OpenAiService(string endpoint, string key, string deploymentName, string maxConversationTokens)
+        public OpenAiService(string endpoint, string key, string modelName)
         {
             // Implementation removed for brevity
         }
@@ -222,15 +211,12 @@ At this point, your constructor should include enough logic to create a client i
 1. Within the **OpenAiService** class, review the constructor to make sure that your code matches this sample.
 
     ```csharp
-    ArgumentNullException.ThrowIfNullOrEmpty(deploymentName);
-    ArgumentNullException.ThrowIfNullOrEmpty(maxConversationTokens);
+    ArgumentNullException.ThrowIfNullOrEmpty(modelName);
 
     ArgumentNullException.ThrowIfNullOrEmpty(endpoint);
     ArgumentNullException.ThrowIfNullOrEmpty(key);
     
-    _deploymentName = deploymentName;
-
-    _maxConversationTokens = Int32.TryParse(maxConversationTokens, out _maxConversationTokens) ? _maxConversationTokens : 3000;
+    _modelName = modelName;
 
     Uri uri = new(endpoint);
     AzureKeyCredential credential = new(key);

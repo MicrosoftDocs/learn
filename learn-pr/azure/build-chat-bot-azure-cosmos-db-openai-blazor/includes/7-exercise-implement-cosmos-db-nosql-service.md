@@ -299,10 +299,10 @@ Finally, combine the query and transactional batch functionality to remove multi
     while (response.HasMoreResults)
     {
         FeedResponse<string> results = await response.ReadNextAsync();
-        foreach (var item in results)
+        foreach (var itemId in results)
         {
             batch.DeleteItem(
-                id: item.Id
+                id: itemId
             );
         }
     }

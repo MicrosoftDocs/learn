@@ -8,14 +8,14 @@ There are a few key requirements to tackle in this exercise:
 
 ## Import the .NET SDK
 
-The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.32.3) NuGet package is a typed library that simplifies the process of accessing Azure Cosmos DB for NoSQL from a .NET application.
+The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Cosmos/3.34.0) NuGet package is a typed library that simplifies the process of accessing Azure Cosmos DB for NoSQL from a .NET application.
 
 1. Open a new terminal.
 
-1. Import version `3.32.3` of the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`.
+1. Import version `3.34.0` of the `Microsoft.Azure.Cosmos` package from NuGet with `dotnet add package`.
 
     ```bash
-    dotnet add package Microsoft.Azure.Cosmos --version 3.32.3
+    dotnet add package Microsoft.Azure.Cosmos --version 3.34.0
     ```
 
 1. Build the .NET project one more time.
@@ -29,7 +29,7 @@ The [`Microsoft.Azure.Cosmos`](https://www.nuget.org/packages/Microsoft.Azure.Co
     ```xml
     <ItemGroup>
       ...
-      <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.32.3" />
+      <PackageReference Include="Microsoft.Azure.Cosmos" Version="3.34.0" />
       ...
     </ItemGroup>
     ```
@@ -47,8 +47,8 @@ Use the `appsettings.Development.json` file again to provide current values for 
     ```json
     {
       "OpenAi": {
-        "Endpoint": "...",
-        "Key": "..."
+        "Endpoint": "<your-azure-openai-endpoint>",
+        "Key": "<your-azure-openai-key>"
       },
       "CosmosDb": {
       }
@@ -58,18 +58,30 @@ Use the `appsettings.Development.json` file again to provide current values for 
 1. Within the `CosmosDb` property, create two new properties for the `Endpoint` and `Key`. Use the Azure Cosmos DB endpoint and key settings you recorded earlier in this project.
 
     ```json
-    "CosmosDb": {
-      "Endpoint": "<your-azure-cosmos-db-endpoint>",
-      "Key": "<your-azure-cosmos-db-key>"
+    {
+      "OpenAi": {
+        "Endpoint": "<your-azure-openai-endpoint>",
+        "Key": "<your-azure-openai-key>"
+      },
+      "CosmosDb": {
+        "Endpoint": "<your-azure-cosmos-db-endpoint>",
+        "Key": "<your-azure-cosmos-db-key>"
+      }
     }
     ```
 
     Assuming the name of the Azure Cosmos DB account is **nybncrsna76fo** and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example.
 
     ```json
-    "CosmosDb": {
-      "Endpoint": "https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/",
-      "Key": "Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh=="
+    {
+      "OpenAi": {
+        "Endpoint": "<your-azure-openai-endpoint>",
+        "Key": "<your-azure-openai-key>"
+      },
+      "CosmosDb": {
+        "Endpoint": "https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/",
+        "Key": "Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh=="
+      }
     }
     ```
 
@@ -178,7 +190,7 @@ At this point, your constructor should include enough logic to create a containe
         0 Warning(s)
         0 Error(s)
     
-    Time Elapsed 00:00:09.53
+    Time Elapsed 00:00:06.45
     ```
 
 1. Close the terminal.
