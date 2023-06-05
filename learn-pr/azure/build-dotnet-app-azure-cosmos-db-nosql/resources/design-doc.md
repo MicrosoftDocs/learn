@@ -26,10 +26,10 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
 
 ## Learning objectives
 
-01. Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
-01. Create Azure Cosmos DB for NoSQL database, container, and item resources
-01. Execute multiple Azure Cosmos DB for NoSQL .NET SDK operations either as a transaction
-01. Query Azure Cosmos DB for NoSQL items and iterate through the result set
+1. Connect to an Azure Cosmos DB for NoSQL account using the .NET SDK
+1. Create Azure Cosmos DB for NoSQL database, container, and item resources
+1. Execute multiple Azure Cosmos DB for NoSQL .NET SDK operations either as a transaction
+1. Query Azure Cosmos DB for NoSQL items and iterate through the result set
 
 ## Subtasks
 
@@ -42,42 +42,42 @@ Connect to an Azure Cosmos DB for NoSQL account using C# and .NET to perform com
 
 ## Outline
 
-01. Introduction
+1. Introduction
     - Prose table-of-contents
       - This module walks through the steps to connect to an Azure Cosmos DB for NoSQL account from a .NET application. Your application will create a database and container resource if they don't already exist. You'll then use both individual and orchestrated operations to create multiple items within the container. Once the data is populated, you'll query the items.
     - Scenario
       - Suppose you're a developer at a sporting goods retail company. You're working on software to import new inventory into your database. One of the requirements of your software is to perform a quick query after the import to identify, to the user of the software, the items they imported. The application you'll build will add multiple items using the .NET SDK for Azure Cosmos DB for NoSQL. Although the version you build in this project is the first version of the application, you'll try to use the documented best practices when using the SDK.
     - Terminal learning objective (goal)
       - By the end of this module, you'll be able to create a .NET application that connects to Azure Cosmos DB for NoSQL and perform standard operations and queries.
-01. Prepare
+1. Prepare
     - Project overview
     - Setup
       - Use Azure Cloud Shell (50/50 split)
       - Create account using CLI
       - Get endpoint
       - Get connection string
-01. Exercise: Create .NET app and reference SDK
+1. Exercise: Create .NET app and reference SDK
     - Create .NET console application
     - Add a reference to the Microsoft.Azure.Cosmos SDK
     - Create CosmosClient
-01. Exercise: Create account resources
+1. Exercise: Create account resources
     - Create database with shared throughput
     - Create container with specific throughput and partition key
     - Create a single item
     - Create a multi-transaction batch
-01. Exercise: Query and read items
+1. Exercise: Query and read items
     - Read a single item
     - Execute a SELECT query
     - Projecting query results to C# types
-01. Exercise: Enumerate items using language-intergrated query (LINQ)
+1. Exercise: Enumerate items using language-intergrated query (LINQ)
     - Using LINQ
     - Paginate results
-01. Knowledge check
+1. Knowledge check
     - Create CosmosClient with endpoint and key
     - Create container parameters
     - Project results to serialize as C# type
     - Parse LINQ and identify query equivalent
-01. Summary
+1. Summary
     - Your developer team needed a .NET application that connects to Azure Cosmos DB for NoSQL. This application implements common operations using the SDK and illustrates best practices for your team to follow.
     - You authored an application that created and managed databases, containers, and items. Your application also used the query language and LINQ to perform queries on items in Azure Cosmos DB.
     - With the .NET SDK for Azure Cosmos DB for NoSQL, you were able to illustrate the best way to create, manage, and query data. The .NET SDK made it possible to share a concise sample with your development team that focused solely on the code necessary for them to be successful.

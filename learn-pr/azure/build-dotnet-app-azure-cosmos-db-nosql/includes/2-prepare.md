@@ -14,12 +14,12 @@ Diagram of a flowchart showing steps to authenticate the client. The flowchart t
 
 The key tasks you need to do are:
 
-01. Create an Azure Cosmos DB account and retrieve the connection string.
-01. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
-01. Create database and container resources.
-01. Add a single item as a simple operation.
-01. Create a transactional batch to add four items.
-01. Execute and observe the results of a query.
+1. Create an Azure Cosmos DB account and retrieve the connection string.
+1. Create a .NET console application and add a package reference to the [Microsoft.Azure.Cosmos](https://www.nuget.org/packages/Microsoft.Azure.Cosmos) SDK.
+1. Create database and container resources.
+1. Add a single item as a simple operation.
+1. Create a transactional batch to add four items.
+1. Execute and observe the results of a query.
 
 > [!IMPORTANT]
 > All steps in this project are designed to be completed within Visual Studio Code either locally or through GitHub Codespaces.
@@ -32,7 +32,7 @@ To complete this project, you need an API for NoSQL account.
 
 The API for NoSQL account is used to store the data you create in this project and to execute queries. This section guides you through the steps to creating a new account using the Azure CLI directly in the Azure Cloud Shell terminal.
 
-01. Create a new shell variable named **suffix** with a random number and then output the number to the console.
+1. Create a new shell variable named **suffix** with a random number and then output the number to the console.
 
     ```azurecli
     let suffix=$RANDOM*$RANDOM
@@ -40,7 +40,7 @@ The API for NoSQL account is used to store the data you create in this project a
     echo $suffix
     ```
 
-01. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
+1. Create another shell variable named **accountName** that appends the randomly generated suffix to `mslearn-` and then outputs the result.
 
     ```azurecli
     accountName="mslearn-$suffix"
@@ -48,7 +48,7 @@ The API for NoSQL account is used to store the data you create in this project a
     echo $accountName
     ```
 
-01. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
+1. Create two more shell variables for `resourceGroup` and `location` with the values prescribed here.
 
     ```azurecli
     resourceGroup="<rgn>[sandbox resource group name]</rgn>"
@@ -58,7 +58,7 @@ The API for NoSQL account is used to store the data you create in this project a
     > [!IMPORTANT]
     > The sandbox will automatically create a resource group for you with the name specified in this code sample.
 
-01. Create a new API for NoSQL account using the three shell variables you created.
+1. Create a new API for NoSQL account using the three shell variables you created.
 
     ```azurecli
     az cosmosdb create \
@@ -67,13 +67,13 @@ The API for NoSQL account is used to store the data you create in this project a
         --locations regionName=$location
     ```
 
-01. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
+1. Wait for the command to complete once the new account is created. Creating a new account can take a couple of minutes.
 
 ### Get account connection string
 
 Now that you have an API for NoSQL account, you can use the `az cosmosdb keys list` command from the Azure CLI to get credentials. In this section, you filter the output of the command to only return a single connection string.
 
-01. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
+1. First, list all of the credentials available for this account. Use the `--type` parameter to only return connection strings.
 
     ```azurecli
     az cosmosdb keys list \
@@ -83,7 +83,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
         --output table
     ```
 
-01. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
+1. Now, add the `--query` parameter to filter to specifically the `Primary SQL Connection String`.
 
     ```azurecli
     az cosmosdb keys list \
@@ -94,7 +94,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
         --output tsv
     ```
 
-01. Record the value of this connection string. You use the connection string later in this project to connect to this account.
+1. Record the value of this connection string. You use the connection string later in this project to connect to this account.
 
 ### Configure dev environment
 
