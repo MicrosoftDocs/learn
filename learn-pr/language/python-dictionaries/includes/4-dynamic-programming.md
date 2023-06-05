@@ -26,7 +26,7 @@ for key in rainfall.keys():
     print(f'{key}: {rainfall[key]}cm')
 ```
 
-```python
+```Output
 october: 3.5cm
 november: 4.2cm
 december: 2.1cm
@@ -57,8 +57,9 @@ total_rainfall = 0
 for value in rainfall.values():
     total_rainfall = total_rainfall + value
 
-print(f'There was {total_rainfall}cm in the last quarter')
+print(f'There was {total_rainfall}cm in the last quarter.')
+```
 
-# Output:
-# There was 10.8cm in the last quarter
+```Output
+There was 10.8cm in the last quarter.
 ```
