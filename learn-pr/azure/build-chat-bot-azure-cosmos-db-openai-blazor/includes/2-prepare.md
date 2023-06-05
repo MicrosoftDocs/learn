@@ -56,7 +56,7 @@ Use the [Azure portal](/azure/azure-portal) to get the credentials from the Azur
 
 1. Select **Resource Groups** and then select the `<rgn>[sandbox resource group name]</rgn>` resource group.
 
-    :::image type="content" source="../media/portal-resource-group.png" lightbox="media/portal-resource-group.png" alt-text="Screenshot of the resource group page with an Azure Cosmos DB and Azure OpenAI resource.":::
+    :::image type="content" source="../media/portal-resource-group.png" lightbox="../media/portal-resource-group.png" alt-text="Screenshot of the resource group page with an Azure Cosmos DB and Azure OpenAI resource.":::
 
 1. On the **Resource Groups** page, expand the **Essentials** panel and observe the **Deployments** header. The status for the deployment should be **Succeeded** at this point.
 
