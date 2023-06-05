@@ -70,7 +70,7 @@ Use the `appsettings.Development.json` file again to provide current values for 
     }
     ```
 
-    Assuming the name of the Azure Cosmos DB account is **nybncrsna76fo** and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example.
+    Assuming the name of the Azure Cosmos DB account is **nybncrsna76fo-cosmos-nosql** and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example.
 
     ```json
     {
