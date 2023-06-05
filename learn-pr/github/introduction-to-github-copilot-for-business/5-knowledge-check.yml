@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-github
 durationInMinutes: 3
 quiz:
-  title: Knowledge Check
+  title: Check your knowledge
   questions:
     - content: "What functionality isn't supported in GitHub Copilot for Individuals?"
       choices:
@@ -41,14 +41,14 @@ quiz:
         - content: "90%"
           isCorrect: true
           explanation: 90% is the correct percentage of developers that have said GitHub Copilot helps them code faster.
-    - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate to in order to enable Copilot for Business for all current and future users as a?"
+    - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate to in order to enable Copilot for Business for all current and future users?"
       choices:
         - content: "Policies"
           isCorrect: false
           explanation: This isn't the first place to navigate to in order to enable GitHub Copilot for Business
         - content: "Your organizations in your profile dropdown menu"
           isCorrect: true
-          explanation: Correct! This Your organizations in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business
+          explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business
         - content: "Settings in your profile dropdown menu"
           isCorrect: false
           explanation: Close, but this isn't the first place to navigate to in order to enable GitHub Copilot for Business

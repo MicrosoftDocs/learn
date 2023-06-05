@@ -1,4 +1,4 @@
-﻿:::image type="content" border="false" source="../media/2-github-copilot-logo.png" alt-text="The logo icon for GitHub Copilot that shows the Copilot icon in the middle with a blue and green swirl around the logo.":::
+﻿:::image type="content" border="false" source="../media/2-github-copilot-logo.png" alt-text="Screenshot of the logo icon for GitHub Copilot that shows the Copilot icon in the middle with a blue and green swirl around the logo.":::
 
 GitHub Copilot for Business builds the power of generative AI into an editor extension that suggests code in real-time. It works with code and natural language prompts to offer multiple suggestions that can quickly be accepted or rejected. GitHub Copilot learns alongside developers to adapt to individual coding styles and conventions. With GitHub Copilot, developers can use the editor of their choice from Visual Studio to Neovim, VS Code, or JetBrains integrated development environments (IDEs).
 
