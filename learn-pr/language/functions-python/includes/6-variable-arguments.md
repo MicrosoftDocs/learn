@@ -75,7 +75,7 @@ variable_length(tanks=1, day="Wednesday", pilots=3)
 {'tanks': 1, 'day': 'Wednesday', 'pilots': 3}
 ```
 
-If you're already familiar with Python dictionaries, you'll notice that variable-length keyword arguments are assigned as a dictionary. To interact with the variables and values, use the same operations as a dictionary.
+If you're already familiar with [Python dictionaries](../../python-dictionaries/index.yml), you'll notice that variable-length keyword arguments are assigned as a dictionary. To interact with the variables and values, use the same operations as a dictionary.
 
 > [!NOTE]
 > As with variable arguments, you're not required to use `kwargs` when you're using variable keyword arguments. You can use any valid variable name. Although it's common to see `**kwargs` or `**kw`, you should try to use the same convention throughout a project.
