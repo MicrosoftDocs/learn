@@ -4,11 +4,12 @@ title: Run a pipeline job
 metadata:
   title: Run a pipeline job
   description: "Run a pipeline job"
-  ms.date: 05/18/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
+  ms.subservice: pipelines
 durationInMinutes: 9
 content: |
   [!include[](includes/4-run-pipeline-job.md)]

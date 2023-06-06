@@ -2,8 +2,8 @@
 uid: learn.azure.intro-to-data-science-virtual-machine.data-science-virtual-machine
 metadata:
   title: What is the Data Science Virtual Machine?
-  description: Details the composition and intended use of the Data Science Virtual Machine.
-  ms.date: 08/28/2020
+  description: Learn about the components and intended uses of the Data Science Virtual Machine.
+  ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
   ms.topic: interactive-tutorial
