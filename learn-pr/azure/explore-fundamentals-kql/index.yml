@@ -7,7 +7,7 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: azure
 title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
 summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
 abstract: |
@@ -30,6 +30,8 @@ products:
   - azure-monitor
   - azure-sentinel
   - azure-log-analytics
+  - azure-resource-graph
+  - microsoft-defender
 subjects:
   - data-science
   - data-visualization
@@ -37,8 +39,8 @@ subjects:
 units:
 - learn.azure.explore-fundamentals-kql.introduction
 - learn.azure.explore-fundamentals-kql.query-basics
-- learn.azure.explore-fundamentals-kql.exercise-1
 - learn.azure.explore-fundamentals-kql.kql-query-structure
+- learn.azure.explore-fundamentals-kql.exercise-1
 - learn.azure.explore-fundamentals-kql.query-types
 - learn.azure.explore-fundamentals-kql.exercise-2
 - learn.azure.explore-fundamentals-kql.knowledge-check
