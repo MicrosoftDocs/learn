@@ -23,7 +23,7 @@ A **continuous integration system** merges all developer working copies to share
 An **automated build process** creates a software build, including compiling, packaging, and running automated tests.
 
  -  [Apache Ant](http://ant.apache.org/)
- -  [NAnt](http://nant.sourceforge.net/)
+ -  [NAnt2](https://nant2.github.io/)
  -  [Gradle](https://gradle.org/)
 
 > [!NOTE]
