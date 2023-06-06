@@ -13,7 +13,7 @@ In this unit, add Spring Session to your existing Spring Boot application to sto
 
 1. To configure Spring Session to use Redis for session replication, add the following line to the *src/main/resources/application.properties* file:
 
-   ```properties
+   ```yaml
    spring.session.store-type=redis
    ```
 

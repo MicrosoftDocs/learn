@@ -6,7 +6,7 @@ Create an Azure App Service instance to host your application. Use the following
 
 To use Java 11 or Java 17 instead of Java 8, use `"JAVA|<version>-java<version>"` instead of `"JAVA|8-jre8"` as the web application runtime.
 
-```azcli
+```azurecli
 az appservice plan create \
     --resource-group $AZ_RESOURCE_GROUP \
     --name $AZ_REDIS_NAME-webapp-plan \
