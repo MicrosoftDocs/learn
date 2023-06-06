@@ -110,7 +110,7 @@ In this option, you'll walk through some common queries against system functions
 
     In the first result set, the system databases `msdb`, `tempdb`, and `model` aren't listed. Only master and your user database are listed. This is because the master database for a database server for Azure SQL Database is not the same as the physical master database installed with SQL Server. In Azure SQL Managed Instance, you'll see the normal set of system databases, as with any SQL Server instance.
 
-    However, `sys.objects` looks similar to a normal SQL Server instance. That's true for system tables, internal tables, and user objects for the sample AdventureWorksLT database.
+    However, `sys.objects` looks similar to a normal SQL Server instance. That's true for system tables, internal tables, and user objects for the sample `AdventureWorksLT` database.
 
 1. Verify that all schedulers are online and you're detecting the expected available CPUs, considering that you deployed with a two-vCore model.
 
