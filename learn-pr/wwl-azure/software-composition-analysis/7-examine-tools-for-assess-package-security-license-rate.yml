@@ -8,5 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
 content: |
   [!include[](includes/7-examine-tools-for-assess-package-security-license-rate.md)]

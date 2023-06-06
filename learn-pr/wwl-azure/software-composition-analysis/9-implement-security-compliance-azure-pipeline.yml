@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.implement-security-compliance-azure-pipeline
-title: Implement security and compliance in an Azure Pipeline
+title: Implement Security and Compliance in an Azure Pipeline
 metadata:
-  title: Implement security and compliance in an Azure Pipeline
-  description: "Implement security and compliance in an Azure Pipeline"
+  title: Implement Security and Compliance in an Azure Pipeline
+  description: "Implement Security and Compliance in an Azure Pipeline"
   ms.date: 06/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
 content: |
   [!include[](includes/9-implement-security-compliance-azure-pipeline.md)]
-interactive: bash

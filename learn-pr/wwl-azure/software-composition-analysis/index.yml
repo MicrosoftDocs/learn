@@ -45,7 +45,7 @@ subjects:
 units:
 - learn.wwl.software-composition-analysis.introduction
 - learn.wwl.software-composition-analysis.inspect-validate-code-bases-for-compliance
-- learn.wwl.software-composition-analysis.explore-software-composition-analysis
+- learn.wwl.software-composition-analysis.explore-software-composition-analysis-sca
 - learn.wwl.software-composition-analysis.integrate-whitesource-azure-devops-pipeline
 - learn.wwl.software-composition-analysis.implement-github-dependabot-alerts-security-updates
 - learn.wwl.software-composition-analysis.integrate-software-composition-analysis-checks-into-pipelines
