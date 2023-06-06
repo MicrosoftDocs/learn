@@ -69,7 +69,7 @@ You can also enable a public endpoint so you can connect to a managed instance f
 
 ### Data source
 
-In Azure SQL Database, you can select the AdventureWorksLT database as the sample upon deployment in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it. You can't have the sample database upon deployment, similar to SQL Server. You can learn more about the AdventureWorks sample databases on GitHub.
+In Azure SQL Database, you can select the `AdventureWorksLT` database as the sample upon deployment in the Azure portal. In Azure SQL Managed Instance, you deploy the instance first and then databases inside it. You can't have the sample database upon deployment, similar to SQL Server. You can learn more about the `AdventureWorks` sample databases on GitHub.
 
 You can also deploy a blank database or create a database that's based on the restore from a geo-replicated backup.
 
