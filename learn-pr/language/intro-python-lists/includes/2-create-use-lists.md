@@ -120,7 +120,7 @@ Output: `Jupiter is the 5 planet from the sun`
 > [!NOTE]
 > Because indexing starts with 0, you need to add 1 to display the proper number.
 
-Here’s another:
+Here's another:
 
 ```python
 planets = ["Mercury", "Venus", "Earth", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune"]
