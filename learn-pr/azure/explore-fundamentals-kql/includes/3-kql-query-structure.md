@@ -18,4 +18,4 @@ These two query structures are represented in the following schematic image:
 
 :::image type="content" source="../media/kql-funnel.png" alt-text="Schematic image of data being processed by a funnel.":::
 
-Filtering steps that remove the largest amounts of data should be used at the beginning of the query, so that the following operators have a smaller amount of data to process. This arrangement will give the fastest, or most "performant" queries.
+You can see by the shape of the filter that the largest amount of data is processed at the "top" of the funnel. That's why steps that remove the largest amounts of data should be used at the beginning of the query, so that the following operators have a smaller amount of data to process. This arrangement gives the fastest, or most "performant" queries.
