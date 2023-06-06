@@ -5,15 +5,16 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Check your knowledge of Python functions.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "Can a function that defines arguments be called without arguments?"
     choices:
