@@ -10,33 +10,34 @@ Azure Data Explorer offers a help cluster with different types of data preloaded
 
 This environment requires a Microsoft account or an Azure Active Directory user identity.
 
-https://dataexplorer.azure.com/clusters/help
+Access the [Azure Data Explorer help cluster](https://dataexplorer.azure.com/clusters/help).
 
 ### Log Analytics demo environment
 
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
-https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade
+Access the [Log Analytics demo environment](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
 
 ### Azure Resource Graph Explorer
 
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
-https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/
+Access the [Azure Resource Graph Explorer](https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/).
 
-## (Chunk 1 heading)
+## Sample queries
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
-1
+
 
 ### [Log Analytics](#tab/log-analytics)
 
-2
+
 
 ### [Azure Resource Graph](#tab/azure-resource-graph)
 
-3
+
+
 ---
 
 More text
