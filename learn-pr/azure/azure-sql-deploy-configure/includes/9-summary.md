@@ -14,7 +14,7 @@ People learn in different ways. With that in mind, a [video series related to th
 
 To learn more about how to migrate to Azure SQL, review the [Azure Database Migration Guide](/data-migration). It has custom guidance on how to migrate based on your source and target database. Also consider accessing the resources and support available through the [Azure Migration and Modernization Program](https://azure.com/ammp).  
 
-One part of pre-deployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](/sql/dma/dma-sku-recommend-sql-db?view=sql-server-ver15&azure-portal=true) that can help you determine the number of vCores and the size. 
+One part of pre-deployment planning is determining which service tier and size are best for your workload. The Data Migration Assistant tool has a [SKU recommender](/sql/dma/dma-sku-recommend-sql-db) that can help you determine the number of vCores and the size. 
 
 The hands-on exercises focused on Azure SQL Database. If you want to try out your new deployment and configuration toolbox in Azure SQL Managed Instance, see:
 
