@@ -25,6 +25,5 @@ subjects:
 - wwl-skillable-POC
 units:
 - learn.wwl.instruction-test.1-introduction
-
 badge:
   uid: learn.wwl.instruction-test.badge
