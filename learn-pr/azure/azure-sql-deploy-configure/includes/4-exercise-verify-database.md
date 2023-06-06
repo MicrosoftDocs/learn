@@ -99,7 +99,7 @@ In this option, you'll walk through some common queries against system functions
 
     The result is 5, which makes sense because you deployed Azure SQL Database, not SQL Managed Instance or SQL Server Enterprise. Note that there's no special number for SQL Server in Azure Virtual Machines. The number would correspond to the edition that you installed in the virtual machine. Personal or Desktop Engine is an earlier edition that's no longer used with SQL Server.
 
-1. Let's examine the catalog views sys.databases and sys.objects. Typically, you look at these to verify the installation and the status of system databases and to check system objects in your database.
+1. Let's examine the catalog views `sys.databases` and `sys.objects`. Typically, you look at these to verify the installation and the status of system databases and to check system objects in your database.
 
     ```sql
     SELECT * FROM sys.databases;
