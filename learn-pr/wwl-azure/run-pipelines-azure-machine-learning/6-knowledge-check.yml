@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.service: machine-learning
+  ms.subservice: pipelines
 durationInMinutes: 3
 quiz:
   questions:
