@@ -26,7 +26,6 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-sentinel
 - microsoft-sentinel
 subjects:
 - threat-protection
