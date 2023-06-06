@@ -1722,3 +1722,13 @@ achievements:
   title: Introduction to 5G for Azure in the Enterprise
   summary: We introduce 5G for Azure in the Enterprise
   iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
+- uid: learn.javascript-on-azure.deploy-expressjs-app-service.badge
+  type: badge
+  title: Deploy Node.js to Azure App Service
+  summary: Create Azure service resources for an Node.js web app. Configure, secure, and deploy the web app. Review the logs after deployment.
+  iconUrl: /training/achievements/js-data-web-app-to-azure-app-service.svg
+- uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.badge
+  type: badge
+  title: Deploy Node.js server with MongoDB database to Azure App Service
+  summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
+  iconUrl: /training/achievements/generic-badge.svg

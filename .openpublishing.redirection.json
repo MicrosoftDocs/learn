@@ -22428,6 +22428,16 @@
     "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-data-explorer.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing/",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/javascript-deploy-expressjs-app-service-with-database/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/javascript-deploy-expressjs-app-service/",
+    "redirect_document_id": false
   }
   ]
 }
