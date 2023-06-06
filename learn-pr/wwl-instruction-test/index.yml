@@ -22,7 +22,7 @@ roles:
 products:
 - azure
 subjects:
-- wwl-skillable-POC
+- threat-protection
 units:
 - learn.wwl.instruction-test.1-introduction
 badge:
