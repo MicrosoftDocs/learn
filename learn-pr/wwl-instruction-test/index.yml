@@ -1,0 +1,30 @@
+### YamlMime:Module
+uid: learn.wwl.instruction-test
+metadata:
+  title: POC for Skillable labs
+  description: "POC for Skillable labs."
+  ms.date: 06/06/2023
+  author: jupajupajupa
+  ms.author: jupa
+  ms.topic: interactive-tutorial
+  ms.service: azure
+title: POC for Skillable labs
+summary: POC for Skillable labs.
+abstract: |
+  POC for Skillable labs
+prerequisites: |
+  - POC for Skillable labs
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+products:
+- azure
+subjects:
+- wwl-skillable-POC
+units:
+- learn.wwl.instruction-test.1-introduction
+
+badge:
+  uid: learn.wwl.instruction-test.badge
