@@ -34,7 +34,7 @@ https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/
 
 2
 
-### [Azure Resource Graph](#azure-resource-graph)
+### [Azure Resource Graph](#tab/azure-resource-graph)
 
 3
 ---
