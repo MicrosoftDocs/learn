@@ -1,5 +1,6 @@
 
 
+
 Most applications include a large number of execution paths. For example, an application could implement different execution paths based on which menu option a user selects. Developers refer to the code that implements different execution paths as *code branches*.
 
 The most widely used code branching statement is the `if` statement. The `if` statement relies on a Boolean expression that is enclosed in a set of parentheses. If the expression is true, the code after the `if` statement is executed. If not, the .NET runtime ignores the code and doesn't execute it.
@@ -211,9 +212,9 @@ Next, you can implement the rule: "If any two dice you roll result in the same v
     ```c#
     Random dice = new Random();
     
-    int roll1 = dice.Next(1, 6);
-    int roll2 = dice.Next(1, 6);
-    int roll3 = dice.Next(1, 6);
+    int roll1 = dice.Next(1, 7);
+    int roll2 = dice.Next(1, 7);
+    int roll3 = dice.Next(1, 7);
     
     int total = roll1 + roll2 + roll3;
     
