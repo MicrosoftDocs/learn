@@ -1,6 +1,6 @@
 Functions are the next step after you've learned Python's programming basics. In its simplest form, a function contains code that always returns a value (or values). In some cases, a function also has optional or required inputs.
 
-When you start writing code that duplicates other parts of the program, it becomes a perfect opportunity to extract the code out into a function. Although sharing common code through functions is useful, you can also limit the size of code by extracting parts out into smaller (and readable) functions.
+When you start writing code that duplicates other parts of the program, it becomes a perfect opportunity to extract the code into a function. Although sharing common code through functions is useful, you can also limit the size of code by extracting parts out into smaller (more readable) functions.
 
 Programs that avoid duplication and prevent large functions by using smaller functions are more readable and maintainable. They're also easier to debug when things aren't working right.
 
@@ -59,7 +59,7 @@ output
 payload, propellant, structure
 ```
 
-If you need to use the value of a function, that function _must_ return explicitly. Otherwise, `None` will be returned.
+If you need to use the value of a function, that function _must_ return explicitly. Otherwise, `None` is returned.
 
 > [!NOTE]
 > You don't need to always assign the return of a function. In most cases where a function doesn't return a value (or values) explicitly, it means that you don't need to assign or use the implicit `None` that's returned.

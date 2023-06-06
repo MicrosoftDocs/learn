@@ -2,7 +2,7 @@ Now that you know how to create a function with no inputs, the next step is to c
 
 ## Requiring an argument
 
-If you're piloting a rocket ship, a function without required inputs is like a computer with a button to tell you the time. If you press the button, a computerized voice will tell you the time. But a required input can be a destination to calculate travel distance. Required inputs are called _arguments_ to the function.
+If you're piloting a rocket ship, a function without required inputs is like a computer with a button to tell you the time. If you press the button, a computerized voice tells you the time. But a required input can be a destination to calculate travel distance. Required inputs are called _arguments_ to the function.
 
 To require an argument, put it within the parentheses:
 
@@ -48,7 +48,7 @@ Unable to compute to that destination
 
 ## Multiple required arguments
 
-To use multiple arguments, you must separate them by using a comma. Let's create a function that can calculate how many days it will take to reach a destination, given distance and a constant speed:
+To use multiple arguments, you must separate them by using a comma. Let's create a function that can calculate how many days it takes to reach a destination, given distance and a constant speed:
 
 ```python
 def days_to_complete(distance, speed):
@@ -56,7 +56,7 @@ def days_to_complete(distance, speed):
     return hours/24
 ```
 
-Now use the distance from Earth to the Moon to calculate how many days it would take to get to the Moon at a common highway speed limit of 75 miles per hour:
+Now use the distance from Earth to the Moon to calculate how many days it would take to get to the Moon at a speed limit of 75 miles per hour:
 
 ```python
 days_to_complete(238855, 75)

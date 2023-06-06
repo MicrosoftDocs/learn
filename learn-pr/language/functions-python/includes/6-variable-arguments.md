@@ -99,7 +99,7 @@ pilot: Buzz Aldrin
 command_pilot: Michael Collins
 ```
 
-Because you can pass any combination of keyword arguments, make sure to avoid repeated keywords. Repeated keywords will result in an error:
+Because you can pass any combination of keyword arguments, make sure to avoid repeated keywords. Repeated keywords result in an error:
 
 ```python
 crew_members(captain="Neil Armstrong", pilot="Buzz Aldrin", pilot="Michael Collins")

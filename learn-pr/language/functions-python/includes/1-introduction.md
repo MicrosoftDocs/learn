@@ -2,7 +2,7 @@ Using a Python function is the first step into coding after basic conditionals a
 
 ## Scenario: Organize data about a rocket
 
-Imagine you're creating a program to construct precise information about a space rocket. Reusable functions will allow you to not just compute information but also compose new values by mixing inputs and outputs from other functions.
+Imagine you're creating a program to construct precise information about a space rocket. Reusable functions allow you to not just compute information but also compose new values by mixing inputs and outputs from other functions.
 
 ## What will I learn?
 
