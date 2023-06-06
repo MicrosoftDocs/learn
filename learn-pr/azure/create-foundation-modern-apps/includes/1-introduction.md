@@ -4,7 +4,7 @@ Suppose you work for the transportation department of a major city and you want 
 
 A mobile application that can provide this type of real-time information requires an architecture featuring many of the technologies that we already introduced, including a mobile app, cloud services, serverless technology, IoT devices, and web APIs. Most importantly, you'll need a data store like Azure SQL Database that can provide a foundation for it all.
 
-In this series of four modules that are part of the [Build serverless, full stack applications in Azure](/paths/build-serverless-full-stack-apps-azure/) learning path, we'll design and build this bus ride application from scratch.
+In this series of four modules that are part of the [Build serverless, full stack applications in Azure](/training/paths/build-serverless-full-stack-apps-azure/) learning path, we'll design and build this bus ride application from scratch.
 
 In this module, you'll break down a scenario for an application and build a multi-service architecture of a solution, which is based on the microservices approach. After constructing the architecture, you'll dive into the first crucial step: building the foundation for a modern application. Using Azure SQL Database, you'll deploy, configure, and automate continuous integration and continuous delivery/continuous deployment (CI/CD) for the database component of your full stack application.
 
