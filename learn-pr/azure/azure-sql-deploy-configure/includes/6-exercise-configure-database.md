@@ -46,7 +46,7 @@ You'll run all of the commands by Cloud Shell. You can easily copy them and then
     az sql db list
     ```
 
-1. The list of databases is a lot of information. Run the following command if you just want to see specifics for the AdventureWorks database:
+1. The list of databases is a lot of information. Run the following command if you just want to see specifics for the `AdventureWorks` database:
 
     ```azurecli
     az sql db show --name $databaseName
