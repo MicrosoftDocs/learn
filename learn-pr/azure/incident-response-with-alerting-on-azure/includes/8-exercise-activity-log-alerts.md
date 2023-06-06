@@ -1,4 +1,4 @@
-The shipping company you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you'll use activity log alerts.
+The shipping company you work for wants to avoid any future issues with updates to its applications on the Azure platform. To improve the alerting capabilities within Azure, you can activity log alerts.
 
 Your goal is to set up a Linux VM and create an activity log monitoring rule to detect when a VM is deleted. You'll then delete the VM to trigger this alert.
 
@@ -26,7 +26,7 @@ Your goal is to set up a Linux VM and create an activity log monitoring rule to 
 
 ## Add an email alert action
 
-For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions let you send an email for notifications, to trigger an Azure function, or to call a webhook. You'll now add an email alert when VMs are deleted.
+For the previous Azure Monitor alert, you didn't add any actions. You just viewed triggered alerts in the Azure portal. Actions let you send an email for notifications, to trigger an Azure function, or to call a webhook. In this exercise, we are adding an email alert when VMs are deleted.
 
 1. On the **Create an alert rule** pane, select the **Next: Actions** button, and select **Create action group**. The **Create an action group** pane appears.
 
@@ -64,19 +64,13 @@ For the previous Azure Monitor alert, you didn't add any actions. You just viewe
     | Alert rule name | **VM was deleted** |
     | Description | **A VM in your resource group was deleted** |
 
-1. Open the **Advanced options** section, and confirm that the following value is set.
-
-    | Setting | Value |
-    |---------|---------|
-    | Enable alert rule upon creation | **Check - Yes**
+1. Open the **Advanced options** section, and confirm that **Enable alert rule upon creation** is selected.
 
    :::image type="content" source="../media/7-all-vm-alert-details.png" alt-text="Screenshot that shows a completed alert details section.":::
 
-1. Select **Review + create** to validate your input.
+1. Select **Review + create** to validate your input, then select **Create**.
 
-1. Select **Create**.
-
-Recipients added to the configured action group (operations team) will receive a notification:
+Recipients added to the configured action group (operations team) receive a notification:
 
 - When they're added to the action group
 - When the alert is activated
@@ -88,13 +82,13 @@ It can take up to five minutes for an activity log alert rule to become active. 
 
 To trigger an alert, you need to delete the Linux VM machine that you created in the previous exercise.
 
-1. On the Azure portal menu or from the **Home** page, select **Virtual machines**. This action shows a list of the virtual machines.
+1. On the Azure portal menu or from the **Home** page, select **Virtual machines**.
 
 1. Select the **vm1** virtual machine.
 
 1. Select **Delete** from the menu bar.
 
-1. To confirm the deletion, check the box at the bottom of the pane to confirm, then select **Delete**.
+1. Type "yes" in the **Confirm delete** field, then select **Delete**.
 
 1. In the title bar, select the **Notifications** icon and wait until **vm1** is successfully deleted.
 
@@ -102,7 +96,7 @@ To trigger an alert, you need to delete the Linux VM machine that you created in
 
 In the exercise, you set up an Ubuntu VM and created an activity log rule to detect when the VM was deleted. You then deleted a VM from your resource group. Let's check whether an alert was triggered.
 
-1. You should've received a notification email that reads, **Important notice: Azure Monitor alert VM was deleted was activated...** If not, open your email program and look for an email from azure-noreply@microsoft.com.
+1. You should have received a notification email that reads, **Important notice: Azure Monitor alert VM was deleted was activated...** If not, open your email program and look for an email from azure-noreply@microsoft.com.
 
     ![Screenshot of alert email.](../media/7-alert-email.png)
 
@@ -113,3 +107,34 @@ In the exercise, you set up an Ubuntu VM and created an activity log rule to det
     ![Screenshot that shows all alerts with Name, Severity, Alert condition, User response and Fired time.](../media/7-vm-rg-deleted-alert.png)
 
 1. Select the name of one of the alerts (For example, **VM was deleted**). An **Alert details** pane appears that shows more details about the event.
+
+## Add an alert processing rule to the alert
+
+We're going to schedule a one-time, overnight, planned maintenance. It starts in the evening and continues until the next morning.
+
+1. In the Azure portal resource menu, select **Monitor**, and then in the **Monitor | Alerts** menu, select **Alert processing rules**.
+1. Select **+ Create**.
+1. Select the name of your sandbox resource group as the scope of the alert processing rule, and then select **Apply**.
+1. Select **Next: Rule settings**, and then select **Suppress notifications**.
+1. Select **Next: Scheduling**.
+1. By default, the rule works all the time, unless you disable it. We're going to define the rule to suppress notifications for a one-time overnight planned maintenance.
+Enter these settings for the scheduling of the alert processing rule:
+
+    | Setting | Value |
+    |---------|---------|
+    |Apply the rule |On a specific time|
+    |Start|Enter today's date at 10pm.|
+    |End|Enter tomorrow's date at 7am.|
+    |Time zone|Select the local timezone.|
+
+    :::image type="content" source="../media/8-alert-processing-rule-schedule.png" alt-text="Screenshot of the scheduling section of an alert processing rule." lightbox="../media/8-alert-processing-rule-schedule.png":::
+
+1. Select **Next: Details**, and enter these settings:
+
+    | Setting | Value |
+    |---------|---------|
+    |Resource group |Select the name of your sandbox resource group. |
+    |Rule name|**Planned Maintenance**|
+    |Description|**Suppress notifications during planned maintenance.**|
+
+1. Select **Review + create** to validate your input, then select **Create**.
