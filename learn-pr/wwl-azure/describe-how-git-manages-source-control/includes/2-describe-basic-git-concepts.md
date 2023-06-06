@@ -11,9 +11,9 @@ Some of the key Git concepts you should know about are:
 
 ## Repositories
 
-The first concept is the repository. A repository (repo) is the top level project or folder that your code or files are organized within. It’s the same as folder structures on your computer. Just like a folder structure on your compute, you can set it up however you want, in whatever order makes the most sense for your project. For example, if you want all of the documentation in one folder, all of the code in a second folder, and media or images in a third folder, you can do that.
+The first concept is the repository. A repository (repo) is the top level project or folder that your code or files are organized within. It’s the same as folder structures on your computer. Just like a folder structure on your computer, you can set it up however you want, in whatever order makes the most sense for your project. For example, if you want all of the documentation in one folder, all of the code in a second folder, and media or images in a third folder, you can do that.
 
-## Distributed system
+## Distributed systems
 
 In some version or source control systems, all of the files reside in a central or core location and you only “check out” the file you’re working on. When you’re done working on the file, you check it back in. If you want to see the version history or any of the notes that have been made during updates, you need to check the central location for that information.
 
@@ -42,13 +42,13 @@ Later, if you find something you want to incorporate from one of your branches b
 
 Branching and merging are powerful features that let you experiment, patch, or update your code without compromising the live version until everything has been tested and is ready.
 
-If you don't have authority to the main branch of the source repo, you may need to crate a Pull Request or a Merge Request. Pull and Merge requests are the same thing with different names depending on the platform you're using. Both are simply a request from you, to the authority for the main branch, to incorporate your updates to the main branch.
+If you don't have authority to the main branch of the source repo, you may need to create a Pull Request, a Merge Request, or a Request-Pull. These requests are the same thing with different names depending on the platform you're using. They are simply a request from you, to the authority for the main branch, to incorporate your updates to the main branch.
 
 ## Committing and pushing
 
 When you clone a repo to your computer, you’re creating a copy of all of the files, comments, and overall history of the repo. You can then make any changes you want to the files. However, when you make a change to the file, nothing about the repo actually changes. You’ve made an update to a file, but that update isn’t part of your local repo or the original repo that you initially cloned.
 
-When you’re making changes, you can decide if you want to include those changes in your local repo or both your local repo and the original repo. If you want to keep your changes and add them to your local repo, you’ll need to commit the changes. Commit simply tells your local repo to update the file. When you commit, you’ll need to enter a comment letting anyone else who comes across your changes what you did.
+When you’re making changes, you can decide if you want to include those changes in your local repo or both your local repo and the original repo. If you want to keep your changes and add them to your local repo, you’ll need to commit the changes. Commit simply tells your local repo to update the file. When you commit, you’ll need to enter a comment letting anyone else who comes across your changes know what you did.
 
 If you want to sync those changes back to the original repo, you’ll need to push the changes back to the original repo after you commit them to your local repo.
 
@@ -58,4 +58,4 @@ A push sends the committed updates back to the original repo, including any comm
 
 ### Remotes
 
-You already learned that you can create your own Git repo or you can clone someone else’s repo if you want to collaborate. If you’re using a service like GitHub, it means that when everyone pushes their files, the files are stored in the cloud and safe from a compute failure. While the GitHub repo may be the repo that you initially cloned to collaborate, it’s also a remote.
+You already learned that you can create your own Git repo or you can clone someone else’s repo if you want to collaborate. If you’re using a service like GitHub, it means that when everyone pushes their files, the files are stored in the cloud and safe from a compute failure. While the GitHub repo may be the repo that you initially cloned to collaborate, it’s also a remote repository.

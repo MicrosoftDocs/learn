@@ -1,21 +1,20 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-how-git-manages-source-control
 metadata:
-  title: Describe how git manages source control
-  description: "Shallow dive into how git, as a technology, manages source control."
-  ms.date: 06/05/2023
+  title: Describe how Git manages source control
+  description: "Shallow dive into how Git, as a technology, manages source control."
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Describe how git manages source control
-summary: '**Describe how git manages source control** introduces basic git concepts, explains their use, and then covers the git commands that help users manage files in the GitHub source control system.'
+title: Describe how Git manages source control
+summary: '**Describe how Git manages source control** introduces basic Git concepts, explains their use, and covers the Git commands that help users manage files in the GitHub source control system.'
 abstract: |
   After you complete this module, you'll be able to:
-  - Describe basic git concepts.
-  - Explain the difference between git and GitHub.
-  - Identify the function of basic git commands.
-  - Explain the function of intermediate git commands.
+  *   Describe basic git concepts.
+  *   Explain the difference between Git and GitHub.
+  *   Identify the function of basic Git commands.
+  *   Explain the function of intermediate Git commands.
 prerequisites: |
   A personal computer running Windows, macOS, or Linux.
 iconUrl: /training/achievements/generic-badge.svg

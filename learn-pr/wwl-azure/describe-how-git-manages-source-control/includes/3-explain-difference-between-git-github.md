@@ -11,7 +11,7 @@ Git also provides a framework for many version and source control products or si
 
 ## What is GitHub?
 
-GitHub is repository hosting service that uses the Git framework to provide a version and source control solution. GitHub lets anyone create and host repositories for free. You can choose to host private (only accessible to you and people you identify as collaborators) or public (accessible by anyone) repositories, collaborate with others, and clone and push your code to and from repositories.
+GitHub is a repository hosting service that uses the Git framework to provide a version and source control solution. GitHub lets anyone create and host repositories for free. You can choose to host private (only accessible to you and people you identify as collaborators) or public (accessible by anyone) repositories, collaborate with others, and clone and push your code to and from repositories.
 
 In addition to GitHub, other common Git repositories and hosts are Azure DevOps, SourceForge, and BitBucket.
 
@@ -21,4 +21,4 @@ When you log into a version control site, the developers for that site determine
 
 By getting familiar with the Git commands, you can perform tasks in any of the Git-based version control systems quickly and efficiently, without worrying about how the developers built the user interface. Additionally, many integrated development environments (IDEs) also support interacting with a Git-based repository from the command line from within the IDE.
 
-:::image type="content" source="../media/git-bash-interface-20398a2c.png" alt-text="Screenshot of the git bash interface with the git help command run":::
+:::image type="content" source="../media/git-bash-interface-20398a2c.png" alt-text="Screenshot of the git bash interface with the git help command run.":::
