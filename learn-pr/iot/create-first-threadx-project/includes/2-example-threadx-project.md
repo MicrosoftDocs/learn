@@ -92,7 +92,7 @@ void my_thread_entry(ULONG thread_input)
 }
 ```
 
-This block contains the function `my_thread_entry` that is an entry function for the thread named `my_thread`. The function contains a "forever loop", which is the case for most real-time embedded functions.
+This block contains the function `my_thread_entry` that is an entry function for the thread named `my_thread`. The function contains a "forever loop," which is the case for most real-time embedded functions.
 
 > [!NOTE]
 > This is an over simplified function for illustration purposes only, and it contains only two executable statements. One such statement is a counter `my_thread_counter++` and the other statement `tx_thread_sleep(1)` suspends the thread for one timer tick.

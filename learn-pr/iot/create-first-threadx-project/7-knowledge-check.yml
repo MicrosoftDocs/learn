@@ -45,7 +45,7 @@ quiz:
           explanation: "Incorrect, it's application_define."
     - content: 'What is the meaning of this ThreadX service call: tx_thread_sleep(5)'
       choices:
-        - content: 'Change thread state to suspend in five timer ticks.'
+        - content: 'Change the thread state to suspend in five timer ticks.'
           isCorrect: false
           explanation: 'Incorrect, the thread self-suspends for five timer ticks.'
         - content: 'All threads in the system suspend for five timer ticks.'
