@@ -8,7 +8,7 @@ With Azure SQL, there are several approaches to include your database in your De
 
 ## Implement CI/CD for databases
 
-Having the database as part of a CI/CD pipeline means that you want to configure and deploy the structure—and maybe even some of the data—in a fully automated, reproducible, and determinist manner. Once configured, you can run the deployment or update process any time, for any number of times, and get consistent results.
+Having the database as part of a CI/CD pipeline means that you want to configure and deploy the structure—and maybe even some of the data—in a fully automated, reproducible, and determinist manner. Once configured, you can run the deployment or update process anytime, for any number of times, and get consistent results.
 
 In this unit, you'll learn about the three main approaches for implementing a CI/CD pipeline for databases:
 
