@@ -53,7 +53,7 @@ To learn more about GitHub notifications, see [Configuring notifications](https:
 
 :::image type="content" source="../media/2-branching.png" alt-text="GitHub flow with a feature branch. Changes made to a branch can be merged back into the main branch." border="false":::
 
-To learn more about GitHub branches, see [About branches](https://help.github.com/github/collaborating-with-issues-and-pull-requests/about-branches?azure-portal=true).
+To learn more about GitHub branches, see [About branches](https://docs.github.com/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches).
 
 ## Commits
 
