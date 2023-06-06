@@ -21,9 +21,6 @@ The key tasks you need to do are:
 1. Create a transactional batch to add four items.
 1. Execute and observe the results of a query.
 
-> [!IMPORTANT]
-> All steps in this project are designed to be completed within Visual Studio Code either locally or through GitHub Codespaces.
-
 ## Setup
 
 To complete this project, you need an API for NoSQL account.

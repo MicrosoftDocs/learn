@@ -35,13 +35,13 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 1. Create a new <xref:Microsoft.Azure.Cosmos.PartitionKey> instance using the same value as the `categoryId` property for the **Category** instance you created earlier.
 
     ```csharp
-    PartitionKey googlesKey = new("gear-snow-goggles");
+    PartitionKey gogglesKey = new("gear-snow-goggles");
     ```
 
 1. Use the <xref:Microsoft.Azure.Cosmos.Container.UpsertItemAsync%2A> method to create or replace the item passing in an object for the item to create and a partition key value.
 
     ```csharp
-    Category result = await container.UpsertItemAsync(goggles, googlesKey);
+    Category result = await container.UpsertItemAsync(goggles, gogglesKey);
     ```
 
 1. Print various properties of `result` to the console including: The unique identifier of the item and the type of the item.
@@ -262,9 +262,9 @@ Your app now creates multiple items and is designed to be resilient enough to be
         CategoryId: "gear-snow-goggles"
     );
     
-    PartitionKey googlesKey = new("gear-snow-goggles");
+    PartitionKey gogglesKey = new("gear-snow-goggles");
     
-    Category result = await container.UpsertItemAsync(goggles, googlesKey);
+    Category result = await container.UpsertItemAsync(goggles, gogglesKey);
     
     Console.WriteLine($"[New item created]:\t{result.Id}\t(Type: {result.Type})");
     
