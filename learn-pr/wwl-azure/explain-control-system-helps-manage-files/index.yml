@@ -3,11 +3,10 @@ uid: learn.wwl.explain-control-system-helps-manage-files
 metadata:
   title: Explain how a source control system helps manage files
   description: "Introduction to source control as a concept and integrated development environments as they relate to source control."
-  ms.date: 06/05/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explain how a source control system helps manage files
 summary: '**Explain how a source control system helps manage files** goes over the purpose of a source control system, the benefits of using a source control system, between version control and source control, and how software can help you interact with a source control system.'
 abstract: |
