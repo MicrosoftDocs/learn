@@ -23,7 +23,7 @@ Git functions as a distributed version control system. With a distributed system
 
 When you’re working with Git as your version and source control choice, you can either “join” an existing repo or you can create your own from scratch. If you’re working with an already existing repo, you’ll need to start by cloning the repo. Cloning the repo makes a complete and exact copy of the repo. By cloning the repo, you’ll get the structure, all of the files, and all of the history associated with the repo.
 
-Because git works in a distributed manner, it means that you have a complete copy of the repo from whenever you cloned it. You never need to go back to the repo if you aren’t worried about updates others may have made. However, that’s also a downside. If you don’t go back and update your copy of the repo against the source, you’ll be out of synchronization. Pulling is like cloning, but for maintaining continuity after your initial clone.
+Because Git works in a distributed manner, it means that you have a complete copy of the repo from whenever you cloned it. You never need to go back to the repo if you aren’t worried about updates others may have made. However, that’s also a downside. If you don’t go back and update your copy of the repo against the source, you’ll be out of synchronization. Pulling is like cloning, but for maintaining continuity after your initial clone.
 
 Both cloning and pulling from repositories will help you get and keep the latest versions, histories, and comments.
 

@@ -16,24 +16,24 @@ quiz:
   questions:
   - content: "What’s the command syntax to incorporate changes made in one branch to another branch?"
     choices:
-    - content: "git merge"
+    - content: "Git merge"
       isCorrect: true
-      explanation: "Correct. git merge incorporates changes from one branch into another branch."
-    - content: "git add"
+      explanation: "Correct. Git merge incorporates changes from one branch into another branch."
+    - content: "Git add"
       isCorrect: false
-      explanation: "Incorrect. git add stages a change that you’ve made."
-    - content: "git clone"
+      explanation: "Incorrect. Git add stages a change that you’ve made."
+    - content: "Git clone"
       isCorrect: false
-      explanation: "Incorrect. git clone clones, or copies, a repository."
-  - content: "How do you change between branches in a git repository?"
+      explanation: "Incorrect. Git clone clones, or copies, a repository."
+  - content: "How do you change between branches in a Git repository?"
     choices:
-    - content: "git branch"
+    - content: "Git branch"
       isCorrect: false
-      explanation: "Incorrect. git branch can be used to list branches for a current repository or create a new branch."
-    - content: "git checkout"
+      explanation: "Incorrect. Git branch can be used to list branches for a current repository or create a new branch."
+    - content: "Git checkout"
       isCorrect: true
-      explanation: "Correct. git checkout changes which git repository branch you’re working within."
-    - content: "git clone"
+      explanation: "Correct. Git checkout changes which Git repository branch you’re working within."
+    - content: "Git clone"
       isCorrect: false
-      explanation: "Incorrect. git clone clones, or copies, a remote repository."
+      explanation: "Incorrect. Git clone clones, or copies, a remote repository."
 interactive: bash
