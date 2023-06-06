@@ -3,7 +3,7 @@ uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.knowledge-
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check your knowledge on accelerating a Spring Boot application with Azure Cache for Redis.
+  description: Check your knowledge.
   author: judubois
   ms.author: judubois
   ms.date: 01/20/2021
@@ -15,43 +15,43 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What are the main recommended use cases for using Azure Cache for Redis?"
+    - content: "Which of the following features isn't a main Redis use case?"
       choices:
-        - content: "Use Azure Cache for Redis as a distributed cache."
+        - content: "Distributed cache."
           isCorrect: false
-          explanation: "You're partially right, but this answer isn't the only use case."
-        - content: "Use Azure Cache for Redis as a data store for an HTTP session."
+          explanation: "Incorrect. Distributed caching is one of the main use cases for Azure Cache for Redis."
+        - content: "HTTP session data store."
           isCorrect: false
-          explanation: "You're partially right, but this answer isn't the only use case."
-        - content: "Use Azure Cache for Redis as a message broker."
+          explanation: "Incorrect. Storing HTTP session data is one of the main use cases for Azure Cache for Redis."
+        - content: "Message broker."
           isCorrect: false
-          explanation: "You're partially right, but this answer isn't the only use case."
-        - content: "All of the above."
+          explanation: "Incorrect. Message brokering is one of the main use cases for Azure Cache for Redis."
+        - content: "Geo-replication."
           isCorrect: true
-          explanation: "Correct. You can use Azure Cache for Redis as a distributed cache, a data store for an HTTP session, and a message broker."
+          explanation: "Correct. The Premium and Enterprise SKUs of Azure Cache for Redis offer this feature, but it's not a main Redis use case."
     - content: "How does Azure Cache for Redis scale out a web application?"
       choices:
-        - content: "It uses IP multicast to find other application nodes and share data among them."
+        - content: "Uses IP multicast to find other application nodes and share data among them."
           isCorrect: false
-          explanation: "Incorrect. Some alternative caching solutions use this mechanism, but not Azure Cache for Redis. It doesn't work well in a cloud environment."
-        - content: "It acts as a central and scalable data store, where all application nodes can store and retrieve cached data."
+          explanation: "Incorrect. Some caching solutions use this mechanism, but it doesn't work well in a cloud environment."
+        - content: "Acts as a central and scalable data store, where all application nodes can store and retrieve cached data."
           isCorrect: true
           explanation: "Correct. All nodes can store and retrieve data at scale by connecting to Azure Cache for Redis."
-        - content: "It sends messages to every application node to invalidate stale data, so the nodes can then retrieve that data from a persistent database."
+        - content: "Sends messages to every application node to invalidate stale data, so the nodes can then retrieve that data from a persistent database."
           isCorrect: false
-          explanation: "Incorrect. Some alternative caching solutions use this mechanism, but not Azure Cache for Redis."
-        - content: "It stores cached data in a SQL database, so that application nodes can retrieve it easily."
+          explanation: "Incorrect. Some alternative caching solutions use this mechanism, but Azure Cache for Redis doesn't."
+        - content: "Stores cached data in an SQL database, so that application nodes can retrieve it easily."
           isCorrect: false
-          explanation: "Incorrect. Spring Session can use a SQL database to store its data, but it's an alternative and less effective solution than Azure Cache for Redis."
-    - content: "What is the difference between Redis and Azure Cache for Redis?"
+          explanation: "Incorrect. Spring Session can use an SQL database to store data as an alternative, but that's a less effective solution than Azure Cache for Redis."
+    - content: "What's the difference between Redis and Azure Cache for Redis?"
       choices:
         - content: "Azure Cache for Redis is a limited version of Redis that focuses only on caching."
           isCorrect: false
-          explanation: "Incorrect. Azure Cache for Redis isn't a limited version of Redis."
-        - content: "Azure Cache for Redis is an Azure Cosmos DB database that's compatible with Redis at the API layer."
+          explanation: "Incorrect. Azure Cache for Redis is a full-featured version of Redis."
+        - content: "Azure Cache for Redis is an Azure Cosmos DB database that's compatible with the Redis API."
           isCorrect: false
-          explanation: "Incorrect. Azure Cache for Redis uses the real Redis software."
-        - content: "Azure Cache for Redis is a managed version of Redis that's maintained and operated by Azure."
+          explanation: "Incorrect. Azure Cache for Redis is based on the real Redis software."
+        - content: "Azure Cache for Redis is a managed, cloud-based version of Redis."
           isCorrect: true
-          explanation: "Correct. Azure Cache for Redis is a managed version of Redis."
+          explanation: "Correct. Azure Cache for Redis is a managed, cloud-based version of Redis that Azure maintains and operates."
               
