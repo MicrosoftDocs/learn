@@ -1,4 +1,4 @@
-Perform the following steps to set up an Integration Runtime
+Perform the following steps to setup an Integration Runtime
 
 ## Setup an Azure-SSIS Integration Runtime
 
@@ -103,7 +103,7 @@ The alternative approach is to:
 
 1. Select the **Select a VNet for your Azure-SSIS Integration Runtime to join, allow ADF to create certain network resources, and optionally bring your own static public IP addresses** check box to choose whether you want to join your Azure-SSIS IR to a virtual network.
 
-1. Select the **Set up Self-Hosted Integration Runtime as a proxy for your Azure-SSIS Integration Runtime** check box to choose whether you want to configure a self-hosted IR as proxy for your Azure-SSIS IR.
+1. Select the **Setup Self-Hosted Integration Runtime as a proxy for your Azure-SSIS Integration Runtime** check box to choose whether you want to configure a self-hosted IR as proxy for your Azure-SSIS IR.
 
 1. Click **Continue**.
 
