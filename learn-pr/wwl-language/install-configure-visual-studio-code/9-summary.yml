@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.prod: vs-code
 durationInMinutes: 1
 content: |
   [!include[](includes/9-summary.md)]
