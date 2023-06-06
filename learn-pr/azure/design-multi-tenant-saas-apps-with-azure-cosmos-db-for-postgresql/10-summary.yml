@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/10-summary.md)]

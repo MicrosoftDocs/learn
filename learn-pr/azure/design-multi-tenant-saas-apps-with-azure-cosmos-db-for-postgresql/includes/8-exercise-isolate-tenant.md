@@ -99,7 +99,7 @@ To help reduce resource contention in the database, Tailspin Toys has requested 
 
 Now that you've identified the tenant storing the most data and sending a high percentage of traffic into the Tailspin Toys database, you want to isolate that tenant into a dedicated shard.
 
-Use the `isolate_tenant_to_new_shard()` function to move the data for the tenant into a dedicated shard. The table has co-located data, so you're also required to use the `CASCADE` option to move co-located table data.
+Use the `isolate_tenant_to_new_shard()` function to move the data for the tenant into a dedicated shard. The table has colocated data, so you're also required to use the `CASCADE` option to move colocated table data.
 
 ```sql
 SELECT isolate_tenant_to_new_shard('orders', 5, 'CASCADE');

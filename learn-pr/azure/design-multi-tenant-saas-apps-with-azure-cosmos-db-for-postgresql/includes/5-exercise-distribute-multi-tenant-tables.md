@@ -1,4 +1,4 @@
-With the tables in the Tailspin Toys database now prepared for distribution, you're ready to scale the database horizontally and distribute the tables. In this exercise, you'll scale your single-node database to a multi-node cluster and then distribute the table data across the nodes using a combination of distribution methods to minimize the impact of the database changes on Tailspin Toys' multi-tenant SaaS application. In addition, you'll execute several popular queries from the multi-tenant SaaS application throughout the process to measure the impact of your changes on query execution time at various stages.
+With the tables in the Tailspin Toys database now prepared for distribution, you're ready to scale the database horizontally and distribute the tables. In this exercise, you'll scale your single-node database to a multi-node cluster and then distribute the table data across the nodes using a combination of distribution methods to minimize the impact of the database changes on Tailspin Toys' multitenant SaaS application. In addition, you'll execute several popular queries from the multitenant SaaS application throughout the process to measure the impact of your changes on query execution time at various stages.
 
 ## Scale database
 
@@ -20,7 +20,7 @@ Scaling an Azure Cosmos DB for PostgreSQL database can be done quickly via the A
 
 ## Enable citus_stat_statements monitoring
 
-Queries statistics against PostgreSQL databases are maintained in the `pg_stat_statements` view. When transitioning to a multi-node distributed database, the Citus extension provides another view named `citus_stat_statements`, which includes the partition key, making it much more helpful in multi-tenant databases. The `citus_stat_statements` view should be enabled by default in your database, but it's a good idea to verify it's turned on, and if not, enable it.
+Queries statistics against PostgreSQL databases are maintained in the `pg_stat_statements` view. When transitioning to a multi-node distributed database, the Citus extension provides another view named `citus_stat_statements`, which includes the partition key, making it much more helpful in multitenant databases. The `citus_stat_statements` view should be enabled by default in your database, but it's a good idea to verify it's turned on, and if not, enable it.
 
 1. To verify if monitoring is turned on, you must check the `citus.stat_statements_track` setting on your coordinator node. Run the following query to check if Citus statistics tracking is enabled:
 
@@ -74,7 +74,7 @@ You'll use `psql` from the command line to distribute the tables in your databas
 
 ## Benchmark query execution times before table distribution
 
-Before distributing any tables in the database, you want to take baseline measurements on execution times for a few popular queries from the Tailspin Toys multi-tenant SaaS application. These measurements help you understand the impact of table distribution on query performance.
+Before distributing any tables in the database, you want to take baseline measurements on execution times for a few popular queries from the Tailspin Toys multitenant SaaS application. These measurements help you understand the impact of table distribution on query performance.
 
 1. In the Cloud Shell pane, enable the display of query execution times by running the following from the Citus prompt:
 
@@ -145,7 +145,7 @@ Before distributing any tables in the database, you want to take baseline measur
     LIMIT 25;
     ```
 
-    Most queries in multi-tenant SaaS applications are for a single tenant. Still, SaaS providers may run cross-tenant queries to understand how the application is used across tenants or for other purposes, such as generating data for internal analytics. Understanding the impact of distributing table data across nodes on cross-tenant queries is also an essential metric to capture.
+    Most queries in multitenant SaaS applications are for a single tenant. Still, SaaS providers may run cross-tenant queries to understand how the application is used across tenants or for other purposes, such as generating data for internal analytics. Understanding the impact of distributing table data across nodes on cross-tenant queries is also an essential metric to capture.
 
 ## Distribute the stores and products tables
 
@@ -364,7 +364,7 @@ To distribute the `orders` and `line_items` tables, you'll use the `create_distr
      stores     | distributed      | store_id            |             2 | 1024 kB    |          32
     ```
 
-    Related data from each table has been co-located, and each table is now distributed across 32 shards.
+    Related data from each table has been colocated, and each table is now distributed across 32 shards.
 
 14. If you want to view how the shards are distributed across the nodes in your cluster, you can run the following query against the `citus_shards` view:
 
@@ -462,7 +462,7 @@ For the **5 most ordered products by store** query, there was a marked increase 
 The **average order amounts by store** query joins `stores` with a common table expression (CTE) that queries the `line_items` table. There was a slight increase in query execution time when running this with only the `stores` table distributed. This query benefited from using a CTE, allowing the coordinator to execute the `line_items` query locally and pass query execution for the `stores` portion of the query on the worker node hosting the shard containing data for the store with a `store_id` of 5. The CTE reduced how much data needed to be shuffled to complete the query.
 
 The **internal cross-tenant aggregation** query joins `stores` with `line_items` and then does several aggregations on different fields. Before distributing the tables, all data resided on the coordinator node, and joins between local tables could happen efficiently.
-When `stores` was distributed, and `line_items` wasn't, the coordinator had to create query fragments for each shard, sending one to each of the 32 shards in the database to retrieve data for each store. The data returned from each shard had to be joined with data from the local `line_items` table on the coordinator. The database couldn't yet take advantage of the parallel execution possible when table data is distributed and co-located. Post-distribution, all data associated with each store is distributed and co-located so that the query can be parallelized, and execution time improved slightly compared to the pre-distribution time.
+When `stores` was distributed, and `line_items` wasn't, the coordinator had to create query fragments for each shard, sending one to each of the 32 shards in the database to retrieve data for each store. The data returned from each shard had to be joined with data from the local `line_items` table on the coordinator. The database couldn't yet take advantage of the parallel execution possible when table data is distributed and colocated. Post-distribution, all data associated with each store is distributed and colocated so that the query can be parallelized, and execution time improved slightly compared to the pre-distribution time.
 
 ## Truncate local data
 
@@ -478,7 +478,7 @@ After distributing each of your tables, it's a best practice to truncate the loc
 
 ## Disconnect from the database
 
-Congratulations! You've successfully migrated to a multi-node cluster and distributed your table data across nodes. You measured the performance impact of table distribution on several popular queries from the Tailspin Toys multi-tenant SaaS application. You also gained an understanding of how application queries might be impacted during the time in which some tables are distributed while others aren't. In the next exercise, you'll run queries to monitor the tenants in your database and isolate the tenant with the most database activity to a dedicated node.
+Congratulations! You've successfully migrated to a multi-node cluster and distributed your table data across nodes. You measured the performance impact of table distribution on several popular queries from the Tailspin Toys multitenant SaaS application. You also gained an understanding of how application queries might be impacted during the time in which some tables are distributed while others aren't. In the next exercise, you'll run queries to monitor the tenants in your database and isolate the tenant with the most database activity to a dedicated node.
 
 In the Cloud Shell, run the following command to disconnect from your database:
 

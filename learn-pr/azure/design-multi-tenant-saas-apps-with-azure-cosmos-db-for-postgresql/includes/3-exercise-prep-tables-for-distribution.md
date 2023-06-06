@@ -2,7 +2,7 @@ Before you can migrate a single-node database to a multi-node, distributed clust
 
 ## Provision an Azure Cosmos DB for PostgreSQL database
 
-To ensure you can modify the Tailspin Toys database and measure the impact those updates may have on the multi-tenant SaaS application, you first want to set up a development database to test the necessary changes to migrate from a single to a multi-node cluster. You start by provisioning an Azure Cosmos DB for PostgreSQL single-node database that mimics the configuration of Tailspin Toys' current production database. The selected node compute and storage sizes allow you to scale the database horizontally without downtime.
+To ensure you can modify the Tailspin Toys database and measure the impact those updates may have on the multitenant SaaS application, you first want to set up a development database to test the necessary changes to migrate from a single to a multi-node cluster. You start by provisioning an Azure Cosmos DB for PostgreSQL single-node database that mimics the configuration of Tailspin Toys' current production database. The selected node compute and storage sizes allow you to scale the database horizontally without downtime.
 
 1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser.
 
@@ -149,7 +149,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
 2. Download the ZIP file containing the provided data files.
 
     ```sql
-    \! curl -L -O 'https://github.com/MicrosoftDocs/mslearn-design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql-data/raw/main/data/data.zip'
+    \! curl -L -O 'https://github.com/MicrosoftDocs/mslearn-design-multitenant-saas-apps-with-azure-cosmos-db-for-postgresql-data/raw/main/data/data.zip'
     ```
 
 3. Unzip the file to extract the CSV files containing the data Tailspin Toys provided.
@@ -293,7 +293,7 @@ To correctly measure the impact that transitioning to a multi-node database will
     SELECT create_orders(20000);
     ```
 
-    Note the time it takes, as you'll use this for comparison at the end of this exercise.
+    Note the time it takes. You'll use this information for comparison at the end of this exercise.
 
 4. Next, you want the function to execute every minute to add orders to the database automatically. For this, you can use `pg_cron` to schedule it. Run the following `cron.schedule` command to set up a scheduled task named `create_orders` that executes every minute and inserts 20,000 new orders into the database.
 
@@ -305,7 +305,7 @@ To correctly measure the impact that transitioning to a multi-node database will
 
 The `store_id` column is the internal identifier for tenants in the Tailspin Toys database, so it's the logical choice for the distribution column on the tables to be distributed. Notice in the schemas you used to create the database tables above that all of the tables except `line_items` contains the `store_id` column.
 
-To properly distribute and co-locate the `line_items` table data with `stores`, `orders`, and `products`, you need to add the `store_id` column to the `line_items` table and backfill the field for each row. Backfilling tables involves denormalizing the table to add the distribution column and then populating the column with the appropriate value.
+To properly distribute and colocate the `line_items` table data with `stores`, `orders`, and `products`, you need to add the `store_id` column to the `line_items` table and backfill the field for each row. Backfilling tables involves denormalizing the table to add the distribution column and then populating the column with the appropriate value.
 
 1. Run the following SQL command from the `psql` prompt to denormalize the `line_items` table and add the `store_id` distribution column:
 

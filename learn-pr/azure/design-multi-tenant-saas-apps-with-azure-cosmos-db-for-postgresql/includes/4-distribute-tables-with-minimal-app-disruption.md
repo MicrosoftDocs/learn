@@ -2,7 +2,7 @@ With the tables in the Tailspin Toys Azure Cosmos DB for PostgreSQL database now
 
 ## Horizontally scale the database
 
-Azure Cosmos DB for PostgreSQL provides the ability to quickly scale your database to deal with increased load. For multi-tenant SaaS applications, guidance for selecting the initial cluster size is based on the number of worker vCores and RAM of your original instance.
+Azure Cosmos DB for PostgreSQL provides the ability to quickly scale your database to deal with increased load. For multitenant SaaS applications, guidance for selecting the initial cluster size is based on the number of worker vCores and RAM of your original instance.
 
 ![Screenshot of the scale nodes page for Azure Cosmos DB for PostgreSQL in the Azure portal.](../media/cosmos-db-postgresql-scale-nodes.png)
 
@@ -10,15 +10,15 @@ On the **Scale** blade, you can configure the number of worker nodes and the com
 
 It's essential to remember that this step only adds worker nodes. It doesn't distribute data to the new worker nodes. Depending on the size of the compute and storage assigned to the single-node cluster, scaling to multiple nodes may require a server restart, resulting in downtime, if the coordinator compute cores and storage size need to change. The single-node development database you created for Tailspin Toys uses a compute size of 4 vCores with 16 GiB and 512 GiB of storage. This configuration meets the minimum coordinator node size for a multi-node cluster, so you can horizontally scale the database without downtime.
 
-## Distribute and co-locate table data
+## Distribute and colocate table data
 
 Distributing tables is the process of partitioning or sharding table data and moving those shards to be hosted on worker nodes. The database can't enforce, and actually prohibits, foreign key constraints when the referenced rows don't reside on the same node, so moving from a single-node, non-distributed database to a multi-node, distributed database requires some planning around the order in which the tables are distributed. In addition, you should ensure table distribution is done in the least disruptive way possible.
 
-Co-location of related table data should also be configured to allow tenant-specific queries to execute as efficiently as possible. When table data is distributed across nodes in the cluster, you ideally want rows across all tables relating to the same tenant to reside together on the same nodes, in what is referred to as table co-location.
+Colocation of related table data should also be configured to allow tenant-specific queries to execute as efficiently as possible. When table data is distributed across nodes in the cluster, you ideally want rows across all tables relating to the same tenant to reside together on the same nodes, in what is referred to as table colocation.
 
-![Diagram of table co-location represented by data from different tables being in separate clouds based on the store_id.](../media/multi-tenant-colocation.png)
+![Diagram of table colocation represented by data from different tables being in separate clouds based on the store_id.](../media/multitenant-colocation.png)
 
-Co-locating Tailspin Toys' tables by store has the following advantages:
+Colocating Tailspin Toys' tables by store has the following advantages:
 
 - It provides SQL coverage for capabilities such as foreign keys and joins.
 - Transactions for a single store are localized on the single worker node where the store's data is housed.
@@ -118,7 +118,7 @@ The `create_distributed_table_concurrently()` function:
 
 ### Combine distribution methods to minimize impact and reduce risk
 
-Each distribution method has its advantages but also introduces some impacts on the operation of the production multi-tenant SaaS application. Using `create_distributed_table()` will block new transactions from entering the system while it runs but preserves referential integrity throughout the process. The `create_distributed_table_concurrently()` function allows the application to continue writing to the database but introduces the possibility of referential integrity not being enforced while table data is being distributed. To minimize application disruption and reduce risk, you can use a combination of the two methods to distribute the tables in the Tailspin Toys database.
+Each distribution method has its advantages but also introduces some impacts on the operation of the production multitenant SaaS application. Using `create_distributed_table()` will block new transactions from entering the system while it runs but preserves referential integrity throughout the process. The `create_distributed_table_concurrently()` function allows the application to continue writing to the database but introduces the possibility of referential integrity not being enforced while table data is being distributed. To minimize application disruption and reduce risk, you can use a combination of the two methods to distribute the tables in the Tailspin Toys database.
 
 `Stores` is a small table that isn't updated often. Distributing this table using `create_distributed_table()` blocks write operations. However, because they're infrequent and the table distribution will happen quickly, this might fall within the acceptable level of possible application disruption to take this approach. From above, you know that `stores` can be distributed using `create_distributed_table()` without needing to drop any foreign keys on the other tables. Given these conditions, a possible trade-off would be to distribute the `stores` table using `create_distributed_table()`.
 
@@ -134,7 +134,7 @@ Products is a larger table than `stores`, but may also be a candidate to distrib
 SELECT create_distributed_table('products', 'store_id', colocate_with => 'stores');
 ```
 
-The `stores` and `products` tables share the same distribution column, so co-location happens implicitly. If desired, however, you can also explicitly specify co-location using the `colocate_with` option of the `create_distributed_table()` function, as in the above example.
+The `stores` and `products` tables share the same distribution column, so colocation happens implicitly. If desired, however, you can also explicitly specify colocation using the `colocate_with` option of the `create_distributed_table()` function, as in the above example.
 
 The `orders` and `line_items` tables are the largest tables in the database and are the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. Using `create_distributed_table_concurrently()`, you'll have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys you need to drop and slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then recreate the foreign key reference to `stores`.
 
@@ -170,4 +170,4 @@ You only need to run this on `stores`, as it will automatically cascade to other
 
 Neither of the distribution functions available in Azure Cosmos DB for PostgreSQL works within transactions, so some time will lapse between when the first and last tables are distributed. As you go about migrating Tailspin Toys' database to a multi-node cluster, you would like to understand whether queries involving multiple tables will break or become unacceptably inefficient during the interval when one or more tables are distributed, and others aren't.
 
-Queries that involve joins across distributed tables or are cross-partition can be planned efficiently because related data are typically co-located. However, when data isn't co-located, or one of the joined tables is still a local table on the coordinator, the Citus engine can't optimize the query. As a result, performance can be degraded due to the need to shuffle large amounts of data. You should thoroughly test common queries against the Tailspin Toys' development database you created before migrating their production database to a multi-node cluster so you can assess the impact.
+Queries that involve joins across distributed tables or are cross-partition can be planned efficiently because related data are typically colocated. However, when data isn't colocated, or one of the joined tables is still a local table on the coordinator, the Citus engine can't optimize the query. As a result, performance can be degraded due to the need to shuffle large amounts of data. You should thoroughly test common queries against the Tailspin Toys' development database you created before migrating their production database to a multi-node cluster so you can assess the impact.

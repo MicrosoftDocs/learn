@@ -3,7 +3,7 @@ uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.kno
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your understanding of scaling and monitoring multitenant SaaS application databases using Azure Cosmos DB for PostgreSQL."
+  description: "Test your understanding of scaling and monitoring multitenant SaaS application databases by using Azure Cosmos DB for PostgreSQL."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,22 +11,8 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 3
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
