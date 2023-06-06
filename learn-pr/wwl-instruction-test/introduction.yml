@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.instruction-test.1-introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 06/06/2023
+  author: jupajupajupa
+  ms.author: jupa
+  ms.topic: interactive-tutorial
+  ms.service: azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 1
+content: |
+  [!include[](includes/Introduction.md)]
