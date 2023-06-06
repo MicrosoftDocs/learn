@@ -23,7 +23,7 @@ az webapp create \
 > [!NOTE]
 > The preceding code reuses the `$AZ_REDIS_NAME` variable to name the App Service plan and App Service instance, but you can use different names. The App Service instance name is part of the URL, which must be unique across Azure.
 
-You can complete the next step while this deployment completes.
+You can do the next step while this deployment finishes.
 
 ## Deploy the Spring Boot application to Azure App Service
 
@@ -61,9 +61,9 @@ You can complete the next step while this deployment completes.
    ./mvnw package azure-webapp:deploy
    ```
 
-1. When the deployment completes successfully, it outputs the following line:
+1. When the deployment completes successfully, it returns the following line:
 
-   ```bash
+   ```output
    Successfully deployed the artifact to https://<redisName>-webapp.azurewebsites.net
    ```
 

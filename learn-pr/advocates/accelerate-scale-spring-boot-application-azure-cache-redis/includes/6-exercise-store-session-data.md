@@ -58,7 +58,9 @@ Add a new Spring MVC REST controller to your application to use for testing sess
    ```
 
    > [!NOTE]
-   > You configure a specific `ConfigureRedisAction.NO_OP` Spring bean because by default, Spring Session tries to set up [Redis keyspace notifications](https://redis.io/topics/notifications), which won't work on secured Azure Cache for Redis instances. Keyspace notifications are useful for WebSockets, but they consume more resources. The current scenario doesn't use WebSockets and shouldn't enable keyspace notifications. If your scenario needs keyspace notifications for Azure Cache for Redis, you must apply them manually through the Redis CLI.
+   > You configure a specific `ConfigureRedisAction.NO_OP` Spring bean because by default, Spring Session tries to set up [Redis keyspace notifications](https://redis.io/topics/notifications), which won't work on secured Azure Cache for Redis instances. If you need keyspace notifications for Azure Cache for Redis, you must apply them manually through the Redis CLI.
+   >
+   > Keyspace notifications are useful for WebSockets, but they consume more resources. The current scenario doesn't use WebSockets and shouldn't enable keyspace notifications.
 
 1. Restart your application to benefit from HTTP session replication.
 
@@ -81,4 +83,4 @@ Either method produces output that displays your HTTP session ID with a number t
 
 To check whether sessions are persisted correctly, restart your server and verify that your session data isn't lost.
 
-In the next unit you deploy your application to the cloud, and cluster HTTP sessions between your local machine and the cloud service.
+In the next unit, you deploy your application to the cloud, and cluster HTTP sessions between your local machine and the cloud service.

@@ -1,6 +1,14 @@
 
 Congratulations! In this module, you used Azure Cache for Redis to speed up and scale a Spring Boot application. You learned how to use Spring Data Redis and Spring Session to store and retrieve data with Redis, and how to deploy the scalable application to Azure App Service.
 
+## Remove Azure resources
+
+To avoid unwanted charges, remove the Azure resources you created for this module by deleting the resource group that contains them. To delete the resource group, run the following command and respond `y` to the confirmation prompt.
+
+```azurecli
+az group delete --name $AZ_RESOURCE_GROUP
+```
+
 ## More resources
 
 For more advanced topics about Redis and Spring Boot, see the following articles:

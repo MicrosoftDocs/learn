@@ -125,9 +125,9 @@ curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=w
 
 ## Get Azure Cache for Redis security keys
 
-1. In the Bash shell, run the following command to check whether your Azure Cache for Redis instance is ready to use.
+1. Run the following command to check whether your Azure Cache for Redis instance is ready to use.
 
-   ```azcli
+   ```azurecli
    az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP
    ```
 
@@ -136,13 +136,13 @@ curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=w
    >[!TIP]
    >If you have the [jq](https://stedolan.github.io/jq/) utility, you can use the following single command line to check readiness:
    >
-   >```azcli
+   >```azurecli
    >az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP | jq '.provisioningState'
    >```
 
 1. When the Azure Cache for Redis instance is ready, run the following command to retrieve its security keys:
 
-   ```azcli
+   ```azurecli
    az redis list-keys \
        --resource-group $AZ_RESOURCE_GROUP \
        --name $AZ_REDIS_NAME
@@ -154,7 +154,7 @@ curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=w
 
 Open the *src/main/resources/application.properties* configuration file in your application and add the following properties. Replace the `<redisName>` placeholder with your Redis instance name, and replace the `<redisPrimaryKey>` placeholder with the `primaryKey` value you got from the previous step.
 
-```yml
+```yaml
 spring.redis.host=<redisName>.redis.cache.windows.net
 spring.redis.password=<redisPrimaryKey>
 spring.redis.port=6380

@@ -17,7 +17,7 @@ Make sure you have the Azure CLI installed. You can check your Azure CLI version
 
    Substitute your own values for the following example values:
 
-   ```azcli
+   ```azurecli
    AZ_RESOURCE_GROUP=myResourceGroup
    AZ_LOCATION=eastus
    AZ_REDIS_NAME=myUsernameRedis
@@ -25,7 +25,7 @@ Make sure you have the Azure CLI installed. You can check your Azure CLI version
 
 1. After you set the variables, run the following commands to create an Azure resource group and Azure Cache for Redis instance:
 
-   ```azcli
+   ```azurecli
    az group create \
        --name $AZ_RESOURCE_GROUP \
        --location $AZ_LOCATION
