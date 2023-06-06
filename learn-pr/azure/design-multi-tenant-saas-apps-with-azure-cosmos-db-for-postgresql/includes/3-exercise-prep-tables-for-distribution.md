@@ -313,7 +313,7 @@ To properly distribute and colocate the `line_items` table data with `stores`, `
 
     With the `line_items` table now denormalized, the next step is to backfill the newly created `store_id` column. However, performing this operation against large tables can cause a significant load on the database and disrupt other queries. To meet Tailspin Toys' request to horizontally scale the database with _minimal disruption_, you've decided again to use the `pg_cron` extension and a function to update the `line_items` table in small batches.
 
-2. Run the following command to create a function to backfill the `line_items` table in batches:
+2. Run the following command to create a function that backfills the `line_items` table in batches:
 
     ```sql
     CREATE OR REPLACE FUNCTION backfill_batch(batch_size bigint)
@@ -339,13 +339,13 @@ To properly distribute and colocate the `line_items` table data with `stores`, `
     $$;
     ```
 
-3. Next, use `pg_cron` to create a scheduled job named `backfill` to run the function every minute and backfill one million records simultaneously.
+3. Next, use `pg_cron` to create a scheduled job named `backfill` that runs the function every minute and backfills one million records simultaneously:
 
     ```sql
     SELECT cron.schedule('backfill', '*/1 * * * *', 'SELECT backfill_batch(1000000);');
     ```
 
-    Note that you're updating one million records at a time in the `backfill` scheduled job. In a production system, you would typically use smaller batch sizes and backfill tables over a more extended period to reduce performance impacts on the system. The large batch size used in this example is done to allow the table to be backfilled in a short amount of time for this exercise. There are approximately four million records in the `line_items` table, so it takes four or five minutes for the existing records to be backfilled with the appropriate `store_id` value. You can move on to the next task while waiting for the table to be backfilled.
+    Note that you're updating one million records at a time in the `backfill` scheduled job. In a production system, you would typically use smaller batch sizes and backfill tables over a more extended period to reduce performance impacts on the system. This example for this exercise uses a large batch size so that the table is backfilled in a short amount of time. There are approximately four million records in the `line_items` table, so it takes 4 or 5 minutes for the existing records to be backfilled with the appropriate `store_id` value. You can move on to the next task while you wait for the table to be backfilled.
 
 ## Update application queries
 
