@@ -2,19 +2,17 @@ Before you can migrate a single-node database to a multi-node, distributed clust
 
 ## Provision an Azure Cosmos DB for PostgreSQL database
 
-To ensure you can modify the Tailspin Toys database and measure the impact those updates may have on the multitenant SaaS application, you first want to set up a development database to test the necessary changes to migrate from a single to a multi-node cluster. You start by provisioning an Azure Cosmos DB for PostgreSQL single-node database that mimics the configuration of Tailspin Toys' current production database. The selected node compute and storage sizes allow you to scale the database horizontally without downtime.
+To ensure that you can modify the Tailspin Toys database and to measure the impact those updates might have on the multitenant SaaS application, you want to first set up a development database to test the necessary changes to migrate from a single-node cluster to a multi-node cluster. You start by provisioning an Azure Cosmos DB for PostgreSQL single-node database that mimics the configuration of the Tailspin Toys current production database. The selected node compute and storage sizes allow you to scale the database horizontally without downtime.
 
-1. Navigate to the [Azure portal](https://portal.azure.com/) in a web browser.
+1. In a web browser, go to the [Azure portal](https://portal.azure.com/).
 
-2. In the Azure portal, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource.
+2. Select **Create a resource** > **Databases** > **Azure Cosmos DB**. You can also use **Search** to find the resource.
 
     ![Screenshot of the Azure portal's Create a resource screen. Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-create.png)
 
-3. On the **Which API best suits your workload?** screen, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
+3. On **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
     ![Screenshot showing the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
-
-    After selecting **Create**, the portal will display a resource configuration screen.
 
 4. On the **Basics** tab, enter the following information:
 
@@ -34,9 +32,9 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
 
     ![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)
 
-    Make a note of the password you assign, as you need it later to connect to the database.
+    Make a note of the password you create. You need the password later to connect to the database.
 
-5. For the **Scale** setting, select **Configure**, and on the cluster configuration page, set the following and select **Save** to return to the cluster configuration page:
+5. For the **Scale** setting, select **Configure**. On the cluster configuration page, set the following and select **Save** to return to the cluster configuration page:
 
     | Parameter        | Value |
     | ---------------- | ----- |
@@ -45,7 +43,7 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
     | Compute per node | Select **4 vCores, 16 GiB RAM**. |
     | Storage per node | Select **512 GiBM**. |
 
-    The high availability and automatic failover capabilities are out of scope for this exercise, so leave the **High availability** checkbox unchecked.
+    The high availability and automatic failover capabilities are out of scope for this exercise, so leave the **High availability** option cleared.
 
     ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)
 
@@ -55,15 +53,15 @@ To ensure you can modify the Tailspin Toys database and measure the impact those
 
     It can take 10-15 minutes for your cluster to provision.
 
-7. Once your cluster has finished provisioning, navigate to the resource in the Azure portal.
+7. When your cluster is finished provisioning, go to the resource in the Azure portal.
 
 8. Select **Networking** under **Settings** from the left-hand navigation menu. On the networking blade, check the box to **Allow public access from Azure services and resources within Azure to this cluster** and select **Save** on the toolbar.
 
     ![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)
 
-## Connect to the database using psql in the Azure Cloud Shell
+## Connect to the database by using psql in the Azure Cloud Shell
 
-You'll use `psql` from the command line to make your database changes. `psql` is a command line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+You'll use `psql` from the command line to make your database changes. `psql` is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
 1. From your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, select **Connection strings** under **Settings** in the left-hand navigation menu, then copy the connection string labeled **psql**.
 
@@ -315,7 +313,7 @@ To properly distribute and colocate the `line_items` table data with `stores`, `
 
     With the `line_items` table now denormalized, the next step is to backfill the newly created `store_id` column. However, performing this operation against large tables can cause a significant load on the database and disrupt other queries. To meet Tailspin Toys' request to horizontally scale the database with _minimal disruption_, you've decided again to use the `pg_cron` extension and a function to update the `line_items` table in small batches.
 
-2. Execute the below command to create a function for backfilling the `line_items` table in batches:
+2. Run the following command to create a function to backfill the `line_items` table in batches:
 
     ```sql
     CREATE OR REPLACE FUNCTION backfill_batch(batch_size bigint)
