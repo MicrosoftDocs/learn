@@ -6,7 +6,7 @@ If you haven't done so already, set up your development environment in accordanc
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you created from the GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you created from the GitHub repo. Once done, you can view the sample projects repo within VS Code web.
 
 1. Expand the **TASK EXPLORER** pane and expand the **vscode** node. From the **Build / Clean / Run Project** tasks, choose **Build Project** and select the run button.
 
