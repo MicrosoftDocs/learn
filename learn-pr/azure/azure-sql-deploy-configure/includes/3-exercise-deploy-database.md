@@ -51,7 +51,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. Leave remaining defaults and select **Next: Additional settings**.
 
-1. On the **Additional settings** tab for Azure SQL Database, you can select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**. Select **OK** when prompted.
+1. On the **Additional settings** tab for Azure SQL Database, you can select the `AdventureWorksLT` database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**. Select **OK** when prompted.
 
 1. Select **Review + create**. Here, you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 
