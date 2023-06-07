@@ -22438,6 +22438,16 @@
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/index.md",
     "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
   }
   ]
 }
