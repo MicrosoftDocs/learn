@@ -8,9 +8,7 @@ metadata:
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
 title: Guided Project –  Use GitHub to manage file updates
-summary: |
-  Guided Project – Use GitHub to manage file updates provides you with the opportunity to create your own GitHub repository and manage files within that repository, including updating files, handling conflicts, and updating the source repository.
-  testing 123
+summary: Guided Project – Use GitHub to manage file updates provides you with the opportunity to create your own GitHub repository and manage files within that repository, including updating files, handling conflicts, and updating the source repository.
 abstract: |
   In this module, you'll practice how to:
   *   Create a GitHub account and an initial repository.
