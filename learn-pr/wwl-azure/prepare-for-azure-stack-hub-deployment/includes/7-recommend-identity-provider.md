@@ -96,7 +96,7 @@ Graph service in Azure Stack Hub uses the following protocols and ports to commu
 
 | **Type**    | **Port** | **Protocol**          |
 | ----------- | -------- | --------------------- |
-| LDAP        | 389      | TCP &amp; UDP |
+| LDAP        | 389      | TCP & UDP |
 | LDAP SSL    | 636      | TCP                   |
 | LDAP GC     | 3268     | TCP                   |
 | LDAP GC SSL | 3269     | TCP                   |

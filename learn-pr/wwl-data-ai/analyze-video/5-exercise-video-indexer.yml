@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labId: 100991
 labModal: true

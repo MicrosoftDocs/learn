@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: Knowledge check.
-  ms.date: 12/02/2021
+  ms.date: 06/05/2023
   author: geektrainer
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -13,6 +13,7 @@ metadata:
 durationInMinutes: 2
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "What function is used to convert a string to an integer?"
     choices:

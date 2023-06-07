@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Save key findings with bookmarks
 durationInMinutes: 5
 content: |
