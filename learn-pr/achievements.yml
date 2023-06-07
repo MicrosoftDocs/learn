@@ -1722,3 +1722,13 @@ achievements:
   title: Introduction to 5G for Azure in the Enterprise
   summary: We introduce 5G for Azure in the Enterprise
   iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
+- uid: learn.intro-to-azure-lab-services.badge
+  type: badge
+  title: Introduction to Azure Lab Services
+  summary: Evaluate whether Azure Lab Services is appropriate to your lab requirements.
+  iconUrl: /training/achievements/azure-lab-services-intro-module.svg
+- uid: learn.setup-first-lab-using-azure-lab-services.badge
+  type: badge
+  title: Set up your first classroom lab by using Azure Lab Services
+  summary: Learn how to set up your first classroom lab by using Azure Lab Services.
+  iconUrl: /training/achievements/setup-first-lab-using-azure-lab-services.svg
