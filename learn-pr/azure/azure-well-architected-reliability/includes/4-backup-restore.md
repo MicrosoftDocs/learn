@@ -16,9 +16,9 @@ These concepts map to the concepts of Recovery Point Objective (RPO) and Recover
 
 Develop both requirements relative to the cost of achieving them. No organization wants to say that they can afford to lose any data, but that might not be the case when they consider the cost of achieving that requirement.
 
-Backup plays a role in disaster recovery (DR), but backups, restores, and their associated scenarios extend beyond the scope of DR. Backups might need to be restored in non-disaster situations, including scenarios where RTO and RPO aren't a concern.
+Backup plays a role in disaster recovery (DR), but backups, restores, and their associated scenarios extend beyond the scope of DR. Backups might need to be restored in nondisaster situations, including scenarios where RTO and RPO aren't a concern.
 
-For example, if a small amount of data older than your backup interval is corrupted or deleted, but the application doesn't experience downtime and a successful restore results in no data lost, your application might never be in danger of missing its SLA. Your DR plan might or might not include guidance for doing restores in non-disaster situations.
+For example, if a small amount of data older than your backup interval is corrupted or deleted, but the application doesn't experience downtime and a successful restore results in no data loss, your application might never be in danger of missing its SLA. Your DR plan might or might not include guidance for doing restores in nondisaster situations.
 
 > [!TIP]
 > Don't confuse archival, replication, and backup. Archival is storing data for long-term preservation and read access. Replication is near-real-time copying of data between replicas to support high availability and some DR scenarios. Some requirements, such as data retention laws, might influence your strategies for all three of these concerns, but they require separate analysis and implementation.
@@ -36,7 +36,7 @@ Backup serves as a general-purpose backup solution for cloud and on-premises wor
 The following products and services use Backup to create backups:
 
 - **Microsoft Azure Recovery Services (MARS) agent** is a Windows application that backs up files, folders, and system state from the Windows VM it's installed on. It works like many consumer cloud-based backup solutions, but requires configuring a Recovery Services vault. Once you download and install the agent onto a Windows server or VM, you can configure it to create backups up to three times a day.
-- **System Center Data Protection Manager** is a robust, fully-featured, enterprise-level backup and recovery system for Windows Server. Data Protection Manager can back up file systems and Windows and Linux VMs, create bare-metal backups of physical servers, and do application-aware backups of server products like SQL Server and Exchange. Data Protection Manager is part of System Center and is licensed and sold with System Center, but is considered part of the Backup family because it can store backups in a Recovery Services vault.
+- **System Center Data Protection Manager** is a robust, fully featured, enterprise-level backup and recovery system for Windows Server. Data Protection Manager can back up file systems and Windows and Linux VMs, create bare-metal backups of physical servers, and do application-aware backups of server products like SQL Server and Exchange. Data Protection Manager is part of System Center and is licensed and sold with System Center, but is considered part of the Backup family because it can store backups in a Recovery Services vault.
 - **Microsoft Azure Backup Server (MABS)** is similar to Data Protection Manager, but is licensed as part of an Azure subscription and doesn't require a System Center license. Azure Backup Server supports the same functionality as Data Protection Manager, except for local tape backup and integration with System Center products.
 - **Azure VM backup** is a turnkey backup and restore feature that supports scheduled backups for Azure Windows and Linux VMs. VM Backup supports recovery of individual files, full disks, and entire VMs, and can also do application-consistent backups. You can make individual applications aware of backup operations so they get their filesystem resources into a consistent state before the snapshot is taken.
 
@@ -48,7 +48,7 @@ Azure Storage doesn't include automated backup, but blobs are commonly used to b
 
 Azure general purpose v2 storage accounts support three different Blob Storage tiers of varying performance and cost. *Cool* storage offers the best cost-to-performance ratio for most backups,  while *hot* storage offers lower access costs but higher storage costs. *Archive* storage might be appropriate for secondary backups or backups of data with low expectations for recovery time. Archive storage is low cost but requires up to 15 hours of lead time to access.
 
-Immutable blob storage is configurable to be non-erasable and non-modifiable for a user-specified interval. Immutable blob storage was designed primarily to fulfill strict requirements for certain kinds of data, such as financial data and is a great option for ensuring that backups are protected against accidental deletion or modification.
+Immutable blob storage is configurable to be nonerasable and nonmodifiable for a user-specified interval. Immutable blob storage primarily fulfills strict requirements for certain kinds of data, such as financial data, and is a great option for ensuring that backups are protected against accidental deletion or modification.
 
 ### Azure SQL Database
 
@@ -66,7 +66,7 @@ App Service backups are limited to 10 GB total, including application and databa
 
 ## Backup and restore testing and verification
 
-No backup system is complete without a strategy for verifying backups and testing restore procedures. Even if you use a dedicated backup service or product, you should still document and practice recovery procedures to ensure that they're well-understood and that they return the system to the expected state.
+No backup system is complete without a strategy for verifying backups and testing restore procedures. Even if you use a dedicated backup service or product, you should still document and practice recovery procedures to ensure that everyone understands them and that they return the system to the expected state.
 
 Strategies for verifying backups vary and depend on the nature of your infrastructure. You might consider techniques like creating a new deployment of the application, restoring the backup to it, and comparing the states of the two instances. In many cases, this technique closely mimics actual DR procedures.
 

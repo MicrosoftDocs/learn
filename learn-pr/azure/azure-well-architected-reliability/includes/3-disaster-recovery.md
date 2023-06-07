@@ -4,17 +4,17 @@ When disaster strikes, you need to have a recovery plan to get your services run
 
 ## Disaster recovery concepts
 
-A disaster is a single, major event with an larger and longer-lasting impact than an application can mitigate through the high availability part of its design. Disaster recovery (DR) is about recovering from high-impact events that result in downtime and data loss. 
+A disaster is a single, major event with a larger and longer-lasting impact than an application can mitigate through the high availability part of its design. Disaster recovery (DR) is about recovering from high-impact events that result in downtime and data loss. 
 
 The word disaster often evokes thoughts of natural disasters and external events like earthquakes, floods, and tropical storms, but many other kinds of disasters exist. A failed deployment or upgrade can leave an app in an unrecognizable state. Malicious hackers can encrypt or delete data and inflict other kinds of damage that take an application offline or eliminate some of its functionality.
 
-Regardless of the cause, the best remedy once a disaster occurs is a well-defined and tested DR plan and an application design that actively supports DR.
+Regardless of the cause, the best remedy for a disaster is a well-defined and tested DR plan and an application design that actively supports DR.
 
 ## Create a disaster recovery plan
 
 A disaster recovery plan is a document that details the procedures required to recover from data loss and downtime caused by a disaster. The document identifies who's in charge of directing the procedures. Operators should be able to use the plan as a manual to restore application connectivity and recover data after a disaster.
 
-A detailed, written plan dedicated to DR is critical to a favorable outcome. Creating a disaster recovery plan requires expert knowledge of the application's workflows, data, infrastructure, and dependencies. The process of creating the plan helps assemble a complete picture of the application. The resulting written steps promote good decision-making and followthrough in the panicked, chaotic aftermath of a disaster.
+A detailed, written plan dedicated to DR is critical to a favorable outcome. Creating a disaster recovery plan requires expert knowledge of the application's workflows, data, infrastructure, and dependencies. The process of creating the plan helps assemble a complete picture of the application. The resulting written steps promote good decision-making and follow-through in the panicked, chaotic aftermath of a disaster.
 
 To create a DR plan, first do a risk assessment and process inventory for your application. Then define your recovery objectives, and then detail the recovery steps to achieve the objectives.
 
@@ -33,7 +33,7 @@ Applications that consist only of a single process or data classification are st
 A complete DR plan must specify the following critical business requirements for each process the application implements:
 
 - **Recovery Point Objective (RPO)** is the maximum duration of acceptable data loss. RPO is measured in units of time, not volume, such as "30 minutes of data" or "four hours of data.". RPO is about limiting and recovering from data loss, not data theft.
-- **Recovery Time Objective (RTO)** is the maximum duration of acceptable downtime, where "downtime" is defined by your specification. For example, if the acceptable downtime duration in the event of a disaster is eight hours, then the RTO is eight hours.
+- **Recovery Time Objective (RTO)** is the maximum duration of acceptable downtime, where "downtime" is defined by your specification. For example, if the acceptable downtime duration in a disaster is eight hours, then the RTO is eight hours.
 
 ![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/3-rto-rpo.png)
 
@@ -93,7 +93,7 @@ After a disaster, business data isn't the only asset that needs recovering. Disa
 
 In most cases, process restoration involves failover to a separate, working deployment. Depending on the scenario, geographic location might be a critical aspect. For example, a large-scale natural disaster that brings an entire Azure region offline necessitates restoring service in another region.
 
-Your application's DR requirements, especially RTO, should drive your design and help you decide how many replicated environments to have, where to locate them, whether to maintain them in a ready-to-run state, or whether they should be ready to accept a deployment in the event of disaster.
+Your application's DR requirements, especially RTO, should drive your design and help you decide how many replicated environments to have, where to locate them, whether to maintain them in a ready-to-run state, or whether they should be ready to accept a deployment in a disaster.
 
 Depending on your application design, you can use several different strategies and Azure features to improve your application's support for process recovery after a disaster.
 

@@ -1,6 +1,6 @@
 Your business relies on access to its systems and data. Every moment that a customer or internal team can't access what they need can result in a loss of revenue. It's your job to make sure that doesn't happen. In this module, you learn about the Reliability pillar of the Azure Well-Architected Framework.
 
-The concepts this module discusses aren't all-inclusive, but represent some of the most important reliability considerations for building cloud solutions. For more information, refer to the [Microsoft Azure Well-Architected Framework](/azure/well-architected) as you plan and design your architecture.
+The concepts this module discusses aren't all-inclusive, but represent some of the most important reliability considerations for building cloud solutions. For further guidance, use the [Microsoft Azure Well-Architected Framework](/azure/well-architected) to help plan and design your architecture.
 
 ## Learning objectives
 
