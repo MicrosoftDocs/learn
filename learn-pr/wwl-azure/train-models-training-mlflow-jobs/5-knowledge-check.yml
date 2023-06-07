@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 3
 quiz:
+  title: ""
   questions:
   - content: "A data scientist trains a regression model and wants to track the model's performance by storing the Root Mean Squared Error (RMSE) with the experiment run. Which method can be used to log the RMSE?"
     choices:
