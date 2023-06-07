@@ -37,9 +37,9 @@ quiz:
     - content: "Availability zones."
       isCorrect: false
       explanation: "A highly available architecture uses availability zones to distribute systems across multiple datacenters within a region."
-    - content: 'Availability sets.'
+    - content: "Availability sets."
       isCorrect: false
       explanation: "A highly available architecture uses availability sets to minimize the impact from localized failures and maintenance events."
     - content: "Recovery Services vaults."
       isCorrect: true
-      explanation: 'Recovery Services vaults provide a destination for backups, but they aren't part of a highly available architecture.'
+      explanation: "Recovery Services vaults provide a destination for backups, but they aren't part of a highly available architecture."
