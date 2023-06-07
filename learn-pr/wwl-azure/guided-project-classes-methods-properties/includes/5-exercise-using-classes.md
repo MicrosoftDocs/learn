@@ -2,7 +2,7 @@
 
 In this last exercise, you make your game field, or grid, look a little nicer. To do that, you edit your Print method in the Program.cs file. Essentially, rather than a “0”, your method now uses this symbol '░' instead. Rather than the number “1”, you use this symbol '▓'. When an ant is present, you print the direction of the ant's current direction, for example, '►'.
 
-##Add Game field pretty-printing
+## Add Game field pretty-printing
 We begin by modifying the loop you created earlier. To start, we delete the Console.Write and Console.WriteLine statements inside our loop and replace them with a default character we use for creating our grid, basically replacing the "0s". You then check to see if there are ants in the ants array. If there are ants in the array, we print the current direction of the ant. If no ants exist in the array, you flip the color of the cell from black to white.
 
 1. Create your new character of type `char` called `fieldChar`, that is, `char fieldChar = '░';`
@@ -47,7 +47,7 @@ We begin by modifying the loop you created earlier. To start, we delete the Cons
     The last thing to do here is to print your `fieldChar` to the screen, that is, `Console.Write($"{fieldChar}");`.
 
 
-##Check your work
+## Check your work
 In this task, you run the code and verify the output is correct.
 
 1. Compare your code:

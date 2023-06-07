@@ -2,16 +2,16 @@
 
 In this exercise, we create the Game folder in the application root and begin implementing LangtonsAnt game concepts in this folder.
 
-##Create a game folder
+## Create a game folder
 1. Ensure that you have the .NET Editor open to your LangtonsAnt project.
 1. Select Add, by right-clicking on the name of your project in Solution Explorer.
 1. Select New Folder, then name it *Game*.
 
 
-##Create Enum for ant direction
+## Create Enum for ant direction
 Now that we have our Game folder, we can begin adding our application files to it.
 
-##Create AntDirection.cs
+## Create AntDirection.cs
 1. Right-click the Game folder and select Add.
 1. Select New Item.
 1. Name the new file you're creating AntDirection.cs.
@@ -28,14 +28,14 @@ Now that we have our Game folder, we can begin adding our application files to i
     }
     ```
 
-##Create Ant class
+## Create Ant class
 Create and Ant class and add Ant properties and a constructor.
 1. Right-click the Game folder and select Add.
 1. Select New Item.
 1. Name the new file you're creating Ant.cs
 1. Select Add.
 
-##Add ant Act method
+## Add ant Act method
 1. Add a method called Act that takes a byte variable called *oldValue* and returns a byte.
 
     ```CSharp
@@ -46,7 +46,7 @@ Create and Ant class and add Ant properties and a constructor.
     }
     ```
 
-##Add Game class and properties
+## Add Game class and properties
 You'll now create your Game class and add a few properties to it.
 1. Right-click the Game folder and select Add.
 1. Select New Item.
@@ -75,7 +75,7 @@ Add Ants property
 1. Enter your property name `Ants`.
 1. Press Enter.
 
-##Implement a constructor initializing class instances
+## Implement a constructor initializing class instances
 Our next task is to initialize our Game class with default size.
 1. Create a public constructor that looks like this.
     ```CSharp
@@ -102,7 +102,7 @@ Our next task is to initialize our Game class with default size.
     }
     ```
 
-##Implement Game methods
+## Implement Game methods
 Now that we have created our Game class with a constructor that initializes the size of our byte array for our grid, we're ready to begin implementing our methods. You begin by creating a method called *NextGeneration* and then adding the method it calls, *CalcNextGeneration*. We're separating out our *NextGeneration* methods into two methods for clarity sake. Although it's the *CalcNextGeneration* method that does the real work of the two methods, we begin by creating the *NextGeneration* method that calls into it.
 
     > [!NOTE]
@@ -208,7 +208,7 @@ The next several lines of code essentially swap out the old grid value (initiall
         }
     ```
 
-##Rewrite Program.cs to print game state
+## Rewrite Program.cs to print game state
 
 Our final task for this exercise is to rewrite the Program.cs file so that it prints the state of the game. To accomplish this task, we'll create a Print method and a `do…While` loop that will call our Print method. This will make our grid appear when the application starts.
 1.	Open your Program.cs file.
@@ -221,10 +221,10 @@ Our final task for this exercise is to rewrite the Program.cs file so that it pr
 1. Paste the `for` loop you created in the previous exercise into your Print method.
 You need to replace the term `field` in your loop to use `game.Field`
 
-##Call Game class Print method
+## Call Game class Print method
 
 
-##Check your work
+## Check your work
 1. Compare your code:
 
     ```csharp

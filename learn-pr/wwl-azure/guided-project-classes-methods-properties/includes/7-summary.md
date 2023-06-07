@@ -1,6 +1,6 @@
 
 
-##Summary
+## Summary
 
 Your goal was to build an application based on Langton's Ant using many of the object-oriented programming skills you have been learning about. These skills include learning about what classes, methods, and properties your application needs and how to implement them.
 

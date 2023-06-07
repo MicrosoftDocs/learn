@@ -4,11 +4,10 @@ title: Exercise-Implement Classes
 metadata:
   title: Exercise-Implement Classes
   description: "Create the main classes for the LangtonsAnt application."
-  ms.date: 06/01/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+durationInMinutes: 20
 content: |
   [!include[](includes/4-excercise-implement-classes.md)]
-interactive: csharp

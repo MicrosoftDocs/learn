@@ -4,7 +4,7 @@ In this exercise, we get started with our project. We'll create the LangtonsAnt 
 
 In the upcoming exercises, we are using the Program.cs file to create an instance of the Game class and run Langton's Ant game simulation in the console.
 
-##Create a new console application
+## Create a new console application
 
 Let's begin by creating a new .NET 6.0 Console Application project with Visual Studio Community, the free community edition of Visual Studio.
 
@@ -18,12 +18,12 @@ Now that you have created the basic plumbing for a console application, meaning 
 
 You'll create a two dimensional (16x16) byte array that represents our grid for the ants. We then display it by creating a nested looping structure that prints characters to the screen showing our cell locations, as well building our vertical axis (or y-axis). The outer loop is creating our horizontal cells (x-axis), while our inner loop is stacking each row as it builds out the vertical axis.
 
-##Create a two dimensional integer array
+## Create a two dimensional integer array
 Open your Program.cs file and add the following code.
 
 `int[,] field = new int[16, 16];`
 
-##Create loops
+## Create loops
 
 1. Create outer `for` loop
 
@@ -55,7 +55,7 @@ Open your Program.cs file and add the following code.
 &nbsp;
 &nbsp;
 
-##Check your work
+## Check your work
 
 Build the project, and launch the application. Make sure it outputs the array you created with each “row” being printed on a separate line.
 

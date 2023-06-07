@@ -11,13 +11,13 @@ By the end of this module, you'll be able to write code that uses classes, prope
 
 [!NOTE]This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
 
-##Learning objectives In this module, you practice how to:
+## Learning objectives In this module, you practice how to:
 
 - Create a console application
 - Create and Ant class and add properties and a constructor
 - Read user input in a loop 
 
-##Prerequisites 
+## Prerequisites 
 
 - Beginner level experience with a .NET editor 
 - Beginner level experience with basic C# syntax rules 
