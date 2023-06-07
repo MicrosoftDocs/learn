@@ -10,8 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
-content: |
-  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
