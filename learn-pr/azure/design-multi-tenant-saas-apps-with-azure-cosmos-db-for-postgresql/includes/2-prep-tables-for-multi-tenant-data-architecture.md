@@ -1,4 +1,4 @@
-To accommodate the recent increase in toy stores that host their websites in the Tailspin Toys multitenant SaaS application, you decide to migrate the Tailspin Toys Azure Cosmos DB for PostgreSQL single-node database to a multi-node cluster. You can do this quickly and with minimal to no downtime by horizontally scaling the database in the Azure portal. However, to ensure that this is done efficiently and with minimal disruption, you must work and plan to prepare your database for distribution before you take this step.
+To accommodate the recent increase in toy stores that host their websites in the Tailspin Toys multitenant SaaS application, you decide to migrate the Tailspin Toys Azure Cosmos DB for PostgreSQL single-node database to a multi-node cluster. You can migrate the database quickly and with minimal to no downtime by horizontally scaling the database in the Azure portal. However, to ensure that the database is migrated efficiently and with minimal disruption, you must plan and prepare your database for distribution before you take this step.
 
 Tailspin Toys has provided the following diagram. It represents the structure and relationships between tables in the Tailspin Toys current single-node database. Bold fields on a light blue background represent primary keys, and italicized items are foreign keys.
 
@@ -22,9 +22,9 @@ Azure Cosmos DB for PostgreSQL can efficiently process cross-shard queries, but 
 
 ## Select a distribution column
 
-Tables in a single-node database might have primary and foreign keys, but they don't need to specify a distribution column. The first step when you plang a migration to a multi-node distributed database is to identify the best distribution column and plan table distribution accordingly.
+Tables in a single-node database might have primary and foreign keys, but they don't need to specify a distribution column. The first step when you plan a migration to a multi-node distributed database is to identify the best distribution column and plan table distribution accordingly.
 
-After you examin the most common query patterns against the Tailspin Toys database, you determined that most queries that are executed against the database relate to a single store rather than to joining information across stores. This pattern is typical in databases that are associated with multitenant SaaS applications, including online transaction processing (OLTP) workloads for web clients and online analytical processing (OLAP) workloads that serve per-tenant analytical queries. As a result, multitenant SaaS applications have a natural dimension on which to distribute data across nodes. You can shard by tenant ID. For Tailspin Toys, this means specifying `store_id` as the distribution column on each distributed table.
+After you examine the most common query patterns against the Tailspin Toys database, you determined that most queries that are executed against the database relate to a single store rather than to joining information across stores. This pattern is typical in databases that are associated with multitenant SaaS applications, including online transaction processing (OLTP) workloads for web clients and online analytical processing (OLAP) workloads that serve per-tenant analytical queries. As a result, multitenant SaaS applications have a natural dimension on which to distribute data across nodes. You can shard by tenant ID. For Tailspin Toys, you specify `store_id` as the distribution column on each distributed table.
 
 ## Classify tables
 
@@ -38,7 +38,7 @@ When you work with tables in a single-node multitenant SaaS database, the tables
 
 * **Reference table**. These tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster, available for quick access by queries on any node.
 
-* **Local table**. These are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as user authentication.
+* **Local table**. These tables are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as user authentication.
 
 ## Backfill tables
 
@@ -82,7 +82,7 @@ END;
 $$;
 ```
 
-Using `pg_cron`, which comes preinstalled in every Azure Cosmos DB for PostgreSQL database, you decide to schedule the function to run every 5 minutes:
+Using `pg_cron`, which comes preinstalled in every Azure Cosmos DB for PostgreSQL database, you decide to schedule the function to run every five minutes:
 
 ```sql
 SELECT cron.schedule('backfill', '*/5 * * * *', 'SELECT backfill_batch(100000)');
@@ -170,10 +170,10 @@ ALTER TABLE line_items
 COMMIT;
 ```
 
-You must consider the relationships between tables when you drop and re-create primary and foreign keys. To ensure that existing constraint checks don't block operations when you drop keys, you should begin at the bottom of the relationship hierarchy and work your way up. Likewise, when you re-create keys, start at the top and work your way down to be sure that any referenced objects exist. For example, in the Tailspin Toys database, the `orders` and `products` tables sit above `line_items` in the hierarchy. The `line_items` table has foreign key references to each of those tables. Attempting to drop and re-create the primary keys on either `orders` or `products` before the foreign key constraints are removed from `line_items` results in an error. The order of operations matters. To avoid these errors, start by removing the foreign key references for tables that are lower in the hierarchy, like `line_items`, and then work your way up the hierarchy.
+You must consider the relationships between tables when you drop and re-create primary and foreign keys. To ensure that existing constraint checks don't block operations when you drop keys, you should begin at the bottom of the relationship hierarchy and work your way up. Likewise, when you re-create keys, start at the top and work your way down to be sure that any referenced objects exist. For example, in the Tailspin Toys database, the `orders` and `products` tables are above `line_items` in the hierarchy. The `line_items` table has foreign key references to each of those tables. Attempting to drop and re-create the primary keys on either `orders` or `products` before the foreign key constraints are removed from `line_items` results in an error. The order of operations matters. To avoid these errors, start by removing the foreign key references for tables that are lower in the hierarchy, like `line_items`, and then work your way up the hierarchy.
 
 Another technique to avoid breaking foreign key relationships that are defined in other tables is to include the `CASCADE` option when you drop the primary key constraints from your tables. The `CASCADE` option ensures that any related foreign key constraints are removed from other tables further down in the hierarchy.
 
-By modifying each of the Tailspin Toys tables this way, the schema for the multi-node distributed database should now resemble the following diagram. The diagram highlights the new `store_id` column in the `line_items` table and the newly defined foreign key relationship with `stores` in green. Bold fields on a light blue background represent primary keys, and italicized items are foreign keys.
+When you modify each of the Tailspin Toys tables this way, the schema for the multi-node distributed database should now resemble the following diagram. The diagram highlights the new `store_id` column in the `line_items` table and the newly defined foreign key relationship with `stores` in green. Bold fields on a light blue background represent primary keys, and italicized items are foreign keys.
 
 :::image type="content" source="../media/table-schema-multi-node.png" border="false" alt-text="Diagram of the multi-node schemas of and relationships between the stores, products, orders, and line_items tables. The new store_id column on the line_items table and the relationship between stores and line_items are highlighted in green.":::

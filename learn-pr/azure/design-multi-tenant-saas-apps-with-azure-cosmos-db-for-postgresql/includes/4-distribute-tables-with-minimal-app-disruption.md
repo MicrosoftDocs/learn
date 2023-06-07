@@ -2,17 +2,17 @@ With the tables in the Tailspin Toys Azure Cosmos DB for PostgreSQL database now
 
 ## Horizontally scale the database
 
-Azure Cosmos DB for PostgreSQL provides the ability to quickly scale your database to deal with increased load. For multitenant SaaS applications, guidance for selecting the initial cluster size is based on the number of worker vCores and RAM of your original instance.
+You can use Azure Cosmos DB for PostgreSQL to quickly scale your database to handle increased load. For multitenant SaaS applications, guidance for selecting the initial cluster size is based on the number of worker vCores and RAM of your original instance.
 
 ![Screenshot of the scale nodes page for Azure Cosmos DB for PostgreSQL in the Azure portal.](../media/cosmos-db-postgresql-scale-nodes.png)
 
-On the **Scale** blade, you can configure the number of worker nodes and the compute and storage size for each. When migrating from a single-node database, you can typically start with two nodes and expand to more workers over time as application performance and growth requires.
+On the **Scale** pane, you can configure the number of worker nodes and the compute and storage size for each. When migrating from a single-node database, you can typically start with two nodes and expand to more workers over time as application performance and growth requires.
 
 It's essential to remember that this step only adds worker nodes. It doesn't distribute data to the new worker nodes. Depending on the size of the compute and storage assigned to the single-node cluster, scaling to multiple nodes may require a server restart, resulting in downtime, if the coordinator compute cores and storage size need to change. The single-node development database you created for Tailspin Toys uses a compute size of four vCores with 16 GiB and 512 GiB of storage. This configuration meets the minimum coordinator node size for a multi-node cluster, so you can horizontally scale the database without downtime.
 
 ## Distribute and colocate table data
 
-Distributing tables is the process of partitioning or sharding table data and moving those shards to be hosted on worker nodes. The database can't enforce, and actually prohibits, foreign key constraints when the referenced rows don't reside on the same node, so moving from a single-node, non-distributed database to a multi-node, distributed database requires some planning around the order in which the tables are distributed. In addition, you should ensure table distribution is done in the least disruptive way possible.
+Distributing tables is the process of partitioning or sharding table data and moving those shards to be hosted on worker nodes. The database can't enforce, and actually prohibits, foreign key constraints when the referenced rows don't reside on the same node, so moving from a single-node, nondistributed database to a multi-node, distributed database requires some planning around the order in which the tables are distributed. In addition, you should ensure table distribution is done in the least disruptive way possible.
 
 Colocation of related table data should also be configured to allow tenant-specific queries to execute as efficiently as possible. When table data is distributed across nodes in the cluster, you ideally want rows across all tables relating to the same tenant to reside together on the same nodes, in what is referred to as table colocation.
 
@@ -47,8 +47,8 @@ The error message indicates that the foreign key constraint relating to the `sto
 One approach to resolving this issue is carefully considering the table relationships and any foreign key constraints. For Tailspin Toys, the tables would need to be distributed in the following order:
 
 1. `stores`
-2. `orders` and `products` (The specific order for distributing these tables doesn't matter, as long as they're distributed after `stores` and before `line_items`.)
-3. `line_items`
+1. `orders` and `products` (The specific order for distributing these tables doesn't matter, as long as they're distributed after `stores` and before `line_items`.)
+1. `line_items`
 
 ### Review methods for distributing tables with minimal application disruption
 
@@ -58,7 +58,7 @@ The primary method for distributing table data in Azure Cosmos DB for PostgreSQL
 
 To reduce disruption and prevent table locks, you can use the alternative `create_distributed_table_concurrently()` function. This function does the same thing as `create_distributed_table()`, but executes the operation without blocking table writes during the distribution operation. Running `create_distributed_table_concurrently()` takes longer to complete but is a safer option when working with production systems, where reducing the load on ongoing application operations is essential.
 
-Like running `create_distributed_table()`, distributing tables with foreign key constraints requires planning. You saw that `created_distributed_table()` checks foreign key constraints and dictates a specific table distribution order. With `create_distributed_table_concurrently()`, this is even more difficult because foreign key constraints prevent tables from being distributed entirely.
+Like running `create_distributed_table()`, distributing tables with foreign key constraints requires planning. You saw that `created_distributed_table()` checks foreign key constraints and dictates a specific table distribution order. With `create_distributed_table_concurrently()`, it's even more difficult because foreign key constraints prevent tables from being distributed entirely.
 
 For example, consider the following command to distribute the `stores` table concurrently:
 
@@ -73,9 +73,9 @@ ERROR: relation stores is referenced by a foreign key from line_items
 DETAIL: foreign keys from a regular table to a distributed table are not supported.
 ```
 
-When distributing tables concurrently, all relationships on the table are inspected. Table distribution is prevented for any tables with relationships to non-distributed or non-reference tables. Your only option to get around this constraint is to drop all foreign key constraints for each table and re-create them after the distribution process completes.
+When tables are distributed concurrently, all relationships on the table are inspected. Table distribution is prevented for any tables with relationships to nondistributed or nonreference tables. Your only option to get around this constraint is to drop all foreign key constraints for each table and re-create them after the distribution process completes.
 
-To use `create_distributed_table_concurrently()` to distribute the `stores` table, you must first drop any foreign key references from all other non-distributed tables, as follows:
+To use `create_distributed_table_concurrently()` to distribute the `stores` table, you must first drop any foreign key references from all other nondistributed tables:
 
 ```sql
 BEGIN;
@@ -98,45 +98,45 @@ SELECT create_distributed_table_concurrently('stores', 'store_id');
 
 To complete the table distribution for the remaining tables, you must drop each foreign key constraint, distribute the tables, and re-create the foreign key constraints after all tables are distributed.
 
-The `create_distributed_table_concurrently()` function allows write operations to the database to continue but can take substantially longer to execute than `create_distributed_table()`. The database won't enforce referential integrity during the time it takes to distribute the tables because you were forced to drop foreign key constraints.
+The `create_distributed_table_concurrently()` function allows write operations to the database to continue but can take substantially longer to execute than `create_distributed_table()`. The database doesn't enforce referential integrity during the time it takes to distribute the tables because you were forced to drop foreign key constraints.
 
 To review the table distribution methods:
 
 The `created_distributed_table()` function:
 
 - Allows the tables with foreign key constraints to be distributed, but only if the order of table distribution is carefully considered.
-- Creates a lock on the distributed table and will block any write operations until the distribution operation is completed.
+- Creates a lock on the distributed table and blocks any write operations until the distribution operation is completed.
 - Doesn't honor transactions.
-- Drawbacks include table writes being blocked during distribution and the order of table distribution matters.
+- Has drawbacks that include table writes being blocked during distribution, and the order of table distribution matters.
 
 The `create_distributed_table_concurrently()` function:
 
 - Doesn't block table writes.
-- Won't work if there are any foreign key constraints where the data doesn't reside on the same node. The workaround is to drop any foreign key constraints and re-create them after the data has been distributed.
+- Don't work if there are any foreign key constraints where the data doesn't reside on the same node. The workaround is to drop any foreign key constraints and re-create them after the data has been distributed.
 - Can't be executed inside of a transaction.
-- Drawbacks include the loss of referential integrity during distribution and that it takes longer to execute.
+- Has drawbacks that include the loss of referential integrity during distribution, and that it takes longer to execute.
 
 ### Combine distribution methods to minimize impact and reduce risk
 
-Each distribution method has its advantages but also introduces some impacts on the operation of the production multitenant SaaS application. Using `create_distributed_table()` will block new transactions from entering the system while it runs but preserves referential integrity throughout the process. The `create_distributed_table_concurrently()` function allows the application to continue writing to the database but introduces the possibility of referential integrity not being enforced while table data is being distributed. To minimize application disruption and reduce risk, you can use a combination of the two methods to distribute the tables in the Tailspin Toys database.
+Each distribution method has its advantages but also introduces some impacts on the operation of the production multitenant SaaS application. Using `create_distributed_table()` blocks new transactions from entering the system while it runs but preserves referential integrity throughout the process. The `create_distributed_table_concurrently()` function allows the application to continue writing to the database but introduces the possibility of referential integrity not being enforced while table data is being distributed. To minimize application disruption and reduce risk, you can use a combination of the two methods to distribute the tables in the Tailspin Toys database.
 
-`Stores` is a small table that isn't updated often. Distributing this table using `create_distributed_table()` blocks write operations. However, because they're infrequent and the table distribution will happen quickly, this might fall within the acceptable level of possible application disruption to take this approach. As described earlier, you know that `stores` can be distributed using `create_distributed_table()` without needing to drop any foreign keys on the other tables. Given these conditions, a possible trade-off would be to distribute the `stores` table using `create_distributed_table()`.
+`Stores` is a small table that isn't updated often. Distributing this table by using`create_distributed_table()` blocks write operations. However, because writes to this table occur infrequent and the table distribution occurs quickly, distributing the table might fall within the acceptable level of possible application disruption. As described earlier, you know that `stores` can be distributed by using`create_distributed_table()` without needing to drop any foreign keys on the other tables. Given these conditions, a possible trade-off would be to distribute the `stores` table by using`create_distributed_table()`.
 
 ```sql
 SELECT create_distributed_table('stores', 'store_id');
 ```
 
-With `stores` now distributed, you need to consider how to approach the other tables. Using `create_distributed_table_concurrently()` will still require dropping and re-creating foreign keys on each table, so distributing the `stores` table hasn't eliminated that requirement.
+With `stores` now distributed, you need to consider how to approach the other tables. If you use `create_distributed_table_concurrently()`, you must drop and re-create foreign keys on each table, so distributing the `stores` table hasn't eliminated that requirement.
 
-Products is a larger table than `stores`, but may also be a candidate to distribute with `create_distributed_table()`. Like `stores`, the impact of blocking writes to this table is slight. You can distribute the `products` table data by running the following:
+The `products` table is larger than the `stores` table, but the `products` table might also be a candidate to distribute by using the `create_distributed_table()` function. Like `stores`, the impact of blocking writes to this table is slight. You can distribute the `products` table data by running the following code:
 
 ```sql
 SELECT create_distributed_table('products', 'store_id', colocate_with => 'stores');
 ```
 
-The `stores` and `products` tables share the same distribution column, so colocation happens implicitly. If desired, however, you can also explicitly specify colocation using the `colocate_with` option of the `create_distributed_table()` function, as in the preceding example.
+The `stores` and `products` tables share the same distribution column, so colocation happens implicitly. If desired, however, you can also explicitly specify colocation by using the `colocate_with` option of the `create_distributed_table()` function, as in the preceding example.
 
-The `orders` and `line_items` tables are the largest tables in the database and are the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. Using `create_distributed_table_concurrently()`, you'll have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys you need to drop and slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then re-create the foreign key reference to `stores`.
+The `orders` and `line_items` tables are the largest tables in the database and are the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. By using `create_distributed_table_concurrently()`, you have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys you need to drop and slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then re-create the foreign key reference to `stores`.
 
 ```sql
 -- Drop the foreign key to the stores table
@@ -154,20 +154,20 @@ ALTER TABLE orders
     ADD CONSTRAINT orders_store_id_fkey FOREIGN KEY (store_id) REFERENCES stores (store_id);
 ```
 
-Usually, you would want to run these statements in a transaction to reduce further the risk of not enforcing referential integrity when the table data is being distributed. However, `create_distributed_table_concurrently()` can't be run inside a transaction, so this isn't possible at this time.
+Usually, you would want to run these statements in a transaction to reduce further the risk of not enforcing referential integrity when the table data is being distributed. However, `create_distributed_table_concurrently()` can't be run inside a transaction, so this option isn't possible at this time.
 
-Re-creating the foreign key to the `line_items` table can't happen until after that table is also distributed. Its distribution would follow the same pattern, dropping any foreign key constraints, distributing the table, and re-creating the foreign keys.
+You can't re-create the foreign key to the `line_items` table until after that table is also distributed. The table distribution follows the same pattern: drop any foreign key constraints, distribute the table, and re-create the foreign keys.
 
-A best practice to use after all of your tables are distributed is to truncate the local rows of those tables still residing on the coordinator node. You can do this by running `truncate_local_data_after_distributing_table()`. You can't run this until after the related tables are all distributed because foreign key constraints cause an error.
+A best practice to use after all of your tables are distributed is to truncate the local rows of tables that still reside on the coordinator node. You can truncate the rows by running `truncate_local_data_after_distributing_table()`. You can't run this statement until after the related tables are all distributed because foreign key constraints cause an error.
 
 ```sql
 SELECT truncate_local_data_after_distributing_table('stores');
 ```
 
-You only need to run this on `stores`, because it will automatically cascade to other related local tables, truncating the `orders`, `products`, and `line_items` local tables. Truncating local coordinator node table data is safe for distributed tables because their rows, if any, are copied to worker nodes during distribution.
+You need to run this statement only on `stores` because the statement automatically cascades to other related local tables, truncating the `orders`, `products`, and `line_items` local tables. Truncating local coordinator node table data is safe for distributed tables because their rows, if any, are copied to worker nodes during distribution.
 
-## Understand the impact of some tables being distributed while others aren't
+## Understand what happens when only some tables are distributed
 
-Neither of the distribution functions available in Azure Cosmos DB for PostgreSQL works within transactions, so some time will lapse between when the first and last tables are distributed. As you go about migrating Tailspin Toys' database to a multi-node cluster, you would like to understand whether queries involving multiple tables will break or become unacceptably inefficient during the interval when one or more tables are distributed, and others aren't.
+Neither of the distribution functions that are available in Azure Cosmos DB for PostgreSQL work in transactions, so some time elapses between when the first and the last tables are distributed. As you go about migrating the Tailspin Toys database to a multi-node cluster, you would like to understand whether queries that involve multiple tables break or become unacceptably inefficient during the interval when one or more tables are distributed, and others aren't.
 
-Queries that involve joins across distributed tables or are cross-partition can be planned efficiently because related data are typically colocated. However, when data isn't colocated, or one of the joined tables is still a local table on the coordinator, the Citus engine can't optimize the query. As a result, performance can be degraded due to the need to shuffle large amounts of data. You should thoroughly test common queries against the Tailspin Toys' development database you created before migrating their production database to a multi-node cluster so you can assess the impact.
+Queries that involve joins across distributed tables or which are cross-partition can be planned efficiently because related data are typically colocated. However, when data isn't colocated, or one of the joined tables is still a local table on the coordinator, the Citus engine can't optimize the query. As a result, performance might be degraded due to the need to shuffle large amounts of data. You should thoroughly test common queries against the Tailspin Toys development database that you created before migrating their production database to a multi-node cluster so you can assess the impact.

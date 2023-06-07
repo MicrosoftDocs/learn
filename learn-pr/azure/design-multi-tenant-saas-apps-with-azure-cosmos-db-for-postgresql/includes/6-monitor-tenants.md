@@ -8,7 +8,7 @@ Tailspin Toys requested that you devise a solution to monitor activity in the da
 
 ## Monitor per-tenant statistics
 
-When monitoring activity in a multitenant SaaS database, the ability to view database usage and statistics on a per-tenant basis is crucial, allowing SaaS application providers to understand the impact each tenant has on database performance. The `citus_stat_statements` view allows you to get clear insights into what your tenants are doing.
+When you monitor activity in a multitenant SaaS database, it's crucial that you can view database usage and statistics on a per-tenant basis so that you understand the impact each tenant has on database performance. The `citus_stat_statements` view allows you to get clear insights into what your tenants are doing.
 
 ```sql
 SELECT * FROM citus_stat_statements;
@@ -46,11 +46,11 @@ partition_key | 5
 calls         | 1
 ```
 
-Inspecting the output, you'll see that each record includes the query executed and the `parition_key` (that is, tenant ID) executing the query. For cross-partition queries, the `partition_key` value is empty. This information allows you to write queries against the `citus_stat_statements` table specific to individual tenants.
+Inspecting the output, you can see that each record includes the query that was executed and the `parition_key` (that is, tenant ID) that executed the query. For cross-partition queries, the `partition_key` value is empty. This information allows you to write queries against the `citus_stat_statements` table specific to individual tenants.
 
 ## Identify "noisy" tenants
 
-Due to the differences in store sizes in the Tailspin Toys multitenant SaaS application, you suspect some of the larger tenants are "noisier" than others, meaning they use a higher percentage of database resources and cause performance degradation for other, smaller tenants. By joining `citus_stat_statements` with `pg_stat_statements`, you can retrieve per tenant statics and trace queries to originating tenants in Tailspin Toys' multitenant application.
+Due to the differences in store sizes in the Tailspin Toys multitenant SaaS application, you suspect some of the larger tenants are "noisier" than others, meaning they use a higher percentage of database resources and cause performance degradation for other, smaller tenants. By joining `citus_stat_statements` with `pg_stat_statements`, you can retrieve per tenant statics and trace queries to originating tenants in the Tailspin Toys multitenant application.
 
 ```sql
 SELECT partition_key as tenant_id, 
@@ -77,7 +77,7 @@ This information provided by this query can help identify tenants to isolate, sh
  222       |                   375 |                 3653 |          6422.93
 ```
 
-## Identify tenants using the most storage space
+## Identify tenants that use the most storage space
 
 Determining the amount of storage space used per tenant in the Tailspin Toys database requires using several built-in Citus functions. The following example query uses a common table expression (CTE) to calculate the percentage of the `orders` table size for by each tenant. The CTE is then referenced to retrieve the `shardid` associated with each store and calculate the percentage of storage space used as a function of the overall `orders` table size. In addition, the percentage of storage used in the shard is determined.
 
@@ -106,13 +106,13 @@ LIMIT 5;
 
 The function references the shard information view (`citus_shards`) to retrieve the size of each shard hosting `order` table data, and the built-in `get_shard_id_for_distribution_column()` function to locate the specific shards hosting `order` table data.
 
-Using this query, you can find tenants occupying a high percentage of space within the shard in which they reside. Resource contention can often happen when one or a few tenants comprise a large portion of the data in an individual shard. This query provides information that can help identify tenants that are potential candidates for isolation or may indicate rebalancing is required.
+Using this query, you can find tenants that occupy a high percentage of space in the shard in which they reside. Resource contention can often happen when one or a few tenants comprise a large portion of the data in an individual shard. This query provides information that can help identify tenants that are potential candidates for isolation or may indicate rebalancing is required.
 
 ## Monitor cross-shard versus single-shard queries
 
-In Tailspin Toys' multitenant database, you would expect most queries to target a single tenant and run on a single shard. Using `citus_stat_statements`, you can query for the percentage of queries that span across shards. Seeing too many multitenant (that is, cross-shard) queries indicates the proper filters may not be applied to correctly match a single tenant, resulting in unnecessary network calls, slower performance, and possible security issues.
+In the Tailspin Toys multitenant database, you would expect most queries to target a single tenant and run on a single shard. By using `citus_stat_statements`, you can query for the percentage of queries that span across shards. Seeing too many multitenant (that is, cross-shard) queries indicates the proper filters may not be applied to correctly match a single tenant, resulting in unnecessary network calls, slower performance, and possible security issues.
 
-To view a breakdown of how many cross-shard versus single-shard queries are happening in the database, you can run the following:
+To view a breakdown of how many cross-shard versus single-shard queries are happening in the database, you can run the following code:
 
 ```sql
 SELECT to_char((cross_shard * 100) / total, '99D99') as cross_shard, 
@@ -126,7 +126,7 @@ FROM (
 ) AS t;
 ```
 
-For multitenant SaaS applications, there are typically a few cross-tenant queries executed by the SaaS provider. These are commonly used to collect internal statistics about customers and how they use the application. However, Tailspin Toys' tenant stores are prohibited from viewing each other's data, so monitoring the percentage of cross-shard queries can be a valuable tool in validating application queries are working as expected. A noteworthy increase in this ratio may indicate that queries aren't filtering as expected.
+For multitenant SaaS applications, there are typically a few cross-tenant queries executed by the SaaS provider. These queries are commonly used to collect internal statistics about customers and how they use the application. However, the Tailspin Toys tenant stores are prohibited from viewing each other's data, so monitoring the percentage of cross-shard queries can be a valuable tool in validating application queries are working as expected. A noteworthy increase in this ratio may indicate that queries aren't filtering as expected.
 
 ```text
  cross_shard | shard  
@@ -138,9 +138,9 @@ This query provides a clear view into the percentage of queries executed in the 
 
 ## Monitor skewness and rebalance shards
 
-In Tailspin Toys' multitenant SaaS application, some tenants are larger than others and receive many more orders, creating load hot spots. Over time, this uneven distribution of order data can result in some shards becoming skewed, meaning they contain more data and occupy more space than others. The nodes storing the largest shards will ultimately do more work than those with fewer data, impacting overall system and query performance.
+In the Tailspin Toys multitenant SaaS application, some tenants are larger than others and receive many more orders, creating load hot spots. Over time, this uneven distribution of order data can result in some shards becoming skewed, meaning they contain more data and occupy more space than others. The nodes that store the largest shards ultimately do more work than nodes that have less data. This work distribution affects overall system and query performance.
 
-By querying the `citus_shards`, you can view and compare the total size of the shards on each node for your tables.
+By querying the `citus_shards` values, you can view and compare the total size of the shards on each node for your tables:
 
 ```sql
 SELECT table_name, nodename, SUM(shard_size) AS size
@@ -149,7 +149,7 @@ GROUP BY table_name, nodename
 ORDER BY table_name, size DESC;
 ```
 
-Looking at the shard size values for Tailspin Toys, one node for both `orders` and `line_items` is almost twice the size of the other nodes. This size difference is a good indicator of skewness.
+If you view the shard size values for Tailspin Toys, you can see that one node for both `orders` and `line_items` is almost twice the size of the other nodes. This size difference is a good indicator of skewness. Here's example of the output:
 
 ```text
  table_name |                              nodename                               |   size    
