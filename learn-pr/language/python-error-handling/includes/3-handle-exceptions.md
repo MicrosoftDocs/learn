@@ -22,7 +22,7 @@ Couldn't find the config.txt file!
 
 After the `try` keyword, you add code that has the potential to cause an exception. Next, you add the `except` keyword along with the possible exception, followed by any code that needs to run when that condition happens. Because _config.txt_ doesn't exist in the system, Python prints that the configuration file is not there. The `try` and `except` block, along with a helpful message, prevents a traceback and still informs the user about the problem.
 
-Although a file that doesn't exist is common, it isn't the only error you might find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_ in Visual Studio Code. Add code to the file that finds and reads the navigation system's configuration file:
+Although a file that doesn't exist is common, it isn't the only error you might find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_ in Visual Studio Code. Add the following code to the file that finds and reads the navigation system's configuration file:
 
 ```python
 def main():
@@ -61,17 +61,17 @@ def main():
         print("Couldn't find the config.txt file!")
 ```
 
-Now run the code again in the same place where the _config.txt_ file exists with improper permissions:
+Now run the code again in the same place where the _config.txt_ directory exists with improper permissions:
 
-```python
-config.py
+```bash
+python3 config.py
 ```
 
 ```Output
 Couldn't find the config.txt file!
 ```
 
-The problem now is that the error message is incorrect. The file does exist, but it has different permissions and Python can't read it. When you're dealing with software errors, it can be frustrating to have errors that:
+The problem now is that the error message is incorrect. The directory does exist, but it has different permissions and Python can't read it. When you're dealing with software errors, it can be frustrating to have errors that:
 
 - Don't indicate what the real problem is.
 - Give output that doesn't match the actual problem.
@@ -89,21 +89,21 @@ def main():
         print("Found config.txt but it is a directory, couldn't read it")
 ```
 
-Now run it again, in the same place where _config.txt_ is with the permissions problem: 
+Now run it again, in the same place where the _config.txt_ directory is: 
 
-```python
-config.py
+```bash
+python3 config.py
 ```
 
 ```Output
 Found config.txt but couldn't read it
 ```
 
-Now delete the _config.txt_ file to ensure that the first `except` block will be reached instead:
+Now delete the _config.txt_ directory to ensure that the first `except` block will be reached instead:
 
-```python
+```bash
  rm -f config.txt
- config.py
+ python3 config.py
 ```
 
 ```Output
@@ -130,10 +130,10 @@ def main():
 If you need to access the error that's associated with the exception, you must update the `except` line to include the `as` keyword. This technique is handy if an exception is too generic and the error message can be useful:
 
 ```python
->>> try:
-...     open("mars.jpg")
-... except FileNotFoundError as err:
-...     print("Got a problem trying to read the file:", err)
+try:
+    open("mars.jpg")
+except FileNotFoundError as err:
+     print("Got a problem trying to read the file:", err)
 ```
 
 ```Output
@@ -144,12 +144,12 @@ In this case, `as err` means that `err` becomes a variable with the exception ob
 
 ```python
 try:
-...     open("config.txt")
-... except OSError as err:
-...     if err.errno == 2:
-...         print("Couldn't find the config.txt file!")
-...     elif err.errno == 13:
-...         print("Found config.txt but couldn't read it")
+    open("config.txt")
+except OSError as err:
+     if err.errno == 2:
+         print("Couldn't find the config.txt file!")
+     elif err.errno == 13:
+        print("Found config.txt but couldn't read it")
 ```
 
 ```Output

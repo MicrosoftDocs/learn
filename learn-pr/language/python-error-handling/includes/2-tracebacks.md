@@ -26,6 +26,8 @@ That's a lot of information. It can be hard  to understand why line 1 is meaning
 
 Open your desired directory in Visual Studio Code and create a Python file named *open.py*.
 
+:::image type="content" source="../media/create-new-file.png" alt-text="Screenshot showing the creation of a new Python file in Visual Studio Code. ":::
+
 Add the following contents to the file and save:
 
 ```python
