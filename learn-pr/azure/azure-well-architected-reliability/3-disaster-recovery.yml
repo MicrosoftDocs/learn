@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following don't need to be part of recovery steps in your DR plan?'
+  - content: "Which of the following choices don't need to be part of the recovery steps in your DR plan?"
     choices:
-    - content: 'How to restore backups.'
+    - content: "How to restore backups."
       isCorrect: false
-      explanation: 'The steps to restore backups are a critical piece of a recovery plan.'
-    - content: 'How to fail over to replicated systems.'
+      explanation: "The steps to restore backups are a critical piece of a recovery plan."
+    - content: "How to fail over to replicated systems."
       isCorrect: false
-      explanation: 'The process to fail over to replicated systems is a critical piece of a recovery plan.'
-    - content: 'How to reestablish network connectivity to on-premises or external networks.'
+      explanation: "The process to fail over to replicated systems is a critical piece of a recovery plan."
+    - content: "How to reestablish network connectivity to on-premises or external networks."
       isCorrect: false
-      explanation: 'The steps to reestablish network connectivity to on-premises or external networks are critical pieces of a recovery plan.'
-    - content: 'How to implement replication from scratch.'
+      explanation: "The steps to reestablish network connectivity to on-premises or external networks are critical pieces of a recovery plan."
+    - content: "How to implement replication from scratch."
       isCorrect: true
-      explanation: 'You don't implement replication from scratch. Most fully featured database products and services include some kind of replication as a tightly integrated feature.'
+      explanation: "You don't implement replication from scratch. Most fully featured database products and services include some kind of replication as a tightly integrated feature."
   - content: "Are data replication and data backup the same thing?"
     choices:
-    - content: 'Yes.'
+    - content: "Yes."
       isCorrect: false
       explanation: "Both data replication and data backup copy your data, but replication creates copies of live data for failover, while backup creates long-lived, read-only data snapshots to use for recovery."
-    - content: 'No.'
+    - content: "No."
       isCorrect: true
       explanation: "Replication creates real-time or near-real-time copies of live data to use in failover, while backup creates long-lived, read-only snapshots of data to use in recovery."

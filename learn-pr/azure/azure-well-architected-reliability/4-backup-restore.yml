@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Do all Azure data storage options include automatic data backup?'
+  - content: "Do all Azure data storage options include automatic data backup?"
     choices:
-    - content: 'Yes.'
+    - content: "Yes."
       isCorrect: false
       explanation: "Some Azure data storage products, such as Azure Blob Storage, don't include automatic backups. You can add services like Azure Backup Agent as needed to make sure all your data is protected."
-    - content: 'No.'
+    - content: "No."
       isCorrect: true
       explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can also add services like Azure Backup Agent as needed to make sure all your data is protected."
-  - content: 'Which of the following choices isn't a reason to test backup and restore processes regularly?'
+  - content: "Which of the following choices isn't a reason to test backup and restore processes regularly?"
     choices:
-    - content: 'Validate the integrity of your backups.'
+    - content: "Validate the integrity of your backups."
       isCorrect: false
-      explanation: 'Testing restores regularly lets you validate the integrity of your backups.'
-    - content: 'Become familiar with the restoration process.'
+      explanation: "Regular testing of restores lets you validate the integrity of your backups."
+    - content: "Become familiar with the restoration process."
       isCorrect: false
-      explanation: 'Testing restores regularly lets you become more familiar with the restoration process.'
-    - content: 'Identify gaps in your backup and restore processes.'
+      explanation: "Testing restores regularly lets you become more familiar with the restoration process."
+    - content: "Identify gaps in your backup and restore processes."
       isCorrect: false
-      explanation: 'Regular testing helps you identify gaps or problems in your backup and restore processes.'
-    - content: 'Determine the relative importance of your data types.'
+      explanation: "Regular testing helps you identify gaps or problems in your backup and restore processes."
+    - content: "Determine the relative importance of your data types."
       isCorrect: true
-      explanation: 'Determining your data types and their relative importance is part of backup and restore planning, not testing existing processes.'
+      explanation: "Determining your data types and their relative importance is part of backup and restore planning, not testing existing processes."

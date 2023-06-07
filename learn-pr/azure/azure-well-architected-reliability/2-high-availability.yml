@@ -15,31 +15,31 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Why is an SLA important to define for your application?'
+  - content: "Why is an SLA important to define for your application?"
     choices:
-    - content: 'An SLA helps you determine your backup retention requirements.'
+    - content: "An SLA helps you determine your backup retention requirements."
       isCorrect: false
-      explanation: 'Backup retention is important to define, but it isn't driven by SLA.'
-    - content: 'An SLA helps you determine the availability level that you commit to for your customers.'
+      explanation: "Backup retention is important to define, but it isn't driven by SLA."
+    - content: "An SLA helps you determine the availability level that you commit to for your customers."
       isCorrect: true
-      explanation: 'A service level agreement is a commitment you make to your customers for the availability of your service.'
-    - content: 'You can use an SLA as an argument for automating VM creation.'
+      explanation: "A service level agreement is a commitment you make to your customers for the availability of your service."
+    - content: "You can use an SLA as an argument for automating VM creation."
       isCorrect: false
-      explanation: 'There are good arguments for automating VM creation, but your SLA probably doesn't affect the outcome.'
-    - content: 'You use an SLA to define access control settings for your resources.'
+      explanation: "There are good arguments for automating VM creation, but your SLA probably doesn't affect the outcome."
+    - content: "You use an SLA to define access control settings for your resources."
       isCorrect: false
-      explanation: 'Access control settings are important, but they aren't related to SLA.'
-  - content: 'Which of the following technologies isn't used for a highly available architecture?'
+      explanation: "Access control settings are important, but they aren't related to SLA."
+  - content: "Which of the following technologies isn't used for a highly available architecture?"
     choices:
-    - content: 'Load balancing.'
+    - content: "Load balancing."
       isCorrect: false
-      explanation: 'A highly available architecture typically uses load balancing to distribute load to available systems and remove failed systems from the load.'
-    - content: 'Availability zones.'
+      explanation: "A highly available architecture uses load balancing to distribute load to available systems and remove failed systems from the load."
+    - content: "Availability zones."
       isCorrect: false
-      explanation: 'A highly available architecture uses availability zones to distribute systems across multiple datacenters within a region.'
+      explanation: "A highly available architecture uses availability zones to distribute systems across multiple datacenters within a region."
     - content: 'Availability sets.'
       isCorrect: false
-      explanation: 'A highly available architecture uses availability sets to minimize the impact from localized failures and maintenance events.'
-    - content: 'A recovery service vault.'
+      explanation: "A highly available architecture uses availability sets to minimize the impact from localized failures and maintenance events."
+    - content: "Recovery Services vaults."
       isCorrect: true
-      explanation: 'Recovery service vaults provide a destination for backups, but they aren't part of a highly available architecture.'
+      explanation: 'Recovery Services vaults provide a destination for backups, but they aren't part of a highly available architecture.'
