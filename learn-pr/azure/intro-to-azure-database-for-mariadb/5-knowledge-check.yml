@@ -46,7 +46,7 @@ quiz:
     - content: "Basic"
       isCorrect: true
       explanation: "Correct. This tier is best suited for workloads that require light compute and I/O performance."
-  - content: "In terms of administrative effort, who is responsible for managing high-availability of a database that is hosted using Azure IaaS?"
+  - content: "Who is responsible for the administrative effort involved in managing high-availability for a database that is hosted using Azure IaaS?"
     choices:
     - content: "The database administrator"
       isCorrect: false
@@ -57,15 +57,15 @@ quiz:
     - content: "Microsoft"
       isCorrect: false
       explanation: "Incorrect. In an IaaS environment, the hosting vendor doesn't manage high-availability options for your database."
-  - content: "Which of the following is a good reason to consider using MariaDB on Azure VMs as a hosting option for your database apps?"
+  - content: "Which of the following considerations is a good reason to use MariaDB on Azure VMs as a hosting option for your database apps?"
     choices:
-    - content: "Avoid the time and expense of acquiring new on-premises hardware to host your database app."
+    - content: "To avoid the time and expense of acquiring new on-premises hardware to host your database app."
       isCorrect: true
-      explanation: "Correct. This is a valid consideration."
+      explanation: "Correct. This consideration is a valid one for choosing MariaDB on Azure VMs."
     - content: "Online Storage scaling is required."
       isCorrect: false
       explanation: "Incorrect. This feature is only available with Azure Database for MariaDB."
     - content: "Automatic backups are required."
       isCorrect: false
-      explanation: "Incorrect. This is a feature of Azure Database for MariaDB."
+      explanation: "Incorrect. Automatic backups are a feature of Azure Database for MariaDB."
       
