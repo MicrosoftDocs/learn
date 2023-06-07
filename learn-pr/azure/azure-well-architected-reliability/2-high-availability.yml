@@ -2,7 +2,7 @@
 uid: learn.azure-well-architected-reliability.2-high-availability
 title: High availability
 metadata:
-  title: Highly availability
+  title: High availability
   description: Learn about high availability, including SLAs, availability sets and zones, and other Azure high availability technologies and services.
   ms.date: 05/19/2020
   author: robbyatmicrosoft

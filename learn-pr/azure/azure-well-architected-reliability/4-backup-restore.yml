@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-reliability.4-backup-restore
 title: Backup and restore
 metadata:
   title: Backup and restore
-  description: Protect your data with backup and restore by setting backup and restore requirements and steps and testing, and Azure services that provide backup and restore.
+  description: Use backup and restore to help protect your data by defining requirements, testing processes, and learning about Azure backup and restore services.
   ms.date: 05/19/2020
   author: robbyatmicrosoft
   ms.author: martinek
