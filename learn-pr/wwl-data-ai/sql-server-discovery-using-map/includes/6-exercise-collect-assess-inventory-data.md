@@ -18,7 +18,7 @@ Begin your analysis by using MAP to collect inventory data. Follow these steps:
 1. In the **Credentials Order** tab, in the **Technology** list, select each item to ensure it has a value in the **Credentials** field, then select **Next**.
 1. In the **Enter Computers Manually** tab, select **Create**.
 1. In the **Specify Computers and Credentials** dialog box, in the **Computer Name** field, type the name `ReportingServer`, and select **Add**.
-1. Select **Use All Computers credential list**, then slect **Save** to return to the wizard.
+1. Select **Use All Computers credential list**, then select **Save** to return to the wizard.
 1. Select **Next**.
 1. In the **Summary** tab, select **Finish**.
 
