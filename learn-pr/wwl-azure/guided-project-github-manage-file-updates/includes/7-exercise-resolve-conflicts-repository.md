@@ -60,75 +60,71 @@ The explorer view should update to show your README.md file and your grade-tempa
 
 Because you pushed the project2 branch to GitHub when you were done making changes, the remote had the most up-to-date files. Updating project2 should be straightforward. All you'll need to do is get the latest files from the remote, update Monty's grade, and then re-commit and re-push the updates you make.
 
-From the Git command line in Visual Studio Code, issue the following commands:
-
-| **Command**             | **Action**                                                                    |
-| ----------------------- | ----------------------------------------------------------------------------- |
-| `git checkout project2` | Changes the working branch to the project2 branch.                            |
-| `git pull`              | Updates your local repository with the content in the GitHub project2 branch. |
-
-Update Monty's grade to give them 16 points for project 2 in the project2.md file.
-
-Save the file, then update your local repository and your remote repository with the following commands:
-
-| **Command**                              | **Action**                                                   |
-| ---------------------------------------- | ------------------------------------------------------------ |
-| `git add project2.md`                    | Stages the project2.md file.                                 |
-| `git commit -m "adding grade for Monty"` | Commits the update to your local repository.                 |
-| `git push`                               | Pushes your local repository update to your remote (GitHub). |
+1.  From the Git command line in Visual Studio Code, issue the following commands:
+2.  Update Monty's grade to give them 16 points for project 2 in the project2.md file.
+3.  Save the file, then update your local repository and your remote repository with the following commands:
+    
+    | **Command**                              | **Action**                                                   |
+    | ---------------------------------------- | ------------------------------------------------------------ |
+    | `git add project2.md`                    | Stages the project2.md file.                                 |
+    | `git commit -m "adding grade for Monty"` | Commits the update to your local repository.                 |
+    | `git push`                               | Pushes your local repository update to your remote (GitHub). |
 
 ## Update the project34 branch
 
 Because you didn't push the project34 branch to the remote after you changed the grades, there will be a conflict. Thankfully, Visual Studio Code makes it easy to resolve conflicts.
 
-From the Git command line in Visual Studio Code, issue the following commands:
-
-| **Command**                  | **Action**                                                                     |
-| ---------------------------- | ------------------------------------------------------------------------------ |
-| **`git checkout project34`** | Changes the working branch to the project34 branch.                            |
-| **`git pull`**               | Updates your local repository with the content in the GitHub project34 branch. |
+1.  From the Git command line in Visual Studio Code, issue the following commands:
+    
+    | **Command**                  | **Action**                                                                     |
+    | ---------------------------- | ------------------------------------------------------------------------------ |
+    | **`git checkout project34`** | Changes the working branch to the project34 branch.                            |
+    | **`git pull`**               | Updates your local repository with the content in the GitHub project34 branch. |
 
 You should receive a message about a conflict, and the file names in Visual Studio Code explorer should change color and gain an **!** indicating there's a conflict because both the local and remote files were updated.
 
- -  Select project3.md and Visual Studio Code will give you several options for managing the changes.
+### Update project3.md
 
-| **Option**              | **Impact**                                                                                                                                                     |
-| ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Accept Current Change   | Keeps the information in your local repository and discards the changes made to the remote.                                                                    |
-| Accept Incoming Change  | Keeps the information from the remote and discards the changes made locally.                                                                                   |
-| Accept Both Changes     | Incorporates all of the changes in the same file.                                                                                                              |
-| Compare Changes         | Provides a few that visually highlights the differences between the two files.                                                                                 |
-| Resolve in Merge Editor | Provides a new view that lets you use similar options, but also grants the chance to make updates or manually incorporate changes in the way that makes sense. |
-
- -  Select Resolve in Merge Editor
-
-If you select Accept Incoming, you'll have to re-enter the grades. If you select Accept Current, you'll have to add Monty back in, and if you select Accept Combination you'll have to manually merge the two together. For this exercise, you'll stick with what you currently have locally and add Monty in.
-
- -  Select Accept Current
- -  In the Result panel, manually add a new line that gives Monty 12 pts
+1.  Select project3.md and Visual Studio Code will give you several options for managing the changes.
+    
+    | **Option**              | **Impact**                                                                                                                                                     |
+    | ----------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Accept Current Change   | Keeps the information in your local repository and discards the changes made to the remote.                                                                    |
+    | Accept Incoming Change  | Keeps the information from the remote and discards the changes made locally.                                                                                   |
+    | Accept Both Changes     | Incorporates all of the changes in the same file.                                                                                                              |
+    | Compare Changes         | Provides a few that visually highlights the differences between the two files.                                                                                 |
+    | Resolve in Merge Editor | Provides a new view that lets you use similar options, but also grants the chance to make updates or manually incorporate changes in the way that makes sense. |
+    
+    If you select Accept Incoming, you'll have to re-enter the grades. If you select Accept Current, you'll have to add Monty back in, and if you select Accept Combination you'll have to manually merge the two together. For this exercise, you'll stick with what you currently have locally and add Monty in.
+2.  Select Resolve in Merge Editor
+3.  Select Accept Current
+4.  In the Result panel, manually add a new line that gives Monty 12 pts
     
     `| Monty | 12 pts |`
+5.  Select Complete Merge
 
- -  Select Complete Merge
+### Update project4.md
 
 You'll need to follow the same process for project4.md to give Monty credit for their work on project 4.
 
- -  Select project4.md
- -  Select Resolve in Merge Editor
- -  Select Accept Current
- -  In the Result panel, manually add a new line that gives Monty 14 pts.
+1.  Select project4.md
+2.  Select Resolve in Merge Editor
+3.  Select Accept Current
+4.  In the Result panel, manually add a new line that gives Monty 14 pts.
     
     `| Monty | 14 pts |`
- -  Select Complete Merge
+5.  Select Complete Merge
 
 > [!IMPORTANT]
 > When you use the merge editor, the files are automatically staged once you make the updates. All that's left is to commit the updates to the local branch and then push them to the remote.
 
-From the Git command line in Visual Studio Code:
+### Update the GitHub remote repository
 
-| **Command**                                    | **Action**                                                           |
-| ---------------------------------------------- | -------------------------------------------------------------------- |
-| **`git commit -m "resolving merge conflict"`** | Creates a commit for your local repository.                          |
-| **`git push`**                                 | Updates your remote (GitHub) with changes from the local repository. |
+1.  From the Git command line in Visual Studio Code:
+    
+    | **Command**                                    | **Action**                                                           |
+    | ---------------------------------------------- | -------------------------------------------------------------------- |
+    | **`git commit -m "resolving merge conflict"`** | Creates a commit for your local repository.                          |
+    | **`git push`**                                 | Updates your remote (GitHub) with changes from the local repository. |
 
 Congratulations! Whether it's a merge conflict between local branches or between your remote and local repositories, solving for merge conflicts follows the same steps. Remember, it's important to commit your work locally and push your work to remotes. This keeps your work backed up and ensures everyone has access to it!

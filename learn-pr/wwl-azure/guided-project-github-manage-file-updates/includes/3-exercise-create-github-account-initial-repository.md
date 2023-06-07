@@ -50,9 +50,7 @@ If you already have a GitHub account with repositories in it, you'll want to cre
     
 2.  Copy the following text into the readme file.
     
-    ```
-    
-    ```
+    `This project is designed to help learn basic Git commands using the GitHub platform. Throughout this project, files and branches will be created and merged. The premise of the project is creating a grade database for a teacher to help organize student grades.`
 3.  Select **Commit changes**.
 4.  Review the commit comment. This is where you'd enter a custom commit message that others would read when checking what changes you had made.
 5.  Select **Commit changes**.
