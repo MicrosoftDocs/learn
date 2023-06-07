@@ -30,7 +30,7 @@ In this exercise, you'll install the MAP toolkit on a test computer, then restor
 1. If you're downloading MAP outside of this exercise, you'd go to [https://www.microsoft.com/download/details.aspx?id=7826](https://www.microsoft.com/download/details.aspx?id=7826). However, this exercise has the following limitation:
 
     > [!IMPORTANT]
-    > Due to sandbox restrictions, you need to download a backed up version of the MAP toolkit form this git repo instead.
+    > Due to sandbox restrictions, you need to download a backed up version of the MAP toolkit from this git repo instead.
     > Go to [https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe](https://github.com/MicrosoftDocs/mslearn-sql-server-discovery-using-map/blob/master/MAPSetup.exe) and select the **Download** button.
 
 1. Outside of this exercise, select **Download** on the **Microsoft Assessment and Planning Toolkit** page.
