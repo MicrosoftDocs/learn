@@ -2,10 +2,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 ## Deploy Azure SQL Database by using the Azure portal
 
-1. Sign in to the Azure portal by using the same account that you activated the sandbox with.
-
-    > [!div class="nextstepaction"]
-    > [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. In the top search bar, enter **Azure SQL** and wait for results so you can review what appears.  
 
@@ -26,8 +23,8 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
     |Parameter  |Value  |
     |---------|---------|
-    |**Subscription**     |  Concierge subscription       |
-    |**Resource group**     | <rgn>Sandbox resource group name</rgn>        |
+    |**Subscription**     |  Select your Azure subscription       |
+    |**Resource group**     | Select a resource group to use, or select **Create new**        |
     |**Database name**     | AdventureWorks        |
     |**Server**     |  Select **Create new**, fill out the  **Server details** pane as follows, and select **OK**:      |
     |         |**Server name**:  Enter a unique name for the server (for example, **aw-server0406**).  |
@@ -54,7 +51,7 @@ In this activity, you'll deploy Azure SQL Database by using the Azure portal. Th
 
 1. Leave remaining defaults and select **Next: Additional settings**.
 
-1. On the **Additional settings** tab for Azure SQL Database, you can select the AdventureWorksLT database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**.  
+1. On the **Additional settings** tab for Azure SQL Database, you can select the `AdventureWorksLT` database as the sample in the Azure portal. For this exercise, for **Use existing data**, select **Sample**. Select **OK** when prompted.
 
 1. Select **Review + create**. Here, you can review your deployment selections and the Azure Marketplace terms. Review all the options to ensure that all of your selections match the exercise instructions, and then select **Create** to deploy the service.  
 
@@ -74,11 +71,11 @@ Next, let's look at the basics of connecting to your deployed SQL database and c
 
 ### What does connecting to SQL Server 2019 look like?
 
-Before you look at the SQL database that you deployed, let's review what connecting to an instance of SQL Server 2019 might look like. Typically, you'd open SQL Server Management Studio (SSMS) and connect to the local instance of SQL Server 2019. You might use Windows Authentication for the connection. The selections would be similar to the following image.  
+Before you look at the SQL database that you deployed, let's review what connecting to an instance of SQL Server 2019 might look like. Typically, you'd open SQL Server Management Studio (SSMS) and connect to the local instance of SQL Server 2019. You might use Windows Authentication for the connection. The selections would be similar to the following image:
 
 :::image type="content" source="../media/3-local-connect.png" alt-text="Screenshot that shows how to connect to SQL Server 2019 in SSMS.":::  
 
-You'd then see a view that looks similar to the following.  
+You'd then see a view that looks similar to the following:
 
 :::image type="content" source="../media/3-local-server.png" alt-text="Screenshot of what a SQL Server 2019 deployment looks like in SSMS.":::  
 
@@ -88,7 +85,7 @@ Keep that in mind as a reference for comparison as you complete the following st
 
 1. First, we need the logical server name. On the **Overview** pane for your database, locate the **Server name** information. This is the fully qualified domain name (FQDN) of your logical server, for example, *aw-server0406.database.windows.net*. Hover your mouse at the end of the name and select **Copy to clipboard**.
 
-1. Let's connect to your Azure SQL Database logical server. On your local device, open SSMS if it's not open already, and create a new connection. Select **Connect** > **Database Engine**.  
+1. Let's connect to your Azure SQL Database logical server. On your local device, open SSMS if it's not open already and create a new connection. Select **Connect** > **Database Engine**.  
 
     :::image type="content" source="../media/3-db-engine.png" alt-text="Screenshot of how to connect to Azure SQL Database in SSMS.":::  
 
@@ -99,13 +96,13 @@ Keep that in mind as a reference for comparison as you complete the following st
     Select **Remember password**, and then select **Connect**.  
 
     > [!NOTE]
-    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does, you'll get a pop-up message that says "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you're using for the sandbox, and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  
+    > Depending on your local configuration (for example, VPN), your client IP address might differ from the IP address that the Azure portal used during deployment. If it does, you'll get a pop-up message that says "Your client IP address does not have access to the server. Sign in to an Azure account and create a new firewall rule to enable access." If you get this message, sign in with the account you use for Azure and add a firewall rule for your client IP address. You can complete all of these steps by using the pop-up wizard in SSMS.  
 
-1. Expanding the databases and system databases should result in a view similar to the following.  
+1. Expanding the databases and system databases should result in a view similar to the following: 
 
     :::image type="content" source="../media/3-azure-server.png" alt-text="Screenshot of the view of SQL Database folders in SSMS.":::  
 
-    Spend a few minutes exploring the differences, at first glance, between the Azure SQL Database logical server and SQL Server. You won't deploy a managed instance as part of this exercise, but the following image shows how a managed instance would appear in SSMS.  
+    Spend a few minutes exploring the differences, at first glance, between the Azure SQL Database logical server and SQL Server. You won't deploy a managed instance as part of this exercise, but the following image shows how a managed instance would appear in SSMS:
 
     :::image type="content" source="../media/3-managed-instance.png" alt-text="Screenshot of the view of a managed instance in SSMS.":::  
 
