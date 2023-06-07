@@ -22428,6 +22428,16 @@
     "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-data-explorer.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing/",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
   }
   ]
 }
