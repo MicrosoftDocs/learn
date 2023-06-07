@@ -21,7 +21,7 @@ Beyond considering use cases, you should also explore other aspects when selecti
 
 ### Performance impact
 
-It's important to understand the impact of the selected replication tool on the **size** of your database. For instance, enabling change data capture (CDC) at the your database's level and tables will lead to the creation of several additional system tables on your source database (for example, the table in which changes are being tracked). Similarly, SQL Data Sync will create artifacts on your database. This is why it's important to assess your database tier-size limitations before enabling replication tools and upgrade your tier if necessary.
+It's important to understand the impact of the selected replication tool on the **size** of your database. For instance, enabling change data capture (CDC) at your database's level and tables will lead to the creation of several additional system tables on your source database (for example, the table in which changes are being tracked). Similarly, SQL Data Sync will create artifacts on your database. This is why it's important to assess your database tier-size limitations before enabling replication tools and upgrade your tier if necessary.
 
 Additionally, it's important to understand the impact of enabling replication tools on the **log throughput**. For instance, CDC's scan/cleanup are part of user workload (user’s resources are used). Performance impact can be substantial, because entire rows are added to the change tables, and pre-image is also included for update operations. This translates to a log generation that doubles (or more) when using CDC (relative to when CDC isn't enabled).
 
