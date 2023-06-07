@@ -8,6 +8,9 @@ metadata:
   author: sherzyang
   ms.author: sheryang
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5
 content: |

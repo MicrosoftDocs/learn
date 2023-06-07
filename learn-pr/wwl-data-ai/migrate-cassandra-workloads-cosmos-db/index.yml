@@ -8,7 +8,7 @@ metadata:
   ms.author: rcaper
   ms.topic: interactive-tutorial
   ms.service: cosmos-db
-  ms.subservice: cosmosdb-cassandra
+  ms.subservice: apache-cassandra
 title: Migrate Cassandra workloads to Cosmos DB
 summary: You will learn to demonstrate the benefits and processes for moving a Cassandra database to the Azure Cosmos DB Cassandra API.
 abstract: |

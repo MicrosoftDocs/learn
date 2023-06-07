@@ -54,7 +54,7 @@ Alternatively, you can create a datastore to connect to an Azure Blob Storage co
 ```python
 blob_datastore = AzureBlobDatastore(
 name="blob_sas_example",
-description="Datastore pointing to a blob container”,
+description="Datastore pointing to a blob container",
 account_name="mytestblobstore",
 container_name="data-container",
 credentials=SasTokenCredentials(

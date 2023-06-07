@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Manage data with Python dictionaries
   description: Most programs need to work with data more complex than strings or numbers. Python dictionaries allow you to create data types to model more complex information and relationships. This module explores how to create and utilize dictionaries in Python.
-  ms.date: 10/31/2022
+  ms.date: 06/05/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -15,13 +15,13 @@ title: Manage data with Python dictionaries
 summary: Python dictionaries allow you to model complex data. This module explores common scenarios where you could use dictionaries.
 abstract: | 
     By the end of this module, you'll be able to:
-    - Identify when to use a dictionary
-    - Create and modify data inside a dictionary
-    - Utilize `keys` and `values` methods to access dictionary data
+    - Identify when to use a dictionary.
+    - Create and modify data inside a dictionary.
+    - Utilize `keys` and `values` methods to access dictionary data.
 prerequisites: | 
-  - Basic Python programming knowledge, which includes use of variables, strings, integers, and math
-  - Experience working with lists in Python
-  - Experience modifying and running code in Jupyter notebooks
+  - Basic Python programming knowledge, which includes use of variables, strings, integers, and math.
+  - Experience working with lists in Python.
+  - Experience modifying and running code in Jupyter notebooks.
 iconUrl: /training/achievements/python-dictionaries.svg
 levels: 
   - beginner

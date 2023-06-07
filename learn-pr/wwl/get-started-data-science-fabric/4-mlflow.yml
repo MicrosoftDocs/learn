@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-science-fabric.mlflow
+title: Use MLflow to track your experiments
+metadata:
+  title: Use MLflow to track your experiments
+  description: "Use MLflow to track your experiments"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 8
+content: |
+  [!include[](includes/4-mlflow.md)]

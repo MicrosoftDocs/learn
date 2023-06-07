@@ -12,4 +12,4 @@ In this exercise, you will:
 Follow these instructions to complete the exercise:
 
 1. View the exercise repo at [https://microsoftlearning.github.io/mslearn-azure-ml/](https://microsoftlearning.github.io/mslearn-azure-ml?azure-portal=true).
-1. Complete the **Run a training script as a command job in Azure Machine Learning** exercise.
+1. Complete the **Use MLflow to track training jobs** exercise.

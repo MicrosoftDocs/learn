@@ -9,7 +9,7 @@ metadata:
   author: whhender 
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/4-when-to-use-microsoft-purview.md)]

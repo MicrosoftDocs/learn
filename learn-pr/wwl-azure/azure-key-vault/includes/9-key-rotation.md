@@ -1,4 +1,4 @@
-Once you have keys and secrets stored in the key vault, it's important to think about a rotation strategy. There are several ways to rotate the values:
+Once you have keys and secrets stored in the key vault it's important to think about a rotation strategy. There are several ways to rotate the values:
 
  -  As part of a manual process
  -  Programmatically by using API calls
@@ -6,7 +6,7 @@ Once you have keys and secrets stored in the key vault, it's important to think 
 
 This diagram shows how Event Grid and Function Apps can be used to automate the process.
 
-:::image type="content" source="../media/az500-key-vault-rotation-0d01efe7.png" alt-text="A key is updated using event grid and function apps.":::
+:::image type="content" source="../media/az500-key-vault-rotation-0d01efe7.png" alt-text="Screenshot showing how an Event Grid and Function Apps can be used to automate the process.":::
 
 
 1.  Thirty days before the expiration date of a secret, Key Vault publishes the "near expiry" event to Event Grid.

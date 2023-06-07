@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.github.manage-work-github-projects.insight-and-automation-with-projects
+title: Insight and automation with projects
+metadata:
+  title: Insight and automation with projects
+  description: This content is part of the "Manage your work with GitHub Projects" module.
+  ms.date: 05/05/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-insight-automation-with-projects.md)]

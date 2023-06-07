@@ -1,5 +1,4 @@
 
-
 ## What is a security recommendation?
 
 Using the **policies**, Defender for Cloud periodically analyzes the compliance status of your resources to identify potential security misconfigurations and weaknesses. It then provides you with recommendations on how to remediate those issues. Recommendations result from assessing your resources against the relevant policies and identifying resources that aren't meeting your defined requirements.

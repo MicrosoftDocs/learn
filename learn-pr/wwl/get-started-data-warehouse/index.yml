@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-data-warehouse
+metadata:
+  title: Get started with data warehouses in Microsoft Fabric
+  description: "Understand the key components and design considerations for implementation of data warehouses in Microsoft Fabric."
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+title: Get started with data warehouses in Microsoft Fabric
+summary: Data warehouses are analytical stores built on a relational schema to support SQL queries. Microsoft Fabric enables you to create a relational data warehouse in your workspace and integrate it easily with other elements of your end-to-end analytics solution.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe data warehouses in Fabric
+  - Understand a data warehouse vs a data Lakehouse
+  - Work with data warehouses in Fabric
+  - Create and manage datasets within a data warehouse
+prerequisites: |
+  Before starting this module, you should be familiar with the Microsoft Fabric interface and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+- data-warehousing
+units:
+- learn.wwl.get-started-data-warehouse.introduction
+- learn.wwl.get-started-data-warehouse.understand-data-warehouse
+- learn.wwl.get-started-data-warehouse.understand-data-warehouse-fabric
+- learn.wwl.get-started-data-warehouse.query-transform-data
+- learn.wwl.get-started-data-warehouse.model-data
+- learn.wwl.get-started-data-warehouse.security-monitor
+- learn.wwl.get-started-data-warehouse.exercise
+- learn.wwl.get-started-data-warehouse.knowledge-check
+- learn.wwl.get-started-data-warehouse.summary
+badge:
+  uid: learn.wwl.get-started-data-warehouse.badge
