@@ -30,4 +30,4 @@ Helping you identify the features of Azure Database for MariaDB and showing you 
 
 ## What is the main goal?
 
-By the end of this module, you can evaluate whether Azure Database for MariaDB is appropriate for managing your organization's mission-critical workloads. You should also be able to describe how the predictable performance and dynamic scalability of Azure Database for MariaDB make it ideal to host your database workloads.
+By the end of this module, you're able to evaluate whether Azure Database for MariaDB is appropriate for managing your organization's mission-critical workloads. You're also able to describe how the predictable performance and dynamic scalability of Azure Database for MariaDB make it ideal to host your database workloads.
