@@ -60,7 +60,7 @@ LAQueryLogs
 ```kusto
 Resources
 | where type contains 'storage'
-| sort by name asc 
+| sort by todatetime(properties.encryption.services.blob.LastEnabledTime)
 | take 10
 ```
 
