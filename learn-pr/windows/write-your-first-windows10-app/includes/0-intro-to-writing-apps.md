@@ -45,7 +45,7 @@ WPF and Windows Forms are best if you want to have a higher level of coding prod
 
 [Windows Forms](/dotnet/desktop/winforms/) is an open-source, graphical user interface for .NET, a standard set of base class libraries and APIs that simplify common application tasks. When you use a development environment like Visual Studio, you can create Windows Forms smart-client applications that display information, request input from users, and communicate with remote computers over a network. The current Windows Forms platform is based on an older .NET Framework UI platform and lacks some of the features provided by WPF and UWP.
 
-Those three platforms will be the subjects of our focus in this training module. Before we get started, though, let's take a quick look at two other options: WinUI and Win32.
+Those three platforms are the subjects of our focus in this training module. Before we get started, though, let's take a quick look at two other options: WinUI and Win32.
 
 ### WinUI and the Windows App SDK
 
