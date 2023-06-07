@@ -9,11 +9,14 @@ Although this module covers how to handle exceptions by catching them, it's not 
 Let's use the navigator example to create code that opens configuration files for the Mars mission. Configuration files can have all kinds of problems, so it's critical to report problems accurately when they come up. We know that if a file or directory doesn't exist, `FileNotFoundError` is raised. If we want to handle that exception, we can do that with a `try` and `except` block:
 
 ```python
->>> try:
-...     open('config.txt')
-... except FileNotFoundError:
-...     print("Couldn't find the config.txt file!")
-...
+try:
+     open('config.txt')
+except FileNotFoundError:
+     print("Couldn't find the config.txt file!")
+
+```
+
+```Output
 Couldn't find the config.txt file!
 ```
 
@@ -33,10 +36,13 @@ if __name__ == '__main__':
     main()
 ```
 
-Next, remove the _config.txt_ file and create a _directory_ called _config.txt_. Try calling the _config.py_ file to see a new error that should be similar to this one: 
+Next, remove the _config.txt_ file and create a _directory_ called _config.txt_. Try calling the _config.py_ file to see a new error that should be similar to this one:
 
-```
-$ python config.py
+```python
+config.py
+````
+
+```Output
 Traceback (most recent call last):
   File "/tmp/config.py", line 9, in <module>
     main()
@@ -45,7 +51,7 @@ Traceback (most recent call last):
 IsADirectoryError: [Errno 21] Is a directory: 'config.txt'
 ```
 
-An unuseful way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand why catching all exceptions is problematic, try it by updating the `main()` function:
+A useless way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand why catching all exceptions is problematic, try it by updating the `main()` function:
 
 ```python
 def main():
@@ -57,8 +63,11 @@ def main():
 
 Now run the code again in the same place where the _config.txt_ file exists with improper permissions:
 
+```python
+config.py
 ```
-$ python config.py
+
+```Output
 Couldn't find the config.txt file!
 ```
 
@@ -82,16 +91,22 @@ def main():
 
 Now run it again, in the same place where _config.txt_ is with the permissions problem: 
 
+```python
+config.py
 ```
-$ python config.py
+
+```Output
 Found config.txt but couldn't read it
 ```
 
 Now delete the _config.txt_ file to ensure that the first `except` block will be reached instead:
 
+```python
+ rm -f config.txt
+ config.py
 ```
-$ rm -f config.txt
-$ python config.py
+
+```Output
 Couldn't find the config.txt file!
 ```
 
@@ -118,22 +133,26 @@ If you need to access the error that's associated with the exception, you must u
 >>> try:
 ...     open("mars.jpg")
 ... except FileNotFoundError as err:
-...     print("got a problem trying to read the file:", err)
-...
-got a problem trying to read the file: [Errno 2] No such file or directory: 'mars.jpg'
+...     print("Got a problem trying to read the file:", err)
+```
+
+```Output
+Got a problem trying to read the file: [Errno 2] No such file or directory: 'mars.jpg'
 ```
 
 In this case, `as err` means that `err` becomes a variable with the exception object as a value. It then uses this value to print the error message that's associated with the exception. Another reason to use this technique is to access attributes of the error directly. For example, if you're catching a more generic `OSError` exception, which is the _parent exception_ of both `FilenotFoundError` and `PermissionError`, you can tell them apart by the `.errno` attribute:
 
 ```python
->>> try:
+try:
 ...     open("config.txt")
 ... except OSError as err:
 ...     if err.errno == 2:
 ...         print("Couldn't find the config.txt file!")
 ...     elif err.errno == 13:
 ...         print("Found config.txt but couldn't read it")
-...
+```
+
+```Output
 Couldn't find the config.txt file!
 ```
 
