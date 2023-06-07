@@ -24,7 +24,9 @@ That output has several key parts. First, the traceback mentions the order of th
 
 That's a lot of information. It can be hard  to understand why line 1 is meaningful or what `Errno 2` means.
 
-Create a Python file and name it *open.py*, with the following contents:
+Open your desired directory in Visual Studio Code and create a Python file named *open.py*.
+
+Add the following contents to the file and save:
 
 ```python
 def main():
@@ -34,9 +36,9 @@ if __name__ == '__main__':
     main()
 ```
 
-It's a single `main()` function that opens the nonexistent file, just like before. At the end, this function uses a Python helper that tells the interpreter to execute the function `main()` when it's called on the terminal. Run it with Python and check the error message:
+It's a single `main()` function that opens the nonexistent file, just like before. At the end, this function uses a Python helper that tells the interpreter to execute the function `main()` when it's called on the terminal. Run the command in a Bash terminal with Python and check the error message:
 
-```python
+```bash
 python3 open.py
 ```
 

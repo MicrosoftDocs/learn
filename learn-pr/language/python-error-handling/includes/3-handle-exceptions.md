@@ -1,8 +1,8 @@
 When you first find exceptions that show large tracebacks as output, you might be tempted to catch every error to prevent that from happening. 
 
-If you're in a mission to Mars, what could you do if a text on the navigation system reads _"an error occurred"_? Imagine that there's no other information or context, just a blinking red light with the error text. As a developer, it's useful to put yourself on the other side of the program: what can a user do when there's an error? 
+If you're in a mission to Mars, what could you do if a text on the navigation system reads _"an error occurred"_? Imagine that there's no other information or context, just a blinking red light with the error text. As a developer, it's useful to put yourself on the other side of the program: what can a user do when there's an error?
 
-Although this module covers how to handle exceptions by catching them, it's not necessary to catch exceptions all the time. Sometimes it's useful to let exceptions be raised so other callers can deal with the errors. 
+Although this module covers how to handle exceptions by catching them, it's not necessary to catch exceptions all the time. Sometimes it's useful to let exceptions be raised so other callers can deal with the errors.
 
 ## Try and except blocks
 
@@ -22,7 +22,7 @@ Couldn't find the config.txt file!
 
 After the `try` keyword, you add code that has the potential to cause an exception. Next, you add the `except` keyword along with the possible exception, followed by any code that needs to run when that condition happens. Because _config.txt_ doesn't exist in the system, Python prints that the configuration file is not there. The `try` and `except` block, along with a helpful message, prevents a traceback and still informs the user about the problem.
 
-Although a file that doesn't exist is common, it isn't the only error you might find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_. The file has code that finds and reads the navigation system's configuration file:
+Although a file that doesn't exist is common, it isn't the only error you might find. Invalid file permissions can prevent reading a file, even if the file exists. Let's create a new Python file called _config.py_ in Visual Studio Code. Add code to the file that finds and reads the navigation system's configuration file:
 
 ```python
 def main():
@@ -36,10 +36,10 @@ if __name__ == '__main__':
     main()
 ```
 
-Next, remove the _config.txt_ file and create a _directory_ called _config.txt_. Try calling the _config.py_ file to see a new error that should be similar to this one:
+Next, create a _directory_ called _config.txt_. Try calling the _config.py_ file to see a new error that should be similar to this one:
 
-```python
-config.py
+```bash
+python3 config.py
 ````
 
 ```Output
@@ -51,7 +51,7 @@ Traceback (most recent call last):
 IsADirectoryError: [Errno 21] Is a directory: 'config.txt'
 ```
 
-A useless way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand why catching all exceptions is problematic, try it by updating the `main()` function:
+A useless way of handling this error would be to catch all possible exceptions to prevent a traceback. To understand why catching all exceptions is problematic, try it by updating the `main()` function in the newly created *config.py* file:
 
 ```python
 def main():
