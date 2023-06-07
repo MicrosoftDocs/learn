@@ -4,7 +4,7 @@ When you create an object in code, you must ensure that you also initialize it. 
 
 Constructors are methods used to initialize your object with any initial values required by your object. Although most objects have constructors, they aren't required to create an object. Even when you haven't defined a constructor in your class, C# calls an implicit constructor, that behaves differently than an explicit constructor method you define. Typically you'll define a constructor for the objects you create, especially as a person just getting started with programming.
 
-##Defining Constructors
+## Defining Constructors
 
 A constructor is a method that the CLR calls automatically, whenever you create an object. They have the same name as the class in which they're defined.
 The general syntax for constructors is as follows:
@@ -46,8 +46,18 @@ public class House
     }
 }
 ```
-Question: Can you think of a situation where you would add a constructor to your class?
 
-Question: When might you have multiple constructor methods in your class?
+&nbsp;
+## Check your knowledge
 
-Question: When might you have a destructor method in your class?
+## Multiple Choice
+When might you have multiple constructor methods in your class?
+( ) You would never have multiple consructors. {{Incorrect. This is untrue, you may at some point want to have multiple constructors for an object.}}
+( ) When you want to make your codee more readable. {{Incorrect. Having multiple constructor is not done for the purpose of making your code more readable.}}
+(x) When you want to initialize your object for different purposes. {{Correct! As constructors are used to initialize an object, having an overloaded constructor allows you to initialize your object for different use cases.}}
+
+## Multiple Choice
+Which of these scenarios is a good reason to possibly add a second (overloaded) constructor?
+( ) You want more than one way to create your object. {{Incorrect. Although perhaps partially correct, this answer is too vague and does not provide any reasoning for the answer given.}}
+( ) When the main constuctor no longer works. {{Incorrect. Constructors are not added to a class as backup for another constructor.}}
+(x) You want to be able to initialize your object with limited basic information, as well as an option for initializing it with a full set of information. {{Correct! While there can be a variety of reasons for having more than one constructor, the scenario descibed is a good answer.}}

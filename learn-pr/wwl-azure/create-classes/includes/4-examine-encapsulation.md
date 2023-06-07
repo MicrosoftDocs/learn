@@ -2,15 +2,15 @@
 
 Encapsulation is about hiding the internal state and functionality of an object and only allowing access through a public set of functions. It prevents your code from inadvertently allowing access to data and methods in your objects. It's a way of keeping things clean, so to speak, only allowing the things you want to be available to your other objects and methods. Encapsulation controls the visibility and accessibility of data and implementation details in your application.
 
-##What is encapsulation?
+## What is encapsulation?
 
 In a nutshell, encapsulation is the ability of an object or class to hide its internal data and implementation details, making only the intended parts of the object or class available.
 
-##Benefits of Encapsulation
+## Benefits of Encapsulation
 
 You can use encapsulation to hide information. When you hide information, such as an object’s internal state and implementation information, external code focuses on only the useful characteristics of the object. Encapsulation helps to protect the data in an object; external code can interact with the data in an object only through the members of the object that it has access to.
 
-##Contents of a Class
+## Contents of a Class
 The following are examples of class members that can be encapsulated within a class:
 - Variables used to store values.
 - Methods containing code blocks and that represent an action that an object or class can perform.

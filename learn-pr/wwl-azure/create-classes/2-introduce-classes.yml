@@ -4,11 +4,10 @@ title: Introduction to Classes
 metadata:
   title: Introduction to Classes
   description: "This unit describes working with classes and objects and how you use them to describe real world objects."
-  ms.date: 06/02/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/2-introduce-classes.md)]

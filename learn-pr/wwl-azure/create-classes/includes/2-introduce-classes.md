@@ -1,10 +1,18 @@
 
 
-If you have written any code in .NET, you have worked with classes. In addition to classes being the blueprint for objects, the building blocks of your application, each class also defines a type. This means that your class can represent a specific type data called a data type, such as strings (text), integers (numbers), and doubles (numbers that have a decimal), among others.
+When it comes to planning an application, you start by thinking about what you want to build, then plan the design and build it out from there. You think about what you want to build, then identify the classes/objects that it will consist of. This process of identifying the classes/objects that your program consists of is often referred to as abstraction. Abstraction is the idea of taking what you want to build and then "abstracting" it out into classes that represent the various pieces of your application, for example, in your house building apllication those pieces might be rooms, plumbing, etcetera.
 
-You can also create custom types that don’t represent any of the previously mentioned types, but rather represent the custom class that you create. The concept of type is important here, as they define the type of data your object returns when it's called.
+[!NOTE] As mentioned previously, classes are the design or blueprint for an object, detailing the members of an object. Objects are the “live” embodiment, so to speak, of that class in your computers Random Access Memory or RAM. They're the blueprint for what we call the “in-memory” object that actually does what the class blueprint or design has specified.
 
-When you design an application, you identify new types that you require to build your application. If you're building an application that represents a house, you might have a house class that represents a house. The house class would have a bedroom, living room, bathroom, dining room, etcetera. The user of your application can enter the rooms, perhaps turn on or off the light in the room, exit the room and so on.
+To tell it another way, each object represents a class. The class is the building block of an object-oriented application. And, in order to use a class in a completed application, you must create an object based on the class, as it's the live, in-memory, representation of that class. The purpose of this lesson is to differentiate between a class and an object, and to create a class. This module explains the differences between a class and an object, and shows you how to create a class.
+
+## Types
+
+In addition to classes being the blueprint for objects, each class also defines what is called a *type*. Types are another word for object, just used in a slightly different way. They are used to describe like things, much like in a game of cards each card belongs to a suit, hearts for example. This means that your class can represent a specific type of data called a *data type* or just *type*, such as strings (text), integers (numbers), and doubles (numbers that have a decimal), among others.
+
+You can also create custom types that don’t represent any of the previously mentioned built-in or what are called native types, but rather represent the custom classes you create. The concept of type is important here, as they define the type of data your object can return when a method is called on that object. We'll discuss return values and data type a little further on.
+
+When you design an application, you identify new types that you require to build your application. If you're building an application that represents a house, you might have a house class that also can represent a house type when passing house objects to other objects via methods, as the compiler needs to know whether the thing you are passing is in the suit of Diamonds or Clubs. 
 
 ## Properties
 
@@ -24,7 +32,17 @@ public class House
 
 }
 ```
+&nbsp;
+## Check your knowledge
 
-Question: What other classes might you create for an application that represents a house?
+## Multiple Choice
+What other classes might you create that a house class contanin?
+( ) A grizzly bear. {{Incorrect. A house would not have a grizzly bear.}}
+( ) A car. {{Incorrect. A car is not a part of a house.}}
+(x) A roof. {{Correct! A roof is something that all houses have and would be appropriate for a house class to have.}}
 
-Question: How would you handle rooms?
+## Multiple Choice
+What other classes might a room have?
+( ) A roof. {{Incorrect. While a house does have a roof, roofs are typically not thought of in the context of a single room in a house.}}
+( ) A kitchen. {{Incorrect. Althought it is possible that a room has a kitchen, a kitchen would makwe more sense as a room in house.}}
+(x) A window. {{Correct! Windows fit well as an attibute of a room.}}

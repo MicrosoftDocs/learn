@@ -4,12 +4,10 @@ title: Encapsulation
 metadata:
   title: Encapsulation
   description: "This unit describes what encapsulation is and what it's used for."
-  ms.date: 06/02/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-examine-encapsulation.md)]
-interactive: csharp

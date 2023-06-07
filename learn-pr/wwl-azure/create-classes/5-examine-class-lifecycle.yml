@@ -4,12 +4,10 @@ title: Class Lifecycle
 metadata:
   title: Class Lifecycle
   description: "This unit describes what the class lifecycle is and how it's used."
-  ms.date: 06/02/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/5-examine-class-lifecycle.md)]
-interactive: csharp

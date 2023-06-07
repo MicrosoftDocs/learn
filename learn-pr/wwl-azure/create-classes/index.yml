@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.create-classes
 metadata:
-  title: Creating Classes
+  title: Create Classes
   description: "This module describes creating and working with classes."
-  ms.date: 06/02/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Creating Classes
+title: Create Classes
 summary: The purpose of this module is to learn about classes and objects and to understand the difference between the two.
 abstract: |
   * Describe a class
@@ -34,7 +33,7 @@ subjects:
 units:
 - learn.wwl.create-classes.introduction
 - learn.wwl.create-classes.introduce-classes
-- learn.wwl.create-classes.examine-classes-objects
+- learn.wwl.create-classes.exercise-examine-classes-objects
 - learn.wwl.create-classes.examine-encapsulation
 - learn.wwl.create-classes.examine-class-lifecycle
 - learn.wwl.create-classes.examine-class-constructors-destructors

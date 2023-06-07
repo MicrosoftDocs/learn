@@ -2,11 +2,11 @@
 
 You use namespaces to organize classes into logically related hierarchies. They function as both an internal system for organizing your application and as an external way to avoid name clashes in your code. Name clashes can occur if you have classes with the same name within the same namespace. While you may not use namespaces in your code as a beginner, it's helpful to understand that they exist and how to use them for when you're ready to use them.
 
-##Definition and Features of Namespaces
+## Definition and Features of Namespaces
 
 Each namespace contains classes that your program uses. Because different classes can have the same name, you should organize your classes into different namespaces. You can use this practice to avoid naming clashes that will cause your code to crash.
 
-##User-Defined Namespaces
+## User-Defined Namespaces
 
 Namespaces come in two categories: user-defined, and system-defined. System-defined namespaces are the namespaces used to organize the .NET Framework class library. User-defined namespaces are namespaces you define in your code.
 
@@ -36,6 +36,17 @@ HomeStyle.House house = new HomeStyle.House();
 ```
 If you use many classes from the same namespace, or the same class repeatedly, you can import the namespace with the using (Visual C#) or imports statement. When you import a namespace, you no longer need to specify the namespace as a prefix when you declare and instantiate the class.
 
-Question: How do you access a class that is in a namespace from your client code?
+&nbsp;
+## Check your knowledge
 
-Question: Why would two classes be in the same namespace?
+## Multiple Choice
+How do you access a class that is in another namespace?
+( ) Provide a link to the other namespace. {{Incorrect. You do not create links to other namespaces to access them.}}
+( ) You don't need to do anything, namespaces are global and their contents are available everywhere. {{Incorrect. This answer is incorrect, as namespaces are not global.}}
+(x) Prefix your object with the name of the namespace it belongs to. {{Correct! The way you access objects in another namespace is prefix the name of your object with the name of the class that belongs to it.}}
+
+## Multiple Choice
+Why would two classes be in the same namespace?
+( ) To avoid collisions. {{Incorrect. Although classes are put in separate namespaces to avoid crashes, classes are not put in the same namespace to avoid crashes (class naming conflicts).}}
+( ) Because they are of the same type. {{Incorrect. Classes of the same name/type are put in different namespaces to avoid name conflicts.}}
+(x) Because they preform related functionality. {{Correct! Classes are put in namespaces to avoind name conflicts and because they share related functionality.}}

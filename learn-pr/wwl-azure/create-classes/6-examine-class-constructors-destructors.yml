@@ -4,12 +4,10 @@ title: Class Constructors and Destructors
 metadata:
   title: Class Constructors and Destructors
   description: "This unit describes what class constructors and deconstructors are."
-  ms.date: 06/02/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 12
 content: |
   [!include[](includes/6-examine-class-constructors-destructors.md)]
-interactive: csharp
