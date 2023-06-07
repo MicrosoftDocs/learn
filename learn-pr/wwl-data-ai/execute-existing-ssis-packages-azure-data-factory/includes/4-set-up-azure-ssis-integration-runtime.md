@@ -1,8 +1,8 @@
-Perform the following steps to setup an Integration Runtime
+Perform the following steps to set up an Integration Runtime
 
-## Setup an Azure-SSIS Integration Runtime
+## Set up an Azure-SSIS Integration Runtime
 
-1. In the Azure Data Factory designer , select the **Manage** tab.
+1. In the Azure Data Factory designer, select the **Manage** tab.
 1. in the **General** panel. Click on the **Integration Runtimes** tab to view existing Integration Runtimes in your data factory.
 
     ![navigating to Integration Runtimes](../media/select-integration-runtime.png)
