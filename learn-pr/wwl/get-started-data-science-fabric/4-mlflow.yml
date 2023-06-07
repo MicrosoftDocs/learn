@@ -9,6 +9,10 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
 durationInMinutes: 8
 content: |
   [!include[](includes/4-mlflow.md)]
