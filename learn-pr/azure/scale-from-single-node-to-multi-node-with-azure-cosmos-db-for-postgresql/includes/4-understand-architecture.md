@@ -1,14 +1,14 @@
-Before distributing the data, it's important to understand the change of the architecture when going from a single-node cluster of Azure Cosmos DB for PostgreSQL to a multi-node cluster. Those changes also impact how queries are handled.
+Before you distribute the data, it's important to understand the change of the architecture when going from a single-node cluster of Azure Cosmos DB for PostgreSQL to a multi-node cluster. The changes also affect how queries are handled.
 
-## The architecture of the single-node cluster
+## Architecture of the single-node cluster
 
-Azure Cosmos DB for PostgreSQL is powered by [the Citus extension for PostgreSQL](https://github.com/citusdata/citus). When working with Citus, there are two node types - coordinator and worker nodes. The **coordinator node** manages the table metadata, hosts some tables, and plans queries. The **worker nodes** store the distributed data and process queries. Both types of nodes are plain PostgreSQL databases with the Citus extension.
+Azure Cosmos DB for PostgreSQL is powered by [the Citus extension for PostgreSQL](https://github.com/citusdata/citus). Citus has two node types: coordinator nodes and worker nodes. The *coordinator node* manages the table metadata, hosts some tables, and plans queries. The *worker nodes* store the distributed data and process queries. Both types of nodes are plain PostgreSQL databases with the Citus extension.
 
-When working in a single-node cluster of Azure Cosmos DB for PostgreSQL, the single node hosts both the coordinator node and a worker node in the illustration in the Azure portal.
+When you work in a single-node cluster of Azure Cosmos DB for PostgreSQL, the single node hosts both the coordinator node and a worker node in the illustration in the Azure portal.
 
-![This is a screenshot from the Scale blade of an Azure CosmosDB for PostgreSQL Cluster. This shows a circle split in half with a number 1 for the number of nodes. The circle is labeled 'Coordinator - Worker'.](../media/single-node-scale-page.png)
+![This is a screenshot from the Scale pane of an Azure CosmosDB for PostgreSQL Cluster. This shows a circle split in half with a number 1 for the number of nodes. The circle is labeled 'Coordinator - Worker'.](../media/single-node-scale-page.png)
 
-A single node is a plain Postgres database with the Citus extension. In applications when your workload fits in 64 vCores, 256-GB RAM, and 2-TB storage, you can use a single-node Azure Cosmos DB for PostgreSQL cluster. This size is common for:
+A single node is a plain Postgres database with the Citus extension. In applications when your workload fits in 64 vCores, 256 GB of RAM, and 2 TB of storage, you can use a single-node Azure Cosmos DB for PostgreSQL cluster. This size is common for:
 
 - Small production databases
 - Test environments
@@ -21,13 +21,13 @@ As the amount of data grows, it may make sense to go to a distributed configurat
 > [!NOTE]
 > The number of shards is configurable. If you find that 32 shards aren't enough for your query needs, see [shard count guidance](/azure/cosmos-db/postgresql/howto-shard-count).
 
-Wide World Importers is tracking their warehouse and delivery truck environments for their products like chilly chocolates, which need to be stored at 50-60 degrees Fahrenheit and 60-70% humidity. The device readings were initially stored on a single, non-distributed table named `events`. As Wide World Importers adds more delivery trucks to deliver more chilly chocolates, their data grows into the hundreds of thousands and millions of records. With large amounts of data, the queries for specific devices took longer, as those queries scan the entire events table to find a specific device's set of records. A large amount of data is causing a slower analysis of device readings, making it slower to identify the devices that are causing melted chocolates.
+Wide World Importers is tracking their warehouse and delivery truck environments for their products like chilly chocolates, which need to be stored at between 50 degrees and 60 degrees Fahrenheit and with 60 percent to 70 percent humidity. The device readings were initially stored on a single, nondistributed table named `events`. As Wide World Importers adds more delivery trucks to deliver more chilly chocolates, their data grows into the hundreds of thousands and millions of records. With large amounts of data, the queries for specific devices took longer, as those queries scan the entire events table to find a specific device's set of records. A large amount of data is causing a slower analysis of device readings, making it slower to identify the devices that are causing melted chocolates.
 
 With the queries performing slower, the Wide World Importers developers evaluated the queries to see if they could benefit from distributing the data. They found that the queries frequently included the `device_id`.
 
-Since Wide World Importers runs many queries looking at specific devices, they decided to distribute their data based on the device. What does this look like?
+Because Wide World Importers runs many queries looking at specific devices, they decided to distribute their data based on the device. What does this look like?
 
-Sample of non-distributed `events` table at over 5 million records:
+Sample of nondistributed `events` table at over 5 million records:
 
 | event_id | device_id | payload | created_at |
 |----|----|----|----|
@@ -84,7 +84,7 @@ FROM citus_shards
 GROUP BY table_name, nodename;
 ```
 
-The output looks similar to this:
+The output looks similar to this example:
 
 | table_name  |                     nodename  | count |    sum   |
 | --------------|------------------------------------------------------------|-------|-----------|
@@ -94,35 +94,35 @@ The output looks similar to this:
 
 The coordinator handles planning the queries and engages only the necessary nodes with the required shards. If the coordinator can't determine which shards need to be queried, it engages all nodes to query all shards.
 
-When data is distributed, this is how a query is processed:
+When data is distributed, a query is processed by using these steps:
 
 1. The query comes into the coordinator node.
-2. The coordinator node evaluates the query and determines which shards have the data relevant to the query.
-3. The coordinator engages the nodes that host the shards relevant to the query.
-4. The nodes process the query in parallel and return their results to the coordinator.
-5. The coordinator returns the results.
+1. The coordinator node evaluates the query and determines which shards have the data relevant to the query.
+1. The coordinator engages the nodes that host the shards relevant to the query.
+1. The nodes process the query in parallel and return their results to the coordinator.
+1. The coordinator returns the results.
 
 In a single-node configuration, the responsibilities of the worker node and coordinator node are shared on a single node. The data can be distributed on a single node. The performance of the queries relies on that singular node. If you're going with a distributed environment, you can use a distributed configuration on a single node for development environments and test environments. Depending on your resource requirements, you can run your production environment in a single-node or a multi-node configuration. As the amount of data grows, consider using a multi-node configuration to take advantage of parallel query processing and distributed storage.
 
-As data grows larger and queries run slower, the single node can get overloaded and show degraded performance. This is a reason to upgrade to a multi-node cluster.
+As data grows larger and queries run slower, the single node can get overloaded and show degraded performance. For these reasons, it might be time to upgrade to a multi-node cluster.
 
 ## The architecture of the multiple-node cluster
 
 When moving to a multiple-node configuration for the Azure Cosmos DB for PostgreSQL cluster, the coordinator node and the worker nodes are separated.
 
-![This is a screenshot from the Scale blade of an Azure CosmosDB for PostgreSQL Cluster. This shows two circles. The first circle has the number 1 to represent the number of nodes. The circle is labeled 'Coordinator'. There is a second circle to the right of the first circle. This second circle shows the number 2 to represent the number of nodes. This second circle is labeled 'Workers' and represents 2 worker nodes.](../media/multiple-node-scale-page.png)
+![This is a screenshot from the **Scale** pane of an Azure CosmosDB for PostgreSQL Cluster. This shows two circles. The first circle has the number 1 to represent the number of nodes. The circle is labeled 'Coordinator'. There is a second circle to the right of the first circle. This second circle shows the number 2 to represent the number of nodes. This second circle is labeled 'Workers' and represents 2 worker nodes.](../media/multiple-node-scale-page.png)
 
-The coordinator node handles planning query execution as well as storing the metadata and some tables. Each worker node contains shards of distributed tables. Each worker node processes its part of a query in parallel in a multi-node configuration rather than the serial processing in a single-node non-distributed environment. If the data is distributed in a logical manner that aligns with users' query patterns, the queries can perform quicker with parallel processing.
+The coordinator node handles planning query execution and storing the metadata and some tables. Each worker node contains shards of distributed tables. Each worker node processes its part of a query in parallel in a multi-node configuration rather than the serial processing in a single-node nondistributed environment. If the data is distributed in a logical manner that aligns with users' query patterns, the queries can perform quicker with parallel processing.
 
-For Wide World Importers' sensors data, the data can be sharded across multiple nodes. Since this is starting from a single-node configuration, the coordinator node hosts shards.
+For Wide World Importers' sensors data, the data can be sharded across multiple nodes. Because you're starting with a single-node configuration, the coordinator node hosts shards.
 
 ![Diagram of the Coordinator Node and 2 Workers with shards split among all nodes. Each worker node and the coordinator node have multiple shards.](../media/coordinator-workers-with-shards.png)
 
 ## Sample queries processing in a distributed configuration
 
-When distributing data, look at the queries and distribute the data in a way that makes sense for its use. This doesn't always align with relational instincts. To make it more efficient, the `events` table is distributed by `device_id` and not the relational primary key of `event_id`. The `device_id` distribution column is selected because the queries on `events` are commonly filtered on the `device_id`.
+When distributing data, look at the queries and distribute the data in a way that makes sense for its use. This approach doesn't always align with relational instincts. To make it more efficient, the `events` table is distributed by `device_id` and not the relational primary key of `event_id`. The `device_id` distribution column is selected because the queries on `events` are commonly filtered on the `device_id`.
 
-The first query to consider is querying the `events` for all readings outside of the required operating range. This is the query:
+The first query to consider is querying the `events` for all readings outside of the required operating range. Here's the query:
 
 ```sql
 SELECT device_id, COUNT((CASE WHEN (payload ->> 'humidity')::decimal < 60 THEN 1 ELSE NULL END)) AS LowHumidity,  
@@ -135,9 +135,9 @@ SELECT device_id, COUNT((CASE WHEN (payload ->> 'humidity')::decimal < 60 THEN 1
     GROUP BY device_id;
 ```
 
-Since this query doesn't call out a specific device, the coordinator engages all worker nodes to query all shards to find matching records.
+Because this query doesn't call out a specific device, the coordinator engages all worker nodes to query all shards to find matching records.
 
-You can query the coordinator for the query plan with the `EXPLAIN` keyword. The query plan shows how many shards are engaged through the count of tasks in the query plan header. This is the query plan header for the query above:
+You can query the coordinator for the query plan with the `EXPLAIN` keyword. The query plan shows how many shards are engaged through the count of tasks in the query plan header. The following example is the query plan header for the preceding query:
 
 ```text
 ---------------------------------------------------------------------------
@@ -146,11 +146,11 @@ You can query the coordinator for the query plan with the `EXPLAIN` keyword. The
    Task Count: 32
 ```
 
-How does shard placement impact query processing? This is what query processing looks like for events for all devices.
+How does shard placement affect query processing? The following figure shows what query processing looks like for events for all devices.
 
 ![Animation showing query processing for the outliers query. The query is in a box. An animated arrow goes from the query box to the coordinator node. The coordinator node pulses to indicate activity. Then, arrows animate from the coordinator to 2 worker nodes. The worker nodes and the coordinator node pulse to indicate activity. Then, an arrow goes from the engaged worker nodes back to the coordinator node. The coordinator node pulses for more activity, then an arrow appears going from the coordinator node back to the query.](../media/query-nodes-all-devices.gif)
 
-As was previously discovered, device 42 has a problem. When a specific device is identified, run queries filtered for that device. When you run the following query, the coordinator engages only the node that has the shard for device 42.
+As was previously discovered, device 42 has a problem. When a specific device is identified, run queries that are filtered for that device. When you run the following query, the coordinator engages only the node that has the shard for device 42.
 
 ```sql
 SELECT * FROM events 
@@ -172,13 +172,13 @@ The query plan header looks like this:
    Task Count: 1
 ```
 
-The query plan header indicates one task, which means only one shard needs to be queried. Only the worker node with that shard will process the query. No other worker nodes are engaged.
+The query plan header indicates one task, which meant that only one shard needs to be queried. Only the worker node with that shard processes the query. No other worker nodes are engaged.
 
-This is what the query processing looks like for events for a specific device.
+The following figure shows what the query processing looks like for events for a specific device.
 
 ![Animation showing query processing for the query 'SELECT * FROM events WHERE device_id=42;' The query is in a box. An animated arrow goes from the query box to the coordinator node. The coordinator node pulses to indicate activity. Then, an arrow animates from the coordinator to 1 worker node. A second worker node sits with no connections. The worker node with the arrow coming in pulses to indicate activity. Then, an arrow goes from the engaged worker node back to the coordinator node. The coordinator node pulses for more activity, then an arrow appears going from the coordinator node back to the query.](../media/query-worker-specific-device.gif)
 
-While you can run this distributed environment on a single node, it makes more sense to take advantage of storage distribution and parallel processing with a multi-node cluster. Now, you can take the first step in upgrading to a distributed environment by scaling your Azure Cosmos DB for PostgreSQL cluster from a single node to a multi-node cluster.
+Although you can run this distributed environment on a single node, it makes more sense to take advantage of storage distribution and parallel processing with a multi-node cluster. Now, you can take the first step in upgrading to a distributed environment by scaling your Azure Cosmos DB for PostgreSQL cluster from a single node to a multi-node cluster.
 
-> [!Note]
+> [!NOTE]
 > Adding nodes doesn't distribute data to the new nodes. You'll see this in the next exercise.

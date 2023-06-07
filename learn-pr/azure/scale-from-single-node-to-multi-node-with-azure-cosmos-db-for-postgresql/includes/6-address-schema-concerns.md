@@ -32,7 +32,7 @@ Reference tables can be joined with local tables. They can also be joined with d
 
 When two tables are distributed on the same field, it would make sense to store shards with the same field value together and take advantage of [colocation](/azure/cosmos-db/postgresql/concepts-colocation). Colocation means that all data with the same distribution column value is stored on the same node.
 
-Suppose the `devices` and `events` tables are distributed on `device_id`. Since the tables are distributed by the same column, colocating them makes sense. This means that the device entry for `device97` would be stored on the same node as the sensors readings for `device97`. When a query is run specifically for `device97`, only the node that has that information is engaged. The query needn't be processed by separate nodes for the `devices` and `events` table due to colocation.
+Suppose the `devices` and `events` tables are distributed on `device_id`. Because the tables are distributed by the same column, colocating them makes sense. The device entry for `device97` would be stored on the same node as the sensors readings for `device97`. When a query is run specifically for `device97`, only the node that has that information is engaged. The query doesn't need to be processed by separate nodes for the `devices` and `events` table due to colocation.
 
 Distributed tables can be joined with reference tables. However, distributed tables can't be joined with local tables.
 
@@ -46,13 +46,13 @@ The three different types of tables are stored differently across the nodes.
 
 When storing tables, the coordinator node can host the reference and distributed shards if you're starting out with a single-node configuration and upgrading to a multi-node configuration. Otherwise, the worker nodes are the only nodes that host the reference and distributed shards.
 
-The diagram below shows this breakdown.
+The following figure shows this breakdown.
 
 ![Diagram of the Coordinator node as a PostgreSQL database with metadata tables and a local table. The diagram also contains 3 worker nodes, each with distributed shards and a reference table. Arrows are coming from the coordinator and point at each of the worker nodes.](../media/coordinator-workers-with-arrows-with-tables.png)
 
 ### Reference table versus distributed table
 
-It might be unclear whether a table should be a reference table or a distributed table. These are some things to think about.
+It might be unclear whether a table should be a reference table or a distributed table. Consider these factors:
 
 - How much data is on this table? How much growth is anticipated?
 - How often is the data used in queries with distributed tables?
@@ -67,7 +67,7 @@ For Wide World Importers, should the `devices` table be a reference table or a d
 - If it's a slow, small growth, it may make sense to keep devices as a reference table.
 - However, if the growth is exponential or at a rate where query performance is impacted, then it may make more sense to classify `devices` as a distributed table.
 
-So for the Wide World Importer tables, they've settled on the following:
+So for the Wide World Importer tables, they've settled on the tables:
 
 - `device_types` is a reference table.
 - `devices` is a distributed table.
@@ -77,11 +77,11 @@ Now that the table types are identified, you can create those tables in Azure Co
 
 ## Foreign key and other constraint implications in a distributed environment
 
-There are relationships and constraints in a non-distributed environment that don't translate over to a distributed environment. These are some things to keep in mind.
+There are relationships and constraints in a nondistributed environment that don't translate over to a distributed environment. Consider the factors that are described in the following sections.
 
 ### Foreign key implications
 
-In this distributed environment, foreign key enforcement is tricky. These are the cases where foreign keys work in Azure Cosmos DB for PostgreSQL:
+In this distributed environment, foreign key enforcement is tricky. Foreign keys work in Azure Cosmos DB for PostgreSQL in the following scenarios:
 
 - Between two local tables
 - Between two reference tables
@@ -96,13 +96,13 @@ The cases where foreign keys aren't supported are:
 
 For foreign keys to be enforced, the referencing and referenced rows need to be stored on the same node.
 
-Foreign keys that involve distributed data must include the distribution column. The distribution column must also be included in primary keys and UNIQUE constraints. This means that going from a standalone relational system to a distributed relational system may require updating constraints from simple keys to composite keys.
+Foreign keys that involve distributed data must include the distribution column. The distribution column must also be included in primary keys and UNIQUE constraints. Going from a standalone relational system to a distributed relational system might require updating constraints from simple keys to composite keys.
 
-For Wide World Importers, this means that:
+Wide World Importers needs to consider these factors:
 
 - The foreign key relationship between the `devices` table and the `device_types` table works because it's going from a distributed table to a reference table. Keep in mind that reference tables don't have distribution columns.
-- If the `events` table is distributed by `event_id`, the foreign key relationship between the `events` table and the `devices` table will no longer be possible. The distribution column needs to be included as part of the foreign key. Since the `devices` table doesn't contain the `event_id` column, then the foreign key can't be created.
-- However, if the developers realize that their devices table is a smaller table and make it a reference table, then the foreign key relationship can stay, as that would be a relationship between a distributed table and a reference table.
+- If the `events` table is distributed by `event_id`, the foreign key relationship between the `events` table and the `devices` table will no longer be possible. The distribution column needs to be included as part of the foreign key. Because the `devices` table doesn't contain the `event_id` column, then the foreign key can't be created.
+- However, if the developers realize that their devices table is a smaller table, and they make it a reference table, then the foreign key relationship can stay, as that would be a relationship between a distributed table and a reference table.
 - To keep the foreign key on the events table to the devices table with both tables, the `device_id` needs to be the distribution column for both tables. This would colocate the tables and allow for the enforcement of the foreign key relationship.
 
 ### Identity implications
@@ -113,12 +113,14 @@ An alternative to identity fields that is supported by Citus is [the serial data
 
 ## Choose a distribution column
 
-In moving from a non-distributed to a distributed environment, you need to reevaluate relationships and identify how the tables and columns are used in queries. The primary key of a table in a standalone server may no longer make sense as the primary key in a distributed environment. For a primary key to be enforced in the Azure Cosmos DB for PostgreSQL environment, that key must be part of the distribution column. These are some considerations for choosing a distribution column.
+In moving from a nondistributed to a distributed environment, you need to reevaluate relationships and identify how the tables and columns are used in queries. The primary key of a table in a standalone server may no longer make sense as the primary key in a distributed environment. For a primary key to be enforced in the Azure Cosmos DB for PostgreSQL environment, that key must be part of the distribution column.
 
-1. The column should be a central piece of the application. Examples include `device_id` in IoT workloads, `store_id` in eCommerce analytics, and `tenant_id` in multi-tenant applications.
-2. The column's values should be varied with high cardinality and a balanced statistical distribution. This means the column should have many possible values and the amount of data with that value should be evenly distributed through the data set.
-3. The column should appear in the most common queries to allow parallelization of those queries.
-4. If there are tables that are commonly queried together, they can benefit from colocation.
+Here are some considerations for choosing a distribution column:
+
+1. The column should be a central piece of the application. Examples include `device_id` in IoT workloads, `store_id` in eCommerce analytics, and `tenant_id` in Because applications.
+1. The column's values should be varied with high cardinality and a balanced statistical distribution. The column should have many possible values and the amount of data with that value should be evenly distributed through the data set.
+1. The column should appear in the most common queries to allow parallelization of those queries.
+1. If there are tables that are commonly queried together, they can benefit from colocation.
 
 For the Wide World Importers sensors data, `device_id` makes sense as the distribution column for the `devices` table because it's central to the application and appears in most queries.
 
@@ -128,13 +130,13 @@ Distributed tables are created with the `create_distributed_table()` function, w
 SELECT create_distributed_table('devices','device_id');
 ```
 
-When data already exists and is in use, you can distribute the data while allowing for normal database usage by using `create_distributed_table_concurrently()`. This takes the same parameters as `create_distributed_table()`.
+When data already exists and is in use, you can distribute the data while allowing for normal database usage by using `create_distributed_table_concurrently()`. It takes the same parameters as `create_distributed_table()`.
 
-For the Wide World Importers sensors data, the choice of distribution column on the `events` table was initially unclear. While the event identity column made sense as a primary key in the non-distributed environment, the `event_id` column doesn't account for its relationship with `devices`. The `device_id` column could be a good candidate as a distribution column as the device's details and events could be colocated by the shared `device_id` column. In this case, the deciding factors on the distribution column are query patterns, data relationships, and identifying which scenarios could benefit more from colocation.
+For the Wide World Importers sensors data, the choice of distribution column on the `events` table was initially unclear. Although the event identity column made sense as a primary key in the nondistributed environment, the `event_id` column doesn't account for its relationship with `devices`. The `device_id` column could be a good candidate as a distribution column as the device's details and events could be colocated by the shared `device_id` column. In this case, the deciding factors on the distribution column are query patterns, data relationships, and identifying which scenarios could benefit more from colocation.
 
-## Change schema from non-distributed to distributed
+## Change schema from nondistributed to distributed
 
-This is the non-distributed layout.
+The nondistributed layout has the following characteristics:
 
 - `device_types` has a `device_type_id` field and a `name` field. `device_type_id` is its primary key.
 - `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There's a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
@@ -142,7 +144,7 @@ This is the non-distributed layout.
 
 ![Diagram of the relationships between device types, devices, and events. The device_types table has two fields - device_type_id and name. device_type_id is its primary key. The devices table has three fields - device_id, device_type_id, and name. device_id is its primary key. The devices table has a foreign key relationship on device_type_id that references the device_type_id field on the device_types table. The events table has three fields - event_id, device_id, and payload. event_id is its primary key. The events table has a foreign key relationship on its device_id that references the device_id field on the devices table.](../media/normalized-database-erd.png)
 
-To go to a distributed layout, some things need to happen.
+To go to a distributed layout, some things need to happen:
 
 - The `device_types` table needs to become a reference table.
 - The primary key on the `events` table needs to be dropped and recreated as a composite key of `device_id` and `event_id`.
@@ -152,4 +154,4 @@ To go to a distributed layout, some things need to happen.
 - The foreign key needs reestablished on the `events` table.
 - The local data needs truncated from the coordinator node.
 
-While this is the plan, the order of distributing the data matters. Since the plan is to move from a non-distributed environment to a distributed environment with data already in place, this move needs to happen with minimal disruption to the existing data. Next, you'll look at the concerns on the order of distribution.
+Although the steps are set, the order of distributing the data matters. Because the plan is to move from a nondistributed environment to a distributed environment with data already in place, this move needs to happen with minimal disruption to the existing data. Next, you look at the concerns on the order of distribution.
