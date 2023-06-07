@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-digital-twins.when-to-use-azure-iot-central
+uid: learn.introduction-to-azure-digital-twins.when-to-use-azure-digital-twins
 title: When to use Azure Digital Twins
 metadata:
   unitType: learning-content
@@ -14,4 +14,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 9
 content: |
-  [!include[](includes/4-when-to-use-azure-iot-central.md)]
+  [!include[](includes/4-when-to-use-azure-digital-twins.md)]
