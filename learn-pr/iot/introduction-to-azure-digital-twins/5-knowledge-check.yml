@@ -1,0 +1,33 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-azure-digital-twins.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your understanding of what we've covered in this module.
+  ms.date: 05/23/2023
+  author: baanders
+  ms.author: baanders
+  ms.reviewer: asergaz
+  manager: lizross
+  ms.topic: module-intro-to-product
+  ms.prod: learning-azure
+durationInMinutes: 7
+content: |
+quiz:
+  questions:
+  - content: Question about the definitions of models, twins, and the twin graph
+    choices:
+    - content: 
+      isCorrect: false
+      explanation: 
+  - content: Question about what insights you can gather from querying
+    choices:
+    - content: 
+      isCorrect: false
+      explanation: 
+  - content: Question about how data is ingested into and exported out of Azure Digital Twins
+    choices:
+    - content: 
+      isCorrect: false
+      explanation: 
