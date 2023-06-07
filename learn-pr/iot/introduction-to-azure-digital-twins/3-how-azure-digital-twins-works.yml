@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.introduction-to-azure-digital-twins.how-azure-iot-central-works
+uid: learn.introduction-to-azure-digital-twins.how-azure-digital-twins-works
 title: How Azure Digital Twins works
 metadata:
   unitType: learning-content
@@ -12,6 +12,6 @@ metadata:
   manager: lizross
   ms.topic: module-intro-to-product
   ms.prod: learning-azure
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
-  [!include[](includes/3-how-azure-iot-central-works.md)]
+  [!include[](includes/3-how-azure-digital-twins-works.md)]

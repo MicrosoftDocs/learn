@@ -6,14 +6,14 @@ Azure Digital Twins is a platform as a service (PaaS) offering that enables the 
 
 In Azure Digital Twins, you freely define the types of digital entities that represent your environment, including the people, places, and things that it contains.
 
-Using the language that fits your business, you define your own twin types in terms of their properties, telemetry, components, and relationships. These custom twin types are called **models**. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies based on common vocabulary for your industry. In the factory scenario for this module, you might design a model to represent the concept of a robotic arm. That model will have a boolean property for whether the latest package was picked up successfully.
+Using the vocabulary that fits your business, you define your own twin types in terms of their properties, telemetry, components, and relationships. These custom twin types are called **models**. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies based on common vocabulary for your industry. In the factory scenario for this module, you might design a model to represent the concept of a robotic arm. That model will have a boolean property indicating an alert that the latest package was not picked up.
+
+After creating models to define the types of entity in your environment, you create instances of each model to represent the actual, specific environment entities. These instances are called **digital twins** (or just **twins** for simplicity). In this module scenario, you might use the robotic arm model to create multiple robotic arm twins. Each twin will be based on the model, so each twin will have that boolean property representing the pickup failure alert.
 
 >[!TIP]
->From a programming perspective, models function similarly to class definitions.
+>From a programming perspective, models are similar to class definitions, and twins are like instances of those classes.
 
-After creating models to define the types of entity in your environment, you create instances of each model to represent the actual, specific environment entities. These instances are called **twins** or **digital twins**. In this module scenario, you might use the robotic arm model to create multiple robotic arm twins. Each twin will be based on the model, so each twin will have that boolean property representing whether its latest package was successfully picked up.
-
-Finally, digital twins are connected to each other via **relationships** to form a conceptual graph of your complete environment. You might create a twin to represent the entire factory floor, and use relationships to indicate that that floor *contains* each of the robotic arm twins that you've created. Using relationships like this can help you to aggregate data from twins that are conceptually connected to each other, such as determining the average hourly efficiency across all robotic arms on the floor.
+Finally, digital twins are connected to each other via **relationships** to form a conceptual graph of your complete environment. You might create a twin to represent the entire distribution center, and use relationships to indicate that that center *contains* each of the robotic arm twins that you've created. Using relationships like this can help you to aggregate data from twins that are conceptually connected to each other, such as determining the average hourly efficiency across all robotic arms in the factory.
 
 ## Sync and contextualize IoT and business system data
 
@@ -37,6 +37,7 @@ Azure Digital Twins provides ways to visualize your environment in two or three 
 
 Azure Digital Twins Explorer is a **2D interface** that can help you build and interact with your graph. Here's an example of the graph for the module scenario shown in Azure Digital Twins Explorer.
 
+:::image type="content" source="../media/1-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/1-3-factory-graph.png":::
 
 Azure Digital Twins 3D Scenes Studio (preview) is an **immersive visual 3D environment**, where end users can monitor, diagnose, and investigate operational digital twin data with the visual context of 3D assets. With a digital twin graph and curated 3D model, subject matter experts can leverage the studio's low-code builder to map the 3D elements to digital twins in the Azure Digital Twins graph, and define UI interactivity and business logic for a 3D visualization of a business environment. The 3D scenes can then be consumed in the hosted 3D Scenes Studio, or in a custom application that leverages the embeddable 3D viewer component. Here's an example of the module scenario as a scene in 3D Scenes Studio.
 
