@@ -48,22 +48,10 @@ TODO: describe the experience without the product
  -->
 TODO: describe the business impact
 
-<!-- 5. References (optional) ----------------------------------------------------
+## References
 
-    Goal: Provide a few recommendations for further study via a bulleted list of links. This is optional and intended to be used sparingly.        - use the target page title as the text for your link
-        - do not include other text such as a description
-        - prefer other first-party sites like Docs reference pages
-        - link to third-party sites only when they are trusted and authoritative
-        - do not link to other Learn content ("next steps" recommendations are generated automatically)
-        - avoid linking to opinion sites such as blog posts
-
-    Heading: "## References"
-
-    Example:
-        "## References
-          * [Administrator role permissions in Azure Active Directory](https://docs.microsoft.com/azure/active-directory/users-groups-roles/directory-assign-admin-roles)
-          * [What is Azure role-based access control (Azure RBAC)?](https://docs.microsoft.com/azure/role-based-access-control/overview)
-          * [Manage access to billing information for Azure](https://docs.microsoft.com/azure/billing/billing-manage-access)"
- -->
-
-<!-- Do not include any other content -->
+* [Kusto Query Language overview](/azure/data-explorer/kusto/query/)
+* [Log queries in Azure Monitor](/azure/azure-monitor/logs/log-query-overview)
+* [Kusto Query Language in Microsoft Sentinel](/azure/sentinel/kusto-overview)
+* [Understanding the Azure Resource Graph query language](/azure/governance/resource-graph/concepts/query-language)
+* [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview?view=o365-worldwide)

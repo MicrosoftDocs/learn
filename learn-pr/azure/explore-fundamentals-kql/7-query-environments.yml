@@ -9,8 +9,7 @@ metadata:
   author: YaelSchuster
   ms.author: yaschust
   ms.topic: interactive-tutorial
-  ms.prod: TODO
-  ms.service: TODO
+  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/7-query-environments.md)]

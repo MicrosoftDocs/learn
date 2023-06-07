@@ -6,41 +6,35 @@ There are several products that use KQL and offer free environments for practici
 
 ### Azure Data Explorer help cluster
 
-Azure Data Explorer offers a help cluster with different types of data preloaded. You can also create your own free cluster and ingest data for further exploration.
-
+Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
 This environment requires a Microsoft account or an Azure Active Directory user identity.
 
 > [!div class="nextstepaction"]
-> [Azure Data Explorer help cluster](https://dataexplorer.azure.com/clusters/help).
+> [Azure Data Explorer help cluster](https://dataexplorer.azure.com/clusters/help)
 
 ### Log Analytics demo environment
 
+The Log Analytics demo environment is accessed through the **Logs** blade in the Azure portal.
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
 > [!div class="nextstepaction"]
-> [Log Analytics demo environment](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade).
+> [Log Analytics demo environment](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade)
 
 ### Azure Resource Graph Explorer
 
+The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
 > [!div class="nextstepaction"]
-> [Azure Resource Graph Explorer](https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/).
+> [Azure Resource Graph Explorer](https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/)
 
 ## Sample queries
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
-
-
 ### [Log Analytics](#tab/log-analytics)
-
-
 
 ### [Azure Resource Graph](#tab/azure-resource-graph)
 
-
-
 ---
 
-More text
