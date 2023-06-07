@@ -27,7 +27,7 @@ There are three assessment types that you can create using the **Azure Migrate: 
 
     It supports SQL Server deployments running in VMware, Microsoft Hyper-V, and physical environments, in addition to IaaS services of other public clouds. It provides an agentless discovery, cost estimation and optimal Azure SQL configuration. It does require an Azure Migrate appliance that you deploy on-premises. This tool is suitable for workloads where you need to assess the readiness of both virtual machines and physical servers, not limited to just SQL Servers.
          
-    :::image type="content" source="../media/5-azure-migrate-2.png" alt-text="Screenshot of the Azure Migrate: Discovery and assessment tool in Azure Migrate dashboard." lightbox="../media/2-azure-migrate.png":::
+    :::image type="content" source="../media/5-azure-migrate-2.png" alt-text="Screenshot of the Azure Migrate: Discovery and assessment tool in Azure Migrate dashboard." lightbox="../media/5-azure-migrate-2.png":::
 
     During the discovery phase, **SQL Server discovery and assessment** can also be used to scan the network and identify all SQL Server instances and features used within your organization. This may provide valuable insights into your existing SQL Server environment, enabling you to assess the readiness and scope of your migration project.
 
