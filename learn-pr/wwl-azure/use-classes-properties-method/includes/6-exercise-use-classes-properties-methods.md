@@ -2,7 +2,7 @@
 
 This exercise is a chance for you to practice putting it all together before moving on to your Guided Project.
 
-##Objectives
+## Objectives
 
 - Define properties in a class.
 - Define a method in a class.
@@ -10,7 +10,7 @@ This exercise is a chance for you to practice putting it all together before mov
 - Define an overloaded method.
 - Add a static/global method to the class library.
 
-##Exercise
+## Exercise
 
 1.	Open Visual Studio Community.
 
@@ -23,8 +23,6 @@ This exercise is a chance for you to practice putting it all together before mov
 1.	In the Solution Explorer window, right-click on your project and select “Add” -> “Class”.
 
 1.	Name your class *House* and select “Add”.
-
-INSERT SCREENSHOT
 
 1.	In the House class, create two private fields: _numberOfRooms and _squareFootage.
 
@@ -253,5 +251,5 @@ INSERT SCREENSHOT
 
 ![Screenshot showing Visual Studio output.](../media/output-sqrfeet.jpg)
 
-##Recap
+## Recap
 This exercise gave you a chance to put many of the things you learned into practice. You created a class that has methods and properties and then used that class from your Program.cs file. I hope you notice that although methods typically perform actions on an object, they can also set and get data without performing an action, as in your GetNumberOfRooms and SetNumberOfRooms methods. In addition to methods and properties, you created an overridden method and a static method. Congratulate yourself on learning several skills that are fundemental to creating an object-oriented program!

@@ -4,7 +4,7 @@ All of the members introduced in this lesson so far have been instance members. 
 
 A class can also contain class members, as opposed to instance members. Class members pertain to the class itself, rather than to a particular instance of a class. For example, the House class might have a buiderID field that defines a shared builder identification number that all houses must have. By using static (often referred to as global) members you can access these methods globally, or outside of the context of a specific instance, by any object in your application.
 
-##Defining Static Members
+## Defining Static Members
 
 In object oriented-programming, we call the accessibility or "visibility" of objects and their members scope. A program consists of objects that contain other objects that can have varying levels of accessibility. The accessibility or visibility of objects is based on their access modifier (public, private, etcetera), objects may not always be accessible.
 
@@ -44,7 +44,7 @@ public class House
     // Plus other members.
 }
 ```
-##Accessing Static Members
+## Accessing Static Members
 
 The way you access static members is different from the way you access instance members.
 
@@ -56,7 +56,7 @@ The following example shows how to access static properties and methods on the H
 - Calls the AddHouseToDevProject method to increase the number of houses in the development by one in the numberOfHouses field.
 - Uses the GetNumberOfHouses property to get the number of houses in the development and display it.
 
-####Static example
+#### Static example
 ```CSharp
 House.HousingdevelopmentBuilder = “American Builders”;
 
@@ -65,8 +65,9 @@ House.AddHousesToDevProject();
 
 The important thing to remember here is that in this code the House class hasn't been instantiated. Previously, you have been used to working with classes by instantiating them as described here.
 
-####Instantiate example
+#### Instantiate example
 ```CSharp
+
 House house = new House();
 
 house.HousingDevelopmentBuilder = "American Builder";
@@ -75,7 +76,3 @@ house.AddHouseToDevProject();
 ```
 
 As you can see, in the static example the House class isn't "newing" or creating an instance of the House object. It only uses the class name followed by the static method name to access the property or method. The House class isn't being instantiated.
-
-Question: Can you think of an example of a static member you might use at work?
-
-Question: Have you ever used MessageBox? Did you instantiate the MessageBox class before it used the Show method? Why not?

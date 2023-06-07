@@ -4,7 +4,7 @@ Suppose you have created your classes and defined the necessary methods and prop
 
 The purpose of this lesson is to show you how to use a class and access the properties and the methods of that class. After you implement properties and methods in a class, you can then use the class in your application to track information about your objects, and perform actions on the objects.
 
-##Objectives
+## Objectives
 
 After completing this lesson, you'll be able to:
 - Instantiate a class

@@ -2,7 +2,7 @@
 
 When you have finished defining a class, you're ready to start creating instances and invoking properties, methods, and any other accessible members on the instances.
 
-##Declaring an Object from a Class
+## Declaring an Object from a Class
 
 In order to create an object, you must declare a variable of the class type you'll store in the variable.
 
@@ -11,7 +11,7 @@ The following example declares a variable myCustomer of type Customer. The Custo
 Customer myCustomer;
 ```
 
-##Creating an Instance of a Class
+## Creating an Instance of a Class
 
 To allocate memory and create an instance of a class, use the new operator followed by the class type that you want to create an instance of. Lastly, you can provide any parameters that you want to pass into the constructor. The constructor returns the new instance of the class.
 
@@ -27,4 +27,11 @@ You can also declare and instantiate a class in a single line of code. The follo
 ```CSharp
 Customer myCustomer = new Customer(param1, param2);
 ```
-Question: Can you call a method in a class after you have finished declaration?
+
+&nbsp;
+## Check your knowledge
+
+## Multiple Choice
+Can you call a method in a class after you have finished declaration?
+( ) Yes. {{Incorrect. You cannot call a method until it has been declared.}}
+(x) No. {{Correct. Declaring a class introduces a new variable to your application, but does not create it without instantiaion unless it is static.}}

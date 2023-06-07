@@ -4,12 +4,10 @@ title: Static Properties and Methods
 metadata:
   title: Static Properties and Methods
   description: "This unit describes how the static keyword affects class members."
-  ms.date: 06/01/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 20
 content: |
   [!include[](includes/5-examine-shared-static-properties-methods.md)]
-interactive: csharp
