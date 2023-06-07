@@ -22465,6 +22465,36 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/how-azure-lab-services-works.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/what-is-azure-lab-services.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/when-to-use-azure-lab-services.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/index.md",
     "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
     "redirect_document_id": false
@@ -22495,6 +22525,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/7-summary.md",
     "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
     "redirect_document_id": false
@@ -22521,6 +22556,11 @@
   },
   {
     "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/4-when-to-use-azure-devtest-labs.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/5-knowledge-check.md",
     "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
     "redirect_document_id": false
   },
@@ -22556,6 +22596,11 @@
   },
   {
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/5-exercise-configure-claim-development-vm.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/6-knowledge-check.md",
     "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
     "redirect_document_id": false
   },
