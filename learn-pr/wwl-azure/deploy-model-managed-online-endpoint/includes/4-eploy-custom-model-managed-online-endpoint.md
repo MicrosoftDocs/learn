@@ -52,7 +52,7 @@ Your deployment requires an execution environment in which to run the scoring sc
 
 You can create an environment with a Docker image with Conda dependencies, or with a Dockerfile.
 
-To create an environment using a base Docker image, you can define the Conda dependencies in a `conda.yaml` file:
+To create an environment using a base Docker image, you can define the Conda dependencies in a `conda.yml` file:
 
 ```yml
 name: basic-env-cpu
@@ -73,7 +73,7 @@ from azure.ai.ml.entities import Environment
 
 env = Environment(
     image="mcr.microsoft.com/azureml/openmpi3.1.2-ubuntu18.04",
-    conda_file="./src/conda-env.yml",
+    conda_file="./src/conda.yml",
     name="deployment-environment",
     description="Environment created from a Docker image plus Conda environment.",
 )

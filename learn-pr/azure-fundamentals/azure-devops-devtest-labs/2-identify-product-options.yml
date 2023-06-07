@@ -8,7 +8,7 @@ metadata:
   author: Randall-Knapp
   ms.author: rknapp
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 azureSandbox: false
 content: |

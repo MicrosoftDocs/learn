@@ -11,7 +11,7 @@ metadata:
   ms.reviewer: adchukwu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure-iot-central
 durationInMinutes: 5
 content: |
 quiz:

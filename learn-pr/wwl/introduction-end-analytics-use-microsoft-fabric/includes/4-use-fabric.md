@@ -26,7 +26,7 @@ If you'd like to check to see if you have access to Fabric in your organization'
 
 If you have admin privileges, you can access the **Admin center** from the **Settings** menu in the upper right corner of the Power BI service. From here, you enable Fabric in the **Tenant settings.**
 
-Admins have the option to make Fabric available to either the entire organization or specific groups of users, who can be organized based on their Microsoft 365 or Azure Active Directory security groups. Admins can also *delegate* the ability to enable Fabric to other users, at the capacity level.
+Admins can make Fabric available to either the entire organization or specific groups of users, who can be organized based on their Microsoft 365 or Azure Active Directory security groups. Admins can also *delegate* the ability to enable Fabric to other users, at the capacity level.
 
 ![Screenshot of the Enable Fabric settings in the Power BI admin portal, with the option toggled to enabled for specific security groups.](../media/enable-fabric.png)
 

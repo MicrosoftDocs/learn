@@ -72,7 +72,7 @@ We're going to use the debugger a lot, so let's create a launch configuration fo
 
 1. On the **Run** tab in Visual Studio Code, select **Add Configuration**. 
 
-   Visual Studio code creates the `.vscode/launch.json` configuration file in your project and opens the launch file for editing.
+   Visual Studio Code creates the `.vscode/launch.json` configuration file in your project and opens the launch file for editing.
 
    :::image source="../media/launch-configuration.png" alt-text="Screenshot of generated launch configuration.":::
 

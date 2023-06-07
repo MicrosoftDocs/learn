@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Build and operate machine learning solutions with Azure Machine Learning
 prerequisites: |
   This learning path assumes that you have experience of training machine learning models with Python and open-source frameworks like Scikit-Learn, PyTorch, and Tensorflow. If not, you should complete the [Create machine learning models](/training/paths/create-machine-learn-models/) learning path before starting this one.
