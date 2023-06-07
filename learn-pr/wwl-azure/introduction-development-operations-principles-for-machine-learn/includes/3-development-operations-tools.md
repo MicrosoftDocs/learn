@@ -34,4 +34,4 @@ The essential idea with Git is distributing the source control, meaning that eve
 To work on a project simultaneously, Git offers trunk-based development with **branching** capabilities. By creating branches for your code project, you can edit the code without touching the main copy of the project. Once you complete your changes to the code, you can merge it with the main copy, for example via a pull request.
 
 > [!TIP]
-> Learn more about [source control systems with Microsoft Learn](/training/modules/describe-types-of-source-control-systems/)
+> Learn more about [source control systems with Microsoft Learn](/learn/modules/describe-types-of-source-control-systems/)
