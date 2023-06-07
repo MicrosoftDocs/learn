@@ -8,7 +8,7 @@ Azure Cosmos DB for PostgreSQL provides the ability to quickly scale your databa
 
 On the **Scale** blade, you can configure the number of worker nodes and the compute and storage size for each. When migrating from a single-node database, you can typically start with two nodes and expand to more workers over time as application performance and growth requires.
 
-It's essential to remember that this step only adds worker nodes. It doesn't distribute data to the new worker nodes. Depending on the size of the compute and storage assigned to the single-node cluster, scaling to multiple nodes may require a server restart, resulting in downtime, if the coordinator compute cores and storage size need to change. The single-node development database you created for Tailspin Toys uses a compute size of 4 vCores with 16 GiB and 512 GiB of storage. This configuration meets the minimum coordinator node size for a multi-node cluster, so you can horizontally scale the database without downtime.
+It's essential to remember that this step only adds worker nodes. It doesn't distribute data to the new worker nodes. Depending on the size of the compute and storage assigned to the single-node cluster, scaling to multiple nodes may require a server restart, resulting in downtime, if the coordinator compute cores and storage size need to change. The single-node development database you created for Tailspin Toys uses a compute size of four vCores with 16 GiB and 512 GiB of storage. This configuration meets the minimum coordinator node size for a multi-node cluster, so you can horizontally scale the database without downtime.
 
 ## Distribute and colocate table data
 
@@ -18,9 +18,9 @@ Colocation of related table data should also be configured to allow tenant-speci
 
 ![Diagram of table colocation represented by data from different tables being in separate clouds based on the store_id.](../media/multitenant-colocation.png)
 
-Colocating Tailspin Toys' tables by store has the following advantages:
+Colocating Tailspin Toys tables by store has the following advantages:
 
-- It provides SQL coverage for capabilities such as foreign keys and joins.
+- It provides SQL coverage for capabilities like foreign keys and joins.
 - Transactions for a single store are localized on the single worker node where the store's data is housed.
 - It allows for single-digit millisecond query performance by routing queries for a single store to a single node, optimizing network hops while still scaling compute and memory.
 - As the number of stores grows, you can scale the database by adding nodes and rebalancing tenant shards to the new nodes.
@@ -28,13 +28,13 @@ Colocating Tailspin Toys' tables by store has the following advantages:
 
 ### Determine the order of table distribution
 
-Tables that define or are referenced by foreign keys present some challenges that must be considered when distributing the table. The `orders`, `products`, and `line_items` tables in the Tailspin Toys database define foreign key relationships with one or more tables. The order in which you distribute each table matters, as you must account for these foreign key constraints. For example, running the following command to distribute the `orders` table results in an error.
+Tables that define or are referenced by foreign keys present some challenges that must be considered when distributing the table. The `orders`, `products`, and `line_items` tables in the Tailspin Toys database define foreign key relationships with one or more tables. The order in which you distribute each table matters, because you must account for these foreign key constraints. For example, running the following command to distribute the `orders` table results in an error.
 
 ```sql
 SELECT create_distributed_table('orders', 'store_id');
 ```
 
-When a table being distributed has foreign key constraints, you must first distribute the table referenced by the foreign key. Continuing with the example above, you must distribute `stores` before attempting to distribute `orders`. Trying to distribute the tables in reverse order raises the error displayed below.
+When a table being distributed has foreign key constraints, you must first distribute the table referenced by the foreign key. Continuing with the example, you must distribute `stores` before you attempt to distribute `orders`. Trying to distribute the tables in reverse order raises the following error:
 
 ```text
 ERROR: referenced table "stores" must be a distributed table or a reference table
@@ -73,7 +73,7 @@ ERROR: relation stores is referenced by a foreign key from line_items
 DETAIL: foreign keys from a regular table to a distributed table are not supported.
 ```
 
-When distributing tables concurrently, all relationships on the table are inspected. Table distribution is prevented for any tables with relationships to non-distributed or non-reference tables. Your only option to get around this constraint is to drop all foreign key constraints for each table and recreate them after the distribution process completes.
+When distributing tables concurrently, all relationships on the table are inspected. Table distribution is prevented for any tables with relationships to non-distributed or non-reference tables. Your only option to get around this constraint is to drop all foreign key constraints for each table and re-create them after the distribution process completes.
 
 To use `create_distributed_table_concurrently()` to distribute the `stores` table, you must first drop any foreign key references from all other non-distributed tables, as follows:
 
@@ -96,7 +96,7 @@ Once the foreign key constraints have been removed, you can then distribute the 
 SELECT create_distributed_table_concurrently('stores', 'store_id');
 ```
 
-To complete the table distribution for the remaining tables, you must drop each foreign key constraint, distribute the tables, and recreate the foreign key constraints after all tables are distributed.
+To complete the table distribution for the remaining tables, you must drop each foreign key constraint, distribute the tables, and re-create the foreign key constraints after all tables are distributed.
 
 The `create_distributed_table_concurrently()` function allows write operations to the database to continue but can take substantially longer to execute than `create_distributed_table()`. The database won't enforce referential integrity during the time it takes to distribute the tables because you were forced to drop foreign key constraints.
 
@@ -112,7 +112,7 @@ The `created_distributed_table()` function:
 The `create_distributed_table_concurrently()` function:
 
 - Doesn't block table writes.
-- Won't work if there are any foreign key constraints where the data doesn't reside on the same node. The workaround is to drop any foreign key constraints and recreate them after the data has been distributed.
+- Won't work if there are any foreign key constraints where the data doesn't reside on the same node. The workaround is to drop any foreign key constraints and re-create them after the data has been distributed.
 - Can't be executed inside of a transaction.
 - Drawbacks include the loss of referential integrity during distribution and that it takes longer to execute.
 
@@ -120,13 +120,13 @@ The `create_distributed_table_concurrently()` function:
 
 Each distribution method has its advantages but also introduces some impacts on the operation of the production multitenant SaaS application. Using `create_distributed_table()` will block new transactions from entering the system while it runs but preserves referential integrity throughout the process. The `create_distributed_table_concurrently()` function allows the application to continue writing to the database but introduces the possibility of referential integrity not being enforced while table data is being distributed. To minimize application disruption and reduce risk, you can use a combination of the two methods to distribute the tables in the Tailspin Toys database.
 
-`Stores` is a small table that isn't updated often. Distributing this table using `create_distributed_table()` blocks write operations. However, because they're infrequent and the table distribution will happen quickly, this might fall within the acceptable level of possible application disruption to take this approach. From above, you know that `stores` can be distributed using `create_distributed_table()` without needing to drop any foreign keys on the other tables. Given these conditions, a possible trade-off would be to distribute the `stores` table using `create_distributed_table()`.
+`Stores` is a small table that isn't updated often. Distributing this table using `create_distributed_table()` blocks write operations. However, because they're infrequent and the table distribution will happen quickly, this might fall within the acceptable level of possible application disruption to take this approach. As described earlier, you know that `stores` can be distributed using `create_distributed_table()` without needing to drop any foreign keys on the other tables. Given these conditions, a possible trade-off would be to distribute the `stores` table using `create_distributed_table()`.
 
 ```sql
 SELECT create_distributed_table('stores', 'store_id');
 ```
 
-With `stores` now distributed, you need to consider how to approach the other tables. Using `create_distributed_table_concurrently()` will still require dropping and recreating foreign keys on each table, so distributing the `stores` table hasn't eliminated that requirement.
+With `stores` now distributed, you need to consider how to approach the other tables. Using `create_distributed_table_concurrently()` will still require dropping and re-creating foreign keys on each table, so distributing the `stores` table hasn't eliminated that requirement.
 
 Products is a larger table than `stores`, but may also be a candidate to distribute with `create_distributed_table()`. Like `stores`, the impact of blocking writes to this table is slight. You can distribute the `products` table data by running the following:
 
@@ -134,9 +134,9 @@ Products is a larger table than `stores`, but may also be a candidate to distrib
 SELECT create_distributed_table('products', 'store_id', colocate_with => 'stores');
 ```
 
-The `stores` and `products` tables share the same distribution column, so colocation happens implicitly. If desired, however, you can also explicitly specify colocation using the `colocate_with` option of the `create_distributed_table()` function, as in the above example.
+The `stores` and `products` tables share the same distribution column, so colocation happens implicitly. If desired, however, you can also explicitly specify colocation using the `colocate_with` option of the `create_distributed_table()` function, as in the preceding example.
 
-The `orders` and `line_items` tables are the largest tables in the database and are the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. Using `create_distributed_table_concurrently()`, you'll have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys you need to drop and slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then recreate the foreign key reference to `stores`.
+The `orders` and `line_items` tables are the largest tables in the database and are the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. Using `create_distributed_table_concurrently()`, you'll have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys you need to drop and slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then re-create the foreign key reference to `stores`.
 
 ```sql
 -- Drop the foreign key to the stores table
@@ -149,14 +149,14 @@ ALTER TABLE line_items
 
 SELECT create_distributed_table_concurrently('orders', 'store_id', colocate_with => 'stores');
 
--- Recreate the foreign key to the stores table
+-- Re-create the foreign key to the stores table
 ALTER TABLE orders
     ADD CONSTRAINT orders_store_id_fkey FOREIGN KEY (store_id) REFERENCES stores (store_id);
 ```
 
-Usually, you would want to run the above statements in a transaction to reduce further the risk of not enforcing referential integrity when the table data is being distributed. However, `create_distributed_table_concurrently()` can't be run inside a transaction, so this isn't possible at this time.
+Usually, you would want to run these statements in a transaction to reduce further the risk of not enforcing referential integrity when the table data is being distributed. However, `create_distributed_table_concurrently()` can't be run inside a transaction, so this isn't possible at this time.
 
-Recreating the foreign key to the `line_items` table can't happen until after that table is also distributed. Its distribution would follow the same pattern, dropping any foreign key constraints, distributing the table, and recreating the foreign keys.
+Re-creating the foreign key to the `line_items` table can't happen until after that table is also distributed. Its distribution would follow the same pattern, dropping any foreign key constraints, distributing the table, and re-creating the foreign keys.
 
 A best practice to use after all of your tables are distributed is to truncate the local rows of those tables still residing on the coordinator node. You can do this by running `truncate_local_data_after_distributing_table()`. You can't run this until after the related tables are all distributed because foreign key constraints cause an error.
 
@@ -164,7 +164,7 @@ A best practice to use after all of your tables are distributed is to truncate t
 SELECT truncate_local_data_after_distributing_table('stores');
 ```
 
-You only need to run this on `stores`, as it will automatically cascade to other related local tables, truncating the `orders`, `products`, and `line_items` local tables. Truncating local coordinator node table data is safe for distributed tables because their rows, if any, are copied to worker nodes during distribution.
+You only need to run this on `stores`, because it will automatically cascade to other related local tables, truncating the `orders`, `products`, and `line_items` local tables. Truncating local coordinator node table data is safe for distributed tables because their rows, if any, are copied to worker nodes during distribution.
 
 ## Understand the impact of some tables being distributed while others aren't
 

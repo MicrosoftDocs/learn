@@ -79,7 +79,7 @@ This information provided by this query can help identify tenants to isolate, sh
 
 ## Identify tenants using the most storage space
 
-Determining the amount of storage space used per tenant in the Tailspin Toys database requires using several built-in Citus functions. The example query below uses a common table expression or CTE to calculate the percentage of the `orders` table size comprised by each tenant. The CTE is then referenced to retrieve the `shardid` associated with each store and calculate the percentage of storage space used as a function of the overall `orders` table size. In addition, the percentage of storage used in the shard is determined.
+Determining the amount of storage space used per tenant in the Tailspin Toys database requires using several built-in Citus functions. The following example query uses a common table expression (CTE) to calculate the percentage of the `orders` table size for by each tenant. The CTE is then referenced to retrieve the `shardid` associated with each store and calculate the percentage of storage space used as a function of the overall `orders` table size. In addition, the percentage of storage used in the shard is determined.
 
 ```sql
 -- Get the percentage of table and shard size per tenant

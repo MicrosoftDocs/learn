@@ -4,13 +4,13 @@ To improve resource allocation and make guarantees of tenant quality of service 
 
 Now that you have completed migrating Tailspin Toys' database to a multi-node instance, you want to isolate their largest and most active tenant to a dedicated node in the cluster to reduce resource contention. You first want to scale your cluster by adding a new worker node to accomplish this.
 
-1. Open the [Azure portal](https://portal.azure.com/) in a web browser and navigate to your **Azure Cosmos DB for PostgreSQL Cluster** resource.
+1. In the [Azure portal](https://portal.azure.com/), go to your **Azure Cosmos DB for PostgreSQL Cluster** resource.
 
 2. On the **Azure Cosmos DB for PostgreSQL Cluster** page, select **Scale** under **Settings** in the left-hand navigation menu, expand the **Node count** dropdown on the **Scale** blade, and increase the node count **3 nodes**, then select **Save**.
 
     ![Screenshot of the Azure Cosmos DB for PostgreSQL Cluster Scale blade in the Azure portal. Three nodes are selected for the node count and the save button is highlighted.](../media/cosmos-db-postgresql-scale-3-nodes.png)
 
-    Once your new node has been successfully added, it will be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You'll use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node below.
+    After your new node is successfully added, it will be available in the system. However, no tenants are stored on it yet, and no queries will be run there. You'll use built-in functions to relocate Tailspin Toys' most active tenant to the new worker node.
 
 ## Connect to the database using psql in the Azure Cloud Shell
 
@@ -20,7 +20,7 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
     ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
-2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string to use later.
 
 3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
@@ -28,7 +28,7 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
     The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
-4. In the Cloud Shell pane, ensure **Bash** is selected for the environment, then use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following:
+4. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -68,7 +68,7 @@ To help reduce resource contention in the database, Tailspin Toys has requested 
     LIMIT 5;
     ```
 
-3. Another approach, which takes advantage of the `citus_shards` view and `get_shard_id_for_distribution_column()` function, is to calculate the percentage of table and shard sizes occupied by each tenant. For example, run the query below against the `orders` table to view the top five stores by space occupied:
+3. Another approach, which takes advantage of the `citus_shards` view and `get_shard_id_for_distribution_column()` function, is to calculate the percentage of table and shard sizes occupied by each tenant. For example, run the following query against the `orders` table to view the top five stores by space occupied:
 
     ```sql
     -- Get the percentage of table and shard size per tenant
@@ -93,7 +93,7 @@ To help reduce resource contention in the database, Tailspin Toys has requested 
     LIMIT 5;
     ```
 
-    Based on the output of this query and the others above, store `5` is the largest and most active tenant in the Tailspin Toys database. Viewing the percentages from the above query, that store makes up 21% of table space and 96% of the shard. Those values make it an ideal candidate for isolation.
+    Based on the output of this query and the others above, store `5` is the largest and most active tenant in the Tailspin Toys database. Viewing the percentages from the query, that store makes up 21% of table space and 96% of the shard. Those values make it an ideal candidate for isolation.
 
 ## Isolate Tailspin Toys' largest tenant into a new shard
 
@@ -117,7 +117,7 @@ The output from running `isolate_tenant_to_new_shard()` provides the ID of the n
 
 To improve resource allocation and better provide guarantees of tenant quality of service in the Tailspin Toys multi-tenant SaaS application, you want to move the largest tenants to dedicated nodes.
 
-1. Before moving a shard to a new node, you must determine what node currently holds that shard. Copy the `shardid` value returned in the previous step, replace the `{INSERT_NEW_SHARD_ID}` token in the query below with the copied value, and then run the query to determine which node holds the new shard.
+1. Before moving a shard to a new node, you must determine what node currently holds that shard. Copy the `shardid` value returned in the previous step, replace the `{INSERT_NEW_SHARD_ID}` token in the following query with the copied value, and then run the query to determine which node holds the new shard.
 
     ```sql
     SELECT nodename, nodeport
@@ -133,7 +133,7 @@ To improve resource allocation and better provide guarantees of tenant quality o
 
     The new node should have a name starting with "private-w2." If you don't see it, wait a minute or two and rerun the query.
 
-3. Finally, call the `citus_move_shard_placement()` function to move the shard to the new worker node you created for this tenant. Before executing the query below, you should replace the following tokens:
+3. Finally, call the `citus_move_shard_placement()` function to move the shard to the new worker node you created for this tenant. Before executing the following query, you should replace the following tokens:
 
    - `{INSERT_NEW_SHARD_ID}` with the `shardid` of the new shard
    - `{CURRENT_HOST_NODE_NAME}` with the name of the node where the shard currently resides (retrieved in step 1 above)
@@ -221,7 +221,7 @@ Congratulations! You've successfully isolated the largest tenant onto a dedicate
 
 It's essential that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used.
 
-1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
+1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
 2. In the left-hand navigation menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group you created as part of the exercise in Unit 3.
 3. In the **Overview** pane, select **Delete resource group**.
 4. Enter the name of the resource group you created to confirm and then select **Delete**.

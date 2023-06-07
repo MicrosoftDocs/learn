@@ -6,7 +6,7 @@ In this module, you prepared tables in a single-node database for distribution a
 
 ## Clean up
 
-To ensure you aren't charged for the configured capacity of the resources you created for the exercises in this module, it's essential that you clean up any provisioned resources. If you didn't delete your resource group in Unit 8 - Exercise - Monitoring and Tenant Isolation, follow these instructions:
+To ensure that you aren't charged for the configured capacity of the resources you created for the exercises in this module, it's essential that you clean up any provisioned resources. If you didn't delete your resource group in Unit 8 - Exercise - Monitoring and Tenant Isolation, follow these instructions:
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
 2. In the left-hand navigation menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group you created as part of the exercise in Unit 3.

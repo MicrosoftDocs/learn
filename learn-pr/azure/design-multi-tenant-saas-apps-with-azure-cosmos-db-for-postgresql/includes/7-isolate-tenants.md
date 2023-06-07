@@ -49,7 +49,7 @@ FROM citus_shards
 WHERE shardid = 102339;
 ```
 
-The above query outputs the following:
+The query outputs the following:
 
 ```text
                               nodename                           | nodeport 
@@ -92,7 +92,7 @@ FROM citus_shards
 WHERE shardid = 102339;
 ```
 
-The above query outputs the following:
+The query outputs the following:
 
 ```text
                               nodename                            | nodeport 

@@ -67,7 +67,7 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
     ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
-2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string for use below.
+2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string to use later.
 
 3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
@@ -158,7 +158,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
 
    The ZIP file contains multiple CSV files containing stores, orders, products, and line item information. You can view the extracted files by running `\! ls` from the command line if you want to see the files.
 
-4. The following `COPY` command loads data from the downloaded `stores.csv` file into the `stores` table you created above and then updates the sequence for the `store_id` column.
+4. The following `COPY` command loads data from the downloaded *stores.csv* file into the `stores` table you created earlier, and then updates the sequence for the `store_id` column:
 
     ```sql
     BEGIN;
@@ -169,7 +169,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
 
     The `WITH CSV HEADER` option provides information about the format of the file being ingested, specifying that it's a CSV file and the first row is a header row.
 
-5. Execute the below command to populate the `products` table. The `products.csv` file doesn't contain a header row, so you remove the `HEADER` option.
+5. Execute the following command to populate the `products` table. The `products.csv` file doesn't contain a header row, so you remove the `HEADER` option.
 
     ```sql
     BEGIN;
@@ -178,7 +178,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-6. For orders and line items, there are multiple CSV files. The `COPY` command can only read a single file at a time, so to avoid making numerous calls, you can use the `FROM PROGRAM` clause to inform the coordinator to retrieve the data files from an application running on the coordinator. You can then use the `cat` application on the coordinator, which combines multiple files. The `cat` command output is passed to the `COPY` command, allowing it to act as a single file for data ingestion. Run the two `COPY` commands below to load the `orders` and `line_items` tables with data from the files.
+6. For orders and line items, there are multiple CSV files. The `COPY` command can only read a single file at a time, so to avoid making numerous calls, you can use the `FROM PROGRAM` clause to inform the coordinator to retrieve the data files from an application running on the coordinator. You can then use the `cat` application on the coordinator, which combines multiple files. The `cat` command output is passed to the `COPY` command, allowing it to act as a single file for data ingestion. Run the two following `COPY` commands to load the `orders` and `line_items` tables with data from the files.
 
     ```sql
     BEGIN;
@@ -215,7 +215,7 @@ In the following tasks, you'll use the `pg_cron` extension for PostgreSQL to run
 
     Press the space bar on your keyboard to display more results if you see `--More--` at the bottom of the output.
 
-2. Inspect the output of the above query, looking for a row where the `extname` value is `pg_cron` to determine if the extension is pre-installed.
+2. Inspect the output of the query, looking for a row where the `extname` value is `pg_cron` to determine if the extension is pre-installed.
 
     ```sql
       oid  |      extname       | extversion 
@@ -229,7 +229,7 @@ In the following tasks, you'll use the `pg_cron` extension for PostgreSQL to run
 
 To correctly measure the impact that transitioning to a multi-node database will have on Tailspin Toys' SaaS application,  you can use a function and scheduled job to simulate customer load on the database as you go through the remainder of the exercises in this module. Placing an artificial workload on the database during the migration process can help you identify potential problems or resource constraints as you migrate the database.
 
-1. You can use a function that accepts the batch size of orders to insert into the database. This function will generate orders with one to three line items, inserting records into the `orders` and `line_items` tables. Execute the command below to create the function.
+1. You can use a function that accepts the batch size of orders to insert into the database. This function will generate orders with one to three line items, inserting records into the `orders` and `line_items` tables. Execute the following command to create the function:
 
     ```sql
     CREATE OR REPLACE FUNCTION create_orders(batch_size int)
@@ -301,11 +301,11 @@ To correctly measure the impact that transitioning to a multi-node database will
 
 ## Add distribution key and backfill missing values
 
-The `store_id` column is the internal identifier for tenants in the Tailspin Toys database, so it's the logical choice for the distribution column on the tables to be distributed. Notice in the schemas you used to create the database tables above that all of the tables except `line_items` contains the `store_id` column.
+The `store_id` column is the internal identifier for tenants in the Tailspin Toys database, so it's the logical choice for the distribution column on the tables to be distributed. Notice in the schemas that you used to create the database tables that all the tables except `line_items` contains the `store_id` column.
 
 To properly distribute and colocate the `line_items` table data with `stores`, `orders`, and `products`, you need to add the `store_id` column to the `line_items` table and backfill the field for each row. Backfilling tables involves denormalizing the table to add the distribution column and then populating the column with the appropriate value.
 
-1. Run the following SQL command from the `psql` prompt to denormalize the `line_items` table and add the `store_id` distribution column:
+1. Run the following SQL command at the `psql` prompt to denormalize the `line_items` table and add the `store_id` distribution column:
 
     ```sql
     ALTER TABLE line_items ADD COLUMN store_id bigint;
@@ -353,7 +353,7 @@ With the distribution column added to each distributed table and the backfilling
 
 The denormalized `line_items` table now includes the `store_id` column, so you need to update the function to ensure that the application is populating that column.
 
-1. Replace the `create_orders()` function with the code below. The two lines following `-- Insert a new line_item row` are updated to include the `store_id` value when inserting new line items into the database.
+1. Replace the `create_orders()` function with the following code. The two lines after `-- Insert a new line_item row` are updated to include the `store_id` value when inserting new line items into the database.
 
     ```sql
     CREATE OR REPLACE FUNCTION create_orders(batch_size int)
@@ -415,15 +415,15 @@ There are approximately four million records in the `line_items` table, plus the
     SELECT count(*) FROM line_items WHERE store_id IS NULL;
     ```
 
-    Continue to execute the above query every minute or two until the count returned is zero. At that point, the table has been successfully backfilled.
+    Continue to execute the query every minute or two until the count returned is zero. At that point, the table has been successfully backfilled.
 
-2. Once all of the `line_items` records have been backfilled, you can disable the `pg_cron` job. To disable the job, you'll need either the `jobid` of the `cron.schedule` job you created above or the `jobname` you assigned. You can retrieve those values from the `cron.job` table by running the following query:
+2. After all the `line_items` records are backfilled, you can disable the `pg_cron` job. To disable the job, you need either the `jobid` of the `cron.schedule` job you created earlier or the `jobname` you assigned. You can retrieve those values from the `cron.job` table by running the following query:
 
     ```sql
     SELECT * FROM cron.job;
     ```
 
-3. Using the output of the above query, locate the job with the command that contains the `backfill_batch()` function. You can copy the `jobid` or `jobname` values to disable the job. The output should look similar to the following:
+3. Using the output of the query, locate the job by using the command that contains the `backfill_batch()` function. You can copy the `jobid` or `jobname` values to disable the job. The output should look similar to the following example:
 
     ```text
      jobid |  schedule   |           command           | nodename | nodeport | database | username | active |    jobname    
@@ -432,7 +432,7 @@ There are approximately four million records in the `line_items` table, plus the
          7 | */1 * * * * | SELECT backfill_batch();    | /tmp     |     5432 | citus    | citus    | t      | backfill
     ```
 
-4. Stop the job using the following command, which uses the `jobname` value from the above query to disable it.
+4. Stop the job by using the following command, which uses the `jobname` value from the query to disable it.
 
     ```sql
     SELECT cron.unschedule('backfill');
@@ -450,7 +450,7 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
     CREATE UNIQUE INDEX CONCURRENTLY line_items_tmp_idx ON line_items (store_id, line_item_id);
     ```
 
-2. With the new unique indexes created, you can now swap out the primary key on each table. Executing these operations in an order that considers the foreign key relationships between tables is best. Run the following command to drop and recreate the constraints on the `orders` table. Note the foreign key doesn't need to be updated, as it already correctly references the `store_id` column in the `stores` table:
+2. With the new unique indexes created, you can now swap out the primary key on each table. Executing these operations in an order that considers the foreign key relationships between tables is best. Run the following command to drop and re-create the constraints on the `orders` table. Note the foreign key doesn't need to be updated, as it already correctly references the `store_id` column in the `stores` table:
 
     ```sql
     BEGIN;
@@ -460,14 +460,14 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
       DROP CONSTRAINT orders_pkey CASCADE,
       ADD CONSTRAINT orders_pkey PRIMARY KEY USING INDEX orders_tmp_idx;
     
-    -- Recreate the foreign key on the line_items table (dropped by CASCADE)
+    -- Re-create the foreign key on the line_items table (dropped by CASCADE)
     ALTER TABLE line_items
       ADD CONSTRAINT line_items_orders_fkey FOREIGN KEY (store_id, order_id) REFERENCES orders (store_id, order_id);
 
     COMMIT;
     ```
 
-    The `DROP CONSTRAINT` statement above includes the `CASCADE` option, which results in the foreign key constraint on the `line_items` table also being dropped. As a result, the transaction includes an `ALTER TABLE` statement on the `line_items` table to recreate the foreign key. Including these within the same transaction ensures there's no time when the constraints aren't enforced.
+    The `DROP CONSTRAINT` statement includes the `CASCADE` option, which results in the foreign key constraint on the `line_items` table also being dropped. As a result, the transaction includes an `ALTER TABLE` statement on the `line_items` table to re-create the foreign key. Including these within the same transaction ensures there's no time when the constraints aren't enforced.
 
 3. Next, repeat the process for the `products` table:
 
@@ -479,7 +479,7 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
       DROP CONSTRAINT products_pkey CASCADE,
       ADD CONSTRAINT products_pkey PRIMARY KEY USING INDEX products_tmp_idx;
 
-    -- Recreate the foreign key on the line_items table (dropped by CASCADE)
+    -- Re-create the foreign key on the line_items table (dropped by CASCADE)
     ALTER TABLE line_items
       ADD CONSTRAINT line_items_products_fkey FOREIGN KEY (store_id, product_id) REFERENCES products (store_id, product_id);
     
@@ -521,4 +521,4 @@ In the Cloud Shell, run the following command to disconnect from your database:
 \q
 ```
 
-You can keep the Cloud Shell open and move on to Unit 4 - Distribute tables with minimal application disruption.
+You can keep Cloud Shell open and move on to the next unit.

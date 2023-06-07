@@ -129,7 +129,7 @@ If you do see locks in the output, you can get more information about specific b
 SELECT * FROM citus_lock_waits;
 ```
 
-The `citus_lock_waits` table provides details about which process is blocked and which process is blocking it. The output, displayed in the extended view below (enabled by running `\x` on the command line), looks similar to the following output:
+The `citus_lock_waits` table provides details about which process is blocked and which process is blocking it. The output, displayed in the following extended view (enabled by running `\x` on the command line), looks similar to the following example:
 
 ```text
 -[ RECORD 1 ]-------------------------+--------------------------------------
@@ -157,7 +157,7 @@ ALTER TABLE line_items
 ALTER TABLE line_items
   ADD CONSTRAINT line_items_store_id_fkey FOREIGN KEY (store_id) REFERENCES stores (store_id);
 
--- Recreate the foreign keys to the orders and products tables
+-- Re-create the foreign keys to the orders and products tables
 ALTER TABLE line_items
   ADD CONSTRAINT line_items_order_fkey FOREIGN KEY (store_id, order_id) REFERENCES orders (store_id, order_id),
   ADD CONSTRAINT line_items_product_fkey FOREIGN KEY (store_id, product_id) REFERENCES products (store_id, product_id);
