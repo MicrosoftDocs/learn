@@ -1,22 +1,23 @@
 In this module, you'll learn about the process of deploying and configuring Azure SQL. Through hands-on exercises, you'll deploy and configure Azure SQL Database specifically. You'll also see comparisons to both Azure SQL Managed Instance and SQL Server. In addition to the Azure portal, you'll work with SQL Server Management Studio (SSMS), Azure Data Studio (including SQL notebooks), and the Azure CLI.
 
-This module is the second module in the learning path about Azure SQL fundamentals. We recommend that you complete the introductory module before continuing.
+This module is the second module in the learning path about Azure SQL fundamentals. We recommend that you complete [the introductory module](/training/modules/azure-sql-intro/) before continuing.
 
 ## Learning objectives
 
 At the end of this module, you'll be able to:  
 
-* Plan for a deployment of Azure SQL
-* Deploy and verify Azure SQL by using common tools and interfaces
-* Configure Azure SQL after deployment
-* Load data into Azure SQL
+* Plan for an Azure SQL deployment.
+* Deploy and verify Azure SQL by using common tools and interfaces.
+* Configure Azure SQL after deployment.
+* Load data into Azure SQL.
 
 ## Prerequisites
 
 * Experience working with, maintaining, and developing with SQL Server
 * Experience with Azure, such as deploying and managing resources
+* An active Azure subscription
 
-For the exercises, we provide a sandbox environment for Azure resources. However, you need to do a few things on your local machine in order to complete the exercises:  
+You need to do a few things on your local machine in order to complete the exercises:  
 
 * Make sure that the machine or virtual machine is running Windows. SSMS is available only on Windows.  
 * Download and install [the latest version of SSMS](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true).
