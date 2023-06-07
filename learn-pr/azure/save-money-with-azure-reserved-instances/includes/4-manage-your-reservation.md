@@ -15,14 +15,14 @@ You can delegate access management for a reservation order in the Azure portal u
 
 The reservation is a child object to the *Reservation Order*. When granting someone permissions, it's best to grant permissions to the reservation order. Access on the order allows the user to make commercial transactions, such as an exchange or refund.
 
-[![Example showing add role assignment.](../media/4-role-assignment.png)](../media/4-role-assignment.png#lightbox)
+:::image type="content" source="../media/4-role-assignment.png" alt-text="Screenshot showing how to add role assignment using access control." lightbox="../media/4-role-assignment.png" :::
 
 ## Change the reservation scope
 
-You can update the reservation scope from a shared scope to a single subscription, or resource group, or vice-versa after the purchase. To update the reservation scope select the reservation. Then select **Settings** > **Configuration** and change the scope.
+You can update the reservation scope from a shared scope to a single subscription, resource group, or vice-versa after the purchase. To update the reservation scope, select the reservation. Then select **Settings** > **Configuration** and change the scope.
 
-Changing the scope doesn’t impact the reservation’s end date, and no new billing transaction takes place.
+Changing the scope doesn’t affect the reservation’s end date, and no new billing transaction takes place.
 
 ## Split or merge existing reservations
 
-Although not commonly done, splitting a reservation enables you to distribute instances for granular scope management. You can split a reservation into two with PowerShell, CLI, or through the API. For more information, see [Split a single reservation into two reservations](/azure/cost-management-billing/reservations/manage-reserved-vm-instance#split-a-single-reservation-into-two-reservations).
+Although not commonly done, splitting a reservation enables you to distribute instances for granular scope management. You can split a reservation by using PowerShell, CLI, or through the API. For more information, see [Split a single reservation into two reservations](/azure/cost-management-billing/reservations/manage-reserved-vm-instance#split-a-single-reservation-into-two-reservations).

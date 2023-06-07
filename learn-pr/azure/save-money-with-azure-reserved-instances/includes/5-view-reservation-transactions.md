@@ -1,4 +1,4 @@
-Billing admins can view payments that were made using APIs, usage data, and in Cost Management.
+Billing administrators can view payments that were made using APIs, usage data, and in Cost Management.
 
 ## Reservation transactions in Cost Management
 
@@ -10,9 +10,9 @@ Enterprise Agreement and Microsoft Customer Agreement billing administrators can
 
 1. Select **Reservation transactions**.
 
-    [![Example showing reservation transactions.](../media/5-reservation-transactions.png)](../media/5-reservation-transactions.png#lightbox)
+    :::image type="content" source="../media/5-reservation-transactions.png" alt-text="Screenshot showing reservation transactions in Cost Management." lightbox="../media/5-reservation-transactions.png" :::
 
-You can also get reservation transactions using the [Transactions API](/rest/api/consumption/reservationtransactions/list).
+You can also get reservation transactions by using the [Transactions API](/rest/api/consumption/reservationtransactions/list).
 
 ## Reservation transactions using Power BI
 
@@ -34,4 +34,4 @@ Enterprise Agreement and Microsoft Customer Agreement customers can get the purc
 
 1. Select all records where **Publisher** = **Azure**.
 
-You can also get usage details data [using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
+You can also get usage details data [by using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).
