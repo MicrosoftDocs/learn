@@ -9,7 +9,7 @@ metadata:
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: azure
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-build-authorization-code-flow.md)]

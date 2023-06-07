@@ -401,6 +401,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/incident-response-with-alerting-on-azure/7-exercise-activity-log-alerts.yml",
+      "redirect_url": "/training/modules/incident-response-with-alerting-on-azure",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
       "redirect_url": "/training/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
       "redirect_document_id": false
@@ -22083,6 +22088,16 @@
       "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/9-exercise-data-explorer.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/8-knowledge-check.yml",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/build-dotnet-app-azure-cosmos-db-nosql/9-summary.yml",
+      "redirect_url": "/training/modules/build-dotnet-app-azure-cosmos-db-nosql/10-summary",
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/wwl-azure/create-deploy-azure-resource-manager-templates/index.md",

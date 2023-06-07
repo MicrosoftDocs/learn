@@ -5,7 +5,7 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check - Python lists
   description: Check your knowledge of Python lists.
-  ms.date: 12/03/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
@@ -14,6 +14,7 @@ metadata:
 durationInMinutes: 1 # user input: the estimate time to complete the unit
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "What symbols are used to start and finish a list?"
     choices:
