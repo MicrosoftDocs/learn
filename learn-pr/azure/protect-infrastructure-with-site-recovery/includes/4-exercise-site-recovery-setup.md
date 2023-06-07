@@ -2,7 +2,7 @@ Azure Site Recovery automates the setup of recovery from one region to another. 
 
 Currently, two VMs are running the company's patient and employee systems. These systems are running in the West US region. You've been asked to protect the infrastructure by enabling it to be recovered to the East US region. Using Azure Site Recovery, you'll enable a Recovery Services vault to replicate the current workloads.
 
-:::image type="content" source="../media/4-environment.svg" alt-text="Diagram showing resources and infrastructure of primary region with storage account, hr-records, patient-records will be replicated in a recovery vault in a recovery region.":::
+:::image type="content" source="../media/4-environment.svg" alt-text="Diagram showing resources and infrastructure of primary region with storage account. The  hr-records, patient-records will be replicated in a recovery vault in a recovery region.":::
 
 In this exercise, you'll complete the setup of Azure Site Recovery using the Azure portal.
 
@@ -15,7 +15,7 @@ In this exercise, you'll complete the setup of Azure Site Recovery using the Azu
 1. If not already signed in, sign in to the [Azure portal](https://portal.azure.com?azure-portal=true) with your credentials.
 
 1. On the Azure portal homepage, under **Azure services**, select **Create a resource**. The **Create a resource** pane appears.
-    :::image type="content" source="../media/azure-homepage.png" alt-text="Diagram showing Azure homepage":::
+    :::image type="content" source="../media/azure-homepage.png" alt-text="Diagram showing Azure homepage.":::
 
 1. In the left pane, select **IT & Management Tools**, then search for **Backup and Site Recovery**.
 
@@ -46,11 +46,11 @@ In this task, you'll replicate the two VMs that you created in the previous unit
 1. In the command bar, select **Replicate**, then select **Azure virtual machines** from the dropdown list. The **Enable replication** pane appears.
 
 1. Enter the following values in the specified tabs, leaving other fields at their default values.
-    1. On the **Source** tab, enter the following values for each settings:
+    1. On the **Source** tab, enter the following values for each setting:
         1. In **Region** enter **(US) West US 2**.
         1. Source resource group add **west-coast-rg**.
     1. On the **Virtual machines** tab, select both VMs **hr-records** and **patient-records**.
-    1. On the **Replication settings** tab, enter the following values for each settings:
+    1. On the **Replication settings** tab, enter the following values for each setting:
         1. In **Target location** enter **(US) East US 2**.
         1. In **Target subscription**, select **Customize**.
         1. In the **Target subscription** field, select your Azure subscription and select **OK**.

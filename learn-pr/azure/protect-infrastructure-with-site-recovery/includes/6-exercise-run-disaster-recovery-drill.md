@@ -52,7 +52,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
     The **Test failover** pane appears.
 
-1. Enter the following values for each setting.:
+1. Enter the following values for each setting:
 
     > [!IMPORTANT]
     > The network configuration failover support for each VM can take several minutes to auto-configure as each VM also needs to complete an initial synchronization. Running a failover test may not be available immediately.
@@ -73,7 +73,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
 1. To begin the failover, select **OK**.
 
-    :::image type="content" source="../media/6-starting-dr-drill.png" alt-text="SScreenshot of the test failover options." lightbox="../media/6-starting-dr-drill.png":::
+    :::image type="content" source="../media/6-starting-dr-drill.png" alt-text="Screenshot of the test failover options." lightbox="../media/6-starting-dr-drill.png":::
 
     The **Recovery Plans (Site Recovery)** pane for the **Recovery Services vault** named *asr-vault* reappears.
 
@@ -91,7 +91,7 @@ In this exercise, you'll complete the steps needed to run a DR drill using a rec
 
     :::image type="content" source="../media/6-dr-drill-results.png" alt-text="Screenshot of the test failover jobs showing their status." lightbox="../media/6-dr-drill-results.png":::
 
-    You'll use the information on this pane to report back to the Ops manager that an Azure failover for your company's current infrastructure will take less than three minutes to complete. These jobs are running in parallel, (rather than a simple sum of all of jobs), to work out the total of time taken.
+    You'll use the information on this pane to report back to the Ops manager that an Azure failover for your company's current infrastructure will take less than three minutes to complete. These jobs are running in parallel (rather than a simple sum of all of jobs), to work out the total of time taken.
 
 1. After all the jobs have completed successfully, on the far left, select **Virtual machines**.
 

@@ -18,7 +18,7 @@ A DR drill is vital to ensure the solution implemented meets the business contin
 
 For example, let's assume your RTO is an hour and the RPO is six hours. If your systems are backed up every hour, that's an hour of lost data plus the additional hour to recover your systems.
 
-Imagine your actual recovery time is five hours. Your systems are now close to being over six hours out of date, which means you'll be in breach of the BCDR RPO objective. Testing the dfinite time it takes to recover from failures can give you confidence that your systems follow your BCDR plans.
+Imagine your actual recovery time is five hours. Your systems are now close to being over six hours out of date, which means you'll be in breach of the BCDR RPO objective. Testing the definite time it takes to recover from failures can give you confidence that your systems follow your BCDR plans.
 
 ## Test failover of individual machines
 
@@ -42,7 +42,7 @@ Create an isolated virtual network so that your production infrastructure isn't 
 
 1. After completion, the failed-over VM appears in the portal under **Virtual Machines** in the recovery region. You can then check that the VM is running, is sized and connected correctly, and is mirroring the source VM but in a different Azure region.
 
-1. After you've validated everything has worked as expected, you can delete the replicated VM by selecting **Cleanup test failover**. At this point, we recommend to add notes about the test outcome.
+1. After you've validated everything has worked as expected, you can delete the replicated VM by selecting **Cleanup test failover**. At this point, we recommend adding notes about the test outcome.
 
 ## Flexible failover of multiple machines
 
