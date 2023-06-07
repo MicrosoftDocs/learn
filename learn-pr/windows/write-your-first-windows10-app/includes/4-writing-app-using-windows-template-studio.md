@@ -2,7 +2,7 @@ Template Studio for WPF is a Visual Studio extension that accelerates the creati
 
 ## What can you do with Template Studio?
 
-Template Studio does the hard work of creating the code you would otherwise have to write manually every time you start writing a UWP app. As long as you have a clear idea of the structure of your app before you begin, you can use the wizard to go step by step through the process of adding features and views to your project. After you're done, you can continue adding code that implements the functionality that's unique to your project.
+Template Studio does the hard work of creating the code you would otherwise have to write manually every time you start writing a WPF app. As long as you have a clear idea of the structure of your app before you begin, you can use the wizard to go step by step through the process of adding features and views to your project. After you're done, you can continue adding code that implements the functionality that's unique to your project.
 
 ## Install Template Studio
 
@@ -12,18 +12,14 @@ If you used the installation script in the *Installing tools automatically* modu
 
 Let's look at the process of creating a hypothetical app by using Template Studio. Feel free to follow along on your own computer.
 
-First, let's sketch out what the app looks like when we're done. It can help to literally sketch on a piece of paper the features the app has, and the way the views are interconnected. For this example, let's imagine we're building a weather forecast app. At the end of this tutorial, we have a skeleton of the app, ready for you to add the important weather-related features.
-
-Here's the rough design drawing:
-
-![Screenshot that shows a sketch of the weather app with menu, weather, map, chart, and settings pages.](../media/weather.png)
+First, let's sketch out the app's features. It can help to literally sketch on a piece of paper the features the app has, and the way the views are interconnected. For this example, let's imagine we're building a weather forecast app. At the end of this tutorial, we have a skeleton of the app, ready for you to add the important weather-related features.
 
 Our app will:
 
 - Use the **Navigation View** control to switch among different views.
 - Show weather symbols for the week on a blank page.
-- Use a map view to show the current weather forecast area.
-- Show a chart of previous weather data.
+- Use a map within a WebView control to show the current weather forecast area.
+- Show the long range forecast by leveraging a list-detail format.
 - Include a Settings page to let the user change settings.
 - Use notifications to warn the user about dangerous weather.
 
