@@ -1,4 +1,4 @@
-Ready to install Visual Studio? Let's do it. Before you start, you'll need to make sure that your computer is running the latest version of Windows 10 or Windows 11.
+Ready to install Visual Studio? Let's do it. Before you start, you need to make sure that your computer is running the latest version of Windows 10 or Windows 11.
 
 To ensure that you're running the latest version of Windows:
 
@@ -28,7 +28,7 @@ To ensure that you're running the latest version of Windows:
 
 ## What the script installs
 
-The script will install the following tools:
+The script installs the following tools:
 
 * Visual Studio
 * Visual Studio Code

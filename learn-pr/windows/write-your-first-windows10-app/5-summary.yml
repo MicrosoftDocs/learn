@@ -3,7 +3,7 @@ title: Summary
 uid: learn-windows.writing-windows-10-apps.5-summary
 metadata:
   title: Summary and knowledge check
-  description: This knowledge check will test your knowledge of the platforms and features you used in this module.
+  description: This knowledge check tests your knowledge of the platforms and features you used in this module.
   ms.date: 12/10/2018
   author: alvinashcraft
   ms.author: aashcraft
@@ -19,7 +19,7 @@ quiz:
     - content: What platform should you use to write Windows apps?
       choices:
       - content: UWP
-        explanation: UWP is best if you want to write apps using Windows features and target additional platforms like Xbox and HoloLens.
+        explanation: UWP is best if you want to write apps using Windows features and target other platforms like Xbox and HoloLens.
         isCorrect: false
       - content: WPF
         explanation: WPF is best if you're making a complex app that targets Windows and want to share library code with other .NET apps.
@@ -39,7 +39,7 @@ quiz:
         explanation: UWP and WPF don't necessarily affect how you handle events. They're platforms, not programming languages.
         isCorrect: false
       - content: UWP apps have access to their own runtime APIs and don't necessarily use .NET.
-        explanation: Correct! The sample apps here are similar because they both use C# and XAML. But you might notice that the XAML controls are just a little bit different.
+        explanation: Correct! The sample apps here are similar because they both use C# and XAML. But you might notice that the XAML controls are slightly different.
         isCorrect: true
     - content: What is Template Studio useful for?
       choices:

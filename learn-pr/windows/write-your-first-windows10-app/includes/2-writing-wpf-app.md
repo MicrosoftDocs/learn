@@ -52,7 +52,7 @@ In this unit, we:
 
     ![Screenshot that shows the Events pane selected in the Properties window, and the Click event in a red box.](../media/wpf-button-events-a.png)
 
-6. We don't enter any code yet, so select **MainWindow.xaml** in the main view. We are continuing to work on the UI for now.
+6. We don't enter any code yet, so select **MainWindow.xaml** in the main view. We're continuing to work on the UI for now.
 
 7. Select the text box you created in the designer to bring up its properties. We're going to make quite a few changes to the properties for the text box. If the events are showing in the **Properties** pane, select the wrench icon next to the name to return to the named properties.
 

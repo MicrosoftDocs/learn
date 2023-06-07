@@ -106,7 +106,7 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
     }
     ```
 
-2. Let's make sure we have all the necessary **using** statements. Check that you have the following, and add them if you don't. In particular, make sure the **using Windows.UI;** statement is there. When you are finished editing the file, you can optionally remove any unnecessary **using** statements that Visual Studio included when it created the project. Unused namespaces appear in gray.
+2. Let's make sure we have all the necessary **using** statements. Check that you have the following, and add them if you don't. In particular, make sure the **using Windows.UI;** statement is there. When you're finished editing the file, you can optionally remove any unnecessary **using** statements that Visual Studio included when it created the project. Unused namespaces appear in gray.
 
     ```csharp
     using System;

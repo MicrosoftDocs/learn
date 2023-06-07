@@ -49,7 +49,7 @@ Those are the three platforms we're going to look at in this module. Before we g
 
 ### WinUI and the Windows App SDK
 
-[WinUI 3](/windows/apps/winui/winui3/) is the native UI platform component that ships with the [Windows App SDK](/windows/apps/windows-app-sdk/) (completely decoupled from Windows SDKs). The Windows App SDK provides a unified set of APIs and tools that can be used to create production desktop apps that target Windows 10 and later, and can be published to the Microsoft Store.
+[WinUI 3](/windows/apps/winui/winui3/) is the native UI platform component that ships with the [Windows App SDK](/windows/apps/windows-app-sdk/) (decoupled from the Windows SDK). The Windows App SDK provides a unified set of APIs and tools that can be used to create production desktop apps that target Windows 10 and later, and can be published to the Microsoft Store.
 
 >[!NOTE]
 >At this time, there are two generations of the Windows UI Library (WinUI): [WinUI 2 for UWP](/windows/apps/winui/winui2/) and WinUI 3 in the Windows App SDK. While both can be used in production-ready apps on Windows 10 and later, each have different development targets. See [Comparison of WinUI 3 and WinUI 2](/windows/apps/winui/#comparison-of-winui-3-and-winui-2).

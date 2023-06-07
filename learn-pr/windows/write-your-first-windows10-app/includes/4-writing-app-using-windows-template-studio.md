@@ -19,7 +19,7 @@ Our app will:
 - Use the **Navigation View** control to switch among different views.
 - Show weather symbols for the week on a blank page.
 - Use a map within a WebView control to show the current weather forecast area.
-- Show the long range forecast by leveraging a list-detail format.
+- Show the long range forecast by using a list-detail format.
 - Include a Settings page to let the user change settings.
 - Use notifications to warn the user about dangerous weather.
 
