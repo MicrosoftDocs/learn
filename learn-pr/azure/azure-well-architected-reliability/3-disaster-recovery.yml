@@ -15,7 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
   - content: 'Which of the following don't need to be part of recovery steps in your DR plan?'
     choices:
     - content: 'How to restore backups.'
@@ -30,7 +29,6 @@ quiz:
     - content: 'How to implement replication from scratch.'
       isCorrect: true
       explanation: 'You don't implement replication from scratch. Most fully featured database products and services include some kind of replication as a tightly integrated feature.'
-
   - content: "Are data replication and data backup the same thing?"
     choices:
     - content: 'Yes.'

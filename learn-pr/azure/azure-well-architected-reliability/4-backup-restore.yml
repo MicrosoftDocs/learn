@@ -15,7 +15,6 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-
   - content: 'Do all Azure data storage options include automatic data backup?'
     choices:
     - content: 'Yes.'
@@ -24,7 +23,6 @@ quiz:
     - content: 'No.'
       isCorrect: true
       explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can also add services like Azure Backup Agent as needed to make sure all your data is protected."
-
   - content: 'Which of the following choices isn't a reason to test backup and restore processes regularly?'
     choices:
     - content: 'Validate the integrity of your backups.'
