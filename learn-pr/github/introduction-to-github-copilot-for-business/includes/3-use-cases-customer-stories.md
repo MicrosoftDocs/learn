@@ -6,7 +6,7 @@
 
 Coyote Logistics, a third-party logistics provider, utilized GitHub Copilot for Business to save developers time and effort, enabling them to focus on more high-value work and less on nitpicky details. "It used to take me 20 or 30 minutes to write a Terraform configuration," Cloud Delivery Engineer Gavin Borgeson says. "Now it saves me 10 minutes." Once Borgeson has written the base configuration, GitHub Copilot for Business is able to fill in the rest of the details.
 
-:::image type="content" border="false" source="../media/3-duo-lingo-app.png" alt-text="Screenshot of a person at a desk on a mobile phone using the Duo Lingo app.":::
+:::image type="content" border="false" source="../media/3-duolingo-app.png" alt-text="Screenshot of a person at a desk on a mobile phone using the Duo Lingo app.":::
 
 **Developers stay in the flow longer** - 73% of developers that were surveyed said GitHub Copilot helps them stay in the flow longer and more easily, and 87% said it helped them preserve mental energy when working through repetitive tasks. Previous research has underscored how disruptive context switching and navigating interruptions can be for developers and how draining repetitive work can be.
 

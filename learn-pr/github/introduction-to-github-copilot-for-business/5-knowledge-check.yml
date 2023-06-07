@@ -17,13 +17,13 @@ quiz:
       choices:
         - content: "VPN Proxy support via self-signed certificates"
           isCorrect: true
-          explanation: VPN Proxy support via self-signed certificates are not supported in GitHub Copilot for Individuals, but is GitHub Copilot for Business.
+          explanation: VPN Proxy support via self-signed certificates is not available with GitHub Copilot for Individuals, but is available with GitHub Copilot for Business.
         - content: "Offers multi-line function suggestions"
           isCorrect: false
           explanation: Offers multi-line function suggestions is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
-        - content: "Plugs right into your editor"
+        - content: "Editor integration"
           isCorrect: false
-          explanation: Plugs right into your editor is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business."
+          explanation: Editor integration is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
         - content: "Blocks suggestions matching public code"
           isCorrect: false
           explanation: Blocks suggestions matching public code is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
