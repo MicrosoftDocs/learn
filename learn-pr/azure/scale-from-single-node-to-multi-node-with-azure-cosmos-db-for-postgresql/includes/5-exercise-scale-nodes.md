@@ -22,7 +22,7 @@ GROUP BY device_id;
 
 You store this SQL in a file and have `pgbench` run the benchmark for some time. It reports its findings periodically so that you can be sure the benchmark is still running. Because `pgbench` is accessing the data created in the previous exercise, this exercise is simulating scaling the Azure Cosmos DB for PostgreSQL cluster while the data is in use.
 
-For this exercise, `pgbench` is set to run for 20 minutes. The scale process may take about 20 minutes.
+For this exercise, `pgbench` is set to run for 20 minutes. The scale process might take up to 20 minutes.
 
 1. Open [Azure Cloud Shell](https://shell.azure.com) from the icon at the top of the Azure portal. From the `bash` prompt, run the following command to store the outlier query in a SQL file.
 
@@ -38,7 +38,7 @@ For this exercise, `pgbench` is set to run for 20 minutes. The scale process may
     ```
 
 1. In the portal above Azure Cloud Shell, go to your Azure Cosmos DB for PostgreSQL cluster.
-1. Under **Settings** in the navigation, select **Connection String**.
+1. On the left menu under **Settings**, select **Connection String**.
 1. Copy the value for **PostgreSQL connection URL**.
 1. In the command line, store the connection URL in a variable named `PGURL`. Use your PostgreSQL connection URL, and be sure to update the password to your password.
 

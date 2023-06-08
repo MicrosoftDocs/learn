@@ -2,16 +2,16 @@ In this exercise, you create tables and seed the data for the sensors database. 
 
 - The `device_types` table has two fields: `device_type_id` and `name`.
 
-   The `device_types` table's primary key is `device_type_id`.
+   The `device_types` table primary key is `device_type_id`.
 
 - The `devices` table has three fields: `device_id`, `device_type_id`, and `name`.
 
-   The `devices` table's primary key is `device_id`.
+   The `devices` table primary key is `device_id`.
 
    A foreign key relationship on the `device_type_id` field references the `device_type_id` field on the `device_types` table.
-- The `events` has three fields: `event_id`, `device_id`, and `payload`.
+- The `events` has four fields: `event_id`, `device_id`, `payload`, and `created_at`.
 
-   The `events` table's primary key is `event_id`.
+   The `events` table primary key is `event_id`.
   
    A foreign key relationship on the `device_id` field references the `device_id` field on the `devices` table.
 
@@ -84,38 +84,39 @@ To create the database:
 
 After the Azure Cosmos DB for PostgreSQL account is created, you need to enable the resource to be accessible to other resources so that you can access the server by using the psql command-line tool in Azure Cloud Shell.
 
-1. After the account is created, select **Go to resource** to go to the Azure Cosmos DB for PostgreSQL account.
+1. In the Azure portal, after the account is created, select **Go to resource** to go to your Azure Cosmos DB for PostgreSQL account.
 1. In the left menu under **Settings**, select **Networking**.
 1. On the **Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox.
 
-    ![Screenshot of Azure Cosmos DB for PostgreSQL networking pane. 'Allow public access from Azure services' is checked and highlighted. The 'Save' button is also highlighted.](../media/cosmos-db-for-postgresql-networking-tab.png)
-1. Select **Save**.
+    :::image type="content" source="../media/cosmos-db-for-postgresql-networking-tab.png" alt-text="Screenshot that shows the option to allow public access selected on the Azure Cosmos DB for PostgreSQL networking pane.":::
+
+1. On the command bar, select **Save**.
 
 ## Connect to the database by using psql in the Azure Cloud Shell
 
-After the Azure Cosmos DB for PostgreSQL cluster is created and the network access rules saved, you can connect to it via Azure Cloud Shell.
+After the Azure Cosmos DB for PostgreSQL cluster is created and the network access rules are saved, you can connect to the cluster by using Azure Cloud Shell.
 
-1. On the navigation menu, under **Settings**, select **Connection String**. Copy the connection string labeled **psql**.
+1. On the left menu under **Settings**, select **Connection String**. Copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. The 'Connection strings' navigation is highlighted. The psql connection string is also highlighted.](../media/psql-connection-string.png)
+    :::image type="content" source="../media/psql-connection-string.png" alt-text="Screenshot that shows the Connection String pane of the Azure Cosmos DB Cluster resource and the psql connection string highlighted.":::
 
-1. Open [Azure Cloud Shell](https://shell.azure.com/) via the navigation bar at the top of the portal.
+1. Open [Azure Cloud Shell](https://shell.azure.com/) by using the global controls at the top of the portal.
 
-    ![Screenshot of the bar that appears at the top of the Microsoft Azure portal. The Azure Cloud Shell button with the command icon is highlighted.](../media/azure-portal-top-bar.png)
+    :::image type="content" source="../media/azure-portal-top-bar.png" alt-text="Screenshot of the bar that appears at the top of the Microsoft Azure portal. The Azure Cloud Shell button with the command icon is highlighted.":::
 
-1. If prompted, select **Bash**.
+1. If you're prompted to select a shell environment, select **Bash**.
 
-    ![Screenshot of Azure Cloud Shell welcome message with a prompt to choose an environment between Bash or PowerShell. Bash is selected.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot that shows the Azure Cloud Shell welcome dialog, with a prompt to choose a shell environment, Bash or PowerShell. Bash is selected.":::
 
-1. If prompted, select the subscription you used for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
+1. If you're prompted to create storage, select the subscription you use for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
 
-    ![Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot that shows the Azure Cloud Shell welcome wizard and no storage mounted. The current subscription appears in the Subscription dropdown.":::
 
-1. Now, use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL. Copy the connection string from Step 1, and paste it into the Cloud Shell. Update the `password` part of the connection string to use the password chosen when creating the Azure Cosmos DB for PostgreSQL cluster. Then, run the command.
+1. To use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL, copy the psql connection string from step 1. Paste it in Cloud Shell. Update the `password` part of the connection string to use the password that you entered when you created the Azure Cosmos DB for PostgreSQL cluster. Then run the command.
 
 ## Create tables
 
-After the account is created, then tables can be added. Use `psql` in Azure Cloud Shell to interact with the database.
+After the account is created, you can add tables. Use psql in Cloud Shell to interact with the database.
 
 The following code creates the `device_types`, `devices`, and `events` tables with their traditional primary key relationships:
 
@@ -153,7 +154,7 @@ Confirm that the tables were created by running the following command:
 \dt
 ```
 
-The output looks like this:
+The output looks like this example:
 
 ```text
            List of relations
@@ -167,7 +168,7 @@ The output looks like this:
 
 ### Create a GIN index for the JSONB
 
-You can create a Generalized Inverted iNdex (GIN) to query JSONB by using fine-grained queries. This level of detail can help the query performance when you query the sensor values on the `events` table. Use the following query to create a GIN on the `payload` field:
+You can create a Generalized Inverted Index (GIN index) to query JSON Binary (JSONB) by using fine-grained queries. This level of detail can help the query performance when you query the sensor values on the `events` table. Use the following query to create a GIN index on the `payload` field:
 
 ```sql
 CREATE INDEX events_payload_idx ON events USING GIN (payload);
@@ -179,7 +180,7 @@ Confirm that the index appears in the **Indexes** list:
 \d events
 ```
 
-You should see something like the following example output in the Indexes section:
+You should see an entry like the following example in the **Indexes** section:
 
 ```text
 "events_payload_idx" gin (payload)
@@ -197,7 +198,7 @@ The results should show zero rows. None of these tables are distributed.
 
 ## Load the data
 
-As you're creating a demo environment to show the Wide World Importers tech leads how to handle the migration of their data, you can set up your environment with simulated data. Keep in mind that the chilly chocolates are best kept at between 55 degrees and 60 degrees Fahrenheit and with 60 percent to 70 percent humidity.
+You're creating a demo environment to show the Wide World Importers tech leads how to handle the migration of their data. You set up your environment by using simulated data. Keep in mind that the chilly chocolates are best kept at between 55 degrees and 60 degrees Fahrenheit, and with 60 percent to 70 percent humidity.
 
 Because of foreign key relationships, the tables are loaded in the following order:
 
@@ -205,7 +206,7 @@ Because of foreign key relationships, the tables are loaded in the following ord
 1. `devices`
 1. `events`
 
-Next, create functions that create fake data.
+Next, create functions that create simulated data.
 
 1. There are two device types. Use the following command to populate the `device_types` table:
 
@@ -236,14 +237,14 @@ Next, create functions that create fake data.
     $$;
     ```
 
-1. Generate some devices and force 42 to be a delivery truck sensor with the following commands:
+1. Generate some devices and force device 42 to be a delivery truck sensor by using the following commands:
 
     ```sql
     CALL create_devices(1000);
     UPDATE devices SET device_type_id = 1 WHERE device_id = 42;
     ```
 
-1. Run the following SQL statements to create a stored procedure to insert a sensor reading with generated simulated readings:
+1. Run the following commands to create a stored procedure that inserts a sensor reading that uses generated simulated readings:
 
     ```sql
     CREATE OR REPLACE PROCEDURE generate_reading(selected_device_id int)
@@ -287,7 +288,7 @@ Next, create functions that create fake data.
     $$;
     ```
 
-1. Run the following SQL statements to create a stored procedure to generate sensor data:
+1. Run the following command to create a stored procedure that generates sensor data:
 
     ```sql
     CREATE OR REPLACE PROCEDURE create_events(batch_size int)
@@ -313,13 +314,13 @@ Next, create functions that create fake data.
     $$;
     ```
 
-1. Generate sensor data with the following command:
+1. Generate sensor data by running the following command:
 
     ```sql
     CALL create_events(10000);
     ```
 
-1. Execute the following commands to verify data was loaded into the `device_types`, `devices`, and `payment_events` tables by using the `COPY` command:
+1. Execute the following commands to verify that data was loaded into the `device_types`, `devices`, and `payment_events` tables:
 
     ```sql
     SELECT COUNT(*) FROM device_types;
@@ -348,7 +349,7 @@ Next, create functions that create fake data.
 
 ## Query the data
 
-You want to look at the events for the devices to make sure they're keeping chilly chocolates in the right temperature and humidity values. The ideal environment for the chilly chocolates is between 55 degrees and 60 degrees Fahrenheit and humidity in the range of 60 percent to 70 percent. Run the following query to look for problems:
+You want to look at the events for the devices to make sure that they're keeping chilly chocolates at the right temperature and humidity values. The ideal environment for the chilly chocolates is between 55 degrees and 60 degrees Fahrenheit, with humidity in the range of 60 percent to 70 percent. Run the following query to look for problems:
 
 ```sql
 SELECT * FROM events 
@@ -356,9 +357,9 @@ WHERE (payload ->> 'humidity')::decimal NOT BETWEEN 60 AND 70
 OR (payload ->> 'temperature')::decimal NOT BETWEEN 55 AND 60;
 ```
 
-This query returns records in a paginated form. You can use the spacebar or down arrow to move forward a page. You can use Enter to move forward a row. After you understand how the data is structured, press `q` to exit the paginated results and return to the Citus prompt.
+This query returns records in a paginated form. You can use the Spacebar or Down arrow to move forward a page. You can use Enter to move forward a row. After you understand how the data is structured, press `q` to exit the paginated results and return to the Citus prompt.
 
-Some devices are running out of acceptable ranges. Are there any devices that are more problematic than others? Try this query:
+Your query results show that some devices are running out of acceptable ranges. Are there any devices that are more problematic than others? Try this query:
 
 ```sql
 SELECT COUNT(event_id), device_id FROM events 
@@ -383,7 +384,7 @@ FROM events
 WHERE device_id=42;
 ```
 
-In the generated sample, the results look like this example:
+In the generated sample, the results look like this example output:
 
 ```text
  lowhumidity | highhumidity | lowtemperature | hightemperature | regularhumidity | regulartemperature 
@@ -391,7 +392,7 @@ In the generated sample, the results look like this example:
            0 |         2739 |              0 |             601 |             599 |               2737
 ```
 
-The output looks like the chilly chocolates near device 42 are on their way to becoming melted chocolates. Wide World Importers need to handle the situation near device 42.
+The output looks like the chilly chocolates near device 42 are on their way to becoming melted chocolates. Wide World Importers needs to correct the problems in the device 42 environment.
 
 Suppose that there was a growth in the number of sensors. Add another 50,000 records by using the following command:
 
