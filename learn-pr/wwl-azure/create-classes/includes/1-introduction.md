@@ -12,3 +12,4 @@ After completing this lesson, you'll be able to:
 - Differentiate between a class and an object
 - Describe the life cycle of a class
 - Organize classes into groups using namespaces
+- I am here
