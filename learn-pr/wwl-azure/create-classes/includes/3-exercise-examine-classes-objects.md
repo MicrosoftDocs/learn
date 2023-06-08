@@ -98,8 +98,8 @@ This exercise has you create a House class and instantiate it, initializing the 
 
         House myHouse = new House("light grey", 2000);
     ```
->> **Note**
->> The namespace is automatically inserted into Program.cs as a "using" statement, meaning that Program.cs is *using* the classes in that namespace. In Visual Studio 2022 the namespace, class, and Main method information is not visible, but exist behind the scene. Because you have already created a class (House) that has this namespace, when you reference it here the namspace is automatically inserted in Program.cs in a *using* statement, letting you know that it is the namespace being used.
+>Note
+>The namespace is automatically inserted into Program.cs as a "using" statement, meaning that Program.cs is *using* the classes in that namespace. In Visual Studio 2022 the namespace, class, and Main method information is not visible, but exist behind the scene. Because you have already created a class (House) that has this namespace, when you reference it here the namspace is automatically inserted in Program.cs in a *using* statement, letting you know that it is the namespace being used.
 
 
 12.	Use Console.WriteLine to display the values you initialized in your object.
