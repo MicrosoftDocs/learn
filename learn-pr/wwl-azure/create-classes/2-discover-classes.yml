@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-classes.introduce-classes
-title: Introduction to Classes
+uid: learn.wwl.create-classes.discover-classes
+title: Discover classes
 metadata:
-  title: Introduction to Classes
+  title: Discover classes
   description: "This unit describes working with classes and objects and how you use them to describe real world objects."
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-introduce-classes.md)]
+  [!include[](includes/2-discover-classes.md)]

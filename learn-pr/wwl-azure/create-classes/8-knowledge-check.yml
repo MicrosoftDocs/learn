@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
@@ -27,7 +27,7 @@ quiz:
     choices:
     - content: "It's a term used to describe an entity or thing."
       isCorrect: false
-      explanation: "Incorrect. While the term object can be used in this way, it is not we mean when we refer to an object in programming."
+      explanation: "Incorrect. While the term object can be used in this way, in computer programming the term refers to the instantiation of a class."
     - content: "A data record that represents a single entity."
       isCorrect: false
       explanation: "Incorrect. An object is not thought of as a data record."

@@ -16,7 +16,7 @@ House house = new House();
 ```
 **Note** The term instance is often used as an alternative to object.
 
-## Exercise-Try It Out
+## Exercise - Try it out
 
 This exercise has you create a House class and instantiate it, initializing the object by passing parameters into the constructor.
 

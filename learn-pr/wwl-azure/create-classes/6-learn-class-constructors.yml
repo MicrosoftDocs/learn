@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.learn-class-constructors
+title: Learn about class constructors
+metadata:
+  title: Learn about class constructors
+  description: "This unit describes what class constructors are and how they're used."
+  ms.date: 06/08/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+durationInMinutes: 12
+content: |
+  [!include[](includes/6-learn-class-constructors.md)]
