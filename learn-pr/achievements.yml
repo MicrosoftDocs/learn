@@ -1437,6 +1437,11 @@ achievements:
   title: Ingest data streams with Azure Stream Analytics
   summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
   iconUrl: /training/achievements/azure-stream-analytics-ingest-data-streams.svg
+- uid: learn.identify-abnormal-time-series-data-anomaly-detector.badge
+  type: badge
+  title: Identify abnormal time-series data with Anomaly Detector
+  summary: Learn how to detect anomalies in real-time from an IoT time-series data stream using univariate Azure Anomaly Detector API. In addition, users will learn how to train an AI model using the multivariate Anomaly Detector API to identify outliers, unexpected data patterns or data that deviate significantly from the norm..
+  iconUrl: /training/achievements/identify-abnormal-time-series-data-anomaly-detector.svg
 - uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.badge
   type: badge
   title: Trigger an Azure Event Grid workflow from an IoT device
