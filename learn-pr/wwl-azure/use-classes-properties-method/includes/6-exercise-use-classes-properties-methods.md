@@ -4,11 +4,11 @@ This exercise is a chance for you to practice putting it all together before mov
 
 ## Objectives
 
-- Define properties in a class.
-- Define a method in a class.
-- Use a class in an application.
-- Define an overloaded method.
-- Add a static/global method to the class library.
+- Define properties in a class
+- Define a method in a class
+- Use a class in an application
+- Define an overloaded method
+- Add a static/global method to the class library
 
 ## Exercise
 
@@ -114,7 +114,6 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.	Create an overloaded method called SquareFootage() that has two versions of the method, one to calculate the square footage by the US standard measurement system and the other using the metric system.
-
     ```CSharp
     using System;
     using System.Collections.Generic;
@@ -157,7 +156,6 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1. Create a static/global property for the builderID.
-
     ```CSharp
     using System;
     using System.Collections.Generic;
@@ -210,6 +208,7 @@ This exercise is a chance for you to practice putting it all together before mov
         House house = new House();
         house.Color = "Red";
     ```
+
 1.	Set the number of rooms to 3 using the SetNumberOfRooms() method.
      ```CSharp
     using Housing_Development_Project_4 // this statement is automatically generated
@@ -218,6 +217,7 @@ This exercise is a chance for you to practice putting it all together before mov
     house.Color = "Red";
     house.SetNumberOfRooms(3);
     ```
+
 1.	Calculate and print square footage using the two overloaded versions of SquareFootage().
     ```CSharp
         using Housing_Development_Project_4 // this statement is automatically generated
@@ -231,6 +231,7 @@ This exercise is a chance for you to practice putting it all together before mov
         Console.WriteLine("Square footage (US): " + house.SquareFootage(10, 10));
         Console.WriteLine("Square footage (metric): " + house.SquareFootage(10, 10, true));
     ```
+
 1. Set the `BuilderID` property to "American Builders".
     ```CSharp
         using Housing_Development_Project_4 // this statement is automatically generated
@@ -245,6 +246,7 @@ This exercise is a chance for you to practice putting it all together before mov
         Console.WriteLine("Square footage (metric): " + house.SquareFootage(10, 10, true));
         Console.WriteLine("Builder ID: " + House.BuilderID); // static property
     ```
+
 >>Notice that the static property you created is not referenced like the other members of the instance. Even though it is the last thing you added to your code, because it is static, it is created first by the compiler when your application started and is not a part of the instance members of your object. It is also called differently, using the class name rather than an object name. For example, `House.BuilderID` (House is the class name) is used to call your static property, not `house.Color` (instance/object name).
 
 1.	Run your code. Your output should look like the following.
@@ -252,4 +254,4 @@ This exercise is a chance for you to practice putting it all together before mov
 ![Screenshot showing Visual Studio output.](../media/output-sqrfeet.jpg)
 
 ## Recap
-This exercise gave you a chance to put many of the things you learned into practice. You created a class that has methods and properties and then used that class from your Program.cs file. I hope you notice that although methods typically perform actions on an object, they can also set and get data without performing an action, as in your GetNumberOfRooms and SetNumberOfRooms methods. In addition to methods and properties, you created an overridden method and a static method. Congratulate yourself on learning several skills that are fundemental to creating an object-oriented program!
+This exercise gave you a chance to put many of the things you learned into practice. You created a class that has methods and properties and then used that class from your Program.cs file. I hope you notice that although methods typically perform actions on an object, they can also set and get data without performing an action, as in your GetNumberOfRooms and SetNumberOfRooms methods. In addition to methods and properties, you created an overridden method and a static method. Congratulate yourself on learning several skills that are fundamental to creating an object-oriented program!

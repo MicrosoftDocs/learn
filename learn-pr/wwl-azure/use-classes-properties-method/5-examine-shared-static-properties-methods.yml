@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-classes-properties-method.examine-shared-static-properties-methods
-title: Static Properties and Methods
+title: Static properties and methods
 metadata:
-  title: Static Properties and Methods
+  title: Static properties and methods
   description: "This unit describes how the static keyword affects class members."
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial

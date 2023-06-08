@@ -4,9 +4,9 @@ All of the members introduced in this lesson so far have been instance members. 
 
 A class can also contain class members, as opposed to instance members. Class members pertain to the class itself, rather than to a particular instance of a class. For example, the House class might have a buiderID field that defines a shared builder identification number that all houses must have. By using static (often referred to as global) members you can access these methods globally, or outside of the context of a specific instance, by any object in your application.
 
-## Defining Static Members
+## Defining static members
 
-In object oriented-programming, we call the accessibility or "visibility" of objects and their members scope. A program consists of objects that contain other objects that can have varying levels of accessibility. The accessibility or visibility of objects is based on their access modifier (public, private, etcetera), objects may not always be accessible.
+In object oriented-programming, you call the accessibility or "visibility" of objects and their members scope. A program consists of objects that contain other objects that can have varying levels of accessibility. The accessibility or visibility of objects is based on their access modifier (public, private, etcetera), objects may not always be accessible.
 
 When you define a class or class member as static you are immediately loading that class or class member into memory when the application starts, before your code has instantiated the object. Another effect of declaring a class or member static is that it can be accessed from any other object in your code, regardless of scope. 
 
@@ -23,6 +23,7 @@ The following example shows how to define a static field, property, and method i
 - developmentBuilder is a static field that represents the name of the builder for all houses in a housing development. The developmentBuilder field is initialized to “American Builders” in the declaration.
 - HousingDevelopmentBuilder is a static property that gets and sets the developmentBuilder field.
 - AddHouseToDevProject is a static method that increases the numberOfHouses field by one, incrementing the number of houses in the development project.
+
 ```CSharp
 public class House
 {
@@ -44,6 +45,7 @@ public class House
     // Plus other members.
 }
 ```
+
 ## Accessing Static Members
 
 The way you access static members is different from the way you access instance members.
@@ -57,6 +59,7 @@ The following example shows how to access static properties and methods on the H
 - Uses the GetNumberOfHouses property to get the number of houses in the development and display it.
 
 #### Static example
+
 ```CSharp
 House.HousingdevelopmentBuilder = “American Builders”;
 
@@ -66,6 +69,7 @@ House.AddHousesToDevProject();
 The important thing to remember here is that in this code the House class hasn't been instantiated. Previously, you have been used to working with classes by instantiating them as described here.
 
 #### Instantiate example
+
 ```CSharp
 
 House house = new House();

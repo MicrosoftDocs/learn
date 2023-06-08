@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.use-classes-properties-method.exercise-use-classes-properties-methods
-title: Exercise-Using Classes, Properties, and Methods
+title: Exercise - Using Classes, Properties, and Methods
 metadata:
-  title: Exercise-Using Classes, Properties, and Methods
-  description: "This unit provides exercises for this module"
-  ms.date: 06/07/2023
+  title: Exercise - Using Classes, Properties, and Methods
+  description: "This unit provides exercises for this module."
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial

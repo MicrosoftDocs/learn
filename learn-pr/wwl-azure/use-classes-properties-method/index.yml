@@ -3,7 +3,7 @@ uid: learn.wwl.use-classes-properties-method
 metadata:
   title: Use Classes, Properties, and Methods
   description: "This module introduces using classes, properties, and methods."
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
@@ -33,7 +33,7 @@ subjects:
 units:
 - learn.wwl.use-classes-properties-method.introduction
 - learn.wwl.use-classes-properties-method.instantiate-class
-- learn.wwl.use-classes-properties-method.instantiating-class-parameterized-constructor
+- learn.wwl.use-classes-properties-method.instantiate-class-parameterized-constructor
 - learn.wwl.use-classes-properties-method.use-properties-methods
 - learn.wwl.use-classes-properties-method.examine-shared-static-properties-methods
 - learn.wwl.use-classes-properties-method.exercise-use-classes-properties-methods
