@@ -21,6 +21,8 @@ abstract: |
 prerequisites: |
   - Basic programming knowledge, like using and assigning variables.
   - Some experience with using Jupyter notebooks, including adding and modifying code.
+  - (Optional) [Visual Studio Code](https://visualstudio.microsoft.com/downloads/)
+  - [Git](https://git-scm.com/downloads)
 iconUrl: /training/achievements/python-error-handling.svg
 levels: 
   - beginner
