@@ -5,7 +5,7 @@ metadata:
   unitType: exercise
   title: Exercise - Create a 'for' loop
   description: In this exercise, you'll create a list and then loop over the contents by using a `for` loop.
-  ms.date: 12/07/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
