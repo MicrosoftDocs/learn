@@ -12,7 +12,10 @@ metadata:
 title: Linux on Azure
 summary: |
   This comprehensive learning path reviews deployment and management of Linux on Azure. Learn about cloud computing concepts, Linux IaaS and PaaS solutions and benefits and Azure cloud services. Discover how to migrate and extend your Linux-based workloads on Azure with improved scalability, security, and privacy.
-prerequisites: None
+prerequisites: |
+  - Ability to configure and administer a Linux server
+  - Access to a Microsoft Azure account
+  - Ability to navigate the Azure portal
 # video:
 #  title: "Linux on Azure video"
 #  url: https://www.microsoft.com/videoplayer/embed/RWK1dx
