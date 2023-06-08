@@ -91,7 +91,7 @@ Now that you have an API for NoSQL account, you can use the `az cosmosdb keys li
         --output tsv
     ```
 
-1. Record the value of this connection string. You use the connection string later in this project to connect to this account.
+1. Record the value of this connection string. You'll use the connection string later in this project to connect to this account.
 
 ### Configure dev environment
 
@@ -153,12 +153,13 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     git clone https://github.com/azure-samples/dotnet-env-azure-cosmos-db.git .
     ```
 
+1. Open the folder into which you cloned the GitHub repository.
 1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen in Container**.
 
     :::image type="content" source="../media/reopen-container-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within the context of a development container.":::
 
     > [!TIP]
-    > Visual Studio Code may automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
+    > Visual Studio Code might automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
     >
     > :::image type="content" source="../media/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
 

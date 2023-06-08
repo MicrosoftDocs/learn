@@ -11,6 +11,6 @@ metadata:
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
   ms. prod: learning-languages 
-durationInMinutes: 1 # user input: the estimate time to complete the unit
+durationInMinutes: 4
 content: |
   [!include[](includes/4-numeric-lists.md)]
