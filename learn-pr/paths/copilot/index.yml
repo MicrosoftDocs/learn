@@ -1,6 +1,7 @@
-uid: learn.copilot
+### YamlMime:LearningPath
+uid: learn.github-copilot
 metadata:
-  title: GitHub Copilot Fundamentals, Understanding the AI pair programmer
+  title: GitHub Copilot fundamentals - Understand the AI pair programmer
   description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey.
   brand: github
   ms.date: 06/05/2023
@@ -8,11 +9,11 @@ metadata:
   ms.author: aastewar
   ms.topic: interactive-tutorial
   ms.prod: learning-github
-title: GitHub Copilot Fundamentals, Understanding the AI pair programmer
+title: GitHub Copilot Fundamentals - Understand the AI pair programmer
 summary: |
   Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
 
-  In this learning path, you'll learn how:
+  In this learning path, you'll:
 
   Gain a comprehensive understanding of the distinctions between GitHub Copilot for Individuals, GitHub Copilot for Business, and GitHub Copilot X.
 
