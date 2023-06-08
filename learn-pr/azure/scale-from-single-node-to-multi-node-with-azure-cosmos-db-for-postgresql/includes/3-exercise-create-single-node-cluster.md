@@ -1,36 +1,54 @@
-In this exercise, you create the tables and seed the data for the sensors database. This single-node database has these characteristics:
+In this exercise, you create tables and seed the data for the sensors database. This single-node database has the following characteristics:
 
-- `device_types` has a `device_type_id` field and a `name` field. `device_type_id` is its primary key.
-- `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There's a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
-- `events` has three fields - `event_id`, `device_id`, and `payload`. The `event_id` is its primary key. There's a foreign key relation on the `device_id` that references the `device_id` field on the `devices` table.
+- The `device_types` table has two fields: `device_type_id` and `name`.
 
-![Diagram of the relationships between device types, devices, and events. The device_types table has two fields - device_type_id and name. device_type_id is its primary key. The devices table has three fields - device_id, device_type_id, and name. device_id is its primary key. The devices table has a foreign key relationship on device_type_id that references the device_type_id field on the device_types table. The events table has three fields - event_id, device_id, and payload. event_id is its primary key. The events table has a foreign key relationship on its device_id that references the device_id field on the devices table.](../media/normalized-database-erd.png)
+   The `device_types` table's primary key is `device_type_id`.
+
+- The `devices` table has three fields: `device_id`, `device_type_id`, and `name`.
+
+   The `devices` table's primary key is `device_id`.
+
+   A foreign key relationship on the `device_type_id` field references the `device_type_id` field on the `device_types` table.
+- The `events` has three fields: `event_id`, `device_id`, and `payload`.
+
+   The `events` table's primary key is `event_id`.
+  
+   A foreign key relationship on the `device_id` field references the `device_id` field on the `devices` table.
+
+:::image type="content" source="../media/normalized-database-erd.png" border="false" alt-text="Diagram that shows the relationships between three tables, and the columns and primary keys in each table.":::
 
 ## Create an Azure Cosmos DB for PostgreSQL account
 
 > [!IMPORTANT]
 >
-> Planning for future growth when initially selecting the size of your single-node cluster can help avoid downtime when the need to scale arises.
+> Planning for future growth when you initially select the size of your single-node cluster can help avoid downtime when the need to scale arises.
 >
-> Horizontally scaling to a multi-node cluster can be accomplished with zero downtime, but this capability depends upon the configuration of the coordinator node. The minimum compute and storage sizes for the coordinator node in a multi-node cluster are 4 vCores with 16 GiB RAM and 512 GiB storage, respectively. You can create a single-node database with compute and storage settings smaller than this minimum requirement. Scaling a single-node cluster when the coordinator compute size is less than 4 vCores with 16 GiB RAM, and the storage size is less than 512 GiB requires the coordinator compute and storage to be scaled, resulting in a restart of the server and a short period of downtime.
+> Horizontally scaling to a multi-node cluster can be accomplished with zero downtime, but this capability depends on the configuration of the coordinator node. The minimum compute and storage sizes for the coordinator node in a multi-node cluster are four vCores with 16 GiB of RAM and 512 GiB of storage. 
+>
+> You can create a single-node database that has compute and storage settings smaller than this minimum requirement. Scaling a single-node cluster when the coordinator node compute size is less than four vCores with 16 GiB of RAM and less than 512 GiB of storage requires the coordinator node compute and storage to be scaled. After you scale the coordinator node compute and storage, you must restart the server, so there's a short period of downtime.
+>
 
-In this unit, you go through the process of minimal downtime. There are also notes on what to expect if Wide World Importers started with minimal resources.
+In this unit, you complete the process to have minimal downtime. There are notes on what to expect if Wide World Importers started with minimal resources.
 
-Create an Azure Cosmos DB for PostgreSQL database that has the following specifications:
+To begin, you create an Azure Cosmos DB for PostgreSQL database that has the following specifications:
 
-- One node that has four vCores, 16 GiB of RAM, and 512 GiB of storage.
+- One node that has four vCores, 16 GiB of RAM, and 512 GiB of storage
+
+To create the database:
 
 1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
 
-1. Next, select **Create a resource** > **Databases** > **Azure Cosmos DB**. You can also use the search box to find the resource. Select **Create**.
+1. Select **Create a resource** > **Databases** > **Azure Cosmos DB**. You can also use the search box to find the resource.
 
-    ![Screenshot of Create an Azure Cosmos DB for PostgreSQL resource. Databases in the Categories navigation and Azure Cosmos DB in the Popular Azure services section are highlighted.](../media/cosmos-db-for-postgresql-create.png)
+   In the **Azure Cosmos DB** tile, select **Create**.
 
-1. On the screen labeled **Which API best suits your workload?**, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
+   :::image type="content" source="../media/cosmos-db-for-postgresql-create.png" alt-text="Screenshot that shows the steps to create an Azure Cosmos DB for PostgreSQL resource in the Azure portal.":::
 
-    ![Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.](../media/cosmos-db-select-api-option.png)
+1. On **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
-    The portal displays an Azure Cosmos DB for PostgreSQL configuration screen.
+   :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.":::
+
+   The portal displays an Azure Cosmos DB for PostgreSQL configuration pane.
 
 1. On the **Basics** tab, enter the following information. (Note the server name and password for later use.)
 
@@ -48,22 +66,23 @@ Create an Azure Cosmos DB for PostgreSQL database that has the following specifi
     | Admin username  | This value is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. These settings are shown in the screenshot. The 'Subscription', 'Resource group', 'Cluster name', 'Location', 'Scale', 'Password', and 'Confirmed password' fields are highlighted. The 'Create new' link for the resource group and the 'Review + create' button are also highlighted.](../media/cosmos-db-for-postgresql-basics-tab.png)
-
-1. For **Scale**, select **Configure**. Set the Scale settings to the following values, then select **Save**:
+1. On the **Basics** tab, for **Scale**, select **Configure**. Set the **Scale** settings to the following values, and then select **Save**:
 
     - Node count: **Single node**
     - Node compute: **4 vCores, 16 GiB RAM**
     - Node storage: **512 GiB**
     - No high availability
 
-1. Select the **Review + create** button. On the review screen, select **Create** to provision your Azure Cosmos DB for PostgreSQL cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
+   :::image type="content" source="../media/cosmos-db-for-postgresql-basics-tab.png" alt-text="Screenshot that shows Basics tab options to use when you create an Azure Cosmos DB for PostgreSQL in the Azure portal.":::
 
-    ![Screenshot of a modal titled 'Configure IP address in firewall rules'. The warning message shows 'You need to configure at least one IP address in Public access (allowed IPs) to enable access to this cluster. If you continue without configuring the IP address then you must configure the IP address later to allow access to this cluster.' There are two buttons - labeled 'Create cluster without firewall rules' and 'Return to add firewall rules'. The 'Create cluster without firewall rules' button is highlighted.](../media/configure-ip-rules-warning.png)
+    Select the **Review + create** button.
+1. On the review screen, select **Create** to provision your Azure Cosmos DB for PostgreSQL cluster. If the **Configure IP address in firewall rules** dialog appears, select **Create cluster without firewall rules**.
+
+    :::image type="content" source="../media/configure-ip-rules-warning.png" alt-text="Screenshot that shows options to choose in the Configure IP address in firewall rules dialog.":::
 
 ## Enable network access
 
-After the Azure Cosmos DB for PostgreSQL account is created, you need to enable the resource to be accessible to other resources so that you can access the server via `psql` in Azure Cloud Shell.
+After the Azure Cosmos DB for PostgreSQL account is created, you need to enable the resource to be accessible to other resources so that you can access the server by using the psql command-line tool in Azure Cloud Shell.
 
 1. After the account is created, select **Go to resource** to go to the Azure Cosmos DB for PostgreSQL account.
 1. In the left menu under **Settings**, select **Networking**.

@@ -129,19 +129,19 @@ Keep this instance of Azure Cloud Shell open, as there are more SQL commands to 
 
 As part of the goal of this module is to go from nondistributed data to distributed data with minimal interruption, you run a benchmark that runs in the background to simulate users accessing the data while you're distributing the data. The 20 minutes allocated for this benchmark job should be enough time to show how your data can be accessed while you're distributing it.
 
-This exercise shows simulated data usage while going from a nondistributed database to a distributed database configuration. The following scenarios are happening:
+This exercise shows simulated data usage for the scenario of changing from a nondistributed database to a distributed database. The scenario includes the following processes:
 
-- The `pg_cron` job writes data
+- The `pg_cron` job writes data.
 - The `pgbench` job reads data.
-- You're distributing data from `psql`.
+- You distribute data from `psql`.
 
-Because `pgbench` is being used to simulate database read access, run the following command to benchmark over 20 minutes, reporting progress every minute, and then continue reading:
+Because you're using `pgbench` to simulate database read access, run the following command to set a benchmark of 20 minutes, report progress every minute, and then continue reading:
 
 ```bash
 pgbench $PGURL -c 64 -j 64 -T 1200 -n -P 60 -f outliers.sql
 ```
 
-After this benchmark is started, return to your Azure Cloud Shell running psql.
+After this benchmark is started, return to the Cloud Shell window that's running psql.
 
 ## Update the primary key on events to include the distribution column
 
