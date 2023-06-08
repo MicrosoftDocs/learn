@@ -491,6 +491,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/index.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/1-introduction.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/2-manage-blob-data-using-properties-and-metadata.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/3-view-blob-properties-and-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/4-view-blob-properties-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/5-add-blob-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/7-summary.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
       "redirect_url": "/azure/sql-database/sql-database-cloud-migrate",
       "redirect_document_id": false
