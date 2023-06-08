@@ -1722,6 +1722,26 @@ achievements:
   title: Introduction to 5G for Azure in the Enterprise
   summary: We introduce 5G for Azure in the Enterprise
   iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
+- uid: learn.intro-to-azure-lab-services.badge
+  type: badge
+  title: Introduction to Azure Lab Services
+  summary: Evaluate whether Azure Lab Services is appropriate to your lab requirements.
+  iconUrl: /training/achievements/azure-lab-services-intro-module.svg
+- uid: learn.setup-first-lab-using-azure-lab-services.badge
+  type: badge
+  title: Set up your first classroom lab by using Azure Lab Services
+  summary: Learn how to set up your first classroom lab by using Azure Lab Services.
+  iconUrl: /training/achievements/setup-first-lab-using-azure-lab-services.svg
+- uid: learn.azure.intro-to-azure-devtest-labs.badge
+  type: badge
+  title: Introduction to Azure DevTest Labs
+  summary: Evaluate whether Microsoft Azure DevTest Labs is appropriate for setting up virtual machine environments for your team..
+  iconUrl: /training/achievements/azure-devops-devtest-labs.svg
+- uid: learn.setup-first-lab-using-azure-devtest-labs.badge
+  type: badge
+  title: Set up your first development lab by using Azure DevTest Labs
+  summary: Learn how to set up your first development lab by using Azure DevTest Labs.
+  iconUrl: /training/achievements/set-up-first-lab-with-azure-devtest-labs.svg
 - uid: learn.javascript-on-azure.deploy-expressjs-app-service.badge
   type: badge
   title: Deploy Node.js to Azure App Service
@@ -1732,13 +1752,3 @@ achievements:
   title: Deploy Node.js server with MongoDB database to Azure App Service
   summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
   iconUrl: /training/achievements/generic-badge.svg
-- uid: learn.javascript-on-azure.deploy-expressjs-app-service.badge
-  type: badge
-  title: Deploy Node.js to Azure App Service
-  summary: Create Azure service resources for an Node.js web app. Configure, secure, and deploy the web app. Review the logs after deployment.
-  iconUrl: /training/achievements/js-data-web-app-to-azure-app-service.svg
-- uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.badge
-  type: badge
-  title: Deploy Node.js server with MongoDB database to Azure App Service
-  summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
-  iconUrl: /training/achievements/generic-badge.svg  
