@@ -8,7 +8,7 @@ Suppose you as a programmer want to build an application that designs a home. Ho
 
 After completing this lesson, you'll be able to:
 
-- Describe a class.
-- Differentiate between a class and an object.
-- Describe the life cycle of a class.
-- Organize classes into groups using namespaces.
+- Describe a class
+- Differentiate between a class and an object
+- Describe the life cycle of a class
+- Organize classes into groups using namespaces

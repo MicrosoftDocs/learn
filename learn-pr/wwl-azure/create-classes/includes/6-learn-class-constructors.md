@@ -17,11 +17,11 @@ access-modifier class-name(parameter-list)
 
 The following example shows how to define three constructors in the House class:
 
-- The first constructor is a default constructor that sets the house style name and square feet to meaningful default values.
+- The first constructor is a default constructor that sets the house style name and square feet to meaningful default values
 
-- The second constructor takes a string parameter. It initializes the house style name with this parameter, and sets the initial balance to zero.
+- The second constructor takes a string parameter. It initializes the house style name with this parameter, and sets the initial balance to zero
 
-- The third constructor takes two parameters, and initializes both the house style name and the square footage with these parameters.
+- The third constructor takes two parameters, and initializes both the house style name and the square footage with these parameters
 ```CSharp
 
 public class House
@@ -58,6 +58,7 @@ When might you have multiple constructor methods in your class?
 ( ) When you want to make your code more readable. {{Incorrect. Having multiple constructor is not done for the purpose of making your code more readable.}}
 (x) When you want to initialize your object for different purposes. {{Correct! As constructors are used to initialize an object, having an overloaded constructor allows you to initialize your object for different use cases.}}
 
+## Multiple choice
 Which of these scenarios is a good reason to possibly add a second (overloaded) constructor?
 ( ) You want more than one way to create your object. {{Incorrect. Although perhaps partially correct, this answer is too vague and does not provide any reasoning for the answer given.}}
 ( ) When the main constructor no longer works. {{Incorrect. Constructors are not added to a class as backup for another constructor.}}

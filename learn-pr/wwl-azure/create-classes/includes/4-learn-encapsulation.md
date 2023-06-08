@@ -12,10 +12,10 @@ You can use encapsulation to hide information. When you hide information, such a
 
 ## Contents of a class
 The following are examples of class members that can be encapsulated within a class:
-- Variables used to store values.
-- Methods containing code blocks and that represent an action that an object or class can perform.
-- Properties allowing you to read, write, or compute the values stored in  within the class.
-- Constructors, methods that are used to create an instance of an object.
+- Variables used to store values
+- Methods containing code blocks and that represent an action that an object or class can perform
+- Properties allowing you to read, write, or compute the values stored in  within the class
+- Constructors, methods that are used to create an instance of an object
 
 >[!NOTE]
 >The important thing here is that encapsulation about hiding the data members that users of a class do not need and that might only cause confusion if they were directly accesible. Data members are encapsulated, or hidden, using the `private' accessor keyword. Access to hidden variables can then be controlled using either properties and methods, but the hidden data members themselves can't be accessed.

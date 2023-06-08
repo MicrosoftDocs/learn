@@ -3,9 +3,9 @@
 When you define a class, you often encapsulate (or hide) many resources within the class. To use these resources, you need memory to be allocated to represent the type, also known as, class. Understanding how objects are instantiated, or bought to life, in your code and later taken out of memory, freeing up precious resources is helpful to know. This process of allocating and deallocating memory for your objects is called the Class Lifecycle.
 
 When you create or *new* (or instantiate) an object and later no longer need it, the following things happen in the class lifecycle:
-- Allocation of memory.
-- Initialization or instantiation of the class.
-- Deallocation to free memory.
+- Allocation of memory
+- Initialization or instantiation of the class
+- Deallocation to free memory
 
 ## Allocation
 
@@ -32,6 +32,7 @@ What is the difference between memory allocation/de-allocation and instantiation
 ( ) Instantiation occurs before allocation. {{Incorrect. The allocation of memory occurs when you "new" or instantiate your objects.}}
 (x) Allocation/de-allocation has to do with memory management for your objects and instantiation is about actually creating the objects. {{Correct! A roof is something that all houses have and would be appropriate for a house class to have.}}
 
+## Multiple choice
 What is garbage collection?
 ( ) A process of removing system level resources. {{Incorrect. Garbage collection has nothing to do with system resources, but with the freeing up of user defined objects in memory.}}
 ( ) When the garbage man collects the garbage at my home. {{Incorrect. Although certainly the form of garbage collection we are most used to, it does not apply to computer programming.}}
