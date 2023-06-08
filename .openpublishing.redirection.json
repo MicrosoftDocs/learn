@@ -22723,6 +22723,21 @@
     "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/summary.yml",
     "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
     "redirect_document_id": false
-  }
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  }  
   ]
 }
