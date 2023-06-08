@@ -10,11 +10,11 @@ Right now, you have two key requirements:
 
 :::image type="content" source="../media/project-visual-upload.svg" alt-text="Illustration of icons indicating data being uploaded to the cloud." border="false":::
 
-After you complete this exercise, your project will have the logic to create items in your container either individually, or as a batch.
+After you complete this exercise, your project will have the logic to create items in your container either individually or as a batch.
 
 ## Add an individual item to a container
 
-In Azure Cosmos DB, you can create, replace, or upsert items to a container. Creating an item requires that the item has a unique identifier. Replacing an item requires that the item already exists. Upsert is the best of both worlds where it checks the unique identifier, and then replace or create the item. For this project, you want to be able to run the app multiple times without errors making *upsert* a clear choice. For our first item, we create a category that doesn't have any associated products. Here, you implement a single upsert operation with a manually created category.
+In Azure Cosmos DB, you can create, replace, or upsert items to a container. *Creating* an item requires that the item has a unique identifier. *Replacing* an item requires that the item already exists. *Upsert* is the best of both worlds, where it checks the unique identifier, then replaces or creates the item. For this project, you want to be able to run the app multiple times without errors, making *upsert* a clear choice. For our first item, we create a category that doesn't have any associated products. Here, you implement a single upsert operation with a manually created category.
 
 1. Open the *Program.cs* file yet again.
 
@@ -86,7 +86,7 @@ In Azure Cosmos DB, you can create, replace, or upsert items to a container. Cre
 
 ## Implement multiple operations as a transactional batch
 
-Now consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
+Now, consider a scenario where you want to create multiple products along with a category. If the products are created, but the category doesn't exist, those products aren't nearly as useful. Creating multiple items is a situation where you can use a transaction to group multiple "point" operations together so they all succeed or fail as a single cohesive unit. Going back to our scenario, we need to create a category for outdoor tents with a few tent products. We already have a single category item without any product items. Here's what we should end up with:
 
 :::image type="complex" source="../media/diagram-items.png" alt-text="Diagram of items in Azure Cosmos DB grouped by their partition key." lightbox="../media/diagram-items.png" border="false":::
     Diagram of various items in Azure Cosmos DB organized by their specific partition key. The diagram illustrates how five items belong to the "tents" partition key value and only one item belongs to "helmets".
@@ -94,7 +94,7 @@ Now consider a scenario where you want to create multiple products along with a 
 
 In this section, we create a transactional batch to create the `tents` category and related products together.
 
-1. Create a new **Category** instance named `tents` with the following values:
+1. In *Program.cs*, create a new **Category** instance named `tents` with the following values:
 
     | Property | Value |
     | --- | --- |
@@ -220,13 +220,13 @@ Your app now creates multiple items and is designed to be resilient enough to be
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+1. Run the .NET application in the terminal:
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+1. Observe the output of running the application. The output should match the example here:
 
     ```output
     ...
