@@ -19,7 +19,6 @@ prerequisites: |
   - Threat modeling security fundamentals
 iconUrl: /training/achievements/threat-modeling-secured-environment.svg
 levels:
-- beginner
 - intermediate
 roles:
 - administrator
