@@ -1,4 +1,4 @@
-Now you can create the various resources; such as databases, containers, and items; that you use in your Azure Cosmos DB account. For this exercise, you create a database named `cosmicworks` with a single container named `products`. You need to make sure that the code doesn't crash trying to re-create a container if you run this console application multiple times.
+Now you can create the various resources—such as databases, containers, and items—that you use in your Azure Cosmos DB account. For this exercise, you create a database named `cosmicworks` with a single container named `products`. You need to make sure that the code doesn't crash trying to re-create a container if you run this console application multiple times.
 
 Right now, you have a few key requirements:
 
@@ -7,13 +7,13 @@ Right now, you have a few key requirements:
 
 :::image type="content" source="../media/project-visual-resources.svg" alt-text="Illustration of icons indicating Azure Cosmos DB resources are created in the cloud." border="false":::
 
-After you complete this exercise, your project will create any databases, or containers it requires to execute.
+After you complete this exercise, your project will create any databases or containers it requires to execute.
 
 ## Create a database
 
 The SDK contains useful methods that creates a new resource if it doesn't already exist. By using these methods, you can run the application multiple times without worrying about exceptions raised by conflicts. Here, you create a database.
 
-1. Return to the *Program.cs* file again.
+1. Return to the *Program.cs* file.
 
 1. Create, or get, a new database by calling <xref:Microsoft.Azure.Cosmos.CosmosClient.CreateDatabaseIfNotExistsAsync(System.String,Microsoft.Azure.Cosmos.ThroughputProperties,Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named `database`. Be sure to set these parameters:
 
@@ -38,6 +38,8 @@ The SDK contains useful methods that creates a new resource if it doesn't alread
 ## Create a container
 
 Here, you create a container with a specific "slice" of the shared throughput from the database.
+
+1. Return to the *Program.cs* file again.
 
 1. Create, or get, a new container by calling <xref:Microsoft.Azure.Cosmos.Database.CreateContainerIfNotExistsAsync(System.String,System.String,System.Nullable{System.Int32},Microsoft.Azure.Cosmos.RequestOptions,System.Threading.CancellationToken)>. Store the result in a variable named `container`. Be sure to set these parameters:
 
@@ -65,7 +67,7 @@ Here, you create a container with a specific "slice" of the shared throughput fr
 
 ## Create record types for items
 
-C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable by default. You still can add code to create a modified copy of a record if you need to. Records also have an easy to read syntax and are quick to create with only a few lines of code. In this section, you create a base type for all items and individual types for each "kind" of item.
+C# data can be represented using various types including classes, structs, and records. For this SDK, records are useful because they're immutable by default. You still can add code to create a modified copy of a record if you need to. Records also have an easy-to-read syntax and are quick to create with only a few lines of code. In this section, you create a base type for all items and individual types for each "kind" of item.
 
 1. Using Visual Studio Code, create a new file named *Item.cs*. Then, open the file in the editor.
 
@@ -133,7 +135,7 @@ Your app now creates a database and container. The methods you used to create th
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+1. Observe the output of running the application. The output should match the example here:
 
     ```output
     ...
@@ -143,7 +145,7 @@ Your app now creates a database and container. The methods you used to create th
 
 ### [Review code](#tab/review-code)
 
-1. Review the *Item.cs* code file to make sure that your code matches this sample.
+1. Review the *Item.cs* code file to make sure that your code matches this sample:
 
     ```csharp
     public record Item(
@@ -153,7 +155,7 @@ Your app now creates a database and container. The methods you used to create th
     );
     ```
 
-1. Review the *Category.cs* code file to make sure that your code matches this sample.
+1. Review the *Category.cs* code file to make sure that your code matches this sample:
 
     ```csharp
     public record Category(
@@ -166,7 +168,7 @@ Your app now creates a database and container. The methods you used to create th
     );
     ```
 
-1. Review the *Product.cs* code file to make sure that your code matches this sample.
+1. Review the *Product.cs* code file to make sure that your code matches this sample:
 
     ```csharp
     public record Product(
@@ -185,7 +187,7 @@ Your app now creates a database and container. The methods you used to create th
     };
     ```
 
-1. Review the *Program.cs* code file to make sure that your code matches this sample.
+1. Review the *Program.cs* code file to make sure that your code matches this sample:
 
     ```csharp
     using Microsoft.Azure.Cosmos;
