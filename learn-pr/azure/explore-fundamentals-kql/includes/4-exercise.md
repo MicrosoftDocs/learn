@@ -32,12 +32,12 @@ StormEvents
 
 Microsoft Sentinel and Log Analytics both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
 
+> [!div class="nextstepaction"]
+> [Log Analytics demo environment](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade)
+
 #### Prerequisites
 
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
-
-> [!div class="nextstepaction"]
-> [Log Analytics demo environment](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade)
 
 #### Run sample query
 
@@ -53,12 +53,12 @@ LAQueryLogs
 
 The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
 
+> [!div class="nextstepaction"]
+> [Azure Resource Graph Explorer](https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/)
+
 #### Prerequisites
 
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
-
-> [!div class="nextstepaction"]
-> [Azure Resource Graph Explorer](https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/)
 
 #### Run sample query
 
