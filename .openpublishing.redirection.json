@@ -495,7 +495,7 @@
       "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
       "redirect_document_id": false
     },
-    {
+     {
       "source_path": "learn-pr/azure/organize-blobs-properties-metadata/1-introduction.md",
       "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
       "redirect_document_id": false
@@ -527,6 +527,11 @@
     },
     {
       "source_path": "learn-pr/azure/organize-blobs-properties-metadata/7-summary.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn.azure.organize-blobs-properties-metadata.badge.yml",
       "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
       "redirect_document_id": false
     },
