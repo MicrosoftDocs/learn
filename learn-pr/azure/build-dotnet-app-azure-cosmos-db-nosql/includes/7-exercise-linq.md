@@ -1,4 +1,4 @@
-Although the application already meets all of the requirements, there's still one more change that can be made. C# developers use the language-integrated query (LINQ) syntax to perform queries over collections of data. The .NET SDK for Azure Cosmos DB for NoSQL comes with a built-in mechanism to build your query using the LINQ method syntax.
+Although the application already meets all of the requirements, there's still one more change we can make. C# developers use the language-integrated query (LINQ) syntax to perform queries over collections of data. The .NET SDK for Azure Cosmos DB for NoSQL comes with a built-in mechanism to build your query using the LINQ method syntax.
 
 There are two key requirements at this time:
 
@@ -14,7 +14,7 @@ After you complete this exercise, your queries will now use the LINQ syntax to m
 Your team wants a unique query that returns all *products* within the container regardless of category. Recall that we used the **type** property to separate our category items from the individual product items. Here, we're going to create a cross-partition query using the LINQ method syntax.
 
 > [!TIP]
-> Since we are querying across multiple categories, this will make our query cross-partition. This query could potentially use more RUs than a query that is scoped to a single logical partition key value.
+> Because we're querying across multiple categories, this will make our query cross-partition. This query could potentially use more RUs than a query that's scoped to a single logical partition key value.
 
 1. Open the *Program.cs* file one last time.
 
@@ -49,9 +49,9 @@ Your team wants a unique query that returns all *products* within the container 
 
 ## Paginate LINQ query results
 
-Since we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you again use a *while* and *foreach* loop in C# to iterate over *all* result pages. The code should be similar to how you used a feed iterator previously.
+Because we're querying across multiple logical partitions, we need to make sure that we return all results even if a logical partition doesn't have any matching results. For example, the *helmets* category doesn't have any matching products. If we didn't return all possible pages, our application may inadvertently halt when it sees an empty page of results for the *helmets* category. Here, you again use a *while* and *foreach* loop in C# to iterate over *all* result pages. The code should be similar to how you used a feed iterator previously.
 
-1. Create a *while* loop that iterates until the feed iterator doesn't have any more pages.
+1. In *Program.cs*, create a *while* loop that iterates until the feed iterator doesn't have any more pages.
 
     ```csharp
     while (linqFeed.HasMoreResults)
@@ -93,13 +93,13 @@ Your app now uses LINQ to build a cross-partition query that your developer team
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+1. Run the .NET application in the terminal:
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+1. Observe the output of running the application. The output should match the example here:
 
     ```output
     [Start LINQ query]
