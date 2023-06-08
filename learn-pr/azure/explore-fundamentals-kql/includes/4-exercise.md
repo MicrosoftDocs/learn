@@ -4,8 +4,6 @@ You've seen the general structure of a KQL query. Now try running a few sample q
 
 There are several products that use KQL and offer free environments for practicing sample queries. Choose the tab below that corresponds to the query environment you want to use.
 
-You can copy/paste the below query examples into these environments.
-
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
 Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
