@@ -32,7 +32,6 @@ What is the difference between memory allocation/de-allocation and instantiation
 ( ) Instantiation occurs before allocation. {{Incorrect. The allocation of memory occurs when you "new" or instantiate your objects.}}
 (x) Allocation/de-allocation has to do with memory management for your objects and instantiation is about actually creating the objects. {{Correct! A roof is something that all houses have and would be appropriate for a house class to have.}}
 
-## Multiple choice
 What is garbage collection?
 ( ) A process of removing system level resources. {{Incorrect. Garbage collection has nothing to do with system resources, but with the freeing up of user defined objects in memory.}}
 ( ) When the garbage man collects the garbage at my home. {{Incorrect. Although certainly the form of garbage collection we are most used to, it does not apply to computer programming.}}

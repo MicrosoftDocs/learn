@@ -10,7 +10,7 @@ Each namespace contains classes that your program uses. Because different classe
 
 Namespaces come in two categories: user-defined, and system-defined. System-defined namespaces are the namespaces used to organize the .NET Framework class library. User-defined namespaces are namespaces you define in your code.
 
-Defining a User-Defined Namespace
+## Defining a User-Defined Namespace
 
 You can define a namespace for your classes using the keyword namespace.
 
@@ -46,7 +46,6 @@ How do you access a class that is in another namespace?
 ( ) You don't need to do anything, namespaces are global and their contents are available everywhere. {{Incorrect. This answer is incorrect, as namespaces are not global.}}
 (x) Prefix your object with the name of the namespace it belongs to. {{Correct! The way you access objects in another namespace is prefix the name of your object with the name of the class that belongs to it.}}
 
-## Multiple choice
 Why would two classes be in the same namespace?
 ( ) To avoid collisions. {{Incorrect. Although classes are put in separate namespaces to avoid crashes, classes are not put in the same namespace to avoid crashes (class naming conflicts).}}
 ( ) Because they are of the same type. {{Incorrect. Classes of the same name/type are put in different namespaces to avoid name conflicts.}}

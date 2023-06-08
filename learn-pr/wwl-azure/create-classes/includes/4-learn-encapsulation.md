@@ -18,4 +18,4 @@ The following are examples of class members that can be encapsulated within a cl
 - Constructors, methods that are used to create an instance of an object
 
 >[!NOTE]
->The important thing here is that encapsulation about hiding the data members that users of a class do not need and that might only cause confusion if they were directly accesible. Data members are encapsulated, or hidden, using the `private' accessor keyword. Access to hidden variables can then be controlled using either properties and methods, but the hidden data members themselves can't be accessed.
+>The important thing here is that encapsulation is about hiding the data members that users of a class do not need and that might only cause confusion if they were directly accesible. Data members are encapsulated, or hidden, using the `private' accessor keyword. Access to hidden variables can then be controlled using either properties and methods, but the hidden data members themselves can't be accessed.

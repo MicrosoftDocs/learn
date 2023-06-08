@@ -58,7 +58,6 @@ When might you have multiple constructor methods in your class?
 ( ) When you want to make your code more readable. {{Incorrect. Having multiple constructor is not done for the purpose of making your code more readable.}}
 (x) When you want to initialize your object for different purposes. {{Correct! As constructors are used to initialize an object, having an overloaded constructor allows you to initialize your object for different use cases.}}
 
-## Multiple choice
 Which of these scenarios is a good reason to possibly add a second (overloaded) constructor?
 ( ) You want more than one way to create your object. {{Incorrect. Although perhaps partially correct, this answer is too vague and does not provide any reasoning for the answer given.}}
 ( ) When the main constructor no longer works. {{Incorrect. Constructors are not added to a class as backup for another constructor.}}
