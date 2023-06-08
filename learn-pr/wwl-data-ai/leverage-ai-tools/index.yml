@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.leverage-ai-tools
+metadata:
+  title: Leverage AI tools and resources for your business
+  description: "Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use"
+  ms.date: 06/08/2023
+  author: Adriamen
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+title: Leverage AI tools and resources for your business
+summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be used by organizations.
+abstract: |
+  In this module, you will:
+    - Understand why is AI making an impact in businesses now.
+    - Understand what is AI and its capabilities.
+    - Understand how to use prebuilt AI with no machine learning expertise.
+    - Understand the basics of machine learning and what kinds of business problems to apply it.
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+- functional-consultant
+products:
+- azure
+- dynamics-365
+- m365
+subjects:
+- artificial-intelligence
+- data-ai
+units:
+- learn.wwl.leverage-ai-tools.introduction
+- learn.wwl.leverage-ai-tools.identify-basic-ai-technology-concepts
+- learn.wwl.leverage-ai-tools.learn-microsoft-ai-approach
+- learn.wwl.leverage-ai-tools.use-ai-embedded-everyday-applications
+- learn.wwl.leverage-ai-tools.discover-how-microsoft-power-platform
+- learn.wwl.leverage-ai-tools.understand-machine-learning-lifecycle
+- learn.wwl.leverage-ai-tools.discover-business-value-applying-devops
+- learn.wwl.leverage-ai-tools.explore-potential-azure-cognitive-services
+- learn.wwl.leverage-ai-tools.discover-business-value-azure-open-ai-service
+- learn.wwl.leverage-ai-tools.knowledge-check
+- learn.wwl.leverage-ai-tools.summary
+badge:
+  uid: learn.wwl.leverage-ai-tools.badge
