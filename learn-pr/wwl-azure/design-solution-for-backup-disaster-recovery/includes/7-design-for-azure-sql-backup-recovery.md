@@ -4,7 +4,7 @@ It's essential that you can recover your SQL database data. You should consider 
 
 Both SQL Database and SQL Managed Instance use SQL Server technology to create [full backups](/sql/relational-databases/backup-restore/full-database-backups-sql-server) every week, [differential backups](/sql/relational-databases/backup-restore/differential-backups-sql-server) every 12-24 hours, and [transaction log backups](/sql/relational-databases/backup-restore/transaction-log-backups-sql-server) every 5 to 10 minutes. The frequency of transaction log backups is based on the compute size and the amount of database activity. When you restore a database, the service determines which full, differential, and transaction log backups need to be restored.
 
-- **Full backups**: In a full backup, everything in the database and the transaction logs is backed up. SQL Database makes a full back up once a week.
+- **Full backups**: In a full backup, everything in the database and the transaction logs is backed up. SQL Database makes a full backup once a week.
 
 - **Differential backups**: In a differential backup, everything that changed since the last full backup is backed up. SQL Database makes a differential backup every 12 - 24 hours.
 
