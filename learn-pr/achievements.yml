@@ -1441,7 +1441,7 @@ achievements:
   type: badge
   title: Identify abnormal time-series data with Anomaly Detector
   summary: Learn how to detect anomalies in real-time from an IoT time-series data stream using univariate Azure Anomaly Detector API. In addition, users will learn how to train an AI model using the multivariate Anomaly Detector API to identify outliers, unexpected data patterns or data that deviate significantly from the norm..
-  iconUrl: /training/achievements/identify-abnormal-time-series-data-anomaly-detector.svg
+  iconUrl: /training/achievements/anomaly-detector-abnormal-time-series.svg
 - uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.badge
   type: badge
   title: Trigger an Azure Event Grid workflow from an IoT device
