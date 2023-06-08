@@ -10,10 +10,10 @@ Azure Data Explorer offers a help cluster with different types of data preloaded
 
 #### Prerequisites
 
-This environment requires a Microsoft account or an Azure Active Directory user identity.
-
 > [!div class="nextstepaction"]
 > [Azure Data Explorer help cluster](https://dataexplorer.azure.com/clusters/help)
+
+This environment requires a Microsoft account or an Azure Active Directory user identity.
 
 #### Run sample query
 
