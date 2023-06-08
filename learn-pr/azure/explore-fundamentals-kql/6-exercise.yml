@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.explore-fundamentals-kql.exercise-2
-title: "Exercise: Run different types of KQL queries"
+title: "Exercise: Different types of KQL queries"
 metadata:
   title: exercise
   description: "Practice using the different types of sample queries shown in the previous unit."
