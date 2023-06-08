@@ -4,11 +4,10 @@ title: View metrics and evaluate models
 metadata:
   title: View metrics and evaluate models
   description: "Learn how to retrieve metrics and evaluate models in Azure Machine Learning."
-  ms.date: 02/14/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-view-metrics-evaluate-models.md)]

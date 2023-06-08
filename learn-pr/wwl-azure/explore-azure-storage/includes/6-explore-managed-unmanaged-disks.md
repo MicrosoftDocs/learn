@@ -1,5 +1,7 @@
 
 
+
+
 When deploying an Azure VM, you can use the unmanaged or managed disk type to host the operating system disk and can optionally define data disks. Your decision has important implications for functionality, manageability, and pricing.
 
 ## Unmanaged disks

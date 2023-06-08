@@ -47,3 +47,5 @@ Any device used to access Exchange on-premises is checked for compliance when de
 The Intune Exchange connector pulls in all the Exchange ActiveSync records that exist at the Exchange server so Intune can take these EAS records and map them to Intune device records. These records are devices enrolled and recognized by Intune. This process allows or blocks e-mail access.
 
 If the EAS record is brand new, and Intune isn't aware of it, Intune issues a command that blocks access to e-mail. The following diagram shows more details on how this process works.
+
+:::image type="content" source="../media/conditional-access-intune-common-ways-1.png" alt-text="Diagram showing how the EAS process works.":::

@@ -4,11 +4,11 @@ title: Configure early termination
 metadata:
   title: Configure early termination
   description: "Configure early termination"
-  ms.date: 11/17/2022
+  ms.date: 06/01/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
 durationInMinutes: 8
 content: |
   [!include[](includes/4-configure-early-termination.md)]

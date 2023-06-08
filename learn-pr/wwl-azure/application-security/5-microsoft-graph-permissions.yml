@@ -4,12 +4,11 @@ title: Configure Microsoft Graph permissions
 metadata:
   title: Configure Microsoft Graph permissions
   description: "Configure Microsoft Graph permissions"
-  ms.date: 02/24/2023
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/5-microsoft-graph-permissions.md)]

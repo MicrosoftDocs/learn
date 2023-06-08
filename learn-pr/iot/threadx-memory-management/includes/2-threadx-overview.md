@@ -1,12 +1,12 @@
 ## Introduction
 
-Before investigating memory management options, let's first get an overview of ThreadX services and data types. ThreadX must provide a variety of services to the developer of real-time embedded systems. These services allow the developer to create, manipulate, and manage system resources and entities to facilitate application development.
+Before investigating memory management options, let's first get an overview of ThreadX services and data types. ThreadX must provide various services to the developer of real-time embedded systems. These services allow the developer to create, manipulate, and manage system resources and entities to facilitate application development.
 
 This image contains a summary of these services and components:
 
 :::image type="content" alt-text="Diagram that lists ThreadX services and components in a table." source="../media/services-components.svg" border="false" loc-scope="Azure":::
 
-In this module, we'll concentrate on threads, memory byte pools, and memory block pools. We'll discuss the other components in later modules.  
+In this module, we concentrate on threads, memory byte pools, and memory block pools. We discuss the other components in later modules.  
 
 ThreadX uses special primitive data types that map directly to data types of the underlying C compiler. The purpose of these data types is to ensure portability between different C compilers.
 

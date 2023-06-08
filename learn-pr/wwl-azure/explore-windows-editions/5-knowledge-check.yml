@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/12/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -59,14 +59,14 @@ quiz:
     - content: "Windows 10 Enterprise only"
       isCorrect: false
       explanation: "Incorrect. Windows 10 Enterprise isn't the only version of Windows that supports the ability to join Azure Active Directory. Try again."
-  - content: "You're the IT Support professional for Contoso, a large enterprise organization that's a Microsoft Volume License customer. Contoso needs to deploy a set of Windows 11 computers for an isolated office that won't be managed for at least six months. Which of the following Windows 11 editions would be the best to deploy given Contoso's requirements?"
+  - content: "You're the IT Support professional for Contoso, a large enterprise organization that's a Microsoft Volume License customer. Contoso needs to deploy a set of Windows 11 computers for an isolated office that won't be managed for at least six months. Given Contoso's requirements, which of the following Windows 11 editions would be the most suitable for deployment?"
     choices:
     - content: "Pro edition"
       isCorrect: false
-      explanation: "Incorrect. The Pro edition is available to everyone and not just Volume License customers. It's also targeted to small and mid-sized businesses rather than large enterprises, such as Contoso. Try again."
-    - content: "Enterprise edition"
+      explanation: "incorrect choice"
+    - content: "Home edition"
       isCorrect: false
-      explanation: "Incorrect. While Enterprise edition is targeted too large enterprise organizations and is available to Volume License customers, it's not the recommended solution for organizations with restrictive change requirements such as Contoso. Try again."
-    - content: "Enterprise LTSC edition"
+      explanation: "incorrect choice"
+    - content: "Enterprise edition"
       isCorrect: true
-      explanation: "Correct. The Enterprise LTSC edition is available to Volume License customers. What differentiates it from the Enterprise edition is that Enterprise LTSC is designed not just for large enterprise organizations, but for organizations with restrictive change requirements. Since this version does not receive feature updates, it would be the best solution for Contoso's isolated office that won't be managed for at least six months."
+      explanation: "correct choice"

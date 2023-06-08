@@ -93,4 +93,4 @@ When you give the AI model a real conversation, it can generate a better respons
 ```
 
 > [!NOTE]
-> `ChatCompletion` is the only supported option for `gpt-4` models, and is preferred when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `ChatCompletion` endpoint, but `Completion` is available for `gpt-3` generation models.
+> `Completion` is available for all `gpt-3` generation models, while `ChatCompletion` is the only supported option for `gpt-4` models and is the preferred endpoint when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `ChatCompletion` endpoint.
