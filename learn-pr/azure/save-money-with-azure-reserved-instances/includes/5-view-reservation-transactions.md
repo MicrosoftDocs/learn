@@ -28,10 +28,10 @@ Enterprise Agreement and Microsoft Customer Agreement customers can get the purc
 
 1. In the Azure portal, go to **Cost management + Billing**.
 
-1. Select the billing account, select **Usage + charges**, and then select **Download** to get the usage details CSV file.
+1. Select the billing account, select **Usage + prices**, and then select **Download** to get the usage details in a CSV file.
 
-1. Filter for **Charge Type** = **Purchase**.
+1. In the CSV file, filter for **chargeType** = **Purchase**.
 
-1. Select all records where **Publisher** = **Azure**.
+1. Select all records where **provider** = **Azure**.
 
 You can also get usage details data [by using APIs](/azure/cost-management-billing/reservations/understand-reserved-instance-usage-ea#get-azure-consumption-and-reservation-usage-data-using-api).

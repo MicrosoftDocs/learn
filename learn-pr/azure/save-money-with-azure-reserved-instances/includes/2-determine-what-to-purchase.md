@@ -1,6 +1,6 @@
-It's important to understand what reservations are first, and how they work. Reservations provide a billing discount only, and don't affect the runtime state of your resources. After you purchase a reservation, the discount automatically applies to matching resources. No resource tagging or restarting is needed. At the end of your reservation term, the reservation expires, and the discount stops applying unless you renew the reservation.
+Before you can determine what to purchase, it's important to understand what reservations are and how they work. Reservations provide a billing discount only, and don't affect the runtime state of your resources. After you purchase a reservation, the discount automatically applies to matching resources. No resource tagging or restarting is needed. At the end of your reservation term, the reservation expires, and the discount stops applying unless you renew the reservation.
 
-Before you purchase a reservation, assessing your consistent base resource usage is key to maximizing your benefit. All reservations, except Azure Databricks, are applied on an hourly basis. If you purchase more reserved quantity than what you use on a consistent hourly basis, then your reservation is underutilized. Unused reserved capacity doesn't carry over from one hour to the next, and leads to waste.
+Before you purchase a reservation, assess your consistent base resource usage in order to maximize your benefit. All reservations, except Azure Databricks, are applied on an hourly basis. If you purchase more reserved quantity than what you use on a consistent hourly basis, then your reservation is underutilized. Unused reserved capacity doesn't carry over from one hour to the next, and leads to waste.
 
 There are multiple methods to determine what to purchase. This unit describes the tools available to help you determine the best Azure Reservations for your workloads.
 
@@ -8,11 +8,11 @@ There are multiple methods to determine what to purchase. This unit describes th
 
 Azure automatically analyzes your usage over the last 7, 30, and 60 days, and provides purchase recommendations to maximize your savings.
 
-To see purchase recommendations, sign in to the Azure portal. Navigate to **Reservations**, select **Add**, and then select the product that you want to purchase reservations for. The page shows recommended product quantities based on your usage pattern. If you change the scope, recommendations are updated for the new scope. Here’s an example showing recommendations.
+To see purchase recommendations, sign in to the Azure portal. Navigate to **Reservations**, select **Add**, and then select the product that you want to purchase reservations for. The page shows recommended product quantities based on your usage pattern. If you change the scope, recommendations are updated for the new scope. The following example shows recommendations.
 
 :::image type="content" source="../media/2-select-product-recommended-quantity.png" alt-text="Screenshot showing recommended quantities." lightbox="../media/2-select-product-recommended-quantity.png" :::
 
-You can group the recommendations by the smallest instance size in an instance flexibility group by using the toggle option shown in the previous example.
+You can group the recommendations by the smallest instance size in an *instance flexibility group* by using the toggle option shown in the previous example.
 
 When you select **See details** for a recommendation, you see the past usage pattern and your projected savings for a different quantity.
 
@@ -38,7 +38,7 @@ To view purchase recommendations in Advisor, navigate to **Advisor** in the Azur
 
 ## Use the Reservation Coverage report in the Cost Management app
 
-Enterprise Agreement and Microsoft Customer Agreement customers can use the VM RI Coverage report for VMs and purchase recommendations. This is a great tool to use to determine the different instance size groups that are currently used by your organization. It also lets you see a breakdown of the total usage alongside the usage that's already covered by reserved instances if you have purchased reservations in the past.
+Enterprise Agreement and Microsoft Customer Agreement customers can use the VM RI Coverage report for VMs and purchase recommendations. This is a great tool for determining the different instance size groups that are currently used by your organization. It also lets you see a breakdown of the total usage alongside the usage that's already covered by reserved instances if you purchased reservations in the past.
 
 1. Get the [Cost Management App for Power BI](https://appsource.microsoft.com/product/power-bi/costmanagement.azurecostmanagementapp).
 

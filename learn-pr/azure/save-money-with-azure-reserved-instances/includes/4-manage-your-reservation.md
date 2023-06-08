@@ -13,7 +13,7 @@ You can also manage reservation purchases programmatically. For more information
 
 You can delegate access management for a reservation order in the Azure portal using the **Reservation order** with **Access control (IAM)**.
 
-The reservation is a child object to the *Reservation Order*. When granting someone permissions, it's best to grant permissions to the reservation order. Access on the order allows the user to make commercial transactions, such as an exchange or refund.
+The reservation is a child object of the *Reservation Order*. When granting someone permissions, it's best to grant permissions to the reservation order. Access on the order allows the user to make commercial transactions, such as an exchange or refund.
 
 :::image type="content" source="../media/4-role-assignment.png" alt-text="Screenshot showing how to add role assignment using access control." lightbox="../media/4-role-assignment.png" :::
 
