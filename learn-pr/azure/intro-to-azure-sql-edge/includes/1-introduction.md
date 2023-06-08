@@ -12,7 +12,7 @@ You don't want to create new apps on a proprietary system, solely for vehicle-se
 
 ## What will we be doing?
 
-Learning how to evaluate whether Azure SQL Edge can interact correctly with your edge-based apps and IoT devices. You also learn how Azure SQL Edge's familiar engine and toolset enable you to optimize data ingestion and analysis. In this module, you learn that Azure SQL Edge is:
+Learning how to evaluate whether Azure SQL Edge can interact correctly with your edge-based apps and IoT devices. Also learning how Azure SQL Edge's familiar engine and toolset enable you to optimize data ingestion and analysis. In this module, you learn that Azure SQL Edge is:
 
 - Powerful enough to support edge compute.
 - Secure enough to help meet the privacy needs of IoT applications.

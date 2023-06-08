@@ -40,15 +40,15 @@ quiz:
       explanation: "Incorrect. Connectivity relates to how well apps work when connected and disconnected from the internet."
   - content: "Which of the following statements about Azure SQL Edge is true?"
     choices:
-    - content: "SQL Edge implements a proprietary query language."
+    - content: "Azure SQL Edge implements a proprietary query language."
       isCorrect: false
-      explanation: "Incorrect. SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar."
+      explanation: "Incorrect. Azure SQL Edge supports a large subset of the T-SQL surface area with which developers are familiar."
     - content: "You can work with your Azure SQL Edge data by using familiar BI tools such as Microsoft Power BI and Tableau software."
       isCorrect: true
       explanation: "Correct. You can use these and other Microsoft tools."
-    - content: "SQL Edge is based on a standalone codebase."
+    - content: "Azure SQL Edge is based on a standalone codebase."
       isCorrect: false
-      explanation: "Incorrect. SQL Edge is built on the same codebase as SQL Server and SQL Database."
+      explanation: "Incorrect. Azure SQL Edge is built on the same codebase as SQL Server and SQL Database."
   - content: "Which of these choices can be used to orchestrate Azure SQL Edge device infrastructure?"
     choices:
     - content: "Kubernetes containers."
