@@ -1,13 +1,13 @@
 ### YamlMime:Module
 uid: learn.wwl.use-classes-properties-method
 metadata:
-  title: Use Classes, Properties, and Methods
+  title: Use classes, properties, and methods
   description: "This module introduces using classes, properties, and methods."
   ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-title: Use Classes, Properties, and Methods
+title: Use classes, properties, and methods
 summary: This lesson shows how to use a class and access the properties and the methods of that class. After you implement properties and methods in a class, you can then use the class in your application to track information about your objects, and perform actions on the objects.
 abstract: |
   - Instantiate a class
