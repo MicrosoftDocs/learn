@@ -531,11 +531,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/achievements/learn.azure.organize-blobs-properties-metadata.badge.yml",
-      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
       "redirect_url": "/azure/sql-database/sql-database-cloud-migrate",
       "redirect_document_id": false
