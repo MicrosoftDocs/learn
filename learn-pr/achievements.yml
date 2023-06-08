@@ -157,6 +157,11 @@ achievements:
   title: Copy and move blobs from one container or storage account to another from the command line and in code
   summary: Use .NET, AzCopy, and Azure CLI to migrate files between Azure storage accounts.
   iconUrl: /training/achievements/copy-blobs-from-command-line-and-code.svg
+- uid: learn.azure.organize-blobs-properties-metadata.badge
+  type: badge
+  title: Organize Azure Storage blobs with properties and metadata
+  summary: Find out about Azure Storage blob properties and metadata, how to organize blob data, and create an app with .NET to retrieve metadata.
+  iconUrl: /training/achievements/organize-blobs-with-properties-and-metadata.svg
 - uid: learn.introduction-to-regression.badge
   type: badge
   title: Predict numeric values with regression
