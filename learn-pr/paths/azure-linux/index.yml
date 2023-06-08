@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-linux-vm
-- azure-virtual-machine
+- azure-virtual-machines
 subjects:
 - cloud-computing
 modules:
