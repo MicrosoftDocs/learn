@@ -2,7 +2,8 @@
 
 When it comes to planning an application, you start by thinking about what you want to build, then plan the design and build it out from there. You think about what you want to build, then identify the classes/objects that it will consist of. This process of identifying the classes/objects that your program consists of is often referred to as abstraction. Abstraction is the idea of taking what you want to build and then "abstracting" it out into classes that represent the various pieces of your application. For example, in your house building application those pieces might be rooms, plumbing, etcetera.
 
-[!NOTE] As mentioned previously, classes are the design or blueprint for an object, detailing the members of an object. Objects are the “live” embodiment, so to speak, of that class in your computers Random Access Memory or RAM. They're the blueprint for what is called the “in-memory” object that actually does what the class blueprint or design has specified.
+>[!NOTE] 
+>As mentioned previously, classes are the design or blueprint for an object, detailing the members of an object. Objects are the “live” embodiment, so to speak, of that class in your computers Random Access Memory or RAM. They're the blueprint for what is called the “in-memory” object that actually does what the class blueprint or design has specified.
 
 To tell it another way, each object represents a class. The class is the building block of an object-oriented application. And, in order to use a class in a completed application, you must create an object based on the class, as it's the live, in-memory, representation of that class. The purpose of this lesson is to differentiate between a class and an object, and to create a class. This module explains the differences between a class and an object, and shows you how to create a class.
 
