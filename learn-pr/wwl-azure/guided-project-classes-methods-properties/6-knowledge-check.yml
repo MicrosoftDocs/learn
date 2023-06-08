@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
@@ -34,14 +34,11 @@ quiz:
     - content: "Make sure that an ant is within the grid (I and J represent the lower and upper bound x, y coordinates)"
       isCorrect: true
       explanation: "Correct. This line of code is checking to see if an ant is still on the grid"
-  - content: "Why did we use the Langton Ant project as an exercise?"
+  - content: "Why did you use the Langton Ant project as an exercise?"
     choices:
     - content: "To learn something about Alan Turing and the universal Turing machine"
       isCorrect: false
       explanation: "Incorrect. Although you may do your own research on Alan Turing, he was not the only reason for this exercise"
-    - content: "To learn about the Langton Ant project"
-      isCorrect: false
-      explanation: "Incorrect. Although we did use Langton's Ant for this exercise, the purpose of the exercise was not only to learn about Langton's Ant"
     - content: "To learn about how to create and use classes, methods, and properties"
       isCorrect: false
       explanation: "Incorrect. Although close, this exercise was not solely about the previously mentioned aspects of object-oriented programming"

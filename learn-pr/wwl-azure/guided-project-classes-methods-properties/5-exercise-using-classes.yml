@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-classes-methods-properties.exercise-using-classes
-title: Exercise-Using Classes
+title: Exercise - Use classes
 metadata:
-  title: Exercise-Using Classes
+  title: Exercise - Use classes
   description: "How to introduce incremental enhancements to your application."
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial

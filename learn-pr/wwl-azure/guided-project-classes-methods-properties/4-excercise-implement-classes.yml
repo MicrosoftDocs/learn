@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.guided-project-classes-methods-properties.excercise-implement-classes
-title: Exercise-Implement Classes
+title: Exercise - Implement classes
 metadata:
-  title: Exercise-Implement Classes
+  title: Exercise - Implement classes
   description: "Create the main classes for the LangtonsAnt application."
-  ms.date: 06/07/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
