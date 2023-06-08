@@ -50,7 +50,7 @@ quiz:
     choices:
     - content: "Exchange unused quantity for a different reservation"
       isCorrect: true
-      explanation: "Reservations can be optimized by exchanging a unused quantity for a different reservation."
+      explanation: "Reservations can be optimized by exchanging an unused quantity for a different reservation."
     - content: "Assign new users permissions on the reservation"
       isCorrect: false
       explanation: "Changing permissions doesn't affect how the reservation is applied."
