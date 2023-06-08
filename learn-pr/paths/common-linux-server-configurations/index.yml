@@ -2,7 +2,7 @@
 uid: learn.azure-common-linux-server-configurations
 metadata:
   title: Common Linux Server Configurations
-  description: This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy an SQL server, a web application server (with a MEAN stack), perform a database migration, and manage your IT operations with Azure Automanage.
+  description: This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy an SQL server, a web application server using the MEAN stack, perform a database migration, and manage your IT operations with Azure Automanage.
   brand: azure
   ms.date: 06/07/2023
   author: ChaseCrum
@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-azure
 title: Common Linux Server Configurations
 summary: |
-  This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy an SQL server, a web application server (with a MEAN stack), perform a database migration, and manage your IT operations with Azure Automanage.
+  This learning path provides an overview for deploying common Linux server functions on Azure virtual machines. Learn how to deploy an SQL server, a web application server using the MEAN stack, perform a database migration, and manage your IT operations with Azure Automanage.
 prerequisites: |
   - Ability to configure and administer a Linux server
   - Access to a Microsoft Azure account
