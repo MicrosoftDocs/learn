@@ -4,11 +4,10 @@ title: Interactive lab simulation
 metadata:
   title: Interactive lab simulation
   description: "Interactive lab simulation"
-  ms.date: 05/31/2023
+  ms.date: 06/08/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 45
 content: |
   [!include[](includes/11-simulation-machine-backups.md)]
