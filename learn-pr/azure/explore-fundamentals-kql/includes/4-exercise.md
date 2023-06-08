@@ -2,11 +2,15 @@ You've seen the general structure of a KQL query. Now try running a few sample q
 
 ## Access demo query environments
 
-There are several products that use KQL and offer free environments for practicing sample queries. You can copy/paste the below query examples into these environments.
+There are several products that use KQL and offer free environments for practicing sample queries. Choose the tab below that corresponds to the query environment you want to use.
+
+You can copy/paste the below query examples into these environments.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
 Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
+
+#### Prerequisites
 
 This environment requires a Microsoft account or an Azure Active Directory user identity.
 
@@ -30,6 +34,8 @@ StormEvents
 
 Microsoft Sentinel and Log Analytics both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
 
+#### Prerequisites
+
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
 > [!div class="nextstepaction"]
@@ -48,6 +54,8 @@ LAQueryLogs
 ### [Azure Resource Graph](#tab/azure-resource-graph)
 
 The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
+
+#### Prerequisites
 
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
