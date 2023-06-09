@@ -2,23 +2,23 @@
 
 This unit discusses the prebuilt AI models that are available in Azure Cognitive Services. They are a solid alternative to developing internally custom AI models.
 
-## What are Azure Cognitive Services?
+## What is Azure Cognitive Services?
 
-When thinking of adopting AI into your business, you should consider prebuilt AI services first. Azure Cognitive Services is a Microsoft product that delivers AI as **SaaS**. It includes pre-trained models that have been developed by Microsoft global researchers and data scientists to solve common problems. To avoid reinventing the wheel, businesses can leverage prebuilt services to achieve quality and accelerate delivery of technology solutions.
+When thinking of adopting AI into your business, you should consider prebuilt AI services first. Azure Cognitive Services is a Microsoft product that delivers AI as **SaaS**. It includes pretrained models developed by Microsoft global researchers and data scientists to solve common problems. To avoid reinventing the wheel, businesses can leverage prebuilt services to achieve quality and accelerate delivery of technology solutions.
 
 It's better to use the Azure Cognitive Services that offer prebuilt AI services in vision, speech, language, search, or decision-making to solve common scenarios. This brings AI within reach of every developer and organization without requiring machine learning expertise. As a result, it enables developers of all skill levels to easily add intelligence to new or existing business applications.
 
 There are important benefits of using Azure Cognitive Services instead of custom AI models:
 
-* **Empower citizen developers:** Cognitive Services are designed to be used by people with little data science expertise. For example, they usually handle most training decisions and provide basic testing results after training. Business users can use Cognitive Services to adapt it to their business needs, with some guidance and troubleshooting from the data science team.
+* **Empower citizen developers:** Cognitive Services is designed for people with little data science expertise. For example, they usually handle most training decisions and provide basic testing results after training. Business users can use Cognitive Services to adapt it to their business needs, with some guidance and troubleshooting from the data science team.
 
-* **Save costs:** Since Cognitive Services are serverless, they're usually cheaper than developing and training the model internally.
+* **Save costs:** Since Cognitive Services is serverless, they're usually less costly than developing and training the model internally.
 
-* **Deployment flexibility:** You can export Cognitive Services models and run them wherever you need, in the cloud, on-prem, or on the edge.
+* **Deployment flexibility:** You can export Cognitive Services models and run them wherever you need, in the cloud, on-premises, or on the edge.
 
 ## What can you do with Azure Cognitive Services?
 
-There are five big families of Cognitive Services: speech, language, vision, decision, and Azure OpenAI Service. Each include several AI models and complement each other.
+There are five large families of Cognitive Services: speech, language, vision, decision, and Azure OpenAI Service. Each includes several AI models and complement each other.
 
 * **Speech:** These models deal with oral conversation. They can transform speech to text and vice-versa. It's also possible to translate what the speaker says and identifying each speaker. Models can even suggest pronunciation corrections to the speakers.
 
@@ -30,7 +30,7 @@ There are five big families of Cognitive Services: speech, language, vision, dec
 
 * **Azure OpenAI Service:** Under this label, Microsoft offers some of the latest generative AI models developed by OpenAI. The next unit will discuss them in more depth.
 
-All Azure Cognitive Services deliver AI models as SaaS. If you need to customize the product and built your own SaaS, **Azure Applied AI Services** enables you to do so without increasing data science complexity. Azure Applied AI Services are built on top of Azure Cognitive Services and focus on key scenarios. For example, Azure Form Recognizer incorporates OCR and text analytics models to extract data from invoices, receipts, and other documents.
+All Azure Cognitive Services deliver AI models as SaaS. If you need to customize the product and built your own SaaS, **Azure Applied AI Services** enables you to do so without increasing data science complexity. Azure Applied AI Services is built on top of Azure Cognitive Services and focus on key scenarios. For example, Azure Form Recognizer incorporates OCR and text analytics models to extract data from invoices, receipts, and other documents.
 
 ## Use Azure Cognitive Services in a real use case
 

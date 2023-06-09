@@ -16,7 +16,7 @@ The models included in Azure OpenAI Service focus on generative AI. That is, the
 
 * **Image:** DALL-E models that create visuals. They translate the user's prompt into an image. These models can be used to generate all kinds of art: realistic photographs, illustrations, logos, sketches, and so on. DALL-E successfully recreates styles when asked to.
 
-* **Code:** Codex models are specifically designed to translate user's prompts into working programing code. Developers can use them to create code snippets and speed up their performance. Codex provides results in several programming languages. It's technology behind GitHub Copilot.
+* **Code:** Codex models are designed to translate user's prompts into working programing code. Developers can use them to create code snippets and speed up their performance. Codex provides results in several programming languages. It's technology behind GitHub Copilot.
 
 * **More complex models:** Embeddings models provide the ground for data scientists to build more complex AI models. They analyze texts and create an abstract mapping of their meaning. These mappings help AI experts find similarities in texts. Embeddings models are key in scenarios involving searches, recommendations, or anomalies.
 
@@ -40,7 +40,7 @@ In conclusion, Azure OpenAI Service combines what's best of OpenAI and of Micros
 
 Let's imagine how an organization could develop a virtual assistant with Azure OpenAI Service. In the last unit's use case, we mentioned this possibility to deliver post-sales services.
 
-Customers could interact with the assistant to ask information about their orders, purchases, or warranties. They could talk to this assistant by chat or call. Previous generations of virtual assistants required designing the conversation flows, and this approach made conversations rigid to some extent. An assistant powered by a GPT model wouldn't suffer from this obstacle. It would require no workflow design and it could engage in more flexible, natural conversations. This perk implies that the assistant would be able to solve questions and tasks without specifical training, as long as it's provided the information. This approach saves time and resources from the development team.
+Customers could interact with the assistant to ask information about their orders, purchases, or warranties. They could talk to this assistant by chat or call. Previous generations of virtual assistants required designing the conversation flows, and this approach made conversations rigid to some extent. An assistant powered by a GPT model wouldn't suffer from this obstacle. It would require no workflow design and it could engage in more flexible, natural conversations. This perk implies that the assistant would be able to solve questions and tasks without specific training, as long as it's provided the information. This approach saves time and resources from the development team.
 
 The AI team should feed the virtual assistant personal data and internal documentation to answer doubts about the refund policy, shipment status, and so on. Azure OpenAI Service allows to do this operation safely, without risk of misusing data. Ensuring client data privacy is key, especially when the business deals with sensible information such as credit card numbers.
 

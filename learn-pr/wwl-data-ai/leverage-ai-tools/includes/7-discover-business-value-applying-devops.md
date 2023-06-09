@@ -7,18 +7,18 @@ MLOps processes and tools help those teams collaborate and provide visibility th
 
 ## Model reproducibility
 
-During initial iterative training and later model retraining, there are a few things that can make the complex process more manageable. One of them is to keep models reproducible, which means they can be easily run on the same dataset by any team member with same or similar results. Reproducibility is achieved by documenting processes and sharing resources.
+During initial iterative training and later model retraining, there are a few things that can make the complex process more manageable. One of them is to keep models reproducible, which means they can easily be run on the same dataset by any team member with same or similar results. Reproducibility is achieved by documenting processes and sharing resources.
 
 First, it's helpful to centrally **manage assets** like environments, code, datasets, and models so teams can share and reuse them.
 
 :::row:::
 :::column span="2":::
 * **Model registry:** As teams experiment with different versions of a model, a model registry provides a central place to save each version. With a registry, teams can easily revert to a previous version if something isn't working, even after the solution has gone into production. The model registry also serves as an audit trail for each model's history.
-* **Code management:** Technical decision-makers will need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code.
+* **Code management:** Technical decision-makers need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code.
 :::column-end:::
 :::column span="2":::
 :::image type="complex" source="../media/7-discover-business-value-applying-devops-1.png" alt-text="Illustration of the MLOps practices.":::
-There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There is an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They are separated by lines forming a cross between the four. These say, “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
+There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There's an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They're separated by lines forming a cross between the four. These are: “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
 :::image-end:::
 :::column-end:::
 :::row-end:::
@@ -39,26 +39,26 @@ Metrics usually compare what the model has predicted with what it should have pr
 It's critical to validate performance metrics against the business use case. For example, perhaps you designed a model to predict patient health. As a healthcare provider dealing with life and death situations, you likely prefer to have false positive diagnoses rather than an incredibly high rate of accuracy that misses diagnoses.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/start-ml-lifecycle-mlops-3.png" alt-text="Graphic of an ML model confusion matrix.":::
+:::image type="complex" source="../media/7-discover-business-value-applying-devops-2.png" alt-text="Graphic of an ML model confusion matrix.":::
 The confusion matrix is a two-by-two table. The y-axis is titled, “Predicted Label,” and the x-axis is titled, “True Label.” Along both axes starting in the top left, the first cell is labeled “no,” the second is labeled “yes.” The diagonal cells in the matrix (top left, bottom right) are blue, and contain the values 167 and163. The top right cell is light blue and contains the value 1. The bottom left cell is white and contains the value 0. Below the graphic, text readers, “alignment of true and predicted values indicates high accuracy.” 
 :::image-end:::
 :::column-end:::
 :::row-end:::
 
-If the model is a newer version of an existing model, you'll need to see if it performs better than the previous one on key metrics.
+If the model is a newer version of an existing model, you need to see if it performs better than the previous one on key metrics.
 
 ## Model deployment
 
 There are several options for deploying the model into production. Data scientists and AI engineers must work together to find out the best option for each case.
-* **Cloud:** One option is deploying models using the cloud, often leveraging an API. There are scalable tools to automate and simplify this process, like Kubernetes or Azure Container Instances.
+* **Cloud:** One option is deploying models using the cloud, often leveraging an application programming interface (API). There are scalable tools to automate and simplify this process, like Kubernetes or Azure Container Instances.
 * **On-prem:** Models can also be deployed directly onsite, in the organization's own servers.
 * **Edge:** It's also possible to deploy models on edge devices, like cameras, drones, and machinery. This option may be helpful in IoT scenarios.
 
-No matter where you deploy the model, the workflow is similar. First, you'll register the model in the model registry. Then, you'll prepare to deploy the model by specifying assets, usage, and the compute target. Finally, you'll deploy it to your desired location, test it, and continue to monitor model-specific metrics throughout the lifecycle.
+No matter where you deploy the model, the workflow is similar. First, you register the model in the model registry. Then, you prepare to deploy the model by specifying assets, usage, and the compute target. Finally, you deploy it to your desired location, test it, and continue to monitor model-specific metrics throughout the lifecycle.
 
 ## Model retraining
 
-Although this is the end of the development process, this is just the beginning of the maintenance cycle. Models need to be monitored and periodically retrained to correct performance issues and take advantage of newer training data. To set yourself up for success, you'll want to create a retraining loop—or a systematic and iterative process to continually refine and ensure the accuracy of the model.
+Although this is the end of the development process, this is just the beginning of the maintenance cycle. Models need to be monitored and periodically retrained to correct performance issues and take advantage of newer training data. To set yourself up for success, you want to create a retraining loop—or a systematic and iterative process to continually refine and ensure the accuracy of the model.
 
 This process may seem overly complicated. Keep in mind that it can be greatly simplified by using prebuilt models. MLOps tools like Azure Machine Learning don't necessarily need to be populated with custom models, they also accept prebuilt models. In this sense, Azure Cognitive Services is a great alternative, as it offers faster results with less data science expertise required.
 

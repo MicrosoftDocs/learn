@@ -3,7 +3,7 @@ uid: learn.wwl.leverage-ai-tools
 metadata:
   title: Leverage AI tools and resources for your business
   description: "Learn the primary concepts and technologies of AI, and how Microsoft is turning the latest AI into tools, products, and services that organizations can use"
-  ms.date: 06/08/2023
+  ms.date: 06/09/2023
   author: Adriamen
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -11,12 +11,12 @@ title: Leverage AI tools and resources for your business
 summary: This module provides a high-level overview of the primary concepts of AI and the technologies behind it. We then dive into how Microsoft is turning the latest advancements in AI into tools, products, and services that can be used by organizations.
 abstract: |
   In this module, you will:
-    - Understand why is AI making an impact in businesses now.
-    - Understand what is AI and its capabilities.
-    - Understand how to use prebuilt AI with no machine learning expertise.
-    - Understand the basics of machine learning and what kinds of business problems to apply it.
+  * Get familiar with available AI tools and approaches.
+  * Understand basic AI terminology and practices.
+  * Identify AI use cases.
 prerequisites: |
-  None
+  * Basic understanding of IT concepts.
+  * Basic understanding of business concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

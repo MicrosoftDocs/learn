@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/08/2023
+  ms.date: 06/09/2023
   author: Adriamen
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -16,10 +16,7 @@ quiz:
   questions:
   - content: "What's the difference between AI, data science, and machine learning?"
     choices:
-    - content: "AI and machine learning are synonyms. Data science refers to the interdisciplinary field that aims to achieve AI."
-      isCorrect: false
-      explanation: "Incorrect. Machine learning and AI don't mean the same. Machine learning is a technique that uses algorithms to find patterns over time. AI is the ability of a machine or a computer to mimic human-like behavior."
-    - content: "Machine learning is a technique where a machine sifts through data to find patterns over time. AI is an improved version of AI, thanks to LLMs. Data science is the field that makes it possible."
+    - content: "Machine learning is a technique where a machine sifts through data to find patterns over time. AI is an improved version of machine learning, thanks to LLMs. Data science is the field that makes it possible."
       isCorrect: false
       explanation: "Incorrect. Deep learning and reinforcement algorithms powered by massive computing power and applied against big data enable AI. But the algorithms don’t generate the big data."
     - content: "AI is computer's ability to mimic human-like behavior. Machine learning is a technique that uses algorithms to find patterns in data. Data science is a field that uses machine learning and statistics to achieve AI."
@@ -36,9 +33,6 @@ quiz:
     - content: "Microsoft 365 and Azure Machine Learning."
       isCorrect: false
       explanation: "Incorrect. Azure Machine Learning is a platform for data scientists to enable MLOps practices. It's beyond the expertise of our salesperson."
-    - content: "Microsoft Power Platform."
-      isCorrect: false
-      explanation: "Incorrect. Azure Power Platform is a set of low-code products to develop applications. It's beyond the expertise of our salesperson."
     - content: "Microsoft 365, Microsoft Power Platform, and MLOps"
       isCorrect: false
       explanation: "Incorrect. MLOps is a methodology to improve machine learning processes. It's not a product and it's beyond the expertise of our salesperson."
@@ -46,13 +40,10 @@ quiz:
     choices:
     - content: "OpenAI's API because it's better to consume the model from its source. This way, you benefit from most up-to-date AI."
       isCorrect: false
-      explanation: "Incorrect. A specific version of an OpenAI model will perform just as well in Azure OpenAI Service. However, using the public API would compromise the privacy of internal data."
+      explanation: "Incorrect. A specific version of an OpenAI model performs just as well in Azure OpenAI Service. However, using the public API would compromise the privacy of internal data."
     - content: "Azure OpenAI Service because it doesn't compromise the company's internal documentation."
       isCorrect: true
       explanation: "Correct. Azure OpenAI Service delivers OpenAI models while ensuring data privacy. It's the safest option when dealing with confidential data."
-    - content: "Azure Machine Learning because it covers the whole machine learning lifecycle, including latest AI models."
-      isCorrect: false
-      explanation: "Incorrect. Azure Machine Learning may indeed prove useful to develop your application, but it doesn't grant immediate access to OpenAI's models. For that purpose, you'll need Azure OpenAI Service."
-    - content: "GitHub Copilot because it's already based on OpenAI's generative AI, and it'll be useful in helping write the code."
+    - content: "GitHub Copilot because it's already based on OpenAI's generative AI, and it's useful in helping write the code."
       isCorrect: false
       explanation: "Incorrect. GitHub Copilot may indeed prove useful to develop your application. However, it can only deliver code. To receive insights, you should use the GPT model in Azure OpenAI Service."

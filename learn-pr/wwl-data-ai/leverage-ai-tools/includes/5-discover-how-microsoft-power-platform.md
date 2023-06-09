@@ -3,7 +3,7 @@ AI embedded in everyday applications may not be enough to power the business app
 
 ## What is Microsoft Power Platform?
 
-Microsoft Power Platform is a low-code or no-code set of services designed to simplify the process of building solutions. It provides building blocks that help teams work much faster. Even if Power Platform isn't centered on AI, its services are often powered by AI and help you create smart solutions.
+Microsoft Power Platform is a low-code or no-code set of services designed to simplify the process of building solutions. It provides building blocks that help teams work faster. Even if Power Platform isn't centered on AI, its services are often powered by AI and help you create smart solutions.
 
 The Power Platform portfolio includes five different products: Power BI, Power Apps, Power Automate, Power Virtual Agents, and Power Pages. It also offers three additional tools: AI Builder, Microsoft Dataverse, and Connectors. Let's see what each of them can do for you.
 
@@ -11,7 +11,7 @@ The Power Platform portfolio includes five different products: Power BI, Power A
 
 ## What can you do with Microsoft Power Platform?
 
-Each of the products contained in Power Platform are conceived to speed up business app development. Beside the specific AI functionalities included in them, they can be connected to Copilot. Thanks to this feature, users can leverage the Copilot generative AI to automatically create the report, workflow, app, website, or chatbot just by describing what they need.
+All of the products contained in Power Platform are used to speed up business app development. Beside the specific AI functionalities included in them, they can be connected to Copilot. Thanks to this feature, users can leverage the Copilot generative AI to automatically create the report, workflow, app, website, or chatbot just by describing what they need.
 
 ### Power BI
 
@@ -27,7 +27,7 @@ Power Automate is a tool for automating repetitive business processes. It saves 
 
 ### Power Virtual Agents
 
-Power Virtual Agents is a tool for building chatbots. It's built over many AI models, mostly those enabling natural language understanding (NLU), so the bot can understand what is being told. However, its AI can also detect pieces of the bot which could be improved, and even automatically implement the improvements.
+Power Virtual Agents is a tool for building chatbots. It's built over many AI models, mostly those enabling natural language understanding (NLU), so the bot can understand what is being said. However, its AI can also detect pieces of the bot that can be improved, and even automatically implement the improvements.
 
 ### Power Pages
 
@@ -35,22 +35,22 @@ Power Pages is a low-code SaaS for creating, hosting, and managing websites.
 
 ### AI Builder
 
-As stated above, AI Builder is a tool that offers prebuilt and custom AI models that can be used by other Power Platform products. It can be integrated in Power Apps and Power Automate. It enables developers with no data science expertise to add a layer of AI to their apps and workflows. For example, it includes models to analyze sentiment, classify categories, or detect entities, key phrases, and languages.
+As previously explained, AI Builder is a tool that offers prebuilt and custom AI models that Power Platform products can use. It can be integrated in Power Apps and Power Automate. It enables developers with no data science expertise to add a layer of AI to their apps and workflows. For example, it includes models to analyze sentiment, classify categories, or detect entities, key phrases, and languages.
 
 ### Microsoft Dataverse
 
-Microsoft Dataverse is the storage option of Power Platform. It's designed to be integrated with all the products above and feed them data. Connecting all the data is key for AI.
+Microsoft Dataverse is the storage option of Power Platform. It's designed to integrate with all the Power Platform products and feed them data. Connecting all the data is key for AI.
 
 ### Connectors
 
-Connectors is the Power Platform tool to connect all components provided by the products above (apps, data) and devices to the cloud.
+Connectors is the tool to connect all components provided by Power Platform  products (apps, data) and devices to the cloud.
 
 ## What is the business value of Microsoft Power Platform?
 
 There are two main ways in which Power Platform creates business value for organizations:
 
 * **Reducing development costs:** It provides the building blocks for teams to create custom solutions in much less time than required when starting by scratch. Teams can build custom apps in just a matter of days or weeks.
-* **Enabling more agile, scalable development:** The low-code philosophy is central to Power Platform. It allows for faster, more agile solution development. It empowers citizen developers, that is, employees with less coding expertise, to provide working solutions to end users. Professional developers can iterate on this version for further improvement. This collaborative development approach implies solutions are available to end users at an earlier stage and much cheaper. This structure is easy to escalate by adding custom functionality.
+* **Enabling more agile, scalable development:** The low-code philosophy is central to Power Platform. It allows for faster, more agile solution development. It empowers citizen developers, that is, employees with less coding expertise, to provide working solutions to end users. Professional developers can iterate on this version for further improvement. This collaborative development approach implies solutions are available to end users at an earlier stage and are less costly. This structure is easy to escalate by adding custom functionality.
 
 The diagram shows how this fusion development approach works.
 
@@ -58,8 +58,8 @@ The diagram shows how this fusion development approach works.
 
 ### Use Microsoft Power Platform to build a smart inventory app
 
-Let's imagine a retail organization needs an app to manage their inventory. Traditionally, it would have been built by professional developers, but that option would take more time. Thanks to Power Platform, the employees in charge of the inventory can become citizen developers and create an app tailored to what they know they need, based on their expertise.
+Let's imagine a retail organization needs an app to manage their inventory. Traditionally, professional developers would build this, but that option would take more time. Thanks to Power Platform, the employees in charge of the inventory can become citizen developers and create an app tailored to what they know they need, based on their expertise.
 
-Citizen developers can use Power Apps to this prototype of the inventory app. They can even explain in natural language their needs and Copilot will translate them to an actual app. Once this prototype is built, professional developers can fill in any potential gaps for further functionalities. Then, professional developers can develop an API to check the inventory in real time and update the data on the app. This data would be stored and managed in Microsoft Dataverse. With the information provided by the API, workflows can be created to automatically detect what's missing and replenish inventory with Power Automate. All these data and operations would be reflected in a Power BI report, so it's easier to understand what's happening with the inventory and take the best data-informed decisions.
+Citizen developers can use Power Apps to this prototype of the inventory app. They can even explain in natural language their needs and Copilot can translate them to an actual app. Once this prototype is built, professional developers can fill in any potential gaps for further functionalities. Then, professional developers can develop an API to check the inventory in real time and update the data on the app. This data would be stored and managed in Microsoft Dataverse. With the information provided by the API, workflows can be created to automatically detect what's missing and replenish inventory with Power Automate. All these data and operations would be reflected in a Power BI report, so it's easier to understand what's happening with the inventory and take the best data-informed decisions.
 
-All the products and services discussed so far deliver prebuilt AI models, so the user doesn't require any data science expertise. If your business requires more ambitious solutions, the next available AI tools require some degree of AI knowledge. To fully benefit from them, let's first learn more about how data science teams work and what's the typical machine learning lifecycle.
+All the products and services we've discussed deliver prebuilt AI models, so the user doesn't require any data science expertise. If your business requires more ambitious solutions, the next available AI tools require some degree of AI knowledge. To fully benefit from them, let's first learn more about how data science teams work and what's the typical machine learning lifecycle.
