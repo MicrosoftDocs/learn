@@ -491,6 +491,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/index.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/1-introduction.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/2-manage-blob-data-using-properties-and-metadata.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/3-view-blob-properties-and-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/4-view-blob-properties-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/5-add-blob-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/7-summary.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
       "redirect_url": "/azure/sql-database/sql-database-cloud-migrate",
       "redirect_document_id": false
@@ -22608,6 +22648,136 @@
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/7-summary.md",
     "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
     "redirect_document_id": false
-  }
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/create-app-service-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/deploy-expressjs-app.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-create-app-service-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-deploy-expressjs-app.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-use-app-review-logs.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-use-resource-group.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/use-app-review-logs.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/use-resource-group.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/configure-app-service-connection-to-cosmos-db.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/create-cosmos-db-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-configure-app-service-connection-to-cosmos-db.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-create-cosmos-db-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-set-up.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-set-up-azure-resources.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/set-up.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/set-up-azure-resources.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  }  
   ]
 }
