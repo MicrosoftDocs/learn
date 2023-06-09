@@ -29,7 +29,7 @@ The reality is somewhere in between. Our model could predict temperature to some
 
 R<sup>2</sup> is only half the story.
 
-R<sup>2</sup> values are widely accepted, but aren't a perfect measure we can use in isolation. They suffer four limitations:
+R<sup>2</sup> values are widely accepted, but aren't a perfect measure we can use in isolation. They suffer from the following limitations:
 
 * Because of how R<sup>2</sup> is calculated, the more samples we have, the higher the R<sup>2</sup>. This can lead us to thinking that one model is better than another (identical) model, simply because R<sup>2</sup> values were calculated using different amounts of data.
 * R<sup>2</sup> values don't tell us how well a model will work with new, previously unseen data. Statisticians overcome this by calculating a supplementary measure, called a *p-value*, which we won't cover here. In machine learning, we often explicitly test our model on another dataset instead.
