@@ -1,6 +1,6 @@
 In this exercise, you work with Woodgrove Bank's developers on distributing tables for the distributed version of Woodgrove Bank payment app's database:
 
-:::image type="complex" source="../media/distributed-entity-relationship-diagram.svg" alt-text=""Diagram of distributed relationships between users, events, event types, and merchants.>":::
+:::image type="complex" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants.":::
    In the diagram, payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign-key relationship to the payment_events table.
 :::image-end:::
 
