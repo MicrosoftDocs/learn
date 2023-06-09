@@ -4,7 +4,7 @@ In this lab, you use some basic SELECT queries to retrieve data from the Adventu
 ## Explore the AdventureWorks database
 We use the AdventureWorks database in this lab, so let’s start by exploring it in Azure Data Studio.
 
-1. Start Azure Data Studio, and in the Connections tab, select the AdventureWorks connection by clicking on the arrow just to the left of the name. This connects to the SQL Server instance and show the objects in the AdventureWorks database.
+1. Start Azure Data Studio, and in the Connections tab, select the AdventureWorks connection by clicking on the arrow just to the left of the name. This connects to the SQL Server instance and shows the objects in the AdventureWorks database.
 1. Expand the Tables folder to see the tables that are defined in the database. There are a few tables in the dbo schema, but most of the tables are defined in a schema named SalesLT.
 1. Expand the SalesLT.Product table and then expand its Columns folder to see the columns in this table. Each column has a name, a data type, an indication of whether it can contain null values, and in some cases an indication that the columns are used as a primary key (PK) or foreign key (FK).
 1. Right-click the SalesLT.Product table and use the SELECT TOP (1000) option to create and run a new query script that retrieves the first 1000 rows from the table.
@@ -12,7 +12,7 @@ We use the AdventureWorks database in this lab, so let’s start by exploring it
 1. Close the SQLQuery_1 pane that contains the query and its results.
 1. Explore the other tables in the database, which contain information about product details, customers, and sales orders. The tables are related through primary and foreign keys, as shown here (you may need to resize the pane to see them clearly):
 
-![Alt text](media/adventureworks-erd.png)
+![sql diagram](media/adventureworks-erd.png)
 
 > [!NOTE]
 > If you’re familiar with the standard AdventureWorks sample database, you may notice that in this lab we are using a simplified version that makes it easier to focus on learning Transact-SQL syntax.
