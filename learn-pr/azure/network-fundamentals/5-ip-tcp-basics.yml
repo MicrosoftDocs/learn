@@ -8,7 +8,7 @@ metadata:
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 13
 content: |
   [!include[](includes/5-ip-tcp-basics.md)]

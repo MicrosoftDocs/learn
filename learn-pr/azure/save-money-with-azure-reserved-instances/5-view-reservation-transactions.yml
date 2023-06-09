@@ -3,8 +3,8 @@ uid: >-
   learn.save-money-with-azure-reserved-instances.view-reservation-transactions
 metadata:
   title: View reservation transactions
-  description: View reservation transactions
-  ms.date: 11/01/2021
+  description: Learn how to view reservation transactions by using Cost Management + Billing.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial

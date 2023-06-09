@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Work with MySQL Databases on Azure
 prerequisites: |
   - Demonstrate an understanding of relational databases.

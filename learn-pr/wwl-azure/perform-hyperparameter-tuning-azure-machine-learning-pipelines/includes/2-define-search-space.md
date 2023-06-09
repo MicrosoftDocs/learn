@@ -33,6 +33,6 @@ from azure.ai.ml.sweep import Choice, Normal
 
 command_job_for_sweep = job(
     batch_size=Choice(values=[16, 32, 64]),    
-    learning_rate=Uniform(min_value=0.05, max_value=0.1),
+    learning_rate=Normal(mu=10, sigma=3),
 )
 ```
