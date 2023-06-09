@@ -22870,7 +22870,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/1-introduction.md ",
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/1-introduction.md",
     "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
     "redirect_document_id": false
   },
@@ -22880,7 +22880,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/3-create-a-transaction.md ",
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/3-create-a-transaction.md",
     "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
     "redirect_document_id": false
   },
@@ -22890,7 +22890,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/5-implement-data-expiration.md ",
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/5-implement-data-expiration.md",
     "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
     "redirect_document_id": false
   },
@@ -22900,7 +22900,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/7-cache-aside-pattern.md ",
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/7-cache-aside-pattern.md",
     "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
     "redirect_document_id": false
   },
