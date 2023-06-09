@@ -1,10 +1,14 @@
 Working with the Woodgrove Bank developers on getting their application's database scaffolded, this diagram illustrates what they loaded in the database:
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign-key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="complex" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types.":::
+   In the diagram, payment_events' event_type field is now event_type_id, with a foreign-key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.
+:::image-end:::
 
 In this exercise, you'll restructure their database to get to the following output:
 
-:::image type="content" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign-key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign-key relationship to the payment_events table.":::
+:::image type="complex" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants.":::
+   In the diagram, payment_events has a column event_type_id, with a foreign-key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign-key relationship to the payment_events table.
+:::image-end:::
 
 ## Reset the exercise database
 
