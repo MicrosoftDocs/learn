@@ -4,10 +4,35 @@ title: Discover classes
 metadata:
   title: Discover classes
   description: "This unit describes working with classes and objects and how you use them to describe real world objects."
-  ms.date: 06/08/2023
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
 durationInMinutes: 7
 content: |
   [!include[](includes/2-discover-classes.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What other classes might you create that a house class contains?"
+    choices:
+    - content: "A grizzly bear."
+      isCorrect: false
+      explanation: "Incorrect. A house would not have a grizzly bear."
+    - content: "A car."
+      isCorrect: false
+      explanation: "Incorrect. A car is not a part of a house."
+    - content: "A roof."
+      isCorrect: true
+      explanation: "Correct! A roof is something that all houses have and would be appropriate for a house class to have."
+  - content: "What other classes might a room have?"
+    choices:
+    - content: "A roof."
+      isCorrect: false
+      explanation: "Incorrect. While a house does have a roof, roofs are typically not thought of in the context of a single room in a house."
+    - content: "A kitchen."
+      isCorrect: false
+      explanation: "Incorrect. Althought it is possible that a room has a kitchen, a kitchen would make more sense as a room in house."
+    - content: "A window."
+      isCorrect: true
+      explanation: "Correct! Windows fit well as an attribute of a room."

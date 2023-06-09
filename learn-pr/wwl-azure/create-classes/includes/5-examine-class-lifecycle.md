@@ -24,15 +24,3 @@ The common language runtime determines if a reference exists to an object, meani
 The Garbage Collector performs Deallocation. It frees the memory used by the object.  
 
 &nbsp;
-## Check your knowledge
-
-## Multiple choice
-What is the difference between memory allocation/de-allocation and instantiation?
-( ) They're the same. {{Incorrect. Although related, the allocation/de-allocation of memory and instantiation are not the same.}}
-( ) Instantiation occurs before allocation. {{Incorrect. The allocation of memory occurs when you "new" or instantiate your objects.}}
-(x) Allocation/de-allocation has to do with memory management for your objects and instantiation is about actually creating the objects. {{Correct! A roof is something that all houses have and would be appropriate for a house class to have.}}
-
-What is garbage collection?
-( ) A process of removing system level resources. {{Incorrect. Garbage collection has nothing to do with system resources, but with the freeing up of user defined objects in memory.}}
-( ) When the garbage man collects the garbage at my home. {{Incorrect. Although certainly the form of garbage collection we are most used to, it does not apply to computer programming.}}
-(x) Automatic Memory Management. {{Correct! Garbage collection is the automatic deallocation of objects in memory when they're no longer being used.}}

@@ -4,10 +4,35 @@ title: Examine class lifecycle
 metadata:
   title: Examine class lifecycle
   description: "This unit describes what the class lifecycle is and how it's used."
-  ms.date: 06/08/2023
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
 durationInMinutes: 6
 content: |
   [!include[](includes/5-examine-class-lifecycle.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the difference between memory allocation/de-allocation and instantiation?"
+    choices:
+    - content: "They're the same."
+      isCorrect: false
+      explanation: "Incorrect. Although related, the allocation/de-allocation of memory and instantiation are not the same."
+    - content: "Instantiation occurs before allocation."
+      isCorrect: false
+      explanation: "Incorrect. The allocation of memory occurs when you \"new\" or instantiate your objects."
+    - content: "Allocation/de-allocation has to do with memory management for your objects and instantiation is about actually creating the objects."
+      isCorrect: true
+      explanation: "Correct! A roof is something that all houses have and would be appropriate for a house class to have."
+  - content: "What is garbage collection?"
+    choices:
+    - content: "A process of removing system level resources."
+      isCorrect: false
+      explanation: "Incorrect. Garbage collection has nothing to do with system resources, but with the freeing up of user defined objects in memory."
+    - content: "When the garbage man collects the garbage at my home."
+      isCorrect: false
+      explanation: "Incorrect. Although certainly the form of garbage collection we are most used to, it does not apply to computer programming."
+    - content: "Automatic Memory Management."
+      isCorrect: true
+      explanation: "Correct! Garbage collection is the automatic deallocation of objects in memory when they're no longer being used."

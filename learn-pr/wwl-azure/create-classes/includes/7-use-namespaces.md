@@ -17,11 +17,7 @@ You can define a namespace for your classes using the keyword namespace.
 In the following code example, you create a Shipping class in the Inventory namespace.
 ```CSharp
 namespace HomeStyle
-{
-    class House(string style, int sqrFootage)
-    {
-        // members of House class
-    }
+{   class House(string style, int sqrFootage)   {       // members of House class   }
 }
 ```
 
@@ -38,15 +34,3 @@ HomeStyle.House house = new HomeStyle.House();
 If you use many classes from the same namespace, or the same class repeatedly, you can import the namespace with the using (Visual C#) or imports statement. When you import a namespace, you no longer need to specify the namespace as a prefix when you declare and instantiate the class.
 
 &nbsp;
-## Check your knowledge
-
-## Multiple choice
-How do you access a class that is in another namespace?
-( ) Provide a link to the other namespace. {{Incorrect. You do not create links to other namespaces to access them.}}
-( ) You don't need to do anything, namespaces are global and their contents are available everywhere. {{Incorrect. This answer is incorrect, as namespaces are not global.}}
-(x) Prefix your object with the name of the namespace it belongs to. {{Correct! The way you access objects in another namespace is prefix the name of your object with the name of the class that belongs to it.}}
-
-Why would two classes be in the same namespace?
-( ) To avoid collisions. {{Incorrect. Although classes are put in separate namespaces to avoid crashes, classes are not put in the same namespace to avoid crashes (class naming conflicts).}}
-( ) Because they are of the same type. {{Incorrect. Classes of the same name/type are put in different namespaces to avoid name conflicts.}}
-(x) Because they perform related functionality. {{Correct! Classes are put in namespaces to avoid name conflicts and because they share related functionality.}}

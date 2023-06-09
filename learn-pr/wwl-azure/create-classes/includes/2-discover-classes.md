@@ -35,15 +35,3 @@ public class House
 ```
 
 &nbsp;
-## Check your knowledge
-
-## Multiple Choice
-What other classes might you create that a house class contains?
-( ) A grizzly bear. {{Incorrect. A house would not have a grizzly bear.}}
-( ) A car. {{Incorrect. A car is not a part of a house.}}
-(x) A roof. {{Correct! A roof is something that all houses have and would be appropriate for a house class to have.}}
-
-What other classes might a room have?
-( ) A roof. {{Incorrect. While a house does have a roof, roofs are typically not thought of in the context of a single room in a house.}}
-( ) A kitchen. {{Incorrect. Althought it is possible that a room has a kitchen, a kitchen would make more sense as a room in house.}}
-(x) A window. {{Correct! Windows fit well as an attribute of a room.}}

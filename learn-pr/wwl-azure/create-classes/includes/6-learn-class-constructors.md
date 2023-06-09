@@ -25,40 +25,11 @@ The following example shows how to define three constructors in the House class:
 ```CSharp
 
 public class House
-{
-    private string houseStyle;
-    private int sqrFootage;
-
-    public House()
-    {
-        houseStyle = "[Unknown]";
-        sqrFootage = 0;
-    }
-
-    public House(string style)
-    {
-        houseStyle = style;
-        sqrFootage = 0;
-    }
-
-    public House(string style, int footage)
-    {
-        houseStyle = style;
-        sqrFootage = footage;
-    }
+{   private string houseStyle;   private int sqrFootage;
+   public House()   {       houseStyle = "[Unknown]";       sqrFootage = 0;   }
+   public House(string style)   {       houseStyle = style;       sqrFootage = 0;   }
+   public House(string style, int footage)   {       houseStyle = style;       sqrFootage = footage;   }
 }
 ```
 
 &nbsp;
-## Check your knowledge
-
-## Multiple choice
-When might you have multiple constructor methods in your class?
-( ) You would never have multiple constructors. {{Incorrect. This is untrue, you may at some point want to have multiple constructors for an object.}}
-( ) When you want to make your code more readable. {{Incorrect. Having multiple constructor is not done for the purpose of making your code more readable.}}
-(x) When you want to initialize your object for different purposes. {{Correct! As constructors are used to initialize an object, having an overloaded constructor allows you to initialize your object for different use cases.}}
-
-Which of these scenarios is a good reason to possibly add a second (overloaded) constructor?
-( ) You want more than one way to create your object. {{Incorrect. Although perhaps partially correct, this answer is too vague and does not provide any reasoning for the answer given.}}
-( ) When the main constructor no longer works. {{Incorrect. Constructors are not added to a class as backup for another constructor.}}
-(x) You want an option to initialize your object with limited basic information, and an option for initializing it with a full set of information. {{Correct! While there can be various reasons for having more than one constructor, this is a good answer for this scenario.}}
