@@ -13,4 +13,4 @@ Launch the exercise and follow the instructions. When you're done, be sure to re
 > [!NOTE]
 > To complete this lab you will need an [Azure subscription](https://azure.microsoft.com/free/).
 
-[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/Secure-storage-for-Azure-Files-and-Azure-Blob-Storage/Instructions/Labs/LAB_02a_storage_public_website.html)
+[![Button to launch exercise.](../media/launch-exercise.png)](https://microsoftlearning.github.io/Secure-storage-for-Azure-Files-and-Azure-Blob-Storage/Instructions/Labs/LAB_02a_storage_public_website.html?azure-portal=true)
