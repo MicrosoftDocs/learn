@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.describe-identity-protection-governance.describe-privileged-identity-management
-title: Describe privileged identity management
+title: Describe Privileged Identity Management
 metadata:
-  title: Describe privileged identity management
+  title: Describe Privileged Identity Management
   description: "Describe privileged identity management in Microsoft Entra ID"
   ms.date: 6/8/2023
   author: wwlpublish
