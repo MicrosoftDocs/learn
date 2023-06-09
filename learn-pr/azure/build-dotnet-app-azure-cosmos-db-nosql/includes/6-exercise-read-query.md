@@ -8,7 +8,7 @@ There are three key requirements at this time:
 
 :::image type="content" source="../media/project-visual-query.svg" alt-text="Illustration of icons indicating data being queried using a query." border="false":::
 
-After you complete this exercise, your application will almost be ready. You have queries that can read the category and product items you previously created.
+After you complete this exercise, your application will almost be ready. You'll have queries that can read the category and product items you previously created.
 
 ## Point read an item
 
@@ -49,7 +49,7 @@ The simplest way to retrieve an item in Azure Cosmos DB is to perform a point re
 
 In situations where you need multiple items, you can use a query to find and retrieve those items. Recall that we used the **categoryId** partition key property to group our items into specific categories. If we include that property in a query, we effectively build a query that's scoped to a single logical partition. Now, you use a query to find all of the items in the *tents* category.
 
-1. Create a new string for the query `SELECT * FROM products p WHERE p.categoryId = 'gear-camp-tents'`. However, use a parameter named `@partitionKey` for the **categoryId** filter.
+1. In *Program.cs*, create a new string for the query `SELECT * FROM products p WHERE p.categoryId = 'gear-camp-tents'`. However, use a parameter named `@partitionKey` for the **categoryId** filter.
 
     ```csharp
     string statement = "SELECT * FROM products p WHERE p.categoryId = @partitionKey";
@@ -87,9 +87,9 @@ In situations where you need multiple items, you can use a query to find and ret
 
 ## Paginate query results
 
-Azure Cosmos DB automatically breaks up your query results into pages that can be retrieves asynchronously. To manage these pages, you need to write your C# code in a specific way to ensure that you retrieve all pages of results that are available. Here, you'll use a *while* and *foreach* loop in C# to iterate over result pages.
+Azure Cosmos DB automatically breaks up your query results into pages that can be retrieved asynchronously. To manage these pages, you need to write your C# code in a specific way to ensure that you retrieve all pages of results that are available. Here, you'll use a *while* and *foreach* loop in C# to iterate over result pages.
 
-1. Create a new *double* variable named **totalRequestCharge** set to a value of `0`.
+1. In *Program.cs*, create a new *double* variable named **totalRequestCharge** set to a value of `0`.
 
     ```csharp
     double totalRequestCharge = 0d;
@@ -146,13 +146,13 @@ Your app now reads and queries items from the container. Here, you run the appli
 
 ### [Run application](#tab/run-app)
 
-1. Run the .NET application in the terminal
+1. Run the .NET application in the terminal:
 
     ```dotnetcli
     dotnet run
     ```  
 
-1. Observe the output of running the application. The output should match the example here.
+1. Observe the output of running the application. The output should match the example here:
 
     ```output
     ...
@@ -169,7 +169,7 @@ Your app now reads and queries items from the container. Here, you run the appli
     > [!TIP]
     > The RUs shown in this example output may vary from your output.
 
-    Did you notice that your *category* item successfully deserialized into the type you use for *products*? Since the category item didn't have a **name** property, that property was left to its default value. Type checking, schema management, and serialization/deserialization are all things your application can manage entirely client-side.
+    Did you notice that your *category* item successfully deserialized into the type you use for *products*? Because the category item didn't have a **name** property, that property was left to its default value. Type checking, schema management, and serialization/deserialization are all things your application can manage entirely client-side.
 
 ### [Review code](#tab/review-code)
 

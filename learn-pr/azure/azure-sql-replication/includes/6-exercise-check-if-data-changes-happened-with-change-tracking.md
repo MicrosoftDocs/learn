@@ -39,11 +39,11 @@ WHERE ProductID = 680   --pass any ProductID
 
 Applications can use the following functions to obtain the changes that are made in a database and information about the changes:
 
-#### CHANGETABLE(CHANGES ...) function
+#### `CHANGETABLE(CHANGES ...)` function
 
-This rowset function is used to query for change information. The function queries the data stored in the internal change-tracking tables. The function returns a results set that contains the primary keys of rows that have changed together with other change information such as the operation, columns updated, and version for the row.
+Use this rowset function to query for change information. The function queries the data stored in the internal change-tracking tables. The function returns a results set that contains the primary keys of rows that have changed, together with other change information such as the operation, columns updated, and version for the row.
 
-CHANGETABLE(CHANGES ...) takes a last synchronization version as an argument. The last synchronization version is obtained using the `@last_synchronization_version` variable.
+`CHANGETABLE(CHANGES ...)` takes a last synchronization version as an argument. The last synchronization version is obtained using the `@last_synchronization_version` variable.
 
 The following is an example of how to use this function to obtain changes for a `SalesLT.Product` table:
 
@@ -58,7 +58,7 @@ FROM
 
 ### Obtain the latest data
 
-Usually, a client will want to obtain the latest data for a row, instead of only the primary keys for the row. Therefore, an application would join the results from CHANGETABLE(CHANGES ...) with the data in the user table. For example, the following query joins with the `SalesLT.Product` table to obtain the values for the `Name` and `ListPrice` columns. Note the use of `OUTER JOIN`. This is required to make sure that the change information is returned for those rows that have been deleted from the user table.
+Usually, a client will want to obtain the latest data for a row, instead of only the primary keys for the row. Therefore, an application would join the results from `CHANGETABLE(CHANGES ...)` with the data in the user table. For example, the following query joins with the `SalesLT.Product` table to obtain the values for the `Name` and `ListPrice` columns. Note the use of `OUTER JOIN`. This is required to make sure that the change information is returned for those rows that have been deleted from the user table.
 
 ```sql
 DECLARE @last_synchronization_version BIGINT;
@@ -75,11 +75,11 @@ ON
     P.ProductID = CT.ProductID
 ```
 
-#### CHANGE_TRACKING_CURRENT_VERSION() function
+#### `CHANGE_TRACKING_CURRENT_VERSION()` function
 
 You can use this function to obtain the current version that will be used the next time when querying changes. This version represents the version of the last committed transaction.
 
-When an application obtains changes, it must use both CHANGETABLE(CHANGES...) and CHANGE_TRACKING_CURRENT_VERSION() functions.
+When an application obtains changes, it must use both `CHANGETABLE(CHANGES...)` and `CHANGE_TRACKING_CURRENT_VERSION()` functions.
 The following example shows how to obtain the initial synchronization version and the initial dataset:
 
 ```sql
@@ -89,11 +89,11 @@ DECLARE @synchronization_version BIGINT;
 SET @synchronization_version = CHANGE_TRACKING_CURRENT_VERSION(); 
 ```
 
-#### CHANGE_TRACKING_MIN_VALID_VERSION() function
+#### `CHANGE_TRACKING_MIN_VALID_VERSION()` function
 
-You can use this function to obtain the minimum valid version that a client can have and still obtain valid results from CHANGETABLE(). The client should check the last synchronization version against the value that is returned by this function. If the last synchronization version is less than the version returned by this function, the client will be unable to obtain valid results from CHANGETABLE() and will have to reinitialize.
+You can use this function to obtain the minimum valid version that a client can have and still obtain valid results from `CHANGETABLE()`. The client should check the last synchronization version against the value that this function returns. If the last synchronization version is less than the version returned by this function, the client will be unable to obtain valid results from `CHANGETABLE()` and will have to reinitialize.
 
-The following example shows how to verify the validity of the value of last_synchronization_version for each table:
+The following example shows how to verify the validity of the value of `last_synchronization_version` for each table:
 
 ```sql
 -- Check individual table.

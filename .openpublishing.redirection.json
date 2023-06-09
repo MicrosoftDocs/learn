@@ -491,6 +491,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/index.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/1-introduction.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/2-manage-blob-data-using-properties-and-metadata.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/3-view-blob-properties-and-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/4-view-blob-properties-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/5-add-blob-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/7-summary.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
       "redirect_url": "/azure/sql-database/sql-database-cloud-migrate",
       "redirect_document_id": false
@@ -22427,6 +22467,401 @@
   {
     "source_path": "learn-pr/wwl-data-ai/explore-fundamentals-stream-processing/8-data-explorer.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/explore-fundamentals-stream-processing/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/2-what-is-azure-lab-services.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/3-how-azure-lab-services-works.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/4-when-to-use-azure-lab-services.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/5-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/6-summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/how-azure-lab-services-works.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/what-is-azure-lab-services.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-lab-services/when-to-use-azure-lab-services.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/lab-services-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/2-create-lab-plan.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/3-exercise-create-lab-plan.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/4-create-lab.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/5-exercise-create-lab.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-lab-services/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/lab-services/quick-create-resources",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/2-what-is-azure-devtest-labs.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/3-how-azure-devtest-labs-works.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/4-when-to-use-azure-devtest-labs.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/5-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-devtest-labs/6-summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-overview",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/2-configure-development-lab.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/3-exercise-configure-development-lab.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/4-create-claim-lab-vm.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/5-exercise-configure-claim-development-vm.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/create-app-service-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/deploy-expressjs-app.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-create-app-service-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-deploy-expressjs-app.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-use-app-review-logs.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-use-resource-group.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/use-app-review-logs.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/use-resource-group.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/configure-app-service-connection-to-cosmos-db.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/create-cosmos-db-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-configure-app-service-connection-to-cosmos-db.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-create-cosmos-db-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-set-up.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-set-up-azure-resources.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/set-up.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/set-up-azure-resources.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/2-what.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/3-how.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/4-when.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/5-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/6-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/2-create-a-linux-virtual-machine.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/3-exercise-generate-ssh-key.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/4-exercise-create-a-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/5-connect-to-a-linux-virtual-machine.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/6-exercise-connect-to-a-linux-vm-using-ssh.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/7-manage-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/8-exercise-manage-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
     "redirect_document_id": false
   }
   ]
