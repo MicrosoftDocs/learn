@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.introduction-microsoft-365-threat-protection.investigate-security-incident-defender
+uid: learn.wwl.introduction-microsoft-365-threat-protection.5-investigate-security-incident-defender
 title: Investigate security incident in Microsoft 365 Defender
 metadata:
   title: Investigate security incident in Microsoft 365 Defender
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-m365
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-investigate-security-incident-defender.md)]
+  [!include[](includes/5-investigate-security-incident-defender.md)]
