@@ -41,7 +41,7 @@ quiz:
     - content: “Visual Studio Code, Visual Studio, Neovim, and Jet brains”
       isCorrect: true
       explanation: "Correct! All of the IDEs listed have supported GitHub extensions."
-  - content: “What is GitHub X”?
+  - content: “What is GitHub Copilot X”?
     choices:
     - content: “GitHub's vision for the future of AI-powered software development.”
       isCorrect: true
