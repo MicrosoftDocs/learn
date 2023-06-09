@@ -1757,3 +1757,13 @@ achievements:
   title: Deploy Node.js server with MongoDB database to Azure App Service
   summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.azure.intro-to-azure-linux.badge
+  type: badge
+  title: Introduction to Linux on Azure
+  summary: Discover the unique benefits of running Linux on Azure, and how to run Linux-based applications and workloads in the cloud with Azure. 
+  iconUrl: /training/achievements/intro-to-azure-linux.svg
+- uid: learn.create-linux-vm-in-azure.badge
+  type: badge
+  title: Create a Linux virtual machine in Azure
+  summary: In this module, we discuss how to create a Linux virtual machine using the Azure portal.
+  iconUrl: /training/achievements/create-linux-virtual-machine-in-azure.svg

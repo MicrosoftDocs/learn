@@ -22778,6 +22778,91 @@
     "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/index.yml",
     "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
     "redirect_document_id": false
-  }  
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/2-what.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/3-how.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/4-when.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/5-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/6-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/2-create-a-linux-virtual-machine.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/3-exercise-generate-ssh-key.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/4-exercise-create-a-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/5-connect-to-a-linux-virtual-machine.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/6-exercise-connect-to-a-linux-vm-using-ssh.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/7-manage-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/8-exercise-manage-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  }
   ]
 }
