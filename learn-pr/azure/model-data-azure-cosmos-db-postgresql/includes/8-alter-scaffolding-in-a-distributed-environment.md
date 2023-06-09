@@ -1,6 +1,8 @@
 What if the Woodgrove Bank developers created their distributed database by starting with their relational design? Suppose this database was created in Azure Cosmos DB for PostgreSQL.
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign-key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="complex" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types.":::
+   In the diagram, payment_events' event_type field is now event_type_id, with a foreign-key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.
+:::image-end:::
 
 In a non-distributed environment, these relationships work. However, if the developers already loaded this structure in the database, there's some work needed for distributing tables. Data definition language (DDL) queries apply in a distributed environment, and there are functions to help update the distributed tables.
 
