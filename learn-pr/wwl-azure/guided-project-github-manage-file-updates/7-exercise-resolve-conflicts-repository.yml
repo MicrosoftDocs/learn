@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.exercise-resolve-conflicts-repository
+title: Exercise – Resolve conflicts in your repository
+metadata:
+  title: Exercise – Resolve conflicts in your repository
+  description: "Exercise – Resolve conflicts in your repository"
+  ms.date: 06/09/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-exercise-resolve-conflicts-repository.md)]
+interactive: bash
