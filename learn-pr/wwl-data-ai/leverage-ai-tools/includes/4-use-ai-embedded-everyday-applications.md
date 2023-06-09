@@ -75,6 +75,6 @@ Statistics with the title “Searching for information” at the top. In the mid
 :::column-end:::
 :::row-end:::
 
-Now is the time to put AI in the hands of your employees. Empowered with the right AI tools, every employee has the potential to amplify their capabilities and achieve more. 
+Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
 In the next unit, we'll discuss Power Platform, which also offers AI features for people without data science expertise but does require a basic level of coding.

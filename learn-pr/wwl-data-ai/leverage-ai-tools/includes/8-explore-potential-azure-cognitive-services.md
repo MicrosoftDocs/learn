@@ -18,7 +18,7 @@ There are important benefits of using Azure Cognitive Services instead of custom
 
 ## What can you do with Azure Cognitive Services?
 
-There are five large families of Cognitive Services: speech, language, vision, decision, and Azure OpenAI Service. Each includes several AI models and complement each other.
+There are five large families of Cognitive Services: speech, language, vision, decision, and Azure OpenAI Service. Each service includes several AI models that complement each other.
 
 * **Speech:** These models deal with oral conversation. They can transform speech to text and vice-versa. It's also possible to translate what the speaker says and identifying each speaker. Models can even suggest pronunciation corrections to the speakers.
 
