@@ -157,6 +157,11 @@ achievements:
   title: Copy and move blobs from one container or storage account to another from the command line and in code
   summary: Use .NET, AzCopy, and Azure CLI to migrate files between Azure storage accounts.
   iconUrl: /training/achievements/copy-blobs-from-command-line-and-code.svg
+- uid: learn.azure.organize-blobs-properties-metadata.badge
+  type: badge
+  title: Organize Azure Storage blobs with properties and metadata
+  summary: Find out about Azure Storage blob properties and metadata, how to organize blob data, and create an app with .NET to retrieve metadata.
+  iconUrl: /training/achievements/organize-blobs-with-properties-and-metadata.svg
 - uid: learn.introduction-to-regression.badge
   type: badge
   title: Predict numeric values with regression
@@ -1441,7 +1446,7 @@ achievements:
   type: badge
   title: Identify abnormal time-series data with Anomaly Detector
   summary: Learn how to detect anomalies in real-time from an IoT time-series data stream using univariate Azure Anomaly Detector API. In addition, users will learn how to train an AI model using the multivariate Anomaly Detector API to identify outliers, unexpected data patterns or data that deviate significantly from the norm..
-  iconUrl: /training/achievements/identify-abnormal-time-series-data-anomaly-detector.svg
+  iconUrl: /training/achievements/anomaly-detector-abnormal-time-series.svg
 - uid: learn.iot.trigger-azure-event-grid-workflow-iot-device.badge
   type: badge
   title: Trigger an Azure Event Grid workflow from an IoT device
@@ -1722,3 +1727,33 @@ achievements:
   title: Introduction to 5G for Azure in the Enterprise
   summary: We introduce 5G for Azure in the Enterprise
   iconUrl: /training/achievements/student-evangelism/introduction-5g-services-on-azure.svg
+- uid: learn.intro-to-azure-lab-services.badge
+  type: badge
+  title: Introduction to Azure Lab Services
+  summary: Evaluate whether Azure Lab Services is appropriate to your lab requirements.
+  iconUrl: /training/achievements/azure-lab-services-intro-module.svg
+- uid: learn.setup-first-lab-using-azure-lab-services.badge
+  type: badge
+  title: Set up your first classroom lab by using Azure Lab Services
+  summary: Learn how to set up your first classroom lab by using Azure Lab Services.
+  iconUrl: /training/achievements/setup-first-lab-using-azure-lab-services.svg
+- uid: learn.azure.intro-to-azure-devtest-labs.badge
+  type: badge
+  title: Introduction to Azure DevTest Labs
+  summary: Evaluate whether Microsoft Azure DevTest Labs is appropriate for setting up virtual machine environments for your team..
+  iconUrl: /training/achievements/azure-devops-devtest-labs.svg
+- uid: learn.setup-first-lab-using-azure-devtest-labs.badge
+  type: badge
+  title: Set up your first development lab by using Azure DevTest Labs
+  summary: Learn how to set up your first development lab by using Azure DevTest Labs.
+  iconUrl: /training/achievements/set-up-first-lab-with-azure-devtest-labs.svg
+- uid: learn.javascript-on-azure.deploy-expressjs-app-service.badge
+  type: badge
+  title: Deploy Node.js to Azure App Service
+  summary: Create Azure service resources for an Node.js web app. Configure, secure, and deploy the web app. Review the logs after deployment.
+  iconUrl: /training/achievements/js-data-web-app-to-azure-app-service.svg
+- uid: learn.javascript-on-azure.deploy-expressjs-app-service-with-database.badge
+  type: badge
+  title: Deploy Node.js server with MongoDB database to Azure App Service
+  summary: Learn how to create, configure and deploy an Node.js (Express.js) server app with a MongoDB database to Azure App Service.
+  iconUrl: /training/achievements/generic-badge.svg

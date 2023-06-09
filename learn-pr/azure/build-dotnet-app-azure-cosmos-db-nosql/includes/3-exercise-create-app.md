@@ -33,7 +33,7 @@ The .NET CLI creates and manages .NET projects within a specified directory. Her
     dotnet build
     ```
 
-    The output of the command should be similar to this example.
+    The output of the command should be similar to this example:
 
     ```output
     MSBuild version 17.5.0+6f08c67f3 for .NET
@@ -74,7 +74,7 @@ Now, the .NET project should be built and ready for you to add your own custom c
     const string connectionString = "<your-azure-cosmos-db-connection-string>";
     ```
 
-    Assuming the name of the Azure Cosmos DB account is `nybncrsna76fo-cosmos-nosql` and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example.
+    Assuming the name of the Azure Cosmos DB account is `nybncrsna76fo-cosmos-nosql` and the key is `Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==`, you would configure the JSON object like this example:
 
     ```csharp
     const string connectionString = "AccountEndpoint=https://nybncrsna76fo-cosmos-nosql.documents.azure.com:443/;AccountKey=Aj2OSQqWhXfFzkITIi4MIbocWAAoBCUWnSPzHlQbDYA3TiyZCJlk8A6R1l6WqD45BxAG5vrsyQ4SCXEkPS1pLh==;";
@@ -127,11 +127,11 @@ The application is now ready to run and connect to Azure Cosmos DB for NoSQL. He
 
     ```output
     [Connection string]:    <your-azure-cosmos-db-connection-string>
-    [Client connected]
+    [Client ready]
     ```
 
 > [!NOTE]
-> If building or running the .NET application results in an error, go to the **review code** section to validate that your code matches the example.
+> If building or running the .NET application results in an error, go to the **Review code** tab to validate that your code matches the example.
 
 ### [Review code](#tab/review-code)
 
