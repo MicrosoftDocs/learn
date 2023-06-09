@@ -1,3 +1,4 @@
+
 Web Application Firewall (WAF) provides centralized protection of your web applications from common exploits and vulnerabilities. Web applications are increasingly targeted by malicious attacks that exploit commonly known vulnerabilities. SQL injection and cross-site scripting are among the most common attacks.
 
 :::image type="content" source="../media/waf-overview-3bcd34eb.png" alt-text="WAF overview diagram showing a global WAF policy can allow or deny access to resources in Azure regions or on-premises":::
@@ -21,16 +22,7 @@ Azure Front Door web application firewall (WAF) protects web applications from c
 ### Managed rules
 
 Azure-managed Default Rule Set includes rules against the following threat categories:
-
- -  Cross-site scripting
- -  Java attacks
- -  Local file inclusion
- -  PHP injection attacks
- -  Remote command execution
- -  Remote file inclusion
- -  Session fixation
- -  SQL injection protection
- -  Protocol attackers
+-  Cross-site scripting-  Java attacks-  Local file inclusion-  PHP injection attacks-  Remote command execution-  Remote file inclusion-  Session fixation-  SQL injection protection-  Protocol attackers
 
 Azure-managed Default Rule Set is enabled by default. The current default version is DefaultRuleSet\_1.0. From **WAF Managed rules>Assign**, the recently available ruleset Microsoft\_DefaultRuleSet\_1.1 is available in the drop-down list.
 

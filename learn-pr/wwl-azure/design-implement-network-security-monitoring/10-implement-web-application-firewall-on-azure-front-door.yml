@@ -4,13 +4,11 @@ title: Implement a Web Application Firewall on Azure Front Door
 metadata:
   title: Implement a Web Application Firewall on Azure Front Door
   description: "Implement a Web Application Firewall on Azure Front Door"
-  ms.date: 03/30/2023
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/10-implement-web-application-firewall-on-azure-front-door.md)]
