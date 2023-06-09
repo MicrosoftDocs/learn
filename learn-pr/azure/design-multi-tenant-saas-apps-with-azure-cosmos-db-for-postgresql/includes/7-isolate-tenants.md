@@ -17,11 +17,11 @@ You use the `isolate_tenant_to_new_shard()` function to move tenant data into a 
 SELECT isolate_tenant_to_new_shard('orders', 5);
 ```
 
-Invoking the function to isolate the tenant with `store_id` value of `5` in a new shard occurs in three steps:
+Invoking the function to isolate the tenant that has a `store_id` value of `5` in a new shard occurs in three steps:
 
 1. First, a new shard is created exclusively for `orders` rows that have a distribution column value equal to `5`. The hash range for this shard includes only a single distribution column hash, so it excludes all other rows.
 1. Rows in the `orders` table that have a distribution column value that matches the specified tenant ID are moved from their current shard to the new one.
-1. The old shard is split into two new fragments with hash ranges that abut the range of the new shard.
+1. The old shard is split into two new fragments that have hash ranges that abut the range of the new shard.
 
 You assigned the same distribution column for each table when distributing the Tailspin Toys table data. As a result, each tenant's data from all tables are colocated. As shown earlier, the `isolate_tenant_to_new_chard()` function returns an error and advise by using the `CASCADE` option. This option instructs the process to isolate tenant rows of not just the table specified in the function call but of all colocated tables as well. Continuing the example, you need to rewrite the SQL command:
 

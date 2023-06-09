@@ -1,6 +1,6 @@
-To accommodate the recent increase in toy stores that host their websites in the Tailspin Toys multitenant SaaS application, you decide to migrate the Tailspin Toys Azure Cosmos DB for PostgreSQL single-node database to a multi-node cluster. You can migrate the database quickly and with minimal to no downtime by horizontally scaling the database in the Azure portal. However, to ensure that the database is migrated efficiently and with minimal disruption, you must plan and prepare your database for distribution before you take this step.
+To accommodate a recent increase in toy stores that host their websites in the Tailspin Toys multitenant SaaS application, you decide to migrate the Tailspin Toys Azure Cosmos DB for PostgreSQL single-node database to a multi-node cluster. You can migrate the database quickly and with minimal to no downtime by horizontally scaling the database in the Azure portal. However, to ensure that the database is migrated efficiently and with minimal disruption, you must plan and prepare your database for distribution before you take this step.
 
-Tailspin Toys has provided the following diagram. It represents the structure and relationships between tables in the Tailspin Toys current single-node database. Bold fields on a light blue background represent primary keys, and italicized items are foreign keys.
+Tailspin Toys has provided the following diagram to represent the structure and relationships between tables in the current Tailspin Toys single-node database. Bold fields on a lighter blue background represent primary keys, and italicized items are foreign keys.
 
 :::image type="content" source="../media/table-schema-single-node.png" border="false" alt-text="Diagram of the single-node schemas of and relationships between the stores, products, orders, and line_items tables.":::
 
@@ -14,7 +14,7 @@ Horizontally scaling to a multi-node cluster can be accomplished with zero downt
 
 Horizontally scaling a single-node database and distributing table data across nodes can provide tremendous performance benefits. However, if you fail to properly plan and restructure tables, the result might be misconfigurations that hurt query performance. When you distribute multitenant data, you must consider how table data is distributed, the specified distribution column, table colocation, and common query patterns.
 
-## Understand the multitenant architecture of Azure Cosmos DB for PostgreSQL
+## Understand multitenant architecture
 
 Azure Cosmos DB for PostgreSQL uses a form of hierarchical database modeling to distribute table data across nodes in the cluster. For multitenant SaaS applications, the internal identifier for each tenant, often called the _tenant ID_, is at the top of this hierarchy. This structure is driven by the fact that most queries from the SaaS application request data only for a single tenant by filtering on the tenant ID column. When you review the single-node table structure that Tailspin Toys provides, the `stores` table seems to be the best fit to host tenant data. The column that most logically fits as the tenant ID is `store_id`.
 
@@ -22,9 +22,9 @@ Azure Cosmos DB for PostgreSQL can efficiently process cross-shard queries, but 
 
 ## Select a distribution column
 
-Tables in a single-node database might have primary and foreign keys, but they don't need to specify a distribution column. The first step when you plan a migration to a multi-node distributed database is to identify the best distribution column and plan table distribution accordingly.
+Tables in a single-node database might have primary and foreign keys, but they don't need to specify a distribution column. Your first step when you plan a migration to a multi-node distributed database is to identify the best distribution column, and then plan table distribution accordingly.
 
-After you examine the most common query patterns against the Tailspin Toys database, you determined that most queries that are executed against the database relate to a single store rather than to joining information across stores. This pattern is typical in databases that are associated with multitenant SaaS applications, including online transaction processing (OLTP) workloads for web clients and online analytical processing (OLAP) workloads that serve per-tenant analytical queries. As a result, multitenant SaaS applications have a natural dimension on which to distribute data across nodes. You can shard by tenant ID. For Tailspin Toys, you specify `store_id` as the distribution column on each distributed table.
+After you examine the most common query patterns that are used in the Tailspin Toys database, you determined that most queries that are executed against the database relate to a single store rather than to joining information across stores. This pattern is typical in databases that are associated with multitenant SaaS applications, including online transaction processing (OLTP) workloads for web clients and online analytical processing (OLAP) workloads that serve per-tenant analytical queries. As a result, multitenant SaaS applications have a natural dimension on which to distribute data across nodes. You can shard by tenant ID. For Tailspin Toys, you specify `store_id` as the distribution column on each distributed table.
 
 ## Classify tables
 
@@ -34,27 +34,27 @@ When you work with tables in a single-node multitenant SaaS database, the tables
 
 * **Ready for distribution**. These tables already contain the distribution key and are ready to be distributed without changes. Looking at the schema provided, the `stores`, `orders`, and `products` tables already contain the `store_id` column and fall into this category.
 
-* **Needs backfill**. These tables can be logically distributed by the chosen key, but the tables don't contain a column that directly references the key. Tables in this category require modification to add the selected distribution column. The Tailspin Toys `line_items` table can be linked to the `store` table by joining through the `orders` or `products` tables, but it doesn't contain the `store_id` column. To enable table data to be distributed across worker nodes and colocated for maximum query efficiency, the table needs to be denormalized to include the `store_id` column, and the new column must be populated with the appropriate `store_id` for each line item.
+* **Needs backfill**. These tables can be logically distributed by the chosen key, but the tables don't contain a column that directly references the key. Tables in this category require modification to add the selected distribution column. The Tailspin Toys `line_items` table can be linked to the `store` table by joining through the `orders` or `products` tables, but it doesn't contain the `store_id` column. For table data to be distributed across worker nodes and colocated for maximum query efficiency, the table needs to be denormalized to include the `store_id` column. Then the new column must be populated with the appropriate `store_id` for each line item.
 
-* **Reference table**. These tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster, available for quick access by queries on any node.
+* **Reference table**. These tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster. The data is available for quick access by queries on any node.
 
-* **Local table**. These tables are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as user authentication.
+* **Local table**. These tables are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as for user authentication.
 
 ## Backfill tables
 
-By referencing the table schema that Tailspin Toys provided, you observe that the `stores`, `orders`, and `products` tables already contain the `store_id` column. However, the `line_items` table doesn't contain the `store_id` column. To prepare this table for distribution, the `store_id` column needs added and populated, or _backfilled_, with values. This operation allows data in the `line_items` table to be colocated with related tenant data in the other tables. Unfortunately, this process denormalizes the table, but it's required to take full advantage of the distributed capabilities of Azure Cosmos DB for PostgreSQL.
+By referencing the table schema that Tailspin Toys provided, you observe that the `stores`, `orders`, and `products` tables already contain the `store_id` column. However, the `line_items` table doesn't contain the `store_id` column. To prepare this table for distribution, the `store_id` column needs to be added and populated, or _backfilled_, with values. This operation allows data in the `line_items` table to be colocated with related tenant data in the other tables. Unfortunately, this process denormalizes the table, but it's required to take full advantage of the distributed capabilities of Azure Cosmos DB for PostgreSQL.
 
-You can add the distribution column to the `line_item` table by executing an `alter table` command:
+You can add the distribution column to the `line_item` table by executing an `ALTER TABLE` command:
 
 ```sql
 ALTER TABLE line_items ADD COLUMN store_id bigint;
 ```
 
-After the table is updated to include the distribution column, you need to populate it with the appropriate `store_id` value for each row in a process that's known as backfilling. Backfilling the `store_id` column in the `line_items` table can be accomplished by using a join operation, retrieving the value from another table that contains the `store_id` value. For example, you can join `line_items` with `orders` to get the `store_id` associated with the order related to each row in `line_items`.
+After the table is updated to include the distribution column, you need to populate the column with the appropriate `store_id` value for each row in a process called *backfilling*. You can backfill the `store_id` column in the `line_items` table by using a join operation to retrieve the value from another table that contains the `store_id` value. For example, you can join `line_items` with `orders` to get the `store_id` that's associated with the order that's related to each row in `line_items`.
 
-Tailspin Toys requested that you look for methods that minimize any operational disruption when you make database changes. The `line_items` table is one of the most active transactional tables in the database. You're concerned that performing a bulk operation to backfill the missing values might result in a heavy load on the database and potentially slow down other queries.
+Tailspin Toys asked you to look for methods to use that minimize any operational disruption when you make database changes. The `line_items` table is one of the most active transactional tables in the database. You're concerned that performing a bulk operation to backfill the missing values might result in a heavy load on the database and potentially slow down other queries.
 
-To fulfill your employer's request to horizontally scale the database with _minimal disruption_, you decide to take a more conservative approach and update the `line_items` table in small batches. To accomplish this, you use the `pg_cron` extension, so you can schedule a user-defined function to run on a recurring schedule until the table is completely updated.
+To fulfill the company'js request to horizontally scale the database with _minimal disruption_, you decide to take a more conservative approach and update the `line_items` table in small batches. To accomplish this, you use the pg_cron extension, so you can schedule a user-defined function to run on a recurring schedule until the table is completely updated.
 
 You determine that you can safely update 100,000 rows at a time without causing any noticeable database impact. So, you define the update function:
 
@@ -82,7 +82,7 @@ END;
 $$;
 ```
 
-Using `pg_cron`, which comes preinstalled in every Azure Cosmos DB for PostgreSQL database, you decide to schedule the function to run every five minutes:
+By using pg_cron, which comes preinstalled in every Azure Cosmos DB for PostgreSQL database, you decide to schedule the function to run every five minutes:
 
 ```sql
 SELECT cron.schedule('backfill', '*/5 * * * *', 'SELECT backfill_batch(100000)');
@@ -94,11 +94,11 @@ You can migrate to a multi-node cluster with minimal application changes. Still,
 
 ## Update the table keys
 
-Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints across nodes unless a table's unique index or primary key contains its distribution column. As part of your steps to prepare tables for a migration to a multi-node database, you must drop and re-create any primary and foreign key constraints on the Tailspin Toys tables. Add the `store_id` distribution column into each.
+Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints across nodes unless a table's unique index or primary key contains its distribution column. As part of your steps to prepare tables for a migration to a multi-node database, you must drop and re-create any primary and foreign key constraints on the Tailspin Toys tables. You add the `store_id` distribution column to each.
 
-By default, creating an index on a table locks the table being indexed and block write operations to the table until the index build is completed. To honor the Tailspin Toys request to implement database changes in a way that results in minimal disruption to ongoing operations, you can avoid this result by using the `CONCURRENTLY` option of `CREATE INDEX`.
+By default, creating an index on a table locks the table that's being indexed. Write operations to the table are blocked until the index build is finished. To honor the Tailspin Toys request to implement database changes in a way that results in minimal disruption to ongoing operations, you can avoid locking the tables by using the `CONCURRENTLY` option of `CREATE INDEX`.
 
-When the `CONCURRENTLY` option is specified, normal operations against the table can continue while the index is built. Using this option can, however, require more time to complete. To update table keys with the least disruption, you can concurrently create a unique index on the table, and then swap out the primary key to use it. For example, on the `line_items` table, you would use the following command to create a new unique index that includes the `store_id` distribution column:
+When the `CONCURRENTLY` option is specified, normal operations against the table can continue while the index is built. But using this option might mean that it takes more time for the task to complete. To update table keys with the least disruption, you can concurrently create a unique index on the table, and then swap out the primary key to use it. For example, on the `line_items` table, you would use the following command to create a new unique index that includes the `store_id` distribution column:
 
 ```sql
 CREATE UNIQUE INDEX CONCURRENTLY line_items_tmp_idx ON line_items (store_id, line_item_id);
@@ -129,7 +129,7 @@ If you do see locks in the output, you can get more information about specific b
 SELECT * FROM citus_lock_waits;
 ```
 
-The `citus_lock_waits` table provides details about which process is blocked and which process is blocking it. The output, displayed in the following extended view (enabled by running `\x` on the command line), looks similar to the following example:
+The `citus_lock_waits` table provides details about which process is blocked and which process is blocking it. The output, displayed in the following extended view (enabled by running `\x` at the command prompt), looks similar to the following example:
 
 ```text
 -[ RECORD 1 ]-------------------------+--------------------------------------

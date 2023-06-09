@@ -33,7 +33,7 @@ The cases where foreign keys aren't supported are:
 
 By default, all tables are local tables on the coordinator node. Unless they're supposed to be local tables, they need to be distributed. Take these steps when you convert from the nondistributed configuration:
 
-1. Look at the tables with the least amount of impact. Reference tables are the first candidates to look at because relationships between reference tables and local tables aren't issues.
+1. Look at the tables that have the least amount of impact. Reference tables are the first candidates to look at because relationships between reference tables and local tables aren't issues.
     - `device_types` has a primary key of `device_type_id`. You don't need to change this primary key value.
     - When `device_types` is promoted to a reference table, the foreign key relationship between it and `devices` shouldn't cause problems due to the situation between reference and local tables.
 1. Identify relationships between distributed tables and other tables.

@@ -50,9 +50,9 @@ Queries statistics against PostgreSQL databases are maintained in the `pg_stat_s
      all
     ```
 
-## Connect to the database by usingpsql in the Azure Cloud Shell
+## Connect to the database by usingpsql in Azure Cloud Shell
 
-You use `psql` from the command line to distribute the tables in your database. `psql` is a command line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+You use psql from the command line to distribute the tables in your database. psql is a command line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
 1. From your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), in the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
 
@@ -64,9 +64,9 @@ You use `psql` from the command line to distribute the tables in your database. 
 
     ![Screenshot of the Azure portal toolbar, with the Cloud Shell icon is highlighted and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
-    The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
+    Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
-1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following example:
+1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in Cloud Shell, and then run the command, which should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -260,9 +260,9 @@ To distribute the `orders` and `line_items` tables, use the `create_distributed_
     SELECT create_distributed_table_concurrently('orders', 'store_id');
     ```
 
-    Using the `create_distributed_table_concurrently()` function takes longer than distributing with `create_distributed_table()`. This increase in time to execute is primarily because concurrently distributing a table allows table write operations to continue, so distribution is interrupted by any incoming table inserts and updates.
+    Using the `create_distributed_table_concurrently()` function takes longer than distributing by using `create_distributed_table()`. This increase in time to execute is primarily because concurrently distributing a table allows table write operations to continue. Distribution is interrupted by any incoming table inserts and updates.
 
-    If you receive an error while running this step, rerun the query to try again.
+    If you receive an error when you run this step, rerun the query to try again.
 
 1. The last step for the `orders` table is to re-create the foreign key constraints to tables that have already been distributed, which is only the `stores` table in this case.
 
@@ -275,7 +275,7 @@ To distribute the `orders` and `line_items` tables, use the `create_distributed_
 
 1. Before distributing the `line_items` table, open the [Azure Cloud Shell](https://shell.azure.com/) in a second web browser or tab. You'll use this second Cloud Shell window to examine how table writes are handled when using `create_distributed_table_concurrently()`.
 
-1. In the new Cloud Shell window, ensure that **Bash** is selected for the environment, then use the `psql` command-line utility to connect to your database, as you've done previously. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following example:
+1. In the new Cloud Shell window, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database, as you've done previously. Paste your updated connection string (the one containing your correct password) at the prompt in Cloud Shell, and then run the command, which should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -459,9 +459,9 @@ Comparing the execution times for the query to **list products by store**, you s
 
 For the **5 most ordered products by store** query, there was a marked increase in execution time when only `products` and `stores` were distributed. This query does a join between `products` and `line_items`. When the `products` table is distributed across the worker nodes, and `line_items` is still a local table on the coordinator, more data movement must happen to perform the join operation and collect the query results.
 
-The **average order amounts by store** query joins `stores` with a common table expression (CTE) that queries the `line_items` table. There was a slight increase in query execution time when running the query with only the `stores` table distributed. This query benefited from using a CTE, allowing the coordinator to execute the `line_items` query locally and pass query execution for the `stores` portion of the query on the worker node hosting the shard containing data for the store with a `store_id` of 5. The CTE reduced how much data needed to be shuffled to complete the query.
+The **average order amounts by store** query joins `stores` with a common table expression (CTE) that queries the `line_items` table. There was a slight increase in query execution time when running the query with only the `stores` table distributed. This query benefited from using a CTE, allowing the coordinator to execute the `line_items` query locally and pass query execution for the `stores` portion of the query on the worker node hosting the shard containing data for the store that has a `store_id` of 5. The CTE reduced how much data needed to be shuffled to complete the query.
 
-The **internal cross-tenant aggregation** query joins `stores` with `line_items` and then does several aggregations on different fields. Before you distributed the tables, all data resided on the coordinator node, and joins between local tables could happen efficiently. When `stores` was distributed and `line_items` wasn't distributed, the coordinator had to create query fragments for each shard, sending one to each of the 32 shards in the database to retrieve data for each store. The data returned from each shard had to be joined with data from the local `line_items` table on the coordinator. The database couldn't yet take advantage of the parallel execution possible when table data is distributed and colocated. Post-distribution, all data associated with each store is distributed and colocated so that the query can be parallelized, and execution time improved slightly compared to the predistribution time.
+The **internal cross-tenant aggregation** query joins `stores` with `line_items` and then does several aggregations on different fields. Before you distributed the tables, all data resided on the coordinator node, and joins between local tables could happen efficiently. When `stores` was distributed and `line_items` wasn't distributed, the coordinator had to create query fragments for each shard, sending one to each of the 32 shards in the database to retrieve data for each store. The data returned from each shard had to be joined with data from the local `line_items` table on the coordinator. The database couldn't yet take advantage of the parallel execution possible when table data is distributed and colocated. Post-distribution, all data that's associated with each store is distributed and colocated so that the query can be parallelized, and execution time improved slightly compared to the predistribution time.
 
 ## Truncate local data
 
@@ -477,9 +477,9 @@ Truncation cascades to tables that have a foreign key to the designated table. B
 
 ## Disconnect from the database
 
-Congratulations! You've successfully migrated to a multi-node cluster and distributed your table data across nodes. You measured the performance impact of table distribution on several popular queries from the Tailspin Toys multitenant SaaS application. You also gained an understanding of how application queries might be impacted during the time in which some tables are distributed while others aren't. In the next exercise, you'll run queries to monitor the tenants in your database and isolate the tenant with the most database activity to a dedicated node.
+Congratulations! You've successfully migrated to a multi-node cluster and distributed your table data across nodes. You measured the performance impact of table distribution on several popular queries from the Tailspin Toys multitenant SaaS application. You also gained an understanding of how application queries might be impacted during the time in which some tables are distributed while others aren't. In the next exercise, you'll run queries to monitor the tenants in your database and isolate the tenant that has the most database activity to a dedicated node.
 
-In the Cloud Shell, run the following command to disconnect from your database:
+In Cloud Shell, run the following command to disconnect from your database:
 
 ```sql
 \q

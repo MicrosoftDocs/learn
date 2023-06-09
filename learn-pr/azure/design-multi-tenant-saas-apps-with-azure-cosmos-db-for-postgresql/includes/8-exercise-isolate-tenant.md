@@ -12,9 +12,9 @@ Now that you have completed migrating the Tailspin Toys database to a multi-node
 
     After your new node is successfully added, it's available in the system. However, no tenants are stored on it yet, and no queries are run there. You use built-in functions to relocate the Tailspin Toys most active tenant to the new worker node.
 
-## Connect to the database by usingpsql in the Azure Cloud Shell
+## Connect to the database by usingpsql in Azure Cloud Shell
 
-Use `psql` from the command line to make your database changes. `psql` is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+Use psql from the command line to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
 1. From your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), in the left menu under **Settings**, select **Connection strings**, and then copy the connection string labeled **psql**.
 
@@ -26,9 +26,9 @@ Use `psql` from the command line to make your database changes. `psql` is a comm
 
     ![Screenshot of the Azure portal toolbar, with the Cloud Shell icon is highlighted, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
-    The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
+    Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
-1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following example:
+1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in Cloud Shell, and then run the command, which should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -131,9 +131,9 @@ To improve resource allocation and better provide guarantees of tenant quality o
     SELECT * from citus_get_active_worker_nodes() ORDER BY node_name;
     ```
 
-    The new node should have a name starting with "private-w2." If you don't see it, wait one or two minutes, and then rerun the query.
+    The new node should have a name that starts with "private-w2." If you don't see it, wait one or two minutes, and then rerun the query.
 
-1. Finally, call the `citus_move_shard_placement()` function to move the shard to the new worker node you created for this tenant. Before executing the following query, you should replace the following tokens:
+1. Finally, call the `citus_move_shard_placement()` function to move the shard to the new worker node you created for this tenant. Before you execute the following query, you should replace the following tokens:
 
    - `{INSERT_NEW_SHARD_ID}` with the `shardid` of the new shard
    - `{CURRENT_HOST_NODE_NAME}` with the name of the node where the shard currently resides (retrieved in step 1 above)
@@ -146,7 +146,7 @@ To improve resource allocation and better provide guarantees of tenant quality o
       '{TARGET_HOST_NODE_NAME}', 5432);
     ```
 
-1. Verify the shard was moved to the desired node by running the following, replacing `{INSERT_NEW_SHARD_ID}` with the `shardid` of the new shard.
+1. Verify that the shard was moved to the desired node by running the following, replacing `{INSERT_NEW_SHARD_ID}` with the `shardid` of the new shard.
 
     ```sql
     SELECT nodename, nodeport
@@ -205,13 +205,13 @@ To improve resource allocation and better provide guarantees of tenant quality o
 
 Congratulations! You've successfully isolated the largest tenant onto a dedicated node in the Tailspin Toys multi-tenant SaaS application's Azure Cosmos DB for PostgreSQL database.
 
-1. In the Cloud Shell, disable the task creating orders in the database by using the following command:
+1. In Cloud Shell, disable the task that creates orders in the database by using the following command:
 
     ```sql
     SELECT cron.unschedule('create_orders');
     ```
 
-1. In the Cloud Shell, run the following command to disconnect from your database.
+1. In Cloud Shell, run the following command to disconnect from your database.
 
     ```sql
     \q

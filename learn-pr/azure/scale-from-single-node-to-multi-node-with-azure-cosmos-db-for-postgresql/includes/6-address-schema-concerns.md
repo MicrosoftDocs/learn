@@ -144,20 +144,31 @@ For the Wide World Importers sensors data, the choice of distribution column on 
 
 The nondistributed layout has the following characteristics:
 
-- `device_types` has a `device_type_id` field and a `name` field. `device_type_id` is its primary key.
-- `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There's a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
-- `events` has three fields - `event_id`, `device_id`, and `payload`. The `event_id` is its primary key. There's a foreign key relation on the `device_id` that references the `device_id` field on the `devices` table.
+- The `device_types` table has two fields: `device_type_id` and `name`.
 
-![Diagram of the relationships between device types, devices, and events. The device_types table has two fields - device_type_id and name. device_type_id is its primary key. The devices table has three fields - device_id, device_type_id, and name. device_id is its primary key. The devices table has a foreign key relationship on device_type_id that references the device_type_id field on the device_types table. The events table has three fields - event_id, device_id, and payload. event_id is its primary key. The events table has a foreign key relationship on its device_id that references the device_id field on the devices table.](../media/normalized-database-erd.png)
+   The `device_types` table primary key is `device_type_id`.
 
-To switch to a distributed layout, the following events must happen:
+- The `devices` table has three fields: `device_id`, `device_type_id`, and `name`.
+
+   The `devices` table primary key is `device_id`.
+
+   A foreign key relationship on the `device_type_id` field references the `device_type_id` field on the `device_types` table.
+- The `events` has four fields: `event_id`, `device_id`, `payload`, and `created_at`.
+
+   The `events` table primary key is `event_id`.
+  
+   A foreign key relationship on the `device_id` field references the `device_id` field on the `devices` table.
+
+:::image type="content" source="../media/normalized-database-erd.png" border="false" alt-text="Diagram that shows the relationships between three tables, and the columns and primary keys in each table.":::
+
+To switch to a distributed layout, the following events must occur:
 
 - The `device_types` table needs to become a reference table.
-- The primary key on the `events` table needs to be dropped and recreated as a composite key of `device_id` and `event_id`.
+- The primary key on the `events` table needs to be dropped and re-created as a composite key of `device_id` and `event_id`.
 - The foreign key between `events` and `devices` needs to be dropped for distribution.
 - The `devices` table needs to be distributed on its `device_id` column.
 - The `events` table needs to be distributed on its `device_id` column.
 - The foreign key needs to be reestablished on the `events` table.
-- The local data needs truncated from the coordinator node.
+- The local data needs to be truncated from the coordinator node.
 
-Although the steps are set, the order of distributing the data matters. Because the plan is to move from a nondistributed environment to a distributed environment with data already in place, this move needs to happen with minimal disruption to the existing data. Next, you look at the concerns on the order of distribution.
+Although the steps that must occur are set, the order of distributing the data matters. Because the plan is to move from a nondistributed environment to a distributed environment with data already in place, this move needs to happen with minimal disruption to the existing data. Next, you look at the concerns on the order of distribution.

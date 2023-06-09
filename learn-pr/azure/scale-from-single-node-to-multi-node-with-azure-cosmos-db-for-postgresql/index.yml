@@ -19,7 +19,7 @@ abstract: |
     - Identify changes to upgrade an existing single-node, nondistributed cluster to a multi-node, distributed cluster.
     - Scale the database and distribute the data across multiple nodes.
 prerequisites: |
-  - Basic familiarity with relational databases including creating tables, creating indexes, and querying tables
+  - Basic familiarity with relational databases, including creating tables, creating indexes, and querying tables.
 iconUrl: /learn/achievements/intro-to-hyperscale.svg
 levels:
   - beginner

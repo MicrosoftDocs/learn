@@ -1,5 +1,6 @@
 In this exercise, you create tables and seed the data for the sensors database. This single-node database has the following characteristics:
 
+
 - The `device_types` table has two fields: `device_type_id` and `name`.
 
    The `device_types` table primary key is `device_type_id`.

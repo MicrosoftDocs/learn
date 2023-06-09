@@ -28,7 +28,7 @@ Colocating Tailspin Toys tables by store has the following advantages:
 
 ### Determine the order of table distribution
 
-Tables that define or are referenced by foreign keys present some challenges that must be considered when distributing the table. The `orders`, `products`, and `line_items` tables in the Tailspin Toys database define foreign key relationships with one or more tables. The order in which you distribute each table matters, because you must account for these foreign key constraints. For example, running the following command to distribute the `orders` table results in an error.
+Tables that define or are referenced by foreign keys present some challenges that must be considered when distributing the table. The `orders`, `products`, and `line_items` tables in the Tailspin Toys database define foreign key relationships that have one or more tables. The order in which you distribute each table matters, because you must account for these foreign key constraints. For example, running the following command to distribute the `orders` table results in an error.
 
 ```sql
 SELECT create_distributed_table('orders', 'store_id');
@@ -58,7 +58,7 @@ The primary method for distributing table data in Azure Cosmos DB for PostgreSQL
 
 To reduce disruption and prevent table locks, you can use the alternative `create_distributed_table_concurrently()` function. This function does the same thing as `create_distributed_table()`, but executes the operation without blocking table writes during the distribution operation. Running `create_distributed_table_concurrently()` takes longer to complete but is a safer option when working with production systems, where reducing the load on ongoing application operations is essential.
 
-Like running `create_distributed_table()`, distributing tables with foreign key constraints requires planning. You saw that `created_distributed_table()` checks foreign key constraints and dictates a specific table distribution order. With `create_distributed_table_concurrently()`, it's even more difficult because foreign key constraints prevent tables from being distributed entirely.
+Like running `create_distributed_table()`, distributing tables by using foreign key constraints requires planning. You saw that `created_distributed_table()` checks foreign key constraints and dictates a specific table distribution order. With `create_distributed_table_concurrently()`, it's even more difficult because foreign key constraints prevent tables from being distributed entirely.
 
 For example, consider the following command to distribute the `stores` table concurrently:
 
@@ -66,14 +66,14 @@ For example, consider the following command to distribute the `stores` table con
 SELECT create_distributed_table_concurrently('stores', 'store_id');
 ```
 
-With `create_distributed_table()`, you were required to distribute the `stores` table first because other tables have foreign key constraints referencing it. When attempting to distribute the `stores` table first with `create_distributed_table_concurrently()`, the command raises an error:
+With `create_distributed_table()`, you were required to distribute the `stores` table first because other tables have foreign key constraints referencing it. When attempting to distribute the `stores` table first by using `create_distributed_table_concurrently()`, the command raises an error:
 
 ```text
 ERROR: relation stores is referenced by a foreign key from line_items
 DETAIL: foreign keys from a regular table to a distributed table are not supported.
 ```
 
-When tables are distributed concurrently, all relationships on the table are inspected. Table distribution is prevented for any tables with relationships to nondistributed or nonreference tables. Your only option to get around this constraint is to drop all foreign key constraints for each table and re-create them after the distribution process completes.
+When tables are distributed concurrently, all relationships on the table are inspected. Table distribution is prevented for any tables that have relationships to nondistributed or nonreference tables. Your only option to get around this constraint is to drop all foreign key constraints for each table and re-create them after the distribution process completes.
 
 To use `create_distributed_table_concurrently()` to distribute the `stores` table, you must first drop any foreign key references from all other nondistributed tables:
 
@@ -104,7 +104,7 @@ To review the table distribution methods:
 
 The `created_distributed_table()` function:
 
-- Allows the tables with foreign key constraints to be distributed, but only if the order of table distribution is carefully considered.
+- Allows the tables that have foreign key constraints to be distributed, but only if the order of table distribution is carefully considered.
 - Creates a lock on the distributed table and blocks any write operations until the distribution operation is completed.
 - Doesn't honor transactions.
 - Has drawbacks that include table writes being blocked during distribution, and the order of table distribution matters.

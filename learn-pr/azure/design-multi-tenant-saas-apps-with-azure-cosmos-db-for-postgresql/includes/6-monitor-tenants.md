@@ -50,7 +50,7 @@ Inspecting the output, you can see that each record includes the query that was 
 
 ## Identify "noisy" tenants
 
-Due to the differences in store sizes in the Tailspin Toys multitenant SaaS application, you suspect some of the larger tenants are "noisier" than others, meaning they use a higher percentage of database resources and cause performance degradation for other, smaller tenants. By joining `citus_stat_statements` with `pg_stat_statements`, you can retrieve per tenant statics and trace queries to originating tenants in the Tailspin Toys multitenant application.
+Due to the differences in store sizes in the Tailspin Toys multitenant SaaS application, you suspect some of the larger tenants are "noisier" than others, meaning they use a higher percentage of database resources and cause performance degradation for other, smaller tenants. By joining `citus_stat_statements` with `pg_stat_statements`, you can retrieve per-tenant statics and trace queries to originating tenants in the Tailspin Toys multitenant application.
 
 ```sql
 SELECT partition_key as tenant_id, 

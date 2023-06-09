@@ -6,15 +6,15 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
 1. In a web browser, go to the [Azure portal](https://portal.azure.com/).
 
-2. Select **Create a resource** > **Databases** > **Azure Cosmos DB**. You can also use **Search** to find the resource.
+1. Select **Create a resource** > **Databases** > **Azure Cosmos DB**. You can also use the search box to find the resource.
 
-    ![Screenshot of the Azure portal's Create a resource screen. Databases and Azure Cosmos DB are highlighted.](../media/cosmos-db-create.png)
+    :::image type="content" source="../media/cosmos-db-create.png" alt-text="Screenshot of the Azure portal's Create a resource screen. Databases and Azure Cosmos DB are highlighted.":::
 
-3. On **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
+1. On **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
     ![Screenshot showing the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
 
-4. On the **Basics** tab, enter the following information:
+1. On the **Basics** tab, enter the following information:
 
     | Parameter       | Value |
     | --------------- | ----- |
@@ -34,7 +34,7 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
     Make a note of the password you create. You need the password later to connect to the database.
 
-5. For the **Scale** setting, select **Configure**. On the cluster configuration page, set the following and select **Save** to return to the cluster configuration page:
+1. For the **Scale** setting, select **Configure**. On the cluster configuration page, set the following and select **Save** to return to the cluster configuration page:
 
     | Parameter        | Value |
     | ---------------- | ----- |
@@ -47,43 +47,43 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
     ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)
 
-6. Select the **Review + create** button, and on the review screen, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
+1. Select the **Review + create** button, and on the review screen, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
 
     ![Screenshot showing the Configure IP address in firewall rules dialog, with a warning message.](../media/configure-ip-rules-warning.png)
 
     It can take up to 15 minutes for your cluster to provision.
 
-7. When your cluster is finished provisioning, go to the resource in the Azure portal.
+1. When your cluster is finished provisioning, go to the resource in the Azure portal.
 
-8. On the left menu under **Settings**, select **Networking**. On the *Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox, and then select **Save** on the toolbar.
+1. On the left menu under **Settings**, select **Networking**. On the *Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox, and then select **Save** on the toolbar.
 
     ![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)
 
-## Connect to the database by using psql in the Azure Cloud Shell
+## Connect to the database by using psql in Azure Cloud Shell
 
-You'll use `psql` from the command line to make your database changes. `psql` is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+You'll use psql from the command line to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
-1. From your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, in the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
+1. On your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, in the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
 
     ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
-2. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string to use later.
+1. Paste the connection string into a text editor, such as Notepad. Replace the `{your_password}` token with the password that you created for the `citus` user when you created your cluster. Copy the updated connection string to use later.
 
-3. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
+1. On the **Connection strings** pane in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the global controls in the Azure portal.
 
     ![Screenshot showing the Cloud Shell icon on the Azure portal toolbar, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
-    The Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
+    Cloud Shell opens as an embedded pane at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
-4. If necessary, select **Bash** as the environment in the Cloud Shell window.
+1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
     ![Screenshot of the welcome page of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
 
-5. If this is the first time you open the Cloud Shell, you may be prompted to mount a storage account. Select the subscription you used for your database account, then select **Create storage**.
+1. If this is the first time you open Cloud Shell, you might be prompted to mount a storage account. Select the subscription that you used for your database account, and then select **Create storage**.
 
     ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
 
-6. Now, use the `psql` command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in the Cloud Shell, and then run the command, which should look similar to the following example:
+1. Now, use the psql command-line utility to connect to your database. Paste your updated connection string (updated with your correct password) at the command prompt in Cloud Shell, and then run the command. The command should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -91,9 +91,9 @@ You'll use `psql` from the command line to make your database changes. `psql` is
 
 ## Create tables in the database
 
-Now that you're connected to your database, you can begin populating the database. You'll use `psql` to create the table schema provided by Tailspin Toys in your development database.
+Now that you're connected to your database, you can begin populating the database. You'll use psql to create the table schema that was provided by Tailspin Toys in your development database.
 
-1. In the Cloud Shell, run the following query to create the `stores`, `products`, `orders`, and `line_items` tables.
+1. In Cloud Shell, run the following query to create the `stores`, `products`, `orders`, and `line_items` tables:
 
     ```sql
     CREATE TABLE stores
@@ -132,33 +132,33 @@ Now that you're connected to your database, you can begin populating the databas
     );
     ```
 
-## Ingest data by usingthe COPY command
+## Ingest data by using the COPY command
 
-Tailspin Toys has provided links to CSV files containing sample data representative of their production system data. You can use these files to populate your development database. The files are available via publicly accessible URLs, and you've decided to load the tables by performing a one-time bulk load into the new database.
+Tailspin Toys has provided links to CSV files that contain sample data that's representative of its production system data. You can use these files to populate your development database. The files are available via publicly accessible URLs. You decide to load the tables by performing a one-time bulk load into the new database.
 
 You can use the PostgreSQL `COPY` command to accomplish this task. It allows you to load data from files in bulk.
 
-1. Set the database encoding before loading data from the CSV files to ensure they're read correctly.
+1. Set the database encoding before you load data from the CSV files to ensure that the files are read correctly:
 
     ```sql
     SET CLIENT_ENCODING TO 'utf8';
     ```
 
-2. Download the ZIP file containing the provided data files.
+2. Download the ZIP file that contains the provided data files:
 
     ```sql
     \! curl -L -O 'https://github.com/MicrosoftDocs/mslearn-design-multitenant-saas-apps-with-azure-cosmos-db-for-postgresql-data/raw/main/data/data.zip'
     ```
 
-3. Unzip the file to extract the CSV files containing the data Tailspin Toys provided.
+3. Unzip the file to extract the CSV files that contain the data that Tailspin Toys provided:
 
     ```sql
     \! unzip data.zip
     ```
 
-   The ZIP file contains multiple CSV files containing stores, orders, products, and line item information. You can view the extracted files by running `\! ls` from the command line if you want to see the files.
+   The ZIP file contains multiple CSV files that contain stores, orders, products, and line item information. You can view the extracted files by running `\! ls` at the command prompt if you want to see the files.
 
-4. The following `COPY` command loads data from the downloaded *stores.csv* file into the `stores` table you created earlier, and then updates the sequence for the `store_id` column:
+4. The following `COPY` command loads data from the downloaded *stores.csv* file into the `stores` table that you created earlier. Then itupdates the sequence for the `store_id` column.
 
     ```sql
     BEGIN;
@@ -167,9 +167,9 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-    The `WITH CSV HEADER` option provides information about the format of the file being ingested, specifying that it's a CSV file and the first row is a header row.
+    The `WITH CSV HEADER` option provides information about the format of the file being ingested. The option specifies that it's a CSV file and that the first row is a header row.
 
-5. Execute the following command to populate the `products` table. The `products.csv` file doesn't contain a header row, so you remove the `HEADER` option.
+5. Execute the following command to populate the `products` table. The *products.csv* file doesn't contain a header row, so you remove the `HEADER` option.
 
     ```sql
     BEGIN;
@@ -178,7 +178,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-6. For orders and line items, there are multiple CSV files. The `COPY` command can only read a single file at a time, so to avoid making numerous calls, you can use the `FROM PROGRAM` clause to inform the coordinator to retrieve the data files from an application running on the coordinator. You can then use the `cat` application on the coordinator, which combines multiple files. The `cat` command output is passed to the `COPY` command, allowing it to act as a single file for data ingestion. Run the two following `COPY` commands to load the `orders` and `line_items` tables with data from the files.
+6. For orders and line items, there are multiple CSV files. The `COPY` command can read only a single file at a time. To avoid making numerous calls, you can use the `FROM PROGRAM` clause to inform the coordinator node to retrieve the data files from an application that's running on the coordinator node. You can then use the `cat` application on the coordinator, which combines multiple files. The `cat` command output is passed to the `COPY` command so that it acts as a single file for data ingestion. Run the two following `COPY` commands to load the `orders` and `line_items` tables with data from the files:
 
     ```sql
     BEGIN;
@@ -194,7 +194,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
     COMMIT;
     ```
 
-7. You can query the count of each table to verify data was loaded correctly.
+7. You can query the count of each table to verify that data was loaded correctly:
 
     ```sql
     SELECT COUNT(*) FROM stores;      -- Count should be 442
@@ -279,7 +279,7 @@ To correctly measure the impact that transitioning to a multi-node database will
     $$;
     ```
 
-2. To view how long it takes queries to run in `psql`, you can enable query execution time output by running the following command at the Citus command prompt:
+2. To view how long it takes queries to run in psql, you can enable query execution time output by running the following command at the Citus command prompt:
 
     ```sql
     \timing
@@ -305,7 +305,7 @@ The `store_id` column is the internal identifier for tenants in the Tailspin Toy
 
 To properly distribute and colocate the `line_items` table data with `stores`, `orders`, and `products`, you need to add the `store_id` column to the `line_items` table and backfill the field for each row. Backfilling tables involves denormalizing the table to add the distribution column and then populating the column with the appropriate value.
 
-1. Run the following SQL command at the `psql` prompt to denormalize the `line_items` table and add the `store_id` distribution column:
+1. Run the following SQL command at the psql prompt to denormalize the `line_items` table and add the `store_id` distribution column:
 
     ```sql
     ALTER TABLE line_items ADD COLUMN store_id bigint;
@@ -515,7 +515,7 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
 
 Congratulations! You've successfully prepared the Tailspin Toys tables for migration to a multi-node, distributed database. In the next exercise, you'll partition the table data across worker nodes.
 
-In the Cloud Shell, run the following command to disconnect from your database:
+In Cloud Shell, run the following command to disconnect from your database:
 
 ```sql
 \q
