@@ -8,7 +8,9 @@ metadata:
   ms.author: ruyakubu
   ms.topic: interactive-tutorial
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - build-2023
+    - build-2023-dataai
   ms.contributors:
   - sejuare-04262021
 title: Introduction to PyTorch

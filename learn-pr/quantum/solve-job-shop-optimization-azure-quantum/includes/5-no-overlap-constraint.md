@@ -1,14 +1,14 @@
-In this unit, the no-overlap constraint will be defined, and you will learn how to represent it mathematically and then transform it to code.
+In this unit, the no-overlap constraint is defined. You learn how to represent it mathematically and then transform it to code.
 
 The no-overlap constraint is defined as follows:
 
-| Constraint | Penalty condition |
-|---|---|
-|**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
+|                               | Description                                   | Penalty condition |
+|:------------------------------|:----------------------------------------------|:------------------|
+| **No-overlap constraint**     | Machines can only do one thing at a time. | Assign penalty every time two operations on a single machine are scheduled to run at the same time. |
 
-## Worked example
+## Implement no-overlap constraint
 
-For this final constraint, $J_{1}$ will once again be used as an example:
+For this final constraint, use $J_{1}$ as an example:
 
 - $J_{1}$: Recalibrate navigation system
   - $O_{2}$: Reboot the system (*2 minutes*) - **ship computer**
@@ -19,9 +19,9 @@ Recall once more the variable $x_{i,t}$:
 $$\text{If } x_{i,t} = 1, \text{ } O_i\text{ starts at time } \textit{t}$$
 $$\text{If } x_{i,t} = 0, \text{ } O_i\text{ does not start at time } \textit{t}$$
 
-$O_{2}$ and $O_{3}$ must be completed using the same machine - the ship computer. You can't do two things at the same time using the same machine, so to avoid violating the no-overlap constraint you must ensure that $O_{2}$ and $O_{3}$ begin at different times: $x_{2,t}$ and $x_{3,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. This means that if $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $t \leq s < t + p_{2}$ (after $O_{2}$ has started but before it has been completed using the machine).
+$O_{2}$ and $O_{3}$ must be completed using the same machine, the ship computer. You can't do two things at the same time using the same machine. To avoid violating the no-overlap constraint, you must ensure that $O_{2}$ and $O_{3}$ begin at different times: $x_{2,t}$ and $x_{3,t}$ must not equal 1 at the same time. You must also make sure that the operations don't overlap, just like you saw in the precedence constraint. If $O_{2}$ starts at time $t$, $O_{3}$ must not start at times where $t \leq s < t + p_{2}$, after $O_{2}$ has started but before it has been completed using the machine.
 
-One example of a valid configuration is shown below:
+One example of a valid configuration is shown here:
 
 |$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
 |---|---|---|---|
@@ -31,9 +31,9 @@ One example of a valid configuration is shown below:
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
 |||**Valid configuration?**|✔|
 
-As you can see, when you compare $x_{i,t}$ values pairwise at each time step, their product always equals 0. Further to this, you can see that $O_{3}$ starts two time steps after $O_{2}$, which means that there is no overlap.
+As you can see, when you compare $x_{i,t}$ values pairwise at each time step, their product always equals 0. Also, you can see that $O_{3}$ starts two time steps after $O_{2}$, which means that there's no overlap.
 
-Below, you see a configuration that violates the constraint:
+You see a configuration that violates the constraint:
 
 |$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
 |---|---|---|---|
@@ -43,9 +43,9 @@ Below, you see a configuration that violates the constraint:
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|1|
 |||**Valid configuration?**|✘|
 
-In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$ and given they require the same machine, this means that the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0, as for $t = 1$ you have: $x_{2,1} \cdot x_{3,1} = 1$.
+In this instance, $O_{2}$ and $O_{3}$ are both scheduled to start at $t = 1$. They require the same machine, so the constraint has been violated. The pairwise product of $x_{i,t}$ values is therefore no longer always equal to 0. For $t = 1$ you have: $x_{2,1} \cdot x_{3,1} = 1$.
 
-Another example of an invalid configuration is demonstrated below:
+Another example of an invalid configuration is shown here:
 
 |$t$|$x_{2,t}$|$x_{3,t}$|$x_{2,t} \cdot x_{3,t}$|
 |---|---|---|---|
@@ -55,43 +55,43 @@ Another example of an invalid configuration is demonstrated below:
 |||$\sum_{t} x_{2,t} \cdot x_{3,t} =$|0|
 |||**Valid configuration?**|✘|
 
-In the above scenario, the two operations' running times have overlapped ($t \leq s < t + p_{2}$), and therefore this configuration is not valid.
+In the above scenario, the two operations' running times have overlapped: $t \leq s < t + p_{2}$. Therefore, this configuration isn't valid.
 
 You can now use this knowledge to mathematically formulate the constraint.
 
 ## Penalty formulation
 
-As you saw from the tables in the worked example, for the configuration to be valid, the sum of pairwise products of $x_{i,t}$ values for a machine $m$ at any time $t$ must equal 0. This gives you the penalty function:
+As you saw from the tables in the example, for the configuration to be valid, the sum of pairwise products of $x_{i,t}$ values for a machine $m$ at any time $t$ must equal 0. This fact gives you the penalty function:
 
 $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \textit{m}$$
 
-Let's break that down:
+To break that expression down:
 
 - $\sum_{i,t,k,s}$
 
-  For operation $i$ starting at time $t$, and operation $k$ starting at time $s$, you need to sum over all possible start times $0 \leq t < T$ and $0 \leq s < T$. This indicates the need for another nested `for` loop, like you saw for the precedence constraint.
+  For operation $i$ starting at time $t$ and operation $k$ starting at time $s$, you need to sum over all possible start times $0 \leq t < T$ and $0 \leq s < T$. This fact indicates the need for another nested `for` loop, like you saw for the precedence constraint.
 
-  For this summation, $i \neq k$ (you should always be scheduling two different operations).
+  For this summation, $i \neq k$. You should always be scheduling two different operations.
 
   For two operations happening on a single machine, $t \neq s$ or the constraint has been violated. If $t = s$ for the operations, they have been scheduled to start on the same machine at the same time, which isn't possible.
 
 - $x_{i,t}\cdot x_{k,s}$
 
-  This is the product you saw explicitly calculated in the rightmost columns of the tables from the worked example. If two different operations $i$ and $k$ start at the same time ($t = s$), this product will equal 1. Otherwise, it will equal 0.
+  This expression is the product you saw explicitly calculated in the rightmost columns of the tables from the example. If two different operations $i$ and $k$ start at the same time ($t = s$), this product equals 1. Otherwise, it equals 0.
 
 - $\sum(\dots) = 0 \text{ for each machine } \textit{m}$
 
   This sum is performed for each machine $m$ independently.
 
-  If all $x_{i,t} \cdot x_{k,s}$ products in the summation equal 0, the total sum comes to 0. This means no operations have been scheduled to start at the same time on this machine and thus the constraint has not been violated. You can see an example of this in the bottom row of the first table from the worked example, above.
+  If all $x_{i,t} \cdot x_{k,s}$ products in the summation equal 0, the total sum comes to 0. This result means that no operations have been scheduled to start at the same time on this machine and thus the constraint hasn't been violated. You can see an example of this result in the bottom row of the first table from the example.
 
-  If any of the $x_{i,t} \cdot x_{k,s}$ products in the summation equal 1, this means that $t = s$ for those operations and therefore two operations have been scheduled to start at the same time on the same machine. The sum now returns a value greater than 1, which gives us a penalty every time the constraint is violated. You can see an example of this in the bottom row of the second table from the worked example.
+  If any of the $x_{i,t} \cdot x_{k,s}$ products in the summation equal 1, then $t = s$ for those operations. Therefore, two operations have been scheduled to start at the same time on the same machine. The sum now returns a value greater than 1, which gives a penalty every time the constraint is violated. You can see an example in the bottom row of the second table from the example.
 
 ## Code
 
-Using the above, you can transform the final penalty function into code that will generate the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects.
+You can transform the final penalty function into code that generates the terms needed by the solver. As with the previous two penalty functions, the `weight` is included in the definition of the `Term` objects.
 
-Click **+ Code** to add another new cell and add the following lines:
+Select **+ Code** to add another new cell and add the following lines:
 
 ```python
 """

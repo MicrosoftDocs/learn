@@ -30,7 +30,7 @@ modules:
 - learn.wwl.specify-requirements-secure-saas-paas-iaas-services
 - learn.wwl.design-solutions-security-posture-management-hybrid-multicloud-environments
 - learn.wwl.design-solutions-securing-server-client-endpoints
+- learn.wwl.design-solutions-network-security
 - learn.wwl.case-study-design-security-solutions-infrastructure
-###- learn.wwl.design-solutions-network-security
 trophy:
   uid: learn.wwl.sc-100-design-security-solutions-infrastructure.trophy

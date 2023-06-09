@@ -7,7 +7,7 @@ metadata:
   author: greg-lindsay
   ms.author: greglin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Optimize applications across regions by using performance routing
 durationInMinutes: 2
 content: |
