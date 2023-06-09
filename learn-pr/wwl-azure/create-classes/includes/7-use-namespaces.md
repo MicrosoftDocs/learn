@@ -15,19 +15,19 @@ Namespaces come in two categories: user-defined, and system-defined. System-defi
 You can define a namespace for your classes using the keyword namespace.
 
 In the following code example, you create a Shipping class in the Inventory namespace.
-```CSharp
+```csharp
 namespace HomeStyle
 {   class House(string style, int sqrFootage)   {       // members of House class   }
 }
 ```
 
 When you refer to the class in your code, you prefix the class name with the namespace.
-```CSharp
+```csharp
 namespace.Class variableName = new namespace.class(parameters);
 ```
 
 The following code declares and instantiates an instance of the House class in the HouseStyle namespace, and puts it in a variable called house.
-```CSharp
+```csharp
 HomeStyle.House house = new HomeStyle.House();
 ```
 

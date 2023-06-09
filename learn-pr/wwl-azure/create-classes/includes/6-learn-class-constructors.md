@@ -8,7 +8,7 @@ Constructors are methods used to initialize your object with any initial values 
 
 A constructor is a method that the CLR calls automatically, whenever you create an object. They have the same name as the class in which they're defined.
 The general syntax for constructors is as follows:
-```CSharp
+```csharp
 access-modifier class-name(parameter-list)
 {
 
@@ -22,7 +22,7 @@ The following example shows how to define three constructors in the House class:
 - The second constructor takes a string parameter. It initializes the house style name with this parameter, and sets the initial balance to zero
 
 - The third constructor takes two parameters, and initializes both the house style name and the square footage with these parameters
-```CSharp
+```csharp
 
 public class House
 {   private string houseStyle;   private int sqrFootage;

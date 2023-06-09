@@ -35,7 +35,7 @@ This exercise has you create a House class and instantiate it, initializing the 
 7.	Name your class “House” and select “Add”.
 
 8.  In your House class, add a public `string` variable called `exteriorColor`.
-    ```CSharp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -52,7 +52,7 @@ This exercise has you create a House class and instantiate it, initializing the 
     }
     ```
 9.  Now add a public `int` variable called `sqrFeet`.
-    ```CSharp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -70,7 +70,7 @@ This exercise has you create a House class and instantiate it, initializing the 
     }
     ```
 10. Create a constructor to initialize your object, as pictured.
-    ```CSharp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -93,7 +93,7 @@ This exercise has you create a House class and instantiate it, initializing the 
     }
     ```
 11.	In your Program.cs file, create a house object called 'myHouse', passing in a color and square feet. Delete any existing placeholder content in the file.
-    ```csHARP
+    ```csharp
         using Housing_Development_Project_1 // this statement is automatically generated
 
         House myHouse = new House("light grey", 2000);
@@ -103,7 +103,7 @@ This exercise has you create a House class and instantiate it, initializing the 
 
 
 12.	Use Console.WriteLine to display the values you initialized in your object.
-    ```csHARP
+    ```csharp
         using Housing_Development_Project_1 // this statement is automatically generated
 
         House myHouse = new House("light grey", 2000);
@@ -114,7 +114,7 @@ This exercise has you create a House class and instantiate it, initializing the 
 Your code should look like this.
 
 #### House.cs
-```CSharp
+```csharp
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -138,7 +138,7 @@ namespace Housing_Development_Project_1
 ```
 
 #### Program.cs
-```CSharp
+```csharp
 using Housing_Development_Project_1 // this statement is automatically generated
 
 House myHouse = new House("light grey", 2000);

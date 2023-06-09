@@ -27,7 +27,7 @@ Classes do things, or perform actions, using methods. A method is a block of cod
 
 In order to create a class, you use the class keyword. Adding methods and properties to the class is covered later in this module.
 
-```CSharp
+```csharp
 public class House
 {
 
