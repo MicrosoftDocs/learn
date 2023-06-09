@@ -18,7 +18,7 @@ The following references are related to Azure SQL Database's modern capabilities
 - [OpenLayers library](https://openlayers.org/)
 - [Graph models](/sql/relational-databases/graphs/sql-graph-overview)
 - [Columnstore indexes](/sql/relational-databases/indexes/columnstore-indexes-overview)
-- [Lock-free tables](/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
+- [Introduction to Memory-Optimized Tables](/sql/relational-databases/in-memory-oltp/introduction-to-memory-optimized-tables)
 
 ### Implement DevOps using Azure SQL Database
 
@@ -31,9 +31,9 @@ The following references will be useful if you want to learn about DevOps genera
 - [Video: Getting Started with DevOps for Azure SQL](https://www.youtube.com/watch?v=j7OnxOz7YDY&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=30)
 - [Video: Using Azure Pipelines for Azure SQL Deployments](https://www.youtube.com/watch?v=G7H6HbzwAfs&list=PLlrxD0HtieHieV7Jls72yFPSKyGqycbZR&index=28)
 - [DevOps for Azure SQL](https://devblogs.microsoft.com/azure-sql/devops-for-azure-sql/).
-- [GitHub Action Types](https://github.com/marketplace?type=actions)
+- [GitHub Action types](https://github.com/marketplace?type=actions)
 - [Azure SQL Deploy Action](https://github.com/marketplace/actions/azure-sql-deploy)
-- [Azure DevOps Tasks](/azure/devops/pipelines/tasks/)
+- [Azure Pipelines task reference](/azure/devops/pipelines/tasks/)
 - [Azure SQL Database Deployment Task](/azure/devops/pipelines/tasks/deploy/sql-azure-dacpac-deployment)
 
 #### Frameworks that support code first migrations
