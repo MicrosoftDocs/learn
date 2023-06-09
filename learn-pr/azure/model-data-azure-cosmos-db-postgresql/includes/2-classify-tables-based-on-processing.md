@@ -9,7 +9,9 @@ As the Woodgrove Bank development team needed a quick proof of concept, they tri
 
 This diagram illustrates the initial database architecture:
 
-:::image type="content" source="../media/initial-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationship between payment_users and payment_events. payment_users has four fields: user_id, url, sign-in, and avatar_url. user_id is the primary key on payment_users. payment_events has six fields: event_id, event_type, user_id, merchant_id, event_details, and created_at. event_id is the primary key on payment_events. payment_events has a foreign-key relationship to payment_users on the user_id field.":::
+:::image type="content" source="../media/initial-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationship between payment_users and payment_events.":::
+In the diagram, payment_users has four fields: user_id, url, sign-in, and avatar_url. user_id is the primary key on payment_users. payment_events has six fields: event_id, event_type, user_id, merchant_id, event_details, and created_at. event_id is the primary key on payment_events. payment_events has a foreign-key relationship to payment_users on the user_id field.
+:::image-end:::
 
 The Woodgrove Bank team realized they needed to normalize their data to store it in a relational database. They migrated their event types and merchants to their own tables. This diagram illustrates the normalized architecture:
 
