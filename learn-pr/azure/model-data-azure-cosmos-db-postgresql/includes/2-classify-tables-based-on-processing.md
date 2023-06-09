@@ -15,7 +15,9 @@ This diagram illustrates the initial database architecture:
 
 The Woodgrove Bank team realized they needed to normalize their data to store it in a relational database. They migrated their event types and merchants to their own tables. This diagram illustrates the normalized architecture:
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="complex" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types.":::
+   In the diagram, payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.
+:::image-end:::
 
 This normalized data diagram is what they used for their trial. However, as Woodgrove Bank is growing and needs a distributed environment, the developers suspect that this data diagram will evolve. Before they can change their model, they need to understand what it means to distribute the data.
 
