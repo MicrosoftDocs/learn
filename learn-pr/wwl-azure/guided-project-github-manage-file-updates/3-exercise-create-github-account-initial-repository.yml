@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.exercise-create-github-account-initial-repository
+title: Exercise – Create a GitHub account and an initial repository
+metadata:
+  title: Exercise – Create a GitHub account and an initial repository
+  description: "Exercise – Create a GitHub account and an initial repository"
+  ms.date: 06/09/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-exercise-create-github-account-initial-repository.md)]
+interactive: bash

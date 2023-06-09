@@ -1,0 +1,50 @@
+### YamlMime:LearningPath
+uid: learn.github-copilot
+metadata:
+  title: GitHub Copilot fundamentals - Understand the AI pair programmer
+  description: Empower individual developers and businesses to enhance their productivity and foster innovation through a comprehensive exploration of the fundamental concepts of GitHub Copilot. Additionally, gain valuable insights on how to initiate the implementation of GitHub Copilot within your organization, enabling you to kickstart your own transformative journey.
+  brand: github
+  ms.date: 06/05/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+title: GitHub Copilot Fundamentals - Understand the AI pair programmer
+summary: |
+  Explore the fundamentals of GitHub Copilot and its potential to enhance productivity and foster innovation for both individual developers and businesses. Discover how to implement it within your organization and unleash its power for your own projects.
+
+  In this learning path, you'll:
+
+  - Gain a comprehensive understanding of the distinctions between GitHub Copilot for Individuals, GitHub Copilot for Business, and GitHub Copilot X.
+
+  - Explore various use cases for GitHub Copilot for Business, including real-life examples showcasing how customers have leveraged it to boost their productivity.
+
+  - Receive step-by-step instructions on enabling GitHub Copilot for Individuals and GitHub Copilot for Business, ensuring a seamless integration into your workflows. 
+
+prerequisites: |
+ - Basic understanding of GitHub fundamentals
+iconUrl: /training/achievements/intro-github-copilot.svg
+levels:
+- beginner
+- intermediate
+
+roles:
+- devops-engineer
+- administrator
+- developer
+- solution-architect
+- student
+
+products:
+- github
+
+subjects:
+- collaboration
+- devops
+
+modules:
+- learn.github.introduction-to-github-copilot
+- learn.github.introduction-to-github-copilot-for-business
+
+trophy:
+  uid: learn.github.trophy
