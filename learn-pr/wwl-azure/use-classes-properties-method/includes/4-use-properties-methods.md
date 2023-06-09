@@ -2,7 +2,7 @@
 
 In programming you call constants (values that don't change), variables, methods, and properties the data members, or members, of a class. To access a member on an instance, use the name of the instance, followed by a period, followed by the name of the member. The following rules and guidelines apply when you access a member on an instance:
 
-## Make properties their job
+## Make properties do their job
 
 To access a property, use the property name as if it were a public field in the class. The compiler implicitly understands you want either the get accessor or the set accessor on the instance, depending on whether you're getting or setting the property value.
 
@@ -29,10 +29,10 @@ The following example calls the calcDiscount method that passes back an integer 
 int dsct = myCustomer.calcDiscount();
 ```
 
-**Note**: Both methods and properties can be designed to accept reference types.
+>[Note] Both methods and properties can be designed to accept reference types.
 
 &nbsp;
-## Check your knowledge
+## quizT title: Check your knowledge
 
 ## Multiple choice
 When are the get and set methods for a property called?

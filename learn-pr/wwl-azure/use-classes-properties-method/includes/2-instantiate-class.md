@@ -34,9 +34,3 @@ Customer myCustomer = new Customer(param1, param2);
 ```
 
 &nbsp;
-## Check your knowledge
-
-## Multiple choice
-Can you call a method in a class after you have finished declaration?
-( ) Yes. {{Incorrect. You cannot call a method until it has been declared.}}
-(x) No. {{Correct. Declaring a class introduces a new variable to your application, but does not create it without instantiaion unless it is static.}}

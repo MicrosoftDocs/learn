@@ -4,10 +4,21 @@ title: Instantiate a class
 metadata:
   title: Instantiate a class
   description: "This unit talks about how you instantiate a class."
-  ms.date: 06/08/2023
+  ms.date: 06/09/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
 durationInMinutes: 12
 content: |
   [!include[](includes/2-instantiate-class.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Can you call a method in a class after you have finished declaration?"
+    choices:
+    - content: "Yes."
+      isCorrect: false
+      explanation: "Incorrect. You cannot call a method until it has been declared."
+    - content: "No."
+      isCorrect: true
+      explanation: "Correct. Declaring a class introduces a new variable to your application, but does not create it without instantiaion unless it is static."
