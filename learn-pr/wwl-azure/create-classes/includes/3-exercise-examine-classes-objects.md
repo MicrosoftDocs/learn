@@ -11,7 +11,7 @@ To reiterate, a class is a blueprint that you can use to create objects. A class
 An object is an instance of a class. If a class is a blueprint, an object is what you create from that blueprint. The class is the definition of an item, while the object is the item itself. 
 
 When you write a class definition with methods and perhaps properties as well, you do what is called instantiating that object, or putting it in memory. The process of instantiating an object is often referred to as “newing” an object, as the keyword for creating the in-memory representation of your class uses the word `new`.
-```CSharp
+```csharp
 House house = new House();
 ```
 >[!Note] The term instance is often used as an alternative to object.
