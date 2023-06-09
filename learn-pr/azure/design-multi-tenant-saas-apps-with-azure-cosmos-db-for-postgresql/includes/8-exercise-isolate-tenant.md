@@ -18,17 +18,17 @@ Use psql from the command line to make your database changes. psql is a command-
 
 1. From your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), in the left menu under **Settings**, select **Connection strings**, and then copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. On the Connection strings page, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    ![Screenshot of the Connection strings pane of the Azure Cosmos DB Cluster resource. On the Connection strings pane, the copy to clipboard button to the right of the psql connection string is highlighted.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
 
 1. Paste the connection string into a text editor, such as Notepad.exe, and replace the `{your_password}` token with the password you assigned to the `citus` user when creating your cluster. Copy the updated connection string to use later.
 
-1. From the **Connection strings** page in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
+1. On the **Connection strings** pane in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the toolbar in the Azure portal.
 
     ![Screenshot of the Azure portal toolbar, with the Cloud Shell icon is highlighted, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
 
     Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open the [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
-1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database. Paste your updated connection string (the one containing your correct password) at the prompt in Cloud Shell, and then run the command, which should look similar to the following example:
+1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database. Paste your updated connection string (the one that contains your correct password) at the prompt in Cloud Shell, and then run the command, which should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -211,7 +211,7 @@ Congratulations! You've successfully isolated the largest tenant onto a dedicate
     SELECT cron.unschedule('create_orders');
     ```
 
-1. In Cloud Shell, run the following command to disconnect from your database.
+1. In Cloud Shell, run the following command to disconnect from your database:
 
     ```sql
     \q
@@ -222,6 +222,6 @@ Congratulations! You've successfully isolated the largest tenant onto a dedicate
 It's essential that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used.
 
 1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
-1. In the left menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group you created as part of the exercise in Unit 3.
+1. In the left menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group you created as part of the exercise in unit 3.
 1. In the **Overview** pane, select **Delete resource group**.
 1. Enter the name of the resource group you created to confirm, and then select **Delete**.

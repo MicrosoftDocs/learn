@@ -16,14 +16,14 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "When preparing multitenant tables for migration from a single-node to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but don't contain a column directly referencing it?"
+  - content: "When preparing multitenant tables for migration from a single-node to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but which doesn't contain a column that directly references it?"
     choices:
     - content: "Ready for distribution"
       isCorrect: false
-      explanation: "Try again. Tables classified as ready for distribution already contain the distribution column and are ready to be distributed without changes."
+      explanation: "Try again. Tables that are classified as ready for distribution already contain the distribution column and are ready to be distributed without changes."
     - content: "Needs backfill"
       isCorrect: true
-      explanation: "Correct! Tables in this category require denormalization to add the selected distribution column, which must then be backfilled with the appropriate value."
+      explanation: "Correct! Tables that are in this category require denormalization to add the selected distribution column, which must then be backfilled by using the appropriate value."
     - content: "Reference table"
       isCorrect: false
       explanation: "Try again. Reference tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants."
@@ -32,15 +32,15 @@ quiz:
       explanation: "Try again. Local tables are typically not joined to other tables and don't contain the distribution key."
   - content: "Which distribution function is the safest to use for write-intensive tables when migrating a production multitenant database from a single-node to a multi-node cluster?"
     choices:
-    - content: "concurrently_distribute_table()"
+    - content: "`concurrently_distribute_table()`"
       isCorrect: false
       explanation: "Try again. This function doesn't exist."
-    - content: "create_distributed_table()"
+    - content: "`create_distributed_table()`"
       isCorrect: false
       explanation: "Try again. This method results in table locking and can prevent writes against the table until the distribution process completes."
-    - content: "create_distributed_table_concurrently()"
+    - content: "`create_distributed_table_concurrently()`"
       isCorrect: true
-      explanation: "Correct! Running create_distributed_table_concurrently() takes longer to complete but is a safer option when working with production systems, where reducing the impact on ongoing application operations is essential."
+      explanation: "Correct! Running `create_distributed_table_concurrently()` takes longer to complete but is a safer option when working with production systems, in which reducing the impact on ongoing application operations is essential."
   - content: "When monitoring activity in a multitenant SaaS database, the ability to view database usage and statistics on a per-tenant basis is crucial. What built-in view allows you to get clear insights into what your tenants are doing?"
     choices:
     - content: "citus_stat_statements"
@@ -51,4 +51,4 @@ quiz:
       explanation: "Try again. The citus_dist_stat_activity view shows the distributed queries that are executing on all nodes."
     - content: "pg_stat_statements"
       isCorrect: false
-      explanation: "Try again. The pg_stat_statements view tracks queries issues against the database and provides query timing details, but it doesn't capture the tenant ID associated with each query."
+      explanation: "Try again. The pg_stat_statements view tracks queries issues against the database and provides query timing details, but it doesn't capture the tenant ID that's associated with each query."

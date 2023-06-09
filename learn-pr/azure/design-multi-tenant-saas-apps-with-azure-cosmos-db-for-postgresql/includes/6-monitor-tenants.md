@@ -106,11 +106,11 @@ LIMIT 5;
 
 The function references the shard information view (`citus_shards`) to retrieve the size of each shard hosting `order` table data, and the built-in `get_shard_id_for_distribution_column()` function to locate the specific shards hosting `order` table data.
 
-Using this query, you can find tenants that occupy a high percentage of space in the shard in which they reside. Resource contention can often happen when one or a few tenants comprise a large portion of the data in an individual shard. This query provides information that can help identify tenants that are potential candidates for isolation or may indicate rebalancing is required.
+Using this query, you can find tenants that occupy a high percentage of space in the shard in which they reside. Resource contention can often happen when one or a few tenants comprise a large portion of the data in an individual shard. This query provides information that can help identify tenants that are potential candidates for isolation or might indicate rebalancing is required.
 
 ## Monitor cross-shard versus single-shard queries
 
-In the Tailspin Toys multitenant database, you would expect most queries to target a single tenant and run on a single shard. By using `citus_stat_statements`, you can query for the percentage of queries that span across shards. Seeing too many multitenant (that is, cross-shard) queries indicates the proper filters may not be applied to correctly match a single tenant, resulting in unnecessary network calls, slower performance, and possible security issues.
+In the Tailspin Toys multitenant database, you would expect most queries to target a single tenant and run on a single shard. By using `citus_stat_statements`, you can query for the percentage of queries that span across shards. Seeing too many multitenant (that is, cross-shard) queries indicates the proper filters might not be applied to correctly match a single tenant, resulting in unnecessary network calls, slower performance, and possible security issues.
 
 To view a breakdown of how many cross-shard versus single-shard queries are happening in the database, you can run the following code:
 
@@ -126,7 +126,7 @@ FROM (
 ) AS t;
 ```
 
-For multitenant SaaS applications, there are typically a few cross-tenant queries executed by the SaaS provider. These queries are commonly used to collect internal statistics about customers and how they use the application. However, the Tailspin Toys tenant stores are prohibited from viewing each other's data, so monitoring the percentage of cross-shard queries can be a valuable tool in validating application queries are working as expected. A noteworthy increase in this ratio may indicate that queries aren't filtering as expected.
+For multitenant SaaS applications, there are typically a few cross-tenant queries executed by the SaaS provider. These queries are commonly used to collect internal statistics about customers and how they use the application. However, the Tailspin Toys tenant stores are prohibited from viewing each other's data, so monitoring the percentage of cross-shard queries can be a valuable tool in validating application queries are working as expected. A noteworthy increase in this ratio might indicate that queries aren't filtering as expected.
 
 ```text
  cross_shard | shard  
@@ -170,7 +170,7 @@ If you view the shard size values for Tailspin Toys, you can see that one node f
 
 You can also use the Azure portal to inspect skewness and get a recommendation about whether rebalancing is recommended.
 
-![Screenshot of the Shard rebalancer page of the Azure CosmosDB for PostgreSQL Cluster, with the Shard rebalancer menu selected and highlighted. The Rebalancing is recommended header is highlighted, as are the node sizes for each cluster.](../media/cosmos-db-postgresql-shard-rebalancer.png)
+![Screenshot of the Shard rebalancer pane of the Azure CosmosDB for PostgreSQL Cluster, with the Shard rebalancer menu selected and highlighted. The Rebalancing is recommended header is highlighted, as are the node sizes for each cluster.](../media/cosmos-db-postgresql-shard-rebalancer.png)
 
 Rebalancing moves shards between nodes, more evenly distributing data. The shard rebalancer handles this process without downtime or disruption to the database. You can run the rebalancer by executing the `rebalance_table_shards()` function.
 
@@ -199,4 +199,4 @@ After initiating the shard rebalancer, you'll see an output indicating which sha
  line_items | private-w0.learn-cosmosdb-postgresql-kb.postgres.database.azure.com | 297762816
 ```
 
-It's important to note that standard shard rebalancing distributes shards to equalize node storage usage. It doesn't examine which tenants are allocated on each shard, so while it can improve overall performance, it may or may not enhance the mixing of large and small tenants.
+It's important to note that standard shard rebalancing distributes shards to equalize node storage usage. It doesn't examine which tenants are allocated on each shard, so while it can improve overall performance, it might or might not enhance the mixing of large and small tenants.
