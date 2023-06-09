@@ -1742,3 +1742,8 @@ achievements:
   title: Set up your first development lab by using Azure DevTest Labs
   summary: Learn how to set up your first development lab by using Azure DevTest Labs.
   iconUrl: /training/achievements/set-up-first-lab-with-azure-devtest-labs.svg
+- uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
+  type: badge
+  title: Work with mutable and partial data in Azure Cache for Redis
+  summary: Learn how to create transactions, manage memory, and use the cache-aside pattern with Azure Cache for Redis
+  iconUrl: /training/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg

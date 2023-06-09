@@ -22608,6 +22608,51 @@
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/7-summary.md",
     "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": " learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/1-introduction.md ",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/2-transactions-in-redis.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": " learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/3-create-a-transaction.md ",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/4-data-expiration.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": " learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/5-implement-data-expiration.md ",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/6-eviction-policies.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": " learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/7-cache-aside-pattern.md ",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/8-summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
   }
   ]
 }
