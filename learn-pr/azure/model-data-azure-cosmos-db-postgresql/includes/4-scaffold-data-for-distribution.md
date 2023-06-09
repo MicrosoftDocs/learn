@@ -27,7 +27,9 @@ Consider this event data for `user_id` 1894. When the events are distributed by 
 
 If this data were sharded by `merchant_id`, the data would be split like this:
 
-:::image type="content" source="../media/events-distributed-merchant-id.svg" alt-text="Diagram of event data sharded on merchant_id. All the data for a merchant_id value is stored in a shard on a worker node. Because user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.":::
+:::image type="complex" source="../media/events-distributed-merchant-id.svg" alt-text="Diagram of event data sharded on merchant_id.":::
+   All the data for a merchant_id value is stored in a shard on a worker node. Because user_id 1894 worked with multiple merchants, their event data is split on separate worker nodes when the event data is sharded by merchant_id.
+:::image-end:::
 
 Querying for events for `user_id` 1894 with `payment_events` distributed on `merchant_id` means that all shards would need to be queried for data where `user_id` is set to 1894. While this example is only two shards, know that the performance pain scales as more shards are involved.
 
@@ -106,8 +108,12 @@ For Woodgrove Bank, here are some changes you'll need to make:
 
 The Woodgrove Bank application's database in a non-distributed environment looked like this:
 
-:::image type="content" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types. payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.":::
+:::image type="complex" source="../media/normalized-database-entity-relationship-diagram.svg" alt-text="Diagram of the relationships between users, events, merchants, and event types.":::
+   In the diagram, payment_events' event_type field is now event_type_id, with a foreign key relationship to a new table named event_types. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The payment_events table also has a foreign-key relationship to a new table named payment_merchants. The payment_merchants table has merchant_id, name, and url. The merchant_id is the primary key for payment_merchants.
+:::image-end:::
 
 In terms of the relational diagram with distribution considerations, this diagram represents the final application for Woodgrove Bank:
 
-:::image type="content" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants. payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.":::
+:::image type="complex" source="../media/distributed-entity-relationship-diagram.svg" alt-text="Diagram of distributed relationships between users, events, event types, and merchants.":::
+   In the diagram, payment_events has a column event_type_id, with a foreign key relationship to the event_types table. The event_types table contains the name and event_type_id, with the event_type_id as its primary key. The event_types table is a reference table. The payment_merchants table has merchant_id, name, and url. The merchant_id is the distribution column for payment_merchants. The payment_users distributed table uses user_id as its distribution column and has a foreign key relationship to the payment_events table.
+:::image-end:::
