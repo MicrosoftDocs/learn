@@ -16,7 +16,7 @@ Distributing tables is the process of partitioning or sharding table data and mo
 
 Colocation of related table data should also be configured to allow tenant-specific queries to execute as efficiently as possible. When table data is distributed across nodes in the cluster, you ideally want rows across all tables that relate to the same tenant to reside together on the same nodes in what is called *table colocation*.
 
-![Diagram of table colocation represented by data from different tables being in separate clouds based on the store_id.](../media/multitenant-colocation.png)
+![Diagram of table colocation represented by data from different tables being in separate clouds based on the store_id.](../media/multi-tenant-colocation.png)
 
 Colocating Tailspin Toys tables by store has the following advantages:
 
