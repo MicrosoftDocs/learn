@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.describe-identity-protection-governance.introduction
+title: introduction
+metadata:
+  title: introduction
+  description: "Introduction to identity protection and governance in Microsoft Entra"
+  ms.date: 6/8/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  # ms.prod: TODO
+  ms.service: microsoft-entra-identity-governance
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
