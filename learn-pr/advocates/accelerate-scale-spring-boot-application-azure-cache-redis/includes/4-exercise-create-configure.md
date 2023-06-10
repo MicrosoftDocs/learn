@@ -1,189 +1,184 @@
-You'll now create a Spring Boot application that will use Spring Data Redis to store and retrieve data from Azure Cache for Redis.
+In this unit, you create a Spring Boot application that uses Spring Data Redis to store and retrieve data from Azure Cache for Redis. You can create the application, except for the final connection to Azure Cache for Redis, while you wait for your Azure Cache for Redis instance to finish deploying.
 
-## Create a Spring Boot project by using Spring Data Redis
+## Create the Spring Boot project
 
-To create our Spring Boot project, we'll use [Spring Initializr](https://start.spring.io/) with the command line:
+To create your Spring Boot project, run the following [Spring Initializr](https://start.spring.io/) command line:
 
 ```bash
 curl https://start.spring.io/starter.tgz -d type=maven-project -d dependencies=web,data-redis -d baseDir=spring-redis-application -d bootVersion=2.4.1.RELEASE -d javaVersion=1.8 | tar -xzvf -
 ```
 
 > [!NOTE]
-> We use the `Spring Web` and the `Spring Data Redis` components.
-> `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, and you'll be able to use it for more advanced tasks.
+> The command uses `Spring Web` and `Spring Data Redis` components. `Spring Data Redis` uses the [Lettuce](https://github.com/lettuce-io/lettuce-core) Redis driver, which you can also use for more advanced tasks.
 
-## Add Spring code to manage data by using Spring Data Redis
+## Add Spring code to manage data
 
-Next to the `DemoApplication` class, create a `Todo` domain object:
+1. In your Spring Boot project, next to the *DemoApplication* class, add a *Todo*  domain object as follows:
 
-```java
-package com.example.demo;
+   ```java
+   package com.example.demo;
+   
+   import org.springframework.data.annotation.Id;
+   import org.springframework.data.redis.core.RedisHash;
+   
+   import java.io.Serializable;
+   
+   @RedisHash("Todo")
+   public class Todo implements Serializable {
+   
+       public Todo() {
+       }
+   
+       public Todo(String description, String details, boolean done) {
+           this.description = description;
+           this.details = details;
+           this.done = done;
+       }
+   
+       @Id
+       private Long id;
+   
+       private String description;
+   
+       private String details;
+   
+       private boolean done;
+   
+       public Long getId() {
+           return id;
+       }
+   
+       public void setId(Long id) {
+           this.id = id;
+       }
+   
+       public String getDescription() {
+           return description;
+       }
+   
+       public void setDescription(String description) {
+           this.description = description;
+       }
+   
+       public String getDetails() {
+           return details;
+       }
+   
+       public void setDetails(String details) {
+           this.details = details;
+       }
+   
+       public boolean isDone() {
+           return done;
+       }
+   
+       public void setDone(boolean done) {
+           this.done = done;
+       }
+   }
+   ```
 
-import org.springframework.data.annotation.Id;
-import org.springframework.data.redis.core.RedisHash;
+1. Create a Spring Data Redis repository called *TodoRepository* to manage this collection, as follows:
 
-import java.io.Serializable;
+   ```java
+   package com.example.demo;
+   
+   import org.springframework.data.repository.CrudRepository;
+   import org.springframework.stereotype.Repository;
+   
+   @Repository
+   public interface TodoRepository extends CrudRepository<Todo, String> {
+   
+   }
+   ```
 
-@RedisHash("Todo")
-public class Todo implements Serializable {
+1. Add a Spring MVC controller called *TodoController*, as follows:
 
-    public Todo() {
-    }
+   ```java
+    package com.example.demo;
+   
+   import org.springframework.http.HttpStatus;
+   import org.springframework.web.bind.annotation.*;
+   
+   @RestController
+   @RequestMapping("/")
+   public class TodoController {
+   
+       private final TodoRepository todoRepository;
+   
+       public TodoController(TodoRepository todoRepository) {
+           this.todoRepository = todoRepository;
+       }
+   
+       @PostMapping("/")
+       @ResponseStatus(HttpStatus.CREATED)
+       public Todo createTodo(@RequestBody Todo todo) {
+           return todoRepository.save(todo);
+       }
+   
+       @GetMapping("/")
+       public Iterable<Todo> findAllTodos() {
+           return todoRepository.findAll();
+       }
+   }
+   ```
 
-    public Todo(String description, String details, boolean done) {
-        this.description = description;
-        this.details = details;
-        this.done = done;
-    }
+## Get Azure Cache for Redis security keys
 
-    @Id
-    private Long id;
+1. Run the following command to check whether your Azure Cache for Redis instance is ready to use.
 
-    private String description;
+   ```azurecli
+   az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP
+   ```
 
-    private String details;
+   The command returns JSON data that contains a `provisioningState` attribute. When `provisioningState` has the value `Succeeded`, your Azure Cache for Redis instance is fully available.
 
-    private boolean done;
+   >[!TIP]
+   >If you have the [jq](https://stedolan.github.io/jq/) utility, you can use the following single command line to check readiness:
+   >
+   >```azurecli
+   >az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP | jq '.provisioningState'
+   >```
 
-    public Long getId() {
-        return id;
-    }
+1. When the Azure Cache for Redis instance is ready, run the following command to retrieve its security keys:
 
-    public void setId(Long id) {
-        this.id = id;
-    }
+   ```azurecli
+   az redis list-keys \
+       --resource-group $AZ_RESOURCE_GROUP \
+       --name $AZ_REDIS_NAME
+   ```
 
-    public String getDescription() {
-        return description;
-    }
-
-    public void setDescription(String description) {
-        this.description = description;
-    }
-
-    public String getDetails() {
-        return details;
-    }
-
-    public void setDetails(String details) {
-        this.details = details;
-    }
-
-    public boolean isDone() {
-        return done;
-    }
-
-    public void setDone(boolean done) {
-        this.done = done;
-    }
-}
-```
-
-Then, create a Spring Data Redis repository to manage this collection, called `TodoRepository`:
-
-```java
-package com.example.demo;
-
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.stereotype.Repository;
-
-@Repository
-public interface TodoRepository extends CrudRepository<Todo, String> {
-
-}
-```
-
-Finish coding this application by adding a Spring MVC controller called `TodoController`:
-
-```java
-package com.example.demo;
-
-import org.springframework.http.HttpStatus;
-import org.springframework.web.bind.annotation.*;
-
-@RestController
-@RequestMapping("/")
-public class TodoController {
-
-    private final TodoRepository todoRepository;
-
-    public TodoController(TodoRepository todoRepository) {
-        this.todoRepository = todoRepository;
-    }
-
-    @PostMapping("/")
-    @ResponseStatus(HttpStatus.CREATED)
-    public Todo createTodo(@RequestBody Todo todo) {
-        return todoRepository.save(todo);
-    }
-
-    @GetMapping("/")
-    public Iterable<Todo> findAllTodos() {
-        return todoRepository.findAll();
-    }
-}
-```
-
-## Check if your Azure Cache for Redis instance is available
-
-Creating an Azure Cache for Redis instance can take a while, and it's time to check if it's now ready to be used. Use the following command to check:
-
-```bash
-az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP
-```
-
-This command will return a JSON file that contains an attribute named `provisioningState`.
-
-If you have the [jq](https://stedolan.github.io/jq/) utility, you can even do this command in one line:
-
-```bash
-az redis show --name $AZ_REDIS_NAME --resource-group $AZ_RESOURCE_GROUP | jq '.provisioningState'
-```
-
-When `provisioningState` has the value `Succeeded`, your Azure Cache for Redis instance is fully available.
+   Copy the `primaryKey` value from the output to use in the next step.
 
 ## Configure Spring Boot to connect to Azure Cache for Redis
 
-After you've successfully created your Azure Cache for Redis instance, retrieve its security keys:
+Open the *src/main/resources/application.properties* configuration file in your application and add the following properties. Replace the `<redisName>` placeholder with your Redis instance name, and replace the `<redisPrimaryKey>` placeholder with the `primaryKey` value you got from the previous step.
 
-```bash
-az redis list-keys \
-    --resource-group $AZ_RESOURCE_GROUP \
-    --name $AZ_REDIS_NAME
-```
-
-Note the `primaryKey` value, because we'll use it later.
-
-Now open the `src/main/resources/application.properties` configuration file, and add the following properties:
-
-```properties
-spring.redis.host=<xxxxxxx>.redis.cache.windows.net
-spring.redis.password=<xxxxxxx>
+```yaml
+spring.redis.host=<redisName>.redis.cache.windows.net
+spring.redis.password=<redisPrimaryKey>
 spring.redis.port=6380
 spring.redis.ssl=true
 ```
 
-Replace the two `<xxxxxxx>` parameters with the following values:
-
-- `spring.redis.host`: The name of your Redis instance, which you stored in the `$AZ_REDIS_NAME` variable earlier.
-- `spring.redis.password`: The key to your Redis instance. This key is the `primaryKey` value that you retrieved earlier.
-
 ## Test the application locally
 
-You can now run your Spring Boot application, either by running the executable `DemoApplication` within your IDE or by running the Spring Boot Maven plug-in:
+1. Run your Spring Boot application, either by running the executable *DemoApplication* in your development environment or by running the Spring Boot Maven plug-in as follows:
 
-```bash
-./mvnw spring-boot:run
-```
+   ```bash
+   ./mvnw spring-boot:run
+   ```
 
-After the application is running, you can store some data in Redis:
+1. With the application running, store some data in Redis by using the following command:
 
-```bash
-curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:8080
-```
+   ```bash
+   curl -d '{"description":"a description", "details":"some details"}' -H "Content-Type: application/json" -X POST http://127.0.0.1:8080
+   ```
 
-And you can retrieve that data from Redis:
+1. Now retrieve that data from Redis:
 
-```bash
-curl http://127.0.0.1:8080
-```
+   ```bash
+   curl http://127.0.0.1:8080
+   ```
+
+Go on to the next unit to learn how to use Azure Cache for Redis to store HTTP session data through Spring Session.

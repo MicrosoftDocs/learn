@@ -1,6 +1,6 @@
 ![Screenshot that shows the UWP, WPF, and Windows Forms logo.](../media/tech-uwp.png)
 
-Universal Windows Platform (UWP) in Visual Studio is an exciting technology that enables a single app to run on any device: desktop, laptop, tablet, Xbox One, Surface Hub, or HoloLens device. There are many similarities between developing for UWP and developing for Windows Presentation Foundation (WPF), but there are some subtle differences too. This tutorial covers these differences, and it's a  first step into the world of UWP programming.
+Universal Windows Platform (UWP) in Visual Studio is a technology that enables a single app to run on any device: desktop, laptop, tablet, Xbox, Surface Hub, or HoloLens device. There are many similarities between developing for UWP and developing for Windows Presentation Foundation (WPF), but there are some subtle differences too. This tutorial covers these differences, and it's a first step into the world of UWP programming.
 
 In this unit, we:
 
@@ -11,16 +11,16 @@ In this unit, we:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NKJ1]
 
 > [!NOTE]
-> We're assuming you have set up your computer with Windows 10 and Visual Studio 2022, as described in the Learn module *Introduction to Windows 10 development*.
+> We're assuming you have set up your computer with Windows and Visual Studio 2022, as described in the Learn module *Introduction to Windows 10 development*.
 
 ### UWP "Say hello" tutorial
 
 #### Create the project
 
-1. Open Visual Studio and select **File** > **New** > **Project** from the menu. Then select **Visual C#** as the project language. Next, select the **Blank App (Universal Windows)** project type. In the **Name** field, enter a friendly name like **SayHello**. Select **Create** when you're done.
+1. Open Visual Studio and select **File** > **New** > **Project** from the menu. Then select **C#** as the project language. Next, select the **Blank App (Universal Windows)** project type. In the **Name** field, enter a friendly name like **SayHello**. Select **Create** when you're done.
 
     > [!NOTE]
-    > Just select **OK** when the **New Universal Windows Platform Project** dialog box presents you with the puzzling options of selecting **Target** and **Minimum** versions of UWP.
+    > Just select **OK** when the **New Universal Windows Platform Project** dialog box presents you with the options of selecting **Target** and **Minimum** versions of UWP. The default selections will work just fine for this project.
 
     :::image type="content" source="../media/1-create-uwp-app.png" alt-text="Screenshot that shows the Configure your new project window for a Blank App (Universal Windows) with the create button selected.":::
 
@@ -32,7 +32,7 @@ In this unit, we:
 
 #### Design the UI
 
-1. If the Toolbox isn't already open, select the **View** menu, and then select **Toolbox**. In the **Toolbox**, select **Common XAML Controls**.
+1. If the **Toolbox** panel isn't already open, select the **View** menu, and then select **Toolbox**. In the **Toolbox**, select **Common XAML Controls**.
 
     ![Screenshot that shows the Toolbox menu in Visual Studio with Button and TextBox in red boxes.](../media/uwp-toolbox-a.png)
 
@@ -46,6 +46,9 @@ In this unit, we:
 3. Now we want to set some properties on these UI elements. Select the button so that its properties appear in the **Properties** pane. Change the **Name** to something simple like **SayHelloButton**, and change the **Content** (by expanding **Common**) to **Say hello**.
 
     ![Screenshot that shows the Name and Content properties set in the Properties window.](../media/uwp-button-properties-a.png)
+
+    > [!NOTE]
+    > Notice how the **Name** property is added to the **Button** entry in the XAML definition that appears below the layout. The XAML definition is updated automatically as you change properties in the designer.
 
 4. We need to attach an event to the button. You can select the button itself, but that only works if the designer layout is in the required state. A more certain way to enter an event is to open the events available for that UI item. You do that by selecting the icon shown here in the **Properties** pane and then select the entry for the **Click** event. Doing so automatically creates the named event **SayHelloButton_Click**, adds the appropriate code entry in the MainPage.xaml.cs file, and opens the file for you.
 
@@ -103,7 +106,7 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
     }
     ```
 
-2. Let's make sure we have all the necessary **using** statements. Check that you have the following, and add them if you don't. In particular, make sure the **using Windows.UI;** statement is there. You can optionally remove any unnecessary **using** statements that Visual Studio included when it created the project. Unused namespaces appear in gray.
+2. Let's make sure we have all the necessary **using** statements. Check that you have the following, and add them if you don't. In particular, make sure the **using Windows.UI;** statement is there. When you're finished editing the file, you can optionally remove any unnecessary **using** statements that Visual Studio included when it created the project. Unused namespaces appear in gray.
 
     ```csharp
     using System;
@@ -113,12 +116,12 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
     using Windows.UI.Xaml.Media;
     ```
 
-3. The app renders the hello text in a random color each time the button is selected. So we need to add a global **Random** object and the **GetRandomBytes** method that randomly fills in values that we use as RGB settings. Copy and paste this code, or type it in yourself, so that your **class MainPage** looks like this:
+3. The app renders the hello text in a random color each time the button is selected. So we need to add a class-level **Random** object and the **GetRandomBytes** method that randomly fills in values that we use as RGB settings. Copy and paste this code, or type it in yourself, so that your **class MainPage** looks like this:
 
     ```csharp
     public sealed partial class MainPage : Page
     {
-        Random rand;
+        private Random rand;
 
         public MainPage()
         {
@@ -128,7 +131,7 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
 
         private byte[] GetRandomBytes(int n)
         {
-            //  Fill an array of bytes of length "n" with random numbers.
+            // Fill an array of bytes of length "n" with random numbers.
             var randomBytes = new byte[n];
             rand.NextBytes(randomBytes);
             return randomBytes;
@@ -148,10 +151,10 @@ You're almost finished with the UI elements for your app. The **&lt;Grid&gt;** e
         {
             byte[] rgb = GetRandomBytes(3);
 
-            //  Create a solid color brush using the three random numbers.
+            // Create a solid color brush using the three random numbers.
             var randomColorBrush = new SolidColorBrush(Color.FromArgb(255, rgb[0], rgb[1], rgb[2]));
 
-            //  Set both the text color and the text box border to the random color.
+            // Set both the text color and the text box border to the random color.
             textBox1.BorderBrush = randomColorBrush;
             textBox1.Foreground = randomColorBrush;
         }

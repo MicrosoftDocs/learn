@@ -6,7 +6,7 @@ In our example for this unit, you have a single fact about the Moon that's assig
 
 ```python
 fact = "The Moon has no atmosphere."
-Print(fact)
+print(fact)
 ```
 
 The output shows that the text has been assigned to the variable: `The Moon has no atmosphere.`
