@@ -8,18 +8,18 @@ There are several products that use KQL and offer free environments for practici
 
 Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
 
-#### Prerequisites
-
 > [!div class="nextstepaction"]
 > <a href="https://dataexplorer.azure.com/clusters/help" target="_blank">Azure Data Explorer help cluster</a>
+
+#### Prerequisites
 
 This environment requires a Microsoft account or an Azure Active Directory user identity.
 
 #### Run sample query
 
-The following query answers the question "What were the top 10 damage causing floods".
+The following query answers the question, "What were the top 10 damage causing floods?"
 
-The query begins with the *StormEvents* table as the tabular input. It sorts on records for which the *EventType* column is exactly equal to *Flood*. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. Then the top 10 records are returned.
+
 
 > [!div class="nextstepaction"]
 > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSjPSC1KVQDzQyoLUhVsbRWU3HLy81OUQLLF+UUlCkmVCi6JuYnpqQFF+QWpRSWVCimpxckg6ZLE7FQFQwMA6xT+vFMAAAA=" target="_blank">Run the query</a>
@@ -30,6 +30,13 @@ StormEvents
 | sort by DamageProperty desc
 | take 10
 ```
+
+Here's a step-by-step analysis of how the query processes the data.
+
+1. The query begins with the *StormEvents* table as the tabular input.
+1. It sorts on records for which the *EventType* column is exactly equal to *Flood*. 
+1. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. 
+1. Finally, the top 10 records are returned.
 
 ### [Log Analytics](#tab/log-analytics)
 
@@ -44,12 +51,21 @@ This environment requires an Azure subscription. Create a free [Azure account](h
 
 #### Run sample query
 
+The following query answers the question, "What were the top 10 longest response duration logs in the past day?"
+
 ```kusto
 LAQueryLogs
 | where TimeGenerated between (ago(24h) .. now())
 | sort by ResponseDurationMs desc
 | take 10
 ```
+
+Here's a step-by-step analysis of how the query processes the data.
+
+1. The query begins with the *LAQueryLogs* table as the tabular input.
+1. It sorts on records for which the *TimeGenerated* column is between 24 hours ago and now, meaning in the past day. 
+1. Then the resulting list is sorted in descending order by the value in the *ResponseDurationMs* column. 
+1. Finally, the top 10 records are returned.
 
 ### [Azure Resource Graph](#tab/azure-resource-graph)
 
@@ -64,6 +80,8 @@ This environment requires an Azure subscription. Create a free [Azure account](h
 
 #### Run sample query
 
+The following query answers the question, "What were the top 10 most recently enabled storage resources?"
+
 ```kusto
 Resources
 | where type contains 'storage'
@@ -71,5 +89,11 @@ Resources
 | take 10
 ```
 
+Here's a step-by-step analysis of how the query processes the data.
+
+1. The query begins with the *Resources* table as the tabular input.
+1. It sorts on records for which the *type* column contains the term *storage*. 
+1. Then the resulting list is sorted in descending order by the *LastEnabledTime* value in the dynamic field called *properties*. 
+1. Finally, the top 10 records are returned.
 ---
 
