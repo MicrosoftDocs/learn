@@ -11,7 +11,7 @@ Azure Data Explorer offers a help cluster with different types of data preloaded
 #### Prerequisites
 
 > [!div class="nextstepaction"]
-> [Azure Data Explorer help cluster](https://dataexplorer.azure.com/clusters/help)
+> <a href="https://dataexplorer.azure.com/clusters/help" target="_blank">Azure Data Explorer help cluster</a>
 
 This environment requires a Microsoft account or an Azure Active Directory user identity.
 
@@ -20,6 +20,9 @@ This environment requires a Microsoft account or an Azure Active Directory user 
 The following query answers the question "What were the top 10 damage causing floods".
 
 The query begins with the *StormEvents* table as the tabular input. It sorts on records for which the *EventType* column is exactly equal to *Flood*. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. Then the top 10 records are returned.
+
+> [!div class="nextstepaction"]
+> <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSjPSC1KVQDzQyoLUhVsbRWU3HLy81OUQLLF+UUlCkmVCi6JuYnpqQFF+QWpRSWVCimpxckg6ZLE7FQFQwMA6xT+vFMAAAA=" target="_blank">Run the query</a>
 
 ```kusto
 StormEvents
@@ -33,14 +36,13 @@ StormEvents
 Microsoft Sentinel and Log Analytics both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
 
 > [!div class="nextstepaction"]
-> [Log Analytics demo environment](https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade)
+> <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
 
 #### Prerequisites
 
 This environment requires an Azure subscription. Create a free [Azure account](https://azure.microsoft.com/free/).
 
 #### Run sample query
-
 
 ```kusto
 LAQueryLogs
@@ -54,7 +56,7 @@ LAQueryLogs
 The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
 
 > [!div class="nextstepaction"]
-> [Azure Resource Graph Explorer](https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/)
+> <a href="https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/" target="_blank">Azure Resource Graph Explorer</a>
 
 #### Prerequisites
 
