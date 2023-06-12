@@ -53,6 +53,9 @@ This environment requires an Azure subscription. Create a free [Azure account](h
 
 The following query answers the question, "What were the top 10 longest response duration logs in the past day?"
 
+> [!div class="nextstepaction"]
+> <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAw3LQQqDMBAF0L2n%252BMtkI1p6gUKhG11UvECsH5XSmZJJCEIP3%252BzfG27PzHgOulnzQ9kZifn48EFhDIkrFqZCClzY1F2uu0fbQrQ47%252BswjQnLiYn2VTHec12HymhYaa8qUngTffcHoyTzYmkAAAA%253D" target="_blank">Run the query</a>
+
 ```kusto
 LAQueryLogs
 | where TimeGenerated between (ago(24h) .. now())
