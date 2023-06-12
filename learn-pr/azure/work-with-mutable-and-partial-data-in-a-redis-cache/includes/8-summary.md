@@ -1,4 +1,0 @@
-In the module, we saw how Azure Cache for Redis can help improve our application's performance in many ways. We first saw how transactions can be used to ensure that multiple operations are invoked together, without being interrupted. We then saw how to use data expiration to help clear out data that is no longer being used. However, you can still sometimes have memory issues when you are using a cache, and we described about how eviction policies can be used to make room for new data. Finally, we looked at the cache-aside pattern, to make sure your most common data is stored in a cache to help speed up the time required to retrieve it.
-
-<!-- Cleanup sandbox -->
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
