@@ -12,7 +12,7 @@ metadata:
   ms.subservice: postgresql
 title: Scale from a single node to multiple nodes by using Azure Cosmos DB for PostgreSQL
 summary: |
-  Azure Cosmos DB for PostgreSQL can scale from a single-node, nondistributed cluster to a multi-node, distributed cluster with minimal downtime. When you start with small amounts of data, it makes sense to start with a single node. However, as time goes on, data needs to scale for growth. By understanding the process of going from a single-node cluster to a multi-node cluster, you can grow your data by using Azure Cosmos DB for PostgreSQL.
+  Azure Cosmos DB for PostgreSQL can scale from a single-node, nondistributed cluster to a multi-node, distributed cluster with minimal downtime. When you start with small amounts of data, it makes sense to start with a single node. But as time goes on, data needs to scale for growth. By understanding the process of going from a single-node cluster to a multi-node cluster, you can grow your data by using Azure Cosmos DB for PostgreSQL.
 abstract: |
   In this module, you'll:
     - Create a single-node instance of Azure Cosmos DB for PostgreSQL.

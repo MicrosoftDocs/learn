@@ -10,11 +10,22 @@ Because the plan is to move from a nondistributed environment to a distributed e
 
 It's helpful to review the current nondistributed configuration:
 
-- `device_types` has a `device_type_id` field and a `name` field. `device_type_id` is its primary key.
-- `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There's a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
-- `events` has three fields - `event_id`, `device_id`, and `payload`. The `event_id` is its primary key. There's a foreign key relation on the `device_id` that references the `device_id` field on the `devices` table.
+- The `device_types` table has two fields: `device_type_id` and `name`.
 
-![Diagram of the relationships between device types, devices, and events. The device_types table has two fields - device_type_id and name. device_type_id is its primary key. The devices table has three fields - device_id, device_type_id, and name. device_id is its primary key. The devices table has a foreign key relationship on device_type_id that references the device_type_id field on the device_types table. The events table has three fields - event_id, device_id, and payload. event_id is its primary key. The events table has a foreign key relationship on its device_id that references the device_id field on the devices table.](../media/normalized-database-erd.png)
+   The `device_types` table primary key is `device_type_id`.
+
+- The `devices` table has three fields: `device_id`, `device_type_id`, and `name`.
+
+   The `devices` table primary key is `device_id`.
+
+   A foreign key relationship on the `device_type_id` field references the `device_type_id` field on the `device_types` table.
+- The `events` has four fields: `event_id`, `device_id`, `payload`, and `created_at`.
+
+   The `events` table primary key is `event_id`.
+  
+   A foreign key relationship on the `device_id` field references the `device_id` field on the `devices` table.
+
+:::image type="content" source="../media/normalized-database-erd.png" border="false" alt-text="Diagram that shows the relationships between three tables, and the columns and primary keys in each table.":::
 
 ## Decide the order for distribution
 

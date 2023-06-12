@@ -9,7 +9,7 @@ You prepared tables in a single-node database for distribution and transitioned 
 To ensure that you aren't charged for the configured capacity of the resources that you created for the exercises in this training module, it's essential that you clean up any provisioned resources. If you didn't delete your resource group in the final exercise, follow these instructions:
 
 1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
-1. In the left menu, select **Resource Groups**, and then select the **learn-cosmosdb-postgresql** resource group that you created in the first exercise.
+1. On the left menu, select **Resource Groups**, and then select the **learn-cosmosdb-postgresql** resource group that you created in the first exercise.
 1. On **Overview**, select **Delete resource group**.
 1. To confirm the deletion, enter the name of the resource group that you created, and then select **Delete**.
 

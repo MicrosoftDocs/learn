@@ -16,7 +16,7 @@ Now that you have migrated the Tailspin Toys database to a multi-node instance, 
 
 Use psql at the command prompt to make your database changes. psql is a command-line tool that you can use to interactively issue queries to a PostgreSQL database, and then view the query results.
 
-1. In the [Azure portal](https://portal.azure.com/), go to your Azure Cosmos DB for PostgreSQL Cluster resource. In the left menu under **Settings**, select **Connection strings**, and then copy the connection string labeled **psql**.
+1. In the [Azure portal](https://portal.azure.com/), go to your Azure Cosmos DB for PostgreSQL Cluster resource. On the left menu under **Settings**, select **Connection strings**, and then copy the connection string labeled **psql**.
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings pane of the Azure Cosmos DB Cluster resource. The copy to clipboard button to the right of the psql connection string is highlighted.":::
 
@@ -222,6 +222,6 @@ Congratulations! You've successfully isolated the largest tenant on a dedicated 
 It's essential that you clean up any unused resources. You're charged for the configured capacity, not for how much of the database is used.
 
 1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
-1. In the left menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group that you created as part of the exercise in unit 3.
+1. On the left menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group that you created as part of the exercise in unit 3.
 1. On **Overview**, select **Delete resource group**.
 1. To confirm deletion, enter the name of the resource group that you created, and then select **Delete**.

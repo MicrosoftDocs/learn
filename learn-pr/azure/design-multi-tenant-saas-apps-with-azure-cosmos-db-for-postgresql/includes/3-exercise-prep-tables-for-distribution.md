@@ -30,16 +30,14 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
     | Admin username  | This value is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    :::image type="content" source="../media/cosmos-db-for-postgresql-basics-tab.png" alt-text="![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)":::
+    Make a note of the password that you create. You need the password later to connect to the database.
 
-    Make a note of the password you create. You need the password later to connect to the database.
-
-1. For the **Scale** setting, select **Configure**. On the cluster configuration pane, set the following and select **Save** to return to the cluster configuration pane:
+1. For the **Scale** setting, select **Configure**. On the cluster configuration pane, set the following options. Then select **Save** to return to the cluster configuration pane.
 
     | Parameter        | Value |
     | ---------------- | ----- |
     | **Nodes**            |       |
-    | Node count       | Choose **Single node**. |
+    | Node count       | Select **Single node**. |
     | Compute per node | Select **4 vCores, 16 GiB RAM**. |
     | Storage per node | Select **512 GiBM**. |
 
@@ -47,7 +45,11 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-cluster-config.png" alt-text="![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)":::
 
-1. Select the **Review + create** button, and on the review pane, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
+1. Select the **Review + create** button.
+
+    :::image type="content" source="../media/cosmos-db-for-postgresql-basics-tab.png" alt-text="![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)":::
+
+1. On the review pane, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
 
     :::image type="content" source="../media/configure-ip-rules-warning.png" alt-text="![Screenshot showing the Configure IP address in firewall rules dialog, with a warning message.](../media/configure-ip-rules-warning.png)":::
 
@@ -55,25 +57,25 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
 1. When your cluster is finished provisioning, go to the resource in the Azure portal.
 
-1. On the left menu under **Settings**, select **Networking**. On the *Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox, and then select **Save** on the toolbar.
+1. On the left menu under **Settings**, select **Networking**. On the **Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox, and then select **Save** on the toolbar.
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-networking.png" alt-text="![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)":::
 
 ## Connect to the database by using psql in Azure Cloud Shell
 
-You use psql from the command line to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+You use psql at the command prompt to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
 1. On your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, in the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="![Screenshot of the Connection strings pane of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)":::
 
-1. Paste the connection string into a text editor, such as Notepad. Replace the `{your_password}` token with the password that you created for the `citus` user when you created your cluster. Copy the updated connection string to use later.
+1. Paste the connection string into a text editor like Notepad. Replace the `{your_password}` token with the password that you created for the `citus` user when you created your cluster. Copy the updated connection string to use later.
 
 1. On the **Connection strings** pane in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the global controls in the Azure portal.
 
     :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot showing the Cloud Shell icon on the Azure portal toolbar, and a Cloud Shell dialog open at the bottom of the browser window.":::
 
-    Cloud Shell opens as an embedded pane at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
+    Cloud Shell opens as an embedded pane at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a different browser tab.
 
 1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 

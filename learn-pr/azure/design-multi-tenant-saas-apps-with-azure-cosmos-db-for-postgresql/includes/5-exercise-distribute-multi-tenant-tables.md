@@ -6,7 +6,7 @@ Scaling an Azure Cosmos DB for PostgreSQL database can be done quickly via the A
 
 1. In the [Azure portal](https://portal.azure.com/), go to your Azure Cosmos DB for PostgreSQL Cluster resource.
 
-1. In the left menu under **Settings**, select **Scale**. On the **Scale** pane, expand the **Node count** dropdown, and then select **2 nodes** from the list.
+1. On the left menu under **Settings**, select **Scale**. On the **Scale** pane, expand the **Node count** dropdown, and then select **2 nodes** from the list.
 
     :::image type="content" source="../media/cosmos-db-postgresql-scale.png" alt-text="Screenshot that shows the Scale menu item highlighted and selected. On the Scale pane, the Node count dropdown is expanded, and 2 nodes is highlighted.":::
 
@@ -30,7 +30,7 @@ Queries statistics against PostgreSQL databases are maintained in the `pg_stat_s
 
     If the `citus.stat_statements_track` setting is `all`, you can skip to the next section and connect to your database. Otherwise, proceed to the next step to enable tracking.
 
-1. On your **Azure Cosmos DB for PostgreSQL Cluster** resource, in the left menu under **Settings**, select **Coordinator node parameters**. On the **Coordinator node parameters** pane, enter "citus.stat" into the filter box and change the value of `citus.stat_statements_track` to **ALL**. If the value is already **ALL**, select **None**, and then choose **ALL** again to enable the **Save** button.
+1. On your **Azure Cosmos DB for PostgreSQL Cluster** resource, on the left menu under **Settings**, select **Coordinator node parameters**. On the **Coordinator node parameters** pane, enter "citus.stat" into the filter box and change the value of `citus.stat_statements_track` to **ALL**. If the value is already **ALL**, select **None**, and then choose **ALL** again to enable the **Save** button.
 
     :::image type="content" source="../media/cosmos-db-postgresql-parameters-citus-stat-statements-track.png" alt-text="Screenshot that shows the Coordinator node parameters pane on the Azure Cosmos DB for PostgreSQL Cluster. The Coordinator node parameters menu is selected.":::
 
@@ -54,7 +54,7 @@ Queries statistics against PostgreSQL databases are maintained in the `pg_stat_s
 
 You use psql at the command prompt to distribute the tables in your database. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
-1. On your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), in the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
+1. On your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), on the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="Screenshot that shows the Connection strings pane of the Azure Cosmos DB Cluster resource. On the Connection strings pane, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
@@ -165,7 +165,7 @@ In a single-node, nondistributed database, all tables are located on the coordin
 
 ## Reevaluate query execution times
 
-Neither of the distribution functions that are available in Azure Cosmos DB for PostgreSQL works within transactions, so some time will elapse between when the first tables and the last tables are distributed. To understand the potential impact of having a mix of local and distributed tables, you want to rerun the application queries from the preceding sections to see if query times are affected by being in this state.
+Neither of the distribution functions that are available in Azure Cosmos DB for PostgreSQL works within transactions, so some time elapses between when the first tables and the last tables are distributed. To understand the potential impact of having a mix of local and distributed tables, you want to rerun the application queries from the preceding sections to see if query times are affected by being in this state.
 
 1. Execute the query to retrieve the products list for a store again and record the execution time:
 

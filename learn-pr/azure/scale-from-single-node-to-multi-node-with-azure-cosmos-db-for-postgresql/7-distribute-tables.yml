@@ -4,7 +4,7 @@ title: Distribute tables in Azure Cosmos DB for PostgreSQL
 metadata:
   unitType: learning-content
   title: Distribute tables in Azure Cosmos DB for PostgreSQL
-  description: "Upgrade from a single-node, non-distributed cluster to a multi-node distributed cluster with minimal downtime in Azure Cosmos DB for PostgreSQL."
+  description: "Upgrade from a single-node, nondistributed cluster to a multi-node distributed cluster with minimal downtime in Azure Cosmos DB for PostgreSQL."
   ms.date: 02/22/2023
   author: sadukie
   ms.author: jonels
