@@ -1,7 +1,5 @@
----
-ms.custom:
-  - build-2023
----
+
+
 Microsoft Fabric's unified management and governance make it easier for data professionals to work together on data projects. Fabric removes data silos and the need for access to multiple systems, enhancing collaboration between data professionals.
 
 Traditionally, the data engineer and data analyst role separation meant that there was an extra conversation that needed to happen to ensure that the engineer curated a perfect data model to help the analyst display data in an effective and insightful way for the business.
