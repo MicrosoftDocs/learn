@@ -26,7 +26,7 @@ Below are settings **required** to enable Profile Container and to specify the l
 | **Value**                       | **Type**             | **Configured Value** | **Description**                                                                                                                                                                                                                                                                                                  |
 | ------------------------------- | -------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Enabled (required setting)      | DWORD                | One                  | 0: Profile Containers disabled. 1: Profile Containers enabled                                                                                                                                                                                                                                                    |
-| VHDLocations (required setting) | MULTI\_SZ or REG\_SZ |                      | A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one is created in the first listed location. If the VHD path doesn't exist, it is created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. |
+| VHDLocations (required setting) | MULTI\_SZ or REG\_SZ |                      | A list of file system locations to search for the user's profile VHD(X) file. If one isn't found, one is created in the first listed location. If the VHD path doesn't exist, it's created before it checks if a VHD(X) exists in the path. These values can contain variables that will be resolved. |
 
 :::image type="content" source="../media/configure-profile-containters-image-1-ccc04778.png" alt-text="Screenshot of Profile Containers Registry Configuration.":::
 
@@ -44,7 +44,7 @@ These settings below are helpful when configuring Profile Container but aren't r
 
 ## Set up Include and Exclude User Groups
 
-There are often users, such as local administrators that has profiles that should remain local. During installation, four user groups are created to manage users who's profiles are included and excluded from Profile Container and Office Container redirection.
+There are often users, such as local administrators that have profiles that should remain local. During installation, four user groups are created to manage users who's profiles are included and excluded from Profile Container and Office Container redirection.
 
 :::image type="content" source="../media/configure-profile-containters-image-2-19dd64bc.png" alt-text="Screenshot of the FSLogix Groups with exclude and include.":::
 
