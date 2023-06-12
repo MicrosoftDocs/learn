@@ -1,104 +1,85 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You've learned about the structure and use of different types of query statements. Now, let's use that knowledge to write some queries.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Query with tabular expression statements
 
-    Heading: none
+Tabular expression statements are fundamental in KQL as they allow us to filter and manipulate tabular data to retrieve desired results.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Let's go through an example:
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+1. Start with a tabular dataset.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+    ```Kusto
+    StormEvents
+    ```
 
-    Goal: Describe the part of the scenario covered in this exercise
+    **Output:** The complete tabular dataset from the `StormEvents` table.
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+    ```kusto
+    StormEvents
+    | where EventType == "Flood"
+    ```
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    **Output**: A tabular dataset of the "Flood" events from the `StormEvents` table.
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+1. Use another operator to further manipulate the tabular output.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+    ```kusto
+    StormEvents
+    | where EventType == "Flood"
+    | sort by StartTime asc
+    ```
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+    **Output:** A tabular dataset with the "Flood" events sorted in ascending order based on the `StartTime` column from the `StormEvents` table.
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+You can repeat the process by applying more operators to the tabular output.
+Each operator takes the tabular input, performs its operation, and produces a new tabular output.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+## Introduce a variable with a let statement
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+Let statements allow us to define variables in Kusto queries, making them more readable and modular.
 
-    Goal: List the steps they'll do to complete the exercise.
+Suppose you want to investigate Flood events within a specific time window and location. You can create variables to set and manipulate these parameters without modifying the query itself. Here's how:
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+```kusto
+let state = "TEXAS";
+let injuryThreshold = 10;
+StormEvents
+| where State == state and InjuriesDirect + InjuriesIndirect > injuryThreshold
+```
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+In this example, `state` and `injuryThreshold` are variables that can be assigned values according to your specific requirements. These variables are then used within the query to filter the `StormEvents` table based on the defined criteria.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+## Translate the query into a function
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+Now, let's explore how to generalize functionality into user-defined and stored functions.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+### Create a query-defined function
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+Query-defined functions are defined within the scope of a single query and can be reused within that query. 
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+```kusto
+let EventsWithInjuries(state: string, injuryThreshold: int) {
+    StormEvents
+    | where State == state
+    | where InjuriesDirect + InjuriesIndirect > injuryThreshold
+}
+print EventsWithInjuries("CALIFORNIA", 10);
+```
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+In this query, we define a function called `EventsWithInjuries` with two parameters: `state` (string) and `injuryThreshold` (integer). The function filters the `StormEvents` table based on the provided state and injury threshold criteria. Finally, we call the function by passing specific arguments and print the results.
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+### Create a stored function
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries without redefining them.
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+```kusto
+.create function
+with (docstring = 'Function to find all events with injuries above a certain threshold in a certain state', folder='Demo')
+    EventsWithInjuries(state: string, injuryThreshold: int) {
+        StormEvents
+        | where State == state
+        | where InjuriesDirect + InjuriesIndirect > injuryThreshold
+    }
+```
