@@ -4,7 +4,7 @@ With the knowledge of using and handling exceptions, you can avoid common pitfal
 
 In this module, you learned these skills:
 
-- Read and use error output from exceptions
-- Properly handle exceptions
-- Raise exceptions with useful error messages
-- Use exceptions to control a program's flow
+- Read and use error output from exceptions.
+- Properly handle exceptions.
+- Raise exceptions with useful error messages.
+- Use exceptions to control a program's flow.
