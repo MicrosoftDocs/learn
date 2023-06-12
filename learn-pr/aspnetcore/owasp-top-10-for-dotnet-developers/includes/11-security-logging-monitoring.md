@@ -1,14 +1,14 @@
 
-How will you detect you've been breached?
+How do you detect you've been breached?
 How can you determine what steps did the attacker take to penetrate your system?
 
 Without sufficient logging and monitoring, breaches can't be detected.
 Logging and monitoring give us an opportunity to stop the attacker in their tracks. Telemetry, logging and monitoring enables digital forensics and post-mortem after a breach. Logging and monitoring are essential components in ensuring that any suspicious activity can be detected close to real-time, or diagnosed after the fact.
-More importantly, collection of this data this useless without actively reviewing it or alerting rules in place.
+More importantly, collection of this data is useless without actively reviewing it or alerting rules in place.
 
-Make sure to sanitize the the data to prevent from over-logging or storing sensitive information as logs.
+Make sure to sanitize the data to prevent from over-logging or storing sensitive information as logs.
 
-Establish effective monitoring and alerting mechanisms. Ensure login and access control failures can be logged with sufficient user context to identify suspicious or malicious accounts. Take advantage of different logging levels (i.e. Info, Warning, Error, etc.) and log destinations. Avoid server side error details from ever reaching client side, which may result in leak of implementation details of your system.
+Establish effective monitoring and alerting mechanisms. Ensure login and access control failures can be logged with sufficient user context to identify suspicious or malicious accounts. Take advantage of different logging levels (Info, Warning, Error, etc.) and log destinations. Avoid server side error details from ever reaching client side, which may result in leak of implementation details of your system.
 
 > [!IMPORTANT]
 > Don't leave access to your logs unprotected.

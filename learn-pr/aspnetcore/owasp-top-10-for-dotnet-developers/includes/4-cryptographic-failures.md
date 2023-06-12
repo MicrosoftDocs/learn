@@ -1,9 +1,9 @@
 
-Cryptographic failures are failures related to cryptography (or lack thereof) that often lead to sensitive data exposure or system compromise.
+Cryptographic failures are failures related to cryptography (or lack thereof) that often leads to sensitive data exposure or system compromise.
 
 Implementation mistakes leading to unexpected cryptographic errors. Firstly, let's being with distinguishing between encoding, encryption and hashing in general programming terms.
 
-**Encoding** a value helps transmit data in a channel, such as base 64 encoding over HTTP, but does not provide security. It changes the format of a value so that it obstructs but not protects the value.
+**Encoding** a value helps transmit data in a channel, such as base 64 encoding over HTTP, but doesn't provide security. It changes the format of a value so that it obstructs but not protects the value.
 **Encryption** is a reversible operation that translates text into what may seem a random and meaningless cypher. To decrypt the value an encryption *key* is needed.
 **Hashing** is a one-way operation of mapping input data into fixed-size values (value hash). There's no way to reverse hash a value.
 
@@ -16,7 +16,7 @@ Your web applications deal with user data and their accounts. How to ensure you 
 
 ### Encryption
 
-To securely encrypt a value like a string or integer, symmetric or asymmetric encryption can be used. To encrypt data with symmetric-key algorithm we can use Advanced Encryption Standard (AES). In the example below, a new instance of the AES class is created and used it to generate a new key and initialization vector (IV).​ The Advanced Encryption Standard is used to encrypt any type of managed stream, then the stream is wrapped with CryptoStream.
+To securely encrypt a value like a string or integer, symmetric or asymmetric encryption can be used. To encrypt data with symmetric-key algorithm, we can use Advanced Encryption Standard (AES). In next example, a new instance of the AES class is created and used it to generate a new key and initialization vector (IV).​ The Advanced Encryption Standard is used to encrypt any type of managed stream, then the stream is wrapped with CryptoStream.
 
  ```csharp
 Aes aes = Aes.Create();​
@@ -40,7 +40,7 @@ public static byte[] HashPassword256(string password)​
 
 ### Random numbers
 
-Temporary password or access codes are intended to be unique per user. The uniqueness can be achieved by introducing random character generation. You may be familiar with System.Random class. It's worth noting how the *randomness* is achieved. System.Random is a deterministic pseudo-random sequence generator. It’s predictable and seeded only from the system clock which mean it can be guessed by the attacker. In matter of fact, Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords.
+Temporary password or access codes are intended to be unique per user. The uniqueness can be achieved by introducing random character generation. You may be familiar with System.Random class. It's worth noting how the *randomness* is achieved. `System.Random` is a deterministic pseudo-random sequence generator. It’s predictable and seeded only from the system clock, which means it's guessable. In matter of fact, Microsoft Learn documentation explicitly states it shouldn't be used for generating passwords.
 To generate a cryptographically secure random number, such as one that's suitable for creating a random password `RandomNumberGenerator` instance should be used.
 
 ```csharp
@@ -53,4 +53,4 @@ By using `RandomNumberGenerator` you can eliminate the changes of two or more us
 
 You don't want to unnecessarily store any sensitive data in your system. If you do, make sure you encrypt all data in transit and at rest with the use of HTTPS and SSL.
 After studying your teams codebase, you can now make the distinction between encryption, encoding, and hashing. No crypto keys were checked into the source code repository. You're planning to research security scanning tools to run as part of the CI/CD process to prevent sensitive data and secrets from getting into the repository.
-Your app has a built-in mechanism for resetting user passwords. This is where you noticed `System.Security Cryptography.RandomNumberGenerator` being used in favor of `System.Random`.
+Your app has a built-in mechanism for resetting user passwords. You noticed `System.Security Cryptography.RandomNumberGenerator` being used in favor of `System.Random`.

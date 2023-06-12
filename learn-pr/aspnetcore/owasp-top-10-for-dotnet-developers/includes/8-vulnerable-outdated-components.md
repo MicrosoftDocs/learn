@@ -28,7 +28,7 @@ Understanding the risks inherited through dependencies helps improve the overall
     :::column:::
         Individual components and dependencies can be kept up-to-date using NuGet -package manager, enabling .NET developers to create, share, and consume .NET libraries.
 
-Most modern integrated development environments (IDEs) streamline update processes, with Visual Studio being one of them (image on left the developer is informed about 5 updates available to the dependencies across the entire solution).
+Most modern integrated development environments (IDEs) streamline update processes. Visual Studio informs developers about updates available to the dependencies across the entire solution.
     :::column-end:::
 :::row-end:::
 
@@ -38,4 +38,4 @@ To prevent vulnerable and outdated components in .NET applications, you should r
 
 Plan and schedule regular updates of your product's components.
 
-Manually monitoring sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components you use is is tedious and time consuming, hence you looking to apply automation, or like GitHub Dependabot version updates or [Snyk](https://snyk.io/) to keep up with dependencies updated and security risks.
+Manually monitoring sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components you use is is tedious and time consuming. Apply automation and tooling, like GitHub Dependabot version updates or [Snyk](https://snyk.io/) to keep up with dependencies updated and security risks.

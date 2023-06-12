@@ -4,7 +4,7 @@ This category (SSRF) describes situations whenever a web application is fetching
 Attacker may also use this functionality to import untrusted data into code that expects to only read data from trusted sources, and as such circumvent input validation.
 URL, or query string, seen in web browser's address bar, when used as input parameter could be a perfect example of user input needing sanitization.
 
-During code review, you came across seemingly harmless REST web GET request shown by code snippet below:
+During code review, you came across seemingly harmless REST web GET request shown in code snippet:
 
 ```csharp
 string url = Request.Form["url"];
@@ -12,7 +12,7 @@ var client = new HttpClient();
 HttpResponseMessage response = await client.GetAsync(url);
 ```
 
-Without validation of the supplied URL the attacker can hijack the network connection and control the request schema by supplying **ldap://**, **jar://** or **file://** instead of **https://**. Furthermore, POST method will allow the attacker to force the application to send a crafted request to an unexpected destination.
+Without validation of the supplied URL the attacker can hijack the network connection and control the request schema by supplying **ldap://**, **jar://** or **file://** instead of **https://**. Furthermore, POST method allows the attacker to force the application to send a crafted request to an unexpected destination.
 
 In certain situations, with carefully formulated URL, the attacker may be able to:
 

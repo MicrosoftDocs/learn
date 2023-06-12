@@ -1,13 +1,13 @@
 
-This module explores OWASP TOP 10 - 2021 edition. It will cover the most common security weaknesses and how you, as an app developer or architect, can reduce the risk of security bugs infecting your systems. This module will introduce techniques, tools and best practices that can improve your product’s security posture.
+This module explores OWASP TOP 10 - 2021 edition. It covers the most common security weaknesses and how you, as an app developer or architect, can reduce the risk of security bugs infecting your systems. This module introduces techniques, tools and best practices that can improve your product’s security posture.
 
 ### Threat landscape
 
-Implementing secure and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or flows through the system, how information is stored, and how services are configured are a few examples of where a vulnerability could be introduced.
+Implementing secure and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or stored, and how services are configured in a system are examples of where a vulnerability could be introduced.
 
 ![Application Security](../media/appsec.png)
 
-Not a week goes by without a news story about a company being hacked or data being stolen and posted on dark web. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report, the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
+News stories about a company being hacked or data being stolen and posted on dark web are now very common. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report, the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
 
 > [!IMPORTANT]
 > [Software Vulnerability Definition NIST](https://csrc.nist.gov/glossary/term/Software_Vulnerability):
@@ -30,10 +30,10 @@ AppSec logically falls under the wider context of **Information Security (InfoSe
 
 ### Meet the Team
 
-Suppose you're joining a new IT company with an established team working on a legacy software. Your team's main focus is maintaining, supporting and developing new features of a rich web application used by customer all around the world. The website and its underlying infrastructure has only recently been migrated to Microsoft Azure cloud.
+Suppose you're joining a new IT company with an established team working on a legacy software. Your team's main focus is maintaining, supporting and developing new features of a rich web application used by customer all around the world. The website and its underlying infrastructure have only recently been migrated to Microsoft Azure cloud.
 
 The team you're part of has a mix of talent, including early in career and seasoned enterprise developers.
-In the past, your team has been slowed down by the manual release process that proved to be unreliable, error prone and heavy on manual interaction. As part of the migration to the cloud, your team is looking to adopt modern CI/CD automation.
+In the past, your team was slowed down by the manual release process that proved to be unreliable, error prone and heavy on manual interaction. As part of the migration to the cloud, your team is looking to adopt modern CI/CD automation.
 The company hasn't fully grasped the concepts behind secure DevOps practices. With new personnel onboarded, the company is looking to spread security best practices not only within the team but the company as a whole.
 
-Your team lead asked you to conduct design and code review of team-owned codebase with extra attention paid to security aspects of the solution. You discovered OWASP report which you're planning to use as a reference in your code review.
+Your team lead asked you to conduct design and code review of team-owned codebase with extra attention paid to security aspects of the solution. You discovered OWASP report, which you're planning to use as a reference in your code review.

@@ -1,9 +1,9 @@
 
 So far, you've been focusing on unwanted coding errors leading to security flaws, i.e implementation issues surrounding user authenticating, data encryption etc. Insecure *design* is different from insecure *implementation*. Insecure design has more to do with risks related to design and architectural flaws. A secure implementation might have an insecure design, which still renders an application vulnerable to attacks and exploits.​
 
-Exercise ***assume breach*** mentality - minimize the blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end-to-end. Use analytics to get visibility, drive threat detection, and improve defenses. Always authenticate and authorize based on all available data points, including user identity, location, device health, service or workload, data classification, and anomalies.
+Exercise ***assume breach*** mentality - minimize the blast radius for breaches and prevent lateral movement by segmenting access by network, user, devices, and application awareness. Verify all sessions are encrypted end-to-end. Use analytics to get visibility, drive threat detection, and improve defenses. Authenticate and authorize based on all available data points. User identity, location, device health, service or workload are some of common data points.
 
-You might be familiar with the term *'shift-left'*. It's often referred to testing your application early on during the application lifecycle to ensure high quality. Shift-left also applies to security, even before we write the first line of code. A few activities to employ early on in the design process could include reviewing secure design patterns and principles, leveraging reference architectures and performing threat modeling.
+You might be familiar with the term *'shift-left'*. It's often referred to testing your application early on during the application lifecycle to ensure high quality. Shift-left also applies to security, even before we write the first line of code. A few activities to employ early on in the design process could include reviewing secure design patterns and principles, using reference architectures and performing threat modeling.
 
 Let's discuss the later in more detail. Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
 
@@ -17,17 +17,17 @@ Whenever an application’s design or code is changed, you run the threat modeli
 
 :::image type="content" source="../media/tm-2.png" alt-text="Data flow diagram with basic threat model":::
 
-Making threat modeling part of the design phase of the application helps bake security into the design from the start, which is always going to be more effective that trying to tack it on at the end. But it’s not only useful at the design stage, it should be performed at every stage of the Secure Development Lifecycle.
+Making threat modeling part of the design phase of the application helps make security into the design from the start. Threat modeling goes beyond the design stage, and can be performed at every stage of the Secure Development Lifecycle.
 
 ### Design Review Notes
 
 Here, you focused your attention on the overall system architecture and design. Insecure design flows target systems as a whole and not its codebase.
 Security should be not an afterthought. How you protect your system’s configuration secrets, handle customers data, and implement logging should be considered early on in the project lifecycle. An insecure design can't be fixed by a perfect implementation.​
-After conversations with your team, you better understand the functional and non-functional security requirements and learned about the bug bar - technique to help classify and prioritize security vulnerabilities based on their severity and potential impact.
-As your new team adopt DevOps and Secure DevOps practices in an ongoing effort you want to think of security as early and quickly as possible (by shifting security considerations left).
+After conversations with your team, you better understand the functional and nonfunctional security requirements and learned about the bug bar - technique to help classify and prioritize security vulnerabilities based on their severity and potential impact.
+As your new team adopts DevOps and Secure DevOps practices in an ongoing effort, you want to think of security as early and quickly as possible (by shifting security considerations left).
 Before contributing to your teams codebase consider following few techniques that can address insecure design:
 
-- Least privilege​ principle - granting just enough permissions to a user or service to successfully perform an operation.
+- Least privilege​ principle - granting enough permissions to a user or service to successfully perform an operation.
 - Attack surface reduction​ - limit and control what's visible to external users
 - Zero Trust​ principle - never trust, always verify explicitly
 - Defense in Depth​ - layered and tiered security approach
