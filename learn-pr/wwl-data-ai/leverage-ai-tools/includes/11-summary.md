@@ -8,7 +8,7 @@ Now that you have reviewed this module, you should:
 * Be familiar with available AI tools and approaches.
 * Understand basic AI terminology and practices.
 * Understand How to use prebuilt AI to build intelligent applications.
-* Be able to tdentify AI use cases.
+* Be able to identify AI use cases.
 
 ## Use these resources to discover more
 
