@@ -1767,3 +1767,8 @@ achievements:
   title: Create a Linux virtual machine in Azure
   summary: In this module, we discuss how to create a Linux virtual machine using the Azure portal.
   iconUrl: /training/achievements/create-linux-virtual-machine-in-azure.svg
+- uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
+  type: badge
+  title: Work with mutable and partial data in Azure Cache for Redis
+  summary: Learn how to create transactions, manage memory, and use the cache-aside pattern with Azure Cache for Redis
+  iconUrl: /training/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg
