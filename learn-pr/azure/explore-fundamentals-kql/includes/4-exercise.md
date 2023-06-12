@@ -38,9 +38,9 @@ Here's a step-by-step analysis of how the query processes the data.
 1. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. 
 1. Finally, the top 10 records are returned.
 
-### [Log Analytics](#tab/log-analytics)
+### [Azure Monitor](#tab/azure-monitor)
 
-Microsoft Sentinel and Log Analytics both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
+Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
 
 > [!div class="nextstepaction"]
 > <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
@@ -52,6 +52,9 @@ This environment requires an Azure subscription. Create a free [Azure account](h
 #### Run sample query
 
 The following query answers the question, "What were the top 10 longest response duration logs in the past day?"
+
+> [!div class="nextstepaction"]
+> <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAw3LQQqDMBAF0L2n%252BMtkI1p6gUKhG11UvECsH5XSmZJJCEIP3%252BzfG27PzHgOulnzQ9kZifn48EFhDIkrFqZCClzY1F2uu0fbQrQ47%252BswjQnLiYn2VTHec12HymhYaa8qUngTffcHoyTzYmkAAAA%253D" target="_blank">Run the query</a>
 
 ```kusto
 LAQueryLogs
