@@ -51,7 +51,7 @@ On the contrary to onboarding, when an employee leaves the company, an administr
 
 #### Reduce accidental IP leakage
 
-With the rise of open-source software contributions, employees may need to switch between projects with different user identities and permissions throughout the day. To remove the possibility of accidental IP leakage and contributions made to a project using the wrong credentials, EMUs clearly identify the current account and ensure that the employee cannot accidentally expose IP to personal or open-source repositories. This secures the company, IP, and the employee from accidental leakage.
+With the rise of open-source software contributions, employees may need to switch between projects with different user identities and permissions throughout the day. To remove the possibility of accidental IP (Intellectual Property) leakage and contributions made to a project using the wrong credentials, EMUs clearly identify the current account and ensure that the employee cannot accidentally expose IP to personal or open-source repositories. This secures the company, IP, and the employee from accidental leakage.
 
 #### Consultant administration
 
