@@ -1,104 +1,171 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+You've learned about the structure and use of different types of query statements. Now, let's use that knowledge to write some queries.
 
-    Goal: remind the learner of the core idea(s) from the preceding learning-content unit (without mentioning the details of the exercise or the scenario)
+## Query with tabular expression statements
 
-    Heading: none
+Tabular expression statements are fundamental in KQL as they allow us to filter and manipulate tabular data to retrieve desired results.
 
-    Example: "A storage account represents a collection of settings that implement a business policy."
+Let's go through an example. Select the relevant tab for your environment.
 
-    [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+### [Azure Data Explorer](#tab/azure-data-explorer)
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+1. Start with a tabular dataset.
 
-    Goal: Describe the part of the scenario covered in this exercise
+    ```Kusto
+    StormEvents
+    ```
 
-    Heading: a separate heading is optional; you can combine this with the topic sentence into a single paragraph
+    **Output:** The complete tabular dataset from the `StormEvents` table.
 
-    Example: "Recall that in the chocolate-manufacturer example, there would be a separate storage account for the private business data. There were two key requirements for this account: geographically-redundant storage because the data is business-critical and at least one location close to the main factory."
+1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
-    Recommended: image that summarizes the entire scenario with a highlight of the area implemented in this exercise
--->
-TODO: add your scenario sub-task
-TODO: add your scenario image
+    ```kusto
+    StormEvents
+    | where EventType == "Flood"
+    ```
 
-<!-- 3. Task performed in the exercise ---------------------------------------------------------------------
+    **Output**: A tabular dataset of the "Flood" events from the `StormEvents` table.
 
-    Goal: State concisely what they'll implement here; that is, describe the end-state after completion
+1. Use another operator to further manipulate the tabular output.
 
-    Heading: a separate heading is optional; you can combine this with the sub-task into a single paragraph
+    ```kusto
+    StormEvents
+    | where EventType == "Flood"
+    | sort by StartTime asc
+    ```
 
-    Example: "Here, you will create a storage account with settings appropriate to hold this mission-critical business data."
+    **Output:** A tabular dataset with the "Flood" events sorted in ascending order based on the `StartTime` column from the `StormEvents` table.
 
-    Optional: a video that shows the end-state
--->
-TODO: describe the end-state
+### [Azure Monitor](#tab/azure-monitor)
 
-<!-- 4. Chunked steps -------------------------------------------------------------------------------------
+1. Start with a tabular dataset.
 
-    Goal: List the steps they'll do to complete the exercise.
+    ```Kusto
+    LAQueryLogs
+    ```
 
-    Structure: Break the steps into 'chunks' where each chunk has three things:
-        1. A heading describing the goal of the chunk
-        2. An introductory paragraph describing the goal of the chunk at a high level
-        3. Numbered steps (target 7 steps or fewer in each chunk)
+    **Output:** The complete tabular dataset from the `LAQueryLogs` table.
 
-    Example:
-        Heading:
-            "Use a template for your Azure logic app"
-        Introduction:
-             "When you create an Azure logic app in the Azure portal, you have the option of selecting a starter template. Let's select a blank template so that we can build our logic app from scratch."
-        Steps:
-             "1. In the left navigation bar, select Resource groups.
-              2. Select the existing Resource group [sandbox resource group name].
-              3. Select the ShoeTracker logic app.
-              4. Scroll down to the Templates section and select Blank Logic App."
--->
+1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
-## (Chunk 1 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    ```kusto
+    LAQueryLogs
+    | where TimeGenerated between (ago(24h) .. now())
+    ```
 
-## (Chunk 2 heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+    **Output**: A tabular dataset of logs from the past 24 hours in the `LAQueryLogs` table.
 
-## (Chunk n heading)
-<!-- Introduction paragraph -->
-1. <!-- Step 1 -->
-1. <!-- Step 2 -->
-1. <!-- Step n -->
+1. Use another operator to further manipulate the tabular output.
 
-<!-- 5. Validation -------------------------------------------------------------------------------------------
+    ```kusto
+    LAQueryLogs
+    | where TimeGenerated between (ago(24h) .. now())
+    | sort by ResponseDurationMs desc
+    ```
 
-    Goal: Enables the learner to evaluate if they completed the exercise correctly. Feedback like this is critical for learning.
+    **Output:** A tabular dataset of logs from the past 24 hours sorted in descending order based on the `ResponseDurationMs` column from the `LAQueryLogs` table.
 
-    Structure:
-        1. A heading of "## Check your work".
-        2. An introductory paragraph describing how they'll validate their work at a high level.
-        3. Numbered steps (if the learner needs to perform multiple steps to verify if they were successful).
-        4. Video of an expert performing the exact steps of the exercise (optional).
+---
 
-    Example:
-         "At this point, the app is scanning Twitter every minute for tweets containing the search text. To verify the app is running and working correctly, we'll look at the Runs history table."
-             "1. Select Overview in the navigation menu.
-              2. Select Refresh once a minute until you see a row in the Runs history table.
-              ...
-              6. Examine the data in the OUTPUTS section. For example, locate the text of the matching tweet."
--->
+You can repeat the process by applying more operators to the tabular output.
+Each operator takes the tabular input, performs its operation, and produces a new tabular output.
 
-## Check your work
-<!-- Introduction paragraph -->
-1. <!-- Step 1 (if multiple steps are needed) -->
-1. <!-- Step 2 (if multiple steps are needed) -->
-1. <!-- Step n (if multiple steps are needed) -->
-Optional "exercise-solution" video
+## Introduce a variable with a let statement
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+Let statements allow us to define variables in Kusto queries, making them more readable and modular.
 
-<!-- Do not add a unit summary or references/links -->
+Suppose you want to investigate Flood events within a specific time window and location. You can create variables to set and manipulate these parameters without modifying the query itself.
+
+Let's go through an example. Select the relevant tab for your environment.
+
+### [Azure Data Explorer](#tab/azure-data-explorer)
+
+In the following query, `state` and `injuryThreshold` are variables that can be assigned values according to your specific requirements. These variables are then used within the query to filter the `StormEvents` table based on the defined criteria.
+
+```kusto
+let state = "TEXAS";
+let injuryThreshold = 10;
+StormEvents
+| where State == state and InjuriesDirect + InjuriesIndirect > injuryThreshold
+```
+
+### [Azure Monitor](#tab/azure-monitor)
+
+In the following query, `start` and `end` are variables that can be assigned values according to your specific requirements. The variable is then used within the query to filter the `LAQueryLogs` table for logs from the past 48 hours.
+
+```kusto
+let start=datetime('06-01-2023');
+let end=datetime('06-07-2023');
+LAQueryLogs
+| where TimeGenerated between (start .. end)
+| sort by ResponseDurationMs desc
+```
+
+---
+
+## Translate the query into a function
+
+Now, let's explore how to generalize functionality into user-defined and stored functions.
+
+Select the relevant tab for your environment.
+
+### [Azure Data Explorer](#tab/azure-data-explorer)
+
+### Create a query-defined function
+
+Query-defined functions are defined within the scope of a single query and can be reused within that query.
+
+In the following query, we define a function called `EventsWithInjuries` with two parameters: `state` (string) and `injuryThreshold` (integer). The function filters the `StormEvents` table based on the provided state and injury threshold criteria. Finally, we call the function by passing specific arguments and print the results.
+
+```kusto
+let EventsWithInjuries(state: string, injuryThreshold: int) {
+    StormEvents
+    | where State == state
+    | where InjuriesDirect + InjuriesIndirect > injuryThreshold
+}
+print EventsWithInjuries("CALIFORNIA", 10);
+```
+
+### Create a stored function
+
+Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries.
+
+```kusto
+.create function
+with (docstring = 'Function to find all events with injuries above a certain threshold in a certain state', folder='Demo')
+    EventsWithInjuries(state: string, injuryThreshold: int) {
+        StormEvents
+        | where State == state
+        | where InjuriesDirect + InjuriesIndirect > injuryThreshold
+    }
+```
+
+### [Azure Monitor](#tab/azure-monitor)
+
+### Create a query-defined function
+
+Query-defined functions are defined within the scope of a single query and can be reused within that query.
+
+In the following query, we define a function called `LogsBetween` with two parameters: `start` (datetime) and `end` (datetime). The function filters the `LAQueryLogs` table based on the provided start and end time criteria. Finally, we call the function by passing specific arguments and print the results.
+
+```kusto
+let LogsBetween(start: datetime, end: datetime) {
+    LAQueryLogs
+    | where TimeGenerated between (start .. end)
+}
+print LogsBetween(datetime('06-01-2023'), datetime('06-07-2023'));
+```
+
+### Create a stored function
+
+Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries.
+
+```kusto
+.create function
+with (docstring = 'Function to find all logs between the given time range', folder='Demo')
+    LogsBetween(start: datetime, end: datetime) {
+    LAQueryLogs
+    | where TimeGenerated between (start .. end)
+}
+```
+
+---
