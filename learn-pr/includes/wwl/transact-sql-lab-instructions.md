@@ -12,7 +12,7 @@ We use the AdventureWorks database in this lab, so let’s start by exploring it
 1. Close the SQLQuery_1 pane that contains the query and its results.
 1. Explore the other tables in the database, which contain information about product details, customers, and sales orders. The tables are related through primary and foreign keys, as shown here (you may need to resize the pane to see them clearly):
 
-![sql diagram](media/adventureworks-erd.png)
+![SQL diagram showing tables in the database.](media/adventureworks-erd.png)
 
 > [!NOTE]
 > If you’re familiar with the standard AdventureWorks sample database, you may notice that in this lab we are using a simplified version that makes it easier to focus on learning Transact-SQL syntax.
