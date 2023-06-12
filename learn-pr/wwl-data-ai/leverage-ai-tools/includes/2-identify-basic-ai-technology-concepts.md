@@ -2,7 +2,9 @@
 
 The term AI tends to be thrown around a lot. You've probably heard about machine learning, deep learning, data science, generative AI, and responsible AI. However, it may not be clear what all these terms mean and how they're different to each other. In this unit, we'll clarify these concepts so you can understand how they apply to your business problem.
 
-:::image type="complex" source="../media/2-identify-basic-ai-technology-concepts-1.png" alt-text="AI as purpose"::: There are two large concentric circles in the center of the diagram, with text in each. The bigger circle is labeled, “AI”. The smaller circle reads, “Generative AI”. :::image-end:::
+:::image type="complex" source="../media/2-identify-basic-ai-technology-concepts-1.png" alt-text="AI as purpose"::: 
+
+There are two large concentric circles in the center of the diagram, with text in each. The bigger circle is labeled, “AI”. The smaller circle reads, “Generative AI”. 
 
 ## What is AI?
 Artificial Intelligence (AI) is an ability of a computer program or machine to **mimic human-like behavior** (for example, visual senses, speech recognition, decision-making, natural language understanding, and so on). Then, it's not a technology of itself, but a goal set by technologists: to imitate human intelligence.
@@ -12,7 +14,10 @@ Generative AI is a **subset of AI**. AI can be used to predict outcomes, detect 
 
 For example, you may use generative AI to automatically create avatars. Generative AI could look at patterns of people's portraits and profile pictures. Based on this data, it could create new avatars that would look realistic but wouldn't relate to real people.
 
-:::image type="complex" source="../media/2-identify-basic-ai-technology-concepts-2.png" alt-text="AI methodologies"::: There are three concentric circles in the center of the diagram, with text in each. The bigger circle is labeled, “Data science”. The middle circle reads, “Machine learning”. The smaller circle reads, “Deep learning”. :::image-end:::
+:::image type="complex" source="../media/2-identify-basic-ai-technology-concepts-2.png" alt-text="AI methodologies"::: 
+
+There are three concentric circles in the center of the diagram, with text in each. The bigger circle is labeled, “Data science”. The middle circle reads, “Machine learning”. The smaller circle reads, “Deep learning”. 
+
 
 ## What is machine learning?
 Machine learning is a **technique** where a machine sifts through numerous amounts of data to find patterns over time. This technique is frequently used for AI purposes. Machine learning uses algorithms that train a machine to learn patterns based on differentiating features about the data. The more training data, the more accurate the predictions. Here are some examples:

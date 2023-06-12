@@ -12,8 +12,9 @@ These solutions are often delivered as SaaS AI solutions, which deliver results 
 **Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. Here are some examples of powerful scenarios where AI is already having a proven impact:
 
 :::image type="complex" source="../media/4-use-ai-embedded-everyday-applications-1.png" alt-text="Infuse AI into your core processes":::
+
 Diagram called “Infuse AI into your core processes.” There are eight boxes, with text in each. They read: Sales, Supply chain, Human Resources, Finance, Marketing, Commerce, Customer service, and Project management.
-:::image-end:::
+
 
 * **Sales:** Sellers can sell smarter with embedded AI-powered insights fueled by customer data.
 * **Supply chain:** Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory. 
