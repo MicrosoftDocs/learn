@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.test-unit
+title: Code test unit
+metadata:
+  title: Code test unit
+  description: "This unit describes what class constructors are and how they're used."
+  ms.date: 06/12/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+durationInMinutes: 12
+content: |
+  [!include[](includes/10-test-unit.md)]

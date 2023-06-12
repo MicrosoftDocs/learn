@@ -4,17 +4,6 @@ When you create an object in code, you must ensure that you also initialize it. 
 
 Constructors are methods used to initialize your object with any initial values required by your object. Although most objects have constructors, they aren't required to create an object. Even when you haven't defined a constructor in your class, C# calls an implicit constructor that behaves differently than an explicit constructor method you define. Typically you define a constructor for the objects you create, especially as a person just getting started with programming.
 
-Test block below.
-
-```csharp
-public class House
-{   private string houseStyle;   private int sqrFootage;
-   public House()   {       houseStyle = "[Unknown]";       sqrFootage = 0;   }
-   public House(string style)   {       houseStyle = style;       sqrFootage = 0;   }
-   public House(string style, int footage)   {       houseStyle = style;       sqrFootage = footage;   }
-}
-```
-
 ## Defining constructors
 
 A constructor is a method that the CLR calls automatically, whenever you create an object. They have the same name as the class in which they're defined.
@@ -41,5 +30,3 @@ public class House
    public House(string style, int footage)   {       houseStyle = style;       sqrFootage = footage;   }
 }
 ```
-
-Test to see if the ## below is breaking anything.
