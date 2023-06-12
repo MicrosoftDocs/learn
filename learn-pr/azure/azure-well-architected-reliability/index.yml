@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-reliability
 metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
   description: Learn about Azure high availability, disaster recovery, and backup and restore solutions to incorporate reliability into your architecture.
-  ms.date: 06/06/2023
+  ms.date: 06/12/2023
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
@@ -14,9 +14,9 @@ summary: Learn about Azure high availability, disaster recovery, and backup and 
 abstract: |
   - Use Azure services to design highly available architectures.
   - Incorporate Azure disaster recovery capabilities into your architecture.
-  - Use Azure backup and restore capabilities to help protect your data and infrastructure.
+  - Learn how Azure backup and restore capabilities can help protect your data and infrastructure.
 prerequisites: |
-  - Experience with core infrastructure technologies such as data storage, compute, and networking.
+  - Experience with core infrastructure technologies such as data storage, computing, and networking.
   - Experience building or operating technology systems to solve business problems.
 iconUrl: /training/achievements/azure-well-architected-reliability.svg
 levels:

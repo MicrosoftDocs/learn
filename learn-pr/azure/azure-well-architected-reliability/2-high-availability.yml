@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Why is an SLA important to define for your application?"
+  - content: "Why is it important to define an SLA for your application?"
     choices:
     - content: "An SLA helps you determine your backup retention requirements."
       isCorrect: false
@@ -29,7 +29,7 @@ quiz:
     - content: "You use an SLA to define access control settings for your resources."
       isCorrect: false
       explanation: "Access control settings are important, but they aren't related to SLA."
-  - content: "Which of the following technologies isn't used for a highly available architecture?"
+  - content: "Which of the following technologies isn't used to make an architecture more highly available?"
     choices:
     - content: "Load balancing."
       isCorrect: false

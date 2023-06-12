@@ -1,4 +1,4 @@
-Imagine you're responsible for a system that must be always fully operational. Failures can happen, so you must ensure that your system remains online if something goes wrong. You must also do system maintenance and updates without service interruptions.
+Imagine you're responsible for a system that must always be fully operational. Failures can happen, so you must ensure that your system remains online if something goes wrong. You must also carry out system maintenance and updates without service interruptions.
 
 High availability (HA) ensures that your architecture can handle failures and maintenance events. In this unit, you learn how to evaluate an application for HA, and how to use Azure platform technologies and services to help meet your availability goals.
 
@@ -9,9 +9,9 @@ For an introduction to HA concepts, watch the following video:
 
 A highly available service absorbs temporary failures in dependent services and hardware and fluctuations in availability and load. The application remains online and available, or appears to do so, while performing acceptably. Business requirements, service-level objectives, or service-level agreements often define the degree of availability.
 
-HA describes the ability to handle the loss or severe degradation of a system component. The loss or degradation might be due to application hosts failing and going offline, planned maintenance or upgrades, or cloud service failures. Identify the places where your system can fail, and build in capabilities to handle those failures to ensure that the services you offer to your customers can stay online.
+HA describes the ability to handle the loss or severe degradation of a system component. The loss or degradation might be due to application hosts failing and going offline, planned maintenance or upgrades, or cloud service failures. Identify the places where your system can fail, and build in capabilities to handle those failures to ensure that the services you offer your customers can stay online.
 
-HA for a service typically requires HA of the components that make up the service. For example, your online marketplace website offers customers the ability to list, buy, and sell items online. Multiple components provide this service, such as a database, web servers, and application servers. You must identify how each of these components could fail and where the failure points are, and then determine how to address these failure points in your architecture.
+HA for a service typically requires HA of the components that make up the service. For example, your online marketplace website might offer customers the ability to list, buy, and sell items online. Multiple components provide this service, such as a database, web servers, and application servers. You must identify how each of these components could fail and where the failure points are, and then determine how to address these failure points in your architecture.
 
 ## Evaluate an application for HA
 
@@ -23,11 +23,11 @@ This section explores the steps to evaluate an application for HA:
 
 ### Define the service-level agreement
 
-A service-level agreement (SLA) is an agreement between a service provider and consumer, in which the service provider commits to a standard of service based on measurable metrics and defined responsibilities. SLAs can be strict, legally bound, contractual agreements, or assumed expectations of availability by customers. Regardless of the specific metrics that make up the SLA, failure to meet the SLA can have serious financial ramifications for the service provider. A common component of service agreements is guaranteed financial reimbursement for missed SLAs.
+A service-level agreement (SLA) is an agreement between a service provider and consumer in which the service provider commits to a standard of service based on measurable metrics and defined responsibilities. SLAs can be strict, legally bound, contractual agreements, or can be assumed expectations of availability by customers. Regardless of the specific metrics that make up the SLA, failure to meet the SLA can have serious financial ramifications for the service provider. A common component of service agreements is guaranteed financial reimbursement for missed SLAs.
 
-Service metrics typically focus on service throughput, capacity, and availability, which can all be measured in various ways. Service-level objectives (SLO) are the target metric values that measure performance, reliability, or availability. These metrics could define the performance of request processing in milliseconds, the availability of services in minutes per month, or the number of requests processed per hour.
+Service metrics typically focus on service throughput, capacity, and availability, which can all be measured in various ways. Service-level objectives (SLO) are the target metric values that measure performance, reliability, or availability. These metrics could define request processing performance in milliseconds, availability of services in minutes per month, or the number of requests processed per hour.
 
-Evaluate the metrics your application exposes and understand how customers measure quality to define the acceptable and unacceptable ranges for SLOs. By defining these objectives, you clearly set goals and expectations with both the teams that support the services and customers who consume the services. The SLOs determine whether your overall SLA is being met.
+To define the acceptable and unacceptable ranges for SLOs, evaluate the metrics your application exposes and determine how customers measure quality. By defining these objectives, you clearly set goals and expectations with both the teams that support the services and customers who consume the services. The SLOs determine whether your overall SLA is being met.
 
 The following table shows the potential cumulative downtime for various SLA levels.
 
@@ -39,7 +39,7 @@ The following table shows the potential cumulative downtime for various SLA leve
 | 99.99% |1.01 minutes |4.32 minutes |52.56 minutes |
 | 99.999% |6 seconds |25.9 seconds |5.26 minutes |
 
-Everthing else being equal, higher availability is better. But as you strive for higher availability, symbolized by more 9s, the cost and complexity to achieve that level increases. An 99.99% uptime means about five minutes of total downtime per month. Whether it's worth the added complexity and cost to reach five 9s depends on your business requirements.
+Everything else being equal, higher availability is better. But as you strive for higher availability, symbolized by more 9s in the SLA, the cost and complexity to achieve that level increases. An 99.99% uptime means about five minutes of total downtime per month. Whether it's worth the added complexity and cost to reach five 9s depends on your business requirements.
 
 Here are some other factors to consider when you define an SLA:
 
@@ -74,17 +74,17 @@ The Azure platform provides HA over all its services. The following core technol
 
 ### Availability sets
 
-Availability sets help ensure your application remains online if a high-impact maintenance event is required or hardware failures occur. Availability sets are a way to distribute virtual machines (VMs) that belong to the same application workload to prevent simultaneous impact from hardware failure and scheduled maintenance. Availability sets are made up of *update domains* and *fault domains*.
+Availability sets help ensure your application remains online if a high-impact maintenance event is required or hardware failures occur. Availability sets are a way to distribute virtual machines (VMs) that belong to the same application workload to prevent simultaneous impact from hardware failure and scheduled maintenance. Availability sets are made up of *update domains* (UDs) and *fault domains* (FDs).
 
 :::image type="content" source="../media/2-availability-sets.png" alt-text="Illustration showing three availability sets in different fault domains. The first set has one update domain, the second has two update domains, and the third has no update domain." loc-scope="other"::: <!-- no-loc -->
 
-Most updates have no impact on the VMs running on them, but sometimes this isn't possible. Update domains (UDs) ensure that a subset of your application's servers always keep running when the VM hosts in an Azure datacenter need downtime for maintenance.
+Most updates have no impact on the VMs running on them, but sometimes this isn't possible. UDs ensure that a subset of your application's servers always keep running when the VM hosts in an Azure datacenter need downtime for maintenance.
 
-To ensure that updates don't happen to a whole Azure datacenter at once, the datacenter is logically sectioned into UDs. When a maintenance event occurs, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through UDs. Sequencing updates through UDs ensures that the whole datacenter isn't unavailable during platform updates and patching.
+To ensure that updates don't happen to a whole Azure datacenter at once, the datacenter is logically sectioned into UDs. When a maintenance event occurs, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through UDs. Sequencing updates through UDs ensures that the whole datacenter isn't unavailable during the platform updates and patching.
 
-While UDs represent logical sections of the datacenter, fault domains (FDs) represent physical sections of the datacenter and ensure rack diversity of servers in an availability set. FDs align to the physical separation of shared hardware in the datacenter, including power, cooling, and network hardware that supports the servers in server racks.
+While UDs represent logical sections of the datacenter, FDs represent physical sections of the datacenter and ensure rack diversity of servers in an availability set. Placing your VMs in an availability set automatically spreads them across multiple FDs, so in the event of a hardware failure, only some of your VMs are affected.
 
-If the hardware that supports a server rack becomes unavailable, the outage affects only that rack of servers. Placing your VMs in an availability set automatically spreads them across multiple FDs, so in the event of a hardware failure, only some of your VMs are affected.
+FDs align to the physical separation of shared hardware in the datacenter, including power, cooling, and network hardware that supports the servers in server racks. If the hardware that supports a server rack becomes unavailable, the outage affects only that rack of servers.
 
 ### Availability zones
 
@@ -94,38 +94,31 @@ Services like VMs are *zonal services* that allow you to deploy to specific zone
 
 ![Illustration showing three availability zones within an Azure region. Each availability zone has its own resources and connects with the others for replication of zone-redundant services.](../media/2-availability-zones.png)
 
-Supported regions contain a minimum of three availability zones. When you create zonal service resources in those regions, you can select the zone to create the resource in. This ability lets you design your application to withstand a zonal outage and continue to operate in an Azure region before you have to evacuate your application to another Azure region.
+Supported regions contain a minimum of three availability zones. When you create zonal service resources in those regions, you can select the zone to create the resource in. This ability lets you design your application to withstand a zonal outage and continue to operate in an Azure region instead of having to evacuate your application to another region.
 
 Availability zones are a newer HA service that's currently available for certain regions. If you want to consider this functionality, be sure to check the service availability in the region where you plan to deploy your application. For more information, see [Azure regions with availability zone support](/azure/reliability/availability-zones-service-support#azure-regions-with-availability-zone-support).
 
-Availability zones are supported for VMs as well as several PaaS services. Availability zones are mutually exclusive with availability sets. When you use availability zones, you no longer need to define availability sets for your systems. You have diversity at the datacenter level, and updates are never done to multiple availability zones at the same time.
+Availability zones are supported for VMs as well as for several PaaS services. Availability zones are mutually exclusive with availability sets. When you use availability zones, you no longer need to define availability sets for your systems. You have diversity at the datacenter level, and updates are never done to multiple availability zones at the same time.
 
 ### Load balancing
 
 Load balancers manage how to distribute network traffic across an application. Load balancers are essential for keeping your application resilient to individual component failures and to ensure your application is available to process requests. Applications that don't have built-in service discovery require load balancing for both availability sets and availability zones.
 
-The following three Azure load-balancing services have distinct abilities to route network traffic:
+There are several Azure load-balancing services, each with distinct network traffic routing abilities. Use one or a combination of these technologies to help ensure you have the necessary options to architect a highly available solution for routing network traffic through your application.
 
-- **Azure Traffic Manager** provides global DNS load balancing.
+![Illustration showing the Azure load balancing technologies.](../media/2-azure-load-balancer.png)
 
-  Consider using Traffic Manager to provide load balancing of DNS endpoints within or across Azure regions. Traffic Manager distributes requests to available endpoints and uses endpoint monitoring to detect and remove failed endpoints.
+In the preceding diagram, Azure Traffic Manager balances the load between two regions. Within each region, Azure Application Gateway distributes the load among VMs in the web tier based on the type of request. Azure Load Balancer distributes further requests among the VMs in the database tier.
+
+- **Traffic Manager** provides global Domain Name System (DNS) load balancing. Consider using Traffic Manager to provide load balancing of DNS endpoints within or across Azure regions. Traffic Manager distributes requests to available endpoints and uses endpoint monitoring to detect and remove failed endpoints.
   
-- **Azure Application Gateway** provides Layer 7 load-balancing capabilities, such as round-robin distribution of incoming traffic, cookie-based session affinity, URL path-based routing, and the ability to host multiple websites behind one gateway.
-
-  Application Gateway monitors the health of all resources in its backend pool by default, and automatically removes any unhealthy resources from the pool. Application Gateway continues to monitor the unhealthy instances and adds them back to the healthy backend pool once they become available and respond to health probes.
+- **Application Gateway** provides Layer 7 load-balancing capabilities, such as round-robin distribution of incoming traffic, cookie-based session affinity, URL path-based routing, and the ability to host multiple websites behind one gateway. Application Gateway monitors the health of all resources in its backend pool by default, and automatically removes unhealthy resources from the pool. Application Gateway continues to monitor the unhealthy instances and adds them back to the pool once they're available and healthy.
   
-- **Azure Load Balancer** is a Layer 4 load balancer.
-
-  You can configure public and internal load-balanced endpoints and define rules to map inbound connections to backend pool destinations by using TCP and HTTP health-probing options to manage service availability.
-
-One or a combination of Azure load-balancing technologies can ensure you have the necessary options available to architect a highly available solution to route network traffic through your application.
-
-![Illustration showing the Azure load balancing technologies. A traffic manager balances the load between two regions. Within each region, an application gateway distributes the load among VMs in the web tier based on the type of request. The Azure load balancer distributes further requests among the VMs in the database tier.](../media/2-azure-load-balancer.png)
+- **Azure Load Balancer** is a Layer 4 load balancer. You can configure public and internal load-balanced endpoints, define rules to map inbound connections to backend pool destinations, and use TCP and HTTP health-probing options to manage service availability.
 
 ### PaaS HA capabilities
 
-PaaS services come with HA built in. Services such as Azure SQL Database, Azure App Service, and Azure Service Bus include HA features and ensure that failures of an individual service component are invisible to your application. Using PaaS services is one of the best ways to ensure that your architecture is highly available.
+Azure PaaS services come with HA built in. Services such as Azure SQL Database, Azure App Service, and Azure Service Bus include HA features and ensure that individual component failures are seamless to your application. Using PaaS services is one of the best ways to ensure that your architecture is highly available.
 
-In summary, when you architect for HA, first understand the SLA that you commit to your customers. Then evaluate the HA capabilities of your application, and the HA capabilities and SLAs of dependent systems. After you evaluate your SLA and HA capabilities, use Azure features like availability sets, availability zones, and load-balancing technologies to add HA to your application. Any Azure PaaS services you choose to use have HA capabilities built in.
+In summary, when you architect for HA, you should first understand the SLA that you commit to your customers. Then evaluate the HA capabilities of your application, and the HA capabilities and SLAs of dependent systems. After you evaluate your SLA and HA capabilities, use Azure features like availability sets, availability zones, and load-balancing technologies to add HA to your application. Azure PaaS services have HA capabilities built in.
 
-Proceed to the next unit to learn about disaster recovery solutions for reliability.

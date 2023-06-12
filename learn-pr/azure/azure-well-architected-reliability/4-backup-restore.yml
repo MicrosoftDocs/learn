@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "Yes."
       isCorrect: false
-      explanation: "Some Azure data storage products, such as Azure Blob Storage, don't include automatic backups. You can add services like Azure Backup Agent as needed to make sure all your data is protected."
+      explanation: "Some Azure data storage products, such as Azure Blob Storage, don't include automatic backups."
     - content: "No."
       isCorrect: true
-      explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can also add services like Azure Backup Agent as needed to make sure all your data is protected."
+      explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can add services like Azure Backup Agent as needed to make sure all your data is protected."
   - content: "Which of the following choices isn't a reason to test backup and restore processes regularly?"
     choices:
     - content: "Validate the integrity of your backups."

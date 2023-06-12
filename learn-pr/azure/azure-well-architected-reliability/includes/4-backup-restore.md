@@ -1,4 +1,4 @@
-This unit describes backup and recovery as a powerful line of defense against permanent data loss. An effective backup strategy requires more than simply copying data, but should consider your application's data architecture and infrastructure.
+This unit describes backup and recovery as a powerful line of defense against permanent data loss. An effective backup strategy requires more than simply copying data, but should take your application's data architecture and infrastructure into account.
 
 Applications can manage many data types of varying importance, spread across filesystems, databases, and other storage services in the cloud and on-premises. Using the right services and products for each backup simplifies the backup process and decreases recovery time if a backup needs to be restored.
 
@@ -21,7 +21,7 @@ Backup plays a role in disaster recovery (DR), but backups, restores, and their 
 For example, if a small amount of data older than your backup interval is corrupted or deleted, but the application doesn't experience downtime and a successful restore results in no data loss, your application might never be in danger of missing its SLA. Your DR plan might or might not include guidance for doing restores in nondisaster situations.
 
 > [!TIP]
-> Don't confuse archival, replication, and backup. Archival is storing data for long-term preservation and read access. Replication is near-real-time copying of data between replicas to support high availability and some DR scenarios. Some requirements, such as data retention laws, might influence your strategies for all three of these concerns, but they require separate analysis and implementation.
+> Don't confuse archival or replication with backup. Archival is storing data for long-term preservation and read access. Replication is near-real-time copying of data between replicas to support high availability and some DR scenarios. Some requirements, such as data retention laws, might influence your strategies for all three of these concerns, but they require separate analysis and implementation.
 
 ## Azure backup and restore services
 
@@ -33,14 +33,17 @@ Azure Backup is a family of backup products that back up data to Recovery Servic
 
 Backup serves as a general-purpose backup solution for cloud and on-premises workflows that run on VMs or physical servers. Backup is a drop-in replacement for traditional backup solutions that stores data in Azure instead of on archive tapes or other local physical media. Backup can add value and contribute to the backup and restore strategy for infrastructure as a service (IaaS) and on-premises applications of many sizes and shapes.
 
-The following products and services use Backup to create backups:
+The following products and services can use Backup to create backups:
 
 - **Microsoft Azure Recovery Services (MARS) agent** is a Windows application that backs up files, folders, and system state from the Windows VM it's installed on. It works like many consumer cloud-based backup solutions, but requires configuring a Recovery Services vault. Once you download and install the agent onto a Windows server or VM, you can configure it to create backups up to three times a day.
-- **System Center Data Protection Manager** is a robust, fully featured, enterprise-level backup and recovery system for Windows Server. Data Protection Manager can back up file systems and Windows and Linux VMs, create bare-metal backups of physical servers, and do application-aware backups of server products like SQL Server and Exchange. Data Protection Manager is part of System Center and is licensed and sold with System Center, but is considered part of the Backup family because it can store backups in a Recovery Services vault.
-- **Microsoft Azure Backup Server (MABS)** is similar to Data Protection Manager, but is licensed as part of an Azure subscription and doesn't require a System Center license. Azure Backup Server supports the same functionality as Data Protection Manager, except for local tape backup and integration with System Center products.
-- **Azure VM backup** is a turnkey backup and restore feature that supports scheduled backups for Azure Windows and Linux VMs. VM Backup supports recovery of individual files, full disks, and entire VMs, and can also do application-consistent backups. You can make individual applications aware of backup operations so they get their filesystem resources into a consistent state before the snapshot is taken.
 
-![An illustration showing the Backup agent and an Azure VM backup configured with Recovery Vault.](../media/4-azure-backup.png)
+- **System Center Data Protection Manager** is a robust, fully featured, enterprise-level backup and recovery system for Windows Server. Data Protection Manager can back up file systems and Windows and Linux VMs, create bare-metal backups of physical servers, and do application-aware backups of server products like SQL Server and Exchange. Data Protection Manager is part of System Center and is licensed and sold with System Center, but is considered part of the Backup family because it can store backups in a Recovery Services vault.
+
+- **Microsoft Azure Backup Server (MABS)** is similar to Data Protection Manager, but is licensed as part of an Azure subscription and doesn't require a System Center license. Azure Backup Server supports the same functionality as Data Protection Manager, except for local tape backup and integration with System Center products.
+
+- **Azure VM backup** is a turnkey backup and restore feature that supports scheduled backups for Azure Windows and Linux VMs. VM backup supports recovery of individual files, full disks, and entire VMs, and can also do application-consistent backups. You can make individual applications aware of backup operations so they get their filesystem resources into a consistent state before the snapshot is taken.
+
+![An illustration showing the Backup agent and an Azure VM backup configured with a Recovery Services vault.](../media/4-azure-backup.png)
 
 ### Azure Blob Storage
 
@@ -60,7 +63,7 @@ If you're evaluating different database options for an application, you should i
 
 ### Azure App Service
 
-Web applications hosted in Azure App Service Standard and Premium tiers support turnkey scheduled and manual backups. Backups include application configuration, file contents, and database contents, and support simple filters for excluding files. Restore operations can target different App Service instances, making App Service backup a simple way to move one application's contents to another.
+Web applications hosted in Azure App Service Standard and Premium tiers support turnkey scheduled and manual backups. Backups include application configuration, file contents, and database contents, and support simple filters for excluding files. Restore operations can target different App Service instances, making App Service backup a simple way to move one application's contents to another application.
 
 App Service backups are limited to 10 GB total, including application and database content, and are a good solution for applications under development and small-scale applications. Mature applications don't generally use App Service backup, but instead rely on robust deployment and rollback procedures, storage strategies that don't use application disk storage, and dedicated backup strategies for databases and persistent storage.
 

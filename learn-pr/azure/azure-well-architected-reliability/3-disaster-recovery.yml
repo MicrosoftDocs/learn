@@ -33,7 +33,7 @@ quiz:
     choices:
     - content: "Yes."
       isCorrect: false
-      explanation: "Both data replication and data backup copy your data, but replication creates copies of live data for failover, while backup creates long-lived, read-only data snapshots to use for recovery."
+      explanation: "Both data replication and data backup copy your data, but the frequency and usage of the data are different."
     - content: "No."
       isCorrect: true
       explanation: "Replication creates real-time or near-real-time copies of live data to use in failover, while backup creates long-lived, read-only snapshots of data to use in recovery."

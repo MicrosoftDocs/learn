@@ -1,4 +1,4 @@
-Designing for high availability helps keep an application or process running despite unfavorable events and adverse conditions. But significant occurrences can happen where you lose data or it's impossible to keep your apps and processes from going down.
+Designing for high availability helps keep an application or process running despite unfavorable events and adverse conditions. But significant occurrences can still happen where you lose data or it's impossible to keep your apps and processes from going down.
 
 When disaster strikes, you need to have a recovery plan to get your services running again. You should know your goals and expectations for recovery, the costs and limitations of your recovery plan, and how to execute the plan. This unit covers how to promote reliability by planning for and recovering from disasters.
 
@@ -26,13 +26,13 @@ Explore various kinds of hypothetical disasters and try to be specific when thin
 
 The risk assessment needs to consider every process that can't afford unlimited downtime, and every category of data that can't afford unlimited loss. When a disaster occurs that affects multiple application components, it's critical that plan owners can use the plan to completely inventory what needs attention and how to prioritize each item.
 
-Applications that consist only of a single process or data classification are still important to include. These applications are probably single components of a larger DR plan that includes multiple applications within the organization.
+Applications that consist only of a single process or data classification are still important to include. These applications might be single components of a larger DR plan that includes multiple applications within the organization.
 
 ### Recovery objectives
 
 A complete DR plan must specify the following critical business requirements for each process the application implements:
 
-- **Recovery Point Objective (RPO)** is the maximum duration of acceptable data loss. RPO is measured in units of time, not volume, such as "30 minutes of data" or "four hours of data.". RPO is about limiting and recovering from data loss, not data theft.
+- **Recovery Point Objective (RPO)** is the maximum duration of acceptable data loss. RPO is measured in units of time, not volume, such as "30 minutes of data" or "four hours of data." RPO is about limiting and recovering from data loss, not data theft.
 - **Recovery Time Objective (RTO)** is the maximum duration of acceptable downtime, where "downtime" is defined by your specification. For example, if the acceptable downtime duration in a disaster is eight hours, then the RTO is eight hours.
 
 ![An illustration showing the duration, in hours, of the recovery point objective and recovery time objective from the time of the disaster.](../media/3-rto-rpo.png)
@@ -73,7 +73,12 @@ Replication duplicates data in multiple data store replicas. Unlike backup, whic
 
 Replication mitigates a failed or unreachable data store by executing a *failover*, which changes application configuration to route data requests to a working replica. Failover is often automated, triggered by error detection built into a data-storage product, or implemented through a monitoring solution. Depending on the implementation and the scenario, failover might need to be manually done by system operators.
 
-Different replication designs place different priorities on data consistency, performance, and cost. *Active* replication requires updates to take place on multiple replicas simultaneously, guaranteeing consistency at the cost of throughput. *Passive* replication does synchronization in the background, removing replication as a constraint on application performance, but increasing RPO. *Active-active* or *multimaster* replication enables using multiple replicas simultaneously, enabling load balancing at the cost of complicating data consistency. *Active-passive* replication reserves replicas for live use during failover only.
+Different replication designs place different priorities on data consistency, performance, and cost.
+
+- **Active** replication requires updates to take place on multiple replicas simultaneously, guaranteeing consistency at the cost of throughput.
+- **Passive** replication does synchronization in the background, removing replication as a constraint on application performance, but increasing RPO.
+- **Active-active** or **multimaster** replication enables using multiple replicas simultaneously, enabling load balancing at the cost of complicating data consistency.
+- **Active-passive** replication reserves replicas for live use during failover only.
 
 You don't implement replication from scratch. Most fully featured database systems and other data-storage products and services include some kind of replication as a tightly integrated feature, due to its functional and performance requirements. It's up to you to include these features in your application design and use them appropriately.
 
@@ -81,11 +86,11 @@ The following Azure services support different replication levels and concepts:
 
 - **Azure Storage** replication capabilities depend on the type of replication you select for the storage account. The replication can be local within a datacenter, zonal between datacenters within a region, or regional between regions. Neither your application nor your operators interact with replication directly. Failovers are automatic and transparent, and you simply need to select a replication level that balances cost and risk.
 
-- **Azure SQL Database** replication is automatic at a small scale, but recovery from a full Azure datacenter or regional outage requires geo-replication. Setting up geo-replication is manual, but it's a first-class Azure SAL Database feature that's well-supported by documentation.
+- **Azure SQL Database** replication is automatic at a small scale, but recovery from a full Azure datacenter or regional outage requires *geo-replication*. Setting up geo-replication is manual, but it's a first-class Azure SQL Database feature that's well-supported by documentation.
 
 - **Azure Cosmos DB** is a globally distributed database system, and replication is central to its implementation. With Azure Cosmos DB, you can configure options for database regions, data partitioning, and data consistency.
 > [!IMPORTANT]
-> Neither replication nor backup are complete DR solutions on their own. Data recovery is only one component of DR, and replication doesn't fully satisfy many DR scenarios. For example, in a data-corruption scenario, the nature of the corruption could allow it to spread from the primary data store to the replicas, rendering all the replicas useless and requiring a backup for recovery.
+> Neither replication nor backup are complete DR solutions on their own. Data recovery is only one component of DR, and replication doesn't fully satisfy many DR scenarios. For example, in a data corruption scenario, the nature of the corruption could allow it to spread from the primary data store to the replicas, rendering all the replicas useless and requiring a backup for recovery.
 
 ### Process recovery
 
@@ -105,7 +110,7 @@ Azure Site Recovery is a service that manages process recovery for workloads run
 
 Site Recovery supports replicating VM and physical server images as well as individual workloads. A workload might be an individual application or an entire VM or operating system with its applications. Any application workload can be replicated, but Site Recovery has first-class integrated support for many Microsoft server applications, such as SQL Server and SharePoint, as well as some third-party applications like SAP.
 
-Investigate Site Recovery for any app that runs on VMs or physical servers to discover and explore scenarios and possibilities for process recovery.
+Investigate Site Recovery for any app that runs on VMs or physical servers as a great way to discover and explore scenarios and possibilities for process recovery.
 
 #### Service-specific DR features
 
@@ -121,4 +126,4 @@ Choose intervals to do different types and scopes of tests, such as testing back
 
 Make sure to include your monitoring system in your testing. For example, if your application supports automated failover, you introduce failures in a dependency or other critical component to ensure that the application behaves correctly end-to-end. Make sure to include failure detection and triggering of automated failover in the plan and testing.
 
-By carefully identifying your DR requirements and laying out a plan, you can determine what types of services you need to meet your DR objectives. Azure provides several services and features to help you meet these objectives. Proceed to the next unit to learn about backup and recovery as a component of reliability.
+By carefully identifying your DR requirements and laying out a plan, you can determine what types of services you need to meet your DR objectives. Azure provides several services and features to help you meet these objectives.
