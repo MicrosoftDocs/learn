@@ -57,7 +57,7 @@ You need to carefully evaluate all components of your application, including the
 
 ### Evaluate dependent HA capabilities
 
-You should understand not only your application's SLA requirements, but also the SLAs of any resource your application depends on. If you commit an uptime of 99.9% to your customers, but a service your application depends on has an uptime commitment of only 99%, you might not meet your SLA to your customers.
+You should understand not only your application's SLA requirements, but also the SLAs of any resource your application depends on. If you commit an uptime of 99.9% to your customers, but a service your application depends on has an uptime commitment of only 99%, you might not meet your SLA.
 
 If a dependent service can't provide a sufficient SLA, you might modify your own SLA, replace the dependency with an alternative, or find ways to meet your SLA while the dependency is unavailable. Based on the scenario and the nature of the dependency, you might temporarily work around failing dependencies with solutions like caches and work queues.
 

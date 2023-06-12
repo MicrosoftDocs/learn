@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure-well-architected-reliability.4-backup-restore
-title: Backup and restore processes
+title: Processes for backup and restore
 metadata:
-  title: Backup and restore processes
+  title: Processes for backup and restore
   description: Use backup and restore to help protect your data by defining requirements, testing processes, and learning about Azure backup and restore services.
   ms.date: 05/19/2020
   author: robbyatmicrosoft
@@ -23,7 +23,7 @@ quiz:
     - content: "No."
       isCorrect: true
       explanation: "Most Azure services offer integrated backup, but it's not always enabled by default. You can add services like Azure Backup Agent as needed to make sure all your data is protected."
-  - content: "Which of the following reasons doesn't directly relate to regular backup and restore process testing?"
+  - content: "Which of the following goals doesn't directly relate to regular backup and restore process testing?"
     choices:
     - content: "Validate the integrity of your backups."
       isCorrect: false
