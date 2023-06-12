@@ -8,6 +8,7 @@ metadata:
   ms.author: aashcraft
   ms.topic: interactive-tutorial
   ms.prod: windows
+  manager: jken
 title: Configure your Windows app to use Narrator and speech recognition
 summary: Learn how to use audio elements to make an inclusive Windows app. Configure your app to work well with Narrator, and add a custom speech recognition system for spoken input.
 abstract: |

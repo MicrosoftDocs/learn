@@ -29,7 +29,6 @@ roles:
 products:
 - microsoft-purview
 - m365
-- m365-information-protection
 subjects:
 - compliance
 - data-management
