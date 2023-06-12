@@ -15,7 +15,7 @@ The configuration of Office Container is accomplished through registry settings 
  -  [Full Office Container Registry Settings Reference](/fslogix/office-container-configuration-reference)
  -  [Create a Group Policy Object](/windows/security/threat-protection/windows-firewall/create-a-group-policy-object)
 
-These settings are required to enable Office Container and to specify the location for the profile VHD to be stored. The minimum required settings to enable Office Container is:
+These settings are required to enable Office Container and to specify the location for the profile VHD to be stored. The minimum required settings to enable Office Container are:
 
 | **Value**                       | **Type**             | **Configured Value** | **Description**                                                                                                                                                                                                                                                                                                                                                                                            |
 | ------------------------------- | -------------------- | -------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
