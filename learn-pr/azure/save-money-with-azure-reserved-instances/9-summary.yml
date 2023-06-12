@@ -2,12 +2,12 @@
 uid: learn.save-money-with-azure-reserved-instances.summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 11/01/2021
+  description: Review what you've learned about buying and managing reserved instances.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Summary
 durationInMinutes: 1
 content: |

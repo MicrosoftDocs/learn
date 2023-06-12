@@ -9,7 +9,7 @@ metadata:
   author: Justinha
   ms.author: Justinha
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/5-exercise.md)]

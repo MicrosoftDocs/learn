@@ -2,29 +2,29 @@ Now that you have penalty terms to represent all of the constraints and the make
 
 As a reminder, here are the penalty terms:
 
-| Constraint | Penalty condition |
-|---|---|
-|**Precedence constraint**<br>Operations in a job must take place in order.|Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished (they start out of order).|
-|**Operation-once constraint**<br>Each operation is started once and only once.|Assign penalty if an operation isn't scheduled within the allowed time.<br>**Assumption:** if an operation starts, it runs to completion.|
-|**No-overlap constraint**<br>Machines can only do one thing at a time.|Assign penalty every time two operations on a single machine are scheduled to run at the same time.|
+|                               | Description                                   | Penalty condition |
+|:------------------------------|:----------------------------------------------|:------------------|
+| **Precedence constraint**     | Operations in a job must take place in order. | Assign penalty every time $O_{i+1}$ starts before $O_{i}$ has finished. That is, they start out of order.|
+| **Operation-once constraint** | Each operation is started once and only once. | Assign penalty if an operation isn't scheduled within the allowed time. Assumption: if an operation starts, it runs to completion. |
+| **No-overlap constraint**     | Machines can only do one thing at a time. | Assign penalty every time two operations on a single machine are scheduled to run at the same time. |
 
-- **Precedence constraint**:
+- Precedence constraint:
 
 $$f(x) = \sum_{k_{n-1} \leq i < k_n, s < t + p_{i}}x_{i,t}\cdot x_{i+1,s} \text{ for each job } \textit{n}$$
 
-- **Operation-once constraint**:
+- Operation-once constraint:
 
 $$g(x) = \sum_{i} \left(\left(\sum_{0\leq t < T} x_{i,t}\right) - 1\right)^2$$
   
-- **No-overlap constraint**:
+- No-overlap constraint:
 
 $$h(x) = \sum_{i,t,k,s} x_{i,t}\cdot x_{k,s} = 0 \text{ for each machine } \textit{m}$$
 
-- **Makespan minimization**:
+- Makespan minimization:
 
 $$k(x) = \sum_{i \in \\{k_0-1, \dots, k_{n-1}-1\\}} \left( \sum_{M_{lb} < t < T+p_i} c_t \cdot x_{i, ~t-p_i} \right)$$
 
-As you saw earlier, combining the penalty functions is straightforward - all you need to do is assign each term a weight and add all the weighted terms together, like so:
+As you saw earlier, combining the penalty functions is straightforward. All you need to do is assign each term a weight and add all the weighted terms together, like so:
 
 $$H(x) = \alpha \cdot f(x) + \beta \cdot g(x) + \gamma \cdot h(x) + \delta \cdot k(x) $$
 
@@ -33,13 +33,13 @@ $$\text{where }\alpha, \beta, \gamma \text{ and } \delta \text{ represent the di
 The weights represent how important each penalty function is, relative to all the others.
 
 > [!NOTE]
-> Along with modifying your cost function (how you represent the penalties), tuning these weights will define how much success you will have solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights, so this may require some experimentation before you see success. Later in this module, we'll dive a little deeper into parameter tuning.
+> Along with modifying your cost function, which is how you represent the penalties, tuning these weights determines your success in solving your optimization problem. There are many ways to represent each optimization problem's penalty functions and many ways to manipulate their relative weights. Tuning might require some experimentation before you see success. Later in this module, dive a little deeper into parameter tuning.
 
 ## Code
 
-The following code snippet shows how you assign weight values and assemble the penalty terms by summing the output of the penalty and objective functions, as was demonstrated mathematically at the start of this unit. These terms represent the cost function and they are what you will submit to the solver.
+The following code snippet shows how you assign weight values and assemble the penalty terms by summing the output of the penalty and objective functions, as was demonstrated mathematically at the start of this unit. These terms represent the cost function. They're what you submit to the solver.
 
-Click **+ Code** to add another new cell and add the following lines:
+Select **+ Code** to add another new cell and add the following lines:
 
 ```python
 # Generate terms to submit to solver using functions defined previously
@@ -64,4 +64,4 @@ terms = c1 + c2 + c3 + c4
 ```
 
 > [!NOTE]
-> You can find the full Python script (including the code from all units in this module) and an interactive Jupyter notebook of this sample in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true).
+> You can find the full Python script, including the code from all units in this module, and an interactive Jupyter notebook of this sample in our [samples repo](https://github.com/microsoft/qio-samples/tree/main/samples/job-shop-scheduling?azure-portal=true).

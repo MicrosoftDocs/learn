@@ -8,7 +8,7 @@ metadata:
   author: JetterMcTedder
   ms.author: bspendolini
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 20
 content: |
   [!include[](includes/8-exercise-work-with-data-in-ads.md)]

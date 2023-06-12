@@ -1,4 +1,4 @@
-Your transportation company wants to set itself apart from other companies, without breaking the bank. You must have a good handle about how to set up the database to provide the best service while controlling costs.
+Your transportation company wants to set itself apart from other companies without breaking the bank. You must have a good handle about how to set up the database to provide the best service while controlling costs.
 
 Here, you'll learn:
 
@@ -16,7 +16,7 @@ Let's take a quick look at some things you need to consider when you create an A
 
 When you create your first Azure SQL database, you also create an _Azure SQL logical server_. Think of a logical server as an administrative container for your databases. You can control logins, firewall rules, and security policies through the logical server. You can also override these policies on each database within the logical server.
 
-For now, you need just one database. But a logical server enables you to add more at a later time and tune performance among all your databases.
+For now, you need just one database, but a logical server lets you add more at a later time and tune performance among all your databases.
 
 ## Choose performance: DTUs versus vCores
 
@@ -24,29 +24,29 @@ Azure SQL Database has two purchasing models: _DTU_ and _vCore_.
 
 - **What are DTUs?**
 
-    DTU stands for _Database Transaction Unit_, and is a combined measure of compute, storage, and IO resources. Think of the DTU model as a simple, preconfigured purchase option.
+    DTU stands for _Database Transaction Unit_, and is a combined measure of compute, storage, and I/O resources. Think of the DTU model as a simple, preconfigured purchase option.
 
-    Because your logical server can hold more than one database, you might also consider eDTUs, or _elastic Database Transaction Units_. This option enables you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
+    Because your logical server can hold more than one database, you might also consider eDTUs, or _elastic Database Transaction Units_. This option allows you to choose one price, but allows each database in the pool to consume fewer or more resources depending on current load.
 
 - **What are vCores?**
 
-    vCores stands for  _Virtual cores_, and give you greater control over the compute and storage resources that you create and pay for.
+    vCores stands for _Virtual cores_, which give you greater control over the compute and storage resources that you create and pay for.
 
-    Unlike the DTU model, which provides fixed configurations for compute, storage, and IO resources, the vCore model enables you to configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and IO throughput.
+    Unlike the DTU model, which provides fixed configurations for compute, storage, and I/O resources, the vCore model lets you configure each of these resources independently. For example, with the vCore model, you can increase storage capacity but keep the existing amount of compute and I/O throughput.
 
-Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and IO performance. It's also less expensive to use while you build your prototype.
+Your transportation and logistics prototype needs only one Azure SQL Database instance. You decide to use the DTU option because it provides the best balance of compute, storage, and I/O performance. It's also less expensive to use while you build your prototype.
 
 ## What are SQL elastic pools?
 
 When you create your Azure SQL database, you can create a _SQL elastic pool_.
 
-SQL elastic pools relate to eDTUs. They enable you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need, within the limits you set, depending on current load.
+SQL elastic pools relate to eDTUs. They allow you to buy a set of compute and storage resources that are shared among all the databases in the pool. Each database can use the resources they need within the limits you set, depending on current load.
 
 For your prototype, you won't need a SQL elastic pool because you need only one SQL database.
 
 ## What is collation?
 
-Collation refers to the rules that sort and compare data. Collation helps you define *sorting rules* when case sensitivity, accent marks, and other language characteristics are important. Sorting rules enable you to arrange data in an ordered sequence.
+Collation refers to the rules that sort and compare data. Collation helps you define _sorting rules_ when case sensitivity, accent marks, and other language characteristics are important. Sorting rules allow you to arrange data in an ordered sequence.
 
 Let's take a moment to consider what the default collation, **SQL_Latin1_General_CP1_CI_AS**, means:
 
@@ -59,11 +59,14 @@ Because you don't have specific requirements for how data is sorted and compared
 
 ## Create your Azure SQL database
 
-Here you'll set up your database, which includes creating your logical server. You'll choose settings that support your transportation logistics application. In practice, you would choose settings that support the kind of app you're building.
+Here, you'll set up your database, which includes creating your logical server. You'll choose settings that support your transportation-logistics application. In practice, you'd choose settings that support the kind of app you're building.
 
 Over time, if you realize you need more compute power to keep up with demand, you can adjust performance options or even switch between the DTU and vCore performance models.
 
-1. Sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you used to activate the sandbox.
+> [!NOTE]
+> This exercise requires you to use your own Azure subscription. To make sure you don't incur extra charges, clean up any resources you create after you finish this module.
+
+1. Sign in to the [Azure portal](https://portal.azure.com).
 
 1. From **Home**, or in **Azure Services**, select **Create a resource**. The **Create a resource** pane appears.
 
@@ -76,10 +79,10 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     | Setting | Value |
     | --- | --- |
     | **Project details** |
-    | Subscription | *Concierge Subscription* |
-    | Resource group | *<rgn>[sandbox resource group name]</rgn>* |
+    | Subscription | Select your subscription |
+    | Resource group | Select an existing resource group or select **Create new** |
     | **Database details** |
-    | Database name | *Logistics* |
+    | Database name | `Logistics` |
     | Server | _[See step 5]_ |
     | Want to use SQL elastic pool? | *No* |
     | Compute + storage | _[See step 6]_ |
@@ -92,13 +95,11 @@ Over time, if you realize you need more compute power to keep up with demand, yo
 
       | Setting | Value |
       | --- | --- |
-      | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions). |
-      | Location | Select one of the regions from the list following this table. |
+      | Server name | Enter a globally unique [server name](/azure/architecture/best-practices/naming-conventions) |
+      | Location | Select a region near you |
       | Authentication Method | Use SQL Authentication. |
-      | Server admin login | Choose a unique admin login that serves as your primary administrator login ID. |
-      | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and non-alphanumeric. |
-
-     [!INCLUDE [regions](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
+      | Server admin login | Choose a unique admin login that serves as your primary administrator login ID |
+      | Password | The password of your choice must have eight or more characters from three of these categories: uppercase, lowercase, numbers, and non-alphanumeric |
 
     b. Select **OK**. The Server field updates with the name of the server you created.
 
@@ -130,7 +131,7 @@ Over time, if you realize you need more compute power to keep up with demand, yo
     > [!IMPORTANT]
     > Remember your server name, admin login, and password for later.
 
-While deployment is in progress, **Deployment details** displays the resources that are created. When deployment completes, optionally, select **Pin to dashboard**, and then select **Go to resource**. The **Overview** pane for your SQL database server appears.
+While deployment is in progress, **Deployment details** displays the resources that are created. When deployment completes, optionally, select **Pin to dashboard**, then select **Go to resource**. The **Overview** pane for your SQL database server appears.
 
    :::image type="content" source="../media/3-notifications-complete.png" alt-text="Screenshot of the Azure portal showing the Overview pane of a newly created SQL database." lightbox="../media/3-notifications-complete.png":::
 

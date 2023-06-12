@@ -4,11 +4,10 @@ title: Exercise - Compare storage requirements between optimal and sub-optimal c
 metadata:
   title: Exercise - Compare storage requirements between optimal and sub-optimal column data types
   description: "Exercise - Compare storage requirements between optimal and sub-optimal column data types"
-  ms.date: 03/23/2023
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/7-exercise-compare-storage-requirements.md)]
