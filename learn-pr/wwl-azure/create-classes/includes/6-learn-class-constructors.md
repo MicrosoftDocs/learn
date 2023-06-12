@@ -27,8 +27,12 @@ The following example shows how to define three constructors in the House class:
 ```csharp
 public class House
 {   private string houseStyle;   private int sqrFootage;
-   public House()   {       houseStyle = "[Unknown]";       sqrFootage = 0;   }
-   public House(string style)   {       houseStyle = style;       sqrFootage = 0;   }
-   public House(string style, int footage)   {       houseStyle = style;       sqrFootage = footage;   }
+   public House()   {
+       houseStyle = "[Unknown]";
+       sqrFootage = 0;   }
+   public House(string style)   {
+       houseStyle = style;
+       sqrFootage = 0;   }
+   public House(string style, int footage)   {       houseStyle = style;              sqrFootage = footage;   }
 }
 ```
