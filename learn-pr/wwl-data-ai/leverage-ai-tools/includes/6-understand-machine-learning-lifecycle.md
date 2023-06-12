@@ -23,7 +23,7 @@ This approach is the classical one and covers all the usual steps of a data scie
 5. **Deploy:** Finally, they deploy the model in the cloud (often through an API), on an on-premises server, or at the edge on devices like cameras, IoT gateways, or machinery.
 6. **Monitor and retrain:** Even if a model works well at first, it needs to be continually monitored and retrained to stay relevant and accurate.
 
-:::image type="complex" source="../media/6-understand-machine-learning-lifecycle-1.png" alt-text="Illustration of the ML lifecycle.":::
+:::image type="content" source="../media/6-understand-machine-learning-lifecycle-1.png" alt-text="Illustration of the ML lifecycle.":::
 
 There are six blue circles in line, each containing an icon. Grey arrows go from one blue circle to the next, indicating they flow into one another. A label sits above each circle. The first step is labeled “Prepare data.” The icon shows 1’s and 0’s in a square formation, that is, data. The second circle reads, “Train model.” The icon shows the data turning into a complex geometrical form, that is, a model. The third circle’s label says, “Package model.” The icon shows the model being put into a box, that is, the package. The fourth circle is labeled “Validate model.” The icon shows the model with a check mark next to it. The fifth circle is labeled “Deploy model.” The icon shows the model being moved towards three blocks. Two are white boxes and one just has a white outline and blue center. The sixth circle is labeled “Monitor model.” The icon shows a line graph beside the model. There's an arrow below the circles that goes back from "Monitor model" to "Prepare data". It reads, "Retrain model". 
 
