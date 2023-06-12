@@ -8,7 +8,7 @@ metadata:
   author: msimecek
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-summary.md)]
