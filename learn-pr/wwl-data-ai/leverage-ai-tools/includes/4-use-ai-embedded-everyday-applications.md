@@ -7,14 +7,15 @@ In this unit, we'll discuss how these intelligent business applications weave re
 
 Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors.
 
-These solutions are often delivered as SaaS AI solutions, which deliver results quickly and in a cost-effective way. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competences. 
+These solutions are often delivered as SaaS AI solutions, which deliver fast and cost-effective results. With powerful intelligence in their existing workflows, business users can be more proactive and effective in their core competencies. 
 
-**Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. Here are some examples of powerful scenarios where AI is already having a proven impact:
+**Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
 
 :::image type="content" source="../media/4-use-ai-embedded-everyday-applications-1.png" alt-text="Infuse AI into your core processes":::
 
 Diagram called “Infuse AI into your core processes.” There are eight boxes, with text in each. They read: Sales, Supply chain, Human Resources, Finance, Marketing, Commerce, Customer service, and Project management.
 
+Here are some examples of powerful scenarios where AI is already having a proven impact:
 
 * **Sales:** Sellers can sell smarter with embedded AI-powered insights fueled by customer data.
 * **Supply chain:** Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory. 
@@ -33,7 +34,7 @@ There are also numerous AI capabilities that are already included in the applica
 
 For years, Microsoft has been putting AI to work in the **[Microsoft 365](https://aka.ms/everydayai)** apps that people use every day—like Microsoft Teams, Outlook, and Office. With these intelligent productivity experiences, employees can collaborate and conduct meetings more effectively, focus their time on value-added work, and uncover timely insights to improve their work.
 
-Furthermore, **Microsoft 365 Copilot** adds another layer of AI. Business users can ask this virtual assistant to perform certain tasks just using natural language. The assistant uses the latest generative AI technology, OpenAI's GPT models, to understand the request and do what is asked.
+**Microsoft 365 Copilot** adds another layer of AI. Business users can ask this virtual assistant to perform certain tasks just by using natural language. The assistant uses the latest generative AI technology, OpenAI's GPT models, to understand the request and do what is asked.
 
 These solutions can improve your routine by boosting your remote work, your focus, your productivity, and your search power.
 
@@ -43,7 +44,7 @@ Virtual meetings are becoming increasingly critical in most of our lives. While 
 
 For example, intelligent experiences in Microsoft Teams like background blur and custom backgrounds can help meeting participants minimize the chances of disturbances appearing on their screen. Live captions help improve accessibility for meeting participants who are hard of hearing or have hearing loss, non-native English speakers, or people with a sleeping baby nearby. Business users can even leverage real-time noise suppression to reduce distractions such as loud typing or a barking dog.
 
-Besides, some nuances are missing, and misunderstandings can occur when you're not speaking in person. Copilot can help business users find the right tone for their emails in Outlook.
+When you're not speaking in person, some nuances are missing and misunderstandings can occur. Copilot can help business users find the right tone for their emails in Outlook to help address such issues.
 
 ### Everyday AI for focus
 
@@ -51,11 +52,11 @@ Whether working remotely or in a physical workplace, AI can also help employees 
 
 For instance, the Briefing email from Cortana compiles valuable information about upcoming meetings and outstanding tasks in Outlook. It also enables employees to set aside daily “focus time” to work uninterrupted with notifications silenced. In Outlook mobile, employees can use natural language to ask Cortana to read out their new emails and share any changes to their schedule—so they can catch up even when their hands are busy with other things.
 
-Copilot adds more features for focus to make sure users don't forget checking any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
+Copilot adds more features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
 
 ### Everyday AI for productivity
 
-Breakthroughs in AI technologies have also enabled the transformation of personal productivity in apps people use every day like PowerPoint, Word, and Excel.
+Breakthroughs in AI technologies have also enabled the transformation of personal productivity in apps people use every day, apps like PowerPoint, Word, and Excel.
 
 To help prepare more engaging presentations, users can take advantage of intelligent suggestions for slide designs. Copilot also incorporates generative AI to create custom images for their slides. Users can rehearse the presentation and receive real-time feedback to improve pacing and limit filler words or culturally insensitive phrases.
 

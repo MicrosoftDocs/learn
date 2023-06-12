@@ -1,5 +1,5 @@
 
-In this unit, we discuss the importance of MLOps. MLOps (machine learning operations) applies the methodology of DevOps (development and operations) to manage the machine learning lifecycle more efficiently. MLOps focuses on enabling a more agile, productive collaboration in AI teams among all stakeholders. These collaborations involve data scientists, AI engineers, app developers, and other IT teams.
+In this unit, we discuss the importance of machine learning operations (MLOps). MLOps applies the methodology of DevOps (development and operations) to manage the machine learning lifecycle more efficiently. It enables a more agile, productive collaboration in AI teams among all stakeholders. These collaborations involve data scientists, AI engineers, app developers, and other IT teams.
 
 There are many available products to help teams implement MLOps. Microsoft offers Azure Machine Learning, Azure DevOps, and GitHub.
 
@@ -51,7 +51,7 @@ If the model is a newer version of an existing model, you need to see if it perf
 
 There are several options for deploying the model into production. Data scientists and AI engineers must work together to find out the best option for each case.
 * **Cloud:** One option is deploying models using the cloud, often leveraging an application programming interface (API). There are scalable tools to automate and simplify this process, like Kubernetes or Azure Container Instances.
-* **On-prem:** Models can also be deployed directly onsite, in the organization's own servers.
+* **On-premises:** Models can also be deployed directly onsite, in the organization's own servers.
 * **Edge:** It's also possible to deploy models on edge devices, like cameras, drones, and machinery. This option may be helpful in IoT scenarios.
 
 No matter where you deploy the model, the workflow is similar. First, you register the model in the model registry. Then, you prepare to deploy the model by specifying assets, usage, and the compute target. Finally, you deploy it to your desired location, test it, and continue to monitor model-specific metrics throughout the lifecycle.

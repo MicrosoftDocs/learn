@@ -1,5 +1,5 @@
 
-AI embedded in everyday applications may not be enough to power the business applications an organization needs. In these cases, Power Platform is the next step towards more customizable AI solutions. It provides a simple, low-code way to introduce AI in your business applications without having to bother about creating or managing the AI yourself.
+AI embedded in everyday applications may not be enough to power the business applications an organization needs. In these cases, Power Platform is the next step towards more customizable AI solutions. It provides a simple, low-code way to introduce AI in your business applications without having to create or manage the AI yourself.
 
 ## What is Microsoft Power Platform?
 
@@ -62,4 +62,4 @@ Let's imagine a retail organization needs an app to manage their inventory. Trad
 
 Citizen developers can use Power Apps to this prototype of the inventory app. They can even explain in natural language their needs and Copilot can translate them to an actual app. Once this prototype is built, professional developers can fill in any potential gaps for further functionalities. Then, professional developers can develop an API to check the inventory in real time and update the data on the app. This data would be stored and managed in Microsoft Dataverse. With the information provided by the API, workflows can be created to automatically detect what's missing and replenish inventory with Power Automate. All these data and operations would be reflected in a Power BI report, so it's easier to understand what's happening with the inventory and take the best data-informed decisions.
 
-Each of the products and services we've discussed deliver prebuilt AI models, so the user doesn't require any data science expertise. If your business requires more ambitious solutions, the next available AI tools require some degree of AI knowledge. To fully benefit from them, let's first learn more about how data science teams work and what's the typical machine learning lifecycle.
+Each of the products and services we've covered are prebuilt AI models, so the user doesn't require any data science expertise. If your business requires more ambitious solutions, the next available AI tools require some degree of AI knowledge. To fully benefit from them, let's first learn more about how data science teams work and what's the typical machine learning lifecycle.

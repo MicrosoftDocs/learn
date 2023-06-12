@@ -1,14 +1,14 @@
 
-AI is disrupting businesses across industries - and it will enable fast-moving organizations to achieve superior business results across the board. AI can be a complex discipline, but the advancements in AI technologies make the adoption tangible for every business. Understanding which resources are available and when to use prebuilt AI or build custom machine learning models is vital.
+AI is disrupting businesses across industries—and it will enable fast-moving organizations to achieve superior business results across the board. AI can be a complex discipline, but the advancements in AI technologies make the adoption tangible for every business. Understanding which resources are available and when to use prebuilt AI or build custom machine learning models is vital.
 
-This information will prepare you to use AI in your organization, communicate with your DS team, and fully join the AI journey. Even those employees without coding expertise should benefit from the advantages thanks to AI embedded in everyday applications. While using and developing AI, remember to follow responsible AI practices.
+This information will prepare you to use AI in your organization, communicate with your data science team, and fully join the AI journey. Even employees without coding expertise can benefit thanks to AI embedded in everyday applications. While using and developing AI, remember to follow responsible AI practices.
 
-Now that you have reviewed this module, you should be able to:
+Now that you have reviewed this module, you should:
 
-* Get familiar with available AI tools and approaches.
+* Be familiar with available AI tools and approaches.
 * Understand basic AI terminology and practices.
-* How to use prebuilt AI to build intelligent applications.
-* Identify AI use cases.
+* Understand How to use prebuilt AI to build intelligent applications.
+* Be able to tdentify AI use cases.
 
 ## Use these resources to discover more
 

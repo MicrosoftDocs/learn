@@ -21,8 +21,8 @@ There are three concentric circles in the center of the diagram, with text in ea
 
 ## What is machine learning?
 Machine learning is a **technique** where a machine sifts through numerous amounts of data to find patterns over time. This technique is frequently used for AI purposes. Machine learning uses algorithms that train a machine to learn patterns based on differentiating features about the data. The more training data, the more accurate the predictions. Here are some examples:
-* Email spam detection. Machine learning could look at patterns where email has words like "free" or "guarantee". Email address domain is on a blocked list. A link displayed in text doesn't match the URL behind it.
-* Credit card fraud detection. Machine learning could look at patterns like the spending in a zip code the owner doesn't usually visit; buying a very expensive item; or a sudden shopping spree.
+* **Email spam detection** - Machine learning could look for patterns where email has words like "free" or "guarantee", the email address domain is on a blocked list, or a link displayed in text doesn't match the URL behind it.
+* **Credit card fraud detection** - Machine learning could look for patterns like the spending in a zip code the owner doesn't usually visit, buying a very expensive item, or a sudden shopping spree.
 
 ## What is deep learning?
 Deep learning is a **subset of machine learning**. Deep learning is imitating how a human brain processes information, as a connected artificial neural network. Unlike machine learning, deep learning can discover complex patterns and differentiating features about the data on its own. It normally works with unstructured data like images, text, and audio. That’s why it requires enormous amounts of data for better analysis and massive computing power for speed.
@@ -33,7 +33,7 @@ For instance, deep learning can be used to detect cancerous cells in medical ima
 Data science is an **interdisciplinary field** whose aim is to achieve AI. It uses many different techniques, mostly machine learning and statistics. In most cases, data scientists are the experts in charge of solving AI problems.
 
 ## What is responsible AI?
-Responsible AI. AI has a great disruptive potential. That is why it should follow the highest ethical standards. Responsible AI refers to the **principles and best practices** that ensure AI work is accountable, inclusive, reliable, safe, fair, transparent, secure, and respects privacy.
+AI has a great disruptive potential. That is why it should follow the highest ethical standards. Responsible AI refers to the **principles and best practices** that ensure AI work is accountable, inclusive, reliable, safe, fair, transparent, secure, and respects privacy.
 
 For instance, AI could create a video that shows a real person at an event they didn't attend in real life. Responsible AI involves not using this technology for deceitful purposes, since it would compromise their privacy and have unfair consequences.
 

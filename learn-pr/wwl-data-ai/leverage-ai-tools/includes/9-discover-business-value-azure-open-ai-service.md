@@ -1,6 +1,6 @@
 
 
-Azure OpenAI Service is the latest addition to Cognitive Services. It's evidence of Microsoft commitment to offer state-of-the-art AI models in a way that's accessible to business users.
+Azure OpenAI Service is the latest addition to Azure Cognitive Services. It's evidence of Microsoft commitment to offer state-of-the-art AI models in a way that's accessible to business users.
 
 ## What is Azure OpenAI Service?
 
@@ -24,23 +24,23 @@ OpenAI models evolve continuously, and so does Azure OpenAI Service. You can che
 
 ## Benefits of using Azure OpenAI Service instead of connecting directly to the OpenAI API
 
-Many decision makers aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the second option:
+Many business leaders aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the Azure IoenAI Service:
 
 * **Same models:** Given a specific model and version, Azure delivers exactly the same as the API. Azure users aren't missing any updates. The AI is just as good.
 
 * **Privacy:** OpenAI's API is public. This fact implies that all data sent to the API may be used to improve the models. If your use case involves private, confidential information, using the API may not be the best option. In contrast, when using Azure OpenAI Service, Microsoft hosts the models within their Azure infrastructure. No customer data is sent to OpenAI for improving the models, since it all remains in Azure.
 
-* **Security:** Microsoft Azure is a dependable, robust, and trustworthy platform. Azure developers have extensive experience securing the infrastructure for public and private organizations from all the world to work safely in Azure. Azure OpenAI Service is built upon this expertise. It delivers encryption, private networking, and a system of regional availability to ensure your business blooms safe and uninterrupted.
+* **Security:** Microsoft Azure is a dependable, robust, and trustworthy platform. Azure developers have extensive experience securing the infrastructure for public and private organizations from all around the world to work safely in Azure. Azure OpenAI Service is built upon this expertise. It delivers encryption, private networking, and a system of regional availability to ensure your business blooms safe and uninterrupted.
 
-* **Responsible AI:** Microsoft ethical commitment guides how OpenAI models are offered in Azure. Microsoft is doing extensive research and work to identify, measure, mitigate, and operate to deal with all potential harms coming from this generative AI. For example, developers prevent misuse with a system of additional instructions that overrule specific prompts. Besides, there's a content filter system that ensures the models don't deliver any potentially harmful content.
+* **Responsible AI:** The Microsoft ethical commitment guides how OpenAI models are offered in Azure. Microsoft is doing extensive research and work to identify, measure, mitigate, and operate to deal with all potential harms coming from this generative AI. For example, developers prevent misuse with a system of additional instructions that overrule specific prompts. There's also a content filter system that ensures the models don't deliver any potentially harmful content.
 
-In conclusion, Azure OpenAI Service combines what's best of OpenAI and of Microsoft Azure. On the one hand, it delivers the innovative OpenAI models. On the other hand, it has all the benefits of being hosted in the reliable, business-friendly environment that is Azure.
+In conclusion, Azure OpenAI Service combines the best of OpenAI and of Microsoft Azure. On one hand, it delivers the innovative OpenAI models. On the other hand, it has all the benefits of being hosted in the reliable, business-friendly environment that is Azure.
 
 ## Use Azure OpenAI Service in a real use case
 
 Let's imagine how an organization could develop a virtual assistant with Azure OpenAI Service. In the last unit's use case, we mentioned this possibility to deliver post-sales services.
 
-Customers could interact with the assistant to ask information about their orders, purchases, or warranties. They could talk to this assistant by chat or call. Previous generations of virtual assistants required designing the conversation flows, and this approach made conversations rigid to some extent. An assistant powered by a GPT model wouldn't suffer from this obstacle. It would require no workflow design and it could engage in more flexible, natural conversations. This perk implies that the assistant would be able to solve questions and tasks without specific training, as long as it's provided the information. This approach saves time and resources from the development team.
+Customers could interact with the assistant to ask for information about their orders, purchases, or warranties. They could talk to this assistant by chat or call. Previous generations of virtual assistants required designing the conversation flows, and this approach made conversations rigid to some extent. An assistant powered by a GPT model wouldn't suffer from this obstacle. It would require no workflow design and it could engage in more flexible, natural conversations. This perk implies that the assistant would be able to solve questions and tasks without specific training, as long as it's provided the information. This approach saves time and resources from the development team.
 
 The AI team should feed the virtual assistant personal data and internal documentation to answer doubts about the refund policy, shipment status, and so on. Azure OpenAI Service allows you to do this operation safely, without risk of misusing data. Ensuring client data privacy is key, especially when the business deals with sensible information such as credit card numbers.
 
