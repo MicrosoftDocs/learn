@@ -1,14 +1,14 @@
-You can enable or disable CORS using the Azure REST API, and Azure Storage Services provides a secure way for clients to manage their services and access your Azure Storage Services resources.
+You can enable or disable CORS rules using the Azure REST API.
 
-In the utilities company scenario, some of your company's document resources are located in Blob storage. You've been asked to set up CORS rules to restrict access to these resources to requests from specific domains. You'll use the REST API to do this.
+In the utilities company scenario, some of your company's document resources are located in Blob Storage. You've been asked to set up CORS rules to restrict access to these resources to requests from specific domains. You'll use the REST API to do this.
 
-You configure CORS rules individually for each of the Azure storage services by using the following REST APIs: `Set Blob Service Properties`, `Set File Service Properties`, `Set Queue Service Properties`, and `Set Table Service Properties`. Once you've configured the rules for a storage service, when that service receives a properly authenticated CORS request, the service will evaluate the request to determine whether it is allowed according to the CORS rules you have set.
+You configure CORS rules individually for each of the Azure Storage services by using the following REST APIs: `Set Blob Service Properties`, `Set File Service Properties`, `Set Queue Service Properties`, and `Set Table Service Properties`. After you've configured the rules for an Azure Storage service, then when that service receives a properly authenticated CORS request, the service will evaluate the request to determine whether it is allowed according to the CORS rules you have set.
 
 In this unit, you will learn about the REST commands and the parameters that are required to configure CORS.
 
 ## The Set Blob Service Properties request
 
-You configure CORS for Azure storage by sending an HTTP PUT request that contains the requisite parameters for the Azure Storage REST API. For example, the following URL shows the format for this type of request:
+You configure CORS for Azure Storage by sending an HTTP PUT request that contains the requisite parameters for the Azure Storage REST API. For example, the following URL shows the format for this type of request:
 
 ```
 https://<account-name>.blob.core.windows.net/?restype=service&comp=properties
@@ -20,14 +20,14 @@ The REST API PUT request requires you to provide security information in the HTT
 
 | HTTP Header | Description |
 |---|---|
-| `Authorization` | Specifies the authentication scheme, storage account name, and signature. |
+| `Authorization` | Specifies the authorization scheme, the storage account name, and the encrypted signature or token. |
 | `Date` or `x-ms-date` | Specifies the Coordinated Universal Time (UTC) for the request. |
-| `x-ms-version` | Specifies the version of the operation to use for this request; this header is required for all authenticated requests. |
-| `x-ms-client-request-id` | This header is optional. It provides a client-generated, opaque value with a 1 KB character limit that is recorded in the analytics logs when storage analytics logging is enabled. Using this header is highly recommended for correlating client-side activities with requests received by the server.
+| `x-ms-version` | Specifies the version of the operation to use for this request; this header is required for all authorized requests. |
+| `x-ms-client-request-id` | This header is optional. It provides a client-generated, opaque value with a 1 KB character limit that is recorded in the logs when logging is enabled. Using this header is highly recommended for correlating client-side activities with requests received by the server.
 
 ## The request body
 
-The request body contains an XML document containing the data for the request. The body includes a `<Cors>` element that describes the CORS rule being added. The following code shows the structure of this element:  
+The request body contains the data for the request in an XML format. The body includes a `<Cors>` element that describes the CORS rule being added. The following example shows the body of a request to set or update CORS rules:  
 
 ```XML
 <?xml version="1.0" encoding="utf-8"?>  
@@ -49,7 +49,7 @@ The XML document in the request body contains the following elements:
 | Element | Description |
 |---|---|
 | `Cors` | Contains all of your CORS rules. |
-| `CorsRule` | Specifies a single CORS rule for a storage service.<ul><li>You can include up to five `CorsRule` elements in the request.</li><li>If no `CorsRule` elements are included in the request body, all CORS rules will be deleted, and CORS will be disabled for the blob service.</li></ul> |
+| `CorsRule` | Specifies a single CORS rule for a service.<ul><li>You can include up to five `CorsRule` elements in the request.</li><li>If no `CorsRule` elements are included in the request body, all CORS rules will be deleted, and CORS will be disabled for the blob service.</li></ul> |
 | `AllowedOrigins` | Specifies a comma-separated list of origin domains that will be allowed via CORS, or "*" to allow all domains.<ul><li>This list is limited to 64 origin domains.</li><li>Each origin is limited to 256 characters.</li></ul> |
 | `ExposedHeaders` | Specifies a comma-separated list of HTTP response headers to expose to CORS clients.<ul><li>This list is limited to 64 defined headers and two prefixed headers.</li><li>Each header is limited to 256 characters.</li></ul> |
 | `MaxAgeInSeconds` | Specifies the number of seconds that a client or browser should cache a CORS preflight response. |
