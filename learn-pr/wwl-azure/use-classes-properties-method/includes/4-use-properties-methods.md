@@ -32,10 +32,3 @@ int dsct = myCustomer.calcDiscount();
 >[Note] Both methods and properties can be designed to accept reference types.
 
 &nbsp;
-## quizT title: Check your knowledge
-
-## Multiple choice
-When are the get and set methods for a property called?
-( ) At the beginning of a foot race...ready...get set...go! {{Incorrect. This is a nonsense answer.}}
-( ) When you don't have time to create a method. {{Incorrect. This is not a real reason you would choose to create a property.}}
-(x) When you want to get or set the state of your object. {{Correct! They're used to get basic state or status information in and/or out of an object.}}

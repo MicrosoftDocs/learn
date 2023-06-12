@@ -11,3 +11,17 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-properties-methods.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "When are the get and set methods for a property called?"
+    choices:
+    - content: "At the beginning of a foot race...ready...get set...go!"
+      isCorrect: false
+      explanation: "Incorrect. This is a nonsense answer."
+    - content: "When you don't have time to create a method."
+      isCorrect: false
+      explanation: "Incorrect. This is not a real reason you would choose to create a property."
+    - content: "When you want to get or set the state of your object."
+      isCorrect: true
+      explanation: "Correct! They're used to get basic state or status information in and/or out of an object."
