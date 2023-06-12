@@ -19,7 +19,7 @@ While this may be disappointing, this decision has been made to ensure the consi
 
 Stay tuned for any updates regarding contributions in the future. We appreciate your understanding.
 
-External users can provide feedback by clicking on the **Report an issue** email alias located at the bottom of any learning unit. Although this is one-way feedback, the content, engineering, and localization teams review and triage all incoming feedback on a daily basis.
+External users can provide feedback by clicking on the **reporting an issue** link located at the bottom of any learning unit. Although this is one-way feedback, our teams review and triage all incoming feedback regularly.
 
 ### Code of Conduct
 
