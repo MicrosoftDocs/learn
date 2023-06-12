@@ -12,9 +12,9 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
 1. On **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
-    ![Screenshot showing the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.](../media/cosmos-db-select-api-option.png)
+    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot showing the PostgreSQL tile highlighted on the Azure Cosmos DB Select API option dialog.":::
 
-1. On the **Basics** tab, enter the following information:
+1. On the **Basics** tab, enter or select the following information:
 
     | Parameter       | Value |
     | --------------- | ----- |
@@ -27,10 +27,10 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
     | Scale           | See configuration settings in the next step. |
     | PostgreSQL version | Leave the default version (14) selected. |
     | **Administrator account** | |
-    | Admin username  | This is set to `citus` and can't be edited. |
+    | Admin username  | This value is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)
+    :::image type="content" source="../media/cosmos-db-for-postgresql-basics-tab.png" alt-text="![Screenshot of the Basics tab of the Create an Azure Cosmos DB - PostgreSQL cluster dialog. The fields are populated with the values specified in the exercise.](../media/cosmos-db-for-postgresql-basics-tab.png)":::
 
     Make a note of the password you create. You need the password later to connect to the database.
 
@@ -45,11 +45,11 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
     The high availability and automatic failover capabilities are out of scope for this exercise, so leave the **High availability** option cleared.
 
-    ![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)
+    :::image type="content" source="../media/cosmos-db-for-postgresql-cluster-config.png" alt-text="![Screenshot of the Create an Azure Cosmos DB - PostgreSQL cluster configuration dialog. The node configuration specified in the exercise is selected.](../media/cosmos-db-for-postgresql-cluster-config.png)":::
 
 1. Select the **Review + create** button, and on the review pane, select **Create** to provision your cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
 
-    ![Screenshot showing the Configure IP address in firewall rules dialog, with a warning message.](../media/configure-ip-rules-warning.png)
+    :::image type="content" source="../media/configure-ip-rules-warning.png" alt-text="![Screenshot showing the Configure IP address in firewall rules dialog, with a warning message.](../media/configure-ip-rules-warning.png)":::
 
     It can take up to 15 minutes for your cluster to provision.
 
@@ -57,31 +57,31 @@ To ensure that you can modify the Tailspin Toys database and to measure the impa
 
 1. On the left menu under **Settings**, select **Networking**. On the *Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox, and then select **Save** on the toolbar.
 
-    ![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)
+    :::image type="content" source="../media/cosmos-db-for-postgresql-networking.png" alt-text="![Screenshot of the Azure Cosmos DB for PostgreSQL cluster resource in the Azure portal. The Networking menu is selected and highlighted.](../media/cosmos-db-for-postgresql-networking.png)":::
 
 ## Connect to the database by using psql in Azure Cloud Shell
 
-You'll use psql from the command line to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
+You use psql from the command line to make your database changes. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
 1. On your Azure Cosmos DB for PostgreSQL Cluster page in the Azure portal, in the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
 
-    ![Screenshot of the Connection strings pane of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)
+    :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="![Screenshot of the Connection strings pane of the Azure Cosmos DB Cluster resource.](../media/cosmos-db-for-postgresql-connection-strings-psql.png)":::
 
 1. Paste the connection string into a text editor, such as Notepad. Replace the `{your_password}` token with the password that you created for the `citus` user when you created your cluster. Copy the updated connection string to use later.
 
 1. On the **Connection strings** pane in the Azure portal, open an Azure Cloud Shell dialog by selecting the Cloud Shell icon on the global controls in the Azure portal.
 
-    ![Screenshot showing the Cloud Shell icon on the Azure portal toolbar, and a Cloud Shell dialog open at the bottom of the browser window.](../media/azure-cloud-shell.png)
+    :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot showing the Cloud Shell icon on the Azure portal toolbar, and a Cloud Shell dialog open at the bottom of the browser window.":::
 
     Cloud Shell opens as an embedded pane at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a different web browser.
 
 1. If necessary, select **Bash** as the environment in the Cloud Shell window.
 
-    ![Screenshot of the welcome dialog of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="![Screenshot of the welcome dialog of Azure Cloud Shell with a prompt to choose an environment between Bash or PowerShell. Bash is highlighted.](../media/azure-cloud-shell-welcome.png)":::
 
-1. If this is the first time you open Cloud Shell, you might be prompted to mount a storage account. Select the subscription that you used for your database account, and then select **Create storage**.
+1. If you're opening Cloud Shell for the first time, you might be prompted to mount a storage account. Select the subscription that you used for your database account, and then select **Create storage**.
 
-    ![Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot of the Azure Cloud Shell wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.":::
 
 1. Now, use the psql command-line utility to connect to your database. Paste your updated connection string (updated with your correct password) at the command prompt in Cloud Shell, and then run the command. The command should look similar to the following example:
 
@@ -91,7 +91,7 @@ You'll use psql from the command line to make your database changes. psql is a c
 
 ## Create tables in the database
 
-Now that you're connected to your database, you can begin populating the database. You'll use psql to create the table schema that was provided by Tailspin Toys in your development database.
+Now that you're connected to your database, you can begin populating the database. You use psql to create the table schema that was provided by Tailspin Toys in your development database.
 
 1. In Cloud Shell, run the following query to create the `stores`, `products`, `orders`, and `line_items` tables:
 
@@ -158,7 +158,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
 
    The ZIP file contains multiple CSV files that contain stores, orders, products, and line item information. You can view the extracted files by running `\! ls` at the command prompt if you want to see the files.
 
-1. The following `COPY` command loads data from the downloaded *stores.csv* file into the `stores` table that you created earlier. Then itupdates the sequence for the `store_id` column.
+1. The following `COPY` command loads data from the downloaded *stores.csv* file into the `stores` table that you created earlier. Then it updates the sequence for the `store_id` column.
 
     ```sql
     BEGIN;
@@ -205,7 +205,7 @@ You can use the PostgreSQL `COPY` command to accomplish this task. It allows you
 
 ## Verify that the pg_cron extension is installed
 
-In the following tasks, you'll use the pg_cron extension for PostgreSQL to run scheduled jobs in the database. Before you install any new supported extensions in your database, viewing the complete list of installed extensions is an excellent idea to avoid potential conflicts. Many popular PostgreSQL extensions are preinstalled on every Azure Cosmos DB for PostgreSQL instance.
+In the following tasks, you use the pg_cron extension for PostgreSQL to run scheduled jobs in the database. Before you install any new supported extensions in your database, viewing the complete list of installed extensions is an excellent idea to avoid potential conflicts. Many popular PostgreSQL extensions are preinstalled on every Azure Cosmos DB for PostgreSQL instance.
 
 1. You can view the list of preinstalled extensions in your Azure Cosmos DB for PostgreSQL database by running the following code:
 
@@ -349,7 +349,7 @@ To properly distribute and colocate the `line_items` table data with `stores`, `
 
 ## Update application queries
 
-With the distribution column added to each distributed table and the backfilling processes started, one of the next steps of the preparation phase is to update queries that are issued by the SaaS application to ensure that the distribution column is included in all queries that come from the application. Earlier, you created a function to continually add new orders to the database to simulate the application sending in transactions. However, the function isn't inserting the `store_id` value into the `line_items` that are being added.
+With the distribution column added to each distributed table and the backfilling processes started, one of the next steps of the preparation phase is to update queries that are issued by the SaaS application to ensure that the distribution column is included in all queries that come from the application. Earlier, you created a function to continually add new orders to the database to simulate the application sending in transactions. However, the function isn't inserting the `store_id` value into the `line_items` table that are being added.
 
 The denormalized `line_items` table now includes the `store_id` column, so you need to update the function to ensure that the application is populating that column.
 
@@ -450,7 +450,7 @@ Azure Cosmos DB for PostgreSQL can't enforce uniqueness constraints on tables un
     CREATE UNIQUE INDEX CONCURRENTLY line_items_tmp_idx ON line_items (store_id, line_item_id);
     ```
 
-1. With the new unique indexes created, you can now swap out the primary key on each table. Executing these operations in an order that considers the foreign key relationships between tables is best. Run the following command to drop and re-create the constraints on the `orders` table. Note that the foreign key doesn't need to be updated because it already correctly references the `store_id` column in the `stores` table.
+1. With the new unique indexes created, you can now swap out the primary key on each table. Executing these operations in an order that considers the foreign key relationships between tables is best. Run the following command to drop and re-create the constraints on the `orders` table. The foreign key doesn't need to be updated because it already correctly references the `store_id` column in the `stores` table.
 
     ```sql
     BEGIN;

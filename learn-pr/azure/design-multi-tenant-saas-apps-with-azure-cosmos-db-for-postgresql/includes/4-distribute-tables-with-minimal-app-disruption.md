@@ -4,7 +4,7 @@ With the tables in the Tailspin Toys Azure Cosmos DB for PostgreSQL database now
 
 You can use Azure Cosmos DB for PostgreSQL to quickly scale your database to handle increased load. For multitenant SaaS applications, guidance for selecting the initial cluster size is based on the number of worker vCores and RAM of your original instance.
 
-![Screenshot of the scale nodes pane for Azure Cosmos DB for PostgreSQL in the Azure portal.](../media/cosmos-db-postgresql-scale-nodes.png)
+:::image type="content" source="../media/cosmos-db-postgresql-scale-nodes.png" alt-text="Screenshot of the scale nodes pane for Azure Cosmos DB for PostgreSQL in the Azure portal.":::
 
 On the **Scale** pane, you can configure the number of worker nodes and the compute and storage size for each node. When you migrate from a single-node database, you can typically start with two nodes and expand to more worker nodes over time as application performance and growth requires.
 
@@ -16,7 +16,7 @@ Distributing tables is the process of partitioning or sharding table data and mo
 
 Colocation of related table data should also be configured to allow tenant-specific queries to execute as efficiently as possible. When table data is distributed across nodes in the cluster, you ideally want rows across all tables that relate to the same tenant to reside together on the same nodes in what is called *table colocation*.
 
-![Diagram of table colocation represented by data from different tables being in separate clouds based on the store_id.](../media/multi-tenant-colocation.png)
+:::image type="content" source="../media/multi-tenant-colocation.png" border="false" alt-text="Diagram that shows table colocation represented by data from different tables in separate clouds based on store_id.":::
 
 Colocating Tailspin Toys tables by store has the following advantages:
 
