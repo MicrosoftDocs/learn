@@ -4,12 +4,12 @@ At the core of developing object-oriented programs is working with classes. Work
 
 Suppose you want to create a fun application that implements Langton's ant, an application that demonstrates Alan Turing’s (b. 1912 – d. 1954) invention of what is considered a model of a general-purpose computer. It was invented by Chris Langton in 1986 and runs on a grid of black and white cells and demonstrates complex behavior based on a simple set of movement rules.
 
->[!NOTE]A Turing machine is a hypothetical machine thought of by the mathematician Alan Turing in 1936. Despite its simplicity, the machine can simulate ANY computer algorithm, no matter how complicated it is!
+> [!NOTE]A Turing machine is a hypothetical machine thought of by the mathematician Alan Turing in 1936. Despite its simplicity, the machine can simulate ANY computer algorithm, no matter how complicated it is!
 
 This module guides you through the steps required to begin building the LangtonsAnts demonstration. You'll set up your application and then begin adding the classes, methods, and properties the application requires.
 By the end of this module, you'll be able to write code that uses classes, properties, constructors, and reads user input.
 
->[!NOTE]This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
+> [!NOTE]This is a guided project module where you complete an end-to-end project by following step-by-step instructions.
 
 ## Learning objectives in this module
 
