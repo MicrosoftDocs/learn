@@ -1,6 +1,6 @@
-Enabling CORS for your Storage Services provides a secure way of external HTTP calls accessing your Azure Storage Services resources. You can enable CORS using the Azure REST API. 
+You can enable or disable CORS rules using the Azure REST API.
 
-Some of your company's document resources are located in Blob storage. You have been asked to set up CORS rules to restrict access to these resources to requests from specific domains, and you would like to use a REST API to accomplish this.
+Some of your company's document resources are located in Blob Storage. You have been asked to set up CORS rules to restrict access to these resources to requests from specific domains, and you would like to use a REST API to accomplish this.
 
 In this exercise, you will learn how to enable CORS by adding a rule using the Azure Storage REST API.
 
@@ -28,9 +28,7 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
 
 ## Create an Azure Storage account
 
-
-
-1. Replace the three placeholder variables in the following commands and run the commands in the Cloud Shell. These commands set the environment variables that you will use in the following steps. These variables specify the name of Azure storage account, a storage container name, the name of the closest geographical region, and the name resource group that was created when you activated your sandbox account.
+1. Replace the three placeholder variables in the following commands and run the commands in the Cloud Shell. These commands set the environment variables that you will use in the following steps. These variables specify the name of Azure Storage account, a storage container name, the name of the closest geographical region, and the name resource group that was created when you activated your sandbox account.
 
     ```bash
    export AZURE_STORAGE_ACCOUNT=<unique account name>
@@ -40,19 +38,19 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
 
     ```
 
-    For AZURE_REGION, replace "your region" with one of the following values:
+   For AZURE_REGION, use one of the following values:
 
-    [!include[](../../../includes/azure-sandbox-regions-note.md)]
+   [!include[](../../../includes/azure-sandbox-regions-note.md)]
 
-1. Run the following command to create a new blob storage account.
+1. Run the following command to create a new storage account.
 
    ```azurecli
    az storage account create \
       --location $AZURE_REGION \
       --name $AZURE_STORAGE_ACCOUNT \
       --resource-group $RESOURCE_GROUP \
-      --kind BlobStorage \
-      --access-tier cool
+      --kind StorageV2 \
+      --allow-blob-public-access false
    ```
 
 1. Run the following command to retrieve an account key for your storage account.
@@ -67,11 +65,10 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
    az storage container create \
       --name $CONTAINER_NAME \
       --account-name $AZURE_STORAGE_ACCOUNT \
-      --account-key $AZURE_STORAGE_KEY \
-      --public-access blob
+      --account-key $AZURE_STORAGE_KEY
    ```
 
-## Attempt to access blob storage without CORS
+## Attempt to access Blob Storage without CORS
 
 1. Use wget to send a preflight request in order to upload a blob to your storage account using an OPTIONS request.
 
@@ -95,31 +92,22 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
    2019-04-25 23:17:00 ERROR 403: CORS not enabled or no matching rule found for this request..
    ```
 
-## Generate a Shared Access Signature (SAS) using the Azure portal
+## Generate a shared access signature (SAS)
 
-1. Sign in to the [Azure portal](https://portal.azure.com) using the account that you used when you activate the sandbox, and then click **Storage Accounts**.
+1. Run the following command in the Cloud Shell to generate an account SAS:
 
-1. Click the name of the storage account that you created earlier.
-
-1. Click **Shared access signature**.
-
-1. Click **Generate SAS and connection string**.
-
-1. Copy the value in the **SAS token** field.
-
-   ![Generate shared access key.](../media/4-generate-shared-access-signature.png)
+    ```bash
+    end=`date -u -d "60 minutes" '+%Y-%m-%dT%H:%MZ'`
+    export SAS_TOKEN=$(az storage account generate-sas \
+        --permissions rw \
+        --account-name $AZURE_STORAGE_ACCOUNT \
+        --services b \
+        --resource-types s \
+        --expiry $end \
+        --output tsv)
+    ```
 
 ## Enable CORS using the REST API
-
-1. Run the following command in the Cloud Shell to store the shared access signature that you created earlier in an environment variable so you can use it in later commands.
-
-   ```bash
-   export SAS_TOKEN="<shared access token>"
-   ```
-   For example:
-   ```bash
-   export SAS_TOKEN="?sv=2018-03-28&ss=b&srt=sco&sp=rwdlac&se=2019-04-25T01:00:00Z&st=2019-04-24T01:00:00Z&spr=https&sig=AbCdEfGhIjKlMnOpQrStUvWxYz%3D"
-   ```
 
 1. Run the following command in the Cloud Shell to create a new XML file in the online editor that will contain your CORS rule.
 
@@ -127,7 +115,7 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
    code body.xml
    ```
 
-1. In the editor, add the following XML, which contains a single CORS rule for the Azure storage service.
+1. In the editor, add the following XML, which contains a single CORS rule for Blob Storage.
 
    ```xml
    <?xml version="1.0" encoding="utf-8"?>
@@ -152,8 +140,8 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
    export FILE_SIZE=$(stat -c%s body.xml)
    export GMT_DATE=$(TZ=GMT date "+%a, %d %h %Y %H:%M:%S %Z")
    export HOST_NAME="$AZURE_STORAGE_ACCOUNT.blob.core.windows.net"
-   export CORS_URL="https://$HOST_NAME/$SAS_TOKEN&restype=service&comp=properties"
-   export REST_VERSION="2018-03-28"
+   export CORS_URL="https://$HOST_NAME/?restype=service&comp=properties&$SAS_TOKEN"
+   export REST_VERSION="2023-01-03"
    ```
 
 1. Use wget to send a PUT request to set the CORS rule.
@@ -180,7 +168,7 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
 
 ## Verify that CORS rules have been set
 
-1. Run the following command in the Cloud Shell to retrieve the configuration settings for your blob service.
+1. Run the following command in the Cloud Shell to retrieve the configuration settings for Blob Storage.
 
    ```bash
    wget --output-document="cors.xml" \
@@ -200,7 +188,7 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
    Saving to: 'cors.xml'
    ```
 
-1. Run the following command in the Cloud Shell to create and open the XML file that contains your blob service configuration.
+1. Run the following command in the Cloud Shell to create and open the XML file that contains your Blob Storage configuration.
 
    ```bash
    code cors.xml
@@ -251,7 +239,7 @@ NOTE: The first REST API works with curl, but the second REST API fails with cur
 
 1. Press **Ctrl-Q** to exit the editor.
 
-## Attempt to access blob storage with CORS enabled
+## Attempt to access Blob Storage with CORS enabled
 
 1. Use wget to send the same preflight request that you sent earlier in order to upload a blob to your storage account using an OPTIONS request:
 
