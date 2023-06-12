@@ -1,9 +1,9 @@
-As Woodgrove Bank expands its customer base, the database needs to scale. For this exercise, we'll create an Azure Cosmos DB for PostgreSQL instance with the following setup:
+As Woodgrove Bank expands its customer base, the database needs to scale. For this exercise, we create an Azure Cosmos DB for PostgreSQL instance with the following setup:
 
 * One coordinator node, with 4 vCores and 0.5 TiB of storage
 * Two worker nodes, each with 4 vCores and 0.5 TiB of storage
 
-We'll create the users table and load the data. Once we have the data loaded, we'll add another worker node. Then, we'll use the Shard rebalancer. Finally, we'll rebalance the data to take advantage of the new worker node.
+We create a `payment_users` table and load the data. Once we have the data loaded, we add another worker node. Then, we use the Shard rebalancer. Finally, we'll rebalance the data to take advantage of the new worker node.
 
 ## Create an Azure Cosmos DB for PostgreSQL database
 
@@ -43,7 +43,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Admin username | This username is set to `citus` and can't be edited. |
     | Password | Enter and confirm a strong password. |
 
-    :::image type="content" source="../media/cosmos-db-postgresql-basics-tab.png" alt-text="Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings above are shown in the screenshot.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-basics-tab.png" alt-text="Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings for the Basics tab are shown in the screenshot.":::
 
     > [!NOTE]
     > Note the server name and password for later use.
@@ -61,7 +61,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Coordinator storage | Select **512 GiBM**. |
     | High availability | Leave unchecked. |
 
-    :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the Azure Cosmos DB for PostgreSQL cluster configuration dialog. The settings above appear in the screenshot.":::
+    :::image type="content" source="../media/cosmos-db-postgresql-cluster-config.png" alt-text="Screenshot of the Azure Cosmos DB for PostgreSQL cluster configuration dialog. The settings for Nodes and Coordinator appear in the screenshot.":::
 
 1. Select **Save** on the scale page to return to the cluster configuration.
 
@@ -119,7 +119,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
 
 ## Load the data
 
-Now load the data from CSV files and ensure the data is loaded. Keep in mind that this data will be spread across two worker nodes.
+Now load the data from CSV files and ensure the data is loaded. Keep in mind that this data is spread across two worker nodes.
 
 The `COPY` command allows you to bulk load data from files located on the coordinator node.
 
@@ -221,4 +221,4 @@ Refresh the Shard rebalancer in the portal. Notice that rebalancing is no longer
     Screenshot of the Shard rebalancer in the Azure portal with a message showing that rebalancing isn't recommended at this time. The Shard rebalancer shows one coordinator node and three worker nodes.
 :::image-end:::
 
-While this exercise shows how scaling and rebalancing works with one table, this pattern applies to each distributed and reference table. Rebalancing will balance data across all of the nodes in a cluster.
+While this exercise shows how scaling and rebalancing works with one table, this pattern applies to each distributed and reference table. Rebalancing, balances data across all of the nodes in a cluster.
