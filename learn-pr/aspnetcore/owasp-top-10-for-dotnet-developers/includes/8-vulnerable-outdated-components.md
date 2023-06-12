@@ -38,4 +38,4 @@ To prevent vulnerable and outdated components in .NET applications, you should r
 
 Plan and schedule regular updates of your product's components.
 
-Manually monitoring sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components you use is is tedious and time consuming. Apply automation and tooling, like GitHub Dependabot version updates or [Snyk](https://snyk.io/) to keep up with dependencies updated and security risks.
+Manually monitoring sources like Common Vulnerability and Exposures (CVE) and National Vulnerability Database (NVD) for vulnerabilities in the components you use is tedious and time consuming. Apply automation and tooling, like GitHub Dependabot version updates or [Snyk](https://snyk.io/) to keep up with dependencies updated and security risks.

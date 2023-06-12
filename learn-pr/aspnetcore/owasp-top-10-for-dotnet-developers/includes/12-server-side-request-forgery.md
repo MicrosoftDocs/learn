@@ -23,7 +23,7 @@ In certain situations, with carefully formulated URL, the attacker may be able t
 > [!IMPORTANT]
 > User-controlled data should not be trusted. Validate all input to  and ensure that the request is being sent to the expected destination.
 
-An allow list or blocklist should be enforced (like IP addresses and host names).
+An allowlist or blocklist should be enforced (like IP addresses and host names).
 
 Correct user input validation can protect your application from a few OWASP Top 10 items.
 
@@ -34,4 +34,4 @@ Once again you were reminded of the importance of input validation. Luckily, .NE
 To summarize, prevention from SSRF attacks in your .NET applications may involve:
 
 - validation of user input and only allowing expected values,
-- use of allow list with approved domains and protocols for network communication.
+- use of allowlist with approved domains and protocols for network communication.
