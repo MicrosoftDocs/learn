@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "An SLA helps you determine your backup retention requirements."
       isCorrect: false
-      explanation: "Backup retention is important to define, but it isn't driven by SLA."
+      explanation: "Backup retention is important to define, but SLA doesn't drive that definition."
     - content: "An SLA helps you determine the availability level that you commit to for your customers."
       isCorrect: true
       explanation: "A service level agreement is a commitment you make to your customers for the availability of your service."

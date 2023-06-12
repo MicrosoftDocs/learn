@@ -2,9 +2,9 @@ This unit describes backup and recovery as a powerful line of defense against pe
 
 Applications can manage many data types of varying importance, spread across filesystems, databases, and other storage services in the cloud and on-premises. Using the right services and products for each backup simplifies the backup process and decreases recovery time if a backup needs to be restored.
 
-## Backup and restore requirements
+## Requirements for backup and restore
 
-As with a disaster recovery strategy, you base backup requirements on a cost-benefit analysis. Guide the analysis of your application's data by the relative importance of the data categories the app manages, as well as external requirements such as data retention laws.
+As with a disaster recovery strategy, you base backup requirements on a cost-benefit analysis. Guide the analysis of your application's data by the relative importance of the data categories the app manages. Also consider external requirements such as data retention laws.
 
 To establish backup requirements for your application, group its data types based on the following requirements:
 
@@ -14,11 +14,11 @@ To establish backup requirements for your application, group its data types base
 
 These concepts map to the concepts of Recovery Point Objective (RPO) and Recovery Time Objective (RTO). The duration of acceptable loss generally translates to required backup intervals and RPO. The maximum amount of time a restore takes corresponds to the RTO for your application's data components.
 
-Develop both requirements relative to the cost of achieving them. No organization wants to say that they can afford to lose any data, but that might not be the case when they consider the cost of achieving that requirement.
+Develop both requirements relative to the cost of achieving them. No organization wants to say that they can afford to lose any data, but that might change when they consider the cost of achieving that requirement.
 
 Backup plays a role in disaster recovery (DR), but backups, restores, and their associated scenarios extend beyond the scope of DR. Backups might need to be restored in nondisaster situations, including scenarios where RTO and RPO aren't a concern.
 
-For example, if a small amount of data older than your backup interval is corrupted or deleted, but the application doesn't experience downtime and a successful restore results in no data loss, your application might never be in danger of missing its SLA. Your DR plan might or might not include guidance for doing restores in nondisaster situations.
+For example, if a small amount of data older than your backup interval is corrupt or missing, but the application doesn't experience downtime and a successful restore results in no data loss, your application might never be in danger of missing its SLA. Your DR plan might or might not include guidance for doing restores in nondisaster situations.
 
 > [!TIP]
 > Don't confuse archival or replication with backup. Archival is storing data for long-term preservation and read access. Replication is near-real-time copying of data between replicas to support high availability and some DR scenarios. Some requirements, such as data retention laws, might influence your strategies for all three of these concerns, but they require separate analysis and implementation.
@@ -37,7 +37,7 @@ The following products and services can use Backup to create backups:
 
 - **Microsoft Azure Recovery Services (MARS) agent** is a Windows application that backs up files, folders, and system state from the Windows VM it's installed on. It works like many consumer cloud-based backup solutions, but requires configuring a Recovery Services vault. Once you download and install the agent onto a Windows server or VM, you can configure it to create backups up to three times a day.
 
-- **System Center Data Protection Manager** is a robust, fully featured, enterprise-level backup and recovery system for Windows Server. Data Protection Manager can back up file systems and Windows and Linux VMs, create bare-metal backups of physical servers, and do application-aware backups of server products like SQL Server and Exchange. Data Protection Manager is part of System Center and is licensed and sold with System Center, but is considered part of the Backup family because it can store backups in a Recovery Services vault.
+- **System Center Data Protection Manager** is a robust, fully featured, enterprise-level backup and recovery system for Windows Server. Data Protection Manager can back up file systems and Windows and Linux VMs, create bare-metal backups of physical servers, and do application-aware backups of server products like SQL Server and Exchange. Data Protection Manager is part of System Center, which licenses and sells it. It's part of the Backup family because it can store backups in a Recovery Services vault.
 
 - **Microsoft Azure Backup Server (MABS)** is similar to Data Protection Manager, but is licensed as part of an Azure subscription and doesn't require a System Center license. Azure Backup Server supports the same functionality as Data Protection Manager, except for local tape backup and integration with System Center products.
 
@@ -65,11 +65,11 @@ If you're evaluating different database options for an application, you should i
 
 Web applications hosted in Azure App Service Standard and Premium tiers support turnkey scheduled and manual backups. Backups include application configuration, file contents, and database contents, and support simple filters for excluding files. Restore operations can target different App Service instances, making App Service backup a simple way to move one application's contents to another application.
 
-App Service backups are limited to 10 GB total, including application and database content, and are a good solution for applications under development and small-scale applications. Mature applications don't generally use App Service backup, but instead rely on robust deployment and rollback procedures, storage strategies that don't use application disk storage, and dedicated backup strategies for databases and persistent storage.
+App Service backups are limited to 10 GB total, including application and database content, and are a good solution for applications under development and small-scale applications. Mature applications don't generally use App Service backup. These applications rely on robust deployment and rollback procedures, storage strategies that don't use application disk storage, and dedicated backup strategies for databases and persistent storage.
 
-## Backup and restore testing and verification
+## Testing and verification for backup and restore
 
-No backup system is complete without a strategy for verifying backups and testing restore procedures. Even if you use a dedicated backup service or product, you should still document and practice recovery procedures to ensure that everyone understands them and that they return the system to the expected state.
+No backup system is complete without a strategy for verifying backups and testing restore procedures. Even if you use a dedicated backup service or product, you should still document and practice recovery procedures to ensure that everyone understands them. Make sure that the procedures always return the system to the expected state.
 
 Strategies for verifying backups vary and depend on the nature of your infrastructure. You might consider techniques like creating a new deployment of the application, restoring the backup to it, and comparing the states of the two instances. In many cases, this technique closely mimics actual DR procedures.
 

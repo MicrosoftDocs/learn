@@ -1,4 +1,4 @@
-This module presented key principles of the Reliability pillar of the Azure Well-Architected Framework. You learned how to make your applications more reliable by planning and architecting for high availability (HA), disaster recovery (DR), and backup and restore.
+This module presented key principles of the Reliability pillar of the Azure Well-Architected Framework. You learned how to make your applications more reliable by planning and architecting high availability (HA), disaster recovery (DR), and backup and restore.
 
 In this module, you learned to carry out the following procedures:
 

@@ -24,7 +24,7 @@ The first step in creating a DR plan is to do a risk analysis that examines the 
 
 Explore various kinds of hypothetical disasters and try to be specific when thinking about their effects. For example, a targeted malicious attack might modify code or data that results in a different kind of impact than an earthquake that disrupts network connectivity and datacenter availability.
 
-The risk assessment needs to consider every process that can't afford unlimited downtime, and every category of data that can't afford unlimited loss. When a disaster occurs that affects multiple application components, it's critical that plan owners can use the plan to completely inventory what needs attention and how to prioritize each item.
+The risk assessment needs to consider every process that can't afford unlimited downtime, and every category of data that can't afford unlimited loss. When a disaster occurs that affects multiple application components, plan owners must be able to use the plan to completely inventory the components and prioritize each item.
 
 Applications that consist only of a single process or data classification are still important to include. These applications might be single components of a larger DR plan that includes multiple applications within the organization.
 
@@ -39,7 +39,13 @@ A complete DR plan must specify the following critical business requirements for
 
 Each major process or workload that an application implements should have separate RPO and RTO values. Even if you arrive at the same values for different processes, you should generate each value through a separate analysis that examines disaster-scenario risks and potential recovery strategies.
 
-The process of specifying an RPO and RTO effectively creates DR requirements for your application. You must establish the priority of each workload and data category and do a cost-benefit analysis. The analysis includes concerns like implementation and maintenance cost, operational expense, process overhead, performance impact, and the impact of downtime and lost data.
+The process of specifying an RPO and RTO effectively creates DR requirements for your application. You must establish the priority of each workload and data category and do a cost-benefit analysis. The analysis includes the following concerns:
+
+- Implementation and maintenance cost
+- Operational expense
+- Process overhead
+- Performance impact
+- Impact of downtime and data loss
 
 You must define exactly what "downtime" means for your application, and in some cases you might establish separate RPO and RTO values for different levels of functionality. Specifying RPO and RTO should be more than simply choosing arbitrary values. Much of the value of a DR plan comes from the research and analysis that goes into discovering the potential impact of a disaster and the cost of mitigating the risks.
 
@@ -62,8 +68,8 @@ DR isn't an automatic feature, but must be designed, built, and tested. To suppo
 
 Designing for disaster recovery has the following main concerns:
 
-- **Data recovery** that uses backups and replication to restore lost data.
-- **Process recovery** that recovers services and deploys code to recover from outages.
+- **Data recovery** uses backups and replication to restore lost data.
+- **Process recovery** recovers services and deploys code to recover from outages.
 
 ### Data recovery and replication
 
@@ -71,7 +77,7 @@ Replication duplicates data in multiple data store replicas. Unlike backup, whic
 
 ![An illustration showing an example of geographical replication with the primary writable database in one location and the readable secondary databases at two different locations.](../media/3-geo-replication.png)
 
-Replication mitigates a failed or unreachable data store by executing a *failover*, which changes application configuration to route data requests to a working replica. Failover is often automated, triggered by error detection built into a data-storage product, or implemented through a monitoring solution. Depending on the implementation and the scenario, failover might need to be manually done by system operators.
+Replication mitigates a failed or unreachable data store by executing a *failover*, which changes application configuration to route data requests to a working replica. Error detection built into a data-storage product, or that you implement through a monitoring solution, can trigger and often automate failover. Depending on the implementation and scenario, system operators might need to manually perform failover.
 
 Different replication designs place different priorities on data consistency, performance, and cost.
 
@@ -84,7 +90,7 @@ You don't implement replication from scratch. Most fully featured database syste
 
 The following Azure services support different replication levels and concepts:
 
-- **Azure Storage** replication capabilities depend on the type of replication you select for the storage account. The replication can be local within a datacenter, zonal between datacenters within a region, or regional between regions. Neither your application nor your operators interact with replication directly. Failovers are automatic and transparent, and you simply need to select a replication level that balances cost and risk.
+- **Azure Storage** replication capabilities depend on the type of replication you select for the storage account. The replication can be local within a datacenter, zonal between datacenters within a region, or regional between regions. Application and operators don't interact with replication directly. Failovers are automatic and transparent, and you simply need to select a replication level that balances cost and risk.
 
 - **Azure SQL Database** replication is automatic at a small scale, but recovery from a full Azure datacenter or regional outage requires *geo-replication*. Setting up geo-replication is manual, but it's a first-class Azure SQL Database feature that's well-supported by documentation.
 
@@ -98,7 +104,12 @@ After a disaster, business data isn't the only asset that needs recovering. Disa
 
 In most cases, process restoration involves failover to a separate, working deployment. Depending on the scenario, geographic location might be a critical aspect. For example, a large-scale natural disaster that brings an entire Azure region offline necessitates restoring service in another region.
 
-Your application's DR requirements, especially RTO, should drive your design and help you decide how many replicated environments to have, where to locate them, whether to maintain them in a ready-to-run state, or whether they should be ready to accept a deployment in a disaster.
+Your application's DR requirements, especially RTO, should drive your design and help you make the following decisions:
+
+- How many replicated environments to have.
+- Where to locate the environments.
+- Whether to maintain the environments in a ready-to-run state.
+- Whether the environments should be ready to accept a deployment in a disaster.
 
 Depending on your application design, you can use several different strategies and Azure features to improve your application's support for process recovery after a disaster.
 
@@ -108,7 +119,7 @@ Azure Site Recovery is a service that manages process recovery for workloads run
 
 ![An illustration showing the role of Azure Site Recovery in replicating the workloads on three VMs.](../media/3-azure-site-recovery.png)
 
-Site Recovery supports replicating VM and physical server images as well as individual workloads. A workload might be an individual application or an entire VM or operating system with its applications. Any application workload can be replicated, but Site Recovery has first-class integrated support for many Microsoft server applications, such as SQL Server and SharePoint, as well as some third-party applications like SAP.
+Site Recovery supports replicating VMs, physical server images, and individual workloads. A workload might be an individual application or an entire VM or operating system with its applications. Any application workload can be replicated, but Site Recovery has first-class integrated support for many Microsoft server applications, such as SQL Server and SharePoint, and some third-party applications like SAP.
 
 Investigate Site Recovery for any app that runs on VMs or physical servers as a great way to discover and explore scenarios and possibilities for process recovery.
 
@@ -122,7 +133,7 @@ Most services that run on Azure platform as a service (PaaS) offerings like Azur
 
 DR planning doesn't end once you have a completed plan. Testing the plan to ensure that the directions and explanations are clear and up to date is a crucial aspect of DR planning.
 
-Choose intervals to do different types and scopes of tests, such as testing backups and failover mechanisms every month and doing a full-scale DR simulation every six months. Always follow the steps and details exactly as the plan documents. Consider having someone unfamiliar with the plan give perspective on anything that could be made clearer. As you run the test, identify gaps, areas of improvement, and places to automate, and add these enhancements to your plan.
+Choose intervals to do different types and scopes of tests. For example, test backups and failover mechanisms every month and do a full-scale DR simulation every six months. Always follow the steps and details exactly as the plan documents. Consider having someone unfamiliar with the plan give perspective on anything that could be made clearer. As you run the test, identify gaps, areas of improvement, and places to automate, and add these enhancements to your plan.
 
 Make sure to include your monitoring system in your testing. For example, if your application supports automated failover, you introduce failures in a dependency or other critical component to ensure that the application behaves correctly end-to-end. Make sure to include failure detection and triggering of automated failover in the plan and testing.
 

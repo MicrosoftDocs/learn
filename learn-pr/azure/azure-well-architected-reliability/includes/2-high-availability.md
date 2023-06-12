@@ -57,13 +57,13 @@ You need to carefully evaluate all components of your application, including the
 
 ### Evaluate dependent HA capabilities
 
-You should understand not only your application's SLA requirements, but also the SLAs of any resource your application depends on. If you commit an uptime of 99.9% to your customers, but a service your application depends on has an uptime commitment of only 99%, you could risk not meeting your SLA to your customers.
+You should understand not only your application's SLA requirements, but also the SLAs of any resource your application depends on. If you commit an uptime of 99.9% to your customers, but a service your application depends on has an uptime commitment of only 99%, you might not meet your SLA to your customers.
 
-If a dependent service is unable to provide a sufficient SLA, you might need to modify your own SLA, replace the dependency with an alternative, or find ways to meet your SLA while the dependency is unavailable. Based on the scenario and the nature of the dependency, you might temporarily work around failing dependencies with solutions like caches and work queues.
+If a dependent service can't provide a sufficient SLA, you might modify your own SLA, replace the dependency with an alternative, or find ways to meet your SLA while the dependency is unavailable. Based on the scenario and the nature of the dependency, you might temporarily work around failing dependencies with solutions like caches and work queues.
 
 ## HA in Azure
 
-Like any system, applications can be affected by both hardware and software platform events. It's critical to design your application architecture to handle failures, and the Azure platform provides you with the tools and capabilities to make your application highly available.
+Both hardware and software platform events can affect applications and systems. It's critical to design your application architecture to handle failures, and the Azure platform provides you with the tools and capabilities to make your application highly available.
 
 The Azure platform provides HA over all its services. The following core technologies provide HA for Azure architectures:
 
@@ -78,11 +78,11 @@ Availability sets help ensure your application remains online if a high-impact m
 
 :::image type="content" source="../media/2-availability-sets.png" alt-text="Illustration showing three availability sets in different fault domains. The first set has one update domain, the second has two update domains, and the third has no update domain." loc-scope="other"::: <!-- no-loc -->
 
-Most updates have no impact on the VMs running on them, but sometimes this isn't possible. UDs ensure that a subset of your application's servers always keep running when the VM hosts in an Azure datacenter need downtime for maintenance.
+Most updates have no impact on the VMs they run on, but sometimes VM hosts in an Azure datacenter need downtime for maintenance. UDs ensure that a subset of your application's servers always keep running during these downtimes.
 
-To ensure that updates don't happen to a whole Azure datacenter at once, the datacenter is logically sectioned into UDs. When a maintenance event occurs, such as a performance update and critical security patch that needs to be applied to the host, the update is sequenced through UDs. Sequencing updates through UDs ensures that the whole datacenter isn't unavailable during the platform updates and patching.
+To ensure that updates don't happen to a whole Azure datacenter at once, the datacenter is logically sectioned into UDs. A maintenance event, such as applying a performance update and critical security patch to the host, sequences through the UDs. Sequencing updates through UDs ensures that the whole datacenter isn't unavailable during platform updates and patching.
 
-While UDs represent logical sections of the datacenter, FDs represent physical sections of the datacenter and ensure rack diversity of servers in an availability set. Placing your VMs in an availability set automatically spreads them across multiple FDs, so in the event of a hardware failure, only some of your VMs are affected.
+While UDs represent logical sections of the datacenter, FDs represent physical sections of the datacenter and ensure rack diversity of servers in an availability set. Placing your VMs in an availability set automatically spreads them across multiple FDs, so if there's a hardware failure, only some of your VMs are affected.
 
 FDs align to the physical separation of shared hardware in the datacenter, including power, cooling, and network hardware that supports the servers in server racks. If the hardware that supports a server rack becomes unavailable, the outage affects only that rack of servers.
 
@@ -98,11 +98,11 @@ Supported regions contain a minimum of three availability zones. When you create
 
 Availability zones are a newer HA service that's currently available for certain regions. If you want to consider this functionality, be sure to check the service availability in the region where you plan to deploy your application. For more information, see [Azure regions with availability zone support](/azure/reliability/availability-zones-service-support#azure-regions-with-availability-zone-support).
 
-Availability zones are supported for VMs as well as for several PaaS services. Availability zones are mutually exclusive with availability sets. When you use availability zones, you no longer need to define availability sets for your systems. You have diversity at the datacenter level, and updates are never done to multiple availability zones at the same time.
+Availability zones are supported for VMs and for several PaaS services. Availability zones are mutually exclusive with availability sets. When you use availability zones, you no longer need to define availability sets for your systems. You have diversity at the datacenter level, and updates are never done to multiple availability zones at the same time.
 
 ### Load balancing
 
-Load balancers manage how to distribute network traffic across an application. Load balancers are essential for keeping your application resilient to individual component failures and to ensure your application is available to process requests. Applications that don't have built-in service discovery require load balancing for both availability sets and availability zones.
+Load balancers manage how to distribute network traffic across an application. Load balancers are essential to keep your application resilient to individual component failures and to ensure your application is available to process requests. Applications that don't have built-in service discovery require load balancing for both availability sets and availability zones.
 
 There are several Azure load-balancing services, each with distinct network traffic routing abilities. Use one or a combination of these technologies to help ensure you have the necessary options to architect a highly available solution for routing network traffic through your application.
 
@@ -114,7 +114,7 @@ In the preceding diagram, Azure Traffic Manager balances the load between two re
   
 - **Application Gateway** provides Layer 7 load-balancing capabilities, such as round-robin distribution of incoming traffic, cookie-based session affinity, URL path-based routing, and the ability to host multiple websites behind one gateway. Application Gateway monitors the health of all resources in its backend pool by default, and automatically removes unhealthy resources from the pool. Application Gateway continues to monitor the unhealthy instances and adds them back to the pool once they're available and healthy.
   
-- **Azure Load Balancer** is a Layer 4 load balancer. You can configure public and internal load-balanced endpoints, define rules to map inbound connections to backend pool destinations, and use TCP and HTTP health-probing options to manage service availability.
+- **Azure Load Balancer** is a Layer 4 load balancer. You can configure public and internal load-balanced endpoints and define rules to map inbound connections to backend destinations. Load Balancer can use TCP and HTTP health-probing options to help manage service availability.
 
 ### PaaS HA capabilities
 
