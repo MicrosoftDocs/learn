@@ -2,7 +2,7 @@ Content Delivery Networks (CDNs) can significantly speed up the delivery of asse
 
 For a global training business that publishes significant numbers of videos, Azure blob storage is a good match to your business model. Azure Blob storage also enables simple web publishing. However, your company's plans to expand could overload a single point of distribution.
 
-In this unit, learn about how Azure CDN works and how to create one to improve the performance of a static website.
+In this unit, we learn how Azure CDN works and we learn how to create one to improve the performance of a static website.
 
 ## What is a CDN?
 
@@ -46,11 +46,11 @@ This module focuses on the **Standard Microsoft** CDN. For more information on e
 
 Azure Content Delivery Network (CDN) is Azure's content delivery network. It's a distributed network of servers that is used to cache and store content. These servers are in locations that are close to end users to minimize latency.
 
-The server locations are referred to as Point-of-presence (POP) locations. CDNs store cached data on *edge servers*, or servers close to your users, in these POP locations.
+The server locations are referred to as Point-of-presence (POP) locations. CDN's store cached data on *edge servers*, or servers close to your users, in these POP locations.
 
 ## Features and Benefits of Microsoft Azure CDNs
 
-Features that Microsoft Azure CDNs offer are:
+Features that Microsoft Azure CDN's offer are:
 
 - **Dynamic site acceleration** - speed up the delivery of static files
 - **HTTPS custom domain support** - enable encrypted connections to custom domains, such as `https://www.contoso.com`
@@ -95,11 +95,11 @@ Now let's look in more detail of how CDNs work. There are two concepts here: The
 
 A CDN profile is a container for one or more CDN endpoints. Each CDN endpoint specifies a pricing tier and provides a link to the cached content on the POP.
 
-When you create a profile, you can specify to create a CDN endpoint or you can create endpoints later. Note how you specify a pricing tier when you create the profile.
+When you create a profile, you can specify to create a CDN endpoint, or you can create endpoints later. Note how you specify a pricing tier when you create the profile.
 
 ### CDN Endpoints
 
-When you create an endpoint, you must ensure that the endpoint type matches the origin source correctly. For example, static websites in Azure require an endpoint set to "custom origin". With storage accounts, where you can create a CDN matched to that account.
+When you create an endpoint, you must ensure that the endpoint type matches the origin source correctly. For example, static websites in Azure require an endpoint set to "custom origin." With storage accounts, where you can create a CDN matched to that account.
 
 For more information on integrating a storage account into an Azure CDN, see the Further Reading section of the Summary unit.
 
