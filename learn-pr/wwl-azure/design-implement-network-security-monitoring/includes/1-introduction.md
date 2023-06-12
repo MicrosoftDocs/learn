@@ -1,4 +1,3 @@
-
 Network security is the process of protecting resources from unauthorized access or attack by applying controls to network traffic, allowing only legitimate traffic/requests. Azure includes a robust networking infrastructure to support your application and service connectivity requirements.
 
 Your security requirements might include:

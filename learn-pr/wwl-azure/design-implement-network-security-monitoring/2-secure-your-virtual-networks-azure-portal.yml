@@ -4,11 +4,13 @@ title: Get network security recommendations with Microsoft Defender for Cloud
 metadata:
   title: Get network security recommendations with Microsoft Defender for Cloud
   description: "Get network security recommendations with Microsoft Defender for Cloud"
-  ms.date: 06/09/2023
+  ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 12
 content: |
   [!include[](includes/2-secure-your-virtual-networks-azure-portal.md)]
@@ -34,6 +36,6 @@ quiz:
     - content: "Microsoft cloud security benchmark"
       isCorrect: false
       explanation: "Incorrect. The Microsoft cloud security benchmark provides prescriptive best practices and recommendations to help improve the security of workloads, data, and services on Azure. It includes a collection of high-impact security recommendations you can use to help secure the services you use in Azure."
-    - content: "Microsoft Sentinel"
+    - content: "Azure Sentinel"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Sentinel is a scalable, cloud-native, security information event management and security orchestration automated response solution. It delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. It needs to be onboarded and configured to collect data from your resources in Azure."
+      explanation: "Incorrect. Azure Sentinel is a scalable, cloud-native, security information event management and security orchestration automated response solution. It delivers intelligent security analytics and threat intelligence across the enterprise, providing a single solution for alert detection, threat visibility, proactive hunting, and threat response. It needs to be onboarded and configured to collect data from your resources in Azure."

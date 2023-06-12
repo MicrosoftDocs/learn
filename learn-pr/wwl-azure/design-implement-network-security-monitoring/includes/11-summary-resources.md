@@ -1,4 +1,3 @@
-
 As your organization moves to Azure, you must design your network to protect resources from unauthorized access or attack by applying controls to network traffic, allowing only legitimate traffic/requests. In this module, you saw a range of network security solutions that you could implement to meet your organizations network security requirements.
 
 You now have the fundamental knowledge required to design and implement network security in Azure.

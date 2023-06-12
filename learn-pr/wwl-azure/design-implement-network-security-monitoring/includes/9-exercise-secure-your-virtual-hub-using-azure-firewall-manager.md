@@ -1,4 +1,3 @@
-
 ## Lab scenario
 
 In this lab, you will secure your virtual hub with Azure Firewall Manager. 
@@ -29,3 +28,5 @@ In this lab, you will secure your virtual hub with Azure Firewall Manager.
 > You may find slight differences between the interactive simulation and the hosted lab, but the core concepts and ideas being demonstrated are the same.
 
 [![Screenshot of the simulation page.](../media/simulation-fwmanager-thumbnail.jpg)](https://mslabs.cloudguides.com/guides/AZ-700%20Lab%20Simulation%20-%20Secure%20your%20virtual%20hub%20using%20Azure%20Firewall%20Manager)
+
+

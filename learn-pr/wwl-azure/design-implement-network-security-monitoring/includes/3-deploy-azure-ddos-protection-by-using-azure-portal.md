@@ -1,4 +1,3 @@
-
 ## Distributed Denial of Service (DDoS)
 
 A denial of service attack (DoS) is an attack that has the goal of preventing access to services or systems. If the attack originates from one location, it is called a DoS. If the attack originates from multiple networks and systems, it is called distributed denial of service (DDoS).
@@ -8,7 +7,9 @@ Distributed Denial of Service (DDoS) attacks are some of the largest availabilit
 ## DDoS implementation
 
 Azure DDoS protection, combined with application design best practices, provide defense against DDoS attacks. Azure DDoS protection provides the following service tiers:
--  **Basic**: Automatically enabled as part of the Azure platform. Always-on traffic monitoring, and real-time mitigation of common network-level attacks, provide the same defenses utilized by Microsoft's online services. The entire scale of Azure's global network can be used to distribute and mitigate attack traffic across regions. Protection is provided for IPv4 and IPv6 Azure public IP addresses.-  **Standard**: Provides additional mitigation capabilities over the Basic service tier that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is simple to enable, and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses associated to resources deployed in virtual networks, such as Azure Load Balancer, Azure Application Gateway, and Azure Service Fabric instances, but this protection does not apply to App Service Environments. Real-time telemetry is available through Azure Monitor views during an attack, and for history. Rich attack mitigation analytics are available via diagnostic settings. Application layer protection can be added through the Azure Application Gateway Web Application Firewall or by installing a 3rd party firewall from Azure Marketplace. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
+
+ -  **Basic**: Automatically enabled as part of the Azure platform. Always-on traffic monitoring, and real-time mitigation of common network-level attacks, provide the same defenses utilized by Microsoft's online services. The entire scale of Azure's global network can be used to distribute and mitigate attack traffic across regions. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
+ -  **Standard**: Provides additional mitigation capabilities over the Basic service tier that are tuned specifically to Azure Virtual Network resources. DDoS Protection Standard is simple to enable, and requires no application changes. Protection policies are tuned through dedicated traffic monitoring and machine learning algorithms. Policies are applied to public IP addresses associated to resources deployed in virtual networks, such as Azure Load Balancer, Azure Application Gateway, and Azure Service Fabric instances, but this protection does not apply to App Service Environments. Real-time telemetry is available through Azure Monitor views during an attack, and for history. Rich attack mitigation analytics are available via diagnostic settings. Application layer protection can be added through the Azure Application Gateway Web Application Firewall or by installing a 3rd party firewall from Azure Marketplace. Protection is provided for IPv4 and IPv6 Azure public IP addresses.
 
 DDoS Protection Standard protects resources in a virtual network including public IP addresses associated with virtual machines, load balancers, and application gateways. When coupled with the Application Gateway web application firewall, or a third-party web application firewall deployed in a virtual network with a public IP, DDoS Protection Standard can provide full layer 3 to layer 7 mitigation capability.
 
@@ -27,7 +28,14 @@ DDoS Protection Standard can mitigate the following types of attacks:
 ## Azure DDoS protection features
 
 Some of Azure DDoS protection features include:
--  **Native platform integration:** Natively integrated into Azure and configured through portal.-  **Turnkey protection:** Simplified configuration protecting all resources immediately.-  **Always-on traffic monitoring:** Your application traffic patterns are monitored 24 hours a day, 7 days a week, looking for indicators of DDoS attacks.-  **Adaptive tuning:** Profiling and adjusting to your service's traffic.-  **Attack analytics:** Get detailed reports in five-minute increments during an attack, and a complete summary after the attack ends.-  **Attack metrics and alerts:** Summarized metrics from each attack are accessible through Azure Monitor. Alerts can be configured at the start and stop of an attack, and over the attack's duration, using built-in attack metrics.-  **Multi-layered protection:** When deployed with a web application firewall (WAF), DDoS Protection Standard protects both at the network layer (Layer 3 and 4, offered by Azure DDoS Protection Standard) and at the application layer (Layer 7, offered by a WAF).
+
+ -  **Native platform integration:** Natively integrated into Azure and configured through portal.
+ -  **Turnkey protection:** Simplified configuration protecting all resources immediately.
+ -  **Always-on traffic monitoring:** Your application traffic patterns are monitored 24 hours a day, 7 days a week, looking for indicators of DDoS attacks.
+ -  **Adaptive tuning:** Profiling and adjusting to your service's traffic.
+ -  **Attack analytics:** Get detailed reports in five-minute increments during an attack, and a complete summary after the attack ends.
+ -  **Attack metrics and alerts:** Summarized metrics from each attack are accessible through Azure Monitor. Alerts can be configured at the start and stop of an attack, and over the attack's duration, using built-in attack metrics.
+ -  **Multi-layered protection:** When deployed with a web application firewall (WAF), DDoS Protection Standard protects both at the network layer (Layer 3 and 4, offered by Azure DDoS Protection Standard) and at the application layer (Layer 7, offered by a WAF).
 
 Let us have a look in a bit more detail at some of those key features.
 
@@ -39,7 +47,10 @@ DDoS Protection Standard monitors actual traffic utilization and constantly comp
 
 
 During mitigation, traffic sent to the protected resource is redirected by the DDoS protection service and several checks are performed, such as:
--  Ensure packets conform to internet specifications and aren't malformed.-  Interact with the client to determine if the traffic is potentially a spoofed packet (e.g: SYN Auth or SYN Cookie or by dropping a packet for the source to retransmit it).-  Rate-limit packets if no other enforcement method can be performed.
+
+ -  Ensure packets conform to internet specifications and aren't malformed.
+ -  Interact with the client to determine if the traffic is potentially a spoofed packet (e.g: SYN Auth or SYN Cookie or by dropping a packet for the source to retransmit it).
+ -  Rate-limit packets if no other enforcement method can be performed.
 
 DDoS protection drops attack traffic and forwards the remaining traffic to its intended destination. Within a few minutes of attack detection, you are notified using Azure Monitor metrics. By configuring logging on DDoS Protection Standard telemetry, you can write the logs to available options for future analysis. Metric data in Azure Monitor for DDoS Protection Standard is retained for 30 days.
 
@@ -51,7 +62,9 @@ The Azure DDoS Protection service helps protect customers and prevent impacts to
 
 
 The service accomplishes this by using two insights:
--  Automatic learning of per-customer (per- Public IP) traffic patterns for Layer 3 and 4.-  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
+
+ -  Automatic learning of per-customer (per- Public IP) traffic patterns for Layer 3 and 4.
+ -  Minimizing false positives, considering that the scale of Azure allows it to absorb a significant amount of traffic.
 
 ## Attack metrics, alerts, and logs
 
@@ -85,4 +98,11 @@ Even web application firewalls are susceptible to volumetric and state exhaustio
 ## Deploying a DDoS protection plan
 
 The key stages of deploying as DDoS Protection plan are as follows:
--  Create a resource group-  Create a DDoS Protection Plan-  Enable DDoS protection on a new or existing virtual network-  Configure DDoS telemetry-  Configure DDoS diagnostic logs-  Configure DDoS alerts-  Run a test DDoS attack and monitor the results
+
+ -  Create a resource group
+ -  Create a DDoS Protection Plan
+ -  Enable DDoS protection on a new or existing virtual network
+ -  Configure DDoS telemetry
+ -  Configure DDoS diagnostic logs
+ -  Configure DDoS alerts
+ -  Run a test DDoS attack and monitor the results

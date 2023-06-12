@@ -4,11 +4,13 @@ title: Design and implement Azure Firewall
 metadata:
   title: Design and implement Azure Firewall
   description: "Design and implement Azure Firewall"
-  ms.date: 06/09/2023
+  ms.date: 06/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
+azureSandbox: false
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/6-azure-firewall.md)]
