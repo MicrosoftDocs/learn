@@ -1,7 +1,7 @@
 
 ## Azure Data Explorer
 
-## Log Analytics
+## Azure Monitor
 
 ## Microsoft Sentinel
 
