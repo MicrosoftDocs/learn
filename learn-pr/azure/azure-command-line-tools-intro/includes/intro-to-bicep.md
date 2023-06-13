@@ -1,5 +1,3 @@
-# Bicep
-
 In
 a Bicep file, you define the infrastructure that you want to deploy to Azure. You then use that file
 throughout the development lifecycle to deploy your infrastructure.

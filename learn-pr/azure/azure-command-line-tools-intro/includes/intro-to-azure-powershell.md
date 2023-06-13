@@ -1,5 +1,3 @@
-# Azure PowerShell
-
 Azure PowerShell is a collection of modules for managing Azure resources directly from PowerShell.
 PowerShell provides automation features that you can use to manage your Azure
 resources.

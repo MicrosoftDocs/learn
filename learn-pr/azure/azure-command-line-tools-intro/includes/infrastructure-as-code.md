@@ -1,4 +1,4 @@
-Infrastructure as Code (IaC) is the process of managing and provisioning cloud-infrastructure
+Infrastructure as code (IaC) is the process of managing and provisioning cloud-infrastructure
 resources through machine-readable code that's stored in source control. The ability to treat your
 infrastructure as you would any other source code is why this practice is called *infrastructure as
 code*.
@@ -38,7 +38,7 @@ There are two types of IaC configuration tools:
   outcome rather than how you want each step accomplished. Most declarative IaC tools adhere to a
   common pattern. After you create the definition of your infrastructure, you run a command to
   provision what you've defined. Declarative IaC tools are idempotent because the configuration can be
-  applied multiple times, regardless of the state of the infrastructure's configuration. This ability helps you prevent configuration drift by bringing non-compliant infrastructure back into compliance.
+  applied multiple times, regardless of the state of the infrastructure's configuration. This ability helps you prevent configuration drift by bringing noncompliant infrastructure back into compliance.
 
   Declarative IaC tools to manage and provision resources in Azure include:
 

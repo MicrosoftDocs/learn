@@ -1,6 +1,6 @@
 ## Scenario
 
-You work for a franchise-based business named Contoso, Ltd. You started with the company five years
+You work for a franchise-based business. You started with the company five years
 ago as a systems administrator and recently moved into a new role as a DevOps engineer. One of your
 tasks on your previous team was to create Azure resources for new franchises. Because
 your previous team manually created the resources by using the Azure portal, the resources often lacked

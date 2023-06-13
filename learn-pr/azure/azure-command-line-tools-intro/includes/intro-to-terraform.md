@@ -1,5 +1,3 @@
-# Terraform
-
 The Terraform open-source IaC tool enables you
 to define and provision cloud infrastructure by using a high-level configuration language known as
 HashiCorp Configuration Language (HCL). Terraform codifies infrastructure in configuration files
