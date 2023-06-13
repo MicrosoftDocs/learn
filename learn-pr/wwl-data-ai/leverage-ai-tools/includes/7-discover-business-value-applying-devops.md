@@ -13,13 +13,17 @@ First, it's helpful to centrally **manage assets** like environments, code, data
 
 :::row:::
 :::column span="2":::
+
 * **Model registry:** As teams experiment with different versions of a model, a model registry provides a central place to save each version. With a registry, teams can easily revert to a previous version if something isn't working, even after the solution has gone into production. The model registry also serves as an audit trail for each model's history.
 * **Code management:** Technical decision-makers need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code.
+
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/7-discover-business-value-applying-devops-1.png" alt-text="Illustration of the MLOps practices.":::
-There are two large blue circles in the center of the diagram, with an icon and text in each. The left circle is labeled, “Data scientist” and has a nucleus icon in it. The other blue circle reads, “IT” and has an icon of a person next to a computer. There's an infinity symbol that loops around both circles, indicating they work in harmony. Underneath both circles, the four MLOps practices are listed, two on top and two on bottom. They're separated by lines forming a cross between the four. These are: “Model reproducibility,” “Model validation,” “Model deployment,” and “Model retraining.”
-:::image-end:::
+
+> [!div class="mx-imgBorder"] 
+
+> ![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png.png) 
+
 :::column-end:::
 :::row-end:::
 
@@ -32,16 +36,20 @@ Second, we recommend automating tasks with **machine learning pipelines.** A pip
 
 :::row:::
 :::column span="2":::
+
 Before a model is deployed, it's critical to validate its performance metrics. You may have several metrics that are used to indicate the "best" model. It's important to work with data scientists to understand what metrics are important and evaluate them before deployment. There are **tools to evaluate model metrics**, such as a loss function or a confusion matrix.
 
 Metrics usually compare what the model has predicted with what it should have predicted (the true value or ground truth). Overall, the focus is to maximize true positives and true negatives, that is, the model succeeding in predicting true values. It's equally important to avoid false positives and false negatives, that is, wrong predictions and missed predictions.
 
 It's critical to validate performance metrics against the business use case. For example, perhaps you designed a model to predict patient health. As a healthcare provider dealing with life and death situations, you likely prefer to have false positive diagnoses rather than an incredibly high rate of accuracy that misses diagnoses.
+
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/7-discover-business-value-applying-devops-2.png" alt-text="Graphic of an ML model confusion matrix.":::
-The confusion matrix is a two-by-two table. The y-axis is titled, “Predicted Label,” and the x-axis is titled, “True Label.” Along both axes starting in the top left, the first cell is labeled “no,” the second is labeled “yes.” The diagonal cells in the matrix (top left, bottom right) are blue, and contain the values 167 and163. The top right cell is light blue and contains the value 1. The bottom left cell is white and contains the value 0. Below the graphic, text readers, “alignment of true and predicted values indicates high accuracy.” 
-:::image-end:::
+
+> [!div class="mx-imgBorder"] 
+
+> ![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png.png) 
+
 :::column-end:::
 :::row-end:::
 

@@ -22,3 +22,7 @@ Now that you have reviewed this module, you should:
 * To learn more about all the prebuilt AI models available at Azure Cognitive Services, read our [technical documentation on Cognitive Services](/azure/cognitive-services/).
 * To learn more about the models delivered by Azure OpenAI Service, read our [technical documentation on Azure OpenAI Service](/azure/cognitive-services/openai/concepts/models).
 * To learn more about privacy and security in Azure OpenAI Service, read our [legal documentation on Azure OpenAI Service](/legal/cognitive-services/openai/data-privacy).
+
+## References
+
+[(1) Microsoft WorkLab, “Will AI Fix Work,” 2023.](https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work)

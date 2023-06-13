@@ -11,9 +11,9 @@ These solutions are often delivered as SaaS AI solutions, which deliver fast and
 
 **Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
 
-:::image type="content" source="../media/4-use-ai-embedded-everyday-applications-1.png" alt-text="Infuse AI into your core processes":::
+> [!div class="mx-imgBorder"] 
 
-Diagram called “Infuse AI into your core processes.” There are eight boxes, with text in each. They read: Sales, Supply chain, Human Resources, Finance, Marketing, Commerce, Customer service, and Project management.
+> ![Graph depicting the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png) 
 
 Here are some examples of powerful scenarios where AI is already having a proven impact:
 
@@ -48,9 +48,22 @@ When you're not speaking in person, some nuances are missing and misunderstandin
 
 ### Everyday AI for focus
 
-Whether working remotely or in a physical workplace, AI can also help employees focus their time and attention on what matters most.
+:::row:::
+:::column span="2":::
+
+68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup> AI can also help cope with this problem and enable employees to focus their time and attention on what matters most.
 
 For instance, the Briefing email from Cortana compiles valuable information about upcoming meetings and outstanding tasks in Outlook. It also enables employees to set aside daily “focus time” to work uninterrupted with notifications silenced. In Outlook mobile, employees can use natural language to ask Cortana to read out their new emails and share any changes to their schedule—so they can catch up even when their hands are busy with other things.
+
+:::column-end:::
+:::column span="2":::
+
+> [!div class="mx-imgBorder"] 
+
+> ![68% of survey respondents don’t have enough uninterrupted focus time.](../media/4-use-ai-embedded-everyday-applications-2.png) 
+
+:::column-end:::
+:::row-end:::
 
 Copilot adds more features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
 
@@ -66,14 +79,16 @@ Writers can take advantage of intelligent suggestions to not only correct spelli
 
 :::row:::
 :::column span="2":::
-As the world’s information grows by around 60% every year, staying up to date and making sense of it all can be increasingly overwhelming.<sup>1</sup> Yet harnessing information has become the key to almost everything—from improving productivity to understanding customers and much more.
+Harnessing information has become the key to almost everything—from improving productivity to understanding customers and much more. Still, workers consider they spend too much time striggling to find the information they need.<sup>1</sup>
 
 AI-powered search experiences like Microsoft Search can help business users wade through this data to uncover more impactful insights and make better data-driven decisions. Microsoft Search enables users to search for people, files, sites, and more across their organizational data and public web data—all from within the Microsoft 365 products they’re already working in. Results are even personalized to each user to ensure relevance. This feature is improved with Copilot.
 :::column-end:::
 :::column span="2":::
-:::image type="content" source="../media/search-information-statistics.png" alt-text="Searching for information statistics":::
-Statistics with the title “Searching for information” at the top. In the middle, the graphic has two doughnut pie charts with percentages within them and a subtitle at the bottom. One doughnut pie chart has 25% of it blue with the remaining 75% of it light gray. It has the text “25%” in the middle of it. The other doughnut pie chart has 59% of it blue with the remaining 41% light gray. The subtitle is “People spend 25% of their work searching for information with 59% struggling to find it” at the bottom. 
-:::image-end:::
+
+> [!div class="mx-imgBorder"] 
+
+> ![Graph depicting that 62% of survey respondents spent too much time finding information.](../media/4-use-ai-embedded-everyday-applications-3.png) 
+
 :::column-end:::
 :::row-end:::
 
