@@ -16,9 +16,8 @@ For example, you may use generative AI to automatically create avatars. Generati
 :::column-end:::
 :::column span="2"::
 
-> [!div class="mx-imgBorder"] 
 
-> ![Image depicting two concentric circles. The bigger circle is labeled, “AI”. The smaller circle reads, “Generative AI”.](../media/2-identify-basic-ai-technology-concepts-1.png) 
+[![Image depicting two concentric circles. The bigger circle is labeled, “AI”. The smaller circle reads, “Generative AI”.](../media/2-identify-basic-ai-technology-concepts-1.png)](../media/2-identify-basic-ai-technology-concepts-1.png#lightbox)
 
 :::column-end:::
 :::row-end:::
