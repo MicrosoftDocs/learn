@@ -8,6 +8,8 @@ Let's go through an example. Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
+The following steps demonstrate a process of building a more complex tabular expression by applying operators to a starting tabular dataset. Each operator performs its operation on the input and produces a new tabular output.
+
 1. Start with a tabular dataset.
 
     > [!div class="nextstepaction"]
@@ -46,6 +48,8 @@ Let's go through an example. Select the relevant tab for your environment.
 
 ### [Azure Monitor](#tab/azure-monitor)
 
+The following steps demonstrate a process of building a more complex tabular expression by applying operators to a starting tabular dataset. Each operator performs its operation on the input and produces a new tabular output.
+
 1. Start with a tabular dataset.
 
     > [!div class="nextstepaction"]
@@ -83,9 +87,6 @@ Let's go through an example. Select the relevant tab for your environment.
     **Output:** A tabular dataset of logs from the past 24 hours sorted in descending order based on the `ResponseDurationMs` column from the `LAQueryLogs` table.
 
 ---
-
-You can repeat the process by applying more operators to the tabular output.
-Each operator takes the tabular input, performs its operation, and produces a new tabular output.
 
 ## Introduce a variable with a let statement
 
