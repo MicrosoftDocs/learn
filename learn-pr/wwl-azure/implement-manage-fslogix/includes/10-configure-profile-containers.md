@@ -51,7 +51,7 @@ There are often users, such as local administrators that have profiles that shou
 
 By default Everyone is added to the FSLogix Profile Include List group.
 
-:::image type="content" source="../media/configure-profile-containters-image-3-1732033f.png" alt-text="Screenshot of Profile Containers Include list memebers..":::
+:::image type="content" source="../media/configure-profile-containters-image-3-1732033f.png" alt-text="Screenshot of Profile Containers Include list members.":::
 
 
 Adding a user to the FSLogix Profile Exclude List group means that the FSLogix agent won't  attach a FSLogix profile container for the user. In the case where a user is a member of both the exclude and include groups, exclude takes priority.
