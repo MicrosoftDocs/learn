@@ -41,9 +41,8 @@ For instance, deep learning can be used to detect cancerous cells in medical ima
 :::column-end:::
 :::column span="2"::
 
-> [!div class="mx-imgBorder"] 
 
-> ![Graph depicting AI methodologies. Deep learning belongs within machine learning. Machine learning belongs within data science.](../media/2-identify-basic-ai-technology-concepts-2.png) 
+[![Graph depicting AI methodologies. Deep learning belongs within machine learning. Machine learning belongs within data science.](../media/2-identify-basic-ai-technology-concepts-2.png)](../media/2-identify-basic-ai-technology-concepts-2.png#lightbox) 
 
 :::column-end:::
 :::row-end:::

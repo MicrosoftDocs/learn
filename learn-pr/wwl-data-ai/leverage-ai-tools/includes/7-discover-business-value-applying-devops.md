@@ -20,9 +20,7 @@ First, it's helpful to centrally **manage assets** like environments, code, data
 :::column-end:::
 :::column span="2":::
 
-> [!div class="mx-imgBorder"] 
-
-> ![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png.png) 
+[![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png.png)](../media/7-discover-business-value-applying-devops-1.png.png#lightbox)
 
 :::column-end:::
 :::row-end:::
@@ -46,9 +44,8 @@ It's critical to validate performance metrics against the business use case. For
 :::column-end:::
 :::column span="2":::
 
-> [!div class="mx-imgBorder"] 
 
-> ![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png.png) 
+[![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png.png)](../media/7-discover-business-value-applying-devops-2.png.png)
 
 :::column-end:::
 :::row-end:::

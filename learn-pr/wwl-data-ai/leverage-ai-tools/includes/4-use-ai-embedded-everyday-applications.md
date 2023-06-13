@@ -11,9 +11,9 @@ These solutions are often delivered as SaaS AI solutions, which deliver fast and
 
 **Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
 
-> [!div class="mx-imgBorder"] 
 
-> ![Graph depicting the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png) 
+
+[![Graph depicting the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)](../media/4-use-ai-embedded-everyday-applications-1.png#lightbox) 
 
 Here are some examples of powerful scenarios where AI is already having a proven impact:
 
@@ -58,9 +58,9 @@ For instance, the Briefing email from Cortana compiles valuable information abou
 :::column-end:::
 :::column span="2":::
 
-> [!div class="mx-imgBorder"] 
 
-> ![68% of survey respondents don’t have enough uninterrupted focus time.](../media/4-use-ai-embedded-everyday-applications-2.png) 
+
+[![68% of survey respondents don’t have enough uninterrupted focus time.](../media/4-use-ai-embedded-everyday-applications-2.png)](../media/4-use-ai-embedded-everyday-applications-2.png#lightbox)
 
 :::column-end:::
 :::row-end:::
@@ -85,9 +85,9 @@ AI-powered search experiences like Microsoft Search can help business users wade
 :::column-end:::
 :::column span="2":::
 
-> [!div class="mx-imgBorder"] 
 
-> ![Graph depicting that 62% of survey respondents spent too much time finding information.](../media/4-use-ai-embedded-everyday-applications-3.png) 
+
+[![Graph depicting that 62% of survey respondents spent too much time finding information.](../media/4-use-ai-embedded-everyday-applications-3.png)](../media/4-use-ai-embedded-everyday-applications-3.png#lightbox)
 
 :::column-end:::
 :::row-end:::
