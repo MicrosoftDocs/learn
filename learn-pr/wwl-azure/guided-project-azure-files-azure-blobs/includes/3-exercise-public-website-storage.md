@@ -8,6 +8,7 @@ The company website supplies product images, videos, marketing literature, and c
 | --- | --- |
 | :::image type="content" source="../media/task-2.png" alt-text="Diagram with one storage account and one blob container." border="true"::: | <ul><li>Create a storage account with anonymous public access. </li><li> Create a blob storage container. </li><li> Enable soft delete and versioning. </li></ul> |
 
+
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 
 > [!NOTE]
