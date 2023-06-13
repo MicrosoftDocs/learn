@@ -1,22 +1,24 @@
 ## Scenario
 
-Let's remember our scenario, in which you're the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region, and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database that offers you a status on each sale. You might decide to use change data capture (CDC) and enable it on each of your regional inventory databases in order to track data changes and send these changes to the national/regional central database. The data changes would be tracked on CDC tables on your source database, and you might decide to use a streaming service such as Azure Data Factory to consume the changes from the CDC tables and stream them to the national/regional database. But before doing that, let's learn more about CDC.
+Let's remember our scenario, in which you're the CTO of a healthcare business that sells medical equipment in different regions around the country. You have different inventory databases in each region, and you want to ensure that these databases are all replicating data changes to a central country-wide inventory database that offers you a status on each sale. You might decide to use change data capture (CDC) and enable it on each of your regional inventory databases in order to track data changes on your source database, then you might decide to use a streaming service such as Azure Data Factory to consume changes from the CDC tables and stream them to the national/regional database.
+
+Let's learn more about CDC. 
 
 ## How it works
 
-Change data capture (CDC) records insert, update, and delete activity that applies to a table. On SQL Server and Azure SQL Managed Instance, the SQL Server Agent runs the CDC scan and cleanup. However, on Azure SQL Databases, a scheduler takes the place of the SQL Server Agent. The scheduler runs capture and cleanup automatically within the database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
+Once enabled on a table, change data capture (CDC) creates a record for insert, update, and delete activity that applies to the table. On SQL Server and Azure SQL Managed Instance, the SQL Server Agent runs the CDC scan and cleanup jobs. However, on Azure SQL Databases, a scheduler takes the place of the SQL Server Agent. The scheduler runs capture and cleanup jobs automatically within the database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
 
 The following steps highlight how CDC works on Azure SQL Databases:
 
 1. Enable CDC on the source database and tables that you want to track for Data Modification Language (DML) changes: insert, update, and delete.
 
-2. Once you enable CDC on your source tables, associated change tables are created for each source table enabled. Change tables are system tables on your source database.  
+2. Once you enable CDC on your source tables, associated change tables are created for each enabled source table. Change tables are system tables on your source database.  
 
-3. As you make DML changes on your source table enabled for CDC, those changes are reflected in the database transaction log. The CDC scan process picks up the committed changes from the log and adds them to the change table associated to the CDC-enabled source table. The commit log sequence number (LSN) identifies changes that were committed in the same transaction and orders those transactions.
+3. When you make DML changes on your CDC-enabled source table enabled, these changes are reflected in the database transaction log. The CDC scan process picks up the committed changes from the transaction log and adds them to the change table associated to the CDC-enabled source table. The commit log sequence number (LSN) identifies changes that were committed in the same transaction and orders those transactions.
 
 4. The cleanup process cleans the change tables on a retention-based policy set by the user. The default retention period is three days.
 
-5. Query functions are provided to allow systematic access to the change data stored in the change tables.
+5. Query functions allow systematic access to the change data stored in the change tables.
 
 The following illustration shows the principal data flow for CDC.
 

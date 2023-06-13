@@ -4,7 +4,7 @@ As the CTO of our healthcare company, you might decide to build a solution that 
 
 ## How it works
 
-SQL Data Sync is a service built on Azure SQL Database that lets you synchronize the data you select bidirectionally across multiple databases, both on-premises and in the cloud (SQL Server and Azure SQL Databases). Data Sync is based around the concept of a *sync group*. A sync group is a group of databases that you want to synchronize using a hub and spoke topology. You'll define one of the databases in the sync group as the hub database, while the rest of the databases are member databases.
+SQL Data Sync is a service built on Azure SQL Database that lets you synchronize the data you select bidirectionally across multiple databases, both on-premises (SQL Server) and in the cloud (Azure SQL Database). Data Sync is based around the concept of a *sync group*. A sync group is a group of databases that you want to synchronize using a hub and spoke topology. You'll define one of the databases in the sync group as the hub database, while the rest of the databases are member databases.
 
 Within a sync group:
 
@@ -16,7 +16,7 @@ Within a sync group:
 
 Additionally, a sync group has the following properties:
 
-- The Sync schema describes which data is being synchronized. For synchronization, you can select specific columns within your tables. Please bear in mind that your tables selected for synchronization must have a primary key (PK).
+- The Sync schema describes which data is being synchronized. For synchronization, you can select specific columns within your tables. Bear in mind that tables selected for synchronization must have a primary key (PK).
 - The Sync direction can be bidirectional or can flow in only one direction; that is, the Sync direction can be hub to member, member to hub, or both.
 - The Sync interval describes how often synchronization occurs. You can configure sync to run synchronization automatically (for example, every few seconds up to every 30 days) or manually on demand.
 - The Conflict Resolution Policy is a group-level policy, which can be hub wins or member wins.
