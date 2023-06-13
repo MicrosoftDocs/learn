@@ -9257,37 +9257,37 @@
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/2-definition.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/2-definition",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/2-what-is-azure-digital-twins",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/3-benefits.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/3-benefits",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/4-use-cases.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/4-use-cases",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/4-when-to-use-azure-digital-twins",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/5-explore.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/5-explore",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/3-how-azure-digital-twins-works",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/6-consortium.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/6-consortium",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/7-knowledge-check.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/7-knowledge-check",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/5-knowledge-check",
       "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/iot/develop-with-azure-digital-twins/introduction-to-azure-digital-twins/8-summary.md",
-      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/8-summary",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/6-summary",
       "redirect_document_id": true
     },
     {
@@ -11772,42 +11772,37 @@
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/3-benefits.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/6-consortium.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/2-definition.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/2-what-is-azure-digital-twins",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/5-explore.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
-      "redirect_document_id": false
-    },
-    {
-      "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/1-introduction.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/3-how-azure-digital-twins-works",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/7-knowledge-check.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/5-knowledge-check",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/8-summary.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/6-summary",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/iot/introduction-to-azure-digital-twins/4-use-cases.md",
-      "redirect_url": "/training/modules/examine-components-azure-digital-twins-solution/",
+      "redirect_url": "/training/modules/introduction-to-azure-digital-twins/4-when-to-use-azure-digital-twins",
       "redirect_document_id": false
     },
     {
