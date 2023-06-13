@@ -8,7 +8,7 @@ Let's go through an example. Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
-The following steps demonstrate a process of building a more complex tabular expression by applying operators to a starting tabular dataset. Each operator performs its operation on the input and produces a new tabular output.
+The following steps demonstrate a process of building a more complex query by applying operators to a starting tabular dataset. The query is composed of tabular expression statements, some of which contain operators. Each operator takes the tabular input, performs its operation, and produces a new tabular output.
 
 1. Start with a tabular dataset.
 
@@ -48,7 +48,7 @@ The following steps demonstrate a process of building a more complex tabular exp
 
 ### [Azure Monitor](#tab/azure-monitor)
 
-The following steps demonstrate a process of building a more complex tabular expression by applying operators to a starting tabular dataset. Each operator performs its operation on the input and produces a new tabular output.
+The following steps demonstrate a process of building a more complex query by applying operators to a starting tabular dataset. The query is composed of tabular expression statements, some of which contain operators. Each operator takes the tabular input, performs its operation, and produces a new tabular output.
 
 1. Start with a tabular dataset.
 
