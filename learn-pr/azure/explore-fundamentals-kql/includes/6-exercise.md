@@ -31,7 +31,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | where State == "FLORIDA"
     ```
 
-    **Output**: A tabular dataset of storms in the state of "FLORIDA" from the `StormEvents` table.
+    **Output**: A tabular dataset of `StormEvents` records in the state of "FLORIDA".
 
 1. Use another operator to further manipulate the tabular output.
 
@@ -44,7 +44,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | sort by InjuriesDirect desc
     ```
 
-    **Output:** A tabular dataset with the "FLORIDA" events sorted in descending order based on the `InjuriesDirect` column from the `StormEvents` table.
+    **Output:** A tabular dataset of `StormEvents` records in "FLORIDA" sorted in descending order based on the `InjuriesDirect` column.
 
 ### [Azure Monitor](#tab/azure-monitor)
 
@@ -64,27 +64,27 @@ The following steps demonstrate how to build a query by applying operators to a 
 1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
     > [!div class="nextstepaction"]
-    > <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA%252FNxDCxNLar0yU8v5qpRKM9ILUpVCMnMTXVPzUstSixJTVFISi0pT03NU9BITM%252FXMDLJ0FTQ01PIyy%252FX0NQEAIdxuSw9AAAA" target="_blank">Run the query</a>
+    > <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA%252FNxDCxNLar0yU8v5qpRKM9ILUpVCEotLsjPK051zk9JVVC0VTAyMAAA0cFyMicAAAA%253D/timespan/P1D" target="_blank">Run the query</a>
 
     ```kusto
     LAQueryLogs
-    | where TimeGenerated between (ago(24h) .. now())
+    | where ResponseCode != 200
     ```
 
-    **Output**: A tabular dataset of logs from the past 24 hours in the `LAQueryLogs` table.
+    **Output**: A tabular dataset of `LAQueryLogs` records whose response code isn't `200`.
 
 1. Use another operator to further manipulate the tabular output.
 
     > [!div class="nextstepaction"]
-    > <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAAw3LOw5AQBQF0N4qbjnTKMQGJBINBbEBnxsU3pN5IxOJxXP601b9zfC0uln2Iu0MxHicbCgMU%252BSKmTGRAjdt6opy98hziCbn%252FT9MQ8T8YKBdKsb6%252Fteh0hlW2vIBt1sSz18AAAA%253D" target="_blank">Run the query</a>
+    > <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA%252FNxDCxNLar0yU8v5qpRKM9ILUpVCEotLsjPK051zk9JVVC0VTAyMADKFecXlSgkVcJlXUqLEksy8%252FN8ixVSUouTAReLBGRJAAAA/timespan/P1D" target="_blank">Run the query</a>
 
     ```kusto
     LAQueryLogs
-    | where TimeGenerated between (ago(24h) .. now())
+    | where ResponseCode != 200
     | sort by ResponseDurationMs desc
     ```
 
-    **Output:** A tabular dataset of logs from the past 24 hours sorted in descending order based on the `ResponseDurationMs` column from the `LAQueryLogs` table.
+    **Output:** A tabular dataset of of `LAQueryLogs` records whose response code isn't `200` sorted in descending order based on the `ResponseDurationMs`.
 
 ---
 
@@ -112,16 +112,15 @@ StormEvents
 
 ### [Azure Monitor](#tab/azure-monitor)
 
-In the following query, `start` and `end` are variables that can be assigned values according to your specific requirements. The variable is then used within the query to filter the `LAQueryLogs` table for logs from the past 48 hours.
+In the following query, `responseCodes` is a variable of type dynamic array that contains response codes. The variable is then used within the query to filter the `LAQueryLogs` table for logs with those response codes.
 
 > [!div class="nextstepaction"]
-> <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA8tJLVEoLkksKrFNSSxJLcnMTdVQNzDTNTDUNTIwMlbXtObKAapIzUtBkzeHy%252Fs4BpamFlX65KcXc9UolGekFqUqhADVuafmpRYB9aQoJKWWlKem5ilogC1S0NMDmacJVFycD%252BQmVSoEpRYX5OcVp7qUAjVk5uf5FiukpBYnAwDIty9%252FnAAAAA%253D%253D" target="_blank">Run the query</a>
+> <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA8tJLVEoSi0uyM8rTnXOT0kttk2pzEvMzUzWiDYxMNBRMLG0jNW05vJxDCxNLar0yU8v5qpRKM9ILUpVCELSppCZp6CBYo4mUF1xflGJQlIlXKVLaVFiSWZ%252Bnm%252BxAlBFMgAwPbQcfAAAAA%253D%253D/timespan/P1D" target="_blank">Run the query</a>
 
 ```kusto
-let start=datetime('06-01-2023');
-let end=datetime('06-07-2023');
+let responseCodes=dynamic([400, 499]);
 LAQueryLogs
-| where TimeGenerated between (start .. end)
+| where ResponseCode in (responseCodes)
 | sort by ResponseDurationMs desc
 ```
 
@@ -151,17 +150,18 @@ EventsWithInjuries("CALIFORNIA", 10)
 
 ### [Azure Monitor](#tab/azure-monitor)
 
-In the following query, we define a function called `LogsBetween` with two parameters: `start` (datetime) and `end` (datetime). The function filters the `LAQueryLogs` table based on the provided start and end time criteria. Finally, we call the function by passing specific arguments and print the results.
+In the following query, we define a function called `LogsOfResponseCode` with a single parameter called `responseCodes` (dynamic). The function filters the `LAQueryLogs` table based on the provided response codes dynamic array. Finally, we call the function by passing specific arguments and print the results.
 
 > [!div class="nextstepaction"]
-> <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA8tJLVHwyU8vdkotKU9NzVOwVdAoLkksKrFSSEksSS3JzE3VUUjNS0FwNRWquRSAwMcxsDS1qBKkF8yvUSjPSC1KVQgBqnFPzUstAqpPUUiCGgsxVEFPD2SYJletNReSpRowszXUDcx0DQx1jQyMjNU1dRRQxc2h4prWACDinza1AAAA" target="_blank">Run the query</a>
+> <a href="https://ms.portal.azure.com#@72f988bf-86f1-41af-91ab-2d7cd011db47/blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade/resourceId/%2FDemo/source/LogsBlade.AnalyticsShareLinkToQuery/q/H4sIAAAAAAAAA8tJLVHwyU8v9k8LSi0uyM8rTnXOT0lVsFXQKELiF1sppFTmJeZmJmsqVHMpAIGPY2BpalElSCuYX6NQnpFalKqAYkpmHpoxmlC1xflFJQpJlXDVLqVFiSWZ%252BXm%252BxQpAVclctdZcmI7SgDpBI9rEwEBHwcTSMlZT0xoA%252FtwpXMEAAAA%253D/timespan/P1D" target="_blank">Run the query</a>
 
 ```kusto
-let LogsBetween = (start: datetime, end: datetime) {
+let LogsOfResponseCode = (responseCodes: dynamic) {
     LAQueryLogs
-    | where TimeGenerated between (start .. end)
+    | where ResponseCode in (responseCodes)
+    | sort by ResponseDurationMs desc
 };
-LogsBetween(datetime('06-01-2023'), datetime('06-07-2023'));
+LogsOfResponseCode(dynamic([400, 499]));
 ```
 
 ---
