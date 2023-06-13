@@ -40,6 +40,5 @@ units:
 - learn.wwl.create-classes.use-namespaces
 - learn.wwl.create-classes.knowledge-check
 - learn.wwl.create-classes.summary
-- learn.wwl.create-classes.test-unit
 badge:
   uid: learn.wwl.create-classes.badge
