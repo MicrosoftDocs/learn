@@ -128,15 +128,11 @@ LAQueryLogs
 
 ## Translate the query into a function
 
-Now, let's explore how to generalize functionality into user-defined and stored functions.
+Now, let's explore how to generalize functionality into a user-defined function. Query-defined functions are a type of user-defined function that work within the scope of a single query and can be reused within that query.
 
 Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
-
-### Create a query-defined function
-
-Query-defined functions are defined within the scope of a single query and can be reused within that query.
 
 In the following query, we define a function called `EventsWithInjuries` with two parameters: `state` (string) and `injuryThreshold` (integer). The function filters the `StormEvents` table based on the provided state and injury threshold criteria. Finally, we call the function by passing specific arguments and print the results.
 
@@ -152,25 +148,7 @@ let EventsWithInjuries = (state: string, injuryThreshold: int) {
 EventsWithInjuries("CALIFORNIA", 10)
 ```
 
-### Create a stored function
-
-Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries.
-
-```kusto
-.create function
-with (docstring = 'Function to find all events with injuries above a certain threshold in a certain state', folder='Demo')
-    EventsWithInjuries(state: string, injuryThreshold: int) {
-        StormEvents
-        | where State == state
-        | where InjuriesDirect + InjuriesIndirect > injuryThreshold
-    }
-```
-
 ### [Azure Monitor](#tab/azure-monitor)
-
-### Create a query-defined function
-
-Query-defined functions are defined within the scope of a single query and can be reused within that query.
 
 In the following query, we define a function called `LogsBetween` with two parameters: `start` (datetime) and `end` (datetime). The function filters the `LAQueryLogs` table based on the provided start and end time criteria. Finally, we call the function by passing specific arguments and print the results.
 
@@ -183,19 +161,6 @@ let LogsBetween = (start: datetime, end: datetime) {
     | where TimeGenerated between (start .. end)
 };
 LogsBetween(datetime('06-01-2023'), datetime('06-07-2023'));
-```
-
-### Create a stored function
-
-Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries.
-
-```kusto
-.create function
-with (docstring = 'Function to find all logs between the given time range', folder='Demo')
-    LogsBetween(start: datetime, end: datetime) {
-    LAQueryLogs
-    | where TimeGenerated between (start .. end)
-}
 ```
 
 ---
