@@ -22,27 +22,27 @@ public class ExampleModel ​
 
 ### SQL Injection
 
-Injection attacks can take many forms, i.e. SQL or command injection.
+Injection attacks can take many forms, that is, SQL or command injection.
 The following statement is a simple example of SQL injection, where `username` in an unsanitised query input parameter:
 
 ```sql
 string sql = ​"SELECT * FROM users WHERE name = '" + username + "';";
 ```
 
-Without validating the user input, a malicious actor could supplement a genuine user name for a crafted part of a SQL statement `a';DROP TABLE users;--` resulting in a change of query intentions:
+In absence of user input validation, a malicious actor could supplement a genuine user name for a crafted part of a SQL statement `a';DROP TABLE users;--` resulting in a change of query intentions:
 
 ```sql
 SELECT * FROM Users WHERE name = 'a';DROP TABLE users;--
 ```
 
-As a result, the table containing user information will be removed from the database. In a similar way, statements can be crafted to extract data prior to data table deletion.
+As a result, the table containing user information is removed from the database. In a similar way, statements can be crafted to extract data prior to data table deletion.
 
 ### File Input Validation
 
 In client-server scenarios, make sure the input is validated on both the client and the server side.
 Additionally, if validation passes on the server, process the form and send a success status code (200 - OK). ​However, if validation fails, return a failure status code (400 - Bad Request) and the field validation errors. Validation details from the server may give the malicious actor more insights on how your app logic works if displayed on the client side.
 
-Input validation also includes the way you handle file uploads. The following example from an ASP.NET Blazor component attempts to validate file correctness before uploading it to Azure Blob Storage, including checking for the expected extension and max file size, as well as overriding the supplied filename with a random name.
+Input validation also includes the way you handle file uploads. Consider ASP.NET Blazor component handling user file upload. Checks for correctness, before uploading it to Azure Blob Storage, include extension and maximum file size inspection, and overriding the supplied filename with a random name.
 
 ```csharp actor
 <InputFile OnChange = "@LoadFile" />
