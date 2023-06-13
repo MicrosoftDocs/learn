@@ -7,7 +7,7 @@ In Azure Digital Twins, you freely define the types of digital entities that rep
 >[!TIP]
 >From a programming perspective, models are similar to class definitions.
 
-Models for Azure Digital Twins are defined using the Digital Twins Definition Language (DTDL). DTDL is based on JSON-LD and is programming-language independent, so you can write it in any text editor by creating valid DTDL files with a *json* extension. DTDL isn't exclusive to Azure Digital Twins; it's also used to represent device data in other IoT services such as IoT Plug and Play.
+Models for Azure Digital Twins are defined using the Digital Twins Definition Language (DTDL). DTDL is based on JSON-LD and is programming-language independent, so you can write it in any text editor by creating valid DTDL files with a *json* extension. DTDL isn't exclusive to Azure Digital Twins; it's also used to represent device data in other IoT services such as IoT Plug and Play. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies provided by Microsoft based on common vocabulary for your industry. You can also bring models from outside of Azure Digital Twins and convert them to DTDL, to make them compatible with Azure Digital Twins. If you design models from scratch, you may still want to consider using published industry standards in your solution language to help make them more recognizable and extensible.
 
 The following code snippet shows the DTDL inside a model file. This example aligns with the factory scenario for this module and represents the concept of a robotic arm. The model has several properties representing box pickup information, including a boolean property indicating an alert that the latest package was not picked up, and a property representing its hydraulic pressure level.
 
@@ -108,7 +108,7 @@ Then, when you create the digital twin for the distribution center, you can add 
 
 Here's a screenshot from Azure Digital Twins Explorer, showing a graph that contains one distribution center twin, *DistCtr*, and six robot arm twins, *Arm1* through *Arm6*. *DistCtr* has a *contains* relationship to each of the arm twins.
 
-:::image type="content" source="../media/1-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/1-3-factory-graph.png":::
+:::image type="content" source="../media/2-3-factory-graph.png" alt-text="Screenshot of Azure Digital Twins Explorer showing a 2D graph. In the graph, one distribution center twin is connected to six arm twins via six lines labeled contains." border="false" lightbox="../media/2-3-factory-graph.png":::
 
 ## Set up data flow
 
@@ -116,7 +116,7 @@ Now that you have a static graph representing the entities in your environment a
 
 Using Azure functions, you can ingest data into your graph from many sources, including event data from IoT Hub devices and business data from across Azure or external applications. In the function body, you define how data is processed and map it to the correct twins in your graph. You can also create Azure functions to propagate data throughout the twin graph, so that when one twin receives an update, other related twins automatically update accordingly.
 
-In the factory example for this module, you'll first make sure the robot arm devices are connected to IoT Hub, an Azure service for managing IoT devices in the cloud. Then, you can create an Azure function that's connected to the IoT Hub, watching for device updates and routing them into Azure Digital Twins. The function body will also define how to process the data into the graph, making sure that data from each physical arm is used to update the properties on its corresponding digital twin. This will hydrate your graph with data that you can use to monitor the performance of each arm, to help you identify specific machines that are underperforming so they can be investigated, repaired, or replaced.
+In the factory example for this module, you'll first make sure the robot arm devices are connected to **IoT Hub**, an Azure service for managing IoT devices in the cloud. Then, you can create an **Azure function** that's connected to the IoT Hub, watching for device updates and routing them into Azure Digital Twins. The function body will also define how to process the data into the graph, making sure that data from each physical arm is used to update the properties on its corresponding digital twin. This will hydrate your graph with data that you can use to monitor the performance of each arm, to help you identify specific machines that are underperforming so they can be investigated, repaired, or replaced.
 
 To help you monitor overall efficiency of box pickups in the distribution center, you'll also create an Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all. Recall from the example in the [Define models](#define-models) section that each robot arm twin has an integer property *FailedPickupsLastHr*. You'll aggregate that data from all arm twins, using the following steps.
 
@@ -132,7 +132,13 @@ In the next section, you'll see how to query the graph to gather insights and ex
 
 ## Query and export data
 
-Now that your graph is complete and property values are regularly being updated, you can query your graph using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer. Azure Digital Twins uses a custom **query language** that's similar to SQL, which can retrieve digital twins according to their properties, models, and relationships. One way to use the queries in the factory example for this module is to program their results into custom applications or dashboards to display to factory operators in real time.
+Now that your graph is complete and property values are regularly being updated, you can query your graph using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer. Azure Digital Twins uses a custom **query language** that's similar to SQL, which can retrieve digital twins according to their properties, models, and relationships. Here's an example query that will return all robotic arms that currently hold a `PickupFailedAlert` value of True.
+
+```SQL
+SELECT * FROM DIGITALTWINS T WHERE T.PickupFailedAlert = True
+```
+
+One way to use the query results in the factory example for this module is to program them into custom applications or dashboards to display to factory operators in near-real time.
 
 You can also query historized twin data collected over time using the **data history** feature, to have a wider pool of environment data and the ability to identify patterns over time. You can set up a data history connection that connects an Azure Digital Twins instance to an Azure Data Explorer cluster, so that graph updates are automatically stored in Azure Data Explorer. From there, you can query the data in Azure Data Explorer, and use the results however you'd like. In the factory example for this module, you might want to collect this historical data so that whenever a robotic arm fails to pick up a package, you can investigate how frequent that behavior has been over the past day, week, month, etc. This will help you identify if the arm needs to be replaced.
 

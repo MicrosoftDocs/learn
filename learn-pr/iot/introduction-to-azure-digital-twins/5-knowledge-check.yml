@@ -16,18 +16,47 @@ durationInMinutes: 7
 content: |
 quiz:
   questions:
-  - content: Question about the definitions of models, twins, and the twin graph
+  - content: How many models should be created for a Azure Digital Twins solution?
     choices:
-    - content: 
+    - content: One model for the entire solution
       isCorrect: false
-      explanation: 
-  - content: Question about what insights you can gather from querying
+      explanation: Incorrect. The overall solution is represented by a graph of many digital twins, each one an instance of a model type.
+    - content: One model for each type of entity in your environment
+      isCorrect: true
+      explanation: Correct. A model is a conceptual definition of a type of thing. You use a model definition to create many digital twins for the many specific entities of that type.
+    - content: One model for each physical element in your environment
+      isCorrect: false
+      explanation: Incorrect. Individual elements in your environment are represented by digital twins, which are instances of a model type.
+  - content: Which of these Azure services is NOT used to ingest data into Azure Digital Twins?
     choices:
-    - content: 
+    - content: IoT Hub
       isCorrect: false
-      explanation: 
-  - content: Question about how data is ingested into and exported out of Azure Digital Twins
+      explanation: Incorrect. IoT Hub is the first cloud destination for IoT data. From here, the data can be sent to other Azure services, including Azure Digital Twins.
+    - content: Azure Functions
+      isCorrect: false
+      explanation: Incorrect. Azure Functions are used to collect data from IoT Hub and other sources and use the data to update relevant digital twins.
+    - content: Azure Data Explorer
+      isCorrect: true
+      explanation: Correct. Azure Data Explorer isn't needed to ingest device data into Azure Digital Twins. It's a great egress destination for digital twin data to enable digital twin queries over time.
+  - content: A real estate developer already has digital models for their environment, created in the OWL language based on industry standards. Can they use their models in Azure Digital Twins?
     choices:
-    - content: 
+    - content: Yes. Any model files can be imported into Azure Digital Twins.
       isCorrect: false
-      explanation: 
+      explanation: Incorrect. Although model files can be written in any text editor, they must be in DTDL format to work with Azure Digital Twins.
+    - content: Yes, but they must first be converted to the DTDL language.
+      isCorrect: true
+      explanation: Correct.
+    - content: No. Models must be written from scratch specifically for use in Azure Digital Twins.
+      isCorrect: false
+      explanation: Incorrect. Developers are encouraged to incorporate industry standards into their modeling, including using Microsoft's existing industry ontologies or converting existing industry models to DTDL.
+  - content: A facilities operator in a processing plant needs a cloud IoT solution that allows them to visualize the floor, identify at a glance when a machine is overheating, and send a command to shut the machine down. Is Azure Digital Twins a good solution for this scenario?
+    choices:
+    - content: No, because Azure Digital Twins can't update devices directly.
+      isCorrect: true
+      explanation: Correct. Azure Digital Twins isn't intended for device management and doesn't support device Commands.
+    - content: No, because Azure Digital Twins is a conceptual graph and doesn't provide visualization.
+      isCorrect: false
+      explanation: Incorrect. Azure Digital Twins provides 2D graph visualization through Azure Digital Twins Explorer, and 3D scene visualization through 3D Scenes Studio.
+    - content: Yes, Azure Digital Twins is a complete solution for managing and visualizing devices.
+      isCorrect: false
+      explanation: Incorrect. Azure Digital Twins is not intended for device management, and relies on cooperation with IoT Hub for device interactions.

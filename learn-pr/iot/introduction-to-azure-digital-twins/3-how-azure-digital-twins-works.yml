@@ -12,6 +12,6 @@ metadata:
   manager: lizross
   ms.topic: module-intro-to-product
   ms.prod: learning-azure
-durationInMinutes: 10
+durationInMinutes: 15
 content: |
   [!include[](includes/3-how-azure-digital-twins-works.md)]
