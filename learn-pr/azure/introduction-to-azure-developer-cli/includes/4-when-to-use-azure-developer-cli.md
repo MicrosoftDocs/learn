@@ -1,0 +1,9 @@
+The Azure Developer CLI provides value to both individuals and teams in a variety of scenarios. The templated approach of the tool enables repeatable and predictable deployment scenarios that would otherwise require many manual steps. Some of the most common use cases for `azd` are as follows:
+
+* **Streamlined journey to the cloud** `azd` accelerates the process of moving your app from a local development environment to Azure. By leveraging existing `azd` templates, you can provision your app to a fully configured cloud environment in minutes. Developers who are unfamiliar with Azure provisioning and configuration tasks can rely on templates to complete the majority of the work for them.
+
+* **Reusable and repeatable app infrastructure** - `azd` templates makes it easy to share and redistribute both the source code and infrastructure scaffolding of your apps. They are a great fit for scenarios where you would like to apply infrastructure-as-code (IaC) principles to your app. The templates includes all of the necessary provisioning and deployment templates, so even developers who are unfamiliar with Azure can quickly get started.
+
+* **CI/CD for infrastructure and deployment** - You can also use `azd` when you want to provision and deploy your infrastructure using CI/CD through platforms such as GitHub Actions or Azure Pipelines. Most `azd` templates include support for these workflows. As you make changes to your code or infrastructure templates, you can run commands such as `azd deploy` and `azd provision` to push those changes to Azure with a repeatable, reliable process.
+
+Consider these scenarios when evaluating whether `azd` is a good fit for your team and project. Other developers will be able to quickly provision and deploy the app to Azure if you convert your project to an `azd` template.

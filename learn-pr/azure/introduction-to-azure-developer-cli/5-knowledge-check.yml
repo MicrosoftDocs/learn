@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-developer-cli.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of the Azure Developer CLI
+  ms.date: 11/01/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What technology does `azd` use to provision Azure resources?"
+    choices:
+    - content: "Azure PowerShell"
+      isCorrect: true
+      explanation: "Incorrect. The Azure Developer CLI does not use PowerShell to provision Azure resources."
+    - content: "Azure CLI"
+      isCorrect: false
+      explanation: "Incorrect. The Azure CLI is a separate administrative tool that is not used by the Azure Developer CLI."
+    - content: "The Azure SDK"
+      isCorrect: false
+      explanation: "Incorrect. The Azure SDK is a set of libraries that you can use to write code that interacts with Azure resources."
+    - content: "Azure Bicep"
+      isCorrect: true
+      explanation: "Correct. `azd` relies on Bicep templates to create resources in Azure."
+  - content: "What is the purpose of the `azure.yaml`` file?"
+    choices:
+    - content: "Defines the CI/CD pipeline for your `azd` template."
+      isCorrect: false
+      explanation: "Incorrect. The CI/CD pipeline is defined in the `azure-dev.yaml` file."
+    - content: "Describes and maps your application code to provisioned resources in Azure."
+      isCorrect: true
+      explanation: "Correct. The `azure.yaml` file describes the resources that your application code requires in Azure."
+    - content: "Defines a dev container environment for the project."
+      isCorrect: false
+      explanation: "Incorrect. The `.devcontainer.json` file is used to setup dev containers for `azd` templates."
+    - content: "Defines the infrastructure-as-code templates that will create resources in Azure."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure-as-code templates are defined in the template's Bicep files."
+  - content: "What happens when you run the `azd up` command?"
+    choices:
+    - content: "The application is built and the necessary resources are provisioned and deployed to Azure."
+      isCorrect: true
+      explanation: "Correct. The `azd up` command is the most common workflow for provisioning and deploying resources to Azure."
+    - content: "The specified `azd` template is cloned down from GitHub."
+      isCorrect: false
+      explanation: "Incorrect. The `azd init` command clones and initializes the specified template using the `-template` parameter."
+    - content: "The CI/CD pipeline of the specified `azd` template is executed."
+      isCorrect: false
+      explanation: "Incorrect. To execute the CI/CD pipeline, you must run the `azd pipeline` command."
+    - content: "Monitoring resources are configured to provide live metrics for the app."
+      isCorrect: false
+      explanation: "Incorrect. To configure monitoring, you must run the `azd monitor` command."
+  - content: "Suppose an API administrator with a large deployment of APIs wants to enhance API monetization by encouraging more developers to subscribe to their APIs. Which one of the following API benefits would help them accomplish their goal?"
+    choices:
+    - content: "Creating a central access point for administration"
+      isCorrect: false
+      explanation: "Incorrect. Although a centralized API administrative interface helps with administrative operations such as policy creation and user management, it doesn't directly encourage more developers to use your APIs."
+    - content: "Creating a central access point for developers"
+      isCorrect: true
+      explanation: "Correct. Having all your API documentation, code samples, and subscription access in a single developer portal enables developers to more easily find and subscribe to your APIs."
+    - content: "Creating a central access point for API deployment."
+      isCorrect: false
+      explanation: "Incorrect. While routing all API requests through a single base URL makes it easier to enforce policies and apply transformations, it doesn't encourage developers to subscribe to your APIs."
+  - content: "Suppose the senior security engineer for a large API deployment wants to reduce the chances of consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
+    choices:
+    - content: "Require subscription keys"
+      isCorrect: false
+      explanation: "Incorrect. Although requiring a subscription key to send a request to an API is a fundamental way to authorize access to the API, it doesn't by itself guard the API against misuse."
+    - content: "Require client Basic authentication"
+      isCorrect: false
+      explanation: "Incorrect. Although requiring a user name and password to send a request to an API can help ensure that only authorized users access the API, this authentication doesn't by itself protect the API against misuse."
+    - content: "Set rate limits"
+      isCorrect: true
+      explanation: "Correct. By throttling API access to a specified number of calls over a defined time frame per subscription or other value, you help guard your API against customer misuse."
