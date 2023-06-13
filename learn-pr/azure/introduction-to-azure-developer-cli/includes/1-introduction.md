@@ -28,4 +28,4 @@ In this module, you will:
 
 ## What is the main goal?
 
-By the end of this session, you'll understand the advantages of the Azure Developer CLI and be able to evaluate whether it is the correct solution for your applications.
+By the end of this session, you'll understand the advantages of the Azure Developer CLI and evaluate whether it's a good fit for your project.
