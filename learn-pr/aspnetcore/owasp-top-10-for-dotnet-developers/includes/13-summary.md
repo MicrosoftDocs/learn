@@ -5,13 +5,13 @@ The objectives of the module were to explain:
 * what OWASP Top 10 is and its importance
 * how can it be used as a reference in writing more secure code.
 
-We started by explaining the threat landscape and complexity associated with modern day application security. Going one by one through the recently updated list OWASP Top 10 equipped us in methods and techniques used by malicious actors to compromise an app. More importantly we learned how we, the authors and maintainers of any size codebase, can improve it's security posture.
+We started by explaining the threat landscape and complexity associated with modern day application security. Going one by one through the recently updated list OWASP Top 10 equipped us in methods and techniques used by malicious actors to compromise an app. More importantly we learned how we, the authors and maintainers of any size codebase, can improve its security posture.
 
-No matter if you are designing a brand new green field application or contributing to large-scale open source project best, security principles apply. Shift security left and conduct security requirement and design reviews, perform threat modeling, use automation to scan for vulnerabilities as you write code (with static code analysis tools) and as part of the CI/CD process. Follow compartmentalization best practices zero trust and least-privilege principles.
+No matter if you're designing a brand new green field application or contributing to large-scale open source project best, security principles apply. Shift security left and conduct security requirement and design reviews, perform threat modeling, use automation to scan for vulnerabilities as you write code (with static code analysis tools) and as part of the CI/CD process. Follow compartmentalization best practices zero trust and least-privilege principles.
 
 The developers shouldn't only be focusing on just their own code. Single codebase monolith applications of the past give place to microservice architecture. Distributed applications are made up of lots of moving parts, all of which are integral to their operation.
 
-Shift left security. Don't treat security as an afterthought. The sooner you start addressing security considerations the easier and cheaper it is to implement them.
+Shift left security. Don't treat security as an afterthought. The sooner you start addressing security considerations the easier and cheaper it's to implement them.
 Remember the Zero Trust principles and apply them in your apps in systems
 
 Security code reviews, automation of security checks with SAST, DAST and SCA, and threat modeling can identify most of the OWASP Top 10 items.
