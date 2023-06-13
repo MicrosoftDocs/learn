@@ -28,7 +28,7 @@ These six principles are independent of the following:
 
 Alongside the six principles of Sustainable Software Engineering, there are two philosophies.
 
-1. **Everyone has a part to play in the climate solution**
+- **Everyone has a part to play in the climate solution**
 
     If you're reading this document and identify as a Sustainable Software Engineer, know you're part of a massive global movement of people who care and are taking action. Sustainable Software Engineers work in every discipline across engineering, from designing silicon to designing user experiences.
 
@@ -36,6 +36,6 @@ Alongside the six principles of Sustainable Software Engineering, there are two 
 
     As Sustainable Software Engineers, we believe that everyone has a part to play in the climate solution. Sustainable Software Engineering is inclusive. Whatever sector, industry, role, or technology, you can always do something to have an impact.
 
-1. **Sustainability is enough, all by itself, to justify our work**
+- **Sustainability is enough, all by itself, to justify our work**
 
     As Sustainable Software Engineers, we recognize many advantages to building sustainable applications. They're almost always cheaper, they're often more performant, and they're often more resilient. But we're primarily practicing Sustainable Software Engineering for sustainability; everything else is an added advantage.
