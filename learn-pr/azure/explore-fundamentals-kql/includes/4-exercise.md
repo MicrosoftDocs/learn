@@ -86,7 +86,7 @@ This environment requires an Azure subscription. Create a free [Azure account](h
 The following query answers the question, "What were the top 10 most recently enabled storage resources?"
 
 ```kusto
-Resources
+resources
 | where type contains 'storage'
 | sort by todatetime(properties.encryption.services.blob.LastEnabledTime)
 | take 10

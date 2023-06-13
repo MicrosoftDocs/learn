@@ -8,6 +8,8 @@ Let's go through an example. Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
+The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
+
 1. Start with a tabular dataset.
 
     > [!div class="nextstepaction"]
@@ -22,29 +24,31 @@ Let's go through an example. Select the relevant tab for your environment.
 1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
     > [!div class="nextstepaction"]
-    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVAHNDKgtSFWxtFZTccvLzU5QAOwpmISgAAAA=" target="_blank">Run the query</a>
+    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAgCymHm6JgAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
-    | where EventType == "Flood"
+    | where State == "FLORIDA"
     ```
 
-    **Output**: A tabular dataset of the "Flood" events from the `StormEvents` table.
+    **Output**: A tabular dataset of storms in the state of "FLORIDA" from the `StormEvents` table.
 
 1. Use another operator to further manipulate the tabular output.
 
     > [!div class="nextstepaction"]
-    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVAHNDKgtSFWxtFZTccvLzU5SAksX5RSUKSZUKwSWJRSUhmbmpConFyQC0yEhVQAAAAA==" target="_blank">Run the query</a>
+    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkoV5xeVKCRVKnjmZZUWZaYWu2QWpSaXKKSkFicDAEtNVsxEAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
-    | where EventType == "Flood"
-    | sort by StartTime asc
+    | where State == "FLORIDA"
+    | sort by InjuriesDirect desc
     ```
 
-    **Output:** A tabular dataset with the "Flood" events sorted in ascending order based on the `StartTime` column from the `StormEvents` table.
+    **Output:** A tabular dataset with the "FLORIDA" events sorted in descending order based on the `InjuriesDirect` column from the `StormEvents` table.
 
 ### [Azure Monitor](#tab/azure-monitor)
+
+The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
 
 1. Start with a tabular dataset.
 
@@ -83,9 +87,6 @@ Let's go through an example. Select the relevant tab for your environment.
     **Output:** A tabular dataset of logs from the past 24 hours sorted in descending order based on the `ResponseDurationMs` column from the `LAQueryLogs` table.
 
 ---
-
-You can repeat the process by applying more operators to the tabular output.
-Each operator takes the tabular input, performs its operation, and produces a new tabular output.
 
 ## Introduce a variable with a let statement
 
@@ -128,15 +129,11 @@ LAQueryLogs
 
 ## Translate the query into a function
 
-Now, let's explore how to generalize functionality into user-defined and stored functions.
+Now, let's explore how to generalize functionality into a user-defined function. Query-defined functions are a type of user-defined function that work within the scope of a single query and can be reused within that query.
 
 Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
-
-### Create a query-defined function
-
-Query-defined functions are defined within the scope of a single query and can be reused within that query.
 
 In the following query, we define a function called `EventsWithInjuries` with two parameters: `state` (string) and `injuryThreshold` (integer). The function filters the `StormEvents` table based on the provided state and injury threshold criteria. Finally, we call the function by passing specific arguments and print the results.
 
@@ -152,25 +149,7 @@ let EventsWithInjuries = (state: string, injuryThreshold: int) {
 EventsWithInjuries("CALIFORNIA", 10)
 ```
 
-### Create a stored function
-
-Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries.
-
-```kusto
-.create function
-with (docstring = 'Function to find all events with injuries above a certain threshold in a certain state', folder='Demo')
-    EventsWithInjuries(state: string, injuryThreshold: int) {
-        StormEvents
-        | where State == state
-        | where InjuriesDirect + InjuriesIndirect > injuryThreshold
-    }
-```
-
 ### [Azure Monitor](#tab/azure-monitor)
-
-### Create a query-defined function
-
-Query-defined functions are defined within the scope of a single query and can be reused within that query.
 
 In the following query, we define a function called `LogsBetween` with two parameters: `start` (datetime) and `end` (datetime). The function filters the `LAQueryLogs` table based on the provided start and end time criteria. Finally, we call the function by passing specific arguments and print the results.
 
@@ -183,19 +162,6 @@ let LogsBetween = (start: datetime, end: datetime) {
     | where TimeGenerated between (start .. end)
 };
 LogsBetween(datetime('06-01-2023'), datetime('06-07-2023'));
-```
-
-### Create a stored function
-
-Alternatively, stored functions allow us to define reusable functions that can be saved and used across multiple queries.
-
-```kusto
-.create function
-with (docstring = 'Function to find all logs between the given time range', folder='Demo')
-    LogsBetween(start: datetime, end: datetime) {
-    LAQueryLogs
-    | where TimeGenerated between (start .. end)
-}
 ```
 
 ---
