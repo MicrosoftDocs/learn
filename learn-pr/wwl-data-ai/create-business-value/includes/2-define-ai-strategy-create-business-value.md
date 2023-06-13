@@ -1,5 +1,5 @@
 
-There's a lot of excitement around AI. It's now clear that AI technologies drive substantial value to organizations and should be embraced to keep a competitive edge. However, the complexity underpinning AI may feel intimidating. Any organization needs a solid plan for AI adoption and scaling to fully benefit from AI's potential. You should consider AI as a tool to reach your business goals and incorporate it into the corporate strategy.
+There's excitement stirring around AI. It's now clear that AI technologies drive substantial value to organizations and should be embraced to keep a competitive edge. However, the complexity underpinning AI may feel intimidating. Any organization needs a solid plan for AI adoption and scaling to fully benefit from AI's potential. You should consider AI as a tool to reach your business goals and incorporate it into the corporate strategy.
 
 In Microsoft, we recommend using a **holistic framework for AI strategy**. This framework applies to all organizations, and provides a sensible approach to AI implementation. This AI strategy framework covers three pillars: the external environment that gives you context, the value proposition that you offer to customers, and the executive capabilities of your organization.
 
@@ -7,7 +7,7 @@ In Microsoft, we recommend using a **holistic framework for AI strategy**. This 
 
 Your starting point should be to understand the external industry environment. Right now, it involves measuring **how AI is impacting your sector**. This technology is shifting overall buying behavior. AI is leading and empowering new competitors. It's disrupting current business processes and opening opportunities for new business models. Governments are taking action to deliver new regulations on AI.
 
-During the last decade, we've seen the disruptive potential of AI accross industries. Now, a new generation of AI models is taking this power to the next level. **Generative AI** is capable of delivering content and insights with unparalleled results, and this technology will change how we work. Business leaders are already strategizing to implement generative AI to boost productivity. However, keep in mind that AI works best as a copilot, that is, as a guide to help you achieve better results. AI amplifies your expertise and skills.
+During the last decade, we've seen the disruptive potential of AI across industries. Now, a new generation of AI models is taking this power to the next level. **Generative AI** is capable of delivering content and insights with unparalleled results, and this technology  changes how we work. Business leaders are already strategizing to implement generative AI to boost productivity. However, keep in mind that AI works best as a copilot, that is, as a guide to help you achieve better results. AI amplifies your expertise and skills.
 
 ## Value proposition
 
