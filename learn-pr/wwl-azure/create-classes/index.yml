@@ -37,7 +37,6 @@ units:
 - learn.wwl.create-classes.learn-encapsulation
 - learn.wwl.create-classes.examine-class-lifecycle
 - learn.wwl.create-classes.learn-class-constructors
-- learn.wwl.create-classes.examine-namespaces
 - learn.wwl.create-classes.knowledge-check
 - learn.wwl.create-classes.summary
 badge:
