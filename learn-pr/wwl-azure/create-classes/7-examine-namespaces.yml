@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-classes.use-namespaces
+uid: learn.wwl.create-classes.examine-namespaces
 title: Use namespaces
 metadata:
   title: Use namespaces
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-use-namespaces.md)]
+  [!include[](includes/7-examine-namespaces.md)]
 quiz:
   title: "Check your knowledge"
   questions:
