@@ -15,7 +15,7 @@ Create a virtual environment by using `venv`.
 1. To activate the virtual environment, run the following command on Windows:
 
    ```console
-   C:\ .. \env\Scripts\activate
+   .\env\Scripts\activate
    ```
 
    Or, this command on Linux, WSL or macOS:
