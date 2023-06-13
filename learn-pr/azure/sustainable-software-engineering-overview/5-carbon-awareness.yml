@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.5-carbon-awareness
+uid: learn.azure.sustainable-software-engineering-overview.carbon-awareness
 title: "Principle: Carbon awareness"
 metadata:
   title: "Principle: Carbon awareness"
   description: This principle of sustainable software engineering is about building carbon-aware applications. This unit discusses the difference between carbon aware and carbon efficient applications, and the option of using eco-modes in your application.
-  ms.date: 05/26/2023
+  ms.date: 06/13/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial

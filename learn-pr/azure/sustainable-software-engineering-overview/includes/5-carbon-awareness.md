@@ -9,11 +9,11 @@ Not all electricity is produced in the same way. In different locations and time
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwOVB]
 
-The carbon intensity of electricity is a measure of how many carbon (CO<sub>2</sub>eq) emissions are produced per kilowatt-hour of electricity consumed.
+The carbon intensity of electricity is a measure of how many carbon (CO₂eq) emissions are produced per kilowatt-hour of electricity consumed.
 
-The standard unit of carbon intensity is <nobr>**gCO<sub>2</sub>eq/kWh**</nobr>, or grams of carbon per kilowatt-hour.
+The standard unit of carbon intensity is ```gCO₂eq/kWh```, or grams of carbon per kilowatt-hour.
 
-If your computer was plugged directly into a hydroelectric plant, then the electricity it consumed would have a carbon intensity of <nobr>**zero gCO<sub>2</sub>eq/kWh**</nobr>. A hydroelectric plant emits no carbon to produce that electricity. Most people can't plug directly into hydroelectric plants. Instead, they plug into power grids supplied with electricity from a mix of sources that produce varying amounts of carbon. Therefore, when plugged into a grid, your carbon intensity is usually greater than zero.
+If your computer was plugged directly into a hydroelectric plant, then the electricity it consumed would have a carbon intensity of ```zero gCO₂eq/kWh```. A hydroelectric plant emits no carbon to produce that electricity. Most people can't plug directly into hydroelectric plants. Instead, they plug into power grids supplied with electricity from a mix of sources that produce varying amounts of carbon. Therefore, when plugged into a grid, your carbon intensity is usually greater than zero.
 
 ### Variability of carbon intensity
 
@@ -45,9 +45,9 @@ Fossil-fueled power plants rarely reach zero; they have a minimum functioning th
 
 ![Illustration showing free renewable engergy.](../media/5-carbon-intensity-3.svg)
 
-If a new load would be met with supply from a renewable source that would otherwise have been curtailed, then marginal carbon intensity is <nobr>**zero gCO<sub>2</sub>eq/kWh**</nobr>.
+If a new load would be met with supply from a renewable source that would otherwise have been curtailed, then marginal carbon intensity is ```zero gCO₂eq/kWh```.
 
-There are moments when the marginal carbon intensity of electricity is <nobr>**zero gCO<sub>2</sub>eq/kWh**</nobr>. Running compute during these times results in **no carbon being emitted** from electricity consumption.
+There are moments when the marginal carbon intensity of electricity is ```zero gCO₂eq/kWh```. Running compute during these times results in **no carbon being emitted** from electricity consumption.
 
 ### Demand shifting
 
@@ -55,7 +55,7 @@ There's currently little in the way of storage or buffering in electrical grid s
 
 If you can be flexible with when and where you run workloads, you can consume electricity when the carbon intensity is less and pause when the carbon intensity is high. For example, training a machine learning model at a different time or in a region with much lower carbon intensity.
 
-Studies such as *[Putting a CO2 figure on a piece of computation](https://ieeexplore.ieee.org/document/6128960)* have shown that these actions can reduce carbon emissions as much as 45% to 99%, depending on the number of renewables powering the grid.
+Studies such as _[Putting a CO₂ figure on a piece of computation](https://ieeexplore.ieee.org/document/6128960)_ have shown that these actions can reduce carbon emissions as much as 45% to 99%, depending on the number of renewables powering the grid.
 
 Look at your application end to end, identify opportunities for being flexible regarding workloads, and use the carbon intensity of electricity to signal when or if to run those workloads.
 

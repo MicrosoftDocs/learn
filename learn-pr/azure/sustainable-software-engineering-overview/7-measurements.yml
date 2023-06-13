@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.7-measurement
+uid: learn.azure.sustainable-software-engineering-overview.measurement
 title: "Principle: Measurement"
 metadata:
   title: "Principle: Measurement"
   description: This principle of sustainable software engineering is about measuring carbon emissions, and how to calculate your Software Carbon Intensity (SCI) scores.
-  ms.date: 05/26/2023
+  ms.date: 06/13/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial

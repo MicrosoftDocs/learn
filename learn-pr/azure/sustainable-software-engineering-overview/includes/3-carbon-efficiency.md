@@ -1,13 +1,13 @@
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwJFI]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwJFI]
 _The content in the video is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
-Working with sustainability means different things to different people, which is a challenge when it comes to communication and deciding what to optimize. For Sustainable Software Engineering, our focus is carbon, and that's why we start with the principle to build applications that are *carbon efficient*.
+Working with sustainability means different things to different people, which is a challenge when it comes to communication and deciding what to optimize. For Sustainable Software Engineering, our focus is carbon, and that's why we start with the principle to build applications that are _carbon efficient_.
 
 ## What's carbon?
 
 Greenhouse gases (GHG) act as a blanket that increases the Earth's temperature, which is a natural phenomenon. However, human activities change the global climate much faster than animals and plants can adapt. How human society adapt is still an open question.
 
-There are many different GHGs. The most common GHG emitted through human activity is carbon dioxide (CO<sub>2</sub>). To make calculations more manageable, we normalize all GHG numbers to *carbon dioxide equivalent* (CO<sub>2</sub>eq). For example, one ton of methane has the same warming effect as about 25 tons of CO<sub>2</sub>, so we normalize it to 25 tons CO<sub>2</sub>eq. We may shorten it to just **carbon**, which often refers to all GHGs.
+There are many different GHGs. The most common GHG emitted through human activity is carbon dioxide (CO₂). To make calculations more manageable, we normalize all GHG numbers to _carbon dioxide equivalent_ (CO₂eq). For example, one ton of methane has the same warming effect as about 25 tons of CO₂, so we normalize it to 25 tons CO₂eq. We may shorten it to just **carbon**, which often refers to all GHGs.
 
 ## Net-zero carbon targets
 
@@ -23,6 +23,6 @@ To achieve this, we need to start immediately reducing our carbon emissions to a
 
 We always emit carbon through our activities; our goal is that for each gram of carbon we emit into the atmosphere, we make sure we extract the most value from it as possible.
 
-To be *carbon-efficient* is to minimize the amount of carbon emitted per unit of work.
+To be_ carbon-efficient_ is to minimize the amount of carbon emitted per unit of work.
 
 In engineering, our part in the climate solution is building carbon-efficient applications. Being carbon-efficient is about building applications that add the same value for you or your users but emit less carbon.

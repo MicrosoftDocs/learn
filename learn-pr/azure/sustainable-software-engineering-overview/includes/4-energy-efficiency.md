@@ -1,4 +1,4 @@
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWwMdr]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RWwMdr]
 _The content in the video is still valid, but the principle numbers may differ due to the Green Software Foundation's principle renumbering._
 
 ## Electricity and carbon
@@ -19,7 +19,7 @@ Energy measures the amount of electricity used; the standard unit for Energy is 
 
 Electricity is often reported as either Power or Energy, which are two different concepts:
 
-<nobr>Energy = Power &#10005; Time</nobr>
+```Energy = Power &#10005; Time```
 
 - Energy is the total amount of electricity used; the standard unit for Energy is Joules or J.
 
@@ -27,11 +27,11 @@ Electricity is often reported as either Power or Energy, which are two different
 
 A common way of referring to energy consumption is _Power over a unit of Time, such as Watt-seconds or Kilowatt-hours_. For example:
 
-- 20 Watt-seconds or <nobr>20 Ws</nobr> is the amount of energy you would get if <nobr>20 W</nobr> were run for one second. Since one Watt is one Joule per second, this value is 20 Joules.
+- 20 Watt-seconds or ```20 Ws``` is the amount of energy you would get if ```20 W``` were run for one second. Since one Watt is one Joule per second, this value is 20 Joules.
 
-- 20 Kilowatt-hours or <nobr>20 kWh</nobr> is the energy you would get if 20,000 Watts ran for one hour.
+- 20 Kilowatt-hours or ```20 kWh``` is the energy you would get if 20,000 Watts ran for one hour.
 
-    <nobr>Energy = 60 &#10005; 60 &#10005; 20,000 = 72,000,000 Joules = 72 Megajoules (72 MJ)</nobr>
+    ```Energy = 60 &#10005; 60 &#10005; 20,000 = 72,000,000 Joules = 72 Megajoules (72 MJ)```
 
 ## Energy proportionality
 
@@ -45,7 +45,7 @@ In an energy proportional system, the energy efficiency is a constant; no matter
 
 ![Diagram showing power versus utilization.](../media/7-energy-proportionality-1.svg)
 
-At 0% utilization, the computer still draws <nobr>100 W</nobr>; at 50% utilization, it draws <nobr>180 W</nobr>, and at 100% utilization, it draws <nobr>200 W</nobr>. The relationship between power consumption and utilization isn't linear, and it doesn't cross the origin.
+At 0% utilization, the computer still draws ```100 W```; at 50% utilization, it draws ```180 W```, and at 100% utilization, it draws ```200 W```. The relationship between power consumption and utilization isn't linear, and it doesn't cross the origin.
 
 Because of this relationship, **the more you utilize a computer, the more efficient it becomes at converting electricity to useful computing operations**. Running your work on as few servers as possible with the highest utilization rate maximizes their energy efficiency.
 
@@ -63,6 +63,6 @@ Clock speed (frequency) is the operating speed of a computer or its microprocess
 
 Clock speed denotes how fast a computer can execute instructions.
 
-The energy efficiency of microprocessors changes with clock speed; high clock speeds are often **less** energy-efficient than low clock speeds. For example, in the I7-3770K system, you can run at <nobr>3.5 GHz</nobr> for <nobr>50 W</nobr>, or about <nobr>5 GHz</nobr> for <nobr>175 W<nobr>. An approximate 40% increase in clock speed requires <nobr>&gt;3&#10005;</nobr> power increase.
+The energy efficiency of microprocessors changes with clock speed; high clock speeds are often **less** energy-efficient than low clock speeds. For example, in the I7-3770K system, you can run at ```3.5 GHz``` for ```50 W```, or about ```5 GHz``` for ```175 W```. An approximate 40% increase in clock speed requires **&gt;3&#10005;** power increase.
 
 Considering this information, reducing the clock speed at times of low utilization can increase energy efficiency, thereby maximizing the energy efficiency of hardware.

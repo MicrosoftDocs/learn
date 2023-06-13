@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.8-climate-commitments
+uid: learn.azure.sustainable-software-engineering-overview.climate-commitments
 title: "Principle: Climate commitments"
 metadata:
   title: "Principle: Climate commitments"
   description: This principle of sustainable software engineering is about identifying the carbon reduction methodologies, along with defining the terms used.
-  ms.date: 05/26/2023
+  ms.date: 06/13/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial

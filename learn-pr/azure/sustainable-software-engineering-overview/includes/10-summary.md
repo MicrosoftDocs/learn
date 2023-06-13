@@ -9,8 +9,8 @@ In this module, you learned about the emerging discipline of Sustainable Softwar
 
 In addition, you also learned about the two philosophies of Sustainable Software Engineering:
 
-1. **Everyone has a part to play in the climate solution**
-1. **Sustainability is enough, all by itself, to justify our work**
+- **Everyone has a part to play in the climate solution**
+- **Sustainability is enough, all by itself, to justify our work**
 
 ## Learn More
 

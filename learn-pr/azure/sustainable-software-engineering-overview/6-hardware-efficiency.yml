@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.6-hardware-efficiency
+uid: learn.azure.sustainable-software-engineering-overview.hardware-efficiency
 title: "Principle: Hardware efficiency"
 metadata:
   title: "Principle: Hardware efficiency"
   description: This principle of sustainable software engineering is about building applications that are hardware efficient. In this unit, you'll learn about the concept of embodied carbon, and how significant is it in the overall carbon calculation for your application and how it relates to hardware.
-  ms.date: 05/26/2023
+  ms.date: 06/13/2023
   author: Zimmergren
   ms.author: tozimmergren
   ms.topic: interactive-tutorial
