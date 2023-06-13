@@ -1,5 +1,4 @@
 
-
 In this module, you learned how to:
 
 - Create and configure a storage account.
