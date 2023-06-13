@@ -39,7 +39,5 @@ Example_D64ds | 1
 
 An example of a mixed size deployment using the size family from the previous table might look like this:
 
-You don't need to run uniform sizes, you can mix and match VM sizes on the same host. Once you create said VMs, the dedicated hosts 'VM Capacity' page will dynamically update to show you the remaining capacity. Due to virtualization overhead, the quantity of VMs and their associated resources may not add together in a linear fashion. 
-
-!!Learn more about sizes: Full list of sizes (go to link in doc)
+You don't need to run uniform sizes, you can mix and match VM sizes on the same host. Once you create said VMs, the dedicated hosts 'VM Capacity' page will dynamically update to show you the remaining capacity. Due to virtualization overhead, the quantity of VMs and their associated resources may not add together in a linear fashion.
 
