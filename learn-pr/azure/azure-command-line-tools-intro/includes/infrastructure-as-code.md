@@ -20,7 +20,7 @@ One of the most important factors in choosing an IaC tool is your cloud environm
   across mixed-cloud environments. Depending on the IaC tool, newly released Azure features might not
   be immediately supported.
 
-## Imperative vs declarative IaC tools
+## Imperative vs. declarative IaC tools
 
 There are two types of IaC configuration tools:
 

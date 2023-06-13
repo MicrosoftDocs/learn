@@ -1,8 +1,13 @@
-The Azure CLI is a cross-platform command-line tool to connect to Azure and
-run administrative commands on Azure resources. You can use it to run commands through a terminal by using interactive command-line prompts or a script.
+The Azure CLI is a cross-platform command-line tool for connecting to Azure and
+running administrative commands on Azure resources. You can use it to run commands through a terminal by using interactive command-line prompts or a script.
 
-For interactive use, you first open a shell such as PowerShell on Windows, Linux, or macOS,
-*cmd.exe* on Windows, or Bash on Linux or macOS. You then issue a command at the shell prompt. To
+For interactive use, you first open a shell such as:
+
+- PowerShell on Windows, Linux, or macOS.
+- *Cmd.exe* on Windows.
+- Bash on Linux or macOS.
+
+You then issue a command at the shell prompt. To
 automate repetitive tasks, you assemble the Azure CLI commands into a shell script by using the syntax
 of your chosen shell, and then you run the script.
 
@@ -24,7 +29,7 @@ Azure Cloud Shell.
 Before you create a storage account, you need to create a resource group or use an existing one. A resource group is a logical container in which Azure
 resources are deployed and managed as a group.
 
-Create an Azure resource group named *storageaccountexamplerg* in the *eastus* region by using the
+Create an Azure resource group named `storageaccountexamplerg` in the `eastus` region by using the
 `az group create` command:
 
 ```azurecli
@@ -71,7 +76,7 @@ az storage account list --resource-group storageaccountexamplerg
 
 You use the `az group delete` command to delete a resource group. The only mandatory parameter is `name`. Deleting a resource group deletes the group and all resources
 that it contains. If resources outside the scope of the storage account that you created in this unit
-exist in the *storageaccountexamplerg* resource group, they're also deleted.
+exist in the `storageaccountexamplerg` resource group, they're also deleted.
 
 ```azurecli
 az group delete --name storageaccountexamplerg

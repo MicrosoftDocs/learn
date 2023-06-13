@@ -32,11 +32,11 @@ Studio Code (VS Code).
 
 ## Supported shell environments
 
-The following table identifies supported shells for each Azure command-line tool.
+The following table identifies supported shells for each Azure command-line tool. In the table:
 
-The ![Supported][1] icon indicates that the command-line tool is `supported` in the specified
+- The ![Supported][1] icon indicates that the command-line tool is `supported` in the specified
   shell.
-The ![Not supported][3] icon indicates that the command line tool is `not supported` in the
+- The ![Not supported][3] icon indicates that the command line tool is `not supported` in the
   specified shell.
 
 | Shell environment  |    Azure CLI    |  Azure PowerShell   |      Bicep      |    Terraform    |

@@ -13,7 +13,7 @@ The Azure CLI, Azure PowerShell, Bicep, and Terraform have similarities, but eac
 advantages. Because you're tasked with provisioning Azure Storage, which tool capabilities give the
 best advantage in your environment?
 
-The following table identifies capabilities of each Azure command-line tool.
+The following table identifies capabilities of each Azure command-line tool. In the table:
 
 - The ![Yes][1] icon indicates that the capability is `true` for the specified command-line tool.
 - The ![No][3] icon indicates that the capability is `false` for the specified command-line tool.

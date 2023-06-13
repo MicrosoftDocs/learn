@@ -17,7 +17,7 @@ PowerShell in Azure Cloud Shell.
 
 Before you create a storage account, you need to create a resource group or use an existing one.
 
-Create an Azure resource group named *storageaccountexamplerg* in the *eastus* region by using the
+Create an Azure resource group named `storageaccountexamplerg` in the `eastus` region by using the
 `New-AzResourceGroup` cmdlet:
 
 ```azurepowershell
@@ -60,7 +60,7 @@ Get-AzStorageAccount -Name <storage-account-name> -ResourceGroupName storageacco
 
 Use the `Remove-AzResourceGroup` cmdlet to delete a resource group. The only mandatory parameter is `Name`. Deleting a resource group deletes the group and all resources
 that it contains. If resources outside the scope of the storage account that you created in this unit
-exist in the *storageaccountexamplerg* resource group, they're also deleted.
+exist in the `storageaccountexamplerg` resource group, they're also deleted.
 
 ```azurepowershell
 Remove-AzResourceGroup -Name storageaccountexamplerg
