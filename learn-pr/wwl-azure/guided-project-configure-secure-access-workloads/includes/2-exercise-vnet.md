@@ -10,7 +10,7 @@ To provide network isolation and segmentation for the web application, you creat
 
 | Network solution  | Tasks|
 | --- | --- |
-| :::image type="content" source="../media/task-1.png" alt-text="Diagram that shows two virtual networks that are peered." border="true"::: | <br>- Create a virtual network <br> - Create a subnet. <br> - Configure vnet peering.|
+| :::image type="content" source="../media/task-1.png" alt-text="Diagram that shows two virtual networks that are peered." border="true"::: | <ul><li>Create a virtual network </li><li> Create a subnet. </li><li>Configure vnet peering. </li></ul> |
 
 Launch the exercise and follow the instructions. When you're done, be sure to return to this page so you can continue learning.
 

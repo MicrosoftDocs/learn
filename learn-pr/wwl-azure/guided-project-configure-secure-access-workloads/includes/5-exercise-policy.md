@@ -3,7 +3,7 @@
 
 ## Scenario
 
-Now that a firewall is in place with polices that enforce your organizations security requirements, you need to route your network traffic to the firewall subnet so it can filter and inspect the traffic. Route tables provide control over the routing of network traffic to and from the web application. Network Traffic is subject to the firewall rules when you route your network traffic to the firewalll as the subnet default gateway.
+Now that a firewall is in place with policies that enforce your organizations security requirements, you need to route your network traffic to the firewall subnet so it can filter and inspect the traffic. Route tables provide control over the routing of network traffic to and from the web application. Network Traffic is subject to the firewall rules when you route your network traffic to the firewalll as the subnet default gateway.
 ### Architecture diagram
 
 | Network solution | Tasks|
