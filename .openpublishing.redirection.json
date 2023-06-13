@@ -22912,42 +22912,42 @@
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/index.yml",
     "redirect_url": "/training/modules/wsl-introduction",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/install-and-setup.yml",
     "redirect_url": "/training/modules/windows/wsl-introduction/install-and-setup",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/introduction.yml",
     "redirect_url": "/training/modules/windows/wsl-introduction/introduction",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/knowledge-check.yml",
     "redirect_url": "/training/modules/windows/wsl-introduction/knowledge-check",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/run-basic-commands.yml",
     "redirect_url": "/training/modules/windows/wsl-introduction/run-basic-commands",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/summary.yml",
     "redirect_url": "/training/modules/windows/wsl-introduction/summary",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/understanding-workflow.yml",
     "redirect_url": "/training/modules/windows/wsl-introduction/understanding-workflow",
-    "redirect_document_id": true
+    "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/what-is-wsl.yml",
     "redirect_url": "/training/modules/windows/wsl/wsl-introduction/what-is-wsl",
-    "redirect_document_id": true
+    "redirect_document_id": false
   }
   ]
 }
