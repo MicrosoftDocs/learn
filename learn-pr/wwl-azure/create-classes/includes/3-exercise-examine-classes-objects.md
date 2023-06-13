@@ -11,9 +11,11 @@ To reiterate, a class is a blueprint that you can use to create objects. A class
 An object is an instance of a class. If a class is a blueprint, an object is what you create from that blueprint. The class is the definition of an item, while the object is the item itself. 
 
 When you write a class definition with methods and perhaps properties as well, you do what is called instantiating that object, or putting it in memory. The process of instantiating an object is often referred to as “newing” an object, as the keyword for creating the in-memory representation of your class uses the word `new`.
+
 ```csharp
 House house = new House();
 ```
+
 >[!Note] The term instance is often used as an alternative to object.
 
 ## Exercise - Try it out
@@ -35,6 +37,7 @@ This exercise has you create a House class and instantiate it, initializing the 
 7.	Name your class “House” and select “Add”.
 
 8.  In your House class, add a public `string` variable called `exteriorColor`.
+
     ```csharp
     using System;
     using System.Collections.Generic;
@@ -52,6 +55,7 @@ This exercise has you create a House class and instantiate it, initializing the 
     }
     ```
 9.  Now add a public `int` variable called `sqrFeet`.
+
     ```csharp
     using System;
     using System.Collections.Generic;
@@ -69,7 +73,9 @@ This exercise has you create a House class and instantiate it, initializing the 
         }
     }
     ```
+
 10. Create a constructor to initialize your object, as pictured.
+
     ```csharp
     using System;
     using System.Collections.Generic;
@@ -92,17 +98,21 @@ This exercise has you create a House class and instantiate it, initializing the 
         }
     }
     ```
+
 11.	In your Program.cs file, create a house object called 'myHouse', passing in a color and square feet. Delete any existing placeholder content in the file.
+
     ```csharp
         using Housing_Development_Project_1 // this statement is automatically generated
 
         House myHouse = new House("light grey", 2000);
     ```
+
 >[!Note]
 >The namespace is automatically inserted into Program.cs as a "using" statement, meaning that Program.cs is *using* the classes in that namespace. In Visual Studio 2022 the namespace, class, and Main method information is not visible, but exist behind the scene. Because you have already created a class (House) that has this namespace, when you reference it here the namspace is automatically inserted in Program.cs in a *using* statement, letting you know that it is the namespace being used.
 
 
 12.	Use Console.WriteLine to display the values you initialized in your object.
+
     ```csharp
         using Housing_Development_Project_1 // this statement is automatically generated
 
@@ -114,6 +124,7 @@ This exercise has you create a House class and instantiate it, initializing the 
 Your code should look like this.
 
 #### House.cs
+
 ```csharp
 using System;
 using System.Collections.Generic;
@@ -138,6 +149,7 @@ namespace Housing_Development_Project_1
 ```
 
 #### Program.cs
+
 ```csharp
 using Housing_Development_Project_1 // this statement is automatically generated
 
