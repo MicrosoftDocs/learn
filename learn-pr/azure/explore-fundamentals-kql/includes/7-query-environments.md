@@ -3,7 +3,14 @@
 
 ## Azure Monitor
 
+Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to telemetry from your cloud and on-premises environments. Log Analytics is a tool in the Azure portal that's used to edit and run log queries against data in the Azure Monitor Logs store.
+
+Azure Monitor uses the same KQL as Azure Data Explorer, with some differences. For reference, see [Language differences](/azure/azure-monitor/logs/log-query-overview#language-differences)
+<--! Guy please add information -->
+
 ## Microsoft Sentinel
+
+Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), and security orchestration, automation, and response (SOAR). Using Microsoft Sentinel's  hunting search-and-query tools, based on the MITRE framework, you can proactively hunt for security threats across your organization’s data sources, before an alert is triggered. Microsoft Sentinel is built on top of the Azure Monitor service and it uses Azure Monitor’s Log Analytics workspaces to store all of its data. 
 
 ## Azure Resource Graph
 
