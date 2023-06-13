@@ -1,8 +1,18 @@
 {
   "redirections": [
     {
-      "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/index.yml",
-      "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/",
+      "source_path_from_root": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection/4-investigate-security-incident-defender.yml",
+      "redirect_url": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection/5-knowledge-check.yml",
+      "redirect_url": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection/6-summary-resources.yml",
+      "redirect_url": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection",
       "redirect_document_id": true
     },
     {
