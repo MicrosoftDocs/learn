@@ -1,0 +1,38 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classes.examine-namespaces
+title: Use namespaces
+metadata:
+  title: Use namespaces
+  description: "This unit describes what a namespace is and how they're used."
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: gregorfisher
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-examine-namespaces.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "How do you access a class that is in another namespace?"
+    choices:
+    - content: "Provide a link to the other namespace."
+      isCorrect: false
+      explanation: "Incorrect. You do not create links to other namespaces to access them."
+    - content: "You don't need to do anything, namespaces are global and their contents are available everywhere."
+      isCorrect: false
+      explanation: "Incorrect. This answer is incorrect, as namespaces are not global."
+    - content: "Prefix your object with the name of the namespace it belongs to."
+      isCorrect: true
+      explanation: "Correct! The way you access objects in another namespace is prefix the name of your object with the name of the class that belongs to it."
+  - content: "Why would two classes be in the same namespace?"
+    choices:
+    - content: "To avoid collisions."
+      isCorrect: false
+      explanation: "Incorrect. Although classes are put in separate namespaces to avoid crashes, classes are not put in the same namespace to avoid crashes (class naming conflicts)."
+    - content: "Because they are of the same type."
+      isCorrect: false
+      explanation: "Incorrect. Classes of the same name/type are put in different namespaces to avoid name conflicts."
+    - content: "Because they perform related functionality."
+      isCorrect: true
+      explanation: "Correct! Classes are put in namespaces to avoid name conflicts and because they share related functionality."
