@@ -22,27 +22,27 @@ Let's go through an example. Select the relevant tab for your environment.
 1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
 
     > [!div class="nextstepaction"]
-    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVAHNDKgtSFWxtFZTccvLzU5QAOwpmISgAAAA=" target="_blank">Run the query</a>
+    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAgCymHm6JgAAAA==" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
-    | where EventType == "Flood"
+    | where State == "FLORIDA"
     ```
 
-    **Output**: A tabular dataset of the "Flood" events from the `StormEvents` table.
+    **Output**: A tabular dataset of storms in the state of "FLORIDA" from the `StormEvents` table.
 
 1. Use another operator to further manipulate the tabular output.
 
     > [!div class="nextstepaction"]
-    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVAHNDKgtSFWxtFZTccvLzU5SAksX5RSUKSZUKwSWJRSUhmbmpConFyQC0yEhVQAAAAA==" target="_blank">Run the query</a>
+    > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5qpRKM9ILUpVCC5JLElVsLVVUHLz8Q/ydHFUAkoV5xeVKCRVKnjmZZUWZaYWu2QWpSaXKKSkFicDAEtNVsxEAAAA" target="_blank">Run the query</a>
 
     ```kusto
     StormEvents
-    | where EventType == "Flood"
-    | sort by StartTime asc
+    | where State == "FLORIDA"
+    | sort by InjuriesDirect desc
     ```
 
-    **Output:** A tabular dataset with the "Flood" events sorted in ascending order based on the `StartTime` column from the `StormEvents` table.
+    **Output:** A tabular dataset with the "FLORIDA" events sorted in descending order based on the `InjuriesDirect` column from the `StormEvents` table.
 
 ### [Azure Monitor](#tab/azure-monitor)
 
