@@ -44,7 +44,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | sort by InjuriesDirect desc
     ```
 
-    **Output:** A tabular dataset of `StormEvents` records with "FLORIDA" events, sorted in descending order based on the `InjuriesDirect` column.
+    **Output:** A tabular dataset of `StormEvents` records in "FLORIDA" sorted in descending order based on the `InjuriesDirect` column.
 
 ### [Azure Monitor](#tab/azure-monitor)
 
@@ -71,7 +71,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | where ResponseCode != 200
     ```
 
-    **Output**: A tabular dataset of `LAQueryLogs` records whose response code wasn't `200`.
+    **Output**: A tabular dataset of `LAQueryLogs` records whose response code isn't `200`.
 
 1. Use another operator to further manipulate the tabular output.
 
@@ -84,7 +84,7 @@ The following steps demonstrate how to build a query by applying operators to a 
     | sort by ResponseDurationMs desc
     ```
 
-    **Output:** A tabular dataset of of `LAQueryLogs` records whose response code wasn't `200`, sorted in descending order based on the `ResponseDurationMs`.
+    **Output:** A tabular dataset of of `LAQueryLogs` records whose response code isn't `200` sorted in descending order based on the `ResponseDurationMs`.
 
 ---
 
