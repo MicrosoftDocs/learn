@@ -150,8 +150,8 @@ The first step in the tuning process is to run the `EXPLAIN` command from the co
 > Connecting directly to worker nodes requires you to select the **Enable access to the worker nodes** checkbox on the **Networking** page of your Azure Cosmos DB for PostgreSQL resource in the Azure portal.
 >
 >:::image type="complex" source="../media/enable-access-worker-nodes.png" alt-text="Screenshot of the Enable access to the worker nodes option.":::
-   In the screenshot, the Enable access to the worker nodes setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.
-:::image-end:::
+>   In the screenshot, the Enable access to the worker nodes setting is highlighted on the Networking page of the Azure Cosmos DB for PostgreSQL resource in the Azure portal. Networking is highlighted and selected in the left-hand navigation menu.
+>:::image-end:::
 
 Tuning server parameters requires experimentation and often requires multiple attempts to achieve acceptable performance. As you make changes, run `EXPLAIN` again from the coordinator or directly on the worker to evaluate the effect of the modification. As a general recommendation, it's best to iteratively tune your database using only a tiny portion of your data. Once you've adjusted a worker to achieve the desired performance, you must manually apply those changes to the other workers in the cluster.
 
