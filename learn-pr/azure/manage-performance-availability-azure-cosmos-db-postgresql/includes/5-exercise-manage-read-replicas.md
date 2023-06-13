@@ -6,7 +6,7 @@ Woodgrove Bank has expanded their audience to Europe. They have a team in Europe
 ## Create a read replica
 
 1. Navigate to the Azure Cosmos DB for PostgreSQL resource in the Azure portal.
-1. From the navigation, under **Server group management**, select **Replicate data globally**.
+1. From the navigation, under **Cluster management**, select **Replicate data globally**.
 1. On the **Replicate data globally** screen, select **Add replica**.
 
     :::image type="complex" source="../media/replication-add-replica.png" alt-text="Screenshot of the Replication screen for the resource.":::
@@ -14,14 +14,14 @@ Woodgrove Bank has expanded their audience to Europe. They have a team in Europe
     :::image-end:::
 
 1. On the PostgreSQL server group replica screen, enter the following settings:
-    * **Server group name**: Enter a server group name for the read replicas. Our example shows `payment-server-demo-eur`.
+    * **Cluster name**: Enter a cluster name for the read replicas.
     * **Subscription**: Confirm this subscription is the desired subscription.
     * **Resource group**: Confirm this resource group is the desired resource group.
     * **Location**: Select a desired region. This location doesn't need to match the region where your primary server group is located.
-    * **Compute + storage**: Make note of the tier with compute and storage allocation. Be aware of the price.
+    * **Scale**: Make note of the compute and storage allocation. Be aware of the price.
 
     :::image type="complex" source="../media/create-read-replica.png" alt-text="Screenshot of the PostgreSQL server group replica screen.":::
-        Screenshot of the PostgreSQL server group replica screen. Server group name is for the read-only replicas. The sample server group name for the read only replicas is 'payment-server-demo-eur'. The Compute + storage shows the tier, the number of nodes, the compute + storage resources, and an estimated cost per month. The estimated cost in the screenshot is a placeholder for price.
+        Screenshot of the PostgreSQL server group replica screen. Cluster name is for the read-only replicas. The Scale shows the number of nodes, the compute + storage resources, and an estimated cost per month. The estimated cost in the screenshot is a placeholder for price.
     :::image-end:::
 
 1. Select **OK**. Once the replicas are created and available, you should see the replicas listed in the **Replicas** section on the primary server group's **Replication** screen.

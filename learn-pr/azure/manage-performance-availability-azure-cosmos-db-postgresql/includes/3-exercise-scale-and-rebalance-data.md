@@ -20,12 +20,12 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
         Screenshot of Create an Azure Cosmos DB for PostgreSQL resource. Databases in the Categories navigation and Azure Cosmos DB in the Popular Azure services section are highlighted.
     :::image-end:::
 
-1. On the **Select API option** screen, select **Create** within the **PostgreSQL** tile.
+1. On the **Create an Azure Cosmos DB account** screen, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
 
-    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.":::
+    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Create an Azure Cosmos DB account options. The Azure Cosmos DB for PostgreSQL option is highlighted.":::
 
     > [!NOTE]
-    > The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
+    > The portal will display an Create an Azure Cosmos DB for PostgreSQL cluster configuration screen.
 
 1. On the **Basics** tab, enter the following information:
 
@@ -38,7 +38,8 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Cluster name | _Enter a globally unique name_, such as `learn-cosmosdb-postgresql`. |
     | Location | Leave the default, or use a region that is close to you. |
     | Scale | See configuration settings in the next step. |
-    | PostgreSQL version | Leave the default version (14) selected. |
+    | PostgreSQL version | Leave the default version selected. |
+    | Database name | Leave the default name (`citus`). |
     | **Administrator account** | |
     | Admin username | This username is set to `citus` and can't be edited. |
     | Password | Enter and confirm a strong password. |
@@ -53,7 +54,7 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | Parameter | Value |
     | ---------------- | ----- |
     | **Nodes** | |
-    | Node count | Choose **2 nodes + coordinator**. |
+    | Node count | Select **2 nodes**. |
     | Compute per node | Select **4 vCores, 32 GiB RAM**. |
     | Storage per node | Select **512 GiBM**. |
     | **Coordinator** | |
