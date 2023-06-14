@@ -9,6 +9,6 @@ metadata:
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 30
+durationInMinutes: 20
 content: |
   [!include[](includes/5-lab-configure-project-repository-structure-support-secure-pipelines.md)]
