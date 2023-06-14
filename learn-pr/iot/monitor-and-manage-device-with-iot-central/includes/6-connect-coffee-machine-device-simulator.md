@@ -1,4 +1,4 @@
-To validate your scenario before connecting a physical device you use a device simulator that implements the behaviors defined in the device model.
+To validate your scenario before connecting a physical device, use a device simulator that implements the behaviors defined in the device model.
 
 Recall that in the IoT enabled coffee machines example, you'll connect a coffee machine simulator to IoT Central for monitoring telemetry such as water temperature and humidity, observe the state of the machine, set optimal temperature, receive warranty status, and send commands.
 
@@ -8,12 +8,12 @@ Here, you'll simulate a device with a C# application and connect it to the Azure
 
 ## Add the coffee machine to IoT Central
 
-First we'll register the device:
+First, register the device:
 
 1. In your IoT Central application, navigate to **Devices** and then **+ New**.
 1. On the **Create a new device form**, change the **Device ID** to *ccm-001* and **Device name** to *Connected Coffee Machine - 001*. Make sure that **Device template** is *Unassigned* and **Simulate this device** is *No*, and then select Create.
 
-The **Connected Coffee Machine - 001** device now shows in the list of devices with a status of **Registered** and template **Unassigned**. In the previous unit we looked at the C# application code and confirmed that the model ID is sent when provisioning the device. That allows IoT Central to assign the correct device template the first time the device connects.
+The **Connected Coffee Machine - 001** device now shows in the list of devices with a status of **Registered** and template **Unassigned**. In the previous unit, we looked at the C# application code and confirmed that the model ID is sent when provisioning the device. That allows IoT Central to assign the correct device template the first time the device connects.
 
 ## Get connection information
 
@@ -123,7 +123,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
 
     Look for confirmation messages in the console log of the simulated coffee machine.
 
-    ```
+    ```output
     Set up the device client.
     Device successfully connected to Azure IoT Central
     - Set handler for "SetMaintenanceMode" command.
@@ -152,7 +152,7 @@ Navigate to the **Commands** page for your device for the following exercise. To
     > [!NOTE]
     > As in real life, when the technician takes the machine offline to perform necessary repairs before switching it back online, the coffee machine continues to stay in the maintenance mode until you reboot the client code.
 
-    ```
+    ```output
     Set up the device client.
     Device successfully connected to Azure IoT Central
     - Set handler for "SetMaintenanceMode" command.
