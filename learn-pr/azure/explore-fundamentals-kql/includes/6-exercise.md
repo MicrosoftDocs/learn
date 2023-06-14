@@ -84,7 +84,38 @@ The following steps demonstrate how to build a query by applying operators to a 
     | sort by ResponseDurationMs desc
     ```
 
-    **Output:** A tabular dataset of of `LAQueryLogs` records whose response code isn't `200` sorted in descending order based on the `ResponseDurationMs`.
+    **Output:** A tabular dataset of `LAQueryLogs` records whose response code isn't `200` sorted in descending order based on the `ResponseDurationMs`.
+
+### [Azure Resource Grid](#tab/azure-resource-grid)
+
+The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
+
+1. Start with a tabular dataset.
+
+    ```Kusto
+    resources
+    ```
+
+    **Output:** The complete tabular dataset from the `resources` table.
+
+1. Apply a filter using the `where` operator to select specific events, such as "Flood" events. The `where` operator filters the tabular dataset and preserves the tabular structure.
+
+    ```kusto
+    resources
+    | where location == "eastus"
+    ```
+
+    **Output**: A tabular dataset of `resources` in the "eastus" region.
+
+1. Use another operator to further manipulate the tabular output.
+
+    ```kusto
+    resources
+    | where location == "eastus"
+    | distinct subscriptionId
+    ```
+
+    **Output:**  A tabular dataset of subscription IDs with `resources` in the "eastus" region.
 
 ---
 
@@ -123,6 +154,10 @@ LAQueryLogs
 | where ResponseCode in (responseCodes)
 | sort by ResponseDurationMs desc
 ```
+
+### [Azure Resource Grid](#tab/azure-resource-grid)
+
+Let statements aren't supported in Azure Resource Grid.
 
 ---
 
@@ -163,5 +198,9 @@ let LogsOfResponseCode = (responseCodes: dynamic) {
 };
 LogsOfResponseCode(dynamic([400, 499]));
 ```
+
+### [Azure Resource Grid](#tab/azure-resource-grid)
+
+User-defined functions aren't supported in Azure Resource Grid.
 
 ---
