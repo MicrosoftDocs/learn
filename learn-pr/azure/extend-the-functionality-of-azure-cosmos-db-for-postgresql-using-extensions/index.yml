@@ -6,7 +6,7 @@ metadata:
   description: In this module, you learn how to use PostgreSQL extensions to enhance and extend the functionality of Azure Cosmos DB for PostgreSQL. PostgreSQL allows you to extend the functionality of a database by using extensions. Extensions allow for bundling multiple related SQL objects together in a single package that can be loaded or removed from the database with a single command. After being loaded in the database, extensions can function like built-in features.
   ms.custom:
     - ignite-2022
-  ms.date: 09/27/2022
+  ms.date: 06/14/2023
   author: seesharprun
   ms.author: sidandrews
   manager: jroth
@@ -19,8 +19,8 @@ summary: |
   Use PostgreSQL extensions to enhance and extend the functionality of Azure Cosmos DB for PostgreSQL. PostgreSQL allows you to extend the functionality of a database by using extensions. Extensions allow for bundling multiple related SQL objects together in a single package that can be loaded or removed from the database with a single command. After being loaded in the database, extensions can function like built-in features.
 abstract: |
   By the end of this module, you'll be able to:
-    - Install different extensions available in Azure Cosmos DB for PostgreSQL
-    - Extend the functionality of an Azure Cosmos DB for PostgreSQL database using extensions
+    - Install different extensions available in Azure Cosmos DB for PostgreSQL.
+    - Extend the functionality of an Azure Cosmos DB for PostgreSQL database using extensions.
 prerequisites: |
   - Basic knowledge of relational databases
   - Understanding of data distribution principals in Azure Cosmos DB for PostgreSQL
