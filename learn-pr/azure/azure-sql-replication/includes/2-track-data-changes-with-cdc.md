@@ -6,15 +6,15 @@ Let's learn more about CDC.
 
 ## How it works
 
-Once enabled on a table, change data capture (CDC) creates a record for insert, update, and delete activity that applies to the table. On SQL Server and Azure SQL Managed Instance, the SQL Server Agent runs the CDC scan and cleanup jobs. However, on Azure SQL Databases, a scheduler takes the place of the SQL Server Agent. The scheduler runs capture and cleanup jobs automatically within the database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
+Once enabled on a table, change data capture (CDC) creates a record for insert, update, and delete activity that applies to the table. On SQL Server and Azure SQL Managed Instance, the SQL Server Agent runs CDC scan and cleanup jobs. However, on Azure SQL Database, a scheduler takes the place of the SQL Server Agent. The scheduler runs capture and cleanup jobs automatically within the database, without any external dependency for reliability or performance. Users still have the option to run capture and cleanup manually on demand.
 
-The following steps highlight how CDC works on Azure SQL Databases:
+The following steps highlight how CDC works on Azure SQL Database:
 
 1. Enable CDC on the source database and tables that you want to track for Data Modification Language (DML) changes: insert, update, and delete.
 
 2. Once you enable CDC on your source tables, associated change tables are created for each enabled source table. Change tables are system tables on your source database.  
 
-3. When you make DML changes on your CDC-enabled source table enabled, these changes are reflected in the database transaction log. The CDC scan process picks up the committed changes from the transaction log and adds them to the change table associated to the CDC-enabled source table. The commit log sequence number (LSN) identifies changes that were committed in the same transaction and orders those transactions.
+3. When you make DML changes on your CDC-enabled source table, these changes are reflected in the database transaction log. The CDC scan process picks up the committed changes from the transaction log and adds them to the change table associated to the CDC-enabled source table. The commit log sequence number (LSN) identifies changes that were committed in the same transaction and orders those transactions.
 
 4. The cleanup process cleans the change tables on a retention-based policy set by the user. The default retention period is three days.
 
@@ -36,7 +36,7 @@ You can use CDC by running T-SQL commands.
 
 ### Enabling CDC on your database
 
-In order to enable CDC on your Azure SQL database, run the following:
+In order to enable CDC on Azure SQL Database, run the following:
 
 ```sql
 USE MyDB  
@@ -97,7 +97,7 @@ EXEC sys.sp_cdc_disable_table
 
 ### Disabling CDC on your database
 
-Disabling the database removes all associated change data capture metadata, including the CDC user and schema and the CDC jobs. However, any gating roles CDC created will not be removed automatically and must be explicitly deleted. To determine if CDC is enabled on a database, query the `is_cdc_enabled` column in the `sys.databases` catalog view.
+Disabling the CDC on the database removes all associated change data capture metadata, including the CDC user and schema and the CDC jobs. However, any gating roles CDC created will not be removed automatically and must be explicitly deleted. To determine if CDC is enabled on a database, query the `is_cdc_enabled` column in the `sys.databases` catalog view.
 
 ```sql
 EXEC sys.sp_cdc_disable_db

@@ -1,6 +1,6 @@
 In this exercise, you'll learn how you can enable and disable change tracking and obtain tracked changes.
 
-To complete the steps in this exercise, you need the database you created from the sandbox environment in the [first exercise](3-exercise-track-data-changes-with-cdc.md) and [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true) to connect to your database and complete these exercises. 
+To complete the steps in this exercise, you need the database you created from the sandbox environment in the [first exercise](/training/modules/azure-sql-replication/3-exercise-track-data-changes-with-cdc) and [SQL Server Management Studio](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true) to connect to your database and complete these exercises. 
 
 ### Enabling change tracking on your database
 

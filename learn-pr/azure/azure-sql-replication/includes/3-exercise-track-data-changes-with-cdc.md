@@ -95,14 +95,10 @@ These scripts should take three to five minutes to complete. Be sure to note you
         -Type "Standard_LRS"
     ```
 
-1. Open SQL Server Management Studio (SSMS)](/sql/ssms/download-sql-server-management-studio-ssms?azure-portal=true), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the Azure portal to get it.  
+1. Open SQL Server Management Studio (SSMS), and then create a new connection to your logical server. For server name, enter the name of your Azure SQL Database logical server (for example, *dr-server`<unique ID>`.database.windows.net*). If you didn't save the name earlier, you might need to go to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true) to get it.  In the Azure portal, search for **AdventureWorksLT** to find your database and its associated logical server.
 
-    > [!div class="nextstepaction"]
-    > [The Azure portal](https://portal.azure.com/learn.docs.microsoft.com/?azure-portal=true)
-
-    In the Azure portal, search for **AdventureWorksLT** to find your database and its associated logical server.
-
-    Change the authentication to **SQL Server Authentication**, and enter the corresponding server admin login and password, which you provided during deployment in the previous exercise.  
+    
+    In SSMS, change the authentication to **SQL Server Authentication**, and enter the corresponding server admin login and password, which you provided during deployment in the previous exercise.  
 
     Select the **Remember password** check box, and then select **Connect**.  
 
@@ -115,7 +111,7 @@ These scripts should take three to five minutes to complete. Be sure to note you
 
 ### Enable CDC on your database
 
-In SQL Server Management Studio (SSMS) open new query window and enable CDC on `AdventureWorksLT` Database by running following query:
+In SQL Server Management Studio (SSMS), open a new query window and enable CDC on the `AdventureWorksLT` database by running the following query:
 
 ```sql
 USE AdventureWorksLT
@@ -127,7 +123,7 @@ GO
 
 ### Enable CDC on your tables
 
-Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under CDC schema).
+Once you enable CDC on the database, you'll notice the CDC artifacts being created in the same source database (five system tables under the CDC schema).
 
 1. Enable CDC on table `SalesLT.Customer`:
 
@@ -142,7 +138,7 @@ Once you enable CDC on the database, you'll notice the CDC artifacts being creat
 
 3. Insert a new customer into the `SalesLT.Customer` table that you enabled for CDC.
 
-    - Be aware that `PasswordHash` and `PasswordSalt` can’t be `NULL`
+    - Be aware that `PasswordHash` and `PasswordSalt` can't be `NULL`
 
     ```sql
     INSERT INTO [SalesLT].[Customer] (FirstName, MiddleName, LastName, PasswordHash, PasswordSalt) 
@@ -190,12 +186,11 @@ EXEC sys.sp_cdc_disable_table
 > [!NOTE]
 > It's *not* necessary to disable individual tables before you disable the database.
 
-Once you disable CDC on the table, the change tracking table also gets dropped. You can confirm this by running the same command again, and seeing that the table no longer exists. 
+Once you disable CDC on the table, the change tracking table also gets dropped. You can confirm this by running the same command again, and seeing that the table no longer exists: 
 
 ```sql
 SELECT * FROM cdc.SalesLT_Customer_CT
 ```
-
 
 
 ### Disable CDC on your database
