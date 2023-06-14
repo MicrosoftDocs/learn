@@ -22926,17 +22926,17 @@
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/index.yml",
-    "redirect_url": "training/modules/wsl-introduction/index",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/index",
     "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/introduction.yml",
-    "redirect_url": "/training/modules/wsl-introduction/introduction",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction",
     "redirect_document_id": false
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/what-is-wsl.yml",
-    "redirect_url": "/training/modules/wsl-introduction/what-is-wsl",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/what-is-wsl",
     "redirect_document_id": true
   },
   {
@@ -22946,22 +22946,22 @@
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/run-basic-commands.yml",
-    "redirect_url": "/training/modules/wsl-introduction/run-basic-commands",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/run-basic-commands",
     "redirect_document_id": true
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/understanding-workflow.yml",
-    "redirect_url": "/training/modules/wsl-introduction/understanding-workflow",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/understanding-workflow",
     "redirect_document_id": true
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/knowledge-check.yml",
-    "redirect_url": "/training/modules/wsl-introduction/knowledge-check",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/knowledge-check",
     "redirect_document_id": true
   },
   {
     "source_path": "learn-pr/windows/wsl/wsl-introduction/summary.yml",
-    "redirect_url": "/training/modules/wsl-introduction/summary",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/summary",
     "redirect_document_id": true
   }
   ]
