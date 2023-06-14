@@ -1,6 +1,6 @@
 You've learned about the structure of a KQL query. In this unit, you'll dive deeper into the different parts and types of KQL queries.
 
-This unit provides an overview of query statements and functions. In KQL, all queries consist of one or more query statements. These statements impact the specific query in which they are used, unless explicitly stored for future use. The most common types of query statements are [tabular expression statements](#tabular-expression-statements) and [let statements](#let-statements). In addition to its extensive library of [built-in functions](#built-in-functions), KQL allows for [user-defined functions](#user-defined-functions) that can be either stored or defined for use in a single query.
+This unit provides an overview of query statements and functions. In KQL, all queries consist of one or more query statements. These statements only affect the specific query in which they're used, unless explicitly stored for future use. The most common types of query statements are [tabular expression statements](#tabular-expression-statements) and [let statements](#let-statements). In addition to its extensive library of [built-in functions](#built-in-functions), KQL allows for [user-defined functions](#user-defined-functions) that can be either stored or defined for use in a single query.
 
 ## Tabular expression statements
 
