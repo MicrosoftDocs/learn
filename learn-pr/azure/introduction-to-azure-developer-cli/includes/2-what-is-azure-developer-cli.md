@@ -1,9 +1,7 @@
 
-## What is the Azure Developer CLI?
+The Azure Developer CLI (azd) is an open-source command-line tool that reduces the time it takes for you to get your application from a local development environment to Azure. `azd` provides best practice, developer-friendly commands that map to key stages in your workflow, whether you’re working in the terminal, your integrated development environment (IDE), or CI/CD (continuous integration/continuous deployment) pipelines.
 
-The Azure Developer CLI (azd) is an open-source command-line tool that reduces the time it takes for you to get your application from a local development environment to Azure. `azd` provides best practice, developer-friendly commands that map to key stages in your workflow, whether you’re working in the terminal, your editor or integrated development environment (IDE), or CI/CD (continuous integration/continuous deployment).
-
-You can install `azd` locally on your machine or use it in other environments such as GitHub CodeSpaces or Dev Containers. Visit the [install page](/azure/developer/azure-developer-cli/install-azd) for a full list of support installation methods. For example, to install `azd` locally on Windows or Mac, you could use one of the following commands:
+You can install `azd` locally on your machine or use it in other environments such as GitHub Codespaces. Visit the [install page](/azure/developer/azure-developer-cli/install-azd) for a full list of supported installation methods and environments. For example, to install `azd` locally on Windows or Mac, you could use one of the following commands:
 
 # [Windows](#tab/windows)
 
@@ -11,7 +9,7 @@ You can install `azd` locally on your machine or use it in other environments su
 winget install microsoft.azd
 ```
 
-# [Windows](#tab/mac)
+# [Mac](#tab/mac)
 
 ```bash
 brew tap azure/azd && brew install azd
@@ -25,7 +23,7 @@ The Azure Developer CLI relies on extensible templates that include everything y
 
 * **Provision resources in Azure** - `azd` can create the Azure services and resources your application needs to run in the cloud in a repeatable, automated way. Reusable `azd` templates ensure that the same resources and configurations will be created the same way for everyone who uses the project.
 
-* **Deploy resources to Azure** - `azd` also deploys your package application code to the resources that were provisioned in Azure. `azd` templates support projects that contain multiple apps in a single codebase and handle deploying the correct code to the correct Azure resources.
+* **Deploy resources to Azure** - `azd` also deploys your packaged application code to the resources that were provisioned in Azure. `azd` templates support projects that contain multiple apps in a single codebase and handles deploying the correct code to the correct Azure resources.
 
 * **Monitor resources** - You can also monitor your deployed resources using `azd` and Azure Application Insights services. This feature lets you use live metrics, logs, and other data to analyze the status of your app.
 
