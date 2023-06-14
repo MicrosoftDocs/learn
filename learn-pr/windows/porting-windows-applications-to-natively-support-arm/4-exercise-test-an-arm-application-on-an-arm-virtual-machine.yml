@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
+uid: learn.learn-windows-on-arm.exercise-test-an-arm-application-on-an-arm-virtual-machine
 title: Exercise test an Arm application build on a Windows on Arm virtual machine
 metadata:
   title: Exercise - Test an Arm application build on a Windows on Arm virtual machine
