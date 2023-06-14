@@ -2,7 +2,7 @@ You've learned a bit about how query languages function, and where you might use
 
 ## KQL query structure
 
-A Kusto query is a read-only request to process data and return results. The request is stated in plain text, using a data-flow model that is easy to read, author, and automate.
+A KQL query is a read-only request to process data and return results. The request is stated in plain text, using a data-flow model that is easy to read, author, and automate.
 
 Different query languages often have different structures. You may be familiar with SQL, which begins with a "SELECT" statement to specify the output fields, followed by stating the target data source, then a condition to be evaluated, and sometimes even a statement to order the results.
 

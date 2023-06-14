@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.explore-fundamentals-kql.query-environments
+uid: learn.azure.explore-fundamentals-kql.kql-query-environments
 title: |
   Query environments
 metadata:
@@ -13,4 +13,4 @@ metadata:
   ms.prod: azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-query-environments.md)]
+  [!include[](includes/7-kql-query-environments.md)]
