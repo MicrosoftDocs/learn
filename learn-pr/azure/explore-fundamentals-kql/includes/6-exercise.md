@@ -86,7 +86,7 @@ The following steps demonstrate how to build a query by applying operators to a 
 
     **Output:** A tabular dataset of `LAQueryLogs` records whose response code isn't `200` sorted in descending order based on the `ResponseDurationMs`.
 
-### [Azure Resource Grid](#tab/azure-resource-grid)
+### [Azure Resource Graph](#tab/azure-resource-grid)
 
 The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
 
@@ -155,9 +155,9 @@ LAQueryLogs
 | sort by ResponseDurationMs desc
 ```
 
-### [Azure Resource Grid](#tab/azure-resource-grid)
+### [Azure Resource Graph](#tab/azure-resource-grid)
 
-Let statements aren't supported in Azure Resource Grid.
+Let statements aren't supported in Azure Resource Graph.
 
 ---
 
@@ -199,8 +199,8 @@ let LogsOfResponseCode = (responseCodes: dynamic) {
 LogsOfResponseCode(dynamic([400, 499]));
 ```
 
-### [Azure Resource Grid](#tab/azure-resource-grid)
+### [Azure Resource Graph](#tab/azure-resource-grid)
 
-User-defined functions aren't supported in Azure Resource Grid.
+User-defined functions aren't supported in Azure Resource Graph.
 
 ---
