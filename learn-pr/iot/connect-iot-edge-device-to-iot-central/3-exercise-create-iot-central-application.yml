@@ -11,7 +11,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-standard-task-based
-  ms.prod: learning-azure
+  ms.prod: azure-iot-central
 durationInMinutes: 8
 azureSandbox: true
 interactive: bash
