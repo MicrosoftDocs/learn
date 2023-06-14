@@ -45,7 +45,7 @@ There are two main approaches to working with `azd` templates:
 
 * **Extend an existing `azd` template** - A large library of `azd` templates already exists to cover common Azure app scenarios and architectures. You can browse many of the templates on the [Awesome AZD](https://azure.github.io/awesome-azd/) site. If you find a template that is close to your desired architecture, you can use it as a starting point by replacing the source code directory and modifying the configuration or infrastructure files to meet your needs.
 
-* **Convert your own app into an `azd` template** - You can also convert an existing app into an `azd template` by following the [Make your project compatible with `azd`](https://learn.microsoft.com/en-us/azure/developer/azure-developer-cli/make-azd-compatible?pivots=azd-create) guide. Creating your own template is often more work initially, but allows for the most control and produces a reusable solution for future development work on the app.
+* **Convert your own app into an `azd` template** - You can also convert an existing app into an `azd template` by following the [Make your project compatible with `azd`](/azure/developer/azure-developer-cli/make-azd-compatible?pivots=azd-create) guide. Creating your own template is often more work initially, but allows for the most control and produces a reusable solution for future development work on the app.
 
 Regardless of which approach you choose, the resulting template structure will be the same. All `azd` templates include the following assets:
 
