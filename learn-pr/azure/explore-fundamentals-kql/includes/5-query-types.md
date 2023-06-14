@@ -2,7 +2,7 @@ You've learned about the structure of a KQL query. In this unit, you'll dive dee
 
 ## Query expressions statements
 
-KQL queries are made of one or more query statements. Unless explicitly stored, these statements only affect the query that is being run at any specific time. THe two most common query statements are [Tabular expression statements](#tabular-expression-statements) and [Let statements](#let-statements).
+KQL queries are made of one or more query statements. Unless explicitly stored, these statements only affect the query that is being run at any specific time. The two most common query statements are [Tabular expression statements](#tabular-expression-statements) and [Let statements](#let-statements).
 
 ### Tabular expression statements
 
