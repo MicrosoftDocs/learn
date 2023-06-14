@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/index.yml",
+      "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/1-introduction.yml",
       "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/1-introduction",
       "redirect_document_id": true
