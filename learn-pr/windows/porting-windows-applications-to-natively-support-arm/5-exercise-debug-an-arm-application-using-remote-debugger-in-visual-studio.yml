@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
+uid: learn.learn-windows-on-arm.exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio
 title: Exercise debug an Arm application build using remote debugger in Visual Studio
 metadata:
   title: Exercise - Debug an Arm application build using remote debugger in Visual Studio

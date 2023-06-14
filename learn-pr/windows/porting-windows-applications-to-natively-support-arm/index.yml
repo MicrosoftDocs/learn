@@ -44,8 +44,8 @@ units:
 - learn.learn-windows-on-arm.introduction
 - learn.learn-windows-on-arm.introduction-to-windows-applications-on-arm
 - learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
-- learn.learn-windows-on-arm.exercise-test-an-arm-application-on-an-arm-virtual-machine {{learnRepo}}.{{moduleName}}
-- learn.learn-windows-on-arm.exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio {{learnRepo}}.{{moduleName}}
+- learn.learn-windows-on-arm.exercise-test-an-arm-application-on-an-arm-virtual-machine
+- learn.learn-windows-on-arm.exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio
 - learn.learn-windows-on-arm.troubleshoot-common-arm-support-issues
 - learn.learn-windows-on-arm.knowledge-check
 - learn.learn-windows-on-arm.summary
