@@ -1,4 +1,4 @@
-When developing for the cloud, developers are often faced with many tasks and decisions to get their applications running in a properly architected environment. The Azure Developer CLI reduces and streamlines these responsibilities to help the developer on their journey from local development to a successful cloud solution.
+Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building a CI/CD pipeline, and other tasks. The Azure Developer CLI reduces and streamlines these responsibilities to help the developer on their journey from local development to a successful cloud solution.
 
 ## Example scenario
 
@@ -10,7 +10,7 @@ Suppose you work at a financial company that is building a cloud native applicat
 - A Key Vault instance to store secure app secrets
 - Application Insights resources to perform logging and monitoring
 - A Cosmos DB for NoSQL instance to permanently store app data
-- A CI/CD pipeline to ensure changes are reliably deployed through an automated process
+- CI/CD pipelines to ensure changes are reliably deployed through an automated process
 
 Developers spend significant amounts of time and energy creating and properly configuring these types of resources. Setting up Azure environment resources is often a significant barrier to making significant development progress on the app itself. The Azure Developer CLI (`azd`) is designed to greatly streamline and accelerate the process of moving from local development to provisioning and deploying your application resources to Azure.
 
@@ -28,4 +28,4 @@ In this module, you will:
 
 ## What is the main goal?
 
-By the end of this session, you'll understand the advantages of the Azure Developer CLI and evaluate whether it's a good fit for your project.
+By the end of this session, you'll understand the advantages of the Azure Developer CLI and evaluate whether it's a good fit for optimizing your project workflows.

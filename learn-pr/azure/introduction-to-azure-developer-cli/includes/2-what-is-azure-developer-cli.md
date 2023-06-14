@@ -23,9 +23,9 @@ The Azure Developer CLI relies on extensible templates that include everything y
 
 * **Build and package application code** - `azd` will auto-detect the language or framework of your application and build and package the code for deployment.
 
-* **Provision resources in Azure** - `azd` can create the Azure services and resources your application needs to run in the cloud in a repeatable, automated way. Reusable `azd` templates ensure that the same resources and configurations will be created for everyone who uses the project.
+* **Provision resources in Azure** - `azd` can create the Azure services and resources your application needs to run in the cloud in a repeatable, automated way. Reusable `azd` templates ensure that the same resources and configurations will be created the same way for everyone who uses the project.
 
-* **Deploy resources to Azure** - `azd` also deploys your package application code to the resources that were provisioned in Azure. `azd` templates support projects that contain multiple apps and will handle deploying the correct code to the correct Azure resources.
+* **Deploy resources to Azure** - `azd` also deploys your package application code to the resources that were provisioned in Azure. `azd` templates support projects that contain multiple apps in a single codebase and handle deploying the correct code to the correct Azure resources.
 
 * **Monitor resources** - You can also monitor your deployed resources using `azd` and Azure Application Insights services. This feature lets you use live metrics, logs, and other data to analyze the status of your app.
 
