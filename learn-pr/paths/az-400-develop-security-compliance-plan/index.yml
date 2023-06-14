@@ -8,7 +8,7 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: "Develop a security and compliance plan"
 summary: |
   Build strategies around security and compliance that enable you to authenticate and authorize your users, handle sensitive information, and enforce proper governance.
