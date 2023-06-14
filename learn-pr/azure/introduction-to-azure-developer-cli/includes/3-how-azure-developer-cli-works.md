@@ -28,14 +28,14 @@ For example, a typical `azd` workflow using an existing template includes the fo
 
 Other `azd` commands are available to complete additional tasks and expand on this workflow. `azd` is designed to have a minimal number of commands with a small number of parameters for ease of use. Some of the most common `azd` commands you'll use include:
 
-* [azd init](#azd-init): Initialize a new application.
-* [azd up](#azd-up): Provision Azure resources and deploy your project with a single command.
-* [azd provision](#azd-provision): Provision the Azure resources for an application.
-* [azd deploy](#azd-deploy): Deploy the application code to Azure.
-* [azd pipeline](#azd-pipeline): (Beta) Manage and configure your deployment pipelines.
-* [azd auth](#azd-auth): Authenticate with Azure.
-* [azd config](#azd-config): Manage azd configurations (ex: default Azure subscription, location).
-* [azd down](#azd-down): Delete Azure resources for an application.
+* **azd init** - Initialize a new application.
+* **azd up** - Provision Azure resources and deploy your project with a single command.
+* **azd provision** - Provision the Azure resources for an application.
+* **azd deploy** - Deploy the application code to Azure.
+* **azd pipeline** - (Beta) Manage and configure your deployment pipelines.
+* **azd auth** - Authenticate with Azure.
+* **azd config** - Manage azd configurations (ex: default Azure subscription, location).
+* **azd down** - Delete Azure resources for an application.
 
 ## Explore `azd` templates
 
