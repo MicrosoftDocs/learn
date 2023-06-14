@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-classes.examine-namespaces
-title: Use namespaces
+uid: learn.wwl.create-classes.understand-namespaces
+title: Understand namespaces
 metadata:
-  title: Use namespaces
+  title: Understand namespaces
   description: "This unit describes what a namespace is and how they're used."
-  ms.date: 06/13/2023
+  ms.date: 06/14/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
 durationInMinutes: 10
 content: |
-  [!include[](includes/7-examine-namespaces.md)]
+  [!include[](includes/7-understand-namespaces.md)]
 quiz:
   title: "Check your knowledge"
   questions:

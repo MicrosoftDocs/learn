@@ -3,7 +3,7 @@ uid: learn.wwl.create-classes
 metadata:
   title: Learn about and create classes and objects
   description: "This module describes creating and working with classes."
-  ms.date: 06/13/2023
+  ms.date: 06/14/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
@@ -37,7 +37,7 @@ units:
 - learn.wwl.create-classes.learn-encapsulation
 - learn.wwl.create-classes.examine-class-lifecycle
 - learn.wwl.create-classes.learn-class-constructors
-- learn.wwl.create-classes.examine-namespaces
+- learn.wwl.create-classes.understand-namespaces
 - learn.wwl.create-classes.knowledge-check
 - learn.wwl.create-classes.summary
 badge:
