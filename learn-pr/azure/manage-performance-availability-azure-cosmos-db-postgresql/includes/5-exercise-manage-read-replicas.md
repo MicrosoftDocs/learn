@@ -9,8 +9,8 @@ Woodgrove Bank has expanded their audience to Europe. They have a team in Europe
 1. From the navigation, under **Cluster management**, select **Replicate data globally**.
 1. On the **Replicate data globally** screen, select **Add replica**.
 
-    :::image type="complex" source="../media/replication-add-replica.png" alt-text="Screenshot of the Replication screen for the resource.":::
-        Screenshot of the Replication dialog and relevant options for the Azure Cosmos DB for PostgreSQL resource. 'Replication' in the navigation menu and 'Add replica' are highlighted.
+    :::image type="complex" source="../media/replication-add-replica.png" alt-text="Screenshot of the Replicate data globally screen for the resource.":::
+        Screenshot of the Replicate data globally screen for the Azure Cosmos DB for PostgreSQL Cluster resource. 'Replicate data globally' in the navigation menu and 'Add replica' are highlighted.
     :::image-end:::
 
 1. On the PostgreSQL server group replica screen, enter the following settings:
@@ -20,13 +20,13 @@ Woodgrove Bank has expanded their audience to Europe. They have a team in Europe
     * **Location**: Select a desired region. This location doesn't need to match the region where your primary server group is located.
     * **Scale**: Make note of the compute and storage allocation. Be aware of the price.
 
-    :::image type="complex" source="../media/create-read-replica.png" alt-text="Screenshot of the PostgreSQL server group replica screen.":::
-        Screenshot of the PostgreSQL server group replica screen. Cluster name is for the read-only replicas. The Scale shows the number of nodes, the compute + storage resources, and an estimated cost per month. The estimated cost in the screenshot is a placeholder for price.
+    :::image type="complex" source="../media/create-read-replica.png" alt-text="Screenshot of the Add cluster replica dialog.":::
+        Screenshot of the Add cluster replica dialog. Cluster name is for the read-only replicas. The Scale shows the number of nodes, the compute + storage resources, and an estimated cost per month. The estimated cost in the screenshot is a placeholder for price.
     :::image-end:::
 
-1. Select **OK**. Once the replicas are created and available, you should see the replicas listed in the **Replicas** section on the primary server group's **Replication** screen.
+1. Select **OK**. Once the replicas are created and available, you should see the replicas listed in the **Replicas** section on the primary server group's **Replicate data globally** screen.
 
-    :::image type="content" source="../media/replication-read-replicas.png" alt-text="Screenshot of the Replication screen for the learn-cosmosdb-postgresql primary server group. learn-cosmosdb-postgresql is in eastus, and the read replica learn-cosmosdb-postgresql-eur is in westeurope.":::
+    :::image type="content" source="../media/replication-read-replicas.png" alt-text="Screenshot of the Replicate data globally screen for the learn-cosmosdb-postgresql primary server group. learn-cosmosdb-postgresql is in eastus, and the read replica learn-cosmosdb-postgresql-eur is in westeurope.":::
 
 ## Get the connection string for the read replica
 
