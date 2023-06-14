@@ -50,4 +50,4 @@ You can use [Graph Explorer](https://developer.microsoft.com/graph/graph-explore
 
 :::image type="content" source="../media/graph-explorer-hunting-kql-query-2023-06-08.png" alt-text="Screenshot of the Microsoft Graph Explorer running the KQL hunting query.":::
 
-**Additional reading**. For more information, see [The Microsoft Graph Security API](/graph/security-concept-overview?view=graph-rest-1.0), and the API references [Microsoft Graph REST API v1.0 endpoint reference](/graph/api/overview?view=graph-rest-1.0), [Microsoft Graph REST API beta endpoint reference](/graph/api/overview?view=graph-rest-beta).
+**Additional reading** - For more information, see [The Microsoft Graph Security API](/graph/security-concept-overview).
