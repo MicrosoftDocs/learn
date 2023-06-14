@@ -34,3 +34,12 @@ Microsoft 365 Defender is a unified pre- and post-breach enterprise defense suit
 :::image type="content" source="../media/7-defender.png" alt-text="Screenshot of Microsoft 365 Defender threat hunting environment." lightbox="../media/7-defender.png":::
 
 Advanced hunting is a query-based threat hunting tool that lets you explore up to 30 days of raw data. You can proactively inspect events in your network to locate threat indicators and entities. The flexible access to data enables unconstrained hunting for both known and potential threats. For more information, see [Proactively hunt for threats with advanced hunting in Microsoft 365 Defender](/microsoft-365/security/defender/advanced-hunting-overview).
+
+## Configuration Manager
+
+Configuration Manager is part of the Microsoft Intune family of products, which provides a large centralized store of device data that customers use for reporting purposes.  CMPivot is an in-console utility that provides access to real-time state of devices in your environment.
+
+:::image type="content" source="../media/7-cm-pivot.png" alt-text="Screenshot of query environment in CM Pivot in Configuration Manager.":::
+
+CMPivot uses a subset of the Kusto Query Language to search terms, identify trends, analyze patterns, and provide many other data-driven insights.  For more information, see [CMPivot queries](/mem/configmgr/core/servers/manage/cmpivot-overview#queries).
+
