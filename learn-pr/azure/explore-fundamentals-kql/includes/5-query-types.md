@@ -48,7 +48,7 @@ print str = strcat("hello", " ", "world")
 
 ### User-defined functions
 
-User-defined functions are, as their name suggests, defined by the user. These can be divided into two types:
+User-defined functions are, as their name suggests, defined by the user. User-defined functions can be divided into two types:
 
 * **Stored functions**: user-defined functions that are stored and managed database schema entities (like tables).
 
