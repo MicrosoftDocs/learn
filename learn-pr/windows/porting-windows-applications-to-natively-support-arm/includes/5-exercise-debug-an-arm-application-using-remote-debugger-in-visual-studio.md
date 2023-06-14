@@ -14,7 +14,7 @@ In this exercise, we'll use remote debugging to connect to the HelloArm64 applic
 
 1. On the **Visual Studio 2022 Remote Debugger** screen, expand the **Tools** menu, and select **Options**.
 
-    :::image type="content" source="../media/media/winarm-remote-debugger-options.png" alt-text="The Visual Studio 2022 Remote Debugger screen displays with the Tools menu expanded and the Options menu item highlighted.":::
+    :::image type="content" source="../media/winarm-remote-debugger-options.png" alt-text="The Visual Studio 2022 Remote Debugger screen displays with the Tools menu expanded and the Options menu item highlighted.":::
 
 1. On the **Options** screen, select the **No Authentication** option and check the **Allow any user to debug** checkbox. Record the TCP/IP port number. Select **OK**.
 
