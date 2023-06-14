@@ -18,7 +18,7 @@ quiz:
   - content: "What technology does `azd` use to provision Azure resources?"
     choices:
     - content: "Azure PowerShell"
-      isCorrect: true
+      isCorrect: false
       explanation: "Incorrect. The Azure Developer CLI does not use PowerShell to provision Azure resources."
     - content: "Azure CLI"
       isCorrect: false
