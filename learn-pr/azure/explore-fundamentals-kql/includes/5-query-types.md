@@ -1,10 +1,8 @@
 You've learned about the structure of a KQL query. In this unit, you'll dive deeper into the different parts and types of KQL queries.
 
-## Query expression statements
+This unit provides an overview of query statements and functions. In KQL, all queries consist of one or more query statements. These statements impact the specific query in which they are used, unless explicitly stored for future use. The most common types of query statements are [tabular expression statements](#tabular-expression-statements) and [let statements](#let-statements). In addition to its extensive library of [built-in functions](#built-in-functions), KQL allows for [user-defined functions](#user-defined-functions) that can be either stored or defined for use in a single query.
 
-KQL queries are made of one or more query statements. Unless explicitly stored, these statements only affect the query that is being run at any specific time. The two most common query statements are [Tabular expression statements](#tabular-expression-statements) and [Let statements](#let-statements).
-
-### Tabular expression statements
+## Tabular expression statements
 
 Most queries use at least one **tabular expression statement**, which means both its input and output consist of tables or tabular datasets. These statements usually contain operators, each of which starts with a tabular input and returns a tabular output.
 
@@ -17,7 +15,7 @@ StormEvents // tabular expression statement 1
 | take 10 // tabular expression statement 4
 ```
 
-### Let statements
+## Let statements
 
 A **let statement** defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
 
@@ -32,11 +30,7 @@ StormEvents
 | take n
 ```
 
-## Functions
-
-Functions are reusable queries or query parts. KQL supports two kinds of functions: [Built-in functions](#built-in-functions) and [User-defined functions](#user-defined-functions).
-
-### Built-in functions
+## Built-in functions
 
 Built-in functions are hard-coded functions defined by KQL that can't be modified by users. KQL has a rich library of functions available for use, which can be found in the official [KQL documentation](/azure/data-explorer/kusto/query/).
 
@@ -46,7 +40,7 @@ For example, the following `strcat()` function concatenates string arguments:
 print str = strcat("hello", " ", "world")
 ```
 
-### User-defined functions
+## User-defined functions
 
 User-defined functions are, as their name suggests, defined by the user. User-defined functions can be divided into two types:
 
