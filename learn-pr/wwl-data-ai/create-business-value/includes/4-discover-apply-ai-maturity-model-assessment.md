@@ -12,8 +12,8 @@ For this purpose, you can leverage the **maturity model assessment of AI custome
 
 4. **Mature level:** Companies have achieved a broad internal adoption of AI. They've fully incorporated AI strategy into their business plans and AI is part of their corporate culture. As Steve Sweetman, Principal PM Manager at Azure Machine Learning Responsible AI & Customer Engagement, says, these companies have already built a culture of experimentation and a learning mindset that's required to truly harness the power of this new technology. Thanks to their data science expertise, they monetize AI. Organizations who have adopted AI also have a manifesto, they have a set of principles and core understanding about what they want to achieve, and the approach that they want to take. The goal of this module is to take your organization to this stage.
 
-> [!div class="mx-imgBorder"] 
-> ![Graph depicting the stages of AI maturity: foundational, approaching, aspirational, and mature.](../media/4-discover-apply-ai-maturity-model-assessment-1.png) 
+
+[![Graph depicting the stages of AI maturity: foundational, approaching, aspirational, and mature.](../media/4-discover-apply-ai-maturity-model-assessment-1.png)](../media/4-discover-apply-ai-maturity-model-assessment-1.png#lightbox)
 
 ## How mature *are* organizations?
 

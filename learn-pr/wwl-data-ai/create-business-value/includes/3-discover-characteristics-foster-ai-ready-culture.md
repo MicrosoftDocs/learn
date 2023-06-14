@@ -12,10 +12,10 @@ Of course, this is only possible with strong leadership that drives change by bo
 
 ## Data-driven
 
-Any good AI system relies on having the best and most complete data and being able to reason over your entire data estate. In other words, it depends on a matter of integrity and access.
-
 :::row:::
 :::column span="2":::
+
+Any good AI system relies on having the best and most complete data and being able to reason over your entire data estate. In other words, it depends on a matter of integrity and access.
 
 ### Access
 
@@ -23,14 +23,15 @@ Due to data ownership or storage issues, most organizations generate, organize, 
 
 For instance, a sales department might not have a complete view of a customer, because they're missing pieces of data, like e-commerce activity and payment status, which are controlled by other departments. In this case, a seller may make the mistake of trying to sell a customer an insurance policy that they already purchased through an online channel.
 
-By sharing data across the organization, the sum becomes greater than the parts. It's no longer each piece of data that matters, but what that data adds up to: a unified view of the customer. With that unified view, you can make better decisions, act more effectively, and provide a better customer experience. Your data estate must be accessible to be useful, whether it's on-premises, in the cloud, or on the edge.
 :::column-end:::
 :::column span="2":::
 
-![Image depicting what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)
+[![Image depicting what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg#lightbox)
 
 :::column-end:::
 :::row-end:::
+
+By sharing data across the organization, the sum becomes greater than the parts. It's no longer each piece of data that matters, but what that data adds up to: a unified view of the customer. With that unified view, you can make better decisions, act more effectively, and provide a better customer experience. Your data estate must be accessible to be useful, whether it's on-premises, in the cloud, or on the edge.
 
 ### Integrity
 
@@ -55,7 +56,7 @@ Fostering an AI-ready culture means **empowering people to be part of the AI tra
 It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries. Furthermore, it means to make those who best understand the business a central piece of your transformation process. Data scientists working in isolation often create models that lack the business knowledge, purpose, or value that would make them an effective AI resource. Similarly, business people working in isolation lack the technical knowledge to understand what can be done from a data science perspective. A multidisciplinary approach is important.
 :::column-end:::
 :::column span="2":::
-![Becoming empowering and inclusive implies: providing resources, as represented by a hand icon; creating a culture of sharing and collaboration, as represented by a speech bubble icon; and making those that know your business a central piece of your transformation process, as represented by a person icon.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)
+[![Image depicting what becoming empowering and inclusive means: providing resources, a collaborative culture, and focusing on business needs.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg#lightbox)
 :::column-end:::
 :::row-end:::
 
