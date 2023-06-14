@@ -51,11 +51,12 @@ subjects:
   - compliance
 units:
 - learn.wwl.manage-identity-projects-pipelines-agents.introduction
-- learn.wwl.manage-identity-projects-pipelines-agents.configure-microsoft-hosted-agent-pools
+- learn.wwl.manage-identity-projects-pipelines-agents.configure-microsoft-hosted-agents-pools
 - learn.wwl.manage-identity-projects-pipelines-agents.configure-agents-for-projects
 - learn.wwl.manage-identity-projects-pipelines-agents.configure-agent-identities
 - learn.wwl.manage-identity-projects-pipelines-agents.configure-scope-service-connection
 - learn.wwl.manage-identity-projects-pipelines-agents.understand-convert-managed-identity
+- learn.wwl.manage-identity-projects-pipelines-agents.lab-manage-identity-projects-pipelines
 - learn.wwl.manage-identity-projects-pipelines-agents.knowledge-check
 - learn.wwl.manage-identity-projects-pipelines-agents.summary
 badge:
