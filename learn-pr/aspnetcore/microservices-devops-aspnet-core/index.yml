@@ -6,6 +6,7 @@ metadata:
   ms.date: 07/22/2022
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Deploy a cloud-native ASP.NET Core microservice with GitHub Actions
