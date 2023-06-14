@@ -5,6 +5,7 @@ metadata:
   description: This module guides you through implementing logging and monitoring in an ASP.NET Core microservices app in Azure Kubernetes Service.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 10/14/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
