@@ -21,7 +21,7 @@ In addition to the above mentions about EMU access, permissions, and restriction
 | -------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
 | **Ownership**  | Created for and controlled by the identity provider. | Multiple authorization and authentication initiatives required in GitHub to ensure secure enterprise access. |
 | **Membership** | Automated user provisioning syncs IdP group membership with GitHub teams. | Administrators manage user membership on teams in the enterprise's organizations on GitHub. |
-| **Policies**   | Policies can be created at the enterprise level that apply to all users on the account. | Users are required to confirm compliance with GitHub user policies. |
+| **Policies**   | You can create policies at the enterprise level that apply to all users on the account. | Users are required to confirm compliance with GitHub user policies. |
 | **Audit log**  | Enterprise owners can audit all of the managed users' actions on GitHub.com | Only audit log activity that happens in the enterprise account is available for your review. |
 | **Privacy**    | No public repositories on EMU-enabled enterprises.           | Enterprise users can create public repositories.             |
 | **SSO**        | True single sign-on experience for your users.               | Multiple authentication steps required for your users to sign on. |
@@ -51,7 +51,7 @@ On the contrary to onboarding, when an employee leaves the company, an administr
 
 #### Reduce accidental IP leakage
 
-With the rise of open-source software contributions, employees may need to switch between projects with different user identities and permissions throughout the day. To remove the possibility of accidental IP leakage and contributions made to a project using the wrong credentials, EMUs clearly identify the current account and ensure that the employee cannot accidentally expose IP to personal or open-source repositories. This secures the company, IP, and the employee from accidental leakage.
+With the rise of open-source software contributions, employees may need to switch between projects with different user identities and permissions throughout the day. To remove the possibility of accidental IP (Intellectual Property) leakage and contributions made to a project using the wrong credentials, EMUs clearly identify the current account and ensure that the employee cannot accidentally expose IP to personal or open-source repositories. This secures the company, IP, and the employee from accidental leakage.
 
 #### Consultant administration
 

@@ -1,7 +1,5 @@
----
-ms.custom:
-  - build-2023
----
+
+
 Scalable analytics can be complex, fragmented, and expensive. With Microsoft Fabric, you don't have to spend all of your time combining various services from different vendors. Instead, you can use a single product that is easy to understand, set up, create, and manage. Fabric offers persona-optimized experiences and tools in an integrated user interface.
 
 In addition to a simple, shared user experience, Fabric is a unified *software-as-a-service* (SaaS) offering, with all your data stored in a single open format in OneLake. OneLake is accessible by all of the analytics engines in the platform. Fabric offers scalability, cost-effectiveness, accessibility from anywhere with an internet connection, and continuous updates and maintenance provided by Microsoft.
@@ -42,6 +40,6 @@ Fabric's OneLake is centrally governed and open for collaboration. Data is secur
 In the admin center you can manage groups and permissions,  configure data sources and gateways, and monitor usage and performance. You can also access the Fabric admin APIs and SDKs in the admin center, which you'd use to automate common tasks and integrate Fabric with other systems.
 
 > [!NOTE]
-> For more information about Fabric administration, see [What is Microsoft Fabric admin](https://learn.microsoft.com/fabric/admin/microsoft-fabric-admin).
+> For more information about Fabric administration, see [What is Microsoft Fabric admin](/fabric/admin/microsoft-fabric-admin).
 
 Your Fabric tenant is natively integrated with Microsoft Purview Information Protection. Fabric uses Microsoft Purview Information Protection’s sensitivity labels to help your organization classify and protect sensitive data, from ingestion to export.

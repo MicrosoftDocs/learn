@@ -2,6 +2,11 @@
 
 In this lab, you're going to run a mock DDoS attack on the virtual network. The following steps walk you through creating a virtual network, configuring DDoS Protection, and creating an attack which you can observe and monitor with the help of telemetry and metrics.
 
+## Architecture diagram
+
+:::image type="content" source="../media/4-exercise-configure-ddos-protection-virtual-network-using-azure-portal.png" alt-text="Diagram of DDoS architecture.":::
+
+
 ## Objectives
 
  -  **Task 1**: Create a DDoS Protection plan
