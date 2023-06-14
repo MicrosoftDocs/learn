@@ -20302,47 +20302,47 @@
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/index.yml",
-      "redirect_url": "/training/modules/wsl-introduction/",
-      "redirect_document_id": false
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_document_id": true
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/1-introduction.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/2-enable-and-install.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/3-integration-between-linux-and-windows.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/4-create-website-with-node.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/5-vscode-integration.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/6-debug-express-app-with-vscode.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/7-manage-multiple-distributions.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/8-summary.md",
-      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
       "redirect_document_id": false
     },
     {
@@ -22908,46 +22908,6 @@
     "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/8-summary.md",
     "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
     "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/index.yml",
-    "redirect_url": "/training/modules/wsl-introduction",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/install-and-setup.yml",
-    "redirect_url": "/training/modules/windows/wsl-introduction/install-and-setup",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/introduction.yml",
-    "redirect_url": "/training/modules/windows/wsl-introduction/introduction",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/knowledge-check.yml",
-    "redirect_url": "/training/modules/windows/wsl-introduction/knowledge-check",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/run-basic-commands.yml",
-    "redirect_url": "/training/modules/windows/wsl-introduction/run-basic-commands",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/summary.yml",
-    "redirect_url": "/training/modules/windows/wsl-introduction/summary",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/understanding-workflow.yml",
-    "redirect_url": "/training/modules/windows/wsl-introduction/understanding-workflow",
-    "redirect_document_id": true
-  },
-  {
-    "source_path": "learn-pr/windows/wsl/wsl-introduction/what-is-wsl.yml",
-    "redirect_url": "/training/modules/windows/wsl/wsl-introduction/what-is-wsl",
-    "redirect_document_id": true
   }
   ]
 }
