@@ -2,28 +2,15 @@
 
 The term AI tends to be thrown around a lot. You've probably heard about machine learning, deep learning, data science, generative AI, and responsible AI. However, it may not be clear what all these terms mean and how they're different to each other. In this unit, we'll clarify these concepts so you can understand how they apply to your business problem.
 
-:::row:::
-:::column span="2":::
-
 ## What is AI?
 Artificial Intelligence (AI) is an ability of a computer program or machine to **mimic human-like behavior** (for example, visual senses, speech recognition, decision-making, natural language understanding, and so on). Then, it's not a technology of itself, but a goal set by technologists: to imitate human intelligence.
 
 ## What is generative AI?
 Generative AI is a **subset of AI**. AI can be used to predict outcomes, detect entities, or classify documents, among others. However, generative AI, also known as GenAI, creates content, such as images, videos, or text. The goal is that this AI-generated content should be as useful as any created by humans. This approach is possible thanks to large language models (LLMs), which are very complex AI models that can be used for a broad range of use cases.
 
-For example, you may use generative AI to automatically create avatars. Generative AI could look at patterns of people's portraits and profile pictures. Based on this data, it could create new avatars that would look realistic but wouldn't relate to real people.
-
-:::column-end:::
-:::column span="2"::
-
+For example, you may use generative AI to translate images to text. Users with visual disabilities can use generative AI to understand what the image represents. Going further, generative AI can even explain the context or punchline of a joke, even if it's a picture.
 
 [![Image depicting two concentric circles. The bigger circle is labeled, “AI”. The smaller circle reads, “Generative AI”.](../media/2-identify-basic-ai-technology-concepts-1.png)](../media/2-identify-basic-ai-technology-concepts-1.png#lightbox)
-
-:::column-end:::
-:::row-end:::
-
-:::row:::
-:::column span="2":::
 
 ## What is data science?
 Data science is an **interdisciplinary field** whose aim is to achieve AI. It uses many different techniques, mostly machine learning and statistics. In most cases, data scientists are the experts in charge of solving AI problems.
@@ -38,14 +25,7 @@ Deep learning is a **subset of machine learning**. Deep learning is imitating ho
 
 For instance, deep learning can be used to detect cancerous cells in medical images. Deep learning scans every pixel in the image as input to the neural nodes. The nodes analyze each pixel to filter out features that look cancerous. Each layer of nodes pushes findings of potential cancerous cells to the next layer of nodes to repeat the process and eventually aggregate all of the findings to classify the image. For example, the image might be classified as a healthy image or an image with cancerous features.
 
-:::column-end:::
-:::column span="2"::
-
-
 [![Graph depicting AI methodologies. Deep learning belongs within machine learning. Machine learning belongs within data science.](../media/2-identify-basic-ai-technology-concepts-2.png)](../media/2-identify-basic-ai-technology-concepts-2.png#lightbox) 
-
-:::column-end:::
-:::row-end:::
 
 ## What is responsible AI?
 AI has a great disruptive potential. That is why it should follow the highest ethical standards. Responsible AI refers to the **principles and best practices** that ensure AI work is accountable, inclusive, reliable, safe, fair, transparent, secure, and respects privacy.

@@ -11,19 +11,10 @@ During initial iterative training and later model retraining, there are a few th
 
 First, it's helpful to centrally **manage assets** like environments, code, datasets, and models so teams can share and reuse them.
 
-:::row:::
-:::column span="2":::
-
 * **Model registry:** As teams experiment with different versions of a model, a model registry provides a central place to save each version. With a registry, teams can easily revert to a previous version if something isn't working, even after the solution has gone into production. The model registry also serves as an audit trail for each model's history.
 * **Code management:** Technical decision-makers need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code.
 
-:::column-end:::
-:::column span="2":::
-
-[![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png.png)](../media/7-discover-business-value-applying-devops-1.png.png#lightbox)
-
-:::column-end:::
-:::row-end:::
+[![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)](../media/7-discover-business-value-applying-devops-1.png.png#lightbox)
 
 * **Dataset management:** We also recommend saving training datasets centrally. This way, teams can reuse them, share them with colleagues, or monitor how they change over time to manage drift.
 * **Shared environments:** Create model environments that can be shared among individuals. This simplifies the handoff between steps in the model creation process and makes it possible for teams to collaborate on certain steps.
@@ -32,23 +23,13 @@ Second, we recommend automating tasks with **machine learning pipelines.** A pip
 
 ## Model validation
 
-:::row:::
-:::column span="2":::
-
 Before a model is deployed, it's critical to validate its performance metrics. You may have several metrics that are used to indicate the "best" model. It's important to work with data scientists to understand what metrics are important and evaluate them before deployment. There are **tools to evaluate model metrics**, such as a loss function or a confusion matrix.
 
 Metrics usually compare what the model has predicted with what it should have predicted (the true value or ground truth). Overall, the focus is to maximize true positives and true negatives, that is, the model succeeding in predicting true values. It's equally important to avoid false positives and false negatives, that is, wrong predictions and missed predictions.
 
 It's critical to validate performance metrics against the business use case. For example, perhaps you designed a model to predict patient health. As a healthcare provider dealing with life and death situations, you likely prefer to have false positive diagnoses rather than an incredibly high rate of accuracy that misses diagnoses.
 
-:::column-end:::
-:::column span="2":::
-
-
-[![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png.png)](../media/7-discover-business-value-applying-devops-2.png.png)
-
-:::column-end:::
-:::row-end:::
+[![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png)](../media/7-discover-business-value-applying-devops-2.png.png)
 
 If the model is a newer version of an existing model, you need to see if it performs better than the previous one on key metrics.
 
