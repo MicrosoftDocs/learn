@@ -88,6 +88,11 @@ The following steps demonstrate how to build a query by applying operators to a 
 
 ### [Azure Resource Graph](#tab/azure-resource-grid)
 
+The Azure Resource Graph Explorer is accessed through the **Resource Graph Explorer** blade in the Azure portal.
+
+> [!div class="nextstepaction"]
+> <a href="https://portal.azure.com/#view/HubsExtension/ArgQueryBlade/query/" target="_blank">Azure Resource Graph Explorer</a>
+
 The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
 
 1. Start with a tabular dataset.
