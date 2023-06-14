@@ -16,13 +16,21 @@ abstract: |
     - Describe Windows on Arm.
     - Understand why providing an Arm-native build for Windows applications is important.
     - Configure an Arm64 build using Visual Studio.
+    - Test an Arm64 build on an Arm virtual machine.
+    - Debug an Arm64 build using Visual Studio remote debugging.
     - Troubleshoot common issues experienced with Arm builds.
 
 prerequisites: |
   Before completing this module, you should have the following prerequisite tooling, knowledge and experience:
+    - Familiarity with the Windows 11 operating system at a beginner level.
     - Familiarity with Visual Studio and compiling source code at a beginner level.
     - Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
+    - Familiarity with using the Azure Portal to deploy and access deployed resources at a beginner level.
+    - Familiarity with using RDP to connect to a virtual machine at a beginner level.
+    - Have an Azure subscription with the ability to create a virtual machine.
+    - Have an internet browser installed.
     - Have Visual Studio 2022 installed with the .NET desktop development workload.
+    - Have the .NET 6.0 SDK installed. 
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
@@ -36,6 +44,8 @@ units:
 - learn.learn-windows-on-arm.introduction
 - learn.learn-windows-on-arm.introduction-to-windows-applications-on-arm
 - learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
+- learn.learn-windows-on-arm.exercise-test-an-arm-application-on-an-arm-virtual-machine {{learnRepo}}.{{moduleName}}
+- learn.learn-windows-on-arm.exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio {{learnRepo}}.{{moduleName}}
 - learn.learn-windows-on-arm.troubleshoot-common-arm-support-issues
 - learn.learn-windows-on-arm.knowledge-check
 - learn.learn-windows-on-arm.summary
