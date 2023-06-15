@@ -1,23 +1,20 @@
-Dedicated hosts utilize familiar Azure VM sizes (SKUs), but they necessitate extra prerequisites before a VM can be provisioned. These layers enable you to define the size family a host can accommodate and group multiple hosts even if they belong to different size families. Understanding the function of these configuration layers is crucial for optimizing and effectively managing your dedicated host deployments. Let's look into the architecture and components of the feature set.
+While Azure Dedicated hosts have the same VM management system as a set of standard Azure VMs they require extra prerequisites before a VM can be provisioned on a host. These prerequisites enable you to define a host's SKU and group multiple hosts together. Understanding the function of these prerequisites is crucial for optimizing and effectively managing your dedicated host deployments. Let's look into each of these prerequisites and see how they relate to a dedicated hosts deployment.
 
-Vamsi notes:
-Dedicated hosts come in different sizes. They're called SKUs. VM sizes are different. A dedicated host SKU is a combination of an Azure VM Family and Hardware Generation. Remove several extra configuration layers. This is what it looks like, and once you create a host you can deploy of the same... To create a host itself, you create a group. They're logical resources. Dedicated host specific prereqs. Mention host groups in intro paragraph
-
-## Prerequisites:
+## Prerequisites
 
 ### Host groups
 
-Host Groups are the first unique layer in a dedicated host deployment. They're a convenient way to visualize, organize, and manage a dynamic environment that can mix different hosts.
+Host Groups are the first unique prerequisite in a dedicated host deployment. They're a convenient way to visualize, organize, and manage a dynamic environment that can mix different hosts.
 
-Host groups are created within Resource groups. They have a specified location, availability zone (physical datacenter), and fault domain count. Host groups don't limit what VM sizes are available to you beyond your Subscription and Location availability.
+Host groups are created within Resource groups. They have a specified location, availability zone, and fault domain count. Host groups don't limit what VM sizes are available to you beyond your Subscription and Location availability.
 
-### Hosts
+### Host (SKU)
 
-Hosts represent the physical servers you're reserving when using dedicated hosts. When you select 'Add host' and follow the prompts to "create (a) dedicated host", you're effectively reserving an entire physical server sitting in the previously selected location's Azure datacenter.
+A host represents the physical server you're reserving when using dedicated hosts. When you select 'Add host' and follow the prompts to "create (a) dedicated host", you're effectively reserving an entire physical server SKU sitting in the previously selected location's Azure datacenter.
 
 ### Size family
 
-Size families are a list of related VM sizes that would normally run on a shared machine. You're only able to provision VMs on the host that are in the same VM family. If you want different hardware that's beyond what your selected size family can support, you'll have to add another host to your host group.
+Size families are a list of a SKU's available VM sizes. You're only able to provision VMs on a single host that are in the same VM family. If you want different hardware or sizes that are beyond what your selected size family can support, you'll have to add another host to your host group.
 
 ### Instances
 
