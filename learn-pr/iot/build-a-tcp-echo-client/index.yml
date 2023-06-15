@@ -4,7 +4,7 @@ metadata:
   title: Building and running a TCP echo client
   description: Building and running a TCP echo client
   ms.date: 06/15/2023
-  author: edlamie80
+  author: timlt
   ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
