@@ -45,7 +45,14 @@ There are two main approaches to working with `azd` templates:
 
 * **Extend an existing `azd` template** - A large library of `azd` templates already exists to cover common local application stacks, scenarios and architectures. You can browse many of the templates on the [Awesome AZD template gallery](https://azure.github.io/awesome-azd/) site. If you find a template that maps to your local application stack or desired architecture, you can use it as a starting point by replacing the source code directory and modifying the configuration or infrastructure files to meet your needs.
 
-* **Convert your own app into an `azd` template** - You can also convert an existing app into an `azd template` by following the [Make your project compatible with `azd`](/azure/developer/azure-developer-cli/make-azd-compatible?pivots=azd-create) guide. Creating your own template is often more work initially, but allows for the most control and produces a reusable solution for future development work on the app.
+* **Convert your own app into an `azd` template** - You can also convert an existing app into an `azd template` by following the [Make your project compatible with `azd`](/azure/developer/azure-developer-cli/make-azd-compatible?pivots=azd-create) guide. Creating your own template is often more work initially, but allows for the most control and produces a reusable solution for future development work on the app. The core steps to create your own template are as follows:
+
+- Initialize the project template with `azd init`
+- Create the infrastructure as code files using Bicep or Terraform
+- Update the `azure.yaml` file to tie the app services together with the Azure resources
+- Provision & deploy with `azd up`
+
+    :::image type="content" source="../media/azd-workflow.png" alt-text="A diagram showing the Azure Developer CLI template creation workflow.":::
 
 Regardless of which approach you choose, the resulting template structure will be the same. All `azd` templates include the following assets:
 
@@ -54,7 +61,7 @@ Regardless of which approach you choose, the resulting template structure will b
 * **`src folder`** - Contains all of the source code for you app.
 * **`.azure` folder** - Contains essential Azure configurations and environment variables, such as the location to deploy resources or other subscription information.
 
-    :::image type="content" source="../azd-template-structure.png" alt-text="A screenshot showing the Azure Developer CLI template structure.":::
+    :::image type="content" source="../media/azd-template-structure.png" alt-text="A screenshot showing the Azure Developer CLI template structure.":::
 
 Most `azd` templates also optionally include one or more of the following folders:
 

@@ -16,7 +16,7 @@ brew tap azure/azd && brew install azd
 
 ---
 
-The Azure Developer CLI relies on extensible templates that include everything you need to get an application up and running on Azure. These templates include reusable infrastructure as code (IaC) assets using Azure Bicep or Terraform and proof-of-concept application code that can be replaced with your own app code. The combination of `azd` commands and templates allows you to streamline many common development workflow stages and tasks:
+The Azure Developer CLI relies on extensible templates that include everything you need to get an application up and running on Azure. These templates include reusable infrastructure as code (IaC) assets using Azure Bicep or Terraform and proof-of-concept application code that can be replaced with your own app code. You can search for an existing template that uses a similar technology stack to your local app as a starting point. The combination of `azd` commands and templates allows you to streamline many common development workflow stages and tasks:
 
 * **Build and package application code** - `azd` will auto-detect the language or framework of your application and build and package the code for deployment.
 
