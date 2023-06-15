@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.manage-devices-azure-iot-central
+metadata:
+  title: Manage devices in Azure IoT Central
+  description: Explore device management capabilities provided by Azure IoT Central and how to perform device management at scale with device groups and jobs.
+  ms.date: 05/11/2023
+  author: dominicbetts
+  ms.author: dobett
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
+title: Manage devices in Azure IoT Central
+summary: Explore device management capabilities provided by Azure IoT Central and how to use the IoT Central UI tools to perform device management at scale with device groups and jobs.
+abstract: |
+  After you complete this module, you'll be able to:
+  - Describe the Azure IoT Central UI tools for device management.
+  - Describe device management with device groups.
+  - Describe device management at scale using jobs.
+prerequisites: |
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Describe the features, capabilities, and data workflows of an IoT solution.
+  - Describe the components and capabilities of Azure IoT Central.
+  - Describe the features and components of a Device Template.
+iconUrl: /training/achievements/iot/manage-devices-azure-iot-central.svg
+levels:
+- intermediate
+roles:
+- administrator
+- developer
+- solution-architect
+products:
+- azure-iot
+- azure-iot-central
+subjects:
+- iot
+units:
+- learn.wwl.manage-devices-azure-iot-central.introduction
+- learn.wwl.manage-devices-azure-iot-central.manage-your-devices
+- learn.wwl.manage-devices-azure-iot-central.introduction-to-device-groups
+- learn.wwl.manage-devices-azure-iot-central.at-scale-using-jobs
+- learn.wwl.manage-devices-azure-iot-central.knowledge-check
+- learn.wwl.manage-devices-azure-iot-central.summary
+badge:
+  uid: learn.wwl.manage-devices-azure-iot-central.badge
