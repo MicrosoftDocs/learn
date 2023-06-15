@@ -4,7 +4,7 @@ Azure Data Explorer is a fully managed, high-performance, big data analytics pla
 
 By analyzing structured, semi-structured, and unstructured data across time series, and by using Machine Learning, Azure Data Explorer makes it simple to extract key insights, spot patterns and trends, and create forecasting models. Azure Data Explorer is scalable, secure, robust, and enterprise-ready, and is useful for log analytics, time series analytics, IoT, and general-purpose exploratory analytics.
 
-:::image type="content" source="../media/7-azure-data-explorer.png" alt-text="Screenshot of query environment in Azure Data Explorer.":::
+:::image type="content" source="../media/7-azure-data-explorer.png" alt-text="Screenshot of query environment in Azure Data Explorer." lightbox="../media/7-azure-data-explorer.png":::
 
 Kusto Query Language was developed for Azure Data Explorer and can be used in a variety of environments, including the [web UI](/azure/data-explorer/web-ui-query-overview), [Kusto CLI](/azure/data-explorer/kusto/tools/kusto-cli), and the desktop app [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer). You can find the full query language documentation set at [KQL overview](/azure/data-explorer/kusto/query/).
 
@@ -12,7 +12,7 @@ Kusto Query Language was developed for Azure Data Explorer and can be used in a 
 
 Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, Real-Time Analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place. Real-Time Analytics in Microsoft Fabric is a fully managed big data analytics platform optimized for streaming, and time-series data. Real-Time Analytics contains what can be thought of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Querysets to run queries, view, and customize query results on data from a KQL database and save queries for later use or share with others to collaborate on data exploration. 
 
-:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics":::
+:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics" lightbox="../media/7-real-time-analytics.png":::
 
 For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set). 
 
@@ -38,7 +38,7 @@ Microsoft Sentinel is built on top of the Azure Monitor service and it uses Azur
 
 Azure Resource Graph is an Azure service designed to extend Azure Resource Management by providing efficient and performant resource exploration with the ability to query at scale across a given set of subscriptions so that you can effectively govern your environment. With Azure Resource Graph, you can access the properties returned by resource providers without needing to make individual calls to each resource provider.
 
-:::image type="content" source="../media/7-resource-graph.png" alt-text="Screenshot of query environment in Azure Resource Graph.":::
+:::image type="content" source="../media/7-resource-graph.png" alt-text="Screenshot of query environment in Azure Resource Graph." lightbox="../media/7-resource-graph.png":::
 
 Azure Resource Graph supports a subset of KQL data types, scalar functions, scalar operators, and aggregation functions. Specific tabular operators are supported by Resource Graph, some of which have different behaviors. This behavior is summarized in [Supported KQL language elements](/azure/governance/resource-graph/concepts/query-language#supported-kql-language-elements).
 
@@ -54,7 +54,7 @@ Advanced hunting is a query-based threat hunting tool that lets you explore up t
 
 Configuration Manager is part of the Microsoft Intune family of products, which provides a large centralized store of device data that customers use for reporting purposes.  CMPivot is an in-console utility that provides access to real-time state of devices in your environment.
 
-:::image type="content" source="../media/7-cm-pivot.png" alt-text="Screenshot of query environment in CM Pivot in Configuration Manager.":::
+:::image type="content" source="../media/7-cm-pivot.png" alt-text="Screenshot of query environment in CM Pivot in Configuration Manager." lightbox="../media/7-cm-pivot.png":::
 
 CMPivot uses a subset of the Kusto Query Language to search terms, identify trends, analyze patterns, and provide many other data-driven insights.  For more information, see [CMPivot queries](/mem/configmgr/core/servers/manage/cmpivot-overview#queries).
 
