@@ -14,7 +14,7 @@ Some of the more common use cases for Azure savings plan for compute include sce
 
 - Centralized budgeting and procurement.
 - Dynamic workloads that move across data center regions (for example, in the follow-the-sun scenarios).
-- An actively evolving IT roadmap (for examplem, a planned transition from the Infrastructure-as-a-Service to Platform-as-a-Service model).
+- An actively evolving IT roadmap (for example, a planned transition from the Infrastructure-as-a-Service to Platform-as-a-Service model).
 - A need for automating cost optimization across various services.
 
 You can use both Azure savings plan for compute and reservations. Microsoft automatically maximizes your benefit and savings across eligible usage each hour. Microsoft always applies the reservations first due to their more targeted scope and higher savings rates. Azure savings plan then applies to the remaining eligible usage until the commitment is fully consumed. After a reservation or an Azure savings plan for compute is fully consumed or expires, you're billed on a pay-as-you-go basis.
