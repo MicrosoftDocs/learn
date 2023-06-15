@@ -10,7 +10,7 @@ Threads can operate on all 32 event flags in a group simultaneously. To set or c
 
 Setting or clearing event flags is performed with a logical AND or OR operation between the current event flags group and the new specified event flags. The user specifies the type of logical operation (either AND or OR) in the call to the `tx_event_flags_set` service.
 
-There are similar logical options for getting event flags. A get request can specify that all specified event flags are required (a logical AND). Alternatively, a get request can specify that any of the specified event flags will satisfy the request (a logical OR). The user specifies the type of logical operation in the `tx_event_flags_get` call.
+There are similar logical options for getting event flags. A get request can specify that all specified event flags are required (a logical AND). Alternatively, a get request can specify that any of the specified event flags satisfy the request (a logical OR). The user specifies the type of logical operation in the `tx_event_flags_get` call.
 
 Event flags that satisfy a get request are cleared if the request specifies either of the options `TX_OR_CLEAR` or `TX_AND_CLEAR`. The flag values remain unchanged when you use the `TX_AND` or `TX_OR` options in a get request.
 
@@ -20,4 +20,4 @@ An application usually creates event flags groups during initialization (that is
 
 Application threads can suspend while attempting to get any logical combination of event flags from a group. Immediately after one or more flags of a group have been set, ThreadX reviews the get requests of all threads suspended on that event flags group. All the threads whose get requests were satisfied by the set operation are resumed.
 
-We'll investigate event flags groups by first discussing how to set flags. After learning how to set flags, we'll look at how to retrieve or get flags. The name of this project is ProjectEventFlags.
+In this module, we investigate event flags groups by first discussing how to set flags. After learning how to set flags, we'll look at how to retrieve or get flags. The name of the project in this module is ProjectEventFlags.

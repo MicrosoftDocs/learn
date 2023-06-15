@@ -15,15 +15,15 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-    - content: 'How many threads will leave suspension when the specified event flags are satisfied?'
+    - content: 'How many threads leave suspension when the specified event flags are satisfied?'
       choices:
         - content: '2'
           isCorrect: false
-          explanation: "Incorrect. 2 isn't the number of threads that will leave suspension when the specified event flags are satisfied."
+          explanation: "Incorrect. 2 isn't the number of threads that leave suspension when the specified event flags are satisfied."
         - content: '32'
           isCorrect: false
-          explanation: "Incorrect. 32 isn't the number of threads that will leave suspension when the specified event flags are satisfied."
-        - content: 'All suspended threads that satisfy the specified event flags will leave suspension.'
+          explanation: "Incorrect. 32 isn't the number of threads that leave suspension when the specified event flags are satisfied."
+        - content: 'All suspended threads that satisfy the specified event flags leave suspension.'
           isCorrect: true
           explanation: 'Correct! All suspended threads that satisfy specified event flags leave suspension.'
     - content: 'At what point in time is an event flags group initialized to zero?'
@@ -44,29 +44,29 @@ quiz:
           explanation: 'Correct! The service call tx_event_flags_set(&my_flags, 0x101, TX_OR); will always succeed.'
         - content: 'tx_event_flags_get(&my_flags, 0x110, TX_OR, &actual_TX_WAIT_FOREVER);'
           isCorrect: false
-          explanation: "Incorrect. This isn't a ThreadX service call that will always succeed."
+          explanation: "Incorrect. This ThreadX service call won't always succeed."
         - content: 'tx_event_flags_get(&my_flags, 0x110, TX_AND_CLEAR, &actual_TX_WAIT_FOREVER);'
           isCorrect: false
-          explanation: "Incorrect. This isn't a ThreadX service call that will always succeed."
-    - content: 'Suppose that the event flags group contains 0x111. What will be the result of this valid service call: tx_event_flags_set(&my_flags, 0x101, TX_AND);'
+          explanation: "Incorrect. This ThreadX service call won't always succeed."
+    - content: 'Suppose that the event flags group contains 0x111. What is the result of this valid service call: tx_event_flags_set(&my_flags, 0x101, TX_AND);'
       choices:
         - content: 'The new value of the event flags group is 0x111.'
           isCorrect: false
-          explanation: "Incorrect. The new value of the event flags group won't be 0x111 as a result of this service call."
+          explanation: "Incorrect. The new value of the event flags group isn't 0x111 as a result of this service call."
         - content: 'The new value of the event flags group is 0x101.'
           isCorrect: true
           explanation: 'Correct! The new value of the event flags group is 0x101.'
         - content: 'The new value of the event flags group is 0x010.'
           isCorrect: false
-          explanation: "Incorrect. The new value of the event flags group won't be 0x010 as a result of this service call."
-    - content: 'Suppose that the event flags group contains 0x101. What will be the result of this valid service call: tx_event_flags_get(&my_flags, 0x101, TX_OR_CLEAR, &actual, TX_WAIT_FOREVER);'
+          explanation: "Incorrect. The new value of the event flags group isn't 0x010 as a result of this service call."
+    - content: 'Suppose that the event flags group contains 0x101. What is the result of this valid service call: tx_event_flags_get(&my_flags, 0x101, TX_OR_CLEAR, &actual, TX_WAIT_FOREVER);'
       choices:
         - content: 'The specified flags are satisfied and the new value of the event flags group is 0x101.'
           isCorrect: false
-          explanation: "Incorrect. The new value of the event flags group won't be 0x101 as a result of this service call."
+          explanation: "Incorrect. The new value of the event flags group isn't 0x101 as a result of this service call."
         - content: 'The specified flags are satisfied and the new value of the event flags group is 0x100'
           isCorrect: false
-          explanation: "Incorrect. The new value of the event flags group won't be 0x100 as a result of this service call."
+          explanation: "Incorrect. The new value of the event flags group isn't 0x100 as a result of this service call."
         - content: 'The specified flags are satisfied and the new value of the event flags group is 0x000.'
           isCorrect: true
           explanation: 'Correct! The specified flags are satisfied and the new value of the event flags group is 0x000.'
