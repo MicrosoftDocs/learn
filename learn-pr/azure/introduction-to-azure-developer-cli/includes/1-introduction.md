@@ -24,7 +24,7 @@ In this module, you will:
 ## Prerequisites
 
 - Basic knowledge of fundamental cloud concepts
-- Basic knowledge of software development workflows, such as building, provisioning, and deploying resources
+- Basic knowledge of software development workflows, such as packaging, provisioning, and deploying resources
 
 ## What is the main goal?
 

@@ -14,13 +14,13 @@ For example, a typical `azd` workflow using an existing template includes the fo
 
 2. Run the `azd auth login` command to sign in to your Azure subscription.
 
-    ```dotnetcli
+    ```azurecli
     azd auth login
     ```
 
 3. Run the `azd up` command to provision and deploy the template resources to Azure.
 
-    ```dotnetcli
+    ```azurecli
     azd up
     ```
 
@@ -49,15 +49,15 @@ There are two main approaches to working with `azd` templates:
 
 Regardless of which approach you choose, the resulting template structure will be the same. All `azd` templates include the following assets:
 
-* **`infra` folder** - Contains all of the Bicep files for the `azd` template. Bicep is an infrastructure as code language that is used to create and configure Azure resources through a declarative syntax. Bicep files are executed by `azd` to create the Azure resources required to host your app.
+* **`infra` folder** - Contains all of the Bicep or Terraform infrastructure as code files for the `azd` template. Infrastructure as code allows you to define infrastructure resources and configurations in declarative definition files that reliably generate the same environments every time they are deployed. Terraform works across multiple cloud platforms, while Bicep is specific to Azure. These files are executed by `azd` to create the Azure resources required to host your app. You can learn more about infrastructure as code in the [What is infrastructure as code?](/devops/deliver/what-is-infrastructure-as-code) training module.
 * **`azure.yaml` file** - A configuration file that defines one or more services in your project and maps them to Azure resources for deployment. For example, you might define an API service and a web front-end service, each with attributes that map them to different Azure resources for deployment.
 * **`src folder`** - Contains all of the source code for you app.
-* **`.azure` folder** - Contains essential Azure configurations, such as the location to deploy resources or other subscription information.
+* **`.azure` folder** - Contains essential Azure configurations and environment variables, such as the location to deploy resources or other subscription information.
 
     :::image type="content" source="../azd-template-structure.png" alt-text="A screenshot showing the Azure Developer CLI template structure.":::
 
 Most `azd` templates also optionally include one or more of the following folders:
 
-* **`.devcontainer` folder** - This folder allows you to setup a dev container environment for your application. This is a common development environment approach that is not specific to `azd`.
+* **`.devcontainer` folder** - Allows you to setup a Dev Container environment for your application. This is a common development environment approach that is not specific to `azd`.
+* **`.github` folder** - Holds the CI/CD workflow files for GitHub Actions, which is the default CI/CD provider for `azd`.
 * **`.azdo` folder** - If you decide to use Azure Pipelines for CI/CD, define the workflow configuration files in this folder.
-* **`.github` folder** - If you decide to use GitHub Actions for CI/CD, define the workflow configuration files in this folder.
