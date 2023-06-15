@@ -6,6 +6,7 @@ metadata:
   ms.date: 01/10/2023
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: .net
 title: Create a new .NET project and work with dependencies  

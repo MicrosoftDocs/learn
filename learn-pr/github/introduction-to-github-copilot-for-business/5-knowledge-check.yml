@@ -1,0 +1,57 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.github.introduction-to-github-copilot-for-business.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Introduction to GitHub Copilot for Business" module.
+  ms.date: 05/23/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+durationInMinutes: 3
+quiz:
+  title: Check your knowledge
+  questions:
+    - content: "What functionality isn't supported in GitHub Copilot for Individuals?"
+      choices:
+        - content: "VPN Proxy support via self-signed certificates"
+          isCorrect: true
+          explanation: VPN Proxy support via self-signed certificates is not available with GitHub Copilot for Individuals, but is available with GitHub Copilot for Business.
+        - content: "Offers multi-line function suggestions"
+          isCorrect: false
+          explanation: Offers multi-line function suggestions is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
+        - content: "Editor integration"
+          isCorrect: false
+          explanation: Editor integration is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
+        - content: "Blocks suggestions matching public code"
+          isCorrect: false
+          explanation: Blocks suggestions matching public code is a supported functionality both in GitHub Copilot for Individuals and GitHub Copilot for Business.
+    - content: "What percentage of developers have said that GitHub Copilot makes them code faster?"
+      choices:
+        - content: "70%"
+          isCorrect: false
+          explanation: The percentage of developers that have said GitHub Copilot is higher than 70%.
+        - content: "83%"
+          isCorrect: false
+          explanation: The percentage of developers that have said GitHub Copilot is higher than 83%.
+        - content: "65%"
+          isCorrect: false
+          explanation: The percentage of developers that have said GitHub Copilot is higher than 65%.
+        - content: "90%"
+          isCorrect: true
+          explanation: 90% is the correct percentage of developers that have said GitHub Copilot helps them code faster.
+    - content: "After you enforced your GitHub Copilot for Business policy, where do you first navigate to in order to enable Copilot for Business for all current and future users?"
+      choices:
+        - content: "Policies"
+          isCorrect: false
+          explanation: This isn't the first place to navigate to in order to enable GitHub Copilot for Business
+        - content: "Your organizations in your profile dropdown menu"
+          isCorrect: true
+          explanation: Correct! This "Your organizations" in your profile dropdown menu is the first place to navigate to in order to enable GitHub Copilot for Business
+        - content: "Settings in your profile dropdown menu"
+          isCorrect: false
+          explanation: Close, but this isn't the first place to navigate to in order to enable GitHub Copilot for Business
+        - content: "Selected teams/users"
+          isCorrect: false
+          explanation: This isn't the first place to navigate to in order to enable GitHub Copilot for Business

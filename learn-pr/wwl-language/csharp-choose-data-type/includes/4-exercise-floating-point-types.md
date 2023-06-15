@@ -1,6 +1,7 @@
 
 
 
+
 In this exercise, you'll work with floating-point data types to learn about the nuanced differences between each data type.
 
 A floating point is a simple value type that represents numbers to the right of the decimal place. Unlike integral numbers, there are other considerations beyond the maximum and minimum values you can store in a given floating-point type.

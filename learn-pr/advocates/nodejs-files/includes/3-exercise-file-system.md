@@ -231,7 +231,7 @@ async function findSalesFiles(folderName) {
 
   async function findFiles(folderName) {
     // read all the items in the current folder
-    const items = await fs.readdirSync(folderName, { withFileTypes: true });
+    const items = await fs.readdir(folderName, { withFileTypes: true });
 
     // iterate over each found item
     for (item of items) {

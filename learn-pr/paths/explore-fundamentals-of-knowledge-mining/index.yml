@@ -22,7 +22,7 @@ roles:
 - ai-engineer
 - student
 products:
-- azure-search
+- azure-cognitive-search
 subjects:
 - artificial-intelligence
 modules:
