@@ -2,7 +2,7 @@ Azure API Management helps organizations unlock the potential of their data and 
 
 To use API Management, administrators define _APIs_ in the portal. Each API consists of one or more operations, and can be added to one or more products. To use an API, developers subscribe to a product that contains that API, and then call the API's operations, subject to any usage policies that might be in effect. Common scenarios include:
 
-* Securing mobile infrastructure by gating access with API keys, preventing distribute denial of service attacks (DDoS) by using throttling, or using advanced security policies like JSON web token (JWT) validation.
+* Securing mobile infrastructure by gating access with API keys, preventing distributed denial of service (DDoS) attacks by using throttling, or using advanced security policies like JSON web token (JWT) validation.
 
 * Offering fast partner onboarding through the developer portal to independent software vendor (ISV) partner ecosystems. Enabling them to build an API facade to decouple from internal implementations that aren't ready for partner consumption.
 

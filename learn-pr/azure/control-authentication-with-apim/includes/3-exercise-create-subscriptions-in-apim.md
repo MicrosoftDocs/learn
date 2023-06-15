@@ -2,7 +2,7 @@ You can use the Azure API Management user interface in the Azure portal to creat
 
 Suppose your weather company has decided to make its meteorological data available to clients that subscribe and pay for this service. The critical requirement is to only allow access to clients that are allocated a key. As lead developer, you need to create an API gateway. You'll use the gateway to publish a RESTful Weather API that exposes an OpenAPI endpoint. You'll then secure the endpoint and allocate a client key.
 
-In this unit, you will:
+In this unit, you'll:
 
 - Publish a RESTful Weather API
 - Deploy an API Management gateway

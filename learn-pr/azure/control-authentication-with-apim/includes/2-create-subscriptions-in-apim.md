@@ -39,7 +39,7 @@ Applications must include a valid key in all HTTP requests that make calls to AP
 
 The default subscription key header name is **Ocp-Apim-Subscription-Key**, and the default query string name is **subscription-key**.
 
-To test out your API calls, you can use the developer portal, or command-line tools, such as **curl**. Here's an example of a `GET` request using the developer portal, which shows the subscription key header:
+To test out your API calls, you can use a test console in the Azure portal, or the developer portal, or command-line tools, such as **curl**. Here's an example of a `GET` request using the developer portal, which shows the subscription key header:
 
 :::image type="content" source="../media/2-key-header-portal.png" alt-text="Screenshot that shows how to call your API from developer portal." loc-scope="other"::: <!-- no-loc -->
 

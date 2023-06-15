@@ -7,7 +7,7 @@ In this module, you'll use two basic methods to secure access to an API in Azure
 - Subscriptions
 - Client certificates
 
-By the end of this module, you'll be able to ensure that only people with the right credentials can access the information in your API. You'll also be ready to move on to more advanced methods of securing access to an API.
+By the end of this module, you'll be able to ensure that only people with the right credentials can access the information in your API. You'll also be ready to explore more advanced options to secure access to an API.
 
 ## Learning objectives
 
