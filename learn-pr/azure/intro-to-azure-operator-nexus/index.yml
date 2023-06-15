@@ -21,7 +21,7 @@ prerequisites: |
   - Conceptual knowledge of Azure compute solutions.
   - Working experience with virtual machines, containers, and virtual networks.
   - Knowledge of AZ-900, AZ-104, AZ-305.
-iconUrl: /learn/achievements/intro-to-operator-nexus.svg
+iconUrl: /training/achievements/intro-to-operator-nexus.svg
 levels:
   - intermediate
 roles:
