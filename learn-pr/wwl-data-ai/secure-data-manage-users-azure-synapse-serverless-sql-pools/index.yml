@@ -3,7 +3,7 @@ uid: learn.wwl.secure-data-manage-users-azure-synapse-serverless-sql-pools
 metadata:
   title: Secure data and manage users in Azure Synapse serverless SQL pools
   description: "Secure data and manage users in Azure Synapse serverless SQL pools"
-  ms.date: 05/16/2023
+  ms.date: 06/14/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
