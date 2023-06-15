@@ -49,10 +49,10 @@ There are two main approaches to working with `azd` templates:
 
 Regardless of which approach you choose, the resulting template structure will be the same. All `azd` templates include the following assets:
 
-* **`infra` folder** - A folder that contains all of the Bicep files for the `azd` template. Bicep is an infrastructure as code language that is used to create and configure Azure resources through a declarative syntax. Bicep files are executed by `azd` to create the Azure resources required to host your app.
-* **`azure.yaml` file** - This configuration file defines one or more services in your project and maps them to Azure resources for deployment. For example, you might define an API service and a web front-end service, each with attributes that map them to different Azure resources for deployment.
-* **`src folder`** - The folder that contains all of the source code for you app.
-* **`.azure` folder** - A folder that stores essential Azure configurations, such as the location to deploy resources or other subscription information.
+* **`infra` folder** - Contains all of the Bicep files for the `azd` template. Bicep is an infrastructure as code language that is used to create and configure Azure resources through a declarative syntax. Bicep files are executed by `azd` to create the Azure resources required to host your app.
+* **`azure.yaml` file** - A configuration file that defines one or more services in your project and maps them to Azure resources for deployment. For example, you might define an API service and a web front-end service, each with attributes that map them to different Azure resources for deployment.
+* **`src folder`** - Contains all of the source code for you app.
+* **`.azure` folder** - Contains essential Azure configurations, such as the location to deploy resources or other subscription information.
 
     :::image type="content" source="../azd-template-structure.png" alt-text="A screenshot showing the Azure Developer CLI template structure.":::
 
