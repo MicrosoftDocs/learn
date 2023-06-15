@@ -1,4 +1,5 @@
 
+
 Azure Stream Analytics is a service for complex event processing and analysis of streaming data. Stream Analytics is used to:
 
 - Ingest data from an *input*, such as an Azure event hub, Azure IoT Hub, or Azure Storage blob container.
