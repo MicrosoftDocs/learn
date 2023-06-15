@@ -5,6 +5,7 @@ metadata:
   description: Provision Azure resources, download the eShopOnContainers starter solution, and configure the learning environment.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 10/14/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial

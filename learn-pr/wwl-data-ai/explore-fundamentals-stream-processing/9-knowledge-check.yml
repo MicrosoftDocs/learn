@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/24/2023
+  ms.date: 06/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -35,14 +35,3 @@ quiz:
     - content: "Azure Storage"
       isCorrect: false
       explanation: "Incorrect. Azure Storage doesn't provide stream-querying functionality."
-  - content: "Which language would you use to query real-time log data in Azure Synapse Data Explorer?"
-    choices:
-    - content: "SQL"
-      isCorrect: false
-      explanation: "Incorrect. SQL is used to query relational databases, but it is not the right choice for Data Explorer."
-    - content: "Python"
-      isCorrect: false
-      explanation: "Incorrect. Python can be used to analyze data using platforms like Spark, but it is not the right choice for Data Explorer."
-    - content: "KQL"
-      isCorrect: true
-      explanation: "Correct. Kusto Query Language is an intuitive but powerful language for querying Data Explorer tables."
