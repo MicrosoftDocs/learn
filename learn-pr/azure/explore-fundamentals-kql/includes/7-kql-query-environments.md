@@ -8,6 +8,14 @@ By analyzing structured, semi-structured, and unstructured data across time seri
 
 Kusto Query Language was developed for Azure Data Explorer and can be used in a variety of environments, including the [web UI](/azure/data-explorer/web-ui-query-overview), [Kusto CLI](/azure/data-explorer/kusto/tools/kusto-cli), and the desktop app [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer). You can find the full query language documentation set at [KQL overview](/azure/data-explorer/kusto/query/).
 
+## Synapse Real-Time Analytics in Microsoft Fabric (Preview)
+
+Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, Real-Time Analytics, and business intelligence. It offers a comprehensive suite of services, including data lake, data engineering, and data integration, all in one place. Real-Time Analytics in Microsoft Fabric is a fully managed big data analytics platform optimized for streaming, and time-series data. Real-Time Analytics contains what can be thought of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Querysets to run queries, view, and customize query results on data from a KQL database and save queries for later use or share with others to collaborate on data exploration. 
+
+:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics":::
+
+For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set). 
+
 ## Azure Monitor
 
 Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to telemetry from your cloud and on-premises environments. Log Analytics is a tool in the Azure portal that's used to edit and run log queries against data in the Azure Monitor Logs store.
