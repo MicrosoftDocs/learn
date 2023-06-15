@@ -1,27 +1,27 @@
 # Explore Azure Synapse Analytics
 
-Azure Synapse Analytics provides a single, consolidated data analytics platform for end-to end data analytics. In this exercise, you'll explore various ways to ingest and explore data. This exercise is designed as a high-level overview of the various core capabilities of Azure Synapse Analytics Other exercises are available to explore specific capabilities in more detail.
+Azure Synapse Analytics provides a single, consolidated data analytics platform for end-to end data analytics. In this exercise, you explore various ways to ingest and explore data. This exercise is designed as a high-level overview of the various core capabilities of Azure Synapse Analytics Other exercises are available to explore specific capabilities in more detail.
 
 This exercise should take approximately **60** minutes to complete.
 
 ## Before you start
 
-You'll need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
+You need an [Azure subscription](https://azure.microsoft.com/free) in which you have administrative-level access.
 
 ## Provision an Azure Synapse Analytics workspace
 
 An Azure Synapse Analytics *workspace* provides a central point for managing data and data processing runtimes. You can provision a workspace using the interactive interface in the Azure portal, or you can deploy a workspace and resources within it by using a script or template. In most production scenarios, it's best to automate provisioning with scripts and templates so that you can incorporate resource deployment into a repeatable development and operations (*DevOps*) process.
 
-In this exercise, you'll use a combination of a PowerShell script and an ARM template to provision Azure Synapse Analytics.
+In this exercise, you use a combination of a PowerShell script and an ARM template to provision Azure Synapse Analytics.
 
 1. In a web browser, sign into the [Azure portal](https://portal.azure.com) at `https://portal.azure.com`.
-2. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a ***PowerShell*** environment and creating storage if prompted. The cloud shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
+2. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a ***PowerShell*** environment and creating storage if prompted. The Cloud Shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
 
     ![Azure portal with a cloud shell pane](media/cloud-shell.png)
 
     > **Note**: If you have previously created a cloud shell that uses a *Bash* environment, use the the drop-down menu at the top left of the cloud shell pane to change it to ***PowerShell***.
 
-3. Note that you can resize the cloud shell by dragging the separator bar at the top of the pane, or by using the **&#8212;**, **&#9723;**, and **X** icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](https://docs.microsoft.com/azure/cloud-shell/overview).
+3. You can resize the Cloud Shell by dragging the separator bar at the top of the pane, or by using the—, **&#9723;**, and **X** icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](https://docs.microsoft.com/azure/cloud-shell/overview).
 
 4. In the PowerShell pane, enter the following commands to clone this repo:
 
@@ -77,7 +77,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
 ### Use the Copy Data task to create a pipeline
 
 1. In Synapse Studio, on the **Home** page, select **Ingest** to open the **Copy Data** tool
-2. In the Copy Data tool, on the **Properties** step, ensure that **Built-in copy task** and **Run once now** are selected, and click **Next >**.
+2. In the Copy Data tool, on the **Properties** step, ensure that **Built-in copy task** and **Run once now** are selected, and select **Next >**.
 3. On the **Source** step, in the **Dataset** substep, select the following settings:
     - **Source type**: All
     - **Connection**: *Create a new connection, and in the **Linked service** pane that appears, on the **Generic protocol** tab, select **HTTP**. Then continue and create a connection to a data file using the following settings:*
@@ -94,7 +94,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
     - **Binary copy**: <u>Un</u>selected
     - **Request timeout**: *Leave blank*
     - **Max concurrent connections**: *Leave blank*
-5. On the **Source** step, in the **Configuration** substep, select **Preview data** to see a preview of the product data your pipeline will ingest, then close the preview.
+5. On the **Source** step, in the **Configuration** substep, select **Preview data** to see a preview of the product data your pipeline ingests, then close the preview.
 6. After previewing the data, on the **File format settings** page, ensure the following settings are selected, and then select **Next >**:
     - **File format**: DelimitedText
     - **Column delimiter**: Comma (,)
@@ -118,14 +118,14 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
     - **Compression type**: None
     - **Max rows per file**: *Leave blank*
     - **File name prefix**: *Leave blank*
-10. On the **Settings** step, enter the following settings and then click **Next >**:
+10. On the **Settings** step, enter the following settings and then select **Next >**:
     - **Task name**: Copy products
     - **Task description** Copy products data
     - **Fault tolerance**: *Leave blank*
     - **Enable logging**: <u>Un</u>selected
     - **Enable staging**: <u>Un</u>selected
-11. On the **Review and finish** step, on the **Review** substep, read the summary and then click **Next >**.
-12. On the **Deployment** step, wait for the pipeline to be deployed and then click **Finish**.
+11. On the **Review and finish** step, on the **Review** substep, read the summary and then select **Next >**.
+12. On the **Deployment** step, wait for the pipeline to be deployed and then select **Finish**.
 13. In Synapse Studio, select the **Monitor** page, and in the **Pipeline runs** tab, wait for the **Copy products** pipeline to complete with a status of **Succeeded** (you can use the **&#8635; Refresh** button on the Pipeline runs page to refresh the status).
 14. View the **Integrate** page, and verify that it now contains a pipeline named **Copy products**.
 
