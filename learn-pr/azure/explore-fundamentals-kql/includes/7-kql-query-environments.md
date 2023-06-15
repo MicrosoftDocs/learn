@@ -1,3 +1,7 @@
+Now that you've learned about how KQL works and how queries are built, let's dive into the different query environments where you can use KQL in Microsoft products.
+
+The environments described in this unit are [Azure Data Explorer](#azure-data-explorer), [Synapse Real-Time Analytics in Microsoft Fabric (Preview)](#synapse-real-time-analytics-in-microsoft-fabric-preview), [Azure Monitor](#azure-monitor), [Microsoft Sentinel](#microsoft-sentinel), [Azure Resource Graph](#azure-resource-graph), [Azure Resource Graph](#azure-resource-graph), [Microsoft 365 Defender](#microsoft-365-defender), and [Configuration Manager](#configuration-manager).
+
 ## Azure Data Explorer
 
 Azure Data Explorer is a fully managed, high-performance, big data analytics platform that makes it easy to analyze high volumes of data in near real time. The Azure Data Explorer toolbox gives you an end-to-end solution for data ingestion, query, visualization, and management.
