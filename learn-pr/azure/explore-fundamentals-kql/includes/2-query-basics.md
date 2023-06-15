@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-In this unit, you'll learn about what a query is and the use cases for querying data in Azure using Kusto Query Language. 
+Organizations often collect a wide range of data about IT resources and users. Querying data is powerful tool for working with and acting on data you collect.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
