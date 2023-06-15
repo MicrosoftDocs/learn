@@ -18,7 +18,7 @@ Developers spend significant amounts of time and energy creating and properly co
 
 In this module, you will:
 
-- Evaluate whether The Azure Developer CLI is an appropriate fit for your project
+- Evaluate whether the Azure Developer CLI is an appropriate fit for your project
 - Describe core Azure Developer CLI workflows and features and how they integrate with an app
 
 ## Prerequisites
