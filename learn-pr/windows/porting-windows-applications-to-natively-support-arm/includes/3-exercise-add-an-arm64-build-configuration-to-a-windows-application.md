@@ -6,7 +6,7 @@ In practice, Windows apps can be created using various languages, frameworks, an
 
 In this exercise, you’ll add an Arm64 build to an existing Windows application using Visual Studio. The Arm version of Visual Studio is not required to complete this exercise.
 
-1. Download the project files for this exercise from the [GitHub repository](https://github.com/solliancenet/porting-windows-applications-to-natively-support-arm-project/archive/refs/heads/main.zip).
+1. Download the project files for this exercise from the [GitHub repository](https://github.com/MicrosoftDocs/mslearn-add-arm64-windows-app/archive/refs/heads/main.zip).
 
 1. Extract the contents of the downloaded zip file to a folder on your computer.
 
