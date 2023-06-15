@@ -1,4 +1,4 @@
-Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development to a successful cloud solution.
+Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to a application successfully deployed on Azure.
 
 ## Example scenario
 
@@ -18,7 +18,7 @@ Developers spend significant amounts of time and energy creating and properly co
 
 In this module, you will:
 
-- Evaluate whether The Azure Developer CLI is an appropriate fit for your project
+- Evaluate whether the Azure Developer CLI is an appropriate fit for your project
 - Describe core Azure Developer CLI workflows and features and how they integrate with an app
 
 ## Prerequisites

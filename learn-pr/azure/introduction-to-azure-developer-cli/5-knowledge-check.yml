@@ -37,7 +37,7 @@ quiz:
     - content: "Describes and maps your application code to provisioned resources in Azure."
       isCorrect: true
       explanation: "Correct. The `azure.yaml` file describes the services in your code, such as the language and corresponding Azure resources."
-    - content: "Defines a dev container environment for the project."
+    - content: "Defines a Dev Container environment for the project."
       isCorrect: false
       explanation: "Incorrect. The `.devcontainer.json` file is used to setup dev containers for `azd` templates."
     - content: "Defines the infrastructure as code templates that will create resources in Azure."
@@ -48,7 +48,7 @@ quiz:
     - content: "The application is packaged and the necessary resources are provisioned and deployed to Azure."
       isCorrect: true
       explanation: "Correct. The `azd up` command is the most common workflow for packaging, provisioning, and deploying resources to Azure."
-    - content: "The specified `azd` template is cloned down from GitHub."
+    - content: "The specified `azd` template is cloned from GitHub."
       isCorrect: false
       explanation: "Incorrect. The `azd init` command clones and initializes the specified template using the `-template` parameter."
     - content: "The CI/CD pipeline of the specified `azd` template is executed."
@@ -71,5 +71,3 @@ quiz:
     - content: "It contains the Bicep or Terraform files that define the infrastructure as-code templates."
       isCorrect: true
       explanation: "Correct. The `infra` folder contains the Bicep or Terraform files that define the infrastructure as-code templates."
-
-
