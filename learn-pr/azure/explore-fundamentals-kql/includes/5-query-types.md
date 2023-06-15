@@ -44,15 +44,17 @@ print str = strcat("hello", " ", "world")
 
 User-defined functions are, as their name suggests, defined by the user. User-defined functions can be divided into two types:
 
-* **Stored functions**: user-defined functions that are stored and managed database schema entities (like tables).
+* **Stored functions**: user-defined functions that are stored and managed database schema entities (like tables). Different products use different way to store functions.
 
-    For example, the following KQL query stores a function that takes a parameter:
+    For example, the following KQL query in Azure Data Explorer stores a function that takes a parameter:
 
     ```kusto
     .create function
     with (docstring = 'Demo function with parameter', folder='Demo')
      MyFunction2(myLimit: long)  {StormEvents | take myLimit}
     ```
+
+In other environment, such as Azure Monitor and Microsoft Sentinel, queries are saved through the UI.
 
 * **Query-defined functions**: user-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
 
