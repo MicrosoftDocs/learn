@@ -80,15 +80,13 @@ In a later unit in this module, we'll have a quick look at these Azure services,
 
 Other Azure services with different needs use different query languages. For example, storage services often use Structured Query Language (SQL).  
 
-Compared to SQL, KQL is a simpler and more concise language that's optimized for running ad-hoc queries and data exploration. 
+Compared to SQL, KQL is simpler, more concise, and better optimized for ad-hoc queries and data exploration. 
 ## What can you do with KQL? 
 
-1. investigate or analyze - you might want to retrieve data using a query when working with Azure Monitor or Azure Data Explorer. For example, you can write log queries in Azure Monitor to understand query structure, sort query results, filter query results, specify a time range, select which fields to include in the results, define and use custom fields, and aggregate and group results.
-1. create alerts - you can use kql to create alerts in Azure Monitor. For example, you can create alerts based on the results of a log query, and you can create alerts based on metrics.
-1. create workbooks - you can use kql to create workbooks in Azure Monitor. For example, you can create workbooks based on the results of a log query, and you can create workbooks based on metrics.
-1. create custom detections - you can use kql to create custom detections in Azure Sentinel. For example, you can create custom detections based on the results of a log query, and you can create custom detections based on metrics.
-1. create custom visualizations - you can use kql to create custom visualizations in Azure Sentinel. For example, you can create custom visualizations based on the results of a log query, and you can create custom visualizations based on metrics. 
-1. transform data - you can use kql to transform data in Azure Data Explorer. 
+While all Azure services provide ready-to-use data analysis tools and dashboards, with a bit of KQL knowledge, you can do much more. For example, you can: 
 
+- Investigate or analyze - use KQL to troubleshoot issues or gain specific insights. 
+- Define your own alerts - trigger an alert based on logic you define using KQL.
+- Create custom visualizations - create dashboards and workbooks that visualize the results of KQL queries. 
+- Transform data - transform data before you store or present it. For example, you can use KQL to convert data from one format to another. In some services, you can filter out data from a data source to save costs on analyzing and storing data you don't need. 
 
-In Azure, you might want to retrieve data using a query when working with Azure Monitor or Azure Data Explorer. For example, you can write log queries in Azure Monitor to understand query structure, sort query results, filter query results, specify a time range, select which fields to include in the results, define and use custom fields, and aggregate and group results4. In the stand-alone Azure Data Explorer web UI, the query editor provides suggestions and warnings as you write your queries5.
