@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/16/2023
+  ms.date: 06/14/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
@@ -18,10 +18,10 @@ quiz:
     choices:
     - content: "Local authentication."
       isCorrect: false
-      explanation: "Incorrect. Local authentication is not a valid authentication method."
+      explanation: "Incorrect. Local authentication isn't a valid authentication method."
     - content: "SQL Authentication."
       isCorrect: true
-      explanation: "Correct. SQL Authentication uses  an authentication method of a username and password stored within the serverless SQL pool."
+      explanation: "Correct. SQL Authentication uses an authentication method of a username and password stored within the serverless SQL pool."
     - content: "Azure Active Directory."
       isCorrect: false
       explanation: "Incorrect. Azure Active Directory uses identities managed by Azure Active Directory."
@@ -32,10 +32,10 @@ quiz:
       explanation: "Correct. The manage hub is the area of Azure Synapse Studio where you assign administrator privileges to an Azure Synapse workspace."
     - content: "Data."
       isCorrect: false
-      explanation: "Incorrect. The data hub does not enable you to assign administrator privileges to an Azure Synapse workspace."
+      explanation: "Incorrect. The data hub doesn't enable you to assign administrator privileges to an Azure Synapse workspace."
     - content: "Develop."
       isCorrect: false
-      explanation: "Incorrect. The develop hub does not enable you to assign administrator privileges to an Azure Synapse workspace."
+      explanation: "Incorrect. The develop hub doesn't enable you to assign administrator privileges to an Azure Synapse workspace."
   - content: "Which role enables a user to create external table as select (CETAS) against an Azure Data Lake Gen2 data store?"
     choices:
     - content: "Storage Blob Data Reader."
@@ -46,4 +46,4 @@ quiz:
       explanation: "Correct. This provides the read/write access required to execute a create external table as select statement."
     - content: "Executor."
       isCorrect: false
-      explanation: "Incorrect. This role does not exist."
+      explanation: "Incorrect. This role doesn't exist."
