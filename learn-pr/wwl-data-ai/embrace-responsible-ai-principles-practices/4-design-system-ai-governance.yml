@@ -4,10 +4,10 @@ title: Design a system for AI governance
 metadata:
   title: Design a system for AI governance
   description: "Design a system for AI governance"
-  ms.date: 06/08/2023
+  ms.date: 06/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-durationInMinutes: 16
+durationInMinutes: 8
 content: |
   [!include[](includes/4-design-system-ai-governance.md)]

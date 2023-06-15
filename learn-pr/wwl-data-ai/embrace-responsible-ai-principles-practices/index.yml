@@ -3,25 +3,26 @@ uid: learn.wwl.embrace-responsible-ai-principles-practices
 metadata:
   title: Embrace responsible AI principles and practices
   description: "Explore six principles to guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability"
-  ms.date: 06/08/2023
+  ms.date: 06/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
 title: Embrace responsible AI principles and practices
-summary: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use — fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day. We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.
+summary: This module is designed to help you adopt responsible AI. It offers an overview of the principles, governance system, and procedures working at Microsoft. We encourage you to develop your own.
 abstract: |
   In this module, you will:
-    - Describe the importance of engaging with AI in a responsible manner.
-    - Identify six guiding principles to develop and use AI responsibly.
-    - Describe different approaches to responsible AI governance from experienced executives.
-prerequisites: ""
+  * Describe the importance of engaging with AI in a responsible manner.
+  * Identify six guiding principles to develop and use AI responsibly.
+  * Describe successful practices to responsible AI governance.
+prerequisites: |
+  * Basic understanding of AI concepts.
+  * Basic understanding of business concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
 - business-owner
 - business-user
-- functional-consultant
 products:
 - azure
 - dynamics-365
