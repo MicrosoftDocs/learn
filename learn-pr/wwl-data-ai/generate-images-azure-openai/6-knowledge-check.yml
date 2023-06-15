@@ -15,7 +15,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "Tou want to use a model in Azure OpenAI to geneate images. Which model should you use?"
+  - content: "You want to use a model in Azure OpenAI to generate images. Which model should you use?"
     choices:
     - content: "DALL-E"
       isCorrect: true
