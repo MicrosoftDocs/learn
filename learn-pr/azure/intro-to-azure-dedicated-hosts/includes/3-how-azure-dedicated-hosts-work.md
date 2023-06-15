@@ -1,4 +1,4 @@
-While Azure Dedicated hosts have the same VM management system as a set of standard Azure VMs they require extra prerequisites before a VM can be provisioned on a host. These prerequisites enable you to define a host's SKU and group multiple hosts together. Understanding the function of these prerequisites is crucial for optimizing and effectively managing your dedicated host deployments. Let's look into each of these prerequisites and see how they relate to a dedicated hosts deployment.
+While Azure Dedicated hosts have the same VM management system as a set of standard Azure VMs, they require extra prerequisites before a VM can be provisioned on a host. These prerequisites enable you to define a host's SKU and group multiple hosts together. Understanding the function of these prerequisites is crucial for optimizing and effectively managing your dedicated host deployments. Let's look into each of these prerequisites and see how they relate to a dedicated hosts deployment.
 
 ## Prerequisites
 
@@ -14,7 +14,7 @@ A host represents the physical server you're reserving when using dedicated host
 
 ### Size family
 
-Size families are a list of a SKU's available VM sizes. You're only able to provision VMs on a single host that are in the same VM family. If you want different hardware or sizes that are beyond what your selected size family can support, you'll have to add another host to your host group.
+Size families are a list of a SKU's available VM sizes. You're only able to provision VMs on a single host that are in the same VM family. If you want different hardware or sizes that are beyond what your selected size family can support, you'd add another host to your host group.
 
 ### Instances
 
