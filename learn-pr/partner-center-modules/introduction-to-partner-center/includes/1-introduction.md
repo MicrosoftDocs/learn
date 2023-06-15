@@ -4,7 +4,7 @@ This module is focused on how Cloud Solution Providers (CSPs) use [Partner Cente
 
 Suppose you're a cloud provider and want to partner with Microsoft. The rapidly growing demand for cloud-based solutions and services means many opportunities for Microsoft partners of all sizes to build profitable cloud solution businesses.
 
-There are two models form which to choose in the CSP program: the **indirect** model and the **direct-bill** model.
+There are two models from which to choose in the CSP program: the **indirect** model and the **direct-bill** model.
 
    :::image type="content" source="../media/partner-center-overview.png" alt-text="Diagram showing the relationship between different types of partners in the Microsoft partner ecosystem.":::
 
