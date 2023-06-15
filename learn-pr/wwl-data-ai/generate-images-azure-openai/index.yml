@@ -37,7 +37,7 @@ units:
 - learn.wwl.generate-images-azure-openai.what-is-dall-e
 - learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
 - learn.wwl.generate-images-azure-openai.dall-e-rest-api
-- learn.generate-images-azure-openai.exercise-use-dall-e
+- learn.wwl.generate-images-azure-openai.exercise-use-dall-e
 - learn.wwl.generate-images-azure-openai.knowledge-check
 - learn.wwl.generate-images-azure-openai.summary
 badge:
