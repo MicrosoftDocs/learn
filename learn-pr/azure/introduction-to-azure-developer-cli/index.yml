@@ -19,7 +19,7 @@ abstract: |
 prerequisites: |
   - Basic knowledge of fundamental cloud concepts
   - Basic knowledge of software development workflows, such as building, provisioning, and deploying code
-iconUrl: /training/achievements/introduction-to-azure-developer-cli.svg
+iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
 roles:
