@@ -11,7 +11,7 @@ metadata:
 title: 'Implement security through a pipeline using Azure DevOps'
 summary: |
   This learning path helps you prepare for the Implement security through a pipeline assessment using Azure DevOps. Learn how to configure and secure Azure Pipelines. You'll also get opportunities to practice hands-on skills. These skills include configuring secure access to pipeline resources, configuring, and validating permissions, configuring a project and repository structure, extending a pipeline, configuring pipelines to use variables and parameters securely, and managing identity for projects, pipelines, and agents.
-  [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
+  >[!NOTE][!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
 prerequisites: |
   - An Azure Subscription. You need to bring your own subscription.
   - Basic knowledge of Azure DevOps.
