@@ -8,7 +8,7 @@
 
     [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Organizations often collect a wide range of data about IT resources and users. Querying data is powerful tool for working with and acting on data you collect.
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------
 
@@ -28,7 +28,7 @@ TODO: add your scenario sub-task
 
     Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
 -->
-TODO: write your prose table-of-contents
+Here, you'll learn about what a query is and what you can do using Kusto Query Language in Azure. 
 
 <!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
 
@@ -51,28 +51,42 @@ TODO: add a visual element
 -->
 
 <!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
+## What is a query? 
 
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
+A query is a request for information from a data source, such as a database or table. A simple query might retrieve:
 
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
+- Information about a user from a table of registered users.
+- All information in a specific table.
+- All information logged by a specific computer at a given time.
 
-<!-- Do not add a unit summary or references/links -->
+A query language also lets you define how to present the data that's returned. For example, you can specify the sort order of the results, the range of rows to return, whether duplicate rows should be returned, and whether to display data in a chart or graph.
+## What is a query language?
+
+There are various ways you can retrieve data from a database, including:
+
+- Selecting search parameters from a menu.
+- Choosing the fields and values that define the query through a user interface.
+- Using a query language to request information from a database in an API call or through a user interface. Using a query language is the most complex way to query data, but it's also the most flexible. 
+
+A query language consists of a set of keywords, operators, and syntax rules for writing statements that retrieve data from a database. 
+
+There are many query languages, each with its own syntax, capabilities, and strengths. Common query languages include Structured Query Language (SQL), a standard language for storing, manipulating and retrieving data in databases, and XQuery, a query language for XML data.
+
+## Why use Kusto Query Language? 
+
+Kusto Query Language (KQL) was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make the platform and KQL the perfect foundations for Azure services that require near-real-time monitoring and analytics to ensure service and resource reliability, performance, and security.
+
+In a later unit in this module, we'll have a quick look at these Azure services, which leverage KQL's abilities to analyze large volume of varied data quickly.
+
+Other Azure services with different needs use different query languages. For example, storage services often use Structured Query Language (SQL).  
+
+Compared to SQL, KQL is simpler, more concise, and better optimized for ad-hoc queries and data exploration. 
+## What can you do with KQL? 
+
+While all Azure services provide ready-to-use data analysis tools and dashboards, with a bit of KQL knowledge, you can do much more. For example, you can: 
+
+- Investigate or analyze - use KQL to troubleshoot issues or gain specific insights. 
+- Define your own alerts - trigger an alert based on logic you define using KQL.
+- Create custom visualizations - create dashboards and workbooks that visualize the results of KQL queries. 
+- Transform data - transform data before you store or present it. For example, you can use KQL to convert data from one format to another. In some services, you can filter out data from a data source to save costs on analyzing and storing data you don't need. 
+
