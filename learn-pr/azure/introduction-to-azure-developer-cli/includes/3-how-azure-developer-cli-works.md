@@ -8,19 +8,19 @@ For example, a typical `azd` workflow using an existing template includes the fo
 
 1. Run the `azd init` command with the `--template` parameter to clone an existing template. The `azd init` command will also prompt you to perform a few initial configurations, such as setting an environment name.
 
-    ```azurecli
+    ```azdeveloper
     azd init --template todo-nodejs-mongo
     ```
 
 2. Run the `azd auth login` command to sign in to your Azure subscription.
 
-    ```azurecli
+    ```azdeveloper
     azd auth login
     ```
 
 3. Run the `azd up` command to provision and deploy the template resources to Azure.
 
-    ```azurecli
+    ```azdeveloper
     azd up
     ```
 
