@@ -1,47 +1,44 @@
 ### YamlMime:Module
 uid: learn.introduction-to-azure-iot-central
 metadata:
-  moduleType: introduction
   title: Introduction to Azure IoT Central
-  description: "Evaluate whether Azure IoT Central is appropriate to manage your IoT devices."
-  ms.date: 01/20/2023
+  description: Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario.
+  ms.date: 05/28/2023
   author: asergaz
   ms.author: sergaz
   ms.reviewer: adchukwu
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.service: iot-central
+  ms.custom: engagement-fy23
+  ms.topic: module-intro-to-product
+  ms.prod: azure-iot-central
 title: Introduction to Azure IoT Central
-summary: "Describe how Azure IoT Central can help you collect, monitor, and analyze IoT data. Determine the types of IoT solutions Azure IoT Central can be used to implement."
+summary: |
+  Determine when to use Azure IoT Central to quickly evaluate your IoT scenario.
+  Describe how Azure IoT Central can help you connect, monitor, and manage IoT assets.
 abstract: |
-  By the end of this module, you'll be able to:
-    - Evaluate if Azure IoT Central is the right choice to build your organization's IoT solutions.
-    - Describe how Azure IoT Central works to quickly implement secure, scalable IoT solutions with little to no code.
+  After you complete this module, you'll be able to:
+    - Evaluate whether Azure IoT Central is appropriate to quickly assess your IoT scenario and the opportunities it can create for your business.
+    - Describe how Azure IoT Central works to quickly connect devices, monitor device conditions, create rules, manage devices and their data throughout their life cycle, and extend IoT intelligence into line-of-business applications.
 prerequisites: |
-  - Familiarity with core Internet of Things (IoT) concepts such as devices, sensors and gateways.
-  - Basic knowledge of cloud concepts such as the shared responsibility model and the following cloud service types: infrastructure-as-a-service (IaaS), platform-as-a-service (PaaS), and software-as-a-service (SaaS).
-  - Basic knowledge of REST services and APIs
-iconUrl: /training/achievements/introduction-to-azure-iot-central.svg
+  None
+iconUrl: /training/achievements/iot/introduction-to-azure-iot-central.svg
 levels:
-  - beginner
+- beginner
 roles:
-  - administrator
-  - business-user
-  - developer
-  - maker
-  - solution-architect
+- administrator
+- developer
+- solution-architect
 products:
-  - azure
-  - azure-iot-central
+- azure-iot
+- azure-iot-central
 subjects:
 - iot
-- cloud-computing
 units:
-  - learn.introduction-to-azure-iot-central.introduction
-  - learn.introduction-to-azure-iot-central.what-is-azure-iot-central
-  - learn.introduction-to-azure-iot-central.how-azure-iot-central-works
-  - learn.introduction-to-azure-iot-central.when-to-use-azure-iot-central
-  - learn.introduction-to-azure-iot-central.knowledge-check
-  - learn.introduction-to-azure-iot-central.summary
+- learn.introduction-to-azure-iot-central.introduction
+- learn.introduction-to-azure-iot-central.what-is-azure-iot-central
+- learn.introduction-to-azure-iot-central.how-azure-iot-central-works
+- learn.introduction-to-azure-iot-central.when-to-use-azure-iot-central
+- learn.introduction-to-azure-iot-central.knowledge-check
+- learn.introduction-to-azure-iot-central.summary
 badge:
   uid: learn.introduction-to-azure-iot-central.badge
