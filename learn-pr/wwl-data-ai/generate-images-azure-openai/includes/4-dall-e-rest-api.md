@@ -18,7 +18,7 @@ For example, the following JSON could be used to generate an 800 x 800 image of 
 
 The result from the initial request does not immediately return the results of the image generation process. Instead, the response includes an **operation-location** header with a URL for a callback service that your application code can poll until the results of image generation are ready.
 
-When the operation has succeeded, as response similar to the following JSON is returned:
+When the operation has succeeded, a response similar to the following JSON is returned:
 
 ```json
 {
