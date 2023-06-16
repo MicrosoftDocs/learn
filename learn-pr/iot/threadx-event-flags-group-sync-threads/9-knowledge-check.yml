@@ -19,35 +19,35 @@ quiz:
       choices:
         - content: '2'
           isCorrect: false
-          explanation: "Incorrect. 2 isn't the number of threads that leave suspension when the specified event flags are satisfied."
+          explanation: "Incorrect. All suspended threads that satisfy the specified event flags leave suspension."
         - content: '32'
           isCorrect: false
-          explanation: "Incorrect. 32 isn't the number of threads that leave suspension when the specified event flags are satisfied."
+          explanation: "Incorrect. All suspended threads that satisfy the specified event flags leave suspension."
         - content: 'All suspended threads that satisfy the specified event flags leave suspension.'
           isCorrect: true
-          explanation: 'Correct! All suspended threads that satisfy specified event flags leave suspension.'
+          explanation: 'Correct! All suspended threads that satisfy the specified event flags leave suspension.'
     - content: 'At what point in time is an event flags group initialized to zero?'
       choices:
-        - content: 'When the event flags group is created.'
+        - content: 'When the event flags group is created'
           isCorrect: true
           explanation: 'Correct! An event flags group is initialized to zero when the event flags group is created.'
-        - content: 'When the first get operation occurs.'
+        - content: 'When the first get operation occurs'
           isCorrect: false
           explanation: "Incorrect. An event flags group isn't initialized to zero when the first get operation occurs."
-        - content: 'When the event flags group is satisfied.'
+        - content: 'When the event flags group is satisfied'
           isCorrect: false
           explanation: "Incorrect. An event flags group isn't initialized to zero when the event flags group is satisfied."
     - content: 'Which of the following ThreadX service calls will always succeed?'
       choices:
         - content: 'tx_event_flags_set(&my_flags, 0x101, TX_OR);'
           isCorrect: true
-          explanation: 'Correct! The service call tx_event_flags_set(&my_flags, 0x101, TX_OR); will always succeed.'
+          explanation: 'Correct! The service call tx_event_flags_set(&my_flags, 0x101, TX_OR); always succeeds.'
         - content: 'tx_event_flags_get(&my_flags, 0x110, TX_OR, &actual_TX_WAIT_FOREVER);'
           isCorrect: false
-          explanation: "Incorrect. This ThreadX service call won't always succeed."
+          explanation: "Incorrect. This ThreadX service call doesn't always succeed."
         - content: 'tx_event_flags_get(&my_flags, 0x110, TX_AND_CLEAR, &actual_TX_WAIT_FOREVER);'
           isCorrect: false
-          explanation: "Incorrect. This ThreadX service call won't always succeed."
+          explanation: "Incorrect. This ThreadX service call doesn't always succeed."
     - content: 'Suppose that the event flags group contains 0x111. What is the result of this valid service call: tx_event_flags_set(&my_flags, 0x101, TX_AND);'
       choices:
         - content: 'The new value of the event flags group is 0x111.'

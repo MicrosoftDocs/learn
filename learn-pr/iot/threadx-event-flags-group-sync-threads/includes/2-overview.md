@@ -1,8 +1,8 @@
 ## Introduction
 
-Event Flags Groups provide a powerful tool for thread synchronization. Event flags can be set or cleared by any thread and can be retrieved by any thread. Threads can suspend while waiting to retrieve or get some combination of event flags.
+**Event Flags Groups** provide a powerful tool for thread synchronization. Any thread can *set*, *clear* or retrieve Event flags. Threads can suspend while waiting to retrieve or *get* some combination of event flags.
 
-Each event flag is represented by a single bit, and event flags are arranged in groups of 32 as illustrated in the following image:
+An event flags group consists of 32 single-bit event flags, as illustrated in the following image:
 
 :::image type="content" alt-text="Diagram that illustrates event flags arranged in groups of 32 bits." source="../media/event-flag-groups.svg" loc-scope="Azure":::
 
