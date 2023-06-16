@@ -4,8 +4,8 @@ metadata:
   title: Building and running a UDP echo client
   description: Building and running a UDP echo client
   ms.date: 01/23/2023
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
 title: Building and running a UDP echo client

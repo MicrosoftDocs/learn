@@ -5,8 +5,8 @@ metadata:
   title: Overview
   description: Building and running a UDP echo server.
   ms.date: 01/23/2023
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
