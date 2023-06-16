@@ -24,7 +24,7 @@ This is the classic approach and covers all the usual steps of a data science pr
 6. **Monitor and retrain.** Even if a model works well at first, it needs to be continually monitored and retrained to stay relevant and accurate.
 
 
-[![Graph depicting the ML lifecycle: prepare data, train model, package model, validate model, deploy mode, monitor model, and retrain model.](../media/6-understand-machine-learning-lifecycle-1.png)](../media/6-understand-machine-learning-lifecycle-1.png#lightbox)
+![Graph depicting the ML lifecycle: prepare data, train model, package model, validate model, deploy mode, monitor model, and retrain model.](../media/6-understand-machine-learning-lifecycle-1.png)
 
 ## Machine learning lifecycle using a prebuilt model
 

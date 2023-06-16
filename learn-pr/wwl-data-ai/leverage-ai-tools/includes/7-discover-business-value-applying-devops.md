@@ -14,7 +14,7 @@ First, it's helpful to centrally **manage assets** like environments, code, data
 * **Model registry:** As teams experiment with different versions of a model, a model registry provides a central place to save each version. With a registry, teams can easily revert to a previous version if something isn't working, even after the solution has gone into production. The model registry also serves as an audit trail for each model's history.
 * **Code management:** Technical decision-makers need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code.
 
-[![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)](../media/7-discover-business-value-applying-devops-1.png.png#lightbox)
+![Graph depicting MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)
 
 * **Dataset management:** We also recommend saving training datasets centrally. This way, teams can reuse them, share them with colleagues, or monitor how they change over time to manage drift.
 * **Shared environments:** Create model environments that can be shared among individuals. This simplifies the handoff between steps in the model creation process and makes it possible for teams to collaborate on certain steps.
@@ -29,7 +29,7 @@ Metrics usually compare what the model has predicted with what it should have pr
 
 It's critical to validate performance metrics against the business use case. For example, perhaps you designed a model to predict patient health. As a healthcare provider dealing with life and death situations, you likely prefer to have false positive diagnoses rather than an incredibly high rate of accuracy that misses diagnoses.
 
-[![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png)](../media/7-discover-business-value-applying-devops-2.png.png)
+![Graph depicting a confusion matrix with predicted and true labels. Alignment of true and predicted values indicates high accuracy.](../media/7-discover-business-value-applying-devops-2.png)
 
 If the model is a newer version of an existing model, you need to see if it performs better than the previous one on key metrics.
 

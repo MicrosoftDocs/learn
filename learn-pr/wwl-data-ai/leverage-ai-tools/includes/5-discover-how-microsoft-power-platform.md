@@ -7,8 +7,7 @@ Microsoft Power Platform is a low-code or no-code set of services designed to si
 
 The Power Platform portfolio includes five different products: Power BI, Power Apps, Power Automate, Power Virtual Agents, and Power Pages. It also offers three additional tools: AI Builder, Microsoft Dataverse, and Connectors. Let's see what each of them can do for you.
 
-
-[![Graph depicting the products included in Microsoft Power Platform.](../media/5-discover-how-microsoft-power-platform-1.png)](../media/5-discover-how-microsoft-power-platform-1.png#lightbox)
+![Graph depicting the products included in Microsoft Power Platform.](../media/5-discover-how-microsoft-power-platform-1.png)
 
 ## What can you do with Microsoft Power Platform?
 
@@ -57,8 +56,7 @@ There are two main ways in which Power Platform creates business value for organ
 
 The diagram shows how this fusion development approach works.
 
-
-[![Graph depicting the citizen developer creating apps, the professional developer adding custom functionality, and end users giving feedback.](../media/5-discover-how-microsoft-power-platform-2.png)](../media/5-discover-how-microsoft-power-platform-2.png#lightbox)
+![Graph depicting the citizen developer creating apps, the professional developer adding custom functionality, and end users giving feedback.](../media/5-discover-how-microsoft-power-platform-2.png)
 
 ### Use Microsoft Power Platform to build a smart inventory app
 

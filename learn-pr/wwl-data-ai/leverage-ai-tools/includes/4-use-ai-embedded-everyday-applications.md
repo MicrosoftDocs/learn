@@ -11,7 +11,7 @@ These solutions are often delivered as SaaS AI solutions, which deliver fast and
 
 **Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
 
-[![Graph depicting the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)](../media/4-use-ai-embedded-everyday-applications-1.png#lightbox) 
+![Graph depicting the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)
 
 Here are some examples of powerful scenarios where AI is already having a proven impact:
 
@@ -22,7 +22,7 @@ Here are some examples of powerful scenarios where AI is already having a proven
 * **Marketing:** AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.
 * **Commerce:** Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.
 * **Customer service:** Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.
-* **Project management:** Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customer use their products and services.
+* **Project management:** Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.
 
 With business applications that use AI as a core ingredient, users can bring together relationships, processes, and data across applications to gain increased visibility and control.
 
@@ -46,11 +46,13 @@ When you're not speaking in person, some nuances are missing and misunderstandin
 
 ### Everyday AI for focus
 
-68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup> AI can also help cope with this problem and enable employees to focus their time and attention on what matters most.
+Nowadays, workers' routines are too often interrupted by distractions, calls, and multitasking. AI can also help cope with this problem and enable employees to focus their time and attention on what matters most.
 
 For instance, the Briefing email from Cortana compiles valuable information about upcoming meetings and outstanding tasks in Outlook. It also enables employees to set aside daily “focus time” to work uninterrupted with notifications silenced. In Outlook mobile, employees can use natural language to ask Cortana to read out their new emails and share any changes to their schedule—so they can catch up even when their hands are busy with other things.
 
-[![Graph depicting that 68% of survey respondents don’t have enough uninterrupted focus time.](../media/4-use-ai-embedded-everyday-applications-2.png)](../media/4-use-ai-embedded-everyday-applications-2.png#lightbox)
+> [!NOTE] 
+
+> 68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup>
 
 Copilot adds more features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
 
@@ -64,11 +66,13 @@ Writers can take advantage of intelligent suggestions to not only correct spelli
 
 ### Everyday AI for search
 
-Harnessing information has become the key to almost everything—from improving productivity to understanding customers and much more. Still, workers consider they spend too much time striggling to find the information they need.<sup>1</sup>
+Harnessing information has become the key to almost everything—from improving productivity to understanding customers and much more. However, data is often siloed and hard to find.
 
 AI-powered search experiences like Microsoft Search can help business users wade through this data to uncover more impactful insights and make better data-driven decisions. Microsoft Search enables users to search for people, files, sites, and more across their organizational data and public web data—all from within the Microsoft 365 products they’re already working in. Results are even personalized to each user to ensure relevance. This feature is improved with Copilot.
 
-[![Graph depicting that 62% of survey respondents spent too much time finding information.](../media/4-use-ai-embedded-everyday-applications-3.png)](../media/4-use-ai-embedded-everyday-applications-3.png#lightbox)
+> [!NOTE] 
+
+> 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>>
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 
