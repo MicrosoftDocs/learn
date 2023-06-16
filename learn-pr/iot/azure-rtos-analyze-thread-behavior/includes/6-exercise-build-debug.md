@@ -7,11 +7,11 @@ You get to analyze your work with ProjectHelloWorld in this project. We'll use G
 
 ## Use GitHub Codespaces
 
-1. Open the codespace you created from the GitHub repo. Once done, you can view the sample projects repo within VSCode web.
+1. Open the codespace you created from the GitHub repo. Once done, you can view the sample projects repo within VS Code web.
 
 1. Expand the **TASK EXPLORER** pane and expand the **vscode** node you'll find **Build / Clean / Run Project** tasks. Choose **Build Project** and select the run button.
 
-   ![Screenshot of the VSCode Web Task Explorer.](../../introduction-azure-rtos/media/vscode-web-tasks.png)
+   ![Screenshot of the VS Code Web Task Explorer.](../../introduction-azure-rtos/media/vscode-web-tasks.png)
 
 1. Choose **ProjectAnalyze** to build the project.
 
