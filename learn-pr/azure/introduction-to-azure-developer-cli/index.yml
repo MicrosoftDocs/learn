@@ -27,7 +27,7 @@ roles:
   - devops-engineer
   - solution-architect
 products:
-  - azure-developer-cli
+  - azure-clis
 subjects:
 - development-tools
 units:
