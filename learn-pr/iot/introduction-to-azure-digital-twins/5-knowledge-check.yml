@@ -16,7 +16,7 @@ durationInMinutes: 7
 content: |
 quiz:
   questions:
-  - content: How many models should be created for a Azure Digital Twins solution?
+  - content: How many models should be created for an Azure Digital Twins solution?
     choices:
     - content: One model for the entire solution
       isCorrect: false
