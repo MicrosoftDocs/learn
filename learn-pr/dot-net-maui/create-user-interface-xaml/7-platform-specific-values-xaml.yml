@@ -7,7 +7,8 @@ metadata:
   description: "Describe how to fine-tune the UI for different platforms"
   ms.date: 04/29/2022
   author: codemillmatt  
-  ms.author: masoucou  
+  ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 5
