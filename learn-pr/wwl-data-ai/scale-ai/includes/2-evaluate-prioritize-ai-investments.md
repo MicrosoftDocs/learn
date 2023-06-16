@@ -1,38 +1,24 @@
 
 
-The economics of investing in "traditional" technology initiatives are well understood. Typically, an organization compares the cost of a project with the net present value (NPV) of the benefits. If the NPV is greater than zero and fits within the budget constraints, the project receives a green light.
+Adopting AI throughout an organization implies a serious investment. However, investing in AI projects requires a different perspective than most investments. If you leverage AI to improve or automate an existing process, then it's possible to measure return on investment (ROI) in the straightforward, traditional way. But there are a few characteristics of AI initiatives that make it difficult to estimate their costs and benefits.
 
-Artificial Intelligence (AI) requires a different perspective. It's true that if you leverage AI to improve or automate an existing process, then it's possible to measure ROI in the straightforward, traditional way. But there are a few characteristics of AI initiatives that make it difficult to estimate their costs and benefits.
 
-First, custom AI models require upfront investment before it's even possible to measure effectiveness. You can't precisely measure how a custom model will benefit your business until you've prepared data and completed model training and testing. Additionally, it's hard to predict the amount of long-term maintenance a model will need. All models require ongoing monitoring and periodic tuning. But more extensive retraining can be required if circumstances around the initiative change—such as business processes being revamped or the customer market changing significantly. 
+First, most AI models require upfront investment before it's even possible to measure effectiveness. It's hard to predict the accuracy of the model and its business impact until you've prepared data and completed model training and testing. Additionally, it's hard to predict the amount of long-term maintenance a model will need. Individual models improve over time in ways that are difficult to calculate in advance.
 
-The unknowns aren't all negative. Individual models improve over time in ways that are difficult to calculate in advance. And AI solutions may have widespread business impacts that make it challenging to estimate all monetary costs and benefits from the outset. A core value of AI lies in business transformation: driving new business models, enabling innovative services, creating new revenue streams, and more.
-
-With AI initiatives, you need to think like a venture capitalist. That means being willing to invest and take risks without being blocked by uncertainties. But you don't have to shoot in the dark—you'll need a framework to help prioritize AI investments. In the following sections, we'll describe how to:
-
-* Leverage a horizon-based framework for evaluating initiatives.
-* Map scenarios and use cases to the framework.
-* Prioritize investments in phases.
-* Define clear value drivers and KPIs.
+With AI initiatives, you need to think like a venture capitalist. That means being willing to invest and take risks without being blocked by uncertainties. But you don't have to shoot in the dark—you'll need a framework to help prioritize AI investments.
 
 ## Leverage a horizon-based framework
 
-At Microsoft, we use a "horizon-based" framework to evaluate and prioritize AI investments. This groups AI projects into three "horizons," from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of AI maturity, size, business objectives, and more.
+At Microsoft, we use a horizon-based framework to evaluate and prioritize AI investments. This groups AI projects into three horizons, from improving core business functions to creating brand new revenue streams. The risk and uncertainty of specific applications depends on a company's level of AI maturity, size, business objectives, and more.
 
 ### Horizon 1: Running (operate and optimize the core business)
 
 :::row:::
 :::column span="2":::
-Not every AI application involves revolutionary changes. In fact, using AI to improve or automate existing processes is becoming essential to remaining competitive.
+Not every AI application involves revolutionary changes. In fact, using AI to improve or automate existing processes is becoming essential to remaining competitive. Horizon 1 (H1) represents AI initiatives that optimize core business functions.
 
-Horizon 1 (H1) represents AI initiatives that optimize core business functions. For example: perhaps you manufacture electronic components. While you might manually inspect quality for 100 parts per hour, an AI model with image recognition capabilities could inspect 1,000 parts per hour.
+For example: perhaps you manufacture electronic components. While you might manually inspect quality for 100 parts per hour, an AI model with image recognition capabilities could inspect 1,000 parts per hour.
 
-#### H1 examples:
-
-* Optimizing transit routes automatically.
-* Analyzing sentiment in customer feedback or social media.
-* Scoring marketing leads.
-* Forecasting demand or revenue.
 :::column-end:::
 :::column span="2":::
 
@@ -45,26 +31,15 @@ The y-axis is labeled "Where to invest" and the x-axis is labeled as "Risk and u
 
 ### Horizon 2: Growing (improve market position)
 
-Horizon 2 (H2) initiatives take advantage of emerging opportunities. These initiatives might create new services or new customer experiences. For example, a manufacturer of production machines might use IoT to collect operational data and AI to suggest optimal times for maintenance. This facilitates a brand-new customer experience and helps the manufacturer differentiate from competitors.
+Horizon 2 (H2) initiatives take advantage of emerging opportunities. These initiatives might create new services or new customer experiences.
 
-#### H2 examples:
-
-* Predictive and preventative maintenance for machinery.
-* Personalized recommendations or discounts.
-* Supply chain, inventory, or price optimization.
-* Detecting fraudulent behavior or security risks.
+For example, a manufacturer of electronics might use IoT to collect operational data and AI to suggest optimal times for maintenance. This facilitates a brand-new customer experience and helps the manufacturer differentiate from competitors.
 
 ### Horizon 3: Transforming (change market position)
 
 Horizon 3 (H3) involves disruptive and innovative new business models. These are revolutionary applications that might cross industry boundaries or even create new customer needs.
 
-For example, a chemical manufacturer could sell "fertilizer-as-a-service"—which means they use AI models to predict changing environmental conditions and distribute fertilizer to farmers proactively. Ultimately, the company is selling a personalized service rather than a single product, creating new revenue streams and opportunities.
-
-#### H3 examples:
-
-* Predicting which patients are at risk of cardiac arrest leveraging EHR patient data.
-* Building an interactive assistant that enables employees to find expertise and share ideas.
-* Mapping chemical and flavor compounds of beverages to create new products faster.
+For example, the same electronics manufacturer could sell "electronics-as-a-service"—which means they use AI models to predict which electronic devices work best for your current system and needs. Ultimately, the company is selling a personalized service rather than a single product, creating new revenue streams and opportunities.
 
 ## Map scenarios and use cases to the framework
 
