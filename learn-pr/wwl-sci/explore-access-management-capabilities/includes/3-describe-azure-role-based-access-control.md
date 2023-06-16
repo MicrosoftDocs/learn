@@ -40,7 +40,7 @@ To make it convenient to manage identity across Microsoft 365 services, Azure AD
 
 - Service-specific roles: For major Microsoft 365 services, Azure AD includes built-in, service-specific roles that grant permissions to manage features within the service. For example, Azure AD includes built-in roles for Exchange Administrator, Intune Administrator, SharePoint Administrator, and Teams Administrator roles that can manage features with their respective services.
 
-- Cross-service roles: There are some roles within Azure AD that span services. For example, Azure AD has security-related roles, like Security Administrator, that grant access across multiple security services within Microsoft 365.  Similarly, with the Compliance Administrator role you can manage compliance-related settings in Microsoft Purview Compliance Manager, Exchange, and so on.
+- Cross-service roles: There are some roles within Azure AD that span services. For example, Azure AD has security-related roles, like Security Administrator, that grant access across multiple security services within Microsoft 365.  Similarly, with the Compliance Administrator role you can manage compliance-related settings in Microsoft Purview Compliance Center, Exchange, and so on.
 
 :::image type="content" source="../media/role-overlap-diagram-v2.png" alt-text="Azure AD role categories":::
 
