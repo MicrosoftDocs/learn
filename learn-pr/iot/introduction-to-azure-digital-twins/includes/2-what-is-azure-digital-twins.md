@@ -6,24 +6,24 @@ Azure Digital Twins is a platform as a service (PaaS) offering that enables the 
 
 In Azure Digital Twins, you freely define the types of digital entities that represent your environment, including the people, places, and things that it contains.
 
-Using the vocabulary that fits your business, you define your own twin types in terms of their properties, telemetry, components, and relationships. These custom twin types are called **models**. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies based on common vocabulary for your industry. You can also bring models from outside of Azure Digital Twins and convert them to be usable in Azure Digital Twins. In the factory scenario for this module, you might design a model to represent the concept of a robotic arm. That model will have a boolean property indicating an alert that the latest package was not picked up.
+Using the vocabulary that fits your business, you define your own twin types in terms of their properties, telemetry, components, and relationships. These custom twin types are called **models**. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies based on common vocabulary for your industry. You can also bring models from outside of Azure Digital Twins and convert them to be usable in Azure Digital Twins. In the factory scenario for this module, you'll design a model to represent the concept of a robotic arm. That model will have a boolean property indicating an alert that the latest package was not picked up.
 
-After creating models to define the types of entity in your environment, you create instances of each model to represent the actual, specific environment entities. These instances are called **digital twins** (or just **twins** for simplicity). In this module scenario, you might use the robotic arm model to create multiple robotic arm twins. Each twin will be based on the model, so each twin will have that boolean property representing the pickup failure alert.
+After creating models to define the types of entity in your environment, you create instances of each model to represent the actual, specific environment entities. These instances are called **digital twins** (or just **twins** for simplicity). In this module scenario, you'll use the robotic arm model to create multiple robotic arm twins. Each twin will be based on the model, so each twin will have that boolean property representing the pickup failure alert.
 
 >[!TIP]
 >From a programming perspective, models are similar to class definitions, and twins are like instances of those classes.
 
-Finally, digital twins are connected to each other via **relationships** to form a conceptual graph of your complete environment. You might create a twin to represent the entire distribution center, and use relationships to indicate that that center *contains* each of the robotic arm twins that you've created. Using relationships like this can help you to aggregate data from twins that are conceptually connected to each other, such as determining the average hourly efficiency across all robotic arms in the factory.
+Finally, digital twins are connected to each other via **relationships** to form a conceptual graph of your complete environment. You'll create a twin to represent the entire distribution center, and use relationships to indicate that that center *contains* each of the robotic arm twins that you've created. Using relationships like this can help you to aggregate data from twins that are conceptually connected to each other, such as determining the average hourly efficiency across all robotic arms in the factory.
 
 ## Sync and contextualize IoT and business system data
 
 Digital twin graphs in Azure Digital Twins are live, up-to-date representations of the real world.
 
-To keep digital twin properties current against your environment, you can connect your solution to IoT Hub, which manages **physical IoT devices**. When physical devices send data to the cloud, you can route that data into Azure Digital Twins.
+To keep digital twin properties current against your environment, you'll connect your solution to IoT Hub, which manages **physical IoT devices**. When physical devices send data to the cloud, you'll route that data into Azure Digital Twins.
 
 You can also ingest data from **other data sources**, using REST APIs or connectors to other Azure services such as Logic Apps. These methods can help you input data from business systems and incorporate them into your twin graph.
 
-Once data reaches Azure Digital Twins, you can connect external compute resources, such as Azure functions, to define exactly how your digital twins are updated in response. In this way, you can flexibly customize data processing to reflect your business logic.
+Once data reaches Azure Digital Twins, you'll connect external compute resources, such as Azure functions, to define exactly how your digital twins are updated in response. In this way, you can flexibly customize data processing to reflect your business logic.
 
 ## Query for environment insights
 

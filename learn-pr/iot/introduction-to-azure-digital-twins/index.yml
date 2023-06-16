@@ -6,7 +6,7 @@ metadata:
   ms.date: 05/23/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: sergaz
+  ms.reviewer: taanderson
   manager: lizross
   ms.topic: module-intro-to-product
   ms.service: digital-twins
@@ -21,19 +21,16 @@ abstract: |
 prerequisites: |
   - Experience with IoT concepts such as devices and event data at the beginner level
   - Experience with SQL-style query concepts such as SELECT, FROM, and WHERE clauses at the beginner level
-iconUrl: 
+iconUrl: /training/achievements/generic-badge.svg
 ratingEnabled: false
 levels:
 - beginner
-roles:
-  - administrator
-  - business-user
-  - developer
-  - maker
-  - solution-architect
-  - business-owner
-  - service-adoption-specialist
-  - data-engineer
+roles: 
+- service-adoption-specialist
+- administrator
+- data-engineer
+- developer
+- solution-architect
 products:
   - azure
   - azure-digital-twins
@@ -41,11 +38,11 @@ subjects:
   - iot
   - cloud-computing
 units:
-- learn.introduction-to-azure-digital-twins.1-introduction
-- learn.introduction-to-azure-digital-twins.2-what-is-azure-digital-twins
-- learn.introduction-to-azure-digital-twins.3-how-azure-digital-twins-works
-- learn.introduction-to-azure-digital-twins.4-when-to-use-azure-digital-twins
-- learn.introduction-to-azure-digital-twins.5-knowledge-check
-- learn.introduction-to-azure-digital-twins.6-summary
+- learn.introduction-to-azure-digital-twins.introduction
+- learn.introduction-to-azure-digital-twins.what-is-azure-digital-twins
+- learn.introduction-to-azure-digital-twins.how-azure-digital-twins-works
+- learn.introduction-to-azure-digital-twins.when-to-use-azure-digital-twins
+- learn.introduction-to-azure-digital-twins.knowledge-check
+- learn.introduction-to-azure-digital-twins.summary
 badge:
   uid: learn.introduction-to-azure-digital-twins.badge
