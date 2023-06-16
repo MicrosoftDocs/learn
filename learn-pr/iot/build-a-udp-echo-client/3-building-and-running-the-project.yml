@@ -8,7 +8,7 @@ metadata:
   author: timlt
   ms.author: timlt
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 1
 content: |
   [!include[](includes/3-building-and-running-the-project.md)]

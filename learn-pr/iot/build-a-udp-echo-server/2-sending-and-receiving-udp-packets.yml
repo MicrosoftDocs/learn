@@ -8,7 +8,7 @@ metadata:
   author: timlt
   ms.author: timlt
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 5
 content: |
   [!include[](includes/2-sending-and-receiving-udp-packets.md)]

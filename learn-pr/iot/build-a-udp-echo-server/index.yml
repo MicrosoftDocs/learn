@@ -8,6 +8,7 @@ metadata:
   ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
+  ms.service: rtos
 title: Building and running a UDP echo server
 summary: Design, build, and run a UDP echo server.
 abstract: |
@@ -28,6 +29,7 @@ products:
   - azure
   - azure-iot
   - azure-iot-hub
+  - azure-rtos
 units:
   - learn.iot.build-a-udp-echo-server.overview
   - learn.iot.build-a-udp-echo-server.sending-and-receiving-udp-packets

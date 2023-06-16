@@ -26,6 +26,7 @@ products:
   - azure
   - azure-iot
   - azure-iot-hub
+  - azure-rtos
 units:
   - learn.iot.create-first-netx-duo-project.introduction
   - learn.iot.create-first-netx-duo-project.hello-world
