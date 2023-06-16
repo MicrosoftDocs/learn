@@ -22963,6 +22963,81 @@
     "source_path": "learn-pr/windows/wsl/wsl-introduction/summary.yml",
     "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/summary",
     "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-pipelines-securely-use-variables-parameters/7-knowledge-check.md",
+    "redirect_url": "/training/modules/configure-pipelines-securely-use-variables-parameters/8-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-pipelines-securely-use-variables-parameters/8-summary.md",
+    "redirect_url": "/training/modules/configure-pipelines-securely-use-variables-parameters/9-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/5-knowledge-check.md",
+    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/6-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/6-summary.md",
+    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/7-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-secure-access-azure-repos-from-pipelines/7-knowledge-check.md",
+    "redirect_url": "/training/modules/configure-secure-access-azure-repos-from-pipelines/8-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-secure-access-azure-repos-from-pipelines/8-summary.md",
+    "redirect_url": "/training/modules/configure-secure-access-azure-repos-from-pipelines/9-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-secure-access-pipeline-resources/8-knowledge-check.md",
+    "redirect_url": "/training/modules/configure-secure-access-pipeline-resources/9-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-secure-access-pipeline-resources/9-summary.md",
+    "redirect_url": "/training/modules/configure-secure-access-pipeline-resources/10-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-validate-permissions/6-knowledge-check.md",
+    "redirect_url": "/training/modules/configure-validate-permissions/7-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-validate-permissions/7-summary.md",
+    "redirect_url": "/training/modules/configure-validate-permissions/8-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/extend-pipeline-use-multiple-templates/8-knowledge-check.md",
+    "redirect_url": "/training/modules/extend-pipeline-use-multiple-templates/9-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/extend-pipeline-use-multiple-templates/9-summary.md",
+    "redirect_url": "/training/modules/extend-pipeline-use-multiple-templates/10-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/7-knowledge-check.md",
+    "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/8-knowledge-check.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/8-summary.md",
+    "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/9-summary.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools.md",
+    "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools/2-configure-microsoft-hosted-agent-pools.md",
+    "redirect_document_id": false
   }
   ]
 }
