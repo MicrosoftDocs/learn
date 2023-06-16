@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/14/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
@@ -36,7 +36,7 @@ quiz:
     - content: "Innovation"
       isCorrect: false
       explanation: "Incorrect. Encouraging innovation in using AI at the company could only come after a fundamental change in AI-ready culture."
-  - content: "The leaders of a regional law firm have been studying AI. The CEO is impressed that many companies have integrated it into their products, customer service, and their day-to-day work activities. One month ago, the CEO actually presented the basic concepts to top-level management. Since then, the CEO has received some good feedback from several vice presidents on its potential benefits. According to the Microsoft AI maturity model assessment, which answer describes the level of AI maturity that this company has reached, and what will they move onto next?"
+  - content: "The leaders of a regional law firm have been studying AI. The CEO is impressed that many companies have integrated it into their products, customer service, and their day-to-day work activities. One month ago, the CEO actually presented the basic concepts to top-level management. Since then, the CEO has received some good feedback from several vice presidents on its potential benefits. According to the maturity assessment seen in this module, which answer describes the level of AI maturity that this company has reached, and what will they move onto next?"
     choices:
     - content: "First level, next employees will begin experimenting with pretrained models."
       isCorrect: true

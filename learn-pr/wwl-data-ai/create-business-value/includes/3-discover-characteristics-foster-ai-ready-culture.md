@@ -26,7 +26,7 @@ For instance, a sales department might not have a complete view of a customer, b
 :::column-end:::
 :::column span="2":::
 
-[![Image depicting what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg#lightbox)
+![Image depicting what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)
 
 :::column-end:::
 :::row-end:::
@@ -53,12 +53,14 @@ Fostering an AI-ready culture means **empowering people to be part of the AI tra
 
 * **Room for experimentation:** During this process, you should encourage new ideas and continuous improvement. This experimentation must allow room for errors, sas well as celebration and acknowledgment of success.
 
-It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries. Furthermore, it means to make those who best understand the business a central piece of your transformation process. Data scientists working in isolation often create models that lack the business knowledge, purpose, or value that would make them an effective AI resource. Similarly, business people working in isolation lack the technical knowledge to understand what can be done from a data science perspective. A multidisciplinary approach is important.
+It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries.
 :::column-end:::
 :::column span="2":::
-[![Image depicting what becoming empowering and inclusive means: providing resources, a collaborative culture, and focusing on business needs.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg#lightbox)
+![Image depicting what becoming empowering and inclusive means: providing resources, a collaborative culture, and focusing on business needs.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)
 :::column-end:::
 :::row-end:::
+
+ Furthermore, it means to make those who best understand the business a central piece of your transformation process. Data scientists working in isolation often create models that lack the business knowledge, purpose, or value that would make them an effective AI resource. Similarly, business people working in isolation lack the technical knowledge to understand what can be done from a data science perspective. A multidisciplinary approach is important.
 
 By enabling cross-functional teams that include both data scientists and the business employees closest to the business need, you can create powerful and effective AI solutions. An example of this is our hugely successful compliance predictive analytics tools, which were inspired and developed by employees working on our finance teams. They were successful only because they were created with the insights of those closest to the business need. This example illustrates how powerful it's to create an inclusive, cross-organizational collaborative approach.
 
