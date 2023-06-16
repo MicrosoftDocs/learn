@@ -62,7 +62,7 @@ Visual Studio Code uses a launch configuration file to specify the application t
 
 1. To choose the debugger option for your console app, select **.NET 5+ and .NET Core**.
 
-    If you see a message stating that a .NET debug configuration cannot be created, you can ignore it. The message will disappear after a short time and you will see a button labelled **Add Configuration**.
+    If you see a message stating that a .NET debug configuration cannot be created, you can ignore it. The message will disappear after a short time and you will see a button labeled **Add Configuration**.
 
 1. Select the **Add Configuration** button, and then select **{} .NET: Launch .NET Core Console App**.
 
