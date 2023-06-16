@@ -491,6 +491,46 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/index.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/1-introduction.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/2-manage-blob-data-using-properties-and-metadata.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/3-view-blob-properties-and-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/4-view-blob-properties-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/5-add-blob-metadata-using-azure-tools-and-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/6-add-blob-metadata-using-application-code.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/organize-blobs-properties-metadata/7-summary.md",
+      "redirect_url": "/azure/storage/blobs/storage-blob-properties-metadata",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/migrate-sql-service-to-azure-sql/index.md",
       "redirect_url": "/azure/sql-database/sql-database-cloud-migrate",
       "redirect_document_id": false
@@ -20262,47 +20302,47 @@
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/index.yml",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
-      "redirect_document_id": true
+      "redirect_url": "/training/modules/wsl-introduction/",
+      "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/1-introduction.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/2-enable-and-install.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/3-integration-between-linux-and-windows.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/4-create-website-with-node.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/5-vscode-integration.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/6-debug-express-app-with-vscode.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/7-manage-multiple-distributions.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/windows/get-started-with-windows-subsystem-for-linux/8-summary.md",
-      "redirect_url": "https://learn.microsoft.com/training/modules/wsl/wsl-introduction/",
+      "redirect_url": "/training/modules/wsl-introduction/",
       "redirect_document_id": false
     },
     {
@@ -22608,6 +22648,321 @@
     "source_path": "learn-pr/azure/set-up-first-lab-with-azure-devtest-labs/7-summary.md",
     "redirect_url": "https://learn.microsoft.com/azure/devtest-labs/devtest-lab-create-lab",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/create-app-service-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/deploy-expressjs-app.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-create-app-service-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-deploy-expressjs-app.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-use-app-review-logs.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/exercise-use-resource-group.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/use-app-review-logs.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/use-resource-group.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/configure-app-service-connection-to-cosmos-db.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/create-cosmos-db-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-configure-app-service-connection-to-cosmos-db.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-create-cosmos-db-resource.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-set-up.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-set-up-azure-resources.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/exercise-use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/set-up.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/set-up-azure-resources.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/use-local-database.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service-with-database/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/javascript-deploy-expressjs-app-service/index.yml",
+    "redirect_url": "https://learn.microsoft.com/azure/app-service/tutorial-nodejs-mongodb-app",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/2-what.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/3-how.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/4-when.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/5-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/intro-to-azure-linux/6-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-linux-on-azure/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/2-create-a-linux-virtual-machine.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/3-exercise-generate-ssh-key.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/4-exercise-create-a-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/5-connect-to-a-linux-virtual-machine.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/6-exercise-connect-to-a-linux-vm-using-ssh.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/7-manage-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/8-exercise-manage-vm.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/create-linux-virtual-machine-in-azure/9-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/paths/azure-linux/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/index.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/2-transactions-in-redis.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/3-create-a-transaction.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/4-data-expiration.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/5-implement-data-expiration.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/6-eviction-policies.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/7-cache-aside-pattern.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/work-with-mutable-and-partial-data-in-a-redis-cache/8-summary.md",
+    "redirect_url": "https://learn.microsoft.com/azure/azure-cache-for-redis/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path_from_root": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection/4-investigate-security-incident-defender.yml",
+    "redirect_url": "/training/modules/introduction-microsoft-365-threat-protection/5-investigate-security-incident-defender",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection/5-knowledge-check.yml",
+    "redirect_url": "/training/modules/introduction-microsoft-365-threat-protection/6-knowledge-check",
+    "redirect_document_id": true
+  },
+  {
+    "source_path_from_root": "/learn-pr/wwl-sci/introduction-microsoft-365-threat-protection/6-summary-resources.yml",
+    "redirect_url": "/training/modules/introduction-microsoft-365-threat-protection/7-summary-resources",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/index.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/index",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/what-is-wsl.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/what-is-wsl",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/install-and-setup.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/install-and-setup",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/run-basic-commands.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/run-basic-commands",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/understanding-workflow.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/understanding-workflow",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/knowledge-check",
+    "redirect_document_id": true
+  },
+  {
+    "source_path": "learn-pr/windows/wsl/wsl-introduction/summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/wsl-introduction/summary",
+    "redirect_document_id": true
   }
   ]
 }

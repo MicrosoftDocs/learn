@@ -6,6 +6,7 @@ metadata:
   ms.date: 01/06/2023
   author: coderandhiker
   ms.author: chrisrt
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: cache
 title: Improve session scalability in a .NET Framework ASP.NET web application by using Azure Cache for Redis
