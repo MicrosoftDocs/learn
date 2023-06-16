@@ -8,7 +8,7 @@ metadata:
   ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Building and running a TCP echo client
 summary: Design, build, and run a TCP echo client.
 abstract: |
@@ -28,6 +28,7 @@ products:
   - azure
   - azure-iot
   - azure-iot-hub
+  - azure-rtos
 units:
   - learn.iot.build-a-tcp-echo-client.overview
   - learn.iot.build-a-tcp-echo-client.sending-and-receiving-tcp-packets
