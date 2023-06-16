@@ -23033,6 +23033,11 @@
     "source_path": "learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/8-summary.md",
     "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/9-summary.md",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools.md",
+    "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools/2-configure-microsoft-hosted-agent-pools.md",
+    "redirect_document_id": false
   }
   ]
 }
