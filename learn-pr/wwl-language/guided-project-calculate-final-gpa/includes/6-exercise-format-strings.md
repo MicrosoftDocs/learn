@@ -29,7 +29,7 @@ In this task, you'll update your code to apply the finishing touches to the repo
 
     ```
 
-    Notice you're adding three tabs after the course name. The extra tab stops will allow extra space for longer course names.
+    Notice you're adding four tabs after the course name. The extra tab stops will allow extra space for longer course names.
 
 
 1. To format your output as aligned columns of text, replace the spaces between words with the `\t` escape sequence as follows:
