@@ -1,45 +1,26 @@
-Publishing an application programming interface (API) is a great way to increase market share, generate revenue, and foster innovation. However, maintaining even one API brings significant challenges such as:
+Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to a application successfully deployed on Azure.
 
-- Onboarding users
-- Managing revisions
-- Implementing security
-- Running analytics
+## Prerequisites 
 
-Now imagine that like many of today's leading companies, your organization publishes multiple APIs for different types of users including partners, developers, and employees. These APIs are used in multiple settings, including mobile and web apps, and Internet of Things (IoT) devices.
-
-:::image type="content" source="../media/1-introduction-before.png" alt-text="Multiple APIs connect to multiple servers, where each API maintains its own set of users, security policies, and analytics data." lightbox="../media/1-introduction-before.png":::
-
-How do you reduce the complexity inherent in having numerous APIs? Microsoft Azure API Management acts as a "front door" for all your APIs. Azure API Management manages all your API traffic and offers intuitive portals for managing your APIs and surfacing them to developers. It also provides tools for implementing security, managing revisions, and performing analytics.
-
-:::image type="content" source="../media/1-introduction-after.png" alt-text="Azure API Management acts as a 'front door' for all of an organization's APIs, which are then routed to the server where the API is deployed." lightbox="../media/1-introduction-after.png":::
+Before completing this module, you should have a basic conceptual understanding of what the Azure Developer CLI is and how it works. For a high-level introduction to the tool, complete the [Introduction to Azure Developer CLI]() module first.
 
 ## Example scenario
 
-Suppose you work at a company that operates a food-delivery platform. Your customers use your mobile app or website to browse the menus of multiple restaurants, and then place an order for the food they want, which your company then delivers. The backbone of your platform is a large collection of APIs. For example, the APIs that you publish are used by:
+Suppose you work at a company that operates a food-delivery platform. Your customers use your mobile app or website to browse the menus of multiple restaurants, and then place an order for the food they want, which your company then delivers. The platform requires a variety of Azure services to provide a reliable and scalable architecture, including:
 
-- Your mobile app
-- Your web app
-- Your partner restaurants
-- The IoT devices on your delivery vehicles
-- Your in-house development team
-- Your employees, such as business analysts
+- Two App Services and an App Service Plan to host the front-end web app and back-end API
+- A Service Bus to manage scalable messaging
+- A Key Vault instance to store secure app secrets
+- Application Insights resources to perform logging and monitoring
+- A Cosmos DB for NoSQL instance to permanently store app data
+- CI/CD pipelines to ensure changes are reliably deployed through an automated process
 
-Each published API resides on a different server, has its own process for onboarding users, and has its own policies for security, revisions, analytics, and more. You've been tasked to find a way to reduce this complexity. Here you'll learn how Azure API Management can standardize, centralize, and help secure all the aspects of publishing and maintaining APIs across the full API lifecycle.
+Rather than starting from the ground up, you'd like to leverage an existing template or extensible architecture template that can provision and deploy most of the resources for you. The development team can then focus on building the app and making smaller adjustments the architecture. You would also like the solution to be reusable and distributable, meaning the same architecture could be consistently recreated at a later date in additional environments for additional teams. The Azure Developer CLI can help you with these goals through the use of its easy workflow commands and powerful template system.
 
 ## What will we be doing?
 
-We'll examine Azure API Management to help you decide if it's the correct solution to help reduce your company's API complexity. We'll study the following three main components:
-
-- **Gateway**. A single endpoint for all your API calls, which eases the implementation of security, rate limits, caching, and transformations.
-- **Administration interface**. A single interface where you import APIs, set policies, create API products, manage users and groups, and run analytics.
-- **Developer portal**. A website that brings all your APIs into a single location for developers to read documentation, test APIs, review code samples, get API keys, and run analytics.
-
-We'll also study Azure API Management from the following three user angles:
-
-- **API consumers**. Entities, often applications, that get value from using an API.
-- **API providers**. People who administer and maintain APIs.
-- **App developers**. People who build applications that consume APIs.
+We'll setup and use the Azure Developer CLI to provision and deploy an Azure environment similar to the one outlined in the preceding example scenario. The Azure infrastructure resources will closely match the desired end state. The app source code will be a placeholder Todo app that can be replaced later on with a custom app that reuses the same Azure infrastructure.
 
 ## What is the main goal?
 
-By the end of this session, you'll be able to evaluate whether Azure API Management is the correct solution for keeping your organization's APIs under a single management umbrella.
+By the end of this session, you'll understand how to provision and deploy an Azure Developer CLI template, run commands to access additional `azd` features, and see how to redeploy updates to the infrastructure and application code.
