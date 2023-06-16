@@ -1,5 +1,5 @@
 ### YamlMime:AchievementDetail
-achievementUid: learn.azdo.scan-open-source
+achievementUid: learn.azdo.scan-open-source.badge
 metadata:
   title: >-
     Microsoft Badge: Scan open-source components for vulnerabilities and license

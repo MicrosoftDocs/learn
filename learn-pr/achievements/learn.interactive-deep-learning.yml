@@ -1,5 +1,5 @@
 ### YamlMime:AchievementDetail
-achievementUid: learn.interactive-deep-learning
+achievementUid: learn.interactive-deep-learning.badge
 metadata:
   title: >-
     Microsoft Badge: Interactive deep learning with Jupyter, Docker, and PyTorch
