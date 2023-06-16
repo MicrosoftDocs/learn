@@ -602,12 +602,12 @@ achievements:
   title: Scan open-source components for vulnerabilities and license ratings in Azure Pipelines
   summary: Scan open-source components for security vulnerabilities and assess their license ratings when your application builds in Azure Pipelines.
   iconUrl: /training/achievements/azure-devops/manage-security-and-compliance-in-your-build-pipeline.svg
-- uid: learn.azdo.automate-deployments-azure-devops.badge
+- uid: learn.azdo.automate-deployments-azure-devops.trophy
   type: trophy
   title: Automate your deployments with Azure DevOps
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to combine automation techniques such as infrastructure as code with automated pipelines to provision and configure the infrastructure you need to run your applications and services.
   iconUrl: /training/achievements/azure-devops/automate-deployments-azure-devops.svg
-- uid: learn.azdo.capture-feedback-monitoring.badge
+- uid: learn.azdo.capture-feedback-monitoring.trophy
   type: trophy
   title: Capture feedback and monitoring data to continuously improve your software
   summary: Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to recommend and design system feedback mechanisms, implement a process for routing system feedback to development teams, and optimize feedback mechanisms.
@@ -1622,12 +1622,12 @@ achievements:
   
     Once you complete this learning path, you'll have a stronger grasp of implementing logic in your C# code.
   iconUrl: /training/achievements/csharp-logic.svg
-- uid: learn.wwl.create-methods-c-sharp-console-applications.badge
+- uid: learn.wwl.create-methods-c-sharp-console-applications.trophy
   type: trophy
   title: Create methods in C# console applications (Get started with C#, Part 5)
   summary: Learn how to create methods for C# console applications. Use parameters and return values to manipulate data across applications. Learn to use named and optional arguments to simplify code.
   iconUrl: /training/achievements/generic-trophy.svg
-- uid: learn.wwl.debug-c-sharp-console-applications.badge
+- uid: learn.wwl.debug-c-sharp-console-applications.trophy
   type: trophy
   title: Debug C# console applications (Get started with C#, Part 6)
   summary: Learn how to debug C# console applications in Visual Studio Code and how to implement exception handling using the try-catch pattern. Configure the C# debugger tools in Visual Studio Code and use the debugger tools to isolate and fix logic issues. Examine the exception types provided by .NET and the properties of exception objects, then implement exception handling and throw customized exception objects.
