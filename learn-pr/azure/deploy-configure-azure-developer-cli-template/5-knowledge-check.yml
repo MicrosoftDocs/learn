@@ -1,0 +1,72 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.introduction-to-azure-api-management.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: Check your knowledge of Azure API Management
+  ms.date: 11/01/2022
+  author: dlepow
+  ms.author: danlep
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which of the following Azure API Management components is used to enforce usage quotas?"
+    choices:
+    - content: "Gateway"
+      isCorrect: true
+      explanation: "Correct. As part of your API policies, you can set usage quotas by subscription or another value. Those quotas are then enforced when each API request enters the Azure API Management gateway."
+    - content: "Developer portal"
+      isCorrect: false
+      explanation: "Incorrect. Developers use this portal to subscribe to your APIs. Those subscriptions are subject to the usage quotas you set, which are enforced by the Azure API Management gateway."
+    - content: "Administration interface"
+      isCorrect: false
+      explanation: "Incorrect. You use the Azure API Management administration interface to set usage quotas, not to enforce them."
+  - content: "If an API development team wants to make a minor change to an API, which of the following features is the best way to handle such a change?"
+    choices:
+    - content: "API version"
+      isCorrect: false
+      explanation: "Incorrect. You should only use versions for relatively major or breaking changes to the API."
+    - content: "API product"
+      isCorrect: false
+      explanation: "Incorrect. A product is a group of APIs and is not related to making changes to APIs."
+    - content: "API revision"
+      isCorrect: true
+      explanation: "Correct. You use revisions for relatively minor or non-breaking changes to the API."
+  - content: "Suppose an API product manager wants their organization to respond more quickly with API revisions that satisfy customer suggestions. Which one of the following actions would help them meet their goal?"
+    choices:
+    - content: "Standardizing API specifications"
+      isCorrect: true
+      explanation: "Correct. Standardizing API specifications helps to reduce the time it takes to develop new and updated API features."
+    - content: "Standardizing API documentation"
+      isCorrect: false
+      explanation: "Incorrect. Although writing standardized API documentation helps developers to quickly get familiar with an API, it doesn't help your in-house developers code API revisions faster."
+    - content: "Standardizing API analytics"
+      isCorrect: false
+      explanation: "Incorrect. Standardized analytics might help an organization compare usage and performance across multiple APIs and recognize the need for API revisions. However, that analysis in itself doesn't enable faster API revision deployments."
+  - content: "Suppose an API administrator with a large deployment of APIs wants to enhance API monetization by encouraging more developers to subscribe to their APIs. Which one of the following API benefits would help them accomplish their goal?"
+    choices:
+    - content: "Creating a central access point for administration"
+      isCorrect: false
+      explanation: "Incorrect. Although a centralized API administrative interface helps with administrative operations such as policy creation and user management, it doesn't directly encourage more developers to use your APIs."
+    - content: "Creating a central access point for developers"
+      isCorrect: true
+      explanation: "Correct. Having all your API documentation, code samples, and subscription access in a single developer portal enables developers to more easily find and subscribe to your APIs."
+    - content: "Creating a central access point for API deployment."
+      isCorrect: false
+      explanation: "Incorrect. While routing all API requests through a single base URL makes it easier to enforce policies and apply transformations, it doesn't encourage developers to subscribe to your APIs."
+  - content: "Suppose the senior security engineer for a large API deployment wants to reduce the chances of consumers misusing any API by making an excessive number of calls to the API. Which one of the following security policies should they implement to best accomplish this goal?"
+    choices:
+    - content: "Require subscription keys"
+      isCorrect: false
+      explanation: "Incorrect. Although requiring a subscription key to send a request to an API is a fundamental way to authorize access to the API, it doesn't by itself guard the API against misuse."
+    - content: "Require client Basic authentication"
+      isCorrect: false
+      explanation: "Incorrect. Although requiring a user name and password to send a request to an API can help ensure that only authorized users access the API, this authentication doesn't by itself protect the API against misuse."
+    - content: "Set rate limits"
+      isCorrect: true
+      explanation: "Correct. By throttling API access to a specified number of calls over a defined time frame per subscription or other value, you help guard your API against customer misuse."
