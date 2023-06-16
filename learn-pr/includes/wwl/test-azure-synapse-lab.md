@@ -17,7 +17,7 @@ In this exercise, you use a combination of a PowerShell script and an ARM templa
 1. In a web browser, sign into the [Azure portal](https://portal.azure.com) at `https://portal.azure.com`.
 2. Use the **[\>_]** button to the right of the search bar at the top of the page to create a new Cloud Shell in the Azure portal, selecting a ***PowerShell*** environment and creating storage if prompted. The Cloud Shell provides a command line interface in a pane at the bottom of the Azure portal, as shown here:
 
-    ![Azure portal with a cloud shell pane](media/cloud-shell.png)
+    ![Screenshot of Azure portal with a cloud shell pane](media/cloud-shell.png)
 
     > **Note**: If you have previously created a cloud shell that uses a *Bash* environment, use the the drop-down menu at the top left of the cloud shell pane to change it to ***PowerShell***.
 
@@ -52,7 +52,7 @@ In this exercise, you use a combination of a PowerShell script and an ARM templa
 2. Select your Synapse workspace, and in its **Overview** page, in the **Open Synapse Studio** card, select **Open** to open Synapse Studio in a new browser tab. Synapse Studio is a web-based interface that you can use to work with your Synapse Analytics workspace.
 3. On the left side of Synapse Studio, use the **&rsaquo;&rsaquo;** icon to expand the menu - this reveals the different pages within Synapse Studio that you'll use to manage resources and perform data analytics tasks, as shown here:
 
-    ![Image showing the expanded Synapse Studio menu to manage resources and perform data analytics tasks](media/synapse-studio.png)
+    ![Screenshot of Azure Synapse Studio menu with list of Synapse options available](media/synapse-studio.png)
 
 4. View the **Data** page, and note that there are two tabs containing data sources:
     - A **Workspace** tab containing databases defined in the workspace (including dedicated SQL databases and Data Explorer databases)
@@ -133,7 +133,7 @@ One of the key tasks you can perform with Azure Synapse Analytics is to define *
 
 1. On the **Data** page, select the **Linked** tab and expand the **synapse*xxxxxxx* (Primary) datalake** container hierarchy until you see the **files** file storage for your Synapse workspace. Then select the file storage to verify that a folder named **product_data** containing a file named **products.csv** has been copied to this location, as shown here:
 
-    ![Image showing Synapse Studio expanded Azure Data Lake Storage hierarchy with the file storage for your Synapse workspace](media/product_files.png)
+    ![Screenshot of Synapse Studio expaned in Azure Data Lake Storage](media/product-files.png)
 
 2. Right-click the **products.csv** data file and select **Preview** to view the ingested data. Then close the preview.
 
@@ -233,7 +233,7 @@ Now that you've ingested some data into your workspace, you can use Synapse Anal
 
     The resulting chart should resemble this:
 
-    ![Image showing the product count chart view](media/column-chart.png)
+    ![Screenshot of product count chart view](media/column-chart.png)
 
 ## Use a Spark pool to analyze data
 
@@ -301,7 +301,7 @@ While SQL is a common language for querying structured datasets, many data analy
 
 11. In the results output for the cell, select the **Chart** view. The resulting chart should resemble this:
 
-    ![Image showing category count chart view](media/bar-chart.png)
+    ![Screenshot of category count chart view](media/bar-chart.png)
 
 12. If it is not already visible, show the **Properties** page by selecting the **Properties** button (which looks similar to **&#128463;<sub>*</sub>**) on the right end of the toolbar. Then in the **Properties** pane, change the notebook name to **Explore products** and use the **Publish** button on the toolbar to save it.
 
