@@ -1,6 +1,6 @@
 Cloud-based storage gives organizations the flexibility to work on files globally. Using economies of scale, large amounts of storage is available at a fraction of the cost of traditional storage. Companies have to handle files being accessed concurrently when writing applications that use it.
 
-Your company's authoring app stores data in Blob Storage. The app was written when each story had only one reporter assigned to it. This reporter made sure that all content was accurate and up to date before publishing. Over time, the organization has grown in size and now each story has multiple reporters and photographers around the world who are making contributions throughout the day. Recently, there have been issues with submissions being overwritten and lost.
+Your company's authoring app stores data in Blob Storage. The app was originally written when each story had only one reporter assigned to it. The assigned reporter gathered all contributions, and made sure the content was accurate and up to date before publishing. Over time, the organization has grown in size and now each story has multiple reporters and photographers around the world who are making contributions throughout the day. Recently, there have been issues with submissions being overwritten and lost.
 
 Here, you'll learn about the issues you can face with concurrency when using Blob storage.
 
