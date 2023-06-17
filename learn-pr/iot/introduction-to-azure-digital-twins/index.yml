@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.introduction-to-azure-digital-twins
+metadata:
+  title: Introduction to Azure Digital Twins
+  description: Learn about Azure Digital Twins and evaluate whether it's appropriate for digitally representing your IoT environment.
+  ms.date: 05/23/2023
+  author: baanders
+  ms.author: baanders
+  ms.reviewer: taanderson
+  manager: lizross
+  ms.topic: module-intro-to-product
+  ms.service: digital-twins
+title: Introduction to Azure Digital Twins
+summary: >
+  Azure Digital Twins is an IoT platform for creating a digital twin graph that parallels a real-world IoT environment. 
+  Understand what information and data is represented in an Azure Digital Twins solution, and describe how a digital twin graph can be used to gather business insights.
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Evaluate whether Azure Digital Twins is appropriate for digitally representing your IoT environment.
+  - Describe how models, twins, and relationships are used to represent components of a real-world IoT environment in a digital graph, and how they can be queried to gather business insights.
+prerequisites: |
+  - Experience with IoT concepts such as devices and event data at the beginner level
+  - Experience with SQL-style query concepts such as SELECT, FROM, and WHERE clauses at the beginner level
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles: 
+- service-adoption-specialist
+- administrator
+- data-engineer
+- developer
+- solution-architect
+products:
+  - azure
+  - azure-digital-twins
+subjects:
+  - iot
+  - cloud-computing
+units:
+- learn.introduction-to-azure-digital-twins.introduction
+- learn.introduction-to-azure-digital-twins.what-is-azure-digital-twins
+- learn.introduction-to-azure-digital-twins.how-azure-digital-twins-works
+- learn.introduction-to-azure-digital-twins.when-to-use-azure-digital-twins
+- learn.introduction-to-azure-digital-twins.knowledge-check
+- learn.introduction-to-azure-digital-twins.summary
+badge:
+  uid: learn.introduction-to-azure-digital-twins.badge
