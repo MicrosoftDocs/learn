@@ -74,19 +74,18 @@ There are many query languages, each with its own syntax, capabilities, and stre
 
 ## Why use Kusto Query Language? 
 
-Kusto Query Language (KQL) was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make the platform and KQL the perfect foundations for Azure services that require near-real-time monitoring and analytics to ensure service and resource reliability, performance, and security.
+Kusto Query Language (KQL) was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make the platform and KQL the perfect foundations for services that require near-real-time monitoring and analytics to ensure service and resource reliability, performance, and security.
 
 In a later unit in this module, we'll have a quick look at these Azure services, which leverage KQL's abilities to analyze large volume of varied data quickly.
 
-Other Azure services with different needs use different query languages. For example, storage services often use Structured Query Language (SQL).  
+Other services with different needs use different query languages. For example, storage services often use Structured Query Language (SQL).  
 
 Compared to SQL, KQL is simpler, more concise, and better optimized for ad-hoc queries and data exploration. 
 ## What can you do with KQL? 
 
-While all Azure services provide ready-to-use data analysis tools and dashboards, with a bit of KQL knowledge, you can do much more. For example, you can: 
+All Microsoft services that use Azure Data Explorer provide a set of ready-to-use data analysis tools, but a bit of KQL knowledge allows you to do much more. For example, you can: 
 
 - Investigate or analyze - use KQL to troubleshoot issues or gain specific insights. 
 - Define your own alerts - trigger an alert based on logic you define using KQL.
 - Create custom visualizations - create dashboards and workbooks that visualize the results of KQL queries. 
-- Transform data - transform data before you store or present it. For example, you can use KQL to convert data from one format to another. In some services, you can filter out data from a data source to save costs on analyzing and storing data you don't need. 
-
+- Transform data - transform data before you store or present it. For example, you can use KQL to convert data from one format to another. Some services let you use KQL to filter out data from a data source to save costs on ingesting and storing data you don't need.

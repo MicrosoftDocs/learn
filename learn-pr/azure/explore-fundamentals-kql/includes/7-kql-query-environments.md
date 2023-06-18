@@ -22,14 +22,13 @@ For more information, see [Query data in a KQL Queryset](/fabric/real-time-analy
 
 ## Azure Monitor
 
-Azure Monitor is a comprehensive monitoring solution for collecting, analyzing, and responding to telemetry from your cloud and on-premises environments. Log Analytics is a tool in the Azure portal that's used to edit and run log queries against data in the Azure Monitor Logs store.
+Azure Monitor collects, analyzes, and responds to telemetry from your Azure, multicloud, and on-premises environments to help maximize the availability and performance of your applications and services. Azure Monitor correlates data from multiple sources - including metrics, logs, traces, and changes - and provides a set of tools for analyzing, visualizing, and responding to the data, such as insights, alerts, autoscale, and automated Artificial Intelligence for IT Operations (AIOps) capabilities. 
 
-:::image type="content" source="../media/7-monitor.png" alt-text="Screenshot of Azure Monitor Log Analytics query workspace." lightbox="../media/7-monitor.png":::
+The Log Analytics tool in the Azure portal lets you edit and run log queries against data in the Azure Monitor Logs store.
 
-Azure Monitor uses the same KQL as Azure Data Explorer, with some differences. For reference, see [Language differences](/azure/azure-monitor/logs/log-query-overview#language-differences).
+:::image type="content" source="../media/7-monitor.png" alt-text="Screenshot of the Azure Monitor Log Analytics user interface for running queries." lightbox="../media/7-monitor.png":::
 
-<!-- Guy please add information -->
-
+Azure Monitor uses the same KQL as Azure Data Explorer, with some minor differences. For reference, see [Language differences](/azure/azure-monitor/logs/log-query-overview#language-differences).
 ## Microsoft Sentinel
 
 Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), and security orchestration, automation, and response (SOAR). Using Microsoft Sentinel's  hunting search-and-query tools, based on the MITRE framework, you can proactively hunt for security threats across your organization’s data sources, before an alert is triggered.
