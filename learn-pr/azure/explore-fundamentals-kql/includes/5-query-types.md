@@ -6,6 +6,8 @@ This unit provides an overview of query statements and functions. In KQL, all qu
 
 Most queries use at least one **tabular expression statement**, which means both its input and output consist of tables or tabular datasets. These statements usually contain operators, each of which starts with a tabular input and returns a tabular output.
 
+There are a wide range of operators provided by KQL, ranging from simple (such as `count`, `sort`, `print`, and `where`) to more complex (such as `parse`, `join`, and `render`). 
+
 For example, the following query contains four tabular expression statements:
 
 ```kusto
@@ -32,7 +34,7 @@ StormEvents
 
 ## Built-in functions
 
-Built-in functions are hard-coded functions defined by KQL that can't be modified by users. KQL has a rich library of functions available for use, which can be found in the official [KQL documentation](/azure/data-explorer/kusto/query/).
+Built-in functions are hard-coded functions defined by KQL that can't be modified by users. KQL has a rich library of functions available for use, which can be found in the official [KQL documentation](/azure/data-explorer/kusto/query/). The functions range from simple sorting and matching to complex statistical and geospatial functions.
 
 For example, the following `strcat()` function concatenates string arguments:
 
@@ -46,7 +48,7 @@ User-defined functions are, as their name suggests, defined by the user. User-de
 
 * **Stored functions**: user-defined functions that are stored and managed database schema entities (like tables). Different products use different way to store functions.
 
-    For example, the following KQL query in Azure Data Explorer stores a function that takes a parameter:
+    For example, the following query in Azure Data Explorer stores a function that takes a parameter:
 
     ```kusto
     .create function
@@ -54,7 +56,7 @@ User-defined functions are, as their name suggests, defined by the user. User-de
      MyFunction2(myLimit: long)  {StormEvents | take myLimit}
     ```
 
-In other environment, such as Azure Monitor and Microsoft Sentinel, queries are saved through the UI.
+In other environment, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
 
 * **Query-defined functions**: user-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
 
