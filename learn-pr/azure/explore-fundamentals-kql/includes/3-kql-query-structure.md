@@ -8,7 +8,7 @@ Different query languages often have different structures. KQL is organized arou
 
 ## Data processing
 
-Imagine that the data travels through a data processing funnel. The tabular input, in this example the "StormEvents" table, is the beginning of the funnel of data. This data is "piped" into the next line, and filtered or manipulated using an operator. The "surviving" data is piped into the subsequent line, and so on until arriving at the final query output. This query output is returned in a tabular format.
+Imagine that the data travels through a data processing funnel. The tabular input is the beginning of the funnel of data. This data is "piped" into the next line, and filtered or manipulated using an operator. The "surviving" data is piped into the subsequent line, and so on until arriving at the final query output. This query output is returned in a tabular format.
 
 :::image type="content" source="../media/kql-funnel.png" alt-text="Schematic image of data being processed by a funnel.":::
 
