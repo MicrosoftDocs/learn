@@ -1,8 +1,10 @@
-Querying data is powerful tool for retrieveing and processing data you collect. 
+Querying data is powerful tool for retrieving and processing data you collect. 
 
-In this module, you learned how you can use Kusto Query Language (KQL) to work with data from a variety of sources to gain insights about your IT, business, and security. 
+In this module, you learned how you can use Kusto Query Language (KQL) to work with data from various sources to gain insights about your IT, business, and security. 
 
-We saw how using KQL lets you do more with your data and go beyond the basic built-in monitoring and analytics capabilities provided by various services, including analyzing and troubleshooting issues, creating custom alerts and dashboards, and transforming data.
+You learned that using KQL lets you go beyond the basic built-in monitoring and analytics capabilities provided by various services, by analyzing and troubleshooting issues, creating custom alerts and dashboards, and transforming data.
+
+You also gained some experience running basic queries in various services, including Azure Data Explorer, Azure Monitor, and Azure Resource Graph.
 
 ## References
 
