@@ -10,7 +10,8 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
+Kusto Query Language (KQL) is a powerful tool for gaining insights about your IT, business, and security from large data sets you collect, in near-real-time. 
+
 TODO: add a visual element
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
@@ -28,24 +29,10 @@ TODO: add a visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
     [Scenario video guidance](TBD)
  -->
-## Example scenario
-TODO: add your scenario
-TODO: add a visual element
-
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
 ## What will we be doing?
-TODO: add your activities
+
+In this module, you'll learn about what the Kusto Query Language (KQL) does, how it works, and when to use it. You'll explore basic query types, learn about some of the services that use KQL, and run simple queries in these service environments.  
+
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -57,6 +44,4 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
-
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this session, you'll be able to query data in various services using basic KQL. 
