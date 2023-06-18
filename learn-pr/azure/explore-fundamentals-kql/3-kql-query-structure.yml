@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.explore-fundamentals-kql.kql-query-structure
-title: Structure of a KQL query
+title: How a KQL query is built
 metadata:
   title: learning-content
   description: Learn about the structure of a KQL query, how data is processed through the funnel. Learn about inputs, outputs, and the query pipeline. What are the kinds of KQL queries?    

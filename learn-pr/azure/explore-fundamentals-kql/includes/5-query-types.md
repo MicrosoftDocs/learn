@@ -56,7 +56,7 @@ User-defined functions are, as their name suggests, defined by the user. User-de
      MyFunction2(myLimit: long)  {StormEvents | take myLimit}
     ```
 
-In other environment, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
+    In other environment, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
 
 * **Query-defined functions**: user-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
 

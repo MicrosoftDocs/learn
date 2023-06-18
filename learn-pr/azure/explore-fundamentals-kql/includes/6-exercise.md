@@ -126,9 +126,7 @@ The following steps demonstrate how to build a query by applying operators to a 
 
 ## Introduce a variable with a let statement
 
-Let statements allow us to define variables in Kusto queries, making them more readable and modular.
-
-Suppose you want to investigate Flood events within a specific time window and location. You can create variables to set and manipulate these parameters without modifying the query itself.
+Let statements allow us to define variables in KQL queries, making them more readable and modular.
 
 Let's go through an example. Select the relevant tab for your environment.
 
