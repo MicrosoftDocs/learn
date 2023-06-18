@@ -6,7 +6,7 @@ This unit provides an overview of query statements and functions. In KQL, all qu
 
 Most queries use at least one **tabular expression statement**, which means both its input and output consist of tables or tabular datasets. These statements usually contain operators, each of which starts with a tabular input and returns a tabular output.
 
-There are a wide range of operators provided by KQL, ranging from simple (such as `count`, `sort`, `print`, and `where`) to more complex (such as `parse`, `join`, and `render`). 
+There are a wide range of operators provided by KQL, ranging from simple (such as `count`, `sort`, and `where`) to more complex (such as `parse`, `join`, and `render`). 
 
 For example, the following query contains four tabular expression statements:
 
