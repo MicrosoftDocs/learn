@@ -3,7 +3,7 @@ uid: learn.azure.explore-fundamentals-kql.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "A knowledge check about Kusto Query Language (KQL) and how it's used to query data in Microsoft services, including various Azure services, for monitoring and real-time analytics."
   ms.date: 3/26/2023
   author: YaelSchuster
   ms.author: yaschust
