@@ -27,7 +27,7 @@ durationInMinutes: 4
 content: |
 quiz:
   questions:
-  - content: ""What are the strengths of Kusto Query Language (KQL) as a query language?"
+  - content: "What are the strengths of Kusto Query Language (KQL) as a query language?" 
     choices:
     - content: "KQL is efficient at retrieving and processing data in near-real-time."
       isCorrect: true
