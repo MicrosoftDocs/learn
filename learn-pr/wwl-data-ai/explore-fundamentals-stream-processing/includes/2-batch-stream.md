@@ -1,4 +1,5 @@
 
+
 Data processing is simply the conversion of raw data to meaningful information through a process. There are two general ways to process data:
 
 - *Batch processing*, in which multiple data records are collected and stored before being processed together in a single operation.

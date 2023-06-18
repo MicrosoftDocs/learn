@@ -5,6 +5,7 @@ metadata:
   description: Understand how structured logging is implemented with tools like Serilog and Seq.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 10/14/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
