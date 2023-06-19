@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-java-containers.3-set-up-environment
-  title: Java in Azure and Azure DevOps
+title: Java in Azure and Azure DevOps
 metadata:
   title: Java in Azure and Azure DevOps
   description: Learn how Azure, Azure DevOps, and Azure Database for MySQL support Java applications and Docker containers.

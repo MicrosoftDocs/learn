@@ -13,10 +13,10 @@ In this unit, you:
 
 To complete this unit, you need the following prerequisites. For more details about the prerequisites, see the module [Introduction](/training/modules/deploy-java-containers/1-introduction?azure-portal=true).
 
-- An Azure DevOps organization with **Owner** access, [Project Collection Administrators](/devops/organizations/security/change-organization-collection-level-permissions) group membership, or collection-level **Create new projects** permission.
+- An Azure DevOps organization with **Owner** access, [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership, or collection-level **Create new projects** permission.
 
   >[!IMPORTANT]
-  >To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain amount of free minutes available. For more information, see [Check for available parallel jobs](/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+  >To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain amount of free minutes available. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 - The same sign-in account for both Azure and Azure DevOps.
 
@@ -48,7 +48,7 @@ Create an Azure DevOps project to contain your CI/CD pipeline. Make sure you own
 1. Select **Create**.
 
   >[!IMPORTANT]
-  >To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain amount of free minutes available. To check your availability, select **Project settings** from the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+  >To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain amount of free minutes available. To check your availability, select **Project settings** from the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 If you haven't yet installed the GitHub extension and authorized Azure Pipelines to access GitHub, you can do that now:
 
@@ -74,12 +74,14 @@ To create the Azure resource service connection:
 1. On the **New service connection** screen, select **Azure Resource Manager**, and then select **Next**.
 1. Select **Service principal (automatic)**, and then select **Next**.
 1. On the next screen, complete the following fields:
+
    | Field           | Value                                        |
    |-----------------|----------------------------------------------|
    | **Scope level**     | Select **Subscription**.                             |
    | **Subscription**    | Select your Azure subscription.                      |
    | **Resource group**  | Select **java-containers-cicd-rg**                   |
    | **Service connection name** | Enter *Azure Connection*.                           |
+
 1. Select **Grant access permission to all pipelines**.
 1. Select **Save**. Azure DevOps tests the connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you get the chance to sign in a second time.
 
@@ -90,11 +92,13 @@ To create the Container Registry connection:
 1. On the **New Docker Registry service connection** page, under **Registry type**, select **Azure Container Registry**.
 1. Under **Authentication Type**, select **Service Principal**.
 1. Complete the following fields:
+
    | Field           | Value                                        |
    |-----------------|----------------------------------------------|
    | **Subscription**| Select your Azure subscription.|
    | **Azure container registry**|Select the container registry you created for this module.|
    | **Service connection name**| Enter *Container Registry Connection*.|
+
 1. Select **Grant access permission to all pipelines**.
 1. Select **Save**.
 
@@ -171,7 +175,7 @@ Add the following code to define the `Build` stage:
 
 #### Maven task
 
-The `Maven@3` task builds Java projects into Apache Maven packages. This pipeline uses only the `options` and `publishJUnitResults` parameters, which specify the path to the settings file and skip publishing test results. For more information about this task, see [Maven task](/devops/pipelines/tasks/build/maven?azure-portal=true).
+The `Maven@3` task builds Java projects into Apache Maven packages. This pipeline uses only the `options` and `publishJUnitResults` parameters, which specify the path to the settings file and skip publishing test results. For more information about this task, see [Maven task](/azure/devops/pipelines/tasks/build/maven?azure-portal=true).
 
 Add the following code to the end of the pipeline:
 

@@ -17,10 +17,10 @@ To complete this module, you need the following prerequisites:
 
 - A GitHub account.
 - Access to an Azure subscription with **Owner** role. If you don't have one, [get an Azure account for free](https://azure.microsoft.com/free/?azure-portal=true).
-- An Azure DevOps organization with **Owner** role, [Project Collection Administrators](/devops/organizations/security/change-organization-collection-level-permissions) group membership, or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administrators** group. If you don't have an Azure DevOps organization, [create one for free](/devops/organizations/accounts/create-organization).
+- An Azure DevOps organization with **Owner** role, [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership, or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administrators** group. If you don't have an Azure DevOps organization, [create one for free](/azure/devops/organizations/accounts/create-organization).
 
   >[!IMPORTANT]
-  >To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain amount of free minutes available. For more information, see [Check for available parallel jobs](/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+  >To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain amount of free minutes available. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 The module is self-contained so you can complete it on its own, but assumes some familiarity with the following technologies:
 
