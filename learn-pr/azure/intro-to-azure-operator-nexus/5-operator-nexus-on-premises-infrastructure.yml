@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-operator-nexus.operator-nexus-on-premises-infrastructure
+title: Operator Nexus on-premises infrastructure
+metadata:
+  title: Operator Nexus on-premises infrastructure
+  description: Operator Nexus on-premises infrastructure
+  ms.date: 05/05/2023
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: interactive-tutorial
+  ms.service: operator-nexus
+durationInMinutes: 10
+content: |
+  [!include[](includes/5-operator-nexus-on-premises-infrastructure.md)]
