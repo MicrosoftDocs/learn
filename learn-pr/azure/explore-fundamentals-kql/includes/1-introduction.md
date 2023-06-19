@@ -1,4 +1,4 @@
-Kusto Query Language (KQL) is a powerful tool for gaining insights about your IT, business, and security from large data sets you collect, in near-real-time. 
+Kusto Query Language (KQL) is a robust query language that lets you gain insights about your IT, business, and security from large data sets you collect, in near real-time. 
 
 ## What will we be doing?
 

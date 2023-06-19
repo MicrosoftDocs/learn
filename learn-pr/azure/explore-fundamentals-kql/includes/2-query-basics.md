@@ -1,8 +1,8 @@
 
-Organizations often collect a wide range of data about IT resources and users. Querying data is powerful tool for working with and acting on data you collect.
+Organizations often collect a wide range of data about IT resources and users. Querying data is a powerful tool for working with and acting on data you collect.
 
 
-Here, you'll learn about what a query is and what you can do using Kusto Query Language in Azure. 
+Here, you'll learn about what a query is and what you can do using Kusto Query Language (KQL). 
 
 ## What is a query? 
 
@@ -25,18 +25,18 @@ A query language consists of a set of keywords, operators, and syntax rules for 
 
 There are many query languages, each with its own syntax, capabilities, and strengths. Common query languages include Structured Query Language (SQL), a standard language for storing, manipulating and retrieving data in databases, and XQuery, a query language for XML data.
 
-## Why use Kusto Query Language? 
+## Why use KQL? 
 
-Kusto Query Language (KQL) was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make the platform and KQL the perfect foundations for services that require near-real-time monitoring and analytics to ensure service and resource reliability, performance, and security.
+KQL was developed as part of Azure Data Explorer, a big data analytics platform for near-real-time analysis of large volumes of data streamed in from multiple sources. These capabilities make the platform and KQL the perfect foundations for services that require near-real-time monitoring and analytics to ensure service and resource reliability, performance, and security.
 
-In a later unit in this module, we'll have a quick look at these Azure services, which leverage KQL's abilities to analyze large volume of varied data quickly.
+In a later unit in this module, we'll have a quick look at these services, which leverage KQL's abilities to analyze large volume of varied data quickly.
 
 Other services with different needs use different query languages. For example, storage services often use Structured Query Language (SQL).  
 
-Compared to SQL, KQL is simpler, more concise, and better optimized for ad-hoc queries and data exploration. 
+Compared to SQL, KQL is more concise and better optimized for ad-hoc queries and data exploration. 
 ## What can you do with KQL? 
 
-All Microsoft services that use Azure Data Explorer provide a set of ready-to-use data analysis tools, but a bit of KQL knowledge allows you to do much more. For example, you can: 
+All Microsoft services that use Azure Data Explorer clusters provide a set of ready-to-use data analysis tools that don't require KQL knowledge, but a bit of KQL knowledge allows you to do much more. For example, you can: 
 
 - Investigate or analyze - use KQL to troubleshoot issues or gain specific insights. 
 - Define your own alerts - trigger an alert based on logic you define using KQL.
