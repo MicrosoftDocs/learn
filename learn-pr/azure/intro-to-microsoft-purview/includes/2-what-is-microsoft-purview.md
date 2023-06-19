@@ -6,23 +6,23 @@ Microsoft Purview is a unified data-governance service that helps you manage and
 
 - Automated data discovery.
 - Sensitive data classification.
-- End-to-end data lineage.
+- End-to-end data lifecycle.
 
-You can also allow data consumers to find valuable, trustworthy data.
+You can also allow data users to find valuable, trustworthy data.
 
-Microsoft Purview is designed to help enterprises get the most value from their existing information assets. It's a cloud-based service where you can register your data sources to help you discover and manage them. Your data sources remain in place, but a copy of the metadata for the source is added to Microsoft Purview.
+Microsoft Purview is designed to help enterprises get the most value from their existing information assets. With this cloud-based service, you can register your data sources to help you discover and manage them. Your data sources remain in place, but a copy of the metadata for the source is added to Microsoft Purview.
 
-A wide range of sources in Azure and across your multicloud data estate can be registered in Microsoft Purview. These sources include Azure Data Lake Storage, AWS, Azure SQL Database on-premises and in the cloud, and many more.
+You can register a wide range of sources in Azure and across your multicloud data estate in Microsoft Purview. These sources include Azure Data Lake Storage, AWS, Azure SQL Database on-premises and in the cloud, and many more.
 
-The main elements are the Microsoft Purview Data Map, Data Catalog, and Data Estate Insights.
+Microsoft Purview has three main elements:
 
-**Data Map**: The data map provides a structure for your data estate in Microsoft Purview, where you can map your existing data stores into groups and hierarchies. In the data map, you can grant users and teams access to these groups so that they have access to find relevant data stores. The data map can then scan your data stores and gather metadata, like schema and data types. It can also identify sensitive data types so that you can keep track of them in your data estate.
+**Microsoft Purview Data Map**: The data map provides a structure for your data estate in Microsoft Purview, where you can map your existing data stores into groups and hierarchies. In the data map, you can grant users and teams access to these groups so that they have access to find relevant data stores. The data map can then scan your data stores and gather metadata, like schema and data types. It can also identify sensitive data types so that you can keep track of them in your data estate.
 
 :::image type="content" source="../media/data-map-sources.png" alt-text="Screenshot that shows the Data Map view with data sources from Azure Data Lake Storage, Azure Files, Azure Cosmos DB, Azure Blob Storage, and Azure SQL Database on the map.":::
 
-**Data Catalog**: The data catalog allows your users to browse the metadata stored in the data map so that they can find reliable data and understand its context. For example, users can see where the data comes from and who are the experts they can contact about that data source. The data catalog also integrates with other Azure products, like the Azure Synapse Analytics workspace, so that users can search for the data they need from the applications they need it in.
+**Microsoft Purview Data Catalog**: The data catalog allows your users to browse the metadata stored in the data map so that they can find reliable data and understand its context. For example, users can see where the data comes from and who are the experts they can contact about that data source. The data catalog also integrates with other Azure products, like the Azure Synapse Analytics workspace, so that users can search for the data they need from the applications they need it in.
 
-**Data Estate Insights**: Insights offer a bird's-eye view into your data catalog, covering these key facets:
+**Microsoft Purview Data Estate Insights**: Insights offer a high-level view into your data catalog, covering these key facets:
 
 * **Data stewardship**: A report on how curated your data assets are so that you can track your governance progress.
 * **Catalog adoption**: A report on the number of active users in your data catalog, their top searches, and your most viewed assets.

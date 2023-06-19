@@ -6,13 +6,13 @@ All these questions aren't easy to answer without insights into the data and the
 
 ## Example scenario
 
-Suppose you're a data consumer or producer of data. You might be a business or technical data analyst, data scientist, or data engineer. You probably spend significant time on manual processes to annotate, catalog, and find trusted data sources.
+As a user or producer of data, you might be a business or technical data analyst, data scientist, or data engineer. You probably spend significant time on manual processes to annotate, catalog, and find trusted data sources.
 
-Because there's no central location to register data sources, users might be unaware of a data source unless they come into contact with it as part of another process.
+Because there's no central location to register data sources, you might be unaware of a data source unless you come into contact with it as part of another process.
 
 Writing metadata descriptions for data sources is often a wasted effort. Client applications typically ignore descriptions that are stored in the data source. Creating documentation for data sources is difficult because you must keep documentation in sync with data sources. Users also might not trust documentation that they think is out of date.
 
-Without an end-to-end data lineage across the data estate, data consumers must spend time tracing problems created by data pipelines that other teams own. When data producers make changes to their dataset, they can accidentally affect related reports that are business or mission critical.
+Without the ability to track data from end to end, you must spend time tracing problems created by data pipelines that other teams own. If you make changes to your datasets, you can accidentally affect related reports that are business or mission critical.
 
 Microsoft Purview is designed to address these issues and help enterprises get the most value from their existing information assets. The catalog makes data sources easy to discover and understand by the users who manage the data.
 
