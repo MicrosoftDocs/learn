@@ -4,7 +4,7 @@ title: Insecure design
 metadata:
   title: insecure-design
   description: "OWASP Top 10 for .NET Developers. Insecure design."
-  ms.date: 19/06/2023
+  ms.date: 06/12/2023
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial

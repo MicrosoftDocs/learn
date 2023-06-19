@@ -4,7 +4,7 @@ title: 07. Identification and Authentication Failures
 metadata:
   title: identification-authentication-failures
   description: "OWASP Top 10 for .NET Developers. Identification and authentication failures."
-  ms.date: 19/06/2023
+  ms.date: 06/12/2023
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial

@@ -4,7 +4,7 @@ title: Cryptographic failures
 metadata:
   title: cryptographic-failures
   description: "OWASP Top 10 for .NET Developers. Cryptographic failures."
-  ms.date: 19/06/2023
+  ms.date: 06/12/2023
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial

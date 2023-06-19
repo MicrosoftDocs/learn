@@ -4,7 +4,7 @@ title: Server-side request forgery
 metadata:
   title: server-side-request-forgery
   description: "OWASP Top 10 for .NET Developers. Server-side request forgery."
-  ms.date: 19/06/2023
+  ms.date: 06/12/2023
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
