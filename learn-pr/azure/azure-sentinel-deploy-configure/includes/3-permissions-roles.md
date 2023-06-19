@@ -51,7 +51,7 @@ The following table summarizes the roles and allowed actions in Microsoft Sentin
 |Microsoft Sentinel Reader|No|No|No|No|Yes|No|
 |Microsoft Sentinel Responder|No|No|No|Yes|Yes|No|
 |Microsoft Sentinel Contributor|No|No|Yes|Yes|Yes|No|
-|Microsoft Sentinel Playbook Operator||Yes|No|No|No|No|No|
+|Microsoft Sentinel Playbook Operator|Yes|No|No|No|No|No|
 |Logic App Contributor|Yes|Yes|No|No|No|No|
 |Template Spec Contributor|No|No|No|No|No|Yes|
 

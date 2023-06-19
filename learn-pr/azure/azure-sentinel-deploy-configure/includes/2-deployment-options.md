@@ -117,4 +117,4 @@ Let's look at the basic structure of this Sentinel workspace. Sentinel is a clou
 
 The following screenshot shows the **Microsoft Sentinel - Overview** pane. Microsoft Sentinel can display real time charts and graphs to help you understand events, alerts, and incidents for security operations.
 
-:::image type="content" source="../media/overview.png" alt-text="Screenshot of Microsoft Sentinel showing events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/azure-sentinel-dashboard.png"border="false":::
+:::image type="content" source="../media/overview.png" alt-text="Screenshot of Microsoft Sentinel showing events and alerts over time, recent incidents, potential malicious events, and the total number of events, alerts, and incidents." lightbox="../media/overview.png" border="false":::
