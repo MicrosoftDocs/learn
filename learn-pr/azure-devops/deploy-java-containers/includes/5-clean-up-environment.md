@@ -1,13 +1,13 @@
-When you finish with the tasks for this module, it's important to clean up your Azure resources and your Azure DevOps environment.
+When you finish the tasks for this module, it's important to clean up your Azure resources and Azure DevOps environment. Remove or disable your resources to ensure that you don't run out of free Azure DevOps build minutes and aren't charged for Azure resources.
 
 > [!IMPORTANT]
-> This unit contains important cleanup steps. Clean up to help ensure that you don't run out of free Azure DevOps build minutes and that you aren't charged for Azure resources. Be sure to follow these steps if you created any Azure or Azure Pipelines resources for this module, even if you didn't complete all the tasks.
+> This unit contains important cleanup steps. Be sure to follow these steps if you created any Azure or Azure Pipelines resources for this module, even if you didn't complete the module.
 
 ## Clean up Azure resources
 
 The easiest way to delete your Azure App Service instance and related resources is to delete their parent resource group. When you delete a resource group, you delete all the resources in that group.
 
-You can use the Azure portal or Azure CLI to delete the resource group. The following steps use Azure CLI through Azure Cloud Shell, similar to the steps you used to create the resources.
+You can use the Azure portal or Azure CLI to delete the resource group. The following steps use Azure CLI through Azure Cloud Shell, similar to the way you created the resources.
 
 To delete your resource group:
 
@@ -35,7 +35,7 @@ This Azure DevOps project automatically runs a CI/CD pipeline every time there's
 
 ### Option 1: Disable the pipeline
 
-Disable the pipeline so that it doesn't process build requests. You can reenable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and build pipeline for future reference.
+Disable the pipeline so that it doesn't process build requests. You can reenable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and pipeline for future reference.
 
 To disable the pipeline:
 
@@ -46,7 +46,7 @@ To disable the pipeline:
 
 1. On the **Pipeline settings** screen, under **Processing of new run requests**, select **Disabled**, and then select **Save**. Your pipeline now no longer processes build requests.
 
-You can also delete the pipeline by selecting **Delete** from the dropdown **More options** menu.
+You can also delete the pipeline, by selecting **Delete** from the dropdown **More options** menu.
 
 ### Option 2: Delete the Azure DevOps project
 

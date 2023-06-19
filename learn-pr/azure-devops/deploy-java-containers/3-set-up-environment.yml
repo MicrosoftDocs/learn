@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What kind of source changes will the typical Java project require in order to run on Azure?"
+  - content: "What source changes will typical Java projects require in order to run on Azure?"
     choices:
     - content: "Rewriting the app in C# or another .NET language."
       isCorrect: false
@@ -29,13 +29,13 @@ quiz:
       explanation: "Azure supports Java as a first-class app platform."
   - content: "How does hosting Java apps on Azure differ from hosting apps built for other platforms like .NET?"
     choices:
-    - content: "Each app platform has its own dependencies, so developers need to be sure the Azure target they're using is configured correctly."
+    - content: "Each app platform has its own dependencies, so developers need to be sure the target they're using is configured correctly."
       isCorrect: true
       explanation: "Just like deploying anywhere else, the application environment must account for application prerequisites."
     - content: "Java deployments require using Java performance and monitoring tools."
       isCorrect: false
       explanation: "Specialized Java tools work as expected, but Azure performance and monitoring tools work the same on all platforms, including Java deployments."
-    - content: "You can deploy Java only to web sites on Azure."
+    - content: "On Azure, you can deploy Java only to websites."
       isCorrect: false
       explanation: "You can deploy Java apps to Azure App Service, Azure Functions, container-based services, and other Azure targets."
   - content: "What databases can Java apps connect to on Azure?"

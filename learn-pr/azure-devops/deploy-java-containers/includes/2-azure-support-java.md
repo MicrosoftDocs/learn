@@ -1,4 +1,4 @@
-In this unit, you set up the GitHub repo and Azure resources you need to deploy your Java application. Some of the Azure resources take a few minutes to deploy, so while you wait, you can read ahead to the next unit for background information about the services, tools, and platforms this module uses.
+In this unit, you set up the GitHub repo and Azure resources you need to deploy your Java application. Some of the Azure resources take a few minutes to deploy. While you wait, you can read ahead to the next unit for background information about the services, tools, and platforms this module uses.
 
 In this unit, you do the following tasks:
 
@@ -8,7 +8,7 @@ In this unit, you do the following tasks:
 
 ## Prerequisites
 
-To complete this unit, you need the following prerequisites. For more details about the prerequisites, see the module [Introduction](/training/modules/deploy-java-containers/1-introduction?azure-portal=true).
+To complete this unit, you need the following prerequisites. For more information about the prerequisites, see the module [Introduction](/training/modules/deploy-java-containers/1-introduction?azure-portal=true).
 
 - A GitHub account.
 - Access to an Azure subscription with **Owner** role.
@@ -22,9 +22,9 @@ The GitHub repository for this project contains a basic Java web app that you bu
 
 ## Create the Azure App Service environment
 
-You use the Azure CLI to create the App Service instance that hosts the containerized Java app, an Azure Container Registry instance, and an Azure Database for MySQL server.
+You use the Azure CLI to create the App Service instance that hosts the containerized Java app. You also create the Azure Container Registry instance and Azure Database for MySQL server that the app uses.
 
-You can access the Azure CLI from a terminal or through Visual Studio Code. In this module, you use the browser-based Azure Cloud Shell in the Azure portal to run the Azure CLI commands.
+You can run Azure CLI commands from a terminal or through Visual Studio Code. In this module, you use the browser-based Azure Cloud Shell in the Azure portal.
 
 ### Open Cloud Shell in the Azure portal
 
@@ -34,7 +34,7 @@ You can access the Azure CLI from a terminal or through Visual Studio Code. In t
 
 1. When the Cloud Shell interface appears, select **Bash** for the interface.
 
-1. Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When prompted, create the storage account to use for Cloud Shell. You only need to do this once. All your future Cloud Shell sessions automatically use this setup.
+1. Cloud Shell requires an Azure storage resource to persist any files that you create in Cloud Shell. When prompted, create the storage account to use for Cloud Shell. You only need to create the Cloud Shell storage the first time you use Cloud Shell. All your future Cloud Shell sessions automatically use this storage account.
 
 Azure CLI in the Cloud Shell is configured to use your Azure subscription. If you have more than one subscription, you can use the Azure CLI command `az account show` to see which subscription you're signed in to, and `az account set` to change the signed-in subscription.
 
@@ -50,7 +50,7 @@ An Azure _region_ is a geographic location that contains one or more Azure datac
      --output table
    ```
 
-1. From the `Name` column in the output, choose a region that's close to you, for example `eastasia` or `westus2`, and run `az configure` to set your default region. In the following example, replace `westus2` with the region name you chose.
+1. From the `Name` column in the output, choose a region that's close to you, for example `eastasia` or `westus2`, and run `az configure` to set your default region. Replace `westus2` in the following example with the region name you choose.
 
    ```azurecli
    az configure --defaults location=westus2
@@ -94,7 +94,7 @@ Now, create the Azure resources for deploying this solution.
    az group create --name $rgName
    ```
 
-1. Run the following `az mysql server create` command to create an Azure Database for MySQL server that uses the name you defined earlier. You can change the administrator user name and password shown here, but remember them for later reference.
+1. Run the following `az mysql server create` command to create an Azure Database for MySQL server that uses the name you defined earlier. You can change the administrator user name and password shown here, but be sure to remember them for later reference.
 
    ```azurecli
    az mysql server create \
@@ -161,7 +161,7 @@ Now, create the Azure resources for deploying this solution.
      --output table
    ```
 
-   In the output, note the host name for the running service, such as the following example. You use the name later to verify the deployment.
+   In the output, note the host name for the running service, similar to the following example. You use the name later to verify the deployment.
 
    ```output
    HostName                                        State
@@ -178,7 +178,7 @@ Now, create the Azure resources for deploying this solution.
      --output table
    ```
 
-   In the output, note the login server, such as the following example. You need this server name to create pipeline variables later.
+   In the output, note the login server, similar to the following example. You need this server name to create pipeline variables later.
 
    ```output
    LoginServer
@@ -187,4 +187,4 @@ Now, create the Azure resources for deploying this solution.
    ```
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps to remove the resources you created in this unit. Cleaning up the resources helps ensure that you're not charged for Azure resources after you complete this module. If you created the resources in this unit, be sure to do the cleanup steps even if you don't complete the rest of the module.
+> The [Clean up your Azure DevOps environment](/training/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps to remove the resources you created in this unit. Cleaning up the resources ensures that you're not charged for Azure resources after you finish this module. If you created the resources in this unit, be sure to do the cleanup steps even if you don't complete the rest of the module.
