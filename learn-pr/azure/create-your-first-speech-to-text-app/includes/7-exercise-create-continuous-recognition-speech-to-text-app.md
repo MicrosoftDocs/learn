@@ -193,7 +193,7 @@ In this exercise, you'll create an application that uses continuous recognition 
 
 In the previous section, you'll notice that the results for the second line of text weren't perfect; this error in recognition was due to the old English vocabulary in William Shakespeare's play. This example is analogous to the specialized vocabulary that your medical clients will use for their notes and dictations.
 
-Azure Cognitive Services allow you to help improve your recognition results by specifying a list of phrases that might be unfamiliar to the speech recognition engine.
+Azure Cognitive Services allows you to help improve your recognition results by specifying a list of phrases that might be unfamiliar to the speech recognition engine.
 
 To see an example of this type of improvement in action, use the following steps.
 
