@@ -43,7 +43,7 @@ There are three assessment types that you can create using the **Azure Migrate: 
 
 We'll learn more about DMA in the next unit. However, it's important to note that DMA is used when running a **Database (only)** assessment in Azure Migrate. For migrations to Azure SQL, DMA also checks feature parity to uncover partially or unsupported features in Azure. To take full advantage of the features offered by Azure Migrate, you have to install and create an assessment project using DMA, and then upload the assessment report to Azure Migrate.
 
-:::image type="content" source="../media/5-azure-migrate-dma.png" alt-text="Screenshot showing how to upload a Data Migration Assistant assessment to Azure Migrate." lightbox="../media/2-azure-migrate.png":::
+:::image type="content" source="../media/5-azure-migrate-dma.png" alt-text="Screenshot showing how to upload a Data Migration Assistant assessment to Azure Migrate." lightbox="../media/5-azure-migrate-dma.png":::
 
 ## Exercise: Assess a database and sync results in Azure Migrate
 
