@@ -1,6 +1,6 @@
-Querying data with Kusto Query Language (KQL) is an effective way to understand and work with data you collect.
+Querying data using a query language is an effective way to retrieve and work with data you collect.
 
-In this module, you learned how you can use KQL to work with data from various sources to gain insights about your IT, business, and security. 
+In this module, you learned how you can use Kusto Query Language (KQL) to work with data from various sources to gain insights about your IT, business, and security. 
 
 You learned that using KQL lets you go beyond the basic built-in monitoring and analytics capabilities provided by various services, by analyzing and troubleshooting issues, creating custom alerts and dashboards, and transforming data.
 
