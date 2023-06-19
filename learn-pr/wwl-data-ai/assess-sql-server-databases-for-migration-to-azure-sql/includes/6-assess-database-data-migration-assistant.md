@@ -1,5 +1,3 @@
-
-
 Data Migration Assistant (DMA) is a standalone application that runs a set of tasks to help migrating or upgrading your SQL Server databases. DMA helps you to discover breaking changes, behavior changes, and deprecated features. If you're migrating to an on-premises SQL Server host, you can also run a feature parity assessment to find features in the target version that can enhance the performance of your database. For migrations to Azure SQL, DMA checks feature parity to uncover partially or unsupported features in Azure.
 
 The duration of the DMA assessment depends on the size of the source database. To reduce assessment time for large databases, you can run compatibility and new feature recommendation assessments separately.

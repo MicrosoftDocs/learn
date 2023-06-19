@@ -3,7 +3,7 @@ uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.assess-dat
 title: Assess a database with Azure Migrate
 metadata:
   title: Assess a database with Azure Migrate
-  description: "Assess a database with Azure Migrate"
+  description: "Understand how Azure Migrate assesses on-premises workloads, provides insights for migration planning, and identifies dependencies between components."
   ms.date: 05/23/2023
   author: wwlpublish
   ms.author: jupadrao

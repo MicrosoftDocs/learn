@@ -3,7 +3,7 @@ uid: learn.wwl.assess-sql-server-databases-for-migration-to-azure-sql.review-dat
 title: Review database for compatibility
 metadata:
   title: Review database compatibility issues
-  description: "Review database compatibility issues"
+  description: "Review the importance of assessing SQL Server databases for potential migration blockers and breaking changes before migrating them to Azure SQL offerings."
   ms.date: 05/23/2023
   author: wwlpublish
   ms.author: jupadrao
