@@ -1,6 +1,6 @@
 ## Introduction
 
-We discussed several important terms and concepts in this module, as they're related to ThreadX. Here are brief definitions of some key points.
+We discussed several important terms and concepts in this module, as they're related to ThreadX. Here are some brief definitions of the key points.
 
 ### Producer-consumer problem
 

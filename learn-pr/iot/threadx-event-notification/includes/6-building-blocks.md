@@ -10,7 +10,9 @@ Building Block 1 contains various declarations, definitions, and prototypes:
 
 :::code language="c" source="../code/project-producer-consumer.c" range="1-29" highlight="18,24,27":::
 
-In the highlighted code, we add another Consumer thread, and another counter and prototype.
+> [!NOTE]
+>
+> - Add another Consumer thread, counter, and prototype. Refer to the highlighted code for an example.
 
 ## Building block 2
 
@@ -32,7 +34,7 @@ Building Block 3, part 2 contains more application definitions:
 
 > [!NOTE]
 >
-> - You need to add a second Consumer thread. Its entry function should be similar to the one in this code example.
+> - Add a second Consumer thread. Its entry function should be similar to the one in this code example.
 > - We initialized the counting semaphore to zero, which signifies that `StorageFacility` is initially empty.
 
 ## Building block 4
