@@ -1,10 +1,10 @@
-You've learned a bit about how query languages work and their practical applications. In this unit, you'll explore the way a KQL query is built.
+You've learned a bit about how query languages work, and where KQL can be used. In this unit, you'll explore the way a KQL query is built.
 
 ## KQL query structure
 
 A KQL query is a read-only request to process data and return results. The request is stated in plain text, using a data-flow model that is easy to read, author, and automate.
 
-Different query languages often have different structures. KQL is organized around the way data is processed. Each KQL query begins with the data source. The data is then reduced by passing through conditions, ordered, and reduced further with a filter. 
+Different query languages often have different structures. KQL is organized around the way data is processed. Each KQL query begins with the data source. The data is then reduced by passing through conditions, ordered, and reduced further with a filter.  
 
 ## Data processing
 

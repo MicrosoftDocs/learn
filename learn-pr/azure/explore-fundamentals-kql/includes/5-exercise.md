@@ -2,7 +2,7 @@ You've seen the general structure of a KQL query. Now try running a few sample q
 
 ## Access demo query environments
 
-There are several products that use KQL and offer free environments for practicing sample queries. Choose the tab below that corresponds to the query environment you want to use.
+Some of the products that use KQL offer free environments that you can use for practicing queries. Choose the tab below that corresponds to the query environment you want to use.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
@@ -17,7 +17,7 @@ This environment requires a Microsoft account or an Azure Active Directory user 
 
 #### Run sample query
 
-The following query answers the question, "What were the top 10 damage causing floods?"
+The following query answers the question, "What were the top 10 property damages caused by floods?"
 
 > [!div class="nextstepaction"]
 > <a href="https://dataexplorer.azure.com/clusters/help/databases/Samples?query=H4sIAAAAAAAAAwsuyS/KdS1LzSsp5uWqUSjPSC1KVQDzQyoLUhVsbRWU3HLy81OUQLLF+UUlCkmVCi6JuYnpqQFF+QWpRSWVCimpxckg6ZLE7FQFQwMA6xT+vFMAAAA=" target="_blank">Run the query</a>
@@ -32,11 +32,11 @@ StormEvents
 Here's a step-by-step analysis of how the query processes the data.
 
 1. The query begins with the *StormEvents* table as the tabular input.
-1. It sorts on records for which the *EventType* column is exactly equal to *Flood*. 
+1. It filters on records for which the *EventType* column is exactly equal to *Flood*. 
 1. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. 
 1. Finally, the top 10 records are returned.
 
-### [Azure Monitor](#tab/azure-monitor)
+### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
 Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
 
@@ -64,7 +64,7 @@ LAQueryLogs
 Here's a step-by-step analysis of how the query processes the data.
 
 1. The query begins with the *LAQueryLogs* table as the tabular input.
-1. It sorts on records for which the *TimeGenerated* column is between 24 hours ago and now, meaning in the past day. 
+1. It filters on records for which the *TimeGenerated* column is between 24 hours ago and now, meaning in the past day. 
 1. Then the resulting list is sorted in descending order by the value in the *ResponseDurationMs* column. 
 1. Finally, the top 10 records are returned.
 
@@ -93,7 +93,7 @@ resources
 Here's a step-by-step analysis of how the query processes the data.
 
 1. The query begins with the *Resources* table as the tabular input.
-1. It sorts on records for which the *type* column contains the term *storage*. 
+1. It filters on records for which the *type* column contains the term *storage*. 
 1. Then the resulting list is sorted in descending order by the *LastEnabledTime* value in the dynamic field called *properties*. 
 1. Finally, the top 10 records are returned.
 ---
