@@ -1,4 +1,4 @@
-Querying data is powerful tool for retrieving and processing data you collect. 
+Querying data using a query language is an effective way to retrieve and work with data you collect.
 
 In this module, you learned how you can use Kusto Query Language (KQL) to work with data from various sources to gain insights about your IT, business, and security. 
 

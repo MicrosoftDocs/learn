@@ -1,5 +1,5 @@
 Kusto Query Language (KQL) is the query language used by Azure Data Explorer, Real-Time Analytics in Microsoft Fabric, Log Analytics in Azure Monitor, Microsoft Sentinel, M365 Defender, Azure Resource Graph, and Resource Manager, among other Microsoft products.
-KQL is a powerful tool for gaining near real-time insights about your IT, business, and security from large data sets you collect. 
+Querying data using KQL lets you gain insights about your IT, business, and security from large data sets you collect, in near real-time. 
 
 ## What will we be doing?
 
