@@ -12,7 +12,7 @@ metadata:
   ms.custom: devdivchpfy22
 durationInMinutes: 7
 content: |
-  [!include[](includes/2-azure-support-java.md)]
+  [!include[](includes/3-set-up-environment.md)]
 quiz:
   title: Check your knowledge
   questions:
