@@ -36,7 +36,7 @@ Here's a step-by-step analysis of how the query processes the data.
 1. Then the resulting list is sorted in descending order by the value in the *DamageProperty* column. 
 1. Finally, the top 10 records are returned.
 
-### [Azure Monitor](#tab/azure-monitor)
+### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
 Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
 

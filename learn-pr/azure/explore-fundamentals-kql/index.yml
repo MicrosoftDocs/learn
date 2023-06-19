@@ -32,6 +32,8 @@ products:
   - azure-log-analytics
   - azure-resource-graph
   - microsoft-defender
+  - configuration-manager
+  - fabric
 subjects:
   - data-science
   - data-visualization

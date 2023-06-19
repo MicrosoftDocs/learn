@@ -29,6 +29,7 @@ The Log Analytics tool in the Azure portal lets you edit and run log queries aga
 :::image type="content" source="../media/7-monitor.png" alt-text="Screenshot of the Azure Monitor Log Analytics user interface for running queries." lightbox="../media/7-monitor.png":::
 
 Azure Monitor uses the same KQL as Azure Data Explorer, with some minor differences. For reference, see [Language differences](/azure/azure-monitor/logs/log-query-overview#language-differences).
+
 ## Microsoft Sentinel
 
 Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), and security orchestration, automation, and response (SOAR). Using Microsoft Sentinel's  hunting search-and-query tools, based on the MITRE framework, you can proactively hunt for security threats across your organization’s data sources, before an alert is triggered.

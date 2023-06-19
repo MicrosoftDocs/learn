@@ -8,6 +8,11 @@ Let's go through an example. Select the relevant tab for your environment.
 
 ### [Azure Data Explorer](#tab/azure-data-explorer)
 
+Azure Data Explorer offers a help cluster with different types of data preloaded. This cluster can be accessed using the Azure Data Explorer web UI.
+
+> [!div class="nextstepaction"]
+> <a href="https://dataexplorer.azure.com/clusters/help" target="_blank">Azure Data Explorer help cluster</a>
+
 The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
 
 1. Start with a tabular dataset.
@@ -46,7 +51,13 @@ The following steps demonstrate how to build a query by applying operators to a 
 
     **Output:** A tabular dataset of `StormEvents` records in "FLORIDA" sorted in descending order based on the `InjuriesDirect` column.
 
-### [Azure Monitor](#tab/azure-monitor)
+### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
+
+Microsoft Sentinel and Log Analytics in Azure Monitor both use the demo environment that is accessed through the **Logs** blade in the Azure portal.
+
+> [!div class="nextstepaction"]
+> <a href="https://portal.azure.com/#blade/Microsoft_Azure_Monitoring_Logs/DemoLogsBlade" target="_blank">Log Analytics demo environment</a>
+
 
 The following steps demonstrate how to build a query by applying operators to a starting tabular dataset. Each query is composed of tabular expression statements, some of which contain operators. Operators take a tabular input, perform an operation, and produce a new tabular output.
 
@@ -144,7 +155,7 @@ StormEvents
 | where State == state and InjuriesDirect + InjuriesIndirect > injuryThreshold
 ```
 
-### [Azure Monitor](#tab/azure-monitor)
+### [Azure Monitor/Microsoft Sentinel](#tab/azure-monitor)
 
 In the following query, `responseCodes` is a variable of type dynamic array that contains response codes. The variable is then used within the query to filter the `LAQueryLogs` table for logs with those response codes.
 
