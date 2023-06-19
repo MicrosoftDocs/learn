@@ -54,6 +54,7 @@ This exercise has you create a House class and instantiate it, initializing the 
         }
     }
     ```
+    
 9.  Now add a public `int` variable called `sqrFeet`.
 
     ```csharp
