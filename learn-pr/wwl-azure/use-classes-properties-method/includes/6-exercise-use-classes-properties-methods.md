@@ -26,7 +26,7 @@ This exercise is a chance for you to practice putting it all together before mov
 
 1.	In the House class, create two private fields: _numberOfRooms and _squareFootage.
 
-    ```CSharp
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -44,7 +44,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.	Create a property called Color that sets and gets the house color.
-    ```CSharp
+
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -64,7 +65,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.  Add a method called SetNumberOfRooms() that returns the number of rooms.
-    ```CSharp
+
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -89,6 +91,7 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.	Add a method called GetNumberOfRooms() that returns the number of rooms.
+
     ```CSharp
     using System;
     using System.Collections.Generic;
@@ -114,7 +117,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.	Create an overloaded method called SquareFootage() that has two versions of the method, one to calculate the square footage by the US standard measurement system and the other using the metric system.
-    ```CSharp
+    
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -156,7 +160,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1. Create a static/global property for the builderID.
-    ```CSharp
+
+    ```csharp
     using System;
     using System.Collections.Generic;
     using System.Linq;
@@ -202,7 +207,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.	In the Program.cs file, create an instance of the House class and set its color to red.
-    ```CSharp
+
+    ```csharp
         using Housing_Development_Project_4 // this statement is automatically generated
 
         House house = new House();
@@ -219,7 +225,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1.	Calculate and print square footage using the two overloaded versions of SquareFootage().
-    ```CSharp
+
+    ```csharp
         using Housing_Development_Project_4 // this statement is automatically generated
 
         House house = new House();
@@ -233,7 +240,8 @@ This exercise is a chance for you to practice putting it all together before mov
     ```
 
 1. Set the `BuilderID` property to "American Builders".
-    ```CSharp
+
+    ```csharp
         using Housing_Development_Project_4 // this statement is automatically generated
 
         House house = new House();

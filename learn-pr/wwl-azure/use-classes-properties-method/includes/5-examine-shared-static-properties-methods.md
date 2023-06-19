@@ -24,7 +24,7 @@ The following example shows how to define a static field, property, and method i
 - HousingDevelopmentBuilder is a static property that gets and sets the developmentBuilder field.
 - AddHouseToDevProject is a static method that increases the numberOfHouses field by one, incrementing the number of houses in the development project.
 
-```CSharp
+```csharp
 public class House
 {
     private static string developmentBuilder = “American Builders”;
@@ -60,7 +60,7 @@ The following example shows how to access static properties and methods on the H
 
 #### Static example
 
-```CSharp
+```csharp
 House.HousingdevelopmentBuilder = “American Builders”;
 
 House.AddHousesToDevProject();
@@ -70,8 +70,7 @@ The important thing to remember here is that in this code the House class hasn't
 
 #### Instantiate example
 
-```CSharp
-
+```csharp
 House house = new House();
 
 house.HousingDevelopmentBuilder = "American Builder";

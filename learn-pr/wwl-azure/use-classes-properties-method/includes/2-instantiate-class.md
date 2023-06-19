@@ -8,7 +8,7 @@ In order to create an object, you must declare a variable of the class type you'
 
 The following example declares a variable myCustomer of type Customer. The Customer type is based on the Customer class:
 
-```CSharp
+```csharp
 Customer myCustomer;
 ```
 
@@ -18,18 +18,19 @@ To allocate memory and create an instance of a class, use the new operator follo
 
 The general syntax for creating an instance of a class is as follows:
 
-```CSharp
+```csharp
 variable-name = new class-name(constructor-parameter-values);
 ```
+
 For example, the following code instantiates the myCustomer object:
 
-```CSharp
+```csharp
 myCustomer = new Customer();
 ```
 
 You can also declare and instantiate a class in a single line of code. The following example declares the myCustomer object and instantiates the class in one line.
 
-```CSharp
+```csharp
 Customer myCustomer = new Customer(param1, param2);
 ```
 

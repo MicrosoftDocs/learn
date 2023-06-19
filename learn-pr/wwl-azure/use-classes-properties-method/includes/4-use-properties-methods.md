@@ -8,7 +8,7 @@ To access a property, use the property name as if it were a public field in the 
 
 The following code sets the `name` property of the myCustomer object to “Sasha.” Setting the name of the property implicitly calls the `set` accessor. The next line of code *gets* (retrieves) the `name` text property, which implicitly calls the `get` accessor.
 
-```CSharp
+```csharp
 myCustomer.name="Sasha";
 
 return myCustomer.name ;
@@ -19,13 +19,13 @@ return myCustomer.name ;
 To access a method, use parentheses after the name of the method. Within the parentheses, pass the values for any parameters required by the method. If the method is overloaded, the compiler uses the number and types of your parameters to determine which version of the overloaded method to invoke.
 The following example calls the calcDiscount method that accepts no parameters and returns no values.
 
-```CSharp
+```csharp
 myCustomer.calcDiscount();
 ```
 
 The following example calls the calcDiscount method that passes back an integer value that specifies the customer discount:
 
-```CSharp
+```csharp
 int dsct = myCustomer.calcDiscount();
 ```
 
