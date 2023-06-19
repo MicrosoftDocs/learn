@@ -6,14 +6,14 @@ In this last exercise, you make your game field, or grid, look a little nicer. T
 
 You begin by modifying the loop you created earlier. To start, you delete the Console.Write and Console.WriteLine statements inside our loop and replace them with a default character you use for creating our grid, basically replacing the "0s." You then check to see if there are ants in the ants array. If there are ants in the array, you print the current direction of the ant. If no ants exist in the array, you flip the color of the cell from black to white.
 
-1. Create your new character of type `char` called `fieldChar`, that is, `char fieldChar = '░';`
+1. Create your new character of type `char` called `fieldChar`, that is, `char fieldChar = '░';`.
 
 1. Check for ants in the ant array. You check by accessing the Ants array property and calling the FirstOrDefault method on it, passing in the x-axis and y-axis of the ant. If it comes back null, no ant was found in the array.
 
     `Ant? ant = game.Ants.FirstOrDefault(a => (i == a.I) && (j == a.J));`
 
-1. Draw ant direction using switch statements, if ant array not null
-    ```CSharp
+1. Draw ant direction using switch statements, if ant array not null.
+    ```csharp
     if (ant != null)
     {
         // Draw one of the ants
@@ -35,8 +35,9 @@ You begin by modifying the loop you created earlier. To start, you delete the Co
     }
     ```
 
-1. Print a dark symbol for 1, if ant array empty
-    ```CSharp
+1. Print a dark symbol for 1, if ant array empty.
+
+    ```csharp
     else
     {
         fieldChar = game.Field[i, j] == 0 ? '░' : '▓';

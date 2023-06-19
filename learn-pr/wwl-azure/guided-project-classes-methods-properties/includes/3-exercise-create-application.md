@@ -30,16 +30,17 @@ Open your Program.cs file and add the following code.
 
 ## Create loops
 
-1. Create outer `for` loop
+1. Create outer `for` loop.
 
-    ```CSharp
+    ```csharp
     for(int i = 0; i < field.GetLength(0); i++) {
         // You will put stuff here
     }
     ```
 
-1. Create inner `for` loop
-    ```CSharp
+1. Create inner `for` loop.
+
+    ```csharp
     for(int i = 0; i < field.GetLength(0); i++) {
         for(int j = 0; j < field.GetLength(1); j++){
             // You will put stuff here
@@ -47,8 +48,9 @@ Open your Program.cs file and add the following code.
     }
     ```
 
-1. Add spacing and grid characters
-    ```CSharp
+1. Add spacing and grid characters.
+
+    ```csharp
     for(int i = 0; i < field.GetLength(0); i++) {
         for(int j = 0; j < field.GetLength(1); j++){
             Console.Write($"{field[i, j]}  ");
