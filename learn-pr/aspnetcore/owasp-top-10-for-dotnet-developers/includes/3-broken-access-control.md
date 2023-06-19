@@ -3,7 +3,7 @@ Recall that you recently joined a team at an IT software company that has tasked
 
 You start at the top of the OWASP Top 10 list with *#1 - Broken Access Control*. This category refers to incidents user who shouldn’t have permission to access that data viewed confidential information.
 
-### Built-in Framework Security Capabilities
+### Built-in framework security capabilities
 
 .NET has built-in authentication and session management so there's no need to implement your own.
 Let's consider a ASP.NET Core controller. A controller without any authorization attributes treats each requests the same way without applying any security checks. By decorating controller actions or the controller itself with `Authorize` (user must be signed in and authenticated) or `AllowAnonymous` (any unauthenticated caller can invoke method) attributes, you gain control over what can be accessed publicly and which functionality is for authorized users only.
@@ -98,7 +98,7 @@ Your application's user interface should also reflect the user's authentication 
 
 The `SecureMethod` is accessible once the user is authorized. Since `AutorizeView` component can validate against roles or policies, only role claim for either the *admin* or *superuser* roles would show the button.
 
-### Code Review Notes
+### Code review notes
 
 You and your team have considered the broken access control risk and implemented Claims-based and Policy-based authorization in your web app. Knowing the app gets deployed to Azure, other best practices include:
 

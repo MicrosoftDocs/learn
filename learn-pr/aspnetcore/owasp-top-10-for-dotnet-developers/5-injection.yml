@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.injection
-title: 03. Injection
+title: Injection
 metadata:
   title: injection
   description: "OWASP Top 10 for .NET Developers. Injection."
-  ms.date: 01/09/2022
+  ms.date: 19/06/2023
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial

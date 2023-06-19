@@ -27,7 +27,7 @@ An allowlist or blocklist should be enforced (like IP addresses and host names).
 
 Correct user input validation can protect your application from a few OWASP Top 10 items.
 
-### Code Review Notes
+### Code review notes
 
 Once again you were reminded of the importance of input validation. Luckily, .NET has built-in [IPAddress.TryParse](/dotnet/api/system.net.ipaddress.tryparse) or [Uri.CheckHostName](/dotnet/api/system.uri.checkhostname) methods for input and configuration validation.
 

@@ -7,7 +7,7 @@ You might be familiar with the term *'shift-left'*. It's often referred to testi
 
 Let's discuss the latter in more detail. Threat modeling is an essential part of DevSecOps because it informs your security design process and helps find vulnerabilities in your application. While it does fall under DevSecOps, it also sits neatly under education too.
 
-:::image type="content" source="../media/tm-1.png" alt-text="Application logical components":::
+:::image type="content" source="../media/tm-1.png" alt-text="Diagram showing application logical components.":::
 
 Threat modeling is something that can be used to help mitigate that from the early stages of application design.
 Whenever an application’s design or code is changed, you run the threat modeling process again to reflect the new state of the application and to identify any new threats that could have emerged from the changes. It’s an iterative process, performed throughout the software development lifecycle.
@@ -15,11 +15,11 @@ Whenever an application’s design or code is changed, you run the threat modeli
 > [!IMPORTANT]
 > Threat modeling is a process to understand security threats to a system, determine risks from those threats, and establish appropriate mitigations.
 
-:::image type="content" source="../media/tm-2.png" alt-text="Data flow diagram with basic threat model":::
+:::image type="content" source="../media/tm-2.png" alt-text="Diagram showing data flow diagram with basic threat model.":::
 
 Making threat modeling part of the design phase of the application helps make security into the design from the start. Threat modeling goes beyond the design stage, and can be performed at every stage of the Secure Development Lifecycle.
 
-### Design Review Notes
+### Design review notes
 
 Here, you focused your attention on the overall system architecture and design. Insecure design flows target systems as a whole and not its codebase.
 Security should be not an afterthought. How you protect your system’s configuration secrets, handle customers data, and implement logging should be considered early on in the project lifecycle. A perfect implementation can't fix an insecure design.​

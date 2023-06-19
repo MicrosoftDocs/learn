@@ -32,7 +32,7 @@ Most modern integrated development environments (IDEs) streamline update process
     :::column-end:::
 :::row-end:::
 
-### Code Review Notes
+### Code review notes
 
 To prevent vulnerable and outdated components in .NET applications, you should remove any unused or unnecessary components from your application.
 

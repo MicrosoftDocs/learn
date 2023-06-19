@@ -8,7 +8,7 @@ Chances are your application relies upon plugins, libraries, or modules from unt
 Software and data integrity failures can be connected to code and infrastructure that doesn't protect against integrity violations. An application that relies upon plugins, libraries, or modules from untrusted sources or repositories can be at risk. An insecure CI/CD pipeline can introduce the potential for unauthorized access, malicious code, or system compromise. Attackers could potentially upload their own updates to be distributed and run on all installations. Objects or data encoded into a modifiable structure are vulnerable to insecure deserialization as well.
 
 Perhaps you recall the high-profile SolarWinds cyber attack by Nation-state from 2020. The attackers managed to hide added malicious code among genuine product codebase.
-:::image type="content" source="../media/solarwind.png" alt-text="Solarwind Orion platform":::
+:::image type="content" source="../media/solarwind.png" lightbox="../media/solarwind.png" alt-text="Screenshot of Solarwind Orion platform source code.":::
 ([source](https://www.reversinglabs.com/blog/sunburst-the-next-level-of-stealth))
 
 Naming of the class containing malicious code, `OrionImprovementBusinessLayer`, was deliberate. Not only to blend in with the rest of the code, but also to fool the software developers or anyone auditing the binaries. That class, and many of the methods it uses, can be found in other Orion software libraries, even thematically fitting with the code found within those libraries.
@@ -19,14 +19,14 @@ Supply chain verification suggests depending only on vetted and verified librari
 
 :::row:::
     :::column:::
-        :::image type="content" source="../media/devops-metrics.png" alt-text="Microsoft Defender for DevOps":::
+        :::image type="content" source="../media/devops-metrics.png" alt-text="Screenshot of Microsoft Defender for DevOps extension.":::
     :::column-end:::
     :::column:::
         Use automation when possible. Explore free and vendor offerings for CI/CD integrated security tooling. An example could be Defender for DevOps [extension for Azure DevOps](https://marketplace.visualstudio.com/items?itemName=ms-securitydevops.microsoft-security-devops-azdevops), bringing credential, dependency and static analysis scanning to your workflow.
     :::column-end:::
 :::row-end:::
 
-### Code Review Notes
+### Code review notes
 
 As you and your team adopt secure CI/CD practices, you want to make sure:
 

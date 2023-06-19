@@ -49,7 +49,7 @@ var randomNumberGenerator = System.Security.Cryptography.RandomNumberGenerator.C
 
 By using `RandomNumberGenerator` you can eliminate the changes of two or more users ending up with the same, what should be unique, token or password.
 
-### Code Review Notes
+### Code review notes
 
 You don't want to unnecessarily store any sensitive data in your system. If you do, make sure you encrypt all data in transit and at rest with the use of HTTPS and SSL.
 After studying your teams codebase, you can now make the distinction between encryption, encoding, and hashing. No crypto keys were checked into the source code repository. You're planning to research security scanning tools to run as part of the CI/CD process to prevent sensitive data and secrets from getting into the repository.

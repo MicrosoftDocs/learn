@@ -5,7 +5,7 @@ This module explores OWASP TOP 10 - 2021 edition. It covers the most common secu
 
 Implementing secure and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. How data is processed and stored, and how services are configured are examples of where a vulnerability could be introduced.
 
-![Application Security](../media/appsec.png)
+![Diagram showing interconnected elements of modern system.](../media/appsec.png)
 
 News stories about a company being hacked or data being stolen and posted on dark web are now common. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report, the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
 
@@ -13,13 +13,13 @@ News stories about a company being hacked or data being stolen and posted on dar
 > [Software Vulnerability Definition NIST](https://csrc.nist.gov/glossary/term/Software_Vulnerability):
 > A security flaw, glitch, or weakness found in software code that could be exploited by an attacker (threat source).
 
-### The World of Application Security
+### The world of application security
 
 Every developer writes their code to the best of their ability. We, as authors of ever more complex systems, are responsible for the success of your products and part of that success is providing your customers with a secure and reliable solution. [Security development lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/practices) starts with training. Understanding the risk associated and discussed in OWASP Top 10 is a great start.
 
 Application Security, often referred to as AppSec, is the process of finding, fixing, and preventing security vulnerabilities at the application level.
 
-![Security culture, delivery and automation cogs work better with CI, Shift left and automation](../media/worlds-breaches.png)
+![Diagram showing world;s biggest data breaches and hacks.](../media/worlds-breaches.png)
 [Image source](https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
 
 AppSec logically falls under the wider context of **Information Security (InfoSec)**, term covering protection of information and systems from unauthorized access, use, disruption, or destruction etc. InfoSec also covers areas like as network security, intrusion detection, digital forensics, and governance, risk, and compliance for example.
@@ -28,7 +28,7 @@ AppSec logically falls under the wider context of **Information Security (InfoSe
 
 **DevSecOps** is an evolution in the way development organizations approach security by introducing a security-first mindset culture, and automating security into every phase of the software development lifecycle from design to delivery.​
 
-### Meet the Team
+### Meet the team
 
 Suppose you're joining a new IT company with an established team working on a legacy software. Your team's main focus is maintaining, supporting and developing new features of a rich web application used by customer all around the world. The website and its underlying infrastructure have only recently been migrated to Microsoft Azure cloud.
 

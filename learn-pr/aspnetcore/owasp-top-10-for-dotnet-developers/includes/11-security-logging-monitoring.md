@@ -25,8 +25,7 @@ Make sure you have answers to the following questions:
 
 .NET comes with a LoggerFactory, which is in Microsoft.Extensions.Logging.
 
-
-### Code Review Notes
+### Code review notes
 
 In our scenario, your new DevOps team can prevent security logging and monitoring failures in their .NET applications by:
 

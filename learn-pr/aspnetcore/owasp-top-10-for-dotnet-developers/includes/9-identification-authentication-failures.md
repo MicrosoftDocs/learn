@@ -23,7 +23,7 @@ Never put untrusted data into your HTML input. Untrusted data is any data that c
 
 Before putting untrusted data into a URL query string. ensure its URL is encoded. HTML encoding takes characters such as `<` and changes them into a safe form like `&lt`. Don't make authorization decisions based on the state of the UI but only from the component state. Consider using Content Security Policy (CSP) to protect against XSS attacks.
 
-### Code Review Notes
+### Code review notes
 
 As part of your code review, you decided to analyze Cross-Origin Resource Sharing (CORS) configuration of your app. The same-origin policy is a browser security feature that prevents a web page from making requests to a different domain than the one that served the web page, preventing from man-in-the-middle attacks.
 Confirmation of the user’s identity, authentication, and session management is critical to protecting against authentication–related attacks.

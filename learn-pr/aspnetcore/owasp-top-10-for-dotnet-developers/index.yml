@@ -3,7 +3,7 @@ uid: learn.owasp-top-10-for-dotnet-developers
 metadata:
   title: "Guide to Secure .NET Development with OWASP Top 10"          # Do not edit: title must be "Introduction to (product)"
   description: "Evaluate security risks that come with insecure application development patterns and practices"             # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 11/14/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  ms.date: 19/06/2023             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: obrocki      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: dawidobrocki           # Alias     of the Microsoft employee either authoring or project-managing this content
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
