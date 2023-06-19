@@ -29,6 +29,11 @@ products:
 - azure-files
 - azure-storage-accounts
 modules:
+- learn.create-azure-storage-account
+- learn.wwl.configure-blob-storage
+- learn.wwl.configure-storage-security
+- learn.wwl.storage-security
+- learn.secure-and-isolate-with-nsg-and-service-endpoints
 - learn.wwl.guided-project-azure-files-azure-blobs
 trophy:
   uid: learn.wwl.implement-storage-azure-files-azure-blob-storage.trophy
