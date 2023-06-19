@@ -129,7 +129,7 @@ In this exercise, you'll explore the Microsoft Sentinel playbooks by performing 
 
 1. In the details pane, select **Actions** and **Run playbook (Preview)**.
 
-    :::image type="content" source="../media/06-incident-run-playbook.png" alt-text="Screenshot of the header bar." border="true":::
+    :::image type="content" source="../media/06-incident-run-playbook.png" alt-text="Screenshot of the Incident detail pane actions to run playbook." border="true":::
 
 1. On the **Run playbook on incident** page, in the **Playbooks tab,** you should see the **ClosingIncident** playbook, select **Run**.
 
