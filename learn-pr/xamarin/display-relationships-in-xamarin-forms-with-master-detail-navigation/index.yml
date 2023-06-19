@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/display-relationships-in-xamarin-forms-with-master-detail-navigation-badge.svg
+hidden: true
 levels:
 - beginner
 roles:
