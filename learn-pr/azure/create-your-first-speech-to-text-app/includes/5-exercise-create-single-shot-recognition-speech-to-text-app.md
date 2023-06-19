@@ -43,7 +43,7 @@ You'll use this WAV file for the application in this exercise and the applicatio
     code Program.cs
     ```
 
-1. Remove all the existing code and add the following `using` statements, which enables the Azure Cognitive Services Speech APIs for your application:
+1. Remove all the existing code and add the following `using` statements, which enable the Azure Cognitive Services Speech APIs for your application:
 
     ```csharp
     using System.Text;
