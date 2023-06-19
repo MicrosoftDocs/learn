@@ -17,20 +17,20 @@ If there are multiple connectors, it is possible to disable password hash sync f
 
 When you install Azure AD Connect by using the **Express Settings** option, password hash synchronization is automatically enabled. If you use custom settings when you install Azure AD Connect, password hash synchronization is available on the user sign-in page.
 
-:::image type="content" source="../media/single-sign-on-fd559a4b.png" alt-text="Screenshot of enabling password hash synchronization in Azure A D Connect setup wizard.":::
+:::image type="content" source="../media/password-hash-connect-setting-ef874d71.png" alt-text="Azure AD Connect with the Password Hash Synchronization option selected.":::
 
 
-### Password hash synchronization and Federal Information Processing standard
+## Password hash synchronization and Federal Information Processing standard<br>
 
 If your server has been locked down according to Federal Information Processing Standard (FIPS), then MD5 is disabled.
 
 **To enable MD5 for password hash synchronization, perform the following steps:**
 
-1. Go to '%programfiles%\\Azure AD Sync\\Bin\`.
-1. Open miiserver.exe.config.
-1. Go to the configuration/runtime node at the end of the file.
-1. Add the following node: `<enforceFIPSPolicy enabled="false"/>`
-1. Save your changes.
+1.  Go to '%programfiles%\\Azure AD Sync\\Bin\`.
+2.  Open miiserver.exe.config.
+3.  Go to the configuration/runtime node at the end of the file.
+4.  Add the following node: `<enforceFIPSPolicy enabled="false"/>`
+5.  Save your changes.
 
 For reference, this snippet is what it should look like:
 
