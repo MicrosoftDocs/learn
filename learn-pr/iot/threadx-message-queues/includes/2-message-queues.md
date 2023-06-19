@@ -61,7 +61,7 @@ status = tx_queue_send(&my_queue, my_message, TX_NO_WAIT);
 /* If status equals TX_SUCCESS, the message has been sent to the queue. */
 ```
 
-The `tx_queue_receive` service retrieves a message from a message queue. This service copies the retrieved message from the front of the queue into the memory area that is specified by the destination pointer. That message is then removed from the queue. The specified destination memory area must be large enough to hold the message, that is, the destination pointed to by `destination_ptr` must be at least as large as this queue’s defined message size. Otherwise, memory corruption occurs in the memory area following the destination. The following code shows how this service can be used to receive a message from a queue.
+The `tx_queue_receive` service retrieves a message from a message queue. This service copies the retrieved message from the front of the queue into the memory area specified by the destination pointer. That message is then removed from the queue. The specified destination memory area must be large enough to hold the message, that is, the destination pointed to by `destination_ptr` must be at least as large as this queue’s defined message size. Otherwise, memory corruption occurs in the memory area following the destination. The following code shows how this service can be used to receive a message from a queue.
 
 ```c
 TX_QUEUE my_queue

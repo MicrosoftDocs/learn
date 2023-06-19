@@ -41,10 +41,10 @@ Building block 3, part 1, represents application definitions:
 
 Building block 3, part 2, is shown in the following code:
 
-:::code language="c" source="../code/project-message-queues.c" range="82-105" highlight="15":::
+:::code language="c" source="../code/project-message-queues.c" range="82-105" highlight="5,15":::
 
 > [!TIP]
-> You need to create another queue as highlighted in the preceeding code.
+> You need to create another thread and another queue as highlighted in the preceeding code.
 
 <a name="building-block-4-dispatcher-thread-entry"></a>
 
@@ -68,7 +68,7 @@ Building block 4 also contains the `routine thread entry` function, shown in the
 :::code language="c" source="../code/project-message-queues.c" range="149-162" highlight="9-12":::
 
 > [!TIP]
-> Use this entry function as a model to create a new entry function; use a sleep time of 10.
+> Use this entry function as a model to create a new entry function with a sleep time of 21.
 
 <a name="building-block-4-print-stats"></a>
 
