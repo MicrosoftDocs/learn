@@ -1,6 +1,6 @@
 
 With the increasing complexity of developed applications, you should avoid making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity.
-After all, chances are your application relies upon plugins, libraries, or modules from untrusted sources or repositories.
+Chances are your application relies upon plugins, libraries, or modules from untrusted sources or repositories.
 
 > [!TIP]
 > SBOM, which stands for **Software Bill of Materials**, is a software security and software supply chain risk management helping identify individual dependencies and components of a piece of software.

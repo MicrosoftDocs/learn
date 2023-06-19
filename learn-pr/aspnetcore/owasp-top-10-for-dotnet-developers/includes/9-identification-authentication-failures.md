@@ -1,7 +1,7 @@
 
 The Identification and Authentication failures category covers weaknesses in confirming a user's identity, authentication, and session management in protection against authentication-related attacks.
 
-As discussed earlier, authentication is a process in which a user provides credentials that are then compared to those stored in an operating system, database, app or resource. If they match, users authenticate successfully, and can then perform actions that they're authorized for. Authorization refers to the process that determines what a user is allowed to do.
+As discussed earlier, authentication is a process in which a user provides credentials that are then compared to credentials stored by identity provider. If they match, users authenticate successfully, and can then perform actions that they're authorized for. Authorization refers to the process that determines what a user is allowed to do.
 
 There are many techniques used by attackers to exploit broken authentication. The result may be temporary or permanent information leaks or account hijacking.
 
@@ -19,7 +19,7 @@ Luckily [ASP.NET](/aspnet/core/security) Core and Entity Framework contains feat
 ```
 
 Cross-site scripting (XSS) is a common attack technique. XSS works by tricking your application into inserting a `<script>` tag into your rendered page, or by inserting an On* event into an element.
-Never put untrusted data into your HTML input. Untrusted data is any data that may be controlled by an attacker, HTML form inputs, query strings, HTTP headers, even data sourced from a database as an attacker may be able to breach your database even if they cannot breach your application.
+Never put untrusted data into your HTML input. Untrusted data is any data that can be controlled by an attacker. HTML form inputs, query strings, HTTP headers, even data sourced from a database as an attacker may be able to breach your database even if they can't breach your application.
 
 Before putting untrusted data into a URL query string. ensure its URL is encoded. HTML encoding takes characters such as `<` and changes them into a safe form like `&lt`. Don't make authorization decisions based on the state of the UI but only from the component state. Consider using Content Security Policy (CSP) to protect against XSS attacks.
 

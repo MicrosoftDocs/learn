@@ -3,11 +3,11 @@ This module explores OWASP TOP 10 - 2021 edition. It covers the most common secu
 
 ### Threat landscape
 
-Implementing secure and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. The way data is processed or stored, and how services are configured in a system are examples of where a vulnerability could be introduced.
+Implementing secure and high quality software can be challenging. Malware, exploits and many other cyber threats are on the rise. Attacks happen by exploiting vulnerabilities in an application. A vulnerability is just an unintended flaw or weakness in that application. How data is processed and stored, and how services are configured are examples of where a vulnerability could be introduced.
 
 ![Application Security](../media/appsec.png)
 
-News stories about a company being hacked or data being stolen and posted on dark web are now very common. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report, the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
+News stories about a company being hacked or data being stolen and posted on dark web are now common. According to the 2021 Identity Theft Resource Center (ITRC) Annual Data Breach Report, the cost of a data breach increased by nearly 10% between 2020 and 2021. Data breaches are increasing and getting more costly.
 
 > [!IMPORTANT]
 > [Software Vulnerability Definition NIST](https://csrc.nist.gov/glossary/term/Software_Vulnerability):
