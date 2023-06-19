@@ -124,8 +124,8 @@ In the previous diagram, there's a thread with priority 5 that is fourth from th
 
 All the ThreadX resources except `Event Flags Groups` have the `Prioritize` service, but in all the other cases, there's only one action that can happen when the suspended thread resumes. However, there are two possible actions that can happen with a message queue:
 
-1. A thread can send a message to a queue.
-1. A thread can receive a message from a queue. 
+- A thread can send a message to a queue.
+- A thread can receive a message from a queue. 
 
 This table contains a description of those two actions.
 
