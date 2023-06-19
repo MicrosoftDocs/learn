@@ -1,4 +1,5 @@
 
+
 Retention labels and policies help organizations to manage and govern information by ensuring content is kept only for a required time, and then permanently deleted.  Applying retention labels and assigning retention policies helps organizations:
 
 - **Comply proactively with industry regulations and internal policies** that require content to be kept for a minimum time.
@@ -33,4 +34,4 @@ When using retention policies and retention labels to assign retention settings 
 
 Consider the following scenarios.  If all documents in a SharePoint site should be kept for five years, it's more efficient to do with a retention policy than apply the same retention label to all documents in that site.
 
-However, if some documents in that site should be kept for five years and others for 10 years, you'd need to apply a policy to the SharePoint site with a retention period of five years. You'd then apply a retention label to the individual item with a retention setting of 10 years.
+However, if some documents in that site should be kept for five years and others for 10 years, you'd need to apply a policy to the SharePoint site with a retention period of five years. You'd then apply a retention label to the individual items with a retention setting of 10 years.
