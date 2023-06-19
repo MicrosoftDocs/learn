@@ -5,11 +5,11 @@ metadata:
   title: Discussion
   description: Discussion about the topics in this module.
   ms.date: 01/23/2023
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 1
 content: |
   [!include[](includes/4-discussion.md)]
