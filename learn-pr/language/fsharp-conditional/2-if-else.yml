@@ -6,6 +6,7 @@ metadata:
   description: Learn why you might use conditional logic and how to apply it by using `if...elif...else`.
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.date: 07/23/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
