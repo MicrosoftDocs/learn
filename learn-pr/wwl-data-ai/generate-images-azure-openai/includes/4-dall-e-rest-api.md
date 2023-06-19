@@ -39,4 +39,4 @@ When the operation has succeeded, a response similar to the following JSON is re
 
 The **result** element includes a collection of **url** elements, each of which references a PNG image file generated from the prompt. In this example, the file might look similar to the following image:
 
-![An image of a badger wearing a tuxedo.](../media/badger-in-a-tuxedo.png)
+![A picture of a badger wearing a tuxedo.](../media/badger-in-a-tuxedo.png)

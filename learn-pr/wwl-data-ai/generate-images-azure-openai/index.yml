@@ -17,7 +17,7 @@ abstract: |
     - Use the DALL-E playground in Azure OpenAI Studio
     - Use the Azure OpenAI REST interface to integrate DALL-E image generation into your apps
 prerequisites: |
-  Before starting this module, you should be familar with the Azure OpenAI service. Consider completing the [Get started with Azure OpenAI Service](/training/modules/get-started-openai/) module before starting this one.
+  Before starting this module, you should be familiar with the Azure OpenAI service. Consider completing the [Get started with Azure OpenAI Service](/training/modules/get-started-openai/) module before starting this one.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - intermediate

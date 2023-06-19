@@ -3,7 +3,7 @@ uid: learn.wwl.generate-images-azure-openai.exercise-use-dall-e
 title: Exercise - Generate images with a DALL-E model
 metadata:
   title: Exercise - Generate images with a DALL-E model
-  description: "THands-on exercise to use DALL-E in Azure OpenAI service"
+  description: "Hands-on exercise to use DALL-E in Azure OpenAI service"
   ms.date: 6/14/2023
   author: graememalcolm
   ms.author: gmalc
