@@ -56,7 +56,7 @@ quiz:
         - content: 'None of these resources'
           isCorrect: false
           explanation: 'Incorrect. Only a mutex has the concept of priority inheritance.'
-    - content: "which of the following ThreadX service calls can't cause suspension?"
+    - content: "Which of the following ThreadX service calls can't cause suspension?"
       choices:
         - content: 'tx_mutex_get(&my_mutex, WAIT_FOREVER)'
           isCorrect: false
