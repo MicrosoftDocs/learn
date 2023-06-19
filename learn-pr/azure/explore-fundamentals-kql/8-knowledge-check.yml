@@ -29,7 +29,7 @@ quiz:
   questions:
   - content: "What are the strengths of Kusto Query Language (KQL) as a query language?" 
     choices:
-    - content: "KQL is efficient at retrieving and processing data in near-real-time."
+    - content: "KQL is efficient at retrieving and processing data in near real-time."
       isCorrect: true
       explanation: "KQL is designed specifically for large data sets and outperforms many other query languages. It returns query results without modifying the stored data or metadata."
     - content: "KQL can be used to retrieve, update, and delete data."
@@ -46,7 +46,7 @@ quiz:
     - content: "KQL queries are case-insensitive, except for operators."
       isCorrect: false
       explanation: "KQL is always case-sensitive."
-    - content: "The order of operations in a KQL query does not matter."
+    - content: "The order of operations in a KQL query doesn't matter."
       isCorrect: false
       explanation: "The piping of information from one operator to another is sequential in a KQL query. Therefore, the query operator order can affect both results and performance."
   - content: "What's a good way to reuse KQL queries or parts of queries?"

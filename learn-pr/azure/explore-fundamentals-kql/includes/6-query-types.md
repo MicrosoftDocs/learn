@@ -4,9 +4,9 @@ This unit provides an overview of query statements and functions. In KQL, all qu
 
 ## Tabular expression statements
 
-Most queries use at least one **tabular expression statement**, which means both its input and output consist of tables or tabular datasets. These statements usually contain operators, each of which starts with a tabular input and returns a tabular output.
+Most queries use at least one *tabular expression statement*, which means both its input and output consist of tables or tabular datasets. These statements usually contain operators, each of which starts with a tabular input and returns a tabular output.
 
-There are a wide range of operators provided by KQL, ranging from simple (such as `count`, `sort`, and `where`) to more complex (such as `parse`, `join`, and `render`). 
+There is a wide range of operators provided by KQL, ranging from simple operators (such as `count`, `sort`, and `where`) to more complex (such as `parse`, `join`, and `render`) ones. 
 
 For example, the following query contains four tabular expression statements:
 
@@ -19,7 +19,7 @@ StormEvents // tabular expression statement 1
 
 ## Let statements
 
-A **let statement** defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
+A *let statement* defines a binding between a name and an expression. Let statements can be used to break a long query into small named parts that are easier to understand.
 
 For example, the following query uses a let statement to define scalar values:
 
@@ -34,7 +34,7 @@ StormEvents
 
 ## Built-in functions
 
-Built-in functions are hard-coded functions defined by KQL that can't be modified by users. KQL has a rich library of functions available for use, which can be found in the official [KQL documentation](/azure/data-explorer/kusto/query/). The functions range from simple sorting and matching to complex statistical and geospatial functions.
+Built-in functions are hard-coded functions defined by KQL that can't be modified. KQL has a rich library of functions available for use, which can be found in the official [KQL documentation](/azure/data-explorer/kusto/query/). The functions range from simple sorting and matching to complex statistical and geospatial functions.
 
 For example, the following `strcat()` function concatenates string arguments:
 
@@ -46,7 +46,7 @@ print str = strcat("hello", " ", "world")
 
 User-defined functions are, as their name suggests, defined by the user. User-defined functions can be divided into two types:
 
-* **Stored functions**: user-defined functions that are stored and managed database schema entities (like tables). Different products use different way to store functions.
+* **Stored functions**: User-defined functions that are stored and managed database schema entities, similar to tables. Different products use different ways to store functions.
 
     For example, the following query in Azure Data Explorer stores a function that takes a parameter:
 
@@ -58,7 +58,7 @@ User-defined functions are, as their name suggests, defined by the user. User-de
 
     In other environment, such as Azure Monitor and Microsoft Sentinel, queries can be saved through the UI.
 
-* **Query-defined functions**: user-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
+* **Query-defined functions**: User-defined functions that are defined and used within the scope of a single query. The definition of such functions is done through a let statement.
 
     For example, the following query defines and then uses the function *f*:
 
