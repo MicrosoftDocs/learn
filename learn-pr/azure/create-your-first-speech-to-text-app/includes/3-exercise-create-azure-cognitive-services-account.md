@@ -48,7 +48,7 @@ The applications that you'll create in the upcoming exercises use this account t
     | --- | --- |
     | **name** | Specifies the unique name for your Azure Cognitive Services account. |
     | <nobr>**resource-group**</nobr> | Specifies the name of your resource group. |
-    | **kind** | Specifies the account type, which is _SpeechServices_ for this exercise since we'll be creating a speech to text application.<br /><br />See `az cognitiveservices account list-kinds` for a list of account types. |
+    | **kind** | Specifies the account type, which is _SpeechServices_ for this exercise because we'll be creating a speech-to-text application.<br /><br />See `az cognitiveservices account list-kinds` for a list of account types. |
     | **sku** | Specifies the SKU for the account, which is the free _F0_ tier for this exercise.<br /><br />See `az cognitiveservices account list-skus` for a list of account SKUs.  |
     | **location** | Specifies the location for the account. |
     | **yes** | Suppresses the prompt for terms confirmation. |
