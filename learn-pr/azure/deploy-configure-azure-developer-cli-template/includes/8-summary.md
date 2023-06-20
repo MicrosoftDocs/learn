@@ -1,26 +1,15 @@
-Our goal in this module was to help you evaluate whether Azure API Management is appropriate for managing and publishing your organization's APIs. To help you make that decision, we presented some criteria you can use:
+The goal of this module was to help you learn how to deploy Azure Developer CLI templates and use different commands to accomplish various common development tasks. We worked through the following tasks and features:
 
-- Number of APIs
-- Rate of API changes
-- API administration load
+- Installed and setup the Azure Developer CLI locally
+- Selected and deployed an `azd` template
+- Redeployed and provisioned template updates to the Azure environment
+- Learned how to monitor the hosted application using Application Insights dashboards
+- Configured a CI/CD pipeline as another option to push updates to Azure
+- Disposed of resources that are no longer used
 
-We applied these criteria in the context of our fictional food delivery organization. The criteria helped you evaluate whether your organization's APIs would benefit from being gathered under the umbrella of Azure API Management. You learned that in most scenarios, Azure API Management offers the following benefits:
-
-- Improved API standardization through enabling management of multiple APIs from a single administrative interface.
-- Enhanced centralization of all API operations by bringing multiple APIs under a single administrative umbrella.
-- Tightened API security resulting from permissions, access control policies, and attack surface reduction.
-
-However, you also learned that some organizations might not benefit from using Azure API Management if they have:
-
-- A relatively small number of deployed APIs.
-- APIs that are mostly static or require few revisions.
-- APIs that require few, if any, administrative extras such as policies, users, and analytics.
-
-Today's connected world is increasingly being driven by the *API economy*&mdash;how API usage by developers and their consumers generates important revenue streams for the companies that publish the APIs. If you want to maximize your API economy, you need to use this module's criteria to assess how well Azure API Management would improve your organization's ability to adapt its APIs to satisfy consumers, follow business trends, and take advantage of new opportunities. The process you went through here should give you enough information to choose the correct API lifecycle management solution for your organization.
+These are all common tasks when working with `azd` and provide an introduction to how the tool is used in practice. `azd` can provide significant value to most apps that require streamlined provisioning and deployment to Azure in a repeatable, distributable format.
 
 ## References
-
-- [Azure API Management](https://azure.microsoft.com/services/api-management/?azure-portal=true)
-- [Azure API Management pricing](https://azure.microsoft.com/pricing/details/api-management/?azure-portal=true)
-- [Feature-based comparison of the Azure API Management tiers](/azure/api-management/api-management-features?azure-portal=true)
-
+- [What is the Azure Developer CLI?](/azure/developer/azure-developer-cli/overview)
+- [Select and run your first template](/azure/developer/azure-developer-cli/azd-templates?tabs=csharp)
+- [Make your project compatible with `azd`](/azure/developer/azure-developer-cli/make-azd-compatible?pivots=azd-create)

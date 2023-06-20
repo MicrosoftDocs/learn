@@ -33,7 +33,7 @@ Your team is planning to add the ability for users to upload files with their ti
 1. Locate the `main.bicep` file in the `infra` folder at the root of your template.
 
 1. The template already contains a Bicep module for creating storage accounts, so you can reuse it to add your own. Paste ths following code snippet at the bottom of the `main.bicep` file above where the output variables are defined:
-    
+
     ```bicep
     module storage './core/storage/storage-account.bicep' = {
       name: 'storage'
@@ -45,12 +45,13 @@ Your team is planning to add the ability for users to upload files with their ti
       }
     }
     ```
+
 1. Make sure you have saved your changes, and then run the `azd provision` command. This command will use the infrastructure as code files in your template to update your Azure environment, but will not redeploy any of your app source.
 
     ```azdeveloper
     azd provision
     ```
 
-1. When the command finishes, follow the URL that is printed out in the console to launch the Azure portal in your browser. You should see the resource group that holds all of your provisioned resources, including the new storage account.
+1. When the command finishes, follow the URL that is printed out in the console to launch the Azure portal in your browser. You should see the resource group that holds all of your originally provisioned resources, including the new storage account.
 
-<img>
+    :::image type="content" source="../media/resources-storage.png" alt-text="A screenshot showing the deployed storage account.":::

@@ -13,6 +13,7 @@ Complete the following steps to configure your template to use a CI/CD piepline:
     ```
 
 1. If a GitHub origin is not set for your project, `azd` will how you would like to configure your remote repository Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` will complete the following tasks for you:
+
     * Creates and configures a Service Principal for the app on the Azure subscription.
     * Steps you through a workflow to create and configure a GitHub repository and commit your project code to it. You can also choose to use an existing GitHub repository.
     * Creates a secure connection between Azure and your repository using GitHub secrets.
@@ -23,5 +24,7 @@ Complete the following steps to configure your template to use a CI/CD piepline:
 1. Select the output URL in the console to open a browser tab to the new GitHub repository.
 
 1. Navigate to the **Actions** tab, and you should see a workflow running to package, provision and deploy your code. GitHub Actions is essentially running `azd up` for you, just like you did in your local environment.
+
+    :::image type="content" source="../media/azd-actions.png" alt-text="A screenshot showing a GitHub actions workflow running.":::
 
 Once your pipeline is configured, you can continuously update your Azure environment and deployed app by simply pushing your code changes to GitHub. You can also continue to run the commands locally like you did in the previous steps. Infrastructure as code files are idempotent, meaning no matter how many times you run them, the desired state will remain consistent.

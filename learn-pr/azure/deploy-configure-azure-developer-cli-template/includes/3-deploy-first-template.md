@@ -8,6 +8,8 @@ azd template list
 
 For this example, you'll use a pre-existing template built using React, Python, and MongoDB. Even if you have never worked with these technologies, you can still complete the steps ahead, since `azd` handles most of the work for you. This template will create a set of resources in Azure that are similar to those outlined in the sample scenario at the beginning of the module.
 
+## Deploy the template
+
 The most common starting workflow for `azd` only requires a couple of commands. You'll explore other commands and options later in the module to complete additional tasks. To initialize and deploy an `azd` template, complete the following steps:
 
 1. Open a command prompt to an empty file directory on your computer.
@@ -34,6 +36,32 @@ The `azd up` command may take several minutes or longer to run. Each templates p
 
 The deployed application should match the following screenshot:
 
-<img>
+:::image type="content" source="../media/deployed-app.png" alt-text="A screenshot showing the deployed web application.":::
 
-Congratulations! You provisioned and deployed your first app environment using `azd`. Next, you'll learn how to update the template and deploy your changes.
+You can also view all of the resources that were created in Azure by navigating to your resource group in the Azure Portal:
+
+1. In the Azure portal, use the main search bar to search for the resource group `azd` created for you by typing `rg-azdlearn`. By convention, the resource group will be the environment name you specified prefixed with `rg-`.
+
+2. Select the resource group from the results to navigate to the overview page. You should see a list of the different resources that were created for you by `azd`.
+
+    :::image type="content" source="../media/deployed-resources.png" alt-text="A screenshot showing the deployed resources.":::
+
+## Monitor the application
+
+Many `azd` templates also provision monitoring resources in Azure, such as Application Insights dashboards. These dashboards provide application health monitoring capabilities such as live metrics and logging. You can launch these dashboards using the `azd monitor` command and one of the following flags:
+
+* **`--overview`** - Launches the main dashboard.
+* **`--live`** - Launches the live metrics dashboard.
+* **`--logs`** - Launches the logging dashboard.
+
+For example, run the following command in your terminal to open the live metrics dashboard:
+
+```azdeveloper
+azd monitor --live
+```
+
+The browser should launch and display a page similar to the following screenshot:
+
+:::image type="content" source="../media/live-metrics-small.png" alt-text="A screenshot showing a metrics dashboard."  lightbox="../media/live-metrics.png" :::
+
+Congratulations! You provisioned, deployed and monitored your first app environment using `azd`. Next, you'll learn how to update the template and deploy your changes.

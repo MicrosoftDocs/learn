@@ -1,4 +1,4 @@
-Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to a application successfully deployed on Azure.
+Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to an application successfully deployed on Azure.
 
 ## Prerequisites
 
@@ -11,20 +11,20 @@ You will also need an Azure subscription to provision and deploy resources. You 
 
 ## Example scenario
 
-Suppose you work at a company that operates a food-delivery platform. Your customers use your mobile app or website to browse the menus of multiple restaurants, and then place an order for the food they want, which your company then delivers. The platform requires a variety of Azure services to provide a reliable and scalable architecture, including:
+Suppose you work at a company that operates a ticket management and customer communication platform. Your customers use your mobile app or website to submit questions, report issues or message customer service representatives. The platform requires a variety of Azure services to provide a reliable and scalable architecture, including:
 
 - Two App Services and an App Service Plan to host the front-end web app and back-end API
-- A Service Bus to manage scalable messaging
 - A Key Vault instance to store secure app secrets
-- Application Insights resources to perform logging and monitoring
 - A Cosmos DB for NoSQL instance to permanently store app data
+- Azure Monitor resources such as Application Insights dashboards
+- A Service Bus to manage scalable messaging
 - CI/CD pipelines to ensure changes are reliably deployed through an automated process
 
-Rather than starting from the ground up, you'd like to leverage an existing template or extensible architecture template that can provision and deploy most of the resources for you. The development team can then focus on building the app and making smaller adjustments the architecture. You would also like the solution to be reusable and distributable, meaning the same architecture could be consistently recreated at a later date in additional environments for additional teams. The Azure Developer CLI can help you with these goals through the use of its easy workflow commands and powerful template system.
+    A sample architecture diagram for this type of app might look something like this:
 
-## What will we be doing?
+    :::image type="content" source="../media/architecture-diagram.png" alt-text="An architectural diagram for a messaging app.":::
 
-We'll setup and use the Azure Developer CLI to provision and deploy an Azure environment similar to the one outlined in the preceding example scenario. The Azure infrastructure resources will closely match the desired end state. The app source code will be a placeholder Todo app that can be replaced later on with a custom app that reuses the same Azure infrastructure.
+Rather than starting from the ground up, you'd like to leverage an existing and extensible architecture template that can provision and deploy most of the resources for you. The development team can then focus on building the app and making smaller adjustments the architecture. You would also like the solution to be reusable and distributable, meaning the same architecture could be consistently recreated at a later date in additional environments for additional teams. The Azure Developer CLI can help you with these goals through the use of its easy workflow commands and powerful template system.
 
 ## What is the main goal?
 

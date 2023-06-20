@@ -21,3 +21,7 @@ You can also delete the resources created by `azd` using the Azure portal. You m
 1. Select the resource group to open the overview page.
 
 1. Select **Delete resource group** at the top of the page to open the **Delete a resource group** dialog. Enter the resource group name to confirm deletion, and then select **Delete**.
+
+    :::image type="content" source="../media/delete-resource-group.png" alt-text="A screenshot showing how to delete a resource group.":::
+
+
