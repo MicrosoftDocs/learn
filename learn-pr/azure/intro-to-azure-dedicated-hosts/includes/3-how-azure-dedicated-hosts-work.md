@@ -1,4 +1,4 @@
-While Azure Dedicated hosts have the same VM management system as a set of standard Azure VMs, they require extra prerequisites before a VM can be provisioned on a host. These prerequisites enable you to define a host's SKU and group multiple hosts together. Understanding the function of these prerequisites is crucial for optimizing and effectively managing your dedicated host deployments. Let's look into each of these prerequisites and see how they relate to a dedicated hosts deployment.
+While Azure dedicated hosts have the same VM management system as a set of standard Azure VMs, they require extra prerequisites before a VM can be provisioned on a host. These prerequisites enable you to define a host's SKU and group multiple hosts together. Understanding the function of these prerequisites is crucial for optimizing and effectively managing your dedicated host deployments. Let's look into each of these prerequisites and see how they relate to a dedicated hosts deployment.
 
 ## Prerequisites
 
@@ -22,7 +22,7 @@ Because you're already reserving the entire host, VMs are represented by 'instan
 
 Under a host's overview page, there's a section labeled 'Available VM capacity'. The smaller the VM size, the greater number of that size a host can support simultaneously. While you can mix different VM sizes on a single host, you can't exceed the capacity of a single host when combining the required resources for all provisioned VMs. Some hosts also have a single size that represents the entire host's available resources.
 
-This table shows the capacity an empty host (no currently running VM instances) with the 'DDSv4-Type1' size family can support.
+This table shows the 'VM Capacity' page for an empty host (no currently running VM instances) with the 'Example-Type' size family.
 
 VM Size | Number remaining
 |---|---|
@@ -34,7 +34,5 @@ Example_D32ds | 2
 Example_D48ds | 1
 Example_D64ds | 1
 
-An example of a mixed size deployment using the size family from the previous table might look like this:
-
-You don't need to run uniform sizes, you can mix and match VM sizes on the same host. Once you create said VMs, the dedicated hosts 'VM Capacity' page dynamically updates to show you the remaining capacity. Due to virtualization overhead, the quantity of VMs and their associated resources may not add together in a linear fashion.
+You don't need to run uniform sizes, you can mix and match VM sizes on the same host. Once you create a VM with a selected size, the 'VM Capacity' page dynamically updates to show you the remaining capacity. Due to virtualization overhead, the quantity of VMs and their associated resources may not add together linearly.
 
