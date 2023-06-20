@@ -34,7 +34,7 @@ quiz:
     - content: "Defines the CI/CD pipeline for your `azd` template."
       isCorrect: false
       explanation: "Incorrect. The CI/CD pipeline is defined in the `azure-dev.yaml` file."
-    - content: "Describes and maps your application code to provisioned resources in Azure."
+    - content: "Defines and describes the apps that are included in your application and the Azure services they are deployed to."
       isCorrect: true
       explanation: "Correct. The `azure.yaml` file describes the services in your code, such as the language and corresponding Azure resources."
     - content: "Defines a Dev Container environment for the project."
