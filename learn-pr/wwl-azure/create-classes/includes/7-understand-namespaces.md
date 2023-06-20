@@ -18,10 +18,12 @@ You can define a namespace for your classes using the keyword namespace.
 In the following code example, you create a Shipping class in the Inventory namespace.
 
 ```csharp
+
 namespace HomeStyle
-{   internal class House(string style, int sqrFootage)   {
-       // members of House class          }
+{   internal class House()   {       public string varName;
+   }
 }
+
 ```
 
 When you refer to the class in your code, you prefix the class name with the namespace.
