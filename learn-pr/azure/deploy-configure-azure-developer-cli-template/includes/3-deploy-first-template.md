@@ -12,22 +12,28 @@ The most common starting workflow for `azd` only requires a couple of commands. 
 
 1. Open a command prompt to an empty file directory on your computer.
 
-1. Run the `azd init` command and specify the template you want to use as a parameter:
+1. Run the `azd init` command and specify the template you want to use as a parameter. The command will also prompt you for an environment name, which will you can set to whatever you'd like.
+
+    ```azdeveloper
+    azd init --template todo-python-mongo
+    ```
+
+2. Run the `azd auth login` command to launch a browser window you can use to sign in to your Azure subscription.
 
     ```azdeveloper
     azd auth login
     ```
 
-2. Run the `azd auth login` command to sign in to your Azure subscription.
-
-    ```azdeveloper
-    azd auth login
-    ```
-
-3. Run the `azd up` command to provision and deploy the template resources to Azure.
+3. Run the `azd up` command to provision and deploy the template resources to Azure. Select the subscription and location you would like to deploy to when prompted.
 
     ```azdeveloper
     azd up
     ```
 
-The `azd up` command may take several minutes or longer to run. Different provision different Azure resources and configurations, which means they each take various amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which provides additional progress information.
+The `azd up` command may take several minutes or longer to run. Each templates provisions different Azure resources and configurations, which means each requires various amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which you can visit to view additional deployment information.
+
+The deployed application should match the following screenshot:
+
+<img>
+
+Congratulations! You provisioned and deployed your first app environment using `azd`. Next, you'll learn how to update the template and deploy your changes.

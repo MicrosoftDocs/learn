@@ -1,8 +1,7 @@
-install
-azd up flow
-modify app, redeploy
-modify bicep - reprovision
-azd monitor
-azd pipeline
-azd down
+1. install
+2. azd up flow
+3. modify app, redeploy modify bicep - reprovision
+4. azd monitor
+5. azd pipeline
+6. azd down
 questions
