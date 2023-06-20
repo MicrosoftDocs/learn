@@ -83,7 +83,6 @@ To do that, you create a personal access token. A personal access token, or PAT,
 1. Enter a name for your token, such as *Build agent*.
 1. Under **Scopes**, select **Show all scopes** at the bottom.
 1. Look for **Agent Pools**, and then select **Read & manage**.
-1. Look for **Build**, and then select **Read & execute**.
 1. Select **Create**.
 1. Copy the token to a safe place.
 
