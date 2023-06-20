@@ -19,7 +19,8 @@ In the following code example, you create a Shipping class in the Inventory name
 
 ```csharp
 namespace HomeStyle
-{   class House(string style, int sqrFootage)   {       // members of House class   }
+{   internal class House(string style, int sqrFootage)   {
+       // members of House class          }
 }
 ```
 
