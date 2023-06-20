@@ -13,9 +13,10 @@ Complete the following steps to configure your template to use a CI/CD piepline:
     ```
 
 1. If a GitHub origin is not set for your project, `azd` will how you would like to configure your remote repository Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` will complete the following tasks for you:
-    * Create a repository for your `azd` template in Github
-    * Creates a service principal your GitHub actions workflow will use to connect to Azure
-    * Stores the service principal secrets used to authenticate in the repository secrets
+    * Creates and configures a Service Principal for the app on the Azure subscription.
+    * Steps you through a workflow to create and configure a GitHub repository and commit your project code to it. You can also choose to use an existing GitHub repository.
+    * Creates a secure connection between Azure and your repository using GitHub secrets.
+    * Runs the GitHub action when you check in the workflow file.
 
 1. `azd` will also ask you if you want to commit and push your local changes to the configured pipeline. Enter *yes* and wait for it to finish.
 
@@ -23,4 +24,4 @@ Complete the following steps to configure your template to use a CI/CD piepline:
 
 1. Navigate to the **Actions** tab, and you should see a workflow running to package, provision and deploy your code. GitHub Actions is essentially running `azd up` for you, just like you did in your local environment.
 
-Once your pipeline is configured, you can continuously update your Azure environment and deployed app by simply pushing your code to GitHub. You can also continue to run the commands locally like you did originally. Infrastructure as code files are idempotent, meaning no matter how many times you run them, the desired state will remain intact.
+Once your pipeline is configured, you can continuously update your Azure environment and deployed app by simply pushing your code changes to GitHub. You can also continue to run the commands locally like you did in the previous steps. Infrastructure as code files are idempotent, meaning no matter how many times you run them, the desired state will remain consistent.

@@ -1,8 +1,13 @@
 Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to a application successfully deployed on Azure.
 
-## Prerequisites 
+## Prerequisites
 
 Before completing this module, you should have a basic conceptual understanding of what the Azure Developer CLI is and how it works. For a high-level introduction to the tool, complete the [Introduction to Azure Developer CLI]() module first.
+
+You will also need an Azure subscription to provision and deploy resources. You can [sign up for an Azure account](https://azure.microsoft.com/free) that includes some free credits for the first 30 days to get started.
+
+> [!CAUTION]
+> The Azure Developer CLI provisions resources in Azure that may incur costs. If you choose to use your own subscription, make sure to dispose of the resources when you are finished to avoid unwanted charges. This end of this module explains the best ways to perform resource clean up when you are done working with `azd`.
 
 ## Example scenario
 
