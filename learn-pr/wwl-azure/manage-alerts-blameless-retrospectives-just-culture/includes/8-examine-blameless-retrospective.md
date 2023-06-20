@@ -1,3 +1,4 @@
+
 ## What does it mean to have a blameless retrospective?
 
 Anyone who worked with technology at any scale is familiar with failure.

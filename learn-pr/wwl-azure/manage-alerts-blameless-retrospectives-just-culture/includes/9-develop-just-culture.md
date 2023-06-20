@@ -1,3 +1,4 @@
+
 A funny thing happens when engineers make mistakes and feel safe when giving details about it: they aren't only willing to be held accountable, but they're also enthusiastic about helping the rest of the company avoid the same error in the future.
 
 They are, after all, the most expert in their error.

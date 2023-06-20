@@ -4,13 +4,9 @@ title: Explore smart detection notifications
 metadata:
   title: Explore smart detection notifications
   description: "Explore smart detection notifications"
-  ms.date: 06/15/2022
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
 content: |
   [!include[](includes/4-explore-smart-detection-notifications.md)]
