@@ -13,7 +13,7 @@ After completing this module, you'll be able to:
 
 ## Prerequisites
 
-The modules in this learning path form an optional progression:
+The modules in this learning path form a progression:
 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
