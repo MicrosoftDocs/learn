@@ -165,7 +165,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
 
     The following result is displayed:
 
-    [!code-bash[](code/build-tools.yml)]
+    [!code-bash[](code/build-tools.sh)]
 
     The script installs Node.js, npm, gulp, and .NET Core.
 
@@ -207,7 +207,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
 
     The following result is displayed:
 
-    [!code-bash[](code/build-agent.yml)]
+    [!code-bash[](code/build-agent.sh)]
 
     You don't need to understand how each line works, but here's a brief summary of what this script does:
 
