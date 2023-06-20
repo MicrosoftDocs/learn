@@ -5,4 +5,4 @@ To experiment with DALL-E, you can provision an Azure OpenAI Service resource in
 When using the playground, you can adjust the **settings** to specify:
 
 - The number of images to be generated in response to a prompt (the default number of images is one).
-- The resolution (size) of the generated image(s) (the default resolution is 1024 x 1024 pixels).
+- The resolution (size) of the generated image(s). Available sizes are *256x256*, *512x512*, or *1024x1024* (which is the default value).
