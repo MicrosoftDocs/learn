@@ -17,12 +17,10 @@ In the following code example, you create a `House` class in the `Housing_Develo
 
 ```csharp
 namespace Housing_Development_Project_1
-
 {
    internal class House
    {
    }
-
 }
 
 ```
