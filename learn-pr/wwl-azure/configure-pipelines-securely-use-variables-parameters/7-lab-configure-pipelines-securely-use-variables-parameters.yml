@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.lab-configure-pipelines-securely-use-variables-parameters
+title: Lab - Configure pipelines to securely use variables and parameters
+metadata:
+  title: Lab - Configure pipelines to securely use variables and parameters
+  description: "This unit contains a hands-on exercise. Learners can use the exercise to configure pipelines to securely use variables and parameters."
+  ms.date: 6/14/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 20
+content: |
+  [!include[](includes/7-lab-configure-pipelines-securely-use-variables-parameters.md)]

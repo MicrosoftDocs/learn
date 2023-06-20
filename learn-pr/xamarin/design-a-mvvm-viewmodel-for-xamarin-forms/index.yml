@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/design-a-mvvm-viewmodel-for-xamarin-forms-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:
