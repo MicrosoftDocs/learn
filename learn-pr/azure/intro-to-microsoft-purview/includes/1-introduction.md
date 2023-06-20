@@ -20,7 +20,7 @@ Microsoft Purview is designed to address these issues and help enterprises get t
 
 ## What will we be doing?
 
-This high-level overview of Microsoft Purview helps you discover the key aspects that make it the tool of choice for mapping out your enterprise data. You learn how it can help you:
+This high-level overview of Microsoft Purview helps you discover the key aspects that make it the tool of choice for mapping out your enterprise data. You learn how it can help you: 
 
 * Manage and govern your data across various platforms and locations. 
 * Map out your data landscape. 
