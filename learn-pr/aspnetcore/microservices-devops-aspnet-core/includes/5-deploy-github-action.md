@@ -42,7 +42,7 @@ Create a GitHub Action for deployment of the coupon service with the following s
             ref: main
     
         - name: Helm tool installer
-          uses: Azure/setup-helm@v1
+          uses: Azure/setup-helm@v3.5
           
         - name: Deploy
           run: >
