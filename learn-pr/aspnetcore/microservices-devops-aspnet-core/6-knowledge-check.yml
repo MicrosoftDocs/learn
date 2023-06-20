@@ -2,7 +2,7 @@
 uid: learn.microservices-devops-aspnet-core.6-knowledge-check
 metadata:
   title: Knowledge check
-  description: Check your knowledge
+  description: Check your knowledge of the GitHub Actions CI/CD microservices build and deployment process.
   ms.date: 09/16/2020
   author: scottaddie
   ms.author: scaddie
@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Without using the GitHub Actions Marketplace, where should sensitive information, such as credentials, be stored for Actions?"
+    - content: "What's the best place to store sensitive information, such as credentials, for GitHub Actions?"
       choices:
         - content: "*appsettings.json*"
           isCorrect: false
@@ -25,35 +25,35 @@ quiz:
           explanation: "The *web.config* file is inaccessible to GitHub Actions and is better suited for other purposes, such as IIS configuration."
         - content: Azure Key Vault
           isCorrect: false
-          explanation: "There's an Azure Key Vault action available in the GitHub Marketplace. However, GitHub also provides built-in secrets functionality."
+          explanation: "You can get a Key Vault action from the GitHub Marketplace. However, GitHub provides built-in secrets functionality."
         - content: GitHub secrets
           isCorrect: true
           explanation: "You can define secrets at the repository or the organization level. This information is encrypted and made accessible to GitHub Actions."
-    - content: "What is the purpose of creating an Azure Active Directory service principal for use in GitHub Actions?"
+    - content: "What's the purpose of creating an Azure Active Directory service principal for GitHub Actions to use?"
       choices:
         - content: "The service principal is for storing application logs."
           isCorrect: false
           explanation: "The service principal isn't required for logging."
-        - content: "The service principal is the name of the AKS resource."
+        - content: "The service principal is the name of the Azure Kubernetes Service (AKS) resource."
           isCorrect: false
           explanation: "The AKS resource name isn't related to the service principal."
-        - content: "The service principal is the GitHub Action's identity for performing tasks in Azure."
+        - content: "The service principal is the GitHub Actions identity for doing tasks in Azure."
           isCorrect: true
           explanation: "GitHub Actions that interact with Azure must use a service principal."
         - content: "The service principal is the web URL of the app."
           isCorrect: false
           explanation: "Service principals are unrelated to URLs."
-    - content: "During deployment, what is the purpose of Kubernetes creating a new container while the old one is still running?"
+    - content: "During upgrade deployment, why does AKS create a new container while the old one is still running?"
       choices:
-        - content: "Avoid downtime"
+        - content: "To avoid downtime."
           isCorrect: true
           explanation: "The old container isn't terminated until the new container is ready."
-        - content: "Scaling up"
+        - content: "To scale up."
           isCorrect: false
           explanation: "Scaling operations aren't required during a regular deployment."
-        - content: "Redundancy"
+        - content: "For redundancy."
           isCorrect: false
           explanation: "The new and old containers aren't identical. Redundancy requires identical containers."
-        - content: "Scaling out"
+        - content: "To scale out."
           isCorrect: false
           explanation: "Scaling operations aren't required during a regular deployment."
