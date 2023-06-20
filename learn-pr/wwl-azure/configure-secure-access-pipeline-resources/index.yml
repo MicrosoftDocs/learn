@@ -58,6 +58,7 @@ units:
 - learn.wwl.configure-secure-access-pipeline-resources.configure-service-connections
 - learn.wwl.configure-secure-access-pipeline-resources.manage-environments
 - learn.wwl.configure-secure-access-pipeline-resources.secure-repositories
+- learn.wwl.configure-secure-access-pipeline-resources.lab-configure-agents-and-agent-pools-for-secure-pipelines
 - learn.wwl.configure-secure-access-pipeline-resources.knowledge-check
 - learn.wwl.configure-secure-access-pipeline-resources.summary
 badge:

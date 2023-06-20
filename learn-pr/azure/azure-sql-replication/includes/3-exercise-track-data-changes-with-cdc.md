@@ -11,11 +11,11 @@ In Azure SQL Database, CDC uses a scheduler, which invokes stored procedures to 
 
 ## Setup: Use the scripts to deploy Azure SQL Database
 
-At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, AdventureWorksLT, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.
+At the right is Azure Cloud Shell, which is a way to interact with Azure by using a browser. Before you start the exercise, you'll run a script in Cloud Shell to create your environment, `AdventureWorksLT`, in Azure SQL Database. In the script, you'll be prompted for a password for the new database and your local IP address to enable your device to connect to the database.
 
 These scripts should take three to five minutes to complete. Be sure to note your password, unique ID, and region, because they won't be shown again.
 
-1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command, and note the resulting IP address:
+1. Start by obtaining your local IP address. Ensure that you're disconnected from any VPN service, and **open a local PowerShell terminal on your device**. Run the following command and note the resulting IP address:
 
     ```powershell
     (Invoke-WebRequest -Uri "https://ipinfo.io/ip").Content
@@ -186,11 +186,11 @@ EXEC sys.sp_cdc_disable_table
 ```
 
 > [!NOTE]
-> It is *not* necessary to disable individual tables before you disable the database.
+> It's *not* necessary to disable individual tables before you disable the database.
 
 ### Disable CDC on your database
 
-You can disable CDC on database by executing `sys.sp_cdc_disable_db` stored procedure.
+You can disable CDC on database by executing `sys.sp_cdc_disable_db` stored procedure:
 
 ```sql
 EXEC sys.sp_cdc_disable_db

@@ -10,7 +10,7 @@ In this exercise, you'll create an instance of the Azure Cache for Redis service
     $rediscachename = (-join($useralias, "-workshop-cache"))
     ```
 
-1. Create an Azure Cache for Redis instance:
+1. Create an Azure Cache for Redis instance. This command can take up to 15 minutes to complete:
 
     ```azure-cli
     az redis create `

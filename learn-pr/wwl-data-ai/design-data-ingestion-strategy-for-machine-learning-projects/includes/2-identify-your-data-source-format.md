@@ -46,7 +46,7 @@ Commonly, we refer to three different formats:
 - **Semi-structured** data: Not all data has the same fields or properties. Instead, each data point is represented by a collection of *key-value pairs*. The keys represent the features, and the values represent the properties for the individual data point. For example, real-time applications like Internet of Things (IoT) devices generate a JSON object:
 
     ```json
-    { "deviceId": 29482, "location": "Office1", "time"="2021-07-14T12:47:39Z", "temperature": 23 }
+    { "deviceId": 29482, "location": "Office1", "time":"2021-07-14T12:47:39Z", "temperature": 23 }
     ```
 
 - **Unstructured** data: Files that don't adhere to any rules when it comes to structure. For example, documents, images, audio, and video files are considered unstructured data. Storing them as unstructured files ensures you don’t have to define any schema or structure, but also means you can't query the data in the database. You'll need to specify how to read such a file when consuming the data. 

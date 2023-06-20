@@ -9,7 +9,7 @@ metadata:
   author: PageWriter-MSFT
   ms.author: prwilk
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 prerequisites: |
  - Experience designing a workload that includes core infrastructure technology such as data storage, compute, and networking
  - Good understanding of the quality principles provided in Azure Well-Architected Framework

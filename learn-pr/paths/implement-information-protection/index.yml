@@ -3,9 +3,9 @@ uid: learn.wwl.implement-information-protection
 metadata:
   title: 'SC-400: Implement Information Protection in Microsoft 365'
   description: 'SC-400: Implement Information Protection in Microsoft 365'
-  ms.date: 11/11/2021
+  ms.date: 06/01/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: riswinto
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 title: 'SC-400: Implement Information Protection in Microsoft 365'
@@ -27,7 +27,6 @@ subjects:
 - information-protection-governance
 modules:
 - learn-m365.m365-compliance-information-governance
-- learn-m365.m365-security-data-loss
 - learn-m365.m365-compliance-information-classify-data
 - learn.wwl.create-manage-sensitive-information-types
 - learn-m365.audit-encryption

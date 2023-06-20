@@ -9,7 +9,7 @@ metadata:
   ms.author: jukullam
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/8-require-reviewer.md)]
