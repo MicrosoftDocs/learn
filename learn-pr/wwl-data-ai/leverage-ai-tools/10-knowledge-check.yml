@@ -36,7 +36,7 @@ quiz:
     - content: "Microsoft 365, Microsoft Power Platform, and MLOps"
       isCorrect: false
       explanation: "Incorrect. MLOps is a methodology to improve machine learning processes. It's not a product and it's beyond the expertise of our salesperson."
-  - content: "A manufacturing company that produces machinery wants to develop a solution to extract information from their internal technical documentation. The Chief Digital Officer wants to solve the problem with OpenAI's generative AI. Which option would you recommend for this use case?"
+  - content: "A manufacturing company that produces machinery wants to develop a solution to extract information from their internal technical documentation. The Chief Digital Officer wants to solve the problem with OpenAI's generative AI. Which option should be recommended for this use case?"
     choices:
     - content: "OpenAI's API because it's better to consume the model from its source. This way, you benefit from most up-to-date AI."
       isCorrect: false

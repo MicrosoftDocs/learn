@@ -25,4 +25,4 @@ Now that you have reviewed this module, you should:
 
 ## References
 
-[(1) Microsoft WorkLab, “Will AI Fix Work,” 2023.](https://www.microsoft.com/en-us/worklab/work-trend-index/will-ai-fix-work)
+[(1) Microsoft WorkLab, “Will AI Fix Work,” 2023.](https://www.microsoft.com/worklab/work-trend-index/will-ai-fix-work)

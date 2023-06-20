@@ -11,18 +11,18 @@ These solutions are often delivered as SaaS AI solutions, which deliver fast and
 
 **Microsoft Dynamics 365** is designed with this goal: improve the performance at certain key business functions and sectors. 
 
-![Graph depicting the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)
+![A screenshot of a graph showing the eight sectors covered by Microsoft Dynamics 365.](../media/4-use-ai-embedded-everyday-applications-1.png)
 
-Here are some examples of powerful scenarios where AI is already having a proven impact:
+Here are some examples of powerful scenarios where AI is already having proven, beneficial effects:
 
-* **Sales:** Sellers can sell smarter with embedded AI-powered insights fueled by customer data.
-* **Supply chain:** Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory. 
-* **Human Resources:** Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.
-* **Finance:** Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.
-* **Marketing:** AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.
-* **Commerce:** Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.
-* **Customer service:** Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.
-* **Project management:** Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.
+* **Sales**: Sellers can sell smarter with embedded AI-powered insights fueled by customer data.
+* **Supply chain**: Business users can use AI for predictive maintenance in factories. AI is also helpful to optimize inventory. 
+* **Human Resources**: Workforce data can be transformed into actionable insights and next-best-action guidance. AI can also be used to automate HR tasks for employees, making procedures more agile.
+* **Finance**: Analysts are provided a range of AI-powered tools for real-time reporting, embedded analytics, and insights. For example, AI can predict when or whether their customers will pay their invoices.
+* **Marketing**: AI-powered customer insights give marketing users a single view of their customers to optimize engagements and discover insights that drive personalized and meaningful experiences.
+* **Commerce**: Commerce users can use AI insights to help them more effectively manage cashflows using payment recommendations, intelligent budget proposals, and cashflow forecasting. They can even use AI to better protect their e-commerce business—and their customers—against fraud.
+* **Customer service**: Customer service users can gain insights to address increasing volumes and manage efficient agent distribution. They can also create virtual agents that identify and resolve customer issues quickly—all without having to write code.
+* **Project management**: Embedded analytics can provide insights based on project sales and financial data. The solution proposes an AI-powered scheduling to anticipate needs. Operations users gain insights into how their customers use their products and services.
 
 With business applications that use AI as a core ingredient, users can bring together relationships, processes, and data across applications to gain increased visibility and control.
 
@@ -61,16 +61,16 @@ Breakthroughs in AI technologies have also enabled the transformation of persona
 
 To help prepare more engaging presentations, users can take advantage of intelligent suggestions for slide designs. Copilot also incorporates generative AI to create custom images for their slides. Users can rehearse the presentation and receive real-time feedback to improve pacing and limit filler words or culturally insensitive phrases.
 
-Writers can take advantage of intelligent suggestions to not only correct spelling and grammar but also rephrase entire sentences for more impact or clarity. Copilot goes further and can write summaries, brainstorm ideas, organize ideas into key themes, or fully rewrite content.
+Writers can take advantage of intelligent suggestions to not only correct spelling and grammar but also rephrase entire sentences for more effect or clarity. Copilot goes further and can write summaries, brainstorm ideas, organize ideas into key themes, or fully rewrite content.
 
 ### Everyday AI for search
 
 Harnessing information has become the key to almost everything—from improving productivity to understanding customers and much more. However, data is often siloed and hard to find.
 
-AI-powered search experiences like Microsoft Search can help business users wade through this data to uncover more impactful insights and make better data-driven decisions. Microsoft Search enables users to search for people, files, sites, and more across their organizational data and public web data—all from within the Microsoft 365 products they’re already working in. Results are even personalized to each user to ensure relevance. This feature is improved with Copilot.
+AI-powered search experiences like Microsoft Search can help business users wade through this data to uncover more effective insights and make better data-driven decisions. Microsoft Search enables users to search for people, files, sites, and more across their organizational data and public web data—all from within the Microsoft 365 products they’re already working in. Results are even personalized to each user to ensure relevance. This feature is improved with Copilot.
 
 > [!NOTE] 
-> 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>>
+> 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
 

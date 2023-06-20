@@ -12,13 +12,13 @@ Azure OpenAI Service is a Microsoft product that enables users to leverage OpenA
 
 The models included in Azure OpenAI Service focus on generative AI. That is, they allow users to automatically create content that credibly looks human-made. For example:
 
-* **Language:** GPT models that understand and produce natural language. They can extract meaning from the users' prompts, including nuances, at human-like level. Thanks to this ability, they can engage in a believable and satisfactory conversation. They're also good summarizing, solving questions, and writing emails, copies, code, or other documents when given clear instructions.
+* **Language**: GPT models that understand and produce natural language. They can extract meaning from the users' prompts, including nuances, at human-like level. Thanks to this ability, they can engage in a believable and satisfactory conversation. They're also good summarizing, solving questions, and writing emails, copies, code, or other documents when given clear instructions.
 
-* **Image:** DALL-E models that create visuals. They translate the user's prompt into an image. These models can be used to generate all kinds of art: realistic photographs, illustrations, logos, sketches, and so on. DALL-E successfully recreates styles when asked to.
+* **Image**: DALL-E models that create visuals. They translate the user's prompt into an image. These models can be used to generate all kinds of art: realistic photographs, illustrations, logos, sketches, and so on. DALL-E successfully recreates styles when asked to.
 
-* **Code:** Codex models are designed to translate user's prompts into working programing code. Developers can use them to create code snippets and speed up their performance. Codex provides results in several programming languages. It's technology behind GitHub Copilot.
+* **Code**: Codex models are designed to translate user's prompts into working programing code. Developers can use them to create code snippets and speed up their performance. Codex provides results in several programming languages. It's technology behind GitHub Copilot.
 
-* **More complex models:** Embeddings models provide the ground for data scientists to build more complex AI models. They analyze texts and create an abstract mapping of their meaning. These mappings help AI experts find similarities in texts. Embeddings models are key in scenarios involving searches, recommendations, or anomalies.
+* **More complex models**: Embeddings models provide the ground for data scientists to build more complex AI models. They analyze texts and create an abstract mapping of their meaning. These mappings help AI experts find similarities in texts. Embeddings models are key in scenarios involving searches, recommendations, or anomalies.
 
 OpenAI models evolve continuously, and so does Azure OpenAI Service. You can check which specific versions of these models are available in the [Azure OpenAI Service documentation](/azure/cognitive-services/openai/concepts/models).
 
@@ -26,13 +26,13 @@ OpenAI models evolve continuously, and so does Azure OpenAI Service. You can che
 
 Many business leaders aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the Azure IoenAI Service:
 
-* **Same models:** Given a specific model and version, Azure delivers exactly the same as the API. Azure users aren't missing any updates. The AI is just as good.
+* **Same models**: Given a specific model and version, Azure delivers exactly the same as the API. Azure users aren't missing any updates. The AI is just as good.
 
-* **Privacy:** OpenAI's API is public. This fact implies that all data sent to the API may be used to improve the models. If your use case involves private, confidential information, using the API may not be the best option. In contrast, when using Azure OpenAI Service, Microsoft hosts the models within their Azure infrastructure. No customer data is sent to OpenAI for improving the models, since it all remains in Azure.
+* **Privacy**: OpenAI's API is public. This fact implies that all data sent to the API may be used to improve the models. If your use case involves private, confidential information, using the API may not be the best option. In contrast, when using Azure OpenAI Service, Microsoft hosts the models within their Azure infrastructure. No customer data is sent to OpenAI for improving the models, since it all remains in Azure.
 
-* **Security:** Microsoft Azure is a dependable, robust, and trustworthy platform. Azure developers have extensive experience securing the infrastructure for public and private organizations from all around the world to work safely in Azure. Azure OpenAI Service is built upon this expertise. It delivers encryption, private networking, and a system of regional availability to ensure your business blooms safe and uninterrupted.
+* **Security**: Microsoft Azure is a dependable, robust, and trustworthy platform. Azure developers have extensive experience securing the infrastructure for public and private organizations from all around the world to work safely in Azure. Azure OpenAI Service is built upon this expertise. It delivers encryption, private networking, and a system of regional availability to ensure your business blooms safe and uninterrupted.
 
-* **Responsible AI:** The Microsoft ethical commitment guides how OpenAI models are offered in Azure. Microsoft is doing extensive research and work to identify, measure, mitigate, and operate to deal with all potential harms coming from this generative AI. For example, developers prevent misuse with a system of additional instructions that overrule specific prompts. There's also a content filter system that ensures the models don't deliver any potentially harmful content.
+* **Responsible AI**: The Microsoft ethical commitment guides how OpenAI models are offered in Azure. Microsoft is doing extensive research and work to identify, measure, mitigate, and operate to deal with all potential harms coming from this generative AI. For example, developers prevent misuse with a system of additional instructions that overrule specific prompts. There's also a content filter system that ensures the models don't deliver any potentially harmful content.
 
 In conclusion, Azure OpenAI Service combines the best of OpenAI and of Microsoft Azure. On one hand, it delivers the innovative OpenAI models. On the other hand, it has all the benefits of being hosted in the reliable, business-friendly environment that is Azure.
 

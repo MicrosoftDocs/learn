@@ -7,7 +7,7 @@ Microsoft Power Platform is a low-code or no-code set of services designed to si
 
 The Power Platform portfolio includes five different products: Power BI, Power Apps, Power Automate, Power Virtual Agents, and Power Pages. It also offers three additional tools: AI Builder, Microsoft Dataverse, and Connectors. Let's see what each of them can do for you.
 
-![Graph depicting the products included in Microsoft Power Platform.](../media/5-discover-how-microsoft-power-platform-1.png)
+![A screenshot of a graph showing the products included in Microsoft Power Platform.](../media/5-discover-how-microsoft-power-platform-1.png)
 
 ## What can you do with Microsoft Power Platform?
 
@@ -51,12 +51,12 @@ Power Platform is a suite of powerful tools designed to help businesses create a
 
 There are two main ways in which Power Platform creates business value for organizations:
 
-* **Reducing development costs:** It provides the building blocks for teams to create custom solutions in much less time than required when starting by scratch. Teams can build custom apps in just a matter of days or weeks.
-* **Enabling more agile, scalable development:** The low-code philosophy is central to Power Platform. It allows for faster, more agile solution development. It empowers citizen developers, that is, employees with less coding expertise, to provide working solutions to end users. Professional developers can iterate on this version for further improvement. This collaborative development approach implies solutions are available to end users at an earlier stage and are less costly. This structure is easy to escalate by adding custom functionality.
+* **Reducing development costs**: It provides the building blocks for teams to create custom solutions in much less time than required when starting by scratch. Teams can build custom apps in just a matter of days or weeks.
+* **Enabling more agile, scalable development**: The low-code philosophy is central to Power Platform. It allows for faster, more agile solution development. It empowers citizen developers, that is, employees with less coding expertise, to provide working solutions to end users. Professional developers can iterate on this version for further improvement. This collaborative development approach implies solutions are available to end users at an earlier stage and are less costly. This structure is easy to escalate by adding custom functionality.
 
 The diagram shows how this fusion development approach works.
 
-![Graph depicting the citizen developer creating apps, the professional developer adding custom functionality, and end users giving feedback.](../media/5-discover-how-microsoft-power-platform-2.png)
+![A screenshot of a graph showing the citizen developer creating apps, the professional developer adding custom functionality, and end users giving feedback.](../media/5-discover-how-microsoft-power-platform-2.png)
 
 ### Use Microsoft Power Platform to build a smart inventory app
 
