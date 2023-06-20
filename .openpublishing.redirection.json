@@ -22966,22 +22966,22 @@
   },
   {
     "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
-    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/",
+    "redirect_document_id": false
+  },
+{
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/5-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines",
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
-    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/5-knowledge-check",
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
-    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
-    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/6-summary",
     "redirect_document_id": false
   },
   {
