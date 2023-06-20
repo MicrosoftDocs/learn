@@ -5,6 +5,7 @@ Now that you have reviewed this module, you should be able to:
  -  Manage external user accounts in Azure AD
  -  Configure identity providers (social and SAML/WS-fed)
  -  Explore Microsoft Entra Verified ID
+ 
 
 ## Resources
 
