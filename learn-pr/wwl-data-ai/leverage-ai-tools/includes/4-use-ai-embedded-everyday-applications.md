@@ -51,7 +51,6 @@ Nowadays, workers' routines are too often interrupted by distractions, calls, an
 For instance, the Briefing email from Cortana compiles valuable information about upcoming meetings and outstanding tasks in Outlook. It also enables employees to set aside daily “focus time” to work uninterrupted with notifications silenced. In Outlook mobile, employees can use natural language to ask Cortana to read out their new emails and share any changes to their schedule—so they can catch up even when their hands are busy with other things.
 
 > [!NOTE] 
-
 > 68 percent of workers complain of their lack of uninterrupted focus time during their working routines.<sup>1</sup>
 
 Copilot adds more features for focus to make sure users don't forget any important issues. In OneNote, for example, it identifies unanswered questions all across existing notes and grouping them in one centralized location. In Teams, Copilot can extract action points from the conversation in real time.
@@ -71,7 +70,6 @@ Harnessing information has become the key to almost everything—from improving 
 AI-powered search experiences like Microsoft Search can help business users wade through this data to uncover more impactful insights and make better data-driven decisions. Microsoft Search enables users to search for people, files, sites, and more across their organizational data and public web data—all from within the Microsoft 365 products they’re already working in. Results are even personalized to each user to ensure relevance. This feature is improved with Copilot.
 
 > [!NOTE] 
-
 > 62 percent of employees consider they spend too much time struggling to find the information they need.<sup>1</sup>>
 
 Now is the time to empower your employees with the right AI tools to amplify their capabilities and achieve more. 
