@@ -24,7 +24,7 @@ This high-level overview of Microsoft Purview helps you discover the key aspects
 
 * Manage and govern your data across various platforms and locations.
 * Map out your data landscape.
-* Classify sensitive data.
+* Classify sensitive data. 
 * Empower customers to find trustworthy data. 
 
 ## What is the main goal?
