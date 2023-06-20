@@ -20,5 +20,5 @@ In this module, you'll:
 
 ## Prerequisites
 
-- Experience with Azure, such as deploying and managing virtual machine resources.
+- Experience with Azure, such as deploying and managing virtual machine resources
 - Basic knowledge of how multi-tenant VMs share a single physical host’s resources
