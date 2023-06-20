@@ -27,7 +27,7 @@ Azure Migrate is suitable for larger-scale migrations and scenarios.
 
 The Database Migration Assistant (DMA) is a standalone application that helps migrating or upgrading SQL Server databases. It automates the process of checking for compatibility issues and offers recommendations. DMA connects to the source and target servers, identifying breaking changes, deprecated features, and assessing new features for improved performance. It supports both on-premises SQL Server host migrations and migrations to Azure SQL.
 
-:::image type="content" border="false" source="../media/2-dma-start.png" alt-text="Screenshot of the Data Migration Assistant start page.":::
+:::image type="content" border="false" source="../media/2-data-migration-assistant-start.png" alt-text="Screenshot of the Data Migration Assistant start page.":::
 
 Although DMA supports Azure SQL Managed Instance and SQL Server on Azure Virtual Machines as target options, it's best suited for organizations migrating their databases to Azure SQL Database or SQL Server.
 

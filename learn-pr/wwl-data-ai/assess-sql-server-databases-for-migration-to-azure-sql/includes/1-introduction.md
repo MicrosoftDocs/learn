@@ -7,7 +7,7 @@ Throughout this module, we're using an example scenario to explain key data migr
 
 You've been hired as a senior database administrator at a global retailer company and you're working with consultants and architects to initiate a data platform modernization project that meets the organization's technical and business requirements. 
 
-The organization has a large number of different databases that underpin business-critical functions such as Customer Relationship Management (CRM), stock management, distribution, and human resources. As the company has grown by acquisition, new SQL Server-based instances and databases have been brought into the responsibility of an unified IT department. The company now runs many on-premises databases on different versions across multiple servers. You'd like to standardize and modernize their data estate but you don't know how much administrative and development effort it requires.
+The organization has a large number of different databases that underpin business-critical functions such as Customer Relationship Management (CRM), stock management, distribution, and human resources. As the company has grown by acquisition, new SQL Server-based instances and databases have been brought into the responsibility of a unified IT department. The company now runs many on-premises databases on different versions across multiple servers. You'd like to standardize and modernize their data estate but you don't know how much administrative and development effort it requires.
 
 Your main responsibility is to identify what is needed and ultimately migrate several SQL Server databases from on-premises servers to Azure with as minimum disruption as possible.
 
