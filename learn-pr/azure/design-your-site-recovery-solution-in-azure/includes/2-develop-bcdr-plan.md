@@ -2,7 +2,7 @@ You need to develop a business continuity and disaster recovery (BCDR) plan to d
 
 Your organization wants you to design a site recovery strategy for your applications. First, you should understand the specific requirements required to build site recovery for your hybrid environment. You must also understand what tools are available in Azure to help you.
 
-In this unit, you'll learn how to identify key infrastructures, recovery time objectives, and recovery point objectives. You'll learn what requirements might be relevant with any Platform-as-a-Service (PaaS) services you might be using. You also learn how to plan for backup and disaster recovery. Finally, you discover some of the Azure features that help you to build a site recovery solution.
+In this unit, you learn how to identify key infrastructures, recovery time objectives, and recovery point objectives. You learn what requirements might be relevant with any Platform-as-a-Service (PaaS) services you might be using. You also learn how to plan for backup and disaster recovery. Finally, you discover some of the Azure features that help you to build a site recovery solution.
 
 ### Business continuity and disaster recovery
 
