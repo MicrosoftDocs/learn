@@ -14,46 +14,44 @@ To build quantum computers, we need full access to the controllable quantum syst
 
 These five criteria are often known as the *DiVincenzo* criteria for quantum computation.
 
-Building devices that meet these five criteria is one of the most demanding engineering challenges ever faced by humankind. However, recent years have seen astounding advances in condensed matter physics and quantum optics. These advances are allowing companies and universities to build the first working versions of quantum computers. Microsoft is partnering with some of the best-in-class quantum computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
+Building devices that meet these five criteria is one of the most demanding engineering challenges ever faced by humankind. However, recent years have seen astounding advances in condensed matter physics and quantum optics. These advances are allowing companies and universities to build the first working versions of quantum computers. Microsoft is partnering with some of the best-in-class quantum-computer manufacturers around the world to give you access to the latest quantum computing solutions through Azure Quantum.
 
 Here's an overview of the different technologies used to create quantum computers, accessible via Azure Quantum.
 
-### Trapped ion quantum computers
+### Trapped-ion quantum computers
 
-Trapped ion quantum computers use *ions* (electrically charged atoms) suspended in an electromagnetic field in a vacuum as the basic building block.
+Trapped-ion quantum computers use *ions* (electrically charged atoms) suspended in an electromagnetic field in a vacuum as the basic building block.
 
-:::image type="content" source="../media/2-trapped-ion-quantum-computer.png" alt-text="Diagram of trapped-ion-quantum-computer." border="false":::
+:::image type="content" source="../media/2-trapped-ion-quantum-computer.png" alt-text="Diagram of trapped-ion-quantum computer." border="false":::
 
 In particular, these computers use chains of trapped ions and each ion represents a qubit. They use lasers to induce controlled vibrations on the chain to accomplish operations in the qubit states. The qubit states are stored in the internal states of each ion. The qubit states are often stored in two hyperfine levels of the ion.
 
 > [!NOTE]
 > The hyperfine levels of an atom arise from the different possible configurations of the spin orientations of the electron and the nucleus. Generally, the state with the lower energy is associated with the state $|0\rangle$ and the state with higher energy is associated with the qubit state $|1\rangle$.
 
-These computers use lasers and electromagnetic pulses to cause transitions in the internal states of the ions and to modify the vibrational motion of the ion chain. By carefully combining transformations of the
-vibrational motion of the ion chain and individual ion transitions, it's possible to get qubits entangled and apply a universal set of quantum operations.
+These computers use lasers and electromagnetic pulses to cause transitions in the internal states of the ions and to modify the vibrational motion of the ion chain. By carefully combining transformations of the vibrational motion of the ion chain and individual ion transitions, it's possible to get qubits entangled and apply a universal set of quantum operations.
 
-Azure Quantum provides access to trapped ion quantum devices through our partners, IonQ and Quantinuum. In this module, you'll submit quantum operations to this kind of devices.
+Azure Quantum provides access to trapped-ion quantum devices through our partners, IonQ and Quantinuum. In this module, you'll submit quantum operations to this kind of device.
 
 ### Superconducting quantum computers
 
 Superconducting quantum computers are based on superconducting electronic circuits. Classical computers use circuits of transistors to represent bits and perform classical computations. Superconducting quantum computers use *transmons* to represent qubits and perform quantum operations.
 
-If certain materials are cooled below a critical temperature, their electric resistance drops to zero. These materials are called *superconductors*. By linking two superconductors with a thin insulating barrier, you can build *transmons*. A transmon is an electronic device that possesses quantum states in superposition, with two of the states used as |0> and |1>. Transmons can be considered analogous to transistors. In
-transistors, you use junctions of semiconductors to represent controllable bits. In transmons, you use junctions of superconductors to represent controllable qubits.
+If certain materials are cooled below a critical temperature, their electric resistance drops to zero. These materials are called *superconductors*. By linking two superconductors with a thin insulating barrier, you can build *transmons*. A transmon is an electronic device that possesses quantum states in superposition, with two of the states used as |0> and |1>. Transmons can be considered analogous to transistors. In transistors, you use junctions of semiconductors to represent controllable bits. In transmons, you use junctions of superconductors to represent controllable qubits.
 
 :::image type="content" source="../media/2-transmon-vs-transistor.png" alt-text="Diagram comparing a transmon with a transistor. The transmon can be prepared in a quantum superposition while the transistor only admits discrete classical levels." border="false":::
 
 There are other variants of superconducting circuits that don't use transmons but similar components. However, transmons are the key component in most cloud-available superconducting quantum computers.
 
-Since superconducting properties appear at very low temperatures and higher temperatures imply more noise, these quantum computers work at very low temperatures. This is why, with the aid of a cryostat, the superconducting chip is cooled to near absolute zero.
+Because superconducting properties appear at very low temperatures and higher temperatures imply more noise, these quantum computers work at very low temperatures. This is why, with the aid of a cryostat, the superconducting chip is cooled to near absolute zero.
 
 :::image type="content" source="../media/2-superconducting-quantum-computer.png" alt-text="Simplified diagram of the cryostat of a superconducting quantum computer." border="false":::
 
 ### Other types of quantum computers
 
-Trapped ion and superconducting quantum computers aren't the only options for quantum computing, although they're implemented the most in industry so far. Here are several other approaches that are currently subjected to active research:
+Trapped-ion and superconducting quantum computers aren't the only options for quantum computing, although they're implemented the most in industry so far. Here are several other approaches that are currently subjected to active research:
 
-- **Quantum dot computers**: Quantum dots are small clusters of semiconductor atoms that behave like macroscopic atoms and can be prepared into superposed states.
+- **Quantum-dot computers**: Quantum dots are small clusters of semiconductor atoms that behave like macroscopic atoms and can be prepared into superposed states.
 - **Photonic quantum computers**: Polarized photons used to represent qubits and photon waveguides to implement quantum operations.
 - **Topological quantum computers**: A new type of particles called *anyons*, first proposed theoretically. Anyons are now in active research and development to create qubits resilient to noise.
 

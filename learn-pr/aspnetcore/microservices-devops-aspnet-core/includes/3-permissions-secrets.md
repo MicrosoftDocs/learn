@@ -95,7 +95,7 @@ Complete the following steps to securely store the sensitive information as envi
 
 1. In your forked GitHub repository, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets and variables":::** > **:::no-loc text="Actions":::**.
 1. On the **:::no-loc text="Actions secrets and variables":::** page, select **:::no-loc text="New repository secret":::**.
-1. On the **:::no-loc text="New secret":::** page, under **:::no-loc text="Name":::** enter *AZURE_CREDENTIALS*, and under **:::no-loc text="Secret":::** enter the JSON output you copied from the terminal.
+1. On the **:::no-loc text="New secret":::** page, under **:::no-loc text="Name":::** enter *AZURE_CREDENTIALS*, and under **:::no-loc text="Secret":::**, enter the JSON output you copied from the terminal.
 
    The settings should look similar to the following screenshot:
 

@@ -112,12 +112,12 @@ Let's modify the `PageModel` class for the Pizza List page to retrieve the list 
 
     - A private readonly `PizzaService` named `_service` is created. This variable will hold a reference to a `PizzaService` object.
         - The `readonly` keyword indicates that the value of the `_service` variable can't be changed after it's set in the constructor.
-    - Defines a `PizzaList` property that will hold the list of pizzas.
+    - A `PizzaList` property is defined to hold the list of pizzas.
         - The `IList<Pizza>` type indicates that the `PizzaList` property will hold a list of `Pizza` objects.
         - `PizzaList` is initialized to `default!` to indicate to the compiler that it will be initialized later, so null safety checks aren't required.
     - The constructor accepts a `PizzaService` object.
         - The `PizzaService` object is provided by dependency injection.
-    - Defines an `OnGet` method that retrieves the list of pizzas from the `PizzaService` object and stores it in the `PizzaList` property.
+    - An `OnGet` method is defined to retrieve the list of pizzas from the `PizzaService` object and store it in the `PizzaList` property.
 
     > [!TIP]
     > If you need help understanding null safety, see [Null safety in C#](/training/modules/csharp-null-safety/).

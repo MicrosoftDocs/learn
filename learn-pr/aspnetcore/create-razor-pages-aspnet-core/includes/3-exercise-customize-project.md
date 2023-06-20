@@ -3,7 +3,7 @@ Your team has split up the work for the pizza inventory management app. Your tea
 
 ## Obtain the project files
 
-If you're using GitHub Codespaces, just open the repository in the browser, select **Code**, and then create a new codespace on the `main` branch.
+If you're using GitHub Codespaces, just [open the repository in the browser](https://github.com/MicrosoftDocs/mslearn-create-razor-pages-aspnet-core), select **Code**, and then create a new codespace on the `main` branch.
 
 If you aren't using GitHub Codespaces, obtain the project files and open them in Visual Studio Code with the following steps:
 
@@ -21,7 +21,7 @@ If you aren't using GitHub Codespaces, obtain the project files and open them in
     ```
 
 > [!TIP]
-> If you've got a compatible container runtime installed, you can use the [Remote - Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to open the project in a container. This will ensure you have the correct version of .NET and other dependencies installed.
+> If you've got a compatible container runtime installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to open the repository in a container with the tools preinstalled.
 
 ## Review your teammates' work
 

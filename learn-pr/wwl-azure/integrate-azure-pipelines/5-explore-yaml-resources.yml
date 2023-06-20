@@ -4,11 +4,10 @@ title: Explore YAML resources
 metadata:
   title: Explore YAML resources
   description: "Explore YAML resources"
-  ms.date: 04/28/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/5-explore-yaml-resources.md)]

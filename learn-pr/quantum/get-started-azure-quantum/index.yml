@@ -3,7 +3,7 @@ uid: learn.quantum.get-started-azure-quantum
 metadata:
   title: Get started with Azure Quantum
   description: Learn how to get started with Azure Quantum and create an Azure Quantum workspace.
-  ms.date: 01/01/2021
+  ms.date: 05/23/2023
   author: aviviano
   ms.author: amvivian
   ms.topic: interactive-tutorial

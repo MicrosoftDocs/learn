@@ -4,12 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/04/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
   [!include[](includes/14-knowledge-check.md)]
@@ -20,13 +19,13 @@ quiz:
     choices:
     - content: "Configure the Bastion service"
       isCorrect: true
-      explanation: "Configure the Bastion service. The Azure Bastion service provides secure and seamless RDP and SSH connectivity to your virtual machines directly in the Azure portal over SSL. When you connect via Azure Bastion, your virtual machines don't need a public IP address."
+      explanation: "Configure the Bastion service. The Azure Bastion service provides secure and seamless RDP and SSH connectivity to your virtual machines directly in the Azure portal over SSL. When you connect via Azure Bastion, your virtual machines do not need a public IP address."
     - content: "Configure a Guest configuration on the virtual machine"
       isCorrect: false
-      explanation: "A guest configuration wouldn't be a secure solution."
+      explanation: "A guest configuration would not be a secure solution."
     - content: "Create a custom script extension"
       isCorrect: false
-      explanation: "Custom extensions wouldn't allow access to the Linux virtual machine."
+      explanation: "Custom extensions would not allow access to the Linux virtual machine."
   - content: "What type of disk encryption is used for Linux disks?"
     choices:
     - content: "BitLocker"
@@ -38,7 +37,7 @@ quiz:
     - content: "FileVault"
       isCorrect: false
       explanation: "FireVault is for encrypting Mac machines."
-  - content: "A company with both Azure and on-premises virtual machines needs to ensure virtual machines are up to date with security patches. Update Management is the Azure tool they'll use. Which of the following would enable the company to assess the status of available updates and manage the installation of required updates on virtual machines?"
+  - content: "A company with both Azure and on-premises virtual machines needs to ensure virtual machines are up to date with security patches. Update Management is the Azure tool they will use. Which of the following would enable the company to assess the status of available updates and manage the installation of required updates on virtual machines?"
     choices:
     - content: "The Microsoft Monitoring Agent must be installed for both Windows and Linux virtual machines on-premises."
       isCorrect: false
@@ -60,11 +59,11 @@ quiz:
     - content: "System updates should be installed on your machines."
       isCorrect: false
       explanation: "System updates are a high-severity warning."
-  - content: "Which attacks will using a Privileged access workstation protect companies from?"
+  - content: "Which attacks will using a Privileged access workstations protect companies from?"
     choices:
     - content: "Protects against attackers who have gained administrative access."
       isCorrect: false
-      explanation: "Protects against attackers who have gained administrative access. PAWs can't protect against an attacker that has already gained access."
+      explanation: "Protects against attackers who have gained administrative access. PAWs cannot protect against an attacker that has already gained access."
     - content: "Protects against server-based phishing attacks, various impersonation attacks, and credential theft attacks such as keystroke logging."
       isCorrect: false
       explanation: "Using a PAW would help block phishing and other types of attacks on the host."

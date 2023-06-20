@@ -1,4 +1,4 @@
-In this exercise, you'll create a basic to-do list component inside our Blazor app.
+In this exercise, create a basic to-do list component inside our Blazor app.
 
 ## Create the ToDo page
 
@@ -41,7 +41,7 @@ In this exercise, you'll create a basic to-do list component inside our Blazor a
 
 ## Add the Todo component to the navigation bar
 
-The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the component URL is loaded by the app.
+The `NavMenu` component is used in the app's layout. Layouts are components that allow you to avoid duplication of content in an app. The `NavLink` component provides a cue in the app's UI when the app loads the component URL.
 
 In the `<nav>...</nav>` section of the NavMenu component, add the following new `<div>...</div>` and `NavLink` component for the `Todo` component.
 
@@ -80,11 +80,15 @@ public class TodoItem
 }
 ```
 
-You may need to stop and restart the `dotnet watch run` process if it does not detect the new `TodoItem` file and rebuild your project.
+::: zone pivot="vscode"
+
+You may need to stop and restart the `dotnet watch run` process if it doesn't detect the new `TodoItem` file and rebuild your project.
+
+::: zone-end
 
 ## Bind a list of TodoItems
 
-You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. To accomplish this, make the following changes in the `Pages/Todo.razor` file:
+You're now ready to bind a collection of `TodoItem` objects to HTML in Blazor. To bind these objects, make the following changes in the `Pages/Todo.razor` file:
 
 - Add a field for the todo items in the `@code` block. The `Todo` component uses this field to maintain the state of the todo list.
 - Add unordered list markup and a `foreach` loop to render each todo item as a list item (`<li>`).

@@ -3,7 +3,7 @@ uid: learn.wwl.introduction-to-continuous-delivery
 metadata:
   title: Introduction to continuous delivery
   description: "Introduction to continuous delivery"
-  ms.date: 07/27/2022
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *   Identify project opportunities to apply CD
 prerequisites: |
   None
-iconUrl: /training/achievements/1-introduction-to-continuous-delivery.svg
+iconUrl: /learn/achievements/1-introduction-to-continuous-delivery.svg
 levels:
 - advanced
 roles:

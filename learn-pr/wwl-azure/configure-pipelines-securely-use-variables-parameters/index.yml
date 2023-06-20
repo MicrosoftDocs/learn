@@ -54,6 +54,7 @@ units:
 - learn.wwl.configure-pipelines-securely-use-variables-parameters.move-parameters-yaml-file
 - learn.wwl.configure-pipelines-securely-use-variables-parameters.limit-queue-time-variables
 - learn.wwl.configure-pipelines-securely-use-variables-parameters.validate-mandatory-variables
+- learn.wwl.configure-pipelines-securely-use-variables-parameters.lab-configure-pipelines-securely-use-variables-parameters
 - learn.wwl.configure-pipelines-securely-use-variables-parameters.knowledge-check
 - learn.wwl.configure-pipelines-securely-use-variables-parameters.summary
 badge:

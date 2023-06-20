@@ -13,7 +13,7 @@ Jenkins, Azure DevOps, and Atlassian have an extensive marketplace where other t
 
 For more information, see also:
 
- -  [Task types &amp; usage](/azure/devops/pipelines/process/tasks)
+ -  [Task types & usage](/azure/devops/pipelines/process/tasks)
  -  [Tasks for Azure](https://github.com/microsoft/azure-pipelines-tasks)
  -  [Atlassian marketplace](https://marketplace.atlassian.com/addons/app/bamboo/trending)
  -  [Jenkins Plugins](https://plugins.jenkins.io/)

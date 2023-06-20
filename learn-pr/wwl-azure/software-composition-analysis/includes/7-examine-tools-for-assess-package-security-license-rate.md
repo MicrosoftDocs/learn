@@ -12,39 +12,11 @@ During the build process, the tool can scan the packages by the build, giving in
 
 While running a delivery pipeline, there's tooling available to do security scans on packages, components, and source code. Often such tooling will use the build artifacts during the build process and do scans. The tooling can either work on a local artifact repository or the intermediary build output. Some examples for each are products like:
 
-:::row:::
-  :::column:::
-    **Tool**
-  :::column-end:::
-  :::column:::
-    **Type**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Artifactory
-  :::column-end:::
-  :::column:::
-    Artifact repository
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    SonarQube
-  :::column-end:::
-  :::column:::
-    A static code analysis tool
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Mend (Bolt)
-  :::column-end:::
-  :::column:::
-    Build scanning.
-  :::column-end:::
-:::row-end:::
-
+| **Tool**    | **Type**                    |
+| ----------- | --------------------------- |
+| Artifactory | Artifact repository         |
+| SonarQube   | A static code analysis tool |
+| Mend (Bolt) | Build scanning.             |
 
 ## Configure pipeline
 

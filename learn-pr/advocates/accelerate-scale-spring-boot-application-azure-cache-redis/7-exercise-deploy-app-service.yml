@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.accelerate-scale-spring-boot-application-azure-cache-redis.exercise-deploy-app-service
-title: Exercise - Deploy a Spring Boot and Redis application to Azure App Service
+title: Exercise - Deploy the Spring Boot Redis application to Azure
 metadata:
-  title: Create an Azure App Service instance, and deploy to production in the cloud a Spring Boot and Redis application
-  description: In this unit, we create an Azure App Service instance, configure our Spring Boot project to use it, and test the final production application in the cloud.
+  title: Exercise - Deploy the Spring Boot Redis application to Azure
+  description: Deploy the Spring Boot application to Azure App Service in the cloud, and use Azure Cache for Redis clustered functionality.
   author: judubois
   ms.author: judubois
   ms.date: 01/20/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03112021
 durationInMinutes: 5

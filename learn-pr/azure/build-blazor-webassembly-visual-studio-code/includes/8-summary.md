@@ -1,6 +1,6 @@
 In this module, you set up your development environment to create and build Blazor web apps. You then:
 
-- Re-used a Razor component.
+- Reused a Razor component.
 - Added HTML and C# to the Razor file.
 - Used binding to sync user input to the todo list logic.
 
