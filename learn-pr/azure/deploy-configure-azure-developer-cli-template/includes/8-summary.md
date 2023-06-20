@@ -10,6 +10,7 @@ The goal of this module was to help you learn how to deploy Azure Developer CLI 
 These are all common tasks when working with `azd` and provide an introduction to how the tool is used in practice. `azd` can provide significant value to most apps that require streamlined provisioning and deployment to Azure in a repeatable, distributable format.
 
 ## References
+
 - [What is the Azure Developer CLI?](/azure/developer/azure-developer-cli/overview)
 - [Select and run your first template](/azure/developer/azure-developer-cli/azd-templates?tabs=csharp)
 - [Make your project compatible with `azd`](/azure/developer/azure-developer-cli/make-azd-compatible?pivots=azd-create)

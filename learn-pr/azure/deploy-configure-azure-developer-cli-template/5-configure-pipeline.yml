@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.deploy-configure-azure-developer-cli-templates.pipeline-configuration
+uid: learn.azure.deploy-configure-azure-developer-cli-templates.configure-pipeline
 title: Configure a CI/CD pipeline for your template
 metadata:
   unitType: learning-content
