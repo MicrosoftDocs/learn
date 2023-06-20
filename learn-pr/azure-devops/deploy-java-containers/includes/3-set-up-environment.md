@@ -6,7 +6,7 @@ Java is a general purpose programming language that's designed to be flexible in
 
 ## Docker
 
-Docker automates packaging and deploying portable, self-sufficient containers. Docker containers can be run on any Docker host, such as a development machine, a departmental server, an enterprise data center, or in the cloud. Azure provides multiple ways to run container-based applications, including in app services or as part of clusters managed with orchestration technologies like Kubernetes. Learn more at [docker.com](https://www.docker.com/?azure-portal=true).
+Docker automates packaging and deploying portable, self-sufficient containers. Docker containers can run on any Docker host, including a development machine, a departmental server, an enterprise datacenter, or in the cloud. Azure provides multiple ways to run container-based applications, including in app services or as part of clusters managed with orchestration technologies like Kubernetes. Learn more at [docker.com](https://www.docker.com/?azure-portal=true).
 
 > [!NOTE]
 > This module is based on a Java project that's deployed as a Docker container, but the general process also applies to non-Docker Java apps and non-Java Docker apps.

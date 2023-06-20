@@ -16,7 +16,7 @@ To complete this unit, you need the following prerequisites. For more informatio
 
 - To create an Azure DevOps project, you need access to an Azure DevOps organization with [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administration** group.
 
-- To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with a certain number of free minutes available.
+- To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with some number of free minutes available.
 
   To check availability, select **Project settings** from the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 

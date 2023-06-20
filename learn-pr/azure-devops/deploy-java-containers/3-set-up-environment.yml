@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What source changes will typical Java projects require in order to run on Azure?"
+  - content: "What source changes do typical Java projects require in order to run on Azure?"
     choices:
     - content: "Rewriting the app in C# or another .NET language."
       isCorrect: false
