@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
 title: Automate Azure Functions deployments with Azure Pipelines
-summary: Build an Azure DevOps pipeline that deploys to Azure Functions and Azure App Service.
+summary: Create an Azure DevOps pipeline that builds and deploys an ASP.NET web app and an Azure Function app to Azure.
 abstract: |
   After completing this module, you'll be able to:
   - Describe when to use Azure Functions for app development projects
