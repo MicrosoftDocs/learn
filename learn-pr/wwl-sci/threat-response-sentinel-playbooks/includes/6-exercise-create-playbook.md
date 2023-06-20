@@ -1,5 +1,5 @@
 
-As a security engineer working for Contoso, you recently notice that a significant number of alerts are generated when someone deletes a virtual machine. You want to analyze such occurrences in the future and reduce the alerts generated for false positive occurrences.
+As a Security Operations Analyst working for Contoso, you recently notice that a significant number of alerts are generated when someone deletes a virtual machine. You want to analyze such occurrences in the future and reduce the alerts generated for false positive occurrences.
 
 ## Exercise: Threat response using Microsoft Sentinel playbooks
 
@@ -7,14 +7,34 @@ You decide to implement a Microsoft Sentinel playbook to automate responses to a
 
 In this exercise, you'll explore the Microsoft Sentinel playbooks by performing the following tasks:
 
+- Configure Microsoft Sentinel Playbook permissions.
+
 - Create a playbook to automate an action to respond to incidents.
 
-- Create a playbook from the Microsoft Sentinel repository on GitHub.
+- Test your playbook by invoking an incident.
 
 > [!NOTE]
 > You need to have completed the Exercise Setup unit, in order to be able to complete this exercise. If you have not done so, complete it now, and then continue with the exercise steps.
 
-### Task 1: Work with Microsoft Sentinel playbooks
+### Task 1: Configure Microsoft Sentinel Playbook permissions
+
+1. In the Azure portal, search for and select Microsoft Sentinel, and select the previously created Microsoft Sentinel workspace.
+
+1. In the **Microsoft Sentinel** page, on the menu bar, in the **Configuration** section, select **Settings**.
+
+1. In the **Settings** page, select the **Settings** tab and scroll down and expand the **Playbook permissions**
+
+1. In **Playbook permissions**, select the **Configure permissions** button.
+
+    :::image type="content" source="../media/06-sentinel-playbook-permissions.png" alt-text="Screenshot of the Microsoft Sentinel Playbook permissions." border="true":::
+
+1. In the **Manage permissions** page under the **Browse** tab, select the resource group that your Microsoft Sentinel workspace belongs to. Select **Apply**.
+
+    :::image type="content" source="../media/06-manage-permissions.png" alt-text="Screenshot of the Microsoft Sentinel Playbook Manage permissions page." border="true":::
+
+1. You should see the **Finished adding permissions** message.
+
+### Task 2: Work with Microsoft Sentinel playbooks
 
 1. In the Azure portal, search for and select Microsoft Sentinel, and select the previously created Microsoft Sentinel workspace.
 
@@ -101,7 +121,7 @@ In this exercise, you'll explore the Microsoft Sentinel playbooks by performing 
 
 1. When done, choose **Save** from the Logic Apps Designer menu bar, and then close the Logic Apps Designer.
 
-### Task 2: Invoke an incident and review the associated actions
+### Task 3: Invoke an incident and review the associated actions
 
 1. In the Azure portal, in the **Search resources, services, and docs** text box, type **virtual machines**, and then select **Enter**.
 
@@ -116,7 +136,7 @@ In this exercise, you'll explore the Microsoft Sentinel playbooks by performing 
     > [!NOTE]
     > This task creates an incident based on the analytics rule that you created earlier in the exercise setup unit. Incident creation can take up to 15 minutes. Wait for it to complete before proceeding to the next step.
 
-### Task 3: Assign the playbook to an existing incident
+### Task 4: Assign the playbook to an existing incident
 
 1. In the Azure portal, search for and select Microsoft Sentinel, and then select the previously created Microsoft Sentinel workspace.
 
