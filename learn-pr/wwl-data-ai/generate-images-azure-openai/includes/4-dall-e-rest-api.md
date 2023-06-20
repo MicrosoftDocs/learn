@@ -4,15 +4,15 @@ To make a REST call to the service, you need the endpoint and authorization key 
 
 - **prompt**: The description of the image to be generated.
 - **n**: The number of images to be generated.
-- **resolution**: The size of the image(s) to be generated.
+- **size**: The resolution of the image(s) to be generated (*256x256*, *512x512*, or *1024x1024*).
 
-For example, the following JSON could be used to generate an 800 x 800 image of a badger wearing a tuxedo:
+For example, the following JSON could be used to generate an 512 x 512 image of a badger wearing a tuxedo:
 
 ```json
 {
     "prompt": "A badger wearing a tuxedo",
     "n": 1,
-    "resolution": "800x800"
+    "size": "512x512"
 }
 ```
 
