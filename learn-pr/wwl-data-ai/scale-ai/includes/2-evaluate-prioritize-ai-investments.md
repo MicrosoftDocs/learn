@@ -22,10 +22,9 @@ For example: perhaps you manufacture electronic components. While you might manu
 :::column-end:::
 :::column span="2":::
 
-:::image type="complex" source="../media/implement-ai-organization-3.png" alt-text="Illustration of horizon framework.":::
-The y-axis is labeled "Where to invest" and the x-axis is labeled as "Risk and uncertainty" and "Disruptive potential." The graph shows three groups of potential investments, all starting at the top of the y-axis where the x-axis starts. The first group is labeled as "H1" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping one-third of the way along the x-axis. The area contained in this line is light blue. The next group is labeled "H2" and its line is curved, almost circular, running from the top of the y-axis when x equals zero, to stopping two-thirds of the way along the x-axis. The area under the line is a darker blue. The next horizon is labeled "H3" and its line is curved, in a circular fashion, running from the top of the y-axis when x equals zero, to stopping at the end of the x-axis. The area under this line is the darkest shade of blue. 
+> [!div class="mx-imgBorder"]
+> ![Graph depicting the horizon framework, increasing both risk and uncertainty and disruptive potential from H1 to H3.](../media/2-evaluate-prioritize-ai-investments-1.png)
 
-:::image-end:::
 :::column-end:::
 :::row-end:::
 
@@ -47,18 +46,17 @@ For example, the same electronics manufacturer could sell "electronics-as-a-serv
 :::column span="2":::
 Using this framework, you can then map AI scenarios into quadrants. The "tactical" spectrum represents initiatives that are confined to a single team or use case. The "strategic" side represents larger business initiatives that might impact the entire organization.
 
-To use a retail example, you might place location-based targeted advertising in the upper left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
+To go back to the earlier manufacturing example, you might place automation of quality control in the upper left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
 
 Scenarios that fall below the middle line help the organization survive more than thrive. They might address competitive and disruptive threats, improve operations, or empower employees in the organization. Scenarios above the middle line help companies create new value propositions, revenue streams, or business models.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/implement-ai-organization-4.png" alt-text="Illustration of transformational framework.":::
-The left side of the x-axis is labeled "Tactical" and the right is labeled "Strategic." A double-sided arrow sits on the x-axis, pointing to both ends. The bottom of the y-axis is labeled "Existing business models" and the right side is labeled "New business models." A double-sided arrow runs along the y-axis and points to both ends. Within the graph are four quadrants. The bottom left quadrant is a grey box labeled "H1." The box contains an icon of a wrench and a gear. The bottom right quadrant is a blue box labeled "H2," containing the icon of a drone. The top left quadrant is a blue box labeled "H2," containing the icon of augmented reality glasses. The top right is a dark blue box labeled "H3," containing the icon of a robotic arm. A grey arrow extends from the bottom left H1 box to the top right H3 box, indicating that initiatives start operational and move to transformational.
-:::image-end:::
+> [!div class="mx-imgBorder"]
+> ![Graph depicting the transformational framework. H1 falls in tactical existing business model. H2, in tactical new business models and strategic old ones. H3, in strategic new business models.](../media/2-evaluate-prioritize-ai-investments-2.png)
 :::column-end:::
 :::row-end:::
 
-As you map initiatives, it's helpful to involve the CFO office and other stakeholders to ensure you've made the right assumptions around the opportunity valuation.
+As you map initiatives, it's helpful to involve the Chief Financial Officer (CFO) office and other stakeholders to ensure you've made the right assumptions around the opportunity valuation.
 
 ## Prioritize investments and organize phases
 
@@ -71,9 +69,8 @@ We recommend this approach because it's helpful to grow capabilities and get buy
 Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box and pre-trained AI models you can leverage for common use cases. These applications cost less and their impact on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
 :::column-end:::
 :::column span="2":::
-:::image type="complex" source="../media/implement-ai-organization-5.png" alt-text="Illustration of prioritization framework.":::
-The left side of the x-axis is labeled "Tactical" and the right is labeled "Strategic." A double-sided arrow sits on the x-axis, pointing to both ends. The bottom of the y-axis is labeled "Existing business models" and the top side is labeled "New business models." A double-sided arrow runs along the y-axis and points to both ends. Within the graph are four quadrants. The bottom left quadrant is labeled "Incremental." The bottom right quadrant is labeled "Evolutionary." The top left quadrant is labeled "Experimental." The top right quadrant is labeled "Aspirational." There are three slightly curved rectangular shapes over the quadrants representing each horizon, H1, H2, and H3. H1 is in bottom left quadrant. H2 is in the middle of the graph, spanning the Experimental, Aspirational, and Evolutionary quadrants. The H3 shape sits in the Aspirational quadrant. Each shape has one grey circle on them, representing AI initiatives. Circle "A" is on H1, and it connects with grey arrows to circle "B" on the H2 shape. That grey circle connects with a grey arrow to circle "C." The arrows show how the projects and horizons flow from left to right.
-:::image-end:::
+> [!div class="mx-imgBorder"]
+> ![Graph depicting the prioritization framework. Horizons move from incremental to evolutionary, from tactical to strategic, and from existing business model to new existing models.](../media/2-evaluate-prioritize-ai-investments-3.png)
 :::column-end:::
 :::row-end:::
 
@@ -92,12 +89,8 @@ Once you've chosen AI initiatives, it's important to identify value drivers and 
 | | Cycle times | The time it takes to complete a process. | Accelerate product inspections with image recognition.                                    |
 | | Satisfaction (customer and/or employee) | How happy customers are with a company's products or services (which contributes to market share, competitive differentiation, and more). | Improve customer engagement with personalized discounts and product bundles. |
 
-As you invest in initiatives, it's important to develop market and financial models to help balance potential risk and return. Consider factors such as the total addressable market (TAM), net present value (NPV), and internal rate of return (IRR). Work with the CFO office and other key stakeholders to ensure the financial models make sense within the context of the business. This is helpful to get their buy-in and ensure support throughout the process as well.
+As you invest in initiatives, it's important to develop market and financial models to help balance potential risk and return. Consider factors such as the total addressable market (TAM), net present value (NPV), and internal rate of return (IRR). Work with the CFO office and other key stakeholders to ensure the financial models make sense within the context of the business. These metrics are helpful to get their buy-in and ensure support throughout the process as well.
 
 Moving forward, we advise putting systemic processes in place to manage and evaluate value throughout the project lifecycle. We recommend taking an agile approach that happens in stages—after you invest in an initiative, evaluate the initial results. Then you can determine whether to continue, adjust your approach, or take another path. Do this at major milestones throughout the project.
-
-## Conclusion
-
-AI is already transforming industries, and the potential value it can generate will only continue to grow. We need a new, creative way to evaluate transformative AI initiatives. Equipped with the right framework, you'll have a strong foundation for innovation.
 
 Next, let’s take a look at the AI-related roles and responsibilities that should be established in every AI organization.

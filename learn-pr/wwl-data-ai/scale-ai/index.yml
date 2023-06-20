@@ -3,18 +3,20 @@ uid: learn.wwl.scale-ai
 metadata:
   title: Scale AI in your organization
   description: "Learn enterprise AI management with our free open online course, including scaling AI"
-  ms.date: 06/16/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
 title: Scale AI in your organization
-summary: Everyone in an organization has a role to play in AI transformation. At the highest levels, leaders need to prioritize AI use cases strategically and create an environment where innovative ideas can flourish. Then, those ideas come to life and succeed long-term thanks to collaboration across lines of business and technical teams. This module provides insight into managing AI-related processes and responsibilities in an organization.
+summary: This module provides insights for a full adoption of AI in your organization, from AI strategy, to assigning responsibilities, and empowering business users and subject matter experts so they can use AI themselves.
 abstract: |
   In this module, you will:
-    - Apply best practices for fueling innovation in your organization.
-    -	Evaluate and prioritize AI investments.
-    -	Establish AI-related roles and responsibilities.
-prerequisites: ""
+  * Plan AI projects and investments.
+  * Organize your staff for AI responsibilities.
+  * Identify how no-code AI tools can help business users and subject matter experts.
+prerequisites: |
+  * Basic understanding of AI concepts.
+  * Basic understanding of business concepts.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner

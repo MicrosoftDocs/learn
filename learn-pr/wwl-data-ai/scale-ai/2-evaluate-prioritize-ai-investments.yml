@@ -4,10 +4,10 @@ title: Evaluate and prioritize AI investments
 metadata:
   title: Evaluate and prioritize AI investments
   description: "Evaluate and prioritize AI investments"
-  ms.date: 06/16/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-durationInMinutes: 10
+durationInMinutes: 9
 content: |
   [!include[](includes/2-evaluate-prioritize-ai-investments.md)]

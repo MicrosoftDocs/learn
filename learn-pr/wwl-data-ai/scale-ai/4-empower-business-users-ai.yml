@@ -4,10 +4,10 @@ title: Empower business users with AI
 metadata:
   title: Empower business users with AI
   description: "Empower business users with AI"
-  ms.date: 06/16/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-durationInMinutes: 4
+durationInMinutes: 3
 content: |
-  [!include[](includes/7-empower-business-users-ai.md)]
+  [!include[](includes/4-empower-business-users-ai.md)]
