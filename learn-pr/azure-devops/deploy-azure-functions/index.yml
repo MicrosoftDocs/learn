@@ -9,12 +9,15 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
 title: Automate Azure Functions deployments with Azure Pipelines
-summary: Implement a CI/CD pipeline for Azure Functions.
+summary: Build an Azure DevOps pipeline that deploys an Azure Function app to Azure.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe scenarios when you should use Azure Functions
-  - Deploy an Azure Functions app to Azure
+  - Describe when to use Azure Functions for app development projects
+  - Create Azure App Service and Azure Functions environments
+  - Deploy an Azure Functions app to Azure with Azure Pipelines
 prerequisites: |
+  - A basic understanding of Azure Functions
+  - A basic understanding of Azure Pipelines
   - An Azure subscription
   - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
