@@ -38,7 +38,7 @@ resources.
 ### Azure CLI
 
 - Is a cross-platform command-line interface that's installable on Windows, Linux, and macOS
-- Runs in Azure Cloud Shell, PowerShell, Bash, *Cmd.exe*, or a Docker container
+- Runs in Azure Cloud Shell, PowerShell, Bash, `Cmd.exe`, or a Docker container
 - Is based on Python
 - Defaults to outputting a JSON string, although other format options are available, such as table,
   YAML, and TSV

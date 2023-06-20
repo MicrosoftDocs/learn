@@ -4,7 +4,7 @@ running administrative commands on Azure resources. You can use it to run comman
 For interactive use, you first open a shell such as:
 
 - PowerShell on Windows, Linux, or macOS.
-- *Cmd.exe* on Windows.
+- `Cmd.exe` on Windows.
 - Bash on Linux or macOS.
 
 You then issue a command at the shell prompt. To
@@ -16,7 +16,7 @@ browser through Azure Cloud Shell or run it from inside a Docker container.
 
 Microsoft
 documentation has standardized on Azure CLI scripts for Bash shells, and we'll do the same here.
-Keep in mind that if you choose to use a PowerShell or *cmd.exe* shell, there are slight scripting
+Keep in mind that if you choose to use a PowerShell or `cmd.exe` shell, there are slight scripting
 differences (like line breaks or quoting) when you copy Bash scripts for use in other shells.
 
 ## Prerequisites
@@ -29,7 +29,7 @@ Azure Cloud Shell.
 Before you create a storage account, you need to create a resource group or use an existing one. A resource group is a logical container in which Azure
 resources are deployed and managed as a group.
 
-Create an Azure resource group named `storageaccountexamplerg` in the `eastus` region by using the
+Create an Azure resource group named **storageaccountexamplerg** in the **eastus** region by using the
 `az group create` command:
 
 ```azurecli
@@ -74,9 +74,9 @@ az storage account list --resource-group storageaccountexamplerg
 
 ## Clean up resources
 
-You use the `az group delete` command to delete a resource group. The only mandatory parameter is `name`. Deleting a resource group deletes the group and all resources
+You use the `az group delete` command to delete a resource group. The only mandatory parameter is **name**. Deleting a resource group deletes the group and all resources
 that it contains. If resources outside the scope of the storage account that you created in this unit
-exist in the `storageaccountexamplerg` resource group, they're also deleted.
+exist in the **storageaccountexamplerg** resource group, they're also deleted.
 
 ```azurecli
 az group delete --name storageaccountexamplerg

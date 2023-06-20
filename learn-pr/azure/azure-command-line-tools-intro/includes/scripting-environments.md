@@ -5,7 +5,7 @@ requirements.
 ## What is a command-line shell?
 
 A command-line shell is a text-based program that instructs the operating system to perform actions.
-Bash, PowerShell, Windows PowerShell, and *cmd.exe* are shell environments. Your shell environment
+Bash, PowerShell, Windows PowerShell, and `cmd.exe` are shell environments. Your shell environment
 not only determines which tools you can use but also changes your command-line experience.
 
 ### Bash
