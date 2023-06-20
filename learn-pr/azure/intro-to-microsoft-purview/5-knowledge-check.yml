@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "It catalogs and classifies the data that's scanned."
       isCorrect: true
-      explanation: "Correct. It creates a holistic, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. It empowers data consumers to find valuable, trustworthy data."
+      explanation: "Correct. It creates a broad, up-to-date map of your data landscape with automated data discovery, sensitive data classification, and end-to-end data lineage. It empowers data consumers to find valuable, trustworthy data."
     - content: "It moves the data to your Azure subscription, automatically creating the necessary storage accounts."
       isCorrect: false
       explanation: "Incorrect. Microsoft Purview doesn't move the data. It leaves the data in its original storage location but maintains a link to the data."
