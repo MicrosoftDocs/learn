@@ -21,6 +21,7 @@ prerequisites: |
   - Visual Studio 2019 (any edition)
   - Familiarity with C# and .NET
 iconUrl: /training/achievements/xamarin/create-a-mobile-app-with-xamarin-forms-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

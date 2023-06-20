@@ -4,11 +4,10 @@ title: Describe the data classification capabilities of the compliance portal
 metadata:
   title: Describe the data classification capabilities of the compliance portal
   description: "Describe the data classification capabilities of the compliance portal"
-  ms.date: 02/09/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
 durationInMinutes: 11
 content: |
   [!include[](includes/3-describe-data-classification-capabilities-compliance-portal.md)]

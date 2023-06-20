@@ -69,7 +69,7 @@ We'll host our app in Azure App Service. Instead of manually creating an Applica
     | **Instance Details** |
     | Name                      | Enter a unique name. Make a note of it. You'll need it later on. |
     | Publish                   | Code |
-    | Runtime stack             | .NET Core 3.1 (LTS)  |
+    | Runtime stack             | .NET 6 (LTS)  |
     | Operating System          | Windows |
     | Region                    | Choose location close to you. |
     | **App Service Plan** |
