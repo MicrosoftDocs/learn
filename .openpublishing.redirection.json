@@ -22965,6 +22965,26 @@
     "redirect_document_id": true
   },
   {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
+    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
+    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
+    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/4-exercise-move-security-repository-away-from-project.md",
+    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines.md",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "learn-pr/wwl-azure/configure-pipelines-securely-use-variables-parameters/7-knowledge-check.md",
     "redirect_url": "/training/modules/configure-pipelines-securely-use-variables-parameters/8-knowledge-check.md",
     "redirect_document_id": false
