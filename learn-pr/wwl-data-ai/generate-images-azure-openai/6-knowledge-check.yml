@@ -47,5 +47,5 @@ quiz:
       explanation: "The number of images to be generated is specified in the **n** parameter."
     - content: "The size of the image to be generated"
       isCorrect: false
-      explanation: "The size of the desired image is specified in the **resolution** parameter"
+      explanation: "The size of the desired image is specified in the **size** parameter"
  
