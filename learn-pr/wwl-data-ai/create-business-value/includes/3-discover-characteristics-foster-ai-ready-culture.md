@@ -26,7 +26,7 @@ For instance, a sales department might not have a complete view of a customer, b
 :::column-end:::
 :::column span="2":::
 
-![Image depicting what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)
+![Screenshot showing what becoming data-driven implies: sharing data across your organization, and adopting rigorous data practices.](../media/3-discover-characteristics-foster-ai-ready-culture-1.jpg)
 
 :::column-end:::
 :::row-end:::
@@ -56,7 +56,7 @@ Fostering an AI-ready culture means **empowering people to be part of the AI tra
 It also means to create an **inclusive environment**, one that is predicated on the willingness and ability of employees to work in cross-functional teams that cut across organizational boundaries.
 :::column-end:::
 :::column span="2":::
-![Image depicting what becoming empowering and inclusive means: providing resources, a collaborative culture, and focusing on business needs.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)
+![Screenshot showing what becoming empowering and inclusive means: providing resources, a collaborative culture, and focusing on business needs.](../media/3-discover-characteristics-foster-ai-ready-culture-2.jpg)
 :::column-end:::
 :::row-end:::
 
