@@ -11,7 +11,6 @@ In this unit, we'll discuss what knowledge workers can do with available AI tool
 Employees don't need to be data scientists to be able to use AI in their everyday work. Microsoft is working hard to deliver business users AI-powered products and services. The latest advances in AI technologies focus on prebuild models, like GPT, which can be used by everyone. You can leverage these models from a wide range of Microsoft products, such as Bing, Microsoft 365, or Microsoft Dynamics 365.
 
 > [!NOTE] 
-
 > Nearly a third of white-collar workers (27 percent) have tried to incorporate prebuilt generative AI models such as GPT in their work routines.<sup>3</sup>
 
 For more complex solutions, business users may want to create their own AI models or integrate a model into an app themselves. With no-code tools and platforms such as those provided by Microsoft Power Platform and Azure Cognitive Services, now business users can add AI capabilities to their apps and automate their workflow—regardless of their technical expertise.
@@ -41,7 +40,6 @@ Let's see some examples.
 Research-related use cases are numberless and apply in almost every industry. In many scenarios, you can use prebuilt AI models such as GPT, which can be embedded in many options, to extract insights from papers, documentation, or research results. However, the same AI can also be used to find new ideas and create content, such as ads or keywords for marketing campaigns.
 
 > [!NOTE] 
-
 > Gartner predicts that, by 2025, large organizations will leverage generative AI to create 30 percent of their outbound marketing messages.<sup>4</sup>
 
 Next, let’s wrap up everything you’ve learned with a knowledge check.

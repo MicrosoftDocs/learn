@@ -49,6 +49,7 @@ Using this framework, you can then map AI scenarios into quadrants. The "tactica
 To go back to the earlier manufacturing example, you might place automation of quality control in the upper left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
 
 Scenarios that fall below the middle line help the organization survive more than thrive. They might address competitive and disruptive threats, improve operations, or empower employees in the organization. Scenarios above the middle line help companies create new value propositions, revenue streams, or business models.
+
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
@@ -67,6 +68,7 @@ We recommend prioritizing initiatives in phases: start with foundational initiat
 We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. You'll need to form technical teams that can prepare data properly and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
 
 Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box and pre-trained AI models you can leverage for common use cases. These applications cost less and their impact on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
+
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
