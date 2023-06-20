@@ -8,6 +8,7 @@ Now that you've reviewed this module, you should be able to:
  -  Manage federation excluding manual ADFS deployments
  -  Troubleshoot synchronization errors
  -  Implement and manage Azure Active Directory Connect Health
+ 
 
 ## Resources
 
