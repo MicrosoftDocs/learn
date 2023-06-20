@@ -1,4 +1,3 @@
-
 [Application Insights](/azure/application-insights/app-insights-overview) automatically analyzes the performance of your web application and can warn you about potential problems. You might be reading it because you received one of our smart detection notifications.
 
 This feature requires no particular setup other than configuring your app for Application Insights (on [ASP.NET](/azure/azure-monitor/app/asp-net), [Java](/azure/application-insights/app-insights-java-get-started), or Node.js, and [web page code](/azure/application-insights/app-insights-javascript)). It's active when your app generates enough telemetry.

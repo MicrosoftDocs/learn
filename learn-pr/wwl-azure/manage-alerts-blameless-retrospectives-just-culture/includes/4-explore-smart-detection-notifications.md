@@ -1,4 +1,3 @@
-
 Smart detection notifications are enabled by default and sent to [owners, contributors, and readers access to the Application Insights resource](/azure/application-insights/app-insights-resources-roles-access-control).
 
 To change it, click Configure in the email notification, or open Smart Detection settings in Application Insights.

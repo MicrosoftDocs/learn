@@ -8,7 +8,10 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -47,4 +50,3 @@ quiz:
     - content: "Correlation between degradation in this operation and degradations in related dependencies."
       isCorrect: false
       explanation: "Incorrect. The response time degradation notification tells you: How many users are affected, the Correlation between degradation in this operation and degradations in related dependencies, the Count of operation requests on the day of the detection and seven days before, and some others."
-interactive: bash

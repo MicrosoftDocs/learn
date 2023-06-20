@@ -1,4 +1,3 @@
-
 This module examined alerts, blameless retrospectives and created a just culture. It helped improve application performance, reduced meaningless and non-actionable alerts, and explained server response-time degradation.
 
 You learned how to describe the benefits and usage of:

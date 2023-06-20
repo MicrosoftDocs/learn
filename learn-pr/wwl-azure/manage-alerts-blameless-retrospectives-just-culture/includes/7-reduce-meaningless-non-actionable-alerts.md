@@ -1,4 +1,3 @@
-
 Monitoring and alerting enable a system to tell us when it's' broken, or perhaps to tell us what is about to break.
 
 When the system can't' automatically fix itself, we want a human to investigate the alert. Determine if there's a real problem at hand, mitigate the problem, and determine the root cause.

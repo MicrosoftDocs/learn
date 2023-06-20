@@ -8,5 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
 content: |
   [!include[](includes/7-reduce-meaningless-non-actionable-alerts.md)]

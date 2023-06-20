@@ -1,4 +1,3 @@
-
 The notifications include diagnostic information. Here's an example:
 
 :::image type="content" source="../media/notifications-diagnostic-information-ec845555.png" alt-text="Diagnostic information.":::

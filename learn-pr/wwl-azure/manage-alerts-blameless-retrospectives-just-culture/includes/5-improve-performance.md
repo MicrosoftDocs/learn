@@ -1,4 +1,3 @@
-
 Slow and failed responses are one of the biggest frustrations for website users, as you know from your own experience. So, it's essential to address the issues.
 
 ## Triage
