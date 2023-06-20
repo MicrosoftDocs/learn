@@ -115,7 +115,7 @@ The ability to connect to your build agent enables you to configure it with the 
     echo $IPADDRESS
     ```
 
-1. Create an SSH connection to your VM. In place of $IPADDRESS, enter the IP address you received in the previous step . At the prompt, enter **yes** to continue connecting.
+1. Create an SSH connection to your VM. In place of $IPADDRESS, enter the IP address you received in the previous step. At the prompt, enter **yes** to continue connecting.
 
     ```bash
     ssh azureuser@$IPADDRESS
