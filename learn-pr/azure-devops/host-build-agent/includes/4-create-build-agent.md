@@ -155,7 +155,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
 1. To download a shell script named *build-tools.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-tools.sh > build-tools.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/main/.agent-tools/build-tools.sh > build-tools.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
@@ -197,7 +197,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
 1. To download a shell script named *build-agent.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-agent.sh > build-agent.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/main/.agent-tools/build-agent.sh > build-agent.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
