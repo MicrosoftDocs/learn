@@ -92,7 +92,7 @@ GitHub Actions will be used to publish the container image to ACR. To configure 
 
 The service principal and the credentials for the container registry are sensitive information. The GitHub Actions runner will need the credentials to interact with ACR and AKS. As a best practice, sensitive information should be stored as encrypted *secrets* in a secure location. The secrets should be managed by repository administrators and accessed by the GitHub Actions runner. Complete the following steps to securely store the sensitive information as environment variables in your repository:
 
-1. In the GitHub repository you forked, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets":::** > **:::no-loc text="Actions":::**.
+1. In the GitHub repository you forked, go to **:::no-loc text="Settings":::** > **:::no-loc text="Secrets and variables":::** > **:::no-loc text="Actions":::**.
 1. Select the **:::no-loc text="New repository secret":::** button.
 1. Enter `AZURE_CREDENTIALS` and the JSON output you copied in the **:::no-loc text="Name":::** and **:::no-loc text="Value":::** text boxes, respectively.
 
