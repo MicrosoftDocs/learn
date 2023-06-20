@@ -75,7 +75,7 @@ trigger:
 
 ```
 
-This trigger is configured to queue the pipeline only when there's a commit to the main branch. What about triggering for any branch except the main? You guessed it: use exclude instead of include:
+This trigger is configured to queue the pipeline only when a commit to the main branch exists. What about triggering for any branch except the main? You guessed it: use exclude instead of include:
 
 ```YAML
 trigger:
@@ -119,7 +119,7 @@ You can find all the documentation on triggers [here](/azure/devops/pipelines/bu
 
 ## Jobs
 
-A job is a set of steps executed by an agent in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. You'll need two jobs if you need some steps to run on one agent and some on another.
+A job is a set of steps an agent executes in a queue (or pool). Jobs are atomic – they're performed wholly on a single agent. You can configure the same job to run on multiple agents simultaneously, but even in this case, the entire set of steps in the job is run on every agent. You'll need two jobs if you need some steps to run on one agent and some on another.
 
 A job has the following attributes besides its name:
 
@@ -127,8 +127,8 @@ A job has the following attributes besides its name:
  -  dependsOn - a way to specify dependencies and ordering of multiple jobs.
  -  condition – a binary expression: if it evaluates to true, the job runs; if false, the job is skipped.
  -  strategy - used to control how jobs are parallelized.
- -  continueOnError - to specify if the rest of the pipeline should continue or not if this job fails.
- -  pool – the name of the pool (queue) to run this job on.
+ -  continueOnError - specify if the rest of the pipeline should continue if this job fails.
+ -  pool – the pool name (queue) to run this job on.
  -  workspace - managing the source workspace.
  -  container - for specifying a container image to execute the job later.
  -  variables – variables scoped to this job.
@@ -171,7 +171,7 @@ jobs:
 
 
 - job: B
-  dependsOn: [] # this removes the implicit dependency on previous stage and causes this to run in parallel.
+  dependsOn: [] # This removes the implicit dependency on the previous stage and causes this to run in parallel.
   steps:
   # steps omitted for brevity
 
@@ -231,7 +231,7 @@ jobs:
 Classic builds implicitly checkout any repository artifacts, but pipelines require you to be more explicit using the checkout keyword:
 
  -  Jobs check out the repo they're contained in automatically unless you specify `checkout: none`.
- -  Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want access to files in the YAML file's repo.
+ -  Deployment jobs don't automatically check out the repo, so you'll need to specify checkout: self for deployment jobs if you want access to the YAML file's repo.
 
 ## Download
 
