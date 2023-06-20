@@ -16,8 +16,8 @@ abstract: |
   - Create Azure App Service and Azure Functions environments
   - Deploy an Azure Functions app to Azure with Azure Pipelines
 prerequisites: |
-  - A basic understanding of Azure Functions
-  - A basic understanding of Azure Pipelines
+  - Ability to create a basic Azure DevOps pipeline and an understanding of the components of a pipeline (tasks, stages, jobs)
+  - Ability to navigate the Azure portal and run Cloud Shell commands 
   - An Azure subscription
   - An Azure DevOps organization with access to parallel jobs
   - A GitHub account
