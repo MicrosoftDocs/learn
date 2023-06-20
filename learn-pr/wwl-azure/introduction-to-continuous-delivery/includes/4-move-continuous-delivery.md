@@ -27,9 +27,9 @@ We want to have these feedback loops or quality gates in place. A feedback loop 
 
 If one of the feedback loops is red, the marble can't pass the outlet and will end up in the Monitor and Learn tray.
 
-It's where the learning happens. The problem is analyzed and solved so that it's green the next time a marble passes the outlet.
+It's where the learning happens. The problem is analyzed and solved so it's green the next time a marble passes the outlet.
 
-Every single piece of workflow goes through the pipeline until it ends up in the value tray.
+Every workflow goes through the pipeline until it ends in the value tray.
 
 The more that is automated, the faster value flows through the pipeline.
 
@@ -44,7 +44,7 @@ Companies want to move toward Continuous Delivery.
 
 The introduction of Agile and Scrum was a great way to improve your software development practices.
 
-Last year around 80% of companies last year claimed that they adopted Scrum as a software development practice.
+Last year around 80% of companies claimed that they adopted Scrum as a software development practice.
 
 Using Scrum, many teams can produce a working piece of software after a sprint of maybe two or three weeks.
 
@@ -58,4 +58,4 @@ The bottleneck is no longer the production of working software, but the problem 
 
 The finished product is waiting to be delivered to the customers to get business value, but it doesn't happen.
 
-Continuous Delivery needs to solve this problem.
+Continuous delivery needs to solve this problem.

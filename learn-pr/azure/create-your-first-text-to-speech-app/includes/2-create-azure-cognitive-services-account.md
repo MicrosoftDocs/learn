@@ -1,10 +1,10 @@
-Azure Cognitive Services is a product bundle that enables customers to access multiple services - such as vision, language, and speech - by using a single API key.
+Azure Cognitive Services is a product bundle that enables customers to access multiple services—such as vision, language, and speech—by using a single API key.
 
-For your company's video department, you'll focus on Azure Cognitive Services' text to speech features to create audio files that you can use for narration in your videos.
+For your company's video department, you'll focus on Azure Cognitive Services' text-to-speech features to create audio files that you can use for narration in your videos.
 
-However, before you can create an application that uses Azure Cognitive Services - such as Text to speech - you need to create an Azure Cognitive Services account.
+However, before you can create an application that uses Azure Cognitive Services like text to speech, you need to create an Azure Cognitive Services account.
 
-In the next unit, you'll complete an exercise that uses the Azure Command Line Interface (CLI) to create an Azure Cognitive Services account. However, you can also use the Azure portal, which is described in the following section.
+In the next unit, you'll complete an exercise that uses the Azure Command Line Interface (CLI) to create an Azure Cognitive Services account. However, you can also use the Azure portal, which we describe in the following section.
 
 ## Create an Azure Cognitive Services account using the Azure portal
 
@@ -26,15 +26,15 @@ In the next unit, you'll complete an exercise that uses the Azure Command Line I
 
     1. Choose a **Resource group** from the drop-down menu, or select the **Create new** link to create a new resource group.
 
-    1. Choose the **Region** that is closest to you.
+    1. Choose the **Region** that's closest to you.
 
     1. Enter a unique name for the **Name**.
 
-    1. Choose a **Pricing tier** from the drop-down menu. (You can select the link for pricing details for the tiers.)
+    1. Choose a **Pricing tier** from the drop-down menu. (You can select the **View full pricing details** link to review pricing details for the tiers.)
 
     1. After you've reviewed the terms in the **Responsible AI Notice**, select the box to acknowledge that you've read and understood all the terms.
 
-    1. After you've entered the above information, select **Review + create**.
+    1. After you've entered the preceding information, select **Review + create**.
 
     [![Screenshot showing the options for creating a Cognitive Services account.](../media/2-configure-cognitive-services-options-small.png)](../media/2-configure-cognitive-services-options.png#lightbox)
 
