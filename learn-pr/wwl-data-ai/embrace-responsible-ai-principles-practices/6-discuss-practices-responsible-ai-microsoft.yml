@@ -4,10 +4,10 @@ title: Discuss practices for responsible AI at Microsoft
 metadata:
   title: Discuss practices for responsible AI at Microsoft
   description: "Discuss practices for responsible AI at Microsoft"
-  ms.date: 06/15/2023
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
 durationInMinutes: 6
 content: |
-  [!include[](includes/5-discuss-practices-responsible-ai-microsoft.md)]
+  [!include[](includes/6-discuss-practices-responsible-ai-microsoft.md)]
