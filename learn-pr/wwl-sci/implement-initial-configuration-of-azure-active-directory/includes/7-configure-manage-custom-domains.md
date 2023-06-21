@@ -29,7 +29,7 @@ You can add up to 900 managed domain names. If you're configuring all your domai
 
 ## Add subdomains of a custom domain
 
-If you want to add a subdomain name such as ‘europe.contoso.com’ to your organization, you should first add and verify the root domain, such as contoso.com. The subdomain is automatically verified by Azure AD. To see that the subdomain you added is verified, refresh the domain list in the browser.
+If you want to add a subdomain name such as ‘europe.contoso.com’ to your organization, you should first add and verify the root domain, such as contoso.com. The subdomain is automatically verified by Azure AD. To see the verified subdomain you added, refresh the domain list in the browser.
 
 If you've already added a contoso.com domain to one Azure AD organization, you can also verify the subdomain europe.contoso.com in a different Azure AD organization. When adding the subdomain, you're prompted to add a TXT record in the DNS hosting provider.
 
