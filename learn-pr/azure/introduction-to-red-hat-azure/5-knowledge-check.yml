@@ -30,7 +30,7 @@ quiz:
     - content: Red Hat manages ARO and OpenShift is open-source.
       isCorrect: true
       explanation: ARO is the Azure Red Hat OpenShift offering that helps with OpenShift management.
-    - content: ARO doesn’t work on edge devices but OpenShift does
+    - content: ARO doesn’t work on edge devices but OpenShift does.
       isCorrect: false
       explanation: ARO works across hybrid deployments including at the edge.
     - content: ARO supports Java applications, and OpenShift doesn't.
