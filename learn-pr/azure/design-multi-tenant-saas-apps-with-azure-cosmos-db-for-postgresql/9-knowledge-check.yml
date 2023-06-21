@@ -16,7 +16,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "When preparing multitenant tables for migration from a single-node database to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but which doesn't contain a column that directly references it?"
+  - content: "When you're preparing multitenant tables for migration from a single-node database to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but which doesn't contain a column that directly references it?"
     choices:
     - content: "Ready for distribution"
       isCorrect: false
@@ -41,7 +41,7 @@ quiz:
     - content: "`create_distributed_table_concurrently()`"
       isCorrect: true
       explanation: "Correct! Running `create_distributed_table_concurrently()` takes longer to complete but is a safer option when working with production systems, in which reducing the impact on ongoing application operations is essential."
-  - content: "When monitoring activity in a multitenant SaaS database, the ability to view database usage and statistics on a per-tenant basis is crucial. What built-in view allows you to get clear insights into what your tenants are doing?"
+  - content: "When you're monitoring activity in a multitenant SaaS database, the ability to view database usage and statistics on a per-tenant basis is crucial. What built-in view allows you to get clear insights into what your tenants are doing?"
     choices:
     - content: "citus_stat_statements"
       isCorrect: true
