@@ -38,7 +38,7 @@ For example, consider a large financial lending institution that wants to develo
 
 Another illustration of our responsibility to mitigate unintended consequences is with sensitive technologies like facial recognition. Recently, there has been a growing demand for facial recognition technology, especially from law enforcement organizations that see the potential of the technology for use cases like finding missing children. However, we recognize that these technologies could put fundamental freedoms at risk. For example, they could enable continuous surveillance of specific individuals. We believe society has a responsibility to set appropriate boundaries for the use of these technologies, which includes ensuring governmental use of facial recognition technology remains subject to the rule of law.
 
-While new laws and regulations must be written, they aren't a substitute for the responsibility that we all have while engaging with AI. businesses, By working together, businesses, governments, NGOs, and academic researchers alike can address sensitive use cases.  
+While new laws and regulations must be written, they aren't a substitute for the responsibility that we all have while engaging with AI. By working together, businesses, governments, NGOs, and academic researchers alike can address sensitive use cases.  
 
 >[!NOTE]
 > Microsoft assesses and develops principles to govern our work with facial recognition technologies. We anticipate these principles will evolve over time as we continue to learn and partner with customers, other tech companies, academics, civil society, and others on this issue. Microsoft uses responsible AI practices to detect, prevent, and mitigate these issues, but any AI-related project should consider them as well.

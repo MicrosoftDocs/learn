@@ -5,9 +5,9 @@ As discussed in the previous unit, Microsoft has developed and refined its own i
 
 Per our responsible AI governance documentation, we consider an AI development or deployment scenario a "sensitive use" if it falls into one or more of the following categories:
 
-* **Denial of consequential services:** The scenario involves the use of AI in a way that may directly result in the denial of consequential services or support to an individual (for example, financial, housing, insurance, education, employment, or healthcare services).
-* **Risk of harm:** The scenario involves the use of AI in a way that may create a significant risk of physical, emotional, or psychological harm to an individual (for example, life or death decisions in military, safety-critical manufacturing environments, healthcare contexts, almost any scenario involving children or other vulnerable people, and so on).
-* **Infringement on human rights:** The scenario involves the use of AI in a way that may result in a significant restriction of personal freedom, opinion or expression, assembly or association, privacy, and so on (for example, in law enforcement or policing).
+* **Denial of consequential services**: The scenario involves the use of AI in a way that may directly result in the denial of consequential services or support to an individual (for example, financial, housing, insurance, education, employment, or healthcare services).
+* **Risk of harm**: The scenario involves the use of AI in a way that may create a significant risk of physical, emotional, or psychological harm to an individual (for example, life or death decisions in military, safety-critical manufacturing environments, healthcare contexts, almost any scenario involving children or other vulnerable people, and so on).
+* **Infringement on human rights**: The scenario involves the use of AI in a way that may result in a significant restriction of personal freedom, opinion or expression, assembly or association, privacy, and so on (for example, in law enforcement or policing).
 
 We train our employees to use this framework to determine whether an AI use case should be flagged for further review—whether they’re a seller working with a customer or someone working on an internal AI solution. We also train our Responsible AI Champs for their role as liaison between employees and central governance teams.
 
@@ -38,10 +38,10 @@ Once the case has been reviewed, the Responsible AI Champ works with the Office 
 
 In the use case, the Aether Sensitive Uses Working Group took separate decisions for each of the scenarios. After careful consideration, they determined that we wouldn't support the patrolling scenario to identify "persons of interest," during traffic stops. As the state of the technology and the broader ecosystem weren't sufficiently mature enough to mitigate the harmful consequences for when the technology performs imperfectly, the Aether working group considered this scenario a premature use case. 
 
+We explained the issues to the customer, and they decided not to pursue that scenario.
+
 >[!NOTE]
 > **Backed by research**: attempting to identify individuals in uncontrolled environments can infringe on human rights, resulting in improper arrests due to misidentification. Studies have shown that AI is more likely to mistake the identities of women and minorities, which could also lead to those populations being disproportionately detained.<sup>1</sup>
-
-We explained the issues to the customer, and they decided not to pursue that scenario.
 
 For the in-facility use cases, we decided we could support the design and development of a proof of concept (POC), with safeguards in place to ensure appropriate human control over the solution, and a bi-directional feedback loop between the customer and Microsoft could be established. It was also important that the customer implemented a training program for personnel interacting with the solutions, and that the customer would reengage with Microsoft on deployments beyond these supported scenarios.
 
