@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/22/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Create and deploy a cloud-native ASP.NET Core microservice

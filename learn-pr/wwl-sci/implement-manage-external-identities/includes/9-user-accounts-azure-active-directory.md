@@ -4,6 +4,9 @@ Azure Active Directory (Azure AD) B2B collaboration users are added as guest use
 
 Microsoft recommends that organizations use the rule of least privilege. You can use Privileged Identity Management (PIM) to grant access for B2B/guest users.
 
+> [!IMPORTANT]
+> The graphic below will be updated in a few weeks as part of a larger refresh of this module. This note is to inform you that the Limited Administrator option has been removed from guest user role assignments. Guest users use the same user interface as member users for assigning roles. If your companies settings allow that capability.
+
 ### Default role
 
 :::image type="content" source="../media/default-role-414d62b2.png" alt-text="Screenshot showing the default directory role. You have choices of User, Global admin, and limited admin.":::
@@ -14,12 +17,7 @@ Microsoft recommends that organizations use the rule of least privilege. You can
 :::image type="content" source="../media/global-admin-role-fac8f6ea.png" alt-text="Screenshot showing the global administrator role selected.  You get full admin rights to the tenant.":::
 
 
-### Limited Administrator role
-
-:::image type="content" source="../media/limited-admin-role-48bc9b98.png" alt-text="Screenshot showing the limited administrator role. You then get to pick what type of prebuilt Azure AD role needed.":::
-
-
-## Understand the B2B user
+### Understand the B2B user<br>
 
 B2B guest user objects in Azure AD have properties and states before and after invitation redemption. An Azure AD business-to-business (B2B) collaboration user is a user with UserType = Guest. This guest user typically is from a partner organization and has limited privileges in the inviting directory, by default.
 

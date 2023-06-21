@@ -4,11 +4,11 @@ title: Implement and manage federation
 metadata:
   title: Implement and manage federation
   description: "Implement and manage federation"
-  ms.date: 02/03/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 1
