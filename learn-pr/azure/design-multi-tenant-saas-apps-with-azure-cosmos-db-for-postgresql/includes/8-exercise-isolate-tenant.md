@@ -16,19 +16,19 @@ Now that you have migrated the Tailspin Toys database to a multi-node instance, 
 
 Use psql at the command prompt to make your database changes. psql is a command-line tool that you can use to interactively issue queries to a PostgreSQL database, and then view the query results.
 
-1. In the [Azure portal](https://portal.azure.com/), go to your Azure Cosmos DB for PostgreSQL Cluster resource. On the left menu under **Settings**, select **Connection strings**, and then copy the connection string labeled **psql**.
+1. In the [Azure portal](https://portal.azure.com/), go to your Azure Cosmos DB for PostgreSQL Cluster resource. On the left menu under **Settings**, select **Connection strings**, and then copy the connection string that's labeled **psql**.
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="Screenshot of the Connection strings pane of the Azure Cosmos DB Cluster resource. The copy to clipboard button to the right of the psql connection string is highlighted.":::
 
 1. Paste the connection string into a text editor like Notepad. Replace the `{your_password}` token with the password that you created for the `citus` user when you created your cluster. Copy the updated connection string to use later.
 
-1. On the **Connection strings** pane in the Azure portal, open Azure Cloud Shell by selecting the icon on the global controls.
+1. On the **Connection strings** pane in the Azure portal, open Azure Cloud Shell by selecting the icon in the global controls.
 
     :::image type="content" source="../media/azure-cloud-shell.png" alt-text="Screenshot of the Azure portal global controls, with the Cloud Shell icon highlighted and a Cloud Shell dialog open at the bottom of the browser window.":::
 
-    Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a separate web browser window.
+    Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a separate web browser window or tab.
 
-1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment. Then use the psql command-line utility to connect to your database. Paste your updated connection string (the one that contains your correct password) at the prompt in Cloud Shell, and then run the command as in the following example:
+1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment. Then use the psql command-line utility to connect to your database. Paste your updated connection string (the one that contains your correct password) at the command prompt in Cloud Shell, and then run the command as in the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -205,7 +205,7 @@ To improve resource allocation and better provide guarantees of tenant quality o
 
 Congratulations! You've successfully isolated the largest tenant on a dedicated node in the Tailspin Toys multitenant SaaS application's Azure Cosmos DB for PostgreSQL database.
 
-1. In Cloud Shell, disable the task that creates orders in the database by using the following command:
+1. In Cloud Shell, disable the task that creates orders in the database:
 
     ```sql
     SELECT cron.unschedule('create_orders');
@@ -222,6 +222,6 @@ Congratulations! You've successfully isolated the largest tenant on a dedicated 
 It's essential that you clean up any unused resources. You're charged for the configured capacity, not for how much of the database is used.
 
 1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
-1. On the left menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group that you created as part of the exercise in unit 3.
+1. On the left menu, select **Resource Groups**, and then select the `learn-cosmosdb-postgresql` resource group that you created to in this module.
 1. On **Overview**, select **Delete resource group**.
 1. To confirm deletion, enter the name of the resource group that you created, and then select **Delete**.

@@ -44,7 +44,7 @@ To create the database:
 
    :::image type="content" source="../media/cosmos-db-for-postgresql-create.png" alt-text="Screenshot that shows the steps to create an Azure Cosmos DB for PostgreSQL resource in the Azure portal.":::
 
-1. On **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
+1. Under **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
    :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.":::
 

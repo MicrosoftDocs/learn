@@ -1,4 +1,4 @@
-To accommodate a recent increase in toy stores that host their websites in the Tailspin Toys multitenant SaaS application, you decide to migrate the Tailspin Toys Azure Cosmos DB for PostgreSQL single-node database to a multi-node cluster. You can migrate the database quickly and with minimal to no downtime by horizontally scaling the database in the Azure portal. However, to ensure that the database is migrated efficiently and with minimal disruption, you must plan and prepare your database for distribution before you take this step.
+To accommodate a recent increase in toy stores that host their websites in the Tailspin Toys multitenant SaaS application, you decide to migrate the Tailspin Toys Azure Cosmos DB for PostgreSQL single-node database to a multi-node cluster. You can migrate the database quickly and with minimal or no downtime by horizontally scaling the database in the Azure portal. However, to ensure that the database is migrated efficiently and with minimal disruption, you must plan and prepare your database for distribution before you take this step.
 
 Tailspin Toys has provided the following diagram to represent the structure and relationships between tables in the current Tailspin Toys single-node database. Bold fields on a lighter blue background represent primary keys, and italicized items are foreign keys.
 
@@ -10,7 +10,7 @@ You can reference this diagram as you evaluate the best way to distribute Tailsp
 
 You can use Azure Cosmos DB for PostgreSQL to run PostgreSQL at any scale, from a single-node database to a multi-node distributed database on a cluster that has up to 20 workers. For multitenant SaaS application providers who start with a single node, planning for future growth when you initially select the size of your cluster can help you avoid downtime when you need to scale.
 
-Horizontally scaling to a multi-node cluster can be accomplished with zero downtime, but this capability depends on the configuration of the coordinator node. The minimum compute and storage sizes for the coordinator node in a multi-node cluster are four vCores with 16 GiB of RAM and 512 GiB of storage. You can create a single-node database that has compute and storage settings that are smaller than this minimum requirement. Scaling a single-node cluster when the coordinator compute size is less than four vCores with 16 GiB of RAM or the storage size is less than 512 GiB requires the coordinator compute and storage to be scaled. The server would have to be restarted, leading to a short period of downtime.
+Horizontally scaling to a multi-node cluster can be accomplished with zero downtime, but having this capability depends on the configuration of the coordinator node. The minimum compute and storage sizes for the coordinator node in a multi-node cluster are four vCores with 16 GiB of RAM and 512 GiB of storage. You can create a single-node database that has compute and storage settings that are smaller than this minimum requirement. Scaling a single-node cluster when the coordinator compute size is less than four vCores with 16 GiB of RAM or the storage size is less than 512 GiB requires the coordinator compute and storage to be scaled. The server would have to be restarted, leading to a short period of downtime.
 
 Horizontally scaling a single-node database and distributing table data across nodes can provide tremendous performance benefits. However, if you fail to properly plan and restructure tables, the result might be misconfigurations that hurt query performance. When you distribute multitenant data, you must consider how table data is distributed, the specified distribution column, table colocation, and common query patterns.
 
@@ -24,7 +24,7 @@ Azure Cosmos DB for PostgreSQL can efficiently process cross-shard queries, but 
 
 Tables in a single-node database might have primary and foreign keys, but they don't need to specify a distribution column. Your first step when you plan a migration to a multi-node distributed database is to identify the best distribution column, and then plan table distribution accordingly.
 
-After you examine the most common query patterns that are used in the Tailspin Toys database, you determined that most queries that are executed against the database relate to a single store rather than to joining information across stores. This pattern is typical in databases that are associated with multitenant SaaS applications, including online transaction processing (OLTP) workloads for web clients and online analytical processing (OLAP) workloads that serve per-tenant analytical queries. As a result, multitenant SaaS applications have a natural dimension on which to distribute data across nodes. You can shard by tenant ID. For Tailspin Toys, you specify `store_id` as the distribution column on each distributed table.
+After you examine the most common query patterns that are used in the Tailspin Toys database, you determine that most queries that are executed against the database relate to a single store rather than to joining information across stores. This pattern is typical in databases that are associated with multitenant SaaS applications, including online transaction processing (OLTP) workloads for web clients and online analytical processing (OLAP) workloads that serve per-tenant analytical queries. As a result, multitenant SaaS applications have a natural dimension on which to distribute data across nodes. You can shard by tenant ID. For Tailspin Toys, you specify `store_id` as the distribution column on each distributed table.
 
 ## Classify tables
 
@@ -32,13 +32,13 @@ Now that you've identified the `store_id` column as the logical distribution key
 
 When you work with tables in a single-node multitenant SaaS database, the tables generally fall into one of the following categories:
 
-* **Ready for distribution**. These tables already contain the distribution key and are ready to be distributed without changes. Looking at the schema provided, the `stores`, `orders`, and `products` tables already contain the `store_id` column and fall into this category.
+* **Ready for distribution**. These tables already contain the distribution key and are ready to be distributed without changes. Looking at the schema that's provided, the `stores`, `orders`, and `products` tables already contain the `store_id` column and fall into this category.
 
 * **Needs backfill**. These tables can be logically distributed by the chosen key, but the tables don't contain a column that directly references the key. Tables in this category require modification to add the selected distribution column. The Tailspin Toys `line_items` table can be linked to the `store` table by joining through the `orders` or `products` tables, but it doesn't contain the `store_id` column. For table data to be distributed across worker nodes and colocated for maximum query efficiency, the table needs to be denormalized to include the `store_id` column. Then the new column must be populated with the appropriate `store_id` for each line item.
 
-* **Reference table**. These tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster. The data is available for quick access by queries on any node.
+* **Reference table**. Reference tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants. A full copy of each reference table's data is duplicated and maintained on every node in the cluster. The data is available for quick access by queries on any node.
 
-* **Local table**. These tables are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as for user authentication.
+* **Local table**. Local tables are typically not joined to other tables and don't contain the distribution key. They're maintained exclusively on the coordinator node and are often used for administrative purposes, such as for user authentication.
 
 ## Backfill tables
 
@@ -54,7 +54,7 @@ After the table is updated to include the distribution column, you need to popul
 
 Tailspin Toys asked you to look for methods to use that minimize any operational disruption when you make database changes. The `line_items` table is one of the most active transactional tables in the database. You're concerned that performing a bulk operation to backfill the missing values might result in a heavy load on the database and potentially slow down other queries.
 
-To fulfill the company'js request to horizontally scale the database with _minimal disruption_, you decide to take a more conservative approach and update the `line_items` table in small batches. To accomplish this, you use the pg_cron extension, so you can schedule a user-defined function to run on a recurring schedule until the table is completely updated.
+To fulfill the company's request to horizontally scale the database with _minimal disruption_, you decide to take a more conservative approach and update the `line_items` table in small batches. To accomplish this, you use the pg_cron extension, so you can schedule a user-defined function to run on a recurring schedule until the table is completely updated.
 
 You determine that you can safely update 100,000 rows at a time without causing any noticeable database impact. So, you define the update function:
 

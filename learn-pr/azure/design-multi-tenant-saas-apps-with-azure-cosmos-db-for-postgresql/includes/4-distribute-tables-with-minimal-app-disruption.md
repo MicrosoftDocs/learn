@@ -1,18 +1,18 @@
-With the tables in the Tailspin Toys Azure Cosmos DB for PostgreSQL database now prepared for distribution, you're ready to move on to horizontally scaling the database and distributing the table data across the worker nodes.
+With the tables in the Tailspin Toys Azure Cosmos DB for PostgreSQL database now prepared for distribution, you're ready to move on to horizontally scale the database and distribute the table data across the worker nodes.
 
 ## Horizontally scale the database
 
 You can use Azure Cosmos DB for PostgreSQL to quickly scale your database to handle increased load. For multitenant SaaS applications, guidance for selecting the initial cluster size is based on the number of worker vCores and RAM of your original instance.
 
-:::image type="content" source="../media/cosmos-db-postgresql-scale-nodes.png" alt-text="Screenshot of the scale nodes pane for Azure Cosmos DB for PostgreSQL in the Azure portal.":::
+:::image type="content" source="../media/cosmos-db-postgresql-scale-nodes.png" alt-text="Screenshot that shows the scale nodes pane for Azure Cosmos DB for PostgreSQL in the Azure portal.":::
 
 On the **Scale** pane, you can configure the number of worker nodes and the compute and storage size for each node. When you migrate from a single-node database, you can typically start with two nodes and expand to more worker nodes over time as application performance and growth requires.
 
-It's essential to remember that this step only adds worker nodes. It doesn't distribute data to the new worker nodes. Depending on the size of the compute and storage that's assigned to the single-node cluster, scaling to multiple nodes might require a server restart, resulting in downtime, if the coordinator compute cores and storage sizes need to change. The single-node development database that you created for Tailspin Toys uses a compute size of four vCores with 16 GiB and 512 GiB of storage. This configuration meets the minimum coordinator node size for a multi-node cluster so that you can horizontally scale the database without downtime.
+It's essential to remember that this step only adds worker nodes. It doesn't distribute data to the new worker nodes. Depending on the size of the compute and storage that's assigned to the single-node cluster, scaling to multiple nodes might require the downtime of a server restart if the coordinator compute cores and storage sizes need to change. The single-node development database that you created for Tailspin Toys uses a compute size of four vCores with 16 GiB and 512 GiB of storage. This configuration meets the minimum coordinator node size for a multi-node cluster so that you can horizontally scale the database without downtime.
 
 ## Distribute and colocate table data
 
-Distributing tables is the process of partitioning or sharding table data and moving those shards to be hosted on worker nodes. The database can't enforce, and actually prohibits, foreign key constraints when the referenced rows don't reside on the same node. So moving from a single-node, nondistributed database to a multi-node, distributed database requires some planning around the order in which the tables are distributed. In addition, you should ensure that table distribution is done in the least disruptive way possible.
+Distributing tables is the process of partitioning or sharding table data and moving those shards to be hosted on worker nodes. The database can't enforce, and actually prohibits, foreign key constraints when the referenced rows don't reside on the same node. So moving from a single-node nondistributed database to a multi-node distributed database requires some planning for the order in which the tables are distributed. In addition, you should ensure that table distribution is done in the least disruptive way possible.
 
 Colocation of related table data should also be configured to allow tenant-specific queries to execute as efficiently as possible. When table data is distributed across nodes in the cluster, you ideally want rows across all tables that relate to the same tenant to reside together on the same nodes in what is called *table colocation*.
 
@@ -34,7 +34,7 @@ Tables that define or that are referenced by foreign keys present some challenge
 SELECT create_distributed_table('orders', 'store_id');
 ```
 
-When a table that's being distributed has foreign key constraints, you must first distribute the table that's referenced by the foreign key. Continuing with the example, you must distribute `stores` before you attempt to distribute `orders`. Trying to distribute the tables in reverse order raises the following error:
+When a table that's being distributed has foreign key constraints, you must first distribute the table that's referenced by the foreign key. Continuing with the example, you must distribute `stores` before you attempt to distribute `orders`. Trying to distribute the tables in reverse order results in the following error:
 
 ```text
 ERROR: referenced table "stores" must be a distributed table or a reference table
@@ -42,7 +42,7 @@ DETAIL: To enforce foreign keys, the referencing and referenced rows need to be 
 HINT: You could use SELECT create_reference_table('stores') to replicate the referenced table to all nodes or consider dropping the foreign key
 ```
 
-The error message indicates that the foreign key constraint that's related to the `stores` table is causing the command to fail because `stores` isn't a distributed table or a reference table.
+The error message indicates that the foreign key constraint that's related to the `stores` table causes the command to fail because `stores` isn't a distributed table or a reference table.
 
 One approach to resolve this issue is to carefully consider the table relationships and any foreign key constraints. For Tailspin Toys, the tables would need to be distributed in the following order:
 
@@ -50,9 +50,9 @@ One approach to resolve this issue is to carefully consider the table relationsh
 1. `orders` and `products` (the specific order for distributing these tables doesn't matter, as long as they're distributed after `stores` and before `line_items`)
 1. `line_items`
 
-### Review methods for distributing tables with minimal application disruption
+### Review methods for distributing tables with minimal disruption
 
-There are two functions for distributing table data in Azure Cosmos DB for PostgreSQL, `create_distributed_table()` and `create_distributed_table_concurrently()`. Both of these methods have specific strengths and weaknesses when it comes to minimizing application disruption, and there are tradeoffs to using each.
+There are two functions for distributing table data in Azure Cosmos DB for PostgreSQL, `create_distributed_table()` and `create_distributed_table_concurrently()`. Both of these methods have specific strengths and weaknesses when it comes to minimizing application disruption, and there are tradeoffs to using each method.
 
 The primary method for distributing table data in Azure Cosmos DB for PostgreSQL is to use the `created_distributed_table()` function. This method, however, results in table locking and can prevent writes against the table until the distribution process completes. Tailspin Toys asked for any database changes to have a minimal impact on the application, so this approach isn't ideal.
 
@@ -136,7 +136,7 @@ SELECT create_distributed_table('products', 'store_id', colocate_with => 'stores
 
 The `stores` and `products` tables share the same distribution column, so colocation happens implicitly. You also can explicitly specify colocation by using the `colocate_with` option of the `create_distributed_table()` function, as in the preceding example.
 
-The `orders` and `line_items` tables are the largest tables in the database, and they are the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. By using `create_distributed_table_concurrently()`, you have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys that you need to drop, and it slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then re-create the foreign key reference to `stores`:
+The `orders` and `line_items` tables are the largest tables in the database, and they're the targets of most of the write operations in the database. Blocking writes to these tables would be detrimental to the use of the SaaS application, so you should take a more conservative approach to distribute these tables. By using `create_distributed_table_concurrently()`, you have to drop the foreign key constraint between the `line_items`, `orders`, and `stores` tables, but it does limit the number of keys that you need to drop, and it slightly decreases the risk of not enforcing referential integrity between tables. For example, to distribute the `orders` table, you would drop the foreign key constraints, distribute the table concurrently, and then re-create the foreign key reference to `stores`:
 
 ```sql
 -- Drop the foreign key to the stores table

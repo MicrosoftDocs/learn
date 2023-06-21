@@ -30,7 +30,7 @@ Queries statistics against PostgreSQL databases are maintained in the `pg_stat_s
 
     If the `citus.stat_statements_track` setting is `all`, you can skip to the next section and connect to your database. Otherwise, proceed to the next step to enable tracking.
 
-1. On your **Azure Cosmos DB for PostgreSQL Cluster** resource, on the left menu under **Settings**, select **Coordinator node parameters**. On the **Coordinator node parameters** pane, enter "citus.stat" into the filter box and change the value of `citus.stat_statements_track` to **ALL**. If the value is already **ALL**, select **None**, and then choose **ALL** again to enable the **Save** button.
+1. On your **Azure Cosmos DB for PostgreSQL Cluster** resource, on the left menu under **Settings**, select **Coordinator node parameters**. On the **Coordinator node parameters** pane, enter **citus.stat** in the filter box and change the value of `citus.stat_statements_track` to **ALL**. If the value is already **ALL**, select **None**, and then choose **ALL** again to enable the **Save** button.
 
     :::image type="content" source="../media/cosmos-db-postgresql-parameters-citus-stat-statements-track.png" alt-text="Screenshot that shows the Coordinator node parameters pane on the Azure Cosmos DB for PostgreSQL Cluster. The Coordinator node parameters menu is selected.":::
 
@@ -54,7 +54,7 @@ Queries statistics against PostgreSQL databases are maintained in the `pg_stat_s
 
 You use psql at the command prompt to distribute the tables in your database. psql is a command-line tool that allows you to interactively issue queries to a PostgreSQL database and view the query results.
 
-1. On your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), on the left menu under **Settings**, select **Connection strings**. Then copy the connection string labeled **psql**.
+1. On your Azure Cosmos DB for PostgreSQL resource in the [Azure portal](https://portal.azure.com/), on the left menu under **Settings**, select **Connection strings**. Then copy the connection string that's labeled **psql**.
 
     :::image type="content" source="../media/cosmos-db-for-postgresql-connection-strings-psql.png" alt-text="Screenshot that shows the Connection strings pane of the Azure Cosmos DB Cluster resource. On the Connection strings pane, the copy to clipboard button to the right of the psql connection string is highlighted.":::
 
@@ -66,7 +66,7 @@ You use psql at the command prompt to distribute the tables in your database. ps
 
     Cloud Shell opens as an embedded panel at the bottom of your browser window. Alternatively, you can open [Azure Cloud Shell](https://shell.azure.com/) in a new browser tab.
 
-1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, and then use the psql command-line utility to connect to your database. Paste your updated connection string (the one that contains your correct password) at the prompt in Cloud Shell, and then run the command. The command looks similar to the following example:
+1. In the Cloud Shell pane, ensure that **Bash** is selected for the environment, and then use the psql command-line utility to connect to your database. Paste your updated connection string (the one that contains your correct password) at the command prompt in Cloud Shell, and then run the command. The command looks similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
@@ -82,9 +82,9 @@ Before you distribute any tables in the database, you want to take baseline meas
     \timing
     ```
 
-    **As you execute each of the following queries, record its execution time for comparison throughout the table distribution process.**
+    *As you execute each of the following queries, record its execution time for comparison throughout the table distribution process.*
 
-1. The first query you want to examine retrieves the list of available products for an individual store. This query only involves the `products` table and filters on `store_id`. Execute the following and record the execution time:
+1. The first query you want to examine retrieves the list of available products for an individual store. This query involves only the `products` table, and it filters on `store_id`. Execute the following and record the execution time:
 
     ```sql
     -- List products by store
@@ -149,15 +149,15 @@ Before you distribute any tables in the database, you want to take baseline meas
 
 ## Distribute the stores and products tables
 
-In a single-node, nondistributed database, all tables are located on the coordinator node. Horizontally scaling the database to a multi-node cluster doesn't automatically partition data across the new worker nodes. Next, you need to distribute the tables. Start with the `stores` and `products` tables.
+In a single-node nondistributed database, all tables are located on the coordinator node. Horizontally scaling the database to a multi-node cluster doesn't automatically partition data across the new worker nodes. Next, you need to distribute the tables. Start with the `stores` and `products` tables.
 
-1. After the database scaling operation finishes, you want to distribute the `stores` table first. This table is small and doesn't receive many updates, so you can use `create_distributed_table()` to handle distribution. At the Citus command prompt in your open Cloud Shell pane, run the following code:
+1. When the database scaling operation finishes, you want to distribute the `stores` table first. This table is small and doesn't receive many updates, so you can use `create_distributed_table()` to handle distribution. At the Citus command prompt in your open Cloud Shell pane, run the following code:
 
     ```sql
     SELECT create_distributed_table('stores', 'store_id');
     ```
 
-1. You can use the same method to distribute the `products` table that you used for `stores`. Similarly, this table is updated less frequently, so the risk of affecting users in the SaaS application is low. This time, the `colocate_with` option is specified to inform the `create_distributed_table()` function to explicitly place data with the same distribution key from both tables onto the same node in the cluster.
+1. You can use the same method to distribute the `products` table that you used for `stores`. Similarly, this table is updated less frequently, so the risk of affecting users in the SaaS application is low. This time, the `colocate_with` option is specified to inform the `create_distributed_table()` function to explicitly place data with the same distribution key from both tables onto the same node in the cluster:
 
     ```sql
     SELECT create_distributed_table('products', 'store_id', colocate_with => 'stores');
@@ -165,9 +165,9 @@ In a single-node, nondistributed database, all tables are located on the coordin
 
 ## Reevaluate query execution times
 
-Neither of the distribution functions that are available in Azure Cosmos DB for PostgreSQL works within transactions, so some time elapses between when the first tables and the last tables are distributed. To understand the potential impact of having a mix of local and distributed tables, you want to rerun the application queries from the preceding sections to see if query times are affected by being in this state.
+Neither of the distribution functions that are available in Azure Cosmos DB for PostgreSQL works within transactions, so some time elapses between when the first tables and the last tables are distributed. To understand the potential impact of having a mix of local and distributed tables, you want to rerun the application queries that you used in the preceding sections to see if query times are affected by being in this state.
 
-1. Execute the query to retrieve the products list for a store again and record the execution time:
+1. Execute the query to retrieve the products list for a store again, and record the execution time:
 
     ```sql
     -- List products by store
@@ -232,11 +232,11 @@ Neither of the distribution functions that are available in Azure Cosmos DB for 
 
 ## Distribute the remaining tables
 
-You've seen that having some of your tables distributed while others aren't distributed can affect the performance of queries that join data between tables in different distribution states or read data across tenants. However, you still need to inspect how those queries perform after all tables have been distributed.
+You've seen that having some of your tables distributed while other tables aren't distributed can affect the performance of queries that join data between tables in different distribution states or read data across tenants. However, you still need to inspect how those queries perform after all tables have been distributed.
 
-Using `create_distributed_table()` blocks write transactions while table data is being distributed, which could negatively affect perceived application performance. When distributing write-heavy tables in a production environment, it's safer to use `created_distributed_table_concurrently()` and allow table writes to continue.
+Using `create_distributed_table()` blocks write transactions while table data is being distributed, which might negatively affect perceived application performance. When distributing write-heavy tables in a production environment, it's safer to use `created_distributed_table_concurrently()` and allow table writes to continue.
 
-To distribute the `orders` and `line_items` tables, use the `create_distributed_table_concurrently()` function to prevent blocking incoming table writes and minimize application disruption. That function, however, doesn't allow foreign key constraints to exist while distributing the table, so first, you must drop any foreign key constraints on each table to be distributed.
+To distribute the `orders` and `line_items` tables, use the `create_distributed_table_concurrently()` function to prevent blocking incoming table writes and to minimize application disruption. That function, however, doesn't allow foreign key constraints to exist while distributing the table, so first, you must drop any foreign key constraints on each table to be distributed.
 
 1. To distribute the `orders` table, first drop all foreign key constraints that are associated with the table:
 
@@ -271,17 +271,17 @@ To distribute the `orders` and `line_items` tables, use the `create_distributed_
         ADD CONSTRAINT orders_store_id_fkey FOREIGN KEY (store_id) REFERENCES stores (store_id);
     ```
 
-    You might notice that this command didn't re-create the foreign key constraint between `line_items` and `orders` that you dropped in step 1. You'll re-create that relationship after you distribute `line_items` to avoid errors.
+    You might notice that this command didn't re-create the foreign key constraint between `line_items` and `orders` that you dropped in step 1. To avoid errors, you'll re-create that relationship after you distribute `line_items`.
 
 1. Before you distribute the `line_items` table, open the [Azure Cloud Shell](https://shell.azure.com/) in a second web browser or tab. You use this second Cloud Shell window to examine how table writes are handled when you use `create_distributed_table_concurrently()`.
 
-1. In the new Cloud Shell window, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database, as you've done previously. Paste your updated connection string (the one that contains your correct password) at the prompt in Cloud Shell, and then run the command, which should look similar to the following example:
+1. In the new Cloud Shell window, ensure that **Bash** is selected for the environment, then use the psql command-line utility to connect to your database, as you've done previously. Paste your updated connection string (the one that contains your correct password) at the command prompt in Cloud Shell. Run the command, which should look similar to the following example:
 
     ```bash
     psql "host=c.learn-cosmosdb-postgresql.postgres.database.azure.com port=5432 dbname=citus user=citus password={your_password} sslmode=require"
     ```
 
-1. You can now distribute the `line_items` table in the same fashion as the `orders` table. Return to the Cloud Shell pane at the bottom of the Azure portal window, then copy and paste the following code to drop any foreign key references, distribute the table, and then re-create the table relationships:
+1. You can now distribute the `line_items` table in the same fashion as the `orders` table. Return to the Cloud Shell pane at the bottom of the Azure portal window. Copy and paste the following code to drop any foreign key references, distribute the table, and then re-create the table relationships:
 
     ```sql
     ALTER TABLE line_items
@@ -381,7 +381,7 @@ After you distribute all of your database tables, you want to take final executi
 
 1. Ensure that the display of query execution times is displayed in the Cloud Shell window. Run `\timing` at the Citus prompt if it isn't.
 
-1. Execute the query to retrieve the products list for a store again and note the execution time:
+1. Execute the query to retrieve the products list for a store again, and note the execution time:
 
     ```sql
     -- List products by store
@@ -390,7 +390,7 @@ After you distribute all of your database tables, you want to take final executi
     WHERE s.store_id = 336;
     ```
 
-1. Rerun the query that retrieves the top five products sold by a store and record the execution time:
+1. Rerun the query that retrieves the top five products sold by a store, and record the execution time:
 
     ```sql
     -- 5 most ordered products by store
@@ -406,7 +406,7 @@ After you distribute all of your database tables, you want to take final executi
     LIMIT 5;
     ```
 
-1. Execute the average order amount query again and document its execution time:
+1. Execute the average order amount query again, and document its execution time:
 
     ```sql
     -- Average order amounts by store
@@ -426,7 +426,7 @@ After you distribute all of your database tables, you want to take final executi
     GROUP BY s.store_id;
     ```
 
-1. Run the Tailspin Toys internal cross-tenant aggregation query again and record the execution time:
+1. Run the Tailspin Toys internal cross-tenant aggregation query again, and record the execution time:
 
     ```sql
     -- Internal cross-tenant aggregation
@@ -461,7 +461,7 @@ For the **5 most ordered products by store** query, there was a marked increase 
 
 The **average order amounts by store** query joins `stores` with a CTE that queries the `line_items` table. There was a slight increase in query execution time when you ran the query with only the `stores` table distributed. This query benefited from using a CTE, so that the coordinator node could execute the `line_items` query locally and pass query execution for the `stores` portion of the query on the worker node that hosts the shard that contains data for the store that has a `store_id` of `5`. The CTE reduced how much data needed to be shuffled to complete the query.
 
-The **internal cross-tenant aggregation** query joins `stores` with `line_items`, and then does several aggregations on different fields. Before you distributed the tables, all data resided on the coordinator node and joins between local tables could happen efficiently. When `stores` was distributed and `line_items` wasn't distributed, the coordinator node had to create query fragments for each shard, sending one to each of the 32 shards in the database to retrieve data for each store. The data returned from each shard had to be joined with data from the local `line_items` table on the coordinator node. The database couldn't yet take advantage of the parallel execution that'js possible when table data is distributed and colocated. Post-distribution, all data that's associated with each store is distributed and colocated so that the query can be parallelized, and execution time improved slightly compared to the predistribution time.
+The **internal cross-tenant aggregation** query joins `stores` with `line_items`, and then does several aggregations on different fields. Before you distributed the tables, all data resided on the coordinator node and joins between local tables could happen efficiently. When `stores` was distributed and `line_items` wasn't distributed, the coordinator node had to create query fragments for each shard, sending one to each of the 32 shards in the database to retrieve data for each store. The data returned from each shard had to be joined with data from the local `line_items` table on the coordinator node. The database couldn't yet take advantage of the parallel execution that's possible when table data is distributed and colocated. Post-distribution, all data that's associated with each store is distributed and colocated so that the query can be parallelized, and execution time improved slightly compared to the predistribution time.
 
 ## Truncate local data
 

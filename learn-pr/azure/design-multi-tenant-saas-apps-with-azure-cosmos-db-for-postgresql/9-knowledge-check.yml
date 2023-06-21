@@ -16,21 +16,21 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "When preparing multitenant tables for migration from a single-node to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but which doesn't contain a column that directly references it?"
+  - content: "When preparing multitenant tables for migration from a single-node database to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but which doesn't contain a column that directly references it?"
     choices:
     - content: "Ready for distribution"
       isCorrect: false
       explanation: "Try again. Tables that are classified as ready for distribution already contain the distribution column and are ready to be distributed without changes."
     - content: "Needs backfill"
       isCorrect: true
-      explanation: "Correct! Tables that are in this category require denormalization to add the selected distribution column, which must then be backfilled by using the appropriate value."
+      explanation: "Correct! Tables that are in this category require denormalization to add the selected distribution column, which must then be backfilled with the appropriate value."
     - content: "Reference table"
       isCorrect: false
       explanation: "Try again. Reference tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants."
     - content: "Local table"
       isCorrect: false
       explanation: "Try again. Local tables are typically not joined to other tables and don't contain the distribution key."
-  - content: "Which distribution function is the safest to use for write-intensive tables when migrating a production multitenant database from a single-node to a multi-node cluster?"
+  - content: "Which distribution function is the safest to use for write-intensive tables when migrating a production multitenant database from a single node to a multi-node cluster?"
     choices:
     - content: "`concurrently_distribute_table()`"
       isCorrect: false
