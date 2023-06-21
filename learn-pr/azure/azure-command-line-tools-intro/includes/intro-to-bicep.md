@@ -6,7 +6,7 @@ throughout the development lifecycle to deploy your infrastructure.
 
 Before you create a storage account, you need to create a resource group or use an existing one.
 
-Create an Azure resource group named **storageaccountexamplerg** in the **eastus** region:
+Create an Azure resource group named `storageaccountexamplerg` in the `eastus` region:
 
 # [Azure CLI](#tab/azurecli)
 
@@ -89,7 +89,7 @@ Get-AzStorageAccount -ResourceGroupName storageaccountexamplerg
 
 Deleting a resource group deletes the resource group and all resources
 that it contains. If resources outside the scope of the storage account that you created in this unit
-exist in the **storageaccountexamplerg** resource group, they're also deleted.
+exist in the `storageaccountexamplerg` resource group, they're also deleted.
 
 # [Azure CLI](#tab/azurecli)
 

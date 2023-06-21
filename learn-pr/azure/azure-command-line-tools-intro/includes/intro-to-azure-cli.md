@@ -29,7 +29,7 @@ Azure Cloud Shell.
 Before you create a storage account, you need to create a resource group or use an existing one. A resource group is a logical container in which Azure
 resources are deployed and managed as a group.
 
-Create an Azure resource group named **storageaccountexamplerg** in the **eastus** region by using the
+Create an Azure resource group named `storageaccountexamplerg` in the `eastus` region by using the
 `az group create` command:
 
 ```azurecli
@@ -76,7 +76,7 @@ az storage account list --resource-group storageaccountexamplerg
 
 You use the `az group delete` command to delete a resource group. The only mandatory parameter is **name**. Deleting a resource group deletes the group and all resources
 that it contains. If resources outside the scope of the storage account that you created in this unit
-exist in the **storageaccountexamplerg** resource group, they're also deleted.
+exist in the `storageaccountexamplerg` resource group, they're also deleted.
 
 ```azurecli
 az group delete --name storageaccountexamplerg

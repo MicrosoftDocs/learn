@@ -21,8 +21,8 @@ Several Terraform providers enable the management of Azure infrastructure:
 ## Create a storage account
 
 All Terraform configurations must contain a `provider` block. The following HCL code specifies the Azure
-Resource Manager provider (**azurerm**). An Azure resource group named
-**storageaccountexamplerg** is defined in the **eastus** location. An Azure storage account
+Resource Manager provider (`azurerm`). An Azure resource group named
+`storageaccountexamplerg` is defined in the `eastus` location. An Azure storage account
 is created within the resource group. The storage account name is the first 24 characters of a
 number generated via the `md5` function.
 
