@@ -274,7 +274,7 @@ Add the following code to the end of the pipeline:
 
 1. Select **Save and run** at upper right, and then select **Save and run** again to trigger the pipeline run.
 1. Select **Pipelines**, and then select the name of the run and the **Build** stage to see the steps as they run.
-1. After the pipeline completes successfully, expand the **DeploymentJob** on the left, select **Update the web app with the new container**, and copy the **App Service Application URL** from the right pane.
+1. After the pipeline completes successfully, expand the **DeploymentJob** at left, select **Update the web app with the new container**, and copy the **App Service Application URL** from the right pane.
 
    :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of Azure Pipelines showing the location of the website URL.":::
 
