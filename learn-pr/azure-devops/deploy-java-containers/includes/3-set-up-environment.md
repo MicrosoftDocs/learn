@@ -23,7 +23,7 @@ Java applications that are deployed to Azure can connect to resources within Azu
 
 ## Java and Azure DevOps
 
-Azure DevOps provides a wide range of features for managing the entire software lifecycle for Java developers. Developers can cherry pick the features they want to make their processes as efficient as possible.
+Azure DevOps provides a wide range of features for managing the entire software lifecycle for Java developers. Developers can pick the features they want to make their processes as efficient as possible.
 
 If you need to build and deploy source code from GitHub or another source control system, Azure Pipelines provides various build, test, and deployment tasks for Java apps. If Azure Pipelines doesn't provide the specific task you need, you can write scripts to fill in the gaps.
 

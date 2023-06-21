@@ -10,19 +10,24 @@ In this unit, you:
 
 ## Set up Azure DevOps
 
-Make sure you have the necessary permissions and capabilities in Azure DevOps to create a project, sign in to Azure, connect to GitHub, and run pipelines.
+In this section, you make sure your Azure DevOps account has the necessary permissions and capabilities to:
+
+- Create a project.
+- Run pipelines in your project.
+- Sign in to Azure.
+- Connect to GitHub.
 
 ### Project creation permissions
 
 To create an Azure DevOps project, you need access to an Azure DevOps organization with [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administration** group.
 
-### Parallel jobs access and availability
+### Parallel jobs availability
 
 To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most Azure DevOps private projects allow one Microsoft-hosted parallel job with a certain number of free minutes available.
 
 To check availability, select **Organization settings** at the bottom of the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
-### Azure sign-in user in Azure DevOps
+### Azure sign-in account
 
 You don't need an Azure subscription to use Azure DevOps, but this module uses Azure DevOps to deploy resources that exist in your Azure subscription. To simplify this process, you use the same Microsoft account to sign in to your Azure subscription and your Azure DevOps organization.
 
@@ -32,13 +37,16 @@ When you add the user, choose the **Basic** access level. Then sign out of Azure
   
 ### Azure Pipelines authorization for GitHub
 
-Azure Pipelines needs access to your GitHub account so it can pull the latest source code from your repository. You can install and authorize the Azure Pipelines extension for your GitHub repository now, or later when you create your service connections or pipeline. To install and authorize the Azure Pipelines extension for GitHub now:
+Azure Pipelines needs access to your GitHub account so it can pull the latest source code from your repository. To install and authorize the Azure Pipelines extension for GitHub:
 
 1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true), and search for and select **Azure Pipelines**.
 1. At the bottom of the **Azure Pipelines** page, select **Install it for free**.
 1. Fill out the form and select **Save**.
 1. Select **Only select repositories** and choose the **mslearn-java-containers** repository that you forked earlier.
 1. Select **Install**.
+
+>[!NOTE]
+>Optionally, you can install and authorize the Azure Pipelines extension for your GitHub repository later, when you create your service connections or pipeline. 
 
 ## Create your Azure DevOps project
 
@@ -58,9 +66,6 @@ Create the necessary Azure service connections to allow Azure Pipelines to acces
 
 > [!IMPORTANT]
 > Make sure that you're signed in to Azure DevOps with an Azure sign-in account that has the **Owner** role in Azure.
-
->[!NOTE]
->If you didn't authorize Azure Pipelines to access GitHub earlier, you can use a service connection to grant authorization. Use the following instructions to set up a service connection, and choose **GitHub** on the **New service connection** screen. On the **New GitHub service connection** screen, select **AzurePipelines** under **OAuth Configuration**, and then select **Authorize**.
 
 ### Azure resource service connection
 
@@ -96,6 +101,9 @@ Create the necessary Azure service connections to allow Azure Pipelines to acces
 
 1. Select **Grant access permission to all pipelines**.
 1. Select **Save**.
+
+>[!NOTE]
+>If you didn't yet authorize Azure Pipelines to access GitHub, you can use a service connection to grant authorization. Follow the preceding instructions to set up a service connection, and choose **GitHub** on the **New service connection** screen. Select **AzurePipelines** on the **New GitHub service connection** screen, and then select **Authorize**.
 
 ## Create Azure Pipelines variables
 
@@ -139,10 +147,7 @@ Now use Azure Pipelines to create your CI/CD build and deployment pipeline. You 
 1. On the **Select a repository** page, select your **mslearn-java-containers** repository.
 
    - If prompted, select your GitHub account, select **Authorize**, select **Authorize Azure Pipelines**, and sign in to GitHub.
-   - If you haven't yet installed the Azure Pipelines extension and authorized Azure Pipelines to access GitHub, you can do that now:
-
-     1. Select **Authorize AzurePipelines** on the **OAuth** page.
-     1. On the **Approve and install Azure Pipelines** page, select **Only select repositories**, select your **mslearn-java-containers** repository, and then select **Approve and install**.
+   - If you haven't yet installed and authorized the Azure Pipelines extension, select **Approve and install Azure Pipelines**.
 
 1. On the **Configure your pipeline** screen, select **Starter pipeline**. You could choose other templates that provide starter pipeline code, but for this learning path you define each build step.
 1. On the **Review your pipeline YAML** screen, view the starter pipeline configuration code.
@@ -263,9 +268,9 @@ Add the following code to the end of the pipeline:
 
 ## Trigger the pipeline
 
-Take a moment to review your *azure-pipelines.yml* file, and ensure that the indentation looks like the following example:
+1. Take a moment to review your *azure-pipelines.yml* file, and ensure that the indentation looks like the following example:
 
-[!code-yml[](code/complete-azure-pipelines.yml)]
+   [!code-yml[](code/complete-azure-pipelines.yml)]
 
 1. Select **Save and run** at upper right, and then select **Save and run** again to trigger the pipeline run.
 1. Select **Pipelines**, and then select the name of the run and the **Build** stage to see the steps as they run.
