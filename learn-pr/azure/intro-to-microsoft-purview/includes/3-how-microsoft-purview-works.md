@@ -28,10 +28,10 @@ For example, if you have data stored in an Amazon S3 standard bucket, you need t
 
 In Microsoft Purview, there are a few options to use for authentication when the service needs to scan data sources. Some of these options are:
 
-* Microsoft Purview Managed Identity
-* Account Key (using Azure Key Vault)
-* SQL Authentication (using Key Vault)
-* Service Principal (using Key Vault)
+* Microsoft Purview managed identity
+* Account key (using Azure Key Vault)
+* SQL authentication (using Key Vault)
+* Service principal (using Key Vault)
 
 ### Map data
 

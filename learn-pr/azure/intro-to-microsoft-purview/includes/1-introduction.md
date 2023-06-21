@@ -27,6 +27,6 @@ This high-level overview of Microsoft Purview helps you discover the key aspects
 * Classify sensitive data. 
 * Empower customers to find trustworthy data. 
 
-## What is the main goal?
+## What's the main goal?
 
 By the end of this session, you'll be able to decide if Microsoft Purview is the right choice to help you manage your enterprise data environment and your various data sources.
