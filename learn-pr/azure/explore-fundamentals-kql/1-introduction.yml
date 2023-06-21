@@ -3,7 +3,7 @@ uid: learn.azure.explore-fundamentals-kql.introduction
 title: Introduction
 metadata:
   title: introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "In this module, you'll learn about what KQL does, how it works, and when to use it. You'll explore basic query types, learn about some of the services that use KQL, and run simple queries in these service environments."
   ms.date: 3/26/2023
   author: YaelSchuster
   ms.author: yaschust

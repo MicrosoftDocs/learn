@@ -3,7 +3,7 @@ uid: learn.azure.explore-fundamentals-kql.query-basics
 title: Query language basics
 metadata:
   title: learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Explore the basics of a query language, KQL specifically, and begin to learn how, where, and when you might want to use it."
   ms.date: 3/26/2023
   author: YaelSchuster
   ms.author: yaschust

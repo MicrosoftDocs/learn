@@ -2,7 +2,7 @@
 uid: learn.azure.explore-fundamentals-kql
 metadata:
   title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
   ms.date: 06/07/2023
   author: YaelSchuster
   ms.author: yaschust
