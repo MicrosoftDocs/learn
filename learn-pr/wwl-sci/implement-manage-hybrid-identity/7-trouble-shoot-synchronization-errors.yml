@@ -4,11 +4,11 @@ title: Trouble-shoot synchronization errors
 metadata:
   title: Trouble-shoot synchronization errors
   description: "Trouble-shoot synchronization errors"
-  ms.date: 02/03/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10
