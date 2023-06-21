@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-java-containers.2-azure-support-java
-title: Exercise - Set up your Azure DevOps environment
+title: Exercise - Set up your GitHub and Azure resources
 metadata:
-  title: Exercise - Set up your Azure DevOps environment
-  description: Create your Azure DevOps project and Azure resources.
+  title: Exercise - Set up your GitHub and Azure resources
+  description: Create and configure your GitHub repository and Azure App Service environment for this module.
   ms.date: 08/26/2022
   author: juliakm
   ms.author: jukullam

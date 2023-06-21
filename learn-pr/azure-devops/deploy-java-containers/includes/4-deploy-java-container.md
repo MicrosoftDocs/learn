@@ -46,7 +46,7 @@ Azure Pipelines needs access to your GitHub account so it can pull the latest so
 1. Select **Install**.
 
 >[!NOTE]
->Optionally, you can install and authorize the Azure Pipelines extension for your GitHub repository later, when you create your service connections or pipeline. 
+>Optionally, you can install and authorize the Azure Pipelines extension for your GitHub repository later when you create your service connections or pipeline. 
 
 ## Create your Azure DevOps project
 
@@ -87,7 +87,7 @@ Create the necessary Azure service connections to allow Azure Pipelines to acces
 
 ### Container Registry service connection
 
-1. On the **Service connections** page, select **New service connection**.
+1. Back on the **Service connections** page, select **New service connection**.
 1. On the **New service connection** screen, select **Docker Registry**, and then select **Next**.
 1. On the **New Docker Registry service connection** page, under **Registry type**, select **Azure Container Registry**.
 1. Under **Authentication Type**, select **Service Principal**.
