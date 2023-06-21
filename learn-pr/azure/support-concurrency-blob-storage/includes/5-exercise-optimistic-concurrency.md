@@ -24,7 +24,7 @@ In this exercise you will:
 
     This modifies the simulated news editor application to record the ETag of the blob at the time it is read.
 
-1. In `SimulateReporter`, change the call to `UploadAsync` to set an IfMatch condition as part of a `BlobUploadOptions` instance. When passed to the upload method, this condition confirms the ETag before saving the changes. This modifies the simulated news editor application to enforce optimistic concurrency.
+1. In `SimulateReporter`, change the call to `UploadAsync` to set a request condition as part of a `BlobUploadOptions` instance. When passed to the upload method, this condition confirms the ETag before saving the changes. This modifies the simulated news editor application to enforce optimistic concurrency.
     
     **Remove** the following code from the method:
 
@@ -64,7 +64,7 @@ In this exercise you will:
     }
     ```
 
-    The `AccessCondition.GenerateIfMatchCondition(currentETag)` check asks blob storage to check the current value of the ETag for the report, if the two values match then the write operation will succeed. If some other process has updated the blob storage, then the value for the ETag in Azure will be different, and a `StorageException` will be raised.
+    The `IfMatch = currentETag` condition asks Blob storage to check the current value of the ETag for the report. If the two values match then the write operation will succeed. If some other process has updated the blob, then the value for the ETag on the server will be different and an exception will be raised.
 
 1. Save your changes (CTRL+S) and close the code editor (CTRL+Q).
 
@@ -76,7 +76,7 @@ In this exercise you will:
     dotnet run
     ```
 
-    The results are:
+    The results are similar to the following output:
 
     ```console
     The newsroom chief has saved story notes to the blob mslearn-blob-concurrency-demo/newsStory.txt
@@ -92,7 +92,7 @@ In this exercise you will:
     Reporter B has finished writing their story
     Reporter B has saved their story to Blob storage. New blob contents: "[[REPORTER B'S STORY]]"
     Reporter A has finished writing their story
-    Reporter A sorry cannot save the file as server returned an error: The condition specified using HTTP conditional header(s) is not met.
+    Reporter A Sorry, cannot save the file as server returned an error: The condition specified using HTTP conditional header(s) is not met.
 
     =============================================
 

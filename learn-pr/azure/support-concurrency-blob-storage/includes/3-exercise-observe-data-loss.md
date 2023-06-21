@@ -69,7 +69,7 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
     }
     ```
 
-    In the simulation, two instances of this method will run simultaneously with different timings. Both reporters will observe the same contents when they first load the file from blob storage. The reporter that takes longer to write their story and save it back to the blob will overwrite the content placed there by the first author without knowing it.
+    In the simulation, two instances of this method will run simultaneously with different timings. Both reporters will observe the same contents when they first load the file from Blob storage. The reporter that takes longer to write their story and save it back to the blob will overwrite the content placed there by the first author without knowing it.
 
 1. Close the Code editor (CTRL+Q).
 
