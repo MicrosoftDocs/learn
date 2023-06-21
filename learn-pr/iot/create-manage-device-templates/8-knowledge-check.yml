@@ -1,0 +1,43 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-manage-device-templates.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is a part of Create and manage device templates in Azure IoT Central
+  ms.date: 05/11/2023
+  author: dominicbetts
+  ms.author: dobett
+  manager: lizross
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
+azureSandbox: false
+labModal: false
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "A developer needs to create a device template in Azure IoT Central. What are the two components of a device template?"
+    choices:
+    - content: "Device capability model and Views."
+      isCorrect: true
+      explanation: "Correct. The two components are the device capability model and the views."
+    - content: "Device connectivity model and Views."
+      isCorrect: false
+      explanation: "Incorrect. \"Device connectivity model\" is not a component of a device template."
+    - content: "Device capability model and Controls."
+      isCorrect: false
+      explanation: "Incorrect. \"Controls\" is not a component of a device template."
+  - content: "The device model section of a device template is made up of one or more interfaces. Which of the following choices describes the items that can be added to an interface?"
+    choices:
+    - content: "Capabilities that define either telemetry or property capability types."
+      isCorrect: false
+      explanation: "Incorrect. Capabilities that contain telemetry and property capability types can be added to an interface, but this answer choice does not provide the full list of capability types."
+    - content: "Capabilities that define telemetry, property, or command capability types."
+      isCorrect: true
+      explanation: "Correct. Capabilities that define telemetry, properties, and commands can be added to an interface within a device model."
+    - content: "Capabilities that define the authentication, telemetry, or property capability types."
+      isCorrect: false
+      explanation: "Incorrect. Capabilities that contain telemetry and property capability types can be added to an interface, but authentication is not a capability type."

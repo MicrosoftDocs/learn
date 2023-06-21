@@ -17,9 +17,9 @@ All built-in roles are preconfigured bundles of permissions designed for specifi
 
 Although there are many built-in admin roles in Azure AD, custom roles give flexibility when granting access. A custom role definition is a collection of permissions that you choose from a preset list. The list of permissions to choose from are the same permissions used by the built-in roles.  The difference is that you get to choose which permissions you want to include in a custom role.
 
-Granting permission using custom Azure AD roles is a two-step process.  The first step involves creating a custom role definition, consisting of a collection of permissions that you add from a preset list.  Once you’ve created your custom role definition, the second step is to assign that role to users or groups by creating a role assignment.
+Granting permission using custom Azure AD roles is a two-step process.  The first step involves creating a custom role definition, consisting of a collection of permissions that you add from a preset list.  Once you’ve created your custom role definition, the second step is to assign that role to users or groups by creating a role assignment. A role assignment grants the user the permissions in a role definition, at a specified scope.  A scope defines the set of Azure AD resources the role member has access to. 
 
-A role assignment grants the user the permissions in a role definition, at a specified scope.  A scope defines the set of Azure AD resources the role member has access to.  A custom role can be assigned at organization-wide scope, meaning the role member has the role permissions over all resources. A custom role can also be assigned at an object scope. An example of an object scope would be a single application.  The same role can be assigned to one user over all applications in the organization and then to another user with a scope of only the Contoso Expense Reports app.
+Once you create a role definition and you can assign it many times at different scopes. A custom role can be assigned to one user at an organization-wide scope, meaning the role member has the role permissions over all resources. The same custom role can be assigned to another user at an object scope.  That object scope may be a single virtual machine or a single application, as an example.
 
 Custom roles require an Azure AD Premium P1 or P2 license.
 
@@ -40,7 +40,7 @@ To make it convenient to manage identity across Microsoft 365 services, Azure AD
 
 - Service-specific roles: For major Microsoft 365 services, Azure AD includes built-in, service-specific roles that grant permissions to manage features within the service. For example, Azure AD includes built-in roles for Exchange Administrator, Intune Administrator, SharePoint Administrator, and Teams Administrator roles that can manage features with their respective services.
 
-- Cross-service roles: There are some roles within Azure AD that span services. For example, Azure AD has security-related roles, like Security Administrator, that grant access across multiple security services within Microsoft 365.  Similarly the Compliance Administrator role you can manage Compliance-related settings in Microsoft 365 Compliance Center, Exchange, and so on.
+- Cross-service roles: There are some roles within Azure AD that span services. For example, Azure AD has security-related roles, like Security Administrator, that grant access across multiple security services within Microsoft 365.  Similarly, with the Compliance Administrator role you can manage compliance-related settings in Microsoft Purview Compliance Manager, Exchange, and so on.
 
 :::image type="content" source="../media/role-overlap-diagram-v2.png" alt-text="Azure AD role categories":::
 
