@@ -15,14 +15,14 @@ First, it's helpful to centrally **manage assets** like environments, code, data
 :::column span="2":::
 * **Model registry**: As teams experiment with different versions of a model, a model registry provides a central place to save each version. With a registry, teams can easily revert to a previous version if something isn't working, even after the solution has gone into production. The model registry also serves as an audit trail for each model's history.
 * **Code management**: Technical decision-makers need to determine which technologies and processes their teams will use for code management. This generally includes code repositories like GitHub where code can be saved, versioned, shared, and reused. It also includes tools for using and versioning code.
+* **Dataset management**: We also recommend saving training datasets centrally. This way, teams can reuse them, share them with colleagues, or monitor how they change over time to manage drift.
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
 > ![A screenshot of a graph showing MLOps practices: data scientists and IT work together on model reproducibility, validation, deployment, and retraining.](../media/7-discover-business-value-applying-devops-1.png)
-* **Dataset management**: We also recommend saving training datasets centrally. This way, teams can reuse them, share them with colleagues, or monitor how they change over time to manage drift.
-* **Shared environments**: Create model environments that can be shared among individuals. This simplifies the handoff between steps in the model creation process and makes it possible for teams to collaborate on certain steps.
 :::column-end:::
 :::row-end:::
+* **Shared environments**: Create model environments that can be shared among individuals. This simplifies the handoff between steps in the model creation process and makes it possible for teams to collaborate on certain steps.
 
 Second, we recommend automating tasks with **machine learning pipelines**. A pipeline is a workflow of complete computing tasks that can be run independently. In machine learning, a pipeline can automate data preparation, training configuration, training processes, or model validation. Pipelines save costs and time for data scientists each time they need to iterate some part of the machine learning lifecycle.
 
