@@ -12,4 +12,4 @@ Imagine that the data travels through a data processing funnel. The tabular inpu
 
 :::image type="content" source="../media/kql-funnel.png" alt-text="Schematic image of data being processed by a funnel.":::
 
-You can see by the shape of the filter that the largest amount of data is processed at the "top" of the funnel. Steps that remove the largest amounts of data are used at the beginning of the query, so that the following operators have a smaller amount of data to process and the query result is returned quickly. In fact, one of the advantages of KQL is its ability to quickly process huge amounts of highly varied data.
+You can see by the shape of the filter that the data at the "top" of the funnel starts out larger than the size of the data at the end. Steps that remove the largest amounts of data are generally used at the beginning of the query, so that the following operators have a smaller amount of data to process and the query result is returned quickly. In fact, one of the advantages of KQL is its ability to quickly process huge amounts of highly varied data.

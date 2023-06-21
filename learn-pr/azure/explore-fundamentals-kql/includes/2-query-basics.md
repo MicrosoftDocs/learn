@@ -2,11 +2,11 @@
 Organizations often collect a wide range of data about IT resources and users. Querying data is a powerful tool for working with and acting on data you collect.
 
 
-Here, you'll learn about what a query is and what you can do using Kusto Query Language (KQL). 
+Here, you'll learn about what a query is and what you can do using KQL. 
 
 ## What is a query?
 
-A query is a request for information from a data source, such as a database or table. A simple query might retrieve:
+A query is a request for information from a data source, such as a database or table. A simple query might return:
 
 - Information about a user from a table of registered users.
 - All information in a specific table.
@@ -16,13 +16,13 @@ A query language also lets you define how to present the data that's returned. F
 
 ## What is a query language?
 
-There are various ways you can retrieve data from a database, including:
+There are various ways you can return data from a database, including:
 
 - Selecting search parameters from a menu.
 - Choosing the fields and values that define the query through a user interface.
 - Using a query language to request information from a database in an API call or through a user interface. Using a query language is the most complex way to query data, but it's also the most flexible.
 
-A query language consists of a set of keywords, operators, and syntax rules for writing statements that retrieve data from a database. 
+A query language consists of a set of keywords, operators, and syntax rules for writing statements that return data from a database. 
 
 There are many query languages, each with its own syntax, capabilities, and strengths. Common query languages include Structured Query Language (SQL), a standard language for storing, manipulating and retrieving data in databases, and XQuery, a query language for XML data.
 

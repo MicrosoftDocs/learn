@@ -10,7 +10,7 @@ By analyzing structured, semi-structured, and unstructured data across time seri
 
 :::image type="content" source="../media/7-azure-data-explorer.png" alt-text="Screenshot of query environment in Azure Data Explorer." lightbox="../media/7-azure-data-explorer.png":::
 
-Kusto Query Language was developed for Azure Data Explorer and can be used in a variety of environments, including the [web UI](/azure/data-explorer/web-ui-query-overview), [Kusto CLI](/azure/data-explorer/kusto/tools/kusto-cli), and the desktop app [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer). You can find the full query language documentation set at [KQL overview](/azure/data-explorer/kusto/query/).
+KQL was developed for Azure Data Explorer and can be used in a variety of environments, including the [web UI](/azure/data-explorer/web-ui-query-overview), [Kusto CLI](/azure/data-explorer/kusto/tools/kusto-cli), and the desktop app [Kusto.Explorer](/azure/data-explorer/kusto/tools/kusto-explorer). You can find the full query language documentation set at [KQL overview](/azure/data-explorer/kusto/query/).
 
 ## Synapse Real-Time Analytics in Microsoft Fabric (Preview)
 
@@ -60,5 +60,5 @@ Configuration Manager is part of the Microsoft Intune family of products, which 
 
 :::image type="content" source="../media/7-cm-pivot.png" alt-text="Screenshot of query environment in CM Pivot in Configuration Manager." lightbox="../media/7-cm-pivot.png":::
 
-CMPivot uses a subset of the Kusto Query Language to search terms, identify trends, analyze patterns, and provide many other data-driven insights.  For more information, see [CMPivot queries](/mem/configmgr/core/servers/manage/cmpivot-overview#queries).
+CMPivot uses a subset of the KQL to search terms, identify trends, analyze patterns, and provide many other data-driven insights.  For more information, see [CMPivot queries](/mem/configmgr/core/servers/manage/cmpivot-overview#queries).
 

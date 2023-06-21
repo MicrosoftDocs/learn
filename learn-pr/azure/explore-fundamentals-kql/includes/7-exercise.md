@@ -2,7 +2,7 @@ You've learned about the structure and use of different types of query statement
 
 ## Query with tabular expression statements
 
-Tabular expression statements are fundamental in KQL as they allow us to filter and manipulate tabular data to retrieve desired results.
+Tabular expression statements are fundamental in KQL as they allow us to filter and manipulate tabular data to return desired results.
 
 Let's go through an example. Select the relevant tab for your environment.
 
