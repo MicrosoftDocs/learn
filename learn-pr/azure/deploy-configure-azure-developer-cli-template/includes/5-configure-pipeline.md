@@ -2,29 +2,28 @@ You have learned how to provision and deploy app resources to Azure and how to u
 
 ## Configure the CI/CD pipeline
 
-Most `azd` templates have CI/CD workflow files included with them in either the `.github` folder for GitHub Actions or the `.azdo` folder for Azure Pipelines. The sample template used in this module relies on GitHub Actions, but the `azd` command and workflow is the same regardless of the CI/CD platform. A GitHub repository is required for you to be able to setup CI/CD. You can either create this ahead of time by forking the original `azd` template repository, or you can create a repo using `azd` during the process of configuring the pipeline.
+Most `azd` templates have CI/CD workflow files included with them in either the `.github` folder for GitHub Actions or the `.azdo` folder for Azure Pipelines. The sample template used in this module relies on GitHub Actions, but the `azd` command and workflow is the same regardless of the CI/CD platform. A GitHub repository is required for you to be able to setup CI/CD. You can either create the new repository by forking the original `azd` template repository and setting it as a remote, or you can create a repo using `azd` during the pipeline configuration process, which is the approach you'll use in this example.
 
-Complete the following steps to configure your template to use a CI/CD piepline:
+Complete the following steps to configure a CI/CD pipeline for your template:
 
-1. In a command prompt opened to your project root directory, run the following command:
+1. In a command prompt set to your project root directory, run the following command:
 
     ```azdeveloper
-    azd pipeline
+    azd pipeline config
     ```
 
-1. If a GitHub origin is not set for your project, `azd` will how you would like to configure your remote repository Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` will complete the following tasks for you:
+1. If a GitHub origin is not set for your project, `azd` will ask how you would like to configure your remote repository. Select the option **Create a new private GitHub repository** and then enter a name for the new repo. `azd` will complete the following tasks for you:
 
-    * Creates and configures a Service Principal for the app on the Azure subscription.
-    * Steps you through a workflow to create and configure a GitHub repository and commit your project code to it. You can also choose to use an existing GitHub repository.
-    * Creates a secure connection between Azure and your repository using GitHub secrets.
-    * Runs the GitHub action when you check in the workflow file.
+    * Creates and configures a service principal for the app on the Azure subscription.
+    * Creates a GitHub repository and commits your project code to it.
+    * Configures a secure connection between Azure and your repository using the service principal and GitHub secrets.
 
 1. `azd` will also ask you if you want to commit and push your local changes to the configured pipeline. Enter *yes* and wait for it to finish.
 
 1. Select the output URL in the console to open a browser tab to the new GitHub repository.
 
-1. Navigate to the **Actions** tab, and you should see a workflow running to package, provision and deploy your code. GitHub Actions is essentially running `azd up` for you, just like you did in your local environment.
+1. Navigate to the **Actions** tab to find a workflow running that will authenticate, package, provision and deploy your code. The workflow uses the same `azd auth login`, `azd provision` and `azd deploy` commands you used previously. You can explore the details of this file in the `.github` folder of your project.
 
     :::image type="content" source="../media/azd-actions.png" alt-text="A screenshot showing a GitHub actions workflow running.":::
 
-Once your pipeline is configured, you can continuously update your Azure environment and deployed app by simply pushing your code changes to GitHub. You can also continue to run the commands locally like you did in the previous steps. Infrastructure as code files are idempotent, meaning no matter how many times you run them, the desired state will remain consistent.
+Once your pipeline is configured, you can continuously update your Azure environment and deployed app by simply pushing your code changes to GitHub. You can also continue to run `azd` commands locally like you did in the previous steps.
