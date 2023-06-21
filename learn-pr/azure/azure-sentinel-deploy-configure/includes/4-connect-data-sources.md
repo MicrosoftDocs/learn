@@ -42,7 +42,10 @@ In this example, we'll connect to Azure AD from Microsoft Sentinel:
 1. In the Azure portal, search for and select **Microsoft Sentinel**.
 1. In Microsoft Sentinel, under the **Content management** section, select **Content hub**.
 1. Find and select the solution for **Azure Active Directory**.
-1. On the top toolbar, select **Install/Update**.
+
+    :::image type="content" source="../media/4-content-hub.png" alt-text="Screenshot of the content hub page with Azure Active Directory selected." border="true":::
+
+1. On the top toolbar, select  :::image type="icon" source="../media/install-update-button.png"::: **Install/Update**.
 1. From the menu on the left-hand side, under the **Configuration** section, select **Data Connectors**. This page lists all the data connectors installed and their status.
 
     :::image type="content" source="../media/sentinel-azure-ad-connector-page.png" alt-text="Screenshot of the Microsoft Sentinel connector page with the list of connectors." border="true":::
