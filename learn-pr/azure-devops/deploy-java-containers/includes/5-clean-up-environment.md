@@ -31,11 +31,11 @@ To delete your resource group:
 
 ## Disable the pipeline or delete your project
 
-This Azure DevOps project automatically runs a CI/CD pipeline every time there's a change in the GitHub repository. The pipeline runs use up your free build minutes on hosted agents. To avoid using up your free build minutes, disable or delete your pipeline, or delete your Azure DevOps project, when you're finished with this module.
+The Azure Pipelines CI/CD pipeline runs automatically every time there's a change in the GitHub repository, using your allotted build minutes on hosted agents. To avoid using up your free build minutes, disable or delete your pipeline, or delete your Azure DevOps project, when you're finished with this module.
 
 ### Option 1: Disable the pipeline
 
-Disable the pipeline so that it doesn't process build requests. You can reenable the build pipeline later if you want to. Choose this option if you want to keep your DevOps project and pipeline for future reference.
+Disable the pipeline so that it doesn't process build requests. You can reenable the pipeline later if you want to. Choose this option if you want to keep your DevOps project and pipeline for future reference.
 
 To disable the pipeline:
 

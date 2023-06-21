@@ -8,17 +8,19 @@ In this unit, you:
 > * Create pipeline variables in Azure Pipelines.
 > * Create and trigger a CI/CD pipeline that builds and publishes the Java container app to App Service.
 
-## Prerequisites
+## Set up Azure DevOps
 
-To complete this unit, you need the following prerequisites. For more information about the prerequisites, see the module [Introduction](/training/modules/deploy-java-containers/1-introduction?azure-portal=true).
+Make sure you have the necessary permissions and capabilities in Azure DevOps to create a project, sign in to Azure, connect to GitHub, and run pipelines.
 
-### Azure DevOps project creation and parallel jobs access
+### Project creation permissions
 
-- To create an Azure DevOps project, you need access to an Azure DevOps organization with [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administration** group.
+To create an Azure DevOps project, you need access to an Azure DevOps organization with [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administration** group.
 
-- To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most free Azure DevOps projects allow one Microsoft-hosted parallel job with some number of free minutes available.
+### Parallel jobs access and availability
 
-  To check availability, select **Project settings** from the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
+To run the pipeline in this module, your Azure DevOps project must be able to run parallel jobs on Microsoft-hosted machines. Most Azure DevOps private projects allow one Microsoft-hosted parallel job with a certain number of free minutes available.
+
+To check availability, select **Organization settings** at the bottom of the Azure DevOps left navigation, and then select **Parallel jobs** under **Pipelines**. For more information, see [Check for available parallel jobs](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs).
 
 ### Azure sign-in user in Azure DevOps
 
@@ -30,7 +32,7 @@ When you add the user, choose the **Basic** access level. Then sign out of Azure
   
 ### Azure Pipelines authorization for GitHub
 
-You need to grant Azure Pipelines access to your GitHub account so it can pull the latest source code from your repository. You can install the Azure Pipelines extension for your GitHub repository now, or when you create your project and pipeline in the next section. To install the Azure Pipelines extension now:
+Azure Pipelines needs access to your GitHub account so it can pull the latest source code from your repository. You can install and authorize the Azure Pipelines extension for your GitHub repository now, or later when you create your service connections or pipeline. To install and authorize the Azure Pipelines extension for GitHub now:
 
 1. Go to the [GitHub Marketplace](https://github.com/marketplace?azure-portal=true), and search for and select **Azure Pipelines**.
 1. At the bottom of the **Azure Pipelines** page, select **Install it for free**.
@@ -38,9 +40,9 @@ You need to grant Azure Pipelines access to your GitHub account so it can pull t
 1. Select **Only select repositories** and choose the **mslearn-java-containers** repository that you forked earlier.
 1. Select **Install**.
 
-## Set up your Azure DevOps project
+## Create your Azure DevOps project
 
-Create an Azure DevOps project to contain your CI/CD pipeline. Make sure you're the Azure DevOps organization owner or a **Project Collection Administrators** group member, or have **Create new projects** permission.
+Create an Azure DevOps project to contain your CI/CD pipeline. Make sure you're the Azure DevOps organization owner, are a **Project Collection Administrators** group member, or have **Create new projects** permission.
 
 1. Go to your Azure DevOps organization at [dev.azure.com](https://dev.azure.com?azure-portal=true). If you're already signed in to Azure, you're automatically signed in to Azure DevOps. Otherwise, sign in.
 1. Select **Get started**. 
@@ -50,24 +52,17 @@ Create an Azure DevOps project to contain your CI/CD pipeline. Make sure you're 
 1. Select **Advanced**, and make sure **Git** appears under **Version control**.
 1. Select **Create**.
 
-If you haven't yet installed the GitHub extension and authorized Azure Pipelines to access GitHub, you can do that now:
-
-1. On the new project page, select **Pipelines**, and on the next page, select **Create pipeline**.
-1. On the **Where is your code** page, select **GitHub**.
-1. Select **Authorize Azure Pipelines** on the **OAuth** page.
-1. On the **Approve and install Azure Pipelines** page, select **Only select repositories**, select your **mslearn-java-containers** repository, and then select **Approve and install**.
-
->[!NOTE]
->A third way to authorize Azure Pipelines to access GitHub is to set up a service connection for GitHub in Azure DevOps. Use the steps in the next section, and choose **GitHub** for the **New service connection**.
-
 ## Create Azure service connections
 
 Create the necessary Azure service connections to allow Azure Pipelines to access your Azure resources. Azure Pipelines uses the Azure resource service connection to deploy the Java application to App Service, and uses the Docker Registry connection to publish the application's Docker container to Container Registry.
 
 > [!IMPORTANT]
-> Make sure that you're signed in to Azure DevOps with your Azure sign-in account that has **Owner** access.
+> Make sure that you're signed in to Azure DevOps with an Azure sign-in account that has the **Owner** role in Azure.
 
-To create the Azure resource service connection:
+>[!NOTE]
+>If you didn't authorize Azure Pipelines to access GitHub earlier, you can use a service connection to grant authorization. Use the following instructions to set up a service connection, and choose **GitHub** on the **New service connection** screen. On the **New GitHub service connection** screen, select **AzurePipelines** under **OAuth Configuration**, and then select **Authorize**.
+
+### Azure resource service connection
 
 1. In your DevOps project, select **Project settings** at the bottom of the left navigation.
 1. Under **Pipelines**, select **Service connections**, and then select **Create service connection**.
@@ -85,7 +80,7 @@ To create the Azure resource service connection:
 1. Select **Grant access permission to all pipelines**.
 1. Select **Save**. Azure DevOps tests the connection to verify that it can connect to your Azure subscription. If Azure DevOps can't connect, you get the chance to sign in a second time.
 
-To create the Container Registry connection:
+### Container Registry service connection
 
 1. On the **Service connections** page, select **New service connection**.
 1. On the **New service connection** screen, select **Docker Registry**, and then select **Next**.
@@ -132,7 +127,7 @@ To define the pipeline variables:
 
    :::image type="content" source="../media/4-library-variable-group.png" alt-text="Screenshot of Azure Pipeline showing the variable group with five variables.":::
 
-1. Select **Save** near the top of the page to save your variable group to the pipeline.
+1. Select **Save** near the top of the page to save your variable group to Azure Pipelines.
 
 ## Create the CI/CD pipeline
 
@@ -141,10 +136,14 @@ Now use Azure Pipelines to create your CI/CD build and deployment pipeline. You 
 1. In your Azure DevOps project, select **Pipelines** from the left navigation.
 1. Select **Create Pipeline**.
 1. On the **Where is your code** page, select **GitHub**.
+1. On the **Select a repository** page, select your **mslearn-java-containers** repository.
 
-   If prompted, select your GitHub organization, select **Authorize**, select **Authorize Azure Pipelines**, and then sign in to GitHub.
+   - If prompted, select your GitHub account, select **Authorize**, select **Authorize Azure Pipelines**, and sign in to GitHub.
+   - If you haven't yet installed the Azure Pipelines extension and authorized Azure Pipelines to access GitHub, you can do that now:
 
-1. On the **Select a repository** screen, select your **mslearn-java-containers** repository.
+     1. Select **Authorize AzurePipelines** on the **OAuth** page.
+     1. On the **Approve and install Azure Pipelines** page, select **Only select repositories**, select your **mslearn-java-containers** repository, and then select **Approve and install**.
+
 1. On the **Configure your pipeline** screen, select **Starter pipeline**. You could choose other templates that provide starter pipeline code, but for this learning path you define each build step.
 1. On the **Review your pipeline YAML** screen, view the starter pipeline configuration code.
 
@@ -163,7 +162,7 @@ To set the pipeline variables, add the following code to the end of the file:
 [!code-yml[](code/4-2-azure-pipelines.yml)]
 
 > [!IMPORTANT]
-> YAML is very particular about indentation. The Azure Pipelines YAML editor underlines bad indentation with squiggly lines. After each of the following steps where you add YAML, be sure to review the the Azure Pipelines YAML editor and address any indentation issues.
+> YAML is very particular about indentation. The Azure Pipelines YAML editor underlines bad indentation with squiggly lines. After each step where you add YAML, be sure to review the the Azure Pipelines YAML editor and address any indentation issues.
 
 ### Build stage
 
@@ -269,15 +268,15 @@ Take a moment to review your *azure-pipelines.yml* file, and ensure that the ind
 [!code-yml[](code/complete-azure-pipelines.yml)]
 
 1. Select **Save and run** at upper right, and then select **Save and run** again to trigger the pipeline run.
-1. Select **Pipelines** and then select the run name to go to the pipeline run and track the steps as they run.
-1. After the pipeline completes successfully, select the **Update the web app** deployment task at left, and copy the **App Service Application URL** from the right pane.
+1. Select **Pipelines**, and then select the name of the run and the **Build** stage to see the steps as they run.
+1. After the pipeline completes successfully, expand the **DeploymentJob** on the left, select **Update the web app with the new container**, and copy the **App Service Application URL** from the right pane.
 
    :::image type="content" source="../media/4-deploy-url.png" alt-text="Screenshot of Azure Pipelines showing the location of the website URL.":::
 
 1. The site is hosted under the `/myshuttledev/` path on the server. Open a new browser tab and paste in the application URL you copied, appended with `/myshuttledev/`. For example, `http://java-container-cicd-18116.azurewebsites.net/myshuttledev/`.
 1. Go to the site to view the deployed application. If prompted for permission to access the insecure site, grant permission.
 
-   It might take a few minutes before you can see the site running on App Service. When the site appears, log in by using the user name `fred` and password `fredpassword`, and explore the site.
+   It might take a few minutes before you can see the site running on App Service. When the site appears, you can log in by using the user name `fred` and password `fredpassword` and explore the site.
 
    :::image type="content" source="../media/4-myshuttle.png" alt-text="Screenshot of the running website.":::
    

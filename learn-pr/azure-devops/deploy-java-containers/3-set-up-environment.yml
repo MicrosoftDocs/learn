@@ -35,7 +35,7 @@ quiz:
     - content: "Java deployments require using Java performance and monitoring tools."
       isCorrect: false
       explanation: "Specialized Java tools work as expected, but Azure performance and monitoring tools work the same on all platforms, including Java deployments."
-    - content: "On Azure, you can deploy Java only to websites."
+    - content: "Java can deploy only to websites on Azure."
       isCorrect: false
       explanation: "You can deploy Java apps to Azure App Service, Azure Functions, container-based services, and other Azure targets."
   - content: "What databases can Java apps connect to on Azure?"

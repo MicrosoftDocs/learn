@@ -83,7 +83,7 @@ To make the setup process more convenient and less prone to errors and typos, cr
 
 ### Create the Azure resources
 
-Now, create the Azure resources for deploying this solution.
+Now create the Azure resources for deploying this solution.
 
 > [!NOTE]
 > For learning purposes, you use the default network settings, which make your site accessible from the internet. In actual practice, you could configure an Azure virtual network that places your website in a network that's not internet routable and that only you and your team can access. Later, you could reconfigure your network to make the website available to your users.
@@ -94,7 +94,7 @@ Now, create the Azure resources for deploying this solution.
    az group create --name $rgName
    ```
 
-1. Run the following `az mysql server create` command to create an Azure Database for MySQL server that uses the name you defined earlier. You can change the administrator user name and password shown here, but be sure to remember them for later reference.
+1. Run the following `az mysql server create` command to create an Azure Database for MySQL server that uses the name you defined earlier. You can change the administrator user name and password shown here, but be sure to note them for later reference.
 
    ```azurecli
    az mysql server create \
@@ -178,7 +178,7 @@ Now, create the Azure resources for deploying this solution.
      --output table
    ```
 
-   In the output, note the login server, similar to the following example. You need this server name to create pipeline variables later.
+   In the output, note the login server, similar to the following example. You need this server name later to create pipeline variables.
 
    ```output
    LoginServer
@@ -187,4 +187,4 @@ Now, create the Azure resources for deploying this solution.
    ```
 
 > [!IMPORTANT]
-> The [Clean up your Azure DevOps environment](/training/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps to remove the resources you created in this unit. Cleaning up the resources ensures that you're not charged for Azure resources after you finish this module. If you created the resources in this unit, be sure to do the cleanup steps even if you don't complete the rest of the module.
+> The [Clean up your Azure DevOps environment](/training/modules/deploy-java-containers/5-clean-up-environment?azure-portal=true) page in this module contains important cleanup steps to remove the resources you created in this unit. Cleaning up the Azure resources ensures that you're not charged for the resources after you finish this module. If you created the resources in this unit, be sure to do the cleanup steps even if you don't complete the rest of the module.
