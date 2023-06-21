@@ -22995,16 +22995,6 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/5-knowledge-check.md",
-    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/6-knowledge-check.md",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/6-summary.md",
-    "redirect_url": "/training/modules/configure-project-repository-structure-support-secure-pipelines/7-summary.md",
-    "redirect_document_id": false
-  },
-  {
     "source_path": "learn-pr/wwl-azure/configure-secure-access-azure-repos-from-pipelines/7-knowledge-check.md",
     "redirect_url": "/training/modules/configure-secure-access-azure-repos-from-pipelines/8-knowledge-check.md",
     "redirect_document_id": false
