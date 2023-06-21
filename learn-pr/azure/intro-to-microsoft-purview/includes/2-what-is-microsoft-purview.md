@@ -4,7 +4,7 @@ Let's start with a few definitions and a quick tour of the core features of Micr
 
 Microsoft Purview is a unified data-governance service that helps you manage and govern your on-premises, multicloud, and software-as-a-service (SaaS) data. You can easily create a broad, up-to-date map of your data landscape with:
 
-- Automated data discovery.
+- Automated data discovery. 
 - Sensitive data classification.
 - End-to-end data lineage.
 
