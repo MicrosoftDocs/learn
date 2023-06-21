@@ -1,4 +1,4 @@
-As the volume and variety of data increases, the challenges of good data governance are likely to become more difficult. Digital transformation technologies have resulted in new data sources. How do users know what data is available? How do administrators manage data when they might not know what type of data exists and where it's stored? Does the data contain sensitive or personal information?
+As the volume and variety of data increases, the challenges of good data governance are likely to become more difficult. Digital transformation technologies have resulted in new data sources. How do users know what data is available? How do administrators manage data when they might not know what type of data exists and where it's stored? Does the data contain sensitive or personal information? 
 
 All these questions aren't easy to answer without insights into the data and the source of storage. Before you can develop data-governance plans for storage and usage, you need to understand the data your organization uses.
 
