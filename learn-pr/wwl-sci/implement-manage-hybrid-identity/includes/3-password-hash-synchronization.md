@@ -2,7 +2,7 @@
 
 Password hash synchronization is one of the sign-in methods used to accomplish hybrid identity. Azure AD Connect synchronizes a hash, of the hash, of a user's password from an on-premises Active Directory instance to a cloud-based Azure AD instance.
 
-:::image type="content" source="../media/password-hash-sync-architecture-1-e3833a51.png" alt-text="Diagram of Azure AD Connect passes a password hash for a user between on-premises and in the cloud.":::
+:::image type="content" source="../media/password-hash-sync-architecture-1-e3833a51.png" alt-text="Diagram of how Azure AD Connect passes a password hash for a user between on-premises and in the cloud.":::
 
 
 Active Directory Domain Services stores passwords in the form of a hash value representation of the actual user password. A hash value is a result of a one-way mathematical function (the hashing algorithm). There is no method to revert the result of a one-way function to the plain text version of a password. To synchronize your password, Azure AD Connect sync extracts your password hash from the on-premises Active Directory instance. Extra security processing is applied to the password hash before it is synchronized to the Azure Active Directory authentication service. Passwords are synchronized on a per-user basis and in chronological order.
