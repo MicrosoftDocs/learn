@@ -4,11 +4,11 @@ title: Manage Azure Active Directory Connect Health
 metadata:
   title: Manage Azure Active Directory Connect Health
   description: "Manage Azure Active Directory Connect Health"
-  ms.date: 02/03/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 15
