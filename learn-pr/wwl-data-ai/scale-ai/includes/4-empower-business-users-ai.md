@@ -8,11 +8,11 @@ AI can empower all people to achieve more, not just developers and data scientis
 
 Let's take some real examples:
 
-* **Pharmaceutical companies:** Workers in this sector deal with a vast amount of biomedical data. With a range of AI models, employees can quickly make sense of and derive key insights from this information to take on the next wave of challenges in medicine. They can iterate and test new hypotheses faster if they can use AI on their own, without relying on data science teams.
+* **Pharmaceutical companies:** Workers in this sector deal with a vast amount of biomedical data. With a range of AI models, employees can quickly understand and derive key insights from this information to take on the next wave of challenges in medicine. They can iterate and test new hypotheses faster if they can use AI on their own, without relying on data science teams.
 
-* **Sales:** Microsoft first attempt of using AI to score marketing leads failed. Salespeople realized the models were returning highly improbable results. This error came from a misalignment between data scientists and salespeople: leads were being erroneously disqualified. We realized we needed a collaborative forum, one where we technologists and salespeople would share how AI models were being used, underscoring the need for highly accurate data. Sellers now share with the technologists what types of data are most useful to them in scoring the leads. Based on those learnings, the results coming from the AI models have improved dramatically.
+* **Sales:** The first attempt bu Microsoft to use AI to score marketing leads failed. Salespeople realized the models were returning highly improbable results. This error came from a misalignment between data scientists and salespeople, and leads were being erroneously disqualified. We realized we needed a collaborative forum, one where we technologists and salespeople would share how AI models were being used, underscoring the need for highly accurate data. Sellers now share with the technologists what types of data are most useful to them in scoring the leads. Based on those learnings, the results coming from the AI models have improved dramatically.
 
-These are just two examples. AI provides business users and subject matter experts with limitless opportunities to do things that weren’t possible before. With access to AI, they can uncover hidden insights, find critical information, improve collaboration, and even automate repetitive tasks.
+Pharmaceutical companies and sales are just two examples. AI provides business users and subject matter experts with limitless opportunities to do things that weren’t possible before. With access to AI, they can uncover hidden insights, find critical information, improve collaboration, and even automate repetitive tasks.
 
 
 ## AI for everyone
@@ -37,4 +37,4 @@ We also want to make it possible for anyone to add AI capabilities to apps, no m
 
 Finally, we’re committed to advancing the responsible development and use of AI. We believe it’s critical to take a human-centered approach to AI development and governance. This approach should value diverse perspectives and emphasize listening, learning, and responding as technology evolves. Together, we can ensure the next generation of AI is designed, built, and used responsibly.
 
-But how does this approach work in complex jobs where expertise is key? Now, let’s look at some examples of how business users can work with AI already embedded in the applications they use every day.
+But how does this approach work in complex jobs where expertise is key? Next, let’s look at some examples of how business users can work with AI already embedded in the applications they use every day.

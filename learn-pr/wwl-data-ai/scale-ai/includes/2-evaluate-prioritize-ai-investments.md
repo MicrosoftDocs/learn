@@ -4,7 +4,7 @@ Adopting AI throughout an organization implies a serious investment. However, in
 
 First, most AI models require upfront investment before it's even possible to measure effectiveness. It's hard to predict the accuracy of the model and its business impact until you've prepared data and completed model training and testing. Additionally, it's hard to predict the amount of long-term maintenance a model needs. Individual models improve over time in ways that are difficult to calculate in advance.
 
-With AI initiatives, you need to think like a venture capitalist. That means being willing to invest and take risks amid uncertainties. But you don't have to shoot in the dark. Instead, you can use a framework to help prioritize AI investments.
+With AI initiatives, you need to think like a venture capitalist. That means being willing to invest and take risks amid uncertainties. But you don't have to guess. Instead, you can use a framework to help prioritize AI investments.
 
 ## Apply a horizon-based framework
 
@@ -16,7 +16,7 @@ At Microsoft, we use a horizon-based framework to evaluate and prioritize AI inv
 :::column span="2":::
 Not every AI application involves revolutionary changes. In fact, using AI to improve or automate existing processes is becoming essential to remaining competitive. Horizon 1 (H1) represents AI initiatives that optimize core business functions.
 
-For example: perhaps you manufacture electronic components. While you might manually inspect quality for 100 parts per hour, an AI model with image recognition capabilities could inspect 1,000 parts per hour.
+For example, perhaps you manufacture electronic components. While you might manually inspect quality for 100 parts per hour, an AI model with image recognition capabilities could inspect 1,000 parts per hour.
 
 :::column-end:::
 :::column span="2":::
@@ -60,13 +60,13 @@ As you map initiatives, it's helpful to involve the Chief Financial Officer (CFO
 
 ## Prioritize investments and organize phases
 
-We recommend prioritizing initiatives in phases: start with foundational initiatives in the bottom left and move towards transformational initiatives in the top right.
+We recommend prioritizing initiatives in phases: start with foundational initiatives in the bottom left of the Prioritization framework quadrant and move towards transformational initiatives in the top right of the quadrant.
 
 :::row:::
 :::column span="2":::
 We recommend this approach because it's helpful to grow capabilities and get buy-in before you move to more complex projects. Begin by forming technical teams that can prepare data appropriately and familiarize themselves with AI models. Starting with foundational initiatives also helps establish trust across the business and manage expectations related to AI initiatives. The success and value you're able to demonstrate in early initiatives pave the way for the more transformational projects.
 
-Another reason to start at the bottom left is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box AI models you can apply to common use cases. These applications cost less and their effect on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
+Another reason to start at the bottom left of the prioritization framework quadrant is that the technology used to support H1 initiatives is typically more accessible than advanced use cases. There are countless out-of-the-box AI models you can apply to common use cases. These applications cost less and their effect on the business is easier to estimate. As you build maturity with these accessible models, you can experiment with more complex AI initiatives and hone your objectives.
 
 :::column-end:::
 :::column span="2":::
@@ -79,7 +79,7 @@ H2 and H3 initiatives require more sophisticated data science capabilities, whic
 
 ## Define clear value drivers and KPIs for your AI investments
 
-Once you've chosen AI initiatives, it's important to identify value drivers and KPIs for each project. The framework provides a useful way to think about any investment—including AI initiatives.
+Once you've chosen AI initiatives, it's important to identify value drivers and key performance indicators (KPIs) for each project. The framework provides a useful way to think about any investment—including AI initiatives.
 
 | Value | Sample category | Definition | AI example |
 |---|---|---|---|
@@ -90,7 +90,7 @@ Once you've chosen AI initiatives, it's important to identify value drivers and 
 | | Cycle times | The time it takes to complete a process. | Accelerate product inspections with image recognition.                                    |
 | | Satisfaction (customer and/or employee) | How happy customers are with a company's products or services (which contributes to market share, competitive differentiation, and more). | Improve customer engagement with personalized discounts and product bundles. |
 
-As you invest in initiatives, it's important to develop market and financial models to help balance potential risk and return. Consider factors such as the total addressable market (TAM), net present value (NPV), and internal rate of return (IRR). Work with the CFO office and other key stakeholders to ensure the financial models make sense within the context of the business. These metrics are helpful to get their buy-in and ensure support throughout the process as well.
+As you invest in initiatives, it's important to develop market and financial models to help balance potential risk and return. Consider factors such as the total addressable market (TAM), net present value (NPV), and internal rate of return (IRR). Work with the CFO office and other key stakeholders to ensure the financial models make sense within the context of the business. These metrics can help secure their buy-in and ensure support throughout the process.
 
 Moving forward, we advise putting systemic processes in place to manage and evaluate value throughout the project lifecycle. We recommend taking an agile approach that happens in stages—after you invest in an initiative, evaluate the initial results. Then you can determine whether to continue, adjust your approach, or take another path. Continue to evaluate value at major milestones throughout the project.
 

@@ -4,7 +4,7 @@ Human beings are incredible. We have so many unique capabilities that no machine
 
 Business users in every industry can take advantage of a wide array of AI solutions. For example, subject matter experts like researchers and engineers can use AI to apply their expertise more effectively and efficiently.
 
-In this unit, we discuss what knowledge workers can do with available AI tools that don't require coding or data science expertise, from SaaS to low-code products. The goal is to gain independence from data science teams so these subject matter experts can focus on what they do best. Let’s look at some examples of how anyone can work with and even create AI to achieve more.
+In this unit, we discuss what knowledge workers can do with available AI tools that don't require coding or data science expertise, from software as a service (SaaS) to low-code products. The goal is to gain independence from data science teams so these subject matter experts can focus on what they do best. Let’s look at some examples of how anyone can work with and even create AI to achieve more.
 
 ## Build AI without code
 

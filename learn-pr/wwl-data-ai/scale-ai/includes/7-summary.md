@@ -14,7 +14,7 @@ Now that you have reviewed this module, you should be able to:
 [!include[](../../../includes/open-link-in-new-tab-note.md)]
 
 * To learn more about AI strategy and the importance of assessing your organization's capabilities to deliver AI projects, check our ["Create business value from AI" module](/training/modules/create-business-value).
-* To learn more about Ai technologies and available Microsoft products and services that help you adopt AI, check our ["Leverage AI tools and resources for your business" module](/training/modules/leverage-ai-tools).
+* To learn more about AI technologies and available Microsoft products and services that help you adopt AI, check our ["Leverage AI tools and resources for your business" module](/training/modules/leverage-ai-tools).
 * To learn more about how to scale AI capabilities across your organization, visit our [AI at Scale homepage](https://www.microsoft.com/research/project/ai-at-scale/).
 
 ## References
