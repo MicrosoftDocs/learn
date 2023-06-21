@@ -1,6 +1,6 @@
 You have learned how to provision and deploy app resources to Azure and how to update them with new changes. However, the previous workflows relied on you manually running commands to apply changes to your environment. The Azure Developer CLI (`azd`) also allows you to further automate this process using a CI/CD pipeline with either GitHub Actions or Azure Pipelines. By configuring a CI/CD pipeline, you can automatically update your Azure environment with the latest changes simply by committing and pushing your changes to GitHub.
 
-## Configure the CI/CD pipeline
+## Configure the pipeline
 
 Most `azd` templates have CI/CD workflow files included with them in either the `.github` folder for GitHub Actions or the `.azdo` folder for Azure Pipelines. The sample template used in this module relies on GitHub Actions, but the `azd` command and workflow is the same regardless of the CI/CD platform. A GitHub repository is required for you to be able to setup CI/CD. You can either create the new repository by forking the original `azd` template repository and setting it as a remote, or you can create a repo using `azd` during the pipeline configuration process, which is the approach you'll use in this example.
 
