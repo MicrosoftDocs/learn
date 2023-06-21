@@ -3,7 +3,7 @@ uid: learn.design-your-site-recovery-solution-in-azure.3-use-azure-site-recovery
 title: Use Azure Site Recovery as part of your BCDR plan
 metadata:
   title: Use Azure Site Recovery as part of your BCDR plan
-  description: Use Azure Site Recovery as part of your BCDR plan
+  description: Use Azure Site Recovery as part of your BCDR plan.
   ms.date: 05/10/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: List three key benefits of using Azure Site Recovery as part of your BCDR solution.
+  - content: List three key benefits of using Azure Site Recovery as part of a BCDR solution.
     choices:
     - content: Azure VM replication, avoiding failovers, consistency with failover.
       isCorrect: false
-      explanation: You use Azure Site Recovery because you want to fail over, not because you want to avoid one.
-    - content: Azure VM Replication, increased RTO, consistency with failover.
+      explanation: You use Azure Site Recovery because you want to fail over, not because you want to avoid a failover.
+    - content: Azure VM replication, increased RTO, consistency with failover.
       isCorrect: false
-      explanation: Azure Site Recovery is designed to decrease your recovery time objective.
+      explanation: Azure Site Recovery is designed to decrease a recovery time objective.
     - content: Azure VM replication, on-premises replication to Azure, consistency with failover.
       isCorrect: true
-      explanation: You can replicate your infrastructure in Azure and achieve app-consistent replication with Azure Site Recovery.
-  - content: List three key considerations relating to virtual machines networking for replicated virtual machines.
+      explanation: You can replicate your infrastructure in Azure and achieve app-consistent replication by using Azure Site Recovery.
+  - content: List three key considerations that relate to replication of virtual machines.
     choices:
-    - content: IP reservations, Load balanced traffic, IP subnet/gateway consistency.
+    - content: IP reservations, load-balanced traffic, IP subnet/gateway consistency.
       isCorrect: true
       explanation: You use Azure Traffic Manager and Azure Load Balancer to route traffic to your virtual machines.
     - content: IP reservations, IP subnet/gateway consistency, retaining MAC address.
       isCorrect: false
-      explanation: You can't retain the same MAC address when replicating virtual machines.
-    - content: Load balanced traffic, IP reservations, maximum of one virtual machine per subnet.
+      explanation: You can't retain the same MAC address when you're replicating virtual machines.
+    - content: Load-balanced traffic, IP reservations, maximum of one virtual machine per subnet.
       isCorrect: false
       explanation: You can have many virtual machines in a subnet.
