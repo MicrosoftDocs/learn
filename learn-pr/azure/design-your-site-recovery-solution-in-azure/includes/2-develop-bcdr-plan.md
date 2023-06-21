@@ -1,6 +1,6 @@
 Your organization wants you to design a site recovery strategy for your applications. First, you should understand the specific requirements for building site recovery for your hybrid environment. You must also understand what tools are available in Azure to help you.
 
-In this unit, you learn how to identify key infrastructures, recovery time objective (RTOs), and recovery point objectives (RPOs). You learn what requirements might be relevant with any platform as a service (PaaS) services that you might be using. You also learn how to plan for backup and disaster recovery. Finally, you discover some of the Azure features that help you build a site recovery solution.
+In this unit, you learn how to identify key infrastructures, recovery time objectives (RTOs), and recovery point objectives (RPOs). You learn what requirements might be relevant with any platform as a service (PaaS) services that you might be using. You also learn how to plan for backup and disaster recovery. Finally, you discover some of the Azure features that help you build a site recovery solution.
 
 ## Business continuity and disaster recovery
 
