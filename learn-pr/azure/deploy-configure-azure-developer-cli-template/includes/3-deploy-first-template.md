@@ -15,15 +15,17 @@ For this example, you'll use a pre-existing template built around a Node.js and 
 
 The most common starter workflow for `azd` only requires a few commands. You'll explore other commands and options later in the module to complete additional tasks. To initialize and deploy an `azd` template, complete the following steps:
 
-1. Open a command prompt to an empty file directory on your computer.
+1. Open a command prompt to an empty file directory.
 
-1. Run the `azd init` command and specify the template you want to use as a parameter. When the command prompts you for an environment name, enter `azdlearn`. The environment name influences the naming of certain resources in Azure.
+1. Run the `azd init` command and specify the template you want to use as a parameter. `azd` will clone the template down to your local environment.
 
     ```azdeveloper
     azd init --template todo-nodejs-mongo
     ```
 
-2. Run the `azd auth login` command to launch a browser window you can use to sign in to your Azure subscription.
+1. When the command prompts you for an environment name, enter `azdlearn`. The environment name influences the naming of certain resources in Azure.
+
+1. Run the `azd auth login` command to launch a browser window you can use to sign in to your Azure subscription.
 
     ```azdeveloper
     azd auth login
@@ -35,7 +37,7 @@ The most common starter workflow for `azd` only requires a few commands. You'll 
     azd up
     ```
 
-The `azd up` command may take several minutes or longer to run. Each templates provisions different Azure resources and configurations, which means each requires various amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which you can visit to view additional deployment information.
+The `azd up` command may take several minutes to run. Each template provisions different Azure resources and configurations, which means each requires various amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which you can visit to view additional deployment information.
 
 The deployed application should match the following screenshot:
 

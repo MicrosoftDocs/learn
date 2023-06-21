@@ -6,7 +6,7 @@ You have completed the process of deploying and provisioning resources to Azure 
     azd down
     ```
 
-1. `azd` prints out a message detailing the resource group(s) that will be deleted and ask for confirmation to continue. You can follow the link to the Azure portal to see the details of which resources are contained in the resource group.
+1. `azd` will print out a message detailing the resource group(s) that will be deleted and ask for confirmation to continue. You can follow the link to the Azure portal to see the details of which resources are contained in the resource group.
 
 1. If you are certain you would like to delete the resources, enter *y* to confirm. `azd` will delete the resources for you and print out a confirmation message when the task completes.
 
@@ -14,7 +14,7 @@ It's important to remember that `azd` templates implement infrastructure as code
 
 ## Delete resources manually
 
-You can also delete the resources created by `azd` using the Azure portal. You might choose this approach if you accidentally delete your local template before running `azd down`, or if you encounter any type of unexpected error.
+You can also delete the resources created by `azd` using the Azure portal. You might choose this approach if you accidentally delete your local template before running `azd down`, or if you encounter any type of unexpected error with the `azd down` command.
 
 1. Locate your resource group in the Azure portal by searching for it or by navigating to the **Resource Groups** listing page.
 

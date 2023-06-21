@@ -1,4 +1,4 @@
-Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to an application successfully deployed on Azure.
+Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from a local development environment to an application successfully deployed on Azure.
 
 ## Prerequisites
 
@@ -15,14 +15,14 @@ Suppose you work at a company that operates a ticket management and customer com
 
 - Two App Services and an App Service Plan to host the front-end web app and back-end API
 - A Key Vault instance to store secure app secrets
-- A Cosmos DB namespace to permanently store app data
+- A Cosmos DB database to permanently store app data
 - Azure Monitor resources such as Application Insights dashboards
 - A Service Bus to manage scalable messaging
 - CI/CD pipelines to ensure changes can be reliably deployed through an automated, repeatable process.
 
-Rather than starting from the ground up, you'd like to leverage an existing and extensible architecture template that can provision and deploy most of the resources for you. The development team can then focus on building the app and making smaller adjustments the architecture. You would also like the solution to be reusable and distributable, meaning the same architecture could be consistently recreated at a later date in additional environments for additional teams. 
+Rather than starting from the ground up, you'd like to leverage an existing and extensible architecture template that can provision and deploy most of the resources for you. The development team can then focus on building the app and making smaller adjustments the architecture. You would also like the solution to be reusable and distributable, meaning the same architecture could be consistently recreated at a later date in additional environments for additional teams.
 
-The Azure Developer CLI can help you with these goals through the use of its easy workflow commands and powerful template system. The sample app template you'll work with in this module includes many of the previously listed services.
+The Azure Developer CLI can help you with these goals using intuitive workflow commands and a powerful template system. The sample app template you'll work with in this module includes many of the previously listed services through the following architecture:
 
 :::image type="content" source="../media/architecture-diagram-small.png" lightbox="../media/architecture-diagram.png" alt-text="An architectural diagram for a messaging app.":::
 
