@@ -3,8 +3,8 @@ A device template in Azure IoT Central is a blueprint that defines the character
 A device template includes the following sections:
 - A *device model*. The data that the coffee machine simulator exchanges with your application is specified in a device model.
     - *Root component*. The root component's interface describes capabilities that are specific to the device model.
-    - *Components*. A device model may include components in addition to the root component to describe device capabilities. In this scenario, you will only use the root component to define the *Connected Coffee Maker* model.
-    - *Inherited interfaces*. A device model contains one or more interfaces that extend the capabilities of the root component. In this scenario, you will define only one interface.
+    - *Components*. A device model may include components in addition to the root component to describe device capabilities. In this scenario, you'll only use the root component to define the *Connected Coffee Maker* model.
+    - *Inherited interfaces*. A device model contains one or more interfaces that extend the capabilities of the root component. In this scenario, you'll define only one interface.
 - *Views*. This part of the device template lets you define visualizations to view data from the device, and forms to manage and control the coffee machine.
 
 After you create a device template, you can connect a simulated device. The simulated device generates telemetry so you can test the behavior of your application before connecting a real device.
@@ -45,9 +45,9 @@ A device model is the part of the device template that defines the telemetry, pr
 - The `displayName` field is an object that provides a human-readable name for the interface or entity in different languages. In this case, the interface `displayName` is `Connected Coffee Maker` in English.
 - The `@context` field is used to specify the DTDL context in which the interface or entity is defined. In this case, it references the `iotcentral` and `dtdl` contexts.
 - The `name` field is a unique identifier for the `Telemetry`, `Property`, or `Command`.
-- Each telemetry field represent measurements or events, and are often used to describe device sensor readings. For example, `Water Temperature` has a `schema` of `double` and a `unit` of `degreeCelsius`. The `decimalPlaces`, `maxValue`, and `minValue` fields specify additional details about the telemetry data.
+- Each telemetry field represent measurements or events, and are often used to describe device sensor readings. For example, `Water Temperature` has a `schema` of `double` and a `unit` of `degreeCelsius`. The `decimalPlaces`, `maxValue`, and `minValue` fields specify more details about the telemetry data.
 - Each property field represents the state of an entity. For example, `Device Warranty Expired` is of type boolean and can have its state set by the connected device as true or false.
-- The `writable` field specifies whether the property can be set from the IoT Central application. In this case, `Optimal Temperature` can be set from the application UI, while `Device Warranty Expired` cannot.
+- The `writable` field specifies whether the property can be set from the IoT Central application. In this case, `Optimal Temperature` can be set from the application UI, while `Device Warranty Expired` can't.
 - If a property has `Cloud` in the list of types, then it is a Cloud Property. In this case, `Coffee Maker Min Temperature` and `Coffee Maker Max Temperature` are cloud properties.
 - Each command field describes an action that the device can perform. For example, `Start Brewing` is a command that the cloud can send to the device to begin brewing coffee.
-- The `commandType` field specifies whether a command is synchronous (waits for a response) or asynchronous (does not wait for a response).
+- The `commandType` field specifies whether a command is synchronous (waits for a response), or asynchronous (doesn't wait for a response).

@@ -16,7 +16,7 @@ To encourage development of AI solutions to address global challenges, the Micro
 
 ## Fostering trustworthy AI
 
-Recognizing the economic transformation potential of AI, many governments have announced their national/regional AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the Recommendations of the OECD Council on Artificial Intelligence. These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.<sup>7</sup>
+Recognizing the economic transformation potential of AI, many governments have announced their national/regional AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries/regions, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the Recommendations of the OECD Council on Artificial Intelligence. These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries/regions, including the EU, in June 2019.<sup>7</sup>
 
 The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. These recommendations are high-level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
 
