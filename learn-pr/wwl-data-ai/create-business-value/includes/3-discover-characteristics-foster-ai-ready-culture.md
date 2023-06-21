@@ -68,7 +68,7 @@ By enabling cross-functional teams that include both data scientists and the bus
 
 The third key element of an AI-ready culture is fostering a responsible approach to AI. As AI continues to evolve, it has the potential to drive considerable changes to our lives, raising complex and challenging questions about what future we want to see.
 
-Like Mitra Azizirad, Corporate Vice President of Strategic Missions and Technologies at Microsoft, says: the question very often is not what AI can do, it's what AI should do. Organizations need to ask themselves: How do we design, build, and use AI systems to create a positive impact on individuals and society? How can we ensure that AI systems treat everyone fairly? How can we best prepare the workforce for the new AI era?
+Like a Corporate Vice President of Strategic Missions and Technologies at Microsoft says: the question very often is not what AI can do, it's what AI should do. Organizations need to ask themselves: How do we design, build, and use AI systems to create a positive impact on individuals and society? How can we ensure that AI systems treat everyone fairly? How can we best prepare the workforce for the new AI era?
 
 These questions demand for organizations to think about their AI principles and how to ensure them throughout the company. To ensure responsible AI practices, specific planning is required that should include an AI governance model. In this way, you can deliver transparent, explainable, and ethical AI. The module [Embrace responsible AI principles and practices](/training/modules/embrace-responsible-ai-principles-practices) provides a more detailed discussion of the implications of responsible AI for business.
 

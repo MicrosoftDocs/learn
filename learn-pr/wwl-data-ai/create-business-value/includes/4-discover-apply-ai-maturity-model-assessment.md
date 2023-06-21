@@ -10,9 +10,9 @@ For this purpose, you can leverage a **maturity assessment of AI customer adopti
 
 3. **Aspirational level:** At this stage, organizations already think of AI as a fuel or a catalyst for innovation and transformation. AI adoption isn't restricted to a few, isolated business processes; it orients the way they think and plan how they go to market. This commitment impacts the structure of organizations because these companies are building centers of excellence on AI.
 
-4. **Mature level:** Companies have achieved a broad internal adoption of AI. They've fully incorporated AI strategy into their business plans and AI is part of their corporate culture. As Steve Sweetman, Principal PM Manager at Azure Machine Learning Responsible AI & Customer Engagement, says, these companies have already built a culture of experimentation and a learning mindset that's required to truly harness the power of this new technology. Thanks to their data science expertise, they monetize AI. Organizations who have adopted AI also have a manifesto, they have a set of principles and core understanding about what they want to achieve, and the approach that they want to take. The goal of this module is to take your organization to this stage.
+4. **Mature level:** Companies have achieved a broad internal adoption of AI. They've fully incorporated AI strategy into their business plans and AI is part of their corporate culture. As a Principal PM Manager at Microsoft says, these companies have already built a culture of experimentation and a learning mindset that's required to truly harness the power of this new technology. Thanks to their data science expertise, they monetize AI. Organizations who have adopted AI also have a manifesto, they have a set of principles and core understanding about what they want to achieve, and the approach that they want to take. The goal of this module is to take your organization to this stage.
 
-![Graph depicting the stages of AI maturity: foundational, approaching, aspirational, and mature.](../media/4-discover-apply-ai-maturity-model-assessment-1.png)
+![Diagram that shows the stages of AI maturity: foundational, approaching, aspirational, and mature.](../media/4-discover-apply-ai-maturity-model-assessment-1.png)
 
 ## How mature *are* organizations?
 
