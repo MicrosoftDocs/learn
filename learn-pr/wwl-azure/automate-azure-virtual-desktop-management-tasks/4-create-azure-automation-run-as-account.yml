@@ -1,16 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.create-azure-automation-run-as-account
-title: Create an Azure Automation Run As account
+title: Create a managed identity
 metadata:
-  title: Create an Azure Automation Run As account
-  description: "Create an Azure Automation Run As account"
-  ms.date: 03/15/2022
+  title: Create a managed identity
+  description: "Create a managed identity"
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 5
 content: |
   [!include[](includes/4-create-azure-automation-run-as-account.md)]
+interactive: bash

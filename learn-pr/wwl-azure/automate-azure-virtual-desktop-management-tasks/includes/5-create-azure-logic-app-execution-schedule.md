@@ -1,3 +1,4 @@
+
 Next, you'll need to create the Azure Logic App and set up an execution schedule for your new scaling tool.
 
 1.  Open Windows PowerShell.

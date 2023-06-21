@@ -1,3 +1,4 @@
+
 You can reduce your total Azure Virtual Desktop deployment cost by scaling your virtual machines (VMs). This means shutting down and deallocating session host VMs during off-peak usage hours, then turning them back on and reallocating them during peak hours.
 
 **Early morning, employees arriving at work.**:::image type="content" source="../media/automation-5-59am-c0d99de3.png" alt-text="Diagram of Early morning with employees arriving at work.":::
