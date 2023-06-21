@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.intro-to-azure-dedicated-hosts
+metadata:
+  title: Introduction to Azure Dedicated Hosts
+  description: Learn about what Azure dedicated hosts is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+  ms.date: 06/1/2023
+  author: mattmcinnes
+  ms.author: mattmcinnes
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure dedicated hosts
+summary: Learn about what Azure dedicated hosts is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+abstract: |
+  In this module, you will:
+  - Learn what an Azure dedicated host is and the functionality it provides
+  - Determine whether Azure dedicated hosts meet the needs of your organization
+  - Understand the difference between Azure dedicated hosts and scaling up individual instances
+prerequisites: An understanding of basic networking and virtual machine compute concepts
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- developer
+- solution-architect
+products:
+- azure
+- azure-dedicated-host
+subjects:
+- virtual-machine
+units:
+- learn.introduction-to-azure-dedicated-hosts.introduction
+- learn.introduction-to-azure-dedicated-hosts.what-is-azure-dedicated-hosts
+- learn.introduction-to-azure-dedicated-hosts.how-azure-dedicated-hosts-work
+- learn.introduction-to-azure-dedicated-hosts.when-to-use-azure-dedicated-hosts
+- learn.introduction-to-azure-dedicated-hosts.knowledge-check
+- learn.introduction-to-azure-dedicated-hosts.summary
+badge:
+  uid: learn.azure.intro-to-azure-dedicated-hosts.badge
