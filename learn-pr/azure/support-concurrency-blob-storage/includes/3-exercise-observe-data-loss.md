@@ -36,7 +36,7 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
     cd mslearn-support-concurrency-blob-storage/src/NewsEditor
     ```
 
-    The above commands move you into the NewsEditor app folder. There other folders that have completed code for units in the rest of the module.
+    The above commands move you into the NewsEditor app folder. There are other folders that contain completed code for units in the rest of the module.
 
 1. Open the **Program.cs** file in the code editor.
 
@@ -47,28 +47,24 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
 1. Scroll down to the `SimulateReporter` method. This method simulates the activities of a reporter working in a version of the news editing application that does not perform any kind of active concurrency management.
 
     ```csharp
-    private static async Task SimulateReporter(string authorName, TimeSpan writingTime)
+    private static async Task SimulateReporter(BlobContainerClient containerClient, string authorName, TimeSpan writingTime)
     {
+        BlobClient blobClient = containerClient.GetBlobClient(blobName);
+
         // First, the reporter retrieves the current contents
         Console.WriteLine($"{authorName} begins work");
-        var blob = CloudStorageAccount.Parse(connectionString)
-            .CreateCloudBlobClient()
-            .GetContainerReference(containerName)
-            .GetBlockBlobReference(blobName);
 
-        var contents = await blob.DownloadTextAsync();
-        Console.WriteLine($"{authorName} loads the file and sees the following content: \"{contents}\"");
+        var contents = await blobClient.DownloadContentAsync();
+        Console.WriteLine($"{authorName} loads the file and sees the following content: \"{contents.Value.Content}\"");
 
         // Next, the author writes their story. This takes some time.
-        var currentETag = blob.Properties.Etag;
-        Console.WriteLine($"\"{contents}\" has this ETag: {blob.Properties.ETag}");
         Console.WriteLine($"{authorName} begins writing their story...");
         await Task.Delay(writingTime);
         Console.WriteLine($"{authorName} has finished writing their story");
 
         // Finally, they save their story back to the blob.
         var story = $"[[{authorName.ToUpperInvariant()}'S STORY]]";
-        await blob.UploadTextAsync(story);
+        await blobClient.UploadAsync(BinaryData.FromString(story), true);
         Console.WriteLine($"{authorName} has saved their story to Blob storage. New blob contents: \"{story}\"");
     }
     ```
@@ -107,4 +103,4 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
     [[REPORTER A'S STORY]]
     ```
 
-    These console messages allow you to follow the flow of the app; in this example Reporter B has lost their work.
+    These console messages allow you to follow the flow of the app. In this example, Reporter B has lost their work.

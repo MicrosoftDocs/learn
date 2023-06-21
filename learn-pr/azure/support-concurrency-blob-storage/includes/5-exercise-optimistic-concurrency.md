@@ -18,20 +18,20 @@ In this exercise you will:
 
     ```csharp
     // Store the current ETag
-    var currentETag = blob.Properties.ETag;
-    Console.WriteLine($"\"{contents}\" has this ETag: {blob.Properties.ETag}");
+    var currentETag = downloadResult.Details.ETag;
+    Console.WriteLine($"\"{contents}\" has this ETag: {currentETag}");
     ```
 
     This modifies the simulated news editor application to record the ETag of the blob at the time it is read.
 
-1. In `SimulateReporter`, change the call to `UploadTextAsync` to use an access condition to confirm the ETag before saving the changes. This modifies the simulated news editor application to enforce optimistic concurrency.
+1. In `SimulateReporter`, change the call to `UploadAsync` to set an IfMatch condition as part of a `BlobUploadOptions` instance. When passed to the upload method, this condition confirms the ETag before saving the changes. This modifies the simulated news editor application to enforce optimistic concurrency.
     
     **Remove** the following code from the method:
 
     ```csharp
     // Finally, they save their story back to the blob.
     var story = $"[[{authorName.ToUpperInvariant()}'S STORY]]";
-    await blob.UploadTextAsync(story);
+    await blobClient.UploadAsync(BinaryData.FromString(story), true);
     Console.WriteLine($"{authorName} has saved their story to Blob storage. New blob contents: \"{story}\"");
     ```
 
@@ -42,13 +42,25 @@ In this exercise you will:
     {
         // Finally, they save their story back to the blob.
         var story = $"[[{authorName.ToUpperInvariant()}'S STORY]]";
-        await blob.UploadTextAsync(story, null, accessCondition: AccessCondition.GenerateIfMatchCondition(currentETag), null, null);
+
+        // Set the If-Match condition to the current ETag
+        BlobUploadOptions blobUploadOptions = new()
+        {
+            Conditions = new BlobRequestConditions()
+            {
+                IfMatch = currentETag
+            }
+        };
+        await blobClient.UploadAsync(BinaryData.FromString(story), blobUploadOptions);
+
         Console.WriteLine($"{authorName} has saved their story to Blob storage. New blob contents: \"{story}\"");
-    } 
-    catch (Microsoft.WindowsAzure.Storage.StorageException e) 
+    }
+    catch (RequestFailedException e) when (e.Status == (int)HttpStatusCode.PreconditionFailed)
     {
         // Catch error if the ETag has changed it's value since opening the file
-        Console.WriteLine($"{authorName} is unable to save the file. Error: {e.Message}");
+        // This error indicates to the client that another process has updated the blob since the client first retrieved it.
+        // The client should fetch the blob again to get the updated content and properties.
+        Console.WriteLine($"{authorName}: Sorry, cannot save the file as server returned an error: {e.Message}");
     }
     ```
 

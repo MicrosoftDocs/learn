@@ -20,10 +20,10 @@ The first reporter will acquire a lease for the storage, and begin writing. The 
 To acquire a lease in C#, use this code:
 
 ```csharp
-string lease = file-to-change.AcquireLease(TimeSpan.FromSeconds(60), null);
+lease = await blobLeaseClient.AcquireAsync(TimeSpan.FromSeconds(60));
 ```
 
-The above code notifies Azure cloud storage that you'd like exclusive access to `file-to-change` for **60 seconds**. If a second app, or process, also tries to acquire a lease on the same object, Azure will return a **409** HTTP error code (conflict ocurred). If other processes, including the Azure portal, tries to change the file they won't be able to.
+The above code notifies Azure cloud storage that you'd like exclusive access to the blob represented by `blobLeaseClient` for **60 seconds**. If a second app, or process, also tries to acquire a lease on the same object while it's locked, Azure will return a **409** HTTP error code (conflict ocurred). If other processes, including the Azure portal, tries to change the file they won't be able to. At the end of the 60 seconds, or if the lease is explicitly released, other apps or processes are able to acquire a lease on the blob.
 
 ![Screenshot of the Azure portal showing the storage as read only.](../media/read-only-blob.png)
 
@@ -37,6 +37,6 @@ Now the lease has been created, you must use it with `UploadTextAsync` to prove 
 
 Pessimistic concurrency is primarily used in environments where there's heavy contention for data. The cost of protecting data with a lease is less than the cost of fixing the data if concurrency conflicts occur. Pessimistic concurrency is best implemented when lease times will be short, as in programmatic processing of records. Pessimistic concurrency isn't a scalable option if users are working with data and locking records for large periods of time. It's pessimistic, because you think that someone else is going to edit a file at the same time you're using it.
 
-An app can request ownership of a blob and not allow anyone else to change it while it's being used. The obvious downside is that no one else can make changes to the storage. As you can see from the above Azure portal screenshot, it's still possible to open it for read access though.
+An app can request ownership of a blob and not allow anyone else to change it while it's being used. The obvious downside is that no one else can make changes to the blob. As you can see from the above Azure portal screenshot, it's still possible to open it for read access though.
 
 Unlike optimistic concurrency, leases are enforced globally, regardless of application implementation. So if a single app acquires a lease, no other process can update the storage until the lease has expired or been released.
