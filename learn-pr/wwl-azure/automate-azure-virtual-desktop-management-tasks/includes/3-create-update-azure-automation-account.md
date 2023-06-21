@@ -1,4 +1,3 @@
-
 You'll need an Azure Automation account to run the PowerShell runbook. The process this section describes is useful even if you have an existing Azure Automation account that you want to use to set up the PowerShell runbook.
 
 Here's how to set it up:

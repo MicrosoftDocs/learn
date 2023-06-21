@@ -1,4 +1,3 @@
-
 Reduce Azure Virtual Desktop deployment costs by scaling virtual machines (VMs). This means shutting down and deallocating session host VMs during off-peak usage hours, then turning them back on and reallocating them during peak hours.
 
 This module aligns with the exam AZ-140: Configuring and Operating Microsoft Azure Virtual Desktop.

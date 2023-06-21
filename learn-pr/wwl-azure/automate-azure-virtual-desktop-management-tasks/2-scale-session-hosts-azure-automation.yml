@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.scale-session-hosts-azure-automation
+uid: learn.wwl.automate-azure-virtual-desktop-management-tasks.scale-session-hosts-using-azure-automation
 title: Scale session hosts using Azure Automation
 metadata:
   title: Scale session hosts using Azure Automation
@@ -8,7 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 7
 content: |
   [!include[](includes/2-scale-session-hosts-azure-automation.md)]
-interactive: bash

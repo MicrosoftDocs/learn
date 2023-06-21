@@ -1,4 +1,3 @@
-
 Now that you have an Azure Automation account, you'll also need to set up a [managed identity](/azure/automation/automation-security-overview#managed-identities) if you haven't already. Managed identities will help your runbook access other Azure AD-related resources as well as authenticate important automation processes.<br>
 
 To set up a managed identity, follow the directions in [Using a system-assigned managed identity for an Azure Automation account](/azure/automation/enable-managed-identity-for-automation).
