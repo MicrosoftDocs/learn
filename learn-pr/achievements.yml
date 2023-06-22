@@ -1772,3 +1772,13 @@ achievements:
   title: Work with mutable and partial data in Azure Cache for Redis
   summary: Learn how to create transactions, manage memory, and use the cache-aside pattern with Azure Cache for Redis
   iconUrl: /training/achievements/work-with-mutable-and-partial-data-in-a-redis-cache.svg
+- uid: learn.quantum.solve-job-shop-optimization-azure-quantum.badge
+  type: badge
+  title: Solve a job shop scheduling optimization problem by using Azure Quantum
+  summary: Learn how to use the Azure Quantum optimization service to solve a job shop scheduling problem.
+  iconUrl: /training/achievements/quantum/solve-job-shop-optimization-azure-quantum.svg
+- uid: learn.quantum.solve-quantum-inspired-optimization-problems.badge
+  type: badge
+  title: Solve optimization problems by using quantum-inspired optimization
+  summary: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
+  iconUrl: /training/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
