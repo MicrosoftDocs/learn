@@ -1,6 +1,6 @@
 Woodgrove Bank has asked you to review and optimize query execution for the distributed tables in their Azure Cosmos DB for PostgreSQL database. You can query [Metadata tables](/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) residing on the coordinator node to view detailed information about the nodes and shards in your distributed database. You can use these tables to gain insights into your database's structure, node utilization, data distribution, and performance.
 
-The coordinator maintains these tables and uses them to track statistics and information about the health and location of shards across nodes. These tables, prefixed with `pg_dist_*`, contain diverse metadata about your distributed database the coordinator uses them when building query execution plans across the worker nodes.
+The coordinator maintains these tables and uses them to track statistics and information about the health and location of shards across nodes. These tables, prefixed with `pg_dist_*`, contain diverse metadata about your distributed database and the coordinator uses them when building query execution plans across the worker nodes.
 
 This unit highlights a few of the tables below, but you can view the complete list of metadata tables, learn more about them, and view their schemas by reading the [System tables and views documentation](/azure/postgresql/hyperscale/reference-metadata).
 
