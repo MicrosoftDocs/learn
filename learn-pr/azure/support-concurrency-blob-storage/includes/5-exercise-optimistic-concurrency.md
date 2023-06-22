@@ -1,4 +1,4 @@
-﻿In the previous exercise, you saw how the newsroom chief only saw Reporter A's edit. The app allowed reporters to overwrite Reporter B's story. You'll implement the optimistic approach to resolving concurrency so that Reporter B doesn't lose their work.
+﻿In the previous exercise, you saw how the newsroom chief only saw Reporter A's edit. The app allowed reporters to overwrite Reporter B's story. In this exercise, you implement the optimistic approach to resolving concurrency so that Reporter B doesn't lose their work.
 
 In this exercise you will:
 - Change the `SimulateReporter` method to use an ETag
@@ -22,9 +22,9 @@ In this exercise you will:
     Console.WriteLine($"\"{contents}\" has this ETag: {currentETag}");
     ```
 
-    This modifies the simulated news editor application to record the ETag of the blob at the time it is read.
+    This code modifies the simulated news editor application to record the ETag of the blob at the time it's read.
 
-1. In `SimulateReporter`, change the call to `UploadAsync` to set a request condition as part of a `BlobUploadOptions` instance. When passed to the upload method, this condition confirms the ETag before saving the changes. This modifies the simulated news editor application to enforce optimistic concurrency.
+1. In `SimulateReporter`, change the call to `UploadAsync` to set a request condition as part of a `BlobUploadOptions` instance. When passed to the upload method, this condition confirms the ETag before saving the changes. This change modifies the simulated news editor application to enforce optimistic concurrency.
     
     **Remove** the following code from the method:
 
@@ -35,7 +35,7 @@ In this exercise you will:
     Console.WriteLine($"{authorName} has saved their story to Blob storage. New blob contents: \"{story}\"");
     ```
 
-    and replace it with this code::
+    and replace it with this code:
 
     ```csharp
     try 
@@ -64,7 +64,7 @@ In this exercise you will:
     }
     ```
 
-    The `IfMatch = currentETag` condition asks Blob storage to check the current value of the ETag for the report. If the two values match then the write operation will succeed. If some other process has updated the blob, then the value for the ETag on the server will be different and an exception will be raised.
+    The `IfMatch = currentETag` condition asks Blob storage to check the current value of the ETag for the report. If the two values match, the write operation succeeds. If some other process has updated the blob, then the value for the ETag on the server is different and an exception is raised.
 
 1. Save your changes (CTRL+S) and close the code editor (CTRL+Q).
 
@@ -100,7 +100,7 @@ In this exercise you will:
     [[REPORTER B'S STORY]]
     ```
 
-    This time, when Reporter A has finished writing the story and tries to save their changes, the app doesn't let them. The save fails because the file has been changed by Reporter B since the last time they viewed it.
+    This time, when Reporter A has finished writing the story and tries to save their changes, the app doesn't let them. The save fails because the file was changed by Reporter B since the last time they viewed it.
 
 > [!TIP]
 > If you have been unable to complete this unit, you can find a fully working version in the OptimisticNewsEditor directory. You can run the app with `dotnet run`.

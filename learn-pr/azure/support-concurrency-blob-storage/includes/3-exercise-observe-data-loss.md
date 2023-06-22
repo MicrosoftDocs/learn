@@ -4,13 +4,13 @@ The newsroom chief first uses the editing application to create notes for the ne
 
 Now imagine two reporters are assigned to the same story. Reporter A begins work quickly, retrieving the notes and writing a lengthy section of the story. Reporter B begins soon after, makes an edit to the story, and finishes their work first. Reporter B saves their changes, committing them to the blob. Later, Reporter A finishes their story and saves it.
 
-The newsroom chief has been receiving complaints from their reporters that stories are being lost. On executing the app, you'll notice Reporter A is unaware of the previous completed work of Reporter B, and only Reporter A's work is seen by the newsroom chief.
+The newsroom chief has been receiving complaints from their reporters that stories are being lost. On executing the app, you notice Reporter A is unaware of the previous completed work of Reporter B, and only Reporter A's work is seen by the newsroom chief.
 
-In this exercise, you'll deploy the app and observe the last writer wins issues created by concurrent updates.
+In this exercise, you deploy the app and observe the last writer wins issues created by concurrent updates.
 
 ## Create an Azure storage account and store the connection string
 
-To experiment with Blob storage concurrency code, we'll start by creating a Blob storage account using the Cloud Shell.
+To experiment with Blob storage concurrency code, we start by creating a Blob storage account using the Cloud Shell.
 
 1. Run the commands below to create a new storage account:
 
@@ -44,7 +44,7 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
     code Program.cs
     ```
 
-1. Scroll down to the `SimulateReporter` method. This method simulates the activities of a reporter working in a version of the news editing application that does not perform any kind of active concurrency management.
+1. Scroll down to the `SimulateReporter` method. This method simulates the activities of a reporter working in a version of the news editing application that doesn't perform any kind of active concurrency management.
 
     ```csharp
     private static async Task SimulateReporter(BlobContainerClient containerClient, string authorName, TimeSpan writingTime)
@@ -69,7 +69,7 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
     }
     ```
 
-    In the simulation, two instances of this method will run simultaneously with different timings. Both reporters will observe the same contents when they first load the file from Blob storage. The reporter that takes longer to write their story and save it back to the blob will overwrite the content placed there by the first author without knowing it.
+    In the simulation, two instances of this method run simultaneously with different timings. Both reporters observe the same contents when they first download the file from Blob storage. The reporter that takes longer to write their story and save it back to the blob overwrites the content placed there by the first author without knowing it.
 
 1. Close the Code editor (CTRL+Q).
 
