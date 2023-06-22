@@ -8,7 +8,7 @@ At Microsoft, we've recognized six principles that we believe should guide AI de
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
-> ![Graph depicting six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/3-identify-guiding-principles-responsible-ai-1.jpg)
+> ![Diagram that shows six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/3-identify-guiding-principles-responsible-ai-1.jpg)
 :::column-end:::
 :::row-end:::
 
@@ -61,7 +61,7 @@ At Microsoft, we firmly believe everyone should benefit from intelligent technol
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
-> ![Graph depicting inclusive design principles: recognize exclusion; solve for one, extend to many, and learn from diversity.](../media/3-identify-guiding-principles-responsible-ai-2.jpg)
+> ![Diagram that shows inclusive design principles: recognize exclusion; solve for one, extend to many, and learn from diversity.](../media/3-identify-guiding-principles-responsible-ai-2.jpg)
 :::column-end:::
 :::row-end:::
 
