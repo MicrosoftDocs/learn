@@ -18,7 +18,7 @@ In Azure Digital Twins, you freely define the types of digital entities that rep
 
 Models for Azure Digital Twins are defined using the [Digital Twins Definition Language (DTDL)](https://github.com/Azure/opendigitaltwins-dtdl/tree/master/DTDL). DTDL is based on JSON-LD and is programming-language independent, so you can write it in any text editor by creating valid DTDL files with a *json* extension. DTDL isn't exclusive to Azure Digital Twins; it's also used to represent device data in other IoT services such as IoT Plug and Play. You can design your own model sets from scratch, or get started with a pre-existing set of industry ontologies provided by Microsoft based on common vocabulary for your industry. You can also bring models from outside of Azure Digital Twins and convert them to DTDL, to make them compatible with Azure Digital Twins. If you design models from scratch, you may still want to consider using published industry standards in your solution language to help make them more recognizable and extensible.
 
-The following code snippet shows the DTDL inside a model file. This example aligns with the factory scenario for this module and represents the concept of a robotic arm. The model has several properties representing box pickup information, including a boolean property indicating an alert that the latest package was not picked up, and a property representing its hydraulic pressure level.
+The following code snippet shows the DTDL inside a model file. This example aligns with the factory scenario for this module and represents the concept of a robotic arm. The model has several properties representing box pickup information, including a boolean property indicating an alert that the arm didn't pick up its latest package, and a property representing its hydraulic pressure level.
 
 ```json
 {
@@ -39,7 +39,7 @@ The following code snippet shows the DTDL inside a model file. This example alig
   },
   {
    "@type": "Property",
-   "name": "PickupFailedBoxID",
+   "name": "LastPickupFailedBoxID",
    "schema": "string"
   },
   {
@@ -51,14 +51,14 @@ The following code snippet shows the DTDL inside a model file. This example alig
 }
 ```
 
-The role of the model is to define the concept of what a robotic arm is, so you'll only create one model file to use for all the robotic arms in your environment. You'll also create additional models for other types of entity in your environment, such as a factory temperature sensor or the distribution center as a whole.
+The role of the model is to define the concept of what a robotic arm is, so you'll only create one model file to use for all the robotic arms in your environment. You'll also create other models for other types of entity in your environment, such as a factory temperature sensor or the distribution center as a whole.
 
 Model files can be uploaded to the service using the Azure Digital Twins APIs and SDKs, the Azure CLI, or Azure Digital Twins Explorer (a visual developer tool that's accessible from your instance page in the Azure portal).
 
-Run the following commands in the Cloud Shell to upload this *RobotArm* model, as well as another model for an entire distribution center, as inline JSON to your Azure Digital Twins instance in the sandbox.
+Run the following commands in the Cloud Shell to upload this *RobotArm* model, and another model for an entire distribution center, as inline JSON to your Azure Digital Twins instance in the sandbox.
 
 ```azurecli
-    az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:RobotArm;1","@type":"Interface","@context":"dtmi:dtdl:context;2","displayName":"RobotArm","contents":[{"@type":"Property","name":"FailedPickupsLastHr","schema":"integer"},{"@type":"Property","name":"PickupFailedAlert","schema":"boolean"},{"@type":"Property","name":"PickupFailedBoxID","schema":"string"},{"@type":"Property","name":"HydraulicPressure","schema":"double"}]}' 
+    az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:RobotArm;1","@type":"Interface","@context":"dtmi:dtdl:context;2","displayName":"RobotArm","contents":[{"@type":"Property","name":"FailedPickupsLastHr","schema":"integer"},{"@type":"Property","name":"PickupFailedAlert","schema":"boolean"},{"@type":"Property","name":"LastPickupFailedBoxID","schema":"string"},{"@type":"Property","name":"HydraulicPressure","schema":"double"}]}' 
 
     az dt model create -n $INSTANCE_NAME --models '{"@id":"dtmi:assetGen:DistributionCenter;1","@type":"Interface","@context":["dtmi:dtdl:context;2"],"displayName":"DistributionCenter","contents":[{"@type":"Property","name":"AvgHydraulicPressure","schema":"double"},{"@type":"Relationship","name":"contains","properties":[{"@type":"Property","name":"targetModel","schema":"string"}],"target":"dtmi:assetGen:RobotArm;1"}]}'
 ```
@@ -132,17 +132,17 @@ Now that you have a static graph representing the entities in your environment a
 
 Azure Digital Twins uses Azure functions to ingest data into a graph from many sources, including event data from IoT Hub devices and business data from across Azure or external applications. In the function body, you define where the function watches for new data and how that data is processed, including how it maps to and updates the right twins in your graph. You can also create Azure functions to propagate data throughout the twin graph, so that when one twin receives an update, other related twins automatically update accordingly.
 
-In the factory example for this module, your Azure function will update the properties of the robot arm twins based on data from their associated devices registered in IoT Hub, and you'll also create a second Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all.
+In the factory example for this module, your Azure function updates the properties of the robot arm twins based on data from their associated devices registered in IoT Hub, and you'll also create a second Azure function that aggregates data from all of the arm twins and updates properties on the main *DistCtr* twin that contains them all.
 
 A complete simulation of live data flow is outside the scope of this introductory module, but you can simulate the results in your Cloud Shell by running the following commands to update the values of the twin properties manually.
 
 ```azurecli
-    az dt twin update -n $INSTANCE_NAME --twin-id Arm1 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":1},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/PickupFailedBoxID","value":"Box507"},{"op":"replace","path":"/HydraulicPressure","value":18.451452874964478}]'
+    az dt twin update -n $INSTANCE_NAME --twin-id Arm1 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":1},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box507"},{"op":"replace","path":"/HydraulicPressure","value":18.451452874964478}]'
     az dt twin update -n $INSTANCE_NAME --twin-id Arm2 --json-patch '[{"op":"replace","path":"/HydraulicPressure","value":14.384850273058374}]'
     az dt twin update -n $INSTANCE_NAME --twin-id Arm3 --json-patch '[{"op":"replace","path":"/HydraulicPressure","value":16.378455483758937}]'
     az dt twin update -n $INSTANCE_NAME --twin-id Arm4 --json-patch '[{"op":"replace","path":"/HydraulicPressure","value":14.384850273058374}]'
-    az dt twin update -n $INSTANCE_NAME --twin-id Arm5 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":3},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/PickupFailedBoxID","value":"Box845"},{"op":"replace","path":"/HydraulicPressure","value":24.45139457338478}]'
-    az dt twin update -n $INSTANCE_NAME --twin-id Arm6 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":7},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/PickupFailedBoxID","value":"Box926"},{"op":"replace","path":"/HydraulicPressure","value":18.28457395755839}]'
+    az dt twin update -n $INSTANCE_NAME --twin-id Arm5 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":3},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box845"},{"op":"replace","path":"/HydraulicPressure","value":24.45139457338478}]'
+    az dt twin update -n $INSTANCE_NAME --twin-id Arm6 --json-patch '[{"op":"replace","path":"/FailedPickupsLastHr","value":7},{"op":"replace","path":"/PickupFailedAlert","value":True},{"op":"add","path":"/LastPickupFailedBoxID","value":"Box926"},{"op":"replace","path":"/HydraulicPressure","value":18.28457395755839}]'
     az dt twin update -n $INSTANCE_NAME --twin-id DistCtr --json-patch '[{"op":"replace","path":"/AvgHydraulicPressure","value":17.72259624}]'
 ```
 
@@ -184,4 +184,4 @@ One way to use the query results in the factory example for this module is to pr
 
 You can also query historized twin data collected over time using the **data history** feature, to have a wider pool of environment data and the ability to identify patterns over time. You can set up a data history connection that connects an Azure Digital Twins instance to an Azure Data Explorer cluster, so that graph updates are automatically stored in Azure Data Explorer. From there, you can query the data in Azure Data Explorer, and use the results however you'd like. In the factory example for this module, you'll want to collect this historical data so that whenever a robotic arm fails to pick up a package, you can investigate how frequent that behavior has been over the past day, week, month, etc. This will help you identify if the arm needs to be replaced.
 
-For additional data processing or storage, you can create **event routes** that export digital twin data to endpoints in either Azure Event Grid, Azure Event Hubs, or Azure Service Bus. Other applications can watch these endpoints and receive the data there. Endpoints and event routes can be defined using the Azure Digital Twins APIs and SDKs or the Azure CLI. In the request, you'll provide the name of the Azure Digital Twins instance, the name of the Event Grid, Event Hubs, or Service Bus resource, and optional filter conditions to specify which events are routed there. If your company in the factory example is already using any database or external applications for distribution center monitoring, you can use event routes to integrate your Azure Digital Twins data into those solutions.
+For further data processing or storage, you can create **event routes** that export digital twin data to endpoints in either Azure Event Grid, Azure Event Hubs, or Azure Service Bus. Other applications can watch these endpoints and receive the data there. Endpoints and event routes can be defined using the Azure Digital Twins APIs and SDKs or the Azure CLI. In the request, you'll provide the name of the Azure Digital Twins instance, the name of the Event Grid, Event Hubs, or Service Bus resource, and optional filter conditions to specify which events are routed there. If your company in the factory example is already using any database or external applications for distribution center monitoring, you can use event routes to integrate your Azure Digital Twins data into those solutions.
