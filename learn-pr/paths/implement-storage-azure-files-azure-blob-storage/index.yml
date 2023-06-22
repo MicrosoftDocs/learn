@@ -8,7 +8,7 @@ metadata:
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.service: storage
+  ms.service: azure-storage
 title: Secure storage for Azure Files and Azure Blob Storage
 prerequisites: |
   - Experience using the Azure portal to create resources.
