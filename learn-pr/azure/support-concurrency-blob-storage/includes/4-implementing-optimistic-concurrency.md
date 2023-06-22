@@ -1,10 +1,10 @@
-﻿In optimistic concurrency, the application checks whether a blob has changed since the last time it was read. Azure Blob storage generates an identifier for every object when it changes state. Optimistic concurrency makes use of this identifier to determine if another user has changed the content since it was last read. If the object has been changed since it was last read, the commit will not complete.
+﻿In optimistic concurrency, the application checks whether a blob has changed since the last time it was read. Azure Blob storage generates an identifier for every object when it changes state. Optimistic concurrency makes use of this identifier to determine if another user has changed the content since it was last read. If the object has been changed since it was last read, the commit will not complete. 
 
 ![Workflow of optimistic strategy.](../media/optimistic.png)
 
-To implement an optimistic approach to accessing a blob, the environment, or service, needs to give a value for the current state of a file. One example could be to use the last modified date, or you could use a combination of file name, size, and modified date. You need to have confidence that there's no changes to the file since you last accessed it.
+To implement an optimistic approach to accessing a blob, the environment, or service, needs to give a value for the current state of a file. One example could be to use the last modified date, or you could use a combination of file name, size, and modified date. You need to have confidence that no changes were made to the file since you last accessed it.
 
-In the example, both reporters were trying to write to the same blob, but neither checked if the file had changed before they tried to update it. If the app had checked, it would have detected that the file had been changed by something else. Reporter A's app won't allow the changes to be saved to the Blob storage, as it would overwrite Reporter B's work.
+In the example, both reporters were trying to write to the same blob, but neither checked if the file had changed before they tried to update it. If the app had checked, it would have detected that the file had been changed by something else. Reporter A's app won't allow the changes to be saved to the Blob storage, as it would overwrite Reporter B's work. The app can then add logic to handle these conflicts.
 
 ### Azure Blob Storage
 

@@ -1,10 +1,10 @@
-Your news organization has a web app the financial reporters use to submit stories to their newsroom chief. The app uses Azure Blob storage to store stories for the chief  to review submitted stories.
+Your news organization has a web app that  financial reporters use to submit stories to their newsroom chief. The app uses Azure Blob storage to store stories for the chief to review prior to publication.
 
-The newsroom chief first uses the editing application to create notes for the new stories they want to be written. When they're finished, they save their changes. Saving them uploads the notes to a new blob. Stories are then assigned to a reporter. A reporter assigned to a story loads the notes, overwrites, and expands on them with their story, and finally saves them.
+The newsroom chief first uses the editing application to create notes for the new stories they want to be written. When they're finished, they save their changes. Saving them uploads the notes to a new blob. Stories are then assigned to a pool of reporters. The reporters assigned to a story load the notes, make changes in their areas of expertise, and save the changes once they're finished.
 
-Now imagine two reporters are assigned to the same story. Reporter A begins work quickly, retrieving the notes and beginning to write a long story. Reporter B begins soon after, but works faster and finishes their story first. Reporter B saves their changes, committing them to the blob. Later, Reporter A finishes their story and saves it.
+Now imagine two reporters are assigned to the same story. Reporter A begins work quickly, retrieving the notes and writing a lengthy section of the story. Reporter B begins soon after, makes an edit to the story, and finishes their work first. Reporter B saves their changes, committing them to the blob. Later, Reporter A finishes their story and saves it.
 
-The newsroom chief has been receiving complaints from their reporters that stories are being lost. On executing the app, you'll notice Reporter A is unaware of the previous completed work of Reporter B, and Reporter A has their story read by the newsroom chief.
+The newsroom chief has been receiving complaints from their reporters that stories are being lost. On executing the app, you'll notice Reporter A is unaware of the previous completed work of Reporter B, and only Reporter A's work is seen by the newsroom chief.
 
 In this exercise, you'll deploy the app and observe the last writer wins issues created by concurrent updates.
 
