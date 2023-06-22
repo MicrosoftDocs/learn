@@ -3,12 +3,11 @@ uid: learn.wwl.implement-storage-azure-files-azure-blob-storage
 metadata:
   title: Secure storage for Azure Files and Azure Blob Storage
   description: Secure storage for Azure Files and Azure Blob Storage
-  ms.date: 06/19/2023
+  ms.date: 06/22/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.service: storage
 title: Secure storage for Azure Files and Azure Blob Storage
 prerequisites: |
   *   Experience using the Azure portal to create resources.
