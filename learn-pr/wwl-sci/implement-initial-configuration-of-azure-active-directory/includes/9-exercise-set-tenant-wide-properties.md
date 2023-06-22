@@ -23,7 +23,7 @@ Just as the Country / region is found in the Azure Active Directory Properties d
 
 8.  In the **Properties** screen, under **Tenant properties**, locate **Location** and review the information.
     
-    :::image type="content" source="../media/azure-active-directory-properties-country-location-5411f783.png" alt-text="Screenshot of the Azure Active Directory Properties with the Country and Location settings highlighted.":::
+    :::image type="content" source="../media/azure-active-directory-properties-country-location-5411f783.png" alt-text="Screenshot of the Azure Active Directory Properties with the Country or region settings highlighted.":::
     
 
 ### Find the tenant ID
