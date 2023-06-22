@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.isolate-tenants
-title: Isolate tenants in a multi-tenant SaaS database
+title: Isolate tenants in a multitenant SaaS database
 metadata:
-  title: Isolate tenants in a multi-tenant SaaS database
-  description: "Multi-tenant SaaS applications often contain tenants of vastly differing sizes. Azure Cosmos DB for PostgreSQL makes it easy to isolate large tenants to reduce resource contention and improve overall quality of service."
+  title: Isolate tenants in a multitenant SaaS database
+  description: "Isolate large tenants to reduce resource contention and improve overall quality of service."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-isolate-tenants.md)]

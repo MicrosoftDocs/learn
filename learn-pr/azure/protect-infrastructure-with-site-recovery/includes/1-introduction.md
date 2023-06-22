@@ -20,4 +20,4 @@ In this module, you'll:
 - Basic understanding of Azure virtual networking
 
 > [!NOTE]
-> For this module, you'll need to use your subscription to complete the optional exercises. This subscription can be a free trial subscription or that you already have access to.
+> For this module, you'll need to use your subscription to complete the optional exercises. This subscription can be a free trial subscription or one you already have access to.
