@@ -61,6 +61,6 @@ There are several types of replication:
 
 ## Disk performance
 
-For most disks, the performance of a disk is determined by its performance tier, which is determined by the capacity of the disk. However, Ultra Disks and Premium SSD v2 offer the ability to set individual performance characterstics independently of the size of the disk. 
+For most disks, the performance of a disk is determined by its performance tier, which is determined by the capacity of the disk. However, Ultra Disks and Premium SSD v2 offer the ability to set individual performance characteristics independently of the size of the disk. 
 
 There are a few other ways to alter the performance of your disk. You can change the performance tier of a Premium SSD, independent of the size of the disk. Both Premium SSD and Standard SSD offer disk bursting, as well.
