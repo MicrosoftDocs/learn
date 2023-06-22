@@ -5,10 +5,10 @@ metadata:
   unitType: learning-content
   title: How Azure Digital Twins works
   description: Learn how Azure Digital Twins works.
-  ms.date: 05/23/2023
+  ms.date: 06/22/2023
   author: baanders
   ms.author: baanders
-  ms.reviewer: asergaz
+  ms.reviewer: taanderson
   manager: lizross
   ms.topic: module-intro-to-product
   ms.prod: learning-azure
