@@ -1,6 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.introduction-to-azure-digital-twins.how-azure-digital-twins-works
 title: How Azure Digital Twins works
+sandbox: true
+interactive: bash
 metadata:
   unitType: learning-content
   title: How Azure Digital Twins works
