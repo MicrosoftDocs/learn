@@ -8,7 +8,7 @@ In this unit, you learn about the relationship between scalability and reliabili
 
 ## Scalability/reliability relationship
 
-The good news is that making your app more scalable may also make it more reliable. For example, if your system autoscales, then given a component failure on a single virtual machine, the autoscaling service provisions another instance to meet your minimum virtual machine (VM) count requirements. Your system becomes more reliable. In another example, if you’re using higher-level services, such as Azure Storage that is inherently scalable, these services have been built to be reliable, so your data is replicated.
+The good news is that making your app more scalable may also make it more reliable. For example, if your system autoscales, then given a component failure on a single virtual machine, the autoscaling service provisions another instance to meet your minimum virtual machine (VM) count requirements. Your system becomes more reliable. In another example, you're using a higher-level service like Azure Storage that's inherently scalable. If you have a storage issue, the service is built to be reliable, so your data is replicated.
 
 Here's an analogy: Think of the accessibility ramps that you often see outside buildings that were initially designed to accommodate people in wheelchairs. They serve that purpose. But, they’re also used by parents with babies in strollers or carriages, or by small children for whom the stair steps are too deep or high. This usage is a *secondary benefit*.
 
@@ -25,7 +25,7 @@ To estimate capacity needs in the future, you should consider such factors as:
 - Application constraints
 - Identification of bottlenecks and limiting factors
 
-You also need to set service level objectives so you can create a capacity management plan that will reliably meet or exceed those objectives as the workload and environment change.
+You also need to set service level objectives so you can create a capacity management plan that reliably meets or exceeds those objectives as the workload and environment change.
 
 Capacity planning is an iterative process. As we go through this module, you learn how to map out resource requirements for application components.
 
