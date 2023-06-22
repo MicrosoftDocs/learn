@@ -33,9 +33,9 @@ AI for reasoning is exactly that. It's highly valuable for people with business-
 
 Let's see some examples.
 
-* **Pharmaceutical industry:** Some pharmaceutical companies are using AI to test molecules as a first step in their drug development process. This procedure enables them to accelerate drug discovery.
+* **Pharmaceutical industry**: Some pharmaceutical companies are using AI to test molecules as a first step in their drug development process. This procedure enables them to accelerate drug discovery.
 
-* **Food industry:** Food processing industries are applying AI to generate new recipes based on existing recipes, sales data, and customer preferences. These initiatives allow experts to launch new products faster than with traditional research.
+* **Food industry**: Food processing industries are applying AI to generate new recipes based on existing recipes, sales data, and customer preferences. These initiatives allow experts to launch new products faster than with traditional research.
 
 Research-related use cases are numberless and apply in almost every industry. In many scenarios, you can use prebuilt AI models such as GPT, which can be embedded in many options, to extract insights from papers, documentation, or research results. However, the same AI can also be used to find new ideas and create content, such as ads or keywords for marketing campaigns.
 

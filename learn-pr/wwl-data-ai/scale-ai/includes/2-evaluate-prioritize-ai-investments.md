@@ -45,14 +45,14 @@ For example, the same electronics manufacturer could sell "electronics-as-a-serv
 :::column span="2":::
 Using this framework, you can then map AI scenarios into quadrants. The "tactical" spectrum represents initiatives that are confined to a single team or use case. The "strategic" side represents larger business initiatives that might affect the entire organization.
 
-To go back to the earlier manufacturing example, you might place automation of quality control in the upper left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
+To go back to the earlier manufacturing example, you might place automation of quality control in the lower left quadrant. It's an initiative that digitizes and optimizes an existing business model without requiring systemic changes.
 
 Scenarios that fall below the middle line help the organization survive more than thrive. They might address competitive and disruptive threats, improve operations, or empower employees in the organization. Scenarios above the middle line help companies create new value propositions, revenue streams, or business models.
 
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
-> ![Diagram that shows the transformational framework. H1 falls in tactical existing business model. H2, in tactical new business models and strategic old ones. H3, in strategic new business models.](../media/2-evaluate-prioritize-ai-investments-2.png)
+> ![Diagram that shows the transformational framework. It classifies initiatives by tactical/strategic and new business models/existing business model.](../media/2-evaluate-prioritize-ai-investments-2.png)
 :::column-end:::
 :::row-end:::
 
@@ -71,7 +71,7 @@ Another reason to start at the bottom left of the prioritization framework quadr
 :::column-end:::
 :::column span="2":::
 > [!div class="mx-imgBorder"]
-> ![Diagram that shows the prioritization framework. Horizons move from incremental to evolutionary, from tactical to strategic, and from existing business model to new existing models.](../media/2-evaluate-prioritize-ai-investments-3.png)
+> ![Diagram that shows the prioritization framework. It moves from incremental to aspirational AI initiatives.](../media/2-evaluate-prioritize-ai-investments-3.png)
 :::column-end:::
 :::row-end:::
 

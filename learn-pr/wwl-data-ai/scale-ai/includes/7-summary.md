@@ -20,6 +20,6 @@ Now that you have reviewed this module, you should be able to:
 ## References
 
 1. Clayton Christensen, *The Innovator's Dilemma: When New Technologies Cause Great Firms to Fail*, 1997. 
-1. [Kathy Haan, "How Businesses Are Using Artificial Intelligence In 2023," Forbes, 2023 April 24](https://www.forbes.com/advisor/business/software/ai-in-business/).
+1. [Michael Chui, Roger Roberts, Lareina Yee, Eric Hazan, Alex Singla, Kate Smaje, Alex Sukharevsky, and Rodney Zemmel, "The economic potential of generative AI: The next productivity frontier," McKinsey, 2023 June 14](https://www.mckinsey.com/capabilities/mckinsey-digital/our-insights/the-economic-potential-of-generative-ai-the-next-productivity-frontier).
 1. [Fishbowl, "ChatGPT Sees Strong Early Adoption In The Workplace," 2023 January 17](https://www.fishbowlapp.com/insights/chatgpt-sees-strong-early-adoption-in-the-workplace/).
 1. [Jackie Wiles, "Beyond ChatGPT: The Future of Generative AI for Enterprises," 2023 January 26](https://www.gartner.com/en/articles/beyond-chatgpt-the-future-of-generative-ai-for-enterprises).
