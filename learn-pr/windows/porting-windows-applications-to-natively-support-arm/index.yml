@@ -4,13 +4,13 @@ metadata:
   title: Porting Windows applications to natively support Arm-based processors  # Do not edit: title must be "Introduction to (product)"
   description: "Learn about Windows on Arm, its benefits and capabilities and how to add a Arm configuraiton build to an existing application."               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 5/6/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: mattwojo        # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: mattwoj             # Alias     of the Microsoft employee either authoring or project-managing this content
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
   ms.prod: windows
   ms.technology: arm
 title: Porting Windows applications to natively support Arm-based processors
-summary: "Describe Windows on Arm, its benefits and capabilities and how to add a Arm build configuration to an existing application."
+summary: "This module describes how Windows operating system supports devices powered by Arm processors and how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This guidance will also cover testing, debugging, and troubleshooting the new Arm-based version of your Windows app."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe Windows on Arm.
@@ -22,15 +22,10 @@ abstract: |
 
 prerequisites: |
   Before completing this module, you should have the following prerequisite tooling, knowledge and experience:
-    - Familiarity with the Windows 11 operating system at a beginner level.
     - Familiarity with Visual Studio and compiling source code at a beginner level.
+    - Visual Studio 2022 installed with the .NET desktop development workload and .NET 6.0 SDK. 
     - Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
-    - Familiarity with using the Azure Portal to deploy and access deployed resources at a beginner level.
-    - Familiarity with using RDP to connect to a virtual machine at a beginner level.
-    - Have an Azure subscription with the ability to create a virtual machine.
-    - Have an internet browser installed.
-    - Have Visual Studio 2022 installed with the .NET desktop development workload.
-    - Have the .NET 6.0 SDK installed. 
+    - Have an Azure subscription and beginner-level familiarity with creating and connecting to a virtual machine. *(Optional for testing).*
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
