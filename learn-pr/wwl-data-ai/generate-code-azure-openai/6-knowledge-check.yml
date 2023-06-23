@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.wwl.generate-code-azure-openai.knowledge-check
+uid: learn.wwl.generate-code-azure-openai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
@@ -15,58 +14,36 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What are some benefits of using Azure OpenAI to generate code?"
     choices:
-    - content: ""
+    - content: "Increase in efficiency and productivity"
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure OpenAI can make you more efficient and productive by generating code for you."
+    - content: "Increase in bugs and readability"
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. Azure OpenAI can make you more efficient and productive by generating code for you."
+    - content: "Increase in time spent coding"
       isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Incorrect. Azure OpenAI can make you more efficient and productive by generating code for you."
+  - content: "What is the purpose of providing more context to the Azure OpenAI model when completing partial code?"
     choices:
-    - content: ""
+    - content: "Providing more context will make the model less accurate."
+      isCorrect: false
+      explanation: "Incorrect. Providing more context will make the model more accurate."
+    - content: "Providing more context will not affect the accuracy of the model."
+      isCorrect: false
+      explanation: "Incorrect. Providing more context will make the model more accurate."
+    - content: "The more context provided to the model, the more accurate the response will likely be."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
+      explanation: "Correct. The more context provided to the model, the more accurate the response will likely be."
+  - content: "What is an example of how Azure OpenAI models can change coding language?"
     choices:
-    - content: ""
+    - content: "Azure OpenAI models can only translate code from one language to another if the code is written in C#."
+      isCorrect: false
+      explanation: "Incorrect. Azure OpenAI models can translate code from one language to another regardless of the original language."
+    - content: "If you have code in one language, but need it in another, Azure OpenAI can translate that for you in several languages."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Azure OpenAI models can translate code from one language to another regardless of the original language."
+    - content: "Azure OpenAI models can only translate code from Python to C# or Java."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: ""
-    choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. Azure OpenAI models can translate code from one language to another regardless of the original language."

@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.wwl.generate-code-azure-openai.exercise
+uid: learn.wwl.generate-code-azure-openai.exercise
 title: |
   Exercise: Generate and improve code with Azure OpenAI Service
 metadata:

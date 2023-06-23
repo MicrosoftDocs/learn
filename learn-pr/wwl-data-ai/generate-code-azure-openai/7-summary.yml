@@ -1,11 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.wwl.generate-code-azure-openai.summary
-title: |
-  Summary
+uid: learn.wwl.generate-code-azure-openai.summary
+title: Summary
 metadata:
-  title: |
-    Summary
+  title: Summary
   description: "Summary of what you learned in this module."
   ms.date: 6/20/2023
   author: ivorb
