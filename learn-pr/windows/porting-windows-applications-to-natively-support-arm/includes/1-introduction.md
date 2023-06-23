@@ -4,11 +4,4 @@ Arm-based devices are experiencing an increase in popularity. While Windows supp
 
 Suppose you are a developer for a company with a popular Windows accounting application. The application's usage analytics show an increase in Windows on Arm devices using the application. You want to ensure that the application is running at peak performance on all platforms; to do this, you will work towards providing an Arm-native build.
 
-  By the end of this module, you'll be able to:
-
-  1. Describe Windows on Arm.
-  1. Understand why providing an Arm-native build for Windows applications is important.
-  1. Configure an Arm64 build using Visual Studio.
-  1. Test an Arm64 build on an Arm virtual machine.
-  1. Debug an Arm64 build using Visual Studio remote debugging.
-  1. Troubleshoot common issues experienced with Arm builds.
+To add the Arm64 configuration, we will download a sample "HelloWorld" app from GitHub. You will need to have Visual Studio 2022 installed with the .NET desktop development workload and .NET 6.0 SDK downloaded. We will then add the configuration to your app and try running it. You can use an Arm-based device running Windows or, if you have an Azure subscription, open the Azure portal to create a virtual machine running Windows on Arm that can be used to test the new Arm-native version of your app. We will then try debugging the new Arm version of your app using Visual Studio's remote debugging tools and look at some troubleshooting scenarios.
