@@ -35,7 +35,7 @@ There are many ways that Azure can help grow your business, and every company wi
 
 ## Cutting-Edge Technology
 
-Through the Azure, your business can also explore new technologies such as artificial intelligence, machine learning, and the Internet of Things. Azure offers services in all these fields, accessible to your business via subscription.
+Through Azure, your business can also explore new technologies such as artificial intelligence, machine learning, and the Internet of Things. Azure offers services in all these fields, accessible to your business via subscription.
 
 **Example**: [Watch this video about how global energy tech company Envision and its Energy Operating System EnOS use the Internet of Things to monitor and coordinate between smart energy devices](https://www.youtube.com/watch?v=LMGNhv7Ud2o).
 
