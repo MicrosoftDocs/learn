@@ -17,7 +17,7 @@ Microsoft Sentinel's automation and orchestration solution provides a highly ext
 
 **For example**, if you use the ServiceNow ticketing system, use Azure Logic Apps to automate your workflows and open a ticket in ServiceNow each time a particular alert or incident is generated.
 
-:::image type="content" source="../media/microsoft-sentinel-automation-orchestration-with-playbook-52db564e.png" alt-text="":::
+:::image type="content" source="../media/microsoft-sentinel-automation-orchestration-with-playbook-52db564e.png" alt-text="Screenshot showing an example of an Azure Logic Apps automated workflow.":::
 
 
 Playbooks are intended for **Security operations center (SOC)** engineers and analysts of all tiers to **automate** and **simplify tasks**, **including data ingestion**, **enrichment**, **investigation**, and **remediation**.

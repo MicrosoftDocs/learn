@@ -25,7 +25,7 @@ Use notebooks in Microsoft Sentinel to extend the scope of what you can do with 
  -  Create data visualizations that aren't built into Microsoft Sentinel, such as custom timelines and process trees.
  -  Integrate data sources outside of Microsoft Sentinel, such as an on-premises data set.
 
-:::image type="content" source="../media/microsoft-sentinel-notebooks-9cdb3a48.png" alt-text="Screenshot showing the Microsoft Sentinel community page.":::
+:::image type="content" source="../media/microsoft-sentinel-notebooks-9cdb3a48.png" alt-text="Screenshot showing an example of threat hunting with notebooks.":::
 
 
 Notebooks are intended for threat hunters or Tier 2-3 analysts, incident investigators, data scientists, and security researchers. They require a higher learning curve and coding knowledge. They have limited automation support.

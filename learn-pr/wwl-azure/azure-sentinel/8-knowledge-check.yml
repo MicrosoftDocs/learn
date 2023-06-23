@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/22/2023
+  ms.date: 06/23/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ quiz:
     choices:
     - content: "Integration with Azure services and existing tools"
       isCorrect: false
-      explanation: "While security automation and orchestration does integrate with Azure services and existing tools, this is not its primary benefit."
+      explanation: "While security automation and orchestration do integrate with Azure services and existing tools, this is not its primary benefit."
     - content: "Simplification of security orchestration and task automation."
       isCorrect: true
       explanation: "The primary benefit of security automation and orchestration in Microsoft Sentinel is the simplification of security orchestration and the automation of common security tasks. This streamlines security operations, reduces manual effort, and improves overall efficiency."
@@ -51,7 +51,7 @@ quiz:
     choices:
     - content: "AI-powered investigation and threat hunting."
       isCorrect: true
-      explanation: "A key feature of Microsoft Sentinel's incident response capabilities is AI-powered investigation and threat hunting. It leverages artificial intelligence to enhance the efficiency and effectiveness of incident response activities. By tapping into years of cyber security work at Microsoft, Microsoft Sentinel enables security teams to investigate threats at scale and proactively hunt for suspicious activities."
+      explanation: "A key feature of Microsoft Sentinel's incident response capabilities is AI-powered investigation and threat hunting. It leverages artificial intelligence to enhance the efficiency and effectiveness of incident response activities. By leveraging years of real-world cyber security experience, Microsoft Sentinel enables security teams to investigate threats at scale and proactively hunt for suspicious activities."
     - content: "Infrastructure setup and maintenance automation."
       isCorrect: false
       explanation: "Infrastructure setup and maintenance automation: While Microsoft Sentinel may assist in automating common tasks, its incident response capabilities are primarily focused on investigation and threat hunting."
@@ -62,7 +62,7 @@ quiz:
     choices:
     - content: "It natively incorporates Log Analytics and Logic Apps as foundational components."
       isCorrect: true
-      explanation: "Microsoft Sentinel leverages Azure services like Log Analytics and Logic Apps by natively incorporating them as foundational components. Log Analytics provides data collection and storage capabilities, while Logic Apps enable the automation and orchestration of workflows within Microsoft Sentinel."
+      explanation: "Microsoft Sentinel leverages Azure services like Log Analytics and Logic Apps by natively incorporating them as foundational components. Log Analytics provides data collection and storage capabilities, while Logic Apps enables the automation and orchestration of workflows within Microsoft Sentinel."
     - content: "It enables the collection of data at cloud scale from Azure services."
       isCorrect: false
       explanation: "While Microsoft Sentinel does collect data at cloud scale, this option does not specifically highlight the role of Log Analytics and Logic Apps in leveraging Azure services."
