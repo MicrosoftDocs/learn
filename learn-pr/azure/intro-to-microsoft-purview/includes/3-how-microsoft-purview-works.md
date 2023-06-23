@@ -35,7 +35,7 @@ In Microsoft Purview, there are a few options to use for authentication when the
 
 ### Map data
 
-The data map is the foundational platform for Microsoft Purview. The data map is made up of:
+The data map is the foundational platform for Microsoft Purview. The data map consists of:
 
 - Data assets.
 - Data lineage.
