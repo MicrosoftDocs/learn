@@ -19,7 +19,7 @@ Every developer writes their code to the best of their ability. We, as authors o
 
 Application Security, often referred to as AppSec, is the process of finding, fixing, and preventing security vulnerabilities at the application level.
 
-![Diagram showing world;s biggest data breaches and hacks.](../media/worlds-breaches.png)
+![Diagram showing world's biggest data breaches and hacks.](../media/worlds-breaches.png)
 [Image source](https://www.informationisbeautiful.net/visualizations/worlds-biggest-data-breaches-hacks/)
 
 AppSec logically falls under the wider context of **Information Security (InfoSec)**, term covering protection of information and systems from unauthorized access, use, disruption, or destruction etc. InfoSec also covers areas like as network security, intrusion detection, digital forensics, and governance, risk, and compliance for example.
