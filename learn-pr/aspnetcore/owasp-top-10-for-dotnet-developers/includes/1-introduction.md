@@ -15,7 +15,7 @@ News stories about a company being hacked or data being stolen and posted on dar
 
 ### The world of application security
 
-Every developer writes their code to the best of their ability. We, as authors of ever more complex systems, are responsible for the success of your products and part of that success is providing your customers with a secure and reliable solution. [Security development lifecycle](https://www.microsoft.com/en-us/securityengineering/sdl/practices) starts with training. Understanding the risk associated and discussed in OWASP Top 10 is a great start.
+Every developer writes their code to the best of their ability. We, as authors of ever more complex systems, are responsible for the success of your products and part of that success is providing your customers with a secure and reliable solution. [Security development lifecycle](https://www.microsoft.com/securityengineering/sdl/practices) starts with training. Understanding the risk associated and discussed in OWASP Top 10 is a great start.
 
 Application Security, often referred to as AppSec, is the process of finding, fixing, and preventing security vulnerabilities at the application level.
 
