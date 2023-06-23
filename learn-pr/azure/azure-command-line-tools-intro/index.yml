@@ -2,23 +2,23 @@
 uid: learn.azure-command-line-tools-intro
 metadata:
   moduleType: standard
-  title: Choose the best Azure command line tools for managing and provisioning your cloud infrastructure
-  description: Learn the basic concepts of infrastructure as code, explore the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform, and decide which command line tools best meet your organization's needs.
+  title: Choose the best Azure command-line tools for managing and provisioning your cloud infrastructure
+  description: Learn the basic concepts of infrastructure as code, explore the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform, and decide which command-line tools best meet your organization's needs.
   ms.date: 02/27/2023
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: module-choose-best-product
   ms.prod: learning-azure
-title: Choose the best Azure command line tools for managing and provisioning your cloud infrastructure
-summary: Learn the basic concepts of infrastructure as code, explore the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform, and decide which command line tools best meet your organization's needs.
+title: Choose the best Azure command-line tools for managing and provisioning your cloud infrastructure
+summary: Learn the basic concepts of infrastructure as code, explore the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform, and decide which command-line tools best meet your organization's needs.
 abstract: |
-  After completing this module, you'll be able to:
-  - Understand basic concepts of infrastructure as code
-  - Understand the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform
-  - Be able to decide which command line tools are best for your requirements
+  After you complete this module, you will:
+  - Understand basic concepts of infrastructure as code.
+  - Understand the key differences between the Azure CLI, Azure PowerShell, Bicep, and Terraform.
+  - Be able to decide which command-line tools are best for your requirements.
 prerequisites: |
   - Basic knowledge of Azure
-  - Basic knowledge of any command line tool
+  - Basic knowledge of any command-line tool
 ratingEnabled: false
 iconUrl: /training/achievements/generic-badge.svg
 levels:

@@ -20,15 +20,15 @@ To deploy Verified ID, you will need:
 
 To set up Azure AD Verifiable Credentials, follow these steps:
 
-1. In the Azure portal, search for verifiable credentials. Then, select Verifiable Credentials (Preview).
-1. From the left menu, select Getting started.
-1. Set up your organization by providing the following information:
+1.  In the Azure portal, search for verifiable credentials. Then, select Verifiable Credentials (Preview).
+2.  From the left menu, select Getting started.
+3.  Set up your organization by providing the following information:
     
     | **Setting**       | **Description of value to enter**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
     | ----------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Organization name | Enter a name to reference your business within Verifiable Credentials. Your customers don't see this name.                                                                                                                                                                                                                                                                                                                                                                                                                         |
     | Domain            | Enter a domain that's added to a service endpoint in your decentralized identity (DID) document. The domain is what binds your DID to something tangible that the user might know about your business. Microsoft Authenticator and other digital wallets use this information to validate that your DID is linked to your domain. If the wallet can verify the DID, it displays a verified symbol. If the wallet can't verify the DID, it informs the user that the credential was issued by an organization it couldn't validate. |
     | Key vault         | Enter the name of the key vault you have in your tenant.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
-1. Select Save and create credential.
+4.  Select Save and create credential.
 
 Note that these are just the general steps needed to deploy the Entra Verified ID service. Follow the article list above for more details.
