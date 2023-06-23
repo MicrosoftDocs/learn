@@ -61,3 +61,5 @@ Once the binaries are built for your app to support Arm64, you’ll want to test
     :::image type="content" source="../media/winarm-run-helloarm64-running.png" alt-text="The HelloWorldArm application window displays the prompt Please enter your name. The name Learner is entered and the application responds with the message Hello, Learner!":::
 
 Congratulations! You have successfully run the application on Windows 11 on Arm64! In the next exercise, we'll cover how to remotely connect to the application running on the virtual machine from your local Visual Studio instance.
+
+[!include[](../../../includes/azure-exercise-subscription-cleanup.md)]
