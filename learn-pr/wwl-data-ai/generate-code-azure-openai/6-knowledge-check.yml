@@ -3,7 +3,7 @@ uid: learn.wwl.generate-code-azure-openai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Check your knowledge of the module with these multiple choice questions."
+  description: "Check your knowledge of the code generation capabilities covered in this module."
   ms.date: 6/20/2023
   author: ivorb
   ms.author: berryivor
@@ -27,15 +27,15 @@ quiz:
       explanation: "Incorrect. Azure OpenAI can make you more efficient and productive by generating code for you."
   - content: "What is the purpose of providing more context to the Azure OpenAI model when completing partial code?"
     choices:
-    - content: "Providing more context will make the model less accurate."
+    - content: "Providing more context makes the model less accurate."
       isCorrect: false
-      explanation: "Incorrect. Providing more context will make the model more accurate."
-    - content: "Providing more context will not affect the accuracy of the model."
+      explanation: "Incorrect. Providing more context makes the model more accurate."
+    - content: "Providing more context doesn't affect the accuracy of the model."
       isCorrect: false
-      explanation: "Incorrect. Providing more context will make the model more accurate."
-    - content: "The more context provided to the model, the more accurate the response will likely be."
+      explanation: "Incorrect. Providing more context makes the model more accurate."
+    - content: "The more context provided to the model, the more accurate the response likely is."
       isCorrect: true
-      explanation: "Correct. The more context provided to the model, the more accurate the response will likely be."
+      explanation: "Correct. The more context provided to the model, the more accurate the response likely is."
   - content: "What is an example of how Azure OpenAI models can change coding language?"
     choices:
     - content: "Azure OpenAI models can only translate code from one language to another if the code is written in C#."

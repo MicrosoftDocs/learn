@@ -1,16 +1,16 @@
-One of the capabilities of Azure OpenAI models is to generate code from natural language prompts. This can range from a simple one line command to a full application. The AI models can also edit and update provided code or previous responses to complete the requested task.
+One of the capabilities of Azure OpenAI models is to generate code from natural language prompts. Tasks can range from a simple one line command to a full application. The AI models can also edit and update provided code or previous responses to complete the requested task.
 
 ## AI models for code generation
 
 Most of the language models available can help with code, with some performing better than others. In the base *GPT-3* family, the standard text model (such as `text-davinci-002`) has a good base understanding of code. *Codex* (such as `code-davinci-002`) has expanded coding capabilities on top of the standard text model.
 
-As new generations of models evolve, the base models drastically improve their performance and understanding of both language and code, which results in not needing a specific *Codex* models. This results in just a single model for more recent generations (such as `gpt-35-turbo` and `gpt-4`) that can be used for both natural language and code.
+As new generations of models evolve, the base models drastically improve their performance and understanding of both language and code, which results in not needing specific *Codex* models. This improvement results in just a single model for more recent generations (such as `gpt-35-turbo` and `gpt-4`) that can be used for both natural language and code.
 
 The examples in this module are using `gpt-35-turbo`.
 
 ## Write functions
 
-Azure OpenAI models can create functions and apps in several languages by just describing what you want. For example, say you need an implementation of binary search but can't remember how it is done. Given the prompt `write a function for binary search in python`, you will likely receive a response with the function and an explanation of the code.
+Azure OpenAI models can create functions and apps in several languages by just describing what you want. For example, say you need an implementation of binary search but can't remember how it's done. Given the prompt `write a function for binary search in python`, you likely receive a response with the function and an explanation of the code.
 
 ```code
 Sure, here's an example implementation of binary search algorithm in Python:
@@ -46,11 +46,11 @@ Note that the binary search algorithm assumes that the input array is sorted in 
 the array is not sorted, the algorithm may not return the correct result.
 ```
 
-The request can go further than functions, and request a series of functions or an entire app. The response will provide a good starting point for the task you are trying to achieve.
+The request can go further than functions, and request a series of functions or an entire app. The response provides a good starting point for the task you're trying to achieve.
 
 ## Change coding language
 
-If you have code in one language, but need it in another, Azure OpenAI can translate that for you. For example say you have this `print_squares` function in Python.
+If you have code in one language, but need it in another, Azure OpenAI can translate that for you. For example, say you have this `print_squares` function in Python.
 
 ```python
 def print_squares(n):  
@@ -58,7 +58,7 @@ def print_squares(n):
         print(i**2)   
 ```
 
-If you provide that code, along with the prompt `convert this code to C#`, you'll likely receive something similar to the following function.
+If you provide that code, along with the prompt `convert this code to C#`, you likely get something similar to the following function.
 
 ```csharp
 public void PrintSquares(int n)  
@@ -88,7 +88,7 @@ fn qzplv(n: i32, m: i32) -> i32 {
 }
 ```
 
-When provided to the model, along with the prompt `could you explain what this code is doing?`, you'll get a response similar to the following:
+When provided to the model, along with the prompt `could you explain what this code is doing?`, you get a response similar to the following:
 
 ```code
 Sure, I'd be happy to explain what this code is doing!

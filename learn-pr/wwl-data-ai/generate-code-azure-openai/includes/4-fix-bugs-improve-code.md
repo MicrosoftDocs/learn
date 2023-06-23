@@ -35,7 +35,7 @@ public double CalculateAverage(int[] numbers)
 ```
 
 ::: zone-end
-Provide that function to the model, along with the prompt `Fix the bugs in this function`, and you'll get a response with the fixed code and an explanation of what was fixed.
+Provide that function to the model, along with the prompt `Fix the bugs in this function`, and you get a response with the fixed code and an explanation of what was fixed.
 ::: zone pivot="python"
 
 ```python
@@ -67,7 +67,7 @@ public double CalculateAverage(int[] numbers)
 
 ::: zone-end
 
-```AI Response
+```AI
 There were a few issues with the original code:
 
 1. The variable "average" was assigned the value of "total" instead of the actual average.
@@ -105,13 +105,14 @@ public int SumOfN(int n)
 ```
 
 ::: zone-end
-This version works correctly, but its time complexity is O(n). When provided to the model, it responds with the following:
+This version works correctly, but its time complexity is O(n). When provided to the model, here's the response:
 
-```AI Response
+```AI
 We can improve this function it by using a mathematical formula instead.
 
 Here's the more efficient version:
 ```
+
 ::: zone pivot="python"
 
 ```python
@@ -177,7 +178,7 @@ public double CalculateTotalPrice(string item, int quantity)
 ```
 
 ::: zone-end
-This code calculates the total price of a particular item based on its name and quantity. However, the code is not very modular and can be difficult to maintain. When provided to the model, with the request to refactor it, here is the response:
+This code calculates the total price of a particular item based on its name and quantity. However, the code isn't modular and can be difficult to maintain. When provided to the model with the request to refactor it, here's the response:
 ::: zone pivot="python"
 
 ```python
@@ -216,9 +217,9 @@ static double CalculateTotalPrice(string item, int quantity)
 
 ::: zone-end
 
-Along with the code, the model provides an explanation of the refactor.
+Along with the code, the model provides an explanation of the refactoring.
 
-```code
+```AI
 In this refactored code, we've created an object called itemPrices that maps item names to their 
 prices. We've also simplified the calculateTotalPrice function by using the itemPrices object to look 
 up the price of the item, rather than using a series of if/else statements. This makes the code more 

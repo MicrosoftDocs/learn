@@ -1,13 +1,13 @@
-Azure OpenAI can assist developers in common software development tasks such as writing unit tests, completing partial code, commenting code, and generating documentation. This can enable developers to spend more time on complex programming and problem solving tasks.
+Azure OpenAI can assist developers in common software development tasks such as writing unit tests, completing partial code, commenting code, and generating documentation. Using AI assistance can enable developers to spend more time on complex programming and problem solving tasks.
 
 ## Complete partial code
 
-Azure OpenAI models are capable of generating code based on comments, function names, and partially written code. The more context you can provide the model, the more accurate the response will likely be.
+Azure OpenAI models are capable of generating code based on comments, function names, and partially written code. The more context you can provide the model, the more accurate the response likely is.
 
 For example, when given the following prompt:
 ::: zone pivot="python"
 
-```code
+```prompt
 complete the following function  
 """  
 # calculate the average of the numbers in an array, but only if they're even  
@@ -17,7 +17,7 @@ def
 ::: zone-end
 ::: zone pivot="csharp"
 
-```code
+```prompt
 complete the following function    
 """    
 // calculate the average of the numbers in an array, but only if they're even    
@@ -25,7 +25,7 @@ public
 ```
 
 ::: zone-end
-The model will take the comments and start of the function definition, and complete it from whatever context it has.
+The model takes the comments and start of the function definition, and complete it from whatever context it has.
 ::: zone pivot="python"
 
 ```python
@@ -66,14 +66,14 @@ public double CalculateEvenAverage(int[] numbers) {
 ```
 
 ::: zone-end
-In this case, it was able to discern what we wanted due to a relatively simple and complete comment preceding the start of the function. With more complex functions or tasks, more context will be required to get a useful response.
+In this case, it was able to discern what we wanted due to a relatively simple and complete comment preceding the start of the function. With more complex functions or tasks, more context is required to get a useful response.
 
-It is important to note that for some languages, like Python, the syntax is clear enough for the model to assume what language is desired. For languages like C# or Java, which are syntactically similar, there is a higher likelihood that the model will use the wrong language. If that is the case, try specifying the language in the prompt or providing more code for context.
+It's important to note that for some languages, like Python, the syntax is clear enough for the model to assume what language is desired. For syntactically similar languages like C# or Java, there's a higher likelihood that the model uses the wrong language. If that is the case, try specifying the language in the prompt or providing more code for context.
 
 Similar functionality can be seen by providing partial code to the model, without any comments. Take the following prompt for example.
 ::: zone pivot="python"
 
-```code
+```prompt
 complete the following code  
 """  
 def func1(n)
@@ -83,7 +83,7 @@ def func1(n)
 ::: zone-end
 ::: zone pivot="csharp"
 
-```code
+```prompt
 complete the following code  
 """  
 public int Func1(int n) {  
@@ -91,7 +91,7 @@ public int Func1(int n) {
 ```
 
 ::: zone-end
-The AI model will do its best to complete the function with the most likely completion of the function.
+The AI model does its best to complete the function with the most likely completion of the function.
 ::: zone pivot="python"
 
 ```python
@@ -116,9 +116,9 @@ public int Func1(int n) {
 ```
 ::: zone-end
 
-The response will likely include a natural language explanation of what that function is doing. In this case, it responded with a recursive implementation of the factorial function. However, the prompt could have also been the start of a Fibonacci function, which illustrates a case where more context is needed in the prompt to better indicate what we want from the model.
+The response likely also includes a natural language explanation of what that function is doing. In this case, it responded with a recursive implementation of the factorial function. However, the prompt could have also been the start of a Fibonacci function, which illustrates a case where we need more context in the prompt to better indicate what we want from the model.
 
-Tools such as GitHub Copilot utilize OpenAI models to suggest code and function completions in a very similar way to the above examples. GitHub Copilot is an excellent example of real-world usage of this functionality that uses built-in prompts and the context of the code you are writing to act as your paired programmer.
+Tools such as GitHub Copilot utilize OpenAI models to suggest code and function completions in a similar way to the above examples. GitHub Copilot is an excellent example of real-world usage of this functionality that uses built-in prompts and the context of the code you're writing to act as your paired programmer.
 
 ## Write unit tests
 
@@ -172,7 +172,7 @@ public static int BinarySearch(int[] arr, int target)
 
 ::: zone-end
 
-Provide that function along with the prompt `write three unit tests for this function`, and you'll get a response similar to the following.
+Provide that function along with the prompt `write three unit tests for this function`, and you get a response similar to the following.
 
 ::: zone pivot="python"
 
@@ -289,7 +289,7 @@ public static List<List<int>> Permutations(List<int> lst)
 ```
 ::: zone-end
 
-Provide that function to the model, along with a prompt requesting that it add comments to the code, and you'll likely get a response similar to the following.
+Provide that function to the model, along with a prompt requesting that it add comments to the code, and you get a response similar to the following.
 
 ::: zone pivot="python"
 
