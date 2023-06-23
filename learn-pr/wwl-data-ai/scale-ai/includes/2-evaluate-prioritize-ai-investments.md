@@ -84,11 +84,11 @@ Once you've chosen AI initiatives, it's important to identify value drivers and 
 | Value | Sample category | Definition | AI example |
 |---|---|---|---|
 | Financial drivers | Sales |The revenue earned from products or services. | Use targeted marketing to improve accuracy in classifying prospects. |
-| | Cost management | Process of planning and controlling the budget of a business. In addition to employee time and effort, the costs of AI models include cloud compute, which varies depending on the model's workload. | Improve prediction models for scheduling equipment maintenance to improve sustainability. |
-| | Capital productivity | Measure of how physical capital is used in providing goods and services. | Enhance employee productivity and resource allocation with insight into operations. |
+| Financial drivers | Cost management | Process of planning and controlling the budget of a business. In addition to employee time and effort, the costs of AI models include cloud compute, which varies depending on the model's workload. | Improve prediction models for scheduling equipment maintenance to improve sustainability. |
+| Financial drivers | Capital productivity | Measure of how physical capital is used in providing goods and services. | Enhance employee productivity and resource allocation with insight into operations. |
 | Quality measures | Quality | The degree to which products or services meet customer or business expectations. | Improve product quality with automated inspection processes. |
-| | Cycle times | The time it takes to complete a process. | Accelerate product inspections with image recognition.                                    |
-| | Satisfaction (customer and/or employee) | How happy customers are with a company's products or services (which contributes to market share, competitive differentiation, and more). | Improve customer engagement with personalized discounts and product bundles. |
+| Quality measures | Cycle times | The time it takes to complete a process. | Accelerate product inspections with image recognition.                                    |
+| Quality measures | Satisfaction (customer and/or employee) | How happy customers are with a company's products or services (which contributes to market share, competitive differentiation, and more). | Improve customer engagement with personalized discounts and product bundles. |
 
 As you invest in initiatives, it's important to develop market and financial models to help balance potential risk and return. Consider factors such as the total addressable market (TAM), net present value (NPV), and internal rate of return (IRR). Work with the CFO office and other key stakeholders to ensure the financial models make sense within the context of the business. These metrics can help secure their buy-in and ensure support throughout the process.
 
