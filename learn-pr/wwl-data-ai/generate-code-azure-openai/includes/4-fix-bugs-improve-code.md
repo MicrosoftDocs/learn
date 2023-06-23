@@ -5,6 +5,7 @@ Developers sometimes can write code that mostly works, but could be improved by 
 Azure OpenAI models can help fix bugs in code by analyzing the code and suggesting changes that can potentially fix the issue. This can help developers identify and resolve bugs faster and more efficiently.
 
 For example, say you have the following function that isn't working for you.
+::: zone pivot="python"
 
 ```python
 def calculate_average(numbers):  
@@ -15,6 +16,9 @@ def calculate_average(numbers):
     average = total  
     rerun averave  
 ```
+
+::: zone-end
+::: zone pivot="csharp"
 
 ```csharp
 public double CalculateAverage(int[] numbers)
@@ -30,7 +34,9 @@ public double CalculateAverage(int[] numbers)
 }
 ```
 
+::: zone-end
 Provide that function to the model, along with the prompt `Fix the bugs in this function`, and you'll get a response with the fixed code and an explanation of what was fixed.
+::: zone pivot="python"
 
 ```python
 def calculate_average(numbers):  
@@ -41,6 +47,9 @@ def calculate_average(numbers):
     average = total / len(numbers)  
     return average  
 ```
+
+::: zone-end
+::: zone pivot="csharp"
 
 ```csharp
 public double CalculateAverage(int[] numbers)
@@ -56,7 +65,9 @@ public double CalculateAverage(int[] numbers)
 }
 ```
 
-```code
+::: zone-end
+
+```AI Response
 There were a few issues with the original code:
 
 1. The variable "average" was assigned the value of "total" instead of the actual average.
@@ -68,6 +79,7 @@ the "numbers" list to get the average.
 ## Improve performance
 
 While code developers write may work, there might be a more efficient way to accomplish the task. Here's an example of a function that calculates the sum of the first n positive integers, possibly inefficiently:
+::: zone pivot="python"
 
 ```python
 def sum_of_n(n):
@@ -76,6 +88,9 @@ def sum_of_n(n):
         result += i
     return result
 ```
+
+::: zone-end
+::: zone pivot="csharp"
 
 ```csharp
 public int SumOfN(int n)  
@@ -89,12 +104,23 @@ public int SumOfN(int n)
 }  
 ```
 
-This version works correctly, but its time complexity is O(n). We can improve it it by using a mathematical formula instead:
+::: zone-end
+This version works correctly, but its time complexity is O(n). When provided to the model, it responds with the following:
+
+```AI Response
+We can improve this function it by using a mathematical formula instead.
+
+Here's the more efficient version:
+```
+::: zone pivot="python"
 
 ```python
 def sum_of_n(n):
     return n * (n + 1) // 2
 ```
+
+::: zone-end
+::: zone pivot="csharp"
 
 ```csharp
 public int SumOfN(int n)  
@@ -103,6 +129,7 @@ public int SumOfN(int n)
 }  
 ```
 
+::: zone-end
 This version still returns the correct result, but its time complexity is now O(1), which makes it much more efficient.
 
 ## Refactor inefficient code
@@ -110,43 +137,48 @@ This version still returns the correct result, but its time complexity is now O(
 Better code is less prone to bugs and is easier to maintain, and the Azure OpenAI models can help guide developers on how to refactor their code.
 
 Consider the following function.
+::: zone pivot="python"
 
 ```python
-def calculateTotalPrice(item, quantity):  
-    if item == 'apple':  
-        return quantity * 0.5  
-    elif item == 'banana':  
-        return quantity * 0.75  
-    elif item == 'orange':  
-        return quantity * 0.6  
-    else:  
-        return 0  
-
+def calculateTotalPrice(item, quantity):
+    if item == 'apple':
+        return quantity * 0.5
+    elif item == 'banana':
+        return quantity * 0.75
+    elif item == 'orange':
+        return quantity * 0.6
+    else:
+        return 0
 ```
+
+::: zone-end
+::: zone pivot="csharp"
 
 ```csharp
-public double CalculateTotalPrice(string item, int quantity)  
-{  
-    if (item == "apple")  
-    {  
-        return quantity * 0.5;  
-    }  
-    else if (item == "banana")  
-    {  
-        return quantity * 0.75;  
-    }  
-    else if (item == "orange")  
-    {  
-        return quantity * 0.6;  
-    }  
-    else  
-    {  
-        return 0;  
-    }  
-}  
+public double CalculateTotalPrice(string item, int quantity)
+{
+    if (item == "apple")
+    {
+        return quantity * 0.5;
+    }
+    else if (item == "banana")
+    {
+        return quantity * 0.75;
+    }
+    else if (item == "orange")
+    {
+        return quantity * 0.6;
+    }
+    else
+    {
+        return 0;
+    }
+}
 ```
 
+::: zone-end
 This code calculates the total price of a particular item based on its name and quantity. However, the code is not very modular and can be difficult to maintain. When provided to the model, with the request to refactor it, here is the response:
+::: zone pivot="python"
 
 ```python
 item_prices = {  
@@ -159,6 +191,9 @@ def calculate_total_price(item, quantity):
     price = item_prices.get(item, 0)  
     return quantity * price  
 ```
+
+::: zone-end
+::: zone pivot="csharp"
 
 ```csharp
 static Dictionary<string, double> itemPrices = new Dictionary<string, double>()  
@@ -178,6 +213,8 @@ static double CalculateTotalPrice(string item, int quantity)
     return quantity * price;  
 }  
 ```
+
+::: zone-end
 
 Along with the code, the model provides an explanation of the refactor.
 
