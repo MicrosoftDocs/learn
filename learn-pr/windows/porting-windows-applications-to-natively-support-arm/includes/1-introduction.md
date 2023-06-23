@@ -1,4 +1,4 @@
-Arm-based computing is experiencing an increase in popularity. Providing Arm-native builds of your Windows applications yields the best performance for these specialized devices.
+Arm-based devices are experiencing an increase in popularity. While Windows supports emulation so that applications with an x64 or x86-based architecture will still run on Arm devices, providing an Arm-native build of your Windows application will improve performance and give your customers the best experience when using an Arm-based device. In this module, we will cover some of the benefits of Arm, the support and toolchain available for Windows on Arm, and then walk through how to add an Arm64 build configuration for your Windows app, including testing, debugging, and troubleshooting.
 
 ## Scenario
 
@@ -12,17 +12,3 @@ Suppose you are a developer for a company with a popular Windows accounting appl
   1. Test an Arm64 build on an Arm virtual machine.
   1. Debug an Arm64 build using Visual Studio remote debugging.
   1. Troubleshoot common issues experienced with Arm builds.
-
-## Prerequisites
-
-Before completing this module, you should have the following prerequisite tooling, knowledge and experience:
-
- 1. Familiarity with the Windows 11 operating system at a beginner level.
- 1. Familiarity with Visual Studio and compiling source code at a beginner level.
- 1. Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
- 1. Familiarity with using the Azure Portal to deploy and access deployed resources at a beginner level.
- 1. Familiarity with using RDP to connect to a virtual machine at a beginner level.
- 1. Have an Azure subscription with the ability to create a virtual machine.
- 1. Have an internet browser installed.
- 1. Have Visual Studio 2022 installed with the .NET desktop development workload.
- 1. Have the .NET 6.0 SDK installed.
