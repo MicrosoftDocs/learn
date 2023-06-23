@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: learn.owasp-top-10-for-dotnet-developers.identification-authentication-failures
-title: 07. Identification and Authentication Failures
+title: Identification and authentication failures
 metadata:
   title: identification-authentication-failures
   description: "OWASP Top 10 for .NET Developers. Identification and authentication failures."
