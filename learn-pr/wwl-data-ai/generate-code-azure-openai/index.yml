@@ -1,8 +1,7 @@
 ### YamlMime:Module
 uid: learn.wwl.generate-code-azure-openai
 metadata:
-  title: |
-    Generate code with Azure OpenAI Service
+  title: Generate code with Azure OpenAI Service
   description: Learn how to use the Azure OpenAI Service to generate and improve code.
   ms.date: 6/20/2023
   author: ivorb
@@ -10,7 +9,7 @@ metadata:
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: azure
   ms.subservice: openai
-title: generate-code-azure-openai
+title: Generate code with Azure OpenAI Service
 summary: This module shows engineers how to use the Azure OpenAI Service to generate and improve code.
 abstract: |
   By the end of this module, you'll be able to:
