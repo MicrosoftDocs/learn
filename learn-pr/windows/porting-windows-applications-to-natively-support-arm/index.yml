@@ -26,7 +26,7 @@ prerequisites: |
     - Visual Studio 2022 installed with the .NET desktop development workload and .NET 6.0 SDK. 
     - Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
     - Have an Azure subscription and beginner-level familiarity with creating and connecting to a virtual machine. *(Optional for testing).*
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/add-arm-support-to-your-windows-app.svg
 levels:
   - beginner
 roles:
