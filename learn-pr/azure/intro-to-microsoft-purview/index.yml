@@ -16,12 +16,12 @@ summary: "In this module, you'll evaluate whether Microsoft Purview is the right
 
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Microsoft Purview is appropriate for data discovery and governance needs.
+    - Evaluate whether Microsoft Purview is appropriate for your data discovery and governance needs.
     - Describe how the features of Microsoft Purview work to provide data discovery and governance.
 
 prerequisites: |
-  - Knowledge of Microsoft Azure accounts and services
-  - Knowledge of various data sources such as SQL Server, Cosmos DB, etc.
+  - Knowledge of Azure accounts and services
+  - Knowledge of various data sources such as SQL Server and Azure Cosmos DB
   - Knowledge of the concepts around data governance
 
 iconUrl: /training/achievements/introduction-to-azure-purview.svg
