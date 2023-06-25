@@ -8,7 +8,10 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 4
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
@@ -47,4 +50,3 @@ quiz:
     - content: "Key Vault."
       isCorrect: false
       explanation: "Incorrect. Locks help you prevent accidental deletion or modification of your Azure resources. You can manage these locks from within the Azure portal."
-interactive: bash

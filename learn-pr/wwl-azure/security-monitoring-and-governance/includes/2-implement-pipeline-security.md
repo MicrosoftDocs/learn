@@ -1,4 +1,3 @@
-
 It's fundamental to protect your code protecting credentials, and secrets. Phishing is becoming ever more sophisticated. The following list is several operational practices that a team ought to apply to protect itself:
 
  -  Authentication and authorization. Use multifactor authentication (MFA), even across internal domains, and just-in-time administration tools such as Azure PowerShell [Just Enough Administration (JEA)](https://aka.ms/jea), to protect against privilege escalations. Using different passwords for different user accounts will limit the damage if a set of access credentials is stolen.

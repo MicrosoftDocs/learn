@@ -1,4 +1,3 @@
-
 Azure Blueprints enables cloud architects to define a repeatable set of Azure resources that implement and adhere to an organization's standards, patterns, and requirements.
 
 Azure Blueprints helps development teams build and deploy new environments rapidly with a set of built-in components that speed up development and delivery.

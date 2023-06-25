@@ -1,4 +1,3 @@
-
 **Azure Policy** is an Azure service that you can create, assign, and manage policies.
 
 Policies enforce different rules and effects over your Azure resources, ensuring that your resources stay compliant with your standards and SLAs.

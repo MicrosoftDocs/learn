@@ -1,4 +1,3 @@
-
 Applying a policy to your resources with Azure Policy involves the following high-level steps:
 
  -  Policy definition. Create a policy definition.

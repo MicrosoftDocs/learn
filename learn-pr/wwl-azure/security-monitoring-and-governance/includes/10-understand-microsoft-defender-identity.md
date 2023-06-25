@@ -1,4 +1,3 @@
-
 **Microsoft Defender for Identity** (formerly Azure Advanced Threat Protection, also known as Azure ATP) is a cloud-based security solution that identifies and detects:
 
  -  Advanced threats.

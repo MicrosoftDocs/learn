@@ -1,4 +1,3 @@
-
 **Locks** help you prevent accidental deletion or modification of your Azure resources. You can manage locks from within the Azure portal.
 
 In the Azure portal, locks are called **Delete** and **Read-only,** respectively.
