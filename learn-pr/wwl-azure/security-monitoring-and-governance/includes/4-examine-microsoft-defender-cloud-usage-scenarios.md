@@ -1,3 +1,4 @@
+
 You can integrate Microsoft Defender for Cloud into your workflows and use it in many ways. For example, use Microsoft Defender for Cloud as part of your incident response plan.
 
 Many organizations only respond to security incidents after an attack has occurred. To reduce costs and damage, it's necessary to have an incident response plan *before* an attack occurs.

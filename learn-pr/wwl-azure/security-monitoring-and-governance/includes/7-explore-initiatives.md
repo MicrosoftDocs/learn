@@ -1,3 +1,4 @@
+
 Initiatives work alongside policies in Azure Policy. An *initiative definition* is a set of policy definitions to help track your compliance state for meeting large-scale compliance goals.
 
 Even if you have a single policy, we recommend using initiatives if you anticipate increasing your number of policies over time.

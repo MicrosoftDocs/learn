@@ -1,3 +1,4 @@
+
 **Microsoft Defender for Cloud** is a monitoring service that provides threat protection across all your services both in Azure and on-premises. Microsoft Defender can:
 
  -  Provide security recommendations based on your configurations, resources, and networks.

@@ -1,3 +1,4 @@
+
 This module describes security monitoring and governance with Microsoft Defender for Cloud and its usage scenarios, Azure Policies, Microsoft Defender for Identity, and security practices related to the tools.
 
 ## Learning objectives
