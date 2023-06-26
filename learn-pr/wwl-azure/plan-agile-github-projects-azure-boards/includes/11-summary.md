@@ -6,7 +6,7 @@ You learned how to describe the benefits and usage of:
  -  Describe GitHub Projects and Azure Boards.
  -  Link Azure Boards and GitHub.
  -  Configure and Manage GitHub Projects and boards.
- -  Customize Project views.
+ -  Customize Project views. 
 
 ## Learn more
 
