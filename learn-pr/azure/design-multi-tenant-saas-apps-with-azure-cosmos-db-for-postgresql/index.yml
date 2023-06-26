@@ -2,8 +2,8 @@
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql
 metadata:
   moduleType: standard
-  title: Design multi-tenant SaaS apps with Azure Cosmos DB for PostgreSQL
-  description: Azure Cosmos DB for PostgreSQL is the ideal database from hosting PostgreSQL at any scale. The distributed architecture allows multi-tenant SaaS application providers to easily scale from a single-node to a multi-node distributed cluster as the number of tenants grows.
+  title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
+  description: Azure Cosmos DB for PostgreSQL is the ideal database from hosting PostgreSQL at any scale. The distributed architecture allows multitenant software as a service (SaaS) application providers to easily scale from a single-node to a multi-node distributed cluster as the number of tenants grows.
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -14,27 +14,27 @@ metadata:
     - build-2023
     - build-2023-dataai
   ms.prod: learning-azure
-title: Design multi-tenant SaaS apps with Azure Cosmos DB for PostgreSQL
+title: Design multitenant SaaS apps by using Azure Cosmos DB for PostgreSQL
 summary: |
-  Azure Cosmos DB for PostgreSQL provides a powerful data platform for multi-tenant SaaS applications. Starting from a single-node instance, multi-tenant databases can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.
+  Azure Cosmos DB for PostgreSQL provides a powerful data platform for multitenant software as a service (SaaS) applications. Starting from a single-node instance, a multitenant database can be horizontally scaled to a multi-node distributed cluster of up to 20 servers to meet the demands of tenant growth.
 abstract: |
   By the end of this module, you'll be able to:
-    - Prepare tables in a single-node database for distribution
-    - Transition from a single-node to a multi-node database in Azure Cosmos DB for PostgreSQL
-    - Distribute multi-tenant tables with minimal application impact
-    - Monitor utilization of multi-tenant databases in Azure Cosmos DB for PostgreSQL
+    - Prepare tables that are in a single-node database for distribution.
+    - Transition from a single-node database to a multi-node database by using Azure Cosmos DB for PostgreSQL.
+    - Distribute multitenant tables with minimal application impact.
+    - Monitor the utilization of multitenant databases by using Azure Cosmos DB for PostgreSQL.
 prerequisites: |
-  - Basic familiarity with relational databases including creating and updating tables, creating indexes, and querying tables
-  - Understanding of the distributed database concepts, such as distribution column selection, sharding, table co-location, and table types, at an intermediate level
+  - Basic familiarity with relational databases, including creating and updating tables, creating indexes, and querying tables.
+  - An intermediate understanding of distributed database concepts, such as distribution column selection, sharding, table colocation, and table types.
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - intermediate
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles:
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products:
   - azure
   - azure-cosmos-db
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
   - cloud-computing
 units:
   - learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.introduction

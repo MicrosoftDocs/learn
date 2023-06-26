@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.exercise-isolate-tenant
-title: Exercise - Isolate a tenant in a multi-tenant database
+title: Exercise - Isolate a tenant in a multitenant database
 metadata:
-  title: Exercise - Isolate a tenant in a multi-tenant database
-  description: "In this exercise, you identify a noisy tenant and isolate it to a dedicated worker node to reduce resource contention and improve overall quality of service."
+  title: Exercise - Isolate a tenant in a multitenant database
+  description: "Identify a noisy tenant, and then isolate it in a dedicated worker node to reduce resource contention and improve overall quality of service."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 7
 content: |
   [!include[](includes/8-exercise-isolate-tenant.md)]
