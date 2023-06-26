@@ -1,3 +1,4 @@
+
 The core idea behind the Feature Branch Workflow is that all feature development should take place in a dedicated branch instead of the main branch.
 
 The encapsulation makes it easy for multiple developers to work on a particular feature without disturbing the main codebase. It also means the main branch will never contain broken code, which is a huge advantage for continuous integration environments.
@@ -58,7 +59,7 @@ By writing clear commit messages, you can make it easier for other people to fol
 
 ## Open a pull request
 
-:::image type="content" source="../media/open-pull-request-5c5ad0c7.png" alt-text="Diagram showing an open a Pull Request action.":::
+:::image type="content" source="../media/open-pull-request-5c5ad0c7.png" alt-text="Diagram showing a open a Pull Request action.":::
 
 
 The Pull Requests start a discussion about your commits. Because they're tightly integrated with the underlying Git repository, anyone can see exactly what changes would be merged if they accept your request.
