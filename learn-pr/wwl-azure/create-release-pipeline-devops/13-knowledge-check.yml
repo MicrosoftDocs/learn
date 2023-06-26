@@ -4,14 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/17/2023
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -50,3 +49,4 @@ quiz:
     - content: "Multi-agent: Run the same set of tasks on multiple agents using the specified number of agents."
       isCorrect: true
       explanation: "Correct. It's Multi-agent: Run the same set of tasks on multiple agents using the specified number of agents."
+interactive: bash

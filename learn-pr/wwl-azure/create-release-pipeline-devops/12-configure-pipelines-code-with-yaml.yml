@@ -4,13 +4,13 @@ title: Configure Pipelines as Code with YAML
 metadata:
   title: Configure Pipelines as Code with YAML
   description: "Configure Pipelines as Code with YAML"
-  ms.date: 05/17/2023
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 60
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/12-configure-pipelines-code-with-yaml.md)]
+interactive: bash
