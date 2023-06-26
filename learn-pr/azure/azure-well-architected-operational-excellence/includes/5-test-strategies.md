@@ -1,4 +1,4 @@
-Testing is one of the fundamental components of DevOps and agile development in general. If automation gives DevOps the required speed and agility to deploy software quickly, only through extensive testing will those deployments achieve the required reliability that customers demand.
+Testing is one of the fundamental components of DevOps and agile development in general. If automation gives DevOps the required speed and agility to deploy software quickly, only through extensive testing can those deployments achieve the required reliability that customers demand.
 
 A main tenet of a DevOps practice to achieve system reliability is the *shift left* principle. If your process for developing and deploying an application is depicted as a series of steps that are listed from left to right, your testing should be shifted as much as possible toward the beginning of your process (e.g. to the left), and not just at the very end of your process (e.g. to the right). Errors are far cheaper to repair when they're caught early, and issues can be expensive or impossible to fix later in your application's lifecycle.
 
@@ -36,7 +36,7 @@ Manual testing is much more expensive than automated testing, and consequently i
 
 There are many different ways of confirming that the application is doing what it should.
 
-- **Blue/Green deployments**: when deploying a new application version, you can deploy it in parallel to the existing one. This way, you can start redirecting your clients to the new version. If everything goes well, you'll decommission the old version. If there's any problem with the new deployment, you can always redirect your clients back to the older deployment.
+- **Blue/Green deployments**: when deploying a new application version, you can deploy it in parallel to the existing one. This way, you can start redirecting your clients to the new version. If everything goes well, you decommission the old version. If there's any problem with the new deployment, you can always redirect your clients back to the older deployment.
 
 - **Canary releases**: you can expose new functionality of your application (ideally using feature flags) to a select group of users. If these users are satisfied with the new functionality, you can extend it to the rest of your user community. In this scenario, we're talking about releasing functionality, and not necessarily about deploying a new version of the application.
 

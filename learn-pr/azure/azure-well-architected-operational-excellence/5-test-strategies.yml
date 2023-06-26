@@ -3,7 +3,7 @@ uid: learn.azure-well-architected-operational-excellence.5-test-strategies
 title: Testing strategies for your application
 metadata:
   title: Testing strategies for your application
-  description: In this unit, we'll discuss how to use the various types of test to verify your application's functionality and performance.
+  description: In this unit, we discuss how to use the various types of test to verify your application's functionality and performance.
   ms.date: 05/19/2020
   author: martinekuan
   ms.author: martinek
@@ -16,29 +16,29 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following would be an example of a stress test?'
+  - content: 'Which of the following tests is an example of a stress test?'
     choices:
     - content: 'Scanning for SQL injection vulnerabilities.'
       isCorrect: false
-      explanation: 'This would be an example of a security test.'
+      explanation: 'This example is a security test.'
     - content: 'Submitting an API call for each of the published APIs that your service exposes to validate an appropriate response.'
       isCorrect: false
-      explanation: 'This would be an example of an integration test.'
+      explanation: 'This example is an integration test.'
     - content: 'Testing every public method in your code for accuracy.'
       isCorrect: false
-      explanation: 'This would be an example of a unit test.'
+      explanation: 'This example is a unit test.'
     - content: 'Running an increasing number of API calls against your service.'
       isCorrect: true
-      explanation: 'This would test the load of the system and is an example of a stress test.'
+      explanation: 'This example tests the load of the system and is an example of a stress test.'
 
-  - content: 'If you had a new feature that you wanted to gain insight into whether or not it improves the user experience, which acceptance testing strategy would be the most appropriate? '
+  - content: 'If you want to gain insight into whether or not a new feature improves the user experience, which acceptance testing strategy is the most appropriate?'
     choices:
     - content: 'Blue/Green deployment'
       isCorrect: false
-      explanation: 'Blue/green deployments are effective at rolling back changes that may introduce issues, but are not the best strategy for this scenario.'
+      explanation: "Blue/green deployments are effective at rolling back changes that may introduce issues, but aren't the best strategy for this scenario."
     - content: 'Canary release'
       isCorrect: false
-      explanation: 'Canary tests are intended to determine if a particular feature is rolled out to users, but is not the best strategy for this scenario.'
+      explanation: "Canary tests are intended to determine if a particular feature is rolled out to users, but isn't the best strategy for this scenario."
     - content: 'A/B test'
       isCorrect: true
-      explanation: 'This would allow you to test one experience with some users, and different experience with others. You could then analyze the results to determine the impact of the new user experience.'
+      explanation: 'An A/B test allows you to test one experience with some users, and different experience with others. You can then analyze the results to determine the impact of the new user experience.'
