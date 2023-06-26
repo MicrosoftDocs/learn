@@ -26,7 +26,7 @@ For more product information, see [What is Real-Time Analytics in Fabric?](/fabr
 
 ## Azure Monitor
 
-Azure Monitor collects, analyzes, and responds to telemetry from your Azure, multicloud, and on-premises environments to help maximize the availability and performance of your applications and services. Azure Monitor correlates data from multiple sources - including metrics, logs, traces, and changes - and provides a set of tools for analyzing, visualizing, and responding to the data, such as insights, alerts, autoscale, and automated artificial intelligence for IT pperations (AIOps) capabilities. 
+Azure Monitor collects, analyzes, and responds to telemetry from your Azure, multicloud, and on-premises environments to help maximize the availability and performance of your applications and services. Azure Monitor correlates data from multiple sources - including metrics, logs, traces, and changes - and provides a set of tools for analyzing, visualizing, and responding to the data, such as insights, alerts, autoscale, and automated artificial intelligence for IT operations (AIOps) capabilities. 
 
 The Log Analytics tool in the Azure portal lets you edit and run log queries against data in the Azure Monitor Logs store.
 
