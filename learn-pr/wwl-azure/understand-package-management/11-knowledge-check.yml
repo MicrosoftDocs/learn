@@ -4,14 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/18/2023
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/11-knowledge-check.md)]
 quiz:
@@ -50,3 +47,4 @@ quiz:
     - content: "Python."
       isCorrect: false
       explanation: "Incorrect. Azure Artifacts currently supports feeds that can store five different package types such as NuGet packages, npm packages, Maven, Universal packages, and Python."
+interactive: bash
