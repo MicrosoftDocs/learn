@@ -38,11 +38,11 @@ For more product information, see [Azure Monitor overview](/azure/azure-monitor/
 
 ## Microsoft Sentinel
 
-Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), and security orchestration, automation, and response (SOAR). Using Microsoft Sentinel's  hunting search-and-query tools, based on the MITRE framework, you can proactively hunt for security threats across your organization’s data sources, before an alert is triggered.
+Microsoft Sentinel is a scalable, cloud-native solution that provides security information and event management (SIEM), and security orchestration, automation, and response (SOAR). Many features in Microsoft Sentinel utilize KQL. Proficiency with KQL is particularly valuable though when using Microsoft Sentinel's hunting search-and-query tools to proactively and reactively hunt for security threats across your organization's data sources. For more information, see [Hunt for threats with Microsoft Sentinel](/azure/sentinel/hunting).
 
 :::image type="content" source="../media/7-sentinel.png" alt-text="Screenshot of Microsoft Sentinel threat hunting environment." lightbox="../media/7-sentinel.png":::
 
-Microsoft Sentinel is built on top of the Azure Monitor service and uses Azure Monitor’s Log Analytics workspaces to store all of its data. For more information, see [Hunt for threats with Microsoft Sentinel](/azure/sentinel/hunting).
+But that's just a start. Microsoft Sentinel uses KQL for alerts, workbook visualizations, parsers, and transforming data. Since Microsoft Sentinel is built on top of the Azure Monitor service and uses Azure Monitor's Log Analytics workspaces to store all of its data, Microsoft Sentinel also provides a **Logs** view for direct table queries to find connections in the data. 
 
 For more product information, see [What is Microsoft Sentinel?](/azure/sentinel/overview)
 
