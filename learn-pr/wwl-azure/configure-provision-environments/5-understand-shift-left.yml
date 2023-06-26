@@ -4,13 +4,11 @@ title: Understand Shift-left
 metadata:
   title: Understand Shift-left
   description: "Understand Shift-left"
-  ms.date: 05/17/2023
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/5-understand-shift-left.md)]
+interactive: bash
