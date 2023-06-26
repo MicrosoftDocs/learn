@@ -31,6 +31,10 @@ Azure Digital Twins provides a **query API** for extracting insights from the li
 
 You can also query historized twin data collected over time, using the **data history** feature. This feature connects an Azure Digital Twins instance to an Azure Data Explorer cluster, so that graph updates are automatically stored in Azure Data Explorer. From there, the data can be queried using the Azure Digital Twins query plugin for Azure Data Explorer. This provides a wider pool of environment data and the ability to identify patterns over time.
 
+Here is an example of historized twin updates shown in Azure Data Explorer, illustrating the changing values of outflow from a salt machine in a dairy factory over time.
+
+:::image type="content" source="../media/2-data-history.png" alt-text="Screenshot of Azure Data Explorer showing a query of historized data with results plotted on a graph over time." border="false" lightbox="../media/2-data-history.png":::
+
 ## Visualize
 
 Azure Digital Twins provides ways to visualize your environment in two or three dimensions.
