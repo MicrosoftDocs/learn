@@ -4,12 +4,12 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Introduction
-  description: "In Azure Cosmos DB for PostgreSQL, your data can upgrade from a single-node, non-distributed cluster to a multi-node, distributed cluster with minimal downtime. In this module, you'll go from a non-distributed cluster to a distributed cluster using Azure Cosmos DB for PostgreSQL."
+  description: "Learn how to upgrade from a single-node, nondistributed cluster to a multi-node, distributed cluster with minimal downtime by using Azure Cosmos DB for PostgreSQL."
   ms.date: 02/22/2023
   author: sadukie
   ms.author: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]
