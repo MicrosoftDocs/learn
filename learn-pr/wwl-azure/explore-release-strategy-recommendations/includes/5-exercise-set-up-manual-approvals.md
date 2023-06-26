@@ -1,3 +1,4 @@
+
 In this exercise, you'll investigate Manual Approval.
 
 ## Steps

@@ -4,14 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/31/2023
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -50,3 +47,4 @@ quiz:
     - content: "Quality Gate."
       isCorrect: false
       explanation: "Incorrect. Using stage you can pause and validate the pipeline with various checks."
+interactive: bash
