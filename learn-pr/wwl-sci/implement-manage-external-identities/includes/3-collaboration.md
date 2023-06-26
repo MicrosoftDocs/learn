@@ -11,11 +11,11 @@ Azure AD External Identities is a feature that makes it possible for you to allo
 5.  Once the user’s home directory is identified, the user is sent to the corresponding identity provider to sign in.
 6.  If no home directory is found and the email one-time passcode feature is enabled for guests, a passcode is sent to the user through the invited email. The user retrieves and enters this passcode in the Azure AD sign-in page.
 7.  If no home directory is found and email one-time passcode for guests is disabled, the user is prompted to create a consumer MSA with the invited email. We support creating an MSA with work emails in domains that aren't verified in Azure AD.
-8.  After authenticating to the right identity provider, the user is redirected to Azure AD to complete the consent experience.
+8.  The user, after authenticating to the right identity provider, is redirected to Azure AD to complete the consent experience.
 
 ## External identities scenarios<br>
 
-Azure AD External Identities focuses less on a user's relationship to your organization and more on how the user wants to sign in to your apps and resources. Within this framework, Azure AD supports various scenarios.
+Azure AD External Identities focus less on a user's relationship to your organization and more on how the user wants to sign in to your apps and resources. Within this framework, Azure AD supports various scenarios.
 
 A B2B collaboration scenario allows you to invite external users into your own tenant as "guest" users that you can assign permissions to (for authorization) while letting them use their existing credentials (for authentication). Users sign in to the shared resources using a simple invitation and redemption process with their work, school, or other email account. You can also use Azure AD entitlement management to configure policies that manage access for external users. And now with the availability of self-service sign-up user flows, you can allow external users to sign up for applications themselves. The experience can be customized to allow sign-up with a work, school, or social identity (such as Google or Facebook). You can also collect information about the user during the sign-up process.
 
