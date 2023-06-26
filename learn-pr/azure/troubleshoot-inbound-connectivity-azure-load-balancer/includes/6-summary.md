@@ -8,6 +8,7 @@ Resources left running can cost you money. In your Azure account, delete the res
 
 - [Metrics and health diagnostics for Standard Load Balancer](/azure/load-balancer/load-balancer-standard-diagnostics)
 - [Load Balancer health probes](/azure/load-balancer/load-balancer-custom-probe-overview)
-- [PsPing v2.1](/sysinternals/downloads/psping)
+- [Testing reachability of Azure Load Balancer frontend IPv4 address with ping](/azure/load-balancer/load-balancer-test-frontend-reachability)
+- [Test reachability of Azure Load Balancer front-ends with ping and traceroute]
 - [Netsh command syntax, contexts, and formatting](/windows-server/networking/technologies/netsh/netsh-contexts)
 - [Azure Application Gateway](/azure/application-gateway/application-gateway-introduction)

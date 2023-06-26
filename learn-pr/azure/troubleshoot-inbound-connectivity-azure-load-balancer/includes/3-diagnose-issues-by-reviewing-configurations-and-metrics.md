@@ -19,14 +19,14 @@ You can visualize metrics for Load Balancer by using the **Metrics** pane in the
 
 Load Balancer continually tests the path's availability to the front-end IP address, through the load-balancing rules and the back-end pool, to the applications running on your VMs. This information is recorded as the **Data Path Availability** metric. Applying the **Avg** metric shows the average availability for a given time interval. This aggregation is a value between 0 (no availability) and 100, where there's at least one successful path available from the front-end IP address to a VM in the back-end pool.
 
-The **Health Probe Status** metric is similar, but it only applies to the health probe for the VMs rather than the complete path through Load Balancer. Again, the **Avg** aggregation for this metric yields a value between 0 (all VMs are unhealthy and failing to respond) and 100, where all VMs are responding to the health probe.
+The **Health Probe Status** metric is similar, but it only applies to the health probe for the VMs rather than the complete path through Load Balancer. Again, the **Avg** aggregation for this metric provides a value between 0 (all VMs are unhealthy and failing to respond) and 100, where all VMs are responding to the health probe.
 
 The following screenshot shows the chart for average Data Path Availability and average Health Probe Status for a load balancer with two VMs in the back-end pool. One of the machines isn't responding to the health probe. The average Health Probe Status is hovering around the 50 percent mark.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Metrics page for Azure Load Balancer that shows data for the average Health Probe Status and Data Path Availability. The Health Probe status is at 50%.](../media/3-probe-metrics-unhealthy.png)
 
-Another way to examine these metrics is to use the **Count** aggregation. This approach can yield additional insights into potential problems with your configuration. The following example shows the graphs for the count of the Health Probe Status and Data Path Availability metrics. The graph shows how many successful probes were done over time.
+Another way to examine these metrics is to use the **Count** aggregation. This approach can provide other insights into potential problems with your configuration. The following example shows the graphs for the count of the Health Probe Status and Data Path Availability metrics. The graph shows how many successful probes were done over time.
 
 > [!div class="mx-imgBorder"]
 > ![Screenshot of the Metrics page for Azure Load Balancer shows data captured for the Health Probe Status and Data Path Availability metrics.](../media/3-probe-metrics.png)
@@ -93,7 +93,42 @@ Use the following steps to determine the cause of the problem with an unhealthy 
 
 Load Balancer requires you to correctly configure the routing rules that direct incoming traffic from the front end to the back-end pool. If a routing rule is missing or not configured correctly, traffic that arrives at the front end will be dropped, and the application is reported to clients as inaccessible.
 
-Validate the route through Load Balancer from the front end to the back-end pool. You can use tools such as PsPing on Windows, and *TCPing* and *netsh*, which are available for Windows and Linux.
+Validate the route through Load Balancer from the front end to the back-end pool. You can use tools such as *Ping*, *TCPing* and *netsh*, which are available for Windows and Linux. You can also use *psping* on windows. The following sections describe how to use these tools.
+
+#### Use ping
+
+The **ping** command tests *ping* connectivity through an endpoint using the ICMP protocol. To verify that a route is available from your client to a VM through Load Balancer, run the following command. Replace \<*ip address*\> with the IP address of the Load Balancer instance.
+
+```CMD
+ping -n 10 <ip address>
+```
+
+| **Switch** | **Description** |
+|-|-|
+| **-n** | This switch specifies the number of ping requests to send. |
+
+Typical output looks like this:
+
+```console
+ping -n 10 nn.nn.nn.nn
+
+Pinging nn.nn.nn.nn with 32 bytes of data:
+Reply from nn.nn.nn.nn: bytes=32 time=34ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=30ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=30ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=29ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=31ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=30ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=29ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=31ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=30ms TTL=114
+Reply from nn.nn.nn.nn: bytes=32 time=30ms TTL=114
+
+Ping statistics for nn.nn.nn.nn:
+    Packets: Sent = 10, Received = 10, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 29ms, Maximum = 34ms, Average = 30ms
+```
 
 #### Use PsPing
 
@@ -102,12 +137,13 @@ The **PsPing** command tests *ping* connectivity through an endpoint. This comma
 ```CMD
 psping -n 100 -i 0 -q -h <ip address>:<port>
 ```
-|Flag| Description|
+
+| **Flag** | **Description** |
 |-|-|
-|*-n* |Specifies the number of pings to do.
-|*-i* |Indicates the interval in seconds between iterations.|
-|*-q* |Suppresses output during the pings. Only a summary is shown at the end.|
-|*-h*| Prints a histogram that shows the latency of the requests.|
+| **-n** |Specifies the number of pings to do.|
+| **-i** |Indicates the interval in seconds between iterations.|
+| **-q** |Suppresses output during the pings. Only a summary is shown at the end.|
+| **-h** | Prints a histogram that shows the latency of the requests.|
 
 Typical output looks like this:
 
@@ -144,7 +180,7 @@ Latency Count
 
 #### Use tcping
 
-The *tcping* utility is similar to *ping* except that it operates over a TCP connection instead of ICMP, which Load Balancer doesn't route. Use *tcping* as follows:
+The *tcping* utility is similar to *ping* except that it operates over a TCP connection instead of ICMP. Use *tcping* as follows:
 
 ```CMD
 tcping <ip address> <port>
@@ -216,8 +252,6 @@ Verify that any NSG for the VM's NIC allows for ingress and egress on the necess
 > You can associate an NSG with a subnet and the individual NICs of VMs in the subnet. You might have configured the NSG for a subnet to allow traffic to pass through a port. However, if the NSG for a VM closes that same port, requests won't get through to that VM.
 
 ## Limitations of Load Balancer
-
-Azure Load Balancer is limited to only load balancing and handling port-forwarding for the TCP and UDP protocols. You can't use Load Balancer to manage requests submitted by using other network protocols such as ICMP.
 
 Load Balancer operates at layer 4 in the ISO network stack and doesn't examine or otherwise manipulate the contents of network packets. You can't use it to implement content-based routing.
 
