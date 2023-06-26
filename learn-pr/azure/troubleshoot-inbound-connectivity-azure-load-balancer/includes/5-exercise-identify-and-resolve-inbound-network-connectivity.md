@@ -68,10 +68,10 @@ You can't ping the *appretailvm1* or *appretailvm2* virtual machines directly be
     cat passwd.txt
     ```
 
-1. Sign in to the jump box. Replace **azureuser** if you used a different user name.
+1. Sign in to the jump box with the IP address and password from the previous command outputs. Replace **azureuser** if you used a different user name.
 
     ```bash
-    ssh azureuser@<jumpbox ip address>
+    ssh azureuser@<jump box ip address>
     ```
 
 1. On the jump box, run the following command to test whether the *retailappvm1* virtual machine is running.
@@ -117,7 +117,7 @@ The *retailappvm1* virtual machine is up, and the application is running on that
 
 1. Go to the resource group **learn-ts-loadbalancer-rg**, and select **retailapplb**.
 
-1. Select **Load balancing rule** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
+1. Select **Load balancing rules** > **retailapprule**. This rule receives Tcp traffic on port 80 of the front-end IP address, and sends it to port 80 on the selected virtual machine in the back-end pool. This configuration appears to be correct, although the port used by the health probe looks suspicious. It's currently set to port 85.
 
     > [!div class="mx-imgBorder"]
     > ![Screenshot of the **retailapprule** page that shows the health probe is using  port 85.](../media/5-retailapprule.png)
@@ -201,7 +201,7 @@ The problem might be caused by a network security rule blocking external traffic
 
 It seems that the *appretailvm2* virtual machine might not be handling requests properly. You need to check whether this virtual machine is up, and whether Load Balancer can connect to it.
 
-1. In Cloud Shell, sign in to the jump box again.
+1. In Cloud Shell, sign in to the jump box with the IP address and password from the previous command outputs
 
     ```bash
     ssh azureuser@<jump box ip address>

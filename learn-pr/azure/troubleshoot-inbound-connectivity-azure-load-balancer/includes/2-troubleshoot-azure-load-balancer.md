@@ -11,7 +11,7 @@ By the end of this unit, you'll be able to:
 
 ## How does Load Balancer work?
 
-Azure Load Balancer includes a number of components:
+Azure Load Balancer includes many components:
 
 - A front-end IP address
 - A back-end pool of VM addresses
@@ -41,7 +41,7 @@ The hashed value is used as a key to a table that holds the IP addresses in the 
 
 ### Scalability
 
-You can start additional VM instances and add their IP addresses to the back-end pool at any time. Load Balancer includes these new instances when it distributes user requests.
+You can start more VM instances and add their IP addresses to the back-end pool at any time. Load Balancer includes these new instances when it distributes user requests.
 
 Load Balancer can expose more than one public front-end IP address, and might have multiple back-end pools. This scheme enables you to reuse the same instance of Load Balancer to handle requests for different systems.
 
