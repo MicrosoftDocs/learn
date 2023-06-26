@@ -1,3 +1,4 @@
+
 Using Projects views, you can organize information by changing the layout, grouping, sorting, and filtering your work.
 
 You can create and use different visualizations, for example, Board view:
@@ -9,8 +10,8 @@ You can create and use different visualizations, for example, Board view:
 
 Use the project command palette to change settings and run commands in your project.
 
-1. Open the project command palette by pressing **Command + K (Mac)** or **Ctrl + K (Windows/Linux)**.
-1. Type any command part or navigate through the command palette window to find a command.
+1.  Open the project command palette by pressing **Command + K (Mac)** or **Ctrl + K (Windows/Linux)**.
+2.  Type any command part or navigate through the command palette window to find a command.
 
 You have multiple commands to apply, such as:
 
@@ -41,10 +42,10 @@ For example, you can have:
 
 To add a new view:
 
-1. To open the project command palette, press **Command + K (Mac)** or **Ctrl + K (Windows/Linux)**.
-1. Start typing **New view** (to create a new view) or **Duplicate view** (to duplicate the current view).
-1. Choose the required command.
-1. The new view is automatically saved.
+1.  To open the project command palette, press **Command + K (Mac)** or **Ctrl + K (Windows/Linux)**.
+2.  Start typing **New view** (to create a new view) or **Duplicate view** (to duplicate the current view).
+3.  Choose the required command.
+4.  The new view is automatically saved.
 
 For more information about projects (beta), see:
 
