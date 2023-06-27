@@ -1,3 +1,4 @@
+
 The **TranslationRecognizer** returns translated transcriptions of spoken input - essentially translating audible speech to text.
 
 You can also synthesize the translation as speech to create speech-to-speech translation solutions. There are two ways you can accomplish this.
