@@ -1,3 +1,4 @@
+
 When you have multiple IT and engineering teams, how can you control what access they have to the resources in your cloud environment? The principle of least privilege says you should only grant access up to the level needed to complete a task. If you only need read access to a storage blob, then you should only be granted read access to that storage blob. Write access to that blob shouldn’t be granted, nor should read access to other storage blobs. It’s a good security practice to follow.
 
 However, managing that level of permissions for an entire team would become tedious. Instead of defining the detailed access requirements for each individual, and then updating access requirements when new resources are created or new people join the team, Azure enables you to control access through Azure role-based access control (Azure RBAC).
@@ -10,7 +11,7 @@ So, if you hire a new engineer and add them to the Azure RBAC group for engineer
 
 Role-based access control is applied to a scope, which is a resource or set of resources that this access applies to.
 
-The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource admin might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
+The following diagram shows the relationship between roles and scopes. A management group, subscription, or resource group might be given the role of owner, so they have increased control and authority. An observer, who isn't expected to make any updates, might be given a role of Reader for the same scope, enabling them to review or observe the management group, subscription, or resource group.
 
 :::image type="content" source="../media/role-based-access-scope-4b12a8f3.png" alt-text="A diagram showing scopes and roles. Role and scope combinations map to a specific kind of user or account, such as an observer or an admin.":::
 

@@ -4,13 +4,11 @@ title: Describe zero trust model
 metadata:
   title: Describe zero trust model
   description: "Describe zero trust model"
-  ms.date: 01/04/2023
+  ms.date: 06/27/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/7-describe-zero-trust-model.md)]
+interactive: bash
