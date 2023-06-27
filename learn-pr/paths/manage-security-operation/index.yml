@@ -23,7 +23,6 @@ products:
 - azure-log-analytics
 - azure-monitor
 - azure-security-center
-- azure-sentinel
 - defender-for-cloud
 - microsoft-sentinel
 subjects:

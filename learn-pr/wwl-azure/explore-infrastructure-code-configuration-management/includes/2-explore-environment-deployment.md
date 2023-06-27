@@ -30,64 +30,14 @@ For example, you can add a new server by editing the text file and running the r
 
 The following table lists the significant differences between manual deployment and infrastructure as code.
 
-:::row:::
-  :::column:::
-    **Manual deployment**
-  :::column-end:::
-  :::column:::
-    **Infrastructure as code**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Snowflake servers.
-  :::column-end:::
-  :::column:::
-    A consistent server between environments.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deployment steps vary by environment.
-  :::column-end:::
-  :::column:::
-    Environments are created or scaled easily.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    More verification steps and more elaborate manual processes.
-  :::column-end:::
-  :::column:::
-    Fully automated creation of environment Updates.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Increased documentation to account for differences.
-  :::column-end:::
-  :::column:::
-    Transition to immutable infrastructure.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Deployment on weekends to allow time to recover from errors.
-  :::column-end:::
-  :::column:::
-    Use blue/green deployments.
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Slower release cadence to minimize pain and long weekends.
-  :::column-end:::
-  :::column:::
-    Treat servers as cattle, not pets.
-
-  :::column-end:::
-:::row-end:::
-
+| **Manual deployment**                                        | **Infrastructure as code**                       |
+| ------------------------------------------------------------ | ------------------------------------------------ |
+| Snowflake servers.                                           | A consistent server between environments.        |
+| Deployment steps vary by environment.                        | Environments are created or scaled easily.       |
+| More verification steps and more elaborate manual processes. | Fully automated creation of environment Updates. |
+| Increased documentation to account for differences.          | Transition to immutable infrastructure.          |
+| Deployment on weekends to allow time to recover from errors. | Use blue/green deployments.                      |
+| Slower release cadence to minimize pain and long weekends.   | Treat servers as cattle, not pets.<br>           |
 
 ## Benefits of infrastructure as code
 

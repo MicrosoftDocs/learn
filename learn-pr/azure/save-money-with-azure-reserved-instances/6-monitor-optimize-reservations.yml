@@ -2,8 +2,8 @@
 uid: learn.save-money-with-azure-reserved-instances.monitor-reservation-use
 metadata:
   title: Monitor and optimize reservation use
-  description: Monitor and optimize reservation use
-  ms.date: 11/01/2021
+  description: Learn how to monitor and optimize your use of reserved instances.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial

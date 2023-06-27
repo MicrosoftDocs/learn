@@ -1,38 +1,56 @@
-In this exercise, you create the tables and seed the data for the sensors database. This is the single-node database:
+In this exercise, you create tables and seed the data for the sensors database. This single-node database has the following characteristics:
 
-- `device_types` has a `device_type_id` field and a `name` field. `device_type_id` is its primary key.
-- `devices` has three fields - `device_id`, `device_type_id`, and `name`. The `device_id` field is the primary key. There's a foreign key relationship on the `device_type_id` field that references the `device_type_id` field on the `device_types` table.
-- `events` has three fields - `event_id`, `device_id`, and `payload`. The `event_id` is its primary key. There's a foreign key relation on the `device_id` that references the `device_id` field on the `devices` table.
+- The `device_types` table has two fields: `device_type_id` and `name`.
 
-![Diagram of the relationships between device types, devices, and events. The device_types table has two fields - device_type_id and name. device_type_id is its primary key. The devices table has three fields - device_id, device_type_id, and name. device_id is its primary key. The devices table has a foreign key relationship on device_type_id that references the device_type_id field on the device_types table. The events table has three fields - event_id, device_id, and payload. event_id is its primary key. The events table has a foreign key relationship on its device_id that references the device_id field on the devices table.](../media/normalized-database-erd.png)
+   The `device_types` table primary key is `device_type_id`.
+
+- The `devices` table has three fields: `device_id`, `device_type_id`, and `name`.
+
+   The `devices` table primary key is `device_id`.
+
+   A foreign key relationship on the `device_type_id` field references the `device_type_id` field on the `device_types` table.
+- The `events` has four fields: `event_id`, `device_id`, `payload`, and `created_at`.
+
+   The `events` table primary key is `event_id`.
+  
+   A foreign key relationship on the `device_id` field references the `device_id` field on the `devices` table.
+
+:::image type="content" source="../media/normalized-database-erd.png" border="false" alt-text="Diagram that shows the relationships between three tables, and the columns and primary keys in each table.":::
 
 ## Create an Azure Cosmos DB for PostgreSQL account
 
 > [!IMPORTANT]
 >
-> Planning for future growth when initially selecting the size of your single-node cluster can help avoid downtime when the need to scale arises.
+> Planning for future growth when you initially select the size of your single-node cluster can help avoid downtime when the need to scale arises.
 >
-> Horizontally scaling to a multi-node cluster can be accomplished with zero downtime, but this capability depends upon the configuration of the coordinator node. The minimum compute and storage sizes for the coordinator node in a multi-node cluster are 4 vCores with 16 GiB RAM and 512 GiB storage, respectively. You can create a single-node database with compute and storage settings smaller than this minimum requirement. Scaling a single-node cluster when the coordinator compute size is less than 4 vCores with 16 GiB RAM, and the storage size is less than 512 GiB requires the coordinator compute and storage to be scaled, resulting in a restart of the server and a short period of downtime.
+> Horizontally scaling to a multi-node cluster can be accomplished with zero downtime, but this capability depends on the configuration of the coordinator node. The minimum compute and storage sizes for the coordinator node in a multi-node cluster are four vCores with 16 GiB of RAM and 512 GiB of storage. 
+>
+> You can create a single-node database that has compute and storage settings smaller than this minimum requirement. Scaling a single-node cluster when the coordinator node compute size is less than four vCores with 16 GiB of RAM and less than 512 GiB of storage requires the coordinator node compute and storage to be scaled. After you scale the coordinator node compute and storage, you must restart the server, so there's a short period of downtime.
+>
 
-For this module, you'll go through the process of minimal downtime. There are also notes on what to expect if Wide World Importers started with minimal resources.
+In this unit, you complete the process to have minimal downtime. There are notes on what to expect if Wide World Importers started with minimal resources.
 
-Create an Azure Cosmos DB for PostgreSQL database with the following specifications:
+To begin, you create an Azure Cosmos DB for PostgreSQL database that has the following specifications:
 
-- One node with 4 vCores, 16-GiB RAM, and 512-GiB storage.
+- One node that has four vCores, 16 GiB of RAM, and 512 GiB of storage
 
-1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
+To create the database:
 
-2. Next, select **Create a resource**, **Databases**, and **Azure Cosmos DB**. You can also use the **Search** functionality to find the resource. Select **Create**.
+1. Open a web browser and go to the [Azure portal](https://portal.azure.com/).
 
-    ![Screenshot of Create an Azure Cosmos DB for PostgreSQL resource. Databases in the Categories navigation and Azure Cosmos DB in the Popular Azure services section are highlighted.](../media/cosmos-db-for-postgresql-create.png)
+1. Select **Create a resource** > **Databases** > **Azure Cosmos DB**. You can also use the search box to find the resource.
 
-3. On the screen labeled **Which API best suits your workload?**, select **Create** within the **Azure Cosmos DB for PostgreSQL** tile.
+   In the **Azure Cosmos DB** tile, select **Create**.
 
-    ![Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.](../media/cosmos-db-select-api-option.png)
+   :::image type="content" source="../media/cosmos-db-for-postgresql-create.png" alt-text="Screenshot that shows the steps to create an Azure Cosmos DB for PostgreSQL resource in the Azure portal.":::
 
-    The portal will display an Azure Cosmos DB for PostgreSQL configuration screen.
+1. Under **Which API best suits your workload?**, on the **Azure Cosmos DB for PostgreSQL** tile, select **Create**.
 
-4. On the **Basics** tab, enter the following information. (Note the server name and password for later use.)
+   :::image type="content" source="../media/cosmos-db-select-api-option.png" alt-text="Screenshot of the Azure Cosmos DB API options. The PostgreSQL option is highlighted.":::
+
+   The portal displays an Azure Cosmos DB for PostgreSQL configuration pane.
+
+1. On the **Basics** tab, enter the following information. (Note the server name and password for later use.)
 
     | Parameter       | Value |
     | --------------- | ----- |
@@ -42,63 +60,65 @@ Create an Azure Cosmos DB for PostgreSQL database with the following specificati
     | **Cluster details** |       |
     | Cluster name    | _Enter a globally unique name_, such as `cosmos-sensors-data`. |
     | Location        | Leave the default, or use a region that is close to you. |
-    | Scale           | You'll set this in the next step. |
+    | Scale           | You'll set this value in the next step. |
     | PostgreSQL version | Leave the default version (14) selected. |
     | **Administrator account** | |
-    | Admin username  | This is set to `citus` and can't be edited. |
+    | Admin username  | This value is set to `citus` and can't be edited. |
     | Password        | Enter and confirm a strong password. |
 
-    ![Screenshot of creating an Azure Cosmos DB for PostgreSQL in the Azure portal. The settings above are shown in the screenshot. The 'Subscription', 'Resource group', 'Cluster name', 'Location', 'Scale', 'Password', and 'Confirmed password' fields are highlighted. The 'Create new' link for the resource group and the 'Review + create' button are also highlighted.](../media/cosmos-db-for-postgresql-basics-tab.png)
-
-5. For Scale, select **Configure**. Set the Scale settings to the following values, then select **Save**:
+1. On the **Basics** tab, for **Scale**, select **Configure**. Set the **Scale** settings to the following values, and then select **Save**:
 
     - Node count: **Single node**
     - Node compute: **4 vCores, 16 GiB RAM**
     - Node storage: **512 GiB**
     - No high availability
 
-6. Select the **Review + create** button. On the review screen, select **Create** to provision your Azure Cosmos DB for PostgreSQL cluster. If the **Configure IP address in firewall rules** message appears, select **Create cluster without firewall rules**.
+   :::image type="content" source="../media/cosmos-db-for-postgresql-basics-tab.png" alt-text="Screenshot that shows Basics tab options to use when you create an Azure Cosmos DB for PostgreSQL in the Azure portal.":::
 
-    ![Screenshot of a modal titled 'Configure IP address in firewall rules'. The warning message shows 'You need to configure at least one IP address in Public access (allowed IPs) to enable access to this cluster. If you continue without configuring the IP address then you must configure the IP address later to allow access to this cluster.' There are two buttons - labeled 'Create cluster without firewall rules' and 'Return to add firewall rules'. The 'Create cluster without firewall rules' button is highlighted.](../media/configure-ip-rules-warning.png)
+    Select the **Review + create** button.
+1. On the review screen, select **Create** to provision your Azure Cosmos DB for PostgreSQL cluster. If the **Configure IP address in firewall rules** dialog appears, select **Create cluster without firewall rules**.
+
+    :::image type="content" source="../media/configure-ip-rules-warning.png" alt-text="Screenshot that shows options to choose in the Configure IP address in firewall rules dialog.":::
 
 ## Enable network access
 
-Once the Azure Cosmos DB for PostgreSQL account is created, then you need to enable the resource to be accessible to other resources. You need to do this so that you can access the server via `psql` in Azure Cloud Shell.
+After the Azure Cosmos DB for PostgreSQL account is created, you need to enable the resource to be accessible to other resources so that you can access the server by using the psql command-line tool in Azure Cloud Shell.
 
-1. Once the account is created, select **Go to resource**. This takes you to the Azure Cosmos DB for PostgreSQL account.
-2. From the navigation, in the **Settings** section, select **Networking**.
-3. On the **Networking** blade, check the checkbox labeled **Allow public access from Azure services and resources within Azure to this cluster**.
+1. In the Azure portal, after the account is created, select **Go to resource** to go to your Azure Cosmos DB for PostgreSQL account.
+1. In the left menu under **Settings**, select **Networking**.
+1. On the **Networking** pane, select the **Allow public access from Azure services and resources within Azure to this cluster** checkbox.
 
-    ![Screenshot of Azure Cosmos DB for PostgreSQL networking blade. 'Allow public access from Azure services' is checked and highlighted. The 'Save' button is also highlighted.](../media/cosmos-db-for-postgresql-networking-tab.png)
-4. Select **Save**.
+    :::image type="content" source="../media/cosmos-db-for-postgresql-networking-tab.png" alt-text="Screenshot that shows the option to allow public access selected on the Azure Cosmos DB for PostgreSQL networking pane.":::
 
-## Connect to the database using psql in the Azure Cloud Shell
+1. On the command bar, select **Save**.
 
-Once the Azure Cosmos DB for PostgreSQL cluster is created and the network access rules saved, you can connect to it via Azure Cloud Shell.
+## Connect to the database by using psql in the Azure Cloud Shell
 
-1. On the navigation menu, under **Settings**, select **Connection String**. Copy the connection string labeled **psql**.
+After the Azure Cosmos DB for PostgreSQL cluster is created and the network access rules are saved, you can connect to the cluster by using Azure Cloud Shell.
 
-    ![Screenshot of the Connection strings page of the Azure Cosmos DB Cluster resource. The 'Connection strings' navigation is highlighted. The psql connection string is also highlighted.](../media/psql-connection-string.png)
+1. On the left menu under **Settings**, select **Connection String**. Copy the connection string labeled **psql**.
 
-2. Open [Azure Cloud Shell](https://shell.azure.com/) via the navigation bar at the top of the portal.
+    :::image type="content" source="../media/psql-connection-string.png" alt-text="Screenshot that shows the Connection String pane of the Azure Cosmos DB Cluster resource and the psql connection string highlighted.":::
 
-    ![Screenshot of the bar that appears at the top of the Microsoft Azure portal. The Azure Cloud Shell button with the command icon is highlighted.](../media/azure-portal-top-bar.png)
+1. Open [Azure Cloud Shell](https://shell.azure.com/) by using the global controls at the top of the portal.
 
-3. If prompted, select **Bash**.
+    :::image type="content" source="../media/azure-portal-top-bar.png" alt-text="Screenshot of the bar that appears at the top of the Microsoft Azure portal. The Azure Cloud Shell button with the command icon is highlighted.":::
 
-    ![Screenshot of Azure Cloud Shell welcome message with a prompt to choose an environment between Bash or PowerShell. Bash is selected.](../media/azure-cloud-shell-welcome.png)
+1. If you're prompted to select a shell environment, select **Bash**.
 
-4. If prompted, select the subscription you used for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
+    :::image type="content" source="../media/azure-cloud-shell-welcome.png" alt-text="Screenshot that shows the Azure Cloud Shell welcome dialog, with a prompt to choose a shell environment, Bash or PowerShell. Bash is selected.":::
 
-    ![Screenshot of Azure Cloud Shell welcome wizard showing no storage mounted. Azure Subscription (the current subscription) is showing in the Subscription dropdown.](../media/azure-cloud-shell-mount-storage.png)
+1. If you're prompted to create storage, select the subscription you use for your Azure Cosmos DB for PostgreSQL account. Then select **Create storage**.
 
-5. Now, use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL. Copy the connection string from Step 1, and paste it into the Cloud Shell. Update the `password` part of the connection string to use the password chosen when creating the Azure Cosmos DB for PostgreSQL cluster. Then, run the command.
+    :::image type="content" source="../media/azure-cloud-shell-mount-storage.png" alt-text="Screenshot that shows the Azure Cloud Shell welcome wizard and no storage mounted. The current subscription appears in the Subscription dropdown.":::
+
+1. To use the psql command-line utility to connect to Azure Cosmos DB for PostgreSQL, copy the psql connection string from step 1. Paste it in Cloud Shell. Update the `password` part of the connection string to use the password that you entered when you created the Azure Cosmos DB for PostgreSQL cluster. Then run the command.
 
 ## Create tables
 
-Once the account is created, then tables can be added. Use `psql` in Azure Cloud Shell to interact with the database.
+After the account is created, you can add tables. Use psql in Cloud Shell to interact with the database.
 
-The code below creates the `device_types`, `devices`, and `events` tables with their traditional primary key relationships.
+The following code creates the `device_types`, `devices`, and `events` tables with their traditional primary key relationships:
 
 ```sql
 CREATE TABLE device_types 
@@ -134,7 +154,7 @@ Confirm that the tables were created by running the following command:
 \dt
 ```
 
-The output looks like this:
+The output looks like this example:
 
 ```text
            List of relations
@@ -148,19 +168,19 @@ The output looks like this:
 
 ### Create a GIN index for the JSONB
 
-You can create a GIN (Generalized Inverted iNdex) to query JSONB with fine-grained queries. This can help the query performance when querying the sensor values on the `events` table. Use the following query to create a GIN on the `payload` field.
+You can create a Generalized Inverted Index (GIN index) to query JSON Binary (JSONB) by using fine-grained queries. This level of detail can help the query performance when you query the sensor values on the `events` table. Use the following query to create a GIN index on the `payload` field:
 
 ```sql
 CREATE INDEX events_payload_idx ON events USING GIN (payload);
 ```
 
-Confirm that the index appears in the **Indexes** list by running the command:
+Confirm that the index appears in the **Indexes** list:
 
 ```sql
 \d events
 ```
 
-You should see something like this in the Indexes section:
+You should see an entry like the following example in the **Indexes** section:
 
 ```text
 "events_payload_idx" gin (payload)
@@ -168,7 +188,7 @@ You should see something like this in the Indexes section:
 
 ### Confirm that the tables aren't yet distributed
 
-The `citus_tables` view shows any tables that are distributed. To ensure these newly created tables aren't yet distributed, run the following query:
+The `citus_tables` view shows any tables that are distributed. To ensure that these newly created tables aren't yet distributed, run the following query:
 
 ```sql
 SELECT * FROM citus_tables;
@@ -178,15 +198,15 @@ The results should show zero rows. None of these tables are distributed.
 
 ## Load the data
 
-As you're creating a demo environment to show the Wide World Importers tech leads how to handle the migration of their data, you can set up your environment with simulated data. Keep in mind that the chilly chocolates are best kept at 55-60 degrees Fahrenheit and 60-70 % humidity.
+You're creating a demo environment to show the Wide World Importers tech leads how to handle the migration of their data. You set up your environment by using simulated data. Keep in mind that the chilly chocolates are best kept at between 55 degrees and 60 degrees Fahrenheit, and with 60 percent to 70 percent humidity.
 
-Because of foreign key relationships, the tables will be loaded in the following order:
+Because of foreign key relationships, the tables are loaded in the following order:
 
 1. `device_types`
-2. `devices`
-3. `events`
+1. `devices`
+1. `events`
 
-You'll create functions to create fake data.
+Next, create functions that create simulated data.
 
 1. There are two device types. Use the following command to populate the `device_types` table:
 
@@ -194,7 +214,7 @@ You'll create functions to create fake data.
     INSERT INTO device_types (device_type_id,device_type) VALUES (1,'delivery truck'),(2,'warehouse');
     ```
 
-2. Create a stored procedure to generate fake device data. Use the following SQL:
+1. Create a stored procedure to generate fake device data. Use the following SQL statements:
 
     ```sql
     CREATE OR REPLACE PROCEDURE create_devices(batch_size int)    
@@ -217,14 +237,14 @@ You'll create functions to create fake data.
     $$;
     ```
 
-3. Generate some devices and force 42 to be a delivery truck sensor with the following commands:
+1. Generate some devices and force device 42 to be a delivery truck sensor by using the following commands:
 
     ```sql
     CALL create_devices(1000);
     UPDATE devices SET device_type_id = 1 WHERE device_id = 42;
     ```
 
-4. Run the following SQL to create a stored procedure to insert a sensor reading with generated simulated readings.
+1. Run the following commands to create a stored procedure that inserts a sensor reading that uses generated simulated readings:
 
     ```sql
     CREATE OR REPLACE PROCEDURE generate_reading(selected_device_id int)
@@ -268,7 +288,7 @@ You'll create functions to create fake data.
     $$;
     ```
 
-5. Run the following SQL to create a stored procedure to generate sensor data.
+1. Run the following command to create a stored procedure that generates sensor data:
 
     ```sql
     CREATE OR REPLACE PROCEDURE create_events(batch_size int)
@@ -294,13 +314,13 @@ You'll create functions to create fake data.
     $$;
     ```
 
-6. Generate sensor data with the following command:
+1. Generate sensor data by running the following command:
 
     ```sql
     CALL create_events(10000);
     ```
 
-7. Execute the following commands to verify data was loaded into the `device_types`, `devices`, and `payment_events` tables using the `COPY` command.
+1. Execute the following commands to verify that data was loaded into the `device_types`, `devices`, and `payment_events` tables:
 
     ```sql
     SELECT COUNT(*) FROM device_types;
@@ -308,7 +328,7 @@ You'll create functions to create fake data.
     SELECT COUNT(*) FROM events;
     ```
 
-    The output looks like this:
+    The output looks like this example:
 
     ```text
      count 
@@ -329,7 +349,7 @@ You'll create functions to create fake data.
 
 ## Query the data
 
-You want to look at the events for the devices to make sure they're keeping chilly chocolates in the right temperature and humidity values. The ideal environment for the chilly chocolates is 55-60 degrees Fahrenheit with humidity in the range of 60-70%. Run the following query to look for the problems:
+You want to look at the events for the devices to make sure that they're keeping chilly chocolates at the right temperature and humidity values. The ideal environment for the chilly chocolates is between 55 degrees and 60 degrees Fahrenheit, with humidity in the range of 60 percent to 70 percent. Run the following query to look for problems:
 
 ```sql
 SELECT * FROM events 
@@ -337,9 +357,9 @@ WHERE (payload ->> 'humidity')::decimal NOT BETWEEN 60 AND 70
 OR (payload ->> 'temperature')::decimal NOT BETWEEN 55 AND 60;
 ```
 
-This query returns records in a paginated form. You can use the `Space bar` or `Down arrow` to move forward a page. You can use `Enter` to move forward a row. Once you understand how the data is structured, press `q` to exit the paginated results and return to the Citus prompt.
+This query returns records in a paginated form. You can use the Spacebar or Down arrow to move forward a page. You can use Enter to move forward a row. After you understand how the data is structured, press `q` to exit the paginated results and return to the Citus prompt.
 
-Some devices are running out of acceptable ranges. Are there any devices that are more problematic than others? Try this query:
+Your query results show that some devices are running out of acceptable ranges. Are there any devices that are more problematic than others? Try this query:
 
 ```sql
 SELECT COUNT(event_id), device_id FROM events 
@@ -364,7 +384,7 @@ FROM events
 WHERE device_id=42;
 ```
 
-In the generated sample, the results look like this:
+In the generated sample, the results look like this example output:
 
 ```text
  lowhumidity | highhumidity | lowtemperature | hightemperature | regularhumidity | regulartemperature 
@@ -372,9 +392,9 @@ In the generated sample, the results look like this:
            0 |         2739 |              0 |             601 |             599 |               2737
 ```
 
-This looks like the chilly chocolates near device 42 are on their way to becoming melted chocolates. Wide World Importers need to handle the situation near device 42.
+The output looks like the chilly chocolates near device 42 are on their way to becoming melted chocolates. Wide World Importers needs to correct the problems in the device 42 environment.
 
-Suppose there was a growth in the number of sensors. Add another 50,000 records with the following command:
+Suppose that there was a growth in the number of sensors. Add another 50,000 records by using the following command:
 
 ```sql
 CALL create_events(50000);
@@ -382,7 +402,7 @@ CALL create_events(50000);
 
 Now rerun the query to inspect device 42's problems. What do the results look like?
 
-They may look like this:
+They might look like this example:
 
 ```text
  lowhumidity | highhumidity | lowtemperature | hightemperature | regularhumidity | regulartemperature 
@@ -393,10 +413,10 @@ They may look like this:
 
 You can continue to use `create_events()` to generate more sample sensor data as needed.
 
-For this exercise, once you're done in psql, exit with the following command:
+For this exercise, when you're finished with psql, exit by using the following command:
 
 ```sql
 \q
 ```
 
-Now that you have a single node of an Azure Cosmos DB for PostgreSQL cluster loaded with data, you can come up with a plan to help Wide World Importers scale from a single node to a multi-node cluster.
+Now that you have a single node of an Azure Cosmos DB for PostgreSQL cluster loaded with data, you can develop a plan to help Wide World Importers scale from a single-node database to a multi-node cluster.

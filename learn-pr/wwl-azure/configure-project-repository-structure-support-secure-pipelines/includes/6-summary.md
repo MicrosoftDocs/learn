@@ -4,10 +4,10 @@ Without a well-organized project and repository structure, it would be difficult
 
 ## Learn more
 
-- [Set Git repository permissions](https://learn.microsoft.com/azure/devops/repos/git/set-git-repository-permissions)
-- [Change project-level permissions or group membership](https://learn.microsoft.com/azure/devops/organizations/security/change-project-level-permissions)
-- [Get started with permissions, access levels, and security groups](https://learn.microsoft.com/azure/devops/organizations/security/about-permissions)
-- [Security through templates](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
-- [Secure files for Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files)
-- [Secure repositories](https://learn.microsoft.com/azure/devops/pipelines/security/repos)
-- [Recommendations to structure projects in your pipeline](https://learn.microsoft.com/azure/devops/pipelines/security/projects)
+- [Set Git repository permissions.](https://learn.microsoft.com/azure/devops/repos/git/set-git-repository-permissions)
+- [Change project-level permissions or group membership.](https://learn.microsoft.com/azure/devops/organizations/security/change-project-level-permissions)
+- [Get started with permissions, access levels, and security groups.](https://learn.microsoft.com/azure/devops/organizations/security/about-permissions)
+- [Security through templates.](https://learn.microsoft.com/azure/devops/pipelines/security/templates)
+- [Secure files for Azure Pipelines.](https://learn.microsoft.com/azure/devops/pipelines/library/secure-files)
+- [Secure repositories.](https://learn.microsoft.com/azure/devops/pipelines/security/repos)
+- [Recommendations to structure projects in your pipeline.](https://learn.microsoft.com/azure/devops/pipelines/security/projects)

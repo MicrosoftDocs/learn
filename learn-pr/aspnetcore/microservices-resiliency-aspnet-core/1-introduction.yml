@@ -5,6 +5,7 @@ metadata:
   description: Learn how to add fault tolerance to your cloud-native ASP.NET Core microservice app, with minimal impact on the user.
   author: scottaddie
   ms.author: scaddie
+  ms.manager: markl
   ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial

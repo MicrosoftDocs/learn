@@ -43,7 +43,7 @@ This section includes general documents relating to the following categories:
 
 ### Industry and Regional Resources
 
-This section includes documents the apply to the following industries and regions:
+This section includes documents that apply to the following industries and regions:
 
 - Financial Services - Resources elaborating regulatory compliance guidance for FSI (by country/region)
 - Healthcare and Life Sciences - Capabilities offered by Microsoft for Healthcare Industry

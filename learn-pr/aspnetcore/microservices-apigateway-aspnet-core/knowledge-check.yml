@@ -5,6 +5,7 @@ metadata:
   description: Check your understanding of this module.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 05/12/2021
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial

@@ -26,8 +26,8 @@ roles:
 products:
 - azure
 - azure-monitor
-- azure-sentinel
-- defender-for-cloud
+- microsoft-sentinel
+- azure-security-center
 - azure-application-insights
 subjects:
 - it-management-monitoring
