@@ -1,3 +1,4 @@
+
 Administrative units are Azure Active Directory (Azure AD) resources that can be containers for other Azure AD resources. An administrative unit can contain only users and groups.
 
 Administrative units restrict permissions in a role to any portion of your organization that you define. You could, for example, use administrative units to delegate the Helpdesk Administrator role to regional support specialists, so they can manage users only in the region that they support. You can manage administrative units by using the Azure portal, PowerShell cmdlets and scripts, or Microsoft Graph.

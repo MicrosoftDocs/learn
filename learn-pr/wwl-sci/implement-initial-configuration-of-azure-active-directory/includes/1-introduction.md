@@ -1,3 +1,4 @@
+
 In this module, you'll learn how to configure and manage Azure Active Directory (Azure AD), part of Microsoft Entra tenant. You'll explore Azure AD roles, custom domains, and company branding options. In addition, you'll learn how to configure delegation by using administrative units and configure tenant-wide settings.
 
 ## Learning objectives
