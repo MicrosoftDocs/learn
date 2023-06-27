@@ -24,7 +24,7 @@ For example, a typical `azd` workflow using an existing template includes the fo
     azd up
     ```
 
-4. Once your environment is setup in Azure, you can locally modify the application features or Azure resource templates and then run `azd up` again to provision your changes.
+4. Once your environment is set up in Azure, you can locally modify the application features or Azure resource templates and then run `azd up` again to provision your changes.
 
 Other `azd` commands are available to complete additional tasks and expand on this workflow. `azd` is designed to have a minimal number of commands with a small number of parameters for ease of use. Some of the most common `azd` commands you'll use include:
 
@@ -65,6 +65,6 @@ Regardless of which approach you choose, the resulting template structure will b
 
 Most `azd` templates also optionally include one or more of the following folders:
 
-* **`.devcontainer` folder** - Allows you to setup a Dev Container environment for your application. This is a common development environment approach that is not specific to `azd`.
+* **`.devcontainer` folder** - Allows you to set up a Dev Container environment for your application. This is a common development environment approach that is not specific to `azd`.
 * **`.github` folder** - Holds the CI/CD workflow files for GitHub Actions, which is the default CI/CD provider for `azd`.
 * **`.azdo` folder** - If you decide to use Azure Pipelines for CI/CD, define the workflow configuration files in this folder.
