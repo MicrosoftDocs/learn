@@ -1,4 +1,3 @@
-
 :::image type="content" source="../media/company-brand-583c4126.png" alt-text="Screenshot of the Azure A D Company Branding page. You can pick a default language, a corporate logo, and over values.":::
 
 

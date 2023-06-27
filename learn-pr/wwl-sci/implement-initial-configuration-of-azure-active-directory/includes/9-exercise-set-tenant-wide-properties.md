@@ -1,6 +1,3 @@
-
-Please feel free to complete this exercise in Azure.
-
 ### Change the tenant display name
 
 1.  Browse to the [Azure portal](https://portal.azure.com/) and sign in using a Global administrator account for the directory.

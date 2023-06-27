@@ -1,4 +1,3 @@
-
 You need to assign additional permissions to one of your newly created administrators.
 
 In this exercise, you will create a user account to use in the exercises.
