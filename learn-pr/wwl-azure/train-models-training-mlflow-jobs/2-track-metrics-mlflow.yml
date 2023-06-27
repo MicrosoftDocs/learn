@@ -4,11 +4,10 @@ title: Track metrics with MLflow
 metadata:
   title: Track metrics with MLflow
   description: "Learn how to track metrics with MLflow in scripts in Azure Machine Learning."
-  ms.date: 05/18/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 9
 content: |
   [!include[](includes/2-track-metrics-mlflow.md)]

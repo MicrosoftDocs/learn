@@ -34,7 +34,7 @@ products:
 - azure-firewall
 - azure-network-watcher
 - azure-ddos-protection
-- azure-sentinel
+- microsoft-sentinel
 - azure-advisor
 - azure-blueprints
 subjects:

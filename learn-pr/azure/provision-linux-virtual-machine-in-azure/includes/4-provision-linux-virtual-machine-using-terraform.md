@@ -6,7 +6,7 @@ Terraform is available as a single binary downloadable from the [Hashicorp websi
 
 > [!NOTE]
 > 
-> When using Azure Cloud Shell, make sure you run the current version of Terrrafom by following the instructions provided in the Microsoft Learn article [Configure Terraform in Azure Cloud Shell with Bash](/azure/developer/terraform/get-started-cloud-shell-bash).
+> When using Azure Cloud Shell, make sure you run the current version of Terraform by following the instructions provided in the Microsoft Learn article [Configure Terraform in Azure Cloud Shell with Bash](/azure/developer/terraform/get-started-cloud-shell-bash).
 
 ## Deploy a Linux VM by using Terraform
 
