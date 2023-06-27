@@ -30,7 +30,7 @@ Because Java is platform independent, you're free to choose the OS, but the Java
 
 ```xml
 <properties>
-    <java.version>1.8</java.version>
+    <java.version>17</java.version>
 </properties>
 ```
 

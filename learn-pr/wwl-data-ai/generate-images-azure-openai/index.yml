@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.generate-images-azure-openai
+metadata:
+  title: Generate images with Azure OpenAI Service
+  description: "Use DALL-E in Azure OpenAI service to generate images"
+  ms.date: 6/14/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: cognitive-services
+  ms.subservice: openai
+title: Generate images with Azure OpenAI Service
+summary: "The Azure OpenAI service includes the DALL-E model, which you can use to generate original images based on natural language prompts."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe the capabilities of DALL-E in the Azure openAI service
+    - Use the DALL-E playground in Azure OpenAI Studio
+    - Use the Azure OpenAI REST interface to integrate DALL-E image generation into your apps
+prerequisites: |
+  Before starting this module, you should be familiar with the Azure OpenAI service. Consider completing the [Get started with Azure OpenAI Service](/training/modules/get-started-openai/) module before starting this one.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - data-ai
+units:
+- learn.wwl.generate-images-azure-openai.introduction
+- learn.wwl.generate-images-azure-openai.what-is-dall-e
+- learn.wwl.generate-images-azure-openai.dall-e-in-openai-studio
+- learn.wwl.generate-images-azure-openai.dall-e-rest-api
+- learn.wwl.generate-images-azure-openai.exercise-use-dall-e
+- learn.wwl.generate-images-azure-openai.knowledge-check
+- learn.wwl.generate-images-azure-openai.summary
+badge:
+  uid: learn.wwl.generate-images-azure-openai.badge

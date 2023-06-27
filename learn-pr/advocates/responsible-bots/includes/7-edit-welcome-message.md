@@ -58,7 +58,7 @@ To see whether your bot works, rebuild your code and run your bot:
 
 1. Try sending a message to your bot, and see how the bot responds.
 
-   :::image type="content" source="../media/bot-framework-emulator-basic-message-exchange.png" alt-text="Screenshot of the Live Chat tab of Bot Framework Emulator. Messages show that the bot returns a capital when a user enters a country/region.":::
+   :::image type="content" source="../media/bot-framework-emulator-basic-message-exchange.png" alt-text="Screenshot of the Live Chat tab of Bot Framework Emulator. Messages show that the bot returns a capital/major city when a user enters a country/region.":::
 
 Your bot now greets you with a helpful message. When you enter the name of a country/region, your bot responds with the country's capital/major city.
 

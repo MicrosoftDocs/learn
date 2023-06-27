@@ -20,84 +20,14 @@ The following table lists the package types supported by Azure Artifacts. The av
 
 The following table details the compatibility of each package with specific versions of the Azure DevOps Server, previously known as *Team Foundation Server* (TFS).
 
-:::row:::
-  :::column:::
-    **Feature**
-  :::column-end:::
-  :::column:::
-    **Azure DevOps Services**
-  :::column-end:::
-  :::column:::
-    **TFS**
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    NuGet
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    TFS 2017
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    npm
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    TFS 2017 update one and later
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Maven
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    TFS 2017 update one and later
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Gradle
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    TFS 2018
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Universal
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-:::row:::
-  :::column:::
-    Python
-  :::column-end:::
-  :::column:::
-    Yes
-  :::column-end:::
-  :::column:::
-    No
-  :::column-end:::
-:::row-end:::
-
+| **Feature** | **Azure DevOps Services** | **TFS**                       |
+| ----------- | ------------------------- | ----------------------------- |
+| NuGet       | Yes                       | TFS 2017                      |
+| npm         | Yes                       | TFS 2017 update one and later |
+| Maven       | Yes                       | TFS 2017 update one and later |
+| Gradle      | Yes                       | TFS 2018                      |
+| Universal   | Yes                       | No                            |
+| Python      | Yes                       | No                            |
 
 Maven, npm, and NuGet packages can be supported with teams of any size from public and private sources. Azure Artifact comes with Azure DevOps, but the extension is also available from the Visual Studio Marketplace.
 
@@ -125,6 +55,6 @@ OSS offers a new-concept-called *Software Composition Analysis (SCA) to address 
 
 When consuming an OSS component, whether you're creating or consuming dependencies, you'll typically want to follow these high-level steps:
 
-1. Start with the latest, correct version to avoid old vulnerabilities or license misuse.
-1. Validate that the OSS components are the correct binaries for your version. In the release pipeline, validate binaries to ensure accuracy and keep a traceable bill of materials.
-1. Get notifications of component vulnerabilities immediately, correct them, and redeploy the component automatically to resolve security vulnerabilities or license misuses from reused software.
+1.  Start with the latest, correct version to avoid old vulnerabilities or license misuse.
+2.  Validate that the OSS components are the correct binaries for your version. In the release pipeline, validate binaries to ensure accuracy and keep a traceable bill of materials.
+3.  Get notifications of component vulnerabilities immediately, correct them, and redeploy the component automatically to resolve security vulnerabilities or license misuses from reused software.

@@ -1,5 +1,6 @@
 
 
+
 Welcome to this interactive skills validation experience. Completing this module helps prepare you for the ***Configure secure access to your workloads using Azure virtual networking*** assessment.
 
 In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice. The skills validated include creating and configuring virtual networks, network security groups, and Firewalls. Also, configuring routing and DNS to improve the security posture of the network. 

@@ -6,6 +6,7 @@ metadata:
   ms.date: 05/16/2023
   author: csharpfritz
   ms.author: jefritz
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
   ms.technology: aspnetcore-blazer

@@ -2,7 +2,7 @@
 uid: learn.azure-command-line-tools-intro.scripting-environments
 metadata:
   title: Scripting environments
-  description: Learn about command-line shells used to manage and provision Azure resources
+  description: Learn about command-line shells for managing and provisioning Azure resources
   ms.published: 02/27/2023
   ms.date: 02/27/2023
   author: mikefrobbins
