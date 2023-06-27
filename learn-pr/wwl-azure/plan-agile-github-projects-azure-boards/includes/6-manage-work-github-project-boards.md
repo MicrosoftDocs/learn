@@ -11,7 +11,7 @@ It's possible to configure your project to group by iteration to visualize the b
 
 When you first create an iteration field, three iterations are automatically created. You can add other iterations if needed.
 
-:::image type="content" source="../media/github-existing-iteration-0630316b.png" alt-text="Screenshot of GitHub existing iterations.":::
+:::image type="content" source="../media/github-existing-iteration-0630316b-0cf8f6a5-a84f1a3b.png" alt-text="Screenshot of GitHub existing iterations.":::
 
 
 ## Iteration field
@@ -34,7 +34,7 @@ Or follow the steps using the interface:
 7.  To change the duration of each iteration, type a new number, then select the dropdown and click either days or weeks.
 8.  Click Save and create.
     
-    :::image type="content" source="../media/github-create-iteration-6d37845a.png" alt-text="Screenshot of GitHub settings. New iteration creation.":::
+    :::image type="content" source="../media/github-create-iteration-6d37845a-bf36fd62-509c7773.png" alt-text="Screenshot of GitHub settings. New iteration creation.":::
     
 
 ## Adding new iterations
@@ -52,7 +52,7 @@ Or follow the steps using the interface:
     3.  Click **Add**.
 7.  Click Save changes.
     
-    :::image type="content" source="../media/github-iterations-45abf300.png" alt-text="Screenshot of GitHub iterations example list.":::
+    :::image type="content" source="../media/github-iterations-45abf300-1249f80d-ccee81e7.png" alt-text="Screenshot of GitHub iterations example list.":::
     
 
 Also, you can insert breaks into your iterations to communicate when you're taking time away from scheduled work.

@@ -3,7 +3,7 @@ Using Projects views, you can organize information by changing the layout, group
 
 You can create and use different visualizations, for example, Board view:
 
-:::image type="content" source="../media/github-projects-beta-add-issues-board-c5d9afde.png" alt-text="Screenshot of GitHub Projects (beta) board.":::
+:::image type="content" source="../media/github-projects-beta-add-issues-board-c5d9afde-a3209104-cf4d4f27.png" alt-text="Screenshot of GitHub Projects (beta) board.":::
 
 
 ## Project command palette
