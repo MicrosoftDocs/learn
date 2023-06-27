@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: 'Which of the following is a benefit of incorporating CI/CD into your development processes?'
+  - content: 'Which of the following statements describes a benefit of incorporating CI/CD into your development processes?'
     choices:
     - content: 'Decreased confidence when deploying your code to production.'
       isCorrect: false

@@ -1,6 +1,6 @@
 Let's say that you run an operations team that's responsible for resources running on Azure. What would you do to ensure you have visibility into the health of your systems? If something happens, who finds out first? Your team or your end users?
 
-Monitoring is the act of collecting and analyzing data to determine the performance, health, and availability of your business applications and the resources on which they depend. An effective monitoring strategy helps you focus on the health of your application. It also helps you increase your uptime by proactively notifying you of critical issues so that you can resolve them before they become problems.
+Monitoring is the act of collecting and analyzing data from your systems. You then use that data to determine the performance, health, and availability of your business applications and the resources on which they depend. An effective monitoring strategy helps you focus on the health of your application. It also helps you increase your uptime by proactively notifying you of critical issues so that you can resolve them before they become problems.
 
 When it comes to monitoring and analytics on Azure, we can bundle services into three specific areas of focus:
 
