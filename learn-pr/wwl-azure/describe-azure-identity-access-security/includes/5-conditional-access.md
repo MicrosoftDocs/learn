@@ -1,4 +1,3 @@
-
 Conditional Access is a tool that Azure Active Directory uses to allow (or deny) access to resources based on identity signals. These signals include who the user is, where the user is, and what device the user is requesting access from.
 
 Conditional Access helps IT administrators:
