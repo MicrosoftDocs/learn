@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.ask-questions-of-data-with-openai-dotnet.4-improve-completion-quality
+uid: learn.open-ai-dotnet-text-completions.4-improve-completion-quality
 title: Tips to improve completion quality
 metadata:
   title: Improve completion quality by creating better prompts

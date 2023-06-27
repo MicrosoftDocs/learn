@@ -1,5 +1,5 @@
 ### YamlMime:Module
-uid: learn.azure.ask-questions-of-data-with-openai-dotnet
+uid: learn.azure.open-ai-dotnet-text-completions
 metadata:
   title: Enable users to ask questions of their data with Azure OpenAI Completions
   description: Learn how to use the .NET SDK with the Azure OpenAI service to gain insights into your data by asking questions in regular, everyday language.
@@ -29,12 +29,12 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.ask-questions-of-data-with-openai-dotnet.1-introduction
-- learn.azure.ask-questions-of-data-with-openai-dotnet.2-azure-openai-text-completions-overview
-- learn.azure.ask-questions-of-data-with-openai-dotnet.3-exercise-install-sdk-create-completion
-- learn.azure.ask-questions-of-data-with-openai-dotnet.4-improve-completion-quality
-- learn.azure.ask-questions-of-data-with-openai-dotnet.5-exercise-improve-completion-quality
-- learn.azure.ask-questions-of-data-with-openai-dotnet.6-summary
+- learn.azure.open-ai-dotnet-text-completions.1-introduction
+- learn.open-ai-dotnet-text-completions.2-azure-openai-text-completions-overview
+- learn.open-ai-dotnet-text-completions.3-exercise-install-sdk-create-completion
+- learn.open-ai-dotnet-text-completions.4-improve-completion-quality
+- learn.open-ai-dotnet-text-completions.5-exercise-improve-completion-quality
+- learn.open-ai-dotnet-text-completions.6-summary
 
 badge:
-  uid: learn.azure.ask-questions-of-data-with-openai-dotnet.badge
+  uid: learn.open-ai-dotnet-text-completions.badge
