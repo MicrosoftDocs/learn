@@ -23100,6 +23100,11 @@
     "redirect_document_id": false
   },
   {
+    "source_path": "learn-pr/achievements/learn.azure.use-git-from-vs-code.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
     "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/classification-scenarios.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/2-classification-scenarios",
     "redirect_document_id": false
