@@ -39,7 +39,7 @@ quiz:
       explanation: "Correct. The `azure.yaml` file describes the services in your code, such as the language and corresponding Azure resources."
     - content: "Defines a Dev Container environment for the project."
       isCorrect: false
-      explanation: "Incorrect. The `.devcontainer.json` file is used to setup dev containers for `azd` templates."
+      explanation: "Incorrect. The `.devcontainer.json` file is used to set up dev containers for `azd` templates."
     - content: "Defines the infrastructure as code templates that will create resources in Azure."
       isCorrect: false
       explanation: "Incorrect. Infrastructure as code templates are defined in the template's Bicep files."
