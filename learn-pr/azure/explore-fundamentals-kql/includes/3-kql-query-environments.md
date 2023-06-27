@@ -18,7 +18,7 @@ For more product information, see [What is Azure Data Explorer?](/azure/data-exp
 
 Microsoft Fabric is an all-in-one analytics solution for enterprises that covers everything from data movement to data science, near real-time analytics, and business intelligence. It offers a comprehensive suite of services, including a data lake, data engineering, and data integration, all in one place. Real-Time Analytics is a fully managed big data analytics platform optimized for streaming and time-series data. Real-Time Analytics contains what can be thought of as the SaaS version of Azure Data Explorer. Specifically, you can use KQL in KQL Querysets to run queries, view, and customize query results on data from a KQL Database and save queries for later use, or share with others to collaborate on data exploration. 
 
-:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics" lightbox="../media/7-real-time-analytics.png":::
+:::image type="content" source="../media/7-real-time-analytics.png" alt-text="Screenshot of query in Real-Time Analytics." lightbox="../media/7-real-time-analytics.png":::
 
 For more information, see [Query data in a KQL Queryset](/fabric/real-time-analytics/kusto-query-set). 
 
