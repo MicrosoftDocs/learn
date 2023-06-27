@@ -9,7 +9,7 @@ When you're reviewing existing alerts or writing new-alerting rules, consider th
  -  Alerts that trigger call-out should be urgent, important, actionable, and real.
  -  They should represent either ongoing or imminent problems with your service.
  -  Err on the side of removing noisy alerts – over-monitoring is a more-challenging problem to solve under-monitoring.
- -  You should almost always classify the problem into availability &amp; basic functionality; latency; correctness (completeness, freshness, and durability of data); and feature-specific problems.
+ -  You should almost always classify the problem into availability & basic functionality; latency; correctness (completeness, freshness, and durability of data); and feature-specific problems.
  -  Symptoms are a better way to capture more problems more comprehensively and robustly with less effort.
  -  Include cause-based information in symptom-based pages or on dashboards but avoid alerting directly on causes.
  -  The further up your serving stack you go, the more distinct problems you catch in a single rule. But don't go so far you can't sufficiently distinguish what is going on.

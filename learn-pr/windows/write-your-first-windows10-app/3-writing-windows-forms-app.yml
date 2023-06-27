@@ -3,8 +3,8 @@ title: Exercise - Writing a Windows Forms app
 uid: learn-windows.writing-windows-10-apps.3-writing-windows-forms-app
 metadata:
   title: Writing a Windows Forms app
-  description: Learn how to develop a basic Windows Forms app by using Visual Studio. You'll learn how to create a UI, change UI properties, and handle simple user interaction.
-  ms.date: 12/10/2018
+  description: Learn how to develop a basic Windows Forms app in Visual Studio by creating a UI, changing its properties, and handling user interaction.
+  ms.date: 05/22/2023
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: interactive-tutorial

@@ -6,20 +6,21 @@ Azure role-based access control (Azure RBAC) is the authorization system that ma
 
 Use Azure RBAC to create and assign roles in your SecOps team. Azure RBAC lets you grant appropriate access to Microsoft Sentinel. The different roles give you specific control over what users of Microsoft Sentinel can access and do.
 
-> [!TIP]
-> You can assign Azure RBAC roles:
->
-> - Directly in the Microsoft Sentinel workspace
-> - In a subscription
-> - To the resource group that the workspace belongs to, which Microsoft Sentinel inherits
+You can assign Azure RBAC roles:
+
+- Directly in the Microsoft Sentinel workspace
+- In a subscription
+- To the resource group that the workspace belongs to, which Microsoft Sentinel inherits
 
 ### Microsoft Sentinel-specific roles
 
-The following are the three dedicated, built-in Microsoft Sentinel roles:
+The following are dedicated, built-in Microsoft Sentinel roles:
 
 - **Reader**: This role can review data, incidents, workbooks, and other Microsoft Sentinel resources.
 - **Responder**: This role has all the permissions of the Reader role. Plus, it can manage incidents by assigning or dismissing them.
 - **Contributor**: This role has all the permissions of the Reader and Responder roles. Also, it can create and edit workbooks, analytics rules, and other Microsoft Sentinel resources. To deploy Microsoft Sentinel on your tenant, you need Contributor permissions for the subscription where the Microsoft Sentinel workspace is deployed.
+- **Playbook Operator**: This role can list, view, and manually run playbooks.
+- **Automation Contributor**: This role allows Microsoft Sentinel to add playbooks to automation rules. It isn't meant for user accounts.
 
 All built-in Microsoft Sentinel roles grant read access to the data in your Microsoft Sentinel workspace. For best results, these roles should be assigned to the resource group that contains the Microsoft Sentinel workspace. The roles then apply to all the resources that deploy to support Microsoft Sentinel, if those resources are in the same resource group.
 
@@ -32,6 +33,7 @@ In addition to Microsoft Sentinel-dedicated Azure RBAC roles, other Azure and Lo
   - Owner
   - Contributor
   - Reader
+  - Template Spec Contributor
 
 - Log Analytics roles grant access across all your Log Analytics workspaces:
 
@@ -44,12 +46,14 @@ For example, a user who is assigned with the Microsoft Sentinel Reader and Azure
 
 The following table summarizes the roles and allowed actions in Microsoft Sentinel.
 
-|Roles|Create and run playbooks|Create and edit workbooks, analytic rules, and other Microsoft Sentinel resources|Manage incidents such as dismissing and assigning|View data incidents, workbooks, and other Microsoft Sentinel resources|
-|---|---|---|---|---|
-|Microsoft Sentinel Reader|No|No|No|Yes|
-|Microsoft Sentinel Responder|No|No|Yes|Yes|
-|Microsoft Sentinel Contributor|No|Yes|Yes|Yes|
-|Microsoft Sentinel Contributor and Logic App Contributor|Yes|Yes|Yes|Yes|
+|Roles|View and run playbooks|Create and edit playbooks|Create and edit analytic rules, workbooks, and other Microsoft Sentinel resources|Manage incidents such as dismiss and assign|View data incidents, workbooks, and other Microsoft Sentinel resources| Install and manage content from the content hub|
+|---|---|---|---|---|---|---|
+|Microsoft Sentinel Reader|No|No|No|No|Yes|No|
+|Microsoft Sentinel Responder|No|No|No|Yes|Yes|No|
+|Microsoft Sentinel Contributor|No|No|Yes|Yes|Yes|No|
+|Microsoft Sentinel Playbook Operator|Yes|No|No|No|No|No|
+|Logic App Contributor|Yes|Yes|No|No|No|No|
+|Template Spec Contributor|No|No|No|No|No|Yes|
 
 ## Custom roles and advanced Azure RBAC
 
