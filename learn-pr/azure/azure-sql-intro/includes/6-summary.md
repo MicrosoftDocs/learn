@@ -10,7 +10,7 @@ People learn in different ways. A Channel 9 video series related to this learnin
 
 ### History of Azure SQL  
 
-You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg&azure-portal=true) keynote, where Microsoft Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when," you can find that in the [TechNet archive](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx?azure-portal=true). You can also read the original blog post about the launch of Windows Azure and SQL Azure.  
+You can watch the 2008 [Microsoft Professional Developers Conference](https://www.youtube.com/watch?v=otuf3goxLsg&azure-portal=true) keynote, where Microsoft Chief Software Architect (at the time) Ray Ozzie announced Azure for the first time. If you want to read the original "What to use when," you can find that in the [TechNet archive](https://social.technet.microsoft.com/wiki/contents/articles/1308.select-an-edition-of-sql-server-for-application-development/revision/7.aspx?azure-portal=true). 
 
 ### SQL Server on Azure Virtual Machines
 
