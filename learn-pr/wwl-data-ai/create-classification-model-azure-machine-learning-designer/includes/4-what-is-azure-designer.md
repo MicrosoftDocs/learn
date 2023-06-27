@@ -24,7 +24,7 @@ You can create data assets on the **Data** page from local files, a datastore, w
 
 ## Azure Machine Learning Jobs 
 
-An Azure Machine Learning (ML) job executes a task against a specified compute target. Jobs enable systematic tracking for your machine learning experimentation and workflows. Once a job is created, Azure ML maintains a run record for the job. All of your jobs' run records can be viewed in Azure ML studio. 
+An Azure Machine Learning job executes a task against a specified compute target. Jobs enable systematic tracking for your machine learning experimentation and workflows. Once a job is created, Azure Machine Learning maintains a run record for the job. All of your jobs' run records can be viewed in Azure Machine Learning studio. 
 
 In your designer project, you can access the status of a pipeline job using the **Submitted jobs** tab on the left pane. 
 ![Screenshot of the submitted jobs tab in Azure Machine Learning designer.](../media/submitted-jobs-location.png)
