@@ -33,7 +33,7 @@ If you're using Azure Policy on **Azure Resources**, there are **no costs** asso
 * Kubernetes Configuration: First 6 vCPUs are free, $2/vCPU/month
 
 > [!NOTE]
->Azure Arc is a service that allows you to manage some resource types hosted outisde of Azure. Today, the following resource types are supported:
+>Azure Arc is a service that allows you to manage some resource types hosted outside of Azure. Today, the following resource types are supported:
 >
 >* Physical and Virtual Windows or Linux Servers
 >* Kubernetes clusters
