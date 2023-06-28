@@ -28,7 +28,8 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-security-center
+- azure-iot-security-center
+- defender-for-cloud
 - m365-security-center
 - m365-ems-cloud-app-security
 subjects:

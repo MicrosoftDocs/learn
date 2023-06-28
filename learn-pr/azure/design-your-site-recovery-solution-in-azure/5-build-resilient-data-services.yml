@@ -3,7 +3,7 @@ uid: learn.design-your-site-recovery-solution-in-azure.5-build-resilient-data-se
 title: Build resilient data services
 metadata:
   title: Build resilient data services
-  description: Build resilient data services
+  description: Build resilient data services.
   ms.date: 05/10/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
@@ -17,15 +17,15 @@ quiz:
   questions:
   - content: Your organization needs to ensure that no transactional SQL database data is ever lost. All SQL database data must always be available and readable in a separate region for redundancy and to comply with standards. How should you architect this sort of resilience?
     choices:
-    - content: Use Azure SQL Database and use Active Geo-replication to replicate to another region.
+    - content: Use Azure SQL Database and use active geo-replication to replicate to another region.
       isCorrect: true
-      explanation: Active Geo-replication would enable you to have readable secondaries in another region.
-    - content: Use SQL Server virtual machines and use Azure Site Recovery to recover them to another region.
+      explanation: Active geo-replication would enable you to have readable secondaries in another region.
+    - content: Use SQL Server virtual machines and use Azure Site Recovery to recover them in another region.
       isCorrect: false
-      explanation: You wouldn't be able to read from the replica that is created because it doesn't exist until a failover happens.
+      explanation: You wouldn't be able to read from the replica because it doesn't exist until a failover happens.
     - content: Use SQL Server virtual machines and use Azure Backup to back data up to another region.
       isCorrect: false
-      explanation: Your data wouldn't be accessible for reads, and wouldn't have any secondary databases until you restored them using the backed-up data.
+      explanation: Your data wouldn't be accessible for reads, and it wouldn't have any secondary databases until you restored them by using the backed-up data.
   - content: What are some benefits of moving your data workloads to Azure Cosmos DB now that your online store is moving to multiple regions?
     choices:
     - content: You can perform row-level security, with low latency on your data in another region.
@@ -36,4 +36,4 @@ quiz:
       explanation: Azure Cosmos DB gives you unlimited databases.
     - content: You can have read access to your data, with low latency in another region.
       isCorrect: true
-      explanation: You can let your clients access the other region for reads, giving you the ability to spread usage across multiple regions.
+      explanation: You can let your clients access the other region for reads, which gives you the ability to spread usage across multiple regions.
