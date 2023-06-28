@@ -28,7 +28,7 @@ products:
 - azure-sql-database
 - azure-storage
 - mdatp
-- azure-sentinel
+- microsoft-sentinel
 - microsoft-purview
 subjects:
 - architecture
