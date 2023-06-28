@@ -1,0 +1,51 @@
+### YamlMime:LearningPath
+uid: learn.kusto-query-language
+metadata:
+  title: Data analysis with Kusto Query Language
+  description: Learn how to analyze data using the Kusto Query Language.
+  ms.date: 06/28/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.service: azure
+title: Data analysis with Kusto Query Language
+prerequisites: |
+  The following prerequisite should be completed:
+  - Familiarity with database structures like tables, columns, and rows
+summary: |
+  In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- business-analyst
+- data-analyst
+- data-scientist
+- developer
+- security-operations-analyst
+- data-engineer 
+- technology-manager 
+products:
+- azure-data-explorer
+- azure-monitor
+- azure-sentinel
+- azure-log-analytics
+- azure-resource-graph
+- microsoft-defender
+- configuration-manager
+- fabric
+- azure
+subjects:
+- data-analytics
+- data-science
+- data-visualization
+- big-data
+modules:
+- learn.azure.explore-fundamentals-kql
+- learn.write-first-query-kusto-query-language
+- learn.azure.gain-insights-data-kql
+- learn.multi-table-queries-with-kusto-query-language
+trophy:
+  uid: learn.kusto-query-language.trophy
