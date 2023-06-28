@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.discover-characteristics-foster-ai-ready-culture
+title: Discover the characteristics that foster an AI-ready culture
+metadata:
+  title: Discover the characteristics that foster an AI-ready culture
+  description: "Discover the characteristics that foster an AI-ready culture"
+  ms.date: 06/28/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-discover-characteristics-foster-ai-ready-culture.md)]
