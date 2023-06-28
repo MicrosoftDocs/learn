@@ -1,3 +1,4 @@
+
 Training and deploying an effective machine learning model involves a lot of work, much of it time-consuming and resource-intensive. Azure Machine Learning is a cloud-based service that helps simplify some of the tasks it takes to prepare data, train a model, and deploy a predictive service. Classification machine learning models can be built using Azure Machine Learning.
 
 Most importantly, Azure Machine Learning helps data scientists increase their efficiency by automating many of the time-consuming tasks associated with training models. It enables them to use cloud-based compute resources that scale effectively to handle large volumes of data while incurring costs only when actually used.
@@ -6,7 +7,7 @@ Most importantly, Azure Machine Learning helps data scientists increase their ef
 
 To use Azure Machine Learning, you first create a *workspace* resource in your Azure subscription. You can then use this workspace to manage data, compute resources, code, models, and other artifacts related to your machine learning workloads.
 
-After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure machine learning service either with developer tools or the Azure Machine Learning studio web portal.
+After you have created an Azure Machine Learning workspace, you can develop solutions with the Azure Machine Learning Service either with developer tools or the Azure Machine Learning studio web portal.
 
 ## Azure Machine Learning studio 
 
