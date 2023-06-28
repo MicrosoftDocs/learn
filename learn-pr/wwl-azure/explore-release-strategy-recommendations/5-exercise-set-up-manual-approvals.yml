@@ -4,9 +4,11 @@ title: Exercise - set up manual approvals
 metadata:
   title: Exercise - set up manual approvals
   description: "Exercise - set up manual approvals"
-  ms.date: 06/26/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-set-up-manual-approvals.md)]

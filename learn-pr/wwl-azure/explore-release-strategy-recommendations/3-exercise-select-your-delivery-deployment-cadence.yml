@@ -4,9 +4,11 @@ title: Exercise - select your delivery and deployment cadence
 metadata:
   title: Exercise - select your delivery and deployment cadence
   description: "Exercise - select your delivery and deployment cadence"
-  ms.date: 06/26/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-select-your-delivery-deployment-cadence.md)]
