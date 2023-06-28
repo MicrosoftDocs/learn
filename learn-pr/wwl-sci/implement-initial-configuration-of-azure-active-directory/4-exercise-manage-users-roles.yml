@@ -4,11 +4,11 @@ title: Exercise manage users roles
 metadata:
   title: Exercise manage users roles
   description: "Exercise manage users roles"
-  ms.date: 02/03/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
