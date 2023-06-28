@@ -7,4 +7,7 @@ In this lab, create a managed identity to use in your YAML pipelines using Azure
 
 Launch the exercise and follow the instructions.
 
+> [!TIP]
+> To continue your learning journey, open the exercise in a new browser tab or window while staying on this page. To do this, right-click the **Launch Exercise** button and select **Open link in new tab** or **Open link in new window**.
+
 [![Button to launch exercise.](../media/launch-exercise.png)](https://aka.ms/mslearn-lab-manage-identity-projects-pipelines)
