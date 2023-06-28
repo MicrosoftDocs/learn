@@ -8,7 +8,8 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
+  ms.service: azure-devops
+  manager: mijacobs
 title: Manage Agile software delivery plans across teams
 summary: Learn to optimize delivery efficiency by improving work plan visibility across teams.
 abstract: |

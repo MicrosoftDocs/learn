@@ -1,3 +1,4 @@
+
 Continuous integration relies on four key elements for successful implementation: a Version Control System, Package Management System, Continuous Integration System, and an Automated Build Process.
 
 A **version control system** manages changes to your source code over time.
@@ -6,15 +7,15 @@ A **version control system** manages changes to your source code over time.
  -  [Apache Subversion](https://subversion.apache.org/)
  -  [Team Foundation Version Control](/azure/devops/repos/tfvc/overview)
 
-A **package management system** is used to install, uninstall, and manage software packages.
+A **package management system** install uninstalls, and manages software packages.
 
  -  [NuGet](https://www.nuget.org/)
- -  [Node Package Manager (NPM)](https://www.npmjs.com/)
+ -  [Node Package Manager (npm)](https://www.npmjs.com/)
  -  [Chocolatey](https://chocolatey.org/)
  -  [HomeBrew](https://brew.sh/)
  -  [RPM](http://rpm.org/)
 
-A **continuous integration system** merges all developer working copies to shared mainline several times a day.
+A **continuous integration system** merges all developer working copies into a shared mainline several times daily.
 
  -  [Azure DevOps](https://azure.microsoft.com/services/devops)
  -  [TeamCity](https://www.jetbrains.com/teamcity/)
