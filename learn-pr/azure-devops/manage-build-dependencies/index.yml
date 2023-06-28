@@ -9,6 +9,7 @@ metadata:
   ms.author: rabououn
   ms.topic: interactive-tutorial
   ms.service: azure-devops-artifacts
+  manager: mijacobs
 title: Manage build dependencies with Azure Artifacts
 summary: Manage your application and the packages it uses across build pipelines.
 abstract: |
