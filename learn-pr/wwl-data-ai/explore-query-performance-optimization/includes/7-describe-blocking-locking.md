@@ -121,6 +121,6 @@ Blocking problems typically fall into two categories:
 
 - Long running transactions caused by schema design. Frequently this can be an update on a column with a missing index, or poorly designed update query.
 
-Monitoring for locking-related performance problems allow you to quickly identity performance degradation related to locking.
+Monitoring for locking-related performance problems allows you to quickly identity performance degradation related to locking.
 
 For more information about how to monitor blocking, see [Understand and resolve SQL Server blocking problems](/troubleshoot/sql/performance/understand-resolve-blocking).
