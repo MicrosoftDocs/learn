@@ -4,11 +4,11 @@ title: Configure custom Azure roles
 metadata:
   title: Configure custom Azure roles
   description: "Configure custom Azure roles"
-  ms.date: 03/24/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
