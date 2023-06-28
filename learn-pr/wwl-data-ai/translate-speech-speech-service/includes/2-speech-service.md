@@ -1,3 +1,4 @@
+
 The Speech service provides robust, machine learning and artificial intelligence-based speech translation services, enabling developers to add end-to-end, real-time, speech translations to their applications or services.
 
 Before you can use the Speech service, you need to create a Speech resource in your Azure subscription. You can use either a dedicated **Speech** resource or a multi-service **Cognitive Services** resource.

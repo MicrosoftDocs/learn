@@ -1,3 +1,4 @@
+
 In this module, you learned how to:
 
 - Provision Azure resources for speech translation.
