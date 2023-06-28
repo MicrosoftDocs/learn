@@ -23050,7 +23050,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/",
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/index.md",
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
   },
@@ -23180,7 +23180,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/",
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/index.md",
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
   },
