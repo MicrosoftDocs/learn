@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/11-explore-common-release-management-tools.md)]

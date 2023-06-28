@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/12-knowledge-check.md)]

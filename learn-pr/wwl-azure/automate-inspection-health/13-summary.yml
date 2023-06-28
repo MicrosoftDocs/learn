@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/13-summary.md)]
