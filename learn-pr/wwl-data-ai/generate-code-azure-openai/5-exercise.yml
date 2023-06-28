@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-code-azure-openai.exercise
+title: |
+  Exercise: Generate and improve code with Azure OpenAI Service
+metadata:
+  title: |
+    Exercise: Generate and improve code with Azure OpenAI Service
+  description: "Get hands on experience with Azure OpenAI Service to generate and improve code."
+  ms.date: 6/20/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 25
+content: |
+  [!include[](includes/5-exercise.md)]

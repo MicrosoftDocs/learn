@@ -1,7 +1,7 @@
 
 To onboard Microsoft Sentinel, you first need to connect to your security sources. Microsoft Sentinel comes with a number of connectors for Microsoft solutions, available out of the box and providing real-time integration, including Microsoft Threat Protection solutions, and Microsoft 365 sources, including Microsoft 365, Azure AD, Azure ATP, and Microsoft Cloud App Security, and more. In addition, there are built-in connectors to the broader security ecosystem for non-Microsoft solutions. You can also use common event format, Syslog or REST-API to connect your data sources with Microsoft Sentinel as well.
 
-:::image type="content" source="../media/az500-sentinel-collector-fdb54da2.png" alt-text="Azure sentinel collector blade" lightbox="../media/az500-sentinel-collector-fdb54da2.png":::
+:::image type="content" source="../media/sentinel-collect-data-page-a84499fc.png" alt-text="Screenshot showing the Microsoft Sentinel Data connectors page.":::
 
 
 ### Data connection methods

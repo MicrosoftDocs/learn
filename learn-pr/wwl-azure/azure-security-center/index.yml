@@ -28,7 +28,6 @@ roles:
 products:
 - azure
 - azure-defender
-- azure-security-center
 - defender-for-cloud
 subjects:
 - cloud-security
