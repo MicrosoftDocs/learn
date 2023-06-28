@@ -2,7 +2,7 @@ Azure AD External Identities is a feature that makes it possible for you to allo
 
 ## Invitation redemption flow
 
-## :::image type="content" source="../media/B2B-invitation-redemption-beca08f0.png" alt-text="Diagram of the redemption of an external invitation to join Azure AD as a guest."::: 
+## :::image type="content" source="../media/business-to-business-invitation-redemption-3caadd6b.png" alt-text="Diagram of the redemption of an external invitation to join Azure AD as a guest."::: 
 
 1.  Azure AD performs user-based discovery to determine if the user already exists in a managed Azure AD tenant. (Unmanaged Azure AD accounts can no longer be used for redemption.) If the user’s User Principal Name (UPN) matches both an existing Azure AD account and a personal MSA, the user is prompted to choose which account they want to redeem with.
 2.  If an admin has enabled SAML/WS-Fed IdP federation, Azure AD checks if the user’s domain suffix matches the domain of a configured SAML/WS-Fed identity provider and redirects the user to the pre-configured identity provider.
