@@ -60,7 +60,8 @@ The terminal shows the `helm uninstall` and `helm install` commands with the cor
 
 After the updated app installs and is online, verify that the changes were successful. First, go to the *:::no-loc text="WebStatus":::* page and observe the status of the changed services. Notice that the unchanged services remain healthy throughout the redeployment of the new and changed services.
 
-When the services are all healthy, go to the *WebSPA* URL, and follow these steps:
+It can take a few minutes for all the services to become healthy. Once they're all healthy, go to the *WebSPA* URL, and follow these steps:
+
 1. Refresh the browser.
 1. If you're not signed in, select the **LOGIN** link at upper right and use the credentials provided on the sign-in page.
 1. Add your favorite products to the shopping bag by selecting the images.
