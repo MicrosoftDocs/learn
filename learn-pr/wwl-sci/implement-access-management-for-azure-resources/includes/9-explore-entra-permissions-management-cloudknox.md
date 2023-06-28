@@ -2,7 +2,7 @@ Microsoft Entra Permissions Management (formerly known as CloudKnox) is a cloud 
 
 Organizations have to consider permissions management as a central piece of their Zero Trust security to implement least privilege access across their entire infrastructure:
 
- -  Organizations are increasingly adopting multicloud strategy and are struggling with the lack of visibility and complexity of managing access permissions.
+ -  Organizations are increasingly adopting multi-cloud strategy and are struggling with the lack of visibility and complexity of managing access permissions.
  -  With the proliferation of identities and cloud services, the number of high-risk cloud permissions is increasing. The increase expands the attack surface a bad actor can use to gain access.
  -  IT security teams are under increased pressure to ensure access to their expanding cloud estate is secure and compliant.
 
