@@ -1,9 +1,7 @@
 On the DLP Policy Matches report page and the DLP Incidents report page you'll see a chart and a table displaying information about their respective occurrences. To analyze these DLP reports, you can break down the charts separated by either:
 
 - Affected service
-
 - Enforced action
-
 - Applied policy
 
 Familiarizing yourself with the available filters and options of the DLP reports will help you fine-tune your policies and reduce false positives and overrides.
@@ -12,34 +10,21 @@ Familiarizing yourself with the available filters and options of the DLP reports
 
 When using the DLP policy matches report, you should use the filters to limit the report to specific policies. This will help you reduce the number of matches displayed and focus on the impact of selected policies in your organization.
 
-
-
 ![Screenshot of a report in Microsoft 365 showing D L P matches.](../media/policy-matches-report.png)
 
 Consider a scenario where you created a new policy to protect financial data a few days ago and currently have it set to test mode. You should set the start date in the filter close to the start date of the policy to avoid whitespace in your report from before the policy existed.
 
 1. On the DLP Policy Matches page, in the right corner select **Filter**.
-
 1. Select a Start date close to the creation date of the policy.
-
 1. Under Services, make sure all services selected.
-
 1. Under Policies, select the DLP policy you want to review in the dropdown menu.
-
 1. Under Rules, select all rules and then select **Apply**.
-
 1. To get a better understanding of how and where the policy will affect your users, you can use the dropdown menu at the top to change the breakdown of the chart:
-
 1. Select **Chart breakdown by Services**.
-
 1. In the dropdown menu, select **Chart breakdown by Action**.
-
 1. Select one of the options from the legend to filter the results even more.
-
 1. Use the table to view which rule matched and which sensitive information type is responsible for the match.
-
 1. Switch between the breakdown options and modify the filters to identify peaks in specific services and times that could indicate a need to adjust your policy.
-
 1. For example, a peak in the Exchange service for bank account numbers might indicate a leak, but it could also be the sign of a legitimate business process at odds with your new policy. Before adjusting the policy, you should investigate the situation.
 
 ## Review data loss prevention incidents
@@ -48,20 +33,14 @@ When using the DLP Incidents report to get a general overview of which items gen
 
 Using the DLP incidents report you should keep the timeframe broad and drill-down if you identify any peaks at certain times.
 
-
-
 ![Screenshot of reports in Microsoft 365 screen example of incidents.](../media/january-incidents.png)
 
 For example, you created a new set of DLP policies and prioritized them according to your DLP strategy. If you want to see if the priority you chose aligns with the reality of sensitive data in your organization, you should open the DLP incidents report page and follow these steps:
 
 1. In the right corner select **Filter**.
-
 1. Select a Start date and End date.
-
 1. Under Services, make sure all services selected.
-
 1. Select **All policies** in the dropdown menu.
-
 1. Select **apply**.
 
 If you see any high peaks use the start date and end date filters to limit the scope of the information to that peak. Look at the table and identify the items with the highest policy and rule counts to identify items that may be problematic for your policies. By selecting the item in the table, you can gain additional information about which rules and policies match the item. Review those rules and policies to see which actions should have been enforced according to your DLP strategy and verify that the correct actions have been enforced.
@@ -77,13 +56,9 @@ The report consolidates two different types of information, but they both help y
 For example, you created a new financial data policy in test mode, a week ago you activated policy tips and allowed overrides of the policy. If you use the reports to tune a new policy to match only when it's supposed to match you should select a start date close shortly before the time you activated policy tips and limit the scope to show you false positives.
 
 1. In the right corner select **Filter**.
-
 1. Select a start date.
-
 1. Under Services, make sure all services selected.
-
 1. Select the financial data policy you want to analyze and select Apply.
-
 1. In the legend of the chart, uncheck **DLP policy override**.
 
 From this view, you can observe all false positive reports of your financial data policy and use it to identify the sensitive information it falsely matched. Reviewing the matching content gives you more information about how to modify the matching policies.
@@ -91,8 +66,5 @@ From this view, you can observe all false positive reports of your financial dat
 Overrides can help you identify business processes that will be affected by your policy. If you get a high volume of Overrides on a policy, you should review the business process. You need to determine if you can adjust the policy without negatively affecting its protective functions. To do this follow these steps:
 
 1. In the legend of the chart, select **DLP policy override** and uncheck **DLP policy false positive**.
-
 1. Select an item on the table and review the Justification section of the pop-up.
-
 1. Overrides aren't negative. They help with auditing because it holds the user accountable for the override and allows you to review if legitimate reasons require the DLP policy override.
-
