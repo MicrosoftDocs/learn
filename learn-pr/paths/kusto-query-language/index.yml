@@ -47,3 +47,5 @@ modules:
 - learn.write-first-query-kusto-query-language
 - learn.azure.gain-insights-data-kql
 - learn.multi-table-queries-with-kusto-query-language
+trophy:
+  uid: learn.kusto-query-language.trophy
