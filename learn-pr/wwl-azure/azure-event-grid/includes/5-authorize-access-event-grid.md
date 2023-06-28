@@ -1,4 +1,5 @@
 
+
 Azure Event Grid allows you to control the level of access given to different users to do various management operations such as list event subscriptions, create new ones, and generate keys. Event Grid uses Azure role-based access control (Azure RBAC).
 
 ## Built-in roles
