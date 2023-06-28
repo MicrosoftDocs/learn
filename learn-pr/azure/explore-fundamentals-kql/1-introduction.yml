@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.introduction
+title: Introduction
+metadata:
+  title: introduction
+  description: "In this module, you'll learn about what KQL does, how it works, and when to use it. You'll explore basic query types, learn about some of the services that use KQL, and run simple queries in these service environments."
+  ms.date: 3/26/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
