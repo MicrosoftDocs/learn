@@ -2,7 +2,7 @@
 uid: learn.kusto-query-language
 metadata:
   title: Data analysis with Kusto Query Language
-  description: Learn how to analyze data using the Kusto Query Language
+  description: Learn how to analyze data using the Kusto Query Language.
   ms.date: 06/28/2023
   author: YaelSchuster
   ms.author: yaschust
@@ -10,10 +10,10 @@ metadata:
   ms.service: azure
 title: Data analysis with Kusto Query Language
 prerequisites: |
-  The following pre-requisite should be completed:
+  The following prerequisite should be completed:
   - Familiarity with database structures like tables, columns, and rows
 summary: |
-  In this learning path, students will learn how to analyze data in a variety of environments using the Kusto Query Language.
+  In this learning path, students learn how to analyze data in various environments using the Kusto Query Language.
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
