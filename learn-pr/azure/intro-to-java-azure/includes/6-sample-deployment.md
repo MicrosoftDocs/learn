@@ -34,7 +34,7 @@ Because Java is platform independent, you're free to choose the OS, but the Java
 </properties>
 ```
 
-The example uses Java 8, so our Azure App Service instance, whether Linux or Windows, should also use Java 8. Because the platform doesn't matter, we'll use Linux for our example.
+The example uses Java 17, so our Azure App Service instance, whether Linux or Windows, should also use Java 17. Because the platform doesn't matter, we'll use Linux for our example.
 
 We have to add some Azure dependencies to the pom.xml file. Adding the dependencies can happen automatically if you run the following command:
 
