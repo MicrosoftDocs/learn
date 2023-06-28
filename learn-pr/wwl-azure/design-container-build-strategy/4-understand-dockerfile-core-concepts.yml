@@ -4,9 +4,11 @@ title: Understand Dockerfile core concepts
 metadata:
   title: Understand Dockerfile core concepts
   description: "Understand Dockerfile core concepts"
-  ms.date: 06/27/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/4-understand-dockerfile-core-concepts.md)]
