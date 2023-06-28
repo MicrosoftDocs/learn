@@ -1,4 +1,5 @@
 
+
 Azure Event Grid supports two types of event schemas: Event Grid event schema and Cloud event schema. Events consist of a set of four required string properties. The properties are common to all events from any publisher.
 
 The data object has properties that are specific to each publisher. For system topics, these properties are specific to the resource provider, such as Azure Storage or Azure Event Hubs.

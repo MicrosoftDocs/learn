@@ -6,8 +6,9 @@ metadata:
   ms.date: 04/11/2019
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: app-service
+  manager: mijacobs
 title: Scale an App Service web app to efficiently meet demand with App Service scale up and scale out
 summary: Respond to periods of increased activity by incrementally increasing the resources available and then, to reduce costs, decreasing these resources when activity drops. 
 abstract: |

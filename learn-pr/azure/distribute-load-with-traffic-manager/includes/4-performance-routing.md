@@ -6,6 +6,6 @@ You don't have to do anything more than configure a Traffic Manager profile and 
 
 In the following example, if endpoint A stopped performing as efficiently as endpoint B, customer traffic is automatically routed to endpoint B.
 
-![Diagram of an example showing Traffic Manager routing traffic to the best performing endpoint.](../media/4-performance-example.png)
+:::image type="content" source="../media/4-performance-example.png" alt-text="Diagram of an example showing Traffic Manager routing traffic to the best performing endpoint." loc-scope="other":::
 
 Client traffic is routed consistently. A client is directed to the same endpoint for each request it makes if nothing changes in the underlying servers and networking. If you need more granular control (for example, to choose a preferred failover within a region), you can use Traffic Manager in a nested configuration.

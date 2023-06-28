@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/20/2019
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: app-service
+  manager: mijacobs
 title: Capture Web Application Logs with App Service Diagnostics Logging
 summary: Use application logs in Azure Web Apps to help debug web app code.
 abstract: | 
