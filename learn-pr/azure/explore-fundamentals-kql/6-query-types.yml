@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.query-types
+title: Types of KQL queries
+metadata:
+  title: Types of KQL queries
+  description: "Explore the different types of Kusto Query Language queries."
+  ms.date: 4/3/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-query-types.md)]

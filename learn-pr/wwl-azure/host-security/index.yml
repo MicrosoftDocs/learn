@@ -27,7 +27,6 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-defender
 - azure-disk-encryption
 - azure-virtual-machines
 - defender-for-cloud
