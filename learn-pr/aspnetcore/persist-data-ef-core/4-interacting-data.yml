@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.interacting-data
-title: Exercise - Interacting with data
+title: Exercise - Interact with data
 metadata:
-  title: Exercise - Interacting with data
-  description: "Write code to interact with databases using EF Core."
+  title: Exercise - Interact with data
+  description: "Write code to interact with databases by using EF Core."
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper

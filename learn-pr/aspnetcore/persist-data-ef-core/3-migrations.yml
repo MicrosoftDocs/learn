@@ -2,7 +2,7 @@
 uid: learn.persist-data-ef-core.migrations
 metadata:
   title: Exercise - Migrations
-  description: Learn how to design the classes representing the domain model and apply them to a database with migrations.
+  description: Learn how to design the classes that represent the domain model, and apply them to a database during a migration.
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
