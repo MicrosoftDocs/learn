@@ -4,9 +4,11 @@ title: Communicate with Azure Pipelines
 metadata:
   title: Communicate with Azure Pipelines
   description: "Communicate with Azure Pipelines"
-  ms.date: 06/26/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/7-communicate-with-azure-pipelines.md)]
