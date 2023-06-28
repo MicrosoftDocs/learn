@@ -4,11 +4,11 @@ title: Explore Azure Load Testing
 metadata:
   title: Explore Azure Load Testing
   description: "Explore Azure Load Testing"
-  ms.date: 06/27/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-azure-load-testing.md)]
-interactive: bash

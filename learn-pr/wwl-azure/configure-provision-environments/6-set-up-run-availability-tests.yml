@@ -4,9 +4,11 @@ title: Set up and run availability tests
 metadata:
   title: Set up and run availability tests
   description: "Set up and run availability tests"
-  ms.date: 06/27/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 60
 content: |
   [!include[](includes/6-set-up-run-availability-tests.md)]

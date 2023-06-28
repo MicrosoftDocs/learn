@@ -4,9 +4,11 @@ title: Exercise - set up service connections
 metadata:
   title: Exercise - set up service connections
   description: "Exercise - set up service connections"
-  ms.date: 06/27/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 30
 content: |
   [!include[](includes/3-exercise-set-up-service-connections.md)]

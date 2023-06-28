@@ -4,11 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/27/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: azure
+durationInMinutes: 5
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
@@ -29,13 +30,13 @@ quiz:
     choices:
     - content: "Service Hook."
       isCorrect: false
-      explanation: "Incorrect. When a pipeline needs access to resources, you'll often need to provision service connections."
+      explanation: "Incorrect. When a pipeline needs access to resources, you need to provision service connections."
     - content: "Service Connection."
       isCorrect: true
-      explanation: "Correct. When a pipeline needs access to resources, you'll often need to provision service connections."
+      explanation: "Correct. When a pipeline needs access to resources, you need to provision service connections."
     - content: "Agent Pool."
       isCorrect: false
-      explanation: "Incorrect. When a pipeline needs access to resources, you'll often need to provision service connections."
+      explanation: "Incorrect. When a pipeline needs access to resources, you need to provision service connections."
   - content: "Which of the following choices is recommended to authenticate to Azure with Service Connections?"
     choices:
     - content: "User and Password."
@@ -47,4 +48,3 @@ quiz:
     - content: "Service Principal."
       isCorrect: true
       explanation: "Correct. The Service Principal is a type of service account that only has permissions in the specific subscription and resource group. This makes it a safe way to connect from the pipeline."
-interactive: bash
