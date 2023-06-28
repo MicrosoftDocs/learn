@@ -3,7 +3,7 @@ uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.kno
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "Test your understanding of scaling and monitoring multi-tenant SaaS application databases using Azure Cosmos DB for PostgreSQL."
+  description: "Test your understanding of scaling and monitoring multitenant SaaS application databases by using Azure Cosmos DB for PostgreSQL."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
@@ -11,51 +11,37 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 3
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
-  - content: "When preparing multi-tenant tables for migration from a single-node to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but don't contain a column directly referencing it?"
+  - content: "When you're preparing multitenant tables for migration from a single-node database to a multi-node cluster, what classification is applied to tables that can be logically distributed by the chosen distribution column, but which doesn't contain a column that directly references it?"
     choices:
     - content: "Ready for distribution"
       isCorrect: false
-      explanation: "Try again. Tables classified as ready for distribution already contain the distribution column and are ready to be distributed without changes."
+      explanation: "Try again. Tables that are classified as ready for distribution already contain the distribution column and are ready to be distributed without changes."
     - content: "Needs backfill"
       isCorrect: true
-      explanation: "Correct! Tables in this category require denormalization to add the selected distribution column, which must then be backfilled with the appropriate value."
+      explanation: "Correct! Tables that are in this category require denormalization to add the selected distribution column, which must then be backfilled with the appropriate value."
     - content: "Reference table"
       isCorrect: false
       explanation: "Try again. Reference tables are typically small, don't contain the distribution key, are commonly joined by distributed tables, and are shared across tenants."
     - content: "Local table"
       isCorrect: false
       explanation: "Try again. Local tables are typically not joined to other tables and don't contain the distribution key."
-  - content: "Which distribution function is the safest to use for write-intensive tables when migrating a production multi-tenant database from a single-node to a multi-node cluster?"
+  - content: "Which distribution function is the safest to use for write-intensive tables when migrating a production multitenant database from a single node to a multi-node cluster?"
     choices:
-    - content: "concurrently_distribute_table()"
+    - content: "`concurrently_distribute_table()`"
       isCorrect: false
       explanation: "Try again. This function doesn't exist."
-    - content: "create_distributed_table()"
+    - content: "`create_distributed_table()`"
       isCorrect: false
       explanation: "Try again. This method results in table locking and can prevent writes against the table until the distribution process completes."
-    - content: "create_distributed_table_concurrently()"
+    - content: "`create_distributed_table_concurrently()`"
       isCorrect: true
-      explanation: "Correct! Running create_distributed_table_concurrently() takes longer to complete but is a safer option when working with production systems, where reducing the impact on ongoing application operations is essential."
-  - content: "When monitoring activity in a multi-tenant SaaS database, the ability to view database usage and statistics on a per-tenant basis is crucial. What built-in view allows you to get clear insights into what your tenants are doing?"
+      explanation: "Correct! Running `create_distributed_table_concurrently()` takes longer to complete but is a safer option when working with production systems, in which reducing the impact on ongoing application operations is essential."
+  - content: "When you're monitoring activity in a multitenant SaaS database, the ability to view database usage and statistics on a per-tenant basis is crucial. What built-in view allows you to get clear insights into what your tenants are doing?"
     choices:
     - content: "citus_stat_statements"
       isCorrect: true
@@ -65,4 +51,4 @@ quiz:
       explanation: "Try again. The citus_dist_stat_activity view shows the distributed queries that are executing on all nodes."
     - content: "pg_stat_statements"
       isCorrect: false
-      explanation: "Try again. The pg_stat_statements view tracks queries issues against the database and provides query timing details, but it doesn't capture the tenant ID associated with each query."
+      explanation: "Try again. The pg_stat_statements view tracks queries issues against the database and provides query timing details, but it doesn't capture the tenant ID that's associated with each query."

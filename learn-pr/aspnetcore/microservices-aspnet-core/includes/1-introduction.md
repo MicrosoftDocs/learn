@@ -13,11 +13,31 @@ A new project is underway to implement discount coupon codes that buyers can use
 
 ## Prerequisites
 
-- Beginner-level experience with C# code.
+### Required knowledge and skills
+
+- Experience writing C# at the beginner level.
 - Familiarity with RESTful service concepts and HTTP actions like `GET`, `POST`, `PUT`, and `DELETE`.
-- Conceptual knowledge of containers, Docker, and AKS.
-- Access to an Azure subscription.
-- Ability to run *development containers* in Visual Studio Code or GitHub Codespaces, as described in the following section.
+- Conceptual knowledge of containers at a beginner level.
+- Azure, including the Azure portal, subscriptions, resource groups, and resources.
+- Basic Git commands, specifically cloning.
 
-[!INCLUDE[Dev containers](../../includes/dev-containers/required.md)]
+### Account requirements
 
+- An Azure account, with Administrator access.
+- A GitHub account.
+
+### Software requirements
+
+To simplify the setup process, this module uses a dev container. The dev container includes all the required software, including the Azure CLI, Docker, and Visual Studio Code extensions. You have two options for using the dev container:
+
+#### Option 1: Use GitHub Codespaces (recommended)
+
+Using the dev container in [GitHub Codespaces](https://code.visualstudio.com/docs/remote/codespaces) provides the easiest way to complete this module. Codespaces are hosted in the cloud and can be accessed from a web browser or Visual Studio Code.
+
+#### Option 2: Use your local machine
+
+You can run the same dev container locally on your machine. To do so, you need the following software:
+
+- Visual Studio Code.
+- The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) for Visual Studio Code.
+- A compatible container runtime, such as Docker Desktop.
