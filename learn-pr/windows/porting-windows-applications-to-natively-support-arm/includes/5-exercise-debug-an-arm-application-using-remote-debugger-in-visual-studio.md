@@ -75,3 +75,6 @@ In this exercise, we'll use remote debugging to connect to the HelloArm64 applic
     :::image type="content" source="../media/vs-2022-breakpoint-hit.png" alt-text="The Visual Studio 2022 screen displays with the Program.cs file open and the last line of code shows a hit breakpoint. The locals show the variable name has a value of Learner":::
 
 You have now successfully debugged an application running on Windows on Arm using remote debugging in Visual Studio 2022.
+
+> [!IMPORTANT]
+> Reminder that if you used a VM in your remote debugging process to clean up any associated resources so that you will not continue to be charged for them. If using Azure, you can delete resources individually or delete the resource group to delete the entire set of resources.
