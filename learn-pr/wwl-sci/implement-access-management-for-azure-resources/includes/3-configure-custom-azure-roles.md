@@ -7,10 +7,10 @@ If the Azure built-in roles don't meet the specific needs of your organization, 
 
 You would assign a custom role to a user, group, or other resource the same as you do for built-in. Your admin, just gets to control exactly with capabilities the custom role has access to. The principle of least privilege let's you pick just the capabilities you need. To create the custom role:
 
-1. Open Azure AD in the Azure portal.
-1. Select **Roles and administration**.
-1. Select **+ New custom role**.
-1. Then name and assign the capabilities needed.
+1.  Open Azure AD in the Azure portal.
+2.  Select **Roles and administration**.
+3.  Select **+ New custom role**.
+4.  Then name and assign the capabilities needed.
 
 ### Create a custom role from a JSON template
 
