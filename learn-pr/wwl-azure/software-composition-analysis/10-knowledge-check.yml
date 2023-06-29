@@ -4,11 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/28/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 5
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -47,4 +49,3 @@ quiz:
     - content: "A deployment succeeds."
       isCorrect: false
       explanation: "Incorrect. GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them in several situations: A new vulnerability is added to the GitHub Advisory database, New vulnerability data from Mend is processed, Dependency graph for a repository changes."
-interactive: bash

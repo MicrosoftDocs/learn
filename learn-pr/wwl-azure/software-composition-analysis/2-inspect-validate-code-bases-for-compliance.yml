@@ -4,9 +4,12 @@ title: Inspect and validate code bases for compliance
 metadata:
   title: Inspect and validate code bases for compliance
   description: "Inspect and validate code bases for compliance"
-  ms.date: 06/28/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 3
 content: |
   [!include[](includes/2-inspect-validate-code-bases-for-compliance.md)]

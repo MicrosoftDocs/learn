@@ -4,11 +4,12 @@ title: Integrate Mend with Azure Pipelines
 metadata:
   title: Integrate Mend with Azure Pipelines
   description: "Integrate Mend with Azure Pipelines"
-  ms.date: 06/28/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 4
 content: |
   [!include[](includes/4-integrate-whitesource-azure-devops-pipeline.md)]
-interactive: bash
