@@ -41,9 +41,9 @@ Throughout the learning path, you'll use Visual Studio Code as your main develop
 
 ### Access and build data solutions with Azure Data Studio
 
-Azure Data Studio is an open source application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database and access notebook capabilities. A notebook is a document with a file ending in `.ipynb` which mixes runnable code cells and text cells in one file.
+Azure Data Studio is an open-source application for managing various data services (SQL Server, Azure SQL, PostgreSQL, etc.) on any platform (Windows, Mac, Linux). In this module and learning path, you'll use Azure Data Studio to manage Azure SQL Database and access notebook capabilities. A notebook is a document with a file ending in `.ipynb` which mixes runnable code cells and text cells in one file.
 
-1. Go to the [Azure Data Studio Download](/sql/azure-data-studio/download-azure-data-studio) page, and download/install the application applicable to your operating system.
+1. Go to the [Azure Data Studio Download](/sql/azure-data-studio/download-azure-data-studio) page and download/install the application applicable to your operating system.
 
 1. Azure Data Studio is similar to Visual Studio Code in its layout. Select **File** > **Open folder**  and go to the location where you cloned the repository. This step will open the folder in Azure Data Studio so you can easily access repository files in future exercises.
 

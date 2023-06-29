@@ -4,13 +4,11 @@ title: Describe build properties
 metadata:
   title: Describe build properties
   description: "Describe build properties"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/5-describe-build-properties.md)]

@@ -3,14 +3,17 @@ uid: learn.iot.connect-iot-edge-device-to-iot-central.exercise-deploy-azure-func
 title: Exercise - Deploy an Azure function to IoT Edge
 metadata:
   title: Exercise - Deploy an Azure function to IoT Edge
-  description: Exercise - Deploy an Azure function to IoT Edge
-  ms.date: 01/11/2023
+  description: This content is a part of Connect an Azure IoT Edge device to your Azure IoT Central application
   author: dominicbetts
   ms.author: dobett
+  ms.date: 05/24/2023
   ms.reviewer: rangv
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.custom:
+    - engagement-fy23
+    - devx-track-azurecli
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
 durationInMinutes: 10
 azureSandbox: true
 interactive: bash

@@ -2,7 +2,8 @@ Azure Machine Learning’s versatility and ease of use mean that new application
 
 ## Working in a team
 
-Collaborative work within Azure Machine Learning is possible by adding multiple users to a Workspace. If you require more precise control, _Azure Role Based Access Control (RBAC)_ can be used to equip team members with roles to define their access and control of resources within the Workspace. Once team members have access, they may contribute to data labeling projects or work jointly to add and clean data, or train and deploy models.
+
+Collaborative work within Azure Machine Learning is possible by adding multiple users to a workspace. If you require more precise control, you can use _Azure Role Based Access Control (RBAC)_ to equip team members with roles to define their access and control of resources within the workspace. Once team members have access, they may contribute to data labeling projects or work jointly to add and clean data, or train and deploy models.
 
 Users can also work collectively with in-built Jupyter Notebooks to share ideas and code. Each member's edits and contributions are logged in the notebooks, and a complete revision history is kept. The notebooks also allow simultaneous access—so multiple members can discuss and edit together while following changes by fellow collaborators.
 

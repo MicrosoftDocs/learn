@@ -6,9 +6,12 @@ metadata:
   description: Learn about different instrumentation techniques through logging and tracing that help debug .NET applications.
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.date: 10/28/2020
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/5-logging-and-tracing.md)]

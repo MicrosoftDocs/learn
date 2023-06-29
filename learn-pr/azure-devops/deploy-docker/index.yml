@@ -9,6 +9,7 @@ metadata:
   ms.custom: devdivchpfy22, engagement-fy23
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Automate Docker container deployments with Azure Pipelines
 summary: Use Azure Pipelines to deploy Docker containers to Azure App Service.
 abstract: |
@@ -18,7 +19,7 @@ abstract: |
   - Monitor the build and deployment of your project
 
   > [!NOTE]
-  > if you just want to learn how to deploy Docker containers to Azure Web App for Containers, please refer to the [Deploy to Azure Web App for Containers](/azure/devops/pipelines/apps/cd/deploy-docker-webapp) guide.
+  > If you just want to learn how to deploy Docker containers to Azure Web App for Containers, please refer to the [Deploy to Azure Web App for Containers](/azure/devops/pipelines/apps/cd/deploy-docker-webapp) guide.
 
 prerequisites: |
   - An Azure subscription

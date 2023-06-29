@@ -9,7 +9,10 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-ansible
+    - devx-track-arm-template
 durationInMinutes: 15
 content: |
   [!include[](includes/4-infrastructure-as-code-tools.md)]

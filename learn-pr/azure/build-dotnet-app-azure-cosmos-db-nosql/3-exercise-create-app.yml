@@ -7,14 +7,16 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Create a new .NET console application and add a package reference to the Microsoft.Azure.Cosmos .NET SDK library from NuGet.
+
   sandbox: true
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.date: 3/30/2023
+  ms.date: 6/5/2023
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-create-app.md)]

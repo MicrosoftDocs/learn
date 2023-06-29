@@ -6,6 +6,7 @@ metadata:
   ms.date: 10/19/2022
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: .net
   ms.custom:
@@ -14,7 +15,7 @@ metadata:
   - masoucou-06132021
 title: Work with files and directories in a .NET app
 summary: Build an app that manipulates files and directories with C# and .NET.
-abstract: |   
+abstract: |
   By the end of this module, you will be able to:
 
   - Work with directories.
@@ -22,9 +23,9 @@ abstract: |
   - Read from files.
   - Write to files.
   - Parse data in files.
-prerequisites: |   
-  - Experience writing C# at the beginner level 
-  - Familiarity with basic programming constructs, such as loops and "if" statements 
+prerequisites: |
+  - Experience writing C# at the beginner level
+  - Familiarity with basic programming constructs, such as loops and "if" statements
   - Local installations of [.NET SDK](https://dotnet.microsoft.com/download)
   - [Visual Studio Code](https://code.visualstudio.com)
   - [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code
@@ -35,7 +36,6 @@ roles:
 - developer
 products:
 - dotnet
-- dotnet-core
 subjects:
 - development-tools
 units:

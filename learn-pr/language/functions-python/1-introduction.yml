@@ -5,10 +5,12 @@ metadata:
   unitType: introduction
   title: Introduction
   description: Improve your Python programming skills by using functions to make code reusable and easier to maintain. 
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

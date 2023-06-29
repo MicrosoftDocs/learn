@@ -2,33 +2,33 @@
 uid: learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql
 metadata:
   moduleType: standard
-  title: Scale from a single node to multiple nodes with Azure Cosmos DB for PostgreSQL
-  description: "In this module, you'll learn how to grow from a single-node, non-distributed cluster to a multi-node, distributed cluster with Azure Cosmos DB for PostgreSQL."
+  title: Scale from a single node to multiple nodes by using Azure Cosmos DB for PostgreSQL
+  description: "In this module, you learn how to grow from a single-node, nondistributed cluster to a multi-node, distributed cluster by using Azure Cosmos DB for PostgreSQL."
   ms.date: 02/22/2023
   author: sadukie
   ms.author: jonels
   ms.topic: interactive-tutorial
   ms.service: cosmos-db
   ms.subservice: postgresql
-title: Scale from a single node to multiple nodes with Azure Cosmos DB for PostgreSQL
+title: Scale from a single node to multiple nodes by using Azure Cosmos DB for PostgreSQL
 summary: |
-  Azure Cosmos DB for PostgreSQL can scale from a single-node, non-distributed cluster to a multi-node, distributed cluster with minimal downtime. When starting out with small amounts of data, it makes sense to start with a single node. However, as time goes on, data needs to scale for growth. By understanding the process of going from a single-node cluster to a multi-node cluster, you will be able to take advantage of growing your data with Azure Cosmos DB for PostgreSQL.
+  Azure Cosmos DB for PostgreSQL can scale from a single-node, nondistributed cluster to a multi-node, distributed cluster with minimal downtime. When you start with small amounts of data, it makes sense to start with a single node. But as time goes on, data needs to scale for growth. By understanding the process of going from a single-node cluster to a multi-node cluster, you can grow your data by using Azure Cosmos DB for PostgreSQL.
 abstract: |
   In this module, you'll:
-    - Create a single node instance of Azure Cosmos DB for PostgreSQL
-    - Identify changes to upgrade an existing single-node, non-distributed cluster to a multi-node, distributed cluster
-    - Scale the database and distribute the data across multiple nodes
+    - Create a single-node instance of Azure Cosmos DB for PostgreSQL.
+    - Identify changes to upgrade an existing single-node, nondistributed cluster to a multi-node, distributed cluster.
+    - Scale the database and distribute the data across multiple nodes.
 prerequisites: |
-  - Basic familiarity with relational databases including creating tables, creating indexes, and querying tables
+  - Basic familiarity with relational databases, including creating tables, creating indexes, and querying tables.
 iconUrl: /learn/achievements/intro-to-hyperscale.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels:
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles:
   - developer
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products:
   - azure
   - azure-cosmos-db
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
+subjects:
   - cloud-computing
 units:
   - learn.scale-from-single-node-to-multi-node-with-azure-cosmos-db-for-postgresql.introduction

@@ -5,12 +5,11 @@ metadata:
   title: Building and running the project
   description: Introduction to Hello World project.
   ms.date: 09/30/2022
-  author: edlamie80
-  ms.author: liydu
-  ms.reviewer: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 1
 content: |
   [!include[](includes/4-exercise-build-run-project.md)]

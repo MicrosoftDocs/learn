@@ -9,7 +9,10 @@ metadata:
   ms.date: 06/01/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, team=cloud_advocates
+  ms.custom:
+    - team=nextgen
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: yolasors-11052021
 durationInMinutes: 5
 content: |
