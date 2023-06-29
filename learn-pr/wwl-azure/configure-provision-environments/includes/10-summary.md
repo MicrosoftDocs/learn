@@ -6,7 +6,7 @@ You learned how to describe the benefits and usage of:
  -  Provision and configure target environment.
  -  Deploy to an environment securely using a service connection.
  -  Configure functional test automation and run availability tests.
- -  Setup test infrastructure.
+ -  Set up test infrastructure.
 
 ## Learn more
 
