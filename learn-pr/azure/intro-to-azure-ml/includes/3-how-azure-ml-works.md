@@ -14,7 +14,7 @@ The status of runs can be logged and monitored natively via the SDK, Azure Monit
 
 In the following example, we can see how Azure Machine Learning studio’s visualization can be customized to add charts, compare data, and apply filters to better analyze your results and metrics.
 
-:::image type="content" source="../media/3-studio-chart.gif" alt-text="Azure Machine Learning studio visualization example." lightbox="../media/3-studio-chart.gif":::
+:::image type="content" source="../media/3-studio-chart.gif" alt-text="Screenshot of visualizing a model in Azure Machine Learning studio." lightbox="../media/3-studio-chart.gif":::
 
 ### Experiments
 
@@ -37,7 +37,7 @@ _Data labeling_ is a centralized place to create, manage, and monitor labeling t
 
 Below we can see an example of a labeling task underway in Azure Machine Learning studio.
 
-:::image type="content" source="../media/3-labeling.gif" alt-text="Azure Machine Learning studio labeling." lightbox="../media/3-labeling.gif":::
+:::image type="content" source="../media/3-labeling.gif" alt-text="Screenshot of Azure Machine Learning studio data labeling." lightbox="../media/3-labeling.gif":::
 
 ## Deploying machine learning models
 
