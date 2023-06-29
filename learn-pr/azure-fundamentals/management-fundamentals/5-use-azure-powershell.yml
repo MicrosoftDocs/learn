@@ -9,6 +9,8 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 3
 azureSandbox: false
 content: |

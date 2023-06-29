@@ -9,6 +9,8 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

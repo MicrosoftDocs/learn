@@ -4,13 +4,13 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
