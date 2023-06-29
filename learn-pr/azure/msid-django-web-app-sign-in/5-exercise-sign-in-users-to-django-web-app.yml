@@ -9,6 +9,8 @@ metadata:
   author: SHERMANOUKO
   ms.author: shermanouko
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 8
 content: |

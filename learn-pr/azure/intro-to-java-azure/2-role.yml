@@ -9,7 +9,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors:
   - sakriema-11202020
 title: Java at Microsoft

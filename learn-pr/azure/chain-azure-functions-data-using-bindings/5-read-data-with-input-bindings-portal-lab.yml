@@ -7,6 +7,9 @@ metadata:
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-javascript-powershell
 title: Exercise - Read data with input bindings

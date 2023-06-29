@@ -9,7 +9,9 @@ metadata:
   ms.date: 11/16/2020
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: judubois-01052021
 durationInMinutes: 3
 quiz:

@@ -1,3 +1,4 @@
+
 The agent communicates with Azure Pipelines to determine which job it needs to run and report the logs and job status.
 
 The agent always starts this communication. All the messages from the agent to Azure Pipelines over HTTPS, depending on how you configure the agent.
