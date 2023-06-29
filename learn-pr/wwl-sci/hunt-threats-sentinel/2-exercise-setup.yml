@@ -8,6 +8,8 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
 title: Exercise setup
 durationInMinutes: 20
 content: |

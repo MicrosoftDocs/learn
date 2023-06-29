@@ -8,6 +8,9 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: module-choose-best-product
+  ms.custom:
+    - devx-track-bicep
+    - devx-track-terraform
   ms.prod: learning-azure
 title: Choose the right command-line tool
 durationInMinutes: 3
