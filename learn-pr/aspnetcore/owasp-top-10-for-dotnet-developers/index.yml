@@ -9,13 +9,13 @@ metadata:
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 
-title: "Guide to Secure .NET Development with OWASP Top 10" 
+title: "Guide to Secure .NET Development with OWASP Top 10"
 
 summary: "Discover the most common software vulnerabilities according to OWASP and different techniques of writing more secure code. Prevent from security bugs creeping into your codebase following security best practices."
 
 abstract: |
   By the end of this module, you'll be able to:
-    - Describe what OWASP Top 10 is.    
+    - Describe what OWASP Top 10 is.
     - Identify potential security vulnerabilities in your software.
     - Always validate user input in your applications.
 
@@ -39,18 +39,17 @@ products:
 - azure
 - aspnet
 - aspnet-web-api
-- dotnet-core
-- dotnet-framework
+- dotnet
 - blazor
 
 subjects:
   - security
   - backend-development
   - frontend-development
-  - cloud-security  
+  - cloud-security
   - development-tools
   - devops
-  
+
 units:
 - learn.owasp-top-10-for-dotnet-developers.introduction
 - learn.owasp-top-10-for-dotnet-developers.what-is-owasp-top-10
