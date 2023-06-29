@@ -6,8 +6,9 @@ metadata:
   ms.date: 02/18/2022
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: azure-functions
+  manager: mijacobs
 title: Chain Azure Functions together using input and output bindings
 summary: Azure Functions makes it easy for your function code to integrate with data and services. Through the power of bindings, you declare the data sources to read and write, and let Azure Functions take care of the rest.
 abstract: |
