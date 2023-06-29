@@ -8,6 +8,8 @@ metadata:
   ms.author: greglin
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Enable automatic failover by using priority routing
 interactive: bash
 azureSandbox: true

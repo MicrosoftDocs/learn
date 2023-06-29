@@ -8,6 +8,8 @@ metadata:
   author: kjo-msft
   ms.author: karinjohnson
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-windows
 durationInMinutes: 10
 content: |

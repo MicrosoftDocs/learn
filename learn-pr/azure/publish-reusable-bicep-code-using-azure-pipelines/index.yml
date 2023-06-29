@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Publish reusable Bicep code by using Azure Pipelines
   description: Build Azure Pipelines deployment pipelines for template specs and Bicep modules. Lint your Bicep code, apply versioning, and publish it to Azure or to a Bicep registry.
-  ms.date: 04/10/2023
+  ms.date: 06/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
