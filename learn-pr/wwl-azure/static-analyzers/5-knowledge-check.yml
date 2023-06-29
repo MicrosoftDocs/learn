@@ -4,11 +4,13 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/27/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+  ms.prod: azure
+  ms.service: azure-devops
+durationInMinutes: 5
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -47,4 +49,3 @@ quiz:
     - content: "Microsoft Defender for Cloud."
       isCorrect: false
       explanation: "Incorrect. Microsoft Defender for Cloud is a tool for security posture management and threat protection."
-interactive: bash
