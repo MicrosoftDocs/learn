@@ -7,8 +7,9 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-xamarin
-  
 title: Share code by using .NET Standard libraries
 durationInMinutes: 5
 content: |
