@@ -4,10 +4,12 @@ title: Package management with Azure Artifacts
 metadata:
   title: Package management with Azure Artifacts
   description: "Package management with Azure Artifacts"
-  ms.date: 06/27/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure-devops
   zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/10-package-management-azure-artifacts.md)]
