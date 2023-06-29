@@ -5,7 +5,7 @@ Microsoft Azure is more energy-efficient and less carbon-intensive than traditio
 
 ## Greater Energy Efficiency and Lower Emissions
 
-A [recent study](https://www.microsoft.com/en-us/download/details.aspx?id=56950) found that businesses that switched to Microsoft Azure saw energy efficiency improvements in their computing operations of up to 93 percent. After factoring in Microsoft’s usage of zero-carbon electricity, carbon emissions reductions can reach as high as 98 percent.
+A [recent study](https://www.microsoft.com/download/details.aspx?id=56950) found that businesses that switched to Microsoft Azure saw energy efficiency improvements in their computing operations of up to 93 percent. After factoring in Microsoft’s usage of zero-carbon electricity, carbon emissions reductions can reach as high as 98 percent.
 
 Azure’s energy efficiency derives from four factors:
 
