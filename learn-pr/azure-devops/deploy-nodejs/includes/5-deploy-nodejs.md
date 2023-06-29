@@ -51,7 +51,7 @@ Create a YAML CI/CD pipeline in Azure Pipelines by modifying the starter templat
     1. Select the app name you created earlier, for example **helloworld-nodejs-16353**.
     1. Select **Validate and configure**.
 
-1. On the **Review** tab, review the starter code for your pipeline configuration. Don't select **Save and run** just yet.
+1. On the **Review** tab, review the starter code for your pipeline configuration. Don't select **Save and run** yet.
 
 ## Review the pipeline tasks
 
@@ -73,7 +73,7 @@ You can also import variables from pipeline libraries that are managed outside o
 
 ### The Build stage
 
-A `stage` is a part of the pipeline that can be triggered by different mechanisms and can run independently. For example, you might have a stage that builds the application, another stage that deploys it to a preproduction environment, and a final stage that deploys the application to the production.
+A `stage` is a part of the pipeline that different mechanisms can trigger and can run independently. For example, you might have a stage that builds the application, another stage that deploys it to a preproduction environment, and a final stage that deploys the application to the production.
 
 This pipeline is divided into two stages: `Build` and `Deploy`. The `Build` stage configures and performs the build tasks, which include publishing the build artifact, as a *.zip* file, to artifact storage.
 
@@ -111,7 +111,7 @@ Verify that `runtimeStack` is set to `NODE|16-lts`. If it isn't, update the valu
 
 ### Azure Web App task
 
-The `AzureWebApp@1` task deploys web apps to Azure App Service. It's a very flexible task that supports apps across various platforms and includes everything needed for this Node.js application:
+The `AzureWebApp@1` task deploys web apps to Azure App Service. It's a flexible task that supports apps across various platforms and includes everything needed for this Node.js application:
 
 - `azureSubscription` refers to the name of your Azure service connection pipeline variable.
 - `appType` indicates whether the app is being deployed for Linux (`webAppLinux`).
