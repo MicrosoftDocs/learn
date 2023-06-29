@@ -6,8 +6,9 @@ metadata:
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
-  ms.topic: interactive-tutorial
+  ms.topic: module-standard-task-based
   ms.service: azure-functions
+  manager: mijacobs
 title: Refactor Node.js and Express APIs to Serverless APIs with Azure Functions
 summary: Improve availability and scalability by refactoring an existing API to use Azure Functions.
 abstract: |

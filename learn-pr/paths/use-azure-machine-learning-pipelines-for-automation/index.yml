@@ -24,6 +24,5 @@ subjects:
 - machine-learning
 modules:
 - learn.wwl.run-pipelines-azure-machine-learning
-- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 trophy:
   uid: learn.wwl.use-azure-machine-learning-pipelines-for-automation.trophy

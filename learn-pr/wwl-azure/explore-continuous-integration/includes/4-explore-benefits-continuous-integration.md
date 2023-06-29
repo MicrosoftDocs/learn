@@ -1,3 +1,4 @@
+
 Continuous integration (CI) provides many benefits to the development process, including:
 
  -  Improving code quality based on rapid feedback
