@@ -4,10 +4,12 @@ title: Link GitHub to Azure Boards
 metadata:
   title: Link GitHub to Azure Boards
   description: "Link GitHub to Azure Boards"
-  ms.date: 06/27/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure-devops
 durationInMinutes: 2
 content: |
   [!include[](includes/4-link-github-to-azure-boards.md)]
