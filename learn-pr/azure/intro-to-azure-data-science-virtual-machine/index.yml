@@ -6,6 +6,7 @@ metadata:
   ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: tutorial
   ms.service: data-science-vm
 title: Create and connect to a Data Science Virtual Machine
