@@ -1,16 +1,11 @@
 
 
-:::row:::
-:::column span="2":::
 In the last unit, we discussed some of the societal implications of AI. We touched on the responsibility of businesses, governments, NGOs, and academic researchers to anticipate and mitigate unintended consequences of AI technology. As organizations consider these responsibilities, more are creating internal policies and practices to guide their AI efforts.
 
 At Microsoft, we've recognized six principles that we believe should guide AI development and use: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day.
-:::column-end:::
-:::column span="2":::
+
 > [!div class="mx-imgBorder"]
-> ![Diagram that shows six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/3-identify-guiding-principles-responsible-ai-1.jpg)
-:::column-end:::
-:::row-end:::
+> ![Diagram that shows six principles: fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability.](../media/3-identify-guiding-principles-responsible-ai-1.png)
 
 ## Fairness
 
@@ -55,15 +50,10 @@ To ensure privacy and security in your AI system, you should:
 
 ## Inclusiveness
 
-:::row:::
-:::column span="2":::
 At Microsoft, we firmly believe everyone should benefit from intelligent technology, meaning it must incorporate and address a broad range of human needs and experiences. For the 1 billion people with disabilities around the world, AI technologies can be a game-changer. AI can improve access to education, government services, employment, information, and a wide range of other opportunities. Intelligent solutions such as real-time speech to text transcription, visual recognition services, and predictive text functionality are already empowering people with hearing, visual, and other impairments.
-:::column-end:::
-:::column span="2":::
+
 > [!div class="mx-imgBorder"]
-> ![Diagram that shows inclusive design principles: recognize exclusion; solve for one, extend to many, and learn from diversity.](../media/3-identify-guiding-principles-responsible-ai-2.jpg)
-:::column-end:::
-:::row-end:::
+> ![Diagram that shows inclusive design principles: recognize exclusion; solve for one, extend to many, and learn from diversity.](../media/3-identify-guiding-principles-responsible-ai-2.png)
 
 To ensure inclusiveness in your AI system, you should:
 
