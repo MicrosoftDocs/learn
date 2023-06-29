@@ -1,3 +1,4 @@
+
 A build and release platform requires executing any number of repeatable actions during the build process. Tasks are units of executable code used to do selected actions in a specified order.<br>‎:::image type="content" source="../media/tasks-9fde6c3b.png" alt-text="Build tasks.":::
 
 

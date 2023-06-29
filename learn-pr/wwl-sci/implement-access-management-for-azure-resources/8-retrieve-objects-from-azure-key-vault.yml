@@ -4,11 +4,11 @@ title: Retrieve objects from Azure Key Vault
 metadata:
   title: Retrieve objects from Azure Key Vault
   description: "Retrieve objects from Azure Key Vault"
-  ms.date: 03/24/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

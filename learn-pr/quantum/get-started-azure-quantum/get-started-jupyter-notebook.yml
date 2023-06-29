@@ -8,6 +8,8 @@ metadata:
   author: aviviano
   ms.author: amvivian
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

@@ -4,13 +4,11 @@ title: Enable Continuous Integration with Azure Pipelines
 metadata:
   title: Enable Continuous Integration with Azure Pipelines
   description: "Enable Continuous Integration with Azure Pipelines"
-  ms.date: 06/06/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 45
 content: |
   [!include[](includes/6-enable-continuous-integration-azure-pipelines.md)]
