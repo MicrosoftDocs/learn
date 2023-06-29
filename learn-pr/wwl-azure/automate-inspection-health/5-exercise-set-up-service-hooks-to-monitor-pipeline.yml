@@ -4,11 +4,11 @@ title: Exercise - set up service hooks to monitor the pipeline
 metadata:
   title: Exercise - set up service hooks to monitor the pipeline
   description: "Exercise - set up service hooks to monitor the pipeline"
-  ms.date: 04/28/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/5-exercise-set-up-service-hooks-to-monitor-pipeline.md)]

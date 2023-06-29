@@ -10,6 +10,9 @@ metadata:
   ms.author: antho
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-python
 durationInMinutes: 02
 content: |
   [!include[](includes/1-introduction.md)]

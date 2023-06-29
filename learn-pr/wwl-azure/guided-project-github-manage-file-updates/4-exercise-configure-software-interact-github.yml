@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-github-manage-file-updates.exercise-configure-software-interact-github
+title: Exercise – Configure software to interact with GitHub
+metadata:
+  title: Exercise – Configure software to interact with GitHub
+  description: "Exercise – Configure software to interact with GitHub"
+  ms.date: 06/09/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-configure-software-interact-github.md)]
+interactive: bash

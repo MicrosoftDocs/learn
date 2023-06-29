@@ -7,8 +7,11 @@ metadata:
   ms.date: 07/22/2022
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/2-understand-blazor-hybrid.md)]

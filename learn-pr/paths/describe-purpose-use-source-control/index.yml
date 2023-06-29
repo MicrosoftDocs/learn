@@ -1,0 +1,31 @@
+### YamlMime:LearningPath
+uid: learn.wwl.describe-purpose-use-source-control
+metadata:
+  title: Describe the purpose and use of source control
+  description: Introduction to source control as a concept with practical application in the final module.
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.service: azure-devops
+title: Describe the purpose and use of source control
+prerequisites: |
+  A personal computer running Windows, macOS, or Linux
+summary: |
+  Source control is a critical tool used by developers and devops professionals to manage and maintain code. **Describe the purpose and use of source control** is an introduction to source control. It starts out explaining source control as a concept, then delves into one of the most popular source control platforms around, and finishes with guiding you through creating your first source controlled file and handling updates.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- developer
+products:
+- azure
+- github
+subjects:
+- development-tools
+modules:
+- learn.wwl.explain-control-system-helps-manage-files
+- learn.wwl.describe-how-git-manages-source-control
+- learn.wwl.guided-project-github-manage-file-updates
+trophy:
+  uid: learn.wwl.describe-purpose-use-source-control.trophy

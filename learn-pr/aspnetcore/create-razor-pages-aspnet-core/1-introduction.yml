@@ -6,7 +6,10 @@ metadata:
   ms.date: 08/24/2021
   author: jongalloway
   ms.author: jogallow
+  ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: aspnet-core
 title: Introduction
 durationInMinutes: 3

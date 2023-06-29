@@ -5,6 +5,7 @@ metadata:
   description: This module guides you through implementing resiliency in an ASP.NET Core microservices app in Azure Kubernetes Service.
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 07/12/2020
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
@@ -28,9 +29,7 @@ roles:
   - developer
   - solution-architect
 products:
-  - dotnet
   - aspnet-core
-  - dotnet-core
   - azure
   - azure-container-registry
   - azure-kubernetes-service

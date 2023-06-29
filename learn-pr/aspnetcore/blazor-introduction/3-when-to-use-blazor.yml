@@ -8,8 +8,11 @@ metadata:
   ms.date: 9/29/2021
   author: csharpfritz
   ms.author: jefritz
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 7
 content: |
   [!include[](includes/3-when-to-use-blazor.md)]

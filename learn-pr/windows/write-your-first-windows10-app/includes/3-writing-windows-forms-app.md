@@ -11,17 +11,17 @@ In this unit, we will:
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2NNlQ]
 
 > [!NOTE]
-> Your computer should be set up with Windows 10 and Visual Studio, as described in the Learn module *Introduction to Windows 10 development*.
+> Your computer should be set up with Windows and Visual Studio, as described in the Learn module *Introduction to Windows 10 development*.
 
 ### Windows Forms "Say hello" tutorial
 
 #### Create the project
 
-1. Open Visual Studio and select **File** > **New** > **Project** from the menu. With **Visual C#** selected as the project language, find and select **Windows Forms App (.NET Framework)** from the project options. Change the **Name** to something friendly like **Say hello**, and select **Next** when you're done.
+1. Open Visual Studio and select **File** > **New** > **Project** from the menu. With **C#** selected as the project language, find and select **Windows Forms App** from the project options. Change the **Name** to something friendly like **Say hello**, and select **Next** when you're done.
 
     :::image type="content" source="../media/3-create-windows-forms-app.png" alt-text="Screenshot that shows the Configure your new project window for a Windows Forms App with the Next button selected.":::
 
-2. Select your **.NET Framework** version, and then select **Create**.
+2. Select your **.NET** version, and then select **Create**.
 
 3. By default, the **Toolbox**, **Solution Explorer**, and **Properties** panes are open. If they aren't, open them from the **View** menu. Expand the **Common Controls** list in the **Toolbox**.
 
@@ -39,9 +39,12 @@ In this unit, we will:
 
     ![Screenshot that shows the Text property set in the Properties window.](../media/windows-forms-button-properties2-a.png)
 
-3. We need to attach an event to the button. You can attach the event by selecting the button in Design view or by selecting the event icon in **Properties**, and then select the Enter key or select the **Click** event entry. Whichever method you choose, Visual Studio automatically adds the outline code for the event **SayHelloButton_Click** to your .cs file, and then opens that file. Take a quick look, and then go back to Design view.
+3. We need to attach an event to the button. You can attach the event by selecting the button in Design view or by selecting the event icon in **Properties**, and then select the Enter key or select the **Click** event entry. Whichever method you choose, Visual Studio automatically adds the outline code for the event **SayHelloButton_Click** to your Form1.cs file and opens the file. Take a quick look, and then go back to Design view.
 
     ![Screenshot that shows the Events pane selected in the Properties window, and the Click event in a red box.](../media/windows-forms-button-events-a.png)
+
+    > [!NOTE]
+    > If you accidentally closed the Design view, you can open it again by simply double-clicking **Form1.cs** in the **Solution Explorer**. Opening a Windows Forms form in Design view is the default action in Visual Studio.
 
 4. Select the text box in Design view to open its properties. If you used the event list method to add the button event, select the wrench and document icon in **Properties**. Leave the **Name** entry as **textBox1**. Select the plus sign next to **Font**, and then change the font **Size** to **24**. Next, scroll down the properties a bit and change the **Text** property to **Hello there!** and **TextAlign** to **Center**.
 
@@ -57,7 +60,7 @@ In this unit, we will:
     {
         public Form1()
         {
-                InitializeComponent();
+            InitializeComponent();
         }
 
         private void SayHelloButton_Click(object sender, EventArgs e)
@@ -67,12 +70,12 @@ In this unit, we will:
     }
     ```
 
-2. To get random text colors to appear, you need to add global variable **Random rand**. You need to initialize it in the **Form1** constructor method and enter a method to fill a short byte array with random numbers. Copy and paste, or type in, these lines from the following code:
+2. To get random text colors to appear, you need to add class-level variable **Random rand**. You need to initialize it in the **Form1** constructor method and enter a method to fill a short byte array with random numbers. Copy and paste, or type in, the following lines of code:
 
     ```csharp
     public partial class Form1 : Form
     {
-        Random rand;
+        private Random rand;
 
         public Form1()
         {
@@ -82,7 +85,7 @@ In this unit, we will:
 
         private byte[] GetRandomBytes(int n)
         {
-            //  Fill an array of bytes of length "n" with random numbers.
+            // Fill an array of bytes of length "n" with random numbers.
             var randomBytes = new byte[n];
             rand.NextBytes(randomBytes);
             return randomBytes;
@@ -100,14 +103,13 @@ In this unit, we will:
     ```csharp
         private void SayHelloButton_Click(object sender, EventArgs e)
         {
-
-            //  Declare an array of bytes and fill it with random numbers
+            // Declare an array of bytes and fill it with random numbers
             byte[] rgb = GetRandomBytes(3);
             textBox1.ForeColor = Color.FromArgb(255, rgb[0], rgb[1], rgb[2]);
         }
     ```
 
-4. Take a second or two to look over your code. If anything is underlined in red, something isn't right. It could be a misspelled word or a piece of code where it shouldn't be.
+4. Take a moment to review your code. If anything is underlined in red, something isn't right. It could be a misspelled word or a bit of misplaced code.
 
 #### Run
 

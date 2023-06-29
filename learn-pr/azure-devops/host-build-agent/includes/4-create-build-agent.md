@@ -83,7 +83,6 @@ To do that, you create a personal access token. A personal access token, or PAT,
 1. Enter a name for your token, such as *Build agent*.
 1. Under **Scopes**, select **Show all scopes** at the bottom.
 1. Look for **Agent Pools**, and then select **Read & manage**.
-1. Look for **Build**, and then select **Read & execute**.
 1. Select **Create**.
 1. Copy the token to a safe place.
 
@@ -116,7 +115,7 @@ The ability to connect to your build agent enables you to configure it with the 
     echo $IPADDRESS
     ```
 
-1. Create an SSH connection to your VM. In place of $IPADDRESS, enter the IP address you received in the previous step . At the prompt, enter **yes** to continue connecting.
+1. Create an SSH connection to your VM. In place of $IPADDRESS, enter the IP address you received in the previous step. At the prompt, enter **yes** to continue connecting.
 
     ```bash
     ssh azureuser@$IPADDRESS
@@ -155,7 +154,7 @@ Let's start by updating the Ubuntu package manager, named *apt*. This action fet
 1. To download a shell script named *build-tools.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-tools.sh > build-tools.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/main/.agent-tools/build-tools.sh > build-tools.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.
@@ -197,7 +196,7 @@ The documentation explains how to manually set up [self-hosted Linux agents](/az
 1. To download a shell script named *build-agent.sh* from GitHub, run the following `curl` command:
 
     ```bash
-    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-azure-pipelines-build-agent/main/build-agent.sh > build-agent.sh
+    curl https://raw.githubusercontent.com/MicrosoftDocs/mslearn-tailspin-spacegame-web/main/.agent-tools/build-agent.sh > build-agent.sh
     ```
 
 1. Print the script to the terminal so that you can examine its contents.

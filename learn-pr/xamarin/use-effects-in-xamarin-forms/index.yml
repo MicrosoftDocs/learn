@@ -19,6 +19,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/use-effects-in-xamarin-forms-badge.svg
+hidden: true
 levels:
 - advanced
 roles:

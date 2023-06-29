@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: devdivchpfy22, engagement-fy23
   ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Guided project - Automate Node.js deployments with Azure Pipelines
 summary: Implement CI/CD pipeline for Node.js applications.
 abstract: |
