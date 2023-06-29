@@ -9,6 +9,8 @@ metadata:
   ms.author: gmalc
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 azureSandbox: false
 labModal: false
 durationInMinutes: 30

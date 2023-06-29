@@ -9,6 +9,8 @@ metadata:
   ms.author: bspendolini
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 30
 interactive: powershell
 sandbox: true
