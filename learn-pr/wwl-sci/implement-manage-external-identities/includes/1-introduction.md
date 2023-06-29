@@ -1,3 +1,4 @@
+
 Being able to invite external users to use your Azure resources is a great benefit, but it needs to be done in a secure way. This module is designed to help you understand how to enable secure B2B collaboration scenarios with users outside your organization, including managing external collaboration settings in Azure Active Directory (Azure AD), part of Microsoft Entra and inviting users individually or in bulk. You will also learn about managing external user accounts and configuring identity providers.
 
 ## Learning objectives
