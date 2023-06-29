@@ -28,9 +28,7 @@ roles:
 - administrator
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 subjects:
 - cloud-computing
 units:
