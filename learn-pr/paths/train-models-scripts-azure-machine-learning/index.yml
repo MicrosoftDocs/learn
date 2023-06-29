@@ -25,5 +25,6 @@ subjects:
 modules:
 - learn.wwl.run-training-script-command-job-azure-machine-learning
 - learn.wwl.train-models-training-mlflow-jobs
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 trophy:
   uid: learn.wwl.train-models-scripts-azure-machine-learning.trophy

@@ -9,7 +9,7 @@ metadata:
   author: justinyoo
   ms.author: juyoo
   manager: jmartens
-  ms.topic: interactive-tutorial  
+  ms.topic: interactive-tutorial
   ms.custom: team=cloud_advocates
   ms.contributors: juyoo-01192022
   ms.service: api-management
@@ -28,8 +28,6 @@ products:
 - azure
 - azure-api-management
 - aspnet-core
-- dotnet
-- dotnet-core
 units:
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.1-introduction
 - learn.azure.integrate-openapi-enabled-web-api-with-apim-and-visual-studio.2-activate-openapi-to-web-api-using-swashbuckle

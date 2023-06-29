@@ -7,8 +7,9 @@ metadata:
   ms.date: 03/15/2023  
   author: amthomas46
   ms.author: antho
-  ms.topic: interactive-tutorial 
+  ms.topic: module-standard-task-based 
   ms.service: azure-functions
+  manager: mijacobs
 title: Deploy serverless APIs with Azure Functions, Logic Apps, and Azure SQL Database
 summary: In the language of your choice (Node.js, Python, or .NET), learn how to deploy an Azure Function that adds real-time data to an Azure SQL Database and triggers an Azure Logic App for notifications, all with GitHub Actions for CI/CD.
 abstract: | 
