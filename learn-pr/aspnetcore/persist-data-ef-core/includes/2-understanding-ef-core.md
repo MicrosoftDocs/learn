@@ -1,4 +1,4 @@
-Entity Framework Core is an **object-relational mapper**. ORMs provide a layer between the domain model you implement in code and the database. EF Core is a data access API that allows you to interact with the database using .NET POCOs (**P**lain **O**ld **C**LR **O**bjects) and strongly typed LINQ. This allows you to spend less time translating requests to and from the database and writing SQL, giving you more time to focus on important business logic.
+Entity Framework (EF) Core is an *object-relational mapper (ORM)*. ORMs provide a layer between the domain model you implement in code and the database. EF Core is a data access API that allows you to interact with the database using .NET POCOs (**P**lain **O**ld **C**LR **O**bjects) and strongly typed LINQ. This allows you to spend less time translating requests to and from the database and writing SQL, giving you more time to focus on important business logic.
 
 With EF Core, the database is abstracted behind .NET POCOs. As a result, you can focus on your code, and EF Core handles direct interaction with the underlying database.
 
@@ -16,11 +16,13 @@ With EF Core, you can:
 
 ## Review EF Core architecture
 
-The following diagram depicts the architecture behind EF Core.
+The following diagram depicts the architecture of EF Core.
 
 ![Diagram of EF Core Architecture.](../media/ef-core-architecture.png)
 
-The [DbContext](/ef/core/dbcontext-configuration) is a special class that represents a unit of work and provides methods to configure options, connection strings, logging, and the model used to map your domain to the database. Classes deriving from `DbContext`:
+The [DbContext](/ef/core/dbcontext-configuration) is a special class that represents a unit of work. It `DbContext` provides methods that you can use to configure options, connection strings, logging, and the model that's used to map your domain to the database. 
+
+Classes that derive from `DbContext`:
 
 - Represent an active session with the database.
 - Save and query instances of entities.
@@ -38,15 +40,15 @@ The Database Provider:
 
 EF Core provides two primary ways of keeping your EF Core model and database schema in sync. To choose between the two, decide whether your EF Core model or the database schema is the *source of truth*.
 
-### Migrations (Model as the source of truth)
+### Migrations (model as the source of truth)
 
-In real world projects, data models change as app features get implemented. As new entities are added and removed, the database schemas need to be changed accordingly. EF Core migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
+In real-world projects, data models change as app features are implemented. As new entities are added and removed, the database schemas need to be changed accordingly. EF Core migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
 
 When a data model change is introduced, the developer uses EF Core tools to add a corresponding migration. EF Core compares the current model against a snapshot of the old model to determine the differences. C# code to implement the changes is generated. The C# files can be modified for custom behaviors or to seed data, and are tracked in your project's source control like any other source file.
 
 Once a new migration has been generated, it can be applied to a database in various ways. EF Core records all applied migrations in a special history table. The history table keeps a record of which migrations have been applied.
 
-### Reverse engineering (Database as the source of truth)
+### Reverse engineering (database as the source of truth)
 
 Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases that are managed by a DBA.
 
