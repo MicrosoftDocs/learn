@@ -1,7 +1,7 @@
 
 Working in the cloud is typically more cost-efficient than traditional IT. Watch this video to learn more about cloud economics, and find out what makes the cloud so cost-efficient:
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14LBc]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14LBc]
 
 ## Key takeaways
 
@@ -20,4 +20,4 @@ For an example of a company that reaped the cost benefits of the cloud, consider
  -  Azure enabled real-time insights into customer data, an improvement from four-hour “snapshots” under the old system. “As a result, we can answer much more sophisticated questions about our clients and the data they continuously feed us.”
  -  Homepoint's pace of new digital releases increased by up to 40 percent.
 
-[Read more about Homepoint here](https://customers.microsoft.com/en-us/story/1427700939507289839-confluent-homepoint-customer-success-story-azure-us).
+[Read more about Homepoint here](https://customers.microsoft.com/story/1427700939507289839-confluent-homepoint-customer-success-story-azure-us).
