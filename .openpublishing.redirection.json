@@ -23050,7 +23050,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/index.md",
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/",
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
   },
@@ -23120,67 +23120,7 @@
     "redirect_document_id": false
   },
   {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/1-introduction.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/2-problem-formulation.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/3-precedence-constraint.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/4-operation-once-constraint.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/5-no-overlap-constraint.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/6-minimize-makespan.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/7-combine-terms.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/8-solve-problem.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/9-validate-solution.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/10-tune-parameters.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/11-knowledge-check.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/includes/12-summary.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/index.md",
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/",
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
   },
@@ -23223,41 +23163,6 @@
     "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/index.yml",
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
-  },
-    {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/1-introduction.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/2-what-is-quantum-inspired-optimization.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/3-optimization-basics.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/4-how-quantum-inspired-optimization-solves-problems.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/5-apply-quantum-inspired-optimization-real-world.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/6-knowledge-check.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  },
-  {
-    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/includes/7-summary.md",
-    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
-    "redirect_document_id": false
-  } 
+  }
   ]
 }
