@@ -9,6 +9,8 @@ metadata:
   ms.author: jeffko
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-work-cosmos-db-dotnet.md)]

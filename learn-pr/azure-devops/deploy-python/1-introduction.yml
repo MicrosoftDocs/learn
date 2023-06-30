@@ -9,6 +9,8 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
