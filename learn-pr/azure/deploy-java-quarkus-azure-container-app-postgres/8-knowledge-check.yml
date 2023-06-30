@@ -9,7 +9,9 @@ metadata:
   ms.author: antoniomanug
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=devdiv
+  ms.custom:
+    - team=devdiv
+    - devx-track-extended-java
   ms.contributors: antoniomanug
 durationInMinutes: 3
 quiz:

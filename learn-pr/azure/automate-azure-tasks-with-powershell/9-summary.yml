@@ -8,6 +8,8 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

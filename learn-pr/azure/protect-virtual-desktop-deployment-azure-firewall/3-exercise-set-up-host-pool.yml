@@ -9,6 +9,8 @@ metadata:
   author: vhorne
   ms.author: victorh
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |

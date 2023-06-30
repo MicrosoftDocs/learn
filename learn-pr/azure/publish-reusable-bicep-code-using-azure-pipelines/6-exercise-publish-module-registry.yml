@@ -5,10 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Publish a module to a registry
   description: Create an Azure Pipelines pipeline to publish a module to a Bicep registry and apply versioning.
-  ms.date: 04/10/2023
+  ms.date: 06/29/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 5
