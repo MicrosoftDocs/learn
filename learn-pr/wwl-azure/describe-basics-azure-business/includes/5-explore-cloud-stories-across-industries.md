@@ -1,8 +1,8 @@
 
 We’ve gathered stories here about how businesses across the world, in diverse industries, have adopted Microsoft Azure to improve, accelerate, and transform. Feel free to read the stories that seem most relevant to your business. You may follow the links to learn more or visit the Microsoft Customer Stories site for even more stories.
 
-> [!TIP]
-> Case studies and success stories update all the time. If you want to see more stories (or one of the links doesn’t work), head to the [Customer Stories](https://customers.microsoft.com/) site and select **browse all stories** to search for real-world examples across industries, languages, products, and more.
+> [!NOTE]
+> Case studies and success stories update all the time. If you want to see more stories (or one of the links doesn’t work), head to the [Customer Stories](https://customers.microsoft.com?azure-portal=true) site and select **browse all stories** to search for real-world examples across industries, languages, products, and more.
 
 Some of these stories and the pages they link to contain somewhat technical details. You may want to return to those stories after you’ve learned more about Azure and are more prepared to understand them, or share them with your IT team who can explore the greater technical detail.
 
