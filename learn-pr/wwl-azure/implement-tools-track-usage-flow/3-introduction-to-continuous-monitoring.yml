@@ -4,13 +4,11 @@ title: Introduction to continuous monitoring
 metadata:
   title: Introduction to continuous monitoring
   description: "Introduction to continuous monitoring"
-  ms.date: 05/31/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/3-introduction-to-continuous-monitoring.md)]

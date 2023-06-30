@@ -3,11 +3,11 @@ uid: learn.wwl.create-azure-resources-using-azure-resource-manager-templates
 metadata:
   title: Create Azure resources using Azure Resource Manager templates
   description: "Create Azure resources using Azure Resource Manager templates"
-  ms.date: 05/17/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.service: azure-resource-manager
+  ms.prod: azure
 title: Create Azure resources using Azure Resource Manager templates
 summary: This module explores Azure Resource Manager templates and their components and details dependencies and modularized templates with secrets.
 abstract: |
