@@ -1,7 +1,5 @@
 In this module, explore creating a Node.js API for a bank and learn how Azure and Azure DevOps support Node.js applications.
 
-This module uses a Bank API that's part of the Azure Developer Advocates' [Web Development for Beginners course](https://microsoft.github.io/Web-Dev-For-Beginners/#/?id=web-development-for-beginners-a-curriculum). If you'd like to learn more about the Bank API code, see the [Build a Bank project](https://github.com/microsoft/Web-Dev-For-Beginners/tree/main/7-bank-project) that's part of the course.
-
 ## Check for available parallel jobs
 
 This project uses a Microsoft-hosted agent and requires access to a parallel job. To check if your organization has a parallel job available:

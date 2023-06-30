@@ -136,9 +136,3 @@ You can learn more about the flexibility of this task in the [Azure Web App task
     :::image type="content" source="../media/5-hello-world.png" alt-text="Screenshot of the Node.js application running in a web browser.":::
 
 You now have a complete CI/CD pipeline that you can extend. You can repeat the steps you performed here to deploy one of your own Node.js projects to Azure.
-
-## Check your work
-
-1. Test the Bank API by sending a GET request. You can do this test in your browser by visiting the URL `https://your-app-service-site.azurewebsites.net/api/accounts/test`. This query returns the account information and transactions for a test user.
-
-    :::image type="content" source="../media/5-json-return-query.png" alt-text="Screenshot of the Node.js application running in a web browser and returning a query.":::
