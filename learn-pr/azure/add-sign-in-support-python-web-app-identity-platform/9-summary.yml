@@ -10,6 +10,8 @@ metadata:
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]

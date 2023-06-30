@@ -9,7 +9,9 @@ metadata:
   ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: yoterada-12142020
 durationInMinutes: 2
 content: |

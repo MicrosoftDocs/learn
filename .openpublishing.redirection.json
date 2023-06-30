@@ -19061,6 +19061,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/08-exercise-debug-search-issues.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/maintain-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false

@@ -33,9 +33,7 @@ roles:
   - devops-engineer
   - solution-architect
 products:
-  - dotnet
   - aspnet-core
-  - dotnet-core
   - azure
   - azure-container-registry
   - azure-kubernetes-service
