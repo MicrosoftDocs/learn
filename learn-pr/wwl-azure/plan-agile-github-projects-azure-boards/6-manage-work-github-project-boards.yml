@@ -4,11 +4,10 @@ title: Manage work with GitHub Project boards
 metadata:
   title: Manage work with GitHub Project boards
   description: "Manage work with GitHub Project boards"
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: azure
   ms.service: azure-devops
 durationInMinutes: 2
 content: |
