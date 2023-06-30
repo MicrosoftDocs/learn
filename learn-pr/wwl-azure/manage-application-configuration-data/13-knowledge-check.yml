@@ -4,13 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure-devops
-  zone_pivot_groups: azure-interface
+durationInMinutes: 5
 content: |
   [!include[](includes/13-knowledge-check.md)]
 quiz:
@@ -49,4 +48,3 @@ quiz:
     - content: "Secrets management."
       isCorrect: false
       explanation: "Incorrect. Azure Key Vault helps with Secrets management, Key management, Certificate management, and store secrets backed by hardware security modules."
-interactive: bash

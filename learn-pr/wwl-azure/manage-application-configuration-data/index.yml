@@ -3,12 +3,11 @@ uid: learn.wwl.manage-application-configuration-data
 metadata:
   title: Manage application configuration data
   description: "Manage application configuration data"
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure-devops
 title: Manage application configuration data
 summary: This module explores ways to rethink application configuration data and the separation of concerns method. Explore Azure App Configuration, details Key-value pairs, App Configuration feature management, and integrate Azure Key Vault with Azure Pipelines.
 abstract: |

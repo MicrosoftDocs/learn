@@ -4,12 +4,11 @@ title: Examine Key-value pairs
 metadata:
   title: Examine Key-value pairs
   description: "Examine Key-value pairs"
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure-devops
 durationInMinutes: 4
 content: |
   [!include[](includes/6-examine-key-value-pairs.md)]
