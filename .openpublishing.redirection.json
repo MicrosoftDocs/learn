@@ -23148,6 +23148,12 @@
     "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/what-is-azure-machine-learning.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/3-what-is-azure-machine-learning",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-multiple-stage-builds.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds",
+    "redirect_document_id": false
   }
+    
   ]
 }
