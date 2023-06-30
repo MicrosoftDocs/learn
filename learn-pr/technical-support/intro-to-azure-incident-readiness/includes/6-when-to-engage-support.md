@@ -27,7 +27,7 @@ In either case, engineers will be engaged in resolving the issue and your Custom
     - Regular updates posted to Azure Service Health
     - Solution posted to Azure Service Health
 
-![Illustration of the major incident process.](../media/major-incident-process.png)
+[![Illustration of the major incident process.](../media/major-incident-process-inline.png)](../media/major-incident-process-expanded.png#lightbox)
 
 Please ensure that all "case creators" have at least the Service Support admin role.
 
@@ -85,7 +85,7 @@ Customers can view all the support cases including Azure, Microsoft 365 and Dyna
 
 [![Screenshot of Azure Action Center.](../media/action-center-inline.png)](../media/action-center-expanded.png#lightbox)
 
-![Screenshot of Manage Support Requests via Services Hub.](../media/manage-support-requests.png)]
+![Screenshot of Manage Support Requests via Services Hub.](../media/manage-support-requests.png)
 
 ### Cloud Support Case Visibility dashboard
 
