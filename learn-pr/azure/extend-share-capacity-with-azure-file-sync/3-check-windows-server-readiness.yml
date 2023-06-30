@@ -9,6 +9,8 @@ metadata:
   ms.author: kendownie
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurepowershell
 durationInMinutes: 4
 content: |
   [!include[](includes/3-check-windows-server-readiness.md)]
