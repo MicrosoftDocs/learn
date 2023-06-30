@@ -3,11 +3,10 @@ uid: learn.wwl.software-composition-analysis
 metadata:
   title: Software Composition Analysis
   description: "Software Composition Analysis"
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: azure
   ms.service: azure-devops
 title: Software Composition Analysis
 summary: This module explains Composition Analysis, how to inspect and validate code bases for compliance, integration with security tools, and integration with Azure Pipelines.

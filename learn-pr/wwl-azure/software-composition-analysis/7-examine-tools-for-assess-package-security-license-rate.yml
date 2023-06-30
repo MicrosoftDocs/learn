@@ -4,11 +4,10 @@ title: Examine tools for assess package security and license rate
 metadata:
   title: Examine tools for assess package security and license rate
   description: "Examine tools for assess package security and license rate"
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: azure
   ms.service: azure-devops
 durationInMinutes: 2
 content: |
