@@ -1,24 +1,29 @@
-## Major Incident Process
+## Major incident process
 
 Whenever you notice an issue, whether that is something your internal monitoring has picked up or your users are reporting, the first step you should always take is to use the Azure Admin Portal to check the Service Health Blade to see if there's an active Service Incident for your subscription(s).
 
 If there's an active incident and it matches the issue you're experiencing, you shouldn't open the support case. Customers can obtain all the latest information from service health about the incident and next action plan. Customer should only engage support if the issue they're  experiencing isn't already represented in Service Health or  have read the updates from engineering but require support to respond to the incident (for example, to implement their failover plans)., Customers should open a Support Case from the Admin Portal with a reference to the Service Health ID number for that Service Incident.
 
-If Customers don't see any active incidents showing in the Service Health Blade -OR- the description of incidents showing don't match the issues they're experiencing, customer must open a Support Case, but there would be no Service Health ID number to reference.
+If customers don't see any active incidents showing in the Service Health Blade -OR- the description of incidents showing don't match the issues they're experiencing, customer must open a Support Case, but there would be no Service Health ID number to reference.
 
 In either case, engineers will be engaged in resolving the issue and your Customer Success Account Manager & Incident Manager (for Premier/Unified Support Customer) will be informed once you open a support case so they can assist as needed. Keep checking the Service Health for updates throughout the life of the incident as new information including updates, changes, and solutions will all be posted to the Service Health Dashboard.
 
-### Steps in the Major Incident Process
+### Steps in the major incident process
 
-- **Check Azure Service Health**
+1. **Check Azure Service Health**
+
     - If there's no mention of the incident, open a new support case
     - If the incident is mentioned, compare the symptoms
     - If your symptoms don't match, open a support case
     - If the symptoms match, but engineering assistance is needed (i.e., failover activities) open a support case referencing the Service Health ID
-- **Support Case is logged**
+
+1. **Support Case is logged**
+
     - Customer Service & Support (CSS) activated to troubleshoot the issue 
     - Critical Situation Management and Escalation Team (CMET), Incident Manager (IM) & Customer Success Account Manager (CSAM) are notified (applicable to only Premier/Unified support customers)
-- **Engineering Teams engaged**
+
+1. **Engineering Teams engaged**
+
     - Regular updates posted to Azure Service Health
     - Solution posted to Azure Service Health
 
@@ -76,7 +81,7 @@ Here are two examples of the Initial Communications and the Update Communication
 
 ### Support request status in the Services Hub
 
-Customers can view all the support cases including Azure, M365 and D365 along with on-premises support requests centrally at Service Hub. It provides more information at-a-glance for each Support Request including status, and specifications. This information is available without the need to click through or expand the selection for a more intuitive and simplified experience.
+Customers can view all the support cases including Azure, Microsoft 365 and Dynamics 365 along with on-premises support requests centrally at Service Hub. It provides more information at-a-glance for each Support Request including status, and specifications. This information is available without the need to click through or expand the selection for a more intuitive and simplified experience.
 
 [![Screenshot of Azure Action Center.](../media/action-center-inline.png)](../media/action-center-expanded.png#lightbox)
 

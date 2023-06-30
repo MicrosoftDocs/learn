@@ -4,14 +4,14 @@ Congratulations on completing the "Introduction to Azure Incident Readiness" mod
 
 Note any additional information that may be beneficial to this content such as links, reference material, and so on.
 
--[Introduction to Azure Service Health - Training ](/training/modules/intro-to-azure-service-health/)
+- [Introduction to Azure Service Health - Training ](/training/modules/intro-to-azure-service-health/)
 
--[Improve incident response with alerting on Azure - Training ](/training/modules/incident-response-with-alerting-on-azure/?source=recommendations)
+- [Improve incident response with alerting on Azure - Training ](/training/modules/incident-response-with-alerting-on-azure/?source=recommendations)
 
--[Is Azure up? Outages, resilience, and Azure Service Health alerts](https://youtu.be/7bDR7xjrN2w)
+- [Is Azure up? Outages, resilience, and Azure Service Health alerts](https://youtu.be/7bDR7xjrN2w)
 
--[Microsoft Azure incident readiness](/services-hub/unified/health/ir-azure)
+- [Microsoft Azure incident readiness](/services-hub/unified/health/ir-azure)
 
--[Build great solutions with the Microsoft Azure Well-Architected Framework - Training ](/training/paths/azure-well-architected-framework/)
+- [Build great solutions with the Microsoft Azure Well-Architected Framework - Training ](/training/paths/azure-well-architected-framework/)
 
--[Services Hub Support for Unified Support ](/services-hub/unified/support/)
+- [Services Hub Support for Unified Support ](/services-hub/unified/support/)

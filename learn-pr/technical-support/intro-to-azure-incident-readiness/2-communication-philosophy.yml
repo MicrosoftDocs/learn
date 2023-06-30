@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.intro-to-azure-incident-readiness.communication-philosophy
-title: Communication Philosophy
+title: Communication philosophy
 metadata:
-  title: Communication Philosophy
+  title: Communication philosophy
   description: "In this unit, you'll learn about our communication philosophy. Our priority is to promptly notify impacted customers and uphold transparency by sharing incident details."
   ms.date: 6/25/2023
   author: rmcmurray

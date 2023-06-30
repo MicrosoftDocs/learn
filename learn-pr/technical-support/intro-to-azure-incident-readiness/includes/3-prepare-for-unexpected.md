@@ -8,31 +8,25 @@ Unlike our public azure.status.microsoft page, which provides general status inf
 
 Now, let's explore some key features available in Azure Service Health to enhance your incident preparedness:
 
-#### Resource Health Pane (new experience covered) 
+#### Resource Health pane (new experience covered) 
 
 Located within the Service Health blade of the Azure portal, Azure Resource Health assists in diagnosing and resolving service problems that impact your Azure resources. Resources, such as virtual machines, web apps, or SQL databases, are assessed for their health based on signals from different Azure services. If a resource is identified as unhealthy, Resource Health conducts a detailed analysis to determine the root cause of the problem. It also provides information on Microsoft's actions to resolve problems related to incidents and suggests steps you can take to address the issue.
 
-#### Services Issues Pane (new experience covered)
+#### Services Issues pane (new experience covered)
 
 The Services Issues pane displays ongoing service incidents that may impact your resources. It enables you to track when an issue began and identify the affected services and regions. By reviewing the most recent updates, you can gain insights into Azure's efforts to resolve the incident. 
 
-[![Sreenshot of switching Azure Serice Health to Classic View.](../media/azure-service-health-classic-switch-inline.png)](../media/azure-service-health-classic-switch-expanded.png#lightbox)
+[![Screenshot of switching Azure Serice Health to Classic View.](../media/azure-service-health-classic-switch-inline.png)](../media/azure-service-health-classic-switch-expanded.png#lightbox)
 
 Key Features of the Services Issues Pane:
 
-**Real-Time Insight**: The service issues dashboard offers real-time visibility into Azure service incidents affecting your subscriptions and tenants. If you're a Tenant Admin, you can see active incidents or advisories relevant to your subscription(s) and tenant(s).
+- **Real-Time Insight**: The service issues dashboard offers real-time visibility into Azure service incidents affecting your subscriptions and tenants. If you're a Tenant Admin, you can see active incidents or advisories relevant to your subscription(s) and tenant(s).
 
-**Resource Impact Assessment**: The Impacted Resource tab in the incident details section shows which resources are confirmed or potentially impacted. Clicking on the resources provides direct access to the Resource Health pane. 
+- **Resource Impact Assessment**: The Impacted Resource tab in the incident details section shows which resources are confirmed or potentially impacted. Clicking on the resources provides direct access to the Resource Health pane. 
 
-**Links and Downloadable Explanations**: Generate a link for the issue to use in your problem management system. You can also download PDF and sometimes CSV files to share comprehensive explanations with stakeholders who don't have access to the Azure Portal. Additionally, you can request a Post Incident Review (PIR) for any issues that have affected your resources, previously known as Root Cause Analyses (RCAs).
+- **Links and Downloadable Explanations**: Generate a link for the issue to use in your problem management system. You can also download PDF and sometimes CSV files to share comprehensive explanations with stakeholders who don't have access to the Azure Portal. Additionally, you can request a Post Incident Review (PIR) for any issues that have affected your resources, previously known as Root Cause Analyses (RCAs).
 
-The following examples show a service incident with impacted resources from both the subscription and tenant scope.
-
-![Screenshot of an Azure Service Health test event.](../media/azure-service-health-test-event.png)
-
-![Screenshot of an Azure Service Health tenant test event.](../media/azure-service-health-tenant-test-event.png)
-
-#### Security Advisories Pane
+#### Security Advisories pane
 
 The Security Advisories pane focuses on urgent security-related information affecting the health of your subscriptions and tenants. It provides insights into platform vulnerabilities, security incidents, and privacy breaches. 
 
@@ -62,7 +56,7 @@ Key Features of the Security Advisories Pane:
 
 In addition to familiarizing yourself with Azure Service Health, another crucial step is to set up Service Health alerts, which will ensure timely notifications and keep you informed about incidents and important information that may impact your workloads. The next section will cover this topic in detail.
 
-### Action #2: Set up Service Health alerts to stay informed.
+### Action #2: Set up Service Health alerts to stay informed
 
 Configuring [service health alert](/azure/service-health/alerts-activity-log-service-notifications-portal) notifications is essential, and the most important call to action, for proactive incident management. Service Health alerts enable you to receive timely notifications through various channels such as email, SMS, webhooks, and more. These alerts provide updates on service incidents, planned maintenance activities, security incidents, and other critical information that may impact your workloads.
 
@@ -74,7 +68,7 @@ Here, you can find [Azure Resource Graph sample queries for Azure Service Health
 
 Service Health tracks different types of health events that may affect your resources, including service issues, planned maintenance, health advisories, and security advisories. When configuring service health alerts, you have the flexibility to choose how and to whom these alerts are sent. You can customize the alerts based on the class of service health notification, affected subscriptions, services, and regions.
 
-#### Class of Service Health Notifications
+#### Class of Service Health notifications
 
 | Service Health Event Type | Description |
 |---|---|
@@ -83,7 +77,7 @@ Service Health tracks different types of health events that may affect your reso
 | **Health advisories** | Changes in Azure services that require your attention. Examples include when you need to take an action, when Azure features are deprecated, upgrade requirements or if you exceed a usage quota. |
 | **Security advisories** | Security related notifications dealing with platform vulnerabilities and security and privacy breaches at the subscription and tenant level, aka security &/or privacy incident. |
 
-We know you need to be notified when there are issues impacting your services, and service health alerts give you the power to choose **HOW** and **TO WHOM** these alerts are sent. The alerts can be configured based on the class of service health notification, subscriptions affected, services affected, and / or regions affected. You can setup alerts to trigger emails, SMS messages, logic apps, functions and more.
+We know you need to be notified when there are issues impacting your services, and service health alerts give you the power to choose **HOW** and **TO WHOM** these alerts are sent. The alerts can be configured based on the class of service health notification, subscriptions affected, services affected, and / or regions affected. You can set up alerts to trigger emails, SMS messages, logic apps, functions and more.
 
 When an alert is triggered, you can define the actions to be taken using action groups. Action groups are collections of notification preferences that determine how and to whom the alerts are sent. 
 
@@ -97,7 +91,7 @@ When an alert is triggered, you can define the actions to be taken using action 
 | Azure app Push notifications | Send notifications to the Azure mobile app. To enable push notifications to the Azure mobile app, provide the For more information about the Azure mobile app, see [Azure mobile app](https://azure.microsoft.com/features/azure-portal/mobile-app/). | In the **Azure account email** field, enter the email address that you use as your account ID when you configure the Azure mobile app. |
 | Voice | Voice notification. | Enter the **Country code** and the **Phone number** for the recipient of the notification. If you can't select your country/region code in the Azure portal, voice notifications aren't supported for your country/region. If your country/region code isn't available, you can vote to have your country/region added at [Share your ideas](https://feedback.azure.com/d365community/idea/e527eaa6-2025-ec11-b6e6-000d3a4f09d0). As a workaround until your country is supported, configure the action group to call a webhook to a third-party voice call provider that supports your country/region.
 
-#### Full List of actions you can trigger
+#### Full list of actions you can trigger
 
 | Action Type | Details |
 |---|---|
@@ -117,7 +111,7 @@ By configuring Service Health alerts and action groups effectively, you can ensu
 >
 > Looking for assistance in what to monitor and which alerts you should configure for what? Look no further than the "[Azure Monitor Baseline Alerts](https://aka.ms/alz/monitor/repo)" solution. It provides comprehensive guidance and code for implementing a baseline of platform alerts as well as service health alert via policies and initiatives in Azure environments, with options for automated or manual deployment. The solution includes predefined policies to automatically create alerts for all service health event types (service issue, planned maintenance, health advisories, & security advisories), action groups, and alert processing rules for various Azure resource types. While the focus is on monitoring Azure Landing Zones (ALZ) architected environments, it also offers guidance for brownfield customers who aren't currently aligned to the ALZ architecture brownfield.
 
-### Action #3: Consider Resource Health alerts or Scheduled Events to inform you of resource-specific issues.
+### Action #3: Consider Resource Health alerts or Scheduled Events to inform you of resource-specific issues
 
 Once you have setup service health alerts, consider also adopting resource health alerts. Azure Resource Health alerts can notify you in near real-time when these resources have a change in their health status, regardless of why. 
 
@@ -129,7 +123,7 @@ You can configure resource health alerts from the Resource Health pane in the Se
 
 You can also create [resource health alerts programmatically](/azure/service-health/resource-health-alert-arm-template-guide) using Azure Resource Manager templates and Azure PowerShell. Creating resource health alerts programmatically allows for you to create and customize alerts in bulk.
 
-#### Scheduled Events for Virtual Machines, Avoiding Impact
+#### Scheduled events for virtual machines, avoiding impact
 
 [Scheduled events](/azure/virtual-machines/linux/scheduled-events) is another great tool where both 'alerts' types above notify people or systems, scheduled events notify the resources themselves. This can give your application time to prepare for virtual machine maintenance or one of our automated service healing events. It provides a signal about an imminent maintenance event (for example, an upcoming reboot) so that your application can know that and then act to limit disruption - for example, by running automation to drop itself out of the pool or otherwise degrade gracefully. Scheduled events are available for all Azure Virtual Machine types including PaaS and IaaS on both Windows and Linux.
 
@@ -137,7 +131,7 @@ You can also create [resource health alerts programmatically](/azure/service-hea
 >
 > Although both resource health alerts and scheduled events are helpful tools, the most important call to action is to configure service health alerts. This is critical to ensure you understand what's happening with your resources, what we're doing about it, and when it's mitigated. 
 
-### Action #4: Increase the security of your investment to protect your environment.
+### Action #4: Increase the security of your investment to protect your environment
 
 Ensure the protection of your data, applications, and other assets in Azure by reviewing and implementing the [Operational Security Best Practices](/azure/security/fundamentals/operational-best-practices). These best practices are derived from the collective knowledge and experience of those who work with the current capabilities and features of the Azure platform. The article is regularly updated to reflect evolving opinions and technologies.
 
@@ -153,7 +147,7 @@ As a starting point, consider these top recommendations for implementation:
 
 - Review and regularly update all global admin user(s) email and phone numbers within your tenant
 
-### Action #5: Increase the resiliency of your key Azure workloads to potentially avoid or minimize impact.
+### Action #5: Increase the resiliency of your key Azure workloads to potentially avoid or minimize impact
 
 To ensure the reliability of your workloads, it is crucial to assess them using the tenets of the Microsoft Azure Well-Architected Framework (WAF) through the [Microsoft Azure Well-Architected Review](/azure/well-architected/resiliency/testing). The WAF also provides recommendations for resiliency testing, including adopting a chaos engineering methodology.
 
@@ -177,4 +171,4 @@ To complement your work with the WAF, consider implementing the following top re
 
 - Utilize the [Service Retirement workbook](/azure/advisor/advisor-how-to-plan-migration-workloads-service-retirement) available in the Azure portal under the Azure Advisor blade. This integrated tool helps you stay informed about any service retirements that may impact your critical workloads, enabling you to effectively plan and execute necessary migrations.
 
-**Please Note**: Customers who have a Premier/Unified Support agreement can utilize the Customer Success team to strategize and implement a Well-Architected Framework assessment (WAF).
+Note that customers who have a Premier/Unified Support agreement can utilize the Customer Success team to strategize and implement a Well-Architected Framework assessment (WAF).
