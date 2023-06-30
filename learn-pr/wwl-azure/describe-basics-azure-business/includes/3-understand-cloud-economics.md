@@ -12,7 +12,7 @@ A traditional, off-cloud IT system entails many **capital expenditures**, such a
 
 Capital expenditures are the costs of physically acquiring and caring for your IT capital. Without the cloud, this equipment sets the limits of what your business’s IT capabilities can do. If you want to expand your capabilities or even just reorganize the system, you’re going to have to acquire new IT capital or modify what you have, which will take time and money.
 
-:::image type="content" source="../media/cloud-model-comparison-f2fb4a4f.png" alt-text="The capital expenditures model focuses on the costs of buying and maintaining IT equipment. The operational expenditures model focuses on the costs of what you do with the cloud":::
+:::image type="content" source="../media/cloud-model-comparison-f2fb4a4f.png" alt-text="An illustration showing the difference between the capital expenditures model and the operational expenditures model.":::
 
 
 With Microsoft Azure, since you’re connecting to cloud equipment over the Internet, you won’t have to worry about capital expenditures anymore. Instead, you can start strategizing around the more flexible **operational expenditures** of doing whatever you can imagine with Azure:

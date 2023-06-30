@@ -4,17 +4,18 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 06/28/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
+  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/6-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What does it mean if a business recently started hosting all of its IT systems in Microsoft Azure."
+  - content: "What does it mean if a business recently started hosting all of its IT systems in Microsoft Azure?"
     choices:
     - content: "The business's IT services are delivered via Microsoft’s orbiting satellites."
       isCorrect: false

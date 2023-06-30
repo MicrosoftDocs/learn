@@ -3,7 +3,7 @@ What is the cloud? What is Microsoft Azure? And what can they do for your busine
 
 Learn all about Azure and the cloud in this video.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RW14vWF]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW14vWF]
 
 ## Key Takeaways
 
