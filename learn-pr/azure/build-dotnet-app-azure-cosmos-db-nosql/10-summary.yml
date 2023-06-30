@@ -7,8 +7,10 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Summarize what you learned in this training module building a .NET application that connects to Azure Cosmos DB for NoSQL.
+
   author: seesharprun
   ms.author: sidandrews
   ms.topic: interactive-tutorial

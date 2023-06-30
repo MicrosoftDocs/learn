@@ -8,7 +8,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 title: Knowledge check
 durationInMinutes: 5
 content: |
@@ -51,5 +53,3 @@ quiz:
     - content: "Over 490 lb, or 92 kg"
       isCorrect: false
       explanation: "Incorrect. 490 lb (92 kg) is how much weight we estimated the three Artemis missions could bring back in total."
-
-

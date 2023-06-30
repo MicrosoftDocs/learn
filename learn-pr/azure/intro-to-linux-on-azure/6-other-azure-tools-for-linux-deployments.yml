@@ -8,6 +8,9 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 11
 content: |

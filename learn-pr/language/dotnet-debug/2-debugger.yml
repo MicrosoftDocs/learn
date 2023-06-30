@@ -9,6 +9,8 @@ metadata:
   ms.manager: markl
   ms.date: 10/28/2020
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
