@@ -9,6 +9,8 @@ metadata:
   ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Create an Azure Kubernetes Service cluster
 sandbox: false
 # interactive: bash
