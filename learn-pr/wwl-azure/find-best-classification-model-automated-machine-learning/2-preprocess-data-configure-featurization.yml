@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 6
 content: |
   [!include[](includes/2-preprocess-data-configure-featurization.md)]

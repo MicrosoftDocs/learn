@@ -9,7 +9,10 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: devdivchpfy22
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-azurecli
+    - devx-track-extended-java
 durationInMinutes: 7
 content: |
   [!include[](includes/3-set-up-environment.md)]
@@ -49,4 +52,3 @@ quiz:
     - content: "Java apps can connect to any Azure database or database service."
       isCorrect: true
       explanation: "There's no limit to the databases or services Java apps can connect to on Azure."
-
