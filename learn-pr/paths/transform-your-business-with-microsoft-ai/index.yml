@@ -3,10 +3,11 @@ uid: learn.wwl.transform-your-business-with-microsoft-ai
 metadata:
   title: Transform your business with Microsoft AI
   description: Transform your business with Microsoft AI
-  ms.date: 06/29/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
+  ms.service: microsoft-365
 title: Transform your business with Microsoft AI
 prerequisites: |
   * Basic understanding of IT concepts.
