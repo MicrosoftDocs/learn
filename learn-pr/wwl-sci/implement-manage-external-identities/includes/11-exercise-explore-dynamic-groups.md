@@ -1,3 +1,4 @@
+
 ## Create a dynamic group with all users as members
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that is assigned the Global administrator or User administrator role in the tenant.

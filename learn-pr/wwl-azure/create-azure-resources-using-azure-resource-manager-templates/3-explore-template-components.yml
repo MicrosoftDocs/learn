@@ -4,13 +4,11 @@ title: Explore template components
 metadata:
   title: Explore template components
   description: "Explore template components"
-  ms.date: 05/17/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-template-components.md)]
