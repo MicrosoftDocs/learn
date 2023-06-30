@@ -8,6 +8,8 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
   ms.prod: learning-azure
 durationInMinutes: 30
 interactive: bash
