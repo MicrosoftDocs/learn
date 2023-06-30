@@ -8,6 +8,10 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+    - devx-track-terraform
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |
