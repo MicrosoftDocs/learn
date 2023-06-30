@@ -24,7 +24,7 @@ Key Features of the Services Issues Pane:
 
 - **Resource Impact Assessment**: The Impacted Resource tab in the incident details section shows which resources are confirmed or potentially impacted. Clicking on the resources provides direct access to the Resource Health pane. 
 
-- **Links and Downloadable Explanations**: Generate a link for the issue to use in your problem management system. You can also download PDF and sometimes CSV files to share comprehensive explanations with stakeholders who don't have access to the Azure Portal. Additionally, you can request a Post Incident Review (PIR) for any issues that have affected your resources, previously known as Root Cause Analyses (RCAs).
+- **Links and Downloadable Explanations**: Generate a link for the issue to use in your problem management system. You can also download PDF and sometimes CSV files to share comprehensive explanations with stakeholders who don't have access to the Azure portal. Additionally, you can request a Post Incident Review (PIR) for any issues that have affected your resources, previously known as Root Cause Analyses (RCAs).
 
 #### Security Advisories pane
 
@@ -46,7 +46,7 @@ Key Features of the Security Advisories Pane:
     | Subscription Admin | Global Admin/Tenant Admin |
     | Service Health Security Reader | Azure Service Health Privacy reader |
 
-- Additionally, you can download explanatory PDF documents to share with stakeholders who don't have direct access to the Azure Portal.
+- Additionally, you can download explanatory PDF documents to share with stakeholders who don't have direct access to the Azure portal.
 
     The following examples show a security incident with impacted resources from both the subscription and tenant scope.
    
@@ -171,4 +171,5 @@ To complement your work with the WAF, consider implementing the following top re
 
 - Utilize the [Service Retirement workbook](/azure/advisor/advisor-how-to-plan-migration-workloads-service-retirement) available in the Azure portal under the Azure Advisor blade. This integrated tool helps you stay informed about any service retirements that may impact your critical workloads, enabling you to effectively plan and execute necessary migrations.
 
-Note that customers who have a Premier/Unified Support agreement can utilize the Customer Success team to strategize and implement a Well-Architected Framework assessment (WAF).
+> [!Note]
+> Customers who have a Premier/Unified Support agreement can utilize the Customer Success team to strategize and implement a Well-Architected Framework assessment (WAF).
