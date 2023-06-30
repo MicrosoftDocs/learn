@@ -8,6 +8,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |

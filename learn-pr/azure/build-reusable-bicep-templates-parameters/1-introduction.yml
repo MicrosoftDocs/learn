@@ -8,10 +8,13 @@ metadata:
     This module describes how you can use Bicep parameters to provide information for your template during each deployment.
     You'll learn about parameter decorators, which make your parameters easy to understand and work with.
     You'll also learn about the different ways that you can provide parameter values and how to protect these values when you're working with secure information.
+
   ms.date: 01/03/2023
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 durationInMinutes: 1
 content: |

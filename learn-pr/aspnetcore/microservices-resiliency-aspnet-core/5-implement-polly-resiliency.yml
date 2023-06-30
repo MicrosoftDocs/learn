@@ -9,6 +9,8 @@ metadata:
   ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
 title: Exercise - Implement code-based resiliency
 durationInMinutes: 15
 content: |

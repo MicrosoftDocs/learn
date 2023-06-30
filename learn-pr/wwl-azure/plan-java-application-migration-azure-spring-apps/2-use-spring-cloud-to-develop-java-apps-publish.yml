@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

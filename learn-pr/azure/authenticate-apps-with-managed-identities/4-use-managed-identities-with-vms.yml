@@ -7,6 +7,8 @@ metadata:
   author: barclayn
   ms.author: barclayn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
   ms.prod: learning-azure
 title: Use managed identities with Azure virtual machines
 durationInMinutes: 10
