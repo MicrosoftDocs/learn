@@ -1,3 +1,4 @@
+
 ## Add guest users to the directory
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as a user who is assigned a limited administrator directory role or the Guest Inviter role.

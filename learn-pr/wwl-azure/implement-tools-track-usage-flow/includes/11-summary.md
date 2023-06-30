@@ -1,3 +1,4 @@
+
 This module introduced you to continuous feedback practices and tools to track usage and flow, such as Azure Logs Analytics, Kusto Query Language (KQL), and Application Insights.
 
 You learned how to describe the benefits and usage of:
