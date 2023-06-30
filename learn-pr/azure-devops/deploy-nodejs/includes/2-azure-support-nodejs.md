@@ -1,4 +1,4 @@
-In this module, explore creating a Node.js API for a bank and learn how Azure and Azure DevOps support Node.js applications.
+In this module, learn how Azure and Azure DevOps support Node.js applications.
 
 ## Check for available parallel jobs
 
