@@ -1,3 +1,4 @@
+
 ## Invite guest users in bulk
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that is a User administrator in the organization.

@@ -4,10 +4,11 @@ title: Share acquired knowledge within development teams
 metadata:
   title: Share acquired knowledge within development teams
   description: "Share acquired knowledge within development teams"
-  ms.date: 06/07/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/2-share-acquired-development-teams.md)]
