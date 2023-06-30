@@ -18,7 +18,7 @@ Once the binaries are built for your app to support Arm64, you’ll want to test
 
     :::image type="content" source="../media/azure-portal-create-a-virtual-machine-basics-see-all-images.png" alt-text="The See all images link is highlighted beneath the Image field.":::
 
-1. On the **Marketplace** screen, search for `Microsoft Windows 11 on Arm`. In the search results, locate the **Microsoft WIndows 11 Preview arm64** item, expand the **Select** drop-down and choose **Windows 11 Professional - Arm64**.
+1. On the **Marketplace** screen, search for `Microsoft Windows 11 on Arm`. In the search results, locate the **Microsoft Windows 11 Preview arm64** item, expand the **Select** drop-down and choose **Windows 11 Professional - Arm64**.
 
     :::image type="content" source="../media/azure-portal-marketplace-windows-11-on-arm.png" alt-text="The Virtual machines Select an image Marketplace screen displays with the search bar populated with the text Microsoft Windows 11 on Arm and the Microsoft Windows 11 Preview arm64 item highlighted from the search results.":::
 
@@ -26,7 +26,7 @@ Once the binaries are built for your app to support Arm64, you’ll want to test
 
     :::image type="content" source="../media/azure-portal-create-a-virtual-machine-basics-size-admin-licensing.png" alt-text="The Azure portal Create a virtual machine screen displays with the Basics tab selected and the Size drop-down list populated with the Standard_D2ps_v5 item and the Administrator account fields populated. The Licensing checkbox is enabled and the Review + create button is highlighted.":::
 
-1. Wait for the deployment to complete, then open the Virtual machine resource in the Azure Portal.
+1. Wait for the deployment to complete, then open the Virtual machine resource in the Azure portal.
 
 1. On the Virtual machine resource screen, select the **Connect** button.
 
