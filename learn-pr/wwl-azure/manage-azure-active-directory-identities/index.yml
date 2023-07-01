@@ -32,7 +32,7 @@ products:
 - azure-powershell
 - mem
 - mem-configuration-manager
-- mem-intune
+- intune
 - active-directory
 - azure-active-directory-connect
 units:
