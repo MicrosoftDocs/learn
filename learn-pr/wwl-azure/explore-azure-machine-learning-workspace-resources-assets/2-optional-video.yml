@@ -8,6 +8,7 @@ metadata:
   description: "Optional video to explore Azure Machine Learning workspace"
   ms.date: 7/1/2023
   ms.author: madiepev
+  author: madiepev
   ms.topic: interactive-tutorial
   ms.prod: azure-machine-learning
 durationInMinutes: 25
