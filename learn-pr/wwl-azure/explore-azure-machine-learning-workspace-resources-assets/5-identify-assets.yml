@@ -11,4 +11,4 @@ metadata:
   ms.service: machine-learning
 durationInMinutes: 7
 content: |
-  [!include[](includes/4-identify-assets.md)]
+  [!include[](includes/5-identify-assets.md)]
