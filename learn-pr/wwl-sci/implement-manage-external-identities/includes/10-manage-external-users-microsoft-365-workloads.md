@@ -1,3 +1,4 @@
+
 :::image type="content" source="../media/admin-center-guest-users-8f8dc635.png" alt-text="Screenshot of the Microsoft 365 admin center, opened to the guest users page.":::
 
 
