@@ -1,3 +1,4 @@
+
 ## Adopt container modularity
 
 Try to avoid creating overly complex container images that couple together several applications.
