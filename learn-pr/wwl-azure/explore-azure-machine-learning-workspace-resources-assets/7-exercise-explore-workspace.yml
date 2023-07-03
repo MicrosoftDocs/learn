@@ -11,4 +11,4 @@ metadata:
   ms.service: machine-learning
 durationInMinutes: 10
 content: |
-  [!include[](includes/6-exercise-explore-workspace.md)]
+  [!include[](includes/7-exercise-explore-workspace.md)]
