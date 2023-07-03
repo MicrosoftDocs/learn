@@ -1,3 +1,4 @@
+
 Two crucial areas of the Secure DevOps pipeline are Package management and Open-Source Software OSS components.
 
 ## Package management
@@ -9,7 +10,7 @@ Using binary package management, a development team can create a local cache of 
 In Azure DevOps, **Azure Artifacts** is an integral part of the component workflow for organizing and sharing access to your packages. Azure Artifacts allows you to:
 
  -  Keep your artifacts organized. Share code easily by storing Apache Maven, npm, and NuGet packages together. You can store packages using Universal Packages, eliminating keeping binaries in Git.
- -  Protect your packages. Keep every public source package you use (including packages from npmjs and NuGet .org) safe in your feed where only you can delete it and where it's backed by the enterprise-grade Azure Service Level Agreement (SLA).
+ -  Protect your packages. Keep every public source package you use (including packages from npmjs and NuGet .org) safe in your feed where only you can delete it and it's backed by the enterprise-grade Azure Service Level Agreement (SLA).
  -  Integrate seamless package handling into your Continuous Integration (CI)/ Continuous Development (CD) pipeline. Easily access all your artifacts in builds and releases. Azure Artifacts integrates natively with the Azure Pipelines CI/CD tool.
 
 For more information about Azure Artifacts, visit the webpage. [What are Azure Artifacts?](/azure/devops/artifacts/overview)
@@ -31,7 +32,7 @@ The following table details the compatibility of each package with specific vers
 
 Maven, npm, and NuGet packages can be supported with teams of any size from public and private sources. Azure Artifact comes with Azure DevOps, but the extension is also available from the Visual Studio Marketplace.
 
-:::image type="content" source="../media/azure-devops-artifacts-highlighted-c6041d93.png" alt-text="Screenshot of Azure DevOps with Artifacts highlighted in the menu pane. In the connect to feed pane, package types NuGet, npm, Maven, Gradle, Universal, and Python are highlighted.":::
+:::image type="content" source="../media/azure-devops-artifacts-highlighted-c6041d93.png" alt-text="Screenshot of Azure DevOps with Artifacts highlighted in the menu pane.":::
 
 
 > [!NOTE]
@@ -50,11 +51,11 @@ However, OSS component reuse comes with the risk that reused dependencies can ha
 
 OSS offers a new-concept-called *Software Composition Analysis (SCA) to address these security concerns*, shown in the following image.
 
-:::image type="content" source="../media/secure-devops-workflow-895bcdec.png" alt-text="An image of the workflow for safely creating open-source dependencies. Software Composition Analysis, Developer Team, Version Control, Build Server, Trusted Feed, External Package Feed, and Package Scanner are the main categories.":::
+:::image type="content" source="../media/secure-devops-workflow-895bcdec.png" alt-text="Screenshot of an image of the workflow for safely creating open-source dependencies.":::
 
 
 When consuming an OSS component, whether you're creating or consuming dependencies, you'll typically want to follow these high-level steps:
 
 1.  Start with the latest, correct version to avoid old vulnerabilities or license misuse.
 2.  Validate that the OSS components are the correct binaries for your version. In the release pipeline, validate binaries to ensure accuracy and keep a traceable bill of materials.
-3.  Get notifications of component vulnerabilities immediately, correct them, and redeploy the component automatically to resolve security vulnerabilities or license misuses from reused software.
+3.  Get notifications of component vulnerabilities immediately, correct them, and redeploy the component automatically to resolve security vulnerabilities or license misuse from reused software.

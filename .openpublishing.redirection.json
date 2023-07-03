@@ -19061,6 +19061,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/08-exercise-debug-search-issues.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/maintain-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false
@@ -23143,6 +23148,37 @@
     "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/what-is-azure-machine-learning.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/3-what-is-azure-machine-learning",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-zero-trust-strategy-architecture/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-strategy-for-data-applications/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-security-solutions-applications-data/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-evaluate-governance-risk-compliance/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-operations-identity-compliance-capabilities/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-security-for-infrastructure/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-security-solutions-infrastructure/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/recommend-security-best-practices/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
+    "redirect_document_id": false
+  },  
+  {
+    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-multiple-stage-builds.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds",
+    "redirect_document_id": false
   }
+    
   ]
 }

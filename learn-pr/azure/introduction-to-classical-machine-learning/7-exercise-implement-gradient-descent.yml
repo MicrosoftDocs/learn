@@ -5,8 +5,9 @@ metadata:
   title: Exercise - Implement gradient descent
   description: Exercise unit about implementing gradient descent in machine learning.
   ms.date: 05/25/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: lgayhardt
+  ms.author: lagayhar
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

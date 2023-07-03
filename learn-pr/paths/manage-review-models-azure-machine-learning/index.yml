@@ -1,0 +1,28 @@
+### YamlMime:LearningPath
+uid: learn.wwl.manage-review-models-azure-machine-learning
+metadata:
+  title: Manage and review models in Azure Machine Learning
+  description: MLflow model management and responsible AI dashboard in Azure Machine Learning.
+  ms.date: 07/03/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Manage and review models in Azure Machine Learning
+prerequisites: |
+  None
+summary: |
+  Learn how to manage and review models in Azure Machine Learning by using MLflow to store your model files and using responsible AI features to evaluate your models.
+iconUrl: /training/achievements/manage-review-models-azure-machine-learning.svg
+levels:
+- beginner
+roles:
+- data-scientist
+products:
+- azure-machine-learning
+subjects:
+- machine-learning
+modules:
+- learn.wwl.register-mlflow-model-azure-machine-learning
+trophy:
+  uid: learn.wwl.manage-review-models-azure-machine-learning.trophy
