@@ -40,4 +40,4 @@ A container can host a monolithic application, but they were not designed for th
 
 While you can run a container and manage it much like a VM, it is recommended that you adopt the practices of separation of state and data and ensure your container can sustain being deleted. This will allow you to take advantage of other practices such as DevOps.
 
-In practice, you should store any data or state inside the container image and its layers. Instead, you should use external persistent storage that allows any container instance to access it.
+In practice, you should not store any data or state inside the container image and its layers. Instead, you should use external persistent storage that allows any container instance to access it.
