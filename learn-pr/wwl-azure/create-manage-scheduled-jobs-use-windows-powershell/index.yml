@@ -2,7 +2,7 @@
 uid: learn.wwl.create-manage-scheduled-jobs-use-windows-powershell
 metadata:
   title: Create and manage scheduled jobs using Windows PowerShell
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|<p style=\"margin:0in 0in 8pt;line-height:107%;font-size:11pt;font-family:Calibri, sans-serif;\"|  </p|</span| </div|<div| </div|"
+  description: "Create and manage scheduled jobs using Windows PowerShell"
   ms.date: 07/03/2023
   author: wwlpublish
   ms.author: tonyj
