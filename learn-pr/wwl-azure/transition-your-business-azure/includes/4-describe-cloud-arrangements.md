@@ -16,11 +16,11 @@ Alternatively, some businesses opt for a private cloud. You can think of private
 
 A business might opt for a private cloud if, for example, it's legally required to conduct computing operations in a specific place, or to store its data on private hardware isolated from other businesses.
 
-:::image type="content" source="../media/private-cloud-visualization-b022d494.png" alt-text="An illustration showing two businesses on a world map. Each business is connected to datacenters across the world, but not to the same datacenters. These are private cloud arrangements.":::
+:::image type="content" source="../media/private-cloud-visualization-b022d494.png" alt-text="An illustration showing two businesses on a world map connected to their own datacenters across the world. These are private cloud arrangements.":::
 
 
 ## Hybrid Cloud
 
 Some businesses combine public and private cloud arrangements, or cloud and off-cloud IT, into a hybrid cloud arrangement. In a hybrid cloud arrangement, a business might employ public and private cloud for different purposes. For example, a company that relies on a private cloud might occasionally employ public cloud to handle a surge in computing needs. Or a business may use a private cloud to comply with certain regulations while using public cloud for less sensitive tasks.
 
-:::image type="content" source="../media/hybrid-cloud-visualization-6be82de1.png" alt-text="An illustration showing two businesses on a world map. Each business is connected to datacenters across the world, some of which they share, and some they don't. These are hybrid cloud arrangements.":::
+:::image type="content" source="../media/hybrid-cloud-visualization-6be82de1.png" alt-text="An illustration of a hybrid cloud configuration, with business connected to datacenters across the world. Some datacenters are shared, some aren't.":::
