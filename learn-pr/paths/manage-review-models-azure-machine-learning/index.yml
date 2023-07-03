@@ -24,6 +24,5 @@ subjects:
 - machine-learning
 modules:
 - learn.wwl.register-mlflow-model-azure-machine-learning
-- learn.wwl.manage-compare-models-azure-machine-learning
 trophy:
   uid: learn.wwl.manage-review-models-azure-machine-learning.trophy
