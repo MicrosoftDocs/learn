@@ -8,7 +8,7 @@ Some of today’s classical cryptographic schemes are based on assumptions of th
 
 ## Estimate the resources with Azure Quantum
 
-In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For more information, see [Use known estimates for an operation](azure/quantum/how-to-work-with-re#use-known-estimates-for-an-operation).For the tolerated error budget, you use $\epsilon = 1/3$.
+In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For more information, see [Use known estimates for an operation](/azure/quantum/how-to-work-with-re#use-known-estimates-for-an-operation).For the tolerated error budget, you use $\epsilon = 1/3$.
 
 > [!TIP]
 > You can use this example as a blueprint to estimate the physical resources required of any application for which you already have computed logical estimates.
