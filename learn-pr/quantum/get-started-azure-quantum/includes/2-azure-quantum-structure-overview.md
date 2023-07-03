@@ -17,14 +17,6 @@ Once you have a quantum program that you'd like to run on a quantum computer, yo
 - [Rigetti](https://www.rigetti.com/): Gate-based superconducting processors will be available in Azure Quantum soon and utilize [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) to enable low latency and parallel execution.
 - [Quantum Circuits, Inc](https://quantumcircuits.com/): Fast and high-fidelity system with powerful real-time feedback to enable error correction.
 
-### Optimization providers
-
-For optimization solutions, these are the available providers you can choose from:
-
-- [1QBit](https://1qbit.com/): Iterative heuristic algorithms that use search techniques to solve QUBO problems.
-- [Microsoft QIO](/azure/quantum/provider-microsoft-qio): A set of multiple targets that rephrase the optimization problem inspired by decades of quantum research.
-- [Toshiba SBM](https://www.toshiba-sol.co.jp/en/pro/sbm/index.htm): Toshiba Simulated Bifurcation Machine is a GPU-powered ISING machine that solves large-scale combinatorial optimization problems at high speed.
-
 ## Azure subscription
 
 The cloud is a powerful place that hosts many moving parts. To use Azure, the Microsoft cloud platform, your crew needs to first have an account with an active subscription to access and manage Azure resources.
