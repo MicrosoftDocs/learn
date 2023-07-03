@@ -11,4 +11,4 @@ metadata:
   ms.service: machine-learning
 durationInMinutes: 6
 content: |
-  [!include[](includes/6-run-jobs.md)]
+  [!include[](includes/5-run-jobs.md)]
