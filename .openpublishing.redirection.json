@@ -22984,7 +22984,7 @@
     "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/",
     "redirect_document_id": false
   },
-{
+  {
     "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/5-lab-configure-project-repository-structure-support-secure-pipelines.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines",
     "redirect_document_id": false
@@ -23062,6 +23062,121 @@
   {
     "source_path": "learn-pr/wwl-azure/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools.md",
     "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools/2-configure-microsoft-hosted-agent-pools.md",
+    "redirect_document_id": false
+  },
+    {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/index.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/1-introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/2-clone-branch.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/3-exercise-clone-branch.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/4-stage-commit.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/5-exercise-stage-commit.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/6-knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/azure/use-git-from-vs-code/7-summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/achievements/learn.azure.use-git-from-vs-code.badge.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/classification-scenarios.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/2-classification-scenarios",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/classification-steps.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/5-classification-steps",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/exercise.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/6-exercise",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/introduction.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/1-introduction",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/knowledge-check.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/7-knowledge-check",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/what-is-azure-designer.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/4-what-is-azure-designer",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/summary.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/8-summary",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/what-is-azure-machine-learning.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/3-what-is-azure-machine-learning",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-zero-trust-strategy-architecture/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-strategy-for-data-applications/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-security-solutions-applications-data/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-evaluate-governance-risk-compliance/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-operations-identity-compliance-capabilities/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-security-for-infrastructure/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-security-solutions-infrastructure/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/recommend-security-best-practices/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
+    "redirect_document_id": false
+  },  
+  {
+    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-multiple-stage-builds.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds",
     "redirect_document_id": false
   },
   {
@@ -23184,5 +23299,6 @@
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
   }
+    
   ]
 }
