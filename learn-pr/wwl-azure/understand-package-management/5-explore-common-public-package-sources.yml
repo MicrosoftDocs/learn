@@ -4,12 +4,11 @@ title: Explore common public package sources
 metadata:
   title: Explore common public package sources
   description: "Explore common public package sources"
-  ms.date: 06/30/2023
+  ms.date: 07/03/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure-devops
 durationInMinutes: 3
 content: |
   [!include[](includes/5-explore-common-public-package-sources.md)]
