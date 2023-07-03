@@ -1767,6 +1767,31 @@ achievements:
   title: Create a Linux virtual machine in Azure
   summary: In this module, we discuss how to create a Linux virtual machine using the Azure portal.
   iconUrl: /training/achievements/create-linux-virtual-machine-in-azure.svg
+- uid: learn.wwl.sc-100-recommend security best practices.trophy
+  type: trophy
+  title: 'SC-100: Recommend Security Best Practices'
+  summary: You'll learn how to use critical Microsoft security best practices to improve an organizations security posture, apply zero trust principles and minimize risk from emerging attacks.
+  iconUrl: /training/achievements/sc-100-recommend-security-best-practices.svg
+- uid: learn.wwl.sc-100-evaluate-governance-risk-compliance.trophy
+  type: trophy
+  title: 'SC-100: Evaluate Governance Risk Compliance (GRC) technical strategies and security operations strategies'
+  summary: Learn how to evaluate cybersecurity strategies for Governance and Risk Compliance as well as security operations (SecOps).
+  iconUrl: /training/achievements/sc-100-evaluate-governance-risk-compliance.svg
+- uid: learn.wwl.sc-100-design-zero-trust-strategy-architecture.trophy
+  type: trophy
+  title: 'SC-100: Design a Zero Trust strategy and architecture'
+  summary: Learn how to design an organizations security strategy, including security operations and identity based on the principles of Zero Trust.
+  iconUrl: /training/achievements/sc-100-design-zero-trust-strategy-architecture.svg
+- uid: learn.wwl.sc-100-design-strategy-for-data-applications.trophy
+  type: trophy
+  title: 'SC-100: Design a strategy for data and applications'
+  summary: Learn how to design a cybersecurity strategy for data and applications.
+  iconUrl: /training/achievements/sc-100-design-a-strategy-for-data-and-applications.svg
+- uid: learn.wwl.sc-100-design-security-for-infrastructure.trophy
+  type: trophy
+  title: 'SC-100: Design security for infrastructure'
+  summary: Learn how to design for infrastructure security, including architecture best practices, endpoint security and cloud security for different service models (SaaS, PaaS and IaaS).
+  iconUrl: /training/achievements/sc-100-design-security-for-infrastructure.svg
 - uid: learn.work-with-mutable-and-partial-data-in-a-redis-cache.badge
   type: badge
   title: Work with mutable and partial data in Azure Cache for Redis

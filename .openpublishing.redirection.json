@@ -131,6 +131,16 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/3-enabling-cors-for-your-azure-storage-services-using-rest-api.md",
+      "redirect_url": "/training/modules/set-up-cors-website-storage/1-introduction",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/set-up-cors-website-storage/4-exercise-enable-cors-for-your-azure-storage-services-using-rest-api.md",
+      "redirect_url": "/training/modules/set-up-cors-website-storage/1-introduction",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/enable-external-collaboration-with-b2b/3-collaborate-externally-b2b.yml",                      
       "redirect_url": "/training/modules/enable-external-collaboration-with-b2b/4-collaborate-externally-b2b",
       "redirect_document_id": false
@@ -19051,6 +19061,11 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/maintain-azure-cognitive-search-solution/08-exercise-debug-search-issues.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/maintain-azure-cognitive-search-solution/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/wwl-azure/migrate-sap-workloads-azure/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/migrate-sap-workloads-to-azure/",
       "redirect_document_id": false
@@ -23169,5 +23184,6 @@
     "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
     "redirect_document_id": false
   }
+    
   ]
 }

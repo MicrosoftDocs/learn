@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.embrace-responsible-ai-principles-practices
+metadata:
+  title: Embrace responsible AI principles and practices
+  description: "Explore six principles to guide AI development and use - fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability"
+  ms.date: 06/29/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+title: Embrace responsible AI principles and practices
+summary: This module is designed to help you adopt responsible AI practices. It offers an overview of the principles, governance system, and procedures followed at Microsoft, but we encourage you to develop your own AI strategy.
+abstract: |
+  In this module, you will:
+  * Describe the importance of engaging with AI in a responsible manner.
+  * Identify six guiding principles to develop and use AI responsibly.
+  * Describe successful practices to responsible AI governance.
+prerequisites: |
+  * Basic understanding of AI concepts.
+  * Basic understanding of business concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+- business-user
+products:
+- azure
+- dynamics-365
+- m365
+subjects:
+- artificial-intelligence
+- data-ai
+units:
+- learn.wwl.embrace-responsible-ai-principles-practices.introduction
+- learn.wwl.embrace-responsible-ai-principles-practices.prepare-implications-responsible-ai
+- learn.wwl.embrace-responsible-ai-principles-practices.identify-guiding-principles-responsible-ai
+- learn.wwl.embrace-responsible-ai-principles-practices.design-system-ai-governance
+- learn.wwl.embrace-responsible-ai-principles-practices.apply-ai-governance
+- learn.wwl.embrace-responsible-ai-principles-practices.discuss-practices-responsible-ai-microsoft
+- learn.wwl.embrace-responsible-ai-principles-practices.put-responsible-ai-frameworks
+- learn.wwl.embrace-responsible-ai-principles-practices.knowledge-check
+- learn.wwl.embrace-responsible-ai-principles-practices.summary
+badge:
+  uid: learn.wwl.embrace-responsible-ai-principles-practices.badge

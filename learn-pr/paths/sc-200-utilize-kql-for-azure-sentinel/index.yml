@@ -20,7 +20,7 @@ roles:
 - security-operations-analyst
 products:
 - azure
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 - data-analytics

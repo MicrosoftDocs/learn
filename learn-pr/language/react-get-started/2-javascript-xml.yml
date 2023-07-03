@@ -7,7 +7,9 @@ metadata:
   author: GeekTrainer
   ms.author: chrhar
   ms.topic: interactive-tutorial
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-js
 title: Introduction to JSX
 durationInMinutes: 1
 content: |
