@@ -8,6 +8,8 @@ metadata:
   author: lauradolan
   ms.author: ladolan
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 7
 content: |

@@ -11,6 +11,8 @@ metadata:
   ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 5
 content: |
   [!include[](includes/2-what-is-blazor.md)]

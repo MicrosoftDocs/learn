@@ -1,3 +1,4 @@
+
 One of the key reasons we would want to move the configuration away from source control is to outline responsibilities.
 
 Let's define some roles to elaborate on them. None of those are new concepts but rather a high-level summary:

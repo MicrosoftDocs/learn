@@ -7,7 +7,9 @@ metadata:
   author: kendrahavens
   ms.author: chnoring
   manager: jmartens
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
   ms.date: 07/19/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-visual-studio
