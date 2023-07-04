@@ -4,10 +4,11 @@ metadata:
   title: What is the Data Science Virtual Machine?
   description: Learn about the components and intended uses of the Data Science Virtual Machine.
   ms.date: 06/02/2023
+  ms.service: machine-learning
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
-  ms.service: machine-learning
   ms.prod: learning-azure
 title: What is the Data Science Virtual Machine?
 durationInMinutes: 4
