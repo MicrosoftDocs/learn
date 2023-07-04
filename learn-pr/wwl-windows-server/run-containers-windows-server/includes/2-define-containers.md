@@ -4,7 +4,7 @@ As Contoso migrates and virtualizes various workloads, an option to containerize
 
 A container is used to package an application along with all of its dependencies and abstract it from the host operating system (OS) in which it will run. Containers provide a lightweight development and runtime environment in which applications can be run and shared easily during development. Not only is a container isolated from the host OS, it's also isolated from other containers. Isolated containers provide a virtual runtime, which can also improve the security and reliability of the apps that run within them.
 
-Traditionally, a software application is developed to run on a supported processor, hardware, and OS platform. Software applications typically require additional coding to provide support for the different runtime platforms. With so many diverse computing systems, a more efficient software development and management platform is needed to support portability between multiple computing environments. Containers help provide such portability.
+Traditionally, a software application is developed to run on a supported processor, hardware, and OS platform. Software applications typically require additional coding to provide support for the different runtime platforms. With so many diverse computing systems, a more efficient software development and management platform are needed to support portability between multiple computing environments. Containers help provide such portability.
 
 **Benefits of using containers**
 
