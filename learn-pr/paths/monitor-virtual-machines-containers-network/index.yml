@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
-uid: learn.monitor-virtual-machines-and-containers
-title: Monitor virtual machines and containers
-summary: Learn how to monitor virtual machines and containers with Azure Monitor.
+uid: learn.monitor-virtual-machines-containers-network
+title: Monitor virtual machines, containers, and network resources
+summary: Learn how to monitor virtual machines, containers, and network resources with Azure Monitor.
 metadata:
-  title: Monitor virtual machines and containers
-  description: Learn how to monitor virtual machines and containers with Azure Monitor.
+  title: Monitor virtual machines, containers, and network resources
+  description: Learn how to monitor virtual machines, containers, and network resources with Azure Monitor.
   ms.date: 07/03/2023
   author: guywi-ms
   ms.author: guywild
@@ -12,19 +12,21 @@ metadata:
   ms.service: azure-monitor
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free).
-  - Familiarity with Azure virtual machines and Kubernetes and its concepts.
+  - Familiarity with Azure virtual machines, Azure Arc, networking, and Kubernetes and its concepts.
   -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, then complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/aks-deploy-container-app/). The AKS cluster created in that module will be used for this lesson, but you can apply the same steps to your own cluster. 
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
 roles:
 - administrator
+- developer
 - devops-engineer
 - security-engineer
 - solution-architect
 - technology-manager 
 products:
 - azure
+- azure-arc
 - azure-log-analytics
 - azure-kubernetes-service
 - azure-monitor
@@ -38,7 +40,9 @@ subjects:
 modules:
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-arc-enabled-servers
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.monitor-aks-using-container-insights
+- learn.wwl.design-implement-network-monitoring
 trophy:
-  uid: learn.monitor-virtual-machines-and-containers.trophy
+  uid: learn.monitor-virtual-machines-containers-network.trophy
