@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Explore the fundamentals of data analysis using Kusto Query Language (KQL)
-summary: ""
+summary: "Learn about the basics of Kusto Query Language (KQL), and the various Microsoft products that use it."
 abstract: |
   By the end of this module, you'll be able to:
     - Identify common elements of a query
