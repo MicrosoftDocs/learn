@@ -42,9 +42,9 @@ subjects:
 modules:
 - learn.azure.explore-fundamentals-kql
 - learn.write-first-query-kusto-query-language
-- learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.azure.gain-insights-data-kql
 - learn.multi-table-queries-with-kusto-query-language
+- learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.analyze-logs-with-kql
 trophy:
   uid: learn.analyze-monitoring-data-with-kql.trophy
