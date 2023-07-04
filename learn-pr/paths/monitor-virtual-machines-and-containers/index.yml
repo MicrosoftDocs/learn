@@ -10,7 +10,10 @@ metadata:
   ms.author: guywild
   ms.topic: interactive-tutorial
   ms.service: azure-monitor
-prerequisites: Familiarity with database structures like tables, columns, and rows.
+prerequisites: |
+  - An Azure account with an [active subscription](https://azure.microsoft.com/free).
+  - Familiarity with Azure virtual machines and Kubernetes and its concepts.
+  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, then complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/aks-deploy-container-app/). The AKS cluster created in that module will be used for this lesson, but you can apply the same steps to your own cluster. 
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -36,5 +39,6 @@ modules:
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.azure.monitor-azure-vm-using-diagnostic-data
+- learn.monitor-aks-using-container-insights
 trophy:
   uid: learn.monitor-virtual-machines-and-containers.trophy
