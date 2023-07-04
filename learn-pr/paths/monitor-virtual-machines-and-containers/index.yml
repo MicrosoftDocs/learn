@@ -1,0 +1,40 @@
+### YamlMime:LearningPath
+uid: learn.monitor-virtual-machines-and-containers
+title: Monitor virtual machines and containers
+summary: Learn how to monitor virtual machines and containers with Azure Monitor.
+metadata:
+  title: Monitor virtual machines and containers
+  description: Learn how to monitor virtual machines and containers with Azure Monitor.
+  ms.date: 07/03/2023
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: interactive-tutorial
+  ms.service: azure-monitor
+prerequisites: Familiarity with database structures like tables, columns, and rows.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- security-engineer
+- solution-architect
+- technology-manager 
+products:
+- azure
+- azure-log-analytics
+- azure-kubernetes-service
+- azure-monitor
+- azure-portal
+- azure-virtual-machines
+subjects:
+- cloud-computing
+- infrastructure
+- it-management-monitoring
+- virtual-machine
+modules:
+- learn.analyze-infrastructure-with-azure-monitor-logs
+- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.azure.monitor-azure-vm-using-diagnostic-data
+trophy:
+  uid: learn.monitor-virtual-machines-and-containers.trophy
