@@ -30,8 +30,8 @@ modules:
 - learn.azure.intro-to-azure-monitor
 - learn.design-monitoring-strategy-on-azure
 - learn.wwl.monitor-app-performance
-- learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.wwl.configure-azure-alerts
 - learn.visualize-data-workbooks
+- learn.analyze-logs-with-kql
 trophy:
   uid: learn.monitor-resources-with-azure-monitor.trophy
