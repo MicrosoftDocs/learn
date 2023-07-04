@@ -39,8 +39,8 @@ subjects:
 - virtual-machine
 modules:
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.azure.monitor-azure-vm-using-diagnostic-data
+- learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.azure.monitor-azure-arc-enabled-servers
 - learn.monitor-aks-using-container-insights
 - learn.wwl.design-implement-network-monitoring
