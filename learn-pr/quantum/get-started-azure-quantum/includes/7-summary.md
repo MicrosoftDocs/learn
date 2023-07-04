@@ -1,13 +1,7 @@
-In this module, you learned about the two main solutions that Azure Quantum offers: quantum computing and optimization. You also reviewed some real-world applications.
-
 Quantum computing uses quantum properties such as superposition, interference, and entanglement to perform computations. For simulating quantum mechanical systems such as molecules, quantum computing provides important speedups.
 
-Optimization problems are important for reducing costs, accelerating processes, and reducing risks. Using quantum-inspired solutions to address optimization problems on classical hardware provides a speedup over traditional approaches.
+In this module, you learned how to create a quantum workspace to create and run your jobs on the Azure Quantum service. If you want to learn how to submit quantum computing jobs to quantum hardware, go to [Run algorithms on quantum hardware by using Azure Quantum](/training/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true).
 
-In this module, you learned how to create a quantum workspace to create and run your jobs on the Azure Quantum service. In the next modules, you'll learn to submit and manage quantum computing and optimization jobs:
-
-* If you want to learn how to submit quantum computing jobs to quantum hardware, go to [Run algorithms on quantum hardware by using Azure Quantum](/training/modules/run-algorithms-quantum-hardware-azure-quantum/?azure-portal=true).
-* If you want to learn how to solve optimization problems by using Azure Quantum solvers, go to [Solve optimization problems by using quantum-inspired optimization](/training/modules/solve-quantum-inspired-optimization-problems/?azure-portal=true).
 
 ## Learn more
 
