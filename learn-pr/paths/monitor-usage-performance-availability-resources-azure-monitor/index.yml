@@ -29,10 +29,9 @@ subjects:
 modules:
 - learn.azure.intro-to-azure-monitor
 - learn.design-monitoring-strategy-on-azure
-- learn.azure.monitor-azure-vm-using-diagnostic-data
-- learn.capture-page-load-times-application-insights
-- learn.monitor-vm-performance-using-azure-monitor-for-vms
+- learn.wwl.monitor-app-performance
 - learn.analyze-infrastructure-with-azure-monitor-logs
-- learn.incident-response-with-alerting-on-azure
+- learn.wwl.configure-azure-alerts
+- learn.visualize-data-workbooks
 trophy:
   uid: learn.monitor-resources-with-azure-monitor.trophy
