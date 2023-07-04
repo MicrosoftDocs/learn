@@ -1,3 +1,4 @@
+
 If the Azure built-in roles don't meet the specific needs of your organization, you can create your own Azure custom roles. Just like built-in roles, you can assign custom roles to users, groups, and service principals at management group (in preview only), subscription and resource group scopes. Custom roles are stored in an Azure Active Directory (Azure AD), part of Microsoft Entra and can be shared across subscriptions. Each directory can have up to 5000 custom roles. Custom roles can be created using the Azure portal, Azure PowerShell, Azure CLI, or the REST API.
 
 ### Create the custom role from the user interface
