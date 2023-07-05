@@ -1,6 +1,6 @@
 In this module, you used Entity Framework Core (EF Core) to persist data to a database. You can apply these same skills to other EF Core database providers, like SQL Server and PostgreSQL.
 
-## Learn more with a Microsoft Shows video series
+## Learn more in a Microsoft Shows video series
 
 - [.NET Core 101](/shows/net-core-101/?wt.mc_id=educationaldotnet-c9-scottha&azure-portal=true)
 - [ASP.NET Core 101](/shows/aspnet-core-101/?wt.mc_id=educationaspnet-c9-niner&azure-portal=true)
@@ -8,7 +8,7 @@ In this module, you used Entity Framework Core (EF Core) to persist data to a da
 
 ## Get details from the official EF Core documentation
 
-- [Official documentation](/ef/)
+- [Entity Framework documentation hub](/ef/)
 
 ## File issues and ask questions
 
