@@ -1,4 +1,3 @@
-
 As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Azure Active Directory (Azure AD), with a user type of *Guest*. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
 
 :::image type="content" source="../media/external-user-flow-d79a0a22.png" alt-text="Diagram of how a guest user is invited to the directory, and how they can access resources once they are granted access.":::
