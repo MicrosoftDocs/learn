@@ -52,6 +52,4 @@ Once a new migration has been generated, it can be applied to a database in vari
 
 Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases that are managed by a DBA.
 
-## Get started
-
 In the next unit, you'll get started with EF Core by using migrations.
