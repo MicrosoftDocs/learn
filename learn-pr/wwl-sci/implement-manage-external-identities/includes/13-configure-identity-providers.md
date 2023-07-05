@@ -8,7 +8,7 @@ After you set up federation with an organization's SAML/WS-Fed IdP, any new gues
  -  You set up federation with an organization's SAML/WS-Fed IdP and invite guest users, and then the partner organization later moves to Azure AD. The guest users who have already redeemed invitations continue to use the federated SAML/WS-Fed IdP, as long as the federation policy in your tenant exists.
  -  You delete federation with an organization's SAML/WS-Fed IdP. Any guest users currently using the SAML/WS-Fed IdP are unable to sign in.
 
-In any of these scenarios, you can update a guest user’s authentication method by resetting their redemption status. SAML/WS-Fed IdP federation is tied to domain namespaces, such as contoso.com and fabrikam.com. When establishing federation with AD FS or a third-party IdP, organizations associate one or more domain namespaces to these IdPs.
+In any of these scenarios, you can update a guest user’s authentication method by resetting their redemption status. SAML/WS-Fed IdP federation is tied to domain namespaces, such as contoso.com and fabrikam.com. When the admin establishes federation with AD FS or a third-party IdP, organizations associate one or more domain-namespaces to these IdPs.
 
 ## End-user experience
 
@@ -86,31 +86,23 @@ Guest users who see a *header too long* error can clear their cookies or open a 
 
 ## Deprecation of WebView sign-in support
 
-January 4, 2021, Google is deprecating embedded WebView sign-in support. If you’re using Google federation or self-service-sign-up with Gmail, you should test your line-of-business native applications for compatibility. If your apps include WebView content that requires authentication, Google Gmail users won't be able to authenticate. The following are known scenarios that will affect Gmail users:
+Starting September 30, 2021, Google is deprecating embedded web-view sign-in support. If your apps authenticate users with an embedded web-view and you're using Google federation with Azure AD B2C or Azure AD B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
 
- -  Windows apps that use embedded WebView or the WebAccountManager (WAM) on older versions of Windows.
- -  Other native apps you’ve developed that use an embedded browser framework for authentication.
+The following are known scenarios that will impact Gmail users:
 
-This change doesn't affect:
+ -  Microsoft apps (e.g. Teams and Power Apps) on Windows.
+ -  Windows apps that use the WebView control, WebView2, or the older WebBrowser control, for authentication. These apps should migrate to using the Web Account Manager (WAM) flow.
+ -  Android applications using the WebView UI element.
+ -  iOS applications using UIWebView/WKWebview.
+ -  Apps using ADAL.
 
- -  Windows apps that use embedded WebView or the WebAccountManager (WAM) on the latest versions of Windows
- -  Microsoft iOS apps
- -  G Suite identities, for example when you’re using SAML-based direct federation with G Suite
+This change does not affect:
 
-We’re continuing to test various platforms and scenarios, and will update published information accordingly.
-
-### To test your apps for compatibility
-
-1.  Follow [Google’s guidance](https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html) to determine if your apps are affected.
-2.  Using Fiddler or another testing tool, inject a header during sign-in and use a Google external identity to test sign-in:
-    1.  Add `Google-Accounts-Check-OAuth-Login:true` to your HTTP request headers when the requests are sent to accounts.google.com.
-    2.  Attempt to sign in to the app by entering a Gmail address in the accounts.google.com sign-in page.
-    3.  If sign-in fails and you see an error such as “This browser or app may not be secure,” your Google external identities will be blocked from signing in.
-3.  Resolve the issue by doing one of the following tasks:
-    
-    
-     -  If your Windows app uses embedded WebView or the WebAccountManager (WAM) on an older version of Windows, update to the latest version of Windows.
-     -  Modify your apps to use the system browser for sign-in. For details, see [Embedded vs System Web UI](/azure/active-directory/develop/msal-net-web-browsers) in the MSAL.NET documentation.
+ -  Web apps
+ -  Microsoft 365 services that are accessed through a website (for example, SharePoint Online, Office web apps, and Teams web app)
+ -  Mobile apps using system web-views for authentication (SFSafariViewController on iOS, Custom Tabs on Android).
+ -  Google Workspace identities, for example when you’re using SAML-based federation with Google Workspace.
+ -  Windows apps that use the Web Account Manager (WAM) or Web Authentication Broker (WAB).
 
 ## Sign-in endpoints
 
