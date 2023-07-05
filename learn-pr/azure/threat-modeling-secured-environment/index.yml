@@ -31,7 +31,7 @@ products:
 - azure-iot-security-center
 - defender-for-cloud
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 - virtual-machine
