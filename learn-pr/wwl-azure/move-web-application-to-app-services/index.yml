@@ -30,7 +30,7 @@ products:
 - azure
 - azure-key-vault
 - azure-migrate
-- azure-spring-cloud
+- azure-spring-apps
 subjects:
 - cloud-computing
 units:
