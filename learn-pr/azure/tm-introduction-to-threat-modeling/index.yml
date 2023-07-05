@@ -29,7 +29,7 @@ products:
 - azure
 - azure-security-center
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:
