@@ -1,7 +1,7 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.migrations
 metadata:
-  title: Exercise - Create and use a migration
+  title: Exercise - Set up a migration
   description: Learn how to design the classes that represent the domain model, and then apply them to a database during a migration.
   ms.date: 12/13/2021
   author: camsoper
@@ -9,7 +9,7 @@ metadata:
   ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-title: Exercise - Create and use a migration
+title: Exercise - Set up a migration
 durationInMinutes: 10
 content: |
   [!include[](includes/3-migrations.md)]

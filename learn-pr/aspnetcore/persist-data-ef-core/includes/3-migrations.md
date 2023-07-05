@@ -1,33 +1,35 @@
-In this unit, you'll create C# entity classes that will map to tables in a local SQLite database. EF migrations will produce tables from those entities. Migrations provide a way to incrementally update the database schema.
+In this unit, you create C# entity classes that will map to tables in a local SQLite database. EF Core migrations produce tables from those entities.
+
+Migrations provide a way to incrementally update the database schema.
 
 ## Get the project files
 
-If you're using GitHub Codespaces, just [go to the repository in your browser](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core). Select **Code**, and then create a new codespace on the `main` branch.
+If you're using GitHub Codespaces, [go to the repository in your browser](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core). Select **Code**, and then create a new codespace in the `main` branch.
 
 If you aren't using GitHub Codespaces, get the project files, and then open them in Visual Studio Code.
 
-1. Open a command shell and clone the project from GitHub by using the command prompt:
+1. Open a command terminal, and then clone the project from GitHub by using the command prompt:
 
     ```bash
     git clone https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core
     ```
 
-1. Go to the `mslearn-create-razor-pages-aspnet-core` directory and open the project in Visual Studio Code:
+1. Go to the *mslearn-persist-data-ef-core* folder, and then open the project in Visual Studio Code:
 
     ```bash
-    cd mslearn-create-razor-pages-aspnet-core
+    cd mslearn-persist-data-ef-core
     code .
     ```
 
-> [!TIP]
-> If you've got a compatible container runtime installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to open the repository in a container with the tools preinstalled.
+    > [!TIP]
+    > If you've got a compatible container runtime installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension to open the repository in a container with the tools preinstalled.
 
 1. Review the code:
 
-    - The project, an ASP.NET Core web API, is located in the *ContosoPizza* directory. The file paths referred to in this module are relative to the *ContosoPizza* directory.
+    - The project, an ASP.NET Core web API, is located in the *ContosoPizza* directory. The file paths that are referred to in this module are relative to the *ContosoPizza* directory.
     - *Services/PizzaService.cs* is a service class that defines create, read, update, and delete (CRUD) methods. All the methods currently throw `System.NotImplementedException`.
     - In *Program.cs*, `PizzaService` is registered with the ASP.NET Core dependency injection system.
-    - *Controllers/PizzaController.cs* is an `ApiController` value that exposes an endpoint for HTTP POST, GET, PUT, and DELETE verbs. These verbs call the corresponding CRUD methods on `PizzaService`. `PizzaService` is injected into the `PizzaController` constructor.
+    - *Controllers/PizzaController.cs* is a value for `ApiController` that exposes an endpoint for HTTP POST, GET, PUT, and DELETE verbs. These verbs call the corresponding CRUD methods on `PizzaService`. `PizzaService` is injected into the `PizzaController` constructor.
     - The *Models* folder contains the models that are used by `PizzaService` and `PizzaController`.
     - The entity models, *Pizza.cs*, *Topping.cs*, and *Sauce.cs*, have the following relationships:
         - A pizza can have one or more toppings.
@@ -48,7 +50,7 @@ If you aren't using GitHub Codespaces, get the project files, and then open them
 
 ## Add NuGet packages and EF Core tools
 
-The database engine that you'll be working with in this module is SQLite. SQLite is a lightweight, file-based database engine. It's a good choice for development and testing, and it's also a good choice for small-scale production deployments.
+The database engine that you work with in this module is SQLite. SQLite is a lightweight, file-based database engine. It's a good choice for development and testing, and it's also a good choice for small-scale production deployments.
 
 > [!NOTE]
 > As mentioned earlier, database providers in EF Core are pluggable. SQLite is a good choice for this module because it's lightweight and cross-platform. You can use the same code to work with different database engines, such as SQL Server and PostgreSQL. You can even use multiple database engines in the same app.
@@ -82,9 +84,9 @@ Before you start, you need to add the required packages.
     > [!TIP]
     > If `dotnet ef` is already installed, you can update it by running `dotnet tool update --global dotnet-ef`.
 
-## Wire up models and DbContext
+## Scaffold models and DbContext
 
-Now you'll add and configure a `DbContext` implementation, which will serve as the gateway through which you'll interact with the database.
+Now you add and configure a `DbContext` implementation, which serves as the gateway through which you'll interact with the database.
 
 1. Right-click the *ContosoPizza* directory and add a new folder called *Data*.
 1. In the *Data* folder, create a new file named *PizzaContext.cs*. Add the following code to the empty file:
@@ -128,7 +130,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
     - Defines a SQLite connection string that points to a local file, *ContosoPizza.db*.
 
     > [!NOTE]
-    > SQLite uses local database files, so you can hard-code the connection string like. For network databases like PostgreSQL and SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
+    > SQLite uses local database files, so you can hard-code the connection string like. For network databases like PostgreSQL and SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider using a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
 1. Also in *Program.cs*, replace `// Additional using declarations` with the following code.
 
@@ -138,7 +140,7 @@ Now you'll add and configure a `DbContext` implementation, which will serve as t
 
     This code resolves dependencies in the previous step.
 
-1. Save all your changes. Github Codespaces saves your changes automatically.
+1. Save all your changes. GitHub Codespaces saves your changes automatically.
 1. Build the app in the terminal by running `dotnet build`. The build should succeed with no warnings or errors.
 
 ## Create and run a migration
@@ -187,7 +189,7 @@ EF Core created a database for your app. Take a look inside the database by usin
 
     - Tables that correspond to each entity were created.
     - Table names were taken from the names of the `DbSet` properties on the `PizzaContext`.
-    - Properties named `Id` were inferred to be auto-incrementing primary key fields.
+    - Properties named `Id` were inferred to be autoincrementing primary key fields.
     - The EF Core primary key and foreign key constraint naming conventions are `PK_<primary key property>` and `FK_<dependent entity>_<principal entity>_<foreign key property>`, respectively. The `<dependent entity>` and `<principal entity>` placeholders correspond to the entity class names.
 
     > [!NOTE]

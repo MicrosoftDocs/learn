@@ -1,4 +1,4 @@
-The manager of Contoso Pizza has asked you to add an endpoint to list coupons from an existing database. In this unit, you'll create scaffolding from an existing database and modify the resulting entity class.
+The manager of Contoso Pizza has asked you to add an endpoint to list coupons from an existing database. In this unit, you create scaffolding from an existing database and modify the resulting entity class.
 
 ## Inspect the promotions database
 
@@ -6,7 +6,7 @@ Let's take a look at the database you'll use to generate the scaffolded code.
 
 1. On the **Explorer** pane, expand the *Promotions** directory, right-click the *Promotions.db* file, and then select **Open Database**.
 
-    The new database opens in the **SQLITE EXPLORER** pane.
+    The new database opens in the **SQLite Explorer** folder.
 1. In the **SQLite Explorer** folder, expand the *Promotions.db* and *Coupons* nodes. Note the data schema.
 1. Right-click the *Coupons* node and select **Show table**. Inspect the coupon data.
 

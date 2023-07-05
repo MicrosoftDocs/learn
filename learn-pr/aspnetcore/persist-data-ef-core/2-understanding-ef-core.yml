@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.understanding-ef-core
-title: Understand Entity Framework Core
+title: Understand EF Core
 metadata:
-  title: Understand Entity Framework Core
+  title: Understand EF Core
   description: "Understand the purpose and architecture of Entity Framework Core (EF Core)."
   ms.date: 12/13/2021
   author: camsoper
