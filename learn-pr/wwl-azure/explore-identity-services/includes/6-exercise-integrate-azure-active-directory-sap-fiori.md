@@ -1,5 +1,6 @@
 
 
+
 Integrating SAP Fiori with Azure AD gives you the following benefits:
 
 - You can use Azure AD to control who has access to SAP Fiori.
