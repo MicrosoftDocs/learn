@@ -1,5 +1,5 @@
 
-The VPN gateway settings that you chose are critical to creating a successful connection for your virtual network. There are several parameters to specify for a VPN gateway in the Azure portal. 
+The VPN gateway settings that you choose are critical to creating a successful connection for your virtual network. There are several parameters to specify for a VPN gateway in the Azure portal. 
 
 ### Things to consider when creating a VPN gateway
 
