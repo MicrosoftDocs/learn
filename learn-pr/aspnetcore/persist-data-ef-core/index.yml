@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.persist-data-ef-core
 metadata:
-  title: Persist and retrieve relational data by Entity Framework Core
+  title: Persist and retrieve relational data by using EF Core
   description: This module guides you through the steps to create a data access project, connect to a relational database, and write create, read, update, and delete (CRUD) queries by using Entity Framework Core (EF Core).
   ms.date: 01/13/2023
   author: camsoper
@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: entity-framework
   ms.technology: entity-framework-core
-title: Persist and retrieve relational data by using EF Core
+title: Persist and retrieve relational data by using Entity Framework Core
 summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
 abstract: |
   In this module, you'll:

@@ -292,7 +292,7 @@ Your manager at Contoso Pizza gives you some new requirements, so you have to ch
     A migration named *:::no-loc text="ModelRevisions":::* is created.
 
     > [!NOTE]
-    > This message appears: *An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy*. The message appears because we have changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. Because we don't yet have any data in our database, this change isn't problematic. However, in general, it's a good idea to check the generated migration when this warning appears to make sure that no data is deleted or truncated by the migration.
+    > This message appears: *An operation was scaffolded that may result in the loss of data. Please review the migration for accuracy*. The message appears because you changed the relationship from `Pizza` to `Topping` from one-to-many to many-to-many, which requires that an existing foreign key column is dropped. Because you don't yet have any data in your database, this change isn't problematic. However, in general, it's a good idea to check the generated migration when this warning appears to make sure that no data is deleted or truncated by the migration.
 
 1. Run the following command to apply the *:::no-loc text="ModelRevisions":::* migration:
 

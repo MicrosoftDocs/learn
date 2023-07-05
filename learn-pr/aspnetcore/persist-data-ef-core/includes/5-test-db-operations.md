@@ -158,6 +158,6 @@ In the following steps, you use the Swagger UI to test each of the API's operati
 1. In the terminal with the running app, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the running app.
 
 > [!TIP]
-> You are welcome to experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then run the app again.
+> You can experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then run the app again.
 
 Great work! The app is working with your database as expected! In the next unit, you'll scaffold entity models from an existing database.

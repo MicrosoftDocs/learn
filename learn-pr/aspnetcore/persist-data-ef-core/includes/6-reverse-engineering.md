@@ -2,9 +2,9 @@ The manager of Contoso Pizza has asked you to add an endpoint to list coupons fr
 
 ## Inspect the promotions database
 
-Let's take a look at the database you'll use to generate the scaffolded code.
+Take a look at the database you'll use to generate the scaffolded code.
 
-1. On the **Explorer** pane, expand the *Promotions** directory, right-click the *Promotions.db* file, and then select **Open Database**.
+1. On the **Explorer** pane, expand the *Promotions* directory, right-click the *Promotions.db* file, and then select **Open Database**.
 
     The new database opens in the **SQLite Explorer** folder.
 1. In the **SQLite Explorer** folder, expand the *Promotions.db* and *Coupons* nodes. Note the data schema.
@@ -51,7 +51,7 @@ Now it's time to scaffold the code by using the database.
 
 ## Add a coupon endpoint
 
-Before you can test the scaffolded code, you need to add an endpoint to the API. Let's add a new API controller.
+Before you can test the scaffolded code, you need to add an endpoint to the API. Next, add a new API controller.
 
 > [!NOTE]
 > To better understand how API controllers work, see [Create a web API by using ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).

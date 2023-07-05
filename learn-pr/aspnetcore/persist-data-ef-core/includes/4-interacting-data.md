@@ -4,7 +4,7 @@ In this exercise, you'll complete the `PizzaService` implementation. The service
 
 ## CRUD methods
 
-Let's complete the `PizzaService` implementation. Complete the following steps in *Services\PizzaService.cs*:
+To finish the `PizzaService` implementation, complete the following steps in *Services\PizzaService.cs*:
 
 1. Make the following changes as shown in the following example:
 
@@ -117,7 +117,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
     - References to existing values for `Pizza` and `Sauce` are created by using `Find`. `Find` is an optimized method to query records by their primary key. `Find` searches the local entity graph first before it queries the database.
     - The `Pizza.Sauce` property is set to the `Sauce` object.
-    - An `Update` method call is unnecessary because EF Core detects that we set the `Sauce` property on `Pizza`.
+    - An `Update` method call is unnecessary because EF Core detects that you set the `Sauce` property on `Pizza`.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
 1. Replace the `AddTopping` method with the following code:
@@ -174,7 +174,7 @@ Let's complete the `PizzaService` implementation. Complete the following steps i
 
 ## Database seeding
 
-You've coded the CRUD operations for `PizzaService`, but it will be easier to test the "read" operation if there's good data in the database. Let's modify the app to seed the database on startup.
+You've coded the CRUD operations for `PizzaService`, but it will be easier to test the "read" operation if there's good data in the database. Next, modify the app to seed the database on startup.
 
 > [!WARNING]
 > This database seeding strategy doesn't account for race conditions, so be careful using the strategy in a distributed environment.
