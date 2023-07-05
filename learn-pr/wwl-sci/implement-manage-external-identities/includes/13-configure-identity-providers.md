@@ -86,17 +86,17 @@ Guest users who see a *header too long* error can clear their cookies or open a 
 
 ## Deprecation of WebView sign-in support
 
-Starting September 30, 2021, Google is deprecating embedded web-view sign-in support. If your apps authenticate users with an embedded web-view and you're using Google federation with Azure AD B2C or Azure AD B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
+Google is deprecating embedded web-view sign-in support (Starting September 30, 2021). If your apps authenticate users with an embedded web-view and you're using Google federation with Azure AD B2C or Azure AD B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
 
-The following are known scenarios that will impact Gmail users:
+The following are known scenarios that will affect Gmail users:
 
  -  Microsoft apps (e.g. Teams and Power Apps) on Windows.
  -  Windows apps that use the WebView control, WebView2, or the older WebBrowser control, for authentication. These apps should migrate to using the Web Account Manager (WAM) flow.
  -  Android applications using the WebView UI element.
  -  iOS applications using UIWebView/WKWebview.
- -  Apps using ADAL.
+ -  Apps using Microsoft Authentication Library.
 
-This change does not affect:
+This change doesn't affect:
 
  -  Web apps
  -  Microsoft 365 services that are accessed through a website (for example, SharePoint Online, Office web apps, and Teams web app)
