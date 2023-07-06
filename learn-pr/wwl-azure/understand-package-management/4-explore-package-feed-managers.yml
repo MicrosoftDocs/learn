@@ -4,13 +4,11 @@ title: Explore package feed managers
 metadata:
   title: Explore package feed managers
   description: "Explore package feed managers"
-  ms.date: 05/18/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 2
 content: |
   [!include[](includes/4-explore-package-feed-managers.md)]
