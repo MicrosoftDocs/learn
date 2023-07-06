@@ -1,5 +1,6 @@
 
 
+
 Integrating SAP NetWeaver with Azure AD provides the following benefits:
 
 - You can control in Azure AD who has access to SAP NetWeaver.
