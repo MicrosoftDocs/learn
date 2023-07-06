@@ -54,6 +54,6 @@ You can also view a report for DLP alerts in the Defender for Cloud Apps Dashboa
 - The user triggering the policy match
 - The actions that have been taken to secure the matched file
 
-[![Alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png)](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
+[![Screenshot of alerts screen example.](../media/alerts-report-microsoft-cloud-app-security.png)](../media/alerts-report-microsoft-cloud-app-security.png#lightbox)
 
 Use the Defender for Cloud Apps DLP alerts report to view an overview of Defender for Cloud Apps policy alerts. Since policies created on the Defender for Cloud Apps side have different options and scopes compared to Defender for Cloud Apps policies created in the Microsoft Purview compliance portal, it's prudent to be aware of alerts in both dashboards.
