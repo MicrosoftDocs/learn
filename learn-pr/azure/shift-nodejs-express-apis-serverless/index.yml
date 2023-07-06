@@ -1,32 +1,28 @@
 ### YamlMime:Module
 uid: learn.azure.shift-express-api-azure-functions
 metadata:
-  title: Refactor Node.js and Express APIs to serverless APIs with Azure Functions
-  description: Improve availability and scalability by refactoring an existing API to use Azure Functions.
-  ms.date: 04/10/2020
+  title: Refactor Node.js Express APIs to serverless with Azure Functions
+  description: Improve availability and scalability by refactoring existing Node.js Express APIs to serverless APIs with Azure Functions.
+  ms.date: 06/21/2023
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
   ms.service: azure-functions
-title: Refactor Node.js and Express APIs to Serverless APIs with Azure Functions
-summary: Improve availability and scalability by refactoring an existing API to use Azure Functions.
+title: Refactor Node.js Express APIs to serverless with Azure Functions
+summary: Improve availability and scalability by refactoring existing Node.js Express APIs to serverless APIs with Azure Functions.
 abstract: |
-  In this module, you will:
-    - Establish an Application Programming Interfaces (API).
-    - Evaluate an existing project that implements Express APIs.
-    - Create a new Azure Functions application with TypeScript/JavaScript.
-    - Refactor the Node.js Express APIs to the Azure Functions application.
-    - Run and debug the application locally.
-    - Understand the differences and similarities in refactoring Express APIs to Azure Functions.
+  - Evaluate an existing project that implements Node.js Express Application Programming Interfaces (APIs).
+  - Create a new Azure Functions serverless application by using TypeScript and JavaScript.
+  - Refactor the Node.js Express APIs to use the Azure Functions application.
+  - Run and debug the application locally.
+  - Understand the differences and similarities between Express APIs and Azure Functions serverless APIs.
 prerequisites: |
-  - Must have some knowledge of JavaScript
-  - Must have some familiarity with Node.js and Express APIs
-  - Must have some familiarity with Azure Functions
-  - Must have [Node.js](https://nodejs.org/) installed
-  - Must have [Visual Studio Code](https://code.visualstudio.com/) installed
-  - Must have [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed
-  - Must have [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
-  - Must have the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
+  - Some knowledge of JavaScript
+  - Some familiarity with Node.js Express APIs and Azure Functions
+  - [Node.js](https://nodejs.org/) installed
+  - [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
+  - [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) installed
+  - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
 iconUrl: /training/achievements/shift-express-api-azure-functions.svg
 levels:
   - beginner
