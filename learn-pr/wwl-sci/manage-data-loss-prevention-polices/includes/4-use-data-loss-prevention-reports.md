@@ -4,7 +4,7 @@ After you create data loss prevention policies, administrators need to verify an
 
 The Activity explorer tab on the DLP page has multiple filters you can use to view DLP events. Use this tool to review activity related to content that contains sensitive info or has labels applied, such as what labels were changed, files were modified, and matched a rule.
 
-You can view the last 30 days of DLP information in [Activity Explorer](microsoft-365/compliance/data-classification-activity-explorer?azure-portal=true) using these preconfigured filters:
+You can view the last 30 days of DLP information in [Activity Explorer](/microsoft-365/compliance/data-classification-activity-explorer?azure-portal=true) using these preconfigured filters:
 
 - Endpoint DLP activities
 - Files containing sensitive info types
