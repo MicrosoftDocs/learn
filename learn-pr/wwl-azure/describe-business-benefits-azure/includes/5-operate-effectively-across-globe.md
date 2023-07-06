@@ -5,7 +5,7 @@ With Microsoft Azure, you gain access to a global computing network with over 20
 
 Azure can improve the quality of your business’s digital services to worldwide customers and employees. Since Azure's cloud technology is distributed around the world, people across the globe can connect to your digital services faster via datacenters nearer to them. Your business can even choose to specifically invest in cloud assets located near your customers and worksites. Your workforce will be able to collaborate more reliably, and your customers will enjoy better service. And if you don’t yet have a worldwide presence, the cloud might help change that!
 
-:::image type="content" source="../media/cloud-world-wide-scale-26966caf.png" alt-text="An illustration showing a business connected to cloud datacenters on different continents, which connect to customers throughout the world.":::
+:::image type="content" source="../media/cloud-worldwide-scale-79f3b99d.png" alt-text="An illustration showing a business connected to cloud datacenters on different continents, which connect to customers throughout the world.":::
 
 
 ## Legal Compliance
