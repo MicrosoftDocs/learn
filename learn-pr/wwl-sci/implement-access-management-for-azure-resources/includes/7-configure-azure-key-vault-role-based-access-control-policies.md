@@ -1,3 +1,4 @@
+
 You can grant access to Azure Key Vault using either role-based access control (RBAC) or using Key Vault access policies. Either method works to protect your secrets, certificates, and keys. Access policies give you a little more granular control, but can be harder to manage. Choose the best option based on your security posture needs.
 
 ### Assign a Key Vault access policy
