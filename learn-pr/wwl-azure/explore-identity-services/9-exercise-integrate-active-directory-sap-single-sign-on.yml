@@ -4,7 +4,7 @@ title: Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO)
 metadata:
   title: Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO)
   description: "Integrate Active Directory with SAP single sign-on (Kerberos-SPNEGO)"
-  ms.date: 07/05/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
