@@ -152,6 +152,8 @@ units:
 - learn.fundamentals-generative-ai
 .azure-openai
 - learn.fundamentals-generative-ai
+.app-architecture
+- learn.fundamentals-generative-ai
 .copilots
 - learn.fundamentals-generative-ai
 .writing-prompts
