@@ -22984,7 +22984,7 @@
     "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/",
     "redirect_document_id": false
   },
-{
+  {
     "source_path": "learn-pr/wwl-azure/configure-project-repository-structure-support-secure-pipelines/5-lab-configure-project-repository-structure-support-secure-pipelines.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/configure-project-repository-structure-support-secure-pipelines/4-lab-configure-project-repository-structure-support-secure-pipelines",
     "redirect_document_id": false
@@ -23064,7 +23064,7 @@
     "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools/2-configure-microsoft-hosted-agent-pools.md",
     "redirect_document_id": false
   },
-  {
+    {
     "source_path": "learn-pr/azure/use-git-from-vs-code/index.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
     "redirect_document_id": false
@@ -23148,6 +23148,157 @@
     "source_path": "learn-pr/wwl-data-ai/create-classification-model-azure-machine-learning-designer/what-is-azure-machine-learning.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/create-classification-model-azure-machine-learning-designer/3-what-is-azure-machine-learning",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-zero-trust-strategy-architecture/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-strategy-for-data-applications/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-security-solutions-applications-data/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-evaluate-governance-risk-compliance/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-operations-identity-compliance-capabilities/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/sc-100-design-security-for-infrastructure/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-security-solutions-infrastructure/index.yml",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/paths/recommend-security-best-practices/index.yml",
+    "redirect_url": "/training/paths/sc-100-design-solutions-best-practices-priorities/index.yml",
+    "redirect_document_id": false
+  },  
+  {
+    "source_path": "learn-pr/wwl-azure/design-container-build-strategy/6-examine-considerations-multiple-stage-builds.md",
+    "redirect_url": "https://learn.microsoft.com/training/modules/design-container-build-strategy/6-examine-considerations-for-multiple-stage-builds",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/2-problem-formulation.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/3-precedence-constraint.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/4-operation-once-constraint.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/5-no-overlap-constraint.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/6-minimize-makespan.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/7-combine-terms.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/8-solve-problem.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/9-validate-solution.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/10-tune-parameters.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/11-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/12-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-job-shop-optimization-azure-quantum/index.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/1-introduction.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/2-what-is-quantum-inspired-optimization.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/3-optimization-basics.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/4-how-quantum-inspired-optimization-solves-problems.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/5-apply-quantum-inspired-optimization-real-world.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/6-knowledge-check.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/7-summary.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/solve-quantum-inspired-optimization-problems/index.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/quantum/get-started-azure-quantum/5-case-study-optimization.yml",
+    "redirect_url": "https://learn.microsoft.com/training/paths/quantum-computing-fundamentals/",
+    "redirect_document_id": false
   }
+    
   ]
 }
