@@ -7,8 +7,10 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-dotnet
   description: |
     Use the Microsoft.Azure.Cosmos .NET SDK library from NuGet to build queries using the C# LINQ method syntax.
+
   sandbox: true
   author: seesharprun
   ms.author: sidandrews

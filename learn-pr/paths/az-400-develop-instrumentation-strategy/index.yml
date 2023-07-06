@@ -29,7 +29,7 @@ products:
 - azure-monitor
 - azure-event-grid
 - azure-sentinel
-- azure-security-center
+- defender-for-cloud
 - azure-service-health
 - vs-app-center
 - azure-virtual-machines

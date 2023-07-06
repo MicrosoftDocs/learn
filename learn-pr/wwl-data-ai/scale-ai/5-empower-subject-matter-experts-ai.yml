@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.empower-subject-matter-experts-ai
+title: Empower subject matter experts with AI
+metadata:
+  title: Empower subject matter experts with AI
+  description: "Empower subject matter experts with AI"
+  ms.date: 06/29/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-empower-subject-matter-experts-ai.md)]
