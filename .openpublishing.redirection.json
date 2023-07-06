@@ -23064,13 +23064,6 @@
     "redirect_url": "/training/modules/manage-identity-projects-pipelines-agents/2-configure-microsoft-hosted-agents-pools/2-configure-microsoft-hosted-agent-pools.md",
     "redirect_document_id": false
   },
-<<<<<<< HEAD
-  {
-    "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/includes/5-review-analyze-data-loss-prevention-reports.md",
-    "redirect_url": "https://learn.microsoft.com/training/modules/manage-data-loss-prevention-polices/",
-    "redirect_document_id": false
-}
-=======
     {
     "source_path": "learn-pr/azure/use-git-from-vs-code/index.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-visual-studio-code",
@@ -23307,6 +23300,5 @@
     "redirect_document_id": false
   }
     
->>>>>>> 006972f77cb6ed04c758f72c11a88b2da2fa023e
   ]
 }
