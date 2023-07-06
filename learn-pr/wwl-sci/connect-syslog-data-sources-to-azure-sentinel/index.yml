@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: microsoft-sentinel
 title: Connect syslog data sources to Microsoft Sentinel
-summary: Learn about the Syslog connector's configuration options which will enable you to parse Syslog data.
+summary: Learn about the Azure Monitor Agent Linux Syslog Data Collection Rule configuration options which will enable you to parse Syslog data.
 abstract: |
   Upon completion of this module, the learner will be able to:
   - Describe the Azure Monitor Agent Data Collection Rule (DCR) for Syslog

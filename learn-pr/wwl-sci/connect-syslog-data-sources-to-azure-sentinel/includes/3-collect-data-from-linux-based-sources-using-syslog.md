@@ -41,7 +41,7 @@ To install the agent on an Azure Linux virtual machine:
 
 1. Under the **Extensions** tab, you should see the **AzureMonitorLinuxAgent** displayed. 
 
-    :::image type="content" source="../media/03-azure-monitor-linux-agent-azure-vm.png" alt-text="Screenshot of the Azure Monitor Linux Agent on an Azure VM." lightbox="../media/03-azure-monitor-linux-agent-azure-vm-1.png":::
+    :::image type="content" source="../media/03-azure-monitor-linux-agent-azure-vm.png" alt-text="Screenshot of the Azure Monitor Linux Agent on an Azure VM." lightbox="../media/03-azure-monitor-linux-agent-azure-vm.png":::
 
     > [!NOTE]
     > If Microsoft Defender for Cloud Auto-provisioning is enabled, the Azure Monitor Linux Agent will be installed by default as an extension using Azure Policy assignment.
