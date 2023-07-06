@@ -1,4 +1,4 @@
-In the previous exercise, you created entity classes and a database context. You then used EF Core Migrations to create the database schema.
+In the previous exercise, you created entity classes and a database context. You then used EF Core migrations to create the database schema.
 
 In this exercise, you complete the `PizzaService` implementation. The service uses EF Core to perform CRUD operations on the database.
 
@@ -174,7 +174,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
 ## Seed the database
 
-You've coded the CRUD operations for `PizzaService`, but it's be easier to test the read operation if the database contains good data. Next, modify the app to seed the database on startup.
+You've coded the CRUD operations for `PizzaService`, but it's be easier to test the read operation if the database contains good data. You decide to modify the app to seed the database on startup.
 
 > [!WARNING]
 > This database seeding strategy doesn't account for race conditions. Be careful using the database seeding approach in a distributed environment.
@@ -253,7 +253,7 @@ You've coded the CRUD operations for `PizzaService`, but it's be easier to test 
     In the preceding code:
 
     - The `DbInitializer` class and `Initialize` method are both defined as `static`.
-    - `Initialize` accepts a `PizzaContext` value as a parameter.
+    - `Initialize` accepts `PizzaContext` as a parameter.
     - If there are no records in any of the three tables, `Pizza`, `Sauce`, and `Topping` objects are created.
     - The `Pizza` objects (and their `Sauce` and `Topping` navigation properties) are added to the object graph by using `AddRange`.
     - The object graph changes are committed to the database by using `SaveChanges`.

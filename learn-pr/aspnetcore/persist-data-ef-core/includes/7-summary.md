@@ -14,20 +14,20 @@ In this module, you used Entity Framework Core (EF Core) to persist data to a da
 
 - [The efcore GitHub repository](https://github.com/dotnet/efcore)
 
-## Join the team and guests for .NET Data Community Standup
+## Join us for .NET Data Community Standup
 
-- [All .NET Data Standup videos](https://aka.ms/efstandups)
+- [All .NET Data Community Standup videos](https://aka.ms/efstandups)
 
-To learn more about EF Core, see these videos:
+These videos focus on EF Core:
 
 - [Azure Cosmos DB and EF Core](https://youtu.be/nEqH_XfCfho)
-- [Testing EF Core apps](https://youtu.be/KO2aFuLqGkc)
+- [Test your EF Core apps](https://youtu.be/KO2aFuLqGkc)
 - [GraphQL and OData: An in-depth discussion](https://youtu.be/t7nkdORzed4)
-- [The plan for EF Core 7.0 (EF7)](https://youtu.be/nU-mtUtbHV4)
+- [The plan for EF Core 7](https://youtu.be/nU-mtUtbHV4)
 - [SQL Server temporal tables and EF Core 6](https://youtu.be/2aCgKM41NFw)
 - [PostgreSQL and EF Core](https://youtu.be/Ya_cmZRwACM)
 - [Dapper](https://youtu.be/txiQar6PqvA)
 - [EF Core global query filters](https://youtu.be/Uy0c_DKGM-U)
-- [Building modern apps with GraphQL](https://youtu.be/4k3WzW2ZdXs)
-- [Azure SQL for cloud-born applications and developers](https://youtu.be/GhIhwCafilk)
-- [Performance-tuning an EF Core app](https://youtu.be/VgNFFEqwZPU)
+- [Build modern apps by using GraphQL](https://youtu.be/4k3WzW2ZdXs)
+- [Azure SQL for cloud applications and developers](https://youtu.be/GhIhwCafilk)
+- [Performance-tune an EF Core app](https://youtu.be/VgNFFEqwZPU)

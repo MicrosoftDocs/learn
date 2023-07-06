@@ -24,7 +24,7 @@ In this module, you'll:
 
 The following tools are required:
 
-### .NET SDK
+### .NET 7.0 SDK
 
 [!include[](../../../includes/dotnet7-sdk-version.md)]
 

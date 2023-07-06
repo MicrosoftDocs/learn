@@ -1,6 +1,6 @@
-Entity Framework Core (EF Core) is an *object-relational mapper (ORM)*. An ORM provides a layer between the domain model that you implement in code and a database. EF Core is a data access API that allows you to interact with the database by using .NET *plain old Common Runtime Language (CLR) objects (POCOs)* and strongly typed Language Integrated Query (LINQ) syntax. You can spend less time translating requests to and from the database and writing SQL, so you have more time to focus on important business logic.
+Entity Framework Core (EF Core) is an *object-relational mapper (ORM)*. An ORM provides a layer between a database and the domain model that you implement in your code. EF Core is a data access API that allows you to interact with the database by using .NET *plain old Common Runtime Language (CLR) objects (POCOs)* and strongly typed *Language Integrated Query (LINQ)* syntax.
 
-With EF Core, the database is abstracted behind .NET POCOs. As a result, you can focus on your code, and EF Core handles direct interaction with the underlying database.
+In EF Core, the database is abstracted behind .NET POCOs. EF Core handles direct interaction with the underlying database. When you use this API, you can spend less time translating requests to and from the database and writing SQL, and more time focusing on important business logic.
 
 With EF Core, you can:
 
@@ -47,7 +47,7 @@ To choose between these options, decide whether your EF Core model or the databa
 
 ### Migrations
 
-In real-world projects, data models change as app features are implemented. As new entities are added and removed, the database schemas need to be changed accordingly. EF Core migrations provide a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
+In real-world projects, data models change as app features are implemented. As new entities are added and removed, the database schemas need to be changed accordingly. The EF Core migrations feature provides a way to incrementally update the database schema to keep it in sync with the application's data model while preserving existing data in the database.
 
 When a data model change is introduced, the developer uses EF Core tools to add a corresponding migration. EF Core compares the current model against a snapshot of the previous model to determine the differences. C# code to implement the changes is generated. The C# files can be modified for custom behaviors or to seed data. The files are tracked in your project's source control like any other source file.
 
@@ -57,4 +57,4 @@ After a new migration is generated, it can be applied to a database in various w
 
 Reverse engineering is the process of scaffolding entity model classes and a `DbContext` class based on a database schema. This approach is often used with existing or shared databases that are managed by a database administrator.
 
-In the next unit, you'll get started with EF Core by using migrations.
+In the next unit, you'll get started with EF Core by using a migration.

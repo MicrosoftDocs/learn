@@ -1,6 +1,6 @@
-In this unit, you create C# entity classes that will map to tables in a local SQLite database. EF Core migrations produce tables from those entities.
+In this unit, you create C# entity classes that will map to tables in a local SQLite database. The EF Core migrations feature produces tables from those entities.
 
-Migrations provide a way to incrementally update the database schema.
+A migration provides a way to incrementally update the database schema.
 
 ## Get the project files
 

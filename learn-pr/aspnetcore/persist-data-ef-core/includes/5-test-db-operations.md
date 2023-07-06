@@ -1,17 +1,17 @@
-In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you'll test the API now that it's connected to the database.
+In the previous exercise, you wrote code for your team's API to implement database operations. In this exercise, you test the API now that it's connected to the database.
 
 ## Run the API
 
-1. In the terminal window, run the app by using the following command:
+1. In the terminal pane, run the app:
 
     ```dotnetcli
     dotnet run
     ```
 
-1. Inspect the output from running the app.
+1. Inspect the output from running the app, and note the following information:
 
     - EF Core echoes SQL commands as `info` log events when they execute.
-    - If the database does not already exist, the tables and indexes are defined by using `CREATE` SQL commands.
+    - If the database does not already exist, the tables and indexes are defined by using SQL `CREATE` commands.
     - If the database has not yet been seeded, `INSERT` commands are executed to add the seed data.
     - For security, the parameter values are not echoed to the console. You can change this setting by using [EnableSensitiveDataLogging](/ef/core/logging-events-diagnostics/extensions-logging#sensitive-data).
 
@@ -21,18 +21,18 @@ In the previous exercise, you wrote code for your team's API to implement databa
 
 Now that the API is running, test the API to see if the operations work as expected. The API is configured to use [Swagger](https://swagger.io/) to provide a test UI. Swagger is a tool that helps you design, build, document, and consume RESTful web services.
 
-1. In the output that's from running the app, find the HTTP URL where the app is listening. The output looks similar to the following example:
+1. In the output that appears after you run the app, find the HTTP URL where the app listens. The output looks similar to the following example:
 
     ```console
     info: Microsoft.Hosting.Lifetime[14]
           Now listening on: http://localhost:5200
     ```
 
-1. To open the URL, select **Ctrl+Click**. The browser opens to the `/` location for the API, which returns the text `Contoso Pizza management API. Go to /swagger to open the Swagger test UI.`
+1. To open the URL, select <kbd>Ctrl</kbd>+<kbd>click</kbd>. The browser opens to the `/` location for the API, which returns the text `Contoso Pizza management API. Go to /swagger to open the Swagger test UI.`
 
 1. In the browser's address bar, add `/swagger` to the end of the URL and select **Enter**.
 
-## Test operations
+## Test CRUD operations
 
 In the following steps, you use the Swagger UI to test each of the API's operations the way that a client application would. After each operation, inspect the database in SQLite Explorer to see the database changes as they happen.
 
@@ -66,8 +66,8 @@ In the following steps, you use the Swagger UI to test each of the API's operati
         ]
     ```
 
-    > [!NOTE]
-    > **Why are the `sauce` and `toppings` properties null?** In the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
+   > [!TIP]
+   > *Why are the `sauce` and `toppings` properties null?* This result is expected because in the `PizzaService.GetAll` method, you didn't use the `Include` extension method to specify that the navigation properties should be loaded.
 
 1. Request a single pizza:
 
@@ -155,7 +155,7 @@ In the following steps, you use the Swagger UI to test each of the API's operati
 
     The API deletes the pizza and returns a success code. In the database, the `Pizza` record and the associated records in `PizzaTopping` are deleted.
 
-1. In the terminal with the running app, press <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the running app.
+1. In the terminal with the running app, select <kbd>Ctrl</kbd>+<kbd>C</kbd> to stop the running app.
 
 > [!TIP]
 > You can experiment with the app. Whenever you'd like to start with a fresh database, stop the app and delete the *ContosoPizza.db*, *.db-shm*, and *.db-wal* files. Then run the app again.

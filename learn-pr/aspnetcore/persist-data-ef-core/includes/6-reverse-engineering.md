@@ -1,4 +1,4 @@
-The manager of Contoso Pizza has asked you to add an endpoint to list coupons from an existing database. In this unit, you create scaffolding from an existing database and modify the resulting entity class.
+The manager of Contoso Pizza has asked you to add an endpoint so that the company can display coupons in its app. The coupons reside in an existing database. In this unit, you create scaffolding from an existing database and modify the resulting entity class.
 
 ## Inspect the promotions database
 
@@ -12,7 +12,7 @@ Take a look at the database you'll use to generate the scaffolded code:
 
 ## Scaffold the promotions context and coupon model
 
-Now it's time to scaffold the code by using the database.
+Now, you use the database to scaffold the code:
 
 1. Run the following command:
 
@@ -23,11 +23,11 @@ Now it's time to scaffold the code by using the database.
     The preceding command:
 
     - Scaffolds `DbContext` and model classes by using the provided connection string.
-    - Specifies that the `Microsoft.EntityFrameworkCore.Sqlite` database provider should be used.
+    - Specifies to use the `Microsoft.EntityFrameworkCore.Sqlite` database provider.
     - Specifies directories for the resulting `DbContext` and model classes.
 
     > [!NOTE]
-    > In this exercise, ignore the warning about your connection string being in source code. In real-world code, always store your connection strings in a secure location.
+    > In this exercise, you can ignore the warning about your connection string being in source code. In real-world code, always store your connection strings in a secure location.
 
 1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string because SQLite doesn't have a datetime data type. Change the `Expiration` type from `string?` to `DateTime`. EF Core manages the conversion of datetime data to string data.
 
@@ -51,7 +51,7 @@ Now it's time to scaffold the code by using the database.
 
 ## Add a coupon endpoint
 
-Before you can test the scaffolded code, you need to add an endpoint to the API. Next, you add a new API controller.
+Before you can test the scaffolded code, you need to add an endpoint to the API. So next, you add a new API controller.
 
 > [!NOTE]
 > To better understand how API controllers work, see [Create a web API by using ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
@@ -102,7 +102,7 @@ Before you can test the scaffolded code, you need to add an endpoint to the API.
 
     This code registers `PromotionsContext` with the dependency injection system.
 
-1. Save all your changes (GitHub Codespaces saves automatically) and run the app by using `dotnet run`.
+1. Save all your changes and run the app by using `dotnet run`.
 
 ## Test the endpoint
 
