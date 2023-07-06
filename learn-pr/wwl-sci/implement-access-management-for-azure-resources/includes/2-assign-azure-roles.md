@@ -1,3 +1,4 @@
+
 Azure role-based access control (Azure RBAC) is the authorization system you use to manage access to Azure resources. To grant access, you assign roles to users, groups, service principals, or managed identities at a particular scope. Primary steps to follow when assigning an Azure role:
 
 1.  Who needs access?

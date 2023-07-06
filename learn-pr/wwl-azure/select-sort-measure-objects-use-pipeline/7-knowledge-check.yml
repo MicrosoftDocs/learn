@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/21/2022
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
@@ -20,10 +20,10 @@ quiz:
     choices:
     - content: "Case-insensitive sort in the descending order"
       isCorrect: true
-      explanation: "Correct. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort."
+      explanation: "Incorrect. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort. To reverse the sort order, add the -Descending parameter."
     - content: "Case-insensitive sort in the ascending order"
       isCorrect: false
-      explanation: "Incorrect. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort."
+      explanation: "Correct. By default, the **Sort-Object** cmdlet performs a case-insensitive and ascending sort."
     - content: "Case-sensitive sort in the descending order"
       isCorrect: false
       explanation: "Incorrect. By default, the **Sort-Object** cmdlet performs a case-insensitive and descending sort."
