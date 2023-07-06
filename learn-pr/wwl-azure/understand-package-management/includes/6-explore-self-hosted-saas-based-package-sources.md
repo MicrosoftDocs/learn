@@ -21,7 +21,7 @@ The following table contains a non-exhaustive list of self-hosting options and S
 | **Package type** | **Self-hosted private feed** | **SaaS private feed**                                                   |
 | ---------------- | ---------------------------- | ----------------------------------------------------------------------- |
 | NuGet            | NuGet server                 | Azure Artifacts, MyGet                                                  |
-| NPM              | Sinopia, CNPMjs, Verdaccio   | NPMjs, MyGet, Azure Artifacts                                           |
+| npm              | Sinopia, cnpmjs, Verdaccio   | npmjs, MyGet, Azure Artifacts                                           |
 | Maven            | Nexus, Artifactory, Archivia | Azure Artifacts, Bintray, JitPack                                       |
 | Docker           | Portus, Quay, Harbor         | Docker Hub, Azure Container Registry, Amazon Elastic Container Registry |
 | Python           | PyPI Server                  | Gemfury                                                                 |
