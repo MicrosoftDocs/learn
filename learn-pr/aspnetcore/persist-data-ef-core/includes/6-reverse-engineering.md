@@ -2,7 +2,7 @@ The manager of Contoso Pizza has asked you to add an endpoint to list coupons fr
 
 ## Inspect the promotions database
 
-Take a look at the database you'll use to generate the scaffolded code.
+Take a look at the database you'll use to generate the scaffolded code:
 
 1. On the **Explorer** pane, expand the *Promotions* directory, right-click the *Promotions.db* file, and then select **Open Database**.
 
@@ -22,14 +22,14 @@ Now it's time to scaffold the code by using the database.
 
     The preceding command:
 
-    - Scaffolds a `DbContext` and model classes by using the provided connection string.
+    - Scaffolds `DbContext` and model classes by using the provided connection string.
     - Specifies that the `Microsoft.EntityFrameworkCore.Sqlite` database provider should be used.
     - Specifies directories for the resulting `DbContext` and model classes.
 
     > [!NOTE]
     > In this exercise, ignore the warning about your connection string being in source code. In real-world code, always store your connection strings in a secure location.
 
-1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string because SQLite doesn't have a datetime type. Change the `Expiration` type from a `string?` to a `DateTime`. EF Core manages the conversion of datetime to string data.
+1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string because SQLite doesn't have a datetime data type. Change the `Expiration` type from `string?` to `DateTime`. EF Core manages the conversion of datetime data to string data.
 
     ```csharp
     using System;
@@ -51,7 +51,7 @@ Now it's time to scaffold the code by using the database.
 
 ## Add a coupon endpoint
 
-Before you can test the scaffolded code, you need to add an endpoint to the API. Next, add a new API controller.
+Before you can test the scaffolded code, you need to add an endpoint to the API. Next, you add a new API controller.
 
 > [!NOTE]
 > To better understand how API controllers work, see [Create a web API by using ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
@@ -87,12 +87,12 @@ Before you can test the scaffolded code, you need to add an endpoint to the API.
     }
     ```
 
+    This code adds an `api/coupon` endpoint to the API.
+
     In the preceding code:
 
-    - A `PromotionsContext` is injected into the constructor.
+    - `PromotionsContext` is injected into the constructor.
     - The `Get` method returns all the coupons.
-
-    This code adds an `api/coupon` endpoint to the API.
 
 1. In *Program.cs*, replace the `// Add the PromotionsContext` comment with the following code:
 
@@ -106,9 +106,9 @@ Before you can test the scaffolded code, you need to add an endpoint to the API.
 
 ## Test the endpoint
 
-Now that the endpoint is added, test the coupon operations.
+Now that the endpoint is added, test the coupon operations:
 
-1. Go to the API's Swagger UI as before (or refresh the existing UI in your browser).
+1. Go to the API's Swagger UI like you did in an earlier exercise (or refresh the existing UI in your browser).
 
 1. Under the **Coupon** heading, expand the **GET** operation and select **Try it out**.
 1. Select **Execute**. The response body shows the coupons from the database:

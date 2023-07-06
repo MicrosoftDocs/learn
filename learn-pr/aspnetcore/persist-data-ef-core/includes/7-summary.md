@@ -6,19 +6,19 @@ In this module, you used Entity Framework Core (EF Core) to persist data to a da
 - [ASP.NET Core 101](/shows/aspnet-core-101/?wt.mc_id=educationaspnet-c9-niner&azure-portal=true)
 - [Entity Framework Core 101](/shows/entity-framework-core-101/?wt.mc_id=educationalef-c9-niner&azure-portal=true)
 
-## Get details from the official EF Core documentation
+## Get details from the EF Core documentation
 
 - [Entity Framework documentation hub](/ef/)
 
 ## File issues and ask questions
 
-- [The EFCore GitHub repo](https://github.com/dotnet/efcore)
+- [The efcore GitHub repository](https://github.com/dotnet/efcore)
 
 ## Join the team and guests for .NET Data Community Standup
 
 - [All .NET Data Standup videos](https://aka.ms/efstandups)
 
-Including:
+To learn more about EF Core, see these videos:
 
 - [Azure Cosmos DB and EF Core](https://youtu.be/nEqH_XfCfho)
 - [Testing EF Core apps](https://youtu.be/KO2aFuLqGkc)

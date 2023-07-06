@@ -1,16 +1,16 @@
-In the previous exercise, you created entity classes and a database context. You then used EF Core Migrations to create the database schema. 
+In the previous exercise, you created entity classes and a database context. You then used EF Core Migrations to create the database schema.
 
-In this exercise, you'll complete the `PizzaService` implementation. The service uses EF Core to perform CRUD operations on the database.
+In this exercise, you complete the `PizzaService` implementation. The service uses EF Core to perform CRUD operations on the database.
 
-## CRUD methods
+## Code the CRUD operations
 
 To finish the `PizzaService` implementation, complete the following steps in *Services\PizzaService.cs*:
 
-1. Make the following changes as shown in the following example:
+1. Make the following changes as shown in the example:
 
     1. Add a `using ContosoPizza.Data;` directive.
     1. Add a `using Microsoft.EntityFrameworkCore;` directive.
-    1. Add a class-level field for the `PizzaContext` before the constructor.
+    1. Add a class-level field for `PizzaContext` before the constructor.
     1. Change the constructor method signature to accept a `PizzaContext` parameter.
     1. Change the constructor method code to assign the parameter to the field.
 
@@ -172,12 +172,12 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
 1. Save all your changes and run `dotnet build`. Fix any errors that occur.
 
-## Database seeding
+## Seed the database
 
-You've coded the CRUD operations for `PizzaService`, but it will be easier to test the "read" operation if there's good data in the database. Next, modify the app to seed the database on startup.
+You've coded the CRUD operations for `PizzaService`, but it's be easier to test the read operation if the database contains good data. Next, modify the app to seed the database on startup.
 
 > [!WARNING]
-> This database seeding strategy doesn't account for race conditions, so be careful using the strategy in a distributed environment.
+> This database seeding strategy doesn't account for race conditions. Be careful using the database seeding approach in a distributed environment.
 
 1. In the *Data* folder, add a new file named *DbInitializer.cs*.
 1. Add the following code to *Data\DbInitializer.cs*:
@@ -290,18 +290,18 @@ The `DbInitializer` class is ready to seed the database, but it needs to be call
     - [EnsureCreated](/ef/core/managing-schemas/ensure-created#ensurecreated) ensures that the database exists.
 
         > [!IMPORTANT]
-        > If a database doesn't exist, `EnsureCreated` creates a new database. The new database isn't configured for migrations, so use this with caution.
+        > If a database doesn't exist, `EnsureCreated` creates a new database. The new database isn't configured for migrations, so use this method with caution.
 
     - The `DbIntializer.Initialize` method is called and passes `PizzaContext` as a parameter.
 
-1. Finally, in *Program.cs*, replace `// Add the CreateDbIfNotExists method call` comment with the following code to call the new extension method:
+1. Finally, in *Program.cs*, replace the `// Add the CreateDbIfNotExists method call` comment with the following code to call the new extension method:
 
     ```csharp
     app.CreateDbIfNotExists();
     ```
 
-    This code calls the extension method that you defined in the previous step whenever the app runs.
+    This code calls the extension method that you defined earlier each time the app runs.
 
 1. Save all your changes and run `dotnet build`.
 
-You've written all the code you need to do basic CRUD operations and seed the database on startup. In the next exercise, you'll test those operations in the app.
+You've written all the code you need to do basic CRUD operations and seed the database on startup. In the next exercise, you test those operations in the app.
