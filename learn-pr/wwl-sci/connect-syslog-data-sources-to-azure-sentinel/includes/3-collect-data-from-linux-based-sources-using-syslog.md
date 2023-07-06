@@ -4,7 +4,7 @@ Configuring the Azure Monitor Agent for Syslog on Linux machines:
 
 To install the agent on an Azure Linux virtual machine:
 
-1. In the Azure Portal, enter **Monitor** in the `Search resources, services, and docs` search bar.
+1. In the Azure portal, enter **Monitor** in the `Search resources, services, and docs` search bar.
 
 1. In **Monitor**, scroll down the left menu to the **Settings** section and select `Data Collection Rules`.
 
@@ -35,7 +35,7 @@ To install the agent on an Azure Linux virtual machine:
     > [!NOTE]
     > This process initiates the Azure Monitor Linux Agent extension install.
 
-1. After the process completes, locate **Virtual Machines** in the `Azure portal` and select the Linux VM you configured as a `Data Collection Rule` resource.
+1. After the process completes, locate **Virtual Machines** in the Azure portal and select the Linux VM you configured as a `Data Collection Rule` resource.
 
 1. On the `Virtual machine` Overview, scroll down the left menu to the **Settings** section and select **Extensions + applications**.
 
@@ -50,7 +50,7 @@ To install the agent on an Azure Linux virtual machine:
 
 To install the agent on non-Azure Linux virtual hosts:
 
-1. In the Azure Portal, enter **Arc** in the `Search resources, services, and docs` search bar.
+1. In the Azure portal, enter **Arc** in the `Search resources, services, and docs` search bar.
 
 1. In **Azure Arc**, scroll down the left menu to the **Infrastructure** section and select **Servers**.
 
@@ -116,7 +116,7 @@ To install the agent on non-Azure Linux virtual hosts:
 
 1. In your `Bash console` you should see an `INFO Connected machine to Azure` message.
 
-1. Verify your non-Azure machine is connected to **Azure Arc** in the Azure Portal by entering **Arc** in the `Search resources, services, and docs` search bar.
+1. Verify your non-Azure machine is connected to **Azure Arc** in the Azure portal by entering **Arc** in the `Search resources, services, and docs` search bar.
 
 1. In **Azure Arc**, scroll down the left menu to the **Infrastructure** section and select **Servers**. You should see your machine with a `Status` of **Connected**.
 
@@ -124,7 +124,7 @@ To install the agent on non-Azure Linux virtual hosts:
 
 1. The next task is to add your newly connected Azure Arc Linux server to your previously created Data Collection Rule for Syslog.
 
-1. In the Azure Portal, enter **DCR** in the `Search resources, services, and docs` search bar.
+1. In the Azure portal, enter **DCR** in the `Search resources, services, and docs` search bar.
 
 1. Select your Syslog Data Collection Rule
 
