@@ -1,4 +1,3 @@
-
 :::image type="content" source="../media/entra-verified-identity-f5ddd7af.png" alt-text="Screenshot of the Azure AD security settings screen, with the Verifiable credentials selected.":::
 
 

@@ -1,4 +1,3 @@
-
 Azure Active Directory (Azure AD) B2B collaboration users are added as guest users to the directory, and guest permissions in the directory are restricted by default. Your business may need some guest users to fill higher-privilege roles in your organization. To support defining higher-privilege roles, guest users can be added to any roles you desire, based on your organization's needs.
 
 ## Add a B2B user to a role
@@ -34,15 +33,15 @@ This property indicates the relationship of the user to the host tenancy. This p
 
 This property indicates the user’s primary identity provider. A user can have several identity providers, which can be viewed by selecting the link next to Identities in the user’s profile or by querying the identities property via the Microsoft Graph API.
 
-| Identieis property value | Sign-in state                                                                                                                                                              |
-| ------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| External Azure AD        | This user is homed in an external organization and authenticates by using an Azure AD account that belongs to the other organization.                                      |
-| Microsoft account        | This user is homed in a Microsoft account and authenticates by using a Microsoft account.                                                                                  |
-| \{host’s domain\}        | This user authenticates by using an Azure AD account that belongs to this organization.                                                                                    |
-| google.com               | This user has a Gmail account and has signed up by using self-service to the other organization.                                                                           |
-| facebook.com             | This user has a Facebook account and has signed up by using self-service to the other organization.                                                                        |
-| mail                     | This user has signed up by using Azure AD Email one-time passcode (OTP).                                                                                                   |
-| \{issuer URI\}           | This user is homed in an external organization that doesn't use Azure Active Directory as their identity provider, but instead uses a SAML/WS-Fed-based identity provider. |
+| Identities property value | Sign-in state                                                                                                                                                              |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| External Azure AD         | This user is homed in an external organization and authenticates by using an Azure AD account that belongs to the other organization.                                      |
+| Microsoft account         | This user is homed in a Microsoft account and authenticates by using a Microsoft account.                                                                                  |
+| \{host’s domain\}         | This user authenticates by using an Azure AD account that belongs to this organization.                                                                                    |
+| google.com                | This user has a Gmail account and has signed up by using self-service to the other organization.                                                                           |
+| facebook.com              | This user has a Facebook account and has signed up by using self-service to the other organization.                                                                        |
+| mail                      | This user has signed up by using Azure AD Email one-time passcode (OTP).                                                                                                   |
+| \{issuer URI\}            | This user is homed in an external organization that doesn't use Azure Active Directory as their identity provider, but instead uses a SAML/WS-Fed-based identity provider. |
 
 ### Can Azure AD B2B users be added as members instead of guests?
 

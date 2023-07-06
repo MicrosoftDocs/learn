@@ -1,4 +1,3 @@
-
 Direct federation is now called **SAML/WS-Fed identity provider** (IdP) federation. You can set up federation with any organization whose identity provider (IdP) supports the Security Assertion Markup Language (SAML) 2.0 or WS-Federation (WS-Fed) protocol. When you set up SAML/WS-Fed IdP federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Azure Active Directory (Azure AD) tenant and start collaborating with you. There's no need for the guest user to create a separate Azure AD account.
 
 ## When is a guest user authenticated with SAML/WS-Fed IdP federation?

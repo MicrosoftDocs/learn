@@ -1,4 +1,3 @@
-
 Azure AD organizations can use external identities cross-tenant access settings to manage how they collaborate with other Azure AD organizations or Microsoft clouds. Cross-tenant access settings give you granular control over how external Azure AD organizations collaborate with you, **inbound access**. You can also control how your users collaborate with external Azure AD organizations, **outbound access**.<br>
 
 :::image type="content" source="../media/cross-tenant-access-ac5d5d43.png" alt-text="Screenshot of the Azure AD external identities cross-tenant access controls dialog. Configure inbound and outbound access.":::
