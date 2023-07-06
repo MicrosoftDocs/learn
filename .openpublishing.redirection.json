@@ -23303,6 +23303,11 @@
     "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/includes/5-review-analyze-data-loss-prevention-reports.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/manage-data-loss-prevention-polices/",
     "redirect_document_id": false
+  },
+  {
+    "source_path": "learn-pr/wwl-sci/manage-data-loss-prevention-polices/includes/5-review-analyze-data-loss-prevention-reports.yml",
+    "redirect_url": "https://learn.microsoft.com/training/modules/manage-data-loss-prevention-polices/",
+    "redirect_document_id": false
   }
     
   ]
