@@ -1,3 +1,4 @@
+
 :::image type="content" source="../media/guest-user-diagram-dbdda7d3.png" alt-text="Diagram of allowing external users to join your Azure AD as a guest user.":::
 
 

@@ -1,3 +1,4 @@
+
 What is a permission? The dictionary definition of permission is the \*\*consent or authorization to perform a specific action." In Azure Active Directory (Azure AD), you've permissions for each of the operations you're able to do. Permission can range from viewing your settings, to be able to change your setting. Then move on to granting permission to add or remove users and beyond. There are two primary places where permission can be assigned, at a user or group level. However, they all pass down to the user at the final point. When dealing with users, you've both a member-user and a guest-user. The default permissions for the guest-user are slightly less than the member.
 
 ### What are a sample of the default permissions for users?
