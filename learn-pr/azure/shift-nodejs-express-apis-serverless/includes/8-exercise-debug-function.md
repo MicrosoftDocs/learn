@@ -1,4 +1,4 @@
-Now it's time for you to run and debug both applications together.
+In this exercise, you run and debug both the Express.js application and the Azure Functions application together.
 
 Start by opening the project in Visual Studio Code.
 

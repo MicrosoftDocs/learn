@@ -1,6 +1,6 @@
-Suppose your company has a vacation planning website that helps customers add, edit, view, and remove plans from their wish lists. Your API, which runs on Node.js and Express, powers these features. A server running Node.js and Express hosts your API and is critical to the success of the application. You must scale your application up and down as needed, while minimizing costs.
+Suppose you're responsible for an application that helps customers add, edit, view, and remove plans from their wish lists on your company's vacation planning website. Your Application Programming Interface (API), which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to scale the application up and down as needed while minimizing costs.
 
-By shifting your API to a serverless model that uses Azure Functions, you can reduce the burdens of maintaining servers without rewriting your API. The serverless model scales your application up and down as needed, reduces costs, and requires writing less code.
+To reduce the burden of maintaining servers, you can use a serverless model to scale your application up and down as needed, reduce costs, and write less code. You can use Azure Functions to shift your API to a serverless model without having to rewrite the app.
 
 ## Learning objectives
 
@@ -8,5 +8,5 @@ In this module, you refactor an Express API to a serverless architecture by foll
 
 1. Explore and run the Node.js Express APIs in the sample project.
 1. Create an Azure Functions application.
-1. Refactor the Express routes and data calls to use the Azure Functions application.
+1. Refactor the Express routes and data calls to use the Functions application.
 1. Debug the serverless API by using Visual Studio Code.
