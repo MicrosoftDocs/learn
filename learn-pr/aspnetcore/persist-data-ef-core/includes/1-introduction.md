@@ -28,7 +28,7 @@ The following tools are required:
 
 [!include[](../../../includes/dotnet7-sdk-version.md)]
 
-### Git command-line tool
+### Git command-line client
 
 To clone the sample app from GitHub, you need a [Git](https://git-scm.com/downloads) client.
 
