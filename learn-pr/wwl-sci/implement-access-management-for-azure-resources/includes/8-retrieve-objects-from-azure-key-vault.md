@@ -1,4 +1,5 @@
-Azure Key Vault is a secure tool for storing secrets, keys, and certificate. Once stored, these items can be used by users and applications to perform actions and operations in a secure method. The process to retrieve any of these resources is common. So we'll look at how to review a secret from a key vault.
+
+Azure Key Vault is a secure tool for storing secrets, keys, and certificates. Once stored, these items can be used by users and applications to perform actions and operations in a secure method. The process to retrieve any of these resources is common. So we'll look at how to review a secret from a key vault.
 
 ### Add a secret to your key vault
 

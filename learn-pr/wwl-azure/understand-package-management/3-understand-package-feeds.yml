@@ -4,13 +4,11 @@ title: Understand package feeds
 metadata:
   title: Understand package feeds
   description: "Understand package feeds"
-  ms.date: 05/18/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/3-understand-package-feeds.md)]

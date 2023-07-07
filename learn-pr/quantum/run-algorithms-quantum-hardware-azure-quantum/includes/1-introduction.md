@@ -1,8 +1,3 @@
-Azure Quantum is a cloud service that offers two different types of services:
-
-- **Optimization solutions**: You can use these solutions to solve optimization problems by running optimization algorithms on classical hardware.
-- **Quantum computing solutions**: You can use these solutions to run Q# quantum programs on real or simulated quantum devices.
-
 The earlier modules in this [learning path](../../../paths/quantum-computing-fundamentals/index.yml?azure-portal=true) focused on the theoretical aspects of quantum computing. If you've gone through the learning path this far, you've experienced quantum computing as a member of a space mission on a spaceship. Now, you're ready to access Azure Quantum servers on Earth.
 
 In this module, you're ready to start using real quantum computers to run your Q# quantum programs.
