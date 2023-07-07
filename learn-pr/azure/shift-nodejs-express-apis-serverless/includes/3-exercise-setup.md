@@ -105,5 +105,5 @@ For example, the client app makes an `HTTP GET` request to the _/vacations_ rout
 
    The code now pauses on your second breakpoint in the _vacation.routes.ts_ file because the Angular application hit the Node.js Express route `vacations`.
 
-1. Press **SHIFT** and **F5** to stop the active debugger.
-1. Press **SHIFT** and **F5** again to stop the remaining debugger.
+1. There are two debugging processes running: one for Angular and one for Node.js Express. Press **SHIFT+F5** to stop the active debugger.
+1. Press **SHIFT+F5** again to stop the remaining debugger.
