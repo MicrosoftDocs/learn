@@ -3,7 +3,7 @@ To truly realize the potential of AI, it’s essential to bring AI to every empl
 
 In this unit, we'll discuss how these intelligent business applications weave relevant AI capabilities into their existing workflows. Dynamics 365 helps workers from specific business lines and functions automate and improve certain tasks. Microsoft 365 does the same by addressing a more general audience. Let’s take a look at some examples of these applications that can help anyone use AI to get more done.
 
-## Business function AI
+## Business functions
 
 Some AI solutions are specialized in helping solve problems and gain insight in some specific horizontal functions and sectors.
 
