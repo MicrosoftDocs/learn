@@ -48,7 +48,7 @@ To install the agent on an Azure Linux virtual machine:
 
 ## **For any other Linux machine:**
 
-To install the agent on non-Azure Linux virtual hosts:
+To install the agent on non-Azure Linux physical or virtual machines:
 
 1. In the Azure portal, enter **Arc** in the `Search resources, services, and docs` search bar.
 
