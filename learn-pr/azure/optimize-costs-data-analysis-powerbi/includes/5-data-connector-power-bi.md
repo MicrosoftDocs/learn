@@ -1,4 +1,4 @@
-You use the Microsoft Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spending. The connector is a wrapper for an API that allows Power BI to communicate with Azure. It connects to your Azure account, imports your Cost Management data, and it uses a set of pre-built actions and triggers to help you build your own apps and reports. The connector currently supports customers with a [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](https://azure.microsoft.com/pricing/enterprise-agreement/).
+You use the Microsoft Cost Management connector for Power BI Desktop to make powerful, customized visualizations and reports that help you better understand your Azure spending. The connector is a wrapper for an API that allows Power BI to communicate with Azure. It connects to your Azure account, imports your Cost Management data, and it uses a set of pre-built actions and triggers to help you build your own apps and reports. The connector currently supports customers with a [Microsoft Customer Agreement](https://azure.microsoft.com/pricing/purchase-options/microsoft-customer-agreement/) or an [Enterprise Agreement (EA)](/azure/cost-management-billing/manage/create-enterprise-subscription).
 
 The connector uses OAuth 2.0 for authentication with Azure and identifies users who are going to use the connector. Tokens generated in this process are valid for a specific period. Power BI preserves the token for the next time you sign in. OAuth 2.0 is the standard for the process that happens behind the scenes to ensure permissions are handled securely.
 
@@ -11,13 +11,13 @@ You must have Power BI Desktop installed.
 
 ## Connect to Microsoft Cost Management
 
-To connect to using the **Microsoft Cost Management connector** in Power BI Desktop:
+To connect using the **Microsoft Cost Management connector** in Power BI Desktop:
 
 1. Open Power BI Desktop.
 1. In the **Home** ribbon, select **Get Data**.
-1. Select **Azure** from the list of data categories. You might need to select **More** at the end of the list.
-1. Select **Cost Management** and then select **Connect**.  
-    :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Screenshot showing Connect to Microsoft Cost Management in Power B I Desktop." :::
+1. Select **Azure** from the list of data categories. You might need to select **More** at the end of the list to find the Azure option.
+1. Select **Cost Management**, then select **Connect**.  
+    :::image type="content" source="../media/5-power-bi-desktop-get-data.png" alt-text="Screenshot showing Connect to Microsoft Cost Management in Power BI Desktop." :::
 1. In the dialog that appears for **Choose Scope**, select either your **Billing Profile ID** for **Microsoft Customer Agreements**, or your **Enrollment Number** for **Enterprise Agreements (EA)**.
 
 ### Connect with a Microsoft Customer Agreement account
@@ -27,10 +27,10 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 1. Select your Billing profile.
 1. Under **Settings** in the menu, select **Properties** in the sidebar.
-1. Under **Billing profile**, copy the **ID**.
-1. For **Choose Scope**, select **Billing Profile ID**, and paste the billing profile ID from the previous step.
+1. Under **General**, copy the **ID**.
+1. In Power BI Desktop, select **Billing Profile ID** under **Choose Scope** and paste the billing profile ID from the previous step.
 1. Enter the number of months of data to get and select **OK**.  
-    :::image type="content" source="../media/5-billing-profile-id.png" alt-text="Screenshot showing selecting the Billing Profile I D for a Microsoft Customer Agreement." :::
+    :::image type="content" source="../media/5-billing-profile-id.png" alt-text="Screenshot showing selecting the Billing Profile ID for a Microsoft Customer Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
 
 ### Connect with an Enterprise Agreement account
@@ -40,9 +40,9 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 1. In the [Azure portal](https://portal.azure.com/), navigate to **Cost Management + Billing**.
 1. Select your billing account.
 1. On the **Overview** page, copy the **Billing account ID**.
-1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number**, and paste the billing account ID from the previous step.
+1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step.
 1. Enter the number of months of data to get and then select **OK**.  
-    :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account I D for an Enterprise Agreement." :::
+    :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account ID for an Enterprise Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
 
 ## Create a custom report with your data
@@ -67,9 +67,9 @@ After you successfully authenticate, a **Navigator** window appears with the fol
 | **Usage details** | A breakdown of consumed quantities and estimated charges for the given billing profile on EA enrollment |
 | **Usage details amortized** | A breakdown of consumed quantities and estimated amortized charges for the given billing profile on EA enrollment |
 
-Select a table to see a preview dialog. You can select one or more tables by selecting the boxes beside their name. Select **Load**.
+Select a table to see a preview dialog. You can select one or more tables by selecting the boxes next to their names. Select **Load**.
 
-When the data you selected is loaded, the data tables and fields are shown in the **Fields** list.
+When the data you selected loads, the data tables and fields are shown in the **Fields** list.
 
 To create a report:
 
@@ -79,7 +79,7 @@ To create a report:
  1. In the **Fields** list, select and drag **Cost** to the **Values** area. The chart on the page is updated with data.
  1. Next, in the **Fields** list, select and then drag **Date** to **Axis**. The chart is updated and now shows costs over time.  
     :::image type="content" source="../media/5-power-bi-desktop-report-costs-date.png" alt-text="Screenshot showing the report with costs by date." lightbox="../media/5-power-bi-desktop-report-costs-date.png" :::
- 1. In the **Fields** list, select and then drag **MeterCategory** to the **Legend** area. The chart is updated and shows the costs over time where each day shows the cost for each MeterCategory (Azure service).
+ 1. In the **Fields** list, select and drag **MeterCategory** to the **Legend** area. The chart updates and shows the costs over time where each day shows the cost for each MeterCategory (Azure service).
  1. To better read values in the Legend, select **Format** (which looks like a paint roller symbol), then select **Legend** > **Position** > **Right**.
  1. Optionally, resize the chart if needed.  
      :::image type="content" source="../media/5-power-bi-desktop-report-costs-date-meter-category.png" alt-text="Screenshot showing the completed report with costs by date and meter category." lightbox="../media/5-power-bi-desktop-report-costs-date-meter-category.png" :::
