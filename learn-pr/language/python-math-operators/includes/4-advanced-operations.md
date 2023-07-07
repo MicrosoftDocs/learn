@@ -49,13 +49,13 @@ print(abs(16 - 39))
 
 ## Rounding
 
-The built-in Python function called `round` is also helpful. Use it to round up to the nearest integer if the decimal value is greater than `.5`, or down if it's `.5` or less.
+The built-in Python function called `round` is also helpful. Use it to round up to the nearest integer if the decimal value is greater than `.5`, or down if it's less than or equal to `.5`.
 
 ```python
 print(round(14.5))
 ```
 
-Output: 15
+Output: 14
 
 ## Math library
 
