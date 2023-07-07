@@ -30,7 +30,7 @@ To connect with a **Microsoft Customer Agreement** account, you can get your **B
 1. Under **General**, copy the **ID**.
 1. In Power BI Desktop, select **Billing Profile ID** under **Choose Scope** and paste the billing profile ID from the previous step.
 1. Enter the number of months of data to get and select **OK**.  
-    :::image type="content" source="../media/5-billing-profile-id.png" alt-text="Screenshot showing selecting the Billing Profile I D for a Microsoft Customer Agreement." :::
+    :::image type="content" source="../media/5-billing-profile-id.png" alt-text="Screenshot showing selecting the Billing Profile ID for a Microsoft Customer Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
 
 ### Connect with an Enterprise Agreement account
@@ -42,7 +42,7 @@ To connect with an Enterprise Agreement (EA) account, you can get your enrollmen
 1. On the **Overview** page, copy the **Billing account ID**.
 1. In Power BI Desktop, under **Choose Scope**, select **Enrollment Number** and paste the billing account ID from the previous step.
 1. Enter the number of months of data to get and then select **OK**.  
-    :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account I D for an Enterprise Agreement." :::
+    :::image type="content" source="../media/5-enrollment-number.png" alt-text="Screenshot showing selecting the billing account ID for an Enterprise Agreement." :::
 1. When prompted, sign in with your Azure user account and password.
 
 ## Create a custom report with your data
@@ -69,7 +69,7 @@ After you successfully authenticate, a **Navigator** window appears with the fol
 
 Select a table to see a preview dialog. You can select one or more tables by selecting the boxes next to their names. Select **Load**.
 
-When the data you selected is loaded, the data tables and fields are shown in the **Fields** list.
+When the data you selected loads, the data tables and fields are shown in the **Fields** list.
 
 To create a report:
 
