@@ -144,7 +144,7 @@ Now you add and configure a `DbContext` implementation. `DbContext` is a gateway
     - Defines a SQLite connection string that points to a local file, *ContosoPizza.db*.
 
    > [!NOTE]
-   > SQLite uses local database files, so you can hard-code the connection string like. For network databases like PostgreSQL and SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider using a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
+   > SQLite uses local database files, so it's probably okay to hard-code the connection string. For network databases like PostgreSQL and SQL Server, you should always store your connection strings securely. For local development, use [Secret Manager](/aspnet/core/security/app-secrets). For production deployments, consider using a service like [Azure Key Vault](/aspnet/core/security/key-vault-configuration).
 
 1. Also in *Program.cs*, replace `// Additional using declarations` with the following code.
 
