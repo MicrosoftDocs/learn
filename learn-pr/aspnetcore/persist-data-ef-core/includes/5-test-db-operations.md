@@ -4,9 +4,9 @@ In the previous exercise, you wrote code for your team's API to implement databa
 
 1. In the terminal pane, run the app:
 
-    ```dotnetcli
-    dotnet run
-    ```
+   ```dotnetcli
+   dotnet run
+   ```
 
 1. Inspect the output from running the app, and note the following information:
 
