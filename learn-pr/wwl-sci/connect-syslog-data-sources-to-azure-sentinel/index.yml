@@ -9,16 +9,17 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: microsoft-sentinel
 title: Connect syslog data sources to Microsoft Sentinel
-summary: Learn about the Syslog connector's configuration options which will enable you to parse Syslog data.
+summary: Learn about the Azure Monitor Agent Linux Syslog Data Collection Rule configuration options, which enable you to parse Syslog data.
 abstract: |
-  Upon completion of this module, the learner will be able to:
-  - Describe the Syslog connector deployment options in Microsoft Sentinel
-  - Run the connector deployment script to send data to Microsoft Sentinel
-  - Configure the Log Analytics agent integration for Microsoft Sentinel
-  - Create a parse using KQL in Microsoft Sentinel
+  Upon completion of this module, the learner is able to:
+  - Describe the Azure Monitor Agent Data Collection Rule (DCR) for Syslog
+  - Install and Configure the Azure Monitor Linux Agent extension with the Syslog DCR
+  - Run the Azure Arc Linux deployment and connection scripts
+  - Verify Syslog log data is available in Microsoft Sentinel
+  - Create a parser using KQL in Microsoft Sentinel
 prerequisites: |
   - Basic knowledge of operational concepts such as monitoring, logging, and alerting
-  - Basic knowledge of Linux
+  - Familiarity with Linux operations and monitoring
 iconUrl: /training/achievements/connect-syslog-data-sources-to-azure-sentinel.svg
 levels:
 - intermediate
@@ -28,6 +29,7 @@ products:
 - azure
 - microsoft-sentinel
 - azure-log-analytics
+- azure-monitor
 subjects:
 - threat-protection
 units:
