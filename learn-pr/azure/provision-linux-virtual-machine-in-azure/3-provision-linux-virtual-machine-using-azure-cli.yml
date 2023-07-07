@@ -8,6 +8,8 @@ metadata:
   author: chasecrum
   ms.author: chasecrum
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 13
 content: |

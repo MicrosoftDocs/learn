@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-container-build-strategy.examine-multi-stage-dockerfiles
-title: Examine multi-stage Dockerfiles
+title: Examine multi-stage dockerfiles
 metadata:
-  title: Examine multi-stage Dockerfiles
-  description: "Examine multi-stage Dockerfiles"
-  ms.date: 05/17/2023
+  title: Examine multi-stage dockerfiles
+  description: "Examine multi-stage dockerfiles"
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/5-examine-multi-stage-dockerfiles.md)]

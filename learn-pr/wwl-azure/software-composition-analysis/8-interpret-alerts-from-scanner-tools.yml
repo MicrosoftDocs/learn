@@ -4,13 +4,11 @@ title: Interpret alerts from scanner tools
 metadata:
   title: Interpret alerts from scanner tools
   description: "Interpret alerts from scanner tools"
-  ms.date: 06/07/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.service: azure-devops
+durationInMinutes: 2
 content: |
   [!include[](includes/8-interpret-alerts-from-scanner-tools.md)]

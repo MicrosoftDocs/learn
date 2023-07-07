@@ -8,6 +8,8 @@ metadata:
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |

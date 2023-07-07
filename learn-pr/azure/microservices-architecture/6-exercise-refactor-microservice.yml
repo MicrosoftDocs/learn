@@ -7,6 +7,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Refactor a service within the monolith as a microservice
 durationInMinutes: 10

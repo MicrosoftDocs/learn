@@ -4,13 +4,13 @@ title: Examine considerations for deployment to stages
 metadata:
   title: Examine considerations for deployment to stages
   description: "Examine considerations for deployment to stages"
-  ms.date: 05/17/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+durationInMinutes: 3
 content: |
   [!include[](includes/7-examine-considerations-for-deployment-to-stages.md)]
