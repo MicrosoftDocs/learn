@@ -28,9 +28,9 @@ Now that the API is running, test the API to see if the operations work as expec
           Now listening on: http://localhost:5200
     ```
 
-1. To open the URL, select <kbd>Ctrl</kbd>+<kbd>click</kbd>. The browser opens to the `/` location for the API, which returns the text `Contoso Pizza management API. Go to /swagger to open the Swagger test UI.`
+1. To open the URL, select it while holding <kbd>Ctrl</kbd>. The browser opens to the `/` location for the API, which returns the text `Contoso Pizza management API. Go to /swagger to open the Swagger test UI.`
 
-1. In the browser's address bar, add `/swagger` to the end of the URL and select **Enter**.
+1. In the browser's address bar, add `/swagger` to the end of the URL and select <kbd>Enter</kbd>.
 
 ## Test CRUD operations
 

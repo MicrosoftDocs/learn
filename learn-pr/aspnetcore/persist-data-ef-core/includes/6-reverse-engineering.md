@@ -54,7 +54,7 @@ Now, you use the database to scaffold the code:
 Before you can test the scaffolded code, you need to add an endpoint to the API. So next, you add a new API controller.
 
 > [!NOTE]
-> To better understand how API controllers work, see [Create a web API by using ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
+> To better understand how API controllers work, see [Create a web API with ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
 
 1. In the *Controllers* folder, add a file named *CouponController.cs* that contains the following code:
 
@@ -91,7 +91,7 @@ Before you can test the scaffolded code, you need to add an endpoint to the API.
 
     In the preceding code:
 
-    - `PromotionsContext` is injected into the constructor.
+    - A `PromotionsContext` object is injected into the constructor.
     - The `Get` method returns all the coupons.
 
 1. In *Program.cs*, replace the `// Add the PromotionsContext` comment with the following code:

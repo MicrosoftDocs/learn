@@ -115,7 +115,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
     In the preceding code:
 
-    - References to existing values for `Pizza` and `Sauce` are created by using `Find`. `Find` is an optimized method to query records by their primary key. `Find` searches the local entity graph first before it queries the database.
+    - References to existing `Pizza` and `Sauce` objects are created by using `Find`. `Find` is an optimized method to query records by their primary key. `Find` searches the local entity graph first before it queries the database.
     - The `Pizza.Sauce` property is set to the `Sauce` object.
     - An `Update` method call is unnecessary because EF Core detects that you set the `Sauce` property on `Pizza`.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
@@ -146,7 +146,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
     In the preceding code:
 
-    - References to existing values for `Pizza` and `Topping` are created by using `Find`.
+    - References to existing `Pizza` and `Topping` objects are created by using `Find`.
     - The `Topping` object is added to the `Pizza.Toppings` collection with the `.Add` method. A new collection is created if it doesn't exist.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
@@ -166,7 +166,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
     In the preceding code:
 
-    - The `Find` method retrieves a pizza by the primary key (in this case, by using `Id`).
+    - The `Find` method retrieves a pizza by the primary key (which is `Id` in this case).
     - The `Remove` method removes the `pizzaToDelete` entity in EF Core's object graph.
     - The `SaveChanges` method instructs EF Core to persist the object changes to the database.
 
@@ -177,7 +177,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 You've coded the CRUD operations for `PizzaService`, but it's be easier to test the read operation if the database contains good data. You decide to modify the app to seed the database on startup.
 
 > [!WARNING]
-> This database seeding strategy doesn't account for race conditions. Be careful using the database seeding approach in a distributed environment.
+> This database seeding code doesn't account for race conditions, so be careful when using it in a distributed environment without mitigating changes.
 
 1. In the *Data* folder, add a new file named *DbInitializer.cs*.
 1. Add the following code to *Data\DbInitializer.cs*:
@@ -253,7 +253,7 @@ You've coded the CRUD operations for `PizzaService`, but it's be easier to test 
     In the preceding code:
 
     - The `DbInitializer` class and `Initialize` method are both defined as `static`.
-    - `Initialize` accepts `PizzaContext` as a parameter.
+    - `Initialize` accepts a `PizzaContext` object as a parameter.
     - If there are no records in any of the three tables, `Pizza`, `Sauce`, and `Topping` objects are created.
     - The `Pizza` objects (and their `Sauce` and `Topping` navigation properties) are added to the object graph by using `AddRange`.
     - The object graph changes are committed to the database by using `SaveChanges`.
@@ -292,7 +292,7 @@ The `DbInitializer` class is ready to seed the database, but it needs to be call
         > [!IMPORTANT]
         > If a database doesn't exist, `EnsureCreated` creates a new database. The new database isn't configured for migrations, so use this method with caution.
 
-    - The `DbIntializer.Initialize` method is called and passes `PizzaContext` as a parameter.
+    - The `DbIntializer.Initialize` method is called. The `PizzaContext` object is passed as a parameter.
 
 1. Finally, in *Program.cs*, replace the `// Add the CreateDbIfNotExists method call` comment with the following code to call the new extension method:
 

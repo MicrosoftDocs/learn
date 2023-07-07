@@ -20,7 +20,7 @@ In this module, you'll:
 > [!TIP]
 > You can skip installing the tools that are described in the next sections by using GitHub Codespaces as your integrated development environment (IDE). In a new browser tab, go to the [GitHub repository that contains the starter app for this module](https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core). Select the **Code** button, and then create a new codespace on the `main` branch. For more information, see [Create a codespace](https://docs.github.com/github/developing-online-with-codespaces/creating-a-codespace).
 >
-> Alternatively, if you have a compatible container environment installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for Visual Studio Code. When the extension is installed, select the F1 key to open the command pallette. Search for **Dev Containers: Clone Repository in Container Volume** and select it in the results. Enter the URL `https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core`. The repository is cloned, and then it's opened in a container with all the required tools installed.
+> Alternatively, if you have a compatible container environment installed, you can use the [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) extension for Visual Studio Code. When the extension is installed, select the F1 key to open the command pallette. Search for **Dev Containers: Clone Repository in Container Volume** and select it in the results. Enter the URL `https://github.com/MicrosoftDocs/mslearn-persist-data-ef-core`. The repository is cloned into a new container with all the required tools installed.
 
 The following tools are required:
 
@@ -30,7 +30,7 @@ The following tools are required:
 
 ### GitHub CLI
 
-To clone the sample app from GitHub, you need [GitHub CLI](https://cli.github.com/).
+To clone the sample app from GitHub, you need a [Git](https://git-scm.com/downloads) client.
 
 ### Visual Studio Code
 
