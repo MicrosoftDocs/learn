@@ -27,6 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.explore-developer-tools-for-workspace-interaction.introduction
+- learn.wwl.explore-developer-tools-for-workspace-interaction.video
 - learn.wwl.explore-developer-tools-for-workspace-interaction.explore-studio
 - learn.wwl.explore-developer-tools-for-workspace-interaction.explore-python-sdk
 - learn.wwl.explore-developer-tools-for-workspace-interaction.explore-cli
