@@ -4,7 +4,7 @@ title: Discover classes
 metadata:
   title: Discover classes
   description: "This unit describes working with classes and objects and how you use them to describe real world objects."
-  ms.date: 06/20/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
@@ -16,9 +16,9 @@ quiz:
   questions:
   - content: "What other classes might you create that a house class contains?"
     choices:
-    - content: "A grizzly bear."
+    - content: "A sidewalk."
       isCorrect: false
-      explanation: "Incorrect. A house would not have a grizzly bear."
+      explanation: "Incorrect. A house would not contain a sidewalk."
     - content: "A car."
       isCorrect: false
       explanation: "Incorrect. A car is not a part of a house."

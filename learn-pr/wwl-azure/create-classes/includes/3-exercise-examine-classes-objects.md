@@ -22,6 +22,8 @@ House house = new House();
 
 This exercise has you create a House class and instantiate it, initializing the object by passing parameters into the constructor.
 
+## Create a project called Housing Development Project 1
+
 1. Open Visual Studio Community.
 
 1. Create a new project by selecting “Create a new project” on the start page.
@@ -32,11 +34,17 @@ This exercise has you create a House class and instantiate it, initializing the 
 
 1. Select “Create” to create your project.
 
-1. In the Solution Explorer, right-click on your project and select “Add” > “Class”.
+## Create a new class
+
+6. In the Solution Explorer, right-click on your project and select “Add” > “Class”.
 
 1. Name your class “House” and select “Add”.
 
-1. In your House class, add a public `string` variable called `exteriorColor`.
+## Add a constructor
+
+Add a constructor to initialize a House class variable. Let's begin by creating the variable you want to initialize. 
+
+8. In your House class, add a public `string` variable called `_exteriorColor`.
 
     ```csharp
     using System;
@@ -49,13 +57,13 @@ This exercise has you create a House class and instantiate it, initializing the 
     {
         internal class House
         {
-            public string exteriorColor;
+            public string _exteriorColor;
 
         }
     }
     ```
 
-1. Now add a public `int` variable called `sqrFeet`.
+1. Now create a constructor to initialize your variable.
 
     ```csharp
     using System;
@@ -68,39 +76,90 @@ This exercise has you create a House class and instantiate it, initializing the 
     {
         internal class House
         {
-            public string exteriorColor;
-            public int sqrFeet;
+            public string _exteriorColor;
 
-        }
-    }
-    ```
-
-1. Create a constructor to initialize your object, as pictured.
-
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-
-    namespace Housing_Development_Project_1
-    {
-        internal class House
-        {
-            public string exteriorColor;
-            public int sqrFeet;
-
-            public House(string houseExteriorColor, int houseSquareFeet)
+            public House(string houseExteriorColor)
             {
-                exteriorColor = houseExteriorColor;
-                sqrFeet = houseSquareFeet;
+                _exteriorColor = houseExteriorColor;
             }
         }
     }
     ```
 
-1. In your Program.cs file, create a house object called `myHouse`, passing in attributes for color and square feet.
+## Add a property
+
+Now add a property so that you can retrieve the house color value you initialized the House object with. In addition to a `get` property, let's also greate a `set` property, in case you want to change the value.
+
+10. In your House class, add a public `string` variable called `exteriorColor`.
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Housing_Development_Project_1
+    {
+        internal class House
+        {
+            public string _exteriorColor;
+
+            public House(string houseExteriorColor)
+            {
+                _exteriorColor = houseExteriorColor;
+            }
+
+            public string ExteriorColor
+            {
+                get { return _exteriorColor; }
+                set { _exteriorColor = value; }
+            }
+        }
+    }
+    ```
+
+## Add a method
+
+Next you can add a method to calculate the square footage of the house based on the with and length of the house.
+
+11. Add the method `GetSquareFootage`. It should take two `double` parameters and return a `double`, as seen below.
+
+    ```csharp
+    using System;
+    using System.Collections.Generic;
+    using System.Linq;
+    using System.Text;
+    using System.Threading.Tasks;
+
+    namespace Housing_Development_Project_1
+    {
+        internal class House
+        {
+            public string _exteriorColor;
+
+            public House(string houseExteriorColor)
+            {
+                _exteriorColor = houseExteriorColor;
+            }
+
+            public string ExteriorColor
+            {
+                get { return _exteriorColor; }
+                set { _exteriorColor = value; }
+            }
+
+            public double GetSquareFootage(double height, double width)
+            {
+                return height * width;
+            }
+        }
+    }
+    ```
+
+## Putting it all together
+
+12. In your Program.cs file, create a house object called `myHouse`, initializing the house color variable.
 
     Be sure to delete any existing placeholder content in the file.
 
@@ -113,53 +172,16 @@ This exercise has you create a House class and instantiate it, initializing the 
     > [!NOTE]
     > The namespace is automatically inserted into Program.cs as a "using" statement, meaning that Program.cs is *using* the classes in that namespace. In Visual Studio 2022 the namespace, class, and Main method information is not visible, but exist behind the scene. Because you have already created a class (House) that has this namespace, when you reference it here the namspace is automatically inserted in Program.cs in a *using* statement, letting you know that it is the namespace being used.
 
-1. Use Console.WriteLine to display the values you initialized in your object.
+1. Use Console.WriteLine to display the house color value you initialized in your object.
 
     ```csharp
     using Housing_Development_Project_1 // this statement is automatically generated
 
     House myHouse = new House("light grey", 2000);
-    Console.WriteLine("You initialized this object with the following values:");
-    Console.WriteLine("Color: " +  myHouse.exteriorColor + "  Square feet: " + myHouse.sqrFeet);
-    ```
+    Console.WriteLine("You initialized this object with the following house color:");
+    Console.WriteLine("Color: " +  myHouse.ExteriorColor);
 
-1. Review your House.cs file.
-
-    Your House.cs file should look like the following:
-
-    ```csharp
-    using System;
-    using System.Collections.Generic;
-    using System.Linq;
-    using System.Text;
-    using System.Threading.Tasks;
-    
-    namespace Housing_Development_Project_1
-    {
-        internal class House
-        {
-            public string exteriorColor;
-            public int sqrFeet;
-    
-            public House(string houseExteriorColor, int houseSquareFeet)
-            {
-                exteriorColor = houseExteriorColor;
-                sqrFeet = houseSquareFeet;
-            }
-        }
-    }
-    ```
-
-1. Review your Program.cs file.
-
-    Your Program.cs file should look like the following:
-
-    ```csharp
-    using Housing_Development_Project_1 // this statement is automatically generated
-    
-    House myHouse = new House("light grey", 2000);
-    Console.WriteLine("You initialized this object with the following values:");
-    Console.WriteLine("Color: " +  myHouse.exteriorColor + "  Square feet: " + myHouse.sqrFeet);
+    Console.WriteLine("Calculate square feet: " +  myHouse.GetSquareFootage(220.7, 110.5));
     ```
 
 1. Run your code.
