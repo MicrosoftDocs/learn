@@ -42,7 +42,7 @@ modules:
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.azure.monitor-azure-arc-enabled-servers
 - learn.monitor-aks-using-container-insights
-- learn.wwl.design-implement-network-monitoring
 - learn.azure.intro-to-arc-enabled-kubernetes
+- learn.wwl.design-implement-network-monitoring
 trophy:
   uid: learn.monitor-hybrid-virtual-machines-containers-network.trophy
