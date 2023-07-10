@@ -9,6 +9,8 @@ metadata:
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-blazor
 durationInMinutes: 10
 content: |

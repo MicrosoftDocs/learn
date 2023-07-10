@@ -1,5 +1,6 @@
 
 
+
 AD DS offers a wide range of business-related and technological benefits. By design, its primary purpose is to serve as an identity and access management solution for on-premises, independently managed, isolated environments, and most of its characteristics reflect this underlying premise.
 
 The authentication mechanisms of AD DS rely largely on having domain-member computers permanently joined to the domain. The communication with domain controllers involves protocols such as Lightweight Directory Access Protocol (LDAP) for directory services lookups, Kerberos for authentication, and Server Message Block (SMB) for Group Policy–based interaction with AD DS domain controllers. protocols are suitable for Internet environments.

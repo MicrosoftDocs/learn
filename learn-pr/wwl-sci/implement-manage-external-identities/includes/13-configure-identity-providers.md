@@ -1,3 +1,4 @@
+
 You can set up direct federation with any organization whose identity provider (IdP) supports the Security Assertion Markup Language (SAML) 2.0 or WS-Federation (WS-Fed) protocol. When you set up direct federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Azure Active Directory (Azure AD) tenant and start collaborating with you. There's no need for the guest user to create a separate Azure AD account.
 
 > [!NOTE]
@@ -124,12 +125,12 @@ We’re continuing to test various platforms and scenarios, and will update publ
 
 ### To test your apps for compatibility
 
-1. Follow [Google’s guidance](https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html) to determine if your apps are affected.
-1. Using Fiddler or another testing tool, inject a header during sign-in and use a Google external identity to test sign-in:
-    1. Add `Google-Accounts-Check-OAuth-Login:true` to your HTTP request headers when the requests are sent to accounts.google.com.
-    1. Attempt to sign in to the app by entering a Gmail address in the accounts.google.com sign-in page.
-    1. If sign-in fails and you see an error such as “This browser or app may not be secure,” your Google external identities will be blocked from signing in.
-1. Resolve the issue by doing one of the following tasks:
+1.  Follow [Google’s guidance](https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html) to determine if your apps are affected.
+2.  Using Fiddler or another testing tool, inject a header during sign-in and use a Google external identity to test sign-in:
+    1.  Add `Google-Accounts-Check-OAuth-Login:true` to your HTTP request headers when the requests are sent to accounts.google.com.
+    2.  Attempt to sign in to the app by entering a Gmail address in the accounts.google.com sign-in page.
+    3.  If sign-in fails and you see an error such as “This browser or app may not be secure,” your Google external identities will be blocked from signing in.
+3.  Resolve the issue by doing one of the following tasks:
     
     
      -  If your Windows app uses embedded WebView or the WebAccountManager (WAM) on an older version of Windows, update to the latest version of Windows.
@@ -153,29 +154,29 @@ You can also give Google guest users a direct link to an application or resource
 
 First, create a new project in the Google Developers Console to obtain a client ID and a client secret that you can later add to Azure Active Directory (Azure AD).
 
-1. Go to the Google APIs at [https://console.developers.google.com](https://console.developers.google.com/), and sign in with your Google account. We recommend that you use a shared team Google account.
-1. Accept the terms of service if you're prompted to do so.
-1. Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Azure AD B2B**), and then select **Create**:
+1.  Go to the Google APIs at [https://console.developers.google.com](https://console.developers.google.com/), and sign in with your Google account. We recommend that you use a shared team Google account.
+2.  Accept the terms of service if you're prompted to do so.
+3.  Create a new project: On the dashboard, select **Create Project**, give the project a name (for example, **Azure AD B2B**), and then select **Create**:
     
     :::image type="content" source="../media/google-new-project-5eeb7717.png" alt-text="Screenshot of the New Project page within the Google developers page.":::
     
-1. On the **APIs and Services** page, select **View** under your new project.
-1. Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**.
-1. Select **External**, and then select **Create**.
-1. On the **OAuth consent screen**, enter an **Application name**:
+4.  On the **APIs and Services** page, select **View** under your new project.
+5.  Select **Go to APIs overview** on the APIs card. Select **OAuth consent screen**.
+6.  Select **External**, and then select **Create**.
+7.  On the **OAuth consent screen**, enter an **Application name**:
     
     :::image type="content" source="../media/google-oauth-consent-screen-90a0c899.png" alt-text="Screenshot of the Google OAuth consent screen. Users have to confirm their usage.":::
     
-1. Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
+8.  Scroll to the **Authorized domains** section and enter **microsoftonline.com**:
     
     :::image type="content" source="../media/google-oauth-authorized-domains-ce2eb72d.png" alt-text="Screenshot of the Authorized domains section, showing with Google domains are valid.":::
     
-1. Select **Save**.
-1. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
+9.  Select **Save**.
+10. Select **Credentials**. On the **Create credentials** menu, select **OAuth client ID**:
     
     :::image type="content" source="../media/google-api-credentials-17808992.png" alt-text="Screenshot of the Google APIs Create credentials menu. Configure your credentials here.":::
     
-1. Under **Application type**, select **Web application**. Give the application a suitable name, like **Azure AD B2B**. Under **Authorized redirect URIs**, enter the following URIs:
+11. Under **Application type**, select **Web application**. Give the application a suitable name, like **Azure AD B2B**. Under **Authorized redirect URIs**, enter the following URIs:
     
     
      -  `https://login.microsoftonline.com`
@@ -183,7 +184,7 @@ First, create a new project in the Google Developers Console to obtain a client 
     
     :::image type="content" source="../media/google-create-oauth-client-id-2e5afde1.png" alt-text="Screenshot of the Authorized redirect URIs section. Where do users go to validate authorization.":::
     
-1. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
+12. Select **Create**. Copy the client ID and client secret. You'll use them when you add the identity provider in the Azure portal.
     
     :::image type="content" source="../media/google-auth-client-id-secret-3bda508c.png" alt-text="Screenshot of the OAuth client ID and client secret. Set your access secret.":::
     
@@ -194,10 +195,10 @@ You'll now set the Google client ID and client secret. You can use the Azure por
 
 **To configure Google federation in the Azure portal**
 
-1. Go to the [Azure portal](https://portal.azure.com/). On the left pane, select **Azure Active Directory**.
-1. Select **External Identities**.
-1. Select **All identity providers**, and then select the **Google** button.
-1. Enter the client ID and client secret you obtained earlier. Select **Save**:
+1.  Go to the [Azure portal](https://portal.azure.com/). On the left pane, select **Azure Active Directory**.
+2.  Select **External Identities**.
+3.  Select **All identity providers**, and then select the **Google** button.
+4.  Enter the client ID and client secret you obtained earlier. Select **Save**:
     
     :::image type="content" source="../media/google-identity-provider-efa96217.png" alt-text="Screenshot of the Add Google identity provider page. Pick your identity provider.":::
     
@@ -208,14 +209,14 @@ You can delete your Google federation setup. If you do so, Google guest users wh
 
 **To delete Google federation in the Azure AD portal**
 
-1. Go to the [Azure portal](https://portal.azure.com/). On the left pane, select **Azure Active Directory**.
-1. Select **External Identities**.
-1. Select **All identity providers**.
-1. On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
+1.  Go to the [Azure portal](https://portal.azure.com/). On the left pane, select **Azure Active Directory**.
+2.  Select **External Identities**.
+3.  Select **All identity providers**.
+4.  On the **Google** line, select the ellipsis button (**...**) and then select **Delete**.
     
     :::image type="content" source="../media/google-social-identity-providers-22681be3.png" alt-text="Screenshot of the Delete button for the social identity provider.":::
     
-1. Select **Yes** to confirm the deletion.
+5.  Select **Yes** to confirm the deletion.
 
 ## Add Facebook as an identity provider for external identities
 
@@ -234,24 +235,24 @@ To use a Facebook account as an identity provider, you need to create an applica
  -  For **Site URL** enter the address of your application, such as `https://contoso.com`.
  -  For **Valid OAuth redirect URIs**, enter `https://login.microsoftonline.com/te/ tenant-id /oauth2/authresp`. You can find your `tenant-ID`in the Azure Active Directory Overview screen.
 
-1. Sign in to [Facebook for developers](https://developers.facebook.com/) with your Facebook account credentials.
-1. If you haven't already done so, you need to register as a Facebook developer. Select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
-1. Select **My Apps** and then **Create App**.
-1. Enter a **Display Name** and a valid **Contact Email**.
-1. Select **Create App ID**. You may have to accept Facebook platform policies and complete an online security check.
-1. Select **Settings** then select **Basic**.
-1. Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Azure AD.
-1. At the bottom of the page, select **Add Platform**, and then select **Website**.
-1. In **Site URL**, enter the appropriate URL (noted above).
-1. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example `http://www.contoso.com`.
-1. Select **Save Changes**.
-1. At the top of the page, copy the value of **App ID**.
-1. Select **Show** and copy the value of **App Secret**. You use both of them to configure Facebook as an identity provider in your tenant. **App Secret** is an essential security credential.
-1. Select the plus sign next to **PRODUCTS**, and then select **Set up** under **Facebook Login**.
-1. Under **Facebook Login**, select **Settings**.
-1. In **Valid OAuth redirect URIs**, enter the appropriate URL (noted above).
-1. Select **Save Changes** at the bottom of the page.
-1. To make your Facebook application available to Azure AD, select the Status selector at the top right of the page and turn it **On** to make the Application public, and then select **Switch Mode**. At this point, the Status should change from **Development** to **Live**.
+1.  Sign in to [Facebook for developers](https://developers.facebook.com/) with your Facebook account credentials.
+2.  If you haven't already done so, you need to register as a Facebook developer. Select **Get Started** on the upper-right corner of the page, accept Facebook's policies, and complete the registration steps.
+3.  Select **My Apps** and then **Create App**.
+4.  Enter a **Display Name** and a valid **Contact Email**.
+5.  Select **Create App ID**. You may have to accept Facebook platform policies and complete an online security check.
+6.  Select **Settings** then select **Basic**.
+7.  Choose a **Category**, for example Business and Pages. This value is required by Facebook, but not used for Azure AD.
+8.  At the bottom of the page, select **Add Platform**, and then select **Website**.
+9.  In **Site URL**, enter the appropriate URL (noted above).
+10. In **Privacy Policy URL**, enter the URL for the page where you maintain privacy information for your application, for example http://www.contoso.com.
+11. Select **Save Changes**.
+12. At the top of the page, copy the value of **App ID**.
+13. Select **Show** and copy the value of **App Secret**. You use both of them to configure Facebook as an identity provider in your tenant. **App Secret** is an essential security credential.
+14. Select the plus sign next to **PRODUCTS**, and then select **Set up** under **Facebook Login**.
+15. Under **Facebook Login**, select **Settings**.
+16. In **Valid OAuth redirect URIs**, enter the appropriate URL (noted above).
+17. Select **Save Changes** at the bottom of the page.
+18. To make your Facebook application available to Azure AD, select the Status selector at the top right of the page and turn it **On** to make the Application public, and then select **Switch Mode**. At this point, the Status should change from **Development** to **Live**.
 
 ## Configure a Facebook account as an identity provider
 
@@ -259,16 +260,16 @@ Now you'll set the Facebook client ID and client secret, either by entering it i
 
 ### To configure Facebook federation in the Azure AD portal
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) as the global administrator of your Azure AD tenant.
-1. Under **Azure services**, select **Azure Active Directory**.
-1. In the left menu, select **External Identities**.
-1. Select **All identity providers**, then select **Facebook**.
-1. For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
-1. For the **Client secret**, enter the **App Secret** that you recorded.
+1.  Sign in to the [Azure portal](https://portal.azure.com/) as the global administrator of your Azure AD tenant.
+2.  Under **Azure services**, select **Azure Active Directory**.
+3.  In the left menu, select **External Identities**.
+4.  Select **All identity providers**, then select **Facebook**.
+5.  For the **Client ID**, enter the **App ID** of the Facebook application that you created earlier.
+6.  For the **Client secret**, enter the **App Secret** that you recorded.
     
     :::image type="content" source="../media/add-social-identity-provider-page-50bdac92.png" alt-text="Screenshot of the Add social identity provider page. Pick your social media provider.":::
     
-1. Select **Save**.
+7.  Select **Save**.
 
 ## How do I remove Facebook federation?
 
@@ -276,8 +277,8 @@ You can delete your Facebook federation setup. If you do so, any users who have 
 
 ### To delete Facebook federation in the Azure AD portal:
 
-1. Go to the [Azure portal](https://portal.azure.com/). In the left pane, select **Azure Active Directory**.
-1. Select **External Identities**.
-1. Select **All identity providers**.
-1. On the **Facebook** line, select the context menu (**...**) and then select **Delete**.
-1. Select **Yes** to confirm deletion.
+1.  Go to the [Azure portal](https://portal.azure.com/). In the left pane, select **Azure Active Directory**.
+2.  Select **External Identities**.
+3.  Select **All identity providers**.
+4.  On the **Facebook** line, select the context menu (**...**) and then select **Delete**.
+5.  Select **Yes** to confirm deletion.

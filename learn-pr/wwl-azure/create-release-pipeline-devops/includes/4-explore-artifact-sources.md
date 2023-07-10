@@ -1,3 +1,4 @@
+
 What is an artifact? An artifact is a deployable component of your application. These components can then be deployed to one or more environments.
 
 In general, the idea about build and release pipelines and Continuous Delivery is to build once and deploy many times.

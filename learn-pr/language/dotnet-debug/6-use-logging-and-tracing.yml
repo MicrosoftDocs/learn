@@ -6,9 +6,12 @@ metadata:
   description: Learn how to use logging, tracing, and assertions in .NET applications.
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.date: 10/28/2020
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 4
 content: |
   [!include[](includes/6-use-logging-and-tracing.md)]

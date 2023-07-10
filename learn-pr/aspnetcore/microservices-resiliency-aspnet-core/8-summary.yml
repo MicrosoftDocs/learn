@@ -5,9 +5,12 @@ metadata:
   description: Review what you learned in the tutorial, and deprovision the Azure resources that you used.
   author: scottaddie
   ms.author: scaddie
+  ms.manager: markl
   ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
 title: Summary
 durationInMinutes: 2
 content: |

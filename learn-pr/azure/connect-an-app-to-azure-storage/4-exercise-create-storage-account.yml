@@ -8,6 +8,8 @@ metadata:
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 interactive: bash
 azureSandbox: true

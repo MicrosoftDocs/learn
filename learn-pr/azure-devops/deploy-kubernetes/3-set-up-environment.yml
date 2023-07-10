@@ -7,7 +7,9 @@ metadata:
   ms.date: 04/19/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-azurecli
   ms.topic: interactive-tutorial
   ms.service: azure
 durationInMinutes: 25

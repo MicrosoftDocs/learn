@@ -4,11 +4,10 @@ title: Integrate Azure Active Directory with SAP Fiori
 metadata:
   title: Integrate Azure Active Directory with SAP Fiori
   description: "Integrate Azure Active Directory with SAP Fiori"
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/6-exercise-integrate-azure-active-directory-sap-fiori.md)]

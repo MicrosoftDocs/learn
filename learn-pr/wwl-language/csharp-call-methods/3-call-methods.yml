@@ -8,6 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |

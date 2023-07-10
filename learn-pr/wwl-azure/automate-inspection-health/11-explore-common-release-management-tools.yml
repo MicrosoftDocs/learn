@@ -4,11 +4,13 @@ title: Explore common release management tools
 metadata:
   title: Explore common release management tools
   description: "Explore common release management tools"
-  ms.date: 04/28/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - devx-track-jenkins
+  ms.prod: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/11-explore-common-release-management-tools.md)]
