@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 23
 content: |
   [!include[](includes/1b-video.md)]
