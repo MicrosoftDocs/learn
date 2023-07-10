@@ -3,11 +3,13 @@ uid: learn.distribute-load-with-traffic-manager.3-exercise-priority-routing
 metadata:
   title: Exercise - Enable automatic failover by using priority routing
   description: In this hands-on exercise, you enable automatic failover by using priority routing
-  ms.date: 04/15/2019
+  ms.date: 06/27/2023
   author: greg-lindsay
   ms.author: greglin
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 title: Exercise - Enable automatic failover by using priority routing
 interactive: bash
 azureSandbox: true

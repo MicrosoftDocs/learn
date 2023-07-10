@@ -9,7 +9,11 @@ metadata:
   ms.date: 12/09/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, devx-track-azurecli
+  ms.custom:
+    - team=nextgen
+    - devx-track-azurecli
+    - devx-track-arm-template
+    - devx-track-azurepowershell
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 5
 azureSandbox: true

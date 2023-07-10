@@ -4,21 +4,21 @@ Suppose you work for an IT organization that provides cloud-based services to a 
 - The administration experience should be similar to standard Azure VM deployments.
 - All data must remain secure and private within the host environment.
 
-To fulfill these requirements, you decide to use Azure Dedicated Hosts. With Azure Dedicated Hosts, you can allocate dedicated physical servers to host your customer's virtual machines for improved performance, control, and data isolation.
+To fulfill these requirements, you decide to use Azure dedicated hosts. With Azure dedicated hosts, you can allocate dedicated physical servers to host your customer's virtual machines for improved performance, control, and data isolation.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Understand the purpose and benefits of Azure Dedicated Hosts
-- Familiarize with the key features and capabilities of Azure Dedicated Hosts
-- Learn how Azure Dedicated Hosts work
-- Learn the architecture and components of Azure Dedicated Hosts
-- Understand the process of creating and deploying private VMs using Azure Dedicated Hosts
-- Identify the use cases and scenarios for Azure Dedicated Hosts
-- Evaluate the performance of an Azure Dedicated Host setup for your business
+- Understand the purpose and benefits of Azure dedicated hosts
+- Familiarize with the key features and capabilities of Azure dedicated hosts
+- Learn how Azure dedicated hosts work
+- Learn the architecture and components of Azure dedicated hosts
+- Understand the process of creating and deploying private VMs using Azure dedicated hosts
+- Identify the use cases and scenarios for Azure dedicated hosts
+- Evaluate the performance of an Azure dedicated hosts setup for your business
 
 ## Prerequisites
 
-- Experience with Azure, such as deploying and managing virtual machine resources.
+- Experience with Azure, such as deploying and managing virtual machine resources
 - Basic knowledge of how multi-tenant VMs share a single physical host’s resources

@@ -27,6 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.find-best-classification-model-automated-machine-learning.introduction
+- learn.wwl.find-best-classification-model-automated-machine-learning.video
 - learn.wwl.find-best-classification-model-automated-machine-learning.preprocess-data-configure-featurization
 - learn.wwl.find-best-classification-model-automated-machine-learning.run-job
 - learn.wwl.find-best-classification-model-automated-machine-learning.evaluate-compare-models

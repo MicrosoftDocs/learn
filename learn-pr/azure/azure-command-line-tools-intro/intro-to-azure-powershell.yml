@@ -8,6 +8,8 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: module-choose-best-product
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 title: Introduction to Azure PowerShell
 durationInMinutes: 3

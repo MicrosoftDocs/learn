@@ -10,12 +10,12 @@ metadata:
   ms.service: application-insights
 title: Capture and view page load times in your Azure web app with Application Insights
 summary: >
-  Application Insights is an Azure service that you can use to 
-  monitor the behavior and performance of a web application. If you run 
-  a web app in Azure, you can take advantage of several benefits provided 
-  by Application Insights simply by enabling it, without changing any of 
-  your code. When you complete this module, you'll know how to enable 
-  Application Insights and client-side monitoring and view metrics in the 
+  Application Insights is an Azure service that you can use to
+  monitor the behavior and performance of a web application. If you run
+  a web app in Azure, you can take advantage of several benefits provided
+  by Application Insights simply by enabling it, without changing any of
+  your code. When you complete this module, you'll know how to enable
+  Application Insights and client-side monitoring and view metrics in the
   portal.
 abstract: |
   In this module, you'll:
@@ -33,9 +33,7 @@ roles:
 - developer
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 - azure-application-insights
 - azure-monitor
 subjects:
