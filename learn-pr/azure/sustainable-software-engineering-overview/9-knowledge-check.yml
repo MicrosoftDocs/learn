@@ -3,52 +3,51 @@ uid: learn.azure.sustainable-software-engineering-overview.11-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: This module will check the knowledge gained so far.
-  ms.date: 10/26/2020
-  author: ashussai
-  ms.author: ashussai
+  description: This module checks the knowledge gained so far.
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
   ms.contributors:
-  - ashussai-01042022
+  - tozimmergren
+  - simont
 durationInMinutes: 3
 content: |
-  [!include[](includes/11-knowledge-check.md)]
+  [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following options lists the eight principles of Sustainable Software Engineering?"
+  - content: "Which of the following options lists the six principles of Sustainable Software Engineering?"
     choices:
-    - content: "Carbon, Alternative Energy, Carbon Intensity, Embodied Carbon, Energy Proportionality, Networking, Datacenter Scaling, Optimization"
+    - content: "Carbon, Alternative Energy, Carbon Intensity, Embodied Carbon, Energy Proportionality, Datacenter Scaling"
       isCorrect: false
-      explanation: "Sustainable Software Engineers build applications that are carbon efficient."
-    - content: "Carbon, Electricity, Carbon Intensity, Embodied Carbon, Energy Proportionality, Networking, Demand Shaping, Optimization"
+      explanation: "The six principles of Sustainable Software Engineering are Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement, and Climate Commitments."
+    - content: "Carbon Efficiency, Measurement, Carbon Awareness, Climate Commitments, Energy Efficiency, Hardware Efficiency"
       isCorrect: true
-      explanation: "The eight principles of Sustainable Software Engineering are Carbon, Electricity, Carbon Intensity, Embodied Carbon, Energy Proportionality, Networking, Demand Shaping, and Optimization."
-    - content: "Carbon, Electricity, Carbon Intensity, Embedded Carbon, Energy Proficiency, Networking, Demand Shaping, Optimization"
+      explanation: "The six principles of Sustainable Software Engineering are Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement, and Climate Commitments."
+    - content: "Carbon, Electricity, Carbon Intensity, Embedded Carbon, Energy Proficiency, Demand Shaping"
       isCorrect: false
-      explanation: "The eight principles of Sustainable Software Engineering are Carbon, Electricity, Carbon Intensity, Embodied Carbon, Energy Proportionality, Networking, Demand Shaping, and Optimization."
-  - content: "The eight principles are independent of which software elements:"
+      explanation: "The six principles of Sustainable Software Engineering are Carbon Efficiency, Energy Efficiency, Carbon Awareness, Hardware Efficiency, Measurement, and Climate Commitments."
+  - content: "The six principles are independent of which software elements:"
     choices:
     - content: "Active directory domain, Organization size or type, Cloud vendor or self-hosted, Programming language or framework"
       isCorrect: false
-      explanation: "The eight principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
+      explanation: "The six principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
     - content: "Application domain, Optimization scale or tenant, Cloud vendor or self-hosted, Programming language or framework"
       isCorrect: false
-      explanation: "The eight principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
+      explanation: "The six principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
     - content: "Application domain, Organization size or type, Cloud vendor or self-hosted, Programming language or framework"
       isCorrect: true
-      explanation: "The eight principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
+      explanation: "The six principles are independent of application domain, organization size or type, cloud vendor or self-hosted, and programming language or framework."
   - content: "True or False: to be carbon-efficient is to minimize the amount of carbon emitted per unit of work."
     choices:
     - content: "True"
       isCorrect: true
-      explanation: "As discussed under Principle 1: Carbon, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
+      explanation: "As discussed under the Carbon Efficiency principle, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
     - content: "False"
       isCorrect: false
-      explanation: "As discussed under Principle 1: Carbon, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
+      explanation: "As discussed under the Carbon Efficiency principle, the focus of sustainable software engineering is to build applications that are carbon efficient to minimize the amount of carbon emitted into the atmosphere."
   - content: "What is the single most significant cause of carbon emissions?"
     choices:
     - content: "Agriculture"

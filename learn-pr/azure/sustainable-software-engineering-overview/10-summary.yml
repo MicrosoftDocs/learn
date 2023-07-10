@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.sustainable-software-engineering-overview.1-introduction
-title: Introduction
+uid: learn.azure.sustainable-software-engineering-overview.summary
+title: Summary
 metadata:
-  title: Introduction
-  description: Introduction
+  title: Summary
+  description: Summary
   ms.date: 06/13/2023
   author: Zimmergren
   ms.author: tozimmergren
@@ -12,6 +12,6 @@ metadata:
   ms.contributors:
   - tozimmergren
   - simont
-durationInMinutes: 1
+durationInMinutes: 2
 content: |
-  [!include[](includes/1-introduction.md)]
+  [!include[](includes/10-summary.md)]
