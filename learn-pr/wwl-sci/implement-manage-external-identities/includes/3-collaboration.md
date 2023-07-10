@@ -1,4 +1,3 @@
-
 Azure AD External Identities is a feature that makes it possible for you to allow people outside your organization to access your apps and resources. Your partners, distributors, suppliers, vendors, and other guest users can "bring their own identities." Whether they have a corporate or government-issued digital identity, or an unmanaged social identity like Google or Facebook, they can use their own credentials to sign in. The external user’s identity provider manages their identity, and you manage access to your apps with Azure AD to keep your resources protected.
 
 ## Invitation redemption flow
