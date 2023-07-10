@@ -1,4 +1,3 @@
-
 ## Invite guest users in bulk
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that is a User administrator in the organization.
@@ -24,7 +23,7 @@
     :::image type="content" source="../media/bulk-invite-users-upload-csv-264e8b21.png" alt-text="Screenshot of the Bulk invite users with File uploaded successfully message highlighted.":::
     
 11. When your file passes validation, select **Submit** to start the Azure bulk operation that adds the invitations.
-12. To view the job status, select **Click here to view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **\# Success**, **\# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
+12. To view the job status, select **view the status of each operation**. Or, you can select **Bulk operation results** in the Activity section. For details about each line item within the bulk operation, select the values under the **\# Success**, **\# Failure**, or **Total Requests** columns. If failures occurred, the reasons for failure will be listed.
     
     :::image type="content" source="../media/bulk-operations-results-0cb76083.png" alt-text="Screenshot of the results of a bulk operation. You see the success and fail statistics of the operation.":::
     
