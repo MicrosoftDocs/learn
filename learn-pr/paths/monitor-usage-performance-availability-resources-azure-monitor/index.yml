@@ -9,7 +9,7 @@ metadata:
   ms.author: guywild
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: MAzure Monitor fundamentals
+title: Azure Monitor fundamentals
 summary:  |
   Learn how to monitor the usage, performance, and availability of resources using Azure Monitor.
 prerequisites: |
