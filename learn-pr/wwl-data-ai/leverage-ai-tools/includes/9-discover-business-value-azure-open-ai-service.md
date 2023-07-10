@@ -24,7 +24,7 @@ OpenAI models evolve continuously, and so does Azure OpenAI Service. You can che
 
 ## Benefits of using Azure OpenAI Service instead of connecting directly to the OpenAI API
 
-Many business leaders aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the Azure IoenAI Service:
+Many business leaders aren't sure about the difference between consuming OpenAI models directly from their API or via Azure OpenAI Service. There are clear reasons for organizations to prefer the Azure OpenAI Service:
 
 * **Same models**: Given a specific model and version, Azure delivers exactly the same as the API. Azure users aren't missing any updates. The AI is just as good.
 
