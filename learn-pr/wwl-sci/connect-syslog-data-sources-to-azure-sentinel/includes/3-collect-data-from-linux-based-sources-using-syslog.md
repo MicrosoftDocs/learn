@@ -48,7 +48,7 @@ To install the agent on an Azure Linux virtual machine:
 
 ## **For any other Linux machine:**
 
-To install the agent on non-Azure Linux virtual hosts:
+To install the agent on non-Azure Linux physical or virtual machines:
 
 1. In the Azure portal, enter **Arc** in the `Search resources, services, and docs` search bar.
 
@@ -106,7 +106,7 @@ To install the agent on non-Azure Linux virtual hosts:
 
 1. When the script editing is complete, open a `Bash console` as an administrative (root) user on your non-Azure Linux machine and run the script.
 
-1. The script tests connectivity to Azure endpoints and then request you to sign in to `https://microsoft.com/devicelogin` and enter the supplied code to authenticate.
+1. The script tests connectivity to Azure endpoints and then requests you to sign in to `https://microsoft.com/devicelogin` and enter the supplied code to authenticate.
 
     :::image type="content" source="../media/03-azcmagent-connect-script.png" alt-text="Screenshot of the azcmagent connection script running.":::
 
@@ -122,6 +122,9 @@ To install the agent on non-Azure Linux virtual hosts:
 
     :::image type="content" source="../media/03-azure-arc-connected-server.png" alt-text="Screenshot of azure Arc connected Linux server":::
 
+    > [!NOTE]
+    > Select Refresh if the Linux machine is not displayed.
+
 1. The next task is to add your newly connected Azure Arc Linux server to your previously created Data Collection Rule for Syslog.
 
 1. In the Azure portal, enter **DCR** in the `Search resources, services, and docs` search bar.
@@ -132,7 +135,7 @@ To install the agent on non-Azure Linux virtual hosts:
 
 1. In **Resources** select **+ Add**
 
-1. In the **Select a scope** page, expand the **Scope** column until your **Server-Azure Arc** `Resource type` newly connected Linux machine is displayed.
+1. In the **Select a scope** page, expand the **Scope** column until your **Server - Azure Arc** `Resource type` newly connected Linux machine is displayed.
 
 1. Select the Linux Azure Arc machine and select **Apply**
 
