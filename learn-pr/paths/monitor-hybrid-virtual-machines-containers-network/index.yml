@@ -1,10 +1,10 @@
 ### YamlMime:LearningPath
-uid: learn.monitor-virtual-machines-containers-network
-title: Monitor virtual machines, containers, and network resources
+uid: learn.monitor-hybrid-virtual-machines-containers-network
+title: Monitor hybrid virtual machines, containers, and network resources
 summary: Learn how to monitor virtual machines, containers, and network resources with Azure Monitor.
 metadata:
-  title: Monitor virtual machines, containers, and network resources
-  description: Learn how to monitor virtual machines, containers, and network resources with Azure Monitor.
+  title: Monitor hybrid virtual machines, containers, and network resources
+  description: Learn how to monitor virtual machines, containers, and network resources in a hybrid environment with Azure Monitor.
   ms.date: 07/03/2023
   author: guywi-ms
   ms.author: guywild
@@ -38,11 +38,11 @@ subjects:
 - it-management-monitoring
 - virtual-machine
 modules:
-- learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.azure.monitor-azure-vm-using-diagnostic-data
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.azure.monitor-azure-arc-enabled-servers
 - learn.monitor-aks-using-container-insights
 - learn.wwl.design-implement-network-monitoring
+- learn.azure.intro-to-arc-enabled-kubernetes
 trophy:
-  uid: learn.monitor-virtual-machines-containers-network.trophy
+  uid: learn.monitor-hybrid-virtual-machines-containers-network.trophy
