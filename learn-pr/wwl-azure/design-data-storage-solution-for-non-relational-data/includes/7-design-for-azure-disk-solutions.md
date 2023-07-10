@@ -1,3 +1,4 @@
+
 Azure offers many disk solutions. In this module, we examine how to work with data disks by using Azure managed disks.
 
 Data disks are used by virtual machines to store data like database files, website static content, or custom application code. The number of data disks you can add depends on the virtual machine size. Each data disk has a maximum capacity of 32,767 GB.

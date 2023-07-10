@@ -1,4 +1,3 @@
-
 Now that you have reviewed this module, you should be able to:
 
  -  Manage external collaboration settings in Azure AD

@@ -3,16 +3,15 @@ uid: learn.azure.sustainable-software-engineering-overview.2-overview
 title: Overview of Sustainable Software Engineering
 metadata:
   title: Overview of Sustainable Software Engineering
-  description: This module will explain what Sustainable Software Engineering is and the two core philosophies that underpin it.
-  ms.date: 10/26/2020
-  author: ashussai
-  ms.author: ashussai
+  description: This module explains what Sustainable Software Engineering is and the two core philosophies that underpin it.
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-  - team=cloud_advocates
   ms.contributors:
-  - ashussai-11102020
+  - tozimmergren
+  - simont
 durationInMinutes: 3
 content: |
   [!include[](includes/2-overview.md)]
