@@ -1,34 +1,14 @@
-You follow the Tailspin Space Game web team as they discuss how to best deliver on new marketing requirements driven by management. As usual, the team needs to navigate a combination of organizational, business, and technical challenges to deliver their software. The team needs to integrate some serverless technology, specifically Azure Functions, into their DevOps process.
+You follow the Tailspin Space Game web team as they discuss how to best deliver on new marketing requirements driven by management. The team needs to integrate some serverless technology, specifically Azure Functions, into their DevOps process.
 
-They've been making great strides in building out their automated processes. However, the reality of DevOps is that requirements can be fluid, so the ability to react to change is paramount. Let's check in with the team.
+Let's check in with the team.
 
 ## The new requirements
 
-Irwin, the product manager, has called an urgent meeting with key team members to deliver news about some new requirements.
-
-**Irwin:** Thanks for meeting on such short notice. Things are heating up, and the marketing team has made some promises that could make things complicated for all of us.
-
-**Andy:** Well, you've got my attention now!
-
-**Irwin:** They really like our site. They think the leaderboard can be used to promote the game as we head toward the final launch and beyond. They want to scale it out way beyond what we'd originally planned.
+**Irwin:** Thanks for meeting on such short notice. Things are heating up, and the marketing team has made some promises that could make things complicated for all of us. They really like our site. They think the leaderboard can be used to promote the game as we head toward the final launch and beyond. They want to scale it out way beyond what we'd originally planned.
 
 **Mara:** That's great, right? We're on Azure, so we can scale the service out as much as needed.
 
-**Irwin:** Well, it's not that simple. They started off talking about "leveraging" and "synergy" and I sort of zoned out checking email. When I came back around they were asking me to task you with finding the most secure way for us to give anonymous third parties access to our database.
-
-**Tim:** What? That's a terrible idea! Do they understand how many security risks that could create?
-
-**Irwin:** I know, I know. That was my first reaction, as well. I probed a bit deeper and it turns out that they really just want the ability for anyone to integrate leaderboard data into their own applications. They think it would be really cool to have the same leaderboard options on our site, from within the game, on gaming-review sites run by partners, and even by players who want to show it on their blogs and personal sites.
-
-**Andy:** So then it's just an API they're after. We already kind of have what we need to expose that, and I'm sure we can make it developer-friendly and scale up using Azure.
-
-**Irwin:** Yes, I know you can. However, there are a few potential challenges we need to work through. The game engine team currently owns the production database that we pull leaderboard data from. They think they should build and own the API moving forward. I told them that it's really a better fit for our team, but management isn't sure either way.
-
-**Andy:** How can we show them that we have it under control?
-
-**Irwin:** They're going to give us a week to put a proof of concept in place. However, they said that the final decision of ownership will be made based on the appropriate organizational structure. As a result, we'll need to deliver a solution that is completely decoupled from the web site. Any team should be able to take over the project as a standalone component.
-
-**Tim:** I'm not sure how I feel about this. I'm already spread too thin. I don't know if I have the bandwidth to add managing the infrastructure for yet another site. I'm also concerned about the scale requirements since we probably need to expect unpredictable surges in demand followed by lulls. We won't want to pay for peak demand the entire time.
+**Irwin:**  They really just want the ability for anyone to integrate leaderboard data into their own applications. They think it would be really cool to have the same leaderboard options on our site, from within the game, on gaming-review sites run by partners, and even by players who want to show it on their blogs and personal sites. One challenge is that the game engine team currently owns the production database that we pull leaderboard data from. They think they should build and own the API moving forward.
 
 **Andy:** Mara, do you have any thoughts?
 
@@ -40,8 +20,6 @@ Irwin, the product manager, has called an urgent meeting with key team members t
 - We need to have massive scale without making a massive commitment.
 
 *The team nods in agreement*.
-
-**Andy:** Great, Mara and I will meet tomorrow to come up with a plan.
 
 ## It works on my machine
 
