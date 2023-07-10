@@ -4,7 +4,7 @@ Let's check in with the team.
 
 ## The new requirements
 
-**Irwin:** Thanks for meeting on such short notice. Things are heating up, and the marketing team has made some promises that could complicated things for all of us. They really like our site. They think the leaderboard can be used to promote the game as we head toward the final launch and beyond. They want to scale it out way beyond what we'd originally planned.
+**Irwin:** Thanks for meeting on such short notice. Things are heating up, and the marketing team has made some promises that could complicate things for all of us. They really like our site. They think the leaderboard can be used to promote the game as we head toward the final launch and beyond. They want to scale it out way beyond what we'd originally planned.
 
 **Mara:** That's great, right? We're on Azure, so we can scale out the service as much as needed.
 
