@@ -71,13 +71,13 @@ To make commands easier to run, start by selecting a default region. After you s
 
 Create a resource group to contain the resources used in this training module.
 
-1. To create a resource group that's named *tailspin-space-game-rg*, run the following `az group create` command.
+- To create a resource group that's named *tailspin-space-game-rg*, run the following `az group create` command.
 
     ```azurecli
     az group create --name tailspin-space-game-rg
     ```
 
-### Create the vM
+### Create the VM
 
 To create your VM, in Cloud Shell (at right), run the following `az vm create` command:
 
