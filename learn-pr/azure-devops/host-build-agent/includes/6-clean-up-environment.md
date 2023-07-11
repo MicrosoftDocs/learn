@@ -24,6 +24,9 @@ To clean up your resource group:
 
     When prompted, to confirm the operation, enter `y`.
 
+    > [!NOTE]
+    > If you are still signed in to SSH in Cloud Shell window from the previous step, run the `exit` command to exit SSH and then run the `az delete` command.
+
 1. As an optional step, after the previous command finishes, run the following `az group list` command.
 
     ```azurecli
