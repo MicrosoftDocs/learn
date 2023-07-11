@@ -69,17 +69,3 @@ quiz:
         - content: "Maintaining a single administrative account for all users."
           isCorrect: false
           explanation: "Maintaining a single administrative account for all users can make it harder to track user actions and provide accountability. It isn't a recommended security best practice."
-    - content: "What is one step you should take to secure an App Service?"
-      choices:
-        - content: "Use a weak password for the App Service."
-          isCorrect: false
-          explanation: "Using a weak password makes it easier for attackers to guess or brute-force their way into your App Service. It isn't a recommended security best practice."
-        - content: "Open up all incoming ports."
-          isCorrect: false
-          explanation: "Opening up all incoming ports creates more attack surface, making it easier for attackers to attempt to exploit vulnerabilities in your App Service. It isn't a recommended security best practice."
-        - content: "Enable web app firewall (WAF) protection."
-          isCorrect: true
-          explanation: "Enabling WAF protection helps protect your App Service from common web-based attacks like cross-site scripting (XSS), SQL injection, and more."
-        - content: "Store plaintext passwords in app configuration settings."
-          isCorrect: false
-          explanation: "Storing plaintext passwords in app configuration settings can make them vulnerable to attackers who gain unauthorized access. It isn't a recommended security best practice."
