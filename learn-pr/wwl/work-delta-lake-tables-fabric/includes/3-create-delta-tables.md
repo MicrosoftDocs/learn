@@ -102,7 +102,7 @@ df.write.format("delta").save(delta_path)
 
 After saving the delta file, the path location you specified includes Parquet files containing the data and a **_delta_log** folder containing the transaction logs for the data. Any modifications made to the data through the delta lake API or in an external table that is subsequently created on the folder will be recorded in the transaction logs.
 
-You can replace the contents of an existing folder the data in a dataframe by using the **overwrite** mode, as shown here:
+You can replace the contents of an existing folder with the data in a dataframe by using the **overwrite** mode, as shown here:
 
 ```python
 new_df.write.format("delta").mode("overwrite").save(delta_path)
