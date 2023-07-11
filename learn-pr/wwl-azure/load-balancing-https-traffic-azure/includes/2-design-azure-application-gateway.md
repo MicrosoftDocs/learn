@@ -53,7 +53,7 @@ Review the [feature comparison table](/azure/application-gateway/overview-v2#fea
 
 ## Choosing between Azure Application Gateway v2 and Web Application Firewall V2 SKUs
 
-When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow and the cost of the service.
+When choosing whether to deploy an Application Gateway or a Web Application Firewall, there are several factors you must consider, including the scaling strategy you want to follow.
 
 ### Scaling Application Gateway and WAF v2
 
@@ -61,14 +61,6 @@ Application Gateway and WAF can be configured to scale in two modes:
 
 **Autoscaling:** With autoscaling enabled, the Application Gateway and WAF v2 SKUs scale up or down based on application traffic requirements. This mode offers better elasticity to your application and eliminates the need to guess the application gateway size or instance count. This mode also allows you to save cost by not requiring the gateway to run at peak provisioned capacity for anticipated maximum traffic load. You must specify a minimum and optionally maximum instance count. Minimum capacity ensures that Application Gateway and WAF v2 don't fall below the minimum instance count specified, even in the absence of traffic. Each instance is roughly equivalent to 10 additional reserved Capacity Units. Zero signifies no reserved capacity and is purely autoscaling in nature. You can also optionally specify a maximum instance count, which ensures that the Application Gateway doesn't scale beyond the specified number of instances. You will only be billed for traffic served by the Gateway. The instance counts can range from 0 to 125. The default value for maximum instance count is 20 if not specified.
 
-**Manual:** You can alternatively choose Manual mode where the gateway won't autoscale. In this mode, if there is more traffic than the Application Gateway or WAF can handle, it could result in traffic loss. With manual mode, specifying instance count is mandatory. Instance count can vary from 1 to 125 instances.
+**Manual:** You can alternatively choose Manual mode where the gateway doesn't autoscale. In this mode, if there is more traffic than the Application Gateway or WAF can handle, it could result in traffic loss. With manual mode, specifying instance count is mandatory. Instance count can vary from 1 to 125 instances.
 
-### Pricing
 
-With the v2 SKU, the pricing model is driven by consumption and is no longer attached to instance counts or sizes. The v2 SKU pricing has two components:
-
-**Fixed price:** This is hourly (or partial hour) price to provision a Standard\_v2 or WAF\_v2 Gateway. Please note that 0 additional minimum instances still ensure high availability of the service which is always included with fixed price.
-
-**Capacity Unit price:** This is a consumption-based cost that is charged in addition to the fixed cost. Capacity unit charge is also computed hourly or partial hourly. There are three dimensions to capacity unit - compute unit, persistent connections, and throughput. Compute unit is a measure of processor capacity consumed. Factors affecting compute unit are TLS connections/sec, URL Rewrite computations, and WAF rule processing. Persistent connection is a measure of established TCP connections to the application gateway in each billing interval. Throughput is average Megabits/sec processed by the system in each billing interval. The billing is done at a Capacity Unit level for anything above the reserved instance count.
-
-Each capacity unit is composed of at most: 1 compute unit, 2500 persistent connections, and 2.22-Mbps throughput.
