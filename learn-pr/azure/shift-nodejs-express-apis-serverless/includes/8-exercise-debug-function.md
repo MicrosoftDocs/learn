@@ -1,4 +1,4 @@
-In this exercise, you run and debug both the Express.js application and the Azure Functions application together. You explore the Azure Functions code that fetches the vacations and renders them in the browser, and set a new breakpoint in the code. You then use the breakpoints to step through the Azure Functions and Angular code with the debugger.
+In this exercise, you run and debug both the Express.js application and the Azure Functions application together. You explore the Functions code that fetches the vacations and renders them in the browser, and set a new breakpoint in the Functions code. You then use the breakpoints to step through the Functions and Angular code with the debugger.
 
 >[!NOTE]
 >The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
@@ -24,19 +24,16 @@ To display a list of vacations, the Angular application makes a call to the `vac
 
 ## Run and debug the application
 
-You've set breakpoints in both the Angular and the Functions applications. Now run and debug them together.
+You set a breakpoint in the Angular app previously when you ran the sample application. Now that you've set breakpoints in both the Angular and the Functions apps, run and debug them together.
 
 >[!NOTE]
->You don't run the functions in Azure yet. You're using powerful and convenient core tools to run and debug locally.
+>You don't run the functions in Azure yet. You're using core tools to run and debug locally.
 
 ### Proxy the requests from Angular to Functions
 
 The Azure Functions API runs on port `7071`, while the Angular application runs on port `4200`. The Angular application can't make requests across the domains to the Functions application, so you proxy the calls from the Angular application to the Functions application.
 
-Use the following code in Angular's _proxy.conf.json_ file to enable the Angular application to talk to and proxy requests to the Functions application.
-
-1. Open _proxy.conf.json_.
-1. Change the port to `7071`.
+To enable the Angular application to talk to and proxy requests to the Functions application, open _proxy.conf.json_ and change the port to `7071`.
 
    ```json
    {
@@ -48,7 +45,7 @@ Use the following code in Angular's _proxy.conf.json_ file to enable the Angular
    ```
 
 > [!NOTE]
-> The Node.js Express application used port `7070`, and the Functions application uses port `7071`. If you removed the Node.js Express application, you could use port `7070` for the Functions application. But for educational purposes, keep both ports.
+> The Node.js Express application used port `7070`. If you removed the Node.js Express application, you could use port `7070` for the Functions application. But for learning purposes, you keep both applications.
 
 ### Debug both applications
 

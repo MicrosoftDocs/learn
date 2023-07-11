@@ -20,7 +20,7 @@ In this unit, you get the existing application's code from GitHub, prepare the c
    npm install
    ```
 
-1. Build the Node.js Express and the Angular code.
+1. Build the Node.js Express and Angular code.
 
    ```bash
    npm run full:build
@@ -90,7 +90,7 @@ For example, the client app makes an `HTTP GET` request to the _/vacations_ rout
    }
    ```
 
-    The Node.js Express API runs on port `7070`, while the Angular application runs on a port `4200`. The Angular application can't make requests across the domains to the Node.js Express application. Setting up a proxy makes the browser locate the Express server at `http://localhost:4200/api` instead of `http://localhost:7070`.
+    The Node.js Express API runs on port `7070`, while the Angular application runs on port `4200`. The Angular application can't make requests across the domains to the Node.js Express application. Setting up a proxy enables the browser to locate the Express server.
 
 ## Run and debug the app
 
@@ -103,7 +103,7 @@ For example, the client app makes an `HTTP GET` request to the _/vacations_ rout
 
 1. Unpause execution and continue by pressing **F5**.
 
-   The code now pauses on your second breakpoint in the _vacation.routes.ts_ file because the Angular application hit the Node.js Express route `vacations`.
+   The code now pauses on your second breakpoint in the _vacation.routes.ts_ file because the Angular application hits the Node.js Express route `vacations`.
 
 1. There are two debugging processes running: one for Angular and one for Node.js Express. Press **SHIFT+F5** to stop the active debugger.
 1. Press **SHIFT+F5** again to stop the remaining debugger.

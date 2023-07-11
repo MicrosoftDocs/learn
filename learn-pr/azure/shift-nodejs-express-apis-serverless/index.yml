@@ -2,7 +2,7 @@
 uid: learn.azure.shift-express-api-azure-functions
 metadata:
   title: Refactor Node.js Express APIs to serverless Azure Functions APIs
-  description: Improve availability and scalability by refactoring an existing Node.js Express API to use Azure Functions.
+  description: Improve availability and scalability by refactoring an existing Node.js Express API to a serverless Azure Functions API.
   ms.date: 07/06/2023
   author: johnpapa
   ms.author: jopapa
@@ -10,17 +10,17 @@ metadata:
   ms.service: azure-functions
   manager: mijacobs
 title: Refactor Node.js and Express APIs to serverless Azure Functions APIs
-summary: Improve availability and scalability by refactoring an existing API to use Azure Functions.
+summary: Improve availability and scalability by refactoring an existing Node.js Express API to a serverless Azure Functions API.
 abstract: |
-  - Evaluate an existing project that implements a Node.js Express Application Programming Interfaces (API).
+  - Evaluate an existing application and project that implement a Node.js Express Application Programming Interface (API).
   - Create a new Azure Functions serverless application by using TypeScript and JavaScript.
-  - Refactor the Node.js Express API to use the Functions application.
+  - Refactor the Node.js Express API into a Functions API, and switch the application to use the Functions API.
   - Run and debug the application.
   - Understand the differences and similarities between Express APIs and Functions serverless APIs.
 prerequisites: |
   - Some knowledge of JavaScript and TypeScript
   - Some familiarity with Node.js Express and Azure Functions
-  - [Node.js](https://nodejs.org/) installed
+  - [Node.js v14](https://nodejs.org/) installed
   - [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
   - [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed
 iconUrl: /training/achievements/shift-express-api-azure-functions.svg

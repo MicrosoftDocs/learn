@@ -1,12 +1,11 @@
-To maintain your current Express application and server, you must:
+To use your current Express application and server, you must:
 
+- Include the necessary middleware and logic to start the server.
 - Configure and maintain the physical server.
 - Manage scaling your app up and down as demand fluctuates.
 - Manage the costs of deploying and running the server.
 
-Serverless architecture handles server maintenance, scaling, and cost management for you. Overall, you have less to think about when you build a serverless app.
-
-You're ready to learn how to shift your Express.js API to the serverless model.
+Serverless architecture handles server maintenance, scaling, and cost management for you. Often there's very little middleware and less code required. Overall, there's less to worry about when you build a serverless app. You can easily shift your Express.js API to the serverless model.
 
 This learning module uses the [Refactor Node.js Express to Azure Functions](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless) project on GitHub, which builds a Node.js Express application in TypeScript.
 
