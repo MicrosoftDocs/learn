@@ -14,7 +14,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
-azureSandbox: true
+# azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/4-create-build-agent.md)]
