@@ -1,3 +1,4 @@
+
 Azure Private Link works on an approval call flow model wherein the Private Link service consumer can request a connection to the service provider for consuming the service. The service provider can then decide whether to allow the consumer to connect or not. Azure Private Link enables the service providers to manage the private endpoint connection on their resources
 
 :::image type="content" source="../media/az500-private-links-f7a3794a.png" alt-text="Image of data flow between tenant and provider on a private endpoint.":::
