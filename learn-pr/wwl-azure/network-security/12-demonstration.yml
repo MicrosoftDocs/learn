@@ -8,5 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
 content: |
   [!include[](includes/12-demonstration.md)]

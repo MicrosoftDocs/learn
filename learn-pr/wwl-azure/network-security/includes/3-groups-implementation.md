@@ -1,4 +1,3 @@
-
 When implementing NSGs, these are the limits to keep in mind:
 
  -  By default, you can create 100 NSGs per region per subscription. You can raise this limit to 400 by contacting Azure support.

@@ -1,4 +1,3 @@
-
 Service endpoints would provide benefits in the following Scenarios.
 
 ### Scenarios
