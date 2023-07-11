@@ -3,7 +3,7 @@ uid: learn.data-analysis-data-explorer-kusto-query-language
 metadata:
   title: Data analysis in Azure Data Explorer with Kusto Query Language
   description: Learn how to analyze data in Azure Data Explorer using the Kusto Query Language
-  ms.date: 11/13/2022
+  ms.date: 07/09/2023
   author: shsagir
   ms.author: shsagir
   ms.topic: interactive-tutorial
@@ -33,6 +33,7 @@ subjects:
 - data-analytics
 modules:
 - learn.intro-to-azure-data-explorer
+- learn.azure.explore-fundamentals-kql
 - learn.write-first-query-kusto-query-language
 - learn.azure.gain-insights-data-kql
 - learn.multi-table-queries-with-kusto-query-language

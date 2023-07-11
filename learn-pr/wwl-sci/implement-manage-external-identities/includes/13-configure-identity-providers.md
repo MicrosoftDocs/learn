@@ -1,43 +1,20 @@
-You can set up direct federation with any organization whose identity provider (IdP) supports the Security Assertion Markup Language (SAML) 2.0 or WS-Federation (WS-Fed) protocol. When you set up direct federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Azure Active Directory (Azure AD) tenant and start collaborating with you. There's no need for the guest user to create a separate Azure AD account.
+Direct federation is now called **SAML/WS-Fed identity provider** (IdP) federation. You can set up federation with any organization whose identity provider (IdP) supports the Security Assertion Markup Language (SAML) 2.0 or WS-Federation (WS-Fed) protocol. When you set up SAML/WS-Fed IdP federation with a partner's IdP, new guest users from that domain can use their own IdP-managed organizational account to sign in to your Azure Active Directory (Azure AD) tenant and start collaborating with you. There's no need for the guest user to create a separate Azure AD account.
 
-> [!NOTE]
-> Direct federation guest users must sign in using a link that includes the tenant context (for example, `https://myapps.microsoft.com/?tenantid= tenant id` or `https://portal.azure.com/ tenant id` , or in the case of a verified domain, `https://myapps.microsoft.com/ verified domain .onmicrosoft.com`). Direct links to applications and resources also work as long as they include the tenant context. Direct federation users are currently unable to sign in using common endpoints that have no tenant context. For example, using `https://myapps.microsoft.com`, `https://portal.azure.com`, or `https://teams.microsoft.com` will result in an error.
+## When is a guest user authenticated with SAML/WS-Fed IdP federation?
 
-## When is a guest user authenticated with direct federation?
+After you set up federation with an organization's SAML/WS-Fed IdP, any new guest users you invite will be authenticated using that SAML/WS-Fed IdP. It’s important to note that setting up federation doesn’t change the authentication method for guest users who have already redeemed an invitation from you. Here are some examples:
 
-After you set up direct federation with an organization, any new guest users you invite will be authenticated using direct federation. Setting up direct federation doesn’t change the authentication method for guest users who have already redeemed an invitation from you. Here are some examples:
+ -  Guest users have already redeemed invitations from you, and then later you set up federation with the organization's SAML/WS-Fed IdP. These guest users continue to use the same authentication method they used before you set up federation.
+ -  You set up federation with an organization's SAML/WS-Fed IdP and invite guest users, and then the partner organization later moves to Azure AD. The guest users who have already redeemed invitations continue to use the federated SAML/WS-Fed IdP, as long as the federation policy in your tenant exists.
+ -  You delete federation with an organization's SAML/WS-Fed IdP. Any guest users currently using the SAML/WS-Fed IdP are unable to sign in.
 
- -  If guest users have already redeemed invitations from you, when you set up direct federation with their organization; then, guest users will continue to use the same authentication method they used before you set up direct federation.
- -  If you set up direct federation with a partner organization, then invite guest users, and then the partner organization later moves to Azure AD; then, the guest users who have already redeemed invitations will continue to use direct federation. As long as the direct federation policy in your tenant exists.
- -  If you delete direct federation with a partner organization, then any guest users currently using direct federation will be unable to sign in.
-
-In any of these scenarios, you can update a guest user’s authentication method by deleting the guest user account from your directory and reinviting them.
-
-Direct federation is tied to domain namespaces, such as contoso.com and fabrikam.com. You establish a direct federation configuration with AD FS or a third-party IdP, organizations associate one or more domain-namespaces to these IdPs.
+In any of these scenarios, you can update a guest user’s authentication method by resetting their redemption status. SAML/WS-Fed IdP federation is tied to domain namespaces, such as contoso.com and fabrikam.com. When the admin establishes federation with AD FS or a third-party IdP, organizations associate one or more domain-namespaces to these IdPs.
 
 ## End-user experience
 
-With direct federation, guest users sign into your Azure AD tenant using their own organizational account. When they're accessing shared resources and are prompted for sign-in, direct federation users are redirected to their IdP. After successful sign-in, they're returned to Azure AD to access resources. Direct federation users’ refresh tokens are valid for 12 hours, the default length for passthrough-refresh-tokens in Azure AD. If the federated IdP has SSO enabled, the user will experience SSO and won't see any sign-in prompt after initial authentication.
+With SAML/WS-Fed IdP federation, guest users sign into your Azure AD tenant using their own organizational account. When they're accessing shared resources and are prompted for sign-in, users are redirected to their IdP. After successful sign-in, users are returned to Azure AD to access resources. If the Azure AD session expires or becomes invalid and the federated IdP has SSO enabled, the user experiences SSO. If the federated user's session is valid, the user isn't prompted to sign in again. Otherwise, the user is redirected to their IdP for sign-in.
 
-## Limitations
-
-Direct federation limitations include:
-
-| **Limitation**                    | **Description**                                                                                                                                                                                                                                                                                                                                                                    |
-| --------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| DNS-verified domains in Azure AD  | The domain you want to federate with must **not** be DNS-verified in Azure AD. You're allowed to set up direct federation with unmanaged (email-verified or viral) Azure AD tenants because they aren't DNS-verified.                                                                                                                                                              |
-| Authentication URL                | Direct federation is only allowed for policies where the authentication URL’s domain matches the target domain, or where the authentication URL is a specified allowed identity provider. Current providers include:                                                                                                                                                               |
-|                                   | `accounts.google.com`                                                                                                                                                                                                                                                                                                                                                              |
-|                                   | `pingidentity.com`                                                                                                                                                                                                                                                                                                                                                                 |
-|                                   | `okta.com`                                                                                                                                                                                                                                                                                                                                                                         |
-|                                   | `federation.exostar.com`                                                                                                                                                                                                                                                                                                                                                           |
-|                                   | (This list is subject to change.)                                                                                                                                                                                                                                                                                                                                                  |
-|                                   | For example, when setting up direct federation for `fabrikam.com`, the authentication URL `https://fabrikam.com/adfs` will pass the validation. A host in the same domain will also pass, for example `https://sts.fabrikam.com/adfs`. However, the authentication URL `https://fabrikamconglomerate.com/adfs` or `https://fabrikam.com.uk/adfs` for the same domain won't pass.   |
-| Signing certificate renewal       | If you specify the metadata URL in the identity provider settings, Azure AD will automatically renew the signing certificate when it expires. However, if the certificate is rotated for any reason before the expiration time, or if you don't provide a metadata URL, Azure AD will be unable to renew it. In this case, you'll need to update the signing certificate manually. |
-| Limit on federation relationships | Currently, a maximum of 1,000 federation relationships is supported. This limit includes both internal federations and direct federations.                                                                                                                                                                                                                                         |
-| Limit on multiple domains         | Microsoft doesn’t currently support direct federation with multiple domains from the same tenant.                                                                                                                                                                                                                                                                                  |
-
-## Security Assertion Markup Language 2.0 configuration
+## Security Assertion Markup Language 2.0 configuration<br>
 
 Azure AD B2B can be configured to federate with identity providers that use the SAML protocol with specific requirements listed below.
 
@@ -109,31 +86,23 @@ Guest users who see a *header too long* error can clear their cookies or open a 
 
 ## Deprecation of WebView sign-in support
 
-January 4, 2021, Google is deprecating embedded WebView sign-in support. If you’re using Google federation or self-service-sign-up with Gmail, you should test your line-of-business native applications for compatibility. If your apps include WebView content that requires authentication, Google Gmail users won't be able to authenticate. The following are known scenarios that will affect Gmail users:
+Google is deprecating embedded web-view sign-in support (Starting September 30, 2021). If your apps authenticate users with an embedded web-view and you're using Google federation with Azure AD B2C or Azure AD B2B for external user invitations or self-service sign-up, Google Gmail users won't be able to authenticate.
 
- -  Windows apps that use embedded WebView or the WebAccountManager (WAM) on older versions of Windows.
- -  Other native apps you’ve developed that use an embedded browser framework for authentication.
+The following are known scenarios that will affect Gmail users:
+
+ -  Microsoft apps (e.g. Teams and Power Apps) on Windows.
+ -  Windows apps that use the WebView control, WebView2, or the older WebBrowser control, for authentication. These apps should migrate to using the Web Account Manager (WAM) flow.
+ -  Android applications using the WebView UI element.
+ -  iOS applications using UIWebView/WKWebview.
+ -  Apps using Microsoft Authentication Library.
 
 This change doesn't affect:
 
- -  Windows apps that use embedded WebView or the WebAccountManager (WAM) on the latest versions of Windows
- -  Microsoft iOS apps
- -  G Suite identities, for example when you’re using SAML-based direct federation with G Suite
-
-We’re continuing to test various platforms and scenarios, and will update published information accordingly.
-
-### To test your apps for compatibility
-
-1.  Follow [Google’s guidance](https://developers.googleblog.com/2020/08/guidance-for-our-effort-to-block-less-secure-browser-and-apps.html) to determine if your apps are affected.
-2.  Using Fiddler or another testing tool, inject a header during sign-in and use a Google external identity to test sign-in:
-    1.  Add `Google-Accounts-Check-OAuth-Login:true` to your HTTP request headers when the requests are sent to accounts.google.com.
-    2.  Attempt to sign in to the app by entering a Gmail address in the accounts.google.com sign-in page.
-    3.  If sign-in fails and you see an error such as “This browser or app may not be secure,” your Google external identities will be blocked from signing in.
-3.  Resolve the issue by doing one of the following tasks:
-    
-    
-     -  If your Windows app uses embedded WebView or the WebAccountManager (WAM) on an older version of Windows, update to the latest version of Windows.
-     -  Modify your apps to use the system browser for sign-in. For details, see [Embedded vs System Web UI](/azure/active-directory/develop/msal-net-web-browsers) in the MSAL.NET documentation.
+ -  Web apps
+ -  Microsoft 365 services that are accessed through a website (for example, SharePoint Online, Office web apps, and Teams web app)
+ -  Mobile apps using system web-views for authentication (SFSafariViewController on iOS, Custom Tabs on Android).
+ -  Google Workspace identities, for example when you’re using SAML-based federation with Google Workspace.
+ -  Windows apps that use the Web Account Manager (WAM) or Web Authentication Broker (WAB).
 
 ## Sign-in endpoints
 

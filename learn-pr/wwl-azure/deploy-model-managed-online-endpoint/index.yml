@@ -28,6 +28,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.deploy-model-managed-online-endpoint.introduction
+- learn.wwl.deploy-model-managed-online-endpoint.video
 - learn.wwl.deploy-model-managed-online-endpoint.explore-managed-online-endpoints
 - learn.wwl.deploy-model-managed-online-endpoint.deploy-your-mlflow-model-managed-online-endpoint
 - learn.wwl.deploy-model-managed-online-endpoint.eploy-custom-model-managed-online-endpoint

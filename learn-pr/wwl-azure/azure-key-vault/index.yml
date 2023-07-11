@@ -3,7 +3,7 @@ uid: learn.wwl.azure-key-vault
 metadata:
   title: Deploy and secure Azure Key Vault
   description: "Protect your keys, certificates, and secrets in Azure Key Vault. Learn to configure key vault for the most secure deployment."
-  ms.date: 05/31/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
