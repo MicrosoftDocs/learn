@@ -31,7 +31,7 @@ There are many ways that Azure can help grow your business, and every company wi
 
 **Example**: [The Co-op Group](https://customers.microsoft.com/story/1518703641748900727-coop-retailer) used Azure to create a new “Data EcoSystem” that could gather its data in one place and auto-update with in-store technology such as self-checkout kiosks. Empowered by data democracy, employees throughout the company use the data to make staffing and in-store planning decisions.
 
-**Example**: When Covid-19 appeared, [business data company UnlimitedViz](https://customers.microsoft.com/story/1351711806055240475-unlimited-viz-tygraph-partner-professional-services-azure) used Azure services to bring language and sentiment analysis to its tyGraph product. Customers were able to use tyGraph’s capabilities to track their employees’ reactions and actions in response to the pandemic and adapt their business strategies in response. This data lift could reach up to 3 billion rows per customer, all ably handled by Azure.
+**Example**: When Covid-19 appeared, business data company UnlimitedViz used Azure services to bring language and sentiment analysis to its tyGraph product. Customers were able to use tyGraph’s capabilities to track their employees’ reactions and actions in response to the pandemic and adapt their business strategies in response. This data lift could reach up to 3 billion rows per customer, all ably handled by Azure.
 
 ## Cutting-Edge Technology
 
