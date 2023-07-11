@@ -1,4 +1,3 @@
-
 ## Configure external collaboration settings
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/) as a tenant administrator.
