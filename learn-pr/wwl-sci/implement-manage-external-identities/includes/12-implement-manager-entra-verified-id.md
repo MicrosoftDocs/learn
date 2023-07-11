@@ -1,4 +1,3 @@
-
 :::image type="content" source="../media/entra-verified-identity-f5ddd7af.png" alt-text="Screenshot of the Azure AD security settings screen, with the Verifiable credentials selected.":::
 
 
@@ -10,9 +9,9 @@ Microsoft Entra Verified ID safeguards your organization with an identity soluti
 
 We use IDs in our daily lives. We have drivers licenses that we use as evidence of our ability to operate a car. Universities issue diplomas that prove we attained a level of education. We use passports to prove who we are to authorities as we arrive to other countries / regions. The data model describes how we could handle these types of scenarios when working over the internet but in a secure manner that respects users' privacy. In short, verifiable credentials are data objects consisting of claims made by the issuer attesting information about a subject. These claims are identified by schema and include the DID issuer and subject. The issuer's DID creates a digital signature as proof that they attest to this information.
 
-### Deploying the Verified ID service
+### Deploying the Microsoft Entra Verified ID service
 
-To deploy Verified ID, you will need:
+To deploy Microsoft Entra Verified ID, you will need:
 
  -  An Azure tenant with a subscription
  -  An Azure AD premium license
@@ -32,4 +31,4 @@ To set up Azure AD Verifiable Credentials, follow these steps:
     | Key vault         | Enter the name of the key vault you have in your tenant.                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
 4.  Select Save and create credential.
 
-Note that these are just the general steps needed to deploy the Entra Verified ID service. Follow the article list above for more details.
+Note that these are just the general steps needed to deploy the Microsoft Entra Verified ID service. Follow the article list above for more details.
