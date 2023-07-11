@@ -16,7 +16,7 @@ Use these resources to discover more.
 
 - [Upgrade Domain Controllers to Windows Server 2016](/windows-server/identity/ad-ds/deploy/upgrade-domain-controllers)
 
-- [Running ADPrep.exe](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd464018(v=ws.10))
+- [Running ADPrep.exe](https://learn.microsoft.com/previous-versions/windows/it-pro/windows-server-2008-R2-and-2008/dd464018(v=ws.10))
 
 - [Forest and Domain Functional Levels](/windows-server/identity/ad-ds/active-directory-functional-levels)
 
