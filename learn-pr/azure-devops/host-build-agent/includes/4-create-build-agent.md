@@ -28,6 +28,9 @@ In this section, you create a VM that's running Ubuntu 20.04, which will serve a
 
 ### Bring up Cloud Shell through the Azure portal
 
+> [!IMPORTANT]
+> To complete the exercises in this module, you need your own Azure subscription.
+
 1. Go to the [Azure portal](https://portal.azure.com?azure-portal=true), and sign in.
 1. From the menu, select **Cloud Shell**. When prompted, select the **Bash** experience.
 
@@ -38,7 +41,7 @@ In this section, you create a VM that's running Ubuntu 20.04, which will serve a
 
 ### Select an Azure region
 
-A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an App Service instance, is assigned a region.
+A _region_ is one or more Azure datacenters within a geographic location. East US, West US, and North Europe are examples of regions. Every Azure resource, including an Azure VM, is assigned a region.
 
 To make commands easier to run, start by selecting a default region. After you specify the default region, later commands use that region unless you specify a different region.
 
