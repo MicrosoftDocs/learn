@@ -10,7 +10,7 @@ Therefore, with these features, developers can:
 * Deploy an ASP.NET Core Web API app to Azure App Service without needing to leave Visual Studio, and
 * Integrate the Web API with Azure API Management without needing to leave Visual Studio.
 
-To sum up, this module has covered the following topics:
+To sum up, this module has covered the following:
 
 * To activate OpenAPI feature on ASP.NET Core Web API,
 * To publish the Web API app to Azure App Service through Visual Studio,
