@@ -8,13 +8,13 @@ metadata:
     - devdivchpfy22
     - devx-track-dotnet
     - devx-track-js
-  ms.date: 08/12/2022
+  ms.date: 07/11/2023
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 interactive: bash
-azureSandbox: true
+# azureSandbox: true
 durationInMinutes: 20
 content: |
   [!include[](includes/4-create-build-agent.md)]

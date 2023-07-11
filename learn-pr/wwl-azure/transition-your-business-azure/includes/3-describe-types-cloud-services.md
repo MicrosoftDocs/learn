@@ -28,5 +28,3 @@ Many of the cloud’s most exciting opportunities lie within Platform as a Servi
 ## Shared Responsibility Model
 
 You probably noticed that each of the categories entailed some IT responsibilities for your business and some responsibilities for Microsoft. This is the Shared Responsibility Model. Software as a Service entails the least IT responsibility for your business, Infrastructure as a Service entails the most, and Platform as a Service lies in between. See the following table for a summary of how responsibility is shared across each category of service.
-
-:::image type="content" source="../media/shared-responsibility-model-2023-1f8e0bb6.png" alt-text="A diagram showing the shared responsibility model, outlining responsibilities for Microsoft and the customer across cloud Service models.":::
