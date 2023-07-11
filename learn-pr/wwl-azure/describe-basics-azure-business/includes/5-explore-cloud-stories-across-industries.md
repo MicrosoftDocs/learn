@@ -6,12 +6,6 @@ We’ve gathered stories here about how businesses across the world, in diverse 
 
 Some of these stories and the pages they link to contain somewhat technical details. You may want to return to those stories after you’ve learned more about Azure and are more prepared to understand them, or share them with your IT team who can explore the greater technical detail.
 
-Select the business segment you'd like to review from the following table, or you can scroll through the list if you'd prefer.
-
-<!--- raw content start --->
-| [Energy](#energy) || [Finance](#finance) || [Government](#government) || [Healthcare](#healthcare) || [Manufacturing](#manufacturing) || [Professional services](#professional-services) || [Retail](#retail) |
-<!--- raw content end --->
-
 ## Energy
 
 [Envision Group](https://www.youtube.com/watch?v=LMGNhv7Ud2o?azure-portal=true) is an energy tech company that uses Azure to connect millions of smart energy devices worldwide. This Energy Operating System, “EnOS,” is one of the world’s largest Internet of Things platforms, connecting devices across energy generation, storage, and consumption. Azure’s scaling capabilities have made EnOS energy- and cost-efficient for Envision and its customers.
@@ -52,7 +46,7 @@ Select the business segment you'd like to review from the following table, or yo
 
 In response to work-from-home conditions during Covid-19, [Canadian wellbeing tech company LifeWorks](https://customers.microsoft.com/story/1448443264460756880-lifeworks-professional-services-viva-canada?azure-portal=true) shifted from a disparate set of workplace apps to a unified, cloud-based Microsoft Teams solution. The company then developed apps to sit on the Teams, Viva, and Azure Marketplace platforms. Access to these cloud platforms led it to become one of Canada’s fastest-growing apps within a month.
 
-When Covid-19 appeared, [business data company UnlimitedViz](https://customers.microsoft.com/story/1351711806055240475-unlimited-viz-tygraph-partner-professional-services-azure?azure-portal=true) used Azure services to bring language and sentiment analysis to its tyGraph product. Customers were able to use tyGraph’s capabilities to track their employees’ reactions and actions in response to the pandemic and adapt their business strategies in response. This data lift could reach up to 3 billion rows per customer, all ably handled by Azure.
+When Covid-19 appeared, business data company UnlimitedViz used Azure services to bring language and sentiment analysis to its tyGraph product. Customers were able to use tyGraph’s capabilities to track their employees’ reactions and actions in response to the pandemic and adapt their business strategies in response. This data lift could reach up to 3 billion rows per customer, all ably handled by Azure.
 
 [Kinetica is a geospatial data company](https://customers.microsoft.com/story/1448416424273714494-kinetica-professional-services-azure-internet-of-things?azure-portal=true) that relies on Azure to deliver its services. The company uses Azure’s high-tech “vectorized chips” to rapidly compute data, bringing fast and powerful service to Kinetica’s customers, which include major government agencies and large retailers. Kinetica’s powerful services are available to customers worldwide through the Azure Marketplace.
 
