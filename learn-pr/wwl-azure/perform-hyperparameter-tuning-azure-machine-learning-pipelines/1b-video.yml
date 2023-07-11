@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines.video
+title: Video - Perform hyperparameter tuning with Azure Machine Learning
+metadata:
+  title: Video - Perform hyperparameter tuning with Azure Machine Learning
+  description: "Optional video on performing hyperparameter tuning with Azure Machine Learning"
+  ms.date: 07/10/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 31
+content: |
+  [!include[](includes/1b-video.md)]

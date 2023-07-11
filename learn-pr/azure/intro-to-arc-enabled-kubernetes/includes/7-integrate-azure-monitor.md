@@ -48,7 +48,7 @@ Container insights provide the following capabilities:
 
 ## Monitor Azure Arc-enabled Kubernetes clusters
 
-Azure Monitor container insights rely on a containerized version of the Log Analytics agent for Linux. This agent runs in the monitored cluster to collect performance metrics and logs from cluster nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected data to Azure.
+Azure Monitor container insights relies on a containerized version of Azure Monitor Agent for Linux. This agent runs in the monitored cluster to collect performance metrics and logs from cluster nodes and containers. The agent interacts directly with the Kubernetes Metrics API and uploads the collected data to Azure.
 
 >[!NOTE]
 >The Azure Monitor container insights agent name has changed from OMSAgent to Azure Monitor Agent. Rules, scripts, and queries that used or referred to `omsagent` might no longer work or might return only old data. Update these references to use the new name of `ama-logs`. For more information, see [Name update for Agent and associated resources in Azure Monitor - Container Insights](https://techcommunity.microsoft.com/t5/azure-monitor-status-archive/name-update-for-agent-and-associated-resources-in-azure-monitor/ba-p/3576810).
@@ -70,7 +70,7 @@ Use the following high-level steps to implement Azure Monitor container insights
 1. Start an Azure CLI or PowerShell Core session on a computer with connectivity to the Kubernetes cluster and to Azure.
 1. Sign in to the Azure AD tenant associated with the subscription that hosts Azure Arc-enabled Kubernetes.
 1. Identify the Log Analytics workspace ID.
-1. Download and install a Bash or PowerShell script that configures the Kubernetes cluster with the containerized version of the Log Analytics agent.
-1. Configure limited connectivity from the pods running the Log Analytics agent to all cluster nodes to collect performance metrics.
-1. Configure limited connectivity from the pods running the Log Analytics agent to the control plane nodes to collect cluster inventory data.
+1. Download and install a Bash or PowerShell script that configures the Kubernetes cluster with the containerized version of Azure Monitor Agent.
+1. Configure limited connectivity from the pods running Azure Monitor Agent to all cluster nodes to collect performance metrics.
+1. Configure limited connectivity from the pods running Azure Monitor Agent to the control plane nodes to collect cluster inventory data.
 
