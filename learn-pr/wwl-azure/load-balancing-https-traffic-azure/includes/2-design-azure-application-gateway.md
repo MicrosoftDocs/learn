@@ -21,14 +21,6 @@ This type of routing is known as application layer (OSI layer 7) load balancing.
  -  **Rewrite HTTP headers**: HTTP headers allow the client and server to pass parameter information with the request or the response.
  -  **Custom error pages:** Application Gateway allows you to create custom error pages instead of displaying default error pages. You can use your own branding and layout using a custom error page.
 
-## When to use Azure Application Gateway
-
-Azure Application Gateway can meet your organization’s needs for the following reasons:
-
-- Azure Application Gateway routing allows traffic to be directed from an endpoint in Azure to a back-end pool made up of servers running in Adatum’s on-premises datacenter. The health probe functionality of Azure Application Gateway will ensure that traffic isn't being directed to any server that may have become unavailable.
-- Azure Application Gateway TLS termination functionality will reduce the amount of CPU capacity that servers in the back-end pool allocate to encryption and decryption operations.
-- Azure Application Gateway allows Adatum to use a web application firewall to block cross-site scripting and SQL injection traffic before it reaches servers in the back-end pool.
-- Azure Application Gateway supports session affinity, required because the several web applications deployed by Adatum use user session state information stored locally on individual servers in the back-end pool.
 
 ## Determine Application Gateway routing
 
