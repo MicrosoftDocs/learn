@@ -32,6 +32,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.intro-to-azure-fundamentals.what-is-microsoft-azure
 badge:
   uid: learn.azure.intro-to-azure-fundamentals.badge
