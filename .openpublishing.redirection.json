@@ -23738,6 +23738,11 @@
       "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/5-apply-ai-maturity-model-assessment.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
