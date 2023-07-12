@@ -23673,6 +23673,11 @@
       "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/tour-of-azure-services.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/what-is-cloud-computing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
