@@ -1807,3 +1807,28 @@ achievements:
   title: Solve optimization problems by using quantum-inspired optimization
   summary: Learn how quantum-inspired algorithms mimic quantum physics to solve difficult optimization problems.
   iconUrl: /training/achievements/quantum/solve-quantum-inspired-optimization-problems.svg
+- uid: learn-wwl.ai-strategy-in-education.badge
+  type: badge
+  title: Define an AI strategy to create value in education
+  summary: In education, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI. Educational institutions and organizations need to think strategically about AI—and they need to start today. To create real value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-education.svg
+- uid: learn-wwl.ai-strategy-in-financial-services.badge
+  type: badge
+  title: Define an AI strategy to create business value in financial services
+  summary: To realize the true transformational impact of AI in financial services, decision-makers must consider the special factors that apply only to their industry. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-financial-services.svg
+- uid: learn-wwl.ai-strategy-in-government.badge
+  type: badge
+  title: Define an AI strategy to create value in government
+  summary: In government, decision-makers must take into account specific public sector considerations before they can realize the true transformational power of AI. Government agencies need to think strategically about AI – and they need to start today. To create real value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-government.svg
+- uid: learn-wwl.ai-strategy-in-healthcare.badge
+  type: badge
+  title: Define an AI strategy to create business value in healthcare
+  summary: To realize the true transformational impact of AI in the healthcare sector, decision-makers must consider the special factors that apply only to their industry. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-healthcare.svg
+- uid: learn-wwl.ai-strategy-in-manufacturing.badge
+  type: badge
+  title: Define an AI strategy to create business value in manufacturing
+  summary: In manufacturing, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-manufacturing.svg
