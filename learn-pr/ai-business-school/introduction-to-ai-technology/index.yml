@@ -30,7 +30,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.intro-to-ai-technology.microsoft-ai-approach
 - learn-wwl.intro-to-ai-technology.summary-and-resources
 badge: 
   uid: learn-wwl.intro-to-ai-technology.badge #add the uid for your achievement badge.
