@@ -1,6 +1,6 @@
 This unit gives a summary of the Microsoft cloud security benchmark controls in the [Posture and vulnerability management family](https://learn.microsoft.com/security/benchmark/azure/mcsb-posture-vulnerability-management?source=recommendations).
 
-Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
 
 In the summary below, we have included controls from the full baseline where:
 
