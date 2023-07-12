@@ -29,8 +29,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.implement-ai-organization.manage-innovation
-- learn-wwl.implement-ai-organization.manage-innovation-video
 - learn-wwl.implement-ai-organization.summary-resources
 badge: 
   uid: learn-wwl.implement-ai-organization.badge
