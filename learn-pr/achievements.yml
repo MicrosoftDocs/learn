@@ -1842,3 +1842,8 @@ achievements:
   title: Discuss Azure fundamental concepts
   summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between the categories and types of cloud computing.
   iconUrl: /training/achievements/fundamental-azure-concepts.svg
+- uid: learn.azure.intro-to-azure-fundamentals.badge
+  type: badge
+  title: Introduction to Azure fundamentals
+  summary: This module introduces you to the basics of cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
+  iconUrl: /training/achievements/intro-to-azure-fundamentals.svg
