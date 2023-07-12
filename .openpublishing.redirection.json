@@ -23508,6 +23508,11 @@
       "source_path": "learn-pr/ai-business-school/ai-strategy-in-healthcare/4-healthcare-executive-QA.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-in-healthcare/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
