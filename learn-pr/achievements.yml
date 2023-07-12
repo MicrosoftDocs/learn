@@ -1862,3 +1862,8 @@ achievements:
   title: Coinnovate for a broader impact
   summary: While it's essential to have alignment on the inside, businesses can't exist without connecting to what's outside. External points of view play a key role in understanding how innovation efforts impact people and communities beyond your organization. Collaborating with external partners and even customers can help you go beyond innovation for innovation's sake and provide meaningful solutions to your customers, communities, and even society.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-wwl.cultivate-innovative-mindset.badge
+  type: badge
+  title: Cultivate an innovative mindset
+  summary: Success is defined in many ways, by numerous variables. But one common thread among 'successful' organizations is that they're creating the right culture that helps innovation thrive. To stay competitive in the market, organizations need to think strategically about enhancing and scaling employee creativity to create a culture that cultivates an innovative mindset.
+  iconUrl: /training/achievements/generic-badge.svg
