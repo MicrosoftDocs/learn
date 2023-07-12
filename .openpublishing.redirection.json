@@ -23683,6 +23683,221 @@
       "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/what-is-microsoft-azure.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/6-empowering-every-employee-case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/7-empowering-every-employee-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/2-holistic-ai-business-strategy-insead.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/9-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/3-transform-applications-case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/5-transform-applications-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-to-create-business-value/4-transform-applications-executive-QA.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/5-apply-ai-maturity-model-assessment.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/3-characteristics-that-foster-ai-ready-culture.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/4-how-adkar-framework-helps-change.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/2-importance-of-ai-ready-culture.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/7-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/2-implement-environmental-social-governance-strategies.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/3-need-for-external-collaboration.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/4-ucb-case-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/6-ucb-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/coinnovate-for-broader-impact/5-ucb-executive-qa.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/3-establish-collaborative-environment.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/2-power-embracing-innovative-mindset.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/4-wpp-case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/6-wpp-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/cultivate-innovative-mindset/5-wpp-executive-qa.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/2-customer-service-case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/4-customer-service-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/3-customer-service-executive-qa.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/6-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
