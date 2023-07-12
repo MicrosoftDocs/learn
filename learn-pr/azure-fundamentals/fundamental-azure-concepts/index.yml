@@ -31,6 +31,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.fundamental-azure-concepts.types-of-cloud-computing
 badge:
   uid: learn.azure.fundamental-azure-concepts.badge
