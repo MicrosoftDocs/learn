@@ -1832,3 +1832,8 @@ achievements:
   title: Define an AI strategy to create business value in manufacturing
   summary: In manufacturing, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
   iconUrl: /training/achievements/ai-strategy-in-manufacturing.svg
+- uid: learn.azure.azure-architecture-fundamentals.badge
+  type: badge
+  title: Describe core Azure architectural components
+  summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure architecture. For example, you'll learn about Azure subscriptions and management groups, resource groups and Azure Resource Manager, as well as Azure regions and availability zones.
+  iconUrl: /training/achievements/azure-architecture-fundamentals.svg
