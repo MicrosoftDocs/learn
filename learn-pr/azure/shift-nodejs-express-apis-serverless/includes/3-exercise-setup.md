@@ -53,11 +53,32 @@ server
  | - tsconfig.json
 ```
 
-The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server. Then the routes, such as `/vacations`, are loaded from the _/routes_ folder. These routes execute the appropriate code in the _/services_ folder. The app defines the data store configuration in the _data.ts_ file.
+1. The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server.
+1. Then the routes, such as `/vacations`, are loaded from the _/routes_ folder.
+1. The routes execute the appropriate code in the _/services_ folder.
+1. The data store configuration is defined in the _data.ts_ file.
 
-For example, the client app makes an `HTTP GET` request to the _/vacations_ route, and the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
+For example, the Angular client app makes an `HTTP GET` request to the _routes/vacation.routes_ route, and the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
 
-## Prepare your development environment
+Open _proxy.conf.json_ and notice that the port is set to `7070`.
+
+```json
+{
+  "/api": {
+    "target": "http://localhost:7070",
+    "secure": false
+  }
+}
+```
+
+The Node.js Express API runs on port `7070`, while the Angular application runs on port `4200`. The Angular application can't make requests across the domains to the Node.js Express application. Setting up a proxy enables the browser to locate the Express server.
+
+## Set breakpoints and proxy
+
+To display a list of vacations, the Angular application runs the `getVacations()` function in the _vacations.component.ts_ file, which calls the route in the _vacation.routes.ts_ file. Set breakpoints in these files so you can step through the code that fetches the vacations during debugging.
+
+>[!NOTE]
+>The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
 
 1. In Visual Studio Code, open the application's _src/app/vacations/vacations.component.ts_ file, and locate the `getVacations()` function.
 1. Set a breakpoint by selecting the editor's gutter to the left of the first line of code inside the `getVacations()` function.
@@ -79,19 +100,6 @@ For example, the client app makes an `HTTP GET` request to the _/vacations_ rout
 
 1. Set a breakpoint by selecting the editor's gutter to the left of the line of code `vacationService.getVacations(req, res);`.
 
-1. Open _proxy.conf.json_ and notice that the port is set to `7070`.
-
-   ```json
-   {
-     "/api": {
-       "target": "http://localhost:7070",
-       "secure": false
-     }
-   }
-   ```
-
-    The Node.js Express API runs on port `7070`, while the Angular application runs on port `4200`. The Angular application can't make requests across the domains to the Node.js Express application. Setting up a proxy enables the browser to locate the Express server.
-
 ## Run and debug the app
 
 1. Open the Visual Studio Code command palette by pressing **F1**, and enter and select **View: Show Run and Debug**.
@@ -103,7 +111,8 @@ For example, the client app makes an `HTTP GET` request to the _/vacations_ rout
 
 1. Unpause execution and continue by pressing **F5**.
 
-   The code now pauses on your second breakpoint in the _vacation.routes.ts_ file because the Angular application hits the Node.js Express route `vacations`.
+1. The code now pauses on your second breakpoint in the _vacation.routes.ts_ file because the Angular application hits the Node.js Express route `vacations`. Unpause execution and continue by pressing **F5**.
 
 1. There are two debugging processes running: one for Angular and one for Node.js Express. Press **SHIFT+F5** to stop the active debugger.
+
 1. Press **SHIFT+F5** again to stop the remaining debugger.

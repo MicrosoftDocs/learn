@@ -13,15 +13,16 @@ To create the new `GET` function:
 1. Enter *vacations-get* as the name of the function.
 1. Select **Anonymous** as the authentication level.
 
-The new function has a folder called _functions/vacations-get_ with a _function.json_ file that contains the configuration for the function.
+The new function is created. The _functions/vacations-get_ folder has a _function.json_ file that contains the configuration for the function.
 
 ### Set the HTTP method and route endpoint name
 
-By default, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _vacations-get_ folder, the route endpoint is generated as `vacations-get`. Adding the `route` property makes the route match the `vacations` route from the Node.js Express app. The function executes when an HTTP `GET` is requested on `/vacations`.
 
-1. Open the file _functions/vacations-get/function.json_, and notice that the methods list both `GET` and `POST`. Remove the `post` listing to allow only `get` requests.
+1. Open the file _functions/vacations-get/function.json_, and notice that the `req` methods list both `GET` and `POST`. Remove the `post` listing to allow only `get` requests.
 1. In the `bindings` section's `req` properties, add a `"route": "vacations"` entry.
 
+   By default, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _vacations-get_ folder, the route endpoint is generated as `vacations-get`. Adding the `route` property to the function bindings makes the route match the expected `vacations` route from the Node.js Express app. The function executes when an HTTP `GET` is requested on `/vacations`.
+   
 Your _function.json_ should look like the following code.
 
 ```json
@@ -69,24 +70,24 @@ The code you eliminated was the default code that the Azure Functions extension 
 
 ## Create the remaining functions
 
-There are four endpoints in the Node.js Express application, and you just created the `GET` endpoint. Use the following steps to create functions for the remaining route endpoints.
+There are four endpoints in the Node.js Express application, and you just created the function for the `GET` endpoint. Now create functions for the remaining route endpoints.
 
-| Methods | Route endpoints    |
+| Method | Route endpoint    |
 | ------- | ------------------ |
 | `POST`    | `vacations-post`   |
 | `PUT`     | `vacations-put`    |
 | `DELETE`  | `vacations-delete` |
 
-For each remaining endpoint, follow the same steps you used for the `GET` endpoint to create and configure the function.
+For each remaining endpoint, you follow the same steps as for the `GET` endpoint to create the function.
 
 ### Create the HTTP POST function
 
 Create the `POST` function that handles adding a vacation.
 
-1. Create a new function named *vacations-post*, and select **Anonymous** as the authentication level.
-1. In the new _vacations-post_ folder, open _function.json_ and set the method to `post` only.
+1. In Visual Studio Code, create the function with **HTTP Trigger** as the type, *vacations-post* as the name, and **Anonymous** as the authentication level.
+1. In the new _vacations-post_ folder, open _function.json_ and set the method to `post`.
 1. In the `bindings` section's `req` properties, add a `"route": "vacations"` entry.
-1. Replace the contents of the _functions/vacations-post/index.ts_ file to call the `vacationService.postVacations` function with the following code:
+1. Replace the contents of the _functions/vacations-post/index.ts_ file with the following code that calls the `vacationService.postVacations` function:
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from '@azure/functions';
@@ -103,10 +104,10 @@ Create the `POST` function that handles adding a vacation.
 
 Create the `PUT` function to handle updating a vacation.
 
-1. Create a new function named *vacations-put*, and select **Anonymous** as the authentication level.
+1. In Visual Studio Code, create the function with **HTTP Trigger** as the type, *vacations-put* as the name, and **Anonymous** as the authentication level.
 1. In the new _vacations-put_ folder, open _function.json_ and set the method to `put`.
 1. In the `bindings` section's `req` properties, add a `"route": "vacations/{id}"` entry.
-1. Replace the contents of the _functions/vacations-put/index.ts_ file to call the `vacationService.putVacations` function with the following code:
+1. Replace the contents of the _functions/vacations-put/index.ts_ file with the following code that calls the `vacationService.putVacations` function:
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from '@azure/functions';
@@ -123,10 +124,10 @@ Create the `PUT` function to handle updating a vacation.
 
 Create the `DELETE` function to handle deleting a vacation.
 
-1. Create a new function named *vacations-delete*, and select **Anonymous** as the authentication level.
-1. In the new _vacations-delete_ folder, open _function.json_ and set the method to `put` only.
+1. In Visual Studio Code, create the function with **HTTP Trigger** as the type, *vacations-delete* as the name, and **Anonymous** as the authentication level.
+1. In the new _vacations-delete_ folder, open _function.json_ and set the method to `delete`.
 1. In the `bindings` section's `req` properties, add a `"route": "vacations/{id}"` entry.
-1. Replace the contents of the _functions/vacations-put/index.ts_ file to call the `vacationService.deleteVacations` function with the following code:
+1. Replace the contents of the _functions/vacations-delete/index.ts_ file with the following code that calls the `vacationService.deleteVacations` function:
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from '@azure/functions';
@@ -139,4 +140,4 @@ Create the `DELETE` function to handle deleting a vacation.
    export default httpTrigger;
    ```
 
-In the next unit, you review the Azure Functions application you created.
+Go to the next unit to review the Azure Functions application you created.

@@ -1,17 +1,17 @@
 In this module, you refactored your Node.js Express application to Azure Functions. Now you can think less about servers, because you're using serverless!
 
-Node.js and Express are incredibly powerful and often used for serving API endpoints. Now with serverless architecture you can shift your APIs to Azure Functions without worrying about server setup or maintenance. You can also possibly reduce your cost of an always-on server by replacing the Node.js Express server with an Azure Functions app. For all your efforts, you end up with an API that scales well.
+Node.js and Express are powerful solutions for serving API endpoints. With Functions, you can shift your APIs to serverless architecture and not worry about about server setup or maintenance.
 
-Ultimately, with Azure Functions you focus on the code, not the servers.
+You might also be able to reduce the cost of an always-on server and improve scalability by replacing the Node.js Express server with the Azure Functions app. Ultimately, with Functions you focus on the code, not the servers.
 
 > [!NOTE]
-> If you want to deploy the Azure Functions app to the cloud, you can [deploy it by following this tutorial](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code). All you need is an [Azure account](https://azure.microsoft.com/free/) and then use the [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) for Visual Studio Code to deploy it.
+> To deploy the Azure Functions app to the cloud, see the tutorial [Manage Azure resource groups with TypeScript Function API](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code). You can use a [free Azure account](https://azure.microsoft.com/free/), and then use the Azure Functions extension for Visual Studio Code to deploy the application.
 
-The solution for the [sample project is on GitHub in the _solution_ branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution). The instructions on how to get started appear in the README file. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.
+The solution for the current sample project is in the [solution branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution) on GitHub. Follow the instructions in the README file to get started. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.
 
 ## Additional resources
 
-Here are several resources where you can learn more about the Azure Functions, Visual Studio Code, and other concepts covered in this module.
+To learn more about Azure Functions, Visual Studio Code, and other concepts covered in this module, see the following resources:
 
 ### Visual Studio Code
 

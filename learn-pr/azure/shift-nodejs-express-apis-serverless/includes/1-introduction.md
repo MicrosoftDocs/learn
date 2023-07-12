@@ -1,15 +1,15 @@
-Suppose you're responsible for an application that helps customers add, edit, view, and remove plans from their wish lists on your company's vacation planning website. Your Application Programming Interface (API), which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to scale the application up and down as needed while minimizing costs.
+Suppose you're responsible for an application on your company's vacation planning website that helps customers add, edit, view, and remove plans on their vacation wish lists. Your API, which is hosted on a server running Node.js and Express, is critical to the success of the application. It's challenging to manage the server, scale the application up and down as needed, and minimize costs.
 
-To reduce the burden of maintaining servers, you can use a serverless model to scale your application up and down as needed, reduce costs, and write less code. You can use Azure Functions to shift your API to a serverless model without having to rewrite your app.
+To reduce the burden of maintaining servers, you can migrate your application to a serverless model that scales up and down as needed, reduces costs, and requires less code. You can use Azure Functions to shift your API to a serverless model without having to rewrite your application.
 
 ## Learning objectives
 
-In this module, you refactor an Express API to a serverless architecture by following these steps:
+In this module, you refactor Express APIs to a serverless architecture by following these steps:
 
-1. Explore and run the Node.js Express APIs in the sample project.
-1. Create an Azure Functions application.
+1. Explore and run a sample project that uses Node.js Express APIs.
+1. Create an Azure Functions application and APIs.
 1. Refactor the Express routes and data calls to use the Functions application.
-1. Debug the serverless API by using Visual Studio Code.
+1. Debug the serverless app and API in Visual Studio Code.
 
 ## Prerequisites
 
@@ -17,4 +17,3 @@ In this module, you refactor an Express API to a serverless architecture by foll
 - Some familiarity with Node.js Express and Azure Functions
 - [Node.js v14](https://nodejs.org/) installed
 - [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
-- [Azure Functions Core Tools](https://github.com/Azure/azure-functions-core-tools) installed

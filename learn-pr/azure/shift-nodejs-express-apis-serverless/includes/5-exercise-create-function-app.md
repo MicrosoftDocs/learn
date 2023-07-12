@@ -1,4 +1,4 @@
-The Express server runs the API on a server. In this exercise, you create a serverless Azure Functions application to run the APIs instead. You then migrate the application logic from the Node.js Express application to the Functions application. You don't have to rewrite the code. You need only a few small code changes to make the transition.
+The Express application runs the APIs on a server. In this exercise, you create a serverless Azure Functions application to run the APIs instead. You then migrate the application logic from the Node.js Express application to the Functions application. You don't have to rewrite the code. You need only a few small code changes to make the transition.
 
 ## Create a new Azure Functions app
 
@@ -21,11 +21,11 @@ The Functions app is created to serve the application's API endpoints. In the ne
 
 ## Copy and refactor the code
 
-All the Node.js Express logic that returns data is in the _server/services_ folder. You can copy this code from the Node.js Express application to the Azure Functions application, and then do some minor refactoring to make the code work with Azure Functions instead of Node.js Express.
+All the Node.js Express logic that returns data is in the _server/services_ folder. You can copy this code from the Node.js Express application to the Functions application, and then do some minor refactoring to make the code work with Functions instead of Node.js Express.
 
-The following table lists the main differences between the Node.js Express application and the Azure Functions application:
+The following table lists the main differences between the Node.js Express application and the Functions application:
 
-| Component                                | Node.js Express | Azure Functions                 |
+| Component                                | Node.js Express | Functions                 |
 | ---------------------------------------- | --------------- | ------------------------------- |
 | Imported npm package to serve the application | `express`       | `@azure/functions`              |
 | Request and response objects         | `req` and `res` | `context.req` and `context.res` |
@@ -49,17 +49,17 @@ This change makes the Functions app responsible for managing request and respons
 
 ### Change the request and response objects
 
-In the Node.js Express application, the request and response parameters for the `getVacations`, `postVacation`, `putVacation`, and `deleteVacation` functions use `req` and `res`. The Azure Functions application contains the request and response objects in a `context` object, and uses destructuring to access the objects.
+In the Node.js Express application, the request and response parameters for the `getVacations`, `postVacation`, `putVacation`, and `deleteVacation` functions use `req` and `res`. The Functions application contains the request and response objects in a `context` object, and uses destructuring to access the objects.
 
 >[!NOTE]
-> The `Context` object also contains other APIs, such as `log`. For example, you can use `context.log('hello')` in place of the common `console.log` you use in Node.js applications.
+> The Functions `Context` object also contains other APIs, such as `log`. For example, you can use `context.log('hello')` in place of the common `console.log` you use in Node.js applications.
 In _functions/services/vacation.service.ts_, find and replace all four instances of the code `(req: Request, res: Response)` with the following code:
 
 ```typescript
 ({ req, res }: Context)
 ```
 
-When you're done refactoring, the changed code looks like the following example:
+When you're done refactoring, your changed code lines look like the following example:
 
 ```typescript
 import { Context } from '@azure/functions';

@@ -15,20 +15,20 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In an Azure Functions application, how do you change the route endpoint for a function in a folder named _vacations-get_ to `vacations`?"
+    - content: "In an Azure Functions application, how do you change the route endpoint to `vacations` for a function in a folder named _vacations-get_?"
       choices:
-        - content: "Add the `route` property in the `bindings` array `req` object in the _function.json_ file."
+        - content: "Add the `route` property to the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: true
-          explanation: "Correct. By convention, the `req` object defaults the route to the same name as the folder that contains the function. To override the name of the route, you add a `route` property."
-        - content: "Change the `methods` property in the `bindings` array `req` object in the _function.json_ file."
+          explanation: "Correct. By convention, the `req` object defaults the route to the same name as the folder that contains the function. To override the name of the route, you add the `route` property."
+        - content: "Change the `methods` property in the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: false
           explanation: "Incorrect. The `methods` property defines which HTTP methods are directed to the route."
-        - content: "Change the `authLevel` property in the `bindings` array `req` object in the _function.json_ file."
+        - content: "Change the `authLevel` property in the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: false
           explanation: "Incorrect. The `authLevel` property defines the authorization level required to access the function."
-        - content: "Add a `redirect` property in the `bindings` array `req` object in the _function.json_ file."
+        - content: "Add the `redirect` property to the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: false
-          explanation: "Incorrect. There isn't a redirect parameter for HTTP bindings."
+          explanation: "Incorrect. There isn't a `redirect` parameter for HTTP bindings."
     - content: "In a Functions application, where do you find the code that runs when an HTTP request is made?"
       choices:
         - content: "In the _function.json_ file in the function's folder."
@@ -39,11 +39,11 @@ quiz:
           explanation: "Correct. Each function is in a folder that contains an _index.ts_ file, which fires for its matching route."
         - content: "In the _host.json_ file in the Functions application root."
           isCorrect: false
-          explanation: "Incorrect. The _host.json_ file contains configuration for the application, not for a specific function."
+          explanation: "Incorrect. The _host.json_ file contains configuration for the overall application."
         - content: "In the _routes.ts_ file."
           isCorrect: false
-          explanation: "Incorrect. A Functions application doesn't have a _routes.json_ file by default."
-    - content: "In Functions, how do you access the request and response objects of HTTP calls?"
+          explanation: "Incorrect. A Functions application doesn't have a _routes.ts_ file by default."
+    - content: "How do you access the request and response objects of HTTP calls in a Functions application?"
       choices:
         - content: "Use the `Context` parameter that passes to each function."
           isCorrect: true
