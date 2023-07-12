@@ -5,8 +5,8 @@ metadata:
   description: Learn how to architect a secure, flexible, network infrastructure in Azure and connect on-premises networks to your Azure resources.
   brand: azure
   ms.date: 10/23/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect network infrastructure in Azure

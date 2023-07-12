@@ -7,7 +7,7 @@ metadata:
   author: drguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
   ms.custom: team=nextgen
 title: Predict basketball player efficiency ratings by using machine learning and Visual Studio Code
 summary: "By using anonymized data from real and animated basketball players in the upcoming film *Space Jam: A New Legacy*, create a machine learning model to cleanse data to be used during games. Also explore bimodal data distributions by using Python in Visual Studio Code."

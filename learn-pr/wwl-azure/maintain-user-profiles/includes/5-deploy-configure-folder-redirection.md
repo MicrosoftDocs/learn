@@ -1,4 +1,5 @@
 
+
 Folder Redirection is a Group Policy setting that is most often used for configuring user profiles. Administrators can use Folder Redirection to redirect individual folders from a user profile to a new location. For example, an administrator can redirect the Documents folder from a local or roaming user profile to a separate network location. Redirected folder content is available from any computer on a network, and it doesn't copy to the computer on which a user signs in, as with roaming user profiles. Folder Redirection also provides users with access to the same data from multiple domain computers without copying data locally, as is the case with roaming user profiles. You can configure Folder Redirection by modifying Policies\\Windows Settings\\Folder Redirection settings in the User Configuration part of Group Policy.
 
 Redirected folders are stored on a network share only, and users access them transparently in the same way as when they're stored in a local user profile. The Offline Files feature, which is enabled by default when redirected folders are used, provides users with access to content in redirected folders even without network connectivity.

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: firewall
 title: Configure Azure Firewall
 summary: Learn how to configure Azure Firewall including firewall rules.
 abstract: |

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: ssql-db-mi
 title: Deploy IaaS solutions with Azure SQL
 summary: Configure virtual machine sizing, storage, and networking options to ensure adequate performance for your database workloads. Choose and configure appropriate high availability options.
 abstract: |

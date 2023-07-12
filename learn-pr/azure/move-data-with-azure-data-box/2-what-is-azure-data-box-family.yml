@@ -3,7 +3,7 @@ uid: learn.azure.move-data-with-azure-data-box.what-is-azure-data-box-family
 title: What is the Azure Data Box family?
 metadata:
   title: What is the Azure Data Box family?
-  description: In this unit, you'll learn about the online and offline data transfer products in the Azure Data Box family.
+  description: In this unit, you learn about the online and offline data transfer products in the Azure Data Box family.
   ms.date: 07/26/2019
   author: alkohli
   ms.author: alkohli
@@ -25,4 +25,4 @@ quiz:
       explanation: "Data Box Gateway is an online virtual appliance that needs a significant amount of dedicated network bandwidth."
     - content: "Data Box Heavy"
       isCorrect: false
-      explanation: "Data Box Heavy allows for up to 800 TB of data transfer and is not applicable in this scenario."
+      explanation: "Data Box Heavy allows for up to 800 TB of data transfer and isn't applicable in this scenario."

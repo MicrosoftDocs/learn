@@ -1,3 +1,5 @@
+
+
 Most organizations have diverse requirements for their cloud-hosted data. Companies work with many kinds of data, such as text documents, database spreadsheets, application files, fax receipts, images, and videos. This information needs to be securely shared throughout the organization and across geographical areas. If a datacenter failure occurs, the data must be quickly recovered.
 
 In this module, you're responsible for configuring appropriate storage accounts for the company data. You're tasked with designing a plan to configure secure access, and developing a storage replication strategy.

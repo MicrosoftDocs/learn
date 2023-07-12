@@ -7,8 +7,11 @@ metadata:
   ms.date: 10/28/2020
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 1
 content: |
   [!include[](includes/7-summary.md)]

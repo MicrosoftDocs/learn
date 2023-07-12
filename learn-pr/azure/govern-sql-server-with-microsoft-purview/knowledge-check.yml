@@ -5,13 +5,13 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: Knowledge check
-  ms.date: 4/19/2022
+  ms.date: 4/25/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/knowledge-check.md)]
@@ -47,7 +47,7 @@ quiz:
     - content: "Azure AD"
       isCorrect: false
       explanation: "Incorrect. Azure AD isn't a secure store for passwords."
-    - content: "In plain text in an Microsoft Purview account"
+    - content: "In plain text in a Microsoft Purview account"
       isCorrect: false
-      explanation: "Incorrect. An Microsoft Purview account isn't a secure store for passwords."
+      explanation: "Incorrect. A Microsoft Purview account isn't a secure store for passwords."
   

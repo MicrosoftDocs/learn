@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.edge.intro-to-pwabuilder.how-pwabuilder-works
+title: How PWABuilder works
+metadata:
+  title: How PWABuilder works
+  description: This content is part of the "Introduction to PWABuilder" module.
+  ms.date: 05/01/2023
+  author: zainalijp
+  ms.author: v-alizain
+  ms.topic: module-intro-to-product
+  ms.prod: microsoft-edge
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-how-pwabuilder-works.md)]

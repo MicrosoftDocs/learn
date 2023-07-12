@@ -4,20 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: ""
   questions:
-  - content: "Which storage solution replicates data to a secondary region, maintains six copies of the data, and is the default replication option?"
+  - content: "Which storage solution replicates data to a secondary region, and maintains six copies of the data?"
     choices:
     - content: "Locally redundant storage"
       isCorrect: false

@@ -5,11 +5,11 @@ metadata:
   unitType: exercise
   title: access control exercise
   description: "This exercise describes the steps to create a collection and assign permissions in Microsoft Purview."
-  ms.date: 6/21/2022
+  ms.date: 04/27/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/7-access-control-exercise.md)]

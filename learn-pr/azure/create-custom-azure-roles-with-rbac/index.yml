@@ -7,7 +7,7 @@ metadata:
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: role-based-access-control
 title: Create custom roles for Azure resources with role-based access control (RBAC)
 summary: Understand the structure of role definitions for access control. Identify the role properties to use that define your custom role permissions. Create an Azure custom role and assign to a user. 
 abstract:  | 

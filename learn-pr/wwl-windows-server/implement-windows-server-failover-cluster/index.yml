@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows-server
 title: Implement Windows Server failover clustering
 summary: Learn about the core functionality of Windows Server failover clustering, various configuration options for failover clustering, and the use of cluster sets.
 abstract: |

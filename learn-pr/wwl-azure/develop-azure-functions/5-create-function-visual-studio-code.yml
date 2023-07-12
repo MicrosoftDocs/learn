@@ -4,11 +4,11 @@ title: 'Exercise: Create an Azure Function by using Visual Studio Code'
 metadata:
   title: 'Exercise: Create an Azure Function by using Visual Studio Code'
   description: "Exercise: Create an Azure Function by using Visual Studio Code"
-  ms.date: 02/07/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/5-create-function-visual-studio-code.md)]

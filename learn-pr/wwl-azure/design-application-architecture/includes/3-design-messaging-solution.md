@@ -1,3 +1,4 @@
+
 Azure offers two message-based solutions, Azure Queue Storage and Azure Service Bus. Queue Storage stores large numbers of messages in Azure Storage. Service Bus is a message broker that decouples applications and services. We'll examine the different features and capabilities of these services and consider how to choose which service to implement.
 
 One of your design tasks for Tailwind Traders is to recommend a design for their product demo application. Customers use the app to get the latest tips, reviews, and instructions for featured home improvement products. You have two requirements for the app design:
@@ -48,7 +49,7 @@ Azure Service Bus message queues are intended for enterprise applications, such 
 
 #### Business scenario
 
-Consider the scenario where a customer is watching to a video by with the product demo app. You can support the actions by using publish-subscribe topic attributes:
+Consider the scenario where a customer is watching a video on an app. The app supports both user history and fan lists. You can support both actions by using publish-subscribe topic attributes:
 
 - The mobile app sends a message to the `Watched` topic.
 
@@ -63,5 +64,5 @@ Each Azure messaging solution has a slightly different set of features and capab
 | Messaging solution | Example scenarios |
 | --- | --- |
  **Azure Queue Storage** | _You want a simple queue to organize messages_.<br><br> _You need an audit trail of all messages that pass through the queue_.<br><br>  _You expect the queue storage to exceed 80 GB_.<br><br> _You'd like to track progress for processing a message inside of the queue_. |
-|  **Azure Service Bus** <br> _message queues_ |_You require an at-most-once delivery guarantee_.<br><br> _You require at-least-once message processing (PeekLock receive mode)_.<br><br> _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> _You want to group messages into transactions_.<br><br> _You want to receive messages without polling the queue_.<br><br> _You need to handle messages larger than 64 KB but less than 256 KB_.<br><br> _You expect the queue storage won't exceed 80 GB_.<br><br> _You'd like to publish and consume batches of messages_. |
+|  **Azure Service Bus** <br> _message queues_ |_You require an at-most-once delivery guarantee_.<br><br> _You require at-least-once message processing (PeekLock receive mode)_.<br><br> _You require at-most-once message processing (ReceiveAndDelete receive mode)_.<br><br> _You want to group messages into transactions_.<br><br> _You want to receive messages without polling the queue_.<br><br> _You need to handle messages larger than 64 KB_.<br><br> _You expect the queue storage won't exceed 80 GB_.<br><br> _You'd like to publish and consume batches of messages_. |
 | **Azure Service Bus** <br> _publish-subscribe topics_ | _You need multiple receivers to handle each message_.<br><br> _You expect multiple destinations for a single message but need queue-like behavior_. | 

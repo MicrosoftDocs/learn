@@ -3,13 +3,15 @@ uid: learn.beginner-python.python-dictionaries.dynamic-programming
 title: Dynamic programming with dictionaries
 metadata:
   title: Dynamic programming
-  description: Python dictionaries allow you to access values and keys without prior knowledge of the content. This module explores how to do this, and scenarios where it can be helpful.
-  ms.date: 12/08/2021
+  description: Python dictionaries allow you to access values and keys without prior knowledge of the content. This module explores how to access data, and scenarios where it can be helpful.
+  ms.date: 06/05/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/4-dynamic-programming.md)]

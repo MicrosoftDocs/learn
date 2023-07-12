@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: automation
+  ms.subservice: dsc
 title: Implement Desired State Configuration (DSC)
 summary: This module describes Desired State Configuration (DSC) and its components for implementation. You can exercise how to import, compile and automate your environment creation, and use DSC for Linux automation on Azure.
 abstract: |

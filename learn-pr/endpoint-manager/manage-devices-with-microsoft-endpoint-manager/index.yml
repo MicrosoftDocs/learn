@@ -2,12 +2,12 @@
 uid: learn.manage-devices-with-microsoft-endpoint-manager
 metadata:
   title: Understand device management using Microsoft Intune
-  description: In this module, you'll learn about how your organization's devices can be provisioned and managed. Additionally, you will learn about the different types of enrollment methods available using Microsoft Intune.
-  ms.date: 10/23/2020
+  description: In this module, you'll learn about how your organization's devices can be provisioned and managed. Additionally, you'll learn about the different types of enrollment methods available using Microsoft Intune.
+  ms.date: 05/08/2023
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Understand device management using Microsoft Intune
 summary: As part of device management, Intune helps you protect device data, manage policy assignments, ensure proper device access, implement device security rules, and resolve device compliance issues.
 abstract: | 

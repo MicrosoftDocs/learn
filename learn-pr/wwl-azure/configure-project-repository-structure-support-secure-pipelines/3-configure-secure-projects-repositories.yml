@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.configure-secure-projects-repositories
+title: Configure secure projects and repositories
+metadata:
+  title: Configure secure projects and repositories
+  description: "Configure secure projects and repositories."
+  ms.date: 1/25/2023
+  author: lauraAlvEl
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-configure-secure-projects-repositories.md)]

@@ -8,7 +8,7 @@ metadata:
   author: davidmu1
   ms.author: davidmu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Enable single sign-on for applications by using Azure Active Directory
 summary: "To enable single sign-on, you add an application from the Azure Active Directory(Azure AD) application gallery. You create a test user account in Azure AD  and assign it to the Azure AD application. You then configure single sign-on both at the identity provider and the service provider and test the single sign-on configuration by signing in to the application using the test user account."
 abstract: |

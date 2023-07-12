@@ -4,13 +4,11 @@ title: Examine App configuration feature management
 metadata:
   title: Examine App configuration feature management
   description: "Examine App configuration feature management"
-  ms.date: 12/09/2022
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/7-examine-app-configuration-feature-management.md)]

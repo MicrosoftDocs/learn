@@ -1,11 +1,11 @@
-Our goal was to help you evaluate whether the Red Hat solutions – Red Hat Enterprise Linux, Azure Red Hat OpenShift, and JBoss Enterprise Application Platform – would be a good choice for modernizing and scaling your Linux workloads in the cloud. We developed some criteria to make this decision, including:
+Our goal was to help you evaluate whether the Red Hat solutions – Red Hat Enterprise Linux, Azure Red Hat OpenShift, and JBoss Enterprise Application Platform – are a good choice for modernizing and scaling your Linux workloads in the cloud. We developed some criteria to make this decision, including:
 
-- Type of application running
+- Type of application
 - App development strategy
-- Programing language used
+- Programing language
 - Infrastructure environment
 
-We applied these criteria to the fictional online retailer to show that since they were already running Red Hat on-premises, needed the speed of containerization for their app development strategy, were running a Java-based website, and looking to migrate Azure, a combination of using RHEL, ARO, and JBoss EAP is appropriate.
+We applied these criteria to the fictional online retailer in our scenario. They were already running Red Hat on-premises and they needed the speed of containerization for their app development strategy. They were also running a Java-based website, and were looking to migrate Azure. We determined that a combination of using RHEL, ARO, and JBoss EAP is appropriate for their situation.
 
 ## References
 

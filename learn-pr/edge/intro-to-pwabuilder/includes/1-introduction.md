@@ -1,0 +1,5 @@
+In this module, we'll explore the world of Progressive Web Apps (PWAs) and how PWABuilder, an open-source tool developed by Microsoft, streamlines the PWA development process. To illustrate the benefits of using PWAs, let's consider a scenario where a growing e-commerce company specializing in eco-friendly products, called `Contoso EcoEmporium`, wants to enhance its Windows users' online shopping experience. Being mainly a website company, they lack any closeness to the users; one proposed solution is to create applications for all types of devices, but the solution is costly and will result in less budget for environmental initiatives.
+
+:::image type="content" source="../media/1-pwa-builder.png" alt-text="Screenshot displaying PWABuilder logo.":::
+
+Throughout this module, we'll learn about the key features and benefits of PWAs, the role of PWABuilder in generating essential PWA components, and the packaging and deployment process for various platforms. By the end of this module, you'll clearly understand PWAs, how to use PWABuilder to develop and deploy PWAs, and how to decide when to use PWABuilder for your projects.

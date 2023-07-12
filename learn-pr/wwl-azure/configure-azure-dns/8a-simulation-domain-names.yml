@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-dns.interactive-simulation-domain-names
+title: Interactive lab simulation
+metadata:
+  title: Interactive lab simulation
+  description: "Interactive lab simulation"
+  ms.date: 04/26/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
+content: |
+  [!include[](includes/8a-simulation-domain-names.md)]

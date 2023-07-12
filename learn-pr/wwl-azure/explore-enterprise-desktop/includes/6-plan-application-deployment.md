@@ -1,4 +1,5 @@
 
+
 Application deployment planning consists of three phases: managing application inventory and compatibility, packaging applications, and providing life-cycle support.
 
 ### **Application inventory and compatibility**

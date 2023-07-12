@@ -7,7 +7,8 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-monitor
+  ms.subservice: logs
 title: Analyze your Azure infrastructure by using Azure Monitor logs
 summary: Use Azure Monitor logs to extract valuable information about your infrastructure from log data.
 abstract: | 

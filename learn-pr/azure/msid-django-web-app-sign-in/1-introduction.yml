@@ -3,13 +3,13 @@ uid: learn.msid-django-web-app-sign-in.introduction
 title: Introduction
 metadata:
   unitType: introduction
-  title: Introduction - Enable user sign-in to your Django web app using Azure AD
-  description: Create a Django web app that signs in users using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant and sign in the user to a Django web app.
-  ms.date: 10/18/2022
+  title: Introduction - Enable user sign-in to your Django web app by using Azure AD
+  description: Create a Django web app that signs in users by using the Microsoft identity platform. Register a Django web app in an Azure AD tenant, add a user in the tenant, and sign in the user to a Django web app.
+  ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
