@@ -29,6 +29,5 @@ subjects:
 - artificial-intelligence
 - compliance
 units:
-- learn-wwl.responsible-ai-guiding-principles.model-ai-governance
 badge: 
   uid: learn-wwl.responsible-ai-governing-practices.badge #add the uid for your achievement badge.
