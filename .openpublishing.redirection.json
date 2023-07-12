@@ -24113,6 +24113,11 @@
       "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/2-organizational-models-part-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
