@@ -23358,6 +23358,11 @@
     "source_path": "learn-pr/azure/sustainable-software-engineering-overview/12-summary.md",
     "redirect_url": "https://learn.microsoft.com/training/modules/sustainable-software-engineering-overview/10-summary",
     "redirect_document_id": false
-  }
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-in-education/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    }
   ]
 }
