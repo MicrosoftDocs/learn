@@ -23888,6 +23888,291 @@
       "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/6-summary-and-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/2-marketing-case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/4-marketing-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/3-marketing-executive-qa.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-marketing/6-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/2-sale-case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/4-sales-case-study-resolution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/3-sales-executive-qa.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-sales/6-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/4-ai-at-scale.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/5-ai-at-scale-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/6-ai-economics.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/7-ai-organizational-models.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/2-manage-innovation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/3-manage-innovation-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/9-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/2-explore-state-of-the-art-ai-technology.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/3-introduction-to-ai-technology.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/5-introduction-to-ml-and-dl.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/4-microsoft-ai-approach.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/7-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/7-ai-for-good.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/5-engineering-design-principles.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/3-microsoft-governance-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/2-microsoft-governance-model-video.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/4-responsible-ai-frameworks.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/9-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-responsible-ai-practices/6-responsible-ai-tools.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/2-organizational-models-part-1.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/5-organizational-models-part-2.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/3-government-governance-models.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/4-government-policy-considerations.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices-government/7-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/4-governance-compliance.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/6-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/2-governance-external-engagement.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/3-organizational-model.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
