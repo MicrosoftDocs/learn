@@ -1837,3 +1837,8 @@ achievements:
   title: Describe core Azure architectural components
   summary: In this module, you'll examine the various concepts, resources, and terminology that are necessary to work with Azure architecture. For example, you'll learn about Azure subscriptions and management groups, resource groups and Azure Resource Manager, as well as Azure regions and availability zones.
   iconUrl: /training/achievements/azure-architecture-fundamentals.svg
+- uid: learn.azure.fundamental-azure-concepts.badge
+  type: badge
+  title: Discuss Azure fundamental concepts
+  summary: Are you interested in the cloud, but aren't sure what it can do for you? In this module, you'll learn about the advantages of using cloud computing services, and you'll learn to differentiate between the categories and types of cloud computing.
+  iconUrl: /training/achievements/fundamental-azure-concepts.svg
