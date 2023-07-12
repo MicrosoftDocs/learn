@@ -14,8 +14,8 @@ title: Persist and retrieve relational data by using Entity Framework Core
 summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
 abstract: |
   In this module, you'll:
-  - Review object-relational mapper (ORM) concepts.
-  - Understand Entity Framework Core (EF Core) architecture.
+  - Review ORM concepts.
+  - Understand EF Core architecture.
   - Write C# code to interact with a database by using EF Core.
   - Use EF Core migrations to keep the code and database in sync.
   - Use reverse engineering to generate entity models from an existing database.
