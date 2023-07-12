@@ -13,7 +13,7 @@ In this exercise, you'll practice generating an app manifest and service worker 
 
 1. Select the Icons tab and upload an appropriate icon.
 
-    :::image type="content" source="../media/manifest-editor-modal-icons-pane.png" alt-text="Screenshot of PWABuilder's Manifest Editor modal with the Info pane open.":::
+    :::image type="content" source="../media/manifest-editor-modal-icons-pane.png" alt-text="Screenshot of PWABuilder's Manifest Editor modal with the Icons pane open.":::
 
 1. You can also edit other manifest sections through all the tab options.
 1. Scroll down and select the **Download Manifest** button to save the generated manifest file.
