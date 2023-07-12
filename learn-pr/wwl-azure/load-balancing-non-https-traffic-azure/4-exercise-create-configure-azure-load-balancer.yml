@@ -8,11 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: load-balancer
   ms.custom:
   - references_regions
-azureSandbox: false
-labModal: false
 durationInMinutes: 15
 content: |
   [!include[](includes/4-exercise-create-configure-azure-load-balancer.md)]
