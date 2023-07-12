@@ -23563,6 +23563,126 @@
       "source_path": "learn-pr/ai-business-school/ai-strategy-in-manufacturing/7-summary-and-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/management-groups-subscriptions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/regions-availability-zones.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/resources-resource-manager.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/benefits-of-cloud-computing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/categories-of-cloud-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/fundamental-azure-concepts/types-of-cloud-computing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/case-study-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/get-started-with-azure-accounts.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/tour-of-azure-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/what-is-cloud-computing.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/what-is-microsoft-azure.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
