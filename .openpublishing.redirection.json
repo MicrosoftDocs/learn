@@ -23463,6 +23463,11 @@
       "source_path": "learn-pr/ai-business-school/ai-strategy-in-government/5-government-case-study-resolution.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-in-government/4-government-executive-QA.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
