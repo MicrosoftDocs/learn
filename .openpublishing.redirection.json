@@ -24038,6 +24038,11 @@
       "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/3-introduction-to-ai-technology.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/introduction-to-ai-technology/5-introduction-to-ml-and-dl.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
