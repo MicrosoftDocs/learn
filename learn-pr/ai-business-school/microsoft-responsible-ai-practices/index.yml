@@ -29,7 +29,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.microsoft-responsible-ai-practices.rai-frameworks
 - learn-wwl.microsoft-responsible-ai-practices.tools-for-responsible-ai
 - learn-wwl.microsoft-responsible-ai-practices.summary-and-resources
 badge: 
