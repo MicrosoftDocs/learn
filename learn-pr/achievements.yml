@@ -1897,3 +1897,8 @@ achievements:
   title: Discuss practices for responsible AI at Microsoft
   summary: At Microsoft, we have established our own governing practices for responsible AI. While every organization will have its own approach and we don’t have all the answers, we’d like to share what we’ve learned so far.
   iconUrl: /training/achievements/microsoft-responsible-ai-practices.svg
+- uid: learn-wwl.responsible-ai-governing-practices-government.badge
+  type: badge
+  title: Identify governing practices for responsible AI in government
+  summary: As AI becomes more prevalent, it’s imperative that governments have practices in place to ensure that it’s used responsibly. This starts with governments establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every government has their own perspective on responsible AI, but we’re hopeful that our perspective is a helpful starting point as they embark on their own AI journey.
+  iconUrl: /training/achievements/responsible-ai-governing-practices-government.svg
