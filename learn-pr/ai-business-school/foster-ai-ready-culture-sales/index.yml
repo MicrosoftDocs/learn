@@ -29,7 +29,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.foster-ai-culture-sales.sales-executive-qa
 - learn-wwl.foster-ai-culture-sales.summary-and-resources
 badge: 
   uid: learn-wwl.foster-ai-culture-sales.badge #add the uid for your achievement badge.
