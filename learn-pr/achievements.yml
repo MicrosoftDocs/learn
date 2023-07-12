@@ -1857,3 +1857,8 @@ achievements:
   title: Understand the importance of building an AI-ready culture
   summary: A successful AI strategy must consider cultural issues as well as business issues. Becoming an AI-ready organization requires a fundamental transformation in how you do things, how employees relate to each other, what skills they have, and what processes and principles guide your behaviors. This unit is designed to help you understand which are the key elements that make a culture AI-ready and proposes a framework to drive that change in your organization.
   iconUrl: /training/achievements/build-an-ai-ready-culture.svg
+- uid: learn-wwl.coinnovate-for-broader-impact.badge
+  type: badge
+  title: Coinnovate for a broader impact
+  summary: While it's essential to have alignment on the inside, businesses can't exist without connecting to what's outside. External points of view play a key role in understanding how innovation efforts impact people and communities beyond your organization. Collaborating with external partners and even customers can help you go beyond innovation for innovation's sake and provide meaningful solutions to your customers, communities, and even society.
+  iconUrl: /training/achievements/generic-badge.svg
