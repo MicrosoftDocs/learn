@@ -4,13 +4,15 @@ title: 'Exercise: create a Traffic Manager profile using the Azure portal'
 metadata:
   title: 'Exercise: create a Traffic Manager profile using the Azure portal'
   description: "Exercise: create a Traffic Manager profile using the Azure portal"
-  ms.date: 07/11/2023
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
   - references_regions
+azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-create-traffic-manager-profile-using-azure-portal.md)]

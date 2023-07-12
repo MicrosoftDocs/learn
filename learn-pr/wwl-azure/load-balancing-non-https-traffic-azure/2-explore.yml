@@ -4,13 +4,15 @@ title: Explore load balancing
 metadata:
   title: Explore load balancing
   description: "Explore load balancing"
-  ms.date: 07/11/2023
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom:
   - references_regions
+azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/2-explore.md)]
