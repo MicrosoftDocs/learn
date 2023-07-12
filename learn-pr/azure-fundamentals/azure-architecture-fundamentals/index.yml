@@ -32,7 +32,6 @@ products:
 subjects:
 - architecture
 units:
-- learn.azure.azure-architecture-fundamentals.overview
 - learn.azure.azure-architecture-fundamentals.regions-availability-zones
 - learn.azure.azure-architecture-fundamentals.resources-resource-manager
 - learn.azure.azure-architecture-fundamentals.summary
