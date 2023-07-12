@@ -35,7 +35,6 @@ units:
 - learn.azure.intro-to-azure-fundamentals.what-is-cloud-computing
 - learn.azure.intro-to-azure-fundamentals.what-is-microsoft-azure
 - learn.azure.intro-to-azure-fundamentals.tour-of-azure-services
-- learn.azure.intro-to-azure-fundamentals.knowledge-check
 - learn.azure.intro-to-azure-fundamentals.summary
 badge:
   uid: learn.azure.intro-to-azure-fundamentals.badge
