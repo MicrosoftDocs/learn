@@ -1872,3 +1872,8 @@ achievements:
   title: Discover how to foster an AI-ready culture in customer service
   summary: A successful AI strategy in customer service must consider cultural issues, as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
   iconUrl: /training/achievements/foster-ai-ready-culture-customer-service.svg
+- uid: learn-wwl.foster-ai-culture-marketing.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in marketing
+  summary: A successful AI strategy in marketing must consider cultural issues as well as business issues. The goal of this module is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-marketing.svg
