@@ -1847,3 +1847,8 @@ achievements:
   title: Introduction to Azure fundamentals
   summary: This module introduces you to the basics of cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
   iconUrl: /training/achievements/intro-to-azure-fundamentals.svg
+- uid: learn-wwl.ai-strategy-to-create-business-value.badge
+  type: badge
+  title: Define an AI strategy to create business value
+  summary: AI has the capacity to empower the whole world to achieve more. From empowering technical development teams to mobilizing an entire organization to unlock the true potential of AI, enterprises need to think strategically about AI – and they need to start today.
+  iconUrl: /training/achievements/ai-strategy-to-create-business-value.svg
