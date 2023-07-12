@@ -23768,6 +23768,11 @@
       "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/6-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/build-an-ai-ready-culture/7-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
