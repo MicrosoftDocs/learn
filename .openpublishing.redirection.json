@@ -23598,6 +23598,11 @@
       "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/resources-resource-manager.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-architecture-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
