@@ -4,10 +4,10 @@ metadata:
   title: Introduction to machine learning
   description: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
   ms.date: 08/02/2022
-  author: TomReidNZ
-  ms.author: jasdeb
+  ms.service: machine-learning
+  author: msakande
+  ms.author: mopeakande
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to machine learning
 summary: A high-level overview of machine learning for people with little or no knowledge of computer science and statistics. You’ll be introduced to some essential concepts, explore data, and interactively go through the machine learning life-cycle - using Python to train, save, and use a machine learning model like we would in the real world.
 abstract: | 

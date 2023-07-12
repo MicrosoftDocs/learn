@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-forms
 title: Separate your UI and code with Xamarin.Forms data binding
 summary: "Update your UI when your data changes by using bindings and INotifyPropertyChanged. Update your data when your UI changes by using two-way bindings. Bind otherwise incompatible types by using IValueConverter."
 abstract: |
@@ -17,6 +18,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/separate-your-ui-and-code-with-xamarin-forms-data-binding-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:

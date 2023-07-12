@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Custom named entity recognition
 summary: Build a custom entity recognition solution to extract entities from unstructured documents
 abstract: |

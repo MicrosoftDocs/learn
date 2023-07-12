@@ -3,7 +3,7 @@ uid: learn.wwl.ingest-streaming-data-use-azure-stream-analytics-synapse
 metadata:
   title: Ingest streaming data using Azure Stream Analytics and Azure Synapse Analytic
   description: "Azure Stream Analytics provides a real-time data processing engine that you can use to ingest streaming event data into Azure Synapse Analytics for further analysis and reporting."
-  ms.date: 12/08/2022
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial

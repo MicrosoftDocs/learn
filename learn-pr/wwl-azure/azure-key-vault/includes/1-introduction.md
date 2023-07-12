@@ -10,7 +10,7 @@ A security engineer uses Azure Key Vault to manage certificates and secrets, you
 
 ## Skills measured
 
-Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/certifications/exams/az-500).
+Locking down applications and data is a part of [Exam AZ-500: Microsoft Azure Security Engineer](/learn/certifications/exams/az-500).
 
 Secure data and applications (20-25%)
 

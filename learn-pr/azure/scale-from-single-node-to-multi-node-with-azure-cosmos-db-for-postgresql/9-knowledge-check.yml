@@ -9,56 +9,42 @@ metadata:
   author: sadukie
   ms.author: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 1
-###########################################################################
-###
-### General guidance (https://review.docs.microsoft.com/learn-docs/docs/id-guidance-knowledge-check)
-###  - Questions are complete sentences ending with a question mark
-###  - No true/false questions
-###  - 3 answers per question
-###  - All answers about the same length
-###  - Numeric answers listed in sorted order
-###  - No "All of the above" and/or "None of the above" as answer choices
-###  - No "Not" or "Except" in questions
-###  - No second person ("you") in the questions or answers
-###  - Provide a meaningful explanation for both correct and incorrect answers
-###
-###########################################################################
 content: |
 quiz:
   questions:
   - content: "Which nodes can host shards in a distributed configuration?"
     choices:
-    - content: "Both coordinator and worker nodes"
+    - content: "Both the coordinator node and the worker nodes"
       isCorrect: true
-      explanation: "Correct! When going from single-node to multi-node, the coordinator node is configured host shards."
+      explanation: "Correct! When going from single-node to multi-node, the coordinator node is configured to host shards."
     - content: "Only the coordinator node"
       isCorrect: false
-      explanation: "Try again. The coordinator node engages all nodes with shards in a query."
+      explanation: "Try again. The coordinator node engages all nodes that have shards in a query."
     - content: "Only the worker nodes"
       isCorrect: false
-      explanation: "Try again. The worker nodes host shards all the time. There is another node that hosts shards in the single-node to multi-node configuration."
-  - content: "Which of these shows the number of shards involved in a query?"
+      explanation: "Try again. The worker nodes host shards all the time. There's another node that hosts shards in the single-node to multi-node configuration."
+  - content: "Which of the following options show the number of shards that are involved in a query?"
     choices:
-    - content: "EXPLAIN in psql"
+    - content: "`EXPLAIN` in psql"
       isCorrect: true
-      explanation: "Correct! EXPLAIN shows the query plan, including the number of tasks. The number of tasks represents the number of shards to be queried."
+      explanation: "Correct! `EXPLAIN` shows the query plan, including the number of tasks. The number of tasks represents the number of shards to be queried."
     - content: "pgbench"
       isCorrect: false
-      explanation: "Try again. pgbench is a tool used for benchmarking queries. It does not get into the query plan."
+      explanation: "Try again. pgbench is a tool that's used for benchmarking queries. It doesn't get into the query plan."
     - content: "pg_cron"
       isCorrect: false
-      explanation: "Try again. pg_cron is an extension used to schedule jobs in Postgres, including Azure Cosmos DB for PostgreSQL."
+      explanation: "Try again. pg_cron is an extension that's used to schedule jobs in PostgreSQL, including Azure Cosmos DB for PostgreSQL."
   - content: "Which of these scenarios is incompatible for foreign keys in Azure Cosmos DB for PostgreSQL?"
     choices:
     - content: "From reference tables to distributed tables"
       isCorrect: true
-      explanation: "Correct! In order for foreign keys to be enforced, the referencing and referenced rows need to be stored on the same node. Going from a reference table to a distributed table that spans multiple nodes is not supported."
+      explanation: "Correct! For foreign keys to be enforced, the referencing and referenced rows must be stored on the same node. Going from a reference table to a distributed table that spans multiple nodes isn't supported."
     - content: "Between reference tables and local tables"
       isCorrect: false
       explanation: "Try again. Azure Cosmos DB for PostgreSQL does support enforcing foreign keys between reference tables and local tables."
     - content: "From a distributed table to a reference table"
       isCorrect: false
-      explanation: "Try again. Azure Cosmos DB for PostgreSQL does support enforcing foreign keys starting a distributed table and going to a reference table. The data integrity is enforceable since each worker node has its own copy of a reference table."
+      explanation: "Try again. Azure Cosmos DB for PostgreSQL does support enforcing foreign keys that start in a distributed table and move to a reference table. The data integrity is enforceable because each worker node has its own copy of a reference table."
  

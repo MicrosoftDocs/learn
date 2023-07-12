@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-machine-learning-workspace-resources-assets.video
+title: |
+  Video - Explore the Azure Machine Learning workspace
+metadata:
+  title: |
+    Video - Explore the Azure Machine Learning workspace
+  description: "Optional video that covers the exploration of the Azure Machine Learning workspace."
+  ms.date: 7/3/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+durationInMinutes: 25
+content: |
+  [!include[](includes/1b-video.md)]

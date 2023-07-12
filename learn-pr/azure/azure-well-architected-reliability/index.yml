@@ -2,22 +2,22 @@
 uid: learn.azure-well-architected-reliability
 metadata:
   title: Microsoft Azure Well-Architected Framework - Reliability
-  description: Learn how to recover from infrastructure and service failure, loss of data, and disasters by incorporating reliability into your architecture.
-  ms.date: 10/13/2022
+  description: Learn about Azure high availability, disaster recovery, and backup and restore solutions to incorporate reliability into your architecture.
+  ms.date: 06/12/2023
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: waf
+  ms.subservice: waf-pillar-reliability
 title: Microsoft Azure Well-Architected Framework - Reliability
-summary: Learn how to handle infrastructure and service failure, recover from the loss of data, and recover from a disaster by incorporating reliability into your architecture.
+summary: Learn about Azure high availability, disaster recovery, and backup and restore solutions to incorporate reliability into your architecture.
 abstract: |
-  By the end of this module, you will be able to:
-    - Design a highly available application by leveraging Azure services
-    - Incorporate Azure disaster recovery capabilities into your architecture
-    - Protect your application from data loss or corruption
+  - Use Azure services to design highly available architectures.
+  - Incorporate Azure disaster recovery capabilities into your architecture.
+  - Learn how Azure backup and restore capabilities can help protect your data and infrastructure.
 prerequisites: |
-  - Experience building or operating solutions using core infrastructure technology such as data storage, compute, and networking
-  - Experience building or operating technology systems to solve business problems
+  - Experience with core infrastructure technologies such as data storage, computing, and networking.
+  - Experience building or operating technology systems to solve business problems.
 iconUrl: /training/achievements/azure-well-architected-reliability.svg
 levels:
 - intermediate

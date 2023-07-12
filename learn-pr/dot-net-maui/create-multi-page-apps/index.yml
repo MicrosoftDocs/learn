@@ -7,8 +7,10 @@ metadata:
   ms.date: 05/02/2022
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-languages
+  ms.prod: dotnet-mobile
+  ms.technology: dotnet-maui
 title: Create multi-page .NET MAUI apps with tab and flyout navigation
 summary: "Use .NET MAUI shell to create multi-page applications with tabs and flyout navigation."
 abstract: |

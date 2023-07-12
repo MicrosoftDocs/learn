@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Classify images
 summary: Image classification is used to determine the main subject of an image. You can use the Custom Vision services to train a model that classifies images based on your own categorizations.
 abstract: |

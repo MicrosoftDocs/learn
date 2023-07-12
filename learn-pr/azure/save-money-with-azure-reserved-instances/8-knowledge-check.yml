@@ -2,12 +2,12 @@
 uid: learn.save-money-with-azure-reserved-instances.knowledge-check
 metadata:
   title: Knowledge check
-  description: Knowledge check
-  ms.date: 11/01/2021
+  description: Check your knowledge.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Knowledge check
 durationInMinutes: 2
 quiz:
@@ -46,18 +46,18 @@ quiz:
     - content: "BizSpark, Azure in Open, and the Microsoft Azure for Students Starter Offer"
       isCorrect: false
       explanation: "Although the customer types can have Azure subscriptions, they are not supported with Azure reservations."
-  - content: "What is one way of optimizing your reservation purchase?"
+  - content: "What is one way to optimize your reservation purchase?"
     choices:
     - content: "Exchange unused quantity for a different reservation"
       isCorrect: true
-      explanation: "Reservations can be optimized by exchanging a unused quantity for a different reservation."
+      explanation: "Reservations can be optimized by exchanging an unused quantity for a different reservation."
     - content: "Assign new users permissions on the reservation"
       isCorrect: false
       explanation: "Changing permissions doesn't affect how the reservation is applied."
     - content: "Enable instance region flexibility"
       isCorrect: false
       explanation: "Instance region flexibility isn't available. However, enabling instance size flexibility applies the reservation discount to other VMs in the same VM size group and would help optimize your purchase."
-  - content: "What report type is used to create charge back report?"
+  - content: "What report type is used to create a chargeback report?"
     choices:
     - content: "Actual Cost report"
       isCorrect: false

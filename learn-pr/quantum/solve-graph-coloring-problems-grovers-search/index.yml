@@ -7,7 +7,6 @@ metadata:
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: tutorial
-  ms.prod: learning-quantum
 title: Solve graph coloring problems by using Grover's search
 summary: Learn how Grover's algorithm can help you solve search problems such as graph coloring problems.
 abstract: |

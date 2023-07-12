@@ -8,7 +8,7 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 9
 content: |
   [!include[](includes/4-configure-data-retention.md)]

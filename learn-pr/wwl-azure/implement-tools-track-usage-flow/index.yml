@@ -3,11 +3,11 @@ uid: learn.wwl.implement-tools-to-track-usage-flow
 metadata:
   title: Implement tools to track usage and flow
   description: "Implement tools to track usage and flow"
-  ms.date: 01/16/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Implement tools to track usage and flow
 summary: This module introduces you to continuous feedback practices and tools to track usage and flow, such as Azure Logs Analytics, Kusto Query Language (KQL), and Application Insights.
 abstract: |

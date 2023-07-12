@@ -8,7 +8,6 @@ metadata:
   author: lapate
   ms.author: lapate
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Get started with enterprise scale data management and analytics scenario
 summary: "In this module, you'll learn how data management and analytics scenario help organizations build the strategic design to on board and govern modern data analytics workloads.  The module prepares you to design the enterprise scale architecture patterns focused on data first approach"
 abstract: |

@@ -7,10 +7,12 @@ metadata:
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Configure Azure SQL Database
 durationInMinutes: 10
 interactive: powershell
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/6-exercise-configure-database.md)]

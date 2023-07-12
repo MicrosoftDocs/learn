@@ -8,6 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

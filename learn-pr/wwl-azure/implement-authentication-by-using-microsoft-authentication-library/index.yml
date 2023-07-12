@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement authentication by using the Microsoft Authentication Library
 summary: Learn how to implement authentication by using the Microsoft Authentication Library.
 abstract: |

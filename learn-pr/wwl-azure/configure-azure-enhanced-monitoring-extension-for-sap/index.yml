@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Configure the Azure Enhanced Monitoring Extension for SAP
 summary: This module covers the configuration of the Azure Enhanced Monitoring Extension for SAP.
 abstract: |

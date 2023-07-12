@@ -3,11 +3,11 @@ uid: learn.wwl.implement-manage-external-identities
 metadata:
   title: Implement and manage external identities
   description: "Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration."
-  ms.date: 02/03/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: identity-and-access
 title: Implement and manage external identities
 summary: Inviting external users to use company Azure resources is a great benefit, but you want to do it in a secure way. Explore how to enable secure external collaboration.
 abstract: |

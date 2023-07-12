@@ -7,7 +7,6 @@ metadata:
   author: rayoef
   ms.author: rayoflores
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Introduction to Docker containers"
 summary: "Describe the benefits of using Docker containers as a containerization platform. Discuss the infrastructure provided by the Docker platform."
 abstract: | 

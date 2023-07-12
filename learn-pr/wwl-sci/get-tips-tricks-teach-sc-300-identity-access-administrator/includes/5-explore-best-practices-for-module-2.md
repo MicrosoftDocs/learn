@@ -1,5 +1,6 @@
 
 
+
 SC-300: Module 2 Implement an identity management solution
 
 Module 2 Overview

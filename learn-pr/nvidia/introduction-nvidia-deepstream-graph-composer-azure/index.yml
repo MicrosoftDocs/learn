@@ -8,7 +8,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction to NVIDIA DeepStream Graph Composer with Microsoft Azure
 summary: In this module, you'll learn how to set up and configure the NVIDIA DeepStream 6.0 Graph Composer on an X86-based Ubuntu 18.04 system to enable rapid development of Intelligent Video Analytics application pipelines for deployment to cloud and edge-capable devices.
 abstract: |

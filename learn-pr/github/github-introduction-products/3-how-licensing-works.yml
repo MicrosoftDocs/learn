@@ -5,8 +5,8 @@ metadata:
   title: How does licensing work for GitHub features?
   description: Understand how GitHub charges for various per-use and metered services.
   ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 4

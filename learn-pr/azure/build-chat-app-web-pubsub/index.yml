@@ -7,8 +7,9 @@ metadata:
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.contributors: jixin, v-glennminch
+  ms.service: azure-web-pubsub
+  manager: mcleans
 title: Build your first real-time chat app by using Azure Web PubSub and Azure Static Web Apps
 summary: Use Azure Web PubSub and Azure Static Web Apps to build a real-time messaging app!
 abstract: | 

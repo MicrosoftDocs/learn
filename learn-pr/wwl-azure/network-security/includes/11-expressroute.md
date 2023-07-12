@@ -16,8 +16,8 @@ Azure Virtual WAN uses an Internet Protocol Security (IPsec) Internet Key Exchan
 
 The diagram shows a network within the on-premises network connected to the Azure hub VPN gateway over ExpressRoute private peering. The connectivity establishment is straightforward:
 
-1. Establish ExpressRoute connectivity with an ExpressRoute circuit and private peering.
-1. Establish the VPN connectivity.
+1.  Establish ExpressRoute connectivity with an ExpressRoute circuit and private peering.
+2.  Establish the VPN connectivity.
 
 An important aspect of this configuration is routing between the on-premises networks and Azure over both the ExpressRoute and VPN paths.
 

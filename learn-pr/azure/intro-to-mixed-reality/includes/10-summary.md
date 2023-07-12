@@ -1,4 +1,4 @@
-In this module, you learned about mixed reality as a concept, a set of hardware devices, and an implementation. By using a combination of human and computer input, you explored the concept of human-computer interaction and its implications for mixed reality. 
+In this module, you learned about mixed reality as a concept, a set of hardware devices, and an implementation. By using a combination of human and computer input, you explored the concept of human-computer interaction and its implications for mixed reality.
 
 By using holograms, you learned how digital content can be made, placed, and interacted with in augmented reality applications. Finally, you incorporated spatial design thinking into the prototyping process with bodystorming, acting and expert feedback, and storyboarding.
 

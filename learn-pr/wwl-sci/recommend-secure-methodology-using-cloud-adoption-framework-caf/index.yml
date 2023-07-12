@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cloud-adoption-framework
+  ms.subservice: secure
 title: Recommend a secure methodology using the Cloud Adoption Framework (CAF)
 summary: You'll learn how to use the Cloud Adoption Framework to recommend security best practices that help an organization move to the cloud while improving overall security posture.
 abstract: |

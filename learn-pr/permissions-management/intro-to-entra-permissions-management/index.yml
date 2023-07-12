@@ -7,7 +7,8 @@ metadata:
   author: jenniferf-skc
   ms.author: jfields
   ms.topic: interactive-tutorial
-  ms.prod: learning-entra-permissions-management
+  ms.service: active-directory
+  ms.subservice: ciem
 title: Introduction to Entra Permissions Management 
 summary: Microsoft Entra Permissions Management gives security operation administrators insight into over-privileged workload and user identities, actions, and resources across multicloud infrastructures.
 abstract: |

@@ -1,3 +1,5 @@
+
+
 In this exercise, you'll use *Spark Structured Streaming* and *delta tables* in Azure Synapse Analytics to process streaming data.
 
 > [!NOTE]

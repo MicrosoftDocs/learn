@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Analyze images
 summary: With the Computer Vision service, you can use pre-trained models to analyze images and extract insights and information from them.
 abstract: |

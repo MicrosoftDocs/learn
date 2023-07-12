@@ -1,3 +1,5 @@
+
+
 In the Azure portal, each Azure service has required steps to configure the service endpoints and restrict network access for the service.
 
 To access these settings for your storage account, you use the **Firewalls and virtual networks** settings. You add the virtual networks that should have access to the service for the account.

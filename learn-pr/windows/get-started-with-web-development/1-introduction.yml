@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Install and configure all the tools you'll need to make a basic web application.
   ms.date: 2/8/2023
-  author: mmpadget
-  ms.author: quradic
+  author: kjo-msft
+  ms.author: karinjohnson
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
 durationInMinutes: 5

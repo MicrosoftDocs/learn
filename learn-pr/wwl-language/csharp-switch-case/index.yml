@@ -3,11 +3,11 @@ uid: learn.languages.csharp-switch-case
 metadata:
   title: Branch the flow of code using the switch-case construct in C#
   description: "Branch the flow of code using the switch-case construct in C#"
-  ms.date: 02/24/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Branch the flow of code using the switch-case construct in C#
 summary: Learn how to add branching logic that matches one variable or expression against many possible values.
 abstract: |
@@ -23,9 +23,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- dotnet-framework
 - vs-code
 subjects:
 - development-tools

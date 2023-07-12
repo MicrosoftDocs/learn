@@ -4,8 +4,6 @@ By using an example application, you used the OpenID Connect ASP.NET OWIN middle
 
 ## Clean up
 
-The sandbox will clean up your resources automatically when you finish this module. But the Azure AD tenant that you created must be deleted manually.
-
 To delete the Azure AD tenant, follow these steps:
 
 1. In the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true), in the top bar, select your account, and then select **Switch directory**.

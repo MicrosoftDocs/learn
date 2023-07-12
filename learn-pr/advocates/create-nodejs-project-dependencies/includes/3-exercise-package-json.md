@@ -95,4 +95,4 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    Welcome to this application
    ```
 
-You now have a good file structure that you can build upon as your project grows. 
+You now have a good file structure that you can build upon as your project grows.

@@ -2,8 +2,8 @@
 uid: learn.wwl.train-models-scripts-azure-machine-learning
 metadata:
   title: Train models with scripts in Azure Machine Learning
-  description: Azure Machine Learning Python SDK v2
-  ms.date: 02/15/2023
+  description: To prepare your machine learning workloads for production, you'll work with scripts. Learn how to train models with scripts in Azure Machine Learning.
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   To prepare your machine learning workloads for production, you'll work with scripts. Learn how to train models with scripts in Azure Machine Learning.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/train-models-scripts-azure-machine-learning.svg
 levels:
 - beginner
 roles:
@@ -25,5 +25,6 @@ subjects:
 modules:
 - learn.wwl.run-training-script-command-job-azure-machine-learning
 - learn.wwl.train-models-training-mlflow-jobs
+- learn.wwl.perform-hyperparameter-tuning-azure-machine-learning-pipelines
 trophy:
   uid: learn.wwl.train-models-scripts-azure-machine-learning.trophy

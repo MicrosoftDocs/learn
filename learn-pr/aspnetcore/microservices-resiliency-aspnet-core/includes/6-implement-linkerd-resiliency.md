@@ -1,15 +1,15 @@
-In the previous unit, you implemented resiliency by adding failure-handling code with Polly. This change only applies to the service you changed, however. Updating a large app with many services would be non-trivial.
+In the previous unit, you implemented resiliency by adding failure-handling code using Polly. However, this change only applies to the service that you changed. Updating a large app with many services would be non-trivial.
 
-This unit focuses on replacing the code-based resiliency. An infrastructure-based resiliency approach spanning the entire app will be used instead. You will:
+Instead of using *code-based* resiliency, this unit uses an approach called *infrastructure-based* resiliency that spans the entire app. You will:
 
 * Redeploy the app without any resiliency.
-* Deploy Linkerd in your AKS cluster.
+* Deploy Linkerd in your Azure Kubernetes Service (AKS) cluster.
 * Configure the app to use Linkerd for resiliency.
 * Explore the app behavior with Linkerd.
 
 ## Redeploy the app
 
-Before applying Linkerd, revert the app to a state before code-based resiliency was added. To revert, redeploy the unmodified `webshoppingagg` image using the following command:
+Before applying Linkerd, revert the app to a state before code-based resiliency was added. To revert, redeploy the unmodified `webshoppingagg` image by using the following command:
 
 ```bash
 ./deploy-application.sh --registry eshoplearn --charts webshoppingagg
@@ -19,7 +19,7 @@ Before applying Linkerd, revert the app to a state before code-based resiliency 
 
 ### Verify failing behavior
 
-You may verify the app is again failing as expected using the same steps as before:
+You can verify that the app fails again, as expected, by using the same steps as before:
 
 1. Select the **:::no-loc text=".NET FOUNDATION PIN":::**.
 1. Select the basket icon.
@@ -32,13 +32,13 @@ You may verify the app is again failing as expected using the same steps as befo
 
 ### Validate the AKS cluster
 
-The dev container comes with the Linkerd CLI pre-installed. Run the following command to confirm that Linkerd prerequisites have been satisfied:
+The dev container comes with the Linkerd CLI preinstalled. Run the following command to confirm that Linkerd prerequisites have been satisfied:
 
 ```bash
 linkerd check --pre
 ```
 
-You'll see a variation of the following output:
+A variation of the following output appears:
 
 ```console
 kubernetes-api
@@ -80,7 +80,13 @@ Status check results are √
 
 ### Deploy Linkerd to the AKS cluster
 
-Run the following command:
+First, run the following command to install the CRDs:
+
+```bash
+linkerd install --crds | kubectl apply -f -
+```
+
+Then, run the following command:
 
 ```bash
 linkerd install | kubectl apply -f -
@@ -165,12 +171,12 @@ linkerd-api
 linkerd-version
 ---------------
 √ can determine the latest version
-√ cli is up-to-date
+√ CLI is up to date
 
 control-plane-version
 ---------------------
-√ control plane is up-to-date
-√ control plane and cli versions match
+√ control plane is up to date
+√ control plane and CLI versions match
 
 linkerd-addons
 --------------
@@ -186,19 +192,15 @@ Status check results are √
 ```
 
 > [!TIP]
-> To see a list of Linkerd components that were installed, run the following command:
->
-> ```bash
-> kubectl -n linkerd get deploy
-> ```
+> To see a list of Linkerd components that were installed, run this command: `kubectl -n linkerd get deploy`
 
 ## Configure the app to use Linkerd
 
 Linkerd has been deployed, but it hasn't been configured. The app's behavior is unchanged.
 
-Linkerd is unaware of service internals and can't determine whether it's appropriate to retry a failed request. For example, it would be a bad idea to retry a failed HTTP POST for a payment. A service profile is necessary for this reason. A *service profile* is a custom Kubernetes resource that defines routes for the service. It also enables per-route features, such as retries and timeouts. Linkerd only retries routes configured in the service profile manifest.
+Linkerd is unaware of service internals and can't determine whether it's appropriate to retry a failed request. For example, it would be a bad idea to retry a failed HTTP POST for a payment. A *service profile* is necessary for this reason. A service profile is a custom Kubernetes resource that defines routes for the service. It also enables per-route features, such as retries and timeouts. Linkerd only retries routes configured in the service profile manifest.
 
-For brevity, you'll implement Linkerd only on the aggregator and coupon services. To implement Linkerd for those two services, you will:
+For brevity, implement Linkerd only on the aggregator and coupon services. To implement Linkerd for those two services, you will:
 
 * Modify the aggregator and coupon deployments so Linkerd creates its proxy container in the pods.
 * Configure headers for the related Nginx ingress.
@@ -208,7 +210,7 @@ For brevity, you'll implement Linkerd only on the aggregator and coupon services
 
 The coupon and aggregator services must be configured to use Linkerd proxy containers.
 
-1. Add the highlighted annotations to the `coupon` chart *:::no-loc text="deployment.yaml":::* file (*:::no-loc text="deploy/k8s/helm-simple/coupon/templates/deployment.yaml":::*). Save your changes.
+1. Add the highlighted annotations to the `coupon` chart *:::no-loc text="deployment.yaml":::* file, located at *:::no-loc text="deploy/k8s/helm-simple/coupon/templates/deployment.yaml":::*. Save your changes.
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/coupon/templates/6-deployment.yaml" highlight="18-19":::
 
@@ -217,13 +219,13 @@ The coupon and aggregator services must be configured to use Linkerd proxy conta
     > [!IMPORTANT]
     > It's critical to maintain correct indentation in YAML manifests.
 
-1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart *:::no-loc text="deployment.yaml":::* file (*:::no-loc text="deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml":::*). Save your changes.
+1. In a similar way, add the highlighted annotations to the `webshoppingagg` chart in the file *deploy/k8s/helm-simple/webshoppingagg/templates/deployment.yaml*. Save your changes.
 
     :::code language="yml" source="../code/deploy/k8s/helm-simple/webshoppingagg/templates/6-deployment.yaml" highlight="18-19":::
 
 ### Apply the Linkerd service profile for the coupon service
 
-The service profile manifest for the coupon service is provided in the *:::no-loc text="deploy/k8s/linkerd/coupon-serviceprofile.yaml":::* file:
+The service profile manifest for the coupon service is provided in the *deploy/k8s/linkerd/coupon-serviceprofile.yaml* file:
 
 :::code language="yml" source="../code/deploy/k8s/linkerd/6-coupon-serviceprofile.yaml":::
 
@@ -246,9 +248,9 @@ serviceprofile.linkerd.io/coupon-api.default.svc.cluster.local created
 
 ### Configure headers for Nginx
 
-Linkerd needs Nginx to provide additional information in the request headers to pass requests to the correct service. Consequently, annotations must be added to the ingress route.
+Linkerd needs Nginx to provide additional information in the request headers to pass requests to the correct service. So annotations must be added to the ingress route.
 
-Add the highlighted lines to the *:::no-loc text="deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml":::* file. Save your changes.
+Add the highlighted lines to the *deploy/k8s/helm-simple/apigateway/templates/ingress-gateway.yaml* file. Save your changes.
 
 :::code language="yml" source="../code/deploy/k8s/helm-simple/apigateway/templates/6-ingress-gateway.yaml" highlight="13-15":::
 
@@ -267,7 +269,7 @@ Save all your changes and run the following command to redeploy the updated char
 
 The updated pods each have two containers now (`0/2`). One is the service container and the other is `linkerd-proxy`:
 
-:::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="updated pods with two containers." border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
+:::image type="content" source="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png" alt-text="Screenshot of updated pods with two containers." border="true" lightbox="../media/6-implement-linkerd-resiliency/injecting-linkerd-proxies.png":::
 
 ## Test the app again
 
@@ -287,7 +289,7 @@ After the redeployed containers are healthy, use the following steps to test the
     The correct response is received immediately. An error indicating that this coupon has already been redeemed is displayed.
 1. Check the log traces for the following messages:
 
-    :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="log traces with Linkerd." border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
+    :::image type="content" source="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png" alt-text="Screenshot of log traces with Linkerd." border="true" lightbox="../media/6-implement-linkerd-resiliency/log-traces-with-linkerd.png":::
 
 Linkerd follows a different approach to resiliency than what you saw with Polly. Linkerd transparently retried the operation multiple times in quick succession. The user didn't notice any failure.
 
@@ -295,6 +297,6 @@ Linkerd follows a different approach to resiliency than what you saw with Polly.
 
 For more information about Linkerd configuration, see the following resources:
 
-* [Configuring Retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
-* [Configuring Timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
+* [Configuring retries - Linkerd documentation](https://linkerd.io/2/tasks/configuring-retries)
+* [Configuring timeouts - Linkerd documentation](https://linkerd.io/2/tasks/configuring-timeouts)
 * [How we designed retries in Linkerd 2.2 - Linkerd blog](https://linkerd.io/2019/02/22/how-we-designed-retries-in-linkerd-2-2)

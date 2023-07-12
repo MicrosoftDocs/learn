@@ -16,11 +16,11 @@ To encourage development of AI solutions to address global challenges, the Micro
 
 ## Fostering trustworthy AI
 
-Recognizing the economic transformation potential of AI, many governments have announced their national AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the Recommendations of the OECD Council on Artificial Intelligence. These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries, including the EU, in June 2019.<sup>7</sup>
+Recognizing the economic transformation potential of AI, many governments have announced their national/regional AI strategies. Global implementation of responsible AI received a boost in May 2019, when 36 OECD member countries/regions, along with Argentina, Brazil, Colombia, Peru, and Romania, approved the Recommendations of the OECD Council on Artificial Intelligence. These recommendations contained the principles for responsible stewardship of trustworthy AI. These principles were also adopted by the G20 countries/regions, including the EU, in June 2019.<sup>7</sup>
 
 The recommendations, developed by an AI expert group that included representatives from academia, civil society, trade unions, business, and governments from around the world, clearly demonstrated the value of multistakeholder consultation in policy development. These recommendations are high-level principles, intended to foster trust and shape the continuing development of AI to be more trustworthy. They aren't prescriptive in ways that can restrict innovation.
 
-As more countries/regions adopt the principles, it's hoped they'll lead to development of AI systems that warrant the trust of individuals and society, enabling broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations on national policies and international cooperation for trustworthy AI.
+As more countries/regions adopt the principles, it's hoped they'll lead to development of AI systems that warrant the trust of individuals and society, enabling broader adoption and realization of the transformative potential of AI. The OECD also included five recommendations on national/regional policies and international cooperation for trustworthy AI.
 
 The EU High Level Expert Group on AI also published its Ethics Guidelines on Artificial Intelligence in June 2019 and recommendations to update the joint coordinated plan on AI at the end of 2019.<sup>8</sup>
 
@@ -47,7 +47,7 @@ Human-centered AI can help create a better world, and it's important to continue
 
 ## Integrated and holistically responsible AI policy frameworks
 
-Any AI strategy would need to be an integral part of a holistic national agenda for digital transformation. For example, the OECD Going Digital project is a multidisciplinary project that aims to:
+Any AI strategy would need to be an integral part of a holistic national/regional agenda for digital transformation. For example, the OECD Going Digital project is a multidisciplinary project that aims to:
 
 * Understand the digital transformation and its impacts on economy and society.
 * Provide policymakers with the tools needed to develop a proactive whole-of-government policy response to help their economies prosper in an increasingly digital and data-driven world while advancing a culture of trust.

@@ -3,12 +3,12 @@ uid: learn.azure.incident-management-sentinel.6-exercise-investigate-incident
 title: Exercise - Investigate an incident
 metadata:
   title: Exercise - Investigate an incident
-  description: "Exercise - Investigate an incident"
-  ms.date: 01/26/2023
+  description: Follow these steps to create an analytics rule and use it to investigate an incident in Microsoft Sentinel.
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 20
 content: |
   [!include[](includes/6-exercise-investigate-incident.md)]

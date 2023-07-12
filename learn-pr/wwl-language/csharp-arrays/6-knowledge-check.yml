@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -20,10 +20,10 @@ quiz:
       explanation: "Incorrect. Remember - indexes are zero-based."
     - content: "`myArray[2]`."
       isCorrect: true
-      explanation: "Correct! Because indexes a zero based, two returns the third element in an array."
+      explanation: "Correct! Indexes are zero-based, so an index of two returns the third element in an array."
     - content: "`myArray{3}`."
       isCorrect: false
-      explanation: "Incorrect. Make sure to use square brackets and zero-based indexes!"
+      explanation: "Incorrect. Square brackets are used for array indexes and index numbers are zero-based."
   - content: "Which of the following choices describes the correct way to create a new integer array with three elements?"
     choices:
     - content: "`int[] myArray = new int[3];`."

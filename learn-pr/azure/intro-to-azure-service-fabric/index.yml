@@ -7,7 +7,7 @@ metadata:
   author: tomvcassidy
   ms.author: tomcassidy
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: service-fabric
 title: Introduction to Azure Service Fabric
 summary: Determine the types of business problems that can be solved using Azure Service Fabric. Describe Service Fabric's features, such as Azure service integration, stateless and stateful service support, and automatic scaling.
 abstract: |

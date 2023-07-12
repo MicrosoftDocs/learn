@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Source control for machine learning projects
 summary: Learn how to work with source control for your machine learning projects. Source control is an essential part of machine learning operations (MLOps).
 abstract: |
