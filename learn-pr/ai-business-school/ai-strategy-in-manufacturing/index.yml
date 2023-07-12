@@ -29,7 +29,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.ai-strategy-in-manufacturing.manufacturing-executive-QA
 - learn-wwl.ai-strategy-in-manufacturing.summary-and-resources
 badge: 
   uid: learn-wwl.ai-strategy-in-manufacturing.badge #add the uid for your achievement badge.
