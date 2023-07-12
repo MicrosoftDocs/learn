@@ -197,7 +197,7 @@ EF Core created a database for your app. Next, take a look inside the database b
 
     :::image type="content" source="../media/sqlite-pane.png" alt-text="Screenshot that shows the SQLite Explorer folder on the Explorer pane.":::
 
-1. Select the **SQLite Explorer** folder to expand the node and all its child nodes. Right-click **ContosoPizza.db** and select **Show Table 'sqlite_master'** to view the full database schema and constraints that were created by the migration.
+1. Select the **SQLite Explorer** folder to expand the node and all its child nodes. Right-click **ContosoPizza.db** and select **Show Table 'sqlite_master'** to view the full database schema and constraints that the migration created.
 
     :::image type="content" source="../media/sqlite-explorer.png" alt-text="Screenshot that shows the expanded SQLite Explorer folder on the Explorer pane.":::
 
