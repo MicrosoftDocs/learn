@@ -33,7 +33,6 @@ subjects:
 units:
 - learn.azure.fundamental-azure-concepts.introduction
 - learn.azure.fundamental-azure-concepts.types-of-cloud-computing
-- learn.azure.fundamental-azure-concepts.benefits-of-cloud-computing
 - learn.azure.fundamental-azure-concepts.categories-of-cloud-services
 - learn.azure.fundamental-azure-concepts.knowledge-check
 - learn.azure.fundamental-azure-concepts.summary
