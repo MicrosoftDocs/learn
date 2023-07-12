@@ -23653,6 +23653,11 @@
       "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/get-started-with-azure-accounts.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/intro-to-azure-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/microsoft-azure-fundamentals-describe-cloud-concepts/",
+      "redirect_document_id": false
     }
   ]
 }
