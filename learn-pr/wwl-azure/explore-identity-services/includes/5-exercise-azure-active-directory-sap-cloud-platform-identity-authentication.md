@@ -1,5 +1,6 @@
 
 
+
 Integrating SAP Cloud Platform Identity Authentication with Azure AD gives you the following benefits:
 
 - You can control in Azure AD who has access to SAP Cloud Platform Identity Authentication.
