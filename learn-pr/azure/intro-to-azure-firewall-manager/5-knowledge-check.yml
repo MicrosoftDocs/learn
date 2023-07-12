@@ -19,14 +19,14 @@ quiz:
     choices:
     - content: "Centralized route management"
       isCorrect: true
-      explanation: "Correct. This feature is not currently available with hub virtual network architecture."
+      explanation: "Correct. This feature isn't currently available with hub virtual network architecture."
     - content: "Third-party integration"
       isCorrect: false
       explanation: "Incorrect. This feature is also available with hub virtual network architecture."
     - content: "Centralized deployment and configuration"
       isCorrect: false
       explanation: "Incorrect. This feature is also available with hub virtual network architecture."
-  - content: "When processing Azure Firewall rules, which of the following is processed first?"
+  - content: "When Azure Firewall rules are processed, which of the following rules is processed first?"
     choices:
     - content: "Network rules"
       isCorrect: false
@@ -53,10 +53,10 @@ quiz:
     - content: "It's not possible to use Firewall Manager to secure traffic in this context."
       isCorrect: false
       explanation: "Incorrect. Firewall Manager can be used to assign policies to manage this traffic."
-    - content: "This is an example of Firewall Manager being implemented in the secured virtual hub architecture."
+    - content: "This example describes Firewall Manager being implemented in the secured virtual hub architecture."
       isCorrect: true
-      explanation: "Correct. When the underlying resource is Azure Virtual WAN, this is referred to as secured virtual hub."
-    - content: "This is an example of Firewall Manager being implemented in the hub virtual network architecture."
+      explanation: "Correct. When the underlying resource is Azure Virtual WAN, it's referred to as secured virtual hub."
+    - content: "This example describes Firewall Manager being implemented in the hub virtual network architecture."
       isCorrect: false
       explanation: "Incorrect. Secured virtual hub architecture's underlying resource is Azure virtual networks."
   - content: "The Research department requires specific firewall settings to help secure their resources in several Azure virtual networks. But the global administrator wants to ensure that the organization's overarching firewall policies also are applied. Which of the following statements about this configuration is true?"
