@@ -30,6 +30,5 @@ subjects:
 - artificial-intelligence
 units:
 - learn-wwl.microsoft-responsible-ai-practices.tools-for-responsible-ai
-- learn-wwl.microsoft-responsible-ai-practices.summary-and-resources
 badge: 
   uid: learn-wwl.microsoft-responsible-ai-practices.badge #add the uid for your achievement badge.
