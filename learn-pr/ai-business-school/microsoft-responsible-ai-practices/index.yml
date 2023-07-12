@@ -29,6 +29,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.microsoft-responsible-ai-practices.tools-for-responsible-ai
 badge: 
   uid: learn-wwl.microsoft-responsible-ai-practices.badge #add the uid for your achievement badge.
