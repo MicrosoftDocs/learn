@@ -5,8 +5,8 @@ metadata:
   title: Generate app manifest and service worker with PWABuilder
   description: This content is part of the "Integrate your project with PWABuilder" module.
   ms.date: 07/11/2023
-  author: markjulmar
-  ms.author: smmark
+  author: beth-panx
+  ms.author: beth.pan
   ms.topic: module-standard-task-based
   ms.prod: microsoft-edge
 durationInMinutes: 3

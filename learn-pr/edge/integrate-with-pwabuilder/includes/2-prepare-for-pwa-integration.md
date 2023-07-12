@@ -26,4 +26,3 @@ To enhance the user experience of your project and ensure a successful PWA integ
 ## Update your project's dependencies
 
 Ensure you're using the latest versions of libraries and frameworks for better performance and compatibility. Update any outdated dependencies to make your project ready for PWA integration.
-

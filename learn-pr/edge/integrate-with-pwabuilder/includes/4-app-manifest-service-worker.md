@@ -1,4 +1,4 @@
-After analyzing your project, PWABuilder will provide options to generate the app manifest and service worker files if the app does not have them already. As a review, the app manifest is a JSON file that controls an app's appearance and launch. The service worker is a JavaScript file that manages network requests and enables offline usage and push notifications.
+After analyzing your project, PWABuilder provides options to generate the app manifest and service worker files if the app doesn't have them already. As a review, the app manifest is a JSON file that controls an app's appearance and launch. The service worker is a JavaScript file that manages network requests and enables offline usage and push notifications.
 
 ## Generate app manifest and service worker files
 
@@ -11,31 +11,19 @@ Here are the PWABuilder steps for generating app manifest and service worker fil
 1. Choose the appropriate service worker template based on your project's requirements. There are three different templates available:
 
    - **Offline pages**: This simple but elegant solution pulls a file from your web server called "offline.html" (make sure that file is actually there) and serves the file whenever a network connection can't be made.
-   
    - **Offline page copy of pages**: A solution that expands the offline capabilities of your app. A copy of each page is stored in the cache as your visitors view them. This allows a visitor to load any previously viewed page while they're offline.
-   
    - **Offline copy with backup offline page**: A copy of each page is stored in the cache as your visitors view them. This allows a visitor to load any previously viewed page while they're offline. This then adds the offline page that allows you to customize the message and experience if the app's offline and the page isn't in the cache.
   
 1. Select **Download** to download the service worker file.
 1. Move the downloaded manifest and service worker files to your project's root folder.
 1. Open your project's index.html file in a code editor or text editor of your choice.
-1. Add a link to the manifest file in the head section of your index.html file by inserting the following line of code:
+1. Add a link to the manifest file in the head section of your index.html file by inserting the following line of code: `<link rel="manifest" href="manifest.json" />`
 
-   <link rel="manifest" href="manifest.json" />
+1. Add the following JavaScript code to the index.html file to register the service worker. You can place this code either in the head section, inside a `script>\` tag, or at the end of the body section, before the closing `</body>` tag:
 
-1. Add the following JavaScript code to the index.html file to register the service worker. You can place this code either in the head section, inside a script>\ tag, or at the end of the body section, before the closing tag:
-
-    <script>
-    if ('serviceWorker' in navigator) {
-    window.addEventListener('load', function() {
-      navigator.serviceWorker.register('service-worker.js').then(function(registration) {
-        console.log('ServiceWorker registration successful with scope: ', registration.scope);
-      }, function(err) {
-        console.log('ServiceWorker registration failed: ', err);
-      });
-    });
-   }
-   </script>
+```java
+if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register('service-worker.js').then(function(registration) {console.log('ServiceWorker registration successful with scope: ', registration.scope);}, function(err) {console.log('ServiceWorker registration failed: ', err);});});}
+```
 
 1. Save the changes to your index.html file.
 1. Push any changes to your server.
