@@ -30,10 +30,7 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.intro-to-ai-technology.introduction
-- learn-wwl.intro-to-ai-technology.introduction-to-ai-technology
 - learn-wwl.intro-to-ai-technology.microsoft-ai-approach
-- learn-wwl.intro-to-ai-technology.introduction-to-ml-and-dl
 - learn-wwl.intro-to-ai-technology.knowledge-check
 - learn-wwl.intro-to-ai-technology.summary-and-resources
 badge: 
