@@ -174,7 +174,7 @@ To finish the `PizzaService` implementation, complete the following steps in *Se
 
 ## Seed the database
 
-You've coded the CRUD operations for `PizzaService`, but it's be easier to test the read operation if the database contains good data. You decide to modify the app to seed the database on startup.
+You've coded the CRUD operations for `PizzaService`, but it's easier to test the read operation if the database contains good data. You decide to modify the app to seed the database on startup.
 
 > [!WARNING]
 > This database seeding code doesn't account for race conditions, so be careful when using it in a distributed environment without mitigating changes.
