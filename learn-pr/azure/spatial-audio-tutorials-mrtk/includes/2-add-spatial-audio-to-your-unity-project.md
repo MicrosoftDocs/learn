@@ -6,7 +6,7 @@ Processing audio using HRTF-based algorithms requires a large amount of speciali
 
 This component enables control over properties attached to AudioSource components for spatial sound in Unity.
 
-Spatial sound on the HoloLens is enabled using an audio spatializer plugin. The plugin files are bundled directly into Unity so enabling spatial sound is as easy as going to Edit > Audio > Spatializer and enabling the Microsoft HRTF extension. Since Microsoft Spatial Sound only supports sampling rates of 48 kHz currently, you should also set your System Sample Rate to 48000 to prevent an HRTF failure in the rare case that your system output device isn't set to 48000 already.
+Spatial sound on the HoloLens is enabled using an audio spatializer plugin. The plugin files are bundled directly into Unity so enabling spatial sound is as easy as going to Edit > Project Settings > Audio > Spatializer and enabling the Microsoft HRTF extension. Since Microsoft Spatial Sound only supports sampling rates of 48 kHz currently, you should also set your System Sample Rate to 48000 to prevent an HRTF failure in the rare case that your system output device isn't set to 48000 already.
 
 ## Spatial audio
 

@@ -5,7 +5,6 @@ Let's suppose you're working at a tech company in the UI/UX designing team. Your
 This module shows you how to build a mixed reality user experience with MRTK using NASA's Mars Curiosity Rover hologram model. Here, you'll:
 
 * Create a basic user interface using MRTK's button and menu prefabs.
-* Add dynamic tooltip UI elements.
 * Add bounds control around 3D objects
 
 By the end of the module, you can create and edit UI elements for your project using MRTK.

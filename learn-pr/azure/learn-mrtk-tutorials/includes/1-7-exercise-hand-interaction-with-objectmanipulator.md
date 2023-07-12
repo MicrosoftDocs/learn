@@ -1,4 +1,4 @@
-The ObjectManipulator and NearInteractionGrabbable scripts support the "direct manipulation" modality of the "hands and motion controllers" input model. When the scripts are attached to an object, the user can move, scale or rotate the object with their hands. In this exercise, you'll create two cubes, attach the necessary scripts to them, and then move the cubes around.
+The ObjectManipulator script supports the "direct manipulation" modality of the "hands and motion controllers" input model. When the script is attached to an object, the user can move, scale or rotate the object with their hands. In this exercise, you'll create two cubes, attach the necessary scripts to them, and then move the cubes around.
 
 ## Add and adjust the first cube
 
@@ -16,7 +16,7 @@ The ObjectManipulator and NearInteractionGrabbable scripts support the "direct m
 
 1. In the **Inspector**, change the cube's **Tranform/Position** values to the following:
    
-   X = -0.2, Y = 0.1, Z = 0.5
+   X = -0.2, Y = 1.6, Z = 0.5
 
     :::image type="content" source="../media/028-cube-transform.png" alt-text="Screenshot of the cube's transform component after updates.":::
 
@@ -45,10 +45,6 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
 
-1. Repeat the same steps to add the **Near Interaction Grabbable script** to the cube.
-
-    The NearInteractionGrabbable script gives the user the ability reach out and grab nearby objects with a simulated hand.
-
 ## Add a second cube
 
 1. In the **Hierarchy**, right-click the cube, and then select **Duplicate**. The duplicated cube appears with the name "Cube (1)."
@@ -59,7 +55,7 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
 1. With Far Cube still selected, change its values in its **Transform** component to the following:
 
-    Position: X = 0.6, Y = 0.1, Z = 1.1
+    Position: X = 0.6, Y = 1.6, Z = 1.1
 
     Rotation: X = 27, Y = 0, Z = 0
 
@@ -68,7 +64,8 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
     :::image type="content" source="../media/040-main-camera-view.png" alt-text="Screenshot of the Main Camera view in the Scene window.":::
 
     > [!TIP]
-    > If you want the view in the **Scene** window to look more like what the camera sees, scroll around in the **Scene** window.
+    > If you want the view in the **Scene** window to look more like what the camera sees, scroll around in the **Scene** window. You might have to set the Clear Flags of the camera to Skybox if it is not by default.
+
 
 ## Grab and move the cubes in Play mode
 

@@ -1,94 +1,160 @@
 In this exercise, You'll learn how to create speech commands and how to control them globally. You'll also learn how to control local speech commands that require the user to look at the object that controls the speech command.
 
-## Ensure the microphone capability is enabled
+## Ensure MRTK Speech object is enabled
 
-* In the Unity menu, select Mixed Reality > Toolkit > Utilities > **Configure Project for MRTK** to open the **MRTK Project Configurator window**. Then, in the **UWP Capabilities** section, verify that **Enable Microphone Capability** is greyed out:
+* In the Hierarchy window, select the **MRTK XR Rig** > **MRTK Speech** game object and make sure it is enabled.
 
-    :::image type="content" source="../media/enable-microphone-capability.png" alt-text="Screenshot of MRTK Project Configurator window, verify that Enable Microphone Capability is greyed out in the UMP Capabilities." lightbox="../media/enable-microphone-capability.png":::
+:::image type="content" source="../media/enable-mrtk-speech.png" alt-text="Screenshot of MRTK Speech object." lightbox="../media/enable-mrtk-speech.png":::
 
-## Create speech commands
+**MRTK Speech** object contains the **Speech Interactor** component. StatefulInteractable components register keywords with the SpeechInteractor, and the SpeechInteractor passes along keyword events to the corresponding StatefulInteractable components.
 
-1. In the Hierarchy window, select the **MixedRealityToolkit** object, and then in the Inspector window, select the MixedRealityToolkit > **Input** tab and take the following steps:
+## Enable keyword recognition subsystem
+* The Keyword Recognition Subsystem needs to be enabled for voice commands to work. Go to Edit > Project Settings > MRTK3, make sure the **MRTK Windows KeywordRecognition Subsystem** is selected.
 
-    1) Expand the **Speech** section
-    2) Clone the **DefaultMixedRealitySpeechCommandsProfile** and give it a suitable name for example, GettingStarted_MixedRealitySpeechCommandsProfile
-    3) Verify that **Start Behavior** is set to **Auto Start**
-
-    :::image type="content" source="../media/speech-commands-profile.png" alt-text="Screenshot of Configure DefaultMixedRealitySpeechCommandsProfile." lightbox="../media/speech-commands-profile.png":::
-
-2. In the Speech > **Speech Commands** section, click the **+ Add a New Speech Command** button four times to add four new speech commands to the list of the existing speech commands, and then in the **Keyword** fields enter the following phrases:
-
-    1) Enable Indicator
-    2) Enable Tap to Place
-    3) Enable Bounds Control
-    4) Disable Bounds Control
-
-    :::image type="content" source="../media/add-speech-commands.png" alt-text="Screenshot of Adding speech commands." lightbox="../media/add-speech-commands.png":::
+    :::image type="content" source="../media/configure-keywordrecognitionsubsystem.png" alt-text="Screenshot of MRTK XR keyword recognition subsystem." lightbox="../media/configure-keywordrecognitionsubsystem.png":::
 
 ## Control speech commands
 
-1. In the Project window, navigate to the **Package** > **Mixed Reality Toolkit Foundation** > **SDK** > **Features** > **UX** > **Prefabs** > **ToolTip** folder to locate the tooltip prefabs:
+1. In the Project window, navigate to the **Packages** > **MRTK UX Components (Non-Canvas)** > **Slates**, drag the **Slate** prefab to the scene and change its name to **Indicator**. Change its position to x = -0.3, y=1.6, z=0.6.
 
-    :::image type="content" source="../media/tool-tip-folder.png" alt-text="Screenshot of Opening tooltip folder." lightbox="../media/tool-tip-folder.png":::
+    :::image type="content" source="../media/indicator-slate.png" alt-text="Screenshot of indicator." lightbox="../media/indicator-slate.png":::
 
-2. In the Hierarchy window, right-click on an **empty spot** and select Create Empty to add an empty object to your scene. Name the object **SpeechInputHandler_Global**, and then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
+2. In the Project window, navigate to the **Packages** > **ObjectBar**, drag the **HorizontalAppBar** prefab as child of the Indicator game object. Change its position to x = -0.08, y=0.01, z=-0.02
+ 
+    :::image type="content" source="../media/indicator-buttons.png" alt-text="Screenshot of HorizontalAppBar prefab." lightbox="../media/indicator-buttons.png":::
 
-    1) **Unselect** the **Is Focus Required** checkbox, so the user isn't required to look at the object with the SpeechInputHandler component to trigger the speech command.
-    2) From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the **Speech Confirmation Tooltip** Prefab field, to have this prefab appear when a speech command is recognized.
+3. Expand Indicator > HorizontalAppBar > Buttons, and change the name of its children button gameobjects to **Indicator**, **TapToPlace**, **Enable**, **Disable**.
 
-    :::image type="content" source="../media/speech-input-handler.png" alt-text="Screenshot of Configuring speech input handler component." lightbox="../media/speech-input-handler.png":::
+    :::image type="content" source="../media/indicator-buttons-name.png" alt-text="Screenshot of indicator button name." lightbox="../media/indicator-buttons-name.png":::
 
-3. On the SpeechInputHandler component, click the small + icon three times to add three keyword elements:
+4. Select Indicator > HorizontalAppBar > Buttons > Indicator > CompressableButtonVisuals > IconAndText > TextMeshPro, and change its text to **Indicator**. Repeat similar steps for other buttons **TapToPlace**, **Enable**, **Disable**.
 
-    :::image type="content" source="../media/add-keyword-elements.png" alt-text="Screenshot of Adding keyword elements to speech input handler." lightbox="../media/add-keyword-elements.png":::
+    :::image type="content" source="../media/indicator-buttons-label.png" alt-text="Screenshot of indicator button labels." lightbox="../media/indicator-buttons-label.png":::
 
-4. Expand **Element 0** and configure it as follows:
-    1) In the **Keyword** field, enter **Enable Indicator**, to reference the Enable Indicator speech command you created in the previous section.
-    2) Click the small + icon to add an event.
-    3) From the Hierarchy window, assign the **Indicator** object to the **None (Object)** field.
-    4) From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered.
-    5) Select the argument checkbox, so it's **selected**
+5. Create a dummy button and use its built-in speech command to to enable **Indicator**. In the Project window, navigate to the **Packages** > **MRTK UX Components (Non-Canvas)** >**Button** > **32x32** folder, then drag the **PressableButton_32x32mm_Circular_IconOnly** prefab to the scene and change its name to **IndicatorEnable**. Change its scale to x = 0, y=0, z=0, to make it invisible.
 
-    :::image type="content" source="../media/configure-keyword-element-0.png" alt-text="Screenshot of configuring keyword element 0." lightbox="../media/configure-keyword-element-0.png":::
+   There are different ways to enable Indicator using speech command. You can write a script to listen to the voice input and activate Indicator when the voice input matches the expected keyword as below. For this tutorial, you don't need this script if you have done the above steps.
 
-5. Expand **Element 1** and configure it as follows:
+    ```c#
+    // Copyright (c) Microsoft Corporation.
+    // Licensed under the MIT License.
+    using UnityEngine;
+    using UnityEngine.Events;
+    using System.Collections.Generic;
+    using System;
+    using Microsoft.MixedReality.Toolkit;
+    using Microsoft.MixedReality.Toolkit.Subsystems;
+    public class KeywordRecognitionHandler : MonoBehaviour
+    {
+        [Serializable]
+        public struct KeywordEvent
+        {
+            [SerializeField]
+            public string Keyword;
+            [SerializeField]
+            public UnityEvent Event;
+        }
+        [SerializeField]
+        private List<KeywordEvent> _keywords = new List<KeywordEvent>();
+        public List<KeywordEvent> Keywords
+        {
+            get => _keywords;
+            set
+            {
+                _keywords = value;
+                UpdateKeywords();
+            }
+        }
+        [SerializeField]
+        private UnityEvent GlobalEvent;
+        private KeywordRecognitionSubsystem _keywordRecognitionSubsystem;
+        private void Start()
+        {
+            _keywordRecognitionSubsystem = XRSubsystemHelpers.GetFirstRunningSubsystem<KeywordRecognitionSubsystem>();
+            if (_keywordRecognitionSubsystem == null)
+            {
+                // TODO log warning
+            }
+            UpdateKeywords();
+        }
+        private void UpdateKeywords()
+        {
+            foreach (var data in _keywords)
+            {
+                _keywordRecognitionSubsystem.CreateOrGetEventForKeyword(data.Keyword).AddListener(() =>
+                {
+                    GlobalEvent?.Invoke();
+                    data.Event?.Invoke();
+                });
+            }
+        }
+    }
 
-    1) In the **Keyword** field, enter **Enable Bounds Control**, to reference the Enable Bounds Control command you created in the previous section.
-    2) Click the small + icon to add an event.
-    3) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field.
-    4) From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered.
-    5) Select the argument checkbox, so it's **selected**
-    6) Click the small + icon to add another event
-    7) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
-    8) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
-    9) Select the argument checkbox, so it's **selected**.
+  :::image type="content" source="../media/indicator-enable-button-create.png" alt-text="Screenshot of IndicatorEnable game object." lightbox="../media/indicator-enable-button-create.png":::
 
-    :::image type="content" source="../media/configure-keyword-element-1.png" alt-text="Screenshot of configuring keyword element 1." lightbox="../media/configure-keyword-element-1.png":::
+6. Select **IndicatorEnable** button gameobject and configure it as follows:
+    1) In the **Pressable Button** component, enter the keyword **enable indicator** for Speech Recognition under **Advanced StatefullInteractable Settings** section.
+    2) Deselect **Voice Requires Focus** so the user is not required to look at the object to trigger the speech command.
+    3) Under On Click() event, click the small + icon to add another event.
+    4) From the Hierarchy window, assign the **Indicator** object to the **None (Object)** field.
+    5) From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered.
+    6) Select the argument checkbox, so it's **selected**
 
-6. Expand **Element 2** and configure it as follows:
-    1) In the **Keyword** field, enter **Disable Bounds Control**, to reference the Disable Bounds Control command you created in the previous section.
-    2) Click the small + icon to add an event.
-    3) From the Hierarchy window, assign the **RoverExplorer** object to the **one (Object)** field.
-    4) From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered.
-    5) Verify that the argument checkbox is **unselected**.
-    6) Click the small + icon to add another event.
-    7) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field.
-    8) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered.
-    9) Verify that the argument checkbox is **unselected**.
+    :::image type="content" source="../media/indicator-enable-button.png" alt-text="Screenshot of adding action for keyword recognition." lightbox="../media/indicator-enable-button.png":::
 
-    :::image type="content" source="../media/configure-keyword-element-2.png" alt-text="Screenshot of configuring keyword element 2." lightbox="../media/configure-keyword-element-2.png":::
+7. Select Indicator > HorizontalAppBar > Buttons > Indicator  and configure it as follows:
 
-7. In the Hierarchy window, select the **RoverExplorer** > **RoverAssembly** object, and then in the Inspector window, use the **Add Component** button to add the **SpeechInputHandler** component and configure it as follows:
-    1) Verify that the **Is Focus Required** checkbox is **selected**, so the user is required to look at the object with the SpeechInputHandler component, that is, the RoverAssembly, to trigger the speech command.
-    2) From the Project window, assign the **SpeechConfirmation Tooltip** prefab to the Speech **Confirmation Tooltip Prefab** field, to have this prefab appear when a speech command is recognized.
+    1) In the **Pressable Button** component, enter the keyword **disable indicator** for Speech Recognition under **Advanced StatefullInteractable Settings** section.
+    2) Deselect **Voice Requires Focus** so the user is not required to look at the object to trigger the speech command.
+    3) Under On Click() event, click the small + icon to add an event.
+    4) From the Hierarchy window, assign the **Indicator** object to the **None (Object)** field.
+    5) From the **No Function** dropdown, select **GameObject** > **SetActive (bool)** to set this function as the action to be executed when the event is triggered.
+    6) Select the argument checkbox, so it's **unselected**
 
-    :::image type="content" source="../media/add-speech-input-handler.png" alt-text="Screenshot of Add speech input handler to Rover Assembly." lightbox="../media/add-speech-input-handler.png":::
+    :::image type="content" source="../media/indicator-enable-button.png" alt-text="Screenshot of unselecting Voice Requires Focus." lightbox="../media/indicator-enable-button.png":::
 
-8. On the SpeechInputHandler component, click the small + icon to add a keyword element, expand the newly created element, and then configure it as follows:
-    1) In the **Keyword** field, enter **Enable Tap to Place**, to reference the Enable Tap to Place command you created in the previous section.
-    2) Click the small + icon to add an event.
-    3) From the Hierarchy window, assign the object itself, that is, the same **RoverAssembly** object, to the **None (Object)** field.
-    4) From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered.
-    5) Select the argument checkbox, so it's **selected**
 
-    :::image type="content" source="../media/configure-speech-input-handler.png" alt-text="Screenshot of configuring speech input handler on Rover Assembly." lightbox="../media/configure-speech-input-handler.png":::
+8. Select Indicator > HorizontalAppBar > Buttons > TapToPlace  and configure it as follows:
+
+    1) In the **Pressable Button** component, enter the keyword **Enable Tap to Place** for Speech Recognition under **Advanced StatefullInteractable Settings** section.
+    2) Deselect **Voice Requires Focus** so the user is not required to look at the object to trigger the speech command.
+    3) Under On Click() event, click the small + icon to add an event.
+    4) From the Hierarchy window, assign the object itself, that is, the same **RoverAssembly** object, to the **None (Object)** field.
+    5) From the **No Function** dropdown, select **TapToPlace** > **bool enabled** to update this property value when the event is triggered.
+    6) Select the argument checkbox, so it's **selected**
+
+    :::image type="content" source="../media/indicator-configure-taptoplace-button.png" alt-text="Screenshot of indicator tap to place button." lightbox="../media/indicator-configure-taptoplace-button.png":::
+
+9. Select Indicator > HorizontalAppBar > Buttons > Enable  and configure it as follows:
+
+    1) In the **Pressable Button** component, enter the keyword **Enable Bounds Control** for Speech Recognition under **Advanced StatefullInteractable Settings** section.
+    2) Deselect **Voice Requires Focus** so the user is not required to look at the object to trigger the speech command.
+    3) Under On Click() event, click the small + icon to add an event.
+    4) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field.
+    5) From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered.
+    6) Select the argument checkbox, so it's **selected**
+    7) Click the small + icon to add another event
+    8) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
+    9) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
+    10) Select the argument checkbox, so it's **selected**.
+
+    :::image type="content" source="../media/indicator-configure-enable-button.png" alt-text="Screenshot of configuring enable button." lightbox="../media/indicator-configure-enable-button.png":::
+
+10. Select Indicator > HorizontalAppBar > Buttons > Disable  and configure it as follows:
+
+    1) In the **Pressable Button** component, enter the keyword **Disable Bounds Control** for Speech Recognition under **Advanced StatefullInteractable Settings** section.
+    2) Deselect **Voice Requires Focus** so the user is not required to look at the object to trigger the speech command.
+    3) Under On Click() event, click the small + icon to add an event.
+    4) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field.
+    5) From the **No Function** dropdown, select **BoundsControl** > **bool enabled** to update this property value when the event is triggered.
+    6) Select the argument checkbox, so it's **unselected**
+    7) Click the small + icon to add another event
+    8) From the Hierarchy window, assign the **RoverExplorer** object to the **None (Object)** field
+    9) From the **No Function** dropdown, select **ObjectManipulator** > **bool enabled** to update this property value when the event is triggered
+    10) Select the argument checkbox, so it's **unselected**.
+
+    :::image type="content" source="../media/indicator-configure-disable-button.png" alt-text="Screenshot of configuring disable button." lightbox="../media/indicator-configure-disable-button.png":::
+
+11. If you use Holographic Remoting for Play mode to preview and debug your app, make sure the "Enable Audio" option is selected.
+
+    :::image type="content" source="../media/enable-audio.png" alt-text="Screenshot of holographic remoting." lightbox="../media/enable-audio.png":::

@@ -28,9 +28,9 @@ For this module use You can use [this video](https://github.com/microsoft/spatia
 
 The **Video Player** object needs a textured game object to render the video.
 
-1. Right click the Hierarchy , Select **3D Object** > **Quad** to create a quad and configure its **Transform** component as follows:
+1. Right click the Hierarchy, Select **3D Object** > **Quad** to create a quad and configure its **Transform** component as follows:
 
-    * **Position**: X = 0, Y = 0, Z = 2
+    * **Position**: X = 0, Y = 2.1, Z = 2
     * **Rotation**: X = 0, Y = 0, Z = 0
     * **Scale**: X = 1.28, Y = 0.72, Z = 1
 
@@ -39,14 +39,14 @@ The **Video Player** object needs a textured game object to render the video.
 
     :::image type="content" source="../media/create-render-texture.png" alt-text="Screenshot of Create Render Texture." lightbox="../media/create-render-texture.png":::
 
-3. Select the **Render Texture** and in the Inspector window set the **Size** property to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens 2, set the **Depth Buffer** property to **At least 16 bits depth**.
+3. Select the **Render Texture** and in the Inspector window set the **Size** property to match the video's native resolution of 1280x720. Then, to ensure good rendering performance on HoloLens 2, set the **Depth Stencil Format** property to **D16_UNORM** or higher.
 
     :::image type="content" source="../media/render-texture-property.png" alt-text="Screenshot of Render Texture properties." lightbox="../media/render-texture-property.png":::
 
 4. Next, use the created Render Texture **Spatial Audio Texture** as the texture for the **Quad**:
 
     1) Drag the **Spatial Audio Texture** from the **Project** window onto the **Quad** in the Hierarchy to add the Render Texture to the Quad
-    2) To ensure good performance on HoloLens 2, select Quad in the Hierarchy and in the Inspector window for shader select the **Mixed Reality Toolkit** > **Standard** Shader.
+    2) To ensure good performance on HoloLens 2, select Quad in the Hierarchy and in the Inspector window for shader select the **Graphics Tools** > **Standard** Shader.
 
     :::image type="content" source="../media/quad-texture-property.png" alt-text="Screenshot of Quad texture properties." lightbox="../media/quad-texture-property.png":::
 

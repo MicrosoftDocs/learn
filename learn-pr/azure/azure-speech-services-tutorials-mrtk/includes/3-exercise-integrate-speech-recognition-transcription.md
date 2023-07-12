@@ -13,18 +13,8 @@ As a prerequisite, make sure you've completed the steps below to initialize your
 5. Configuring the Unity project
 6. Creating and configuring the scene and give the scene a suitable name, for example, *AzureSpeechServices*
 
-Then, follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
-
 > [!NOTE]
 > You can learn how to set up your mixed-reality project in the [Introduction to Mixed Reality Toolkit](/training/modules/learn-mrtk-tutorials/) module.
-
-## Configure the speech commands start behavior
-
-Because you will use the Speech SDK for speech recognition and transcription, you need to configure the MRTK Speech Commands so they do not interfere with the Speech SDK functionality. To achieve this, you can change the speech commands start behavior from Auto Start to Manual Start.
-
-1. With the **MixedRealityToolkit** object selected in the Hierarchy window, in the Inspector window, select the **Input** tab, clone the **DefaultHoloLens2InputSystemProfile** and the **DefaultMixedRealitySpeechCommandsProfile**, and then change the speech commands **Start Behavior** to **Manual Start**:
-
-    :::image type="content" source="../media/change-speech-commands.png" alt-text="Screenshot that describes Change the speech commands." lightbox="../media/change-speech-commands.png":::
 
 ## Configure the capabilities
 

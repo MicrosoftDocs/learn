@@ -38,7 +38,7 @@ Find and locate the custom vision resource of the **Cognitive Services** type yo
 
 ## Retrieve project settings credentials
 
-In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you created for this tutorial, then select the gear icon on the top-right corner of the page to open the settings page. You will find the necessary credentials in the *Resources* section on the right-hand side.
+In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you created for this tutorial, then select the gear icon on the top-right corner of the page to open the settings page. You will find the necessary credentials in the *Resources* section on the right-hand side and the *General* section on the left-hand side.
 
 1. Now with the **ObjectDetectionManager (script)** set up correctly, find the **SceneController** object in your scene Hierarchy and select it.
 

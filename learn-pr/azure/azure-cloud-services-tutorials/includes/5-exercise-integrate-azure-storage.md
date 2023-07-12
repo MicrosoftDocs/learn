@@ -44,7 +44,7 @@ While you can view and verify all data changes from the UI inside the applicatio
 
     :::image type="content" source="../media/data-manager-configure.png" alt-text="Screenshot of Unity with DataManager script component configuration fields shown in Inspector." lightbox="../media/data-manager-configure.png":::
 
-    The **DataManager (script)** component in the Inspector window contains all **Azure storage** related settings. All relevant settings are already set; you just need to replace the *Connection String* field with the one you retrieved from the Azure portal. If you're using a local Azure storage emulator solution, then you can keep the already provided *Connection String*.
+    The **DataManager (script)** component in the Inspector window contains all **Azure storage** related settings. All relevant settings are already set; you just need to replace the *Connection String* field with the one you retrieved from the Azure portal. If you're using a local Azure storage emulator solution, then you can keep the already provided *Connection String* or it can be left empty.
 
     The **DataManager (script)** is responsible for talking to the **Table storage** and **Blob storage** which is consumed by other controller scripts on the UI components.
 

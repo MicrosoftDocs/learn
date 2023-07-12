@@ -98,7 +98,7 @@ In the following steps, you'll adjust the script to control the audio routing, a
 
 4. Once these lines are Uncommented  it adds two properties to the Inspector of the **SpatializeOnOff script**. assign these on the Inspector window of **SpatializeOnOff** component of the **Quad**.
 
-5. With the Quad object still selected in the Hierarchy , in the Inspector window locate the **SpatializeOnOff Script** component and :
+5. With the Quad object still selected in the Hierarchy, in the Inspector window locate the **SpatializeOnOff Script** component and:
 
     1) Set the **Room Effect Group** property to your new Room Effect mixer group
     2) Set the **Master Group** property to the Master mixer group

@@ -1,6 +1,6 @@
-Speech input providers, like Windows Speech Input, don't create any controllers; however, as a replacement, it assists you in outlining key phrases to improve speech input events when recognized. The Speech Commands Profile in the Input System Profile is wherein you configure the key phrases to recognize.  For each command you can also:
+Speech input providers, like Windows Speech Input, don't create any controllers; however, as a replacement, it assists you in outlining key phrases to improve speech input events when recognized. The Speech Commands Profile in the Input System Profile is where you configure the key phrases to recognize.  For each command you can also:
 
-* Select an input action to map it to. This way you can for example,  use the keyword select to have the same effect as a left mouse click, by mapping both to the same action.
+* Select an input action to map it to. This way you can for example, use the keyword select to have the same effect as a left mouse click, by mapping both to the same action.
 * Specify a key code that will produce the same speech event when pressed.
 * Add a localization key that will be used in UWP apps to obtain the localized keyword from the app resources.
 

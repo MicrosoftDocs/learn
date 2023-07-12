@@ -4,9 +4,9 @@ title: Integrate Azure Spatial Anchors
 metadata:
   title: Integrate Azure Spatial Anchors
   description: Description to Integrate Azure Spatial Anchors
-  ms.date: 09/13/2021
-  author: "Sean-Kerawala"
-  ms.author: "sekerawa"
+  ms.date: 06/26/2023
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1

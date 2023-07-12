@@ -17,11 +17,15 @@ For this, first follow the Initializing your project and first application, excl
 5. Configuring the Unity project
 6. Creating and setting the scene and give the scene a suitable name, for example, *SpatialAudio*
 
-Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultHoloLens2ConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
 
-## Add Microsoft Spatializer to the Project
+## Add the spatializer package via the Mixed Reality Feature Tool
 
-* Download and import the Microsoft Spatializer [Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage](https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage)
+1. Download the Mixed Reality Feature Tool from https://aka.ms/mrfeaturetool.
+
+2. Select the Microsoft Spatializer component from the Spatial Audio group and integrate the plugin into your project using the Get Features button.
+
+    :::image type="content" source="../media/MRFeatureTool.png" alt-text="Screenshot of Mixed Reality Feature Tool." lightbox="../media/MRFeatureTool.png":::
+
 
 ## Enable the Microsoft Spatializer plugin
 

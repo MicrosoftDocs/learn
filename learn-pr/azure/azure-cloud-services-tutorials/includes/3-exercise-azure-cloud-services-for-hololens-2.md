@@ -14,7 +14,6 @@ The user can create a **Tracked Object** to associate a set of images via comput
 * Basic managing of data and images
 * Image training and detection
 * Storing a spatial location and guidance to it
-* Bot assistant to use some features via natural language
 
 ## Azure Cloud Services
 
@@ -32,10 +31,6 @@ With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-servic
 
 To store a *Tracked Object* location and give a guided directions to find it, you'll use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
-### Azure Bot Service
-
-Your application will mainly be driven by traditional UI, so you'll use the [Azure Bot Service](https://azure.microsoft.com/services/bot-service/) to add some personality and act as a new interaction method.
-
 ## Create and prepare the Unity project
 
 In this section, you'll' create a new Unity project and get it ready for MRTK development.
@@ -49,11 +44,18 @@ First, follow the steps in [Initializing your project and first application](/tr
 5. Configuring the Unity project
 6. Creating and configuring the scene and give the scene a suitable name, for example, *AzureCloudServices*
 
-Then follow the Changing the Spatial Awareness Display Option instructions to ensure the MRTK configuration profile for your scene is **DefaultXRSDKConfigurationProfile** and change the display options for the spatial awareness mesh to **Occlusion**.
+## Import the tutorial assets
 
-## Install in-built Unity packages
+1) Add AzurespatialAnchors SDK to your project. To add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
 
-[!INCLUDE[](includes/install-packages.md)]
+2) Download and **import** the following Unity custom packages **in the order they are listed**:
+
+    * [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
+    * [MRTK.Tutorials.AzureCloudServices.LegacyWSA.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.LegacyWSA.unitypackage)
+
+    After you have imported the tutorial assets your Project window should look similar to this:
+
+    :::image type="content" source="../media/after-import-legacy-xr.png" alt-text="Screenshot of Unity Hierarchy, Scene, and Project windows after importing the tutorial assets." lightbox="../media/after-import-legacy-xr.png":::
 
 ## Prepare the scene
 
@@ -73,12 +75,14 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
     :::image type="content" source="../media/drag-hierarchy.png" alt-text="Screenshot of Unity with newly added SceneController, RootMenu and DataManager prefabs still selected." lightbox="../media/drag-hierarchy.png":::
 
-4. To focus in on the objects in the scene, you can double-click the **RootMenu** object, then zoom slightly out again:
+4. To focus in on the objects in the scene, you can double-click the **RootMenu** object, then zoom slightly out again. With the **RootMenu** object still selected, change its values in its **Transform** component to the following:
+
+    Position: X = 0.0, Y = 1.6, Z = 0.6
 
     :::image type="content" source="../media/root-menu-object.png" alt-text="Screenshot of Unity with RootMenu object selected." lightbox="../media/root-menu-object.png":::
 
     > [!TIP]
-    > If you find the large icons in your scene, (for example, the large framed 'T' icons) distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html) to the off position.
+    > If you find the large icons in your scene, (for example, the large framed 'T' icons) distracting, you can hide these by [toggling the Gizmos](https://docs.unity3d.com/2021.3/Documentation/Manual/GizmosMenu.html) to the off position.
 
 ## Configuring the scene
 
@@ -102,7 +106,7 @@ In this section, you will connect *SceneManager*, *DataManager*, and *RootMenu* 
 
     :::image type="content" source="../media/scene-controller-select.png" alt-text="Screenshot of Unity with SceneController selected." lightbox="../media/scene-controller-select.png":::
 
-5. There are now several unpopulated fields; let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field, then move the **RootMenu** GameObject from the Hierarchy into the *Main Menu* field.
+5. There are now several unpopulated fields; let's change that. Move the **DataManager** object from the Hierarchy into the *Data Manager* field, then move the **RootMenu**>**MainMenu** GameObject from the Hierarchy into the *Main Menu* field.
 
     :::image type="content" source="../media/scene-controller.png" alt-text="Screenshot of Unity with SceneController configured." lightbox="../media/scene-controller.png":::
 
@@ -149,4 +153,4 @@ When the application is running on your device, grant access to the following re
 * Microphone
 * Camera
 
-These capabilities are required for services like *Chat Bot* and *Custom Vision* to function properly.
+These capabilities are required for services like *Custom Vision* to function properly.
