@@ -29,7 +29,6 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.ai-strategy-in-education.knowledge-check
 - learn-wwl.ai-strategy-in-education.summary-and-resources
 badge: 
   uid: learn-wwl.ai-strategy-in-education.badge #add the uid for your achievement badge.
