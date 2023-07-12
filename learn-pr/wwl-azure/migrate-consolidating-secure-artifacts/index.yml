@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Migrate consolidating and secure artifacts
 summary: This module details package migration, consolidation, and configuration to secure access to package feeds and artifact repositories.
 abstract: |

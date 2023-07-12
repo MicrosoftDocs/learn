@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: iot-edge
 title: "Introduction to MLOps for IoT Edge"
 summary: "Analyze the significance of MLOps in the development and deployment of machine learning models for IoT Edge. Describe the components of the MLOps pipeline and show how you can combine them to create models that can be retrained automatically for IoT Edge devices."
 abstract: |

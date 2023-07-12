@@ -5,8 +5,9 @@ metadata:
   title: Data binding and events
   description: Build your first WebAssembly app with Blazor, Visual Studio Code, and C#.
   ms.date: 05/07/2020
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

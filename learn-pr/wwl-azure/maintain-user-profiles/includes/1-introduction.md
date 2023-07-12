@@ -1,4 +1,5 @@
 
+
 This module will provide an overview of the different user profile types available for on-premises Windows devices. You’ll gain insights into the benefits of each type of profile and understand how to switch between them. You’ll explore how Folder Redirection functions and how to configure it. Finally, the module will conclude with an overview of Enterprise State Roaming and the steps involved in configuring it for Azure AD devices.
 
 ### Objectives

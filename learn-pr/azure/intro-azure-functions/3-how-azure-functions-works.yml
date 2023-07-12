@@ -4,8 +4,8 @@ title: How Azure Functions works
 metadata:
   title: How Azure Functions works
   description: In this unit, you learn about how Azure Functions works along with some foundational concepts.
-  author: saifeemustafaq
-  ms.author: msaifee
+  author: rmcmurray
+  ms.author: robmcm
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

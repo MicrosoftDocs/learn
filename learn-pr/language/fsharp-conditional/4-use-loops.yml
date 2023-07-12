@@ -6,6 +6,7 @@ metadata:
   description: Learn about different loops to repeat statements and when to use them.
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.date: 07/23/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet

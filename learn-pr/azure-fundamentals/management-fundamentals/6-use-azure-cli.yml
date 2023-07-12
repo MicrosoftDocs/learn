@@ -8,7 +8,9 @@ metadata:
   author: Randall-Knapp
   ms.author: rknapp
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 3
 azureSandbox: false
 content: |

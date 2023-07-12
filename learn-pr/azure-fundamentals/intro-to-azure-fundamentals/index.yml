@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure 
 title: Introduction to Azure fundamentals
 summary: This module introduces you to the basics of cloud computing and Azure, and how to get started with Azure's subscriptions and accounts.
 abstract: |

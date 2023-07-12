@@ -4,12 +4,11 @@ metadata:
   title: Create the first Azure RTOS NetX Duo project
   description: The first Azure RTOS NetX Duo project is built and run
   ms.date: 07/27/2022
-  author: edlamie80
-  ms.author: liydu
-  ms.reviewer: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Create the first Azure RTOS NetX Duo project
 summary: The first Azure RTOS NetX Duo project is built and run.
 abstract: |
@@ -27,6 +26,7 @@ products:
   - azure
   - azure-iot
   - azure-iot-hub
+  - azure-rtos
 units:
   - learn.iot.create-first-netx-duo-project.introduction
   - learn.iot.create-first-netx-duo-project.hello-world

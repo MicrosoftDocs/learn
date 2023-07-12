@@ -5,8 +5,8 @@ metadata:
   title: Implement CSV in-memory read cache in Azure Stack HCI 
   description: Determine how to use CSV capabilities to improve performance of the equivalent workloads running on Azure Stack HCI.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

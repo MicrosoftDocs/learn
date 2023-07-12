@@ -7,7 +7,6 @@ metadata:
   author: cynthn
   ms.author: cynthn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Deploy Azure virtual machines from VHD templates
 summary: Standardize and automate your virtual machine deployments to minimize manual configuration, variance, and errors.
 abstract: |

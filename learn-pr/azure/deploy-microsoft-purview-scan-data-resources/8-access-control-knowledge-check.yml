@@ -5,11 +5,11 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Knowledge check for collections and access control in Microsoft Purview. These questions cover basic information for Microsoft Purview collections and permissions."
-  ms.date: 05/19/2022
+  ms.date: 04/27/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 5
 content: |
 quiz:
@@ -25,6 +25,17 @@ quiz:
     - content: "Data reader"
       isCorrect: true
       explanation: "Data readers have access to read catalog data objects."
+  - content: "What type of object can help organize data sources into logical groups?"
+    choices:
+    - content: "Collections"
+      isCorrect: true
+      explanation: "Microsoft Purview uses Collections to organize data sources to reflect your data use landscape."
+    - content: "Buckets"
+      isCorrect: false
+      explanation: "Microsoft Purview doesn't use buckets to organize data."
+    - content: "Groups"
+      isCorrect: false
+      explanation: "Microsoft Purview doesn't use groups to organize data."
   - content: "Which of the following roles would provide a user the ability to register new data sources?"
     choices:
     - content: "Data curator"

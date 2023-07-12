@@ -4,11 +4,11 @@ title: Exercise - Explore question answering
 metadata:
   title: Exercise - Explore question answering
   description: "Exercise - Explore question answering"
-  ms.date: 04/18/2023
+  ms.date: 04/29/2023
   author: benjiang
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 20

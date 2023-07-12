@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.wwl.apply-prompt-engineering-azure-openai
+metadata:
+  title: Apply prompt engineering with Azure OpenAI Service
+  description: "In this module, learn how prompt engineering can help to create and fine-tune prompts for natural language processing models. Prompt engineering involves designing and testing various prompts to optimize the performance of the model in generating accurate and relevant responses."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
+  ms.service: azure
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+title: Apply prompt engineering with Azure OpenAI Service
+summary: "Prompt engineering in Azure OpenAI is a technique that involves designing prompts for natural language processing models. This process improves accuracy and relevancy in responses, optimizing the performance of the model."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand the concept of prompt engineering and its role in optimizing Azure OpenAI models' performance.
+    - Know how to design and optimize prompts to better utilize AI models.
+    - Include clear instructions, request output composition, and use contextual content to improve the quality of the model's responses.
+prerequisites: |
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI. You can learn more with [Introduction to Azure OpenAI Service](/training/modules/explore-azure-openai/).
+  - Experience programming with C# or Python. If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
+  - Before starting this module, we recommend you complete the previous modules in the [Develop AI solutions with Azure OpenAI](/training/paths/develop-ai-solutions-azure-openai/) learning path.
+iconUrl: /learn/achievements/generic-badge.svg
+levels: 
+  - intermediate
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - data-ai
+units:
+- learn.wwl.apply-prompt-engineering-azure-openai.introduction
+- learn.wwl.apply-prompt-engineering-azure-openai.understand-prompt-engineering
+- learn.wwl.apply-prompt-engineering-azure-openai.write-effective-prompts
+- learn.wwl.apply-prompt-engineering-azure-openai.provide-context-to-improve-accuracy
+- learn.wwl.apply-prompt-engineering-azure-openai.exercise
+- learn.wwl.apply-prompt-engineering-azure-openai.knowledge-check
+- learn.wwl.apply-prompt-engineering-azure-openai.summary
+badge:
+  uid: learn.wwl.apply-prompt-engineering-azure-openai.badge

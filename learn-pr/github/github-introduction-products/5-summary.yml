@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Review what you've learned about GitHub products in this module.
   ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

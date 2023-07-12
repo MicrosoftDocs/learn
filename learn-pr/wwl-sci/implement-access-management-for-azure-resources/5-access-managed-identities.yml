@@ -4,13 +4,11 @@ title: Access Azure resources with managed identities
 metadata:
   title: Access Azure resources with managed identities
   description: "Access Azure resources with managed identities"
-  ms.date: 03/24/2023
+  ms.date: 07/05/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: active-directory
 durationInMinutes: 3
 content: |
   [!include[](includes/5-access-managed-identities.md)]

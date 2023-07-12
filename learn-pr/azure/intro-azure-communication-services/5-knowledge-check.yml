@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: "A knowledge check for the introduction to Azure Communication Services, Learn module. This tests your understanding of the module."
   ms.date: 03/09/2022
-  author: ProbablePrime
-  ms.author: rifox
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

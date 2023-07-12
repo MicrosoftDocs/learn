@@ -1,0 +1,50 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-factory-pipelines-fabric.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a data pipeline?"
+    choices:
+    - content: "A special folder in OneLake storage where data can be exported from a lakehouse"
+      isCorrect: false
+      explanation: "Incorrect. A pipeline is not a folder in OneLake."
+    - content: "A sequence of activities to orchestrate a data ingestion or transformation process"
+      isCorrect: true
+      explanation: "Correct. A pipeline consists of activities to ingest and transform data."
+    - content: "A saved Power Query"
+      isCorrect: false
+      explanation: "Incorrect. Though, a dataflow (Gen2) is a Power Query based encapsulation of data transfer and transformation steps that can be included in a pipeline."
+  - content: "You want to use a pipeline to copy data to a folder with a specified name for each run. What should you do?"
+    choices:
+    - content: "Create multiple pipelines - one for each folder name"
+      isCorrect: false
+      explanation: "Incorrect. This is an inefficient way to accomplish the goal."
+    - content: "Use a Dataflow (Gen2)"
+      isCorrect: false
+      explanation: "Incorrect. Using a dataflow doesn't inherently enable dynamic folder naming."
+    - content: "Add a parameter to the pipeline and use it to specify the folder name for each run"
+      isCorrect: true
+      explanation: "Correct. Using a parameter enables greater flexibility for your pipeline."
+  - content: "You have previously run a pipeline containing multiple activities. What's the best way to check how long each individual activity took to complete?"
+    choices:
+    - content: "Rerun the pipeline and observe the output, timing each activity."
+      isCorrect: false
+      explanation: "Incorrect. This approach wouldn't show the timings for the previous run."
+    - content: "View the run details in the run history."
+      isCorrect: true
+      explanation: "Correct. The run history details show the time taken for each activity - optionally as a Gantt chart."
+    - content: "View the **Refreshed** value for your lakehouse's default dataset"
+      isCorrect: false
+      explanation: "Incorrect. The refreshed value shows the timestamp when the dataset was last refreshed, not the elapsed time for pipeline activities."

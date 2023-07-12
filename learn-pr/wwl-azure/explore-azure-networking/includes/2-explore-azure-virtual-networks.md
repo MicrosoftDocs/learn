@@ -1,4 +1,5 @@
 
+
 Azure virtual networks provide direct, private IP based connectivity between network-attached resources, such as Azure VMs. You have the option of connecting different virtual networks together if you intend to provide direct, private IP connectivity between them. It's also possible to connect virtual networks to your on-premises networks, effectively making Azure an extension of your own datacenter.
 
 Azure virtual networks support Transmission Control Protocol (TCP), User Datagram Protocol (UDP), and Internet Control Message Protocol (ICMP). At the time of authoring, there's no support for broadcasts, multicasts, IP-in-IP encapsulated packets, and Generic Route Encapsulation (GRE) packets.

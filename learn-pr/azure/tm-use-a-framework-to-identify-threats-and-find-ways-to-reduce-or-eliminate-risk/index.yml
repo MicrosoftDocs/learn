@@ -7,7 +7,6 @@ metadata:
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Use a framework to identify threats and find ways to reduce or eliminate risk
 summary: Threat modeling helps you generate a list of potential threats using the threat modeling framework and find ways to reduce or eliminate risk with corresponding security controls.
 abstract: |
@@ -25,10 +24,10 @@ roles:
 - security-engineer
 - solution-architect
 products:
-- azure-iot-security-center
+- azure
 - azure-security-center
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

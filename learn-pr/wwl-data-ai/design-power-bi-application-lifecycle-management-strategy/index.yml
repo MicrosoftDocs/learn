@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: anrudduc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: power-bi
 title: Design a Power BI application lifecycle management strategy
 summary: The use of OneDrive, Git repositories, and Power BI deployment pipelines allows us to follow application lifecycle management techniques. This reduces administrative overhead and provides continuity in the development process.
 abstract: |

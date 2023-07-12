@@ -4,13 +4,11 @@ title: Assign blob access tiers
 metadata:
   title: Assign blob access tiers
   description: "Assign blob access tiers"
-  ms.date: 03/27/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/4-create-blob-access-tiers.md)]

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.design-solutions-secure-microsoft-365.design-microsoft-defender-365-solution
-title: Design a Microsoft Defender 365 solution
+title: Design a Microsoft 365 Defender solution
 metadata:
-  title: Design a Microsoft Defender 365 solution
-  description: "This is a preparatory unit for SC-100 on the topic: design a Microsoft Defender 365 solution."
+  title: Design a Microsoft 365 Defender solution
+  description: "This is a preparatory unit for SC-100 on the topic: design a Microsoft 365 Defender solution."
   ms.date: 3/14/2023
   author: hrasheed-msft
   ms.author: hrasheed

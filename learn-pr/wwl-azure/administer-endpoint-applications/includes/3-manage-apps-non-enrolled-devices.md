@@ -1,4 +1,5 @@
 
+
 Many ways exist today for you to make applications available to your users. Intune can supply them as either Required or Available, or users can get them right from public stores.
 
 Apps downloaded from public stores are unmanaged, while those assigned by Intune are managed. For managed apps, IT has direct control over deployment, ongoing management (such as inventory or updates), and selective wipe of the apps and their associated data. Most mobile devices have OS level controls to limit (containerize) data movement. Intune supports an additional management level for managed apps integrated with the Intune App SDK or the Intune App Wrapping Tool. Additional controls, such as per-app PIN, jailbreak detection, and granular control over data flow can be added for these MAM-protected apps. Depending on the specific DLP requirements of your organization, you can choose the right mix of unmanaged, managed and MAM-protected applications for your users.

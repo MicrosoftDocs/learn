@@ -1,10 +1,26 @@
 Data is the most important input for your machine learning models. You’ll need access to data when training machine learning models, and the trained model needs data as input to generate predictions.
 
-To use data for your machine learning models, you need to extract data from a source and make it available to whichever Azure service you choose to use for training models or generating predictions.
+Imagine you're a data scientist and have been asked to train a machine learning model. 
+
+You aim to go through the following six steps to plan, train, deploy, and monitor the model:
+
+:::image type="content" source="../media/machine-learning-process.png" alt-text="Diagram showing the six steps of the machine learning process.":::
+
+1. **Define the problem**: Decide on what the model should predict and when it's successful. 
+1. **Get the data**: Find data sources and get access. 
+1. **Prepare the data**: Explore the data. Clean and transform the data based on the model's requirements.
+1. **Train the model**: Choose an algorithm and hyperparameter values based on trial and error.
+1. **Integrate the model**: Deploy the model to an endpoint to generate predictions.
+1. **Monitor the model**: Track the model's performance.
+
+> [!Note]
+> The diagram is a simplified representation of the machine learning process. Typically, the process is iterative and continuous. For example, when monitoring the model you may decide to go back and retrain the model.
+
+**To get and prepare the data** you'll use to train the machine learning model, you'll need to extract data from a source and make it available to the Azure service you want to use to train models or make predictions.
 
 In general, it’s a best practice to extract data from its source before analyzing it. Whether you’re using the data for data engineering, data analysis, or data science, you’ll want to **extract** the data from its source, **transform** it, and **load** it into a serving layer. Such a process is also referred to as **Extract, Transform, and Load** (**ETL**) or **Extract, Load, and Transform** (**ELT**). The serving layer makes your data available for the service you’ll use for further data processing like training machine learning models.
 
-Before being able to design the ETL or ELT process, you’ll need to identify your data source and data format. 
+Before being able to design the ETL or ELT process, you’ll need to **identify your data source and data format**. 
 
 ## Identify the data source
 
@@ -30,7 +46,7 @@ Commonly, we refer to three different formats:
 - **Semi-structured** data: Not all data has the same fields or properties. Instead, each data point is represented by a collection of *key-value pairs*. The keys represent the features, and the values represent the properties for the individual data point. For example, real-time applications like Internet of Things (IoT) devices generate a JSON object:
 
     ```json
-    { "deviceId": 29482, "location": "Office1", "time"="2021-07-14T12:47:39Z", "temperature": 23 }
+    { "deviceId": 29482, "location": "Office1", "time":"2021-07-14T12:47:39Z", "temperature": 23 }
     ```
 
 - **Unstructured** data: Files that don't adhere to any rules when it comes to structure. For example, documents, images, audio, and video files are considered unstructured data. Storing them as unstructured files ensures you don’t have to define any schema or structure, but also means you can't query the data in the database. You'll need to specify how to read such a file when consuming the data. 

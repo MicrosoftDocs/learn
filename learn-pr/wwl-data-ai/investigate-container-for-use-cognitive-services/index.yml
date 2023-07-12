@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
 title: Deploy cognitive services in containers
 summary: Learn about Container support in Cognitive Services allowing the use of APIs available in Azure and enable flexibility in where to deploy and host the services with Docker containers.
 abstract: |

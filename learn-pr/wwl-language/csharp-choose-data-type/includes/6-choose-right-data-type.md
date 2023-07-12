@@ -1,5 +1,7 @@
 
 
+
+
 You've been introduced to the difference between value types and reference types, as well as integral and floating point types.
 
 Suppose your job is to build a new application that retrieves, manipulates, and stores different types of data. Which data types do you use?

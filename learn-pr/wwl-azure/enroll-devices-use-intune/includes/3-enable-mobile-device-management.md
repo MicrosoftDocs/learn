@@ -1,4 +1,5 @@
 
+
 A key task of any administrator is to protect and secure an organization's resources and data. This set of tasks is called device management. Users have many devices from which they open and share personal files, visit websites, and install apps and games. These same users are also employees and they want to use their devices to access work resources, such as email and SharePoint. Device management enables organizations to protect and secure their resources and data.
 
 Mobile device management (MDM) is an industry standard for managing mobile devices, such as smart phones, tablets, laptops and desktop computers. As a modern desktop administrator, you need to know how to manage devices in your organization by using MDM mechanism, as there are many scenarios where on-premises solutions either can't manage or might be better suited to be managed through MDM policies than traditional methods such as Group Policies.

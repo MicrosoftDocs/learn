@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/04/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -50,7 +50,7 @@ quiz:
     - content: "Applications and users authenticate to a vault with a Microsoft account and are authorized to access specific secrets."
       isCorrect: false
       explanation: "You need to authentication with Azure AD."
-  - content: "How does Azure Key Vault help protect your secrets after they've been loaded by your app?"
+  - content: "How does Azure Key Vault help protect your secrets after they're loaded by your app?"
     choices:
     - content: "Azure Key Vault automatically generates a new secret after every use."
       isCorrect: false

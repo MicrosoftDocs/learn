@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Build an industrial strength brain
 summary: Train a modular brain for real industrial processes. Decompose the tasks into skills, do Machine Teaching experimentation to get the orchestration and the training completed successfully. Evaluate brain performance using training graphs and custom assessments. 
 abstract: | 

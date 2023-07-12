@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
+  ms.service: powerbi
 title: Choose a Power BI model framework
 summary: Describe model frameworks, their benefits and limitations, and features to help optimize your Power BI data models.
 abstract: |

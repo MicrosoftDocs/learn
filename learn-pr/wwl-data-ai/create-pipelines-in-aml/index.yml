@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Orchestrate machine learning with pipelines
 summary: Orchestrating machine learning training with pipelines is a key element of DevOps for machine learning. In this module, you'll learn how to create, publish, and run pipelines to train models in Azure Machine Learning.
 abstract: |

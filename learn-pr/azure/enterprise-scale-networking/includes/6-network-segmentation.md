@@ -1,16 +1,16 @@
-In this unit, you'll learn about enterprise design considerations and recommendations for network segmentation in Azure.
+In this unit, you learn about enterprise design considerations and recommendations for network segmentation in Azure.
 
 ## Considerations
 
 You should design based on zero trust and assumed breach. Systems should be able to communicate with each other only on the ports and protocols that the applications need. Here are a few key items to remember:
 
 - Application security groups don't span virtual networks.
-- Network security groups are stateful, but are not firewalls. They're access-control lists.
+- Network security groups are stateful, but aren't firewalls. They're access-control lists.
 - Azure Firewall is available from Microsoft. You can also find partner firewalls in Azure Marketplace.
 
 ## Recommendations
 
-Delegate subnet creation to the owner of the landing zone. This will let the owner define how to segment workloads across subnets (for example, a single large subnet or a multitier app).
+Delegate subnet creation to the owner of the landing zone. This configuration lets the owner define how to segment workloads across subnets. For example, a single large subnet or a multitier app.
 
 The platform team can use Azure Policy to ensure that a network security group with specific rules is always associated with subnets that have deny-only policies. An example of a specific rule is denying inbound SSH or RDP from the internet, or allowing/blocking traffic across landing zones.
 

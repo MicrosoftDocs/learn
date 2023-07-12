@@ -1,4 +1,5 @@
 
+
 A very important part of Windows Defender is a firewall. You can access firewall settings from Windows Security center or you can find these options in Control Panel, in the Network and Sharing Center and System and Security items. In System and Security, you can configure basic Windows Defender Firewall settings and access the Action Center to view notifications for firewall alerts. In the Network and Sharing Center, you can configure all types of network connections, such as changing the network location profile. You also can configure basic Windows Defender Firewall settings in the Windows Security Center.
 
 You cannot configure all Windows Defender Firewall settings in the Windows Security Center. Some links in the Windows Security Center open the Windows Defender Firewall page in Control Panel.

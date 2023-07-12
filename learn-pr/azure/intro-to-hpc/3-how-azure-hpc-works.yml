@@ -2,7 +2,7 @@
 uid: learn.intro-to-hpc.3-azure-vm-hpc-instances
 metadata:
   title: How Azure HPC works
-  description: In this unit, you'll learn about components of Azure HPC and the orchestration of components of Azure HPC.
+  description: In this unit, you learn about components of Azure HPC and the orchestration of components of Azure HPC.
   ms.date: 10/03/2022
   author: padmalathas
   ms.author: padmalathas
@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "You're trying to provision several H-series Azure VMs in the Azure portal to solve some complex financial equations. How can you resolve the errors you're receiving?"
     choices:
-    - content: "Use the Azure Virtual Machines pricing detail page to ensure that the problem you want to solve is supported by the kind of VM you're trying to deploy."
+    - content: "Use the Azure Virtual Machines pricing detail page to ensure that the kind of VM you're trying to deploy can solve the complex problem."
       isCorrect: false
       explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You can't solve them by using the pricing detail page."
     - content: "Tell Azure that your subscription needs to support a greater number of cores than is allowed by default."
@@ -25,7 +25,7 @@ quiz:
       explanation: "Because H-series VMs use large numbers of cores, you can quickly reach the limit for your subscription. Open a support request to increase this limit."
     - content: "Try again at a different time."
       isCorrect: false
-      explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. You'll see the same errors at any later time."
+      explanation: "These problems are often caused when you reach the limit for VM cores in your subscription. This problem is the same at a different time."
   - content: "You want to deploy an HB-series VM for a weather modeling startup. However, this type of VM doesn't appear as an option in the portal. What should you check?"
     choices:
     - content: "Check that your subscription is allowed to deploy VMs of this type."
@@ -33,7 +33,7 @@ quiz:
       explanation: "HB-series VMs are supported in all Azure subscription. However, they're not supported in all Azure regions."
     - content: "Try again at a different time."
       isCorrect: false
-      explanation: "The problem is that HB-series VMs aren't supported in all Azure regions. This problem will be the same at a different time."
+      explanation: "The problem is that HB-series VMs aren't supported in all Azure regions. This problem is the same at a different time."
     - content: "Check that this VM is supported in your preferred region of deployment."
       isCorrect: true
       explanation: "HB-series VMs aren't supported in all Azure regions."

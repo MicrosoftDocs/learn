@@ -1,10 +1,11 @@
 
+
 When you enable Enterprise State Roaming, your organization is automatically granted a free, limited-use license for Azure Rights Management protection from Azure Information Protection. This free subscription is limited to encrypting and decrypting enterprise settings and application data synced by Enterprise State Roaming. You must have a paid subscription to use the full capabilities of the Azure Rights Management service.
 
 #### To enable Enterprise State Roaming
 
 1.  Sign in to the Azure portal.
-2.  Select **Azure Active Directory** &gt; **Devices** &gt; **Enterprise State Roaming**.
+2.  Select **Azure Active Directory** > **Devices** > **Enterprise State Roaming**.
 3.  Select either **All** or **Selected** next to **Users may sync settings and app data across devices**.:::image type="content" source="../media/azure-enterprise-state-roaming-6ca7af98.png" alt-text="Screenshot of the Devices - Enterprise State Roaming screen.":::
     
 
@@ -34,7 +35,7 @@ The country/region value is set as part of the Azure AD directory creation proce
 Follow these steps to view a per-user device sync status report.
 
 1.  Sign in to the Azure portal.
-2.  Select **Azure Active Directory** &gt; **Users** &gt; **All users**.
+2.  Select **Azure Active Directory** > **Users** > **All users**.
 3.  Select the user, and then select **Devices**.
 4.  Under **Show**, select **Devices syncing settings and app data** to show sync status.
 5.  If there are devices syncing for this user, you see the devices shown here.

@@ -1,5 +1,6 @@
 
 
+
 You'll be using Visual Studio Code to develop a small mini-game. Your application should establish the basics of the game, including updating player state, manipulating player movement, and consuming and regenerating a food object. You'll develop each of those features and run a simplified game test.
 
 ## Project specification

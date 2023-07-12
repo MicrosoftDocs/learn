@@ -9,7 +9,9 @@ metadata:
   author: amthomas46
   ms.author: antho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure  
+  ms.service: azure
+  ms.custom:
+    - devx-track-python
   zone_pivot_groups: dev-lang-csharp-node-python
 durationInMinutes: 10
 interactive: powershell

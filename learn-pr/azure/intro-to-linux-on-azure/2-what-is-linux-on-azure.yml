@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-linux-on-azure.what-is-linux-on-azure
+title: What is Linux on Azure?
+metadata:
+  title: What is Linux on Azure?
+  description: Learn about the services and platforms that Azure provides for Linux environments.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-what-is-linux-on-azure.md)]

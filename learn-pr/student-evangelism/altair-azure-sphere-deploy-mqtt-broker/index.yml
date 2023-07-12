@@ -7,8 +7,8 @@ metadata:
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Deploy a private MQTT broker
 summary: Learn how to deploy your own private MQTT broker.
 abstract:  |

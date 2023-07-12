@@ -4,8 +4,8 @@ metadata:
   title: Back up an Azure virtual machine by using Azure Backup
   description: Explore all the methods of backing up machines provided by Azure Backup, and decide which method to implement for your company.
   ms.date: 08/27/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Back up an Azure virtual machine by using Azure Backup

@@ -4,10 +4,12 @@ title: Exercise - Call the methods of a .NET Class
 metadata:
   title: Exercise - Call the methods of a .NET Class
   description: "Exercise - Call the methods of a .NET Class"
-  ms.date: 02/24/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 12
 content: |
@@ -30,7 +32,7 @@ quiz:
     choices:
     - content: "`int money = new coins.Next();`."
       isCorrect: false
-      explanation: "Incorrect. The keyword `new` can not be used when calling a method."
+      explanation: "Incorrect. The keyword `new` can't be used when calling a method."
     - content: "`int money = Random.Next();`."
       isCorrect: false
       explanation: "Incorrect. The `Random.Next()` method cannot be accessed directly (using the `Random` class) because it is a stateful method."

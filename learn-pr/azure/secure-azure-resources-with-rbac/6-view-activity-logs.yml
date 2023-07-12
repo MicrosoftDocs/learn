@@ -9,7 +9,7 @@ metadata:
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/6-view-activity-logs.md)]

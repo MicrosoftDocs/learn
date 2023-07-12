@@ -8,7 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
 azureSandbox: false
 labModal: false
 durationInMinutes: 4

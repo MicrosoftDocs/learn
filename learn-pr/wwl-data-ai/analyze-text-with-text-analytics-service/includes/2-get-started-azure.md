@@ -1,3 +1,4 @@
+
 The Language service is a part of the Azure Cognitive Services offerings that can perform advanced natural language processing over raw text.
 
 ## Azure resources for the Language service
@@ -12,7 +13,7 @@ To use the Language service in an application, you must provision an appropriate
 Use the language detection capability of the Language service to identify the language in which text is written. You can submit multiple documents at a time for analysis. For each document submitted to it, the service will detect:
 
 - The language name (for example "English").
-- The ISO 6391 language code (for example, "en").
+- The ISO 639-1 language code (for example, "en").
 - A score indicating a level of confidence in the language detection.
 
 For example, consider a scenario where you own and operate a restaurant where customers can complete surveys and provide feedback on the food, the service, staff, and so on. Suppose you have received the following reviews from customers:

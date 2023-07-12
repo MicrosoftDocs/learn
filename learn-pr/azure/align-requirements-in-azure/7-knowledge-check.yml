@@ -5,8 +5,8 @@ metadata:
   title: Knowledge check - IaaS, PaaS & SaaS
   description: Knowledge check - IaaS, PaaS & SaaS
   ms.date: 09/24/2018
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

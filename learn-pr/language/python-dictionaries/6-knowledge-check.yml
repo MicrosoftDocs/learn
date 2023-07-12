@@ -5,15 +5,18 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check - Python dictionaries
   description: Check your knowledge! Python dictionaries.
-  ms.date: 12/08/2021
+  ms.date: 06/05/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
 quiz:
+  title: Check your knowledge 
   questions:
   - content: "What method allows access all key names in a Python dictionary?"
     choices:

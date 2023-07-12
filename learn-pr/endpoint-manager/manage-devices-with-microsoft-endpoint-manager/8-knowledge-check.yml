@@ -20,7 +20,7 @@ quiz:
       explanation: "Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site to be managed."
     - content: "Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site to be managed."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct!"
     - content: "In the context of mobile device management, provisioning involves planning enrollment, where enrollment involves delivering devices to end users."
       isCorrect: false
       explanation: "Provisioning is a process when your organization issues new or repurposed devices to individuals in your organization. In Intune, enrolling means that the device is connected and recognized by Intune based on a mobile device management (MDM) certificate. For Configuration Manager, you install the Configuration Manager client on a device, and then it registers with the site to be managed."
@@ -34,4 +34,4 @@ quiz:
       explanation: "BYOD means bring your own device to be managed by Intune. BYOD includes personally owned phones, tablets, and PCs. Users install and run the Company Portal app to enroll BYODs. "
     - content: "Bring your own device."
       isCorrect: true
-      explanation: ""
+      explanation: "Correct!"

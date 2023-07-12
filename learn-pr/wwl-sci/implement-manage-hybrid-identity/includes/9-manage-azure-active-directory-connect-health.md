@@ -12,12 +12,12 @@ You can configure the Azure AD Connect Health service to send email notification
 
 ### To enable Azure AD Connect Health email notifications
 
-1. Open the **Alerts** blade for the service for which you want to receive email notification.
-1. From the action bar, click **Notification Settings**.
-1. At the email notification switch, select **ON**.
-1. Select the check box if you want all global administrators to receive email notifications.
-1. If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
-1. To finalize the changes, click **Save**. Changes take effect only after you save.
+1.  Open the **Alerts** blade for the service for which you want to receive email notification.
+2.  From the action bar, click **Notification Settings**.
+3.  At the email notification switch, select **ON**.
+4.  Select the check box if you want all global administrators to receive email notifications.
+5.  If you want to receive email notifications at any other email addresses, specify them in the **Additional Email Recipients** box. To remove an email address from this list, right-click the entry and select **Delete**.
+6.  To finalize the changes, click **Save**. Changes take effect only after you save.
 
 > [!NOTE]
 > When there are issues processing synchronization requests in our back-end service, this service sends a notification email with the details of the error to the administrative contact email address(es) of your tenant. We heard feedback from customers that in certain cases the volume of these messages is prohibitively large so we are changing the way we send these messages.
@@ -45,21 +45,21 @@ When you're deleting a server, be aware of the following:
 
 Azure AD Connect Health for Active Directory Federation Services (AD FS) and Azure AD Connect (Sync):
 
-1. Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
-1. On the **Server** blade, from the action bar, click **Delete**.
+1.  Open the **Server** blade from the **Server List** blade by selecting the server name to be removed.
+2.  On the **Server** blade, from the action bar, click **Delete**.
     
     :::image type="content" source="../media/delete-server-2-1e9e75dc.png" alt-text="Screenshot of Azure A D Connect Health delete server.  Only keep servers that are active.":::
     
-1. Confirm by typing the server name in the confirmation box.
-1. Click **Delete**.
+3.  Confirm by typing the server name in the confirmation box.
+4.  Click **Delete**.
 
 Azure AD Connect Health for Azure Active Directory Domain Services:
 
-1. Open the **Domain Controllers** dashboard.
-1. Select the domain controller to be removed.
-1. From the action bar, click **Delete Selected**.
-1. Confirm the action to delete the server.
-1. Click **Delete**.
+1.  Open the **Domain Controllers** dashboard.
+2.  Select the domain controller to be removed.
+3.  From the action bar, click **Delete Selected**.
+4.  Confirm the action to delete the server.
+5.  Click **Delete**.
 
 ### Delete a service instance from Azure AD Connect Health service
 
@@ -74,13 +74,13 @@ When you're deleting a service instance, be aware of the following:
 
 ### To delete a service instance from the Azure AD Connect Health service
 
-1. Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
-1. On the **Service** blade, from the action bar, click **Delete**.
+1.  Open the **Service** blade from the **Service List** blade by selecting the service identifier (farm name) that you want to remove.
+2.  On the **Service** blade, from the action bar, click **Delete**.
     
     :::image type="content" source="../media/delete-server-9ebbd5de.png" alt-text="Screenshot of Azure A D Connect Health delete service.  Remove unwanted services.":::
     
-1. Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
-1. Click **Delete**.
+3.  Confirm by typing the service name in the confirmation box (for example: sts.contoso.com).
+4.  Click **Delete**.
 
 ## Manage access with Azure Role Based Access Control
 
@@ -117,21 +117,21 @@ To allow a user access at the *all service instances* level within Azure AD Conn
 
 **Step 2: Add users and groups, and assign roles**
 
-1. From the **Configure** section, click **Users**.
+1.  From the **Configure** section, click **Users**.
     
     :::image type="content" source="../media/start-role-based-access-control-7a8afaa9.png" alt-text="Screenshot of Azure A D Connect Health resource sidebar.  Add the users you need.":::
     
-1. Select **Add**.
-1. In the **Select a role** pane, select a role (for example, **Owner**).
+2.  Select **Add**.
+3.  In the **Select a role** pane, select a role (for example, **Owner**).
     
     :::image type="content" source="../media/role-based-access-control-add-73b3e096.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C configure menu.":::
     
-1. Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
+4.  Type the name or identifier of the targeted user or group. You can select one or more users or groups at the same time. Click **Select**.
     
     :::image type="content" source="../media/role-based-access-control-select-users-cdbd95a8.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C and new users highlighted.":::
     
-1. Select **OK**.
-1. After the role assignment is complete, the users and groups appear in the list.
+5.  Select **OK**.
+6.  After the role assignment is complete, the users and groups appear in the list.
 
 Now the listed users and groups have access, according to their assigned roles.
 
@@ -142,8 +142,8 @@ Now the listed users and groups have access, according to their assigned roles.
 
 **Step 3: Share the blade location with users or groups**
 
-1. After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
-1. On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
+1.  After you assign permissions, a user can access Azure AD Connect Health by going [here](https://aka.ms/aadconnecthealth).
+2.  On the blade, the user can pin the blade, or different parts of it, to the dashboard. Simply click the **Pin to dashboard** icon.
     
     :::image type="content" source="../media/role-based-access-control-pin-blade-171b7351.png" alt-text="Screenshot of Azure A D Connect Health and Azure R B A C pin blade, with pin icon highlighted.":::
     
@@ -206,14 +206,14 @@ Follow the steps from the Azure portal to narrow down the sync error details and
 
 From the Azure portal, take a few steps to identify specific fixable scenarios:
 
-1. Check the **Diagnose status** column. The status shows if there's a possible way to fix a sync error directly from Azure Active Directory. In other words, a troubleshooting flow exists that can narrow down the error case and potentially fix it.
+1.  Check the **Diagnose status** column. The status shows if there's a possible way to fix a sync error directly from Azure Active Directory. In other words, a troubleshooting flow exists that can narrow down the error case and potentially fix it.
     
     | **Status**          | **What does it mean?**                                                                                                                                                                                                                                                                                         |
     | ------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
     | Not Started         | You haven't visited this diagnosis process. Depending on the diagnostic result, there's a potential way to fix the sync error directly from the portal.                                                                                                                                                        |
     | Manual Fix Required | The error doesn't fit the criteria of available fixes from the portal. Either conflicting object types aren't users, or you already went through the diagnostic steps, and no fix resolution was available from the portal. In the latter case, a fix from the on-premises side is still one of the solutions. |
     | Pending Sync        | A fix was applied. The portal is waiting for the next sync cycle to clear the error.                                                                                                                                                                                                                           |
-1. Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
-1. If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.
-1. After an orphaned object case is identified, you can fix the duplicated attributes sync errors directly from the portal. To trigger the process, select the **Apply Fix** button. The status of the current sync error updates to **Pending sync**.
-1. After the next sync cycle, the error should be removed from the list.
+2.  Select the **Diagnose** button under the error details. You'll answer a few questions and identify the sync error details. Answers to the questions help identify an orphaned object case.
+3.  If a **Close** button appears at the end of the diagnostics, there's no quick fix available from the portal based on your answers. Refer to the solution shown in the last step. Fixes from on-premises are still the solutions. Select the **Close** button. The status of the current sync error switches to **Manual fix required**. The status stays during the current sync cycle.
+4.  After an orphaned object case is identified, you can fix the duplicated attributes sync errors directly from the portal. To trigger the process, select the **Apply Fix** button. The status of the current sync error updates to **Pending sync**.
+5.  After the next sync cycle, the error should be removed from the list.

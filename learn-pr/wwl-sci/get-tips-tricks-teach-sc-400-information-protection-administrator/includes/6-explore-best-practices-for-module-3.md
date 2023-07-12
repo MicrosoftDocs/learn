@@ -1,5 +1,6 @@
 
 
+
 SC-400: Module 3 Implement data lifecycle and records management with Microsoft Purview
 
 Module 3 Overview

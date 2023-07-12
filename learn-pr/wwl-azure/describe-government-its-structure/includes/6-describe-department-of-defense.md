@@ -6,7 +6,7 @@
     :::column-end:::
     :::column span="":::
 
-        The United States Department of Defense ("DOD") is a cabinet-level agency that coordinates and supervises all functions of the government directly related to national security and the United States Armed Forces.
+        The United States Department of Defense ("DOD") is a cabinet-level agency that coordinates and supervises all functions of the government directly related to America's security and the United States Armed Forces.
         
     :::column-end:::
 :::row-end:::
@@ -23,7 +23,7 @@ The DOD includes three major branches:
 - Navy
 - Air Force
 
-The DOD includes four national intelligence services:
+The DOD includes four government intelligence services:
 
 - The Defense Intelligence Agency (DIA)
 - The National Security Agency (NSA)
@@ -46,7 +46,7 @@ The DOD also includes nine non-intelligence services that cross over different b
 
 Because of its size, its structure, its global reach, and the nature of the data that it handles, the DOD has a large influence on the US Government’s cloud strategy.
 
-### National security
+### Security
 
 Defending the United States isn't limited to only the physical battlefield. Modern war fighting includes the digital world, and protection of data and critical infrastructure to ensure the security of the nation and mission success. Because of the shifting role of digital warfare, the DoD sees the cloud as a "fundamental component of the global infrastructure that will empower the war fighter with data and is critical to maintaining our military's technological advantage."
 
@@ -56,10 +56,10 @@ Technology doesn't determine warfare. In many cases, though, it can change how w
 
 ### Recognition and usage of data and intelligence as an instrument for security
 
-Data and the intelligence that may be assessed from it support both a strong national security position, as well as empower the DoD to provide for "the common defense." Both intelligence and non-intelligence services that are part of the DoD have compelling interest in leveraging commercially proven technologies within their mission space to ensure data and intelligence security.
+Data and the intelligence that may be assessed from it support both a strong security position, as well as empower the DoD to provide for "the common defense." Both intelligence and non-intelligence services that are part of the DoD have compelling interest in leveraging commercially proven technologies within their mission space to ensure data and intelligence security.
 
 ### Purchasing power
 
 Because of its size, the DoD also provides the means to achieve the economies of scale cloud computing provides. Cloud Service Providers (CSPs) have made substantial up-front capital investments in data centers. The DoD meets such a wide range of strategic and tactical objectives. As a result, the DoD has the ability to uniquely achieve greater value for taxpayers.
 
-The DoD plays a pivotal role in determining where the US Government should expend its money in cloud computing technology to support national security.
+The DoD plays a pivotal role in determining where the US Government should expend its money in cloud computing technology to support America's security.
