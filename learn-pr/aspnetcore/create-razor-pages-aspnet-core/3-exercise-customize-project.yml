@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.create-razor-pages-aspnet-core.3-exercise-customize-project
+title: Exercise - Customize the project
+metadata:
+  title: Exercise - Customize the project
+  description: "Get the sample project and take a brief tour of Razor Pages."
+  ms.date: 5/5/2023
+  author: camsoper
+  ms.author: casoper
+  ms.manager: markl
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+durationInMinutes: 12
+content: |
+  [!include[](includes/3-exercise-customize-project.md)]

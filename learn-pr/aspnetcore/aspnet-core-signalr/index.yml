@@ -7,8 +7,10 @@ metadata:
   ms.date: 12/03/2021
   author: IEvangelist
   ms.author: dapine
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
+  ms.technology: aspnetcore-signalr
 title: Introduction to ASP.NET Core SignalR
 summary: In this introductory module, you'll learn what ASP.NET Core SignalR is, how it works, and when to use it.
 abstract: |

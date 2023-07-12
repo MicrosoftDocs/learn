@@ -5,10 +5,12 @@ metadata:
   unitType: introduction
   title: Introducing lists in Python
   description: Python lists are a built-in type for working with a collection of data. In this module, you'll explore how to create lists and use them.
-  ms.date: 12/03/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-languages
 durationInMinutes: 1 # user input: the estimate time to complete the unit

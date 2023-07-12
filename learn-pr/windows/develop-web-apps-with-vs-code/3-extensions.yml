@@ -4,9 +4,9 @@ uid: learn-windows.introducing-vs-code.3-extensions
 metadata:
   title: Use and install extensions
   description: Learn about how you can find extensions in Visual Studio Code, and how they can help you develop.
-  ms.date: 3/29/2019
-  author: markamos
-  ms.author: quradic
+  ms.date: 04/21/2023
+  author: kjo-msft
+  ms.author: karinjohnson
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   

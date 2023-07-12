@@ -8,7 +8,6 @@ metadata:
   ms.author: thpetche
   ms.topic: interactive-tutorial
   #ms.learn-contact: thpetche
-  ms.prod: learning-azure
 title: Route system feedback to development teams
 summary: Learn how continuous monitoring and dashboards give you insight into how customers use your software and where patterns of failure occur.
 abstract: |

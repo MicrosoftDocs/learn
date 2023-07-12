@@ -4,7 +4,7 @@ There are many laws and regulations addressing data protection worldwide. Howeve
 
 The GDPR governs the use and treatment of personal data by organizations that offer goods and services to EU residents or monitor their behavior, regardless of where those organizations are located. The GDPR also gives individuals certain rights to manage their personal data that an organization collects.
 
-The GDPR updates and expands on the earlier Data Protection Directive, which was enacted in 1995. While the GDPR preserves many of the principles established in the Directive, it is a much more ambitious law. Among its most notable changes, the GDPR gives individuals greater control over their personal data and imposes many new obligations on organizations that collect, handle, or analyze personal data. The GDPR also gives national regulators new powers to impose significant fines on organizations that breach the law.
+The GDPR updates and expands on the earlier Data Protection Directive, which was enacted in 1995. While the GDPR preserves many of the principles established in the Directive, it is a much more ambitious law. Among its most notable changes, the GDPR gives individuals greater control over their personal data and imposes many new obligations on organizations that collect, handle, or analyze personal data. The GDPR also gives regulators new powers to impose significant fines on organizations that breach the law.
 
 The GDPR focuses on the privacy of an individual's personal data. One of GDPR's goals is to strengthen personal data protections for those residing in the EU. The GDPR sets out data handling requirements and advises on how to achieve them. The GDPR became enforceable in May 2018.
 

@@ -18,7 +18,7 @@ quiz:
     - content: "Use special braille devices for communication."
       isCorrect: false
       explanation: "Incorrect. Supporting braille devices can help. Some users might not have the device. There's a better way to provide support for more users."
-    - content: "Use text-to-speech and speech-to-text to create a voice interface for the bot."
+    - content: "Use text to speech and speech to text to create a voice interface for the bot."
       isCorrect: true
       explanation: "Correct! Bot Framework supports passing voice messages over chat channels via SSML markup or attachments."
     - content: "Users with visual impairment can't use conversational UIs."

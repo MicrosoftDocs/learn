@@ -1,8 +1,8 @@
 Azure SQL Database, Azure SQL Managed Instance, and Azure Synapse Analytics support Dynamic Data Masking. 
-Dynamic Data Masking ensures limited data exposure to non-privileged users, such that they cannot see the data that is being masked. It also helps you in preventing unauthorized access to sensitive information that has minimal impact on the application layer. 
+Dynamic Data Masking ensures limited data exposure to nonprivileged users, such that they can't see the data that is being masked. It also helps you in preventing unauthorized access to sensitive information that has minimal impact on the application layer. 
 Dynamic Data Masking is a policy-based security feature. It will hide the sensitive data in a result set of a query that runs over designated database fields.
 
-Let's give you an example how it works. Let's say you work at a bank as a service representative in a call center. Due to compliance, any caller must identify themselves by providing several digits of their credit card number. In this scenario, the full credit card number should not be fully exposed to the service representative in the call center. You can define a masking rule, that masks all but the last four digits of a credit card number, so that you would get a query that only gives as a result the last four digits of the credit card number. This is just one example that could be equally applied to a variety of personal data such that compliance is not violated.
+Let's give you an example how it works. Let's say you work at a bank as a service representative in a call center. Due to compliance, any caller must identify themselves by providing several digits of their credit card number. In this scenario, the full credit card number shouldn't be fully exposed to the service representative in the call center. You can define a masking rule that masks all but the last four digits of a credit card number so that you would get a query that only gives as a result the last four digits of the credit card number. This is just one example that could be equally applied to a variety of personal data such that compliance isn't violated.
 For Azure Synapse Analytics, the way to set up a Dynamic Data Masking policy is using PowerShell or the REST API. 
 The configuration of the Dynamic Data Masking policy can be done by the Azure SQL Database admin, server admin, or SQL Security Manager roles.
 
@@ -23,7 +23,7 @@ In Azure Synapse Analytics, you can find Dynamic Data Masking here;
 
 **Set up Dynamic Data Masking for your database in Azure Synapse Analytics using PowerShell cmdlets**
 
-In this part, we are going to look into Dynamic Data Masking for a database in Azure Synapse Analytics using PowerShell cmdlets. 
+In this part, we're going to look into Dynamic Data Masking for a database in Azure Synapse Analytics using PowerShell cmdlets. 
 
 * Data masking policies
 
@@ -67,7 +67,7 @@ To use this cmdlet in PowerShell, you'd have to specify the following parameters
 * *ServerName* : sql server name 
 * *DatabaseName* : name of the database
 
-In addition, you will need to set the *DataMaskingState* parameter to specify whether data masking operations are enabled or disabled.
+In addition, you'll need to set the *DataMaskingState* parameter to specify whether data masking operations are enabled or disabled.
 
 If the cmdlet succeeds and the *PassThru* parameter is used, it will return an object describing the current data masking policy in addition to the database identifiers.
 
@@ -99,7 +99,7 @@ To use this cmdlet in PowerShell, you'd have to specify the following parameters
 
 You'd also have to specify the *RuleId* parameter to specify which rule this cmdlet returns.
 
-If you do not provide *RuleId*, all the data masking rules for that Azure SQL database are returned.
+If you don't provide *RuleId*, all the data masking rules for that Azure SQL database are returned.
 
 This cmdlet is also supported by the SQL Server Stretch Database service on Azure.
 
@@ -209,9 +209,10 @@ The REST API will support the following operations:
 The Create Or Update masking policy using the REST API will create or update a database data masking policy. 
 
 In HTTP the following request can be made:
+    > **Note**: The date of the API will change over time and the version you use will be determined by your needs and the funtionality requred.
 
 ```http
-PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default?api-version=2014-04-01
+GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default?api-version=2021-06-01
 ```
 
 The following parameters need to be passed through:
@@ -230,7 +231,7 @@ The Get policy, gets a database data masking policy.
 In HTTP the following request can be made:
 
 ```http
-GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default?api-version=2014-04-01
+GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default?api-version=2021-06-01
 ```
 
 The following parameters need to be passed through:
@@ -251,7 +252,7 @@ The Create or Update masking rule creates or updates a database data masking rul
 In HTTP the following request can be made:
 
 ```http
-PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default/rules/{dataMaskingRuleName}?api-version=2014-04-01
+PUT https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default/rules/{dataMaskingRuleName}?api-version=2021-06-01
 ```
 
 The following parameters need to be passed through:
@@ -272,7 +273,7 @@ The List By Database request gets a list of database data masking rules.
 In HTTP the following request can be made:
 
 ```http
-GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default/rules?api-version=2014-04-01
+GET https://management.azure.com/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.Sql/servers/{serverName}/databases/{databaseName}/dataMaskingPolicies/Default/rules?api-version=2021-06-01
 ```
 
 The following parameters need to be passed through:

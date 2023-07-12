@@ -4,11 +4,12 @@ title: Preprocess data and configure featurization
 metadata:
   title: Preprocess data and configure featurization
   description: "Learn how to configure automated machine learning to preprocess data and perform featurization with the Python SDK (v2) for Azure Machine Learning."
-  ms.date: 01/20/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 6
 content: |
   [!include[](includes/2-preprocess-data-configure-featurization.md)]

@@ -4,13 +4,11 @@ title: Integrate software composition analysis checks into pipelines
 metadata:
   title: Integrate software composition analysis checks into pipelines
   description: "Integrate software composition analysis checks into pipelines"
-  ms.date: 01/10/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.service: azure-devops
+durationInMinutes: 4
 content: |
   [!include[](includes/6-integrate-software-composition-analysis-checks-into-pipelines.md)]

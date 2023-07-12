@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-cloud
 title: Plan for cloud workload protections using Microsoft Defender for Cloud
 summary: Learn the purpose of Microsoft Defender for Cloud and how to enable the system.
 abstract: |

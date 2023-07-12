@@ -4,11 +4,11 @@ title: Create an analytics rule from templates
 metadata:
   title: Create an analytics rule from templates
   description: "Describes the procedure to create an analytics rule from templates."
-  ms.date: 01/27/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 8
 content: |
   [!include[](includes/5-create-rule-from-templates.md)]

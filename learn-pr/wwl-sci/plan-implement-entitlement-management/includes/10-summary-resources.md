@@ -14,7 +14,7 @@ In this module, you learned how to manage permissions and access for your intern
 
 Use these resources to discover more.
 
- -  FAQs [https://docs.microsoft.com/azure/active-directory/conditional-access/terms-of-use\#frequently-asked-questions](/azure/active-directory/conditional-access/terms-of-use)
+ -  FAQs [https://learn.microsoft.com/azure/active-directory/conditional-access/terms-of-use\#frequently-asked-questions](/azure/active-directory/conditional-access/terms-of-use)
  -  [What is Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-overview)
  -  [Common scenarios in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-scenarios)
  -  [Review assignments in Azure AD entitlement management](/azure/active-directory/governance/entitlement-management-access-package-assignments)

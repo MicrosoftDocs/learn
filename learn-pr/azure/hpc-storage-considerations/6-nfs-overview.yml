@@ -3,10 +3,10 @@ uid: learn.hpc-storage-considerations.6-nfs-overview
 title: NFS overview
 metadata:
   title: NFS overview
-  description: An overview of the key characteristics of NFS. We'll also compare the two major versions of NFS.
+  description: An overview of the key characteristics of NFS. We also compare the two major versions of NFS.
   ms.date: 12/29/2020
   author: scjescho
-  ms.author: scjescho
+  ms.author: padmalathas
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

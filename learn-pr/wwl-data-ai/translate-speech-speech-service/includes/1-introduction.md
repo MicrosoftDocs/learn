@@ -1,3 +1,4 @@
+
 Translation of speech builds on speech recognition by recognizing and transcribing spoken input in a specified language, and returning translations of the transcription in one or more other languages.
 
 In this module, you will learn how to:

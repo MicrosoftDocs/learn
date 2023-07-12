@@ -8,8 +8,9 @@ metadata:
   ms.author: rabououn
   ms.custom: devdivchpfy22
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+  manager: mijacobs
 title: Manage release cadence in Azure Pipelines by using deployment patterns
 summary: Choose and implement a deployment pattern that helps you smoothly roll out new application features to your users.
 abstract: |

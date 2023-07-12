@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe features and tools for managing and deploying Azure resources
 summary: This module covers tools that help you manage your Azure and on-premises resources.
 abstract: |

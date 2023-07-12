@@ -7,7 +7,7 @@ metadata:
   author: elazark
   ms.author: memildin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-cloud
 title: Resolve security threats with Microsoft Defender for Cloud
 summary: In this module, you’ll use the alert capabilities of Microsoft Defender for Cloud to watch for and respond to threats.
 abstract: | 
@@ -24,7 +24,7 @@ roles:
 - security-engineer
 products:
 - azure
-- azure-security-center
+- defender-for-cloud
 subjects:
 - cloud-security
 units:

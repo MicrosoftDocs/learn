@@ -7,7 +7,6 @@ metadata:
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Implement error handling and logging in Go
 summary: Understand how to handle errors and log helpful information in your Go programs.

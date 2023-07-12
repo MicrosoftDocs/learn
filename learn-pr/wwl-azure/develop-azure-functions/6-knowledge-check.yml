@@ -4,34 +4,34 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following is required for a function to run?"
+  - content: "Which of the following choices is required for a function to run?"
     choices:
     - content: "Binding"
       isCorrect: false
-      explanation: "That's incorrect. Bindings connect resources to a function, but aren't required for a function to run."
+      explanation: "Incorrect. Bindings connect resources to a function, but aren't required for a function to run."
     - content: "Trigger"
       isCorrect: true
-      explanation: "That's correct. A trigger defines how a function is invoked and a function must have exactly one trigger."
+      explanation: "Correct. A trigger defines how a function is invoked and a function must have exactly one trigger."
     - content: "Both triggers and bindings"
       isCorrect: false
-      explanation: "That's incorrect. Only a trigger is required for a function to run."
-  - content: "Which of the following supports both the `in` and `out` direction settings?"
+      explanation: "Incorrect. Only a trigger is required for a function to run."
+  - content: "Which of the following choices supports both the `in` and `out` direction settings?"
     choices:
     - content: "Bindings"
       isCorrect: true
-      explanation: "That's correct. Input and output bindings use `in` and `out`."
+      explanation: "Correct. Input and output bindings use `in` and `out`."
     - content: "Trigger"
       isCorrect: false
-      explanation: "That's incorrect. Triggers only support the `in` direction."
+      explanation: "Incorrect. Triggers only support the `in` direction."
     - content: "Connection value"
       isCorrect: false
-      explanation: "That's incorrect. A connection value is used to connect your function to other Azure services."
+      explanation: "Incorrect. A connection value is used to connect your function to other Azure services."

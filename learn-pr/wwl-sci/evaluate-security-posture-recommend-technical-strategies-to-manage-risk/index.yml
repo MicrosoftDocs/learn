@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Evaluate security posture and recommend technical strategies to manage risk
 summary: Learn how to evaluate an organization's security posture and recommend technical strategies to manage risk.
 abstract: |
@@ -33,7 +32,7 @@ products:
 - azure
 - defender-for-cloud
 - defender-for-cloud-apps
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - architecture
 - security

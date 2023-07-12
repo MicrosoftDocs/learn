@@ -8,7 +8,9 @@ metadata:
   author: steved0x
   ms.author: sdanie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipeline-agents
+  manager: mijacobs
 title: Host your own build agent in Azure Pipelines
 summary: Learn how to use your own build agent when Microsoft-hosted agents don't meet your needs.
 abstract: |
@@ -19,6 +21,7 @@ abstract: |
   - Connect your agent to a pipeline and build your application
 prerequisites: |
   - An Azure DevOps organization
+  - An Azure subscription
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git

@@ -9,4 +9,4 @@ In this module, you learned how to:
 - Understand capabilities of the Azure Bot Service
 - Understand capabilities of Azure Cognitive Search
 
-Now that you have a basic understanding of what's involved in being an AI Engineer, consider completing the [Microsoft Certified: AI Engineer Associate certification](/certifications/azure-ai-engineer/).
+Now that you have a basic understanding of what's involved in being an AI Engineer, consider completing the [Microsoft Certified: AI Engineer Associate certification](/learn/certifications/azure-ai-engineer/).

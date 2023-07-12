@@ -7,7 +7,7 @@ metadata:
   author: bradben
   ms.author: brbenefield
   ms.topic: interactive-tutorial
-  ms.prod: learning-quantum
+  ms.devlang: qsharp
 title: Use the Q# libraries
 summary: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm by using the standard library, and write documentation for your own code.
 abstract: |

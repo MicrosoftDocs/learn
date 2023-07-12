@@ -1,3 +1,4 @@
+
 When you have a clear view of the different stages you'll deploy, you need to think about when you want to deploy to these stages.
 
 As we mentioned in the introduction, Continuous Delivery is about deploying multiple times a day and can deploy on-demand.

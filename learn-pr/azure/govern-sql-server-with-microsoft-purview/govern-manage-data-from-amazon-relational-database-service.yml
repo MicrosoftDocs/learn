@@ -2,15 +2,15 @@
 uid: learn-pr.azure.govern-sql-server-with-microsoft-purview.govern-manage-data-from-amazon-relational-database-service
 title: Govern and manage data from the Amazon Relational Database Service by using Microsoft Purview
 metadata:
-  title: Govern and manage data from the Amazon Relational Database Service by using Microsoft Purview
-  description: Govern and manage data from the Amazon Relational Database Service by using Microsoft Purview.
-  ms.date: 4/19/2022
+  title: Govern and manage data from the Amazon Relational Database Service using Microsoft Purview
+  description: Govern and manage data from the Amazon Relational Database Service using Microsoft Purview.
+  ms.date: 4/25/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/govern-manage-data-from-amazon-relational-database-service.md)]

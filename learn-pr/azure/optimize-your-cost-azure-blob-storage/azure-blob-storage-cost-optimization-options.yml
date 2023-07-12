@@ -5,8 +5,8 @@ metadata:
   title: Identify Azure Blob Storage cost optimization options
   description: Identify Azure Blob Storage cost optimization options.
   ms.date: 02/23/2023
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

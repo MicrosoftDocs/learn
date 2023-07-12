@@ -4,13 +4,13 @@ title: Explore Azure Traffic Manager
 metadata:
   title: Explore Azure Traffic Manager
   description: "Explore Azure Traffic Manager"
-  ms.date: 09/28/2022
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: load-balancer
+  ms.custom:
+  - references_regions
 durationInMinutes: 14
 content: |
   [!include[](includes/5-explore-azure-traffic-manager.md)]

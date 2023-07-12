@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.view-search-results
+title: View the search results and statistics
+metadata:
+  title: View the search results and statistics
+  description: "View the Content search results and statistics."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 5
+content: |
+  [!include[](includes/4-view-search-results.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Items that are available for preview must meet which of the following criteria?"
+    choices:
+    - content: "A maximum of 1,000 randomly selected items are available to preview"
+      isCorrect: true
+      explanation: "Correct. A maximum of 1,000 randomly selected items are available to preview. A maximum of 100 items from a single content location (a mailbox or a site) can be previewed."
+    - content: "For mailbox items, calendar items and contacts can be previewed"
+      isCorrect: false
+      explanation: "Incorrect. For mailbox items, only email messages are available to preview. Items like tasks, calendar items, and contacts can't be previewed."
+    - content: "For site items, folders, lists, and list attachments can be previewed"
+      isCorrect: false
+      explanation: "Incorrect. For site items, only documents are available to preview. Items like folders, lists, or list attachments can't be previewed."

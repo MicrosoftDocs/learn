@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-databricks
 title: Explore Azure Databricks
 summary: Azure Databricks is a cloud service that provides a scalable platform for data analytics using Apache Spark.
 abstract: |

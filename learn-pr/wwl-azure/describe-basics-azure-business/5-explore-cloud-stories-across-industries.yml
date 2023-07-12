@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-basics-azure-business.explore-cloud-stories-across-industries
+title: Explore cloud stories across industries
+metadata:
+  title: Explore cloud stories across industries
+  description: "Explore cloud stories across industries"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-explore-cloud-stories-across-industries.md)]
+interactive: bash

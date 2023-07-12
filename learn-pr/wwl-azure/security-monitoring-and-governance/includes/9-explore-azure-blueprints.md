@@ -16,9 +16,9 @@ Azure Blueprints provides a declarative way to orchestrate deployment for variou
 
 To implement Azure Blueprints, complete the following high-level steps:
 
-1. Create a blueprint.
-1. Assign the blueprint.
-1. Track the blueprint assignments.
+1.  Create a blueprint.
+2.  Assign the blueprint.
+3.  Track the blueprint assignments.
 
 With Azure Blueprints, the relationship between the blueprint definition (what *should be* deployed) and the blueprint assignment (what *is* deployed) is preserved.
 

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Integrate with identity management systems
 summary: This module describes the integration with GitHub and single sign-on (SSO) for authentication, service principals, and managed service identities.
 abstract: |

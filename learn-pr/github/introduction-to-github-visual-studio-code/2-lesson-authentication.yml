@@ -5,8 +5,8 @@ metadata:
   title: Lesson - Sign in to GitHub
   description: Authenticate in Visual Studio Code with your GitHub account.
   ms.date: 11/01/2020
-  author: burkeholland
-  ms.author: saajani
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

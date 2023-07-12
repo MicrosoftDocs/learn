@@ -1,4 +1,5 @@
 
+
 From the point of view of the location of SAP landscape, there are two basic high-level infrastructure designs to consider:
 
 - **Cross-premises** \- a single or multiple Azure IaaS–hosted SAP workloads with the requirement of being fully integrated into the existing on-premises SAP environment

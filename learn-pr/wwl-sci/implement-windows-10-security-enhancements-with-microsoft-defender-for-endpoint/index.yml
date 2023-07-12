@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365-security
+  ms.subservice: mde
 title: Implement Windows security enhancements with Microsoft Defender for Endpoint
 summary: Microsoft Defender for Endpoint gives you various tools to eliminate risks by reducing the surface area for attacks without blocking user productivity. Learn about Attack Surface Reduction (ASR) with Microsoft Defender for Endpoint.
 abstract: |

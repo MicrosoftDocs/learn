@@ -3,11 +3,11 @@ uid: learn.distribute-load-with-traffic-manager.1-introduction
 metadata:
   title: Introduction
   description: Introduction
-  ms.date: 04/15/2019
-  author: KumudD
-  ms.author: kumud
+  ms.date: 06/28/2023
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Introduction
 durationInMinutes: 2
 content: |

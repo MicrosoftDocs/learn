@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows-server
 title: Implement Windows Server Data Deduplication
 summary: Learn about the core functionality, benefits, use cases, and implementation of Data Deduplication in Windows Server 2019.
 abstract: |

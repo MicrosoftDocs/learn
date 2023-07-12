@@ -54,10 +54,10 @@ Next, you'll need to create and prepare a VHD image to use the Rule Editor on:
 3.  Go to **Program Files,** select **FSLogix,** select **Apps** and run the command seen below to create the target VHD:
     
     ```
-    frx moveto-vhd -filename path\office.vhdx -src
+    frx moveto-vhd -filename path\office.vhdx -src "C:\Program Files\Microsoft Office" -size-mbs 5000
     ```
     
-    The VHD you create with this command should contain the **C:\\Program Files\\Microsoft Office** folder.
+    The VHD you create with this command should contain the **C:\\Program Files\\Microsoft Office** folder.<br>
 
 ## Configure the Rule Editor
 

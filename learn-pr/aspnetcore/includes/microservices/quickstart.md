@@ -1,2 +1,2 @@
 > [!IMPORTANT]
-> The quickstart script creates Azure resources in the `centralus` region. This behavior can be customized by changing the `defaultLocation` variable at the top of *quickstart.sh* before you run the script.
+> The quickstart script creates Azure resources in the `eastus` region. You can change the region by changing the `defaultLocation` variable in *quickstart.sh* before you run the script.

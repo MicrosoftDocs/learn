@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Autonomous Intelligence
 summary: In this module, you'll learn about several AI technologies such as machine learning, deep learning and deep reinforcement learning that are components of Machine Teaching. In addition, you’ll learn Autonomous Intelligence strengths, when to best use these technologies and their limitations, and when Automated Intelligence methods can support them.
 abstract: | 

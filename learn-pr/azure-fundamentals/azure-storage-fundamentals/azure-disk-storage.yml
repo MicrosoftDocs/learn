@@ -4,11 +4,11 @@ title: Disk storage fundamentals
 metadata:
   title: Disk storage fundamentals
   description: "In this unit, you'll learn about Azure Disk Storage."
-  ms.date: 05/11/2021
+  ms.date: 06/20/2023
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 durationInMinutes: 4
 content: |

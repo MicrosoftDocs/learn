@@ -4,13 +4,11 @@ title: Configure Azure Application Gateway
 metadata:
   title: Configure Azure Application Gateway
   description: "Configure Azure Application Gateway"
-  ms.date: 04/04/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 25
 content: |
   [!include[](includes/3-configure-azure-application-gateway.md)]

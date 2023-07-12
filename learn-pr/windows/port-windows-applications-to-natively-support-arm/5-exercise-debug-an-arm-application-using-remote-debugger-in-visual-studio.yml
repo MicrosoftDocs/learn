@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio
+title: Exercise debug an Arm application build using remote debugger in Visual Studio
+metadata:
+  title: Exercise - Debug an Arm application build using remote debugger in Visual Studio
+  description: "Tutorial demonstrating the steps to debug an Arm64 build running on a Windows on Arm virtual machine using remote debugging tools."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 15
+content: |
+  [!include[](includes/5-exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio.md)]

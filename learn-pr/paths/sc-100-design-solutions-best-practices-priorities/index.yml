@@ -31,5 +31,6 @@ modules:
 - learn.wwl.design-solutions-align-cloud-adoption-framework-well-architected-framework
 - learn.wwl.design-solutions-microsoft-cybersecurity-cloud-security-benchmark
 - learn.wwl.design-resiliency-strategy-common-cyberthreats-like-ransomware
+- learn.wwl.case-study-design-solutions-security-best-practices-priorities
 trophy:
   uid: learn.wwl.sc-100-design-solutions-best-practices-priorities.trophy

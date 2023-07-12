@@ -52,7 +52,7 @@ quiz:
       isCorrect: false
       explanation: "Incorrect. Vision Capabilities is designed to look at pictures or even handwritten forms and interpret or convert to text what is seen in the picture."
   - content: |
-      A national cellular phone carrier operates an extensive wireless network all across North America. Every cellular tower and communications center produces significant volumes of log data, recordings of all the activity for that location. The logs include calls, SMS messaging, errors, warnings, etc. It is all logged in a very cryptic and abbreviated format.  
+      A national/regional cellular phone carrier operates an extensive wireless network all across North America. Every cellular tower and communications center produces significant volumes of log data, recordings of all the activity for that location. The logs include calls, SMS messaging, errors, warnings, etc. It is all logged in a very cryptic and abbreviated format.  
     
       Across the entire network, about 10 terabytes of log data are aggregated each day. The company is required by law to store this log data for three years. They want to find a way to extract some useful information from all this data, such as usage patterns, error and critical failure patterns, etc.  
     

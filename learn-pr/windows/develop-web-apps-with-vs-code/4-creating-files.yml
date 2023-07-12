@@ -4,9 +4,9 @@ uid: learn-windows.introducing-vs-code.4-creating-files
 metadata:
   title: Exercise - Create and auto-generate files in Visual Studio Code
   description: Learn how to create files in Visual Studio Code, and how to use Emmet automatically create basic code.
-  ms.date: 3/29/2019
-  author: markamos
-  ms.author: quradic
+  ms.date: 04/21/2023
+  author: kjo-msft
+  ms.author: karinjohnson
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   
