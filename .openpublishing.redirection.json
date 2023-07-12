@@ -23973,6 +23973,11 @@
       "source_path": "learn-pr/ai-business-school/implement-ai-organization/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/implement-ai-organization/4-ai-at-scale.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
