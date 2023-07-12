@@ -23408,6 +23408,11 @@
       "source_path": "learn-pr/ai-business-school/ai-strategy-in-financial-services/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-in-financial-services/2-ai-value-in-financial-services-insead.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
+      "redirect_document_id": false
     }
   ]
 }
