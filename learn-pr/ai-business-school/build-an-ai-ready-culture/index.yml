@@ -29,6 +29,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.build-an-ai-ready-culture.summary-and-resources
 badge: 
   uid: learn-wwl.build-an-ai-ready-culture.badge #add the uid for your achievement badge.
