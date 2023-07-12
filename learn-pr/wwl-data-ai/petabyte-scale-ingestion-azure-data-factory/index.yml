@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: data-factory 
 title: Petabyte-scale ingestion with Azure Data Factory or Azure Synapse Pipeline
 summary: In this module, you will learn the various methods that can be used to ingest data between various data stores using Azure Data Factory.
 abstract: |

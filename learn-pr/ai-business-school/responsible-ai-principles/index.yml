@@ -7,7 +7,6 @@ metadata:
   author: Adriamen
   ms.author: japerena
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   #ms.learn-contact: barlan
 title: Identify guiding principles for responsible AI
 summary: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use — fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day. We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.

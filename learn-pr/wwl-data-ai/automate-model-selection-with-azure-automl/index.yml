@@ -3,11 +3,11 @@ uid: learn.data-ai.automate-model-selection-with-azure-automl
 metadata:
   title: Automate machine learning model selection with Azure Machine Learning
   description: "Automate machine learning model selection with Azure Machine Learning"
-  ms.date: 06/29/2021
+  ms.date: 04/26/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Automate machine learning model selection with Azure Machine Learning
 summary: Learn how to use automated machine learning in Azure Machine Learning to find the best model for your data.
 abstract: |

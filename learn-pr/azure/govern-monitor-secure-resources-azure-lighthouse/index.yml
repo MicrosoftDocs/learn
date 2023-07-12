@@ -7,7 +7,7 @@ metadata:
   author: iankensey
   ms.author: prukulka
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: lighthouse
 title: Use Azure Lighthouse to govern, monitor, and secure customer resources
 summary: Azure Lighthouse can help you monitor, secure, and govern your customer resources.
 abstract: | 

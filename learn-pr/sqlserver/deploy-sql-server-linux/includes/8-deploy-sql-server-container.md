@@ -2,7 +2,7 @@ If you prefer to use containers to virtualize database servers, you can install 
 
 You're a database administrator at the wholesale company Wide World Importers and want to benefit from SQL Server without having to change the server operating systems. You've decided to deploy SQL Server in a container and use Docker to manage it.
 
-Here, you'll learn about running SQL Server in containers. In this example, you'll use Docker but you can perform the same steps on containers that run in other hosts.
+In the following exercise, you learn about running SQL Server in containers. This example uses Docker but you can perform the same steps on containers that run in other hosts.
 
 ## Hardware and software requirements
 
@@ -15,7 +15,7 @@ To install SQL Server 2019 on a Docker container, the host server must meet the 
 ## Install Docker
 
 > [!NOTE]
-> These steps are for Red Hat Enterprise Linux, but the steps will be very similar for other Linux distributions.
+> These steps are for Red Hat Enterprise Linux, but the steps are very similar for other Linux distributions.
 
 To install Docker on Red Hat Enterprise Linux, complete these tasks:
 
@@ -45,7 +45,7 @@ Microsoft has created a Docker image that includes SQL Server 2019. You can use 
     sudo docker pull mcr.microsoft.com/mssql/server:2019-latest
     ```
 
-1. If you're asked for a password, type your password, and then press Enter.
+1. If you're asked for a password, type your password, and then press **Enter**.
 1. To run the SQL Server image and a container in Docker, run this command:
 
     ```bash

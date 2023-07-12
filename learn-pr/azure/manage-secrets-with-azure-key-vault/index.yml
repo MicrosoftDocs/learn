@@ -7,7 +7,7 @@ metadata:
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: key-vault
 title: Manage secrets in your server apps with Azure Key Vault
 summary: Your application requires service passwords, connection strings, and other secret configuration values to do its job. Storing and handling secret values is risky, and every usage introduces the possibility of leakage. Azure Key Vault, in combination with managed identities for Azure resources, enables your Azure web app to access secret configuration values easily and securely without needing to store any secrets in your source control or configuration.
 abstract:  | 

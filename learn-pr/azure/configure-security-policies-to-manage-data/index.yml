@@ -7,7 +7,6 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure security policies to manage data
 summary: Learn how to set up policies to classify, retain, and protect your cloud-based data.
 abstract: | 

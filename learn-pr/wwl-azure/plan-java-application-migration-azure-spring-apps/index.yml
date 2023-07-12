@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: spring-apps
 title: Plan a Java application migration to Azure Spring Apps
 summary: This module helps you to plan the migration of the PetClinic sample app to Azure. You'll see how services are deployed to Azure with Azure Spring Apps capabilities, including config server, logs, and distributed tracing.
 abstract: |

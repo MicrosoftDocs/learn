@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: expressroute
 title: Configure Azure ExpressRoute and Azure Virtual WAN
 summary: Learn how to configure Azure ExpressRoute and Virtual WAN to provide connection services.
 abstract: |

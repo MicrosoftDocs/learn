@@ -6,8 +6,8 @@ metadata:
   ms.date: 12/03/2021
   author: JKirsch1
   ms.author: chnoring
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-advocates
   ms.custom: team=nextgen
 title: Deploy a customer service bot
 summary: Learn how to start building a bot called **CustomerFriend** that helps users make hotel reservations. This module covers the basics of bot deployment and the main principles of responsible conversational AI. See how to create a helpful bot that a user can trust and enjoy speaking to.

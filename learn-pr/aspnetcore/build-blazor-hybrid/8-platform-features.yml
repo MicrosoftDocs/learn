@@ -7,8 +7,9 @@ metadata:
   ms.date: 07/22/2022
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/8-platform-features.md)]

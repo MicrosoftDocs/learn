@@ -7,7 +7,7 @@ metadata:
   author: tejaswikolli
   ms.author: tejaswikolli
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: container-registry
 title: Build and store container images with Azure Container Registry
 summary: Azure Container Registry is a managed Docker registry service based on the open-source Docker Registry 2.0. Container Registry is private, hosted in Azure, and allows you to build, store, and manage images for all types of container deployments. Learn how to build and store container images with Azure Container Registry.
 abstract: |

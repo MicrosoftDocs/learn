@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Configure Azure Kubernetes Service
 summary: Learn how to configure Azure Kubernetes Service including networking, storage, and scaling.
 abstract: |

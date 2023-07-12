@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Back up and restore databases
 summary: Plan and implement policy for recovering data if user errors occur or the technology fails. Explore various options for how and where to back up and restore databases.
 abstract: |

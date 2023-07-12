@@ -8,7 +8,7 @@ Immersive Reader helps readers build confidence, by breaking down content into m
 
 **For people who struggle with concentration**, Immersive Reader can be put into focus mode or line focus to take away distractions. Background, text color, and font spacing can also be changed to mitigate sensory overload, and increase attention-spans and comprehension.
 
-Further, Immersive Reader has text-to-speech capabilities built into the service. It can read one word, phrase, or an entire document, depending on your need.
+Further, Immersive Reader has text to speech capabilities built into the service. It can read one word, phrase, or an entire document, depending on your need.
 
 ## Writing
 

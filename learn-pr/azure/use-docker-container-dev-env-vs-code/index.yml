@@ -3,27 +3,27 @@ uid: learn.use-docker-container-dev-env-vs-code
 metadata:
   title: Use a Docker container as a development environment with Visual Studio Code
   description: Create and configure a full-featured container-based development environment with the Visual Studio Code Dev Containers extension. Open any folder or repository in a container and take advantage of the full feature set of Visual Studio Code, like IntelliSense (completions), code navigation, and debugging.
-  ms.date: 04/07/2022
+  ms.date: 04/28/2023
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
-  ms.prod: learning-vs-code
+  ms.prod: vs-code
   ms.custom:
   - team=cloud_advocates, devdivchpfy22
   ms.contributors:
   - buhollan-09142021
 title: Use a Docker container as a development environment with Visual Studio Code
-summary: Get, create, and configure a container-based development environment with the Visual Studio Code Dev Containers extension
+summary: Get, create, and configure a container-based development environment with the Visual Studio Code Dev Containers extension.
 abstract: |
   By the end of this module, you'll be able to:
-  - Install the Visual Studio Code Dev Containers extension
-  - Load and connect to a project in a Docker container
-  - Access ports in the container from your local machine
-  - Customize settings while working with your container
-  - Add software to the container environment
+  - Install the Visual Studio Code Dev Containers extension.
+  - Load and connect to a project in a Docker container.
+  - Access ports in the container from your local machine.
+  - Customize settings while working with your container.
+  - Add software to the container environment.
 prerequisites: |
-  - Basic knowledge of software development, such as what it means to run code and install a new language.
-  - Docker and basic Docker knowledge (familiarity with the concept of images, containers, and registries).
+  - Basic knowledge of software development, such as what it means to run code and install a new language
+  - Docker and basic Docker knowledge (familiarity with the concept of images, containers, and registries)
   - [Git](https://git-scm.com/downloads) and basic knowledge of GitHub, such as what a repository is
 iconUrl: /training/achievements/use-docker-container-dev-env-vs-code.svg
 levels:

@@ -5,10 +5,10 @@ metadata:
   title: Prepare for cloud security by using the Microsoft Cloud Adoption Framework for Azure
   description: Security is a core consideration for all customers, in every environment. But moving to the cloud is a significant change that requires a shift in your security mindset and approach. The Cloud Adoption Framework provides guidance for this security journey by providing clarity for the processes, best practices, models, and experiences.
   ms.date: 04/26/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cloud-adoption-framework
 title: Prepare for cloud security by using the Microsoft Cloud Adoption Framework for Azure 
 summary: |
   Organizations moving to the cloud often find they need to modernize security practices and tooling to keep up with continuous changes in cloud platforms, business requirements, and security threats.  

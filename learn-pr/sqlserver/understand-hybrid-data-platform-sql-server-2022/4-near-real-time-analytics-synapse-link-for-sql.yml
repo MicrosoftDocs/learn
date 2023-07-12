@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.understand-hybrid-data-platform-sql-server-2022.near-real-time-analytics-synapse-link-for-sql
+title: Near real-time analytics with Azure Synapse Link for SQL
+metadata:
+  title: Near real-time analytics with Azure Synapse Link for SQL
+  description: "Near real-time analytics with Azure Synapse Link for SQL"
+  ms.date: 04/19/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 16
+content: |
+  [!include[](includes/4-near-real-time-analytics-synapse-link-for-sql.md)]

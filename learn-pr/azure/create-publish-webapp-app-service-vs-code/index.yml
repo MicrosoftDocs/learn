@@ -6,9 +6,11 @@ metadata:
   ms.date: 09/01/2022
   author: msangapu-msft
   ms.author: msangapu
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ms.custom: vscode-azure-extension-update-completed
+  ms.service: app-service
+  ms.subservice: web-apps
+  manager: mijacobs
 title: Create and publish a web application with Azure App Service and Visual Studio Code
 summary: Create a web application with Visual Studio Code and publish it to Azure App Service.
 abstract: |

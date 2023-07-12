@@ -5,10 +5,9 @@ metadata:
   title: Configure Dependabot security updates on your GitHub repo
   description: Learn how to configure Dependabot security updates on your GitHub repo.
   ms.date: 1/5/2022
-  author: sterling463
-  ms.author: csterling
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure Dependabot security updates on your GitHub repo
 summary: Manage your dependencies with GitHub Dependabot
 abstract: | 

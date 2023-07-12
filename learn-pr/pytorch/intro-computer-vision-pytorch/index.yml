@@ -7,8 +7,9 @@ metadata:
   author: shwars
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.service: machine-learning
+  ms.service: cognitive-services
   ms.custom: team=nextgen
+  ms.subservice: computer-vision
 title: Introduction to Computer Vision with PyTorch 
 summary: We'll learn about different computer vision tasks and focus on image classification, learning how to use neural networks to classify handwritten digits, as well as some real-world images, such as photographs of cats and dogs. We'll be using one of the most popular deep learning frameworks, PyTorch!
 abstract: | 

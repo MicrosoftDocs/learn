@@ -1,0 +1,65 @@
+### YamlMime:Module
+uid: learn.wwl.configure-secure-access-pipeline-resources
+metadata:
+  title: Configure secure access to pipeline resources
+  description: "Configure secure access to pipeline resources."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure secure access to pipeline resources
+summary: "This module is designed to help learners understand the importance of pipeline security and how to secure pipeline resources using Azure DevOps. The module covers fundamental concepts and best practices for secure agent pools, secret variables, files and storage, service connections, environments, and repositories."
+abstract: |
+  In this module, you practice how to:
+    - Identify and mitigate common security threats.
+    - Configure pipeline access to specific agent pools.
+    - Manage secret variables and variable groups.
+    - Secure files and storage.
+    - Configure service connections.
+    - Manage environments.
+    - Secure repositories.
+prerequisites: |
+  - Basic knowledge of Azure DevOps to manage agents and service connections.
+  - Basic knowledge of security concepts like secret variables and secure files.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+units:
+- learn.wwl.configure-secure-access-pipeline-resources.introduction
+- learn.wwl.configure-secure-access-pipeline-resources.configure-agent-pools
+- learn.wwl.configure-secure-access-pipeline-resources.use-secret-variables-variable-groups
+- learn.wwl.configure-secure-access-pipeline-resources.understand-secure-files
+- learn.wwl.configure-secure-access-pipeline-resources.configure-service-connections
+- learn.wwl.configure-secure-access-pipeline-resources.manage-environments
+- learn.wwl.configure-secure-access-pipeline-resources.secure-repositories
+- learn.wwl.configure-secure-access-pipeline-resources.lab-configure-agents-and-agent-pools-for-secure-pipelines
+- learn.wwl.configure-secure-access-pipeline-resources.knowledge-check
+- learn.wwl.configure-secure-access-pipeline-resources.summary
+badge:
+  uid: learn.wwl.configure-secure-access-pipeline-resources.badge

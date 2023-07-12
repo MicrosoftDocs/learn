@@ -1,5 +1,6 @@
 
 
+
 At its heart, Visual Studio Code is a code editor, with a user interface and layout that's similar to many other code editors. On the left side of the interface is a side bar that you'll use to access the files and folders in your code project. On the right side is an editor area that displays the contents of the application files.
 
 ## Examine the main areas of the user interface

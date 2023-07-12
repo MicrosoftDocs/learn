@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-project-repository-structure-support-secure-pipelines.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary."
+  ms.date: 1/25/2023
+  author: lauraAlvEl
+  ms.author: lauraalv
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-summary.md)]

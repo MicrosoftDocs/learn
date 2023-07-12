@@ -7,6 +7,10 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.service: machine-learning 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 title: Deploy deep learning workloads to production with Azure Machine Learning
 summary: Deploying large-scale models for real-time inferencing is challenging because of the model's size. Learn what you can do and which frameworks you can use to optimize your model's performance during model scoring.

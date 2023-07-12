@@ -1,4 +1,5 @@
 
+
 Expected network performance (Mbps) and the maximum number of network interfaces supported by each VM SKU are documented in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 
 Throughput is unaffected by the following factors:

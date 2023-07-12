@@ -7,6 +7,8 @@ metadata:
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 title: Exercise - Migrate the services to Azure Functions
 durationInMinutes: 9

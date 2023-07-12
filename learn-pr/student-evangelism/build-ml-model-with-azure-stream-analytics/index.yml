@@ -7,8 +7,8 @@ metadata:
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: azure-monitor
 title: Track wild polar bears with AI
 summary: Detect and track polar bears through photos using AI, and then use Power BI to show on a map where an array of virtual cameras spots polar bears.
 abstract:  |

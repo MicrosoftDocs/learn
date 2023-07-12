@@ -6,8 +6,8 @@ metadata:
   title: Customer narrative
   description: Tailwind Traders is preparing its cloud environment. Learn more about the company's operating model to help it get started and find the best Azure landing zone.
   ms.date: 05/12/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

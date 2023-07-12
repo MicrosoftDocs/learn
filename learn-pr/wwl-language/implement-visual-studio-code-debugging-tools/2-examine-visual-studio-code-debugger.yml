@@ -4,11 +4,10 @@ title: Examine the Visual Studio Code debugger interface
 metadata:
   title: Examine the Visual Studio Code debugger interface
   description: "Examine the Visual Studio Code debugger interface"
-  ms.date: 03/24/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/2-examine-visual-studio-code-debugger.md)]

@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.guided-project-azure-files-azure-blobs.exercise5
+title: Exercise - Provide storage for a new company app
+metadata:
+  title: Exercise - Provide storage for a new company app
+  description: "Exercise - Provide storage for a new company app"
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: cynthist
+  ms.topic: interactive-tutorial
+durationInMinutes: 15
+content: |
+  [!include[](includes/6-exercise-app-storage.md)]

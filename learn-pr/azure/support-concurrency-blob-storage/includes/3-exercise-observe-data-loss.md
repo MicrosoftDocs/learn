@@ -16,7 +16,7 @@ To experiment with Blob storage concurrency code, we'll start by creating a Blob
 
     ```azurecli
     storage=mediastorage$RANDOM
-    az storage account create --name $storage --kind StorageV2 -g <rgn>[sandbox resource group name]</rgn>
+    az storage account create --name $storage --kind StorageV2 -g <rgn>[sandbox resource group name]</rgn> --allow-blob-public-access false
     ```
 
 1. Next enter `az storage account show-connection-string` to get the connection string and store it into an environment variable named `STORAGE_CONNECTION_STRING`. 

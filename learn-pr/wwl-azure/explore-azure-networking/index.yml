@@ -3,7 +3,7 @@ uid: learn.wwl.explore-azure-networking
 metadata:
   title: Explore Azure for SAP networking
   description: "This module explores the use of Azure network components to design scalable, performant, and resilient SAP deployments in Azure. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 04/21/2023
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

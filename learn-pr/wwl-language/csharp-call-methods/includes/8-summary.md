@@ -1,4 +1,5 @@
 
+
 Your goal was to call methods defined in the .NET Class Library to perform tasks like generating a random number or performing a mathematical operation.
 
 Using C# syntax, you called different kinds of methods in the .NET Class Library: methods that returned values, methods that accepted multiple input parameters, and methods that maintained state. You used Visual Studio Code IntelliSense and docs.microsoft.com to research methods, and to improve your understanding of what a method does and how it works.

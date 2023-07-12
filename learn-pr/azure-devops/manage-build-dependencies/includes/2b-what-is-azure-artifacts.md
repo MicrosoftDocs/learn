@@ -52,7 +52,7 @@ Feeds in Azure Artifacts have three different views by default. These views are 
 * Prerelease. The @prerelease view contains all packages that have a label in their version number.
 * Local. The @local view contains all release and prerelease packages and the packages downloaded from upstream sources.
 
-You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt-in to prereleases of a certain quality level.
+You can use views to help consumers of a package feed to filter between released and unreleased versions of packages. Essentially, views allow a consumer to make a conscious decision to choose from released packages, or opt in to prereleases of a certain quality level.
 
 ## Package security in Azure Artifacts
 
@@ -60,7 +60,7 @@ Ensuring the security of your packages is as important as ensuring the security 
 
 ### Feed permissions
 
-Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Contributor and your project team is a Reader.
+Feeds have four levels of access: Owners, Contributors, Collaborators, and Readers. Each level of access has a certain set of permissions. For example, Owners can add any type of identity-individuals, teams, and groups-to any access level. By default, the Project Collection Build Service is a Collaborator and your project team is a Reader.
 
 ### Configure the pipeline to access security and license ratings
 

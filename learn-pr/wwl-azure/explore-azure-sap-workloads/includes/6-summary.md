@@ -1,5 +1,6 @@
 
 
+
 You discovered the SAP and Microsoft partnership, explored your options with SAP on Azure, and evaluated Microsoft components and their integration with SAP apps and data.
 
 ## Learn more

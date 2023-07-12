@@ -8,7 +8,7 @@ After completing this module, you'll be able to:
 
  -  Describe how to scale session hosts using Azure Automation.
  -  Create or update an Azure Automation account.
- -  Create an Azure Automation Run As account.
+ -  Create a managed identity.
  -  Create the Azure Logic App and execution schedule.
 
 ## Prerequisites

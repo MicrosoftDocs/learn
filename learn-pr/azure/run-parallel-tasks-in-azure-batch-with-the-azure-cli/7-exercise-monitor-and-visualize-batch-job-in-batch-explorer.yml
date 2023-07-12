@@ -7,6 +7,8 @@ metadata:
   author: lauradolan
   ms.author: ladolan
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Monitor and visualize your batch job in Batch Explorer
 durationInMinutes: 5

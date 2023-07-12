@@ -9,6 +9,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: synapse-analytics
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Work with Data Warehouses using Azure Synapse Analytics
 prerequisites: |
   Before starting this learning path, you should be familiar with Azure Synapse Analytics. Consider completing the [Introduction to Azure Synapse Analytics](/training/modules/introduction-azure-synapse-analytics/) module first.
