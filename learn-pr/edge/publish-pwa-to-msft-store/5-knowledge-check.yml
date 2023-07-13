@@ -1,0 +1,29 @@
+### YamlMime:ModuleUnit
+uid: learn.edge.publish-pwa-to-msft-store.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Test and publish Progressive Web Apps (PWAs) for Microsoft Store" module.
+  ms.date: 07/13/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+durationInMinutes : 6
+quiz:
+  title: Check your knowledge
+  questions: 
+  - content: "What is the main purpose of PWABuilder?"
+    choices:
+    - content: "To optimize images for web use"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder isn't focused on optimizing images but rather on creating and deploying Progressive Web Apps (PWAs)."
+    - content: "To create native mobile apps"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder doesn't create native mobile apps but helps in creating PWAs, which are web applications that can be installed and run on various platforms."
+    - content: "To simplify the process of creating and deploying PWAs"
+      isCorrect: true
+      explanation: "Correct. PWABuilder is a tool that simplifies the process of creating and deploying PWAs, making it easier for developers to build web applications with features similar to native mobile apps."
+    - content: "To optimize images for web use"
+      isCorrect: false
+      explanation: "Incorrect. PWABuilder isn't focused on optimizing."
