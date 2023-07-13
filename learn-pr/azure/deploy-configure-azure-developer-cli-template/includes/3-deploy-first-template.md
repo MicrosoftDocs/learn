@@ -6,7 +6,7 @@ When getting started with `azd`, it's often easiest to find an existing template
 azd template list
 ```
 
-For this example, you'll use a pre-existing template built around a Node.js and MongoDB stack. Even if you have never worked with these technologies, you can still complete the steps ahead, since `azd` handles most of the work for you. This template will create a set of resources in Azure that are similar to those outlined in the sample scenario at the beginning of the module. 
+For this example, you'll use the existing [todo-nodejs-mongo](https://github.com/Azure-Samples/todo-nodejs-mongo) template built around the Node.js and MongoDB stack. Even if you have never worked with these technologies, you can still complete the steps ahead, since `azd` handles most of the work for you. This template will create a set of resources in Azure that are similar to those outlined in the sample scenario at the beginning of the module.
 
 > [!NOTE]
 > The same `azd` steps described in this module also apply to templates built around other languages or technologies, such as C# or Python.
@@ -39,7 +39,7 @@ The most common starter workflow for `azd` only requires a few commands. You'll 
 
 The `azd up` command may take several minutes to run. Each template provisions different Azure resources and configurations, which means different templates require varying amounts of time to complete. You should see updates printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment process in Azure, which you can visit to view additional deployment information.
 
-The deployed application should match the following screenshot:
+The deployed application should look similar to the following screenshot:
 
 :::image type="content" source="../media/deployed-app.png" alt-text="A screenshot showing the deployed web application.":::
 

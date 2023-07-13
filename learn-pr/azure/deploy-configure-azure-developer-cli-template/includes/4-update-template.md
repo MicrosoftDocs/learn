@@ -37,7 +37,7 @@ Your team is planning to add the ability for users to upload files with their ti
 
 1. In the `infra` folder at the root of your template, open the `main.bicep` file.
 
-1. The template already contains a reusable Bicep module for creating storage accounts, so you can use it to add your own. Paste the following code snippet at the bottom of the `main.bicep` file above where the output variables are defined:
+1. The template already contains a reusable Bicep module for creating storage accounts, so you can use it to add your own. Paste the following code snippet at the bottom of the `main.bicep` file at line 180 above where the output variables are defined:
 
     ```bicep
     module storage './core/storage/storage-account.bicep' = {
