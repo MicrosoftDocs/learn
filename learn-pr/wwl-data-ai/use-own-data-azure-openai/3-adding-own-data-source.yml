@@ -4,12 +4,12 @@ title: Add your own data source
 metadata:
   title: Add your own data source
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
-  ms.date: 6/26/2023
+  ms.date: 7/11/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.subservice: openai
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/3-adding-own-data-source.md)]

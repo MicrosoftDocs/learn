@@ -5,7 +5,7 @@ title: |
 metadata:
   title: |
     Exercise: Use your own data with Azure OpenAI Service
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "Complete a hands-on exercise to learn how to use your own data with Azure OpenAI services."
   ms.date: 6/26/2023
   author: ivorb
   ms.author: berryivor

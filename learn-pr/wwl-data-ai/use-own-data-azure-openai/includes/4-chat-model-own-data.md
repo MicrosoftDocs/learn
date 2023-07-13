@@ -1,78 +1,48 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Azure OpenAI on your own data can be used in Azure AI Studio with the **Chat** playground, or by using the API.
 
-    Goal: briefly summarize the key skill this unit will teach
+## Token considerations and recommended settings
 
-    Heading: none
+Since Azure OpenAI on your data includes search results on your index in the prompt, it's important to understand how that impacts your token allotment. Each call to the model includes tokens for the system message, the user prompt, conversation history, retrieved search documents, internal prompts, and the model's response.
 
-    Example: "Organizations often have multiple storage accounts to let them implement different sets of requirements."
+The system message, for example, is a useful reference for instructions for the model and is included with every call. While there is no token limit for the system message, when using your own data the system message gets truncated if it exceeds 200 tokens. The response from the model is also limited when using your own data is 1500 tokens.
 
-    [Learning-unit introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-learning-unit-introduction-format)
--->
-TODO: add your topic sentences(s)
+Due to these token limitations, it's recommended that you limit both the question length and the conversation history length in your call. [Prompt engineering techniques](/azure/cognitive-services/openai/concepts/advanced-prompt-engineering?azure-portal=true) such as breaking down the task and chain of though prompting can help the model respond more effectively.
 
-<!-- 2. Scenario sub-task --------------------------------------------------------------------------------
+## Using the API
 
-    Goal: Describe the part of the scenario that will be solved by the content in this unit
+Using the API with your own data, you need to specify the data source where your data is stored. This consists of the `endpoint`, `key`, and `indexName` for your Cognitive Search resource.
 
-    Heading: none, combine this with the topic sentence into a single paragraph
+Your request body will be similar to the following JSON.
 
-    Example: "In the shoe-company scenario, we will use a Twitter trigger to launch our app when tweets containing our product name are available."
--->
-TODO: add your scenario sub-task
+```json
+{
+    "dataSources": [
+        {
+            "type": "AzureCognitiveSearch",
+            "parameters": {
+                "endpoint": "<your_search_endpoint>",
+                "key": "<your_search_endpoint>",
+                "indexName": "<your_search_index>"
+            }
+        }
+    ],
+    "messages":[
+        {
+            "role": "system", 
+            "content": "You are a helpful assistant assisting users with travel recommendations."
+        },
+        {
+            "role": "user", 
+            "content": "I want to go to New York. Where should I stay?"
+        }
+    ]
+}
+```
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------
+The call when using your own data needs to be sent to a different endpoint than is used when calling a base model, which includes `extensions`. Your call will be sent to a URL similar to the following.
 
-    Goal: State concisely what's covered in this unit
+```http
+<your_azure_openai_resource>/openai/deployments/<deployment_name>/extensions/chat/completions?api-version=2023-06-01-preview
+```
 
-    Heading: none, combine this with the topic sentence into a single paragraph
-
-    Example: "Here, you will learn the policy factors that are controlled by a storage account so you can decide how many accounts you need."
--->
-TODO: write your prose table-of-contents
-
-<!-- 4. Visual element (highly recommended) ----------------------------------------------------------------
-
-    Goal: Visual element, like an image, table, list, code sample, or blockquote. Ideally, you'll provide an image that illustrates the customer problem the unit will solve; it can use the scenario to do this or stay generic (i.e. not address the scenario).
-
-    Heading: none
--->
-TODO: add a visual element
-
-<!-- 5. Chunked content-------------------------------------------------------------------------------------
-
-    Goal: Provide all the information the learner needs to perform this sub-task.
-
-    Structure: Break the content into 'chunks' where each chunk has three things:
-        1. An H2 or H3 heading describing the goal of the chunk
-        2. 1-3 paragraphs of text
-        3. Visual like an image, table, list, code sample, or blockquote.
-
-    [Learning-unit structural guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-structure-learning-content?branch=main)
--->
-
-<!-- Pattern for simple chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list, code sample, blockquote)
-Paragraph (optional)
-Paragraph (optional)
-
-<!-- Pattern for complex chunks (repeat as needed) -->
-## H2 heading
-Strong lead sentence; remainder of paragraph.
-Visual (image, table, list)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-### H3 heading
-Strong lead sentence; remainder of paragraph.
-Paragraph (optional)
-Visual (image, table, list)
-Paragraph (optional)
-
-<!-- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -->
-
-<!-- Do not add a unit summary or references/links -->
+The request will also need to include the `Content-Type` and `api-key`.
