@@ -39,3 +39,4 @@ units:
 - learn.wwl.explore-individual-enrollment-tasks.summary
 badge:
   uid: learn.wwl.explore-individual-enrollment-tasks.badge
+hidden: true
