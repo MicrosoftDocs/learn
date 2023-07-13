@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.edge.integrate-with-pwabuilder.prepare-pwa-integration
-title: Prepare your project for PWA integration
+title: Prepare project for PWA integration
 metadata:
-  title: Prepare your project for PWA integration
+  title: Prepare project for PWA integration
   description: This content is part of the "Integrate your project with PWABuilder" module.
   ms.date: 07/11/2023
   author: beth-panx

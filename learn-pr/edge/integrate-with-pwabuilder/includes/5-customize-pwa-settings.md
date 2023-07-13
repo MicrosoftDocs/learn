@@ -54,23 +54,24 @@ The app manifest provides metadata about the web application. By updating your a
 
 1. Locate your app manifest file (manifest.json) in your project directory.
 1. Open the file in a code editor or text editor of your choice.
-1. To update your PWA's theme colors, locate the properties "theme_color" and "background_color" in the JSON file. Replace the default color values with the hexadecimal color values that you prefer. For example:
 
-  ```json
-    {"theme_color": "#123456","background_color": "#abcdef"}
-  ```
+   - **To update your PWA's theme colors**, locate the properties "theme_color" and "background_color" in the JSON file. Replace the default color values with the hexadecimal color values that you prefer. For example:
 
-1. To change the display options of your PWA, locate the "display" property in the JSON file. Update its value to one of the following options: "fullscreen", "standalone", "minimal-ui", or "browser". For example:
+      ```json
+      {"theme_color": "#123456","background_color": "#abcdef"}
+      ```
 
-  ```json
-    {"display": "standalone"}
-  ```
+   - **To change the display options of your PWA**, locate the "display" property in the JSON file. Update its value to one of the following options: "fullscreen", "standalone", "minimal-ui", or "browser". For example:
 
-1. To replace the default icons with your custom icons, locate the "icons" property in the JSON file. It should contain an array of icon objects, each with "src," "sizes," and "type" properties. Replace the "src" value with the relative path to your custom icon file. Additionally, update the "sizes" and "type" values to match the dimensions and file format of your new icon. Repeat this process for each icon object in the array. For example:
+      ```json
+      {"display": "standalone"}
+      ```
 
-```json
-{"icons": [{"src": "/path/to/your/icon-48x48.png","sizes": "48x48","type": "image/png"},{"src": "/path/to/your/icon-192x192.png","sizes": "192x192","type": "image/png"}]}
-```
+   - **To replace the default icons with your custom icons**, locate the "icons" property in the JSON file. It should contain an array of icon objects, each with "src," "sizes," and "type" properties. Replace the "src" value with the relative path to your custom icon file. Additionally, update the "sizes" and "type" values to match the dimensions and file format of your new icon. Repeat this process for each icon object in the array. For example:
+
+      ```json
+      {"icons": [{"src": "/path/to/your/icon-48x48.png","sizes": "48x48","type": "image/png"},{"src": "/path/to/your/icon-192x192.png","sizes": "192x192","type": "image/png"}]}
+      ```
 
 1. Save the changes to your app manifest file.
 
@@ -93,4 +94,4 @@ To implement background sync with PWABuilder, follow these steps:
 1. **Register a sync event**: In your app's JavaScript file, register a sync event with a unique tag by calling the SyncManager.register() method. This event is triggered when the device is back online.
 1. **Update the service worker**: Modify the generated service worker file from PWABuilder to listen for 'sync' events. Inside the sync event listener, perform the necessary actions, such as sending data to the server or fetching updates.
 
-To learn more about the manifest file, refer to [PWABuilder - Customizing Your Web App Manifest](https://docs.pwabuilder.com/#/builder/manifest) for the full breakdown.
+To learn more about the manifest file, refer to [PWABuilder - Customizing Your Web App Manifest](https://docs.pwabuilder.com/#/builder/manifest).

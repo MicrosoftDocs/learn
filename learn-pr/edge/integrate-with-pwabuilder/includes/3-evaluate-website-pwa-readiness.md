@@ -14,8 +14,6 @@ You can use your own website or use the example case provided in step 2 below.
 
 ## Validate your changes
 
-Make sure to check the warnings and errors. They must all be addressed before packaging the web app for app stores.
-
 After you generate the readiness report, your action items should look something like this:
 
 :::image type="content" source="../media/number-of-action-items.png" alt-text="Screenshot of PWABuilder's report card page that shows how many actions items were identified in the readiness report.":::
@@ -23,3 +21,5 @@ After you generate the readiness report, your action items should look something
 Action items should look like this in an open state, preferably without warnings:
 
 :::image type="content" source="../media/list-of-action-items.png" alt-text="Screenshot of PWABuilder's report card page that shows a list of the action items identified in the readiness report.":::
+
+Make sure to check the warnings and errors. They must all be addressed before packaging the web app for app stores.
