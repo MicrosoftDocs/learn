@@ -9,6 +9,6 @@ metadata:
   ms.author: xupa
   ms.topic: module-standard-task-based
   ms.prod: microsoft-edge
-durationInMinutes: 3
+durationInMinutes: 8
 content: |
   [!include[](includes/6-generate-app-manifest-service-worker.md)]
