@@ -2,4 +2,4 @@ In this module, you learned how Azure OpenAI on your data allows developers to u
 
 Additional Reading:
 - [Azure OpenAI on your data](/azure/cognitive-services/openai/concepts/use-your-data?azure-portal=true)
-- [Azure Cognitive Search](/services/search/?azure-portal=true)
+- [Azure Cognitive Search](/azure/search/?azure-portal=true)
