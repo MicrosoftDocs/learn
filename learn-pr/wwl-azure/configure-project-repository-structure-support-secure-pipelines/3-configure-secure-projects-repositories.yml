@@ -9,6 +9,6 @@ metadata:
   ms.author: lauraalv
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 16
+durationInMinutes: 13
 content: |
   [!include[](includes/3-configure-secure-projects-repositories.md)]

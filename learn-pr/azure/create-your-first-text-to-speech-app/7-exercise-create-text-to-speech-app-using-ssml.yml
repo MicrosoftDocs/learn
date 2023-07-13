@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-your-first-text-to-speech-app.exercise-create-text-to-speech-app-using-ssml
-title: Exercise - Create a text to speech application using an SSML file
+title: Exercise - Create a text-to-speech application using an SSML file
 metadata:
-  title: Exercise - Create a text to speech application using an SSML file
-  description: In this exercise, you'll create a text to speech application using an SSML file.
+  title: Exercise - Create a text-to-speech application using an SSML file
+  description: In this exercise, you'll create a text-to-speech application using an SSML file.
   ms.date: 09/15/2022
   author: rmcmurray
   ms.author: robmcm

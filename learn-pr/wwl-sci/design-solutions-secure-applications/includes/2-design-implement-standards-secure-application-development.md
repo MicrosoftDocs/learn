@@ -51,7 +51,7 @@ You can use one or both of these approaches, depending on what works better for 
 
 When your team gets more comfortable with the process, they can apply more advanced techniques from Microsoft [security development lifecycle](https://www.microsoft.com/securityengineering/sdl/threatmodeling). And they can integrate threat modeling tools like [Microsoft threat modeling tool](https://learn.microsoft.com/azure/security/develop/threat-modeling-tool) to get deeper insights and help automate the process.
 
-A subsequent unit discusses [threat modeling](/4-evaluate-application-threats-with-threat-modeling.yml) in greater detail.
+A subsequent unit discusses [threat modeling](../4-evaluate-application-threats-threat-modeling.yml) in greater detail.
 <!--
 [](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls#ide-security-plug-ins-and-pre-commit-hooks)
 -->

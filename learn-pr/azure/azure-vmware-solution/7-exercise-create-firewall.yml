@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.azure-vmware-solution.exercise-create-firewall
 title: Exercise - create and configure Azure Firewall
 metadata:
@@ -8,6 +8,8 @@ metadata:
   author: Mahesh-MSFT
   ms.author: maksh 
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: azure-vmware-solution
 durationInMinutes: 15
 content: |

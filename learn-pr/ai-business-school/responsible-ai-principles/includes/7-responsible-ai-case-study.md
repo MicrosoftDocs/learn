@@ -41,7 +41,7 @@ By incorporating AI into the total loss process, the claim handler can settle th
 
 While the model itself is impressive, designing and deploying an AI solution at this scale required collaboration across many different decision-making bodies within the organization. The business team and AI development team partnered closely to ensure that the DVAM solution was aligned to their intended business outcomes. Together, they assessed which business area KPIs were impacted, determined the baseline measurements of those KPIs, and finally, measured and monitored KPI changes after the model was launched.
 
-As for AI governance, the business team and validation team collaborated to evaluate the model. The DVAM solution was launched in phases, which allowed State Farm to thoroughly assess the model before it was fully rolled out. The governance processes were transparent to all participants throughout the process, so there were no surprises.s
+As for AI governance, the business team and validation team collaborated to evaluate the model. The DVAM solution was launched in phases, which allowed State Farm to thoroughly assess the model before it was fully rolled out. The governance processes were transparent to all participants throughout the process, so there were no surprises.
 :::column-end:::
 :::column span="2":::
 ![Governance in action at State Farm. It took 15 days before DVAM. After DVAM, it takes 30 minutes. This difference is represented in a bar chart.](../media/statefarm2.png)

@@ -1,4 +1,4 @@
-Code generation AI models are able to take natural language or code snippets and translate them into code. The OpenAI code generation model family, Codex, is proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python.
+Code generation AI models are able to take natural language or code snippets and translate them into code. The OpenAI GPT models, are proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python.
 
 ## Codex
 

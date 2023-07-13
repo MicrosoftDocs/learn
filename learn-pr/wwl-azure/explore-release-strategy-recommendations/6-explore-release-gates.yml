@@ -4,13 +4,11 @@ title: Explore release gates
 metadata:
   title: Explore release gates
   description: "Explore release gates"
-  ms.date: 05/31/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/6-explore-release-gates.md)]

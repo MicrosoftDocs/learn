@@ -1,3 +1,4 @@
+
 This module explained Composition Analysis, inspecting and validating code bases for compliance, integration with security tools, and integration with Azure Pipelines.
 
 You learned how to describe the benefits and usage of:

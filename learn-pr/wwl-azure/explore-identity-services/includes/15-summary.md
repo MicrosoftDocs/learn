@@ -1,8 +1,9 @@
 
 
+
 Now you have:
 
-- Explored Azure virtual machine authentication, authorization, and access control.<br>
+- Explored Azure virtual machine authentication, authorization, and access control.
 - Explored Azure Active Directory.
 - Explored SAP Cloud Platform Identity authentication.
 - Added SAP Cloud Platform Identity Authentication from the gallery.

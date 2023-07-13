@@ -1,17 +1,14 @@
-Azure Quantum is a Microsoft Azure cloud service for running quantum computing programs and solving optimization problems. In this unit, you'll become familiar with the core elements of the Azure Quantum platform. You'll learn how to use quantum services and how to create and submit projects to the cloud by using the available hardware.
+Azure Quantum is a Microsoft Azure cloud service for running quantum computing programs. In this unit, you'll become familiar with the core elements of the Azure Quantum platform. You'll learn how to use quantum services and how to create and submit projects to the cloud by using the available hardware.
 
 ## What's included on Azure Quantum?
 
-Azure Quantum offers you two main paths of quantum solutions:
-
-- **Quantum Computing**: Learn, experiment and prototype with a variety of quantum hardware providers to help you get ready for the future of scaled quantum machines. Unlike other solutions, you're not siloed to a single hardware technology, and you benefit from a full stack approach protecting your long-term investments.
-- **Optimization**: Develop solutions that help you reduce the cost of operation in a broad range of fields such as finance, energy cost, fleet management, scheduling, and more.
+You can learn, experiment and prototype with a variety of quantum hardware providers to help you get ready for the future of scaled quantum machines. Unlike other solutions, you're not siloed to a single hardware technology, and you benefit from a full stack approach protecting your long-term investments.
 
 With Azure Quantum and the Quantum Development Kit toolset, you'll be able to program your quantum algorithms and optimization solutions, then apply those quantum solutions within the existing Azure platform to achieve real-world impacts even before the development of a general-purpose quantum computer.
 
 For more details on how this is done in practice, check out Dave Wecker's talk on [Achieving Practical Quantum Computing](https://cloudblogs.microsoft.com/quantum/2018/06/01/achieving-practical-quantum-computing/?azure-portal=true).
 
-### Quantum computing providers
+## Quantum computing providers
 
 Once you have a quantum program that you'd like to run on a quantum computer, you can choose from a range of compute options.
 
@@ -19,14 +16,6 @@ Once you have a quantum program that you'd like to run on a quantum computer, yo
 - [IONQ](https://ionq.com/): Dynamically reconfigurable trapped-ion quantum computer for up to 11 fully connected qubits that lets you run a two-qubit gate between any pair.
 - [Rigetti](https://www.rigetti.com/): Gate-based superconducting processors will be available in Azure Quantum soon and utilize [Quantum Intermediate Representation (QIR)](/azure/quantum/concepts-qir) to enable low latency and parallel execution.
 - [Quantum Circuits, Inc](https://quantumcircuits.com/): Fast and high-fidelity system with powerful real-time feedback to enable error correction.
-
-### Optimization providers
-
-For optimization solutions, these are the available providers you can choose from:
-
-- [1QBit](https://1qbit.com/): Iterative heuristic algorithms that use search techniques to solve QUBO problems.
-- [Microsoft QIO](/azure/quantum/provider-microsoft-qio): A set of multiple targets that rephrase the optimization problem inspired by decades of quantum research.
-- [Toshiba SBM](https://www.toshiba-sol.co.jp/en/pro/sbm/index.htm): Toshiba Simulated Bifurcation Machine is a GPU-powered ISING machine that solves large-scale combinatorial optimization problems at high speed.
 
 ## Azure subscription
 

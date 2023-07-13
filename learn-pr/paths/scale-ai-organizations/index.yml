@@ -25,7 +25,6 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn-wwl.implement-ai-organization
 - learn-wwl.start-ml-lifecycle-mlops
 trophy:
   uid: learn.scale-ai-organizations.trophy

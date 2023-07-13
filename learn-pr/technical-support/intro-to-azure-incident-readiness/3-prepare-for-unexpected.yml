@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-incident-readiness.prepare-for-unexpected
+title: How to prepare for the unexpected (before an incident)
+metadata:
+  title: How to prepare for the unexpected (before an incident)
+  description: "In this unit, you'll gain the knowledge and skills to proactively prepare for the unexpected, including navigating Azure Service Health, setting up alerts, and implementing recommended measures to enhance application resilience and secure your environment."
+  ms.date: 6/25/2023
+  author: rmcmurray
+  ms.author: keall
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 19
+content: |
+  [!include[](includes/3-prepare-for-unexpected.md)]
+quiz:
+  questions:
+  - content: "Which tool enables you to engage with service events and manage actions to maintain the business continuity of your impacted applications?"
+    choices:
+    - content: "Our public Status Page (azure.status.microsoft)"
+      isCorrect: false
+    - content: "Azure Service Health"
+      isCorrect: true
+    - content: "@AzureSupport on Twitter"
+      isCorrect: false
+    - content: "Microsoft Teams"
+      isCorrect: false
+  - content: "True or False: You can configure alerts to get notified when an Azure incident (service and security incident) is impacting you via email, SMS message, webhook, etc."
+    choices:
+    - content: "True"
+      isCorrect: true
+    - content: "False"
+      isCorrect: false
+  - content: "What's an important step you should take to alleviate concerns about account compromise exposure?"
+    choices:
+    - content: "Enforcing Multi-factor authentication"
+      isCorrect: true
+    - content: "Configuring service health alerts"
+      isCorrect: false
+    - content: "Ensure your Global Admin role has a contactable email address"
+      isCorrect: false
+  - content: "Where can I find guidance for resiliency testing?"
+    choices:
+    - content: "Microsoft Azure Well-Architected Framework, reliability pillar"
+      isCorrect: true
+    - content: "Microsoft Azure Well-Architected Framework, security pillar"
+      isCorrect: false
+    - content: "Azure Resource Health"
+      isCorrect: false
+    - content: "Microsoft's public Status Page (azure.status.microsoft)"
+      isCorrect: false
