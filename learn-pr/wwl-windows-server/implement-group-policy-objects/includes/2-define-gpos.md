@@ -1,4 +1,4 @@
-Since early versions of Windows Server, the Group Policy feature of Windows operating systems has provided an infrastructure with which administrators can define settings centrally and then deploy them to computers across their organizations. 
+Since early versions of Windows Server, the Group Policy feature of Windows operating systems has provided an infrastructure with which administrators can define settings centrally and then deploy them to computers across their organizations.
 
 Consequently, IT staff at Contoso can define, enforce, and update their entire configuration by using GPO settings. By using GPO settings, they can affect an entire site or a domain within their organization, or they can narrow their focus to a single OU.
 
@@ -9,11 +9,13 @@ Consequently, IT staff at Contoso can define, enforce, and update their entire c
 
 Group Policy is a framework in Windows operating systems with components that reside in AD DS, on domain controllers, and on each Windows Server and client. By using these components, you can manage configuration in an AD DS domain. You define Group Policy settings within a GPO. A GPO is an object that contains one or more policy settings that apply to one or more configuration settings for a user or a computer.
 
-:::image type="content" source="../media/m8-group-policy-1.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Contoso.com domain. Displayed are three GPOs. Also displayed are the OUs in the domain, some of which have linked GPOs.":::
+:::image type="content" source="../media/m8-group-policy-1-3047661e.png" alt-text="A screenshot of the Group Policy Management console. The administrator has selected the Contoso.com domain. Displayed are three GPOs. Also displayed are the OUs in the domain, some of which have linked GPOs.":::
+
 
 Group Policy is a powerful administrative tool. You can use GPOs to push various settings to a large number of users and computers. Because you can apply them to different levels, from the local computer to domain, you also can focus these settings precisely. Primarily, you use Group Policy to configure settings that you do not want users to configure. Additionally, you can use Group Policy to standardize desktop environments on all computers in an organizational unit (OU) or in an entire organization. You also can use Group Policy to provide additional security, to configure some advanced system settings, and for other purposes discussed in a subsequent demonstration unit.
 
-:::image type="content" source="../media/m8-group-policy-2.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Computer Configuration and User Configuration nodes to display the Policies and Preferences folders.":::
+:::image type="content" source="../media/m8-group-policy-2-07377f9d.png" alt-text="A screenshot of the Group Policy Management Editor. The administrator has expanded the Computer Configuration and User Configuration nodes to display the Policies and Preferences folders.":::
+
 
 ## What are GPOs?
 
@@ -26,13 +28,14 @@ Some settings affect a user, known as user configuration settings or user polici
 
 Group Policy manages various policy settings, and the Group Policy framework is extensible. You can manage almost any configurable setting with Group Policy.
 
-:::image type="content" source="../media/m8-group-policy-3.png" alt-text="A screenshot of the Configure Automatic Updates dialog box in the Group Policy Management Editor. The setting is enabled. Other values are displayed.":::
+:::image type="content" source="../media/m8-group-policy-3-4bb956fe.png" alt-text="A screenshot of the Configure Automatic Updates dialog box in the Group Policy Management Editor. The setting is enabled. Other values are displayed.":::
+
 
 To define a policy setting:
 
-1. In the Group Policy Management Editor, locate  the policy setting and then select Enter. The policy setting **Properties** dialog box appears.
-2. Change the policy state to **Enabled** or **Disabled**. Most policy settings can have three states: Not Configured, Enabled, and Disabled.
-3. If required, configure additional values, and when complete, select **OK**.
+1.  In the Group Policy Management Editor, locate the policy setting and then select Enter. The policy setting **Properties** dialog box appears.
+2.  Change the policy state to **Enabled** or **Disabled**. Most policy settings can have three states: Not Configured, Enabled, and Disabled.
+3.  If required, configure additional values, and when complete, select **OK**.
 
 GPOs store Group Policy settings. In a new GPO, every policy setting defaults to **Not Configured**. When you enable or disable a policy setting, Windows Server makes a change to the configuration of users and computers to which the GPO is applied.
 
@@ -41,8 +44,8 @@ GPOs store Group Policy settings. In a new GPO, every policy setting defaults to
 
 To create a new GPO in a domain:
 
-1. In Group Policy Management, right-click or access the context menu for the **Group Policy Objects** container, and then select **New**.
-2. To modify the configuration settings in a GPO, right-click or access the context menu for the GPO, and then select **Edit**. This opens the Group Policy Management Editor snap-in.
+1.  In Group Policy Management, right-click or access the context menu for the **Group Policy Objects** container, and then select **New**.
+2.  To modify the configuration settings in a GPO, right-click or access the context menu for the GPO, and then select **Edit**. This opens the Group Policy Management Editor snap-in.
 
 The Group Policy Management Editor displays all the policy settings that are available in a GPO in an organized hierarchy that begins with the division between computer settings and user settings: the **Computer Configuration** node and the **User Configuration** node.
 
