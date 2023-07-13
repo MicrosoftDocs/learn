@@ -41,3 +41,4 @@ units:
 - learn.wwl.examine-iot-device-lifecycle-concepts.summary
 badge:
   uid: learn.wwl.examine-iot-device-lifecycle-concepts.badge
+hidden: true

@@ -44,3 +44,4 @@ units:
 - learn.wwl.explore-custom-module-development-for-iot-edge.summary
 badge:
   uid: learn.wwl.explore-custom-module-development-for-iot-edge.badge
+hidden: true
