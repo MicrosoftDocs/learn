@@ -11,7 +11,7 @@ metadata:
   ms.prod: aspnet-core
 title: Secure a .NET web app with the ASP.NET Core Identity framework
 summary: Add authentication and authorization to a web app using ASP.NET Core Identity, ASP.NET Core's native security framework.
-abstract: | 
+abstract: |
   In this module, you will:
   - Configure ASP.NET Core Identity support in an existing ASP.NET Core web app.
   - Provide new user registration capabilities.
@@ -31,9 +31,7 @@ levels:
 roles:
 - developer
 products:
-- dotnet
 - aspnet-core
-- dotnet-core
 - ef-core
 subjects:
 - identity-access

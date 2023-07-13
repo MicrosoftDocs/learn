@@ -26,6 +26,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.train-models-training-mlflow-jobs.introduction
+- learn.wwl.train-models-training-mlflow-jobs.video
 - learn.wwl.train-models-training-mlflow-jobs.track-metrics-mlflow
 - learn.wwl.train-models-training-mlflow-jobs.view-metrics-evaluate-models
 - learn.wwl.train-models-training-mlflow-jobs.exercise-use-mlflow-track-training-jobs

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.persist-data-ef-core.reverse-engineering
-title: Exercise - Reverse engineering
+title: Exercise - Reverse-engineer from an existing database
 metadata:
-  title: Exercise - Reverse engineering
+  title: Exercise - Reverse-engineer from an existing database
   description: "Scaffold DbContext and model classes from an existing database."
   ms.date: 12/13/2021
   author: camsoper

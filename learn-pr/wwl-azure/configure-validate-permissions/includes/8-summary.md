@@ -9,7 +9,7 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
-- [Azure DevOps permissions](https://docs.microsoft.com/azure/devops/organizations/security/permissions)
+- [Azure DevOps permissions](https://learn.microsoft.com/azure/devops/organizations/security/permissions)
 - [Securing Azure Pipelines](https://learn.microsoft.com/azure/devops/pipelines/security/overview)
 - [Security best practices](https://learn.microsoft.com/azure/devops/organizations/security/security-best-practices)
 - [Add organization users and manage access](https://learn.microsoft.com/azure/devops/organizations/accounts/add-organization-users)

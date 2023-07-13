@@ -30,7 +30,7 @@ In this exercise, you use a combination of a PowerShell script and an ARM templa
     > [!NOTE]
     > If you have previously created a cloud shell that uses a *Bash* environment, use the the drop-down menu at the top left of the cloud shell pane to change it to ***PowerShell***
 
-3. You can resize the Cloud Shell by dragging the separator bar at the top of the pane, or by using the, **&#9723;**, and **X** icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](https://docs.microsoft.com/azure/cloud-shell/overview).
+3. You can resize the Cloud Shell by dragging the separator bar at the top of the pane, or by using the, **&#9723;**, and **X** icons at the top right of the pane to minimize, maximize, and close the pane. For more information about using the Azure Cloud Shell, see the [Azure Cloud Shell documentation](https://learn.microsoft.com/azure/cloud-shell/overview).
 
 4. In the PowerShell pane, enter the following commands to clone this repo:
 
@@ -52,7 +52,7 @@ In this exercise, you use a combination of a PowerShell script and an ARM templa
     > [!NOTE]
     > Be sure to remember this password!
 
-8. Wait for the script to complete - this typically takes around 20 minutes, but in some cases may take longer. While you are waiting, review the [What is Azure Synapse Analytics?](https://docs.microsoft.com/azure/synapse-analytics/overview-what-is) article in the Azure Synapse Analytics documentation.
+8. Wait for the script to complete - this typically takes around 20 minutes, but in some cases may take longer. While you are waiting, review the [What is Azure Synapse Analytics?](https://learn.microsoft.com/azure/synapse-analytics/overview-what-is) article in the Azure Synapse Analytics documentation.
 
 ## Explore Synapse Studio
 
@@ -376,7 +376,7 @@ Azure Synapse Data Explorer provides a runtime that you can use to store and que
 9. After the code has run successfully, replace it with the following code, which loads data into the table:
 
     ```kusto
-    .ingest into table sales 'https://raw.githubusercontent.com/microsoftlearning/dp-203-azure-data-engineer/master/Allfiles/labs/01/files/sales.csv' 
+    .ingest into table sales 'https://raw.githubusercontent.com/microsoftlearning/dp-203-azure-data-engineer/master/Allfiles/labs/01/files/sales.csv'
     with (ignoreFirstRecord = true)
     ```
 

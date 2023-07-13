@@ -8,6 +8,7 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Automate Azure Functions deployments with Azure Pipelines
 summary: Create an Azure DevOps pipeline that builds and deploys an ASP.NET web app and an Azure Function app to Azure.
 abstract: |

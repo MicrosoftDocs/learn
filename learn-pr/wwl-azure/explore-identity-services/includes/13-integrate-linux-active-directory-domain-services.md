@@ -1,5 +1,6 @@
 
 
+
 There are several ways to integrate Linux VMs with Active Directory. Three main options are based on built-in or freely available components:
 
 - **LDAP Authentication / Authorization**. LDAP Authentication and Authorization leverage the compliance of Active Directory with LDAP standards. Applications that implement NSS (Name Service Switch) and PAM (Pluggable Authentication Module), can use LDAP modules to communicate with the LDAP endpoint of Active Directory. LDAP Authentication users can't change their password from the Linux client. Consider a password change process that conforms to your password expiration policy, either by providing users an alternative method to change their password, or by having an automated password refresh mechanism in place.

@@ -4,13 +4,12 @@ title: Introduction to agent pools
 metadata:
   title: Introduction to agent pools
   description: "Introduction to agent pools"
-  ms.date: 05/17/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
+  ms.service: azure-devops
 durationInMinutes: 1
 content: |
   [!include[](includes/4-introduction-to-agent-pools.md)]

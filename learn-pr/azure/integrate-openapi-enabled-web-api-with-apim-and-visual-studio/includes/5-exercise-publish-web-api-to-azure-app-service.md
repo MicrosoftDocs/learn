@@ -1,10 +1,9 @@
-In this exercise, you will deploy your web API application to [Azure App Service][az appsvc] through Visual Studio.
+In this exercise, you deploy your web API application to [Azure App Service][az appsvc] through Visual Studio.
 
 > [!NOTE]
 > In the previous exercise, you already have the ASP.NET Core Web API app with the OpenAPI feature enabled. You will use the app for this exercise.
-> 
+>
 > You need an Azure subscription to complete this module. If you do not have one, you can [sign up for a free one here][az account free].
-
 
 ## Deploy Web API Application to Azure App Service through Visual Studio ##
 
@@ -26,15 +25,15 @@ After the previous exercise, the web API application is ready to publish. In ord
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-05.png" alt-text="Select Create New App Service.":::
 
-1. When a new **App Service (Windows)** dialogue modal pops up, all field values are automatically populated. You can use the pre-populated ones or change them. Fill in all the field values and select the **Create** button.
+1. When a new **App Service (Windows)** dialogue modal pops up, all field values are automatically populated. You can use the prepopulated ones or change them. Fill in all the field values and select the **Create** button.
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-06.png" alt-text="Create New App Service.":::
 
-1. Your new **Azure App Service** instance has been created. Click the **Next** button.
+1. Your new **Azure App Service** instance has been created. Select the **Next** button.
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-07.png" alt-text="New App Service Created.":::
 
-1. For now, we'll publish the web API app only to the **Azure App Service** instance. You can skip this step deploying to API Management for now. Check the **Skip this step** tick box and select the **Finish** button.
+1. For now, publish the web API app only to the **Azure App Service** instance. You can skip the deploying to API Management step for now. Check the **Skip this step** tick box and select the **Finish** button.
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-08.png" alt-text="Finish New App Service.":::
 
@@ -46,14 +45,13 @@ After the previous exercise, the web API application is ready to publish. In ord
 
    :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-10.png" alt-text="Web API Published.":::
 
-
 ## Verify the web API application is running ##
 
-1. Let's ensure your web API app is properly deployed. Open your web browser and enter the website URL you copied from the previous step. You will see a **Page Not Found** error. This is expected.
+1. Let's ensure your web API app is properly deployed. Open your web browser and enter the website URL you copied from the previous step. A **Page Not Found** error, like the one in the following image, is expected.
 
     :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-11.png" alt-text="Page Not Found.":::
 
-1. We will edit the URL. If the website URL you copied is `https://apiapp-inventorymanagement-kc.azurewebsites.net`, replace `<copied-website-url>` according to the following example.
+1. Edit the URL. If the website URL you copied is `https://apiapp-inventorymanagement-kc.azurewebsites.net`, replace `<copied-website-url>` according to the following example.
 
    ```text
    <copied-website-url>/swagger
@@ -71,12 +69,11 @@ After the previous exercise, the web API application is ready to publish. In ord
 
     :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-14.png" alt-text="Swagger UI Page - Execute.":::
 
-1. You will now see the result.
+1. View the result.
 
     :::image type="content" source="../media/5-exercise-publish-web-api-to-azure-app-service-15.png" alt-text="Swagger UI Page - Executed.":::
 
 Congratulations! You've now published your ASP.NET Core Web API app to Azure App Service through Visual Studio!
-
 
 [az appsvc]: /azure/app-service/overview
 [az apim]: /azure/api-management/api-management-key-concepts
