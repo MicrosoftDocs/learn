@@ -23899,16 +23899,6 @@
       "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-customer-service/6-summary-and-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/11-exercise-integrate-azure-bot-service.yml",
-      "redirect_url": "/training/modules/learn-mrtk-tutorials/1-1-introduction/",
-      "redirect_document_id": true
-    },
-    {
-      "source_path_from_root": "/learn-pr/azure/azure-cloud-services-tutorials/10-integrate-azure-bot-service.yml",
-      "redirect_url": "/training/modules/learn-mrtk-tutorials/1-1-introduction/",
-      "redirect_document_id": true
     }
   ]
 }
