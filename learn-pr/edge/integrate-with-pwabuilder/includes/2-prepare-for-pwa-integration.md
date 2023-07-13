@@ -20,7 +20,7 @@ To enhance the user experience of your project and ensure a successful PWA integ
 
 - **Implement lazy-load resources**: Implement lazy-loading to reduce initial load time and ensure a smoother user experience.
 - **Optimize images**: Compress and resize images to reduce file size without sacrificing visual quality. Consider using modern image formats like WebP and AVIF for better compression and performance.
-- **Use caching strategies**: Implement caching strategies to store frequently-used resources on the user's device, resulting in faster load times and reduced bandwidth usage. Use HTTP caching headers, service workers, and browser caches.
+- **Use caching strategies**: Implement caching strategies to store frequently used resources on the user's device, resulting in faster load times and reduced bandwidth usage. Use HTTP caching headers, service workers, and browser caches.
 - **Implement responsive design**: Create a responsive layout that adapts to different screen sizes and devices using CSS media queries, fluid grids, and flexible images. Consider implementing mobile-first design principles for better performance on smaller screens.
 
 ## Update your project's dependencies

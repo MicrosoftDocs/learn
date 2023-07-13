@@ -21,9 +21,8 @@ Here are the PWABuilder steps for generating app manifest and service worker fil
 
 1. Add the following JavaScript code to the *index.html* file to register the service worker. You can place the code either in the head section, inside a `script>\` tag, or at the end of the body section, before the closing `</body>` tag:
 
-```java
-if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register('service-worker.js').then(function(registration) {console.log('ServiceWorker registration successful with scope: ', registration.scope);}, function(err) {console.log('ServiceWorker registration failed: ', err);});});}
-```
+   ```java
+   if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register('service-worker.js').then(function(registration) {console.log('ServiceWorker registration successful with scope: ', registration.scope);}, function(err) {console.log('ServiceWorker registration failed: ', err);});});}
 
 1. Save the changes to your *index.html* file.
 1. Push any changes to your server.
