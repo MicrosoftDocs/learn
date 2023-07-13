@@ -1,5 +1,4 @@
-
-Learn to implement Group Policy Objects (GPOs) in Active Directory Domain Services (AD DS) in Windows Server. 
+Learn to implement Group Policy Objects (GPOs) in Active Directory Domain Services (AD DS) in Windows Server.
 
 ## Scenario
 
@@ -11,20 +10,20 @@ After completing this module, you’ll understand how group policies work in a W
 
 ## Learning objectives
 
-After completing this module, you'll be able to: 
+After completing this module, you'll be able to:
 
-- Describe GPOs.
-- Describe GPO scope and inheritance.
-- Describe domain-based GPOs.
-- Create and configure GPOs.
-- Explain GPO storage.
-- Describe administrative templates and the Central Store.
+ -  Describe GPOs.
+ -  Describe GPO scope and inheritance.
+ -  Describe domain-based GPOs.
+ -  Create and configure GPOs.
+ -  Explain GPO storage.
+ -  Describe administrative templates and the Central Store.
 
 ## Prerequisites
 
 To get the best learning experience from this module, you should have knowledge and experience of:
 
-- AD DS concepts and technologies.
-- Core networking technologies.
-- Windows client operating systems such as Windows 10.
-- Windows PowerShell basics.
+ -  AD DS concepts and technologies.
+ -  Core networking technologies.
+ -  Windows client operating systems such as Windows 10.
+ -  Windows PowerShell basics.
