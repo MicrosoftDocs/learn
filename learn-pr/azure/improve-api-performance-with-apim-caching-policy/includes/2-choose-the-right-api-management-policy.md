@@ -43,11 +43,11 @@ In the policy XML, there's a separate tag for each of these execution times:
 
 In this example, you can see that the policy checks inbound requests for a header named **Authorization**. If such a header isn't present, the policy displays an error message.
 
-This policy also translates any out-bound responses in JSON format into XML.
+This policy also translates any outbound responses in JSON format into XML.
 
 ## Policy scopes
 
-A policy's scope determines how broadly it will be applied. There are four policy scopes from which you can choose:
+A policy's scope determines how broadly it will be applied. The following are policy scopes from which you can choose:
 
 - Global
 - Product
@@ -58,35 +58,35 @@ A policy's scope determines how broadly it will be applied. There are four polic
 
 Policies applied at the global scope affect all APIs within the instance of API Management.
 
-To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. You can open the XML editor by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections:
+To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. Select **+ Add policy** in the **Inbound processing** or **Outbound processing** section to view policies you can add at that scope.
 
-![Screenshot of the Global All API Scope.](../media/2-global-scope.png)
+:::image type="content" source="../media/2-global-scope.png" alt-text="Screenshot of the All APIs scope in the portal." :::
 
-The policy editor that appears contains default XML content. On the right, you can find shortcuts that add policies:
+From the available choices, make a selection to start a wizard that guides you to add the policy with the correct syntax:
 
-![Screenshot of the Global Scope Editor.](../media/2-global-scope-editor.png)
+:::image type="content" source="../media/2-global-policy-wizard.png" alt-text="Screenshot of the All APIs scope to add policy in the portal.":::
 
-To create policy, you can manually edit the XML in the policy editor. Alternatively, on the **All APIs** pane, you can select **Add policy** to start a wizard that helps you to add policy with the correct syntax:
+You can also open the XML editor directly by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections. The policy editor that appears contains default XML content. On the right, select **Show snippets** to find shortcuts that add policies:
 
-![Screenshot of the Global All API Scope to add policy.](../media/2-global-policy-wizard.png)
+:::image type="content" source="../media/2-global-scope-editor.png" alt-text="Screenshot of the All APIs scope editor in the portal.":::
 
 ### Product
 
-In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, select the **Policies** pane to bring up the XML policy editor:
+In API Management, you can assemble one or more APIs into a single product and then manage access to that product as a single entity. Policies applied to the product scope affect all the APIs in that product. APIs in other products are unaffected. When you manage a product in the Azure portal, select the **Policies** pane to add policies through a guided wizard or using the XML policy editor:
 
-![Screenshot of the Product Scope.](../media/2-products-scope.png)
+:::image type="content" source="../media/2-products-scope.png" alt-text="Screenshot of the product scope editor in the portal.":::
 
 ### API
 
-Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs**, then select the API you want to manage. Finally, under the **Design** tab, select **All operations**:
+Policies applied at the API scope affect only a single API. To set a policy at the API scope, on the API Management home page, select **APIs**, then select the API you want to manage. Finally, under the **Design** tab, select **All operations**. You can set inbound, outbound, or backend policies that apply to all operations in that API:
 
-![Screenshot of the API Scope.](../media/2-api-scope.png)
+:::image type="content" source="../media/2-api-scope.png" alt-text="Screenshot of the API scope in the portal.":::
 
 ### Operation
 
 Policies applied at the operation scope affect only one operation within the API. In the example below, the administrator has selected the **GetSpeaker** operation within the **Demo Conference API** and can set inbound, outbound, or backend policies that apply only to that operation:
 
-![Screenshot of the API Operation Scope.](../media/2-operation-scope.png)
+:::image type="content" source="../media/2-operation-scope.png" alt-text="Screenshot of the operation scope in the portal.":::
 
 ## Which order are policies applied in?
 
@@ -101,17 +101,18 @@ You can use the `<base />` tag to determine when policies from a higher scope ar
 </policies>
 ```
 
-Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the global and product scopes first, and then executes the find-and-replace policy.
+Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure API Management applies policies from the global and product scopes first, and then executes the find-and-replace policy.
 
 ## Commonly used policies
 
-Let's examine some things you can do with policies in API Management.
+Let's examine some things you can do with policies in API Management. We'll introduce some of the most commonly used policies, and you can visit the API Management documentation for a complete list and examples.
+
 
 ### Policies for restricting access
 
-There are several policies that you can use to prevent or limit access to an API or its operations:
+There are several policies that you can use to prevent or limit access to an API or its operations. For example:
 
-Use the **Check HTTP header** policy to check for a property in an HTTP Header. If the property isn't found, Azure drops the request.
+Use the **Check HTTP header** policy to check for a property in an HTTP header. If the property isn't found, Azure API Management drops the request.
 
 The **Limit call rate by subscription** policy restricts the number of calls that can come from a single API subscription. This policy can ensure that users from one subscription don't use all your bandwidth.
 
@@ -121,11 +122,11 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 ### Policies for authentication
 
-Several policies enable you to control authentication:
+Several policies enable you to control authentication. For example:
 
-You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
+Use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
 
-You can use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
+Use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
 ### Cross-domain policies
 
@@ -137,9 +138,9 @@ Some AJAX code, which runs on the browser, uses JSON with padding to make cross-
 
 ### Transformation policies
 
-It's often helpful to change the format or content of a response from a managed API. You can do that with several policies:
+It's often helpful to change the format or content of a response from a managed API. You can do that with several policies. For example:
 
-To convert to and from JSON and XML, use the **Convert JSON to XML** and **Convert XML to JSON** policies. This policy often helps to make multiple APIs in a product consistent. It can also remove the need to recode an API when an app expects a response in a specific format.
+To convert to and from JSON and XML, use the **Convert JSON to XML** and **Convert XML to JSON** policies. These policies often help to make multiple APIs in a product consistent. They can also remove the need to recode an API when an app expects a response in a specific format.
 
 Sometimes you want to keep a response in XML, but alter its schema. In such cases, use the **Transform XML** policy to apply an XSLT template.
 
