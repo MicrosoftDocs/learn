@@ -1,4 +1,4 @@
-When you host APIs with Azure API Management, you can modify API behavior without having to rewrite code, by use of policies. To cache API responses, you use API Management's caching policies
+When you manage APIs with Azure API Management, you can modify API behavior without having to rewrite code, by use of policies. To cache API responses, you use API Management's caching policies.
 
 As the developer for a board game company, you decide to implement caching for a Board Gaming API. First, you need to add the API to API Management. Then, you'll write your caching policies. We'll do both in this exercise.
 
@@ -32,7 +32,6 @@ Let's create a cache right away. This will allow the setup to run behind the sce
     | DNS name | Enter a unique name. Make a note of it. You'll need it later on. |
     | Location | Select an available region. |
     | Cache type | Standard C1 |
-    | | |
 
     :::image type="content" source="../media/5-create-redis-cache.png" alt-text="Screenshot that shows the form that's used to create a new Redis cache.":::
 
@@ -105,7 +104,6 @@ Now that we have a functional API, let's set up API Management:
     | Administrator email | The email address to receive all system notifications. |
     | **Pricing tier** |
     | Pricing tier | Consumption |
-    | | |
 
 1. Select **Review + create** to validate your input, and then select **Create**.
 
@@ -147,9 +145,11 @@ We must apply a policy to enable users to access the API. However, before you ca
 
 1. In the **Create from definition** section, choose **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
+    :::image type="content" source="../media/5-add-api-to-management.png" alt-text="Screenshot that shows how to add an API to API Management in the portal.":::
+
 1. In the **OpenAPI specification** box, paste the Swagger JSON URL that you copied previously.
 
-    :::image type="content" source="../media/5-complete-api-add.png" alt-text="Screenshot that shows how to add an API to API Management.":::
+    :::image type="content" source="../media/5-complete-api-add.png" alt-text="Screenshot that shows how to configure an OpenAPI specification in the portal.":::
 
 1. Select **Create**. The **APIs** pane for your API Management service reappears. It lists all available API operations for that management instance.
 
@@ -167,7 +167,6 @@ The API is now added to the management instance. Let's test how the API function
     | Game | chess |
     | Height | 8 |
     | Width | 8 |
-    | | |
 
 1. Select **Send**.
 
@@ -181,11 +180,11 @@ The API is now added to the management instance. Let's test how the API function
 
 ## Add a caching policy
 
-We can now enable caching. This is done by adding policies to inbound processing XML code.
+We can now enable caching by adding response caching policies.
 
 1. Select your API Management service and then select the **APIs** link. Next select the **Design** tab and choose the **GET - GetPriceEstimate** operation.  The **GetPriceEstimate** pane appears.
 
-1. In the **Inbound processing** section, select **Add policy**. The **Add inbound policy** pane appears.
+1. In the **Inbound processing** section, select **+ Add policy**. The **Add inbound policy** pane appears.
 
     :::image type="content" source="../media/5-add-policy.png" alt-text="Screenshot that shows how to add a caching policy.":::
 
@@ -215,7 +214,6 @@ We'll run the same test on the API as in the previous section, from within API M
     | Game | chess |
     | Height | 8 |
     | Width | 8 |
-    | | |
 
     :::image type="content" source="../media/5-test-api-in-apim.png" alt-text="Screenshot that shows how to test the API in API Management.":::
 
@@ -257,11 +255,12 @@ The cache should now deliver unique responses based on the *Height* query parame
     | Game | chess |
     | Height | 8 |
     | Width | 8 |
-    | | |
 
 1. Select **Send**.
 
 1. Review the results. Notice that the `quotePreparedTime` is included in the response.
+
+    :::image type="content" source="../media/5-view-cached-response.png" alt-text="Screenshot that shows the timestamp of the payload in the test console. ":::
 
 1. Select **Send** to repeat the request. Notice that like before, the time value in the response hasn't changed. That's because a cached response was served.
 
@@ -273,7 +272,6 @@ The cache should now deliver unique responses based on the *Height* query parame
     | Game | chess |
     | Height | 100 |
     | Width | 8 |
-    | | |
 
 1. Select **Send**.
 
@@ -287,7 +285,6 @@ The cache should now deliver unique responses based on the *Height* query parame
     | Game | chess |
     | Height | 100 |
     | Width | 500 |
-    | | |
 
 1. Select **Send**.
 

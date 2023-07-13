@@ -58,15 +58,15 @@ A policy's scope determines how broadly it will be applied. The following are po
 
 Policies applied at the global scope affect all APIs within the instance of API Management.
 
-To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. Select **+ Add policy** in the **Inbound processing** or **Outbound processing** section to start a wizard that helps you to add policy with the correct syntax.
+To use the global scope, in your API Management service pane, in the left menu pane, under **API Management**, select **APIs**, and then select **All APIs** in the middle menu pane. Select **+ Add policy** in the **Inbound processing** or **Outbound processing** section to view policies you can add at that scope.
 
 :::image type="content" source="../media/2-global-scope.png" alt-text="Screenshot of the All APIs scope in the portal." :::
 
-From the available choices, make a selection to start a wizard that helps you to add policy with the correct syntax:
+From the available choices, make a selection to start a wizard that guides you to add the policy with the correct syntax:
 
 :::image type="content" source="../media/2-global-policy-wizard.png" alt-text="Screenshot of the All APIs scope to add policy in the portal.":::
 
-Alternatively, you can open the XML editor by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections. The policy editor that appears contains default XML content. On the right, select **Show snippets** to find shortcuts that add policies:
+You can also open the XML editor directly by selecting the tag symbol **</>** in the **Inbound processing**, **Outbound processing**, or **Backend** sections. The policy editor that appears contains default XML content. On the right, select **Show snippets** to find shortcuts that add policies:
 
 :::image type="content" source="../media/2-global-scope-editor.png" alt-text="Screenshot of the All APIs scope editor in the portal.":::
 
@@ -101,11 +101,11 @@ You can use the `<base />` tag to determine when policies from a higher scope ar
 </policies>
 ```
 
-Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure applies policies from the global and product scopes first, and then executes the find-and-replace policy.
+Because the `<base>` tag appears above the `<find-and-replace>` tag, Azure API Management applies policies from the global and product scopes first, and then executes the find-and-replace policy.
 
 ## Commonly used policies
 
-Let's examine some things you can do with policies in API Management. We'll introduce some of the most commonly used policies, and you can visit the API Management documentation for a complete list.
+Let's examine some things you can do with policies in API Management. We'll introduce some of the most commonly used policies, and you can visit the API Management documentation for a complete list and examples.
 
 
 ### Policies for restricting access
@@ -122,11 +122,11 @@ To allow or deny calls from specific IP addresses or ranges of IP addresses, use
 
 ### Policies for authentication
 
-Several policies enable you to control authentication. Some examples:
+Several policies enable you to control authentication. For example:
 
-You can use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
+Use the **Authenticate with Basic** policy to enable authentication in plain text. This form of authentication is broadly supported, but remember that you should protect it with SSL encryption; otherwise, a malicious attack can intercept the credentials as they cross the network.
 
-You can use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
+Use the **Authenticate with client certificate** policy to enable clients to authenticate by supplying a client certificate.
 
 ### Cross-domain policies
 
@@ -138,9 +138,9 @@ Some AJAX code, which runs on the browser, uses JSON with padding to make cross-
 
 ### Transformation policies
 
-It's often helpful to change the format or content of a response from a managed API. You can do that with several policies, including:
+It's often helpful to change the format or content of a response from a managed API. You can do that with several policies. For example:
 
-To convert to and from JSON and XML, use the **Convert JSON to XML** and **Convert XML to JSON** policies. This policy often helps to make multiple APIs in a product consistent. It can also remove the need to recode an API when an app expects a response in a specific format.
+To convert to and from JSON and XML, use the **Convert JSON to XML** and **Convert XML to JSON** policies. These policies often help to make multiple APIs in a product consistent. They can also remove the need to recode an API when an app expects a response in a specific format.
 
 Sometimes you want to keep a response in XML, but alter its schema. In such cases, use the **Transform XML** policy to apply an XSLT template.
 
