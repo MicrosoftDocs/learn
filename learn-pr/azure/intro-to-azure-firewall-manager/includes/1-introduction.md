@@ -12,12 +12,12 @@ As your needs evolve, you can implement more Azure Firewall instances. Each shou
 
 ## What will we be doing?
 
-Analyzing the capabilities and benefits of using Firewall Manager. So that you know when to:
+Analyzing the capabilities and benefits of using Firewall Manager. So that you can answer the following questions:
 
-- **Launch**: Why should you use Firewall Manager?
-- **Manage**: How can Firewall Manager help you manage your cloud-based security perimeters?
-- **Centralize**: When should you use Firewall Manager to centralize your firewall policies and route management?
+- Why should you use Firewall Manager?
+- How can Firewall Manager help you manage your cloud-based security perimeters?
+- When should you use Firewall Manager to centralize your firewall policies and route management?
 
 ## What is the main goal?
 
-By the end of this module, you'll have evaluated Firewall Manager and learned how to use it to help improve security management.
+By the end of this module, your evaluation of Firewall Manager has shown you how to use it to help improve security management.
