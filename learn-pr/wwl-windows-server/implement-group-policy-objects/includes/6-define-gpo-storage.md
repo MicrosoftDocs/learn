@@ -41,7 +41,7 @@ When you change the settings of a GPO, the changes are saved to the SYSVOL share
 The Group Policy client can identify an updated GPO by its version number, as the following describes:
 
  -  Each GPO has a version number that increments each time you make a change.
- -  The version number is stored as a Group Policy container attribute and in a text file, Group Policy GPO.ini, in the Group Policy template folder.
+ -  The version number is stored as a Group Policy container attribute and in a text file, GPT.ini, in the Group Policy template folder.
  -  The Group Policy client knows the version number of each GPO it has previously applied.
  -  If, during the Group Policy refresh, the Group Policy client discovers that the version number of the Group Policy container has changed, Windows Server will inform the client-side extensions that the GPO is updated.
 
