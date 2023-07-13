@@ -1,4 +1,4 @@
-Azure OpenAI on your data allows developers to use supported AI chat models that can reference specific sources of data to ground the response. This allows the model to reference the specific data provided and its pretrained knowledge to provide more effective responses.
+Azure OpenAI on your data allows developers to use supported AI chat models that can reference specific sources of information to ground the response. Adding this information a allows the model to reference both the specific data provided and its pretrained knowledge to provide more effective responses.
 
 Azure OpenAI on your data utilizes the search ability of Azure Cognitive Search to add the relevant data chunks to the prompt. Once your data is in a Cognitive Search index, Azure OpenAI on your data goes through the following steps:
 
@@ -9,10 +9,10 @@ Azure OpenAI on your data utilizes the search ability of Azure Cognitive Search 
 1. Send entire prompt to Azure OpenAI.
 1. Return response and data reference (if any) to the user.
 
-By default, Azure OpenAI on your data encourages, but does not require, the model to respond only using your data. This can be unselected when connecting your data, which may result in the model choosing to use its pretrained knowledge over your data.
+By default, Azure OpenAI on your data encourages, but doesn't require, the model to respond only using your data. This setting can be unselected when connecting your data, which may result in the model choosing to use its pretrained knowledge over your data.
 
 ## Fine-tuning vs. using your own data
 
-Fine-tuning lets you create a custom model based on datasets, similar to Azure OpenAI on your data. This can result in higher quality requests that just prompt engineering, customize the model on examples larger than can fit in a prompt, and allow the user to provide less examples to get the same high quality response. However, the process for fine-tuning is both costly and time intensive, and should only be used for use cases where it is necessary.
+Fine-tuning lets you create a custom model based on datasets, similar to Azure OpenAI on your data. Fine-tuning can result in higher quality requests that prompt engineering alone, customize the model on examples larger than can fit in a prompt, and allow the user to provide fewer examples to get the same high quality response. However, the process for fine-tuning is both costly and time intensive, and should only be used for use cases where it's necessary.
 
-Azure OpenAI on your data still uses the stateless API to connect to the model, which removes the requirement of training a custom model with you data and simplifies the interaction with the AI model. Cognitive Search first finds the useful information to answer the prompt, and Azure OpenAI forms the response based on that information.
+Azure OpenAI on your data still uses the stateless API to connect to the model, which removes the requirement of training a custom model with your data and simplifies the interaction with the AI model. Cognitive Search first finds the useful information to answer the prompt, and Azure OpenAI forms the response based on that information.
