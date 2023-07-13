@@ -1,4 +1,4 @@
-The Express application runs the APIs on a server. In this exercise, you create a serverless Azure Functions application to run the APIs instead. You then migrate the application logic from the Node.js Express application to the Functions application. You don't have to rewrite the code. You need only a few small code changes to make the transition.
+The Express application runs the APIs on a server. In this exercise, you create a serverless Azure Functions application that can run the APIs instead. You then migrate the application logic from the Node.js Express application to the Functions application. You don't have to rewrite the code. You need only a few small code changes to make the transition.
 
 ## Create a new Azure Functions app
 
@@ -17,7 +17,7 @@ Make sure you have the [Visual Studio Code Extension for Azure Functions](https:
 The Functions app is created to serve the application's API endpoints. In the next unit, you create the functions that list, add, update, and delete vacations.
 
 > [!NOTE]
-> You created the function app in a _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your applications, but for learning purposes it helps to see both apps in one place.
+> You created the Functions app in a _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your applications, but for learning purposes it helps to see both apps in one place.
 
 ## Copy and refactor the code
 
@@ -47,12 +47,13 @@ import { Context } from '@azure/functions';
 
 This change makes the Functions app responsible for managing request and response messages.
 
-### Change the request and response objects
-
-In the Node.js Express application, the request and response parameters for the `getVacations`, `postVacation`, `putVacation`, and `deleteVacation` functions use `req` and `res`. The Functions application contains the request and response objects in a `context` object, and uses destructuring to access the objects.
-
 >[!NOTE]
 > The Functions `Context` object also contains other APIs, such as `log`. For example, you can use `context.log('hello')` in place of the common `console.log` you use in Node.js applications.
+
+### Change the request and response objects
+
+In the Node.js Express application, the request and response parameters for the `getVacations`, `postVacation`, `putVacation`, and `deleteVacation` functions use `req` and `res`. The Functions application contains the request and response objects in a `Context` object, and uses destructuring to access the objects.
+
 In _functions/services/vacation.service.ts_, find and replace all four instances of the code `(req: Request, res: Response)` with the following code:
 
 ```typescript

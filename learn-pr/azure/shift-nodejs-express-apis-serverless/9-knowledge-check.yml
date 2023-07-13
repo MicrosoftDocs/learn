@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.11-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Three multiple-choice questions
+  description: Three multiple-choice questions.
   ms.date: 04/10/2020
   author: jopapa
   ms.author: jopapa
@@ -31,13 +31,13 @@ quiz:
           explanation: "Incorrect. There isn't a `redirect` parameter for HTTP bindings."
     - content: "In a Functions application, where do you find the code that runs when an HTTP request is made?"
       choices:
-        - content: "In the _function.json_ file in the function's folder."
+        - content: "In the _function.json_ file, in the function's folder."
           isCorrect: false
           explanation: "Incorrect. The _function.json_ file contains the function's configuration."
-        - content: "In the _index.ts_ file in the function's folder."
+        - content: "In the _index.ts_ file, in the function's folder."
           isCorrect: true
           explanation: "Correct. Each function is in a folder that contains an _index.ts_ file, which fires for its matching route."
-        - content: "In the _host.json_ file in the Functions application root."
+        - content: "In the _host.json_ file, in the Functions application root."
           isCorrect: false
           explanation: "Incorrect. The _host.json_ file contains configuration for the overall application."
         - content: "In the _routes.ts_ file."

@@ -1,4 +1,4 @@
-In this exercise, you run and debug both the Angular application and the Azure Functions application together. You explore the Functions code that fetches the vacations and renders them in the browser, and set a new breakpoint in the Functions code. You then use the Angular and Functions breakpoints to step through the Functions and Angular code with the debugger.
+In this exercise, you run and debug both the Angular application and the Azure Functions application together. You set a new breakpoint in the Functions code that fetches the vacations and renders them in the browser. You then use the Angular and Functions breakpoints to step through the Functions and Angular code with the debugger.
 
 >[!NOTE]
 >The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
@@ -7,7 +7,7 @@ In this exercise, you run and debug both the Angular application and the Azure F
 
 To display a list of vacations, the Angular application makes a call to the `vacations` endpoint in the Azure Functions API. The file _functions/vacations-get/index.ts_ defines the endpoint's route. Set a breakpoint in this file so you can step through the code that fetches the vacations.
 
-1. Open the project in Visual Studio Code, and in _functions/services/vacations.service.ts_, locate the following code:
+1. Open the project in Visual Studio Code, and locate the following code in _functions/services/vacations.service.ts_:
 
    ```typescript
    async function getVacations({ req, res }: Context) {
@@ -45,13 +45,13 @@ To enable the Angular application to talk to and proxy requests to the Functions
    ```
 
 > [!NOTE]
-> The Node.js Express application used port `7070`. If you removed the Node.js Express application, you could use port `7070` for the Functions application. But for learning purposes, you keep both applications.
+> The Node.js Express application used port `7070`. If you removed the Node.js Express application, you could also use port `7070` for the Functions application. But for learning purposes, you keep both applications.
 
 ### Debug both applications
 
 When the application launches, Angular requests the vacations data from the Functions application. The two applications work together to get the data and render it in the browser.
 
-When you run and debug the applications together, the app pauses on the breakpoints, giving you the opportunity to explore how these applications work together.
+When you run and debug the applications together, the app pauses on the breakpoints, so you have the opportunity to explore how these applications work together.
 
 1. Press **F1** to open the Visual Studio Code command palette.
 1. Type and select **View: Show Run and Debug**.

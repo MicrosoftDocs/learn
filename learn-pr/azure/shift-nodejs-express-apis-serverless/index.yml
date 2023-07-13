@@ -2,7 +2,7 @@
 uid: learn.azure.shift-express-api-azure-functions
 metadata:
   title: Refactor Node.js Express APIs to serverless Azure Functions APIs
-  description: Improve availability and scalability by refactoring an existing Node.js Express app and APIs to an Azure Functions serverless app and APIs.
+  description: Improve availability and scalability by refactoring existing Node.js Express APIs to Azure Functions serverless APIs.
   ms.date: 07/12/2023
   author: johnpapa
   ms.author: jopapa
@@ -10,13 +10,13 @@ metadata:
   ms.service: azure-functions
   manager: mijacobs
 title: Refactor Node.js Express APIs to serverless Azure Functions APIs
-summary: Improve availability and scalability by refactoring an existing Node.js Express app and APIs to an Azure Functions serverless app and APIs.
+summary: Improve availability and scalability by refactoring existing Node.js Express APIs to Azure Functions serverless APIs.
 abstract: |
-  - Evaluate an existing application and project that implement a Node.js Express APIs.
+  - Evaluate an existing application and project that implement a Node.js Express API.
   - Create a new Azure Functions serverless application by using TypeScript and JavaScript.
   - Refactor the Node.js Express APIs into Functions APIs, and switch the application to a Functions application.
   - Run and debug the applications.
-  - Understand the differences and similarities between Express APIs and Functions serverless APIs.
+  - Understand the differences and similarities between Express APIs and serverless Functions APIs.
 prerequisites: |
   - Some knowledge of JavaScript and TypeScript
   - Some familiarity with Node.js Express and Azure Functions

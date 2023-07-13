@@ -1,6 +1,6 @@
 In this module, you refactored your Node.js Express application to Azure Functions. Now you can think less about servers, because you're using serverless!
 
-Node.js and Express are powerful solutions for serving API endpoints. With Functions, you can shift your APIs to serverless architecture and not worry about about server setup or maintenance.
+Node.js and Express are powerful solutions for serving API endpoints. With Functions, you can shift your APIs to serverless architecture and not worry about server setup or maintenance.
 
 You might also be able to reduce the cost of an always-on server and improve scalability by replacing the Node.js Express server with the Azure Functions app. Ultimately, with Functions you focus on the code, not the servers.
 
@@ -9,7 +9,7 @@ You might also be able to reduce the cost of an always-on server and improve sca
 
 The solution for the current sample project is in the [solution branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution) on GitHub. Follow the instructions in the README file to get started. You can explore running the Express app or the Azure Functions app to get a sense of the differences. Then try to apply this same shift to your code.
 
-## Additional resources
+## Other resources
 
 To learn more about Azure Functions, Visual Studio Code, and other concepts covered in this module, see the following resources:
 

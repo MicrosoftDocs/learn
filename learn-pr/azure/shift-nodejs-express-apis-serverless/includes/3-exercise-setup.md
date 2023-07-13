@@ -42,12 +42,12 @@ Open the project in Visual Studio Code, and open the _server_ folder to explore 
 ```files
 server
  | - routes
- | | - index.ts
- | | - vacation.routes.ts  👈 The vacation routes
+ | | - index.ts            👈 1. Entry point
+ | | - vacation.routes.ts  👈 2. The vacation routes
  | - services
  | | - data.ts             👈 The vacation data (could be database API calls)
  | | - index.ts
- | | - vacation.service.ts 👈 The logic to get the vacation data
+ | | - vacation.service.ts 👈 3. The logic to get the vacation data
  | - index.ts
  | - server.ts             👈 The Express server
  | - tsconfig.json
@@ -56,9 +56,12 @@ server
 1. The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server.
 1. Then the routes, such as `/vacations`, are loaded from the _/routes_ folder.
 1. The routes execute the appropriate code in the _/services_ folder.
-1. The data store configuration is defined in the _data.ts_ file.
+
+   The data store configuration is defined in the _data.ts_ file.
 
 For example, the Angular client app makes an `HTTP GET` request to the _routes/vacation.routes_ route, and the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
+
+### Proxy configuration
 
 Open _proxy.conf.json_ and notice that the port is set to `7070`.
 
@@ -73,22 +76,17 @@ Open _proxy.conf.json_ and notice that the port is set to `7070`.
 
 The Node.js Express API runs on port `7070`, while the Angular application runs on port `4200`. The Angular application can't make requests across the domains to the Node.js Express application. Setting up a proxy enables the browser to locate the Express server.
 
-## Set breakpoints and proxy
+## Set breakpoints
 
-To display a list of vacations, the Angular application runs the `getVacations()` function in the _vacations.component.ts_ file, which calls the route in the _vacation.routes.ts_ file. Set breakpoints in these files so you can step through the code that fetches the vacations during debugging.
+To display a list of vacations, the Angular application runs the `getVacations()` function in the _vacations.component.ts_ file, which calls the route in the _vacation.routes.ts_ file. Set breakpoints in these files, so during debugging you can step through the code that fetches the vacations.
 
 >[!NOTE]
 >The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
 
 1. In Visual Studio Code, open the application's _src/app/vacations/vacations.component.ts_ file, and locate the `getVacations()` function.
-1. Set a breakpoint by selecting the editor's gutter to the left of the first line of code inside the `getVacations()` function.
+1. Set a breakpoint by selecting the editor's gutter to the left of the first line of code, `this.vacationService.getAll();`, inside the `getVacations()` function.
 
-   ```typescript
-   getVacations() {
-     this.vacationService.getAll(); // Set a breakpoint on this line
-     this.clear();
-   }
-   ```
+   :::image type="content" source="../media/3-first-breakpoint.png" alt-text="Screenshot of the first breakpoint to set in Visual Studio Code.":::
 
 1. Open _server/routes/vacation.routes.ts_ and locate the following code:
 
@@ -99,6 +97,8 @@ To display a list of vacations, the Angular application runs the `getVacations()
    ```
 
 1. Set a breakpoint by selecting the editor's gutter to the left of the line of code `vacationService.getVacations(req, res);`.
+
+   :::image type="content" source="../media/3-next-breakpoint.png" alt-text="Screenshot of the next breakpoint to set in Visual Studio Code.":::
 
 ## Run and debug the app
 
@@ -111,7 +111,7 @@ To display a list of vacations, the Angular application runs the `getVacations()
 
 1. Unpause execution and continue by pressing **F5**.
 
-1. The code now pauses on your second breakpoint in the _vacation.routes.ts_ file because the Angular application hits the Node.js Express route `vacations`. Unpause execution and continue by pressing **F5**.
+1. The code now pauses on your second breakpoint in the _vacation.routes.ts_ file, because the Angular application hits the Node.js Express route `vacations`. Unpause execution and continue by pressing **F5**.
 
 1. There are two debugging processes running: one for Angular and one for Node.js Express. Press **SHIFT+F5** to stop the active debugger.
 
