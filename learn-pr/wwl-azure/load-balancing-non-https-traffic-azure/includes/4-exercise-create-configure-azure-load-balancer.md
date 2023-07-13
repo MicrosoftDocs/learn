@@ -1,4 +1,5 @@
 
+
 ## Lab scenario
 
 In this lab, you will create an internal load balancer for the fictional Contoso Ltd organization.

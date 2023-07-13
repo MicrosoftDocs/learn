@@ -1,16 +1,18 @@
-Contoso Pizza's manager has asked you to add an endpoint to list coupons from an existing database. In this unit, you'll create scaffolding from an existing database and modify the resulting entity class.
+The manager of Contoso Pizza has asked you to add an endpoint so that the company can display coupons in its app. The coupons reside in an existing database. In this unit, you create scaffolding from an existing database and modify the resulting entity class.
 
-## Inspect promotions database
+## Inspect the promotions database
 
-Let's take a look at the database we'll use for generating the scaffolded code.
+Take a look at the database you'll use to generate the scaffolded code:
 
-1. In the **EXPLORER**, expand the *Promotions** directory, right-click on *Promotions.db* file, and then select **Open Database**. The new database opens in the **SQLITE EXPLORER** pane.
-1. In the **SQLITE EXPLORER** pane, expand the *Promotions.db* and *Coupons* nodes. Note the data schema.
+1. On the **Explorer** pane, expand the *Promotions* directory, right-click the *Promotions.db* file, and then select **Open Database**.
+
+    The new database opens in the **SQLite Explorer** folder.
+1. In the **SQLite Explorer** folder, expand the *Promotions.db* and *Coupons* nodes. Note the data schema.
 1. Right-click the *Coupons* node and select **Show table**. Inspect the coupon data.
 
 ## Scaffold the promotions context and coupon model
 
-Now it's time to scaffold the code using the database.
+Now, you use the database to scaffold the code:
 
 1. Run the following command:
 
@@ -20,14 +22,14 @@ Now it's time to scaffold the code using the database.
 
     The preceding command:
 
-    - Scaffolds a `DbContext` and model classes using the provided connection string.
-    - Specifies the `Microsoft.EntityFrameworkCore.Sqlite` database provider should be used.
+    - Scaffolds `DbContext` and model classes by using the provided connection string.
+    - Specifies to use the `Microsoft.EntityFrameworkCore.Sqlite` database provider.
     - Specifies directories for the resulting `DbContext` and model classes.
 
     > [!NOTE]
-    > For the purposes of this exercise, ignore the warning about your connection string being in source code. For real-world code, always store your connection strings in a secure location.
+    > In this exercise, you can ignore the warning about your connection string being in source code. In real-world code, always store your connection strings in a secure location.
 
-1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string, since SQLite doesn't have a datetime type. Change `Expiration`'s type from a `string?` to a `DateTime`. EF Core will manage the conversion of datetime to string data.
+1. Open *Models\Coupon.cs*. The `Expiration` property is defined as a string because SQLite doesn't have a datetime data type. Change the `Expiration` type from `string?` to `DateTime`. EF Core manages the conversion of datetime data to string data.
 
     ```csharp
     using System;
@@ -45,16 +47,15 @@ Now it's time to scaffold the code using the database.
     ```
 
     > [!TIP]
-    > New scaffolded files can be generated if the database changes. The generated files are overwritten each time, but are created as `partial` classes so you can extend them with custom properties and behaviors in your own, separate files.
+    > If the database changes, you can generate new scaffolded files. The generated files are overwritten each time, but they are created as `partial` classes, so you can extend them with custom properties and behaviors in your own, separate files.
 
-## Add coupon endpoint
+## Add a coupon endpoint
 
-Before we can test the scaffolded code, we need to add an endpoint to the API. Let's add a new API controller.
+Before you can test the scaffolded code, you need to add an endpoint to the API. So next, you add a new API controller.
 
-> [!NOTE]
-> This module doesn't spend much time explaining API controllers. To better understand how API controllers work, see [Create a web API with ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
+To better understand how API controllers work, see [Create a web API with ASP.NET Core controllers](/training/modules/build-web-api-aspnet-core/).
 
-1. In the *Controllers* folder, add a file named *CouponController.cs* containing the following code:
+1. In the *Controllers* folder, add a file named *CouponController.cs* that contains the following code:
 
     ```csharp
     using ContosoPizza.Data;
@@ -85,12 +86,12 @@ Before we can test the scaffolded code, we need to add an endpoint to the API. L
     }
     ```
 
+    This code adds an `api/coupon` endpoint to the API.
+
     In the preceding code:
 
-    - A `PromotionsContext` is injected into the constructor.
+    - A `PromotionsContext` object is injected into the constructor.
     - The `Get` method returns all the coupons.
-
-    This adds a `api/coupon` endpoint to the API.
 
 1. In *Program.cs*, replace the `// Add the PromotionsContext` comment with the following code:
 
@@ -98,15 +99,15 @@ Before we can test the scaffolded code, we need to add an endpoint to the API. L
     builder.Services.AddSqlite<PromotionsContext>("Data Source=Promotions/Promotions.db");
     ```
 
-    The preceding registers `PromotionsContext` with the dependency injection system.
+    This code registers `PromotionsContext` with the dependency injection system.
 
-1. Save all your changes (GitHub Codespaces saves automatically) and run the app as before with `dotnet run`.
+1. Save all your changes and run the app by using `dotnet run`.
 
 ## Test the endpoint
 
-Now that the endpoint is added, let's test the coupon operations.
+Now that the endpoint is added, test the coupon operations:
 
-1. Navigate to the API's Swagger UI as before (or refresh the existing UI in your browser).
+1. Go to the API's Swagger UI like you did in an earlier exercise (or refresh the existing UI in your browser).
 
 1. Under the **Coupon** heading, expand the **GET** operation and select **Try it out**.
 1. Select **Execute**. The response body shows the coupons from the database:
@@ -126,6 +127,6 @@ Now that the endpoint is added, let's test the coupon operations.
     ]
     ```
 
-    Note `expiration` is a datetime.
+    Note that `expiration` is a datetime value.
 
 That's it! You've created and modified scaffolding from an existing database!
