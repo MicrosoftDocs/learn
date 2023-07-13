@@ -1,4 +1,4 @@
-Adding your data is done through the Azure AI Studio, in the **Chat** playground. Currently, all of the data source options for Azure OpenAI on your data results in a Cognitive Search index that is used to augment the prompt sent to the model. When adding your data, you can choose to upload your data files, use data in a blob storage account, or connect to an existing Cognitive Search index.
+Adding your data is done through the Azure AI Studio, in the **Chat** playground. The data source you add is then used to augment the prompt sent to the model. When adding your data, you can choose to upload your data files, use data in a blob storage account, or connect to an existing Cognitive Search index.
 
 If you're uploading or using files already in a storage account, Azure OpenAI on your data supports `.md`, `.txt`, `.html`, `.pdf`, and Microsoft Word or PowerPoint files. If any of these files contain graphics or images, the response quality depends on how well text can be extracted from the visual content.
 
