@@ -41,4 +41,4 @@ units:
 - learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
 - learn.azure.deploy-configure-azure-developer-cli-templates.summary
 badge:
-  uid: learn.azure.introduction-to-azure-developer-cli.badge
+  uid: learn.azure.deploy-configure-azure-developer-cli-templates.badge
