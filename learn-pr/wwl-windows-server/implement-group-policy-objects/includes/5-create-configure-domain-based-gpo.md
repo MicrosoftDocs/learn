@@ -114,7 +114,7 @@ The following video demonstrates how to create, configure, and apply GPOs. The m
 9.  Change the security filtering settings so that the policy only applies to a group, and not Authenticated Users.
 10. Verify the effect of the change of inheritance and security filtering.
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4McIe]
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE4McIe]
 
 ---
 
