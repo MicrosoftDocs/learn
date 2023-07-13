@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-azure-hybrid-services.4-hybrid-identity
 metadata:
   title: Hybrid identity
   description: Hybrid identity
-  ms.date: 03/16/2023
+  ms.date: 07/12/2023
   author: Orin-Thomas
   ms.author: orthomas
   ms.topic: interactive-tutorial
@@ -20,23 +20,23 @@ quiz:
 
   - content: "Among the virtual machines that Tailwind Traders is planning to migrate out of the Auckland datacenter, several host applications have dependencies on AD DS that include custom schema extensions and custom AD DS partitions. Which of the following hybrid-identity solutions can the company use to support these applications if the virtual machines that host the applications are migrated to run as Azure infrastructure as a service (IaaS) VMs?"
     choices:
-    - content: "Configure Azure AD Connect to replicate the on-premises AD DS identities to Azure. Create a subnet in an Azure virtual network. Migrate the VMs from the Auckland datacenter to this subnet. Join the migrated VMs to the Azure AD domain."
+    - content: "Configure Microsoft Entra Connect to replicate the on-premises AD DS identities to Azure. Create a subnet in an Azure virtual network. Migrate the VMs from the Auckland datacenter to this subnet. Join the migrated VMs to the Entra Domain Services domain."
       isCorrect: false
-      explanation: "Incorrect. Azure AD DS doesn't provide the ability to host the custom AD partitions or schema extensions required for the applications to function."
-    - content: "Create a subnet in an Azure virtual network. Configure a VPN connection between this virtual network and the on-premises network. Deploy two AD DS domain controllers on VMs running Windows Server 2019 on this subnet. Configure a separate AD DS site for the Azure subnet. Migrate the VMs from the Auckland datacenter to this subnet."
+      explanation: "Incorrect. Entra Domain Services doesn't provide the ability to host the custom AD partitions or schema extensions required for the applications to function."
+    - content: "Create a subnet in an Azure virtual network. Configure a VPN connection between this virtual network and the on-premises network. Deploy two AD DS domain controllers on VMs running Windows Server 2022 on this subnet. Configure a separate AD DS site for the Azure subnet. Migrate the VMs from the Auckland datacenter to this subnet."
       isCorrect: true
       explanation: "Correct. Deploying AD DS domain controllers on Azure IaaS VMs and configuring those domain controllers to be part of the on-premises forest is one way of ensuring that the applications have access to the required schema extensions and custom Active Directory partitions."
-    - content: "Configure Azure AD Connect to replicate the on-premises AD DS identities to Azure. Create a subnet in an Azure virtual network. Configure Azure AD DS and configure it to be available to this newly created subnet. Migrate the VMs from the Auckland datacenter to this subnet. Join the migrated VMs to the Azure AD domain."
+    - content: "Configure Microsoft Entra Connect to replicate the on-premises AD DS identities to Azure. Create a subnet in an Azure virtual network. Configure Entra Domain Services and configure it to be available to this newly created subnet. Migrate the VMs from the Auckland datacenter to this subnet. Join the migrated VMs to the Entra Domain Services domain."
       isCorrect: false
-      explanation: "Incorrect. Azure AD DS doesn't provide the ability to host the custom AD partitions or schema extensions required for the applications to function."
+      explanation: "Incorrect. Entra Domain Services doesn't provide the ability to host the custom AD partitions or schema extensions required for the applications to function."
 
 
-  - content: "A Tailwind Traders subsidiary is deploying Windows Server 2019 IaaS VMs onto a subnet in an Azure virtual network. This virtual network is connected to a separate subscription and Azure AD tenancy. These computers need to be domain joined for security and identity purposes, but they don't require complex group policy configuration. These VMs don't require identities synchronized from any on-premises Tailwind Traders AD DS instance. You want to minimize the number of VMs that you deploy to achieve this goal. Which of the following solutions is appropriate?"
+  - content: "A Tailwind Traders subsidiary is deploying Windows Server 2022 IaaS VMs onto a subnet in an Azure virtual network. This virtual network is connected to a separate subscription and Entra ID tenancy. These computers need to be domain joined for security and identity purposes, but they don't require complex group policy configuration. These VMs don't require identities synchronized from any on-premises Tailwind Traders AD DS instance. You want to minimize the number of VMs that you deploy to achieve this goal. Which of the following solutions is appropriate?"
     choices:
-    - content: "Deploy Azure AD Connect on each VM and synchronize with the Azure AD tenancy."
+    - content: "Deploy Microsoft Entra Connect on each VM and synchronize with the Entra ID tenancy."
       isCorrect: false
-      explanation: "Incorrect. Deploying Azure AD Connect on a VM does not allow it to be domain joined. Azure AD Connect synchronizes an on-premises AD DS instance with Azure AD."
-    - content: "Deploy Azure AD DS and configure it for the subnet that hosts the virtual machines. Join the VMs to the Azure AD DS domain."
+      explanation: "Incorrect. Deploying Microsoft Entra Connect on a VM does not allow it to be domain joined. Microsoft Entra Connect synchronizes an on-premises AD DS instance with Entra ID."
+    - content: "Deploy Entra Domain Services and configure it for the subnet that hosts the virtual machines. Join the VMs to the Entra Domain Services domain."
       isCorrect: true
       explanation: "Correct. This option allows for a domain join without requiring the deployment of additional IaaS VMs as domain controllers."
     - content: "Deploy AD DS on a new VM on the subnet. Join the VMs to the AD DS domain."
