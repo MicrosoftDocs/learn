@@ -6,7 +6,7 @@ However, `azd` also offers more granular commands that map to specific stages of
 
 * **`azd deploy`** - This command will package and redeploy your application source code to Azure. However, it will not execute any of the infrastructure as code files that apply changes to your Azure resources.
 
-* **`azd provision`** - This command will create or update Azure resources based on the changes to your infrastructure as code files. For example, `azd provision` will create a new storage account in Azure if you add it to your Bicep or Terraform files. However, this command does not package or redeploy your application source code.
+* **`azd provision`** - This command will create or update Azure resources based on changes to your infrastructure as code files. For example, `azd provision` will create a new storage account in Azure if you add it to your Bicep or Terraform files. However, this command does not package or redeploy your application source code.
 
 ## Update the app code
 
