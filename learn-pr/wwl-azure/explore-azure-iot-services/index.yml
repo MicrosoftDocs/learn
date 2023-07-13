@@ -41,3 +41,4 @@ units:
 - learn.wwl.explore-azure-iot-services.summary
 badge:
   uid: learn.wwl.explore-azure-iot-services.badge
+hidden: true
