@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.use-restricted-offline-deployment
+title: Scenario - Restricted offline deployment
+metadata:
+  title: Scenario - Restricted offline deployment
+  description: "This unit explores a fictional real-world scenario for restricted offline deployment."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: holoLens
+durationInMinutes: 4
+content: |
+  [!include[](includes/6-use-restricted-offline-deployment.md)]
