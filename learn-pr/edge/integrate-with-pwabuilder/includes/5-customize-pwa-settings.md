@@ -19,11 +19,11 @@ To edit your manifest on the PWABuilder site:
    - **Info tab**: Contains manifest members that contain display information for your application.
    - **Settings tab**: Contains manifest members that manage how your application runs and displays at the most basic level. This includes how your application is oriented, its start URL, and other important options.
    - **Platform tab**: Contains manifest members that relate to how your application interacts with native operating systems and app stores.
-   - **Icons tab**: Allows you to generate proper icons for your progressive web app. See Icon Generation for more details.  
+   - **Icons tab**: Allows you to generate proper icons for your progressive web app.
    - **Screenshots tab**: Allows you to generate screenshots to be displayed with your progressive web app in stores.
    - **Code tab**: Contains a preview of the manifest code generated if you download your edited manifest.
 
-1. After you edit and review your manifest, click the **Download Manifest** button to download a copy to add to your PWA.
+1. After you edit and review your manifest, select the **Download Manifest** button to download a copy to add to your PWA.
 
 ## Generate icon from PWABuilder
 
@@ -46,7 +46,7 @@ Next, you need to add references to the downloaded icons in your manifest.json. 
 1. Create an icon folder within the assets folder.
 1. Add all of the icon images into the newly created icon folder.
 1. Finally, copy and paste the icons field in the icons.json field into your manifest.json.
-1. Once the folders are included and the icons member is added to your manifest, your new icons will be properly associated with your PWA.
+1. Once the folders are included and the icons member is added to your manifest, your new icons are properly associated with your PWA.
 
 ## Modify the app manifest file properties
 
@@ -76,7 +76,7 @@ The app manifest provides metadata about the web application. By updating your a
 
 ## Additional PWA features
 
-When using PWABuilder to create a PWA, you can incorporate additional features like push notifications, background sync, and offline capabilities by extending the generated service worker file and customizing your app's code. Here's how to implement these features using PWABuilder:
+When using PWABuilder to create a PWA, you can incorporate more features like push notifications, background sync, and offline capabilities by extending the generated service worker file and customizing your app's code. Here's how to implement these features using PWABuilder:
 
 ### Implement push notifications
 
@@ -90,7 +90,7 @@ To enable push notifications in your PWABuilder-generated PWA, follow these step
 
 To implement background sync with PWABuilder, follow these steps:
 
-1. **Register a sync event**: In your app's JavaScript file, register a sync event with a unique tag by calling the SyncManager.register() method. This event will be triggered when the device is back online.
+1. **Register a sync event**: In your app's JavaScript file, register a sync event with a unique tag by calling the SyncManager.register() method. This event is triggered when the device is back online.
 1. **Update the service worker**: Modify the generated service worker file from PWABuilder to listen for 'sync' events. Inside the sync event listener, perform the necessary actions, such as sending data to the server or fetching updates.
 
 To learn more about the manifest file, refer to [PWABuilder - Customizing Your Web App Manifest](https://docs.pwabuilder.com/#/builder/manifest) for the full breakdown.

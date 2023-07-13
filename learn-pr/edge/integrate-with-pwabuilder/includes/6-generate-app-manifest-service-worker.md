@@ -2,7 +2,7 @@ In this exercise, you'll practice generating an app manifest and service worker 
 
 ## Generate app manifest
 
-1. If your previous session on PWABuilder is still active, continue from where you left off. If not, navigate to PWABuilder and enter the URL for the website you are converting to a PWA. For this exercise, we'll use <https://webboard.app/>. Select **Start** to analyze the demo website's PWA readiness.
+1. If your previous session on PWABuilder is still active, continue from where you left off. If not, navigate to PWABuilder and enter the URL for the website you're converting to a PWA. For this exercise, we'll use <https://webboard.app/>. Select **Start** to analyze the demo website's PWA readiness.
 1. In the **Manifest** section, select **Edit Your Manifest** to generate and customize the App Manifest.
 
     :::image type="content" source="../media/select-edit-your-manifest-button.png" alt-text="Screenshot of PWABuilder's report card page that shows the Manifest section. The Edit Your Manifest button on the right side of the Manifest section is highlighted.":::
@@ -28,7 +28,7 @@ In this exercise, you'll practice generating an app manifest and service worker 
 
 1. Choose a service worker template based on your needs ("Offline page," "Offline copy with Backup offline page," or "Advanced caching").
 
-    :::image type="content" source="../media/download-a-service-worker-page.png" alt-text="Screenshot of the Download a Service Worker page in PWABuilder that shows the three pre-built Service Workers packages available to download. Select one of the packages.":::
+    :::image type="content" source="../media/download-a-service-worker-page.png" alt-text="Screenshot of the Download a Service Worker page in PWABuilder that shows the three prebuilt Service Workers packages available to download. Select one of the packages.":::
 
 1. Scroll down and select **Download Service Worker** to save the generated service worker file.
 

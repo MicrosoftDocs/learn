@@ -6,7 +6,7 @@ metadata:
   description: Elevate your web development skills by integrating Progressive Web App (PWA) features into projects. Master PWA readiness, app manifest generation, and service worker configuration using PWABuilder. Customize settings and appearance, configure essential PWA features like push notifications and background sync, and transform your project into a polished, app-like experience for users.
   ms.date: 07/11/2023
   author: beth-panx
-  ms.author: Beth.Pan
+  ms.author: xupa
   ms.topic: module-standard-task-based
   ms.prod: microsoft-edge
 summary: >
