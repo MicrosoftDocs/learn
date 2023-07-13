@@ -70,7 +70,7 @@ By default, the response can't be served from the cache, because the customer ID
 
 However, the developers point out that the customer ID doesn't alter the response. It would be more efficient if requests for the same product from different customers could be returned from the cache. Customers would still see the correct information.
 
-To modify this default behavior, use the `<vary-by-query-parameter> element within the &`<cache-lookup>` policy:
+To modify this default behavior, use the `vary-by-query-parameter` element within the `<cache-lookup>` policy:
 
 ```xml
 <policies>
@@ -101,7 +101,7 @@ Within the `<cache-lookup>` tag, there's also the `vary-by-developer` attribute,
 
 ## Use an external cache
 
-API Management instances usually have an internal cache, which is used to store prepared responses to requests. However, if you prefer, you can use an external cache instead. One possible external cache system that you can use is the Azure Cache for Redis service.
+API Management instances usually have an internal cache, which is used to store prepared responses to requests. However, if you prefer, you can use a Redis-compatible external cache instead. One possible external cache system that you can use is the Azure Cache for Redis service.
 
 You might choose to use an external cache because:
 
