@@ -44,3 +44,4 @@ modules:
 - learn.wwl.explore-time-series-insights-integration
 trophy:
   uid: learn.wwl.develop-data-insights-business-integrations.trophy
+hidden: true
