@@ -1,3 +1,5 @@
+
+
 Writing prompts is the foundation for using generative AI and there are two places prompt engineering happens. 
 
 Back end 
