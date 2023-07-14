@@ -30,7 +30,7 @@ Companies around the world use SQL Server on VMs. One example is Allscripts. All
 
 ## IaaS vs. PaaS
 
-SQL Server on a VM is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance, and Azure SQL Database, are platform as a service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions, like upgrading, patching, backups, and monitoring. Here are some key features of SQL Managed Instance and SQL Database:  
+SQL Server on a VM is considered IaaS. The other deployment options in the Azure SQL platform, Azure SQL Managed Instance and Azure SQL Database, are platform as a service (PaaS) deployments. These PaaS Azure SQL deployment options contain a fully managed database engine that automates most of the database management functions, like upgrading, patching, backups, and monitoring. Here are some key features of SQL Managed Instance and SQL Database:  
 
 - **Business continuity** allows your business to continue operating in the face of disruption.
 
@@ -56,17 +56,17 @@ SQL Server on a VM is considered IaaS. The other deployment options in the Azure
 
 ### Versionless database services
 
-Another significant difference between IaaS and PaaS is *versionless SQL*. Unlike IaaS, which is tied to a specific SQL Server version, like SQL Server 2019, SQL Database and SQL Managed Instance are versionless. The main "branch" of the SQL Server engine codebase powers SQL Server 2019, SQL Database, and SQL Managed Instance.  
+Another significant difference between IaaS and PaaS is *versionless SQL*. Unlike IaaS, which is tied to a specific SQL Server version, SQL Database and SQL Managed Instance are versionless. The main "branch" of the SQL Server engine codebase powers SQL Server 2019, SQL Database, and SQL Managed Instance.
 
-Although SQL Server versions come out every few years, PaaS services allow Microsoft to continually update SQL databases/instances. Microsoft rolls out fixes and features as appropriate. As a consumer of the service, you don't have control over these updates, and the result of `@@VERSION` won't line up to a specific SQL Server version. But versionless SQL allows for worry-free patching for both the underlying OS and SQL Server and for Microsoft to give you the latest bits.  
+Although SQL Server versions come out every few years, PaaS services allow Microsoft to continually update SQL databases and instances. Microsoft rolls out fixes and features as appropriate. As a consumer of the service, you don't have control over these updates, and the result of `@@VERSION` doesn't line up to a specific SQL Server version. But versionless SQL allows for worry-free patching for both the underlying OS and SQL Server and for Microsoft to give you the latest bits.  
 
-As new features are developed, some customers are granted access to specific features before they're publicly available through previews. These new features then become available in public previews. Public previews allow everyone to access new features, but there's typically limited support and often discount pricing.
+As new features are developed, some customers are granted access to specific features before they're publicly available. These new features then become available in public previews. Public previews allow everyone to access new features, but there's typically limited support and often discount pricing.
 
 ## SQL Managed Instance
 
 SQL Managed Instance is a PaaS deployment option of Azure SQL. It gives you an instance of SQL Server, but removes much of the overhead of managing a VM. Most of the features available in SQL Server are available in SQL Managed Instance. This option is ideal for customers who want to use instance-scoped features and want to move to Azure without rearchitecting their applications. *Instance-scoped* features are tied to an instance of SQL Server, as opposed to features that are tied to a database in an instance of SQL Server.
 
-SQL Managed Instance instance-scoped features include SQL Server Agent, Service Broker, common language runtime (CLR), Database Mail, linked servers, distributed transactions (preview), and Machine Learning Services. SQL Managed Instance allows you to access instance-scoped features, but you don't have to worry about, nor do you have access to, the OS or the infrastructure underneath.  
+Instance-scoped features of SQL Managed Instance include SQL Server Agent, Service Broker, common language runtime (CLR), Database Mail, linked servers, distributed transactions (preview), and Machine Learning Services. SQL Managed Instance allows you to access instance-scoped features, but you don't have to worry about, nor do you have access to, the OS or the infrastructure underneath.  
 
 :::image type="content" source="../media/3-sql-managed-instance.svg" alt-text="Diagram that describes when to choose Azure SQL Managed Instance." border="false":::
 

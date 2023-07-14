@@ -59,4 +59,4 @@ The [documentation](/azure/azure-sql/database/service-tiers-sql-database-vcore#b
 
 ### Management interfaces
 
-To learn more about the tools, you can check out the [AQL tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module.
+To learn more about the tools, you can check out the [SQL tools documentation](/sql/tools/overview-sql-tools?azure-portal=true), which includes information about and guidance on the various options discussed in this module.

@@ -2,7 +2,7 @@ As you deploy, use, and manage Azure SQL resources, you can use a variety of int
 
 ### Azure portal  
 
-The Azure portal provides a broad set of features for Azure SQL resources, including virtual machines, managed instances, and databases. Through the Azure portal, you can deploy resources, administer resources, and even connect to databases and run queries.
+The [Azure portal](https://portal.azure.com) provides a broad set of features for Azure SQL resources, including virtual machines, managed instances, and databases. Through the Azure portal, you can deploy resources, administer resources, and even connect to databases and run queries.
 
 :::image type="content" source="../media/5-azure-sql-portal.png" alt-text="Screenshot that shows the Azure SQL deployment options in the Azure portal.":::
   
