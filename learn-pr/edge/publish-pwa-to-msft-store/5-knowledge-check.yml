@@ -27,7 +27,7 @@ quiz:
     - content: "Web App Manifest"
       isCorrect: false
       explanation: "Incorrect. The web app manifest doesn't contain the required IDs and display name for packaging your PWA with PWABuilder."
-  - content: "Which of the following is NOT a required step to submit your PWA to the Microsoft Store?"
+  - content: "Which of the following steps is NOT a required step to submit your PWA to the Microsoft Store?"
     choices:
     - content: "Create a developer account in Microsoft Partner Center"
       isCorrect: false
@@ -83,11 +83,11 @@ quiz:
     - content: "Only to prevent other developers from using the same name Partially"
       isCorrect: false
       explanation: "Incorrect. Reserving an app name prevents others from using the same name, but there's another reason as well."
-  - content: "Which of the following is an important Windows-specific feature to test in your PWA?"
+  - content: "Which of the following features is an important Windows-specific feature to test in your PWA?"
     choices:
     - content: "Live Tiles"
       isCorrect: true
-      explanation: "Correct. Live Tiles are a Windows-specific feature that enhance user experience and should be tested in your PWA."
+      explanation: "Correct. Live Tiles are a Windows-specific feature that enhances user experience and should be tested in your PWA."
     - content: "Google Chrome compatibility"
       isCorrect: false
       explanation: "Incorrect. Google Chrome compatibility isn't a Windows-specific feature."

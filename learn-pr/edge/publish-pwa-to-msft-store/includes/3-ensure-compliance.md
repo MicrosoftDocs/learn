@@ -55,4 +55,4 @@ self.addEventListener('push', function(event) {
 
 ## Review store policies and code of conduct
 
-In addition to technical specifications, your PWA must also align with the relevant [store policies and code of conduct](https://learn.microsoft.com/windows/apps/publish/store-policies-and-code-of-conduct). Regularly review these policies to ensure that your application remains in compliance.
+In addition to technical specifications, your PWA must also align with the relevant [store policies and code of conduct](/windows/apps/publish/store-policies-and-code-of-conduct). Regularly review these policies to ensure that your application remains in compliance.
