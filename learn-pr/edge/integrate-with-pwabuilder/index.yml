@@ -18,7 +18,7 @@ abstract: |
   - Customize your PWA's settings and appearance, integrating features like push notifications and background sync.
   - Gain practical experience in generating and customizing app manifests and service workers for PWAs.
 prerequisites: |
-  - Understanding of PWA at beginner level or completion of Introduction for PWABuilder **add link to module**.
+  - Understanding of PWA at beginner level.
   - Basic familiarity with web apps at the beginner level.
   - Intermediate understanding of web development (HTML, CSS, JavaScript, and JSON).
 iconUrl: /training/achievements/generic-badge.svg
