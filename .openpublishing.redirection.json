@@ -24183,6 +24183,11 @@
       "source_path": "learn-pr/ai-business-school/responsible-ai-governing-practices/3-organizational-model.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/transform-your-business-with-microsoft-ai/",
       "redirect_document_id": false
-    }
+    }, 
+    {
+      "source_path": "learn-pr/azure/intro-to-mixed-reality-design/5-mixed-reality-resources.md",
+      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/intro-to-mixed-reality-design/7-mixed-reality-resources",
+      "redirect_document_id": true
+  }
   ]
 }
