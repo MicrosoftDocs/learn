@@ -1,4 +1,4 @@
-To help protect your organization’s workloads from unforeseen disasters, you must first review the company's current BCDR plan. You need to identify the different recovery objectives and scope for the systems that need protection.
+To help protect your organization’s workloads from unforeseen disasters, you must first review the company's current business continuity and disaster recovery (BCDR) plan. You need to identify the different recovery objectives and scope for the systems that need protection.
 
 VMware SRM is a BCDR solution that helps you plan, test, and run VM recoveries between a protected VMware vCenter Server site and a recovery vCenter Server site.
 
@@ -6,7 +6,7 @@ VMware SRM is a BCDR solution that helps you plan, test, and run VM recoveries b
 
 Any loss of service can be disruptive to your staff and users. Every second that systems are unavailable can result in lost revenue for your company. Your company might also face financial penalties for failing to comply with any availability agreements it has for the services it provides.
 
-*BCDR plans* are formal documents that companies create to cover the scope and actions they will take when a disaster or large-scale outage occurs. The organization assesses each outage on its own merit. For example, an organization might put a BCDR plan into action when a datacenter loses power.
+*BCDR plans* are formal documents that companies create to cover the scope and actions they'll take when a disaster or large-scale outage occurs. The organization assesses each outage on its own merit. For example, an organization might put a BCDR plan into action when a datacenter loses power.
 
 ### Recovery time objective (RTO)
 
@@ -14,20 +14,20 @@ A *recovery time objective (RTO)* is a measure of the maximum amount of time you
 
 ### Recovery point objective
 
-A business might decide to perform a backup every 24 hours, 12 hours, or even in real time. However, if a disaster occurs, there's always some data loss. A *recovery point objective (RPO)* is a measure of the maximum amount of data loss that's acceptable following a disaster.
+A business might decide to perform a backup every 24 hours, every 12 hours, or even in real time. However, if a disaster occurs, there's always some data loss. A *recovery point objective (RPO)* is a measure of the maximum amount of data loss that's acceptable following a disaster.
 
-For example, if an organization performs a backup at midnight every 24 hours, and a disaster happened at 9:00 AM, then nine hours of data would be lost. If the organization’s RPO is 12 hours, a data loss of nine hours is acceptable. If the RPO is four hours, the data loss wouldn’t be acceptable.                                                     
+For example, if an organization performs a backup at midnight every 24 hours, and a disaster happened at 9:00 AM, then nine hours of data would be lost. If the organization’s RPO is 12 hours, a data loss of nine hours is acceptable. If the RPO is four hours, the data loss isn't acceptable.
 
-## What is VMware SRM? 
+## What is VMware SRM?
 
 VMware SRM can contribute to your BCDR plan because it can replicate workloads from a primary site to a secondary site. If an issue occurs at the primary site, VMware SRM can be set up to automatically replicate the protected VMs to another location. You can also use VMware SRM to migrate VMs from your on-premises infrastructure to Azure VMware Solution in the cloud.
 
-Azure VMware Solution combines VMware's Software Defined Data Center (SDDC) software with the Azure cloud service. Microsoft manages Azure VMware Solution to meet performance, availability, security, and compliance requirements. 
+Azure VMware Solution combines VMware's Software Defined Data Center (SDDC) software with the Azure cloud service. Microsoft manages Azure VMware Solution to meet performance, availability, security, and compliance requirements.
 
 Microsoft provides the following components to run Azure VMware Solution at scale in Azure:
 
 - Management systems
-- Networking 
+- Networking
 - Operating platform
 - Back-end infrastructure operations
 
@@ -46,7 +46,7 @@ You can replicate your VMs, create non-disruptive tests, and prepare dynamic rec
 
 Before you can deploy protection for your on-premises VMware vCenter Server site to the recovery site in Azure VMware Solution, you must ensure that the sites meet the following prerequisites:
 
-- Networking: The private-cloud environment for Azure VMware Solution must be accessible from on-premises and Azure-based resources. You can use the following services to deliver interconnectivity:
+- **Networking**: The private-cloud environment for Azure VMware Solution must be accessible from on-premises and Azure-based resources. You can use the following services to deliver interconnectivity:
 
   - Azure ExpressRoute
 
@@ -55,9 +55,9 @@ Before you can deploy protection for your on-premises VMware vCenter Server site
   - Azure Virtual WAN
 
 > [!NOTE]
-> We recommend at least 2 gigabits per second (Gbps) throughput for ExpressRoute connectivity between on-premises and Azure VMware Solution.
+> We recommend at least two gigabits per second (Gbps) throughput for ExpressRoute connectivity between on-premises and Azure VMware Solution.
 
-- Name resolution: You must implement Domain Name System (DNS) resolution between on-premises SRM and virtual cloud appliances. You can use both public DNS and private DNS. With a support request, you can configure private DNS for Azure VMware Solution with appropriate conditional forwarding rules.
+- **Name resolution**: You must implement Domain Name System (DNS) resolution between on-premises SRM and virtual cloud appliances. You can use both public DNS and private DNS. With a support request, you can configure private DNS for Azure VMware Solution with appropriate conditional forwarding rules.
 
 - The vCenter Server version must be compatible with the VMware SRM version.
 
@@ -67,6 +67,6 @@ Before you can deploy protection for your on-premises VMware vCenter Server site
 
 ### Scenario 2: Primary Azure VMware Solution to a secondary Azure VMware Solution
 
-This scenario is similar to the first, except that both the protection and recovery sites run in different Azure regions. You must deploy Azure VMware Solution in a private cloud in both the primary and secondary region. in addition, both regions must be connected with the ExpressRoute Global Reach. Both sites must include VMware SRM and vSphere Replication appliances.
+This scenario is similar to the first, except that both the protection and recovery sites run in different Azure regions. You must deploy Azure VMware Solution in a private cloud in both the primary and secondary region. In addition, both regions must be connected with the ExpressRoute Global Reach. Both sites must include VMware SRM and vSphere Replication appliances.
 
 The next unit explains how to set up and configure this scenario.
