@@ -1,6 +1,6 @@
 Testing plays a vital role in identifying and resolving issues that could affect user experience, performance, and compatibility.
 
-## Using Visual Studio to Deploy and Debug
+## Using Visual Studio to deploy and debug
 
 Visual Studio is considered the go-to tool for debugging and deployment. HoloLens apps can be deployed from Visual Studio either over Wi-Fi or USB. The Visual Studio profiling tools allow you to analyze your app's performance and resource use. The profiling tool includes tools to optimize CPU, memory, graphics, and network use. You also use Visual Studio to debug an installed Universal Windows app without deploying from a Visual Studio project. This method is useful if you want to debug an installed app package or debug an app that's already running.
 
