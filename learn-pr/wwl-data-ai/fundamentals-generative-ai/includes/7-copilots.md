@@ -1,14 +1,15 @@
-AI-powered assistants based on LLMs that work alongside you to dramatically increase productivity and extend your capabilities. 
+An example of an intelligent application is a **copilot**, an AI-powered assistant based on large language models that work alongside you to dramatically increase productivity and extend your capabilities. Copilots are based on a common architecture, so developers can build custom copilots for a variety of business-specific applications and services.
 
-Examples: 
+Some examples include: 
 
-Bing / Edge copilot: Provides AI help when browsing or searching the Internet by generating natural language answers to questions based on context rather than just search results of indexed pages. 
+- **Bing / Edge copilot**: provides AI help when browsing or searching the Internet by generating natural language answers to questions based on context rather than just search results of indexed pages. 
 
-M365 copilot: works alongside you in productivity and communication apps, assisting you in creating effective documents, spreadsheets, presentations, emails, and other ways. 
+- **M365 copilot**: works alongside you in productivity and communication apps, assisting you in creating effective documents, spreadsheets, presentations, emails, and other ways. 
 
-GitHub copilot: Provides support to software developers, helping them write, document, and test code.  
+- **GitHub copilot**: provides support to software developers, helping them write, document, and test code.  
 
-Based on a common architecture, so developers can build custom copilots for business-specific applications and services. 
-
-Extensible through plug-ins, that can add a specific context layer to prompts and “ground” the responses returned by LLMs. For example, the prompt “Tell me about Edinburgh” to an LLM might result in historic, cultural, and geographical information about Edinburgh. A plug-in for a travel company might provide additional context data that enables the response to include details of hotels in Edinburgh. 
+## Extending and customizing pilots
+Plugins, computer applications that can be added to other applications to extend their capabilities, can be used with copilots. An example of a generic plugin is an application you download and add to your web browser that can be used to count the number of words on a web page.   
+ 
+Plugins for copilots can add a specific context layer to "ground" the responses returned by large language models. For example, the prompt "Tell me about Edinburgh" to an LLM might result in historic, cultural, and geographical information about Edinburgh. A plug-in for a travel company might provide additional context data that enables the response to include details of hotels in Edinburgh. 
 
