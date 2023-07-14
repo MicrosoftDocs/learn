@@ -5,8 +5,8 @@ metadata:
   title: Summary
   description: Summary of using eye tracking and voice commands
   ms.date: 06/26/2023
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 4

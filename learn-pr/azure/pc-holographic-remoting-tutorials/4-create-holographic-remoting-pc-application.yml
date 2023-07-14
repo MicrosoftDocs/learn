@@ -5,8 +5,8 @@ metadata:
   title: Create a Holographic Remoting PC application
   description: Introduction to create Holographic Remoting pc application
   ms.date: 06/26/2023
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  author: marlenaklein-msft
+  ms.author: marlenakleina
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 durationInMinutes: 1

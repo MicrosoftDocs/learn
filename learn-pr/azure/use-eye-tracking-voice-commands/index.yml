@@ -4,8 +4,8 @@ metadata:
   title: Enable eye-tracking and voice commands for objects on the HoloLens 2
   description: This course provides the user an overall understanding on how to use eye-tracking and voice commands
   ms.date: 06/26/2023
-  author: Sean-Kerawala
-  ms.author: sekerawa
+  author: marlenaklein-msft
+  ms.author: marlenaklein
   ms.topic: interactive-tutorial
   ms.prod: learning-mrtk
 title: Enable eye-tracking and voice commands for objects on the HoloLens 2
