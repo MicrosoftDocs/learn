@@ -6,7 +6,7 @@ metadata:
   description: Learn how to plan for sizing and networking of Azure virtual machines running Linux.
   ms.date: 04/07/2023
   author: chasecrum
-  ms.author: robmcm
+  ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 15

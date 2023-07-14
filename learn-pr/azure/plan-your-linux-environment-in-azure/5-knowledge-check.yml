@@ -6,7 +6,7 @@ metadata:
   description: Knowledge check
   ms.date: 04/07/2023
   author: chasecrum
-  ms.author: robmcm
+  ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 8
