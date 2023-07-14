@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110066
-labModal: true
+# labId: 110066
+labModal: false
 durationInMinutes: 60
 content: |
   [!include[](includes/2-provision-deprovision-devices-using-individual-enrollments.md)]
