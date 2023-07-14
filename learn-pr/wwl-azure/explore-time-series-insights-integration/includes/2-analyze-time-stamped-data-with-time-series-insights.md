@@ -1,2 +1,4 @@
+The instructions for this lab can be found [here](https://github.com/MicrosoftLearning/MSLearnLabs-AZ-220-Microsoft-Azure-IoT-Developer/blob/master/Instructions/Labs/LAB_AK_10-analyze-time-stamped-data-with-time-series-insights.md). You can complete the lab exercises using a Windows machine and your own Microsoft Azure subscription. If you don't have an active Azure subscription, you can create a [free account](https://azure.microsoft.com/free).
+
 > [!TIP]
-> When you finish the lab exercises, end the lab to close the VM. Don't forget to come back and complete the knowledge check! The knowledge check is required in order to earn points for completing this module. After completing the lab instruction steps, you may want to delete any Azure resources that you created during the lab.
+> When you finish the lab exercises. Don't forget to come back and complete the knowledge check! The knowledge check is required in order to earn points for completing this module. After completing the lab instruction steps, you may want to delete any Azure resources that you created during the lab.
