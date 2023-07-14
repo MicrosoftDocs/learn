@@ -4,11 +4,11 @@ title: Perform common operations with the Event Hubs client library
 metadata:
   title: Perform common operations with the Event Hubs client library
   description: "Perform common operations with the Event Hubs client library"
-  ms.date: 02/04/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/6-event-hubs-programming-guide.md)]

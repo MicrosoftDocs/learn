@@ -7,8 +7,8 @@ metadata:
   author: drguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: Python
 title: What is your super sleuth personality?
 summary: What is your super sleuth personality? Use Python to build a quiz to share with your friends by using Boolean commands and conditionals.
 abstract: |

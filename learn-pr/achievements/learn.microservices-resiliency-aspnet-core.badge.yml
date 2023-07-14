@@ -4,4 +4,5 @@ metadata:
   title: >-
     Microsoft Badge: Implement resiliency in a cloud-native ASP.NET Core
     microservice was issued by Microsoft
-socialImageUrl: /training/achievements/aspnetcore/microservices-resiliency-aspnet-core-social.png
+socialImageUrl: >-
+  /training/achievements/aspnetcore/microservices-resiliency-aspnet-core-social.png

@@ -1,3 +1,5 @@
+
+
 SAP application servers and the Central Services clusters can scale up/down or scale out by adding more instances. The AnyDB database can scale up/down but doesn't scale out. The SAP database container for AnyDB doesn't support sharding.
 
 ## SAP HANA scale-out

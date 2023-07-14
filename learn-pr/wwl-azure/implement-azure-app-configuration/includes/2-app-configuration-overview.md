@@ -1,5 +1,5 @@
 
-Modern programs, especially programs running in a cloud, generally have many components that are distributed in nature. Spreading configuration settings across these components can lead to hard-to-troubleshoot errors during an application deployment. Use App Configuration to store all the settings for your application and secure their access in one place.
+Azure App Configuration provides a service to centrally manage application settings and feature flags. Modern programs, especially programs running in a cloud, generally have many components that are distributed in nature. Spreading configuration settings across these components can lead to hard-to-troubleshoot errors during an application deployment. Use App Configuration to store all the settings for your application and secure their accesses in one place.
 
 App Configuration offers the following benefits:
 
@@ -10,7 +10,7 @@ App Configuration offers the following benefits:
 * Dedicated UI for feature flag management
 * Comparison of two sets of configurations on custom-defined dimensions
 * Enhanced security through Azure-managed identities
-* Complete data encryptions, at rest or in transit
+* Encryption of sensitive information at rest and in transit
 * Native integration with popular frameworks
 
 App Configuration complements Azure Key Vault, which is used to store application secrets. App Configuration makes it easier to implement the following scenarios:
@@ -25,8 +25,10 @@ The easiest way to add an App Configuration store to your application is through
 
 | Programming language and framework | How to connect |
 |--|--|
-| .NET Core and ASP.NET Core | App Configuration provider for .NET Core |
-| .NET Framework and ASP.NET | App Configuration builder for .NET |
-| Java Spring | App Configuration client for Spring Cloud |
-| Others | App Configuration REST API |  
+| .NET Core and ASP.NET Core | App Configuration [provider](/dotnet/api/Microsoft.Extensions.Configuration.AzureAppConfiguration) for .NET Core |
+| .NET Framework and ASP.NET | App Configuration [builder](https://github.com/aspnet/MicrosoftConfigurationBuilders/blob/main/README.md#azureappconfigurationbuilder) for .NET |
+| Java Spring | App Configuration [client](https://microsoft.github.io/spring-cloud-azure/docs/azure-app-configuration/2.9.0/reference/html/index.html) for Spring Cloud |
+| JavaScript/Node.js | App Configuration [client](https://github.com/Azure/azure-sdk-for-js/tree/main/sdk/appconfiguration/app-configuration) for JavaScript |
+| Python | App Configuration [client](https://github.com/Azure/azure-sdk-for-python/tree/main/sdk/appconfiguration/azure-appconfiguration) for Python |
+| Others | App Configuration [REST API](/rest/api/appconfiguration/) |  
 

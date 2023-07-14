@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-c-sharp-methods-parameters.exercise-challenge-email-addresses
-title: Complete the challenge
+title: Exercise - Complete the challenge to display email addresses
 metadata:
-  title: Complete the challenge
-  description: "Complete the challenge"
-  ms.date: 03/29/2023
+  title: Exercise - Complete the challenge to display email addresses
+  description: "Exercise - Complete the challenge to display email addresses"
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

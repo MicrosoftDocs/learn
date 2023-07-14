@@ -5,8 +5,8 @@ metadata:
   title: Discover cloud solutions with Azure
   description: Overview of the benefits of working on the cloud for the public sector. 
   ms.date: 02/23/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

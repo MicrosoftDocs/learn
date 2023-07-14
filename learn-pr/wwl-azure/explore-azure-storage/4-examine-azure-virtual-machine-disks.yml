@@ -4,13 +4,11 @@ title: Examine Azure virtual machine disks
 metadata:
   title: Examine Azure virtual machine disks
   description: "Examine Azure virtual machine disks"
-  ms.date: 08/19/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/4-examine-azure-virtual-machine-disks.md)]

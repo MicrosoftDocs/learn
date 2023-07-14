@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-c-sharp-methods-return-values.review-solution-dice-game
-title: Review the solution
+title: Review the solution to add methods to make the game playable
 metadata:
-  title: Review the solution
-  description: "Review the solution"
-  ms.date: 03/21/2023
+  title: Review the solution to add methods to make the game playable
+  description: "Review the solution to add methods to make the game playable"
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

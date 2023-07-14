@@ -1,6 +1,6 @@
 To start with the scalability project your company wants to achieve, you first need to understand what scalability is and how it's applied to Kubernetes itself and its applications.
 
-In this chapter, you'll review some concepts of scalability.
+In this chapter, we review some scalability concepts.
 
 ## Scalability
 
@@ -22,27 +22,27 @@ These applications are mostly hosted in VMs as opposed to distributed systems as
 
 Despite the cost being manageable, huge VMs can be too expensive because the cost of adding more compute power is bigger comparable to the cost of duplicating small VMs.
 
-Also, there's an upper limit to the number of resources you can add to a single VM, meaning that you'll eventually duplicate the VM once you reach the upper bound.
+Also, there's an upper limit to the number of resources you can add to a single VM, meaning that you must eventually duplicate the VM once you reach the upper bound.
 
 ### Horizontal scalability
 
-However, horizontal scalability is the most used type of scalability when you have distributed applications, such as those deployed in AKS. It consists in duplicating the whole application and balancing the load among them.
+Horizontal scalability is the most used type of scalability for distributed applications, such as those deployed in AKS. It consists of duplicating the whole application and balancing the load among the application instances.
 
 :::image type="content" source="../media/2-horizontal-scaling.png" alt-text="Horizontal scaling diagram.":::
 
-Scaling horizontally is called *scaling out*, it's widely used in stateless systems since you can spin up several containers with the same application in a single VM, this way you can extract most resources while you continue to pay a single instance instead of multiple VMs.
+Scaling horizontally is called *scaling out*, it's widely used in stateless systems since you can spin up several containers with the same application in a single VM. Scaling out allows you to extract the most resources while you continue to pay for a single VM.
 
-Since the company site is stateless, this is the best course of action, also because Kubernetes provides out-of-the-box a resource called *HorizontalPodAutoscaler* that allows you to scale out your deployments.
+Since the company site is stateless, scaling out is the best course of action, also because Kubernetes provides out-of-the-box a resource called *HorizontalPodAutoscaler* that allows you to scale out your deployments.
 
 ## Manual scalability on Kubernetes
 
 Before getting into the HPA (*HorizontalPodAutoscaler*) resource, you must know that it's possible to manually scale deployments in Kubernetes.
 
-Every deployment is bound to another resource called *ReplicaSet*, the latter is responsible for maintaining a "desired replica state" and scaling the real application in or out to keep the desired state the same as the real state.
+Every deployment is bound to another resource called *ReplicaSet*. This resource is responsible for maintaining a "desired replica state", and scaling the real application in or out to keep the desired state the same as the real state.
 
-You can control the number of replicas in a deployment through the `spec.replicas` key in the deployment specification, this setting will set the number of desired replicas in the underlying ReplicaSet and will force the replication controller to keep this number of replicas at any given time.
+You can control the number of replicas in a deployment through the `spec.replicas` key in the deployment specification, this setting sets the number of desired replicas in the underlying ReplicaSet and forces the replication controller to keep this number of replicas at any given time.
 
-You can also control the number of replicas in a deployment through the `kubectl scale deploy/contoso-website --replicas <number>` command. This command will dynamically change the number of desired replicas in a deployment and scale the application in or out.
+You can also control the number of replicas in a deployment through the `kubectl scale deploy/contoso-website --replicas <number>` command. This command dynamically changes the number of desired replicas in a deployment and scales the application in or out.
 
 ## HorizontalPodAutoscaler
 
@@ -52,11 +52,11 @@ If the desired replica count is different from the current replica count, then t
 
 :::image type="content" source="../media/2-horizontal-pod-autoscaler-design.png" alt-text="HorizontalPodAutoscaling design diagram.":::
 
-HPAs work with the `autoscaling` API group in Kubernetes. There are two versions to this API group. The `v1` version allows the deployment to scale only based on CPU metrics, while the `v2beta2` version, which will eventually become `v2`, allows native monitoring of both CPU and Memory. In this learn module we'll work with the `v2beta2` version.
+HPAs work with the `autoscaling` API group in Kubernetes. There are two versions to this API group. The `v1` version allows the deployment to scale based on CPU metrics only, while the `v2beta2` version (eventually becoming `v2`) allows native monitoring of both CPU and Memory. In this learn module we work with the `v2beta2` version.
 
-Every HPA is attached to a *scale reference*, which is defined in the `spec.scaleTargetRef` key of the HPA manifest. This scale reference must have underlying pods to be scaled, otherwise the HPA won't work, since it's not possible to apply scaling to objects that can't be scaled, like DaemonSets.
+Every HPA is attached to a *scale reference*, which is defined in the `spec.scaleTargetRef` key of the HPA manifest. This scale reference must have underlying pods to be scaled, otherwise the HPA doesn't work, since it's not possible to apply scaling to objects that can't be scaled, like DaemonSets.
 
-It's also important that each pod has a resource request set in its spec, otherwise the metrics won't be correctly calculated because the resource utilization won't be determined by the HPA algorithm. You can set this limiting through the `spec.template.spec.containers[].resources` key in the deployment manifest, like so:
+It's important that each pod has a resource request set in its spec. The HPA algorithm can't correctly calculate the metrics and determine the resource utilization without this setting. You can set this limiting through the `spec.template.spec.containers[].resources` key in the deployment manifest, like so:
 
 ```yml
 spec:
@@ -72,7 +72,7 @@ spec:
               memory: 512M
 ```
 
-This is an example HPA manifest:
+Here's an example of an HPA manifest:
 
 ```yml
 apiVersion: autoscaling/v2beta2
@@ -95,4 +95,4 @@ spec:
         averageUtilization: 50
 ```
 
-Along with that, the `v2beta2` version allows a fine-tuning of the scaling behavior, which allows you to control how your application will behave when scaled in or out. It also supports scaling through custom metrics, though this learning path won't provide instructions on how to do it.
+The `v2beta2` version allows a fine-tuning of the scaling behavior, which allows you to control how your application behaves when scaled in or out. It also supports scaling through custom metrics, though this learning path doesn't provide instructions on how to do it.

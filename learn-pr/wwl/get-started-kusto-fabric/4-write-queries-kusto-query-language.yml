@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-kusto-fabric.write-queries-kusto-query-language
+title: Write queries with KQL
+metadata:
+  title: Write queries with KQL
+  description: "Write queries with KQL"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-write-queries-kusto-query-language.md)]

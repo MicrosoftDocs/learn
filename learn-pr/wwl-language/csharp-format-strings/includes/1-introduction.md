@@ -1,3 +1,4 @@
+
  
 
 Suppose you work for a sales and marketing department that sends thousands of personalized letters to the company's existing clients who are institutional investors. Your team's job is to promote new financial products to the customer. Each letter you send merges personalized information about the customer. The letter compares the returns of their current portfolios with projected returns using the newest products. How will you merge and format the data correctly?
@@ -25,3 +26,4 @@ In this module, you will:
 - Introductory experience with creating and initializing variables of type `string` and `decimal`
 - Introductory experience with literal values of type `string` and `decimal`
 - Introductory experience with `Console.WriteLine()`
+- Experience using Visual Studio Code to develop, build, and run C# code

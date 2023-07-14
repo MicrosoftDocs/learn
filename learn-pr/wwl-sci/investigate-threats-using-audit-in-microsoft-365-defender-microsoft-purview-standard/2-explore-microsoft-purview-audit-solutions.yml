@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard.explore-microsoft-purview-audit-solutions
+title: Explore Microsoft Purview Audit solutions
+metadata:
+  title: Explore Microsoft Purview Audit solutions
+  description: "Explore Microsoft Purview Audit solutions."
+  ms.date: 3/15/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-explore-microsoft-purview-audit-solutions.md)]

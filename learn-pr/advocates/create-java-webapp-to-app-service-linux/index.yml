@@ -3,13 +3,14 @@ uid: learn.azure.build-webapp-java-tomcat
 metadata:
   title: Deploy a Java web app to Azure App Service
   description: You'll learn how to create a Java web application and deploy it to Azure App Service.
-  ms.date: 12/04/2020
+  ms.date: 05/03/2023
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: yoterada-03082021
+  ms.service: app-service 
+  ms.subservice: web-apps
 title: Deploy a Java web app to Azure App Service
 summary: In this module, you'll look at practices to create and deploy a Java web application on Azure App Service.
 abstract: |

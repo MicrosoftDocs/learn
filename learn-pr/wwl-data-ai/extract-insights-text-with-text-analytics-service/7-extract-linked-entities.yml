@@ -4,11 +4,11 @@ title: Extract linked entities
 metadata:
   title: Extract linked entities
   description: "Extract linked entities"
-  ms.date: 12/09/2021
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

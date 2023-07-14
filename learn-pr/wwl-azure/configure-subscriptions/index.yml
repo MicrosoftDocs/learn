@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure subscriptions
 summary: Learn how to configure Azure subscriptions, including how to obtain a subscription, implement cost management, and apply Azure resource tags.
 abstract: |

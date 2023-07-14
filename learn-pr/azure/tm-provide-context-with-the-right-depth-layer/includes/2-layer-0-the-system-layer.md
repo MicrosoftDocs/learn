@@ -17,20 +17,20 @@ In most cases, system parts **will** require a deeper dive because of the risk t
 
 Examples include:
 
-- **Any** new system that introduces unknown risks to the environment
-- New parsers, protocols, and file formats
-- New authentication and authorization mechanisms
-- New secret storage or encryption algorithms
-- Integration with third-party authentication systems like Facebook
-- Required elevated privileges for main functionality
-- Required unencrypted communication channels
+- **Any** new system that introduces unknown risks to the environment.
+- New parsers, protocols, and file formats.
+- New authentication and authorization mechanisms.
+- New secret storage or encryption algorithms.
+- Integration with third-party authentication systems like Facebook.
+- Required elevated privileges for main functionality.
+- Required unencrypted communication channels.
 
-If that's the case, create additional data-flow diagrams for each system part. Follow these steps:
+If that's the case, create data-flow diagrams for each system part. Follow these steps:
 
 |Step|Guidance|
 |----|--------|
 |1|Create a process element with a clear description label, such as *Web Service Name*.|
 |2|Create a new file and name it exactly the same way as the description label.|
-|3|Focus the data-flow diagram only on the system part you're "zooming into."|
+|3|Focus the data-flow diagram only on the system part you're "zooming into".|
 
-The result will be a series of data-flow diagrams in the **process layer**, known as layer 1.
+The result is a series of data-flow diagrams in the **process layer**, known as layer 1.

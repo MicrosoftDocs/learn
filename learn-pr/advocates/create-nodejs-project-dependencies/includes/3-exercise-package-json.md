@@ -4,13 +4,13 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
 1. Open a terminal window.
 
-1. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
+2. Clone the `https://github.com/MicrosoftDocs/node-essentials/` repo by running this command:
 
    ```bash
    git clone https://github.com/MicrosoftDocs/node-essentials/
    ```
 
-1. Change to the folder that has the cloned files for this exercise:
+3. Change to the folder that has the cloned files for this exercise:
 
    ```bash
    cd node-essentials/node-dependencies/3-exercise-package-json
@@ -23,7 +23,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    ---| index.js
    ```
 
-1. Run the following command to initialize a Node.js project:
+4. Run the following command to initialize a Node.js project:
 
     ```bash
     npm init -y
@@ -48,7 +48,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     }
     ```
 
-1. Edit the package.json file and modify these property values:
+5. Edit the package.json file and modify these property values:
 
     - `name`: "tailwind-trader-api"
     - `description`: "HTTP API to manage items from the Tailwind Traders database"
@@ -75,7 +75,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
     }
     ```
 
-1. In the `scripts` section, add this definition for the `start` action before the definition for the `test` action:
+6. In the `scripts` section, add this definition for the `start` action before the definition for the `test` action:
 
    ```json
    "start": "node ./src/index.js",
@@ -83,7 +83,7 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
 
    Save your changes and close the package.json file.
 
-1. Start your project with the `start` action by entering this command:
+7. Start your project with the `start` action by entering this command:
 
    ```bash
    npm start
@@ -95,4 +95,4 @@ You're a Node.js developer at Tailwind Traders. Knowing how to set up a new Node
    Welcome to this application
    ```
 
-You now have a good file structure that you can build upon as your project grows. 
+You now have a good file structure that you can build upon as your project grows.

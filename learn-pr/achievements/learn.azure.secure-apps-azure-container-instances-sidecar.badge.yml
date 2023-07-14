@@ -4,4 +4,5 @@ metadata:
   title: >-
     Microsoft Badge: Secure your apps by using the sidecar configuration in
     Azure Container Instances was issued by Microsoft
-socialImageUrl: /training/achievements/secure-apps-azure-container-instances-sidecar.svg
+socialImageUrl: >-
+  /training/achievements/secure-apps-azure-container-instances-sidecar-social.png

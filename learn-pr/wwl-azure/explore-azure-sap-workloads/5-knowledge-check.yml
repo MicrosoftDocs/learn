@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/30/2022
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/5-knowledge-check.md)]
@@ -27,15 +25,15 @@ quiz:
       explanation: "Incorrect. Running SAP applications on Azure doesn't guarantee 100% uptime."
     - content: "Lower TCO"
       isCorrect: true
-      explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premise storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
+      explanation: "Correct. Azure provides for a 60% cost reduction when compared to traditional, on-premises storage systems. By using SAP technologies on Azure, customers can realize 40-75% TCO cost savings in Dev and Test environments."
   - content: "Which Microsoft technology is used to build advanced pipelines to automate data movement and transformation in SAP on Azure environments?"
     choices:
     - content: "Azure Data Lake"
       isCorrect: false
-      explanation: "Incorrect. Azure Data Lake isn't the technology that allows you to build advanced pipelines to automate data movement and transformation in your SAP on Azure environment."
+      explanation: "Incorrect. Azure Data Lake isn't the technology that allows users to build advanced pipelines to automate data movement and transformation in their SAP on Azure environment."
     - content: "Azure Data Factory"
       isCorrect: true
-      explanation: "Correct. Azure Data Factory allows you to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
+      explanation: "Correct. Azure Data Factory allows users to build advanced pipelines to automate data movement and transformation. SAP connectors in Azure Data Factory often use the integration runtime to communicate with the SAP system, and so the installation of this component is mandatory to enable data replication."
     - content: "Microsoft Power BI"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Power BI isn't the technology that allows you to build advanced pipelines to automate data movement and transformation in your SAP on Azure environment."
+      explanation: "Incorrect. Microsoft Power BI isn't the technology that allows users to build advanced pipelines to automate data movement and transformation in their SAP on Azure environment."

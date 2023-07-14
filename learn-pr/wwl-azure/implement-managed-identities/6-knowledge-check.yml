@@ -4,34 +4,34 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/09/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the following characteristics is indicative of user-assigned identities?"
+  - content: "Which of the following managed identity characteristics is indicative of user-assigned identities?"
     choices:
     - content: "Shared lifecycle with an Azure resource"
       isCorrect: false
-      explanation: "That's incorrect. User-assigned identities have an independent lifecycle from the resources they're associated with."
+      explanation: "Incorrect. User-assigned identities have an independent lifecycle from the resources they're associated with."
     - content: "Independent life-cycle"
       isCorrect: true
-      explanation: "That's correct. User-assigned identities exist independently from the resources they're associated with and must be explicitly deleted."
+      explanation: "Correct. User-assigned identities exist independently from the resources they're associated with and must be explicitly deleted."
     - content: "Can only be associated with a single Azure resource"
       isCorrect: false
-      explanation: "That's incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
+      explanation: "Incorrect. The same user-assigned managed identity can be associated with more than one Azure resource."
   - content: "A client app requests managed identities for an access token for a given resource. Which of the below is the basis for the token?"
     choices:
     - content: "Oauth 2.0"
       isCorrect: false
-      explanation: "That's incorrect. Oauth 2.0 is a protocol that can be used to acquire a token, but isn't the basis for the token."
+      explanation: "Incorrect. Oauth 2.0 is a protocol that can be used to acquire a token, but isn't the basis for the token."
     - content: "Service principal"
       isCorrect: true
-      explanation: "That's correct. The token is based on the managed identities for Azure resources service principal."
+      explanation: "Correct. The token is based on the managed identities for Azure resources service principal."
     - content: "Virtual machine"
       isCorrect: false
-      explanation: "That's incorrect. The virtual machine may be assigned a managed identity, but isn't the basis for the token."
+      explanation: "Incorrect. The virtual machine may be assigned a managed identity, but isn't the basis for the token."

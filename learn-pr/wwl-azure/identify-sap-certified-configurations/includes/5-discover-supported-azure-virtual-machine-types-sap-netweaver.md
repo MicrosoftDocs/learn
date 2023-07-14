@@ -1,3 +1,5 @@
+
+
 As per [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), Azure VM SKUs supported for SAP NetWeaver (A)SCS and SAP NetWeaver application server/dialog instances only include the following:
 
 :::row:::

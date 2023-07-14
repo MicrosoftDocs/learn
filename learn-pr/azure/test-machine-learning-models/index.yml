@@ -2,19 +2,18 @@
 uid: learn.machinelearning.test-machine-learning-models
 metadata:
   title: Refine and test machine learning models
-  description: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning but also give us some confidence about how well our models will work when faced with data we have never seen before.
+  description: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning, but also give us some confidence about how well our models will work when faced with data we have never seen before.
   ms.date: 05/25/2021
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Refine and test machine learning models
-summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning but also give us some confidence about how well our models will work when faced with data we have never seen before.
+summary: When we think of machine learning, we often focus on the training process. A small amount of preparation before this process can not only speed up and improve learning, but also give us some confidence about how well our models will work when faced with data we have never seen before.
 abstract: | 
   In this module, you will:
-  - Define feature scaling
-  - Create and work with test datasets
-  - Articulate how testing models can both improve and harm training
+  - Define feature scaling.
+  - Create and work with test datasets.
+  - Articulate how testing models can both improve and harm training.
 prerequisites: Familiarity with machine learning models
 iconUrl: /training/achievements/machine-learning/test-machine-learning-models.svg
 levels: 

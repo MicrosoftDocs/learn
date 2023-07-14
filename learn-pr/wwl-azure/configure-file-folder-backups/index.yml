@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure file and folder backups
 summary: Learn how to configure backup and restore policies that meet your company's regulatory needs.
 abstract: |

@@ -4,13 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/24/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
+  title: "Check your knowledge"
   questions:
   - content: "Which of the following `for` statements is correct?"
     choices:
@@ -22,7 +23,7 @@ quiz:
       explanation: "Incorrect. The iterator section `j + 1` causes a compilation error."
     - content: "`for (int counter = 20; counter < 80; counter++)`"
       isCorrect: true
-      explanation: "Correct! This example show the correct syntax for initializer, condition, and iterator."
+      explanation: "Correct! This example shows the correct syntax for initializer, condition, and iterator."
   - content: "Which statement can be used to exit out of the `for` loop?"
     choices:
     - content: "`break;`"

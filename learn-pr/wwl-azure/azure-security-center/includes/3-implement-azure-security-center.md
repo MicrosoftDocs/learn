@@ -15,7 +15,7 @@ Defender for Cloud fills **three vital needs** as you manage the security of you
 2.  **Defender for Cloud recommendations secures** your workloads with step-by-step actions that protect your workloads from known security risks.
 3.  **Defender for Cloud alerts defends** your workloads in real-time so you can react immediately and prevent security events from developing.
 
-## Strengthen the security posture of your cloud resources your cloud resources
+## Strengthen the security posture of your cloud resources
 
  -  Get a continuous assessment of the security of your cloud resources running in Azure, AWS, and Google Cloud.
  -  Use built-in policies and prioritized recommendations that are aligned to key industry and regulatory standards or build custom requirements that meet your organization's needs.

@@ -1,3 +1,7 @@
+
+
+
+
 When deploying an Azure VM, you can use the unmanaged or managed disk type to host the operating system disk and can optionally define data disks. Your decision has important implications for functionality, manageability, and pricing.
 
 ## Unmanaged disks
@@ -12,14 +16,17 @@ Managed disks provide better reliability for Availability Sets by ensuring that 
 
 Managed disks also provide other functional benefits. For example, you can create an Azure VM from a custom image stored in any storage account in the same region and the same subscription. With unmanaged disks, you must store Azure VM disks in the same storage account as the image.
 
-Azure offers four tiers of managed disks according to their performance characteristics:
+Azure offers five tiers of managed disks according to their performance characteristics:
 
 :::row:::
   :::column:::
 
   :::column-end:::
   :::column:::
-    **Ultra SSD**
+    **Ultra disk**
+  :::column-end:::
+  :::column:::
+    **Premium SSD v2**
   :::column-end:::
   :::column:::
     **Premium SSD**
@@ -45,6 +52,9 @@ Azure offers four tiers of managed disks according to their performance characte
     SSD
   :::column-end:::
   :::column:::
+    SSD
+  :::column-end:::
+  :::column:::
     HDD
   :::column-end:::
 :::row-end:::
@@ -54,6 +64,9 @@ Azure offers four tiers of managed disks according to their performance characte
   :::column-end:::
   :::column:::
     IO-intensive workloads such as SAP HANA, top-tier databases (for example, SQL, Oracle), and other transaction-heavy workloads.
+  :::column-end:::
+  :::column:::
+    Production and performance-sensitive workloads that consistently require low latency and high IOPS and throughput
   :::column-end:::
   :::column:::
     Production and performance-sensitive workloads
@@ -73,6 +86,9 @@ Azure offers four tiers of managed disks according to their performance characte
     65,536 gibibyte (GiB)
   :::column-end:::
   :::column:::
+    65,536 GiB
+  :::column-end:::
+  :::column:::
     32,767 GiB
   :::column-end:::
   :::column:::
@@ -87,7 +103,10 @@ Azure offers four tiers of managed disks according to their performance characte
     **Max throughput**
   :::column-end:::
   :::column:::
-    2,000 MiB/s
+    4,000 MiB/s
+  :::column-end:::
+  :::column:::
+    1,200 MiB/s
   :::column-end:::
   :::column:::
     900 MiB/s
@@ -107,6 +126,9 @@ Azure offers four tiers of managed disks according to their performance characte
     160,000
   :::column-end:::
   :::column:::
+    80,000
+  :::column-end:::
+  :::column:::
     20,000
   :::column-end:::
   :::column:::
@@ -114,6 +136,26 @@ Azure offers four tiers of managed disks according to their performance characte
   :::column-end:::
   :::column:::
     2,000
+  :::column-end:::
+:::row-end:::
+:::row:::
+  :::column:::
+    **Usable as OS disk?**
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    No
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
+  :::column-end:::
+  :::column:::
+    Yes
   :::column-end:::
 :::row-end:::
 

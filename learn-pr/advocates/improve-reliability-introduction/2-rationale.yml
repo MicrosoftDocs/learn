@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.improve-reliability-introduction.2-rationale
-title: "Why reliability matters"
+title: Why reliability matters
 metadata:
-  title: "Why reliability matters"
-  description: "Learn why it is important to focus specifically on reliability."
-  ms.date: 05/19/2020
+  title: Why reliability matters
+  description: Learn why it's important to focus specifically on reliability.
+  ms.date: 05/19/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-06092020
 durationInMinutes: 1
@@ -18,17 +18,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Reliability problems cause organizations to lose which of the following?'
+  - content: "Reliability problems cause organizations to lose which of the following?"
     choices:
-    - content: 'Security'
+    - content: "Security"
       isCorrect: false
-      explanation: 'While connected (both are customer expectations and emergent behaviors), reliability issues do not usually lead to a loss of security.'
-    - content: 'Reputation'
+      explanation: "While connected (both are customer expectations and emergent behaviors), reliability issues don't usually lead to a loss of security."
+    - content: "Reputation"
       isCorrect: true
-      explanation: 'Correct.'
-    - content: 'Branding'
+      explanation: "Correct."
+    - content: "Branding"
       isCorrect: false
-      explanation: 'Having an unreliable system can impact a brand, but it does cause you to lose it.'
-    - content: 'Innovation'
+      explanation: "Having an unreliable system can impact a brand, but it does cause you to lose it."
+    - content: "Innovation"
       isCorrect: false
-      explanation: 'It is hard to innovate if you are experiencing reliability problems but it is not a direct loss.'
+      explanation: "It's hard to innovate if you're experiencing reliability problems but it isn't a direct loss."

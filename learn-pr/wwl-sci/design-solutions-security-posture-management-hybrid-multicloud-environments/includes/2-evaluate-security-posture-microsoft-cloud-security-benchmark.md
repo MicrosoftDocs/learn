@@ -1,5 +1,12 @@
 This unit gives a summary of the Microsoft cloud security benchmark controls in the [Posture and vulnerability management family](https://learn.microsoft.com/security/benchmark/azure/mcsb-posture-vulnerability-management?source=recommendations).
 
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the summary below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
+
 ## Security Control: Posture and vulnerability management
 
 Posture and Vulnerability Management focuses on controls for assessing and improving cloud security posture, including vulnerability scanning, penetration testing and remediation, as well as security configuration tracking, reporting, and correction in cloud resources.

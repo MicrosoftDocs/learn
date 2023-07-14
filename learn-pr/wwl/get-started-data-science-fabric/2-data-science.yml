@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-science-fabric.data-science
+title: Understand data science
+metadata:
+  title: Understand data science
+  description: "Understand data science"
+  ms.date: 06/07/2023
+  author: wwlpublish
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-data-science.md)]

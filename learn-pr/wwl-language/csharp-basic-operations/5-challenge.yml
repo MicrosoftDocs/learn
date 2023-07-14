@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-basic-operations.challenge
-title: Complete the challenge
+title: Complete the challenge to convert Fahrenheit to Celsius
 metadata:
-  title: Complete the challenge
-  description: "Complete the challenge"
-  ms.date: 04/13/2023
+  title: Complete the challenge to convert Fahrenheit to Celsius
+  description: "Complete the challenge to convert Fahrenheit to Celsius"
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

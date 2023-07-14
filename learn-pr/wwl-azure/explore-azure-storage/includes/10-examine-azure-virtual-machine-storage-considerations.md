@@ -1,3 +1,7 @@
+
+
+
+
 ## Paging/swap file
 
 Use the following recommendations when configuring the paging/swap file:

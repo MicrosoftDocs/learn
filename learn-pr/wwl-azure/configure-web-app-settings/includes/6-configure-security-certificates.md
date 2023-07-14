@@ -2,7 +2,7 @@
 
 
 
-You've been asked to help secure information being transmitted between your companies app and the customer. Azure App Service has tools that let you  create, upload, or import a private certificate or a public certificate into App Service.
+You've been asked to help secure information being transmitted between your company’s app and the customer. Azure App Service has tools that let you  create, upload, or import a private certificate or a public certificate into App Service.
 
 A certificate uploaded into an app is stored in a deployment unit that is bound to the app service plan's resource group and region combination (internally called a *webspace*). This makes the certificate accessible to other apps in the same resource group and region combination.
 
@@ -38,11 +38,12 @@ The free App Service managed certificate is a turn-key solution for securing you
 The free certificate comes with the following limitations:
 
 * Doesn't support wildcard certificates.
-* Doesn't support usage as a client certificate by certificate thumbprint.
+* Doesn't support usage as a client certificate by using certificate thumbprint, which is planned for deprecation and removal.
+* Doesn't support private DNS.
 * Isn't exportable.
-* Isn't supported on App Service Environment (ASE).
-* Isn't supported with root domains that are integrated with Traffic Manager.
-* If a certificate is for a CNAME-mapped domain, the CNAME must be mapped directly to `<app-name>.azurewebsites.net`.
+* Isn't supported in an App Service Environment (ASE).
+* Only supports alphanumeric characters, dashes (-), and periods (.).
+
 
 ## Import an App Service Certificate
 
@@ -62,20 +63,3 @@ If you already have a working App Service certificate, you can:
 > [!NOTE]
 > App Service Certificates are not supported in Azure National Clouds at this time.
 
-## Upload a private certificate
-
-If your certificate authority gives you multiple certificates in the certificate chain, you need to merge the certificates in order. Then you can Export your merged TLS/SSL certificate with the private key that your certificate request was generated with.
-
-If you generated your certificate request using OpenSSL, then you've created a private key file. To export your certificate to PFX, run the following command. Replace the placeholders `<private-key-file>` and `<merged-certificate-file>` with the paths to your private key and your merged certificate file.
-
-```bash
-openssl pkcs12 -export -out myserver.pfx -inkey <private-key-file> -in <merged-certificate-file>
-```
-
-When prompted, define an export password. You'll use this password when uploading your TLS/SSL certificate to App Service.
-
-## Enforce HTTPS
-
-By default, anyone can still access your app using HTTP. You can redirect all HTTP requests to the HTTPS port by navigating to your app page and, in the left navigation, select **TLS/SSL settings**. Then, in **HTTPS Only**, select **On**.
-
-:::image type="content" source="../media/enforce-https.png" alt-text="Enabling HTTPS Only in your web app.":::

@@ -6,8 +6,9 @@ metadata:
   ms.date: 03/17/2022
   author: ggailey777
   ms.author: glenga
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: api-management
+  manager: mijacobs
 title: Expose multiple Azure Function apps as a consistent API by using Azure API Management
 summary: Combine multiple Azure Functions apps into a unified interface by importing them into a single Azure API Management instance.
 abstract: | 

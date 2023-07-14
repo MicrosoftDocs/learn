@@ -130,7 +130,7 @@ print(moon_phases_list)
 
 Here's an example of the first few lines of the output:
 
-|  | date | percentage |
+|  | `date` | `percentage` |
 |--|------|------------|
 | **111** | 2020-04-21 | 0.5 |
 | **112** | 2020-04-22 | 0.0 |

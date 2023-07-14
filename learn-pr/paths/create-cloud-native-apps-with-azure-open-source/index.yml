@@ -7,6 +7,9 @@ metadata:
   author: jasallen
   ms.author: jasdeb
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 title: Create cloud native apps with Azure and open-source software
 summary: |

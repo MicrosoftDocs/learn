@@ -1,3 +1,5 @@
+
+
 ## Domain controllers and disaster recovery
 
 If you have only a few applications and one domain controller, you might want to fail over the entire site together. In this case, we recommend using Site Recovery to replicate the domain controller to the target site (either in Azure or in a secondary on-premises datacenter). You can use the same replicated domain controller or DNS virtual machine for test failover.

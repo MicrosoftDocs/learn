@@ -1,3 +1,5 @@
+
+
 The deployment scenarios described earlier rely extensively on Availability Sets. In some cases, these scenarios can be adapted to the use of Azure Availability Zones. This, however, warrants some other considerations and architectural changes.
 
 An Azure Availability Zone is defined as: Unique physical locations within a region. Each zone is made up of one or more datacenters equipped with independent power, cooling, and networking. As of the typical SAP NetWeaver or S/4HANA architecture, you need to protect three different layers:

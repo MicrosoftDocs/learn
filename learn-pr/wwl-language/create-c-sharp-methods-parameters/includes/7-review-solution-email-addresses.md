@@ -54,7 +54,7 @@ When you run the code, you should see the following output:
     davaldes@hayworth.com
     ```
 
-If completed this challenge, congratulations! Continue on to the knowledge check in the next unit.
+If you completed this challenge, congratulations! Continue on to the knowledge check in the next unit.
 
 > [!IMPORTANT]
 > If you had trouble completing this challenge, consider reviewing the previous units before you continue on. All new ideas we discuss in other modules will depend on your understanding of the ideas that were presented in this module.

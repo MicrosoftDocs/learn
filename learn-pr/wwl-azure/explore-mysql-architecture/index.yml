@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: mysql
 title: Explore MySQL Architecture
 summary: Explore the component parts of MySQL, and learn how to find your way around Azure Database for MySQL.
 abstract: |

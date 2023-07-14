@@ -4,11 +4,11 @@ title: What is object detection?
 metadata:
   title: What is object detection?
   description: "What is object detection?"
-  ms.date: 01/27/2023
+  ms.date: 04/17/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

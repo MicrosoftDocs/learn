@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-c-sharp-methods-parameters.review-solution-email-addresses
-title: Review the solution
+title: Review the solution to display email addresses
 metadata:
-  title: Review the solution
-  description: "Review the solution"
-  ms.date: 03/29/2023
+  title: Review the solution to display email addresses
+  description: "Review the solution to display email addresses"
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

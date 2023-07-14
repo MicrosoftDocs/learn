@@ -4,11 +4,10 @@ title: Know your data, protect your data, and govern your data
 metadata:
   title: Know your data, protect your data, and govern your data
   description: "Know your data, protect your data, and govern your data"
-  ms.date: 02/09/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
 durationInMinutes: 2
 content: |
   [!include[](includes/2-know-your-data-protect-your-data-govern-your-data.md)]

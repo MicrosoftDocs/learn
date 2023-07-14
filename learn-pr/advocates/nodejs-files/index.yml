@@ -7,7 +7,6 @@ metadata:
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: buhollan-09032021
 title: Work with files and directories in a Node.js app

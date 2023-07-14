@@ -1,5 +1,6 @@
 
-In this exercise you'll create a console app to perform the following operations in Azure Cosmos DB:
+
+In this exercise you create a console app to perform the following operations in Azure Cosmos DB:
 
 * Connect to an Azure Cosmos DB account
 * Create a database
@@ -11,7 +12,7 @@ In this exercise you'll create a console app to perform the following operations
 
 * [Visual Studio Code](https://code.visualstudio.com/) on one of the [supported platforms](https://code.visualstudio.com/docs/supporting/requirements#_platforms).
 
-* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the steps below.
+* [.NET 6](https://dotnet.microsoft.com/download/dotnet/6.0) is the target framework for the exercise.
 
 * The [C# extension](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp) for Visual Studio Code.
 
@@ -23,7 +24,7 @@ Perform the following actions to prepare Azure, and your local environment, for 
 
 1. Start Visual Studio Code and open a terminal window by selecting **Terminal** from the top application bar, then choosing **New Terminal**.
 
-1. Log in to Azure by using the command below. A browser window should open letting you choose which account to log in with.
+1. Sign in to Azure by using the following command. A browser window should open letting you choose which account to sign in with.
 
     ```
     az login
@@ -37,15 +38,15 @@ Perform the following actions to prepare Azure, and your local environment, for 
     az group create --location <myLocation> --name az204-cosmos-rg
     ```
 
-1. Create the Azure Cosmos DB account. Replace `<myCosmosDBacct>` with a *unique* name to identify your Azure Cosmos DB account. The name can only contain lowercase letters, numbers, and the hyphen (-) character. It must be between 3-31 characters in length. *This command will take a few minutes to complete.*
+1. Create the Azure Cosmos DB account. Replace `<myCosmosDBacct>` with a *unique* name to identify your Azure Cosmos DB account. The name can only contain lowercase letters, numbers, and the hyphen (-) character. It must be between 3-31 characters in length. *This command takes a few minutes to complete.*
 
     ```
     az cosmosdb create --name <myCosmosDBacct> --resource-group az204-cosmos-rg
     ```
 
-    Record the `documentEndpoint` shown in the JSON response, it will be used below.
+    Record the `documentEndpoint` shown in the JSON response, it's used later in the exercise.
 
-1. Retrieve the primary key for the account by  using the command below. Record the `primaryMasterKey` from the command results it will be used in the code below.
+1. Retrieve the primary key for the account by  using the following command. Record the `primaryMasterKey` from the command results it will be used in the code.
 
      ```
     # Retrieve the primary key
@@ -69,7 +70,7 @@ Now that the needed resources are deployed to Azure the next step is to set up t
     dotnet new console
     ```
 
-1. Open the current folder in Visual Studio Code using the command below. The `-r` option will open the folder without launching a new Visual Studio Code window.
+1. Open the current folder in Visual Studio Code using the following command. The `-r` option opens the folder without launching a new Visual Studio Code window.
 
     ```
     code . -r
@@ -83,13 +84,13 @@ It's time to start adding the packages and code to the project.
 
 ### Add packages and using statements
 
-1. Open the terminal in Visual Studio Code and use the command below to add the `Microsoft.Azure.Cosmos` package to the project.
+1. Open the terminal in Visual Studio Code and use the following command to add the `Microsoft.Azure.Cosmos` package to the project.
 
     ```
     dotnet add package Microsoft.Azure.Cosmos
     ```
 
-1. Delete any existing code in the `Program.cs` file and add the `using Microsoft.Azure` statement.
+1. Delete any existing code in the `Program.cs` file and add the `using Microsoft.Azure.Cosmos` statement.
 
     ```csharp
     using Microsoft.Azure.Cosmos;
@@ -97,7 +98,7 @@ It's time to start adding the packages and code to the project.
 
 ### Add code to connect to an Azure Cosmos DB account
 
-1. Add the code snippet below after the `using` statement. The code snippet adds constants and variables into the class and adds some error checking. Be sure to replace the placeholder values for `EndpointUri` and `PrimaryKey` following the directions in the code comments.
+1. Add the following code snippet after the `using` statement. The code snippet adds constants and variables into the class and adds some error checking. Be sure to replace the placeholder values for `EndpointUri` and `PrimaryKey` following the directions in the code comments.
 
     ```csharp
     public class Program
@@ -149,7 +150,7 @@ It's time to start adding the packages and code to the project.
     }
     ```
 
-1. Below the `Main` method, add a new asynchronous task called `CosmosAsync`, which instantiates our new `CosmosClient` and adds code to call the methods you'll add later to create a database and a container.
+1. Below the `Main` method, add a new asynchronous task called `CosmosAsync`, which instantiates our new `CosmosClient` and adds code to call the methods you add later to create a database and a container.
 
     ```csharp
     public async Task CosmosAsync()
@@ -193,7 +194,7 @@ private async Task CreateContainerAsync()
 
 ## Run the application
 
-1. Save your work and, in a terminal in Visual Studio Code, run the `dotnet run` command. The console will display the following messages.
+1. Save your work and, in a terminal in Visual Studio Code, run the `dotnet build` command to check for any errors. If the build is successful run the `dotnet run` command. The console displays the following messages.
 
     ```
     Beginning operations...
@@ -209,7 +210,7 @@ private async Task CreateContainerAsync()
 
 ## Clean up Azure resources
 
-You can now safely delete the *az204-cosmos-rg* resource group from your account by running the command below.
+You can now safely delete the *az204-cosmos-rg* resource group from your account by running the following command.
 
 ```
 az group delete --name az204-cosmos-rg --no-wait

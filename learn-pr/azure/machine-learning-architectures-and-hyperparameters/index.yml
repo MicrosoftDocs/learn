@@ -3,18 +3,17 @@ uid: learn.machinelearning.machine-learning-architectures-and-hyperparameters
 metadata:
   title: Select and customize architectures and hyperparameters using random forest
   description: Explore how altering the architecture of more complex models can bring about more effective results.
-  ms.date: 05/25/2021
+  ms.date: 04/17/2023
   author: TomReidNZ
   ms.author: jasdeb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Select and customize architectures and hyperparameters using random forest
-summary: More complex models often can be manually customized to improve how effective they're. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
+summary: More complex models often can be manually customized to improve how effective they are. Through exercises and explanatory content, we explore how altering the architecture of more complex models can bring about more effective results.
 abstract: | 
   In this module, you will:
-  - Discover new model types– decision trees and random forests.
-  - Learn how model architecture can affect performance
-  -	Practice working with hyperparameters to improve training effectiveness
+  - Discover new model types: decision trees and random forests.
+  - Learn how model architecture can affect performance.
+  -	Practice working with hyperparameters to improve training effectiveness.
 prerequisites: Familiarity with machine learning models
 iconUrl: /training/achievements/machine-learning/machine-learning-architectures-and-hyperparameters.svg
 levels: 

@@ -35,7 +35,7 @@ When you prefer working in notebooks on a local device, you can also make use of
 
      ```python
     pip install mlflow
-    pip isntall azureml-mlflow
+    pip install azureml-mlflow
     ```
 
 1. Navigate to the Azure Machine Learning studio.

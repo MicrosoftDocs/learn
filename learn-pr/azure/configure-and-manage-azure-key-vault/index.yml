@@ -7,7 +7,8 @@ metadata:
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: key-vault
+  ms.subservice: secrets
 title: Configure and manage secrets in Azure Key Vault
 summary: Storing and handling secrets, encryption keys, and certificates directly is risky, and every usage introduces the possibility of unintentional data exposure. Azure Key Vault provides a secure storage area for managing all your app secrets so you can properly encrypt your data in transit or while it's being stored.
 abstract: | 

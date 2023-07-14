@@ -1,3 +1,5 @@
+
+
 Outside of relatively rare cross-zone scenarios, typical disaster recovery (DR) designs rely on failover to a secondary Azure region. Each tier uses a different strategy to provide disaster recovery protection.
 
 ## Application servers

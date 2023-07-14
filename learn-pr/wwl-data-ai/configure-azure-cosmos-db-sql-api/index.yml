@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Configure Azure Cosmos DB for NoSQL database and containers
 summary: Select between the various throughput offerings in Azure Cosmos DB for NoSQL.
 abstract: |

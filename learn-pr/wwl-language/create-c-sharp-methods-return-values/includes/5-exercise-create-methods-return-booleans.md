@@ -1,5 +1,6 @@
 
 
+
 Methods with Boolean return types can be simple but are useful in consolidating code. Methods that return `bool` values can be called to evaluate data input anywhere, in `if` statements, in variable declarations, and more. In this exercise, you'll gain some experience creating and using Boolean return type methods.
 
 ### Create a method that returns a Boolean

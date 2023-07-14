@@ -1,3 +1,5 @@
+
+
 An Azure Resource Manager template contains a JSON-formatted definition of one or more Azure resources, along with parameters and variables that facilitate customizing their configuration.
 
 In its simplest structure, a template has the following elements:
@@ -74,6 +76,8 @@ For tenant deployments, use:
     An API version that serves as a collection of API versions for resource types. Use this value to avoid having to specify API versions for each resource in the template. When you specify an API profile version and don't specify an API version for the resource type, Resource Manager uses the API version for that resource type that is defined in the profile.
 
 The API profile property is especially helpful when deploying a template to different environments, such as Azure Stack and global Azure. Use the API profile version to make sure your template automatically uses versions that are supported in both environments. For a list of the current API profile versions and the resources API versions defined in the profile, see [API Profile](https://github.com/Azure/azure-rest-api-specs/tree/master/profile).
+
+For more information, see [Track versions using API profiles](/azure/azure-resource-manager/templates/template-cloud-consistency#track-versions-using-api-profiles).
 
   :::column-end:::
 :::row-end:::

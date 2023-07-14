@@ -23,7 +23,7 @@ In the context of the enterprise-scale architecture, centralized logging is prim
 
 In Azure, the *activity log* is a platform log that provides insight into subscription-level events. The activity log contains all write operations (PUT, POST, DELETE) for subscription resources. These operations include information such as when a resource is modified or when a VM is started. You can view the activity log in the Azure portal or retrieve entries by using PowerShell and Azure CLI. You can configure diagnostic settings for a subscription via policy to send log data to the centralized Log Analytics workspace. This configuration provides a central view across subscriptions and lets you retain log data past the default 90 days.
 
-When a customer requires log-data retention longer than two years, they can configure the subscription diagnostic settings also for export to Azure Storage. Use immutable storage with *write once, read many (WORM)* policies to make data non-erasable and non-modifiable for a user-specified interval.
+When a customer requires log-data retention longer than two years, they can configure the subscription diagnostic settings also for export to Azure Storage. Use immutable storage with *write once, read many (WORM)* policies to make data unerasable and unmodifiable for a user-specified interval.
 
 ## Dashboards and visualization
 
@@ -53,9 +53,9 @@ All data collected by Azure Monitor fits into one of two fundamental types: logs
 
 Logs are events that occurred within the system. They can contain different kinds of data, and might be structured or free-form text with a timestamp. They might be created sporadically as events in the environment generate log entries, and a system under heavy load typically generates more log volume. Azure resource logs can be sent to a Log Analytics workspace via the resource diagnostic settings. You can use Azure Policy to ensure that diagnostic settings are configured appropriately for all resources.
 
-Metrics are numerical values that describe some aspect of a system at a particular time. They're collected at regular intervals and identified by a timestamp, a name, a value, and one or more defining labels. Metrics can be:
+Metrics are numerical values that describe some aspect of a system at a particular time. They're collected at regular intervals and are identified with a timestamp, a name, a value, and one or more defining labels. Metrics can be:
 
-- Aggregated by using a variety of algorithms
+- Aggregated by using various algorithms
 - Compared with other metrics
 - Analyzed for trends over time
 
@@ -87,8 +87,8 @@ We recommend that you also include service and resource health events as part of
 
 Alerts raise notifications about significant events. Azure Monitor provides a unified alerting experience across platform and resources, with activity-log, metrics, and resource-log signal types.
 
-- *Metric alerts* in Azure Monitor work on top of multidimensional metrics. These metrics can be platform metrics, custom metrics, popular logs from Azure Monitor converted to metrics, or Application Insights metrics. Metric alerts are evaluated at regular intervals to check whether conditions on one or more metric time-series are true and to notify when the evaluations are met. Metric alerts are stateful, so they send out notifications only when the state changes.
-- *Log-search rules* are created by Azure alerts to automatically run specified log queries at regular intervals. If the log query results meet certain criteria, an alert record is created.
+- *Metric alerts* in Azure Monitor work on top of multidimensional metrics. These metrics can be platform metrics, custom metrics, popular logs from Azure Monitor converted to metrics, or Application Insights metrics. Metric alerts are evaluated at regular intervals. They check whether conditions on one or more metric time-series are true, and send out notifications when the evaluations are met. Metric alerts are stateful, so they send out notifications only when the state changes.
+- *Log-search rules* Azure alerts create log-search rules to automatically run specified log queries at regular intervals. If the log query results meet certain criteria, an alert record is created.
 - *Activity-log* alerts activate when a new activity-log event matches the conditions specified in the alert.
 
 ## Security monitoring

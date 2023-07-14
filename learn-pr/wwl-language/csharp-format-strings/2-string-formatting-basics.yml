@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.languages.csharp-format-strings.string-formatting-basics
-title: Investigate string formatting basics
+title: Exercise - Investigate string formatting basics
 metadata:
-  title: Investigate string formatting basics
-  description: "Investigate string formatting basics"
-  ms.date: 02/25/2023
+  title: Exercise - Investigate string formatting basics
+  description: "Exercise - Investigate string formatting basics"
+  ms.date: 05/02/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

@@ -51,7 +51,7 @@ After you've created and deployed a knowledge base, you can deliver it to users 
 
 ### Create a bot for your knowledge base
 
-You can create a custom bot by using the Microsoft Bot Framework SDK to write code that controls conversation flow and integrates with your knowledge base. However, an easier approach is to use the automatic bot creation functionality, which enables you create a bot for your deployed knowledge base and publish it as an Azure Bot Service application with just a few clicks.
+You can create a custom bot by using the Microsoft Bot Framework SDK to write code that controls conversation flow and integrates with your knowledge base. However, an easier approach is to use the automatic bot creation functionality, which enables you to create a bot for your deployed knowledge base and publish it as an Azure Bot Service application with just a few clicks.
 
 ### Extend and configure the bot
 

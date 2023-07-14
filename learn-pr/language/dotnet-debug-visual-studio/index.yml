@@ -8,7 +8,7 @@ metadata:
   ms.author: jogallow
   manager: jmartens
   ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.prod: .net
 title: Interactively debug .NET apps with the Visual Studio debugger
 summary: Learn how to efficiently debug your .NET app by using Visual Studio to fix your bugs quickly.
 abstract: |

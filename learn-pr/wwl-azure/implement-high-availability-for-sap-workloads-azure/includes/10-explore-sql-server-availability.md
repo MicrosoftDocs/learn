@@ -1,3 +1,5 @@
+
+
 When using SQL Server in Azure VM-based deployments for SAP, you have several different options to deploy highly available DBMS layer. Azure provides different up-time SLAs for a single VM and a pair of VMs deployed in an Azure Availability Set. The assumption is that you drive towards the up-time SLA for your production deployments that requires the deployment in Azure Availability Sets. In such a case, you need to deploy a minimum of two VMs in such an Availability Set. One VM will run the active SQL Server Instance. The other VM will run the passive Instance
 
 ## SQL Server Clustering using Windows Scale-out File Server
@@ -36,8 +38,8 @@ Other considerations using an Availability Group Listener include:
 
 Detailed documentation on deploying Always On with SQL Server in Azure VMs is available at:
 
-- [Always On availability group on SQL Server on Azure VMs](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-overview)
-- [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-alwayson-int-listener)
+- [Always On availability group on SQL Server on Azure VMs](/azure/azure-sql/virtual-machines/windows/availability-group-overview?view=azuresql)
+- [Configure a load balancer &amp; availability group listener (SQL Server on Azure VMs)](/azure/azure-sql/virtual-machines/windows/availability-group-load-balancer-portal-configure?view=azuresql)
 
 > [!NOTE]
 > If you are configuring the Azure load balancer for the virtual IP address of the Availability Group listener, make sure that the DirectServerReturn is configured. Configuring the DirectServerReturn option will reduce the network round trip latency between the SAP application layer and the DBMS layer.

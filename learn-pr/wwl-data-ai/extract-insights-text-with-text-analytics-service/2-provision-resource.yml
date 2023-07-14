@@ -4,11 +4,11 @@ title: Provision a Language resource
 metadata:
   title: Provision a Language resource
   description: "Provision a Language resource"
-  ms.date: 12/09/2021
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

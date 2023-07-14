@@ -3,11 +3,11 @@ uid: learn.languages.csharp-format-strings
 metadata:
   title: Format alphanumeric data for presentation in C#
   description: "Format alphanumeric data for presentation in C#"
-  ms.date: 02/25/2023
+  ms.date: 05/02/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Format alphanumeric data for presentation in C#
 summary: Use C# to format strings with white space, special characters, padding, and alignment. Give context to numeric data like currency, percentages, and numbers with decimals.
 abstract: |
@@ -16,18 +16,20 @@ abstract: |
   - Merge templates with variables using composite formatting and string interpolation.
   - Include various format specifiers for percentages, currency, and numbers.
 prerequisites: |
-  - Introductory experience with creating and initializing variables of type `string` and `decimal`
-  - Introductory experience with literal values of type `string` and `decimal`
-  - Introductory experience with `Console.WriteLine()`
+  *   Introductory experience with creating and initializing variables of type `string` and `decimal`
+  *   Introductory experience with literal values of type `string` and `decimal`
+  *   Introductory experience with `Console.WriteLine()`
+  *   Experience using Visual Studio Code to develop, build, and run C# code
 iconUrl: /training/achievements/csharp-format-strings.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.languages.csharp-format-strings.introduction

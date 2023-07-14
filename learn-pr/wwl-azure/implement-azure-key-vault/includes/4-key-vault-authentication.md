@@ -1,16 +1,16 @@
 
-Authentication with Key Vault works in conjunction with Azure Active Directory, which is responsible for authenticating the identity of any given security principal.
+Authentication with Key Vault works with Azure Active Directory, which is responsible for authenticating the identity of any given security principal.
 
 For applications, there are two ways to obtain a service principal:
 
-* Enable a system-assigned **managed identity** for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to a variety of services.
+* Enable a system-assigned **managed identity** for the application. With managed identity, Azure internally manages the application's service principal and automatically authenticates the application with other Azure services. Managed identity is available for applications deployed to various services.
 
-* If you cannot use managed identity, you instead register the application with your Azure AD tenant. Registration also creates a second application object that identifies the app across all tenants.
+* If you can't use managed identity, you instead register the application with your Azure AD tenant. Registration also creates a second application object that identifies the app across all tenants.
 
 > [!NOTE]
 > It is recommended to use a system-assigned managed identity.
 
-Below is information on authenticating to Key Vault without using a managed identity.
+The following is information on authenticating to Key Vault without using a managed identity.
 
 ## Authentication to Key Vault in application code
 
@@ -31,7 +31,7 @@ PUT /keys/MYKEY?api-version=<api_version>  HTTP/1.1
 Authorization: Bearer <access_token>
 ```
 
-When an access token is not supplied, or when a token is not accepted by the service, an HTTP 401 error will be returned to the client and will include the `WWW-Authenticate` header, for example:
+When an access token isn't supplied, or when a token isn't accepted by the service, an `HTTP 401` error is returned to the client and will include the `WWW-Authenticate` header, for example:
 
 ```http
 401 Not Authorized  
@@ -44,7 +44,7 @@ The parameters on the `WWW-Authenticate` header are:
 
 * resource: The name of the resource (`https://vault.azure.net`) to use in the authorization request.
 
-## Additional resources
+## Other resources
 
 * [Azure Key Vault developer's guide](/azure/key-vault/general/developers-guide)
 * [Azure Key Vault availability and redundancy](/azure/key-vault/general/disaster-recovery-guidance)

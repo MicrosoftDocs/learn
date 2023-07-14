@@ -4,23 +4,23 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/06/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which of the methods below is recommended when deploying a multi-container group that includes only containers?"
+  - content: "Which of the following methods is recommended when deploying a multi-container group that includes only containers?"
     choices:
     - content: "Azure Resource Management template"
       isCorrect: false
-      explanation: "That's incorrect. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
+      explanation: "Incorrect. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
     - content: "YAML file"
       isCorrect: true
-      explanation: "That's correct. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
+      explanation: "Correct. Due to the YAML format's more concise nature, a YAML file is recommended when your deployment includes only container instances."
     - content: "`az container creates` command"
       isCorrect: false
-      explanation: "That's incorrect. This command isn't specific to this scenario."
+      explanation: "Incorrect. This command isn't specific to this scenario."

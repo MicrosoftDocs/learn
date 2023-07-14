@@ -1,3 +1,5 @@
+
+
 Now you have:
 
 - Explored database support of Azure for SAP workloads.

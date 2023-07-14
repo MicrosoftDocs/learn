@@ -4,7 +4,7 @@ Cloud-based services such as Azure often host multiple tenants. If a data subjec
 
 The following image illustrates three scenarios in which a Microsoft customer might receive a DSR:
 
-:::image type="content" source="../media/4-dsr-scope.png" alt-text="Three scenarios depicting the scope of Microsoft DSR fulfillment. 1. An enterprise customer receives a DSR. 2. A Microsoft service account with an Azure AD tenant receives a DSR. 3. A Microsoft service account outside an Azure AD tenant receives a DSR." border="false":::
+:::image type="content" source="../media/4-dsr-scope.png" alt-text="Diagram of three scenarios depicting the scope of Microsoft DSR fulfillment. 1. An enterprise customer receives a DSR. 2. A Microsoft service account with an Azure AD tenant receives a DSR. 3. A Microsoft service account outside an Azure AD tenant receives a DSR." border="false":::
 
 ### Scenario 1
 

@@ -1,3 +1,5 @@
+
+
 You might choose not to put any availability configuration in place within a single region, but still have demand for the workload served if a disaster occurs. Typical cases for such scenarios are nonproduction systems. Although having the system down for half a day or even a day is sustainable, you can't allow the system to be unavailable for 48 hours or more. To make the setup less costly, run another system that is even less important in the VM. The other system functions as a destination. You can also size the VM in the secondary region to be smaller and choose not to preload the data. Because the failover is manual and entails many more steps to fail over the complete application stack, the additional time to shut down the VM, resize it, and then restart the VM is acceptable.
 
 If you are using the scenario of sharing the DR target with a QA system in one VM, you need to take these considerations into account:

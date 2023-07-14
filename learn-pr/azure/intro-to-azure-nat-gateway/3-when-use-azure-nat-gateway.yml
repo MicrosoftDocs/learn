@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-azure-nat-gateway.3-when-use-azure-nat-gateway
+title: When should you use Azure NAT Gateway?
+metadata:
+  unitType: learning-content
+  title: When should you use Azure NAT Gateway?
+  description: This unit describes scenarios that are suitable for the use of Azure NAT Gateway.
+  ms.date: 04/21/2023
+  author: LBN-commits
+  ms.author: allensu
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-when-use-azure-nat-gateway.md)]

@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Describe how Microsoft Project Bonsai enables you to more quickly and easily implement AI-powered automation development. Evaluate whether Microsoft Project Bonsai can simplify machine teaching so you can train and deploy smarter autonomous systems.
   ms.date: 06/21/2021
-  author: warrenaj
-  ms.author: v-anwarr
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.service: bonsai
 durationInMinutes: 4

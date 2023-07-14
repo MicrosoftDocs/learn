@@ -7,7 +7,6 @@ metadata:
   author: Adriamen
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Encrypt public sector data in Azure
 summary: Data encryption in the cloud is an important risk mitigation requirement expected by government customers worldwide. Learn how to protect data through its entire lifecycle, whether at rest, in transit, or in use. Control encryption keys in the cloud using comprehensive encryption key management and explore the various encryption options to keep data secure in the public sector.
 abstract: | 

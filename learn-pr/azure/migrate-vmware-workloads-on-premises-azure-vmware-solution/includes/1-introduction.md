@@ -8,15 +8,15 @@ Azure VMware Solution delivers an in-depth VMware environment as a service. Azur
 | NSX-T | Software-defined networking and security solution that extends across datacenters, clouds, and application frameworks.
 | VMware HCX | Software-defined abstraction layer between on-premises and Azure VMware Solution for VM migrations. |
 
-VMware HCX (HCX) provides infrastructure abstraction for VM migrations. You can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another, with minimal downtime. HCX simplifies migration efforts and enables faster adoption of cloud resources.
+VMware HCX (HCX) provides infrastructure abstraction for VM migrations. You can migrate native VMware workloads to Azure by using HCX vMotion technology. HCX vMotion enables live migration of running VMs from one vSphere environment to another with minimal downtime. HCX simplifies migration efforts and enables faster adoption of cloud resources.
 
-The following diagram shows HCX deployed on-premises. HCX then replicates VMs in the on-premises datacenter to Azure VMware Solution. After the VMs are in Azure, they are closer to the rich APIs of Azure for ongoing administration and maintenance.
+The following diagram shows HCX deployed on-premises. HCX then replicates VMs in the on-premises datacenter to Azure VMware Solution. After the VMs are in Azure, they're closer to the rich APIs of Azure for ongoing administration and maintenance.
 
 :::image type="icon" source="../media/1-hcx-diagram.png" border="false" alt-text="Diagram that shows a high-level overview of a VMware datacenter on-premises, with HCX migrating VMs to Azure VMware Solution.":::
 
 ## Example scenario
 
-Imagine you work for a healthcare company that runs production workloads on a VMware platform. Your company decided to migrate existing VMware workloads to Azure VMware Solution. Your company doesn't have to change virtualization platforms or alter existing operational patterns by using Azure VMware Solution. You've planned for and deployed Azure VMware Solution. Now you need to migrate VMware workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware workloads on-premises into Azure VMware Solution.
+Imagine you work for a healthcare company that runs production workloads on a VMware platform. Your company decided to migrate existing VMware workloads to Azure VMware Solution. Your company doesn't have to change virtualization platforms or alter existing operational patterns by using Azure VMware Solution. You've planned for and deployed Azure VMware Solution. Now, you need to migrate VMware workloads on-premises to Azure. In this module, you'll learn how to migrate existing VMware workloads on-premises into Azure VMware Solution.
 
 ## What will we be doing?
 

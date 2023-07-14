@@ -1,3 +1,5 @@
+
+
 The principal architectures to deploy SAP NetWeaver or S/4HANA system across Azure Availability Zones are:
 
 - **Active/active**: The pair of VMs running ASCS/SCS and the pair of VMS running the DBMS layer are distributed across two zones. The number of VMs running the SAP application layer are deployed to an even number across the same two zones.

@@ -1,5 +1,5 @@
 
-Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that does not adhere to a particular data model or definition, such as text or binary data.
+Azure Blob storage is Microsoft's object storage solution for the cloud. Blob storage is optimized for storing massive amounts of unstructured data. Unstructured data is data that doesn't adhere to a particular data model or definition, such as text or binary data.
 
 Blob storage is designed for:
 
@@ -23,12 +23,11 @@ Azure Storage offers two performance levels of storage accounts, standard and pr
 
 The following table describes the types of storage accounts recommended by Microsoft for most scenarios using Blob storage.
 
-| Storage account type | Supported storage services | Usage |
+| Storage account type | Performance tier | Usage |
 |--|--|--|
-| Standard general-purpose v2 | Blob, Queue, and Table storage, Azure Files | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Azure Storage. If you want support for NFS file shares in Azure Files, use the premium file shares account type. |
-| Premium block blobs | Blob storage | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transactions rates, or scenarios that use smaller objects or require consistently low storage latency. |
-| Premium page blobs | Page blobs only | Premium storage account type for page blobs only. |
-| Premium file shares | Azure Files | Premium storage account type for file shares only. |
+| General-purpose v2 | Standard | Standard storage account type for blobs, file shares, queues, and tables. Recommended for most scenarios using Blob Storage or one of the other Azure Storage services. |
+| Block blob | Premium | Premium storage account type for block blobs and append blobs. Recommended for scenarios with high transaction rates or that use smaller objects or require consistently low storage latency |
+| Page blobs | Premium | Premium storage account type for page blobs only. |
 
 
 ## Access tiers for block blob data
@@ -43,4 +42,4 @@ The available access tiers are:
 
 * The **Archive** tier, which is available only for individual block blobs. The archive tier is optimized for data that can tolerate several hours of retrieval latency and will remain in the Archive tier for at least 180 days. The archive tier is the most cost-effective option for storing data, but accessing that data is more expensive than accessing data in the hot or cool tiers.
 
-If there is a change in the usage pattern of your data, you can switch between these access tiers at any time.
+If there's a change in the usage pattern of your data, you can switch between these access tiers at any time.

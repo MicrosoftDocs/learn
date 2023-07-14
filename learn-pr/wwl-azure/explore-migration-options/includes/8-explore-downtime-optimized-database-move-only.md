@@ -1,3 +1,5 @@
+
+
 Downtime-optimized DMO is a migration option where large tables are migrated as part of the uptime phase. Triggers will capture the changes that can be replayed back as part of the downtime process. As of June 2019, this scenario is on a service-based, project-only basis and SAP Support must be involved in the migration execution. Refer to [SAP Note \#2442926](https://launchpad.support.sap.com/#/notes/2442926).
 
 In the table below, see the comparison between Classic DMO and Downtime-optimized DMO.
@@ -65,18 +67,16 @@ In the table below, see the comparison between Classic DMO and Downtime-optimize
   :::column:::
     Restrictions on Tables that cannot be replicated in uptime:
 
- -  Basis tables containing deep components (e.g. STRG)
- -  Pool tables
- -  Application exchange tables (transferred in uptime anyhow)
- -  Tables to be converted
- -  Tables without primary key
- -  Tables that start with /BI in the name
- -  Tables from Transport Management System (TMS) starting with E07\*
-
+- Basis tables containing deep components (e.g. STRG)
+- Pool tables
+- Application exchange tables (transferred in uptime anyhow)
+- Tables to be converted
+- Tables without primary key
+- Tables that start with /BI in the name
+- Tables from Transport Management System (TMS) starting with E07\*
 
   :::column-end:::
 :::row-end:::
-
 
 ## Near-zero downtime (NZDT)
 

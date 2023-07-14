@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "Cool"
       isCorrect: false
-      explanation: "That's incorrect. Blobs in the cool tier can be read and modified."
+      explanation: "Incorrect. Blobs in the cool tier can be read and modified."
     - content: "Archive"
       isCorrect: true
-      explanation: "That's correct. Blobs in the archive tier must be rehydrated to either the hot or cool tier before it can be read or modified."
+      explanation: "Correct. Blobs in the archive tier must be rehydrated to either the hot or cool tier before it can be read or modified."
     - content: "Hot"
       isCorrect: false
-      explanation: "That's incorrect. Blobs in the hot tier can be read and modified."
+      explanation: "Incorrect. Blobs in the hot tier can be read and modified."
   - content: "Which of the following storage account types supports lifecycle policies?"
     choices:
     - content: "General Purpose v1"
       isCorrect: false
-      explanation: "That's incorrect. General Purpose v1 accounts need to be upgraded to v2 before lifecycle policies are supported."
+      explanation: "Incorrect. General Purpose v1 accounts need to be upgraded to v2 before lifecycle policies are supported."
     - content: "General Purpose v2"
       isCorrect: true
-      explanation: "That's correct. Azure Blob storage lifecycle management offers a rich, rule-based policy for General Purpose v2 and Blob storage accounts."
+      explanation: "Correct. Azure Blob storage lifecycle management offers a rich, rule-based policy for General Purpose v2 and Blob storage accounts."
     - content: "FileStorage"
       isCorrect: false
-      explanation: "That's incorrect. Lifecycle management isn't supported on this account type."
+      explanation: "Incorrect. Lifecycle management isn't supported on this account type."

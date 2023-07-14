@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard.exercise-start-recording-audit-log
+title: Start recording activity in the Unified Audit Log
+metadata:
+  title: Exercise - start recording activity in the Unified Audit Log
+  description: "Start recording activity in the Unified Audit Log."
+  ms.date: 2/17/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-exercise-start-recording-audit-log.md)]

@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-microsoft-configuration-manager
 metadata:
   title: MD-102 3-Deploy using Endpoint Configuration Manager
   description: "This module explains the common day to day tasks that Administrators would use Configuration Manager to perform."
-  ms.date: 04/03/2023
+  ms.date: 05/15/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial

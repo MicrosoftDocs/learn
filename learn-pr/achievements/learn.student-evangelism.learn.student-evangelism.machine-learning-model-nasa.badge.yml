@@ -3,4 +3,5 @@ achievementUid: >-
   learn.student-evangelism.learn.student-evangelism.machine-learning-model-nasa.badge
 metadata:
   title: 'Microsoft Badge: Build a machine learning model was issued by Microsoft'
-socialImageUrl: /training/achievements/student-evangelism/machine-learning-model-nasa-social.png
+socialImageUrl: >-
+  /training/achievements/student-evangelism/machine-learning-model-nasa-social.png

@@ -1,3 +1,5 @@
+
+
 To determine the latency between the different zones, you need to:
 
 - Deploy the VM SKU you want to use for your DBMS instance in all three zones. Make sure Azure Accelerated Networking is enabled when you take this measurement.

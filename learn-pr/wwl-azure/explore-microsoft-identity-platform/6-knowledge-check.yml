@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "Delegated permissions"
       isCorrect: true
-      explanation: "That's correct. Delegated permissions are used by apps that have a signed-in user present. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource."
+      explanation: "Correct. Delegated permissions are used by apps that have a signed-in user present. The app is delegated with the permission to act as a signed-in user when it makes calls to the target resource."
     - content: "App-only access permissions"
       isCorrect: false
-      explanation: "That's incorrect. App-only access permissions are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons."
+      explanation: "Incorrect. App-only access permissions are used by apps that run without a signed-in user present, for example, apps that run as background services or daemons."
     - content: "Both delegated and app-only access permissions"
       isCorrect: false
-      explanation: "That's incorrect. Only delegated permissions are used by apps that have a signed-in user present."
+      explanation: "Incorrect. Only delegated permissions are used by apps that have a signed-in user present."
   - content: "Which of the following app scenarios require code to handle Conditional Access challenges?"
     choices:
     - content: "Apps performing the device-code flow"
       isCorrect: false
-      explanation: "That's incorrect. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
+      explanation: "Incorrect. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
     - content: "Apps performing the on-behalf-of flow"
       isCorrect: true
-      explanation: "That's correct. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
+      explanation: "Correct. Apps performing the on-behalf-of flow require code to handle Conditional Access challenges."
     - content: "Apps performing the Integrated Windows authentication flow"
       isCorrect: false
-      explanation: "That's incorrect. The Integrated Windows authentication flow allows applications on domain or Azure Active Directory (Azure AD) joined computers to acquire a token silently."
+      explanation: "Incorrect. The Integrated Windows authentication flow allows applications on domain or Azure Active Directory (Azure AD) joined computers to acquire a token silently."

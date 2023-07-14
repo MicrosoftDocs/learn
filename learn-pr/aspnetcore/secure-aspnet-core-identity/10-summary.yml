@@ -1,11 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.summary
+uid: learn.secure-aspnet-core-identity.10-summary
 metadata:
   title: Summary
-  description: Summary
-  ms.date: 03/16/2022
+  description: Review what you learned about adding Identity to an existing ASP.NET Core Razor Pages project.
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Summary

@@ -3,11 +3,10 @@ uid: learn.wwl.describe-security-management-capabilities-of-azure
 metadata:
   title: Describe security management capabilities of Azure
   description: "Describe security management capabilities of Azure"
-  ms.date: 04/06/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe security management capabilities of Azure
 summary: Learn about cloud security posture management and how Microsoft Defender for Cloud protects your cloud through secure score, recommendations, and enhanced features that provide cloud workload protection. You’ll also learn about security baselines in Azure.
 abstract: |

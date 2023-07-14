@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.fabric-architecture
+title: Understand the Fabric Architecture
+metadata:
+  title: Understand the Fabric Architecture
+  description: "Understand the Fabric Architecture"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-fabric-architecture.md)]

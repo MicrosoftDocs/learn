@@ -1,8 +1,8 @@
-In this exercise, we'll create two Azure SQL databases to represent two fitness locations, and then create a SQL elastic pool to manage two databases.
+In this exercise, we'll create two Azure SQL databases to represent two fitness locations, then create a SQL elastic pool to manage two databases.
 
 ## Create SQL servers
 
-We'll start by creating a SQL server for our fitness databases, and we'll add databases for two locations. The following steps use Vancouver and Paris but feel free to use other location names.
+We'll start by creating a SQL server for our fitness databases, then we'll add databases for two locations. The following steps use Vancouver and Paris, but feel free to use other location names.
 
 1. First, declare a few helper variables. The SERVERNAME variable will have a random number after the '-'. Replace `<location>` with one of the locations in the following list, and replace `<password>` with a complex password for the databases.
 
@@ -16,7 +16,7 @@ We'll start by creating a SQL server for our fitness databases, and we'll add da
     PASSWORD=<password>
     ```
 
-1. Create a server named **fitnesssqlserver-nnnn**.
+1. Create a server named **fitnesssqlserver-nnnn** (the *nnnn* is replaced by a randomly generated number).
 
     ```azurecli
     az sql server create \
@@ -88,7 +88,7 @@ We're ready to set up the resources for the SQL elastic pool. We'll switch to th
 
 1. Select the **Databases** tab, and then select **Add databases**. The **Add databases** pane appears.
 
-1. Select the databases for both locations, and then select **Apply**. The **Configure** pane reappears.
+1. Select the databases you created for both locations, then select **Apply**. The **Configure** pane reappears.
 
 1. In the top menu bar, select **Save**.
 

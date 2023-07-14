@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: 'learn.wwl.explore-azure-databases.implement-linux-clustering '
-title: 'Lab: Implement Linux clustering for SAP on Azure virtual machines'
+title: Lab - Implement Linux clustering for SAP on Azure virtual machines
 metadata:
-  title: 'Lab: Implement Linux clustering for SAP on Azure virtual machines'
-  description: "Lab: Implement Linux clustering for SAP on Azure virtual machines"
-  ms.date: 06/30/2022
+  title: Lab - Implement Linux clustering for SAP on Azure virtual machines
+  description: "Lab - Implement Linux clustering for SAP on Azure virtual machines"
+  ms.date: 04/23/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+durationInMinutes: 90
 content: |
   [!include[](includes/11-implement-linux-clustering-for-sap-on-azure-virtual-machines.md)]

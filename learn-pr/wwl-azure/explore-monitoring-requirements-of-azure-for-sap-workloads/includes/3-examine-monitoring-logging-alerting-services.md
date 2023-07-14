@@ -1,3 +1,5 @@
+
+
 Azure Monitor is one of the core components in the comprehensive collection for Microsoft cloud-based monitoring. It provides a solution for SAP workloads running in Azure, and for your on-premises datacenter. Other Azure manageability features that belong in the same category include:
 
 - **Azure Advisor**. Uses resource usage data to make recommendations for optimizing performance, security, and availability.

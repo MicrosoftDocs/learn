@@ -7,7 +7,7 @@ metadata:
   author: ajburnle
   ms.author: ajburnle
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Add custom domain name to Azure Active Directory
 summary: Add your custom domain to Azure Active Directory. Add DNS information to the domain registrar. Verify your custom domain name in the Azure portal and set it as the primary.  
 abstract: | 

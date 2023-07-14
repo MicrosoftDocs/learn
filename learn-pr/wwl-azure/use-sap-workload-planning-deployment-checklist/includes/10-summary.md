@@ -1,3 +1,5 @@
+
+
 In this module you:
 
 - Examined the SAP workload planning and deployment checklist.
@@ -30,7 +32,7 @@ In this module you:
 - [Onboarding requirements for SAP HANA on Azure (Large Instances)](/azure/virtual-machines/workloads/sap/hana-onboarding-requirements)
 - [Configure Software RAID on Linux](/azure/virtual-machines/linux/configure-raid)
 - [Configure LVM on a Linux VM in Azure](/azure/virtual-machines/linux/configure-lvm)
-- [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/iaas.html)
+- [SAP HANA Hardware Directory](https://www.sap.com/dmc/exp/2014-09-02-hana-hardware/enEN/#/solutions?filters=iaas)
 - [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533)
 - [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619)
 - [SAP Note \#1662610](https://launchpad.support.sap.com/#/notes/1662610)
@@ -39,4 +41,4 @@ In this module you:
 - [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235)
 - [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926)
 - [SAP Note \#2382421](https://launchpad.support.sap.com/#/notes/2382421)
-- [SAP Note \#2644872](https://launchpad.support.sap.com/#/notes/2644872)
+- [SAP Note \#3126581](https://launchpad.support.sap.com/#/notes/3126581)

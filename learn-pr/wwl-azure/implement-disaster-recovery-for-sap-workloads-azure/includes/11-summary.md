@@ -1,3 +1,5 @@
+
+
 Now you have:
 
 - Explored disaster recovery of SAP workloads.
@@ -17,7 +19,7 @@ Now you have:
 - [Set up disaster recovery for SQL Server](/azure/site-recovery/site-recovery-sql)
 - [Disaster Recovery principles and preparation](/azure/virtual-machines/workloads/sap/hana-concept-preparation)
 - [Disaster recovery failover procedure](/azure/virtual-machines/workloads/sap/hana-failover-procedure)
-- [Configure a SQL Server Always On availability group across different Azure regions](/azure/virtual-machines/windows/sql/virtual-machines-windows-portal-sql-availability-group-dr)
+- [Configure a SQL Server Always On availability group across different Azure regions](/azure/azure-sql/virtual-machines/windows/availability-group-manually-configure-multiple-regions?view=azuresql)
 - [Tutorial: Set up disaster recovery for Azure VMs](/azure/site-recovery/azure-to-azure-walkthrough-enable-replication)
 - [Create and customize recovery plans](/azure/site-recovery/site-recovery-create-recovery-plans)
 - [Configure Azure Storage firewalls and virtual networks](/azure/storage/common/storage-network-security)

@@ -7,8 +7,8 @@ metadata:
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.learn-contact: nickwalk
+  ms.service: azure-blob-storage
 title: Support concurrency in Blob storage apps with ETags and blob leases
 summary: Develop apps that properly support concurrency against data in Azure Blob storage
 abstract: |

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows-server 
 title: Implement Windows Server iSCSI
 summary: Learn about the core functionality, benefits, use cases, and implementation of Internet Small Computer Systems Interface (iSCSI) in Windows Server 2019.
 abstract: |

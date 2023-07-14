@@ -4,16 +4,16 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure Database for MariaDB
   description: Describe how Azure Database for MariaDB supports mission-critical workloads with predictable performance and dynamic scalability. Evaluate whether you can implement Azure Database for MariaDB to address your relational database needs.
-  ms.date: 03/29/2021  
+  ms.date: 06/07/2023  
   author: markingmyname
   ms.author: maghan  
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure  
+  ms.service: mariadb
 title: Introduction to Azure Database for MariaDB
 summary: Evaluate whether Azure Database for MariaDB can manage your organization's mission-critical workloads. Describe whether its performance and scalability make it ideal to host your database workloads.
 abstract: |
-  By the end of this module, you will be able to: 
+  By the end of this module, you're able to: 
     - Evaluate whether Azure Database for MariaDB is appropriate to handle your organization's mission-critical workloads.
     - Describe how the predictable performance and dynamic scalability of Azure Database for MariaDB make it ideal to host your database workloads.
 prerequisites: |

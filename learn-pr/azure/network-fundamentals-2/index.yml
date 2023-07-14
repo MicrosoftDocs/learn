@@ -3,11 +3,10 @@ uid: learn.azure.network-fundamentals-2
 metadata:
   title: Fundamentals of network security
   description: Explore the fundamentals of computer networking security and monitoring.
-  ms.date: 09/19/2022
+  ms.date: 07/13/2023
   author: cryophobia
   ms.author: chrvaw
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Fundamentals of network security
 summary: Explore the fundamentals of computer networking security and monitoring.
 abstract: | 

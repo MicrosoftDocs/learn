@@ -1,3 +1,5 @@
+
+
 Since the monitoring demands by SAP were specific to SAP applications, Microsoft initially decided not to generically implement the required functionality into Azure. The decisions on which monitoring components to deploy is left to the customer, along with setting the configurations to their Azure VMs. However, deployment and lifecycle management of the monitoring components can be mostly automated by Azure.
 
 The solution developed to enable SAP Monitoring is based on the concept of Azure VM Agent and its extensions. The principal idea behind this concept is to allow (in cases like the Azure Extension for SAP), the deployment of special functionality into a VM and the configuration of such software at deployment time. The extension is required for SAP workloads to be supported on Azure VMs.
@@ -19,7 +21,6 @@ Azure Monitor for SAP Solutions has been released (in preview at the time of aut
 ### Supported infrastructure
 
 - Azure virtual machine
-- Azure Large Instance
 
 ### Supported provider types
 

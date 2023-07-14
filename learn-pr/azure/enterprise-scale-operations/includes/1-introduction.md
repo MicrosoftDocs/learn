@@ -1,6 +1,6 @@
-In this module, you'll learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud. 
+In this module, you learn how to operationalize an Azure enterprise estate by using centralized management. This approach provides the guardrails needed to enable the organization's path to the cloud. 
 
-As organizations move to the cloud, they want to take advantage of cloud capabilities to create a fast and reliable flow from development to operations. Automating the configuration of centralized telemetry, virtual-machine (VM) management, and governance configurations is critical to this flow. This approach:
+As organizations move to the cloud, they want to take advantage of cloud capabilities to create a fast and reliable flow from development to operations. In this flow, automating the configuration of centralized telemetry, virtual-machine (VM) management, and governance configurations is critical. This approach:
 
 - Accelerates landing-zone creation times.
 - Provides development teams with consistent environments throughout the development lifecycle.

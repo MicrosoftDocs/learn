@@ -8,8 +8,8 @@ metadata:
   author: erzelman
   ms.author: erzelman
   ms.topic: interactive-tutorial
-  ms.prod: learning-cela-accessibility
   showCreativeCommonsFooter: true
+  ms.service: microsoft-365
 title: Creating accessible content with Microsoft 365
 summary: This module shows how to create content with Microsoft 365 in a way that enables greater accessibility.
 abstract: |

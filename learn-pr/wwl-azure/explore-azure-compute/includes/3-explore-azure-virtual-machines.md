@@ -1,3 +1,5 @@
+
+
 Azure VMs make up the primary infrastructure as a service (IaaS) compute service offerings available in Azure. When compared with other compute services, Azure VMs provide the greatest degree of control over the configuration of the virtual machine and its operating system. You can configure the operating system running within a VM manually or in an automated manner, by using Virtual Machine Extensions (VM Extensions), which rely on such technologies as Windows PowerShell scripts, Desired State Configuration (DSC), Chef, or Puppet.
 
 Azure VMs share most of their characteristics with the Microsoft Hyper V virtual machines that customers deploy in their on-premises datacenter. However, several important differences exist between them.

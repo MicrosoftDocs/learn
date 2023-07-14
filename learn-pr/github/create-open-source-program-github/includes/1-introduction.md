@@ -1,8 +1,8 @@
 Open-source software programs have enjoyed major success for decades. While there are different flavors of open-source licenses, they all share similar principles of transparency and inclusiveness that have produced some of the most powerful projects ever.
 
-Suppose you're a leader at a company that has developed some substantial software projects. These projects have been proprietary since inception, but now you're investigating the possibility of open-sourcing one or more of them. As you try to determine which candidates would be best to publish, you begin to realize that running a successful program is much more than just uploading source code to a public repository. It requires careful collaboration with stakeholders from across the company. It also introduces a new mindset for exposing intellectual property in a way that may be entirely new for the company. Lastly, it involves a lot of work to set up and maintain. But for some projects, you know it will be worth it.
+Suppose you're a leader at a company that has developed some substantial software projects. These projects have been proprietary since inception, but now you're investigating the possibility of open-sourcing one or more of them. You then try to determine which candidates would be best to publish. Now, you begin to realize that running a successful program is more than just uploading source code to a public repository. It requires careful collaboration with stakeholders from across the company. It also introduces a new mindset for exposing intellectual property in a way that may be entirely new for the company. Lastly, it involves lots of work to set up and maintain. But for some projects, you know it's worth it.
 
-In this module, you'll learn how to create a successful open-source program by establishing contributor guidance, following proven processes, and leveraging community standards.
+In this module, learn how to create a successful open-source program by establishing contributor guidance, following proven processes, and by using community standards.
 
 ## Learning objectives
 

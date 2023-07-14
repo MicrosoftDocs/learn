@@ -1,8 +1,12 @@
+
+
+
+
 ## Scenario
 
 You are the SAP solutions architect for your company, responsible for the Azure IaaS solutions. You define the standards for Azure compute, storage, and networking.
 
-Storage options for SAP workloads in Azure include Azure VM disks, Azure VM NFS storage, Azure VM SMB storage, and SAP HANA on Azure (Large Instances) storage. You need to prepare the specifications to leverage the storage component to design scalable, performant, and resilient SAP deployments in Azure.
+Storage options for SAP workloads in Azure include Azure VM disks, Azure VM NFS storage, and Azure VM SMB storage. You need to prepare the specifications to leverage the storage component to design scalable, performant, and resilient SAP deployments in Azure.
 
 ## Learning objectives
 

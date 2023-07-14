@@ -14,20 +14,20 @@ App settings are always encrypted when stored (encrypted-at-rest).
 
 ## Adding and editing settings
 
-To add a new app setting, click **New application setting**. If you are using deployment slots you can specify if your setting is swappable or not. In the dialog, you can stick the setting to the current slot.
+To add a new app setting, select **New application setting**. If you're using deployment slots you can specify if your setting is swappable or not. In the dialog, you can stick the setting to the current slot.
 
 :::image type="content" source="../media/app-configure-slotsetting.png" alt-text="Selecting deployment slot setting to stick the setting to the current slot.":::
 
-To edit a setting, click the **Edit** button on the right side.
+To edit a setting, select the **Edit** button on the right side.
 
-When finished, click **Update**. Don't forget to click **Save** back in the **Configuration** page.
+When finished, select **Update**. Don't forget to select **Save** back in the **Configuration** page.
 
 > [!NOTE]
 > In a default, or custom, Linux container any nested JSON key structure in the app setting name like `ApplicationInsights:InstrumentationKey` needs to be configured in App Service as `ApplicationInsights__InstrumentationKey` for the key name. In other words, any `:` should be replaced by `__` (double underscore).
 
 ### Editing application settings in bulk
 
-To add or edit app settings in bulk, click the **Advanced** edit button. When finished, click **Update**. App settings have the following JSON formatting:
+To add or edit app settings in bulk, select the **Advanced** edit button. When finished, select **Update**. App settings have the following JSON formatting:
 
 ```json
 [
@@ -52,7 +52,7 @@ For ASP.NET and ASP.NET Core developers, the values you set in App Service overr
 > [!TIP]
 > There is one case where you may want to use connection strings instead of app settings for non-.NET languages: certain Azure database types are backed up along with the app only if you configure a connection string for the database in your App Service app.
 
-Adding and editing connection strings follow the same principles as other app settings and they can also be tied to deployment slots. Below is an example of connection strings in JSON formatting that you would use for bulk adding or editing.
+Adding and editing connection strings follow the same principles as other app settings and they can also be tied to deployment slots. An example of connection strings in JSON formatting that you would use for bulk adding or editing:
 
 ```json
 [

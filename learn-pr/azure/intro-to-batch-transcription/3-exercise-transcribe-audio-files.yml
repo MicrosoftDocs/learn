@@ -8,7 +8,9 @@ metadata:
   author: eric-urban
   ms.author: eur
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 5
 interactive: bash
 azureSandbox: true

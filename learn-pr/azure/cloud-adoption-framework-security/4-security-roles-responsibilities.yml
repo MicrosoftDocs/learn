@@ -6,8 +6,8 @@ metadata:
   title: Security roles and responsibilities
   description: The various roles involved in cloud security and how modernization affects security architecture.
   ms.date: 04/26/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

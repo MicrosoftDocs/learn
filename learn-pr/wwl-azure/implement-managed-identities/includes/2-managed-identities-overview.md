@@ -1,5 +1,7 @@
 
-Managed identities provide an identity for applications to use when connecting to resources that support Azure Active Directory (Azure AD) authentication. Applications may use the managed identity to obtain Azure AD tokens. For example, an application may use a managed identity to access resources like Azure Key Vault where developers can store credentials in a secure manner or to access storage accounts.
+A common challenge for developers is the management of secrets, credentials, certificates, and keys used to secure communication between services. Managed identities eliminate the need for developers to manage these credentials.
+
+While developers can securely store the secrets in Azure Key Vault, services need a way to access Azure Key Vault. Managed identities provide an automatically managed identity in Azure Active Directory (Azure AD) for applications to use when connecting to resources that support Azure AD authentication. Applications can use managed identities to obtain Azure AD tokens without having to manage any credentials.
 
 ## Types of managed identities
 
@@ -12,17 +14,17 @@ Internally, managed identities are service principals of a special type, which a
 
 ## Characteristics of managed identities
 
-The table below highlights some of the key differences between the two types of managed identities.
+The following table highlights some of the key differences between the two types of managed identities.
 
 | Characteristic | System-assigned managed identity | User-assigned managed identity |
 |--|--|--|
 | Creation | Created as part of an Azure resource (for example, an Azure virtual machine or Azure App Service) | Created as a stand-alone Azure resource |
 | Lifecycle | Shared lifecycle with the Azure resource that the managed identity is created with. When the parent resource is deleted, the managed identity is deleted as well. | Independent life-cycle.  Must be explicitly deleted. |
-| Sharing across Azure resources | Cannot be shared, it can only be associated with a single Azure resource. | Can be shared, the same user-assigned managed identity can be associated with more than one Azure resource. |
+| Sharing across Azure resources | Can't be shared, it can only be associated with a single Azure resource. | Can be shared, the same user-assigned managed identity can be associated with more than one Azure resource. |
 
 ## When to use managed identities
 
-The image below gives an overview of the scenarios that support using managed identities. For example, you can use managed identities if you want to build an app using Azure App Services that accesses Azure Storage without having to manage any credentials. 
+The following image gives an overview of the scenarios that support using managed identities. For example, you can use managed identities if you want to build an app using Azure App Services that accesses Azure Storage without having to manage any credentials. 
 
 :::image type="content" source="../media/managed-identities-use-case.png" alt-text="Image showing a list of sources that gain access to targets through Azure Active Directory.":::
 
@@ -30,4 +32,4 @@ The image below gives an overview of the scenarios that support using managed id
 
 Managed identities for Azure resources can be used to authenticate to services that support Azure Active Directory authentication. For a list of Azure services that support the managed identities for Azure resources feature, visit [Services that support managed identities for Azure resources](/azure/active-directory/managed-identities-azure-resources/services-support-msi).
 
-The rest of this module will use Azure virtual machines in the examples, but the same concepts and similar actions can be applied to any resource in Azure that supports Azure Active Directory authentication.
+The rest of this module uses Azure virtual machines in the examples, but the same concepts and similar actions can be applied to any resource in Azure that supports Azure Active Directory authentication.

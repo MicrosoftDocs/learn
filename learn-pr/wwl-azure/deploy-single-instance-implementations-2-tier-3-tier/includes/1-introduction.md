@@ -1,3 +1,5 @@
+
+
 ## Scenario
 
 You need to prepare for your company's deployment of single-instance SAP on Azure implementation. For a test deployment, you will provide Azure Resource Manager deployment templates to prepare an Azure virtual machine for the installation of SAP HANA via SAP HANA database lifecycle manager (HDBLCM).

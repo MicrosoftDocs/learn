@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-standard.introduction
+title: Introduction to threat investigation with the Unified Audit Log (UAL)
+metadata:
+  title: Introduction to threat investigation with the Unified Audit Log (UAL)
+  description: "Introduction to threat investigation with the Unified Audit Log (UAL)."
+  ms.date: 2/17/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

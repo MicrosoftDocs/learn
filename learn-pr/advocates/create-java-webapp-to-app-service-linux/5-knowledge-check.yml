@@ -9,7 +9,9 @@ metadata:
   ms.date: 12/04/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
   ms.contributors: yoterada-12142020
 durationInMinutes: 2
 quiz:
@@ -21,7 +23,7 @@ quiz:
           explanation: "HTML is used for creating static web pages."
         - content: "Extensible Hypertext Markup Language (XHTML)"
           isCorrect: true
-          explanation: "Since JavaServer Faces 2.0, Facelets has been used as the default view declaration language."
+          explanation: "Because JavaServer Faces 2.0, Facelets has been used as the default view declaration language."
         - content: "JavaServer Pages (JSP)"
           isCorrect: false
           explanation: "In the past, you could write JavaServer Faces (JSF) tags in JSP pages. Facelets is the new view declaration language since JSF 2.0. We recommend that you use the XHTML instead of JSP."
@@ -38,6 +40,8 @@ quiz:
           explanation: This method is a correct option, but it isn't the only way to access the logs.
         - content: All of the above
           isCorrect: true
+          explanation: Correct!
+
 
     - content: Which tasks can you do with the Maven Plugin for Azure App Service?
       choices:
@@ -52,3 +56,4 @@ quiz:
           explanation: This choice is a correct option, but it isn't its only feature.
         - content: Both configure and deploy to your Azure App Service instance
           isCorrect: true
+          explanation: Correct!

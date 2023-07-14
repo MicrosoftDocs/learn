@@ -4,13 +4,15 @@ title: Explore deployment methodologies
 metadata:
   title: Explore deployment methodologies
   description: "Explore deployment methodologies"
-  ms.date: 07/07/2022
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
+    - devx-track-terraform
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-deployment-methodologies.md)]

@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/05/2023
+  ms.date: 04/25/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "API gateway"
       isCorrect: false
-      explanation: "That's incorrect. The API gateway routes calls, performs API transforms, and verifies keys."
+      explanation: "Incorrect. The API gateway routes calls, performs API transforms, and verifies keys."
     - content: "Azure portal"
       isCorrect: false
-      explanation: "That's incorrect. The Azure portal is the administrative interface where you set up your API program."
+      explanation: "Incorrect. The Azure portal is the administrative interface where you set up your API program."
     - content: "Developer portal"
       isCorrect: true
-      explanation: "That's correct. The Developer portal serves as the main web presence for developers, and is where they can subscribe to get API keys."
+      explanation: "Correct. The Developer portal serves as the main web presence for developers, and is where they can subscribe to get API keys."
   - content: "Which of the following API Management policies would one use if one wants to apply a policy based on a condition?"
     choices:
     - content: "forward-request"
       isCorrect: false
-      explanation: "That's incorrect. The forward-request policy forwards the incoming request to the backend service specified in the request context."
+      explanation: "Incorrect. The forward-request policy forwards the incoming request to the backend service specified in the request context."
     - content: "choose"
       isCorrect: true
-      explanation: "That's correct. The choose policy applies enclosed policy statements based on the outcome of evaluation of boolean expressions."
+      explanation: "Correct. The choose policy applies enclosed policy statements based on the outcome of evaluation of boolean expressions."
     - content: "return-response"
       isCorrect: false
-      explanation: "That's incorrect. The return-response policy aborts pipeline execution and returns either a default or custom response to the caller."
+      explanation: "Incorrect. The return-response policy aborts pipeline execution and returns either a default or custom response to the caller."

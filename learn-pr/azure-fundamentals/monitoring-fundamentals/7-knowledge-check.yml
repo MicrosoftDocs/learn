@@ -11,9 +11,8 @@ metadata:
   ms.prod: learning-languages
 durationInMinutes: 3
 quiz:
-  title: Check your knowledge
   questions:
-  - content: "You want to be alerted when new recommendations to improve your cloud environment are available. Which service will do this?"
+  - content: "Which service alerts you when new recommendations to improve your cloud environment are available?"
     choices:
     - content: "Azure Advisor"
       isCorrect: true
@@ -28,10 +27,10 @@ quiz:
     choices:
     - content: "Azure Advisor"
       isCorrect: false
-      explanation: "Azure Advisor does not supply RCAs."
+      explanation: "Azure Advisor doesn't supply RCAs."
     - content: "Azure Monitor"
       isCorrect: false
-      explanation: "Azure Monitor does not supply RCAs."
+      explanation: "Azure Monitor doesn't supply RCAs."
     - content: "Azure Service Health"
       isCorrect: true
       explanation: "Azure Service Health provides incident history and RCAs to share with your stakeholders."
@@ -39,10 +38,10 @@ quiz:
     choices:
     - content: "Azure Advisor"
       isCorrect: false
-      explanation: "Azure Monitor is not the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."
+      explanation: "Azure Monitor isn't the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."
     - content: "Azure Monitor"
       isCorrect: true
       explanation: "Azure Monitor is the platform used by Application Insights."
     - content: "Azure Service Health"
       isCorrect: false
-      explanation: "Azure Service Health is not the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."
+      explanation: "Azure Service Health isn't the platform used by Application Insights, nor does it provide monitoring for VMs, containers, and Kubernetes."

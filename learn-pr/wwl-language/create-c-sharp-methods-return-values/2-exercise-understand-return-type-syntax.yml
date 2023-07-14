@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-c-sharp-methods-return-values.exercise-understand-return-type-syntax
-title: Understand return type syntax
+title: Exercise - Understand return type syntax
 metadata:
-  title: Understand return type syntax
-  description: "Understand return type syntax"
-  ms.date: 03/21/2023
+  title: Exercise - Understand return type syntax
+  description: "Exercise - Understand return type syntax"
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial

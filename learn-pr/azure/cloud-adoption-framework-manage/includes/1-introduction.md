@@ -14,9 +14,9 @@ The following image shows the components of a management baseline that this modu
 
 ### Module scenario
 
-Suppose you work as an IT operations architect at a company that has been migrating two datacenters to Azure. In this process, the company wants to modernize IT operations and its IT-management solution. You can use the guidance in this Learn module to evaluate how a cloud-native solution will support the company's cloud journey.
+Suppose you work as an IT operations architect at a company that has been migrating two datacenters to Azure. In this process, the company wants to modernize IT operations and its IT-management solution. You can use the guidance in this Learn module to evaluate how a cloud-native solution supports the company's cloud journey.
 
-The new cloud-native solution will include a management baseline for the cloud environment. The fundamental management baseline will be for all workloads, and will have extra features for specific platforms and workloads. The solution should also enable reporting on management costs for the business stakeholders.
+The new cloud-native solution includes a management baseline for the cloud environment. The fundamental management baseline is for all workloads, and has extra features for specific platforms and workloads. The solution should also enable reporting on management costs for the business stakeholders.
 
 ## Learning objectives
 

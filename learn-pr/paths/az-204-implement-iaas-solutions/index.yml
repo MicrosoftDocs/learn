@@ -1,20 +1,20 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.az-204-implement-iaas-solutions
 metadata:
-  title: 'AZ-204: Implement infrastructure as a service solutions'
-  description: 'AZ-204: Implement infrastructure as a service solutions'
-  ms.date: 12/09/2021
+  title: 'AZ-204: Implement containerized solutions'
+  description: Learn how to create and deploy virtual machine, deploy resources using Azure Resource Manager templates, and manage and deploy containers.
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: 'AZ-204: Implement infrastructure as a service solutions'
+  ms.service: azure
+title: 'AZ-204: Implement containerized solutions'
 prerequisites: |
-  * At least one year of experience developing scalable solutions through all phases of software development.
-  * Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
-  * If you are new to Azure, or cloud computing, it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
+  *   At least one year of experience developing scalable solutions through all phases of software development.
+  *   Have a base understanding of Azure and cloud concepts, services, and the Azure portal.
+  *   If you are new to Azure, or cloud computing, it is recommended you complete the [AZ-900: Azure Fundamentals](/training/paths/az-900-describe-cloud-concepts/) course.
 summary: |
-  Learn how to create and deploy virtual machine, deploy resources using Azure Resource Manager templates, and manage and deploy containers.
+  Learn how to create and deploy containerized solutions to Azure by using the Azure Container Registry, Azure Container Instances, and Azure Container Apps.
 iconUrl: /training/achievements/iaas-implement-solutions.svg
 levels:
 - intermediate
@@ -30,9 +30,8 @@ subjects:
 - container
 - virtual-machine
 modules:
-- learn.wwl.provision-virtual-machines-azure
-- learn.wwl.create-deploy-azure-resource-manager-templates
 - learn.wwl.publish-container-image-to-azure-container-registry
 - learn.wwl.create-run-container-images-azure-container-instances
+- learn.wwl.implement-azure-container-apps
 trophy:
   uid: learn.wwl.az-204-implement-iaas-solutions.trophy

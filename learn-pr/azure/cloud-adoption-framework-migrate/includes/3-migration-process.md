@@ -12,33 +12,33 @@ The degree of planning and the impact on business users make the mass-migration 
 
 The iterative approach to migration allows the business to absorb the changes in smaller units and produces less business disruption. It also allows the team to measure and learn from each iteration. The team can gain speed and expertise progressively from one iteration to the next.
 
-For the rest of this module, assume that Tailwind Traders will follow an iterative approach to migration.
+For the rest of this module, you can assume that Tailwind Traders decided to follow an iterative approach to migration.
 
 ## Disciplines
 
-In any iterative migration process, the team will complete three sets of tasks or disciplines to successfully migrate each workload to Azure:
+In any iterative migration process, the team completes three sets of tasks or disciplines to successfully migrate each workload to Azure:
 
 - **Assess workloads**: During assessment of the workloads in each wave, the architects primarily look for cloud compatibility and dependencies between assets. They also look for compatibility with modernization and optimization opportunities. At times, they get close to the architecture of individual workloads to perform advanced optimization tasks by using the Azure Well-Architected Review.
 
-- **Migrate workloads**: During migration, the team uses a migration tool to complete the replication of assets (virtual machines, applications, and data) to the cloud. In this step, the team is largely directing and supervising the repeatable process to ensure accurate replication of the selected workloads' assets.
+- **Migrate workloads**: During migration, the team uses a migration tool to complete the replication of assets (virtual machines, applications, and data) to the cloud. In this step, the team is largely directing and supervising the repeatable process to ensure accurate replication of the assets for the selected workloads.
 
 - **Release workloads**: After each technology platform and workload is migrated to the cloud, the team needs to test, optimize, and release production traffic to its newly migrated workloads. Testing might also require an evaluation of user routing and optimization of the network path to the newly deployed workloads.
 
-Repeating these three disciplines for each workload in the migration plan will help ensure a successful migration to the cloud.
+Repeating these three disciplines for each workload in the migration plan helps ensure a successful migration to the cloud.
 
 ## Sprint planning
 
 When you're planning migration efforts, one of the first steps is to break down the list of workloads to be migrated into smaller groups.
 
-As you learn about your team's velocity (how many workloads they can move in a sprint), we suggest starting with the Power of 10 approach. In that approach, you consistently define groups of 10 common workloads in each wave. Then, you'll map those groups of 10 workloads to two-week iterations or sprints by using your cloud-adoption plan in Azure DevOps. Reference the [Planning module](/training/modules/cloud-adoption-framework-plan/) for step-by-step guidance.
+As you learn about your team's velocity (how many workloads they can move in a sprint), we suggest starting with the Power of 10 approach. In that approach, you consistently define groups of 10 common workloads in each wave. Then, you map those groups of 10 workloads to two-week iterations or sprints by using your cloud-adoption plan in Azure DevOps. Reference the [Planning module](/training/modules/cloud-adoption-framework-plan/) for step-by-step guidance.
 
 Before each sprint, the migration team should evaluate the next wave of workloads to be migrated. The objective of this evaluation is to ensure that the team has all of the necessary information and access to be successful in the current sprint. It also gives the team a chance to adjust the next 10 workloads based on what it's learned from past sprints. After the team is committed to the sprint, the actual work can begin.
 
 ## Team organization
 
-You can apply basic organizing principles to your team structure to maximize the output of each sprint, based on available velocity. These are the two most common forms of team organization:
+You can apply basic organizing principles to your team structure to maximize the output of each sprint, based on available velocity. The two most common forms of team organization are:
 
-- **Self-organizing teams:** Holding true to agile methodologies, self-organizing teams ensure that the members of the migration team can collectively deliver on each of the disciplines. In each sprint, the team identifies who performs the tasks associated with each of the disciplines across each workload in the wave.
+- **Self-organizing teams:** This form of organization holds true to agile methodologies. Self-organizing teams ensure that the members of the migration team can collectively deliver on each of the disciplines. In each sprint, the team identifies who performs the tasks associated with each of the disciplines across each workload in the wave.
 
   In this organization, the objective is to complete all three disciplines for each workload in the current sprint.
 - **Migration factory:** The repetitive nature of the migration disciplines lends them to a division of labor across highly specialized teams. In this approach, one team is dedicated to each of the migration disciplines. The assessment team is always one to two waves ahead of the migration team. The release team is always one to two sprints behind the migration team.
@@ -51,20 +51,20 @@ Technology seldom blocks the migration process. Most of the blockers to migratio
 
 - **Strategy and planning:** The most common blocker to a successful migration stems from missed steps during strategy or planning efforts. Failure to set the right expectations with executives, project managers, or technical staff can create blockers, even when all of the technical disciplines are running as planned.
 
-  Before you begin any migration effort at scale, ensure that a [cloud-adoption strategy](/training/modules/cloud-adoption-framework-strategy/) and [cloud-adoption plan](/training/modules/cloud-adoption-framework-plan/) have been created and reviewed by stakeholders.
+  Before beginning any migration effort at scale, ensure that you've created a [cloud-adoption strategy](/training/modules/cloud-adoption-framework-strategy/) and [cloud-adoption plan](/training/modules/cloud-adoption-framework-plan/), and that stakeholders have reviewed them.
 
-- **Environmental:** Improperly configured environments are the next most common blocker to migration success. Specifically, the migration effort will require a minimum of networking and identity configuration to allow for proper connectivity and access requirements.
+- **Environmental:** Improperly configured environments are the next most common blocker to migration success. Specifically, the migration effort requires a minimum of networking and identity configuration to allow for proper connectivity and access requirements.
 
   For most migration efforts, governance and operations considerations should be addressed early in the migration, if not before migration. To ensure proper environmental configuration, reference the Cloud Adoption Framework Learn module on [preparing your environment](/training/modules/cloud-adoption-framework-ready/).
 
 - **Governance:** Most organizations have requirements for cost, security, consistency, and identity management that go beyond basic environment configuration. Many organizations don't understand those requirements until they try to migrate production traffic to the cloud.
 
-  We recommend that all migration teams review the Learn module for the [Govern methodology](/training/modules/cloud-adoption-framework-govern/) in the Cloud Adoption Framework before beginning a scale migration effort, to avoid late-bound surprises.
+  We recommend that all migration teams review the Learn module for the [Govern methodology](/training/modules/cloud-adoption-framework-govern/) in the Cloud Adoption Framework before beginning a scale migration effort. Reviewing this information can help avoid late-bound surprises.
 
-- **Operations:** Most organizations have set operations requirements for their production workloads in the current datacenter. It's often assumed that those operations will work when they move production traffic to the cloud. Before the migration team begins any scale migration effort, it should review the Learn module about [developing a clear strategy](/training/modules/cloud-adoption-framework-strategy/) to understand basic expectations about operations management in the cloud.
+- **Operations:** Most organizations have set operations requirements for their production workloads in the current datacenter. It's often assumed that those operations requirements work when the production traffic is moved to the cloud. Before the migration team begins any scale migration effort, it should review the Learn module about [developing a clear strategy](/training/modules/cloud-adoption-framework-strategy/) to understand basic expectations about operations management in the cloud.
 
 - **Technical:** Occasionally, workloads might be blocked because of increased needs in remediation, modernization, or changes to the rationalization strategy. When individual workloads are blocked, you can address them by technical spikes, which remove problematic workloads from the standard flow.
 
-  Technical spikes are usually addressed in a parallel sprint by a separate team. A migration team can address many of the technical issues around remediation and modernization by using the Cloud Adoption Framework migration scenarios shared at the end of this module.
+  Usually, a separate team addresses technical spikes in a parallel sprint. A migration team can address many of the technical issues around remediation and modernization. The Cloud Adoption Framework migration scenarios shared at the end of this module cover these issues.
 
 When a workload requires comprehensive changes that affect the application architecture, workload teams should review the [Well-Architected Framework](/training/modules/azure-well-architected-introduction/) Learn module for more guidance.

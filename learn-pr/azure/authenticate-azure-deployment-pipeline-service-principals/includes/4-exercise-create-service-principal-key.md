@@ -62,10 +62,10 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
    [!INCLUDE [](../../includes/azure-template-bicep-exercise-cli-unique-display-name.md)]
 
 1. Look at the JSON output from the previous command. It includes the following properties:
- 
-   - `appId`: The service principal's application ID.
-   - `password`: The service principal's key.
-   - `tenant`: Your Azure AD tenant ID.
+
+   * `appId`: The service principal's application ID.
+   * `password`: The service principal's key.
+   * `tenant`: Your Azure AD tenant ID.
 
    Copy these values somewhere safe. You'll use them soon. 
 
@@ -85,7 +85,7 @@ To deploy this template to Azure, sign in to your Azure account from the Visual 
 1. Run the following command to show the service principal's application ID, the key, and your Azure AD tenant ID:
 
    ```azurepowershell
-   Write-Output "Service principal application ID: $($servicePrincipal.ApplicationId)"
+   Write-Output "Service principal application ID: $($servicePrincipal.AppId)"
    Write-Output "Service principal key: $servicePrincipalKey"
    Write-Output "Your Azure AD tenant ID: $((Get-AzContext).Tenant.Id)"
    ```

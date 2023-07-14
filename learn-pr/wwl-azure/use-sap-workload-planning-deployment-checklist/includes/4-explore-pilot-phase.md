@@ -1,4 +1,6 @@
-The pilot can run in parallel to project planning and preparation. This phase can also be used to test options identified in the planning and preparation phase. As part of the pilot, it is recommended to set up and validate a full HA/DR solution as well as security design. In some cases, it might be also possible to use this phase to perform scalability tests or deploy SAP sandbox systems. To run a pilot, customers should start by identifying a non-critical system that they want to migrate into Azure and continue by carrying out the following tasks:
+
+
+The pilot can run in parallel to project planning and preparation. This phase can also be used to test options identified in the planning and preparation phase. As part of the pilot, it's recommended to set up and validate a full HA/DR solution as well as security design. In some cases, it might be also possible to use this phase to perform scalability tests or deploy SAP sandbox systems. To run a pilot, customers should start by identifying a non-critical system that they want to migrate into Azure and continue by carrying out the following tasks:
 
 ## 1. Optimize data transfer into Azure
 
@@ -18,14 +20,14 @@ In case of an SAP heterogeneous platform migration that involves an export and i
 
 - Reference SAP support notes, SAP HANA hardware directory, and SAP Product Availability Matrix (PAM) to ensure accuracy of the information regarding supported Azure VM SKUs, supported OS releases for these Azure VM SKUs, and supported SAP and DBMS releases.
 - Validate sizing of the infrastructure and the application components that you deploy in Azure. When migrating existing applications, you should be able to obtain the necessary SAPS based on existing telemetry. Retrieve the SAP benchmark and compare it to the SAPS numbers listed in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533). In addition, reference the information provided in [SAPS ratings on Azure VMs – where to look and where you can get confused](https://techcommunity.microsoft.com/t5/Running-SAP-Applications-on-the/SAPS-ratings-on-Azure-VMs-8211-where-to-look-and-where-you-can/ba-p/368208).
-- Evaluate and test the sizing of your Azure VMs regarding maximum storage throughput and network throughput of the different VM types you chose in the planning phase. This data can be found in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes). When the Azure VM guest operating system is Windows, it is important to consider the max uncached disk throughput for sizing. In the case of Linux, it is also important to consider the max uncached disk throughput for sizing.
+- Evaluate and test the sizing of your Azure VMs regarding maximum storage throughput and network throughput of the different VM types you chose in the planning phase. This data can be found in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes). When the Azure VM guest operating system is Windows, it's important to consider the max uncached disk throughput for sizing. In the case of Linux, it's also important to consider the max uncached disk throughput for sizing.
 
 ### Storage
 
 - Use Azure Standard SSD storage as the minimum for VMs representing SAP application layers and for non-performance sensitive DBMS deployment and use Azure Premium Storage for any DBMS VMs that are performance sensitive.
 - Avoid using Azure Standard HDD disks.
 - Use Azure managed disks.
-- Enable Azure Write Accelerator for DBMS log drives with M-Series Azure VMs. Be aware of documented Write accelerator limits and usage restrictions.
+- Enable Azure Write Accelerator for DBMS log drives with M-Series Azure VMs. Be aware of documented Write Accelerator limits and usage restrictions.
 - For DBMS-related storage information, refer to [Considerations for Azure Virtual Machines DBMS deployment for SAP workload](/azure/virtual-machines/workloads/sap/dbms_guide_general) as well as DBMS specific documentation referenced in that document.
 - For SAP HANA deployments, refer to [SAP HANA infrastructure configurations and operations on Azure](/azure/virtual-machines/workloads/sap/hana-vm-operations).
 - Never mount Azure data disks to an Azure Linux VM by using the device ID. Instead, use the universally unique identifier (UUID). Be careful when you use graphical tools to mount an Azure data disk. Double-check the entries in /etc/fstab to make sure that the disks are mounted using the UUID. For more information, refer to [Connect to the Linux VM to mount the new disk](/azure/virtual-machines/linux/attach-disk-portal).
@@ -43,14 +45,14 @@ Test and evaluate your virtual network infrastructure and the distribution of yo
 
      - Placing Network Virtual Appliances in the communication path between the SAP application and the DBMS layer of an SAP NetWeaver, Hybris, or S/4HANA based SAP systems is not supported.
      - Placing SAP application layer and SAP DBMS in different Azure virtual networks that are not peered is not supported.
-     - It is supported to use Azure Application Security Groups (ASGs) and Network Security Groups (NSGs) to control traffic flow between the SAP application layer and SAP DBMS layer.
+     - It's supported to use Azure Application Security Groups (ASGs) and Network Security Groups (NSGs) to control traffic flow between the SAP application layer and SAP DBMS layer.
 3. Make sure that Azure Accelerated Networking is enabled on the VMs used on the SAP application layer and the SAP DBMS layer. Keep in mind the OS requirements for support of Accelerated Networking in Azure:
 
      - Windows Server 2012 R2 or newer releases
      - SUSE Linux 12 SP3 or newer releases
      - RHEL 7.4 or newer releases
      - Oracle Linux 7.5. The RHCKL kernel requires the release 3.10.0-862.13.1.el7. The Oracle UEK kernel requires release 5.
-4. Test and evaluate the network latency between SAP application layer VM and DBMS VM according to [SAP Note \#500235](https://launchpad.support.sap.com) and [SAP Note \#1100926](https://launchpad.support.sap.com). Evaluate the results against network latency guidance of [SAP Note \#1100926](https://launchpad.support.sap.com). The network latency should be within the moderate to good range. Exceptions apply to traffic between VMs and HANA Large Instance units as documented in [SAP HANA (Large Instances) network architecture](/azure/virtual-machines/workloads/sap/hana-network-architecture).
+4. Test and evaluate the network latency between SAP application layer VM and DBMS VM according to [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235) and [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). Evaluate the results against network latency guidance of [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926). The network latency should be within the moderate to good range.
 5. Make sure that Azure internal load balancer (ILB) deployments are set up to use Direct Server Return. This setting will reduce latency in cases where ILBs are used for high availability configurations on the DBMS layer.
 6. If you are using Azure load balancer in conjunction with Linux guest operating systems check that the Linux network parameter **net.ipv4.tcp\_timestamps** is set to 0. Note that this contradicts the general recommendations of [SAP Note \#2382421](https://launchpad.support.sap.com/#/notes/2382421). The SAP Note has been updated to reflect the fact that the parameter needs to be set to 0 to work in conjunction with Azure load balancers.
 
@@ -94,7 +96,7 @@ Test and evaluate your virtual network infrastructure and the distribution of yo
 - Verify that NSG rules are working as expected and shield the protected resources.
 - Verify encryption at rest and in transit. Define and implement processes to back up, store, and access certificates as well as validate the restore process of encrypted entities.
 - Use Azure Disk Encryption for OS disks.
-- Consider a pragmatic approach when deciding whether to implement an encryption mechanism. For example, evaluate whether it is necessary to apply both Azure Disk encryption and the DBMS Transparent Database Encryption.
+- Consider a pragmatic approach when deciding whether to implement an encryption mechanism. For example, evaluate whether it's necessary to apply both Azure Disk encryption and the DBMS Transparent Database Encryption.
 
 ## 5. Test performance
 

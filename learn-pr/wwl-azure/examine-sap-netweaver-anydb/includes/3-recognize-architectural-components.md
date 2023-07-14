@@ -1,3 +1,5 @@
+
+
 The architecture consists of the following infrastructure and key software components:
 
 ## Virtual network

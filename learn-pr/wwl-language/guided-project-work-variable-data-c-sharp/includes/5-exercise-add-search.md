@@ -1,6 +1,7 @@
 
 
 
+
 In this exercise, you add the feature "Display all dogs with a specified characteristic" (menu item #2) to the application. The exercise uses the solution project from the previous exercise that added `suggestedDonation` data.
 
 > [!NOTE]

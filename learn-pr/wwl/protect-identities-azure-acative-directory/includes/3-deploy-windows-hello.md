@@ -1,4 +1,5 @@
 
+
 There are many options from which you can choose when deploying Windows Hello for Business. Providing multiple options ensures nearly every organization can deploy Windows Hello for Business. Providing many options makes the deployment appear complex, however, most organization will realize they've already implemented most of the infrastructure on which the Windows Hello for Business deployment depends. It’s important to understand that Windows Hello for Business is a distributed system and does take proper planning across multiple teams within an organization.
 
 > [!NOTE]

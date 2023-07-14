@@ -1,7 +1,10 @@
 
-Events consist of a set of four required string properties. The properties are common to all events from any publisher. The data object has properties that are specific to each publisher. For system topics, these properties are specific to the resource provider, such as Azure Storage or Azure Event Hubs.
 
-Event sources send events to Azure Event Grid in an array, which can have several event objects. When posting events to an Event Grid topic, the array can have a total size of up to 1 MB. Each event in the array is limited to 1 MB. If an event or the array is greater than the size limits, you receive the response `413 Payload Too Large`. Operations are charged in 64 KB increments though. So, events over 64 KB will incur operations charges as though they were multiple events. For example, an event that is 130 KB would incur charges as though it were 3 separate events.
+Azure Event Grid supports two types of event schemas: Event Grid event schema and Cloud event schema. Events consist of a set of four required string properties. The properties are common to all events from any publisher.
+
+The data object has properties that are specific to each publisher. For system topics, these properties are specific to the resource provider, such as Azure Storage or Azure Event Hubs.
+
+Event sources send events to Azure Event Grid in an array, which can have several event objects. When posting events to an Event Grid topic, the array can have a total size of up to 1 MB. Each event in the array is limited to 1 MB. If an event or the array is greater than the size limits, you receive the response `413 Payload Too Large`. Operations are charged in 64 KB increments though. So, events over 64 KB incur operations charges as though they were multiple events. For example, an event that is 130 KB would incur charges as though it were three separate events.
 
 Event Grid sends the events to subscribers in an array that has a single event. You can find the JSON schema for the Event Grid event and each Azure publisher's data payload in the [Event Schema store](https://github.com/Azure/azure-rest-api-specs/tree/master/specification/eventgrid/data-plane).
 
@@ -32,13 +35,13 @@ All events have the same following top-level data:
 
 | Property | Type | Required | Description |
 |--|--|--|--|
-| topic | string | No. If not included, Event Grid will stamp onto the event. If included it must match the Event Grid topic Azure Resource Manager ID exactly. | Full resource path to the event source. This field isn't writeable. Event Grid provides this value. |
+| topic | string | No. If not included, Event Grid stamps onto the event. If included, it must match the Event Grid topic Azure Resource Manager ID exactly. | Full resource path to the event source. This field isn't writeable. Event Grid provides this value. |
 | subject | string | Yes | Publisher-defined path to the event subject. |
 | eventType | string | Yes | One of the registered event types for this event source. |
 | eventTime | string | Yes | The time the event is generated based on the provider's UTC time. |
 | id | string | Yes | Unique identifier for the event. |
 | data | object | No | Event data specific to the resource provider. |
-| dataVersion | string | No. If not included it will be stamped with an empty value. | The schema version of the data object. The publisher defines the schema version. |
+| dataVersion | string | No. If not included, it is stamped with an empty value. | The schema version of the data object. The publisher defines the schema version. |
 | metadataVersion | string | No. If not included, Event Grid will stamp onto the event. If included, must match the Event Grid Schema `metadataVersion` exactly (currently, only `1`). | The schema version of the event metadata. Event Grid defines the schema of the top-level properties. Event Grid provides this value. |
 
 For custom topics, the event publisher determines the data object. The top-level data should have the same fields as standard resource-defined events.
@@ -47,7 +50,7 @@ When publishing events to custom topics, create subjects for your events that ma
 
 Sometimes your subject needs more detail about what happened. For example, the **Storage Accounts** publisher provides the subject `/blobServices/default/containers/<container-name>/blobs/<file>` when a file is added to a container. A subscriber could filter by the path `/blobServices/default/containers/testcontainer` to get all events for that container but not other containers in the storage account. A subscriber could also filter or route by the suffix `.txt` to only work with text files.
 
-## CloudEvents v1.0 schema
+## Cloud events schema
 
 In addition to its default event schema, Azure Event Grid natively supports events in the JSON implementation of CloudEvents v1.0 and HTTP protocol binding. CloudEvents is an open specification for describing event data.
 

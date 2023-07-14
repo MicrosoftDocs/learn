@@ -4,13 +4,10 @@ title: Determine storage account types
 metadata:
   title: Determine storage account types
   description: "Determine storage account types"
-  ms.date: 02/24/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/4-determine-storage-account-kinds.md)]

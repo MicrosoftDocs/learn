@@ -1,3 +1,5 @@
+
+
 You explored Azure Resource Manager and Azure Resource Manager templates, examined role-based access control, and organized Azure resources with tags. You also explored Azure Policy, management groups, and Azure Automation, and reviewed security and compliance services in the Azure Security Center.
 
 ## Learn more

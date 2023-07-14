@@ -9,6 +9,7 @@ metadata:
   author: microsoftmichelle 
   ms.author: mixie
   ms.topic: interactive-tutorial
+  ms.service: azure-kubernetes-service
 title: Apply cluster upgrades and security patches with Azure Kubernetes Service  
 summary: Learn more about why you need to upgrade your existing Azure Kubernetes Service clusters.
 abstract: |

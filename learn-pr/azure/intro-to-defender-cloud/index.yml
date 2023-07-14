@@ -8,7 +8,7 @@ metadata:
   author: ElazarK
   ms.author: elkrieger
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-cloud
 
 title: Introduction to Microsoft Defender for Cloud
 summary: Microsoft Defender for Cloud is a Cloud Security Posture Management (CSPM) and Cloud Workload Protection Platform (CWPP) for all of your Azure, on-premises, and multicloud (Amazon AWS and Google GCP) resources.

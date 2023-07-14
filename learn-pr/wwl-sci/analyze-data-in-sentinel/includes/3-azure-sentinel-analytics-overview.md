@@ -1,4 +1,5 @@
 
+
 Microsoft Sentinel Analytics helps you detect, investigate, and remediate cybersecurity threats. The Contoso SOC team can use Microsoft Sentinel Analytics to set up analytics rules and queries to detect issues in your environment.
 
 

@@ -4,8 +4,8 @@ metadata:
   title: Exercise - Troubleshoot a network by using Network Watcher metrics and logs
   description: In this unit, you'll use flow logging to diagnose a connectivity issue.
   ms.date: 09/03/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Exercise - Troubleshoot a network by using Network Watcher metrics and logs

@@ -1,3 +1,5 @@
+
+
 Now you have:
 
 - Explored Azure virtual networks.
@@ -43,7 +45,6 @@ Now you have:
 - [Using Source Network Address Translation (SNAT) for outbound connections](/azure/load-balancer/load-balancer-outbound-connections)
 - [SLA for Load Balancer](https://azure.microsoft.com/support/legal/sla/load-balancer/v1_0/)
 - [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes)
-- [TCPIP Ports used by SAP Applications](https://archive.sap.com/kmuuid2/4e515a43-0e01-0010-2da1-9bcc452c280b/TCPIP%20Ports%20used%20by%20SAP%20Applications.pdf)
 - [Create, change, or delete a virtual network](/azure/virtual-network/manage-virtual-network)
 - [Transport Management System - Concept](https://help.sap.com/saphelp_me60/helpdata/en/c4/6045377b52253de10000009b38f889/content.htm)
 - [SAP Remote Support documentation](https://support.sap.com/en/tools/connectivity-tools/remote-support.html)

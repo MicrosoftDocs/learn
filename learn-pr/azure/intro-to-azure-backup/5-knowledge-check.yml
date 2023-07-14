@@ -18,22 +18,22 @@ quiz:
     choices:
     - content: "Snapshot Tier"
       isCorrect: true
-      explanation: "Correct. The snapshots of the VM/ Azure Files/ Azure Blobs/etc. are retained in the customer’s subscription itself in a specified resource group. This ensure restores are quick, since the backup/snapshot is available locally to the customer."
+      explanation: "Correct. The snapshots of the VM/Azure Files/Azure Blobs/and so on are retained in the customer's subscription itself in a specified resource group. This ensure restores are quick, because the backup/snapshot is available locally to the customer."
     - content: "Standard Tier"
       isCorrect: false
-      explanation: "Incorrect. The Vault-Standard tier is an online storage tier that enables you to store an isolated copy of backup data in a Microsoft-managed tenant, thus creating an extra layer of protection."
+      explanation: "Incorrect. The Vault-Standard tier is an online storage tier that allows you to store an isolated copy of backup data in a Microsoft-managed tenant, thus creating an extra layer of protection."
     - content: "Archive Tier"
       isCorrect: false
       explanation: "Incorrect. In most cases, the older backup data is rarely accessed and is only stored for compliance needs. This data is stored in the archive tier."
-  - content: "What tool can you use to manage backups spanning multiple workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants"
+  - content: "What tool can you use to manage backups spanning multiple workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants?"
     choices:
     - content: "Azure Monitor"
       isCorrect: false
       explanation: "Incorrect. Azure Monitor is a service for collecting, analyzing, and acting on telemetry from your cloud and on-premises environments."
     - content: "System Center Data Protection Manager (DPM)"
       isCorrect: false
-      explanation: "Incorrect: DPM is used on-premises for data backup. While you can back up data that is backed up by DPM, it doesn't support this scenario."
-    - content: "Backup Center"
+      explanation: "Incorrect: DPM is used on-premises for data backup. While you can back up data that is backed up by DPM; it doesn't support this scenario."
+    - content: "Backup center"
       isCorrect: true
       explanation: "Correct. You can use Backup center to efficiently manage backups spanning multiple workload types, vaults, subscriptions, regions, and Azure Lighthouse tenants."
   - content: "What must be present before you can back up an entire VM or content on an Azure VM?"
@@ -46,5 +46,5 @@ quiz:
       explanation: "Incorrect. MABS is used for backing up on-premises Windows machines."
     - content: "Recovery point objective policies in an Azure vault."
       isCorrect: false
-      explanation: "Incorrect. Recovery point objective (RPO), is concerned with the amount of time it takes for recovery operations."
+      explanation: "Incorrect. Recovery point objective (RPO) is concerned with the amount of time it takes for recovery operations."
  

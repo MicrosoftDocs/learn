@@ -8,9 +8,9 @@ First, you learned about the planning that's required to deploy VMware HCX. Next
 From there, you learned how to create the following components to migrate VMs:
 
 - Create a site pairing.
-- Configure a networking profile.
-- Configure a compute profile.
-- Establish a service mesh.
+- Configure a networking profile
+- Configure a compute profile
+- Establish a service mesh
 
 Finally, you learned how to migrate VMs from an on-premises VMware environment to Azure VMware Solution.
 

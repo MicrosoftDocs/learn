@@ -1,16 +1,13 @@
 
 
-In this exercise, you'll use the `IndexOf()` method to locate the position of one character or string inside a larger string.
 
-You'll begin by accessing parts of a string by identifying the position of one or more characters. Once you've located the position, you can then extract a specific part of the string.
+In this exercise, you use the `IndexOf()` method to locate the position of one or more characters string inside a larger string. You use the `Substring()` method to return the part of the larger string that follows the character positions you specify.
 
-Once you've located the position, you can use the `Substring()` method to return the rest of the string after the position.
-
-You could also use an overloaded version of the `Substring()` method to set the length of characters to return after the position.
+You'll also use an overloaded version of the `Substring()` method to set the length of characters to return after a specified position in a string.
 
 ### Prepare your coding environment
 
-This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities will help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
+This module includes hands-on activities that guide you through the process of building and running demonstration code. You're encouraged to complete these activities using Visual Studio Code as your development environment. Using Visual Studio Code for these activities help you to become more comfortable writing and running code in a developer environment that's used by professionals worldwide.
 
 > [!NOTE]
 > If you have completed other Microsoft Learn modules in this C# series, you may have already created a project folder for code samples. If that's the case, you can skip  the following section of steps, and delete the code in the `Project.cs` file used for a previous exercise.
@@ -49,7 +46,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Delete the existing code lines.
 
-    You'll be using this C# console project to create, build, and run code samples during this module.
+    You are using this C# console project to create, build, and run code samples during this module.
 
 1. Close the Terminal panel.
 
@@ -121,7 +118,7 @@ This module includes hands-on activities that guide you through the process of b
 
     The `Substring()` method needs the starting position and the number of characters, or length, to retrieve. So, you calculate the length in a temporary variable called `length`, and pass it with the `openingPosition` value to retrieve the string inside of the parenthesis.
 
-    The result is close, however the output includes the opening parenthesis. In this exercise, the inclusion of the parenthesis isn't desired. To remove the parenthesis from output, you'll have to update the code to skip the index of the parenthesis itself.
+    The result is close, however the output includes the opening parenthesis. In this exercise, the inclusion of the parenthesis isn't desired. To remove the parenthesis from output, you have to update the code to skip the index of the parenthesis itself.
 
 ### Modify the starting position of the sub string
 
@@ -200,7 +197,7 @@ Hardcoded strings like `"<span>"` in the previous code listing are known as "mag
 
     The code uses a constant with the `const` keyword. A constant allows you to define and initialize a variable whose value can never be changed. You would then use that constant in the rest of the code whenever you needed that value. This ensures that the value is only defined once and misspelling the `const` variable will be caught by the compiler.
 
-    The pervious code listing is a safer way to write the same code you examined in the previous section. Now, if the value of `openSpan` changes to `<div>`, the line of code that uses the `Length` property will continue to be valid.
+    The pervious code listing is a safer way to write the same code you examined in the previous section. Now, if the value of `openSpan` changes to `<div>`, the line of code that uses the `Length` property continues to be valid.
 
 ## Recap
 

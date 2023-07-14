@@ -1,3 +1,5 @@
+
+
 Resource redundancy is the general theme in highly available infrastructure solutions. For enterprises that have a less stringent SLA, single-instance Azure VMs offer an uptime SLA. In a distributed installation of the SAP application, the base installation is replicated to achieve high availability and disaster recovery. For each layer of the architecture, the high availability and disaster recovery design varies.
 
 High availability of SAP workloads on Azure VMs can be analyzed in two different contexts:

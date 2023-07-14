@@ -6,8 +6,8 @@ ACR Tasks is a suite of features within Azure Container Registry. It provides cl
 ACR Tasks supports several scenarios to build and maintain container images and other artifacts. 
 
 * **Quick task** - Build and push a single container image to a container registry on-demand, in Azure, without needing a local Docker Engine installation. Think `docker build`, `docker push` in the cloud.
-* **Automatically triggered tasks** - Enable one or more *triggers* to build an image:
 
+* **Automatically triggered tasks** - Enable one or more *triggers* to build an image:
     * Trigger on source code update
     * Trigger on base image update
     * Trigger on a schedule
@@ -24,7 +24,7 @@ Using the familiar `docker build` format, the [az acr build](/cli/azure/acr#az-a
 
 ## Trigger task on source code update
 
-Trigger a container image build or multi-step task when code is committed, or a pull request is made or updated, to a public or private Git repository in GitHub or Azure DevOps. For example, configure a build task with the Azure CLI command `az acr task create` by specifying a Git repository and optionally a branch and Dockerfile. When your team updates code in the repository, an ACR Tasks-created webhook triggers a build of the container image defined in the repo.
+Trigger a container image build or multi-step task when code is committed, or a pull request is made or updated, to a Git repository in GitHub or Azure DevOps Services. For example, configure a build task with the Azure CLI command `az acr task create` by specifying a Git repository and optionally a branch and Dockerfile. When your team updates code in the repository, an ACR Tasks-created webhook triggers a build of the container image defined in the repo.
 
 ## Trigger on base image update
 
@@ -44,3 +44,12 @@ Multi-step tasks, defined in a [YAML file](/azure/container-registry/container-r
 1.  Run the web application test container, which performs tests against the running application container
 1.  If the tests pass, build a Helm chart archive package
 1.  Perform a `helm upgrade` using the new Helm chart archive package
+
+## Image platforms
+
+By default, ACR Tasks builds images for the Linux OS and the amd64 architecture. Specify the `--platform` tag to build Windows images or Linux images for other architectures. Specify the OS and optionally a supported architecture in OS/architecture format (for example, `--platform Linux/arm`). For ARM architectures, optionally specify a variant in OS/architecture/variant format (for example, `--platform Linux/arm64/v8`):
+
+| OS | Architecture |
+|---|---|
+| Linux | amd64<br/>arm<br/>arm64<br/>386 |
+| Windows | amd64 |

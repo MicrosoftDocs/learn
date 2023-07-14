@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/08/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,21 +17,21 @@ quiz:
     choices:
     - content: "Resource group"
       isCorrect: false
-      explanation: "That's incorrect. Resource groups are required by Azure CDN, but they are not limited by subscription level."
+      explanation: "Incorrect. Resource groups are required by Azure CDN, but they aren't limited by subscription level."
     - content: "CDN profiles"
       isCorrect: true
-      explanation: "That's correct. The number of CDN profiles that can be created is limited by the type of Azure subscription."
+      explanation: "Correct. The number of CDN profiles that can be created is limited by the type of Azure subscription."
     - content: "Storage account"
       isCorrect: false
-      explanation: "That's incorrect. Storage accounts are not a resource used in Azure CDNs."
+      explanation: "Incorrect. Storage accounts aren't a resource used in Azure CDNs."
   - content: "When publishing a website through Azure CDN, the files on that site are cached until their time-to-live (TTL) expires. What is the default TTL for large file optimizations?"
     choices:
     - content: "One day"
       isCorrect: true
-      explanation: "That's correct. The default TTL for large file optimizations is one day."
+      explanation: "Correct. The default TTL for large file optimizations is one day."
     - content: "One week"
       isCorrect: false
-      explanation: "That's incorrect. Generalized web delivery optimizations have a default TTL of one week."
+      explanation: "Incorrect. Generalized web delivery optimizations have a default TTL of one week."
     - content: "One year"
       isCorrect: false
-      explanation: "That's incorrect. Media streaming optimizations have a default TTL of one year."
+      explanation: "Incorrect. Media streaming optimizations have a default TTL of one year."

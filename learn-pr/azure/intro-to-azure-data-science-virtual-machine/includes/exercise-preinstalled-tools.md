@@ -10,7 +10,7 @@ The DSVM comes with tools preinstalled for:
 
 You can add more programming languages, desktop applications, database tools, and so forth.
 
-## List and activate a Python conda environment
+## Activate a Python conda environment
 
 The conda package manager is a popular way to manage Python programming environments. It's the default environment manager that the DSVM uses. The DSVM comes with several environments configured to work with popular data science and machine learning packages. As an example, let's run through initializing, activating, and using PyTorch running with Python 3.6.
 
@@ -18,7 +18,7 @@ To activate the desired conda environment:
 
 1. Select the terminal emulator icon on the toolbar of the DSVM's desktop.
 
-    ![Screenshot of the Ubuntu desktop with the terminal highlighted.](../media/desktop-ubuntu-terminal.png)
+    :::image type="content" source="../media/desktop-ubuntu-terminal.png" alt-text="Screenshot of the Ubuntu desktop with the terminal highlighted.":::
 
 1. To initialize conda and activate it, run:
 
@@ -39,7 +39,7 @@ To activate the desired conda environment:
    #
    base                  *  /anaconda
    azureml_py310_sdkv2      /anaconda/envs/azureml_py310_sdkv2
-   azureml_py38     /anaconda/envs/azureml_py38
+   azureml_py38             /anaconda/envs/azureml_py38
    azureml_py38_PT_and_TF     /anaconda/envs/azureml_py38_PT_and_TF
    py38_default             /anaconda/envs/py37_default
    ```
@@ -64,4 +64,4 @@ jupyter notebook
 
 After startup, the Firefox browser on your DSVM should start. It should open to `localhost:8888/tree` and show the home directory of your DSVM user. Although the **notebooks** directory contains tutorials on the various installed frameworks, almost all require downloading data from external sources. Because your DSVM is running in a free, restricted Azure environment in this module, you can't access that data at this time.
 
-Feel free to try other software on the machine, although the sandbox restrictions will affect programs that rely on internet access.
+Feel free to try other software on the machine, although the sandbox restrictions affect programs that rely on internet access.

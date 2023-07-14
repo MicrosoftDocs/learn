@@ -1,4 +1,6 @@
-Given the variety of Azure infrastructure options, nearly all existing SAP NetWeaver and S/4HANA systems can be hosted in Azure. Azure supports VM SKUs with terabytes of memory and more than 200 CPUs. For even more demanding workloads, Azure offers SAP HANA on Azure (Large Instances) (HLI), which allow for HANA deployments that can scale up to 24 TB and scale-out to 120 TB.
+
+
+Given the variety of Azure infrastructure options, nearly all existing SAP NetWeaver and S/4HANA systems can be hosted in Azure. Azure supports VM SKUs with terabytes of memory and more than 200 CPUs.
 
 ## Verify workload deployment requirements
 
@@ -8,22 +10,22 @@ To successfully deploy SAP systems into Azure IaaS (or IaaS in general), it's im
 
 As the first step, customers need to verify the following items:
 
-- The SAP supported VM and HLI types of Azure
+- The SAP supported VM types of Azure
 - The SAP supported products/releases on Azure
 - The supported OS and DBMS releases for the specific SAP releases in Azure
-- SAPS throughput provided by different Azure VM and HLI SKUs
+- SAPS throughput provided by different Azure VM SKUs
 
-The answers to these questions can be found in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), which is described in more detail elsewhere. As mentioned there, as part of your initial planning, you also need to choose between the two-tier or three-tier architecture. Three-tier architecture separates the **presentation tier**, the **application tier**, and the **database tier**. The presentation tier hosts user interface components, such as SAP GUI, Fiori User Experience, or Web Dynpro. The application tier consists of the SAP Central Services instance that is part of either the ABAP or Java stack, and application servers, with one primary instance and zero or more additional instances. In two-tier configurations, you install the database and all SAP components on the same VM to avoid network contention and minimize latency. With three-tier configurations, the separation of the database and SAP application components facilitates several high-availability deployments. The three-tier architecture is implied in HLI.
+The answers to these questions can be found in [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533), which is described in more detail elsewhere. As mentioned there, as part of your initial planning, you also need to choose between the two-tier or three-tier architecture. Three-tier architecture separates the **presentation tier**, the **application tier**, and the **database tier**. The presentation tier hosts user interface components, such as SAP GUI, Fiori User Experience, or Web Dynpro. The application tier consists of the SAP Central Services instance that is part of either the ABAP or Java stack, and application servers, with one primary instance and zero or more additional instances. In two-tier configurations, you install the database and all SAP components on the same VM to avoid network contention and minimize latency. With three-tier configurations, the separation of the database and SAP application components facilitates several high-availability deployments.
 
 ### Verify Bandwidth limitations
 
-As the second step, Azure IaaS resource and bandwidth limitations need to be compared to actual resource consumption of on-premises systems. Therefore, customers need to be familiar with the different capabilities of the Azure VMs and HLI supported with SAP in:
+As the second step, Azure IaaS resource and bandwidth limitations need to be compared to actual resource consumption of on-premises systems. Therefore, customers need to be familiar with the different capabilities of the Azure VMs supported with SAP in:
 
 - **CPU and memory resources**
 - **Storage IOPS and throughput**
 - **Network bandwidth and latency**
 
-The relevant information can be found in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes) (and at [Available SKUs for HANA Large Instances](/azure/virtual-machines/workloads/sap/hana-available-skus) for HLI).
+The relevant information can be found in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
 
 Keep in mind that the Azure VM limits provided in the documentation referenced above constitute upper limits. As the result, they might not be representing the actual resource availability under all circumstances. The exceptions are the CPU and memory resources of a chosen VM type. For the VM types supported by SAP, the CPU and memory resources are reserved and as such available at any point in time for consumption within the VM. For others, such as storage or network, resources are shared between tenants. Intelligent throttling and quota logic are used to prevent one tenant from impacting the performance of another tenant in a significant way. Though logic in Azure tries to keep variances in bandwidth experienced small, highly shared platforms tend to introduce larger variances in resource/bandwidth availability than customers might experience in their on-premises deployments. The probability that an SAP system on Azure could experience larger variances than in an on-premises system needs to be considered.
 

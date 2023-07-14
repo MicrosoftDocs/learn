@@ -1,3 +1,6 @@
+
+
+
 In cross-premises scenarios, Active Directory from on-premises can be extended to serve as the authentication mechanism through an Azure deployed domain controller (as well as potentially using the integrated DNS). It is important to distinguish between traditional Active Directory Servers and Microsoft Azure Active Directory that provides only a subset of the traditional on-premises AD features. This subset includes Identity and Access Management but does not have the full AD schema or services that many third-party applications utilize. While Azure Active Directory is a requirement for provisioning resources in Azure, and it can synchronize users with customers’ on-premises AD, the two are explicitly different and customers will likely continue to require full Active Directory servers deployed in Microsoft Azure.
 
 From the authentication standpoint, the Active Directory domain controllers hosted in Azure VMs would typically constitute an extension of an on-premises Active Directory. To provide enough resiliency, corresponding to the 99.95% uptime Service Level Agreement offered by Azure, you should place Azure VMs hosting domain controllers into the same availability set. By collocating domain controllers with SAP servers within the same Azure virtual network, you improve performance by localizing authentication traffic.
@@ -8,6 +11,6 @@ You can take advantage of Azure Active Directory (Azure AD) to enable single-sig
 
 Control access to resources by using a centralized identity management system at all levels:
 
- -  Provide access to Azure resources through role-based access control (RBAC).
- -  Grant access to Azure VMs through LDAP, Azure Active Directory, Kerberos, or another system.
- -  Support access within the apps themselves through the services that SAP provides or that use OAuth 2.0 and Azure Active Directory.
+- Provide access to Azure resources through role-based access control (RBAC).
+- Grant access to Azure VMs through LDAP, Azure Active Directory, Kerberos, or another system.
+- Support access within the apps themselves through the services that SAP provides or that use OAuth 2.0 and Azure Active Directory.

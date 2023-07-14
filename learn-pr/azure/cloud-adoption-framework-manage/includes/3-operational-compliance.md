@@ -1,11 +1,11 @@
 The discipline of operational compliance is the cornerstone for maintaining the balance between security, governance, performance, and cost. Effective operational compliance requires consistency in a few critical processes:
 
 - **Resource consistency**: If all resources are organized the same way and tagged the same way, other management tasks become more manageable.
-- **Environment consistency**: If all landing zones are organized the same way, both management and troubleshooting become much more manageable.
+- **Environment consistency**: If all landing zones are organized the same way, then management and troubleshooting become much more manageable.
 - **Resource configuration consistency**: As with resources and landing zones, it's crucial to monitor resource configuration. If a configuration setting is changed, it can trigger an automation job to restore the environment.
-- **Resource optimization**: Regular monitoring of resource performance will reveal trends in resource utilization and opportunities to optimize the cost and performance of each resource.
-- **Update consistency**: All updates to the environment should be done in a scheduled, controlled, and possibly automated way. Controlled change management will reduce unnecessary outages and troubleshooting.
-- **Remediation automation**: Automation for quick remediation of common incidents is a great way to increase customer satisfaction and minimize outages. Known issues should be fixed by their root causes. Fixing a root cause is often a long process, and automation is a quick fix.
+- **Resource optimization**: Regular monitoring of resource performance reveals trends in resource utilization and opportunities to optimize the cost and performance of each resource.
+- **Update consistency**: All updates to the environment should be done in a scheduled, controlled, and possibly automated way. Controlled change management reduces unnecessary outages and troubleshooting.
+- **Remediation automation**: Automation for quick remediation of common incidents is a great way to increase customer satisfaction and minimize outages. However, you should fix known issues by their root causes. Fixing a root cause is often a long process, and automation is a quick fix.
 
 Operational compliance can be fulfilled per workload; for example, in one of your landing zones.
 

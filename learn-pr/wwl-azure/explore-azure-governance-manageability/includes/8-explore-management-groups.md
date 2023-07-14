@@ -1,3 +1,5 @@
+
+
 If your organization has several subscriptions, you may need a way to efficiently manage access, policies, and compliance for those subscriptions. Azure management groups provide a level of scope above subscriptions. You organize subscriptions into containers called **management groups** and apply your governance conditions to the management groups. Management groups enable:
 
 - Organizational alignment for your Azure subscriptions through custom hierarchies and grouping.

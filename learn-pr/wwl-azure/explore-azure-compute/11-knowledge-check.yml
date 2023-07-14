@@ -4,13 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/06/2022
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/11-knowledge-check.md)]
@@ -50,14 +48,14 @@ quiz:
     - content: "It has lower licensing fees"
       isCorrect: true
       explanation: "Correct. The licensing fees charged for SQL Server or Oracle are constrained to the vCPU count, and other products should be charged based on the new vCPU count. A constrained vCPU VM shares the same specs for memory, storage, and I/O bandwidth as the original VM, but with a lower licensing cost."
-  - content: "How many total network data flows does the Azure networking stack support with good performance, for VMs with 8 CPU cores or more?"
+  - content: "How many total network data flows does the Azure networking stack support with good performance, for VMs with eight CPU cores or more?"
     choices:
     - content: "100,000"
       isCorrect: false
-      explanation: "Incorrect. The Azure networking stack supports 100-K total flows with good performance for VMs with less than 8 CPU cores."
+      explanation: "Incorrect. The Azure networking stack supports 100-K total flows with good performance for VMs with less than eight CPU cores."
     - content: "250,000"
       isCorrect: true
-      explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for VMs with 8 CPU cores or more and 100-K total flows with good performance for VMs with less than 8 CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1-M total flows, 500 K inbound and 500-K outbound, after which additional flows are dropped."
+      explanation: "Correct. The Azure networking stack supports 250-K total network flows with good performance for VMs with eight CPU cores or more and 100-K total flows with good performance for VMs with less than eight CPU cores. Past this limit network performance degrades gracefully for additional flows up to a hard limit of 1-M total flows, 500 K inbound and 500-K outbound, after which additional flows are dropped."
     - content: "1,000,000"
       isCorrect: false
       explanation: "Incorrect. 1-M total flows (500 K inbound and 500-K outbound) is the hard limit after which flows are dropped."

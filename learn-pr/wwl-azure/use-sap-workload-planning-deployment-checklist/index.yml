@@ -3,11 +3,11 @@ uid: learn.wwl.use-sap-workload-planning-deployment-checklist
 metadata:
   title: Use the planning and deployment checklist for SAP workloads on Azure
   description: "This module uses the SAP workload planning and deployment checklist to guide SAP deployment teams through each phase of the SAP on Azure migration process. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 06/30/2022
+  ms.date: 04/20/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Use the planning and deployment checklist for SAP workloads on Azure
 summary: This module uses the SAP workload planning and deployment checklist to guide SAP deployment teams through each phase of the SAP on Azure migration process.
 abstract: |

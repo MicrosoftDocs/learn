@@ -4,13 +4,11 @@ title: Determine service endpoint services
 metadata:
   title: Determine service endpoint services
   description: "Determine Azure services that can work with service endpoints."
-  ms.date: 01/26/2023
+  ms.date: 05/24/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/5-determine-service-endpoint-services.md)]

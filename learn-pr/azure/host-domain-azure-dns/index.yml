@@ -7,7 +7,7 @@ metadata:
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: dns
 title: Host your domain on Azure DNS
 summary: Create a DNS zone for your domain name. Create DNS records to map the URL to an IP address. Test that the domain name resolves to your web server.
 abstract: |

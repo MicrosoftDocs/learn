@@ -9,7 +9,7 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen, devdivchpfy22
   ms.topic: interactive-tutorial
-  ms.prod: learning-visual-studio
+  ms.prod: visual-studio
 title: Introduction to software testing concepts
 summary: "Describe the common best practices, theory, and patterns of writing tests. Characterize the types of problems that testing can solve for your repository."
 abstract: |

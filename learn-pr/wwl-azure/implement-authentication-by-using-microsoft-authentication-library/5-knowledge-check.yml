@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 04/24/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -17,10 +17,10 @@ quiz:
     choices:
     - content: "MSAL Node"
       isCorrect: false
-      explanation: "That's incorrect. MSAL Node does not support single-page web apps."
+      explanation: "Incorrect. MSAL Node does not support single-page web apps."
     - content: "MSAL.js"
       isCorrect: true
-      explanation: "That's correct. MSAL.js supports single-page applications."
+      explanation: "Correct. MSAL.js supports single-page applications."
     - content: "MSAL.NET"
       isCorrect: false
-      explanation: "That's incorrect. MSAL.NET does not support single-page web apps."
+      explanation: "Incorrect. MSAL.NET does not support single-page web apps."

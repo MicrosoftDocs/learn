@@ -1,4 +1,5 @@
 
+
 Exceptions can be thrown by your code when an issue or error condition is encountered. Exception objects that describe an error are created and then thrown with the `throw` keyword. When an exception is thrown by your code, the runtime searches for the nearest `catch` clause that can handle the exception.
 
 Suppose you're working on a data processing application for a company. The application relies on business rules and specifications to ensure that purchase order processing and inventory management tasks are completed appropriately. In addition, the application must use specific language to inform the user when data anomalies and other issues are encountered. Customized exceptions must be thrown, caught, and reflected in the application's user interface when issues are encountered. Business rules provide specific guidance in the following categories:

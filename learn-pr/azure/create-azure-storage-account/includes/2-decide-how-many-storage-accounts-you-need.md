@@ -42,7 +42,7 @@ The settings that are defined by a storage account are:
 
 - **Replication**: Determines the strategy used to make copies of your data to protect against hardware failure or natural disaster. At a minimum, Azure automatically maintains three copies of your data within the datacenter associated with the storage account. The minimum replication is called locally redundant storage (LRS), and guards against hardware failure but does not protect you from an event that incapacitates the entire datacenter. You can upgrade to one of the other options such as geo-redundant storage (GRS) to get replication at different datacenters across the world.
 
-- **Access tier**: Controls how quickly you will be able to access the blobs in a storage account. Hot gives quicker access than Cool, but at increased cost. Hot access tier applies only to blobs, and serves as the default value for new blobs.
+- **Access tier**: Controls how quickly you'll be able to access the blobs in a storage account. The Hot access tier is optimized for storing data that's accessed or modified frequently and gives quicker access than Cool, but at increased storage cost. The Cool access tier is optimized for storing data that's infrequently accessed or modified, and has a lower storage cost. Hot access tier applies only to blobs, and serves as the default value for new blobs.
 
 - **Secure transfer required**: A security feature that determines the supported protocols for access. Enabled requires HTTPS, while disabled allows HTTP.
 

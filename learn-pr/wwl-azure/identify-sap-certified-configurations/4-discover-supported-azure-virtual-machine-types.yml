@@ -4,13 +4,11 @@ title: Discover supported Azure virtual machines for SAP products on Windows and
 metadata:
   title: Discover supported Azure virtual machines for SAP products on Windows and Linux
   description: "Discover supported Azure virtual machines for SAP products on Windows and Linux"
-  ms.date: 08/18/2022
+  ms.date: 04/21/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-discover-supported-azure-virtual-machine-types.md)]

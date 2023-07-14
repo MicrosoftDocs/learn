@@ -1,10 +1,10 @@
 In this module, you learned about how to test machine learning models. You also learned about normalization and standardization, and reviewed the hold-out approach.
 
-Now that you have reviewed this module, you should be able to:
+Now that you've reviewed this module, you should be able to:
 
-* Define feature normalization
-* Create and work with test datasets
-* Articulate how testing models can both improve and harm training
+* Define feature normalization.
+* Create and work with test datasets.
+* Articulate how testing models can both improve and harm training.
 
 ## Use these resources to discover more
 

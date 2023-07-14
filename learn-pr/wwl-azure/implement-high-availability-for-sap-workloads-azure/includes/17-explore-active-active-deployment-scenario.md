@@ -1,3 +1,5 @@
+
+
 The deployment architecture is called active/active because you deploy your active SAP application servers across two or three zones. The SAP Central Services instance that uses enqueue replication will be deployed between two zones. The same is true for the DBMS layer, which will be deployed across the same zones as SAP Central Service.
 
 When considering the active/active configuration, you need to find the two Availability Zones in your region that offer cross-zone network latency that's acceptable for your workload and your synchronous DBMS replication. You want a small delta between network latency within the zones you selected, and the cross-zone network. You don't want large variations in the running times of your business processes or batch jobs depending on whether a job runs in-zone with the DBMS server or across zones. Small latency reduces the batch job run time variation between zones.

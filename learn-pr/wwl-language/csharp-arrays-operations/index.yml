@@ -3,11 +3,11 @@ uid: learn.languages.csharp-arrays-operations
 metadata:
   title: Perform operations on arrays using helper methods in C#
   description: "Perform operations on arrays using helper methods in C#"
-  ms.date: 02/25/2023
+  ms.date: 05/02/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Perform operations on arrays using helper methods in C#
 summary: Use powerful helper methods to manipulate and control the content of arrays.
 abstract: |
@@ -16,18 +16,20 @@ abstract: |
   - Split a string into an array of strings or characters (`chars`).
   - Join array elements into a `string`.
 prerequisites: |
-  - Introductory level experience with arrays
-  - Introductory level experience with the `if` statement
-  - Introductory level experience with built-in methods on data types (like` string`)
+  *   Introductory level experience with arrays
+  *   Introductory level experience with the `if` statement
+  *   Introductory level experience with built-in methods on data types (like `string`)
+  *   Experience using Visual Studio Code to develop, build, and run C# code
 iconUrl: /training/achievements/csharp-arrays-operations.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.languages.csharp-arrays-operations.introduction

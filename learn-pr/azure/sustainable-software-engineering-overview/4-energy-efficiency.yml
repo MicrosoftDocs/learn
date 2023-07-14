@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.sustainable-software-engineering-overview.energy-efficiency
+title: "Principle: Energy efficiency"
+metadata:
+  title: "Principle: Energy efficiency"
+  description: This principle of sustainable software engineering is about building applications that are energy efficient. In this unit, you'll learn about electricity, its relationship to carbon emissions, and its units of measurement.
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - tozimmergren
+  - simont
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-energy-efficiency.md)]

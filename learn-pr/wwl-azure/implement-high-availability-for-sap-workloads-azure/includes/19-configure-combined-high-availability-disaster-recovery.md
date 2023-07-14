@@ -1,3 +1,5 @@
+
+
 Microsoft doesn't share any information about geographical distances between the facilities that host different Azure Availability Zones in an Azure region. Still, some customers are using zones for a combined HA and DR configuration that promises a recovery point objective (RPO) of zero. This means that you shouldn't lose any committed database transactions even for a disaster recovery.
 
 Microsoft recommends the Availability Zone configuration only in certain circumstances. For example, you might use it when data can't leave the Azure region for security or compliance reasons.

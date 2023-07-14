@@ -1,3 +1,5 @@
+
+
 Now you have:
 
 - Planned for implementing SAP solutions.
@@ -14,7 +16,6 @@ Now you have:
 
 - [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes)
 - [Constrained vCPU capable VM sizes](/azure/virtual-machines/constrained-vcpu)
-- [Available SKUs for HANA Large Instances](/azure/virtual-machines/workloads/sap/hana-available-skus)
 - [Resolve errors for resource quotas](/azure/azure-resource-manager/templates/error-resource-quota)
 - [Create an Azure support request](/azure/azure-portal/supportability/how-to-create-azure-support-request)
 - [SAP on Azure Architecture Guide](/azure/architecture/reference-architectures/sap/sap-overview)

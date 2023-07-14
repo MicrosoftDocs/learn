@@ -8,7 +8,7 @@ metadata:
   author: meaghanlewis
   ms.author: mosagie
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-exercise-schedule-contact-and-downlink-data.md)]
