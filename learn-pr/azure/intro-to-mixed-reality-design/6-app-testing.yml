@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.design-considerations-mr-development.app-testing
-title: App Testing
+title: App testing
 metadata:
-  title: App Testing
+  title: App testing
   description: "Explore ways to test a mixed reality app."
   ms.date: 7/13/2023
   author: aprilspeight
