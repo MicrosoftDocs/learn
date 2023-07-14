@@ -1,9 +1,9 @@
-As part of the project for the finance company, you need to understand:
+As part of your project for the financial organization, you need to answer the following questions:
 
-- What Azure ExpressRoute is.
-- How ExpressRoute integrates with on-premises and Azure networks.
-- What benefits ExpressRoute provides compared to other site-to-site connectivity options.
-- Whether ExpressRoute can provide the finance company with the best possible network performance.
+- What is Azure ExpressRoute?
+- How does ExpressRoute integrate with on-premises and Azure networks?
+- What benefits does ExpressRoute provide compared to other site-to-site connectivity options?
+- Can ExpressRoute provide the finance company with the best possible network performance?
 
 ## ExpressRoute overview
 

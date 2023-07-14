@@ -1,6 +1,6 @@
 You've learned how the Azure ExpressRoute service works, and how to connect your on-premises networks to the Microsoft cloud by using an ExpressRoute circuit. You've also learned about the different peering options available, and how to use a virtual network gateway to route requests between your on-premises network and the Microsoft cloud. 
 
-In this unit, you learn about the most common use cases for deploying ExpressRoute. You'll compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. This information helps you determine whether ExpressRoute is the most appropriate solution for your organization.
+In this unit, we show you the most common use cases for deploying ExpressRoute. We also compare ExpressRoute to other connection options available for Azure, like site-to-site and point-to-site through a virtual network gateway. Together, this information helps you determine whether ExpressRoute is the most appropriate solution for your organization.
 
 ## When to use Azure ExpressRoute
 
@@ -9,7 +9,7 @@ Consider using the Azure ExpressRoute service in the following scenarios:
 - Low-latency connectivity to services in the cloud. In these situations, eliminating or reducing the network overhead has a significant effect on the performance of your applications.
 - Accessing high-volume systems in the cloud that consume or produce massive volumes of data quickly. ExpressRoute can move data around rapidly, with high reliability.
 - Consuming Microsoft Cloud Services, such as Office 365 and Dynamics 365. ExpressRoute is especially useful if your organization has a large number of users who need to access these services concurrently.
-- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute helps ensure that the results of the migrations are seamless for on-premises clients. They should notice no drop in performance. They might even experience some improvement if the previous on-premises systems were restricted by network bandwidth.
+- Organizations that have migrated large-scale on-premises systems to Azure. Using ExpressRoute helps ensure that the results of the migrations are seamless for on-premises clients. Organizations should notice no drop in performance. They might even experience some improvement if network bandwidth restricted their previous on-premises systems.
 - Situations where data shouldn't traverse the public internet for security reasons.
 - Large datacenters, with a high number of users and systems accessing SaaS offerings.
 
