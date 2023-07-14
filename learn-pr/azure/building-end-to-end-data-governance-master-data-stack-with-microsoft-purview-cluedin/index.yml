@@ -24,7 +24,7 @@ prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with Azure Data Factory
   - Familiarity with high-level concepts of Microsoft Purview
-iconUrl: /learn/achievements/building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.svg
+iconUrl: /training/achievements/building-end-to-end-data-governance-master-data-stack-with-microsoft-purview-cluedin.svg
 levels:
   - beginner
   - intermediate
