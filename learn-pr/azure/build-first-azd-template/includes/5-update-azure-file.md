@@ -1,9 +1,26 @@
-The Azure Developer CLI (`azd`) provides value to both individuals and teams in a variety of scenarios. The templated approach of the tool enables repeatable and predictable deployment scenarios that would otherwise require many manual steps. Some of the most common use cases for `azd` are as follows:
+Your template includes the source code for your app and defines Bicep files to create the corresponding infrastructure. However, your template still needs to describe the relationship between the app source code and the Azure resources. You can use the `azure.yaml` file to describe one or more app services in your code base and how they should be deployed to the provisioned Azure resources.
 
-* **Streamlined journey to the cloud** - `azd` accelerates the process of moving your app from a local development environment to Azure. By leveraging existing `azd` templates, you can provision an app to a fully configured cloud environment in minutes. Developers who are unfamiliar with Azure workloads can rely on templates to complete the majority of the work for them. This use case is especially valuable for environments with many Azure services or complex configuration requirements that are difficult to recreate manually.
+1. At the root of your project, locate and open the `azure.yaml` file. The file contains various code comments that provide helpful guidance and examples of how to define services. Service definitions map a folder in your source code to a resource in Azure using a standardize yaml structure.
 
-* **Reusable and repeatable app infrastructure** - `azd` templates makes it easy to share and redistribute both the source code and infrastructure scaffolding of your apps. They are a great fit for scenarios where you would like to include infrastructure as code resources with your app. For example, if you are working on an open-source project or collaborating with other developers, `azd` provides an easy way to package up the entirety of your app and cloud infrastructure for others to easily use. Without `azd`, if another developer is unfamiliar with Azure, it would be very challenging for them to provision your app to the cloud for their own experimentation.
+1. Copy and paste the following definition at the very bottom of the azure.yaml file:
 
-* **CI/CD for infrastructure and deployment** - You can also use `azd` when you want to provision and deploy your infrastructure using CI/CD through platforms such as GitHub Actions or Azure Pipelines. Most `azd` templates include support for these workflows. As you make changes to your code or infrastructure templates, you can run commands such as `azd provision` and `azd deploy` to push those changes to Azure with a repeatable, reliable process.
+    ```yml
+    services:
+        webapp:
+            language: csharp
+            project: ./src/web
+            host: appservice
+    ```
 
-Consider these scenarios when evaluating whether `azd` is a good fit for your team and project. Other developers will be able to quickly provision and deploy the app to Azure if you convert your project to an `azd` template.
+    Each line of code in this example schema describes a different aspect of the services in your app:
+
+    * **services** - Every `azure.yaml` file defines one top level `services` node that lists one or more services in your template.
+    * **webapp** - This value is a name of your choosing that maps to a service in your app code, such as `api` or `webworker`. However, this name must match the value of the `azd-service-name` tag you assigned to the resource in your Bicep or Terraform code. For example, this service has a value of `webapp` because the App Service definition in the `app.bicep` file specified `tags: { 'azd-service-name': 'webapp' }`. This tag naming association is how `azd` knows which Azure resource the specified code directory should be deployed to.
+    * **language** - A property that specifies the language of the code you want to deploy. `azd` currently supports language values of `csharp`, `python`, `javascript` and `java`.
+    * **project** - A property that defines the directory where the app code for the service is stored.
+    * **host** - A property that defines what type of Azure service the app should deploy to.
+
+    > [!NOTE]
+    > Again, make sure the name of your service (in this case: `webapp`) in `azure.yaml` matches the `azd-service-name` tag on the corresponding host resource defined in the Bicep file.
+
+With the `azure.yaml` completed, all of the key structural components of your template are in place. In the next unit, you'll learn how to provision and deploy your template resources to Azure.

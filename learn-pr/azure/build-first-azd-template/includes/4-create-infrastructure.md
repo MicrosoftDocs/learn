@@ -87,3 +87,10 @@ You can define and provision the required Azure resources for your app by updati
       }
     }
     ```
+
+    The code snippet accomplishes the following tasks:
+
+    * Defines a Bicep module that points to the file you created in the previous step.
+    * Assigns a name to the deployment set and scopes it to the resource group created in `main.bicep`.
+    * Passes parameters into the module using the `abbreviations.json` values to assist with naming.
+
