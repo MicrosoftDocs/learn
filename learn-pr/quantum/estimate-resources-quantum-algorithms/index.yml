@@ -16,7 +16,7 @@ abstract: |
   - Explore the Azure Quantum Resource Estimator.
   - Estimate the resources of an algorithm for practical quantum advantage.
 prerequisites: To use the Azure Quantum service, you need an active Azure subscription. For more information about creating an Azure account and subscription, see the module [Create an Azure account](/training/modules/create-an-azure-account/).
-iconUrl: ../../achievements/quantum/azure-quantum-resource-estimator.svg
+iconUrl: /training/achievements/quantum/azure-quantum-resource-estimator.svg
 ratingEnabled: true
 levels:
 - beginner

@@ -4,11 +4,10 @@ title: Define GPOs
 metadata:
   title: Define GPOs
   description: "Define GPOs"
-  ms.date: 10/20/2021
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
 azureSandbox: false
 labModal: false
 durationInMinutes: 7

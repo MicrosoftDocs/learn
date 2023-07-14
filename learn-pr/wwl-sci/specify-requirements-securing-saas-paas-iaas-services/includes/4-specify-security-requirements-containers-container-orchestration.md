@@ -1,5 +1,12 @@
 This unit summarizes the [Azure security baseline for Azure Kubernetes Service](https://learn.microsoft.com/security/benchmark/azure/baselines/aks-security-baseline). For areas where there are many controls, we have only included the first five that were mentioned.
 
+Please refer to [Introduction to Microsoft Cybersecurity Reference Architecture and cloud security benchmark](/training/modules/design-solutions-microsoft-cybersecurity-cloud-security-benchmark/1-introduction-reference-architecture-benchmark) for more background on Microsoft Cloud Security Benchmark. 
+
+In the table below, we have included controls from the full baseline where:
+
+* Security controls were *supported* but *not* enabled by default
+* There was explicit guidance which contained action to be taken on the part of the customer
+
 | Area | Control | Guidance Summary |
 |---|---|---|
 | Network security  | 1.1: Protect Azure resources within virtual networks | By default, a network security group and route table are automatically created with the creation of a Microsoft Azure Kubernetes Service (AKS) cluster. AKS automatically modifies network security groups for appropriate traffic flow as services are created with load balancers, port mappings, or ingress routes.  |
