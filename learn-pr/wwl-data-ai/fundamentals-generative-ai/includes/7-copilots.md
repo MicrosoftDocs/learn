@@ -2,7 +2,7 @@ An example of an intelligent application is a **copilot**, an AI-powered assista
 
 You may see copilots appear within the products that you already use, for example, as a chat screen feature that opens up next to your file. These copilots use the content that is created or searched for in the product as specific information for its results. 
 
-When we think about the question of how AI will impact our lives, copilots have the potential to revolutionize the way we work. Using generative AI, these copilots can help with first drafts, information snythesis, and strategic planning.   
+When we think about the question of how AI will impact our lives, copilots have the potential to revolutionize the way we work. Using generative AI, these copilots can help with first drafts, information synthesis, and strategic planning.   
 
 Some examples include: 
 
