@@ -24186,8 +24186,23 @@
     }, 
     {
       "source_path": "learn-pr/azure/intro-to-mixed-reality-design/5-mixed-reality-resources.md",
-      "redirect_url": "https://learn.microsoft.com/en-us/training/modules/intro-to-mixed-reality-design/7-mixed-reality-resources",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/7-mixed-reality-resources",
       "redirect_document_id": true
-  }
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mixed-reality-design/6-great-design-example-in-mixed-reality.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/8-great-design-example-in-mixed-reality",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mixed-reality-design/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/9-knowledge-check",
+      "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-mixed-reality-design/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/10-summary",
+      "redirect_document_id": true
+    }
   ]
 }
