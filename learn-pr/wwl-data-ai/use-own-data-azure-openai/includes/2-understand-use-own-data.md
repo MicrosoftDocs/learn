@@ -1,4 +1,4 @@
-Azure OpenAI on your data allows developers to use supported AI chat models that can reference specific sources of information to ground the response. Adding this information a allows the model to reference both the specific data provided and its pretrained knowledge to provide more effective responses.
+Azure OpenAI on your data allows developers to use supported AI chat models that can reference specific sources of information to ground the response. Adding this information allows the model to reference both the specific data provided and its pretrained knowledge to provide more effective responses.
 
 Azure OpenAI on your data utilizes the search ability of Azure Cognitive Search to add the relevant data chunks to the prompt. Once your data is in a Cognitive Search index, Azure OpenAI on your data goes through the following steps:
 
