@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-own-data-azure-openai.exercise
+title: |
+  Exercise: Use your own data with Azure OpenAI Service
+metadata:
+  title: |
+    Exercise: Use your own data with Azure OpenAI Service
+  description: "Complete a hands-on exercise to learn how to use your own data with Azure OpenAI services."
+  ms.date: 7/11/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 20
+content: |
+  [!include[](includes/5-exercise.md)]
