@@ -30,7 +30,7 @@ Use the following procedure to enable support for SFTP and create local users an
 
 6. On the **Container permissions** tab, select the containers that you want to make available to this local user. Then, select the types of operations that you want to enable this local user to perform.
 
-7. In the **Home directory** edit box, enter the name of the container or the directory path (including the container name) that will be the default location associated with this this local user.
+7. In the **Home directory** edit box, enter the name of the container or the directory path (including the container name) that will be the default location associated with this local user.
 
 8. Select the **Add** button to add the local user.
 
