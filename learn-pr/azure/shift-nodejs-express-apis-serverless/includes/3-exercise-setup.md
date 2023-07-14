@@ -45,7 +45,7 @@ server
  | | - index.ts            👈 1. Entry point
  | | - vacation.routes.ts  👈 2. The vacation routes
  | - services
- | | - data.ts             👈 The vacation data (could be database API calls)
+ | | - data.ts             👈 3. The vacation data (could be database API calls)
  | | - index.ts
  | | - vacation.service.ts 👈 3. The logic to get the vacation data
  | - index.ts
@@ -55,9 +55,7 @@ server
 
 1. The entry point is the _server/index.ts_ file, which runs the _server.ts_ code to start the Express server.
 1. Then the routes, such as `/vacations`, are loaded from the _/routes_ folder.
-1. The routes execute the appropriate code in the _/services_ folder.
-
-   The data store configuration is defined in the _data.ts_ file.
+1. The routes execute the appropriate code in the _/services_ folder. The data store configuration is defined in the _data.ts_ file.
 
 For example, the Angular client app makes an `HTTP GET` request to the _routes/vacation.routes_ route, and the route executes the logic in the _/services/vacation.service.ts_ file to get the vacations.
 
@@ -96,11 +94,13 @@ To display a list of vacations, the Angular application runs the `getVacations()
    });
    ```
 
-1. Set a breakpoint by selecting the editor's gutter to the left of the line of code `vacationService.getVacations(req, res);`.
+1. Set a breakpoint by selecting the editor's gutter to the left of the line `vacationService.getVacations(req, res);`.
 
    :::image type="content" source="../media/3-next-breakpoint.png" alt-text="Screenshot of the next breakpoint to set in Visual Studio Code.":::
 
 ## Run and debug the app
+
+Now run and debug the Angular and Express apps together to show how the Vacation Wishlist app gets the list of vacations.
 
 1. Open the Visual Studio Code command palette by pressing **F1**, and enter and select **View: Show Run and Debug**.
 1. Select **Debug Express and Angular** from the dropdown list and then press **F5** to start the debugger.

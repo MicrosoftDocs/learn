@@ -1,4 +1,4 @@
-In this exercise, you run and debug both the Angular application and the Azure Functions application together. You set a new breakpoint in the Functions code that fetches the vacations and renders them in the browser. You then use the Angular and Functions breakpoints to step through the Functions and Angular code with the debugger.
+In this exercise, you run and debug the Angular application and the Azure Functions application together. You set a new breakpoint in the Functions code that fetches the vacations and renders them in the browser. You then use the Angular and Functions breakpoints to step through the Functions and Angular code with the debugger.
 
 >[!NOTE]
 >The files _.vscode/launch.json_ and _.vscode/tasks.json_ are integral to the debugging experience for this project.
@@ -62,7 +62,7 @@ When you run and debug the applications together, the app pauses on the breakpoi
 
 1. Unpause execution and continue by pressing **F5**.
 
-   The code pauses on the second breakpoint in the _functions/vacations-get/index.ts_ file, because the Angular application hits the Functions `vacations` route. Unpause execution and continue by pressing **F5**.
+1. The code pauses on the second breakpoint in the _functions/vacations-get/index.ts_ file, because the Angular application hits the Functions `vacations` route. Unpause execution and continue by pressing **F5**.
 
 1. There are two debugging processes running: one for Angular and one for Azure Functions. Press **SHIFT+F5** to stop the active debugger.
 

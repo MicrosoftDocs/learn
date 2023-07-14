@@ -15,5 +15,8 @@ In this module, you refactor Express APIs to a serverless architecture by follow
 
 - Some knowledge of JavaScript and TypeScript
 - Some familiarity with Node.js Express and Azure Functions
-- [Node.js v14](https://nodejs.org/) installed
 - [Visual Studio Code](https://code.visualstudio.com/) with the [Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) extension installed
+- [Node.js v14](https://nodejs.org/) installed
+
+  >[!IMPORTANT]
+  >You must install and use Node.js v14 to compile and run the Express app for this module. Later versions have compatibility issues.
