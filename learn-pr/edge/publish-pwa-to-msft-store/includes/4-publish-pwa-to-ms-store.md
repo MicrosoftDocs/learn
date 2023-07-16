@@ -9,7 +9,7 @@ Visit the PWABuilder website to package your PWA for the Microsoft Store. Packag
 In order to create a proper package of your PWA, you first need to reserve a name for your application in the Microsoft Partner Center.  The Partner Center is a platform that helps you manage and deploy applications to Microsoft's storefronts. Reserving a name also lets you obtain the package info required for PWABuilder's packaging process for submission to the Microsoft Store. Here are the steps to reserve a name:
 
 1. Sign in to the **Partner Center Dashboard**.
-1. Navigate to the *Apps and Games** section.
+1. Navigate to the **Apps and Games** section.
 1. Select the **+ New Product** button and select **App**.
 1. A prompt to reserve a name for your application submission displays.  Enter your name.  
 1. After you reserve your name, you can access your package info. Navigate to the **Product Identity** section and note the three product identity values on the right side of the page.
@@ -31,12 +31,12 @@ Before you can submit your PWA to the Microsoft Store, you need to create the pr
 
     :::image type="content" source="../media/ship-your-pwa-to-app-stores.png" alt-text="Screenshot that shows the Ship your PWA to app stores field on the PWABuilder homepage. Enter the URL to your PWA.":::
 
-1. Select **Package for stores** to navigate to the **Package Selection** page.
+1. Select **Package For Stores** to navigate to the **Package Selection** page.
 1. Select **Generate Package** underneath **Windows** in the upper left.
 
     :::image type="content" source="../media/package-selection-pane.png" alt-text="Screenshot of PWABuilder that shows the Package Selection page.  A Windows option is on the left side and an Android option is on the right side.  A Generate Package button is listed for each option.":::
 
-1. A **Package Options" prompt displays. Enter the three product identity values you saved when you reserved your app name.
+1. A **Package Options** prompt displays. Enter the three product identity values you saved when you reserved your app name.
 
     :::image type="content" source="../media/enter-your-3-product-identity-values.png" alt-text="Screenshot of PWABuilder that shows the Windows App Options dialog box.  Within the dialog box, there are three values about your app that you must enter. The Package ID, Publisher ID, and Publisher Display Name.":::
 
@@ -44,7 +44,7 @@ Before you can submit your PWA to the Microsoft Store, you need to create the pr
 
 ## Create a Microsoft partner account
 
-You need to have a partner account to submit your PWA through the [Microsoft Partner Center](https://partner.microsoft.com/). If you already have an account, sign in and continue to the next header in this unit, Submit PWA.
+You need to have a partner account to submit your PWA through the [Microsoft Partner Center](https://partner.microsoft.com/). If you already have an account, sign in and continue to the next section in this unit, Submit PWA.
 
 If you don't have an account, complete the following steps to create one.
 
@@ -66,7 +66,7 @@ Refer to the following steps to submit your PWA through Partner Center:
 1. Select the **Start your Submission** button on the next page.
 1. You have to complete each section to publish your PWA to the store, but for now, select the **Packages** section.
 
-:::image type="content" source="../media/submission-options-list.png" alt-text="Screenshot of the Partner Center Dashboard that shows the submission options list.  The Packages option is highlighted.":::
+    :::image type="content" source="../media/submission-options-list.png" alt-text="Screenshot of the Partner Center Dashboard that shows the submission options list.  The Packages option is highlighted.":::
 
 1. Incorporate the .msixbundle and .classic.appxbundle packages that you downloaded from PWABuilder into your submission. Either drag and drop them or use the file browser option to insert them into the Packages section.
 1. Select **Save**.

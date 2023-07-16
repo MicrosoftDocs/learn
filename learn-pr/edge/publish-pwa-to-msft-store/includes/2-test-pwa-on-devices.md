@@ -4,7 +4,7 @@ Ensuring your PWA works flawlessly across various devices and platforms is key t
 
 PWABuilder report dashboard allows you to download test packages. The test package provides a convenient way to evaluate your PWA's behavior across different platforms, such as Windows, before deploying it to the respective app stores. This testing step allows you to spot and fix potential issues, ultimately enhancing the end-user experience.
 
-Select **Download Test Package** under **Package for Stores** in the top right corner to download the test package.
+Select **Download Test Package** under **Package For Stores** in the top right corner to download the test package.
 
 :::image type="content" source="../media/download-test-package-link.png" alt-text="Screenshot of PWABuilder that shows a Download Test Package link.  Select the link to download a test package of your app.":::
 
