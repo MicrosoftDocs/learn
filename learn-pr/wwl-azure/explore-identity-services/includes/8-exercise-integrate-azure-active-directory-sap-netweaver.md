@@ -45,7 +45,7 @@ To configure Azure AD single sign-on with SAP NetWeaver, perform the following s
      - **/sap/bc/webdynpro/sap/sec\_diag\_tool** (This is only to enable / disable trace)
 7. Go to **Transaction code SAML2** in the business client of SAP system \[T01/122\]. It opens a user interface in a browser.
 8. Provide your username and password to enter the user interface and select **Edit**.
-9. Change **Provider Name** from **T01122** to **<http://T01122>** and select **Save**.
+9. Change **Provider Name** from **T01122** to ``` <http://T01122> ``` and select **Save**.
 10. By default, the provider name is formatted as **\[sid\]\[client\]** format, but Azure AD expects the name in the format **protocol://\[sid\]\[client\]**. We recommend that you maintain the provider name as **https://\[sid\]\[client\]** to allow multiple SAP NetWeaver ABAP engines to be configured in Azure AD.
 11. Generate Service Provider Metadata: once you're done with configuring the Local Provider and Trusted Providers settings on SAML 2.0 User Interface, the next step involves generating the service provider’s metadata file (which would contain all the settings, authentication contexts, and other configurations in SAP).
 12. On the **Local Provider** tab, select **Metadata**.
