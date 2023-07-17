@@ -1,14 +1,14 @@
-The Azure Developer CLI (`azd`) can provision resources in Azure using infrastructure as code (IaS) files written in either Bicep or Terraform. Infrastructure as code allows you to define infrastructure resources and configurations in declarative definition files that reliably generate the same environments every time they are deployed. These files are executed by azd to create the Azure resources required to host your app. You can learn more about infrastructure as code in the [What is infrastructure as code?](/devops/deliver/what-is-infrastructure-as-code) training module. 
+The Azure Developer CLI (`azd`) can provision resources in Azure using infrastructure as code (IaS) files written in either Bicep or Terraform. Infrastructure as code allows you to define infrastructure resources and configurations in declarative definition files that reliably generate the same environments every time they're deployed. `azd` executes these files to create the Azure resources required to host your app. You can learn more about infrastructure as code in the [What is infrastructure as code?](/devops/deliver/what-is-infrastructure-as-code) training module. 
 
-In this unit, you'll add Bicep code to your template to provision the necessary resources for your app. Previous knowledge of Bicep is not required to complete this module. However, if you plan to work with `azd` templates extensively, it's a good idea to become familiar with at least the basics of Bicep or Terraform. You can learn more about Bicep on the [Fundamentals of Bicep](/training/paths/fundamentals-bicep/) training path.
+In this unit, you'll add Bicep code to your template to provision the necessary resources for your app. Previous knowledge of Bicep isn't required to complete this module. However, if you plan to work with `azd` templates extensively, it's a good idea to become familiar with at least the basics of Bicep or Terraform. You can learn more about Bicep on the [Fundamentals of Bicep](/training/paths/fundamentals-bicep/) training path.
 
 The Bicep or Terraform files for your template are contained in the `infra` folder. The Bicep starter template you selected generated three files as a starting point:
 
-* `main.bicep` - Acts as the main entrypoint for Bicep execution and is used to define the resources that will be provisioned in Azure. The `main.bicep` file can also reference other Bicep modules (files) that allow you to extract resource definitions out into more granular, reusable files.
-* `abbreviations.json` - A JSON file that provide many helpful naming abbreviation. This file is loaded into the `main.bicep` file during execution and helps provide consistent, logical naming prefixes for different Azure resources. You will generally not modify this file when creating your template.
+* `main.bicep` - Acts as the main entrypoint for Bicep execution and is used to define the resources that will be provisioned in Azure. The `main.bicep` file can also reference other Bicep modules (files) that allow you to extract out resource definitions into more granular, reusable files.
+* `abbreviations.json` - A JSON file that provides many helpful naming abbreviations. This file is loaded into the `main.bicep` file during execution and helps provide consistent, logical naming prefixes for different Azure resources.
 * `main.parameters.json` - A JSON file that defines default values for important template parameters, such as the default Azure location or the environment name.
 
-You can define and provision the required Azure resources for your app by updating the `main.bicep` file and creating additional Bicep files. `Main.bicep` generally orchestrates the execution of other Bicep modules by passing parameters between them. For this example, you'll create an additional Bicep module to define the Azure App Service that will host your application.
+You can define and provision the required Azure resources for your app by updating the `main.bicep` file and creating more Bicep files. `Main.bicep` generally orchestrates the execution of other Bicep modules by passing parameters between them. For this example, you'll create an additional Bicep module to define the Azure App Service that will host your application.
 
 1. Inside of the `infra` folder of your template, create a new file called `web.bicep`.
 
@@ -56,15 +56,15 @@ You can define and provision the required Azure resources for your app by updati
 
     The code snippet accomplishes the following tasks:
 
-    * Defines a set of parameters that can be passed into the module to make it reusable and configurable. You could choose to parameterize more of teh values in the resource definitions to make the module more flexible.
-    * Defines an App Service Plan that will be created in Azure to manage the compute resources for App Service instances.
-    * Defines the App Service that be created in Azure to host the deployed application. A `azd-service-name` tag is included on the App Service that will be used later by the `Azure.yaml` configuration file to associate your app source code with the App Service.
+    * Defines a set of parameters that can be passed into the module to make it reusable and configurable. You could choose to parameterize more of the values in the resource definitions to make the module more flexible.
+    * Defines an App Service Plan to manage the compute resources for App Service instances.
+    * Defines the App Service to host the deployed application. A `azd-service-name` tag is included on the App Service that will be used later by the `Azure.yaml` configuration file to associate your app source code with the App Service.
 
     This Bicep module will create an App Service for your template, but you still need to update the `main.bicep` to use it.
 
 1. Locate the `infra` folder inside your editor and open the `main.bicep` file.
 
-    The `main.bicep` file generated by the starter template includes some helpful setup configurations for you. For example, the file defines essential parameters such as `environmentName` and `location`. By default these parameters will be populated from `main.parameters.json` if they are included in that file, but you can also override them. The starter code also loads in the `abbreviations.json` file so that it's available to work with, creates some useful tags and tokens for service naming, and includes useful comments with tips to help you get started.
+    The `main.bicep` file generated by the starter template includes some helpful setup configurations for you. For example, the file defines essential parameters such as `environmentName` and `location`. By default these parameters will be populated from `main.parameters.json` if they're included in that file, but you can also override them. The starter code also loads in the `abbreviations.json` file so that it's available to work with, creates some useful tags and tokens for service naming, and includes useful comments with tips to help you get started.
 
 1. Towards the bottom of the `main.bicep` file, locate the comment that resembles the following:
 
@@ -94,4 +94,4 @@ You can define and provision the required Azure resources for your app by updati
     * Assigns a name to the Azure deployment set and scopes it to the resource group created in `main.bicep`.
     * Passes parameters into the module using the `abbreviations.json` values to assist with naming.
 
-The infrastructure files for the app source code are now part of your template. In the next unit, you'll add configurations that describes the relationship between these pieces for the `azd` deployment process.
+The infrastructure files for the app source code are now part of your template. In the next unit, you'll add configurations that describe the relationship between these pieces for the `azd` deployment process.

@@ -17,15 +17,15 @@ Your `azd` template is complete and ready for provisioning and deployment. When 
 
 1. When prompted, select the subscription and location you would like to deploy to.
 
-The `azd up` command may a few minutes to run. Updates will be printed out in the console as the process runs. When it completes, a link to the deployed site will be displayed. You should also see a link to the deployment set in Azure, which you can visit to view additional information.
+The `azd up` command may a few minutes to run. Updates are printed in the console as the process runs. When the command completes, a link to the deployed site will be displayed. You should also see a link to the deployment set in Azure, which you can visit to view additional information.
 
 The deployed application should look similar to the following screenshot:
 
 :::image type="content" source="../media/azd-app.png" alt-text="A screenshot showing the deployed web application.":::
 
-You can also view the resources that were created in Azure by navigating to your resource group in the Azure Portal:
+You can also view the resources that were created in Azure by navigating to your resource group in the Azure portal:
 
-1. In the main Azure portal search bar, search for the resource group `azd` created for you by typing `rg-azdlearn`. By convention, the resource group will be the environment name you specified prefixed with `rg-`.
+1. In the main Azure portal search bar, search for the resource group `azd` created for you by typing `rg-azdlearn`. By convention, the resource group is the environment name you specified prefixed with `rg-`.
 
 1. Select the resource group from the results to navigate to the overview page.
 

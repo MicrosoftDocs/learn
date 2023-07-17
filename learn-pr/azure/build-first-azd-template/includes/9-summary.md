@@ -1,4 +1,4 @@
-The goal of this module was to guide you through the proceoss of building your own Azure Developer CLI templates. You learned how to complete the following tasks:
+The goal of this module was to guide you through the process of building your own Azure Developer CLI templates. You learned how to complete the following tasks:
 
 - Scaffold a new `azd` project using the available starter templates
 - Add your own application source code to the template
@@ -6,7 +6,7 @@ The goal of this module was to guide you through the proceoss of building your o
 - Define configurations that determine how `azd` deploys your app
 - Configure a CI/CD pipeline for the template using the sample workflow files as a starting point
 
-As you continue to build `azd` templates and convert your projects to use this tool you'll become more comfortable with the process. Explore the resources below for additional training and content around building `azd` templates.
+As you continue to build `azd` templates and convert your projects to use this tool you'll become more comfortable with the process. Explore the following resources for more training and content around building `azd` templates.
 
 ## References
 

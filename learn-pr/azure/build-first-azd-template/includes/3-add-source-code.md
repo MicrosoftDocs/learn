@@ -1,4 +1,4 @@
-The Azure Developer CLI (`azd`) is designed to provision and deploy resources to Azure. In this unit, you'll create the app that will be deployed by the template. App source code conventionally lives in the `src` directory of the template. Later in the module you'll learn how to configure your template to deploy this app to Azure hosting resources such as App Service.
+The Azure Developer CLI (`azd`) is designed to provision and deploy resources to Azure. In this unit, you'll create the app that the template deploys. App source code conventionally lives in the `src` directory of the template. Later in the module you'll learn how to configure your template to deploy this app to Azure hosting resources such as App Service.
 
 1. Open a terminal window in the root directory of your `azd` template.
 
@@ -14,7 +14,7 @@ The Azure Developer CLI (`azd`) is designed to provision and deploy resources to
     cd src
     ```
 
-1. Create a new directory called *webapp*. Sub-folders inside of the `src` directory allow your template to logically group the different parts of your app, such as the frontend and backend services of a web app. The sample web app for this module will only have one code base in a single directory.
+1. Create a new directory called *webapp*. Subfolders inside of the `src` directory allow your template to logically group the different parts of your app, such as the frontend and backend services of a web app. The sample web app for this module will only have one code base in a single directory.
 
     ```bash
     mkdir web
