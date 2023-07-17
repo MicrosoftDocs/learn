@@ -81,7 +81,7 @@ Go to **Discover** > **Create snapshot report** and follow the steps shown.
 Having visibility into shadow IT in your organization is critical. After your logs are analyzed, you can easily find which cloud apps are being used, by which people, and on which devices.
 
 ## Step 5. Deploy Conditional Access App Control for catalog apps
-How to page: [Deploy Conditional Access App Control for catalog apps](/defender-cloud-apps/conditional-access-app-control)
+How to page: [Deploy Conditional Access App Control for catalog apps](/defender-cloud-apps/proxy-deployment-aad)
 
 Recommended task: Deploy Conditional Access App Control for catalog apps.
 
