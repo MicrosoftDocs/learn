@@ -28,4 +28,4 @@ Module 2 Demos
 Module 2 Labs
 
 - Lab 2.1: [Create a segment](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M02_Lab1_Create_a_Segment.md)
-- Lab 2.2: [Create a simple customer journey](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M02_Lab2_Create_a_simple_Customer_Journey.md)
+- Lab 2.2: [Create a simple customer journey](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_LP02_M01_Lab1_Create_a_simple_Customer_Journey.md)
