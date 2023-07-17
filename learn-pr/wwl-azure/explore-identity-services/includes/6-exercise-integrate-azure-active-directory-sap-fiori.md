@@ -83,6 +83,7 @@ For single sign-on to work, you must establish a linked relationship between an 
 1. In the Azure portal, select **Enterprise Applications**, select **All applications**, then select **SAP Fiori**.
 2. In the applications list, select **SAP Fiori**.
 3. To verify the outcome, after the identity provider Azure AD is activated in SAP Fiori, try to access one of the following URLs to test single sign-on as an assigned user (you shouldn't be prompted for a username and password):
-
+```
      - **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>**
      - **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>**
+```
