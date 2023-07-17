@@ -22,4 +22,4 @@ Action items should look like this in an open state, preferably without warnings
 
 :::image type="content" source="../media/list-of-action-items.png" alt-text="Screenshot of PWABuilder's report card page that shows a list of the action items identified in the readiness report.":::
 
-Make sure to check the warnings and errors. They must all be addressed before packaging the web app for app stores.
+Make sure to check the warnings and errors. They should be addressed before packaging the web app for app stores.

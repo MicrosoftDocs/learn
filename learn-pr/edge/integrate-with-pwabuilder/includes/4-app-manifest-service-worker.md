@@ -1,4 +1,4 @@
-After you analyze your project, PWABuilder provides options to generate the app manifest and service worker files if the app doesn't have them already. As a review, the app manifest is a JSON file that controls an app's appearance and launch. The service worker is a JavaScript file that manages network requests and enables offline usage and push notifications.
+After you analyze your project, PWABuilder provides options to generate the app manifest and service worker files if the app doesn't have them already. As a review, the app manifest is a JSON file that provides information about a web application. The service worker is a JavaScript file that is a virtual proxy between the browser and the network. It's very powerful and can do things like managing network requests, enabling offline usage, and handling push notifications.
 
 ## Generate app manifest and service worker files
 
@@ -19,10 +19,13 @@ Here are the PWABuilder steps for generating app manifest and service worker fil
 1. Open your project's *index.html* file in a code editor or text editor of your choice.
 1. Add a link to the manifest file in the head section of your *index.html* file by inserting the following line of code: `<link rel="manifest" href="manifest.json" />`
 
-1. Add the following JavaScript code to the *index.html* file to register the service worker. You can place the code either in the head section, inside a `script>\` tag, or at the end of the body section, before the closing `</body>` tag:
+1. Add the following JavaScript code to the `index.html` file to register the service worker. You can place the code either in the head section, inside a `<script>` tag, or at the end of the body section, before the closing `</body>` tag:
 
-   ```java
-   if ('serviceWorker' in navigator) {window.addEventListener('load', function() {navigator.serviceWorker.register('service-worker.js').then(function(registration) {console.log('ServiceWorker registration successful with scope: ', registration.scope);}, function(err) {console.log('ServiceWorker registration failed: ', err);});});}
+   ```javascript
+   if (typeof navigator.serviceWorker !== 'undefined') {
+       navigator.serviceWorker.register('sw.js')
+   }
+   ```
 
 1. Save the changes to your *index.html* file.
 1. Push any changes to your server.

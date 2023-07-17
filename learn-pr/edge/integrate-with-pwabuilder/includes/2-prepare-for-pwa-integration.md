@@ -16,12 +16,12 @@ Assess if your project aims to deliver an app-like user experience, including sm
 
 ## Implement key PWA best practices
 
-To enhance the user experience of your project and ensure a successful PWA integration, it's essential to implement performance, accessibility, and responsiveness best practices. These practices can be applied at any stage of your project but are highly recommended during the PWA integration process. Implementing these best practices will help you prepare your project for PWA features and ensure an app-like experience. Here are some key steps you can take:
+To enhance the user experience of your project and ensure a successful PWA integration, it's essential to implement performance, accessibility, and responsiveness best practices. Implementing these best practices will help you prepare your project for PWA features and ensure an app-like experience. Here are some key steps you can take:
 
 - **Implement lazy-load resources**: Implement lazy-loading to reduce initial load time and ensure a smoother user experience.
 - **Optimize images**: Compress and resize images to reduce file size without sacrificing visual quality. Consider using modern image formats like WebP and AVIF for better compression and performance.
-- **Use caching strategies**: Implement caching strategies to store frequently used resources on the user's device, resulting in faster load times and reduced bandwidth usage. Use HTTP caching headers, service workers, and browser caches.
-- **Implement responsive design**: Create a responsive layout that adapts to different screen sizes and devices using CSS media queries, fluid grids, and flexible images. Consider implementing mobile-first design principles for better performance on smaller screens.
+- **Use caching strategies**: Implement caching strategies to store frequently used resources on the user's device, resulting in faster load times and reduced bandwidth usage.
+- **Implement responsive design**: Create a responsive layout that adapts to different screen sizes and devices using CSS media queries, fluid grids, and flexible images.
 
 ## Update your project's dependencies
 
