@@ -43,7 +43,7 @@ Apply these best practices to protect your remote access infrastructure from ran
 | <input type="checkbox" /> | Deploy [Azure Point-to-Site (P2S) VPN](/azure/vpn-gateway/openvpn-azure-ad-tenant#enable-authentication) to provide remote access. | Take advantage of integration with Azure AD and your existing Azure subscriptions. |
 | <input type="checkbox" /> | Publish on-premises web apps with [Azure AD Application Proxy](/azure/active-directory/manage-apps/application-proxy-integrate-with-remote-desktop-services). | Apps published with Azure AD Application Proxy do not need a remote access connection. |
 | <input type="checkbox" /> | Secure access to Azure resources with [Azure Bastion](/azure/bastion/bastion-overview). | Securely and seamlessly connect to your Azure virtual machines over SSL. |
-| <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](/azure/security/fundamentals/protect-against-ransomware-phase2.md#detection-and-response)).  |  Reduce risk from ransomware activities that probe baseline security features and settings. |
+| <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](/azure/security/fundamentals/ransomware-protection)).  |  Reduce risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
 
