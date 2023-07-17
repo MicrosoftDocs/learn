@@ -44,6 +44,13 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
 
+## Optional: Update the cube's material
+
+For performance purposes, it is recommended to use MRTK materials instead of the default Unity materials. 
+
+1. With the cube still selected, find the "Materials" section on the Mesh Renderer component.
+1. Replace the default material with the **MRTK_Standard_White** material, located under **MRTK Standard Assets** > **Materials**.
+
 ## Add a second cube
 
 1. In the **Hierarchy**, right-click the cube, and then select **Duplicate**. The duplicated cube appears with the name "Cube (1)."
@@ -71,6 +78,9 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 1. Click the Play button. When the project starts playing, the view switches to the **Game** window.
 
     :::image type="content" source="../media/031-game-window.png" alt-text="Screenshot of the Game window after entering Play mode.":::
+
+    > [!NOTE]
+    >  Before Playing, confirm that there is a valid Profile set under **Project Settings** > **MRTK3**.
 
 1. Click the three-dot button above the upper-right corner of the **Game** window and then select **Maximize**.
 

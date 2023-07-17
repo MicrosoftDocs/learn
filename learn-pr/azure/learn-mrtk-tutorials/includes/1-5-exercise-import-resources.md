@@ -1,5 +1,5 @@
 
-## Import the MRTK Unity foundation package
+## Install the Mixed Reality Feature Tool
 
 To import the Mixed Reality Toolkit into your project we'll use the Mixed Reality Feature Tool, which allows developers to discover, update, and import feature packages. You can search packages by name or category, see their dependencies, and view proposed changes to your project's manifest file before importing.
 
@@ -7,7 +7,9 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 1. After the download finishes, executable file MixedRealityFeatureTool.exe and then use it to launch the Mixed Reality Feature Tool.
 
     > [!NOTE]
-    > Before you can run the Mixed Reality Feature Tool, you must install the [.NET 5.0 runtime](https://dotnet.microsoft.com/download/dotnet/5.0). Though this version is no longer supported, it is the correct version for this exercise.
+    > Before you can run the Mixed Reality Feature Tool, you may need to install the [.NET 6.0 runtime](https://dotnet.microsoft.com/download/dotnet/6.0).
+
+## Import the MRTK Unity foundation package
 
 [!INCLUDE[](includes/import-mrtk.md)]
 

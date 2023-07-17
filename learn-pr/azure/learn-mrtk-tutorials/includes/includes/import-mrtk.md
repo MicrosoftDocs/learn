@@ -5,9 +5,6 @@
 1. Select the Browse button (it's the "three-dot" button in the image below), then navigate to your project, and then open it.
 
     :::image type="content" source="../../media/002-open-your-project.png" alt-text="Open your project":::
-     
-    > [!NOTE]
-    > The **Project Path** box in the Tool must contain some value, so it inserts a backslash ("\_") by default.
 
     After you select a folder, the Tool checks to ensure that it's a valid Unity project folder.
 
