@@ -42,7 +42,7 @@ We recommend using Defender for Cloud Apps sensitive information protection in p
 > For third-party apps, verify that the current load does not exceed the app's maximum number of allowed API calls.
 
 ## Step 3. Control cloud apps with policies
-How to page: [Control cloud apps with policies](/defender-cloud-apps/policies-control-cloud-apps)
+How to page: [Control cloud apps with policies](/defender-cloud-apps/control-cloud-apps-with-policies)
 
 Required task: Create policies  
 
