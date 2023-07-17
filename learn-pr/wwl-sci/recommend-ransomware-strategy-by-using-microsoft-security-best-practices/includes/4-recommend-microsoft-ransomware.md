@@ -116,7 +116,7 @@ Apply these best practices to all Windows, Linux, MacOS, Android, iOS, and other
 | <input type="checkbox" /> | Maintain your software so that it is: <br><br> - Updated: Rapidly deploy critical security updates for operating systems, browsers, & email clients <br><br> - Supported:  Upgrade operating systems and software for versions supported by your vendors. | Attackers are counting on you missing or neglecting manufacturer updates and upgrades. |
 | <input type="checkbox" /> | Isolate, disable, or retire insecure systems and protocols, including [unsupported operating systems](/lifecycle/) and [legacy protocols](https://techcommunity.microsoft.com/t5/core-infrastructure-and-security/retire-those-old-legacy-protocols/ba-p/259396). | Attackers use known vulnerabilities of legacy devices, systems, and protocols as entry points into your organization. |
 | <input type="checkbox" /> | Block unexpected traffic with host-based firewall and network defenses. | Some malware attacks rely on unsolicited inbound traffic to hosts as a way of making a connection for an attack. |
-| <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](/azure/security/fundamentals/protect-against-ransomware-phase2.md#detection-and-response)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
+| <input type="checkbox" /> | Audit and monitor to find and fix deviations from baseline and potential attacks (see [Detection and Response](/azure/security/fundamentals/ransomware-protection)). | Reduces risk from ransomware activities that probe baseline security features and settings. |
 |  |  |  |
 
 ### Accounts
