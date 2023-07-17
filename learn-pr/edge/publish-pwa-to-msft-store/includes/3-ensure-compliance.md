@@ -11,7 +11,7 @@ Ensure that your web app manifest is correctly structured and includes all the n
 - **display**: Defines the preferred display mode for your app. It can be: "fullscreen," "standalone," "minimal-ui," or "browser".
 - **icons**: Specifies an array of image files that can serve as application icons.
 - **background_color**: Defines the expected background color for the website. This value repeats what's already provided in the site's CSS.
-- **theme_color**: This attribute defines the default theme color for the application. This sometimes affects how the OS displays the site (on Android's task switcher, the theme color surrounds the site).
+- **theme_color**: Defines the default theme color for the application. This sometimes affects how the OS displays the site. For example, on Android's task switcher, the theme color surrounds the site.
 
 ## Confirm service worker API standards
 

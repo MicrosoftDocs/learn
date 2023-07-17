@@ -1,18 +1,18 @@
 Publishing your PWA to the Microsoft Store extends its reach to millions of Windows users worldwide. This step transforms your PWA from a web experience to a discoverable application within the Microsoft Store ecosystem. Users can install your app with a single click, enjoy updates via the Store, and experience it as a native-like app on their devices. By following the guidelines to reserve your app name, package your PWA, and submit it, you'll be able to showcase your application to a wider audience and ensure a seamless user experience.
 
-## Package PWA to Microsoft Store
+## Package PWA for Microsoft Store
 
-Visit the PWABuilder website to package your PWA for the Microsoft Store. Packaging your PWA involves bundling the necessary files and metadata into a format that's recognized by the Store, enabling users to install and use your app seamlessly.
+The PWABuilder website packages your PWA for the Microsoft Store. Packaging your PWA involves bundling the necessary files and metadata into a format that's recognized by the Store, enabling users to install and use your app seamlessly.
 
-## Reserve app name
+### Reserve app name
 
 In order to create a proper package of your PWA, you first need to reserve a name for your application in the Microsoft Partner Center.  The Partner Center is a platform that helps you manage and deploy applications to Microsoft's storefronts. Reserving a name also lets you obtain the package info required for PWABuilder's packaging process for submission to the Microsoft Store. Here are the steps to reserve a name:
 
 1. Sign in to the **Partner Center Dashboard**.
 1. Navigate to the **Apps and Games** section.
 1. Select the **+ New Product** button and select **App**.
-1. A prompt to reserve a name for your application submission displays.  Enter your name.  
-1. After you reserve your name, you can access your package info. Navigate to the **Product Identity** section and note the three product identity values on the right side of the page.
+1. A prompt to reserve a name for your application submission displays.  Enter your app name.  
+1. After you reserve your app name, you can access your package info. Navigate to the **Product Identity** section and note the three product identity values on the right side of the page.
 
     :::image type="content" source="../media/product-identity-values.png" alt-text="Screenshot of PWABuilder that shows the Product identity page.  Three unique product identity values for your product are listed on the right side of the page.":::
 
@@ -22,7 +22,7 @@ In order to create a proper package of your PWA, you first need to reserve a nam
 
 1. Copy and save the three values. You need all three to package your app with PWABuilder.
 
-## Package app
+### Package app
 
 Before you can submit your PWA to the Microsoft Store, you need to create the proper packages with PWABuilder.
 
@@ -42,7 +42,11 @@ Before you can submit your PWA to the Microsoft Store, you need to create the pr
 
 1. Select **Download Package**.
 
-## Create a Microsoft partner account
+## Submit request to publish PWA
+
+After you package your PWA, use the Microsoft Partner Center to submit it for publishing to the Microsoft Store.
+
+### Create Microsoft partner account
 
 You need to have a partner account to submit your PWA through the [Microsoft Partner Center](https://partner.microsoft.com/). If you already have an account, sign in and continue to the next section in this unit, Submit PWA.
 
@@ -52,7 +56,7 @@ If you don't have an account, complete the following steps to create one.
 1. Enter your essential business information, such as your organization's address and legal point of contact. Depending on your country, you may also need to share your business registration number.
 1. Microsoft verifies email ownership, employment, and business details via email.  You will receive time-sensitive instructions in your business email to confirm your credentials and unlock your membership.
 
-## Submit PWA
+### Submit PWA
 
 Submitting your PWA through the Partner Center is the final step to make your application accessible to users via the Microsoft Store. This process involves uploading your packaged PWA and providing the necessary details about your app. Once you submit you PWA and it's approved, it's available for users to download and install directly from the Store to  increase your application's visibility and reach.
 
@@ -73,4 +77,8 @@ Refer to the following steps to submit your PWA through Partner Center:
 1. After the packages are successfully associated with your submission, you need to add more details about your app. For example, the app's title, description, category, keywords, and screenshots, which appear on the Microsoft Store.
 1. After you review and add the details, select **Submit to the Store** to initiate the review process for your PWA.
 
-After you submit your PWA, it's reviewed for functionality, performance, and policy compliance. If your app doesn't pass, you receive feedback on the issues to address before resubmission. The review process usually takes 24 to 48 hours. Once approved, your app is available on the Microsoft Store.
+## PWA review and publishing
+
+After you submit your PWA, it's reviewed for functionality, performance, and policy compliance. The review process usually takes 24 to 48 hours. Once approved, your app is available on the Microsoft Store.
+
+If your app doesn't pass, you receive feedback on the issues to address before resubmission.  
