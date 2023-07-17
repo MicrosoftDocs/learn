@@ -1,0 +1,45 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-know-microsoft-azure-cloud-platform-business-professionals
+metadata:
+  title: 'Get to know Microsoft Azure cloud platform: An overview for business professionals'
+  description: |-
+    Enhance your cloud fluency with this 90-minute, highly informative training designed to bridge the gap between cloud computing and business strategy. Take a tour of the transformative power of the cloud to drive business success, growth and cost savings with Microsoft Azure as your trusted partner.
+
+    With practical insights and actual case studies, three streamlined modules cover the basics of cloud for business, the many business benefits of Azure, and best practices for transitioning your business to the cloud.
+
+    This learning path, created especially for non-technical business leaders, requires no technical background.
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+title: 'Get to know Microsoft Azure cloud platform: An overview for business professionals'
+prerequisites: |
+  None
+summary: |
+  Enhance your cloud fluency with this 90-minute, highly informative training designed to bridge the gap between cloud computing and business strategy. Take a tour of the transformative power of the cloud to drive business success, growth and cost savings with Microsoft Azure as your trusted partner.
+  With practical insights and actual case studies, three streamlined modules cover the basics of cloud for business, the many business benefits of Azure, and best practices for transitioning your business to the cloud.
+  This learning path, created especially for non-technical business leaders, requires no technical background.
+video:
+  title: "Get started with Azure Cloud: An overview for business professionals"
+  url: https://www.microsoft.com/videoplayer/embed/RW14LB3
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure
+subjects:
+- business-applications
+- business-continuity
+- cloud-computing
+- migration
+- productivity
+modules:
+- learn.wwl.describe-basics-azure-business
+- learn.wwl.describe-business-benefits-azure
+- learn.wwl.transition-your-business-azure
+trophy:
+  uid: learn.wwl.get-know-microsoft-azure-cloud-platform-business-professionals.trophy

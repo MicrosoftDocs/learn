@@ -39,8 +39,6 @@ subjects:
 - cloud-computing
 - storage
 modules:
-- learn.azure.intro-to-azure-fundamentals
-- learn.azure.azure-architecture-fundamentals
 - learn.azure.azure-database-fundamentals
 - learn.azure.azure-compute-fundamentals
 - learn.introduction-to-azure-virtual-machines

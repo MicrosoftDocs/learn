@@ -28,6 +28,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.run-training-script-command-job-azure-machine-learning.introduction
+- learn.wwl.run-training-script-command-job-azure-machine-learning.video
 - learn.wwl.run-training-script-command-job-azure-machine-learning.convert-notebook-script
 - learn.wwl.run-training-script-command-job-azure-machine-learning.run-script-command-job
 - learn.wwl.run-training-script-command-job-azure-machine-learning.use-parameters-command-job

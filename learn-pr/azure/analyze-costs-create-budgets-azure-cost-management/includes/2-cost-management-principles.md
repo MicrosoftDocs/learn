@@ -11,15 +11,15 @@ Comprehensive, up-front planning lets you tailor cloud usage to your specific bu
 - What business problem am I solving?
 - What usage patterns do I expect from my resources?
 
-Your answers will help you select the offerings that are right for you. They determine the infrastructure to use and how to use it to maximize your Azure efficiency.
+Your answers help you select the offerings that are right for you. They determine the infrastructure to use and how to use it to maximize your Azure efficiency.
 
 ### Visibility
 
-When structured well, Cost Management helps you to inform people about the Azure costs for which they're responsible or for the money they spend. Microsoft Cost Management has a tool called Cost Analysis, which you'll learn to use in this lesson. It's designed to give you insight into where your money is spent. Take advantage of this tool. It can help you find identify key cost drivers and trends within your environments.
+When structured well, Cost Management helps you to inform people about the Azure costs for which they're responsible or for the money they spend. Microsoft Cost Management has a tool called Cost Analysis, which you learn to use in this lesson. It's designed to give you insight into where your money is spent. Take advantage of this tool. It can help you identify key cost drivers and trends within your environments.
 
 ### Accountability
 
-Attribute costs in your organization to make sure that people responsible are accountable for their team's spending. To fully understand your organization's Azure spending, you should organize your resources to maximize insight into cost attribution. Good organization helps to manage and reduce costs and hold people accountable for efficient spending in your organization. Once properly organized, you can begin creating budgets in Cost Management to track and alert on your spending. In this lesson, you'll learn how to use our budgets tool to make sure that your teams are held responsible for the costs that they accrue.
+Attribute costs in your organization to make sure that the people responsible are accountable for their team's spending. To fully understand your organization's Azure spending, you should organize your resources to maximize insight into cost attribution. Good organization helps to manage and reduce costs and hold people accountable for efficient spending in your organization. Once properly organized, you can begin creating budgets in Cost Management to track and alert on your spending. In this lesson, you learn how to use our budgets tool to make sure that your teams are held responsible for the costs that they accrue.
 
 ### Optimization
 
@@ -31,7 +31,7 @@ Everyone in your organization must engage in the cost-management lifecycle. They
 
 ## Where to find Cost Management
 
-You'll access the Cost Management tools from a variety of locations in the Azure portal:
+You can access the Cost Management tools from various locations in the Azure portal:
 
 - Subscription and resource group windows
 

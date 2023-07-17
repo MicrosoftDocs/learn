@@ -31,8 +31,8 @@ roles:
 products:
 - azure-powershell
 - mem
-- mem-configuration-manager
-- intune
+- configuration-manager
+- mem-intune
 - active-directory
 - azure-active-directory-connect
 units:

@@ -1,10 +1,9 @@
-
 As a user who is assigned any of the limited administrator directory roles, you can use the Azure portal to invite B2B collaboration users. You can invite guest users to the directory, to a group, or to an application. After you invite a user through any of these methods, the invited user's account is added to Azure Active Directory (Azure AD), with a user type of *Guest*. The guest user must then redeem their invitation to access resources. An invitation of a user does not expire.
 
 :::image type="content" source="../media/external-user-flow-d79a0a22.png" alt-text="Diagram of how a guest user is invited to the directory, and how they can access resources once they are granted access.":::
 
 
-After you add a guest user to the directory, you can either send the guest user a direct link to a shared app, or the guest user can click the redemption URL in the invitation email. Make sure your organization's external collaboration settings are configured such that you're allowed to invite guests. By default, all users and admins can invite guests. But your organization's external collaboration policies might be configured to prevent certain types of users or admins from inviting guests.
+After you add a guest user to the directory, you can either send the guest user a direct link to a shared app, or the guest user can select the redemption URL in the invitation email. Make sure your organization's external collaboration settings are configured such that you're allowed to invite guests. By default, all users and admins can invite guests. But your organization's external collaboration policies might be configured to prevent certain types of users or admins from inviting guests.
 
 ## How users in your organization can invite guest users to an app
 
@@ -34,7 +33,7 @@ Download and fill in the bulk upload CSV template to help you successfully invit
 This CSV template will always open with two rows of existing data. The rows in a downloaded CSV template are as follows:
 
  -  **Version number**: The first row containing the version number must be included in the upload CSV.
- -  **Column headings**: The format of the column headings is **Item name** `[PropertyName]` **Required or blank**. For example, `Email address to invite [inviteeEmail] Required`. Some older versions of the template might have slight variations.
+ -  **Column headings**: The format of the column headings is **Item name**`[PropertyName]`**Required or blank**. For example, `Email address to invite [inviteeEmail] Required`. Some older versions of the template might have slight variations.
  -  **Examples row**: We have included in the template a row of examples of acceptable values for each column. You must remove the examples row and replace it with your own entries.
 
 ### Additional guidance

@@ -1,6 +1,6 @@
 You now have a solid understanding of GitHub Advanced Security and how its features defend against gaps in security. This module also explained the importance of responding quickly to threats. You reviewed examples of best practices to keep your supply chain, codebase, and development environment safe. Now, you can start improving how teams work within your organization.
 
-Security is about much more than passing a complete project to a security team. Security needs to be front of mind at each step of the software development lifecycle.
+Security is about much more than passing a complete project to a security team. Security needs to be front of mind at each step of the software-development lifecycle.
 
 In this unit, you learned how to:
 
