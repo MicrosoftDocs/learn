@@ -22,10 +22,10 @@ quiz:
         - content: "IaaS"
           isCorrect: false
           explanation: Infrastructure as a service (IaaS) is a type of cloud computing service that offers essential compute, storage and networking resources on demand, on a pay-as-you-go basis.
-        - content: "All of the above"
+        - content: "Both PaaS and IaaS"
           isCorrect: true
           explanation: Includes both PaaS and IaaS
-    - content: "Which of the following elements is a non-relational storage system for large-scale storage?"
+    - content: "Which of the following elements is a nonrelational storage system for large-scale storage?"
       choices:
         - content: "Application"
           isCorrect: false

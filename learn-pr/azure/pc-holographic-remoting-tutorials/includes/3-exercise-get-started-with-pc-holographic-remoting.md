@@ -32,11 +32,11 @@ https://package-installer.glitch.me/v1/installer/OpenUPM/com.atteneder.gltfast?r
 
 :::image type="content" source="../media/import-gltfast.png" alt-text="Screenshot of importing glTFast." lightbox="../media/import-gltfast.png":::
 
-Click import.
+Select import.
 
 :::image type="content" source="../media/new-scoped-registry.png" alt-text="Screenshot of new scope registry imported." lightbox="../media/new-scoped-registry.png":::
 
-Click close.
+Select close.
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.PCHolograhicRemoting** > **Prefabs** folder. While holding down the CTRL button, select the following six prefabs.
 
@@ -66,7 +66,7 @@ In this section, you'll add scripts to the scene and create button events that d
 
 ### Configure the interactable (script) component
 
-1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Pressable Button** component and click on plus sign icon ("+") under **OnClick ()** event.
+1. In the Hierarchy window, expand the **ButtonParent** object and select the next button. In the Inspector window, locate the **Pressable Button** component and select the plus sign icon ("+") under **OnClick ()** event.
 
     :::image type="content" source="../media/add-interactable.png" alt-text="Screenshot of expanding the Interactable script." lightbox="../media/add-interactable.png":::
 

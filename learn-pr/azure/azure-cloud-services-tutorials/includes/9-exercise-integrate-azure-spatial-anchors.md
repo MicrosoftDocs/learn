@@ -28,7 +28,7 @@ In this section, you'll learn how to configure the scene and make the necessary 
 
 3. From the **Manager** folder, drag and drop the prefab **Anchor Manager** into the scene Hierarchy.
 
-4. Select the **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you will find the **Spatial Anchor Manager** (Script). Find the account ID and key field and add the credentials which you created in the earlier lesson.
+4. Select the **Anchor Manager** GameObject in the Hierarchy, and in the Inspector section, you'll find the **Spatial Anchor Manager** (Script). Find the account ID and key field and add the credentials that you created in the earlier lesson.
 
     :::image type="content" source="../media/add-anchor-manager-prefab.png" alt-text="Screenshot of Unity with newly added AnchorManager prefab still selected." lightbox="../media/add-anchor-manager-prefab.png":::
 
@@ -55,7 +55,7 @@ Azure Spatial Anchors can't run in Unity, so to test the Azure Spatial Anchors f
 
 ### Create an anchor to store a location
 
-In this section, you will save the object location.
+In this section, you'll save the object location.
 
 1. Run the application and select **Set Object** in the main menu.
 
@@ -63,9 +63,9 @@ In this section, you will save the object location.
 
 3. To save the location, select **Save Location**
 
-4. You will see an **anchor pointer** that you can move and place on the location you want to save. After that, you will get a confirmation popup. If you want to confirm and save the location, select **Yes**; otherwise, you can change the location by selecting **No** and selecting the location again.
+4. You will see an **anchor pointer** that you can move and place on the location you want to save. After that, you'll get a confirmation popup. If you want to confirm and save the location, select **Yes**; otherwise, you can change the location by selecting **No** and selecting the location again.
 
-5. Once you confirm the location by selecting **Yes**, the location and the Anchor ID will be saved in Azure Cloud Storage. Once it is saved, you will see the **Object tag**  in the anchor with the object's name.
+5. Once you confirm the location by selecting **Yes**, the location and the Anchor ID will be saved in Azure Cloud Storage. Once it's saved, you'll see the **Object tag**  in the anchor with the object's name.
 
 ### Query for finding an anchor location
 
@@ -73,7 +73,7 @@ In this section, you will save the object location.
 
 2. After selecting **Search Object**, enter the name of the object for which you wish to search in the pop-up window.
 
-3. Select **Search Object**. If the object was saved previously and is found in the database, you will get the object card with all the details of the object.
+3. Select **Search Object**. If the object was saved previously and is found in the database, you'll get the object card with all the details of the object.
 
 4. Select **Show Location** to find the object. The system will query the object address from the cloud storage.
 

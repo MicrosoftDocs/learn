@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
-content: Choose the best response for the question below. Then select **Check your answers**.
+content: Choose the best response for the question. Then select **Check your answers**.
 quiz:
   title: Check your knowledge
   questions:
@@ -18,7 +18,7 @@ quiz:
       choices:
         - content: "com.microsoft.mrtk.core"
           isCorrect: false
-          explanation: This is Mixed Reality Toolkit package and is not required for ASA.
+          explanation: This is Mixed Reality Toolkit package and isn't required for ASA.
         - content: "com.microsoft.azure.spatial-anchors-sdk.core"
           isCorrect: true
           explanation:  With this package and com.microsoft.azure.spatial-anchors-sdk.windows, Azure Spatial Anchors can be added to a HoloLens 2 application.

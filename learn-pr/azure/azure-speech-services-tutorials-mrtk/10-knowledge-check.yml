@@ -36,7 +36,7 @@ quiz:
         - content: "Text Translate"
           isCorrect: false
           explanation: "Translates text and document in real time"
-    - content: "You wish to develop an application which can take verbal commands. Which Azure services can help?"
+    - content: "You wish to develop an application that can take verbal commands. Which Azure services can help?"
       choices:
         - content: "Speech"
           isCorrect: true

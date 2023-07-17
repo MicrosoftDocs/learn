@@ -1,4 +1,4 @@
-In this module, you will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and use the Intent recognition feature to understand voice commands using artificial intelligence.
+In this module, you'll create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens 2. When you complete this series, you will be able to use your device's microphone to transcribe speech to text in real-time, translate your speech into other languages, and use the Intent recognition feature to understand voice commands using artificial intelligence.
 
 ## Create and prepare the Unity project
 

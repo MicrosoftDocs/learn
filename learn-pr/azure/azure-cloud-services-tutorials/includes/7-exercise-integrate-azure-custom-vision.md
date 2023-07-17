@@ -38,7 +38,7 @@ Find and locate the custom vision resource of the **Cognitive Services** type yo
 
 ## Retrieve project settings credentials
 
-In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you created for this tutorial, then select the gear icon on the top-right corner of the page to open the settings page. You will find the necessary credentials in the *Resources* section on the right-hand side and the *General* section on the left-hand side.
+In the [custom vision](https://www.customvision.ai/projects) dashboard, open the project you created for this tutorial, then select the gear icon on the top-right corner of the page to open the settings page. You'll find the necessary credentials in the *Resources* section on the right-hand side and the *General* section on the left-hand side.
 
 1. Now with the **ObjectDetectionManager (script)** set up correctly, find the **SceneController** object in your scene Hierarchy and select it.
 
@@ -52,7 +52,7 @@ In the [custom vision](https://www.customvision.ai/projects) dashboard, open the
 
 1. Run the scene and select **Set Object**. Enter the name for one of the **Tracked Objects** you created in the previous lesson. Select the **Computer Vision** button at the bottom of the **Object Card**.
 
-2. A new window will open. You will take six photos to train the model for image recognition. Select the **Camera** button and perform an AirTap see the object you like to track. Do this six times.
+2. A new window will open. You'll take six photos to train the model for image recognition. Select the **Camera** button and perform an AirTap see the object you like to track. Do this six times.
 
     > [!TIP]
     > To improve the model training try to take each image from different angles and lighting conditions.

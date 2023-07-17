@@ -1,4 +1,4 @@
-Adding text to a scene can be very informative and can guide the users. Here you'll add text to the scene using TextMesh Pro.
+Adding text to a scene can be informative and can guide the users. Here you'll add text to the scene using TextMesh Pro.
 
 ## Add text to the scene
 
@@ -15,4 +15,4 @@ Adding text to a scene can be very informative and can guide the users. Here you
     * Change **Font Size** to 1
     * Change Extra Settings > **Margins** to 0.03
 
-    :::image type="content" source="../media/text-mesh-pro-configured.png" alt-text="Screenshot of Unity with TextMeshPro component configured." lightbox="../media/text-mesh-pro-configured.png":::
+    :::image type="content" source="../media/text-mesh-pro-configured.png" alt-text="Screenshot of Unity with configured TextMeshPro component." lightbox="../media/text-mesh-pro-configured.png":::

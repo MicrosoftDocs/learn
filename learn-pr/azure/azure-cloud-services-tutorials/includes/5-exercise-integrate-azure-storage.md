@@ -2,13 +2,13 @@ In this module, you'll learn how to save entity data to Azure Table storage and 
 
 ## Understand Azure Storage
 
-**Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we will use *Table storage* and *Blob storage*.
+**Azure storage** is a Microsoft storage solution on the cloud that can cover many scenarios and requirements. It can scale massively and is easily approachable by developers. All services can be consumed under the umbrella of an **Azure storage Account**. For our use case, we'll use *Table storage* and *Blob storage*.
 
 Learn more about [Azure storage services](/azure/storage/blobs/storage-blobs-overview).
 
 ### Azure Table Storage
 
-This service allows us to store data in a NoSQL fashion. In our project, we will use it to store information about the *Tracked Object*, such as name, description, spatial anchor ID, and more.
+This service allows us to store data in a NoSQL fashion. In our project, we'll use it to store information about the *Tracked Object*, such as name, description, spatial anchor ID, and more.
 
 In context of the demo application, you'll need two Tables; one to store information about the project with information about the state of trained models more about that in the (Integrating Azure Custom Vision) tutorial, and a second table to store information about *Tracked Objects*.
 

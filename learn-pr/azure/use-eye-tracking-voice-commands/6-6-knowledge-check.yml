@@ -21,15 +21,15 @@ quiz:
         explanation: MRTK's Input Simulator can simulate eye tracking within the Unity editor.
       - content: "Add the Eye Gaze Interaction Profile to the OpenXR settings for the UWP platform."
         isCorrect: false
-        explanation: This enables eye tracking with the HoloLens OpenXR Runtime, not the Unity Editor.
+        explanation: Adding the Eye Gaze Interaction Profile enables eye tracking with the HoloLens OpenXR Runtime, not the Unity Editor.
       - content: "Ensure Eye Gaze Input UWP capability is greyed out"
         isCorrect: false
-        explanation: This ensures the Eye Gaze Input capability is enabled in the UWP application.
+        explanation: Whether or not the Eye Gaze Input UWP capability is greyed out indicates whether Eye Gaze Input capability is enabled in the UWP application.
     - content: "Which component handles the speech input events raised from the Keyword Recognition Subsystem?"
       choices:
         - content: "Speech Interactor"
           isCorrect: true
-          explanation: Stateful Interactables register themselves with this interactor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.
+          explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.
         - content: "Stateful Interactables"
           isCorrect: false
           explanation: Stateful Interactables register themselves with the SpeechInteractor to receive events when the associated keyword is heard by KeywordRecognitionSubsystem.

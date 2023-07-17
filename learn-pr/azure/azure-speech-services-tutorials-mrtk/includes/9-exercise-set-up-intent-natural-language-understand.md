@@ -1,4 +1,4 @@
-In this module, you'll explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say non-specific speech commands and still have their intent understood by the system.
+In this module, you'll explore the Azure Speech Service's intent recognition. The intent recognition allows you to equip your application with AI-powered speech commands, where users can say nonspecific speech commands and still have their intent understood by the system.
 
 ## Prepare the scene
 
@@ -51,7 +51,7 @@ In this section, you'll create an Azure language service resource for the Conver
 
     :::image type="content" source="../media/review-details.png" alt-text="Screenshot of Review + Create." lightbox="../media/review-details.png":::
 
-6. Once the resource creation process is completed, you will see the message **Your deployment is complete**:
+6. Once the resource creation process is completed, you'll see the message **Your deployment is complete**:
 
     :::image type="content" source="../media/message-display.png" alt-text="Screenshot of Overview screen." lightbox="../media/message-display.png":::
 
@@ -63,7 +63,7 @@ Specifically, you'll create an intent that if the user says an action should be 
 
 For example, if the user says **go ahead and launch the rocket**, the app will predict that **go ahead** means some **action** should be taken, and that the `PressableButton.OnClicked()` event to **target** is on the **launch** button.
 
-The main steps you will take to achieve this are:
+The main steps you'll take to achieve this are:
 
 1. Create a CLU app
 2. Create intents
@@ -76,13 +76,13 @@ The main steps you will take to achieve this are:
 
 Using the same user account you used when creating the Azure resource in the previous section, sign in to [Language Studio](https://aka.ms/languageStudio).
 
-1. Once signed in, you will be prompted to select an Azure resource. Select the values you used when creating the Azure Language service resource and press **Done**.
+1. Once signed in, you'll be prompted to select an Azure resource. Select the values you used when creating the Azure Language service resource and press **Done**.
 
     :::image type="content" source="../media/language-studio-azure.png" alt-text="Screenshot showing the Select an Azure resource popup." lightbox="../media/language-studio-azure.png":::
 
 2. After having connected the Azure resource, select **Create new > Conversational Language Understanding** and enter the following values in the **Create a project** popup window:
 
-    * For **Name**, enter a suitable name, for example: *MRTK-Tutorials-AzureSpeechServices*. Note down the name you selected, you will need it later in the tutorial.
+    * For **Name**, enter a suitable name, for example: *MRTK-Tutorials-AzureSpeechServices*. Note down the name you selected, you'll need it later in the tutorial.
     * For **Utterances primary language**, select **English**
     * For **Description**, optionally enter a suitable description
 
@@ -92,7 +92,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/review-clu-app.png" alt-text="Screenshot of Review and finish screen." lightbox="../media/review-clu-app.png":::
 
-4. When the new app has been created, you will be taken to that app's **Schema definition** page:
+4. When the new app has been created, you'll be taken to that app's **Schema definition** page:
 
     :::image type="content" source="../media/apps-dashboard-page.png" alt-text="Screenshot of App's dashboard page." lightbox="../media/apps-dashboard-page.png":::
 
@@ -115,7 +115,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
 ## 3. Create example utterances
 
-1. On the left-hand sidebar, select the **Data labeling** button. On the **Data labeling** screen, select **PressButton** from the **Select intent** dropwdown:
+1. On the left-hand sidebar, select the **Data labeling** button. On the **Data labeling** screen, select **PressButton** from the **Select intent** drop-down:
     :::image type="content" source="../media/select-intent.png" alt-text="Screenshot of Data labeling page." lightbox="../media/select-intent.png":::
 
 2. To the **PressButton** intent's **Utterances** list, add the following example utterances:
@@ -131,7 +131,7 @@ Using the same user account you used when creating the Azure resource in the pre
     * time to reset the experience
     * go ahead and launch the rocket
 
-3. When you have added all the example utterances, your Data labelling page should look like this:
+3. When you have added all the example utterances, your Data labeling page should look like this:
 
     :::image type="content" source="../media/button-intent-page.png" alt-text="Screenshot of the updated Data labeling page." lightbox="../media/button-intent-page.png":::
 

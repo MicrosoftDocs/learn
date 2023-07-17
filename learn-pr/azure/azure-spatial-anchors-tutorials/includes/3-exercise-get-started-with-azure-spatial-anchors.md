@@ -12,7 +12,7 @@ As a result of completing the prerequisites for this learn module, you should al
 - **InternetClient**
 - **PrivateNetworkClientServer**
 
-When you're finished, close the **Project Settings** window and continue on with the steps below.
+When you're finished, close the **Project Settings** window and continue on with the next steps.
 
 ## Install built-in Unity packages and import the tutorial assets
 
@@ -67,33 +67,33 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 In this section, you'll add scripts to the scene to create a series of button events that demonstrate the fundamentals of how both local anchors and spatial anchors behave in an app.
 
 1. In the **Hierarchy** pane, expand the **ButtonParent** object and then select the first child object, **StartAzureSession**. 
-1. In the **Inspector** pane, navigate to the **Pressable Button** component. Note that it has an **On Clicked ()** event.
-1. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
-1. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
+1. In the **Inspector** pane, navigate to the **Pressable Button** component. It has an **On Clicked ()** event.
+1. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+1. Select the **No Function** drop-down and then select **AnchorModuleScript** > **StartAzureSession ()**. This function will be executed when the event is triggered.
 
     :::image type="content" source="../media/008-a-start-azure-session.png" alt-text="Screenshot that shows Unity with the StartAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **StopAzureSession**
 1. In the **Inspector** pane, navigate to the **Pressable Button** component.
-2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
-3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
+2. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+3. Select the **No Function** drop-down and then select **AnchorModuleScript** > **StopAzureSession ()**.
 
 
     :::image type="content" source="../media/009-stop-azure-session.png" alt-text="Screenshot of Unity with the StopAzureSession button's OnClick event configured." :::
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **CreateAzureAnchor**.
 1. In the **Inspector** pane, navigate to the **Pressable Button** component.
-2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
-3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor**.
-4. Click the **ParentAnchor** object again, and then drag it to the **Inspector** and drop it in the parameter of **AnchorModuleScript.CreateAzureAnchor**.
+2. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+3. Select the **No Function** drop-down and then select **AnchorModuleScript** > **CreateAzureAnchor**.
+4. Select the **ParentAnchor** object again, and then drag it to the **Inspector** and drop it in the parameter of **AnchorModuleScript.CreateAzureAnchor**.
 
     :::image type="content" source="../media/010-create-azure-anchor.png" alt-text="Screenshot of Unity with the CreateAzureAnchor button's OnClick event configured." :::
 
 4. In the **Hierarchy** pane in the **ButtonParent** child list, select **RemoveLocalAnchor**.
 5. In the **Inspector** pane, navigate to the **Pressable Button** component.
-6. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
-7. Click the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor**.
-8. Click the **ParentAnchor** object again, and then drag it to the **Inspector** and drop it in the parameter of **AnchorModuleScript.RemoveLocalAnchor**.
+6. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+7. Select the **No Function** drop-down and then select **AnchorModuleScript** > **RemoveLocalAnchor**.
+8. Select the **ParentAnchor** object again, and then drag it to the **Inspector** and drop it in the parameter of **AnchorModuleScript.RemoveLocalAnchor**.
 
 
     :::image type="content" source="../media/011-remove-local-anchor.png" alt-text="Screenshot of Unity with the RemoveLocalAnchor button's OnClick event configured." :::
@@ -101,15 +101,15 @@ In this section, you'll add scripts to the scene to create a series of button ev
 
 1. In the **Hierarchy** pane in the **ButtonParent** child list, select **FindAzureAnchor**.
 1. In the **Inspector** pane, navigate to the **Pressable Button** component.
-2. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
-3. Click the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor**.
+2. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+3. Select the **No Function** drop-down and then select **AnchorModuleScript** > **FindAzureAnchor**.
 
      :::image type="content" source="../media/012-find-azure-anchor.png" alt-text="Screenshot of Unity with the FindAzureAnchor button's OnClick event configured." :::
 
 4. In the **Hierarchy** pane in the **ButtonParent** child list, select **DeleteAzureAnchor**.
 5. In the **Inspector** pane, navigate to the **Pressable Button** component.
-6. In the **Hierarchy**, click the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
-7. Click the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor**.
+6. In the **Hierarchy**, select the **ParentAnchor** object, and then drag it to the **Inspector** and drop it in the **On Clicked()** event's **None (Object)** field.
+7. Select the **No Function** drop-down and then select **AnchorModuleScript** > **DeleteAzureAnchor**.
 
     :::image type="content" source="../media/013-delete-azure-anchor.png" alt-text="Screenshot of Unity with the DeleteAzureAnchor button's OnClick event configured." :::
 

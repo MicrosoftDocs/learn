@@ -11,7 +11,7 @@ for faster testing.
 
 In the menu bar, select **File** > **Build Settings**.
 
-1. In the Build Settings window, select PC, Mac & Linux Standalone Platform and click the Switch Platform button to change the Build Platform:
+1. In the Build Settings window, select PC, Mac & Linux Standalone Platform and select the Switch Platform button to change the Build Platform:
 
     :::image type="content" source="../../media/switch-build-platform.png" alt-text="Screenshot of Switching Build Platform." lightbox="../../media/switch-build-platform.png":::
 
@@ -35,11 +35,11 @@ In the menu bar, select **File** > **Build Settings**.
 
 In the menu bar, select **File** > **Build Settings**.
 
-1. Click **Add Open Scenes** to add your current scene to the Scenes list in the Build Settings window. Then, in the Build list, click the **Build** button:
+1. Select **Add Open Scenes** to add your current scene to the Scenes list in the Build Settings window. Then, in the Build list, select the **Build** button:
 
     :::image type="content" source="../../media/add-open-scene.png" alt-text="Screenshot of Add Open Scenes." lightbox="../../media/add-open-scene.png":::
 
-2. Choose a suitable location to store your build--for example, Documents\MixedRealityLearning. Create a new folder and give it a proper name--for example, PCHolographicRemoting--and then click the **Select Folder** button to start the build process:
+2. Choose a suitable location to store your build--for example, Documents\MixedRealityLearning. Create a new folder and give it a proper name--for example, PCHolographicRemoting--and then select the **Select Folder** button to start the build process:
 
     :::image type="content" source="../../media/select-folder.png" alt-text="Screenshot of Select Folder." lightbox="../../media/select-folder.png":::
 

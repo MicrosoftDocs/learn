@@ -10,11 +10,11 @@ With Azure Custom Vision (part of the Azure Cognitive Services) you can associat
 
 ## Azure Spatial Anchors
 
-Azure Spatial Anchors is a managed cloud service and platform that enables multi-user, spatially-aware mixed reality and augmented reality (MR/AR) apps for HoloLens, iOS devices with ARKit, and Android devices with ARCore.
+Azure Spatial Anchors is a managed cloud service and platform that enables multi-user, spatially aware mixed reality and augmented reality (MR/AR) apps for HoloLens, iOS devices with ARKit, and Android devices with ARCore.
 
 ## InternetClient
 
-Apps can receive incoming data from the Internet. InternetClient cannot act as a server and has no local network access.
+Apps can receive incoming data from the Internet. InternetClient can't act as a server and has no local network access.
 
 ## Microphone
 
@@ -22,11 +22,11 @@ Accesses the microphone’s audio feed, which allows the app to record audio fro
 
 ## SpatialPerception
 
-Provides programmatic access to spatial mapping data, giving mixed-reality apps information about surfaces in application-specified regions of space near the user. Declare the spatial perception capability only when your app will explicitly use these surface meshes, as the capability is not required for mixed-reality apps to perform holographic rendering based on the user’s head pose.
+Provides programmatic access to spatial mapping data, giving mixed-reality apps information about surfaces in application-specified regions of space near the user. Declare the spatial perception capability only when your app explicitly uses these surface meshes, as the capability isn't required for mixed-reality apps to perform holographic rendering based on the user’s head pose.
 
 ## InternetClientServer
 
-Apps can receive incoming data from the Internet. InternetClientServer cannot act as a server, has no local network access, and enables peer-to-peer (P2P) scenarios where the app needs to listen for incoming network connections.
+Apps can receive incoming data from the Internet. InternetClientServer can't act as a server, has no local network access, and enables peer-to-peer (P2P) scenarios where the app needs to listen for incoming network connections.
 
 ## PrivateNetworkClientServer
 

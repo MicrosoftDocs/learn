@@ -10,7 +10,7 @@ Conversational language understanding (CLU) is a cloud-based conversational AI s
 
 ## Intents
 
-An intent represents a task or an action the user wants to do. It is a purpose or goal expressed in a user's utterance.
+An intent represents a task or an action the user wants to do. It's a purpose or goal expressed in a user's utterance.
 
 ## Entities
 

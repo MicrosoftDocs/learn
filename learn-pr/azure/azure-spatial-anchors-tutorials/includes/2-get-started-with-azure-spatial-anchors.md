@@ -1,4 +1,4 @@
-Azure Spatial Anchors gives developers tools for creating spatially-aware mixed reality applications for HoloLens, iOS devices through ARKit, and Android devices through ARCore.
+Azure Spatial Anchors gives developers tools for creating spatially aware mixed reality applications for HoloLens, iOS devices through ARKit, and Android devices through ARCore.
 
 Developers can use Azure Spatial Anchors to understand spaces, mark specific places of interest, and remember those points of interest on compatible devices.
 

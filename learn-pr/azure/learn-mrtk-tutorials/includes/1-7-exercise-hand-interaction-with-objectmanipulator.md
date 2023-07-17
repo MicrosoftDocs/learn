@@ -6,7 +6,7 @@ The ObjectManipulator script supports the "direct manipulation" modality of the 
 
     :::image type="content" source="../media/027-add-cube.png" alt-text="Screenshot of menu commands for adding the cube.":::
 
-    The cube's default size is one square meter--this is too big for our purposes. We'll scale the size down to 20x20x20 cm.
+    The cube's default size is one square meter--this is too large for our purposes. We'll scale the size down to 20x20x20 cm.
 
 1. Select the cube, and then in the **Inspector**, change the cube's **Tranform/Scale** values to the following:
    
@@ -35,7 +35,6 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
 - A Collider component (You don't need to do anything here--Unity's cube already has a Box Collider attached by default)
 - Object Manipulator (Script) component
-- NearInteractionGrabbable (Script) component
 
 1. With the cube still selected, in the **Inspector** window, click the **Add Component** button, and then search for and select the **Object Manipulator** script.
 
@@ -59,7 +58,7 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     Rotation: X = 27, Y = 0, Z = 0
 
-    Now the camera should see Near cube on the left and Far Cube a little further away on the right. To confirm this, in the **Hierarchy**, select **Main Camera** and then look at the **Main Camera** window in the **Scene** window.
+    Now the camera should see Near cube on the left and Far Cube a little further away on the right. To confirm this, in the **Hierarchy**, select **Main Camera** (under **MRTK XR Rig** > **Camera Offset**) and then look at the **Main Camera** window in the **Scene** window.
 
     :::image type="content" source="../media/040-main-camera-view.png" alt-text="Screenshot of the Main Camera view in the Scene window.":::
 
@@ -206,4 +205,4 @@ Your PC is now paired with your HoloLens and you can deploy apps automatically. 
 
 - You can also deploy to the [HoloLens Emulator](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator) or create an [App Package](/windows/uwp/packaging/packaging-uwp-apps) for sideloading.
 
-- You may notice the Diagnostics profiler in the app. You can toggle it on or off by using the speech command **"Toggle Diagnostics"**. We recommend that you keep the profiler visible most of the time during development so you can understand how changes to the app might impact performance. For example, you can monitor your app to ensure that [the frame rate is at least 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).
+- You may notice the Diagnostics profiler in the app. You can toggle it on or off by using the speech command **"Toggle Diagnostics"**. We recommend that you keep the profiler visible most of the time during development so you can understand how changes to the app might affect performance. For example, you can monitor your app to ensure that [the frame rate is at least 60 FPS](/windows/mixed-reality/develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality).

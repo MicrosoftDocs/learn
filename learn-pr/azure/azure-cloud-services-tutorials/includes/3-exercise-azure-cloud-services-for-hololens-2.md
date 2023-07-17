@@ -1,11 +1,11 @@
-With each consecutive chapter, you will add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.
+With each consecutive chapter, you'll add new **Azure Cloud** services to expand the application features and user experience, while teaching you the fundamentals of each **Azure Cloud** service.
 
 > [!NOTE]
 > This module series will focus on the **HoloLens 2**, but due the cross-platform nature of Unity, most of these lessons will also apply for desktop and mobile applications.
 
 ## Application goals
 
-In this module series, you'll build a **HoloLens 2** application that can detect objects from images and find its spatial location. We will refer to these objects as **Tracked Objects**.
+In this module series, you'll build a **HoloLens 2** application that can detect objects from images and find its spatial location. We'll refer to these objects as **Tracked Objects**.
 
 The user can create a **Tracked Object** to associate a set of images via computer vision, a spatial location, or both. All data must be persisted into the cloud. Furthermore, some aspects of the application will be optionally controlled by a bot with natural language assistance.
 
@@ -29,7 +29,7 @@ With [Azure Custom Vision](https://azure.microsoft.com/services/cognitive-servic
 
 ### Azure Spatial Anchors
 
-To store a *Tracked Object* location and give a guided directions to find it, you'll use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
+To store a *Tracked Object* location and give guided directions to find it, you'll use [Azure Spatial Anchors](https://azure.microsoft.com/services/spatial-anchors/).
 
 ## Create and prepare the Unity project
 
@@ -46,7 +46,7 @@ First, follow the steps in [Initializing your project and first application](/tr
 
 ## Import the tutorial assets
 
-1) Add AzurespatialAnchors SDK to your project. To add the packages please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
+1) Add AzurespatialAnchors SDK to your project. To add the packages, please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
 
 2) Download and **import** the following Unity custom packages **in the order they are listed**:
 
@@ -59,7 +59,7 @@ First, follow the steps in [Initializing your project and first application](/tr
 
 ## Prepare the scene
 
-In this section, you will prepare the scene by adding some of the tutorial prefabs.
+In this section, you'll prepare the scene by adding some of the tutorial prefabs.
 
 1. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.AzureCloudServices** > **Prefabs** > **Manager** folder. While holding down the CTRL button, select **SceneController**, **RootMenu** and **DataManager** to select the three prefabs:
 
@@ -86,7 +86,7 @@ In this section, you will prepare the scene by adding some of the tutorial prefa
 
 ## Configuring the scene
 
-In this section, you will connect *SceneManager*, *DataManager*, and *RootMenu* together to have a working scene for the next Integrating Azure storage tutorial.
+In this section, you'll connect *SceneManager*, *DataManager*, and *RootMenu* together to have a working scene for the next Integrating Azure storage tutorial.
 
 ### Connect the objects
 
@@ -94,7 +94,7 @@ In this section, you will connect *SceneManager*, *DataManager*, and *RootMenu* 
 
     :::image type="content" source="../media/data-manager-object.png" alt-text="Screenshot of Unity with DataManager object selected." lightbox="../media/data-manager-object.png":::
 
-2. In the Inspector window, locate the **DataManager (Script)** component and you will see an empty slot on the **On Data Manager Ready ()** event. Drag the **SceneController** object from the Hierarchy window to the **On Data Manager Ready ()** event.
+2. In the Inspector window, locate the **DataManager (Script)** component and you'll see an empty slot on the **On Data Manager Ready ()** event. Drag the **SceneController** object from the Hierarchy window to the **On Data Manager Ready ()** event.
 
     :::image type="content" source="../media/data-manager-event-listener.png" alt-text="Screenshot of Unity with DataManager event listener added." lightbox="../media/data-manager-event-listener.png":::
 
@@ -119,7 +119,7 @@ In this section, you will connect *SceneManager*, *DataManager*, and *RootMenu* 
 
 While the project yet has to be filled with content, you still have some preparation before the project is ready to build on the **HoloLens 2**.
 
-### 1. Add additional required capabilities
+### 1. Add other required capabilities
 
 1. In the Unity menu, select **Edit** > **Project Settings...** to open the Project Settings window:
 
@@ -138,7 +138,7 @@ While the project yet has to be filled with content, you still have some prepara
 > [!Note]
 > Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
 
-You won't be able to run all the features that you will use in this tutorial series inside the Unity editor. Therefore, you need to be familiar with deploying the application to your HoloLens 2 device.
+You won't be able to run all the features that you'll use in this tutorial series inside the Unity editor. Therefore, you need to be familiar with deploying the application to your HoloLens 2 device.
 
 > [!TIP]
 > For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Getting started tutorials - Build your application to your device](/training/modules/learn-mrtk-tutorials/1-7-exercise-hand-interaction-with-objectmanipulator?ns-enrollment-type=LearningPath&ns-enrollment-id=learn.azure.beginner-hololens-2-tutorials/) instructions.

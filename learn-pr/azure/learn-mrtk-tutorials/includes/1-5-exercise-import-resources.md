@@ -13,7 +13,7 @@ To import the Mixed Reality Toolkit into your project we'll use the Mixed Realit
 
 ## Create the scene and configure MRTK
 
-1. In the menu bar, select **File** > **New Scene**.
+1. In the menu bar, select **File** > **New Scene**. Select the Basic (Built-in) option, then **Create**. 
 
 1. In the Project window, navigate to the **Packages** > **MRTK Input** > **Assets** > **Prefabs**  folder. Drag the prefab **MRTK XR Rig** into the scene Hierarchy.
      :::image type="content" source="../media/mrtk-xr-rig-prefab.png" alt-text="Screenshot of the adding MRTK XR Rig in the Inspector.":::

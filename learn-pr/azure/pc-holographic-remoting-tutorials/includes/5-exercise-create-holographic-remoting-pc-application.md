@@ -33,7 +33,7 @@ To connect your PC application to your HoloLens 2, do the following:
 1. Start the **Holographic Remoting Player** on your HoloLens.
 2. Take note of the HoloLens **IP address**. It will be displayed as a hologram by the **Holographic Remoting Player** as soon as it launches.
 3. Open the Holographic Remoting PC application on your PC.
-4. Once the application is launched, enter the **IP address** and click the **Connect** button to connect.
+4. Once the application is launched, enter the **IP address** and select the **Connect** button to connect.
 
 ## Holographic Remoting For Play Mode
 
@@ -47,7 +47,7 @@ After enabling this you will most likely get a Project Validation error:
 
 :::image type="content" source="../media/remote-host-error.png" alt-text="Screenshot of remote host validation error." lightbox="../media/remote-host-error.png":::
 
-This is because the IP address of your Hololens must be set before playing. This is done with the menu
+This is because the IP address of your HoloLens must be set before playing. This is done with the menu
 **Mixed Reality > Remoting > Holographic Remoting for Play Mode**.
  Enter the IP address shown in the **Holographic Remoting Player** into the "Remote Host Name" field.
 
