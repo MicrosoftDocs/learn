@@ -37,7 +37,7 @@ For single sign-on to work, you must establish a linked relationship between an 
      - **/sap/bc/webdynpro/sap/saml2**
      - **/sap/bc/webdynpro/sap/sec\_diag\_tool** (This is only to enable / disable trace)
 4. Go to transaction code SAML2 in Business Client for SAP system \[T01/122\]. The configuration UI opens in a new browser window. Enter your username and password, and then select **Log on**.
-5. In the **Provider Name** box, replace **T01122** with **<http://T01122>**, and then select **Save**.
+5. In the **Provider Name** box, replace **T01122** with ``` <http://T01122> ```, and then select **Save**.
 
     > [!NOTE]
     > By default, the provider name is in the format **\_sid-client\_**. Azure AD expects the name in the format **protocol://name**. We recommend that you maintain the provider name as **https:// \_sid-client\_** so you can configure multiple SAP Fiori ABAP engines in Azure AD.
