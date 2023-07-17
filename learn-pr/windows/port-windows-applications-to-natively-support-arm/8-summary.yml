@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Overview of knowledge gained on the topic of adding Arm support to Windows applications."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 1
+content: |
+  [!include[](includes/8-summary.md)]

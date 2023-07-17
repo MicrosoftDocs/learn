@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.learn-windows-on-arm.introduction-to-windows-applications-on-arm
+title: Arm64 native vs x86 emulation for Windows on Arm
+metadata:
+  title: Arm64 native vs x86 emulation for Windows on Arm
+  description: "Learn about how Windows on Arm emulation support for apps running on x86 and x64 and improvements available by updating to a native Arm64 build."
+  ms.date: 5/6/2023
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+durationInMinutes: 2
+content: |
+  [!include[](includes/2-introduction-to-windows-applications-on-arm.md)]

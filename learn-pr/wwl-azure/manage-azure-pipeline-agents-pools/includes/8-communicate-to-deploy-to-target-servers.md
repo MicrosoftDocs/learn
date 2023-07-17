@@ -1,4 +1,3 @@
-
 When you use the agent to deploy artifacts to a set of servers, it must-have "line of sight" connectivity to those servers.
 
 The Microsoft-hosted agent pools, by default, have connectivity to Azure websites and servers running in Azure.

@@ -59,9 +59,9 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
     1. Set RESOURCEGROUP to sandbox resource group
 
     1. Set LOCATION as LOCATION=$(az group show --name $RESOURCEGROUP | jq -r '.location')
-    
+
     1. Set ACCOUNT to an account name
-    
+
     1. Create the account:
 
        ```dotnetcli
@@ -95,7 +95,7 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
 
     1. Explain the difference between TEXT and SSML
 
-    1. Get the list of languages from <https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#neural-voices>
+    1. Get the list of languages from <https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/language-support#neural-voices>
 
 1. **Exercise - Create a text to speech application using a text file**
 
@@ -146,9 +146,9 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
 
     1. Explain basic SSML
 
-    1. See [Improve synthesis with Speech Synthesis Markup Language (SSML)](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup)
+    1. See [Improve synthesis with Speech Synthesis Markup Language (SSML)](https://learn.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup)
 
-    1. See [Speech service phonetic sets](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets)
+    1. See [Speech service phonetic sets](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets)
 
 1. **Exercise - Create a text to speech application using a SSML file**
 
@@ -164,14 +164,14 @@ Identify the subtasks of *Create your first Azure Cognitive Services Text to spe
 
 ## Notes
 
-- [Introduction to text to speech](https://docs.microsoft.com/learn/modules/intro-to-text-to-speech/)
+- [Introduction to text to speech](https://learn.microsoft.com/learn/modules/intro-to-text-to-speech/)
 
-- [Quickstart: Create a Cognitive Services resource using the Azure Command-Line Interface (CLI)](https://docs.microsoft.com/cognitive-services/cognitive-services-apis-create-account-cli)
+- [Quickstart: Create a Cognitive Services resource using the Azure Command-Line Interface (CLI)](https://learn.microsoft.com/cognitive-services/cognitive-services-apis-create-account-cli)
 
-- [Get started with text to speech](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started-text-to-speech)
+- [Get started with text to speech](https://learn.microsoft.com/azure/cognitive-services/speech-service/get-started-text-to-speech)
 
-- [Language and voice support for the Speech service](https://docs.microsoft.com/azure/cognitive-services/speech-service/language-support)
+- [Language and voice support for the Speech service](https://learn.microsoft.com/azure/cognitive-services/speech-service/language-support)
 
-- [Improve synthesis with Speech Synthesis Markup Language (SSML)](https://docs.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup)
+- [Improve synthesis with Speech Synthesis Markup Language (SSML)](https://learn.microsoft.com/azure/cognitive-services/speech-service/speech-synthesis-markup)
 
-- [Speech service phonetic sets](https://docs.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets)
+- [Speech service phonetic sets](https://learn.microsoft.com/en-us/azure/cognitive-services/speech-service/speech-ssml-phonetic-sets)
