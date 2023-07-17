@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-to-azure-developer-cli.summary
+uid: learn.azure.build-first-azure-developer-cli-template.summary
 title: Summary
 metadata:
   unitType: summary
   title: Summary
-  description: Summary unit for the Introduction to Azure Developer CLI module
-  ms.date: 11/01/2022
+  description: Summary unit for the Build Your first Azure Developer CLI Template module
+  ms.date: 07/17/2023
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: interactive-tutorial
@@ -13,4 +13,4 @@ metadata:
   ms.custom: engagement-fy23
 durationInMinutes: 2
 content: |
-  [!include[](includes/6-summary.md)]
+  [!include[](includes/9-summary.md)]

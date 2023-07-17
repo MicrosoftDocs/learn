@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.introduction-to-azure-developer-cli.knowledge-check
+uid: learn.azure.build-first-azure-developer-cli-template.knowledge-check
 title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: Check your knowledge of the Azure Developer CLI
-  ms.date: 11/01/2022
+  description: Check your knowledge of Azure Developer CLI templates
+  ms.date: 07/17/2023
   author: alexwolfmsft
   ms.author: alexwolf
   ms.topic: interactive-tutorial
@@ -15,20 +15,34 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "What technology does `azd` use to provision Azure resources?"
+  - content: "Which `azd` command can be used to create a new starter template?"
     choices:
-    - content: "Azure PowerShell"
+    - content: "azd template"
       isCorrect: false
-      explanation: "Incorrect. The Azure Developer CLI does not use PowerShell to provision Azure resources."
-    - content: "Azure CLI"
+      explanation: "Incorrect. The `azd template` command does not exist."
+    - content: "azd new"
       isCorrect: false
-      explanation: "Incorrect. The Azure CLI is a separate administrative tool that is not used by the Azure Developer CLI."
-    - content: "The Azure SDK"
+      explanation: "Incorrect. The `azd new` command does not exist."
+    - content: "azd up"
       isCorrect: false
-      explanation: "Incorrect. The Azure SDK is a set of libraries that you can use to write code that interacts with Azure resources."
-    - content: "Infrastructure as Code (e.g. Bicep, Terraform)"
+      explanation: "Incorrect. The `azd up` command is used to provision and deploy templates."
+    - content: "azd init"
       isCorrect: true
-      explanation: "Correct. `azd` relies on Bicep templates to create resources in Azure."
+      explanation: "Correct. `azd init` provides several different options for initializing new templates."
+  - content: "What is the purpose of the .azure folder in an `azd` template?"
+    choices:
+    - content: "It holds Azure environment configuration files for the template."
+      isCorrect: true
+      explanation: "Correct. The `.azure` folder stores various default configurations for your template's Azure environment."
+    - content: "It contains the Azure Pipelines CI/Cd workflow files."
+      isCorrect: false
+      explanation: "Incorrect. Azure Pipelines files are stored in the `.azdo` folder."
+    - content: "It contains the Bicep files used to provision Azure resources."
+      isCorrect: false
+      explanation: "Incorrect. Infrastructure as code files are stored in the `infra` folder."
+    - content: "It contains the `azure.yaml` service mapping file."
+      isCorrect: false
+      explanation: "Incorrect. The `azure.yaml` file lives at the root of the template."
   - content: "What is the purpose of the `azure.yaml` file?"
     choices:
     - content: "Defines the CI/CD pipeline for your `azd` template."
@@ -43,20 +57,6 @@ quiz:
     - content: "Defines the infrastructure as code templates that will create resources in Azure."
       isCorrect: false
       explanation: "Incorrect. Infrastructure as code templates are defined in the template's Bicep files."
-  - content: "What happens when you run the `azd up` command?"
-    choices:
-    - content: "The application is packaged and the necessary resources are provisioned and deployed to Azure."
-      isCorrect: true
-      explanation: "Correct. The `azd up` command is the most common workflow for packaging, provisioning, and deploying resources to Azure."
-    - content: "The specified `azd` template is cloned from GitHub."
-      isCorrect: false
-      explanation: "Incorrect. The `azd init` command clones and initializes the specified template using the `-template` parameter."
-    - content: "The CI/CD pipeline of the specified `azd` template is executed."
-      isCorrect: false
-      explanation: "Incorrect. To execute the CI/CD pipeline, you must run the `azd pipeline` command."
-    - content: "Monitoring resources are configured to provide live metrics for the app."
-      isCorrect: false
-      explanation: "Incorrect. To configure monitoring, you must run the `azd monitor` command."
   - content: "Which is the purpose of the `infra` folder in an `azd` template?"
     choices:
     - content: "It stores the CI/CD pipeline definitions for the template."

@@ -14,10 +14,16 @@ The Azure Developer CLI (`azd`) is designed to provision and deploy resources to
     cd src
     ```
 
+1. Create a new directory called *webapp*. Sub-folders inside of the `src` directory allow your template to logically group the different parts of your app, such as the frontend and backend services of a web app. The sample web app for this module will only have one code base in a single directory.
+
+    ```bash
+    mkdir web
+    ```
+
 1. Create a new web app using the `dotnet new` command:
     
     ```csharp
     dotnet new webapp
     ```
 
-You should see the app source code populate in your `src` directory either in the file explorer or in your editor. `azd` will deploy this app to Azure after you complete some additional configurations.
+You should see the app source code populate in your `web` directory either in the file explorer or in your editor. `azd` can deploy the app to Azure after you complete some additional configurations.

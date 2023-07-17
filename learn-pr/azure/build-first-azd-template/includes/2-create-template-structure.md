@@ -1,4 +1,4 @@
-The Azure Developer CLI (`azd`) can assist you with building new templates for your apps through the use of the `azd init` command and preexisting starter templates.
+The Azure Developer CLI (`azd`) can assist you with building new templates for your apps through the use of the `azd init` command and starter templates. In this unit, you'll create the basic scaffolding or structure of a new template that you will build on for the rest of the module. As mentioned in the prerequisites, make sure you have [installed the Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows) in order to follow along.
 
 1. In an empty directory on your local machine, run the `azd init` command.
 
@@ -6,16 +6,21 @@ The Azure Developer CLI (`azd`) can assist you with building new templates for y
 azd init
 ```
 
-1. `azd` will display a list of starter template options. Some of the templates include example source code and infrastructure files, while others only provide the basic structure of a template and certain essential files. For this module you'll learn to build your own template rather than relying on existing app code, so choose the **starter template** option from the list.
+1. The command output displays a list of starter template options. Some of the templates include example source code and infrastructure files, while others only provide the basic structure of a template and certain essential files. For this module you'll learn to build your own template rather than relying on existing app code, so choose the **Starter - Bicep** option from the list. The Azure Developer CLI also supports Terraform if you prefer that option.
+
+1. When prompted for an environment name, enter *azdlearn* or a name of your choosing. The environment name influences the naming of provisioned resources in Azure.
 
 1. A set of folders will be created inside of the current directory that should resemble the following:
 
-<image>
+:::image type="content" source="../media/template-structure.png" alt-text="The starter template structure.":::
+
+> [!NOTE]
+> You may have noticed the `azd init` command also provides a project template called **Minimal**, which contains the simplest possible template structure. However, the **Starter - Bicep** template you selected includes additional scaffolding code that is very useful but still technology agnostic, so it's often a great choice for getting started.
 
 The generated folders provide all of the essential building blocks of an `azd` template:
 
 * **.azdo** - A folder containing the starter `.yml` configuration files for CI/CD with Azure Pipelines.
-* **.azure** - A folder containing essential settings for the template's Azure environment.
+* **.azure** - A folder containing essential settings for the template's Azure environment, such as the environment name.
 * **.devcontainer** - A folder containing configuration files used to run the template in a dev container environment.
 * **.github** - A folder containing a starter `.yml` configuration template to setup a CI/CD pipeline through GitHub actions.
 * **infra** - A folder containing starter Bicep files for the template's infrastructure as code. If you selected the Terraform starter template, this folder will contain Terraform files instead.
