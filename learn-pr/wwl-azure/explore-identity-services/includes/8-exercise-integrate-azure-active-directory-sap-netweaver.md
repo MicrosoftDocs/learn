@@ -102,4 +102,4 @@ In the Azure portal, select **Enterprise Applications**, select **All applicatio
 ### Create SAP NetWeaver users
 
 1. To enable Azure AD users to sign in to SAP NetWeaver, you must provision them in SAP NetWeaver. Work with your in-house SAP expert team or your organization SAP partner to add the users in the SAP NetWeaver platform.
-2. To verify the outcome, after the identity provider Azure AD was activated, access **<https://sapurl/sap/bc/bsp/sap/it00/default.htm>** (replace **`sapurl`** with actual SAP hostname) to check SSO. There should be no prompt for username and password.
+2. To verify the outcome, after the identity provider Azure AD was activated, access ``` <https://sapurl/sap/bc/bsp/sap/it00/default.htm> ``` (replace **`sapurl`** with actual SAP hostname) to check SSO. There should be no prompt for username and password.
