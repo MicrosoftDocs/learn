@@ -52,7 +52,7 @@ modules:
   - learn.wwl.configure-secure-access-pipeline-resources
   - learn.wwl.configure-validate-permissions
   - learn.wwl.extend-pipeline-use-multiple-templates
-  - learn.wwl.configure-secure-access-azure-repos-pipelines
+  - learn.wwl.configure-secure-access-azure-repos-from-pipelines
   - learn.wwl.configure-pipelines-securely-use-variables-parameters
 trophy:
   uid: learn.wwl.implement-security-through-pipeline-using-devops.trophy
