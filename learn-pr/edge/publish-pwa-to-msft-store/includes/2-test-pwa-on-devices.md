@@ -15,9 +15,8 @@ Use various browsers (Chrome, Microsoft Edge, Firefox, Safari) and devices (desk
 When testing a PWA that primarily targets the Windows platform, pay special attention to the following:
 
 - **Microsoft Edge**: Ensure that your PWA works seamlessly on the Microsoft Edge browser, as it's the default browser for Windows devices.
-- **Windows features**: Test your app's integration with Windows-specific features such as Live Tiles, Taskbar icons, and Start menu integration.
+- **Windows features**: Test your app's integration with Windows-specific features such as taskbar icons and window controls overlay.
 - **Installation experience**: Verify that the installation process works smoothly on Windows devices, providing users with a seamless app-like experience.
 - **Responsiveness**: Check if your app's layout and design adapt well to different screen sizes and resolutions, especially when used on various Windows devices.
 - **Performance**: Test your app's performance on a range of devices with different hardware specifications to ensure that it provides a consistent user experience.
 - **Offline capabilities**: Test your app's offline functionality and caching mechanisms to make sure it works reliably under different network conditions.
-

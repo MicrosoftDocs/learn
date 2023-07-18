@@ -44,21 +44,7 @@ Before you can submit your PWA to the Microsoft Store, you need to create the pr
 
 ## Submit request to publish PWA
 
-After you package your PWA, use the Microsoft Partner Center to submit it for publishing to the Microsoft Store.
-
-### Create Microsoft partner account
-
-You need to have a partner account to submit your PWA through the [Microsoft Partner Center](https://partner.microsoft.com/). If you already have an account, sign in and continue to the next section in this unit, Submit PWA.
-
-If you don't have an account, complete the following steps to create one.
-
-1. Navigate to the [Microsoft Partner Center](https://partner.microsoft.com/). Select **Become a partner** to create a free account and share basic information about your organization and its business goals.
-1. Enter your essential business information, such as your organization's address and legal point of contact. Depending on your country, you may also need to share your business registration number.
-1. Microsoft verifies email ownership, employment, and business details via email.  You will receive time-sensitive instructions in your business email to confirm your credentials and unlock your membership.
-
-### Submit PWA
-
-Submitting your PWA through the Partner Center is the final step to make your application accessible to users via the Microsoft Store. This process involves uploading your packaged PWA and providing the necessary details about your app. Once you submit you PWA and it's approved, it's available for users to download and install directly from the Store to  increase your application's visibility and reach.
+The final step to make your application accessible to users via the Microsoft Store is to submit your PWA through the Partner Center. This process involves uploading your packaged PWA and providing the necessary details about your app. Once you submit you PWA and it's approved, it's available for users to download and install directly from the Store to  increase your application's visibility and reach.
 
 Refer to the following steps to submit your PWA through Partner Center:
 
