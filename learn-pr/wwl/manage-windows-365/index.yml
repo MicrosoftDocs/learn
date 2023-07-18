@@ -3,11 +3,10 @@ uid: learn.wwl.manage-windows-365
 metadata:
   title: MD-102 4-Manage Windows 365
   description: "This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment."
-  ms.date: 05/12/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage Windows 365
 summary: This module teaches managing Microsoft's cloud-based PC management solution, Windows 365, offering personalized, secure Windows 11 experience from any device. Learn features, setup, management, security, deployment options, and licensing to optimize your environment.
 abstract: |

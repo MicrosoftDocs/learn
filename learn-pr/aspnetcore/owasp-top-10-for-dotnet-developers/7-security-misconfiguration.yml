@@ -8,6 +8,7 @@ metadata:
   author: obrocki
   ms.author: dawidobrocki
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
   ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
 durationInMinutes: 3
 content: |
