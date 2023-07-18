@@ -3,8 +3,8 @@ uid: learn.tensorflow.intro-machine-learning-keras.neural-network
 title: Neural network architecture
 metadata:
   title: Neural network architecture
-  description: Learn how to create a neural network
-  ms.date: 07/07/2021
+  description: Learn how to create a neural network using Keras and TensorFlow.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial

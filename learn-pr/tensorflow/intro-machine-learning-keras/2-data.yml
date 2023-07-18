@@ -3,8 +3,8 @@ uid: learn.tensorflow.intro-machine-learning-keras.data
 title: Data
 metadata:
   title: Data
-  description: Learn how to get your data ready to be used by a neural network
-  ms.date: 07/07/2021
+  description: Learn how to get your data ready for use by a neural network.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
