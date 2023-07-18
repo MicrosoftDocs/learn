@@ -75,7 +75,7 @@ Next, let's deploy and run the microservice.
     kubectl get pods
     ```
 
-    In the resulting output, you'll have a row with **pizzabackend** followed by a string of random characters under the **NAME** column. When everything is ready, there'll be a **1/1** under the **READY** column and **Running** under the **STATUS** column.
+    In the resulting output, you'll have a row with **pizzabackend** followed by a string of random characters under the **NAME** column. When everything is ready, there will be a **1/1** under the **READY** column and **Running** under the **STATUS** column.
 
 1. Browse to `http://localhost/pizzainfo`, which returns an HTTP 404 Not Found message. This error is because the pizza backend service isn't accessible from the outside world.
 
