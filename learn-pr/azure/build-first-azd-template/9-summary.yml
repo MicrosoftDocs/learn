@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.build-first-azure-developer-cli-template.summary
-title: Summary
+title: Summary and clean up
 metadata:
   unitType: summary
-  title: Summary
+  title: Summary and clean up
   description: Summary unit for the Build Your first Azure Developer CLI Template module
   ms.date: 07/17/2023
   author: alexwolfmsft

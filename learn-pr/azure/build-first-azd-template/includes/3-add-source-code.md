@@ -14,7 +14,7 @@ The Azure Developer CLI (`azd`) is designed to provision and deploy resources to
     cd src
     ```
 
-1. Create a new directory called *webapp*. Subfolders inside of the `src` directory allow your template to logically group the different parts of your app, such as the frontend and backend services of a web app. The sample web app for this module will only have one code base in a single directory.
+1. Create a new directory called *web*. Subfolders inside of the `src` directory allow your template to logically group the different parts of your app, such as the frontend and backend services of a web app. The sample web app for this module will only have one code base in a single directory.
 
     ```bash
     mkdir web

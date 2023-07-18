@@ -1,10 +1,10 @@
-The Azure Developer CLI (`azd`) can assist you with building new templates for your apps by using the `azd init` command and starter templates. In this unit, you'll create the basic scaffolding or structure of a new template that you'll build on for the rest of the module. As mentioned in the prerequisites, make sure you have [installed the Azure Developer CLI](/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows) in order to follow along.
+The Azure Developer CLI (`azd`) assists you with building new templates for your apps using the `azd init` command and starter templates. In this unit, you'll create the basic scaffolding or structure of a new template that you'll build on for the rest of the module.
 
 1. In an empty directory on your local machine, run the `azd init` command.
 
-```bash
-azd init
-```
+    ```bash
+    azd init
+    ```
 
 1. The command output displays a list of starter template options. Some of the templates include example source code and infrastructure files, while others only provide the basic structure of a template and certain essential files. For this module, you'll learn to build your own template rather than relying on existing app code, so choose the **Starter - Bicep** option from the list. The Azure Developer CLI also supports Terraform if you prefer that option.
 
@@ -12,8 +12,8 @@ azd init
 
 1. A set of folders is created inside of the current directory:
 
-:::image type="content" source="../media/template-structure.png" alt-text="The starter template structure.":::
-
+    :::image type="content" source="../media/template-structure.png" alt-text="The starter template structure.":::
+    
 > [!NOTE]
 > You may have noticed the `azd init` command also provides a project template called **Minimal**, which contains the simplest possible template structure. However, the **Starter - Bicep** template you selected includes additional scaffolding code that is very useful but still technology agnostic, so it's often a great choice for getting started.
 

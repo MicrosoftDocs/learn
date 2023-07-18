@@ -15,9 +15,9 @@ Your template includes the source code for your app and defines Bicep files to c
     Each line of code in this example schema describes a different aspect of the services in your app:
 
     * **services** - Every `azure.yaml` file defines one top level `services` node that lists one or more services in your template.
-    * **web** - This value is a name of your choosing that maps to a service in your app code, such as `api` or `worker`. However, this name must match the value of the `azd-service-name` tag you assigned to the resource in your Bicep or Terraform code. For example, this service has a value of `web` because the App Service definition in the `app.bicep` file specified `tags: { 'azd-service-name': 'web' }`. This tag naming association is how `azd` understands which Azure resource the specified code directory should be deployed to.
+    * **web** - A name of your choosing that maps to a service in your app code, such as `api` or `worker`. However, this name must match the value of the `azd-service-name` tag you assigned to the resource in your Bicep or Terraform code. For example, this service has a value of `web` because the App Service definition in the `app.bicep` file specified `tags: { 'azd-service-name': 'web' }`. This tag naming association is how `azd` understands which Azure resource the specified code directory should be deployed to.
     * **language** - A property that specifies the language of the code you want to deploy. `azd` currently supports language values of `csharp`, `python`, `javascript` and `java`.
-    * **project** - A property that defines the directory where the app code for the service is stored.
+    * **project** - A property that sets the path to where the code for the service is stored.
     * **host** - A property that defines what type of Azure service the app deploys to.
 
     > [!NOTE]
