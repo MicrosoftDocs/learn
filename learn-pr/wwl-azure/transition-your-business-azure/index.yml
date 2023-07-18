@@ -3,7 +3,7 @@ uid: learn.wwl.transition-your-business-azure
 metadata:
   title: Transition your business to Azure
   description: "This module introduces various decisions that business decision makers can anticipate when considering a transition to Azure."
-  ms.date: 07/06/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -18,7 +18,7 @@ abstract: |
   - Look ahead to the technical and organizational considerations you will encounter when planning a cloud transition.
 prerequisites: |
   None
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/transition-your-business-azure.svg
 levels:
 - beginner
 roles:

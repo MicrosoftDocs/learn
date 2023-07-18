@@ -13,7 +13,7 @@ metadata:
 prerequisites: |
   - An Azure account with an [active subscription](https://azure.microsoft.com/free).
   - Familiarity with Azure virtual machines, Azure Arc, networking, and Kubernetes and its concepts.
-  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://docs.microsoft.com/learn/modules/aks-deploy-container-app/).  
+  -	A deployed Azure Kubernetes Service cluster with a containerized application. If you don’t already have an AKS cluster to monitor, complete the Learn module [Deploy a containerized application on Azure Kubernetes Service](https://learn.microsoft.com/learn/modules/aks-deploy-container-app/).
 iconUrl: /training/achievements/generic-trophy.svg
 levels:
 - beginner
@@ -23,7 +23,7 @@ roles:
 - devops-engineer
 - security-engineer
 - solution-architect
-- technology-manager 
+- technology-manager
 products:
 - azure
 - azure-arc

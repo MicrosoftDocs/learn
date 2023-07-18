@@ -21,6 +21,7 @@ abstract: |
   - Connect your agent to a pipeline and build your application
 prerequisites: |
   - An Azure DevOps organization
+  - An Azure subscription
   - Visual Studio Code
   - .NET 6.0 SDK
   - Git

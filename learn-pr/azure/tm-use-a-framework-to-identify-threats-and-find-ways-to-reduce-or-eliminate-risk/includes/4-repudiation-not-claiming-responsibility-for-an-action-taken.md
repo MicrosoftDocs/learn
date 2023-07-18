@@ -2,12 +2,12 @@
 
 Examples include:
 
-- Denying the modification of logs containing sensitive actions
-- Using someone else's account to avoid getting caught
-- Claiming not to have deleted database records
+- Denying the modification of logs containing sensitive actions.
+- Using someone else's account to avoid getting caught.
+- Claiming not to have deleted database records.
 
 > [!NOTE]
-> System logs are a goldmine for an attacker, not just to manipulate, but also gather data about users, environment, and weaknesses.
+> System logs are a goldmine for an attacker, not just to manipulate, but also to gather data about users, environment, and weaknesses.
 
 ## Elements and interactions at risk from repudiation attacks
 

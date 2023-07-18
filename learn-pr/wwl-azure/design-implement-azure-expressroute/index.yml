@@ -3,10 +3,12 @@ uid: learn.wwl.design-implement-azure-expressroute
 metadata:
   title: Design and implement Azure ExpressRoute
   description: "You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath."
-  ms.date: 06/13/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
+  ms.custom:
+  - N/A
 title: Design and implement Azure ExpressRoute
 summary: You learn how to design and implement Azure ExpressRoute, ExpressRoute Global Reach, ExpressRoute FastPath.
 abstract: |
