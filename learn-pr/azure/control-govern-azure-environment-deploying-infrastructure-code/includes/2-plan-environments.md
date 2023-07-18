@@ -39,7 +39,7 @@ Your development team has its own sets of environments, too. It has *sandboxes* 
 
 ### Controlled environments
 
-In some of these environments, it makes sense to require a formal process to review and apply changes. These are *controlled environments*. The production environment should always be controlled. It's a good practice to apply controls to some of the nonproduction environments, too. In this way, you can ensure that any restrictions that the controls impose are well understood and tested before the production deployment.
+In some of these environments, it makes sense to require a formal process to review and apply changes. Environments of this type are called *controlled environments*. The production environment should always be controlled. It's a good practice to apply controls to some of the nonproduction environments, too. In this way, you can ensure that any restrictions that the controls impose are well understood and tested before the production deployment.
 
 In contrast, *uncontrolled environments* don't have many, or any, formal controls. They might have the same code and similar configuration to your other environments, but they allow for more experimentation and ad-hoc configuration changes. In an uncontrolled environment, users might be allowed to modify the configuration by using the Azure portal or by directly running Azure CLI/Azure PowerShell commands. They might also be able to create resources without using the organization's approved process. Changes made in uncontrolled environments must be captured in code before they can start to be applied to controlled environments like the production environment.
 
