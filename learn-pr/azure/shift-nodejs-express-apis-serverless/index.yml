@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions
 metadata:
   title: Refactor Node.js Express APIs into serverless Azure Functions APIs
   description: Improve availability and scalability by refactoring existing Node.js Express APIs into Azure Functions serverless APIs.
-  ms.date: 07/20/2023
+  ms.date: 07/18/2023
   author: johnpapa
   ms.author: jopapa
   ms.topic: module-standard-task-based
