@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.github.code-with-github-codespaces
+title: Code with GitHub Codespaces
+metadata:
+  title: Code with GitHub Codespaces
+  description: GitHub Codespaces is a fully configured development environment hosted in the cloud. By using GitHub Codespaces, your workspace, along with all of your configured development environments, is available from any computer with access to the internet. GitHub Codespaces contains common languages, tools, and utilities for software development.
+  ms.date: 07/18/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module-standard-task-based
+  ms.prod: github
+summary: >
+  
+abstract: |
+  By the end of this module, you'll be able to:
+  - Describe GitHub Codespaces.
+  - Explain the GitHub Codespace lifecycle and how to perform each step.
+  - Distinguish the different customizations you can personalize with GitHub Codespaces.
+  - Discern when to use github.dev and GitHub Codespaces. 
+prerequisites: |
+  -  A GitHub account
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels: 
+  - beginner
+roles: 
+  - administrator
+  - developer
+  - solution-architect
+  - devops-engineer
+products:
+  - github
+units:
+  - learn.github.code-with-github-codespaces.introduction
+  - learn.github.code-with-github-codespaces.codespace-lifecycle
+  - learn.github.code-with-github-codespaces.personalize-your-codespace
+  - learn.github.code-with-github-codespaces.exercise
+  - learn.github.code-with-github-codespaces.knowledge-check
+  - learn.github.code-with-github-codespaces.summary
+badge:
+  uid: learn.github.code-with-github-codespaces.badge
