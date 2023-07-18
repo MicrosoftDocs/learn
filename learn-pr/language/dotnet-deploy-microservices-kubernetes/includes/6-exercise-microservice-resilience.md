@@ -14,7 +14,7 @@ Let's see this resilience in action by deleting the `pizzafrontend` pod and then
     pizzafrontend-5b6cc765c4-hjpx4   1/1     Running   0          63m
     ```
 
-1. Now, delete the `pizzafrontend` pod by using the `kubectl delete` command. You'll need to specify the full name of the pod, including the random string.
+1. Now, delete the `pizzafrontend` pod by using the `kubectl delete` command. You need to specify the full name of the pod, including the random string.
 
     ```bash
     kubectl delete pod pizzafrontend-5b6cc765c4-hjpx4
@@ -22,7 +22,7 @@ Let's see this resilience in action by deleting the `pizzafrontend` pod and then
 
     You'll receive a message immediately stating the pod has been deleted.
 
-1. Because Kubernetes will maintain the system state as declared in the configuration files, it'll immediately start up another pod instance. You can verify that by running `kubectl get pods`.
+1. Because Kubernetes maintains the system state as declared in the configuration files, it immediately starts up another pod instance. You can verify that by running `kubectl get pods`.
 
     ```bash
     username@computer-name % kubectl get pods
@@ -34,4 +34,4 @@ Let's see this resilience in action by deleting the `pizzafrontend` pod and then
 
     Notice that the random string following the `pizzafrontend` name has changed, indicating that the pod is a new instance. Also the **AGE** value is considerably less as well.
 
-In this exercise, you learned how Kubernetes will automatically maintain declared system state, even if there's a failure.
+In this exercise, you learned how Kubernetes automatically maintains declared system state, even if there's a failure.
