@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid:   learn.github.code-with-github-codespaces.introduction
+uid: learn.github.code-with-github-codespaces.introduction
 title: Introduction
 metadata:
   title: Introduction
@@ -9,6 +9,6 @@ metadata:
   ms.author: aastewar
   ms.topic: module-standard-task-based
   ms.prod: github
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
