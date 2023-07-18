@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/10/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
@@ -42,7 +42,7 @@ quiz:
     - content: "Tools that can be used to build related objects."
       isCorrect: false
       explanation: "Incorrect. Constructors are not tools to build related object."
-    - content: "Constructors are method used to initialize your object with any initial values required by your object."
+    - content: "Constructors are methods used to initialize your object with any initial values required by your object."
       isCorrect: true
       explanation: "Correct! The primary job of a constructor is to initialize your object with any values it might require."
   - content: "What does the term object lifecycle refer to?"

@@ -12,7 +12,7 @@ You can use encapsulation to hide information. When you hide information, such a
 
 ## Contents of a class
 
-The following are examples of class members that can be encapsulated within a class:
+The following are examples of class members that can be encapsulated, or hidden to put it another way, within a class:
 - Variables used to store values
 - Methods containing code blocks and that represent an action that an object or class can perform
 - Properties allowing you to read, write, or compute the values stored in  within the class

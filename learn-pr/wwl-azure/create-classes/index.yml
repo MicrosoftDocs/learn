@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.create-classes
 metadata:
-  title: Learn about and create classes and objects
+  title: Create classes and objects in C#
   description: "This module describes creating and working with classes."
-  ms.date: 07/10/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
-title: Learn about and create classes and objects
-summary: The purpose of this module is to learn about classes and objects and to understand the difference between the two.
+title: Create classes and objects in C#
+summary: The purpose of this module is to learn about classes and objects and to understand the differences between the two.
 abstract: |
   * Describe a class
   *   Differentiate between a class and an object

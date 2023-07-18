@@ -1,8 +1,8 @@
 
 
-When you create an object in code, you must ensure that you also initialize it. The easiest way to guarantee that an object is initialized is to define one or more constructors in the class. When you create an object, the common language runtime (CLR) automatically calls a constructor to initialize the object, even if you have not explicitly put a constructor in your code!
+When you create an object in code, you can initialize it with any data the object will need to do its job. The way you initialize an object is to define one or more constructors in the class, passing data into it as parameters. It is interesting to note that when you create an object, if you have not explicitly put a constructor in your code, the Common Language Runtime (CLR) automatically calls an implicit constructor!
 
-Constructors are methods used to initialize your object with any initial values required by your object. Although most objects have constructors, they aren't required to create an object. Even when you haven't defined a constructor in your class, C# calls an implicit constructor that behaves differently than an explicit constructor method you define. Typically you define a constructor for the objects you create, especially as a person just getting started with programming.
+The important thing to remember here is that constructors are methods used to initialize your object with any initial values required by your object. Although most objects have constructors, they aren't required to create an object. If you don't defined a constructor in your class, C# calls an implicit for its own housekeeping purposes. Typically, however, you define a constructor for the objects you create.
 
 ## Defining constructors
 
@@ -18,8 +18,8 @@ access-modifier class-name(parameter-list)
 
 The following example shows how to define three constructors in the House class:
 
-* The first constructor is a default constructor that sets the house style name and square feet to meaningful default values
-* The second constructor takes a string parameter. It initializes the house style name with this parameter, and sets the initial balance to zero
+* The first constructor sets the house style name and square feet to meaningful default values
+* The second constructor takes a string parameter. It initializes the house style name with this parameter, and sets the initial `sqrFootage` value to zero
 * The third constructor takes two parameters, and initializes both the house style name and the square footage with these parameters
 
 ```csharp

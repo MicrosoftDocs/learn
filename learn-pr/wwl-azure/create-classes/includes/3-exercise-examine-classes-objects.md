@@ -4,7 +4,7 @@ As previously mentioned, C# is an object-oriented programming language that uses
 
 ## What is a class?
 
-To reiterate, a class is a blueprint that you can use to create objects. A class defines the characteristics of an object, such as the data that the object contains, and the operations that the object can perform.
+A class is a blueprint that you can use to create objects. A class defines the characteristics of an object, such as the data that the object contains, and the operations that the object can perform.
 
 ## What is an object?
 
@@ -121,7 +121,7 @@ Now add a property so that you can retrieve the house color value you initialize
 
 ## Add a method
 
-Next you can add a method to calculate the square footage of the house based on the with and length of the house.
+Next you can add a method to calculate the square footage of the house, based on the width and length of the house as inputs.
 
 11. Add the method `GetSquareFootage`. It should take two `double` parameters and return a `double`, as seen below.
 
@@ -166,18 +166,30 @@ Next you can add a method to calculate the square footage of the house based on 
     ```csharp
         using Housing_Development_Project_1 // this statement is automatically generated
 
-        House myHouse = new House("light grey", 2000);
+        House myHouse = new House("light grey");
     ```
 
     > [!NOTE]
-    > The namespace is automatically inserted into Program.cs as a "using" statement, meaning that Program.cs is *using* the classes in that namespace. In Visual Studio 2022 the namespace, class, and Main method information is not visible, but exist behind the scene. Because you have already created a class (House) that has this namespace, when you reference it here the namspace is automatically inserted in Program.cs in a *using* statement, letting you know that it is the namespace being used.
+    > The namespace is automatically inserted into Program.cs as a "using" statement, meaning that Program.cs can access the classes in that namespace. In Visual Studio 2022 the namespace, class, and Main method information is not visible, but exists behind the scene. Because you have already created a class (House) that has this namespace, when you reference it here, the namspace is automatically inserted in Program.cs in a *using* statement The IDE does this as a convenience, making it easy to find and use code that might exist in different namespaces.
 
-1. Use Console.WriteLine to display the house color value you initialized in your object.
+1. Use Console.WriteLine to display the house color value you initialized in your object by adding the following lines.
 
     ```csharp
     using Housing_Development_Project_1 // this statement is automatically generated
 
     House myHouse = new House("light grey", 2000);
+
+    Console.WriteLine("You initialized this object with the following house color:");
+    Console.WriteLine("Color: " +  myHouse.ExteriorColor);
+    ```
+
+1. Now use Console.WriteLine to calculate the square footage of the house.
+
+    ```csharp
+    using Housing_Development_Project_1 // this statement is automatically generated
+
+    House myHouse = new House("light grey", 2000);
+
     Console.WriteLine("You initialized this object with the following house color:");
     Console.WriteLine("Color: " +  myHouse.ExteriorColor);
 
@@ -190,4 +202,4 @@ Next you can add a method to calculate the square footage of the house based on 
 
     ![Screenshot showing Visual Studio output.](../media/1-output.jpg)
 
-Congratulations on making it this far! We talk more about constructors and initializing objects in *Class Constructors* later in this course.
+Congratulations on making it this far. You are building your building a solid foundation for understanding object oriented programming.

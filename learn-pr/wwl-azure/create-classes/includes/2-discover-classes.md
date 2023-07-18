@@ -16,7 +16,9 @@ In addition to classes being the blueprint for objects, each class also defines 
 You can also create custom types that don’t represent any of the previously mentioned built-in or what are called native types, but rather represent the custom classes you create. 
 
 The concept of type is important here, as they define the type of data your object can return when a method is called on that object. 
-When you design an application, you identify new types that you require to build your application. If you're building an application that represents a house, you might have a house class that also represents a house type. You use the house type to let the compiler know the type of variable you're passing into, or returning from, a method. The compiler needs to know whether the thing you're passing is in the suit of Diamonds or Clubs. 
+When you design an application, you identify new types that you require to build your application. If you're building an application that represents a house, you might have a house class. The house class can also be used to declare an instance of a house or to identify House types to the compiler, when a house is either being passed into or returned from a method. 
+
+You use the house type to let the compiler know the type of variable you're passing into, or returning from, a method. The compiler needs to know whether the thing you're passing is in the suit of Diamonds or Clubs. 
 
 ## Properties
 
