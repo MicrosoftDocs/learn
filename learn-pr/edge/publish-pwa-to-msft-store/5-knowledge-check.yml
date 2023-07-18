@@ -9,7 +9,7 @@ metadata:
   ms.author: xupa
   ms.topic: module-standard-task-based
   ms.prod: microsoft-edge
-durationInMinutes : 7
+durationInMinutes : 6
 quiz:
   title: Check your knowledge
   questions: 
@@ -69,25 +69,11 @@ quiz:
     - content: "Offline capabilities"
       isCorrect: true
       explanation: "Correct. Testing offline capabilities ensures that your PWA functions reliably under different network conditions, such as when users have no or limited connectivity."
-  - content: "What's the main purpose of reserving an app name in the Microsoft Partner Center?"
-    choices:
-    - content: "To create a unique identity for your app"
-      isCorrect: true
-      explanation: "Correct. Reserving an app name does create a unique identity, but there's another reason as well."
-    - content: "To generate the required package information for PWABuilder"
-      isCorrect: false
-      explanation: "Incorrect. Reserving an app name doesn't directly generate package information for PWABuilder."
-    - content: "To register for a Microsoft Developer Account"
-      isCorrect: false
-      explanation: "Incorrect. Reserving an app name in the Microsoft Partner Center and registering for a Microsoft Developer Account are two separate processes."
-    - content: "Only to prevent other developers from using the same name Partially"
-      isCorrect: false
-      explanation: "Incorrect. Reserving an app name prevents others from using the same name, but there's another reason as well."
   - content: "Which of the following features is an important Windows-specific feature to test in your PWA?"
     choices:
-    - content: "Live Tiles"
+    - content: "Window controls overlay"
       isCorrect: true
-      explanation: "Correct. Live Tiles are a Windows-specific feature that enhances user experience and should be tested in your PWA."
+      explanation: "Correct. Window controls overlay are a Windows-specific feature that enhances user experience and should be tested in your PWA."
     - content: "Google Chrome compatibility"
       isCorrect: false
       explanation: "Incorrect. Google Chrome compatibility isn't a Windows-specific feature."
