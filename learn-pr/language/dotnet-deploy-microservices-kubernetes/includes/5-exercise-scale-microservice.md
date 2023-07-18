@@ -1,4 +1,4 @@
-Your microservice might come under heavy load during certain times of the day. Kubernetes makes it easy to scale your microservice by adding additional instances for you.
+Your microservice might come under heavy load during certain times of the day. Kubernetes makes it easy to scale your microservice by adding more instances for you.
 
 1. Run the following command to scale the backend microservice to five instances:
 
@@ -14,7 +14,7 @@ Your microservice might come under heavy load during certain times of the day. K
     kubectl get pods
     ```
 
-    Once all the instances are spun up, you should see five pod instances (represented as individual rows) in the output. Each row will start with **pizzabackend** and then be followed by a random string.
+    Once all the instances are spun up, you should see five pod instances (represented as individual rows) in the output. Each row starts with **pizzabackend** and then be followed by a random string.
 
 1. To scale the instance back down, run the following command:
 
