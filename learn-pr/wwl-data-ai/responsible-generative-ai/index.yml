@@ -10,11 +10,11 @@ metadata:
   ms.service: cognitive-services
   ms.subservice: openai
 title: Responsible Generative AI
-summary: "Generative AI enables amazing creative solutions, but must be implemented reponsibly to minimize the risk of harmful content generation."
+summary: "Generative AI enables amazing creative solutions, but must be implemented responsibly to minimize the risk of harmful content generation."
 abstract: |
   By the end of this module, you'll be able to:
     - Describe an overall process for responsible generative AI solution development
-    - Identify and priortize potential harms relevant to a generative AI solution
+    - Identify and prioritize potential harms relevant to a generative AI solution
     - Measure the presence of harms in a generative AI solution
     - Mitigate harms in a generative AI solution
     - Prepare to deploy and operate a generative AI solution responsibly

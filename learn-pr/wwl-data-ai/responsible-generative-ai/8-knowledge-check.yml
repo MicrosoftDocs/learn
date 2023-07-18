@@ -40,7 +40,7 @@ quiz:
     choices:  
     - content: "To enable you to gather feedback and identify issues before releasing the solution more broadly"  
       isCorrect: true  
-      explanation: "An initial release to a retricted user base enables you to minimize harm by gather feedback and identifying issues before broad release."  
+      explanation: "An initial release to a restricted user base enables you to minimize harm by gather feedback and identifying issues before broad release."  
     - content: "To eliminate the need to identify, measure, and mitigate potential harms"  
       isCorrect: false  
       explanation: "A phased delivery plan doesn't eliminate the need to identify, measure, and mitigate potential harms."  
