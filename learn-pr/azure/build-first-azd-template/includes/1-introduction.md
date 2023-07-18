@@ -1,16 +1,21 @@
 Developers often face many challenging tasks and decisions when building apps for the cloud. Creating a properly architected and configured environment can be a time consuming and difficult process. Developers must account for many different concerns in these environments, such as creating resources, applying configurations, setting up monitoring and logging, building CI/CD pipelines, and other tasks. 
 
-The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from local development environment to an application successfully deployed on Azure. The tool is designed around a powerful template system that can automate provisioning cloud infrastructure and deploying application code. In the units ahead, you'll learn how to build a new `azd` template from scratch that accomplishes these goals.
+The Azure Developer CLI (`azd`) reduces and streamlines these responsibilities to help the developer on their journey from a local development environment to an application successfully deployed on Azure. The tool is designed around a powerful template system that can automate provisioning cloud infrastructure and deploying application code. In the units ahead, you'll learn how to build a new `azd` template from scratch that accomplishes these goals.
+
+> [!NOTE]
+> Before working through this module, it's recommended that you have basic working knowledge of the Azure Developer CLI or have completed the [Introduction to Azure Developer CLI](/training/modules/introduction-to-azure-developer-cli/) training module.
 
 ## Example scenario
 
-Suppose you work at a startup company that is building a new cloud native e-commerce platform. The app requires a front-end shopping UI and various backend services to process orders. You plan to host the app on Azure, which means you'll need to use Azure services such as App Service, Storage, NoSQL databases and more. As your team grows and experiments with different cloud architectures, you'd like to solve the following challenges:
+Suppose you work at a startup company that is building a new cloud native e-commerce platform. The app requires a front-end shopping UI and various backend services to process orders. You plan to host the app on Azure, which means you'll need to use Azure services such as App Service, Storage, NoSQL databases and more. As your team grows and experiments with different cloud architectures, you'd like to solve the following project challenges:
 
-* **Dynamic infrastructure** - While the app is in active development, the team would like the ability to quickly tear down and recreate the cloud services as architecture changes are made. Azure Developer CLI templates can manage cloud infrastructure quickly and reliably in an automated way using infrastructure as code.
+* **Rapidly changing infrastructure** - While the app is in active development, the team would like the ability to quickly tear down and recreate the cloud services as architecture changes are made.
 
-* **Onboarding new teams** - Whether you're adding new teams internally or distributing open source software, you'd like to provide a way for new users to create their own copy of the cloud infrastructure. Internal teams may need to redeploy the same infrastructure to new subscriptions, while external users may want the infrastructure created for them so they know it's correct.
+* **Onboarding new teams** - Whether you're adding new teams internally or distributing the software as open source, you'd like to provide a way for new users to easily create their own copy of the required cloud infrastructure with the correct configurations.
 
-* **Streamlined cloud skill requirements** - Although the app is designed to be cloud native, developers who are unfamiliar with the cloud may still want to deploy and work on the app. Azure Developer CLI templates automate the cloud setup and deployment process using only a few commands, allowing developers who are new to the cloud to still get up and running.
+* **Streamlined cloud skill requirements** - Although the app is designed to be cloud native, developers who are unfamiliar with the cloud may still want to deploy and work on the app.
+
+The Azure Developer CLI provides a solution to these challenges by using templates. `azd` templates reliably manage cloud infrastructure and deployments in an automated way using infrastructure as code. They help automate the cloud setup and deployment process using only a few commands, allowing developers who are new to the cloud to still get up and running.
 
 ## Learning objectives
 
@@ -22,7 +27,7 @@ In this module, you will:
 ## Prerequisites
 
 - The Azure Developer CLI [installed locally](/azure/developer/azure-developer-cli/install-azd?tabs=winget-windows%2Cbrew-mac%2Cscript-linux&pivots=os-windows)
-- Basic working knowledge of the Azure Developer CLI
+- Completed the [Introduction to Azure Developer CLI](/training/modules/introduction-to-azure-developer-cli/) training module
 - Basic knowledge of software development workflows, such as packaging, provisioning, and deploying resources
 
 ## What is the main goal?
