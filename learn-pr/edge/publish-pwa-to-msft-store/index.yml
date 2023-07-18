@@ -15,7 +15,7 @@ abstract: |
   By the end of this module, you'll be able to:
   - Test a Progressive Web App (PWA) on various devices and platforms, ensuring it's compliant with technical guidelines and requirements.
   - Understand the procedures for packaging and submitting a PWA to the Microsoft Store, including reserving an app name and reviewing store policies and code of conduct.
-  - Successfully create a Microsoft Partner Center account and navigate the process for PWA review and publication.
+  - Successfully navigate the process for PWA review and publication.
 prerequisites: |
   - Intermediate understanding of web development (HTML, CSS, JavaScript, and JSON).
   - Grasp the process of integrating and creating PWAs.
