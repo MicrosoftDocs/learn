@@ -28,7 +28,7 @@ Kubernetes is a portable, extensible open-source platform for managing and orche
 
 The benefits of using Kubernetes are based on the abstraction of tasks.
 
-![Diagram showing the benefits of Kubernetes including that it's self-healing, can scale dynamically, and has rolling updates](../media/2-kubernetes-benefits.svg)
+![Diagram showing the benefits of Kubernetes including that it's self-healing, can scale dynamically, and has rolling updates.](../media/2-kubernetes-benefits.svg)
 
 These tasks include:
 
