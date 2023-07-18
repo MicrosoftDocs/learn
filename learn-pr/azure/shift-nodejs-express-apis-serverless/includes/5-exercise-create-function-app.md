@@ -9,8 +9,7 @@ Make sure you have the [Visual Studio Code Extension for Azure Functions](https:
 
    :::image type="content" source="../media/5-create-function-app.png" alt-text="Screenshot of Visual Studio Code creating a new function app.":::
 
-1. Choose **Browse** to find the folder to create the functions.
-1. Create a new folder in your project called _functions_.
+1. Choose **Browse** to find your project folder, and create a new folder in the project called _functions_.
 1. Select **TypeScript**.
 1. When prompted to create a function, select **Skip for Now**.
 

@@ -19,4 +19,4 @@ In this module, you refactor Express APIs to a serverless architecture by follow
 - [Node.js v14](https://nodejs.org/) installed
 
   >[!IMPORTANT]
-  >You must install and use Node.js v14 to compile and run the Express app for this module. Later versions have compatibility issues.
+  >You must install and use Node.js v14 to compile and run the app for this module. Later Node.js versions have compatibility issues.

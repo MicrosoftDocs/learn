@@ -7,7 +7,7 @@ You might also be able to reduce the cost of an always-on server and improve sca
 > [!NOTE]
 > To deploy the Functions app to the cloud, see the tutorial [Manage Azure resource groups with TypeScript Function API](/azure/developer/javascript/how-to/with-web-app/azure-function-resource-group-management/deploy-azure-function-with-visual-studio-code). You can use a [free Azure account](https://azure.microsoft.com/free/) and the Azure Functions extension for Visual Studio Code to deploy the application.
 
-The solution for the current sample project is in the [solution branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution) on GitHub. Follow the instructions in the README file to get started. You can explore running the Express app or the Functions app to get a sense of the differences. Then try to apply this same shift to your code.
+The solution for the current sample project is in the [solution branch](https://github.com/MicrosoftDocs/mslearn-module-shifting-nodejs-express-apis-to-serverless/tree/solution) of the GitHub project. Follow the instructions in the README file to get started. You can explore running the Express app or the Functions app to get a sense of the differences. Then try to apply this same shift to your code.
 
 ## Other resources
 

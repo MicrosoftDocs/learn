@@ -24,7 +24,7 @@ Make the following changes in the _functions/vacations-get/function.json_ file.
 
 - In the `bindings` section's `req` properties, add a `"route": "vacations"` entry.
 
-  By default, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _vacations-get_ folder, the route endpoint is generated as `vacations-get`. Adding the `route` property to the function bindings makes the route match the expected `vacations` route from the Node.js Express app.
+  By default, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _vacations-get_ folder, the route endpoint is generated as `vacations-get`. Adding the `"route": "vacations"` property to the function bindings makes the route match the expected `vacations` route from the Node.js Express app.
 
 Your _function.json_ should look like the following code.
 
@@ -81,7 +81,7 @@ There are four endpoints in the Node.js Express application, and you just create
 | `PUT`     | `vacations-put`    |
 | `DELETE`  | `vacations-delete` |
 
-For each remaining endpoint, you follow the same steps as for the `GET` endpoint to create the function.
+For each remaining endpoint, follow the same steps as for the `GET` endpoint to create the function.
 
 ### Create the HTTP POST function
 

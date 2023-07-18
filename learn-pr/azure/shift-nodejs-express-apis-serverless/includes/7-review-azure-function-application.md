@@ -1,4 +1,4 @@
-Congratulations! You completed your Azure Functions application by shifting your Node.js Express code and making minimal changes. You took the following steps to refactor your code from Node.js Express to Functions:
+Congratulations! You created your Azure Functions application by shifting your Node.js Express code and making minimal changes. You took the following steps to refactor your code from Node.js Express to Functions:
 
 1. Created the Functions application.
 1. Copied the Node.js Express services from the _server/services_ folder to the _functions_ folder.

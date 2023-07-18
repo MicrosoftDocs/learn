@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "In an Azure Functions application, how do you change the route endpoint to `vacations` for a function in a folder named _vacations-get_?"
+    - content: "In an Azure Functions application, how would you change the route endpoint for a function in a folder named _vacations-get_ to `vacations`?"
       choices:
         - content: "Add the `route` property to the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: true
