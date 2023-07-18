@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: fabric
+  ms.subservice: onelake
   ms.custom:
     - build-2023
     - build-2023-dataai

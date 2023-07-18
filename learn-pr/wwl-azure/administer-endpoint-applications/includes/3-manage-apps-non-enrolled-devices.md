@@ -19,7 +19,7 @@ Intune also supports deploying apps to unenrolled devices. Currently, you can as
 
 To receive app updates on devices not enrolled with Intune, device users must go to their organization’s Company Portal and manually install app updates.
 
-Users can then use either the Company Portal app or go to the Intune Company Portal website at [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) on any of their devices and install the application without needing the device to be enrolled in Intune. The Company Portal app will only prompt users to enroll their devices if the app is configured to not require enrollment.
+Users can then use either the Company Portal app or go to the Intune Company Portal website at [https://portal.manage.microsoft.com](https://portal.manage.microsoft.com) on any of their devices and install the application without needing the device to be enrolled in Intune. The Company Portal app will only prompt users to enroll their devices if the app is configured to require enrollment.
 
 #### Deploy apps to unenrolled devices
 
