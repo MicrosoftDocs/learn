@@ -10,7 +10,9 @@ This exercise is a chance for you to practice putting it all together before mov
 - Define an overloaded method
 - Add a static/global method to the class library
 
-## Exercise
+## Exercise - Try it out
+
+### Create your project
 
 1.	Open Visual Studio Community.
 
@@ -20,11 +22,13 @@ This exercise is a chance for you to practice putting it all together before mov
 
 1.	Name your project *Housing Development 4* and choose where to save it, then select “Create”.
 
+### Add a class
+
 1.	In the Solution Explorer window, right-click on your project and select “Add” -> “Class”.
 
 1.	Name your class *House* and select “Add”.
 
-1.	In the House class, create two private fields: _numberOfRooms and _squareFootage.
+1.	In the House class, create two private variables: _numberOfRooms and _squareFootage.
 
     ```csharp
     using System;
@@ -42,6 +46,8 @@ This exercise is a chance for you to practice putting it all together before mov
         }
     }
     ```
+
+### Add a property
 
 1.	Create a property called Color that sets and gets the house color.
 
@@ -63,6 +69,8 @@ This exercise is a chance for you to practice putting it all together before mov
         }
     }
     ```
+
+### Add a method
 
 1.  Add a method called SetNumberOfRooms() that returns the number of rooms.
 
@@ -116,6 +124,8 @@ This exercise is a chance for you to practice putting it all together before mov
     }
     ```
 
+### Create an overloaded method
+
 1.	Create an overloaded method called SquareFootage() that has two versions of the method, one to calculate the square footage by the US standard measurement system and the other using the metric system.
     
     ```csharp
@@ -159,7 +169,9 @@ This exercise is a chance for you to practice putting it all together before mov
     }
     ```
 
-1. Create a static/global property for the builderID.
+### Add a static property
+
+1. Create a static (global) property for the builderID.
 
     ```csharp
     using System;
@@ -205,6 +217,8 @@ This exercise is a chance for you to practice putting it all together before mov
         }
     }
     ```
+
+### Putting it all together
 
 1.	In the Program.cs file, create an instance of the House class and set its color to red.
 

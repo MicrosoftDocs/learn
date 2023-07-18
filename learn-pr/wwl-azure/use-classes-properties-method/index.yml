@@ -3,21 +3,21 @@ uid: learn.wwl.use-classes-properties-method
 metadata:
   title: Use classes, properties, and methods
   description: "This module introduces using classes, properties, and methods."
-  ms.date: 07/13/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: gregorfisher
   ms.topic: interactive-tutorial
 title: Use classes, properties, and methods
-summary: This lesson shows how to use a class and access the properties and the methods of that class. After you implement properties and methods in a class, you can then use the class in your application to track information about your objects, and perform actions on the objects.
+summary: This lesson shows you how to use a class and access the properties and the methods of that class. Aside from instantiating your objects, properties and methods are the primary way you interact with your objects.
 abstract: |
   - Instantiate a class
   - Use a class property
   - Use a class method
   - Use a static class method
 prerequisites: |
-  - An installation of Visual Studio Community.
-  - Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
-  - A basic understanding of code debuggers and the debug process
+  *   An installation of Visual Studio Community.
+  *   Ability to develop C# console applications that implement business logic using iteration statements, selection statements, and custom methods.
+  *   A basic understanding of code debuggers and the debug process.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - beginner
@@ -35,7 +35,7 @@ units:
 - learn.wwl.use-classes-properties-method.instantiate-class
 - learn.wwl.use-classes-properties-method.instantiate-class-parameterized-constructor
 - learn.wwl.use-classes-properties-method.use-properties-methods
-- learn.wwl.use-classes-properties-method.examine-shared-static-properties-methods
+- learn.wwl.use-classes-properties-method.examine-static-properties-methods
 - learn.wwl.use-classes-properties-method.exercise-use-classes-properties-methods
 - learn.wwl.use-classes-properties-method.review-module-takeaways
 - learn.wwl.use-classes-properties-method.knowledge-check

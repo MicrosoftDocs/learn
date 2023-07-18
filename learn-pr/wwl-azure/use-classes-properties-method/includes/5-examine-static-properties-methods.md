@@ -6,7 +6,7 @@ A class can also contain class members, as opposed to instance members. Class me
 
 ## Defining static members
 
-In object oriented-programming, you call the accessibility or "visibility" of objects and their members scope. A program consists of objects that contain other objects that can have varying levels of accessibility. The accessibility or visibility of objects is based on their access modifier (public, private, etcetera), objects may not always be accessible.
+In object oriented-programming, the accessibility or "visibility" of objects in your application and their members is called scope. A program consists of objects that contain other objects that can have varying levels of accessibility. The accessibility or visibility of objects is based on their access modifier (public, private, protected, etcetera), objects may not always be accessible.
 
 When you define a class or class member as static you are immediately loading that class or class member into memory when the application starts, before your code has instantiated the object. Another effect of declaring a class or member static is that it can be accessed from any other object in your code, regardless of scope. 
 
@@ -14,35 +14,38 @@ When you define a class as static, you're creating what is called a global varia
 
 When it comes to defining class-wide members in a class, you use the keyword static in the member declaration. You must place the static keyword immediately after the access modifier in the declaration. The following rules and guidelines apply when you define static members:
 
-- Static fields are shared across instances, meaning they're global and can be accessed by any other object in your code, regardless of scope. The value in a static field is stored only once, regardless of how many instances of the class you create.
+- Static variables are shared across instances, meaning they're global and can be accessed by any other object in your code, regardless of scope. The value in a static variable is stored only once, regardless of how many instances of the class you create.
 - Static properties and methods can only access static class members; they can't access instance members.
 
-The following example shows how to define a static field, property, and method in the House class:
+The following example shows how to define a static variable, property, and method in the House class. In this scenario the following are included:
 
 - All instances of the Houses class share a common housing development builder.
-- developmentBuilder is a static field that represents the name of the builder for all houses in a housing development. The developmentBuilder field is initialized to “American Builders” in the declaration.
+- developmentBuilder is a static field that represents the name of the builder for all houses in a housing development. The developmentBuilder field is initialized to “Aztec Builders” in the declaration.
 - HousingDevelopmentBuilder is a static property that gets and sets the developmentBuilder field.
 - AddHouseToDevProject is a static method that increases the numberOfHouses field by one, incrementing the number of houses in the development project.
 
 ```csharp
 public class House
 {
-    private static string developmentBuilder = “American Builders”;
-    private static int numberOfHouses = 0;
+    private static string _developmentBuilder = “American Builders”;
+    private static int _numberOfHouses = 0;
 
     public static string HousingDevelopmentBuilder
     {
-        get {return developmentBuilder;}
-        set {developmentBuilder = value;}
+        get {return _developmentBuilder;}
+        set {_developmentBuilder = value;}
     }
 
 
     public static void AddHouseToDevProject()
     {
-        numberOfHouses += 1;
+        _numberOfHouses += 1;
     }
 
-    // Plus other members.
+    public static int NumberOfHouses
+    {
+        get { return _numberOfHouses; }
+    }
 }
 ```
 
@@ -50,18 +53,20 @@ public class House
 
 The way you access static members is different from the way you access instance members.
 
-To access a static member on a class, you use the name of the class, followed by a period, followed by the name of the member. You can access static members even if no instances of the class exist, because static members don't contain any instance-specific data or behavior.
+To access a static member on a class, you use the name of the class, followed by a period, followed by the name of the member. You can access static members even if no instances of the class have been created, because they don't need to be instantiated. They also don't contain any instance-specific data or behavior.
 
 The following example shows how to access static properties and methods on the Houses class. The example performs the following tasks:
 
 - Uses the HousingdevelopmentBuilder property to set the housing development builder’s name that applies for all houses.
 - Calls the AddHouseToDevProject method to increase the number of houses in the development by one in the numberOfHouses field.
-- Uses the GetNumberOfHouses property to get the number of houses in the development and display it.
+- Calls the GetNumberOfHouses property to get the number of houses in the development and display it.
 
 #### Static example
 
 ```csharp
-House.HousingdevelopmentBuilder = “American Builders”;
+House.HousingdevelopmentBuilder = “Aztec Builders”;
+
+House.NumberOfHouses
 
 House.AddHousesToDevProject();
 ```
@@ -71,11 +76,19 @@ The important thing to remember here is that in this code the House class hasn't
 #### Instantiate example
 
 ```csharp
+// First create an instance of your object variable
 House house = new House();
 
-house.HousingDevelopmentBuilder = "American Builder";
+// Now you can set a property
+house.HousingDevelopmentBuilder = "Aztec Builder";
 
+// Or get a property value
+house.NumberOfHouses
+
+// Or call a method
 house.AddHouseToDevProject();
 ```
 
-As you can see, in the static example the House class isn't "newing" or creating an instance of the House object. It only uses the class name followed by the static method name to access the property or method. The House class isn't being instantiated.
+As you can see, in the static example the House class isn't "newing" or creating an instance of the House object. It only uses the class name (which is the same thing as they type name) followed by the name of the static method to access the property or method. The House class isn't being instantiated.
+
+Static classes, properties, and methods are global and do not belong to a specific instances of a class. As such, you don't need to instantiate the class they belong to in order to use them. Just remember, because they don't belong to individual instantiations of a class, your code will have that one buck to store and retrieve data from.

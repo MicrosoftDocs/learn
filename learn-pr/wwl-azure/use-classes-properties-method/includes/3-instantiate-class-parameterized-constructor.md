@@ -9,3 +9,11 @@ Some classes accept parameters to their constructor methods, so that properties 
 ```csharp
 myCustomer = new Customer("Sasha");
 ```
+
+Below is an example of a constructor that takes multiple parameters.
+
+```csharp
+myCustomer = new Customer(fname, lname, age, occupation);
+```
+
+As with constructors generally, constructors are used to provide your object with any initial data they might need at the time the object is created. Not all object will need any initial data to do their job, but some objects you create might require some initial data to get started.
