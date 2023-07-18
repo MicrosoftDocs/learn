@@ -14,7 +14,7 @@ Your microservice might come under heavy load during certain times of the day. K
     kubectl get pods
     ```
 
-    Once all the instances are spun up, you should see five pod instances (represented as individual rows) in the output. Each row starts with **pizzabackend** and then be followed by a random string.
+    Once all the instances are spun up, you should see five pod instances (represented as individual rows) in the output. Each row starts with **pizzabackend** is then followed by a random string.
 
 1. To scale the instance back down, run the following command:
 
