@@ -117,4 +117,6 @@ Now run and debug the Angular and Express apps together to show how the Vacation
 
 1. There are two debugging processes running: one for Angular and one for Node.js Express. Press **SHIFT+F5** to stop the active debugger.
 
-1. Press **SHIFT+F5** again to stop the remaining debugger.
+1. Press **SHIFT+F5** again to stop the remaining debugger.-->
+ 
+
