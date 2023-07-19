@@ -1,4 +1,4 @@
-Imagine you work for a music-software company called Nod Publishers. Nod Publishers provides music software as a services (SaaS) applications to help musicians and artists around the world share their music. The music applications have been containerized. Your job as part of the deployment team is to take those containerized applications and deploy them to Azure Kubernetes Service (AKS).
+Imagine you work for a music-software company called Nod Publishers. Nod Publishers provides music software as a service (SaaS) applications to help musicians and artists around the world share their music. The music applications have been containerized. Your job as part of the deployment team is to take those containerized applications and deploy them to Azure Kubernetes Service (AKS).
 
 To get started, your deployment team created some AKS clusters. A few months later, your deployment team successfully deployed all of the music application containers to those AKS clusters.
 
