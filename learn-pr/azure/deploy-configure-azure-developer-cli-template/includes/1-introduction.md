@@ -2,7 +2,7 @@ Developers often face many challenging tasks and decisions when building apps fo
 
 ## Prerequisites
 
-* Before completing this module, you should have a basic conceptual understanding of what the Azure Developer CLI is and how it works. For a high-level introduction to the tool, complete the [Introduction to Azure Developer CLI]() module first.
+* Before completing this module, you should have a basic conceptual understanding of what the Azure Developer CLI is and how it works. For a high-level introduction to the tool, complete the [Introduction to Azure Developer CLI](/training/modules/introduction-to-azure-developer-cli) module first.
 
 * You will also need an Azure subscription to provision and deploy resources. You can [sign up for an Azure account](https://azure.microsoft.com/free) that includes some free credits for the first 30 days to get started.
 
