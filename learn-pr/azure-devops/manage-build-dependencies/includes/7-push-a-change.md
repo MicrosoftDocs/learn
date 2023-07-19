@@ -1,10 +1,10 @@
 At this point, you have two pipelines. One publishes the Models package to Azure Artifacts, and one is for the _Space Game_ web app. The build configuration for the web app references the Models package so that it can access the model classes.
 
-Here, you practice the process of updating the Models package and consuming that change from the web app.
+Here, you'll practice updating the Models package and consuming that change from the web app.
 
-To do that, you start by adding a property to one of the model classes and then bump the package version. Then, you submit the change to GitHub, so that the pipeline can build the package and publish it to Azure Artifacts.
+To do that, you'll start by adding a property to one of the model classes and then bump the package version. Then, you'll submit the change to GitHub so that the pipeline can build the package and publish it to Azure Artifacts.
 
-You update the web app to reference the newer version number of the Models package so that it can use the added property.
+You'll then update the web app to reference the newer version number of the Models package so that it can use the added property.
 
 ## Create a branch
 
@@ -21,7 +21,7 @@ At this point, you have two copies of Visual Studio Code open, one for the **Tai
 
 ## Add a property to the Models package
 
-Add a property to one of the model classes, named `Score`, that provides the game style, or difficulty, the score is associated with.
+Add a property named `Score`to one of the model classes, which provides the game style (or difficulty) with which the score is associated.
 
 Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGame.Web.Models** project.
 
@@ -34,7 +34,7 @@ Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGa
 
 1. Save the file.
 
-1. To verify your work, build the project.
+1. To verify your work, build the project:
 
     ```dotnetcli
     dotnet build --configuration Release
@@ -44,21 +44,21 @@ Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGa
 
 ## Build and publish the package
 
-Now that you've added the new property to the `Score` class, and verified the project builds successfully, you can update the package's version. You can then push your change to GitHub so that Azure Pipelines can build and publish the updated package.
+Now that you've added the new property to the `Score` class and verified the project builds successfully, you can update the package's version. You can then push your change to GitHub so that Azure Pipelines can build and publish the updated package.
 
-1. Open *azure-pipelines.yml*, and change the `minorVersion` from `0` to `1`, and save the file.
+1. Open *azure-pipelines.yml*, change the `minorVersion` from `0` to `1`, and save the file.
 
     ```yml
     minorVersion: '1'
     ```
 
-    Here, we bump the version from 1.0.0 to 1.1.0 to make the change clear. In practice, you would follow the versioning scheme for the kind of package you're working with.
+    Here, we bump the version from 1.0.0 to 1.1.0 to make the change clear. In practice, you'd follow the versioning scheme for the kind of package you're working with.
 
     For example, according to Semantic Versioning, bumping the minor version to 1 (1.1.0) tells others that the package is backward compatible with apps that use version 1.0.0 of that package. Those who use the package might then modify their app to make use of new features.
 
-    Popular open source projects provide documentation in the form of a _changelog_ that explains the changes made in each version, and how to migrate from one major version to the next.
+    Popular open-source projects provide documentation in the form of a _changelog_ that explains the changes made in each version and how to migrate from one major version to the next.
 
-1. Stage, commit, and push your changes.
+1. Stage, commit, and push your changes:
 
     ```bash
     git add .
@@ -68,7 +68,7 @@ Now that you've added the new property to the `Score` class, and verified the pr
 
 1. From Microsoft Azure Pipelines, go to the **Tailspin.SpaceGame.Web.Models** project, and watch the build run.
 
-1. Open the **Artifacts** tab and note the new version. Don't worry. Your old version is still there for any projects that still reference it.
+1. Open the **Artifacts** tab and note the new version. Don't worry; your old version is still there for any projects that still reference it.
 
     :::image type="content" source="../media/7-artifacts-package-ver2.png" alt-text="A screenshot of the package in Azure Artifacts, showing version 1.1 of the package.":::
 
@@ -82,7 +82,7 @@ Here, you'll work from the copy of Visual Studio Code for the _Space Game_ web a
 
 1. From Visual Studio Code, open **Tailspin.SpaceGame.Web.csproj**, and change `PackageReference` to the version number of the **Tailspin.SpaceGame.Web.Models** package you created in Azure Artifacts. Then, save the file.
 
-    Here's an example.
+    Here's an example:
 
     ```xml
     <PackageReference Include="Tailspin.SpaceGame.Web.Models" Version="1.1.0-CI-20210528-202436" />
