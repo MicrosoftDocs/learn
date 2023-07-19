@@ -21,7 +21,7 @@ At this point, you have two copies of Visual Studio Code open, one for the **Tai
 
 ## Add a property to the Models package
 
-Add a property named `Score`to one of the model classes, that provides the game style (or difficulty) with which the score is associated.
+Add a property named `Score`to one of the model classes, which provides the game style (or difficulty) with which the score is associated.
 
 Here, you'll work from the copy of Visual Studio Code for the **Tailspin.SpaceGame.Web.Models** project.
 
