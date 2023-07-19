@@ -6,7 +6,7 @@ If the AKS cluster patches and upgrades hadn't taken place, the existing version
 
 The benefit of version patches and upgrades is to ensure that when software loopholes are identified, they're fixed immediately. This prevents people with malicious intent from exploiting it. Additionally, when new features of software are released, they're designed to improve the quality and performance of the software. If you delay the new-version adoption process for too long, it could result in expensive upgrade costs to the business. Therefore, you should apply patches and upgrades to AKS cluster versions as soon as they're available to avoid potential large costs to the business.
 
-Remember, these upgrades are for updating the components within the AKS cluster only. Operating-system updates and node image upgrades is a separate upgrades and patches process.
+Remember, these upgrades are for updating the components within the AKS cluster only. Operating-system updates and node-image upgrades have a separate upgrade and patch process.
 
 [!include[azure-optional-exercise-subscription-cleanup](../../../includes/azure-optional-exercise-subscription-cleanup.md)]
 
