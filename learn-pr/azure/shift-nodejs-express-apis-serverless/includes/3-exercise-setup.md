@@ -74,6 +74,8 @@ Open _proxy.conf.json_ and notice that the port is set to `7070`.
 
 The Node.js Express API runs on port `7070`, while the Angular application runs on port `4200`. The Angular application can't make requests across the domains to the Node.js Express application. Setting up a proxy enables the browser to locate the Express server.
 
+<!-- Commenting out the run/debug steps pending resolution of the Express API proxy issue
+
 ## Set breakpoints
 
 To display a list of vacations, the Angular application runs the `getVacations()` function in the _vacations.component.ts_ file, which calls the route in the _vacation.routes.ts_ file. Set breakpoints in these files, so during debugging you can step through the code that fetches the vacations.
