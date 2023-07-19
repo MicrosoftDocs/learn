@@ -5,7 +5,7 @@ metadata:
   title: Apply cluster upgrades and security patches with Azure Kubernetes Service
   description: |
     Apply the latest version upgrades and patches to your Azure Kubernetes Service clusters. 
-  ms.date: 07/15/2021
+  ms.date: 07/19/2023
   author: microsoftmichelle 
   ms.author: mixie
   ms.topic: interactive-tutorial
@@ -13,13 +13,13 @@ metadata:
 title: Apply cluster upgrades and security patches with Azure Kubernetes Service  
 summary: Learn more about why you need to upgrade your existing Azure Kubernetes Service clusters.
 abstract: |
-  By the end of this module, you will be able to: 
-  - Understand what Kubernetes versions are supported by Azure Kubernetes Services (AKS)
-  - Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version
-  - Understand how to adopt a Blue/Green deployment to upgrade your Azure Kubernetes Services clusters in a production environment
+  By the end of this module, you'll be able to: 
+  - Understand what Kubernetes versions are supported by Azure Kubernetes Services (AKS).
+  - Upgrade your existing Azure Kubernetes Services (AKS) clusters components to the latest supported Kubernetes version.
+  - Understand how to adopt a Blue/Green deployment to upgrade your Azure Kubernetes Services clusters in a production environment.
 prerequisites: |  
-  - A basic understanding of containers.
-  - A basic understanding of Azure Kubernetes Service. 
+  - A basic understanding of containers
+  - A basic understanding of Azure Kubernetes Service
 iconUrl: /training/achievements/aks-cluster-upgrades-patches.svg
 levels: 
   - beginner
