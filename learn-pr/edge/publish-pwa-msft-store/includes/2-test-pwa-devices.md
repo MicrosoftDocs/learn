@@ -20,3 +20,4 @@ When testing a PWA that primarily targets the Windows platform, pay special atte
 - **Responsiveness**: Check if your app's layout and design adapt well to different screen sizes and resolutions, especially when used on various Windows devices.
 - **Performance**: Test your app's performance on a range of devices with different hardware specifications to ensure that it provides a consistent user experience.
 - **Offline capabilities**: Test your app's offline functionality and caching mechanisms to make sure it works reliably under different network conditions.
+
