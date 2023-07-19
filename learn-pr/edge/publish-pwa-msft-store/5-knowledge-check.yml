@@ -73,7 +73,7 @@ quiz:
     choices:
     - content: "Window controls overlay"
       isCorrect: true
-      explanation: "Correct. Window controls overlay are a Windows-specific feature that enhances user experience and should be tested in your PWA."
+      explanation: "Correct. Window controls overlay is a Windows-specific feature that enhances user experience and should be tested in your PWA."
     - content: "Google Chrome compatibility"
       isCorrect: false
       explanation: "Incorrect. Google Chrome compatibility isn't a Windows-specific feature."

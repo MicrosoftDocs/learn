@@ -29,7 +29,7 @@ Before you can submit your PWA to the Microsoft Store, you need to create the pr
 1. Navigate to **PWABuilder.com**.
 1. Enter the **URL** of your PWA on the homepage and select **Start**.
 
-    :::image type="content" source="../media/ship-your-pwa-to-app-stores.png" alt-text="Screenshot that shows the Ship your PWA to app stores field on the PWABuilder homepage. Enter the URL to your PWA.":::
+    :::image type="content" source="../media/ship-pwa-app-stores.png" alt-text="Screenshot that shows the Ship your PWA to app stores field on the PWABuilder homepage. Enter the URL to your PWA.":::
 
 1. Select **Package For Stores** to navigate to the **Package Selection** page.
 1. Select **Generate Package** underneath **Windows** in the upper left.
@@ -38,13 +38,13 @@ Before you can submit your PWA to the Microsoft Store, you need to create the pr
 
 1. A **Package Options** prompt displays. Enter the three product identity values you saved when you reserved your app name.
 
-    :::image type="content" source="../media/enter-your-3-product-identity-values.png" alt-text="Screenshot of PWABuilder that shows the Windows App Options dialog box.  Within the dialog box, there are three values about your app that you must enter. The Package ID, Publisher ID, and Publisher Display Name.":::
+    :::image type="content" source="../media/enter-3-product-identity-values.png" alt-text="Screenshot of PWABuilder that shows the Windows App Options dialog box.  Within the dialog box, there are three values about your app that you must enter. The Package ID, Publisher ID, and Publisher Display Name.":::
 
 1. Select **Download Package**.
 
 ## Submit request to publish PWA
 
-The final step to make your application accessible to users via the Microsoft Store is to submit your PWA through the Partner Center. This process involves uploading your packaged PWA and providing the necessary details about your app. Once you submit you PWA and it's approved, it's available for users to download and install directly from the Store to  increase your application's visibility and reach.
+The final step to make your application accessible to users via the Microsoft Store is to submit your PWA through the Partner Center. This process involves uploading your packaged PWA and providing the necessary details about your app. Once you submit your PWA and it's approved, it's available for users to download and install directly from the Store to  increase your application's visibility and reach.
 
 Refer to the following steps to submit your PWA through Partner Center:
 
