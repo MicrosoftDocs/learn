@@ -1,3 +1,4 @@
+
 To create a question answering solution, you can use the REST API or SDK to write code that defines, trains, and publishes the knowledge base. However, it is more common to use the [Language Studio](https://language.azure.com) web interface to define and manage a knowledge base.
 
 To create a knowledge base:
