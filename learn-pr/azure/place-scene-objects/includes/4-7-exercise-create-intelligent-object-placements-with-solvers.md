@@ -38,7 +38,7 @@ Use the Directional Indicator solver to direct the user to objects. Here's how:
 
 Use the Tap To Place solver to reposition objects. Here's how:
 
-1. In the **Hierarchy** window, select the **RoverExplorer** > **RoverAssembly** object. Then, in **Inspector**, use **Add Component** to add the **Tap To Place (Script)** component. Configure the component as follows:
+1. In the **Hierarchy** window, select the **RoverExplorer** > **RoverAssembly** object. Then, in **Inspector**, use **Add Component** to add the **Tap To Place** component. Configure the component as follows:
 
     a. Verify that the **SolverHandler** component's **Tracked Target Type** is set to **Head**.
 
@@ -48,9 +48,13 @@ Use the Tap To Place solver to reposition objects. Here's how:
 
     :::image type="content" source="../media/add-solver.png" alt-text="Screenshot that shows the Tap To Place solver component added and configured." lightbox="../media/add-solver.png":::
 
-1. Set the Placement action by clicking on the field and selecting **MRTK RightHand/Select** from the popup. You will likely need to click on the **eye icon** in the top right to show the default MRTK input actions.
+1. Next, use **Add Component** to add the **Stateful Interactable** component. In the **Inspector** window, locate the **On Clicked ()** event. Select the **+** icon to add a new event. Configure the event as follows:
 
-    :::image type="content" source="../media/solver-placement-action.png" alt-text="Screenshot that shows setting the Tap To Place component's placement action." lightbox="../media/solver-placement-action.png":::
+    a. Assign the **RoverAssembly** object as a listener for the **On Clicked ()** event, by dragging it from **Hierarchy** into the **None (Object)** field.
+
+    b. From the **No Function** dropdown list, select **TapToPlace** > **StartPlacement()** to call this method when the event is triggered.
+
+    :::image type="content" source="../media/configure-start-event.png" alt-text="Screenshot that shows the Tap To Place On Placing Started event configured." lightbox="../media/configure-start-event.png":::
 
 1. With the **RoverAssembly** object still selected in the **Hierarchy** window, in the **Inspector** window, locate the **On Placing Started ()** event. Select the **+** icon to add a new event.
 

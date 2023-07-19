@@ -7,7 +7,6 @@ This module helps you to understand how to use MRTK features to organize objects
 By the end of this module, you'll be able to:
 
 * Position objects in the scene.
-* Use MRTK's Grid Object Collection feature.
 * Reposition objects by using solvers.
 * Direct the user to objects by using solvers.
 

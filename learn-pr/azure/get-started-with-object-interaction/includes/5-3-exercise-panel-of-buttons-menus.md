@@ -13,6 +13,8 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/pressable-cylinder-button.png" alt-text="Screenshot of Unity with newly added PressableRoundButton prefabs." lightbox="../media/pressable-cylinder-button.png":::
 
+    A window will prompt you to import TextMesh Pro. Select the first option to 'Import TMP Essentials'.
+
 3. In the Hierarchy pane, select the **Buttons** object, and then in the Inspector pane, select **Add Component** to add the **Object Bar** component. Configure it as follows:
 
     * **Object Bar Flow Direction**: Horizontal
@@ -47,6 +49,8 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     :::image type="content" source="../media/explode-button-pressed.png" alt-text="Screenshot of Unity Play mode split view with Explode button being pressed." lightbox="../media/explode-button-pressed.png":::
 
+    We will implement the **Reset** button later in the module.
+
 ## Create a dynamic menu that follows the user
 
 1. In the Project pane, navigate to the **Packages** > **MRTK UX Components** > **Near Menu** folder, click-and-drag the **NearMenuBase** prefab into the Hierarchy window, set its Transform **Position** to X = 0, Y = -0.4, Z = 0 and configure it as follows:
@@ -63,7 +67,7 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy
     * Configure the **PressableButton.OnClicked()** event by assigning the **Indicator** object that looks like a chevron, to the **None (Object)** field and selecting **GameObject > SetActive (bool)** from the **No Function** dropdown (verify that the argument checkbox is **checked**)
-    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the 'search' icon on the **Font Icon Selector** component
+    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the search icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to 'Icon 130'
 
     :::image type="content" source="../media/indicator-button-object.png" alt-text="Screenshot of Unity with Indicator button object Button Config Helper configured." lightbox="../media/indicator-button-object.png":::
 
@@ -78,7 +82,7 @@ There are several ways to provide inputs. Inputs trigger certain events and perf
 
     * Select the **Frontplate > AnimatedContent > Icon > Label** object and change the **TextMesh Pro** component to match the name of the button. Make sure the Label object is activated in the hierarchy
     * Configure the **PressableButton.OnClicked()** event by assigning the RoverExplorer > **RoverAssembly** object to the **None (Object)** field and selecting **TapToPlace** > **bool Enabled** from the **No Function** dropdown (verify that the argument checkbox is **checked**)
-    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the 'hand' icon on the **Font Icon Selector** component
+    * Select the **Frontplate > AnimatedContent > Icon > UIButtonFontIcon** object and change the icon to the hand icon on the **Font Icon Selector** component. You can find this in the list of icons, or set **Current Icon Name** to 'Icon 13'
 
     :::image type="content" source="../media/tap-to-place-button.png" alt-text="Screenshot of Unity with TapToPlace button object Button Config Helper configured." lightbox="../media/tap-to-place-button.png":::
 

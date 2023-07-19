@@ -13,7 +13,6 @@ summary: This course provides you with an understanding of placing objects and t
 abstract: |
   By the end of this module you'll be able to:
   - Position objects in the scene
-  - Use the Mixed Reality Toolkit (MRTK) feature called Grid Object Collection
   - Use solvers to direct the user to objects
   - Use solvers to reposition objects
 

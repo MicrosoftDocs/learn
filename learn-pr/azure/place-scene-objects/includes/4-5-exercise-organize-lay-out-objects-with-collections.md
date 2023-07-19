@@ -37,5 +37,9 @@ The Mixed Reality Toolkit provides a set of tools and components to accelerate y
     * **Object Bar Flow Direction**: Horizontal
     * **Spacing Between X**: 0.25
     * **Spacing Between Y**: 0
+    
+    You can also set the **Transform** of **RoverParts** to view it at a different angle. For instance:
+
+    * **Rotation**: Y = 0
 
     :::image type="content" source="../media/object-bar-configure.png" alt-text="Screenshot that shows configuration of the Object Bar properties." lightbox="../media/object-bar-configure.png":::
