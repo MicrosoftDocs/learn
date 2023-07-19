@@ -10,7 +10,7 @@ However, when you get to work on Monday morning, you find the following email in
 
 It looks like you received an email in your inbox from Microsoft Azure notifying you that the current Kubernetes version that your AKS cluster deployments are running will go out of support soon.
 
-This must have happened because the deployment took months to complete. During this time, Kubernetes rolled out newer cluster versions. You must now upgrade your clusters immediately to the latest supported Kubernetes version. You want to understand how this could've happened and what your next steps should be.
+This must have happened because the deployment took months to complete. During this time, Kubernetes rolled out newer cluster versions. You must now upgrade your clusters immediately to the latest supported Kubernetes version. You want to understand how this could have happened and what your next steps should be.
 
 By the end of this module, you should be able to upgrade and apply patches to your AKS clusters to the latest supported versions.
 
