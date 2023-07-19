@@ -1,42 +1,40 @@
-When a customer adds a pizza to their order, they can select a **X** to remove it without confirmation. The company thinks customers might have been accidentally clicking this and removing items from their order. You'll add a feature that prompts the user to make sure they do want to remove the pizza. The pizza company wants to be able to show customers the live status of their orders. You'll update the order detail page to query the order status in real-time.
+After a customer adds a pizza to their order, they can select a **X** to remove it without confirmation. To help prevent customers from accidentally removing items from their orders, the company wants you to add a prompt to confirm they want to remove the items.
 
-In this exercise, you'll extend an existing app created for the pizza delivery company. You'll use JS interop to call JavaScript on the client side from a Blazor component. You'll then see how to integrate with a third-party JavaScript library to improve the popup. In the final steps of the exercise, you'll call a Blazor method from JavaScript to get the real-time status of a customer order.
+The pizza company also wants to show customers the live status of their orders, so you need to update the order detail page to query the order status in real time.
 
-## Clone your team's existing app
+In this exercise, you extend the pizza delivery company's existing app. You use JS interop to call JavaScript on the client side from a Blazor component. You then integrate with a third-party JavaScript library to improve the cancellation popup. Finally, you call a Blazor method from JavaScript to get the real-time status of a customer order.
 
 > [!TIP]
-> This module uses the .NET CLI (Command Line Interface) and Visual Studio Code for local development. After completing this module, you can apply the concepts using Visual Studio (Windows), Visual Studio for Mac (macOS), or continued development using Visual Studio Code (Windows, Linux, and macOS).
+> This module uses the .NET Command Line Interface (CLI) and Visual Studio Code for local development. After you complete this module, you can apply the concepts by using Visual Studio for Windows or Visual Studio for Mac, or continue development by using Visual Studio Code with Windows, Linux, and macOS.
 
-If you haven't created a Blazor app before, follow the [setup instructions for Blazor](https://aka.ms/blazor-getting-started) to install the correct version of .NET and check your machine is set up correctly. Stop at the **Create your app** step.
+## Clone the existing app
 
-[!include[](../../../includes/dotnet7-sdk-version.md)]
+Make sure you have the prerequisite [.NET SDK 7.0](https://dotnet.microsoft.com/download/dotnet/7.0) installed. To confirm correct installation see [Check everything installed correctly](https://dotnet.microsoft.com/learn/aspnet/blazor-cli-tutorial/install).
 
-1. Open **Visual Studio Code**.
-1. Open the integrated terminal from Visual Studio Code by selecting **View**, then select **Terminal** from the main menu.
+1. In Visual Studio Code, select **Terminal** > **New terminal** from the top menu.
 1. In the terminal, go to where you'd like the project to be created.
-1. Clone the app from GitHub.
+1. Run the following command to clone the app from GitHub.
 
-    ```bash
-    git clone https://github.com/MicrosoftDocs/mslearn-build-interactive-components-blazor.git BlazingPizza
-    ```
+   ```bash
+   git clone https://github.com/MicrosoftDocs/mslearn-build-interactive-components-blazor.git BlazingPizza
+   ```
 
-1. Select **File**, then select **Open folder...**.
-1. In the Open dialog, go to the **BlazingPizza** folder, and select **Select Folder**.
+1. Select **File** > **Open folder**.
+1. In the **Open Folder** dialog box, browse to the **BlazingPizza** folder and select **Select Folder**.
 
-    Visual Studio Code might prompt you about unresolved dependencies. Select **Restore**.
+   If Visual Studio Code prompts you about missing assets or unresolved dependencies, select **Yes** or **Restore**.
 
-1. Run the app to check everything is working correctly.
-1. In Visual Studio Code, press <kbd>F5</kbd>, or in the **Run** menu, select **Start Debugging**.
+1. To run the app and check everything is working correctly, press <kbd>F5</kbd>, or select **Run** > **Start Debugging**.
 
-    Try configuring some pizzas and adding them to your order. With a few pizzas in your order, select the **X** and see how that item is removed without any prompt.
+1. In the web app, select some pizzas and add them to your order. With a few pizzas in your order, select the **X** next to one of the pizzas and notice that the item disappears without any prompt.
 
-1. Press <kbd>Shift</kbd> + <kbd>F5</kbd> to stop the app from running.
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to stop the app.
 
 ## Refactor the order process
 
 To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
 
-1. In the file explorer, expand **Pages**, then select **Index.razor**.
+1. In Visual Studio Code **Explorer**, expand **Pages** and then select *Index.razor*.
 1. Under the `@inject OrderState OrderState` statement, add the `IJSRuntime` injection.
 
     ```razor
@@ -53,7 +51,7 @@ To use the JavaScript interop, you inject the `IJSRuntime` abstraction.
     </button>
    ```
 
-1. Add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, then call the `RemoveConfiguredPizza`, otherwise leave the pizza in the order.
+1. Add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, then call the `RemoveConfiguredPizza`, otherwise keep the pizza in the order.
 
     ```razor
     async Task RemovePizzaConfirmation(Pizza removePizza)
