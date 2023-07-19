@@ -15,7 +15,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "You have made changes your `azd` template, but you only want to redeploy the application code without provisioning any changes made to the infrastructure as code files. Which command should you run?"
+  - content: "You have made changes to your `azd` template, but you only want to redeploy the application code without provisioning any changes made to the infrastructure as code files. Which command should you run?"
     choices:
     - content: "`azd provision`"
       isCorrect: false
