@@ -16,7 +16,8 @@ There are two kinds of namespaces, user-defined namespaces and system-defined na
 This example demonstrates that you create a namespace using the `namespace` keyword. The code in your namespace can then be accessed from any another namespace by prefixing the namespace name followed by the "." operator and class name to access the classes in the namespace.
 ```csharp
 namespace Housing_Development_Project_1
-{   // The classes in your namespace go here
+{
+   // The classes in your namespace go here
 }
 ```
 
@@ -31,7 +32,8 @@ using System.Threading.Tasks;
 using Housing_Development_Project_1
 
 namespace Another_namespace_here
-{   // Code goes here
+{
+   // Code goes here
 }
 ```
 
@@ -43,8 +45,7 @@ In the following code example, you see a `House` class in the `Housing_Developme
 
 ```csharp
 namespace Housing_Development_Project_1
-{   internal class House   {
-   }
+{   internal class House   {          }
 }
 ```
 
