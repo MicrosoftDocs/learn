@@ -45,7 +45,10 @@ In the following code example, you see a `House` class in the `Housing_Developme
 
 ```csharp
 namespace Housing_Development_Project_1
-{   internal class House   {          }
+{
+   internal class House
+   {       
+   }
 }
 ```
 
