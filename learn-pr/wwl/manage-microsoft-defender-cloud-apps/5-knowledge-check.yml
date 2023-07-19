@@ -4,47 +4,57 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/10/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "What are the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment?"
+  - content: "You're an IT team member responsible for ensuring the security of your organization's cloud applications and services. Your team is planning to implement Microsoft Defender for Cloud Apps. What is the relevance of this solution in today's dynamic work settings?"
     choices:
-    - content: "Incident response, application security, data protection, and identity management."
-      isCorrect: false
-      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment. Try again."
-    - content: "Visibility, threat protection, data protection, and regulatory compliance."
-      isCorrect: false
-      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment. Try again."
-    - content: "Visibility, threat protection, data protection, and identity and access management."
+    - content: "Microsoft Defender for Cloud Apps is a robust cloud security solution that helps strike a balance between facilitating access and safeguarding crucial data in today's dynamic work settings."
       isCorrect: true
-      explanation: "Correct. This is one of the four primary pillars of capabilities that a Cloud Access Security Broker (CASB) offers to safeguard an organization's environment."
-  - content: "Which of the following are benefits of using Microsoft Defender for Cloud Apps?"
+      explanation: "Correct. Microsoft Defender for Cloud Apps is designed to optimize the advantages of cloud applications and services while ensuring the security of your organization's sensitive data. It helps strike a balance between facilitating access and safeguarding crucial data in today's dynamic work settings."
+    - content: "Microsoft Defender for Cloud Apps isn't relevant in today's dynamic work settings."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is a robust cloud security solution that helps protect your organization's sensitive data from cyber threats. It is highly relevant in today's dynamic work settings where cloud technology is widely used."
+    - content: "Microsoft Defender for Cloud Apps is only relevant for large organizations with complex cloud environments."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is relevant for organizations of all sizes, regardless of the complexity of their cloud environments. It provides a comprehensive understanding of cloud security and helps improve overall security posture."
+  - content: "Why is a Cloud Access Security Broker (CASB) necessary for organizations using cloud apps?"
     choices:
-    - content: "Accelerated processing speed of cloud applications."
+    - content: "CASBs are only necessary for organizations with a few users accessing cloud services."
       isCorrect: false
-      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the benefits listed in the question. Try again."
-    - content: "Reduced storage requirements for cloud services."
+      explanation: "Incorrect. CASBs are necessary for organizations of all sizes that use cloud services to protect against malicious actors and secure sensitive data."
+    - content: "CASBs are only necessary for organizations using IaaS and PaaS cloud services."
       isCorrect: false
-      explanation: "Incorrect. While this is a benefit of using Microsoft Defender for Cloud Apps, it's not one of the benefits listed in the question. Try again."
-    - content: "Enhanced security for sensitive data and protection against cyber threats."
+      explanation: "Incorrect. CASBs are necessary for organizations using all types of cloud services, including SaaS, PaaS, and IaaS."
+    - content: "CASBs are necessary to tackle the unique challenges of securing cloud environments, including IAM, VMs, compute resources, data and storage, and network resources."
       isCorrect: true
-      explanation: "Correct. This is one of the benefits of using Microsoft Defender for Cloud Apps."
-  - content: "What are the seven steps required to initiate the use of Microsoft Defender for Cloud Apps?"
+      explanation: "Correct. CASBs provide a broad range of capabilities that safeguard cloud environments across multiple pillars, including visibility, data security, threat protection, and compliance."
+  - content: "As a security administrator, what is the prerequisite to set up Microsoft Defender for Cloud Apps?"
     choices:
-    - content: "Access the portal, integrate with Microsoft Defender for Endpoint, create snapshot Cloud Discovery reports, deploy Conditional Access App Control for catalog apps, personalize your experience, set up data loss prevention policies, and organize the data according to your needs."
+    - content: "A license for Office 365 productivity suite"
       isCorrect: false
-      explanation: "Incorrect. This is the correct order of steps, but the first step is incorrect. Try again."
-    - content: "Access the portal, protect sensitive information with DLP policies, configure Cloud Discovery, set instant visibility, protection, and governance actions for your apps, deploy Conditional Access App Control for catalog apps, personalize your experience, and organize the data according to your needs."
-      isCorrect: false
-      explanation: "Incorrect. This is the correct order of steps, but the first step is incorrect. Try again."
-    - content: "Access the portal, set instant visibility, protection, and governance actions for your apps, protect sensitive information with DLP policies, control cloud apps with policies, set up Cloud Discovery, deploy Conditional Access App Control for catalog apps, personalize your experience, and organize the data according to your needs."
+      explanation: "Incorrect. Microsoft Defender for Cloud Apps is a security tool and doesn't require Office 365 productivity suite licenses."
+    - content: "A license for every user protected by Microsoft Defender for Cloud Apps"
       isCorrect: true
-      explanation: "Correct. This is the correct order of steps."
+      explanation: "Correct. In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps."
+    - content: "A license for every user in the organization"
+      isCorrect: false
+      explanation: "Incorrect. In order for your organization to be in compliance for licensing Microsoft Defender for Cloud Apps, you must obtain a license for every user protected by Microsoft Defender for Cloud Apps."
+  - content: "What is the purpose of connecting an app in Microsoft Defender for Cloud Apps?"
+    choices:
+    - content: "To decrease visibility so you can investigate activities, files, and accounts for the apps in your cloud environment"
+      isCorrect: false
+      explanation: "Incorrect. Connecting an app increases visibility so you can investigate activities, files, and accounts for the apps in your cloud environment."
+    - content: "To gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment"
+      isCorrect: true
+      explanation: "Correct. Connecting an app enables you to gain deeper visibility so you can investigate activities, files, and accounts for the apps in your cloud environment."
+    - content: "To increase the number of apps in your cloud environment"
+      isCorrect: false
+      explanation: "Incorrect. Connecting an app does not increase the number of apps in your cloud environment."
