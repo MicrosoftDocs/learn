@@ -1,10 +1,12 @@
-## How to start this exercise
+<!-- Add introductory sentence for exercise.  -->
+
+## Instructions
 
 1. Right-click Start course hyperlink and open the link in a new tab.
-   - In the new tab, most of the prompts will automatically fill in for you.
+   - In the new tab, most of the prompts automatically fill in for you.
    - For owner, choose your personal account or an organization to host the repository.
-   - We recommend creating a public repository, as private repositories will use Actions minutes.
-1. Scroll down and click the Create repository button at the bottom of the form.
+   - We recommend creating a public repository, as private repositories use Actions minutes.
+1. Scroll down and select the Create repository button at the bottom of the form.
 1. After your new repository is created, wait about 20 seconds, then refresh the page. Follow the step-by-step instructions in the new repository's README.
 
 > [!div class="nextstepaction"]

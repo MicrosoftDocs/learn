@@ -1,1 +1,3 @@
-<!-- Need Cami to create an intro paragraph.  -->
+GitHub Codespaces is an instant, cloud-based development environment that uses a container to provide you with common languages, tools, and utilities for development. 
+
+In this module, we'll explore ...............

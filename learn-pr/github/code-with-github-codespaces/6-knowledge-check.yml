@@ -17,7 +17,7 @@ quiz:
     choices:
     - content: "/workspaces directory"
       isCorrect: true
-      explanation: "Correct. After creating a Codespace, the clone is placed into the /workspace directory."
+      explanation: "Correct. After you create a Codespace, the clone is placed into the /workspace directory."
     - content: "/temp directory"
       isCorrect: false
       explanation: "Incorrect. /temp directory isn't the location where cloned content is placed."
@@ -43,13 +43,13 @@ quiz:
       explanation: "Correct. You can have an unlimited number of Codespaces per repository or even per branch. However, there are limits to the number of Codespaces that you can create and run at the same time."
   - content: "What happens when Codespace loses internet connectivity"
     choices:
-    - content: "If the connection to the internet is lost while working in a Codespace, you won't be able to access your Codespace."
+    - content: "If the connection to the internet is lost while working in a Codespace, you aren't able to access your Codespace."
       isCorrect: true
-      explanation: "Correct. A Codespace requires an internet connection. If the connection to the internet is lost while working in a Codespace, you won't be able to access your Codespace."
+      explanation: "Correct. A Codespace requires an internet connection. If the connection to the internet is lost while working in a Codespace, you aren't able to access your Codespace."
     - content: "Codespace doesn't require an internet connection. I can access my Codespace regardless if I lose connectivity."
       isCorrect: false
       explanation: "Incorrect. A Codespace requires an internet connection."
-    - content: "If you lose internet connection while working on your Codespace, your changes won't be saved."
+    - content: "If you lose internet connection while working on your Codespace, your changes aren't saved."
       isCorrect: false
       explanation: "Incorrect.  Any uncommitted changes are saved. When reestablished, you can access Codespace in the same state as when the connection was lost."
   - content: "What defines the beginning of a Codespace's lifecycle?"
