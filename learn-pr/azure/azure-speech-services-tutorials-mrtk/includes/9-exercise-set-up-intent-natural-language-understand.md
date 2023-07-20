@@ -8,12 +8,12 @@ In this module, you'll explore the Azure Speech Service's intent recognition. Th
 
 2. In the Project window, navigate to the **Assets** > **MRTK.Tutorials.GettingStarted** > **Prefabs** > **RocketLauncher** folder, drag the **RocketLauncher_Complete** prefab into your Hierarchy window, and place it at a suitable location in front of the camera, for example:
 
-    * Transform **Position** X = 0, Y = -0.4, Z = 1
+    * Transform **Position** X = 0, Y = 1, Z = 1.5
     * Transform **Rotation** X = 0, Y = 90, Z = 0
 
     :::image type="content" source="../media/rocket-launcher-prefab.png" alt-text="Screenshot of Add the RocketLauncher_Complete prefab." lightbox="../media/rocket-launcher-prefab.png":::
 
-3. In the Hierarchy window, select the **Lunarcom** object again, then expand the **RocketLauncher_Complete** > **Button** object and assign each of the **Buttons** object's child objects to the corresponding **Lunar Launcher Buttons** field:
+3. In the Hierarchy window, select the **Lunarcom** object again, then expand the **RocketLauncher_Complete** > **Buttons** object and assign each of the **Buttons** object's child objects to the corresponding **Lunar Launcher Buttons** field:
 
     :::image type="content" source="../media/assign-buttons.png" alt-text="Screenshot of Assigning each of the buttons." lightbox="../media/assign-buttons.png":::
 
@@ -83,7 +83,7 @@ Using the same user account you used when creating the Azure resource in the pre
 2. After having connected the Azure resource, select **Create new > Conversational Language Understanding** and enter the following values in the **Create a project** popup window:
 
     * For **Name**, enter a suitable name, for example: *MRTK-Tutorials-AzureSpeechServices*. Note down the name you selected, you'll need it later in the tutorial.
-    * For **Utterances primary language**, select **English**
+    * For **Utterances primary language**, select a language
     * For **Description**, optionally enter a suitable description
 
     :::image type="content" source="../media/create-project.png" alt-text="Screenshot of Create a project popup." lightbox="../media/create-project.png":::
@@ -189,7 +189,7 @@ Using the same user account you used when creating the Azure resource in the pre
     * **reset** (targets the ResetButton in the Unity project)
     * **launch** (targets the LaunchButton in the Unity project)
 
-7. When you have labeled all the example utterances, your PressButton intent page should look like this:
+7. Save your changes. When you have labeled all the example utterances, your PressButton intent page should look like this:
 
     :::image type="content" source="../media/utterances-label.png" alt-text="Screenshot of All the example utterances have been labeled." lightbox="../media/utterances-label.png":::
 
@@ -239,6 +239,7 @@ Using the same user account you used when creating the Azure resource in the pre
     * In the **CLU Endpoint** field, pass the **Prediction URL** you copied in the previous step.
     * In the **CLU Project Name** field, pass the **Project Name** you noted down when creating a CLU app.
     * In the **CLU Deployment** field, pass the **Deployment Name** you noted down when creating a new deployment.
+    * In the **Language Service API Key** field, pass the API key (Key1 or Key2) for your **Language Service**
 
     :::image type="content" source="../media/example-query.png" alt-text="Screenshot of Pass the example query you copied." lightbox="../media/example-query.png":::
 
@@ -248,7 +249,7 @@ Using the same user account you used when creating the Azure resource in the pre
 
     :::image type="content" source="../media/intent-recognition.png" alt-text="Screenshot of Testing the intent recognition." lightbox="../media/intent-recognition.png":::
 
-2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, assuming your computer has a microphone, when you say the first example utterance, **go ahead and launch the rocket**, you will see the LunarModule launch into space:
+2. If you enter Game mode, you can test the intent recognition by first pressing the rocket button. Then, when you say the first example utterance, **go ahead and launch the rocket**, you will see the LunarModule launch into space:
 
     :::image type="content" source="../media/press-rocket-button.png" alt-text="Screenshot of Enter the game mode." lightbox="../media/press-rocket-button.png":::
 
