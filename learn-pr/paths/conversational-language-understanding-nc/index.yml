@@ -17,10 +17,10 @@ prerequisites: |
   *   Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  In this learning path, you'll learn how Azure Cognitive Services for Language can enable you to understand naturla language in your applications. You will learn how to:
+  In this learning path, you'll learn how Azure Cognitive Services for Language can enable you to understand natural language in your applications. You'll learn how to:
   * Train a language model that apps can use to extract meaning from natural language.
   * Create question answering solutions that enable users to ask questions using natural language, and receive appropriate answers. 
-  * Learn how to train custom models using Azure Forms Recognizer.
+  * Learn how to train custom models using Azure Cognitive Services for Language.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -41,4 +41,4 @@ modules:
 - learn.wwl.custom-text-classification
 - learn.wwl.custom-name-entity-recognition
 trophy:
-  uid: learn.wwl.create-language-solution-azure-cognitive-services.trophy
+  uid: learn.wwl.conversational-language-understanding.trophy
