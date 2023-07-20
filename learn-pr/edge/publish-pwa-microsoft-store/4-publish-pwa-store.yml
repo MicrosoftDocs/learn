@@ -11,4 +11,4 @@ metadata:
   ms.prod: microsoft-edge
 durationInMinutes : 6
 content: |
-  [!include[](includes/4-publish-pwa-ms-store.md)]
+  [!include[](includes/4-publish-pwa-store.md)]
