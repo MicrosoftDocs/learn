@@ -3,7 +3,7 @@ TensorFlow is a popular framework for working with machine learning. This module
 
 At the end of this module, if you feel that you need more flexibility than Keras provides, then the fifth module of this learning path, *Intro to Machine Learning with TensorFlow*, shows how to reimplement a portion of the Keras code in this module using lower-level TensorFlow APIs.
 
-In both this module and module five, we show you how you can create a basic neural network using the Fashion MNIST dataset as a data source. You'll build a neural network that takes as input images of clothing, and classifies them according to their contents, such as *Shirt*, *Coat*, or *Dress*.
+Both this module and module five show how you can create a basic neural network using the Fashion MNIST dataset as a data source. You'll build a neural network that takes images of clothing as input, and then classifies them according to their contents, such as *Shirt*, *Coat*, or *Dress*.
 
 For this module, we assume that you're comfortable with Python, but we don't assume any knowledge of Keras or TensorFlow.
 
