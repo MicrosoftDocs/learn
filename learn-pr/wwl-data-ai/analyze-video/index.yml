@@ -3,6 +3,7 @@ uid: learn.wwl.analyze-video
 metadata:
   title: Analyze video
   description: "Analyze video"
+  ms.service: cognitive-services
   ms.date: 07/14/2022
   author: wwlpublish
   ms.author: gmalc
