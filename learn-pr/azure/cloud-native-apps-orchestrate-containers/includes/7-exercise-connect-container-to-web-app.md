@@ -77,7 +77,7 @@ Now we need to deploy the service for our changes to take effect.
 
 While AKS gets sets up, you can start to use the Container Registry to deploy the management web app.
 
-You'll use the Docker image to deploy the web app, which will require a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to login to your container registry.
+You'll use the Docker image to deploy the web app, which will require a username and password to perform this action. The ACR allows you to enable the registry name as the username and admin access key as the password to allow Docker to sign in to your container registry.
 
 1. Return to the [Azure portal](https://portal.azure.com/), and go to **All resources**.
 
