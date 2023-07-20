@@ -10,9 +10,9 @@ The Bicep or Terraform files for your template live in the `infra` folder. The B
 
 You can define and provision the required Azure resources for your app by updating the `main.bicep` file and creating more Bicep files. `Main.bicep` generally orchestrates the execution of other Bicep modules by passing parameters between them. For this example, you'll create an additional Bicep module to define the Azure App Service that will host your application.
 
-1. Inside of the `infra` folder of your template, create a new file called `web.bicep`.
+1. Inside of the `infra` folder of your template, create a new file called `app.bicep`.
 
-1. Open the `web.bicep` file and paste the following code snippet. The code comments describe the purpose of each section of code.
+1. Open the `app.bicep` file and paste the following code snippet. The code comments describe the purpose of each section of code.
 
     ```Bicep
     // Define parameters that can be passed into the module

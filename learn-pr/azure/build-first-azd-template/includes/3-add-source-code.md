@@ -26,4 +26,8 @@ The Azure Developer CLI (`azd`) is designed to provision and deploy resources to
     dotnet new webapp
     ```
 
-You should see the app source code populate in your `web` directory either in the file explorer or in your editor. `azd` can deploy the app to Azure after you complete some additional configurations.
+You should see the app source code populate in your `web` directory either in the file explorer or in your editor.
+
+:::image type="content" source="../media/app-files.png" alt-text="A screenshot showing the source code files.":::
+
+`azd` can deploy the app to Azure after you complete some additional configurations.
