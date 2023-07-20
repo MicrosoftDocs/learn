@@ -5,6 +5,8 @@ Picture all of the text in the world laid out page by page like a big map. Then 
 
 We call the body of training text the *corpus* and the words that are broken down into their root form *tokens*. In this way, the commonality between words like "running", "runner", "runs" could be captured through the token `run`. 
 
+Vectors are assigned to each word during the training process, so that the representation for each token consist of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map. So for example, after training is complete, the vectors for "cat" and "dog" will likely be closer together along one dimension than, say, "skateboard"; and the vector for "cat" might be close to "meow" one a dimension in which "dog" is close to "woof". That way, we can represent semantic meaning by the distance between vectors. 
+
 #### Transformer architecture captures context
 Transformer architecture is designed to predict the next word in a sequence based on the preceding text.  
 
@@ -22,6 +24,6 @@ Mapping huge volume of data enables the model to learn language patters. The res
 #### Common Models
 With all this complexity, you can imagine there is more than one way to solve for a problem. Each pre-trained model is a way of solving the problem of language understanding. Common transformer based LLMs include the BERT model (which is used to power Google search) and Generative Pre Trained (GPT) models from OpenAI. 
 
-All of these models can be improved or customized. These pre-trained models can be fed more information about how to behave. Using more information is called "few-shot" learning. Not using more information is known as "zero-shot" learning. Using a previously trained model for a new, related purpose is known as transfer learning.
+All of these models can be improved or customized. These pre-trained models can be fed more information about how to behave. Using more information is called "few-shot" learning. Not using more information is known as "zero-shot" learning. 
 
 Next we will take a look at how models have evolved and some constraints.  
