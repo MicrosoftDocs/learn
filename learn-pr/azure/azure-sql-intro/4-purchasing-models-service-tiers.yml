@@ -2,8 +2,8 @@
 uid: learn.azure-sql-intro.4-purchasing-models-service-tiers
 metadata:
   title: Purchasing models, service tiers, and hardware choices
-  description: Purchasing models, service tiers, and hardware choices
-  ms.date: 03/15/2023
+  description: Learn about Azure SQL purchasing models, service tiers, and hardware choices, and when to choose them.
+  ms.date: 07/13/2023
   author: MashaMSFT
   ms.author: mathoma
   ms.topic: interactive-tutorial
@@ -15,7 +15,7 @@ content: |
 quiz:
     title: Knowledge check
     questions:
-    - content: "You're moving an application and database to Azure, but your database is currently 62 TB and will to continue to grow. You don't currently use any instance-scoped features. Which Azure SQL deployment option will be easiest to use?"
+    - content: "You're moving an application and database to Azure, but your database is currently 62 TB and will continue to grow. You don't currently use any instance-scoped features. Which Azure SQL deployment option will be easiest to use?"
       choices:
       - content: "SQL Server in an Azure virtual machine"
         isCorrect: false

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.design-considerations-mr-development.mixed-reality-resources
+title: Mixed reality resources
+metadata: 
+  title: Mixed reality resources
+  description: Explore platforms and resources used in mixed reality design.
+  ms.date: 6/29/2022
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/7-mixed-reality-resources.md)]

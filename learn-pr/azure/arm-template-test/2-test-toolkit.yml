@@ -9,7 +9,9 @@ metadata:
   ms.date: 06/07/2022
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-arm-template
 durationInMinutes: 5
 content: |
   [!include[](includes/2-test-toolkit.md)]

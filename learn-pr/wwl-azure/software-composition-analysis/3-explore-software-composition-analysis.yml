@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.software-composition-analysis.explore-software-composition-analysis-sca
-title: Explore software composition analysis
+uid: learn.wwl.software-composition-analysis.explore-software-composition-analysis
+title: Explore software composition analysis (SCA)
 metadata:
-  title: Explore software composition analysis
-  description: "Explore software composition analysis"
-  ms.date: 06/07/2023
+  title: Explore software composition analysis (SCA)
+  description: "Explore software composition analysis (SCA)"
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure-devops
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-software-composition-analysis.md)]

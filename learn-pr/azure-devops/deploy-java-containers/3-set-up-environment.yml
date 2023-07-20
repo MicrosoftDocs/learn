@@ -1,15 +1,51 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-java-containers.3-set-up-environment
-title: Exercise - Set up your Azure DevOps environment
+title: Java in Azure and Azure DevOps
 metadata:
-  title: Exercise - Set up your Azure DevOps environment
-  description: Create your Azure DevOps project and Azure resources.
+  title: Java in Azure and Azure DevOps
+  description: Learn how Azure, Azure DevOps, and Azure Database for MySQL support Java applications and Docker containers.
   ms.date: 08/26/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: devdivchpfy22
-durationInMinutes: 20
+  ms.custom: devdivchpfy22, devx-track-extended-java
+durationInMinutes: 7
 content: |
   [!include[](includes/3-set-up-environment.md)]
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "What source changes do typical Java projects require in order to run on Azure?"
+    choices:
+    - content: "Rewriting the app in C# or another .NET language."
+      isCorrect: false
+      explanation: "Azure supports Java as a first-class app platform."
+    - content: "Rewriting configuration code to connect to Azure's configuration service."
+      isCorrect: false
+      explanation: "Azure can provide application settings with standard mechanisms, such as configuration files and environment variables."
+    - content: "No changes."
+      isCorrect: true
+      explanation: "Azure supports Java as a first-class app platform."
+  - content: "How does hosting Java apps on Azure differ from hosting apps built for other platforms like .NET?"
+    choices:
+    - content: "Each app platform has its own dependencies, so developers need to be sure the target they're using is configured correctly."
+      isCorrect: true
+      explanation: "Just like deploying anywhere else, the application environment must account for application prerequisites."
+    - content: "Java deployments require using Java performance and monitoring tools."
+      isCorrect: false
+      explanation: "Specialized Java tools work as expected, but Azure performance and monitoring tools work the same on all platforms, including Java deployments."
+    - content: "Java can deploy only to websites on Azure."
+      isCorrect: false
+      explanation: "You can deploy Java apps to Azure App Service, Azure Functions, container-based services, and other Azure targets."
+  - content: "What databases can Java apps connect to on Azure?"
+    choices:
+    - content: "Azure SQL Database is the only option."
+      isCorrect: false
+      explanation: "Java apps in Azure can connect to Azure SQL Database, but can also connect to other Azure databases and database services."
+    - content: "Azure Database for MySQL is the only option."
+      isCorrect: false
+      explanation: "Java apps in Azure can connect to Azure Database for MySQL, but can also connect to other Azure databases and database services."
+    - content: "Java apps can connect to any Azure database or database service."
+      isCorrect: true
+      explanation: "There's no limit to the databases or services Java apps can connect to on Azure."

@@ -4,12 +4,10 @@ title: Define brute force attacks
 metadata:
   title: Define brute force attacks
   description: "Define brute force attacks"
-  ms.date: 04/19/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
   [!include[](includes/14-brute-force-attacks.md)]

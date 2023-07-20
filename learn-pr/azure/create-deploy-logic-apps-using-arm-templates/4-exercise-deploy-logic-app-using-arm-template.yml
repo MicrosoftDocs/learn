@@ -9,6 +9,8 @@ metadata:
   ms.author: estfan
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-arm-template
   ROBOTS: INDEX,FOLLOW
 durationInMinutes: 8
 interactive: bash

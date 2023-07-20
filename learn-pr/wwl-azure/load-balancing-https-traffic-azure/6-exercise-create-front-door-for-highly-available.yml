@@ -4,13 +4,11 @@ title: 'Exercise: create a Front Door for a highly available web application'
 metadata:
   title: 'Exercise: create a Front Door for a highly available web application'
   description: "Exercise: create a Front Door for a highly available web application"
-  ms.date: 05/24/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-exercise-create-front-door-for-highly-available.md)]

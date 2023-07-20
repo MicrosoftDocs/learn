@@ -7,7 +7,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
-  ms.service: storage
+  ms.service: azure-storage
 title: Upload, download, and manage data with Azure Storage Explorer
 summary: Azure Storage Explorer allows you to quickly view all the storage services under your account. You can browse through, read, and edit data stored in those services through a user-friendly graphical interface.
 abstract: | 

@@ -1,0 +1,49 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-generative-ai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your understanding of the content presented in this module."
+  ms.date: 7/13/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 3
+content: |
+quiz:  
+  questions:  
+  - content: "Why should you consider creating an AI Impact Assessment when designing a generative AI solution?"  
+    choices:  
+    - content: "To make a legal case that indemnifies you from responsibility for harms caused by the solution"  
+      isCorrect: false  
+      explanation: "An AI Impact Assessment does not indemnify you from responsibility for harm"  
+    - content: "To document the purpose, expected use, and potential harms for the solution"  
+      isCorrect: true  
+      explanation: "An AI Impact Assessment guide documents the expected use of the system and helps identify potential harms."  
+    - content: "To evaluate the cost of cloud services required to implement your solution"  
+      isCorrect: false  
+      explanation: "An AI Impact Assessment typically doesn't include evaluations of cloud service costs."  
+  - content: "What capability of Azure OpenAI Service helps mitigate harmful content generation at the Safety System level?"  
+    choices:  
+    - content: "DALL-E model support"  
+      isCorrect: false  
+      explanation: "DALL-E models are used to generate images."  
+    - content: "Fine-tuning"  
+      isCorrect: false  
+      explanation: "Fine-tuning is used to customize models, and provides mitigation at the Model layer"  
+    - content: "Content filters"  
+      isCorrect: true  
+      explanation: "Content filters enable you to suppress harmful content at the Safety System layer."  
+  - content: "Why should you consider a phased delivery plan for your generative AI solution?"  
+    choices:  
+    - content: "To enable you to gather feedback and identify issues before releasing the solution more broadly"  
+      isCorrect: true  
+      explanation: "An initial release to a restricted user base enables you to minimize harm by gather feedback and identifying issues before broad release."  
+    - content: "To eliminate the need to identify, measure, and mitigate potential harms"  
+      isCorrect: false  
+      explanation: "A phased delivery plan doesn't eliminate the need to identify, measure, and mitigate potential harms."  
+    - content: "To enable you to charge more for the solution"  
+      isCorrect: false  
+      explanation: "The goal of a phased delivery plan is to reduce potential harm, not to maximize revenue."  

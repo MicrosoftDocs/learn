@@ -7,7 +7,8 @@ metadata:
   author: tpetchel
   ms.author: thpetche
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
+  ms.service: azure-devops
+  manager: mijacobs
 title: Manage site reliability
 summary: Learn how to manage site reliability.
 abstract: |

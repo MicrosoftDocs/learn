@@ -1,3 +1,4 @@
+
 In Azure Machine Learning studio, there are several ways to author classification machine learning models. One way is to use a visual interface called *designer* that you can use to train, test, and deploy machine learning models. The drag-and-drop interface makes use of clearly defined inputs and outputs that can be shared, reused, and version controlled.  
 
 Each *designer* project, known as a pipeline, has a left panel for navigation and a canvas on your right hand side. To use *designer*, identify the building blocks, or components, needed for your model, place and connect them on your canvas, and run a machine learning job.  
@@ -23,7 +24,7 @@ You can create data assets on the **Data** page from local files, a datastore, w
 
 ## Azure Machine Learning Jobs 
 
-An Azure Machine Learning (ML) job executes a task against a specified compute target. Jobs enable systematic tracking for your machine learning experimentation and workflows. Once a job is created, Azure ML maintains a run record for the job. All of your jobs' run records can be viewed in Azure ML studio. 
+An Azure Machine Learning job executes a task against a specified compute target. Jobs enable systematic tracking for your machine learning experimentation and workflows. Once a job is created, Azure Machine Learning maintains a run record for the job. All of your jobs' run records can be viewed in Azure Machine Learning studio. 
 
 In your designer project, you can access the status of a pipeline job using the **Submitted jobs** tab on the left pane. 
 ![Screenshot of the submitted jobs tab in Azure Machine Learning designer.](../media/submitted-jobs-location.png)
