@@ -78,7 +78,7 @@ You can define and provision the required Azure resources for your app by updati
     This placeholder comment highlights where to include the Bicep module you created for the App Service. Paste the following code snippet directly after the comment:
 
     ```bicep
-    module app 'app.bicep' = {
+    module web 'web.bicep' = {
       name: '${deployment().name}-app'
       scope: rg
       params: {

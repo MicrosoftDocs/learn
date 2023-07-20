@@ -6,7 +6,7 @@ The Azure Developer CLI (`azd`) assists you with building new templates for your
     azd init
     ```
 
-1. The command output displays a list of starter template options. Some of the templates include example source code and infrastructure files, while others only provide the basic structure of a template and certain essential files. For this module, you'll learn to build your own template rather than relying on existing app code, so choose the **Starter - Bicep** option from the list. The Azure Developer CLI also supports Terraform if you prefer that option.
+1. The command output displays a list of starter template options. Some of the templates include example source code and infrastructure files, while others only provide the basic structure of a template and certain essential files. For this module, you'll learn to build your own template rather than relying on existing app code, so choose the **Starter - Bicep** option from the list. The Azure Developer CLI also supports [using Terraform](/azure/developer/azure-developer-cli/use-terraform-for-azd) if you prefer that option. Terraform support is currently in alpha and must be [manually enabled](/azure/developer/azure-developer-cli/use-terraform-for-azd).
 
 1. When prompted for an environment name, enter *azdlearn* or a name of your choosing. The environment name influences the naming of provisioned resources in Azure.
 
