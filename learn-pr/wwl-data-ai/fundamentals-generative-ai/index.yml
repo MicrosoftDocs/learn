@@ -1,40 +1,25 @@
 ### YamlMime:Module
 uid: learn.wwl.fundamentals-generative-ai
 metadata:
-  title: |
-    fundamentals-generative-ai            
-  description: "TODO"               # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 6/27/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
-  author: sherzyang       # GitHub ID of the Microsoft employee either authoring or project-managing this content
-  ms.author: sheryang            # Alias     of the Microsoft employee either authoring or project-managing this content
+  title: Fundamentals of generative AI          
+  description: "Learn what generative AI is, how large language models form the foundation of generative AI applications, and see examples of copilots and good prompts."               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 6/27/2023               
+  author: sherzyang       
+  ms.author: sheryang            
   ms.topic: module-intro-to-product # Please don't edit, used for our analytics
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-###########################################################################
-###
-### Do not edit: title must be "Introduction to (product)"
-###
+  ms.service: azure
+  ms.subservice: openai
 title: |
-  fundamentals-generative-ai
-summary: ""
+  Fundamentals of generative AI
+summary: "In this module you'll explore the way in which large language models (LLMs) enable AI applications and services to generate original content based on natural language input. You’ll also learn how generative AI enables the creation of AI-powered copilots that can assist humans in creative tasks."
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether (product) is appropriate to (general product use case).
-    - Describe how (features) of (product) work to (solve problem).
+  - Understand generative AI's place in the development of artificial intelligence
+  - Understand large language models and their role in intelligent applications 
+  - Describe how Azure OpenAI supports intelligent application creation 
+  - Describe examples of copilots and good prompts 
 prerequisites: |
-  - TODO prerequisite 1
-  - TODO prerequisite 2
-  - TODO prerequisite 3
+  - Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
   - beginner
