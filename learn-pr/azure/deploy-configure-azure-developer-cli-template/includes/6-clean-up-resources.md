@@ -1,4 +1,4 @@
-You have completed the process of deploying and provisioning resources to Azure using `azd`. When you are finished working with your environment, make sure to delete any unused resources to avoid unexpected costs. `azd` allows you to delete all of your provisioned resources with a single command.
+You have completed the process of deploying and provisioning resources to Azure using `azd`. When you're finished working with your environment, make sure to delete any unused resources to avoid unexpected costs. `azd` allows you to delete all of your provisioned resources with a single command.
 
 1. Open a command prompt to your project root directory and run the following command:
 
@@ -8,9 +8,9 @@ You have completed the process of deploying and provisioning resources to Azure 
 
 1. `azd` will print out a message detailing the resource group(s) that will be deleted and ask for confirmation to continue. You can follow the link to the Azure portal to see the details of which resources are contained in the resource group.
 
-1. If you are certain you would like to delete the resources, enter *y* to confirm. `azd` will delete the resources for you and print out a confirmation message when the task completes.
+1. If you're certain you would like to delete the resources, enter *y* to confirm. `azd` will delete the resources for you and print out a confirmation message when the task completes.
 
-It's important to remember that `azd` templates implement infrastructure as code. This means you can simply run the `azd up` command again to recreate your environment exactly as it was before, assuming you implemented all of your changes through updates to the `azd` template. Any modifications you made through the Azure portal or other tools are not automatically tracked or updated in the `azd` template.
+It's important to remember that `azd` templates implement infrastructure as code. This means you can simply run the `azd up` command again to recreate your environment exactly as it was before, assuming you implemented all of your changes through updates to the `azd` template. Any modifications you made through the Azure portal or other tools aren't automatically tracked or updated in the `azd` template.
 
 ## Delete resources manually
 
