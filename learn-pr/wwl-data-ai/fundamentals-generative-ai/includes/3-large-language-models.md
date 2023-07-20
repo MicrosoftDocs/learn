@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 Large language models need to understand grammar, syntax, semantics, and other language patterns. The model learns the relationship of words to one another by taking in a vast amount of text data. In fact, for the models that we use today to be so good, they used [XYZ amount] to train.
 
 ## What is a pre-trained Large Language Model? 
@@ -29,4 +27,3 @@ With all this complexity, you can imagine there is more than one way to solve fo
 All of these models can be improved or customized. These pre-trained models can be fed more information about how to behave. Using more information is called "few-shot" learning. Not using more information is known as "zero-shot" learning. 
 
 Next we will take a look at how models have evolved and some constraints.  
->>>>>>> d150372fa754121bcd7a350f5cc3bad59ffc3b83

@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 In science fiction stories, conflict often arises when artificial intelligence begins to think for itself. As real-life AI advances, our immediate thoughts may have less to do with whether AI can think, but what we think of its impact on our lives. In this module, we explore the development of generative AI, a branch of artificial intelligence, and how its advancements can assist humans with a variety of tasks. 
 
 Generative AI creates new content based on natural language input. Consumers typically interact with generative AI that has been built into software applications. Engineers build these applications with language models.   
@@ -19,4 +17,3 @@ The goal of this module is to:
 - Understand large language models and their role in intelligent applications 
 - Describe how Azure OpenAI supports intelligent application creation 
 - Describe examples of copilots and good prompts 
->>>>>>> d150372fa754121bcd7a350f5cc3bad59ffc3b83

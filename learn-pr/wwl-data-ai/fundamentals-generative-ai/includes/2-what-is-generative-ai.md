@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 **Artificial Intelligence** imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output. Since the mid-20th century, researchers have worked on different approaches to AI, broadly through **Machine learning**, a branch of AI that combines computer science and mathematics. 
 
 Machine learning algorithms take in data like weather conditions and fit models to the data, to make predictions like how how many items a store may sell that day. The weather conditions in this case are *features*, factors that influence the result. The result in this example is number of items sold in the day and is known as the *label*. 
@@ -33,4 +31,3 @@ Some examples of prompts include:
 We get responses that appear like the model understands our prompts because of language modeling. Getting a response to a prompt that does not make sense can be compared to getting a prediction with error.  
 
 Understanding how generative AI's language modeling works can give you a greater ability to apply its capabilities with less error and greater confidence. Next we will take a look at how large language models work to create original content based on natural language input.
->>>>>>> d150372fa754121bcd7a350f5cc3bad59ffc3b83
