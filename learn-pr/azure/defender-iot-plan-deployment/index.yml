@@ -4,61 +4,51 @@ uid: |
 metadata:
   title: |
     Plan to deploy Microsoft Defender for IoT to monitor OT networks
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
+  description: "Learn how to plan your deployment of Microsoft Defender for IoT."
   ms.date: 7/20/2023
   author: cwatson-cat
   ms.author: cwatson
-  ms.topic: module-standard-task-based # Please don't edit, used for our analytics
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
+  ms.topic: module-standard-task-based
+  ms.service: defender-for-iot
 title: |
   Plan to deploy Microsoft Defender for IoT to monitor OT networks
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+summary: "Plan the deployment of your OT monitoring system. Segment your network using sites and zones, decide how you'll manage your sensor, and identify how user will access Micrsoft Defender for IoT resources."
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - Describe the stages and the roles involved to deploy Microsoft Defender for IoT
+    - Organize the locations and systems across your network into sites and zones
+    - Choose a sensor connection method to use for my organization to manage my OT security deployment
+    - Identify the users and roles your teams will use with Defender for IoT
+    - Describe options to manage access to sensors and on-premises management consoles
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Knowledge of what Defender for IoT is and how it works at a beginner level
+  - Knowledge of operational technology (OT) networks and networking concepts at an intermediate level 
+  - Familiarity with the Purdue networking model like the device types that are included in each networking level
+  - Knowledge of what Azure roles and role-based access controls (RBAC) are and how they work at a beginner level
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
-subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+levels: 
+  - intermediate
+roles: 
+  - solution-architect
+products: 
+  defender-for-iot
+subjects: 
+  - security
 units:
-- learn.defender-iot-plan-deployment
-.introduction
-- learn.defender-iot-plan-deployment
-.learning-content
-- learn.defender-iot-plan-deployment
-.exercise
-- learn.defender-iot-plan-deployment
-.learning-content
-- learn.defender-iot-plan-deployment
-.exercise
-- learn.defender-iot-plan-deployment
-.knowledge-check
-- learn.defender-iot-plan-deployment
-.summary
-- learn.defender-iot-plan-deployment
-.resources
+- learn.defender-iot-plan-deployment.introduction
+- learn.defender-iot-plan-deployment.describe-process-to-deploy
+- learn.defender-iot-plan-deployment.identify-sites-zones
+
+- learn.defender-iot-plan-deployment.exercise
+
+- learn.defender-iot-plan-deployment.learning-content
+
+- learn.defender-iot-plan-deployment.exercise
+
+- learn.defender-iot-plan-deployment.knowledge-check
+
+- learn.defender-iot-plan-deployment.summary
+
 badge:
   uid: |
     learn.defender-iot-plan-deployment.badge

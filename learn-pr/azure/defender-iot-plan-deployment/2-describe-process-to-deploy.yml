@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.describe-process-to-deploy
+title: |
+  Describe the process to deploy Microsoft Defender for IoT
+metadata:
+  title: |
+    Describe the process to deploy Microsoft Defender for IoT
+  description: Describe the process to deploy Microsoft Defender for IoT
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/2-describe-process-to-deploy.md)]

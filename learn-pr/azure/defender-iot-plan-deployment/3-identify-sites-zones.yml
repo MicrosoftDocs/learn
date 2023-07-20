@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.identify-sites-zones
+title: |
+  Identify the sites and zones for your network topology
+metadata:
+  title: |
+    Identify the sites and zones for your network topology
+  description: Identify the sites and zones for your network topology
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/{{unitName}}.md)]

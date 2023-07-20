@@ -29,8 +29,10 @@ TODO: add a visual element
     [Scenario video guidance](TBD)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add a visual element
+
+Suppose you work for a car manufacturer that has offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems from the access panels to the pneumatic and packaging systems. To take the organization's operational technology (OT) security visibility to the next level, your team chooses to use Microsoft Defender for IoT.
+
+You need to create a plan for your deployment so that your organization can monitor traffic from various systems, across several sites in different geographic areas around the world. You’ll need to decide on how you’re going to connect your network sensors to the cloud, and what users and user roles assignment to provision.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
