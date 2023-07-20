@@ -130,7 +130,7 @@ Kubernetes groups containers into logical structures called pods, which have no 
 
 ### Prepare AKS for use
 
-It can take some time to fully deploy Kubuernetes clusters and access them. You'll save time by enabling the Application gateway for the cluster now, as it can take up to 15 minutes to be fully functional.
+It can take some time to fully deploy Kubernetes clusters and access them. You'll save time by enabling the Application gateway for the cluster now, as it can take up to 15 minutes to be fully functional.
 
 1. Go to the Azure portal and select the AKS service you created earlier.
 
