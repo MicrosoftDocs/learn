@@ -1,4 +1,5 @@
 
+
 While a blob is in the archive access tier, it's considered to be offline and can't be read or modified. In order to read or modify data in an archived blob, you must first rehydrate the blob to an online tier, either the hot or cool tier. There are two options for rehydrating a blob that is stored in the archive tier:
 
 * **Copy an archived blob to an online tier**: You can rehydrate an archived blob by copying it to a new blob in the hot or cool tier with the [Copy Blob](/rest/api/storageservices/copy-blob) or [Copy Blob from URL](/rest/api/storageservices/copy-blob-from-url) operation. Microsoft recommends this option for most scenarios.
@@ -26,8 +27,8 @@ The following table shows the behavior of a blob copy operation, depending on th
 
 |  | Hot tier source | Cool tier source | Archive tier source |
 |--|--|--|--|
-| Hot tier destination | Supported | Supported | Supported within the same account. Requires blob rehydration. |
-| Cool tier destination | Supported | Supported | Supported within the same account. Requires blob rehydration. |
+| Hot tier destination | Supported | Supported | Supported across accounts in the same region with version 2021-02-12 and later. Supported within the same storage account only for earlier versions. Requires blob rehydration. |
+| Cool tier destination | Supported | Supported | Supported across accounts in the same region with version 2021-02-12 and later. Supported within the same storage account only for earlier versions. Requires blob rehydration. |
 | Archive tier destination | Supported | Supported | Unsupported |
 
 ## Change a blob's access tier to an online tier
