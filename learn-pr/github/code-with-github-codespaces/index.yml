@@ -15,8 +15,8 @@ abstract: |
   By the end of this module, you'll be able to:
   - Describe GitHub Codespaces.
   - Explain the GitHub Codespace lifecycle and how to perform each step.
-  - Distinguish the different customizations you can personalize with GitHub Codespaces.
-  - Discern when to use github.dev and GitHub Codespaces. 
+  - Define the different customizations you can personalize with GitHub Codespaces.
+  - Discern the differences between GitHub.dev and GitHub Codespaces. 
 prerequisites: |
   -  A GitHub account
 iconUrl: /training/achievements/generic-badge.svg

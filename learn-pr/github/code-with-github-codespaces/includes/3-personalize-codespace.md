@@ -26,7 +26,7 @@ You can add plugins and extensions within a Codespace to personalize your experi
 
 ### VS Code extensions
 
-<!-- If you work on your Codespaces in the VS Code desktop application or the web client, you can add any extensions you need from the Visual Studio Code Marketplace. For information on how extensions run in GitHub Codespaces, see Supporting Remote Development and GitHub Codespaces in the VS Code documentation. -->
+If you work on your Codespaces in the VS Code desktop application or the web client, you can add any extensions you need from the Visual Studio Code Marketplace. Refer to [Supporting Remote Development and GitHub Codespaces](https://code.visualstudio.com/api/advanced-topics/remote-extensions) in the VS Code documentation for information on how extensions run in GitHub Codespaces.
 
 If you already use VS Code, you can use Settings Sync to automatically sync extensions, settings, themes, and keyboard shortcuts between your local instance and any Codespaces you create.
 

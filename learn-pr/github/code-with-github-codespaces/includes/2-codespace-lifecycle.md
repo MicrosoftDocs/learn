@@ -1,17 +1,17 @@
-GitHub Codespaces is configurable, allowing you to create a customized development environment for your project. By configuring a custom development environment for your project, you can have a repeatable codespace configuration for all users of your project.
+GitHub Codespaces is configurable, allowing you to create a customized development environment for your project. By configuring a custom development environment for your project, you can have a repeatable Codespace configuration for all users of your project.
 
 A Codespace's lifecycle begins when you create a Codespace and ends when you delete it. You can disconnect and reconnect to an active Codespace without affecting its running processes. You can stop and restart a Codespace without losing the changes that you make to your project.
 
-    :::image type="content" source="../media/codespace-circular-lifecycle.png" alt-text="Image of a circular lifecycle of a codespace that starts with creating and ends with deleting.":::
+:::image type="content" source="../media/codespace-circular-lifecycle.png" alt-text="Image of a circular lifecycle of a codespace that starts with creating and ends with deleting.":::
 
 ## Create a Codespace
 
 You can create a Codespace on GitHub.com, in Visual Studio Code, or by GitHub CLI. There are four ways to create a Codespace:
 
-- From a GitHub template or any template repository on GitHub.com to start a new project
-- From a branch in your repository for new feature work
-- From an open pull request to explore work-in-progress
-- From a commit in a repository's history to investigate a bug at a specific point in time
+- From a GitHub template or any template repository on GitHub.com to start a new project.
+- From a branch in your repository for new feature work.
+- From an open pull request to explore work-in-progress.
+- From a commit in a repository's history to investigate a bug at a specific point in time.
 
 You can temporarily use a Codespace in order to test code or you can return to the same Codespace to work on long-running feature work.
 
@@ -23,11 +23,11 @@ When creating a new Codespace each time you work on a project, you should regula
 
 Repository administrators can enable GitHub Codespaces prebuilds for a repository to speed up Codespace creation.
 
-For an in-depth walkthrough and step by step guidance, see the two resources titled **A beginner’s guide to learning to code with GitHub Codespaces** and **Developing in codespace** located in the Summary unit at the end of this module.
+For an in-depth walkthrough and step-by-step guidance, see the resources titled **A beginner’s guide to learning to code with GitHub Codespaces** and **Developing in a Codespace** located in the Summary unit at the end of this module.
 
 ### Codespace creation process
 
-    :::image type="content" source="../media/codespace-connection-editor.png" alt-text="Diagram of a github codespace and how it connects from your code editor and into a docker container.":::
+:::image type="content" source="../media/codespace-connection-editor.png" alt-text="Diagram of a github codespace and how it connects from your code editor and into a docker container.":::
 
 When creating a GitHub Codespace, four processes occur:
 

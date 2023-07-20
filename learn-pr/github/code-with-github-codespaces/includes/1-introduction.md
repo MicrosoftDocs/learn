@@ -1,3 +1,3 @@
 GitHub Codespaces is an instant, cloud-based development environment that uses a container to provide you with common languages, tools, and utilities for development. 
 
-In this module, we'll explore ...............
+In this module, we'll explore the Codespaces lifecycle and processes, review the ways you can customize your Codespace set up, and compare the differences between GitHub Codespaces and GitHub.dev. You'll also practice coding in Codespaces in this module.

@@ -41,7 +41,7 @@ quiz:
     - content: "You can create an unlimited number of Codespaces per repository or branch, depending upon available space. When you reach an upper amount of resources, a message displays that an existing Codespace needs to removed/deleted before a new Codespace can be created."
       isCorrect: true
       explanation: "Correct. You can have an unlimited number of Codespaces per repository or even per branch. However, there are limits to the number of Codespaces that you can create and run at the same time."
-  - content: "What happens when Codespace loses internet connectivity"
+  - content: "What happens when Codespace loses internet connectivity?"
     choices:
     - content: "If the connection to the internet is lost while working in a Codespace, you aren't able to access your Codespace."
       isCorrect: true
