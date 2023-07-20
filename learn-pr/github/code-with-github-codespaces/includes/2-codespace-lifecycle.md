@@ -2,7 +2,7 @@ GitHub Codespaces is configurable, allowing you to create a customized developme
 
 A Codespace's lifecycle begins when you create a Codespace and ends when you delete it. You can disconnect and reconnect to an active Codespace without affecting its running processes. You can stop and restart a Codespace without losing the changes that you have made to your project.
 
-:::image type="content" source="../media/codespace-circular-lifecycle.png" alt-text="Image of a circular lifecycle of a codespace that starts with creating and ends with deleting.":::
+    :::image type="content" source="../media/codespace-circular-lifecycle.png" alt-text="Image of a circular lifecycle of a codespace that starts with creating and ends with deleting.":::
 
 ## Create a Codespace
 
@@ -27,7 +27,7 @@ For an in-depth walkthrough and step by step guidance see the two resources titl
 
 ### Codespace creation process
 
-:::image type="content" source="../media/codespace-connection-to-editor.png" alt-text="Diagram of a github codespace and how it connects from your code editor and into a docker container.":::
+    :::image type="content" source="../media/codespace-connection-editor.png" alt-text="Diagram of a github codespace and how it connects from your code editor and into a docker container.":::
 
 When creating a GitHub Codespace, four processes must occur:
 
