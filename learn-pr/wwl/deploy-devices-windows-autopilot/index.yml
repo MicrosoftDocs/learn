@@ -3,11 +3,10 @@ uid: learn.wwl.deploy-devices-windows-autopilot
 metadata:
   title: MD-102 1-Deploy Devices using Windows Autopilot
   description: "Use Autopilot to deploy new hardware or refreshing an existing hardware with the organization’s desired configuration, without using the traditional imaging process."
-  ms.date: 05/23/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Deploy Devices using Windows Autopilot
 summary: Use Autopilot to deploy new hardware or refreshing an existing hardware with the organization’s desired configuration, without using the traditional imaging process.
 abstract: |

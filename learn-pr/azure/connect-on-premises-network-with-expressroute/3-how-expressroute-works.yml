@@ -22,7 +22,7 @@ quiz:
       explanation: "No. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
     - content: "It enables you to connect your on-premises network to Office 365 services and Dynamics 365."
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Correct."
     - content: "It provides a connection between your on-premises network and an ExpressRoute provider."
       isCorrect: false
       explanation: "No. Microsoft peering enables you to connect your on-premises network to Office 365 services and Dynamics 365."
@@ -42,7 +42,7 @@ quiz:
       explanation: "No. A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers."
     - content: "A circuit provides a physical connection for transmitting data through the ExpressRoute provider's edge routers to the Microsoft edge routers."
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Correct."
   - content: "What security benefits does Azure ExpressRoute provide?"
     choices:
     - content: "An ExpressRoute connection is automatically encrypted, to help protect traffic that passes across the internet to the Microsoft cloud."
@@ -53,7 +53,7 @@ quiz:
       explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the internet, so it's difficult to intercept."
     - content: "ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the public internet, so it's difficult to intercept."
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Correct."
     - content: "ExpressRoute uses a proprietary transmission protocol that constantly varies, so it's difficult to intercept traffic."
       isCorrect: false
       explanation: "No. ExpressRoute uses a dedicated, private network to connect to the Microsoft cloud. Traffic doesn't traverse the internet, so it's difficult to intercept."

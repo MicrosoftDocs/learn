@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: cognitive-services
 title: Monitor Cognitive Services
 summary: Azure Cognitive Services enable you to integrate artificial intelligence into your applications and services. It's important to be able to monitor Cognitive Services in order to track utilization, determine trends, and detect and troubleshoot issues.
 abstract: |

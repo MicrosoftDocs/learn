@@ -11,6 +11,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.subservice: openai
+  ms.custom: devx-track-python
 durationInMinutes: 8
 content: |
   [!include[](includes/3-complete-code-assist-development.md)]
