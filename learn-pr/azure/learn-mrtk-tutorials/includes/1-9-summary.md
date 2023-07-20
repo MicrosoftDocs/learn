@@ -15,12 +15,10 @@ You can continue to add objects to your scene and add scripts from the MRTK Foun
 
 * Explore [basic mixed reality concepts](/windows/mixed-reality/discover/get-started-with-mr).
 
-* Sign up for the [Mixed Reality Developer Program](https://mixedreality.microsoftcrmportals.com/signup/?Place=APRIL) to receive the latest on mixed reality developer tools, events, and early access offers.
+* Sign up for the [Mixed Reality Developer Program](https://www.microsoft.com/en-us/hololens/mrpp) to receive the latest on mixed reality developer tools, events, and early access offers.
 
 * Port an existing Unity project to Windows Mixed Reality with the [Unity porting guide](/windows/mixed-reality/develop/porting-apps/porting-overview).
 
 * Learn more about the [Mixed Reality Feature Tool](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool).
 
 * Learn more about mixed reality [interaction models](/windows/mixed-reality/design/interaction-fundamentals).
-
-* Learn how to [configure the Mixed Reality Toolkit](/windows/mixed-reality/mrtk-unity/supported-devices/using-ar-foundation) for iOS and Android.

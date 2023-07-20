@@ -44,7 +44,7 @@ In order for an object to be "grabbable" with tracked hands, it must have three 
 
     :::image type="content" source="../media/030-constraint-manager.png" alt-text="Screenshot of the Constraint Manager script added to the cube.":::
 
-## Optional: Update the cube's material
+## Update the cube's material
 
 For performance purposes, it is recommended to use MRTK materials instead of the default Unity materials. 
 
