@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: |
-  learn.fundamentals-generative-ai
+  learn.wwl.sfundamentals-generative-ai
 metadata:
   title: |
-    fundamentals-generative-ai            # Do not edit: title must be "Introduction to (product)"
+    fundamentals-generative-ai            
   description: "TODO"               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 6/27/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: sherzyang       # GitHub ID of the Microsoft employee either authoring or project-managing this content
@@ -79,27 +79,6 @@ abstract: |
   By the end of this module, you'll be able to:
     - Evaluate whether (product) is appropriate to (general product use case).
     - Describe how (features) of (product) work to (solve problem).
-###########################################################################
-###
-### Prerequisites
-###   - List the skills learners need to have before starting this module.
-###
-### Guidance summary:
-###   - Do not require any knowledge of the product being covered.
-###   - Even though this is an "Introduction to..." module, you'll likely need at least 2 prerequisites.
-###   - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
-###   - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
-###   - Do not mention or link to other content that teaches the required prerequisite skills.
-###   - If needed, include software setup requirements with setup links.
-###
-### Detailed guidance:
-###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
-###
-### Example:
-###   Module title: "Introduction to Azure Logic Apps"
-###   Prerequisite 1: "Familiarity with programming concepts such as conditional logic and loops"
-###   Prerequisite 2: "Basic knowledge of REST services and APIs"
-###
 prerequisites: |
   - TODO prerequisite 1
   - TODO prerequisite 2
@@ -141,28 +120,17 @@ subjects:
 ### Do not edit: the unit names and order are exactly determined by the "Introduction to (product)" module pattern
 ###
 units:
-- learn.fundamentals-generative-ai
-.introduction
-- learn.fundamentals-generative-ai
-.what-is-generative-ai
-- learn.fundamentals-generative-ai
-.large-language-models
-- learn.fundamentals-generative-ai
-.model-evolution
-- learn.fundamentals-generative-ai
-.azure-openai
-- learn.fundamentals-generative-ai
-.app-architecture
-- learn.fundamentals-generative-ai
-.copilots
-- learn.fundamentals-generative-ai
-.writing-prompts
-- learn.fundamentals-generative-ai
-.exercise
-- learn.fundamentals-generative-ai
-.knowledge-check
-- learn.fundamentals-generative-ai
-.summary
+- learn.wwl.fundamentals-generative-ai.introduction
+- learn.wwl.fundamentals-generative-ai.what-is-generative-ai
+- learn.wwl.fundamentals-generative-ai.large-language-models
+- learn.wwl.fundamentals-generative-ai.model-evolution
+- learn.wwl.fundamentals-generative-ai.azure-openai
+- learn.wwl.fundamentals-generative-ai.app-architecture
+- learn.wwl.fundamentals-generative-ai.copilots
+- learn.wwl.fundamentals-generative-ai.writing-prompts
+- learn.wwl.fundamentals-generative-ai.exercise
+- learn.wwl.fundamentals-generative-ai.knowledge-check
+- learn.wwl.fundamentals-generative-ai.summary
 ###########################################################################
 ###
 ### TODO verify your badge
