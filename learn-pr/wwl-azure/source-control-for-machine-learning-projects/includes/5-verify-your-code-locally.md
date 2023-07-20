@@ -96,7 +96,7 @@ As a best practice, your code should exist mostly out of functions. Whether you'
 - Check the prediction level of model on new datasets.
 - Check the distribution of prediction levels.
 
-When you work with Python, you can use **Pytest** and **Numpy** (which uses the Pytest framework) to test your code. To learn more about working with Pytest, [learn how to write tests with Pytest](/learn/modules/test-python-with-pytest/).
+When you work with Python, you can use **Pytest** and **Numpy** (which uses the Pytest framework) to test your code. To learn more about working with Pytest, [learn how to write tests with Pytest](/training/modules/test-python-with-pytest/).
 
 > [!TIP]
 > Review a more detailed walkthrough of [Python testing in Visual Studio Code](https://code.visualstudio.com/docs/python/testing).
