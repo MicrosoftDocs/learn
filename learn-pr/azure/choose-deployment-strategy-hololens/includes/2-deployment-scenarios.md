@@ -4,7 +4,7 @@ A Cloud Connected Deployment for HoloLens 2 can be likened to the deployment of 
 
 The deployment relies on Wi-Fi networks that are typically opened to the internet and cloud services. It utilizes Azure AD Join with MDM Auto Enrollment, where the devices are managed through an MDM solution like Intune. Users are required to sign in using their own corporate accounts through Azure AD. The deployment supports both single and multiple users per device, accommodating different usage scenarios.
 
-:::image type="content" source="../media/deployment-guides-cloud connected.png" alt-text="A diagram that visualizes resources that a HoloLens could connect to if executing a cloud connected deployment. The device connects to open WiFi, which provides access to various cloud services. In addition, the device could possibly connect to a VPN client. If connected to a VPN client, access to on-premises resources is protected by a firewall.":::
+:::image type="content" source="../media/deployment-guides-cloud-connected.png" alt-text="A diagram that visualizes resources that a HoloLens could connect to if executing a cloud connected deployment. The device connects to open WiFi, which provides access to various cloud services. In addition, the device could possibly connect to a VPN client. If connected to a VPN client, access to on-premises resources is protected by a firewall.":::
 
 ## Corporate Network Deployment
 
