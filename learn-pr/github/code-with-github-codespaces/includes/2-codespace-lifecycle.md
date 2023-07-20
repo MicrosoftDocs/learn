@@ -38,7 +38,7 @@ When creating a GitHub Codespace, four processes occur:
 
 ### Save changes in a Codespace
 
-When you connect to a Codespace through the web, auto-save is automatically enabled to save changes after a specific amount of time has passed. When you connect to a Codespace through Visual Studio Code running on your desktop, you must enable auto-save.
+When you connect to a Codespace through the web, AutoSave is automatically enabled to save changes after a specific amount of time has passed. When you connect to a Codespace through Visual Studio Code running on your desktop, you must enable AutoSave.
 
 Your work saves to a virtual machine in the cloud. You can close and stop a Codespace and return to the saved work at a later time. If you have unsaved changes, you receive a prompt to save them before exiting. However, if your Codespace is deleted, then your work is lost. To save your work, you must commit your changes and push them to your remote repository or publish your work to a new one if you created your Codespace from a template.
 
@@ -71,7 +71,7 @@ You can also stop Codespace and choose to restart or delete it if you encounter 
 
 ## Rebuild a Codespace
 
-You can rebuild your Codespace to implement changes to your dev container configuration. For most uses, you can create a new Codespace as an alternative to rebuilding a Codespace. When you rebuild your Codespace, images from the cache speed up the rebuild process. You can also perform a full rebuild to clear the cache and rebuild the container with fresh images.
+You can rebuild your Codespace to implement changes to your dev container configuration. For most uses, you can create a new Codespace as an alternative to rebuilding a Codespace. When you rebuild your Codespace, images from the cache speed-up the rebuild process. You can also perform a full rebuild to clear the cache and rebuild the container with fresh images.
 
 When you rebuild the container in a Codespace, changes you made outside the /workspaces directory are cleared. Changes you made inside the /workspaces directory, including the clone of the repository or template you created the Codespace from, are preserved over a rebuild.
 
@@ -79,6 +79,6 @@ When you rebuild the container in a Codespace, changes you made outside the /wor
 
 You can create a Codespace for a particular task. After you push your changes to a remote branch, then you can safely delete that Codespace.
 
-If you try to delete a Codespace with un-pushed git commits, the editor notifies you that you have changes that haven't been pushed to a remote branch. You can push any desired changes and then delete your Codespace. You can also continue to delete your Codespace and any uncommitted changes or export the code to a new branch without creating a new Codespace.
+If you try to delete a Codespace with unpushed git commits, the editor notifies you that you have changes that haven't been pushed to a remote branch. You can push any desired changes and then delete your Codespace. You can also continue to delete your Codespace and any uncommitted changes or export the code to a new branch without creating a new Codespace.
 
 Stopped Codespaces that remain inactive for a specified amount of time are deleted automatically. Inactive Codespaces delete after 30 days, but you can customize your Codespace retention intervals.
