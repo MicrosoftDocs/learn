@@ -1,0 +1,19 @@
+An example of an intelligent application is a **copilot**, an AI-powered assistant based on large language models that work alongside you to dramatically increase productivity and extend your capabilities. Copilots are based on a common architecture, so developers can build custom copilots for a variety of business-specific applications and services.
+
+You may see copilots appear within the products that you already use, for example, as a chat screen feature that opens up next to your file. These copilots use the content that is created or searched for in the product as specific information for its results. 
+
+When we think about the question of how AI will impact our lives, copilots have the potential to revolutionize the way we work. Using generative AI, these copilots can help with first drafts, information synthesis, and strategic planning.   
+
+Some examples include: 
+
+- **Bing / Edge copilot**: provides AI help when browsing or searching the Internet by generating natural language answers to questions based on context rather than just search results of indexed pages. 
+
+- **M365 copilot**: works alongside you in productivity and communication apps, assisting you in creating effective documents, spreadsheets, presentations, emails, and other ways. 
+
+- **GitHub copilot**: provides support to software developers, helping them write, document, and test code.  
+
+## Extending and customizing copilots
+Plugins, computer applications that can be added to other applications to extend their capabilities, can be used with copilots. An example of a generic plugin is an application you download and add to your web browser that can be used to count the number of words on a web page.   
+ 
+Plugins for copilots can add a specific context layer to "ground" the responses returned by large language models. For example, the prompt "Tell me about Edinburgh" to an LLM might result in historic, cultural, and geographical information about Edinburgh. A plug-in for a travel company might provide additional context data that enables the response to include details of hotels in Edinburgh. 
+
