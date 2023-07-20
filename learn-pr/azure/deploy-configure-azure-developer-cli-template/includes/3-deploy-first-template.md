@@ -43,7 +43,7 @@ The deployed application should look similar to the following screenshot:
 
 :::image type="content" source="../media/deployed-app.png" alt-text="A screenshot showing the deployed web application.":::
 
-You can also view the resources that were created in Azure by navigating to your resource group in the Azure Portal:
+You can also view the resources that were created in Azure by navigating to your resource group in the Azure portal:
 
 1. In the main Azure portal search bar, search for the resource group `azd` created for you by typing `rg-azdlearn`. By convention, the resource group will be the environment name you specified prefixed with `rg-`.
 
