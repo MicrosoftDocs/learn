@@ -1,7 +1,7 @@
 ### YamlMime:Module
 uid: learn.choose-distribution-hololens-app
 metadata:
-  title: choose-distribution-hololens-app
+  title: Choose a distribution channel for a HoloLens app 
   description: "Learn how to choose a distribution channel for your HoloLens app."
   ms.date: 7/13/2023
   author: aprilspeight
@@ -29,19 +29,12 @@ subjects:
   - business-applications
 units:
 - learn.choose-distribution-hololens-app.introduction
-
 - learn.choose-distribution-hololens-app.application-package
-
 - learn.choose-distribution-hololens-app.distribution-channels
-
 - learn.choose-distribution-hololens-app.analyze-decision-criteria
-
-- learn.choose-distribution-hololens-app.managing-updates
-
+- learn.choose-distribution-hololens-app.manage-updates
 - learn.choose-distribution-hololens-app.knowledge-check
-
 - learn.choose-distribution-hololens-app.summary
-
 badge:
   uid: |
     learn.choose-distribution-hololens-app.badge

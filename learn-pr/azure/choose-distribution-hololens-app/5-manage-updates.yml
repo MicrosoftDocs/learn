@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
-uid: learn.choose-distribution-hololens-app.managing-updates
-title: Managing app updates
+uid: learn.choose-distribution-hololens-app.manage-updates
+title: manage-updates
 metadata:
-  title: Managing app updates
+  title: Manage updates
   description: "This unit provides guidance on how to manage HoloLens app updates."
   ms.date: 7/13/2023
   author: aprilspeight
@@ -11,4 +11,4 @@ metadata:
   ms.prod: hololens
 durationInMinutes: 4
 content: |
-  [!include[](includes/5-managing-updates.md)]
+  [!include[](includes/5-manage-updates.md)]
