@@ -2,7 +2,7 @@
 uid: learn.wwl.build-language-understanding-model
 metadata:
   title: Build a Language Understanding model
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language.</span|  </div|"
+  description: "The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language."
   ms.date: 07/20/2023
   author: wwlpublish
   ms.author: berryivor
