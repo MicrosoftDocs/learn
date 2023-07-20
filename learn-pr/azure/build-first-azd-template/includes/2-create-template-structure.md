@@ -2,7 +2,7 @@ The Azure Developer CLI (`azd`) assists you with building new templates for your
 
 1. In an empty directory on your local machine, run the `azd init` command.
 
-    ```bash
+    ```azdeveloper
     azd init
     ```
 
