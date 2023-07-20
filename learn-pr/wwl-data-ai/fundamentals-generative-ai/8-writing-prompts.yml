@@ -25,4 +25,4 @@ metadata:
   ms.service: TODO
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-writing-prompts.md)]
+  [!include[](includes/8-writing-prompts.md)]
