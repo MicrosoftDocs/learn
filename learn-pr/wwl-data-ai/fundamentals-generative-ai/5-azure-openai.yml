@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.wwl.fundamentals-generative-ai.azure-openai
+uid: learn.wwl.fundamentals-generative-ai.azure-openai
 title: |
   when-to-use-{product}
 metadata:
