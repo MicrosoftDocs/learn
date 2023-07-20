@@ -7,16 +7,17 @@ Microsoft Graph PowerShell is a Software Development Kit (SDK) that acts as an A
 
 Microsoft Graph PowerShell is packaged as the **Microsoft.Graph** module in PowerShell gallery as the root module, with multiple child modules. Microsoft.Graph acts as a container for the other modules.
 
-Microsoft.Graph.Authentication is the core module, which contains the following components:
+**Microsoft.Graph.Authentication** is the core module, which contains the following components:
 
 - `Connect-MgGraph`: to sign in to Microsoft Graph
 - `Invoke-MgGraphRequest`: to issue REST API requests for the Microsoft Graph API
-- Commands to switch between **beta** and **V1.0** versions of the SDK
 - Commands to discover permissions and API-specific Graph commands in other modules
 
 Other modules are made up of thousands of commands.
 
 Commands are named like **{Verb}**-Mg **{Resource}** (a Graph API resource) for example, user,group, and application. For example, in the command `Get-MgUser`, **get** is the verb and **user** the resource.
+
+To differentiate between v1.0 cmdlets and those in beta, the beta cmdlets are prefixed with **Beta**. For example, `Get-MgUser` is the v1.0 cmdlet and `Get-MgBetaUser` is the beta cmdlet.
 
 ## Microsoft Graph PowerShell features & benefits
 
