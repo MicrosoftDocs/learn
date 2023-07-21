@@ -2,15 +2,15 @@
 uid: learn.defender-iot-plan-deployment
 metadata:
   title: |
-    Plan to deploy Microsoft Defender for IoT to monitor OT networks
-  description: "Learn how to plan your deployment of Microsoft Defender for IoT."
+    Plan to deploy Microsoft Defender for IoT to monitor operational technology networks
+  description: "Learn how to plan your deployment of Microsoft Defender for IoT to monitor your OT network."
   ms.date: 7/20/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: module-standard-task-based
   ms.service: defender-for-iot
 title: |
-  Plan to deploy Microsoft Defender for IoT to monitor OT networks
+  Plan to deploy Microsoft Defender for IoT to monitor operational technology (OT) networks
 summary: "Plan the deployment of your OT monitoring system. Segment your network using sites and zones, decide how you'll manage your sensor, and identify how user will access Micrsoft Defender for IoT resources."
 abstract: |
   By the end of this module, you'll be able to:
