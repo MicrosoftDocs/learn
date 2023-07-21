@@ -3,14 +3,14 @@ uid: learn.wwl.fundamentals-generative-ai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "This is a knowledge check based on content about generative AI, large language models, and copilots."
   ms.date: 6/27/2023
   author: sherzyang
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.subservice: openai
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
 quiz:
   questions:
