@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.summary
+title: |
+  Summary
+metadata:
+  title: |
+    Summary
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/10-summary.md)]

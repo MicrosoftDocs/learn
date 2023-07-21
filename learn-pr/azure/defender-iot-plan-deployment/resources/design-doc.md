@@ -37,7 +37,7 @@ By the end of this module, you'll be able to:
 1. Organize the locations and systems across your network into sites and zones
 1. Choose a sensor connection method to use for my organization to manage my OT security deployment
 1. Identify the users and roles your teams will use with Defender for IoT
-1. Determine how you'll manage user access across Microsoft Defender for IoT resources
+1. Describe options to manage access to sensors and on-premises management consoles
 
 
 ## Chunk your content into subtasks
@@ -63,7 +63,7 @@ Add more units as needed for your content
 
     Add your scenario [(Scenario guidance)](https://review.learn.microsoft.com/help/learn/id-guidance-scenarios)
 
-1. Overview of the deployment process
+1. Describe the process to deploy Microsoft Defender for IoT
 
     List the content that will enable the learner to complete the subtask:
     - List the stages to deploy Defender for IoT (include organizer illustration)
@@ -79,7 +79,7 @@ Add more units as needed for your content
     - Identify the phase where you’d choose a traffic mirroring method
     - Describe what a technology manager (or whatever role does deployment) would do in the deployment phase.
 
-1. Identify the sites and zones
+1. Identify the sites and zones for your network topology
  
     - Define what sites and zones are - in the context of D4IoT planning
     - Identify when you’d put things in different sites or zones -e.g. recurring IP ranges
@@ -132,11 +132,17 @@ Add more units as needed for your content
 
    - Identify the on-premises OT sensors users required for each site
 
-1. Manage user access across Defender for IoT resources
+1. Identify options to manage access to sensors and on-premises management consoles
 
-   Active directory integration/connection
+   Active directory integration/connection to allow users to sign into sensor and console.
    - Discuss support for an integration between an on-premises management console and Active Directory to allow Active Directory users or groups to sign into sensors.
    - Identify when you’d choose to do this
+   
+   Create user access groups
+   To manage your on-premises Defender for IoT users, use a global business topology that's based on business units, regions, and sites, and then define user access permissions around those entities.
+
+   Create user access groups to establish global access control across Defender for IoT on-premises resources. Each access group includes rules about the users that can access specific entities in your business topology, including business units, regions, and sites.
+   
 
    Knowledge check 
       - Choose whether to work with Active Directory (when would you vs when you wouldn’t)

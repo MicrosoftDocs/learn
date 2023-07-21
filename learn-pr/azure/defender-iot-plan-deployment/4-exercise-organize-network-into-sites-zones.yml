@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.exercise-organize-network-into-sites-zones
+title: |
+  Exercise - Organize the locations and systems across a network into sites and zones
+metadata:
+  title: |
+    Exercise - Organize the locations and systems across a network into sites and zones
+  description: Exercise - Organize the locations and systems across a network into sites and zones
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/4-exercise-organize-network-into-sites-zones.md)]
