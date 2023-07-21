@@ -14,7 +14,7 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: ""
+  - content: "What is a Large Language Model?"
     choices:
     - content: ""
       isCorrect: true
@@ -25,7 +25,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What is an example of a task a generative AI application can help solve?"
     choices:
     - content: ""
       isCorrect: true
@@ -36,7 +36,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What is the purpose of assigning vectors to each word during the training process of a Large Language Model?"
     choices:
     - content: ""
       isCorrect: true
@@ -47,7 +47,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "What is the potential impact of copilots?"
     choices:
     - content: ""
       isCorrect: true
@@ -58,7 +58,7 @@ quiz:
     - content: ""
       isCorrect: false
       explanation: ""
-  - content: ""
+  - content: "How can you test prompts with Azure OpenAI Service?"
     choices:
     - content: ""
       isCorrect: true
