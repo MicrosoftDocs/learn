@@ -38,10 +38,10 @@ units:
 - learn.defender-iot-plan-deployment.describe-process-to-deploy
 - learn.defender-iot-plan-deployment.identify-sites-zones
 - learn.defender-iot-plan-deployment.exercise-organize-network-into-sites-zones
-- learn.defender-iot-plan-deployment.identify-connection-options
+- learn.defender-iot-plan-deployment.determine-connection-options
 - learn.defender-iot-plan-deployment.exercise-choose-connection-network-sensor
 - learn.defender-iot-plan-deployment.identify-azure-on-premises-roles
-- learn.defender-iot-plan-deployment.identify-options-manage-access
+- learn.defender-iot-plan-deployment.describe-options-manage-access
 - learn.defender-iot-plan-deployment.knowledge-check
 - learn.defender-iot-plan-deployment.summary
 badge:
