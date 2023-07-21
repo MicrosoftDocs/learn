@@ -1,11 +1,5 @@
 Azure OpenAI Service is Microsoft's cloud solution for deploying, customizing, and hosting large language models. It brings together the best of OpenAI's cutting edge models and APIs with the security and scalability of the Azure cloud platform. 
 
-You can think of Azure OpenAI 
-
-Building your own
-
-
-
 Models supported include: 
 
 - GPT 3 model families (Ada – Davinci) 
