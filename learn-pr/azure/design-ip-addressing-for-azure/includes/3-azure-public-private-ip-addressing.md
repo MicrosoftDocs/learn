@@ -1,6 +1,6 @@
 You work for a manufacturing company and are moving resources into Azure. The database server must be accessible for clients in your on-premises network. Public resources, like web servers, must be accessible from the internet. You want to ensure that you plan IP addresses that support both these requirements.
 
-In this unit, you'll explore the constraints and limitations for public and private IP addresses in Azure. You'll also look at the capabilities that are available in Azure to reassign IP addresses in your network.
+In this unit, you explore the constraints and limitations for public and private IP addresses in Azure. You also look at the capabilities that are available in Azure to reassign IP addresses in your network.
 
 ## IP address types
 
@@ -70,9 +70,9 @@ You can create a public IP address prefix by specifying a name and prefix size. 
 
 - Public IP address prefixes consist of IPv4 or IPv6 addresses. 
 - You can use technology like Azure Traffic Manager to balance region-specific instances. 
-- You can't bring your own public IP addresses from on-premises networks into Azure. 
+- You can't bring your own public IP addresses from on-premises networks into Azure, except by using a [Custom IP address prefix (BYOIP)](/azure/virtual-network/ip-services/custom-ip-address-prefix).
 - You can't specify addresses when you create a prefix; they're assigned by Azure. After a prefix is created, the IP addresses are fixed in a contiguous range. 
-- Public IP addresses can't be moved between regions; all IP addresses are region-specific. 
+- Public IP addresses can't be moved between regions; all IP addresses are region-specific.
 
 ## Private IP addresses
 
