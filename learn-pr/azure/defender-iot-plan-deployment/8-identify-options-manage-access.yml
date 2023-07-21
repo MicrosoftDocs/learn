@@ -13,4 +13,4 @@ metadata:
   ms.service: defender-for-iot
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-identify-options-manage-access.md)]
+  [!include[](includes/8-identify-options-manage-access.md)]
