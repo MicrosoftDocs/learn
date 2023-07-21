@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.identify-options-manage-access  
+title: |
+  Identify options to manage access to sensors and on-premises management consoles
+metadata:
+  title: |
+    Identify options to manage access to sensors and on-premises management consoles
+  description: Identify options to manage access to sensors and on-premises management consoles
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-learning-content.md)]

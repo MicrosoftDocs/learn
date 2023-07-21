@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.exercise-choose-connection-network-sensor  
+title: |
+  Exercise - Choose the best cloud connection option for an OT network sensor
+metadata:
+  title: |
+    Exercise - Choose the best cloud connection option for an OT network sensor
+  description: Exercise - Choose the best cloud connection option for an OT network sensor
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/6-exercise.md)]

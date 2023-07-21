@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.defender-iot-plan-deployment.identify-connection-options
+title: |
+  Identify cloud connection options for an OT network sensor
+metadata:
+  title: |
+    Identify cloud connection options for an OT network sensor
+  description: Identify cloud connection options for an OT network sensor
+  ms.date: 7/20/2023
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.service: defender-for-iot
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-identify-connection-options.md)]
