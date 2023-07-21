@@ -14,58 +14,58 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What is a Large Language Model?"
+  - content: "What are Large Language Models?"
     choices:
-    - content: ""
+    - content: "Models that only work with one language."
+      isCorrect: false
+      explanation: "Incorrect. Large language models can work with multiple languages."
+    - content: "Models that only work with small amounts of data."
+      isCorrect: false
+      explanation: "Incorrect. Large language models work with massive amounts of data."
+    - content: "Models that use deep learning to process and understand natural language on a massive scale."
       isCorrect: true
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
+      explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."
   - content: "What is an example of a task a generative AI application can help solve?"
     choices:
-    - content: ""
-      isCorrect: true
-      explanation: ""
-    - content: ""
+    - content: "Monitoring the temperature in a manufacturing facility."
       isCorrect: false
       explanation: ""
-    - content: ""
+    - content: "Generating new protein sequences that aid in drug discovery for patients with rare diseases."
+      isCorrect: true
+      explanation: ""
+    - content: "Collecting real time data and storing it in a database."
       isCorrect: false
       explanation: ""
   - content: "What is the purpose of assigning vectors to each word during the training process of a Large Language Model?"
     choices:
-    - content: ""
+    - content: "To represent semantic meaning by the distance between vectors."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. The vectors for each word are assigned during training so that the representation for each token consists of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map."
+    - content: "To assign a unique number to each word in the corpus, or body of text."
       isCorrect: false
-      explanation: ""
-    - content: ""
+      explanation: "Incorrect. This would not capture the relationship between words."
+    - content: "To identify the most common words in the corpus, or body of text."
       isCorrect: false
-      explanation: ""
+      explanation: "Incorrect. This would not capture the relationship between words."
   - content: "What is the potential impact of copilots?"
     choices:
-    - content: ""
+    - content: "Copilots only impact applications used in professional settings."
+      isCorrect: false
+      explanation: "Incorrect. Copilots can be built for a multitude of applications that are used at work and in day-to-day life."
+    - content: "Using generative AI, copilots can help with first drafts, information synthesis, strategic planning, and much more."
       isCorrect: true
-      explanation: ""
-    - content: ""
+      explanation: "Correct. Copilots have the potential to revolutionize the way we work"
+    - content: "Copilots can only be used for certain natural language tasks like summarizing text."
       isCorrect: false
-      explanation: ""
-    - content: ""
-      isCorrect: false
-      explanation: ""
-  - content: "How can you test prompts with Azure OpenAI Service?"
+      explanation: "Incorrect. Copilots can be built on large language models that have a multitude of capabilities, from text to code to image generation and beyond."
+  - content: "How can you test prompts on large language models deployed with Azure OpenAI Service?"
     choices:
-    - content: ""
+    - content: "Using Azure OpenAI Studio's Chat playground."
       isCorrect: true
       explanation: ""
-    - content: ""
+    - content: "Using Bing Copilot."
       isCorrect: false
       explanation: ""
-    - content: ""
+    - content: "Using OpenAI's ChatGPT."
       isCorrect: false
       explanation: ""
