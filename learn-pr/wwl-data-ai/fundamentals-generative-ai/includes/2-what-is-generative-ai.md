@@ -23,7 +23,7 @@ Generative AI applications take in natural language input, known as **prompts**,
 Some examples of prompts include: 
 
 |Common task | Sample prompt | Type of response |
-|-|-|
+|-|-|-|
 |Generate and understand natural language text | "Give me three ideas for a healthy breakfast including peppers" | `Natural language` | 
 |Generate and understand images | "Create an image of an elephant eating a burger" | `An image` |
 |Generate and understand code | "Show me how to code a game of tic-tac-toe with Python" | `Code` |  
