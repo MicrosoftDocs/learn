@@ -91,7 +91,7 @@ In this section, you open your terminal and create some variables used throughou
     // connection string to your Service Bus namespace
     string connectionString = "<CONNECTION STRING>";
 
-    // name of your Service Bus queue
+    // name of your Service Bus topic
     string queueName = "az204-queue";
     ```
 
@@ -243,4 +243,3 @@ When the resources are no longer needed, you can use the `az group delete` comma
 ```bash
 az group delete --name az204-svcbus-rg --no-wait
 ```
-
