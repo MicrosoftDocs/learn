@@ -33,7 +33,7 @@ In session consistency, within a single client session reads are guaranteed to h
 
 In consistent prefix, updates made as single document writes see eventual consistency. Updates made as a batch within a transaction, are returned consistent to the transaction in which they were committed. Write operations within a transaction of multiple documents are always visible together.
 
-Assume two write operations are performed on documents *Doc1* and *Doc2*, within transactions T1 and T2. When client does a read in any replica, the user sees either “*Doc1* v1 and *Doc2* v1” or “*Doc1* v2 and *Doc2* v2”, but never “*Doc1* v1 and *Doc2* v2” or “*Doc1* v2 and *Doc2* v1” for the same read or query operation.
+Assume two write operations are performed on documents *Doc 1* and *Doc 2*, within transactions T1 and T2. When client does a read in any replica, the user sees either “*Doc 1* v1 and *Doc 2* v1” or “*Doc 1* v2 and *Doc 2* v2”, but never “*Doc 1* v1 and *Doc 2* v2” or “*Doc 1* v2 and *Doc 2* v1” for the same read or query operation.
 
 ### Eventual consistency
 

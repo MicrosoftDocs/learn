@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   unitType: knowledge_check
   title: Knowledge check
-  description: This is a knowledge check unit.
+  description: A knowledge check unit.
   ms.date: 04/21/2023
   author: LBN-commits
   ms.author: allensu
@@ -14,7 +14,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Can an administrator configure inbound connections handling by using the Azure NAT Gateway service?"
+  - content: "Can an administrator use the Azure NAT Gateway service to configure inbound connections handling?"
     choices:
     - content: "No. You can’t use Azure NAT Gateway to configure inbound connections handling."
       isCorrect: true
@@ -30,7 +30,7 @@ quiz:
     - content: "No. The public IP address won’t be used after Azure NAT Gateway is deployed."
       isCorrect: false
       explanation: "Incorrect. The Azure VM keeps the public IP address for inbound connections."
-    - content: "Yes. The public IP address will be used, but only for inbound connections."
+    - content: "Yes. The public IP address is used, but only for inbound connections."
       isCorrect: true
       explanation: "Correct. Azure VMs with public IP addresses continue to use the address for connections initiated from the internet."
     - content: "No. The public IP address will be removed from the Azure VM after Azure NAT Gateway is deployed."
