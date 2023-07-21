@@ -30,7 +30,7 @@ levels:
 roles: 
   - solution-architect
 products: 
-  defender-for-iot
+  - defender-for-iot
 subjects: 
   - security
 units:
