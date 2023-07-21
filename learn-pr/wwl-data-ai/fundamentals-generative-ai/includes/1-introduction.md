@@ -1,6 +1,6 @@
 In science fiction stories, conflict often arises when artificial intelligence begins to think for itself. As real-life AI advances, our immediate thoughts may have less to do with whether AI can think, but what we think of its impact on our lives. In this module, we explore the development of generative AI, a branch of artificial intelligence, and how its advancements can assist humans with a variety of tasks. 
 
-Generative AI creates new content based on natural language input. Consumers typically interact with generative AI that has been built into software applications. Engineers build these applications with language models.   
+Generative AI creates new content based on natural language input. Consumers typically interact with generative AI that has been built into software applications. Developers build these applications with language models.   
 
 Language models used to implement generative AI are trained with huge volumes of textual data. The massive volume of training data and the way large language models are designed results in a model that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. Example scenarios include: 
 
