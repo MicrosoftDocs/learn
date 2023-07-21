@@ -23,7 +23,6 @@ products:
 - m365
 - microsoft-purview
 - microsoft-defender
-- kusto-query-language
 subjects:
 - compliance
 - information-protection-governance
@@ -37,4 +36,4 @@ modules:
 - learn.wwl.investigate-threats-using-audit-in-microsoft-365-defender-microsoft-purview-premium
 - learn.wwl.investigate-threats-with-content-search-in-microsoft-purview
 trophy:
-  uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-365-defender.trophy
+  uid: learn.wwl.sc-200-mitigate-threats-using-microsoft-purview.trophy

@@ -26,7 +26,6 @@ products:
 - m365
 - mdatp
 - microsoft-defender
-- microsoft-security-graph
 subjects:
 - cloud-security
 - security
