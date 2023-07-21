@@ -36,7 +36,6 @@ subjects:
   - security
 units:
 - learn.defender-iot-plan-deployment.introduction
-
 - learn.defender-iot-plan-deployment.describe-process-to-deploy
 - learn.defender-iot-plan-deployment.identify-sites-zones
 - learn.defender-iot-plan-deployment.exercise-organize-network-into-sites-zones
@@ -45,7 +44,6 @@ units:
 - learn.defender-iot-plan-deployment.identify-options-manage-access 
 - learn.defender-iot-plan-deployment.knowledge-check
 - learn.defender-iot-plan-deployment.summary
-
 badge:
   uid: |
     learn.defender-iot-plan-deployment.badge
