@@ -3,6 +3,6 @@ In this module, you have learned about generative AI, a branch of artificial int
 The main takeaways from this module are that generative AI has the potential to revolutionize the way we work by assisting with first drafts, information synthesis, and strategic planning. Copilots, which are AI-powered assistants based on large language models, can be customized for a variety of business-specific applications and services. The quality of responses that a generative AI application returns not only depends on the model itself but also on the types of prompts it is given. Prompt engineering is the process of improving prompts to produce better results.
 
 Additional Reading:
-- https://www.microsoft.com/en-us/ai/ai-lab-generative-models
-- https://openai.com/
-- https://azure.microsoft.com/en-us/services/cognitive-services/language-understanding/
+- https://learn.microsoft.com/ai/
+- https://learn.microsoft.com/azure/ai-services/openai/overview
+- https://learn.microsoft.com/training/paths/develop-ai-solutions-azure-openai/
