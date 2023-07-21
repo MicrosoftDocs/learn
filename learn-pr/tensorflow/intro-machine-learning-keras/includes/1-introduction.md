@@ -1,5 +1,5 @@
 
-TensorFlow is a popular framework for working with machine learning. This module covers Keras, which is a higher-level and user-friendly API that's released as part of TensorFlow. For many scenarios, the level of abstraction provided by Keras gives us all the functionality we need, without the complexity of the lower-level concepts of TensorFlow.
+TensorFlow is a popular framework for working with machine learning. This module covers Keras, which is a higher-level and user-friendly API that's released as part of TensorFlow. For many scenarios, the level of abstraction provided by Keras gives you all the functionality you need, without the complexity of the lower-level concepts of TensorFlow.
 
 At the end of this module, if you feel that you need more flexibility than Keras provides, then the fifth module of this learning path, *Intro to Machine Learning with TensorFlow*, shows how to reimplement a portion of the Keras code in this module using lower-level TensorFlow APIs.
 
