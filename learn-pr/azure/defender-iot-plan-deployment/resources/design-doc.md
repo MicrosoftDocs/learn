@@ -37,8 +37,6 @@ By the end of this module, you'll be able to:
 1. Organize the locations and systems across your network into sites and zones
 1. Choose a sensor connection method to use for my organization to manage my OT security deployment
 1. Identify the users and roles your teams will use with Defender for IoT
-1. Describe options to manage access to sensors and on-premises management consoles
-
 
 ## Chunk your content into subtasks
 
@@ -124,28 +122,23 @@ Add more units as needed for your content
    Active directory integration/connection
    - Discuss support for an integration between an on-premises management console and Active Directory to allow Active Directory users or groups to sign into sensors.
    - Identify when you’d choose to do this
-   
-   Knowledge check 
-   For a given scenario or scenarios:
-   - Identify the Azure users required for each site (Is it required to have all related built-in roles assigned per subscription??) 
-   OR (Batami’s question): Real world scenario: List a series of Active Directory groups. Which sensor user roles would you apply to each one? Same with Azure users. 
 
    - Identify the on-premises OT sensors users required for each site
-
-1. Identify options to manage access to sensors and on-premises management consoles
 
    Active directory integration/connection to allow users to sign into sensor and console.
    - Discuss support for an integration between an on-premises management console and Active Directory to allow Active Directory users or groups to sign into sensors.
    - Identify when you’d choose to do this
-   
+
    Create user access groups
    To manage your on-premises Defender for IoT users, use a global business topology that's based on business units, regions, and sites, and then define user access permissions around those entities.
 
    Create user access groups to establish global access control across Defender for IoT on-premises resources. Each access group includes rules about the users that can access specific entities in your business topology, including business units, regions, and sites.
-   
 
    Knowledge check 
-      - Choose whether to work with Active Directory (when would you vs when you wouldn’t)
+   For a given scenario or scenarios:
+   - Identify the Azure users required for each site (Is it required to have all related built-in roles assigned per subscription??) 
+   OR (Batami’s question): Real world scenario: List a series of Active Directory groups. Which sensor user roles would you apply to each one? Same with Azure users. 
+  
  
 
 1. Summary
