@@ -8,6 +8,9 @@
 
     [Exercise introduction guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-exercise-unit-introduction-format)
 -->
+    - List the stages to deploy Defender for IoT (include organizer illustration)
+    - Briefly mention the steps involved in each stage
+    - Discuss roles involved in each stage
 TODO: add your topic sentences(s)
 
 <!-- 2. Scenario sub-task --------------------------------------------------------------------------------

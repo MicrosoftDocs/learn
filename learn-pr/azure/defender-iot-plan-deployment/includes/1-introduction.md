@@ -1,64 +1,24 @@
-<!-- 1. Topic sentence(s) --------------------------------------------------------------------------------
+Microsoft Defender for IoT provides comprehensive threat detection for IoT/OT environments, with multiple deployment options that include cloud-connected, fully on-premises, or hybrid.
 
-    Goal: orient the learner to the area covered in this module
+This module describes the high-level steps required to plan your deployment of Defender for IoT for OT monitoring.
 
-    Heading: none
-
-    Example: "Azure Logic Apps let you automate your business processes and run them in the cloud."
-
-    Recommended: visual like an image, table, list, etc. that supports the topic sentence(s)
-
-    [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
--->
-TODO: add your topic sentences(s)
-TODO: add a visual element
-
-<!-- 2. Scenario -----------------------------------------------------------------------------------------
-
-    Goal: describe the real-world scenario this module will use to illustrate the concepts
-
-    Heading: "## Example scenario"
-
-    Example: "Suppose you work at an athletic shoe company on the marketing team. You're launching a new basketball shoe created by a celebrity athlete. Previous launches resulted in a social media frenzy as people shared stories and photos of themselves wearing their new shoes. The marketing team wants to monitor hundreds of social media sites, blogs, and websites to determine consumer reaction. There will be more data than you can process manually. You would like a cloud-hosted system that automates monitoring, text analytics, database storage, and email notifications."
-
-    Recommended: an image that visualizes the scenario, use the image markdown extension (https://review.docs.microsoft.com/help/contribute/markdown-reference?branch=main#images)
-
-    Optional: a "scenario video" that visualizes the scenario
-
-    [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
-    [Scenario video guidance](TBD)
- -->
 ## Example scenario
 
 Suppose you work for a car manufacturer that has offices and production sites across the globe. You're tasked with implementing a system to monitor traffic and secure your manufacturing automation systems from the access panels to the pneumatic and packaging systems. To take the organization's operational technology (OT) security visibility to the next level, your team chooses to use Microsoft Defender for IoT.
 
 You need to create a plan for your deployment so that your organization can monitor traffic from various systems, across several sites in different geographic areas around the world. You’ll need to decide on how you’re going to connect your network sensors to the cloud, and what users and user roles assignment to provision.
 
-<!-- 3. Prose table-of-contents --------------------------------------------------------------------------
-
-    Goal: List the activities the learner will do in this content. This differs from the title and the learning objectives. The title and the learning objectives are "outcome focused"; that is, they describe the skills the learner will acquire as a result of consuming this content. By contrast, here you should be specific about what the learning will **do** in order to acquire those skills. The format can be either prose or bulleted-list; however, a list will yield better results when transformed into other output types such as PowerPoint.
-
-    Heading: "## What will we be doing?"
-
-    Example: "Here, you'll create a business workflow using Azure Logic Apps to automate the processing of tweets:
-                * **Launch**: when a new tweet is available
-                * **Process**: determine if the sentiment of the tweet is positive or negative
-                * **Route**: branch based on the sentiment score"
-
- -->
 ## What will we be doing?
-TODO: add your activities
 
-<!-- 4. Terminal learning objective ----------------------------------------------------------------------
+Identify the steps and roles involved in the different stages of a deployment of Microsoft Defender for Iot. Then plan basic details about deploying an OT monitoring system, such as:
 
-    Goal: This is a restatement of the module title into a complete sentence. You have more room here to convey the main goal than in a space-limited title. Make it outcome-focused so it describes the main skill the learner will acquire as a result of this training. In other words, it should answer the question: "what is the key thing the learner will be able to do as a result of consuming this training?"
+- Sites and zones: Decide how you'll segment a network you want to monitor by using sites and zones that can represent locations all around the world.
 
-    Heading: "## What is the main goal?"
+- Sensor management: Decide on whether you'll be using cloud-connected or air-gapped, locally-managed OT sensors, or a hybrid system of both. 
 
-    Example: "By the end of this session, you'll be able to create workflows which route and process data using Azure Logic Apps and its built-in connectors."
+- Users and roles: Identify the types of users you'll need on each sensor, and the roles that they'll need for each activity.
 
- -->
+
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
 
-<!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->
+By the end of this session, you'll be able to plan a deployment of Microsoft Defender for IoT to monitor your OT networks.
