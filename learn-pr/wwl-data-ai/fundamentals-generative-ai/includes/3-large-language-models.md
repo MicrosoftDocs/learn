@@ -7,6 +7,8 @@ We call the body of training text the *corpus* and the words that are broken dow
 
 Vectors are assigned to each word during the training process, so that the representation for each token consist of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map. So for example, after training is complete, the vectors for "cat" and "dog" will likely be closer together along one dimension than, say, "skateboard"; and the vector for "cat" might be close to "meow" one a dimension in which "dog" is close to "woof". That way, we can represent semantic meaning by the distance between vectors. 
 
+![An image of words plotted in three dimensional space to show the distance between words.](../media/langue-model-vector-example.png)
+
 #### Transformer architecture captures context
 Transformer architecture is designed to predict the next word in a sequence based on the preceding text.  
 
