@@ -1,6 +1,5 @@
 ### YamlMime:Module
-uid: |
-  learn.finetune-foundation-model-with-azure-machine-learning
+uid: learn.finetune-foundation-model-with-azure-machine-learning
 metadata:
   title: |
     Fine-tune a foundation model from the model catalog in Azure Machine Learning

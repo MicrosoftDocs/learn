@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.finetune-foundation-model-with-azure-machine-learning.exercise
+uid: learn.finetune-foundation-model-with-azure-machine-learning.exercise
 title: |
   Exercise - Fine-tune a foundation model
 metadata:

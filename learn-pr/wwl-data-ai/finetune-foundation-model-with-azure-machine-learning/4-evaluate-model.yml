@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.finetune-foundation-model-with-azure-machine-learning.evaluate-model
+uid: learn.finetune-foundation-model-with-azure-machine-learning.evaluate-model
 title: |
   Evaluate, deploy, and test a fine-tuned foundation model
 metadata:

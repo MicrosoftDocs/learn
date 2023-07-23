@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune
 title: |
-  Understand 
+  Understand when to fine-tune a foundation model 
 metadata:
   title: |
-    learning-content
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+    Understand when to fine-tune a foundation model
+  description: "Learn when to fine-tune a foundation model from the model catalog."
   ms.date: 7/18/2023
   author: madiepev
   ms.author: madiepev
