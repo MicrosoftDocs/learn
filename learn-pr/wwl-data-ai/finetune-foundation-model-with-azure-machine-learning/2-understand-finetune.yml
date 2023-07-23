@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: |
+  learn.finetune-foundation-model-with-azure-machine-learning.understand-finetune
+title: |
+  Understand 
+metadata:
+  title: |
+    learning-content
+  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  ms.date: 7/18/2023
+  author: madiepev
+  ms.author: madiepev
+  ms.topic: interactive-tutorial
+  ms.service: machine-learning
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-finetune.md)]
