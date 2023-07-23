@@ -14,12 +14,12 @@ title: |
 summary: "Train a pretrained Large Language Model (LLM) on specific tasks. The model catalog in Azure Machine Learning offers many open source models that can be fine-tuned for your specific task."
 abstract: |
   By the end of this module, you'll be able to:
-    - "Explore foundation models in the model catalog."
-    - "Fine-tune a foundation model using the Azure Machine Learning studio."
-    - "Evaluate and deploy a fine-tuned model using the Azure Machine Learning studio."
+    - Explore foundation models in the model catalog.
+    - Fine-tune a foundation model using the Azure Machine Learning studio.
+    - Evaluate and deploy a fine-tuned model using the Azure Machine Learning studio.
 prerequisites: |
-  - "Familiarity with Azure and the Azure portal."
-  - "An understanding of generative AI and foundation models."
+  - Familiarity with Azure and the Azure portal.
+  - An understanding of generative AI and foundation models.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
   - intermediate
