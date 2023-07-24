@@ -9,7 +9,7 @@ metadata:
   ms.author: aastewar
   ms.topic: module-standard-task-based
   ms.prod: github
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/3-personalize-codespace.md)]
 

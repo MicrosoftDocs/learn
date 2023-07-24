@@ -9,6 +9,6 @@ metadata:
   ms.author: aastewar
   ms.topic: module-standard-task-based
   ms.prod: github
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-code-with-codespaces.md)]
