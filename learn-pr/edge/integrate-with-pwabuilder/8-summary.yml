@@ -9,6 +9,6 @@ metadata:
   ms.author: xupa
   ms.topic: module-standard-task-based
   ms.prod: microsoft-edge
-durationInMinutes: 2
+durationInMinutes: 1
 content: |
   [!include[](includes/8-summary.md)]
