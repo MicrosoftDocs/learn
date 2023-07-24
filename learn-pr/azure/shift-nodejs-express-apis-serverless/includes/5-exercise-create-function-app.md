@@ -1,80 +1,87 @@
-The Express server runs the API on a server. You can create an Azure Functions project to run the APIs instead.
+The Express application runs the APIs on a server. In this exercise, you create a serverless Azure Functions application that runs the APIs instead. You then migrate the application logic from the Node.js Express application to the Functions application. You don't have to rewrite the code. You need only a few small code changes to make the transition.
 
-## Create a new function app
-In this exercise, you'll create the Azure Functions application using the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions&WT.mc_id=devto-blog-jopapa). Install the extension and follow these steps to create an Azure Functions app on your computer.
+## Create a new Azure Functions app
+
+Make sure you have the [Visual Studio Code Extension for Azure Functions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions) installed.
 
 1. In Visual Studio Code, open the command palette by pressing **F1**
-1. Type and select **Azure Functions: Create New Project**
+1. Type and select **Azure Functions: Create New Project**.
 
-    :::image type="content" source="../media/5-create-function-app.png" alt-text="Screenshot of VS Code when creating a new function app.":::
+   :::image type="content" source="../media/5-create-function-app.png" alt-text="Screenshot of Visual Studio Code creating a new function app.":::
 
-1. Choose **Browse** to find the folder to create the functions
-1. Create a new folder in your project called _functions_
-1. Select **TypeScript**
-1. When prompted to create a function, select **Skip for Now**
+1. Choose **Browse** to find your project folder, and create a new folder in the project called _functions_.
+1. Select **TypeScript**.
+1. When prompted to create a function, select **Skip for Now**.
 
-Congratulations, you just created an Azure Function app!
+The Functions app is now created to serve the application's API endpoints. In the next unit, you create the functions that list, add, update, and delete vacations.
 
 > [!NOTE]
-> You created the function app in the _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your application, but for this sample it helps to see them all in one place.
+> You created the Functions app in a _functions_ folder, which separates it from the Angular app in the same project. You can decide how to structure your applications, but for learning purposes it helps to see both apps in one place.
 
-The Azure Functions app is what serves the application's API endpoints.
+## Copy and refactor the code
 
-Next you'll create the function that will fetch and return the list of vacations.
+All the Node.js Express logic that returns data is in the _server/services_ folder. You can copy this code from the Node.js Express application to the Functions application, and then do some minor refactoring to make the code work with Functions instead of Node.js Express.
 
-## Create a new function
+The following table lists the main differences between the Node.js Express application and the Functions application:
 
-You may recall that there are four endpoints in the Node.js Express app. In this exercise, you'll create the function for the first of these endpoints. We'll come back and create the other endpoints in a future exercise.
+| Component                                | Node.js Express | Functions                 |
+| ---------------------------------------- | --------------- | ------------------------------- |
+| Imported npm package to serve the application | `express`       | `@azure/functions`              |
+| Request and response objects         | `req` and `res` | `context.req` and `context.res` |
 
-Create a new function in your Azure Functions application.
+First you refactor the code to import the appropriate npm package. Then you refactor to handle the differences between how Express and Functions pass the request and response objects.
 
-1. In Visual Studio Code, open the command palette by pressing **F1**
-1. Type and select **Azure Functions: Create Function**
+### Copy the code
 
-    :::image type="content" source="../media/5-create-function.png" alt-text="Screenshot of VS Code when creating a new function.":::
+In Visual Studio Code, copy the _server/services_ folder from the Express application and paste it into the _functions_ folder.
 
-1. Choose **HTTP Trigger** as the type of function
-1. Enter **vacations-get** as the name of the function
-1. Select **Anonymous** as the authentication level
+### Change the npm package
 
-## Set the HTTP method and route endpoint names
+Open the _functions/services/vacation.service.ts_ file, and replace the first line, `import { Request, Response } from 'express';`, with the following line:
 
-Notice that there's now a folder _functions/vacations-get_ that contains a few files.
-
-The _function.json_ contains the configuration for the function.
-
-1. Open the file _functions/vacations-get/function.json_
-1. Notice the methods allow both `GET` and `POST`
-1. Change the methods array to only allow `GET` requests
-1. Go to the `bindings` section's `req` properties
-1. Add a `route: "vacations"` entry
-
-By convention, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _vacations-get_ folder, the route endpoint is generated as **vacations-get**. By adding the `route` property, the route now matches the expected **vacations** route in the Node.js Express app.
-
-Now the function is executed when an HTTP `GET` on **/vacations** is requested.
-
-Your _function.json_ should look like the following code.
-
-```json
-{
-  "disabled": false,
-  "bindings": [
-    {
-      "authLevel": "anonymous",
-      "type": "httpTrigger",
-      "direction": "in",
-      "name": "req",
-      "methods": ["get"],
-      "route": "vacations"
-    },
-    {
-      "type": "http",
-      "direction": "out",
-      "name": "res"
-    }
-  ],
-  "scriptFile": "../dist/vacations-get/index.js"
-}
+```typescript
+import { Context } from '@azure/functions';
 ```
 
-The other important file here in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route endpoint is requested. The Node.js Express app already includes the logic that you'll move into this file.
+This change makes the Functions app responsible for managing request and response messages.
+
+>[!NOTE]
+> The Functions `Context` object also contains other APIs, such as `log`. For example, you can use `context.log('hello')` in place of the common `console.log` you use in Node.js applications.
+
+### Change the request and response objects
+
+In the Node.js Express application, the request and response parameters for the `getVacations`, `postVacation`, `putVacation`, and `deleteVacation` functions use `req` and `res`. The Functions application contains the request and response objects in a `Context` object, and uses destructuring to access the objects.
+
+In _functions/services/vacation.service.ts_, find and replace all four instances of the code `(req: Request, res: Response)` with the following code:
+
+```typescript
+({ req, res }: Context)
+```
+
+When you're done refactoring, your changed code lines should look like the following example:
+
+```typescript
+import { Context } from '@azure/functions';
+import * as data from './data';
+
+async function getVacations({ req, res }: Context) {
+  // ...
+}
+
+async function postVacation({ req, res }: Context) {
+  // ...
+}
+
+async function putVacation({ req, res }: Context) {
+  // ...
+}
+
+async function deleteVacation({ req, res }: Context) {
+  // ...
+}
+
+export default { getVacations, postVacation, putVacation, deleteVacation };
+```
+
+Save the file. You've now refactored the code to handle HTTP requests. Continue to the next unit to create the functions and refactor the endpoints and routes.
+
