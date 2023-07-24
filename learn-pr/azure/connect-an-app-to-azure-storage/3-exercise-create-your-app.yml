@@ -8,6 +8,10 @@ metadata:
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-extended-java
+    - devx-track-js
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript
 interactive: bash

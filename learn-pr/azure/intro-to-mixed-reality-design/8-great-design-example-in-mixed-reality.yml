@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.design-considerations-mr-development.great-design-example-in-mixed-reality
+title: Great design examples in mixed reality
+metadata: 
+  title: Great design examples in mixed reality
+  description: You'll look into a few already designed applications using mixed reality.
+  ms.date: 6/29/2022
+  author: "Sean-Kerawala"
+  ms.author: "sekerawa"
+  ms.topic: interactive-tutorial
+  ms.prod: learning-mrtk
+durationInMinutes: 10
+content: |
+  [!include[](includes/8-great-design-example-in-mixed-reality.md)]

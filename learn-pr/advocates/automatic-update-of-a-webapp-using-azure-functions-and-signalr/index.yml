@@ -6,8 +6,9 @@ metadata:
   ms.date: 05/31/2019
   author: craigshoemaker
   ms.author: cshoe
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
+  ms.service: azure-functions
+  manager: mijacobs
 title: Enable automatic updates in a web application using Azure Functions and SignalR Service
 summary: Update a web app's notification mechanism from polling to push-based architecture with SignalR Service, Azure Cosmos DB and Azure Functions.
 abstract: |

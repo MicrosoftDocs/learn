@@ -1,0 +1,46 @@
+﻿### YamlMime:Module
+uid: learn.github.manage-work-github-projects
+title: Manage your work with GitHub Projects
+metadata:
+  title: Manage your work with GitHub Projects
+  description: Visualize large projects as spreadsheets or boards, and automate everything with code.
+  ms.date: 05/05/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: interactive-tutorial
+  ms.prod: learning-github
+summary: >
+  Learn to use GitHub Projects to create issues, break them into tasks, track relationships, add custom fields, and have conversations.
+abstract: |
+  At the end of this module, you'll be able to:
+  - Discern the differences between Projects and Projects (Classic)
+  - Learn how to build an organization level Project
+  - Understand how to organize your Project 
+  - Gain insight on how to edit the visibility, access, and management of your Project
+  - Know how to develop automation and insights from your Project
+prerequisites: |
+  - A GitHub account
+  - Access to an organization
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: true
+levels: 
+- beginner
+roles: 
+- administrator
+- developer
+- solution-architect
+- student
+- devops-engineer
+products:
+- github
+units:
+- learn.github.manage-work-github-projects.introduction
+- learn.github.manage-work-github-projects.project-vs-project-classic
+- learn.github.manage-work-github-projects.how-to-create-project
+- learn.github.manage-work-github-projects.how-to-organize-project
+- learn.github.manage-work-github-projects.how-to-organize-and-automate-project
+- learn.github.manage-work-github-projects.insight-and-automation-with-projects
+- learn.github.manage-work-github-projects.knowledge-check
+- learn.github.manage-work-github-projects.summary
+badge:
+  uid: learn.github.manage-work-github-projects.badge

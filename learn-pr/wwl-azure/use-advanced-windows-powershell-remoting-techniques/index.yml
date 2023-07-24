@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Use advanced Windows PowerShell remoting techniques
 summary: This module covers some useful advanced techniques that will help overcome the limitations of basic Windows PowerShell remoting.
 abstract: |

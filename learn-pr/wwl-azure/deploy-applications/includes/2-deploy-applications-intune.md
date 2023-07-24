@@ -1,4 +1,5 @@
 
+
 As an IT admin, you can use Microsoft Intune to manage the client apps that your company's workforce uses. This functionality is in addition to managing devices and protecting data. One of an admin's priorities is to ensure that end users have access to the apps they need to do their work. This goal can be a challenge because:
 
  -  There are a wide range of device platforms and app types.
@@ -20,7 +21,7 @@ The first step in app deployment is to identify the apps you want to manage and 
 
 #### Deploy
 
-After you've added the app to Intune, you can then assign it to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from Intune within the Endpoint Manager admin center. Additionally, in some app stores, such as the Apple and Windows app stores, you can purchase app licenses in bulk for your company. Intune synchronizes data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.
+After you've added the app to Intune, you can then assign it to users and devices that you manage. Intune makes this process easy, and after the app is deployed, you can monitor the success of the deployment from Intune within the Microsoft Intune admin center. Additionally, in some app stores, such as the Apple and Windows app stores, you can purchase app licenses in bulk for your company. Intune synchronizes data with these stores so that you can deploy and track license usage for these types of apps right from the Intune administration console.
 
 #### Configure
 

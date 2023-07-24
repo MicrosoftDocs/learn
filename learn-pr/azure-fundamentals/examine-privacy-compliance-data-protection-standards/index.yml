@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Examine privacy, compliance, and data protection standards on Azure
 summary: Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
 abstract: |

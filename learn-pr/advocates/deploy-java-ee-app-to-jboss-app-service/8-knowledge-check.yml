@@ -9,7 +9,12 @@ metadata:
   ms.date: 03/04/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates, devx-track-java, devx-track-javaee-jbosseap-appsvc, devx-track-javaee
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-java
+    - devx-track-javaee-jbosseap-appsvc
+    - devx-track-javaee
+    - devx-track-extended-java
   ms.contributors: yoterada-03082021
 durationInMinutes: 2
 quiz:
@@ -38,6 +43,7 @@ quiz:
           explanation: "It's possible. However, we don't recommend this method in an Azure App Service environment because you must be signed in directly to run the CLI, and the settings disappear after a system restart."
         - content: "Startup shell script"
           isCorrect: true
+          explanation: Correct!
         - content: "All of the above"
           isCorrect: false
           explanation: "We don't recommend some of the above options."
@@ -57,3 +63,4 @@ quiz:
           explanation: This choice is correct. When you run the Azure CLI command, you can access the logs. However, this isn't the only correct option.
         - content: All of the above
           isCorrect: true
+          explanation: Correct!

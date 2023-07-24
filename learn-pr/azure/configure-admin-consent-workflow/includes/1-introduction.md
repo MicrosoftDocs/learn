@@ -22,4 +22,4 @@ You'll undertake the following tasks in this learn module:
 
 ## What is the main goal?
 
-Upon completion of this module. the learner will be able configure a workflow that enables users to request admin consent when they're unable to consent to the application's permissions. The workflow enables designated reviewers to view and act on the request from a single location in the Azure portal.
+In this module, you'll be able configure admin consent workflow in the Azure portal. The workflow enables designated reviewers to evaluate and respond to admin consent requests.

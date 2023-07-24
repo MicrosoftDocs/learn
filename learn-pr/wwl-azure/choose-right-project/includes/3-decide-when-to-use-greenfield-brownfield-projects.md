@@ -26,7 +26,7 @@ When your teams spend large percentages of their time just maintaining existing 
 
 It's essential to find a way to reduce that time and to make software release less risky. A DevOps transformation can provide that.<br>
 
-The limitations will have often worn down the existing team members. For example, they're working in the past and are keen to experiment with new ideas.
+The limitations will have often worn down the existing team members. For example, they're working in the past and aren't keen to experiment with new ideas.
 
 The system is often crucial for organizations. It might also be easier to gain more robust management buy-in for these projects because of the potential benefits delivered.
 

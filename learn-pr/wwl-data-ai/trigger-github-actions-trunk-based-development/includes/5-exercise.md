@@ -3,7 +3,7 @@
 
 In this exercise, you will:
 
-- Work with trunk-based development.
+- Work with feature-based development.
 - Protect the main branch.
 - Trigger a GitHub Actions workflow by merging a pull request.
 
@@ -12,4 +12,4 @@ In this exercise, you will:
 Follow these instructions to complete the challenge:
 
 - View the [challenge repo on GitHub](https://github.com/MicrosoftLearning/mslearn-mlops?azure-portal=true).
-- Complete challenge 3: trigger GitHub Actions with trunk-based development.
+- Complete challenge 3: trigger GitHub Actions with feature-based development.

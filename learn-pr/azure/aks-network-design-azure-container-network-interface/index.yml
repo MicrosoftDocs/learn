@@ -2,16 +2,16 @@
 uid: learn.aks-network-design-azure-container-network-interface
 metadata:
   title: Design an Azure Kubernetes Service network with Azure CNI
-  description: In this module, we'll take a detailed look at the process of designing an Azure Kubernetes Service network using the Azure Container Network Interface (CNI) plug-in.
-  ms.date: 8/20/2021
+  description: In this module, we take a detailed look at the process of designing an Azure Kubernetes Service network using the Azure Container Network Interface (CNI) plug-in.
+  ms.date: 05/23/2023
   author: markwme
   ms.author: mawhitby
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Design an Azure Kubernetes Service network with Azure CNI
-summary: In this module, we'll take a detailed look at the process of designing an Azure Kubernetes Service network using the Azure Container Network Interface (CNI) plug-in. We'll cover some Kubernetes networking basics looking at how certain resource types use IP addresses. Then we'll use a fictional application to see how to size a Kubernetes cluster and in turn, determine the requirements for the network. To finish, we'll walk through the process of deploying an Azure Kubernetes Service cluster and will view details of the network configuration.
+summary: In this module, we take a detailed look at the process of designing an Azure Kubernetes Service network using the Azure Container Network Interface (CNI) plug-in. We cover some Kubernetes networking basics looking at how certain resource types use IP addresses. Then we use a fictional application to see how to size a Kubernetes cluster and in turn, determine the requirements for the network. To finish, we walk through the process of deploying an Azure Kubernetes Service cluster and view details of the network configuration.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
   - List the key Kubernetes resource types that require network access.
   - Assess an application's needs and how that could affect network design.
   - Understand the steps to size an Azure Kubernetes Service cluster for a workload.

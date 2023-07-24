@@ -9,6 +9,6 @@ metadata:
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction-privileged-access.md)]

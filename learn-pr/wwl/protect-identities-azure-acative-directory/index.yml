@@ -3,11 +3,12 @@ uid: learn.wwl.protect-identities-azure-acative-directory
 metadata:
   title: MD-102 1-Protect identities in Azure Active Directory
   description: "This module introduces students to the various authentication methods used to protect identities."
-  ms.date: 04/25/2023
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
+  ms.subservice: domain-services
 title: Protect identities in Azure Active Directory
 summary: This module introduces students to the various authentication methods used to protect identities.
 abstract: |

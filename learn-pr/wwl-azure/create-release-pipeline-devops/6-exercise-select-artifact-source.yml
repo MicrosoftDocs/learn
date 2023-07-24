@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-release-pipeline.exercise-select-artifact-source
-title: Exercise - Select an artifact source
+title: Exercise - select an artifact source
 metadata:
-  title: Exercise - Select an artifact source
-  description: "Exercise - Select an artifact source"
-  ms.date: 12/09/2022
+  title: Exercise - select an artifact source
+  description: "Exercise - select an artifact source"
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+durationInMinutes: 30
 content: |
   [!include[](includes/6-exercise-select-artifact-source.md)]

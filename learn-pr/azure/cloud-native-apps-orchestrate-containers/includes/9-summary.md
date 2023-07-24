@@ -1,21 +1,21 @@
-In this module, you learned about orchestrating containers for cloud-native apps. You created a container registry, a Kubernetes cluster with AKS, and deployed a docker container to the cluster. Then, you created manifest files to configure the cluster and allow API communication. All this, while you also learned about services, containers, and other cloud services and concepts.
+In this module, you learned about orchestrating containers for cloud-native apps. You created a container registry, a Kubernetes cluster with AKS, and deployed a Docker container to the cluster. Then, you created manifest files to configure the cluster and allow API communication. You did all this while you also learned about services, containers, and other cloud services and concepts.
 
 This module is designed to give you an overview of how to set up a scalable Cloud Native App using AKS. For more in-depth knowledge and tutorials on containers, Kubernetes, and AKS, you can visit the resources below.
 
 ## Clean up
 
-It's important that you clean up any unused resources. You're charged for the configured capacity not how much of the database is used. If you didn't delete your resource group in Unit 7 - Exercise - Scale and rebalance your database, follow these instructions:
+It's important that you clean up any unused resources. You're charged for the configured capacity not how much of the database is used. If you didn't delete your resource group in Unit 7, follow these instructions:
 
 1. Go to the [Azure portal](https://portal.azure.com/).
-1. In the navigation menu on the left, select **Resource Groups**, and then select the resource group that you created as part of the optional exercise in unit 3.
+1. In the navigation menu on the left, select **Resource Groups**, and then select the resource group that you created as part of the exercise in unit 3.
 1. In the **Overview** pane, select **Delete resource group**.
-1. Enter the name of the resource group that you created to confirm, and then select **Delete**.
+1. Enter the name of the resource group that you created to confirm, and then select **Delete**. Select **Delete** again to confirm deletion.
 
-Now that you have reviewed this module, you should be able to: 
+Now that you've reviewed this module, you should be able to:
 
-* Create a Kubernetes AKS cluster
-* Run a docker container in Kubernetes
-* Connect the docker container to a webapp
+* Create a Kubernetes AKS cluster.
+* Run a docker container in Kubernetes.
+* Connect the docker container to a web app.
 
 ## Use these resources to discover more
 

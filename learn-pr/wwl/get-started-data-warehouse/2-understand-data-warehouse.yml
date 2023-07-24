@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.understand-data-warehouse
+title: Understand data warehouse fundamentals
+metadata:
+  title: Understand data warehouse fundamentals
+  description: "Understand data warehouse fundamentals"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-power-bi
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 7
+content: |
+  [!include[](includes/2-understand-data-warehouse.md)]

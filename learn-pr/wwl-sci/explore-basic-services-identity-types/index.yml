@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: active-directory
 title: Describe the services and identity types of Azure AD
 summary: Azure Active Directory (Azure AD) is Microsoft’s cloud-based identity and access management service. Learn about Azure AD, its services and the types of identities it supports.
 abstract: |

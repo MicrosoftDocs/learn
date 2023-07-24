@@ -5,8 +5,8 @@ metadata:
   description: This learning path introduces you to Azure-supported SQL-based enterprise data solutions enabling you to store and retrieve your app's data in the cloud.
   brand: azure
   ms.date: 09/24/2018
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Work with relational data in Azure

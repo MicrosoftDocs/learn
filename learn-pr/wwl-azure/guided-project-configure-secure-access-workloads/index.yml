@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.guided-project-configure-secure-access-workloads
+metadata:
+  title: Guided Project - Configure secure access to workloads with Azure virtual networking services
+  description: "Guided Project - Configure secure access to workloads with Azure virtual networking services"
+  ms.date: 06/13/2023
+  author: wwlpublish
+  ms.author: jileary
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Guided Project - Configure secure access to workloads with Azure virtual networking services
+summary: In this module, you practice configuring secure access to workloads using Azure virtual networking. The lab combines both learning and hands-on practice.
+abstract: |
+  - Create and configure virtual networks
+  - Create and configure network security groups (NSGs)
+  - Create and configure Azure Firewall
+  - Configure network routing
+  - Create DNS zones and configure DNS settings
+prerequisites: |
+  - Experience using the Azure portal to create resources.
+  - Experience with cloud networking.
+  - The prerequisites can be obtained by completing the other modules in this learning path.
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- network-engineer
+products:
+- azure-dns
+- azure-firewall
+- azure-virtual-network
+units:
+- learn.wwl.guided-project-configure-secure-access-workloads.introduction
+- learn.wwl.guided-project-configure-secure-access-workloads.exercise1
+- learn.wwl.guided-project-configure-secure-access-workloads.exercise2
+- learn.wwl.guided-project-configure-secure-access-workloads.exercise3
+- learn.wwl.guided-project-configure-secure-access-workloads.exercise4
+- learn.wwl.guided-project-configure-secure-access-workloads.exercise5
+- learn.wwl.guided-project-configure-secure-access-workloads.knowledge-check
+- learn.wwl.guided-project-configure-secure-access-workloads.summary
+badge:
+  uid: learn.wwl.guided-project-configure-secure-access-workloads.badge

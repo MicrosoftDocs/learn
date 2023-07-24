@@ -4,12 +4,13 @@ title: Running automated machine learning experiments
 metadata:
   title: Running automated machine learning experiments
   description: "Running automated machine learning experiments"
-  ms.date: 06/29/2021
+  ms.date: 04/26/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 5
 content: |
   [!include[](includes/4-automl-experiments.md)]

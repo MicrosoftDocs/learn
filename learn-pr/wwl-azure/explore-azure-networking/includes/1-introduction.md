@@ -1,4 +1,5 @@
 
+
 ## Scenario
 
 You are the SAP solutions architect for your company, responsible for the Azure IaaS solutions. You define the standards for Azure compute, storage, and networking.

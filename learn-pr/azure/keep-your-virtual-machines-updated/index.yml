@@ -3,18 +3,17 @@ uid: learn.keep-your-virtual-machines-updated
 metadata:
   title: Keep your virtual machines updated
   description: Learn to use Azure Update Management to update virtual machines, verify agent connectivity, and use Azure Log Analytics in your cloud environment.
-  ms.date: 01/07/2020
+  ms.date: 05/15/2023
   author: cynthn
   ms.author: cynthn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Keep your virtual machines updated
 summary: Deploy the Azure Update Management solution to update virtual machines in your cloud environment.
 abstract: |
   In this module, you will:
-  - Deploy Update Management to a virtual machine
-  - Schedule recurring security updates
-  - Schedule recurring critical updates
+  - Deploy Update Management to a virtual machine.
+  - Schedule recurring security updates.
+  - Schedule recurring critical updates.
 prerequisites: |
   - Experience administering Azure resources using the Azure portal
   - (Optional) Access to an Azure subscription

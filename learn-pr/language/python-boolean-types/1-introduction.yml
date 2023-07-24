@@ -4,10 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: This unit is an introduction to using Boolean types in Python.
-  ms.date: 12/02/2021
+  ms.date: 05/29/2023
   author: ornelladotcom
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 1

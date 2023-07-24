@@ -7,8 +7,8 @@ metadata:
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Explore modules, packages, and third-party crates
 summary: "Learn about how to effectively use modules and how to integrate with packages and third-party crates."
 abstract:  |

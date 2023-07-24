@@ -1,5 +1,6 @@
 
 
+
 You can use the platform-provided Azure load balancer to enhance availability and scalability of virtual machines by configuring them as a load-balanced set. Azure load balancer provides functionality similar to hardware load balancers by eliminating single points of failure (application or hardware), increasing uptime during planned maintenance or upgrades, and distributing workloads across multiple, identically configured compute nodes.
 
 Azure load balancer can handle traffic originating from within the same Azure virtual network, from any directly connected network, or from the internet. In addition, you can configure it to implement the network address translation (NAT) capability, providing connections to individual virtual machines in the load-balanced set.

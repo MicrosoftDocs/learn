@@ -6,8 +6,8 @@ metadata:
   title: Knowledge check
   description: Knowledge check
   ms.date: 06/21/2021  
-  author: warrenaj
-  ms.author: v-anwarr  
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial 
   ms.service: bonsai
 durationInMinutes: 5

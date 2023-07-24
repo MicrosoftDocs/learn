@@ -7,7 +7,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-blob-storage
 title: Store application data with Azure Blob storage
 summary: Build an app that stores user files with Azure Blob storage.
 abstract: |

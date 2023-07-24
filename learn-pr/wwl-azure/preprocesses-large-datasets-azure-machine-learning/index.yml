@@ -7,6 +7,10 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.service: machine-learning 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-azure
 title: Preprocess large datasets with Azure Machine Learning
 summary: Choose GPU compute in Azure Machine Learning when training compute-intensive models. To reduce the time needed to process the data, store your data efficiently and use a data manipulation library compatible with GPU compute.

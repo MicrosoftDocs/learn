@@ -9,7 +9,9 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-python
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
 durationInMinutes: 3
 content: |
   [!include[](includes/6-input.md)]

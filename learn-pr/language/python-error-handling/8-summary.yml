@@ -5,10 +5,12 @@ metadata:
   unitType: summary
   title: Summary
   description: "In this module, we covered handling and raising exceptions, along with common problems with catching all exceptions."
-  ms.date: 12/10/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

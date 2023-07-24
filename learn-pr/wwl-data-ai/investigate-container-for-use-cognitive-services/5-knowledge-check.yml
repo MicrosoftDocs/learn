@@ -4,15 +4,14 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/07/2021
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: cognitive-services
 durationInMinutes: 5
 quiz:
+  title: ""
   questions:
   - content: "You plan to use a cognitive services container in a local Docker host. Which of the following statements is true?"
     choices:

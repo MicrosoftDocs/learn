@@ -1,4 +1,5 @@
 
+
 Moving to modern management can sometimes be a challenging task considering the complexity of planning and switching from existing IT systems, organizational structures, and processes. Most organizations are still using some combination of on-premises Windows Server Active Directory (AD) and Configuration Manager to manage their Windows devices. To help IT professionals simplify the transition to modern management, Microsoft designed a new feature called Co-management.
 
 If you have an on-premises Active Directory environment and you want to co-manage your domain-joined devices, you can accomplish this by configuring hybrid Azure Active Directory (Azure AD) joined devices. By bringing your devices to Azure AD, you maximize your users' productivity through single sign-on (SSO) across your cloud and on-premises resources. At the same time, you can secure access to your cloud and on-premises resources with conditional access, which is a capability of Azure Active Directory. With conditional access, you can implement automated access control decisions for accessing, for example, SharePoint Online or Exchange Online, that's based on conditions.

@@ -3,10 +3,10 @@ title: Summary
 uid: learn-windows.writing-windows-10-apps.5-summary
 metadata:
   title: Summary and knowledge check
-  description: This knowledge check will test your knowledge of the platforms and features you used in this module.
+  description: This knowledge check tests your knowledge of the platforms and features you used in this module.
   ms.date: 12/10/2018
-  author: QuinnRadich
-  ms.author: quradic
+  author: alvinashcraft
+  ms.author: aashcraft
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   
@@ -19,10 +19,10 @@ quiz:
     - content: What platform should you use to write Windows apps?
       choices:
       - content: UWP
-        explanation: UWP is best if you want to write apps using Windows 10 features.
+        explanation: UWP is best if you want to write apps using Windows features and target other platforms like Xbox and HoloLens.
         isCorrect: false
       - content: WPF
-        explanation: WPF is best if you're making a complex app that targets Windows OS versions that are earlier than Windows 10.
+        explanation: WPF is best if you're making a complex app that targets Windows and want to share library code with other .NET apps.
         isCorrect: false
       - content: Windows Forms
         explanation: Windows Forms is best if you're writing a simple tool or utility that doesn't require anything fancy.
@@ -39,16 +39,16 @@ quiz:
         explanation: UWP and WPF don't necessarily affect how you handle events. They're platforms, not programming languages.
         isCorrect: false
       - content: UWP apps have access to their own runtime APIs and don't necessarily use .NET.
-        explanation: Correct! The sample apps here are similar because they both use C# and XAML. But you might notice that the XAML controls are just a little bit different.
+        explanation: Correct! The sample apps here are similar because they both use C# and XAML. But you might notice that the XAML controls are slightly different.
         isCorrect: true
-    - content: What is Windows Template Studio (WTS) useful for?
+    - content: What is Template Studio useful for?
       choices:
-      - content: WTS creates a new UWP app that has the basic features and structure that you want.
-        explanation: WTS handles all the generic work for implementing your app's structure, letting you focus on the functionality that makes it unique.
+      - content: Template Studio creates a new UWP, WPF, or Windows Forms app that has the basic features and structure that you want.
+        explanation: Template Studio handles all the generic work for implementing your app's structure, letting you focus on the functionality that makes it unique.
         isCorrect: true
-      - content: WTS helps you set up the XAML for your UWP or WPF app.
-        explanation: WTS doesn't just provide XAML code, and it works only for UWP apps.
+      - content: Template Studio helps you set up the XAML for your UWP or WPF app.
+        explanation: Template Studio doesn't provide only the XAML markup, it provides a complete project, including C# code.
         isCorrect: false
-      - content: WTS makes it easy to add new features to your existing UWP app.
-        explanation: WTS works only on new UWP apps or on apps that were created with WTS.
+      - content: Template Studio makes it easy to add new features to your existing app.
+        explanation: Template Studio works only for creating new apps or with existing projects that were created with Template Studio.
         isCorrect: false

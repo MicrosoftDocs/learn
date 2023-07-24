@@ -1,7 +1,7 @@
 You learned how to:
 
 -   Evaluate security posture for collaboration and productivity workloads
--   Design a Microsoft Defender 365 solution
+-   Design a Microsoft 365 Defender solution
 -   Design configurations and operational practices for Microsoft 365
 
 ## Learn more with security documentation

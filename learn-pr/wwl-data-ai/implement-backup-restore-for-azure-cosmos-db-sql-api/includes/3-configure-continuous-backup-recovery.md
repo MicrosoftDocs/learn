@@ -12,9 +12,13 @@ By default, locally redundant storage accounts are used to store the backups in 
 
 ### Change backup options for an existing account
 
-1. In the Azure Cosmos DB account page, under the *Settings* section, choose **Features**. 
+1. In the Azure Cosmos DB account page, under the *Settings* section, choose **Backup & Restore**. 
 
-2. Select **Continuous Backup**, and select **Enable**.
+2. If your account is still in *periodic backup mode*, the following message will appear at top, *Your account is on periodic backup mode. You can now change to continuous mode for a better backup and restore experience. Change to continuous mode*.
+
+3. Select **Change to continuous mode** on the message.
+
+4. Select **Continuous (7 days)** or **Continuous (30 days)** and select **Save** to enable *continuous backup mode*. Do remember that selecting *Continuous (30 days)* will incur additional cost, while selecting *Continuous (7 days)* is free.
 
 ## What is and is not restored?
 

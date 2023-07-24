@@ -7,7 +7,7 @@ metadata:
   author: shwars
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
   ms.custom: team=nextgen
 title: Introduction to computer vision with TensorFlow
 summary: In this module, you will get an introduction to Computer Vision using TensorFlow. We'll use image classification to learn about convolutional neural networks, and then see how pre-trained networks and transfer learning can improve our models and solve real-world problems.

@@ -4,21 +4,21 @@ metadata:
   title: Extend Bicep and ARM templates using deployment scripts
   description: Learn how to add custom steps to your Azure Resource Manager templates
     (ARM templates) and Bicep files by using deployment scripts.
-  ms.date: 05/12/2021
+  ms.date: 05/03/2023
   author: smurawski
   ms.author: stmuraws
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.contributors: stmuraws-12142021
   ms.custom: team=cloud_advocates
+  ms.devlang: bicep
 title: Extend Bicep and ARM templates using deployment scripts
 summary: |
   Add custom steps to your Bicep or JSON Azure Resource Manager templates (ARM templates).
   Integrate deployment scripts with your deployment by using parameters and outputs.
 abstract: |
   After completing this module, you'll be able to:
-  - Perform custom steps in your ARM templates by using a deployment script
-  - Define parameters to make your deployment scripts more reusable
+  - Perform custom steps in your ARM templates by using a deployment script.
+  - Define parameters to make your deployment scripts more reusable.
 iconUrl: /training/achievements/extend-resource-manager-template-deployment-scripts.svg
 levels:
   - advanced

@@ -1,5 +1,6 @@
 
 
+
 The enterprise desktop has evolved. IT Management and Support can be a challenging task, given the dynamic nature of the IT world today. IT professionals once considered the enterprise desktop an organization-owned computer or laptop that was shared or assigned to a specific employee. Today, the enterprise desktop could be a computer, laptop, phone, or tablet. Either the company or the employee who works in an office, from home, a hotel room, or a customer site may own these devices.
 
 Traditional management methods need help with accommodating these new scenarios. Modern endpoint management introduces new techniques and concepts for deploying and maintaining the infrastructure in such a dynamic landscape.

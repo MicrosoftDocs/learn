@@ -4,8 +4,8 @@ metadata:
   title: Configure Azure AD B2C with multi-factor authentication
   description: Configure Azure AD B2C with multi-factor authentication
   ms.date: 03/20/2020
-  author: chrispine-chiedo
-  ms.author: cchiedo
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Configure Azure AD B2C with multi-factor authentication

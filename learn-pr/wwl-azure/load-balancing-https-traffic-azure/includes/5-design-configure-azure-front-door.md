@@ -1,3 +1,4 @@
+
 Azure Front Door is Microsoft’s modern cloud Content Delivery Network (CDN) that provides fast, reliable, and secure access between your users and your applications’ static and dynamic web content across the globe. Azure Front Door delivers your content using the Microsoft’s global edge network with hundreds of global and local POPs distributed around the world close to both your enterprise and consumer end users.
 
 Many organizations have applications they want to make available to their customers, their suppliers, and almost certainly their users. The tricky part is making sure those applications are highly available. In addition, they need to be able to quickly respond while being appropriately secured. Azure Front Door provides different SKUs (pricing tiers) that meet these requirements. Let's briefly review the features and benefits of these SKUs so you can determine which option best suits your requirements.
@@ -13,7 +14,7 @@ If an organization uses Azure, they might achieve these goals by implementing th
 |:-----------------------------------------------:|:--------------------------------------:|
 |         Azure Front Door                        | Enables an entry point to your apps positioned in the Microsoft global edge network. Provides faster, more secure, and scalable access to your web applications.|
 |         Azure Content Delivery Network          |Delivers high-bandwidth content to your users by caching their content at strategically placed physical nodes around the world.|
-|         Azure Content Delivery Network          |Helps provide centralized, greater protection for web applications from common exploits and vulnerabilities.|
+|         Azure Web Application Firewall          |Helps provide centralized, greater protection for web applications from common exploits and vulnerabilities.|
 
 
 ## Azure Front Door tier comparison 
@@ -27,7 +28,7 @@ For a comparison of supported features in Azure Front Door, [Review the feature 
 Review the following [QuickStart](/azure/frontdoor/create-front-door-portal) to learn how to create an Azure Front Door profile using the Azure portal. You can create an Azure Front Door profile through Quick Create with basic configurations or through the Custom create which allows a more advanced configuration. 
 
 ## Routing architecture overview
-Front Door traffic routing takes place over multiple stages. First, traffic is routed from the client to Front Door. Then, Front Door uses your configuration to determine the origin to send the traffic to. The Front Door web application firewall, routing rules, rules engine, and caching configuration all affect the routing process.The following diagram illustrates the routing architecture:
+Front Door traffic routing takes place over multiple stages. First, traffic is routed from the client to Front Door. Then, Front Door uses your configuration to determine the origin to send the traffic to. The Front Door web application firewall, routing rules, rules engine, and caching configuration all affect the routing process. The following diagram illustrates the routing architecture:
 
 :::image type="content" source="../media/routing-process-standard-premium.png" alt-text="Azure Front Door traffic routing stages illustrated in eight boxes.":::
 

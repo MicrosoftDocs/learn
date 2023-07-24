@@ -22,7 +22,7 @@ quiz:
       explanation: "Incorrect. Regions reside in geographies."
     - content: "One or more regions can reside in a geography."
       isCorrect: true
-      explanation: "Correct. Some geographies are countries or groups of countries, and regions reside in those geographies."
+      explanation: "Correct. Some geographies are countries/regions or groups of countries/regions that reside in those geographies."
     - content: "Geographies and regions are the same."
       isCorrect: false
       explanation: "Incorrect. They're different concepts."

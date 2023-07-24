@@ -6,7 +6,7 @@ The following list shows general components of a program proposal for a technica
 - **Planning**: Develop planning and costing for resources, including projection of student recruitment, required teaching staff, and any costs associated with specialist resources.
 - **Marketing**: Identify the availability of similar programs in the higher education market. Check growth and demographic statistics, if available. Identify market opportunities both for bachelor's and master's programs.
 - **Physical and digital resources**: Identify specific requirements for specialist teaching spaces, such as computing labs. Include specific hardware and software requirements.
-- **Employability**: Identify the local, national, and global skills gap for cloud computing skills. The graduate employment outcomes for the program are equal to or greater than non-specialist computer science programs.
+- **Employability**: Identify the local, national/regional, and global skills gap for cloud computing skills. The graduate employment outcomes for the program are equal to or greater than non-specialist computer science programs.
 
 Many higher education institutions have a rolling process for approving program proposals. It's important to understand your institution's timeline for handling approval requests. Key approval processes typically take several months to a year to finish. Your institution's timeline has implications for recruitment, industry needs, and staffing, particularly if seeking and completing approval processes takes an extended period of time. If you're venturing into new program areas, you might need to consider recruiting new staff members who have the expertise the program needs. Your program proposal document should include this required resource.
 

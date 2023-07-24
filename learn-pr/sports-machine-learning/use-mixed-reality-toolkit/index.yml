@@ -7,7 +7,6 @@ metadata:
   author: aprilspeight
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Create a mixed reality basketball player lineup with the Mixed Reality Toolkit
 summary: "Use C#, Visual Studio, Unity, and the Mixed Reality Toolkit to create an interactive virtual reality experience compatible with the HoloLens. Inspired by *Space Jam: A New Legacy*, you create an experience for coaches and fans to learn more about the Tune Squad."

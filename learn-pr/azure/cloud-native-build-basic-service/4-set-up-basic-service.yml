@@ -5,8 +5,8 @@ metadata:
   title: Set up a basic service
   description: Describe how to set up a basic service.
   ms.date: 05/15/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

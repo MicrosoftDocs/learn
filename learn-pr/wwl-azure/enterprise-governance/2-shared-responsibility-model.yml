@@ -4,12 +4,11 @@ title: Review the shared responsibility model
 metadata:
   title: Review the shared responsibility model
   description: "Review the shared responsibility model"
-  ms.date: 02/27/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
   [!include[](includes/2-shared-responsibility-model.md)]

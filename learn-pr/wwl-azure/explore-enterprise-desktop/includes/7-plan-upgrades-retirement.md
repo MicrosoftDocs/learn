@@ -1,5 +1,6 @@
 
 
+
 At some point, you may have to decide whether to upgrade or retire company hardware. Several factors will help guide your decision on whether to upgrade or retire a system and purchase net new. First, you must decide whether upgrading is necessary. You based this decision on factors such as the age of the current computers, their performance, and the cost of upgrading compared to continuing to use them.
 
 In most cases, consider the following factors:

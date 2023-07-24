@@ -3,11 +3,11 @@ uid: learn.wwl.sc-200-who-hacked-cloud-game
 metadata:
   title: Who Hacked cloud game
   description: "Playing the Who Hacked? game is an optional activity for Security Operations Analysts."
-  ms.date: 02/17/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Who Hacked cloud game
 summary: Provide instructions and guidance on playing the SC-200 Who Hacked cloud game.
 abstract: |
@@ -15,7 +15,7 @@ abstract: |
     - Demonstrate skills learned in The Security Operations Analyst (SC-200) course.
 prerequisites: |
   - Practical experience using Microsoft Sentinel, Microsoft Purview and Microsoft Defender is helpful but not required.
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /training/achievements/sc-200-who-hacked-cloud-game.svg
 levels:
 - intermediate
 roles:

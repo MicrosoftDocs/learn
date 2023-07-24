@@ -6,7 +6,7 @@ metadata:
   description: Exercise in how to configure routes for your API by using HTTP verbs.
   author: clarkio
   ms.author: chnoring
-  ms.date: 07/12/2021
+  ms.date: 06/01/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

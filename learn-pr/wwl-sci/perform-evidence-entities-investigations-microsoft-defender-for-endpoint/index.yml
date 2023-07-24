@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: microsoft-365-security
+  ms.subservice: mde
 title: Perform evidence and entities investigations using Microsoft Defender for Endpoint
 summary: Learn about the artifacts in your environment and how they relate to other artifacts and alerts that will provide you with insight to understand the overall impact to your environment.
 abstract: |

@@ -3,11 +3,11 @@ uid: learn.wwl.learn-continuous-integration-github-actions
 metadata:
   title: Learn continuous integration with GitHub Actions
   description: "Learn continuous integration with GitHub Actions"
-  ms.date: 01/12/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Learn continuous integration with GitHub Actions
 summary: This module details continuous integration using GitHub Actions and describes environment variables, artifacts, best practices, and how to secure your pipeline using encrypted variables and secrets.
 abstract: |
@@ -16,7 +16,8 @@ abstract: |
   - Use environment variables
   - Share artifacts between jobs and use Git tags
   - Create and manage secrets
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/8-learn-continuous-integration-with-github-actions.svg
 levels:
 - advanced

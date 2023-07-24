@@ -8,7 +8,6 @@ metadata:
   author: msmimart
   ms.author: mimart
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
 title: Secure B2B collaboration by using cross-tenant access settings
 summary: Define your inbound and outbound B2B collaboration with other Azure Active Directory tenants by using cross-tenant access settings. You can decide whether to allow or block B2B collaboration with other Azure AD organizations by default, and then set individual policies for specific organizations. You have granular control over who can use B2B collaboration and which applications can be accessed. You can also trust multi-factor authentication from a user’s home tenant so they don’t have to repeat the process in your tenant.
 abstract: |

@@ -7,7 +7,8 @@ metadata:
   author: mattwojo
   ms.author: mattwoj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: uwp
+  manager: jken
 title: Create a machine learning model for offline use on a Windows device
 summary: Experience the benefits of local client-side evaluation with the intelligent edge. Download a pretrained image classification model and add it to a UWP app. By using Windows Machine Learning (ML), models can run evaluations offline on any Windows 10 device. 
 abstract:  |

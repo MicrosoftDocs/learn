@@ -7,7 +7,7 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-government
 title: Introduction to Azure Government
 summary: US government agencies face many challenges today. Meeting each respective mission means more than just providing services. It means collaborating across agencies for better service, digitizing labor-intensive, paper-based processes, managing expanding volumes of data, meeting security, privacy and regulatory requirements and much more. This module introduces Azure Government to US government agencies or their partners interested in cloud services that meet government security and compliance requirements. 
 abstract:  | 

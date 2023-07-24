@@ -4,12 +4,10 @@ title: Investigate roles in Azure AD
 metadata:
   title: Investigate roles in Azure AD
   description: "Investigate roles in Azure AD"
-  ms.date: 04/04/2023
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/6-roles-azure-active-directory.md)]

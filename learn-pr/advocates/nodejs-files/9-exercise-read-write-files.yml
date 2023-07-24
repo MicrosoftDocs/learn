@@ -4,12 +4,14 @@ title: Exercise - Read and write to files
 metadata:
   title: Exercise - Read and write to files
   description: Exercise - Read and write to files
-  ms.date: 06/21/2020
+  ms.date: 06/06/2023
   author: burkeholland
   ms.author: buhollan
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-js
   ms.contributors: buhollan-09022020
 interactive: bash
 azureSandbox: true

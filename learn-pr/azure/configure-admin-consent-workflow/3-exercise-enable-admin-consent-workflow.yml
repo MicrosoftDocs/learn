@@ -5,10 +5,12 @@ metadata:
   unitType: exercise
   title: Exercise - Enable admin consent workflow
   description: "Enable admin consent workflow through the Azure portal."
-  ms.date: 01/17/2023
+  ms.date: 05/04/2023
   author: omondiatieno
   ms.author: jomondi
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 18
 content: |

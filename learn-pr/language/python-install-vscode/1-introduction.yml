@@ -9,7 +9,10 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen, devdivchpfy22
+  ms.custom:
+    - team=nextgen
+    - devdivchpfy22
+    - devx-track-python
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

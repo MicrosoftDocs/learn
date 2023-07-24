@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
 title: Implement security in Azure Cosmos DB for NoSQL
 summary: We will learn the different security models that Azure Cosmos DB uses.
 abstract: |

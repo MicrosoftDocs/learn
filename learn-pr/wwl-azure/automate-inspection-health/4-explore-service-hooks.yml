@@ -4,13 +4,11 @@ title: Explore service hooks
 metadata:
   title: Explore service hooks
   description: "Explore service hooks"
-  ms.date: 11/01/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 1
 content: |
   [!include[](includes/4-explore-service-hooks.md)]

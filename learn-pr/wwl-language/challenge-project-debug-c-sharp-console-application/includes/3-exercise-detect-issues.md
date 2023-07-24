@@ -1,6 +1,7 @@
 
 
 
+
 The `MakeChange` method is able to process simulated transactions successfully when using the `testData` array. However, logic issues are exposed when simulating the transactions using a larger data set of randomly priced items. This issue demonstrates the importance of thoroughly testing your applications.
 
 ## Specification

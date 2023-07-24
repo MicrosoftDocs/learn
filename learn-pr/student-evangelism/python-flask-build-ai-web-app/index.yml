@@ -7,8 +7,8 @@ metadata:
   author: acomfort248
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-python
   ms.custom: team=nextgen
+  ms.devlang: python
 title: Build an AI web app by using Python and Flask
 summary: Use Python, Flask, and Azure Cognitive Services to build a web app that incorporates AI
 abstract: | 

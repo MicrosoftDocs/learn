@@ -25,7 +25,6 @@ products:
 subjects:
 - artificial-intelligence
 modules:
-- learn-wwl.intro-to-ai-technology
 - learn-wwl.microsoft-approach-to-ai
 trophy:
   uid: learn.ai-technology-for-business-leaders.trophy

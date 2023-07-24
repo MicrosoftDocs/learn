@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Plan and implement entitlement management
 summary: When new users or external users join your site, quickly assigning them access to Azure solutions is a must. Explore how to entitle users to access your site and resources.
 abstract: |

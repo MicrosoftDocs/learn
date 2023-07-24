@@ -13,7 +13,7 @@ This module consists of two lessons:
 
 Module 4 Tips and Tricks 
 
-- Make sure your microphone is working if you are going to demonstrate the Speech-to-Text services 
+- Make sure your microphone is working if you are going to demonstrate the speech to text services 
 - Ask students when and where they might have interacted with a bot in the past 
 - Think about other real-life use cases of Natural Language Processing (NLP) and use these as examples to explain some of the concepts 
 - Use the AI demos to showcase the Text Analytics feature 

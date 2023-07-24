@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.describe-cloud-arrangements
+title: Describe cloud arrangements
+metadata:
+  title: Describe cloud arrangements
+  description: "Describe cloud arrangements"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-describe-cloud-arrangements.md)]
+interactive: bash

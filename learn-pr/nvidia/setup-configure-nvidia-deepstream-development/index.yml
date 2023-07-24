@@ -8,7 +8,6 @@ metadata:
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Set up and configure an NVIDIA DeepStream development environment
 summary: In this module, you'll learn how to set up and configure an x86-based Ubuntu 18.04 system to host an NVIDIA DeepStream development environment.
 abstract: |

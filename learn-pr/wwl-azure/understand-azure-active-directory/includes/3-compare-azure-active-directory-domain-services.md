@@ -1,4 +1,5 @@
 
+
 You could view Azure AD simply as the cloud-based counterpart of AD DS; however, while Azure AD and AD DS share some common characteristics, there are several significant differences between them.
 
 ### Characteristics of AD DS

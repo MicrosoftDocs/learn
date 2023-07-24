@@ -1,14 +1,13 @@
 ### YamlMime:Module
 uid: learn.intro-to-azur-private-5g-core
-hidden: true
 metadata:
   title: Introduction to Azure Private 5G Core
   description: "Introduces Azure Private 5G Core, which provides 5G core network functions as part of an on-premises private mobile network for enterprises."
   ms.date: 10/10/2022
-  author: michael-weizhong-shan
-  ms.author: michaelshan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.service: private-5g-core
 title: Introduction to Azure Private 5G Core
 summary: "Learn about the capabilities of Azure Private 5G Core and how you can use it to deploy a private mobile network."
 abstract: |

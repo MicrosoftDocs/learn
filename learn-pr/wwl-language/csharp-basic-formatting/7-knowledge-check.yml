@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: ""
@@ -35,11 +34,11 @@ quiz:
     - content: "'`Console.WriteLine(@\"My value: [value]\");`'"
       isCorrect: false
       explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
-  - content: "Unicode characters where embedded in the C# strings for a console application to present a greeting message in Thai. However, the message is only displayed as question mark characters.  What is a possible cause?"
+  - content: "Unicode characters were embedded in the C# strings for a console application to present a greeting message in Thai. However, the message is only displayed as question mark characters.  What is a possible cause?"
     choices:
     - content: "A missing \\u escape sequence for Unicode characters."
       isCorrect: false
-      explanation: "Incorrect. If the \\u escape sequence for Unicode characters are not used, only numbers will appear, question marks won't be displayed."
+      explanation: "Incorrect. If the \\u escape sequence for Unicode characters aren't used, only numbers will appear, question marks won't be displayed."
     - content: "The wrong Unicode characters were used."
       isCorrect: false
       explanation: "Incorrect. This is unlikely.  It would only be true if all the Unicode characters were the same value representing a question mark--\\u003F."
@@ -56,4 +55,4 @@ quiz:
       explanation: "Incorrect. This line escapes the `'` character and results in an error."
     - content: "'`directory = directory + @\"\\\";`'"
       isCorrect: true
-      explanation: "Correct. The `@` symbol creates a verbatim string where it is unnecessary to escape the `\\`."
+      explanation: "Correct. The `@` symbol creates a verbatim string where it's unnecessary to escape the `\\`."
