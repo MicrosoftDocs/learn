@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.edge.create-pwas-with-pwabuilder
+title: Create Progressive Web Apps (PWAs) with PWABuilder
+# summary: Learn how to design and build secure, scalable, performant solutions in Azure by examining the core principles found in every good architecture.
+metadata:
+  title: Create and publish Progressive Web Apps (PWAs) with PWABuilder
+  # description: Learn how to design and build secure, scalable, performant solutions in Azure by examining the core principles found in every good architecture.
+  ms.date: 07/21/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: interactive-tutorial
+  ms.prod: microsoft-edge
+prerequisites: None
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+products: 
+- microsoft-edge
+modules:
+- learn.edge.intro-to-pwabuilder
+- learn.edge.integrate-with-pwabuilder
+- learn.edge.publish-pwa-to-msft-store
+trophy:
+  uid: learn.edge.create-pwas-with-pwabuilder.trophy
