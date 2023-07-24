@@ -24233,6 +24233,11 @@
       "source_path": "learn-pr/paths/ai-business-school-retail/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-strategy-for-business-value/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
