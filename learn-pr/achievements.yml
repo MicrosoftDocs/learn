@@ -1952,3 +1952,8 @@ achievements:
   title: Identify guiding principles for responsible AI in government
   summary: It is imperative to reflect on the implications of AI in government. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your government organization. You will also be provided with resources, best practices, and tools.
   iconUrl: /training/achievements/responsible-ai-business-principles.svg
+- uid: learn.responsible-ai-business-principles.trophy
+  type: trophy
+  title: Identify principles and practices for responsible AI
+  summary: It is imperative to reflect on the implications of AI in business. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your organization. You will also be provided with resources, best practices, and tools.
+  iconUrl: /training/achievements/responsible-ai-business-principles.svg
