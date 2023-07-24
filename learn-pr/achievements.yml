@@ -1932,3 +1932,8 @@ achievements:
   title: AI business school for manufacturing
   summary: In manufacturing, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. This learning path is designed for manufacturing industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
   iconUrl: /training/achievements/ai-business-school-manufacturing.svg
+- uid: learn.ai-business-school-retail.trophy
+  type: trophy
+  title: AI business school for retail
+  summary: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-retail.svg
