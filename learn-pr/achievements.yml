@@ -1907,3 +1907,8 @@ achievements:
   title: Identify governing practices for responsible AI
   summary: As AI becomes more prevalent, it’s imperative that organizations have governing practices in place to ensure that it’s used responsibly. Responsible use of AI starts with organizations establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every organization will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as others embark on their own AI journey.
   iconUrl: /training/achievements/responsible-ai-governing-practices.svg
+- uid: learn.ai-business-school-education.trophy
+  type: trophy
+  title: AI business school for education
+  summary: Decision-makers in education have considerations that are particular to their sector to help them realize the true transformational impact of AI in education. It is critical to understand the components of a strategy that will help the education sector create value with AI. This learning path is designed for education decision-makers to illustrate the true transformational impact of AI in education.
+  iconUrl: /training/achievements/ai-business-school-education.svg
