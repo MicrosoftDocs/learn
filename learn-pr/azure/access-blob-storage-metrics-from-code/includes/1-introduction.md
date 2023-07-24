@@ -1,4 +1,4 @@
-In the Azure portal, there's a rich and customizable set of tools to display metrics from Azure Monitor. If you're using Binary Large Objects (blobs) in an Azure Storage account, these tools can display an array of metrics for that data. However, sometimes you might wish to display that data outside of Azure.
+In the Azure portal, there's a rich and customizable set of tools to display metrics from Azure Monitor. If you're using Binary Large Objects (blobs) in an Azure Storage account, these tools can display an array of metrics for that data. However, sometimes you want to display that data outside of Azure.
 
 Suppose, for example, you work for a video analysis company that carries out color grading and processing of video commercials. You've migrated the storage of daily rushes to Azure Blob Storage, and you have a well-established set of displays and dashboards that show administrators how the Azure Storage account is responding to users.
 
