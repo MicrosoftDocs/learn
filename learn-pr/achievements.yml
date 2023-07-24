@@ -1937,3 +1937,8 @@ achievements:
   title: AI business school for retail
   summary: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
   iconUrl: /training/achievements/ai-business-school-retail.svg
+- uid: learn.ai-strategy-for-business-value.trophy
+  type: trophy
+  title: Define an AI strategy to create business value across industries
+  summary: In this learning path, you will hear from Peter Zemsky, INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation, about how AI is driving business value across industries and companies as well as Microsoft customers and partners. You will be able to discuss how technical teams are bringing AI into business applications and how business leaders of different industries are thinking about AI for their own businesses.
+  iconUrl: /training/achievements/ai-strategy-for-business-value.svg
