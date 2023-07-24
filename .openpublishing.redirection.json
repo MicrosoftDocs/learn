@@ -24253,6 +24253,11 @@
       "source_path": "learn-pr/paths/responsible-ai-business-principles/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/scale-ai-organizations/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
