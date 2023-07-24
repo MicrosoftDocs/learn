@@ -24203,6 +24203,11 @@
       "source_path": "learn-pr/azure/intro-to-mixed-reality-design/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/10-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-education/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
