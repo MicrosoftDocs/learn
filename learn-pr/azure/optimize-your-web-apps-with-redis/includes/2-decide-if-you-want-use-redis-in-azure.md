@@ -25,7 +25,7 @@ Redis supports various data types, all oriented around *binary safe* strings. Yo
 - Sorted sets of strings
 - Maps of strings
 
-Each data value is associated with a *key* that can be used to look up the value from the cache. Redis works best with smaller values (100 Kb or less), so consider chopping up bigger data into multiple keys. Storing larger values is possible (up to 500 MB), but increases network latency and can cause caching and out-of-memory issues if the cache isn't configured to expire old values.
+Each data value is associated with a *key* that can be used to look up the value from the cache. Redis works best with smaller values (100 kB or less), so consider chopping up bigger data into multiple keys. Storing larger values is possible (up to 500 MB), but increases network latency and can cause caching and out-of-memory issues if the cache isn't configured to expire old values.
 
 ## What is a Redis key?
 
