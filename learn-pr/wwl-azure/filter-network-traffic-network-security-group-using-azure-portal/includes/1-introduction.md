@@ -9,11 +9,11 @@ Imagine you work as a cloud architect for a growing e-commerce company. The comp
 
 By the end of this training module, participants will:
 
-1.  Understand the purpose and benefits of using Azure NSG to filter network traffic.
-2.  Learn how to create and configure NSGs to enforce access controls for Azure resources.
-3.  Gain insights into how NSGs can be used to allow or deny specific types of traffic based on source, destination, and port.
-4.  Understand how to prioritize NSG rules and leverage Azure NSG flow logs for monitoring and troubleshooting.
-5.  Recognize the role of NSGs in implementing network security best practices in Azure.
+ -  Understand the purpose and benefits of using Azure NSG to filter network traffic.
+ -  Learn how to create and configure NSGs to enforce access controls for Azure resources.
+ -  Gain insights into how NSGs can be used to allow or deny specific types of traffic based on source, destination, and port.
+ -  Understand how to prioritize NSG rules and leverage Azure NSG flow logs for monitoring and troubleshooting.
+ -  Recognize the role of NSGs in implementing network security best practices in Azure.
 
 ## Goals
 

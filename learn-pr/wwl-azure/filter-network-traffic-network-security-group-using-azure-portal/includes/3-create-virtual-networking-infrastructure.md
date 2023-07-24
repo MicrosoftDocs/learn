@@ -10,12 +10,25 @@ Azure virtual network enables Azure resources to securely communicate with each 
 
 Key scenarios that you can accomplish with a virtual network include:<br>
 
- -  Communication of Azure resources with the internet<br>
- -  Communication between Azure resources<br>
- -  Communication with on-premises resources<br>
- -  Filtering network traffic<br>
- -  Routing network traffic<br>
- -  Integration with Azure services.<br>
+ -  Communication of Azure resources with the internet
+ -  Communication between Azure resources
+ -  Communication with on-premises resources
+ -  Filtering network traffic
+ -  Routing network traffic
+ -  Integration with Azure services.
+
+## 
+
+Based on the principle of “never trust, always verify,” Zero Trust helps secure corporate resources by eliminating unknown and unmanaged devices and limiting lateral movement. Implementing a true Zero Trust model requires that all components—user identity, device, network, and applications—be validated and proven trustworthy. Zero Trust verifies identity and device health prior to granting access to corporate resources. When access is granted, applying the principle of least privilege limits user access to only those resources that are explicitly authorized for each user, thus reducing the risk of lateral movement within the environment. In an ideal Zero Trust environment, the following four elements are necessary:
+
+ -  Strong identity authentication everywhere (user verification via authentication)
+ -  Devices are enrolled in device management, and their health is validated
+ -  Least-privilege user rights (access is limited to only what is needed)
+ -  The health of services is verified (future goal)
+
+## 
+
+## 
 
 ## Communicate with the internet<br>
 
