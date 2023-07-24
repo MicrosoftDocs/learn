@@ -27,8 +27,8 @@ The following table shows the behavior of a blob copy operation, depending on th
 
 |  | Hot tier source | Cool tier source | Archive tier source |
 |--|--|--|--|
-| Hot tier destination | Supported | Supported | Supported across accounts in the same region with version 2021-02-12 and later. Supported within the same storage account only for earlier versions. Requires blob rehydration. |
-| Cool tier destination | Supported | Supported | Supported across accounts in the same region with version 2021-02-12 and later. Supported within the same storage account only for earlier versions. Requires blob rehydration. |
+| Hot tier destination | Supported | Supported | Supported within the same account. Requires blob rehydration. |
+| Cool tier destination | Supported | Supported | Supported within the same account. Requires blob rehydration. |
 | Archive tier destination | Supported | Supported | Unsupported |
 
 ## Change a blob's access tier to an online tier
