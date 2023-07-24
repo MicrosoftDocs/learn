@@ -47,13 +47,13 @@ quiz:
     choices:
     - content: echo "::error::This is an error message"
       isCorrect: true
-      explanation: "This is the correct syntax for this workflow command."
+      explanation: "This syntax is correct for this workflow command."
     - content: echo "error=This is an error message"
       isCorrect: false
-      explanation: "This is improper syntax for a workflow command."
+      explanation: "This syntax is improper for a workflow command."
     - content: echo "::error::message=This is an error message"
       isCorrect: false
-      explanation: "This is improper syntax for a workflow command."
+      explanation: "This syntax is improper for a workflow command."
     - content: echo "::error::This is an error message::"
       isCorrect: false
-      explanation: "This is improper syntax for a workflow command."
+      explanation: "This syntax is improper for a workflow command."
