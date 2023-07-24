@@ -1947,3 +1947,8 @@ achievements:
   title: Become an innovative organization
   summary: In this learning path, you'll discover why innovation is critical to achieving a competitive advantage. You’ll be able to use the frameworks and guidance provided to help organize your business for adaptability, establish an innovative mindset, and coinnovate with external partners. Achieving these three milestones will help foster the knowledge, skills, and cultural mindset needed to infuse innovation into the core of your business. You’ll learn how the speed at which an organization can influence technology and its people to experiment, reinvent, and grow is what will set them apart in a competitive landscape.
   iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.responsible-ai-business-principles-government.trophy
+  type: trophy
+  title: Identify guiding principles for responsible AI in government
+  summary: It is imperative to reflect on the implications of AI in government. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your government organization. You will also be provided with resources, best practices, and tools.
+  iconUrl: /training/achievements/responsible-ai-business-principles.svg
