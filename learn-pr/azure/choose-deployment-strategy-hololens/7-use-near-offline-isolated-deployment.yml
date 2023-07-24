@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.use-near-offline-isolated-deployment
+title: Scenario - Near offline or isolated deployment
+metadata:
+  title: Scenario - Near offline or isolated deployment
+  description: "This unit explores a fictional real-world scenario for near offline or isolated deployment."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: holoLens
+durationInMinutes: 4
+content: |
+  [!include[](includes/7-use-near-offline-isolated-deployment.md)]

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.deployment-scenarios
+title: Common deployment scenarios
+metadata:
+  title: Common deployment scenarios
+  description: "This unit provides guidance for deploying HoloLens devices based on common scenarios."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: holoLens
+durationInMinutes: 4
+content: |
+  [!include[](includes/2-deployment-scenarios.md)]
