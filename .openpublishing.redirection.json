@@ -24223,6 +24223,11 @@
       "source_path": "learn-pr/paths/ai-business-school-healthcare/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-manufacturing/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
