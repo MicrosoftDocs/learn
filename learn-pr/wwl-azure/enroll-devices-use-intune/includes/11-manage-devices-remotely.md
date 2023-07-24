@@ -17,7 +17,7 @@ The **Overview** page is displayed by default. It shows the device name, and lis
      -  **Reset passcode (iOs/Android)**. A device level reset of the passcode for the entire device.
      -  **Restart**. Causes the device you choose to be restarted (within 5 minutes). The device owner isn't automatically notified of the restart, and they might lose work. Not supported for macOS or Android work profile devices.
      -  **Fresh Start (Windows 10 and later only)**. Removes any apps that are installed on a PC. Fresh Start helps remove preinstalled (OEM) apps that are typically installed with a new PC.
-     -  **AutoPilot Reset (Windows 10 and later only)**. Initiates the reset process, avoiding the need for IT staff or other administrators to visit each machine to initiate the process. Not supported on devices that were enrolled using Autopilot self-deploying mode.
+     -  **AutoPilot Reset (Windows 10 and later only)**. Initiates the reset process, avoiding the need for IT staff or other administrators to visit each machine to initiate the process.
      -  **Quick scan (Windows 10 and later only)**. Performs a Microsoft Defender quick scan. Looks at common locations where there could be malware registered, such as registry keys and known Windows startup folders.
      -  **Full scan (Windows 10 and later only)**. Performs a Microsoft Defender full scan.
      -  **Update Microsoft Defender Security Intelligence**. Instructs the device to check for signature updates.
