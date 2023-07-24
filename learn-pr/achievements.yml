@@ -1917,3 +1917,8 @@ achievements:
   title: AI business school for financial services
   summary: Decision-makers in financial services have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help the financial services sector create business value with AI.
   iconUrl: /training/achievements/ai-business-school-financial-services.svg
+- uid: learn.ai-business-school-government.trophy
+  type: trophy
+  title: AI business school for government
+  summary: In government, decision-makers must take into account specific public sector considerations before they can realize the true transformational power of AI. It's critical to understand the components of a strategy that will help the public sector create value with AI. This learning path is designed for government decision-makers to illustrate the true transformational impact of AI in the public sector.
+  iconUrl: /training/achievements/ai-business-school-government.svg
