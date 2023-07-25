@@ -3,7 +3,7 @@ uid: learn.wwl.manage-azure-active-directory-identities
 metadata:
   title: Manage Azure Active Directory identities
   description: "This module enables you to handle Azure AD tasks, including RBAC, user/group management, PowerShell cmdlets, and AD DS object synchronization. You'll effectively utilize and manage Azure AD in your organization after completing this module."
-  ms.date: 07/18/2023
+  ms.date: 07/25/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
