@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-deployment-strategy-hololens.use-corporate-connected-deployment
+title: Scenario - Corporate Connected Deployment
+metadata:
+  title: Scenario - Corporate Connected Deployment
+  description: "This unit explores a fictional real-world scenario for corporate connected deployment."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: holoLens
+durationInMinutes: 4
+content: |
+  [!include[](includes/5-use-corporate-connected-deployment.md)]

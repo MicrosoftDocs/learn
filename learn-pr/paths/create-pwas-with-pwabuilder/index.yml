@@ -1,0 +1,27 @@
+### YamlMime:LearningPath
+uid: learn.edge.create-pwas-with-pwabuilder
+title: Create Progressive Web Apps (PWAs) with PWABuilder
+summary: Discover how PWABuilder can streamline Progressive Web App (PWA) creation and deployment to save both time and resources for your organization.  Learn how to efficiently integrate PWA features like push notifications and background sync into projects, enhance your PWA testing skills, gain insights into compliance, and become an expert in packaging and submitting your app to the Microsoft Store using Microsoft Partner Center.
+metadata:
+  title: Create and publish Progressive Web Apps (PWAs) with PWABuilder
+  description: PWABuilder is an open-source tool developed by Microsoft that streamlines the process of deploying Progressive Web Apps (PWAs). It simplifies PWA development by automating the creation of essential components, providing a user-friendly interface for customization, and packaging PWAs for various platforms and app stores. Learn how to generate the app manifest, configure the service worker, and customize your PWA's settings and appearance to transform your project into a polished final product. Discover how to use PWABuilder to test PWAs on various devices and platforms, reserve app names, and successfully package a PWA for Microsoft Store submission.
+  ms.date: 07/21/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: interactive-tutorial
+  ms.prod: microsoft-edge
+prerequisites: None
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+roles:
+- developer
+products: 
+- microsoft-edge
+modules:
+- learn.edge.intro-to-pwabuilder
+- learn.edge.integrate-with-pwabuilder
+- learn.edge.publish-pwa-to-msft-store
+trophy:
+  uid: learn.edge.create-pwas-with-pwabuilder.trophy
