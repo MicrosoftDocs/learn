@@ -3,21 +3,21 @@ uid: learn.intro-to-azure-hdinsight
 metadata:
   moduleType: introduction        
   title: Introduction to Azure HDInsight
-  description: Evaluate whether Azure HDInsight can help your organization process big data. Describe how Azure HDInsight uses popular open-source frameworks that support many scenarios including extract, transform, data-warehousing, and others.
-  ms.date: 10/27/2022  
+  description: Evaluate whether Azure HDInsight can help your organization process big data. Describe how Azure HDInsight uses popular open-source frameworks that support many scenarios including extract, transform, data warehousing, and others.
+  ms.date: 07/25/2023  
   author: sreekzz
   ms.author: v-sreiyer
   ms.topic: interactive-tutorial
   ms.service: hdinsight
 title: Introduction to Azure HDInsight
-summary: You can use Azure HDInsight to process big data in many scenarios, either historical or real-time. HDInsight supports popular open-source frameworks that support many scenarios including extract, transform, data-warehousing, and others. 
+summary: You can use Azure HDInsight to process big data in many scenarios, either historical or real-time. HDInsight supports popular open-source frameworks that support many scenarios including extract, transform, data warehousing, and others. 
 abstract: |
-  By the end of this module, you will be able to: 
+  By the end of this module, you'll be able to: 
     - Evaluate whether Azure HDInsight can help your organization process big data.
     - Describe how Azure HDInsight uses popular open-source frameworks such as Hadoop, Spark, Hive, LLAP, Kafka, and others.
 prerequisites: |
-  - Good working experience with Azure.
-  - Good working experience with big data platforms.
+  - Good working experience with Azure
+  - Good working experience with big data platforms
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - beginner
