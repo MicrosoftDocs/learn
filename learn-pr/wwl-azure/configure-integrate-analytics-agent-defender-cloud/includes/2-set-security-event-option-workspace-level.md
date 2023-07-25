@@ -13,7 +13,7 @@ Microsoft Defender for Endpoint (MDE)
 
 Log Analytics agent
 
-**Security components,** such as the Azure Policy Add-on for Kubernetes
+Azure Policy Add-on for Kubernetes
 
 ## Why use Defender for Cloud to deploy monitoring components?
 
@@ -90,4 +90,4 @@ For existing machines on subscriptions onboarded to Defender for Cloud before 17
 
 ## Vulnerability assessment<br>
 
-## :::image type="content" source="../media/vulnerability-assessment-aspect-and-details-af522b67.jpg"::: 
+## :::image type="content" source="../media/vulnerability-assessment-aspect-and-details-af522b67.jpg" alt-text="Screenhsot showing vulnerability assessment aspects and details in Defender for Cloud."::: 
