@@ -24,7 +24,7 @@ When you're finished, close the **Project Settings** window and continue on with
 
 ## Import the tutorial assets
 
-1. Add AzurespatialAnchors SDK V2.12, or the latest version, to your project by following [this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
+1. Add Azure Spatial Anchors SDK V2.12, or the latest version, to your project by following [this tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage).
 
 2. Download and import the following Unity custom packages in this order:
 
@@ -32,7 +32,9 @@ When you're finished, close the **Project Settings** window and continue on with
     * [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.12.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/tag/azure-spatial-anchors-v2.12.0)
 
     > [!Note]
-    > If you see any CS0618 warnings that say "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" is obsolete, you can ignore them.
+    > Importing both MRTK3 and ASA may cause errors when the ARFoundation package version doesn't match the imported ARSubsystems version. Until this is fixed, you can manually add com.unity.xr.arsubsystems version 5.0.2 to the project's Package Manager as a [workaround](/windows/mixed-reality/develop/unity/known-issues). 
+    >
+    > You'll get a warning that ARSubsystems has been deprecated, but it can be ignored. If you see any CS0618 warnings that say "WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)" is obsolete, you can also ignore these.
 
 ## Prepare the scene
 

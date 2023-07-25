@@ -12,10 +12,10 @@ Use cases for Azure Spatial Anchors include:
 
 In Unity, AR Foundation lets you work with augmented reality systems across several platforms. This package provides an interface for Unity developers but doesn't include any augmented reality functionality. On a target device, you'll also need separate packages for Unity's officially supported target platforms:
 
-* ARCore XR Plugin on Android
-* ARKit XR Plugin on iOS
-* Magic Leap XR Plugin on Magic Leap
-* Windows XR Plugin on HoloLens
+* Google ARCore XR Plug-in on Android
+* Apple ARKit XR Plug-in on iOS
+* OpenXR Plug-in on HoloLens 2
+* Meta OpenXR Feature on Meta Quest
 
 ## ARAnchorManager script
 
