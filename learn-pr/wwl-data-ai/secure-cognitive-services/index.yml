@@ -30,7 +30,7 @@ roles:
 - student
 products:
 - azure-active-directory
-- azure-cognitive-services
+- ai-services
 subjects:
 - security
 units:

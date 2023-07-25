@@ -27,7 +27,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 - azure-video-indexer
 subjects:
 - classification-analysis

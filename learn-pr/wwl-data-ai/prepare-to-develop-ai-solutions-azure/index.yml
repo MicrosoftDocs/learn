@@ -30,7 +30,7 @@ roles:
 - developer
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:

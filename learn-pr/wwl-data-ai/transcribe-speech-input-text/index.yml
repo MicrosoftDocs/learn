@@ -32,7 +32,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - custom-app-development
 - artificial-intelligence

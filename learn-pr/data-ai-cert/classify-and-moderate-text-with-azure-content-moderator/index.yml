@@ -27,7 +27,7 @@ roles:
 products: 
 - azure
 - azure-sdks
-- azure-cognitive-services
+- ai-services
 subjects:
 - classification-analysis
 units:
