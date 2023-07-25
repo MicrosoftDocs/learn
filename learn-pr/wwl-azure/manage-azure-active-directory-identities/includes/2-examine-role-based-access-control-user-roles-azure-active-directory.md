@@ -36,7 +36,7 @@ Within Azure AD, you can configure users with the following roles:
      -  **Service Administrator** can manage service requests.
      -  **Billing Administrator** can manage billing information.
      -  **Exchange Administrator** can manage Exchange Online settings.
-     -  **Skype for Business Aadministrator** can manage Skype for Business Online settings.
+     -  **Skype for Business Administrator** can manage Skype for Business Online settings.
      -  **User Administrator** can manage user accounts and groups.
      -  **SharePoint Administrator** can manage SharePoint Online settings.
      -  **Compliance administrator** can manage compliance settings.
