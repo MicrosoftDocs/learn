@@ -32,9 +32,9 @@ Start by creating the Azure Storage account that sends data to Azure Monitor. Fo
 
 To retrieve metrics from Azure Monitor that relate to your new storage account, identify the storage account uniquely in your request by including the storage account name, resource group name, and subscription ID in the request URL. You already know the name of the storage account but you must determine the resource group name and the subscription ID. Follow these steps:
 
-1. When the storage account has been created, in the portal, select **All resources**, and then select the storage account you created.
+1. When the storage account has been created, select **Go to resource**. Or, select **All resources**, and then select the storage account you created.
 
-1. Carefully make a note of the following values, which are shown at the top of the **Overview** page:
+1. In the **Essentials** section of the **Overview** page, carefully make a note of the following values:
 
     - **Resource group**
     - **Subscription ID**

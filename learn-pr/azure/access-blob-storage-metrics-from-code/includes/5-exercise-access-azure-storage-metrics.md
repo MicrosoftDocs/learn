@@ -44,7 +44,9 @@ To grant your app permission to access Azure Monitor metrics, you must create a 
 
 1. For **Supported account types**, select **Accounts in this organizational directory only (Microsoft only - Single tenant)**.
 
-1. For **Redirect URI**, select **Web** in the dropdown and enter **https://contoso.org/metricapp** for the redirect URI. Then select **Register**.
+1. For **Redirect URI**, select **Web** in the dropdown, and enter **https://contoso.org/metricapp** for the redirect URI. 
+
+1. Select **Register**.
 
     :::image type="content" source="../media/5-create-app-registration.png" alt-text="Screenshot of the Register an application with the Register button highlighted.":::
 
@@ -52,7 +54,7 @@ To grant your app permission to access Azure Monitor metrics, you must create a 
 
 1. Under **Manage**, select **Certificates & secrets**.
 
-1. Select **New client secret**. In the **Add a client secret** pane, enter **metricskey** in the **Description** textbox.
+1. Select **+ New client secret**. In the **Add a client secret** pane, enter **metricskey** in the **Description** textbox.
 
 1. In the **Expires** dropdown, select **180 days (6 months)**.
 
@@ -70,7 +72,7 @@ When your app identifies itself to Azure, it also needs to provide a tenant ID, 
 
 1. Under **Manage**, select **Properties**.
 
-    Make a note of the **Directory ID** value; this value is the tenant ID for your app.
+    Make a note of the **Tenant ID** value; this value is the tenant ID for your app.
 
 ## Determine your resource group and subscription IDs and assign the app to a role
 
