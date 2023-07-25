@@ -22,13 +22,13 @@ quiz:
       choices:
         - content: "Add a `script` tag on the Blazor page."
           isCorrect: false
-          explanation: "You shouldn't add `script` tags on Blazor pages, because they won't render and load properly."
+          explanation: "You shouldn't add `script` tags on Blazor pages, because they don't render and load properly."
         - content: "Add a `script` tag to the *Pages/_Host.cshtml* file."
           isCorrect: true
           explanation: "You should add the `script` tag to the *Pages/_Host.cshtml* file so it's available before the Blazor components need it."
         - content: "Add a `script` tag to the *Shared/MainLayout.razor* file."
           isCorrect: false
-          explanation: "The layout shouldn't include `script` tags, and it's better referenced in another location."
+          explanation: "The layout shouldn't include `script` tags, and it's better to reference the script in another location."
     - content: "Which method should you use from C# to execute a JavaScript function that returns `void`?"
       choices:
         - content: "`InvokeVoidAsync`."
@@ -36,7 +36,7 @@ quiz:
           explanation: "This asynchronous method executes a JavaScript function and awaits its response."
         - content: "`Invoke`."
           isCorrect: false
-          explanation: "`Invoke` isn't the method that should be called on a JavaScript runtime object in .NET."
+          explanation: "`Invoke` isn't the method to call on a JavaScript runtime object in .NET."
         - content: "`InvokeAsync`."
           isCorrect: false
-          explanation: "This isn't the correct choice to tell the C# method that it shouldn't expect a return value from the JavaScript function."
+          explanation: "This choice doesn't tell the C# method to not expect a return value from the JavaScript function."

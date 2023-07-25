@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.build-interactive-components-blazor-web-apps.improve-app-interactivity-lifecycle-events
-title: Understand Blazor component lifecycle events
+title: Understand the Blazor component lifecycle
 metadata:
   unitType: learning-content
-  title: Understand Blazor component lifecycle events
-  description: "Learn how to use Blazor component lifecycle events to improve the response time in a Blazor app."
+  title: Understand the Blazor component lifecycle
+  description: "Learn how you can use Blazor component lifecycle events to improve response time in a Blazor app."
   ms.date: 02/02/2023
   author: IEvangelist
   ms.author: dapine

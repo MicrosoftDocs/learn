@@ -26,7 +26,7 @@ quiz:
           explanation: "A `StringBuilder` doesn't receive and render HTML content in the Blazor component."
         - content: "`RenderFragment`"
           isCorrect: true
-          explanation: "RenderFragment is a section of code that can contain Razor markup and HTML to render in a Blazor component."
+          explanation: "`RenderFragment` is a section of code that can contain Razor markup and HTML to render in a Blazor component."
     - content: "What's the default name of the parameter that captures all markup inside a component without requiring another tag to be created?"
       choices:
         - content: "`RenderFragment`"

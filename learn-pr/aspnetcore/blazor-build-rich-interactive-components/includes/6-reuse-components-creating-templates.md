@@ -8,7 +8,7 @@ A template component supplies the layout and logic for one or more fragments of 
 
 A template is just an ordinary Razor component. To use a template, a consuming component references it like any other component. The `ChildContent` name is the default for a `RenderFragment` parameter. You can give the parameter a different name, but you must specify this name when the test page applies the template.
 
-## Generic RenderFragment<T> parameters
+## Generic RenderFragment\<T> parameters
 
 By default, the `RenderFragment` class acts as a placeholder for a block of HTML markup. However, you can use the generic type <xref:Microsoft.AspNetCore.Components.RenderFragment%601> to render other types of content by using a type parameter and providing the logic to handle the specified type in the template component.
 

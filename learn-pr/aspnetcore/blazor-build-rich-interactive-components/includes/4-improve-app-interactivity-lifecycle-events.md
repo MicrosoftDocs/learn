@@ -4,7 +4,7 @@ In this unit, you learn about the events that occur during the Blazor component 
 
 ## The Blazor component lifecycle
 
-Blazor components represent the views in Blazor apps, which define the layout and UI logic. The components generate HTML markup when the app runs. User interaction events can trigger custom code, and components can be updated to rerender the display. Upon page closure, Blazor removes the component and any resources should be cleaned up. New instances are created when the user returns to the page.
+Blazor components represent the views in Blazor apps, which define the layout and UI logic. The components generate HTML markup when the app runs. User interaction events can trigger custom code, and components can be updated to rerender the display. Upon page closure, Blazor removes the component and cleans up any resources. New instances are created when the user returns to the page.
 
 The following diagram illustrates the events that occur during the lifetime of a component, and the methods you can use to handle these events. Blazor provides both synchronous and asynchronous versions of each method except for `SetParametersAsync`.
 
@@ -41,7 +41,7 @@ When a user visits a page that contains a Blazor component, the Blazor runtime c
 
 If the component defines any parameters, the Blazor runtime injects the values for these parameters from the calling environment into the component. These parameters are contained in a `ParameterView` object and are made accessible to the `SetParametersAsync` method. You call the `base.SetParametersAsync` method to populate the `Parameter` properties of your component with these values.
 
-Alternatively, if you need to handle the parameters differently, this is the place to do it. For example, you might need to validate any parameters passed to the component before using them.
+Alternatively, if you need to handle the parameters differently, this method is the place to do it. For example, you might need to validate any parameters passed to the component before using them.
 
 > [!TIP]
 > The `SetParametersAsync` method always runs when a component is being created, even if the component doesn't have any parameters.
@@ -50,9 +50,9 @@ Alternatively, if you need to handle the parameters differently, this is the pla
 
 You can override the `OnInitialized` and `OnInitializedAsync` methods to include custom functionality. These methods run after the `SetParametersAsync` method populates the component's parameter-based properties, which are attributed with either <xref:Microsoft.AspNetCore.Components.ParameterAttribute> or <xref:Microsoft.AspNetCore.Components.CascadingParameterAttribute>. You run initialization logic in these methods.
 
-If the `render-mode` property of the application is set to `Server*, the *OnInitialized` and `OnInitializedAsync` methods run only once for a component instance. If a parent of the component modifies the component parameters, the `SetParametersAsync` method runs again, but these methods don't. If you need to reinitialize a component when the parameters change, use the `SetParametersAsync` method. If you want to do initialization once, use these methods.
+If the `render-mode` property of the application is set to `Server`, the `OnInitialized` and `OnInitializedAsync` methods run only once for a component instance. If a parent of the component modifies the component parameters, the `SetParametersAsync` method runs again, but these methods don't. If you need to reinitialize a component when the parameters change, use the `SetParametersAsync` method. If you want to do initialization once, use these methods.
 
-If the `render-mode` property is set to <xref:Microsoft.AspNetCore.Mvc.Rendering.RenderMode.ServerPrerendered>, the `OnInitialized` and `OnInitializedAsync` methods run twice: once during the prerender phase that generates the static page output, and again when the server establishes a SignalR connection with the browser. If you do expensive initialization tasks, such as retrieving data from a web service that you use to set the state of the Blazor component in these methods, cache the state information during the first execution and reuse this saved state during the second execution.
+If the `render-mode` property is set to <xref:Microsoft.AspNetCore.Mvc.Rendering.RenderMode.ServerPrerendered>, the `OnInitialized` and `OnInitializedAsync` methods run twice: once during the prerender phase that generates the static page output, and again when the server establishes a SignalR connection with the browser. You might do expensive initialization tasks in these methods, such as retrieving data from a web service that you use to set the Blazor component state. In this case, cache the state information during the first execution and reuse the saved state during the second execution.
 
 Any dependencies used by the Blazor component are injected when the instance has been created but before the `OnInitialized` or `OnInitializedAsync` methods run. You can use the objects injected by these dependencies in the `OnInitialized` or `OnInitializedAsync` methods, but not before.
 
@@ -63,9 +63,9 @@ During the prerender phase, code in a Blazor Server component can't perform acti
 
 ### Understand the OnParametersSet and OnParametersSetAsync methods
 
-The `OnParametersSet` and `OnParametersSetAsync` methods run either after the `OnInitialized` or `OnInitializedAsync` methods if this is the first time the component is being rendered, or after the `SetParametersAsync` method if not. Like `SetParametersAsync`, these methods are always called, even if the component has no parameters.
+The `OnParametersSet` and `OnParametersSetAsync` methods run after the `OnInitialized` or `OnInitializedAsync` methods the first time the component renders, or after the `SetParametersAsync` method in subsequent rendering. Like `SetParametersAsync`, these methods are always called, even if the component has no parameters.
 
-Use either method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't do long-running operations such as these in a constructor. Constructors are synchronous, and waiting for long-running operations to complete will affect the responsiveness of the page that contains the component.
+Use either method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't do long-running operations such as these in a constructor. Constructors are synchronous, and waiting for long-running operations to complete affects the responsiveness of the page that contains the component.
 
 ### Understand the OnAfterRenderand OnAfterRenderAsync methods
 
@@ -75,9 +75,7 @@ The `OnAfterRender`and `OnAfterRenderAsync` methods run every time the Blazor ru
 - A UI event is triggered.
 - The application code calls the `StateHasChanged` method of the component.
 
-The `StateHasChanged` method calls the `ShouldRender` method of the component. The purpose of this method is to determine whether the state change requires the component to rerender the view.
-
-By default, all state changes trigger a render operation, but you can override the `ShouldRender` method and define your decision-making logic. The `ShouldRender` method returns `true` if the view should be rendered again, or `false` otherwise.
+The `StateHasChanged` method calls the `ShouldRender` method of the component. The purpose of this method is to determine whether the state change requires the component to rerender the view. By default, all state changes trigger a render operation, but you can override the `ShouldRender` method and define your decision-making logic. The `ShouldRender` method returns `true` if the view should be rendered again, or `false` otherwise.
 
 If the component needs rendering, you can use the `BuildRenderTree` method to generate a model that can update the version of the DOM the browser uses to display the UI. You can use the default implementation of this method the `ComponentBase` class provides, or you can override it with custom logic if you have specific requirements.
 
@@ -90,7 +88,7 @@ The `OnAfterRender` and `OnAfterRenderAsync` methods take a boolean parameter ca
 
 ### Understand the Dispose and DisposeAsync methods
 
-Like any .NET class, a Blazor component can use managed and unmanaged resources. Managed resources are reclaimed automatically by the runtime. However, you should implement the `IDisposable` or `IAsyncDisposable` interfaces and provide a `Dispose` or `DisposeAsync` method to release any unmanaged resources. This practice reduces the chances of memory leaks in the server.
+Like any .NET class, a Blazor component can use managed and unmanaged resources. The runtime automatically reclaims managed resources. However, you should implement the `IDisposable` or `IAsyncDisposable` interfaces and provide a `Dispose` or `DisposeAsync` method to release any unmanaged resources. This practice reduces the chances of memory leaks in the server.
 
 ## Handle exceptions in lifecycle methods
 

@@ -19,14 +19,14 @@ You can integrate JavaScript libraries into your applications by using Blazor Ja
 
 You add JavaScript to a Blazor app the same way you add it to a standard HTML web app, by using the HTML `<script>` element. You add the `<script>` tag after the existing `<script src="_framework/blazor.*.js"></script>` tag in either the *Pages/_Host.cshtml* file or the *wwwroot/index.html* file, depending on your Blazor hosting model. For more information, see [ASP.NET Core Blazor hosting models](/aspnet/core/blazor/hosting-models).
 
-It's best not to place scripts in the `<head>` element of the page. Blazor has control only over the content in the `<body>` element of an HTML page, so JS interop can fail if the scripts depend on Blazor. Also, the page might display more slowly because of the time it takes to parse the JavaScript code.
+It's best not to place scripts in the `<head>` element of the page. Blazor controls only the content in the `<body>` element of an HTML page, so JS interop could fail if the scripts depend on Blazor. Also, the page might display more slowly because of the time it takes to parse the JavaScript code.
 
 The `<script>` tag operates as it does in an HTML web app. You can write code directly in the body of the tag, or you can reference an existing JavaScript file. For more information, see [ASP.NET Core Blazor JavaScript interoperability (JS interop): Location of JavaScript](/aspnet/core/blazor/javascript-interoperability#location-of-javascript).
 
 > [!IMPORTANT]
 > Place JavaScript files under the *wwwroot* folder of your Blazor project.
 
-Another option is to inject the `<script>` element that references a JavaScript file into the *Pages/_Host.cshtml* page dynamically. This approach is useful if you need to load different scripts depending on conditions that can only be determined at runtime. This approach can also speed up the initial loading of the app if you trigger the logic with an event that fires after a page is rendered. For more information, see [ASP.NET Core Blazor startup](/aspnet/core/blazor/fundamentals/startup).
+Another option is to inject the `<script>` element that references a JavaScript file into the *Pages/_Host.cshtml* page dynamically. This approach is useful if you need to load different scripts depending on conditions that can be determined only at runtime. This approach can also speed up the initial loading of the app if you trigger the logic with an event that fires after a page is rendered. For more information, see [ASP.NET Core Blazor startup](/aspnet/core/blazor/fundamentals/startup).
 
 ## Call JavaScript from .NET code
 
@@ -39,7 +39,7 @@ The `IJSRuntime` interface exposes the following methods to invoke JavaScript co
 
 Use `InvokeAsync<TValue>` to call a JavaScript function that returns a value. Otherwise, call `InvokeVoidAsync`. As the names suggest, both methods are asynchronous, so you use the C# `await` operator to capture results.
 
-The parameters to the `InvokeAsync` and `InvokeVoidAsync` methods are the name of the JavaScript function to invoke, followed by any arguments the function requires. The JavaScript function must be part of the `window` scope or a sub-scope of `window`. Arguments must be JSON-serializable.
+The parameters to the `InvokeAsync` and `InvokeVoidAsync` methods are the name of the JavaScript function to invoke, followed by any arguments the function requires. The JavaScript function must be part of the `window` scope or a subscope of `window`. Arguments must be JSON-serializable.
 
 > [!NOTE]
 > JS interop is only available when the Blazor Server app has established a SignalR connection with the browser. You can't make interop calls until rendering is complete. To detect whether rendering has finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> event in your Blazor code.
@@ -48,7 +48,7 @@ The parameters to the `InvokeAsync` and `InvokeVoidAsync` methods are the name o
 
 Many third-party JavaScript libraries are available to render elements on a page. These libraries can make updates to the DOM. As described earlier, Blazor maintains its own copy of the DOM, and it's important not to make changes that can cause the Blazor view of the DOM to become corrupted.
 
-The simplest way to handle this situation is to create a placeholder element in the Blazor component, usually an empty `<div @ref="placeHolder"></div>` element. Blazor code interprets this code as a blank space, and the Blazor render tree doesn't attempt to track its contents. You can freely add JavaScript code elements to this `<div>`, and Blazor won't attempt to change it.
+The simplest way to handle this situation is to create a placeholder element in the Blazor component, usually an empty `<div @ref="placeHolder"></div>` element. Blazor code interprets this code as a blank space, and the Blazor render tree doesn't attempt to track its contents. You can freely add JavaScript code elements to this `<div>`, and Blazor doesn't attempt to change it.
 
 Blazor app code defines a field of type <xref:Microsoft.AspNetCore.Components.ElementReference> to hold the reference to the `<div>` element. The `@ref` attribute on the `<div>` element sets the value of the field. The `ElementReference` object then passes to a JavaScript function, which can then use the reference to add content to the `<div>` element.
 

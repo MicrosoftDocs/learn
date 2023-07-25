@@ -1,4 +1,4 @@
-After a customer adds a pizza to their order, they can select an **X** icon to remove the pizza from the order list without confirmation. To help prevent customers from accidentally removing pizzas from their orders, the company wants you to add a prompt to confirm that a customer wants to remove the item.
+After a customer adds a pizza to their order, they can select an **X** icon to remove the pizza from the order list without confirmation. To help prevent customers from accidentally removing pizzas from their orders, the company wants you to add a prompt to confirm that customers want to remove items.
 
 The pizza company also wants to show customers the live status of their orders, so you need to update the order detail page to query the order status in real time.
 
@@ -51,10 +51,10 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
    <button type="button" class="close text-danger" aria-label="Close"
         @onclick="@(async () => await RemovePizzaConfirmation(configuredPizza))">
         <span aria-hidden="true">&times;</span>
-    </button>
+   </button>
    ```
 
-1. In the `@code` section at the end of the file, add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, the method calls `OrderState.RemoveConfiguredPizza` to remove the pizza from the order. Otherwise, the pizza remains in the order.
+1. In the `@code` directive at the end of the file, add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, the method calls `OrderState.RemoveConfiguredPizza` to remove the pizza from the order. Otherwise, the pizza remains in the order.
 
    ```razor
    async Task RemovePizzaConfirmation(Pizza removePizza)
@@ -80,23 +80,23 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
 
 1. Select **OK** and verify that the pizza is removed from your order. Select **X** next to another pizza, select **Cancel** in the confirm dialog, and verify that the pizza remains in your order.
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to select **Run** > **Stop Debugging** to stop the app.
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.
 
 ## Add a third-party JavaScript library to a Blazor app
 
-The pizza company requests clearer text on the buttons in the confirm dialog, and wants to use their branding and styling in the dialog box. After some research, you find a small JavaScript library called SweetAlert that looks like a good replacement for the standard dialog.
+The pizza company requests clearer text on the buttons in the confirm dialog, and wants to use their branding and styling in the dialog box. After some research, you decide to use a small JavaScript library called SweetAlert as a good replacement for the standard dialog.
 
 1. In Visual Studio Code **Explorer**, expand **Pages** and then select *_Host.cshtml*.
 
 1. At the end of the *_Host.cshtml* file, after the `<script src="_framework/blazor.server.js"></script>` line but before the `</body>` line, add the following `script` element to include the SweetAlert library.
 
-    ```html
-           <script src="https://cdn.jsdelivr.net/npm/sweetalert@latest/dist/sweetalert.min.js"></script>
+   ```html
+   <script src="https://cdn.jsdelivr.net/npm/sweetalert@latest/dist/sweetalert.min.js"></script>
    ```
 
    The SweetAlert library is now available to call on the client side.
 
-1. Update the `RemovePizzaConfirmation` method in the *Index.razor* file as follows to use the new library.
+1. To use the new library, update the `RemovePizzaConfirmation` method in the *Index.razor* file as follows.
 
    ```csharp
    async Task RemovePizzaConfirmation(Pizza removePizza)
@@ -125,15 +125,15 @@ The pizza company requests clearer text on the buttons in the confirm dialog, an
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-1. SweetAlert can accept a JSON object that includes all the settings it needs. Verify that the `confirm` dialog now has two buttons that say **No, leave it in my order** and **Yes, remove pizza**, and that they function as expected.
+1. SweetAlert accepts a JSON object that includes all the settings it needs. Verify that the `confirm` dialog now has two buttons that say **No, leave it in my order** and **Yes, remove pizza**, and that they function as expected.
 
     :::image type="content" source="../media/3-sweetalert-remove-dialog.png" lightbox="../media/3-sweetalert-remove-dialog.png" alt-text="Screenshot showing the SweetAlert dialog box.":::
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to stop the app.
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.
 
 ## Update the order page to show real-time order status
 
-Once a customer places a pizza order, the **My Orders** page uses the `OrderDetail` component to show the current status of the order. To show customers how their order is progressing in real-time, you update the component to call a .NET method from JavaScript that continuously gets the order status until the order is delivered.
+Once a customer places a pizza order, the **My Orders** page uses the `OrderDetail` component to show the current status of the order. The pizza company wants customers to see how their order is progressing in real-time. You update the component to call a .NET method from JavaScript that continuously gets the order status until the status shows delivered.
 
 1. In Visual Studio Code **Explorer**, expand **Pages** and then select *OrderDetail.razor*.
 1. In the *OrderDetail.razor* file, add the following declaration at the top of the component, under the last `@inject` statement.
@@ -144,7 +144,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
 
    The `@implements` declaration lets you define a `Dispose` method.
 
-1. Add a spinner to provide feedback to the customer that the page is updating. In the `<div class="track-order-details">`, above the `@foreach` statement, add the following code:
+1. Add a spinner to the page to give the customer feedback that the page is updating. In the `<div class="track-order-details">`, above the `@foreach` statement, add the following code:
 
    ```razor
    @if (IsOrderIncomplete)
@@ -155,7 +155,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
    }
    ```
 
-1. In the `@code` section, under the `OrderId` property declaration, add the following members.
+1. In the `@code` directive, under the `OrderId` property declaration, add the following members.
 
    ```razor
    bool IsOrderIncomplete =>
@@ -209,8 +209,8 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-1. In the app, order a pizza. Go to the **My Orders** screen and verify that the animated red dot appears while the order is incomplete and disappears when the pizza shows as delivered.
+1. In the app, order a pizza. Go to the **My Orders** screen and verify that the animated red dot appears while the order is incomplete and disappears when the status shows **Delivered**.
 
    :::image type="content" source="../media/3-order-status-updated-realtime.gif" lightbox="../media/3-order-status-updated-realtime.gif" alt-text="Animation showing the order status changing in real-time.":::
 
-1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> to stop the app.
+1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.

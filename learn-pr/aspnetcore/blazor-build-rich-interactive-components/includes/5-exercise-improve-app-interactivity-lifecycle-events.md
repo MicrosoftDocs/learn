@@ -1,8 +1,7 @@
-The Blazor component lifecycle lets you write code for when a lifecycle event occurs.
 
-The pizza company has decided they'd like to sell a special family-sized pizza that's only available in one 24-inch size. The current app has a size slider that doesn't support a single-sized pizza. You've been asked to add the new family-size pizza and disable the size option for that pizza.
+The pizza company has decided they'd like to sell a special family-sized pizza that's only available in one 24-inch size. The current app has a size slider that doesn't support a single-sized pizza. You're asked to add the new family-size pizza and disable the size option for that pizza.
 
-In this exercise, you make changes to the pizza database to add the special family-size pizza. You change the pizza model to support the new pizza, and then make changes to the configure pizza dialog component to handle the special case and see where your code runs in the lifecycle.
+The Blazor component lifecycle helps you write code for when a lifecycle event occurs. In this exercise, you make changes to the pizza database to add the special family-size pizza. You change the pizza model to support the new pizza, and then make changes to the configure pizza dialog to handle the special case. You can see where your code runs in the component lifecycle.
 
 ## Create the new family-size pizza
 
@@ -40,9 +39,7 @@ In this exercise, you make changes to the pizza database to add the special fami
    }
    ```
 
-1. The `SeedData` class prepopulates the pizza database with special pizzas. You need to delete the existing database for the new `PizzaSpecial` to be created.
-
-   In **Explorer**, select and delete the *pizza.db*, *pizza.db-shm*, and *pizza.db-wal* files.
+1. The `SeedData` class prepopulates the pizza database with special pizzas. You need to delete the existing database for the new `PizzaSpecial` to be created. In **Explorer**, select and delete the *pizza.db*, *pizza.db-shm*, and *pizza.db-wal* files.
 
 1. In Visual Studio Code, press <kbd>F5</kbd>or select **Run** > **Start Debugging**.
 
