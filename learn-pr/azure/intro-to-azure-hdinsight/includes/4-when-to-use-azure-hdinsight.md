@@ -1,4 +1,4 @@
-You can use HDInsight to process big data in many scenarios, using historical or real-time data. But should you? The biggest strength of HDInsight is the extensive range of configurations it provides. In this unit, you'll consider whether HDInsight is the correct choice for your organization. You'll analyze the following criteria to help you decide:
+You can use HDInsight to process big data in many scenarios, using historical or real-time data; but should you? The biggest strength of HDInsight is the extensive range of configurations it provides. In this unit, you'll consider whether HDInsight is the correct choice for your organization. You'll analyze the following criteria to help you decide:
 
 - Range of workloads
 - Scalability
@@ -11,7 +11,7 @@ To determine whether HDInsight can meet your organization's big-data needs, use 
 
 | **Criteria** | **Analysis**|
 | ---------------------------- | ------------------------------------------------------------ |
-| **Range of workloads** | If you require support for various workloads, you'll need a platform that can supporting those requirements. |
+| **Range of workloads** | If you require support for various workloads, you'll need a platform that can support those requirements. |
 | **Scalability** | Does your organization need to scale to accommodate increases in data volume and data velocity? It's important to choose a platform that can scale automatically and support compute and storage scaling independently. |
 | **Fault tolerance** | If your data analysis must continue despite component failure, you'll need to choose a fault-tolerant platform. |
 | **Security** | Most organizations expect the data they work with to be secure at rest and in transit. It's also important for almost all organizations to meet government compliance standards. |
