@@ -21,7 +21,7 @@ Which of the following methods would associate an NSG with an Azure resource?
 ( ) By accessing the Azure portal and Defender for Cloud {{Incorrect. The Azure portal and Defender for Cloud focuses on security posture and recommendations, not NSG association.}}
 
 ## Multiple Choice
-What happens to network traffic that does not match any NSG rules?
+What happens to network traffic that doesn't match any NSG rules?
 ( ) It is allowed by default {{Incorrect. Allowing traffic by default would pose a security risk.}}
 (x) It is denied by default {{Correct. By default, network traffic that does not match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment.}}
 ( ) It is logged for analysis {{Incorrect. NSGs do not log traffic by default, but logging can be enabled for further analysis.}}

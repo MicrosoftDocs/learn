@@ -28,10 +28,10 @@ You can deploy resources from several Azure services into an Azure virtual netwo
 
 For inbound traffic, Azure processes the rules in a network security group associated to a subnet first, if there's one, and then the rules in a network security group associated to the network interface, if there's one. This process includes intra-subnet traffic as well.
 
- -  VM1: The security rules in *NSG1* are processed, since it's associated to *Subnet1* and *VM1* is in *Subnet1*. Unless you've created a rule that allows port 80 inbound, the **DenyAllInbound** default security rule denies the traffic. The traffic doesn't get evaluated by NSG2 because it's associated with the network interface. If *NSG1* allows port 80 in its security rule, *NSG2* processes the traffic. To allow port 80 to the virtual machine, both *NSG1* and *NSG2* must have a rule that allows port 80 from the internet.
- -  VM2: The rules in *NSG1* are processed because *VM2* is also in *Subnet1*. Since *VM2* doesn't have a network security group associated to its network interface, it receives all traffic allowed through *NSG1* or is denied all traffic denied by *NSG1*. Traffic is either allowed or denied to all resources in the same subnet when a network security group is associated to a subnet.
- -  VM3: Since there's no network security group associated to *Subnet2*, traffic is allowed into the subnet and processed by *NSG2*, because *NSG2* is associated to the network interface attached to *VM3*.
- -  VM4: Traffic is allowed to *VM4,* because a network security group isn't associated to *Subnet3*, or the network interface in the virtual machine. All network traffic is allowed through a subnet and network interface if they don't have a network security group associated to them.
+ -  VM1: The security rules in *NSG1* are processed, since it's associated to *Subnet 1* and *VM1* is in *Subnet 1*. Unless you've created a rule that allows port 80 inbound, the **DenyAllInbound** default security rule denies the traffic. The traffic doesn't get evaluated by NSG2 because it's associated with the network interface. If *NSG1* allows port 80 in its security rule, *NSG2* processes the traffic. To allow port 80 to the virtual machine, both *NSG1* and *NSG2* must have a rule that allows port 80 from the internet.
+ -  VM2: The rules in *NSG1* are processed because *VM2* is also in *Subnet 1*. Since *VM2* doesn't have a network security group associated to its network interface, it receives all traffic allowed through *NSG1* or is denied all traffic denied by *NSG1*. Traffic is either allowed or denied to all resources in the same subnet when a network security group is associated to a subnet.
+ -  VM3: Since there's no network security group associated to *Subnet 2*, traffic is allowed into the subnet and processed by *NSG2*, because *NSG2* is associated to the network interface attached to *VM3*.
+ -  VM4: Traffic is allowed to *VM4,* because a network security group isn't associated to *Subnet 3*, or the network interface in the virtual machine. All network traffic is allowed through a subnet and network interface if they don't have a network security group associated to them.
 
 ## Outbound traffic
 
@@ -39,8 +39,8 @@ For outbound traffic, Azure processes the rules in a network security group asso
 
  -  VM1: The security rules in *NSG2* are processed. The **AllowInternetOutbound** default security rule in both *NSG1* and *NSG2* allows the traffic unless you create a security rule that denies port 80 outbound to the internet. If *NSG2* denies port 80 in its security rule, it denies the traffic, and *NSG1* never evaluates it. To deny port 80 from the virtual machine, either, or both of the network security groups must have a rule that denies port 80 to the internet.
  -  VM2: All traffic is sent through the network interface to the subnet, since the network interface attached to *VM2* doesn't have a network security group associated to it. The rules in *NSG1* are processed.
- -  VM3: If *NSG2* denies port 80 in its security rule, it denies the traffic. If *NSG2* doesn't deny port 80, the **AllowInternetOutbound** default security rule in *NSG2* allows the traffic because there's no network security group associated with *Subnet2*.
- -  VM4: All network traffic is allowed from *VM4,* because a network security group isn't associated to the network interface attached to the virtual machine, or to *Subnet3*.
+ -  VM3: If *NSG2* denies port 80 in its security rule, it denies the traffic. If *NSG2* doesn't deny port 80, the **AllowInternetOutbound** default security rule in *NSG2* allows the traffic because there's no network security group associated with *Subnet 2*.
+ -  VM4: All network traffic is allowed from *VM4,* because a network security group isn't associated to the network interface attached to the virtual machine, or to *Subnet 3*.
 
 ## Intra-Subnet traffic
 
