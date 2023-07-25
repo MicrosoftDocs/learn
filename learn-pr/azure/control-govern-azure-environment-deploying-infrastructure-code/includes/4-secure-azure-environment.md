@@ -1,4 +1,4 @@
-Now that you understand how to control your environments and secure your deployment pipelines, you can consider disabling human access to your controlled environments. In this unit, you'll learn how to structure your users' permissions to Azure environments, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
+Now that you understand how to control your environments and secure your deployment pipelines, you can consider disabling human access to your controlled environments. In this unit, you learn how to structure your users' permissions to Azure environments. Including, how to allow access in emergency situations, and how to audit any changes that happen in your Azure estate.
 
 ## Block human access
 
@@ -51,13 +51,13 @@ There are two types of operations in Azure:
 
 For example, you'd use a control plane operation to create a storage account. You'd use a data plane operation to connect to the storage account and access the data that it contains.
 
-When you block direct user access to your Azure resources, also consider how this restriction applies to data plane operations. For example, if your deployment process stores the key for a storage account in a place that an administrator can access, that administrator could potentially use the key to circumvent your controls and access the storage account's data plane directly.
+When you block direct user access to your Azure resources, also consider how this restriction applies to data plane operations. For example, your deployment process might store the key for a storage account in a place that an administrator can access. That administrator could potentially use the key to circumvent your controls and access the storage account's data plane directly.
 
-An increasing number of Azure resources support configuring their data plane access control by using Azure AD. This support reduces the likelihood that you'll leak keys or grant data plane access inadvertently. It's a good practice to use Azure AD for data plane access wherever you can.
+An increasing number of Azure resources support configuring their data plane access control by using Azure AD. This support reduces the likelihood that you leak keys or grant data plane access inadvertently. It's a good practice to use Azure AD for data plane access wherever you can.
 
 ### Emergency access
 
-Sometimes, emergencies happen and somebody needs to quickly get access to a production environment to investigate or resolve a problem. It's important to plan and rehearse how you'll respond to these emergency situations well before they occur. You don't want to have to scramble to respond in the middle of an outage.
+Sometimes, emergencies happen and somebody needs to quickly get access to a production environment to investigate or resolve a problem. It's important to plan and rehearse how you want to respond to these emergency situations well before they occur. You don't want to have to scramble to respond in the middle of an outage.
 
 One approach to consider is a *break-glass account*, which is a special user account that has higher levels of permissions than users normally have. It's named a *break-glass* account because it requires something unusual to gain access to its credential, similar to breaking the glass on a fire-alarm panel. You can provide a secure way for your operators to get access to the credentials for the break-glass account. These operators can then sign in as the account to perform emergency changes.
 
@@ -80,21 +80,21 @@ The sequence of steps for using PIM is:
 1. The user tries to perform an emergency change by using their normal account, but the operation is blocked because the normal user account doesn't have sufficient permissions.
 1. The user contacts PIM and requests a temporary elevation of permissions.
 
-   PIM might perform additional validation of the user's identity or ask for approval from somebody, depending on how it's configured for the organization.
+   PIM might perform further validation of the user's identity or ask for approval from somebody, depending on how it's configured for the organization.
 
    If the request is authorized, PIM updates the user's permissions temporarily.
 1. The user is allowed to perform the operation.
 
-   After the defined time period has elapsed, PIM revokes the additional permissions that it granted to the user.
+   After the defined time period has elapsed, PIM revokes the elevated permissions that it granted to the user.
 
-Both PIM and Azure write comprehensive audit logs to help you understand who has requested elevated permissions, why, and what they did in your environment when the permissions were granted.
+Both PIM and Azure write comprehensive audit logs to help you understand who has requested elevated permissions and why. The logs also track what they did in your environment when the permissions were granted.
 
 > [!NOTE]
 > PIM requires a premium license for Azure AD.
 
 #### After the emergency ends
 
-After an emergency ends, it's important to have a process to return to normal operations. Follow this process before too much time has elapsed, or you'll risk forgetting important information or leaving configurations in a nonsecure state.
+After an emergency ends, it's important to have a process to return to normal operations. You should Follow this process before too much time has elapsed, or you risk forgetting important information or leaving configurations in a nonsecure state.
 
 Carefully review the Azure and PIM audit logs to understand the changes that were performed in your controlled environments, and especially your production environment.
 
@@ -109,4 +109,4 @@ Soon after the emergency, *resynchronize* your infrastructure-as-code assets wit
 
 It's also a good practice to configure auditing and logging across your entire Azure environment, and to monitor for specific events or threats.
 
-Consider using a security information and event management (SIEM) tool, like Microsoft Sentinel, to collect and analyze logs from your Azure estate, and even from Azure DevOps, GitHub, and other systems. You can use Sentinel to monitor for unexpected or unauthorized changes to your Azure resources. You can also import your pipeline's audit logs and trigger alerts when events happen, like when an administrator changes a branch protection policy in your repository.
+Consider using a security information and event management (SIEM) tool, like Microsoft Sentinel. You can use this tool to collect and analyze logs from your Azure estate, and even from Azure DevOps, GitHub, and other systems. You can use Sentinel to monitor for unexpected or unauthorized changes to your Azure resources. You can also import your pipeline's audit logs and trigger alerts when events happen, like when an administrator changes a branch protection policy in your repository.

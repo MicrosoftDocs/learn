@@ -1,4 +1,5 @@
 
+
 ## Summary and open questions
 
 :::image type="content" source="../media/security-pros-with-mystery-hacker.png" alt-text="Images of the Who Hacked? security team and unknown hacker.":::

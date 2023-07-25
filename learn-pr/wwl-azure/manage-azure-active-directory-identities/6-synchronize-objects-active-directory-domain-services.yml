@@ -4,11 +4,10 @@ title: Synchronize objects from AD DS to Azure AD
 metadata:
   title: Synchronize objects from AD DS to Azure AD
   description: "Synchronize objects from AD DS to Azure AD"
-  ms.date: 05/12/2023
+  ms.date: 07/25/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/6-synchronize-objects-active-directory-domain-services.md)]

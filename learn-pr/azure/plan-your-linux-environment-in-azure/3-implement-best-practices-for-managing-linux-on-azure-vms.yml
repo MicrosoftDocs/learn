@@ -5,8 +5,8 @@ metadata:
   title: Implement best practices for managing Linux on Azure VMs
   description: Learn how to implement best practices for managing Linux on Azure virtual machines.
   ms.date: 04/07/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: chasecrum
+  ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

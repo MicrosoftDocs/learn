@@ -1,3 +1,4 @@
+
 Although you can often create an effective knowledge base that consists of individual question and answer pairs, sometimes you might need to ask follow-up questions to elicit more information from a user before presenting a definitive answer. This kind of interaction is referred to as a *multi-turn* conversation.
 
 ![A multi-turn conversation](../media/multi-turn-conversation.png)

@@ -3,6 +3,7 @@ uid: learn.wwl.analyze-images
 metadata:
   title: Analyze images
   description: "Analyze images"
+  ms.service: cognitive-services
   ms.date: 07/13/2022
   author: wwlpublish
   ms.author: gmalc
