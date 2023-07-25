@@ -1,4 +1,5 @@
 
+
 [Azure Files](/azure/storage/files/storage-files-introduction) provides fully managed cloud-based file shares that are hosted on Azure. Shared files are accessible by using the industry standard Server Message Block (SMB) protocol, Network File System (NFS) protocol, and the Azure Files REST API. You can mount or connect to an Azure file share at the same time on all the main operating systems.
 
 :::image type="content" source="../media/azure-files.png" alt-text="Diagram that shows an Azure storage account, Azure Files and file shares, directories, and files." border="false":::

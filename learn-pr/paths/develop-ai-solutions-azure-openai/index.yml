@@ -38,5 +38,6 @@ modules:
 - learn.wwl.generate-code-azure-openai
 - learn.wwl.generate-images-azure-openai
 - learn.wwl.use-own-data-azure-openai
+- learn.wwl.responsible-generative-ai
 trophy:
   uid: learn.wwl.develop-ai-solutions-azure-openai.trophy
