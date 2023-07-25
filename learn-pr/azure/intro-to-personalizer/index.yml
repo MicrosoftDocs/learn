@@ -32,7 +32,7 @@ roles:
 - functional-consultant
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-cloud-services
 units:
 - learn.azure.intro-to-personalizer.1-introduction
