@@ -3,13 +3,13 @@ uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal
 metadata:
   title: Connect an Azure SQL server using an Azure Private Endpoint using the Azure portal
   description: "Learn how to securely connect an Azure SQL server using an Azure Private Endpoint via the Azure portal, ensuring private and safe communication with your SQL server."
-  ms.date: 07/24/2023
+  ms.date: 07/25/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: azure
 title: Connect an Azure SQL server using an Azure Private Endpoint using the Azure portal
-summary: In this module, you'll understand the importance of using Azure Private Endpoint for secure connections to Azure SQL Server. Learn to configure and create Private Endpoints, validate and test the connections, and recognize its benefits for securing database connections and isolating network traffic in the Azure portal.
+summary: This module will guide you on securely connecting an Azure SQL server via Azure Private Endpoint in the Azure portal, enhancing data communication security.
 abstract: |
   By the end of this training module, participants will:
   - Understand the importance of using Azure Private Endpoint to establish secure connections to Azure SQL Server.

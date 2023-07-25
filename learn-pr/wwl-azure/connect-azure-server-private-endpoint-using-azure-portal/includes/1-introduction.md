@@ -3,9 +3,9 @@ Connecting securely to Azure Structured Query Language (SQL) Server is crucial f
 
 ## Scenario
 
-Imagine you work as a database administrator for a healthcare organization that stores sensitive patient data in Azure SQL Server. Your organization requires secure and private access to the SQL Server from within the virtual network to ensure compliance with industry regulations. As part of your responsibilities, you need to configure an Azure Private Endpoint for Azure SQL Server in the Azure portal.
+Imagine your work as a database administrator for a healthcare organization that stores sensitive patient data in Azure SQL Server. Your organization requires secure and private access to the SQL Server from within the virtual network to ensure compliance with industry regulations. As part of your responsibilities, you need to configure an Azure Private Endpoint for Azure SQL Server in the Azure portal.
 
-## Learning Objectives
+## Learning objectives
 
 By the end of this training module, participants will:
 

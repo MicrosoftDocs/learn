@@ -10,7 +10,7 @@ The service could be an Azure service such as:<br>
 
 ## Private endpoint properties
 
-:::image type="content" source="../media/private-endpoint-properties-example-1c0d28c3.jpg" alt-text="Screenhot showing private endpoint properties.":::
+:::image type="content" source="../media/private-endpoint-properties-example-1c0d28c3.jpg" alt-text="Screenshot showing private endpoint properties.":::
  As you're creating private endpoints, consider the following:
 
  -  Private endpoints enable connectivity between the customers from the same:

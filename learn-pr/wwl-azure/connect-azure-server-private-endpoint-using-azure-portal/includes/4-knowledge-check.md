@@ -7,7 +7,7 @@ What is the purpose of using an Azure Private Endpoint to connect to an Azure SQ
 ( ) To provide a public IP address for accessing the SQL server over the internet {{To proIncorrect. Private Endpoint is designed for private, secure connections and does not provide a public IP address for internet access.}}
 
 ## Multiple Choice
-Which Azure service is used to create and manage an Azure Private Endpoint for an Azure
+Which Azure service is used to create and manage an Azure Private Endpoint for an Azure?
 ( ) Azure Virtual Network {{Incorrect. While Azure Virtual Network is used in conjunction with Private Endpoint, it is not the specific service responsible for creating and managing Private Endpoints.}}
 (x) Azure Private Link {{Correct. Azure Private Link is the Azure service used to create and manage Private Endpoints. It allows you to securely connect to Azure services, including Azure SQL server, over a private network connection.}}
 ( ) Azure SQL Database {{Incorrect. Azure SQL Database is the database service itself, not the service used to create and manage Private Endpoints.}}
