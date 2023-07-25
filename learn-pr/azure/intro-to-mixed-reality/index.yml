@@ -30,7 +30,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - dynamics-365
 - dynamics-guides
 - dynamics-remote-assist
