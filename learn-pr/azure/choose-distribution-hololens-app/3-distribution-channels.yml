@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.choose-distribution-hololens-app.distribution-channels
+title: Distribution channels
+metadata:
+  title: Distribution channels
+  description: "This unit explores distribution channels for HoloLens apps."
+  ms.date: 7/13/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-distribution-channels.md)]

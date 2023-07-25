@@ -24203,6 +24203,61 @@
       "source_path": "learn-pr/azure/intro-to-mixed-reality-design/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-mixed-reality-design/10-summary",
       "redirect_document_id": true
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-education/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-financial-services/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-government/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-healthcare/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-manufacturing/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-business-school-retail/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-strategy-for-business-value/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/become-innovative-organization/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/responsible-ai-government-principles/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/responsible-ai-business-principles/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/scale-ai-organizations/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
