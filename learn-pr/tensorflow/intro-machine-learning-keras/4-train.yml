@@ -3,8 +3,8 @@ uid: learn.tensorflow.intro-machine-learning-keras.train
 title: Training and testing the neural network
 metadata:
   title: Training and testing the neural network
-  description: Learn how to train your neural network using the training data, and how to evaluate it using the test data
-  ms.date: 07/07/2021
+  description: Learn how to train your neural network using the training data, and how to evaluate it using the test data.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
@@ -24,7 +24,7 @@ quiz:
     - content: "The goal is to make it faster."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "The goal is to find the parameters W and b that will lead to the best prediction."
+    - content: "The goal is to find the parameters W and b that lead to the best prediction."
       isCorrect: true
       explanation: "Correct!"
     - content: "The goal is to find the best optimizer and loss function for our purposes."
