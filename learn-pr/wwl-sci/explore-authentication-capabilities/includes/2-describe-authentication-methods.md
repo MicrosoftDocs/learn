@@ -14,9 +14,9 @@ The use of passwords should be supplemented or replaced with more secure authent
 
 - **SMS-based authentication**. Short message service (SMS) used in mobile device text messaging can be used as a primary form of authentication. With SMS-based sign-in, users don't need to know a username and password to access applications and services. The user instead enters their registered mobile phone number, receives a text message with a verification code, and enters that in the sign-in interface.
 
-    Users can also choose to verify their identity through SMS text messaging on a mobile phone, as a secondary form of authentication during self-service password reset (SSPR) or Microsoft Entra ID Multi-Factor Authentication.  For example, users can supplement their password by using SMS text messaging. An SMS is sent to the mobile phone number containing a verification code. To complete the sign-in process, the verification code provided is entered into the sign-in interface.
+    Users can also choose to verify their identity through SMS text messaging on a mobile phone, as a secondary form of authentication during self-service password reset (SSPR) or Microsoft Entra ID Multifactor Authentication.  For example, users can supplement their password by using SMS text messaging. An SMS is sent to the mobile phone number containing a verification code. To complete the sign-in process, the verification code provided is entered into the sign-in interface.
 
-- **Voice call verification**. Users can use voice calls as a secondary form of authentication, to verify their identity, during self-service password reset (SSPR) or Microsoft Entra ID Multi-Factor Authentication.  With phone call verification, an automated voice call is made to the phone number registered by the user. To complete the sign-in process, the user is prompted to press # on their keypad. Voice calls are not supported as a primary form of authentication, in Microsoft Entra ID.
+- **Voice call verification**. Users can use voice calls as a secondary form of authentication, to verify their identity, during self-service password reset (SSPR) or Microsoft Entra ID Multifactor Authentication.  With phone call verification, an automated voice call is made to the phone number registered by the user. To complete the sign-in process, the user is prompted to press # on their keypad. Voice calls are not supported as a primary form of authentication, in Microsoft Entra ID.
 
 ### OATH
 
@@ -26,7 +26,7 @@ OATH (Open Authentication) is an open standard that specifies how time-based, on
 
 - **OATH TOTP hardware tokens** (supported in public preview) are small hardware devices that look like a key fob that displays a code that refreshes every 30 or 60 seconds. OATH TOTP hardware tokens typically come with a secret key, or seed, preprogrammed in the token. These keys and other information specific to each token must be input into Microsoft Entra ID and then activated for use by end-users.
 
-OATH software and hardware tokens, are only supported as secondary forms of authentication in Microsoft Entra ID, to verify an identity during self-service password reset (SSPR) or Microsoft Entra ID Multi-Factor Authentication.
+OATH software and hardware tokens, are only supported as secondary forms of authentication in Microsoft Entra ID, to verify an identity during self-service password reset (SSPR) or Microsoft Entra ID Multifactor Authentication.
 
 ### Passwordless authentication
 The end-goal for many organizations is to remove the use of passwords as part of sign-in events. When a user signs in with a passwordless method, credentials are provided by using methods like biometrics with Windows Hello for Business, or a FIDO2 security key. These authentication methods can't be easily duplicated by an attacker.
@@ -42,7 +42,7 @@ Windows Hello for Business replaces passwords with strong two-factor authenticat
 
 Windows Hello for Business helps protect against credential theft, because an attacker must have both the device and the biometric info or PIN, making it more difficult to gain access without the employee's knowledge.
 
-As a passwordless authentication method, Windows Hello for Business serves as a primary form of authentication.  In addition, Windows Hello for Business can be used as a secondary form of authentication to verify an identity during multi-factor authentication.
+As a passwordless authentication method, Windows Hello for Business serves as a primary form of authentication.  In addition, Windows Hello for Business can be used as a secondary form of authentication to verify an identity during multifactor authentication.
 
 #### FIDO2
 Fast Identity Online (FIDO) is an open standard for passwordless authentication. FIDO allows users and organizations to leverage the standard to sign in to their resources using an external security key or a platform key built into a device, eliminating the need for a username and password.
@@ -51,11 +51,11 @@ FIDO2 is the latest standard that incorporates the web authentication (WebAuthn)
 
 With FIDO2 security keys, users can sign in to Microsoft Entra ID or hybrid Microsoft Entra ID joined Windows 10 devices and get single-sign on to their cloud and on-premises resources. Users can also sign in to supported browsers. FIDO2 security keys are a great option for enterprises who are very security sensitive or have scenarios or employees who aren't willing or able to use their phone as a second factor.
 
-As a passwordless authentication method, FIDO2 serves as a primary form of authentication.  In addition, FIDO2 can be used as a secondary form of authentication to verify an identity during multi-factor authentication.
+As a passwordless authentication method, FIDO2 serves as a primary form of authentication.  In addition, FIDO2 can be used as a secondary form of authentication to verify an identity during multifactor authentication.
 
 ### Microsoft Authenticator app
 
-As a passwordless authentication method, the Microsoft Authenticator app can be used as a primary form of authentication to sign in to any Microsoft Entra ID account or as an additional verification option during self-service password reset (SSPR) or Microsoft Entra ID Multi-Factor Authentication events.
+As a passwordless authentication method, the Microsoft Authenticator app can be used as a primary form of authentication to sign in to any Microsoft Entra ID account or as an additional verification option during self-service password reset (SSPR) or Microsoft Entra ID Multifactor Authentication events.
 
 To use Microsoft Authenticator, a user must download the phone app from the Microsoft store and register their account. Microsoft Authenticator is available for Android and iOS.
 
@@ -75,6 +75,6 @@ Microsoft Entra Identity certificate-based authentication (CBA) enables customer
 X.509 certificates, which are part of the public key infrastructure (PKI), are digitally signed documents that bind an identity (an individual, organization, website) to its public key.  For more information, see [Describe concepts of cryptography]( /training/modules/describe-concepts-of-cryptography/).
 
 ### Primary and secondary authentication
-Some authentication methods can be used as the primary factor when you sign in to an application or device.  Other authentication methods are only available as a secondary factor when you use Microsoft Entra Identity Multi-Factor Authentication or SSPR.  While that information is called-out in the text that describes each authentication method, the following table summarizes when an authentication method can be used during a sign-in event.
+Some authentication methods can be used as the primary factor when you sign in to an application or device.  Other authentication methods are only available as a secondary factor when you use Microsoft Entra Identity Multifactor Authentication or SSPR.  While that information is called-out in the text that describes each authentication method, the following table summarizes when an authentication method can be used during a sign-in event.
 
 :::image type="content" source="../media/primary-secondary-authentication-inline.png" lightbox="../media/primary-secondary-authentication-extended.png" alt-text="Passwords should be supplemented or replaced.  The best approach is Passwordless.":::
