@@ -38,7 +38,7 @@ roles:
 - data-scientist
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:
