@@ -97,7 +97,7 @@ This information protection solution keeps you in control of your data, even whe
 
 We recommend that you:
 
--   [Deploy Azure Information Protection](https://learn.microsoft.com/azure/information-protection/deployment-roadmap) for your organization.
+-   [Deploy Microsoft Purview Information Protection](https://learn.microsoft.com/purview/information-protection) for your organization.
 -   Apply labels that reflect your business requirements. For example: Apply a label named "highly confidential" to all documents and emails that contain top-secret data, to classify and protect this data. Then, only authorized users can access this data, with any restrictions that you specify.
 -   Configure [usage logging for Azure RMS](https://learn.microsoft.com/azure/information-protection/log-analyze-usage) so that you can monitor how your organization is using the protection service.
 
