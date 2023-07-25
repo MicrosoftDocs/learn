@@ -1,6 +1,13 @@
-A pizza delivery company hires you to modernize their customer-facing Blazor website, which includes pizza listings, ordering pages, and other functionality. You want to use JavaScript to animate rendered HTML components, use a JavaScript library to apply branding to similar pages, and have the app respond to events after page rendering is complete.
+A pizza delivery company hires you to modernize their customer-facing Blazor website, which includes pizza listings, ordering pages, and other functionality. Blazor interactive web applications use .NET to share logic between the server and the client code.
 
-Blazor interactive web applications use .NET to share logic between the server and the client code. This module shows you how to use Blazor to interoperate with JavaScript code, use templated components, and respond to component lifecycle events.
+In your updates, you want to:
+
+- Use JavaScript to animate a rendered HTML component.
+- Use a JavaScript library to apply branding to an alert page.
+- Change how the app responds to events after page rendering is complete.
+- Create and apply a template component to update multiple pages.
+
+This module shows you how to interoperate with JavaScript code, use templated components, and respond to component lifecycle events in Blazor.
 
 ## Learning objectives
 

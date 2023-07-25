@@ -1,10 +1,10 @@
 The pizza company wants the **My Orders** page to show customers more details about their past orders, such as which pizzas were in the order and what time the customer made the order.
 
-A template can help you improve the display of the **My Orders** page on the Blazing Pizza app. In this exercise, you use a Blazor template to create a pagination component and improve the order history page.
+A template can help you improve the display and functionality of the **My Orders** page on the Blazing Pizza app. In this exercise, you create a pagination template component that you reuse on the **My Orders** page.
 
 ## Create the pagination template component
 
-Create a new pagination template component file and pagination controls.
+Create a new Blazor pagination template component file and pagination controls.
 
 ### Create the file and add the markup
 
@@ -50,7 +50,7 @@ Create a new pagination template component file and pagination controls.
 
 The markup accepts a generic type parameter `TItem`, defines a container to display the selected item, and uses a `<nav>` element to display the pagination controls.
 
-The controls use a `<ul>` element, with each item in the list being a page number. The page number is defined by the `ItemLabel` render fragment, which passes in as a parameter. The `ItemLabel` render fragment is defined in the component that uses the template.
+The controls use a `<ul>` element with each list item being a page number. The page number is defined by the `ItemLabel` render fragment, which passes in as a parameter. The `ItemLabel` render fragment is defined in the component that uses the template.
 
 ### Add the code directive
 
@@ -91,7 +91,9 @@ The `selectedIndex` field tracks which item is currently selected. The `Incremen
 
 The `OnInitialized` method sets the initial selected item to the last item in the list.
 
-## Update the MyOrder component
+## Update the MyOrders component
+
+Now, update the **My Orders** page to use the template component.
 
 1. In **Explorer**, expand *Pages* and then select *MyOrders.razor*.
 1. After the last `@inject` directive, add the `@using` directive:
@@ -100,7 +102,7 @@ The `OnInitialized` method sets the initial selected item to the last item in th
    @using BlazingPizza.Components
    ```
 
-   This line enables the newly created component template to be visible to the `MyOrder` component.
+   This line enables the `MyOrder` component to use the newly created component template.
 
 1. Within the `<div class="main">` markup, in the `if` / `else if` / `else` logical block, replace the existing `else` branch with the following code:
 

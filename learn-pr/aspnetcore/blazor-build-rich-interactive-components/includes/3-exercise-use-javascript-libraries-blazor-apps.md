@@ -1,6 +1,6 @@
 After a customer adds a pizza to their order, they can select an **X** icon to remove the pizza from the order without confirmation. To prevent customers from accidentally removing pizzas from their orders, the pizza company wants you to add a confirmation prompt for item removal.
 
-The pizza company also wants customers to see how their order is progressing in real time. You need to update the order detail page to continuously query order status and give customers feedback that the page is updating.
+The pizza company also wants customers to see how their order is progressing in real time. You need to update the order detail page to continuously query order status, and give customers feedback that the page is updating.
 
 In this exercise, you extend the pizza delivery company's existing app by using JS interop from a Blazor component to call JavaScript on the client side. You integrate with a third-party JavaScript library to improve the cancellation popup, and call a Blazor method from JavaScript to get the real-time status of a customer order.
 
@@ -139,7 +139,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
    @implements IDisposable
    ```
 
-   The `@implements` declaration lets you define a `Dispose` method.
+   This `@implements` declaration lets you define a `Dispose` method.
 
 1. Add a spinner to the page to give the customer feedback that the page is updating. In `<div class="track-order-details">`, above the `@foreach` statement, add the following code:
 

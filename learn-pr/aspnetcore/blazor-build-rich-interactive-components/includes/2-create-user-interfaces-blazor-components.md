@@ -1,4 +1,4 @@
-Blazor uses C# components rather than JavaScript to create web pages or HTML sections with dynamic content. You can use Blazor JavaScript interoperability (JS interop) to call JavaScript libraries in Blazor apps and call JavaScript functions from .NET C# code.
+Blazor uses C# components rather than JavaScript to create web pages or HTML sections with dynamic content. But you can use Blazor JavaScript interoperability (JS interop) to call JavaScript libraries in Blazor apps and call JavaScript functions from .NET C# code.
 
 In this unit, you learn how to call JavaScript from C# code in a Blazor page, and how to invoke C# methods from JavaScript functions. In the next unit, you use an alert component from a JavaScript library to update your Blazor pizza delivery website.
 

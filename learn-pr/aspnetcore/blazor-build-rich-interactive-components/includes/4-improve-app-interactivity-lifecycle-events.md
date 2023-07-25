@@ -29,12 +29,6 @@ Each component lifecycle method has a specific purpose, and you can override the
 | **5** | <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> / <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> | Occurs after the component has rendered. |
 | **6** | `Dispose` / `DisposeAsync` | If the component implements either <xref:System.IDisposable> or <xref:System.IAsyncDisposable>, the appropriate disposable occurs as part of destroying the component. |
 
-When <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A> is called, either from an external event or a UI trigger, the component conditionally rerenders. The following list details the order of method invocations including and following `StateHasChanged`:
-
-1. <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A>: The component is marked as needing to rerender.
-2. <xref:Microsoft.AspNetCore.Components.ComponentBase.ShouldRender%2A>: Returns a flag indicating whether the component should render.
-3. <xref:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree%2A>: Renders the component.
-
 ### The SetParametersAsync method
 
 When a user visits a page that contains a Blazor component, the Blazor runtime creates a new instance of the component and runs the default constructor. Once the component is constructed, the Blazor runtime calls the `SetParametersAsync` method.
@@ -67,13 +61,19 @@ The `OnParametersSet` and `OnParametersSetAsync` methods run after the `OnInitia
 
 Use either method to complete initialization tasks that depend on the component parameter values, such as calculating values for computed properties. Don't do long-running operations such as these in a constructor. Constructors are synchronous, and waiting for long-running operations to complete affects the responsiveness of the page that contains the component.
 
-### The OnAfterRenderand OnAfterRenderAsync methods
+### The OnAfterRender and OnAfterRenderAsync methods
 
 The `OnAfterRender`and `OnAfterRenderAsync` methods run every time the Blazor runtime needs to update the view represented by the component in the user interface. This state occurs automatically when:
 
 - The state of the component changes, for example when the `OnInitialized` or `OnInitializedAsync` methods or the `OnParametersSet` and `OnParametersSetAsync` methods run.
 - A UI event is triggered.
 - The application code calls the `StateHasChanged` method of the component.
+
+When <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A> is called, either from an external event or a UI trigger, the component conditionally rerenders. The following list details the order of method invocations including and following `StateHasChanged`:
+
+1. <xref:Microsoft.AspNetCore.Components.ComponentBase.StateHasChanged%2A>: The component is marked as needing to rerender.
+2. <xref:Microsoft.AspNetCore.Components.ComponentBase.ShouldRender%2A>: Returns a flag indicating whether the component should render.
+3. <xref:Microsoft.AspNetCore.Components.ComponentBase.BuildRenderTree%2A>: Renders the component.
 
 The `StateHasChanged` method calls the `ShouldRender` method of the component. The purpose of this method is to determine whether the state change requires the component to rerender the view. By default, all state changes trigger a render operation, but you can override the `ShouldRender` method and define your decision-making logic. The `ShouldRender` method returns `true` if the view should be rendered again, or `false` otherwise.
 
@@ -92,4 +92,4 @@ Like any .NET class, a Blazor component can use managed and unmanaged resources.
 
 ## Handle exceptions in lifecycle methods
 
-If a lifecycle method for a Blazor component fails, it closes the SignalR connection to the browser, which in turn causes the Blazor app to stop functioning. To prevent this situation, make sure you're prepared to handle exceptions as part of the logic for the lifecycle methods. For more information, see [Handle errors in ASP.NET Core Blazor apps](/aspnet/core/blazor/fundamentals/handle-errors).
+If a lifecycle method for a Blazor component fails, it closes the SignalR connection to the browser, which in turn causes the Blazor app to stop functioning. To prevent this outcome, make sure you're prepared to handle exceptions as part of the logic for the lifecycle methods. For more information, see [Handle errors in ASP.NET Core Blazor apps](/aspnet/core/blazor/fundamentals/handle-errors).
