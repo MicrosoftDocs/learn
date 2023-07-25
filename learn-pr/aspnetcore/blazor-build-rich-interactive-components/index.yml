@@ -4,7 +4,7 @@ metadata:
   moduleType: standard
   title: Build rich interactive components with Blazor web apps
   description: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
-  ms.date: 07/24/2023
+  ms.date: 07/25/2023
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ abstract: |
   In this learning module, you learn to:
     - Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps.
     - Handle events in the lifecycle of Blazor components.
-    - Create reusable template components you can incorporate into Blazor Server apps.
+    - Create reusable template components that you can incorporate into Blazor apps.
 prerequisites: |
   - Familiarity with HTML, CSS, and JavaScript web development.
   - Novice ability to write C# code.

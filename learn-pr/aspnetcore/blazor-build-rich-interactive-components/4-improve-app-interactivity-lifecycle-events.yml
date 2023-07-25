@@ -35,6 +35,6 @@ quiz:
         - content: "Private fields are allocated."
           isCorrect: true
           explanation: "Private fields don't interact with values outside of the component and don't trigger the `SetParametersAsync` method."
-        - content: "Component parameters are assigned from another component"
+        - content: "Component parameters are assigned from another component."
           isCorrect: false
           explanation: "Assigning values from another component is a core feature of the `SetParametersAsync` method."

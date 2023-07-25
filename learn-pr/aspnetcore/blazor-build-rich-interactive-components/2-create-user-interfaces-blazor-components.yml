@@ -18,25 +18,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What's the recommended way to reference a JavaScript file that you include in Blazor?"
+    - content: "Where should you add the `script` tag to reference a JavaScript file that you include in Blazor?"
       choices:
-        - content: "Add a `script` tag on the Blazor page."
+        - content: "On the Blazor page"
           isCorrect: false
           explanation: "You shouldn't add `script` tags on Blazor pages, because they don't render and load properly."
-        - content: "Add a `script` tag to the *Pages/_Host.cshtml* file."
+        - content: "In the *Pages/_Host.cshtml* file"
           isCorrect: true
           explanation: "You should add the `script` tag to the *Pages/_Host.cshtml* file so it's available before the Blazor components need it."
-        - content: "Add a `script` tag to the *Shared/MainLayout.razor* file."
+        - content: "In the *Shared/MainLayout.razor* file"
           isCorrect: false
-          explanation: "The layout shouldn't include `script` tags, and it's better to reference the script in another location."
-    - content: "Which method should you use from C# to execute a JavaScript function that returns `void`?"
+          explanation: "The layout shouldn't include `script` tags, so it's better to reference the script in another location."
+    - content: "Which C# method should you use to execute a JavaScript function that returns `void`?"
       choices:
-        - content: "`InvokeVoidAsync`."
+        - content: "`InvokeVoidAsync`"
           isCorrect: true
           explanation: "This asynchronous method executes a JavaScript function and awaits its response."
-        - content: "`Invoke`."
+        - content: "`Invoke`"
           isCorrect: false
           explanation: "`Invoke` isn't the method to call on a JavaScript runtime object in .NET."
-        - content: "`InvokeAsync`."
+        - content: "`InvokeAsync`"
           isCorrect: false
           explanation: "This choice doesn't tell the C# method to not expect a return value from the JavaScript function."

@@ -1,11 +1,13 @@
 
-The pizza company has decided they'd like to sell a special family-sized pizza that's only available in one 24-inch size. The current app has a size slider that doesn't support a single-sized pizza. You're asked to add the new family-size pizza and disable the size option for that pizza.
+The pizza company has decided they'd like to sell a special family-sized pizza that's only available in one 24-inch size. The current pizza app has a size slider that doesn't support a single-sized pizza. You're asked to add the new family-size pizza and disable the size option for that pizza.
 
-The Blazor component lifecycle helps you write code for when a lifecycle event occurs. In this exercise, you make changes to the pizza database to add the special family-size pizza. You change the pizza model to support the new pizza, and then make changes to the configure pizza dialog to handle the special case. You can see where your code runs in the component lifecycle.
+In this exercise, you make changes to the pizza database to add the special family-size pizza. You change the pizza model to support the new pizza, and then make changes to the configure pizza dialog to handle the special case. You determine the relevant Blazor component lifecycle event, and write the code to handle it.
 
 ## Create the new family-size pizza
 
-1. In Visual Studio Code **Explorer**, expand **Models** and select *PizzaSpecial.cs*.
+First, add the new `FixedSize` capability to the pizza model, and create the new family-size pizza in the pizza database.
+
+1. In Visual Studio Code **Explorer**, expand *Models* and select *PizzaSpecial.cs*.
 1. In the *PizzaSpecial.cs* file, after the `ImageUrl` property, add the following new property:
 
    ```csharp
@@ -21,9 +23,9 @@ The Blazor component lifecycle helps you write code for when a lifecycle event o
            : (decimal)Size / DefaultSize * Special?.BasePrice ?? 1;
    ```
 
-   The code now accounts for a special that has a `FixedSize` and returns the `BasePrice`.
+   The code now accounts for a special that has a `FixedSize`, and returns the `BasePrice`.
 
-1. Expand **Data**, and select *SeedData.cs*.
+1. Expand *Data*, and select *SeedData.cs*.
 
 1. In the *SeedData.cs* file, add the following code for the new family size pizza to the end of the `specials` array declaration in the `InitializeAsync` method.
 
@@ -39,7 +41,7 @@ The Blazor component lifecycle helps you write code for when a lifecycle event o
    }
    ```
 
-1. The `SeedData` class prepopulates the pizza database with special pizzas. You need to delete the existing database for the new `PizzaSpecial` to be created. In **Explorer**, select and delete the *pizza.db*, *pizza.db-shm*, and *pizza.db-wal* files.
+1. The `SeedData` class prepopulates the pizza database with special pizzas. For the new `PizzaSpecial` to be created, you need to delete the existing database. In **Explorer**, select and delete the *pizza.db*, *pizza.db-shm*, and *pizza.db-wal* files.
 
 1. In Visual Studio Code, press <kbd>F5</kbd>or select **Run** > **Start Debugging**.
 
@@ -53,7 +55,7 @@ The Blazor component lifecycle helps you write code for when a lifecycle event o
 
 ## Remove the size slider
 
-One way to disable user input is to conditionally omit the rendering of the size user control altogether. The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the customer to select the pizza size.
+The `ConfigurePizzaDialog` component uses an HTML `range` element to allow the customer to select the pizza size. One way to disable user input is to conditionally omit the rendering of the size user control altogether.
 
 1. In Visual Studio Code **Explorer**, expand **Shared** and then select *ConfigurePizzaDialog.razor*.
 1. In the `@code` directive, after the existing properties, add the following members:
@@ -84,14 +86,15 @@ One way to disable user input is to conditionally omit the rendering of the size
    }
    ```
 
-   If your code needed to rely on JavaScript interop, using the `OnInitialized` method wouldn't have worked. Instead, you would have needed to use the `OnAfterRenderAsync` method to ensure the JavaScript interop was available.
+   >[!NOTE]
+   >If your code relied on JavaScript interop, using the `OnInitialized` method wouldn't work. Instead, you'd need to use the `OnAfterRenderAsync` method to ensure the JavaScript interop was available.
 
 1. Press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-1. Add the family-size pizza, and verify that the size slider is disabled as it's omitted from rendering.
+1. Add the family-size pizza, and verify that the size slider is disabled because it's omitted from rendering.
 
     :::image type="content" source="../media/5-not-sizeable.png" lightbox="../media/5-not-sizeable.png" alt-text="Screenshot of the new family size pizza with the size range omitted from rendering.":::
 
-1. Add a different pizza, and verify that you can still use the size slider.
+1. Order a different pizza, and verify that you can still use the size slider for that pizza.
 
 1. Press <kbd>Shift</kbd>+<kbd>F5</kbd> or select **Run** > **Stop Debugging** to stop the app.

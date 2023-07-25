@@ -16,7 +16,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "What parameter object type is should you configure on a Blazor component to share a fragment of HTML?"
+    - content: "What parameter object type should you configure on a Blazor component to share a fragment of HTML?"
       choices:
         - content: "`MarkupString`"
           isCorrect: false

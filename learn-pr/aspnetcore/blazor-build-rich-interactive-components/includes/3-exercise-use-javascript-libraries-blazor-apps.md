@@ -1,11 +1,8 @@
-After a customer adds a pizza to their order, they can select an **X** icon to remove the pizza from the order list without confirmation. To help prevent customers from accidentally removing pizzas from their orders, the company wants you to add a prompt to confirm that customers want to remove items.
+After a customer adds a pizza to their order, they can select an **X** icon to remove the pizza from the order without confirmation. To prevent customers from accidentally removing pizzas from their orders, the pizza company wants you to add a confirmation prompt for item removal.
 
-The pizza company also wants to show customers the live status of their orders, so you need to update the order detail page to query the order status in real time.
+The pizza company also wants customers to see how their order is progressing in real time. You need to update the order detail page to continuously query order status and give customers feedback that the page is updating.
 
-In this exercise, you extend the pizza delivery company's existing app by using JS interop from a Blazor component to call JavaScript on the client side. You then integrate with a third-party JavaScript library to improve the cancellation popup, and call a Blazor method from JavaScript to get the real-time status of a customer order.
-
-> [!TIP]
-> This module uses the .NET Command Line Interface (CLI) and Visual Studio Code for local development. After you complete this module, you can apply the concepts and continue development by using Visual Studio for Windows, Visual Studio for Mac, or Visual Studio Code with Windows, Linux, or Mac.
+In this exercise, you extend the pizza delivery company's existing app by using JS interop from a Blazor component to call JavaScript on the client side. You integrate with a third-party JavaScript library to improve the cancellation popup, and call a Blazor method from JavaScript to get the real-time status of a customer order.
 
 ## Clone the existing app
 
@@ -23,7 +20,7 @@ To use Blazor, make sure you have the [.NET 7.0 SDK](https://dotnet.microsoft.co
 
 1. In the top menu bar, select **File** > **Open Folder**.
 
-1. In the **Open Folder** dialog box, browse to the **BlazingPizza** folder and select **Select Folder**.
+1. In the **Open Folder** dialog box, browse to the *BlazingPizza* folder and select **Select Folder**.
 
    If Visual Studio Code prompts you about missing assets or unresolved dependencies, select **Yes** or **Restore**.
 
@@ -37,7 +34,7 @@ To use Blazor, make sure you have the [.NET 7.0 SDK](https://dotnet.microsoft.co
 
 To use JS interop, you inject the `IJSRuntime` abstraction.
 
-1. In Visual Studio Code **Explorer**, expand **Pages** and then select *Index.razor*.
+1. In Visual Studio Code **Explorer**, expand *Pages* and then select *Index.razor*.
 1. In the *Index.razor* file, after the `@inject OrderState OrderState` statement, add the `IJSRuntime` injection as follows.
 
     ```razor
@@ -54,9 +51,9 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
    </button>
    ```
 
-1. In the `@code` directive at the end of the file, add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from this prompt, the method calls `OrderState.RemoveConfiguredPizza` to remove the pizza from the order. Otherwise, the pizza remains in the order.
+1. In the `@code` directive at the end of the file, add a new method to call the native JavaScript `confirm` function. If the customer selects **OK** from the prompt, the method calls `OrderState.RemoveConfiguredPizza` to remove the pizza from the order. Otherwise, the pizza remains in the order.
 
-   ```razor
+   ```csharp
    async Task RemovePizzaConfirmation(Pizza removePizza)
    {
        if (await JavaScript.InvokeAsync<bool>(
@@ -84,9 +81,9 @@ To use JS interop, you inject the `IJSRuntime` abstraction.
 
 ## Add a third-party JavaScript library to a Blazor app
 
-The pizza company requests clearer text on the buttons in the confirm dialog, and wants to use their branding and styling in the dialog box. After some research, you decide to use a small JavaScript library called SweetAlert as a good replacement for the standard dialog.
+The pizza company wants clearer text on the buttons in the confirm dialog, and wants to use their branding and styling in the dialog box. After some research, you decide to use a small JavaScript library called SweetAlert as a good replacement for the standard dialog.
 
-1. In Visual Studio Code **Explorer**, expand **Pages** and then select *_Host.cshtml*.
+1. In Visual Studio Code **Explorer**, expand *Pages* and then select *_Host.cshtml*.
 
 1. At the end of the *_Host.cshtml* file, after the `<script src="_framework/blazor.server.js"></script>` line but before the `</body>` line, add the following `script` element to include the SweetAlert library.
 
@@ -121,11 +118,11 @@ The pizza company requests clearer text on the buttons in the confirm dialog, an
    }
    ```
    
-   The `"swal"` name is the identifier for the JavaScript function that comes from the third-party *sweetalert.js* reference. The code to call the `swal` function looks similar to `confirm`. Most of the update is in how the function receives parameters.
+   The `"swal"` name is the identifier for the JavaScript function that comes from the third-party *sweetalert.js* reference. The code to call the `swal` function looks similar to `confirm`. Most of the update is in how the function receives parameters. SweetAlert accepts a JSON object that includes all the settings it needs.
 
 1. In Visual Studio Code, press <kbd>F5</kbd> or select **Run** > **Start Debugging**.
 
-1. SweetAlert accepts a JSON object that includes all the settings it needs. Verify that the `confirm` dialog now has two buttons that say **No, leave it in my order** and **Yes, remove pizza**, and that they function as expected.
+1. Verify that the `confirm` dialog now has two buttons that say **No, leave it in my order** and **Yes, remove pizza**, and that they function as expected.
 
     :::image type="content" source="../media/3-sweetalert-remove-dialog.png" lightbox="../media/3-sweetalert-remove-dialog.png" alt-text="Screenshot showing the SweetAlert dialog box.":::
 
@@ -135,7 +132,7 @@ The pizza company requests clearer text on the buttons in the confirm dialog, an
 
 Once a customer places a pizza order, the **My Orders** page uses the `OrderDetail` component to show the current status of the order. The pizza company wants customers to see how their order is progressing in real-time. You update the component to call a .NET method from JavaScript that continuously gets the order status until the status shows delivered.
 
-1. In Visual Studio Code **Explorer**, expand **Pages** and then select *OrderDetail.razor*.
+1. In Visual Studio Code **Explorer**, expand *Pages* and then select *OrderDetail.razor*.
 1. In the *OrderDetail.razor* file, add the following declaration at the top of the component, under the last `@inject` statement.
 
    ```razor
@@ -144,7 +141,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
 
    The `@implements` declaration lets you define a `Dispose` method.
 
-1. Add a spinner to the page to give the customer feedback that the page is updating. In the `<div class="track-order-details">`, above the `@foreach` statement, add the following code:
+1. Add a spinner to the page to give the customer feedback that the page is updating. In `<div class="track-order-details">`, above the `@foreach` statement, add the following code:
 
    ```razor
    @if (IsOrderIncomplete)
@@ -157,7 +154,7 @@ Once a customer places a pizza order, the **My Orders** page uses the `OrderDeta
 
 1. In the `@code` directive, under the `OrderId` property declaration, add the following members.
 
-   ```razor
+   ```csharp
    bool IsOrderIncomplete =>
        orderWithStatus is null || orderWithStatus.IsDelivered == false;
    

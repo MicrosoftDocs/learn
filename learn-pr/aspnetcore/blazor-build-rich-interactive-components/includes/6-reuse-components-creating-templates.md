@@ -1,6 +1,6 @@
-Template components that you can reuse across multiple apps provide a foundation of tried and tested layout and logic for UI element customization. Template components apply a standardized design across a web app by defining common elements and applying them to all pages. Templates can streamline updates, such as rebranding, because you make modifications only to the central template location.
+Template components that you can reuse across multiple apps provide a foundation of tried and tested layout and logic for UI element customization. Template components apply a standardized design across a web app by defining common elements and applying them to all pages. Templates can streamline updates, such as rebranding, because you make modifications only at the central template location.
 
-In this unit, you learn about template components and how you can incorporate them into a Blazor Server application.
+In this unit, you learn about template components and how you can incorporate them into a Blazor application.
 
 ## The RenderFragment type
 

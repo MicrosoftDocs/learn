@@ -1,4 +1,4 @@
-The pizza company wants the **My Orders** page to show customers more details about their past orders, such as the pizzas in the order and what time they made the order.
+The pizza company wants the **My Orders** page to show customers more details about their past orders, such as which pizzas were in the order and what time the customer made the order.
 
 A template can help you improve the display of the **My Orders** page on the Blazing Pizza app. In this exercise, you use a Blazor template to create a pagination component and improve the order history page.
 
@@ -8,8 +8,8 @@ Create a new pagination template component file and pagination controls.
 
 ### Create the file and add the markup
 
-1. In your Blazor app project in Visual Studio Code, create a new folder named **Components**, and then create a new file named *PaginationComponent.razor* in the folder.
-1. Add the following Razor markup code to the newly created template component:
+1. In your Blazor app project in Visual Studio Code, create a new folder named *Components*, and then create a new file in the folder named *PaginationComponent.razor*.
+1. Add the following Razor markup to the newly created template component:
 
    ```razor
    @typeparam TItem
@@ -54,9 +54,9 @@ The controls use a `<ul>` element, with each item in the list being a page numbe
 
 ### Add the code directive
 
-Add the `@code` directive to handle which item is active:
+Add the `@code` directive to handle which item is active.
 
-```razor
+```csharp
 @code {
     [Parameter, EditorRequired]
     public required List<TItem> Items { get; set; }
@@ -81,18 +81,19 @@ Add the `@code` directive to handle which item is active:
 }
 ```
 
-The preceding code block defines the parameters required to use the template.
+The preceding code block defines the parameters that are required to use the template.
 
 - The `Items` parameter is a list of `TItem` items to display.
 - The `ItemContent` parameter is a render fragment that defines how to display the content of a selected item.
 - The `ItemLabel` parameter is a function that defines how to display the label for each item.
-- The `selectedIndex` field tracks which item is currently selected.
-- The `IncrementIndex`, `DecrementIndex`, and `SetIndex` methods are used to change the selected item index.
-- The `OnInitialized` method sets the initial selected item to the last item in the list.
+
+The `selectedIndex` field tracks which item is currently selected. The `IncrementIndex`, `DecrementIndex`, and `SetIndex` methods are used to change the selected item index.
+
+The `OnInitialized` method sets the initial selected item to the last item in the list.
 
 ## Update the MyOrder component
 
-1. In Visual Studio Code **Explorer**, expand **Pages** and then select *MyOrders.razor*.
+1. In **Explorer**, expand *Pages* and then select *MyOrders.razor*.
 1. After the last `@inject` directive, add the `@using` directive:
 
    ```razor
