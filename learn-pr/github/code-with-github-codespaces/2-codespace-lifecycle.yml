@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.github.code-with-github-codespaces.codespace-lifecycle
+title: The Codespace lifecycle
+metadata:
+  title: The Codespace lifecycle
+  description: This content is part of the "Code with GitHub Codespaces" module.
+  ms.date: 07/18/2023
+  author: a-a-ron
+  ms.author: aastewar
+  ms.topic: module-standard-task-based
+  ms.prod: github
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-codespace-lifecycle.md)]
