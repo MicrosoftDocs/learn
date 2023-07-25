@@ -1,4 +1,4 @@
-Suppose that a pizza delivery firm hires you to modernize their customer-facing Blazor website, which includes pizza listings, ordering pages, and other functionality. You want to use a JavaScript library to animate rendered HTML components, apply branding to similar pages, and have the app respond when page rendering is complete.
+Suppose that a pizza delivery company hires you to modernize their customer-facing Blazor website, which includes pizza listings, ordering pages, and other functionality. You want to use a JavaScript library to animate rendered HTML components, apply branding to similar pages, and have the app respond when page rendering is complete.
 
 Blazor interactive web applications use .NET to share logic between the server and the client code. This module show you how to use Blazor to interoperate with JavaScript code, use templated components, and respond to component lifecycle events.
 
@@ -13,6 +13,6 @@ Blazor interactive web applications use .NET to share logic between the server a
 - Familiarity with HTML, CSS, and JavaScript web development.
 - Novice ability to write C# code.
 - An integrated development environment (IDE). This module uses [Visual Studio Code](https://code.visualstudio.com).
-- [.NET SDK 7.0](https://dotnet.microsoft.com/download/dotnet/7.0) installed.
+- [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed.
 
 [!include[](../../../includes/dotnet7-sdk-version.md)]

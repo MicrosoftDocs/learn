@@ -1,14 +1,14 @@
-Blazor uses C# rather than JavaScript to create web pages or HTML portions with dynamic content via components. You can also use JavaScript libraries in Blazor apps, and call JavaScript functions from .NET code.
+Blazor uses C# components rather than JavaScript to create web pages or HTML sections with dynamic content. You can use Blazor JavaScript interoperability (JS interop) to call JavaScript libraries in Blazor apps, and call JavaScript functions from .NET C# code.
 
-For your pizza delivery website, you want to use a JavaScript library that exposes an alert component you want to reuse in the Blazor app. In this unit, you learn how to call JavaScript from C# code in a Blazor page. You also see how to invoke C# methods from JavaScript functions.
+You want to use an alert component from a JavaScript library in your Blazor pizza delivery website. In this unit, you learn how to call JavaScript from C# code in a Blazor page, and how to invoke C# methods from JavaScript functions.
 
 ## Use Blazor JavaScript interoperability
 
-A typical Blazor component uses layout and user interface logic to render HTML at runtime. You can use C# code to handle events and other dynamic aspects of a page that interact with the user and external services. In many cases, you don't need to use JavaScript code. Instead, you use Blazor with the .NET libraries, which provide many equivalent capabilities.
+A typical Blazor component uses layout and user interface logic to render HTML at runtime. You use C# code to handle events and other dynamic page features that interact with the user and external services. In many cases, you don't need to use JavaScript code. Instead, you can use Blazor with .NET libraries, which provide many equivalent capabilities.
 
-However, sometimes you need an existing JavaScript library. For example, some open-source JavaScript libraries render components and handle user interface elements in a specialized manner. Or, you might have existing tried and tested JavaScript code that you want to reuse instead of converting it into C#.
+However, sometimes you need to use an existing JavaScript library. For example, some open-source JavaScript libraries render components and handle user interface elements in a specialized manner. Or, you might have existing tried and tested JavaScript code that you want to reuse instead of converting it into C#.
 
-You can integrate JavaScript libraries into your applications by using Blazor JavaScript interoperability, or *JS interop*. You use JS interop to call JavaScript functions from .NET methods and to and invoke .NET methods from JavaScript functions. JS interop handles the marshaling of data and object references between Blazor and JavaScript to ease the transition between them.
+You can integrate JavaScript libraries into your applications by using Blazor JavaScript interoperability, or *JS interop*. You use JS interop to call JavaScript functions from .NET methods and to invoke .NET methods from JavaScript functions. JS interop handles the marshaling of data and object references between Blazor and JavaScript to ease the transition between them.
 
 > [!IMPORTANT]
 > Blazor maintains a representation of the Document Object Model (DOM) as a *virtual render tree*. As the page structure changes, Blazor generates a new render tree that contains the differences. When the changes are complete, Blazor iterates through these differences to update the browser display of the user interface and the browser version of the DOM that JavaScript uses.
@@ -19,7 +19,7 @@ You can integrate JavaScript libraries into your applications by using Blazor Ja
 
 You add JavaScript to a Blazor app the same way you add it to a standard HTML web app, by using the HTML `<script>` element. You add the `<script>` tag after the existing `<script src="_framework/blazor.*.js"></script>` tag in either the *Pages/_Host.cshtml* file or the *wwwroot/index.html* file, depending on your Blazor hosting model. For more information, see [ASP.NET Core Blazor hosting models](/aspnet/core/blazor/hosting-models).
 
-It's best not to place scripts in the `<head>` element of the page. Blazor has control only over the content in the `<body>` element of an HTML page, so JS interop can fail if the scripts depend on Blazor. Also, the page might display slower because of the time it takes to parse the JavaScript code.
+It's best not to place scripts in the `<head>` element of the page. Blazor has control only over the content in the `<body>` element of an HTML page, so JS interop can fail if the scripts depend on Blazor. Also, the page might display more slowly because of the time it takes to parse the JavaScript code.
 
 The `<script>` tag operates as it does in an HTML web app. You can write code directly in the body of the tag, or you can reference an existing JavaScript file. For more information, see [ASP.NET Core Blazor JavaScript interoperability (JS interop): Location of JavaScript](/aspnet/core/blazor/javascript-interoperability#location-of-javascript).
 
@@ -37,18 +37,18 @@ The `IJSRuntime` interface exposes the following methods to invoke JavaScript co
 - <xref:Microsoft.JSInterop.IJSRuntime.InvokeAsync%2A>
 - <xref:Microsoft.JSInterop.JSRuntimeExtensions.InvokeVoidAsync%2A>
 
-Use `InvokeAsync<TValue>` to call a JavaScript function that returns a value. Otherwise, call `InvokeVoidAsync`. As the names suggest, both methods are asynchronous, so use the C# `await` operator to capture any results.
+Use `InvokeAsync<TValue>` to call a JavaScript function that returns a value. Otherwise, call `InvokeVoidAsync`. As the names suggest, both methods are asynchronous, so you use the C# `await` operator to capture results.
 
 The parameters to the `InvokeAsync` and `InvokeVoidAsync` methods are the name of the JavaScript function to invoke, followed by any arguments the function requires. The JavaScript function must be part of the `window` scope or a sub-scope of `window`. Arguments must be JSON-serializable.
 
 > [!NOTE]
-> JS interop is only available when the Blazor Server app has established a SignalR connection with the browser. You can't make interop calls until rendering is complete. To detect whether rendering has finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> (or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A>) event in your Blazor code.
+> JS interop is only available when the Blazor Server app has established a SignalR connection with the browser. You can't make interop calls until rendering is complete. To detect whether rendering has finished, use the <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRender%2A> or <xref:Microsoft.AspNetCore.Components.ComponentBase.OnAfterRenderAsync%2A> event in your Blazor code.
 
 ### Use an ElementReference object to update the DOM
 
 Many third-party JavaScript libraries are available to render elements on a page. These libraries can make updates to the DOM. As described earlier, Blazor maintains its own copy of the DOM, and it's important not to make changes that can cause the Blazor view of the DOM to become corrupted.
 
-The simplest way to handle this situation is to create a placeholder element in the Blazor component. You usually use an empty `<div @ref="placeHolder"></div>` element. Blazor code interprets this code as a blank space, and the Blazor render tree doesn't attempt to track its contents. You can freely add JavaScript code elements to this `<div>`, and Blazor won't attempt to change it.
+The simplest way to handle this situation is to create a placeholder element in the Blazor component, usually an empty `<div @ref="placeHolder"></div>` element. Blazor code interprets this code as a blank space, and the Blazor render tree doesn't attempt to track its contents. You can freely add JavaScript code elements to this `<div>`, and Blazor won't attempt to change it.
 
 Blazor app code defines a field of type <xref:Microsoft.AspNetCore.Components.ElementReference> to hold the reference to the `<div>` element. The `@ref` attribute on the `<div>` element sets the value of the field. The `ElementReference` object then passes to a JavaScript function, which can then use the reference to add content to the `<div>` element.
 
