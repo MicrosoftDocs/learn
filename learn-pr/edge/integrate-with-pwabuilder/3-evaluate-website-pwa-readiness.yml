@@ -9,6 +9,6 @@ metadata:
   ms.author: xupa
   ms.topic: module-standard-task-based
   ms.prod: microsoft-edge
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/3-evaluate-website-pwa-readiness.md)]
