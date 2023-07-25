@@ -1,11 +1,11 @@
 ### YamlMime:ModuleUnit
 uid: |
-  learn.explore-foundation-models-in-model-catalog.learning-content
+  learn.explore-foundation-models-in-model-catalog.summary
 title: |
-  learning-content
+  Summary
 metadata:
   title: |
-    learning-content
+    Summary
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
   ms.date: 7/24/2023
   author: madiepev
@@ -14,4 +14,4 @@ metadata:
   ms.service: machine-learning
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-learning-content.md)]
+  [!include[](includes/8-summary.md)]

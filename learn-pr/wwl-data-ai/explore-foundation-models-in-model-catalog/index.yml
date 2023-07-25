@@ -43,20 +43,21 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
   - TODO
 units:
-- learn.explore-foundation-models-in-model-catalog
-.introduction
-- learn.explore-foundation-models-in-model-catalog
-.learning-content
-- learn.explore-foundation-models-in-model-catalog
-.exercise
-- learn.explore-foundation-models-in-model-catalog
-.learning-content
-- learn.explore-foundation-models-in-model-catalog
-.exercise
-- learn.explore-foundation-models-in-model-catalog
-.knowledge-check
-- learn.explore-foundation-models-in-model-catalog
-.summary
+- learn.explore-foundation-models-in-model-catalog.introduction
+
+- learn.explore-foundation-models-in-model-catalog.statistical-techniques
+
+- learn.explore-foundation-models-in-model-catalog.deep-learning
+
+- learn.explore-foundation-models-in-model-catalog.transformers
+
+- undefined.explore-foundation-models-in-the-model-catalog {{learnRepo}}.{{moduleName}}.{{unitName}}
+- learn.explore-foundation-models-in-model-catalog.exercise
+
+- learn.explore-foundation-models-in-model-catalog.knowledge-check
+
+- learn.explore-foundation-models-in-model-catalog.summary
+
 badge:
   uid: |
     learn.explore-foundation-models-in-model-catalog.badge

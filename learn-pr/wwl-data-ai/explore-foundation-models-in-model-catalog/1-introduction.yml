@@ -2,27 +2,16 @@
 uid: |
   learn.explore-foundation-models-in-model-catalog.introduction
 title: |
-  introduction
+  Introduction
 metadata:
   title: |
-    introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+    Introduction
+  description: "Introducing key concepts like artificial intelligence, machine learning, deep learning and natural language processing before exploring foundation models."
   ms.date: 7/24/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: madiepev
+  ms.author: madiepev
   ms.topic: interactive-tutorial
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-durationInMinutes: 1
+  ms.service: machine-learning
+durationInMinutes: 5
 content: |
   [!include[](includes/1-introduction.md)]
