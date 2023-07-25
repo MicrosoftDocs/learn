@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-authentication-capabilities-of-azure-ad.describe-multi-factor-authentication-mfa
-title: Describe Multi-factor Authentication
+title: Describe multifactor authentication
 metadata:
-  title: Describe Multi-factor Authentication
-  description: "Describe Multi-factor Authentication"
+  title: Describe multifactor authentication
+  description: "Describe multifactor authentication"
   ms.date: 02/07/2023
   author: wwlpublish
   ms.author: ceperezb
