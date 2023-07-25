@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 - azure-translator
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 units:
