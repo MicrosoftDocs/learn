@@ -30,7 +30,7 @@ roles:
 products:
 - azure
 - azure-cognitive-services
-- azure-form-recognizer
+- document-intelligence
 subjects:
 - classification-analysis
 units:
