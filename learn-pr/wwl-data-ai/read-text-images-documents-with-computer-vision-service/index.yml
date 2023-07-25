@@ -29,7 +29,7 @@ roles:
 - developer
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-form-recognizer
 subjects:
 - classification-analysis

@@ -31,7 +31,7 @@ roles:
 products:
 - azure
 - azure-form-recognizer
-- azure-cognitive-services
+- ai-services
 - azure-sdks
 subjects:
 - artificial-intelligence
