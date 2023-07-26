@@ -1,6 +1,6 @@
-To get ready for moving client proofs into Azure Blob Storage, you want to see how easy it will be to create the dashboards for ongoing monitoring.
+To get ready for moving client proofs into Azure Blob Storage, you want to see how to create the dashboards for ongoing monitoring.
 
-In this exercise, you'll create an Azure dashboard and then add storage metric charts to it.
+In this exercise, you create an Azure dashboard and then add storage metric charts to it.
 
 ## Create a custom dashboard
 
