@@ -24493,6 +24493,11 @@
       "source_path": "learn-pr/ai-business-school/foster-ai-ready-culture-finance/6-summary-and-resources.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
