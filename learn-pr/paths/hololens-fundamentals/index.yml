@@ -29,4 +29,4 @@ modules:
 - learn.choose-deployment-strategy-hololens
 - learn.choose-distribution-hololens-app
 trophy:
-  uid: learn.architect-great-solutions-in-azure.trophy
+  uid: learn.hololens-fundamentals.trophy
