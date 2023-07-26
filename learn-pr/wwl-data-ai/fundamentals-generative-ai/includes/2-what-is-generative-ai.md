@@ -28,4 +28,4 @@ Some examples of prompts include:
 |Generate and understand images | "Create an image of an elephant eating a burger" | `An image` |
 |Generate and understand code | "Show me how to code a game of tic-tac-toe with Python" | `Code` |  
 
-We get responses that appear like the model understands our prompts because of language modeling. Understanding how generative AI's language modeling works can give you a greater ability to apply its capabilities with confidence. Next we will take a look at how models have evolved and some constraints.  
+We get responses that appear like the model understands our prompts because of language modeling. Understanding how generative AI's language modeling works can give you a greater ability to apply its capabilities with confidence. Next we will take a look at how language models have evolved.  
