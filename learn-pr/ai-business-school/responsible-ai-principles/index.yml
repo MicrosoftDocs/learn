@@ -29,6 +29,5 @@ products:
 subjects:
 - artificial-intelligence
 units:
-- learn-wwl.responsible-ai-guiding-principles.summary-and-resources
 badge: 
   uid: learn-wwl.responsible-ai-guiding-principles.badge #add the uid for your achievement badge.
