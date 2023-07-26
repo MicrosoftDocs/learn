@@ -24653,6 +24653,11 @@
       "source_path": "learn-pr/ai-business-school/start-ml-lifecycle-mlops/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/start-ml-lifecycle-mlops/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
