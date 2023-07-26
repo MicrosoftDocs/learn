@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-azurepowershell
 durationInMinutes: 2
 content: |
   [!include[](includes/5-manage-azure-active-directory-objects-powershell.md)]
