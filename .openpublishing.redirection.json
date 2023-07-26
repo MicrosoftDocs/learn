@@ -24643,6 +24643,11 @@
       "source_path": "learn-pr/ai-business-school/responsible-ai-principles/9-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/start-ml-lifecycle-mlops/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
