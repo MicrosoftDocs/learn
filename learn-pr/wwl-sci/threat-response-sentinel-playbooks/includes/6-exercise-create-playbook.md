@@ -110,7 +110,7 @@ In this exercise, you'll explore the Microsoft Sentinel playbooks by performing 
     | Specify Assign/Unassign owner | From the drop-down menu, select **Unassign** |
     | Severity | You can leave the default **Incident severity** |
     | Specify Status | From the drop-down menu, select **Closed**. |
-    | Specify Classification reason | From the drop-down menu select an entry like **Undetermined**, or select **Enter custom value**, and select IncidentClassification Dynamic content. |
+    | Specify Classification reason | From the drop-down menu, select an entry like **Undetermined**, or select **Enter custom value**, and select IncidentClassification Dynamic content. |
     | Close reason text | Write descriptive text. |
 
     :::image type="content" source="../media/06-change-incident-status.png" alt-text="Screenshot of the Get Incident status." border="true":::
