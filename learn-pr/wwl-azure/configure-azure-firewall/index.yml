@@ -27,7 +27,6 @@ subjects:
 - networking
 - cloud-security
 units:
-- learn.wwl.configure-azure-firewall.introduction
 - learn.wwl.configure-azure-firewall.knowledge-check
 - learn.wwl.configure-azure-firewall.summary-resources
 badge:
