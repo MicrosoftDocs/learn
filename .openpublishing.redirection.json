@@ -24293,6 +24293,11 @@
       "source_path": "learn-pr/wwl-azure/configure-azure-firewall/6-summary-resources.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
     }
   ]
 }
