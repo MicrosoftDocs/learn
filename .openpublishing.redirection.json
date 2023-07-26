@@ -24258,6 +24258,166 @@
       "source_path": "learn-pr/paths/scale-ai-organizations/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/3-create-azure-firewalls.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/4-create-firewall-rules.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/2-determine-uses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/5-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-azure-firewall/6-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-firewall/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/4-coexist-site-to-site-expressroute.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/5-compare-intersite-connection-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/3-determine-expressroute-capabilities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/2-determine-expressroute-uses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/6-determine-uses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/5-create.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/4-create-gateway-subnet.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/8-create-local-network-gateway.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/3-create-site-to-site-connections.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/10-create-vpn-connection.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/7-determine-gateway-sku-generation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/11-determine-high-availability-scenarios.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/6-determine-type.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/2-determine-uses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/12-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/9-setup-premises.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/13-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/ai-technology-for-business-leaders/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/foster-ai-ready-culture/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
