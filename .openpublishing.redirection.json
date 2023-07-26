@@ -24333,6 +24333,11 @@
       "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/7-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/8-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
     }
   ]
 }
