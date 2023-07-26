@@ -68,6 +68,6 @@ quiz:
     - content: "It contains the files necessary to set up a local dev container infrastructure."
       isCorrect: false
       explanation: "Incorrect. Dev container environments are configured in the `.devcontainer` folder."
-    - content: "It contains the Bicep or Terraform files that define the infrastructure as-code templates."
+    - content: "It contains the Bicep or Terraform files that define the Infrastructure as Code (IaC) templates."
       isCorrect: true
       explanation: "Correct. The `infra` folder contains the Bicep or Terraform files that define the infrastructure as-code templates."
