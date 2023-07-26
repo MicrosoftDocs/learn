@@ -4,13 +4,10 @@ title: Explore Azure Storage services
 metadata:
   title: Explore Azure Storage services
   description: "Explore Azure Storage services"
-  ms.date: 02/24/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/3-explore-azure-storage-services.md)]

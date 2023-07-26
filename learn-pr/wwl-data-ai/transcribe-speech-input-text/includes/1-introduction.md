@@ -1,7 +1,7 @@
 The Speech service provides APIs that you can use to build speech-enabled applications. Specifically, the Speech service supports:
 
-- **Speech-to-Text**: An API that enables *speech recognition* in which your application can accept spoken input.
-- **Text-to-Speech**: An API that enables *speech synthesis* in which your application can provide spoken output.
+- **speech to text**: An API that enables *speech recognition* in which your application can accept spoken input.
+- **Text to speech**: An API that enables *speech synthesis* in which your application can provide spoken output.
 - **Speech Translation**: An API that you can use to translate spoken input into multiple languages.
 - **Speaker Recognition**: An API that enables your application to recognize individual speakers based on their voice.
 - **Intent Recognition**: An API that integrates with the **Language Understanding** service to determine the semantic meaning of spoken input.
@@ -13,8 +13,8 @@ This module focuses on speech recognition and speech synthesis, which are core c
 In this module, you'll learn how to: 
 
 - Provision an Azure resource for the Speech service
-- Use the Speech-to-Text API to implement speech recognition
-- Use the Text-to-Speech API to implement speech synthesis
+- Use the Speech to text API to implement speech recognition
+- Use the Text to speech API to implement speech synthesis
 - Configure audio format and voices
 - Use Speech Synthesis Markup Language (SSML)
 

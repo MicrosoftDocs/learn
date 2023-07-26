@@ -7,8 +7,8 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: nextgen
+  ms.devlang: r
 title:  Introduction to classification models by using R and tidymodels
 summary: |
   Classification is a form of machine learning in which you train a classification model to predict which category an item belongs to. In this module, you learn how to use the R programming language and tidymodels framework to train classification models. 

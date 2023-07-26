@@ -3,9 +3,9 @@ uid: learn.wwl.explore-fundamentals-of-knowledge-mining
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Explore knowledge mining'
   description: 'Microsoft Azure AI Fundamentals: Explore knowledge mining'
-  ms.date: 12/09/2021
-  author: HeidiSteen
-  ms.author: heidist
+  ms.date: 04/26/2023
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: 'Microsoft Azure AI Fundamentals: Explore knowledge mining'
@@ -15,14 +15,14 @@ prerequisites: |
   - Foundational knowledge of REST
 summary: |
   Knowledge mining is a discipline in artificial intelligence (AI) that uses a combination of intelligent services to quickly search and learn from vast amounts of information.
-iconUrl: /training/achievements/knowledge-mining-fundamentals.svg
+iconUrl: /learn/achievements/knowledge-mining-fundamentals.svg
 levels:
 - beginner
 roles:
 - ai-engineer
 - student
 products:
-- azure-search
+- azure-cognitive-search
 subjects:
 - artificial-intelligence
 modules:

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Threat response with Microsoft Sentinel playbooks
 summary: This module describes how to create Microsoft Sentinel playbooks to respond to security threats.
 abstract: |
@@ -29,7 +29,7 @@ products:
 - azure
 - azure-log-analytics
 - azure-logic-apps
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - threat-protection
 units:

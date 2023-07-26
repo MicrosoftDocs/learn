@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows-server
 title: Perform Windows Server secure administration
 summary: Understand the principle of least privilege, know when to use privileged access workstations, and be able to identify built-in privileged accounts.
 abstract: |

@@ -8,7 +8,7 @@ metadata:
   author: ronhogue
   ms.author: rohogue
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: hpc-cache
 title: Introduction to Azure HPC Cache
 summary: Describe the caching features and configurations of Azure HPC Cache that improve file access speeds. Characterize the types of HPC workloads that Azure HPC Cache can accelerate.
 abstract: |

@@ -107,7 +107,7 @@ async function main() {
 1. Run the program from the terminal again.
 
    ```bash
-   node.index.js
+   node index.js
    ```
 
 1. Select the *index.js* file.

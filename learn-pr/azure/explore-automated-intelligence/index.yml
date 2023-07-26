@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Automated Intelligence
 summary: In this module, you'll learn about several automated methods such as math (control theory), menus (optimization algorithms) and manuals (expert systems and expert rules), which are components of Machine Teaching. In addition, you’ll learn automated intelligence strengths and limitations, when to best use these technologies and when Autonomous Intelligence methods will be the best choice.
 abstract: | 

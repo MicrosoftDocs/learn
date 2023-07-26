@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Get started with data analytics
 summary: Converting raw data to useful information is essential for business users. This module covers fundamental concepts of aggregating data and grouping data.
 abstract: |

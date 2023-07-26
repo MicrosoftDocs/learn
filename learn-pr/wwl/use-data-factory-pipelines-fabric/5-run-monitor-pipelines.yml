@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-factory-pipelines-fabric.run-monitor-pipelines
+title: Run and monitor pipelines
+metadata:
+  title: Run and monitor pipelines
+  description: "Run and monitor pipelines"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/5-run-monitor-pipelines.md)]

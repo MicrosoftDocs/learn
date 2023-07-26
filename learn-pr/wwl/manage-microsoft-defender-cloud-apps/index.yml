@@ -3,11 +3,10 @@ uid: learn.wwl.manage-microsoft-defender-cloud-apps
 metadata:
   title: MD-102 4-Manage Microsoft Defender for Cloud Apps
   description: "This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture."
-  ms.date: 03/31/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage Microsoft Defender for Cloud Apps
 summary: This module covers Microsoft Defender for Cloud Apps, focusing on securing sensitive data, its relevance in dynamic work settings, and effective utilization for improved security posture.
 abstract: |

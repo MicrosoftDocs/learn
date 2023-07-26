@@ -1,3 +1,4 @@
+
 Azure Administrators must be familiar with how to configure Azure Blob Storage.
 
 In this module, you learned that Azure Blob Storage is Microsoft's object storage solution for the cloud. You discovered how Blob Storage is optimized for storing massive amounts of unstructured data like text or binary files, such as video. You looked at the features of Blob Storage and use cases for the service. You explored how to configure Blob Storage, including choosing the appropriate access tiers to reduce cost and improve performance. You reviewed how to create a lifecycle management strategy and configure object replication for failover.

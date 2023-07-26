@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.software-composition-analysis.integrate-whitesource-azure-devops-pipeline
-title: Integrate WhiteSource with Azure DevOps pipeline
+title: Integrate Mend with Azure Pipelines
 metadata:
-  title: Integrate WhiteSource with Azure DevOps pipeline
-  description: "Integrate WhiteSource with Azure DevOps pipeline"
-  ms.date: 01/10/2023
+  title: Integrate Mend with Azure Pipelines
+  description: "Integrate Mend with Azure Pipelines"
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.service: azure-devops
+durationInMinutes: 4
 content: |
   [!include[](includes/4-integrate-whitesource-azure-devops-pipeline.md)]

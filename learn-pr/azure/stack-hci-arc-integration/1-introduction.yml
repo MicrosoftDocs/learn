@@ -4,8 +4,8 @@ metadata:
   title: Introduction
   description: Over the course of this module, you'll review features of Azure Arc and the benefits it brings to customers like Contoso. By the end of this module, you'll be able to describe how these benefits contribute to management and monitoring of Azure Stack HCI at scale.
   ms.date: 12/09/2020
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.custom: e2e-hybrid

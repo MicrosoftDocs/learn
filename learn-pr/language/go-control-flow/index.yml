@@ -7,7 +7,6 @@ metadata:
   author: GitHubber17
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Use control flows in Go
 summary: Learn how to use control flows in Go.

@@ -7,8 +7,8 @@ metadata:
   author: anaharris-ms
   ms.author: anaharris
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   manager: eliotgra
+  ms.service: azure-government
 title: Discover the potential of Azure for government
 summary: Governments around the world are in the process of a digital transformation, actively investigating solutions and selecting architectures that will help them transition many of their workloads to the cloud. Begin this transformation by exploring why Azure is the right platform for your agency and the value Azure can bring. See how Azure enables you to engage citizens, empower employees, transform government services, and optimize government operations. 
 abstract: | 

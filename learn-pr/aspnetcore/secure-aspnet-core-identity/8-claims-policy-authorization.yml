@@ -1,12 +1,13 @@
 ### YamlMime:ModuleUnit
-uid: learn.secure-aspnet-core-identity.claims-policy-authorization
+uid: learn.secure-aspnet-core-identity.8-claims-policy-authorization
 title: Claims and policy-based authorization in ASP.NET Core
 metadata:
   title: Claims and policy-based authorization in ASP.NET Core
   description: Learn about claims and policy-based authorization in ASP.NET Core Identity.
-  ms.date: 3/29/2022
+  ms.date: 05/19/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 durationInMinutes: 2
@@ -20,7 +21,7 @@ quiz:
       choices:
       - content: "There can be no authentication without authorization."
         isCorrect: false
-        explanation: "Incorrect. Authorization is dependant on authentication, not the other way around."
+        explanation: "Incorrect. Authorization is dependent on authentication, not the other way around."
       - content: "There can be no authorization without authentication."
         isCorrect: true
         explanation: "Correct! Before you can be concerned with what a subject can *do*, you must first authenticate who the subject *is*."

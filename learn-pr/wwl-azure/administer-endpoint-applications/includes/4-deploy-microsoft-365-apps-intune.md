@@ -1,4 +1,5 @@
 
+
 You have the option of installing Microsoft 365 Apps from Intune using the Microsoft 365 app type. This app type makes it easy and convenient for you to assign Office apps to devices you manage that run Windows client or macOS. You don’t need to download the installation files as they're already present in Intune. You can also install apps for the Microsoft Project Online desktop client and Microsoft Visio Pro for Microsoft 365, if you own licenses for them. The apps that you want are displayed as a single entry in the list of apps on the Intune console.
 
 Be aware of the following limitations and caveats:

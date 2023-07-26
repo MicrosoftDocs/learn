@@ -7,8 +7,8 @@ metadata:
   author: manekinekko
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: azure-javascript
 title: Introduction to Node.js
 summary: "Learn about Node.js: what it is, how it works, and when to use it."
 abstract: |

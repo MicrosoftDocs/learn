@@ -7,8 +7,8 @@ metadata:
   author: GeekTrainer
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: typescript
 title: 'Develop typed functions by using TypeScript'
 summary: If you know how to write functions in JavaScript, you know how to write functions in TypeScript. But TypeScript adds some new capabilities to the standard JavaScript functions to make them easier to work with.
 abstract:  | 

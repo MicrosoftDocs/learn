@@ -8,7 +8,7 @@ metadata:
   author: b-ahibbard   
   ms.author: anfdocs           
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-netapp-files
 title:  Using Azure NetApp Files application groups with SAP HANA   
 summary: This module helps you understand Microsoft Azure NetApp Files and how to use the service with virtual machines running SAP HANA. 
 abstract: |

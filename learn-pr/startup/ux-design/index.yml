@@ -1,0 +1,37 @@
+### YamlMime:Module
+uid: learn.startup.ux-design
+metadata:
+  title: Foundations of user experience and design thinking
+  description: This Microsoft Learn module provides a foundation for User Experience (UX) and design thinking. Your product ultimately exists to serve your end user, and by starting with their experience and the design that supports it, we can start with a strong foundation.
+  ms.date: 04/19/2023
+  author: Obi-Akpuda
+  ms.author: obiakpuda
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+title: Foundations of user experience and design thinking
+summary: >
+  Understanding the principles of User Experience (UX) and Design Thinking are both crucial to developing an effective prototype and delivering a great experience for your users. When User Experience and Design Thinking are implemented into the startup journey, this serves as a method for users to validate that you are achieving product market fit.
+abstract: | 
+  At the end of this module, you'll be able to:
+  - Understand the fundamental principles of user experience. 
+  - Recognize which factors contribute to ensuring that you are generating quality UX.
+  - Define the five stages of design thinking principles.
+prerequisites: | 
+  - Must have basic knowledge of what prototyping is.
+  - Must have a basic familiarity what product market fit is.
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- startup-founder
+products:
+- consumer
+units:
+- learn.startup.ux-design.introduction-ux-and-design-thinking
+- learn.startup.ux-design.what-is-ux
+- learn.startup.ux-design.what-is-design-thinking
+- learn.startup.ux-design.knowledge-check
+- learn.startup.ux-design.summary
+badge:
+  uid: learn.startup.ux-design.badge

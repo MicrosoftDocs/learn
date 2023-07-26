@@ -5,8 +5,8 @@ metadata:
   title: Replace drives in Azure Stack HCI
   description: Overview of the process for managing drive failures.
   ms.date: 03/30/2022
-  author: mpolicht
-  ms.author: nedelgad
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 6

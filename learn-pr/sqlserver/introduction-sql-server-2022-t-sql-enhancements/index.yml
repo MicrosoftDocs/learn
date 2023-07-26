@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.introduction-sql-server-2022-t-sql-enhancements
+metadata:
+  title: Introduction to SQL Server 2022 T-SQL enhancements
+  description: "SQL Server 2022 introduces a range of new features and enhancements, providing powerful tools and capabilities that optimize performance and offer better control on SQL objects manipulation and creation."
+  ms.date: 5/5/2023               
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+title: Introduction to SQL Server 2022 T-SQL enhancements
+summary: Learn the new and improved SQL Server 2022 functions that will enhance the querying and creation of T-SQL objects.
+abstract: |
+  In this module, you'll be able to:
+  - Understand the new and enhanced T-SQL features in SQL Server 2022.
+  - Utilize new functions and capabilities to optimize database performance and maintainability.
+  - Adapt to the evolving needs of modern database administrators and developers.
+prerequisites: |
+  - SQL Server 2022.
+  - Basic working knowledge of SQL Server and query processing.
+  - Fundamental knowledge of the Transact-SQL (T-SQL) language.
+  - Familiarity with SQL Server functions and operators.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- database-administrator
+- data-engineer
+- developer
+products:
+- sql-server
+units:
+- learn.introduction-sql-server-2022-t-sql-enhancements.introduction
+- learn.introduction-sql-server-2022-t-sql-enhancements.resumable-constraints-and-wait-low-priority-index
+- learn.introduction-sql-server-2022-t-sql-enhancements.select-window
+- learn.introduction-sql-server-2022-t-sql-enhancements.is-not-distinct-from
+- learn.introduction-sql-server-2022-t-sql-enhancements.time-and-series-functions
+- learn.introduction-sql-server-2022-t-sql-enhancements.string-and-other-functions
+- learn.introduction-sql-server-2022-t-sql-enhancements.process-json-data
+- learn.introduction-sql-server-2022-t-sql-enhancements.aggregate-functions
+- learn.introduction-sql-server-2022-t-sql-enhancements.bit-manipulation
+- learn.introduction-sql-server-2022-t-sql-enhancements.summary
+badge:
+  uid: learn.introduction-sql-server-2022-t-sql-enhancements.badge

@@ -22,7 +22,7 @@ For more information, see these lists of common keyboard shortcuts for each prod
 
 ## Dictation in Windows 10
 
-Dictation is a speech-to-text software tool in Windows that lets you enter text with your voice. You can enter text using a microphone rather than a keyboard. The voice recognition technology can help users who have
+Dictation is a speech to text software tool in Windows that lets you enter text with your voice. You can enter text using a microphone rather than a keyboard. The voice recognition technology can help users who have
 difficulty entering text with a regular keyboard to write documents and compose emails. This tool is a useful option for anyone seeking to avoid unnecessary keystrokes, including people with temporary disabilities
 like a broken arm.
 
@@ -42,9 +42,9 @@ Here are a few commands you can speak as well:
 
 For more information, learn how to [use dictation to talk instead of type on your PC](https://support.microsoft.com/en-us/help/4042244/windows-10-use-dictation).
 
-A similar speech-to-text tool called Dictate is built into Microsoft 365 apps such as Word and Outlook. With a microphone and reliable internet connection, Dictate lets you compose and edit content with your voice. This tool is designed to be a quick and easy way for people who are unable to enter characters on a keyboard or who prefer to dictate content to get their thoughts out, create drafts or outlines, and capture notes.
+A similar speech to text tool called Dictate is built into Microsoft 365 apps such as Word and Outlook. With a microphone and reliable internet connection, Dictate lets you compose and edit content with your voice. This tool is designed to be a quick and easy way for people who are unable to enter characters on a keyboard or who prefer to dictate content to get their thoughts out, create drafts or outlines, and capture notes.
 
-To learn more about using speech-to-text to author content in Microsoft 365, see [Dictate in Microsoft 365](https://support.office.com/en-us/article/dictate-in-microsoft-365-eab203e1-d030-43c1-84ef-999b0b9675fe).
+To learn more about using speech to text to author content in Microsoft 365, see [Dictate in Microsoft 365](https://support.office.com/en-us/article/dictate-in-microsoft-365-eab203e1-d030-43c1-84ef-999b0b9675fe).
 
 Dictate is part of Microsoft Learning Tools - free tools that implement proven techniques to improve reading and writing for learners regardless of their age or ability. Dictate and Read Aloud provide the option to compose and edit text verbally, and Immersive Reader offers text decoding solutions, all of which can be helpful for people with learning disabilities such as dyslexia. Learning Tools are available in the Microsoft Edge browser and Microsoft 365 desktop and web-based apps.
 

@@ -4,12 +4,11 @@ title: Azure App Service plan
 metadata:
   title: Azure App Service plan
   description: "Azure App Service plan"
-  ms.date: 02/24/2023
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 10
 content: |
   [!include[](includes/9-azure-app-service-plan.md)]

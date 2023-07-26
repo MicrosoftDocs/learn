@@ -4,11 +4,13 @@ title: Introduction
 metadata:
   unitType: introduction
   title: Managing data with Python dictionaries
-  description: Python dictionaries can be used to manage complex data. This module explores common scenarios where you will use dictionaries, and how to use them.
-  ms.date: 12/08/2021
+  description: Python dictionaries can be used to manage complex data. This module explores common scenarios where you can use dictionaries, and how to use them.
+  ms.date: 06/05/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 1

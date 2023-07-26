@@ -1,4 +1,4 @@
-Many applications require a database. Here you'll install MongoDB, the "M" in the MEAN stack. It's a popular NoSQL database solution that's free and open source. A NoSQL database doesn't require data to be structured in a pre-defined way as it would with a relational database like SQL Server or MySQL.
+Many applications require a database. Here you'll install MongoDB, the "M" in the MEAN stack. It's a popular NoSQL database solution that's free and open source. A NoSQL database doesn't require data to be structured in a predefined way like it would with a relational database like SQL Server or MySQL.
 
 MongoDB stores its data in JSON-like documents that don't require rigid data structures. You interact with MongoDB using queries and commands sent using JavaScript Object Notation, or JSON.
 
@@ -26,7 +26,7 @@ Here, you'll install MongoDB with just a few commands. You'll work from the SSH 
  > [!NOTE]
  > The update can take up to 10 minutes.
 
-1. First, we'll make sure all current packages are up to date.
+1. First, we'll make sure all current packages are up to date:
 
     ```bash
     sudo apt update && sudo apt upgrade -y
@@ -35,19 +35,19 @@ Here, you'll install MongoDB with just a few commands. You'll work from the SSH 
     > [!NOTE]
     > The `sudo` part means that we want to run the command with administrative privileges.
 
-1. Install the MongoDB package.
+1. Install the MongoDB package:
 
     ```bash
     sudo apt-get install -y mongodb
     ```
 
-1. After the installation completes, the service should automatically start up. Let's confirm this by running the following command.
+1. After the installation completes, the service should automatically start up. Let's confirm this by running the following command:
 
     ```bash
     sudo systemctl status mongodb
     ```
 
-    You should see the service running.
+    You should see the service running:
 
     ```output
     azureuser@MeanStack:~$ sudo systemctl status mongodb

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: Integrate Azure services with Azure Stack HCI
 summary: This module describes the benefits, considerations, and implementation process of integrating Microsoft Azure services with Azure Stack HCI and its workloads.
 abstract: |

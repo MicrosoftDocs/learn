@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Manage settings for a local Windows machine using PowerShell cmdlets
 summary: This module covers common PowerShell cmdlets that can be used to perform tasks on a local Windows 10 computer.
 abstract: |

@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-pipelines-securely-use-variables-parameters.validate-mandatory-variables
+title: Validate mandatory variables
+metadata:
+  title: Validate mandatory variables
+  description: "Validate mandatory variables."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/6-validate-mandatory-variables.md)]

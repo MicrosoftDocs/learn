@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: synapse-analytics
+  ms.subservice: pipeline
 title: Populate slowly changing dimensions in Azure Synapse Analytics pipelines
 summary: In this module, you will learn how to implement Slowly Changing Dimension using Azure Data Factory or Azure Synapse Pipelines.
 abstract: |

@@ -1,216 +1,146 @@
-All of the Node.js Express logic that returns data is contained in the _server/services_ folder. Code from this folder will move to Azure Functions application. During the transition, only a few small code changes are required along the way.
+In this unit, you create and configure functions in the Azure Functions app for the `GET`, `POST`, `PUT`, and `DELETE` endpoints in the Node.js Express app.
 
-In this exercise, you'll migrate the logic that gets the data from the Node.js Express application to the Azure Functions application.
+## Create the GET function
 
-## Migrating from Node.js Express to Azure Functions
+This function executes when an HTTP `GET` is requested on `/vacations`. To create the new `GET` function:
 
-At first glance you might think migrating the code wouldn't work, but consider what is different about the Node.js Express application and the Azure Functions application. Here are some main differences in the services.
+1. In Visual Studio Code, open the command palette by pressing **F1**.
+1. Type and select **Azure Functions: Create Function**.
 
-|                                          | Node.js Express | Azure Functions                 |
-| ---------------------------------------- | --------------- | ------------------------------- |
-| **npm package to serve the application** | `express`       | `@azure/functions`              |
-| **Request and Response objects**         | `req` and `res` | `context.req` and `context.res` |
+   :::image type="content" source="../media/5-create-function.png" alt-text="Screenshot of Visual Studio Code creating a new function.":::
 
-Once you're armed with this information, you can copy the services code from the Node.js Express application to the Azure Functions application with minimal changes. Copy the code now.
+1. Choose **HTTP Trigger** as the type of function.
+1. Enter *vacations-get* as the name of the function.
+1. Select **Anonymous** as the authentication level.
 
-### Shift the Code from Express to Functions
+The new function is created. The _functions/vacations-get_ folder has a _function.json_ file that contains the configuration for the function.
 
-Why write everything from scratch and throw away your hard work? Especially if you don't have to. You can take the services code from our Express application and copy it to our Azure Functions application.
+### Set the HTTP method and route endpoint
 
-1. Open Visual Studio Code
-1. Copy the _server/services_ folder
-1. Paste into the _functions_ folder
 
-### Refactor the Request and Response Code
+Make the following changes in the _functions/vacations-get/function.json_ file.
 
-Now you have some minor refactoring to make the code work with Azure Functions instead of Node.js Express. Refactor the code to handle importing the appropriate npm package. Then you'll refactor to handle the differences between how the request and response are passed.
+- Notice that the `req` methods list both `get` and `post`. Remove the `post` listing to allow only `get` requests.
 
-There are four functions where request and response are parameters. One each for `getVacations`, `postVacation`, `putVacation`, and `deleteVacation`.
+- In the `bindings` section's `req` properties, add a `"route": "vacations"` entry.
 
-The parameters to every function in the Node.js Express application contain `req` and `res`. The Azure Functions application can access the request and response objects, but they're contained within a `context` object. You use destructuring to access them.
+  By default, the route endpoint has the same name as the folder that contains the function. Since the function is created in the _vacations-get_ folder, the route endpoint is generated as `vacations-get`. Adding the `"route": "vacations"` property to the function bindings makes the route match the expected `vacations` route from the Node.js Express app.
 
-1. Open the _functions/services/vacation.service.ts_ file
-1. Remove the following code
+Your _function.json_ should look like the following code.
 
-   ```typescript
-   import { Request, Response } from 'express';
-   ```
-
-1. Add the following code in its place
-
-   ```typescript
-   import { Context } from '@azure/functions';
-   ```
-
-   Now the Functions app is responsible for managing request and response messages.
-
-1. Find every instance of the following code
-
-   ```typescript
-   (req: Request, res: Response)
-   ```
-
-1. Replace every instance with the following code
-
-   ```typescript
-   ({ req, res }: Context)
-   ```
-
-Your code will look like the following when you're done refactoring. Notice the places that changed are commented.
-
-```typescript
-// This was import { Request, Response } from 'express';
-// 👇
-import { Context } from '@azure/functions';
-import * as data from './data';
-
-// This was async function getVacations(req: Request, res: Response) {
-// 👇
-async function getVacations({ req, res }: Context) {
-  // ...
+```json
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": ["get"],
+      "route": "vacations"
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    }
+  ],
+  "scriptFile": "../dist/vacations-get/index.js"
 }
-
-// This was async function postVacation(req: Request, res: Response) {
-// 👇
-async function postVacation({ req, res }: Context) {
-  // ...
-}
-
-// async function putVacation(req: Request, res: Response) {
-// 👇
-async function putVacation({ req, res }: Context) {
-  // ...
-}
-
-// This was async function deleteVacation(req: Request, res: Response) {
-// 👇
-async function deleteVacation({ req, res }: Context) {
-  // ...
-}
-
-export default { getVacations, postVacation, putVacation, deleteVacation };
 ```
 
-> The `Context` object also contains other APIs, such as `log` (ex: `context.log('hello')`). This could be used in place of the common `console.log` you use in Node.js applications.
+### Refactor the route
 
-You've refactored the code to handle your HTTP requests. Next you'll refactor the route.
+The other important file in the _functions/vacations-get_ folder is _index.ts_. This file contains the logic that runs when the route endpoint is requested.
 
-### Refactor the Route
+When the Angular application makes an HTTP `GET` request to `vacations`, the route endpoint must get the vacations data. You refactor the route logic in your function to get vacations from the `getVacations` function in your service. The Node.js Express app already includes the logic that you move into this file.
 
-When the Angular application makes an HTTP GET request to `vacations`, your route endpoint must go get the vacations data. Refactor the route logic now.
+Open the _functions/vacations-get/index.ts_ file, and replace the contents with the following code:
 
-Modify the code in your function to point get the vacations from the `getVacations` function in your service.
+```typescript
+import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+import { vacationService } from '../services';
 
-1. Open the _functions/vacations-get/index.ts_ file
-1. Replace the contents with the following code
+const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+  await vacationService.getVacations(context); // 👈 This calls the vacation service
+};
+
+export default httpTrigger;
+```
+
+The code you eliminated was the default code that the Azure Functions extension generates. The code doesn't call the vacation service, so you can safely remove it. The code that you added calls the asynchronous function `vacationService.getVacations` and passes in the `context`, which contains the request and response objects.
+
+## Create the remaining functions
+
+There are four endpoints in the Node.js Express application, and you just created the function for the `GET` endpoint. Now create functions for the remaining route endpoints.
+
+| Method | Route endpoint    |
+| ------- | ------------------ |
+| `POST`    | `vacations-post`   |
+| `PUT`     | `vacations-put`    |
+| `DELETE`  | `vacations-delete` |
+
+For each remaining endpoint, follow the same steps as for the `GET` endpoint to create the function.
+
+### Create the HTTP POST function
+
+Create the `POST` function that handles adding a vacation.
+
+1. In Visual Studio Code, create the function with **HTTP Trigger** as the type, *vacations-post* as the name, and **Anonymous** as the authentication level.
+1. In the new _vacations-post_ folder, open _function.json_ and set the method to `post`.
+1. In the `bindings` section's `req` properties, add a `"route": "vacations"` entry.
+1. Replace the contents of the _functions/vacations-post/index.ts_ file with the following code that calls the `vacationService.postVacation` function:
 
    ```typescript
    import { AzureFunction, Context, HttpRequest } from '@azure/functions';
    import { vacationService } from '../services';
-
+   
    const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
-     await vacationService.getVacations(context); // 👈 This calls the vacation service
+     await vacationService.postVacation(context);
    };
-
+   
    export default httpTrigger;
    ```
 
-The code you eliminated was the default code generated by the Azure Functions extension. It wasn't calling the vacation service, so that logic is safely removed.
+### Create the HTTP PUT function
 
-The code that you add calls the asynchronous function `vacationService.getVacations` and passes in the `context`, which contains the request and response objects.
+Create the `PUT` function to handle updating a vacation.
 
-### Create the Remaining Functions
+1. In Visual Studio Code, create the function with **HTTP Trigger** as the type, *vacations-put* as the name, and **Anonymous** as the authentication level.
+1. In the new _vacations-put_ folder, open _function.json_ and set the method to `put`.
+1. In the `bindings` section's `req` properties, add a `"route": "vacations/{id}"` entry.
+1. Replace the contents of the _functions/vacations-put/index.ts_ file with the following code that calls the `vacationService.putVacation` function:
 
-There are four endpoints in the Node.js Express application and you just created the first one. Now, follow these steps to create an Azure Function for the rest of the route endpoints. Here are the endpoints you'll create.
+   ```typescript
+   import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+   import { vacationService } from '../services';
+   
+   const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+     await vacationService.putVacation(context);
+   };
+   
+   export default httpTrigger;
+   ```
 
-| Methods | Route endpoints    |
-| ------- | ------------------ |
-| POST    | _vacations-post_   |
-| PUT     | _vacations-put_    |
-| DELETE  | _vacations-delete_ |
+### Create the HTTP DELETE function
 
-#### Create the HTTP Post Function
+Create the `DELETE` function to handle deleting a vacation.
 
-Follow the following steps to create a function that handles adding a vacation.
+1. In Visual Studio Code, create the function with **HTTP Trigger** as the type, *vacations-delete* as the name, and **Anonymous** as the authentication level.
+1. In the new _vacations-delete_ folder, open _function.json_ and set the method to `delete`.
+1. In the `bindings` section's `req` properties, add a `"route": "vacations/{id}"` entry.
+1. Replace the contents of the _functions/vacations-delete/index.ts_ file with the following code that calls the `vacationService.deleteVacation` function:
 
-1. Open the command palette by pressing **F1**
-1. Type and select **Azure Functions: Create Function**
-1. Choose **HTTP Trigger** for the type of function
-1. Enter the name **vacations-post** for the function
-1. Select **Anonymous** for the authentication level
-1. Open the file _function.json_
-1. Set the method to **post**
-1. Go to the bindings section's **req** object and add `route: "vacations"` entry
-1. Open the _functions/vacations-post/index.ts_ file
-1. Add the code to call the `vacationService.postVacations` function
+   ```typescript
+   import { AzureFunction, Context, HttpRequest } from '@azure/functions';
+   import { vacationService } from '../services';
+   
+   const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
+     await vacationService.deleteVacation(context);
+   };
+   
+   export default httpTrigger;
+   ```
 
-Your code will look like the following when you're done refactoring this function.
-
-```typescript
-import { AzureFunction, Context, HttpRequest } from '@azure/functions';
-import { vacationService } from '../services';
-
-const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
-  await vacationService.postVacation(context);
-};
-
-export default httpTrigger;
-```
-
-#### Create the HTTP Put Function
-
-Follow the following steps to create a function that handles updating a vacation.
-
-1. Open the command palette by pressing **F1**
-1. Type and select **Azure Functions: Create Function**
-1. Choose **HTTP Trigger** for the type of function
-1. Enter the name **vacations-put** for the function
-1. Select **Anonymous** for the authentication level
-1. Open the file _function.json_
-1. Set the method to **put**
-1. Go to the bindings section's **req** object and add `route: "vacations/{id}"` entry
-1. Open the _functions/vacations-put/index.ts_ file
-1. Add the code to call the `vacationService.putVacations` function
-
-Your code will look like the following when you're done refactoring this function.
-
-```typescript
-import { AzureFunction, Context, HttpRequest } from '@azure/functions';
-import { vacationService } from '../services';
-
-const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
-  await vacationService.putVacation(context);
-};
-
-export default httpTrigger;
-```
-
-#### Create the HTTP Delete Function
-
-Follow the following steps to create a function that handles deleting a vacation.
-
-1. Open the command palette by pressing **F1**
-1. Type and select **Azure Functions: Create Function**
-1. Choose **HTTP Trigger** for the type of function
-1. Enter the name **vacations-delete** for the function
-1. Select **Anonymous** for the authentication level
-1. Open the file _function.json_
-1. Set the method to **delete**
-1. Go to the bindings section's **req** object and add `route: "vacations/{id}"` entry
-1. Open the _functions/vacations-delete/index.ts_ file
-1. Add the code to call the `vacationService.deleteVacations` function
-
-Your code will look like the following when you're done refactoring this function.
-
-```typescript
-import { AzureFunction, Context, HttpRequest } from '@azure/functions';
-import { vacationService } from '../services';
-
-const httpTrigger: AzureFunction = async function (context: Context, req: HttpRequest): Promise<void> {
-  await vacationService.deleteVacation(context);
-};
-
-export default httpTrigger;
-```
-
-Next, you'll review the Azure Functions application you created.
+Go to the next unit to review the Azure Functions application you created.

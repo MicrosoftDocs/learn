@@ -64,10 +64,6 @@ Principles and patterns for the network perimeter have been available for decade
 
 [Azure App Service](https://learn.microsoft.com/azure/app-service/overview) is a PaaS offering that lets you create web and mobile apps for any platform or device and connect to data anywhere, in the cloud or on-premises. App Service includes the web and mobile capabilities that were previously delivered separately as Azure Websites and Azure Mobile Services. It also includes new capabilities for automating business processes and hosting cloud APIs. As a single integrated service, App Service brings a rich set of capabilities to web, mobile, and integration scenarios.
 
-### Azure Cloud Services
-
-[Azure Cloud Services](https://learn.microsoft.com/azure/cloud-services/cloud-services-choose-me) is an example of a PaaS. Like Azure App Service, this technology is designed to support applications that are scalable, reliable, and inexpensive to operate. In the same way that App Service is hosted on virtual machines (VMs), so too is Azure Cloud Services. However, you have more control over the VMs. You can install your own software on VMs that use Azure Cloud Services, and you can access them remotely.
-
 ### Install a web application firewall
 
 Web applications are increasingly targets of malicious attacks that exploit common known vulnerabilities. Common among these exploits are SQL injection attacks, cross site scripting attacks to name a few. Preventing such attacks in application code can be challenging and may require rigorous maintenance, patching and monitoring at many layers of the application topology. A centralized web application firewall helps make security management much simpler and gives better assurance to application administrators against threats or intrusions. A WAF solution can also react to a security threat faster by patching a known vulnerability at a central location versus securing each of individual web applications.
@@ -85,5 +81,3 @@ Monitoring is the act of collecting and analyzing data to determine the performa
 ### Perform security penetration testing
 
 Validating security defenses is as important as testing any other functionality. Make [penetration testing](https://learn.microsoft.com/azure/security/fundamentals/pen-testing) a standard part of your build and deployment process. Schedule regular security tests and vulnerability scanning on deployed applications, and monitor for open ports, endpoints, and attacks.
-
-Fuzz testing is a method for finding program failures (code errors) by supplying malformed input data to program interfaces (entry points) that parse and consume this data. [Microsoft Security Risk Detection](https://www.microsoft.com/security-risk-detection/) is a cloud-based tool that you can use to look for bugs and other security vulnerabilities in your software before you deploy it to Azure. The tool is designed to catch vulnerabilities before you deploy software so you don't have to patch a bug, deal with crashes, or respond to an attack after the software is released.

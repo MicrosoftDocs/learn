@@ -7,8 +7,8 @@ metadata:
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: e2e-hybrid
+  ms.service: azure-arc
 title: Introduction to Azure Arc
 summary: In this module, you learn how Azure Arc provides a centralized approach to managing Windows and Linux servers and Kubernetes clusters. You also learn how Azure Arc-enabled data services provides unified management, deployment, and data sovereignty compliance. And, how Azure Arc can integrate with other Azure services.
 abstract: | 

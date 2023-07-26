@@ -1,5 +1,4 @@
-
-Print and web designers understand that putting too much information in a small space will overwhelm the viewer. So, they strategically use whitespace, or negative space, to break up information to maximize the viewer's ability to consume the primary message of their work.
+Print and web designers understand that putting too much information in a small space overwhelms the viewer. So, they strategically use whitespace, or negative space, to break up information to maximize the viewer's ability to consume the primary message of their work.
 
 Developers can use a similar strategy when writing code in an editor. By using white space to convey meaning, developers can increase the clarity of their code's intent.
 
@@ -39,7 +38,7 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
     string firstWord="Hello";string lastWord="Example 2";Console.WriteLine(firstWord+" "+lastWord+"!");
     ```
 
-1. On the Visual Studio Code **File** menu, click **Save**.
+1. On the Visual Studio Code **File** menu, select **Save**.
 
 1. In the EXPLORER panel, to open a Terminal at your TestProject folder location, right-click **TestProject**, and then select **Open in Integrated Terminal**.
 
@@ -59,7 +58,7 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
     - Whitespace doesn't matter to the compiler. However ...
     - Whitespace, when used properly, can increase your ability to read and comprehend the code.
 
-    You'll likely write code once, but need to read the code multiple times. Therefore, you should focus on the readability of the code you write. Over time, you'll get a feel for when and how to use whitespace, such as the space character, tabs, and new lines.
+    You likely write your code once, but need to read the code multiple times. Therefore, you should focus on the readability of the code you write. Over time, you'll get a feel for when and how to use whitespace, such as the space character, tabs, and new lines.
 
     Early guidance:
 
@@ -87,7 +86,7 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
     }
     ```
 
-    Notice that this code doesn't include much whitespace. This code will be used to illustrate an approach for adding whitespace to your applications. Effective whitespace should make it easier to understand what your code is doing.
+    Notice that this code doesn't include much whitespace. This code is used to illustrate an approach for adding whitespace to your applications. Effective whitespace should make it easier to understand what your code is doing.
 
     > [!NOTE]
     > The code uses the `Random` class to help develop a simulated dice game, where the total value from three rolls is used to evaluate a "winning" score. The code awards extra points for rolling doubles or triples. You don't need to fully understand this code in order to see the benefit of including whitespace.
@@ -101,7 +100,7 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
 
     Generally speaking, to improve readability, you introduce a blank line between two, three, or four lines of code that do similar or related things.
 
-    Phrasing your code using vertical whitespace is subjective. It's possible two developers will not agree on what is most readable, or when to add whitespace. Use your best judgment.
+    Phrasing your code using vertical whitespace is subjective. It's possible two developers won't agree on what is most readable, or when to add whitespace. Use your best judgment.
 
 1. To add vertical whitespace that improves readability, update your code as follows:
 
@@ -128,11 +127,11 @@ The C# compiler ignores whitespace. To understand how whitespace is ignored, and
 
     Your first line of whitespace is used to separate the declaration of the `dice` variable from the code lines used to assign values to your roll variables. This separation makes it easier to see how `dice` is being used in your code.
 
-    Your next line of whitespace separates the declaration of your roll variables from the declaration of `total`. Grouping the declaration of your three roll variables is helpful in two ways. First, it creates a group of code lines that includes related variables. Second, since the variable names are so similar and the declaration follows the same pattern, grouping them together draws your eye to the similarities and helps to expose the differences.
+    Your next line of whitespace separates the declaration of your roll variables from the declaration of `total`. Grouping the declaration of your three roll variables is helpful in two ways. First, it creates a group of code lines that includes related variables. Second, the variable names are so similar and the declaration follows the same pattern. So, grouping them together draws your eye to the similarities and helps to expose the differences.
 
     Finally, your third line of whitespace separates another group of related statements from your nested `if` statements. The group of statements that includes the declaration of `total` and the `Console.WriteLine()` method is related by purpose rather than appearance. Your code is focused on the total value achieved by the three dice and whether the roll included doubles or triples. These lines are related because you need to calculate `total` and report the results of the roll to the user.
 
-    Some developers might argue that you should add an empty line in between the declaration of `final` and the `Console.WriteLine()`. Again, the choice of whitespace is up to your best judgment. You should decide which is more readable for you and use that style consistently.
+    Some developers might argue that you should add an empty line in between the declaration of `total` and the `Console.WriteLine()`. Again, the choice of whitespace is up to your best judgment. You should decide which is more readable for you and use that style consistently.
 
     All that you have left is the `if` statement. You can examine that now.
 

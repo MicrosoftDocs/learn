@@ -4,11 +4,11 @@ title: Explore Service Bus message payloads and serialization
 metadata:
   title: Explore Service Bus message payloads and serialization
   description: "Explore Service Bus message payloads and serialization"
-  ms.date: 04/24/2023
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/5-messages-payloads-serialization.md)]

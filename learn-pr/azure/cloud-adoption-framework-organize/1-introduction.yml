@@ -6,8 +6,8 @@ metadata:
   title: Introduction
   description: Introduction to the Microsoft Cloud Adoption Framework for Azure organizational alignment module.
   ms.date: 05/10/2022
-  author: BrianBlanchard
-  ms.author: brblanch
+  author: martinekuan
+  ms.author: martinek
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5

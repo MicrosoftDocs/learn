@@ -7,7 +7,7 @@ metadata:
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: container-instances
 title: Secure your apps by using the sidecar configuration in Azure Container Instances
 summary: Roll out Azure Container Instances into an Azure Virtual Network. You will evolve a basic container group into a more sophisticated configuration leveraging sidecar and initialization containers, as well as use private link to access other Azure PaaS resources.
 abstract: |

@@ -7,7 +7,6 @@ metadata:
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Deploy to multiple Azure environments by using JSON ARM template features"
 summary: Manage multiple Azure environment deployments of your Azure Resource Manager templates by using functions, variables, tags, and parameter files.
 abstract: |

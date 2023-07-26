@@ -3,19 +3,19 @@ uid: learn.optimize-costs-data-analysis-powerbi
 metadata:
   title: Optimize Azure costs with data analysis in Power BI
   description: Use Power BI to understand where your money is being spent in Azure so you can help your organization to optimize its costs.
-  ms.date: 04/19/2022
+  ms.date: 07/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: powerbi
 title: Optimize Azure costs with data analysis in Power BI
 summary: Use Power BI to understand where your money is being spent in Azure so you can help your organization to optimize its costs. Identify key cost drivers, trends, and anomalies in your subscriptions and resource groups over time. Understand and manage hybrid benefits usage within your organization. Understand and optimize your reserved instance coverage to maximize your savings. Create your own custom dashboards to address more complex scenarios and analysis needs specific to your organization. 
 abstract: | 
   In this module, you'll learn how to:
-  - Analyze your costs using Cost Management reporting in the Power BI app
-  - Increase your organization’s use of hybrid benefits
-  - Increase your savings by optimizing your organization's Reserved Instance coverage
-  - Enable custom reporting creation within your team through the Cost Management data connector for Power BI Desktop to better understand your spending
+  - Analyze your costs using Cost Management reporting in the Power BI app.
+  - Increase your organization's use of hybrid benefits.
+  - Increase your savings by optimizing your organization's Reserved Instance coverage.
+  - Enable custom report creation within your team through the Cost Management data connector for Power BI Desktop to better understand your spending.
 iconUrl: /training/achievements/optimize-costs-data-analysis-powerbi.svg
 levels: 
 - beginner

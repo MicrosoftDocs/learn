@@ -4,13 +4,11 @@ title: Upload blobs
 metadata:
   title: Upload blobs
   description: "Upload blobs"
-  ms.date: 03/27/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/7-upload-blobs.md)]

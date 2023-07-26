@@ -7,10 +7,9 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 3
 content: |
 quiz:
@@ -36,19 +35,19 @@ quiz:
           explanation: 'Correct! Each memory block is the same size in a memory block pool.'
         - content: 'Using a memory block pool is a good way to implement nondeterminism.'
           isCorrect: false
-          explanation: 'Incorrect. Using a memory block pool can never result in non-determinism.'
-    - content: 'Which of the following is true for a ThreadX stack?'
+          explanation: 'Incorrect. Using a memory block pool can never result in nondeterminism.'
+    - content: 'Which of the following statements is true for a ThreadX stack?'
       choices:
         - content: "There's no minimum size requirements for a stack."
           isCorrect: false
-          explanation: "Incorrect. A stack size that's too small likely will result in application failure."
+          explanation: "Incorrect. A stack size that's too small is likely to result in application failure."
         - content: 'The main thread uses the stack to make function calls and to allocate local variables.'
           isCorrect: false
           explanation: 'Incorrect. The compiler uses the stack to make function calls and to temporarily allocate local variables.'
         - content: 'The context of a thread is stored in the thread stack.'
           isCorrect: true
           explanation: 'Correct! In a ThreadX stack, the context of the thread is stored in the thread stack.'
-    - content: 'Which of the following should you avoid in a thread entry function?'
+    - content: 'Which of these code structures should you avoid in a thread entry function?'
       choices:
         - content: 'Recursive algorithms.'
           isCorrect: true
@@ -66,7 +65,7 @@ quiz:
           explanation: 'Correct! The thread probably would suspend.'
         - content: 'Memory would be taken from a previous allocation.'
           isCorrect: false
-          explanation: 'Incorrect. Memory would not be taken from a previous allocation.'
+          explanation: "Incorrect. Memory wouldn't be taken from a previous allocation."
         - content: 'The scheduler would add more memory to the byte pool.'
           isCorrect: false
           explanation: 'Incorrect. No memory would be added in this scenario.'

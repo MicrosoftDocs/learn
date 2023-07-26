@@ -4,11 +4,11 @@ title: Manage external users in Microsoft 365 workloads
 metadata:
   title: Manage external users in Microsoft 365 workloads
   description: "Manage external users in Microsoft 365 workloads"
-  ms.date: 02/03/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

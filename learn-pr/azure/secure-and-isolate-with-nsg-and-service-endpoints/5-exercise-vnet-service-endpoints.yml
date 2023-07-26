@@ -4,9 +4,11 @@ metadata:
   title: Exercise - Restrict access to Azure Storage by using service endpoints
   description: Exercise - Restrict access to Azure Storage by using service endpoints
   ms.date: 04/25/2019
-  author: KumudD
-  ms.author: kumud
+  author: asudbring
+  ms.author: allensu
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Restrict access to Azure Storage by using service endpoints
 durationInMinutes: 10

@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: rknapp
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3
@@ -27,7 +27,7 @@ quiz:
       explanation: "That's incorrect. The compliance documentation helps you understand legal and regulatory standards on Azure."
     - content: "Microsoft compliance offerings"
       isCorrect: false
-      explanation: "That's incorrect. Microsoft compliance offerings help your organization comply with national, regional, and industry-specific requirements governing the collection and use of data."
+      explanation: "That's incorrect. Microsoft compliance offerings help your organization comply with national/regional and industry-specific requirements governing the collection and use of data."
   - content: "Where can the legal team access information around how the Microsoft cloud helps them secure sensitive data and comply with applicable laws and regulations?"
     choices:
     - content: "Microsoft Privacy Statement"

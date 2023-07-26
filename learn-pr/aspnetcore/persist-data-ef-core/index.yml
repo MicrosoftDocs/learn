@@ -1,28 +1,30 @@
 ### YamlMime:Module
 uid: learn.persist-data-ef-core
 metadata:
-  title: Persist and retrieve relational data with Entity Framework Core
-  description: This module guides you through creating a data access project, connecting to a relational database, and writing CRUD queries.
+  title: Persist and retrieve relational data by using EF Core
+  description: This module guides you through the steps to create a data access project, connect to a relational database, and write create, read, update, and delete (CRUD) queries by using Entity Framework Core (EF Core).
   ms.date: 01/13/2023
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
-title: Persist and retrieve relational data with Entity Framework Core
-summary: Query and manage relational data in a .NET Core app with an Object-Relational Mapper (ORM).
-abstract: | 
+  ms.prod: entity-framework
+  ms.technology: entity-framework-core
+title: Persist and retrieve relational data by using Entity Framework Core
+summary: Query and manage relational data in an Entity Framework Core (EF Core) app by using an object-relational mapper (ORM).
+abstract: |
   In this module, you'll:
-  - Review object-relational mapper (ORM) concepts.
-  - Understand Entity Framework Core (EF Core) architecture.
-  - Write C# code to interact with a database using EF Core.
-  - Use EF Core Migrations to keep the code and database in sync.
+  - Review ORM concepts.
+  - Understand EF Core architecture.
+  - Write C# code to interact with a database by using EF Core.
+  - Use EF Core migrations to keep the code and database in sync.
   - Use reverse engineering to generate entity models from an existing database.
   - Seed a database on app startup.
 prerequisites: |
   - Experience writing C# at the beginner level
   - A basic understanding of relational databases
   - Visual Studio Code
-  - .NET SDK 6.0 or greater
+  - .NET 7.0 SDK
   - Git command-line client
 iconUrl: /training/achievements/aspnetcore/persist-data-ef-core.svg
 levels:
@@ -30,9 +32,7 @@ levels:
 roles:
 - developer
 products:
-- dotnet
 - aspnet-core
-- dotnet-core
 - ef-core
 subjects:
 - development-tools

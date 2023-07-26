@@ -7,7 +7,7 @@ metadata:
   author: BrianBlanchard
   ms.author: jumcn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: caf
 title: Ensure stable operations and optimization across all supported workloads deployed to the cloud
 summary: As workloads are deployed to the cloud, operations are critical to success. In this learn module, you learn how to deploy an operations baseline to manage workloads in your environment. The module also covers how to enhance the baseline, both for workloads and for platforms.
 abstract: |

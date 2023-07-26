@@ -3,11 +3,10 @@ uid: learn.azure.monitoring-fundamentals
 metadata:
   title: Choose the best monitoring service for visibility, insight, and outage mitigation (AZ-900)
   description: Learn about solutions that can give your IT organization insight into the health and performance of its cloud-based applications. Prepare for AZ-900.
-  ms.date: 09/14/2020
+  ms.date: 07/07/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Choose the best monitoring service for visibility, insight, and outage mitigation
 summary: Learn about solutions that can give your IT organization insight into the health and performance of its cloud-based applications.
 abstract: |

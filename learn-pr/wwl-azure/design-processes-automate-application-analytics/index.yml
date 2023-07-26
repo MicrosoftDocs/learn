@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design processes to automate application analytics
 summary: This module helps designing process to Application Insights, explores telemetry and monitoring tools and technologies.
 abstract: |

@@ -20,59 +20,59 @@ quiz:
     choices:
     - content: "Protect, Encrypt, Monitor, and Destroy"
       isCorrect: false
-      explanation: "That's incorrect. The Microsoft approach doesn't include the Protect, Encrypt, Monitor, and Destroy phases."
+      explanation: "Incorrect. The Microsoft approach doesn't include the Protect, Encrypt, Monitor, and Destroy phases."
     - content: "Discover, Protect, Sign, and Monitor"
       isCorrect: false
-      explanation: "That's incorrect. The Microsoft approach doesn't include the Discover, Protect, Sign, and Monitor phases."
+      explanation: "Incorrect. The Microsoft approach doesn't include the Discover, Protect, Sign, and Monitor phases."
     - content: "Discover, Classify, Protect, and Monitor"
       isCorrect: true
-      explanation: "That's correct. The Microsoft approach includes the Discover, Classify, Protect, and Monitor phases."
+      explanation: "Correct. The Microsoft approach includes the Discover, Classify, Protect, and Monitor phases."
 
 
   - content: "When an administrator implements data classification, what's the metadata added after the data is classified?"
     choices:
     - content: "Permission list"
       isCorrect: false
-      explanation: "That's incorrect. A permission list isn't metadata added because of classification."
+      explanation: "Incorrect. A permission list isn't metadata added because of classification."
     - content: "Label"
       isCorrect: true
-      explanation: "That's correct. The classification label is metadata added because of classification."
+      explanation: "Correct. The classification label is metadata added because of classification."
     - content: "Digital signature"
       isCorrect: false
-      explanation: "That's incorrect. A digital signature isn't metadata added because of classification."
+      explanation: "Incorrect. A digital signature isn't metadata added because of classification."
 
   - content: "An administrator has chosen to perform content-based classification on their data. What condition can they use to automate this process?"
     choices:
     - content: "Permissions on the data"
       isCorrect: false
-      explanation: "That's incorrect. You can't use data permissions to automatically recognize and classify data."
+      explanation: "Incorrect. You can't use data permissions to automatically recognize and classify data."
     - content: "Application that produced the data"
       isCorrect: false
-      explanation: "That's incorrect. You can't use the application to automatically recognize and classify data."
+      explanation: "Incorrect. You can't use the application to automatically recognize and classify data."
     - content: "Keywords"
       isCorrect: true
-      explanation: "That's correct. You can use keywords to automatically recognize and classify data."
+      explanation: "Correct. You can use keywords to automatically recognize and classify data."
 
-  - content: "To prevent data loss, an administrator wants to search for sensitive data across Office 365 services in their organization. What should they configure to do this?"
+  - content: "To prevent data loss, an administrator wants to search for sensitive data across Office 365 services in their organization. What should they configure to do this search?"
     choices:
     - content: "File and folder permissions"
       isCorrect: false
-      explanation: "That's incorrect. You don't need to configure file and folder permissions to search for sensitive data and prevent data loss."
+      explanation: "Incorrect. You don't need to configure file and folder permissions to search for sensitive data and prevent data loss."
     - content: "Keyword search"
       isCorrect: false
-      explanation: "That's incorrect. You don't need to configure a keyword search for sensitive data."
+      explanation: "Incorrect. You don't need to configure a keyword search for sensitive data."
     - content: "DLP policy"
       isCorrect: true
-      explanation: "That's correct.Configure a DLP policy in the Security & Compliance Center."
+      explanation: "Correct. Configure a DLP policy in the Security & Microsoft Purview compliance portal."
 
   - content: "An administrator wants to classify and help protect various Word documents stored on their local file server and SharePoint Online sites. To classify and help protect the files, which technology should they choose?"
     choices:
     - content: "Azure Information Protection"
       isCorrect: true
-      explanation: "That's correct. Use Azure Information Protection to classify and help protect the Word documents."
+      explanation: "Correct. Use Azure Information Protection to classify and help protect the Word documents."
     - content: "Office 365 Message Encryption"
       isCorrect: false
-      explanation: "That's incorrect. You don't need to use Office 365 Message Encryption to classify and help protect the Word documents."
+      explanation: "Incorrect. You don't need to use Office 365 Message Encryption to classify and help protect the Word documents."
     - content: "Label-based information protection in Windows 10"
       isCorrect: false
-      explanation: "That's incorrect. You don't need to use label-based information protection to classify and help protect the Word documents."
+      explanation: "Incorrect. You don't need to use label-based information protection to classify and help protect the Word documents."

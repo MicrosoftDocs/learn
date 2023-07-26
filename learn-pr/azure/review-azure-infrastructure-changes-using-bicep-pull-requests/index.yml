@@ -8,7 +8,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: bicep
 title: Review Azure infrastructure changes by using Bicep and pull requests
 summary: Avoid unintended changes and poorly written Bicep code by using pull requests. Use branching strategies to protect your main branch from accidental changes. Understand what you should look for when you review Bicep code.
 abstract: |

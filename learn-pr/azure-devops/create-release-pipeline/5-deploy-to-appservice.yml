@@ -10,7 +10,7 @@ metadata:
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 13
 content: |
   [!include[](includes/5-deploy-to-appservice.md)]
