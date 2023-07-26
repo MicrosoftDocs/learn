@@ -1,6 +1,6 @@
 To start using the Microsoft Azure Automation service, you must first create an [Automation account](https://azure.microsoft.com/documentation/articles/automation-security-overview/) from within the Azure portal.
 
-Steps to create an Azure Automation account are available on the [Create an Azure Automation account](/azure/automation/automation-quickstart-create-account) page.
+Steps to create an Azure Automation account are available on the [Create an Azure Automation account](/azure/automation/quickstarts/create-azure-automation-account-portal) page.
 
 Automation accounts are like Azure Storage accounts in that they serve as a container to store automation artifacts.
 
