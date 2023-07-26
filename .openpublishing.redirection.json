@@ -24308,6 +24308,11 @@
       "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/5-compare-intersite-connection-options.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/3-determine-expressroute-capabilities.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
     }
   ]
 }
