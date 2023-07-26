@@ -1992,3 +1992,8 @@ achievements:
   title: Define an AI strategy to create business value in retail
   summary: In retail, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
   iconUrl: /training/achievements/ai-strategy-in-retail.svg
+- uid: learn-wwl.foster-ai-culture-finance.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in finance
+  summary: This module is designed for finance and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-finance.svg
