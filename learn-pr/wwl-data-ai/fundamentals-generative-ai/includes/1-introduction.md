@@ -4,7 +4,7 @@ Generative AI creates new content based on natural language input. Consumers typ
 
 Language models used to implement generative AI are trained with huge volumes of textual data. The massive volume of training data and the way large language models are designed results in a model that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. Example scenarios include: 
 
-- Creating a bullet list comparison between two types of cooking ingredients 
+- Creating a bulleted list comparison between two types of cooking ingredients 
 - Generate a birthday card image based on your description
 - Suggesting several ways to start coding a solution to a programming problem
 

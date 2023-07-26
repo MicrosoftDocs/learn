@@ -2,15 +2,15 @@ An example of an intelligent application is a **copilot**, an AI-powered assista
 
 You may see copilots appear within the products that you already use, for example, as a chat screen feature that opens up next to your file. These copilots use the content that is created or searched for in the product as specific information for its results. 
 
-![Screenshot of Edge copilot.](../media/Edge%20Copilot.png)
+![Screenshot of Edge copilot.](../media/Edge-copilot.png)
 
 When we think about the question of how AI will impact our lives, copilots have the potential to revolutionize the way we work. Using generative AI, these copilots can help with first drafts, information synthesis, and strategic planning.   
 
 Some examples include: 
 
-- **Bing / Edge copilot**: provides AI help when browsing or searching the Internet by generating natural language answers to questions based on context rather than just search results of indexed pages. 
+- **Bing copilot**: provides AI help when browsing or searching the Internet by generating natural language answers to questions based on context rather than just search results of indexed pages. 
 
-![Screenshot of Bing copilot.](../media/bing%20copilot.png)
+![Screenshot of Bing copilot.](../media/bing-copilot.png)
 
 - **M365 copilot**: works alongside you in productivity and communication apps, assisting you in creating effective documents, spreadsheets, presentations, emails, and other ways. 
 
