@@ -24373,6 +24373,11 @@
       "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/7-determine-gateway-sku-generation.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/11-determine-high-availability-scenarios.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
     }
   ]
 }
