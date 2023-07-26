@@ -24633,6 +24633,11 @@
       "source_path": "learn-pr/ai-business-school/responsible-ai-principles/8-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/responsible-ai-principles/7-responsible-ai-case-study.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
