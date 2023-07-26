@@ -60,7 +60,7 @@ To edit link text:
 
 ## Lists  
 
-Bulleted and numbered lists provide proper structure and help people using a screen reader more easily navigate a document. People who use screen readers can navigate numbered or bulleted lists using keyboard shortcuts. If you do not correctly set your lists as numbered or bulleted, each list item will read as a simple string of text. This prevents someone using a screen reader from easily navigating the list.
+Bulleted and numbered lists provide proper structure and help people using a screen reader more easily navigate a document. People who use screen readers can navigate numbered or bulleted lists using keyboard shortcuts. If you don't correctly set your lists as numbered or bulleted, each list item will read as a simple string of text. This prevents someone using a screen reader from easily navigating the list.
 
 To create accessible lists:
 
