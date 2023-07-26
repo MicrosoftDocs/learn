@@ -18,4 +18,4 @@ By the end of this module, you can:
 
 ## Prerequisites
 
-This Learn module has no prerequisites. Come as you are and dive into mixed reality!
+This Learn module has no prerequisites. Come as you're and dive into mixed reality!
