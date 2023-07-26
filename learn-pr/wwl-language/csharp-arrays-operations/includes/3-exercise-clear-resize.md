@@ -2,6 +2,7 @@
 
 
 
+
 As you continue building a pallet tracker for the logistics company, suppose you also need track new pallets and remove old pallets from tracking. How can you accomplish creating tracking functionality for adding and removing pallets?
 
 ## Use array methods to clear and resize an array
@@ -92,7 +93,7 @@ Two approaches are needed to determine the value of a cleared element to see how
 
 1. Save your code file, and then use Visual Studio Code to run your code.
 
-You should see the following output:
+    You should see the following output:
 
     ```Output
     Before: B14
