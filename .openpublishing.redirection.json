@@ -24383,6 +24383,11 @@
       "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/6-determine-type.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-vpn-gateway/2-determine-uses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/intro-to-azure-vpn-gateway/",
+      "redirect_document_id": false
     }
   ]
 }
