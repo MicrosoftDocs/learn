@@ -1967,3 +1967,8 @@ achievements:
   title: Configure Azure Firewall
   summary: Learn how to configure Azure Firewall including firewall rules.
   iconUrl: /training/achievements/azure-firewall-configure.svg
+- uid: learn.wwl.configure-expressroute-virtual-wan.badge
+  type: badge
+  title: Configure Azure ExpressRoute and Azure Virtual WAN
+  summary: Learn how to configure Azure ExpressRoute and Virtual WAN to provide connection services.
+  iconUrl: /training/achievements/express-route-virtual-wan-configure.svg
