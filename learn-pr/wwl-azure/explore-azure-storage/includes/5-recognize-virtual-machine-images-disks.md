@@ -1,5 +1,7 @@
 
 
+
+
 Microsoft Azure offers multiple ways to deploy VM-based solutions. One of the primary considerations is the approach to installing the operating system and the associated SAP workloads. In general, there are three options to choose from:
 
 ## Azure Marketplace images

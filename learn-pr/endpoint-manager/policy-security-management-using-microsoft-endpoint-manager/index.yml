@@ -3,11 +3,11 @@ uid: learn.policy-security-management-using-microsoft-endpoint-manager
 metadata:
   title: Understand Conditional Access policies using Microsoft Intune
   description: In this module, you'll learn about policy and security management using Microsoft Intune. 
-  ms.date: 10/26/2020
+  ms.date: 05/05/2023
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Understand Conditional Access policies using Microsoft Intune
 summary: Microsoft Intune uses groups to assign policies, such as Conditional Access policies and endpoint security policies. Conditional Access makes sure that only trusted users can access organizational resources on trusted devices using trusted apps. 
 abstract: | 

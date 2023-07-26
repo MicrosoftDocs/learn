@@ -4,11 +4,11 @@ title: Exercise - Create, build, and run your application
 metadata:
   title: Exercise - Create, build, and run your application
   description: "Exercise - Create, build, and run your application"
-  ms.date: 04/13/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
 durationInMinutes: 6
 content: |
   [!include[](includes/7-exercise-create-build-run-app.md)]

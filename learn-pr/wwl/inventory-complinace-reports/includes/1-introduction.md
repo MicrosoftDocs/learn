@@ -1,5 +1,6 @@
 
-Microsoft Intune provides several different options for creating and viewing reports. Both Endpoint Configuration Manager and Intune provide out-of-the-box reports. You can also create custom reports by using services such as the Intune Data Warehouse and tools such as Power BI.
+
+Microsoft Intune provides several different options for creating and viewing reports. Both Microsoft Configuration Manager and Intune provide out-of-the-box reports. You can also create custom reports by using services such as the Intune Data Warehouse and tools such as Power BI.
 
 ### Objectives
 

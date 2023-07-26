@@ -9,6 +9,6 @@ You learned how to describe the benefits and usage of:
 
 ## Learn more
 
- -  [Azure CLI task](/azure/devops/pipelines/tasks/deploy/azure-cli).
- -  [How to install the Azure CLI](/cli/azure/install-azure-cli).
- -  [Get started with Azure CLI](/cli/azure/get-started-with-azure-cli).
+ -  [Azure CLI task - Azure Pipelines \| Microsoft Docs](/azure/devops/pipelines/tasks/deploy/azure-cli).
+ -  [How to install the Azure CLI \| Microsoft Docs](/cli/azure/install-azure-cli).
+ -  [Get started with Azure Command-Line Interface (CLI) \| Microsoft Docs](/cli/azure/get-started-with-azure-cli).

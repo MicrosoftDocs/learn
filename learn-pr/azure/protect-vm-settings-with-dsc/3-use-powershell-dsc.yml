@@ -8,6 +8,8 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |

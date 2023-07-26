@@ -7,7 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql
+  ms.subservice: t-sql
+  ms.devlang: tsql
 title: Get started with Transact-SQL programming
 summary: Transact-SQL (T-SQL) provides a robust programming language with features that let you temporarily store values in variables, apply conditional execution of commands, pass parameters to stored procedures, and control the flow of your programs.
 abstract: |

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-images-azure-openai.dall-e-rest-api
+title: Use the Azure OpenAI REST API to consume DALL-E models
+metadata:
+  title: Use the Azure OpenAI REST API to consume DALL-E models
+  description: "Use the Azure OpenAI REST API to consume DALL-E models and generate images"
+  ms.date: 6/14/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-dall-e-rest-api.md)]

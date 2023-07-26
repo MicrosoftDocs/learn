@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: spring-apps
 title: Configure Azure Event Hubs for Azure Spring Apps
 summary: Now that you've set up messaging for the Spring Petclinic application, the next thing you'll do is configure Azure Event Hubs. Event Hubs is a fully managed, real-time data ingestion service that’s trusted and scalable.
 abstract: |

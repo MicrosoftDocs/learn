@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-factory-pipelines-fabric.understand-fabric-pipeline
+title: Understand pipelines
+metadata:
+  title: Understand pipelines
+  description: "Understand pipelines"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-understand-fabric-pipeline.md)]

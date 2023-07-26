@@ -30,7 +30,7 @@ Examples include:
 
 - Sending and receiving messages signed with digital signatures to authenticate origin and ensure message integrity.
 - Securing data transmissions with SSL/TLS to encrypt traffic between source and target.
-- Using unique credentials with expiring tokens, passwords, or multi-factor authentication to help secure user, admin, and service accounts.
+- The use of unique credentials with expiring tokens, passwords, or multi-factor authentication to help secure user, admin, and service accounts.
 
 ### Common security controls to reduce or eliminate risk
 

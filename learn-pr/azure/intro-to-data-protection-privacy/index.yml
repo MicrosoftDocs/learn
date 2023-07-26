@@ -7,7 +7,6 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Intro to data protection and privacy regulations
 summary: Learn and understand the key terms and concepts of data protection, privacy regulation, and data processing. Describe, at a high level, the key Azure technologies that pertain to data protection and compliance.
 abstract: |
@@ -33,7 +32,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

@@ -4,10 +4,12 @@ title: What are operators in Python?
 metadata:
   title: What are operators in Python?
   description: Learn about operators in Python and how to use them.
-  ms.date: 12/02/2021
+  ms.date: 06/05/2023
   author: geektrainer
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 3

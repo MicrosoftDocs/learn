@@ -1,5 +1,6 @@
 
 
+
 Your goal is to develop a mini-game application. You need the game to end if the user resized the Console window the game is running in. You also want to add an option for the game to end if the user enters any nondirectional character.
 
 ## Specification

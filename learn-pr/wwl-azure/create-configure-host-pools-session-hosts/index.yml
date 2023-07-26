@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-desktop
 title: Create and configure host pools and session hosts for Azure Virtual Desktop
 summary: See how to configure the assignment type of a personal desktop host pool to adjust your Azure Virtual Desktop environment to better suit your needs.
 abstract: |

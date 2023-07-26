@@ -5,8 +5,8 @@ metadata:
   title: Optimize Linux on Azure VMs for performance and functionality
   description: Learn how to optimize Linux on Azure virtual machines for performance and functionality.
   ms.date: 04/07/2023
-  author: rmcmurray
-  ms.author: robmcm
+  author: chasecrum
+  ms.author: chasecrum
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

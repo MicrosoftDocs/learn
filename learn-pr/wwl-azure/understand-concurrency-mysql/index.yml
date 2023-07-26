@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: mysql
 title: Understand concurrency in MySQL
 summary: Learn about concurrency in MySQL, including how to limit the number of connections, and when to use thread pools.
 abstract: |

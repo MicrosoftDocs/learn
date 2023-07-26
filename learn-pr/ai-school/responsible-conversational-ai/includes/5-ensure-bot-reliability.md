@@ -6,7 +6,7 @@ For a bot to be useful, it must actually work. Humans are quick to discount expe
 
 As part of the design process, you need to build an understanding of the actions that your bot will be able to perform. Consider the questions that your bot will need to answer - and plan for the different ways that your users might ask for questions. Because AI systems are generally probabilistic, they will not always provide the correct answer, so, as discussed in the previous unit, you should allow for the probability of incorrect answers and provide the user with options should they be unsatisfied with the information the bot conveys. And if your bot is intended for deployment in a sensitive area, you should consider consulting a subject matter expert.
 
-A sensitive area can be a number of things - it can include fraught or consequential applications like national security, healthcare, finances, but it can extend to personal beliefs or cultural values. Sensitive areas can be anything relating to gender, sexuality, religion, politics, race, or other topics that relate to or evoke strong feelings.
+A sensitive area can be a number of things - it can include fraught or consequential applications like national/regional security, healthcare, finances, but it can extend to personal beliefs or cultural values. Sensitive areas can be anything relating to gender, sexuality, religion, politics, race, or other topics that relate to or evoke strong feelings.
 
 ## Establish reliability metrics
 

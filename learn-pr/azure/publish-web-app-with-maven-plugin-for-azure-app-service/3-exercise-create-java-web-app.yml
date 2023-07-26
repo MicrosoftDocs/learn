@@ -8,7 +8,9 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-extended-java
 durationInMinutes: 10
 interactive: bash
 azureSandbox: true

@@ -1,0 +1,51 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.generate-images-azure-openai.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Check your knowledge of using DALL-E in Azure OpenAI service"
+  ms.date: 6/14/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 3
+content: |
+quiz:
+  questions:
+  - content: "You want to use a model in Azure OpenAI to generate images. Which model should you use?"
+    choices:
+    - content: "DALL-E"
+      isCorrect: true
+      explanation: "The DALL-E model is used to generate images based on natural language prompts."
+    - content: "GPT-35-Turbo"
+      isCorrect: false
+      explanation: "The GPT 3.5 Turbo model is used to generate natural language text."
+    - content: "Text-Davinci"
+      isCorrect: false
+      explanation: "The Text-Davinci model is used to generate natural language text."
+  - content: "Which playground in Azure OpenAI Studio should you use to explore image generation"
+    choices:
+    - content: "Completions"
+      isCorrect: false
+      explanation: "The Completions playground is used to explore GPT 3 and earlier language generation models."
+    - content: "Chat"
+      isCorrect: false
+      explanation: "The Chat playground is used to explore GPT 3 and earlier language generation models."
+    - content: "DALL-E"
+      isCorrect: true
+      explanation: "The DALL-E playground is used to explore image generation models."
+  - content: "In a REST request to generate images, what does the **n** parameter indicate?"
+    choices:
+    - content: "The description of the desired image."
+      isCorrect: false
+      explanation: "The image description is provided in the **prompt** parameter."
+    - content: "The number of images to be generated"
+      isCorrect: true
+      explanation: "The number of images to be generated is specified in the **n** parameter."
+    - content: "The size of the image to be generated"
+      isCorrect: false
+      explanation: "The size of the desired image is specified in the **size** parameter"
+ 

@@ -3,21 +3,20 @@ uid: learn.azure.safeguard-data-sector
 metadata:
   title: Safeguard public sector data with Azure
   description: Conceptual introduction to data residency and sovereignty and overview of the options provided by Azure for public agencies to protect their data in the cloud. 
-  ms.date: 05/03/2021
-  author: Adriamen
-  ms.author: micrum
+  ms.date: 07/25/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Safeguard public sector data with Azure
 summary: Government customers worldwide expect to be fully in control of protecting their data in the cloud. Azure provides many options for safeguarding data throughout its entire lifecycle. From enforcing data residency, to encryption, to strict procedures for insider and government access, Azure keeps to strong principles and commitments that give public sector customers confidence that their data is secure. 
 abstract: | 
-  In this module, you will learn to: 
+  In this module, you'll learn to: 
   - Describe how data is protected at rest, in transit, and in use.
   - Describe how Azure reduces the risk of insider data access.
   - Describe the procedure Microsoft uses when responding to a government request for customer data.
   - Outline the incident response process Microsoft follows when managing security incidents.
 prerequisites: |
-  - Familiarity with multi-tenant cloud services.
+  - Familiarity with multi-tenant cloud services.
   - Familiarity with how Azure helps customers follow data sector requirements in the public sector.
 
 iconUrl: /training/achievements/safeguard-data-sector.svg
@@ -29,13 +28,13 @@ products:
 - azure
 - azure-active-directory
 - azure-key-vault
-- azure-security-center
+- defender-for-cloud
 - azure-monitor
 - azure-policy
 - azure-firewall
 - azure-network-watcher
 - azure-ddos-protection
-- azure-sentinel
+- microsoft-sentinel
 - azure-advisor
 - azure-blueprints
 subjects:

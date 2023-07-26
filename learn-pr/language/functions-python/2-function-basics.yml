@@ -5,12 +5,14 @@ metadata:
   unitType: learning-content
   title: Basics of Python functions
   description: Learn the basics of functions in Python.
-  ms.date: 12/07/2021
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-durationInMinutes: 1
+durationInMinutes: 3
 content: |
   [!include[](includes/2-function-basics.md)]

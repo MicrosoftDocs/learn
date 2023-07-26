@@ -4,8 +4,8 @@ metadata:
   title: Plan and implement an high availability and disaster recovery environment
   description: Data must be available when needed. Configure, test and manage a solution for high availability and disaster recovery using Azure tools and SQL Server tools.
   ms.date: 09/11/2020
-  author: wwlpublish
-  ms.author: kadelane
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan and implement a high availability and disaster recovery environment

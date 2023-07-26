@@ -7,8 +7,8 @@ metadata:
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Program the Altair 8800 emulator
 summary: Learn how to program the Altair 8800 emulator.
 abstract:  |

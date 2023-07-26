@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Combine query results with set operators
 summary: Learn how to use Transact-SQL to combine query results.
 abstract: |

@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.manage-application-configuration-data.enable-dynamic-configuration-feature-flags
-title: Enable Dynamic Configuration Feature Flags
+title: Enable Dynamic Configuration and Feature Flags
 metadata:
-  title: Enable Dynamic Configuration Feature Flags
-  description: "Enable Dynamic Configuration Feature Flags"
-  ms.date: 12/09/2022
+  title: Enable Dynamic Configuration and Feature Flags
+  description: "Enable Dynamic Configuration and Feature Flags"
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 60
 content: |
   [!include[](includes/12-enable-dynamic-configuration-feature-flags.md)]

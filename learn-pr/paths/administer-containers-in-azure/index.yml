@@ -4,8 +4,8 @@ metadata:
   title: Administer containers in Azure learning path
   description: With this learning path, you'll create and manage your Azure Container Instances, and see how they can be used to provide elastic scale for Kubernetes.
   brand: azure
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.date: 9/24/2018
   ms.topic: interactive-tutorial
   ms.prod: learning-azure

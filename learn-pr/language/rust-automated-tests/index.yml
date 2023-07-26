@@ -7,8 +7,8 @@ metadata:
   author: meaghanlewis
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.devlang: rust
 title: Write automated tests
 summary: "Learn about the types of testing you can do with Rust."
 abstract:  |

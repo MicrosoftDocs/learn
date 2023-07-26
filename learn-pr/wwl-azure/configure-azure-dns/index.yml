@@ -3,11 +3,11 @@ uid: learn.wwl.configure-azure-dns
 metadata:
   title: Configure Azure DNS
   description: "Learn how to configure Azure DNS including custom domain names and record sets."
-  ms.date: 01/10/2023
+  ms.date: 04/26/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: dns
 title: Configure Azure DNS
 summary: Learn how to configure Azure DNS including custom domain names and record sets.
 abstract: |
@@ -35,6 +35,7 @@ units:
 - learn.wwl.configure-azure-dns.add-dns-record-sets
 - learn.wwl.configure-azure-dns.plan-for-private-dns-zones
 - learn.wwl.configure-azure-dns.determine-private-zone-scenarios
+- learn.wwl.configure-azure-dns.interactive-simulation-domain-names
 - learn.wwl.configure-azure-dns.knowledge-check
 - learn.wwl.configure-azure-dns.summary-resources
 badge:

@@ -4,13 +4,11 @@ title: Design for storage security
 metadata:
   title: Design for storage security
   description: "Design for storage security"
-  ms.date: 03/13/2023
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/8-design-for-storage-security.md)]

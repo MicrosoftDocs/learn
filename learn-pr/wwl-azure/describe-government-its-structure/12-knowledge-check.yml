@@ -21,7 +21,7 @@ quiz:
     choices:
     - content: "Federal"
       isCorrect: true
-      explanation: "That is correct. The National Government, also known as the United States Government (USG) or the Federal Government, provides for national defense, conducts foreign affairs, and addresses issues that are national or global in scope. These issues cannot be addressed at only a state or local level, such as air pollution, climate, or interstate commerce."
+      explanation: "That is correct. The National Government, also known as the United States Government (USG) or the Federal Government, provides for America's defense, conducts foreign affairs, and addresses issues that are national or global in scope. These issues cannot be addressed at only a state or local level, such as air pollution, climate, or interstate commerce."
     - content: "State"
       isCorrect: false
       explanation: "That is incorrect. States are responsible for their own self-rule and only operate within their geographic boundaries. They do not operate at a national or global level, such as the Federal Government."

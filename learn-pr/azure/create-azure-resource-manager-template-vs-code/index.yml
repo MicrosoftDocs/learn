@@ -7,7 +7,7 @@ metadata:
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-resource-manager
 title: Deploy Azure infrastructure by using JSON ARM templates
 summary: Write JSON Azure Resource Manager templates (ARM templates) by using Visual Studio Code to deploy your infrastructure to Azure consistently and reliably.
 abstract: |

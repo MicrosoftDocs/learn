@@ -1,3 +1,4 @@
+
 One of the first requests many people have when working in a system that does asynchronous actions is to get notifications or alerts. Why?
 
 Because they don't want to open the application, log in and see if things changed repeatedly.

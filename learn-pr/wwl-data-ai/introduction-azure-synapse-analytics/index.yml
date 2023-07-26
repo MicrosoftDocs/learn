@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: synapse-analytics
 title: Introduction to Azure Synapse Analytics
 summary: Learn about the features and capabilities of Azure Synapse Analytics - a cloud-based platform for big data processing and analysis.
 abstract: |

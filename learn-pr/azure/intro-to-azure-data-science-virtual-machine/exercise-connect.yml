@@ -1,42 +1,43 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.exercise-connect
 metadata:
-  title: "Exercise: Connect to your Data Science Virtual Machine"
-  description: Connect to your Data Science Virtual Machine.
-  ms.date: 08/28/2020
+  title: Exercise - Connect to your Data Science Virtual Machine
+  description: Learn how to connect to your Data Science Virtual Machine.
+  ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.prod: learning-azure
 azureSandbox: true
-title: "Exercise: Connect to your Data Science Virtual Machine"
+title: Exercise - Connect to your Data Science Virtual Machine
 durationInMinutes: 8
 content: |
   [!include[](includes/exercise-connect.md)]
 quiz:
-  title: Connecting to your Data Science Virtual Machine
+  title: Check your knowledge
   questions:
-    - content: "How can you reach the command line of the Data Science Virtual Machine without opening a terminal from the Data Science Virtual Machine's graphical desktop?"
+    - content: "How can you reach the command line of the Data Science Virtual Machine without opening a terminal from the DSVM's graphical desktop?"
       choices:
         - content: "On Ubuntu, you can connect with SSH. On Windows, you can't access the command line without opening a terminal from within a Remote Desktop session."
           isCorrect: false
-          explanation: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with SSH access configured."
-        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with SSH access enabled. On Windows clients, an SSH client might need to be installed."
+          explanation: "Both Ubuntu and Windows Server 2019 DSVM images come with SSH access configured."
+        - content: "Both Ubuntu and Windows Server 2019 DSVM images come with SSH access enabled. On Windows clients, an SSH client might need to be installed."
           isCorrect: true
           explanation: "SSH is generally the fastest, least resource-intensive, and most flexible way to access the command line of your DSVM."
-        - content: "By default, remote command-line access isn't enabled in either the Ubuntu or Windows Data Science Virtual Machine."
+        - content: "By default, remote command-line access isn't enabled in either the Ubuntu or Windows DSVM."
           isCorrect: false
-          explanation: "An SSH client can connect to the command line of the Data Science Virtual Machine quickly and with low overhead. Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with SSH access configured."
+          explanation: "An SSH client can connect to the command line of the DSVM quickly and with low overhead. Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images come with SSH access configured."
     - content: "How can you use a graphical desktop with a Data Science Virtual Machine?"
       choices:
         - content: "On Ubuntu, you must use an XFCE client, such as X2Go Client. On Windows, you must use Microsoft Remote Desktop client software."
           isCorrect: true
-          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu Data Science Virtual Machine uses XFCE, whereas the Windows Data Science Virtual Machine uses RDP."
-        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with an XFCE client, such as X2Go Client."
+          explanation: "A graphical desktop experience is available on both Ubuntu and Windows. The Ubuntu DSVM uses XFCE, whereas the Windows Data Science Virtual Machine uses RDP."
+        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with an XFCE client, such as X2Go Client."
           isCorrect: false
           explanation: "On Ubuntu, you must use an XFCE client, such as X2Go Client. On Windows, you must use Microsoft Remote Desktop client software."
-        - content: "Both Ubuntu and Windows Server 2019 Data Science Virtual Machine images can be accessed with an RDP client."
+        - content: "Both Ubuntu and Windows Server 2019 DSVM images can be accessed with an RDP client."
           isCorrect: false
           explanation: "On Ubuntu, you must use an XFCE client, such as X2Go Client. On Windows, you must use Microsoft Remote Desktop client software."
 

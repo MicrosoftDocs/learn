@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.10-exercise-debug-function
 metadata:
-  title: Exercise - Debug Node.js Express and Angular
-  description: Exercise - Debug Node.js Express and Angular
+  title: Exercise - Run and debug Azure Functions and Angular
+  description: Run and debug the Angular and Azure Functions applications together in Visual Studio Code.
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
-title: Exercise - Debug Node.js Express and Angular
+title: Exercise - Run and debug Azure Functions and Angular
 durationInMinutes: 5
 content: |
   [!include[](includes/8-exercise-debug-function.md)]

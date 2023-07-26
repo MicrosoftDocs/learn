@@ -6,8 +6,8 @@ metadata:
   title: Enable GitHub Advanced Security
   description: Overview of how to enable GitHub Advanced Security on Enterprise Cloud and Enterprise Server
   ms.date: 2/14/2022
-  author: lucie-docs
-  ms.author: lucielenaour
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 5

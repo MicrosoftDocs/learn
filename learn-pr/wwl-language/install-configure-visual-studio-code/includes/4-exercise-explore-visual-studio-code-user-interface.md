@@ -1,5 +1,6 @@
 
 
+
 The Visual Studio Code IDE provides tools for developers who are just starting out, but is also extensible and advanced enough for professional developers.
 
 In this exercise, you open Visual Studio Code and complete a quick tour of the IDE.

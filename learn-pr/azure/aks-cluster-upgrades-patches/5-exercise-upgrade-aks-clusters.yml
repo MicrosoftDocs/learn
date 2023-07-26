@@ -11,6 +11,8 @@ metadata:
   sandbox: false
   ms.product: learning-azure
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 30
 content: |
   [!include[](includes/5-exercise-upgrade-aks-clusters.md)]

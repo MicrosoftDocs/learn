@@ -3,7 +3,7 @@ uid: learn.wwl.explore-git-hooks
 metadata:
   title: Explore Git hooks
   description: "Explore Git hooks"
-  ms.date: 11/01/2022
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
@@ -16,7 +16,8 @@ abstract: |
   - Identify when used Git hooks
   - Implement Git hooks for automation
   - Explain Git hooks' behavior
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/4-explore-git-hooks.svg
 levels:
 - advanced

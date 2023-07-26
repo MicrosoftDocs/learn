@@ -7,7 +7,8 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
-  ms.prod: learning-xamarin
+  ms.service: xamarin
+  ms.subservice: xamarin-crossplatform
 title: Explore cross-platform design patterns for Xamarin apps
 summary: "Create a .NET Standard library to share code between your iOS and Android projects in Xamarin.Forms. Define platform-specific operations by using contracts so you can execute them from a shared code base."
 abstract: |
@@ -19,6 +20,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/explore-cross-platform-design-patterns-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

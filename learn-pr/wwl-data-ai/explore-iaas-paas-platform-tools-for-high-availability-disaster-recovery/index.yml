@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore IaaS and PaaS solutions for high availability and disaster recovery
 summary: Deploy Windows Server Failover Cluster and availability groups in Azure and hybrid environments. Configure temporal tables, geo-replication, and auto-failover groups.
 abstract: |

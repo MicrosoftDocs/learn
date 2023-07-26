@@ -3,11 +3,11 @@ uid: learn.wwl.plan-agile-github-projects-azure-boards
 metadata:
   title: Plan Agile with GitHub Projects and Azure Boards
   description: "Plan Agile with GitHub Projects and Azure Boards"
-  ms.date: 11/16/2022
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
 title: Plan Agile with GitHub Projects and Azure Boards
 summary: This module introduces you to GitHub Projects, GitHub Project Boards and Azure Boards. It explores ways to link Azure Boards and GitHub, configure GitHub Projects and Project views, and manage work with GitHub Projects.
 abstract: |

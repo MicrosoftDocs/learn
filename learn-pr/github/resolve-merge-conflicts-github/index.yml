@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Settle competing commits by using merge conflict resolution on GitHub"
 summary: Learn to settle overlapping commits across branches by using merge conflict resolution.
 abstract: |

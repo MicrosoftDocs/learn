@@ -6,7 +6,7 @@ metadata:
   description: "Use the Microsoft 365 Defender portal"
   ms.date: 02/27/2023
   author: wwlpublish
-  ms.author: bneeb
+  ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.prod: learning-m365
 azureSandbox: false

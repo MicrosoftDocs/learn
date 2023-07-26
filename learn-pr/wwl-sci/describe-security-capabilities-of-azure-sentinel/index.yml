@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: microsoft-sentinel
 title: Describe security capabilities of Microsoft Sentinel
 summary: Learn about Microsoft Sentinel a scalable, cloud-native, security information event management (SIEM) and security orchestration automated response (SOAR) solution.
 abstract: |
@@ -26,7 +26,7 @@ roles:
 - business-user
 - student
 products:
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - security
 units:

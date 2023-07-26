@@ -1,32 +1,27 @@
-Congratulations! You completed your Azure Functions application by shifting your Node.js Express code and making minimal changes. Next, review the structure of your application.
+Congratulations! You created your Azure Functions application by shifting your Node.js Express code and making minimal changes. You took the following steps to refactor your code from Node.js Express to Functions:
 
-## What you learned about Shifting from Express to Azure Functions
+1. Created the Functions application.
+1. Copied the Node.js Express services from the _server/services_ folder to the _functions_ folder.
+1. Imported the Functions host `Context` from `@azure/functions`.
+1. Used destructuring to access the request and response objects.
+1. Created a function for every route endpoint.
+1. Named and set the method for each endpoint in the function's _function.json_ file.
+1. Added code to each function's _index.tx_ file to call the appropriate service.
 
-Now, reflect on what steps you followed to refactor your code from Node.js Express to Azure Functions. I this module, you:
+## Functions folders
 
-1. Created the Azure Functions application
-1. Created a function for every route endpoint
-1. Set the method for each endpoint in the function's _function.json_ file
-1. Named each endpoint in the function's _function.json_ file
-1. Copied the Node.js Express services from the _server/services_ folder to the _functions_ folder
-1. Imported the Functions host `Context` from `@azure/functions`
-1. Used destructuring to access the request and response objects
-1. Added code to each function to call the appropriate service
+The Functions application has folders that map to each of their endpoints, as shown in the following table:
 
-## Azure Functions and Folders
-
-The Azure Functions application has folders that map to each of their appropriate endpoints, as shown below.
-
-| Methods | Route endpoints | Folders          |
+| Method | Route endpoint | Folder          |
 | ------- | --------------- | ---------------- |
-| GET     | `vacations`     | vacations-get    |
-| POST    | `vacations`     | vacations-post   |
-| PUT     | `vacations:id`  | vacations-put    |
-| DELETE  | `vacations/:id` | vacations-delete |
+| `GET`     | `vacations`     | *vacations-get*    |
+| `POST`    | `vacations`     | *vacations-post*   |
+| `PUT`     | `vacations:id`  | *vacations-put*    |
+| `DELETE`  | `vacations/:id` | *vacations-delete* |
 
-## File Structure
+## File structure
 
-The structure of the Azure Functions application contained in the _functions_ folder should look like the following file structure.
+The Functions application in the _functions_ folder should have the following file structure:
 
 ```files
 functions
@@ -55,4 +50,4 @@ functions
  | - tsconfig.json
 ```
 
-Next, you'll run and debug your Angular application and Azure Functions application together.
+In the next unit, you run and debug your Angular application and Functions application together.

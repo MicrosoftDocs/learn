@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-git
   ms.custom: team=nextgen
 title: Introduction to Git
 summary: Find out what source control is, and get an introduction to Git—the world's most popular version control system.

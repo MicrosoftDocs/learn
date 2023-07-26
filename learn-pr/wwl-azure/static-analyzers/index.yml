@@ -3,11 +3,11 @@ uid: learn.wwl.static-analyzers
 metadata:
   title: Static analyzers
   description: "Static analyzers"
-  ms.date: 01/10/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops
 title: Static analyzers
 summary: This module introduces the static analyzers SonarCloud and CodeQL in GitHub.
 abstract: |

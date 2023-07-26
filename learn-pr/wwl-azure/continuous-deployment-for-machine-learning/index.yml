@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Continuous deployment for machine learning
 summary: Learn how to work with environments for continuous deployment of machine learning models.
 abstract: |

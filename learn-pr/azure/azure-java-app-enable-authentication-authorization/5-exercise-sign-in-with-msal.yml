@@ -6,9 +6,11 @@ metadata:
   title: Exercise - Sign in users with MSAL
   description: In this exercise, you will use MSAL in a Java web application to sign in users.
   ms.date: 06/11/2021
-  author: navyasric
-  ms.author: nacanuma
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

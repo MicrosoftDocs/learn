@@ -7,6 +7,9 @@ metadata:
   author: wwlpublish
   ms.author: markohot
   ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
   ms.prod: learning-sqlserver
 title: Assess and convert SQL Server databases using the Data Migration Assistant (DMA)
 summary: The Data Migration Assistant (DMA) is a standalone application that can find compatibility issues between versions of databases. It also shows you new features that would enhance the performance of your database when upgraded.

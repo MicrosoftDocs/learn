@@ -5,8 +5,8 @@ metadata:
   description: Use Azure to create website front-ends, back-end services, and triggered functions that compute-on-demand and can also communicate with each other.
   brand: azure
   ms.date: 04/04/2023
-  author: adrianstevens
-  ms.author: adsteven
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Connect your services together

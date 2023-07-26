@@ -7,6 +7,7 @@ metadata:
   title: Intro to confidential computing with Azure Virtual Machines
   description: Learn to use Microsoft Azure confidential computing for virtual machines.
   ms.topic: interactive-tutorial
+  ms.service: virtual-machines
 title: Intro to confidential computing with Azure Virtual Machines
 summary: This module helps you understand Microsoft Azure confidential computing concepts for virtual machines, including confidential virtual machines and application enclaves, and which approach to use.
 abstract: |

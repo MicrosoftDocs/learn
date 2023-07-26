@@ -17,16 +17,16 @@ quiz:
     choices:
     - content: Gender, Ethnicity, Sexual orientation, Social orientation.
       isCorrect: false
-      explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual, empowering others."
-    - content: Empowering others, diving deeper to understand and examine, listening more, caring about every individual, empowering others.
+      explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual."
+    - content: Empowering others, diving deeper to understand and examine, listening more, caring about every individual.
       isCorrect: true
-      explanation: That is the correct answer
+      explanation: Correct
     - content: Racial, religious, ethnic, social class, physical abilities
       isCorrect: false
-      explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual, empowering others."
+      explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual."
     - content: Age, nationality, occupation, socioeconomic status, education
       isCorrect: false
-      explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual, empowering others."
+      explanation: No. The correct answer is "Empowering others, diving deeper to understand and examine, listening more, caring about every individual."
   - content: Which of the following describe reasons for creating an inclusive marketing plan? Select one answer.
     choices:
     - content: Increase in profits, broader brand and company recognition.
@@ -37,11 +37,11 @@ quiz:
       explanation: No. The correct answer is "Increases consideration, drives purchase intent, and improves brand perception."
     - content: Increases consideration, drives purchase intent, and improves brand perception.
       isCorrect: true
-      explanation: That is the correct answer
+      explanation: Correct
     - content: Organize progress toward long-term goals, save time and money, and promote consistency.
       isCorrect: false
       explanation: No. The correct answer is "Increases consideration, drives purchase intent, and improves brand perception."
-  - content: Which of the five principles to ignite an inclusive marketing design consists of “Asking the question, what part of your brand can serve a higher purpose that becomes the guiding what for how you design your experiences, brand and marketing”? Select one answer.
+  - content: Which of the five principles to ignite an inclusive marketing design consists of “Asking the question, what part of your brand can serve a higher purpose that becomes the guiding WHAT for how you design your experiences, brand and marketing”? Select one answer.
     choices:  
     - content: Natural synergy
       isCorrect: false
@@ -57,7 +57,7 @@ quiz:
       explanation: No. The correct answer is "Benevolent brand attribute"
     - content: Benevolent brand attribute
       isCorrect: true
-      explanation: That is the correct answer
+      explanation: Correct
   - content: Which of the following concepts are NOT part an operating model of Inclusive Marketing? Select one answer.
     choices:  
     - content: What you market
@@ -71,4 +71,4 @@ quiz:
       explanation: No. The correct answer is "When you market"
     - content: When you market
       isCorrect: true
-      explanation: That is the correct answer
+      explanation: Correct

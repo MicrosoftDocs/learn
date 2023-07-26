@@ -5,24 +5,27 @@ metadata:
   unitType: knowledge_check
   title: Knowledge check
   description: "Check your knowledge on handling and catching exceptions."
-  ms.date: 12/10/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
 quiz:
+  title: Check your knowledge
   questions:
   - content: "What are three elements that you might find in a traceback?"
     choices:
     - content: "A file path, line number, and Python version"
       isCorrect: false
-      explanation: "A Python version is never present in a traceback, although a file path and line number are."
+      explanation: "Incorrect. A Python version is never present in a traceback, although a file path and line number are."
     - content: "A Python version, file path, and function name"
       isCorrect: false
-      explanation: "A Python version is never present in a traceback, although file path and function name are."
+      explanation: "Incorrect. A Python version is never present in a traceback, although file path and function name are."
     - content: "A file path, line number, and exception"
       isCorrect: true
       explanation: "Correct! Although you can find more elements aside from the path, line number, and exception, these three should be expected."
@@ -33,40 +36,40 @@ quiz:
       explanation: "Correct! These are the keywords that you would use to handle exceptions."
     - content: "`try` and `catch`"
       isCorrect: false
-      explanation: "Even though `try` is how you start an exception-handling block, `catch` isn't a valid keyword."
+      explanation: "Incorrect. Even though `try` is how you start an exception-handling block, `catch` isn't a valid keyword."
     - content: "`try` and `unless`"
       isCorrect: false
-      explanation: "Even though `try` is how you start an exception-handling block, `unless` isn't a valid keyword."
+      explanation: "Incorrect. Even though `try` is how you start an exception-handling block, `unless` isn't a valid keyword."
   - content: "Why would using `except Exception` be unhelpful?"
     choices:
     - content: "Because it can show a traceback with limited information"
       isCorrect: false
-      explanation: "Using `except Exception` doesn't limit information in a traceback."
+      explanation: "Incorrect Using `except Exception` doesn't limit information in a traceback."
     - content: "Because it can hide what the real problem is"
       isCorrect: true
       explanation: "Correct! This technique usually hides what the underlying problem that caused the error is."
     - content: "Because you can't raise another exception"
       isCorrect: false
-      explanation: "It's possible to raise another exception in this scenario."
+      explanation: "Incorrect. It's possible to raise another exception in this scenario."
   - content: "When can it be useful to use `as err` in an `except` block?"
     choices:
     - content: "When you want to raise another exception"
       isCorrect: false
-      explanation: "It's possible to raise another exception without using `as err`."
+      explanation: "Incorrect. It's possible to raise another exception without using `as err`."
     - content: "When you want to reuse or inspect an exception"
       isCorrect: true
       explanation: "Correct! When a raised exception will be reused or inspected, the `as err` statement can help."
     - content: "When you want to avoid having a traceback in the output"
       isCorrect: false
-      explanation: "Using `as error` is not a requirement to prevent having a traceback in the output."
+      explanation: "Incorrect. Using `as error` is not a requirement to prevent having a traceback in the output."
   - content: "What is the right syntax to catch two exceptions in the same `except` line?"
     choices:
     - content: "`raise (ValueError, TypeError)`"
       isCorrect: false
-      explanation: "This syntax wouldn't catch exceptions."
+      explanation: "Incorrect. This syntax wouldn't catch exceptions."
     - content: "`except ValueError, TypeError:`"
       isCorrect: false
-      explanation: "This statement is not valid syntax in Python and would cause a syntax error."
+      explanation: "Incorrect. This statement is not valid syntax in Python and would cause a syntax error."
     - content: "`except (ValueError, TypeError):`"
       isCorrect: true
       explanation: "Correct! Using parentheses and separating exceptions with a comma are the right way to catch two exceptions in the same line."

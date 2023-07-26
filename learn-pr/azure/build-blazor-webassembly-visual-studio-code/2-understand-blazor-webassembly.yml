@@ -7,8 +7,9 @@ metadata:
   ms.date: 05/13/2021
   author: csharpfritz
   ms.author: jefritz
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-blazor-webassembly.md)]

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows-server
+  ms.prod: windows-server
 title: Secure Windows Server DNS
 summary: Learn how to secure Windows Server DNS to help protect your network name resolution infrastructure and also learn how to implement DNS policies.
 abstract: |
