@@ -2,6 +2,7 @@ Azure OpenAI Service is Microsoft's cloud solution for deploying, customizing, a
 
 Models supported include: 
 
+- Codex
 - GPT 3 model families (Ada – Davinci) 
 - GPT 3.5 Turbo (the original Chat GPT model) 
 - GPT 4 - the evolution of GPT as a model that is optimized for chat-based interactions. 
