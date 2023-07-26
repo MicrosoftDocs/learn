@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.fundamentals-generative-ai.model-evolution
-title: Understand the language model evolution
+title: How is language modeled?
 metadata:
-  title: Understand the language model evolution
+  title: How is language modeled?
   description: "Learn what the GPT language model is in the context of other large language models and the evolution of generative AI capabilities."
   ms.date: 6/27/2023
   author: sherzyang
