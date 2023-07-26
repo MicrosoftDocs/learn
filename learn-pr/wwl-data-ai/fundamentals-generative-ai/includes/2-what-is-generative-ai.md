@@ -1,6 +1,8 @@
-**Artificial Intelligence** imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output. Since the mid-20th century, researchers have worked on different approaches to AI, broadly through **Machine learning**, a branch of AI that combines computer science and mathematics. 
+**Artificial Intelligence** imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output. Since the mid-20th century, researchers, often known as *data scientists*, have worked on different approaches to AI, broadly through **Machine learning**, a branch of AI that combines computer science and mathematics. 
 
-Machine learning algorithms take in data like weather conditions and fit models to the data, to make predictions like how how many items a store may sell that day. The weather conditions in this case are *features*, factors that influence the result. The result in this example is number of items sold in the day and is known as the *label*. 
+Machine learning algorithms take in data like temperature and fits a model to the data, to make predictions like how how many units of ice cream a store may sell that day. The weather conditions in this case are *features*, factors that influence the result. The result in this example is number of units sold in the day and is known as the *label*. The relationship between the temperature and units of ice cream can be visualized in a graph.  
+
+![Screenshot of the relationship between temperature and ice cream units sold in a graph.](../media/temp-ice-cream-regression-example.png) 
 
 The important thing to remember is that we are trying to train the optimal model, one that solves a problem well. How well a model solves a problem can be quantified in what is known as evaluation metrics. 
 
