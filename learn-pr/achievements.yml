@@ -1972,3 +1972,8 @@ achievements:
   title: Configure Azure ExpressRoute and Azure Virtual WAN
   summary: Learn how to configure Azure ExpressRoute and Virtual WAN to provide connection services.
   iconUrl: /training/achievements/express-route-virtual-wan-configure.svg
+- uid: learn.wwl.configure-vpn-gateway.badge
+  type: badge
+  title: Configure Azure VPN Gateway
+  summary: Learn how to create VPN gateways and securely connect your company sites to Azure.
+  iconUrl: /training/achievements/vpn-gateway-configure.svg
