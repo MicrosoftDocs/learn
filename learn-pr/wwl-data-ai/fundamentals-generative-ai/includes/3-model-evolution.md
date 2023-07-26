@@ -12,3 +12,6 @@ When making business decisions about what type of model to use, it's important t
 
 In order to produce an effective machine learning model, the model needs to be trained with a substantial amount of cleaned data. The 'learning' portion of training requires a computer to identify an algorithm that best fits the data. The complexity of the task the model needs to solve for and the desired level of model performance all factor into the time required to run through possible solutions for a best fit algorithm.
 
+Next we will take a look at how large language models work to create original content based on natural language input.
+
+

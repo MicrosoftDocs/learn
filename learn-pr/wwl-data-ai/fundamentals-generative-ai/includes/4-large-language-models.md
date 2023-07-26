@@ -29,5 +29,3 @@ Mapping huge volume of data enables the model to learn language patters. The res
 With all this complexity, you can imagine there is more than one way to solve for a problem. Each pre-trained model is a way of solving the problem of language understanding. Common transformer based LLMs include the BERT model (which is used to power Google search) and Generative Pre Trained (GPT) models from OpenAI. 
 
 All of these models can be improved or customized. These pre-trained models can be fed more information about how to behave. Using more information is called "few-shot" learning. Not using more information is known as "zero-shot" learning. 
-
-Next we will take a look at how models have evolved and some constraints.  
