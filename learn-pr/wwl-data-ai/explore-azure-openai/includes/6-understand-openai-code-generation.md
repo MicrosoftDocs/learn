@@ -1,4 +1,4 @@
-GPT models are able to take natural language or code snippets and translate them into code. The OpenAI GPT models, are proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python.
+GPT models are able to take natural language or code snippets and translate them into code. The OpenAI GPT models are proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python.
 
 GPT models have been trained on both natural language and billions of lines of code from public repositories. The models are able to generate code from natural language instructions such as code comments, and can suggest ways to complete code functions.
 
