@@ -24673,6 +24673,11 @@
       "source_path": "learn-pr/ai-business-school/start-ml-lifecycle-mlops/2-mlops-introduction.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/start-ml-lifecycle-mlops/5-mlops-manage-ml.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
