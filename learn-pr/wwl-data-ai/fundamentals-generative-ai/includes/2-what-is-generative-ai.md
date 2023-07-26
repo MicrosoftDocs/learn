@@ -6,7 +6,7 @@ The relationship between the temperature and units of ice cream can be visualize
 
 ![Screenshot of the relationship between temperature and ice cream units sold in a graph.](../media/temp-ice-cream-regression-example.png) 
 
-How well a model solves a problem can be quantified in what is known as evaluation metrics. One evaluation metric is error, which we can think of the distance between an actual label and a predicted label. In the case of the store, the model may predict 10 items will be sold in a day. If at the end of the day the store sells 15 items, the actual label is 15. We can try to improve models by reducing the overall error.    
+How well a model solves a problem can be quantified in what is known as evaluation metrics. One evaluation metric is error, which we can think of the distance between an actual label and a predicted label. In the case of the ice cream units, the model may predict 10 units will be sold in a day. If at the end of the day the store sells 15 units, the actual label is 15. We can try to improve models by reducing the overall error.    
 
 ## Language modeling
 
