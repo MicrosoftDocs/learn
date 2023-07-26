@@ -1,0 +1,60 @@
+### YamlMime:Module
+uid: learn.wwl.configure-validate-permissions
+metadata:
+  title: Configure and validate permissions
+  description: "Configure and validate permissions."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Configure and validate permissions
+summary: "This module covers fundamental concepts and best practices for configuring and validating user permissions, pipeline permissions, approval and branch checks, and auditing and managing permissions."
+abstract: |
+  In this module, you practice how to:
+    - Configure and validate user permissions.
+    - Configure and validate pipeline permissions.
+    - Configure and validate approval and branch checks.
+    - Manage and audit permissions in Azure DevOps.
+prerequisites: |
+  - Basic knowledge of Azure DevOps to manage branches.
+  - Basic knowledge of security concepts like user and pipeline permissions.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+units:
+- learn.wwl.configure-validate-permissions.introduction
+- learn.wwl.configure-validate-permissions.configure-validate-user-permissions
+- learn.wwl.configure-validate-permissions.configure-validate-pipeline-permissions
+- learn.wwl.configure-validate-permissions.configure-validate-approval-branch-checks
+- learn.wwl.configure-validate-permissions.manage-audit-permissions
+- learn.wwl.configure-validate-permissions.lab-configure-and-validate-permissions
+- learn.wwl.configure-validate-permissions.knowledge-check
+- learn.wwl.configure-validate-permissions.summary
+badge:
+  uid: learn.wwl.configure-validate-permissions.badge

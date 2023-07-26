@@ -4,13 +4,11 @@ title: Design and configure Azure Front Door
 metadata:
   title: Design and configure Azure Front Door
   description: "Design and configure Azure Front Door"
-  ms.date: 04/04/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 14
 content: |
   [!include[](includes/5-design-configure-azure-front-door.md)]

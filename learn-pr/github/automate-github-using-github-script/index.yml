@@ -7,7 +7,6 @@ metadata:
   author: a-a-ron
   ms.author: aastewar
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: "Automate GitHub by using GitHub Script"
 summary: Learn to interact with the GitHub API from GitHub Actions by using GitHub Script.
 abstract: |

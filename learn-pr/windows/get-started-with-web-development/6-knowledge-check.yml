@@ -5,10 +5,10 @@ metadata:
   title: Knowledge check
   description: Check your knowledge of the basics of web development
   ms.date: 2/8/2023
-  author: mmpadget
-  ms.author: quradic
+  author: kjo-msft
+  ms.author: karinjohnson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-knowledge-check.md)]

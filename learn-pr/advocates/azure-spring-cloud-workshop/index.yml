@@ -7,9 +7,9 @@ metadata:
   ms.author: judubois
   ms.date: 08/19/2022
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: judubois-03042021
+  ms.service: spring-cloud
 title: Deploy Spring microservices to Azure
 summary: In this workshop, you'll go through tasks to deploy Spring Boot microservices to Azure Spring Apps (ASA). You can run this Microsoft Learn module with the monthly free grant from Azure Spring Apps. [Learn More](https://aka.ms/costs-less)
 abstract: | 

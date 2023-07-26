@@ -3,5 +3,5 @@ achievementUid: learn.azure.copy-blobs-using-azcopy.badge
 metadata:
   title: >-
     Microsoft Badge: Copy and move blobs from one container or storage account
-    to another using the AzCopy command. was issued by Microsoft
+    to another using the AzCopy command was issued by Microsoft
 socialImageUrl: /training/achievements/generic-badge-social.png

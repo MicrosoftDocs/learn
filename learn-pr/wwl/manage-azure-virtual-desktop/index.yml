@@ -1,14 +1,14 @@
 ### YamlMime:Module
 uid: learn.wwl.manage-azure-virtual-desktop
 metadata:
-  title: MD-102 5-Manage Azure virtual desktop
+  title: MD-102 5-Manage Azure Virtual Desktop
   description: "Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 10 experiences. Understand key features, management, security, and deployment options for optimizing your environment."
-  ms.date: 04/05/2023
+  ms.date: 05/12/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-title: Manage Azure virtual desktop
+title: Manage Azure Virtual Desktop
 summary: Learn to manage Azure Virtual Desktop, a cloud-based VDI solution providing personalized, secure Windows 11 experiences. Understand key features, management, security, and deployment options for optimizing your environment.
 abstract: |
   After completing this module, you should be able to:

@@ -6,8 +6,9 @@ metadata:
   ms.date: 04/07/2022
   author: coderandhiker
   ms.author: chrisrt
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: dotnet-framework
 title: Implement logging in a .NET Framework ASP.NET web application
 summary: Learn how to implement logging in an ASP.NET web application so you can store log data in Azure Blob storage and incorporate log information into Azure Application Insights performance data.
 abstract: |

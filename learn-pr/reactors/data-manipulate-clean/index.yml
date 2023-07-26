@@ -7,8 +7,8 @@ metadata:
   author: sguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-python
   ms.custom: team=nextgen
+  ms.devlang: python
 title: Manipulate and clean data in Python
 summary: How to use Python, and popular libraries like NumPy and pandas, to manipulate and clean data to prepare it for analysis.
 abstract:  | 

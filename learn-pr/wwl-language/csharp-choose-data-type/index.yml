@@ -3,11 +3,11 @@ uid: learn.languages.csharp-choose-data-type
 metadata:
   title: Choose the correct data type in your C# code
   description: "Choose the correct data type in your C# code"
-  ms.date: 02/25/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Choose the correct data type in your C# code
 summary: Learn the difference between many data types, how they work, what they do, and how to choose one over another.
 abstract: |
@@ -17,18 +17,20 @@ abstract: |
   - Use the `new` keyword to create new instances of a reference type.
   - Determine which data type you should choose for a given application.
 prerequisites: |
-  - Experience using basic data types like string, char, bool, int, and decimal
-  - Experience using string interpolation to combine variables in string templates
-  - Experience using code comments to comment out unused code
+  *   Experience using basic data types like string, char, bool, int, and decimal
+  *   Experience using string interpolation to combine variables in string templates
+  *   Experience using code comments to comment out unused code
+  *   Experience using Visual Studio Code to develop, build, and run C# code
 iconUrl: /training/achievements/csharp-choose-data-type.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.languages.csharp-choose-data-type.introduction

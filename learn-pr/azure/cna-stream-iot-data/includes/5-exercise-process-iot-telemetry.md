@@ -93,9 +93,8 @@ Before you configure Azure IoT Central application rules, you'll create an Azure
 
 ## Configure and validate IoT telemetry rules of an Azure IoT Central application
 
-1. Start another web browser window and navigate to the [Welcome to IoT Central](https://apps.azureiotcentral.com/) page.
+1. Start another web browser window and navigate to the [IoT Central my apps](https://apps.azureiotcentral.com/myapps) page.
 1. If prompted, sign in to access the Azure subscription you used in the exercise unit **Set up Azure IoT Central**.
-1. On the **Welcome to IoT Central** page, expand the vertical menu and select the **My apps** menu entry.
 1. On the **My apps** page, select the **adatum-iot-custom-application** entry.
 1. In the vertical menu, under **Extend**, select **Rules**.
 1. On the **Rules** page, select **Create a rule** and configure the following settings:

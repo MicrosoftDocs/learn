@@ -4,11 +4,10 @@ title: Explore Microsoft Defender for Cloud Apps
 metadata:
   title: Explore Microsoft Defender for Cloud Apps
   description: "Explore Microsoft Defender for Cloud Apps"
-  ms.date: 03/31/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/2-explore-microsoft-defender-cloud-apps.md)]

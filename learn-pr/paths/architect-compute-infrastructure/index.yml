@@ -5,8 +5,8 @@ metadata:
   description: Learn how to architect compute infrastructure and solutions to automate your business processes in Azure.
   brand: azure
   ms.date: 10/22/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect compute infrastructure in Azure

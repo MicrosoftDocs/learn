@@ -1,7 +1,0 @@
-Organizations focused on manufacturing and other large-scale materials processes are at a pivotal point for the deployment of AI. Watch this video from Peter Zemsky, INSEAD’s Eli Lilly Chaired Professor of Strategy and Innovation, as he explains that while manufacturing has seen much experimentation with proof of concepts, the move to fully scaled AI solutions has been slower than in other sectors. He also illustrates how manufacturers can surpass barriers to full scale adoption and strategically use AI to extract business value.
-
-> [!VIDEO https://www.microsoft.com/videoplayer/embed/RE2Y7cJ]
-
-The manufacturing and resources industry is a sector where the efficiency AI can bring will have a large impact on value creation given the large capital outlays that are necessary for sophisticated equipment and developing worksites, as well as mineral rights in the case of mining. Data integration and the dissemination of insights from the data are a critical first step. Data insights that drive improved efficiency, better yields, and enhanced worker safety, are high powered levers for value creation in manufacturing and become a jumping off point for more advanced AI adoption in the industry.
-
-Let’s see how one of the world’s largest manufacturers, Jabil, was able to reduce overhead costs and increase production quality by using AI strategically, to check electronic products as they were manufactured.

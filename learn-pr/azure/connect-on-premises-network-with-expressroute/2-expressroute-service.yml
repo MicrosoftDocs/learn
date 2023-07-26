@@ -7,7 +7,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: What is the Azure ExpressRoute service?
 durationInMinutes: 10
 content: |
@@ -29,17 +29,17 @@ quiz:
     - content: "It's a service that provides a site-to-site VPN connection between your on-premises network and the Microsoft cloud."
       isCorrect: false
       explanation: "No. ExpressRoute provides a direct connection from your on-premises datacenter to the Microsoft cloud."
-  - content: "Which of the following is not a benefit of ExpressRoute?"
+  - content: "Which of these features isn't a benefit of ExpressRoute?"
     choices:
     - content: "Redundant connectivity"
       isCorrect: false
-      explanation: "This is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."
+      explanation: "Redundant connectivity is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."
     - content: "Consistent network throughput"
       isCorrect: false
-      explanation: "This is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."
+      explanation: "Consistent network throughput is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."
     - content: "Encrypted network communication"
       isCorrect: true
       explanation: "Correct. ExpressRoute does provide private connectivity, but it isn't encrypted."
     - content: "Access to Microsoft cloud services"
       isCorrect: false
-      explanation: "This is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."
+      explanation: "Access to Microsoft cloud services is a benefit of choosing to connect your network to Microsoft by using ExpressRoute."

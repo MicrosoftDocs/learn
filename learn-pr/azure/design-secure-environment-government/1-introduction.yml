@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Introduction to Design cloud solutions for the public sector.
   ms.date: 02/08/2021
-  author: Adriamen
-  ms.author: micrum
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1 

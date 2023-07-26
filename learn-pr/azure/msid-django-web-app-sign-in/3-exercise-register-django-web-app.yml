@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.msid-django-web-app-sign-in.exercise-register-django-web-app
-title: Exercise - Register Django web app in Azure AD tenant
+title: Exercise - Register a Django web app in an Azure AD tenant
 metadata:
   unitType: exercise
-  title: Exercise - Register Django web app in Azure AD tenant
-  description: Step by step exercise to register a Django web app to an Azure AD tenant using the Azure portal. Create a client secret to use with your Django web app.
-  ms.date: 10/18/2022
+  title: Exercise - Register a Django web app in an Azure AD tenant
+  description: In this step-by-step exercise, register a Django web app in an Azure AD tenant by using the Azure portal. Create a client secret to use with your Django web app.
+  ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/3-exercise-register-django-web-app.md)]

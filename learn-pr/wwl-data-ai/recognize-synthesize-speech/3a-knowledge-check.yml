@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
@@ -27,12 +27,12 @@ quiz:
       explanation: "Correct. This resource would support both the Speech and Language services."
   - content: "You want to use the Speech service to build an application that reads incoming email message subjects aloud. Which API should you use?"
     choices:
-    - content: "Speech-to-Text"
+    - content: "speech to text"
       isCorrect: false
-      explanation: "Incorrect. The Speech-to-Text API converts audible speech to text."
-    - content: "Text-to-Speech"
+      explanation: "Incorrect. The Speech to text API converts audible speech to text."
+    - content: "Text to speech"
       isCorrect: true
-      explanation: "Correct. The Text-to-Speech API converts text to audible speech."
+      explanation: "Correct. The Text to speech API converts text to audible speech."
     - content: "Translate"
       isCorrect: false
       explanation: "Incorrect. The Translate API translates speech from one language to another."

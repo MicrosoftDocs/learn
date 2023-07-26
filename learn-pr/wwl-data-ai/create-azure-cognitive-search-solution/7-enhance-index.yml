@@ -4,12 +4,13 @@ title: Enhance the index
 metadata:
   title: Enhance the index
   description: "Enhance the index"
-  ms.date: 07/30/2021
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/7-enhance-index.md)]

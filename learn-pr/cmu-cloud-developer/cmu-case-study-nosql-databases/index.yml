@@ -8,8 +8,9 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: 'Case studies: NoSQL databases and cloud object storage'
 summary:  Learn about two more types of storage - NoSQL databases and object storage - with case studies from industry.
 abstract: | 

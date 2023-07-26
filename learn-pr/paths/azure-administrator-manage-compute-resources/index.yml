@@ -72,7 +72,8 @@ products:
 subjects:
 - data-engineering
 modules:
-- learn.create-linux-vm-in-azure
+- learn.plan-your-linux-environment-in-azure
+- learn.provision-linux-virtual-machine-in-azure
 - learn.create-a-windows-vm-in-azure
 - learn.manage-vms-with-azure-cli
 - learn.add-and-size-disks-in-azure-virtual-machines

@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.responsible-generative-ai.operate-responsibly
+title: Operate a responsible generative AI solution
+metadata:
+  title: Operate a responsible generative AI solution
+  description: "Release and operate a generative AI solution responsibly."
+  ms.date: 7/13/2023
+  author: graememalcolm
+  ms.author: gmalc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: openai
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-operate-responsibly.md)]

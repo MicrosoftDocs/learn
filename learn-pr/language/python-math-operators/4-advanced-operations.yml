@@ -3,11 +3,13 @@ uid: learn.beginner-python.use-math-operators.advanced-operations
 title: Work with numbers in Python
 metadata:
   title: Work with numbers in Python
-  description: You will often need to perform operations beyond core arithmetic. Let's explore how you can use Python to perform different operations on numbers.
-  ms.date: 12/02/2021
+  description: You'll often need to perform operations beyond core arithmetic. Let's explore how you can use Python to perform different operations on numbers.
+  ms.date: 06/05/2023
   author: geektrainer
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 4

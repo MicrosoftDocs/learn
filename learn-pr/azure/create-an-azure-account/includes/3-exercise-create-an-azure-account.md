@@ -12,6 +12,7 @@ You'll need a valid credit card to create your Azure free account. **This card i
 1. Scroll down through the page to learn more about the benefits and free services available.
 
 1. Select **Start free**.
+
 1. Sign in with your Microsoft or GitHub account or create a free Microsoft account.
 
 1. On the **About you** page, select your correct country or region. Enter your first and last name, email address, and phone number. Depending on your country or region, you might see additional fields, such as a VAT number. Select **Next** to continue.
@@ -22,6 +23,8 @@ You'll need a valid credit card to create your Azure free account. **This card i
 
 1. If the verification code is correct, you're asked to enter details of a valid credit card. Enter the card information and select **Next**.
 
-1. The last step is to review the agreement and privacy statement then select **Sign up**.
+1. Review the agreement and privacy statement then select **Sign up**.
+
+1. Select **Go to the Azure portal**.
 
 Congratulations! You have successfully set up a free account, and should be on the Azure portal home page.

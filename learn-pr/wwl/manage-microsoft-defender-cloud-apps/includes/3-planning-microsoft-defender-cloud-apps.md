@@ -1,5 +1,6 @@
 
 
+
 This unit will guide you to use Microsoft Defender for Cloud Apps. By using Microsoft Defender for Cloud Apps, you can enjoy the advantages of cloud applications while retaining control over your corporate resources. The tool enhances visibility into cloud activities and increases corporate data protection. This unit will guide you through setting up and using Microsoft Defender for Cloud Apps.
 
 >[!Note]

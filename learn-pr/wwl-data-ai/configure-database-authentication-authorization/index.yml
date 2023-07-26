@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure database authentication and authorization
 summary: Contrast authentication using Azure Active Directory, Windows Active Directory, and SQL Server authentication. Implement various security principals and configure permissions.
 abstract: |

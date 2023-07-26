@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-aspnet-core.2-solution-architecture
+metadata:
+  title: Review the solution architecture
+  description: Gain an understanding of microservices architecture and the eShopOnContainers solution.
+  ms.date: 05/27/2020
+  author: camsoper
+  ms.author: casoper
+  ms.manager: markl
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+title: Review the solution architecture
+durationInMinutes: 8
+content: |
+  [!include[](includes/2-solution-architecture.md)]

@@ -7,7 +7,7 @@ metadata:
   author: VanMSFT
   ms.author: vanto
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Exercise - Secure your network
 durationInMinutes: 10
 interactive: powershell

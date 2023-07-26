@@ -1,7 +1,7 @@
 In this module, you learn how to:
 
 - Evaluate security posture for collaboration and productivity workloads
-- Design a Microsoft Defender 365 solution
+- Design a Microsoft 365 Defender solution
 - Design configurations and operational practices for Microsoft 365
 
 The content in the module helps you prepare for the certification exam SC-100: Microsoft Cybersecurity Architect.

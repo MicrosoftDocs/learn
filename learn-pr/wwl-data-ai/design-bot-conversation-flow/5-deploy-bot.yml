@@ -4,11 +4,11 @@ title: Deploy a bot
 metadata:
   title: Deploy a bot
   description: "Deploy a bot"
-  ms.date: 09/16/2022
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

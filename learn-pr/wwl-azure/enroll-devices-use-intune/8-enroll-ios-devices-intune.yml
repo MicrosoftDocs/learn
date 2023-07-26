@@ -4,11 +4,10 @@ title: Enroll iOS devices in Intune
 metadata:
   title: Enroll iOS devices in Intune
   description: "Enroll iOS devices in Intune"
-  ms.date: 03/14/2023
+  ms.date: 07/24/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/8-enroll-ios-devices-intune.md)]

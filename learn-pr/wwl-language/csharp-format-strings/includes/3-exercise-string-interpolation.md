@@ -1,6 +1,7 @@
 
 
 
+
 You need to create the code to print a receipt for the customer purchasing shares of an investment product. The shares are purchased automatically at the end of the year based on a series of payroll deductions, so the number of shares purchased usually contains a decimal amount. To print the receipt, you would likely need to combine data of different types, including fractional values, currency, and percentages in precise ways.
 
 ### Display the invoice number using string interpolation

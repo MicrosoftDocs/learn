@@ -14,9 +14,9 @@ To create the Translator resource and deploy the webapp, complete the following 
     curl -s https://raw.githubusercontent.com/MicrosoftDocs/mslearn-intro-translator-text-to-speech/main/scripts/deploy-in-sandbox.sh | bash
     ```
 
-2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it won't affect the running script.
+2. Wait several minutes for the command to run. You may finish reading this page and navigate to other pages within this module - it doesn't affect the running script.
 
-3. Activate the link to the URL displayed at the bottom of the shell. The web app will open letting you use Translator. You can also cut and paste the URL from here, but remember, it won't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
+3. Activate the link to the URL displayed at the bottom of the shell. The web app opens, letting you use Translator. You can also cut and paste the URL from here, but remember, it doesn't work until the script finishes running: https://fr-<rgn>[sandboxName]</rgn>.azurewebsites.net
 
 After you run the code, you can play around with Translator at your own pace.
 
@@ -29,35 +29,35 @@ You can [visit the GitHub repository here.](https://github.com/MicrosoftDocs/msl
 An example of a good place to start browsing is [where we use the service via REST](https://github.com/MicrosoftDocs/mslearn-intro-translator-text-to-speech/blob/main/src/Services/TranslatorService.cs?azure-portal=true#L28-L56):
 
 ```csharp
-        public async Task<TranslationResult> Translate(string text, IList<string> targetLanguages)
-        {
-            var body = new object[] { new { Text = text } };
-            var requestBody = JsonConvert.SerializeObject(body);
-            var languages = string.Join("&to=", targetLanguages);
+public async Task<TranslationResult> Translate(string text, IList<string> targetLanguages)
+{
+    var body = new object[] { new { Text = text } };
+    var requestBody = JsonConvert.SerializeObject(body);
+    var languages = string.Join("&to=", targetLanguages);
 
-            var client = _clientFactory.CreateClient();
-            using (var request = new HttpRequestMessage())
-            {
-                // Build the request.
-                request.Method = HttpMethod.Post;
+    var client = _clientFactory.CreateClient();
+    using (var request = new HttpRequestMessage())
+    {
+        // Build the request.
+        request.Method = HttpMethod.Post;
 
-                // For a complete list of options, see API reference.
-                // https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate
-                request.RequestUri = new Uri(_options.Endpoint + Route + $"&to={languages}");
-                request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
-                request.Headers.Add("Ocp-Apim-Subscription-Key", _options.ApiKey);
-                request.Headers.Add("Ocp-Apim-Subscription-Region", _options.Region);
+        // For a complete list of options, see API reference.
+        // https://learn.microsoft.com/azure/cognitive-services/translator/reference/v3-0-translate
+        request.RequestUri = new Uri(_options.Endpoint + Route + $"&to={languages}");
+        request.Content = new StringContent(requestBody, Encoding.UTF8, "application/json");
+        request.Headers.Add("Ocp-Apim-Subscription-Key", _options.ApiKey);
+        request.Headers.Add("Ocp-Apim-Subscription-Region", _options.Region);
 
-                // Send the request and get response.
-                var response = await client.SendAsync(request);
+        // Send the request and get response.
+        var response = await client.SendAsync(request);
 
-                // Read response as a string.
-                var result = await response.Content.ReadAsStringAsync();
-                var translationResults = JsonConvert.DeserializeObject<TranslationResult[]>(result);
+        // Read response as a string.
+        var result = await response.Content.ReadAsStringAsync();
+        var translationResults = JsonConvert.DeserializeObject<TranslationResult[]>(result);
 
-                return translationResults.OrderByDescending(x => x.DetectedLanguage.Score).FirstOrDefault();
-            }
-        }
+        return translationResults.OrderByDescending(x => x.DetectedLanguage.Score).FirstOrDefault();
+    }
+}
 ```
 
 Notice that we specify the languages on the end of the `request.RequestUri` and we have ApiKey and Region specified by `_options`, so they can be added during deployment instead of being left in the codebase.

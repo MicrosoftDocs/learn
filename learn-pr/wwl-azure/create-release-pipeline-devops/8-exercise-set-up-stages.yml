@@ -1,16 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.create-release-pipeline.exercise-set-up-stages
-title: Exercise - Set up stages
+title: Exercise - set up stages
 metadata:
-  title: Exercise - Set up stages
-  description: "Exercise - Set up stages"
-  ms.date: 12/09/2022
+  title: Exercise - set up stages
+  description: "Exercise - set up stages"
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise-set-up-stages.md)]

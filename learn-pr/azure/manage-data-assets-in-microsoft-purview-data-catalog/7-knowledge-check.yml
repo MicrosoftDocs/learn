@@ -1,0 +1,62 @@
+### YamlMime:ModuleUnit
+uid: learn.manage-data-assets-in-microsoft-purview-data-catalog.knowledge-check
+title: Knowledge check
+metadata:
+  unitType: knowledge_check
+  title: Knowledge check
+  description: "This knowledge check covers the activities in the Microsoft Purview Data Catalog including searching and browsing, managing assets, and the business glossary."
+  ms.date: 04/27/2023
+  author: whhender
+  ms.author: whhender
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - ignite-2022
+  ms.service: azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "Which of these does Microsoft Purview use to automatically or manually categorize assets with unique logical tags?"
+    choices:
+    - content: "Classifications"
+      isCorrect: true
+      explanation: "Correct - Classifications are automatically added during scanning, but can also be added manually to categorize and identify data in your data estate."
+    - content: "Sensitivity Labels"
+      isCorrect: false
+      explanation: "Incorrect - A sensitivity label allows you to set a security label (public, confidential, highly confidential) on your data assets."
+    - content: "Glossary Term"
+      isCorrect: false
+      explanation: "Incorrect - A glossary term is a way of describing assets by linking them with business terms that allow your assets to be understood in context."
+  - content: "What does the Microsoft Purview Data Catalog do?"
+    choices:
+    - content: "Scans resources and houses metadata about the assets in those resources."
+      isCorrect: false
+      explanation: "Incorrect - The Microsoft Purview Data Map scans sources and houses metadata. The catalog is an index you can use to search the stored information in the data map."
+    - content: "Provides a dashboard actionable insights about your data estate, adoption, and processes."
+      isCorrect: false
+      explanation: "Incorrect - Microsoft Purview Data Estate Insights has a dashboard that provides information about your data catalog, data security, and usage of Microsoft Purview!"
+    - content: "Allows your users to browse data assets for useful, relevant data based on what kind of data it is, or even an aspect of your business."
+      isCorrect: true
+      explanation: "Correct - The data catalog creates a searchable library of your data, so users can find the information they need."
+  - content: "What's a data asset?"
+    choices:
+    - content: "Any single object that is stored within a Microsoft Purview Data Catalog."
+      isCorrect: true
+      explanation: "Correct - A single object in the catalog could potentially represent many objects in storage, for example, a resource set is an asset but it's made up of many partition files in storage."
+    - content: "The resource location where data is stored."
+      isCorrect: false
+      explanation: Incorrect - "This is called the 'source' in Microsoft Purview, and is registered and scanned in the data map."
+    - content: "A defining term that is attached to a piece of data in Microsoft Purview to provide descriptive context."
+      isCorrect: false
+      explanation: "Incorrect - Classifications, glossary terms, and sensitivity labels are applied to assets to define and provide context."
+  - content: "What's a certified asset?"
+    choices:
+    - content: "An asset that has been vetted and marked as certified by the Microsoft Purview Data Catalog."
+      isCorrect: false
+      explanation: "Incorrect - The Microsoft Purview Data Catalog is only an index and doesn't evaluate the quality of your data assets or their annotations."
+    - content: "An asset that has been reviewed by a data steward and marked as certified for use."
+      isCorrect: true
+      explanation: "Correct - Currently, the certification process only involves being marked by a data steward, and certification is up to those individuals."
+    - content: "An asset that has lineage data for both source and destination of the asset."
+      isCorrect: false
+      explanation: "Incorrect - Lineage data is useful, but not required, and an asset won't be automatically certified when lineage information is added."

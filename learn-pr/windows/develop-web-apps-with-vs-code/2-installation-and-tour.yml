@@ -4,9 +4,9 @@ uid: learn-windows.introducing-vs-code.2-installation-and-tour
 metadata:
   title: Install and tour Visual Studio Code
   description: Install Visual Studio Code on your computer, and learn about some of its fundamental features.
-  ms.date: 3/29/2019
-  author: markamos
-  ms.author: quradic
+  ms.date: 04/21/2023
+  author: kjo-msft
+  ms.author: karinjohnson
   ms.topic: interactive-tutorial
   ms.prod: learning-windows
   

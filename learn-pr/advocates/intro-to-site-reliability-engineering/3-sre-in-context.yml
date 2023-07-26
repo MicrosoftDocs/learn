@@ -8,7 +8,7 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-01282021
 durationInMinutes: 10
@@ -18,48 +18,50 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Given the origin of SRE, which discipline has had the most impact on it?'
+  - content: "Given the origin of SRE, which discipline has had the most impact on it?"
     choices:
-    - content: 'Customer service'
+    - content: "Customer service"
       isCorrect: false
-      explanation: 'Approaching the work with a customer-centric mindset is crucial to SRE, but customer service was not part of its origin.'
-    - content: 'Mainframe operations'
+      explanation: "Approaching the work with a customer-centric mindset is crucial to SRE, but customer service wasn't part of its origin."
+    - content: "Mainframe operations"
       isCorrect: false
-      explanation: 'Though we can learn from other operations specialties, SRE did not start with this one.'
-    - content: 'Software engineering'
+      explanation: "Though we can learn from other operations specialties, SRE didn't start with this one."
+    - content: "Software engineering"
       isCorrect: true
-      explanation: 'SRE was started with software engineering mindset.'
-    - content: 'Architecture'
+      explanation: "SRE was started with software engineering mindset."
+    - content: "Architecture"
       isCorrect: false
-      explanation: 'Architecture (especially software architecture) is definitely a component of SRE work, but it was not part of its origin.'
+      explanation: "Architecture (especially software architecture) is definitely a component of SRE work, but it wasn't part of its origin."
 
-  - content: 'Which came first, DevOps or SRE?'
+  - content: "Which came first, DevOps or SRE?"
     choices:
-    - content: 'DevOps'
+    - content: "DevOps"
       isCorrect: false
-      explanation: 'They developed roughly in parallel.'
-    - content: 'SRE'
+      explanation: "They developed roughly in parallel."
+    - content: "SRE"
       isCorrect: false
-      explanation: 'They developed roughly in parallel.'
-    - content: 'Neither, they developed roughly in parallel.'
+      explanation: "They developed roughly in parallel."
+    - content: "Neither, they developed roughly in parallel."
       isCorrect: true
+      explanation: "Correct. They developed roughly in parallel."
 
-  - content: 'Is SRE the next evolutionary step from DevOps?'
+  - content: "Is SRE the next evolutionary step from DevOps?"
     choices:
-    - content: 'Yes, SRE is the future of DevOps. DevOps personnel should strive to become SREs'
+    - content: "Yes, SRE is the future of DevOps. DevOps personnel should strive to become SREs."
       isCorrect: false
-      explanation: 'DevOps and SRE are separate operations practices that attempt to address similar challenges.'
-    - content: 'No, SRE and DevOps are separate operations practices'
+      explanation: "DevOps and SRE are separate operations practices that attempt to address similar challenges."
+    - content: "No, SRE and DevOps are separate operations practices."
       isCorrect: true
-      explanation: 'DevOps and SRE are indeed separate even though they attempt to address similar challenges.'
+      explanation: "DevOps and SRE are indeed separate even though they attempt to address similar challenges."
 
-  - content: 'What are two best practices that are central to both DevOps and SRE?'
+  - content: "What are two best practices that are central to both DevOps and SRE?"
     choices:
-    - content: 'Automation and monitoring/observability'
+    - content: "Automation and monitoring/observability."
       isCorrect: true
-    - content: 'Coding and ticket systems'
+      explanation: "Both operations practices emphasize eliminating menial tasks through automation and using monitoring/observation to improve processes."
+    - content: "Coding and ticket systems."
       isCorrect: false
-      explanation: 'While coding is important (more so in SRE), ticket systems are not central to SRE.'
-    - content: 'Help desk automation and bug tracking'
+      explanation: "While coding is important (more so in SRE), ticket systems aren't central to SRE."
+    - content: "Help desk automation and bug tracking."
       isCorrect: false
-      explanation: 'Though useful, help desk automation is not core to either operations practice.'
+      explanation: "Though useful, help desk automation isn't core to either operations practice."

@@ -4,12 +4,12 @@ metadata:
   moduleType: standard
   title: Python functions
   description: Functions are a foundational knowledge for writing modular code. Understanding inputs and outputs in functions will help you write better software that's reusable and readable.
-  ms.date: 09/15/2022
+  ms.date: 06/06/2023
   author: softchris
   ms.author: chnoring
   ms.custom: team=nextgen
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: python
 title: Python functions
 summary: The next step after using procedural code is to write modular software by using functions. Functions, from simple ones to multiple-argument ones, are useful in making code reusable.
 abstract: |
@@ -17,8 +17,8 @@ abstract: |
     - Use functions with various types of return values.
     - Implement formatting techniques.
 prerequisites: |
-  - Basic programming knowledge, like using and assigning variables
-  - Some experience with using Jupyter notebooks, including adding and modifying code
+  - Basic programming knowledge, like using and assigning variables.
+  - Some experience with using Jupyter notebooks, including adding and modifying code.
 iconUrl: /training/achievements/functions-python.svg
 levels: 
   - beginner

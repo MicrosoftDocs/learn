@@ -8,7 +8,8 @@ metadata:
   ms.author: vanto
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
+  ms.subservice: security
 title: Secure your Azure SQL Database
 summary: Secure your Azure SQL Database to keep your data secure and diagnose potential security concerns as they happen.
 abstract:  | 

@@ -8,7 +8,7 @@ metadata:
   author: DrewLonMS
   ms.author: oliverlondon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-remote-rendering 
 title: Introduction to Azure Remote Rendering
 summary: Describe how Microsoft Azure Remote Rendering can enable you to bring your high-quality 3D models into mixed reality. Evaluate whether Azure Remote Rendering, a cloud-hosted service, can help you complete complex rendering workloads.
 abstract: |

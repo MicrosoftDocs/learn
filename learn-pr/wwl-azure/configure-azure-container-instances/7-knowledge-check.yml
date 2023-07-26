@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 12/15/2022
+  ms.date: 06/26/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Why should you select virtual machines over containers for your configuration?"
     choices:
@@ -25,11 +24,10 @@ quiz:
       explanation: "Incorrect. Virtual machines run a complete operating system including the kernel."
     - content: "Virtual machines provide complete isolation from the host operating system and other virtual machines."
       isCorrect: true
-      explanation: "Correct. Azure containers only provide lightweight isolation from the host."      
+      explanation: "Correct. Azure containers only provide lightweight isolation from the host."
     - content: "Virtual machines use Azure Disks for local storage for a single node."
       isCorrect: false
       explanation: "Incorrect. Virtual machines use a virtual hard disk (VHD) for local storage for a single virtual machine."
-
   - content: "Which of the following options is a feature of Azure Container Instances?"
     choices:
     - content: "Container Instances require several minutes to load."
@@ -41,15 +39,14 @@ quiz:
     - content: "Billing for Container Instances occurs when containers are in use."
       isCorrect: true
       explanation: "Correct. Organizations are only billed when their Container Instances are in use."
-
   - content: "What implementation ensures container software runs the same locally and in the cloud on Azure?"
     choices:
     - content: "Docker"
       isCorrect: true
-      explanation: "Correct. Docker guarantees that containerized software always runs the same locally on Windows or Linux, and in the cloud on Azure."          
+      explanation: "Correct. Docker guarantees that containerized software always runs the same locally on Windows or Linux, and in the cloud on Azure."
     - content: "Container groups"
       isCorrect: false
       explanation: "Incorrect. Using container groups in Azure Container Instances doesn't guarantee that your containerized software always runs the same."
     - content: "Container Instances"
       isCorrect: false
-      explanation: "Incorrect. Azure Container Instances doesn't guarantee that containerized software always runs the same."      
+      explanation: "Incorrect. Azure Container Instances doesn't guarantee that containerized software always runs the same."

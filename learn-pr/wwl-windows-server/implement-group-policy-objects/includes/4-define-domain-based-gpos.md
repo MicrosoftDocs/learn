@@ -1,7 +1,7 @@
 You can create domain-based GPOs in AD DS and store them on domain controllers. You can use these GPOs to manage configuration centrally for the domain’s users and computers. When you install AD DS, Windows Server creates two default GPOs:
 
-- Default Domain Policy
-- Default Domain Controllers Policy
+ -  Default Domain Policy
+ -  Default Domain Controllers Policy
 
 > [!NOTE]
 > Windows computers also have local GPOs, which are primarily used when computers aren't connected to domain environments.

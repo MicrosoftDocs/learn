@@ -1,0 +1,20 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.provide-context-to-improve-accuracy
+title: Provide context to improve accuracy
+metadata:
+  zone_pivot_groups: dev-lang-csharp-python
+  title: Provide context to improve accuracy
+  description: "Provide context to improve accuracy of responses from Azure OpenAI."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-python
+durationInMinutes: 15
+content: |
+  [!include[](includes/4-provide-context-to-improve-accuracy.md)]

@@ -3,11 +3,11 @@ uid: learn.quantum.run-quantum-algorithms-hardware
 metadata:
   title: Run algorithms on quantum hardware by using Azure Quantum
   description: Get started with quantum computing on Azure Quantum and learn how to create and run Q# quantum programs on quantum computers in the cloud. 
-  ms.date: 01/01/2021
+  ms.date: 05/24/2023
   author: SoniaLopezBravo
   ms.author: sonialopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-quantum
 title: Run algorithms on quantum hardware by using Azure Quantum
 summary: Get started with quantum computing on Azure Quantum and learn how to create and run Q# quantum programs on quantum computers in the cloud.
 abstract: |

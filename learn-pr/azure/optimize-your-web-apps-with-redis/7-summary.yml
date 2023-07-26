@@ -8,24 +8,24 @@ metadata:
   author: flang-msft
   ms.author: franlanglois
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/7-summary.md)]
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Suppose you're storing 400 MB of highly-accessed data in a Redis cache. How should you organize it in the cache to ensure high performance?"
+  - content: "Suppose you're storing 400 MB of highly accessed data in a Redis cache. How should you organize it in the cache to ensure high performance?"
     choices:
     - content: "Store the data with a single key"
-      explanation: "Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues."
+      explanation: "Redis works best with data that is 100 kB or less. Splitting and storing larger data with multiple keys reduces network latency and out-of-memory issues."
       isCorrect: false
     - content: "Split and store the data with multiple keys"
       isCorrect: true
-      explanation: "Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues."
+      explanation: "Redis works best with data that is 100 kB or less. Splitting and storing larger data with multiple keys reduces network latency and out-of-memory issues."
     - content: "Don't cache the data because 400 MB is too large"
       isCorrect: false
-      explanation: "Redis works best with data that is 100 K or less. Splitting and storing larger data with multiple keys will reduce network latency and out-of-memory issues."
+      explanation: "Redis works best with data that is 100 kB or less. Splitting and storing larger data with multiple keys reduces network latency and out-of-memory issues."
 
   - content: "True or false: the length of a Redis key impacts the performance of lookup times?"
     choices:
@@ -36,7 +36,7 @@ quiz:
       isCorrect: false
       explanation: "Longer keys take up more memory and cause longer lookup times because they're compared byte-by-byte."
       
-  - content: "Which of the following is not a valid Redis cache storage container?"
+  - content: "Which of the following storage containers isn't a valid Redis cache storage container?"
     choices:
     - content: "Nodes"
       explanation: "Data is stored in Redis by using nodes and clusters. A node is a single storage location and a cluster is a set of three or more nodes."

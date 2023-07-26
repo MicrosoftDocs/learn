@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Evaluate performance improvements
 summary: Evaluate possible changes to indexes. Determine the impact of changes to queries and indexes. Explore Query Store hints.
 abstract: |

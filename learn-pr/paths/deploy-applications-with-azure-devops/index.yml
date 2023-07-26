@@ -9,7 +9,7 @@ metadata:
   ms.author: jukullam
   #ms.learn-contact: thpetche
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Deploy applications with Azure DevOps
 summary: |
   Azure DevOps enables you to build, test, and deploy any application to any cloud or on premises. Learn how to configure release pipelines that continuously build, test, and deploy your applications.
