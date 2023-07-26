@@ -1962,3 +1962,8 @@ achievements:
   title: Scale AI in your organization
   summary: In this learning path, you’ll get a high-level overview of how to manage an AI organization, team, department, or center of excellence. You’ll learn about fueling innovation at all levels, evaluating and prioritizing AI investments, establishing technical processes for AI, and distributing AI-related responsibilities across the organization.
   iconUrl: /training/achievements/scale-ai-organizations.svg
+- uid: learn.wwl.configure-azure-firewall.badge
+  type: badge
+  title: Configure Azure Firewall
+  summary: Learn how to configure Azure Firewall including firewall rules.
+  iconUrl: /training/achievements/azure-firewall-configure.svg
