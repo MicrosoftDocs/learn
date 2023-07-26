@@ -24538,6 +24538,11 @@
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/7-saas-ai-and-embedded-ai.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/9-summary-and-resources.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
