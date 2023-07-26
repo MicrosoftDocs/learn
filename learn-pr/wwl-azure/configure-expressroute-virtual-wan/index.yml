@@ -30,7 +30,6 @@ units:
 - learn.wwl.configure-expressroute-virtual-wan.introduction
 - learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses
 - learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-capabilities
-- learn.wwl.configure-expressroute-virtual-wan.coexist-site-to-site-expressroute
 - learn.wwl.configure-expressroute-virtual-wan.compare-intersite-connection-options
 - learn.wwl.configure-expressroute-virtual-wan.determine-uses
 - learn.wwl.configure-expressroute-virtual-wan.knowledge-check
