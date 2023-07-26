@@ -27,7 +27,6 @@ products:
 subjects:
 - networking
 units:
-- learn.wwl.configure-vpn-gateway.introduction
 - learn.wwl.configure-vpn-gateway.setup-premises
 - learn.wwl.configure-vpn-gateway.knowledge-check
 - learn.wwl.configure-vpn-gateway.summary-resources
