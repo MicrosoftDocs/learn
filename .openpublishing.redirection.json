@@ -24423,6 +24423,11 @@
       "source_path": "learn-pr/ai-business-school/ai-strategy-in-retail/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/ai-strategy-in-retail/2-ai-value-in-retail-insead.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
