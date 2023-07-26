@@ -1987,3 +1987,8 @@ achievements:
   title: Discover ways to foster an AI-ready culture in your business
   summary: In this learning path, you will hear from top Microsoft executives about a framework to drive the key changes that are necessary to become an AI -ready organization. You will be able to identify the successful implementations of AI and articulate relevant scenarios. You will be able to discuss a line of business specific and relevant uses cases in finance, marketing, sales, and customer service. And finally, you will be able to identify  AI solutions to implement in your organization based upon its maturity.
   iconUrl: /training/achievements/foster-ai-ready-culture.svg
+- uid: learn-wwl.ai-strategy-in-retail.badge
+  type: badge
+  title: Define an AI strategy to create business value in retail
+  summary: In retail, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-retail.svg
