@@ -26,4 +26,4 @@ modules:
 - learn.intro-to-azure-remote-rendering
 - learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 trophy:
-  uid: learn.architect-great-solutions-in-azure.trophy
+  uid: learn.get-started-with-azure-remote-rendering.trophy
