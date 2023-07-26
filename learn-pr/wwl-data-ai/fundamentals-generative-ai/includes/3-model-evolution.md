@@ -1,8 +1,6 @@
 Between 2010 and 2020, language modeling approaches increased in sophistication. One of the key advances in natural language processing was the development of embedding techniques in which text is broken down into tokens (words, phrases, or even partial words) and each token is assigned a vector value. 
 
 ## What are tokens?
-Picture all of the text in the world laid out page by page like a big map. Then imagine we circled one word, and drew a line between that word and another word, like drawing a line between two cities on a map. The physical distance between the words could be considered a way to describe the relationship between words. The location of the words and their relationship to one another are captured in vectors.   
-
 We call the body of training text the *corpus* and the words that are broken down into their root form *tokens*. Consider the sentence `The sun sets in the west` which breaks down into key tokens `sun`, `set`, and `west`. Tokenization can be broken down into four main steps:
 
 1. Split the words in a text based on a rule. For example, split the words where there's a space between words.
