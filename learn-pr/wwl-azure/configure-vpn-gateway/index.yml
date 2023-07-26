@@ -29,14 +29,9 @@ subjects:
 units:
 - learn.wwl.configure-vpn-gateway.introduction
 - learn.wwl.configure-vpn-gateway.determine-uses
-- learn.wwl.configure-vpn-gateway.create-site-to-site-connections
-- learn.wwl.configure-vpn-gateway.create-gateway-subnet
-- learn.wwl.configure-vpn-gateway.create
 - learn.wwl.configure-vpn-gateway.determine-type
 - learn.wwl.configure-vpn-gateway.determine-gateway-sku-generation
-- learn.wwl.configure-vpn-gateway.create-local-network-gateway
 - learn.wwl.configure-vpn-gateway.setup-premises
-- learn.wwl.configure-vpn-gateway.create-vpn-connection
 - learn.wwl.configure-vpn-gateway.determine-high-availability-scenarios
 - learn.wwl.configure-vpn-gateway.knowledge-check
 - learn.wwl.configure-vpn-gateway.summary-resources
