@@ -31,7 +31,6 @@ products:
 subjects:
 - machine-learning
 units:
-- learn-wwl.start-ml-lifecycle-mlops.mlops-introduction
 - learn-wwl.start-ml-lifecycle-mlops.mlops-manage-ml
 - learn-wwl.start-ml-lifecycle-mlops.summary-resources
 badge: 
