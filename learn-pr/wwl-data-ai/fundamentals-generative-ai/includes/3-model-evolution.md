@@ -1,4 +1,8 @@
-Between 2010 and 2020, language modeling approaches increased in sophistication. One of the key advances in natural language processing was the development of embedding techniques in which text is broken down into tokens (words, phrases, or even partial words) and each token is assigned a vector value. In 2013, this approach was encapsulated in the Word2Vec algorithm, which uses a deep learning model to analyze a large corpus of text and assign vector values to each discrete word.
+Between 2010 and 2020, language modeling approaches increased in sophistication. One of the key advances in natural language processing was the development of embedding techniques in which text is broken down into tokens (words, phrases, or even partial words) and each token is assigned a vector value. 
+
+![A gif of the tokenization process.](../media/tokenization-pipeline.gif)
+
+In 2013, this approach was encapsulated in the Word2Vec algorithm, which uses a deep learning model to analyze a large corpus of text and assign vector values to each discrete word.
 
 Improvements in model design progressed models like Word2Vec to large language models like BERT and GPT. Commonly used large language models in Microsoft generative AI technologies include GPT-3 models for text and code-generation and GPT 4 models, next generation GPT optimized for chat interactions. These models can be used to design new models for specific purposes, such as DALL-E, which is based on GPT but designed for image generation. 
 
