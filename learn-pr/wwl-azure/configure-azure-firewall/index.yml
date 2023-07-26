@@ -27,6 +27,5 @@ subjects:
 - networking
 - cloud-security
 units:
-- learn.wwl.configure-azure-firewall.summary-resources
 badge:
   uid: learn.wwl.configure-azure-firewall.badge
