@@ -26,7 +26,7 @@ Many advancements have developed beyond Word2Vec. Today, large language models a
 
 Commonly used large language models in Microsoft generative AI technologies include Generative Pre-trained (GPT) models such as GPT-3 models for text and code-generation and GPT 4 models, next generation GPT optimized for chat interactions. These models can be used to design new models for specific purposes, such as DALL-E, which is based on GPT but designed for image generation. 
 
-To get a sense of a magnitude of difference between models, the GPT-3 model contains 175B parameters (weights) while GPT-4 contains trillions. These models are developed by OpenAI, a company that partners closely with Microsoft to develop LLMs and other AI solutions. OpenAI is best known as the company behind ChatGPT, an AI chatbot app based on a GPT LLM. Microsoft's partnership with OpenAI enables Azure OpenAI users to access the latest language model innovations.
+To get a sense of a magnitude of difference between models, the GPT-3 model contains 175 billion parameters (weights) while GPT-4 contains trillions. These models are developed by OpenAI, a company that partners closely with Microsoft to develop LLMs and other AI solutions. OpenAI is best known as the company behind ChatGPT, an AI chatbot app based on a GPT LLM. Microsoft's partnership with OpenAI enables Azure OpenAI users to access the latest language model innovations.
 
 Next we will take a closer look at how large language models work to create original content based on natural language input.
 
