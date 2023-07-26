@@ -18,7 +18,13 @@ Consumers typically use generative AI by interacting with the visual screen of a
 
 ## Generative AI capabilities
 
-Generative AI applications take in natural language input, known as **prompts**, and return a response.  
+Generative AI applications take in natural language input, known as **prompts**, and return a response. Consumers typically interact with generative AI that has been built into software applications through a chat interface. Developers build generative AI applications with large language models which are trained on massive volumes of text data. The sheer volume of training data and the way large language models are designed results in models that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. 
+
+Consider these scenarios where a software application helps you by producing: 
+
+- A bulleted list comparison between two types of cooking ingredients 
+- A birthday card image based on your description
+- Several suggested ways to start coding a solution to a programming problem
 
 Some examples of prompts include: 
 
