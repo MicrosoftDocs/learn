@@ -63,7 +63,7 @@ quiz:
     - content: "Using Azure OpenAI Studio's Chat playground."
       isCorrect: true
       explanation: ""
-    - content: "Using Bing Copilot."
+    - content: "Using Bing Search."
       isCorrect: false
       explanation: ""
     - content: "Using OpenAI's ChatGPT."
