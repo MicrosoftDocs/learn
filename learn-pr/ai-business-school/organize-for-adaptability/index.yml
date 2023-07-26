@@ -27,6 +27,5 @@ products:
 subjects:
 - modern-work
 units:
-- learn-wwl.organize-for-adaptability.understand-adaptability
 badge: 
   uid: learn-wwl.organize-for-adaptability.badge #add the uid for your achievement badge.
