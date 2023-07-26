@@ -1,5 +1,6 @@
 
 
+
 Data comes in many formats. In this challenge you have to parse the individual "Order IDs", and output the "OrderIDs" sorted and tagged as "Error" if they are not exactly four characters in length.
 
 1. Select and delete all code lines in the Visual Studio Code Editor.
