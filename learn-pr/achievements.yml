@@ -1982,3 +1982,8 @@ achievements:
   title: Introduction to AI technology for business leaders
   summary: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
   iconUrl: /training/achievements/ai-technology-for-business-leaders.svg
+- uid: learn.foster-an-ai-ready-culture-in-business.trophy
+  type: trophy
+  title: Discover ways to foster an AI-ready culture in your business
+  summary: In this learning path, you will hear from top Microsoft executives about a framework to drive the key changes that are necessary to become an AI -ready organization. You will be able to identify the successful implementations of AI and articulate relevant scenarios. You will be able to discuss a line of business specific and relevant uses cases in finance, marketing, sales, and customer service. And finally, you will be able to identify  AI solutions to implement in your organization based upon its maturity.
+  iconUrl: /training/achievements/foster-ai-ready-culture.svg
