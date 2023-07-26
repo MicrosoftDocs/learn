@@ -30,7 +30,6 @@ units:
 - learn.wwl.configure-vpn-gateway.introduction
 - learn.wwl.configure-vpn-gateway.determine-uses
 - learn.wwl.configure-vpn-gateway.determine-type
-- learn.wwl.configure-vpn-gateway.determine-gateway-sku-generation
 - learn.wwl.configure-vpn-gateway.setup-premises
 - learn.wwl.configure-vpn-gateway.determine-high-availability-scenarios
 - learn.wwl.configure-vpn-gateway.knowledge-check
