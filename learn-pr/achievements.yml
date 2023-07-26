@@ -1977,3 +1977,8 @@ achievements:
   title: Configure Azure VPN Gateway
   summary: Learn how to create VPN gateways and securely connect your company sites to Azure.
   iconUrl: /training/achievements/vpn-gateway-configure.svg
+- uid: learn.ai-technology-for-business-leaders.trophy
+  type: trophy
+  title: Introduction to AI technology for business leaders
+  summary: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+  iconUrl: /training/achievements/ai-technology-for-business-leaders.svg
