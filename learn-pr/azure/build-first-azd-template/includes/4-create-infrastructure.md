@@ -1,4 +1,4 @@
-The Azure Developer CLI (`azd`) can provision resources in Azure using infrastructure as code (IaC) files written in either Bicep or Terraform. Infrastructure as code allows you to define infrastructure resources and configurations in declarative definition files that reliably generate the same environments every time they're deployed. `azd` executes these files to create the Azure resources required to host your app. You can learn more about infrastructure as code in the [What is infrastructure as code?](/devops/deliver/what-is-infrastructure-as-code) training module. 
+The Azure Developer CLI (`azd`) can provision resources in Azure using infrastructure as code (IaC) files written in either Bicep or Terraform. Infrastructure as code allows you to define infrastructure resources and configurations in declarative definition files that reliably generate the same environments every time they're deployed. `azd` executes these files to create the Azure resources required to host your app. You can learn more about infrastructure as code in the [What is infrastructure as code?](/devops/deliver/what-is-infrastructure-as-code) documentation. 
 
 In this unit, you'll add Bicep code to your template to provision the necessary resources for your app. Previous knowledge of Bicep isn't required to complete this module. However, if you plan to work with `azd` templates extensively, it's a good idea to become familiar with at least the basics of Bicep or Terraform. Learn more about Bicep on the [Fundamentals of Bicep](/training/paths/fundamentals-bicep/) training path.
 
@@ -78,7 +78,7 @@ You can define and provision the required Azure resources for your app by updati
     This placeholder comment highlights where to include any additional resources you want to provision. We want to include the Bicep module you create for the App Service, so paste the following code snippet directly after the comment:
 
     ```bicep
-    module web 'web.bicep' = {
+    module web 'app.bicep' = {
       name: '${deployment().name}-app'
       scope: rg
       params: {
