@@ -4,11 +4,10 @@ title: Exercise - Complete a challenge to reverse words in a sentence
 metadata:
   title: Exercise - Complete a challenge to reverse words in a sentence
   description: "Exercise - Complete a challenge to reverse words in a sentence"
-  ms.date: 05/02/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/5-challenge-1.md)]
