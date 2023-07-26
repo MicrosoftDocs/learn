@@ -1,0 +1,42 @@
+### YamlMime:LearningPath
+uid: learn.intro-generative-ai
+metadata:
+  title: Introduction to generative AI
+  description: Learn 
+  brand: azure
+  ms.date: 07/26/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to generative AI
+summary: |
+  Generative AI is a form of artificial intelligence in which models are trained to generate new original content based on natural language input. In other words, you can describe a desired output in normal everyday language, and the model can respond by creating appropriate text, image, or even code output. 
+
+  Take this learning path to get started with generative AI. In it, you'll:
+  - Understand how large language models form the foundation of generative AI
+  - Describe how Azure OpenAI Service provides access to the latest generative AI technology
+  - Understand how generative AI applications, such as copilots, support efficiencies
+  - Describe how prompts and responses can be fine-tuned
+  - Describe how Microsoft's responsible AI principles drive ethical AI advancements
+prerequisites: Familiarity with Azure and the Azure portal.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles: 
+  - ai-engineer
+  - developer
+  - solution-architect
+  - student
+products: 
+  - azure-openai
+  - azure
+subjects: 
+  - cloud-computing
+  - data-ai
+modules:
+- learn.wwl.fundamentals-generative-ai
+- learn.wwl.explore-azure-openai
+- learn.wwl.responsible-generative-ai
+trophy:
+  uid: learn.intro-generative-ai.trophy
