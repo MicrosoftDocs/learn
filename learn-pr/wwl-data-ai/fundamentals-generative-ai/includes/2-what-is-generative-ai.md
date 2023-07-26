@@ -6,13 +6,13 @@ The important thing to remember is that we are trying to train the optimal model
 
 In the case of the store, the model may predict 10 items will be sold in a day. If at the end of the day the store sells 15 items, the actual label is 15. The difference between the predicted and the actual label is the error in the model.
 
-These approaches to AI have advanced to complete tasks of greater complexity. **Deep learning** developed as a subset of machine learning to address complex tasks using layers of algorithms.  
+These approaches to AI have advanced to complete tasks of greater complexity. **Deep learning** developed as a subset of machine learning to address complex tasks using layers of algorithms.   
 
 ## Language modeling
 
-In the beginning of the 2000's, deep learning algorithms were used to solve for language learning problems. These approaches are categorized as **Natural language processing** (NLP) methods, which enable machines to process and understand the context of language. NLP can do tasks, for example, like picking out all the email addresses in a document. 
+In the beginning of the 2000's, deep learning algorithms were used to solve for language learning problems. These approaches are categorized as **Natural language processing** (NLP) methods, which enable machines to process and understand the context of language.
 
-Today, using a mix of machine learning and deep learning capabilities, scientists have developed approaches for machines to understand the context of a document, and to create new content with **generative AI**. 
+Today, using a mix of machine learning and deep learning capabilities, scientists have developed approaches for machines to understand the context of a document, and to create new content with **generative AI**. Generative AI technologies, and most modern applications of artificial intelligence in general, have their origins in machine learning.  
 
 Consumers typically use generative AI by interacting with the visual screen of an application, or front-end user interface, that is often in the form of a chat window. Behind the scenes on the back-end, language models works to produce responses that appear on the screen.  
 
@@ -28,6 +28,4 @@ Some examples of prompts include:
 |Generate and understand images | "Create an image of an elephant eating a burger" | `An image` |
 |Generate and understand code | "Show me how to code a game of tic-tac-toe with Python" | `Code` |  
 
-We get responses that appear like the model understands our prompts because of language modeling. Getting a response to a prompt that does not make sense can be compared to getting a prediction with error.  
-
-Understanding how generative AI's language modeling works can give you a greater ability to apply its capabilities with less error and greater confidence. Next we will take a look at how large language models work to create original content based on natural language input.
+We get responses that appear like the model understands our prompts because of language modeling. Understanding how generative AI's language modeling works can give you a greater ability to apply its capabilities with greater confidence. Next we will take a look at how large language models work to create original content based on natural language input.
