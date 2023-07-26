@@ -24413,6 +24413,11 @@
       "source_path": "learn-pr/paths/ai-technology-for-business-leaders/index.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/foster-ai-ready-culture/index.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
