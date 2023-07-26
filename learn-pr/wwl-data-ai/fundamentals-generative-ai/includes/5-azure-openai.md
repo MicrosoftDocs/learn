@@ -16,6 +16,6 @@ Developers can work with these models in Azure OpenAI Studio, a web-based enviro
 
 ![Screenshot of Azure OpenAI Studio home page.](../media/studio-portal.png)
 
-Within Azure OpenAI Studio, you can deploy large language models and test them in Azure OpenAI Studio's Chat playground.
+Within Azure OpenAI Studio, you can deploy large language models, provide few-shot examples, and test them in Azure OpenAI Studio's Chat playground. 
 
 ![Screenshot of Azure OpenAI Studio chat playground.](../media/azure-openai-chat-playground.png)
