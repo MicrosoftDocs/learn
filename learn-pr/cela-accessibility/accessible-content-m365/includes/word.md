@@ -45,7 +45,7 @@ To add alt text to an image:
 
 ## Links
 
-Use meaningful link text rather than long web addresses. This makes links easier to understand for people who use screen readers. Avoid nonspecific display text such as \"click here\" or \"learn more.\" People who use screen readers often pull a list of links for a given page they're visiting, so if every link has similar, generic text, the links are difficult to tell apart and less useful to the user.
+Use meaningful link text rather than long web addresses. This makes links easier to understand for people who use screen readers. Avoid nonspecific display text such as "click here" or "learn more." People who use screen readers often pull a list of links for a given page they're visiting, so if every link has similar, generic text, the links are difficult to tell apart and less useful to the user.
 
 :::image type="content" source="../media/unique-links.png" alt-text="Screenshot that shows several links with descriptive and non descriptive text.":::
 
