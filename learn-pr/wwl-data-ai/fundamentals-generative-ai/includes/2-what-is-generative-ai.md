@@ -1,20 +1,18 @@
-**Artificial Intelligence** imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output. Since the mid-20th century, researchers, often known as *data scientists*, have worked on different approaches to AI, broadly through **Machine learning**, a branch of AI that combines computer science and mathematics. 
+**Artificial Intelligence** imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output. Since the mid-20th century, researchers, often known as *data scientists*, have worked on different approaches to AI, broadly through **Machine learning**, a branch of AI that combines computer science and mathematics. Most modern applications of artificial intelligence in general have their origins in machine learning.  
 
-Machine learning algorithms take in data like temperature and fits a model to the data, to make predictions like how how many units of ice cream a store may sell that day. The weather conditions in this case are *features*, factors that influence the result. The result in this example is number of units sold in the day and is known as the *label*. The relationship between the temperature and units of ice cream can be visualized in a graph.  
+Machine learning models try to capture the relationship between data with equations. These equations are created by taking in data (like temperature) and fitting a model to the data to make predictions (like how how many units of ice cream a store may sell that day). Temperature is a *feature*, a factor that influence the result. The result is the number of units sold in the day and is known as the *label*. 
+
+The relationship between the temperature and units of ice cream can be visualized in a graph. On the graph, the points on the graph describe what the average temperature was on a day when a certain number of ice cream units were sold. The red line can be thought of as a simple model captures this relationship. The model allows you to predict how many ice cream units can be sold based any temperature.  
 
 ![Screenshot of the relationship between temperature and ice cream units sold in a graph.](../media/temp-ice-cream-regression-example.png) 
 
-The important thing to remember is that we are trying to train the optimal model, one that solves a problem well. How well a model solves a problem can be quantified in what is known as evaluation metrics. 
-
-In the case of the store, the model may predict 10 items will be sold in a day. If at the end of the day the store sells 15 items, the actual label is 15. The difference between the predicted and the actual label is the error in the model.
-
-These approaches to AI have advanced to complete tasks of greater complexity. **Deep learning** developed as a subset of machine learning to address complex tasks using layers of algorithms.   
+How well a model solves a problem can be quantified in what is known as evaluation metrics. One evaluation metric is error, which we can think of the distance between an actual label and a predicted label. In the case of the store, the model may predict 10 items will be sold in a day. If at the end of the day the store sells 15 items, the actual label is 15. We can try to improve models by reducing the overall error.    
 
 ## Language modeling
 
-In the beginning of the 2000's, deep learning algorithms were used to solve for language learning problems. These approaches are categorized as **Natural language processing** (NLP) methods, which enable machines to process and understand the context of language.
+These approaches to AI have advanced to complete tasks of greater complexity. **Deep learning** developed as a subset of machine learning to address complex tasks using layers of algorithms. In the beginning of the 2000's, deep learning algorithms were used to solve for language learning problems. These approaches are categorized as **Natural language processing** (NLP) methods, which enable machines to process and understand the context of language.
 
-Today, using a mix of machine learning and deep learning capabilities, scientists have developed approaches for machines to understand the context of a document, and to create new content with **generative AI**. Generative AI technologies, and most modern applications of artificial intelligence in general, have their origins in machine learning.  
+Today, using a mix of machine learning and deep learning capabilities, scientists have developed approaches for machines to understand the context of a document, and to create new content with **generative AI**. 
 
 Consumers typically use generative AI by interacting with the visual screen of an application, or front-end user interface, that is often in the form of a chat window. Behind the scenes on the back-end, language models works to produce responses that appear on the screen.  
 
