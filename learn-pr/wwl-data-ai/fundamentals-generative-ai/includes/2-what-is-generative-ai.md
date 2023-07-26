@@ -10,7 +10,9 @@ Some examples of prompts include:
 |Generate and understand images | "Create an image of an elephant eating a burger" | `An image` |
 |Generate and understand code | "Show me how to code a game of tic-tac-toe with Python" | `Code` | 
 
-Consumers typically interact with generative AI that has been built into software applications through a chat interface. Developers build generative AI applications with large language models which are trained on massive volumes of text data. The sheer volume of training data and the way large language models are designed results in models that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. 
+Consumers typically interact with generative AI that has been built into software applications through a chat interface. OpenAI, a company that partners closely with Microsoft, is best known as the company behind ChatGPT, an AI chatbot app based on a GPT LLM. Microsoft's partnership with OpenAI enables Azure OpenAI users to access the latest language model innovations.
+
+Developers build generative AI applications like ChatGPT with large language models which are trained on massive volumes of text data. The sheer volume of training data and the way large language models are designed results in models that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. 
 
 Consider these scenarios where a software application helps you by producing: 
 

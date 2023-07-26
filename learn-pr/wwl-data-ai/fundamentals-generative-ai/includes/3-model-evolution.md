@@ -33,12 +33,12 @@ Vectors are assigned to each token during the training process, so that the repr
 
 The diagram above shows a simple example model in which each embedding has three dimensions. Real language models have many more dimensions; each of which relates to some kind of attribute of the word. Examples of attributes are: they are both commonly used as prepositions or they are both used in culinary terminology.
 
-## Model evolution
+## Advancements in models
 Many advancements have developed beyond Word2Vec. Today, large language models are commonly used not only to understand language, but to generate new content from natural language.
 
 Commonly used large language models in Microsoft generative AI technologies include Generative Pre-trained (GPT) models such as GPT-3 models for text and code-generation and GPT 4 models, next generation GPT optimized for chat interactions. These models can be used to design new models for specific purposes, such as DALL-E, which is based on GPT but designed for image generation. 
 
-To get a sense of a magnitude of difference between models, the GPT-3 model contains 175 billion parameters (weights) while GPT-4 contains trillions. These models are developed by OpenAI, a company that partners closely with Microsoft to develop LLMs and other AI solutions. OpenAI is best known as the company behind ChatGPT, an AI chatbot app based on a GPT LLM. Microsoft's partnership with OpenAI enables Azure OpenAI users to access the latest language model innovations.
+To get a sense of a magnitude of difference between models, the GPT-3 model contains 175 billion parameters (weights) while GPT-4 contains trillions.
 
 Next we will take a closer look at how large language models work to create original content based on natural language input.
 
