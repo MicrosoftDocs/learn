@@ -3,11 +3,3 @@ The futurist and novelist Arthur C Clarke is often quoted as observing that "any
 Generative AI creates new content based on natural language input. Behind the increasingly amazing generative AI technologies we have today and will see tomorrow, lies a long history of human ingenuity and endeavor. Examining this history can provide a context for generative AI and enable you to gain at least a high-level understanding and appreciation of how the magic trick is done. 
 
 In this module, you learn about some of the core concepts related to large language models and common uses of generative AI. You also learn how generative AI is being integrated into Microsoft technologies to power a new generation of intelligent applications. 
-
-## What will we be doing?
-
-The goal of this module is to: 
-- Understand generative AI's place in the development of artificial intelligence
-- Understand large language models and their role in intelligent applications 
-- Describe how Azure OpenAI supports intelligent application creation 
-- Describe examples of copilots and good prompts 
