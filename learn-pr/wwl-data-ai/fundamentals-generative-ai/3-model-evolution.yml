@@ -12,4 +12,4 @@ metadata:
   ms.subservice: openai
 durationInMinutes: 1
 content: |
-  [!include[](includes/4-model-evolution.md)]
+  [!include[](includes/3-model-evolution.md)]

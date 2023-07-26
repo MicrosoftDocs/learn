@@ -12,4 +12,4 @@ metadata:
   ms.subservice: openai
 durationInMinutes: 4
 content: |
-  [!include[](includes/3-large-language-models.md)]
+  [!include[](includes/4-large-language-models.md)]
