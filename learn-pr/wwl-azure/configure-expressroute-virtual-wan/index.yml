@@ -27,6 +27,5 @@ products:
 subjects:
 - virtual-machine
 units:
-- learn.wwl.configure-expressroute-virtual-wan.summary-resources
 badge:
   uid: learn.wwl.configure-expressroute-virtual-wan.badge
