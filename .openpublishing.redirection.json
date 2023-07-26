@@ -24318,6 +24318,11 @@
       "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/2-determine-expressroute-uses.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/configure-expressroute-virtual-wan/6-determine-uses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-azure-virtual-wan/",
+      "redirect_document_id": false
     }
   ]
 }
