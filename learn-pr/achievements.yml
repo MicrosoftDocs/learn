@@ -1997,3 +1997,8 @@ achievements:
   title: Discover how to foster an AI-ready culture in finance
   summary: This module is designed for finance and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
   iconUrl: /training/achievements/foster-ai-ready-culture-finance.svg
+- uid: learn-wwl.microsoft-approach-to-ai.badge
+  type: badge
+  title: Examine the Microsoft approach to artificial intelligence
+  summary: This module is a starting point for business decision makers who want to understand how Microsoft is creating products, services, and solutions to help organizations leverage Artificial Intelligence (AI). We’ll also help you understand how these technologies relate to business problems.
+  iconUrl: /training/achievements/microsoft-approach-to-ai.svg
