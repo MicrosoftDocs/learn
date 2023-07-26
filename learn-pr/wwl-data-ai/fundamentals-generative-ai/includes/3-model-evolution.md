@@ -1,11 +1,13 @@
 Between 2010 and 2020, language modeling approaches increased in sophistication. One of the key advances in natural language processing was the development of embedding techniques in which text is broken down into tokens (words, phrases, or even partial words) and each token is assigned a vector value. 
 
+## What are tokens?
 Picture all of the text in the world laid out page by page like a big map. Then imagine we circled one word, and drew a line between that word and another word, like drawing a line between two cities on a map. The physical distance between the words could be considered a way to describe the relationship between words. The location of the words and their relationship to one another are captured in vectors.   
 
 We call the body of training text the *corpus* and the words that are broken down into their root form *tokens*. Consider the sentence "The sun sets in the west." 
 
 ![A gif of the tokenization process.](../media/tokenization-pipeline.gif) 
 
+## Distance between tokens
 In 2013, this approach was encapsulated in the Word2Vec algorithm, which uses a deep learning model to analyze a large corpus of text and assign vector values to each discrete token.
 
 Vectors are assigned to each token during the training process, so that the representation for each token consist of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map. So for example, after training is complete, the vectors for "cat" and "dog" will likely be closer together along one dimension than, say, "skateboard"; and the vector for "cat" might be close to "meow" one a dimension in which "dog" is close to "bark". That way, we can represent semantic meaning by the distance between vectors. 
