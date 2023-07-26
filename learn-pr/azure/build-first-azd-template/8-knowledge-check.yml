@@ -15,7 +15,7 @@ durationInMinutes: 5
 content: |
 quiz:
   questions:
-  - content: "Which `azd` command can be used to create a new starter template?"
+  - content: "When building your own new template, which `azd` command can be used to create a new starter template?"
     choices:
     - content: "azd template"
       isCorrect: false
@@ -31,7 +31,7 @@ quiz:
       explanation: "Correct. `azd init` provides several different options for initializing new templates."
   - content: "What is the purpose of the .azure folder in an `azd` template?"
     choices:
-    - content: "It holds Azure environment configuration files for the template."
+    - content: "It holds Azure environment variables and configuration files for the template."
       isCorrect: true
       explanation: "Correct. The `.azure` folder stores various default configurations for your template's Azure environment."
     - content: "It contains the Azure Pipelines CI/Cd workflow files."
@@ -48,9 +48,9 @@ quiz:
     - content: "Defines the CI/CD pipeline for your `azd` template."
       isCorrect: false
       explanation: "Incorrect. The CI/CD pipeline is defined in the `azure-dev.yaml` file."
-    - content: "Defines and describes the apps that are included in your application and the Azure services they are deployed to."
+    - content: "Defines and describes the hosted services that are included in your app and the Azure services they are deployed to."
       isCorrect: true
-      explanation: "Correct. The `azure.yaml` file describes the services in your code, such as the language and corresponding Azure resources."
+      explanation: "Correct. The `azure.yaml` file describes the hosted services in your code, such as the language and corresponding Azure resources."
     - content: "Defines a Dev Container environment for the project."
       isCorrect: false
       explanation: "Incorrect. The `.devcontainer.json` file is used to set up dev containers for `azd` templates."
