@@ -1,3 +1,17 @@
+ Since the 1950's, researchers, often known as *data scientists*, have worked on different approaches to AI, broadly through **Machine learning**, a branch of AI that combines computer science and mathematics. Most modern applications of artificial intelligence in general have their origins in machine learning.  
+
+Machine learning models try to capture the relationship between data with equations. These equations are created by taking in data (like temperature) and fitting a model to the data to make predictions (like how how many units of ice cream a store may sell that day). Temperature is a *feature*, a factor that influence the result. The result is the number of units sold in the day and is known as the *label*. 
+
+The relationship between the temperature and units of ice cream can be visualized in a graph. On the graph, the points on the graph describe what the average temperature was on a day when a certain number of ice cream units were sold. The red line can be thought of as a simple model captures this relationship. The model allows you to predict how many ice cream units can be sold based any temperature.  
+
+![Screenshot of the relationship between temperature and ice cream units sold in a graph.](../media/temp-ice-cream-regression-example.png) 
+
+How well a model solves a problem can be quantified in what is known as evaluation metrics. One evaluation metric is error, which we can think of the distance between an actual label and a predicted label. In the case of the ice cream units, the model may predict 10 units will be sold in a day. If at the end of the day the store sells 15 units, the actual label is 15. We can try to improve models by reducing the overall error.
+
+## Language modeling
+
+Approaches to AI have advanced to complete tasks of greater complexity. **Deep learning** developed as a subset of machine learning to address complex tasks using layers of algorithms. In the beginning of the 2000's, data scientists began to use deep learning algorithms to solve for language learning problems. These approaches are categorized as **Natural language processing** (NLP) methods, which enable machines to process and understand the context of language.
+
 Between 2010 and 2020, language modeling approaches increased in sophistication. One of the key advances in natural language processing was the development of embedding techniques in which text is broken down into tokens (words, phrases, or even partial words) and each token is assigned a vector value. 
 
 ## What are tokens?
