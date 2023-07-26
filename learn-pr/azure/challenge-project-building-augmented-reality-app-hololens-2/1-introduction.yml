@@ -8,8 +8,8 @@ metadata:
     Introduction to building a HoloLens application and Project Document
   description: "This unit provides an introduction to building a HoloLens application and Project document."
   ms.date: 7/25/2023
-  author: {{tholewis}}
-  ms.author: {{tholewis}}
+  author: tholewis
+  ms.author: tholewis
   ms.topic: interactive-tutorial
 ###########################################################################
 ###
