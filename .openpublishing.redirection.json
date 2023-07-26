@@ -24508,6 +24508,11 @@
       "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/5-cognitive-search.md",
       "redirect_url": "https://learn.microsoft.com/ai/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/ai-business-school/microsoft-approach-to-ai/6-conversational-ai.md",
+      "redirect_url": "https://learn.microsoft.com/ai/",
+      "redirect_document_id": false
     }
   ]
 }
