@@ -8,7 +8,7 @@ Generative pre-trained transformer (GPT) models are excellent at both understand
 
 #### What does a response from a GPT model look like? 
 
-A key aspect of OpenAI's generative AI is that it takes an input, or **prompt**, to return a natural language, visual, or code response. GPT tries to infer, or guess, the context of the user's question based on the prompt.    
+A key aspect of OpenAI's generative AI is that it takes an input, or **prompt**, to return a natural language, visual, or code response. GPT tries to infer, or guess, the context of the user's question based on the prompt.
 
 GPT models are great at completing several natural language tasks, some of which include:
 
