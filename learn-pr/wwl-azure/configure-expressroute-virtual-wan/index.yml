@@ -29,7 +29,6 @@ subjects:
 units:
 - learn.wwl.configure-expressroute-virtual-wan.introduction
 - learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-uses
-- learn.wwl.configure-expressroute-virtual-wan.determine-expressroute-capabilities
 - learn.wwl.configure-expressroute-virtual-wan.determine-uses
 - learn.wwl.configure-expressroute-virtual-wan.knowledge-check
 - learn.wwl.configure-expressroute-virtual-wan.summary-resources
