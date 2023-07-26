@@ -12,11 +12,15 @@ Transformer models use attention (particularly self-attention) to predict words 
 #### Neural Networks enable calculations for token prediction 
 Neural networks are based on a transformer architecture. Neural networks are trained by passing huge volumes of data through multiple layers of "neurons" that apply calculations to data using "weights". The output from the final layer is compared to a known true value and the level of error is used to iteratively adjust the weights so the model predicts more accurately. 
 
+![Image of a neural network with layers.](../media/neural-network-layers-example.png)
+
 GPT models are transformer neural networks that interpret words (more accurately, linguistic tokens) as numeric vectors and predict the next in sequence. By using millions of token sequences, the model is trained to apply weights that result in correct predictions of completions (i.e. from a few words, the rest of the sentence can be predicted). 
 
 Mapping huge volume of data enables the model to learn language patters. The resulting model not only returns a sequence of words, it can return responses that make sense to humans because they are based in existing learned language patterns. 
 
 #### Common Models
-With all this complexity, you can imagine there is more than one way to solve for a problem. Each pre-trained model is a way of solving the problem of language understanding. Common transformer based LLMs include the BERT model (which is used to power Google search) and GPT models from OpenAI. 
+With all this complexity, you can imagine there is more than one way to solve for a problem. Each pre-trained model is a way of solving the problem of language understanding. Common transformer-based LLMs include the BERT model (which is used to power Google search) and GPT models from OpenAI. 
 
 All of these models can be improved or customized. These pre-trained models can be fed more information about how to behave. Using more information is called "few-shot" learning. Not using more information is known as "zero-shot" learning. 
+
+Next we will see how Microsoft provides access to large language models through Azure OpenAI.
