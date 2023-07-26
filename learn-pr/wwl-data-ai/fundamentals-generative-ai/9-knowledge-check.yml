@@ -25,7 +25,7 @@ quiz:
     - content: "Models that use deep learning to process and understand natural language on a massive scale."
       isCorrect: true
       explanation: "Correct. Large language models use deep learning to process and understand natural language on a massive scale."
-  - content: "What is an example of a task a generative AI application can help solve?"
+  - content: "What is an example of a potential task a generative AI application can help solve?"
     choices:
     - content: "Monitoring the temperature in a manufacturing facility."
       isCorrect: false
