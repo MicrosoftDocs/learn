@@ -8,8 +8,8 @@ metadata:
     Accessibility and Privacy Considerations
   description: "This unit describes how to create accessibility and privacy considerations for a HoloLens app prototype."
   ms.date: 7/25/2023
-  author: {{tholewis}}
-  ms.author: {{tholewis}}
+  author: tholewis
+  ms.author: tholewis
   ms.topic: interactive-tutorial
 ###########################################################################
 ###

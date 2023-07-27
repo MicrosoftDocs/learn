@@ -8,8 +8,8 @@ metadata:
     Developement Workflow and App Prototype
   description: "This unit describes how to create a development workflow and app prototype for a HoloLens app."
   ms.date: 7/25/2023
-  author: {{tholewis}}
-  ms.author: {{tholewis}}
+  author: tholewis
+  ms.author: tholewis
   ms.topic: interactive-tutorial
 ###########################################################################
 ###

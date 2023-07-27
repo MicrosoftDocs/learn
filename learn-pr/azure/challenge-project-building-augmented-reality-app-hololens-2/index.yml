@@ -6,8 +6,8 @@ metadata:
     Challenge project - Building an Augmented Reality app for HoloLens 2
   description: "This module is a challenge project where you'll build an Augmented Reality app for HoloLens 2. It will guide a developer on how to build an app end-to-end with help from looking at an existing sample."
   ms.date: 7/25/2023
-  author: {{tholewis}}
-  ms.author: {{tholewis}}
+  author: tholewis
+  ms.author: tholewis
   ms.topic: module-challenge-project # Please don't edit, used for our analytics
 ###########################################################################
 ###
