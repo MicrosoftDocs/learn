@@ -4,11 +4,10 @@ title: Exercise - Explore Clear() and Resize()
 metadata:
   title: Exercise - Explore Clear() and Resize()
   description: "Exercise - Explore Clear() and Resize()"
-  ms.date: 05/02/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-clear-resize.md)]
