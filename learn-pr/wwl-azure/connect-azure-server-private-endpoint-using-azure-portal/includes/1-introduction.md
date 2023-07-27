@@ -9,11 +9,11 @@ Imagine your work as a database administrator for a healthcare organization that
 
 By the end of this training module, participants will:
 
-1.  Understand the importance of using Azure Private Endpoint to establish secure connections to Azure SQL Server.
-2.  Learn how to configure and create an Azure Private Endpoint for Azure SQL Server in the Azure portal.
-3.  Gain insights into the network architecture and components involved in setting up an Azure Private Endpoint.
-4.  Understand how to validate and test the connection between the Azure Private Endpoint and Azure SQL Server.
-5.  Recognize the benefits of using Azure Private Endpoint for securing database connections and isolating network traffic.
+ -  Understand the importance of using Azure Private Endpoint to establish secure connections to Azure SQL Server.
+ -  Learn how to configure and create an Azure Private Endpoint for Azure SQL Server in the Azure portal.
+ -  Gain insights into the network architecture and components involved in setting up an Azure Private Endpoint.
+ -  Understand how to validate and test the connection between the Azure Private Endpoint and Azure SQL Server.
+ -  Recognize the benefits of using Azure Private Endpoint for securing database connections and isolating network traffic.
 
 ## Goals
 

@@ -1,2 +1,2 @@
 
-This module equipped you to connect to an Azure SQL server securely via Azure Private Endpoint in the Azure portal, enhancing your server communication security.
+This module has guided you in securely connecting to an Azure SQL server using Azure Private Endpoint via the Azure portal, thus improving your abilities in secure server communication.
