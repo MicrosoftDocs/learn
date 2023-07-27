@@ -1,18 +1,18 @@
-You want to implement end-to-end encryption for the shipping portal application. Encrypting all data between users and servers will help ensure that no unauthorized user can intercept and read the data.
+You want to implement end-to-end encryption for the shipping portal application. Encrypting all data between users and servers help ensure that no unauthorized user can intercept and read the data.
 
-In this unit, you'll set up the web application and the application gateway. Next, you'll create some self-signed SSL certificates and enable encryption in your backend pool to help secure the traffic from the application gateway to your servers.
+In this unit, you set up the web application and the application gateway. Next, you create some self-signed SSL certificates and enable encryption in your backend pool to help secure the traffic from the application gateway to your servers.
 
-The following image highlights the elements you'll configure in this exercise. You'll be setting up an application gateway by using Azure Application Gateway v2.
+The following image highlights the elements you configure in this exercise. You're setting up an application gateway by using Azure Application Gateway v2.
 
 :::image type="content" source="../media/4-exercise-elements.svg" alt-text="Diagram that highlights the elements (backend pool, SSL certificate, and HTTP settings) created in this exercise.":::
 
 ## Deploy a virtual machine and an application gateway
 
-1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and log in to the directory with access to the subscription in which you want to create resources.
+1. Open the [Azure Cloud Shell](https://shell.azure.com/?azure-portal=true) in your browser, and sign in to the directory with access to the subscription in which you want to create resources. We use the Bash shell environment for this exercise.
 
 1. Run the following command in the Cloud Shell to create a resource group for your resources. Replace `<resource group name>` with a name for your resource group, and `<location>` with the Azure region in which you'd like to deploy your resources.
 
-    ```azurecli
+    ```bash
     az group create --resource-group <resource group name> --location <location>
     ```
 
@@ -63,7 +63,7 @@ The following image highlights the elements you'll configure in this exercise. Y
 
    ![Warning about an unauthenticated server in Microsoft Edge.](../media/4-warning.png)
 
-    This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated. On this warning page, look for and select the link to proceed to the website; for example select **Go on to the webpage** or  select **Advanced** and then **Proceed**, or the equivalent. The result will take you to the home page for the shipping portal, as shown below. It's a sample app to test that the server is configured correctly.
+    This warning occurs because the web server is configured through a self-signed certificate that can't be authenticated. On this warning page, look for and select the link to proceed to the website; for example select **Go on to the webpage** or  select **Advanced** and then **Proceed**, or the equivalent. The result takes you to the home page for the shipping portal, as shown below. It's a sample app to test that the server is configured correctly.
 
     :::image type="content" source="../media/4-shippingportal.png" alt-text="Home page for the shipping portal in Microsoft Edge." loc-scope="other"::: <!-- no-loc -->
 
@@ -78,6 +78,14 @@ The following image highlights the elements you'll configure in this exercise. Y
       --query "[0].virtualMachine.network.privateIpAddresses[0]" \
       --output tsv)"
     ```
+
+1. Create a variable to store your private IP address.
+
+    ```bash
+    export privateip=<privateIP>
+
+    ```
+
 1. Set up the backend pool for Application Gateway by using the private IP address of the virtual machine.
 
     ```azurecli

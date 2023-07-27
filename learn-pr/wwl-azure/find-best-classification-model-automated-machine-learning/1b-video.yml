@@ -9,7 +9,6 @@ metadata:
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.custom:
-    - devx-track-python
 durationInMinutes: 38
 content: |
   [!include[](includes/1b-video.md)]
