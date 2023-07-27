@@ -16,11 +16,9 @@ After you add a guest user to the organization, send them a direct link to a sha
 
    The **New user** pane opens.
 
-1. Confirm **Invite user** is selected.
+1. Enter a display name and an email address to which you have access.
 
-1. Enter a name and an email address that you have access to.
-
-1. Select **Invite**. An invitation is sent to the email address you provided for the guest user. The **All users** pane appears. Notice that the user now appears in the list of users and has *Guest* as **User type**.
+1. Select **Review + invite**, then select **Invite**. An invitation is sent to the email address you provided for the guest user. The **All users** pane appears. Notice that the user now appears in the list of users and has *Guest* as **User type**. You might need to refresh to see the new user.
 
 ## Add guest users to a group
 
@@ -36,7 +34,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
 1. Select the account, and select **Select**. The **Members** pane for your developer group appears.
 
-   You now see the user in the list of members for this group.
+   You now see the user in the list of members for this group. You might need to refresh to see the new user.
 
 ## Add guest users to an application
 
@@ -48,7 +46,7 @@ After you add a guest user to the organization, send them a direct link to a sha
 
    The **Browse Azure AD Gallery** pane appears.
 
-1. Search for and select **DocuSign**. The **Docusign** pane appears.
+1. Search for and select **DocuSign**. Once the app is added, the **Docusign** pane appears.
 
 1. Select **Create**. The **Docusign | Overview** pane appears.
 
@@ -96,8 +94,6 @@ If the guest user didn't receive the first email invitation, you can resend an i
 
 1. Select the user. The **Profile** pane for the user appears.
 
-1. Under the **B2B collaboration** section, select the **Manage (resend invitation / reset status)** link. The **Manage invitations** pane appears.
+1. In the **B2B collaboration** section, select the **Resend invitation** link.
 
-1. Under **Email invitations** for **Resend invite**, select **Yes**, and then select **Yes** to confirm resending the invitation. The **Manage invitations** pane reappears.
-
-1. Select **Done**.
+1. Select **Resend**.
