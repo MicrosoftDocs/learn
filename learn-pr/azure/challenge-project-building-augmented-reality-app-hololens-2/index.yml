@@ -52,12 +52,12 @@ products: # see product taxonomy https://review.docs.microsoft.com/help/contribu
   - "hololens"
 
 units:
-- learn.challenge-project-building-augmented-reality-app-hololens-2.introduction
-- learn.challenge-project-building-augmented-reality-app-hololens-2.exercise
-- learn.challenge-project-building-augmented-reality-app-hololens-2.exercise
-- learn.challenge-project-building-augmented-reality-app-hololens-2.exercise
-- learn.challenge-project-building-augmented-reality-app-hololens-2.exercise
-- learn.challenge-project-building-augmented-reality-app-hololens-2.summary
+  - learn.challenge-project-building-augmented-reality-app-hololens-2.1-introduction
+  - learn.challenge-project-building-augmented-reality-app-hololens-2.3-exercise
+  - learn.challenge-project-building-augmented-reality-app-hololens-2.4-exercise
+  - learn.challenge-project-building-augmented-reality-app-hololens-2.5-exercise
+  - learn.challenge-project-building-augmented-reality-app-hololens-2.6-exercise
+  - learn.challenge-project-building-augmented-reality-app-hololens-2.7-summary
 
 badge:
   uid: |
