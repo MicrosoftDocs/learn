@@ -5,5 +5,5 @@ Using the knowledge acquired in this module, you implemented iSCSI to allow conn
 You can learn more by reviewing the following documents.
 
 - [iSCSI Target Server overview](/windows-server/storage/iscsi/iscsi-target-server?azure-portal=true)
-- [iSCSI Target Block Storage, How To](/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh848268(v=ws.11)?azure-portal=true)
+- [iSCSI Target Block Storage, How To](https://docs.microsoft.com/previous-versions/windows/it-pro/windows-server-2012-r2-and-2012/hh848268(v=ws.11)?azure-portal=true)
 - [iSCSI Target Server Scalability Limits](/windows-server/storage/iscsi/iscsi-target-server-limits?azure-portal=true)

@@ -3,11 +3,10 @@ uid: learn.wwl.implement-windows-server-iscsi
 metadata:
   title: Implement Windows Server iSCSI
   description: "Implement Windows Server iSCSI"
-  ms.date: 10/20/2021
+  ms.date: 07/27/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: windows-server 
 title: Implement Windows Server iSCSI
 summary: Learn about the core functionality, benefits, use cases, and implementation of Internet Small Computer Systems Interface (iSCSI) in Windows Server 2019.
 abstract: |
