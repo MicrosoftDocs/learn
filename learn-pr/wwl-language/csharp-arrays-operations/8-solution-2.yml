@@ -4,11 +4,10 @@ title: Review a solution to parse a string of orders, sort orders and tag possib
 metadata:
   title: Review a solution to parse a string of orders, sort orders and tag possible errors
   description: "Review a solution to parse a string of orders, sort orders and tag possible errors"
-  ms.date: 05/02/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 1
 content: |
   [!include[](includes/8-solution-2.md)]

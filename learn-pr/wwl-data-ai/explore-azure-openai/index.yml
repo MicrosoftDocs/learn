@@ -45,6 +45,7 @@ units:
 - learn.wwl.explore-azure-openai.understand-openai-code-generation
 - learn.wwl.explore-azure-openai.understand-openai-image-generation
 - learn.wwl.explore-azure-openai.describe-openai-responsible-ai
+- learn.wwl.explore-azure-openai.exercise-openai
 - learn.wwl.explore-azure-openai.knowledge-check
 - learn.wwl.explore-azure-openai.summary
 badge:
