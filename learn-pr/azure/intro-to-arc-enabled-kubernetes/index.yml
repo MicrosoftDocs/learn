@@ -13,15 +13,18 @@ metadata:
   ms.service: azure-arc
   ms.subservice: azure-arc-kubernetes
 title: Introduction to Azure Arc-enabled Kubernetes
-summary: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their operations.
+summary: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their hybrid cloud environments.
 abstract: |
-  - Learn about Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
-  - Learn how to connect Kubernetes clusters to Azure Arc.
-  - See how to use GitOps to manage Azure Arc-enabled Kubernetes cluster configurations.
-  - Find out how to integrate Azure Arc-enabled Kubernetes with Azure Monitor and Azure Policy.
+  - Describe Kubernetes, Azure Arc, and Azure Arc-enabled Kubernetes.
+  - Understand how to enhance Kubernetes environments by connecting Kubernetes clusters to Azure Arc.
+  - Understand how to deploy applications to Azure Arc-enabled Kubernetes clusters by using GitOps to manage configurations.
+  - Learn about Azure services that can be deployed to Azure Arc-enabled Kubernetes clusters.
+  - Understand how to use Azure Policy and Azure Monitor with Azure Arc-enabled Kubernetes.
+
 prerequisites: |
   For the best learning experience from this module, you need basic understanding and familiarity with the following technologies:
   - Containerization and Kubernetes architecture
+  - Basic understanding of managing Kubernetes clusters
   - Azure portal and Azure CLI
   - Azure Monitor and Azure Policy
   - GitOps principles and processes
