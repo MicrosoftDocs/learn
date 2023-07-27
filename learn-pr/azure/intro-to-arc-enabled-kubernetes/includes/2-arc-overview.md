@@ -1,4 +1,4 @@
-In this unit, you learn the basics of Kubernetes and Azure Arc, and their key capabilities, benefits, and challenges.
+In this unit, you learn the basics of Azure Arc and its key capabilities and benefits.
 
 ## Kubernetes basics
 

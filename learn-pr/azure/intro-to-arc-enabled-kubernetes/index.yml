@@ -40,7 +40,8 @@ products:
 - azure-monitor
 units:
 - learn.azure.intro-to-arc-enabled-kubernetes.1-introduction
-- learn.azure.intro-to-arc-enabled-kubernetes.2-kubernetes-arc-overview
+- learn.azure.intro-to-arc-enabled-kubernetes.2-arc-overview
+- learn.azure.intro-to-arc-enabled-kubernetes.3-kubernetes-overview
 - learn.azure.intro-to-arc-enabled-kubernetes.3-architecture-components
 - learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
 - learn.azure.intro-to-arc-enabled-kubernetes.5-policy
