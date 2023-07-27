@@ -1,4 +1,4 @@
-In this unit, you'll learn how to create your Azure Service Bus Premium namespace.
+In this unit, you learn how to create your Azure Service Bus Premium namespace.
 
 ## Introduction to Azure Service Bus
 
@@ -36,8 +36,8 @@ Start by creating the namespace. In Azure Service Bus, a namespace is a containe
     | Setting | Value | Description |
     | ------- | --- | ---- |
     | **Project Details** |
-    | Subscription | Concierge subscription | The subscription in which this new app is created. |
-    | Resource group | <rgn>[Sandbox resource group name]</rgn> | The name of the resource group in which to create your Service Bus namespace. In this exercise, you'll create the namespace in the resource group that was assigned when you activated the sandbox. |
+    | Subscription | Concierge subscription | The subscription used for the exercises in this module. |
+    | Resource group | <rgn>[Sandbox resource group name]</rgn> | The name of the resource group in which to create your Service Bus namespace. In this exercise, you create the namespace in the resource group that was assigned when you activated the sandbox. |
     | **Instance Details** |
     | Namespace name | [Globally unique name] | Enter a name that is unique in Azure.<br />If you want to use the format _salesteamapp_<_Company_><_year_>, your namespace name would look like the example _salesteamappContoso2022_. |
     | Location | Select from the dropdown | Choose from the free *sandbox regions* listed after this table. |
@@ -62,9 +62,9 @@ When the message queue has been created, **test-queue-jms** is listed under **Qu
 
 ## Get connection string to the namespace
 
-You'll use the namespace's connection string later in this training to connect to the Service Bus namespace from a JMS app.
+You use the connection string for this namespace later in this training, to connect to the Service Bus namespace from a JMS app.
 
-1. On the **Service Bus Namespace** page, select **Shared access policies** under **Settings** on the left menu. \
+1. On the **Service Bus Namespace** page, select **Shared access policies** under **Settings** on the left menu.
 1. Select **RootManageSharedAccessKey** on the **Shared access policies** page. 
-1. On the **SAS Policy** page, select the **Copy** button next to **Primary connection string** field. \
-1. Paste it and save it so that you can use it later in the training. 
+1. On the **SAS Policy** page, select the **Copy** button next to **Primary connection string** field.
+1. Copy it and save it so that you can use it later in the training.
