@@ -2,6 +2,7 @@
 
 
 
+
 Code challenges reinforce what you've learned and help you gain some confidence before continuing on.
 
 Many times you'll need to combine several of the ideas covered in this module into a single solution. You should work to decompose a larger problem into lots of mini-problems, then use the various ideas in this module to solve each mini-problem.

@@ -1,21 +1,21 @@
 ### YamlMime:Module
 uid: learn.tensorflow.intro-machine-learning-tensorflow
 metadata:
-  title: Going beyond Keras - customizing with TensorFlow
-  description: Learn how to build a machine learning model using TensorFlow.
-  ms.date: 07/07/2021
+  title: "Go beyond Keras: Customize with TensorFlow"
+  description: Learn how to build a machine learning model using lower-level TensorFlow concepts.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
   ms.custom: team=cloud_advocates
   ms.contributors: bstollnitz-08202021
-title: Going beyond Keras - customizing with TensorFlow
+title: "Go beyond Keras: Customize with TensorFlow"
 summary: If you've completed the first module and realized that you need extra flexibility to build or debug your model, then this module is for you. We'll show how you can create a simple neural network for image classification, but this time we'll use lower-level TensorFlow code and explain the foundational concepts needed to understand it. 
 abstract: |
-  In this module you will:
-  - Learn basic TensorFlow topics, such as tensors, variables and automatic differentiation.
+  In this module, you will:
+  - Learn basic TensorFlow topics, such as tensors, variables, and automatic differentiation.
   - Learn the difference between eager and graph execution.
-  - Re-implement the train, test, and prediction phases of an existing Keras project using TensorFlow. 
+  - Reimplement the train, test, and prediction phases of an existing Keras project using TensorFlow. 
 iconUrl: /training/achievements/tensor-intro.svg
 levels:
 - beginner
@@ -26,9 +26,9 @@ roles:
 products:
 - azure
 prerequisites: |
-  - Basic Python knowledge.
-  - Basic knowledge about how to use Jupyter Notebooks.
-  - Completion of module 1 of this learning path or knowledge of Keras.
+  - Basic Python knowledge
+  - Basic knowledge about how to use Jupyter Notebooks
+  - Completion of module 1 of this learning path or knowledge of Keras
 subjects:
 - development-tools
 units:

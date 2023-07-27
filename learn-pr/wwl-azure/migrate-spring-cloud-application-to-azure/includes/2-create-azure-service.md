@@ -13,7 +13,7 @@ To run from your workstation, you should have the following components installed
  -  Java and Spring Boot Visual Studio Code extension packs available from [Java extensions for Visual Studio Code](https://code.visualstudio.com/docs/java/extensions).
  -  Git for Windows 2.3.61 is available from [Git Downloads](https://git-scm.com/downloads).
  -  Apache Maven 3.8.5 available from [Apache Maven Project downloads](https://maven.apache.org/download.cgi)
- -  Java 8 and the Java Development Kit (JDK) available from [JD](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[K](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi)[ downloads](https://download.oracle.com/java/18/latest/jdk-18_windows-x64_bin.msi).
+ -  Java and the Java Development Kit (JDK) available from [JD](https://www.oracle.com/java/technologies/downloads/)[K](https://www.oracle.com/java/technologies/downloads/)[ downloads](https://www.oracle.com/java/technologies/downloads/).
  -  To download the instructions for this module, see [Deploying and Running Java apps in Azure Spring Apps](https://github.com/MicrosoftLearning/Deploying-and-Running-Java-apps-in-Azure-Spring-Cloud).<br>
 
 For Git installations, set the global configuration variables *user.email* and *user.name* by running the following commands from the Git Bash shell:
