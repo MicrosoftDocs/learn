@@ -3,7 +3,7 @@ uid: learn.azure.gather-metrics-from-blob-storage
 metadata:
   title: Gather metrics from your Azure Blob Storage containers
   description: Find out how to use Azure Storage Analytics to track the performance of your Blob Storage containers and to display that blob performance in your dashboard.
-  ms.date: 03/26/2019
+  ms.date: 07/27/2023
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
