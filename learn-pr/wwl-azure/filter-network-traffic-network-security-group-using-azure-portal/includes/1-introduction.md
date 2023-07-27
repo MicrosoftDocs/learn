@@ -3,7 +3,7 @@ Network security is a critical aspect of maintaining a secure and reliable infra
 
 ## Scenario
 
-Imagine you work as a cloud architect for a growing e-commerce company. The company has recently migrated its infrastructure to Microsoft Azure and wants to ensure that network traffic to their resources is secure and restricted to authorized sources. As the responsible architect, you need to implement effective network security measures using Azure NSG.
+Imagine your work as a cloud architect for a growing e-commerce company. The company has recently migrated its infrastructure to Microsoft Azure and wants to ensure that network traffic to their resources is secure and restricted to authorized sources. As the responsible architect, you need to implement effective network security measures using Azure NSG.
 
 ## Learning Objectives
 
