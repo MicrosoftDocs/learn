@@ -8,7 +8,7 @@ As a proof-of-concept exercise, you want to move some files into Azure Blob Stor
 
 3. In the **Search services and Marketplace** box, search for and select **Storage account**. The **Storage account** panel appears.
 
-4. Select **Create**. The **Create storage account** panel appears.
+4. Select **Create**. The **Create a storage account** panel appears.
 
 5. On the **Basics** tab, fill in the following values for each setting.
 
@@ -23,7 +23,7 @@ As a proof-of-concept exercise, you want to move some files into Azure Blob Stor
     | Performance | **Standard** |
     | Redundancy | **Geo-redundant storage (GRS)** |
 
-6. Select the **Advance** tab. In the **Blob storage** section, make sure that **access tier** is set to **Hot**.
+6. Select the **Advance** tab. Scroll down to the **Blob storage** section and make sure that **access tier** is set to **Hot**.
 
 7. Select **Review + create**. After validation passes, select **Create**.
 
@@ -51,7 +51,7 @@ Before you can add blobs to a storage account, you need to create a blob contain
 
    The **Containers** panel appears.
 
-2. In the **Containers** panel, select **Container**.
+2. In the **Containers** panel, select **+ Container**.
 
    The **New container** pane appears.
 
@@ -67,21 +67,21 @@ To upload a single file to the blob container:
 
 1. Open the **monitor-blobs-container** container, and then select **Upload**.
 
-2. On the **Upload blob** pane, select the folder icon.
+2. On the **Upload blob** pane, select **Browse for files**.
 
 3. In the **Open** dialog box, select a small text file from your local file system, and select **Open**.
 
-4. Select **Advanced** to view the advanced upload options.
+4. On the **Upload blob** pane, Select **Advanced** to view the advanced upload options.
 
 5. Select **Blob type**. In the drop-down list, the options are **Block blob**, **Page blob**, and **Append blob**. Ensure that **Block blob** is selected.
 
-6. Expend **Advanced**, and under **Block size**, select **64 KB** > **Upload**. Note when the file upload has finished.
+6. Under **Block size**, select **64 KiB**. Select **Upload** and note when the file upload has finished.
 
 To upload multiple files to the blob container:
 
 1. Select **Upload**.
 
-2. On the **Upload blob** panel, select the folder icon.
+2. On the **Upload blob** panel, select **Browse for files**.
 
 3. In the **Open** dialog box, select several graphics files from your local file system, and then select **Open**. Ensure that you have at least 50 MB of files selected.
 
@@ -173,16 +173,22 @@ Splitting a chart enables you to view more dimensions in the data, depending on 
 
 1. Select **Apply splitting**.
 
-2. In the **Splitting** oval, from the drop-down list, select **API name**.
+2. In the **Splitting** oval, from the **Values** drop-down list, select **API name**.
 
 3. View the output in the chart window. You should now have the following splits of the monitoring data:
 
     - **ListBlobs** (note this value)
     - **BlobPreflightRequest**
-    - **PutBlockList**
-    - **PutBlock**
-    - **ListContainers**
+    - **GetContainerProperties**
+    - **GetBlobServiceProperties**
+    - **PutBlob**
     - **GetBlobproperties**
+    - **PutBlockList**
+    - **GetContainerServiceMetadata**
+    - **ListContainers**
+    - **GetFileServiceProperties**
+    - **GetBlobTags**
+
 
 4. Select the **X** to the right of the **Splitting** oval.
 
@@ -206,7 +212,7 @@ You can customize charts in various ways, such as by changing the time range, ti
 
 2. Under **Time range**, select **Last 4 hours**. Note the ability to change from local to UTC/GMT time, as needed.
 
-3. Under **Time granularity**, select **5 minutes**, and then select **Apply**.
+3. Under **Time granularity**, select **1 hour**, and then select **Apply**.
 
 ## View data in other formats
 
