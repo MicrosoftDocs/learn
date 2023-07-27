@@ -1,28 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.challenge-project-building-augmented-reality-app-hololens-2.6-exercise
-title: |
-  Developement Workflow and App Prototype
+uid: learn.challenge-project-building-augmented-reality-app-hololens-2.6-exercise
+title: Developement Workflow and App Prototype
 metadata:
-  title: |
-    Developement Workflow and App Prototype
+  title: Developement Workflow and App Prototype
   description: "This unit describes how to create a development workflow and app prototype for a HoloLens app."
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
   ms.topic: interactive-tutorial
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
+  ms.prod: hololens
 durationInMinutes: 60
 content: |
   [!include[](includes/6-exercise.md)]

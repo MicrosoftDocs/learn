@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.challenge-project-building-augmented-reality-app-hololens-2.4-exercise
-title: |
-  Design and environmental considerations
+uid: learn.challenge-project-building-augmented-reality-app-hololens-2.4-exercise
+title: Design and environmental considerations
 metadata:
-  title: |
-    Design and environmental considerations
+  title: Design and environmental considerations
   description: "This unit describes how to create design and environmental considerations for a HoloLens app prototype."
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
   ms.topic: interactive-tutorial
+  ms.prod: hololens
 durationInMinutes: 60
 content: |
   [!include[](includes/4-exercise.md)]
