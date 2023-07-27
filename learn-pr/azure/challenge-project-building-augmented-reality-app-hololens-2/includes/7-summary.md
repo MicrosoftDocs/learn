@@ -12,4 +12,4 @@ You should now be familiar with the concepts:
 - Apply advanced MR development techniques using HoloLens 2.
 - Demonstrate the ability to develop a functional HoloLens 2 application through an end-to-end project.
 
-To learn more about Mixed Reality and create new and exciting immersive experiences or expand your knowledge, check out the [Mixed Reality Documentation](https://learn.microsoft.com/windows/mixed-reality/).
+To learn more about Mixed Reality and create new and exciting immersive experiences or expand your knowledge, check out the [Mixed Reality Documentation](/windows/mixed-reality/).

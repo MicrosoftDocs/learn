@@ -13,7 +13,7 @@ The team behind the Galaxy Explorer app put their design considerations into the
 
 :::image type="content" source="../media/galaxy-explorer-building-blocks.png" alt-text="Application building blocks from Galaxy Explorer app.":::
 
-They also provided [a case study](https://learn.microsoft.com/windows/mixed-reality/out-of-scope/case-study-creating-a-galaxy-in-mixed-reality) around how they thought through the challenge of how to produce a galaxy full of stars without overloading the GPU of the device. You'll be testing out various design considerations as the first interaction you create may not be feasible after doing some prototyping. It's iterated on throughout the process. You should assume that your project document changes over the life of the project.
+They also provided [a case study](/windows/mixed-reality/out-of-scope/case-study-creating-a-galaxy-in-mixed-reality) around how they thought through the challenge of how to produce a galaxy full of stars without overloading the GPU of the device. You'll be testing out various design considerations as the first interaction you create may not be feasible after doing some prototyping. It's iterated on throughout the process. You should assume that your project document changes over the life of the project.
 
 **Environmental Considerations:**
 
