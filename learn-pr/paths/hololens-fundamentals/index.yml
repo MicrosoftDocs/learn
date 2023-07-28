@@ -1,0 +1,32 @@
+### YamlMime:LearningPath
+uid: learn.hololens-fundamentals
+title: HoloLens Fundamentals
+summary: Learn the fundamentals of HoloLens device management, deployment, and app distribution.
+metadata:
+  title: HoloLens Fundamentals
+  description: Learn the fundamentals of HoloLens device management, deployment, and app distribution.
+  ms.date: 07/26/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  #ms.learn-contact: smmark
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+prerequisites: None
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+roles:
+- administrator
+- developer
+- technology-manager
+products: 
+- hololens
+subjects:
+- digital-application-innovation
+modules:
+- learn.introduction-to-hololens
+- learn.choose-deployment-strategy-hololens
+- learn.choose-distribution-hololens-app
+trophy:
+  uid: learn.hololens-fundamentals.trophy

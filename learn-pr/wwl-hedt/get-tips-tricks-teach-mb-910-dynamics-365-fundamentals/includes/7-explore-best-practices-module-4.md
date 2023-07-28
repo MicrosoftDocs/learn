@@ -28,4 +28,4 @@ Module 4 Demo
 Module 4 Labs
 
 - Lab 4.1: [Create and publish a knowledge article](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M04_Lab1_Create_and_publish_a_Knowledge_Article.md)
-- Lab 4.2: [Create and manage cases](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_M04_Lab2_Create_and_manage_Cases.md)
+- Lab 4.2: [Create and manage cases](https://github.com/MicrosoftLearning/MB-910T00A-Microsoft-Dynamics-365-Fundamentals-Customer-Engagement-Apps/blob/master/Instructions/Labs/LAB%5BMB-910%5D_LP04_M01_Lab1_Create_and_manage_Cases.md)
