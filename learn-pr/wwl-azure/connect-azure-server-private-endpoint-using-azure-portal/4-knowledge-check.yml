@@ -26,14 +26,8 @@ quiz:
     - content: "To enable direct connectivity to the SQL server from on-premises networks"
       isCorrect: false
       explanation: "Incorrect. Private Endpoint provides connectivity options, but it does not specifically enable direct connectivity from on-premises networks."
-    - content: "To provide a public IP address for accessing the SQL server over the internet"
-      isCorrect: false
-      explanation: "Incorrect. Private Endpoint is designed for private, secure connections and does not provide a public IP address for internet access."
   - content: "Which Azure service is used to create and manage an Azure Private Endpoint for an Azure?"
     choices:
-    - content: "Azure Virtual Network"
-      isCorrect: false
-      explanation: "Incorrect. While Azure Virtual Network is used in conjunction with Private Endpoint, it is not the specific service responsible for creating and managing Private Endpoints."
     - content: "Azure Private Link"
       isCorrect: true
       explanation: "Correct. Azure Private Link is the Azure service used to create and manage Private Endpoints. It allows you to securely connect to Azure services, including Azure SQL server, over a private network connection."
@@ -45,9 +39,6 @@ quiz:
       explanation: "Incorrect. Azure Firewall is a different networking service that provides network security and protection, but it is not directly involved in creating and managing Private Endpoints."
   - content: "What is the benefit of using an Azure Private Endpoint for connecting to an Azure SQL server?"
     choices:
-    - content: "Improved network performance and reduced latency"
-      isCorrect: false
-      explanation: "Incorrect. While Private Endpoint can improve network performance, its primary benefit is enhanced security, not specifically network performance."
     - content: "Direct public internet access to the SQL server"
       isCorrect: false
       explanation: "Incorrect. Private Endpoint is designed for private connections, and its purpose is to provide secure access without relying on public internet access."
@@ -59,9 +50,6 @@ quiz:
       explanation: "Incorrect. Network routing is managed through Azure networking features, but Private Endpoint does not specifically simplify network routing management."
   - content: "Can multiple Azure SQL servers share the same Azure Private Endpoint?"
     choices:
-    - content: "Yes, multiple SQL servers can share the same Private Endpoint."
-      isCorrect: false
-      explanation: "Incorrect. Private Endpoints are specific to each resource and cannot be shared."
     - content: "No, each SQL server requires its own Private Endpoint."
       isCorrect: true
       explanation: "Correct. Each Azure SQL server requires its own Azure Private Endpoint. Private Endpoints are specific to each resource and cannot be shared between multiple SQL servers. This ensures isolation and security between the SQL servers."

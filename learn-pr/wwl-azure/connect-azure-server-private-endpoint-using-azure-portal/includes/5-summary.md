@@ -1,10 +1,10 @@
 
-In completing this module, you will have learned how to efficiently connect an Azure SQL server using an Azure Private Endpoint via the Azure portal, thereby enhancing data security and streamlining data accessibility.
+In completing this module, you've acquired the skills to connect an Azure SQL server using an Azure Private Endpoint through the Azure portal, enabling you to enhance the security of your database communication.
 
-After completing this module, you should be able to:
+Upon completing this module, you should be able to:
 
- -  Understand the importance of using Azure Private Endpoint for secure database connections.
- -  Navigate and use the Azure portal to establish an Azure Private Endpoint.
- -  Connect an Azure SQL server via the established Azure Private Endpoint.
- -  Identify and troubleshoot common issues related to Azure Private Endpoint setup and connection.
- -  Monitor and manage the established connection for continual optimal security and performance.
+1.  Define the role and function of Azure Private Endpoints in Azure SQL.
+2.  Configure an Azure Private Endpoint using the Azure portal.
+3.  Connect an Azure SQL server via an Azure Private Endpoint.
+4.  Diagnose and resolve common connection issues between Azure SQL server and Azure Private Endpoint.
+5.  Understand best practices for secure connections to Azure SQL server using Azure Private Endpoints.
