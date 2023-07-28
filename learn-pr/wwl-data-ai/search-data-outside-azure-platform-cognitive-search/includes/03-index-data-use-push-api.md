@@ -25,7 +25,7 @@ To find the endpoint, api-version, and api-key go to the Azure portal.
 
 :::image type="content" source="../media/endpoint-api-version.png" alt-text="A screenshot of search explorer and finding the endpoint and api version." lightbox="../media/endpoint-api-version.png":::
 
-In the portal, navigate to your search service, then select **Search explorer**. The REST API endpoint is in the **Request URL** field. The first part of the URL is the endpoint (for example https://cog-search-with-adf.search.windows.net), and the query string shows the `api-version` (for example api-version=2021-04-30-Preview).
+In the portal, navigate to your search service, then select **Search explorer**. The REST API endpoint is in the **Request URL** field. The first part of the URL is the endpoint (for example ``` https://cog-search-with-adf.search.windows.net ```), and the query string shows the `api-version` (for example api-version=2021-04-30-Preview).
 
 :::image type="content" source="../media/search-api-keys.png" alt-text="A screenshot of the keys section of a search service." lightbox="../media/search-api-keys.png":::
 

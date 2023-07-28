@@ -1,6 +1,7 @@
 
 
-Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
+
+Code challenges reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Fraudulent order challenge
 
@@ -8,7 +9,7 @@ Earlier in this module, you set out to write code that would store Order IDs bel
 
 ## Code challenge - Report the Order IDs that need further investigation
 
-Your team has found a pattern. Orders that start with the letter "B" encounter fraud at a rate 25 times greater than the normal rate. You'll write new code that outputs the Order ID of new orders where the Order ID starts with the letter "B". This will be used by the fraud team to investigate further.
+Your team has found a pattern. Orders that start with the letter "B" encounter fraud at a rate 25 times greater than the normal rate. You write new code that outputs the Order ID of new orders where the Order ID starts with the letter "B". This will be used by the fraud team to investigate further.
 
 Use the following steps to complete this challenge.
 
@@ -37,13 +38,13 @@ Use the following steps to complete this challenge.
     B179
     ```
 
-    These values represent the fraudulent Order ID data that your application will use.
+    These values represent the fraudulent Order ID data that your application use.
 
 1. Create a `foreach` statement to iterate through each element of your array.
 
 1. Report the Order IDs that start with the letter "B".
 
-    You will need to evaluate each element of the array. Report the potentially fraudulent Order IDs by detecting the orders that start with the letter "B". To determine whether or not an element starts with the letter "B", use the `String.StartsWith()` method. Here's a simple example of how to use the `String.StartsWith()` method that you can adapt for your code:
+    You need to evaluate each element of the array. Report the potentially fraudulent Order IDs by detecting the orders that start with the letter "B". To determine whether or not an element starts with the letter "B", use the `String.StartsWith()` method. Here's a simple example of how to use the `String.StartsWith()` method that you can adapt for your code:
 
     ```c#
     string name = "Bob";
