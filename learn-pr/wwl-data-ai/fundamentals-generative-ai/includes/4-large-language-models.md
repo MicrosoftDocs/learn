@@ -1,8 +1,12 @@
-Large language models need to understand grammar, syntax, semantics, and other language patterns. The model learns the relationship of words to one another by taking in a vast amount of text data. In fact, for the models that we use today to be so good, they use terabytes of text data to train.
+Large language models understand grammar, syntax, semantics, and other language patterns. The model learns the relationship of words to one another by taking in a vast amount of text data. In fact, for the models that we use today to be so good, they use terabytes of text data to train.
+
+Large language models are designed to work with numeric data values. Numeric calculations are at the heart of all computer processing – fundamentally, the foundation of AI is mathematics. the goal of this exploration is simply to gain a conceptual understanding, an intuition if you will, of the principles on which common machine learning models work.
+
+This enables the attention layer to assign weight values for each token embedding and calculate a new vector for the token being considered.
 
 ## What is a pre-trained Large Language Model? 
 
-Large language models are designed to work with numeric data values. Numeric calculations are at the heart of all computer processing – fundamentally, the foundation of AI is mathematics. the goal of this exploration is simply to gain a conceptual understanding, an intuition if you will, of the principles on which common machine learning models work.
+
 
 #### Transformer architecture captures context
 Transformers are deep learning models that pass embedded token vectors to layers that train a model to predict sequences of text tokens – in other words, they can generate language by determining the most probable sequence of words to complete a stream of text. The original transformer model architecture defines two blocks of layers: a block of encoder layers that generate contextualized token representations for a sequence of text (for example, encoding the word “bark” differently depending on the context within the sequence of words; because “I heard a dog bark” means something different to “the bark of a tree”), and a block of decoder layers that take the output of the encoder and iteratively generate a probable output sequence. 
