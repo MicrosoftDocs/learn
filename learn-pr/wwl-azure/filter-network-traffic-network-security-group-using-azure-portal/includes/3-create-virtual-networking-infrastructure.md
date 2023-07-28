@@ -6,7 +6,7 @@ Azure **Virtual Network** is the fundamental building block for your private net
 :::image type="content" source="../media/virtual-network-qs-resources-292872a9.png" alt-text="Diagram showing an example of an Azure virtual network topology.":::
 
 
-**Why use an Azure Virtual network?**
+## Why use an Azure Virtual network?
 
 Azure virtual network enables Azure resources to securely communicate with each other, the internet, and on-premises networks.
 

@@ -26,14 +26,8 @@ quiz:
     - content: "To monitor performance and availability of Azure services"
       isCorrect: false
       explanation: "Incorrect. This is the role of Azure Monitor and Azure Application Insights."
-    - content: "To provision and manage virtual machines in Azure"
-      isCorrect: false
-      explanation: "Incorrect. This is the role of Azure Virtual Machines and Azure Virtual Machine Scale Sets."
   - content: "Which of the following is a valid network security rule in an NSG?"
     choices:
-    - content: "Allow inbound traffic from any source to port 80"
-      isCorrect: false
-      explanation: "Incorrect. This rule allows incoming traffic on port 80 from any source."
     - content: "Deny outbound traffic to a specific IP address"
       isCorrect: false
       explanation: "Incorrect. This rule blocks outbound traffic to a specific IP address."
@@ -54,9 +48,6 @@ quiz:
     - content: "By using Azure PowerShell commands"
       isCorrect: false
       explanation: "Incorrect. While possible, it is not the primary method for associating NSGs with resources."
-    - content: "By accessing the Azure portal and Defender for Cloud"
-      isCorrect: false
-      explanation: "Incorrect. The Azure portal and Defender for Cloud focuses on security posture and recommendations, not NSG association."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
     - content: "It is allowed by default"
@@ -68,6 +59,3 @@ quiz:
     - content: "It is logged for analysis"
       isCorrect: false
       explanation: "Incorrect. NSGs do not log traffic by default, but logging can be enabled for further analysis."
-    - content: "It is redirected to Defender for Cloud"
-      isCorrect: false
-      explanation: "Incorrect. Network traffic is not automatically redirected to Defender for Cloud."

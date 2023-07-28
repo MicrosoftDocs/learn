@@ -5,7 +5,7 @@ You can use an Azure network security group to filter network traffic between Az
 
 A network security group contains as many rules as desired, within Azure subscription limits. Each rule specifies the following properties:
 
-:::image type="content" source="../media/azure-network-security-group-rules-e86bda4a.png" alt-text="Screenshot showing a table with network security rule properties and explanations.":::
+:::image type="content" source="../media/azure-network-security-group-rules-e86bda4a.png" alt-text="IIlustration of a table showing network security rule properties and explanations.":::
 <br>
 
 Security rules are evaluated and applied based on the five-tuple (**1. source, 2. source port, 3. destination, 4. destination port, and 5. protocol**) information. You can't create two security rules with the same priority and direction. A flow record is created for existing connections. Communication is allowed or denied based on the connection state of the flow record. The flow record allows a network security group to be stateful. If you specify an outbound security rule to any address over port 80, for example, it's not necessary to specify an inbound security rule for the response to the outbound traffic. You only need to specify an inbound security rule if communication is initiated externally. The opposite is also true. If inbound traffic is allowed over a port, it's not necessary to specify an outbound security rule to respond to traffic over the port.
@@ -18,7 +18,7 @@ Existing connections may not be interrupted when you remove a security rule that
 
 You can deploy resources from several Azure services into an Azure virtual network. For a complete list, see Services that can be deployed into a virtual network. You can associate zero, or one, network security group to each virtual network subnet and network interface in a virtual machine. The same network security group can be associated to as many subnets and network interfaces as you choose.e following picture illustrates different scenarios for how network security groups might be deployed to **allow network traffic to and from the internet over TCP port 80**:
 
-:::image type="content" source="../media/network-security-group-interaction-6fb53fae.png" alt-text="Screenshot showing an example of how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80.":::
+:::image type="content" source="../media/network-security-group-interaction-6fb53fae.png" alt-text="Diagram showing an example of how network security groups might be deployed to allow network traffic to and from the internet over TCP port 80.":::
 
 
 > [!NOTE]
