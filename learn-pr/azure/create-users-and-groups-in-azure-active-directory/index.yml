@@ -3,7 +3,7 @@ uid: learn.azure.create-users-and-groups-in-azure-active-directory
 metadata:
   title: Create Azure users and groups in Azure Active Directory
   description: Learn how to create users and groups in Azure Active Directory.
-  ms.date: 03/21/2023
+  ms.date: 07/27/2023
   author: shlipsey3
   ms.author: sarahlipsey
   ms.topic: interactive-tutorial
