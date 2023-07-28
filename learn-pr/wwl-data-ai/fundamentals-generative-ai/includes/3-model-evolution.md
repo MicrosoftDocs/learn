@@ -12,7 +12,7 @@ We call the body of training text the *corpus* and the words that are broken dow
 
 ![A gif of the tokenization process.](../media/tokenization-pipeline.gif) 
 
-Next, all the unique tokens are assigned vectors.
+Next, all the unique tokens are assigned vectors. Numeric calculations are at the heart of all computer processing – fundamentally, the foundation of AI is mathematics. AI software applications allow users to take advantage of the math without doing calculations themselves.
 
 ## Embeddings
 The Word2Vec algorithm was developed in 2013. It uses a deep learning model to analyze a large corpus of text and assign vector values, such as [3,3,1], to each discrete token. Embeddings are numerical representations of information, which can come in the form of vectors. In this case, these embeddings capture the relationship between words in natural language.

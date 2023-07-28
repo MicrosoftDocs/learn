@@ -1,13 +1,11 @@
-Large language models (LLMs) understand grammar, syntax, semantics, and other language patterns. The model learns the relationship of words to one another by taking in a vast amount of text data. In fact, for the models that we use today to be so good, they use terabytes of text data to train.
-
-Large language models are designed to work with numeric data values. Numeric calculations are at the heart of all computer processing – fundamentally, the foundation of AI is mathematics. AI software applications allow users to take advantage of the math without doing calculations themselves. 
+Large language models (LLMs) understand grammar, syntax, semantics, and other language patterns. The model learns the relationship of words to one another by taking in a vast amount of text data. In fact, for the models that we use today to be so good, they use terabytes of text data to train. 
 
 ## Neural networks enable calculations 
 Neural networks are trained by passing huge volumes of data through multiple layers of "neurons" that apply calculations to data using "weights". The output from the final layer is compared to a known true value and the level of error is used to iteratively adjust the weights so the model predicts more accurately. We can visualize layers as math functions where solving one function is solving one layer, and allows the machine to move onto the next layer, which contains a function. 
 
 ![An example of a neural network.](../media/neural-network-layers-example.png)
 
-Neural networks enable calculations in transformer architecture. 
+Neural networks enable calculations in transformer architecture.
 
 ## Transformer architecture captures context
 Transformers are deep learning models that pass embedded token vectors to layers that train a model to predict sequences of text tokens – in other words, they can generate language by determining the most probable sequence of words to complete a stream of text. 
