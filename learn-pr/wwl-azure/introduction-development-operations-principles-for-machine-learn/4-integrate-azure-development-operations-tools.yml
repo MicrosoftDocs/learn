@@ -4,14 +4,13 @@ title: Integrate Azure Machine Learning with DevOps tools
 metadata:
   title: Integrate Azure Machine Learning with DevOps tools
   description: "Integrate Azure Machine Learning with DevOps tools"
-  ms.date: 06/07/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
   ms.custom:
-    - build-2023
-    - build-2023-dataai
-  ms.service: azure-devops
+  - build-2023
+  - build-2023-dataai
 azureSandbox: false
 labModal: false
 durationInMinutes: 9
