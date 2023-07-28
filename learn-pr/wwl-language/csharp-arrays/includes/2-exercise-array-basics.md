@@ -241,7 +241,7 @@ The elements of an array are just like any other variable value. You can assign,
 
 ### Initialize an array
 
-You can initialize an array during declaration just like would a regular variable. However, to initialize the elements of the array, you use a special syntax featuring curly braces.
+You can initialize an array during declaration just like you would a regular variable. However, to initialize the elements of the array, you use a special syntax featuring curly braces.
 
 1. Comment out the lines where you declare the `fraudulentOrderIDs` variable.
 
