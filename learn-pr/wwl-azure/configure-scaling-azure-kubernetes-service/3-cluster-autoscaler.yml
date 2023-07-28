@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-scaling-azure-kubernetes-service.cluster-autoscaler
+title: Cluster autoscaler
+metadata:
+  title: Cluster autoscaler
+  description: "Cluster autoscaler"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-cluster-autoscaler.md)]
