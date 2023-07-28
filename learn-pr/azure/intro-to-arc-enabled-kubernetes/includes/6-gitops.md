@@ -14,7 +14,7 @@ Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps
 
 The following diagram shows a GitOps flow that uses Flux to deploy cluster configurations and application updates.
 
-:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." "lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
+:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
 
 ## Configure GitOps
 
@@ -22,7 +22,7 @@ GitOps associates your Arc-enabled Kubernetes cluster with one or more file sour
 
 The following diagram shows the process of applying GitOps-based configurations to multiple Azure Arc-enabled clusters.
 
-:::image type="content" source="../media/6-arc-enabled-k8s-gitops.png" alt-text="Diagram showing the process of applying GitOps-based configuration to multiple Azure Arc-enabled clusters."  lightbox=source="../media/6-arc-enabled-k8s-gitops.png":::
+:::image type="content" source="../media/6-arc-enabled-k8s-gitops.png" alt-text="Diagram showing the process of applying GitOps-based configuration to multiple Azure Arc-enabled clusters."  lightbox="../media/6-arc-enabled-k8s-gitops.png":::
 
 GitOps is enabled in a Kubernetes cluster as a `Microsoft.KubernetesConfiguration/extensions/microsoft.flux` cluster extension resource. To create `fluxConfigurations`, the `microsoft.flux` extension must be installed in the cluster. The extension installs automatically when you create the first `Microsoft.KubernetesConfiguration/fluxConfigurations` instance in a cluster. You can also install the extension manually before you create your configurations.
 
