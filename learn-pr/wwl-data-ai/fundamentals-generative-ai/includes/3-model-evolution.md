@@ -27,5 +27,4 @@ one of the key elements is the inclusion is attention layers. These layers are w
 I heard a dog [bark]
 
 It’s important to remember that the attention layer is actually working with the vector embeddings for each token, not the actual text. This enables the attention layer to assign weight values for each token embedding and calculate a new vector for the token being considered. 
-#### Self-attention
-Transformer models use additional attention (particularly self-attention) to predict words from context (e.g. "Use machine leaning to train a model" vs "Catch a train to London") – in other words, the model learns to identify these two different types of “train” as different words with different semantic meaning. 
+

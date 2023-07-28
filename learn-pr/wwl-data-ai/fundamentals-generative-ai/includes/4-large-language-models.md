@@ -14,6 +14,9 @@ The relationship between words enables models to understand context. A major ste
  
 Transformers are deep learning models that pass embedded token vectors to layers that train a model to predict sequences of text tokens – in other words, they can generate language by determining the most probable sequence of words to complete a stream of text. The original transformer model architecture defines two blocks of layers: a block of encoder layers that generate contextualized token representations for a sequence of text (for example, encoding the word “bark” differently depending on the context within the sequence of words; because “I heard a dog bark” means something different to “the bark of a tree”), and a block of decoder layers that take the output of the encoder and iteratively generate a probable output sequence. 
 
+#### Self-attention
+Transformer models use additional attention (particularly self-attention) to predict words from context (e.g. "Use machine leaning to train a model" vs "Catch a train to London") – in other words, the model learns to identify these two different types of “train” as different words with different semantic meaning. 
+
 #### Neural Networks enable calculations for token prediction 
 Neural networks are based on a transformer architecture. Neural networks are trained by passing huge volumes of data through multiple layers of "neurons" that apply calculations to data using "weights". The output from the final layer is compared to a known true value and the level of error is used to iteratively adjust the weights so the model predicts more accurately. 
 

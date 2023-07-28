@@ -1,9 +1,10 @@
-Intelligent applications are software programs that complete tasks using AI. An example of an intelligent application is a **copilot**, an AI-powered assistant based on large language models that work alongside you to dramatically increase productivity and extend your capabilities. Copilots are based on a common architecture, so developers can build custom copilots for a variety of business-specific applications and services.
+The availability of LLMs has led to the emergence of a new kind of software application, often referred to as a copilot. Copilots are often integrated into other applications and provide a way for users to get help with common tasks from a generative AI model. Copilots are based on a common architecture, so developers can build custom copilots for a variety of business-specific applications and services.
 
-You may see copilots appear within the products that you already use, for example, as a chat screen feature that opens up next to your file. These copilots use the content that is created or searched for in the product as specific information for its results. 
+You may see copilots appear within the products that you already use, for example, as a chat screen feature that opens up next to your file. These copilots use the content that is created or searched for in the product as specific information for its results. For example, in the Microsoft Edge browser, a copilot enables you to use a GPT-4 model to summarize the page you’re currently browsing or to generate new content, as shown here:
 
 ![Screenshot of Edge copilot.](../media/Edge-copilot.png)
 
+## Tying it all together
 It is helpful to think of how the creation of a language model is related the process of creating an application that consumers use. When we discuss large language models we can think of this process: 
 
 - A large amount of data is used to train a large language model 
@@ -12,9 +13,7 @@ It is helpful to think of how the creation of a language model is related the pr
 - Developers can take the pre-trained model and customize is or leave it as is.
 - Developers deploy the model, which enables them to use the models in applications
 - Developers write other code, possibly to create a front and back end to an intelligent application. At this stage, developers can also give the application specific instructions for what to do with prompts. 
-- Consumers interact with the intelligent application by typing in a prompt.   
-
-## 
+- Consumers interact with the intelligent application by typing in a prompt.
 
 When we think about the question of how AI will impact our lives, copilots have the potential to revolutionize the way we work. Using generative AI, these copilots can help with first drafts, information synthesis, and strategic planning.   
 
