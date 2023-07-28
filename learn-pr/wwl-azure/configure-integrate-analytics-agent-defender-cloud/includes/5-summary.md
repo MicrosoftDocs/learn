@@ -1,2 +1,10 @@
 
-In this module, we focused on configuring and integrating a log analytics agent and workspace in Defender for Cloud in the Azure portal. We learned how to deploy and configure the agent on virtual machines and enable the necessary diagnostic settings. By creating a Log Analytics workspace and connecting it with the agent, we established a centralized location for storing and analyzing log data. This integration enables effective monitoring, threat detection, and incident response capabilities within Defender for Cloud, providing valuable insights into the security posture of our Azure environment.
+In completing this module, you'll gain valuable knowledge on configuring and integrating a Log Analytics agent and workspace in Microsoft's Defender for Cloud, enhancing security monitoring and data management capabilities.
+
+After completing this module, you should be able to:
+
+ -  Understand the importance and functionality of a Log Analytics agent and workspace in Defender for Cloud.
+ -  Configure a Log Analytics agent in the Defender for Cloud environment.
+ -  Create and manage a workspace in Defender for Cloud.
+ -  Integrate the Log Analytics agent with the workspace for streamlined data analysis and threat detection.
+ -  Troubleshoot common issues related to configuration and integration of Log Analytics in Defender for Cloud.
