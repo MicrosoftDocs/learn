@@ -5,6 +5,11 @@ Large language models need to understand grammar, syntax, semantics, and other l
 Large language models are designed to work with numeric data values. Numeric calculations are at the heart of all computer processing – fundamentally, the foundation of AI is mathematics. the goal of this exploration is simply to gain a conceptual understanding, an intuition if you will, of the principles on which common machine learning models work.
 
 #### Transformer architecture captures context
+Transformers are deep learning models that pass embedded token vectors to layers that train a model to predict sequences of text tokens – in other words, they can generate language by determining the most probable sequence of words to complete a stream of text. The original transformer model architecture defines two blocks of layers: a block of encoder layers that generate contextualized token representations for a sequence of text (for example, encoding the word “bark” differently depending on the context within the sequence of words; because “I heard a dog bark” means something different to “the bark of a tree”), and a block of decoder layers that take the output of the encoder and iteratively generate a probable output sequence. 
+
+
+
+
 The relationship between words enables models to understand context. A major step forward from embedding algorithms like Word2Vec was the development of the transformer model architecture. Transformer architecture is designed to predict the next word in a sequence based on the preceding text.  
  
 Transformers are deep learning models that pass embedded token vectors to layers that train a model to predict sequences of text tokens – in other words, they can generate language by determining the most probable sequence of words to complete a stream of text. The original transformer model architecture defines two blocks of layers: a block of encoder layers that generate contextualized token representations for a sequence of text (for example, encoding the word “bark” differently depending on the context within the sequence of words; because “I heard a dog bark” means something different to “the bark of a tree”), and a block of decoder layers that take the output of the encoder and iteratively generate a probable output sequence. 
@@ -17,6 +22,8 @@ GPT models are transformer neural networks that interpret words (more accurately
 Mapping huge volume of data enables the model to learn language patters. The resulting model not only returns a sequence of words, it can return responses that make sense to humans because they are based in existing learned language patterns. 
 
 ## most probable next word 
+The trained attention layer applies weights that predict the most probable token in the model’s vocabulary that is semantically aligned to the sequence so far.
+What all of this means, is that a transformer model such as GPT-4 (the model behind ChatGPT and Bing) is designed to take in a text input (called a prompt) and generate a syntactically correct output (called a completion). In effect, the “magic” of the model is that it has the ability to string a coherent sentence together. Note that this does not imply any “knowledge” or “intelligence” on the part of the model; just a large vocabulary and the ability to generate meaningful sequences of words. What makes a large language model like GPT-4 so powerful however, is the sheer volume of data with which it has been trained (public and licensed data from the Internet) and the complexity of the network. This enables the model to generate completions that are appropriate to the input and rooted in the training text corpus; often generating output that is indistinguishable from a human response to the same prompt.
 
 #### Common Models
 With all this complexity, you can imagine there is more than one way to solve for a problem. Each pre-trained model is a way of solving the problem of language understanding. Common transformer-based LLMs include the BERT model (which is used to power Google search) and GPT models from OpenAI. 

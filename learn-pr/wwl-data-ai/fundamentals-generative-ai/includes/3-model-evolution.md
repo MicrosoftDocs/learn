@@ -22,6 +22,10 @@ Vectors are assigned to each token during the training process, so that the repr
 The diagram above shows a simple example model in which each embedding has three dimensions. Real language models have many more dimensions; each of which relates to some kind of attribute of the word. Examples of attributes are: they are both commonly used as prepositions or they are both used in culinary terminology.
 
 #### Attention
+one of the key elements is the inclusion is attention layers. These layers are what enables the model to analyze the sequence of text tokens in context and determine which tokens most influence the next in sequence. In a decoder block, for each token being generated an attention layer takes the sequence of tokens up to that point (masked to avoid “peeking ahead”) and considers which of them are the most salient when considering what the next token should be. For example, given the sequence “I heard a dog”, the attention layer might assign greater weight to the tokens “heard” and “dog” when considering the next word in the sequence, like this:
 
+I heard a dog [bark]
+
+It’s important to remember that the attention layer is actually working with the vector embeddings for each token, not the actual text. This enables the attention layer to assign weight values for each token embedding and calculate a new vector for the token being considered. 
 #### Self-attention
 Transformer models use additional attention (particularly self-attention) to predict words from context (e.g. "Use machine leaning to train a model" vs "Catch a train to London") – in other words, the model learns to identify these two different types of “train” as different words with different semantic meaning. 

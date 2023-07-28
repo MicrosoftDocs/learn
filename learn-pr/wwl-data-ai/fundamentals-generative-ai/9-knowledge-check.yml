@@ -29,13 +29,13 @@ quiz:
     choices:
     - content: "Monitoring the temperature in a manufacturing facility."
       isCorrect: false
-      explanation: ""
+      explanation: "Anomaly detection is an AI task, but not a generative AI task."
     - content: "Generating new protein sequences that aid in drug discovery for patients with rare diseases."
       isCorrect: true
-      explanation: ""
+      explanation: "Producing new suggestions for protein sequences is a generative AI task."
     - content: "Collecting real time data and storing it in a database."
       isCorrect: false
-      explanation: ""
+      explanation: "Real-time data can be used to support AI tasks, but the storage of real-time data is not in itself a generative AI task."
   - content: "What is the purpose of assigning vectors to each word during the training process of a Large Language Model?"
     choices:
     - content: "To represent semantic meaning by the distance between vectors."
@@ -58,14 +58,3 @@ quiz:
     - content: "Copilots can only be used for certain natural language tasks like summarizing text."
       isCorrect: false
       explanation: "Incorrect. Copilots can be built on large language models that have a multitude of capabilities, from text to code to image generation and beyond."
-  - content: "How can you test prompts on large language models deployed with Azure OpenAI Service?"
-    choices:
-    - content: "Using Azure OpenAI Studio's Chat playground."
-      isCorrect: true
-      explanation: ""
-    - content: "Using Bing Search."
-      isCorrect: false
-      explanation: ""
-    - content: "Using OpenAI's ChatGPT."
-      isCorrect: false
-      explanation: ""
