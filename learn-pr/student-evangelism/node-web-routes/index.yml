@@ -7,6 +7,7 @@ metadata:
   author: clarkio
   ms.author: chnoring
   ms.topic: interactive-tutorial
+  ms.devlang: nodejs
 title: Introduction to route management in Node.js with JavaScript
 summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript.
 abstract: |

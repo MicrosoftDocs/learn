@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.service: azure-javascript
+  ms.devlang: nodejs
 title: Introduction to Node.js
 summary: "Learn about Node.js: what it is, how it works, and when to use it."
 abstract: |
