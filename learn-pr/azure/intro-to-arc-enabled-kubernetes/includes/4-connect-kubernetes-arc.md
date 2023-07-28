@@ -33,4 +33,3 @@ After you deploy the agent on a cluster, you can manage the cluster in Azure alo
 Azure Arc-enabled Kubernetes provides a *cluster connect* feature that lets you access Arc-enabled Kubernetes clusters from anywhere, allowing for interactive development and debugging. This feature lets you securely connect to your clusters without requiring any inbound port to be enabled on the firewall. A reverse proxy agent that runs on the cluster can securely start a session with the Azure Arc service in an outbound manner.
 
 You can use cluster connect to provide cluster access to Azure services for custom locations and their deployed resources. You can use hosted agents or runners from Azure Pipelines, GitHub Actions, or any hosted continuous integration and continuous deployment (CI/CD) service to deploy applications to on-premises clusters.
-

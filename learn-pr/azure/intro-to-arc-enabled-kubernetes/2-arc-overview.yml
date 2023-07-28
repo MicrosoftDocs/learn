@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-arc-enabled-kubernetes.2-arc-overview
 metadata:
-  title: Overview of Kubernetes and Azure Arc
-  description: Learn about the basics of Kubernetes and Azure Arc, and their key benefits, capabilities, and challenges.
+  title: Overview of Azure Arc
+  description: Learn about the basics of Azure Arc and its key capabilities and benefits.
   ms.date: 01/05/2023
   author: JnHs
   ms.author: jenhayes
@@ -11,7 +11,7 @@ metadata:
   ms.custom:
   - e2e-hybrid
   - event-tier1-build-2022
-title: Overview of Kubernetes and Azure Arc
+title: Overview of Azure Arc
 durationInMinutes: 9
 content: |
   [!include[](includes/2-arc-overview.md)]

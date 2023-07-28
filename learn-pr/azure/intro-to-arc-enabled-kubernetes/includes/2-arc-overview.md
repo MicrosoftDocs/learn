@@ -12,7 +12,7 @@ Azure Arc helps enable automation, single-pane-of-glass monitoring, and comprehe
 
 The following diagram shows how Azure Arc operates across multicloud and on-premises Kubernetes environments.
 
- :::image type="content" source="../media/2-azure-arc.png" alt-text="Diagram showing how Azure Arc operates across multicloud and on-premises Kubernetes environments.":::
+ :::image type="content" source="../media/2-azure-arc.png" alt-text="Diagram showing how Azure Arc operates across multicloud and on-premises Kubernetes environments." lightbox="../media/2-azure-arc.png":::
 
 ## Azure Arc support for non-Azure resources
 
