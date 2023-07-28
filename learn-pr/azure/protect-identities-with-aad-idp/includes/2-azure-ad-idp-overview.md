@@ -14,7 +14,7 @@ Your company's specialist expertise is in retail, not in identity protection. It
 
 ## What are risks?
 
-Risks can be described as suspicious activity and actions by users when they sign in, or when they take actions after signing in. That's why risks are categorized in two ways: as user risks and sign-in risks.
+Risks are categorized in two ways: as *user risks* and *sign-in risks*. User risks can be described as suspicious activity and actions by users when they sign in, and sign-in risks as actions that users take after signing in.
 
 ### User risk
 
@@ -33,7 +33,7 @@ Here, Identity Protection scrutinizes each authentication request to judge wheth
 | --- | --- |
 | Unfamiliar sign-in properties | Identity Protection remembers and learns a particular user's sign-in history. For example, when a sign-in occurs from a location that's unusual for the user, a risk detection is triggered. |
 | Atypical travel | For example, when two or more sign-ins occur from distant locations in an unrealistically short time period, a risk detection is raised. |
-| Malware-linked IP address | For example, if the IP address where the sign-in originates is known to have been in contact with an active bot server, a risk detection is raised. |
+| Malware-linked IP address | For example, if it's known that the IP address where the sign-in originates has been in contact with an active bot server, a risk detection is raised. |
 | Anonymous IP address | For example, a sign-in originates from an anonymous IP address. Because attackers can use these details to hide their real IP address or location, a risk detection is raised. |
 
 ## Azure Active Directory Identity Protection workflow

@@ -4,7 +4,7 @@ You work for a retail organization that has its identities stored in Azure AD. T
 
 In this module, you explore what Identity Protection is and how to use it. First, you detect risks by using risk policies. Then, you investigate detected risks and remediate them.
 
-By the end of this module, you'll know how to protect your organization's identities from identity-based risks by using Identity Protection.
+Our goal is that by the end of this module, you know how to protect your organization's identities from identity-based risks by using Identity Protection.
 
 ## Learning objectives
 

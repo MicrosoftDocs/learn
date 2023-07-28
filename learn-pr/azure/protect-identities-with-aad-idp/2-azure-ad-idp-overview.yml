@@ -30,7 +30,7 @@ quiz:
     choices:
     - content: User risk
       isCorrect: false
-      explanation: A user risk is the type of risk that can cause, or is caused by, a user's identity or account being compromised.
+      explanation: A user risk is suspicious activity and actions by users when they sign in. Often, these risks cause a user's identity or account to be compromised.
     - content: Sign-in risk
       isCorrect: true
       explanation: Azure AD Identity Protection scrutinizes each authentication request to judge whether the owner of the identity has authorized it.
