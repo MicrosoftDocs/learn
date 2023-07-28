@@ -3,25 +3,25 @@ uid: learn.build-interactive-components-blazor-web-apps
 metadata:
   moduleType: standard
   title: Build rich interactive components with Blazor web apps
-  description: In this Blazor module, you'll learn how to interoperate with JavaScript code, use templated components, and handle component lifecycle events.
-  ms.date: 02/02/2023
+  description: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
+  ms.date: 07/25/2023
   author: IEvangelist
   ms.author: dapine
   ms.topic: interactive-tutorial
   ms.prod: dotnet-architecture
   ms.technology: blazor 
 title: Build rich interactive components with Blazor web apps
-summary: In this Blazor module, you'll learn how to interoperate with JavaScript code, use templated components, and handle component lifecycle events.
+summary: Learn how to interoperate Blazor apps with JavaScript code, use templated components, and handle component lifecycle events.
 abstract: |
-  By the end of this module, you'll be able to:
-    - Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps
+  In this learning module, you learn to:
+    - Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps.
     - Handle events in the lifecycle of Blazor components.
-    - Create reusable components that can be incorporated into Blazor Server apps using templates
+    - Create reusable template components that you can incorporate into Blazor apps.
 prerequisites: |
   - Familiarity with HTML, CSS, and JavaScript web development.
-  - Ability to write C# code at a novice level.
-  - [.NET SDK](https://dotnet.microsoft.com/download/dotnet/7.0).
-  - IDE of choice (shown with [VS Code](https://code.visualstudio.com)).
+  - Novice ability to write C# code.
+  - The [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed.
+  - An integrated development environment (IDE) such as [Visual Studio Code](https://code.visualstudio.com).
 iconUrl: /training/achievements/build-interactive-components-blazor-web-apps.svg
 levels:
   - intermediate
