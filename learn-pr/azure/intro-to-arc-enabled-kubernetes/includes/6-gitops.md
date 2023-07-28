@@ -14,7 +14,7 @@ Azure Arc-enabled Kubernetes clusters rely on Flux, a popular open-source GitOps
 
 The following diagram shows a GitOps flow that uses Flux to deploy cluster configurations and application updates.
 
-:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
+:::image type="content" source="../media/6-arc-enabled-kubernetes-cicd-flow.png" alt-text="Diagram of the GitOps flow showing an application update." "lightbox="../media/6-arc-enabled-kubernetes-cicd-flow.png":::
 
 ## Configure GitOps
 
