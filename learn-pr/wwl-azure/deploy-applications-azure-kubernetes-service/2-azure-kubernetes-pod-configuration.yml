@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.deploy-applications-azure-kubernetes-service.azure-kubernetes-pod-configuration
+title: Configure Azure Kubernetes pods using Azure Policy
+metadata:
+  title: Configure Azure Kubernetes pods using Azure Policy
+  description: "Configure Azure Kubernetes pods using Azure Policy"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-kubernetes-pod-configuration.md)]
