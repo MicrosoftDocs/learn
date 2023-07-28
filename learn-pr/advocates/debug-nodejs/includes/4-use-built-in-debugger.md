@@ -26,7 +26,7 @@ Before we dive into the exercise, we first have to prepare the code and environm
 
 1. Paste this code into the editor pane of the terminal:
 
-    ```js
+    ```javascript
     function fibonacci(n) {
       let n1 = 0;
       let n2 = 1;
@@ -120,7 +120,7 @@ You should see the result `[ 3, 1 ]` in the console.
 The code hasn't yet updated the value of the `sum` variable for the current iteration, which is `3` (three).
 The value of the `sum` variable still shows the Fibonacci number for the previous iteration. Here's the calculation we're using in the code to get the current `sum` value:
 
-```js
+```javascript
 fibonacci(2) = fibonacci(0) + fibonacci(1)
              = 0 + 1
              = 1
