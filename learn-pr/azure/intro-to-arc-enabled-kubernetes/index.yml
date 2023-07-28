@@ -46,6 +46,7 @@ units:
 - learn.azure.intro-to-arc-enabled-kubernetes.5-services
 - learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
 - learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-policy-monitor
-- learn.azure.intro-to-arc-enabled-kubernetes.8-summary
+- learn.azure.intro-to-arc-enabled-kubernetes.8-knowledge-check
+- learn.azure.intro-to-arc-enabled-kubernetes.9-summary
 badge:
   uid: learn.azure.intro-to-arc-enabled-kubernetes.badge
