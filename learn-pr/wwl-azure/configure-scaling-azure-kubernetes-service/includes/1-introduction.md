@@ -1,5 +1,5 @@
 
-This module covers the core concepts of scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes, using the Horizontal pod autoscaler, using the Cluster autoscaler, and integrating with Azure Container Instances (ACI).
+This module covers the scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
 
 ## Scenario
 
@@ -7,7 +7,7 @@ Imagine you're a software developer working for a company that has recently migr
 
 ## Learning Objectives
 
-The table of contents for this module includes
+After completing this module, you'll be able to:
 
  -  Manually scaling pods or nodes
  -  Using the Horizontal pod autoscaler
