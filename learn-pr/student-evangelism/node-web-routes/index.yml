@@ -7,9 +7,10 @@ metadata:
   author: clarkio
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.devlang: nodejs
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript
 title: Introduction to route management in Node.js with JavaScript
-summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript.
+summary: Learn how to set up a Node.js API with multiple routes and handle incoming HTTP requests by using JavaScript. This module uses JavaScript with the Express.js server framework in the Node.js runtime.
 abstract: |
   In this module, you will:
   - Learn about API route management 

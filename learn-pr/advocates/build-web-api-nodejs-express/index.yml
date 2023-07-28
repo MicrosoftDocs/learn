@@ -8,9 +8,10 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
-  ms.devlang: nodejs
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript
 title: Build a web API with Node.js and Express
-summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies.
+summary: Use Express for Node.js to build RESTful APIs. Create and configure middleware to add things like logging, authentication and authorization, and other web development technologies. This module uses JavaScript with the Express.js server framework in the Node.js runtime.
 abstract: |
   By the end of this module, you'll be able to:
 
