@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-kubernetes-service-cluster.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/8-summary.md)]
