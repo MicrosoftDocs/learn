@@ -14,7 +14,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: Which of the following is *not* a valid blob type in Azure Storage?
+  - content: Which of the following types is *not* a valid blob type in Azure Storage?
     choices:
     - content: Page blob
       isCorrect: false
@@ -24,7 +24,7 @@ quiz:
       explanation: 'Append blobs are a valid blob type in Azure Storage.'
     - content: Text blob
       isCorrect: true
-      explanation: 'Text blobs are not a valid blob type in Azure Storage. The only valid types are page blobs, append blobs, and block blobs.'
+      explanation: "Text blobs aren't a valid blob type in Azure Storage. The only valid types are page blobs, append blobs, and block blobs."
     - content: 'Block blob'
       isCorrect: false
       explanation: 'Block blobs are a valid blob type in Azure Storage.'
@@ -42,7 +42,7 @@ quiz:
     - content: Scatter
       isCorrect: true
       explanation: 'Scatter charts are best for data that varies rapidly over time.'
-  - content: 'Which of the following types of content cannot be added to a dashboard Markdown tile?'
+  - content: "Which of the following types of content can't be added to a dashboard Markdown tile?"
     choices:
     - content: Video
       isCorrect: false
@@ -55,7 +55,7 @@ quiz:
       explanation: 'Markdown content can be added to a dashboard Markdown tile.'
     - content: JavaScript
       isCorrect: true
-      explanation: 'JavaScript content cannot be added to a dashboard Markdown tile.'
+      explanation: "JavaScript content can't be added to a dashboard Markdown tile."
   - content: 'Which of the following security principals can access shared dashboards in Azure?'
     choices:
     - content: Only individual internal user assignments
