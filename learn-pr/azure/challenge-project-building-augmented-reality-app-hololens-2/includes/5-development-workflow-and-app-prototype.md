@@ -25,4 +25,4 @@ Develop a functional prototype of the HoloLens 2 app. Utilize the appropriate so
 
 The Galaxy Explorer app code and documentation can be [downloaded from GitHub](https://github.com/microsoft/GalaxyExplorer). Feedback can be provided as a GitHub issue and allowing open source contributions from folks who fork the code and issue a pull request.
 
-:::image type="content" source="../media/galaxy-explorer-on-github.png" alt-text="Screenshot of homepage for Galaxy Explorer sample on GitHub." lightbox="../media/galaxy-explorer-on-github-expanded.jpeg":::
+:::image type="content" source="../media/galaxy-explorer-github.png" alt-text="Screenshot of homepage for Galaxy Explorer sample on GitHub." lightbox="../media/galaxy-explorer-github-expanded.jpeg":::

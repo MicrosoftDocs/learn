@@ -1,21 +1,15 @@
 ### YamlMime:Module
-uid: |
-  learn.challenge-project-building-augmented-reality-app-hololens-two
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two
 metadata:
-  title: |
-    Challenge project - Building an Augmented Reality app for HoloLens 2
-  description: "This module is a challenge project where you'll build an Augmented Reality app for HoloLens 2. It will guide a developer on how to build an app end-to-end with help from looking at an existing sample."
+  title: Challenge project - Building an Augmented Reality app for HoloLens 2
+  description: This module is a challenge project where you'll build an Augmented Reality app for HoloLens 2. It will guide a developer on how to build an app end-to-end with help from looking at an existing sample.
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
   ms.topic: module-challenge-project # Please don't edit, used for our analytics
   ms.prod: hololens
-title: |
-  Challenge project - Building an Augmented Reality app for HoloLens 2
-summary: |
-  Take a guided tour with the help of a sample app to build an app end-to-end.
-  > [!NOTE]
-  > This is a **_Challenge Project_** module where you complete an end-to-end project using high-level guidance; there are no step-by-step instructions.
+title: Challenge project - Building an Augmented Reality app for HoloLens 2
+summary: Take a guided tour with the help of a sample app to build an app end-to-end.
 abstract: |
   In this module, you'll demonstrate your ability to:
     - Understand the fundamentals of mixed reality and its applications.
@@ -26,20 +20,17 @@ abstract: |
     - Apply advanced MR development techniques using HoloLens 2.
     - Demonstrate the ability to develop a functional HoloLens 2 application through an end-to-end project.
     - Understand the fundamentals needed for a project document for your prototype.
-    > [!NOTE]
-    > The project will include a functional app prototype that is ready for the Microsoft Store. The intention isn't a hands-on tutorial with code included of building an app, but the holistic approach to building an app end-to-end.
-    > Also, the other deliverable in addition to the prototype will be a project document.
 prerequisites: |
   - "[Introduction to Mixed Reality (optional)](/training/modules/intro-to-mixed-reality/)"
 iconUrl: /learn/achievements/generic-badge.svg
 levels: 
   - beginner
 roles: 
-  - "developer"
-  - "higher-ed-educator"
-  - "student"
+  - developer
+  - higher-ed-educator
+  - student
 products: 
-  - "hololens"
+  - hololens
 
 units:
   - learn.challenge-project-building-augmented-reality-app-hololens-two.introduction
@@ -51,5 +42,4 @@ units:
   - learn.challenge-project-building-augmented-reality-app-hololens-two.summary
 
 badge:
-  uid: |
-    learn.challenge-project-building-augmented-reality-app-hololens-2.badge
+  uid: learn.challenge-project-building-augmented-reality-app-hololens-2.badge
