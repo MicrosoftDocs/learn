@@ -2,13 +2,13 @@
 uid: learn.azure.introduction-data-protection-privacy
 metadata:
   title: Introduction to data protection and privacy
-  description: Learn about data protection and privacy concepts, GDPR and CCPA regulations, and Microsoft data protection categories, principles, and tools.
+  description: Learn about data protection and privacy concepts, GDPR and CCPA regulations, data categories, and Microsoft data protection and privacy principles and tools.
   ms.date: 07/27/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
 title: Introduction to data protection and privacy
-summary: Learn about data protection and privacy concepts, GDPR and CCPA regulations, and Microsoft data protection categories, principles, and tools.
+summary: Learn about data protection and privacy concepts, GDPR and CCPA regulations, data categories, and Microsoft data protection and privacy principles and tools.
 abstract: |
   Understand more about:
   - Data protection and data privacy.

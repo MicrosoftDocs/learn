@@ -1,19 +1,19 @@
-The California Consumer Privacy Act of 2018 (CCPA) is a state privacy law in California that is the first comprehensive privacy law in the United States. The CCPA went into effect on January 1, 2020, and enforcement by the California Attorney General started on July 1, 2020.
+The California Consumer Privacy Act of 2018 (CCPA) is a California state privacy law that's the first comprehensive privacy law in the United States. The CCPA went into effect on January 1, 2020, and enforcement by the California Attorney General started on July 1, 2020.
 
 The CCPA provides several privacy rights to Californian consumers, including:
 
 - The right to know about the personal information a business collects about them and how it's used and shared.
 - The right to delete personal information collected from them, with some exceptions.
 - The right to opt out of the sale of their personal information.
-- The right to non-discrimination for exercising their CCPA rights.
+- The right to nondiscrimination for exercising their CCPA rights.
 
 Businesses subject to the CCPA have several obligations to Californian consumers, which include:
 
-- Fulfilling the preceding listed data subject rights.
+- Preserving the preceding listed data subject rights.
 - Giving consumers certain notices explaining the business's privacy practices.
 - Providing an opt-out for certain data transfers classified as sales, and using an opt-in requirement for minors.
 
-The CCPA applies only to companies that do business in California and meet one or more of the following conditions:
+The CCPA applies only to companies that do business in California and meet at least one of the following conditions:
 
 - Have a gross annual revenue of more than 25 million U.S. dollars (USD).
 - Derive 50% or more of their annual revenue from selling California residents' personal information.
@@ -27,6 +27,6 @@ For commercial customers doing business in California, Microsoft is a service pr
 
 Both the GDPR and CCPA mandate transparency and disclosure obligations. Both laws provide individuals with unique rights over how their data is processed.
 
-One significant difference between the GDPR and CCPA is that the CCPA includes the right for consumers to opt-out from the sale of their personal data to third parties. The term *sale* has a specific meaning under the CCPA. Work with your legal team to understand whether or not your organization might be selling data.
+One significant difference between the GDPR and CCPA is that the CCPA includes the right for consumers to opt out from the sale of their personal data to third parties. The term *sale* has a specific meaning under the CCPA. Work with your legal team to understand whether or not your organization might be selling data.
 
 Under the CCPA, *personal information* is any data relating to an identified or identifiable person. There's no distinction between a person's private, public, or work role. The defined term *personal information* corresponds with *personal data* under the GDPR. However, the CCPA also includes family and household data.

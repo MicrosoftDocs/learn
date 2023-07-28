@@ -1,6 +1,6 @@
 Imagine that you're the lead system engineer and server administrator at Contoso, Ltd., a medium-size financial services company based in Zurich with a branch office in Los Angeles. Most of Contoso's compute environment runs on-premises on Windows Server, and its cloud services are under evaluation.
 
-Contoso realizes that they have an outdated operational model that uses limited automation and relies on dated technology. The Contoso IT Engineering team is exploring the capabilities of Azure and the Microsoft 365 platform to provide automation and virtualization, thereby modernizing its current operational model.
+Contoso has an outdated operational model that uses limited automation and relies on older technology. The Contoso IT Engineering team is exploring the capabilities of Azure and the Microsoft 365 platform to provide automation and virtualization, thereby modernizing its current operational model.
 
 Contoso is also considering using Microsoft 365 productivity services instead of locally deployed services for email, intranet, and storage. You need to evaluate the data privacy, data protection, and compliance capabilities of Azure and the Microsoft 365 platform to decide whether these services sufficiently address Contoso's legal concerns and compliance requirements.
 

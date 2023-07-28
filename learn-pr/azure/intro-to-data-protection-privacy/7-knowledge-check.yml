@@ -34,9 +34,9 @@ quiz:
     - content: "A data protection policy."
       isCorrect: false
       explanation: "The CCPA is a privacy law, not a data protection policy."
-    - content: "A comprehensive privacy law."
+    - content: "A data privacy law."
       isCorrect: true
-      explanation: "The CCPA is the first comprehensive privacy law in the United States."
+      explanation: "The CCPA is the first comprehensive data privacy law in the United States."
     - content: "A data encryption policy."
       isCorrect: false
       explanation: "The CCPA is a privacy law, not an encryption policy."
@@ -66,7 +66,7 @@ quiz:
       isCorrect: true
       explanation: "Sharing isn't one of Microsoft's key principles for dealing with customer data: Control, transparency, security, legal protection, no content-based targeting, and customer benefit."
 
-  - content: "Which Microsoft resources can help an administrator learn how Microsoft implements and supports security, privacy, compliance, and transparency in its cloud products and services?"
+  - content: "Which Microsoft resource can help an administrator learn how Microsoft implements and supports security, privacy, compliance, and transparency in its cloud products and services?"
     choices:
     - content: "Azure Blueprints"
       isCorrect: false
