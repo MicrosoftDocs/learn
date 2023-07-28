@@ -17,7 +17,7 @@ Before you get started, you need:
 
 ### Connection process
 
-Use the following high-level steps to connect a Kubernetes cluster to Azure Arc.
+The process of connecting a Kubernetes cluster to Azure Arc consists of the following high-level steps.
 
 1. Start an Azure CLI session on a computer with connectivity to the Kubernetes cluster and to Azure.
 1. Sign in to an Azure AD account that has permissions to manage Azure Arc-enabled Kubernetes in the subscription.

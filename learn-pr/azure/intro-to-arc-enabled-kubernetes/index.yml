@@ -43,7 +43,7 @@ units:
 - learn.azure.intro-to-arc-enabled-kubernetes.2-arc-overview
 - learn.azure.intro-to-arc-enabled-kubernetes.3-kubernetes-overview
 - learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
-- learn.azure.intro-to-arc-enabled-kubernetes.5-policy
+- learn.azure.intro-to-arc-enabled-kubernetes.5-services
 - learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
 - learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-azure-monitor
 - learn.azure.intro-to-arc-enabled-kubernetes.8-summary
