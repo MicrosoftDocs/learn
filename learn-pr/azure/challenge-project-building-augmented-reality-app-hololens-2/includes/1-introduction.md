@@ -10,7 +10,7 @@ To help you make sure that you don't start with the "blank canvas problem," we u
 
 Although you could just recreate the Galaxy Explorer, you should build an app that is most interesting to you or solves a specific problem you have. Again, the Galaxy Explorer is just to provide a guiding sample to give you ideas and suggestions.
 
-## Project Document and the sections to be included
+## Project document and the sections to be included
 
 The project document should have the following sections, they're discussed in detail through the rest of the learning module:
 
