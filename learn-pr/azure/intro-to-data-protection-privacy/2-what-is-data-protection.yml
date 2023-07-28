@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-data-protection-privacy.2-what-is-data-protection
-title: What is data protection?
+title: Data protection and data privacy
 metadata:
-  title: What is data protection?
-  description: What is data protection?
+  title: Data protection and data privacy
+  description: Learn about data protection and data privacy concepts and principles, and the differences between data protection and data privacy.
   ms.date: 03/24/2021
   author: cwatson-cat
   ms.author: cwatson
