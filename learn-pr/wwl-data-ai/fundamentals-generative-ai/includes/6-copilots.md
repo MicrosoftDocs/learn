@@ -5,7 +5,7 @@ You may see copilots appear within the products that you already use, for exampl
 ![Screenshot of Edge copilot.](../media/Edge-copilot.png)
 
 ## Tying it all together
-It is helpful to think of how the creation of a language model is related the process of creating an application that consumers use. When we discuss large language models we can think of this process: 
+It is helpful to think of how the creation of a language model is related the process of creating a copilot application. We can think of this process: 
 
 - A large amount of data is used to train a large language model 
 - The model that is ready to return responses is known as pre-trained. Pre-trained models are also known as base or foundation models.  
