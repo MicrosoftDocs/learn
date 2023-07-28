@@ -1,7 +1,7 @@
 
 Like other Azure resources, AKS generates platform metrics and resource logs that you can use to monitor its basic health and performance.
 
-:::image type="content" source="../media/kubernetes-azure-monitoring-logs-102ad3d1.png":::
+:::image type="content" source="../media/kubernetes-azure-monitoring-logs-102ad3d1.png" alt-text="Diagram showing how Azure Kubernetes Service generates platform metrics and resource logs.":::
 
 
 ### Azure Monitor

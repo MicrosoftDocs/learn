@@ -53,7 +53,7 @@ In AKS, you can deploy a cluster that uses one of the following network models:
     The network resources are typically created and configured as the AKS cluster is deployed.
  -  ***Azure Container Networking Interface (CNI)* networking**
     
-    The AKS cluster is connected to existing virtual network resources and configurations.[ ](/azure/aks/concepts-network#kubenet-basic-networking)
+    The AKS cluster is connected to existing virtual network resources and configurations.
 
 ### Kubenet (basic) networking
 
