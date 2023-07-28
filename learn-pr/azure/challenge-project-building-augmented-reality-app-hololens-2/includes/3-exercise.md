@@ -1,32 +1,26 @@
-**App Description:**
+**Design Considerations:**
 
-Conceptualize and develop an app that uses the capabilities of the HoloLens 2. The app should provide a valuable and engaging experience to its users. The project offers flexibility in choosing the app domain, whether it's education, healthcare, gaming, engineering, or any other relevant field. You should define the purpose, features, and target audience of the app.
+Consider the following design aspects while developing the app:
 
-Galaxy Explorer Example:
+- User Interface (UI) and User Experience (UX): Create a visually appealing and intuitive interface that ensures a seamless user experience.
+- Interaction Design: Utilize the unique capabilities of the HoloLens 2, such as gesture recognition, voice commands, spatial mapping, and object tracking, to create interactive and immersive experiences.
+- 3D Asset Design: Develop or source 3D assets that align with the app's purpose and enhance the mixed reality experience.
+- Color Palette and Typography: Select appropriate colors and typography that complement the app's theme and ensure readability in the MR environment.
 
-Galaxy Explorer is an educational application built for the HoloLens 2 to inspire and educate people about the galaxy. With spatial technology, a person can see the entire galaxy in the room they are in. The app provides 3D models of planets, allow users to navigate through space, and offer educational information about each celestial body.
+## Galaxy Explorer Example for Design Considerations
 
-This app is supported on the following platforms:
+The team behind the Galaxy Explorer app put their design considerations into their documentation [at the GitHub repository](https://github.com/microsoft/GalaxyExplorer) as they discussed the Application Building Blocks.
 
-- HoloLens 2
-- HoloLens (first gen)
-- Windows Mixed Reality Headsets (VR)
-- Windows 10 Desktop
+:::image type="content" source="../media/galaxy-explorer-building-blocks.png" alt-text="Table listing of application building blocks from Galaxy Explorer app.":::
 
-**Storyboard for the App:**
+They also provided [a case study](/windows/mixed-reality/out-of-scope/case-study-creating-a-galaxy-in-mixed-reality) around how they thought through the challenge of how to produce a galaxy full of stars without overloading the GPU of the device. You'll be testing out various design considerations as the first interaction you create may not be feasible after doing some prototyping. It's iterated on throughout the process. You should assume that your project document changes over the life of the project.
 
-Create a detailed storyboard that outlines the user experience and interaction flow of the app. Storyboarding helps visualize the different stages and screens within the app, showcasing how users navigate and engage with the MR elements. The storyboard should demonstrate a logical progression and highlight key interactions, interfaces, and functionalities. Think of a storyboard as a low-fidelity comic book with panels that show how a user uses your app. It isn't comprehensive, but should convey the structure of your app.
+## Environmental Considerations
 
-Galaxy Explorer Example:
+Consider the surroundings and conditions in which the app is used. Consider factors such as ambient lighting, noise, and physical space limitations. Optimize the app's performance to adapt to varying environmental conditions and ensure a consistent experience for users.
 
-A storyboard consists of how many panels need to convey what the project is and the needs to detail interaction, etc. Most storyboards start with the initial screen as you see in this image:
+## Galaxy Explorer Example for Environmental Considerations
 
-:::image type="content" source="../media/galaxy-explorer-storyboard.png" alt-text="Initial screen of the Galaxy Explorer app.":::
+Galaxy Explorer took on a few design assumptions such as a person wouldn't be using the app in the middle of a field on a sunny day. Most likely they would be using it in a confined space room or within a classroom. Contrasting colors would be used where it made sense to provide more fidelity since most things such as stars would be represented in a white color.
 
-Notice that it isn't a finished rendering of the initial experience but gives an idea of what you see in the Galaxy Explorer app with enough fidelity. That way if you're having stakeholders review it, any changes cost less as much as your only dealing with mock-ups of the user interface.
-
-Another type of panel within your storyboard is where you can explore interactions you may want to include. For example, in this image, you can again see we aren't looking at a full-fidelilty end-result, but an exploration of an interaction.
-
-:::image type="content" source="../media/galaxy-explorer-interactions.png" alt-text="Interaction prototyping via a storyboard.":::
-
-There are many tools from PowerPoint to Figma that make it easy to create storyboards for your project that you can use, but even pencil and paper make for a great tool to create storyboards.
+Since the space the app would be in would be variable, they provided a menu button to allow a person to maximize or minimize the size of the galaxy. The default visual size should be relative to the size and space of the room. It shouldn't be occluded because of an object in the room.

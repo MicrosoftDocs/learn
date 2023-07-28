@@ -1,19 +1,27 @@
-**Accessibility Considerations:**
+## Development Workflow
 
-Address accessibility needs to ensure inclusivity in the app design. Consider factors such as font size, color contrast, audio alternatives for visual cues, and navigation options for users with disabilities. Test the app's accessibility features to ensure usability for individuals with diverse abilities.
+Provide a detailed plan outlining the development workflow, including milestones, timelines, and allocated resources. Utilize appropriate software development methodologies such as Agile and define roles and responsibilities within the development team. Track progress, conduct regular meetings, and adapt the workflow as needed.
 
-Galaxy Explorer Example:
+## Galaxy Explorer Example for Workflow
 
-The Galaxy Explorer takes into consideration accessibility with the following items:
+The Galaxy Explorer app took six weeks of core development and two weeks of refinement. The team comprised of:
 
-- The use of voice commands that match to the buttons in the menu experience. So instead of having to manipulate the Tilt button to change the degree of view, instead the user can just say "tilt" to activate it.
-- For visual impaired people, a zoom feature was built in and audio narration.
-- The app also takes advantage of the HoloLens operating system and all the accessibility features built in.
+- Producer responsible for planning, reviewing progress, and keeping things progressing.
+- A design director and senior designer responsible for the creative vision.
+- Three developers who figured out the technical solutions.
+- Four artists consisting of a concept artist, a modeler, technical artist and animator.
+- One full time tester who tested builds daily, set up build reviews and reviewed features.
 
-**Privacy Considerations:**
+Note: you may not have a full studio team, but may find ways to find substitutes such as using free [Unity Assets](https://assetstore.unity.com/) instead of having a modeler on your team.
 
-Pay attention to privacy concerns associated with the collection and usage of user data. Design the app to prioritize user privacy and data protection. Clearly communicate the app's data handling practices, obtain user consent when required, and ensure compliance with relevant privacy regulations.
+There are many project planning templates and tools you can use that are free. The Galaxy Explorer team spent a considerable amount of time (weeks) to work through their project plan before writing production code. What about the developers, were they just sitting around waiting for planning and design? No. They're part of the planning and design process and were prototyping interactions. This integration ensures the designs were able to be reflected within the code and app.
 
-Galaxy Explorer Example:
+## App Prototype
 
-The Galaxy Explorer app doesn't ask for any personal data nor stores any personal data. Because the microphone is used for accessibility considerations, the application provides a microphone use dialog. The app itself also has a [privacy policy](https://www.microsoft.com/privacystatement).
+Develop a functional prototype of the HoloLens 2 app. Utilize the appropriate software development tools and frameworks, such as Unity 3D and the HoloLens development kit. The prototype should demonstrate the core functionalities of the app and showcase the integration of mixed reality elements. Test and refine the prototype based on user feedback to ensure a polished user experience.
+
+## Galaxy Explorer Example for Prototype
+
+The Galaxy Explorer app code and documentation can be [downloaded from GitHub](https://github.com/microsoft/GalaxyExplorer). Feedback can be provided as a GitHub issue and allowing open source contributions from folks who fork the code and issue a pull request.
+
+:::image type="content" source="../media/galaxy-explorer-on-github.png" alt-text="Screenshot of homepage for Galaxy Explorer sample on GitHub." lightbox="../media/galaxy-explorer-on-github-expanded.jpeg":::

@@ -1,4 +1,4 @@
-**Summary**
+## Summary
 
 This end-to-end guidance should have given you the foundation to create a HoloLens 2 app prototype along with an effective project document to support it.
 

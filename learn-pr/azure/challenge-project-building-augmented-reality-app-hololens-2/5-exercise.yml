@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.challenge-project-building-augmented-reality-app-hololens-2.5-exercise
-title: Accessibility and Privacy Considerations
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two.development-workflow-and-app-prototype
+title: Development Workflow and App Prototype
 metadata:
-  title: Accessibility and Privacy Considerations
-  description: "This unit describes how to create accessibility and privacy considerations for a HoloLens app prototype."
+  title: Development Workflow and App Prototype
+  description: "This unit describes how to create a development workflow and app prototype for a HoloLens app."
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis

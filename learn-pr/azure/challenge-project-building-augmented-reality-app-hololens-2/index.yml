@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: |
-  learn.challenge-project-building-augmented-reality-app-hololens-2
+  learn.challenge-project-building-augmented-reality-app-hololens-two
 metadata:
   title: |
     Challenge project - Building an Augmented Reality app for HoloLens 2
@@ -9,16 +9,6 @@ metadata:
   author: tholewis
   ms.author: tholewis
   ms.topic: module-challenge-project # Please don't edit, used for our analytics
-###########################################################################
-###
-### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
-### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
-###
-### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
-###
-### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
-### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
-### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.prod: hololens
 title: |
   Challenge project - Building an Augmented Reality app for HoloLens 2
@@ -42,22 +32,23 @@ abstract: |
 prerequisites: |
   - "[Introduction to Mixed Reality (optional)](/training/modules/intro-to-mixed-reality/)"
 iconUrl: /learn/achievements/generic-badge.svg
-levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
+levels: 
   - beginner
-roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
+roles: 
   - "developer"
   - "higher-ed-educator"
   - "student"
-products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
+products: 
   - "hololens"
 
 units:
-  - learn.challenge-project-building-augmented-reality-app-hololens-2.1-introduction
-  - learn.challenge-project-building-augmented-reality-app-hololens-2.3-exercise
-  - learn.challenge-project-building-augmented-reality-app-hololens-2.4-exercise
-  - learn.challenge-project-building-augmented-reality-app-hololens-2.5-exercise
-  - learn.challenge-project-building-augmented-reality-app-hololens-2.6-exercise
-  - learn.challenge-project-building-augmented-reality-app-hololens-2.7-summary
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.introduction
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.application-description-and-storyboarding
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.design-and-environmental-considerations
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.accessibility-and-privacy-considerations
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.development-workflow-and-app-prototype
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.knowledge-check
+  - learn.challenge-project-building-augmented-reality-app-hololens-two.summary
 
 badge:
   uid: |

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
-uid: learn.challenge-project-building-augmented-reality-app-hololens-2.4-exercise
-title: Design and environmental considerations
+uid: learn.challenge-project-building-augmented-reality-app-hololens-two.accessibility-and-privacy-considerations
+title: Accessibility and Privacy Considerations
 metadata:
-  title: Design and environmental considerations
-  description: "This unit describes how to create design and environmental considerations for a HoloLens app prototype."
+  title: Accessibility and Privacy Considerations
+  description: "This unit describes how to create accessibility and privacy considerations for a HoloLens app prototype."
   ms.date: 7/25/2023
   author: tholewis
   ms.author: tholewis
