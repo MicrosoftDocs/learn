@@ -42,7 +42,7 @@ quiz:
           explanation: "Correct!"
         - content: "Convert input tensors into an output tensor that contains a prediction."
           isCorrect: false
-          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for trainin.g"
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training."
         - content: "Convert data items into visual representations."
           isCorrect: false
           explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training."
