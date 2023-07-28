@@ -1,16 +1,16 @@
 **Artificial Intelligence** (AI) imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output.    
 
-Generative AI applications take in natural language input, known as **prompts**, and return a response. 
+**Generative AI** describes a category of capabilities within AI that create original content. People typically interact with generative AI that has been built into chat applications. One example of an application is ChatGPT, a chatbot interface created by OpenAI, an AI research company that partners closely with Microsoft.  
 
-Some examples of prompts include: 
+Generative AI applications take in natural language input, known as **prompts**, and return responses in a variety of formats (natural language, image, code, and more). 
+
+Some examples of prompts and types of responses include: 
 
 |Common task | Sample prompt | Type of response |
 |-|-|-|
 |Generate and understand natural language text | "Give me three ideas for a healthy breakfast including peppers" | `Natural language` | 
 |Generate and understand images | "Create an image of an elephant eating a burger" | `An image` |
 |Generate and understand code | "Show me how to code a game of tic-tac-toe with Python" | `Code` | 
-
-People typically interact with generative AI that has been built into chat applications. One example of an application is ChatGPT, a chatbot interface created by OpenAI, an AI research company that partners closely with Microsoft. 
 
 Developers build generative AI applications like ChatGPT with large language models which are trained on massive volumes of text data. The sheer volume of training data and the way large language models are designed results in models that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. 
 
