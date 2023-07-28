@@ -4,12 +4,10 @@ title: Explore the Python SDK
 metadata:
   title: Explore the Python SDK
   description: "Explore the Python SDK"
-  ms.date: 06/06/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.custom:
-    - devx-track-python
 durationInMinutes: 7
 content: |
   [!include[](includes/3-explore-python-sdk.md)]
