@@ -24,9 +24,9 @@ AKS volume types include:
 
 ### Implement AKS persistent volumes
 
-You can use either Azure Disk or Azure Files resources to implement PersistentVolumes in AKS clusters. The choice between them is typically based on the desired performance characteristics and the ability to provide either shared or exclusive access to the underlying storage.
+You can use either Azure Disk or Azure Files resources to implement `PersistentVolumes` in AKS clusters. The choice between them is typically based on the desired performance characteristics and the ability to provide either shared or exclusive access to the underlying storage.
 
-:::image type="content" source="../media/azure-kubernetes-storage-flow-30832364.png":::
+:::image type="content" source="../media/azure-kubernetes-storage-flow-30832364.png" alt-text="Diagram showing how either Azure Disk or Azure Files resources are used to implement Persistent Volumes for a clusters.":::
 <br>
 
 To ensure the availability of persistent volumes, you can precreate PersistentVolume resources. Alternatively, you can rely on the Kubernetes API server to create them dynamically. A pod awaiting deployment ,may require storage that is unavailable, AKS can automatically provision an underlying Azure Disk or File resource and attach it to the pod. Dynamic provisioning relies on the *StorageClass* specification to determine the type of Azure storage to create.
@@ -39,9 +39,9 @@ The StorageClass also defines the *reclaimPolicy*. When you delete the persisten
 
 #### Configure persistent volume claims
 
-A PersistentVolumeClaim is a request for a particular StorageClass, access mode (which determines whether volume access should be shared or exclusive), and size. As mentioned earlier, the Kubernetes API server can dynamically provision the underlying Azure storage resource if no existing resource can fulfill the claim based on the defined StorageClass.
+A PersistentVolumeClaim is a request for a particular `StorageClass`, access mode (which determines whether volume access should be shared or exclusive), and size. As mentioned earlier, the Kubernetes API server can dynamically provision the underlying Azure storage resource if no existing resource can fulfill the claim based on the defined StorageClass.
 
-:::image type="content" source="../media/azure-kubernetes-persistent-storage-92f42a3f.png":::
+:::image type="content" source="../media/azure-kubernetes-persistent-storage-92f42a3f.png" alt-text="Diagram showing how a persistent volume claim is requested for a storage class.":::
 
 
 Once an available storage resource has been assigned to the pod requesting storage, PersistentVolume is *bound* to a PersistentVolumeClaim.
