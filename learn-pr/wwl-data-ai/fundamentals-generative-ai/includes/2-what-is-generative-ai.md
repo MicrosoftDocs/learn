@@ -2,11 +2,11 @@
 
 **Generative AI** describes a category of capabilities within AI that create original content. People typically interact with generative AI that has been built into chat applications. One example of an application is [ChatGPT](https://openai.com/chatgpt?azure-portal=true), a chatbot created by OpenAI, an AI research company that partners closely with Microsoft.  
 
-Generative AI applications take in natural language input, known as **prompts**, and return responses in a variety of formats such as natural language, image, code, and more. 
+Generative AI applications take in natural language input, known as **prompts**, and return responses known as **completions** in a variety of formats such as natural language, image, code, and more. 
 
-Some examples of prompts and types of responses include: 
+Some examples of prompts and types of completions include: 
 
-|Common task | Sample prompt | Type of response |
+|Common task | Sample prompt | Type of completion |
 |-|-|-|
 |Generate and understand natural language text | "Give me three ideas for a healthy breakfast including peppers" | `Natural language` | 
 |Generate and understand images | "Create an image of an elephant eating a burger" | `An image` |
