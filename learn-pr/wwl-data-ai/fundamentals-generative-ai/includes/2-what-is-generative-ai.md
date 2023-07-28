@@ -1,4 +1,4 @@
-**Artificial Intelligence** (AI) imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output.    
+**Artificial Intelligence** (AI) imitates human behavior by relying on machines to learn and execute tasks without explicit directions on what to output.
 
 **Generative AI** describes a category of capabilities within AI that create original content. People typically interact with generative AI that has been built into chat applications. One example of an application is [ChatGPT](https://openai.com/chatgpt?azure-portal=true), a chatbot created by OpenAI, an AI research company that partners closely with Microsoft.  
 
