@@ -1,13 +1,30 @@
-Blazor enables you to create interactive web applications using .NET that allow you to share logic between the server and client code.
+A pizza delivery company hires you to modernize their customer-facing Blazor website, which includes pizza listings, ordering pages, and other functionality. Blazor interactive web applications use .NET to share logic between the server and the client code.
 
-Suppose you've been hired by a pizza delivery firm to modernize their customer-facing website. You've created a set of components that render lists of pizzas, ordering pages, and other functionality. Now you want to use a JavaScript library to animate a rendered HTML component. You also want to apply different branding on similar web app pages and respond when page rendering is complete.
+In your updates, you want to:
 
-In this module, you'll learn how to interoperate with JavaScript code, use templated components, and respond to component lifecycle events.
+- Use JavaScript to animate a rendered HTML component.
+- Use a JavaScript library to apply branding to an alert page.
+- Change how the app responds to events after page rendering is complete.
+- Create and apply a template component to update multiple pages.
+
+This module shows you how to interoperate with JavaScript code, use templated components, and respond to component lifecycle events in Blazor.
 
 ## Learning objectives
 
-By the end of this session, you'll be able to:
+- Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps.
+- Handle events in the lifecycle of Blazor components.
+- Create reusable template components that you can incorporate into Blazor apps.
 
-- Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps
-- Handle events in the lifecycle of Blazor components
-- Create reusable components that can be incorporated into Blazor Server apps using templates
+## Prerequisites
+
+- Familiarity with HTML, CSS, and JavaScript web development.
+- Novice ability to write C# code.
+- The [.NET 7.0 SDK](https://dotnet.microsoft.com/download/dotnet/7.0) installed.
+- An integrated development environment (IDE). This module uses [Visual Studio Code](https://code.visualstudio.com).
+
+> [!TIP]
+> This module uses the .NET Command Line Interface (CLI) and Visual Studio Code for local development. After you complete the module, you can apply the concepts and continue development by using Visual Studio for Windows, Visual Studio for Mac, or Visual Studio Code with Windows, Linux, or Mac.
+
+### .NET 7.0 SDK
+
+[!include[](../../../includes/dotnet7-sdk-version.md)]
