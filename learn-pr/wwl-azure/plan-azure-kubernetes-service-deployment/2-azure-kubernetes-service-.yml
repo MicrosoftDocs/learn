@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-azure-kubernetes-service-deployment.azure-kubernetes-service-
+title: 'Azure Kubernetes Service '
+metadata:
+  title: Azure Kubernetes Service
+  description: "Azure Kubernetes Service"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-kubernetes-service-.md)]

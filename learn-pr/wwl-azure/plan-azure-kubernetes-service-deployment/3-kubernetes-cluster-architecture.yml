@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-cluster-architecture
+title: Azure Kubernetes cluster architecture
+metadata:
+  title: Azure Kubernetes cluster architecture
+  description: "Azure Kubernetes cluster architecture"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-kubernetes-cluster-architecture.md)]

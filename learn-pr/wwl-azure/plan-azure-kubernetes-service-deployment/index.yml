@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.wwl.plan-azure-kubernetes-service-deployment
+metadata:
+  title: Plan an Azure Kubernetes Service deployment
+  description: "Plan an Azure Kubernetes Service deployment"
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+title: Plan an Azure Kubernetes Service deployment
+summary: Azure Kubernetes Service provides reliable scheduling of fault-tolerant application workloads, making it the leading platform for container orchestration.
+abstract: |
+  After completing this module, you'll be able to:
+  * Describe control plane nodes, node pools, and workload resources like pods, deployments, and sets.
+  * Scheduling of fault-tolerant application workloads using Azure Kubernetes Service.
+  * Managing deployment and core management tasks, like upgrade coordination using Azure Kubernetes Service.
+  * Clustering of virtual or on-premises machines called nodes that share compute, network, and storage resources.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+units:
+- learn.wwl.plan-azure-kubernetes-service-deployment.introduction
+- learn.wwl.plan-azure-kubernetes-service-deployment.azure-kubernetes-service-
+- learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-cluster-architecture
+- learn.wwl.plan-azure-kubernetes-service-deployment.pods
+- learn.wwl.plan-azure-kubernetes-service-deployment.nodes-and-node-pools
+- learn.wwl.plan-azure-kubernetes-service-deployment.namespaces
+- learn.wwl.plan-azure-kubernetes-service-deployment.network-access-to-azure-kubernetes-service
+- learn.wwl.plan-azure-kubernetes-service-deployment.monitoring-and-logging
+- learn.wwl.plan-azure-kubernetes-service-deployment.knowledge-check
+- learn.wwl.plan-azure-kubernetes-service-deployment.summary
+badge:
+  uid: learn.wwl.plan-azure-kubernetes-service-deployment.badge
