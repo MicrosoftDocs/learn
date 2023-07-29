@@ -1,0 +1,36 @@
+### YamlMime:LearningPath
+uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service
+metadata:
+  title: APL-1001 Deploy and manage containers using Azure Kubernetes Service
+  description: APL-1001 Deploy and manage containers using Azure Kubernetes Service
+  ms.date: 07/29/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+title: APL-1001 Deploy and manage containers using Azure Kubernetes Service
+prerequisites: |
+  The table of contents for this module includes:
+  Introduction to Kubernetes
+  Core Kubernetes Infrastructure Components
+  Control Plane Nodes and Node Pools
+  Workload Resources
+summary: |
+  This courses provides an understanding of the core infrastructure components of Kubernetes and how they are used in Azure Kubernetes Service (AKS). By the end of this course, you will be able to deploy and manage container-based applications using AKS, and understand how to use Kubernetes to orchestrate and manage the availability of the application components.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+modules:
+- learn.wwl.plan-azure-kubernetes-service-deployment
+- learn.wwl.deploy-use-azure-container-registry
+- learn.wwl.deploy-azure-kubernetes-service-cluster
+- learn.wwl.configure-azure-kubernetes-service-cluster
+- learn.wwl.deploy-applications-azure-kubernetes-service
+- learn.wwl.configure-scaling-azure-kubernetes-service
+trophy:
+  uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service.trophy
