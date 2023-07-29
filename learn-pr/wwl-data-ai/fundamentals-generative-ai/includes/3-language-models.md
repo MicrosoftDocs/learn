@@ -5,7 +5,7 @@ Generative AI applications are powered by *large language models* (LLMs), which 
 - Comparing multiple text sources for semantic similarity.
 - Generating new natural language.
 
-While the mathematical principles behind these LLMs can be complex, a basic understanding of the architecture used to implement them can help you gain a conceptual udnerstanding of how they work.
+While the mathematical principles behind these LLMs can be complex, a basic understanding of the architecture used to implement them can help you gain a conceptual understanding of how they work.
 
 ## Transformer models
 
@@ -73,19 +73,26 @@ The locations of the tokens in the embeddings space includes some information ab
 > [!NOTE]
 > The example above shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.
 
-There are multiple ways you can calculate appropriate embeddings for a given set of tokens, including modeling algorithms like *Word2Vec* or the *encoder* block in a transgformer model.
+There are multiple ways you can calculate appropriate embeddings for a given set of tokens, including language modeling algorithms like *Word2Vec* or the *encoder* block in a transformer model.
 
 ### Attention
 
-You may be wondering how the training process determines the appropriate embeddings for the tokens in your model's vocabulary, and how those embeddings are used to generate new original language sequences. To understand this, we need to examine a few more elements of the tramsformer model architecture.
+The *encoder* and *decoder* blocks in a transformer model include multiple layers that form the neural network for the model. We don't need to go into the details of all these layers, but it's useful to consider one of the types of layer that is used in both blocks: *attention* layers. Attention is a technique used to examine a sequence of text tokens and try to quantify the strength of the relationships between them. In particular, *self-attention* involves considering one particular token and determining how it is influenced by the other tokens around it.
 
-The full architecture for transformer models consists of two main components, or *blocks*:
+In an encoder block, attention is used to examine each token in context, and determine an appropriate encoding for its vector embedding. The vector values are based on the relationship between the token and other tokens with which it frequently appears. This contextualized approach means that the same word might have multiple embeddings depending on the context in which it is used - for example "the bark of a tree" means something different to "I heard a dog bark".
 
-- An *encoder* block that creates contextual embeddings for the tokens in the training data.
-- A *decoder* block that generates new language sequences based on the embeddings.
+In a decoder block, attention layers are used to predict the next token in a sequence. For each token being generated, an attention layer takes the sequence of tokens up to that point (masked to avoid “peeking ahead”) and considers which of them are the most influential when considering what the next token should be. For example, given the sequence “I heard a dog”, the attention layer might assign greater weight to the tokens “heard” and “dog” when considering the next word in the sequence:
 
-Both of these blocks include multiple layers that form the neural network for the model. We don't need to go into the details of all these layers, but it's useful to consider one of the types of layer that is used in both blocks: *attention* layers. Attention is a technique used to examine a sequence of text tokens and try to quantify the strength of the relationships between them. In particular, *self-attention* involves considering one particular token and determining the 
+I ***heard*** a ***dog*** [**bark**]
 
+To better understand how this works, remember that the attention layer is working with numeric vector representations of the tokens, not the actual text. In a decoder, the process starts with a sequence of token embeddings representing the text to be completed. The first thing that happens is that an additional *positional encoding* layer adds a value to each embedding to indicate its position in the sequence:
+
+- [***1***,5,6,2]  (I)
+- [***2***,9,3,1]  (heard)
+- [***3***,1,1,2]  (a)
+- [***4***,10,3,2] (dog)
+
+During training, the goal is to predict the vector for the final token in the sequence based on the preceding tokens. To do this, the attention layer assigns a numeric *weight* to each token in the sequence so far, and uses that value to perform a calculation on the weighted vectors that produces an **attention score* that can be used to calculate possible vectors for the next token. A neural network is then used to evaluate all possible tokens and the attention scores to determine the most probable token with which to continue the sequence.
 
 One of the key elements in advancements in language modeling is attention layers. These layers of mathematical functions enable the model to analyze the sequence of text tokens in context and determine which tokens most influence the next in sequence. For example, given the sequence “I heard a dog”, the attention layer might assign greater weight to the tokens “heard” and “dog” when considering the next word in the sequence, like this:
 
