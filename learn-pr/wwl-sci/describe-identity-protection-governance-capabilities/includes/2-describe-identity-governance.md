@@ -45,6 +45,6 @@ When any attributes of a user or device change, the system evaluates all dynamic
 
 Monitoring privileged access is a key part of identity governance. When employees, vendors, and contractors are assigned administrative rights, there should be a governance process because of the potential for misuse.
 
-Microsoft Entra Privileged Identity Management (PIM) provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Azure AD, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Microsoft Entra Premium licensing.
+Microsoft Entra Privileged Identity Management (PIM) provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Microsoft Entra IA, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Microsoft Entra Premium licensing.
 
 :::image type="content" source="../media/privileged-access-lifecycle.png" alt-text="Circular diagram showing identity access rights lifecycle. The lifecycle starts with no admin followed a first admin role then a second admin role then leaving IT.":::
