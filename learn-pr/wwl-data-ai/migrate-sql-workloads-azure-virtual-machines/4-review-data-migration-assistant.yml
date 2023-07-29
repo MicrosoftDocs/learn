@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.application-configuration-optimization
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.review-data-migration-assistant
 title: Configure and optimize your applications
 metadata:
   title: Configure and optimize your applications
   description: "Configure and optimize your applications"
-  ms.date: 07/09/2021
+  ms.date: 07/28/2023
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 8
 content: |
-  [!include[](includes/4-application-configuration-optimization.md)]
+  [!include[](includes/4-review-data-migration-assistant.md)]

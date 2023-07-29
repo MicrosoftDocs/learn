@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.sql-workloads-azure-virtual-machine-migration-options
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.explore-azure-sql-migration-extension-for-migration
 title: SQL workloads to Azure virtual machine migration options
 metadata:
   title: SQL workloads to Azure virtual machine migration options
   description: "SQL workloads to Azure virtual machine migration options"
-  ms.date: 07/09/2021
+  ms.date: 07/28/2023
   author: wwlpublish
-  ms.author: chtestao
+  ms.author: jupadrao
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-azure-virtual-machine-migration-options.md)]
+  [!include[](includes/3-explore-azure-sql-migration-extension-for-migration.md)]

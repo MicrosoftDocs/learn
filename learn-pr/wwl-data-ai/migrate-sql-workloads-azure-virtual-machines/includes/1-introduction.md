@@ -1,22 +1,38 @@
-SQL Server on Azure virtual machines (VMs) lets you run full versions of SQL Server without having to manage and maintain on-premises hardware. Azure hosts a large gallery of VM images allowing you to deploy a VM quickly with the exact version, edition, and operating system you need. This Infrastructure as a Service (IaaS) approach has real benefits, as well as considerations that you need to take into account when taking this migration path.
+SQL Server on Azure Virtual Machine allows you to run complete SQL Server editions without the burden of managing on-premises hardware. Azure offers a large gallery of virtual machine (VM) images allowing you to deploy a server quickly with the exact version, edition, and operating system you need. This Infrastructure as a Service (IaaS) approach has benefits, as well as considerations that you need to take into account when taking this migration path.
 
-You work as a data engineer for a global bicycle retailer. Your company has a number of servers running different versions of SQL Server. Your SQL Server versions range from 2008 to 2014. The DBA team has been asked to upgrade the older SQL Servers workloads. The project is looking for ways to reduce the operating costs of its data estate, and would like your advice on the possibility of migrating your SQL Servers to run on Azure virtual machines.
+You may have specific requirements that are better suited for SQL Server on Azure Virtual Machines rather than Azure SQL Managed Instance in the following scenarios:
 
-In this module, you'll learn how to migrate SQL Server workloads to run on Azure VMs. You'll explore the various ways you can migrate your SQL Server workloads both offline and online. After you've migrated your workload, you'll complete some post migration tasks. These tasks will ensure that the migrated database performance hasn't been impacted.
+1. You need direct access to the operating system or file system, such as installing third-party or custom agents on the same virtual machine alongside SQL Server.
+1. You heavily rely on features that are not yet supported, such as FileStream/FileTable, PolyBase, and cross-instance transactions.
+1. Your business requires staying at a particular version of SQL Server.
+1. Your compute requirements are significantly lower than what a managed instance offers, and database consolidation is not an option.
 
-By the end of this module, you'll be able to plan an execute a migrate from on-premises SQL Server to the Azure cloud.
+### Use case scenario
+
+Throughout this module, we're using an example scenario to explain key data migration concepts.
+
+You've been hired as a senior database administrator at a global retailer company and you're working with consultants and architects to initiate a data platform modernization project that meets the organization's technical and business requirements. 
+
+The organization has a large number of different databases that underpin business-critical functions such as Customer Relationship Management (CRM), stock management, distribution, and human resources. The company runs many on-premises databases on different versions across multiple servers. 
+
+Your main responsibility is to identify what is needed and ultimately migrate a number of databases running different versions of SQL Server.
+
+In this module, you'll learn how to migrate SQL Server workloads to run on Azure Virtual Machine. You'll explore the various ways you can migrate your SQL Server workloads both offline and online. After you've migrated your workload, you'll complete some post migration tasks. These tasks will ensure that the migrated database performance hasn't been impacted.
+
+By the end of this module, you'll be able to plan an execute a migration from on-premises SQL Server to Azure Virtual Machine.
 
 ## Learning objectives
 
 In this module, you'll:
 
-- Consider your options when you run your SQL workloads on Azure Virtual Machines.
-- Explore migration options when moving SQL Server workload to an Azure Virtual Machine.
-- Configure and optimize your applications.
+  - Understand the importance of careful planning for a successful migration of SQL Server workloads to Azure Virtual Machines.
+  - Migrate databases using Azure SQL Migration extension for Azure Data Studio and tracking database migration activities to SQL Server on Azure Virtual Machines.
+  - Use the Data Migration Assistant (DMA) tool to facilitate SQL Server migrations to Azure Virtual Machine.
+  - Explore several other methods for migrating SQL Server databases to Azure Virtual Machines.
 
-## Prerequisites
+## Prerequisites  
 
-- Understand SQL Server Database file administration
-- Successfully log in to the Azure portal
-- Understand the Azure Storage options
-- Understand the Azure compute options
+  - Experience in administering SQL Server databases.
+  - Knowledge of SQL Server editions and versions.
+  - Knowledge of basic T-SQL.
+
