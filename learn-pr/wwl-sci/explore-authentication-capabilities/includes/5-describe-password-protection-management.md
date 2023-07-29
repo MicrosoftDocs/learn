@@ -2,7 +2,7 @@ Password protection is a feature of Microsoft Entra ID that reduces the risk of 
 
 With Microsoft Entra password protection, default global banned password lists are automatically applied to all users in an Microsoft Entra ID tenant. To support your own business and security needs, you can define entries in a custom banned password list. When users change or reset their passwords, these lists are checked to enforce the use of strong passwords.
 
-You should use extra features like Azure Active Directory multi-factor authentication, not just rely on strong passwords enforced by Microsoft Entra password protection.
+You should use extra features like multifactor authentication, not just rely on strong passwords enforced by Microsoft Entra password protection.
 
 ### Global banned password list
 
@@ -36,4 +36,4 @@ Microsoft Entra password protection efficiently blocks all known weak passwords 
 
 For hybrid security, admins can integrate Microsoft Entra password protection within an on-premises Active Directory environment. A component installed in the on-premises environment receives the global banned password list and custom password protection policies from Microsoft Entra ID. Domain controllers then use them to process password change events. This hybrid approach makes sure that, wherever a user changes their password, Microsoft Entra password protection is applied.
 
-Although password protection improves the strength of passwords, you should still use best practice features like Azure Active Directory multi-factor authentication. Passwords alone, even strong ones, are not as secure as multiple layers of security.
+Although password protection improves the strength of passwords, you should still use best practice features like multifactor authentication. Passwords alone, even strong ones, are not as secure as multiple layers of security.
