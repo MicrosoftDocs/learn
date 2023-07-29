@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.explore-azure-sql-migration-extension-for-migration
-title: SQL workloads to Azure virtual machine migration options
+title: Explore Azure SQL Migration extension for Azure Data Studio
 metadata:
-  title: SQL workloads to Azure virtual machine migration options
-  description: "SQL workloads to Azure virtual machine migration options"
+  title: Explore Azure SQL Migration extension for Azure Data Studio
+  description: "Learn about the Azure SQL Migration extension for Azure Data Studio to simplify database migration to Azure SQL."
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao

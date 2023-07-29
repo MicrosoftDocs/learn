@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.review-data-migration-assistant
-title: Configure and optimize your applications
+title: Understand Data Migration Assistant
 metadata:
-  title: Configure and optimize your applications
-  description: "Configure and optimize your applications"
+  title: Understand Data Migration Assistant
+  description: "Learn how to use Data Migration Assistant to migrate databases to SQL Server on Azure Virtual Machine."
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao

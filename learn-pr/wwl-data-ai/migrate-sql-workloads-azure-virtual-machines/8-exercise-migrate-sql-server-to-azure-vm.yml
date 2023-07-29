@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.exercise-migrate-sql-server-to-azure-vm
-title: Summary
+title: 'Exercise: Migrate SQL Server databases to SQL Server on Azure Virtual Machine'
 metadata:
-  title: Summary
-  description: "Summary"
+  title: 'Exercise: Migrate SQL Server databases to SQL Server on Azure Virtual Machine'
+  description: "Learn how to perform an online migration of a SQL Server database to a SQL Server running on an Azure Virtual Machine."
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao
@@ -13,3 +13,9 @@ azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-exercise-migrate-sql-server-to-azure-vm.md)]
+
+
+
+  title: 'Exercise: Identify compatibility issues'
+  description: "Learn to assess a legacy SQL Server database for migration to Azure SQL Database by identifying compatibility issues, necessary changes, unsupported features, configurations, and reviewing the database schema."
+  ms.date: 05/23/2023

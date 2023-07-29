@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-native-backup-and-restore
-title: Summary
+title: Migrate databases using native backup and restore
 metadata:
-  title: Summary
-  description: "Summary"
+  title: Migrate databases using native backup and restore
+  description: "Learn how to migrate databases using the native backup and restore method."
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-alwayson-availability-groups
-title: Summary
+title: Understand distributed availability group for migration
 metadata:
-  title: Summary
-  description: "Summary"
+  title: Understand distributed availability group for migration
+  description: "Learn how you can use distributed availability group for database migration."
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao

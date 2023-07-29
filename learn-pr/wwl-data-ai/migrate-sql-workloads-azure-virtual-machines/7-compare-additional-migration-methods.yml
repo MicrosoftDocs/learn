@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.compare-additional-migration-methods
-title: Summary
+title: Compare additional migration methods
 metadata:
-  title: Summary
-  description: "Summary"
+  title: Compare additional migration methods
+  description: "Learn additional migration methods available for moving databases to SQL Server on Azure Virtual Machine."
   ms.date: 07/28/2023
   author: wwlpublish
   ms.author: jupadrao
