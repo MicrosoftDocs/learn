@@ -18,7 +18,7 @@ To plan and implement data protection measures, consider the following factors:
 
 - **The sensitivity of the data type.** Not all data needs the same level of protection or benefits from the same data protection approach. For example, some personal data such as email addresses might not require the same protection as more sensitive data like social security numbers and health information.
 
-- **Where the data is stored.** Appropriate data-protection technologies and methods might depend on where your data is stored. For example, you might not use the same data protection approach for data stored on your mobile device as for data stored on your company's file server or in the cloud.
+- **Where the data is stored.** Appropriate data-protection technologies and methods might depend on where your data is stored. For example, you might use different data protection for data stored on your mobile device than for data stored on your company's file server or in the cloud.
 
 - **Applicable data-protection requirements and regulations.** Laws and regulations may define specific data-protection requirements. Work with your legal team to ensure you have a solid knowledge of these requirements and how they apply to your business.
 
@@ -28,7 +28,7 @@ No single approach or technology guarantees data protection. However, the follow
 
 - Implement some level of data protection at data creation or collection that persists with the data throughout its lifecycle.
 
-- Ensure that organization members understand data sharing, including awareness of what data they share, who they share it with, and how they share it. Controlling data access and sharing is a key part of data protection.
+- Ensure that organization members understand data sharing, and are aware of what data they share, who they share it with, and how they share it. Controlling data access and sharing is a key part of data protection.
 
 - In addition to protecting specific data, make sure to protect user identities, the devices on which users access data, and network traffic.
 
@@ -40,7 +40,7 @@ Data privacy typically addresses concerns such as:
 - Which entities can access data.
 - What organizations can do with the data they've collected.
 - How long organizations can retain data.
-- The level of control individuals have over their data.
+- What level of control individuals have over their data.
 
 Various laws around the world describe the rights of people and companies to control who uses their data, and set forth requirements for handling different types of data.
 

@@ -3,7 +3,7 @@ Worldwide, many laws and regulations address data protection and privacy. The tw
 - The GDPR is a regulation that governs data protection and privacy in the European Union (EU) and the European Economic Area (EEA).
 - The CCPA is a California state privacy law and the first comprehensive privacy law in the United States.
 
-This unit describes the GDPR, its concepts and terminology, and how Microsoft supports the GDPR and associated data subject request (DSR) completion. The next unit provides more information about the CCPA and how it compares to the GDPR.
+This unit describes the GDPR, its concepts and terminology, and how Microsoft supports and commits to the GDPR. The next unit provides more information about the CCPA and how it compares to the GDPR.
 
 ## Overview of the GDPR
 
@@ -12,9 +12,9 @@ The GDPR governs the use and treatment of personal data by organizations that of
 > [!NOTE]
 > The GDPR applies more broadly than might be apparent at first glance. Unlike privacy laws in some other jurisdictions, the GDPR is applicable to organizations of all sizes and all industries. The GDPR may apply to your organization even if it doesn't have a physical presence in the EU. Work closely with your legal team to understand whether and how the GDPR applies to your organization.
 
-One GDPR goal is to strengthen personal data protections for EU residents by focusing on the privacy and usage of an individual's personal data. The GDPR updates and expands the 1995 Data Protection Directive. While the GDPR preserves many of the principles the Directive established, the GDPR gives individuals greater control over their personal data. The GDPR imposes many new obligations on organizations that collect, handle, or analyze personal data.
+One GDPR goal is to strengthen personal data protections for EU residents by focusing on the privacy and usage of an individual's personal data. The GDPR updates and expands the 1995 Data Protection Directive. The GDPR preserves many of the principles the Directive established, while giving individuals greater control over their personal data. The GDPR imposes many new obligations on organizations that collect, handle, or analyze personal data.
 
-In the context of GDPR, data has a lifecycle that starts when the data is collected, continues as the data is stored, processed, and used, and ends when the data is deleted from the system. The GDPR sets out data handling requirements and advises on how to achieve them. The GDPR also gives regulators new powers to impose significant fines on organizations that breach the law. The GDPR became enforceable in May 2018.
+In the context of GDPR, data has a lifecycle that starts with data collection, continues with the data storage, processing, and use, and ends with data deletion from the system. The GDPR sets out data handling requirements and advises on how to achieve them. The GDPR also gives regulators new powers to impose significant fines on organizations that breach the law. The GDPR became enforceable in May 2018.
 
 ## GDPR concepts and terminology
 
@@ -22,7 +22,7 @@ To understand the GDPR, it's important to know the following concepts and terms:
 
 - **Personal data** under the GDPR is any data that relates to an identified or identifiable natural person. If data is linked or linkable to an identifiable individual, the GDPR considers it personal data. Common examples of personal data include name, address, date of birth, and IP address. The GDPR also considers *pseudonymous* information, regardless of how obscure or technical it is, to be personal data if it's linked to an individual.
 
-- **Sensitive personal data** under the GDPR is personal data that reveals racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership. Sensitive personal data also includes genetic data, biometric data for uniquely identifying a natural person, health data, or data about a natural person's sex life or sexual orientation. The GDPR introduces more obligations for processing this data.
+- **Sensitive personal data** under the GDPR is personal data that reveals racial or ethnic origin, political opinions, religious or philosophical beliefs, or trade union membership. Sensitive personal data also includes genetic data, biometric data that identifies a natural person, health data, or data about a natural person's sex life or sexual orientation. The GDPR introduces greater obligations for processing this data.
 
 - A **controller** is a natural or legal person, public authority, agency, or other body that, either alone or jointly with others, decides the purposes of, and processing methods for, personal data. The processing purposes and means are determined by the controller, by Union or Member State law, or by specific criteria the Union or Member State law provides for nomination.
 
@@ -38,7 +38,7 @@ To understand the GDPR, it's important to know the following concepts and terms:
 
   - **Access data.** Individuals have a right to know whether an organization is processing their data and if so, to have access to that data.
   - **Ask for data rectification.** Individuals can ask a company to correct inaccurate data about the individual.
-  - **Ask for data deletion.** This right, also called the *right to erasure*, allows an individual to request deletion of their personal data that a company has collected.
+  - **Ask for data deletion.** This right, which is also called the *right to erasure*, allows an individual to request deletion of their personal data that a company has collected.
   - **Request restricted processing.** An individual can ask a company to suppress or restrict the processing of their data.
   - **Request data portability.** An individual can ask for their data to be transferred to another company or processing system.
   - **Object.** An individual can object to their data being used for various uses, including direct marketing.

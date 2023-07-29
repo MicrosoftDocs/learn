@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-data-protection-privacy.3-what-are-privacy-regulations
-title: The GDPR
+title: Overview of the GDPR
 metadata:
-  title: The GDPR
-  description: Learn about the GDPR, and how Microsoft supports the GDPR and DSRs.
+  title: Overview of the GDPR
+  description: Learn about the GDPR, GDPR concepts and terminology, and how Microsoft supports and commits to the GDPR.
   ms.date: 03/24/2021
   author: cwatson-cat
   ms.author: cwatson

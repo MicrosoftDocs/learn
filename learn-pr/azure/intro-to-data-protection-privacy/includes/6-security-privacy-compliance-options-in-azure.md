@@ -6,7 +6,7 @@ Microsoft also proactively collaborates with industry leaders and government bod
 
 ## Microsoft compliance resources
 
-Global regulatory bodies frequently update their laws and rules, and it can be difficult for organizations to determine how the changes apply to them. Compliance personnel must work diligently to help meet evolving requirements. Microsoft helps its customers meet compliance obligations by providing tools, guidance, and extensive documentation.
+Global regulatory bodies frequently update their laws and rules, and it can be difficult for organizations to determine how the changes apply to them. Compliance personnel must work diligently to help meet evolving requirements. Microsoft helps its customers stay up-to-date with compliance obligations by providing tools, guidance, and extensive documentation.
 
 ### Microsoft Trust Center
 

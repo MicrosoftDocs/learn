@@ -2,9 +2,9 @@ Imagine that you're the lead system engineer and server administrator at Contoso
 
 Contoso has an outdated operational model that uses limited automation and relies on older technology. The Contoso IT Engineering team is exploring the capabilities of Azure and the Microsoft 365 platform to provide automation and virtualization, thereby modernizing its current operational model.
 
-Contoso is also considering using Microsoft 365 productivity services instead of locally deployed services for email, intranet, and storage. You need to evaluate the data privacy, data protection, and compliance capabilities of Azure and the Microsoft 365 platform to decide whether these services sufficiently address Contoso's legal concerns and compliance requirements.
+Contoso is also considering using Microsoft 365 productivity services instead of locally deployed services for email, intranet, and storage. You need to evaluate the data privacy, data protection, and compliance capabilities of Azure and the Microsoft 365 platform. You must decide whether these services sufficiently address Contoso's legal concerns and compliance requirements.
 
-In this module, you learn about key data protection and privacy terms, concepts, and regulations such as the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA). You learn how Microsoft online services and tools classify customer data, support data protection and privacy, and enable compliance with regulations and laws including the GDPR and CCPA.
+In this module, you learn about key data protection and privacy terms, concepts, and regulations such as the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA). You learn how Microsoft online services and tools classify customer data, support data protection and privacy, and enable regulatory compliance.
 
 ## Learning objectives
 
