@@ -8,7 +8,9 @@ Prompt engineering techniques include defining a system message that sets the co
 
 ## Writing good prompts
 
-You can get the most useful completions hy being explicit about the kind of response you want (for example, “Create a list of ten things to do in Edinburgh during August”).
+You can get the most useful completions hy being explicit about the kind of response you want (for example, “Create a list of ten things to do in Edinburgh during August”). Submitting clear, specific prompts produces better results.
+
+## Providing examples
 
 While LLMs generally support *zero-shot learning* in which responses can be generated without prior examples, you can also provide *one-shot* learning prompts that include one (or a few) examples of the output you require (for example “Visit the castle in the morning before the crowds arrive”). The model can then generate further responses in the same style as the examples provided in the prompt.
 
@@ -16,11 +18,6 @@ While LLMs generally support *zero-shot learning* in which responses can be gene
 
 **Grounding data**, data specific to the user, to contextualize a prompt. You can use grounding data as a prompt engineering technique to gain many of the benefits of fine-tuning without having to train a custom model. To apply this technique, include contextual data in the prompt so that the model can use it to generate an appropriate output. For example, suppose you want to use a large language model to generate a summary of an email. You can include the email text in the prompt with an instruction to summarize it.
 
-## Prompt structure
-
-Consumers of the application can also control the response of generative AI applications by using specific language and leading the prompt with instructive language such as "tell me", "create", "list", "explain".   
-
-Submitting clear, specific prompts produces better results.
 
 
 
