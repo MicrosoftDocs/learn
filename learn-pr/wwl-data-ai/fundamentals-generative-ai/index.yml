@@ -37,8 +37,7 @@ subjects:
 units:
 - learn.wwl.fundamentals-generative-ai.introduction
 - learn.wwl.fundamentals-generative-ai.what-is-generative-ai
-- learn.wwl.fundamentals-generative-ai.model-evolution
-- learn.wwl.fundamentals-generative-ai.large-language-models
+- learn.wwl.fundamentals-generative-ai.language-models
 - learn.wwl.fundamentals-generative-ai.azure-openai
 - learn.wwl.fundamentals-generative-ai.copilots
 - learn.wwl.fundamentals-generative-ai.writing-prompts
