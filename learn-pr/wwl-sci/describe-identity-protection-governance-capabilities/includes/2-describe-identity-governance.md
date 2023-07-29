@@ -24,7 +24,7 @@ When planning identity lifecycle management for employees, for example, many org
 
 The diagram that follows shows a simplified version of the identity lifecycle.
 
-:::image type="content" source="../media/2-identify-lifecycle-management-v3.png" alt-text="Identity lifecycle management is the foundation for identity governance":::
+:::image type="content" source="../media/2-identify-lifecycle-management-v3.png" alt-text="Circular diagram showing identity  lifecycle for employees. The lifecycle starts with no access followed by joining the organization then moving to a new role and then leaving the organization.":::
 
 For many organizations, this identity lifecycle for employees is tied to the representation of that user in a human resources (HR) system such as Workday or SuccessFactors. The HR system is authoritative for providing the current list of employees, and some of their properties, such as name or department.
 
@@ -47,4 +47,4 @@ Monitoring privileged access is a key part of identity governance. When employee
 
 Microsoft Entra Privileged Identity Management (PIM) provides extra controls tailored to securing access rights. PIM helps you minimize the number of people who have access to resources across Azure AD, Azure, and other Microsoft online services. PIM provides a comprehensive set of governance controls to help secure your company's resources.  PIM is a feature of Microsoft Entra Premium licensing.
 
-:::image type="content" source="../media/privileged-access-lifecycle.png" alt-text="Identity lifecycle management is the foundation for identity governance":::
+:::image type="content" source="../media/privileged-access-lifecycle.png" alt-text="Circular diagram showing identity access rights lifecycle. The lifecycle starts with no admin followed a first admin role then a second admin role then leaving IT.":::
