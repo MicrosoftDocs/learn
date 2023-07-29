@@ -43,7 +43,7 @@ There are a few steps that are generally part of a basic workflow when deploying
 
 - **Approve or deny** - Delegated approvers receive email notifications when a role request is pending their approval. Approvers can view, approve or deny these pending requests in PIM. After the request has been approved, the member can start using the role.
 
-    :::image type="content" source="../media/resources-approve-pane-inline.png" alt-text="Screen capture showing the activation step." lightbox="../media/resources-approve-pane-expanded.png":::
+    :::image type="content" source="../media/resources-approve-pane-inline.png" alt-text="Screen capture showing the approve or deny step." lightbox="../media/resources-approve-pane-expanded.png":::
 
 - **Extend and renew** - When a role assignment nears expiration, the user can use PIM to request an extension for the role assignment. When a role assignment has already expired, the user can use Privileged Identity Management to request a renewal for the role assignment.
 
@@ -53,4 +53,4 @@ There are a few steps that are generally part of a basic workflow when deploying
 
 You can use the Privileged Identity Management (PIM) audit history to see all role assignments and activations within the past 30 days for all privileged roles.
 
-:::image type="content" source="../media/rbac-resource-audit-inline.png" alt-text="Screen capture showing the PIM audit history." lightbox="../media/rbac-resource-audit-extended.png":::
+:::image type="content" source="../media/rbac-resource-audit-inline.png" alt-text="Screen capture showing the PIM audit history." lightbox="../media/rbac-resource-audit-expanded.png":::
