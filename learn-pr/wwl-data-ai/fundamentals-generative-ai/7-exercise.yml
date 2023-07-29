@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.subservice: openai
-durationInMinutes: 5
+durationInMinutes: 10
 content: |
-  [!include[](includes/8-exercise.md)]
+  [!include[](includes/7-exercise.md)]
