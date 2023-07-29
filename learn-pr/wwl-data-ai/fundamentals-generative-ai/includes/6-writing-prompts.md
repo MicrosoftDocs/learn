@@ -11,8 +11,7 @@ Prompt engineering techniques include defining a system message that sets the co
 ## Prompt structure
 Consumers of the application can also control the response of generative AI applications by using specific language and leading the prompt with instructive language such as "tell me", "create", "list", "explain".   
 
-Submitting clear, specific prompts produces better results. You can see some examples [here](https://learn.microsoft.com/en-us/training/modules/apply-prompt-engineering-azure-openai/3-write-effective-prompts).
-
+Submitting clear, specific prompts produces better results.
 
 
 
