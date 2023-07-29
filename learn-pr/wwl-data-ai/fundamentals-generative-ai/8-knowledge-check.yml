@@ -30,23 +30,23 @@ quiz:
     - content: "Monitoring the temperature in a manufacturing facility."
       isCorrect: false
       explanation: "Anomaly detection is an AI task, but not a generative AI task."
-    - content: "Generating new protein sequences that aid in drug discovery for patients with rare diseases."
+    - content: "Creating a draft for an email."
       isCorrect: true
-      explanation: "Producing new suggestions for protein sequences is a generative AI task."
+      explanation: "Creating a draft for an email is a generative AI task."
     - content: "Collecting real time data and storing it in a database."
       isCorrect: false
       explanation: "Real-time data can be used to support AI tasks, but the storage of real-time data is not in itself a generative AI task."
-  - content: "What is the purpose of assigning vectors to each word during the training process of a Large Language Model?"
+  - content: "What is the purpose of vector-based embeddings?"
     choices:
-    - content: "To represent semantic meaning by the distance between vectors."
+    - content: "To represent semantic meaning of text tokens."
       isCorrect: true
-      explanation: "Correct. The vectors for each word are assigned during training so that the representation for each token consists of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map."
-    - content: "To assign a unique number to each word in the corpus, or body of text."
+      explanation: "Correct. The embedding for each token consists of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map."
+    - content: "To create tokens that include multiple representations of a word in different languages."
       isCorrect: false
-      explanation: "Incorrect. This would not capture the relationship between words."
-    - content: "To identify the most common words in the corpus, or body of text."
+      explanation: "Incorrect. Embeddings do not store multiple language definitions of a token."
+    - content: "To correct misspllings in the training data."
       isCorrect: false
-      explanation: "Incorrect. This would not capture the relationship between words."
+      explanation: "Incorrect. Embeddings are not used to correct misspellings in trainng data."
   - content: "What is the potential impact of copilots?"
     choices:
     - content: "Copilots only impact applications used in professional settings."
