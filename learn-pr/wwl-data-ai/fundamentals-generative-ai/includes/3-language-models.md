@@ -49,7 +49,7 @@ While it may be convenient to represent tokens as simple IDs - essentially creat
 
 It can be useful to think of the elements in a token embedding vector as *coordinates* in multidimensional space, so that each token occupies a specific "location". The closer tokens are to one another along a particular dimension, the more semantically related they are. In other words, related words are grouped closer together. As a simple example, suppose our embeddings consist of vectors with three elements. We can plot the location of tokens based on these vectors in three-dimensional space, like this:
 
-![Diagram of token vectors plotted in three dimensional space.](../media/langue-model-vector-example.png)
+![Diagram of token vectors plotted in three dimensional space.](../media/language-model-vectors.png)
 
 The diagram above shows a simple example model in which each embedding has three dimensions. Real language models have many more dimensions; each of which relates to some kind of attribute of the word, such terminology to talk about animals.
 
