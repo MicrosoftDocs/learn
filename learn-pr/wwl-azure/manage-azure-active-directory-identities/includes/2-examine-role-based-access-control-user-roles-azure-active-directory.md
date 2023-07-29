@@ -32,20 +32,20 @@ Within Azure AD, you can configure users with the following roles:
  -  **Global Administrator**. This role has access to all administrative features and settings. When you sign up for the Azure subscription, you become a Global Administrator. Only this role can assign administrative roles to other accounts.
  -  **Limited administrator**. When you select the Limited administrator role for the user, you can then select one or more of the following administrative roles (the list can vary based on applications that are using your Azure AD):
     
-     -  Password administrator
-     -  Service administrator
-     -  Billing administrator
-     -  Exchange administrator
-     -  Skype for Business administrator
-     -  User administrator
-     -  SharePoint administrator
-     -  Compliance administrator
-     -  Security reader
-     -  Security administrator
-     -  Privileged role administrator
-     -  Intune Service administrator
-     -  Guest inviter
-     -  Conditional Access Administrator
+     -  **Password Administrator** can reset passwords for users and manage service requests.
+     -  **Service Administrator** can manage service requests.
+     -  **Billing Administrator** can manage billing information.
+     -  **Exchange Administrator** can manage Exchange Online settings.
+     -  **Skype for Business Administrator** can manage Skype for Business Online settings.
+     -  **User Administrator** can manage user accounts and groups.
+     -  **SharePoint Administrator** can manage SharePoint Online settings.
+     -  **Compliance administrator** can manage compliance settings.
+     -  **Security reader** can read security settings.
+     -  **Security Administrator** can manage security settings.
+     -  **Privileged role Administrator** can manage privileged roles.
+     -  **Intune Administrator** can manage Intune settings.
+     -  **Guest inviter** can invite guest users to the organization.
+     -  **Conditional Access Administrator** can manage conditional access settings.
  -  **User**. This is a default role that doesn't provide any administrative rights.
 
 These roles are applicable to management tools such as the Microsoft 365 and Intune portals, or the Azure AD module for Windows PowerShell cmdlets. When you’re using Privileged Identity Management, you can also configure the Security reader and Security administrator roles.

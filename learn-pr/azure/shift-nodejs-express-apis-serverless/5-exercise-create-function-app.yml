@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.6-exercise-function-app
 metadata:
-  title: Exercise - Create a function app
-  description: Create a function app
+  title: Exercise - Create an Azure Functions app and refactor the code
+  description: Create an Azure Functions application, and migrate your application services from the Express app to use Functions instead.
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
@@ -10,7 +10,7 @@ metadata:
   ms.custom:
     - devx-track-js
   ms.prod: learning-azure
-title: Exercise - Create a function app
+title: Exercise - Create an Azure Functions app and refactor the code
 durationInMinutes: 5
 content: |
   [!include[](includes/5-exercise-create-function-app.md)]

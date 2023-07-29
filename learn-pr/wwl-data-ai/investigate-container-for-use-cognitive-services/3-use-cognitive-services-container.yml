@@ -4,13 +4,11 @@ title: Use Cognitive Services containers
 metadata:
   title: Use Cognitive Services containers
   description: "Use Cognitive Services containers"
-  ms.date: 12/07/2021
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: cognitive-services
 durationInMinutes: 6
 content: |
   [!include[](includes/3-use-cognitive-services-container.md)]

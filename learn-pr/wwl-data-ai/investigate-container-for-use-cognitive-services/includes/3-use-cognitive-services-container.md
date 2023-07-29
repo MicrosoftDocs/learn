@@ -1,3 +1,4 @@
+
 There are container images for Azure Cognitive Services in the Microsoft Container Registry that you can use to deploy a containerized service that encapsulates an individual cognitive service API.
 
 To deploy and use a Cognitive Services container, the following three activities must occur:
@@ -18,9 +19,9 @@ For the Language service, each of the three core features maps to a separate ima
 
 | Feature | Image |
 |---|---|
-|Key Phrase Extraction | mcr.microsoft.com/azure-cognitive-services/keyphrase |
-| Language Detection | mcr.microsoft.com/azure-cognitive-services/language |
-| Sentiment Analysis v3 (English) |	mcr.microsoft.com/azure-cognitive-services/sentiment:3.0-en |
+|Key Phrase Extraction | mcr.microsoft.com/azure-cognitive-services/textanalytics/keyphrase |
+| Language Detection | mcr.microsoft.com/azure-cognitive-services/textanalytics/language |
+| Sentiment Analysis v3 (English) |	mcr.microsoft.com/azure-cognitive-services/textanalytics/sentiment:3.0-en |
 
 > [!NOTE]
 > Sentiment Analysis supports other languages by replacing the *en* in the image with the correct language code

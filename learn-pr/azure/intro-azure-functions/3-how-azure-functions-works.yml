@@ -6,7 +6,7 @@ metadata:
   description: In this unit, you learn about how Azure Functions works along with some foundational concepts.
   author: rmcmurray
   ms.author: robmcm
-  ms.date: 04/14/2020
+  ms.date: 07/26/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 3
@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "Which of the following isn't a good case for using Azure functions?"
+    - content: "How many triggers does an Azure Function have?"
       choices:
-        - content: "A new customer signed up"
+        - content: "An Azure Function doesn't need a trigger."
           isCorrect: false
-          explanation: "Incorrect! Because the flow that happens is seldom and has a clear reason why code should run. This is a great use case for Azure Functions."
-        - content: "Fetching product data from a database"
+          explanation: "Incorrect! Triggers are what cause a function to run. A function must have exactly one trigger."
+        - content: "An Azure Function should have one trigger."
           isCorrect: true
-          explanation: "Correct! Fetching products from a database is something that's likely to happen quite a lot in an e-commerce app. You could implement such an endpoint in Azure Functions, but given its cost model you're more likely better off using something like App Service."
-        - content: "Processing real-time messages"
+          explanation: "Correct! An Azure Function must have exactly one trigger."
+        - content: "An Azure Function can have multiple triggers."
           isCorrect: false
-          explanation: "Incorrect! Combined with SignalR it can provide messages as they arrive. This is a great use case for using Azure Functions as it has a clear reason for when code should run."
+          explanation: "Incorrect! An Azure Function must have exactly one trigger."

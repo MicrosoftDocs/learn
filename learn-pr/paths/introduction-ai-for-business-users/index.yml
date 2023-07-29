@@ -27,6 +27,5 @@ modules:
 - learn.wwl.enable-business-users-with-key-ai-uses-cases
 - learn-bizapps.wwl.introduction-power-bi
 - learn-bizapps.wwl.introduction-power-platform
-- learn-wwl.responsible-ai-guiding-principles
 trophy:
   uid: learn.wwl.introduction-ai-for-business-users.trophy
