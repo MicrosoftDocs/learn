@@ -10,7 +10,7 @@ To generate a natural language response, you might submit a request such as *"Gi
 
 A generative AI application might respond to such a request like this:
 
-*OK, here are three suggested healthy breakfasts that include peppers:*
+*OK, here are three healthy breakfasts that include peppers:*
 
 *1. Egg and Pepper Scramble: Dice up some bell peppers and sauté them in a pan until they're slightly softened. Then, add in some beaten eggs and scramble everything together. Serve with whole-grain toast for a nutritious breakfast.*
 
@@ -24,16 +24,79 @@ Some generative AI applications can interpret a natural language request and gen
 
 A generative AI application could then return an original new image based on the description you provided, like this:
 
+![Illustration of an elephant eating a burger.](../media/generated-image.png)
+
+## Code generation
+
+Some generative AI applications are designed to help software developers write code. For example, you could submit a request like *"Show me how to code a game of tic-tac-toe with Python"* and generate the following response:
+
+*Sure, here's some basic code for a Tic-Tac-Toe game in Python:*
+
+```
+board = [' ' for x in range(9)]  
+  
+def print_board():  
+    row1 = '| {} | {} | {} |'.format(board[0], board[1], board[2])  
+    row2 = '| {} | {} | {} |'.format(board[3], board[4], board[5])  
+    row3 = '| {} | {} | {} |'.format(board[6], board[7], board[8])  
+    print()  
+    print(row1)  
+    print(row2)  
+    print(row3)  
+    print()  
+  
+def player_move(icon):  
+    if icon == 'X':  
+        number = 1  
+    elif icon == 'O':  
+        number = 2  
+    print('Your turn player {}'.format(number))  
+    choice = int(input('Enter your move (1-9): ').strip())  
+    if board[choice - 1] == ' ':  
+        board[choice - 1] = icon  
+    else:  
+        print()  
+        print('That space is taken!')  
+  
+def is_victory(icon):  
+    if (board[0] == icon and board[1] == icon and board[2] == icon) or \  
+       (board[3] == icon and board[4] == icon and board[5] == icon) or \  
+       (board[6] == icon and board[7] == icon and board[8] == icon) or \  
+       (board[0] == icon and board[3] == icon and board[6] == icon) or \  
+       (board[1] == icon and board[4] == icon and board[7] == icon) or \  
+       (board[2] == icon and board[5] == icon and board[8] == icon) or \  
+       (board[0] == icon and board[4] == icon and board[8] == icon) or \  
+       (board[2] == icon and board[4] == icon and board[6] == icon):  
+        return True  
+    else:  
+        return False  
+  
+def is_draw():  
+    if ' ' not in board:  
+        return True  
+    else:  
+        return False  
+  
+while True:  
+    print_board()  
+    player_move('X')  
+    print_board()  
+    if is_victory('X'):  
+        print('X Wins! Congratulations!')  
+        break  
+    elif is_draw():  
+        print('The game is a draw!')  
+        break  
+    player_move('O')  
+    if is_victory('O'):  
+        print_board()  
+        print('O Wins! Congratulations!')  
+        break  
+    elif is_draw():  
+        print('The game is a draw!')  
+        break  
+ ```
+
+*This is just a basic implementation of the game, and can be improved upon with additional features such as error handling and input validation.*
 
 
-|Generate code | "Show me how to code a game of tic-tac-toe with Python" | `Code` | 
-
-Developers build generative AI applications like ChatGPT with large language models which are trained on massive volumes of text data. The sheer volume of training data and the way large language models are designed results in models that can generate human-like natural language responses or even original images based on what it has learned about the structure and semantic meaning of language. 
-
-Consider these scenarios where a software application helps you by producing: 
-
-- A bulleted list comparison between two types of cooking ingredients 
-- A birthday card image based on your description
-- Several suggested ways to start coding a solution to a programming problem 
-
-The application's responses often appear like the model understands our prompts because of language modeling. Getting to know how generative AI's language modeling works can give you a greater ability to apply its capabilities with confidence. Next we will take a look at how language models have evolved.  
