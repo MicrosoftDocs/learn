@@ -1,5 +1,5 @@
 
-The Data Migration Assistant (DMA) facilitates your database migration  by identifying compatibility issues that may affect database functionality in your new version of SQL Server or Azure SQL. DMA also assists in diagnosing issues that might either block the upgrade process or require modification to existing scripts or applications due to a breaking change. 
+The Data Migration Assistant (DMA) facilitates your database migration  by identifying compatibility issues that may affect database functionality in your new version of SQL Server or Azure SQL. DMA also helps diagnosing issues that might either block the upgrade process or require modification to existing scripts or applications due to a breaking change. 
 
 Furthermore, it enables you to seamlessly transfer your database schema, data, users, server roles, SQL Server and Windows logins to a SQL Server instance hosted on-premises or on an Azure virtual machine (VM) that is accessible from your on-premises network.
 
@@ -12,9 +12,9 @@ Furthermore, it enables you to seamlessly transfer your database schema, data, u
 
 Data Migration Assistant allows you to migrate logins based on Windows principals or SQL Server logins to SQL Server on Azure Virtual Machines. However, it currently doesn't support logins associated with stand-alone security certificates, asymmetric keys, or credentials. 
 
-The `sa` login and server principles with names enclosed by double hash marks (##) are not moved as they are for internal use only. By default, all qualified logins are selected for migration, but you can choose specific logins if needed. 
+The `sa` login and server principles with names enclosed by double hash marks (##) aren't moved as they are for internal use only. By default, all qualified logins are selected for migration, but you can choose specific logins if needed. 
 
-During migration, user-defined server roles and permissions are also moved, with the role owner set to `sa` principal. After migration, the tool maps permissions to securables on the target SQL Server and only migrates additional permissions if the login already exists. It's essential to review migration results and consider any recommended post-migration actions.
+During migration, user-defined server roles and permissions are also moved, with the role owner set to `sa` principal. After migration, the tool maps permissions to securables on the target SQL Server and only migrates other permissions if the login already exists. It's essential to review migration results and consider any recommended post-migration actions.
 
 ## Fine-tune configuration
 
@@ -56,11 +56,11 @@ Consider these best practices while working with the Data Migration Assistant:
 
 - Avoid installing and running the Data Migration Assistant directly on the SQL Server host machine.
 
-- Run assessments on production databases during non-peak times. If possible, run it on a test environment with a recent copy of your production database.
+- Run assessments on production databases during nonpeak times. If possible, run it on a test environment with a recent copy of your production database.
 
 - Separate **Compatibility issues** and **New feature recommendations** assessments to reduce the assessment duration.
 
-- Perform server migrations during non-peak times.
+- Perform server migrations during nonpeak times.
 
 - For database migration, use a single shared location accessible by both the source and target servers to avoid unnecessary copy operations. Data Migration Assistant bypasses the copy operation when a single location is provided.
 

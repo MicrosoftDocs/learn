@@ -12,7 +12,7 @@ In this migration project, your team has initiated the process with a kick-off m
 
 You've likely worked with virtual machines on your own infrastructure using either Hyper-V, or other vendors virtual machines. As a result, migrating to this platform shouldn't represent you with a steep learning curve.
 
-Using virtual machine (VM) allows you to have the full administrative control over the host operating system and the SQL Server instance. You can configure and manage high availability, disaster recovery, and patching for SQL Server easier than you can on your on-premises machines. You can also set up automatic backups and updates that will ease your overall administrative burden. As well as these benefits, running SQL Server on Azure Virtual Machine fully supports these SQL Server components:
+Using virtual machine (VM) allows you to have the full administrative control over the host operating system and the SQL Server instance. You can configure and manage high availability, disaster recovery, and patching for SQL Server easier than you can on your on-premises machines. You can also set up automatic backups and updates that will ease your overall administrative burden. Running SQL Server on Azure Virtual Machine fully supports these SQL Server components:
 
 - SQL Server transactional replication
 - Always On availability groups
@@ -65,7 +65,7 @@ You can save time by using the AKV integration feature. When this feature is ena
 
 To get started, you can choose a SQL Server virtual machine image with your required version, edition, and operating system. SQL Server 2008 R2 SP3 is the earliest supported version, and you can configure the number of CPUs and memory to the size that is appropriate for your workloads.
 
-Many of the database performance tuning options you use to ensure your SQL Server performs well for your on-premises workloads still apply to SQL Server running on an Azure VM. There are additional considerations that you need to be mindful of including the size of VM and the configuration of the disks. Use the following checklist as a guide to ensure you have the optimal performance set up for a SQL Server running on Azure Virtual Machine.
+Many of the database performance tuning options you use to ensure your SQL Server performs well for your on-premises workloads still apply to SQL Server running on an Azure VM. There are other considerations that you need to be mindful of including the size of VM and the configuration of the disks. Use the following checklist as a guide to ensure you have the optimal performance set up for a SQL Server running on Azure Virtual Machine.
 
 | Performance metric | Optimization option |
 | - | - |
@@ -78,9 +78,9 @@ There may be specific performance setting that you want to apply that are specif
 
 ## Tools and features to support your migration
 
-There are a number of different ways that you can migrate your SQL Server to an Azure Virtual Machine. The first step in the process is to provision an Azure VM that has SQL Server installed. 
+There are many different ways that you can migrate your SQL Server to an Azure Virtual Machine. The first step in the process is to provision an Azure VM that has SQL Server installed. 
 
-You'll get the best data transfer performance by migrating the database files to the Azure VM using a compressed backup file.
+You get the best data transfer performance by migrating the database files to the Azure VM using a compressed backup file.
 
 To minimize downtime during the database migration process, use either the Always On option or the transactional replication option. If it's not possible to use any of the above methods, you still can manually migrate your database.
 
@@ -102,7 +102,7 @@ These are the main tools and features to support and migrate your SQL Server dat
     Azure Migrate is a comprehensive migration service that supports a wide range of migration scenarios, including SQL Server migration. Azure Migrate provides a suite of tools designed for assessment and migration of on-premises servers, infrastructure, applications, and data at scale, with the purpose of migrating them to Azure. 
 
 - **[Data Migration Assistant (DMA)](https://learn.microsoft.com/sql/dma/dma-overview)**
-   Use the Data Migration Assistant to migrate database schema, data, users, server roles, SQL Server and Windows logins from an on-premises SQL Server to a SQL Server on Azure Virtual Machine. The tool will first run an assessment that will prompt you to address any compatibility issues. You can then use the same tool to migrate the assessed database schema and data to Azure.
+   Use the Data Migration Assistant to migrate database schema, data, users, server roles, SQL Server and Windows logins from an on-premises SQL Server to a SQL Server on Azure Virtual Machine. The tool will first run an assessment that prompts you to address any compatibility issues. You can then use the same tool to migrate the assessed database schema and data to Azure.
 
 - **[Database Experimentation Assistant (DEA)](https://learn.microsoft.com/sql/dea/database-experimentation-assistant-overview)**
    Use the Database Experimentation Assistant to assess if your target server can handle the workload if you have concerns about performance. You can use the analysis metrics to give comparison data to allow you to decide on whether the targeted version would provide a better experience after the migration.

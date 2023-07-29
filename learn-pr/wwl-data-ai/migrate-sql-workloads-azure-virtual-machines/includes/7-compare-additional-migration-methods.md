@@ -28,21 +28,21 @@ To learn more about log shipping, see [Log Shipping Tables and Stored Procedures
 
 Another offline method that can be used to migrate your databases is detaching and then attaching databases from a URL. You can detach your database and log files and transfer them to an Azure Storage account. Then attach the database from the blob URL on your Azure VM. 
 
-This method is useful if you want the physical database files to be stored in Azure Storage. You might use this option for your larger databases. You have the option to transfer the database and log files either through [Azure Data Explorer](https://learn.microsoft.com/azure/data-explorer/data-explorer-overview) or the [AzCopy command-line utility](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
+This method is useful if you want the physical database files to be stored in Azure Storage. You might use this option for your larger databases. You can transfer the database and log files either through [Azure Data Explorer](https://learn.microsoft.com/azure/data-explorer/data-explorer-overview) or the [AzCopy command-line utility](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
 
 ## Convert to a VM, upload to a URL, and deploy as a new VM
 
-Use this method to migrate all system and user databases in an on-premises SQL Server instance to Azure Virtual Machine. You should use this approach when bringing your own SQL Server license, migrating a database that you will run on an older version of SQL Server, or when migrating system and user databases together as part of the migration of database dependent on other user databases and/or system databases.
+Use this method to migrate all system and user databases in an on-premises SQL Server instance to Azure Virtual Machine. You should use this approach when bringing your own SQL Server license, migrating a database that you run on an older version of SQL Server, or when migrating system and user databases together as part of the migration of database dependent on other user databases and/or system databases.
 
 ## Import Export Wizard/BACPAC
 
 You can choose to migrate a SQL Server database to SQL Server on Azure Virtual Machine with a **.bacpac** file for the import process. This **.bacpac** file allows you to import the data from either Azure Blob storage or local storage in an on-premises location. A **.bacpac** file is a compressed file containing the metadata and data from the database.
 
-For optimal scale and performance in production environments, it is highly recommended to utilize the [SQLPackage](https://learn.microsoft.com/sql/tools/sqlpackage/sqlpackage) utility. Running multiple SqlPackage commands in parallel for subsets of tables can significantly accelerate import/export operations.
+For optimal scale and performance in production environments, it's highly recommended to utilize the [SQLPackage](https://learn.microsoft.com/sql/tools/sqlpackage/sqlpackage) utility. Running multiple SqlPackage commands in parallel for subsets of tables can significantly accelerate import/export operations.
 
 ## SQL Server data files on Azure Storage
 
-Although this is not a full migration approach, but rather a hybrid one, storing [SQL Server data files on Azure Storage](https://learn.microsoft.com/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure) enables organizations to seamlessly integrate on-premises and cloud services. It can serve as a long-term strategy that allows organizations to balance their business needs and leverage the benefits of both on-premises and cloud solutions.
+Although this isn't a full migration approach, but rather a hybrid one, storing [SQL Server data files on Azure Storage](https://learn.microsoft.com/sql/relational-databases/databases/sql-server-data-files-in-microsoft-azure) enables organizations to seamlessly integrate on-premises and cloud services. It can serve as a long-term strategy that allows organizations to balance their business needs and use the benefits of both on-premises and cloud solutions.
 
 Hosting on-premises SQL Server data files on Azure provides several benefits for organizations looking to migrate their data to the cloud. It simplifies the migration process by allowing for an incremental migration without requiring any application changes or new hardware.
 
@@ -54,8 +54,8 @@ Understanding the schema and data types of the table is essential for using the 
 
 ## Azure Data Factory	
 
-You can use [Azure Data Factory](https://learn.microsoft.com/azure/data-factory/quickstart-get-started) for data migration rather than entire database migration. Azure Data Factory can migrate and transform data from source SQL Server databases. It is commonly used for merging data from multiple sources into Azure SQL Managed Instance, especially for business intelligence workloads. However, it can also be used to move data from or to SQL Server running on Azure Virtual Machine. To achieve this, data movement pipelines are created in Azure Data Factory to transfer data from the source to the destination. 
+You can use [Azure Data Factory](https://learn.microsoft.com/azure/data-factory/quickstart-get-started) for data migration rather than entire database migration. Azure Data Factory can migrate and transform data from source SQL Server databases. It's commonly used for merging data from multiple sources into Azure SQL Managed Instance, especially for business intelligence workloads. However, it can also be used to move data from or to SQL Server running on Azure Virtual Machine. To achieve this, data movement pipelines are created in Azure Data Factory to transfer data from the source to the destination. 
 
 ## The Windows Import/Export Service
 
-Use the [Windows Import/Export Service](https://learn.microsoft.com/azure/import-export/storage-import-export-service) method to transfer large amounts of data to Azure Blob storage when uploading over the network is not feasible. With this service, you send one or more hard drives containing that data to an Azure data center, where your data will be uploaded to your storage account.
+Use the [Windows Import/Export Service](https://learn.microsoft.com/azure/import-export/storage-import-export-service) method to transfer large amounts of data to Azure Blob storage when uploading over the network isn't feasible. With this service, you send one or more hard drives containing that data to an Azure data center, where your data is uploaded to your storage account.

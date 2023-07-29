@@ -3,7 +3,7 @@ If you want to minimize the amount of downtime during the migration, you can use
 
 A [distributed availability group (AG)](https://learn.microsoft.com/azure/azure-sql/migration-guides/virtual-machines/sql-server-distributed-availability-group-migrate-standalone-instance) can be used to migrate a standalone instance of SQL Server or an Always On availability group to SQL Server on Azure Virtual Machines (VMs).  
 
-If you are migrating a database (or multiple databases) from a standalone instance, using a distributed AG is a straightforward solution that does not require either a Windows Server Failover Cluster or an availability group listener on the source or target. However, if you are migrating an availability group, both a cluster and a listener are required on the source and target.
+If you're migrating a database (or multiple databases) from a standalone instance, using a distributed AG is a straightforward solution that doesn't require either a Windows Server Failover Cluster or an availability group listener on the source or target. However, if you're migrating an availability group, both a cluster and a listener are required on the source and target.
 
 :::image type="content" border="false" source="../media/5-availability-groups-architecture.png" alt-text="An architecture diagram of distributed availability group to migrate databases from a standalone instance.":::
 
