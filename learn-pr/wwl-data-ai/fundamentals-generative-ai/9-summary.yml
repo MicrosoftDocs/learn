@@ -12,4 +12,4 @@ metadata:
   ms.subservice: openai
 durationInMinutes: 1
 content: |
-  [!include[](includes/10-summary.md)]
+  [!include[](includes/9-summary.md)]
