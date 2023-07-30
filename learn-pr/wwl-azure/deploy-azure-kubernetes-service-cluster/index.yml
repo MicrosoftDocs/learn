@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-azure-kubernetes-service-cluster
 metadata:
   title: Deploy an Azure Kubernetes Service cluster
   description: "Deploy an Azure Kubernetes Service cluster"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,8 @@ abstract: |
   * Connect to an Azure Kubernetes Service  cluster.
   * Configure Azure Active Directory Integration.
   * Monitor an Azure Kubernetes Service cluster.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -30,12 +31,12 @@ units:
 - learn.wwl.deploy-azure-kubernetes-service-cluster.introduction
 - learn.wwl.deploy-azure-kubernetes-service-cluster.azure-kubernetes-service-cluster-architecture
 - learn.wwl.deploy-azure-kubernetes-service-cluster.network-topology
-- learn.wwl.deploy-azure-kubernetes-service-cluster.spoke
-- learn.wwl.deploy-azure-kubernetes-service-cluster.configure-compute-for-the-base-cluster
-- learn.wwl.deploy-azure-kubernetes-service-cluster.integrate-azure-active-directory-for-the-cluster
-- learn.wwl.deploy-azure-kubernetes-service-cluster.secure-the-network-flow
-- learn.wwl.deploy-azure-kubernetes-service-cluster.node-and-pod-scalability
-- learn.wwl.deploy-azure-kubernetes-service-cluster.create-a-azure-kubernetes-service
+- learn.wwl.deploy-azure-kubernetes-service-cluster.spoke-network-kubernetes
+- learn.wwl.deploy-azure-kubernetes-service-cluster.configure-compute-base-cluster
+- learn.wwl.deploy-azure-kubernetes-service-cluster.integrate-azure-active-directory-cluster
+- learn.wwl.deploy-azure-kubernetes-service-cluster.secure-network-flow
+- learn.wwl.deploy-azure-kubernetes-service-cluster.node-pod-scalability
+- learn.wwl.deploy-azure-kubernetes-service-cluster.create-azure-kubernetes-service
 - learn.wwl.deploy-azure-kubernetes-service-cluster.knowledge-check
 - learn.wwl.deploy-azure-kubernetes-service-cluster.summary
 badge:

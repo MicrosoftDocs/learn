@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-azure-kubernetes-service-cluster.node-and-pod-scalability
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.node-pod-scalability
 title: Node and pod scalability
 metadata:
   title: Node and pod scalability
   description: "Node and pod scalability"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/8-node-and-pod-scalability.md)]
+  [!include[](includes/8-node-pod-scalability.md)]

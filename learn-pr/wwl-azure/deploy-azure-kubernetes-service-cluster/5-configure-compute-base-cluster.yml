@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-azure-kubernetes-service-cluster.configure-compute-for-the-base-cluster
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.configure-compute-base-cluster
 title: Configure compute for the base cluster
 metadata:
   title: Configure compute for the base cluster
   description: "Configure compute for the base cluster"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-configure-compute-for-the-base-cluster.md)]
+  [!include[](includes/5-configure-compute-base-cluster.md)]

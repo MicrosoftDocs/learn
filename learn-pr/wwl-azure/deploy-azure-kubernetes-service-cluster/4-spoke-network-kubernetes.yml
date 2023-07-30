@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-azure-kubernetes-service-cluster.spoke
+uid: learn.wwl.deploy-azure-kubernetes-service-cluster.spoke-network-kubernetes
 title: Plan the IP addresses
 metadata:
   title: Plan the IP addresses
   description: "Plan the IP addresses"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-spoke.md)]
+  [!include[](includes/4-spoke-network-kubernetes.md)]
