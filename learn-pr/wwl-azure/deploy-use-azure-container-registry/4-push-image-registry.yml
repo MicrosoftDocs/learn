@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-use-azure-container-registry.push-image-to-registry
+uid: learn.wwl.deploy-use-azure-container-registry.push-image-registry
 title: Push an image to the registry
 metadata:
   title: Push an image to the registry
   description: "Push an image to the registry"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-push-image-to-registry.md)]
+  [!include[](includes/4-push-image-registry.md)]

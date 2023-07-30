@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-use-azure-container-registry
 metadata:
   title: Deploy and use Azure Container Registry
   description: "Deploy and use Azure Container Registry"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -18,7 +18,8 @@ abstract: |
   * Push an image to the registry instance.
   * Remove the image from your local Docker environment.View the image in your registry.
   * Pull and run the container image from your container registry.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -28,13 +29,13 @@ products:
 - azure
 units:
 - learn.wwl.deploy-use-azure-container-registry.introduction
-- learn.wwl.deploy-use-azure-container-registry.create-a-container-registry
-- learn.wwl.deploy-use-azure-container-registry.log-in-to-the-container-registry
-- learn.wwl.deploy-use-azure-container-registry.push-image-to-registry
+- learn.wwl.deploy-use-azure-container-registry.create-container-registry
+- learn.wwl.deploy-use-azure-container-registry.log-container-registry
+- learn.wwl.deploy-use-azure-container-registry.push-image-registry
 - learn.wwl.deploy-use-azure-container-registry.view-container-images
-- learn.wwl.deploy-use-azure-container-registry.run-and-image-from-the-registry
-- learn.wwl.deploy-use-azure-container-registry.create-a-virtual-network
-- learn.wwl.deploy-use-azure-container-registry.introduction0
+- learn.wwl.deploy-use-azure-container-registry.run-image-from-registry
+- learn.wwl.deploy-use-azure-container-registry.create-virtual-network
+- learn.wwl.deploy-use-azure-container-registry.knowledge-check
 - learn.wwl.deploy-use-azure-container-registry.summary
 badge:
   uid: learn.wwl.deploy-use-azure-container-registry.badge

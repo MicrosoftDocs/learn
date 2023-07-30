@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.deploy-use-azure-container-registry.log-in-to-the-container-registry
+uid: learn.wwl.deploy-use-azure-container-registry.log-container-registry
 title: Log in to the container registry
 metadata:
   title: Log in to the container registry
   description: "Log in to the container registry"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/3-log-in-to-the-container-registry.md)]
+  [!include[](includes/3-log-container-registry.md)]
