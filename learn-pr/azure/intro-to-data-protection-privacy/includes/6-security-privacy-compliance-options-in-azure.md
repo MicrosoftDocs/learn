@@ -26,12 +26,10 @@ Azure is a multitenant service that uses logical isolation to segregate each cus
 
 ### Data encryption
 
-Azure offers a wide range of encryption capabilities and options for data encryption at rest and in transit. Azure supports various encryption models, including client-side and server-side encryption, and supports Microsoft-managed and customer-managed encryption keys. For data at rest, Azure offers several flexible encryption capabilities to choose from.
+Azure offers a wide range of encryption capabilities and options for data encryption at rest and in transit. Azure supports various encryption models, including client-side and server-side encryption, and supports Microsoft-managed and customer-managed encryption keys. For data at rest, Azure offers several flexible encryption options.
 
 - **Azure Disk Encryption** uses the industry-standard BitLocker feature for Windows or the DM-Crypt feature for Linux to provide volume encryption for operating system (OS) and data disks.
-
 - **Transparent data encryption (TDE)** helps protect Azure SQL databases.
-
 - **Azure Key Vault** helps you easily and cost-effectively streamline encryption key management by maintaining control of data encryption keys that cloud applications and services use.
 
 ### Communication protocols

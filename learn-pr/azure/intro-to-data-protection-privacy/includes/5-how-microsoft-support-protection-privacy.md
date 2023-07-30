@@ -38,9 +38,14 @@ Microsoft uses the following key privacy principles for protecting and governing
 Microsoft has products, services, and administrative tools that can help organizations find and act on personal data to respond to data subject requests (DSRs).
 
 - **Discovery.** Use search and discovery tools to find customer data that might be the subject of a DSR. After collecting potentially responsive documents, do other DSR actions, or decide that the request doesn't meet organizational guidelines for responding to DSRs.
+
 - **Access.** Retrieve personal data that resides in the Microsoft cloud and, if requested, make a copy of the data available to the data subject.
+
 - **Rectification.** Make changes or implement other requested actions on the personal data, where applicable.
+
 - **Restriction.** Restrict processing of personal data, either by removing licenses for various Azure services or turning off certain services. Remove the data from the Microsoft cloud and keep it on-premises or at another location.
+
 - **Deletion.** Permanently remove personal data from the Microsoft cloud.
+
 - **Exporting and receiving (portability).** Provide an electronic copy of personal data or personal information in a machine-readable format to the data subject.
 

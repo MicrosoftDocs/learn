@@ -7,18 +7,18 @@ This unit describes the GDPR, its concepts and terminology, and how Microsoft su
 
 ## Overview of the GDPR
 
-The GDPR governs the use and treatment of personal data by organizations that offer goods and services to EU residents or monitor their behavior. The GDPR applies regardless of where the organizations are located. The GDPR also gives individuals certain rights to manage their personal data that an organization collects.
+The GDPR governs the use and treatment of personal data by organizations that offer goods and services to EU residents or monitor their behavior. The GDPR also gives individuals certain rights to manage their personal data that an organization collects. The GDPR applies regardless of where the organizations are located.
 
 > [!NOTE]
 > The GDPR applies more broadly than might be apparent at first glance. Unlike privacy laws in some other jurisdictions, the GDPR is applicable to organizations of all sizes and all industries. The GDPR may apply to your organization even if it doesn't have a physical presence in the EU. Work closely with your legal team to understand whether and how the GDPR applies to your organization.
 
-One GDPR goal is to strengthen personal data protections for EU residents by focusing on the privacy and usage of an individual's personal data. The GDPR updates and expands the 1995 Data Protection Directive. The GDPR preserves many of the principles the Directive established, while giving individuals greater control over their personal data. The GDPR imposes many new obligations on organizations that collect, handle, or analyze personal data.
+One GDPR goal is to strengthen personal data protections for EU residents by focusing on the privacy and usage of an individual's personal data. The GDPR updates and expands the 1995 Data Protection Directive by preserving many principles the Directive established, while giving individuals greater control over their personal data. The GDPR imposes many new obligations on organizations that collect, handle, or analyze personal data.
 
 In the context of GDPR, data has a lifecycle that starts with data collection, continues with the data storage, processing, and use, and ends with data deletion from the system. The GDPR sets out data handling requirements and advises on how to achieve them. The GDPR also gives regulators new powers to impose significant fines on organizations that breach the law. The GDPR became enforceable in May 2018.
 
 ## GDPR concepts and terminology
 
-To understand the GDPR, it's important to know the following concepts and terms:
+The following concepts and terms are important for understanding the GDPR.
 
 - **Personal data** under the GDPR is any data that relates to an identified or identifiable natural person. If data is linked or linkable to an identifiable individual, the GDPR considers it personal data. Common examples of personal data include name, address, date of birth, and IP address. The GDPR also considers *pseudonymous* information, regardless of how obscure or technical it is, to be personal data if it's linked to an individual.
 
@@ -34,7 +34,7 @@ To understand the GDPR, it's important to know the following concepts and terms:
   - When an individual has consented to the processing of their data.
   - When the processing is in the organization's legitimate interest, as long as the individual's rights don't outweigh that interest.
 
-- **Data subject rights** under the GDPR give individuals certain rights with respect to an organization's or controller's use of their personal data. Under certain circumstances, individuals can file the following DSRs for their personal data that an organization stores, processes, and transmits.
+- **Data subject rights** under the GDPR give individuals certain rights with respect to an organization's or controller's use of their personal data. Under certain circumstances, individuals can file the following data subject requests (DSRs) for their personal data that an organization stores, processes, and transmits.
 
   - **Access data.** Individuals have a right to know whether an organization is processing their data and if so, to have access to that data.
   - **Ask for data rectification.** Individuals can ask a company to correct inaccurate data about the individual.
