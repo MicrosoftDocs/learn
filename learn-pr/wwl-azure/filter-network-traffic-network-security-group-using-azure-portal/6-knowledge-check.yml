@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
@@ -26,7 +26,7 @@ quiz:
     - content: "To monitor performance and availability of Azure services"
       isCorrect: false
       explanation: "Incorrect. This is the role of Azure Monitor and Azure Application Insights."
-  - content: "Which of the following is a valid network security rule in an NSG?"
+  - content: "Which of the following network security rules are valid in an NSG?"
     choices:
     - content: "Deny outbound traffic to a specific IP address"
       isCorrect: false
@@ -41,21 +41,21 @@ quiz:
     choices:
     - content: "During the creation of the Azure resource"
       isCorrect: false
-      explanation: "Incorrect. NSG association is not typically done during resource creation."
+      explanation: "Incorrect. NSG association isn't typically done during resource creation."
     - content: "By modifying the virtual network settings"
       isCorrect: true
       explanation: "Correct. To associate a Network Security Group (NSG) with an Azure resource, you need to modify the virtual network settings and associate the NSG with the desired subnet or network interface."
     - content: "By using Azure PowerShell commands"
       isCorrect: false
-      explanation: "Incorrect. While possible, it is not the primary method for associating NSGs with resources."
+      explanation: "Incorrect. While possible, it isn't the primary method for associating NSGs with resources."
   - content: "What happens to network traffic that doesn't match any NSG rules?"
     choices:
-    - content: "It is allowed by default"
+    - content: "It's allowed by default"
       isCorrect: false
       explanation: "Incorrect. Allowing traffic by default would pose a security risk."
-    - content: "It is denied by default"
+    - content: "It's denied by default"
       isCorrect: true
       explanation: "Correct. By default, network traffic that does not match any Network Security Group (NSG) rules is denied. This ensures that any traffic not explicitly allowed is blocked and helps maintain a secure network environment."
-    - content: "It is logged for analysis"
+    - content: "It's logged for analysis"
       isCorrect: false
-      explanation: "Incorrect. NSGs do not log traffic by default, but logging can be enabled for further analysis."
+      explanation: "Incorrect. NSGs don't log traffic by default, but logging can be enabled for further analysis."
