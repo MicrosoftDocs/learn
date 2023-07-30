@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 7
 content: |
   [!include[](includes/3-kubernetes-cluster-architecture.md)]
