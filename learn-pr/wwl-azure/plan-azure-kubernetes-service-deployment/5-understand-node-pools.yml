@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.plan-azure-kubernetes-service-deployment.nodes-and-node-pools
+uid: learn.wwl.plan-azure-kubernetes-service-deployment.understand-node-pools
 title: Nodes and node pools for Azure Kubernetes Service
 metadata:
   title: Nodes and node pools for Azure Kubernetes Service
   description: "Nodes and node pools for Azure Kubernetes Service"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/5-nodes-and-node-pools.md)]
+  [!include[](includes/5-understand-node-pools.md)]

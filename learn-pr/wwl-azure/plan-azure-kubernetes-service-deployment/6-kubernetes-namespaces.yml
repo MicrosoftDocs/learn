@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.plan-azure-kubernetes-service-deployment.namespaces
+uid: learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-namespaces
 title: Namespaces for Azure Kubernetes Service
 metadata:
   title: Namespaces for Azure Kubernetes Service
   description: "Namespaces for Azure Kubernetes Service"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 3
 content: |
-  [!include[](includes/6-namespaces.md)]
+  [!include[](includes/6-kubernetes-namespaces.md)]

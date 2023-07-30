@@ -3,7 +3,7 @@ uid: learn.wwl.plan-azure-kubernetes-service-deployment
 metadata:
   title: Plan an Azure Kubernetes Service deployment
   description: "Plan an Azure Kubernetes Service deployment"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,7 +17,8 @@ abstract: |
   * Scheduling of fault-tolerant application workloads using Azure Kubernetes Service.
   * Managing deployment and core management tasks, like upgrade coordination using Azure Kubernetes Service.
   * Clustering of virtual or on-premises machines called nodes that share compute, network, and storage resources.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -27,13 +28,13 @@ products:
 - azure
 units:
 - learn.wwl.plan-azure-kubernetes-service-deployment.introduction
-- learn.wwl.plan-azure-kubernetes-service-deployment.azure-kubernetes-service-
+- learn.wwl.plan-azure-kubernetes-service-deployment.azure-kubernetes-service
 - learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-cluster-architecture
-- learn.wwl.plan-azure-kubernetes-service-deployment.pods
-- learn.wwl.plan-azure-kubernetes-service-deployment.nodes-and-node-pools
-- learn.wwl.plan-azure-kubernetes-service-deployment.namespaces
-- learn.wwl.plan-azure-kubernetes-service-deployment.network-access-to-azure-kubernetes-service
-- learn.wwl.plan-azure-kubernetes-service-deployment.monitoring-and-logging
+- learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-pods
+- learn.wwl.plan-azure-kubernetes-service-deployment.understand-node-pools
+- learn.wwl.plan-azure-kubernetes-service-deployment.kubernetes-namespaces
+- learn.wwl.plan-azure-kubernetes-service-deployment.network-access-azure-kubernetes-service
+- learn.wwl.plan-azure-kubernetes-service-deployment.monitoring-logging
 - learn.wwl.plan-azure-kubernetes-service-deployment.knowledge-check
 - learn.wwl.plan-azure-kubernetes-service-deployment.summary
 badge:
