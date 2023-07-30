@@ -12,7 +12,7 @@ Entitlement management includes the following capabilities to address these chal
 
 Entitlement management, a feature of Microsoft Entra Premium licensing, uses access packages to manage access to resources.
 
-## Microsoft Entra terms of use
+### Microsoft Entra terms of use
 
 Microsoft Entra terms of use allow information to be presented to users, before they access data or an application. Terms of use ensure users read relevant disclaimers for legal or compliance requirements.
 
