@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
   [!include[](includes/6-run-image-from-registry.md)]
