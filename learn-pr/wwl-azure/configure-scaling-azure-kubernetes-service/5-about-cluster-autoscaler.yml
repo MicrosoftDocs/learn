@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-scaling-azure-kubernetes-service.about-the-cluster-autoscaler
+uid: learn.wwl.configure-scaling-azure-kubernetes-service.about-cluster-autoscaler
 title: When to use cluster autoscaler
 metadata:
   title: When to use cluster autoscaler
   description: "When to use cluster autoscaler"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 5
 content: |
-  [!include[](includes/5-about-the-cluster-autoscaler.md)]
+  [!include[](includes/5-about-cluster-autoscaler.md)]

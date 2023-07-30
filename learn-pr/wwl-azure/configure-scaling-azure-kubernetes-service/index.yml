@@ -3,7 +3,7 @@ uid: learn.wwl.configure-scaling-azure-kubernetes-service
 metadata:
   title: Configure scaling in Azure Kubernetes Service
   description: "Configure scaling in Azure Kubernetes Service"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,7 +17,8 @@ abstract: |
   * Using the Horizontal pod autoscaler
   * Using the Cluster autoscaler
   * Integrating with Azure Container Instances (ACI)
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -28,12 +29,12 @@ products:
 - azure-kubernetes-service
 units:
 - learn.wwl.configure-scaling-azure-kubernetes-service.introduction
-- learn.wwl.configure-scaling-azure-kubernetes-service.scaling-options-in-azure-kubernetes-services
+- learn.wwl.configure-scaling-azure-kubernetes-service.scaling-options-azure-kubernetes-services
 - learn.wwl.configure-scaling-azure-kubernetes-service.cluster-autoscaler
-- learn.wwl.configure-scaling-azure-kubernetes-service.burst-to-azure-container-instances
-- learn.wwl.configure-scaling-azure-kubernetes-service.about-the-cluster-autoscaler
-- learn.wwl.configure-scaling-azure-kubernetes-service.autoscale-a-node-pool
-- learn.wwl.configure-scaling-azure-kubernetes-service.automatically-scale-a-cluster-on-azure-kubernetes-service
+- learn.wwl.configure-scaling-azure-kubernetes-service.burst-azure-container-instances
+- learn.wwl.configure-scaling-azure-kubernetes-service.about-cluster-autoscaler
+- learn.wwl.configure-scaling-azure-kubernetes-service.autoscaler-node-pool
+- learn.wwl.configure-scaling-azure-kubernetes-service.automatically-scale-cluster-azure-kubernetes-service
 - learn.wwl.configure-scaling-azure-kubernetes-service.knowledge-check
 - learn.wwl.configure-scaling-azure-kubernetes-service.summary
 badge:
