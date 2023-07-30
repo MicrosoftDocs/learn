@@ -29,7 +29,7 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-security-center
+- defender-for-cloud
 - m365-security-center
 - defender-for-cloud-apps
 subjects:
