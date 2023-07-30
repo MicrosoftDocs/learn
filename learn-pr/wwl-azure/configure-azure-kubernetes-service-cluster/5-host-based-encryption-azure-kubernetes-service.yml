@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.configure-azure-kubernetes-service-cluster.host-based-encryption-on-azure-kubernetes-service
+uid: learn.wwl.configure-azure-kubernetes-service-cluster.host-based-encryption-azure-kubernetes-service
 title: Host-based encryption on Azure Kubernetes Service
 metadata:
   title: Host-based encryption on Azure Kubernetes Service
   description: "Host-based encryption on Azure Kubernetes Service"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 6
 content: |
-  [!include[](includes/5-host-based-encryption-on-azure-kubernetes-service.md)]
+  [!include[](includes/5-host-based-encryption-azure-kubernetes-service.md)]

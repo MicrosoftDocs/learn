@@ -3,7 +3,7 @@ uid: learn.wwl.configure-azure-kubernetes-service-cluster
 metadata:
   title: Configure an Azure Kubernetes Service cluster
   description: "Configure an Azure Kubernetes Service cluster"
-  ms.date: 07/28/2023
+  ms.date: 07/30/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -17,7 +17,8 @@ abstract: |
   * Assign policy definitions to an Azure Kubernetes Service cluster.
   * Use namespaces to logically isolate workloads and resources.
   * Enable host-based encryption for Azure Kubernetes Service agent nodes.
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -27,11 +28,11 @@ products:
 - azure
 units:
 - learn.wwl.configure-azure-kubernetes-service-cluster.introduction
-- learn.wwl.configure-azure-kubernetes-service-cluster.understand-azure-policy-for-kubernetes-clusters
-- learn.wwl.configure-azure-kubernetes-service-cluster.install-azure-policy-add-on-for-azure-kubernetes-service
-- learn.wwl.configure-azure-kubernetes-service-cluster.assign-a-policy-definition-to-an-azure-kubernetes-cluster
-- learn.wwl.configure-azure-kubernetes-service-cluster.host-based-encryption-on-azure-kubernetes-service
-- learn.wwl.configure-azure-kubernetes-service-cluster.create-a-custom-namepace
+- learn.wwl.configure-azure-kubernetes-service-cluster.understand-azure-policy-kubernetes-clusters
+- learn.wwl.configure-azure-kubernetes-service-cluster.install-azure-policy-add-azure-kubernetes-service
+- learn.wwl.configure-azure-kubernetes-service-cluster.assign-policy-definition-azure-kubernetes-cluster
+- learn.wwl.configure-azure-kubernetes-service-cluster.host-based-encryption-azure-kubernetes-service
+- learn.wwl.configure-azure-kubernetes-service-cluster.create-custom-namepace
 - learn.wwl.configure-azure-kubernetes-service-cluster.knowledge-check
 - learn.wwl.configure-azure-kubernetes-service-cluster.summary
 badge:
