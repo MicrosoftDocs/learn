@@ -24688,7 +24688,8 @@
       "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction",
       "redirect_document_id": false
-    }{
+    },
+    {
       "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/includes/2-considerations-sql-server.md",
       "redirect_url": "https://learn.microsoft.com/azure/azure-sql/migration-guides/virtual-machines/sql-server-to-sql-on-azure-vm-migration-overview",
       "redirect_document_id": false
