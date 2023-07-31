@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.subservice: openai
-durationInMinutes: 2
+durationInMinutes: 4
 content: |
-  [!include[](includes/6-copilots.md)]
+  [!include[](includes/5-copilots.md)]
