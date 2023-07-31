@@ -1,10 +1,10 @@
-The quality of responses that a generative AI application returns not only depends on the model itself, but on the types of prompts it is given. The term *prompt engineering* used to describe the process of prompt improvement. Both developers who design applications and consumers who use those applications can improve the quality of responses from generative AI by considering prompt engineering.
+The quality of responses that a generative AI application returns not only depends on the model itself, but on the types of prompts it's given. The term *prompt engineering* used to describe the process of prompt improvement. Both developers who design applications and consumers who use those applications can improve the quality of responses from generative AI by considering prompt engineering.
 
 Prompts are ways we tell an application what we want it to do. An engineer can add instructions for the program with prompts. For example, developers may build a generative AI application for teachers to create multiple-choice questions related to text students read. During the development of the application, developers can add other rules for what the program should do with the prompts it receives. 
 
 ## System messages
 
-Prompt engineering techniques include defining a system message. The message sets the context for the model by describing expectations and constraints, for example, "You are a helpful assistant that responds in a cheerful, friendly manner". These system messages determine constraints and styles for the model's responses.
+Prompt engineering techniques include defining a system message. The message sets the context for the model by describing expectations and constraints, for example, "You're a helpful assistant that responds in a cheerful, friendly manner". These system messages determine constraints and styles for the model's responses.
 
 ## Writing good prompts
 
