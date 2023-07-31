@@ -2,7 +2,7 @@
 
 ## What are common management and maintenance tasks related to Azure AD-integrated apps?
 
-Implementing Azure AD-integrated apps warrants the following special considerations, some of which might require additional management and maintenance tasks:
+Implementing Azure AD-integrated apps includes the following special considerations, some of which might require additional management and maintenance tasks:
 
 - Keep track of all redirect Uniform Resource Identifiers (URIs) associated with your applications, including the corresponding Domain Name Service (DNS) records.
 - Protect web apps by ensuring that redirect URIs correspond to encrypted endpoints.
@@ -39,7 +39,7 @@ Azure AD requires the App ID URI of the app to be globally unique. For a single-
 
 ### Configure the app to send requests to the **/common** endpoint
 
-In a single-tenant app, sign-in requests are sent to the tenant's sign-in endpoint. For example, for **contoso.com**, the corresponding endpoint is `https://login.microsoftonline.com/contoso.com`. Effectively, requests targeting that endpoint allow sign-in of users or guests to the corresponding Azure AD tenant. With a multitenant app, you can't determine ahead of time which tenant will be used, so you need to use the `https://login.microsoftonline.com/common` endpoint, which serves all Azure AD tenants.
+In a single-tenant app, sign-in requests are sent to the tenant's sign-in endpoint. For example, for **contoso.com**, the corresponding endpoint is `https://login.microsoftonline.com/contoso.com`. Effectively, requests targeting that endpoint allow sign-in of users or guests to the corresponding Azure AD tenant. With a multitenant app, you can't determine ahead of time which tenant will be used, so you'll use the `https://login.microsoftonline.com/common` endpoint, which serves all Azure AD tenants.
 
 ### Add code to manage multiple issuer values
 
@@ -47,4 +47,4 @@ Web applications and web APIs must be able to validate tokens from the Microsoft
 
 ### Include provisions to respond to user and admin consent
 
-For a multitenant application, the initial registration of an app takes place in the Azure AD tenant used by the app developer. When individual users from different Azure AD tenants sign in to the app for the first time, each of them would be prompted to consent to the permissions requested by the application. This, in turn, would result in the creation of a service principal in their respective tenants. For details about provisions to address this requirement, refer to the documentation referenced in the summary unit of this course.
+For a multitenant application, the initial registration of an app takes place in the Azure AD tenant used by the app developer. When individual users from different Azure AD tenants sign in to the app for the first time, each of them is prompted to consent to the permissions requested by the application. This, in turn, would result in the creation of a service principal in their respective tenants. For details about provisions to address this requirement, refer to the documentation referenced in the summary unit of this course.

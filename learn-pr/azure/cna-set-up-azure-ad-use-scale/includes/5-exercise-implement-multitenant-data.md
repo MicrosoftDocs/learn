@@ -31,7 +31,7 @@ To perform this exercise, you need:
 You'll start by creating an instance of Azure Database for PostgreSQL server:
 
 1. If needed, start a web browser, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and sign in to access the Azure subscription you'll be using in this module.
-1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and in the list of results, in the **Marketplace** section, select **Azure Database for PostgreSQL**.
+1. Use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Database for PostgreSQL**, and in the list of results, in the **Services** section, select **Azure Database for PostgreSQL**.
 1. On the **Select Azure Database for PostgreSQL deployment option** blade, on the **Single server** tile, select **Create**.
 1. On the **Basics** tab of the **Single server** blade, configure the following settings, and then select **Next: Review + create**, while leaving all other settings with their default values:
 
