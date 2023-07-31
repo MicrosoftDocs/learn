@@ -4,14 +4,11 @@ title: Discuss Microsoft's Florence foundation model
 metadata:
   title: Discuss Microsoft's Florence foundation model
   description: "This unit introduces Microsoft's Florence foundation model and how it improves the existing Azure AI computer vision services."
-  ms.date: 05/03/2023
+  ms.date: 07/31/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
 durationInMinutes: 2
 content: |
   [!include[](includes/2-explain-florence-model.md)]

@@ -1,4 +1,5 @@
 
+
 ## What is Microsoft's Florence foundation model?
 
 Image Analysis 4.0 is powered by Microsoft's Florence foundation model, trained on billions of text-images pairs. By using universal visual-language representations in the form of text-image pair data, the Florence model can be easily adapted to various computer vision tasks such as classification, retrieval, object detection, and captioning. The Florence foundation model provides start-of-the-art computer vision capabilities and is a significant step forward in delivering game-changing visual recognition functionality.
