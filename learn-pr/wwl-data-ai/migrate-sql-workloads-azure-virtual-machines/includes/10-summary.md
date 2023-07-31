@@ -4,7 +4,7 @@ You've learned different tools and features to support and migrate SQL Server da
 
 For additional reading, you can refer to the following URLs:
 
-- [Migration guide: SQL Server to SQL Server on Azure VMs](https://learn.microsoft.com/azure/azure-sql/migration-guides/virtual-machines/sql-server-to-sql-on-azure-vm-migration-overview)
+- [Migration guide: SQL Server to SQL Server on Azure VMs](/azure/azure-sql/migration-guides/virtual-machines/sql-server-to-sql-on-azure-vm-migration-overview)
 - [Extend on-premises Always On Availability Groups to Azure](/azure/virtual-machines/windows/sqlclassic/virtual-machines-windows-classic-sql-onprem-availability)
 - [Transactional Replication](/sql/relational-databases/replication/transactional/transactional-replication)
  

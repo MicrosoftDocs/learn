@@ -11,7 +11,7 @@ There are two modes of migration to SQL Server on Azure Virtual Machine using Az
 
 ## Backups
 
-The Azure SQL Migration extension for Azure Data Studio doesn't perform or initiate any database backups. Instead, it relies on existing database backup files for the migration process. To minimize potential issues when migrating based on large backups, it's recommended to use [compressed backups](https://learn.microsoft.com/sql/relational-databases/backup-restore/backup-compression-sql-server).
+The Azure SQL Migration extension for Azure Data Studio doesn't perform or initiate any database backups. Instead, it relies on existing database backup files for the migration process. To minimize potential issues when migrating based on large backups, it's recommended to use [compressed backups](/sql/relational-databases/backup-restore/backup-compression-sql-server).
 
 There are two ways of storing your database backups for migration:
 

@@ -34,7 +34,7 @@ There are three types of licensing model that can be used for SQL Server virtual
 - The **high availability/disaster recovery (HA/DR) license** model is used for the free HA/DR replica in Azure. If you have [Software Assurance](https://www.microsoft.com/licensing/licensing-programs/software-assurance-default?rtc=1&activetab=software-assurance-default-pivot:primaryr3), you can implement hybrid disaster recovery plans with SQL Server without incurring additional licensing costs for the passive disaster recovery instance.
 
 >[!TIP]
-> To learn how to change the license model for a SQL virtual machine in Azure, see [Change the license model for a SQL virtual machine in Azure](https://learn.microsoft.com/azure/azure-sql/virtual-machines/windows/licensing-model-azure-hybrid-benefit-ahb-change?view=azuresql-vm&tabs=azure-portal)
+> To learn how to change the license model for a SQL virtual machine in Azure, see [Change the license model for a SQL virtual machine in Azure](/azure/azure-sql/virtual-machines/windows/licensing-model-azure-hybrid-benefit-ahb-change)
 
 ### Networking
 
@@ -52,8 +52,6 @@ If you want to connect to your SQL Server database engine from the Internet, sel
 - Configures the network security group on the VM to all TCP traffic on the SQL Server port.
 
 When you choose Private for the SQL connectivity type in the portal, Azure configures most of the settings identical to Public. The difference is that there's no network security group rule to allow outside traffic on the SQL Server port (default 1433). You can change the connectivity settings for your SQL virtual machine in the Azure portal.
-
-![Configuring Network Settings](../media/2-azure-portal-sql-configuration.png)
 
 ### Key management
 
@@ -86,29 +84,29 @@ To minimize downtime during the database migration process, use either the Alway
 
 These are the main tools and features to support and migrate your SQL Server databases to SQL Server running on an Azure Virtual Machine.
 
-- **[Azure SQL Migration extension for Azure Data Studio](https://learn.microsoft.com/sql/azure-data-studio/extensions/azure-sql-migration-extension)**
+- **[Azure SQL Migration extension for Azure Data Studio](/sql/azure-data-studio/extensions/azure-sql-migration-extension)**
     The Azure SQL Migration extension helps in assessing your migration readiness, providing appropriate SKU recommendations for Azure resources, and facilitating the migration of your SQL Server database to Azure and is ideal for small to medium-sized databases. It's powered by the latest version of Data Migration Services, and also provides an advanced assessment feature that evaluates SQL Server databases that are ready for migration to Azure SQL.
 
-- **[Backup and restore with Azure Blob Storage](https://learn.microsoft.com/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service)**
+- **[Backup and restore with Azure Blob Storage](/sql/relational-databases/backup-restore/sql-server-backup-and-restore-with-microsoft-azure-blob-storage-service)**
     You can restore a database from Azure Blob Storage to your SQL Server running on an Azure Virtual Machine.
 
-- **[Detach and attach from a URL](https://learn.microsoft.com/sql/relational-databases/databases/database-detach-and-attach-sql-server)**
+- **[Detach and attach from a URL](/sql/relational-databases/databases/database-detach-and-attach-sql-server)**
     Detach your database and log files and transfer them to an Azure Storage account. Then attach the database from the blob URL on your Azure Virtual Machine.
 - 
-- **[Log shipping](https://learn.microsoft.com/sql/database-engine/log-shipping/about-log-shipping-sql-server)**
+- **[Log shipping](/sql/database-engine/log-shipping/about-log-shipping-sql-server)**
     Log shipping is a method to migrate a SQL Server database to an Azure VM. It involves continuously synchronizing a secondary copy of the database on the destination server using transaction log backups from the source server. When ready, the final log backup is applied to the Azure VM, enabling a seamless migration with minimal downtime.
 
-- **[Azure Migrate](https://learn.microsoft.com/azure/migrate/migrate-services-overview)**
+- **[Azure Migrate](/azure/migrate/migrate-services-overview)**
     Azure Migrate is a comprehensive migration service that supports a wide range of migration scenarios, including SQL Server migration. Azure Migrate provides a suite of tools designed for assessment and migration of on-premises servers, infrastructure, applications, and data at scale, with the purpose of migrating them to Azure. 
 
-- **[Data Migration Assistant (DMA)](https://learn.microsoft.com/sql/dma/dma-overview)**
+- **[Data Migration Assistant (DMA)](/sql/dma/dma-overview)**
    Use the Data Migration Assistant to migrate database schema, data, users, server roles, SQL Server and Windows logins from an on-premises SQL Server to a SQL Server on Azure Virtual Machine. The tool will first run an assessment that prompts you to address any compatibility issues. You can then use the same tool to migrate the assessed database schema and data to Azure.
 
-- **[Database Experimentation Assistant (DEA)](https://learn.microsoft.com/sql/dea/database-experimentation-assistant-overview)**
+- **[Database Experimentation Assistant (DEA)](/sql/dea/database-experimentation-assistant-overview)**
    Use the Database Experimentation Assistant to assess if your target server can handle the workload if you have concerns about performance. You can use the analysis metrics to give comparison data to allow you to decide on whether the targeted version would provide a better experience after the migration.
 
 > [!TIP]
-> To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL or discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](https://learn.microsoft.com/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
+> To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL or discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
 
 ## Define your migration approach
 

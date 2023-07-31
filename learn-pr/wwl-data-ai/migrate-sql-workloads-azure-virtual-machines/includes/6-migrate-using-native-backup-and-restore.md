@@ -4,7 +4,7 @@ Microsoft Azure Blob Storage supports two types of blobs: block and page blobs. 
 
 Back up to block blob offers advantages such as safer authorization, improved backup performance, and support for larger database backups compared to page blob.
 
-If you choose to perform a full database backup to a file, you can transfer the on-premises backup files to an Azure VM either through [Azure Data Explorer](https://learn.microsoft.com/azure/data-explorer/data-explorer-overview) or the [AzCopy command-line utility](https://learn.microsoft.com/azure/storage/common/storage-use-azcopy-v10).
+If you choose to perform a full database backup to a file, you can transfer the on-premises backup files to an Azure VM either through [Azure Data Explorer](/azure/data-explorer/data-explorer-overview) or the [AzCopy command-line utility](/azure/storage/common/storage-use-azcopy-v10).
 
 ## Backup and restore with Azure Blob Storage in SQL Server
 
