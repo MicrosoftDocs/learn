@@ -1,5 +1,6 @@
 
 
+
 When you want to execute code in notebooks, you may choose to use a **compute instance** managed by Azure Machine Learning. You can create a compute instance in the Azure Machine Learning studio, using the Azure command-line interface (CLI), or the Python software development kit (SDK). 
 
 ## Create a compute instance with the Python SDK
