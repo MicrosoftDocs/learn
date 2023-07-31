@@ -40,11 +40,17 @@ Identity Protection provides organizations with three reports that they can use 
   - The user has one or more Risky sign-ins.
   - One or more risk detections have been reported.
 
+:::image type="content" source="../media/identity-protection-risky-users-inline.png" alt-text="Screen capture showing details from a risky user report." lightbox="../media/identity-protection-risky-users-expanded.png":::
+
 ### Remediate
 
 After completing an investigation, admins will want to take action to remediate the risk or unblock users. Organizations can enable automated remediation using their risk policies.  For example, risk-based conditional access policies can be enabled to require access controls such as providing a strong authentication method, perform multifactor authentication, or perform a secure password reset based on the detected risk level. If the user successfully completes the access control, the risk is automatically remediated.
 
 When automated remediation isn't enabled, an administrator must manually review the identified risks in the reports through the portal, through the API, or in Microsoft 365 Defender. Administrators can perform manual actions to dismiss, confirm safe, or confirm compromise on the risks.
+
+### Export
+
+Data from Identity Protection can be exported to other tools for archive, further investigation, and correlation. The Microsoft Graph based APIs allow organizations to collect this data for further processing in tools such as a SIEM.  The data can also be sent to a Log Analytics workspace, archived data to a storage account, streamed to Event Hubs, or solutions.
 
 ### Workload identity
 Microsoft Entra Identity Protection has historically protected users in detecting, investigating, and remediating identity-based risks. We're now extending these capabilities to workload identities to protect applications and service principals.  This requires Workload identities Premium licensing.
