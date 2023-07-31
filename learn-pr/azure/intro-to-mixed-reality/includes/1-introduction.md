@@ -1,6 +1,6 @@
 The ecosystem of mixed reality blends both the physical and digital worlds, defining the polar ends of a spectrum known as the *virtuality continuum*. Because of its immersive nature, mixed reality is transforming the nature of on-the-job training, game development, and consumer application development.
 
-Whether you're an experienced developer or a new convert, it's important to get a conceptual grip on what mixed reality is, what it can offer, and what it can add to your business or industry.
+Whether you're an experienced developer or a beginner, it's important to get a conceptual grip on what mixed reality is.
 
 In this module, you walk through the basic foundations of mixed reality. Learn where it fits in with augmented reality and virtual reality.  Find out about hardware devices, content design, and common use-case examples in real-world technology. This module introduces you to mixed-reality services and applications like Dynamics 365 mixed reality and Azure mixed reality. These applications can empower and optimize your development pipeline.
 
@@ -18,4 +18,4 @@ By the end of this module, you can:
 
 ## Prerequisites
 
-This Learn module has no prerequisites. Come as you are and dive into mixed reality!
+This Learn module has no prerequisites. Come and dive into mixed reality!
