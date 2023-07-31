@@ -4,7 +4,7 @@ metadata:
   title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
   description: Learn about GitOps, and how to use GitOps to apply configurations to Azure Arc-enabled Kubernetes clusters.
   author: JnHs
-  ms.date: 05/25/2023
+  ms.date: 08/07/2023
   ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.service: azure

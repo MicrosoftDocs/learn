@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.2-arc-overview
 metadata:
   title: Overview of Azure Arc
   description: Learn about the basics of Azure Arc and its key capabilities and benefits.
-  ms.date: 01/05/2023
+  ms.date: 08/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial

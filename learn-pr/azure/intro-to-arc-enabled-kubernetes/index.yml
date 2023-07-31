@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes
 metadata:
   title: Introduction to Azure Arc-enabled Kubernetes
   description: Learn about Azure Arc-enabled Kubernetes and how it can help organizations optimize and simplify their operations.
-  ms.date: 05/30/2023
+  ms.date: 08/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial

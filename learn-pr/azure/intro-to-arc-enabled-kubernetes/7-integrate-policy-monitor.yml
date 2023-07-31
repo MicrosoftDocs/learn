@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-policy-monitor
 metadata:
   title: Manage Azure Arc-enabled Kubernetes by using Azure Policy and Azure Monitor
   description: Learn how Azure Arc centralizes and streamlines management by enabling a range of Azure services, such as Azure Policy and Azure Monitor.
-  ms.date: 01/05/2023
+  ms.date: 08/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial

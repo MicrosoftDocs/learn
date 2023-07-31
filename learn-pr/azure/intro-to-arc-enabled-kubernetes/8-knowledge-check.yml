@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-arc-enabled-kubernetes.8-knowledge-check
 metadata:
   title: Knowledge check
   description: Knowledge check
-  ms.date: 01/05/2023
+  ms.date: 08/07/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -30,10 +30,10 @@ quiz:
       explanation: "The Azure Arc agents maintain the connection. No manual updates are required."
   - content: "Which of these is required to connect a Kubernetes cluster to Azure Arc?"
     choices:
-    - content: "Multiple Azure subscriptions"
+    - content: "Multiple Azure subscriptions."
       isCorrect: false
       explanation: "Only one Azure subscription is needed to connect a Kubernetes cluster to Azure Arc."
-    - content: "Outbound connectivity from the Kubernetes cluster"
+    - content: "Outbound connectivity from the Kubernetes cluster."
       isCorrect: true
       explanation: "To connect a Kubernetes cluster to Azure Arc, the cluster must be able to connect to Azure and other required endpoints."
     - content: "An Azure Active Directory (Azure AD) user account with the **Owner** role."
