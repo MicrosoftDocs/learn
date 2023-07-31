@@ -9,7 +9,7 @@ While the mathematical principles behind these LLMs can be complex, a basic unde
 
 ## Transformer models
 
-Machine learning models for natural language processing have evolved over many years. Today's cutting-edge large language models are based on the *transformer* architecture, which builds on and extends some techniques that have been proven successful in modeling *vocabularies* to support NLP tasks - and in particular in generating language. Transformer models are trained with large volumes of text, enabling them to represent the semantic relationships between words and use those relationships to determine probable sequences of text that make sense. Tramsformer models with a large enough vocabulary are capable of generating language responses that can be very difficult, it not impossible, to distinguish from those of a human.
+Machine learning models for natural language processing have evolved over many years. Today's cutting-edge large language models are based on the *transformer* architecture, which builds on and extends some techniques that have been proven successful in modeling *vocabularies* to support NLP tasks - and in particular in generating language. Transformer models are trained with large volumes of text, enabling them to represent the semantic relationships between words and use those relationships to determine probable sequences of text that make sense. Transformer models with a large enough vocabulary are capable of generating language responses that can be very difficult, it not impossible, to distinguish from those of a human.
 
 Transformer model architecture consists of two components, or *blocks*:
 
@@ -20,7 +20,7 @@ The full architecture for transformer models consists of two main components, or
 
 In practice, the specific implementations of the architecture vary – for example, the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine uses only the encoder block, while the Generative Pre-trained Transformer (GPT) models developed by OpenAI uses only the decoder block.
 
-While a complete explanation of every aspect of tramsformer models is beyond the scope of this module, an explanation of some of the key elements in a transformer can help you get a sense for how they support generaive AI.
+While a complete explanation of every aspect of transformer models is beyond the scope of this module, an explanation of some of the key elements in a transformer can help you get a sense for how they support generaive AI.
 
 ### Tokenization
 
