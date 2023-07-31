@@ -26,7 +26,7 @@ The Microsoft Bing search engine provides a copilot to help when browsing or sea
 
 M365 copilot works alongside you in productivity and communication apps such as PowerPoint and Outlook, assisting you in creating effective documents, spreadsheets, presentations, emails, and other ways. 
 
-![Screenshot of M365 copilot.](../media/M365_Dall_E_PPT_V2_050123.gif)
+![Screenshot of M365 copilot.](../media/M365-Dall-E-PPT.gif)
 
 GitHub copilot  provides support to software developers, helping them write, document, and test code.
 
