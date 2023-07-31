@@ -66,7 +66,7 @@ It can be useful to think of the elements in a token embedding vector as *coordi
 
 We can plot the location of tokens based on these vectors in three-dimensional space, like this:
 
-![Diagram of token vectors plotted in three dimensional space.](../media/embeddings.png)
+![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
 The locations of the tokens in the embeddings space includes some information about hwo closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark". The tokens for "cat" and "bark" are close to "meow". The token for "skateboard" is further away from the other tokens.
 
