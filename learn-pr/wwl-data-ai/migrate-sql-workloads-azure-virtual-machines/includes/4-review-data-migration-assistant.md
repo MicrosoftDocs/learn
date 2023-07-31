@@ -6,7 +6,8 @@ Furthermore, it enables you to seamlessly transfer your database schema, data, u
 :::image type="content" border="false" source="../media/4-dma-migration-page.png" alt-text="Screenshot of the Data Migration Assistant tool and a new migration project options.":::
 
 > [!TIP]
-> To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL or discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
+> To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL, and how to discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
+
 
 ## Migrate SQL Server logins
 

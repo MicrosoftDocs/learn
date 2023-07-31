@@ -2,16 +2,17 @@ As part of the architecture of Azure SQL Migration extension for Azure Data Stud
 
 There are two modes of migration to SQL Server on Azure Virtual Machine using Azure SQL Migration extension for Azure Data Studio:
 
-- **Online migration mode:** The source SQL Server database remains accessible for both read and write operations while database backups are continuously restored on the target SQL Server on Azure Virtual Machine. Therefore, application downtime is limited to the cutover duration at the end of the migration.
-
-- **Offline migration mode:** The source SQL Server database shouldn't be used for write activity while database backup files are restored on the target instance of SQL Server to Azure Virtual Machines. Application downtime remains throughout the duration of the migration process until it's completed.
+| Migration mode | Description | Application Downtime |
+| --- | --- | --- |
+| Online | Source database remains accessible for both read and write operations while database backups are continuously restored on the target. | Limited to the cutover duration at the end of the migration. |
+| Offline | Source database shouldn't be used for write activity while database backup files are restored on the target instance. | Downtime remains throughout the duration of the migration process until it's completed. |
 
 >[!IMPORTANT]
 > When migrating a database with Azure SQL Migration extension for Azure Data Studio, ensure that the provided database name(s) do not already exist on the target SQL Server on Azure Virtual Machine. Overwriting a database is not currently supported.
 
 ## Backups
 
-The Azure SQL Migration extension for Azure Data Studio doesn't perform or initiate any database backups. Instead, it relies on existing database backup files for the migration process. To minimize potential issues when migrating based on large backups, it's recommended to use [compressed backups](/sql/relational-databases/backup-restore/backup-compression-sql-server).
+Azure SQL Migration extension for Azure Data Studio doesn't perform or initiate any database backups. Instead, it relies on existing database backup files for the migration process. To minimize potential issues when migrating based on large backups, it's recommended to use [compressed backups](/sql/relational-databases/backup-restore/backup-compression-sql-server).
 
 There are two ways of storing your database backups for migration:
 

@@ -92,7 +92,7 @@ These are the main tools and features to support and migrate your SQL Server dat
 
 - **[Detach and attach from a URL](/sql/relational-databases/databases/database-detach-and-attach-sql-server)**
     Detach your database and log files and transfer them to an Azure Storage account. Then attach the database from the blob URL on your Azure Virtual Machine.
-- 
+
 - **[Log shipping](/sql/database-engine/log-shipping/about-log-shipping-sql-server)**
     Log shipping is a method to migrate a SQL Server database to an Azure VM. It involves continuously synchronizing a secondary copy of the database on the destination server using transaction log backups from the source server. When ready, the final log backup is applied to the Azure VM, enabling a seamless migration with minimal downtime.
 
@@ -106,7 +106,7 @@ These are the main tools and features to support and migrate your SQL Server dat
    Use the Database Experimentation Assistant to assess if your target server can handle the workload if you have concerns about performance. You can use the analysis metrics to give comparison data to allow you to decide on whether the targeted version would provide a better experience after the migration.
 
 > [!TIP]
-> To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL or discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
+> To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL, and how to discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
 
 ## Define your migration approach
 

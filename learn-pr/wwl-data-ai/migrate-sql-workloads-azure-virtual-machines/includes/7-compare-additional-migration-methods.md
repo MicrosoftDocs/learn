@@ -38,7 +38,7 @@ Use this method to migrate all system and user databases in an on-premises SQL S
 
 You can choose to migrate a SQL Server database to SQL Server on Azure Virtual Machine with a **.bacpac** file for the import process. This **.bacpac** file allows you to import the data from either Azure Blob storage or local storage in an on-premises location. A **.bacpac** file is a compressed file containing the metadata and data from the database.
 
-For optimal scale and performance in production environments, it's highly recommended to utilize the [SQLPackage](/sql/tools/sqlpackage/sqlpackage) utility. Running multiple SqlPackage commands in parallel for subsets of tables can significantly accelerate import/export operations.
+For optimal scale and performance in production environments, it's  recommended to use the [SQLPackage](/sql/tools/sqlpackage/sqlpackage) utility. Running multiple SqlPackage commands in parallel for subsets of tables can significantly accelerate import/export operations.
 
 ## SQL Server data files on Azure Storage
 
