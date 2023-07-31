@@ -8,7 +8,6 @@ Furthermore, it enables you to seamlessly transfer your database schema, data, u
 > [!TIP]
 > To learn how to assess on-premises SQL Server instance(s) to migrate to Azure SQL, and how to discover new features in the target SQL Server platform that the database can benefit from after an upgrade, see [Assess SQL Server databases for migration to Azure SQL module](/training/modules/assess-sql-server-databases-for-migration-to-azure-sql/).
 
-
 ## Migrate SQL Server logins
 
 Data Migration Assistant allows you to migrate logins based on Windows principals or SQL Server logins to SQL Server on Azure Virtual Machines. However, it currently doesn't support logins associated with stand-alone security certificates, asymmetric keys, or credentials. 

@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/3-explore-azure-sql-migration-extension-for-migration.md)]

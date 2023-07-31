@@ -34,28 +34,6 @@ quiz:
     - content: The selection of appropriate migration tools and the development of a comprehensive migration plan.
       isCorrect: true
       explanation: Correct. The 'how' aspect of planning involves selecting the right tools and developing a comprehensive plan for the migration process.
-  - content: What are the two modes of migration to SQL Server on Azure Virtual Machine using Azure SQL Migration extension for Azure Data Studio?
-    choices:
-    - content: Online migration mode and backup migration mode
-      isCorrect: false
-      explanation: Incorrect. There is no backup migration mode mentioned in the content.
-    - content: Hybrid migration mode and offline migration mode
-      isCorrect: false
-      explanation: Incorrect. There is no hybrid migration mode mentioned in the content.
-    - content: Online migration mode and offline migration mode
-      isCorrect: true
-      explanation: Correct. The source SQL Server database remains accessible for both read and write operations while database backups are continuously restored on the target SQL Server on Azure Virtual Machine in online migration mode. In offline migration mode, the source SQL Server database shouldn't be used for write activity while database backup files are restored on the target instance of SQL Server to Azure Virtual Machines. Application downtime remains throughout the duration of the migration process until it's completed.
-  - content: What does the Data Migration Assistant (DMA) do?
-    choices:
-    - content: DMA facilitates your database migration by identifying compatibility issues that may affect database functionality in your new version of SQL Server or Azure SQL. It also helps diagnose issues that might either block the upgrade process or require modification to existing scripts or applications due to a breaking change.
-      isCorrect: true
-      explanation: Correct. DMA is a tool that facilitates your database migration by identifying compatibility issues that may affect database functionality in your new version of SQL Server or Azure SQL. It also helps diagnose issues that might either block the upgrade process or require modification to existing scripts or applications due to a breaking change.
-    - content: DMA is a tool that helps you diagnose issues that might block the upgrade process or require modification to existing scripts or applications due to a breaking change.
-      isCorrect: false
-      explanation: This is only one of the functionalities of DMA. DMA also facilitates your database migration by identifying compatibility issues that may affect database functionality in your new version of SQL Server or Azure SQL.
-    - content: DMA is a tool that allows you to fine-tune certain SQL Server configurations.
-      isCorrect: false
-      explanation: DMA does allow you to fine-tune certain configurations, but this is not its main purpose. Its main purpose is to facilitate your database migration by identifying compatibility issues that may affect database functionality in your new version of SQL Server or Azure SQL.
   - content: What is the purpose of using SQL Server Always On availability group (AG) feature during migration?
     choices:
     - content: To create an availability group listener on the source and target.
@@ -78,25 +56,3 @@ quiz:
     - content: Block blobs offer better support for smaller database backups compared to page blob.
       isCorrect: false
       explanation: Incorrect. Block blobs offer better support for larger database backups compared to page blob.
-  - content: What is Azure Migrate?
-    choices:
-    - content: Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms.
-      isCorrect: true
-      explanation: Correct. Azure Migrate is a lift and shift migration strategy that can be used to move the entire physical or virtual SQL Server from its current location to an instance of SQL Server on Azure Virtual Machine, without making any changes to the operating system or SQL Server version. During the migration, the source server remains online and continues to service requests while data is synchronized between the source and destination servers, allowing for a nearly seamless migration.
-    - content: A migration strategy that requires the source server to be offline during the migration process.
-      isCorrect: false
-      explanation: Incorrect. Azure Migrate allows the source server to remain online and continue to service requests while data is synchronized between the source and destination servers.
-    - content: A migration strategy that requires changes to the operating system and SQL Server version.
-      isCorrect: false
-      explanation: Incorrect. Azure Migrate is a lift and shift migration strategy that does not require any changes to the operating system or SQL Server version.
-  - content: What is the purpose of the Azure migration extension for Azure Data Studio when migrating a SQL Server database to an Azure Virtual Machine?
-    choices:
-    - content: To migrate a SQL Server database to an on-premises SQL Server
-      isCorrect: false
-      explanation: Incorrect. This answer describes a different migration scenario.
-    - content: To migrate a SQL Server database to an Azure SQL Database
-      isCorrect: false
-      explanation: Incorrect. This answer describes a different migration scenario.
-    - content: Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms
-      isCorrect: true
-      explanation: Correct. The Azure migration extension for Azure Data Studio enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms when migrating a SQL Server database to an Azure Virtual Machine. execute a migration from on-premises SQL Server to Azure Virtual Machine.

@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-durationInMinutes: 7
+durationInMinutes: 10
 content: |
   [!include[](includes/2-migration-strategies-and-options.md)]
