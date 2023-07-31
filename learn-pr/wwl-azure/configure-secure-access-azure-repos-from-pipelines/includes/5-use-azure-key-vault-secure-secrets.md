@@ -16,6 +16,10 @@ The first step in securing access to credential secrets is to store them in Azur
     > Follow [this guide](https://learn.microsoft.com/azure/active-directory/develop/howto-create-service-principal-portal) to create your service principal.
 
 4. Assign the service principal to the Key Vault following [this guide](https://learn.microsoft.com/azure/key-vault/general/assign-access-policy-portal).
+
+    > [!IMPORTANT]
+    > The service principal that you created will need to have **Secret permissions** access ("Get, List") to the Key Vault. If the service principal does not have access to the Key Vault, you will see an error message when you try to link the Variable Group to the Key Vault.
+
 5. Once you've created your Key Vault, you need to store the secrets that you want to use in your pipeline. You can create secrets directly in your Key Vault, or from the Azure DevOps.
 
 ## Create secrets in Azure Key Vault
