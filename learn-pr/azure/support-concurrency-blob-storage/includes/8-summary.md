@@ -12,7 +12,7 @@ In this lesson, we've gone over code examples for each of the three approaches.
 
 ## Additional resources
 
-The documentation provides more information on the APIs as well as tutorials and samples. Here are a few useful links to explore further:
+The documentation provides more information on the APIs, along with tutorials and samples. Here are a few useful links to explore further:
 
 - [Managing Concurrency in Microsoft Azure Storage](/azure/storage/common/storage-concurrency)
 - [Specifying Conditional Headers for Blob Service Operations](/rest/api/storageservices/specifying-conditional-headers-for-blob-service-operations)
