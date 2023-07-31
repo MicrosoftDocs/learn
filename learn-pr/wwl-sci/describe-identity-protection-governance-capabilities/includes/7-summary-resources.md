@@ -1,5 +1,5 @@
 
-In this module, you learned how Microsoft Entra provides tools to help you protect and govern identities. You learned about identity life-cycle management and how Identity Protection can detect potential identity risks.   Finally, you learned how solutions such as access reviews privileged identity management, and permissions management all help organizations adhere to the concepts of least privilege access, which is a core principal of a Zero Trust security strategy.
+In this module, you learned how Microsoft Entra provides tools to help you protect and govern identities. You learned about identity life-cycle management and how Identity Protection can detect potential identity risks.   Finally, you learned how solutions such as access reviews, privileged identity management, and permissions management all help organizations adhere to the concepts of least privilege access, a core principle of a Zero Trust security strategy.
 
 Now that you've completed this module, you'll be able to:
 
