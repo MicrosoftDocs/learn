@@ -9,7 +9,7 @@ metadata:
   ms.author: diberry
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.devlang: nodejs
+  ms.devlang: nodejs, javascript
 title: Build JavaScript applications with Node.js
 summary: |
   Node.js provides a large set of built-in APIs that help you build various types of applications, command-line apps, web apps, and more. It also offers testing and debugging capabilities and a rich ecosystem of third-party packages that you can easily add to your application.
