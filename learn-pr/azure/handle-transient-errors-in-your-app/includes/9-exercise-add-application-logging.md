@@ -1,6 +1,6 @@
-In this exercise, we'll enhance the current logging of the chat app, by building on the code from the previous exercises.
+In this exercise, we enhance the current logging of the chat app, by building on the code from the previous exercises.
 
-For simplicity, we'll focus on logging messages to the console in this exercise. The following list enumerates the information you'd like to log:
+For simplicity, we focus on logging messages to the console in this exercise. The following list enumerates the information you'd like to log:
 
 - Time the error occurred
 - Number of retries
@@ -14,13 +14,15 @@ You'll write the code in a way that can be enhanced in the future to write these
 ::: zone pivot="csharp"
 ### Add logging provider
 
-Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a great set of functionality for logging. It can be customized with providers, and has a built-in console provider to log messages to the console. You'll also use the new dependency injection features of .NET Core to enable log messages to print the class they're in.
+Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a great set of functionality for logging. It can be customized with providers, and has a built-in console provider to log messages to the console. You can also use the new dependency injection features of .NET Core to enable log messages to print the class they're in.
 
-1. Make sure you are still in the C# **chatapp-retry** folder with the following command.
+1. Make sure you're still in the C# **chatapp-retry** folder with the following command.
+
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/csharp/chatapp-retry/
     ```
-1. In the cloud shell, add `Microsoft.Extensions.Logging` to the app by installing the following three dependencies.
+
+1. In the Cloud Shell, add `Microsoft.Extensions.Logging` to the app by installing the following three dependencies.
 
     ```azurecli
     dotnet add package Microsoft.Extensions.Logging --version 2.2.0
@@ -41,7 +43,9 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
     ```azurecli
     code .
     ```
-    The code editor opens and displays all files in the current folder in the left-hand navigation window. 
+
+    The code editor opens and displays all files in the current folder in the left-hand navigation window.
+
 1. Select **Program.cs** from the left-hand navigation window to open it in the editor. 
 
 1. Reference `Microsoft.Extensions.Logging` in **Program.cs** by adding `using` statements as shown in the following snippet.
@@ -74,8 +78,9 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
 
     retries = new RetryPolicy(logger);
     ```
-    The above code instantiates a ServiceCollection, adds a console provider, and sets a default logging level to debug.
-    
+
+    The preceding code instantiates a ServiceCollection, adds a console provider, and sets a default logging level to debug.
+
     The next two lines create two loggers, one to be used in the retry policy class, the other for the main app.
 
 1. The following code needs to be changed, as the retry policy is being created above. Change this code:
@@ -90,7 +95,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
         private static RetryPolicy retries;
     ```
 
-1. Replace `getAllChats` with the following update.  This replaces all the `Console.WriteLine` calls that are related to system errors. There will still be calls to `Console.WriteLine` for the user interface.
+1. Replace `getAllChats` with the following update. This code replaces all the `Console.WriteLine` calls that are related to system errors, but keeps the calls to `Console.WriteLine` for the user interface.
 
     ```csharp
     private static void getAllChats()
@@ -140,7 +145,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Save**.
 
-1. Select **RetryPolicy.cs**  in the navigation window to the left. This opens **RetryPolicy.cs** in the code editor. 
+1. Select **RetryPolicy.cs** in the navigation window to the left, to open **RetryPolicy.cs** in the code editor.
 
 1. Add a reference to the logging library with the following `using` statement.
 
@@ -154,7 +159,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
     private readonly ILogger retrylogger;
     ```
 
-1. Update the constructor of the class with the following code to Instantiate the logger. Notice that the constructor now takes a parameter of type ILogger.
+1. Update the constructor of the class with the following code to Instantiate the logger. Notice that the constructor now takes a parameter of type `ILogger``.
 
     ```csharp
     public RetryPolicy(ILogger logger)
@@ -192,9 +197,9 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
 ::: zone pivot="java"
 ### Add logging provider
 
-The Java runtime provides a `import java.util.logging` library that adds a great set of functionality for logging. It can be customized with providers, messages can have formats applied, and it logs to the console by default. You don't need to add this library to the Chat App as it's already being used to hide MongoDB log messages. You'll add a new logger for use in the main app and retry policy, and add the new time library to allow access to the current time.
+The Java runtime provides a `import java.util.logging` library that adds a great set of functionality for logging. It can be customized with providers, messages can have formats applied, and it logs to the console by default. You don't need to add this library to the Chat App as it's already being used to hide MongoDB log messages. You add a new logger for use in the main app and retry policy, and add the new time library to allow access to the current time.
 
-1. In the Cloud Shell navigate to the node chatapp-retry folder.
+1. In the Cloud Shell, navigate to the node chatapp-retry folder.
 
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/java/chatapp-retry/
@@ -213,7 +218,7 @@ The Java runtime provides a `import java.util.logging` library that adds a great
     import java.time.LocalDateTime;
     ```
 
-1. Add a logger private member variable to `javaChat` that we'll use across the app.
+1. Add a logger private member variable to `javaChat` that we can use across the app.
 
     ```java
     private static Logger logger = Logger.getLogger( javaChat.class.getName() );
@@ -302,14 +307,14 @@ The Java runtime provides a `import java.util.logging` library that adds a great
 ::: zone pivot="node"
 ### Add a logging provider
 
-There's no inbuilt logging library provided as Node.js is built on the JavaScript language. There are many options of additional logging libraries, but your team has decided to standardize on Winston across all its node apps. Winston can write to the console by default, and also has options for different transports and log message formats.
+There's no inbuilt logging library provided as Node.js is built on the JavaScript language. There are many other logging libraries, but your team has decided to standardize on Winston across all its node apps. Winston can write to the console by default, and also has options for different transports and log message formats.
 
-1. Make sure you are still in the Node.js **chatapp-retry** folder by running the following command. 
+1. Make sure you're still in the Node.js **chatapp-retry** folder by running the following command. 
 
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/node/chatapp-retry/
     ```
-    
+
 1. Install the Winston package.
 
     ```bash
@@ -322,7 +327,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
     code server.js
     ```
 
-1. Require the new Winston logging library, by adding javascript to line 16.
+1. Require the new Winston logging library, by adding JavaScript to line 16.
 
     ```javascript
     const { createLogger, format, transports } = require('winston');
@@ -472,7 +477,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
 
 1. Select **Save**.
 
-1. Return to the CloudShell and try to refresh the messages. You should see the new logging messages in the console, similar to the following messages. 
+1. Return to the Cloud Shell and try to refresh the messages. You should see the new logging messages in the console, similar to the following messages. 
 
 ::: zone pivot="csharp"
 ```bash

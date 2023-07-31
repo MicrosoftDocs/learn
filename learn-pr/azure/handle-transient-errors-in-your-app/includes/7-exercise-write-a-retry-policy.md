@@ -1,6 +1,6 @@
-Your team's chat app has been improved to detect errors. When using a cloud-based database, there are different transient errors that can occur. In this exercise, we'll  focus on resolving connection problems by implementing a retry policy.
+Your team's chat app has been improved to detect errors. When you use a cloud-based database, there are different transient errors that can occur. In this exercise, we focus on resolving connection problems by implementing a retry policy.
 
-If the error is due to database connection issues, we'll adopt the following strategy:
+If the error is due to database connection issues, we adopt the following strategy:
 
 - If the error is network-related, quickly try to reconnect
 - Keep retrying to reconnect every 60 seconds
@@ -12,7 +12,7 @@ For other unknown errors, quit the app.
 ::: zone pivot="csharp"
 ## Use a class to implement a retry policy
 
-1. Run the following command in the CloudShell to navigate to the C# chatapp-retry folder.
+1. Run the following command in the Cloud Shell to navigate to the C# chatapp-retry folder.
 
     ```azurecli
     cd ~/mslearn-handle-transient-errors-in-your-app/csharp/chatapp-retry/
@@ -39,9 +39,9 @@ For other unknown errors, quit the app.
 
     [!code-csharp[](../src/csharp-chatapp-retry/RetryPolicy.cs?highlight=30-47)]
 
-    After checking the number of retries, the `CanRetry()` returns a true to the calling code if it is OK to keep retrying, or false if the app should now stop retrying.
+    The `canRetry` method checks the number of retries, and then returns `true` to the calling code if it's OK to keep retrying, or `false` if the app should now stop.
 
-    We'll now use this class in our app to implement a retry policy.
+    Now we can use this class in our app to implement a retry policy.
 
 ## Add a retry policy
 
@@ -141,7 +141,7 @@ For other unknown errors, quit the app.
 ::: zone pivot="java"
 ## Use a class to implement a retry policy
 
-1. In the Cloud Shell navigate to the Java chatapp-retry folder.
+1. In the Cloud Shell, navigate to the Java chatapp-retry folder.
 
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/java/chatapp-retry/
@@ -164,9 +164,9 @@ For other unknown errors, quit the app.
 
     [!code-java[](../src/java-chatapp-retry/RetryPolicy.java?range=22-38)]
 
-    After checking the number of retries the `canRetry` method will return a true to the calling code if it is OK to keep retrying, or false if the app should now stop.
+    The `canRetry` method checks the number of retries, and then returns `true` to the calling code if it's OK to keep retrying, or `false` if the app should now stop.
 
-1. You'll now use this class to add a retry policy to the chat app.
+1. Now we can use this class to add a retry policy to the chat app.
 
 ## Add a retry policy
 
@@ -248,7 +248,7 @@ For other unknown errors, quit the app.
 ::: zone pivot="node"
 ## Use a function to implement a retry policy
 
-1. In the Cloud Shell navigate to the node chatapp-retry folder.
+1. In the Cloud Shell, navigate to the node chatapp-retry folder.
 
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/node/chatapp-retry/
@@ -279,9 +279,9 @@ For other unknown errors, quit the app.
 
     [!code-javascript[](../src/node-chatapp-retry/retryPolicy.js?range=10-26&highlight=14-18)]
 
-    After checking the number of retries the `checkRetries` method will return a true to the calling code if it is OK to keep retrying, or false if the app should now stop.
+    The `canRetry` method checks the number of retries, and then returns `true` to the calling code if it's OK to keep retrying, or `false` if the app should now stop.
 
-1. You'll now use this code to add a retry policy to the chat app.
+1. Now we can use this class to add a retry policy to the chat app.
 
 ## Add a retry policy
 
@@ -303,7 +303,7 @@ For other unknown errors, quit the app.
       });
     ```
 
-1. There are a number of ways in javascript to retry the code, for simplicity this example uses recursion. Replace the connection code with the following.
+1. There are several ways in JavaScript to retry the code. For simplicity, this example uses recursion. Replace the connection code with the following.
 
     ```javascript
     // Connect to MongoDB
@@ -340,7 +340,7 @@ For other unknown errors, quit the app.
 
 1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
 
-1. If you haven't got the browser open from the previous exercise run:
+1. If your browser isn't open from the previous exercise, run:
 
     ```bash
     curl -X POST http://localhost:8888/openPort/8000;
@@ -353,7 +353,7 @@ For other unknown errors, quit the app.
     npm start
     ```
 
-1. Click the returned hyperlink from the previous step.
+1. Select the returned hyperlink from the previous step.
 
 1. Add some messages, and refresh the page. Leave the app running.
 
@@ -377,30 +377,30 @@ If the firewall is still switched on for the Azure Cosmos DB, the chat app can't
 
 1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
 
-1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which blocks access from the Cloud Shell, simulating a connection outage.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
 
-1. Run app and select **R** to refresh all the messages. The app will catch a `System.TimeoutException` and retry the connection to the database once again.
+1. Run the app and select **R** to refresh all the messages. The app catches a `System.TimeoutException` and retries the connection to the database once again.
 
 ::: zone pivot="csharp"
-Based on the `number-of-retries` setting in the **appsettings.json** file of our project, the code will retry connecting up to five times.
+Based on the `number-of-retries` setting in the **appsettings.json** file of our project, the code retries connecting up to five times.
 ::: zone-end
 ::: zone pivot="java"
-Based on the `number_of_retries` setting in the **config.properties** file of our project, the code will retry connecting up to five times.
+Based on the `number_of_retries` setting in the **config.properties** file of our project, the code retries connecting up to five times.
 ::: zone-end
 ::: zone pivot="node"
-Based on the `number-of-retries` setting in the **appsettings.json** file of our project, the code will retry connecting up to five times.
+Based on the `number-of-retries` setting in the **appsettings.json** file of our project, the code retries connecting up to five times.
 ::: zone-end
 
 
 
-1. Back on the Azure portal, click **All networks**, and then click **Save** to disable the firewall.
+1. Back on the Azure portal, select **All networks**, and then select **Save** to disable the firewall.
 
 1. If the app has finished, restart it.
 
-1. If the firewall is removed in time, the Chat App will recover, reconnect, and display the stored messages.
+1. If the firewall is removed in time, the Chat App recovers, reconnects, and displays the stored messages.
 
 ## Change the retry policy
 

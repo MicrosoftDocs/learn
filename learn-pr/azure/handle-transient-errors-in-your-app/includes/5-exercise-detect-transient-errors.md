@@ -1,8 +1,8 @@
-You'll now add code to detect transient errors in your team's chat app. You can choose to change the C#, Java, or Node.js app. To get started, let's set up the chat app.
+Now, let's add code to detect transient errors in your team's chat app. You can choose to change the C#, Java, or Node.js app. To get started, let's set up the chat app.
 
 ## Set up the database
 
-The first thing to do is configure the app's back end. It uses an Azure Cosmos DB with a Mongo API. We'll use the following set of instructions to set up the database through the Azure CLI.
+The first thing to do is configure the app's back end. It uses an Azure Cosmos DB with a Mongo API. Use the following set of instructions to set up the database through the Azure CLI.
 
 1. Run the following command in the Cloud Shell to set a variable called COSMOS_DB_NAME with a random name for our database.
 
@@ -23,7 +23,7 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
       --output tsv)
      ```
 
-    The option `--kind MongoDB` sets up a CosmosDB with a MongoAPI.
+    The option `--kind MongoDB` sets up a Cosmos DB with a MongoAPI.
 
     > [!NOTE]
     > Setting up the database account can take a while, so please wait for it to complete.
@@ -55,12 +55,13 @@ The first thing to do is configure the app's back end. It uses an Azure Cosmos D
 
 Use the following steps to clone the Chat App GitHub repository with `git`. You can execute this right in the Cloud Shell.
 
-1. The source files for the applications that you'll build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
+1. The source files for the applications that you build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
 
     ```bash
     cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-handle-transient-errors-in-your-app.git
     ```
+
     The repository is cloned to your home folder.
 
 1. Move into the C# app folder.
@@ -92,7 +93,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     ![The chat console app interface at startup, showing the New, Read All, and Quit commands.](../media/5-app-interface.png)
 
-1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and the restart, notice that the messages you typed  in the last session are available. That's because the app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all this data.
+1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and then restart, notice that the messages you typed in the last session are available. This happens because the app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all this data.
 
 Let's see what happens when we break the connection to the backend database.
 
@@ -166,12 +167,13 @@ Let's see what happens when we break the connection to the backend database.
 
 Use the following steps to clone the Chat App GitHub repository with `git`. You can execute this right in the Cloud Shell.
 
-1. The source files for the applications that you'll build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
+1. The source files for the applications that you build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
 
     ```bash
     cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-handle-transient-errors-in-your-app.git
     ```
+
     The repository is cloned to your home folder.
 
 1. Move into the Java app folder.
@@ -199,7 +201,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     java -cp .:lib/* javaChat
     ```
 
-1. Test the app, create a new message, or read all the messages. When finished type Q to quit.
+1. Test the app, create a new message, or read all the messages. When finished, type Q to quit.
 
 ## Add code to detect errors
 
@@ -265,15 +267,17 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
 Use the following steps to clone the Chat App GitHub repository with `git`. You can execute this right in the Cloud Shell.
 
-1. The source files for the applications that you'll build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
+1. The source files for the applications that you build in this unit are located in a GitHub repository. Use the following commands to make sure that you are in your home directory in Cloud Shell, and then to clone this repository:
 
     ```bash
     cd ~
     git clone https://github.com/MicrosoftDocs/mslearn-handle-transient-errors-in-your-app.git
     ```
+
     The repository is cloned to your home folder.
 
 1. Run the following command in the Cloud Shell to move into the node `chatapp` folder.
+
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/node/chatapp/
     ```
@@ -296,18 +300,20 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     curl -X POST http://localhost:8888/openPort/8000;
     ```
 
-    When the port is opened successfully, you'll see a message similar to the following message.
+    When the port is opened successfully, you see a message similar to the following message.
 
     ```json
     {"message":"Port 8000 is open","url":"https://gateway03.westus.console.azure.com/n/cc-604c-74cb7fc3/cc-604c-74cb7fc3/proxy/8000/"}
     ```
-1. Note the url value in the message that was returned from the curl command. This is the url of our app.
+
+1. Make a note of the url value in the message that was returned from the curl command. This is the url of our app.
 1. Compile and run the Node.js app.
 
     ```bash
     npm install
     npm start
     ```
+
 1. Open the url you saved previously in your favorite browser. You should see a user interface similar to the following screenshot.
 
     ![The chat node app interface at startup, showing fields to enter name and message and buttons to send and delete a message.](../media/5-node-app-interface.png)
@@ -403,12 +409,12 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
 1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
 
-1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which blocks access from the Cloud Shell, simulating a connection outage.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
 
-1. When the firewall configuration update has finished successfully, return to the chat app and select **R** to refresh all the messages. This calls our `getAllChats()` method. After a few seconds, the call to find all messages times out and you should see that the code handled a System.TimeoutException and printed that to the console. The app is still running. If you now try to add a new message, you get another System.TimeoutException. However, this time the app crashes. Why? If you look closely at the code in Program.cs,** you can see that we only handle the exception gracefully in the `getAllChats()` method. `Main()` doesn't handle the exception so the app crashes instead.
+1. When the firewall configuration update has finished successfully, return to the chat app and select **R** to refresh all the messages. The refresh calls our `getAllChats()` method. After a few seconds, the call to find all messages times out and you should see that the code handled a System.TimeoutException and printed that to the console. The app is still running. If you now try to add a new message, you get another System.TimeoutException. However, this time the app crashes. Why? If you look closely at the code in Program.cs,** you can see that we only handle the exception gracefully in the `getAllChats()` method. `Main()` doesn't handle the exception so the app crashes instead.
 
 To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
 
@@ -423,7 +429,7 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 1. Select **All networks** and then select **Save** at the bottom of the screen.
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
-This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors.
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we see how to retry our calls so that our app can recover from these kinds of errors.
 
 ::: zone-end
 
@@ -445,12 +451,12 @@ This exercise shows how to detect an error in your app. So far, we just notify t
 
 1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
 
-1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which blocks access from the Cloud Shell, simulating a connection outage.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
 
-1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
+1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we're catching transient errors caused by the lost connection to the database.
 
 To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
 
@@ -465,7 +471,7 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 1. Select **All networks** and then select **Save** at the bottom of the screen.
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
-This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors.
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we see how to retry our calls so that our app can recover from these kinds of errors.
 
 ::: zone-end
 
@@ -487,12 +493,12 @@ This exercise shows how to detect an error in your app. So far, we just notify t
 
 1. Select **I understand that the current settings will block all VNets and IPs including Azure portal**.
 
-1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which will block access from the Cloud Shell, simulating a connection outage.
+1. Select **Save** to save the firewall configuration updates. These changes have enabled a firewall for the Azure Cosmos DB account, which blocks access from the Cloud Shell, simulating a connection outage.
 
     > [!NOTE]
     > It can take a while for these firewall updates to complete, so wait for them to finish before proceeding to the next step.
 
-1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we are catching transient errors caused by the lost connection to the database.
+1. When the firewall configuration update has finished successfully, return to the browser and try sending more messages. Observe the messages displayed in the Cloud Shell. The app is still running, but we're catching transient errors caused by the lost connection to the database.
 
 To disable the firewall and let the app read and write to the Azure Cosmos DB database again, perform the following steps.
 
@@ -507,6 +513,6 @@ To disable the firewall and let the app read and write to the Azure Cosmos DB da
 1. Select **All networks** and then select **Save** at the bottom of the screen.
 1. Wait for the firewall configuration updates to finish, which can take a few minutes
 
-This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we'll see how to retry our calls so that our app can recover from these kinds of errors.
+This exercise shows how to detect an error in your app. So far, we just notify that an error has occurred. In the following units, we see how to retry our calls so that our app can recover from these kinds of errors.
 
 ::: zone-end
