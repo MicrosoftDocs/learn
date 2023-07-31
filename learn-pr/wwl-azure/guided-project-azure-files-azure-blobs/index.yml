@@ -3,7 +3,7 @@ uid: learn.wwl.guided-project-azure-files-azure-blobs
 metadata:
   title: Guided Project - Azure Files and Azure Blobs
   description: "Guided Project - Azure Files and Azure Blobs"
-  ms.date: 06/13/2023
+  ms.date: 07/31/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -21,7 +21,7 @@ prerequisites: |
   - Basic knowledge of unstructured data like blobs and files.
   - Basic knowledge of security concepts like identities, permissions, and encryption.
   - Basic knowledge of networking concepts like virtual networks and subnetting.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/guided-project-azure-files-azure-blobs.svg
 hidden: true
 levels:
 - intermediate
