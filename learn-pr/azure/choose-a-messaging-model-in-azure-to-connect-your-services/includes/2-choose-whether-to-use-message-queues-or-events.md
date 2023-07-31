@@ -45,6 +45,6 @@ Events are more likely to be used for broadcasts, and are often ephemeral. This 
 
 For each communication, consider the following question: **Does the sending component expect the communication to be processed in a particular way by the destination component?**
 
-If the answer is _yes_, choose to use a message. If the answer is _no_, you miht be able to use events.
+If the answer is _yes_, choose to use a message. If the answer is _no_, you might be able to use events.
 
 Understanding how your components need to communicate helps you choose how your components communicate. Let's start with messages.
