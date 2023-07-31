@@ -2,6 +2,7 @@
 
 
 
+
 The following solution provided is one of many possible solutions. The approach taken to solve this challenge was to break down the solution into four steps:
 
 1. Split the `pangram` string on the space character to create the string array `message`.

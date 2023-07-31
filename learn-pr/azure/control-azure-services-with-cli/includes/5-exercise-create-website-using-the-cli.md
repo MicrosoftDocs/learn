@@ -91,15 +91,24 @@ Next, create the web app in your service plan. You can deploy the code at the sa
    popupwebapp-12345  East US  Running  Learn-12345678-1234-1234-1234-123456789abc  popupwebapp-12345.azurewebsites.net  popupappplan-54321
    ```
 
-   Make a note of the **DefaultHostName** listed in the table; this address is the URL for the new website. Azure makes your website available through the unique app name in the `azurewebsites.net` domain. For example, if your app name was "popupwebapp-12345", then your website URL would be: `http://popupwebapp-12345.azurewebsites.net`.
-
-1. Your site has a "quickstart" page created by Azure that you can see either in a browser, or with CURL, just use the **DefaultHostName**:
+   Make a note of the **DefaultHostName** listed in the table; this address is the URL for the new website. Azure makes your website available through the unique app name in the `azurewebsites.net` domain. For example, if your app name was "popupwebapp-12345", then your website URL would be: `http://popupwebapp-12345.azurewebsites.net`.  You can also use the following script to return the HTTP address.
 
    ```bash
-   curl $AZURE_WEB_APP.azurewebsites.net
+   site="http://$AZURE_WEB_APP.azurewebsites.net"
+   echo $site
    ```
 
-   You get the default HTML for the sample app returned.
+1. To get the default HTML for the sample app, use CURL with the DefaultHostName:
+
+    ```bash
+    curl $AZURE_WEB_APP.azurewebsites.net
+    ```
+
+   You get a response like the following example:
+
+   ```output
+   <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>Microsoft Azure App Service - Welcome</title><link rel="shortcut icon" href="https://appservice.azureedge.net/images/app-service/v4/favicon.ico" type="image/x-icon"/><link href="https://appservice.azureedge.net/css/app-service/v4/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous"/><style>html, body{height: 100%; background-color: #ffffff; color: #000000; font-size: 13px;}*{border-radius: 0 !important;}</style> ... (continued)
+   ```
 
 ### Steps to deploy code from GitHub
 

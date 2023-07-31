@@ -1,14 +1,14 @@
-GitHub Actions is a powerful feature that empowers you to go from code to cloud all from the comfort and convenience of your own repository. Here, you'll learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom GitHub actions. 
+GitHub Actions is a powerful feature that helps you to go from code to cloud, all from the comfort and convenience of your own repository. Here, you'll learn about the different types of GitHub actions and the metadata, syntax, and workflow commands to create custom GitHub actions. 
 
 ## Types of GitHub actions
 
-:::image type="content" source="../media/action-types.png" alt-text="Image that displays the three types of GitHub Actions; Docker, JavaScript, and composite run step actions." border="false":::
+:::image type="content" source="../media/action-types.png" alt-text="Diagram that displays the three types of GitHub Actions; Docker, JavaScript, and composite run steps actions." border="false":::
 
-Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks or by using actions shared by the GitHub community. Navigating through various actions you'll notice that there are three different types of actions: _Docker container actions_, _JavaScript actions_, and _composite run steps actions_. Let's take a closer look at each action type.
+Actions are individual tasks that you can use to customize your development workflows. You can create your own actions by writing custom code that interacts with your repository to perform custom tasks, or by using actions the GitHub community shares. Navigating through various actions, you'll notice that there are three different types of actions: _Docker container actions_, _JavaScript actions_, and _composite run steps actions_. Let's take a closer look at each action type.
 
 ### Docker container actions
 
-Docker containers package the environment with the GitHub Actions code. This means that the action runs in a consistent and reliable environment because all of its dependencies are within that container. If the action needs to run in a specific environment configuration, then Docker containers are a good way to go because you can customize the operating system and tools. The downside is that because the job has to build and retrieve the container, Docker container actions are often slower than JavaScript actions.
+Docker containers package the environment with the GitHub Actions code. This means that the action runs in a consistent and reliable environment because all of its dependencies are within that container. If the action needs to run in a specific environment configuration, Docker containers are a good way to go because you can customize the operating system and tools. The downside is that because the job has to build and retrieve the container, Docker container actions are often slower than JavaScript actions.
 
 Before building a Docker container action, you should have some basic understanding of how to use environment variables and the Docker container filesystem. The steps to take to build a Docker container action are then minimal and straightforward:
 
@@ -19,23 +19,23 @@ Before building a Docker container action, you should have some basic understand
 
 ### JavaScript actions
 
-JavaScript actions can run directly on the runner machine and separate the action code from the environment that is used to run the action. Because of this, the action code is simplified and can execute faster than actions within a Docker container.
+JavaScript actions can run directly on the runner machine, and separate the action code from the environment that's used to run the action. Because of this, the action code is simplified and can execute faster than actions within a Docker container.
 
-As a prerequisite for creating and using packaged JavaScript actions, you need to download Node.js, which includes npm. As an optional step but one that we recommend is to use GitHub Actions Toolkit Node.js, which is a collection of Node.js packages that enables you to quickly build JavaScript actions with more consistency.
+As a prerequisite for creating and using packaged JavaScript actions, you need to download Node.js, which includes npm. As an optional step (but one that we recommend) is to use GitHub Actions Toolkit Node.js, which is a collection of Node.js packages that allows you to quickly build JavaScript actions with more consistency.
 
-The steps to take to build a JavaScript action are then minimal and straightforward:
+The steps to build a JavaScript action are minimal and straightforward:
 
-1. Create an `action.yml` metadata file to define the inputs and outputs of the action as well as tell the action runner how to start running this JavaScript action.
+1. Create an `action.yml` metadata file to define the inputs and outputs of the action, as well as tell the action runner how to start running this JavaScript action.
 2. Create an `index.js` file with context information about the Toolkit packages, routing, and other functions of the action.
 3. Commit and push your action to GitHub with the following files: `action.yml`, `index.js`, `node_modules`, `package.json`, `package-lock.json`, and `README.md`.
 
 ### Composite run steps actions
 
-Composite run steps actions enable you to reuse actions using shell scripts. You can even mix multiple shell languages within the same action. If you have a lot of shell scripts to automate several tasks, now you can easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
+Composite run steps actions allow you to reuse actions by using shell scripts. You can even mix multiple shell languages within the same action. If you have many shell scripts to automate several tasks, you can now easily turn them into an action and reuse them for different workflows. Sometimes it's easier to just write a shell script than using JavaScript or wrapping your code in a Docker container.
 
 ## Metadata and syntax needed to create an action
 
-When creating or reviewing a GitHub action, a great first step is to review the `action.yml` file to assess which inputs, outputs, description, runs, and other configuration information are needed for the action. Some of these parameters are required while others are optional. The `action.yml` file defines the following information about your action:
+When creating or reviewing a GitHub action, a great first step is to review the `action.yml` file to assess which inputs, outputs, description, runs, and other configuration information the action needs. Some of these parameters are required, while others are optional. The `action.yml` file defines the following information about your action:
 
 | Parameter   | Description                                                                                                                                            |      Required      |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | :----------------: |
@@ -46,12 +46,11 @@ When creating or reviewing a GitHub action, a great first step is to review the 
 | Runs        | The command to run when the action executes.                                                                                                           | yes |
 | Branding    |  Color and Feather icon to use to create a badge to personalize and distinguish your action in GitHub Marketplace.                               |         no         |
 
-
 ### Inputs
 
-Inputs are the parameters that enable you to specify data that the action expects to use during its runtime. GitHub stores these input parameters as environment variables.
+Inputs are the parameters that allow you to specify data that the action expects to use during its runtime. GitHub stores these input parameters as environment variables.
 
-Below is an example of a list of inputs for an action. The `firstNameStudent` input is optional while the `studentGrade` input is required.
+Following is an example of a list of inputs for an action. The `firstNameStudent` input is optional, while the `studentGrade` input is required.
 
 ```yml
 inputs:
@@ -66,9 +65,9 @@ inputs:
 
 ### Outputs
 
-Outputs are the parameters that enable you to declare data. Keep in mind that actions that run later in a workflow can use the output data that was declared in a previously ran action.
+Outputs are the parameters that allow you to declare data. Keep in mind that actions that run later in a workflow can use the output data that was declared in a previously run action.
 
-The below example is a simple output to declare the average grade of the students.
+The following example is a simple output to declare the average grade of the students:
 
 ```yml
 outputs:
@@ -78,14 +77,14 @@ outputs:
 
 ### Runs
 
-As you learned previously, your action needs to have a `runs` statement that defines the command necessary to execute your action. Depending on how you're creating your action, whether you are using a Docker container, JavaScript, or composite run steps, the `runs` syntax is defined differently.
+As you learned previously, your action needs to have a `runs` statement that defines the command necessary to execute your action. Depending on how you're creating your action—whether you're using a Docker container, JavaScript, or composite run steps—the `runs` syntax is defined differently.
 
 #### `runs` for Docker actions
 
-Docker container actions require that the `runs` statement configures the image used for the Docker action with the following arguments:
+Docker container actions require the `runs` statement to configure the image the Docker action uses with the following arguments:
 
-- `using`: needs to be set to `docker` to run a Docker container action.
-- `image`: Docker image used as the container to run the action.
+- `using`: Needs to be set to `docker` to run a Docker container action
+- `image`: Docker image used as the container to run the action
 
 ```yml
 runs:
@@ -93,15 +92,14 @@ runs:
   image: 'Dockerfile'
 ```
 
-
 #### `runs` for JavaScript actions
 
 JavaScript actions require that the `runs` statement take the following two arguments:
 
-- `using`: application used to execute the code as defined in `main`.
-- `main`: file that contains the action code. The application defined in `using` executes this file.
+- `using`: Application used to execute the code as defined in `main`
+- `main`: File that contains the action code; the application defined in `using` executes this file
 
-For example, here is a `runs` statement for a JavaScript action using Node.js.
+For example, here's a `runs` statement for a JavaScript action using Node.js:
 
 ```yml
 runs:
@@ -113,11 +111,11 @@ runs:
 
 Composite run steps actions require that the `runs` statement take the following three arguments:
 
-- `using`: needs to be set to `"composite"` to run a composite run step.
-- `steps`: run steps to run the action.
-- `steps[*].run`: command you want to run (can be inline or a script in your action repository).
+- `using`: Needs to be set to `"composite"` to run a composite run step
+- `steps`: Run steps to run the action
+- `steps[*].run`: Command you want to run (can be inline or a script in your action repository)
 
-For example, here is a `runs` statement for a composite run steps action that will run the script at filepath `/test/script/sh`.
+For example, here's a `runs` statement for a composite run steps action that will run the script at filepath `/test/script/sh`:
 
 ```yml
 runs:
@@ -137,23 +135,23 @@ branding:
   color: 'blue'
 ```
 
-Here is an example of a badge for the Checkout action on the GitHub Marketplace.
+Here's an example of a Checkout action badge on the GitHub Marketplace:
 
 :::image type="content" source="../media/actions-branding.png" alt-text="Screenshot that shows an action's branding on the GitHub Marketplace.":::
 
 ## Workflow commands
 
-Creating a workflow is pretty straightforward as long as you can find the right actions for your steps. In some cases you may need to create your own actions to achieve your desired outcomes, but you can use workflow commands to add another level of customization to your workflows.
+Creating a workflow is pretty straightforward as long as you can find the right actions for your steps. In some cases, you might need to create your own actions to achieve your desired outcomes, but you can use workflow commands to add another level of customization to your workflows.
 
-Workflow commands enable you to communicate with the GitHub Actions runner machine by printing formatted lines of text to the console. These workflow commands can be used with shell commands or within your custom actions. Workflow commands are useful because they enable you to share information between workflow steps, print debug or error messages to the console, set environment variables, set output parameters, or add to the system path.
+Workflow commands allow you to communicate with the GitHub Actions runner machine by printing formatted lines of text to the console. You can use these workflow commands with shell commands or within your custom actions. Workflow commands are useful because they let you share information between workflow steps, print debug or error messages to the console, set environment variables, set output parameters, or add to the system path.
 
-Most workflow commands use the `echo` command in the below specific format, while others can be invoked by writing to a file.
+Most workflow commands use the `echo` command in the following specific format, while others can be invoked by writing to a file:
 
 ```bash
 echo "::workflow-command parameter1={data},parameter2={data}::{command value}"
 ```
 
-Below are some basic message logging examples for printing a debug message, info message, error message, or warning message to the console.
+Following are some basic message-logging examples for printing a debug message, info message, error message, or warning message to the console:
 
 ```yml
 - name: workflow commands logging messages
@@ -164,26 +162,25 @@ Below are some basic message logging examples for printing a debug message, info
     echo "::warning::This is a warning message"
 ```
 
-You can also create a message to print to the log with a filename (file), line number (line), and column (col) number where the error occurred. Warning messages will appear in a yellow highlight with the text "warning", and error messages will appear in a red highlight with the text "error".
+You can also create a message to print to the log with a filename (file), line number (line), and column (col) number where the error occurred. Warning messages appear in a yellow highlight with the text "warning," and error messages appear in a red highlight with the text "error."
 
 ```bash
 echo "::error file=app.js,line=10,col=15::Something went wrong"
 ```
 
-It's important to note that these workflow commands need to be on a single line. Characters that interfere with parsing such as commas and line breaks will need to be URL-encoded.
+It's important to note that these workflow commands need to be on a single line. Characters that interfere with parsing, such as commas and line breaks, will need to be URL-encoded.
 
-For example, the below text is a multi-line message.
+For example, the following text is a multi-line message:
 
 ```yml
 This text spans
 across multiple lines
 ```
 
-This message should be encoded as shown below.
+This message should be encoded as shown here:
 
 ```yml
 This text spans%0Aacross multiple lines
 ```
 
-In addition to workflow commands, you can set exit codes to set the status of an action. This is important because when you're working with jobs in a workflow, a failed exit code will halt all concurrent actions and cancel any future actions. If you are creating a JavaScript action, you can use the actions toolkit `@actions/core` package to log a message and set a failure exit code. If you are creating a Docker container action, you can set a failure exit code in your `entrypoint.sh` script.
-
+In addition to workflow commands, you can set exit codes to set the status of an action. This is important because when you're working with jobs in a workflow, a failed exit code will halt all concurrent actions and cancel any future actions. If you're creating a JavaScript action, you can use the actions toolkit `@actions/core` package to log a message and set a failure exit code. If you're creating a Docker container action, you can set a failure exit code in your `entrypoint.sh` script.

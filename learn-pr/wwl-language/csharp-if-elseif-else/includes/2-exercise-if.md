@@ -16,7 +16,7 @@ You'll use the `Random.Next()` method to simulate rolling three six-sided dice. 
 You'll refine the rules as you learn more about the `if` statement.
 
 > [!IMPORTANT]
-> This exercise makes extensive use of the `System.Random` class, which is covered in the module [Call methods from the .NET Class Library using C#](https://github.com/MicrosoftDocs/learn-pr/blob/53d6c48677ed00dbd14f214c651607aee9063458/learn/modules/csharp-call-methods/?azure-portal=true). If you need a refresher how `Random.Next()` works, please refer to that module.
+> This exercise makes extensive use of the `System.Random` class. You can refer to the Microsoft Learn module titled "Call methods from the .NET Class Library using C#" if you need a refresher how `Random.Next()` works.
 
 ## Prepare your coding environment
 
@@ -159,7 +159,7 @@ Other simple Boolean expressions can be created by using operators to compare tw
 - and so on
 
 > [!NOTE]
-> The C# training series on Microsoft Learn devotes an entire module to Boolean expressions. There are many operators you can use to construct a Boolean expression, and you'll only cover a few of the basics here in this module. For more on Boolean expressions, see the module `[Evaluate Boolean expressions to make decisions in C#](TBD)`.
+> The C# training series on Microsoft Learn devotes an entire module to Boolean expressions. There are many operators you can use to construct a Boolean expression, and you'll only cover a few of the basics here in this module. For more on Boolean expressions, see the Microsoft Learn module titled "Evaluate Boolean expressions to make decisions in C#".
 
 In this example, you evaluated the Boolean expression `total > 14`. However, you could have chosen the Boolean expression `total >= 15` because in this case, they're the same. Given that the rules to the game specify "If the sum of the three dice, plus any bonuses, is 15 or greater, you win the game", you should probably implement the `>= 15` expression. You'll make that change in the next step of the exercise.
 
