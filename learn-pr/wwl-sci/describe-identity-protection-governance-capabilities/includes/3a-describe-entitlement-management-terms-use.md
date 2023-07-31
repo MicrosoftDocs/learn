@@ -27,4 +27,4 @@ Terms of use are presented in a PDF format, using content that you create, such 
 
 Conditional Access policies are used to require a terms of use statement being displayed, and ensuring the user has agreed to those terms before accessing an application. Admins can then view who has agreed to terms of use, and who has declined.
 
-:::image type="content" source="../media/terms-of-use-inline.png" alt-text="Screen capture of a terms of use notification.  User must accept the the terms of use in order to continue or decline." lightbox="../media/terms-of-use-expanded.png":::
+:::image type="content" source="../media/terms-of-use-inline.png" alt-text="Screen capture of a terms of use notification.  User must accept the terms of use in order to continue or decline." lightbox="../media/terms-of-use-expanded.png":::
