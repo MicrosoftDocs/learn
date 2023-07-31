@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-resource-group-azure-portal
-title: Azure Resource Group
+title: Azure resource group
 metadata:
-  title: Azure Resource Group
-  description: "Azure Resource Group"
+  title: Azure resource group
+  description: "Azure resource group"
   ms.date: 07/31/2023
   author: wwlpublish
   ms.author: serlingdavis

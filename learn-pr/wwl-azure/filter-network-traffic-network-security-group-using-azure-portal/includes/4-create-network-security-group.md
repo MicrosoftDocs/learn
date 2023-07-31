@@ -1,7 +1,7 @@
 
 You can use an Azure network security group to filter network traffic between Azure resources in an Azure virtual network. A network security group contains security rules that allow or deny inbound network traffic to, or outbound network traffic from, several types of Azure resources. For each rule, you can **specify source and destination**, **port**, and **protocol**.
 
-## Security rules<br>
+## Security rules
 
 A network security group contains as many rules as desired, within Azure subscription limits. Each rule specifies the following properties:
 
@@ -24,7 +24,7 @@ You can deploy resources from several Azure services into an Azure virtual netwo
 > [!NOTE]
 > Reference the image, along with the following text, to understand how Azure processes inbound and outbound rules for network security groups:
 
-## Inbound traffic<br>
+## Inbound traffic
 
 For inbound traffic, Azure processes the rules in a network security group associated to a subnet first, if there's one, and then the rules in a network security group associated to the network interface, if there's one. This process includes intra-subnet traffic as well.
 
