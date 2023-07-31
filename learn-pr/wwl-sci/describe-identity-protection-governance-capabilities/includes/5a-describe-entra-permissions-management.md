@@ -34,7 +34,8 @@ ML-powered anomaly detections.
 Context-rich forensic reports around identities, actions, and resources to support rapid investigation and remediation.
 Permissions Management deepens Zero Trust security strategies by augmenting the least privilege access principle, allowing customers to:
 
-Get comprehensive visibility: Discover which identity is doing what, where, and when.
-Automate least privilege access: Use access analytics to ensure identities have the right permissions, at the right time.
-Unify access policies across infrastructure as a service (IaaS) platforms: Implement consistent security policies across your cloud infrastructure.
+- Get comprehensive visibility: Discover which identity is doing what, where, and when.
+- Automate least privilege access: Use access analytics to ensure identities have the right permissions, at the right time.
+- Unify access policies across infrastructure as a service (IaaS) platforms: Implement consistent security policies across your cloud infrastructure.
+
 Once your organization has explored and implemented the discover, remediation and monitor phases, you've established one of the core pillars of a modern zero-trust security strategy.
