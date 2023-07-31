@@ -1,16 +1,16 @@
-Azure Arc extends the scope of the Azure management plane to resources located on-premises and in other clouds. To enable this, you must establish an outbound connection from these resources to Azure.
+Azure Arc extends the scope of the Azure management plane to resources located on-premises and in other clouds. To use Azure Arc, you must establish an outbound connection from these resources to Azure.
 
 In this unit, you learn how to connect a Kubernetes cluster to Azure Arc.
 
-## Connect a Kubernetes clusters to Azure Arc
+## Connect a Kubernetes cluster to Azure Arc
 
-To connect a Kubernetes cluster to Azure Arc, you deploy the Azure Arc agents for Kubernetes into the `azure-arc` namespace on the cluster. 
+To connect a Kubernetes cluster to Azure Arc, you deploy the Azure Arc agents for Kubernetes into the `azure-arc` namespace on the cluster.
 
 ### Prerequisites
 
 Before you get started, you need:
 
-- An existing Kubernetes cluster. Any cluster type is supported, as long as it is Cloud Native Computing Foundation (CNCF) certified.
+- An existing Kubernetes cluster. All Kubernetes distributions certified by the Cloud Native Computing Foundation (CNCF) are supported.
 - Outbound connectivity from the cluster to Azure and other Microsoft endpoints. For details regarding target URLs and ports, refer to your product documentation.
 - A user account or service principal in the Azure Active Directory (Azure AD) tenant for the subscription that hosts Azure Arc-enabled Kubernetes. This account must have at least the **Kubernetes Cluster - Azure Arc Onboarding** Azure role-based access control (Azure RBAC) built-in role.
 - The latest version of Azure CLI or Azure PowerShell installed on your management computer. This example uses Azure CLI.
@@ -26,7 +26,7 @@ The process of connecting a Kubernetes cluster to Azure Arc consists of the foll
 1. Connect the Kubernetes cluster to Azure by running the `az connectedk8s connect` Azure CLI command. This command installs the agents on the cluster and creates the cluster resource in the specified resource group.
 1. Verify the connection by running the `az connectedk8s list` command to list connected clusters.
 
-After you deploy the agent on a cluster, you can manage the cluster in Azure along with other cluster resoources. You can also deploy applications and Azure services to connected clusters.
+After you deploy the agent on a cluster, you can manage the cluster in Azure along with other cluster resources. You can also deploy applications and Azure services to connected clusters.
 
 ## Connect to clusters from anywhere
 

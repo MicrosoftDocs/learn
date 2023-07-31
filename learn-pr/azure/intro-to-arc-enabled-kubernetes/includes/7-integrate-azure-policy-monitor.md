@@ -1,10 +1,10 @@
-Azure Arc centralizes and streamlines management by enabling a range of Azure services, such as Azure Policy and Azure Monitor. 
+Azure Arc centralizes and streamlines management by enabling a range of Azure services, such as Azure Policy and Azure Monitor.
 
 In this unit, you learn about using these services to manage and monitor Azure Arc-enabled Kubernetes clusters.
 
 ## Azure Policy
 
-Azure Policy uses declarative rules based on properties of target resource types, including Kubernetes clusters and their components. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups, including those that host Azure Arc-enabled resources.
+Azure Policy uses declarative rules based on properties of target resource types, including Kubernetes clusters and their components. These rules form policy definitions, which administrators can apply through policy assignment to resource groups, subscriptions, or management groups.
 
 ### Azure Policy for Kubernetes
 
@@ -41,13 +41,13 @@ To implement Azure Policy for Kubernetes on connected clusters, you need to inst
 1. Create an Azure Policy extension instance on the cluster.
 1. Create a policy assignment by using one of the Kubernetes-specific policy definitions.
 
-Once the policy assignment is created, Azure Policy will begin to check for compliance.
+Once the policy assignment is created, Azure Policy begins to check for compliance.
 
 ## Azure Monitor
 
 Azure Monitor extends comprehensive cloud-based management functionality beyond Azure to on-premises datacenters and non-Microsoft cloud providers. Monitor collects and monitors metrics, activity and diagnostics logs, and events from Azure services, Arc-enabled resources, and on-premises datacenter and third-party cloud resources.
 
-The Monitor configuration and monitoring interface includes:
+Features of the Azure Monitor interface include:
 
 - Dashboards and workbooks.
 - Metrics analysis with tools such as Metrics Explorer or Power BI.

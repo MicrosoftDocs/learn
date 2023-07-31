@@ -17,18 +17,18 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-  - content: "When using Azure Arc-enabled Kubernetes, how is the connection to Azure maintained?"
+  - content: "With Azure Arc-enabled Kubernetes, how is the connection from the cluster to Azure maintained?"
     choices:
-    - content: "The clusters must be created within an Azure virtual machine."
+    - content: "The cluster must be created within an Azure virtual machine."
       isCorrect: false
-      explanation: "The Azure Arc agents deployed to the cluster maintain the connection, regardless of where the cluster exists."
+      explanation: "The Azure Arc agents deployed to the cluster enable the connection, regardless of where the cluster exists."
     - content: "Agents deployed in the cluster maintain a connection to Azure."
       isCorrect: true
-      explanation: "After Azure Arc agents are deployed as pods, they synchronize cluster state and metadata between the cluster and Azure."
+      explanation: "After Azure Arc agents are deployed, they synchronize cluster state and metadata between the cluster and Azure."
     - content: "Status is updated manually in the Azure portal."
       isCorrect: false
       explanation: "The Azure Arc agents maintain the connection. No manual updates are required."
-  - content: "Which of the following is required to connect a Kubernetes cluster to Azure Arc?"
+  - content: "Which of these is required to connect a Kubernetes cluster to Azure Arc?"
     choices:
     - content: "Multiple Azure subscriptions"
       isCorrect: false
