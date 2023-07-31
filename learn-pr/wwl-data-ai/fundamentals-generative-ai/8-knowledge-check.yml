@@ -3,7 +3,7 @@ uid: learn.wwl.fundamentals-generative-ai.knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: "This is a knowledge check based on content about generative AI, large language models, and copilots."
+  description: "This quiz is a knowledge check based on content about generative AI, large language models, and copilots."
   ms.date: 6/27/2023
   author: sherzyang
   ms.author: sheryang
@@ -35,7 +35,7 @@ quiz:
       explanation: "Creating a draft for an email is a generative AI task."
     - content: "Collecting real time data and storing it in a database."
       isCorrect: false
-      explanation: "Real-time data can be used to support AI tasks, but the storage of real-time data is not in itself a generative AI task."
+      explanation: "Real-time data can be used to support AI tasks, but the storage of real-time data isn't in itself a generative AI task."
   - content: "What is the purpose of vector-based embeddings?"
     choices:
     - content: "To represent semantic meaning of text tokens."
@@ -43,16 +43,16 @@ quiz:
       explanation: "Correct. The embedding for each token consists of multiple numeric elements. Each element indicates the location of the word along a particular dimension, like coordinates on a map."
     - content: "To create tokens that include multiple representations of a word in different languages."
       isCorrect: false
-      explanation: "Incorrect. Embeddings do not store multiple language definitions of a token."
-    - content: "To correct misspllings in the training data."
+      explanation: "Incorrect. Embeddings don't store multiple language definitions of a token."
+    - content: "To correct misspellings in the training data."
       isCorrect: false
-      explanation: "Incorrect. Embeddings are not used to correct misspellings in trainng data."
+      explanation: "Incorrect. Embeddings aren't used to correct misspellings in training data."
   - content: "What is the potential impact of copilots?"
     choices:
     - content: "Copilots only impact applications used in professional settings."
       isCorrect: false
       explanation: "Incorrect. Copilots can be built for a multitude of applications that are used at work and in day-to-day life."
-    - content: "Using generative AI, copilots can help with first drafts, information synthesis, strategic planning, and much more."
+    - content: "Copilots can help with first drafts, information synthesis, strategic planning, and much more."
       isCorrect: true
       explanation: "Correct. Copilots have the potential to revolutionize the way we work"
     - content: "Copilots can only be used for certain natural language tasks like summarizing text."
