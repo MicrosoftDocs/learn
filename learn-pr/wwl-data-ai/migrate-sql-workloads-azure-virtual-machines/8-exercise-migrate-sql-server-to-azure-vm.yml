@@ -13,9 +13,3 @@ azureSandbox: false
 durationInMinutes: 2
 content: |
   [!include[](includes/8-exercise-migrate-sql-server-to-azure-vm.md)]
-
-
-
-  title: 'Exercise: Identify compatibility issues'
-  description: "Learn to assess a legacy SQL Server database for migration to Azure SQL Database by identifying compatibility issues, necessary changes, unsupported features, configurations, and reviewing the database schema."
-  ms.date: 05/23/2023
