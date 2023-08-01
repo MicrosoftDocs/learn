@@ -80,7 +80,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     [!code-csharp[](../src/csharp-chatapp/Program.cs?range=16-23&highlight=21)]
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Compile and run the .NET Core app.
 
@@ -146,7 +146,7 @@ Let's see what happens when we break the connection to the backend database.
     }
     ```
 
-1. Let's save our changes and try them out. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Let's save our changes and try them out. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Build and run the app.
 
@@ -192,7 +192,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     [!code-java[](../src/java-chatapp/javaChat.java?range=23-29&highlight=26)]
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Compile and run the Java app.
 
@@ -247,7 +247,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     }
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Build and run the app.
 
@@ -292,7 +292,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     [!code-javascript[](../src/node-chatapp/server.js?range=23-29&highlight=25)]
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. To navigate to our Node.js app in the browser, we have to open port 8000 in the sandbox. To open port 8000, run the following `curl` command in the Cloud Shell.
 
@@ -379,7 +379,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     });
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run the app.
 

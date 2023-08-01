@@ -233,7 +233,7 @@ For other unknown errors, quit the app.
         retries.resetRetries();
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Build the project using the following command:
 
@@ -340,7 +340,7 @@ For other unknown errors, quit the app.
     let retries = new retry();
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. If your browser isn't open from the previous exercise, run:
 
@@ -417,7 +417,7 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
 
 1. Change the delay from `60000` to `5000`.
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run app, and note that the retries happen much more quickly.
 
@@ -435,7 +435,7 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
 
 1. Change the delay from `60` to `5`.
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run app, and note that the retries happen much more quickly.
 
@@ -453,7 +453,7 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
 
 1. Change the delay from `60000` to `5000`.
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run app, and note that the retries happen much more quickly.
 

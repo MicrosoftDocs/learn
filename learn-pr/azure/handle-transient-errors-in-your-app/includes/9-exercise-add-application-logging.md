@@ -182,7 +182,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
     retrylogger.LogWarning($"{DateTime.Now} - Retries: {currentTries}");
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Compile and run app.
 
@@ -292,7 +292,7 @@ The Java runtime provides a `import java.util.logging` library that adds a great
     retryLogger.log(Level.WARNING, LocalDateTime.now() + " - Retrying: " + currentTries);
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Compile and run app.
 
@@ -442,7 +442,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
     logger.log('warn', 'Retrying: ' + this._currentTries);
     ```
 
-1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+1. Save the file, and close the editor. Use the commands in the **...** menu in the top right corner of the editor, or use the accelerator keys <kbd>Ctrl+S</kbd> to save the file, and <kbd>Ctrl+Q</kbd> to close the editor.
 
 1. Run app.
 
