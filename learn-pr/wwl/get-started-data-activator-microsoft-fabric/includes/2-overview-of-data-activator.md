@@ -21,7 +21,7 @@ Some Data Activator use cases are:
 
 ## Understanding the Key Concepts in Data Activator
 
-Data Activator operates based on three core concepts: Events, Objects, and Properties. Understanding these three principles will enable you to utilize the capabilities of Data Activator more effectively.
+Data Activator operates based on three core concepts: Events, Objects, and Properties. Understanding these three principles enables you to utilize the capabilities of Data Activator more effectively.
 
 - **Events** Data Activator considers all data sources as a sequence of events, each representing an observation about the status of a particular object. These events can occur frequently, as in the case of IoT sensors, or less frequently, such as when monitoring package scanning in shipping locations.
 - **Objects** Objects in Data Activator can be tangible items like vehicles or packages, or abstract concepts like advertising campaigns or user sessions. When creating a reflex item, you model the object by connecting one or more event streams, selecting a column for the object ID, and specifying the fields to become properties of the object.
