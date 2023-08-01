@@ -1,6 +1,6 @@
 When you're working with nearly any programming language, one of the most important development tools at your disposal is the API documentation.
 
-API documentation is essentially the reference manual for the a language's libraries. It contains the specifics about how all the puzzle pieces fit together. For example, it contains all types and functions along with any required/optional inputs.
+API documentation is essentially the reference manual for a language's libraries. It contains the specifics about how all the puzzle pieces fit together. For example, it contains all types and functions along with any required/optional inputs.
 
 Such documentation often includes both nitty-gritty details and bigger-picture context. For example, API documentation might include the accepted input types to a function along with a conceptual description of what the function actually does.
 
