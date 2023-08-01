@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Migrate SQL Server workloads to Azure Virtual Machine
-summary: Learners will understand different migration tools and migrate SQL Server databases to Azure Virtual Machine.
+summary: You will explore different migration tools and migrate SQL Server databases to Azure Virtual Machine.
 abstract: |
   In this module, you'll:
   - Understand the importance of careful planning for a successful migration of SQL Server workloads to Azure Virtual Machines.

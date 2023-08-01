@@ -8,9 +8,9 @@ Use [transactional replication](/sql/relational-databases/replication/transactio
 
 There are three basic steps required to use this migration:
 
-1. **Set up distribution**: Responsible for distributing articles in the replication topology. Articles are a database object. For example, a table that is included in the _Publication_
-1. **Create publication**: A collection of one or more articles from the database being replicated
-1. **Create subscription**: A request from a *Subscriber* for a *Publication* from a *Publisher*
+1. **Set up distribution**: Responsible for distributing articles in the replication topology. Articles are a database object. For example, a table that is included in the _Publication_.
+1. **Create publication**: A collection of one or more articles from the database being replicated.
+1. **Create subscription**: A request from a *Subscriber* for a *Publication* from a *Publisher*.
 
 Once you complete the test and the database appears on the subscriber instance in the Azure Virtual Machine, you can direct the connections to the subscriber database. Stop and delete the replication once the data has been successfully migrated.
 

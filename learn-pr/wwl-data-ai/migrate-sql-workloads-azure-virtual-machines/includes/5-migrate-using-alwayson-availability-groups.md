@@ -7,7 +7,7 @@ If you're migrating a database (or multiple databases) from a standalone instanc
 
 :::image type="content" border="false" source="../media/5-availability-groups-architecture.png" alt-text="An architecture diagram of distributed availability group to migrate databases from a standalone instance.":::
 
-You can use Transact-SQL to add a replica of the database using your already existing on-premises SQL Server. It must have an existing Always On availability group and have an existing connection between your on-premises network and Azure.
+You can use Transact-SQL to add a replica of the database using your already existing on-premises SQL Server using the **Add Azure Replica** wizard. It must have an existing Always On availability group and have an existing connection between your on-premises network and Azure.
 
 > [!NOTE]
 > The **Add Azure Replica** wizard only works with Azure Virtual Machines running in classic deployment model. The best practice is to create virtual machines with Resource Manager, as a result you can only add a replica using Transact-SQL.

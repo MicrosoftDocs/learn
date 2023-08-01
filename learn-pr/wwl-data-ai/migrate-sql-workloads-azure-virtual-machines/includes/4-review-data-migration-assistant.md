@@ -22,9 +22,9 @@ You can fine-tune certain Data Migration Assistant behavior by changing configur
 
 The dma.exe.config file for the Data Migration Assistant can be located in the following folders on your machine:
 
-**Desktop Application:** %ProgramFiles%\Microsoft Data Migration Assistant\dma.exe.config
+- **Desktop Application:** %ProgramFiles%\Microsoft Data Migration Assistant\dma.exe.config
 
-**Command-Line Utility:** %ProgramFiles%\Microsoft Data Migration Assistant\dmacmd.exe.config
+- **Command-Line Utility:** %ProgramFiles%\Microsoft Data Migration Assistant\dmacmd.exe.config
 
 ### Parallel database migration
 
