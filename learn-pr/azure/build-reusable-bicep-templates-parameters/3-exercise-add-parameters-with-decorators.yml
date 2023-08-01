@@ -10,9 +10,7 @@ metadata:
   author: davidsmatlak
   ms.author: davidsmatlak
   ms.topic: interactive-tutorial
-  ms.custom:
-    - devx-track-azurepowershell
-    - devx-track-bicep
+  ms.custom: devx-track-bicep
   ms.prod: learning-azure
   zone_pivot_groups: azure-shell-interface
 durationInMinutes: 8

@@ -1,5 +1,6 @@
 
 
+
 As a data scientist, you want to train the best machine learning model. To implement the model, you want to deploy it to an endpoint and integrate it with an application.
 
 Over time, you may want to retrain the model. For example, you can retrain the model when you have more training data. 
