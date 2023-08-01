@@ -16,17 +16,17 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "What kind of data does the GDPR primarily focus on?"
+  - content: "What kind of data do privacy regulations primarily focus on?"
     choices:
     - content: "Business data"
       isCorrect: false
-      explanation: "Personal data, not business data, is the primary focus of the GDPR."
+      explanation: "Personal data, not business data, is the primary focus of privacy regulations."
     - content: "Confidential data"
       isCorrect: false
-      explanation: "Personal data, not confidential data, is the primary focus of GDPR."
+      explanation: "Personal data, not confidential data, is the primary focus of privacy regulations."
     - content: "Personal data"
       isCorrect: true
-      explanation: "The GDPR primarily deals with the collection, use, and protection of personal data and sensitive personal data."
+      explanation: "Privacy regulations primarily deal with the collection, use, and protection of personal data and sensitive personal data."
 
 
   - content: "What is the CCPA?"
@@ -42,7 +42,7 @@ quiz:
       explanation: "The CCPA is a privacy law, not an encryption policy."
 
 
-  - content: "What is a processor under the GDPR?"
+  - content: "What is a processor in privacy regulations?"
     choices:
     - content: "A person, public authority, agency, or other body that alone or jointly with others, determines the purposes and means of processing personal data."
       isCorrect: false

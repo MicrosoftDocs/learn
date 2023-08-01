@@ -18,7 +18,7 @@ Microsoft defines the following data categories for online services:
 
 - **Payment data** is the information customers provide when they buy something online from Microsoft. Payment data might include a credit card number and security code, name, billing address, and other financial information. Microsoft uses payment data to complete transactions and to detect and prevent fraud.
 
-- **Personal data** includes any information that pertains to an identified or identifiable natural person, including pseudonymized data. Microsoft uses the same definition for personal data as the GDPR. Personal data is a subset of each of the preceding data categories.
+- **Personal data** includes any information that pertains to an identified or identifiable natural person, including pseudonymized data. Personal data is a subset of each of the preceding data categories.
 
 ## Microsoft privacy principles
 

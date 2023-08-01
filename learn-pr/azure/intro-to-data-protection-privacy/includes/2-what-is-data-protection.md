@@ -44,7 +44,7 @@ Data privacy typically addresses concerns such as:
 
 ### Privacy laws and regulations
 
-Various laws define the rights of people and companies to control who uses their data, and set forth requirements for handling different types of data. Many countries/regions, and in some cases specific states, have laws or regulations that address privacy and the protection of personal data. Examples include the General Data Protection Regulation (GDPR) and California Consumer Privacy Act (CCPA). The following units provide more detail about these two privacy laws.
+Various laws define the rights of people and companies to control who uses their data, and set forth requirements for handling different types of data. Many countries/regions, and in some cases specific states, have laws or regulations that address privacy and the protection of personal data. The following units provide more detail about these privacy laws.
 
 In general, privacy law and regulations set forth a legal framework about how organizations, and in some cases, individuals, can collect, use, and store personal data. In most cases, laws and regulations don't define or prescribe specific technologies that organizations must use to protect data privacy. Organizations must identify compliant technologies, operations, and other appropriate data privacy protection measures.
 

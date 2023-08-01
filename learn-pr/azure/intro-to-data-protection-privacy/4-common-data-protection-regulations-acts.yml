@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-data-protection-privacy.4-common-data-protection-regulations-acts
-title: Overview of the CCPA
+title: Data privacy 
 metadata:
   title: Overview of the CCPA
-  description: Learn about the CCPA, how Microsoft supports the CCPA, and similarities and differences between the CCPA and GDPR.
+  description: Learn about the CCPA, how Microsoft supports the CCPA, and similarities and differences between privacy regulations.
   ms.date: 03/24/2021
   author: cwatson-cat
   ms.author: cwatson

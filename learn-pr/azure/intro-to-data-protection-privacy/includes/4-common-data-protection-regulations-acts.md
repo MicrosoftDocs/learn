@@ -23,10 +23,10 @@ The CCPA applies only to companies that do business in California and meet at le
 
 For commercial customers doing business in California, Microsoft is a service provider with respect to its Online Services and Professional Services offering. The Online Services Terms and the Microsoft Professional Services Data Protection Addendum meet the CCPA requirements for Service Providers. As set out in the Online Services Terms, Microsoft complies with all laws and regulations that apply to its provision of Online Services, including the CCPA.
 
-## GDPR and CCPA similarities and differences
+## Regulatory law similarities and differences
 
-Both the GDPR and CCPA mandate transparency and disclosure obligations. Both laws provide individuals with unique rights over how their data is processed.
+Both of these regulations mandate transparency and disclosure obligations, and provide individuals with unique rights over how their data is processed.
 
-One significant difference between the GDPR and CCPA is that the CCPA includes the right for consumers to opt out from the sale of their personal data to third parties. The term *sale* has a specific meaning under the CCPA. Work with your legal team to understand whether or not your organization might be selling data.
+One significant difference is that the CCPA includes the right for consumers to opt out from the sale of their personal data to third parties. The term *sale* has a specific meaning under the CCPA. Work with your legal team to understand whether or not your organization might be selling data.
 
-Under the CCPA, *personal information* is any data relating to an identified or identifiable person. There's no distinction between a person's private, public, or work role. The defined term *personal information* corresponds with *personal data* under the GDPR. However, the CCPA also includes family and household data.
+Under the CCPA, *personal information* is any data relating to an identified or identifiable person. There's no distinction between a person's private, public, or work role. The defined term *personal information* corresponds with *personal data*, but the CCPA also includes family and household data.

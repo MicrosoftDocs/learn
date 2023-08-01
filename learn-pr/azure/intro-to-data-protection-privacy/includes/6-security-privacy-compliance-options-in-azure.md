@@ -14,7 +14,7 @@ The [Microsoft Trust Center](https://www.microsoft.com/trust-center?azure-portal
 
 ### Service Trust Portal
 
-The [Service Trust Portal](https://servicetrust.microsoft.com?azure-portal=true) has extensive information about common industry standards and regulations like the GDPR. Audit reports, Azure Security Blueprints, and trust documents help you understand cloud features and compare technical compliance and control requirements against requirements. Extra guidance and tools help Azure and other Microsoft cloud service customers meet security, compliance, and privacy needs.
+The [Service Trust Portal](https://servicetrust.microsoft.com?azure-portal=true) has extensive information about common industry standards and regulations. Audit reports, Azure Security Blueprints, and trust documents help you understand cloud features and compare technical compliance and control requirements against requirements. Extra guidance and tools help Azure and other Microsoft cloud service customers meet security, compliance, and privacy needs.
 
 ## Data protection in Azure
 
