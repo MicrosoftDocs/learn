@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-managing-a-session-and-rendering-models
-title: Manage a session and render models
+title: Session management for Azure Remote Rendering
 metadata:
-  title: Create and render models
-  description: Learn how to manage a remote rendering session and prepare a model for rendering
+  title: Session management for Azure Remote Rendering
+  description: Learn how to manage a remote rendering session and prepare a model for rendering.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh
