@@ -64,7 +64,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     The repository is cloned to your home folder.
 
-1. Move into the C# app folder.
+1. Move into the C# `chatapp` folder.
 
     ```bash
     cd ~/mslearn-handle-transient-errors-in-your-app/csharp/chatapp/
@@ -80,7 +80,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     [!code-csharp[](../src/csharp-chatapp/Program.cs?range=16-23&highlight=21)]
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Compile and run the .NET Core app.
 
@@ -93,7 +93,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     ![The chat console app interface at startup, showing the New, Read All, and Quit commands.](../media/5-app-interface.png)
 
-1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and then restart, notice that the messages you typed in the last session are available. This happens because the app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all this data.
+1. To test the app, type **N** and enter a name and message for a new message. Type **R** to read all messages posted to date. Type **Q** to quit the app. If you quit the app and then restart, notice that the messages you typed in the last session are available. The app is connecting to our Mongo DB in Azure Cosmos DB to retrieve all of this data.
 
 Let's see what happens when we break the connection to the backend database.
 
@@ -146,7 +146,7 @@ Let's see what happens when we break the connection to the backend database.
     }
     ```
 
-1. Let's save our changes and try them out. Select the three ellipses (**...**) to the top right of the editor and then select **Close Editor** followed by **Save**.
+1. Let's save our changes and try them out. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Build and run the app.
 
@@ -192,7 +192,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     [!code-java[](../src/java-chatapp/javaChat.java?range=23-29&highlight=26)]
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Compile and run the Java app.
 
@@ -247,7 +247,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     }
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close Editor** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Build and run the app.
 
@@ -292,7 +292,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
 
     [!code-javascript[](../src/node-chatapp/server.js?range=23-29&highlight=25)]
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. To navigate to our Node.js app in the browser, we have to open port 8000 in the sandbox. To open port 8000, run the following `curl` command in the Cloud Shell.
 
@@ -306,7 +306,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     {"message":"Port 8000 is open","url":"https://gateway03.westus.console.azure.com/n/cc-604c-74cb7fc3/cc-604c-74cb7fc3/proxy/8000/"}
     ```
 
-1. Make a note of the url value in the message that was returned from the curl command. This is the url of our app.
+1. Make a note of the url value in the message that was returned from the curl command. It's the url of our app.
 1. Compile and run the Node.js app.
 
     ```bash
@@ -379,7 +379,7 @@ Use the following steps to clone the Chat App GitHub repository with `git`. You 
     });
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Run the app.
 

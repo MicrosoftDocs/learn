@@ -45,7 +45,7 @@ For other unknown errors, quit the app.
 
 ## Add a retry policy
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Open File ...**. Select  **Program.cs** in the file chooser dialog, and press Enter.
+1. Select the three ellipses (**...**) to the top right of the editor and then select **Open File ...**. Select  **Program.cs** in the file chooser dialog, and press **Enter**.
 
 1. Update the `connectionString` variable in this class to the value of the connection string of your Azure Cosmos DB database we found earlier.
 
@@ -170,7 +170,7 @@ For other unknown errors, quit the app.
 
 ## Add a retry policy
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Open** in the dialog type **javaChat.java**, and press Enter.
+1. Select the three ellipses (**...**) to the top right of the editor and then select **Open** in the dialog type **javaChat.java**, and press **Enter**.
 
 1. Locate the `printAllMessages()` method in **javaChat.java**.
 
@@ -233,12 +233,14 @@ For other unknown errors, quit the app.
         retries.resetRetries();
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
+
 1. Build the project using the following command:
 
     ```bash
     javac -cp .:lib/* -d . javaChat.java RetryPolicy.java
     ```
+
 1. Run the app with the following command in the Cloud Shell.
 
     ```bash
@@ -285,7 +287,7 @@ For other unknown errors, quit the app.
 
 ## Add a retry policy
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Open** in the dialog type **server.js**, and press Enter.
+1. Select the three ellipses (**...**) to the top right of the editor and then select **Open** in the dialog type **server.js**, and press **Enter**.
 
 1. Scroll down to the mongoose call to connect to the database.
 
@@ -338,7 +340,7 @@ For other unknown errors, quit the app.
     let retries = new retry();
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. If your browser isn't open from the previous exercise, run:
 
@@ -415,7 +417,7 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
 
 1. Change the delay from `60000` to `5000`.
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Run app, and note that the retries happen much more quickly.
 
@@ -433,7 +435,7 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
 
 1. Change the delay from `60` to `5`.
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Run app, and note that the retries happen much more quickly.
 
@@ -451,7 +453,7 @@ Based on the `number-of-retries` setting in the **appsettings.json** file of our
 
 1. Change the delay from `60000` to `5000`.
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Close** in the window click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Run app, and note that the retries happen much more quickly.
 

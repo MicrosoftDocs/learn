@@ -79,11 +79,9 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
     retries = new RetryPolicy(logger);
     ```
 
-    The preceding code instantiates a ServiceCollection, adds a console provider, and sets a default logging level to debug.
+    The preceding code instantiates a ServiceCollection, adds a console provider, and sets a default logging level to debug. The next two lines create two loggers, one to be used in the retry policy class, the other for the main app.
 
-    The next two lines create two loggers, one to be used in the retry policy class, the other for the main app.
-
-1. The following code needs to be changed, as the retry policy is being created above. Change this code:
+1. We created the retry policy in the previous code, so now the following code should be changed:
 
     ```csharp
         private static RetryPolicy retries = new RetryPolicy();
@@ -159,7 +157,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
     private readonly ILogger retrylogger;
     ```
 
-1. Update the constructor of the class with the following code to Instantiate the logger. Notice that the constructor now takes a parameter of type `ILogger``.
+1. Update the constructor of the class with the following code to Instantiate the logger. Notice that the constructor now takes a parameter of type `ILogger`.
 
     ```csharp
     public RetryPolicy(ILogger logger)
@@ -184,7 +182,7 @@ Microsoft provides a `Microsoft.Extensions.Logging` NuGet package that adds a gr
     retrylogger.LogWarning($"{DateTime.Now} - Retries: {currentTries}");
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Quit** in the dialog click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Compile and run app.
 
@@ -294,7 +292,7 @@ The Java runtime provides a `import java.util.logging` library that adds a great
     retryLogger.log(Level.WARNING, LocalDateTime.now() + " - Retrying: " + currentTries);
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Quit** in the dialog click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Compile and run app.
 
@@ -444,7 +442,7 @@ There's no inbuilt logging library provided as Node.js is built on the JavaScrip
     logger.log('warn', 'Retrying: ' + this._currentTries);
     ```
 
-1. Select the three ellipses (**...**) to the top right of the editor and then select **Quit** in the dialog click **Save**.
+1. Save the file, and close the editor. You can select the ellipsis "..." in the right corner of the editor, or use the accelerator key (press <kbd>Ctrl+S</kbd> on Windows and Linux; press <kbd>Cmd+S</kbd> on macOS).
 
 1. Run app.
 
