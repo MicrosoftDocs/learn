@@ -3,7 +3,7 @@ uid: learn.quantum.use-qsharp-libraries
 metadata:
   title: Use the Q# libraries
   description: Learn about libraries in Q# and how to add them to your projects, discover the Q# API documentation, implement another application of Grover's algorithm by using the standard library, and write documentation for your own code.
-  ms.date: 09/19/2020
+  ms.date: 08/01/2023
   author: bradben
   ms.author: brbenefield
   ms.topic: interactive-tutorial
