@@ -82,7 +82,7 @@ If the object is an HSM-key, the 'HSM Protected key' charge per key version per 
 
 ## Soft-delete on by default
 
-If a secret is deleted and the key vault doesn't have soft-deleted protection, it's eleted permanently. Although users can currently opt out of soft-delete during key vault creation, this ability is deprecated. In February 2025, Microsoft enables soft-delete protection on all key vaults, and users will no longer be able to opt out of or turn off soft-delete. This will protect secrets from accidental or malicious deletion by a user.
+If a secret is deleted and the key vault doesn't have soft-deleted protection, it's deleted permanently. Although users can currently opt out of soft-delete during key vault creation, this ability is deprecated. In February 2025, Microsoft enables soft-delete protection on all key vaults, and users will no longer be able to opt out of or turn off soft-delete. This will protect secrets from accidental or malicious deletion by a user.
 
 ## Can my application work with soft-delete enabled?
 
