@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.monitor-data-in-power-bi-reports-and-event-hub
+title: Monitor data in Azure Power BI Reports and Azure Event Hubs with Data Activator
+metadata:
+  title: Monitor data in Azure Power BI Reports and Azure Event Hubs with Data Activator
+  description: "Monitor data in Azure Power BI Reports and Azure Event Hubs with Data Activator"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-monitor-data-in-power-bi-reports-and-event-hub.md)]

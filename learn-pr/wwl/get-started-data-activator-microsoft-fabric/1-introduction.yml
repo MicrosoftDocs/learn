@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/1-introduction.md)]

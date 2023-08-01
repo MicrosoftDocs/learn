@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-data-activator-microsoft-fabric
+metadata:
+  title: Get started with Data Activator in Microsoft Fabric
+  description: "Data Activator"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Get started with Data Activator in Microsoft Fabric
+summary: Data Activator
+abstract: |
+  Data Activator
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+units:
+- learn.wwl.get-started-data-activator-microsoft-fabric.introduction
+- learn.wwl.get-started-data-activator-microsoft-fabric.overview-of-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.get-started-with-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.define-triggers-conditions-and-actions-in-data-activator
+- learn.wwl.get-started-data-activator-microsoft-fabric.monitor-data-in-power-bi-reports-and-event-hub
+- learn.wwl.get-started-data-activator-microsoft-fabric.additional-topics
+- learn.wwl.get-started-data-activator-microsoft-fabric.exercise
+- learn.wwl.get-started-data-activator-microsoft-fabric.knowledge-checks
+- learn.wwl.get-started-data-activator-microsoft-fabric.summary
+badge:
+  uid: learn.wwl.get-started-data-activator-microsoft-fabric.badge

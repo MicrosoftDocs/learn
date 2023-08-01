@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.define-triggers-conditions-and-actions-in-data-activator
+title: Understand triggers, conditions and actions in Data Activator
+metadata:
+  title: Understand triggers, conditions and actions in Data Activator
+  description: "Understand triggers, conditions and actions in Data Activator"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-define-triggers-conditions-and-actions-in-data-activator.md)]

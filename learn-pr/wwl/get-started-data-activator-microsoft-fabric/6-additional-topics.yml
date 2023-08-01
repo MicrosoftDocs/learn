@@ -1,0 +1,12 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.additional-topics
+title: Data Activator
+metadata:
+  title: Data Activator
+  description: "Data Activator"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 2

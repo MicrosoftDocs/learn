@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-activator-microsoft-fabric.knowledge-checks
+title: Knowledge Checks
+metadata:
+  title: Knowledge Checks
+  description: "Knowledge Checks"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: calopez
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/8-knowledge-checks.md)]
