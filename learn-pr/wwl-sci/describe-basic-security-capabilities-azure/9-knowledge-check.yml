@@ -48,14 +48,14 @@ quiz:
     - content: "Azure Bastion is deployed per virtual machine."
       isCorrect: false
       explanation: "Incorrect. Azure Bastion deployment isn't per virtual machine. Bastion provides secure RDP and SSH connectivity to all of the VMs in the virtual network in which it's provisioned."
-  - content: "An organization has much of its application data in Azure. The security admin wants a way to create and control the keys used to encrypt the organization's application data. Which service would the admin use?"
+  - content: "How can application developers benefit from using Azure Key Vault?"
     choices:
-    - content: "Transparent data encryption."
+    - content: "To test and debug their application code."
       isCorrect: false
-      explanation: "Incorrect. Transparent data encryption helps protect Azure SQL Database and Azure Data Warehouse against the threat of malicious activity."
-    - content: "Secrets management."
+      explanation: "Incorrect. Application developers can use Azure Key Vault to securely store and retrieve application secrets, such as database connection strings, without having to include it in the application code."
+    - content: "To test register their application code with Azure"
       isCorrect: false
-      explanation: "Incorrect. Secrets management represents a use case for Azure Key Vault, but is not the name of the service in Azure."
-    - content: "Azure Key Vault."
+      explanation: "Incorrect. Application developers can use Azure Key Vault to securely store and retrieve application secrets, such as database connection strings, without having to include it in the application code."
+    - content: "To securely store and retrieve application secrets"
       isCorrect: true
-      explanation: "Correct. Azure Key Vault is a centralized cloud service that that can be used for secrets management, key management, and certificate management."
+      explanation: "Correct. Application developers can use Azure Key Vault to securely store and retrieve application secrets, such as database connection strings, without having to include it in the application code."

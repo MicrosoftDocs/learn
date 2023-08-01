@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-basic-security-capabilities-azure.describe-ways-azure-encrypts-data
-title: Describe ways Azure encrypts data
+title: Describe Azure Key Vault
 metadata:
-  title: Describe ways Azure encrypts data
-  description: "Describe ways Azure encrypts data"
+  title: Describe Azure Key Vault
+  description: "Describe Azure Key Vault"
   ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
