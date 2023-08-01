@@ -7,13 +7,10 @@ You can benefit from Microsoft Defender for Cloud even if you don’t provision 
 
 Data is collected using:<br>
 
-Azure Monitor Agent (AMA)<br>
-
-Microsoft Defender for Endpoint (MDE)
-
-Log Analytics agent
-
-Azure Policy Add-on for Kubernetes
+ -  Azure Monitor Agent (AMA)<br>
+ -  Microsoft Defender for Endpoint (MDE)
+ -  Log Analytics agent
+ -  Azure Policy Add-on for Kubernetes
 
 ## Why use Defender for Cloud to deploy monitoring components?
 
@@ -49,12 +46,12 @@ The Azure Preview Supplemental Terms include additional legal terms that apply t
 
 ## Azure Monitor Agent (AMA)
 
-:::image type="content" source="../media/azure-monitor-agent-example-3dab0a98.png" alt-text="Screenshot showing and Azure Monitor agent aspects and details.":::
+:::image type="content" source="../media/azure-monitor-agent-example-3dab0a98.png" alt-text="Table showing Azure Monitor agent aspects and details.":::
 
 
 ## Log Analytics agent
 
-:::image type="content" source="../media/log-analytics-agent-example-3bd596c5.png" alt-text="Screenshot showing Log Analytics agent aspects and details.":::
+:::image type="content" source="../media/log-analytics-agent-example-3bd596c5.png" alt-text="Table showing Log Analytics agent aspects and details.":::
 
 
 ## Supported operating systems for the Log Analytics agent
@@ -88,9 +85,9 @@ For existing machines on subscriptions onboarded to Defender for Cloud before 17
 
 ## Microsoft Defender for Endpoint
 
-:::image type="content" source="../media/microsoft-defender-for-endpoint-example-8a92a008.png" alt-text="Screenshot showing Microsoft Defender for Endpoint aspects and details.":::
+:::image type="content" source="../media/microsoft-defender-for-endpoint-example-8a92a008.png" alt-text="Table showing Microsoft Defender for Endpoint aspects and details.":::
 
 
 ## Vulnerability assessment<br>
 
-:::image type="content" source="../media/vulnerability-assessment-aspect-and-details-af522b67.jpg" alt-text="Screenhsot showing vulnerability assessment aspects and details in Defender for Cloud.":::
+:::image type="content" source="../media/vulnerability-assessment-aspect-and-details-af522b67.jpg" alt-text="Table showing vulnerability assessment aspects and details in Defender for Cloud.":::
