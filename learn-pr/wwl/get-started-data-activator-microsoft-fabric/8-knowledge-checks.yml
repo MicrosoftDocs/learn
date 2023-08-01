@@ -1,14 +1,70 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.get-started-data-activator-microsoft-fabric.knowledge-checks
-title: Knowledge Checks
+title: Knowledge Check
 metadata:
-  title: Knowledge Checks
-  description: "Knowledge Checks"
+  title: Knowledge Check
+  description: "Knowledge Check"
   ms.date: 08/01/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
   ms.prod: azure
 durationInMinutes: 5
-content: |
-  [!include[](includes/8-knowledge-checks.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the purpose of Events in Data Activator?"
+    choices:
+    - content: "To create Objects in Data Activator"
+      isCorrect: false
+      explanation: "Incorrect. Objects represent the entities that you will be monitoring or manipulating in your use case."
+    - content: "To verify the availability of Data Activator in your region"
+      isCorrect: false
+      explanation: "Incorrect. Availability by Region is verified to ensure that Data Activator is available in your region."
+    - content: "To capture state changes for your Objects and trigger actions and responses based on the data flows in your system"
+      isCorrect: true
+      explanation: "Correct. Events in Data Activator are used to capture state changes for your Objects. These events are fundamental for triggering actions and responses based on the data flows in your system."
+  - content: "What is the role of triggers in Data Activator?"
+    choices:
+    - content: "Triggers are the end result of a condition being met by an action."
+      isCorrect: false
+      explanation: "Incorrect. This describes the relationship between conditions and actions in Data Activator."
+    - content: "Triggers are used to define specific circumstances or states within events."
+      isCorrect: false
+      explanation: "Incorrect. This describes the role of conditions in Data Activator."
+    - content: "Triggers monitor events and data, initiating specified actions once certain conditions within these events are fulfilled."
+      isCorrect: true
+      explanation: "Correct. Triggers act like 'if-then' statements for your data, enabling real-time responses to critical changes or anomalies in your events."
+  - content: "What is the purpose of Data Activator in the context of Power BI reports and Azure Event Hubs?"
+    choices:
+    - content: "Data Activator is used to create Power BI reports."
+      isCorrect: false
+      explanation: "Incorrect. Data Activator is not used to create Power BI reports, but rather to set up notifications based on specific conditions met by the data in a Power BI report."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. Data Activator enables the user to set up notifications based on specific conditions met by the data in a Power BI report or data streaming into Azure Event Hubs, allowing for real-time monitoring and prompt response."
+    - content: "Data Activator is used to monitor website traffic only."
+      isCorrect: false
+      explanation: "Incorrect. Data Activator can be used to monitor various types of data, including data streaming into Azure Event Hubs."
+  - content: "What is the purpose of incorporating exercise into a daily routine?"
+    choices:
+    - content: "To lose weight quickly"
+      isCorrect: false
+      explanation: "Incorrect. Rapid weight loss is not a sustainable or healthy goal for exercise."
+    - content: "To improve overall health and well-being"
+      isCorrect: true
+      explanation: "Correct. Exercise has numerous physical and mental health benefits, including reducing the risk of chronic diseases and improving mood and cognitive function."
+    - content: "To build muscle mass"
+      isCorrect: false
+      explanation: "Incorrect. While exercise can help build muscle, it is not the sole purpose of incorporating exercise into a daily routine."
+  - content: "What is the purpose of Infrastructure as Code (IaC)?"
+    choices:
+    - content: "IaC is used to manually configure infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. IaC is not used for manual configuration of infrastructure."
+    - content: "Enables the automation and validation of the creation and teardown of environments to help deliver secure and stable application hosting platforms"
+      isCorrect: true
+      explanation: "Correct. IaC enables automation and validation of environment creation and teardown, leading to secure and stable application hosting platforms."
+    - content: "IaC is used to create a graphical representation of infrastructure."
+      isCorrect: false
+      explanation: "Incorrect. IaC is not used to create a graphical representation of infrastructure."
