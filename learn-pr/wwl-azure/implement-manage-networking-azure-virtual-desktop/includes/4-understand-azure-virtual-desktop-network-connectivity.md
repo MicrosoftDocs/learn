@@ -17,7 +17,7 @@ The inbound ports aren't opened and the gateway is acting as an intelligent reve
 
 Azure Virtual Desktop hosts the client on the session hosts running on Azure. Microsoft manages portions of the services on the customer's behalf and provides secure endpoints for connecting clients and session hosts. The diagram below gives a high-level overview of the network connections used by Azure Virtual Desktop.
 
-:::image type="content" source="../media/azure-virtual-desktop-network-connections-f75bb615.png" alt-text="Diagram showing how Azure Virtual Desktop network connections works":::
+:::image type="content" source="../media/azure-virtual-desktop-network-connection-82f668a5.png" alt-text="Diagram showing how Azure Virtual Desktop network connections works":::
 
 
 ## Session connectivity
