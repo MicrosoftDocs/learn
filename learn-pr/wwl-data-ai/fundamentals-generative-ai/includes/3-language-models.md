@@ -16,7 +16,7 @@ Transformer model architecture consists of two components, or *blocks*:
 - An *encoder* block that creates semantic representations of the training vocabulary.
 - A *decoder* block that generates new language sequences.
 
-In practice, the specific implementations of the architecture vary – for example, the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine uses only the encoder block, while the Generative Pretrained Transformer (GPT) models developed by OpenAI uses only the decoder block.
+In practice, the specific implementations of the architecture vary – for example, the Bidirectional Encoder Representations from Transformers (BERT) model developed by Google to support their search engine uses only the encoder block, while the Generative Pretrained Transformer (GPT) model developed by OpenAI uses only the decoder block.
 
 While a complete explanation of every aspect of transformer models is beyond the scope of this module, an explanation of some of the key elements in a transformer can help you get a sense for how they support generative AI.
 
@@ -66,7 +66,7 @@ We can plot the location of tokens based on these vectors in three-dimensional s
 
 ![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
-The locations of the tokens in the embeddings space includes some information about hwo closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark." The tokens for "cat" and "bark" are close to "meow." The token for "skateboard" is further away from the other tokens.
+The locations of the tokens in the embeddings space includes some information about how closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark." The tokens for "cat" and "bark" are close to "meow." The token for "skateboard" is further away from the other tokens.
 
 > [!NOTE]
 > The example above shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.
@@ -100,7 +100,7 @@ The following animation shows a very simplified representation of how this works
 2.	The goal in a decoder is to predict the next token in the sequence, which will also be a vector that aligns to an embedding in the model’s vocabulary.
 3.	The attention layer evaluates the sequence so far and assigns weights to each token to represent their relative influence on the next token. 
 4.	The weights can be used to compute a new vector for the next token with an attention score. Multi-head attention uses different elements in the embeddings to calculate multiple alternative tokens.
-5.	A fully-connected neural network uses the scores in the calculated vectors to predict the most probable token from the entire vocabulary.
+5.	A fully connected neural network uses the scores in the calculated vectors to predict the most probable token from the entire vocabulary.
 6.	The predicted output is appended to the sequence so far, which is used as the input for the next iteration.
 
 During training, the actual sequence of tokens is known – we just mask the ones that come later in the sequence than the token position currently being considered. As in any neural network, the predicted value for the token vector is compared to the actual value of the next vector in the sequence, and the loss is calculated. The weights are then incrementally adjusted to reduce the loss and improve the model. When used for inferencing (predicting a new sequence of tokens), the trained attention layer applies weights that predict the most probable token in the model’s vocabulary that is semantically aligned to the sequence so far.
