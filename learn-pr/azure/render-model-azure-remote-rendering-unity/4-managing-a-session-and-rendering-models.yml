@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.4-managing-a-session-and-rendering-models
-title: Session management for Azure Remote Rendering
+title: Exercise - Create an Azure Remote Rendering account
 metadata:
-  title: Session management for Azure Remote Rendering
-  description: Learn how to manage a remote rendering session and prepare a model for rendering.
+  title: Exercise - Create an Azure Remote Rendering account
+  description: Use Azure Sandbox to create a Remote Rendering service account and get necessary account information in the Azure portal.
   ms.date: 02/01/2021
   author: aprilspeight
   ms.author: apspeigh
@@ -12,7 +12,8 @@ metadata:
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
-  - apspeigh-02142021
-durationInMinutes: 5
+  - apspeigh-03182021
+azureSandbox: true
+durationInMinutes: 10
 content: |
   [!include[](includes/4-managing-a-session-and-rendering-models.md)]

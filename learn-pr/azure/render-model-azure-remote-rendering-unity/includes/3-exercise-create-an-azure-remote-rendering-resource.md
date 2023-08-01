@@ -1,33 +1,27 @@
-You need an Azure Remote Rendering account to access the remote rendering service. In this exercise, you learn how to create a Remote Rendering account and locate its account ID, account domain, and primary access key. You use the Remote Rendering resource later in this module to render a model.
+Azure Remote Rendering provides the [session management REST API](/azure/remote-rendering/how-tos/session-rest-api) to manage interactions with the cloud server and query information about Remote Rendering sessions. In C# and C++, you can create, update, and stop sessions through the `RemoteRenderingClient` and `RenderingSession` classes. This unit describes how to manage Remote Rendering sessions.
 
-## Create the Remote Rendering account
+## Create a session
 
-1. After the sandbox activates, [open the Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) and select **Create a resource**.
-1. On the **Create a resource** page, enter *remote rendering* in the Search box.
-1. On the **Marketplace** page, at the bottom of the **Remote Rendering** tile, select **Create** > **Remote Rendering**.
+You can use PowerShell to request creation of a session.
 
-   :::image type="content" source="../media/marketplace-results.png" alt-text="A screenshot of the Marketplace results with the Create Remote Rendering selection highlighted.":::
+```powershell
+Invoke-WebRequest -Uri "$endPoint/v1/accounts/$accountId/sessions/create" -Method Post -ContentType "application/json" -Body "{ 'maxLeaseTime': '4:0:0', 'models': [], 'size': 'standard' }" -Headers @{ Authorization = "Bearer $token" }
+```
+When you create a new session, you use the `maxLeaseTime` parameter to specify a maximum lease time, typically in the range of one to eight hours. The maximum lease time is the duration during which the host accepts input. You can extend the lease time of an active session if necessary.
 
-1. On the **Create Remote Rendering** page, leave the **Subscription** field populated with the sandbox subscription name. Drop down the arrow next to **Resource group** and select the prepopulated sandbox resource group, which starts with **learn-**.
+The response from the request returns a session ID, which persists for 30 days and can be used to query information about the session after it ends. For more PowerShell scripts that use the Remote Rendering API, see [Example PowerShell scripts](/azure/remote-rendering/samples/powershell-example-scripts?azure-portal=true).
 
-1. For **Name**, enter a globally unique name with valid characters a-z, 0-9, and -. Leave **Region** at the prepopulated value.
+## Connect to a session
 
-   :::image type="content" source="../media/create-remote-rendering-resource.png" alt-text="A screenshot of the Remote Rendering Account wizard.":::
+Once a session is ready, a client device can connect to it and can send commands to load and modify models. When `RenderingSession.IsConnected` is `true`, `RenderingSession.Connection` returns an instance of `RenderingConnection`, which contains the functions to load models, manipulate entities, and query information about the rendered scene.
 
-1. Select **Review + create** at the bottom of the page, and then select **Create**.
+You can create, observe, and shut down as many sessions as you want from a single application, but only one device can connect to a Remote Rendering session at a time. Attempts to connect to the session by other devices fail. Another device can connect only after the session stops.
 
-It takes a few seconds for the Remote Rendering account to be created. A notification appears after deployment is complete.
+Because a Remote Rendering host only serves one client device at a time, the client connected to a session has exclusive control over the rendered content. The single client connection also means that rendering performance never varies for reasons outside your control.
 
-## View the subscription keys and endpoint
+## Stop a session
 
-1. When you see the notification that deployment is complete, select **Go to resource**.
+The session stops when the maximum lease time expires or you stop the session manually. To manually stop a session, you can call `RenderingSession.StopAsync`. The session might also stop because of some failure. Once the session stops, you're no longer billed, and all previous states such as loaded models are discarded.
 
-1. The Remote Rendering **Overview** page shows the **Account Domain** and **Account ID**. Copy these values to use later in the module.
+After a session stops, you can query the persistent session ID by using `RenderingSession.SessionUuid()`. An application can call `RemoteRenderingClient.OpenRenderingSessionAsync` with the session ID to bind to that session and cache it locally.
 
-   :::image type="content" source="../media/account-domain.png" alt-text="A screenshot of the Remote Rendering overview page with the Account Domain and Account ID highlighted." lightbox="../media/account-domain.png":::
-
-1. In the left navigation, select **Access Keys** under **Settings**.
-
-1. On the **Access Keys** page, copy the **Primary key** value to use later in this module.
-
-   :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the Access Keys selection and page, highlighting the Copy icon next to the Primary key." lightbox="../media/access-keys.png":::
