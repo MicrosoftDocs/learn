@@ -42,7 +42,7 @@ The *standard library* provides much of Q#'s primary functionality and is the fo
 
 The standard library is included in every Q# project by default. Accessing other libraries, including the domain-specific libraries, requires adding their respective packages to the project.
 
-Depending on your Q# development setup, the method of adding the packages will vary. You can find specifics at [The Q# Libraries](s/azure/quantum/user-guide/libraries/) in the official documentation. Regardless of your environment, though, the process is straightforward.
+Depending on your Q# development setup, the method of adding the packages will vary. You can find specifics at [The Q# Libraries](/azure/quantum/user-guide/libraries/) in the official documentation. Regardless of your environment, though, the process is straightforward.
 
 For example, if you're working with Q# command-line applications in Visual Studio Code, you can simply use the `dotnet` command to add a NuGet package reference to your project. Adding the [Microsoft.Quantum.Numerics](https://www.nuget.org/packages/Microsoft.Quantum.Numerics?azure-portal=true) package then requires only running the following command:
 
