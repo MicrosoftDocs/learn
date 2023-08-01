@@ -18,13 +18,13 @@ quiz:
 
   - content: "What kind of data do privacy regulations primarily focus on?"
     choices:
-    - content: "Business data"
+    - content: "Business data."
       isCorrect: false
       explanation: "Personal data, not business data, is the primary focus of privacy regulations."
-    - content: "Confidential data"
+    - content: "Confidential data."
       isCorrect: false
       explanation: "Personal data, not confidential data, is the primary focus of privacy regulations."
-    - content: "Personal data"
+    - content: "Personal data."
       isCorrect: true
       explanation: "Privacy regulations primarily deal with the collection, use, and protection of personal data and sensitive personal data."
 

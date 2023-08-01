@@ -3,7 +3,7 @@ Worldwide, many laws and regulations address data protection and privacy. The tw
 - The GDPR is a regulation that governs data protection and privacy in the European Union (EU) and the European Economic Area (EEA).
 - The CCPA is a California state privacy law and the first comprehensive privacy law in the United States.
 
-This unit describes the GDPR, its concepts and terminology, and how Microsoft supports and commits to these concepts. The next unit provides more information about the CCPA and compares the two regulations.
+This unit describes GDPR concepts and terminology, and how Microsoft supports and commits to data privacy regulations. The next unit provides more information about the CCPA and compares the two regulations.
 
 ## Overview
 
@@ -48,7 +48,7 @@ The following concepts and terms are important for understanding this regulation
 
 Microsoft believes that privacy is a fundamental right, and supports regulations that help protect and enable individuals' privacy rights. Microsoft is committed to regulatory compliance, and provides many products, features, and resources to help its customers meet their compliance obligations.
 
-Controllersthat use Microsoft's online services, such as organizations and developers, must process personal data only on the controller's behalf. Controllers must provide sufficient guarantees to meet compliance requirements.
+Controllers that use Microsoft's online services, such as organizations and developers, must process personal data only on the controller's behalf. Controllers must provide sufficient guarantees to meet compliance requirements.
 
 ### Designated EU DPO
 
