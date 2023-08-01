@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-security
+title: Azure Key Vault security
+metadata:
+  title: Azure Key Vault security
+  description: "Azure Key Vault security"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/4-azure-key-vault-security.md)]

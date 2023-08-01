@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-key-vault-networking-settings.azure-key-vault-basic-concepts
+title: Azure Key Vault basic concepts
+metadata:
+  title: Azure Key Vault basic concepts
+  description: "Azure Key Vault basic concepts"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/2-azure-key-vault-basic-concepts.md)]
