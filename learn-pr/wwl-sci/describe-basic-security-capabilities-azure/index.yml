@@ -1,19 +1,19 @@
 ### YamlMime:Module
 uid: learn.wwl.describe-basic-security-capabilities-azure
 metadata:
-  title: Describe basic security capabilities in Azure
-  description: "Describe basic security capabilities in Azure"
+  title: Describe core infrastructure security services in Azure
+  description: "Describe core infrastructure security services in Azure"
   ms.date: 02/09/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-title: Describe basic security capabilities in Azure
+title: Describe core infrastructure security services in Azure
 summary: Learn about capabilities Azure supports to protect your network, VMs, and your data.
 abstract: |
   After completing this module, you will be able to:
   - Learn how Azure security capabilities can protect the network
   - Learn how Azure can protect your VMs
-  - Learn how encryption on Azure can protect your data
+  - Learn how to keep secrets safe with Azure Key Vault
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
