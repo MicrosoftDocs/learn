@@ -18,4 +18,4 @@ LLMs generally support *zero-shot learning* in which responses can be generated 
 
 Prompts can include *grounding* data to provide context. You can use grounding data as a prompt engineering technique to gain many of the benefits of fine-tuning without having to train a custom model.
 
-To apply this technique, include contextual data in the prompt so that the model can use it to generate an appropriate output. For example, suppose you want to use a LLM to generate a summary of an email. You can include the email text in the prompt with an instruction to summarize it.
+To apply this technique, include contextual data in the prompt so that the model can use it to generate an appropriate output. For example, suppose you want to use an LLM to generate a summary of an email. You can include the email text in the prompt with an instruction to summarize it.
