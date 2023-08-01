@@ -66,7 +66,7 @@ We can plot the location of tokens based on these vectors in three-dimensional s
 
 ![Diagram of token vectors plotted in three dimensional space.](../media/embed-example.png)
 
-The locations of the tokens in the embeddings space includes some information about how closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark." The tokens for "cat" and "bark" are close to "meow." The token for "skateboard" is further away from the other tokens.
+The locations of the tokens in the embeddings space include some information about how closely the tokens are related to one another. For example, the token for "dog" is close to "cat" and also to "bark." The tokens for "cat" and "bark" are close to "meow." The token for "skateboard" is further away from the other tokens.
 
 > [!NOTE]
 > The example above shows a simple example model in which each embedding has only three dimensions. Real language models have many more dimensions.
