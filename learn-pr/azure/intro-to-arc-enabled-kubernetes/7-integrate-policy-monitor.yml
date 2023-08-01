@@ -12,6 +12,6 @@ metadata:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Manage Azure Arc-enabled Kubernetes by using Azure Policy and Azure Monitor
-durationInMinutes: 5
+durationInMinutes: 9
 content: |
   [!include[](includes/7-integrate-policy-monitor.md)]

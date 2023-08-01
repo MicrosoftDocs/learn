@@ -12,6 +12,6 @@ metadata:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
-durationInMinutes: 9
+durationInMinutes: 7
 content: |
   [!include[](includes/6-gitops.md)]

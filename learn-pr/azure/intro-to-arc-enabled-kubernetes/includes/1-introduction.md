@@ -2,7 +2,7 @@ Imagine that you're a systems engineer for Contoso, a medium-size financial serv
 
 Despite its modernized environment, Contoso faces challenges imposed by capacity and agility constraints inherent in on-premises infrastructures. It's also becoming harder to consistently manage and deploy applications to a continually growing number of Kubernetes clusters.
 
-To address these capacity and agility challenges, IT management has decided to migrate many of Contoso's containerized workloads to the cloud. Contoso wants to use multiple cloud providers to avoid single-vendor dependency, but has chosen Azure as its main deployment target. 
+To address these capacity and agility challenges, IT management has decided to migrate many of Contoso's containerized workloads to the cloud. Contoso wants to use multiple cloud providers to avoid single-vendor dependency, but has chosen Azure as its main deployment target.
 
 Your engineering team is tasked with exploring and evaluating Azure Arc capabilities for Kubernetes-based workloads. You must determine how Contoso can benefit from the Azure Arc cloud-to-edge management model and pursue a multivendor strategy while maintaining some on-premises containerized workloads.
 

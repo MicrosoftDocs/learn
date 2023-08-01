@@ -12,6 +12,6 @@ metadata:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Overview of Azure Arc
-durationInMinutes: 9
+durationInMinutes: 4
 content: |
   [!include[](includes/2-arc-overview.md)]

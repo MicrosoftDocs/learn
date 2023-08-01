@@ -12,7 +12,7 @@ metadata:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Knowledge check
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
