@@ -24688,6 +24688,11 @@
       "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction",
       "redirect_document_id": false
-    }
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/describe-security-capabilities-of-azure-sentinel/4-understand-sentinel-costs.md",
+      "redirect_url": "https://learn.microsoft.com/azure/sentinel/billing",
+      "redirect_document_id": false
+    } 
   ]
 }
