@@ -4,12 +4,11 @@ title: Exercise - Provide storage for the IT department testing and training
 metadata:
   title: Exercise - Provide storage for the IT department testing and training
   description: "Exercise - Provide storage for the IT department testing and training"
-  ms.date: 08/01/2023
+  ms.date: 08/02/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure-storage
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-help-desk-storage.md)]

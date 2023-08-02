@@ -4,12 +4,11 @@ title: Exercise - Provide storage for a new company app
 metadata:
   title: Exercise - Provide storage for a new company app
   description: "Exercise - Provide storage for a new company app"
-  ms.date: 08/01/2023
+  ms.date: 08/02/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: azure
-  ms.service: azure-storage
 durationInMinutes: 15
 content: |
   [!include[](includes/6-exercise-app-storage.md)]
