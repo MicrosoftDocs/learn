@@ -32,15 +32,15 @@ products:
 subjects:
   - professional-social-network
 units:
-- learn.contribute-docs-browser.introduction
-- learn.contribute-docs-browser.what-is-docs-contributor
-- learn.contribute-docs-browser.learn-contribution-fundamentals
-- learn.contribute-docs-browser.edit-article-browser
-- learn.contribute-docs-browser.exercise-edit-article
-- learn.contribute-docs-browser.pull-request-overview
-- learn.contribute-docs-browser.exercise-pr-sign-off
-- learn.contribute-docs-browser.knowledge-check
-- learn.contribute-docs-browser.summary
+- learn.contributor.contribute-docs-browser.introduction
+- learn.contributor.contribute-docs-browser.what-is-docs-contributor
+- learn.contributor.contribute-docs-browser.learn-contribution-fundamentals
+- learn.contributor.contribute-docs-browser.edit-article-browser
+- learn.contributor.contribute-docs-browser.exercise-edit-article
+- learn.contributor.contribute-docs-browser.pull-request-overview
+- learn.contributor.contribute-docs-browser.exercise-pr-sign-off
+- learn.contributor.contribute-docs-browser.knowledge-check
+- learn.contributor.contribute-docs-browser.summary
 
 badge:
   uid: |
