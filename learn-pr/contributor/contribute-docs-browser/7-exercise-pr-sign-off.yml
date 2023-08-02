@@ -1,6 +1,6 @@
 ### YamlMime:ModuleUnit
 uid: |
-  learn.contribute-docs-browser.exercise-pr-sign-off
+  learn.contributor.contribute-docs-browser.exercise-pr-sign-off
 title: Exercise - Sign off on your pull request
 metadata:
   title: Exercise - Sign off on your pull request
@@ -12,4 +12,4 @@ metadata:
   ms.service: learn
 durationInMinutes: 2
 content: |
-  [!include[](includes/{{unitName}}.md)]
+  [!include[](includes/7-exercise-pr-sign-off.md)]
