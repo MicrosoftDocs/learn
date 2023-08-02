@@ -69,3 +69,14 @@ quiz:
     - content: "Use retention policies"
       isCorrect: true
       explanation: "Correct. You can use retention policies to define data retention for all documents in a SharePoint site.​​​​​​"
+  - content: "Which application in the Microsoft Purview governance portal is used to capture metadata about enterprise data, to identify and classify sensitive data?"
+    choices:
+    - content: "Data Catalog."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview Data Catalog enables business and technical users to quickly and easily find relevant data."
+    - content: "Data Map."
+      isCorrect: true
+      explanation: "Correct. Microsoft Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data."
+    - content: "Data Estate Insights."
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Purview Data Estate Insights provides a bird’s eye view of what data is actively scanned, where sensitive data is, and how it moves."
