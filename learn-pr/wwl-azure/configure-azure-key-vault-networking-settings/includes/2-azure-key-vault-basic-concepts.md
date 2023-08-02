@@ -32,10 +32,10 @@ Perfect Forward Secrecy (PFS) protects connections between customers’ client s
 
 ## Key Vault roles
 
-Use the following table to better understand how Key Vault can help to meet the needs of developers and security administrators.
+Use the following table to better understand how Key Vault can help to meet the needs of developers and security administrators.<br>
 
-:::image type="content" source="../media/azure-key-vault-roles-1fa07c98.png" alt-text="Screenshot showing Azure Key Vault roles.":::
-
+:::image type="content" source="../media/azure-key-vault-roles-1fa07c98-38723f1c.png" alt-text="Screenshot showing Azure Key Vault roles.":::
+<br>
 
 Anybody with an Azure subscription can create and use key vaults. Although Key Vault benefits developers and security administrators, it can be implemented and managed by an organization's administrator who manages other Azure services. For example, this administrator can sign in with an Azure subscription, create a vault for the organization in which to store keys, and then be responsible for operational tasks like these:
 

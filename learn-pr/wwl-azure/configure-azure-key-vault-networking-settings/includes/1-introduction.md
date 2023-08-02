@@ -9,11 +9,11 @@ Imagine you are a cloud security engineer for a financial institution that store
 
 By the end of this training module, participants will:
 
-1.  Understand the importance of configuring networking settings for Azure Key Vault in ensuring secure access and communication.
-2.  Learn how to configure network access control for Azure Key Vault using virtual network service endpoints and private endpoints.
-3.  Gain insights into configuring firewall rules and virtual network service endpoints to restrict access to Key Vault.
-4.  Understand the process of configuring private endpoints to securely access Key Vault from virtual networks.
-5.  Recognize the benefits of properly configuring networking settings for Azure Key Vault in enhancing overall security.
+ -  Understand the importance of configuring networking settings for Azure Key Vault in ensuring secure access and communication.
+ -  Learn how to configure network access control for Azure Key Vault using virtual network service endpoints and private endpoints.
+ -  Gain insights into configuring firewall rules and virtual network service endpoints to restrict access to Key Vault.
+ -  Understand the process of configuring private endpoints to securely access Key Vault from virtual networks.
+ -  Recognize the benefits of properly configuring networking settings for Azure Key Vault in enhancing overall security.
 
 ## Goals
 

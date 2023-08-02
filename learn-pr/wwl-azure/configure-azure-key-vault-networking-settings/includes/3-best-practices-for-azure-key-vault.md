@@ -22,7 +22,7 @@ Suggestions for controlling access to your vault are as follows:<br>
 
 ## Turn on data protection for your vault
 
-Turn on purge protection to guard against malicious or accidental deletion of the secrets and key vault even after soft-delete is turn on.
+Turn on purge protection to guard against malicious or accidental deletion of the secrets and key vault even after soft-delete is turned on.
 
 ## Turn on logging<br>
 
