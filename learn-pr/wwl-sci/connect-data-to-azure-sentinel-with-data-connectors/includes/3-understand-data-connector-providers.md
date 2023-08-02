@@ -74,7 +74,7 @@ To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must dep
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Microsoft Sentinel agent.
 
-:::image type="content" source="../media/common-event-format-forwarder-diagram-azure.png.png" alt-text="Diagram of Common Event Format architecture using Syslog on a dedicated Azure VM.":::
+:::image type="content" source="../media/common-event-format-forwarder-diagram-azure.png" alt-text="Diagram of Common Event Format architecture using Syslog on a dedicated Azure VM.":::
 
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Microsoft Sentinel agent.
 
