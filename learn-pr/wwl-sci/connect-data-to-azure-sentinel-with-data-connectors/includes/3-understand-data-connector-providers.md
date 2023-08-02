@@ -79,4 +79,3 @@ The following diagram illustrates on-premises systems sending Syslog data to a d
 Alternatively, you can manually deploy the agent on an existing Azure VM, on a VM in another cloud, or an on-premises machine. The following diagram illustrates on-premises systems sending Syslog data to a dedicated on-premises system running the Microsoft Sentinel agent.
 
 :::image type="content" source="../media/common-event-format-forwarder-diagram-on-premises.png" alt-text="Diagram of Common Event Format architecture for sending Linux log data using Syslog on a dedicated on-premises system.":::
-
