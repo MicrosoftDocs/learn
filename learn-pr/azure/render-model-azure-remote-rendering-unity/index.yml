@@ -2,7 +2,7 @@
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
   title: Render a 3D model with Azure Remote Rendering
-  description: Create an Azure Remote Rendering session and Unity project to render a 3D model. You can deploy to HoloLens or use the MRTK to see the power of mixed reality.
+  description: Use Azure Remote Rendering to render a 3D model in a Unity project. You can deploy the model to HoloLens 2 or use the power of mixed reality with the MRTK.
   ms.date: 07/31/2023
   author: aprilspeight
   ms.author: apspeigh
@@ -14,14 +14,14 @@ metadata:
   ms.service: azure-remote-rendering 
 title: Render a 3D model with Azure Remote Rendering
 summary: >
-  Create an Azure Remote Rendering session and Unity project to render a 3D model. You can deploy to HoloLens and use the MRTK to see the power of mixed reality.
+  Use Azure Remote Rendering to render a 3D model in a Unity project. You can deploy the model to HoloLens 2 or use the power of mixed reality with the MRTK.
 abstract: | 
   - Learn about Remote Rendering and managing sessions.
   - Create a Remote Rendering account.
-  - Load a 3D model in Unity.
+  - Load a project and 3D model in Unity.
   - Use Remote Rendering to render the 3D model.
 prerequisites: |
-  - Windows 10 version 1903 or higher, or Windows 11. Windows 32-bit versions aren't supported.
+  - Windows 10 version 1903 or higher, or Windows 11.
   - Windows 10 SDK 10.0.18362.0 or later, or Windows 11 SDK.
   - Unity 2019.4.X or higher installed, with Unity Hub.
   - Visual Studio 2019 or higher with the necessary workloads installed.

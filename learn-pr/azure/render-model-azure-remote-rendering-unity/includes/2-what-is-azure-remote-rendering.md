@@ -8,7 +8,7 @@ Bringing detail to life with 3D visualization helps designers, engineers, doctor
 
 ## Decimation
 
-However, untethered virtual and mixed reality devices have limited computational power for rendering complex models. A traditional approach to viewing 3D content on untethered devices is *decimation*, which compresses the models and removes some polygons. Decimation simplifies the model enough so it can run on slower GPU hardware.
+Untethered virtual and mixed reality devices have limited computational power for rendering complex models. A traditional approach to viewing 3D content on untethered devices is *decimation*, which compresses the models and removes some polygons. Decimation simplifies the model enough so it can run on slower GPU hardware.
 
 The following illustration shows a side-by-side comparison of an engine model at full detail and a decimated model. The reduced model consists of approximately 200,000 triangles, including the detailed inner parts, compared to more than 18 million triangles in the original model.
 

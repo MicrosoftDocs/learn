@@ -12,7 +12,7 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
    cd ARR
    git clone https://github.com/Azure/azure-remote-rendering
    powershell -ExecutionPolicy RemoteSigned -File azure-remote-rendering\Scripts\DownloadUnityPackages.ps1
-  ```
+   ```
 
 1. Open Unity Hub and add the sample project, which is the *ARR/azure-remote-rendering/Unity/Quickstart* folder. Allow Unity to upgrade the project to your installed version if necessary.
 1. Once added, open the project in Unity.
@@ -46,10 +46,12 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
    - **Account Id**: The Remote Rendering **Account ID** that you copied from the Azure portal.
    - **Account Key**: The Remote Rendering **Primary key** that you copied from the Azure portal.
 
-   :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the Remote Rendering script settings.":::
+   > [!IMPORTANT]
+   > Be sure not to expose these saved credentials by checking the project into a repository.
 
-> [!WARNING]
-> Be sure to not check the project with your saved credentials into a repository.
+1. Set the **Max Lease Time** to 0 hours and 10 minutes. The maximum lease time is the duration of the remote rendering session.
+
+   :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the Remote Rendering script settings.":::
 
 ## Start a session and render the model in play mode
 

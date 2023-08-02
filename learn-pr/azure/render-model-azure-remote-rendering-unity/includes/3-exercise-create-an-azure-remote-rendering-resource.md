@@ -1,4 +1,4 @@
-Azure Remote Rendering provides the [session management REST API](/azure/remote-rendering/how-tos/session-rest-api) to manage interactions with the cloud server and query information about Remote Rendering sessions. In C# and C++, you can create, update, and stop sessions through the `RemoteRenderingClient` and `RenderingSession` classes. This unit describes how to manage Remote Rendering sessions.
+Azure Remote Rendering provides the [session management REST API](/azure/remote-rendering/how-tos/session-rest-api?azure-portal=true) to manage interactions with the cloud server and query information about Remote Rendering sessions. In C# and C++, you can create, update, and stop sessions through the `RemoteRenderingClient` and `RenderingSession` classes. This unit describes how to manage Remote Rendering sessions.
 
 ## Create a session
 
@@ -9,7 +9,7 @@ Invoke-WebRequest -Uri "$endPoint/v1/accounts/$accountId/sessions/create" -Metho
 ```
 When you create a new session, you use the `maxLeaseTime` parameter to specify a maximum lease time, typically in the range of one to eight hours. The maximum lease time is the duration during which the host accepts input. You can extend the lease time of an active session if necessary.
 
-The response from the request returns a session ID, which persists for 30 days and can be used to query information about the session after it ends. For more PowerShell scripts that use the Remote Rendering API, see [Example PowerShell scripts](/azure/remote-rendering/samples/powershell-example-scripts?azure-portal=true).
+The response from the request returns a *session UUID*, which allows you to query information about the session. This UUID and some basic information about the session persist for 30 days, so you can query that information even after the session has stopped.
 
 ## Connect to a session
 
@@ -17,7 +17,7 @@ Once a session is ready, a client device can connect to it and can send commands
 
 You can create, observe, and shut down as many sessions as you want from a single application, but only one device can connect to a Remote Rendering session at a time. Attempts to connect to the session by other devices fail. Another device can connect only after the session stops.
 
-Because a Remote Rendering host only serves one client device at a time, the client connected to a session has exclusive control over the rendered content. The single client connection also means that rendering performance never varies for reasons outside your control.
+Because a Remote Rendering host serves only one client device at a time, the client connected to a session has exclusive control over the rendered content. The single client connection also means that rendering performance never varies for reasons outside your control.
 
 ## Stop a session
 

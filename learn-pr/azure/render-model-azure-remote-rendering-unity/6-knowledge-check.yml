@@ -29,7 +29,7 @@ quiz:
         explanation: "Decimation removes polygons, so models render with reduced quality."
       - content: "Decimation compresses a model to remove polygons, so models don't render with full detail."
         isCorrect: true
-        explanation: "Decimation reduces the quality of a model, so the model doesn't render with full detail."
+        explanation: "Decimation reduces the quality of a model, because the model doesn't render with full detail."
   - content: "How long does a session ID persist?"
     choices:
       - content: "The session ID persists for 24 hours."
@@ -37,7 +37,7 @@ quiz:
         explanation: "The session ID persists for longer than 24 hours."
       - content: "The session ID persists for 30 days."
         isCorrect: true
-        explanation: "The session ID persists for 30 days, so you can query information about the scene."
+        explanation: "The session ID persists for 30 days, so you can query information about a past session."
       - content: "The session ID persists for 12 months."
         isCorrect: false
         explanation: "The session ID expires in less than 12 months."
