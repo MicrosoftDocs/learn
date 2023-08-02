@@ -19,13 +19,13 @@ Learning Path 2 Tips and Tricks
 - Identify and explain different Azure Machine Learning assets (storage, compute, key vault, container)
 - Discuss the citizen data scientist tools of AutoML and designer 
 - Show Jupyter notebooks
-- Invite learners to share what they prefer to use or plan to use for Machine Learning Projects (CLI, Python SDK, and ARM Templates)
+- Invite learners to share what they prefer to use or plan to use for Machine Learning Projects (CLI, Python SDK, and Azure Resource Manager Templates)
  
 Learning Path 2 Demos (optional)
 
 - Demo the Azure Machine Learning workspace in Azure Portal
 - Briefly show the AutoML and/or designer pipeline
-- Demo one of these for Azure Machine Learning: CLI / SDK / ARM Templates
+- Demo one of these for Azure Machine Learning: CLI / SDK / Azure Resource Manager Templates
 
 Learning Path 2 Labs
  
