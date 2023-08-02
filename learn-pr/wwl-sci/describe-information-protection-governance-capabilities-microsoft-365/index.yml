@@ -37,6 +37,7 @@ units:
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-data-loss-prevention
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-retention-polices-retention-labels
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-records-management
+- learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.describe-purview-governance
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.knowledge-check
 - learn.wwl.describe-information-protection-governance-capabilities-microsoft-365.summary-resources
 badge:
