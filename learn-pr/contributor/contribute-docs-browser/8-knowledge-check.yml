@@ -9,8 +9,7 @@ metadata:
   author: sgaspari815
   ms.author: v-sgaspari
   ms.topic: interactive-tutorial
-  ms.prod: TODO
-  ms.service: TODO
+  ms.service: learn
 durationInMinutes: 3
 content: |
 quiz:
