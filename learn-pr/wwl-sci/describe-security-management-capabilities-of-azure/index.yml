@@ -8,12 +8,12 @@ metadata:
   ms.author: ceperezb
   ms.topic: interactive-tutorial
 title: Describe security management capabilities of Azure
-summary: Learn about cloud security posture management and how Microsoft Defender for Cloud protects your cloud through secure score, recommendations, and enhanced features that provide cloud workload protection. You’ll also learn about security baselines in Azure.
+summary: Learn about Microsoft Defender for Cloud and the capabilities it brings together to protect your cloud through secure score, recommendations, and enhanced features that provide cloud workload protection. 
 abstract: |
   After completing this module, you'll be able to:
-  - Describe cloud security posture management.
-  - Describe the capabilities of Microsoft Defender for Cloud
-  - Understand the Microsoft cloud security benchmark and the security baselines in Azure.
+  - Describe Microsoft Defender for Cloud.
+  - Describe how security policies and initiatives improve cloud security posture.
+  - Describe how the three pillars of Microsoft Defender for Cloud protect against cyber threats and vulnerabilities.
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -30,10 +30,11 @@ subjects:
 - security
 units:
 - learn.wwl.describe-security-management-capabilities-of-azure.introduction
-- learn.wwl.describe-security-management-capabilities-of-azure.describe-cloud-security-posture-management-cspm
 - learn.wwl.describe-security-management-capabilities-of-azure.describe-&amp;-explore-azure-security-center
-- learn.wwl.describe-security-management-capabilities-of-azure.describe-benefit-use-cases-defender
 - learn.wwl.describe-security-management-capabilities-of-azure.baselines-for-azure
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-cloud-security-posture-management-cspm
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-benefit-use-cases-defender
+- learn.wwl.describe-security-management-capabilities-of-azure.describe-dev-ops-security-management
 - learn.wwl.describe-security-management-capabilities-of-azure.knowledge-check
 - learn.wwl.describe-security-management-capabilities-of-azure.summary-resources
 badge:
