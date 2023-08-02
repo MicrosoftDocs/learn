@@ -1,6 +1,7 @@
 
 
 
+
 Storage queues and Service Bus queues have a slightly different feature set. You can choose either one or both, depending on the needs of your particular solution.
 
 When determining which queuing technology fits the purpose of a given solution, solution architects and developers should consider these recommendations.

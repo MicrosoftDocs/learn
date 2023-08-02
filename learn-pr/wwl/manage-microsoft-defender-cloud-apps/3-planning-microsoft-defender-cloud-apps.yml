@@ -4,11 +4,10 @@ title: Planning Microsoft Defender for Cloud Apps
 metadata:
   title: Planning Microsoft Defender for Cloud Apps
   description: "Planning Microsoft Defender for Cloud Apps"
-  ms.date: 05/10/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/3-planning-microsoft-defender-cloud-apps.md)]

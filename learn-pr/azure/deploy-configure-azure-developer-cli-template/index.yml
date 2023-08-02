@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.azure.deploy-configure-azure-developer-cli-templates
+metadata:
+  moduleType: introduction
+  title: Deploy and configure Azure Developer CLI templates
+  description: Learn how to deploy and configure Azure Developer CLI templates
+  ms.date: 11/01/2022
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.custom: engagement-fy23
+title: Deploy and configure Azure Developer CLI templates
+summary: "Learn how to deploy, configure and perform common tasks with Azure Developer CLI templates."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Choose and deploy an Azure Developer CLI template for your project scenario
+    - Perform common tasks with Azure Developer CLI templates, such as monitoring, updating a template and configuring a pipeline
+prerequisites: |
+  - Basic conceptual knowledge of the Azure Developer CLI
+  - Basic familiarity with cloud environments
+  - An Azure subscription
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - developer
+  - devops-engineer
+  - solution-architect
+products:
+  - azure-clis
+subjects:
+- development-tools
+units:
+- learn.azure.deploy-configure-azure-developer-cli-templates.introduction
+- learn.azure.deploy-configure-azure-developer-cli-templates.install-azure-developer-cli
+- learn.azure.deploy-configure-azure-developer-cli-templates.deploy-first-template
+- learn.azure.deploy-configure-azure-developer-cli-templates.update-template
+- learn.azure.deploy-configure-azure-developer-cli-templates.configure-pipeline
+- learn.azure.deploy-configure-azure-developer-cli-templates.clean-up-resources
+- learn.azure.deploy-configure-azure-developer-cli-templates.knowledge-check
+- learn.azure.deploy-configure-azure-developer-cli-templates.summary
+badge:
+  uid: learn.azure.deploy-configure-azure-developer-cli-templates.badge

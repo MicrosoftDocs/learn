@@ -16,7 +16,7 @@ Before we start, let's check in with Mara and Andy.
 
 ## Create a branch and add starter code
 
-Although you could use the build pipeline you built in the previous module, let's create a new branch named `code-workflow`. This branch is based on `main`, so you can practice the process from the beginning. If you completed the previous module, your branch includes a basic but complete build configuration in your *azure-pipelines.yml* file. If you haven't completed the previous module, you'll create the file. 
+Although you could use the build pipeline you built in the previous module, let's create a new branch named `code-workflow`. This branch is based on `main`, so you can practice the process from the beginning. 
 
 1. In Visual Studio Code, open the integrated terminal.
 1. Switch to the `main` branch.
@@ -47,10 +47,7 @@ Although you could use the build pipeline you built in the previous module, let'
 
     [!code-yml[](code/4-azure-pipelines.yml)]
 
-    This configuration resembles the basic one you created previously. For brevity, it builds only your project's Release configuration.
-
-    > [!NOTE]
-    > You have this file if you did the previous module. If you didn't do the  previous module, create the file in the root of your repository.
+    This configuration resembles the basic one you created in the previous module. For brevity, it builds only your project's Release configuration.
 
 ## Push your branch to GitHub
 

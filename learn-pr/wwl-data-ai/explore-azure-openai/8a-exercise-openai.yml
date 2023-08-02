@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-azure-openai.exercise-openai
+title: Exercise - Explore Azure OpenAI Service
+metadata:
+  title: Exercise - Explore Azure OpenAI Service
+  description: "Hands-on exercise with Azure OpenAI Service."
+  ms.date: 7/26/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+durationInMinutes: 25
+content: |
+  [!include[](includes/8a-exercise-openai.md)]

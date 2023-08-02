@@ -4,13 +4,11 @@ title: Manage Azure AD objects with PowerShell
 metadata:
   title: Manage Azure AD objects with PowerShell
   description: "Manage Azure AD objects with PowerShell"
-  ms.date: 05/12/2023
+  ms.date: 07/25/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.custom:
-    - devx-track-azurepowershell
-  ms.prod: learning-azure
+  ms.custom: devx-track-azurepowershell
 durationInMinutes: 2
 content: |
   [!include[](includes/5-manage-azure-active-directory-objects-powershell.md)]

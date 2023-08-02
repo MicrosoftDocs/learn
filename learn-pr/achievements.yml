@@ -1907,6 +1907,116 @@ achievements:
   title: Identify governing practices for responsible AI
   summary: As AI becomes more prevalent, it’s imperative that organizations have governing practices in place to ensure that it’s used responsibly. Responsible use of AI starts with organizations establishing their own guiding principles, then choosing and operationalizing a system of governance. We recognize that every organization will have their own perspective on responsible AI, but we’re hopeful that our perspective will serve as a helpful starting point as others embark on their own AI journey.
   iconUrl: /training/achievements/responsible-ai-governing-practices.svg
+- uid: learn.ai-business-school-education.trophy
+  type: trophy
+  title: AI business school for education
+  summary: Decision-makers in education have considerations that are particular to their sector to help them realize the true transformational impact of AI in education. It is critical to understand the components of a strategy that will help the education sector create value with AI. This learning path is designed for education decision-makers to illustrate the true transformational impact of AI in education.
+  iconUrl: /training/achievements/ai-business-school-education.svg
+- uid: learn.ai-business-school-financial-services.trophy
+  type: trophy
+  title: AI business school for financial services
+  summary: Decision-makers in financial services have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. It is critical to understand the components of a strategy that will help the financial services sector create business value with AI.
+  iconUrl: /training/achievements/ai-business-school-financial-services.svg
+- uid: learn.ai-business-school-government.trophy
+  type: trophy
+  title: AI business school for government
+  summary: In government, decision-makers must take into account specific public sector considerations before they can realize the true transformational power of AI. It's critical to understand the components of a strategy that will help the public sector create value with AI. This learning path is designed for government decision-makers to illustrate the true transformational impact of AI in the public sector.
+  iconUrl: /training/achievements/ai-business-school-government.svg
+- uid: learn.ai-business-school-healthcare.trophy
+  type: trophy
+  title: AI business school for healthcare
+  summary: Decision-makers in healthcare have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise. This learning path is designed for healthcare industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-healthcare.svg
+- uid: learn.ai-business-school-manufacturing.trophy
+  type: trophy
+  title: AI business school for manufacturing
+  summary: In manufacturing, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. This learning path is designed for manufacturing industry decision-makers to illustrate the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-manufacturing.svg
+- uid: learn.ai-business-school-retail.trophy
+  type: trophy
+  title: AI business school for retail
+  summary: Retail industry decision-makers have considerations that are particular to their industry to help them realize the true transformational impact of AI in the enterprise.
+  iconUrl: /training/achievements/ai-business-school-retail.svg
+- uid: learn.ai-strategy-for-business-value.trophy
+  type: trophy
+  title: Define an AI strategy to create business value across industries
+  summary: In this learning path, you will hear from Peter Zemsky, INSEAD's Eli Lilly Chaired Professor of Strategy and Innovation, about how AI is driving business value across industries and companies as well as Microsoft customers and partners. You will be able to discuss how technical teams are bringing AI into business applications and how business leaders of different industries are thinking about AI for their own businesses.
+  iconUrl: /training/achievements/ai-strategy-for-business-value.svg
+- uid: learn.become-innovative-organization.trophy
+  type: trophy
+  title: Become an innovative organization
+  summary: In this learning path, you'll discover why innovation is critical to achieving a competitive advantage. You’ll be able to use the frameworks and guidance provided to help organize your business for adaptability, establish an innovative mindset, and coinnovate with external partners. Achieving these three milestones will help foster the knowledge, skills, and cultural mindset needed to infuse innovation into the core of your business. You’ll learn how the speed at which an organization can influence technology and its people to experiment, reinvent, and grow is what will set them apart in a competitive landscape.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn.responsible-ai-business-principles-government.trophy
+  type: trophy
+  title: Identify guiding principles for responsible AI in government
+  summary: It is imperative to reflect on the implications of AI in government. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your government organization. You will also be provided with resources, best practices, and tools.
+  iconUrl: /training/achievements/responsible-ai-business-principles.svg
+- uid: learn.responsible-ai-business-principles.trophy
+  type: trophy
+  title: Identify principles and practices for responsible AI
+  summary: It is imperative to reflect on the implications of AI in business. In this learning path, you will be provided with guidelines to assist in setting up principles and a governance model in your organization. You will also be provided with resources, best practices, and tools.
+  iconUrl: /training/achievements/responsible-ai-business-principles.svg
+- uid: learn.scale-ai-organizations.trophy
+  type: trophy
+  title: Scale AI in your organization
+  summary: In this learning path, you’ll get a high-level overview of how to manage an AI organization, team, department, or center of excellence. You’ll learn about fueling innovation at all levels, evaluating and prioritizing AI investments, establishing technical processes for AI, and distributing AI-related responsibilities across the organization.
+  iconUrl: /training/achievements/scale-ai-organizations.svg
+- uid: learn.wwl.configure-azure-firewall.badge
+  type: badge
+  title: Configure Azure Firewall
+  summary: Learn how to configure Azure Firewall including firewall rules.
+  iconUrl: /training/achievements/azure-firewall-configure.svg
+- uid: learn.wwl.configure-expressroute-virtual-wan.badge
+  type: badge
+  title: Configure Azure ExpressRoute and Azure Virtual WAN
+  summary: Learn how to configure Azure ExpressRoute and Virtual WAN to provide connection services.
+  iconUrl: /training/achievements/express-route-virtual-wan-configure.svg
+- uid: learn.wwl.configure-vpn-gateway.badge
+  type: badge
+  title: Configure Azure VPN Gateway
+  summary: Learn how to create VPN gateways and securely connect your company sites to Azure.
+  iconUrl: /training/achievements/vpn-gateway-configure.svg
+- uid: learn.ai-technology-for-business-leaders.trophy
+  type: trophy
+  title: Introduction to AI technology for business leaders
+  summary: In this learning path, you will be provided with a high-level overview of the primary concepts of AI. You will be able to describe what AI happens to be and the technologies that underpin it. You will be able to share  how Microsoft is turning the latest advancements in AI into tools, products, and services that can be leveraged by organizations.
+  iconUrl: /training/achievements/ai-technology-for-business-leaders.svg
+- uid: learn.foster-an-ai-ready-culture-in-business.trophy
+  type: trophy
+  title: Discover ways to foster an AI-ready culture in your business
+  summary: In this learning path, you will hear from top Microsoft executives about a framework to drive the key changes that are necessary to become an AI -ready organization. You will be able to identify the successful implementations of AI and articulate relevant scenarios. You will be able to discuss a line of business specific and relevant uses cases in finance, marketing, sales, and customer service. And finally, you will be able to identify  AI solutions to implement in your organization based upon its maturity.
+  iconUrl: /training/achievements/foster-ai-ready-culture.svg
+- uid: learn-wwl.ai-strategy-in-retail.badge
+  type: badge
+  title: Define an AI strategy to create business value in retail
+  summary: In retail, decision-makers must take into account specific industry considerations before they can realize the true transformational power of AI in the enterprise. To create real business value, a comprehensive understanding of all the strategic components is required.
+  iconUrl: /training/achievements/ai-strategy-in-retail.svg
+- uid: learn-wwl.foster-ai-culture-finance.badge
+  type: badge
+  title: Discover how to foster an AI-ready culture in finance
+  summary: This module is designed for finance and affiliated business decision-makers to illustrate the impact of making strategic decisions with AI. The goal is to enable you to think about AI transformation holistically, with a focus on the cultural changes necessary to make AI transformation successful.
+  iconUrl: /training/achievements/foster-ai-ready-culture-finance.svg
+- uid: learn-wwl.microsoft-approach-to-ai.badge
+  type: badge
+  title: Examine the Microsoft approach to artificial intelligence
+  summary: This module is a starting point for business decision makers who want to understand how Microsoft is creating products, services, and solutions to help organizations leverage Artificial Intelligence (AI). We’ll also help you understand how these technologies relate to business problems.
+  iconUrl: /training/achievements/microsoft-approach-to-ai.svg
+- uid: learn-wwl.organize-for-adaptability.badge
+  type: badge
+  title: Organize for adaptability
+  summary: Staying ahead of the competition comes down to finding new ways of thinking, communicating, and working when the old ways no longer cut it. It’s about being adaptable and displaying the leadership necessary to guide people through disruption. But what does that mean in practice? And what roles do innovation and technology play in getting there? In this module, we’ll examine how to evaluate and redefine the relationships between your organization’s people, practices, and outcomes. Only by transforming these structural systems can technology help build the capacity needed to adapt and remain competitive.
+  iconUrl: /training/achievements/generic-badge.svg
+- uid: learn-wwl.responsible-ai-guiding-principles.badge
+  type: badge
+  title: Identify guiding principles for responsible AI
+  summary: At Microsoft, we’ve recognized six principles that we believe should guide AI development and use — fairness, reliability and safety, privacy and security, inclusiveness, transparency, and accountability. For us, these principles are the cornerstone of a responsible and trustworthy approach to AI, especially as intelligent technology becomes more prevalent in the products and services we use every day. We recognize that every individual, company, and region will have their own beliefs and standards that should be reflected in their AI journey. We want to share our perspective as you consider developing your own guiding principles.
+  iconUrl: /training/achievements/responsible-ai-principles.svg
+- uid: learn-wwl.start-ml-lifecycle-mlops.badge
+  type: badge
+  title: Start the machine learning lifecycle with MLOps
+  summary: In this module, we discuss best practices for creating and managing machine learning (ML) models using MLOps processes. MLOps is the practice of collaboration between data scientists, ML engineers, software developers, and other IT teams to manage the end-to-end ML lifecycle.
+  iconUrl: /training/achievements/start-ml-lifecycle-mlops.svg
 - uid: learn.wwl.intro-to-iot-central.badge
   type: badge
   title: Intro to IoT Central

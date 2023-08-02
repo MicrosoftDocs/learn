@@ -1,4 +1,5 @@
 
+
 Azure Cosmos DB is a globally distributed database system that allows you to read and write data from the local replicas of your database and it transparently replicates the data to all the regions associated with your Cosmos account.
 
 After completing this module, you'll be able to:

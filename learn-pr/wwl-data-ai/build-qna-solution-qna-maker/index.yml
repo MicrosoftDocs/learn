@@ -3,11 +3,11 @@ uid: learn.wwl.build-qna-solution-qna-maker
 metadata:
   title: Build a question answering solution
   description: "Build a question answering solution"
-  ms.date: 01/05/2022
+  ms.date: 07/19/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services 
+  ms.service: cognitive-services
   ms.subservice: qna-maker
 title: Build a question answering solution
 summary: The question answering capability of the Language service makes it easy to build applications in which users ask questions using natural language and receive appropriate answers.

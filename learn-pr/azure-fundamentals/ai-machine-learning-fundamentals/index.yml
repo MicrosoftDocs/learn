@@ -3,6 +3,7 @@ uid: learn.azure.ai-machine-learning-fundamentals
 metadata:
   title: Choose the best AI service for your needs
   description: "Examine Azure's AI services, and choose the right one for your company. Prepare for AZ-900."
+  ms.service: cognitive-services
   ms.date: 02/14/2023
   author: wwlpublish
   ms.author: robbarefoot

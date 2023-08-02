@@ -3,12 +3,10 @@ uid: learn.wwl.build-language-understanding-model
 metadata:
   title: Build a Language Understanding model
   description: "The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language."
-  ms.date: 10/12/2022
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: language-understanding 
 title: Build a Language Understanding model
 summary: The Language Understanding service enables you to train a language model that apps can use to extract meaning from natural language.
 abstract: |

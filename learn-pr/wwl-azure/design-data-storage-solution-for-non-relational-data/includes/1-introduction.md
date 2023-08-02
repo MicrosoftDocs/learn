@@ -1,4 +1,5 @@
 
+
 Data storage describes how different data is stored and managed in your organization. The type of data storage that you implement is based on the structure of your data and how your data is accessed.
 
 Data can be highly organized like machine configurations and customer invoices. Other data is less structured, such as fax images and engineering white papers. Some data is accessed by only specific users like system administrators or file owners. And other data is accessed by all users, including internal employees and external partners.

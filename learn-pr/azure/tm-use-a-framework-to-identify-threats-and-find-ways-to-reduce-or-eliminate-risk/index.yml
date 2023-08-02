@@ -3,14 +3,14 @@ uid: learn.tm-use-a-framework-to-identify-threats-and-find-ways-to-reduce-or-eli
 metadata:
   title: Use a framework to identify threats and find ways to reduce or eliminate risk
   description: Threat modeling helps you generate a list of potential threats using STRIDE and find ways to reduce or eliminate risk with corresponding security controls.
-  ms.date: 11/18/2022
+  ms.date: 07/17/2023
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
 title: Use a framework to identify threats and find ways to reduce or eliminate risk
 summary: Threat modeling helps you generate a list of potential threats using the threat modeling framework and find ways to reduce or eliminate risk with corresponding security controls.
 abstract: |
-  In this module, you will be able to:
+  By the end of this module, you're able to:
   - Discuss each threat category in the threat modeling framework
   - Learn about the security controls to help reduce or eliminate risk
 prerequisites: None

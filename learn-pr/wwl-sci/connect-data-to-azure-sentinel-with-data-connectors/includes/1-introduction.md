@@ -6,6 +6,7 @@ You plan on using the Microsoft Sentinel data connectors to integrate the log da
 
 After completing this module, you'll be able to:
 
+- Describe how to install Content Hub Solutions to provision Microsoft Sentinel Data connectors
 - Explain the use of data connectors in Microsoft Sentinel
 - Describe the Microsoft Sentinel data connector providers
 - Explain the Common Event Format and Syslog connector differences in Microsoft Sentinel
