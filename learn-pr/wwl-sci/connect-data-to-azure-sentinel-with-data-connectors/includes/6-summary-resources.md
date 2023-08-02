@@ -11,7 +11,7 @@ You should now be able to:
 
 You can learn more by reviewing the following.
 
-[Deploy and manage Microsoft Sentinel out-of-the-box content](https://learn.microsoft.com/azure/sentinel/sentinel-solutions-deploy)
+[Deploy and manage Microsoft Sentinel out-of-the-box content](/azure/sentinel/sentinel-solutions-deploy)
 
 [Become a Microsoft Sentinel Ninja](https://techcommunity.microsoft.com/t5/azure-sentinel/become-an-azure-sentinel-ninja-the-complete-level-400-training/ba-p/1246310?azure-portal=true)
 

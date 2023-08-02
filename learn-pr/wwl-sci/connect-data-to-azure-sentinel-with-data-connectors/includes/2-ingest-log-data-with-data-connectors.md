@@ -1,10 +1,10 @@
 To collect log data, you need to connect your data sources with Microsoft Sentinel Data Connectors. The Data Connectors are included with Content Hub Solutions provided by Microsoft Sentinel.
 
-:::image type="content" source="../media/02-azure-activity-content-hub-solution.png#lightbox" alt-text="Screen shot of Microsoft Sentinel Content Hub page."(../media/02-azure-activity-content-hub-solution.png) ":::
+:::image type="content" source="../media/02-azure-activity-content-hub-solution.png" alt-text="Screen shot of Microsoft Sentinel Content Hub page.":::
 
 After you install a Content Hub Solution, installed Data Connectors are displayed in Microsoft Sentinel under the `Configuration | Data connectors` menu section. When you select the Open connector page, the detailed connector page is split and has a left half and a right half.
 
-:::image type="content" source="../media/02-azure-activity-data-connector-page.png#lightbox" alt-text="Screen shot of Microsoft Sentinel Detailed Connector Page."(../media/02-azure-activity-data-connector-page.png) ":::
+:::image type="content" source="../media/02-azure-activity-data-connector-page.png" alt-text="Screen shot of Microsoft Sentinel Detailed Connector Page.":::
 
 The left half provides information about the connector, the connector's status, and the last time a log was received if connected.  On the bottom section of the left side is the Data Types. The `Data Types` lists the table(s) that the connector writes to.
 
