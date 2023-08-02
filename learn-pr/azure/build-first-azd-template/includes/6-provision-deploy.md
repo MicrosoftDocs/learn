@@ -17,7 +17,7 @@ Your `azd` template is complete and ready for provisioning and deployment. When 
 
 1. When prompted, select the subscription and location you would like to deploy to.
 
-The `azd up` command may a few minutes to run. Updates are printed in the console as the process runs. When the command completes, a link to the deployed site will be displayed. You should also see a link to the deployment set in Azure, which you can visit to view additional information.
+The `azd up` command may take a few minutes to run. Updates are printed in the console as the process runs. When the command completes, a link to the deployed site will be displayed. You should also see a link to the deployment set in Azure, which you can visit to view additional information.
 
 The deployed application should look similar to the following screenshot:
 

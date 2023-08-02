@@ -19,10 +19,10 @@ quiz:
     choices:
     - content: "azd template"
       isCorrect: false
-      explanation: "Incorrect. The `azd template` command does not exist."
+      explanation: "Incorrect. The `azd template` command doesn't exist."
     - content: "azd new"
       isCorrect: false
-      explanation: "Incorrect. The `azd new` command does not exist."
+      explanation: "Incorrect. The `azd new` command doesn't exist."
     - content: "azd up"
       isCorrect: false
       explanation: "Incorrect. The `azd up` command is used to provision and deploy templates."
@@ -48,13 +48,13 @@ quiz:
     - content: "Defines the CI/CD pipeline for your `azd` template."
       isCorrect: false
       explanation: "Incorrect. The CI/CD pipeline is defined in the `azure-dev.yaml` file."
-    - content: "Defines and describes the hosted services that are included in your app and the Azure services they are deployed to."
+    - content: "Defines and describes the hosted services that are included in your app and the Azure services they're deployed to."
       isCorrect: true
       explanation: "Correct. The `azure.yaml` file describes the hosted services in your code, such as the language and corresponding Azure resources."
     - content: "Defines a Dev Container environment for the project."
       isCorrect: false
       explanation: "Incorrect. The `.devcontainer.json` file is used to set up dev containers for `azd` templates."
-    - content: "Defines the infrastructure as code templates that will create resources in Azure."
+    - content: "Defines the infrastructure as code templates that create resources in Azure."
       isCorrect: false
       explanation: "Incorrect. Infrastructure as code templates are defined in the template's Bicep files."
   - content: "Which is the purpose of the `infra` folder in an `azd` template?"
