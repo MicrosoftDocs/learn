@@ -31,7 +31,7 @@ Microsoft Defender for Cloud continuously assesses an organization's hybrid clou
 
 Some of the controls used in the MCSB include network security, identity and access control, data protection, data recovery, incident response, and more.  
 
-:::image type="content" source="../media/defender-cloud-compliance-inline.png" lightbox="../media/defender-cloud-compliance-expanded.png" alt-text="Screenshot of Microsoft Defender for Cloud regulatory compliance against Microsoft cloud security benchmark v1.":::
+:::image type="content" source="../media/defender-cloud-compliance-inline.png" lightbox="../media/defender-cloud-compliance-expanded.png" alt-text="Screenshot of Microsoft Defender for Cloud showing status of regulatory compliance against Microsoft cloud security benchmark.":::
 
 #### What is a security recommendation?
 
