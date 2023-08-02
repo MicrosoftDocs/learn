@@ -38,7 +38,7 @@ The configuration files are stored as plain text files with a *.tf* extension. T
 
 ### Modules
 
-Yu can group Terraform resources into a module, which creates a larger unit of configuration. These modules are sets of configuration files that are stored in a single directory. A simple configuration consists of a single directory with one or more *.tf* files.
+You can group Terraform resources into a module, which creates a larger unit of configuration. These modules are sets of configuration files that are stored in a single directory. A simple configuration consists of a single directory with one or more *.tf* files.
 
 Modules offer many benefits. For example, modules:
 
