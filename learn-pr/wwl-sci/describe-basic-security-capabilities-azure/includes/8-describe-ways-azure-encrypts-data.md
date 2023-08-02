@@ -1,5 +1,7 @@
 
-Azure Key Vault is one of several key management solutions in Azure, and helps solve the following problems:
+Azure Key Vault is a cloud service for securely storing and accessing secrets. A secret is anything that you want to tightly control access to, such as API keys, passwords, certificates, or cryptographic keys.
+
+Azure Key Vault helps solve the following problems:
 
 - **Secrets management**. You can use Key Vault to store securely and tightly control access to tokens, passwords, certificates, Application Programming Interface (API) keys, and other secrets.
 - **Key management**. You can use Key Vault as a key management solution. Key Vault makes it easier to create and control the encryption keys used to encrypt your data.
@@ -30,5 +32,7 @@ Authentication is done via Microsoft Entra. Authorization may be done via Azure 
 - Replicating the contents of your Key Vault within a region and to a secondary region. Data replication ensures high availability and takes away the need of any action from the administrator to trigger the failover.
 - Providing standard Azure administration options via the portal, Azure CLI and PowerShell.
 - Automating certain tasks on certificates that you purchase from Public Certificate Authorities (CAs), such as enrollment and renewal.
+
+:::image type="content" source="../media/azure-key-vault-inline.png" lightbox="../media/azure-key-vault-expanded.png" alt-text="Diagram showing a representation of Azure Key Vault, an Azure developer receiving a key vault object identifier as a URI, and a security admin that obtains usage logging for keys.":::
 
 In addition, Azure Key Vaults allow you to segregate application secrets. Applications may access only the vault that they're allowed to access, and they can be limited to only perform specific operations. You can create an Azure Key Vault per application and restrict the secrets stored in a Key Vault to a specific application and team of developers.

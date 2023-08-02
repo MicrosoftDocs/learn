@@ -1,14 +1,14 @@
 
 The traditional network security perimeter protects your organization's assets, resources, where data is essential. Azure offers a wide range of configurable security tools that are customized to give the security and control to meet your organization's needs.
 
-You’ve explored the different service offerings provided by Microsoft Azure, including DDoS protection, Azure Firewall, network security groups, Bastion, and others to protect access to your systems. You now understand the reasons to use Azure Key Vault.
+You’ve explored the different service offerings provided by Azure, including DDoS protection, Azure Firewall, network security groups, and Azure Bastion to protect access to your systems. You now understand the reasons to use Azure Key Vault.
 
 Without these security tools, your organization would be vulnerable to data theft, unable to respond swiftly to malicious attacks on your web and data services, and wouldn't meet your security obligations.
 
 Now that you've completed this module, you should be able to:
 
 - Describe Azure security capabilities for protecting your network.
-- Describe how Azure can protect your VMs.
+- Describe Azure Bastion.
 - Describe Azure Key Vault.  
 
 ### Learn more

@@ -8,5 +8,5 @@ In this module, you explore many different services and features of Azure that c
 After completing this module, you should be able to:
 
 - Describe Azure security capabilities for protecting your network.
-- Describe how Azure can protect your VMs.
+- Describe Azure Bastion.
 - Describe Azure Key Vault.
