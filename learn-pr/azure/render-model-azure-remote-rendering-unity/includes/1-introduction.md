@@ -2,7 +2,7 @@ Your role as a mixed reality engineer for a truck manufacturer is to create solu
 
 However, viewing the model on a computer screen doesn't allow a full-scale detailed 3D view of the engine and its internal mechanics. Being able to use mixed reality and virtual reality devices like HoloLens 2 would help complete a design review of the engine.
 
-In this module, you learn how to use Azure Remote Rendering to render the 3D model. create a remote rendering session, load a 3D model into the session, and render the model. You create an Remote Rendering account and session, load the 3D engine model in Unity, and connect your local Unity runtime to the remote session. You can then view and interact with the model untethered at full scale and detail.
+In this module, you learn how to use Azure Remote Rendering to render a full-scale, detailed 3D model. You create a Remote Rendering account, load the 3D engine model in Unity, and connect your local Unity runtime to a Remote Rendering session. You can then view and interact with the model untethered at full scale and detail.
 
 ## Learning objectives
 

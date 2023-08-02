@@ -2,7 +2,7 @@ The automotive engineering team needed a solution for rendering a 3D model of a 
 
 [!include[](../../../includes/azure-sandbox-cleanup.md)]
 
-## Further Reading
+## More resources
 
 - Join the [Mixed Reality Partner Program](https://www.microsoft.com/hololens/mrpp) for up-to-date information, networking, and support.
 - See [Remote Rendering pricing](https://azure.microsoft.com/pricing/details/remote-rendering/).

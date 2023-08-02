@@ -22,12 +22,12 @@ It takes a few seconds for the Remote Rendering account to be created. A notific
 
 1. When you see the notification that deployment is complete, select **Go to resource**.
 
-1. The Remote Rendering **Overview** page shows the **Account Domain** and **Account ID**. Copy these values to use later in the module.
+1. The Remote Rendering **Overview** page shows the **Account Domain** and **Account ID**. Copy these values to use later in this module.
 
    :::image type="content" source="../media/account-id.png" alt-text="A screenshot of the Remote Rendering overview page with the Account Domain and Account ID highlighted." lightbox="../media/account-id.png":::
 
 1. In the left navigation, select **Access Keys** under **Settings**.
 
-1. On the **Access Keys** page, copy the **Primary key** value to use later in this module.
+1. On the **Access Keys** page, copy the **Primary key** value to use later in the module.
 
    :::image type="content" source="../media/access-keys.png" alt-text="A screenshot of the Access Keys selection and page, highlighting the Copy icon next to the Primary key." lightbox="../media/access-keys.png":::

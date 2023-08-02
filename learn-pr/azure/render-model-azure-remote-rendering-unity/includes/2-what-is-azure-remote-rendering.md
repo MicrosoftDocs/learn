@@ -4,7 +4,7 @@ Three-dimensional visualization is important in scenarios where every detail mat
 - Design review for complex assemblies like truck engines.
 - Preoperative surgery planning.
 
-Bringing detail to life with 3D visualization helps designers, engineers, doctors, and students better understand complex information and make the right calls.
+Bringing detail to life with 3D visualization can help designers, engineers, doctors, and students better understand complex information and make the right calls.
 
 ## Decimation
 
@@ -22,7 +22,7 @@ Remote Rendering can render hundreds of millions of polygons and stream to mixed
 
 ## Remote Rendering sessions
 
-To use Remote Rendering, you create a *session*, or allocate a server in Azure to render the model. During session creation, you chose which kind of server you want to run on, which determines pricing. When a client device connects, the server renders the requested data and serves the result as a video stream.
+To use Remote Rendering, you create a *session*, which allocates a server in Azure to render the model. During session creation, you chose which kind of server you want to run on, which determines pricing. When a client device connects, the server renders the requested data and serves the result as a video stream.
 
 The session shuts down automatically when its lease time expires, or you can stop it manually if you don't need it anymore. Once a session is stopped, you aren't billed further. To learn more about pricing, see [Remote Rendering pricing](https://azure.microsoft.com/pricing/details/remote-rendering?azure-portal=true).
 

@@ -2,9 +2,6 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
 
 ## Clone and open the sample project
 
-> [!NOTE]
-> If you're unfamiliar with the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](/training/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) Learn module for an overview.
-
 1. At a Windows command prompt, run the following commands to clone the GitHub sample repository and set up the necessary subdirectories and packages for the Unity project.
 
    ```cmd
@@ -17,34 +14,37 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
 1. Open Unity Hub and add the sample project, which is the *ARR/azure-remote-rendering/Unity/Quickstart* folder. Allow Unity to upgrade the project to your installed version if necessary.
 1. Once added, open the project in Unity.
 
+> [!NOTE]
+> For an overview of the process of configuring a Unity project for Windows Mixed Reality development, see the [Set up a Mixed Reality project in Unity with the Mixed Reality Toolkit](/training/modules/mixed-reality-toolkit-project-unity/?azure-portal=true) training module.
+
 ## Configure the Unity settings
 
 1. Go to **File** > **Build Settings** and switch **Build Platform** to **Universal Windows Platform**.
 
 1. Select **Player Settings** at the bottom of the **Build Settings** window.
 
-1. On the **Player** screen, under **XR Plug-in Management** in the left navigation, select **OpenXR**.
+1. Select **OpenXR** under **XR Plug-in Management** in the left navigation of the **Project Settings** window.
 
-1. Under **OpenXR**, select **Single Pass Instanced** for **Render Mode** and **Depth 16 Bit** for **Depth Submission Mode**.
+1. On the **OpenXR** screen, select **Single Pass Instanced** for **Render Mode** and **Depth 16 Bit** for **Depth Submission Mode**.
 
    :::image type="content" source="../media/optimize-xr-settings.png" alt-text="Screenshot of the OpenXR settings.":::
 
-1. Close the Settings windows.
+1. Close the **Settings** windows.
 
 ## Configure the RemoteRendering game object
 
-1. In the **Project** pane, select the **Scenes** folder under **Assets** in the left navigation, and then select **Quickstart** on the right.
+1. In the **Project** pane, select the **Scenes** folder under **Assets** in the left navigation, and then select the **Quickstart** scene.
 
    :::image type="content" source="../media/project-window.png" alt-text="Screenshot of the Project pane with the Quickstart scene selected in the Scenes window.":::
 
-1. In the **Hierarchy** pane at upper right, select the **RemoteRendering** game object.
+1. In the **Hierarchy** pane at upper left, select the **RemoteRendering** game object.
 
-1. In the **Inspector** pane on the right, enter the following Azure Remote Rendering credentials in the **Remote Rendering (Script)** component:
+1. In the **Inspector** pane on the right, enter the following Azure Remote Rendering credentials under **Remote Rendering (Script)**:
 
-   - **Remote Rendering Domain**: Enter an Azure location near you in the format *\<region>.mixedreality.azure.com*. This can be, but doesn't have to be, the same as the **Account Domain**.
-   - **Account Domain**: The Remote Rendering **Account Domain** that you copied from the Azure portal.
-   - **Account Id**: The Remote Rendering **Account ID** that you copied from the Azure portal.
-   - **Account Key**: The Remote Rendering **Primary key** that you copied from the Azure portal.
+   - **Remote Rendering Domain**: Enter an Azure location near you in the format *\<region>.mixedreality.azure.com*. The rendering domain can be, but doesn't have to be, the same as the **Account Domain**.
+   - **Account Domain**: Your Remote Rendering **Account Domain** that you copied from the Azure portal.
+   - **Account Id**: Your Remote Rendering **Account ID** that you copied from the Azure portal.
+   - **Account Key**: Your Remote Rendering **Primary key** that you copied from the Azure portal.
 
    > [!IMPORTANT]
    > Be sure not to expose these saved credentials by checking the project into a repository.
@@ -55,7 +55,7 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
 
 ## Start a session and render the model in play mode
 
-In the Unity top toolbar, select the **Play** icon to enter play mode and start the session. An overlay with status text displays at the bottom of the **Game** window. The session goes through a series of state transitions. 
+In the Unity top toolbar, select the **Play** icon to enter play mode and start the session. An overlay with status text displays at the bottom of the **Game** window, and the session goes through a series of state transitions. 
 
 In the **Starting** state, the server spins up, which takes several minutes. Upon success, the session transitions to the **Ready** state. Next, the session enters the **Connecting** state to reach the rendering runtime on the server.
 

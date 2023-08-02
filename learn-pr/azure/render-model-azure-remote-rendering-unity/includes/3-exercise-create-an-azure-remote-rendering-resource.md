@@ -9,7 +9,7 @@ Invoke-WebRequest -Uri "$endPoint/v1/accounts/$accountId/sessions/create" -Metho
 ```
 When you create a new session, you use the `maxLeaseTime` parameter to specify a maximum lease time, typically in the range of one to eight hours. The maximum lease time is the duration during which the host accepts input. You can extend the lease time of an active session if necessary.
 
-The response from the request returns a *session UUID*, which allows you to query information about the session. This UUID and some basic information about the session persist for 30 days, so you can query that information even after the session has stopped.
+The response from the request returns a `sessionId`, which allows you to query information about the session. This UUID and some basic information about the session persist for 30 days, so you can query the information even after the session has stopped.
 
 ## Connect to a session
 

@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity.3-exercise-create-an-azure-remote-rendering-resource
-title: Remote Rendering Session API
+title: Remote Rendering session management
 metadata:
-  title: Remote Rendering Session API
+  title: Remote Rendering session management
   description: Learn how to use the Remote Rendering Session API to manage and query Remote Rendering sessions.
   ms.date: 02/01/2021
   author: aprilspeight
