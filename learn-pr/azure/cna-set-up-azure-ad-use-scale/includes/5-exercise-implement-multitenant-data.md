@@ -508,7 +508,7 @@ You're finally ready to test the functionality of your web app. While you could 
     > Make sure to replace both `<webapp_name>` placeholders.
 
 1. Open another tab in the web browser window displaying the Azure portal, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true) and, if prompted, sign in to access the Azure subscription you'll be using in this module.
-1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
+1. In the Azure portal, use the **Search resources, services, and docs** text box to search for **Azure Active Directory** and, in the list of results, select **Azure Active Directory**.
 1. On the Azure Active Directory blade, navigate to the **App registrations** blade, select the **cna-app** entry, in the vertical menu, in the **Manage** section, select **Authentication**.
 1. On the **cna-app \| Authentication** blade, modify the value of the **Redirect URI** to match the entry you updated in the **index.js** file and save the change.
 
@@ -554,20 +554,20 @@ You're finally ready to test the functionality of your web app. While you could 
     git remote add azure $DEPLOYMENTURL
     ```
 
-1. Run the following commands to create the **master** branch based on the **main** branch and push its contents to the Azure Web app (when prompted for the password that's part of the user-level deployment credentials you recorded previously in this task):
+1. Run the following commands to create the **test** branch based on the **main** branch and push its contents to the Azure Web app (when prompted for the password that's part of the user-level deployment credentials you recorded previously in this task):
 
     ```azurecli
-    git checkout -b master
-    git commit -a -m "test"
-    git push --set-upstream azure master
+    git checkout -b test
+    git commit -a -m "testing"
+    git push --set-upstream azure test
     ```
 
-1. Close the Cloud Shell pane.
+1. Close the **Cloud Shell** pane.
 1. Open another web browser window in the Incognito/InPrivate mode, navigate to the [Azure portal](https://portal.azure.com/?azure-portal=true), and sign in by using the **adatumuser1** user account you created in the previous exercise.
-1. In the web browser window displaying the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
+1. In the Azure portal, use the **Search resources, services, and docs** text box at the beginning of the Azure portal page to search for **App Services**.
 1. On the **App Services** blade, in the list of App Service instances, select the entry representing the newly deployed Azure web app.
-1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the URL.
-1. Open another tab in the same browser window and in the **URL** tab, paste the URL you just copied to the clipboard, add the **/auth** suffix at the end of the URL, and then select Enter:
+1. On the blade displaying the properties of the web app, in the **Essentials** section, copy the value of the **Default domain** URL.
+1. Open another tab in the same browser window and in its search box, enter **https://**, paste the URL you just copied to the clipboard, add the **/auth** suffix, and select Enter.
 
     > [!NOTE]
     > The URL should have the following format: `https://<webapp_name>.azurewebsites.net/auth`

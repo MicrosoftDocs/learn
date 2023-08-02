@@ -31,9 +31,12 @@ There are four primary elements required as part of implementing a multitenant a
 
 ### Register the app to be multitenant
 
-You can register your app as multitenant by setting the **Supported account types** option on the **Register an application** blade in the Azure portal to **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**.
+To register your app as multitenant:
 
-:::image type="content" source="../media/6-azure-ad-register-an-application.png" alt-text="Screenshot of the Register an application blade in the Azure portal.":::
+1. Use the **Search resources, services, and docs** text box to search for **App registration**, and in the list of results, in the **Azure services** section, select **App registration**.
+1. Select **All registrations** and select the **cna-app**.
+
+1. Select the **Supported account types** option, then under **Supported account types** **Accounts in any organizational directory (Any Azure AD directory - Multitenant)**, and select **Save**.
 
 Azure AD requires the App ID URI of the app to be globally unique. For a single-tenant app, the App ID URI must be unique within that tenant. For a multitenant app, it must be globally unique. To satisfy this requirement, the host name of App ID URI needs to match a verified domain of the Azure AD tenant.
 
