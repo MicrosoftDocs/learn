@@ -1,0 +1,25 @@
+### YamlMime:ModuleUnit
+uid: |
+  learn.contribute-docs-browser.6-pull-request-overview
+title: Review and submit a pull request
+metadata:
+  title: Review and submit a pull request
+  description: In this unit, you'll understand what a pull request is and how to review and submit it to get your changes published.
+  ms.date: 8/2/2023
+  author: sgaspari815
+  ms.author: v-sgaspari
+  ms.topic: interactive-tutorial
+###########################################################################
+###
+### If your content is related to a product or service, apply one value from the either the ms.prod allowlist
+### or the ms.service allowlist. You can’t use both ms.prod and ms.service.
+###
+### If your content isn't about a product or service, you can omit both ms.prod and ms.service.
+###
+### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
+### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
+### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
+  ms.service: learn
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-pull-request-overview.md)]
