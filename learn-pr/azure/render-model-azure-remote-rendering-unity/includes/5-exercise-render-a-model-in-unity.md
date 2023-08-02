@@ -21,13 +21,13 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
 
 1. Go to **File** > **Build Settings** and switch **Build Platform** to **Universal Windows Platform**.
 
-1. Select **Player Settings** at the bottom of the **Build Settings** window.
+1. Select **Player Settings** at the bottom of the **Build Settings** window, which opens the **Project Settings** window.
 
-1. Select **OpenXR** under **XR Plug-in Management** in the left navigation of the **Project Settings** window.
+1. In the **Project Settings** window, select **OpenXR** under **XR Plug-in Management** in the left navigation.
 
 1. On the **OpenXR** screen, select **Single Pass Instanced** for **Render Mode** and **Depth 16 Bit** for **Depth Submission Mode**.
 
-   :::image type="content" source="../media/optimize-xr-settings.png" alt-text="Screenshot of the OpenXR settings.":::
+   :::image type="content" source="../media/optimize-xr-settings.png" alt-text="Screenshot of the OpenXR settings." lightbox="../media/optimize-xr-settings.png":::
 
 1. Close the **Settings** windows.
 
@@ -35,23 +35,22 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
 
 1. In the **Project** pane, select the **Scenes** folder under **Assets** in the left navigation, and then select the **Quickstart** scene.
 
-   :::image type="content" source="../media/project-window.png" alt-text="Screenshot of the Project pane with the Quickstart scene selected in the Scenes window.":::
+   :::image type="content" source="../media/project-window.png" alt-text="Screenshot of the Project pane with the Quickstart scene selected in the Scenes window." lightbox="../media/project-window.png":::
 
 1. In the **Hierarchy** pane at upper left, select the **RemoteRendering** game object.
 
-1. In the **Inspector** pane on the right, enter the following Azure Remote Rendering credentials under **Remote Rendering (Script)**:
+1. In the **Inspector** pane on the right, enter the following information under **Remote Rendering (Script)**:
 
    - **Remote Rendering Domain**: Enter an Azure location near you in the format *\<region>.mixedreality.azure.com*. The rendering domain can be, but doesn't have to be, the same as the **Account Domain**.
    - **Account Domain**: Your Remote Rendering **Account Domain** that you copied from the Azure portal.
    - **Account Id**: Your Remote Rendering **Account ID** that you copied from the Azure portal.
    - **Account Key**: Your Remote Rendering **Primary key** that you copied from the Azure portal.
+   - **Max Lease Time**: The maximum duration of the remote rendering session. Set to to 0 hours and 10 minutes.
+
+   :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the Remote Rendering script settings." lightbox="../media/azure-credentials.png":::
 
    > [!IMPORTANT]
-   > Be sure not to expose these saved credentials by checking the project into a repository.
-
-1. Set the **Max Lease Time** to 0 hours and 10 minutes. The maximum lease time is the duration of the remote rendering session.
-
-   :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the Remote Rendering script settings.":::
+   > Be sure not to expose the saved credentials by checking the project into a repository.
 
 ## Start a session and render the model in play mode
 
@@ -61,4 +60,4 @@ In the **Starting** state, the server spins up, which takes several minutes. Upo
 
 When connected, the session transitions to the **Connected** state and downloads the model for rendering. The download can take a few minutes. When the download is complete, the remotely rendered model appears.
 
-:::image type="content" source="../media/arr-sample-output.png" alt-text="Screenshot of the rendered engine in the Game window.":::
+:::image type="content" source="../media/arr-sample-output.png" alt-text="Screenshot of the rendered engine in the Game window." lightbox="../media/arr-sample-output.png":::

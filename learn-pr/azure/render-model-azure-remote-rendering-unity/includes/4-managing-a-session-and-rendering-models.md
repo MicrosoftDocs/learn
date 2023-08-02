@@ -1,4 +1,4 @@
-You need an Azure Remote Rendering account to access the Remote Rendering service. In this exercise, you use the Azure portal to create a Remote Rendering account. You copy its account ID, account domain, and primary access key to use in the next exercise to remotely render a model.
+You need an Azure Remote Rendering account to access the Remote Rendering service. In this exercise, you use the Azure portal to create a Remote Rendering account. You copy the account ID, account domain, and primary access key to use in the next unit to remotely render a model.
 
 ## Create the Remote Rendering account
 

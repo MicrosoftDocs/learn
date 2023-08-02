@@ -2,7 +2,7 @@ Azure Remote Rendering provides the [session management REST API](/azure/remote-
 
 ## Create a session
 
-You can use PowerShell to request creation of a session.
+The following command requests creation of a session.
 
 ```powershell
 Invoke-WebRequest -Uri "$endPoint/v1/accounts/$accountId/sessions/create" -Method Post -ContentType "application/json" -Body "{ 'maxLeaseTime': '4:0:0', 'models': [], 'size': 'standard' }" -Headers @{ Authorization = "Bearer $token" }
