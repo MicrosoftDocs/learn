@@ -49,31 +49,31 @@ quiz:
       explanation: "A controller, not processor, determines the purposes and means of processing personal data."
     - content: "A part of a data-protection technology that processes users' personal data."
       isCorrect: false
-      explanation: "A processor isn't part of data-protection technology, but an entity that processes personal data on behalf or a controller."
+      explanation: "A processor isn't part of data-protection technology, but an entity that processes personal data on behalf of a controller."
     - content: "A natural or legal person, public authority, agency, or other body that processes personal data on behalf of a controller."
       isCorrect: true
       explanation: "A processor processes personal data on behalf of a controller."
 
   - content: "Which of the following concepts isn't a key principle that Microsoft follows when dealing with customer data?"
     choices:
-    - content: "Control"
+    - content: "Control."
       isCorrect: false
       explanation: "Control is one of Microsoft's key principles for dealing with customer data."
-    - content: "No content-based targeting"
+    - content: "No content-based targeting."
       isCorrect: false
       explanation: "Not using content-based targeting is one of Microsoft's key principles for dealing with customer data."
-    - content: "Sharing"
+    - content: "Sharing."
       isCorrect: true
       explanation: "Microsoft's key principles for dealing with customer data are control, transparency, security, legal protection, no content-based targeting, and customer benefit."
 
   - content: "Which Microsoft resource can help an administrator learn how Microsoft implements and supports security, privacy, compliance, and transparency in its cloud products and services?"
     choices:
-    - content: "Azure Blueprints"
+    - content: "Azure Blueprints."
       isCorrect: false
       explanation: "Azure Blueprints is a service for deploying a set of secure, compliant Azure resources, not a resource center."
-    - content: "Azure AD Privileged Identity Management"
+    - content: "Azure AD Privileged Identity Management."
       isCorrect: false
       explanation: "Azure AD Privileged Identity Management is a service for protecting privileged identities in organizations, not a resource center."
-    - content: "Microsoft Trust Center"
+    - content: "Microsoft Trust Center."
       isCorrect: true
       explanation: "The Microsoft Trust Center offers guidance and documentation about security, privacy, compliance, and transparency in Microsoft cloud products and services."
