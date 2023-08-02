@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-management-capabilities-of-azure.describe-dev-ops-security-management
+title: Describe DevOps security management
+metadata:
+  title: Describe DevOps security management
+  description: "Describe DevOps security management"
+  ms.date: 04/24/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/6-describe-dev-ops-security-management.md)]

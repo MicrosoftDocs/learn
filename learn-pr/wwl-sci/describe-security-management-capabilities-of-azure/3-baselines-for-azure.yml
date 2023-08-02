@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-security-management-capabilities-of-azure.baselines-for-azure
+title: Describe how security policies and initiatives improve cloud security posture
+metadata:
+  title: Describe how security policies and initiatives improve cloud security posture
+  description: "Describe how security policies and initiatives improve cloud security posture"
+  ms.date: 04/24/2023
+  author: wwlpublish
+  ms.author: ceperezb
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-baselines-for-azure.md)]

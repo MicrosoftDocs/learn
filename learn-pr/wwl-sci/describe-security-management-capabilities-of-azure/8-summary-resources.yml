@@ -11,4 +11,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 1
 content: |
-  [!include[](includes/7-summary-resources.md)]
+  [!include[](includes/8-summary-resources.md)]

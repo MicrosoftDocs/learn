@@ -24688,6 +24688,36 @@
       "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction",
       "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/2-describe-cloud-security-posture-management.yml",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/4-describe-cloud-security-posture-management",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/3-describe-defender-cloud.yml",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/2-describe-defender-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/4-describe-enhanced-security-defender-cloud.yml",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/5a-describe-enhanced-security-defender-cloud",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/5-baselines-for-azure.yml",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/3-baselines-for-azure",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/6-knowledge-check.yml",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/7-knowledge-check ",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/wwl-sci/describe-security-management-capabilities-of-azure/7-summary-resources.yml",
+      "redirect_url": "/training/modules/describe-security-management-capabilities-of-azure/8-summary-resources",
+      "redirect_document_id": true
     }
   ]
 }

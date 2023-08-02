@@ -11,4 +11,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 6
 content: |
-  [!include[](includes/3-describe-defender-cloud.md)]
+  [!include[](includes/2-describe-defender-cloud.md)]

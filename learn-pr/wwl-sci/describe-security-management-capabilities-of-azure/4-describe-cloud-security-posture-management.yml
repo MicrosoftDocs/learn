@@ -11,4 +11,4 @@ metadata:
   ms.service: azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-describe-cloud-security-posture-management.md)]
+  [!include[](includes/4-describe-cloud-security-posture-management.md)]
