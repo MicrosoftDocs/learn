@@ -45,7 +45,7 @@ In this exercise, you load a Unity sample project that includes a built-in 3D mo
    - **Account Domain**: Your Remote Rendering **Account Domain** that you copied from the Azure portal.
    - **Account Id**: Your Remote Rendering **Account ID** that you copied from the Azure portal.
    - **Account Key**: Your Remote Rendering **Primary key** that you copied from the Azure portal.
-   - **Max Lease Time**: The maximum duration of the remote rendering session. Set to to 0 hours and 10 minutes.
+   - **Max Lease Time**: The maximum duration of the remote rendering session. Set to 0 hours and 10 minutes.
 
    :::image type="content" source="../media/azure-credentials.png" alt-text="Screenshot of the Remote Rendering script settings." lightbox="../media/azure-credentials.png":::
 
