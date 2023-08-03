@@ -12,6 +12,6 @@ metadata:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Overview of Kubernetes and Azure Arc-enabled Kubernetes
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/3-kubernetes-overview.md)]
