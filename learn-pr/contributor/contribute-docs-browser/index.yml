@@ -8,8 +8,7 @@ metadata:
   ms.author: v-sgaspari
   ms.topic: module-standard-task-based
   ms.service: learn
-title: |
-  Contribute to Microsoft Learn documentation in your browser
+title: Contribute to Microsoft Learn documentation in your browser
 summary: Become a contributor to Microsoft Learn documentation by making edits with a web editor in GitHub. Make your changes, then create, validate, and submit pull requests to get your changes published.
 abstract: |
   By the end of this module, you'll be able to:

@@ -58,4 +58,3 @@ Remember, your PR must be merged by a PR reviewer before the changes can be incl
 After your contributions are approved and merged, the publishing process picks them up. Depending on the team that manages the repository you’re contributing to, publishing times can vary, but they typically occur at least once every weekday. It can take up to 45 minutes for articles to appear online after publishing. 
 
 Once your changes are published, they’ll go live on Microsoft Learn for others to start learning from! 
-
