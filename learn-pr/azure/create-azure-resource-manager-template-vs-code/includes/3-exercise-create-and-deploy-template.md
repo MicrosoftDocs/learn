@@ -61,7 +61,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
     az login
     ```
 
-1. A browser opens so that you can sign in to your account. After you've signed in, a list of the subscriptions associated with this account display in the terminal. If you activated the sandbox, you should see one called *Concierge Subscription*. Use this one for the rest of the exercise.
+1. A browser opens so that you can sign in to your account. After you've signed in, a list of the subscriptions associated with this account displays in the terminal. If you activated the sandbox, you should see one called *Concierge Subscription*. Use this one for the rest of the exercise.
 
 1. In the bash shell, run the following command to set the default subscription for all of the Azure CLI commands you run in this session.
 
@@ -96,7 +96,7 @@ az configure --defaults group=<rgn>[sandbox resource group name]</rgn>
 
 ### Deploy the template to Azure
 
-Run the following commands to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources created. You will see a successful deployment.
+Run the following commands to deploy the ARM template to Azure. The ARM template doesn't have any resources yet, so you won't see any resources created. You'll see a successful deployment.
 
 ```azurecli
 templateFile="azuredeploy.json"
@@ -120,7 +120,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 1. In the command bar, select **Terminal > New Terminal** to open a PowerShell window.
 
-1. If the command bar of the terminal window shows **PowerShell**, you have the right shell to work from, and you can skip to the next section.
+1. If the command bar of the terminal window shows **PowerShell**, you have the right shell from which to work, and you can skip to the next section.
 
       :::image type="content" source="../media/3-pwsh.png" alt-text="The Visual Studio Code terminal window with pwsh terminal selected.":::
 
@@ -147,7 +147,7 @@ To deploy this template to Azure, you need to sign in to your Azure account from
 
 ### Set the default subscription for all PowerShell commands in this session
 
-1. Run the following command to obtain your subscription(s) and their ID(s). The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It will look something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*:
+1. Run the following command to obtain your subscription(s) and their ID(s). The subscription ID is the second column. Look for *Concierge Subscription*, and copy the value in the second column. It looks something like *cf49fbbc-217c-4eb6-9eb5-a6a6c68295a0*:
 
     ```azurepowershell
     Get-AzSubscription
@@ -221,7 +221,7 @@ In the previous task, you learned how to create a blank template and deploy it. 
 
     Notice the ```tags``` and ```location``` attributes are filled in. The ```location``` attribute uses a function to set the location of the resource to the location of the resource group. You'll learn about tags and functions in the next module.
 
-1. Change the values of the resource *name* and *displayName* to something unique, (for example, **learnexercise12321**). This name must be unique across all of Azure, so choose something unique to you.
+1. Change the values of the resource *name* and *displayName* to something unique (for example, **learnexercise12321**). This name must be unique across all of Azure, so choose something unique to you.
 
 1. Change the value of the sku *name* from **Premium_LRS** to **Standard_LRS**. Change the value of *tier* to **Standard**. Notice that Visual Studio Code gives you the proper choices for your attribute values in IntelliSense. Delete the default value including the quotation marks, and enter quotation marks to see this work.
 
