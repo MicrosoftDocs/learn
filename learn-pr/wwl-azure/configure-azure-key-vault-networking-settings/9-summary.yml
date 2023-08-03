@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.work-azure-repos-github.summary
+uid: learn.wwl.configure-azure-key-vault-networking-settings.summary
 title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 12/09/2022
+  ms.date: 08/02/2023
   author: wwlpublish
-  ms.author: lumac
+  ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/9-summary.md)]
