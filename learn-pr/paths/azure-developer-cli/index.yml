@@ -10,8 +10,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and deploy applications with the Azure Developer CLI
-summary: Azure Developer CLI (azd) is an open-source tool that accelerates the time it takes for you to get your application from local development environment to Azure. Explore how to use the Azure Developer CLI and its template system to build, configure and deploy applications.
-prerequisites: None
+summary: The Azure Developer CLI (azd) is an open-source tool that accelerates the time it takes for you to get your application from local development environment to Azure. Explore how to use the Azure Developer CLI and its template system to build, configure and deploy applications.
+prerequisites: |
+  - Basic knowledge of fundamental cloud concepts
+  - Basic knowledge of software development workflows, such as building, provisioning, and deploying code
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
@@ -24,8 +26,8 @@ products:
 subjects:
 - cloud-computing
 modules:
-- learn.data-ai.evolving-world-of-data
-- learn.data-ai.survey-the-azure-data-platform
-- learn.data-ai.data-engineering-processes
+- learn.azure.introduction-to-azure-developer-cli
+- learn.azure.deploy-configure-azure-developer-cli-templates
+- learn.azure.build-first-azure-developer-cli-template
 trophy:
   uid: learn.data-ai.azure-for-the-data-engineer.trophy
