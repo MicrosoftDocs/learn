@@ -4,13 +4,12 @@ title: Describe Azure storage services
 metadata:
   title: Describe Azure storage services
   description: "Describe Azure storage services"
-  ms.date: 11/29/2022
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 8
+  zone_pivot_groups: azure-interface
+durationInMinutes: 10
 content: |
   [!include[](includes/4-describe-azure-storage-services.md)]
+interactive: bash
