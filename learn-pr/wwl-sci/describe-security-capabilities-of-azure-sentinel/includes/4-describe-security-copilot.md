@@ -23,5 +23,3 @@ Three primary use cases are security posture management, incident response, and 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls.  Your data isn't used to train the foundation AI models.
 
 Security Copilot, which is currently in preview and not yet generally available, has planned integration with Microsoft Sentinel and Microsoft's other security product families.
-
-This is a test.
