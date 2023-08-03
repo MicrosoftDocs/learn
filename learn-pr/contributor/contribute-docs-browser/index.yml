@@ -1,6 +1,5 @@
 ### YamlMime:Module
-uid: |
-  learn.contribute-docs-browser
+uid: learn.contribute-docs-browser
 metadata:
   title: Contribute to Microsoft Learn documentation in your browser
   description: Become a contributor to Microsoft Learn documentation by making edits with a web editor in GitHub. Make your changes, then create, validate, and submit pull requests to get your changes published.
@@ -14,23 +13,23 @@ title: |
 summary: Become a contributor to Microsoft Learn documentation by making edits with a web editor in GitHub. Make your changes, then create, validate, and submit pull requests to get your changes published.
 abstract: |
   By the end of this module, you'll be able to:
-    - Define your impact as a contributor to Microsoft Learn documentation.
-    - Edit Microsoft Learn documentation using a web editor in GitHub.
+  - Define your impact as a contributor to Microsoft Learn documentation.
+  - Edit Microsoft Learn documentation using a web editor in GitHub.
 prerequisites: |
   - Familiarity with Microsoft Learn documentation at the beginner level.
   - Awareness of contributions to open-source projects at the beginner level.
 iconUrl: /learn/achievements/generic-badge.svg
 levels:
-  - beginner
+- beginner
 roles:
-  # - technical-writer
-  - developer
-  - student
+# - technical-writer
+- developer
+- student
 products:
 - github
 - vs-code
 subjects:
-  - professional-social-network
+- professional-social-network
 units:
 - learn.contribute-docs-browser.introduction
 - learn.contribute-docs-browser.what-is-docs-contributor
@@ -41,7 +40,5 @@ units:
 - learn.contribute-docs-browser.exercise-pr-sign-off
 - learn.contribute-docs-browser.knowledge-check
 - learn.contribute-docs-browser.summary
-
 badge:
-  uid: |
-    learn.contribute-docs-browser.badge
+  uid: learn.contribute-docs-browser.badge
