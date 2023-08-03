@@ -2,7 +2,7 @@
 uid: learn.azure.azure-cloud-services-tutorials-mrtk
 metadata:
   title: Integrate Azure Cloud Services to your Unity project on HoloLens 2
-  description: Add Azure Cloud Services such as Azure Storage, Azure Custom Vision, Azure Spatial Anchors, and Azure Bot Service for your mixed reality application.
+  description: Add Azure Cloud Services such as Azure Storage, Azure Custom Vision, and Azure Spatial Anchors for your mixed reality application.
   ms.date: 06/26/2023
   author: marlenaklein-msft
   ms.author: marlenaklein
@@ -15,7 +15,6 @@ abstract: |
   - Build a HoloLens 2 application that can detect objects from images and find its spatial location.
   - Use Azure Custom Vision to train and detect images in the HoloLens 2 application
   - Integrating Azure Storage as the persistence solution for the demo application.
-  - Learn basics of Azure Bot Service with LUIS
 iconUrl: /training/achievements/azure-cloud-services-tutorials-mrtk.svg
 levels:
 - beginner
@@ -29,13 +28,13 @@ products:
 - azure
 - mrtk
 prerequisites: |
-  - A Windows 10 PC configured with [the correct tools](/windows/mixed-reality/develop/install-the-tools)
+  - A Windows 10 or 11 PC configured with [the correct tools](/windows/mixed-reality/install-the-tools)
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
   - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
+  - [A mixed reality project set up in Unity](/windows/mixed-reality/develop/unity/new-openxr-project-with-mrtk)
+  - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene    
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
-  - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 
 
 subjects:

@@ -7,7 +7,7 @@ With each consecutive chapter, you'll add new **Azure Cloud** services to expand
 
 In this module series, you'll build a **HoloLens 2** application that can detect objects from images and find its spatial location. We'll refer to these objects as **Tracked Objects**.
 
-The user can create a **Tracked Object** to associate a set of images via computer vision, a spatial location, or both. All data must be persisted into the cloud. Furthermore, some aspects of the application will be optionally controlled by a bot with natural language assistance.
+The user can create a **Tracked Object** to associate a set of images via computer vision, a spatial location, or both. All data must be persisted into the cloud. 
 
 ### Features
 
@@ -46,7 +46,7 @@ First, follow the steps in [Initializing your project and first application](/tr
 
 ## Import the tutorial assets
 
-1) Add AzurespatialAnchors SDK to your project. To add the packages, please follow this [tutorial](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
+1) Add AzurespatialAnchors SDK to your project. To add the packages, please follow this [tutorial.](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)
 
 2) Download and **import** the following Unity custom packages **in the order they are listed**:
 
@@ -65,17 +65,17 @@ In this section, you'll prepare the scene by adding some of the tutorial prefabs
 
     :::image type="content" source="../media/select-prefab.png" alt-text="Screenshot of Unity with SceneController, RootMenu, and DataManager prefabs selected." lightbox="../media/select-prefab.png":::
 
-2. The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo-capture functionality, while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
+    The **SceneController (prefab)** contains two scripts, **SceneController (script)** and **UnityDispatcher (script)**. The **SceneController** script component contains several UX functions and facilitates the photo-capture functionality, while **UnityDispatcher** is a helper class to allow execute actions on the Unity main thread.
 
     The **RootMenu (prefab)** is the primary UI prefab that holds all UI windows connected to each other through various small script components and control the general UX flow of the application.
 
     The **DataManager (prefab)** is responsible for talking to Azure storage, and will be explained further in the next tutorial.
 
-3. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
+2. Now with the three prefabs still selected, drag them into the Hierarchy window to add them to the scene:
 
     :::image type="content" source="../media/drag-hierarchy.png" alt-text="Screenshot of Unity with newly added SceneController, RootMenu and DataManager prefabs still selected." lightbox="../media/drag-hierarchy.png":::
 
-4. To focus in on the objects in the scene, you can double-click the **RootMenu** object, then zoom slightly out again. With the **RootMenu** object still selected, change its values in its **Transform** component to the following:
+3. To focus in on the objects in the scene, you can double-click the **RootMenu** object, then zoom slightly out again. With the **RootMenu** object still selected, change its values in its **Transform** component to the following:
 
     Position: X = 0.0, Y = 1.6, Z = 0.6
 
@@ -117,7 +117,7 @@ In this section, you'll connect *SceneManager*, *DataManager*, and *RootMenu* to
 > [!Note]
 > Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
 
-While the project yet has to be filled with content, you still have some preparation before the project is ready to build on the **HoloLens 2**.
+Before we finish the scene, let's prepare the project to be built for **HoloLens 2**.
 
 ### 1. Add other required capabilities
 

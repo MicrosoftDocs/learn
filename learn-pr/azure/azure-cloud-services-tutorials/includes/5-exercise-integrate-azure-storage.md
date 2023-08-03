@@ -26,7 +26,7 @@ Learn more about [Azure Blob storage](/azure/storage/blobs/storage-blobs-introdu
 
 To use the Azure storage services, you'll need an Azure storage account. To create a storage account, see [Create a storage account](/azure/storage/common/storage-account-create). To learn more about storage accounts, see [Azure storage account overview](/azure/storage/common/storage-account-overview).
 
-Once you have a storage account, you can retrieve the connection string from the **Azure portal**. You'll need the connection string in the next section of this lesson.
+Once you have a storage account, you can retrieve the connection string from the **Azure portal**. It can be found under Security + networking > Access keys. You'll need the connection string in the next section of this lesson.
 
 ### Optional Azure Storage Explorer
 
@@ -35,7 +35,7 @@ While you can view and verify all data changes from the UI inside the applicatio
 > [!TIP]
 > For testing from inside the Unity editor, you can use a local emulator:
 >
-> * on Windows 10, you can use [Azure Storage Emulator](/azure/storage/common/storage-use-emulator)
+> * on Windows 10, you can use [Azure Storage Emulator](/azure/storage/common/storage-use-azurite)
 > * on MacOS or Linux, you can use [Azurite Docker Image](https://hub.docker.com/_/microsoft-azure-storage-azurite) for Docker
 
 ## Prepare the scene

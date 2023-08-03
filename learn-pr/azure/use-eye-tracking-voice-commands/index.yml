@@ -34,7 +34,7 @@ prerequisites: |
   - Windows 10 SDK 10.0.18362.0 or later
   - (Optional) A HoloLens 2 device configured for development
   - Unity Hub with Unity 2021.3 or later installed and the Universal Windows Platform Build Support module added
-  - [Set up a mixed reality project in Unity module](/training/modules/mixed-reality-toolkit-project-unity)
+  - [Complete the previous modules](/training/modules/get-started-with-object-interaction)
   - [Mixed Reality Feature Tool](https://aka.ms/MRFeatureTool)
   - Basic familiarity with Unity - interface, scene creation, package import, addition of GameObjects to a scene
 

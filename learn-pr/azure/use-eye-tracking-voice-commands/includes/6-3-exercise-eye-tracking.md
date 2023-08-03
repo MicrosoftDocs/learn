@@ -8,7 +8,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
 ## Enable simulated eye-tracking for the Unity editor
 
-* Add MRTK XR Rig prefab into your scene. Gaze input is included in this prefab, so you don’t need to add any extra components.
+* From the [previous module](/training/modules/get-started-with-object-interaction), you should already have the MRTK XR Rig in your scene. Gaze input is included in this prefab, so you don’t need to add any extra components.
 
     :::image type="content" source="../media/mrtk-xr-rig-prefab.png" alt-text="Screenshot of MRTK XR Rig prefab for gaze controller." lightbox="../media/mrtk-xr-rig-prefab.png":::
 
@@ -22,7 +22,7 @@ In this exercise, you'll learn how to enable eye-tracking for HoloLens 2 and add
 
 :::image type="content" source="../media/configure-buttontext-object.png" alt-text="Screenshot of Unity with Hints Button text object configuration and EyeTrackingTarget component configured." lightbox="../media/configure-buttontext-object.png":::
 
-3. In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints** > **ButtonText**. Then in the Hierarchy window, select the Hints button object, and configure the **PressableButton** component as follows:
+3. In the Hierarchy window, expand **RoverExplorer** > **Buttons** > **Hints** > **ButtonText**. Then in the Hierarchy window, select the **Hints** button object, and configure the **PressableButton** component as follows:
 
     * Under **XRI Interactable Events**, in the Hover Entered section
         1) Click the small + icon to add another event
