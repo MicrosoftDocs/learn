@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-arm-template
   ms.prod: azure
 durationInMinutes: 3
 content: |

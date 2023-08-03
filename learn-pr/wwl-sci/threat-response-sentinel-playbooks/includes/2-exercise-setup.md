@@ -63,11 +63,20 @@ To deploy the prerequisites for the exercise, perform the following tasks.
 
 1. In the Azure portal, search for **Microsoft Sentinel**, and then select the previously created Microsoft Sentinel workspace.
 
-1. On the **Microsoft Sentinel | Overview** pane, in the left menu, under **Configuration**, select **Data connectors**.
+1. On the **Microsoft Sentinel | Overview** pane, in the left menu, scroll down to **Content Management** and select **Content Hub**.
 
-1. In the **Data connectors** pane, search for and select **Azure Activity**. In the details pane, select **Open connector page**.
+1. In the *Content Hub* page, type *Azure Activity* into the *Search* form, and select the **Azure Activity** solution.
 
-1. On the **Instructions** tab, scroll down and select **Launch Azure Policy Assignment Wizard**.
+1. In the **Azure Activity** solution details pane, select **Install**.
+
+1. In the center *Content name* column, select the **Azure Activity** Data connector.
+
+   > [!NOTE]
+   > This solution installs these Content types: 12 Analytic rules, 14 Hunting queries, 1 Workbook, and the Azure Activity Data connector.
+
+1. Select **Open connector page**.
+
+1. In the *Instructions/Configuration* area, scroll down and under *2. Connect your subscriptions...* select **Launch Azure Policy Assignment Wizard**.
 
 1. In the **Basics** tab of the wizard, select the ellipsis ***...*** under **Scope**. On the **Scopes** pane, select your subscription and then select **Select**.
 
@@ -80,7 +89,7 @@ To deploy the prerequisites for the exercise, perform the following tasks.
     > [!NOTE]
     > The connector for Azure Activity uses policy assignments, you need to have role permissions that allow you to create policy assignments. And, it typically take 15 minutes to display a status of **Connected**. While the connector deploys, you can continue performing the rest of the steps in this unit and subsequent units in this module.
 
-    :::image type="content" source="../media/02-azure-sentinel-connector.png" alt-text="Screenshot that displays the Microsoft Sentinel Azure Activity connector." border="true":::
+    :::image type="content" source="../media/06-azure-activity-content-hub-solution.png" alt-text="Screenshot that displays the Microsoft Sentinel Azure Activity Content Hub solution." border="true":::
 
 ## Task 4: Create an analytics rule
 

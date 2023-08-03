@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
+  ms.service: cognitive-services
 title: Translate text and speech
 summary: Automated translation capabilities in an AI solution enable closer collaboration by removing language barriers.
 abstract: |

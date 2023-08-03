@@ -61,7 +61,7 @@ You'd normally install Azure File Sync on your on-premises server. For this exer
     -Size Standard_DS1_v2 `
     -VirtualNetworkName Syncvnet `
     -SubnetName Syncpublicnet `
-    -Image "MicrosoftWindowsServer:WindowsServer:2019-Datacenter-with-Containers:latest" 
+    -Image "Win2019Datacenter" 
 
 
     ```

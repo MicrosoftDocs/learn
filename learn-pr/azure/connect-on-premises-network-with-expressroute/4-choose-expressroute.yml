@@ -40,4 +40,4 @@ quiz:
       explanation: "No. Use ExpressRoute to connect directly to Office 365 services."
     - content: "An ExpressRoute connection."
       isCorrect: true
-      explanation: "This is the correct answer."
+      explanation: "Correct."

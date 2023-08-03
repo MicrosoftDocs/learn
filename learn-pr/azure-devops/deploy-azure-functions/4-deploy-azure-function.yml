@@ -10,7 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.custom:
-    - devx-track-python
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-azure-functions.md)]
