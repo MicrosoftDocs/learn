@@ -21,7 +21,7 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-# - technical-writer
+- technical-writer
 - developer
 - student
 products:
@@ -36,7 +36,7 @@ units:
 - learn.contribute-docs-browser.edit-article-browser
 - learn.contribute-docs-browser.exercise-edit-article
 - learn.contribute-docs-browser.pull-request-overview
-- learn.contribute-docs-browser.exercise-pr-sign-off
+- learn.contribute-docs-browser.exercise-pull-request-sign-off
 - learn.contribute-docs-browser.knowledge-check
 - learn.contribute-docs-browser.summary
 badge:

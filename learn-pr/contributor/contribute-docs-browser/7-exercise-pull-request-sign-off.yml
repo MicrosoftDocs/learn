@@ -1,8 +1,11 @@
 ### YamlMime:ModuleUnit
-uid: learn.contribute-docs-browser.exercise-pr-sign-off
-title: Exercise - Sign off on your pull request
+uid: learn.contribute-docs-browse.exercise-pull-request-sign-off
+
+title: Exercise - Sign off on our pull request
+
 metadata:
-  title: Exercise - Sign off on your pull request
+  title: Exercise - Sign off on our pull request
+
   description: In this exercise, you review and sign off on your practice pull request. 
   ms.date: 8/2/2023
   author: sgaspari815
@@ -11,4 +14,4 @@ metadata:
   ms.service: learn
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-exercise-pr-sign-off.md)]
+  [!include[](includes/8-exercise-pull-request-sign-off.md)]

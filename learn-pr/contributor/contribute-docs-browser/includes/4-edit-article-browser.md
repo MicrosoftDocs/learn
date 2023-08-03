@@ -18,18 +18,15 @@ Remember, not all Microsoft Learn content is stored in a public repository. Befo
 1. Select the **Edit** pencil icon. This takes you to the source file in the public GitHub repository that the article is stored in. 
 
     :::image type="content" source="../media/pencil-edit-published.png" alt-text="Screenshot of a Microsoft Learn documentation article with the pencil Edit icon highlighted.":::
-
 1. Select the pencil icon at the top of the GitHub file page. This icon is either labeled **Edit this file in your fork of this project** or **Fork this repository and edit the file** depending on whether you’ve already forked the repository where the file is stored.
 
     You need to be signed into your GitHub account at this point to select this **Edit** icon. If you’re not signed in, this option won’t be available. 
 
     :::image type="content" source="../media/pencil-edit-github.png" alt-text="Screenshot of the GitHub source file for a documentation article. The Edit file pencil icon is highlighted.":::
-
 1. If this is your first time working in this repository, you're prompted to fork the repo before you propose changes. If so, select **Fork this repository**. 
 1. You’ll see the editing interface, or the **Edit** pane, in your browser. You can see the article written in Markdown, a formatting syntax. Make your changes in the pane. 
 
     :::image type="content" source="../media/edit-azure-markdown-github.png" alt-text="Screenshot of a browser with a documentation article written in Markdown syntax, which can be edited in the Edit pane.":::
-
 1. At the top of the editing pane, select the **Preview** tab. This allows you to validate your changes by viewing them in their published form. 
 
 ## Step 3: Create your pull request 
@@ -38,9 +35,11 @@ When you’re finished making and previewing your changes, it’s time to create
 
 1. Find and select the **Commit changes** or **Propose changes** button, usually at the top of the page. 
 1. Add a **Commit message**. This becomes the title of your PR. The commit message should be a brief summary of your changes. Optionally, add an **Extended description** to give further details about your changes. 
+
     :::image type="content" source="../media/propose-changes-messages.png" alt-text="Screenshot of the pop up box with two fields to create a Commit message and add an extended description of the changes.":::
 1. Select **Propose changes**. 
 1. The next page asks you to verify where you want to merge your changes to, called the base. Confirm that the **base** is `main`.
+    
     :::image type="content" source="../media/comparing-changes.png" alt-text="Screenshot of the webpage where contributors should verify the destination repository and branch they want to merge changes to. Main is selected as the Base.":::
 1. Select **Create pull request**. 
 1. Preview your PR. Make any changes to the title or description fields. 

@@ -35,7 +35,7 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 1. This takes you to the **Open a pull request** page where you can preview your PR. 
 1. Confirm your PR and select **Create pull request** to open the PR.
 
-    :::image type="content" source="../media/opened-pr-exercise-validate.png" alt-text="Screenshot of the opened PR.":::
+    :::image type="content" source="../media/opened-request-exercise-validate.png" alt-text="Screenshot of the opened PR.":::
 
 
 > [!NOTE]

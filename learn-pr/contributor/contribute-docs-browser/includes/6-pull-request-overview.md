@@ -2,7 +2,7 @@ The pull request (PR) is your ticket to getting your knowledge onto the Learn pl
 
 ## Anatomy of a PR
 
-:::image type="content" source="../media/pr-sc-overview-final.png" alt-text="Screenshot of an open pull request."::: 
+:::image type="content" source="../media/pull-request-overview-final.png" alt-text="Screenshot of an open pull request."::: 
 
 A PR shows the GitHub user who created the PR, the destination repository, and the branch in which the PR was created. PRs contain several tabs at the top, including:
 
@@ -44,7 +44,7 @@ Use the comments in the following table to perform key actions in your PR:
 
 You must enter the comment #sign-off to merge your changes. Even if all reviews and validation checks pass, you’re responsible for using this comment to tell the PR reviewers and repo administrators that your changes are ready for merging from your side of things. When the reviewers determine that your PR is issue-free and signed off, your changes are merged back into the parent branch, and the PR is closed.
 
-:::image type="content" source="../media/pr-sc-signoff.png" alt-text="Screenshot of the comment box on a PR with #sign-off typed into the comment field and the Comment button highlighted.":::
+:::image type="content" source="../media/pull-request-signoff.png" alt-text="Screenshot of the comment box on a PR with #sign-off typed into the comment field and the Comment button highlighted.":::
 
 ## Publishing
 
