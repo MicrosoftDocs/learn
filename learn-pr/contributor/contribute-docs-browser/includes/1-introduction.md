@@ -1,4 +1,4 @@
-Open-source content on Microsoft Learn depends on the collaborative efforts of a large community of passionate contributors. Microsoft Learn is the platform that hosts all technical documentation for Microsoft products, plus training modules, Shows, Q&A, and much more! Contributions from experts in the field, content authors, product users, students, and other Microsoft enthusiasts help learners build skills to achieve more and explore new possibilities.  
+Open-source content on Microsoft Learn depends on the collaborative efforts of a large community of passionate contributors. Microsoft Learn is the platform that hosts all technical documentation for Microsoft products, plus training modules, Shows, Q&A, and much more! Contributions from experts in the field, content authors, product users, students, and other Microsoft enthusiasts help learners build skills to achieve more and explore new possibilities. You can become a contributor to Microsoft Learn and start sharing your knowledge all from the convenience of your browser.
 
 ## Scenario
 

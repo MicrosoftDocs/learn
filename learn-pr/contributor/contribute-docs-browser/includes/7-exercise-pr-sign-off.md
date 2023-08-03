@@ -8,7 +8,7 @@ Validation processes run automatically and can take several minutes to complete.
 
 ## Review
 
-It’s good practice to review the PR, check that any validation issues or comments have been resolved, and complete a final check that your changes are ready for publishing. Review your PR by selecting the Files changed tab and confirming that your new sentence was added correctly. When you’re finished, return to the Conversation tab. 
+It’s good practice to review the PR, check that any validation issues or comments have been resolved, and complete a final check that your changes are ready for publishing. Review your PR by selecting the **Files changed** tab and confirming that your new sentence was added correctly. When you’re finished, return to the **Conversation** tab. 
 
 ## Sign off on your PR
 

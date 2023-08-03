@@ -2,18 +2,13 @@ The pull request (PR) is your ticket to getting your knowledge onto the Learn pl
 
 ## Anatomy of a PR
 
-:::row:::
-   :::column span="2":::
-      :::image type="content" source="../media/pr-sc-overview-final.png" alt-text="Screenshot of an open pull request.":::
-   :::column-end:::
-   :::column span="":::
-      A PR shows the GitHub user who created the PR, the destination repository, and the branch in which the PR was created. PRs contain several tabs at the top, including:
-        -Conversation tab: A dashboard where you can view and reply to comments from other collaborators, see a list of notifications throughout the build and review process, and use comment automation to perform actions.
-        -Commits tab: A record of the changes that have been made to that branch.
-        -Files changed tab: A comparison of the changed file(s) in the PR with their prior state. 
-   :::column-end:::
-:::row-end:::
+:::image type="content" source="../media/pr-sc-overview-final.png" alt-text="Screenshot of an open pull request."::: 
 
+A PR shows the GitHub user who created the PR, the destination repository, and the branch in which the PR was created. PRs contain several tabs at the top, including:
+
+-**Conversation** tab: A dashboard where you can view and reply to comments from other collaborators, see a list of notifications throughout the build and review process, and use comment automation to perform actions.
+-**Commits** tab: A record of the changes that have been made to that branch.
+- **Files** changed tab: A comparison of the changed file(s) in the PR with their prior state. 
 
 Pay careful attention to the conversations tab, which is where any updates or notifications appear and any discussions between you, the reviewers, and other collaborators take place. You can also add hashtag comments here to perform actions, such as signing off on the PR to indicate it’s ready to be validated and merged, or holding off if you need to pause the process. 
 

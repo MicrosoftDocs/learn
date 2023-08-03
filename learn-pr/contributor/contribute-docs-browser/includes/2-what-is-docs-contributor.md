@@ -4,13 +4,14 @@ Microsoft Learn is built on the expertise of thousands of individuals, from with
 
 Microsoft Learn is made up of many different communities that Microsoft manages. Wherever possible, Microsoft Learn keeps content open for public feedback and input. Because participating in an open-source community is a shared technical experience, participants agree to follow the Microsoft Learn Open Source Code of Conduct.
 
-This open-source approach streamlines and improves communication between product engineers, content teams, and customers. It also has other advantages:
+All repositories (the behind-the-scenes places where Microsoft Learn content is stored) that publish to Microsoft Learn have adopted the Microsoft Open Source Code of Conduct or the .NET Foundation Code of Conduct. When you contribute, you agree to follow this Code of Conduct to make sure it’s a positive and respectful experience for all. 
+
+This open-source approach also streamlines and improves communication between product engineers, content teams, and customers. It provides other advantages as well, such as:
 
 - Open-source repos *plan in the open* to get feedback on what docs are most needed.
 - Open-source repos *review in the open* to publish the most helpful content on our first release.
 - Open-source repos *update in the open* to make it easier to continuously improve the content.
 
-All repositories (the behind-the-scenes places where Microsoft Learn content is stored) that publish to Microsoft Learn have adopted the Microsoft Open Source Code of Conduct or the .NET Foundation Code of Conduct. When you contribute, you agree to follow this Code of Conduct to make sure it’s a positive and respectful experience for all. 
 
 ## What is a contributor?
 

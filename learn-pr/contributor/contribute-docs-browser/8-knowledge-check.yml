@@ -23,7 +23,7 @@ quiz:
       explanation: "A GitHub account is required to complete the steps it takes to contribute to Microsoft documentation."
     - content: "They must be a Microsoft employee."
       isCorrect: false
-      explanation: "Contributors can be Microsoft employee vendors, but anyone can contribute to the open-source repositories on the platform."
+      explanation: "Contributors *can* be Microsoft employees or vendors, but anyone can contribute to the open-source repositories on the platform."
   - content: "A contributor has just finished fixing a typo in an open-source documentation article. What is the next step in the contribution process?"
     choices:
     - content: "The contributor needs to merge the edits to the live webpage."
