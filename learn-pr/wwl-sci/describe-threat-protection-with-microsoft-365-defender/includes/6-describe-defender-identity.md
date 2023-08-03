@@ -3,16 +3,16 @@ Microsoft Defender for Identity is a cloud-based security solution. It uses your
 
 Microsoft Defender for Identity provides security professionals managing hybrid environments functionality to:
 
-- Monitor and profile user behavior and activities.
-- Protect user identities and reduce the attack surface.
+- Monitor users, entity behavior, and activities with learning-based analytics.
+- Protect user identities and credentials stored in Active Directory
 - Identify and investigate suspicious activities and advanced attacks across the cyberattack kill-chain.
 - Provide clear incident information on a simple timeline for fast triage
 
-### Monitor and profile user behavior and activities
+### Monitor and analyze user behavior and activities
 
 Defender for Identity monitors and analyzes user activities and information across your network, including permissions and group membership, creating a behavioral baseline for each user. Defender for Identity then identifies anomalies with adaptive built-in intelligence. It gives insights into suspicious activities and events, revealing the advanced threats, compromised users, and insider threats facing your organization.
 
-### Protect user identities and reduce the attack surface
+### Protect user identities and credentials stored in Active Directory
 
 Defender for Identity provides insights on identity configurations and suggested security best practices. Through security reports and user profile analytics, Defender for Identity helps reduce your organizational attack surface, making it harder to compromise user credentials and advance an attack.
 
@@ -24,12 +24,12 @@ For hybrid environments in which Active Directory Federation Services (AD FS) is
 
 Typically, attacks are launched against any accessible entity, such as a low-privileged user. Attacks then quickly move laterally until the attacker accesses valuable assets. These assets might include sensitive accounts, domain administrators, and highly sensitive data. Defender for Identity identifies these advanced threats at the source throughout the entire cyberattack kill-chain:
 
-- Reconnaissance
-- Compromised credentials
-- Lateral movements
-- Domain dominance
+- Reconnaissance - Identify rogue users and attackers' attempts to gain information.
+- Compromised credentials - Identify attempts to compromise user credentials using brute force attacks, failed authentications, user group membership changes, and other methods.
+- Lateral movements - Detect attempts to move laterally inside the network to gain further control of sensitive users.
+- Domain dominance - Highlighting attacker behavior if domain dominance is achieved, through remote code execution on the domain controller or other methods.
 
-### Investigate alerts and user activities
+### Provide clear incident information on a simple timeline for fast triage
 
 Defender for Identity is designed to reduce general alert noise, providing only relevant, important security alerts in a simple, real-time organizational attack timeline.
 

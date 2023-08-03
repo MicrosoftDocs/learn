@@ -17,9 +17,9 @@ quiz:
   questions:
   - content: "A lead admin for an organization is looking to protect against malicious threats posed by email messages, links (URLs), and collaboration tools. Which solution from the Microsoft 365 Defender suite is best suited for this purpose?"
     choices:
-    - content: "Microsoft Defender for Office 365."
+    - content: "Microsoft Defender for Collaboration."
       isCorrect: true
-      explanation: "Correct. Microsoft Defender for Office 365 safeguards against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients."
+      explanation: "Correct. Microsoft Defender for Collaboration safeguards against malicious threats posed by email messages, links (URLs), and collaboration tools, including Microsoft Teams, SharePoint Online, OneDrive for Business, and other Office clients."
     - content: "Microsoft Defender for Endpoint."
       isCorrect: false
       explanation: "Incorrect. Microsoft Defender for Endpoint is a platform designed to help enterprise networks protect endpoints by preventing, detecting, investigating, and responding to advanced threats."
@@ -39,9 +39,9 @@ quiz:
       explanation: "Correct. Through the Data Security pillar, an admin can identify and control sensitive information and respond to classification labels on content."
   - content: "Which of the following is a cloud-based security solution that identifies, detects, and helps to investigate advanced threats, compromised identities, and malicious insider actions directed at your organization?"
     choices:
-    - content: "Microsoft Defender for Office 365"
+    - content: "Microsoft Defender for Collaboration"
       isCorrect: false
-      explanation: "Incorrect. Microsoft Defender for Office 365 is a cloud-based email-filtering service that helps protect your organization against unknown malware and viruses."
+      explanation: "Incorrect. Microsoft Defender for Collaboration is a cloud-based email-filtering service that helps protect your organization against unknown malware and viruses."
     - content: "Microsoft Defender for Identity"
       isCorrect: true
       explanation: "Correct. Microsoft Defender for Identity is a cloud-based security solution that identifies, detects, and helps you investigate advanced threats, compromised identities, and malicious insider actions directed at your organization."
