@@ -30,4 +30,4 @@ modules:
 - learn.azure.deploy-configure-azure-developer-cli-templates
 - learn.azure.build-first-azure-developer-cli-template
 trophy:
-  uid: learn.data-ai.azure-for-the-data-engineer.trophy
+  uid: learn.azure-developer-cli.trophy
