@@ -21,7 +21,7 @@ iconUrl: /learn/achievements/generic-badge.svg
 levels:
 - beginner
 roles:
-- technical-writer
+# - technical-writer
 - developer
 - student
 products:
