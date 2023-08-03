@@ -4,7 +4,7 @@ title: Analyze images with Azure Computer Vision Image Analysis 4.0
 metadata:
   title: Analyze images with Azure Computer Vision Image Analysis 4.0
   description: "This unit covers how to analyze images using Image Analysis 4.0. Specifically, the unit explores how to retrieve images, detect objects, and more."
-  ms.date: 07/31/2023
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
