@@ -17,7 +17,7 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 1. Preview your changes by selecting the **Preview** tab. 
 1. Once your changes are finalized, find and select **Commit changes**.
 1. In the **Commit message** field, type “TEST contribution”. 
-    :::image type="content" source="../media/test-contribution-exercise.png" alt-text="Screenshot of the Commit message field filled out with "TEST contribution."":::
+    :::image type="content" source="../media/test-contribution-exercise.png" alt-text="Screenshot of the Commit message field filled out with TEST contribution.":::
 1. Select **Propose changes**. 
 1. On the **Comparing changes** page, verify that the **base** says `main`. This means that your changes will be pulled into the main branch in the live repository. 
     :::image type="content" source="../media/comparing-changes-exercise.png" alt-text="Screenshot of the page to verify that the Base is Main, meaning that changes will be merged to the main branch. ":::

@@ -49,7 +49,7 @@ Use the comments in the following table to perform key actions in your PR:
 
 You must enter the comment #sign-off to merge your changes. Even if all reviews and validation checks pass, you’re responsible for using this comment to tell the PR reviewers and repo administrators that your changes are ready for merging from your side of things. When the reviewers determine that your PR is issue-free and signed off, your changes are merged back into the parent branch and the PR is closed.
 
-:::image type="content" source="../media/pr-sc-signoff.png" alt-text="Screenshot of the comment box on a PR with "#sign-off" typed into the comment field and the Comment button highlighted.":::
+:::image type="content" source="../media/pr-sc-signoff.png" alt-text="Screenshot of the comment box on a PR with #sign-off typed into the comment field and the Comment button highlighted.":::
 
 ## Publishing
 

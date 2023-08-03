@@ -18,7 +18,7 @@ Your changes are ready. Sign off on the PR to send it to the destination reposit
 2.	Type “#sign-off” in the comment field. 
 3.	Select **Comment**. 
 
-:::image type="content" source="../media/type-sign-off-exercise.png" alt-text="Screenshot of the comment field with "#sign-off" and the Comment button highlighted.":::
+:::image type="content" source="../media/type-sign-off-exercise.png" alt-text="Screenshot of the comment field with #sign-off and the Comment button highlighted.":::
  
 
 Congratulations, you’ve contributed to Microsoft Learn documentation! Now you’re ready for future contributions to public repositories on the site. 
