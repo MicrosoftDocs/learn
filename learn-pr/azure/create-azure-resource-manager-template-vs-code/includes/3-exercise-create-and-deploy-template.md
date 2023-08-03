@@ -179,7 +179,7 @@ New-AzResourceGroupDeployment `
   -TemplateFile $templateFile
 ```
 
-The top section of the preceding code sets Azure PowerShell variables, which includes the path to the deployment path and the name of the deployment. Then, the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `blanktemplate` with the date as a suffix.
+The top section of the preceding code sets Azure PowerShell variables, which includes the path to the deployment file and the name of the deployment. Then, the ```New-AzResourceGroupDeployment``` command deploys the template to Azure. Notice that the deployment name is `blanktemplate` with the date as a suffix.
 
 ::: zone-end
 
