@@ -6,7 +6,7 @@ Trust boundary line
 
 ![Rendering of a dashed diagonal line representing the Trust Boundary Line Element.](../media/trust-boundary-line.png)
 
-The **trust boundary** element is represented by dotted lines or squares. Trust boundaries are used to describe data flow as it crosses different trust zone levels.
+The **trust boundary element** is represented by dotted lines or squares. Trust boundaries are used to describe data flow as it crosses different trust zone levels.
 
 Examples include:
 
@@ -18,7 +18,7 @@ Areas with changing trust zones are the most targeted by attackers, and should b
 
 Microsoft has predefined trust-zone requirements for engineers to use internally. It takes the guesswork out of which boundaries to apply. If you work at Microsoft, contact your security team to learn more.
 
-## When to use the data-flow element
+## When to use the trust boundary element
 
 Here are a few important points to remember about trust boundaries:
 

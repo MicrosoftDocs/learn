@@ -3,7 +3,7 @@ uid: learn.tm-create-a-threat-model-using-foundational-data-flow-diagram-element
 metadata:
   title: Create a threat model using data-flow diagram elements
   description: Data-flow diagrams are graphical representations of your system and should specify each element, their interactions and context.
-  ms.date: 08/02/2023
+  ms.date: 08/03/2023
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial

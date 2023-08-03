@@ -5,7 +5,7 @@ The **data-flow element** is depicted as directional arrows. This element repres
 Examples include:
 
 - Credentials submitted by a user to access your service.
-- Request from a process to add an entry to your data store.
+- A request from a process to add an entry to your data store.
 
 ## When to use the data-flow element
 
