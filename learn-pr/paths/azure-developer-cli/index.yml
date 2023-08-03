@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Build and deploy applications with the Azure Developer CLI
-summary: The Azure Developer CLI (azd) is an open-source tool that accelerates the time it takes for you to get your application from local development environment to Azure. Explore how to use the Azure Developer CLI and its template system to build, configure and deploy applications.
+summary: The Azure Developer CLI (azd) is an open-source tool that accelerates the time it takes for you to get your application from a local development environment to Azure. Explore how to use the Azure Developer CLI and its template system to build, configure and deploy applications.
 prerequisites: |
   - Basic knowledge of fundamental cloud concepts
   - Basic knowledge of software development workflows, such as building, provisioning, and deploying code
