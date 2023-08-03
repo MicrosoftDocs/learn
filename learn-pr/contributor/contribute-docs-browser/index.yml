@@ -1,6 +1,6 @@
 ### YamlMime:Module
 uid: |
-  learn.contributor.contribute-docs-browser
+  learn.contribute-docs-browser
 metadata:
   title: Contribute to Microsoft Learn documentation in your browser
   description: Become a contributor to Microsoft Learn documentation by making edits with a web editor in GitHub. Make your changes, then create, validate, and submit pull requests to get your changes published.
