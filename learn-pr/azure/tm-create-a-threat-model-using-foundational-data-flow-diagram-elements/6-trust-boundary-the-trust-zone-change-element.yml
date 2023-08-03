@@ -19,7 +19,7 @@ quiz:
     choices:
     - content: "Data sent from the user to a web service hosted on Azure."
       isCorrect: true
-      explanation: "The act of transmitting data from an untrusted to a trusted zone crosses a trust boundar.y"
+      explanation: "The act of transmitting data from an untrusted to a trusted zone crosses a trust boundary."
     - content: "Data sent from the web service to the data store on Azure under the same Azure subscription."
       isCorrect: false
       explanation: "The act of transmitting data from resources inside the same trusted zone doesn't cross a trust boundary."
