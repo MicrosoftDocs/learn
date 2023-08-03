@@ -1,3 +1,4 @@
+
 In this exercise, you create an Azure virtual machine (VM) and install Nginx, a popular web server.
 
 You could use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
@@ -8,7 +9,7 @@ In this instance, you're going to use the Azure CLI.
 
 Use the following Azure CLI commands to create a Linux VM and install Nginx. After your VM is created, you'll use the Custom Script Extension to install Nginx. The Custom Script Extension is an easy way to download and run scripts on your Azure VMs. It's just one of the many ways you can configure the system after your VM is up and running.
 
-1. From Cloud Shell, run the following `az vm create` command to create a Linux VM:
+1.  From Cloud Shell, run the following `az vm create` command to create a Linux VM:
     
     ```azurecli
     az vm create \
@@ -21,7 +22,7 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
     ```
     
     Your VM will take a few moments to come up. You name the VM **my-vm**. You use this name to refer to the VM in later steps.
-1. Run the following `az vm extension set` command to configure Nginx on your VM:
+2.  Run the following `az vm extension set` command to configure Nginx on your VM:
     
     ```azurecli
     az vm extension set \
@@ -36,9 +37,9 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
     ```
     
     This command uses the Custom Script Extension to run a Bash script on your VM. The script is stored on GitHub. While the command runs, you can choose to [examine the Bash script](https://raw.githubusercontent.com/MicrosoftDocs/mslearn-welcome-to-azure/master/configure-nginx.sh?azure-portal=true) from a separate browser tab. To summarize, the script:
-    1. Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the next command can locate the latest version of the Nginx package.
-    1. Installs Nginx.
-    1. Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's host name.
+    1.  Runs `apt-get update` to download the latest package information from the internet. This step helps ensure that the next command can locate the latest version of the Nginx package.
+    2.  Installs Nginx.
+    3.  Sets the home page, */var/www/html/index.html*, to print a welcome message that includes your VM's host name.
 
 ## Continue
 

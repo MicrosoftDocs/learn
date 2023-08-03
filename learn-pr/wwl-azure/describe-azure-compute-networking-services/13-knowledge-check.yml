@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 12/12/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 4
 content: |
   [!include[](includes/13-knowledge-check.md)]
@@ -27,7 +25,7 @@ quiz:
       explanation: "Scale sets let you automatically scale and load balance your VMs, but a scale set doesn’t affect updates."
     - content: "Update sets"
       isCorrect: false
-      explanation: "Availability sets stagger VM updates based on their update and fault domains."
+      explanation: "Azure has Availability Sets and Update Domains, but not update sets."
   - content: "Which Azure service allows users to use a cloud hosted version of Windows from any location and connect from most modern browsers?"
     choices:
     - content: "Azure Virtual Desktop"
@@ -39,3 +37,4 @@ quiz:
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "Azure Container Instances lets you provision containers in the cloud, but doesn’t provide access to a cloud-hosted version of windows available from most modern browsers."
+interactive: bash

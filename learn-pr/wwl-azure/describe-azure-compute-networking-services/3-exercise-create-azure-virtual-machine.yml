@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.exercise-create-azure-virtual-machine
-title: Exercise - Create an Azure Virtual Machine
+title: Exercise - Create an Azure virtual machine
 metadata:
-  title: Exercise - Create an Azure Virtual Machine
-  description: "Exercise - Create an Azure Virtual Machine"
-  ms.date: 12/12/2022
+  title: Exercise - Create an Azure virtual machine
+  description: "Exercise - Create an Azure virtual machine"
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: true
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-create-azure-virtual-machine.md)]

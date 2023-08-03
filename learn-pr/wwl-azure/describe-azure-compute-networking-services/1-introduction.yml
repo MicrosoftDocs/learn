@@ -4,13 +4,12 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 12/12/2022
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
+interactive: bash
