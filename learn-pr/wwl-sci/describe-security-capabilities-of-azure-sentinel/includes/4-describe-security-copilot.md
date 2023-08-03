@@ -10,9 +10,15 @@ Microsoft Security Copilot is the first and only generative AI security product 
 
 :::image type="content" source="../media/security-copilot.png" alt-text="A graphic representing key attributes of Microsoft Security Copilot, including hyperscale AI infrastructure, cyber-trained model with security skills, threat intelligence from 65 trillion signals and end-to-end security tooling.":::
 
-The center of Microsoft Security Copilot is the prompt bar that allows security analysts to ask questions in natural language.  You use the prompt bar to tell copilot what insights you want from your security data. Example questions could be, what are all the incidents in my enterprise or which alerts are being triggered most?  You can drop in files, URLs, or code snippets and ask for information about them or you can ask for information about incidents or alerts from other security tools.  Security Copilot uses AI to generate a response to your prompt using what it finds externally and internally to your organization.  A feature of Security Copilot is the pin board. If you find something that's useful you can pin it to the pin board.  The pin board holds the responses as you work through an investigation, dynamically updates, share them, export them and collaborate on them with others.  You can also save prompts in a prompt book so they can be used by others.
+The center of Microsoft Security Copilot is the prompt bar that allows security analysts to ask questions in natural language.  You use the prompt bar to tell copilot what insights you want from your security data.
 
-It's important to note that AI generated content can make mistakes and users can easily share feedback with Microsoft.
+Three primary use cases are security posture management, incident response, and security reporting.
+
+- **Security posture management**. Security Copilot delivers information on anything that might expose an organization to a known threat. It then gives the analyst prescriptive guidance on how to protect against those potential vulnerabilities.
+
+- **Incident response**. Security Copilot can quickly surface an incident.  For a surfaced incident, Security Copilot can enrich it with context from other data sources, assess its scale and impact, and provide information on what the source might be.  Security Copilot can then guide the analyst through the response and remediation steps with guided recommendations. Security Copilot provides single pane of glass visibility by pulling in data from other sources like Defender and Sentinel and then correlating and analyzing that data all together.
+
+- **Security reporting**. Security Copilot can deliver customizable reports that are ready to share and easy to consume, allowing analysts to focus more on high value tasks pertinent for securing the organization.
 
 The information you give Copilot will only be accessible to your organization. Your data is your data, and it's protected by comprehensive enterprise compliance and security controls.  Your data isn't used to train the foundation AI models.
 
