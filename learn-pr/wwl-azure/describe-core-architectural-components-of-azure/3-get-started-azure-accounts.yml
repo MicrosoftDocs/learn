@@ -4,13 +4,12 @@ title: Get started with Azure accounts
 metadata:
   title: Get started with Azure accounts
   description: "Get started with Azure accounts"
-  ms.date: 12/22/2022
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 4
 content: |
   [!include[](includes/3-get-started-azure-accounts.md)]
+interactive: bash

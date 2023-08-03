@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-core-architectural-components-of-azure.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 12/22/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -50,3 +48,4 @@ quiz:
     - content: "Sovereign regions"
       isCorrect: false
       explanation: "A region pair is when an Azure Region is paired with another region at least 300 miles away."
+interactive: bash

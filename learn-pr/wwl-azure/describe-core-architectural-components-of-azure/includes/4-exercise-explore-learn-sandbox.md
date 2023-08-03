@@ -1,3 +1,4 @@
+
 In this exercise, you explore the Learn sandbox. You can interact with the Learn sandbox in three different ways. During exercises, you'll be provided for instructions for at least one of the methods below.
 
 You start by activating the Learn sandbox. Then, you’ll investigate each of the methods to work in the Learn sandbox.

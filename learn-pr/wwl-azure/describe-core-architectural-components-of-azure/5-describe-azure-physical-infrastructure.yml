@@ -4,13 +4,12 @@ title: Describe Azure physical infrastructure
 metadata:
   title: Describe Azure physical infrastructure
   description: "Describe Azure physical infrastructure"
-  ms.date: 12/22/2022
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-azure-physical-infrastructure.md)]
+interactive: bash
