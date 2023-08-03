@@ -4,13 +4,12 @@ title: Describe Azure directory services
 metadata:
   title: Describe Azure directory services
   description: "Describe Azure directory services"
-  ms.date: 06/28/2023
+  ms.date: 08/03/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 6
 content: |
   [!include[](includes/2-directory-services.md)]
+interactive: bash

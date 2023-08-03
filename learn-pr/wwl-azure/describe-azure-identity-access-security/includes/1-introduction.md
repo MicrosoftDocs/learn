@@ -1,3 +1,4 @@
+
 In this module, you’ll be introduced to the Azure identity, access, and security services and tools. You’ll learn about directory services in Azure, authentication methods, and access control. You’ll also cover things like Zero Trust and defense in depth, and how they keep your cloud safer. You’ll wrap up with an introduction to Microsoft Defender for Cloud.
 
 ## Learning objectives
