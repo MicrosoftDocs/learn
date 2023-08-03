@@ -24688,6 +24688,21 @@
       "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/7-version-control-git-azure-repos.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-repos-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-repos-github/7-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-repos-github/8-summary",
+      "redirect_document_id": false
     }
   ]
 }
