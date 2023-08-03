@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-build-copilots-for-startups.best-practices-build-future-copilot
+title: Apply best practices to build your future Copilot
+metadata:
+  title: Apply best practices to build your future Copilot
+  description: This content is part of the "Introduction to building Copilots for startups" module.
+  ms.date: 08/07/2023
+  author: amit7200
+  ms.author: AmitMFS
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/5-best-practices-build-future-copilot.md)]

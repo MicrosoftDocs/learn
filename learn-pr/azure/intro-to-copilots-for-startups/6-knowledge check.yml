@@ -1,0 +1,58 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-build-copilots-for-startups.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: This content is part of the "Introduction to building Copilots for startups" module.
+  ms.date: 08/07/2023
+  author: amit7200
+  ms.author: AmitMFS
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which of the following best describes the concept of Copilot in relation to Azure?"
+    choices:
+    - content: "An autonomous drone developed by Microsoft for aerial surveillance."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "A copilot is designed to work alongside users, augmenting their capabilities and providing support to accomplish tasks more efficiently."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "A cloud computing service for managing virtual machines."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "A data analytics tool for visualizing large datasets."
+      isCorrect: false
+      explanation: "Incorrect. "
+  - content: "Which of the following statements about Copilot is correct?" 
+    choices:
+    - content: "It's a physical device used in construction projects."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "It's exclusively designed for video editing and post-production tasks."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "Copilot is already being used by startups to develop and deploy AI-powered applications."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "It can only generate code for Python programming language."
+      isCorrect: false
+      explanation: "Incorrect. "
+  - content: "Which of the following scenarios is an example of using Copilot effectively for a startup?"
+    choices:
+    - content: "A startup relying solely on Copilot to develop a complex product."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "A startup integrating Copilot with their existing product to enhance users' productivity."
+      isCorrect: true
+      explanation: "Correct. "
+    - content: "A startup building Copilot as a replacement for their entire development team."
+      isCorrect: false
+      explanation: "Incorrect. "
+    - content: "A startup building Copilot without proper understanding of its capabilities and limitations."
+      isCorrect: false
+      explanation: "Incorrect. "   

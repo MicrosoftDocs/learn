@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-build-copilots-for-startups.azure-copilot-stack
+title: What is Azure Copilot Stack? 
+metadata:
+  title: What is Azure Copilot Stack?
+  description: This content is part of the "Introduction to building Copilots for startups" module.
+  ms.date: 08/07/2023
+  author: amit7200
+  ms.author: AmitMFS
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-azure-copilot-stack.md)]
