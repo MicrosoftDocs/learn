@@ -6,7 +6,7 @@ When deploying an Azure VM, you can use the unmanaged or managed disk type to ho
 
 ## Unmanaged disks
 
-With unmanaged disks, you must manage Azure Storage accounts where Azure VM disks will be located. You also will need to determine the number of storage accounts you will create and how you will distribute .vhd disk files across them. This management overhead might be significant in larger environments, due to the need to address capacity, performance, and resiliency constraints.
+With unmanaged disks, you must manage Azure Storage accounts where Azure VM disks will be located. You also need to determine the number of storage accounts you create and how you distribute .vhd disk files across them. This management overhead might be significant in larger environments, due to the need to address capacity, performance, and resiliency constraints.
 
 Using managed disks can eliminate this management overhead. With managed disks, the Azure platform controls the placement of VM disk files and hides the complexity associated with managing Azure Storage accounts.
 
@@ -80,7 +80,7 @@ Azure offers five tiers of managed disks according to their performance characte
 :::row-end:::
 :::row:::
   :::column:::
-    **Disk size**
+    **Max disk size**
   :::column-end:::
   :::column:::
     65,536 gibibyte (GiB)
@@ -135,7 +135,7 @@ Azure offers five tiers of managed disks according to their performance characte
     6,000
   :::column-end:::
   :::column:::
-    2,000
+    2,000, 3,000*
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,4 +159,7 @@ Azure offers five tiers of managed disks according to their performance characte
   :::column-end:::
 :::row-end:::
 
-It is important to understand that to determine overall performance of Azure Premium Storage disks attached to an Azure VM, you not only need to calculate the cumulative throughput and IOPS of all disks, but you also need to take into account the VM I/O throughput. This means that if you, for example, mount 32 x P30 disks to a single DS14 VM you won't get 32 x the maximum throughput of a P30 disk. Instead the maximum throughput would be determined by the performance characteristics of that specific VM size, as documented in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).
+> [!NOTE]
+> * Only applies to disks with performance plus (preview) enabled.
+
+It's important to understand that to determine overall performance of Azure Premium Storage disks attached to an Azure VM, you not only need to calculate the cumulative throughput and IOPS of all disks, but you also need to take into account the VM I/O throughput. This means that if you, for example, mount 32 x P30 disks to a single DS14 VM you won't get 32 x the maximum throughput of a P30 disk. Instead the maximum throughput would be determined by the performance characteristics of that specific VM size, as documented in [Sizes for virtual machines in Azure](/azure/virtual-machines/sizes).

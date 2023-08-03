@@ -43,15 +43,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     **/hana/data IOPS**
   :::column-end:::
-  :::column:::
-    **/hana/log volume**
-  :::column-end:::
-  :::column:::
-    **/hana/log I/O throughput**
-  :::column-end:::
-  :::column:::
-    **/hana/log IOPS**
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -71,15 +62,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     2,500
-  :::column-end:::
-  :::column:::
-    80 GB
-  :::column-end:::
-  :::column:::
-    250 MB
-  :::column-end:::
-  :::column:::
-    1,800
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -101,15 +83,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     2,500
   :::column-end:::
-  :::column:::
-    128 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    1,800
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -129,15 +102,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     3,000
-  :::column-end:::
-  :::column:::
-    192 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    1,800
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -159,15 +123,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     3,500
   :::column-end:::
-  :::column:::
-    256 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    1,800
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -187,15 +142,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     3,500
-  :::column-end:::
-  :::column:::
-    220 GB
-  :::column-end:::
-  :::column:::
-    250 MB
-  :::column-end:::
-  :::column:::
-    1,800
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -217,15 +163,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     2,500
   :::column-end:::
-  :::column:::
-    96 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    1,800
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -245,15 +182,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     2,500
-  :::column-end:::
-  :::column:::
-    256 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    1,800
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -275,15 +203,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     3,500
   :::column-end:::
-  :::column:::
-    256 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    1,800
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -303,15 +222,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     5,000
-  :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -333,15 +243,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     5,000
   :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -361,15 +262,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     5,000
-  :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -391,15 +283,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     7,000
   :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -419,15 +302,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     7,000
-  :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -449,15 +323,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     9,600
   :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -477,15 +342,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     9,600
-  :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -507,15 +363,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     7,000
   :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -535,15 +382,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     14,400
-  :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    250 MBps
-  :::column-end:::
-  :::column:::
-    2,500
   :::column-end:::
 :::row-end:::
 :::row:::
@@ -565,15 +403,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column:::
     14,400
   :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    400 MBps
-  :::column-end:::
-  :::column:::
-    4,000
-  :::column-end:::
 :::row-end:::
 :::row:::
   :::column:::
@@ -593,15 +422,6 @@ The recommendations are often exceeding the SAP minimum requirements as stated e
   :::column-end:::
   :::column:::
     28,800
-  :::column-end:::
-  :::column:::
-    512 GB
-  :::column-end:::
-  :::column:::
-    400 MBps
-  :::column-end:::
-  :::column:::
-    4,000
   :::column-end:::
 :::row-end:::
 

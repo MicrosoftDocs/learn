@@ -15,7 +15,7 @@ Use the following recommendations when configuring the paging/swap file:
 
   - `sudo service waagent restart`
 
-For information regarding the recommended swap file size, refer to [SAP Note \#1597355](https://launchpad.support.sap.com/#/notes/1597355).
+For information regarding the recommended swap file size, refer to [SAP Note \#1597355](https://aka.ms/az-120-sapnote-1597355).
 
 ## Managed disks
 

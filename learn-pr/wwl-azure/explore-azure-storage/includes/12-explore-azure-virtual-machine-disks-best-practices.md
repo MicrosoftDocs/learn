@@ -2,16 +2,16 @@
 
 
 
-[SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553) describes storage-specific provisions for Azure VMs hosting SAP workloads:
+[SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553) describes storage-specific provisions for Azure VMs hosting SAP workloads:
 
 - “To increase the total number of IOPS per volume presented to the guest operating system in the VM, multiple disks can be striped using functionality operating systems offer. Each disk is protected from physical drive failure by the means of mirroring, so using a software RAID level higher than RAID-0 isn't necessary.”
 - “DB log files should be stored on different disks than the DB data files.”
 - “Azure Virtual Machines automatically offer a D:\\ drive within the VM instance. This drive isn't persisted and should NOT be used at all for any DBMS files/directories or any SAP files/directories.”
 - The use of managed disks is recommended for SAP workloads.
 
-[SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533) additionally states that Azure Standard HDD storage based managed disks aren't supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment and using Azure Premium SSD storage for all other Azure VMs DBMS workloads.
+[SAP Note \#1928533](https://aka.ms/az-120-sapnote-1928533) additionally states that Azure Standard HDD storage based managed disks aren't supported for SAP workloads. Microsoft recommends using Azure Standard SSD storage as the minimum for Azure VMs hosting the SAP application layer and for non-performance sensitive DBMS deployment and using Azure Premium SSD storage for all other Azure VMs DBMS workloads.
 
-[SAP Note \#2015553](https://launchpad.support.sap.com/#/notes/2015553) describes the use cases for the Standard and Premium storage. Premium storage is required for all database-related files with exception of A-series VM SKUs (including Standard\_A5, Standard\_A6, Standard\_A7, Standard\_A8, Standard\_A9, Standard\_A10, Standard\_A11) and D-series VM SKUs (including Standard\_D11, Standard\_D12, Standard\_D13, and Standard\_D14).
+[SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553) describes the use cases for the Standard and Premium storage. Premium storage is required for all database-related files with exception of A-series VM SKUs (including Standard\_A5, Standard\_A6, Standard\_A7, Standard\_A8, Standard\_A9, Standard\_A10, Standard\_A11) and D-series VM SKUs (including Standard\_D11, Standard\_D12, Standard\_D13, and Standard\_D14).
 
 More detailed information is available in [SAP Note \#2367194](https://launchpad.support.sap.com/#/notes/2367194), which states:
 

@@ -295,7 +295,7 @@ The recommended configurations for production scenarios look like:
 :::row-end:::
 :::row:::
   :::column:::
-    M192ms, M192dms\_v2
+    M192ims, M192idms\_v2
   :::column-end:::
   :::column:::
     4,096 GiB
@@ -411,7 +411,7 @@ The recommended configurations for production scenarios look like:
     4 x P50
   :::column-end:::
   :::column:::
-    2,000 MBps
+    1,000 MBps
   :::column-end:::
   :::column:::
     no bursting
@@ -636,7 +636,7 @@ The recommended configurations for production scenarios look like:
 :::row-end:::
 :::row:::
   :::column:::
-    M192ds\_v2, M192s\_v2
+    M192ids\_v2, M192is\_v2
   :::column-end:::
   :::column:::
     2,048 GiB
@@ -1021,7 +1021,7 @@ The recommended configurations for production scenarios look like:
 :::row-end:::
 :::row:::
   :::column:::
-    M192dms\_v2, M192ms\_v2
+    M192idms\_v2, M192ims\_v2
   :::column-end:::
   :::column:::
     4,096 GiB
