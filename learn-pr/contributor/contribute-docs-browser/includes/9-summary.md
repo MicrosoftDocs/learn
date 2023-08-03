@@ -4,7 +4,7 @@ Anyone can become a Microsoft Learn contributor. To share your knowledge on a do
 
 ## References
 
-- For more information about Microsoft’s Open Source Code of Conduct, see the following:
+- For more information about Microsoft’s Open Source Code of Conduct, see the following resources:
     - [Microsoft Open Source Code of Conduct](https://opensource.microsoft.com/codeofconduct/)
     - [Code of Conduct FAQ ](https://opensource.microsoft.com/codeofconduct/faq/)
     - [.NET Foundation Code of Conduct](https://dotnetfoundation.org/code-of-conduct)

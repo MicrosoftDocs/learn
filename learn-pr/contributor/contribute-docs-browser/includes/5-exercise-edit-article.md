@@ -9,7 +9,7 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 1. Select the pencil icon to **Fork this repository and edit in your fork** or **Edit this file in your fork of this project**.
     :::image type="content" source="../media/edit-in-fork-exercise-narrow.png" alt-text="Screenshot of the Contribute article's source file opened in a browser and the Edit icon highlighted.":::
 1. If GitHub prompts you to fork the repository on the next page, select **Fork the repository**. 
-1. The **Edit file** pane opens. You need to add a new sentence to the beginning of this article. At the start of the 2nd paragraph, add the following sentence: “Microsoft Learn hosts all documentation for Microsoft products and technologies.” 
+1. The **Edit file** pane opens. You need to add a new sentence to the beginning of this article. At the start of the second paragraph, add the following sentence: “Microsoft Learn hosts all documentation for Microsoft products and technologies.” 
     :::image type="content" source="../media/edit-markdown-exercise.png" alt-text="Screenshot of the Contribute file edited with a new sentence and the Commit changes button highlighted.":::
 
 ## Open a PR
@@ -29,4 +29,4 @@ Let’s practice the contribution workflow. In this exercise, you’ll make a sm
 > [!NOTE]
 > Because this is a practice exercise, your changes won’t be merged to the live website.
 
-Congratulations on creating your PR! It’s not submitted yet, but you’ve finished the first big step in contributing. Leave the PR tab open in your browser. You’ll come back to it in the next exercise. 
+Congratulations on creating your PR! It’s not submitted yet, but you’ve finished the first major step in contributing. Leave the PR tab open in your browser. You’ll come back to it in the next exercise. 

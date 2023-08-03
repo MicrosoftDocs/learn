@@ -1,8 +1,8 @@
-In the last exercise, you opened and edited a source file in the GitHub public repository, then created a pull request (PR). Now, you need to ensure the validation processes went smoothly, review your PR, and sign off on it to submit it to the PR queue. If it passes review, it will be merged and go live on the published site! 
+In the last exercise, you opened and edited a source file in the GitHub public repository, then created a pull request (PR). Now, you need to ensure the validation processes went smoothly, review your PR, and sign off on it to submit it to the PR queue. If it passes review, it is merged and will go live on the published site! 
 
 ## Validate
 
-Validation processes run automatically and can take several minutes to complete. In this repository, you see that the PR was checked for mergeability, labels were added, no CLA was needed, and your changes were built and validated with no warnings. 
+Validation processes run automatically and can take several minutes to complete. In this repository, you see that the PR was checked for mergeability and that all CLA erequirements were met. You also see that labels were added and that your changes were validated with no warnings or issues.
 
 :::image type="content" source="../media/exercise-pr-validation-checks.png" alt-text="Screenshot of the PR created during the exercise showing two validation checks passing.":::
 

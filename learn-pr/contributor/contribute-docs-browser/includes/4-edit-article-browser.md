@@ -1,4 +1,4 @@
-Now that you have an overview of the general tools and moving parts behind the scenes of a contribution, let’s look at the steps to make a minor contribution to Microsoft documentation. When you want to make a small change to an article, you’ll first make sure you have the appropriate tools set up. Then, you’re ready to start editing and sharing your knowledge with other members of the Microsoft Learn community. 
+Now that you have an overview of the general tools and moving parts behind the scenes of a contribution, let’s look at the steps to make a minor contribution to Microsoft documentation. When you want to make a small change to an article, first make sure you have the appropriate tools set up. Then, you’re ready to start editing and sharing your knowledge with other members of the Microsoft Learn community. 
 
 ## Step 1: Set up your GitHub account
 
@@ -12,16 +12,16 @@ If you don’t have a GitHub account yet, use the following steps to create one:
 
 ## Step 2: Make your changes
 
-Remember, not all Microsoft Learn content is stored in a public repository. Before you make any changes, you’ll first check if the content you’d like to contribute to is available for public contribution. If so, you can make changes directly in your browser. 
+Remember, not all Microsoft Learn content is stored in a public repository. Before you make any changes, first check if the content you’d like to contribute to is available for public contribution. If so, you can make changes directly in your browser. 
 
 1. Navigate to the documentation article on learn.microsoft.com that you wish to edit. Check if the article is stored in a public repository by looking for the pencil-shaped **Edit** icon at the top of the article. If you see the icon, it’s eligible for public contribution! 
-1. Select the **Edit** pencil icon. This will take you to the source file in the public GitHub repository that the article is stored in. 
+1. Select the **Edit** pencil icon. This takes you to the source file in the public GitHub repository that the article is stored in. 
     :::image type="content" source="../media/pencil-edit-published.png" alt-text="Screenshot of a Microsoft Learn documentation article with the pencil Edit icon highlighted.":::
-1. Select the pencil icon at the top of the GitHub file page. This icon will either be labeled **Edit this file in your fork of this project** or **Fork this repository and edit the file** depending on whether you’ve already forked the repository where the file is stored.
+1. Select the pencil icon at the top of the GitHub file page. This icon is either labeled **Edit this file in your fork of this project** or **Fork this repository and edit the file** depending on whether you’ve already forked the repository where the file is stored.
 
     You need to be signed into your GitHub account at this point to select this **Edit** icon. If you’re not signed in, this option won’t be available. 
     :::image type="content" source="../media/pencil-edit-github.png" alt-text="Screenshot of the GitHub source file for a documentation article. The Edit file pencil icon is highlighted.":::
-1. If this is your first time working in this repository, you’ll be prompted to fork the repo before you propose changes. If so, select **Fork this repository**. 
+1. If this is your first time working in this repository, you're prompted to fork the repo before you propose changes. If so, select **Fork this repository**. 
 1. You’ll see the editing interface, or the **Edit** pane, in your browser. You can see the article written in Markdown, a formatting syntax. Make your changes in the pane. 
     :::image type="content" source="../media/edit-azure-markdown-github.png" alt-text="Screenshot of a browser with a documentation article written in Markdown syntax, which can be edited in the Edit pane.":::
 1. At the top of the editing pane, select the **Preview** tab. This allows you to validate your changes by viewing them in their published form. 
@@ -44,6 +44,6 @@ Your PR has been created, but it hasn’t been submitted yet. In the next step, 
 
 ## Scenario: Edit an Azure Apps Service article
 
-Recall that you are a software engineer with special expertise in Azure App Service. When reviewing a documentation article about App Service, you notice a detail you’d like to add that would help others use the service. You decide to share your knowledge by making your first contribution to Microsoft Learn! After signing into your GitHub account, you begin the contribution process: 
+Recall that you're a software engineer with special expertise in Azure App Service. When reviewing a documentation article about App Service, you notice a detail you’d like to add that would help others use the service. You decide to share your knowledge by making your first contribution to Microsoft Learn! After signing into your GitHub account, you begin the contribution process: 
 
 > [!VIDEO https://www.microsoft.com/videoplayer/embed/RW197HI] 

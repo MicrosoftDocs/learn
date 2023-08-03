@@ -8,7 +8,7 @@ From all your experience, you’ve come up with many tips and tricks for using A
 
 ## What you'll be doing
 
-In this module, you’ll dive into what it means to contribute to Microsoft Learn and the impact that contributors can have. You’ll define the key steps and tools necessary to make changes to open-source Microsoft documentation articles. You’ll set up your account to start sharing your knowledge and practice the contribution process by editing an open-source article. Finally, you’ll learn how to submit your changes for review and publishing.
+In this module, you'll dive into what it means to contribute to Microsoft Learn and the impact that contributors can have. You'll define the key steps and tools necessary to make changes to open-source Microsoft documentation articles. You’ll set up your account to start sharing your knowledge and practice the contribution process by editing an open-source article. Finally, you’ll learn how to submit your changes for review and publishing.
 
 > [!NOTE]
 > Microsoft employees and vendors have additional contribution and workflow options. More information can be found at the end of this module. 
