@@ -1,11 +1,11 @@
 ![Rendering of a two parallel horizontal lines representing the Data Store Element.](../media/data-store.png)
 
-Depicted by parallel lines, this element represents data stored on a temporary or permanent basis.
+The **storage element** is depicted as parallel lines. This element represents data stored on a temporary or permanent basis.
 
 Examples include:
 
-- Using the browser cache to store user session-related data
-- Adding a security log event to a database
+- Using the browser cache to store user session-related data.
+- Adding a security log event to a database.
 
 ## When to use the data store element
 
@@ -16,7 +16,7 @@ Examples include:
 
 ## Include context
 
-Include the following context to each data store element:
+Include the following context with each data store element:
 
 |Context|Questions|
 |-------|---------|
