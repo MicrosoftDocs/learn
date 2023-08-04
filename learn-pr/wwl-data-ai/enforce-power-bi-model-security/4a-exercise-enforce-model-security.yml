@@ -4,11 +4,10 @@ title: 'Exercise: Enforce model security'
 metadata:
   title: 'Exercise: Enforce model security'
   description: "Exercise: Enforce model security"
-  ms.date: 01/25/2023
+  ms.date: 08/04/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labId: 124444
 labModal: false
