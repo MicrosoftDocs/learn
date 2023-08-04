@@ -29,10 +29,12 @@ Typically, attacks are launched against any accessible entity, such as a low-pri
 - Lateral movements - Detect attempts to move laterally inside the network to gain further control of sensitive users.
 - Domain dominance - Highlighting attacker behavior if domain dominance is achieved, through remote code execution on the domain controller or other methods.
 
-### Provide clear incident information on a simple timeline for fast triage
+### Investigate alerts and user activities
 
 Defender for Identity is designed to reduce general alert noise, providing only relevant, important security alerts in a simple, real-time organizational attack timeline.
 
 Use the Defender for Identity attack timeline view and the intelligence of smart analytics to stay focused on what matters. Also, you can use Defender for Identity to quickly investigate threats, and gain insights across the organization for users, devices, and network resources.
 
 Microsoft Defender for Identity protects your organization from compromised identities, advanced threats, and malicious insider actions.
+
+:::image type="content" source="../media/defender-identity-topology-inline.png" lightbox="../media/defender-identity-topology-expanded.png" alt-text="A topology diagram for Defender for Identity. It shows a domain controller and AD FS sending signals to Defender for Identity. Defender for Identity is sending and receiving signals from  Microsoft 365 Defender which gets signals from endpoints, Office 365, and cloud apps.":::
