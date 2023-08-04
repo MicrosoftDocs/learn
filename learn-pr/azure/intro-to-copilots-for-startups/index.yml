@@ -1,8 +1,8 @@
 ### YamlMime:Module
 uid: learn.azure.intro-build-copilots-for-startups
-title: Introduction to building Copilots for startups
+title: Introduction to building copilots for startups
 metadata:
-  title: Introduction to building Copilots for startups
+  title: Introduction to building copilots for startups
   description: Need to add
   ms.date: 08/03/2023
   author: amit7200
@@ -10,12 +10,12 @@ metadata:
   ms.topic: module-intro-to-product
   ms.prod: azure
 summary: >
-  Get to know the concept of Copilots in the ever evolving generative AI domain. Define how startups can use Azure Copilot stack and apply best practices to deliver value to their customers.
+  Get to know the concept of copilots in the ever evolving generative AI domain. Define how startups can use Azure Copilot Stack and apply best practices to deliver value to their customers.
 abstract: |
   By the end of this module, you'll be able to:
-  - Explain the concept of a Copilot and the Azure Copilot stack.
-  - List how a Copilot is already being used and deployed today.
-  - Apply best practices when building a Copilot for your startup.
+  - Explain the concept of a copilot and the Azure Copilot Stack.
+  - List how copilots are already being used and deployed today.
+  - Apply best practices when building a copilot for your startup.
 prerequisites: |
   - Basic understanding of OpenAI's language, code, and image capabilities at the beginner level. 
 iconUrl: /training/achievements/generic-badge.svg
