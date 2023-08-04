@@ -8,11 +8,11 @@ Let's explore three different implementations of the Copilot Stack for various u
 
 ## Case study - GitHub Copilot
 
-GitHub Copilot is an AI-powered tool developed by GitHub in collaboration with OpenAI. It's designed to assist developers in writing code faster and more efficiently. By incorporating machine learning and natural language processing, Copilot understands and interprets the intent behind a developer's natural language description and generates relevant and high-quality code snippets accordingly.
+GitHub Copilot is an AI-powered tool developed by GitHub in collaboration with OpenAI. It's designed to assist developers in writing code faster and more efficiently. By incorporating machine learning and natural language processing, GitHub Copilot understands and interprets the intent behind a developer's natural language description and generates relevant and high-quality code snippets accordingly.
 
-:::image type="complex" source="../media/4-python-code.png" alt-text="A screenshot of a computer program displaying a code editor with Python code for unit testing functions.":::
-   The code includes import statements, class and function definitions, and test cases for various scenarios. The editor also shows line numbers, a GitHub Copilot chat window, and a status bar with encoding and language information.
-:::image-end:::
+  :::image type="complex" source="../media/4-python-code.png" alt-text="A screenshot of a computer program displaying a code editor with Python code for unit testing functions.":::
+  The code includes import statements, class and function definitions, and test cases for various scenarios. The editor also shows line numbers, a GitHub Copilot chat window, and a status bar with encoding and language information.
+  :::image-end:::
 
 ### How does GitHub Copilot work?
 
@@ -40,7 +40,7 @@ The following are key takeaways for startups building a GitHub Copilot-like tool
 
 Microsoft Security Copilot is an advanced security solution designed to enable defenders to move at the speed and scale of AI. Microsoft Security Copilot harnesses the capabilities of generative AI and processes 65 trillion daily signals to provide intelligent guidance to security teams, facilitating faster incident response and analysis. It integrates seamlessly with Microsoft's end-to-end security portfolio and third-party products, making it a comprehensive security companion for any organization.
 
-:::image type="icon" source="../media/4-security-copilot.png":::
+  :::image type="icon" source="../media/4-security-copilot.png":::
 
 ### Features and benefits - Microsoft Security Copilot
 
@@ -61,10 +61,10 @@ Microsoft Security Copilot is a versatile tool with a wide range of applications
 
 Here's a sample prompt to visualize a security scenario:
 
-:::image type="content" source="../media/4-sample-prompt-security-scenario.png" alt-text="A screenshot of a sample security scenario prompt, produce visual to explain the activity of the download, the exploit, and how it moved through the incident.":::
+  :::image type="content" source="../media/4-sample-prompt-security-scenario.png" alt-text="A screenshot of a sample security scenario prompt, produce visual to explain the activity of the download, the exploit, and how it moved through the incident.":::
 
 Here's a sample output for a security incident:
-:::image type="content" source="../media/4-security-incident-output.png" alt-text="A screenshot of a security incident showing alerts and connections, including timestamps, user and workstation names, file names, and potential threat sources.":::
+  :::image type="content" source="../media/4-security-incident-output.png" alt-text="A screenshot of a security incident showing alerts and connections, including timestamps, user and workstation names, file names, and potential threat sources.":::
 
 ### Takeaways - Microsoft Security Copilot
 
@@ -79,7 +79,7 @@ The following are key takeaways for startups building a Microsoft Security Copil
 
 Microsoft 365 Copilot helps users create, edit, and share documents, presentations, and spreadsheets. It provides suggestions for content, design, and grammar, and allows for real-time collaboration with others.
 
-:::image type="icon" source="../media/4-microsoft-365-copilot-diagram.png":::
+  :::image type="icon" source="../media/4-microsoft-365-copilot-diagram.png":::
 
 Microsoft 365 Copilot uses prompts that are designed to make your writing easier and more effective, while respecting your privacy and security.
 
@@ -88,9 +88,7 @@ Microsoft 365 Copilot uses prompts that are designed to make your writing easier
 
 Here's an example of using natural language to uncover advanced products features in a product (Excel) without using a complex UI:
 
-:::image type="content" source="../media/4-example-natural-language.gif" alt-text="An animated screenshot showing how to use natural language to uncover advanced product features in Excel without using a complex UI.":::
-
-An animated gif of a computer screen showing Excel user using Natural language to uncover advance products features sing Copilot without using a complex UI
+  :::image type="content" source="../media/4-example-natural-language.gif" alt-text="An animated screenshot showing how to use natural language to uncover advanced product features in Excel without using a complex UI.":::
 
 Here's a video that explains the Microsoft 365 Copilot system:
 
@@ -103,5 +101,5 @@ The following are key takeaways for startups building a Microsoft 365 Copilot-li
 - **AI-driven content suggestions:** A copilot system for content creation should provide AI-driven suggestions for content, design, and grammar. This feature helps users enhance their documents, presentations, and spreadsheets by applying the power of large language models (LLMs) to understand natural language and suggest improvements and creative ideas.
 - **Personalization:** The copilot system should be personalized to individual users' preferences and style. This means tailoring the suggestions to suit each user's unique writing and design preferences, making the tool more useful and user-friendly.
 - **Integration with knowledge graphs:** Grounding prompts and suggestions in a knowledge graph like Microsoft 365 Copilot helps the copilot system understand the user's organization, contacts, projects, and other relevant topics. This enables more contextually relevant and accurate suggestions, enhancing the overall user experience.
-- **Natural language interface:** A key advantage of Microsoft 365 Copilot is its ability to uncover advanced product features, such as Excel without the need for a complex user interface. Startups should aim to create a copilot system that seamlessly understands and responds to natural language queries and commands, making it more intuitive and user-friendly.
+- **Natural language interface:** A key advantage of Microsoft 365 Copilot is its ability to uncover advanced product features, such as Excel, without the need for a complex user interface. Startups should aim to create a copilot system that seamlessly understands and responds to natural language queries and commands, making it more intuitive and user-friendly.
 - **Privacy and security:** Ensuring user privacy and data security is essential for any copilot system. Users need to have confidence that their content and information are protected, especially when using AI-powered tools that analyze their data.
