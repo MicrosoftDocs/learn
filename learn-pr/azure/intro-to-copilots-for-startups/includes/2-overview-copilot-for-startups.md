@@ -1,15 +1,15 @@
-Need introduction sentences. 
+
+Copilots are AI-powered assistants or conversational agents that understand user intent and help complete various tasks or provide relevant information. Copilots are built using Azure Copilot Stack, an AI development framework introduced by Microsoft.
 
 ## What are copilots?
-AI-powered assistants or conversational agents that can understand user intent and assist them in completing various tasks or providing relevant information. These copilots are built using the Azure Copilot Stack, an AI development framework introduced by Microsoft.
 
 The term "copilot" is used metaphorically here, drawing an analogy to how a copilot assists a pilot in flying an aircraft. In the same way, these AI copilots are designed to work alongside users, augmenting their capabilities and providing support to accomplish tasks more efficiently.
 
-The copilots created using the Azure Copilot Stack are generative AI models, such as GPT-4 that can understand natural language and generate human-like responses. They can be trained to perform a wide range of functions, from crafting persuasive sales pitches, catching up on missed meetings, and generating captivating visuals for presentations, copilots can revolutionize the user experience.
+The copilots created using Azure Copilot Stack are generative AI models, such as GPT-4 that can understand natural language and generate human-like responses. They can be trained to perform a wide range of functions, from crafting persuasive sales pitches, catching up on missed meetings, and generating captivating visuals for presentations, copilots can revolutionize the user experience.
 
 This is alongside the introduction of new tools like plugins for copilots to interact with other software and services.
 
-## Plugins
+### Plugins
 
 Plugins are external data sources that integrate across OpenAI's ChatGPT and Microsoft's copilot offerings. They can help you access and use data from various sources, such as databases, search engines, or translation services, within your AI applications. Some of the benefits of plugins are:
 
@@ -22,7 +22,7 @@ Plugins are external data sources that integrate across OpenAI's ChatGPT and Mic
    The Beside layout shows a copilot as a helper in an app.  The Center layout shows a copilot as the app foundation.  The Outside layout shows a copilot orchestrating across different apps and tasks.
 :::image-end:::
 
-By using the Azure Copilot Stack, developers can customize and tailor copilots to specific use cases and industries, allowing startups to build AI-powered applications and services that cater to their unique requirements. These copilots represent a new generation of conversational AI systems that strive to provide more intuitive and personalized interactions between users and machines.
+By using Azure Copilot Stack, developers can customize and tailor copilots to specific use cases and industries, allowing startups to build AI-powered applications and services that cater to their unique requirements. These copilots represent a new generation of conversational AI systems that strive to provide more intuitive and personalized interactions between users and machines.
 
 ## What are the benefits of copilots for startups?
 

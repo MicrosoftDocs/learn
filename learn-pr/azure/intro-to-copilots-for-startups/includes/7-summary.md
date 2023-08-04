@@ -1,12 +1,10 @@
 This module introduced you to the concept of copilots and how Azure Copilot Stack applies OpenAI generative AI models to easily build a customized copilot for your startup.
 
-In this module, you also learned how to:
+In this module, you also learned:
 
-- Describe Azure OpenAI workloads and how to access the Azure OpenAI Service.
-- Define generative AI models.
-- Explain Azure OpenAI's language, code, and image capabilities.
-- Describe Azure OpenAI's Responsible AI practices and Limited Access Policy.
+- The basic features and benefits of Azure OpenAI, Microsoft GitHub Copilot, Microsoft 365 Copilot, and Azure Copilot Stack.
+- The best practices associated with building a copilot for your startup.
 
 ## Next steps
 
-To continue learning about Azure OpenAI and find resources for implementation, refer to the [documentation on Azure OpenAI](https://startups.microsoft.com/blog/8-steps-to-building-an-azure-openai-copilot-for-your-startup/), and the [Develop Generative AI solutions with Azure OpenAI Service learning path](../../../paths/develop-ai-solutions-azure-openai/index.yml).
+To continue learning about Azure OpenAI and find resources for implementation, refer to the [documentation on Azure OpenAI](https://startups.microsoft.com/blog/8-steps-to-building-an-azure-openai-copilot-for-your-startup/), and the [Develop Generative AI solutions with Azure OpenAI Service ](../../../paths/develop-ai-solutions-azure-openai/index.yml)learning path.
