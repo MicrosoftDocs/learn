@@ -4,8 +4,8 @@ metadata:
   title: Train and evaluate regression models
   description: "Regression is a commonly used kind of machine learning for predicting numeric values."
   ms.date: 01/04/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: interactive-tutorial
 title: Train and evaluate regression models
 summary: Regression is a commonly used kind of machine learning for predicting numeric values.
