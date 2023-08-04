@@ -1,4 +1,4 @@
-:::image type="content" source="../media/custom-security-attributes-2ef80fb3.png" alt-text="Screenshot of the Azure A D new feature Custom Security Attributes.  You get to the feature in the base menu of Azure A D.  You have the ability to create new security attributes of type String, Integer, or Boolean.":::
+:::image type="content" source="../media/custom-security-attributes-2ef80fb3-ada4249a.png" alt-text="Screenshot of the Azure A D new feature Custom Security Attributes.  You get to the feature in the base menu of Azure A D.  You have the ability to create new security attributes of type String, Integer, or Boolean.":::
 
 
 ## What is a custom security attribute?

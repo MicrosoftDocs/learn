@@ -4,13 +4,13 @@ title: Create, configure, and manage users
 metadata:
   title: Create, configure, and manage users
   description: "Create, configure, and manage users"
-  ms.date: 02/03/2023
+  ms.date: 08/04/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
 content: |
-  [!include[](includes/2-users.md)]
+  [!include[](includes/7-users.md)]
