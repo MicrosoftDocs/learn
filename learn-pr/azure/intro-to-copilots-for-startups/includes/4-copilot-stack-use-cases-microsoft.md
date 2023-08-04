@@ -86,12 +86,15 @@ Microsoft 365 Copilot uses prompts that are designed to make your writing easier
 - Prompts are grounded in the Microsoft 365 knowledge graph, which contains information about your organization, your contacts, your projects, and other topics.
 - The prompts are also personalized to your preferences and style, so you can choose the ones that suit you best.
 
-Here's an example of using natural language to uncover advance products features in a product (Excel) without using a complex UI:
+Here's an example of using natural language to uncover advanced products features in a product (Excel) without using a complex UI:
 
-GIF IMAGE
+:::image type="content" source="../media/4-example-natural-language.gif" alt-text="An animated screenshot showing how to use natural language to uncover advanced product features in Excel without using a complex UI.":::
+
+An animated gif of a computer screen showing Excel user using Natural language to uncover advance products features sing Copilot without using a complex UI
 
 Here's a video that explains the Microsoft 365 Copilot system:
-THEN VIDEO
+
+Enter VIDEO
 
 ### Takeaways - Microsoft 365 Copilot
 
