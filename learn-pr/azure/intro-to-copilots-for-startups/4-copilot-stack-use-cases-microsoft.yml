@@ -9,6 +9,6 @@ metadata:
   ms.author: amsvarze
   ms.topic: module-intro-to-product
   ms.prod: azure
-durationInMinutes: 6
+durationInMinutes: 10
 content: |
   [!include[](includes/4-copilot-stack-use-cases-microsoft.md)]

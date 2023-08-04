@@ -8,7 +8,9 @@ The Azure Copilot Stack provides various tools and services on Microsoft Azure t
 
 The goal of Azure Copilot Stack is to enable developers to build innovative and disruptive applications that apply AI technology to deliver new and powerful user experiences, just like smartphones transformed various industries by enabling new possibilities. By providing the necessary tools and resources, Microsoft aims to encourage startups to create a wide range of copilots to assist users in various tasks and interactions.
 
-IMAGE
+:::image type="complex" source="../media/3-copilot-stack.png" alt-text="A diagram of Microsoft Copilot Stack.":::
+    The diagram shows the different components of Microsoft Copilot Stack, such as apps, plugin extensibility and execution, copilots, AI orchestration, prompt and response filtering, metaprompt, data grounding, foundation models, and AI infrastructure. The diagram also includes Microsoft Copilots, Azure, GitHub, Visual Studio, and other copilots.
+:::image-end:::
 
 Startups using Azure Copilot stack are able to achieve a more complex and competitive scenarios by using the powerful tools that Azure OpenAI Service offers, such as GPT-4 and Dalle 2.
 

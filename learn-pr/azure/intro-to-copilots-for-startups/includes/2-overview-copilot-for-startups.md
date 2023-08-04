@@ -18,7 +18,9 @@ Plugins are external data sources that integrate across OpenAI's ChatGPT and Mic
 - They can improve scalability and reliability by using the Azure infrastructure and security features.
 - They can support responsible AI by providing content filtering, governance, and diversity and inclusion features.
 
-IMAGE
+:::image type="complex" source="../media/2-copilot-app-patterns.png" alt-text="A diagram of the various app layouts for a copilot, including Beside, Center, and Outside.":::
+   The Beside layout shows a copilot as a helper in an app.  The Center layout shows a copilot as the app foundation.  The Outside layout shows a copilot orchestrating across different apps and tasks.
+:::image-end:::
 
 By using the Azure Copilot Stack, developers can customize and tailor copilots to specific use cases and industries, allowing startups to build AI-powered applications and services that cater to their unique requirements. These copilots represent a new generation of conversational AI systems that strive to provide more intuitive and personalized interactions between users and machines.
 

@@ -9,6 +9,6 @@ metadata:
   ms.author: amsvarze
   ms.topic: module-intro-to-product
   ms.prod: azure
-durationInMinutes: 6
+durationInMinutes: 5
 content: |
   [!include[](includes/2-overview-copilot-for-startups.md)]
