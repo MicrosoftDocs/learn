@@ -12,11 +12,11 @@ You can also create and manage roles by using SQL Server Management Studio (SSMS
 
 To gain a better understanding of how RLS restricts access to data, watch the following animated image.
 
-![Animated diagram demonstrates how row-level security works for two users who each have access to specific country/region data.](../media/introduce-row-level-security.gif)
+![Animated diagram demonstrates how row-level security works for two users who each have access to specific country data.](../media/introduce-row-level-security.gif)
 
-## Apply star schema design principals
+## Apply star schema design principles
 
-We recommend you apply [star schema](/power-bi/guidance/star-schema) design principals to produce a model comprising dimension and fact tables. It’s common to set up Power BI to enforce rules that filter dimension tables, allowing [model relationships](/power-bi/transform-model/desktop-relationships-understand) to efficiently propagate those filters to fact tables.
+We recommend you apply [star schema](/power-bi/guidance/star-schema) design principles to produce a model comprising dimension and fact tables. It’s common to set up Power BI to enforce rules that filter dimension tables, allowing [model relationships](/power-bi/transform-model/desktop-relationships-understand) to efficiently propagate those filters to fact tables.
 
 The following image is the model diagram of the Adventure Works sales analysis data model. It shows a star schema design comprising a single fact table named **Sales**. The other tables are dimension tables that support the analysis of sales measures by date, sales territory, customer, reseller, order, product, and salesperson. Notice the model relationships connecting all tables. These relationships propagate filters (directly or indirectly) to the **Sales** table.
 

@@ -9,9 +9,7 @@ metadata:
   ms.author: chnoring
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom:
-    - team=nextgen
-    - devx-track-azurepowershell
+  ms.custom: team=nextgen
 durationInMinutes: 4
 content: |
   [!include[](includes/6-knowledge-check.md)]

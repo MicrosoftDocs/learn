@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110063
-labModal: true
+# labId: 110063
+labModal: false
 durationInMinutes: 45
 content: |
   [!include[](includes/5-create-azure-iot-resources.md)]
