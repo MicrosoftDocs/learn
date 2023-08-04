@@ -1,4 +1,4 @@
-:::image type="content" source="../media/automatic-user-provisioning-c953c4ef.png" alt-text="Diagram of the process flow for auto user provisioning.  The flow shows you can have users in an on-premises or cloud human resource management system automatically provisioned as user accounts in Azure A D.  The Azure A D provisioning service can be called to create and manage the user and groups.":::
+:::image type="content" source="../media/automatic-user-provisioning-c953c4ef-d58236a8.png" alt-text="Diagram of the process flow for auto user provisioning.  The flow shows you can have users in an on-premises or cloud human resource management system automatically provisioned as user accounts in Azure A D.  The Azure A D provisioning service can be called to create and manage the user and groups.":::
 
 
 ### Components of system SCIM (System for Cross-Domain Identity Management)

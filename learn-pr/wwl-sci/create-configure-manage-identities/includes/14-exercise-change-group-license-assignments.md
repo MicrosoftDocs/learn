@@ -1,16 +1,16 @@
 ## Change group license assignment
 
-1. Browse to the Azure Active Directory page of the [Azure portal](https://portal.azure.com/).
-1. In the left navigation, under **Manage**, select **Groups**.
-1. Select one of the available groups. For example, Marketing.
-1. In the left navigation, under **Manage**, select **Licenses**.
-1. Review the current assignments and then, on the menu, select **+ Assignments**.
+1.  Browse to the Azure Active Directory page of the [Azure portal](https://portal.azure.com/).
+2.  In the left navigation, under **Manage**, select **Groups**.
+3.  Select one of the available groups. For example, Marketing.
+4.  In the left navigation, under **Manage**, select **Licenses**.
+5.  Review the current assignments and then, on the menu, select **+ Assignments**.
     
-    :::image type="content" source="../media/change-group-license-4fac5a1d.png" alt-text="Screenshot of the group license page in Azure A D. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
+    :::image type="content" source="../media/change-group-license-4fac5a1d-48876c4a.png" alt-text="Screenshot of the group license page in Azure A D. The plus Assignments option is selected with the current licenses for Office 365 and Windows 10 being added to the group.":::
     
-1. On the Update license assignments page, select another license, clear the selection of an existing license, add or remove license options, or any combination.
-1. When complete, select **Save**.
-1. On the group’s Licenses page, review the change.
+6.  On the Update license assignments page, select another license, clear the selection of an existing license, add or remove license options, or any combination.
+7.  When complete, select **Save**.
+8.  On the group’s Licenses page, review the change.
 
 ## Identify and resolve license assignment problems for a group in Azure Active Directory
 
@@ -24,21 +24,21 @@ When you're using group-based licensing the same errors can occur, but they happ
 
 ### To find users in an error state in a group
 
-1. Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
+1.  Open the group to its overview page and select **Licenses**. A notification appears if there are any users in an error state.
     
-    :::image type="content" source="../media/group-error-notification-919e1667.png" alt-text="Screenshot of the Group and error notifications message.  There is a yellow message bar at the top of screen announcing that two users in the group have license assignment errors.  There is an arrow to select to get more information.":::
+    :::image type="content" source="../media/group-error-notification-919e1667-eb52e2c8.png" alt-text="Screenshot of the Group and error notifications message.  There is a yellow message bar at the top of screen announcing that two users in the group have license assignment errors.  There is an arrow to select to get more information.":::
     
-1. Select the notification to open a list of all affected users. You can select each user individually to see more details.
+2.  Select the notification to open a list of all affected users. You can select each user individually to see more details.
     
-    :::image type="content" source="../media/list-of-users-with-errors-381fee9b.png" alt-text="Screenshot of the list of users in group licensing error state. This dialog was opened by selecting the more information arrow from the previous dialog. Conflicting service plan is listed as the most likely cause of the error.":::
+    :::image type="content" source="../media/list-of-users-with-errors-381fee9b-d7cf49ad.png" alt-text="Screenshot of the list of users in group licensing error state. This dialog was opened by selecting the more information arrow from the previous dialog. Conflicting service plan is listed as the most likely cause of the error.":::
     
-1. To find all groups that contain at least one error, on the **Azure Active Directory** page menu select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
+3.  To find all groups that contain at least one error, on the **Azure Active Directory** page menu select **Licenses**, and then select **Overview**. An information box is displayed when groups require your attention.
     
-    :::image type="content" source="../media/group-errors-widget-3f3842a5.png" alt-text="Screenshot of the Azure A D licenses Overview page.  This dialog shows information about license and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
+    :::image type="content" source="../media/group-errors-widget-3f3842a5-3ed2baf8.png" alt-text="Screenshot of the Azure A D licenses Overview page.  This dialog shows information about license and if any group licenses are in error state.  The dialog shows one group license in error, and that can be selected.":::
     
-1. Select the box to see a list of all groups with errors. You can select each group for more details.
+4.  Select the box to see a list of all groups with errors. You can select each group for more details.
     
-    :::image type="content" source="../media/list-of-groups-with-errors-416fb081.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog. There is one error listed for Office 365 E1.":::
+    :::image type="content" source="../media/list-of-groups-with-errors-416fb081-439f81a6.png" alt-text="Screenshot of the group license assignment error page that is displayed after selecting the error in the previous dialog. There is one error listed for Office 365 E1.":::
     
 
 The following sections give descriptions of each potential problem and the way to resolve it.
@@ -164,16 +164,16 @@ Keep in mind that you should avoid a situation in which migrating to group-based
 
 ### Recommended migration process
 
-1. You have existing automation (for example, PowerShell) managing license assignment and removal for users. Leave it running as is.
-1. Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.
-1. Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.
-1. Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
+1.  You have existing automation (for example, PowerShell) managing license assignment and removal for users. Leave it running as is.
+2.  Create a new licensing group (or decide which existing groups to use) and make sure that all required users are added as members.
+3.  Assign the required licenses to those groups; your goal should be to reflect the same licensing state your existing automation (for example, PowerShell) is applying to those users.
+4.  Verify that licenses have been applied to all users in those groups. This application can be done by checking the processing state on each group and by checking Audit Logs.
     
     
      -  You can perform a random check of a few individual users by looking at their license details. You will see that they have the same licenses assigned “directly” and “inherited” from groups.
      -  You can run a PowerShell script to [verify how licenses are assigned to users](/azure/active-directory/enterprise-users/licensing-group-advanced).
      -  When the same product license is assigned to the user both directly and through a group, only one license is consumed by the user. Hence no additional licenses are required to perform migration.
-1. Verify that no license assignments failed by checking each group for users in error state.
+5.  Verify that no license assignments failed by checking each group for users in error state.
 
 Consider removing the original direct assignments. We recommend that you do it gradually, and monitor the outcome on a subset of users first. If you leave the original direct assignments on users, when the users leave their licensed groups they retain the directly assigned licenses, which might not be what you want.
 
@@ -183,22 +183,22 @@ An organization has 1,000 users. All users require Office 365 Enterprise E3 lice
 
 Here is what the migration process could look like:
 
-1. Using the Azure portal, assign the Office 365 E3 license to the **All users** group in Azure AD.
-1. Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** page.
+1.  Using the Azure portal, assign the Office 365 E3 license to the **All users** group in Azure AD.
+2.  Confirm that license assignment has completed for all users. Go to the overview page for the group, select **Licenses**, and check the processing status at the top of the **Licenses** page.
     
     
      -  Look for “Latest license changes have been applied to all users" to confirm processing has completed.
      -  Look for a notification on top about any users for whom licenses may have not been successfully assigned. Did we run out of licenses for some users? Do some users have conflicting license plans that prevent them from inheriting group licenses?
-1. You need to check a few users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
+3.  You need to check a few users to verify that they have both the direct and group licenses applied. Go to the profile page for a user, select Licenses, and examine the state of licenses.
     
     
      -  This is the expected user state during migration:
         
-        :::image type="content" source="../media/expected-user-state-45157e0a.png" alt-text="Screenshot of the Licenses page in Azure A D.  The Office 365 E3 license is highlighted.  In the assignment paths column the license has direct assignments to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
+        :::image type="content" source="../media/expected-user-state-45157e0a-fff2becf.png" alt-text="Screenshot of the Licenses page in Azure A D.  The Office 365 E3 license is highlighted.  In the assignment paths column the license has direct assignments to some users, and that it has inherited users from a group named AniGroup). This is the expected user state during migration.":::
         
-1. After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
+4.  After confirming that both direct and group licenses are equivalent, you can start removing direct licenses from users. You can test this by removing them for individual users in the portal and then run automation scripts to have them removed in bulk. Here is an example of the same user with the direct licenses removed through the portal. Notice that the license state remains unchanged, but we no longer see direct assignments.
     
-    :::image type="content" source="../media/direct-licenses-removed-d550929e.png" alt-text="Screenshot of the Licenses page in Azure A D after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
+    :::image type="content" source="../media/direct-licenses-removed-d550929e-618390d3.png" alt-text="Screenshot of the Licenses page in Azure A D after the migration is completed.  Office 365 E3 license is highlighted. We have confirmation that direct licenses are removed.":::
     
 
 ## Change license assignments for a user or group in Azure Active Directory

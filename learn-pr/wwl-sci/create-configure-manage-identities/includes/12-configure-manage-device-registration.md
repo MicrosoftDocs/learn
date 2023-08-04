@@ -22,7 +22,7 @@ The goal of Azure AD registered devices is to provide your users with support fo
 | Device management       | Mobile Device Management (example: Microsoft Intune)                                     |
 | Key capabilities        | SSO to cloud resources, Conditional Access                                               |
 
-:::image type="content" source="../media/azure-active-directory-registered-device-e0830f2c.png" alt-text="Diagram of Azure A D registered devices.  You have a laptop and a cell phone that are directly registered with your cloud directory.":::
+:::image type="content" source="../media/azure-active-directory-registered-device-e0830f2c-c14a8a62.png" alt-text="Diagram of Azure A D registered devices.  You have a laptop and a cell phone that are directly registered with your cloud directory.":::
 
 
 Azure AD registered devices are signed in to using a local account like a Microsoft account on a Windows 10 device, but additionally have an Azure AD account attached for access to organizational resources. Access to resources in the organization can be further limited based on that Azure AD account and Conditional Access policies applied to the device identity.
@@ -46,7 +46,7 @@ Azure AD join is intended for organizations that want to be cloud-first or cloud
 | Definition          | Joined only to Azure AD requiring organizational account to sign in to the device                                        |
 | Primary audience    | Suitable for both cloud-only and hybrid organizations                                                                    |
 | Device ownership    | Organization                                                                                                             |
-| Operating systems   | All Windows 10 &amp; 11 devices except Windows 10 Home                                                           |
+| Operating systems   | All Windows 10 & 11 devices except Windows 10/11 Home                                                        |
 | Device management   | Mobile Device Management (example: Microsoft Intune)                                                                     |
 | Key capabilities    | SSO to both cloud and on-premises resources, Conditional Access, Self-service Password Reset and Windows Hello PIN reset |
 
@@ -77,7 +77,7 @@ The goal of Azure AD joined devices is to simplify:
  -  Cloud-based management of work-owned devices
  -  Users to sign in to their devices with their Azure AD or synced Active Directory work or school accounts.
 
-:::image type="content" source="../media/azure-active-directory-joined-device-9d2b59d5.png" alt-text="Diagram of Azure A D joined devices connected to the cloud. There is a laptop registered to your cloud directory with full credentials to connect with on-premises services.":::
+:::image type="content" source="../media/azure-active-directory-joined-device-9d2b59d5-eb70cbef.png" alt-text="Diagram of Azure A D joined devices connected to the cloud. There is a laptop registered to your cloud directory with full credentials to connect with on-premises services.":::
 
 
 Azure AD Join can be deployed by using a number of different methods.
@@ -89,7 +89,7 @@ For more than a decade, many organizations have used the domain join to their on
  -  IT departments to manage work-owned devices from a central location.
  -  Users to sign in to their devices with their Active Directory work or school accounts.
 
-Typically, organizations with an on-premises footprint rely on imaging methods to provision devices, and they often use **Configuration Manager** or **group policy (GP)** to manage them.
+Typically, organizations with an on-premises footprint rely on imaging methods to configure devices, and they often use **Configuration Manager** or **group policy (GP)** to manage them.
 
 If your environment has an on-premises AD footprint and you also want benefit from the capabilities provided by Azure Active Directory, you can implement hybrid Azure AD joined devices. These devices are devices that are joined to your on-premises Active Directory and registered with your Azure Active Directory.
 
@@ -103,14 +103,14 @@ If your environment has an on-premises AD footprint and you also want benefit fr
 | Device management          | Group Policy, Configuration Manager standalone or co-management with Microsoft Intune                                    |
 | Key capabilities           | SSO to both cloud and on-premises resources, Conditional Access, Self-service Password Reset and Windows Hello PIN reset |
 
-:::image type="content" source="../media/azure-active-directory-hybrid-joined-device-83fd2bb7.png" alt-text="Diagram of the process flow of Hybrid Azure A D joined devices.  A laptop is registered to an on-premises active directory, and has a synchronized account in the cloud directory for cloud access.":::
+:::image type="content" source="../media/azure-active-directory-hybrid-joined-device-83fd2bb7-91eb582b.png" alt-text="Diagram of the process flow of Hybrid Azure A D joined devices.  A laptop is registered to an on-premises active directory, and has a synchronized account in the cloud directory for cloud access.":::
 
 
 ### Scenarios for hybrid joined
 
 Use Azure AD hybrid joined devices if:
 
- -  You have Win32 apps deployed to these devices that rely on Active Directory machine authentication.
+ -  You have WIN32 apps deployed to these devices that rely on Active Directory machine authentication.
  -  You want to continue to use Group Policy to manage device configuration.
  -  You want to continue to use existing imaging solutions to deploy and configure devices.
  -  You must support down-level Windows 7 and 8.1 devices in addition to Windows 10.

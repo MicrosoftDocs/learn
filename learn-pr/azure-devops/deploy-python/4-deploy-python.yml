@@ -9,8 +9,7 @@ metadata:
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom:
-    - devx-track-python
+  ms.custom: devx-track-python, devx-track-extended-java
 durationInMinutes: 15
 content: |
   [!include[](includes/4-deploy-python.md)]
