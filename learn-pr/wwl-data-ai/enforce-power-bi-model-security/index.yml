@@ -2,7 +2,7 @@
 uid: learn.wwl.enforce-power-bi-model-security
 metadata:
   title: Enforce Power BI model security
-  description: "<div|<span style=\"color:rgb(34, 34, 34);font-family:&quot;Segoe UI&quot;, &quot;Helvetica Neue&quot;, Helvetica, Arial, Verdana;font-size:12px;display:inline !important;\"|Enforce model security in Power BI using row-level security and object-level security.</span|  </div|"
+  description: "Enforce model security in Power BI using row-level security and object-level security."
   ms.date: 08/04/2023
   author: wwlpublish
   ms.author: shlindsay
