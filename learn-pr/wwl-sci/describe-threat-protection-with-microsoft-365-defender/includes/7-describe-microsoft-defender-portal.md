@@ -1,5 +1,5 @@
 
-The Microsoft 365 Defender portal combines protection, detection, investigation, and response to devices, identities, endpoints, email & collaboration, and cloud apps, in a central place. The Microsoft 365 Defender portal = is designed to meet the needs of security teams and emphasizes quick access to information, simpler layouts. Through the Microsoft 365 Defender portal you can view the security health of your organization.
+The Microsoft 365 Defender portal combines protection, detection, investigation, and response to devices, identities, endpoints, email & collaboration, and cloud apps, in a central place. The Microsoft 365 Defender portal is designed to meet the needs of security teams and emphasizes quick access to information, simpler layouts. Through the Microsoft 365 Defender portal you can view the security health of your organization.
 
 :::image type="content" source="../media/m365-portal-inline.png" lightbox="../media/m365-portal-expanded.png" alt-text="A snapshot of the Microsoft 365 Defender portal home page.":::
 
@@ -27,7 +27,7 @@ You can build custom detection rules and hunt for specific threats in your envir
 
 ### Threat Intelligence
 
-Threat Intelligence is the existing node to access
+Subscribers to Microsoft Defender Threat Intelligence (Defender TI) can now access threat intelligence from inside the Microsoft 365 Defender portal.
 
 - Threat Analytics - Threat analytics is our in-product threat intelligence solution from expert Microsoft security researchers. It's designed to assist security teams track and respond to emerging threats. The threat analytics dashboard highlights the reports that are most relevant to your organization.
 - Intel Profiles - Intel profiles is a new feature that introduces curated content organized by threat actors, their tools and known vulnerabilities
