@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110070
-labModal: true
+# labId: 110070
+labModal: false
 durationInMinutes: 60
 content: |
   [!include[](includes/2-analyze-time-stamped-data-with-time-series-insights.md)]
