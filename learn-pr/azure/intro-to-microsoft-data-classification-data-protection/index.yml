@@ -1,28 +1,26 @@
 ### YamlMime:Module
 uid: learn.azure.data-classification-and-data-protection
 metadata:
-  title: Intro to Microsoft data classification and data protection
-  description: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Defender for Cloud Apps, service encryption and Office 365 Message Encryption.
-  ms.date: 04/12/2021
+  title: Introduction to Microsoft data classification and protection
+  description: Understand data classification and protection technologies like Purview Information Protection, sensitivity labels, and service and message encryption.
+  ms.date: 08/03/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-title: Intro to Microsoft data classification and data protection 
-summary: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Defender for Cloud Apps, service encryption and Office 365 Message Encryption.
+title: Introduction to Microsoft data classification and protection 
+summary: Understand data classification and protection technologies like Purview Information Protection, sensitivity labels, and service and message encryption.
 abstract: |
-  By the end of this module, you'll be able to:
-  - Describe Azure Information Protection and Microsoft Information Protection
-  - Describe sensitivity labels
-  - Describe how to use sensitivity labels to protect data
-  - Describe unified labeling scanner
-  - Describe Microsoft Defender for Cloud Apps
-  - Describe service encryption with Customer Key
-  - Describe Office 365 Message Encryption
+  Understand and know how to apply:
+  - Microsoft Purview Information Protection.
+  - Sensitivity labels, label policies, and scanning.
+  - Microsoft Defender for Cloud Apps.
+  - Service and Customer Key encryption.
+  - Message Encryption
 
 prerequisites: |
-  - Basic knowledge of data protection
-  - Basic experience with security technologies
-  - Basic experience with Microsoft 365 or Office 365 services
+  - Basic knowledge of data protection and security concepts and technologies.
+  - Basic experience with Microsoft Azure and Microsoft 365 or Microsoft Office services.
+  - Ability to access features in the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
 iconUrl: /training/achievements/data-classification-and-data-protection.svg
 levels:
 - beginner

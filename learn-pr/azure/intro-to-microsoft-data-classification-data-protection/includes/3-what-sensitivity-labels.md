@@ -1,33 +1,48 @@
-You’ve introduced yourself to Microsoft Information Protection and Azure Information Protection. Now you want to figure out if sensitivity labels might be suitable for Contoso. In this unit, you’ll learn what sensitivity labels are and how you can use them.
+Microsoft Purview Information Protection solutions are implemented by using sensitivity labels. Sensitivity labels let you classify and protect your organization's data while making sure not to hinder user productivity and collaboration. This unit explains sensitivity labels, and how you can configure labels and labeling policies to help protect your organization's data.
 
-You can use sensitivity labels to classify and help protect your sensitive content, while maintaining users’ productivity and ability to collaborate. You can use sensitivity labels in a wider scope than classic Azure Information Protection labels, and you can use them on operating systems, such as macOS, that don’t support Azure Information Protection client software. Recent updates to the Microsoft 365 client apps, such as Word and Excel, include a client for sensitivity labels.
+## Sensitivity labels in Office client apps
 
-## Sensitivity labels overview
+Microsoft 365 client apps like Word and Excel now have sensitivity labeling built-in. Users must be signed in to apply sensitivity labels or to open protected documents they have access to.
 
-When you assign a sensitivity label to a document or email, it's like applying a stamp to content that's:
+In Office apps, a sensitivity label appears like a tag to users on an email or document. Each item of content can have a single sensitivity label applied to it. An item can have both a sensitivity label and a single retention label.
 
-- Customizable. You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
-- Clear text. Because the label is stored in clear text in the content's metadata, third-party apps and services can read it and then apply their own protective actions, if necessary.
-- Persistent. After you apply a sensitivity label to content, the label is stored in the metadata of that email or document. This means the label roams with the content, including the protection settings, and these data become the basis for applying and enforcing policies.
+:::image type="content" source="../media/3-sensitivity-not-set-callout.png" alt-text="Image depicts how a sensitivity label appears in an Office app.":::
 
-In Office apps, a sensitivity label appears like a tag to users on an email or document. Each item of content can have a single sensitivity label applied to it. An item can have both a single sensitivity label and a single retention label applied to it.
+## Sensitivity label creation and configuration
 
-:::image type="content" source="../media/3-sensitivity-not-set-callout.png" alt-text="Image depicts how a sensitivity label is selected in the Office app.":::
+You create and publish sensitivity labels in your labeling admin center, such as the Microsoft Purview compliance portal, Microsoft 365 Defender portal, or Exchange admin center.
 
-After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content. With a sensitivity label, you can:
+When you create and configure a sensitivity label, you can define access restrictions on content that has that label. You can configure the following settings:
 
-- Encrypt content. With sensitivity labels, you can encrypt the content in emails, or in both email and documents. You can choose which users or groups have permissions to perform which actions and for how long. For example, you can choose to allow users in a specific group in another organization to have permissions to review the content for only seven days after the content is labeled. Instead of administrator-defined permissions, you can allow your users to assign permissions to the content when they apply the label.
-- Mark content. When you use Office apps, you can mark the content by adding watermarks, headers, or footers to email or documents that have the label applied. Watermarks can be applied to documents but not email. Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except in Excel. Excel has a total limit of 255 characters for headers and footers, but this limit includes characters that aren't visible, such as formatting codes. If you reach that limit, the string you enter isn't displayed in Excel.
-- Protect content. You can help protect content in containers such as sites and groups when you enable the use of sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites. Configuration options for Site and group settings don't display until you enable this capability. This label configuration doesn't result in documents being automatically labeled but instead, the label settings protect content by controlling access to the container where documents are stored. These settings include the privacy level, whether a Microsoft 365 group owner can add guests to the group, and the level of access granted to an unmanaged device.
-- Apply the label automatically in Office apps or recommend a label. Choose what types of sensitive information you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays the text you choose.
+- **Scope** of the label, such as files, emails, meetings, and sites or groups.
 
-When you create a sensitivity label, you can restrict access to content with that label. After a sensitivity label is applied to an email or document, any configured protection settings for that label are enforced on the content.
+- **Encryption.** You can restrict access by encrypting the content in emails, or in both emails and documents. You define which users or groups have permissions to perform which actions, and for how long. Or, you can allow users to assign permissions to the content when they apply the label.
 
-For example, with the encryption settings for a sensitivity label, you can help protect content so that:
+- **Content marking** such as applying custom headers, footers, and watermarks to items that have the label applied.
+
+  You can apply watermarks to documents, but not email. Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except Excel has a total limit of 255 characters for headers and footers, including characters that aren't visible like formatting codes.
+
+- **Auto-labeling for files and emails.**
+
+  You can choose what types of sensitive information you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays the text you choose.
+
+- **Protection settings for groups and sites.** 
+
+  You can help protect content in containers such as sites and groups by using sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites. This configuration doesn't apply to documents, but protects content by controlling access to the containers where documents are stored. These settings include privacy settings, whether a group owner can add guests to the group, external sharing settings, and the level of access users have from unmanaged devices.
+
+Sensitivity labels have the following characteristics:
+
+- **Customizable.** You can create categories for different levels of sensitive content in your organization, such as Personal, Public, General, Confidential, and Highly Confidential.
+
+- **Clear text.** The label is stored in clear text in the content's metadata, so third-party apps and services can read it and apply their own protections.
+
+- **Persistent.** After you apply a sensitivity label to content, the label is stored in the metadata of that email or document. The label and associated protection settings travel with the content and become the basis for applying and enforcing policies.
+
+After you or a content owner apply the label to an email or document, any configured protection settings for that label are enforced on the content. For example, you could configure sensitivity labels to restrict content such that:
 
 - Only users within your organization can open a confidential document or email.
-- Only users in the marketing department can edit and print the promotion announcement document or email, while all other users in your organization can only read it.
-- Users can't forward an email or copy information from it that contains news about an internal reorganization.
-- The current price list that's sent to business partners can't be opened after a specified date.
+- Only users in certain departments can edit or print a document or email, while all other users in the organization can only read it.
+- Users can't forward or copy an internal email or any information it contains.
+- Recipients can't open an email that contains a current price list after a specified date.
+- Users in a specific group in another organization can review the content for only seven days.
 
-All Microsoft Information Protection solutions are implemented by using sensitivity labels. To create and publish these labels, refer to your labeling admin center, such as the Microsoft 365 compliance center. You can also use the Microsoft 365 Defender portal, or the Security &amp; Compliance Center.
