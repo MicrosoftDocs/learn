@@ -26,6 +26,9 @@ The custom banned password list is combined with the global banned password list
 
 Banned password lists are a feature of Microsoft Entra ID premium licensing.
 
+:::image type="content" source="../media/custom-banned-passwords-config-inline.png" lightbox="../media/custom-banned-passwords-config-expanded.png" alt-text="A screen capture showing a configuration screen for setting up a custom banned password list.":::
+
+
 ### Protecting against password spray
 
 Microsoft Entra password protection helps you defend against password spray attacks.  Most password spray attacks submit only a few of the known weakest passwords against each of the accounts in an enterprise. This technique allows the attacker to quickly search for an easily compromised account and avoid potential detection thresholds.
