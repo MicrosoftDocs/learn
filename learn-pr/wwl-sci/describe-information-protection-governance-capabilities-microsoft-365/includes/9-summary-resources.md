@@ -25,3 +25,4 @@ Now that you’ve completed this module, you should be able to:
 - [Learn about retention policies and retention labels](/microsoft-365/compliance/retention)
 - [Govern your data with Microsoft Purview](/microsoft-365/compliance/manage-information-governance)
 - [Learn about records management](/microsoft-365/compliance/records-management)
+- [What's available in the Microsoft Purview governance portal?](/purview/governance-solutions-overview)

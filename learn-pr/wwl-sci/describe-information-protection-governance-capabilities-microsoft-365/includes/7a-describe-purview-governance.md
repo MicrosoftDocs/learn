@@ -13,7 +13,7 @@ The Microsoft Purview governance portal provides a unified data governance servi
 
 ### Data Map
 
-Microsoft Purview Data Map provides the foundation for data discovery and data governance. By scanning registered data sources, Azure Purview Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data. Microsoft Purview supports Azure data sources and various data source categories including databases, file storage, and applications and services from third parties.
+Microsoft Purview Data Map provides the foundation for data discovery and data governance. By scanning registered data sources, Data Map is able to capture metadata about enterprise data, to identify and classify sensitive data. Microsoft Purview supports Azure data sources and various data source categories including databases, file storage, and applications and services from third parties.
 
 ### Data Catalog
 

@@ -29,7 +29,7 @@ For more information on comparing, use the [Compare restrictions for what action
 
 The most important difference is that if content has been marked as a regulatory record, nobody, not even a global administrator, can remove the label. Marking an item as a regulatory record can have irreversible consequences, and should only be used when necessary. As a result, this option isn’t available by default, and has to be enabled by the administrator using PowerShell.
 
-## Common use cases for records management
+### Common use cases for records management
 
 The capabilities of Microsoft Purview Records Management are flexible. There are different ways in which records management can be used across an organization, including:
 
