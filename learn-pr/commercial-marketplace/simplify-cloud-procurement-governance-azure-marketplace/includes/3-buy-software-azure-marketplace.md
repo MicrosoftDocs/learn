@@ -16,7 +16,7 @@ Free applications don't have associated software costs. You only pay for the und
 
 ### Bring your own license (BYOL)
 
-Your organization might have spent considerable amounts of time and money buying software licenses from providers before you started your cloud migration. If possible, you want to take advantage of those investments as you migrate your workloads and applications from on-premise to Azure.
+Your organization might have spent considerable amounts of time and money buying software licenses from providers before you started your cloud migration. If possible, you want to take advantage of those investments as you migrate your workloads and applications from on-premises to Azure.
 
 Azure Marketplace allows you to find software that lets you bring your own license (BYOL), giving you the flexibility you need to use subscriptions that you purchased outside of Azure Marketplace. With BYOL software applications, you pay the software vendor directly for licenses, while Azure infrastructure costs appear on your Microsoft invoice.
 
@@ -64,7 +64,7 @@ A private offer gives you and the software vendor the ability to negotiate speci
 
 Once a vendor has created a private offer for you, you can view the offer in the Azure Marketplace experience in the Azure portal. Private offers are not visible in the online store.
 
-Log into the Azure portal and navigate to the Azure Marketplace, where you'll see a notification at the top of the screen and a link to view your private offers.
+Sign in to the Azure portal and navigate to the Azure Marketplace, where you'll see a notification at the top of the screen and a link to view your private offers.
 
 :::image type="content" source="../media/9-private-offer-notification.png" alt-text="Screenshot of a private offer notification in the Azure Marketplace experience in the Azure portal.":::
 
