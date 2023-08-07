@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-arc-enabled-kubernetes.5-services
+uid: learn.azure.intro-to-arc-enabled-kubernetes.services
 metadata:
   title: Deploy services to Azure Arc-enabled Kubernetes clusters
   description: Learn about the types of services you can deploy to Arc-enabled Kubernetes clusters and the process for doing so.

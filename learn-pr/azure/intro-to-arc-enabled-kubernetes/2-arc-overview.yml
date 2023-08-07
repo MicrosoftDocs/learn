@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.intro-to-arc-enabled-kubernetes.2-arc-overview
+uid: learn.azure.intro-to-arc-enabled-kubernetes.arc-overview
 metadata:
   title: Overview of Azure Arc
   description: Learn about the basics of Azure Arc and its key capabilities and benefits.
