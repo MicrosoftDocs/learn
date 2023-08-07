@@ -4,11 +4,10 @@ title: Examine principal architectures
 metadata:
   title: Examine principal architectures
   description: "Examine principal architectures"
-  ms.date: 04/20/2023
+  ms.date: 08/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/15-examine-principal-architectures.md)]

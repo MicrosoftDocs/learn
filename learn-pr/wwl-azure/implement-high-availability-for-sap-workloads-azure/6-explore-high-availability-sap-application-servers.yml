@@ -4,11 +4,10 @@ title: Explore high availability of SAP application servers
 metadata:
   title: Explore high availability of SAP application servers
   description: "Explore high availability of SAP application servers"
-  ms.date: 04/20/2023
+  ms.date: 08/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/6-explore-high-availability-sap-application-servers.md)]

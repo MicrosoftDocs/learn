@@ -4,11 +4,10 @@ title: Explore Oracle high availability for SAP in Azure
 metadata:
   title: Explore Oracle high availability for SAP in Azure
   description: "Explore Oracle high availability for SAP in Azure"
-  ms.date: 04/20/2023
+  ms.date: 08/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/11-explore-oracle-high-availability.md)]
