@@ -3,7 +3,7 @@ uid: learn.aspnetcore.build-web-api-minimal-spa
 metadata:
   title: Create a full stack application by using React and minimal API for ASP.NET Core
   description: Learn how to create a full stack application by using React and minimal API for ASP.NET Core.
-  ms.date: 11/04/2021
+  ms.date: 08/11/2023
   author: softchris
   ms.author: chnoring
   ms.manager: markl
