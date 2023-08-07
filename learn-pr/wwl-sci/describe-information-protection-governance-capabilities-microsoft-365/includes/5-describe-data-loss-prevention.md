@@ -24,7 +24,7 @@ All DLP monitored activities are recorded to the Microsoft 365 Audit log by defa
 
 ### DLP Policy information
 
-DLP policies can be created from predefined templates or you can create a custom policy. No matter which you choose, all DLP policies require the same information.
+DLP policies can be created from predefined templates, or you can create a custom policy. No matter which you choose, all DLP policies require the same information.
 
 - Choose the type of data to monitor. Predefined policy templates allow you to choose from categories such as Financial data, Medical and health data, or Privacy data for various countries and regions.  Alternatively, you can create a custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
 - Choose administrative scoping. DLP policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units.
@@ -34,9 +34,9 @@ DLP policies can be created from predefined templates or you can create a custom
 
 :::image type="content" source="../media/dlp-policy-create-v2-inline.png" lightbox="../media/dlp-policy-create-v2-expanded.png" alt-text="A screen capture of the landing page when creating a DLP policy. The screen shows the option of starting with a template or custom policy.":::
 
-### What is endpoint data loss prevention?
+:::image type="content" source="../media/dlp-policy-locations-v2-inline.png" lightbox="../media/dlp-policy-locations-v2-expanded.png" alt-text="A screen capture of the landing page when creating a DLP policy. The screen shows the option of starting with a template or custom policy.":::
 
-Endpoint data loss prevention (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS.
+### What is endpoint data loss prevention?
 
 Endpoint DLP enables you to audit and manage the many activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices. Listed below are just a few examples:
 
@@ -55,12 +55,12 @@ Admins use this information to enforce protective actions for content through co
 
 ### Data loss prevention in Microsoft Teams
 
-Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that prevent users from sharing sensitive information in a Teams chat session or channel, whether it's in a message, or a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot that follows shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
+Data loss prevention capabilities extends to Microsoft Teams chat and channel messages, whether it's in a message or a file, including messages in private channels. Just like with Exchange, Outlook, SharePoint, and OneDrive, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot that follows shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
 
 :::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
 
 The user can then find out more about why their message was blocked by selecting the "What can I do?" link, and take appropriate action.
 
-:::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="The user can find more information about why their message was blocked, and take recommended actions.":::
+:::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="A screen capture of a DPL policy tip presented to user whose message is blocked. The tip provides information about why their message was blocked, and actions to take.":::
 
 DLP policies applied to Microsoft 365 services, including Microsoft Teams, can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.
