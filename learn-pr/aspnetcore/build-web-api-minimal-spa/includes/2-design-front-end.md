@@ -12,7 +12,7 @@ You sit down with your team to figure out the answers. The team consists of a us
 
 ## Build a front-end app
 
-The first thing you want to know is what capabilities your front-end app should have. When you know that, you can start to think about user journeys: things like how a user will accomplish a task, what views they need, and how they interact with the app. You'll also be able to imagine some of the UI you might need, including buttons, sliders, and text fields. There are different ways to approach this problem.
+The first thing you want to know is what capabilities your front-end app should have. When you know that, you can start to think about user journeys: things like how a user accomplishes a task, what views they need, and how they interact with the app. You'll also be able to imagine some of the UI you might need, including buttons, sliders, and text fields. There are different ways to approach this problem.
 
 ### Select a Framework
 
@@ -26,7 +26,7 @@ But does that mean that the app has only one view? A single page doesn't mean th
 
 #### Do I need a framework?
 
-As with everything in IT, it depends. On this matter, it depends on how fast you need to get the app done and what features it needs. If you're in a hurry, and your app needs to move between pages, collect user input data, and act like a client, then your app should use a SPA framework.
+As with everything in technology, it depends. Front-end frameworks provide the scaffolding to allow you to keep most functionality and operations on the browser, with the user's compute. Some frameworks, such as Next.js, even allow a hybrid model, with trips to the API wrapped into the framework allowing statically generated or hybrid generated pages. App Frameworks can also expediate the front-end development but providing build systems, scaffolding, component libraries, and other user interface options. If your app needs to move between pages on the browser, collect user input data, and act like a client, then your app should use a SPA framework.
 
 #### Which SPA framework do I choose?
 
@@ -35,24 +35,28 @@ There's more than one SPA framework out there, and you want to select a framewor
 - **Angular:** This framework has been around for many years and uses TypeScript heavily. TypeScript resembles C#, and the tooling is good for Angular.
 - **React:** React is popular and you can use ES6 and TypeScript. Like Angular, it has great tooling.
 - **Vue.js:** Vue.js is also a good choice, and many people are using it.
-- **Svelte:** Svelte is relatively new in this context, but it does a great job of looking like you are only working in HTML, JavaScript, and CSS. Its compiler is powerful and able to _hide_ the framework parts to a high degree.
+- **Svelte:** Svelte is relatively new in this context, but it does a great job of looking like you're only working in HTML, JavaScript, and CSS. Its compiler is powerful and able to _hide_ the framework parts to a high degree.
+- **Next.js:** Next.js allows for hybrid static and server-side rendering, and is a great choice for a hybrid app. 
 
 ### Component-based React example
 
-All of the SPA frameworks mentioned in the previous section use components. A _component_ is a logically separated part that does one thing well. For example, a component might display a resource, edit a resource, or show a piece of content that you want to promote. Components usually contain both markup and JavaScript, as well as CSS. Another nice benefit of using a component is that you can reuse it wherever you need to in your application.
+All of the SPA frameworks mentioned in the previous section use components. A _component_ is a logically separated part that does one thing well. For example, a component might display data, edit data, or show a piece of content that you want to promote. Components usually contain HTML markup, JavaScript, and CSS. Another nice benefit of using a component is that you can reuse it wherever you need to in your application. The component only rerenders if the data sent to it changes, for efficiency.
 
 Here's what a component can look like in React:
 
 ```javascript
 import React from "react";
-const Detail = ({ item: { title, description } }) => <React.Fragment>
-  <div>{title}<div>
-  <div>{description}</div>
-</React.Fragment>
-module.exports = Detail;
+
+const Detail = ({ item: { title, description } }) => 
+  <>
+    <div>{title}<div>
+    <div>{description}</div>
+  </>
+
+export default Detail;
 ```
 
-This component is showing an item with the `title` and `description` properties.
+This component accepts input of an item with the `title` and `description` properties. These properties are then displayed in HTML markup inside a React fragment `<>`. The `Detail` component is exported so that it can be used in other components.
 
 To use this component, you would type something like this:
 
@@ -60,17 +64,53 @@ To use this component, you would type something like this:
 <Detail item={{ title: "Cheese Pizza", description : "Very cheesy" }} />
 ```
 
-Here, you are passing in a JavaScript object that has the properties `title` and `description`. These properties are rendered by the `Detail` component.
+Here, you're passing in a JavaScript object that has the properties `title` and `description`. These properties are rendered by the `Detail` component.
 
 ## Plan your front-end app
 
-At a high level, your user will manage resources. Regardless of whether those resources are nuts and bolts, orders, or pizzas, the user will need to do things like:
+At a high level, your user manages data. Regardless of whether the data are nuts and bolts, orders, or pizzas, the user needs to do things like:
 
-- **Create a resource:** Creating a resource means that the user will type in information on a resource, and send that to a server app.
-- **Read a resource:** You will need to read the resource information from the server app, and present that to the user.
-- **Update a resource:** It's important that the user can update the information on a resource. The user might mistype the information, or the information might change over time.
-- **Delete a resource:** Sometimes, a resource isn't needed anymore, and the user must be able to remove that resource.
+- **Create data:** Creating a data means that the user types in information on a data, and send that to a server app.
+- **Read data:** You'll need to read the information from the server app, and present that to the user.
+- **Update data:** It's important that the user can update the information. The user might mistype the information, or the information might change over time.
+- **Delete data:** Sometimes, data isn't needed anymore, and the user must be able to remove it.
 
-### Master-detail pattern
+## One-way data binding
+
+The ability to pass information from a parent component to a child component is referred to as one-way data binding. The data always moves from the parent to the child. The child component can't change the data. If the child component needs to change the data, it must send a message to the parent component, and the parent component can then change the data. This allows the parent to control when the child is rerendered. Over-rendering in React can be a performance issue, so it's important to be aware of this.
+
+In order for the child component to signal to the parent that some of the data in the child has been updated, the parent sends along the data, and its own functions to update the data.
+
+Using the previous example, here's how the parent component might look:
+
+```javascript
+import React, { useState } from "react";
+import Detail from "./Detail";
+
+const Parent = () => {
+  const [item, setItem] = useState({ title: "Cheese Pizza", description: "Very cheesy" });
+
+  return (
+    <Detail item={item} setItem={setItem} />
+  );
+};
+```
+
+Here, the `Parent` component is using the `useState` hook to create a state variable called `item`. The `item` variable is initialized with a JavaScript object that has the properties `title` and `description`. The `Parent` component then passes the `item` variable and the `setItem` function to the `Detail` component.
+
+The `Detail` component can then use the `item` variable to display the data, and the `setItem` function to update the data. Here's how the `Detail` component might look:
+
+```javascript
+import React from "react";
+
+const Detail = ({ item, setItem }) => 
+  <>
+    <div>{item.title}<div>
+    <div>{item.description}</div>
+    <button onClick={() => setItem({ title: "Pepperoni Pizza", description: "Very meaty" })}>Change</button>
+  </>
+```
+
+## Master detail pattern
 
 A common pattern to use is something referred to as the *master-detail* pattern. For example, you might have a main view that shows your resources as a list. From that view, you can drill down to get into the details of a resource. The details might be available on the master view itself, or in a special detail view.
