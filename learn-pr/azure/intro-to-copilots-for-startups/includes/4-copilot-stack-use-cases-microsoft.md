@@ -59,11 +59,11 @@ Microsoft Security Copilot is a versatile tool with a wide range of applications
 - **Security training and skill development:** With step-by-step instructions for mitigating risks, Microsoft Security Copilot helps security teams build their expertise and improve their response to security challenges.
 - **Explaining complex scenarios with Multi-modality AI:** Users can ask questions in natural language and receive clear, actionable answers. Microsoft Security Copilot uses the power of Azure OpenAI Service DALL-E 2 to explain realistic and complex scenarios based on user queries and data.
 
-Here's a sample prompt to visualize a security scenario:
+*Here's a sample prompt to visualize a security scenario:*
 
   :::image type="content" source="../media/4-sample-prompt-security-scenario.png" alt-text="A screenshot of a sample security scenario prompt, produce visual to explain the activity of the download, the exploit, and how it moved through the incident.":::
 
-Here's a sample output for a security incident:
+*Here's a sample output for a security incident:*
   :::image type="content" source="../media/4-security-incident-output.png" alt-text="A screenshot of a security incident showing alerts and connections, including timestamps, user and workstation names, file names, and potential threat sources.":::
 
 ### Takeaways - Microsoft Security Copilot
@@ -79,20 +79,20 @@ The following are key takeaways for startups building a Microsoft Security Copil
 
 Microsoft 365 Copilot helps users create, edit, and share documents, presentations, and spreadsheets. It provides suggestions for content, design, and grammar, and allows for real-time collaboration with others.
 
-  :::image type="icon" source="../media/4-microsoft-365-copilot-diagram.png":::
+  :::image type="content" source="../media/4-microsoft-365-copilot-diagram.png"alt-text="A diagram that illustrates how Microsoft 365 integrates with advanced processing, orchestration engine, and synergy with Large Language Models such as GPT-4. This integration seamlessly connects with Microsoft 365 applications and the business data within the Microsoft Graph.":::
 
 Microsoft 365 Copilot uses prompts that are designed to make your writing easier and more effective, while respecting your privacy and security.
 
 - Prompts are grounded in the Microsoft 365 knowledge graph, which contains information about your organization, your contacts, your projects, and other topics.
 - The prompts are also personalized to your preferences and style, so you can choose the ones that suit you best.
 
-Here's an example of using natural language to uncover advanced products features in a product (Excel) without using a complex UI:
+*Here's an example of using natural language to uncover advanced products features in a product (Excel) without using a complex UI:*
 
   :::image type="content" source="../media/4-example-natural-language.gif" alt-text="An animated screenshot showing how to use natural language to uncover advanced product features in Excel without using a complex UI.":::
 
-Here's a video that explains the Microsoft 365 Copilot system:
+*Here's a video that explains the Microsoft 365 Copilot system:*
 
-Enter VIDEO
+> [!VIDEO https://www.microsoft.com/videoplayer/embed/RW190cN]
 
 ### Takeaways - Microsoft 365 Copilot
 
