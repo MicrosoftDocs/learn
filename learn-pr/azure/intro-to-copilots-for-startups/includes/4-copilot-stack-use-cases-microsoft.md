@@ -30,7 +30,7 @@ You can implement GitHub Copilot in different ways. It operates as an extension 
 
 The following are key takeaways for startups building a GitHub Copilot-like tool for software developers:
 
-- **Use AI and NLP:** To build an effective copilot-like tool, startups should invest in learning Azure OpenAI Services such as GPT and Codex and integrates its natural language processing capabilities. These technologies enable the tool to understand developers' intent from natural language descriptions and generate relevant code snippets.
+- **Use AI and NLP:** To build an effective copilot-like tool, startups should invest in learning Azure OpenAI Services such as GPT and Codex and integrate its natural language processing capabilities. These technologies enable the tool to understand developers' intent from natural language descriptions and generate relevant code snippets.
 - **Provide real-time assistance:** Ensure that the copilot tool offers real-time suggestions. This feature saves time and reduces the need for manual typing.
 - **Foster interactive problem solving:** Implement the tool in a way that allows it to engage in conversations with the users' challenges. This interactivity can help provide potential solutions or explanations for specific issues.
 - **Promote learning and adaptability:** Position the copilot tool as an educational resource, introducing users to new techniques and best practices. Allow the tool to learn from user interactions to tailor suggestions based on individual preferences and styles.
@@ -57,7 +57,7 @@ Microsoft Security Copilot is a versatile tool with a wide range of applications
 - **Threat hunting:** It surfaces and analyzes potential threats to empower defenders to proactively detect and neutralize malicious activities.
 - **Vulnerability management:** It helps to identify and prioritize vulnerabilities in an organization's infrastructure, enabling timely remediation.
 - **Security training and skill development:** With step-by-step instructions for mitigating risks, Microsoft Security Copilot helps security teams build their expertise and improve their response to security challenges.
-- **Explaining complex scenarios with Multi-modality AI:** Users can ask questions in natural language and receive clear, actionable answers. Microsoft Security Copilot uses the power of Azure OpenAI Service DALL-E 2 to explain realistic and complex scenarios based on user queries and data.
+- **Explaining complex scenarios with multi-modality AI:** Users can ask questions in natural language and receive clear, actionable answers. Microsoft Security Copilot uses the power of Azure OpenAI Service DALL-E 2 to explain realistic and complex scenarios based on user queries and data.
 
 *Here's a sample prompt to visualize a security scenario:*
 
@@ -86,7 +86,7 @@ Microsoft 365 Copilot uses prompts that are designed to make your writing easier
 - Prompts are grounded in the Microsoft 365 knowledge graph, which contains information about your organization, your contacts, your projects, and other topics.
 - The prompts are also personalized to your preferences and style, so you can choose the ones that suit you best.
 
-*Here's an example of using natural language to uncover advanced products features in a product (Excel) without using a complex UI:*
+*Here's an example of using natural language to uncover advanced product features in a product (Excel) without using a complex UI:*
 
   :::image type="content" source="../media/4-example-natural-language.gif" alt-text="An animated screenshot showing how to use natural language to uncover advanced product features in Excel without using a complex UI.":::
 
@@ -101,5 +101,5 @@ The following are key takeaways for startups building a Microsoft 365 Copilot-li
 - **AI-driven content suggestions:** A copilot system for content creation should provide AI-driven suggestions for content, design, and grammar. This feature helps users enhance their documents, presentations, and spreadsheets by applying the power of large language models (LLMs) to understand natural language and suggest improvements and creative ideas.
 - **Personalization:** The copilot system should be personalized to individual users' preferences and style. This means tailoring the suggestions to suit each user's unique writing and design preferences, making the tool more useful and user-friendly.
 - **Integration with knowledge graphs:** Grounding prompts and suggestions in a knowledge graph like Microsoft 365 Copilot helps the copilot system understand the user's organization, contacts, projects, and other relevant topics. This enables more contextually relevant and accurate suggestions, enhancing the overall user experience.
-- **Natural language interface:** A key advantage of Microsoft 365 Copilot is its ability to uncover advanced product features, such as Excel, without the need for a complex user interface. Startups should aim to create a copilot system that seamlessly understands and responds to natural language queries and commands, making it more intuitive and user-friendly.
+- **Natural language interface:** A key advantage of Microsoft 365 Copilot is its ability to uncover advanced product features, such as in Excel, without the need for a complex user interface. Startups should aim to create a copilot system that seamlessly understands and responds to natural language queries and commands, making it more intuitive and user-friendly.
 - **Privacy and security:** Ensuring user privacy and data security is essential for any copilot system. Users need to have confidence that their content and information are protected, especially when using AI-powered tools that analyze their data.

@@ -38,7 +38,7 @@ quiz:
       explanation: "Incorrect. Copilot isn't limited to video editing and post-production. While it can be helpful in various software applications, its design is to be versatile and augment user capabilities across a broad range of tasks, not just in one specific area."
     - content: "Copilots are already being used by startups to develop and deploy AI-powered applications."
       isCorrect: true
-      explanation: "Correct. Given its versatile nature, a copilot are already being used by startups to develop and deploy AI-powered applications. The tool's adaptability makes it useful in various facets of a startup's operations, from development to content creation."
+      explanation: "Correct. Given its versatile nature, copilots are already being used by startups to develop and deploy AI-powered applications. The tool's adaptability makes it useful in various facets of a startup's operations, from development to content creation."
     - content: "It can only generate code for Python programming language."
       isCorrect: false
       explanation: "Incorrect. A copilot is designed to work alongside users in various software applications, it's not limited to generating code for just one programming language or even just to coding tasks. It aims to support users in multiple domains and tasks, making it versatile and adaptable."
