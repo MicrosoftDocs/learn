@@ -1,42 +1,44 @@
 
+Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to prevent data loss by detecting risky behavior and preventing sensitive information from being shared inappropriately.
 
-Data loss can harm an organization’s customers, business processes, and the organization itself. Organizations need to prevent data loss by detecting risky behavior and preventing sensitive information from being shared inappropriately. Admins can use data loss prevention policies, available in the Microsoft Purview compliance portal, to help their organization.
+In Microsoft Purview, you implement data loss prevention by defining and applying DLP policies. With a DLP policy, you can **identify, monitor, and automatically protect** sensitive items across:
+- Microsoft 365 services such as Teams, Exchange, SharePoint, and OneDrive accounts
+- Office applications such as Word, Excel, and PowerPoint
+- Windows 10, Windows 11, and macOS (three latest released versions) endpoints
+- Cloud apps
+- on-premises file shares and on-premises SharePoint
+- Power BI
 
-Microsoft Purview Data Loss Prevention (DLP) is a way to protect sensitive information and prevent its inadvertent disclosure. With DLP policies, admins can:
+DLP detects sensitive items by using deep content analysis, not by just a simple text scan. Content is analyzed for primary data matches to keywords, by the evaluation of regular expressions, by internal function validation, and by secondary data matches that are in proximity to the primary data match. Beyond that DLP also uses machine learning algorithms and other methods to detect content that matches your DLP policies.
 
-- **Identify, monitor, and automatically protect** sensitive information across Microsoft 365, including:
-  - OneDrive for Business
-  - SharePoint Online
-  - Microsoft Teams
-  - Exchange Online
-- **Help users learn how compliance works** without interrupting their workflow. For example, if a user tries to share a document containing sensitive information, a DLP policy can send them an email notification and show them a policy tip.
-- **View DLP reports** showing content that matches the organization's DLP policies. To assess how the organization is following a DLP policy, admins can see how many matches each policy has over time.
+### Protective actions of DLP policies
+DLP policies are how you monitor the activities that users take on sensitive items at rest, sensitive items in transit, or sensitive items in use and take protective actions. Protective actions that DLP policies can take include:
 
-DLP policies protect content through the enforcement of rules that consist of:
+- Show a pop-up policy tip to the user that warns them that they may be trying to share a sensitive item inappropriately.
+- Block the sharing and, via a policy tip, allow the user to override the block and capture the users' justification.
+- Block the sharing without the override option.
+- For data at rest, sensitive items can be locked and moved to a secure quarantine location,
+- For Teams chat, the sensitive information won't be displayed.
 
-- **Conditions** that the content must match before the rule is enforced.
-- **Actions** that the admin wants the rule to take automatically when content that matches the conditions has been found.
-- **Locations** where the policy will be applied, such as Exchange, SharePoint, OneDrive, and more.
+All DLP monitored activities are recorded to the Microsoft 365 Audit log by default and routed to Activity explorer. When a user performs an action that meets the criteria of a DLP policy, and you have alerts configured, DLP provides alerts in the DLP alert management dashboard.
 
-For example, an admin can configure a DLP policy that helps detect information that's subject to a compliance regulation like the Health Insurance Portability and Accountability Act (HIPAA) across all SharePoint sites and OneDrive for Business. The admin can block the relevant documents from being shared inappropriately.
+### DLP Policy information
 
-DLP policies protect information by identifying and automatically protecting sensitive data.
-Here's some scenarios where DLP policies can help:
+DLP policies can be created from predefined templates or you can create a custom policy. No matter which you choose, all DLP policies require the same information.
 
-- Identify any document containing a credit card number stored in users’ OneDrive for Business accounts.
-- Automatically block an email containing employee personal information from being sent outside the organization.
+- Choose the type of data to monitor. Predefined policy templates allow you to choose from categories such as Financial data, Medical and health data, or Privacy data for various countries and regions.  Alternatively, you can create a custom policy that uses the available sensitive information types, retention labels, and sensitivity labels.
+- Choose administrative scoping. DLP policies can be applied to all users and groups by an unrestricted administrator, or they can be scoped to administrative units. Administrative units let you subdivide your organization into smaller units, and then assign specific administrators that can manage only the members of those units.
+- Choose the location where the policy will be applied, such as Exchange, SharePoint, OneDrive, and more.
+- Choose the conditions that must be matched for a policy to be applied to an item.
+- Choose the protective action to take when the policy conditions are met.
 
-A policy can contain one or more rules, and each rule consists of conditions and actions at a minimum. For each rule, when the conditions are met, the actions are taken automatically. Rules can be grouped into one policy, to help simplify management and reporting.  The diagram below shows how multiple rules, each with their own conditions and actions, are grouped into a single policy.
+:::image type="content" source="../media/dlp-policy-create-v2-inline.png" lightbox="../media/dlp-policy-create-v2-expanded.png" alt-text="A screen capture of the landing page when creating a DLP policy. The screen shows the option of starting with a template or custom policy.":::
 
-:::image type="content" source="../media/5-data-loss-prevention-rules.png" alt-text="Diagram showing how a single policy can consist of multiple rules.":::
+### What is endpoint data loss prevention?
 
-The rules inside the policy are prioritized in how they’re implemented. For example, in the above diagram, rule one will be prioritized before rule two, and so on.
+Endpoint data loss prevention (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS.
 
-## What is endpoint data loss prevention?
-
-Endpoint data loss prevention (Endpoint DLP) extends the activity monitoring and protection capabilities of DLP to sensitive items that are physically stored on Windows 10, Windows 11, and macOS (Catalina 10.15 and higher) devices
-
-Endpoint DLP enables admins to audit and manage activities that users complete on sensitive content.  Listed below are a few examples:
+Endpoint DLP enables you to audit and manage the many activities users take on sensitive items that are physically stored Windows 10, Windows 11, or macOS devices. Listed below are just a few examples:
 
 - Creating an item
 - Renaming an item
@@ -47,13 +49,13 @@ Endpoint DLP enables admins to audit and manage activities that users complete o
 
 In the activity explorer, you can view information about what users are doing with sensitive content.
 
-:::image type="content" source="../media/5-activity-explorer-endpoint-data-loss-prevention.png" alt-text="The activity explorer show activities monitored through endpoint DLP.":::
+:::image type="content" source="../media/activity-explorer-endpoint-dlp-inline.png" lightbox="../media/activity-explorer-endpoint-dlp-expanded.png" alt-text="The activity explorer show activities monitored through endpoint DLP.":::
 
 Admins use this information to enforce protective actions for content through controls and policies.
 
-## Data loss prevention in Microsoft Teams
+### Data loss prevention in Microsoft Teams
 
-Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that prevent users from sharing sensitive information in a Teams chat session or channel, whether it's in a message, or a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot below shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
+Data loss prevention capabilities have been extended to Microsoft Teams chat and channel messages, including messages in private channels. With DLP, administrators can now define policies that prevent users from sharing sensitive information in a Teams chat session or channel, whether it's in a message, or a file. Just like with Exchange, Outlook, SharePoint, and OneDrive for Business, administrators can use DLP policy tips that will be displayed to the user to show them why a policy has been triggered. For example, the screenshot that follows shows a policy tip on a chat message that was blocked because the user attempted to share a U.S. Social Security Number.
 
 :::image type="content" source="../media/5-data-loss-prevention-policy-tip.png" alt-text="A policy tip is shown in Microsoft Teams so that the user knows why their message was blocked.":::
 
@@ -61,4 +63,4 @@ The user can then find out more about why their message was blocked by selecting
 
 :::image type="content" source="../media/5-policy-tip-more-information.png" alt-text="The user can find more information about why their message was blocked, and take recommended actions.":::
 
-With DLP policies, Microsoft Teams can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.
+DLP policies applied to Microsoft 365 services, including Microsoft Teams, can help users across organizations to collaborate securely and in a way that's in line with compliance requirements.
