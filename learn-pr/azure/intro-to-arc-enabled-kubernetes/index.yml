@@ -40,13 +40,13 @@ products:
 - azure-monitor
 units:
 - learn.azure.intro-to-arc-enabled-kubernetes.1-introduction
-- learn.azure.intro-to-arc-enabled-kubernetes.2-arc-overview
-- learn.azure.intro-to-arc-enabled-kubernetes.3-kubernetes-overview
+- learn.azure.intro-to-arc-enabled-kubernetes.arc-overview
+- learn.azure.intro-to-arc-enabled-kubernetes.kubernetes-overview
 - learn.azure.intro-to-arc-enabled-kubernetes.4-connect-kubernetes-arc
-- learn.azure.intro-to-arc-enabled-kubernetes.5-services
+- learn.azure.intro-to-arc-enabled-kubernetes.services
 - learn.azure.intro-to-arc-enabled-kubernetes.6-gitops
-- learn.azure.intro-to-arc-enabled-kubernetes.7-integrate-policy-monitor
-- learn.azure.intro-to-arc-enabled-kubernetes.8-knowledge-check
-- learn.azure.intro-to-arc-enabled-kubernetes.9-summary
+- learn.azure.intro-to-arc-enabled-kubernetes.integrate-policy-monitor
+- learn.azure.intro-to-arc-enabled-kubernetes.knowledge-check
+- learn.azure.intro-to-arc-enabled-kubernetes.8-summary
 badge:
   uid: learn.azure.intro-to-arc-enabled-kubernetes.badge
