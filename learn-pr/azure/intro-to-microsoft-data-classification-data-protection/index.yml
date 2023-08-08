@@ -3,24 +3,25 @@ uid: learn.azure.data-classification-and-data-protection
 metadata:
   title: Introduction to Microsoft data classification and protection
   description: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
-  ms.date: 08/03/2023
+  ms.date: 08/08/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
 title: Introduction to Microsoft data classification and protection 
 summary: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
 abstract: |
-  Understand and know how to apply:
-  - Microsoft Purview Information Protection.
-  - Sensitivity labels, label policies, and scanning.
+  Understand and know how to use:
+  - Microsoft Purview Information Protection built-in labeling.
+  - Sensitivity labels and label policies.
+  - The Azure Information Protection unified labeling client.
+  - The Information Protection scanner.
   - Microsoft Defender for Cloud Apps.
-  - Service and Customer Key encryption.
-  - Message Encryption
-
+  - Microsoft 365 service encryption and Microsoft Purview Customer Key.
+  - Microsoft Purview Message Encryption.
 prerequisites: |
   - Basic knowledge of data protection and security concepts and technologies.
-  - Basic experience with Microsoft Azure and Microsoft 365 or Microsoft Office services.
-  - Ability to access features in the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
+  - Basic experience with Microsoft Azure and Microsoft 365 or Office 365 services.
+  - Ability to access features in the [Microsoft Purview Compliance Portal](https://compliance.microsoft.com) or other labeling admin center.
 iconUrl: /training/achievements/data-classification-and-data-protection.svg
 levels:
 - beginner

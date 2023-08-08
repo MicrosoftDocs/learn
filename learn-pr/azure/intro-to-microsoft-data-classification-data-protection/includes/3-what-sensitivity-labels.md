@@ -2,33 +2,25 @@ Microsoft Purview Information Protection solutions are implemented by using sens
 
 ## Sensitivity labels in Office client apps
 
-Microsoft 365 client apps like Word and Excel now have sensitivity labeling built-in. Users must be signed in to apply sensitivity labels or to open protected documents that they have access to.
+Microsoft 365 client apps like Word and Excel now have sensitivity labeling built in. Users must be signed in to apply sensitivity labels or to open protected documents that they have access to.
 
-In Office apps, a sensitivity label appears like a tag to users on an email or document. Each item of content can have a single sensitivity label applied to it. An item can have both a sensitivity label and a single retention label.
+In Office apps, a sensitivity label appears like a tag to users on an email or document. Each content item can have a single sensitivity label applied to it. An item can have both a sensitivity label and a retention label.
 
-:::image type="content" source="../media/3-sensitivity-not-set-callout.png" alt-text="Image depicts how a sensitivity label appears in an Office app.":::
+:::image type="content" source="../media/3-sensitivity-not-set-callout.png" alt-text="Screenshot that shows a sensitivity label applied in an Office document.":::
 
 ## Sensitivity label creation and configuration
 
-You create and publish sensitivity labels in your labeling admin center, such as the Microsoft Purview compliance portal, Microsoft 365 Defender portal, or Exchange admin center.
-
-When you create and configure a sensitivity label, you can define access restrictions on content that has that label. You can configure the following settings:
+You can create and publish sensitivity labels in your labeling admin center, such as the Microsoft Purview Compliance Portal, Microsoft 365 Defender portal, or Exchange admin center. When you create and configure a sensitivity label, you define access restrictions on content that has that label. You can configure the following settings:
 
 - **Scope** of the label, such as files, emails, meetings, and sites or groups.
 
-- **Encryption.** You can restrict access by encrypting the content in emails, or in both emails and documents. You define which users or groups have permissions to perform which actions, and for how long. You can also allow users to assign those permissions when they apply the label.
+- **Encryption.** You can restrict access by encrypting the content in emails, or in both emails and documents. You define which users or groups have permissions to do what actions, and for how long. You can also allow users to assign those permissions when they apply the label.
 
-- **Content marking** such as applying custom headers, footers, and watermarks to items that have the label applied.
+- **Content marking** such as applying custom headers, footers, and watermarks to items that have the label. You can apply watermarks to documents, but not to email. Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except Excel has a total limit of 255 characters for headers and footers, including characters that aren't visible like formatting codes.
 
-  You can apply watermarks to documents, but not to email. Watermarks are limited to 255 characters. Headers and footers are limited to 1024 characters, except Excel has a total limit of 255 characters for headers and footers, including characters that aren't visible like formatting codes.
+- **Autolabeling for files and emails.** You can choose what types of sensitive information you want labeled, and the label can be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays the text you choose.
 
-- **Auto-labeling for files and emails.**
-
-  You can choose what types of sensitive information you want labeled, and the label can either be applied automatically, or you can prompt users to apply the label that you recommend. If you recommend a label, the prompt displays the text you choose.
-
-- **Protection settings for groups and sites.** 
-
-  You can help protect content in containers such as sites and groups by using sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites. This configuration doesn't apply to documents, but protects content by controlling access to the containers where documents are stored. These settings include privacy, whether a group owner can add guests to the group, external sharing settings, and how much access users have from unmanaged devices.
+- **Protection settings for groups and sites.** You can help protect content in containers such as sites and groups by using sensitivity labels with Microsoft Teams, Microsoft 365 groups, and SharePoint sites. This configuration doesn't apply to documents, but protects content by controlling access to the containers where documents are stored. These settings include privacy, whether a group owner can add guests to the group, external sharing settings, and how much access users have from unmanaged devices.
 
 Sensitivity labels have the following characteristics:
 

@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.6-what-microsoft-cloud-app-security
-title: What is Microsoft Defender for Cloud Apps?
+title: Microsoft Defender for Cloud Apps?
 metadata:
-  title: What is Microsoft Defender for Cloud Apps?
-  description: What is Microsoft Defender for Cloud Apps?
+  title: Learn about the features and capabilities of Microsoft Defender for Cloud Apps.
+  description: Microsoft Defender for Cloud Apps
   ms.date: 03/25/2021
   author: cwatson-cat
   ms.author: cwatson

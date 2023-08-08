@@ -4,21 +4,23 @@ This unit provides an overview of information protection with Microsoft Purview 
 
 Microsoft Purview Information Protection is a suite of Microsoft solutions that help you discover, classify, and protect your sensitive information wherever it lives or travels. These solutions work on Office apps, on cloud resources like SharePoint Online, OneDrive for Business, or Exchange Online, and on locally deployed resources like file servers.
 
-You can use cloud-based information protection to discover, classify, and help protect documents and emails by applying labels to content, and by encrypting the content. You can use information protection to encrypt your data at the application level, and include a policy that defines the authorized use for that document. Information protection decrypts the document and enforces the rights that the policy defines if a legitimate user or an authorized service accesses the data. Information protection can also track document usage, so you can monitor both successful and unsuccessful attempts to use a document.
+You can use cloud-based information protection to discover, classify, and help protect documents and emails by applying *labels* to content, or by *encrypting* the content. You can use information protection to encrypt your data at the application level, and include a policy that defines the authorized use for that document.
 
-A content key helps to protect an information protection-protected document. This content key is unique to the document, and is placed in the file header, where the information protection tenant root key helps protect it. Microsoft generates or manages this tenant root key, or you can generate and manage your own tenant key.
+Information protection decrypts the document and enforces the rights that the policy defines if a legitimate user or an authorized service accesses the data. Information protection can also track document usage, so you can monitor both successful and unsuccessful attempts to use a document.
+
+A *content key* helps to protect an information protection-protected document. The content key is unique to the document and is in the file header, where the information protection tenant root key helps protect it. Microsoft generates or manages the tenant root key, or tenants can generate and manage their own root keys.
 
 Microsoft Purview Information Protection doesn't process or store your data as part of the information protection process. The Microsoft cloud never sends or stores your data unless you intentionally do so or use another cloud service that does so. 
 
-Information protection is built into Microsoft 365 Apps on Windows, macOS, iOS, and Android. You can use this capability to apply or view sensitivity labels that look and behave very similarly across apps and devices.
+Information protection is built into Microsoft 365 Apps on Windows, macOS, iOS, and Android. You can use this capability to apply or view sensitivity labels that look and behave similarly across apps and devices.
 
-On Windows computers, you can also download and use the Azure Information Protection client to apply sensitivity labels in Office apps. However, the Office add-in component for this client is now in maintenance mode and is retiring. When the Azure Information Protection client is installed, it's disabled by default in the latest Office apps, and it's no longer the default labeling client for Office apps.
+On Windows computers, you can also install and use the Azure Information Protection client to apply sensitivity labels in Office apps. However, the Office add-in component for this client is now in maintenance mode and is retiring. When the Azure Information Protection client is installed, it's disabled by default in the latest Office apps, and is no longer the default labeling client for these apps.
 
 For a consistent labeling experience, use the labeling functionality that's built into Office apps. You can use these sensitivity labels in a wider scope than classic Azure Information Protection labels, and on operating systems such as macOS that don't support Azure Information Protection client software.
 
 ## Azure Information Protection
 
-Although you should use the built-in sensitivity labeling capabilities for Office apps, sites, and groups, you can also download and install the Azure Information Protection client for Windows, iOS, or Android. In general, Microsoft Purview Information Protection provides a wider scope for document and file protection than Azure Information Protection. However, Azure Information Protection includes functionality such as:
+Although you should use built-in sensitivity labeling for Office apps, sites, and groups, you can also download and install the Azure Information Protection client for Windows, iOS, or Android. In general, Microsoft Purview Information Protection provides a wider scope for document and file protection than Azure Information Protection. However, Azure Information Protection includes functionality such as:
 
 - A unified labeling client that supports more file types and apps.
 - An on-premises scanner.

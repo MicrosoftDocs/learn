@@ -10,24 +10,23 @@ The following diagram shows the scanner architecture, where the scanner discover
 
 :::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Diagram that shows unified labeling scanner architecture.":::
 
-You can run the scanner in discovery mode to discover files that contain sensitive information types, and view reports. After you can configure label policies that apply automatic classification, you can label files that the scanner discovers, and optionally apply or remove protection.
+You can run the scanner in *discovery mode* to discover files that contain sensitive information types, and view reports. After you configure label policies that apply automatic classification, you can label the files that the scanner discovers, and optionally apply or remove protection.
 
 The scanner doesn't discover and label in real time. It systematically crawls through files on data stores that you specify. You can configure this cycle to run once, or repeatedly. You can specify file types or specific files to scan or exclude.
 
-### Configure the scanner
+## Configure the scanner
 
-Scanner configuration has moved from the Azure portal to the Microsoft Purview compliance portal. You can also use PowerShell to configure the scanner.
+Scanner configuration has moved from the Azure portal to the Microsoft Purview Compliance Portal. You can also use PowerShell to configure the scanner.
 
-To configure the scanner in the Microsoft Purview compliance portal:
+To configure the scanner in the compliance portal:
 
-1. Sign in to the [Microsoft Purview compliance portal](https://compliance.microsoft.com) with one of the following roles:
+1. Sign in to the compliance portal with one of the following roles:
 
    - **Compliance Administrator**
    - **Compliance Data Administrator**
    - **Security Administrator**
    - **Global Administrator**
    - **Organization Management**
-   
 
 1. Select **Settings** in the left navigation, and then select **Information protection scanner** in the **Settings** pane.
 
@@ -43,11 +42,11 @@ To configure the scanner in the Microsoft Purview compliance portal:
    - **Default label**
    - File types to scan
 
-1. After you save the content scan job, open it and select the **Repositories** tab to define the repositories you want to scan.
+1. After you save the content scan job, open it and select the **Repositories** tab to specify the location you want to scan.
 
 1. Select **Add**, and on the **Repository** screen, enter a **Path** for the data repository. Set any other configurations as needed. Repeat these steps for as many paths as you need to add.
 
-### Install and use the scanner
+## Install and use the scanner
 
 After you configure the scanner in the compliance portal, you install the Azure Information Protection scanner software on the target computers. Use an account that has local administrator rights and permissions to write to the SQL Server database.
 
@@ -63,7 +62,7 @@ After you install the scanner, the scanner service account needs an Azure Active
 
 1. In the Azure portal, create an Azure AD application and copy the Application ID and client secret.
 
-1. On the client computer, run `Set-AIPAuthentication`, using the values for the registered app, your Azure tenant ID, and your Azure AD account.
+1. On the client computer, run `Set-AIPAuthentication`, using the values for the registered app, your Azure tenant, and your Azure AD account.
 
    ```powershell
    Set-AIPAuthentication -AppId <ID of the registered app> -AppSecret <client secret sting> -TenantId <your tenant ID> -DelegatedUser <Azure AD account>
