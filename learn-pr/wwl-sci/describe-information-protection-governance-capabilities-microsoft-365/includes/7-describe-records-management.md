@@ -25,7 +25,7 @@ Items might be marked as records, but they can also be shown as regulatory recor
 - A regulatory label can’t be removed when an item has been marked as a regulatory record.
 - The retention periods can’t be made shorter after the label has been applied.
 
-For more information on comparing, use the [Compare restrictions for what actions are allowed or blocked section](/microsoft-365/compliance/records-management?view=o365-worldwide#compare-restrictions-for-what-actions-are-allowed-or-blocked) of the documentation.
+For more information on comparing, use the [Compare restrictions for what actions are allowed or blocked section](/microsoft-365/compliance/records-management) of the documentation.
 
 The most important difference is that if content has been marked as a regulatory record, nobody, not even a global administrator, can remove the label. Marking an item as a regulatory record can have irreversible consequences, and should only be used when necessary. As a result, this option isn’t available by default, and has to be enabled by the administrator using PowerShell.
 

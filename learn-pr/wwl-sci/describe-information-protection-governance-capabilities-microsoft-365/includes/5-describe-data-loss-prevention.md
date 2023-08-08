@@ -34,7 +34,7 @@ DLP policies can be created from predefined templates, or you can create a custo
 
 :::image type="content" source="../media/dlp-policy-create-v2-inline.png" lightbox="../media/dlp-policy-create-v2-expanded.png" alt-text="A screen capture of the landing page when creating a DLP policy. The screen shows the option of starting with a template or custom policy.":::
 
-:::image type="content" source="../media/dlp-policy-locations-v2-inline.png" lightbox="../media/dlp-policy-locations-v2-expanded.png" alt-text="A screen capture of the landing page when creating a DLP policy. The screen shows the option of starting with a template or custom policy.":::
+:::image type="content" source="../media/dlp-policy-locations-v2-inline.png" lightbox="../media/dlp-policy-locations-v2-expanded.png" alt-text="A screen capture from creating a DLP policy. The screen shows the options for choosing a location to apply a DLP policy.":::
 
 ### What is endpoint data loss prevention?
 

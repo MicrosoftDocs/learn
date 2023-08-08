@@ -25,7 +25,7 @@ Retention settings work with the following different workloads:
 
 To assign your retention settings to content, use retention policies and retention labels with label policies. You can use just one of these methods, or combine them.
 
-When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](/microsoft-365/compliance/retention?view=o365-worldwide#compare-capabilities-for-retention-policies-and-retention-labels).
+When using retention policies and retention labels to assign retention settings to content, there are some points to understand about each.  Listed below are just a few of the key points. For a more complete list visit [Compare capabilities for retention policies and retention labels](/microsoft-365/compliance/retention).
 
 **Retention policies**
 
