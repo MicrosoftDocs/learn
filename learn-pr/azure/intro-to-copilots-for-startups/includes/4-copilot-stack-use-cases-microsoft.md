@@ -45,7 +45,7 @@ Microsoft Security Copilot is an advanced security solution designed to enable d
 ### Features and benefits - Microsoft Security Copilot
 
 - **Simplifies complex tasks:** Microsoft Security Copilot helps incident response and analysis, augmenting existing protocols to ensure more efficient and effective mitigation of security incidents. With step-by-step instructions for risk mitigation, defenders can confidently address threats without delay.
-- **Uncovers hidden threats:** Helps identify and surface potential threats early on by thread hunting tp give defenders a proactive advantage in safeguarding their systems. It applies the powerful generative model, Azure OpenAI Service DALL-E 2, to explain realistic scenarios based on questions and data provided by users.
+- **Uncovers hidden threats:** Helps identify and surface potential threats early on by thread hunting to give defenders a proactive advantage in safeguarding their systems. It applies the powerful generative model, Azure OpenAI Service DALL-E 2, to explain realistic scenarios based on questions and data provided by users.
 - **Addresses talent gap in cybersecurity:** Microsoft Security Copilot plays a crucial role in bridging the talent gap in cybersecurity. By providing intelligent guidance and skill development opportunities, it empowers security teams to make a greater impact and strengthen their expertise in handling security challenges.
 - **Integrates with Microsoft's security portfolio:** Seamlessly integrates with Microsoft's end-to-end security portfolio, enabling users to enhance their security capabilities with the support of Microsoft's existing security solutions.
 
