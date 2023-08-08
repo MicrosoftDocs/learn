@@ -2,10 +2,10 @@ SQL Server on Azure Virtual Machine allows you to run complete SQL Server editio
 
 You may have specific requirements that are better suited for SQL Server on Azure Virtual Machines rather than Azure SQL Managed Instance in the following scenarios:
 
-1. You need direct access to the operating system or file system, such as installing third-party or custom agents on the same virtual machine alongside SQL Server.
-1. You heavily rely on features that aren't yet supported, such as FileStream/FileTable, PolyBase, and cross-instance transactions.
-1. Your business requires staying at a particular version of SQL Server.
-1. Your compute requirements are lower than what a managed instance offers, and database consolidation isn't an option.
+- You need direct access to the operating system or file system, such as installing third-party or custom agents on the same virtual machine alongside SQL Server.
+- You heavily rely on features that aren't yet supported, such as FileStream/FileTable, PolyBase, and cross-instance transactions.
+- Your business requires staying at a particular version of SQL Server.
+- Your compute requirements are lower than what a managed instance offers, and database consolidation isn't an option.
 
 ### Use case scenario
 
