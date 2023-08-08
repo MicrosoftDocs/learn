@@ -29,7 +29,7 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - document-intelligence
 subjects:
 - classification-analysis
