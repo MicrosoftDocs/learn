@@ -24857,6 +24857,41 @@
       "source_path": "learn-pr/azure/aspnet-logging/5-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/2-install-application-insights-sdk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/3-exercise-install-application-insights-sdk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/4-instrument-the-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/5-instrument-the-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
     }
   ]
 }
