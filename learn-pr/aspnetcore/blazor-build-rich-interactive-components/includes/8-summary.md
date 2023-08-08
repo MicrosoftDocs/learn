@@ -1,14 +1,14 @@
-JavaScript interoperability enables you to write Blazor code that works with existing JavaScript libraries. You can also invoke .NET code from JavaScript.
+JavaScript interoperability enables you to write Blazor code that works with existing JavaScript libraries, or invoke .NET code from JavaScript.
 
-A Blazor component has a well-defined lifecycle. You can hook into the events that are triggered when a component is created, initialized, and rendered then add custom logic by overriding the lifecycle methods provided by the `ComponentBase` class.
+A Blazor component has a well-defined lifecycle. You can hook into the events that are triggered when a component is created, initialized, and rendered, and then add custom logic by overriding the lifecycle methods the `ComponentBase` class provides.
 
-You can create Blazor components that are reused across multiple applications and adapted for different scenarios by using templates.
+You can create Blazor template components that you reuse across multiple applications and adapt for different scenarios.
 
-In this module, you've learned how to:
+In this module, you learned how to:
 
-- Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps
-- Handle events in the lifecycle of Blazor components
-- Change the display of a component by passing it a template
+- Call JavaScript functions from .NET code and call .NET code from JavaScript in Blazor apps.
+- Handle events in the Blazor component lifecycle.
+- Change component display by passing it a template.
 
 ## Learn more
 

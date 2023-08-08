@@ -30,7 +30,6 @@ modules:
 - learn.control-network-traffic-flow-with-routes
 - learn.azure.host-domain-azure-dns
 - learn.wwl.configure-network-security-groups
-- learn.wwl.configure-azure-firewall
 - learn.wwl.guided-project-configure-secure-access-workloads
 trophy:
   uid: learn.wwl.configure-secure-workloads-using-azure-virtual-networking.trophy
