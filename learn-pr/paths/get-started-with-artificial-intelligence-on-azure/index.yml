@@ -26,7 +26,7 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 - azure-machine-learning
 subjects:
 - artificial-intelligence
