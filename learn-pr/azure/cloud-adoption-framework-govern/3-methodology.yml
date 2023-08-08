@@ -15,7 +15,7 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Tailwind Traders currently has this policy in place: <i>Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets.</i> Is it a well-structured, scalable, and actionable policy?"
+  - content: "This policy is currently in place at Tailwind Traders: *Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets.* Is it a well-structured, scalable, and actionable policy?"
     choices:
     - content: "Yes"
       isCorrect: false

@@ -47,11 +47,11 @@ Each discipline accelerates the application of corporate policies and ensures co
 
 The Cloud Adoption Framework provides a [governance benchmark tool](/azure/cloud-adoption-framework/govern/benchmark#governance-benchmark-tool?azure-portal=true) to help you identify gaps in the governance disciplines and corporate policy in your organization.
 
-:::image type="content" source="../media/benchmark.png" alt-text="Image of a computer monitor that displays a line chart and a pie chart in a results webpage from the Cloud Adoption Framework benchmark tool." border="false":::
+:::image type="content" source="../media/benchmark.png" alt-text="Image of a computer monitor that displays a line chart and a pie chart in a results webpage from the Microsoft Cloud Adoption Framework Governance Benchmark tool." border="false":::
 
 *Figure 2: A governance benchmark output that shows areas for improvement and a comparison between current state and future state governance requirements.*
 
-You can use the governance benchmark tool for a personalized report that outlines the difference between your current state and business priorities, along with tailored resources to help you start assessing your current state and future state and establish a vision for applying the framework.
+You can use the governance benchmark tool for a personalized report that outlines the difference between your current state and business priorities. The governance benchmark tool also includes tailored resources to help you start assessing your current state and future state, and establish a vision for applying the framework.
 
 ## Governance foundation
 
@@ -65,8 +65,9 @@ In later units, you apply these tools to create a governance foundation for Tail
 
 The Cloud Adoption Framework contains two ways to apply a sound foundation for governance to new or existing deployments. Each provides a different approach to support your business needs when you get started:
 
-- [Standard governance guide](/azure/cloud-adoption-framework/govern/guides/standard/?azure-portal=true): A guide for most organizations that's based on the recommended initial two-subscription model, and designed for deployments in multiple regions while not spanning public and sovereign/government clouds
-- [Governance guide for complex enterprises](/azure/cloud-adoption-framework/govern/guides/complex/?azure-portal=true): A guide for enterprises that are managed by multiple independent IT business units or span public and sovereign/government clouds
+- [Standard governance guide](/azure/cloud-adoption-framework/govern/guides/standard/?azure-portal=true): A guide for most organizations that's based on the recommended initial two-subscription model. The guide is designed for deployments in multiple regions while not spanning public and sovereign/government clouds.
+- [Governance guide for complex enterprises](/azure/cloud-adoption-framework/govern/guides/complex/?azure-portal=true): A guide for enterprises that require multiple layers of governance. For example, multiple independent IT business units or enterprises that span public and sovereign/government clouds.
+
 
 ## Mature governance disciplines
 
