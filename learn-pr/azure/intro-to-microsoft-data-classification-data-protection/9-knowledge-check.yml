@@ -16,58 +16,58 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "You're planning to use sensitivity labels. Select one thing that you can't do with sensitivity labels."
+  - content: "What is one thing that you can't do with sensitivity labels?"
     choices:
-    - content: "Encrypt content"
+    - content: "Encrypt content."
       isCorrect: false
       explanation: "That's not correct. You can use sensitivity labels to encrypt content."
-    - content: "Protect content"
+    - content: "Help protect content."
       isCorrect: false
       explanation: "That's not correct. You can use sensitivity labels to help protect content."
-    - content: "Synchronize content between locations"
+    - content: "Synchronize content between locations."
       isCorrect: true
       explanation: "That's correct. You can't use sensitivity labels to synchronize content."
-  - content: "You created sensitivity labels to help protect content. You configured permissions and the protection level. What should you do before your users start to use these sensitivity labels?"
+  - content: "After you create sensitivity labels, what do you need to do before your users can use the labels?"
     choices:
-    - content: "Copy sensitivity labels"
+    - content: "Copy the sensitivity labels."
       isCorrect: false
       explanation: "That's not correct. You must publish sensitivity labels before your users can use them."
-    - content: "Publish sensitivity labels"
+    - content: "Publish the sensitivity labels."
       isCorrect: true
-      explanation: "That's correct. You must publish sensitivity labels before your users can use them."
-    - content: "Send sensitivity labels to your users."
+      explanation: "That's correct. You must publish sensitivity labels in a policy before your users can use them."
+    - content: "Send the sensitivity labels to your users."
       isCorrect: false
       explanation: "That's not correct. You must publish sensitivity labels before your users can use them."
-  - content: "You want to use Azure Information Protection to protect files on your local file servers. Before protection, you need to discover files that contain sensitive information types. What solution should you use?"
+  - content: "What solution can you use to discover files on your local file servers that contain sensitive information?"
     choices:
-    - content: "Azure Information Protection scanner"
+    - content: "Microsoft Purview Information Protection scanner."
       isCorrect: true
-      explanation: "That's correct. Azure Information Protection scanner can work on local file servers and discover files that contain sensitive information types."
-    - content: "Azure Information Protection client"
+      explanation: "That's correct. The information protection scanner can work on local file servers and discover files that contain sensitive information types."
+    - content: "Microsoft Defender for Cloud Apps."
       isCorrect: false
-      explanation: "That's not correct. Azure Information Protection scanner can work on local file servers and discover files that contain sensitive information types."
-    - content: "Sensitivity labels"
+      explanation: "That's not correct. Defender for Cloud Apps works only in the cloud. The information protection scanner can work on local file servers and discover files that contain sensitive information types."
+    - content: "Built-in sensitivity labels."
       isCorrect: false
-      explanation: "That's not correct. Azure Information Protection scanner can work on local file servers and discover files that contain sensitive information types."
-  - content: "You need to discover applications in your local network that work with cloud services and are not under the control of your IT department. What solution should you choose?"
+      explanation: "That's not correct. Office apps can use built-in labels, but the scanner can work on local file servers and discover files that contain sensitive information types."
+  - content: "What solution can you use to discover applications in your network that work with cloud services and aren't under the control of your IT department?"
     choices:
-    - content: "Azure Information Protection"
+    - content: "Microsoft Purview Information Protection."
       isCorrect: false
-      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
-    - content: "Azure Identity Protection"
+      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover Shadow IT applications."
+    - content: "Azure Identity Protection."
       isCorrect: false
-      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
-    - content: "Microsoft Defender for Cloud Apps"
+      explanation: "That's not correct. You should use Microsoft Defender for Cloud Apps to discover Shadow IT applications."
+    - content: "Microsoft Defender for Cloud Apps."
       isCorrect: true
-      explanation: "That's correct. You should use Microsoft Defender for Cloud Apps to discover these applications."
-  - content: "What is the primary purpose of data encryption with customer key?"
+      explanation: "That's correct. You can use Microsoft Defender for Cloud Apps to discover Shadow IT applications."
+  - content: "What is usually the primary reason for using Microsoft Purview Customer Key for data encryption?"
     choices:
-    - content: "To replace BitLocker encryption"
+    - content: "To replace BitLocker encryption."
       isCorrect: false
-      explanation: "That's not correct. Data encryption with customer key works together with BitLocker, but it's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
-    - content: "To meet regulatory or compliance obligations for controlling root keys"
+      explanation: "That's not correct. Customer Key works together with BitLocker, and its primary purpose is to let customers provide and control root encryption keys to meet regulatory or compliance obligations."
+    - content: "To meet regulatory or compliance obligations for controlling root keys."
       isCorrect: true
-      explanation: "That's correct. Data encryption with customer key primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
-    - content: "To provide stronger data encryption"
+      explanation: "That's correct. Data encryption with Customer Key lets customers provide and control root encryption keys to meet regulatory or compliance obligations."
+    - content: "To provide stronger data encryption."
       isCorrect: false
-      explanation: "That's not correct. Data encryption with customer key's primary purpose is usually to meet regulatory or compliance obligations for controlling root keys."
+      explanation: "That's not correct. The purpose of Customer Key is to let customers control root encryption keys to meet regulatory or compliance obligations."

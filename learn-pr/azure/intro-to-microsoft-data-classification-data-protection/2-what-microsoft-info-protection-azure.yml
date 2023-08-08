@@ -3,7 +3,7 @@ uid: learn.azure.data-classification-and-data-protection.2-what-microsoft-info-p
 title: Information protection overview
 metadata:
   title: Information protection overview
-  description: What is Microsoft Information Protection and Azure Information Protection?
+  description: Learn about how information protection works, and the capabilities of Microsoft Purview Information Protection and Azure Information Protection.
   ms.date: 03/25/2021
   author: cwatson-cat
   ms.author: cwatson

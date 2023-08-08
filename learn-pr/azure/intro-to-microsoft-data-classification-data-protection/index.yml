@@ -2,13 +2,13 @@
 uid: learn.azure.data-classification-and-data-protection
 metadata:
   title: Introduction to Microsoft data classification and protection
-  description: Understand data classification and protection technologies like Purview Information Protection, sensitivity labels, and service and message encryption.
+  description: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
   ms.date: 08/03/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
 title: Introduction to Microsoft data classification and protection 
-summary: Understand data classification and protection technologies like Purview Information Protection, sensitivity labels, and service and message encryption.
+summary: Understand data classification and protection technologies like information protection, sensitivity labels, and service and message encryption.
 abstract: |
   Understand and know how to apply:
   - Microsoft Purview Information Protection.

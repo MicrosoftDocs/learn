@@ -8,20 +8,24 @@ Microsoft data classification and information protection capabilities give you t
 
 ## Learning objectives
 
-  Understand and know how to use:
-  - Microsoft Purview Information Protection built-in labeling for Office apps.
-  - Azure Information Protection unified labeling client, on premises scanner, and Information Protection SDK.
+Understand and know how to use:
+
+  - Microsoft Purview Information Protection built-in labeling.
+  - Azure Information Protection unified labeling.
   - Sensitivity labels and label policies.
-  - On-premises scanning.
+  - The Information Protection scanner.
   - Microsoft Defender for Cloud Apps.
-  - Microsoft 365 service encryption and Customer Key encryption.
-  - Message Encryption.
+  - Microsoft 365 service encryption and Microsoft Purview Customer Key.
+  - Microsoft Purview Message Encryption.
 
 ## Prerequisites
 
 - Basic knowledge of data protection and security concepts and technologies.
-- Basic experience with Microsoft Azure and Microsoft 365 or Microsoft Office services.
-- Ability to access features in the [Microsoft Purview compliance portal](https://compliance.microsoft.com).
+- Basic experience with Microsoft Azure and Microsoft 365 or Office 365 services.
+- Ability to access features in the .
+- To create and publish sensitivity labels, administrative access to a labeling admin center such as the [Microsoft Purview compliance portal](https://compliance.microsoft.com?azure-portal=true), Microsoft 365 Defender portal, or Exchange admin center.
+- To use the Microsoft Purview Information Protection scanner, an Azure tenant ID, an Azure Active Directory (Azure AD) account, and administrative access to a Windows Server client computer with a SQL Server instance.
 
-  If you're not a Microsoft E5 customer, try a [90-day Microsoft Purview solutions trial](/microsoft-365/compliance/compliance-easy-trials) to explore how Purview capabilities can help your organization manage data security and compliance.
+>[!NOTE]
+>If you're not a Microsoft E5 customer, try a [90-day Microsoft Purview Solutions Trial](/microsoft-365/compliance/compliance-easy-trials) to explore how Microsoft Purview can help your organization manage data security and compliance.
   
