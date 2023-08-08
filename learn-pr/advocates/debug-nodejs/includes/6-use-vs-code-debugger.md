@@ -11,7 +11,7 @@ The goal of the program is to set the exchange rate between three currencies, US
 
 1. Paste the following code into the new file editor:
 
-    ```js
+    ```javascript
     const rates = {};
 
     function setExchangeRate(rate, sourceCurrency, targetCurrency) {
@@ -174,7 +174,7 @@ We need to fix this program bug by using the `displayValue` variable instead of 
 
 1. Update your `currency.js` file to use the correct the variable name. Change the call to the `console.info()` function on line 32 to use the `displayValue` variable instead of the `convertedValue` variable:
 
-   ```js
+   ```javascript
    console.info(`- ${displayValue} ${targetCurrency}`);
    ```
 
@@ -214,7 +214,7 @@ We know that the exception was thrown in the call to the `formatValueForDisplay(
 
    Visual Studio Code goes to the line in the `printForeignValues` function in your `currency.js` file, where the `formatValueForDisplay()` function was called:
 
-   ```js
+   ```javascript
    const displayValue = formatValueForDisplay(convertedValue);
    ```
 
@@ -233,7 +233,7 @@ What would be helpful in our case is to be able to make the debugger stop at thi
 
 1. After you right-click, enter the following condition to trigger the breakpoint, and then press <kbd>Enter</kbd>:
 
-   ```js
+   ```javascript
    `convertedValue === undefined`
    ```
    
@@ -252,7 +252,7 @@ Let's take some time to analyze the current program state.
 
 Take a look at the code of the `convertToCurrency()` function.
 
-```js
+```javascript
 function convertToCurrency(value, sourceCurrency, targetCurrency) {
   const exchangeRate = rates[sourceCurrency][targetCurrency];
   return exchangeRate && value * exchangeRate;
@@ -299,7 +299,7 @@ Let's set a breakpoint to watch the `rates` variable.
 
 It's time to look at the code for the `setExchangeRate()` function.
 
-```js
+```javascript
 function setExchangeRate(rate, sourceCurrency, targetCurrency) {
   if (rates[sourceCurrency] === undefined) {
     rates[sourceCurrency] = {};
@@ -325,13 +325,14 @@ Let's fix the code for the conversion rate issue.
 
    Replace the code on lines 12 and 13:
 
-   ```js
+   ```javascript
    rates[sourceCurrency][targetCurrency] = rate;
    rates[targetCurrency][sourceCurrency] = 1 / rate;
    ```
+
    with this updated code:
 
-   ```js
+   ```javascript
    for (const currency in rates) {
      if (currency !== targetCurrency) {
        // Use a pivot rate for currencies that don't have the direct conversion rate
