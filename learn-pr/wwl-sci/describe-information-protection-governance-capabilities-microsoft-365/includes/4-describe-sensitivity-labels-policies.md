@@ -1,10 +1,10 @@
 
 
-Organizations must protect their data, to safeguard customers and business operations, and to meet compliance standards. Admins can enable their organization to protect its data, through capabilities and tools such as sensitivity labels and policies in the Microsoft Purview compliance portal.
+Organizations must protect their data, to safeguard customers and business operations, and to meet compliance standards. Admins can enable their organization to protect its data, through capabilities and tools such as sensitivity labels and policies in Microsoft Purview.
 
 ### Sensitivity labels
 
-Sensitivity labels, available as part of information protection in the Microsoft Purview compliance portal, enable the labeling and protection of content, without affecting productivity and collaboration. With sensitivity labels, organizations can decide on labels to apply to content such as emails and documents, much like different stamps are applied to physical documents:
+Sensitivity labels enable the labeling and protection of content, without affecting productivity and collaboration. With sensitivity labels, organizations can decide on labels to apply to content such as emails and documents, much like different stamps are applied to physical documents:
 
 Labels are:
 
@@ -22,6 +22,10 @@ Sensitivity labels can be configured to:
 - **Protect content in containers such as sites and groups**. This label configuration doesn't result in documents being automatically labeled. Instead, the label settings protect content by controlling access to the container where documents are stored.
 - **Extend sensitivity labels to third-party apps and services**. The Microsoft Purview Information Protection SDK enables third-party apps to read sensitivity labels and apply protection settings.
 - **Classify content without using any protection settings**. A classification can be assigned to content (just like a sticker) that persists and roams with the content as it's used and shared.  The classification can be used to generate usage reports and view activity data for sensitive content.
+
+The image that follows shows the settings for a sensitivity label named Confidential-Finance, which includes settings for encryption, content marking, and autolabeling for files and emails.
+
+:::image type="content" source="../media/sensitivity-label-v2-inline.png" lightbox="../media/sensitivity-label-v2-expanded.png" alt-text="A screen capture of a sensitivity label named Confidential-Finance, which includes settings for encryption, content marking, and autolabeling for files and emails.":::
 
 ### Label policies
 
