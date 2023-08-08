@@ -1,5 +1,6 @@
 
 
+
 C# arrays allow you to store sequences of values in a single data structure. In other words, imagine a single variable that can hold many values. Once you have a single variable that stores all the values, you can sort the values, reverse the order of the values, loop through each value and inspect it individually, and so on.
 
 Suppose you work in the security department of a company that matches online sellers with commission-based advertisers. You've been asked to write C# code that will iterate through the Order IDs of incoming orders. You need to inspect each Order ID to identify orders that may be fraudulent. You'll need to implement arrays to accomplish this programming task.
