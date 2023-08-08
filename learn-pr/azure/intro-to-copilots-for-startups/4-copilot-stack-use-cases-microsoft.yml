@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-build-copilots-for-startups.copilot-stack-use-cases-microsoft
+title: Examine Microsoft Copilot Stack use cases 
+metadata:
+  title: Examine Microsoft Copilot Stack use cases 
+  description: This content is part of the "Introduction to building copilots for startups" module.
+  ms.date: 08/03/2023
+  author: amit7200
+  ms.author: amsvarze
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/4-copilot-stack-use-cases-microsoft.md)]
