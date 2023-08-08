@@ -2027,3 +2027,8 @@ achievements:
   title: Implement logging in a .NET Framework ASP.NET web application
   summary: Learn how to implement logging in an ASP.NET web application so you can store log data in Azure Blob storage and incorporate log information into Azure Application Insights performance data.
   iconUrl: /training/achievements/aspnet-logging.svg
+- uid: learn.instrument-web-app-code-with-application-insights.badge
+  type: badge
+  title: Instrument server-side web application code with Application Insights
+  summary: Obtain comprehensive diagnostic information from a web app by adding the Application Insights SDK to your server-side code.
+  iconUrl: /training/achievements/instrument-web-app-code-with-application-insights.svg
