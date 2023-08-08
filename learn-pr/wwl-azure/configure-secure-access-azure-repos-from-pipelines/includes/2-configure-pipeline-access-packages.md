@@ -37,7 +37,7 @@ steps:
 
 ```
 
-Replace to your Azure Artifacts feed name with the name of your Azure Artifacts feed and your solution file.sln with the name of your solution file.
+Replace your Azure Artifacts feed name with the name of your Azure Artifacts feed and your solution file.sln with the name of your solution file.
 
 ![Screenshot of Azure Pipelines showing how to add the task to restore NuGet from Azure Artifacts.](../media/package-restore-artifacts.png)
 

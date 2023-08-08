@@ -61,7 +61,7 @@ In this unit, you go through the steps to configure Secure Files in Azure DevOps
 
     ![Screenshot of Azure Pipelines showing how to authorize Secure Files usage.](../media/authorize-secure-file.png)
 
-6. (Optional) Click on Authorize Resources button to allow the Secure File usage by the pipeline.
+6. (Optional) Click on the Authorize Resources button to allow the Secure File usage by the pipeline.
 
 7. (Optional) Click to rerun failed jobs, or run new.
 

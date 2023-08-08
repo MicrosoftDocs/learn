@@ -36,7 +36,7 @@ Once you confirm your settings, you can configure pipeline access to the reposit
 
     ```
 
-This step will checkout the code from the specified repository and reference, and make it available for the rest of the pipeline to use. You can validate the pipeline access by observing the logs and ensuring that the code was retrieved from the repository successfully.
+This step will check out the code from the specified repository and reference, and make it available for the rest of the pipeline to use. You can validate the pipeline access by observing the logs and ensuring that the code was retrieved from the repository successfully.
 
 When running the pipeline using more than one repository, the pipeline asks permission to access the "eShopOnWeb", MyWebApp and "implement-security-through-pipeline-using-devops" repositories.
 
