@@ -9,7 +9,7 @@ The Microsoft Purview governance portal provides a unified data governance servi
 - Enable data curators to manage and secure your data estate.
 - Empower data consumers to find valuable, trustworthy data.
 
-:::image type="content" source="../media/purview-unified-governance-inline.png" lightbox="../media/purview-unified-governance-extended.png" alt-text="Screenshot of Microsoft Purview high level architecture.":::
+:::image type="content" source="../media/purview-unified-governance-inline.png" lightbox="../media/purview-unified-governance-expanded.png" alt-text="Screenshot of Microsoft Purview high level architecture.":::
 
 ### Data Map
 
