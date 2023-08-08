@@ -4,7 +4,7 @@ Microsoft 365 provides baseline, volume-level encryption for data at rest throug
 
 In the Microsoft 365 service, your data at rest is always encrypted with BitLocker and DKM. Service encryption ensures that content at rest is also encrypted at the service layer. Service encryption doesn't prevent Microsoft personnel from accessing customer data. Customers explicitly authorize Office 365 services to use their encryption keys to provide value-added cloud services, such as eDiscovery, antimalware, antispam, and search indexing.
 
-Service-level encryption uses Microsoft-managed keys by default unless you decide to onboard using Customer Key. The Microsoft-managed key option is currently enabled by default for Exchange Online, SharePoint Online, and OneDrive for Business. Your data is always encrypted at this default level at a minimum. At this level, Microsoft manages the cryptographic keys, including the root keys for service encryption. 
+Service-level encryption uses Microsoft-managed keys by default unless you decide to onboard using Customer Key. The Microsoft-managed key option is currently enabled by default for Exchange Online, SharePoint Online, and OneDrive for Business. Your data is always encrypted at this default level at a minimum. At this service encryption level, Microsoft manages the cryptographic keys, including the root keys for service encryption. 
 
 ## Customer Key
 
@@ -20,7 +20,5 @@ Customer Key only encrypts data at rest in the cloud. Customer Key doesn't work 
 
 Customer Key enhances the ability of your organization to meet the demands of compliance requirements that specify key arrangements with the cloud service provider. With Customer Key, you provide and control the root encryption keys for your Microsoft 365 data at rest at the application level. Therefore, you control your organization's keys.
 
-If you decide to exit the service, you revoke access to your organization's root keys. For all Microsoft 365 services, revoking access to the keys is the first step on the path to data deletion. Revoking access to the keys makes the data unreadable to the service.
-
-If you decide to stop using Customer Key without following the data purge path, then your data stays encrypted using the Microsoft-managed keys. Your data is always encrypted at this default level at a minimum.
+If you decide to exit the service, you revoke access to your organization's root keys. For all Microsoft 365 services, revoking access to the keys is the first step on the path to data deletion. Revoking access to the keys makes the data unreadable to the service. If you decide to stop using Customer Key without following the data purge path, then your data stays encrypted using the Microsoft-managed keys.
 

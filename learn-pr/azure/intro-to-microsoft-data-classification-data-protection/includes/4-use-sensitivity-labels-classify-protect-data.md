@@ -1,6 +1,6 @@
-In this unit, you learn how to create and publish sensitivity labels in your labeling admin center, such as the Microsoft Purview Compliance Portal, Microsoft 365 Defender portal, or Exchange admin center.
+In this unit, you learn how to create and publish sensitivity labels. You use a labeling admin center such as the Microsoft Purview Compliance Portal, Microsoft 365 Defender portal, or Exchange admin center.
 
-First, you create and configure the sensitivity labels that you want to make available for apps and other services, such as the labels you want users to choose and apply in Office apps. Then you create one or more *label policies* that contain the labels and policy settings that you configure. The label policy publishes the labels and settings to your chosen users and locations.
+First, you create and configure the sensitivity labels that you want to make available for apps and other services. For example, you configure the labels you want users to choose and apply in Office apps. Then you create one or more *label policies* that contain the labels and policy settings that you configured. The label policy publishes the labels and settings to your chosen users and locations.
 
 The following steps are the basic workflow for using sensitivity labeling to help protect your organization's data.
 
@@ -22,15 +22,15 @@ A label policy consists of:
 - The scope of the label policy, meaning the users and groups that are included in the policy.
 - The label policy settings, as described in the following section.
 
-## Label policy settings
+### Label policy settings
 
 - **Sensitivity labels** to include in the policy.
 
 - **Users and groups** that can use the labels. Labels can be published to any email-enabled security group, Microsoft 365 group, or distribution group.
 
-- **Require justification for changing a label.** You can require a justification to remove a label or replace it with a label that has a lower-order number, for example, if a user opens a document labeled Confidential (order number 3) and replaces that label with Public (order number 1). Currently, the justification reason isn't sent to label analytics for the admin to review. However, the Azure Information Protection unified labeling client sends this information to Azure Information Protection analytics.
+- **Require justification for changing a label.** You can require a justification to remove a label or replace it with a label that has a lower-order number. For example, a user opens a document labeled Confidential, order number 3, and replaces that label with Public, order number 1. Currently, the justification reason isn't sent to label analytics for the admin to review. However, the Azure Information Protection unified labeling client sends this information to Azure Information Protection analytics.
 
-- **Require users to apply a label** to their email, documents, or Power BI content, also known as *mandatory labeling*. You can require users to apply a label before they can save documents and send emails. Using this option helps increase your labeling coverage. The required label can be assigned manually by the user, assigned automatically based on a condition you select, or be assigned by default.
+- **Require users to apply a label** to their email, documents, or Power BI content, also known as *mandatory labeling*. You can require users to apply a label before they can save documents and send emails. Using this option helps increase your labeling coverage. The required label can be assigned manually, assigned automatically based on a condition you select, or be assigned by default.
 
 - **Provide users with a link to a custom help page.** To help your users understand what the sensitivity labels mean and how to use them, you can provide a URL to a custom help page.
 
@@ -38,9 +38,9 @@ A label policy consists of:
 
   A default label sets a base level of protection for all your content. Users can change the default label if it's not the right label for their document or email. However, without user training and other controls, this setting can result in inaccurate labeling.
 
-After you create a label policy that publishes sensitivity labels to users and groups, allow up to 24 hours for users to be able to see and use the labels in their Office apps.
+After you create a label policy that publishes sensitivity labels, allow up to 24 hours for users to be able to see and use the labels in their Office apps.
 
-The only limit to the number of sensitivity labels you can create and publish is a maximum of 500 labels for applying encryption. However, to reduce admin overhead and complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have shown noticeably reduced effectiveness when users have more than five main labels or more than five sublabels per main label to choose from.
+The only limit to the number of sensitivity labels you can create and publish is a maximum of 500 labels that apply encryption. However, to reduce admin overhead and complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have shown noticeably reduced effectiveness when users have more than five main labels or more than five sublabels per main label to choose from.
 
 ## Automatically apply a sensitivity label
 

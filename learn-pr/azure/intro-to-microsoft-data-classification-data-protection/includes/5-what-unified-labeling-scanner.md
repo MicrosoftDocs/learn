@@ -4,13 +4,13 @@ This unit describes the Microsoft Purview Information Protection scanner, former
 - Universal Naming Convention (UNC) paths for network shares that use the Server Message Block (SMB) protocol.
 - Sites and libraries for SharePoint Server 2013 through SharePoint Server 2019.
 
-The scanner can inspect any files that Windows can index by using IFilters installed on the Windows Server computer. To determine if the files need labeling, the scanner uses the built-in data loss prevention (DLP) sensitivity information types and pattern detection, or regex patterns. The scanner uses the Azure Information Protection client, and can classify and protect the same types of files as the client.
+The scanner can inspect any files that Windows can index by using `IFilter` handlers installed on the Windows Server computer. To determine if the files need labeling, the scanner uses the built-in data loss prevention (DLP) sensitivity information types and pattern detection, or regex patterns. The scanner uses the Azure Information Protection client, and can classify and protect the same types of files as the client.
 
 The following diagram shows the scanner architecture, where the scanner discovers files across your on-premises and SharePoint servers.
 
 :::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Diagram that shows unified labeling scanner architecture.":::
 
-You can run the scanner in *discovery mode* to discover files that contain sensitive information types, and view reports. After you configure label policies that apply automatic classification, you can label the files that the scanner discovers, and optionally apply or remove protection.
+You can run the scanner in *discovery mode* to discover files that contain sensitive information types, and view reports. After you configure label policies that apply automatic classification, you can label the files that the scanner discovers. You can optionally apply or remove protection.
 
 The scanner doesn't discover and label in real time. It systematically crawls through files on data stores that you specify. You can configure this cycle to run once, or repeatedly. You can specify file types or specific files to scan or exclude.
 

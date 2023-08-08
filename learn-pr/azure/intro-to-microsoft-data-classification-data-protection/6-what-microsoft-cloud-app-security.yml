@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.6-what-microsoft-cloud-app-security
-title: Microsoft Defender for Cloud Apps?
+title: Microsoft Defender for Cloud Apps
 metadata:
-  title: Learn about the features and capabilities of Microsoft Defender for Cloud Apps.
+  title: Learn about the features and capabilities of the Microsoft Defender for Cloud Apps cloud access security broker (CASB).
   description: Microsoft Defender for Cloud Apps
   ms.date: 03/25/2021
   author: cwatson-cat

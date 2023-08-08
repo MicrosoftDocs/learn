@@ -1,12 +1,25 @@
 Cloud services increase flexibility for employees and IT, but introduce new challenges and complexities for keeping organizations secure. To get the full benefit of cloud apps and services, you must balance access support with maintaining control and helping protect critical data. Given the increasing number of cybersecurity attacks and compliance requirements, it's crucial to gain visibility and control of data in cloud applications.
 
-This unit describes Microsoft Defender for Cloud Apps, a user-based subscription service that provides visibility and control over data and sophisticated analytics to identify and combat cyberthreats across cloud services. Defender for Cloud Apps identifies and combats threats by operating as an intermediary, or *Cloud Access Security Broker (CASB)*, between a cloud user and the cloud provider. CASBs help oversee and control activities and information across cloud (SaaS) apps and infrastructure-as-a-service (IaaS) services. CASB capabilities include visibility into cloud app usage, Shadow IT discovery, information protection and compliance assessment, and protection against app-based threats.
+This unit describes Microsoft Defender for Cloud Apps, a user-based subscription service that provides visibility and control over data and sophisticated analytics to identify and combat cyberthreats across cloud services. Defender for Cloud Apps identifies and combats threats by operating as an intermediary, or *Cloud Access Security Broker (CASB)*, between a cloud user and the cloud provider.
 
-Defender for Cloud Apps helps businesses identify sensitive data across cloud apps, monitor when it's shared with risky environments, and take necessary governance actions by classifying, labeling, and protecting data. Defender for Cloud Apps is part of Microsoft 365 Defender, which correlates signals from across the Microsoft Defender suite to provide incident-level detection, investigation, and response capabilities. Defender for Cloud Apps can show you the full picture of risks to your environment from SaaS app usage and resources, and give you control of what apps you use and when.
+CASBs help oversee and control activities and information across cloud (SaaS) apps and infrastructure-as-a-service (IaaS) services. CASB capabilities include:
+
+- Visibility into cloud app usage.
+- Shadow IT discovery.
+- Information protection and compliance assessment.
+- Protection against app-based threats.
+
+Defender for Cloud Apps helps businesses:
+
+- Identify sensitive data across cloud apps.
+- Monitor when data is shared with risky environments.
+- Take necessary governance actions by classifying, labeling, and protecting data.
+
+Defender for Cloud Apps is part of Microsoft 365 Defender, which correlates signals from across the Microsoft Defender suite to provide incident-level detection, investigation, and response capabilities. Defender for Cloud Apps can show you the full risk profile to your environment from SaaS app usage and resources, and give you control of what apps you use and when.
 
 ## Defender for Cloud Apps architecture
 
-The following diagram shows Defender for Cloud Apps capabilities and funtionality:
+The following diagram shows Defender for Cloud Apps capabilities and functionality:
 
 :::image type="content" source="../media/6-proxy-architecture.png" alt-text="Diagram that shows Defender for Cloud Apps architecture." border="false":::
 
@@ -28,7 +41,7 @@ Cloud Discovery uses traffic logs to dynamically discover and analyze the cloud 
 
 ### Shadow IT discovery
 
-To discover and control the use of Shadow IT, Defender for Cloud Apps identifies the cloud apps, IaaS, and platform-as-a-service (PaaS) services that your organization uses. Some of these apps and services might not even be known or controlled by your IT department. Defender for Cloud Apps integrates with Microsoft Defender for Endpoint, a unified endpoint security platform for protection, detection, investigation, and response, to enhance the discovery of Shadow IT in your organization.
+To discover and control the use of Shadow IT, Defender for Cloud Apps identifies the cloud apps, IaaS, and platform-as-a-service (PaaS) services that your organization uses. Your IT department might not control or even know about some of these apps and services. Defender for Cloud Apps integrates with Microsoft Defender for Endpoint, a unified endpoint security platform for protection, detection, investigation, and response. This integration enhances the discovery of Shadow IT in your organization.
 
 ### Risk assessment
 
@@ -40,11 +53,11 @@ You can customize the scores and weights of various parameters to your organizat
 
 ### Continuous threat protection
 
-Defender for Cloud Apps lets you set policies that monitor apps around the clock. If anomalous behaviors occur, like unusual usage spikes, you're automatically alerted and guided to action. Defender for Cloud Apps helps protect against cyberthreats and anomalies by analyzing high-risk usage and detecting unusual behavior across cloud apps. Defender for Cloud Apps can identify ransomware, compromised users, or rogue applications, and remediate automatically to limit the risk to your organization.
+Defender for Cloud Apps lets you set policies that monitor apps around the clock. If anomalous behaviors or unusual usage spikes occur, you're automatically alerted and guided to action. Defender for Cloud Apps helps protect against cyberthreats and anomalies by analyzing high-risk usage and detecting unusual behavior across cloud apps. Defender for Cloud Apps can identify ransomware, compromised users, or rogue applications, and remediate automatically to limit the risk to your organization.
 
 ### Information protection
 
-Defender for Cloud Apps helps protect your sensitive information anywhere in the cloud. Use Defender for Cloud Apps to understand, classify, and help protect against the exposure of sensitive information at rest. Leverage out-of-the-box policies and automated processes to apply controls in real time across all your cloud apps.
+Defender for Cloud Apps helps protect your sensitive information anywhere in the cloud. Use Defender for Cloud Apps to understand, classify, and help protect against the exposure of sensitive information at rest. Use out-of-the-box policies and automated processes to apply controls in real time across all your cloud apps.
 
 ### Compliance
 
@@ -60,7 +73,7 @@ SaaS Security Posture Management (SSPM) enables security teams to improve an org
 
 While cloud apps continue to be a target for adversaries trying to exfiltrate corporate data, sophisticated attacks often cross modalities. These attacks move laterally from email as the most common entry point, to compromise endpoints and identities, before ultimately gaining access to in-app data. Advanced threat protection, as part of Microsoft's extended detection and response (XDR) solution, enables powerful correlation of signal and visibility across the kill chain of advanced attacks.
 
-Defender for Cloud Apps offers built-in adaptive access control (AAC), provides user and entity behavior analysis (UEBA), and helps you mitigate malware. Defender for Cloud Apps is also integrated directly into Microsoft 365 Defender, correlating XDR signals from the Microsoft Defender suite and providing incident-level detection, investigation, and powerful response capabilities. Integrating SaaS security into Microsoft's XDR experience gives Security Operations Center (SOC) teams full kill chain visibility and improves operational efficiency and effectiveness.
+Defender for Cloud Apps offers built-in adaptive access control (AAC), provides user and entity behavior analysis (UEBA), and helps you mitigate malware. Defender for Cloud Apps also integrates directly into Microsoft 365 Defender. Microsoft 365 Defender correlates XDR signals from the Microsoft Defender suite and provides incident-level detection, investigation, and response capabilities. Integrating SaaS security into Microsoft's XDR experience gives Security Operations Center (SOC) teams full kill chain visibility and improves operational efficiency and effectiveness.
 
 ### App-to-app protection with app governance
 
@@ -72,7 +85,14 @@ Defender for Cloud Apps closes the gap on OAuth app security, helping you protec
 
 Microsoft Defender for Cloud Apps is a comprehensive cross-SaaS solution that brings deep visibility, strong data controls, and enhanced threat protection to your cloud apps. With this service, you can gain visibility into Shadow IT by discovering cloud apps in use. You can control and protect data in the apps once you sanction them to the service.
 
-Office 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps that provides enhanced visibility and control for Office 365. Office 365 Cloud App Security includes threat detection based on user activity logs, discovery of Shadow IT for apps that have similar functionality to Office 365 offerings, Office 365 permission control, and access and session controls. Office 365 Cloud App Security has access to all of the features of Microsoft Defender for Cloud Apps, but supports only the Office 365 app connector.
+Office 365 Cloud App Security is a subset of Microsoft Defender for Cloud Apps that provides enhanced visibility and control for Office 365. Office 365 Cloud App Security has access to all of the features of Microsoft Defender for Cloud Apps, but supports only the Office 365 app connector.
+
+Office 365 Cloud App Security includes:
+
+- Threat detection based on user activity logs.
+- Discovery of Shadow IT for apps that have similar functionality to Office 365 offerings.
+- Office 365 permission control.
+- Access and session controls.
 
 You access Office 365 Cloud App Security through the same portal as Microsoft Defender for Cloud Apps. Depending on your Office 365 license, you have access either to Office 365 Cloud App Security or to the entire Defender for Cloud Apps solution.
 

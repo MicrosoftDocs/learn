@@ -4,7 +4,7 @@ This unit provides an overview of information protection with Microsoft Purview 
 
 Microsoft Purview Information Protection is a suite of Microsoft solutions that help you discover, classify, and protect your sensitive information wherever it lives or travels. These solutions work on Office apps, on cloud resources like SharePoint Online, OneDrive for Business, or Exchange Online, and on locally deployed resources like file servers.
 
-You can use cloud-based information protection to discover, classify, and help protect documents and emails by applying *labels* to content, or by *encrypting* the content. You can use information protection to encrypt your data at the application level, and include a policy that defines the authorized use for that document.
+You can use cloud-based information protection to discover, classify, and help protect documents and emails by applying *labels* to content, or by *encrypting* the content. You can use information protection to encrypt your data at the application level, and include a *policy* that defines the authorized use for that document.
 
 Information protection decrypts the document and enforces the rights that the policy defines if a legitimate user or an authorized service accesses the data. Information protection can also track document usage, so you can monitor both successful and unsuccessful attempts to use a document.
 
