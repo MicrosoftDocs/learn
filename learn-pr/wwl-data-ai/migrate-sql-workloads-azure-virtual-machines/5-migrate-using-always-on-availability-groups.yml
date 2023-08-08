@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-alwayson-availability-groups
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-always-on-availability-groups
 title: Understand distributed availability group for migration
 metadata:
   title: Understand distributed availability group for migration
