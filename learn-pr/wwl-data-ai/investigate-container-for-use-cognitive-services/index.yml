@@ -29,7 +29,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 - azure-container-instances
 subjects:
 - container
