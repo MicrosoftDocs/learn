@@ -1,0 +1,38 @@
+### YamlMime:LearningPath
+uid: learn.wwl.apl-5001-configure-siem--security-operations-using-microsoft-sentinel
+metadata:
+  title: 'APL-5001: Configure SIEM security operations using Microsoft Sentinel'
+  description: 'Configure SIEM security operations using Microsoft Sentinel'
+  ms.date: 8/01/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.service: Microsoft Sentinel
+title: 'APL-5001: Configure SIEM security operations using Microsoft Sentinel'
+prerequisites: |
+  - Fundamental understanding of Microsoft Azure
+  - Basic understanding of Microsoft Sentinel
+  - Experience using Kusto Query Language (KQL) in Microsoft Sentinel
+summary: |
+  Get started with Microsoft Sentinel security operations by configuring the Microsoft Sentinel workspace, connecting Microsoft services and Windows security events to Microsoft Sentinel, configuring Microsoft Sentinel analytics rules, and responding to threats with automated responses.
+iconUrl: /training/achievements/configure-your-azure-sentinel-environment.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- security-operations-analyst
+products:
+- azure
+- microsoft-sentinel
+- azure-log-analytics
+- azure-logic-apps
+subjects:
+- threat-protection
+modules:
+- learn.wwl.create-manage-azure-sentinel-workspaces
+- learn.wwl.connect-microsoft-services-to-azure-sentinel
+- learn.wwl.connect-windows-hosts-to-azure-sentinel
+- learn.azure.analyze-data-in-sentinel
+- learn.azure.threat-response-sentinel-playbooks
+trophy:
+  uid: learn.wwl.apl-5001-configure-siem--security-operations-using-microsoft-sentinel.trophy
