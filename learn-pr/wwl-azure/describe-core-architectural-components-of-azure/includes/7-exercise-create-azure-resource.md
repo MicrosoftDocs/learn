@@ -1,7 +1,7 @@
-
 In this exercise, you’ll use the Azure portal to create a resource. The focus of the exercise is observing how Azure resource groups populate with created resources.
 
-The sandbox should already be activated, but if the sandbox closed, reactivate the sandbox before continuing.
+> [!IMPORTANT]
+> The sandbox should already be activated, but if the sandbox closed, reactivate the sandbox before continuing.
 
 ## Task 1: Create a virtual machine
 
@@ -14,16 +14,23 @@ In this task, you’ll create a virtual machine using the Azure portal.
     
     **Basics tab**
     
-    | **Setting**          | **Value**                                                  |
-    | -------------------- | ---------------------------------------------------------- |
-    | Subscription         | Concierge Subscription                                     |
-    | Resource group       | Select the resource group name that begins with **learn**. |
-    | Virtual machine name | my-VM                                                      |
-    | Authentication type  | Password                                                   |
-    | Username             | azureuser                                                  |
-    | Password             | Enter a custom password                                    |
-    | Confirm password     | Reenter the custom password                                |
-    | Public inbound ports | None                                                       |
+    | **Setting**                  | **Value**                                                  |
+    | ---------------------------- | ---------------------------------------------------------- |
+    | Subscription                 | Concierge Subscription                                     |
+    | Resource group               | Select the resource group name that begins with **learn**. |
+    | Virtual machine name         | my-VM                                                      |
+    | Region                       | Leave default                                              |
+    | Availability options         | Leave default                                              |
+    | Security type                | Leave default                                              |
+    | Image                        | Leave default                                              |
+    | VM architecture              | Leave default                                              |
+    | Run with Azure Spot discount | Unchecked                                                  |
+    | Size                         | Leave default                                              |
+    | Authentication type          | Password                                                   |
+    | Username                     | azureuser                                                  |
+    | Password                     | Enter a custom password                                    |
+    | Confirm password             | Reenter the custom password                                |
+    | Public inbound ports         | None                                                       |
 
 5.  Select Review and Create.
 
