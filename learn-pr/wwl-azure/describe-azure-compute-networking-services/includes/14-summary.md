@@ -17,3 +17,4 @@ The following additional resources are intended to provide more information on t
 
  -  [Host a web application with Azure App Service](/learn/modules/host-a-web-app-with-azure-app-service/) is a Microsoft Learn module that explores the process of hosting a web application in Azure.
  -  [Introduction to Azure network foundation services](/learn/paths/intro-to-azure-network-foundation-services/) is a Microsoft Learn course that provides greater insight and information on networking with Azure.
+ 
