@@ -76,7 +76,7 @@ modules:
 - learn.analyze-infrastructure-with-azure-monitor-logs
 - learn.monitor-vm-performance-using-azure-monitor-for-vms
 - learn.incident-response-with-alerting-on-azure
-- learn.capture-page-load-times-application-insights
+# - learn.capture-page-load-times-application-insights
 - learn.protect-virtual-machines-with-azure-backup
 - learn.protect-infrastructure-with-azure-site-recovery
 - learn.azure-well-architected-reliability
