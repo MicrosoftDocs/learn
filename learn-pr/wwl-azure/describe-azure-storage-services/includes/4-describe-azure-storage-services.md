@@ -1,4 +1,3 @@
-
 The Azure Storage platform includes the following data services:
 
  -  **Azure Blobs**: A massively scalable object store for text and binary data. Also includes support for big data analytics through Data Lake Storage Gen2.
@@ -43,13 +42,14 @@ Azure Storage offers different access tiers for your blob storage, helping you s
 
  -  **Hot access tier**: Optimized for storing data that is accessed frequently (for example, images for your website).
  -  **Cool access tier**: Optimized for data that is infrequently accessed and stored for at least 30 days (for example, invoices for your customers).
+ -  **Cold access tier**: Optimized for storing data that is infrequently accessed and stored for at least 90 days.
  -  **Archive access tier**: Appropriate for data that is rarely accessed and stored for at least 180 days, with flexible latency requirements (for example, long-term backups).
 
 The following considerations apply to the different access tiers:
 
- -  Only the hot and cool access tiers can be set at the account level. The archive access tier isn't available at the account level.
- -  Hot, cool, and archive tiers can be set at the blob level, during or after upload.
- -  Data in the cool access tier can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data. For cool data, a slightly lower availability service-level agreement (SLA) and higher access costs compared to hot data are acceptable trade-offs for lower storage costs.
+ -  Hot, cool, and cold access tiers can be set at the account level. The archive access tier isn't available at the account level.
+ -  Hot, cool, cold, and archive tiers can be set at the blob level, during or after upload.
+ -  Data in the cool and cold access tiers can tolerate slightly lower availability, but still requires high durability, retrieval latency, and throughput characteristics similar to hot data. For cool and cold data, a lower availability service-level agreement (SLA) and higher access costs compared to hot data are acceptable trade-offs for lower storage costs.
  -  Archive storage stores data offline and offers the lowest storage costs, but also the highest costs to rehydrate and access data.
 
 ## Azure Files

@@ -1,4 +1,3 @@
-
 In this module, you learned about the Azure storage services. You learned about the Azure Storage Account and how they relate to different storage services. You were introduced to storage blobs and redundancy options, and ways to migrate and move your data both into and within Azure.
 
 ## Learning objectives

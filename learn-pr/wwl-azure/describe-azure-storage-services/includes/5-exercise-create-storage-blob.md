@@ -1,33 +1,30 @@
-
 ## Create a storage account
 
 In this task, we will create a new storage account.
 
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true)
-2.  Select Create a resource.
-3.  Under Categories, select Storage.
-4.  Unders Storage Account, select Create.
+2.  Select **Create a resource**.
+3.  Under Categories, select **Storage**.
+4.  Unders Storage Account, select **Create**.
 5.  On the Basics tab of the Create storage account blade, fill in the following information. Leave the defaults for everything else.
     
-    | **Setting**          | **Value**                            |
-    | -------------------- | ------------------------------------ |
-    | Subscription         | Concierge Subscription               |
-    | Resource group       | <!--- raw content start --->
-<rgn>[sandbox resource group name]</rgn>
-<!--- raw content end --->                      |
-    | Storage account name | create a unique storage account name |
-    | Location             | default                              |
-    | Performance          | Standard                             |
-    | Redundancy           | Locally redundant storage (LRS)      |
-6.  Select Review + Create to review your storage account settings and allow Azure to validate the configuration.
-7.  Once validated, select Create. Wait for the notification that the account was successfully created.
-8.  Select Go to resource.
+    | **Setting**          | **Value**                                            |
+    | -------------------- | ---------------------------------------------------- |
+    | Subscription         | Concierge Subscription                               |
+    | Resource group       | Select the resource group that starts with **learn** |
+    | Storage account name | Create a unique storage account name                 |
+    | Region               | Leave default                                        |
+    | Performance          | Standard                                             |
+    | Redundancy           | Locally redundant storage (LRS)                      |
+6.  Select **Review** to review your storage account settings and allow Azure to validate the configuration.
+7.  Once validated, select **Create**. Wait for the notification that the account was successfully created.
+8.  Select **Go to resource**.
 
 ## Work with blob storage
 
 In this section, you'll create a Blob container and upload a picture
 
-1.  Under Data storage, select Containers.
+1.  Under **Data storage**, select **Containers**.
     
     :::image type="content" source="../media/storage-account-menu-9472480e.png" alt-text="Screenshot of the Container add section of a storage account.":::
     
