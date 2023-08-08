@@ -35,3 +35,4 @@ modules:
 - learn.wwl.explore-azure-iot-services
 trophy:
   uid: learn.wwl.create-azure-iot-services-azure-portal.trophy
+hidden: true

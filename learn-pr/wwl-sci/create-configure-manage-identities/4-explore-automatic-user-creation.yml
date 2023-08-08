@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.explore-automatic-user-creation
+title: Explore automatic user creation
+metadata:
+  title: Explore automatic user creation
+  description: "Explore automatic user creation"
+  ms.date: 08/04/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/4-explore-automatic-user-creation.md)]
