@@ -2021,4 +2021,9 @@ achievements:
   type: badge
   title: Capture and view page load times in your Azure web app with Application Insights
   summary: Application Insights is an Azure service that you can use to monitor the behavior and performance of a web application. If you run a web app in Azure, you can take advantage of several benefits provided by Application Insights simply by enabling it, without changing any of your code. When you complete this module, you'll know how to enable Application Insights and client-side monitoring and view metrics in the portal.
-  iconUrl: /training/achievements/capture-page-load-times-application-insights.svg 
+  iconUrl: /training/achievements/capture-page-load-times-application-insights.svg
+- uid: learn.azure.aspnet-logging.badge
+  type: badge
+  title: Implement logging in a .NET Framework ASP.NET web application
+  summary: Learn how to implement logging in an ASP.NET web application so you can store log data in Azure Blob storage and incorporate log information into Azure Application Insights performance data.
+  iconUrl: /training/achievements/aspnet-logging.svg
