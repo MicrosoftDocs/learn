@@ -5,4 +5,4 @@ In this module, you learned how to:
 - Use a REST API to consume a cognitive service.
 - Use an SDK to consume a cognitive service.
 
-For more information about cognitive services, refer to the [cognitive services documentation](/azure/cognitive-services/what-are-cognitive-services).
+For more information about Azure AI Services, refer to the [Azure AI Services documentation](/azure/ai-services/what-are-ai-services).
