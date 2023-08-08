@@ -29,7 +29,7 @@ roles:
 products:
 - azure
 - azure-immersive-reader
-- azure-cognitive-services
+- ai-services
 subjects:
 - accessibility
 units:
