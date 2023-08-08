@@ -24794,6 +24794,41 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/2-enable-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/3-exercise-enable-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/4-view-application-insights-metrics.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/5-exercise-use-the-portal-to-visualize-page-load-times.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure/aspnet-logging/index.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
       "redirect_document_id": false
