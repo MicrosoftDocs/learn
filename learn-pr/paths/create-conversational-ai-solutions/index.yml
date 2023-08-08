@@ -24,7 +24,7 @@ roles:
 products:
 - azure
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 - azure-language-understanding
 - azure-sdks
 subjects:
