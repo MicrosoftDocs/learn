@@ -24688,6 +24688,145 @@
       "source_path": "learn-pr/wwl-azure/explore-developer-tools-for-workspace-interaction/1b-video.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/explore-developer-tools-for-workspace-interaction",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/7-version-control-git-azure-repos.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-repos-github",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-repos-github/7-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/work-azure-repos-github/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/work-azure-repos-github/8-summary",
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/2-kubernetes-arc-overview.yml",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-kubernetes/2-arc-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/3-architecture-components.yml",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-kubernetes/3-kubernetes-overview",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/5-policy.yml",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-kubernetes/7-integrate-policy-monitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/7-integrate-azure-monitor.yml",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-kubernetes/7-integrate-policy-monitor",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/intro-to-arc-enabled-kubernetes/8-summary.yml",
+      "redirect_url": "/training/modules/intro-to-arc-enabled-kubernetes/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/10-exercise-change-user-license-assignments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/2-exercise-change-user-license-assignments",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/11-create-custom-security-attributes.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/3-create-custom-security-attributes",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/12-explore-automatic-user-creation.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/4-explore-automatic-user-creation",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/13-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/5-knowledge-check",
+      "redirect_document_id": false
+    },
+     {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/14-summary-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/6-summary-resources",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/2-users.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/7-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/3-exercise-assign-licenses-users.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/8-exercise-assign-licenses-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/4-exercise-restore-remove-deleted-users.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/9-exercise-restore-remove-deleted-users",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/5-groups.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/10-groups",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/6-exercise-add-groups-azure-active-directory.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/11-exercise-add-groups-azure-active-directory",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/7-configure-manage-device-registration.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/12-configure-manage-device-registration",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/8-manage-licenses.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/13-manage-licenses",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-sci/create-configure-manage-identities/9-exercise-change-group-license-assignments.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/create-configure-manage-identities/14-exercise-change-group-license-assignments",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/2-enable-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/3-exercise-enable-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/4-view-application-insights-metrics.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/5-exercise-use-the-portal-to-visualize-page-load-times.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
     }
   ]
 }
