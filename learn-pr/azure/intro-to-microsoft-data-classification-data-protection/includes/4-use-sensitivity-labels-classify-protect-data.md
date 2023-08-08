@@ -22,6 +22,10 @@ A label policy consists of:
 - The scope of the label policy, meaning the users and groups that are included in the policy.
 - The label policy settings, as described in the following section.
 
+After you create a label policy that publishes sensitivity labels, allow up to 24 hours for users to be able to see and use the labels in their Office apps.
+
+The only limit to the number of sensitivity labels you can create and publish is a maximum of 500 labels that apply encryption. However, to reduce admin overhead and complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have shown noticeably reduced effectiveness when users have more than five main labels or more than five sublabels per main label to choose from.
+
 ### Label policy settings
 
 - **Sensitivity labels** to include in the policy.
@@ -37,10 +41,6 @@ A label policy consists of:
 - **Apply a default label to documents.** Apply a default label to all new documents and email created by the users and groups in the label policy. This option also applies to containers if you've enabled sensitivity labels for Microsoft Teams, Microsoft 365 groups, and SharePoint sites.
 
   A default label sets a base level of protection for all your content. Users can change the default label if it's not the right label for their document or email. However, without user training and other controls, this setting can result in inaccurate labeling.
-
-After you create a label policy that publishes sensitivity labels, allow up to 24 hours for users to be able to see and use the labels in their Office apps.
-
-The only limit to the number of sensitivity labels you can create and publish is a maximum of 500 labels that apply encryption. However, to reduce admin overhead and complexity for your users, try to keep the number of labels to a minimum. Real-world deployments have shown noticeably reduced effectiveness when users have more than five main labels or more than five sublabels per main label to choose from.
 
 ## Automatically apply a sensitivity label
 

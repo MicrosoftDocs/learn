@@ -6,7 +6,7 @@ In this module, you learned about Microsoft data classification and data protect
 - Microsoft Purview Customer Key for root encryption key protection.
 - Microsoft Purview Message Encryption.
 
-You can now help Contoso's IT team evaluate the data privacy, protection, and compliance capabilities of Azure and Microsoft 365. You're confident that these services will work well to address Contoso's operational needs, legal concerns, and compliance requirements.
+You can now help Contoso's IT team evaluate the data privacy, protection, and compliance capabilities of Azure and Microsoft 365. You're confident that these services can work well to address Contoso's operational needs, legal concerns, and compliance requirements.
 
 ## Learn more
 

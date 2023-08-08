@@ -8,7 +8,7 @@ The scanner can inspect any files that Windows can index by using `IFilter` hand
 
 The following diagram shows the scanner architecture, where the scanner discovers files across your on-premises and SharePoint servers.
 
-:::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Diagram that shows unified labeling scanner architecture.":::
+:::image type="content" source="../media/5-ul-scanner-arch.png" alt-text="Diagram that shows unified labeling scanner architecture." lightbox="../media/5-ul-scanner-arch.png":::
 
 You can run the scanner in *discovery mode* to discover files that contain sensitive information types, and view reports. After you configure label policies that apply automatic classification, you can label the files that the scanner discovers. You can optionally apply or remove protection.
 
