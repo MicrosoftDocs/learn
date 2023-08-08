@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.integrate-policy-monitor
+metadata:
+  title: Manage Azure Arc-enabled Kubernetes by using Azure Policy and Azure Monitor
+  description: Learn how Azure Arc centralizes and streamlines management by enabling a range of Azure services, such as Azure Policy and Azure Monitor.
+  ms.date: 08/07/2023
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
+title: Manage Azure Arc-enabled Kubernetes by using Azure Policy and Azure Monitor
+durationInMinutes: 8
+content: |
+  [!include[](includes/7-integrate-policy-monitor.md)]

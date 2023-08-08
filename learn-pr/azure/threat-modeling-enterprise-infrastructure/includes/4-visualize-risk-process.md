@@ -20,7 +20,7 @@ Process is a task that receives, modifies, or redirects input to output.
 
 #### Woodgrove process elements
 
-- O365
+- Microsoft 365
 - Open-source bug management service
 - SaaS offerings (grouped)
 - GitHub
@@ -38,4 +38,4 @@ Process is a task that receives, modifies, or redirects input to output.
 
 #### Process labeling example
 
-**O365** - O365/SaaS/Azure ADauth (user credentials, session token, request/response)
+**Microsoft 365** - Microsoft 365/SaaS/Azure ADauth (user credentials, session token, request/response)
