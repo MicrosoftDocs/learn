@@ -30,8 +30,8 @@ roles:
 - developer
 products:
 - azure
+- ai-services
 - document-intelligence
-- azure-cognitive-services
 - azure-sdks
 subjects:
 - artificial-intelligence
