@@ -1,7 +1,3 @@
-
-
-
-
 Microsoft Azure offers multiple ways to deploy VM-based solutions. One of the primary considerations is the approach to installing the operating system and the associated SAP workloads. In general, there are three options to choose from:
 
 ## Azure Marketplace images
@@ -30,7 +26,7 @@ If the result is different, STOP deploying SAP and investigate why the setup com
 
 ## Custom images
 
-This approach involves deploying VMs based on customer-specific images, in cases where Azure Marketplace images might not fit your needs. The process of preparing such images is operating system–specific. For details, refer to :
+This approach involves deploying VMs based on customer-specific images, in cases where Azure Marketplace images might not fit your needs. The process of preparing such images is operating system–specific. For details, refer to:
 
 - Windows: [Upload a generalized VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed)
 - Linux:

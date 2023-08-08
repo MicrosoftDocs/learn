@@ -1,7 +1,3 @@
-
-
-
-
 [SAP Note \#2015553](https://aka.ms/az-120-sapnote-2015553) describes storage-specific provisions for Azure VMs hosting SAP workloads:
 
 - “To increase the total number of IOPS per volume presented to the guest operating system in the VM, multiple disks can be striped using functionality operating systems offer. Each disk is protected from physical drive failure by the means of mirroring, so using a software RAID level higher than RAID-0 isn't necessary.”

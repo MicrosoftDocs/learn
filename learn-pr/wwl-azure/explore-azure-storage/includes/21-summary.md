@@ -1,7 +1,3 @@
-
-
-
-
 Now you have:
 
 - Explored Azure Storage types.

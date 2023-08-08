@@ -1,7 +1,3 @@
-
-
-
-
 Azure Write Accelerator is a functionality that is available exclusively for Azure M-Series VMs. As the name states, the purpose of the functionality is to improve I/O latency of writes against the Azure Premium Storage. For SAP HANA, Write Accelerator is supposed to be used against the **/hana/log** volume only. Therefore, the **/hana/data** and **/hana/log** are separate volumes with Azure Write Accelerator supporting the **/hana/log** volume only.
 
 > [!IMPORTANT]

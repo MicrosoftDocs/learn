@@ -1,7 +1,3 @@
-
-
-
-
 Another Azure storage type is called [Azure Ultra disk](/azure/virtual-machines/disks-types#ultra-disks). The significant difference between Azure storage offered so far and Ultra disk is that the disk capabilities are not bound to the disk size anymore. As a customer you can define these capabilities for Ultra disk:
 
 - Size of a disk ranging from 4 GiB to 65,536 GiB
@@ -10,7 +6,7 @@ Another Azure storage type is called [Azure Ultra disk](/azure/virtual-machines/
 
 Ultra disk gives you the possibility to define a single disk that fulfills your size, IOPS, and disk throughput range. Instead of using logical volume managers like LVM or MDADM on top of Azure Premium Storage to construct volumes that fulfill IOPS and storage throughput requirements. You can run a configuration mix between Ultra disk and Premium Storage. As a result, you can limit the usage of Ultra disk to the performance-critical **/hana/data** and **/hana/log** volumes and cover the other volumes with Azure Premium Storage.
 
-Another advantage of Ultra disk can be the better read latency in comparison to Premium Storage. The faster read latency can have advantages when you want to reduce the HANA start up times and the subsequent load of the data into memory. Advantages of Ultra disk storage also can be felt when HANA is writing savepoints. Since Premium Storage disks for **/hana/data** are usually not Write Accelerator cached, the write latency to **/hana/data** on Premium Storage compared to the Ultra disk is higher. It can be expected that savepoint writing with Ultra disk is performing better on Ultra disk.
+Another advantage of Ultra disk can be the better read latency in comparison to Premium Storage. The faster read latency can have advantages when you want to reduce the HANA startup times and the subsequent load of the data into memory. Advantages of Ultra disk storage also can be felt when HANA is writing savepoints. Since Premium Storage disks for **/hana/data** are usually not Write Accelerator cached, the write latency to **/hana/data** on Premium Storage compared to the Ultra disk is higher. It can be expected that savepoint writing with Ultra disk is performing better on Ultra disk.
 
 > [!IMPORTANT]
 > Ultra disk is not yet present in all the Azure regions and is also not yet supporting all VM types listed below. For detailed information about where Ultra disk is available and which VM families are supported, check the article [Azure managed disk types](/azure/virtual-machines/windows/disks-types).

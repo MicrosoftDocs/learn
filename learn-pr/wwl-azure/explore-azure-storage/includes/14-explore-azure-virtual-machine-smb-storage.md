@@ -1,5 +1,3 @@
-
-
 Highly available SMB shares for SAP workloads in Azure VMs can be implemented by using Storage Spaces Direct (S2D)-based clusters with the Scale-Out File Servers (SOFS) role. Alternatively, these shares can be created by using third-party solutions, such as SIOS DataKeeper, that emulate shared disks by synchronously replicating the content of local disks of clustered Azure VMs.
 
 Azure Files supports identity-based authentication for Windows file shares over Server Message Block (SMB) using the Kerberos authentication protocol through the following three methods:
