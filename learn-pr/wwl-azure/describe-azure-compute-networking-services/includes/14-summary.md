@@ -1,4 +1,3 @@
-
 In this module, you learned about some of the compute and networking services that are part of Azure. You learned about virtual machines, and the different options associate with them (such as virtual machine scale sets and virtual machine availability sets). You were also introduced to some of the networking capabilities, including virtual networking, ExpressRoute, and virtual private networks.
 
 ## Learning objectives

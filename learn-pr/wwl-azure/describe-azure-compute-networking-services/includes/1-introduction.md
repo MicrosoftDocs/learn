@@ -1,4 +1,3 @@
-
 In this module, you’ll be introduced to the compute and networking services of Azure. You’ll learn about three of the compute options (virtual machines, containers, and Azure functions). You’ll also learn about some of the networking features, such as Azure virtual networks, Azure DNS, and Azure ExpressRoute.
 
 ## Learning objectives

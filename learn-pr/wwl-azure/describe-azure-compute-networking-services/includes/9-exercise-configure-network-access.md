@@ -1,5 +1,15 @@
+In this exercise, you'll configure the access to the virtual machine (VM) you created earlier in this module.
 
-In this exercise, you'll configure the access to the virtual machine (VM) you created earlier in this module. The Microsoft Learn sandbox should still be running. If the sandbox timed out, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
+> [!IMPORTANT]
+> The Microsoft Learn sandbox should still be running. If the sandbox timed out, you'll need to redo the previous exercise (**Exercise - Create an Azure virtual machine**).
+
+To verify the VM you created previously is still running, use the following command in Azure cloudshell.
+
+```azurecli
+az vm list
+```
+
+If you receive an empty response, you need to complete the first exercise in this module again. If you the command listed your current VM and some of its settings, you may continue.
 
 Right now, the VM you created and installed Nginx on isn't accessible from the internet. You'll create a network security group that changes that by allowing inbound HTTP access on port 80.
 

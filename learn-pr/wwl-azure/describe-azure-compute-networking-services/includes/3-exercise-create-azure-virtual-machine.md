@@ -1,4 +1,3 @@
-
 In this exercise, you create an Azure virtual machine (VM) and install Nginx, a popular web server.
 
 You could use the Azure portal, the Azure CLI, Azure PowerShell, or an Azure Resource Manager (ARM) template.
@@ -15,13 +14,14 @@ Use the following Azure CLI commands to create a Linux VM and install Nginx. Aft
     az vm create \
       --resource-group <rgn>[sandbox resource group name]</rgn> \
       --name my-vm \
-      --image UbuntuLTS \
+      --public-ip-sku Standard \
+      --image Ubuntu2204 \
       --admin-username azureuser \
       --generate-ssh-keys
     
     ```
     
-    Your VM will take a few moments to come up. You name the VM **my-vm**. You use this name to refer to the VM in later steps.
+    Your VM will take a few moments to come up. You named the VM **my-vm**. You use this name to refer to the VM in later steps.
 2.  Run the following `az vm extension set` command to configure Nginx on your VM:
     
     ```azurecli
