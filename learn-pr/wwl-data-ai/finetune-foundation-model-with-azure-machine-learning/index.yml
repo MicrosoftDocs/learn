@@ -1,16 +1,14 @@
 ### YamlMime:Module
 uid: learn.finetune-foundation-model-with-azure-machine-learning
 metadata:
-  title: |
-    Fine-tune a foundation model from the model catalog in Azure Machine Learning
+  title: Fine-tune a foundation model from the model catalog in Azure Machine Learning
   description: "Learn how to fine-tune a foundation model from the model catalog in Azure Machine Learning."
   ms.date: 7/18/2023
   author: madiepev
   ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
   ms.service: machine-learning
-title: |
-  Fine-tune a foundation model with Azure Machine Learning
+title: Fine-tune a foundation model with Azure Machine Learning
 summary: "Train a pretrained Large Language Model (LLM) on specific tasks. The model catalog in Azure Machine Learning offers many open source models that can be fine-tuned for your specific task."
 abstract: |
   By the end of this module, you'll be able to:
