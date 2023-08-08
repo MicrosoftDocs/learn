@@ -2,7 +2,7 @@ As part of the architecture of Azure SQL Migration extension for Azure Data Stud
 
 There are two modes of migration to SQL Server on Azure Virtual Machine using Azure SQL Migration extension for Azure Data Studio:
 
-| Migration mode | Description | Application Downtime |
+| Migration mode | Description | Application downtime |
 | --- | --- | --- |
 | Online | Source database remains accessible for both read and write operations while database backups are continuously restored on the target. | Limited to the cutover duration at the end of the migration. |
 | Offline | Source database shouldn't be used for write activity while database backup files are restored on the target instance. | Downtime remains throughout the duration of the migration process until it's completed. |

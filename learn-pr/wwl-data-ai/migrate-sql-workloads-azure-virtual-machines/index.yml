@@ -38,8 +38,8 @@ units:
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.migration-strategies-and-options
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.explore-azure-sql-migration-extension-for-migration
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.review-data-migration-assistant
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-alwayson-availability-groups
-- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-native-backup-and-restore
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-using-always-on-availability-groups
+- learn-wwl.migrate-sql-workloads-azure-virtual-machines.migrate-use-native-backup-restore
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.compare-additional-migration-methods
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.exercise-migrate-sql-server-to-azure-vm
 - learn-wwl.migrate-sql-workloads-azure-virtual-machines.knowledge-check

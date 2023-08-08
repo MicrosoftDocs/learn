@@ -1,6 +1,6 @@
 In the context of SQL Server migration, careful planning is essential to ensure a successful migration. This planning involves addressing both the **how** and the **why** aspects of the migration. 
 
-:::image type="content" border="false" source="../media/2-why-and-how-considerations.png" alt-text="A visual representation of the SQL Server migration process where it emphasizes understanding benefits, utilizing tools, and balancing downtime for a successful migration."::: 
+:::image type="content" border="false" source="../media/2-why-how-considerations.png" alt-text="A visual representation of the SQL Server migration process where it emphasizes understanding benefits, utilizing tools, and balancing downtime for a successful migration."::: 
 
 1. Understanding the **why** entails recognizing the benefits after the migration is completed. 
 1. The **how** encompasses the selection of appropriate migration tools and the development of a comprehensive migration plan. 
