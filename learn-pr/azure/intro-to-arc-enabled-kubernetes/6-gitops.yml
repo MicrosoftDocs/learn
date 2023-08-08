@@ -4,7 +4,7 @@ metadata:
   title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
   description: Learn about GitOps, and how to use GitOps to apply configurations to Azure Arc-enabled Kubernetes clusters.
   author: JnHs
-  ms.date: 05/25/2023
+  ms.date: 08/07/2023
   ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.service: azure
@@ -12,37 +12,6 @@ metadata:
   - e2e-hybrid
   - event-tier1-build-2022
 title: Use GitOps to configure Azure Arc-enabled Kubernetes clusters
-durationInMinutes: 9
+durationInMinutes: 7
 content: |
   [!include[](includes/6-gitops.md)]
-quiz:
-  title: Check your knowledge
-  questions:
-  - content: "What type of deployment agent do Azure Arc-enabled Kubernetes clusters use for GitOps?"
-    choices:
-    - content: "Flux"
-      isCorrect: true
-      explanation: "Azure Arc-enabled Kubernetes clusters rely on Flux, an open-source GitOps deployment tool."
-    - content: "Istio"
-      isCorrect: false
-      explanation: "Istio is an open-source service mesh platform that Azure Arc-enabled Kubernetes doesn't use directly to implement GitOps."
-    - content: "omsagent"
-      isCorrect: false
-      explanation: "The omsagent agent implements Azure Monitor functionality on Kubernetes clusters. Azure Arc-enabled Kubernetes doesn't use the omsagent directly to implement GitOps."
-    - content: "CoreDNS"
-      isCorrect: false
-      explanation: "CoreDNS provides name resolution in Kubernetes clusters. Azure Arc-enabled Kubernetes doesn't use CoreDNS directly to implement GitOps."
-  - content: "Which tool can you use to automate configuration of GitOps for Azure Arc-enabled Kubernetes clusters?"
-    choices:
-    - content: "Azure Policy"
-      isCorrect: true
-      explanation: "Azure Policy can automate GitOps configurations, so you can apply them consistently across all resources."
-    - content: "Microsoft Defender for Cloud"
-      isCorrect: false
-      explanation: "Microsoft Defender for Cloud doesn't provide GitOps configuration automation functionality."
-    - content: "Azure Advisor"
-      isCorrect: false
-      explanation: "Azure Advisor doesn't provide GitOps configuration automation functionality."
-    - content: "Azure Resource Locks"
-      isCorrect: false
-      explanation: "Azure Resource Locks don't provide GitOps configuration automation functionality."
