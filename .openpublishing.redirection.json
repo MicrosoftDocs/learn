@@ -25062,6 +25062,11 @@
       "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-storage-accounts.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-storage-tiers.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
