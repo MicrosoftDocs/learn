@@ -2067,3 +2067,8 @@ achievements:
   title: Secure network connectivity on Azure
   summary: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
   iconUrl: /training/achievements/secure-network-connectivity.svg
+- uid: learn.azure.iot-fundamentals.badge
+  type: badge
+  title: Choose the best Azure IoT service for your application
+  summary: Examine Azure IoT services, and choose the right service for your scenario.
+  iconUrl: /training/achievements/iot-fundamentals.svg
