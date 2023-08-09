@@ -4,12 +4,13 @@ title: Exercise - Create an Azure resource
 metadata:
   title: Exercise - Create an Azure resource
   description: "Exercise - Create an Azure resource"
-  ms.date: 08/08/2023
+  ms.date: 08/09/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: true
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/7-exercise-create-azure-resource.md)]
-interactive: bash
+interactive: powershell
