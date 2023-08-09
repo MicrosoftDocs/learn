@@ -31,7 +31,6 @@ roles:
 products:
 - azure
 units:
-- learn.azure.choose-azure-services-sla-lifecycle.6-knowledge-check
 - learn.azure.choose-azure-services-sla-lifecycle.7-summary
 badge:
   uid: learn.azure.choose-azure-services-sla-lifecycle.badge
