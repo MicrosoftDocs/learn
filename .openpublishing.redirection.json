@@ -25177,6 +25177,11 @@
       "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/2-what-is-defense-in-depth.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
