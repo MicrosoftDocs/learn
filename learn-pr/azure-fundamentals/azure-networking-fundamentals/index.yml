@@ -33,7 +33,6 @@ subjects:
 - networking
 units:
 - learn.azure.azure-networking-fundamentals.introduction
-- learn.azure.azure-networking-fundamentals.azure-virtual-network-settings
 - learn.azure.azure-networking-fundamentals.azure-vpn-gateway-fundamentals
 - learn.azure.azure-networking-fundamentals.express-route-fundamentals
 - learn.azure.azure-networking-fundamentals.knowledge-check
