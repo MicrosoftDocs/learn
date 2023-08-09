@@ -30,7 +30,6 @@ modules:
 - learn.azure-well-architected-introduction
 - learn.azure.secure-access-azure-identity-services
 - learn.wwl.discover-azure-message-queue
-- learn.azure.azure-networking-fundamentals
 - learn.azure.azure-storage-fundamentals
 trophy:
   uid: learn.wwl.microsoft-azure-architect-design-prerequisites.trophy
