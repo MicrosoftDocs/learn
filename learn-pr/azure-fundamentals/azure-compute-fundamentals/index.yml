@@ -38,7 +38,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.overview
 - learn.azure.azure-compute-fundamentals.windows-virtual-desktop
 - learn.azure.azure-compute-fundamentals.knowledge-check
