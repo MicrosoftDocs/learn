@@ -3,7 +3,7 @@ uid: learn.wwl.implement-high-availability-for-sap-workloads-azure
 metadata:
   title: Implement high availability for SAP workloads in Azure
   description: "This module explores high availability and disaster recovery support of Azure for SAP workloads, such as SAP application servers, SAP ASCS-SCS instances, DBMS instances, and SAP HANA. Prepare for Exam AZ-120 Planning and Administering Microsoft Azure for SAP Workloads."
-  ms.date: 08/07/2023
+  ms.date: 08/09/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial

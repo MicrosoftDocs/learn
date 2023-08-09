@@ -4,7 +4,7 @@ When considering the active/active configuration, you need to find the two Avail
 
 Consider the basic layout of the active/active architecture:
 
-:::image type="content" source="../media/active_active_zones_deployment.png" alt-text="Diagram illustrating Active/Active zone deployment.":::
+:::image type="content" source="../media/active-active-zones-deployment.png" alt-text="Diagram illustrating Active/Active zone deployment.":::
 
 The following considerations apply for this configuration:
 
