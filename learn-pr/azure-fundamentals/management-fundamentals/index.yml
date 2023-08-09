@@ -33,7 +33,6 @@ products:
 subjects:
 - device-management
 units:
-- learn.azure.management-fundamentals.use-azure-portal
 - learn.azure.management-fundamentals.use-azure-powershell
 - learn.azure.management-fundamentals.use-azure-resource-manager
 
