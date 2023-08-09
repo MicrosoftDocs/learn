@@ -35,7 +35,6 @@ products:
 subjects:
 - networking
 units:
-- learn.azure.secure-network-connectivity-azure.8-knowledge-check
 - learn.azure.secure-network-connectivity-azure.9-summary
 badge:
   uid: learn.azure.secure-network-connectivity-azure.badge
