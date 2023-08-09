@@ -35,7 +35,6 @@ products:
 subjects:
 - networking
 units:
-- learn.azure.secure-network-connectivity-azure.3-protect-network-azure-firewall
 - learn.azure.secure-network-connectivity-azure.4-protect-attacks-azure-ddos-protection
 - learn.azure.secure-network-connectivity-azure.5-filter-traffic-network-security-groups
 - learn.azure.secure-network-connectivity-azure.6-configure-access-network-security-group
