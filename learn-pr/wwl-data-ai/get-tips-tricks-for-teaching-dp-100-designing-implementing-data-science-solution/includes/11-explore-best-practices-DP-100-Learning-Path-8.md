@@ -4,7 +4,7 @@ DP-100: Learning Path 8 Train models with scripts in Azure Machine Learning
 
 Learning Path 8 Overview
 
-As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn how to run the training script as a command job to help prepare production-ready script. Students will also learn about common terminologies like the code, command, environment, and compute.
+As you begin to teach this learning path, get familiar with what the students learn during the learning path. In this learning path students learn how to run the training script as a command job to help prepare production-ready script. Students also learn about common terminologies like the code, command, environment, and compute.
 
 This learning path consists of two modules:
 
@@ -16,7 +16,7 @@ This learning path consists of two modules:
 Learning Path 8 Tips and Tricks
 
 - Illustrate a completed experiment to show status, logs, and outputs 
-- Emphasize the difference between logging modes and make sure it is clear before moving forward
+- Emphasize the difference between logging modes and make sure it's clear before moving forward
 Learning Path 8 Demos (optional)
 - Show where outputs can be found
 - Compare both outputs: in a notebook and in the user interface (UI)
