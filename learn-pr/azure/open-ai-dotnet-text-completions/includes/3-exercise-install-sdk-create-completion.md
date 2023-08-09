@@ -119,33 +119,19 @@ Next up we'll want to create a bare bones .NET Console application and add the A
 
 Let's create a prompt for the model that will show it how to classify product reviews.
 
-1. The first step is to create a prompt that instructs the model on how you'd like to classify the review and provide several examples.
+1. The first step is to create a prompt that instructs the model that you'd like to classify the sentiment of a product review.
 
     ```csharp
-    string exampleReview = "The cat never got into the catio-tent until I manually put him in, then he stayed in it and seemed to enjoy himself, but I don't know what cat's think.";
+    string exampleReview = "The cat never got into the catio-tent.";
 
     string prompt = $"""
-    This is a sentiment classifier for reviews of pet products.
-
-    Example: This product worked well for my needs and my cat loved it.
-    Sentiment: Positive.
-
-    Example: My dog would not play with this toy.
-    Sentiment: Negative.
-
-    Example: My hamster ate the food but that's about it.
-    Sentiment: Neutral.
-
-    Example: {exampleReview}
-    Sentiment:
+    What is the sentiment of the following review? {exampleReview}
     """;
     ```
 
-Notice how we're providing example reviews and how to classify them. Then the last review is what we want the model to classify. We expect it to continue, or provide a _completion_ to the `Sentiment:` portion of the prompt.
-
 ## Generate classification completions
 
-Now let's classify the sentiment of several product reviews.
+Now let's have the model generate a sentiment.
 
 1. To use the Azure OpenAI SDK, we first must define a `CompletionOptions` object that defines how we want the model to react. The exact meanings of the values of `CompletionOptions` are a bit out of scope for the module, but you can [learn more about them](https://learn.microsoft.com/dotnet/api/azure.ai.openai.completionsoptions?view=azure-dotnet-preview).
 
@@ -178,27 +164,25 @@ Now let's classify the sentiment of several product reviews.
 1. You can run the application by entering `dotnet run` into the terminal.
 1. Experiment by changing the `exampleReview`'s value to see how the review may be classified differently.
 
+In one example run, we received the following:
+
+```console
+The reviewer is not happy with the product.
+
+The sentiment of this review is negative.
+```
+
+You may receive something different as the model is non-deterministic, or may produce a different output even with the same input.
+
 ## Generate translation completions
 
 Ok, our proof-of-concept application is now successfully classifying product review sentiment. Let's translate the review into Spanish while we're at it.
 
-1. What we need to do is write a different prompt showing some example reviews being translated so the model knows what we want.
+1. We're using the same example review from above, but this time constructing the prompt to tell the model to translate it into Spanish.
 
     ```csharp
     string promptForTranslation = $"""
-    This is a translator between English and Spanish.
-    
-    Example: This product worked well for my needs and my cat loved it.
-    Translation: Este producto funcionó bien y a mi gato le encantó.
-    
-    Example: My dog would not play with this toy.
-    Translation: Mi perro no jugaría con este juguete..
-    
-    Example: My hamster ate the food but that's about it.
-    Translation: Mi hámster se comió la comida, pero eso es todo.
-    
-    Example: {exampleReview}
-    Translation:
+    Translate the following sentence into Spanish: {exampleReview}
     """;
     ```
 
@@ -221,6 +205,12 @@ Ok, our proof-of-concept application is now successfully classifying product rev
     
     Console.WriteLine(translation);
     ```
+
+The output we received this time (and your may vary):
+
+```console
+El gato nunca entró en el catio-tent.
+```
 
 ## Summary
 
