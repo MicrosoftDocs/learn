@@ -38,6 +38,5 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.azure-compute-fundamentals.windows-virtual-desktop
 badge:
   uid: learn.azure.azure-compute-fundamentals.badge
