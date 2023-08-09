@@ -23,6 +23,5 @@ subjects:
 modules:
 - learn-sqlserver.introduction-sql-server-linux
 - learn-sqlserver.deploy-sql-server-linux
-- learn-sqlserver.automatically-tune-sql-server-linux
 trophy: 
   uid: learn-sqlserver.sql-server-2017-on-linux.trophy
