@@ -23,7 +23,7 @@ roles:
 - data-scientist
 - student
 products:
-- azure-form-recognizer
+- document-intelligence
 subjects:
 - artificial-intelligence
 modules:

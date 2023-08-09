@@ -3,7 +3,7 @@ uid: learn.wwl.train-evaluate-regression-models
 metadata:
   title: Train and evaluate regression models
   description: "Regression is a commonly used kind of machine learning for predicting numeric values."
-  ms.date: 01/04/2021
+  ms.date: 08/08/2023
   author: s-polly
   ms.author: scottpolly
   ms.topic: interactive-tutorial
@@ -16,6 +16,7 @@ abstract: |
 prerequisites: |
   - Basic mathematical concepts
   - Programming with Python
+  - Familiarity with Jupyter notebooks
 iconUrl: /training/achievements/train-and-evaluate-regression-models.svg
 levels:
 - intermediate
