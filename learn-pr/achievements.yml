@@ -2057,3 +2057,8 @@ achievements:
   title: Choose the right Azure services by examining SLAs and service lifecycle
   summary: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning.
   iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.azure.protect-against-security-threats-azure.badge
+  type: badge
+  title: Protect against security threats on Azure
+  summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
+  iconUrl: /training/achievements/review-security-tools-features.svg
