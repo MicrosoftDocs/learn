@@ -24892,6 +24892,11 @@
       "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
