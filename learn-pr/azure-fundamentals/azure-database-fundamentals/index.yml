@@ -45,7 +45,6 @@ subjects:
 units:
 - learn.azure.azure-database-fundamentals.introduction
 - learn.azure.azure-database-fundamentals.exercise-create-sql-database
-- learn.azure.azure-database-fundamentals.azure-sql-managed-instance
 - learn.azure.azure-database-fundamentals.knowledge-check
 - learn.azure.azure-database-fundamentals.summary
 badge:
