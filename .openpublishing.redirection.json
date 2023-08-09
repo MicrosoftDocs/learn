@@ -25407,6 +25407,11 @@
       "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/8-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/6-use-bot-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
