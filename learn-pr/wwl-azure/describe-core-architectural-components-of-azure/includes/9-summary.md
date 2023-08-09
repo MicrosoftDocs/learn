@@ -10,4 +10,4 @@ You should now be able to:
  -  Describe Azure resources and Resource Groups.
  -  Describe subscriptions.
  -  Describe management groups.
- -  Describe the hierarchy of resource groups, subscriptions, and management groups.
+ -  Describe the hierarchy of resource groups, subscriptions, and management groups. 
