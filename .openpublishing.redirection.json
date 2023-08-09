@@ -24902,6 +24902,11 @@
       "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/azure-app-services.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/azure-container-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
