@@ -25592,6 +25592,11 @@
       "source_path": "learn-pr/azure-fundamentals/management-fundamentals/7-use-azure-mobile-app.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/4-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
