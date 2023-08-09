@@ -25452,6 +25452,11 @@
       "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/4-use-azure-devops.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/6-use-azure-devtest-labs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
