@@ -7,6 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.service: azure-file-storage
 title: Implement a hybrid file server infrastructure
 summary: In this module, you’ll learn to deploy Azure File Sync, migrate from DFS, and use Storage Migration Services to migrate file servers to Azure.
 abstract: |
@@ -40,6 +41,7 @@ roles:
 products:
 - azure
 - azure-cloud-shell
+- azure-files
 - azure-portal
 - azure-storage
 - azure-virtual-machines

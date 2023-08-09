@@ -1,16 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.virtual-private-networks
-title: Describe Azure Virtual Private Networks
+title: Describe Azure virtual private networks
 metadata:
-  title: Describe Azure Virtual Private Networks
-  description: "Describe Azure Virtual Private Networks"
-  ms.date: 12/12/2022
+  title: Describe Azure virtual private networks
+  description: "Describe Azure virtual private networks"
+  ms.date: 08/09/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 5
 content: |
   [!include[](includes/10-virtual-private-networks.md)]
+interactive: bash
