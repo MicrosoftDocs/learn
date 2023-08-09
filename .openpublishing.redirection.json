@@ -25142,6 +25142,11 @@
       "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/3-detect-respond-threats-sentinel.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/4-manage-secrets-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
