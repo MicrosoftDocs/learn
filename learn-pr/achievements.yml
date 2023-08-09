@@ -2077,3 +2077,8 @@ achievements:
   title: Choose the best AI service for your needs
   summary: Examine Azure's AI services, and choose the right one for your company.
   iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
+- uid: learn.azure.azure-devops-devtest-labs.badge
+  type: badge
+  title: Choose the best tools to help organizations build better solutions
+  summary: Learn about Microsoft tools and services that help developers and operations engineers build modern solutions for the cloud and on-premises.
+  iconUrl: /training/achievements/azure-devops-devtest-labs.svg
