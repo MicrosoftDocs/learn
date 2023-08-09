@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: face-api
 title: Detect and analyze faces with the Face service
 summary: Face detection, analysis, and recognition are important capabilities for artificial intelligence (AI) solutions. The Face cognitive service in Azure makes it easy integrate these capabilities into your applications.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - classification-analysis
 units:

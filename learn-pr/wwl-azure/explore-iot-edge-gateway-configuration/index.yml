@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-edge
 title: Explore IoT Edge gateway configuration
 summary: This module provides you with experience deploying IoT Edge devices, configuring IoT Edge devices as gateway and downstream child devices, and communicating child device messages to IoT Hub using the gateway device.
 abstract: |
@@ -44,3 +44,4 @@ units:
 - learn.wwl.explore-iot-edge-gateway-configuration.summary
 badge:
   uid: learn.wwl.explore-iot-edge-gateway-configuration.badge
+hidden: true

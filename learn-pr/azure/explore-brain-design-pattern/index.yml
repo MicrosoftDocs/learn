@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore brain design patterns
 summary: In this module, you'll learn about the main Autonomous AI brain design patterns that solve most of the Machine Teaching challenges. You'll also learn when to best use them individually or combined.
 abstract: | 

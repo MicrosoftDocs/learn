@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: smcdowell
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: stream-analytics
 title: Transform data by using Azure Stream Analytics
 summary: Learn how to create Azure Stream Analytics jobs to process input data, transform it with a query, and return results.
 abstract: | 

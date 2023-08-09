@@ -6,7 +6,7 @@ In this module, you’ve learned how to use Microsoft Purview to connect to an A
 
 - [Connect to and manage an Azure SQL Managed Instance in Microsoft Purview](/azure/purview/register-scan-azure-sql-database-managed-instance)
 
-- [Amazon RDS Multi-Cloud Scanning Connector for Microsoft Purview (Public preview)](/azure/purview/register-scan-amazon-rds)
+- [Amazon RDS multicloud Scanning Connector for Microsoft Purview (Public preview)](/azure/purview/register-scan-amazon-rds)
 
 - [Connect to and manage an on-premises SQL Server instance in Microsoft Purview](/azure/purview/register-scan-on-premises-sql-server)
 

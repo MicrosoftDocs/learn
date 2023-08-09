@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.sustainable-software-engineering-overview.summary
+title: Summary
+metadata:
+  title: Summary
+  description: Summary
+  ms.date: 06/13/2023
+  author: Zimmergren
+  ms.author: tozimmergren
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.contributors:
+  - tozimmergren
+  - simont
+durationInMinutes: 2
+content: |
+  [!include[](includes/10-summary.md)]

@@ -48,21 +48,21 @@ A DHCP server or relay can be created directly from the Azure VMware Solution co
 
 1. In the Azure VMware Solution private cloud, under **Workload Networking**, select **DHCP** > **Add**.
 
-1. Select either **DHCP Server** or **DHCP Relay**. 
+1. Select either **DHCP Server** or **DHCP Relay**.
 1. Provide a name for the server or relay and provide three IP addresses. For a DHCP relay, only one IP address is required.
 
     :::image type="content" source="../media/6-add-dhcp-server-relay.png" alt-text="Screenshot of the Azure portal showing how to add either a D H C P server or a D H C P relay into the A V S private cloud.":::
 
-1. Complete the DHCP configuration by providing DHCP ranges on the logical segments, like those configured previously, and then select **OK**.
+1. Complete the DHCP configuration by providing DHCP ranges on the logical segments, like those configured previously, then select **OK**.
 
 ## Configure port mirroring in the portal
 
-Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding copies of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source (a VM or a group of VMs), and then sends the traffic to a destination.
+Port mirroring can be configured to monitor network traffic. Port mirroring involves forwarding copies of each network packet from one network switch port to another. Port mirroring places a protocol analyzer on the port that receives all mirrored data. Port mirroring analyzes traffic from a source (a VM or a group of VMs), then sends the traffic to a destination.
 
 To set up port mirroring in the Azure VMware Solution console, you'll first create source and destination VMs or VM groups. The source group has either a single VM or multiple VMs where the network traffic is mirrored.
 
 1. In the Azure VMware Solution private cloud, under **Workload Networking**, select **Port mirroring** > **VM groups** > **Add**.
-1. Name the source VM group, select the VMs, and then select **OK**.
+1. Name the source VM group, select the VMs, then select **OK**.
 1. Repeat the preceding step to create the destination VM group.
 
     :::image type="content" source="../media/6-add-port-mirroring-vm-groups.png" alt-text="Screenshot of the Azure portal showing where to configure port mirroring related to destination VMs or VM groups.":::
@@ -113,7 +113,7 @@ Follow these steps:
     | **FDQN zones** | Select the FQDN zones that you added under the **DNS zones** tab. |
     | **Log level** | Select the level you want. |
 
-1. Select **OK**. The DNS service was added successfully.
+1. Select **OK**. The DNS service is added successfully.
 
 ## Verify on-premises network connectivity to the Azure VMware Solution private cloud
 

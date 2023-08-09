@@ -13,7 +13,7 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following elements does not need keyboard focus when you are making your app accessible?"
+  - content: "Which of the following elements doesn't need keyboard focus when you're making your app accessible?"
     choices:
     - content: "Buttons"
       isCorrect: false
@@ -29,16 +29,16 @@ quiz:
       explanation: "Incorrect."
   - content: "What do you need to do to make data tables accessible in your web page?"
     choices:
-    - content: "Use native HTML table elements (`table`, `thead`, `tbody`, `tr`, `th`, and `td`)"
+    - content: "Use native HTML table elements (`table`, `thead`, `tbody`, `tr`, `th`, and `td`)."
       isCorrect: true
       explanation: "Correct."
-    - content: "Use large text"
+    - content: "Use large text."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Use images of data tables with descriptive `alt` tag"
+    - content: "Use images of data tables with descriptive `alt` tags."
       isCorrect: false
       explanation: "Incorrect."
-    - content: "Use low contrast color scheme"
+    - content: "Use a low contrast color scheme."
       isCorrect: false
       explanation: "Incorrect."
   - content: "Which is a good example of informative alt text for the Microsoft logo?"

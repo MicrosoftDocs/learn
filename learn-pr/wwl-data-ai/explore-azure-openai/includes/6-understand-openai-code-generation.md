@@ -1,8 +1,6 @@
-Code generation AI models are able to take natural language or code snippets and translate them into code. The OpenAI code generation model family, Codex, is proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python.
+GPT models are able to take natural language or code snippets and translate them into code. The OpenAI GPT models are proficient in over a dozen languages, such as C#, JavaScript, Perl, PHP, and is most capable in Python.
 
-## Codex
-
-Codex models are based off of GPT-3 and are optimized to understand and write code. These models have been trained on both natural language and billions of lines of code from public repositories. Codex is able to generate code from natural language instructions such as code comments, and can suggest ways to complete code functions.
+GPT models have been trained on both natural language and billions of lines of code from public repositories. The models are able to generate code from natural language instructions such as code comments, and can suggest ways to complete code functions.
 
 For example, given the prompt "Write a for loop counting from 1 to 10 in Python," the following answer is provided:
 
@@ -11,13 +9,13 @@ for i in range(1,11):
     print(i)
 ```
 
-Code generation models can help developers code faster, understand new coding languages, and focus on solving bigger problems in their application. Developers can break down their goal into simpler tasks and use Codex to help build those out tasks  using known patterns.
+GPT models can help developers code faster, understand new coding languages, and focus on solving bigger problems in their application. Developers can break down their goal into simpler tasks and use GPT to help build those out tasks  using known patterns.
 
 ## Examples of code generation
 
 Part of the training data for GPT-3 included programming languages, so it's no surprise that GPT models can answer programming questions if asked. What's unique about the Codex model family is that it's more capable across more languages than GPT models.
 
-Codex goes beyond just writing code from natural language prompts. Given the following code, it can generate unit tests:
+Code generation goes beyond just writing code from natural language prompts. Given the following code, it can generate unit tests:
 
 ```python
 # Python 3
@@ -28,7 +26,7 @@ def mult_numbers(a, b):
 def
 ```
 
-Codex builds out unit tests for our function:
+GPT builds out unit tests for our function:
 
 ```python
 # Python 3
@@ -47,9 +45,9 @@ def test_mult_numbers_negative():
   assert mult_numbers(10, -1) == -10
 ```
 
-Codex can also summarize functions that are already written, explain SQL queries or tables, and convert a function from one programming language into another.
+GPT can also summarize functions that are already written, explain SQL queries or tables, and convert a function from one programming language into another.
 
-When interacting with Codex models, you can specify libraries or language specific tags to make it clear to Codex what we want. For example, we can provide this prompt formatted as an HTML comment: `<!-- build a page titled "Let's Learn about AI" -->`, and get this as a result:
+When interacting with GPT models, you can specify libraries or language specific tags to make it clear to Codex what we want. For example, we can provide this prompt formatted as an HTML comment: `<!-- build a page titled "Let's Learn about AI" -->`, and get this as a result:
 
 ```html
 <html>

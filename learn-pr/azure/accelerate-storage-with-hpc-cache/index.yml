@@ -8,7 +8,7 @@ metadata:
   author: ronhogue  
   ms.author: rohogue  
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: hpc-cache
 title: Accelerate high-performance computing storage by using Azure HPC Cache  
 summary: Create a virtual caching solution for NFS storage. Client machines connect to the cache, read data, and process the data.
 abstract: |

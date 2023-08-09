@@ -8,6 +8,8 @@ metadata:
   ms.author: sidandrews
   manager: jroth
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
   zone_pivot_groups: cosmos-db-programming-model-java-spring
 title: Exercise - Create, read, update, and delete NoSQL data programmatically

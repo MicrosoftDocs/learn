@@ -52,7 +52,7 @@ inputs:
     required: true
 ```
 
-If you need to access the encrypted secret in your action's code, the action code could read the value of the input using the `INPUT_SUPER_SECRET` environment variable.
+If you need to access the encrypted secret in your action's code, the action code could read the value of the input using the `$SUPER_SECRET` environment variable.
 
 > [!WARNING]
 > When authoring your own actions, make sure not to include any encrypted secrets in your action's source code, because actions are sharable units of work. If your action needs to use encrypted secrets or other user-supplied inputs, it's best to use the core module from the [Actions Toolkit](https://github.com/actions/toolkit).

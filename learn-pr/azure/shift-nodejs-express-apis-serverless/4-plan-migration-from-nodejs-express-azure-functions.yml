@@ -7,6 +7,8 @@ metadata:
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 title: Plan the migration from Node.js and Express to Azure Functions
 durationInMinutes: 2

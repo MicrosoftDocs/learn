@@ -4,11 +4,10 @@ title: Exercise - Discover integral types
 metadata:
   title: Exercise - Discover integral types
   description: "Exercise - Discover integral types"
-  ms.date: 02/25/2023
+  ms.date: 06/07/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-integral-types.md)]

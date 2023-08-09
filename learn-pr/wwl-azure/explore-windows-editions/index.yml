@@ -3,7 +3,7 @@ uid: learn.wwl.explore-windows-editions
 metadata:
   title: MD-102 Explore Windows Editions
   description: "This module explains Windows editions' features, reasons to choose them, and installation methods. Learners will understand various Windows versions and their installation processes. MD-102"
-  ms.date: 04/06/2023
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -19,7 +19,7 @@ prerequisites: |
   *   Students should have a basic understanding of computer networks and hardware concepts.
   *   Students should have a basic understanding of OS and Application concepts.
   *   Students should have experience with using Windows 11 or later.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/windows-client-explore.svg
 levels:
 - beginner
 roles:

@@ -7,7 +7,6 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Intro to Microsoft data classification and data protection 
 summary: Learners will be able to describe Microsoft Information Protection and Azure Information Protection as well as how to use sensitivity labels to classify and protect data. Learners should also be able to describe technologies such as unified labeling scanners, Defender for Cloud Apps, service encryption and Office 365 Message Encryption.
 abstract: |
@@ -35,7 +34,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - information-protection-governance
 units:

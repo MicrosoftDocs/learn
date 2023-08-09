@@ -1,0 +1,42 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-sql-server-2022-t-sql-enhancements.bit-manipulation
+title: New bit manipulation functions
+metadata:
+  title: New bit manipulation functions
+  description: "With the introduction of new bit manipulation functions, SQL Server 2022 makes it easier to work with binary data."
+  ms.date: 5/5/2023
+  author: MScalopez
+  ms.author: calopez
+  ms.reviewer: vanto
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-sqlserver
+durationInMinutes: 6
+content: |
+  [!include[](includes/9-bit-manipulation.md)]
+quiz:
+  title: Knowledge check
+  questions:
+  - content: "In SQL Server 2022, which function can be used to determine how many bits are turned on (set to 1) in a binary value?"
+    choices:
+    - content: "GET_BIT"
+      isCorrect: false
+      explanation: "GET_BIT is used for retrieving a specific bit's value, not determining how many bits are set to 1."
+    - content: "BIT_COUNT"
+      isCorrect: true
+      explanation: "BIT_COUNT calculates the number of bits set to 1 in a binary value."
+    - content: "SET_BIT"
+      isCorrect: false
+      explanation: "SET_BIT is used for changing the value of a specific bit, not counting the number of bits set to 1."
+  - content: "Which function in SQL Server 2022 can be used to modify the value of a specific bit within a binary value?"
+    choices:
+    - content: "GET_BIT"
+      isCorrect: false
+      explanation: "GET_BIT is used for retrieving a specific bit's value, not changing the value of a specific bit."
+    - content: "BIT_COUNT"
+      isCorrect: false
+      explanation: "BIT_COUNT is used for counting the number of bits set to 1, not changing the value of a specific bit."
+    - content: "SET_BIT"
+      isCorrect: true
+      explanation: "SET_BIT is used for changing the value of a specific bit within a binary value."

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Deploy a model to a batch endpoint
 summary: Learn how to deploy models to a batch endpoint. When you invoke a batch endpoint, you'll trigger a batch scoring job.
 abstract: |
@@ -28,6 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.deploy-model-batch-endpoint.introduction
+- learn.wwl.deploy-model-batch-endpoint.video
 - learn.wwl.deploy-model-batch-endpoint.explore-batch-endpoints
 - learn.wwl.deploy-model-batch-endpoint.deploy-your-mlflow-model-batch-endpoint
 - learn.wwl.deploy-model-batch-endpoint.deploy-custom-model-batch-endpoint

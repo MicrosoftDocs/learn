@@ -1,4 +1,4 @@
-In this module, we will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens. Azure Speech Services is the unification of speech-to-text, text-to-speech, and speech translation into a single Azure subscription.
+In this module, we will create a Mixed Reality application that explores the use of Azure Speech Services with the HoloLens. Azure Speech Services is the unification of speech to text, text to speech, and speech translation into a single Azure subscription.
 
 Imagine a scenario where you are expected to build an application capable of translating your speech into other languages. You would want a a brief overview of incorporating that feature in your application, and Azure Speech Services can provide that.
 

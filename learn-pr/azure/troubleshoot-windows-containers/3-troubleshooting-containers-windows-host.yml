@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-windows-host
+title: Troubleshooting Windows containers on Windows hosts
+metadata:
+  title: Troubleshooting Windows containers on Windows hosts
+  description: This content is part of the "Troubleshooting Windows Containers" module.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/3-troubleshooting-containers-windows-host.md)]

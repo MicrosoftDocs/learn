@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore fundamentals of large-scale data warehousing
 summary: |
   Organizations use modern data warehousing to build large scale data analytics solutions that generate insights and drive success.

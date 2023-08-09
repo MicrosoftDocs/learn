@@ -7,14 +7,15 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: speech-service
 title: Create speech-enabled apps with the Speech service
-summary: The Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text-to-speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
+summary: The Speech service enables you to build speech-enabled applications. This module focuses on using the speech-to-text and text to speech APIs, which enable you to create apps that are capable of speech recognition and speech synthesis.
 abstract: |
   In this module, you'll learn how to:
   - Provision an Azure resource for the Speech service
-  - Use the Speech-to-Text API to implement speech recognition
-  - Use the Text-to-Speech API to implement speech synthesis
+  - Use the Speech to text API to implement speech recognition
+  - Use the Text to speech API to implement speech synthesis
   - Configure audio format and voices
   - Use Speech Synthesis Markup Language (SSML)
 prerequisites: |
@@ -31,7 +32,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - custom-app-development
 - artificial-intelligence

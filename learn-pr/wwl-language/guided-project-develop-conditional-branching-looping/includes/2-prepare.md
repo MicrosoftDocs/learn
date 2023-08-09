@@ -1,6 +1,7 @@
 
 
 
+
 In this guided project, you'll use Visual Studio Code to develop the initial version of a C# application. Your application will use boolean expressions, selection statements, and iteration statements to implement the features of a design specification. As you develop the application, you'll need to scope variables at the appropriate level.
 
 ## Project overview

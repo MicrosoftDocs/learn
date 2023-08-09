@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/18/2023
+  ms.date: 04/29/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2
@@ -25,7 +25,7 @@ quiz:
     - content: "Import a pre-defined chit-chat data source."
       isCorrect: false
       explanation: "Incorrect. A pre-defined chit-chat data source is unlikely to include relevant question and answer pairs for your FAQ."
-  - content: "You want to create a knowledge base for bots. What service would you use? ​"
+  - content: "You want to create a knowledge base for bots. What capability would you use? ​"
     choices:
     - content: "Conversational Language Understanding"
       isCorrect: false
@@ -33,7 +33,7 @@ quiz:
     - content: "Question Answering"
       isCorrect: true
       explanation: "That is correct."
-    - content: "Azure Bot"
+    - content: "Optical Character Recognition"
       isCorrect: false
       explanation: "That is incorrect."
   - content: "You need to deliver a support bot for internal use in your organization. Some users want to be able to submit questions to the bot using Microsoft Teams, others want to use a web chat interface on an internal web site. What should you do?"

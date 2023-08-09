@@ -1,2 +1,3 @@
 
+
 Device compliance policies are effective in providing a balance between preventing management policies from interrupting a user's experience while ensuring devices are compliant with those policies. Administrators can set required policies, such as requiring a minimum OS version. If the device doesn't meet this policy, it's still up to the user to choose when it's convenient for them to update the OS. However, Administrators can then set conditional access policies that limit their access while the device is non-compliant. If the device is non-compliant, the user is notified what steps they need to take. Once the user has taken the necessary actions, the non-complient restrictions are immediately removed.

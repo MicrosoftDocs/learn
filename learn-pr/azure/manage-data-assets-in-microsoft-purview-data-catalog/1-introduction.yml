@@ -5,13 +5,13 @@ metadata:
   unitType: introduction
   title: Introduction
   description: "Introduction to the Microsoft Purview Data Catalog. We'll cover a proof of concept scenario where users have already deployed Microsoft Purview, scanned a source, and are ready to use the Microsoft Purview Data Catalog to manage data assets and create a business glossary."
-  ms.date: 10/04/2022
+  ms.date: 04/27/2023
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
   ms.custom:
     - ignite-2022
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/1-introduction.md)]

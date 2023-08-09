@@ -4,11 +4,11 @@ title: Explore Azure virtual machine SMB storage
 metadata:
   title: Explore Azure virtual machine SMB storage
   description: "Explore Azure virtual machine SMB storage"
-  ms.date: 04/20/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/14-explore-azure-virtual-machine-smb-storage.md)]

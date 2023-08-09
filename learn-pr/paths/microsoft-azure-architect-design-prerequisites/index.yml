@@ -25,7 +25,6 @@ products:
 subjects:
 - architecture
 modules:
-- learn.azure.azure-architecture-fundamentals
 - learn.azure.build-cloud-governance-strategy-azure
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1
 - learn.azure-well-architected-introduction

@@ -1,4 +1,4 @@
-This unit will look at connectivity to Azure, to the internet, and to platform as a service (PaaS) services. It'll cover design considerations and prescriptive recommendations for the enterprise.
+This unit looks at connectivity to Azure, to the internet, and to platform as a service (PaaS) services. It covers design considerations and prescriptive recommendations for the enterprise.
 
 ## Connectivity to Azure
 
@@ -6,7 +6,7 @@ Azure ExpressRoute is private, dedicated connectivity to Azure, and is the prefe
 
 Select ExpressRoute Direct or a provider by matching your requirements for peering locations. Connect to the Microsoft network with as little latency as possible. If you need more than 10 Gbps or multiple circuits that total more than 10 Gbps, consider ExpressRoute Direct. ExpressRoute Direct is a layer 2 connection from your hardware to Microsoft's inside a peering location, and it goes up to 100 Gbps.
 
-Ensure that you use the right SKU for the ExpressRoute or VPN gateways based on bandwidth and performance requirements. Otherwise, you'll be either paying too much or not getting full throughput.
+Ensure that you use the right SKU for the ExpressRoute or VPN gateways based on bandwidth and performance requirements. Otherwise, you're either paying too much or not getting full throughput.
 
 Be sure to deploy zone-redundant gateways where possible. When throughput from on-premises to Azure must be greater than 10 Gbps or you need to minimize latency, enable FastPath to bypass the ExpressRoute gateway from the data path.
 
@@ -23,9 +23,9 @@ When you're using Azure Firewall, use Azure Firewall Manager with Azure Virtual 
 
 :::image type="content" source="../media/5-firewall-overview.png" alt-text="Diagram that shows a basic Azure Firewall implementation." lightbox="../media/5-firewall-overview-large.png":::
 
-When you're using Azure Front Door and Azure Application Gateway to help protect HTTP/S apps, use WAF policies in Azure Front Door and lock down Azure Application Gateway to receive traffic only from Azure Front Door. Use Azure DDoS Network Protection to help protect all public endpoints hosted within your virtual networks. DDoS Protection provides SLA-backed distributed denial of service (DDoS) protection and log data.
+When you're using Azure Front Door and Azure Application Gateway to help protect HTTP/S apps, use WAF policies in Azure Front Door. Also, lock down Azure Application Gateway to receive traffic only from Azure Front Door. Use Azure DDoS Network Protection to help protect all public endpoints hosted within your virtual networks. DDoS Protection provides SLA-backed distributed denial of service (DDoS) protection and log data.
 
-Also, use Azure Firewall or a network virtual appliance from a partner to control the IP addresses that virtual machines use to access the internet. Don't replicate on-premises perimeter network concepts and architectures into Azure. Similar security capabilities are available in Azure, but the implementation and architecture must be adapted to the cloud. This is a common architecture mistake that lowers performance and resiliency.
+Also, use Azure Firewall or a network virtual appliance from a partner to control the IP addresses that virtual machines use to access the internet. Don't replicate on-premises perimeter network concepts and architectures into Azure. Similar security capabilities are available in Azure, but the implementation and architecture must be adapted to the cloud. This strategy is a common architecture mistake that lowers performance and resiliency.
 
 ## Connectivity to PaaS services
 

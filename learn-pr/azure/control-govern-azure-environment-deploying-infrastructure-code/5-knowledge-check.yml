@@ -15,13 +15,13 @@ content: |
 quiz:
   questions:
   - content: |
-      You're concerned that applying controls to your production Azure environment might cause problems with automated deployments. In particular, you're concerned that you won't discover problems until your changes are deployed to production, when it's too late to fix them.
+      You're concerned that applying controls to your production Azure environment might cause problems with automated deployments. In particular, you're concerned that problems may not be discovered until your changes are deployed to production, when it's too late to fix them.
       
       What can you do to mitigate this risk?
     choices:
-    - content: Apply the same controls to some of your non-production environments.
+    - content: Apply the same controls to some of your nonproduction environments.
       isCorrect: true
-      explanation: Correct. When you apply controls to your non-production environments, your code is exposed to the controls that you have in your production environment sooner and with less risk. If the controls cause problems, you'll find out more quickly and can correct the problems without affecting production.
+      explanation: Correct. When you apply controls to your nonproduction environments, your code is exposed to the controls that you have in your production environment sooner and with less risk. You can find out more quickly if the controls cause problems, and correct the problems without affecting production.
     - content: Disable the controls on your production environment.
       isCorrect: false
       explanation: Incorrect. You shouldn't disable the controls in your production environment. Instead, look for opportunities to discover the problems sooner.
@@ -49,4 +49,4 @@ quiz:
       explanation: Incorrect. Unlike break-glass accounts, PIM doesn't require a separate user account.
     - content: PIM enables users to request that their accounts are temporarily granted higher permissions than they usually have.
       isCorrect: true
-      explanation: Correct. PIM allows users to use their own user accounts and identities, with a set of additional permissions granted temporarily.
+      explanation: Correct. PIM allows users to use their own user accounts and identities, with a set of elevated permissions granted temporarily.

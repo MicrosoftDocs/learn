@@ -5,8 +5,8 @@ metadata:
   title: When to use Azure Functions
   description: In this unit, you learn when to use Azure Functions
   ms.date: 04/27/2020
-  author: saifeemustafaq
-  ms.author: msaifee
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

@@ -4,11 +4,10 @@ title: Review fundamental Azure RBAC roles
 metadata:
   title: Review fundamental Azure RBAC roles
   description: "Review fundamental Azure RBAC roles"
-  ms.date: 01/16/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 2

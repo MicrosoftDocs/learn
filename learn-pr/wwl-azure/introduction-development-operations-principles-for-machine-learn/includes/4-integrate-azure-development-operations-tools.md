@@ -11,7 +11,7 @@ The administrator is responsible for connecting Azure Machine Learning with eith
 
 To connect Azure DevOps with Azure Machine Learning, you'll first need to create an organization and a project. You'll use the organization to group and manage projects. 
 
-Start by signing in to [Azure DevOps](https://azure.microsoft.com/services/devops/?portal=true) with a Microsoft of GitHub account.
+Start by signing in to [Azure DevOps](https://azure.microsoft.com/services/devops/?portal=true) with a Microsoft or GitHub account.
 
 Once signed in, you can create an **organization**. 
 

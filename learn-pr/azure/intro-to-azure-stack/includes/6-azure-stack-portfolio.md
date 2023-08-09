@@ -12,7 +12,7 @@ To compare the three products, review the following table:
 
 |Characteristic|Azure Stack Hub|Azure Stack HCI|Azure Stack Edge|
 |--------|--------|--------|--------|
-|Number of nodes|4-16|2-16|1|
+|Number of nodes|4-16|1-16|1|
 |Hardware|OEM|OEM|Microsoft|
 |Support disconnected scenarios|Yes|No|No|
 |Modernize aging storage|No|Yes|No|

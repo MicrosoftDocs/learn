@@ -9,6 +9,8 @@ metadata:
   ms.author: hrasheed
   ms.topic: interactive-tutorial
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  content_well_notification: 
+    - AI-contribution
 durationInMinutes: 3
 ###########################################################################
 ###
@@ -28,59 +30,56 @@ content: |
 quiz:
 
   questions:
-  - content: "What is the purpose of the Cloud Adoption Framework?"
-    choices:
-    - content: "To provide a framework for migrating on-premises data centers to the cloud"
-      isCorrect: false
-      explanation: "The Cloud Adoption Framework provides guidance on how to adopt and implement cloud technologies securely, efficiently and effectively."
-    - content: "To help organizations build secure applications and infrastructure in the cloud"
-      isCorrect: true
-      explanation: "The Cloud Adoption Framework helps organizations to design, deploy and operate cloud workloads that are consistent with their business objectives and meet security and compliance requirements."
-    - content: "To establish security standards within the organization"
-      isCorrect: false
-      explanation: "The Cloud Adoption Framework does not specifically address establishing security standards within an organization."
-    - content: "To provide guidance on network architecture for hybrid environments"
-      isCorrect: false
-      explanation: "The Cloud Adoption Framework does not specifically address network architecture for hybrid environments."
-  - content: "Which of the following is a key principle of the Well-Architected Framework?"
-    choices:
-    - content: "Optimize for ease of use"
-      isCorrect: false
-      explanation: "A key principle of the Well-Architected Framework is 'optimize for cost', which means making trade-offs between the cost of running your workloads and the value they provide to your organization."
-    - content: "Plan for failure"
-      isCorrect: true
-      explanation: "Another key principle of the Well-Architected Framework is 'design for failure', which means planning for potential problems and creating resilient systems that can withstand failures without significant downtime or data loss."
-    - content: "Choose proprietary technology solutions over open source options"
-      isCorrect: false
-      explanation: "The Well-Architected Framework does not make any recommendations regarding the choice of proprietary vs open source technology solutions."
-    - content: "Maximize use of third-party services for application development"
-      isCorrect: false
-      explanation: "While the Well-Architected Framework does encourage the use of managed services provided by cloud service providers, it does not specifically recommend maximizing the use of third-party services for application development."
   - content: "What is the core principle of Zero Trust security?"
     choices:
-    - content: "Allow all users access to resources unless they are explicitly denied"
-      isCorrect: false
-      explanation: "The core principle of Zero Trust security is never trust, always verify. This means that access to resources is granted only after verifying the identity of the user and the security posture of the device used to access the resource."
-    - content: "Grant access to resources based on network location"
-      isCorrect: false
-      explanation: "The core principle of Zero Trust security involves granting access based on the verification of multiple factors such as identity, device state or location along with real-time risk assessments."
-    - content: "Limit access to resources to users within the same department"
-      isCorrect: false
-      explanation: "The core principle of Zero Trust security involves limiting access based on the verification of multiple factors such as identity, device state or location along with real-time risk assessments."
-    - content: "Verify and never trust, always verify"
-      isCorrect: true
-      explanation: "The core principle of Zero Trust security is 'verify and never trust, always verify'. This approach requires continuous evaluation of users and devices before access to resources is granted."
-  - content: "What is one of the main goals of Zero Trust RaMP initiatives?"
-    choices:
-      - content: "To implement an environment where users have unrestricted access to resources within the corporate network"
+      - content: "Assume everything inside the network is safe"
         isCorrect: false
-        explanation: "Zero Trust RaMP seeks to restrict network access and reduce overall attack surface by constantly evaluating user behavior and context."
-      - content: "To eliminate security threats without introducing new architecture or technology"
-        isCorrect: false
-        explanation: "While Zero Trust RaMP aims to eliminate security threats, this typically requires new architectures and technologies."
-      - content: "To leverage automation and orchestration tools to provide continuous compliance monitoring across all devices and applications."
+        explanation: "The core principle of Zero Trust is to assume nothing inside or outside the network is safe and to verify every access request."
+      - content: "Assume nothing inside or outside the network is safe and verify every access request"
         isCorrect: true
-        explanation: "By leveraging automation and orchestration tools, Zero Trust RaMP provides continuous compliance monitoring across all devices and applications."
-      - content: "To provide a single pane of glass view into network and device status"
+        explanation: "The core principle of Zero Trust is to assume nothing inside or outside the network is safe and to verify every access request."
+      - content: "Allow all access requests by default"
         isCorrect: false
-        explanation: "While providing a single pane of glass view is a benefit of Zero Trust RaMP, it is not the main goal."
+        explanation: "Zero Trust does not allow all access requests by default, but verifies every access request."
+      - content: "Only allow access requests from trusted sources"
+        isCorrect: false
+        explanation: "Zero Trust does not only allow access requests from trusted sources, but verifies every access request."
+  - content: "What does the Zero Trust Rapid Modernization Plan (RaMP) aim to do?"
+    choices:
+    - content: "Rapidly migrate all network traffic to a Zero Trust architecture"
+      isCorrect: false
+      explanation: "The Zero Trust RaMP does not aim to rapidly migrate all network traffic to a Zero Trust architecture, but rather to provide a structured approach to implement Zero Trust principles in phases."
+    - content: "Provide a structured approach to implement Zero Trust principles in phases"
+      isCorrect: true
+      explanation: "The Zero Trust RaMP aims to provide a structured approach to implement Zero Trust principles in phases, rather than rapidly migrating all network traffic to a Zero Trust architecture."
+    - content: "Implement a single Zero Trust solution for all security needs"
+      isCorrect: false
+      explanation: "The Zero Trust RaMP does not aim to implement a single Zero Trust solution for all security needs, but rather to provide a structured approach to implement Zero Trust principles in phases."
+    - content: "Reduce the number of security controls to simplify the security architecture"
+      isCorrect: false
+      explanation: "The Zero Trust RaMP does not aim to reduce the number of security controls to simplify the security architecture, but rather to provide a structured approach to implement Zero Trust principles in phases."
+  - content: "What is the purpose of the Secure Data with Zero Trust initiative?"
+    choices:
+    - content: "To ensure data is encrypted at rest and in transit"
+      isCorrect: false
+      explanation: "While encryption is a part of securing data with Zero Trust, the initiative is broader and aims to protect data through measures such as data classification, access controls, and auditing."
+    - content: "To implement a secure data center"
+      isCorrect: false
+      explanation: "The Secure Data with Zero Trust initiative is not specifically aimed at implementing a secure data center, but rather at protecting data through measures such as data classification, access controls, and auditing."
+    - content: "To protect data through data classification, access controls, and auditing"
+      isCorrect: true
+      explanation: "The purpose of the Secure Data with Zero Trust initiative is to protect data through measures such as data classification, access controls, and auditing. While encryption is a part of securing data with Zero Trust, the initiative is broader and aimed at ensuring that data is protected at all times."
+  - content: "What is the role of automation and orchestration in implementing Zero Trust security?"
+    choices:
+    - content: "To replace human decision-making and intervention"
+      isCorrect: false
+      explanation: "Automation and orchestration do not aim to replace human decision-making and intervention, but rather to streamline security processes and enable faster response times."
+    - content: "To increase the complexity of security processes"
+      isCorrect: false
+      explanation: "Automation and orchestration do not aim to increase the complexity of security processes, but rather to streamline security operations and make them more efficient."
+    - content: "To streamline security processes and enable faster response times"
+      isCorrect: true
+      explanation: "The role of automation and orchestration in implementing Zero Trust security is to streamline security operations, enable faster response times, and reduce the risk of human error by automating repetitive tasks and providing a centralized view of security data."
+    - content: "To replace all security tools with automated solutions"
+      isCorrect: false
+      explanation: "Automation and orchestration do not aim to replace all security tools with automated solutions, but rather to integrate and orchestrate existing security tools and processes."

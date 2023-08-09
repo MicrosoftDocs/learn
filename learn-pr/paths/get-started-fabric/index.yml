@@ -1,0 +1,48 @@
+### YamlMime:LearningPath
+uid: learn.wwl.get-started-fabric
+metadata:
+  title: Get started with Microsoft Fabric
+  description: Get started and explore the capabilities of Microsoft Fabric.
+  ms.date: 05/03/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+title: Get started with Microsoft Fabric
+prerequisites: |
+  You should be familiar with basic data concepts and terminology.
+summary: |
+  Explore the capabilities of Microsoft Fabric.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- power-bi
+subjects:
+- data-analytics
+- data-engineering
+- data-integration
+- data-lake
+- data-management
+- data-modeling
+- data-privacy
+- data-science
+- data-storage
+- data-visualization
+- data-warehousing
+modules:
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric
+- learn.wwl.get-started-lakehouses
+- learn.wwl.use-apache-spark-work-files-lakehouse
+- learn.wwl.work-delta-lake-tables-fabric
+- learn.wwl.use-data-factory-pipelines-fabric
+- learn.wwl.ingest-dataflows-gen2-fabric
+- learn.wwl.get-started-data-warehouse
+- learn.wwl.get-started-kusto-fabric
+- learn.wwl.get-started-data-science-fabric
+- learn.wwl.administer-fabric
+trophy:
+  uid: learn.wwl.get-started-fabric.trophy

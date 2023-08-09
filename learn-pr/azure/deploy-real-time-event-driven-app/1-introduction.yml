@@ -8,7 +8,7 @@ metadata:
   author: SandraAhlgrimm
   ms.author: sakriema
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: team=cloud_advocates
   ms.contributors: sakriema-02022021
 durationInMinutes: 2

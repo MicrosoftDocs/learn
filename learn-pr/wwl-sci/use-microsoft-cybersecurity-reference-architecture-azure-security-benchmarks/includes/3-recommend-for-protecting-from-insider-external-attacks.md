@@ -1,3 +1,4 @@
+
 Effective security programs must protect against both insider risk as well as attacks from external threats. You can find best practices for both throughout the Microsoft Cybersecurity Reference Architecture (MCRA) and Microsoft Cloud Security Benchmark (MCSB). While all security controls should reduce risk in one or both of these scenarios, this section will focus primarily on insider risk aspects and the security operations elements of external attacks.
 
 An attack chain describes the typical chain of events during an attack that leads to organizational damage. This includes technical and non-technical steps taken by adversaries or insiders during the attack. It's important to note that there is no single linear path for either insider risk or

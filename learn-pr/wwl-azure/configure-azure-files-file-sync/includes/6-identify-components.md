@@ -1,3 +1,4 @@
+
 Azure File Sync is composed of four main components that work together to provide caching for Azure Files shares on an on-premises Windows Server or cloud virtual machine.
 
 The following illustration shows how the components of Azure File Sync provide a cache for a storage account that has Accounting and Sales data stored in Azure Files shares.

@@ -8,7 +8,7 @@ metadata:
   author: Dickson-Mwendia
   ms.author: dmwendia
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure 
+  ms.service: identity-platform
 title: Add sign-in support to a Python web app using the Microsoft identity platform
 summary: Add core authentication and authorization features to a Python web app using the Microsoft identity platform. Your web app will sign in Azure AD users and fetch data from a protected web API, such as the Microsoft Graph API.
 abstract: |

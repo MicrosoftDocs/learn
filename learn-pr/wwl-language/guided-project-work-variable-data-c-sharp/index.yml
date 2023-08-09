@@ -3,11 +3,11 @@ uid: learn.wwl.guided-project-work-variable-data-c-sharp
 metadata:
   title: Guided project - Work with variable data in C#
   description: "Guided project - Work with variable data in C#"
-  ms.date: 04/25/2023
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Guided project - Work with variable data in C#
 summary: Demonstrate your ability to develop a console app that implements data formatting and using arrays to deliver a search feature.
 abstract: |
@@ -27,10 +27,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
 - k-12-educator
 - student
 products:
-- dotnet-framework
+- dotnet
 - vs-code
 units:
 - learn.wwl.guided-project-work-variable-data-c-sharp.introduction

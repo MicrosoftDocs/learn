@@ -8,7 +8,8 @@ metadata:
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-db-mi
+  ms.subservice: high-availability
 title: Deploy highly available solutions by using Azure SQL
 summary: Whatever SLA, RTO, and RPO your business requires, Azure SQL has the options and built-in capabilities to meet that availability. In this module, you'll learn how to translate your knowledge of backup and restore, failover cluster instances, and Always On availability groups to the options for business continuity in Azure SQL. You'll also peek under the hood at the architectures and how they affect availability.
 abstract: | 

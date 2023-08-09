@@ -8,8 +8,9 @@ metadata:
   author: ramiMSFT
   ms.author: rabououn
   ms.topic: interactive-tutorial
-  #ms.learn-contact: thpetche
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
+  manager: mijacobs
 title: Create a release pipeline in Azure Pipelines
 summary: Set up a continuous delivery (CD) pipeline that automates the process of deploying your application.
 abstract: |

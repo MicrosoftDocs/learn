@@ -4,13 +4,11 @@ title: Introduction to Azure Artifacts
 metadata:
   title: Introduction to Azure Artifacts
   description: "Introduction to Azure Artifacts"
-  ms.date: 01/10/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/8-introduction-to-azure-artifacts.md)]

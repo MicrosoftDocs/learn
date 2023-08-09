@@ -1,8 +1,8 @@
-Before designing a network for a Kubernetes cluster, it makes sense to understand how IP addresses are used by Kubernetes components. Let's dive into the details of some key Kubernetes components.
+Before you begin designing a network for a Kubernetes cluster, it makes sense to understand how IP addresses are used by Kubernetes components. Let's dive into the details of some key Kubernetes components.
 
 ## Nodes
 
-You'll often see Kubernetes referred to as a cluster. Clusters are a group of computers that work together to share resources to help improve performance and provide high availability. Services running on the cluster can then continue running if one or more computers in the cluster should fail.
+You may often see Kubernetes referred to as a cluster. Clusters are a group of computers that work together to share resources to help improve performance and provide high availability. Services running on the cluster can then continue running if one or more computers in the cluster should fail.
 
 In Microsoft Azure, computers are virtual machines and in Kubernetes, these virtual machines are known as Nodes.
 
@@ -22,7 +22,7 @@ You can run multiple copies, known as replicas, of the same pod. Replicas distri
 
 Kubernetes includes automatic scaling features. Pods can be added or removed in response to the level of demand on the cluster. Self-healing abilities can replace any pod that has failed. And built-in support for rolling updates automates the deployment of a new version of an application without any downtime.
 
-There are many scenarios where a pod will be assigned a new IP address. A new IP address is assigned when a new pod is deployed during an initial deployment. When demand on the cluster is high and scaling up takes place, further new pods are deployed. When updating an application, new pods are deployed to take the place of old ones. Or if a pod fails, it's automatically replaced with a new pod. All of these events result in new pod IP addresses.
+There are many scenarios where a pod is assigned a new IP address. A new IP address is assigned when a new pod is deployed during an initial deployment. When demand on the cluster is high and scaling up takes place, further new pods are deployed. When an application is updated, new pods are deployed to take the place of old ones. Or if a pod fails, it's automatically replaced with a new pod. All of these events result in new pod IP addresses.
 
 ## Services
 

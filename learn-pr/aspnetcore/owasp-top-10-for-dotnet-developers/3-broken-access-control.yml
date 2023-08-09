@@ -1,0 +1,46 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.broken-access-control
+title: Broken access control
+metadata:
+  title: broken-access-control
+  description: "OWASP Top 10 for .NET Developers. Broken Access Control."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-broken-access-control.md)]
+
+quiz:
+  title: Check your knowledge
+  questions:
+
+  - content: "The goal of Open Web Application Security Project (OWASP) Top 10 report put together by security experts is to"  
+    choices:    
+    - content: "Create a standard for security benchmark of web applications."
+      isCorrect: false
+      explanation: "Incorrect. OWASP Top 10 is often effort to as 'awareness document' for educational purposes."
+    - content: "Improve awareness and promote recommended mitigation techniques to most critical security concerns for web app security."
+      isCorrect: true
+      explanation: "Correct."
+    - content: "Be the only go-to report your organization would need to stay secured."
+      isCorrect: false
+      explanation: "Incorrect. There are many security reports beyond OWASP, with SANS CWE Top 25 being one of them."
+
+  - content: "What is Broken Access Control?"  
+    choices:
+    - content: "A vulnerability that allows an attacker to access restricted information."
+      isCorrect: false
+      explanation: "Correct but not entirely."
+    - content: "A vulnerability that allows an attacker to modify or delete restricted information."
+      isCorrect: false
+      explanation: "Correct but not entirely."
+    - content: "A vulnerability that allows an attacker to bypass access controls."
+      isCorrect: false
+      explanation: "Correct but not entirely."
+    - content: "All answers are correct."
+      isCorrect: true
+      explanation: "Correct. Broken Access Control is a vulnerability that allows an attacker to access restricted information, modify or delete restricted information, and bypass access controls."

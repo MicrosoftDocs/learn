@@ -1,5 +1,7 @@
 
 
+
+
 In this exercise, you'll work with integral types. An **integral type** is a simple value type that represents whole numbers with no fraction (such as `-1`, `0`, `1`, `2`, `3`). The most popular in this category is the **`int`** data type.
 
 There are two subcategories of integral types: **signed** and **unsigned** integral types.
@@ -55,8 +57,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. Ensure that you have Visual Studio Code open and Program.cs displayed in the Editor panel.
 
-    > [!NOTE]
-    > Program.cs should be empty. If if isn't, select and delete all code lines.
+    **Program.cs should be empty.** If if isn't, select and delete all code lines.
 
 1. To see the value ranges for the various data types, type the following code into the Visual Studio Code Editor.
 
@@ -79,8 +80,7 @@ This module includes hands-on activities that guide you through the process of b
 
 1. At the Terminal command prompt, to run your code, type **dotnet run** and then press Enter.
 
-    > [!NOTE]
-    > If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
+    If you see a message saying "Couldn't find a project to run", ensure that the Terminal command prompt displays the expected TestProject folder location. For example: `C:\Users\someuser\Desktop\csharpprojects\TestProject>`
 
     You should see the following output:
 

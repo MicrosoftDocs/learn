@@ -7,7 +7,7 @@ metadata:
   author: davidmu1
   ms.author: davidmu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Secure your application by using OpenID Connect and Azure AD
 summary: Use OpenID Connect in your application to allow users to securely sign in with Azure AD identities.
 abstract: | 

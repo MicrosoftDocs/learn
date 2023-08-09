@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: purview
 title: Describe insider risk capabilities in Microsoft Purview
 summary: Insider risks are a top concern for organizations. These risks can be challenging to identify and mitigate. Learn how Microsoft Purview enables organizations to identify, analyze, and remediate internal risks before they cause harm.
 abstract: |

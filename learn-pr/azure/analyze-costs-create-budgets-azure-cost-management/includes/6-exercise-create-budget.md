@@ -1,4 +1,4 @@
-Now that you've learned how to create a budget, it's time to create your first one on your own. You should've determined your most expensive resource in a previous exercise. If this resource starts accruing more cost, you could see a significantly higher bill at the end of the month. In this exercise, you'll create a budget to help ensure that costs are monitored. When costs exceed the budget, email alerts are sent to people responsible.
+Now that you've learned how to create a budget, it's time to create your first one on your own. You should have determined your most expensive resource in a previous exercise. If this resource starts accruing more cost, you could see a higher bill at the end of the month. In this exercise, you create a budget to help ensure that costs are monitored. When costs exceed the budget, email alerts are sent to people responsible.
 
 [!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
@@ -10,7 +10,7 @@ To start, sign in to the Azure portal using the following step.
 
 ## Navigate to Budgets
 
-Next, in the Azure portal, we'll go to **Budgets**.
+Next, in the Azure portal, we go to **Budgets**.
 
 1. In the portal search box, enter *Subscriptions*.
 
@@ -28,7 +28,7 @@ Next, create a budget.
 
 1. From the Filter dropdown list, select **ResourceId**.
 
-1. In the selection dropdown list, select your most expensive resource that you identified in the pervious exercise. A suggested budget appears. The budget is associated with your selection.
+1. In the selection dropdown list, select your most expensive resource that you identified in the previous exercise. A suggested budget appears. The budget is associated with your selection.
 
 1. Name your budget (for example: *MyFirstBudget*).
 

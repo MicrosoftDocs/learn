@@ -1,0 +1,52 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.investigate-threats-with-content-search-in-microsoft-purview.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check."
+  ms.date: 05/25/2023
+  author: wwlpublish
+  ms.author: kelawson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-m365
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
+content: |
+  [!include[](includes/8-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "As your organizations SOC analyst, you need the Enterprise Administrator to grant you access to the Content search page to conduct searches, and preview and export search results. What role group must Patti be a member of in the Microsoft Purview compliance portal to complete these tasks?"
+    choices:
+    - content: "Organization Management role group"
+      isCorrect: false
+      explanation: "Incorrect. This role group doesn't provide the permissions necessary to access the Content search page to conduct searches and preview and export search results."
+    - content: "Compliance Manager role group"
+      isCorrect: false
+      explanation: "Incorrect. This role group doesn't provide the permissions necessary to access the Content search page to conduct searches and preview and export search results."
+    - content: "eDiscovery Manager role group"
+      isCorrect: true
+      explanation: "Correct. This role group provides the permissions necessary to access the Content search page to conduct searches and preview and export search results."
+  - content: "You created and ran a Content search and you want to preview the search results. What's the maximum number of randomly selected items that will be available for Holly to preview?"
+    choices:
+    - content: "500"
+      isCorrect: false
+      explanation: "Incorrect. This value isn't the maximum number of items available for preview."
+    - content: "1000"
+      isCorrect: true
+      explanation: "Correct. A maximum of 1,000 randomly selected items are available to preview."
+    - content: "2500"
+      isCorrect: false
+      explanation: "Incorrect. The maximum number of items available for preview is less than this value."
+  - content: "You're creating a new content search. On the Locations page, you set the \"Exchange mailboxes\" toggle switch to On. What does this enable?"
+    choices:
+    - content: "All public folders in the Exchange Online organization can be placed on hold"
+      isCorrect: false
+      explanation: "Incorrect. Setting the \"Exchange public folders\" toggle switch to On enables this functionality."
+    - content: "You can specify the mailboxes to place on hold"
+      isCorrect: true
+      explanation: "Correct. Setting this switch to On enables Allan to specify the mailboxes to be placed on hold."
+    - content: "All Exchange mailboxes in your organization can be searched for Teams chat data for on-premises users"
+      isCorrect: false
+      explanation: "Incorrect. Selecting the \"Add App content for on-premises users\" checkbox enables this functionality."

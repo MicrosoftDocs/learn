@@ -8,7 +8,7 @@ metadata:
   author: cephalin
   ms.author: cephalin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 6
 content: |
   [!include[](includes/2-create-a-web-app-in-the-azure-portal.md)]

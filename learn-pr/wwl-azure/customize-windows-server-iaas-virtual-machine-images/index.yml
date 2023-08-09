@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: windows-server
 title: Customize Windows Server IaaS Virtual Machine images
 summary: You'll be able to create new VMs from generalized images and use Azure Image Builder templates to create and manage images in Azure.
 abstract: |

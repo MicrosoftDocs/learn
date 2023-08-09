@@ -1,0 +1,36 @@
+### YamlMime:Module
+uid: learn.wwl.describe-basics-azure-business
+metadata:
+  title: Describe the basics of Azure for business
+  description: "This module describes what the cloud is and what Microsoft Azure is, and how businesses can grow and transform with Azure."
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Describe the basics of Azure for business
+summary: This module describes what the cloud is and what Microsoft Azure is, and how businesses can grow and transform with Azure.
+abstract: |
+  After completing this module, you will be able to:
+  - Describe what the cloud is and what Microsoft Azure is.
+  - Describe the basics of cloud economics, and how the consumption-based, operational expenditures model opens new business opportunities.
+  - Describe the basic financial and operational benefits of cloud over a traditional, off-cloud IT system.
+  - Cite real examples of businesses that have used Azure to transform their operations and improve their bottom lines.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-owner
+products:
+- azure
+units:
+- learn.wwl.describe-basics-azure-business.introduction
+- learn.wwl.describe-basics-azure-business.get-know-azure-business
+- learn.wwl.describe-basics-azure-business.understand-cloud-economics
+- learn.wwl.describe-basics-azure-business.explore-cloud-success-story
+- learn.wwl.describe-basics-azure-business.explore-cloud-stories-across-industries
+- learn.wwl.describe-basics-azure-business.knowledge-check
+- learn.wwl.describe-basics-azure-business.summary
+badge:
+  uid: learn.wwl.describe-basics-azure-business.badge

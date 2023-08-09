@@ -7,29 +7,28 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 8
 content: |
 quiz:
   questions:
-    - content: 'Which of the following defines a Thread Control Block?'
+    - content: 'Which of the following statements defines a Thread Control Block?'
       choices:
         - content: 'TCB my_thread;'
           isCorrect: false
-          explanation: "Incorrect, it's TX_THREAD my_thread. "
+          explanation: "Incorrect, it's TX_THREAD my_thread;"
         - content: 'TX_THREAD my_thread;'
           isCorrect: true
           explanation: 'Correct.'
         - content: 'THREAD my_thread;'
           isCorrect: false
-          explanation: "Incorrect, it's TX_THREAD my_thread."
+          explanation: "Incorrect, it's TX_THREAD my_thread;"
         - content: 'RTOS my_thread;'
           isCorrect: false
-          explanation: "Incorrect, it's TX_THREAD my_thread"
-    - content: 'Which required ThreadX function performs initialization?  '
+          explanation: "Incorrect, it's TX_THREAD my_thread;"
+    - content: 'Which required ThreadX function performs initialization?'
       choices:
         - content: 'main()'
           isCorrect: false
@@ -45,43 +44,43 @@ quiz:
           explanation: "Incorrect, it's application_define."
     - content: 'What is the meaning of this ThreadX service call: tx_thread_sleep(5)'
       choices:
-        - content: 'Change thread state to suspend in 5 timer ticks'
+        - content: 'Change the thread state to suspend in five timer ticks.'
           isCorrect: false
-          explanation: 'Incorrect, the thread will self-suspend for 5 timer ticks.'
-        - content: 'All threads in the system will suspend for 5 timer ticks'
+          explanation: 'Incorrect, the thread self-suspends for five timer ticks.'
+        - content: 'All threads in the system suspend for five timer ticks.'
           isCorrect: false
-          explanation: 'Incorrect, the thread will self-suspend for 5 timer ticks.'
-        - content: 'Self-suspend for 5 timer ticks'
+          explanation: 'Incorrect, the thread self-suspends for five timer ticks.'
+        - content: 'Self-suspend for five timer ticks.'
           isCorrect: true
           explanation: 'Correct.'
-        - content: 'All suspended threads have 5 timer ticks added to their suspensions'
+        - content: 'All suspended threads have five timer ticks added to their suspensions.'
           isCorrect: false
-          explanation: 'Incorrect, the thread will self-suspend for 5 timer ticks.'
-    - content: 'If Processor is owned by another thread, what happens as a result of this service call: tx_mutex_get (&Processor, TX_WAIT_FOREVER)'
+          explanation: 'Incorrect, the thread self-suspends for five timer ticks.'
+    - content: 'If another thread owns Processor, what happens as a result of this service call: tx_mutex_get (&Processor, TX_WAIT_FOREVER)'
       choices:
-        - content: 'It depends on the priorities of the two threads'
+        - content: 'It depends on the priorities of the two threads.'
           isCorrect: false
           explanation: 'Incorrect, the thread suspends and waits forever.'
-        - content: 'The thread gets another instance of Processor'
+        - content: 'The thread gets another instance of Processor.'
           isCorrect: false
           explanation: 'Incorrect, the thread suspends and waits forever.'
-        - content: 'The thread suspends and waits indefinitely for Processor'
+        - content: 'The thread suspends and waits indefinitely for Processor.'
           isCorrect: true
           explanation: 'Correct.'
-        - content: 'The two threads share Processor indefinitely'
+        - content: 'The two threads share Processor indefinitely.'
           isCorrect: false
           explanation: 'Incorrect, the thread suspends and waits forever.'
-    - content: 'Urgent thread has priority 5, Routine thread has priority 15, and Routine thread owns the Processor mutex. Which of the following statements is the most correct?'
+    - content: 'The Urgent thread has priority 5, the Routine thread has priority 15, and the Routine thread owns the Processor mutex. Which of the following statements is the most correct?'
       choices:
-        - content: 'Urgent thread cannot preempt Routine thread'
+        - content: "The Urgent thread can't preempt the Routine thread."
           isCorrect: false
-          explanation: "Incorrect. It's possible for Urgent thread to preempt Routine thread."
-        - content: 'Urgent thread can take the Processor mutex from Routine thread'
+          explanation: "Incorrect. It's possible for the Urgent thread to preempt the Routine thread."
+        - content: 'The Urgent thread can take the Processor mutex from the Routine thread.'
           isCorrect: false
-          explanation: 'Incorrect. This can never happen.'
-        - content: 'Urgent suspends if it attempts to get the Processor mutex'
+          explanation: "Incorrect. It's not possible for the Urgent thread to take the Processor mutex from the Routine thread."
+        - content: 'The Urgent thread suspends if it attempts to get the Processor mutex.'
           isCorrect: true
           explanation: 'Correct.'
-        - content: 'All of the above statements are correct'
+        - content: 'All of the above statements are correct.'
           isCorrect: false
           explanation: 'Incorrect. Only one statement is correct.'

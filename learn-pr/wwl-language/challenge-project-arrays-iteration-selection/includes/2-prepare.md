@@ -1,5 +1,6 @@
 
 
+
 In this guided project, you'll use Visual Studio Code to develop portions of a C# console application. You'll begin by writing the code that performs various numeric calculations. All calculations must be completed within the existing iteration and selection structures. This Prepare unit provides you with the overall goals of the project and the requirements for your application. The Setup section describes how to set up your development environment, including a "Starter" code project.
 
 > [!IMPORTANT]

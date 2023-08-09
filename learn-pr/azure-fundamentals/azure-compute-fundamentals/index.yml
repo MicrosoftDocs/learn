@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore Azure compute services
 summary: In this module, you'll learn how to take advantage of several virtualization services in Azure compute, which can help your applications scale out quickly and efficiently to meet increasing demands.
 abstract: |

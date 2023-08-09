@@ -51,10 +51,6 @@ By onboarding to the Azure DDoS Protection service, the application gets dedicat
 
 DDoS Network Protection provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
 
-### Azure DDoS Network Protection
-
-DDoS Network Protection provides enhanced DDoS mitigation features to defend against DDoS attacks. It's automatically tuned to help protect your specific Azure resources in a virtual network.
-
 The following list describes the features and benefits of DDoS Network Protection:
 
 - Protection for 100 public IP resources.
@@ -66,7 +62,6 @@ The following list describes the features and benefits of DDoS Network Protectio
 - It provides detailed attack analytic reports during the attack in five-minute intervals and an after-action report for a complete summary of the event, when the attack ends.
 - It includes support for the integration of mitigation logs with Microsoft Defender for Cloud, Microsoft Sentinel, or an offline security information and event management (SIEM) system for near real-time monitoring during an attack.
 - Azure Monitor collects monitoring telemetry from DDoS Network Protection for access to summarized attack metrics.
-
 
 ### Azure DDoS IP Protection
 
@@ -96,5 +91,3 @@ You can notify the team by opening a support request on the Azure portal. Contac
 - Your company is planning a virtual event that's expected to significantly increase your network traffic.
 - There's an attack that's severely degrading the performance of a protected critical business system.
 - Your security team determines that protected resources are under attack, but DDoS Protection isn’t mitigating the attack effectively.
-
-

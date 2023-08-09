@@ -1,12 +1,12 @@
 ExpressRoute lets you extend your on-premises networks into the Microsoft cloud over a private connection with the help of a connectivity provider. With ExpressRoute, you can establish connections to Microsoft cloud services, such as Microsoft Azure and Microsoft 365.
 
-Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections don't go over the public Internet. This allows ExpressRoute connections to offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet. For information on how to connect your network to Microsoft using ExpressRoute, see ExpressRoute connectivity models.
+Connectivity can be from an any-to-any (IP VPN) network, a point-to-point Ethernet network, or a virtual cross-connection through a connectivity provider at a colocation facility. ExpressRoute connections don't go over the public Internet, allowing them to offer more reliability, faster speeds, consistent latencies, and higher security than typical connections over the Internet. For information on how to connect your network to Microsoft using ExpressRoute, see ExpressRoute connectivity models.
 
 :::image type="content" source="../media/azure-expressroute-overview-5520731d.png" alt-text="Visualization that shows a high-level overview of the Azure ExpressRoute service.":::
 
-As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is and how it integrates with on-premises and Azure networks. In this unit, you'll learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options. As a result, you'll learn whether ExpressRoute can provide your company with the best possible network performance.
+As part of your work for Tailwind Traders, you should understand what Azure ExpressRoute is and how it integrates with on-premises and Azure networks. In this unit, you learn about the benefits that ExpressRoute provides compared to other site-to-site connectivity options. As a result, you learn whether ExpressRoute can provide your company with the best possible network performance.
 
-Throughout this unit, we'll focus on two different layers of the Open Systems Interconnection (OSI) model:
+Throughout this unit, we focus on two different layers of the Open Systems Interconnection (OSI) model:
 
 - **Layer 2 (L2)**: This layer is the Data Link Layer, which provides node-to-node communication between two nodes on the same network.
 - **Layer 3 (L3)**: This layer is the Network Layer, which provides addressing and routing between nodes on a multi-node network.
@@ -40,11 +40,11 @@ ExpressRoute enables direct access to the following services in all regions:
 - Azure compute services, such as Azure Virtual Machines
 - Azure cloud services, such as Azure Cosmos DB and Azure Storage
 
-Microsoft 365 was created to be accessed securely and reliably via the internet. For this reason, we recommend the use of ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
+Microsoft 365 requires secure and reliable access via the internet. For this reason, we recommend the use of ExpressRoute for specific scenarios. The "Learn more" section at the end of this module includes a link about using ExpressRoute to access Office 365.
 
 ### Across on-premises connectivity with ExpressRoute Global Reach
 
-You can enable ExpressRoute Global Reach to exchange data across your on-premises sites by connecting your ExpressRoute circuits. For example, assume that you have a private datacenter in California connected to ExpressRoute in Silicon Valley. You have another private datacenter in Texas connected to ExpressRoute in Dallas. With ExpressRoute Global Reach, you can connect your private datacenters through two ExpressRoute circuits. Your cross-datacenter traffic will travel through the Microsoft network.
+You can enable ExpressRoute Global Reach to exchange data across your on-premises sites by connecting your ExpressRoute circuits. For example, assume that you have a private datacenter in California connected to ExpressRoute in Silicon Valley. You have another private datacenter in Texas connected to ExpressRoute in Dallas. With ExpressRoute Global Reach, you can connect your private datacenters through two ExpressRoute circuits. Your cross-datacenter traffic travels through the Microsoft network.
 
 ### Dynamic routing
 
@@ -81,4 +81,4 @@ You can connect directly into the Microsoft's global network at a peering locati
 
 ## Security considerations
 
-With ExpressRoute, your data doesn't travel over the public internet, so it's not exposed to the potential risks associated with internet communications. ExpressRoute is a private connection from your on-premises infrastructure to your Azure infrastructure. Even if you have an ExpressRoute connection, DNS queries, certificate revocation list checking, and Azure Content Delivery Network requests are still sent over the public internet.
+With ExpressRoute, your data doesn't travel over the public internet, so it's not exposed to the potential risks associated with internet communications. ExpressRoute is a private connection from your on-premises infrastructure to your Azure infrastructure. However, even with an ExpressRoute connection, you must consider other parts of an internet communication. DNS queries, certificate revocation list checking, and Azure Content Delivery Network requests are still sent over the public internet.

@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/10/2023
+  ms.date: 04/26/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -16,7 +16,6 @@ content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:
   title: ""
-
   questions:
   - content: "Which summary best describes the main purpose of Azure DNS?"
     choices:
@@ -29,7 +28,6 @@ quiz:
     - content: "Azure DNS registers new domain names, so there's no need to use a domain registrar."
       isCorrect: false
       explanation: "Incorrect. Azure DNS isn't a domain registrar. The service hosts the domain and allows administrators to manage DNS zone records."
-
   - content: "What type of DNS record can map one or more IP addresses against a single domain?"
     choices:
     - content: "`CNAME`"
@@ -41,7 +39,6 @@ quiz:
     - content: "`A` or `AAAA`"
       isCorrect: true
       explanation: "Correct. The `A` or `AAAA` record maps an IP address to a domain. Multiple IP addresses are known as a _record set_."
-
   - content: "Azure Private DNS supports which of the following scenarios?"
     choices:
     - content: "Organizations manage and resolve domain names in a virtual network without adding a custom DNS solution."

@@ -3,12 +3,15 @@ uid: learn.design-multi-tenant-saas-apps-with-azure-cosmos-db-for-postgresql.dis
 title: Distribute tables with minimal application disruption
 metadata:
   title: Distribute tables with minimal application disruption
-  description: "Azure Cosmos DB for PostgreSQL provides several methods for minimizing the impact of distributing table data across worker nodes on a multi-tenant SaaS application."
+  description: "Distribute table data across worker nodes on a multitenant SaaS application with minimal disruption."
   ms.date: 02/22/2023
   author: kylebunting
   ms.author: jonels
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-distribute-tables-with-minimal-app-disruption.md)]
