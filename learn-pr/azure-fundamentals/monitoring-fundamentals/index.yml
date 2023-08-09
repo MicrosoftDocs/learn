@@ -36,7 +36,6 @@ subjects:
 units:
 - learn.azure.monitoring-fundamentals.introduction
 - learn.azure.monitoring-fundamentals.identify-product-options
-- learn.azure.monitoring-fundamentals.analyze-decision-criteria
 - learn.azure.monitoring-fundamentals.use-azure-advisor
 - learn.azure.monitoring-fundamentals.use-azure-monitor
 - learn.azure.monitoring-fundamentals.use-azure-service-health
