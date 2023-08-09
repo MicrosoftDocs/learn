@@ -476,13 +476,53 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/2-monitor-sql-performance-linux.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/3-choose-use-query-store-automatic-tuning.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/4-exercise-monitor-sql-performance-linux.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/5-exercise-configure-sql-server-use-query-store-autotuning.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/6-summary.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/index.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.automatically-tune-sql-server-linux.badge.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.3-choose-use-query-store-automatic-tuning.md",
-      "redirect_url": "/training/modules/automatically-tune-sql-server-linux/3-exercise-monitor-sql-performance-linux",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.4-exercise-monitor-sql-performance-linux.md",
-      "redirect_url": "/training/modules/automatically-tune-sql-server-linux/4-choose-use-query-store-automatic-tuning",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
@@ -25285,6 +25325,51 @@
     },
     {
       "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/6-use-azure-sphere.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/5-use-iot-central.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/4-use-iot-hub.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
     }
