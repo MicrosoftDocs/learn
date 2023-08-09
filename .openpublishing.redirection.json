@@ -25052,6 +25052,11 @@
       "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-disk-storage.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-file-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
