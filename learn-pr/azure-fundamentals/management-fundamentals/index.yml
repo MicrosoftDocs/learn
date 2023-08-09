@@ -38,7 +38,6 @@ units:
 - learn.azure.management-fundamentals.use-azure-cli
 - learn.azure.management-fundamentals.use-azure-mobile-app
 - learn.azure.management-fundamentals.use-azure-resource-manager
-- learn.azure.management-fundamentals.summary
 
 badge:
   uid: learn.azure.management-fundamentals.badge
