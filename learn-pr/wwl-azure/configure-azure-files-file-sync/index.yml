@@ -24,6 +24,7 @@ levels:
 roles:
 - administrator
 products:
+- azure
 - azure-files
 subjects:
 - cloud-computing

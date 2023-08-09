@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110062
-labModal: true
+# labId: 110062
+labModal: false
 durationInMinutes: 30
 content: |
   [!include[](includes/3-customize-azure-portal.md)]
