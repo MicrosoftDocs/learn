@@ -2052,3 +2052,18 @@ achievements:
   title: Explore Azure Storage services
   summary: In this module, you'll learn about some of the different storage options that are available in Azure Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Blob Storage, Azure Disk Storage, Azure Files, and Blob access tiers.
   iconUrl: /training/achievements/azure-storage-fundamentals.svg
+- uid: learn.azure.choose-azure-services-sla-lifecycle.badge
+  type: badge
+  title: Choose the right Azure services by examining SLAs and service lifecycle
+  summary: Learn about service-level agreements (SLAs) in Azure, and how they can affect your application design decisions. See how to access preview services and learn how they affect your planning.
+  iconUrl: /training/achievements/explore-azure-service-level-agreements.svg
+- uid: learn.azure.protect-against-security-threats-azure.badge
+  type: badge
+  title: Protect against security threats on Azure
+  summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
+  iconUrl: /training/achievements/review-security-tools-features.svg
+- uid: learn.azure.secure-network-connectivity-azure.badge
+  type: badge
+  title: Secure network connectivity on Azure
+  summary: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
+  iconUrl: /training/achievements/secure-network-connectivity.svg
