@@ -35,7 +35,6 @@ products:
 subjects:
 - networking
 units:
-- learn.azure.secure-network-connectivity-azure.6-configure-access-network-security-group
 - learn.azure.secure-network-connectivity-azure.7-combine-services-complete-solution
 - learn.azure.secure-network-connectivity-azure.8-knowledge-check
 - learn.azure.secure-network-connectivity-azure.9-summary
