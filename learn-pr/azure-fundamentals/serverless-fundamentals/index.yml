@@ -33,7 +33,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.serverless-fundamentals.use-azure-logic-apps
 
 badge:
   uid: learn.azure.serverless-fundamentals.badge
