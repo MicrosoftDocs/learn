@@ -8,7 +8,7 @@ metadata:
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service
 summary: In this module, we will demonstrate how to deploy Elastic Cloud on Kubernetes on Azure Kubernetes Service (AKS). 
 abstract: |

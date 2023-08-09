@@ -4,10 +4,9 @@ metadata:
   title: Introduction to GitHub's products
   description: Overview of GitHub's products, associated features, and licensing of per-use and metered features.
   ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Introduction to GitHub's products
 summary: Overview of GitHub's products, associated features, and licensing of per-use and metered features.
 abstract: |

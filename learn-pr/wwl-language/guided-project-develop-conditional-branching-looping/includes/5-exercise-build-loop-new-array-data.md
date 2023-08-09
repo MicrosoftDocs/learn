@@ -1,6 +1,7 @@
 
 
 
+
 In this exercise, you develop code that controls the input of new `ourAnimals` array data. You calculate the initial values of your loop control variables and construct the loop that collects user specified data for the animals. The detailed tasks that you complete during this exercise are:
 
 1. Calculate petCount: write code that counts the number of pets in the `ourAnimals` array that have assigned data.

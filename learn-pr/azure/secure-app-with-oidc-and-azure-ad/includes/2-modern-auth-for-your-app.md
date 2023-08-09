@@ -6,7 +6,7 @@ Let's look at the standards and services that you can use for authentication.
 
 ## What is Azure Active Directory?
 
-Azure Active Directory (Azure AD) is Microsoft's cloud-based identity and access management service. It simplifies authentication for developers by providing identity as a service. It supports industry-standard protocols such as OAuth 2.0 and OpenID Connect. 
+Azure Active Directory (Azure AD) is Microsoft's cloud-based identity and access management service. It simplifies authentication for developers by providing identity as a service. It supports industry-standard protocols such as OAuth 2.0 and OpenID Connect.
 
 Azure AD allows users to sign in and view resources. And it has features to help secure your identities, such as Identity Protection and multi-factor authentication.
 
@@ -24,7 +24,7 @@ Let’s consider a basic scenario where identity is required: a user in a web br
 ![Screenshot that shows a basic scenario where identity is required.](../media/2-azure-ad-open-id-connect.svg)
 
 1. The user requests a secured resource, in this case a web application.
-1. The web application redirects the request to the identity provider that requests and checks the user's authentication credentials. 
+1. The web application redirects the request to the identity provider that requests and checks the user's authentication credentials.
 1. If the user sends correct credentials, the provider returns a security token to the user and redirects the user to the resource they originally requested.
 1. The user sends the security token to the web application.
 1. The web application uses the token to verify that the identity provider has performed the authentication.
@@ -35,7 +35,7 @@ This communication flow is built upon the industry-standard protocols of OAuth 2
 
 ## OAuth 2.0
 
-OAuth 2.0 is the industry-standard protocol for authorization. It provides specific authorization flows for web, desktop, and mobile applications. This specification was primarily designed to enable users to authorize an application to access data in another application. 
+OAuth 2.0 is the industry-standard protocol for authorization. It provides specific authorization flows for web, desktop, and mobile applications. This specification was primarily designed to enable users to authorize an application to access data in another application.
 
 Imagine you have an application that stores contact information. You want to allow users with LinkedIn accounts to import their LinkedIn contact information into your application. With OAuth, you can enable this server-to-server communication. Users can authorize your application to access contact information, without needing to share passwords between applications.
 
@@ -43,7 +43,7 @@ OAuth works well for authorization of server-to-server communications, but it do
 
 ## OpenID Connect
 
-OpenID Connect is an authentication layer that's built on top of OAuth 2.0. It includes identity verification methods that are missing from OAuth 2.0. OpenID Connect gives you an access token plus an ID token, which you can send to an application to prove your identity. 
+OpenID Connect is an authentication layer that's built on top of OAuth 2.0. It includes identity verification methods that are missing from OAuth 2.0. OpenID Connect gives you an access token plus an ID token, which you can send to an application to prove your identity.
 
 The ID token is a JSON Web Token (JWT) and contains information about the authenticated user. The identity provider signs the token, so that applications can verify the authentication by using the provider's public key.
 
@@ -51,7 +51,7 @@ JSON Web Token is an open international standard that defines how applications c
 
 ![OpenID authentication.](../media/2-openid-connect-auth-flow.svg)
 
-This diagram shows how the client application, the application server, and the identity provider communicate in an OpenID Connect authentication request. The client might be a mobile app or a desktop application. In this case, it's a web browser. The application server is usually a web server that hosts webpages or a web API. The identity provider in the middle is Azure AD. 
+This diagram shows how the client application, the application server, and the identity provider communicate in an OpenID Connect authentication request. The client might be a mobile app or a desktop application. In this case, it's a web browser. The application server is usually a web server that hosts webpages or a web API. The identity provider in the middle is Azure AD.
 
 When the web browser goes to the web application, the web server needs the user to be authenticated. It redirects the browser to Azure AD and provides its own client ID, which has been registered in Azure AD. When the user has successfully authenticated against Azure AD, the provider redirects the browser to the URI on the web server.
 

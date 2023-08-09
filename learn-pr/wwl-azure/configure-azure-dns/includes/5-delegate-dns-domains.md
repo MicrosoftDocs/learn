@@ -40,7 +40,7 @@ There are several important considerations to keep in mind when working with `NS
 
 You can delegate a subdomain for your domain in Azure DNS by setting up a separate child DNS zone.
 
-Let's consider our sample Azure Administrator Incorporated Azure AD domain. We created a custom domain name for the instance as `azureadmininc.org`. We can configure a separate child DNS zone for the custom domain to support partners of the organization, such as `partners.azureadmininc.com`.
+Let's consider our sample Azure Administrator Incorporated Azure AD domain. We created a custom domain name for the instance as `azureadmininc.org`. We can configure a separate child DNS zone for the custom domain to support partners of the organization, such as `partners.azureadmininc.org`.
 
 The configuration steps for delegating a child DNS zone are similar to the typical delegation process. The key difference is you don't work with your registrar to delegate a subdomain. You delegate the child DNS zone in the Azure portal.
 

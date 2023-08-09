@@ -13,12 +13,12 @@ In Azure AD, all users can register application registrations and manage all asp
 
 ### To disable the default ability to create application registrations or consent to applications
 
-1. Sign in to your Azure AD organization with an account that's eligible for the Global Administrator role in your Azure AD organization.
-1. Set one or both of the following:
+1.  Sign in to your Azure AD organization with an account that's eligible for the Global Administrator role in your Azure AD organization.
+2.  Set one or both of the following:
     
     
      -  On the **User settings** page for your organization, set the **Users can register applications** setting to No. This will disable the default ability for users to create application registrations.
-     -  On the **User Settings** for enterprise applications, configure if users can add Gallery Apps to My App or if Office 365 apps appear in the Office portal.
+     -  On the **User Settings** for enterprise application, configure if users can add Gallery Apps to My App or if Office 365 apps appear in the Office portal.
      -  On the **Consent and Permissions** settings for enterprise applications, set the **Users can consent to applications accessing company data on their behalf** setting to No. This will disable the default ability for users to consent to applications accessing company data on their behalf.
 
 ### Grant individual permissions to create and consent to applications when the default ability is disabled
@@ -37,10 +37,10 @@ In some cases, enterprise applications created from the application gallery incl
 
 ### To assign an owner to an enterprise application
 
-1. Sign in to your Azure AD organization with an account that's eligible for the Application Administrator or Cloud Application Administrator for the organization.
-1. On the **App registrations** page for the organization, select an app to open the Overview page for the app.
-1. Select **Owners** to see the list of the owners for the app.
-1. Select **Add** to select one or more owners to add to the app.
+1.  Sign in to your Azure AD organization with an account that's eligible for the Application Administrator or Cloud Application Administrator for the organization.
+2.  On the **App registrations** page for the organization, select an app to open the Overview page for the app.
+3.  Select **Owners** to see the list of the owners for the app.
+4.  Select **Add** to select one or more owners to add to the app.
 
 > [!IMPORTANT]
 > Users and service principals can be owners of application registrations. Only users can be owners of enterprise applications. Groups cannot be assigned as owners of either.

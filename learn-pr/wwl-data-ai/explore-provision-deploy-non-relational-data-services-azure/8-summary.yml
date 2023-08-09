@@ -4,11 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 01/25/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 1

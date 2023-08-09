@@ -5,8 +5,8 @@ metadata:
   title: Define the principles and benefits of DevOps
   description: Define the principles and benefits of DevOps
   ms.date: 05/31/2021
-  author: mpolicht
-  ms.author: jasdeb
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 12

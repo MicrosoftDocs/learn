@@ -8,7 +8,7 @@ Asynchronous communication should be encouraged, but there should not be an expe
 
 All meetings should have strict timeframes and, more importantly, have a plan. If there is no plan, there should be no meeting.
 
-As it is becoming harder to find the required staff, great teams will be as comfortable with remote or work-from-home workers in the office.
+As it is becoming harder to find the required staff, great teams will be as comfortable with remote or work-from-home as with workers in the office.
 
 To be successful, though, collaboration via communication should become part of the organization's DNA.
 

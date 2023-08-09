@@ -21,7 +21,7 @@ Azure OpenAI supports many common AI workloads and solves for some new ones.
 
 Common AI workloads include machine learning, computer vision, natural language processing, conversational AI, anomaly detection, and knowledge mining. 
 
-Other AI workloads Azure OpenAI supports can be categorized into three groups: 
+Other AI workloads Azure OpenAI supports can be categorized by tasks they support: 
 
 - **Generating Natural Language**
     - *Text completion*: generate and edit text 
@@ -33,13 +33,13 @@ Other AI workloads Azure OpenAI supports can be categorized into three groups:
 
 ![Diagram showing Microsoft AI portfolio and how they relate.](../media/microsoft-ai-portfolio-graphic.png)
 
-Azure's AI services are tools for solving AI workloads and can be categorized into Azure's Machine Learning platform, Cognitive Services, and Applied AI Services.   
+Azure's AI services are tools for solving AI workloads and can be categorized into three groupings: Azure's Machine Learning platform, Cognitive Services, and Applied AI Services.   
  
-Azure Cognitive Services has five pillars: vision, speech, language, decision, and the Azure OpenAI Service. The services you choose to use depend on what you need to accomplish. In particular, there are several overlapping capabilities between the Cognitive Service's Language service and OpenAI's service, such as translation, sentiment analysis, and keyword extraction. 
+Azure AI Services has five pillars: vision, speech, language, decision, and the Azure OpenAI Service. The services you choose to use depend on what you need to accomplish. In particular, there are several overlapping capabilities between the Cognitive Service's Language service and OpenAI's service, such as translation, sentiment analysis, and keyword extraction. 
 
-While there's no strict guidance on when to use a particular service, Azure's existing Language service can be used for widely known use-cases that require minimal tuning, the process of optimizing a model's performance. Azure OpenAI's service may be more beneficial for use-cases that require highly customized generative models, or for exploratory research. 
+While there's no strict guidance on when to use a particular service, Azure's existing Language service can be used for widely known use-cases that require minimal tuning (the process of optimizing a model's performance). Azure OpenAI's service may be more beneficial for use-cases that require highly customized generative models, or for exploratory research. 
 
 >[!NOTE]
 >Pricing is different for Azure OpenAI and Azure Cognitive Service for Language. [Learn more here](https://azure.microsoft.com/pricing/details/cognitive-services/openai-service?azure-portal=true).
 
-When making business decisions about what type of model to use or to understand why pre-trained machine learning models are so sought after, it's important to understand how time and compute needs factor into machine learning training. In order to get a working machine learning model, it needs to be trained with data. The 'learning' portion of training requires a computer to try all solutions until it identifies a model that best fits the data. A higher performing model, a more complex task, and a larger training dataset results in more time required to run through possible solutions.
+When making business decisions about what type of model to use, it's important to understand how time and compute needs factor into machine learning training. In order to produce an effective machine learning model, the model needs to be trained with a substantial amount of cleaned data. The 'learning' portion of training requires a computer to identify an algorithm that best fits the data. The complexity of the task the model needs to solve for and the desired level of model performance all factor into the time required to run through possible solutions for a best fit algorithm. 

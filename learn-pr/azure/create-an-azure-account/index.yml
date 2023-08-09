@@ -3,11 +3,10 @@ uid: learn.create-azure-account
 metadata:
   title: Create an Azure account
   description: "Find out how to start using Azure by creating an account where you’ll see services and personal settings for identity, billing, and preferences."
-  ms.date: 03/16/2022
+  ms.date: 05/24/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   adobe-target: true
 title: Create an Azure account
 summary: "The first step to using Azure is to sign up. You may sign up directly through Azure.com, with the help of a Microsoft representative, or through a partner. If you’re new to Azure, you may sign up for an Azure free account to start exploring with $200 USD free credit and free services. "

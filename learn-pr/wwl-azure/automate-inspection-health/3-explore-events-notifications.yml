@@ -4,13 +4,11 @@ title: Explore events and notifications
 metadata:
   title: Explore events and notifications
   description: "Explore events and notifications"
-  ms.date: 11/01/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 2
 content: |
   [!include[](includes/3-explore-events-notifications.md)]

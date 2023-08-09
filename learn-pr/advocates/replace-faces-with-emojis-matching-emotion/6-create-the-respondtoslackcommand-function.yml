@@ -7,6 +7,8 @@ metadata:
   author: ggailey777
   ms.author: glenga
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 title: Create the RespondToSlackCommand Azure function
 durationInMinutes: 7

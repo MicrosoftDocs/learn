@@ -2,13 +2,13 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
 ## Create an SSML file for your application to read
 
-1. In the Cloud Shell on the right, create a new XML file that your application will read.
+1. In the Cloud Shell on the right, create a new XML file that your application will read:
 
     ```dotnetcli
     code Shakespeare.xml
     ```
 
-1. When the code editor appears, enter the following xml.
+1. When the code editor appears, enter the following XML:
 
     ```xml
     <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
@@ -18,7 +18,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     This code excerpt defines the root `<speak>` element that will contain a series of `<voice>` elements that specify other voices to use.
 
-1. Within the `<speak>` element, add the following xml to define text that will be read by the `en-GB-LibbyNeural` voice.
+1. Within the `<speak>` element, add the following XML to define text that the `en-GB-LibbyNeural` voice will read:
 
     ```xml
     <voice name="en-GB-LibbyNeural">
@@ -28,9 +28,9 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     </voice>
     ```
 
-    This code excerpt defines a `<voice>` element that specifies a different voice than the default, and wraps the text within a `<prosody>` element that slows the speaking rate by 10%, and lowers the pitch by 5%.
+    This code excerpt defines a `<voice>` element that specifies a different voice than the default, and wraps the text within a `<prosody>` element that slows the speaking rate by 10% and lowers the pitch by 5%.
 
-1. Add the following xml after the previous `<voice>` element to define text that will be read by the `en-GB-RyanNeural` voice.
+1. Add the following xml after the previous `<voice>` element to define text that the `en-GB-RyanNeural` voice will read.
 
     ```xml
     <voice name="en-GB-RyanNeural">
@@ -46,10 +46,9 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     </voice>
     ```
 
-    Like the last code excerpt, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch. However, this excerpt also contains `<break>` elements that add pauses between phrases.
+    Like the previous code excerpt, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch. However, this excerpt also contains `<break>` elements that add pauses between phrases.
 
-
-1. Add the following xml after the previous `<voice>` element to define text that will be read by the `en-IE-ConnorNeural` voice.
+1. Add the following xml after the previous `<voice>` element to define text that the `en-IE-ConnorNeural` voice will read.
 
     ```xml
     <voice name="en-IE-ConnorNeural">
@@ -66,7 +65,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     Like the last two code excerpts, this excerpt defines a `<voice>` element that specifies a different voice and wraps the text within a `<prosody>` element that alters the speaking rate and pitch, and also contains `<break>` elements that add a pause between phrases. However, this excerpt also contains a `<phoneme>` element that helps the text-to-speech engine to pronounce an older English word that it might not know how to pronounce.
 
-1. When you've finished adding all of the code, your XML file should resemble the following example.
+1. When you've finished adding all of the code, your XML file should resemble the following example:
 
     ```xml
     <speak xmlns="http://www.w3.org/2001/10/synthesis" version="1.0" xml:lang="en-US">
@@ -103,17 +102,17 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     </speak>
     ```
 
-1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 
 ## Update the code for your text-to-speech application for SSML
 
-1. In the Cloud Shell on the right, open the *Program.cs* file.
+1. In the Cloud Shell on the right, open the *Program.cs* file:
 
     ```dotnetcli
     code Program.cs
     ```
 
-1. Leave the existing `using` statements unmodified, but replace the rest with the following code, which will modify the application to use the contents of an SSML file instead of a text file.
+1. Leave the existing `using` statements unmodified, but replace the rest with the following code, which will modify the application to use the contents of an SSML file instead of a text file. Replace the `azureKey` and `azureLocation` values with the ones you copied in the first exercise.
 
     ```csharp
     string azureKey = "ENTER YOUR KEY FROM THE FIRST EXERCISE";
@@ -176,7 +175,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
 
     As with the previous exercise, make sure that you update the values for the `azureKey` and `azureLocation` variables with your key and location from the first exercise.
 
-1. To save your changes, press `Ctrl-S` to save the file, and then press `Ctrl-Q` to exit the editor.
+1. To save your changes, press <kbd>Ctrl-S</kbd> to save the file, and then press <kbd>Ctrl-Q</kbd> to exit the editor.
 
 ## Run your application
 
@@ -192,7 +191,7 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     ls -l
     ```
 
-    You should see a response like the following example, and you should see the _Shakespeare.wav_ in the list of files.
+    You should get a response like the following example, and you should have the *Shakespeare.wav* file in the list of files.
 
     ```bash
     drwxr-xr-x 3 user   user     4096 Oct  1 11:11 bin
@@ -201,9 +200,9 @@ In this exercise, you'll create an XML file that contains Speech Synthesis Marku
     -rw-r--r-- 1 user   user      413 Oct  1 11:11 Shakespeare.txt
     -rw-r--r-- 1 user   user   978260 Oct  1 11:11 Shakespeare.wav
     -rw-r--r-- 1 user   user     1117 Oct  1 11:11 Shakespeare.xml
-    -rw-r--r-- 1 user   user      348 Oct  1 11:11 text-to-speech.csproj
+    -rw-r--r-- 1 user   user      348 Oct  1 11:11 text to speech.csproj
     ```
 
-## Optional: Listen to your WAVE file
+## Optional: Listen to your WAV file
 
 [!include[](listen-to-your-wave-file.md)]

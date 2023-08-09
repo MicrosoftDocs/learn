@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-secure-access-azure-repos-from-pipelines.lab-integrate-azure-key-vault-with-azure-pipelines
+title: Lab - Integrate Azure Key Vault with Azure Pipelines
+metadata:
+  title: Lab - Integrate Azure Key Vault with Azure Pipelines
+  description: "This unit contains a hands-on exercise. Learners can use the exercise to configure secure access to Azure Repos from pipelines."
+  ms.date: 6/14/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 40
+content: |
+  [!include[](includes/7-lab-integrate-azure-key-vault-with-azure-pipelines.md)]

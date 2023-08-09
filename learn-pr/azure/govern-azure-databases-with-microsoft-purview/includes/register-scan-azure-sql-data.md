@@ -4,7 +4,7 @@ You’ve decided to use a Microsoft Purview account to connect to data sources t
 
 ## Register an Azure SQL Database source with a Microsoft Purview account
 
-You’ve already set up a Microsoft Purview account by adding the Data Source Administrator role to the account and by configuring the Data Reader role to register a data source.
+Prepare your Microsoft Purview account making sure you have Data Source Administrator permissions and Data Reader permissions on the collection where you're going to register your data source.
 
 Before you can register an Azure SQL database source, you need to ensure that the Microsoft Purview account has connectivity to the database and has the correct credentials to access it.
 
@@ -39,7 +39,7 @@ To access an Azure SQL Database from your Microsoft Purview account, use one of 
 
 Use the following steps to register an Azure SQL Database source in Microsoft Purview:
 
-1. In the Microsoft Azure portal, select your **Microsoft Purview** account, select **Microsoft Purview Studio**, and then select **Data map**.
+1. In the Microsoft Azure portal, select your **Microsoft Purview** account, select **Microsoft Purview governance portal**, and then select **Data map**.
 
 1. On the **Data map** pane, select **Collections**, and then either create a new collection or select an existing collection.
 
@@ -49,15 +49,11 @@ Use the following steps to register an Azure SQL Database source in Microsoft Pu
 
     :::image type="content" source="../media/2-register-azure-sql-database.png" alt-text="Screenshot that describes the process of registering an Azure SQL Database data source in Microsoft Purview."  border="true" lightbox="../media/2-register-azure-sql-database.png":::
 
-
 1. On the **Register sources (Azure SQL Database)** pane, provide a **Name** for the data source, select the relevant **Azure subscription**, select the **Server name** for the SQL Server, enter the public **endpoint**, select the **collection**, and then select **Register.**
 
 1. The Azure SQL Database is now listed under the selected collection.
 
     :::image type="content" source="../media/2-provide-name-sql.png" alt-text="Screenshot that depicts the Register sources (Azure SQL Database) pane." border="true" lightbox="../media/2-provide-name-sql.png":::
-
-
-
 
 ## Scan an Azure SQL Database
 
@@ -83,7 +79,7 @@ To scan your Azure SQL database with system-managed or user-managed identities, 
 
 To scan an Azure SQL Database that’s been configured using managed identities, follow these steps:
 
-1. In the Azure portal, select your **Microsoft Purview** account, and then select **Microsoft Purview Studio**.
+1. In the Azure portal, select your **Microsoft Purview** account, and then select **Microsoft Purview governance portal**.
 
 1. To observe the collection hierarchy, select **Data map**, and then select **Sources**.
 
@@ -115,7 +111,7 @@ To scan an Azure SQL Database that’s been configured using managed identities,
 
 1. On the **Review your scan** pane, select **Save and run**.
 
-### Scan an Azure SQL Database configured with service principal for authentication</a>
+### Scan an Azure SQL Database configured with service principal for authentication
 
 The service principal created in Azure AD must be granted the necessary permission to get metadata from your Azure SQL Database. To grant this permission, configure the Azure SQL Database with Azure AD authentication. Additionally, create an Azure AD user in the Azure SQL Database for your service principal.
 
@@ -128,9 +124,9 @@ To scan an Azure SQL Database that’s been configured using a service principal
 
 ### Scan an Azure SQL Database configured with SQL authentication
 
-To configure a scan of a database configured with SQL authentication, you need to connect your Microsoft Purview Account with the Azure Key Vault service. This service stores the passwords for the account used to scan the SQL database. Use Microsoft Purview Studio to integrate the Key Vault service and your Microsoft Purview account:
+To configure a scan of a database configured with SQL authentication, you need to connect your Microsoft Purview Account with the Azure Key Vault service. This service stores the passwords for the account used to scan the SQL database. Use Microsoft Purview governance portal to integrate the Key Vault service and your Microsoft Purview account:
 
-1. In Microsoft Purview studio, select the **Management** page, select **Credentials**, and then, in the toolbar, select **Manage Key Vault connections**.
+1. In Microsoft Purview governance portal, select the **Management** page, select **Credentials**, and then, in the toolbar, select **Manage Key Vault connections**.
 
 1. On the **Manage Key Vault connections** pane, select **New**, provide a name for the connection, and then select the existing Key Vault.
 
@@ -139,13 +135,13 @@ To configure a scan of a database configured with SQL authentication, you need t
 >[!Note]
 >Be sure to configure the access policy for Azure Key Vault to grant **Get** and **List** secret permission for your Microsoft Purview account.
 
-:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Azure Purview." border="true" lightbox="../media/2-add-access-policy.png":::
+:::image type="content" source="../media/2-add-access-policy.png" alt-text="Screenshot depicting how to configure the access policy for Azure Key Vault to grant Get and List secret permission for Microsoft Purview." border="true" lightbox="../media/2-add-access-policy.png":::
 
 After you establish a connection with Azure Key Vault, create credentials that use **SQL** **authentication** for your Azure SQL database.
 
-When you create the scan for Azure SQL Database, follow the same procedure described for creating a scan configured with service principal for authentication, but select **SQLAuthentication** for **Credentials**.
+When you create the scan for Azure SQL Database, follow the same procedure described for creating a scan configured with service principal for authentication, but select **SQL Authentication** for **Credentials**.
 
-### Manage the existing scan
+### Manage the scan
 
 To check the status of the scan after the data scan finishes, navigate to the Microsoft Purview collection that contains your data source, and then select **View Details**.
 

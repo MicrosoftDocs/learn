@@ -33,7 +33,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

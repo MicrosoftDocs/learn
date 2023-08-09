@@ -8,7 +8,12 @@ metadata:
   ms.date: 3/15/2023  
   author: amthomas46
   ms.author: chnoring
-  ms.custom: team=nextgen, devx-track-azurecli
+  ms.custom:
+    - team=nextgen
+    - devx-track-azurecli
+    - devx-track-arm-template
+    - devx-track-azurepowershell
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-azure  
   zone_pivot_groups: dev-lang-csharp-node-python

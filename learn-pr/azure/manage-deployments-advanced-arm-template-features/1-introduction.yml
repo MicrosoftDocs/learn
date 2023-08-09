@@ -9,7 +9,9 @@ metadata:
   ms.date: 12/09/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-bicep
 durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]

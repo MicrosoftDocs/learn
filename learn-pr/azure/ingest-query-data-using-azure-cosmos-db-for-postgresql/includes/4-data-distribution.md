@@ -1,16 +1,16 @@
-Woodgrove Bank has asked you to review and optimize query execution for the distributed tables in their Azure Cosmos DB for PostgreSQL database. [Metadata tables](/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) residing on the coordinator node can be queried to view detailed information about the nodes and shards in your distributed database. You can use these tables to gain insights into your database's structure, node utilization, data distribution, and performance.
+Woodgrove Bank has asked you to review and optimize query execution for the distributed tables in their Azure Cosmos DB for PostgreSQL database. You can query [Metadata tables](/azure/postgresql/hyperscale/reference-metadata#coordinator-metadata) residing on the coordinator node to view detailed information about the nodes and shards in your distributed database. You can use these tables to gain insights into your database's structure, node utilization, data distribution, and performance.
 
-The coordinator maintains these tables and uses them to track statistics and information about the health and location of shards across nodes. These tables, prefixed with `pg_dist_*`, contain diverse metadata about your distributed database and are used by the coordinator when building query execution plans across the worker nodes.
+The coordinator maintains these tables and uses them to track statistics and information about the health and location of shards across nodes. These tables, prefixed with `pg_dist_*`, contain diverse metadata about your distributed database and the coordinator uses them when building query execution plans across the worker nodes.
 
 This unit highlights a few of the tables below, but you can view the complete list of metadata tables, learn more about them, and view their schemas by reading the [System tables and views documentation](/azure/postgresql/hyperscale/reference-metadata).
 
 ## Find the distribution column for a distributed table
 
-Each distributed table has a _distribution column_. When ingesting data and writing queries against your database, it's essential to know which column it is. For instance, when joining or filtering tables, you may see error messages with hints like, "add a filter to the distribution column."
+Each distributed table has a _distribution column_. When you're ingesting data and writing queries against your database, it's essential to know which column it is. For instance, when you're joining or filtering tables, you may see error messages with hints like "add a filter to the distribution column."
 
 You can use the [distributed tables view](/azure/postgresql/hyperscale/reference-metadata#distributed-tables-view), named `citus_tables`, on the coordinator node to view the distribution column name, along with other details about each distributed table in your database.
 
-Here's an example using the `payment_events` table from Woodgrove Bank's contactless payment app:
+Here's an example using the `payment_events` table from Woodgrove Bank's contactless-payment app:
 
 ```sql
 SELECT table_name, distribution_column, table_size FROM citus_tables WHERE table_name = 'payment_events'::regclass;
@@ -79,11 +79,11 @@ metadatasynced   | t
 shouldhaveshards | f
 ```
 
-Reviewing the query output reveals details, including the ID, name, and port associated with each node. In addition, you can see if the node is active and should contain shards, among other bits of information. Node names and port numbers can be used for connecting directly to workers, which is a common practice when tuning query performance.
+Reviewing the query output reveals details, including the ID, name, and port associated with each node. In addition, you can see if the node is active and should contain shards, among other bits of information. You can use node names and port numbers for connecting directly to workers, which is a common practice when tuning query performance.
 
 ## Inspect data skew to understand node utilization
 
-The team at Woodgrove is concerned that, over time, the distribution of data in their database will become skewed, resulting in decreased query performance. They've asked you to provide them with a query that will allow them to quickly assess data skew, and a way to address it when identified.
+The team at Woodgrove is concerned that over time the distribution of data in their database will become skewed, resulting in decreased query performance. They've asked you to provide them with a query that will allow them to quickly assess data skew, and a way to address it when identified.
 
 Data skew refers to how evenly data is distributed across your worker nodes. Proper [selection of distribution columns](/azure/postgresql/hyperscale/howto-choose-distribution-column) should result in relatively consistent utilization of storage and compute resources across worker nodes. Clusters run most efficiently when data is placed evenly across nodes and related data are colocated on the same workers. You can use the `citus_shards` view to query the data size on each shard. This query provides insight into how evenly data is distributed across shards.
 
@@ -113,7 +113,7 @@ LIMIT 10;
   102241 | payment_events_102241 |     630784
 ```
 
-The output of the query lets you compare the size of each shard. When shards are of approximately equal size, as in the output for the `payment_events` table above, you can infer that the worker nodes hold a roughly equal number of rows.
+The query's output lets you compare the size of each shard. When shards are of approximately equal size, as in the output for the previous `payment_events` table, you can infer that the worker nodes hold a roughly equal number of rows.
 
 To minimize data skew, the distribution column you select should:
 
@@ -124,11 +124,11 @@ Any table and distribution column choice where either property fails to meet the
 
 ### Fix data skew with the Shard rebalancer
 
-To provide a code-free method of assessing data skew to Woodgrove Bank, you can recommend they use the Azure portal to see whether data is distributed equally between worker nodes in the cluster. In the Azure portal, you select the **Shard rebalancer** item from the left-hand navigation menu.
+To provide a code-free method of assessing data skew to Woodgrove Bank, you can recommend they use the Azure portal to see whether data is distributed equally between worker nodes in the cluster. In the Azure portal, select the **Shard rebalancer** item from the left-hand navigation menu.
 
-If data is skewed between workers: You'll see the message,**Rebalancing is recommended** and a list of the size of each node. Otherwise, you'll see the message, **Rebalancing is not recommended at this time**.
+If data is skewed between workers, you'll see the message **Rebalancing is recommended** and a list of the size of each node. Otherwise, you'll see the message **Rebalancing is not recommended at this time**.
 
-:::image type="content" source="../media/shard-rebalancer.png" alt-text="Screenshot of the Shard rebalancer menu item, and the Shard rebalancer page for the database is displayed in the Azure portal.":::
+:::image type="content" source="../media/shard-rebalancer.png" alt-text="Screenshot of the Shard rebalancer menu item. The Shard rebalancer page for the database is displayed in the Azure portal.":::
 
 If data skew is found, you can start the Shard rebalancer by connecting to the coordinator node of the cluster and running the [`rebalance_table_shards`](/azure/postgresql/hyperscale/reference-functions#rebalance_table_shards) SQL function on distributed tables.
 
@@ -148,7 +148,7 @@ Azure Cosmos DB for PostgreSQL assigns each row to a shard based on the value of
 
 The shard placement table tracks the location of shard replicas on worker nodes. Each replica of a shard assigned to a specific node is called a _shard placement_. This table also stores information about the health and location of each shard placement. Determining which worker node has the rows for a specific distribution column can be helpful in many cases.
 
-Suppose Woodgrove Bank has asked you to find which worker node holds the data for `user_id` 5 in the contactless payment application. In other words, you want to identify the placement of the shard containing rows whose distribution column has a value of 5:
+Suppose Woodgrove Bank has asked you to find which worker node holds the data for `user_id` 5 in the contactless payment application. In other words, you want to identify the placement of the shard containing rows whose distribution column has a value of `5`:
 
 ```sql
 SELECT shardid, nodename, placementid
@@ -161,7 +161,7 @@ AND shardid = (
 );
 ```
 
-The query returns the `shardid` containing the data for the `user_id` with a value of 5.
+The query returns the `shardid` containing the data for the `user_id` with a value of `5`.
 
 ```output
  shardid |                         nodename                                 | placementid 

@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.edge.integrate-with-pwabuilder
+title: Integrate your project with PWABuilder
+metadata:
+  title: Integrate your project with PWABuilder
+  description: Elevate your web development skills by integrating Progressive Web App (PWA) features into projects. Master PWA readiness, app manifest generation, and service worker configuration using PWABuilder. Customize settings and appearance, configure essential PWA features like push notifications and background sync, and transform your project into a polished, app-like experience for users.
+  ms.date: 07/11/2023
+  author: beth-panx
+  ms.author: xupa
+  ms.topic: module-standard-task-based
+  ms.prod: microsoft-edge
+summary: >
+  Efficiently integrate Progressive Web App (PWA) features into projects using PWABuilder.  Master PWA integration using PWABuilder, optimizing user experience, and streamlining development for a polished final product.
+abstract: | 
+  By the end of this module, you'll be able to:
+  - Utilize PWABuilder to create and enhance PWAs effectively.
+  - Evaluate a website's PWA readiness and implement necessary improvements.
+  - Customize your PWA's settings and appearance, integrating features like push notifications and background sync.
+  - Gain practical experience in generating and customizing app manifests and service workers for PWAs.
+prerequisites: |
+  - Understanding of PWA at beginner level.
+  - Basic familiarity with web apps at the beginner level.
+  - Intermediate understanding of web development (HTML, CSS, JavaScript, and JSON).
+iconUrl: /training/achievements/generic-badge.svg
+ratingEnabled: false
+levels:
+- beginner
+roles:
+- developer
+products:
+- microsoft-edge
+units:
+- learn.edge.integrate-with-pwabuilder.introduction
+- learn.edge.integrate-with-pwabuilder.prepare-pwa-integration
+- learn.edge.integrate-with-pwabuilder.evaluate-pwa-readiness
+- learn.edge.integrate-with-pwabuilder.app-manifest
+- learn.edge.integrate-with-pwabuilder.customize-pwa-settings
+- learn.edge.integrate-with-pwabuilder.generate-app-manifest
+- learn.edge.integrate-with-pwabuilder.knowledge-check
+- learn.edge.integrate-with-pwabuilder.summary
+badge:
+  uid: learn.edge.integrate-with-pwabuilder.badge

@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-own-data-azure-openai.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary of topics covered in this module."
+  ms.date: 7/11/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 1
+content: |
+  [!include[](includes/7-summary.md)]

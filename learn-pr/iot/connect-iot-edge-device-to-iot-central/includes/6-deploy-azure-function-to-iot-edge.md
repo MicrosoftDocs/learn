@@ -1,8 +1,8 @@
 To reduce the amount of telemetry sent to your IoT Central application, you want to filter the data on your IoT Edge device before it's sent.
 
-To reduce the costs associated with sending telemetry from your stores to your application, and to ensure that your operators only see important data you want to filter the data on the IoT Edge device. You've determined that operators only need to see telemetry when the ambient temperature is above 21&deg;C.
+To reduce the costs associated with sending telemetry from your stores to your application, and to ensure that your operators only see important data, you want to filter the data on the IoT Edge device. You've determined that operators only need to see telemetry when the ambient temperature is above 21&deg;C.
 
-Here, you'll learn how to use Azure Functions as a module on your IoT Edge device to implement the filter. You'll also review how to use versioning when you update a device template in IoT Central and update the IoT Edge runtime configuration on your devices.
+Here, you'll learn how to use Azure Functions as a module on your IoT Edge device to implement the filter. You'll also review how to update the deployment manifest to your IoT Central application, so IoT Edge devices that are connected to your IoT Central application download it and update the modules on the device.
 
 ## What is Azure Functions?
 
@@ -16,7 +16,7 @@ You're planning to implement your filter using Azure Functions to run as one of 
 
 You can use multiple languages to create a function for Azure Functions. The following steps outline how to build an IoT Edge module that contains a function implemented in C#:
 
-1. Create a project that includes the scaffolding for an Azure Function module. You can create such a project using Visual Studio code, or at the command line using the `dotnet` command.
+1. Create a project that includes the scaffolding for an Azure Function module. You can create such a project using Visual Studio Code, or at the command line using the `dotnet` command.
 1. Implement the business logic for the function in C#.
 1. Build the project to generate a Docker image that contains the function and required Azure Functions runtime.
 1. Upload the Docker image to a container registry.
@@ -24,42 +24,13 @@ You can use multiple languages to create a function for Azure Functions. The fol
 
 The following snippet shows `modules` section with the new `filterfunction` module in the updated deployment manifest:
 
-```json
-"modules": {
-    "SimulatedTemperatureSensor": {
-    "version": "1.0",
-    "type": "docker",
-    "status": "running",
-    "restartPolicy": "always",
-    "settings": {
-        "image": "mcr.microsoft.com/azureiotedge-simulated-temperature-sensor:1.0",
-        "createOptions": "{}"
-    }
-    },
-    "filterfunction": {
-        "settings": {
-            "image": "<Your Azure Container Registry>/filterfunction:0.0.2-amd64",
-            "createOptions": ""
-        },
-        "type": "docker",
-        "status": "running",
-        "restartPolicy": "always",
-        "version": "1.0"
-    }
-}
-```
+:::code language="json" source="~/../iot-central-docs-samples/iotedge/EnvironmentalSensorManifestFilter-1-4.json" range="38-59":::
 
 Depending on the container registry you use and its configuration, your deployment manifest may need to include credentials to access the registry.
 
 The following snippet shows how the telemetry is routed between the modules in the updated deployment manifest:
 
-```json
-"routes": {
-    "telemetryToIoTCentral": "FROM /messages/modules/SimulatedTemperatureSensor/* INTO $upstream",
-    "FilterFunctionToIoTCentral": "FROM /messages/modules/filterfunction/outputs/* INTO $upstream",
-    "sensorToFilterFunction": "FROM /messages/modules/SimulatedTemperatureSensor/outputs/temperatureOutput INTO BrokeredEndpoint(\"/modules/filterfunction/inputs/input1\")"
-},
-```
+:::code language="json" source="~/../iot-central-docs-samples/iotedge/EnvironmentalSensorManifestFilter-1-4.json" range="65-68":::
 
 ## Update the deployment manifest in IoT Central
 

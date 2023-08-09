@@ -14,59 +14,59 @@ durationInMinutes: 3
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Which of the following tools is an Azure-native declarative infrastructure-as-code tool for provisioning your cloud infrastructure?"
+  - content: "Which of the following tools is an Azure-native declarative IaC tool for provisioning a cloud infrastructure?"
     choices:
     - content: "The Azure CLI"
       isCorrect: false
-      explanation: "The Azure CLI isn't a declarative infrastructure-as-code tool."
+      explanation: "The Azure CLI isn't a declarative IaC tool."
     - content: "Azure PowerShell"
       isCorrect: false
-      explanation: "Azure PowerShell isn't a declarative infrastructure-as-code tool."
+      explanation: "Azure PowerShell isn't a declarative IaC tool."
     - content: "Bicep"
       isCorrect: true
-      explanation: "Bicep is an Azure-native declarative infrastructure-as-code tool for provisioning your cloud infrastructure."
+      explanation: "Bicep is an Azure-native declarative IaC tool for provisioning your cloud infrastructure."
     - content: "Terraform"
       isCorrect: false
-      explanation: "Terraform isn't an Azure-native infrastructure-as-code tool."
-  - content: "Which of the following tools is an Azure-native imperative infrastructure-as-code tool for provisioning your cloud infrastructure that returns JSON output by default?"
+      explanation: "Terraform isn't an Azure-native IaC tool."
+  - content: "Which of the following tools is an Azure-native imperative IaC tool for provisioning a cloud infrastructure that returns JSON output by default?"
     choices:
     - content: "The Azure CLI"
       isCorrect: true
-      explanation: "The Azure CLI is an Azure-native imperative infrastructure-as-code tool that returns JSON output by default."
+      explanation: "The Azure CLI is an Azure-native imperative IaC tool that returns JSON output by default."
     - content: "Azure PowerShell"
       isCorrect: false
       explanation: "Azure PowerShell doesn't return JSON output by default."
     - content: "Bicep"
       isCorrect: false
-      explanation: "Bicep isn't an imperative infrastructure-as-code tool."
+      explanation: "Bicep isn't an imperative IaC tool."
     - content: "Terraform"
       isCorrect: false
-      explanation: "Terraform isn't an imperative or Azure-native infrastructure-as-code tool."
-  - content: "Which of the following tools is a declarative infrastructure-as-code tool for provisioning your cloud infrastructure in a mixed-cloud environment?"
+      explanation: "Terraform isn't an imperative or Azure-native IaC tool."
+  - content: "Which of the following tools is a declarative IaC tool for provisioning your cloud infrastructure in a mixed-cloud environment?"
     choices:
     - content: "The Azure CLI"
       isCorrect: false
-      explanation: "The Azure CLI isn't a declarative infrastructure-as-code tool and can't be used to provision infrastructure in non-Azure clouds."
+      explanation: "The Azure CLI isn't a declarative IaC tool and can't be used to provision infrastructure in non-Azure clouds."
     - content: "Azure PowerShell"
       isCorrect: false
-      explanation: "Azure PowerShell isn't a declarative infrastructure-as-code tool and can't be used to provision infrastructure in non-Azure clouds."
+      explanation: "Azure PowerShell isn't a declarative IaC tool and can't be used to provision infrastructure in non-Azure clouds."
     - content: "Bicep"
       isCorrect: false
       explanation: "Bicep can't be used to provision infrastructure in non-Azure clouds."
     - content: "Terraform"
       isCorrect: true
-      explanation: "Terraform is a declarative infrastructure-as-code tool for provisioning resources in a mixed-cloud environment."
-  - content: "Which of the following tools is an Azure-native imperative infrastructure-as-code tool for provisioning your cloud infrastructure that returns .NET objects by default?"
+      explanation: "Terraform is a declarative IaC tool for provisioning resources in a mixed-cloud environment."
+  - content: "Which of the following tools is an Azure-native imperative IaC tool for provisioning a cloud infrastructure that returns .NET objects by default?"
     choices:
     - content: "The Azure CLI"
       isCorrect: false
       explanation: "The Azure CLI doesn't return .NET objects."
     - content: "Azure PowerShell"
       isCorrect: true
-      explanation: "Azure PowerShell is an Azure-native imperative infrastructure-as-code tool that returns .NET objects by default."
+      explanation: "Azure PowerShell is an Azure-native imperative IaC tool that returns .NET objects by default."
     - content: "Bicep"
       isCorrect: false
-      explanation: "Bicep isn't an imperative infrastructure-as-code tool."
+      explanation: "Bicep isn't an imperative IaC tool."
     - content: "Terraform"
       isCorrect: false
-      explanation: "Terraform isn't an Azure-native imperative infrastructure-as-code tool."
+      explanation: "Terraform isn't an Azure-native imperative IaC tool."

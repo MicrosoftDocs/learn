@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Explore migration options for SAP on Azure
 summary: This module explores strategies for migration of SAP workloads to Azure, including migration of on-premises SAP workloads to Azure in conjunction to performing an upgrade.
 abstract: |

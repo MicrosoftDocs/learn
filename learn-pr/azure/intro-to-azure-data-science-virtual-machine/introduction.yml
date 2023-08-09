@@ -2,10 +2,11 @@
 uid: learn.azure.intro-to-data-science-virtual-machine.introduction
 metadata:
   title: Introduction to the Data Science Virtual Machine
-  description: You'll learn about the features of the Data Science Virtual Machine and the options available for creating them. 
-  ms.date: 08/28/2020
+  description: Learn about the features of the Data Science Virtual Machine and the options available for creating them. 
+  ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.prod: learning-azure

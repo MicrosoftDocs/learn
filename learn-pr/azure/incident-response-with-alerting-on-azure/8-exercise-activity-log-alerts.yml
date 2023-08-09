@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.incident-response-with-alerting-on-azure.7-exercise-activity-log-alerts
+metadata:
+  title: Exercise - Use an activity log alert and an action group to notify users about events in your Azure infrastructure
+  description: In this exercise, you'll create an activity log alert and set up an action group that will send you an email.
+  ms.date: 10/10/2019
+  author: cwatson-cat
+  ms.author: cwatson
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Exercise -Use an activity log alert and an action group to notify users about events in your Azure infrastructure
+durationInMinutes: 10
+interactive: bash
+azureSandbox: true
+content: |
+  [!include[](includes/8-exercise-activity-log-alerts.md)]

@@ -1,0 +1,19 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-data-warehouse.query-transform-data
+title: Query and transform data
+metadata:
+  title: Query and transform data
+  description: "Query and transform data"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-power-bi
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-query-transform-data.md)]

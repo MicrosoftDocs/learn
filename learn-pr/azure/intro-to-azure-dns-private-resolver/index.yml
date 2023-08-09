@@ -8,7 +8,7 @@ metadata:
   author: greg-lindsay
   ms.author: greglin  
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure       
+  ms.service: dns
 title: Intro to Azure DNS Private Resolver
 summary: "This module introduces you to Azure DNS Private Resolver and describes its characteristics, capabilities, and use cases."
 abstract: |

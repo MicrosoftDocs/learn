@@ -1,13 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.save-money-with-azure-reserved-instances.buy-reservation
 metadata:
-  title: Make a reservation purchase
-  description: Make a purchase
-  ms.date: 11/01/2021
+  title: Make a purchase
+  description: Learn how reservations are scoped, how to make a purchase, and who gets notifications for purchases.
+  ms.date: 06/07/2023
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Make a purchase
 durationInMinutes: 5
 content: |

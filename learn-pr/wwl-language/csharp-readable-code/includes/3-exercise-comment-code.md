@@ -1,4 +1,5 @@
 
+
 In this exercise, you'll add notes to your code and temporarily disable certain lines of code from compilation. Then you'll look at how the C# compiler understands whitespace and how to use whitespace to increase the readability of your code.
 
 ## What is a code comment?

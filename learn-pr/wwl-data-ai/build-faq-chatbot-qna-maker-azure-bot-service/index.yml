@@ -3,11 +3,11 @@ uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
   title: Build a bot with the Language Service and Azure Bot Service
   description: "Build a bot with the Language Service and Azure Bot Service"
-  ms.date: 04/18/2023
+  ms.date: 04/29/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: bot-service
 title: Build a bot with the Language Service and Azure Bot Service
 summary: Bots are a popular way to provide support through multiple communication channels. This module describes how to use a knowledge base and Azure Bot Service to create a bot that answers user questions.
 abstract: |
@@ -25,7 +25,7 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 subjects:
 - chatbot
 units:

@@ -4,12 +4,11 @@ metadata:
   title: Fundamentals of Azure RTOS NetX Duo
   description: Fundamental concepts of Azure RTOS Duo
   ms.date: 07/27/2022
-  author: edlamie80
-  ms.author: liydu
-  ms.reviewer: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Fundamentals of Azure RTOS NetX Duo
 summary: Learn the fundamentals of Azure RTOS NetX Duo.
 abstract: |

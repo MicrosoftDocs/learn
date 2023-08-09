@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-network
 title: Introduction to Azure Virtual Networks
 summary: You'll learn how to design and implement core Azure Networking infrastructure such as virtual networks, public and private IPs, DNS, virtual network peering, routing, and Azure Virtual NAT.
 abstract: |

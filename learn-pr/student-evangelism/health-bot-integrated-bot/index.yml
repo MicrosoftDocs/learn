@@ -7,8 +7,8 @@ metadata:
   author: Meghana-ch
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Integrate Azure Health Bot with a database
 summary: Learn how to integrate an advanced bot with a database.
 abstract: |

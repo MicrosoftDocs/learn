@@ -4,13 +4,11 @@ title: Determine Blob Storage pricing
 metadata:
   title: Determine Blob Storage pricing
   description: "Determine Blob Storage pricing"
-  ms.date: 03/27/2023
+  ms.date: 05/09/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 1
 content: |
   [!include[](includes/8-determine-storage-pricing.md)]

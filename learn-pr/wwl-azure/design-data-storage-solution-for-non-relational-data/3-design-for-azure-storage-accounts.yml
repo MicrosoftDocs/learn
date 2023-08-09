@@ -4,13 +4,11 @@ title: Design for Azure storage accounts
 metadata:
   title: Design for Azure storage accounts
   description: "Design for Azure storage accounts"
-  ms.date: 03/13/2023
+  ms.date: 07/21/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 4
 content: |
   [!include[](includes/3-design-for-azure-storage-accounts.md)]

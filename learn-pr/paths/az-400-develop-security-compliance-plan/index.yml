@@ -8,7 +8,7 @@ metadata:
   author: chcomley
   ms.author: chcomley
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: "Develop a security and compliance plan"
 summary: |
   Build strategies around security and compliance that enable you to authenticate and authorize your users, handle sensitive information, and enforce proper governance.
@@ -38,7 +38,6 @@ modules:
 - learn.authenticate-apps-with-managed-identities
 - learn.azure-security.configure-and-manage-azure-key-vault
 - learn.control-authentication-with-apim
-- learn.azure.protect-against-security-threats-azure
 - learn.monitor-report-aad-security-events
 - learn.github.maintain-secure-repository-github
 - learn.azure.build-cloud-governance-strategy-azure

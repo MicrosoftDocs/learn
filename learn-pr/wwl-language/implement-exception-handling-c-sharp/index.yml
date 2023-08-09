@@ -3,7 +3,7 @@ uid: learn.wwl.implement-exception-handling-c-sharp
 metadata:
   title: Implement exception handling in C# console applications
   description: "This module explores the use of exceptions and the exception handling process in C# console applications. Hands-on activities provide experience implementing exception handling patterns for various coding scenarios."
-  ms.date: 03/24/2023
+  ms.date: 05/04/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -24,9 +24,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- dotnet-framework
 - vs-code
 subjects:
 - development-tools

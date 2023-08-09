@@ -6,6 +6,7 @@ metadata:
   description: In this exercise, you use list properties to build a deck of cards.
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.date: 07/28/2021
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet

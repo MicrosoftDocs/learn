@@ -1,4 +1,4 @@
-In this module, you learned how Microsoft Sentinel provides a way to address the Contoso IT director's concerns:
+In this module, you learned how Microsoft Sentinel provides a way to address the concerns of your organizations IT director:
 
 - Alerts come from multiple products.
 - Too many alerts are triaged across dashboards.

@@ -1,0 +1,3 @@
+
+
+Microsoft Fabric offers three key features to help you manage your data science workloads: notebooks, experiments, and models. To train machine learning models that use patterns in large datasets to generate predictions, you can use notebooks. To keep a clear overview of your work and easily compare the models you've trained, you can use experiments. When you've trained a model that you want to use to generate predictions, you can save the model in the workspace.

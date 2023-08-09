@@ -21,17 +21,16 @@ It's common to construct an API with many resources. Each resource can have seve
    cd node-essentials/nodejs-http/exercise-express-routing/reading-writing
    ```
 
-   The outline of the directory should look like this:
+   The *reading-writing* directory should contain these files:
 
-   ```bash
-   -| app.js
-   -| client-get.js
-   -| client-post.js
-   -| client-put.js
-   -| client-delete.js
-   -| client-delete-route.js
-   -| package.json
-   ```
+   - app.js
+   - client-get.js
+   - client-post.js
+   - client-put.js
+   - client-delete.js
+   - client-delete-route.js
+   - package.json
+   - package-lock.json
 
 1. The *package.json* file contains an `express` dependency. In the terminal, run the following command to install it:
 
@@ -41,43 +40,47 @@ It's common to construct an API with many resources. Each resource can have seve
 
    `npm` reads from the `dependencies` section in *package.json*.
 
+   > [!NOTE]
+   > If you see a warning about an old version of `npm`, follow the instructions to fix the issue before you move to the next step.
+
 1. Open *app.js* to inspect it. The file should look like this:
 
    ```javascript
-   const express = require('express')
-   const app = express()
-   const port = 3000
-
-   let bodyParser = require('body-parser');
-   app.use(bodyParser.json());
-
-   let products = [];
-
-   app.post('/products', function(req, res) {
-     // implement
-   });
-
-   app.put('/products', function(req, res) {
-     // implement
-   });
-
-   app.delete('/products/:id', function(req, res) {
-     // implement
-   });
-
-   app.get('/products', (req, res) => {
-     // implement
-   })
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
+    const express = require('express')
+    const app = express()
+    const port = 3000
+    
+    let bodyParser = require('body-parser');
+    app.use(bodyParser.json());
+    
+    let products = [];
+    
+    app.post('/products', function (req, res) {
+      // implement
+    });
+    
+    app.put('/products', function (req, res) {
+      // implement
+    });
+    
+    app.delete('/products/:id', function (req, res) {
+      // implement
+    });
+    
+    app.get('/products', (req, res) => {
+      // implement
+    })
+    
+    app.listen(port, () => console.log(`Example app listening on port ${port}!`))
    ```
 
    The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
 
 ## Implement routes
 
-To implement routes, add a little code and then test it. Do this method by method until you have a fully functional API.
+To implement routes, add a little code and then test it. Continue method by method until you have a fully functional API. Make your changes in the *app.js* file in the *reading-writing* directory.
 
-1. Support reading from the API. Locate the part of the code that looks like this:
+1. To support reading from the API, locate the part of the code that looks like this:
 
    ```javascript
    app.get('/products', (req, res) => {
@@ -119,8 +122,8 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement writing, locate this code:
 
    ```javascript
-   app.post('/products', function(req, res) {
-     // implement
+   app.post('/products', function (req, res) {
+      // implement
    });
    ```
 
@@ -175,7 +178,9 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement the ability to update your data, locate the code that looks like this:
 
    ```javascript
-   app.put('/products', function(req, res) {});
+   app.put('/products', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -239,7 +244,9 @@ The API responds with an empty array because you haven't written any data to it 
 1. To implement deleting, locate the code that looks like this:
 
    ```javascript
-   app.delete('/products/:id', function(req, res) {});
+   app.delete('/products/:id', function (req, res) {
+     // implement
+   });
    ```
 
    Replace it with this code:
@@ -275,8 +282,8 @@ The API responds with an empty array because you haven't written any data to it 
    You should see the following output:
 
    ```output
-   Received data {"name":"product","id":1}
-   Connection closed
+   response {"name":"product","id":1}
+   Closed connection
    ```
   
 1. To check the code, run this command:

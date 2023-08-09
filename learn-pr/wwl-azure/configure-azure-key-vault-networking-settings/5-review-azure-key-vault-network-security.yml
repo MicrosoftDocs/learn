@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-azure-key-vault-networking-settings.review-azure-key-vault-network-security
+title: Configure Azure Key Vault firewalls and virtual networks
+metadata:
+  title: Configure Azure Key Vault firewalls and virtual networks
+  description: "Configure Azure Key Vault firewalls and virtual networks"
+  ms.date: 08/02/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-review-azure-key-vault-network-security.md)]

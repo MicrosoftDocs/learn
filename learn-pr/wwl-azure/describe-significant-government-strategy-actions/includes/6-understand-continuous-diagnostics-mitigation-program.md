@@ -8,7 +8,7 @@
 
         With a strategy put forth centrally, and numerous agencies poised to benefit from the agility, efficiency, and innovation that cloud computing provides, the government then turned its attention toward diagnosing and mitigating risks to government networks and systems.
         
-        While the risk management framework (RMF) provides a pro-active strategy and approach to managing risk, there are numerous unforeseen events that could potentially occur that could slow digital transformation and potentially compromise national security.
+        While the risk management framework (RMF) provides a pro-active strategy and approach to managing risk, there are numerous unforeseen events that could potentially occur that could slow digital transformation and potentially compromise America's security.
 
         As a result, in 2012 the [Continuous Diagnostics and Mitigation (CDM) program](https://www.cisa.gov/cdm) was created to support government-wide and agency-specific efforts to provide risk-based, consistent, and cost-effective cybersecurity solutions to protect federal civilian networks across all organizational tiers. 
 

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: computer-vision
 title: Read text with the Computer Vision service
 summary: Optical character recognition (OCR) enables artificial intelligence (AI) systems to read text in images, enabling applications to extract information from photographs, scanned documents, and other sources of digitized text.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - natural-language-processing
 units:

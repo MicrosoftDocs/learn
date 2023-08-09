@@ -4,10 +4,9 @@ metadata:
   title: Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools
   description: Learn how to investigate and diagnose problems in your Azure virtual networks by using Network Watcher and other tools.
   ms.date: 04/19/2022
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Monitor and troubleshoot your end-to-end Azure network infrastructure by using network monitoring tools
 summary: Use Network Watcher tools, diagnostics, and logs to help find and fix networking issues in your Azure infrastructure.
 abstract: | 

@@ -4,10 +4,11 @@ title: Interpret the help file contents and update the local help content in Pow
 metadata:
   title: Interpret the help file contents and update the local help content in PowerShell
   description: "Interpret the help file contents and update the local help content in PowerShell"
-  ms.date: 10/18/2022
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-azure
 azureSandbox: false
 labModal: false

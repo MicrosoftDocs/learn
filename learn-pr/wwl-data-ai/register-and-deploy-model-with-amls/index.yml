@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Deploy real-time machine learning services with Azure Machine Learning
 summary: Learn how to register and deploy ML models with the Azure Machine Learning service.
 abstract: |

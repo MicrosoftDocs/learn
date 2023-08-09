@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.language-models
+title: Large language models
+metadata:
+  title: Large language models
+  description: "Learn what the GPT language model is in the context of other large language models and the evolution of generative AI capabilities."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-language-models.md)]

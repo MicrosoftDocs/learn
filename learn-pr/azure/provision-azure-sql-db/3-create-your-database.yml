@@ -10,7 +10,7 @@ metadata:
   manager: jroth
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: true
+azureSandbox: false
 durationInMinutes: 20
 content: |
   [!include[](includes/3-create-your-database.md)]

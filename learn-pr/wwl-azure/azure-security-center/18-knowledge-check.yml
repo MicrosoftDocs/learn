@@ -4,12 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/19/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/18-knowledge-check.md)]
@@ -38,6 +36,17 @@ quiz:
     - content: "Create Desired Configuration State scripts"
       isCorrect: false
       explanation: "Desired state scripts aren't the easiest way to accomplish this task."
+  - content: "The Microsoft Defender for Cloud dashboard presents a Secure Score. What is the description of secure score?"
+    choices:
+    - content: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources."
+      isCorrect: true
+      explanation: "The Secure Score is a calculation based on the ratio of healthy resources vs. total resources. Microsoft Defender for Cloud reviews your security recommendations across all workloads, uses algorithms to determine how critical each recommendation is, and calculates a Secure Score which is displayed on the Overview page."
+    - content: "The Secure Score is a count of recommendations made against your monitored resources."
+      isCorrect: false
+      explanation: "There is way more to secure score than just a count of recommendations."
+    - content: "The Secure Score is a machine-learning based prediction of how likely your resources are to be infiltrated by a hacker."
+      isCorrect: false
+      explanation: "Secure Score is not a track of how likely a success hacker attack will be."
   - content: "An organization is working with an outside agency that needs to access a virtual machine. There's a real concern about brute-force login attacks targeted at virtual machine management ports. Which of the following components would open the management ports for a defined time range? Select one."
     choices:
     - content: "Azure Firewall"

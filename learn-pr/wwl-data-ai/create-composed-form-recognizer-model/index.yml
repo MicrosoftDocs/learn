@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: applied-ai-services
+  ms.subservice: forms-recognizer 
 title: Create a composed Form Recognizer model
 summary: Learn how to assemble custom models into composed solutions that can analyze different types of your own documents.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 - ai-engineer
 products:
 - azure-cognitive-search
-- azure-form-recognizer
+- document-intelligence
 subjects:
 - artificial-intelligence
 units:

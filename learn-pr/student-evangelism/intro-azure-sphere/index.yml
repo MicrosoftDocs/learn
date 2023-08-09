@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: azure-sphere
 title: "Introduction to Azure Sphere"
 summary: "Determine the types of business problems that can be solved using Azure Sphere. Explain the capabilities and the components (microcontroller unit, operating system, cloud-based security service) for the Azure Sphere. Describe how the components provide a secure platform to develop, deploy, and maintain secure internet connected IoT solutions."
 abstract: |

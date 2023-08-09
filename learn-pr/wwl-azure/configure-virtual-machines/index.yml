@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure virtual machines
 summary: Learn how to configure virtual machines including sizing, storage, and connections.
 abstract: |

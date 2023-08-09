@@ -15,36 +15,36 @@ content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   questions:
-  - content: "You are using scikit-learn to train a regression model from a dataset of sales data. You want to be able to evaluate the model to ensure it will predict accurately with new data. What should you do?"
+  - content: "You are using scikit-learn to train a regression model from a dataset of sales data. You want to be able to evaluate the model to ensure it predicts accurately with new data. What should you do?"
     choices:
     - content: "Use all of the data to train the model. Then use all of the data to evaluate it"
       isCorrect: false
-      explanation: "That is incorrect. Training and evaluating the model using the same data will not tell you if the model generalizes well."
+      explanation: "That's incorrect. Training and evaluating the model using the same data won't tell you if the model generalizes well."
     - content: "Train the model using only the feature columns, and then evaluate it using only the label column"
       isCorrect: false
-      explanation: "That is incorrect. You need both features and labels to train and evaluate a regression model."
+      explanation: "That's incorrect. You need both features and labels to train and evaluate a regression model."
     - content: "Split the data randomly into two subsets. Use one subset to train the model, and the other to evaluate it"
       isCorrect: true
-      explanation: "That is correct. A common way to train and evaluate models is to hold-back an evaluation dataset when training."
+      explanation: "That's correct. A common way to train and evaluate models is to hold back an evaluation dataset when training."
   - content: "You have created a model object using the scikit-learn LinearRegression class. What should you do to train the model?"
     choices:
     - content: "Call the predict() method of the model object, specifying the training feature and label arrays"
       isCorrect: false
-      explanation: "That is incorrect. To train a model, use the fit() method."
+      explanation: "That's incorrect. To train a model, use the fit() method."
     - content: "Call the fit() method of the model object, specifying the training feature and label arrays"
       isCorrect: true
-      explanation: "That is correct. To train a model, use the fit() method."
+      explanation: "That's correct. To train a model, use the fit() method."
     - content: "Call the score() method of the model object, specifying the training feature and test feature arrays"
       isCorrect: false
-      explanation: "That is incorrect. To train a model, use the fit() method."
+      explanation: "That's incorrect. To train a model, use the fit() method."
   - content: "You train a regression model using scikit-learn. When you evaluate it with test data, you determine that the model achieves an R-squared metric of 0.95. What does this metric tell you about the model?"
     choices:
     - content: "The model explains most of the variance between predicted and actual values."
       isCorrect: true
-      explanation: "That is correct. The R-squared metric is a measure of how much of the variance can be explained by the model."
+      explanation: "That's correct. The R-squared metric is a measure of how much of the variance the model can explain."
     - content: "The model is 95% accurate"
       isCorrect: false
-      explanation: "That is incorrect. The R-squared metric is a measure of how much of the variance can be explained by the model."
+      explanation: "That's incorrect. The R-squared metric is a measure of how much of the variance the model can explain."
     - content: "On average, predictions are 0.95 higher than actual values"
       isCorrect: false
-      explanation: "That is incorrect. The R-squared metric is a measure of how much of the variance can be explained by the model."
+      explanation: "That's incorrect. The R-squared metric is a measure of how much of the variance can be explained by the model."

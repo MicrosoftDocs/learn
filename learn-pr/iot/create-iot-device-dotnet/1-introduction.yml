@@ -8,7 +8,10 @@ metadata:
   ms.date: 9/13/2021
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-dotnet
 durationInMinutes: 5
 content: |

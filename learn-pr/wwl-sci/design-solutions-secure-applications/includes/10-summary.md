@@ -10,8 +10,9 @@ You've learned how to:
 
 ## Learn more with security documentation
 
-- [Application lifecycle management in Azure Container Apps](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management)
 - [DevSecOps controls - Cloud Adoption Framework](https://learn.microsoft.com/azure/cloud-adoption-framework/secure/devsecops-controls)
+- [Overview - Microsoft Defender for Cloud Apps | Microsoft Learn](https://learn.microsoft.com/defender-cloud-apps/what-is-defender-for-cloud-apps)
+- [Application lifecycle management in Azure Container Apps](https://learn.microsoft.com/azure/container-apps/application-lifecycle-management)
 - [Workload identities - Microsoft Entra](https://learn.microsoft.com/azure/active-directory/workload-identities/workload-identities-overview)
 - [Azure API Management - Overview and key concepts](https://learn.microsoft.com/azure/api-management/api-management-key-concepts)
 - [Azure security baseline for API Management](https://learn.microsoft.com/security/benchmark/azure/baselines/api-management-security-baseline)

@@ -1,49 +1,27 @@
 
+## Configure Device discovery
 
+When accessing your Microsoft 365 Defender portal settings for Endpoints for the first time, the first step is to configure Device discovery. You must be a global administrator or security administrator for the tenant.
 
+1. On the **Microsoft 365 Defender** portal, from the navigation menu, select **Settings** from the left.
 
+1. In the Settings menu page, select Device discovery.
 
+   > [!NOTE]
+   > If you do not see the **Device discovery** option under **Settings**, logout by selecting the top-right circle with your account initials and select **Sign out**. Other options that you might want to try is to refresh the page with Ctrl+F5 or open the page InPrivate. Login again with the **Tenant Email** credentials.
 
+1. In Discovery setup, make sure **Standard discovery (recommended)** is selected.
 
+   > [!TIP]
+   > If you do not see the option, refresh the page.
 
-
-## Initialize the Microsoft Defender for Endpoint environment
-
-
-When accessing your Microsoft 365 Defender portal settings for Endpoints for the first time, you'll be able to configure many attributes. You must be a global administrator or security administrator for the tenant. On the Set-up preferences page, you can set the:
-
-**Data storage location** - Determine where you want to be primarily hosted: US, EU, or UK. You can't change the location after this set up and Microsoft won't transfer the data from the specified geolocation.
-
-**Data retention** - The default is six months.
-
-**Enable preview features** - The default is on, can be changed later.
-
-To access the Microsoft 365 Defender portal settings for Endpoints do the following action:
-
-1. Go to ([https://security.microsoft.com](https://security.microsoft.com/?azure-portal=true))
-2. Select **Settings**.
-3. Select **Endpoints**.
-
-
-## Network configuration
-
-If the organization doesn't require the endpoints to use a Proxy to access the Internet, the following configuration isn't required.
-
-The Microsoft Defender for Endpoint sensor requires Microsoft Windows HTTP (WinHTTP) to report sensor data and communicate with the Microsoft Defender for Endpoint service. The embedded Microsoft Defender for Endpoint sensor runs in the system context using the LocalSystem account. The sensor uses Microsoft Windows HTTP Services (WinHTTP) to enable communication with the Microsoft Defender for Endpoint cloud service. The WinHTTP configuration setting is independent of the Windows Internet (WinINet) internet browsing proxy settings and can only discover a proxy server by using the following discovery methods:
-
-Autodiscovery methods:
-
-- Transparent proxy
-
-- Web Proxy Autodiscovery Protocol (WPAD)
-
-If a Transparent proxy or WPAD has been implemented in the network topology, there's no need for special configuration settings.
+:::image type="content" source="../media/settings-device-discovery.png" alt-text="Screenshot of the Settings Device discovery options.":::
 
 
 ## Onboard devices
 
 
-You'll need to go to the onboarding section of the Microsoft 365 Defender portal to onboard any of the supported devices.  Depending on the device, you'll be guided with appropriate steps and provided management and deployment tool options suitable for the device.
+You need to go to the onboarding section of the Microsoft 365 Defender portal to onboard any of the supported devices.  Depending on the device, you are guided with appropriate steps and provided management and deployment tool options suitable for the device.
 
 In general, to onboard devices to the service:
 
@@ -55,7 +33,14 @@ In general, to onboard devices to the service:
 
 - Run a detection test to verify that the devices are properly onboarded and reporting to the service
 
->[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr?rel=0]
+<!--- >>[!VIDEO https://www.microsoft.com/videoplayer/embed/RE4bGqr?rel=0] -->
+
+## Interactive Lab Simulation
+
+> [!NOTE]
+> Select the thumbnail image to start the lab simulation. When you're done, be sure to return to this page so you can continue learning.
+
+[![Screenshot of the lab simulation page.](../media/lab-simulation-deploy-microsoft-defender-for-endpoint.png)](https://mslabs.cloudguides.com/guides/SC-200%20Lab%20Simulation%20-%20Deploy%20Microsoft%20Defender%20for%20Endpoint)
 
 In Settings, Endpoints, Device management, Onboarding select operating system dropdown to see the supported options.
 

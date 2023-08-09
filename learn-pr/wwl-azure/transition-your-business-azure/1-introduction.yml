@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.transition-your-business-azure.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 07/18/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]
+interactive: bash

@@ -4,36 +4,55 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/05/2023
+  ms.date: 07/18/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "As the Desktop Administrator for Contoso, Holly Dickson wants to use MDT to deploy a Windows 11 image. When creating the golden image, what best practice should Holly follow to ensure there are no rogue drivers injected into the image?"
+  - content: "As an IT administrator, you're considering using Windows Autopilot's \"Self-Deploying\" mode for deploying new devices in your organization. Which of the following is a benefit of this mode?"
     choices:
-    - content: "Create the golden image on a virtual machine"
+    - content: "It allows a device to be fully configured for company use, reducing the time IT must spend on deploying new devices."
       isCorrect: true
-      explanation: "Correct. When creating golden images, it is a best practice to do this on a virtual machine to ensure there are no rogue drivers injected into your image. At this stage, no drivers should be as part of the deployment consideration unless the virtual machine is unable to establish a network connection."
-    - content: "Create the task sequences by using a wizard"
+      explanation: "Correct. The \"Self-Deploying\" mode in Windows Autopilot enables a device to be fully configured for company use, reducing the time IT must spend on deploying new devices."
+    - content: "It requires manual entry of user credentials during device setup."
       isCorrect: false
-      explanation: "Incorrect. This item isn't the best practice that Holly should follow when creating the golden image. Try again."
-    - content: "Create the task sequences by building it from scratch"
+      explanation: "Incorrect. In \"Self-Deploying\" mode, devices are configured automatically and do not require user credentials during setup. Try again."
+    - content: "It requires IT personnel to manually register each device."
       isCorrect: false
-      explanation: "Incorrect. This item isn't the best practice that Holly should follow when creating the golden image. Try again."
-  - content: "What's the primary role of the Microsoft Desktop Toolkit?"
+      explanation: "Incorrect. The \"Self-Deploying\" mode doesn't require IT personnel to manually register each device. Try again."
+    - content: "It increases the need for physical IT support during deployment."
+      isCorrect: false
+      explanation: "Incorrect. The \"Self-Deploying\" mode reduces the need for physical IT support during deployment. Try again."
+  - content: "You're preparing for an Autopilot deployment in your organization and need to gather device hardware IDs. Which method can you use to obtain these IDs?"
     choices:
-    - content: "Manage your Windows upgrades"
+    - content: "Using a third-party software inventory tool."
       isCorrect: false
-      explanation: "Incorrect. To manage your Windows upgrades and begin the journey to Windows as a Service (WaaS), you should look for tools that exist in the modern managed toolset, such as Microsoft Endpoint Manager or Windows Update for Business (WuFB). Try again."
-    - content: "Build and rebuild your devices with a specific set of configurations"
+      explanation: "Incorrect. While third-party tools might be able to provide this information, they are not the recommended method for gathering device hardware IDs for Autopilot deployment. Try again."
+    - content: "Manually checking each device's system information."
+      isCorrect: false
+      explanation: "Incorrect. Manually checking each device's system information is not a scalable or efficient method for gathering device hardware IDs for Autopilot deployment. Try again."
+    - content: "Using the Windows Autopilot hardware ID script."
       isCorrect: true
-      explanation: "Correct. The role of MDT is not to manage your Windows upgrades. Its primary focus is building and rebuilding your devices with a specific set of configurations."
-    - content: "Deploy Windows 11 or later in bare-metal deployments"
+      explanation: "Correct. You can use the Windows Autopilot hardware ID script (Get-WindowsAutoPilotInfo.ps1) to gather device hardware IDs for Autopilot deployment."
+    - content: "Requesting the information from the device manufacturer."
       isCorrect: false
-      explanation: "Incorrect. While MTD is the more appropriate tool to use in this scenario, it's not the primary role of the MDT. Try again,"
+      explanation: "Incorrect. While some manufacturers can provide this information for new devices, it's not a reliable method for all devices, especially existing ones in your organization. Try again."
+  - content: "You're troubleshooting a failed Windows Autopilot deployment. Which of the following steps would be most helpful in identifying the root cause of the failure?"
+    choices:
+    - content: "Reboot the device and attempt the deployment again."
+      isCorrect: false
+      explanation: "Incorrect. While rebooting the device may solve some issues, it's not the most helpful step in identifying the root cause of a deployment failure. Try again."
+    - content: "Check the Event Viewer for errors related to device enrollment."
+      isCorrect: true
+      explanation: "Correct. The Event Viewer can provide detailed error messages related to device enrollment, which can be crucial in identifying the root cause of a deployment failure."
+    - content: "Reinstall the operating system on the device."
+      isCorrect: false
+      explanation: "Incorrect. While this may ultimately be necessary in some cases, it's a drastic step and won't help identify the root cause of the deployment failure. Try again."
+    - content: "Physically inspect the device for hardware issues."
+      isCorrect: false
+      explanation: "Incorrect. Hardware issues are unlikely to be the root cause of a Windows Autopilot deployment failure. Try again."
