@@ -13,4 +13,3 @@ You should now be able to:
  -  Describe the hierarchy of resource groups, subscriptions, and management groups.
 
 ## 
- 

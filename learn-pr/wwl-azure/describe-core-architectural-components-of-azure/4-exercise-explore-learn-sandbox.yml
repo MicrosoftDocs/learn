@@ -4,7 +4,7 @@ title: Exercise - Explore the Learn sandbox
 metadata:
   title: Exercise - Explore the Learn sandbox
   description: "Exercise - Explore the Learn sandbox"
-  ms.date: 08/08/2023
+  ms.date: 08/09/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -12,4 +12,4 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-explore-learn-sandbox.md)]
-interactive: bash
+interactive: powershell
