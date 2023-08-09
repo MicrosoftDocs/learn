@@ -43,7 +43,6 @@ units:
 - learn.azure.azure-devops-devtest-labs.use-azure-devops
 - learn.azure.azure-devops-devtest-labs.use-github
 - learn.azure.azure-devops-devtest-labs.use-azure-devtest-labs
-- learn.azure.azure-devops-devtest-labs.knowledge-check
 - learn.azure.azure-devops-devtest-labs.summary
 
 badge:
