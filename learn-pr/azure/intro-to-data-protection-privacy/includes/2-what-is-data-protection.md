@@ -1,46 +1,57 @@
-Data is everywhere. It’s on your devices, your organization’s file servers, and in various cloud-storage services. Business and personal data often resides in many locations. Therefore, data leakage, misuse, and loss could be more probable than ever before. At the same time, data is often extremely valuable. Unauthorized disclosure (or access), processing, or use of personal or business data can cause considerable losses for individuals and companies.
+Business and personal data is valuable. Unauthorized disclosure or access, processing, or use of personal or business data can cause large losses for individuals and companies.
 
-This is why data protection is important for companies and individuals. People should understand the need for data protection and learn necessary skills to help protect their data. The importance of data protection may also increase as the amount or sensitivity of data that's created and stored grows.
+An ever-increasing amount of data resides in many locations, such as devices, an organization's file servers, and cloud storage services. Data can also be accessed from various locations, by using many different devices. The risk of data leakage, misuse, and loss is greater than ever before.
 
-Another important consideration is that data is being accessed from everywhere. Individuals and organizations store ever-increasing amounts of data in the cloud and access it from various locations, using many different devices. These devices and locations also play a key role in Contoso’s data-protection strategy.
+It's important for companies and individuals to understand the need for data protection and learn necessary skills to help protect their data. The importance of data protection increases with the amount and sensitivity of data created and stored.
 
-*Data protection* consists of processes, procedures, and technologies that can help safeguard valuable information from corruption, compromise, or loss. It's important to recognize that no one single product or technology can guarantee data protection in every scenario. Rather, a combination of available procedures, technologies, and products may be necessary to help protect your data.
+## Data protection and data privacy
 
-To help implement data protection, you may want to consider:
+*Data protection* relates to helping protect data from unlawful or unauthorized access, use, destruction, damage, or loss. *Data privacy* focuses on the collection, use, and permissible handling of personal data, and what rights an individual has to control the data that's been collected about them.
 
-- The sensitivity of the type of data that you want to help protect. Not all data may need the same level of protection or benefit from the same data protection approach. For example, personal data such as email addresses might not require the same protection as sensitive personal data, such as social security numbers and health information.
+Data protection generally pertains to technical control over data. Data privacy typically refers to legal or regulatory requirements. Data protection doesn't ensure data privacy or vice versa.
 
-- Where your data is stored. Appropriate data-protection technologies and methods often depend on how your data is stored. For example, you might not use the same approach to help protect data stored on your mobile device that you would for data stored on your company’s file server or in the cloud.
+## Data protection
 
-- Applicable data-protection requirements and regulations. Laws and regulations may define specific data-protection requirements. You should work with your legal representation to ensure you have a solid knowledge of these requirements and how they apply to Contoso.
+Data protection consists of processes, procedures, and technologies that can help safeguard valuable information from corruption, compromise, or loss. It's important to recognize that no single product or technology can guarantee data protection. Rather, a combination of available procedures, technologies, and products might be necessary to protect data.
 
-- Technologies that enable data protection. Again, there isn't a single technology that ensures complete data protection for every scenario. To help protect your data efficiently, you may want to become familiar with the available platforms, processes, and technologies appropriate for Contoso’s specific needs.
+To plan and implement data protection measures, consider the following factors:
 
-## Data protection vs. data privacy
+- **The sensitivity of the data type.** Not all data needs the same level of protection or benefits from the same data protection approach. For example, some personal data such as email addresses might not require the same protection as more sensitive data like social security numbers and health information.
 
-It’s also important to know the difference between data protection and data privacy. Data protection usually pertains to helping protect data from unlawful or unauthorized access, use, destruction, damage, or loss. Data privacy generally focuses on the collection, use and permissible handling of personal data and what rights an individual has to control the data that has been collected about them.
+- **Where the data is stored.** Appropriate data-protection technologies and methods might depend on where your data is stored. For example, you might use different data protection for data stored on your mobile device than for data stored on your company's file server or in the cloud.
 
-Data privacy typically addresses questions such as:
+- **Applicable data-protection requirements and regulations.** Laws and regulations may define specific data-protection requirements. Work with your legal team to ensure you have a solid knowledge of these requirements and how they apply to your business.
 
-- Who can collect data.
+- **Technologies that enable data protection.** No single technology ensures complete data protection in every scenario. Become familiar with all the available platforms, processes, and technologies that are appropriate for your specific needs.
 
-- Who can access data.
+No single approach or technology guarantees data protection. However, the following key principles are important in designing a data-protection strategy.
 
-- What an organization can do with the data they have collected.
+- Implement some level of data protection at data creation or collection that persists with the data throughout its lifecycle.
 
-- How long data may be retained by an organization.
+- Ensure that organization personnel understand data sharing, and are aware of what data they share, who they share it with, and how they share it. Controlling data access and sharing is a key part of data protection.
 
-- The level of control an individual has on their data.
+- In addition to protecting specific data, make sure to protect user identities, the devices on which users access data, and network traffic.
 
-> [!NOTE]
-> Data protection generally pertains to technical control over data. Data privacy typically refers to legal or regulatory requirements. Data protection doesn't ensure data privacy or vice versa.
+## Data privacy
 
-## Key principles for data protection
+Data privacy typically addresses concerns such as:
 
-There isn't a single approach or technology that guarantees data protection. However, there are common key principles that may be important in the design of a data-protection strategy, including:
+- Which entities can collect data.
+- Which entities can access data.
+- What organizations can do with the data they've collected.
+- How long organizations can retain data.
+- What level of control individuals have over their data.
 
-- Some level of data protection should be implemented when data creation, or collection, occurs, and should persist with the data through its entire lifecycle. For example, you might want data to remain protected regardless of whether an employee shares it within, or outside, your organization.
+### Privacy laws and regulations
 
-- An organization's employees should have a good understanding of how data sharing might occur. This includes being aware of what data they're sharing, who they are sharing it with, and how they are sharing it. Helping control data access and sharing is a key part of data protection.
+Various laws define the rights of people and companies to control who uses their data, and set forth requirements for handling different types of data. Many countries/regions, and in some cases specific states, have laws or regulations that address privacy and the protection of personal data. The following units provide more detail about these privacy laws.
 
-- You can't achieve good data protection only by implementing technological measures on specific data that you want to help protect. You also must help protect user identities, the devices on which users are accessing data, and your network traffic.
+In general, privacy law and regulations set forth a legal framework about how organizations, and in some cases, individuals, can collect, use, and store personal data. In most cases, laws and regulations don't define or prescribe specific technologies that organizations must use to protect data privacy. Organizations must identify compliant technologies, operations, and other appropriate data privacy protection measures.
+
+### Define data privacy compliance
+
+Your internal compliance framework should focus on principles and procedures for data access, use, and protection. The design of your organization's internal data-handling policies must reflect the legal and regulatory requirements that apply to your organization and the data being handled. 
+
+Data protection officers (DPOs) must understand data-handling requirements based on their state and country/region's laws and regulations and their organization's internal policies. DPOs can then define appropriate procedures and technologies for data collection, storage, and protection.
+
+Microsoft provides compliance offerings that can help your organization align with national/regional and industry-specific data collection and usage requirements. A later unit describes these offerings.

@@ -4,13 +4,11 @@ title: Understand imperative versus declarative configuration
 metadata:
   title: Understand imperative versus declarative configuration
   description: "Understand imperative versus declarative configuration"
-  ms.date: 06/21/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 2
+  ms.prod: azure
+durationInMinutes: 3
 content: |
   [!include[](includes/4-understand-imperative-versus-declarative-configuration.md)]
