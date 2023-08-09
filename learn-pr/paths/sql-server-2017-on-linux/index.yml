@@ -2,14 +2,14 @@
 uid: learn-sqlserver.sql-server-on-linux
 metadata:
   title: SQL Server on Linux
-  description: SQL Server now runs  on your choice of operating system. In this learning path you will discover the fundamentals of SQL Server on Linux, before discovering how to run SQL Server on Linux containers and deploy SQL Server on Linux. You will then learn how to automatically tune your SQL Server on Linux deployment.
-  author: geoffallix
-  ms.author: v-gea
-  ms.date: 06/11/2019
+  description: SQL Server now runs  on your choice of operating system. In this learning path, you'll discover the fundamentals of SQL Server on Linux, before discovering how to run SQL Server on Linux containers and deploy SQL Server on Linux. You'll then learn how to automatically tune your SQL Server on Linux deployment.
+  author: rwestMSFT
+  ms.author: randolphwest
+  ms.date: 08/08/2023
   ms.topic: interactive-tutorial
   ms.prod: learning-sqlserver
 title: SQL Server on Linux
-summary: SQL Server now runs  on your choice of operating system. In this learning path you will discover the fundamentals of SQL Server on Linux, before discovering how to run SQL Server on Linux containers and deploy SQL Server on Linux. You will then learn how to automatically tune your SQL Server on Linux deployment.
+summary: SQL Server now runs  on your choice of operating system. In this learning path, you'll discover the fundamentals of SQL Server on Linux, before discovering how to run SQL Server on Linux containers and deploy SQL Server on Linux. You'll then learn how to automatically tune your SQL Server on Linux deployment.
 prerequisites: Basic understanding of Linux administration and administration of relational databases.
 iconUrl: /training/achievements/sqlserver/sql-server-2017-on-linux.svg
 levels: 
@@ -24,6 +24,5 @@ modules:
 - learn-sqlserver.introduction-sql-server-linux
 - learn-sqlserver.deploy-sql-server-linux
 - learn-sqlserver.automatically-tune-sql-server-linux
-- learn-sqlserver.run-sql-server-2017-linux-containers
 trophy: 
   uid: learn-sqlserver.sql-server-2017-on-linux.trophy
