@@ -25187,6 +25187,11 @@
       "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/3-protect-network-azure-firewall.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/4-protect-attacks-azure-ddos-protection.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
