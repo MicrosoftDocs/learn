@@ -2,8 +2,8 @@
 uid: learn.choose-messaging-model
 metadata:
   title: Introduction to Azure messaging services
-  description: Learn how Azure's storage queues, event hubs, event grid, and service bus can improve your communication between devices.
-  ms.date: 04/04/2023
+  description: Learn how Azure storage queues, Event Hubs, Event Grid, and service bus can improve your communication between devices.
+  ms.date: 07/31/2023
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
@@ -12,11 +12,11 @@ title: Choose a messaging model in Azure to loosely connect your services
 summary: When you have an application that consists of components running on different computers, servers, and mobile devices, reliable communications between those components can be difficult and unreliable. Azure provides several technologies that you can use to communicate more reliably, including Storage queues, Event Hubs, Event Grid, and Service Bus. This module shows you how to choose the best technology for your communication task.
 abstract: |
   In this module, you will:
-  - Describe events and messages, and the challenges you can use them to solve in a distributed application
-  - Identify scenarios in which Storage queue is the best messaging technology for an application
-  - Identify scenarios in which Event Grid is the best messaging technology for an application
-  - Identify scenarios in which Event Hubs is the best messaging technology for an application
-  - Identify scenarios in which Service Bus is the best messaging technology for an application
+  - Describe events and messages, and the challenges you can use them to solve in a distributed application.
+  - Identify scenarios in which Storage queue is the best messaging technology for an application.
+  - Identify scenarios in which Event Grid is the best messaging technology for an application.
+  - Identify scenarios in which Event Hubs is the best messaging technology for an application.
+  - Identify scenarios in which Service Bus is the best messaging technology for an application.
 prerequisites: None
 iconUrl: /training/achievements/choose-a-messaging-model-in-azure-to-connect-your-services.svg
 levels:
