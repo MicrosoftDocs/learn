@@ -40,7 +40,6 @@ subjects:
 units:
 - learn.azure.azure-compute-fundamentals.overview
 - learn.azure.azure-compute-fundamentals.windows-virtual-desktop
-- learn.azure.azure-compute-fundamentals.knowledge-check
 - learn.azure.azure-compute-fundamentals.summary
 badge:
   uid: learn.azure.azure-compute-fundamentals.badge
