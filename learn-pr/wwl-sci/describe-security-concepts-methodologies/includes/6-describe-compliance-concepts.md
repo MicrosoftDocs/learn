@@ -3,7 +3,7 @@ Organizations face increasing complexity and change in regulatory environments, 
 
 :::image type="content" source="../media/grc-framework-inline.png" lightbox="../media/grc-framework-expanded.png" alt-text="A graphic showing a GRC framework":::
 
-As organizations establish GRC competency they can establish a framework that includes implementing specific policies, operational processes. A structured approach for managing GRC helps organizations reduce risk and improve compliance effectiveness. 
+As organizations establish GRC competency they can establish a framework that includes implementing specific policies, operational processes. A structured approach for managing GRC helps organizations reduce risk and improve compliance effectiveness.
 
 An important prerequisite to establishing GRC competency is understanding the key terms.
 
