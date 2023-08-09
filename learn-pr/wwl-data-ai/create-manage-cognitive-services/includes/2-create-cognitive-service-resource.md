@@ -12,7 +12,7 @@ This approach enables you to manage a single set of access credentials to consum
 
 ### Single-service resource
 
-Each cognitive service can be provisioned individually, for example by creating discrete **AI Language** and **AI Vision** resources in your Azure subscription.
+Each AI service can be provisioned individually, for example by creating discrete **AI Language** and **AI Vision** resources in your Azure subscription.
 
 This approach enables you to use separate endpoints for each service (for example to provision them in different geographical regions) and to manage access credentials for each service independently. It also enables you to manage billing separately for each service.
 
