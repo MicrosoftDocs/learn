@@ -2032,3 +2032,23 @@ achievements:
   title: Instrument server-side web application code with Application Insights
   summary: Obtain comprehensive diagnostic information from a web app by adding the Application Insights SDK to your server-side code.
   iconUrl: /training/achievements/instrument-web-app-code-with-application-insights.svg
+- uid: learn.azure.azure-compute-fundamentals.badge
+  type: badge
+  title: Explore Azure compute services
+  summary: In this module, you'll learn how to take advantage of several virtualization services in Azure compute, which can help your applications scale out quickly and efficiently to meet increasing demands.
+  iconUrl: /training/achievements/azure-compute-fundamentals.svg
+- uid: learn.azure.azure-database-fundamentals.badge
+  type: badge
+  title: Explore Azure database and analytics services
+  summary: In this module, you'll learn about several of the database services that are available on Microsoft Azure, such as Azure Cosmos DB, Azure SQL Database, Azure SQL Managed Instance, Azure Database for MySQL, and Azure Database for PostgreSQL. In addition, you'll learn about several of the big data and analysis services in Azure.
+  iconUrl: /training/achievements/azure-database-fundamentals.svg
+- uid: learn.azure.azure-networking-fundamentals.badge
+  type: badge
+  title: Explore Azure networking services
+  summary: In this module, you take a look at several of the core networking resources that are available in Azure. You learn about Azure Virtual Network, which you can configure into a customized network environment that meets your company's needs. You also learn how you can use Azure VPN Gateway and Azure ExpressRoute to create secure communication tunnels between your company's different locations.
+  iconUrl: /training/achievements/azure-networking-fundamentals.svg
+- uid: learn.azure.azure-storage-fundamentals.badge
+  type: badge
+  title: Explore Azure Storage services
+  summary: In this module, you'll learn about some of the different storage options that are available in Azure Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Blob Storage, Azure Disk Storage, Azure Files, and Blob access tiers.
+  iconUrl: /training/achievements/azure-storage-fundamentals.svg
