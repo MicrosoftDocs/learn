@@ -34,7 +34,6 @@ subjects:
 - device-management
 units:
 - learn.azure.management-fundamentals.introduction
-- learn.azure.management-fundamentals.identify-product-options
 - learn.azure.management-fundamentals.use-azure-portal
 - learn.azure.management-fundamentals.use-azure-powershell
 - learn.azure.management-fundamentals.use-azure-cli
