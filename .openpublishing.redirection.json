@@ -25642,6 +25642,11 @@
       "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/4-use-azure-advisor.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/5-use-azure-monitor.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
