@@ -1,13 +1,25 @@
 
+Organizations face increasing complexity and change in regulatory environments, calling for a more structured approach for managing Governance, Risk, and Compliance (GRC).
 
-Data has become more important than ever. Organizations, institutions, and entire societies generate and rely on data to function on a day-to-day basis.  The sheer scale of data generated and the increasing reliance on it means that the privacy and protection of that data has become pivotal.  As organizations and institutions move their data to service provider clouds, with datacenters all over the world, additional considerations come into play.
+:::image type="content" source="../media/grc-framework-inline.png" lightbox="../media/grc-framework-expanded.png" alt-text="A graphic showing a GRC framework":::
 
-Government agencies and industry groups have issued regulations to help protect and govern the use of data.  From personal and financial information to data protection and privacy, organizations can be accountable for meeting dozens of regulations to be compliant.   Listed below are some important concepts and terms that relate to data compliance.
+As organizations establish GRC competency they can establish a framework that includes implementing specific policies, operational processes. A structured approach for managing GRC helps organizations reduce risk and improve compliance effectiveness. 
 
-- **Data residency** - When it comes to compliance, data residency regulations govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally. These regulations can differ significantly depending on jurisdiction.
+An important prerequisite to establishing GRC competency is understanding the key terms.
 
-- **Data sovereignty** - Another important consideration is data sovereignty, the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed.  This can add a layer of complexity when it comes to compliance because the same piece of data can be collected in one location, stored in another, and processed in still another; making it subject to laws from different countries/regions.
+#### Governance
 
-- **Data privacy** - Providing notice and being transparent about the collection, processing, use, and sharing of personal data are fundamental principles of privacy laws and regulations. Personal data means any information relating to an identified or identifiable natural person. Privacy laws previously referenced "PII" or "personally identifiable information" but the laws have expanded the definition to any data that is directly linked or indirectly linkable back to a person. Organizations are subject to, and must operate consistent with, a multitude of laws, regulations, codes of conduct, industry-specific standards, and compliance standards governing data privacy.  
+Governance is the system of rules, practices, and processes an organization uses to direct and control its activities. Many governance activities arise from external standards, obligations and expectations. For example, organizations establish rules and process that define the who, what, where, and when users and applications can access corporate resources and who has administrative privileges and for how long.
 
-In most cases, laws and regulations don't define or prescribe specific technologies that organizations must use to protect data. They leave it to an organization to identify compliant technologies, operations, and other appropriate data-protection measures.
+#### Risk
+Risk management is the process of identifying, assessing, and responding to threats or events that can impact company or customer objectives. Organizations face risk from both external and internal sources.  External risks can come from political and economic forces weather related events, pandemics, and security breaches to name just a few sources.  Internal risks are risks that come from within the organization itself.  Examples include leaks of sensitive data, intellectual property theft, fraud, and insider trading.
+
+#### Compliance
+Compliance refers to the country/region, state or federal laws or even multi-national regulations that an organization must follow. These regulations define what types of data must be protected, what processes are required under the legislation, and what penalties are issued to organizations that fail to comply.  
+
+It's important to note that compliance is not the same as security. But, security should be considered when building a compliance plan as effective security is frequently a compliance requirement. Compliance requires only that the legally mandated minimum standards are met whereas data security covers all the processes, procedures and technologies that define how you look after sensitive data and guard against breaches.
+
+Some compliance-related concepts include:
+  - **Data residency** - When it comes to compliance, data residency regulations govern the physical locations where data can be stored and how and when it can be transferred, processed, or accessed internationally. These regulations can differ significantly depending on jurisdiction.
+  - **Data sovereignty** - Another important consideration is data sovereignty, the concept that data, particularly personal data, is subject to the laws and regulations of the country/region in which it's physically collected, held, or processed.  This can add a layer of complexity when it comes to compliance because the same piece of data can be collected in one location, stored in another, and processed in still another; making it subject to laws from different countries/regions.
+  - **Data privacy** - Providing notice and being transparent about the collection, processing, use, and sharing of personal data are fundamental principles of privacy laws and regulations. Personal data means any information relating to an identified or identifiable natural person. Privacy laws encompass any data that is directly linked or indirectly linkable back to a person. Organizations are subject to, and must operate consistent with, a multitude of laws, regulations, codes of conduct, industry-specific standards, and compliance standards governing data privacy.
