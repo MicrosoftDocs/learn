@@ -35,7 +35,6 @@ units:
 - learn.azure.iot-fundamentals.use-iot-hub
 - learn.azure.iot-fundamentals.use-iot-central
 - learn.azure.iot-fundamentals.use-azure-sphere
-- learn.azure.iot-fundamentals.knowledge-check
 - learn.azure.iot-fundamentals.summary
 badge:
   uid: learn.azure.iot-fundamentals.badge
