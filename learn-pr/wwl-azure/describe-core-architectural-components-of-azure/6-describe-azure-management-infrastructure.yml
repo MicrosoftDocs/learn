@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
 durationInMinutes: 7
 content: |
   [!include[](includes/6-describe-azure-management-infrastructure.md)]
-interactive: bash

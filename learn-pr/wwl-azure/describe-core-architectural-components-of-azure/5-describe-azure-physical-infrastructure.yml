@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/5-describe-azure-physical-infrastructure.md)]
-interactive: bash
