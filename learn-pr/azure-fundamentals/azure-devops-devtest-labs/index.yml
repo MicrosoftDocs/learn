@@ -41,7 +41,6 @@ subjects:
 - infrastructure
 units:
 - learn.azure.azure-devops-devtest-labs.use-github
-- learn.azure.azure-devops-devtest-labs.use-azure-devtest-labs
 
 badge:
   uid: learn.azure.azure-devops-devtest-labs.badge
