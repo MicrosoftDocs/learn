@@ -25527,6 +25527,11 @@
       "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/4-explore-trust-center.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/5-access-azure-compliance-documentation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
