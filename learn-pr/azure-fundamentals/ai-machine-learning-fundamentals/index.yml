@@ -37,7 +37,6 @@ subjects:
 - artificial-intelligence
 units:
 - learn.azure.ai-machine-learning-fundamentals.introduction
-- learn.azure.ai-machine-learning-fundamentals.identify-product-options
 - learn.azure.ai-machine-learning-fundamentals.use-machine-learning
 - ' learn.azure.ai-machine-learning-fundamentals.use-cognitive-services'
 - learn.azure.ai-machine-learning-fundamentals.use-bot-services
