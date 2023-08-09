@@ -37,6 +37,5 @@ products:
 subjects:
 - storage
 units:
-- learn.azure.azure-storage-fundamentals.summary
 badge:
   uid: learn.azure.azure-storage-fundamentals.badge
