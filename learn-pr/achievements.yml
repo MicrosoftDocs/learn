@@ -2072,3 +2072,8 @@ achievements:
   title: Choose the best Azure IoT service for your application
   summary: Examine Azure IoT services, and choose the right service for your scenario.
   iconUrl: /training/achievements/iot-fundamentals.svg
+- uid: learn.azure.ai-machine-learning-fundamentals.badge
+  type: badge
+  title: Choose the best AI service for your needs
+  summary: Examine Azure's AI services, and choose the right one for your company.
+  iconUrl: /training/achievements/ai-machine-learning-fundamentals.svg
