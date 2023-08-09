@@ -1,5 +1,3 @@
-
-
 Azure NetApp Files provides native Network File System (NFS) shares that can be used for **/hana/shared**, **/hana/data**, and **/hana/log** volumes. Using ANF-based NFS shares for the **/hana/data** and **/hana/log** volumes requires the usage of the v4.1 NFS protocol. The NFS protocol v3 is not supported for the usage of **/hana/data** and **/hana/log** volumes when basing the shares on ANF.
 
 > [!IMPORTANT]

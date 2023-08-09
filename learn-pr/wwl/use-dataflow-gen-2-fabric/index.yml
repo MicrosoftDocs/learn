@@ -1,0 +1,47 @@
+### YamlMime:Module
+uid: learn.wwl.ingest-dataflows-gen2-fabric
+metadata:
+  title: Ingest Data with Dataflows Gen2 in Microsoft Fabric
+  description: "Data ingestion is crucial in analytics. Microsoft Fabric's Data Factory offers Dataflows (Gen2) for visually creating multi-step data ingestion and transformation using Power Query Online."
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+title: Ingest Data with Dataflows Gen2 in Microsoft Fabric
+summary: Data ingestion is crucial in analytics. Microsoft Fabric's Data Factory offers Dataflows (Gen2) for visually creating multi-step data ingestion and transformation using Power Query Online.
+abstract: |
+  In this module, you'll learn how to:
+  *   Describe Dataflow (Gen2) capabilities in Microsoft Fabric
+  *   Create Dataflow (Gen2) solutions to ingest and transform data
+  *   Include a Dataflow (Gen2) in a pipeline
+prerequisites: |
+  Before you start this module, you should be familiar with Microsoft Fabric lakehouses and core concepts.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-ai
+- data-analytics
+- data-engineering
+- data-integration
+units:
+- learn.wwl.ingest-dataflows-gen2-fabric.introduction
+- learn.wwl.ingest-dataflows-gen2-fabric.dataflows-gen-2
+- learn.wwl.ingest-dataflows-gen2-fabric.explore-dataflows-gen-2
+- learn.wwl.ingest-dataflows-gen2-fabric.dataflow-pipeline
+- learn.wwl.ingest-dataflows-gen2-fabric.exercise
+- learn.wwl.ingest-dataflows-gen2-fabric.knowledge-check
+- learn.wwl.ingest-dataflows-gen2-fabric.summary
+badge:
+  uid: learn.wwl.use-dataflow-gen-2-fabric.badge

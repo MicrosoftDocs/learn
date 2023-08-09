@@ -7,7 +7,7 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: active-directory
 title: Monitor and report on security events in Azure Active Directory
 summary: Monitor Azure Active Directory security events with built-in reporting and monitoring capabilities to prevent unauthorized access and potential data loss.
 abstract: | 

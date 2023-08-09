@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: custom-vision
 title: Classify images with the Custom Vision service
 summary: Image classification is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real-world items based on images.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - artificial-intelligence
 - classification-analysis

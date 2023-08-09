@@ -3,11 +3,11 @@ uid: learn.wwl.install-configure-visual-studio-code
 metadata:
   title: Install and configure Visual Studio Code
   description: "Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications."
-  ms.date: 04/13/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
 title: Install and configure Visual Studio Code
 summary: Learn how to configure Visual Studio Code for C# and how to use this professional IDE to create and run console applications.
 abstract: |
@@ -16,12 +16,14 @@ abstract: |
   - Explore the Visual Studio Code user interface.
   - Create, edit, build, and run a console application using Visual Studio Code.
 prerequisites: |
-  - Experience creating simple C# console applications.
-iconUrl: /training/achievements/generic-badge.svg
+  *   Experience creating simple C# console applications.
+iconUrl: /training/achievements/install-configure-visual-studio-code.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet

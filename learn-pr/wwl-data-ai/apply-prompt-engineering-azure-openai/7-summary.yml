@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.apply-prompt-engineering-azure-openai.summary
+title: Summary
+metadata:
+  title: summary
+  description: "In this module, you learned how to use prompt engineering for higher quality responses with Azure OpenAI."
+  ms.date: 5/2/2023
+  author: ivorb
+  ms.author: berryivor
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+  ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

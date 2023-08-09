@@ -1,0 +1,14 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.azure.troubleshoot-windows-containers.troubleshooting-monitor
+title: Troubleshooting Windows Containers with Azure Monitor
+metadata: 
+  title: Troubleshooting Windows Containers with Azure Monitor
+  description: This content is part of the "Troubleshooting Windows Containers" module.
+  ms.date: 05/11/2023
+  author: vrapolinario
+  ms.author: viniap
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/6-troubleshooting-containers-monitor.md)]

@@ -8,7 +8,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: true
 interactive: bash
 durationInMinutes: 6

@@ -4,16 +4,16 @@ metadata:
   moduleType: introduction        
   title: Introduction to Azure SQL Edge
   description: Azure SQL Edge is an optimized relational database engine geared for IoT and IoT Edge deployments. It provides capabilities to create a high-performance data storage and processing layer for IoT applications and solutions.
-  ms.date: 02/27/2023
+  ms.date: 06/08/2023
   author: rwestMSFT
   ms.author: randolphwest  
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sql-edge
 title: Introduction to Azure SQL Edge
 summary: Describe how Azure SQL Edge enables developers to use the same Transact-SQL (T-SQL) API to develop apps for the edge. Evaluate whether Azure SQL Edge provides the same security and performance as Microsoft SQL Server. 
 abstract: |
-  By the end of this module, you will be able to: 
+  By the end of this module, you're able to: 
     - Evaluate whether Azure SQL Edge is appropriate for interaction with your apps and IoT devices at the edge.
     - Describe how Azure SQL Edge's familiar engine and toolset features enable you to optimize data ingest and analysis.
 prerequisites: |

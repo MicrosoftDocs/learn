@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Extract data from forms by using Form Recognizer
 prerequisites: |
   - None
@@ -24,8 +24,8 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- document-intelligence
+- ai-services
 subjects:
 - artificial-intelligence
 modules:

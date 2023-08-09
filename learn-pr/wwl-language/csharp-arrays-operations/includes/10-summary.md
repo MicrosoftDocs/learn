@@ -1,6 +1,8 @@
 
 
 
+
+
 In this module, you completed exercises using helper methods to use arrays more effectively to:
 
 - Clear items in an array, learning the elements are set to null, using the `Array.Clear()`method.

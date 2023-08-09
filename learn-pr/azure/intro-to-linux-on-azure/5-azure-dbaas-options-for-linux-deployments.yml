@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.introduction-to-linux-on-azure.identify-database-as-a-service-options-for-linux-deployments
+title: Identify database-as-a-service options for Linux deployments
+metadata:
+  title: Identify database-as-a-service options for Linux deployments
+  description: Learn about the Azure database-as-a-service options for Linux deployments.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/5-azure-dbaas-options-for-linux-deployments.md)]

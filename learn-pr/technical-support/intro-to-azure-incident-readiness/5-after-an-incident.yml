@@ -1,0 +1,47 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-incident-readiness.after-an-incident
+title: After an incident
+metadata:
+  title: After an incident
+  description: "In this unit, you'll gain insights into the Post Incident Review (PIR) process, allowing you to understand what we have learned, understand impact details, and access recommendations for enhancing your resilience. You'll also discover how to participate in Azure Incident Retrospective livestream events and explore the Service Level Agreement (SLA) process for potential service credits."
+  ms.date: 6/25/2023
+  author: rmcmurray
+  ms.author: keall
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 7
+content: |
+  [!include[](includes/5-after-an-incident.md)]
+quiz:
+  questions:
+  - content: "True or False. We provide a Post Incident Review (PIR) summarizing what happened, to which services in which regions, as well as when impact started and was ultimately mitigated. Wherever possible, we'll also include any learnings or improvements that we'll be doing as a result of the incident, and/or resilience recommendations for how you can make similar incidents less impactful."
+    choices:
+    - content: "True"
+      isCorrect: true
+    - content: "False"
+      isCorrect: false
+  - content: "Where will I be able to find the Post Incident Reviews (PIRs) of an incident that impacted me?"
+    choices:
+    - content: "**Health history** blade of Azure Service Health"
+      isCorrect: true
+    - content: "@AzureSupport on Twitter"
+      isCorrect: false
+    - content: "Microsoft Teams"
+      isCorrect: false
+  - content: "True or False. I do NOT have any Service Health alerts configured, but I'll still get notified whenever Azure publishes their Post Incident Review (PIR) for an incident that impacted me."
+    choices:
+    - content: "True"
+      isCorrect: false
+    - content: "False"
+      isCorrect: true
+  - content: "How can I be sure to know when Azure is hosting an Azure Incident Retrospective?"
+    choices:
+    - content: "Invites are distributed to Service Health and via Service Health alerts, so make sure you have configured Service Health alerts, so you're notified when the next livestream will be."
+      isCorrect: true
+    - content: "By configuring scheduled events."
+      isCorrect: false
+    - content: "By completing the Azure Well-Architected Review."
+      isCorrect: false
+    - content: "Phoning a friend."
+      isCorrect: false

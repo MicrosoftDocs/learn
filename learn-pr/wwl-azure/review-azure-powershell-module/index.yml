@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Review Azure PowerShell module
 summary: This module explains the Azure PowerShell environment and the Az module for Windows PowerShell. It also explains how to manage Azure Active Directory (Azure AD) by using PowerShell modules.
 abstract: |

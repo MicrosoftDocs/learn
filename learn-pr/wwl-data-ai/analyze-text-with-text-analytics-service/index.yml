@@ -3,11 +3,12 @@ uid: learn.wwl.analyze-text-with-text-analytics-service
 metadata:
   title: Analyze text with the Language service
   description: "Analyze text with the Language service"
-  ms.date: 01/27/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: language-service
 title: Analyze text with the Language service
 summary: Explore text mining and text analysis with the Language service's Natural Language Processing (NLP) features, which include sentiment analysis, key phrase extraction, named entity recognition, and language detection.
 abstract: |
@@ -24,7 +25,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - natural-language-processing
 units:

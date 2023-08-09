@@ -66,7 +66,15 @@ AOAI can be accessed via a REST API or an SDK currently available for Python and
 - **ChatCompletion** - model takes input in the form of a chat conversation (where roles are specified with the message they send), and the next chat completion is generated
 - **Embeddings** - model takes input and returns a vector representation of that input
 
-For example, the input for `Completion` or `Embeddings` endpoints might be "What is Azure OpenAI", where the input for `ChatCompletion` is a conversation:
+For example, the input for `Completion` might be a prompt like "What is Azure OpenAI", or it might include some role tags or other prompt engineering elements.
+
+```code
+<|im_start|>user
+What is Azure OpenAI?
+<|im_end|>
+```
+
+In contrast, the input for `ChatCompletion` is a conversation with clearly defined roles for each message:
 
 ```json
 {"role": "system", "content": "You are a helpful assistant, teaching people about AI."},
@@ -85,4 +93,4 @@ When you give the AI model a real conversation, it can generate a better respons
 ```
 
 > [!NOTE]
-> `ChatCompletion` is the only supported option for `gpt-4` models, and is preferred when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `Completion` endpoint, but if using either of these models in your own app, consider using `ChatCompletion`.
+> `Completion` is available for all `gpt-3` generation models, while `ChatCompletion` is the only supported option for `gpt-4` models and is the preferred endpoint when using the `gpt-35-turbo` model. The lab in this module uses `gpt-35-turbo` with the `ChatCompletion` endpoint.

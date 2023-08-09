@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-business-benefits-azure.operate-effectively-across-globe
+title: Operate effectively across the globe
+metadata:
+  title: Operate effectively across the globe
+  description: "Operate effectively across the globe"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-operate-effectively-across-globe.md)]

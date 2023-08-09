@@ -9,7 +9,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 1. In the left menu pane, under **Deployment**, select **Deployment Center**. The **Deployment Center** pane appears for your app service (web app).
 
-1. On the **Settings** tab, under **Registry settings**, set **Continuous Deployment** to **On**, and in the top menu bar, select **Save**. This setting configures a webhook that Container Registry uses to alert the web app that the Docker image has changed.
+1. On the **Settings** tab, under **Registry settings**, set **Continuous Deployment** to **On**,  then select **Save** in the top menu bar. This setting configures a webhook that Container Registry uses to alert the web app that the Docker image has changed.
 
     ![Screenshot that shows the container settings for the web app with continuous deployment enabled.](../media/7-continuous-deployment-annotated.png)
 
@@ -30,7 +30,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
     mv Index.cshtml.new Index.cshtml
     ```
 
-1. Run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
+1. Run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command. Wait for the build to complete.
 
     ```bash
     cd ~/mslearn-deploy-run-container-app-service/dotnet
@@ -51,7 +51,7 @@ In this unit, you'll configure continuous deployment for the web app and create 
 
 1. Go back to your web app in the browser. If you closed the tab for it earlier, you can go to the Overview page of the app in the Azure portal, and select **Browse**. There will be a cold-start delay while the web app loads the new image from Container Registry.
 
-1. Review the items in the carousel control. Note that the control now contains four pages. The new page looks like the following image.
+1. Review the items in the carousel control. Note that the control now contains four pages. The new page looks like the following image:
 
     ![Screenshot of the sample web app.](../media/7-sample-web-app-dotnet.png)
 
@@ -83,7 +83,7 @@ The web app has been updated and redeployed automatically based on the new image
 
     Make sure to save the file when you're finished.
 
-1. In Cloud Shell, run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command.
+1. In Cloud Shell, run the next set of commands to rebuild the image for the web app, and push it to Container Registry. Replace `<container_registry_name>` with the name of your registry. Don't forget the `.` at the end of the second command. Wait for the build to complete.
 
     ```bash
     cd ~/mslearn-deploy-run-container-app-service/node

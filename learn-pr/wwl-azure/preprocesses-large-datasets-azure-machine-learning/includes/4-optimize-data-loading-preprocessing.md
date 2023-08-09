@@ -77,4 +77,4 @@ data = data.dropna()
 For data scientists working with pandas, cuDF is a familiar approach to data processing that is compatible with GPU and will allow you to process data much faster.
 
 > [!TIP]
-> If you want to improve performance even more, learn about [multi-GPU processing with Dask](https://docs.rapids.ai/api/cudf/stable/basics/dask-cudf.html).
+> If you want to improve performance even more, learn about [multi-GPU processing with Dask](https://docs.rapids.ai/api/dask-cudf/stable/).

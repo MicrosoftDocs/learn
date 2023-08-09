@@ -5,12 +5,14 @@ metadata:
   unitType: exercise
   title: Exercise - Create a 'for' loop
   description: In this exercise, you'll create a list and then loop over the contents by using a `for` loop.
-  ms.date: 12/07/2021
+  ms.date: 06/07/2023
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
-durationInMinutes: 1
+durationInMinutes: 8
 sandbox: true
 notebook: notebooks/5-exercise-for-loops.ipynb

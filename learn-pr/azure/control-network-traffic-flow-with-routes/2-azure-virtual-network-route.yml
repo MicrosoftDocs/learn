@@ -4,8 +4,8 @@ metadata:
   title: Identify routing capabilities of an Azure virtual network
   description: Identify routing capabilities of an Azure virtual network
   ms.date: 03/02/2022
-  author: KumudD
-  ms.author: kumud
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Identify routing capabilities of an Azure virtual network

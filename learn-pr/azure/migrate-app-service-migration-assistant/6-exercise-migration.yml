@@ -5,8 +5,8 @@ metadata:
   title: Exercise - Migrate your web app with the Azure App Service Migration Assistant
   description: Use the Migration Assistant do a migration from on-premises to Azure App Service.
   ms.date: 05/21/2020
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 10

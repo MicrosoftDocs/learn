@@ -2,10 +2,11 @@
 uid: learn.microservices-resiliency-aspnet-core.6-implement-linkerd-resiliency
 metadata:
   title: Exercise - Implement infrastructure-based resiliency
-  description: Configure infrastructure-based resiliency in your microservices app with Linkerd.
+  description: Use Linkerd to configure infrastructure-based resiliency in your microservices app.
   author: scottaddie
   ms.author: scaddie
-  ms.date: 08/04/2020
+  ms.manager: markl
+  ms.date: 05/09/2023
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
 title: Exercise - Implement infrastructure-based resiliency

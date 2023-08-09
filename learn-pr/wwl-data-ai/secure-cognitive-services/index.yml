@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
 title: Secure Cognitive Services
 summary: Securing Cognitive Services can help prevent data loss and privacy violations for user data that may be a part of the solution.
 abstract: |
@@ -30,7 +30,7 @@ roles:
 - student
 products:
 - azure-active-directory
-- azure-cognitive-services
+- ai-services
 subjects:
 - security
 units:

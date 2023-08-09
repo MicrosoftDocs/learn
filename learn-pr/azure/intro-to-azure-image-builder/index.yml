@@ -1,0 +1,40 @@
+### YamlMime:Module
+uid: learn.azure.introduction-to-azure-image-builder
+metadata:
+  title: Introduction to Azure Image Builder
+  description: Learn about what Azure Azure Image Builder is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+  ms.date: 06/05/2023
+  author: ericd-mst-github
+  ms.author: erd
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Introduction to Azure Image Builder
+summary: Learn about what Azure Image Builder is, how it works, and when you should choose to use a dedicated host as a solution to meet your organization's needs.
+abstract: |
+  In this module, you will:
+  - Learn what an Azure Image Builder is and the functionality it provides.
+  - Evaluate the performance of an Azure Image Builder pipeline for your business.
+  - Describe the components and functionality of an Azure Image Builder pipeline.
+prerequisites: Familiarity with Azure Virtual Machines, and creating resources in Azure.
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- administrator
+- devops-engineer
+- developer
+- solution-architect
+products:
+- azure
+- azure-virtual-machines
+subjects:
+- virtual-machine
+units:
+- learn.introduction-to-azure-image-builder.introduction
+- learn.introduction-to-azure-image-builder.what-is-azure-image-builder
+- learn.introduction-to-azure-image-builder.how-does-azure-image-builder-work
+- learn.introduction-to-azure-image-builder.when-to-use-azure-image-builder
+- learn.introduction-to-azure-image-builder.knowledge-check
+- learn.introduction-to-azure-image-builder.summary
+badge:
+  uid: learn.azure.introduction-to-azure-image-builder.badge

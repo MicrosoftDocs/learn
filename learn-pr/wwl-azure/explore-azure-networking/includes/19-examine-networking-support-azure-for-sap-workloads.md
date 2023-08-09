@@ -1,4 +1,5 @@
 
+
 General network considerations for deployment of SAP workloads on Azure are outlined in [SAP Note #2015553](https://launchpad.support.sap.com/#/notes/2015553) and deal with the following aspects of networking:
 
 ## Network security

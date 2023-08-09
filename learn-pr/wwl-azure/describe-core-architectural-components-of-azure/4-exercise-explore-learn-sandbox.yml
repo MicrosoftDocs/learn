@@ -4,14 +4,12 @@ title: Exercise - Explore the Learn sandbox
 metadata:
   title: Exercise - Explore the Learn sandbox
   description: "Exercise - Explore the Learn sandbox"
-  ms.date: 12/22/2022
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: true
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-explore-learn-sandbox.md)]
-interactive: powershell
+interactive: bash

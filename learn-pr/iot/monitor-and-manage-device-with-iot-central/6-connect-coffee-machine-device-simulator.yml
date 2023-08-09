@@ -13,7 +13,7 @@ metadata:
   manager: lizross
   ms.custom: engagement-fy23
   ms.topic: module-build-your-first
-  ms.prod: learning-azure
-durationInMinutes: 12
+  ms.prod: azure-iot-central
+durationInMinutes: 10
 content: |
   [!include[](includes/6-connect-coffee-machine-device-simulator.md)]

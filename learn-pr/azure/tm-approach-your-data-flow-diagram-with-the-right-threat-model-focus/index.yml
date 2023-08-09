@@ -3,15 +3,14 @@ uid: learn.tm-approach-your-data-flow-diagram-with-the-right-threat-model-focus
 metadata:
   title: Approach your data-flow diagram with the right threat model focus
   description: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either what needs to be protected or who it needs protection from.
-  ms.date: 11/23/2022
+  ms.date: 05/23/2023
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Approach your data-flow diagram with the right threat model focus
 summary: Threat modeling is an effective technique to help you identify threats and ways to reduce or eliminate risk. We start by deciding to focus on either what needs to be protected or who it needs protection from.
 abstract: |
-    In this module, you will be able to:
+    In this module, you learn how to:
     - Define a system focused threat modeling exercise
     - Explain the high-level differences between the system, asset, and attacker focused approaches
 prerequisites: None
@@ -25,10 +24,10 @@ roles:
 - security-engineer
 - solution-architect
 products:
-- azure-iot-security-center
+- azure
 - azure-security-center
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

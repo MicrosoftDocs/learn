@@ -7,7 +7,7 @@ metadata:
   author: mikefrobbins
   ms.author: mirobb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Automate Azure tasks using scripts with PowerShell
 summary: Install Azure PowerShell locally and use it to manage Azure resources.
 abstract: | 

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Perform backups and restores for SAP workloads on Azure
 summary: This module explores backup and restore of Azure virtual machines and examines the steps and important considerations involved in backing up and restoring SAP workloads on Azure.
 abstract: |

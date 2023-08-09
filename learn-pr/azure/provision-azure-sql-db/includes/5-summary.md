@@ -10,7 +10,9 @@ Choose DTU if you're just getting started or want a simple, preconfigured buying
 
 Azure Cloud Shell makes it easy to start working with your databases. From Cloud Shell, you have access to the Azure CLI, which enables you to get information about your Azure resources. Cloud Shell also provides many other common utilities, such as `sqlcmd`, to help you start working right away with your new database.
 
-[!include[](../../../includes/azure-sandbox-cleanup.md)]
+## Clean up
+
+To ensure you're not charged for the resources you created, you can delete resources individually or delete the resource group you used to delete the entire set of resources. Make sure to delete any resources you don't plan to use again.
 
 ## Additional resources
 
@@ -23,4 +25,4 @@ The documentation provides lots more information, including tutorials and sample
 
 To learn more about Cloud Shell, see [Overview of Azure Cloud Shell](/azure/cloud-shell/overview).
 
-If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](/sql/tools/sqlcmd-utility?view=sql-server-2017).
+If you're interested in learning more about the `sqlcmd` utility, see [sqlcmd Utility](/sql/tools/sqlcmd-utility).

@@ -2,7 +2,7 @@ In this exercise, you’ll create a resource and configure a resource lock. Stor
 
 This exercise is a Bring your own subscription exercise, meaning you’ll need to provide your own Azure subscription to complete the exercise. Don’t worry though, the entire exercise can be completed for free with the 12 month free services when you sign up for an Azure account.
 
-For help with signing up for an Azure account, see the [Create an Azure account](/training/modules/create-an-azure-account/) learning module.
+To sign up for an Azure account, go to [Create Your Azure Free Account](https://azure.microsoft.com/free).
 
 Once you’ve created your free account, follow the steps below. If you don’t have an Azure account, you can review the steps to see the process for adding a simple resource lock to a resource.
 

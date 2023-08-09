@@ -7,7 +7,7 @@ metadata:
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Analyze costs in the Microsoft Cost Management Power BI app to optimize costs
 durationInMinutes: 5
 content: |

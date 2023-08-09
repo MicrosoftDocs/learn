@@ -1,5 +1,6 @@
 
 
+
 Windows 11 and previous editions run on several devices or form factors. However, not all editions of Windows can run on all device types. This discussion will help you decide which form factor and edition of Windows to choose in different scenarios.
 
 ### Form factors

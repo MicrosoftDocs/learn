@@ -7,7 +7,7 @@ metadata:
   author: "Sean-Kerawala"
   ms.author: "vinnietieto"
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: powerapps
 title: Build a 3D mobile app with Power Apps in mixed reality
 summary: Learn about the foundational elements required to build a mixed reality application in the Power Apps low-code rapid development environment. Build a sales-oriented 3D mobile mixed reality application using Power Apps in mixed reality.
 abstract: |

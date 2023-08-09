@@ -28,13 +28,13 @@ quiz:
     choices:
     - content: "Reboot the client VMs."
       isCorrect: false
-      explanation: "Azure NetApp Files will reflect the performance effect automatically and almost immediately."
+      explanation: "Azure NetApp Files reflects the performance effect automatically and almost immediately."
     - content: "Restart the Azure NetApp Files service."
       isCorrect: false
-      explanation: "Azure NetApp Files will reflect the performance effect automatically and almost immediately."
-    - content: "Performance change will take effect automatically and almost immediately."
+      explanation: "Azure NetApp Files reflects the performance effect automatically and almost immediately."
+    - content: "The performance change takes effect automatically and almost immediately."
       isCorrect: true
-      explanation: "Azure NetApp Files will reflect the performance effect automatically and almost immediately."
+      explanation: "Azure NetApp Files reflects the performance effect automatically and almost immediately."
   - content: "An HPC application needs at least a 20-TiB size of Azure NetApp Files storage and needs to ensure 1,400 MiB/s in throughput with 8 KiB 50/50 random read/write. Which of the following service levels and volume quotas are the best to be configured?"
     choices:
     - content: "Standard service level with a 75-TiB volume size."

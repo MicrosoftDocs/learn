@@ -1,6 +1,7 @@
 
 
 
+
 In this exercise, you review the code in the Starter project, perform some code clean-up tasks, and then start adding features to your application. The tasks that you complete during this exercise are:
 
 1. Code review: review the contents of the Program.cs file.

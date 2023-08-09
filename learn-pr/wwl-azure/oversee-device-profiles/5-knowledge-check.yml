@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "This unit is the knowledge check for the module, oversee device profiles."
-  ms.date: 03/14/2023
+  ms.date: 07/24/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
@@ -25,7 +25,7 @@ quiz:
     - content: "Device compliance policies"
       isCorrect: false
       explanation: "Incorrect. Device compliance policies define the rules and settings that a device must comply with to be considered compliant by conditional access policies. You can also use compliance policies to monitor and remediate the compliance of devices independent of conditional access. Try again."
-  - content: "As the Desktop Administrator for Contoso, Holly Dickson is using Intune to help monitor and manage the company's device configuration profiles. One of the company's devices has been experiencing issues that Holly feels is related to a configuration policy setting that's applied to the device. In the Endpoint Manager admin center, Holly navigated to a view of the company's devices, selected the device in question, displayed the configuration policies that apply to the device, and then selected the policy that she feels may be the problem. By doing so, Holly can see any setting in the policy that has a \"Conflict\" state. What else is displayed regarding the conflicted setting that can help Holly troubleshoot this issue?"
+  - content: "As the Desktop Administrator for Contoso, Holly Dickson is using Intune to help monitor and manage the company's device configuration profiles. One of the company's devices has been experiencing issues that Holly feels is related to a configuration policy setting that's applied to the device. In the Microsoft Intune admin center, Holly navigated to a view of the company's devices, selected the device in question, displayed the configuration policies that apply to the device, and then selected the policy that she feels may be the problem. By doing so, Holly can see any setting in the policy that has a \"Conflict\" state. What else is displayed regarding the conflicted setting that can help Holly troubleshoot this issue?"
     choices:
     - content: "All the conflicted devices"
       isCorrect: false
@@ -35,4 +35,4 @@ quiz:
       explanation: "Incorrect. This item isn't displayed. Try again."
     - content: "All the profiles that have the conflicted setting"
       isCorrect: true
-      explanation: "Correct. In Devices &gt; All devices, you can see any policy settings that are causing a conflict. When there's a conflict, you're also shown all the configuration profiles that contain this setting. By knowing the conflicting setting and the policies that include that setting, it should be easier to resolve the conflict."
+      explanation: "Correct. In Devices > All devices, Holly can see any policy settings that are causing a conflict. When there's a conflict, she's also shown all the configuration profiles that contain this setting. By knowing the conflicting setting and the policies that include that setting, it should be easier to resolve the conflict."

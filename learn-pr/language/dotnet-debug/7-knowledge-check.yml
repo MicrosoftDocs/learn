@@ -6,8 +6,11 @@ metadata:
   description: Check what you've learned.
   author: jongalloway
   ms.author: jogallow
+  ms.manager: markl
   ms.date: 10/28/2020
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 2
 quiz:

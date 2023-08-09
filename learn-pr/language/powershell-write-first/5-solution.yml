@@ -8,6 +8,7 @@ metadata:
   author: michaeltlombardi
   ms.author: mlombardi
   ms.topic: interactive-tutorial
+  ms.custom:
   ms.prod: learning-azure
 durationInMinutes: 1
 azureSandbox: false

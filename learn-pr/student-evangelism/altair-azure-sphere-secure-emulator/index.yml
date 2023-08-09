@@ -7,8 +7,8 @@ metadata:
   author: gloveboxes
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-central
   ms.custom: nextgen
+  ms.service: azure-sphere
 title: Secure the Altair emulator
 summary: Learn how to help secure the Altair emulator network communications.
 abstract:  |

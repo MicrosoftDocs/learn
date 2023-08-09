@@ -1,3 +1,4 @@
+
 Your first decision in your application architecture design is to plan how the application components will communicate. Defining your component strategy helps you choose the appropriate Azure service.
 
 Suppose you're designing the architecture for a home improvement video-sharing application for Tailwind Traders. You want your application to be as reliable and scalable as possible. You're planning to use Azure technologies to build a robust communication infrastructure. Before you can choose the appropriate Azure services, you need to design how each application component will communicate with the other components. For each type of communication, you might choose a different Azure technology.

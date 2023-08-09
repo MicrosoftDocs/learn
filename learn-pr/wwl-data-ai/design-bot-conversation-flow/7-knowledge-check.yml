@@ -4,11 +4,11 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 09/16/2022
+  ms.date: 05/25/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
@@ -25,7 +25,7 @@ quiz:
     - content: "Create a single bot and deliver it through both web chat and email channels."
       isCorrect: true
       explanation: "Correct. You can create a single bot and connect it to multiple channels, including web chat and email."
-  - content: "You've  created a bot using a Bot Framework SDK template.Which tool should you use to test it locally?"
+  - content: "You've created a bot using a Bot Framework SDK template.Which tool should you use to test it locally?"
     choices:
     - content: "Visual Studio Code"
       isCorrect: false
@@ -36,7 +36,7 @@ quiz:
     - content: "Bot Framework Composer"
       isCorrect: false
       explanation: "Incorrect. Use the Bot Framework Emulator to test a bot locally."
-  - content: "You're  implementing an activity handler for a *message received* event. How can your code access the text of the message that was received."
+  - content: "You're implementing an activity handler for a *message received* event. How can your code access the text of the message that was received."
     choices:
     - content: "Implement a waterfall dialog."
       isCorrect: false

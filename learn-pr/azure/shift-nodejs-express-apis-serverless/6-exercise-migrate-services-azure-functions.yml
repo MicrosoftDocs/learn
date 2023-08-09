@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.7-exercise-function
 metadata:
-  title: Exercise - Migrate the services to Azure Functions
-  description: Migrate the services to Azure Functions
+  title: Exercise - Create functions for the Azure Functions app
+  description: Create and configure functions in the Azure Functions application for each endpoint in the Node.js Express application.
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
-title: Exercise - Migrate the services to Azure Functions
+title: Exercise - Create functions for the Azure Functions app
 durationInMinutes: 9
 content: |
   [!include[](includes/6-exercise-migrate-services-azure-functions.md)]
