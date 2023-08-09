@@ -34,7 +34,6 @@ subjects:
 - cloud-computing
 - it-management-monitoring
 units:
-- learn.azure.monitoring-fundamentals.use-azure-monitor
 - learn.azure.monitoring-fundamentals.use-azure-service-health
 
 badge:
