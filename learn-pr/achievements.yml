@@ -2092,3 +2092,8 @@ achievements:
   title: Examine privacy, compliance, and data protection standards on Azure
   summary: Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
   iconUrl: /training/achievements/examine-privacy-compliance-data-protection-standards.svg
+- uid: learn.azure.management-fundamentals.badge
+  type: badge
+  title: Choose the best tools for managing and configuring your Azure environment
+  summary: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs.
+  iconUrl: /training/achievements/management-fundamentals.svg
