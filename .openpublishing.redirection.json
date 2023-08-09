@@ -25117,6 +25117,11 @@
       "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/6-knowledge-check.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
