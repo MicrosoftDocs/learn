@@ -39,6 +39,5 @@ subjects:
 - cloud-computing
 units:
 - learn.azure.azure-compute-fundamentals.windows-virtual-desktop
-- learn.azure.azure-compute-fundamentals.summary
 badge:
   uid: learn.azure.azure-compute-fundamentals.badge
