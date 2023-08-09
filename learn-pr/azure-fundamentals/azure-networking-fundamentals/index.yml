@@ -32,7 +32,6 @@ products:
 subjects:
 - networking
 units:
-- learn.azure.azure-networking-fundamentals.knowledge-check
 - learn.azure.azure-networking-fundamentals.summary
 badge:
   uid: learn.azure.azure-networking-fundamentals.badge
