@@ -24967,6 +24967,11 @@
       "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-postgresql-database.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-sql-database.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
