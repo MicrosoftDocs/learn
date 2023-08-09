@@ -38,6 +38,5 @@ subjects:
 units:
 - learn.azure.ai-machine-learning-fundamentals.use-machine-learning
 - ' learn.azure.ai-machine-learning-fundamentals.use-cognitive-services'
-- learn.azure.ai-machine-learning-fundamentals.use-bot-services
 badge:
   uid: learn.azure.ai-machine-learning-fundamentals.badge
