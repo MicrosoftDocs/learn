@@ -416,13 +416,63 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/2-choose-run-sql-server-2017-linux-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/5-exercise-create-custom-docker-image.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/6-use-docker-compose-deploy-multiple-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/7-exercise-use-docker-compose-deploy-multiple-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/8-summary.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/index.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.run-sql-server-2017-linux-containers.badge.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
-      "redirect_url": "/training/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
-      "redirect_url": "/training/modules/run-sql-server-2017-linux-containers/4-create-custom-images",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
