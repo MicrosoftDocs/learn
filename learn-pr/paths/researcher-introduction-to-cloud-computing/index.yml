@@ -40,7 +40,6 @@ subjects:
 - storage
 modules:
 - learn.azure.azure-database-fundamentals
-- learn.azure.azure-compute-fundamentals
 - learn.introduction-to-azure-virtual-machines
 - learn.azure.azure-storage-fundamentals
 - learn.choose-storage-approach-in-azure
