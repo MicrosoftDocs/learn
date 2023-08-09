@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.azure.serverless-fundamentals.introduction
 - learn.azure.serverless-fundamentals.identify-product-options
-- learn.azure.serverless-fundamentals.analyze-decision-criteria
 - learn.azure.serverless-fundamentals.use-azure-functions
 - learn.azure.serverless-fundamentals.use-azure-logic-apps
 - learn.azure.serverless-fundamentals.knowledge-check
