@@ -2097,3 +2097,8 @@ achievements:
   title: Choose the best tools for managing and configuring your Azure environment
   summary: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs.
   iconUrl: /training/achievements/management-fundamentals.svg
+- uid: learn.azure.monitoring-fundamentals.badge
+  type: badge
+  title: Choose the best monitoring service for visibility, insight, and outage mitigation
+  summary: Learn about solutions that can give your IT organization insight into the health and performance of its cloud-based applications.
+  iconUrl: /training/achievements/monitoring-fundamentals.svg
