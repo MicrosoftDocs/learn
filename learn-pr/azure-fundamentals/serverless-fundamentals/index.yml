@@ -35,7 +35,6 @@ subjects:
 units:
 - learn.azure.serverless-fundamentals.use-azure-functions
 - learn.azure.serverless-fundamentals.use-azure-logic-apps
-- learn.azure.serverless-fundamentals.summary
 
 badge:
   uid: learn.azure.serverless-fundamentals.badge
