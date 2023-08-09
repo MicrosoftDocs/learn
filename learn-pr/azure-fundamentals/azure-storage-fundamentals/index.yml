@@ -39,7 +39,6 @@ subjects:
 units:
 - learn.azure.azure-storage-fundamentals.introduction
 - learn.azure.azure-storage-fundamentals.azure-storage-accounts
-- learn.azure.azure-storage-fundamentals.azure-file-storage
 - learn.azure.azure-storage-fundamentals.azure-storage-tiers
 - learn.azure.azure-storage-fundamentals.knowledge-check
 - learn.azure.azure-storage-fundamentals.summary
