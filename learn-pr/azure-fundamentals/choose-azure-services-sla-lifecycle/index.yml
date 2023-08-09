@@ -31,7 +31,6 @@ roles:
 products:
 - azure
 units:
-- learn.azure.choose-azure-services-sla-lifecycle.2-what-are-service-level-agreements
 - learn.azure.choose-azure-services-sla-lifecycle.3-define-application-sla
 - learn.azure.choose-azure-services-sla-lifecycle.4-design-application-meet-sla
 - learn.azure.choose-azure-services-sla-lifecycle.5-access-preview-services
