@@ -2062,3 +2062,8 @@ achievements:
   title: Protect against security threats on Azure
   summary: Learn how Azure can help you protect the workloads that you run both in the cloud and in your on-premises datacenter.
   iconUrl: /training/achievements/review-security-tools-features.svg
+- uid: learn.azure.secure-network-connectivity-azure.badge
+  type: badge
+  title: Secure network connectivity on Azure
+  summary: Learn about the Azure services you can use to help ensure that your network is safe, secure, and trusted.
+  iconUrl: /training/achievements/secure-network-connectivity.svg
