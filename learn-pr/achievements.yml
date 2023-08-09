@@ -2047,3 +2047,8 @@ achievements:
   title: Explore Azure networking services
   summary: In this module, you take a look at several of the core networking resources that are available in Azure. You learn about Azure Virtual Network, which you can configure into a customized network environment that meets your company's needs. You also learn how you can use Azure VPN Gateway and Azure ExpressRoute to create secure communication tunnels between your company's different locations.
   iconUrl: /training/achievements/azure-networking-fundamentals.svg
+- uid: learn.azure.azure-storage-fundamentals.badge
+  type: badge
+  title: Explore Azure Storage services
+  summary: In this module, you'll learn about some of the different storage options that are available in Azure Storage services, and the scenarios in which each storage option is appropriate. As you complete the individual units in this module, you'll learn about Azure Blob Storage, Azure Disk Storage, Azure Files, and Blob access tiers.
+  iconUrl: /training/achievements/azure-storage-fundamentals.svg
