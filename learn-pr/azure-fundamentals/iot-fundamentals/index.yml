@@ -32,7 +32,6 @@ products:
 subjects:
 - iot
 units:
-- learn.azure.iot-fundamentals.introduction
 - learn.azure.iot-fundamentals.use-iot-hub
 - learn.azure.iot-fundamentals.use-iot-central
 - learn.azure.iot-fundamentals.use-azure-sphere
