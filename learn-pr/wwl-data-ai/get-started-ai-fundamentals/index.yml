@@ -7,7 +7,11 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+
 title: Get started with AI on Azure
 summary: With AI, we can build solutions that seemed like science fiction a short time ago; enabling incredible advances in health care, financial management, environmental protection, and other areas to make a better world for everyone.
 abstract: |
@@ -23,7 +27,7 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 - azure-machine-learning
 subjects:
 - artificial-intelligence

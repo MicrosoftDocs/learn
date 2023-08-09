@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: defender-for-iot
 title: Examine Microsoft Defender for Cloud and Microsoft Defender for IoT
 summary: This module introduces you to various Azure services that can be used to monitor and enhance the security of your solution and examines the features and capabilities of Microsoft Defender for IoT.
 abstract: |

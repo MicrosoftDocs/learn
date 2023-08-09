@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 04/13/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: "Check your knowledge"
@@ -20,7 +19,7 @@ quiz:
       explanation: "Incorrect. Using `(int)` temporarily converts the value to a whole number Integer value"
     - content: "4"
       isCorrect: false
-      explanation: "Incorrect. Fractional values casted to an Integer are not rounded up."
+      explanation: "Incorrect. Fractional values casted to an Integer aren't rounded up."
     - content: "3"
       isCorrect: true
       explanation: "Correct!"

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure and manage SQL database security
 summary: Configure and lock down your SQL database on Azure to protect your corporate data while it's stored.
 abstract: |

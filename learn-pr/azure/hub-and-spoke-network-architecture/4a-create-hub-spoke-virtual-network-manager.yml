@@ -4,8 +4,8 @@ metadata:
   title: Create a hub-spoke network topology with Azure Virtual Network Manager
   description: Learn about the benefits in creating a hub-spoke network topology using Azure Virtual Network Manager.
   ms.date: 12/08/2021
-  author: KumudD
-  ms.author: kumud
+  author: mbender-ms
+  ms.author: mbender
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Create a hub-spoke network topology with Azure Virtual Network Manager

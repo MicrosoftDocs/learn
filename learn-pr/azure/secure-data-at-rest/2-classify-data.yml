@@ -5,8 +5,8 @@ metadata:
   title: Classify your data and protect confidential information
   description: Classify your data and protect confidential information.
   ms.date: 10/29/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 7

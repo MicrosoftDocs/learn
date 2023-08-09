@@ -3,7 +3,7 @@ uid: learn.azure.shift-express-api-azure-functions.11-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Three multiple-choice questions
+  description: Three multiple-choice questions.
   ms.date: 04/10/2020
   author: jopapa
   ms.author: jopapa
@@ -15,45 +15,45 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-    - content: "How would you change the route endpoint for a function in a folder named _vacations-get_ to `vacations`?"
+    - content: "In an Azure Functions application, how would you change the route endpoint for a function in a folder named _vacations-get_ to `vacations`?"
       choices:
-        - content: "The `route` property in the `bindings` array `req` object in the _function.json_ file"
+        - content: "Add the `route` property to the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: true
-          explanation: "Correct.  By convention, the `req` object will default the route to the same name as the folder that contains the function. When you want to override the name of the route, you can add a `route` property to the `req` object in the `bindings` array of the _function.json_."
-        - content: "The `methods` property in the `bindings` array `req` object in the _function.json_ file"
+          explanation: "Correct. By convention, the `req` object defaults the route to the same name as the folder that contains the function. To override the name of the route, you add the `route` property."
+        - content: "Change the `methods` property in the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: false
-          explanation: "Incorrect. The `methods` property defines which HTTP methods will be directed to the route."
-        - content: "The `authLevel` property in the `bindings` array `req` object in the _function.json_ file"
+          explanation: "Incorrect. The `methods` property defines which HTTP methods are directed to the route."
+        - content: "Change the `authLevel` property in the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: false
           explanation: "Incorrect. The `authLevel` property defines the authorization level required to access the function."
-        - content: "The `redirect` property in the `bindings` array `req` object in the _function.json_ file"
+        - content: "Add the `redirect` property to the `bindings` array for the `req` object in the _function.json_ file."
           isCorrect: false
-          explanation: "Incorrect. There isn't redirect property in the `bindings` array `req` object."
-    - content: "Where would you find the code in an Azure Functions Application that runs when an HTTP request is made?"
+          explanation: "Incorrect. There isn't a `redirect` parameter for HTTP bindings."
+    - content: "In a Functions application, where do you find the code that runs when an HTTP request is made?"
       choices:
-        - content: "The _index.ts_ file in a function's folder"
-          isCorrect: true
-          explanation: "Correct.  Each function is contained in a folder. Each function's folder contains an _index.ts_ file, which fires for its matching route."
-        - content: "The _function.json_ file in a function's folder"
+        - content: "In the _function.json_ file, in the function's folder."
           isCorrect: false
           explanation: "Incorrect. The _function.json_ file contains the function's configuration."
-        - content: "The _host.json_ file in the Azure Functions application root"
-          isCorrect: false
-          explanation: "Incorrect. The _host.json_ file contains configuration for the application, not a specific function."
-        - content: "The _routes.ts_ file"
-          isCorrect: false
-          explanation: "Incorrect. There isn't a _routes.json_ file by default in an Azure Functions application."
-    - content: "How do you access both the Request and Response of HTTP calls in Azure Functions?"
-      choices:
-        - content: "Use the `Context` parameter that is passed to each function."
+        - content: "In the _index.ts_ file, in the function's folder."
           isCorrect: true
-          explanation: "Correct.  Each function is passed a `Context` object, which contains, among other properties, `req` and a `res` properties. `Context.req` and `Context.res` are the Request and Response of the HTTP call."
-        - content: "Use the `HttpRequest` parameter that is passed to each function."
+          explanation: "Correct. Each function is in a folder that contains an _index.ts_ file, which fires for its matching route."
+        - content: "In the _host.json_ file, in the Functions application root."
           isCorrect: false
-          explanation: "Incorrect. The `HttpRequest` parameter represents the HTTP Request, but it doesn't offer access to the Response."
-        - content: "Use the `Request` and `Response` parameters that are passed to each function."
+          explanation: "Incorrect. The _host.json_ file contains configuration for the overall application."
+        - content: "In the _routes.ts_ file."
           isCorrect: false
-          explanation: "Incorrect. The Request and Response aren't directly passed to a function."
-        - content: "Use the async/await syntax to access the Request and Response."
+          explanation: "Incorrect. A Functions application doesn't have a _routes.ts_ file by default."
+    - content: "How do you access the request and response objects of HTTP calls in a Functions application?"
+      choices:
+        - content: "Use the `Context` parameter that passes to each function."
+          isCorrect: true
+          explanation: "Correct.  Each function is passed a `Context` object that contains `req` and `res` properties. `Context.req` and `Context.res` are the request and response of the HTTP call."
+        - content: "Use the `HttpRequest` parameter that passes to each function."
           isCorrect: false
-          explanation: "Incorrect. The async/await syntax helps execute asynchronous code not the Request and Response."
+          explanation: "Incorrect. The `HttpRequest` parameter represents the HTTP request, but it doesn't offer access to the response."
+        - content: "Use the `Request` and `Response` parameters that pass to each function."
+          isCorrect: false
+          explanation: "Incorrect. The `Request` and `Response` parameters don't directly pass to the function."
+        - content: "Use the `async`/`await` syntax to access the request and response."
+          isCorrect: false
+          explanation: "Incorrect. The `async`/`await` syntax helps execute asynchronous code, not the request and response."

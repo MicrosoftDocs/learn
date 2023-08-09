@@ -6,8 +6,9 @@ metadata:
   ms.date: 11/15/2022
   author: alexwolfmsft
   ms.author: alexwolf
-  ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
+  ms.topic: module-build-your-first
+  ms.prod: aspnet-core
+  manager: mcleans
 title: Build your first Orleans app with ASP.NET Core 7.0
 summary: Learn how to build cloud native, distributed apps with Orleans.
 abstract: |

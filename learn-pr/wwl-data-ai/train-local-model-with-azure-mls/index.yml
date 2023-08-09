@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Train a machine learning model with Azure Machine Learning
 summary: Learn how to use Azure Machine Learning to train a model and register it in a workspace.
 abstract: |

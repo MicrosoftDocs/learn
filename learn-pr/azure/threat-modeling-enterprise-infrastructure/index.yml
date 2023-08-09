@@ -3,11 +3,10 @@ uid: learn.azure.threat-modeling-enterprise-security
 metadata:
   title: Secure your infrastructure with threat modeling
   description: Learn how to use the foundation of threat modeling to identify enterprise risks and find ways to reduce or eliminate them.
-  ms.date: 03/01/2021
+  ms.date: 08/07/2023
   author: rodrigosantos
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Secure your infrastructure with threat modeling
 summary: Learn how to use the foundation of threat modeling to identify enterprise risks and find ways to reduce or eliminate them.
 abstract: |
@@ -30,10 +29,9 @@ roles:
 - solution-architect
 products:
 - azure
-- azure-iot-security-center
 - azure-security-center
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

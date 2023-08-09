@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-devops-aspnet-core.5-deploy-github-action
 metadata:
-  title: Exercise - Create a GitHub Action to deploy to AKS
-  description: Implement and test a GitHub Action to deploy an ACR image to AKS.
+  title: Exercise - Create a GitHub action to deploy to AKS
+  description: Implement and test a GitHub action to deploy an Azure Container Registry image to Azure Kubernetes Service (AKS).
   ms.date: 09/16/2020
   author: scottaddie
   ms.author: scaddie
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
-title: Exercise - Create a GitHub Action to deploy to AKS
+title: Exercise - Create a GitHub action to deploy to AKS
 durationInMinutes: 10
 content: |
   [!include[](includes/5-deploy-github-action.md)]

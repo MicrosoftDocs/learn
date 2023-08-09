@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe concepts of cryptography
 summary: Cryptography is foundational to protecting the confidentiality, integrity, and availability of information; and defending against cyberattacks.  Throughout this module, you'll learn about the different elements of cryptography and their application in cybsecurity.
 abstract: |

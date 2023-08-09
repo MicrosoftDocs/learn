@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Learn how to make your application storage highly available by ensuring that you can fail over resources if there's an Azure region failure.
   ms.date: 09/03/2019
-  author: jboeshart
-  ms.author: jaboes
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 2

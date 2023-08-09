@@ -4,11 +4,11 @@ title: Identify Azure Machine Learning resources
 metadata:
   title: Identify Azure Machine Learning resources
   description: "Identify Azure Machine Learning resources"
-  ms.date: 01/05/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
 durationInMinutes: 6
 content: |
   [!include[](includes/3-identify-resources.md)]

@@ -6,13 +6,13 @@ Activities within Azure Data Factory define the actions that will be performed o
 
 ## Data movement activities
 
-Data movement activities simply move data from one data store to another. You can use the Copy Activity to perform data movement activities, or by using JSON. There are a wide range of data stores that are supported as a source and as a sink. This list is ever increasing, and you can find the [latest information here](/azure/data-factory/concepts-pipelines-activities). 
+Data movement activities simply move data from one data store to another. You can use the Copy Activity to perform data movement activities, or by using JSON. There are a wide range of data stores that are supported as a source and as a sink. This list is ever increasing, and you can find the [latest information here](/azure/data-factory/concepts-pipelines-activities#data-movement-activities). 
 
 ## Data transformation activities
 
 Data transformation activities can be performed natively within the authoring tool of Azure Data Factory using the Mapping Data Flow. Alternatively, you can call a compute resource to change or enhance data through transformation, or perform analysis of the data. These include compute technologies such as Azure Databricks, Azure Batch, SQL Database and Azure Synapse Analytics, Machine Learning Services, Azure Virtual machines and HDInsight. You can make use of any existing SQL Server Integration Services (SSIS) Packages stored in a Catalog to execute in Azure
 
-As this list is always evolving, you can get the [latest information here](/azure/data-factory/concepts-pipelines-activities).
+As this list is always evolving, you can get the [latest information here](/azure/data-factory/concepts-pipelines-activities#data-transformation-activities).
 
 ## Control activities
 
@@ -29,7 +29,7 @@ When graphically authoring ADF solutions, you can use the control flow within th
 | If Condition Activity  | The If Condition can be used to branch based on condition that evaluates to true or false. The If Condition activity provides the same functionality that an if statement provides in programming languages. It evaluates a set of activities when the condition evaluates to true and another set of activities when the condition evaluates to false. |
 | Wait Activity  | When you use a Wait activity in a pipeline, the pipeline waits for the specified period of time before continuing with execution of subsequent activities. |
 
-You can get the [latest information here](/azure/data-factory/concepts-pipelines-activities).
+You can get the [latest information here](/azure/data-factory/concepts-pipelines-activities#control-activities).
 
 ## Activities and pipelines 
 

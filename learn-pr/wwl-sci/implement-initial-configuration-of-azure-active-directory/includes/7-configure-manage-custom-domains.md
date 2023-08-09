@@ -9,14 +9,14 @@ When your organization is created, the initial domain name, such as ‘contoso.o
 
 The primary domain is the default domain name for a new user when you create a new user. Setting a primary domain name streamlines the process for an administrator to create new users in the portal. To change the primary domain name:
 
-1. Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
-1. Select **Azure Active Directory**.
-1. Select **Custom domain names**.
+1.  Sign in to the [Azure portal](https://portal.azure.com/) with an account that's a Global Administrator for the organization.
+2.  Select **Azure Active Directory**.
+3.  Select **Custom domain names**.
     
     :::image type="content" source="../media/add-custom-domain-b91e0e89.png" alt-text="Screenshot of the Add custom user dialog box. Opening the user management page.":::
     
-1. Select the name of the domain that you want to be the primary domain.
-1. Select the **Make primary** command. Confirm your choice when prompted.
+4.  Select the name of the domain that you want to be the primary domain.
+5.  Select the **Make primary** command. Confirm your choice when prompted.
     
     :::image type="content" source="../media/make-primary-domain-0d2ab135.png" alt-text="Screenshot of the configure domain dialog. You can make a domain name the primary.":::
     
@@ -29,7 +29,7 @@ You can add up to 900 managed domain names. If you're configuring all your domai
 
 ## Add subdomains of a custom domain
 
-If you want to add a subdomain name such as ‘europe.contoso.com’ to your organization, you should first add and verify the root domain, such as contoso.com. The subdomain is automatically verified by Azure AD. To see that the subdomain you added is verified, refresh the domain list in the browser.
+If you want to add a subdomain name such as ‘europe.contoso.com’ to your organization, you should first add and verify the root domain, such as contoso.com. The subdomain is automatically verified by Azure AD. To see the verified subdomain you added, refresh the domain list in the browser.
 
 If you've already added a contoso.com domain to one Azure AD organization, you can also verify the subdomain europe.contoso.com in a different Azure AD organization. When adding the subdomain, you're prompted to add a TXT record in the DNS hosting provider.
 

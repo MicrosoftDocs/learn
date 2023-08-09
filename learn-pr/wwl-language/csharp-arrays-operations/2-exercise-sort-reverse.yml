@@ -4,11 +4,10 @@ title: Exercise - Discover Sort() and Reverse()
 metadata:
   title: Exercise - Discover Sort() and Reverse()
   description: "Exercise - Discover Sort() and Reverse()"
-  ms.date: 04/25/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/2-exercise-sort-reverse.md)]

@@ -4,18 +4,18 @@ metadata:
   moduleType: standard  
   title: Architect modern applications using Azure SQL Database
   description: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
-  ms.date: 3/15/2023  
+  ms.date: 06/06/2023  
   author: WilliamDAssafMSFT
   ms.author: wiassaf
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure  
+  ms.service: sql-database
 title: Architect modern applications using Azure SQL Database
 summary: Break down a scenario for an application and build a multi-service solution based on the microservices approach. Learn how to use modern database capabilities to build a foundation for applications.
 abstract: |
-  By the end of this module, you will be able to: 
-    - Build a foundation for applications with Azure SQL Database
-    - Demonstrate modern database capabilities with Azure SQL Database
+  By the end of this module, you'll be able to: 
+    - Build a foundation for applications with Azure SQL Database.
+    - Demonstrate modern database capabilities with Azure SQL Database.
 prerequisites: |
   - Ability to navigate the Azure portal
   - Familiarity with database concepts such as stored procedures and querying

@@ -1,6 +1,7 @@
 
 
 
+
 In this guided project, you use Visual Studio Code to update an existing C# application. Your updates focus on code debugging and adding exception handling to the application. You review and debug the application, implement a `try-catch` pattern in top-level statements, and then throw exceptions from within a method that're caught in the top-level statements.
 
 ## Project overview

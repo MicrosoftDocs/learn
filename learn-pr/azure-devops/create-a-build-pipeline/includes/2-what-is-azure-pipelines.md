@@ -26,20 +26,6 @@ And Azure Pipelines works with many different languages and app types. If we wan
 
 **Mara:** Right! Of course, I've got bigger plans. I know you're all going to love this first step, so I want to build on it to give us true continuous integration.
 
-## What is continuous integration?
-
-Continuous integration (CI) is the process of automating the build and testing of code every time a team member commits changes to version control.
-
-CI encourages developers to share their code and unit tests by merging their changes into a shared version control repository after every small task completion. Committing code triggers an automated build system to grab the latest code from the shared repository and to build, test, and validate the full main branch (also known as the trunk).
-
-In this short video, Abel Wang, Cloud Advocate at Microsoft, explains the concept of continuous integration.
-
-**Ask Abel**
-
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LLSx]
-
-Let's check back in with Mara and Amita.
-
 **Amita:** Give me the 5-minute rundown on continuous integration.
 
 **Mara:** Let me draw you a picture.
@@ -68,72 +54,10 @@ And that's it. I know we can do this.
 
 **Mara:** Will do!
 
-## Implement and manage build infrastructure
+## Manage build agents
 
-Now that you and the team are familiar with Azure Pipelines, let's discuss a few of the configuration details. Specifically, we'll talk a bit more about build agents, integrating with third-party systems, managing your pipeline configuration, and using concurrent pipelines.
+Now that you and the team are familiar with Azure Pipelines, let's talk a bit more about build agents. A build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software, you need at least one agent. As you add more code and people, you'll eventually need more than one agent. There are two main categories of agents.
 
-### Build agents
+* **Microsoft-hosted agents** are agents managed by Microsoft, and maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a new agent for each job in the pipeline. In this module, when you choose **Local development environment using a Microsoft-hosted agent**, you are running your pipeline on a Microsoft-hosted agent. To run pipelines on a Microsoft-hosted agent, your organization must have at least one Microsoft-hosted parallel job. [Check your Microsoft-hosted parallel jobs count](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs) to ensure that you have at least one Microsoft-hosted parallel job. If your Microsoft-hosted parallel jobs count is zero (new Azure DevOps organizations typically have zero parallel jobs), you can [request a free grant](https://aka.ms/azpipelines-parallelism-request). The approval process for the free grant typically takes 2-3 business days.
 
-As you know, a build agent is a piece of installable software that runs one build or deployment job at a time. To build your code or deploy your software, you need at least one agent. As you add more code and people, you'll eventually need more than one agent. Let's examine build agents in a bit more depth.
-
-### Differences between implementing hosted and private agents
-
-You can use either a Microsoft-hosted or a private agent. What are the differences?
-
-If your pipelines are in Azure Pipelines, then you've got a convenient option to build and deploy using a Microsoft-hosted agent. With Microsoft-hosted agents, maintenance and upgrades are taken care of for you. Each time you run a pipeline, you get a fresh virtual machine. The virtual machine is discarded after one use.
-
-For many teams, this is the simplest way to build and deploy. You can try it first and see if it works for your build or deployment. If not, you can use a self-hosted agent.
-
-A self-hosted agent is an agent that you set up and manage on your own to run build and deployment jobs. You can use self-hosted agents in Azure Pipelines. Self-hosted agents give you more control and let you install any software you need for your builds and deployments.
-
-You can install the agent on Linux, macOS, or Windows machines. You can also install an agent on a Linux Docker container. After you've installed the agent on a machine, you can install any other software on that machine as required by your build or deployment jobs.
-
-### Agent pools
-
-Instead of managing each agent individually, you can organize agents into agent pools. An agent pool defines the sharing boundary for all agents in that pool. In Azure Pipelines, agent pools are scoped to the Azure DevOps organization, so that you can share an agent pool across projects.
-
-A project agent pool provides access to an organization agent pool. When you create a build or release pipeline, you specify which pool it uses. Pools are scoped to your project, so you can only use them across build and release pipelines within a project.
-
-To share an agent pool with multiple projects, you'll create a project agent pool in each project pointing to an organization agent pool. While multiple pools across projects can use the same organization agent pool, multiple pools within a project can't use the same organization agent pool. Also, each project agent pool can use only one organization agent pool.
-
-### Agent queues
-
-If you're a project team member, you can create and manage agent build queues from the agent pools tab in project settings.
-
-### Service endpoints for integration with third-party systems
-
-Service endpoints are a way for Azure DevOps to connect to external systems or services. They're bundles of securely stored properties that include but aren't limited to:
-
-* Service name
-* Description
-* Server URL
-* Certificates or tokens
-* User names and passwords
-
-Extensions are then able to access the service endpoint to get the stored details to perform the necessary operations on that service.
-
-### Concurrent pipelines
-
-You can run concurrent pipelines (also called parallel jobs) in Azure Pipelines. One parallel job in Azure Pipeline lets you run a single build or release job at any given time. This rule is true whether you run the job on Microsoft-hosted or self-hosted agents. Parallel jobs are purchased at the organization level, and they're shared by all projects in an organization.
-
-#### Microsoft-hosted CI/CD
-
-If you want to run your builds and releases on machines that Microsoft manages, use Microsoft-hosted parallel jobs. Your jobs run on the pool of hosted agents. Microsoft provides a free tier of service ([request a free grant](/azure/devops/pipelines/troubleshooting/troubleshooting#check-for-available-parallel-jobs)) for every organization.  [Consult the Azure DevOps documentation](/azure/devops/pipelines/licensing/concurrent-jobs?azure-portal=true) to see the criteria.
-
-If you want Azure Pipelines to orchestrate your builds and releases, but use your own machines to run them, use self-hosted parallel jobs. You start by deploying agents on your machines. You can register any number of these self-hosted agents in your organization. When you follow this training module using GitHub Codespaces, you're using a self-hosted agent that runs in the container used to host your GitHub Codespaces project.
-
-#### Plan a strategy for concurrent pipelines
-
-Here are some steps to take to plan for concurrent pipelines.
-
-#### Determine how many parallel jobs you need
-
-Begin by seeing if the free tier offered in your organization is enough for your teams. When you've reached the per-month limit for the free tier of Microsoft-hosted parallel jobs, you can start by buying one parallel job. As the number of queued builds and releases exceeds the number of parallel jobs you have, your build and release queues will grow longer. When you find the queue delays are too long, you can purchase additional parallel jobs as needed. A simple rule of thumb is to estimate that you'll need one parallel job for every four to five users in your organization.
-
-#### Think about your scenario
-
-Here are some examples of where you might need multiple parallel jobs:
-
-* If you have multiple teams, and if each of them requires a CI build, you'll likely need a parallel job for each team.
-* If your CI build trigger applies to multiple branches, you'll likely need a parallel job for each active branch.
-* If you develop multiple apps by using one organization or server, you'll likely need additional parallel jobs, one to deploy each app at the same time.
+* **Self-hosted agents** are agents that are managed by you. You configure the virtual machines or containers by installing the agent software and desired tools, and register the agents with Azure DevOps. In this module, when you choose **GitHub Codespaces development environment using a self-hosted agent**, you're using a self-hosted agent running in your GitHub Codespaces container. Self-hosting the agent on a GitHub Codespaces container is not a typical production scenario, but it does provide an environment for completing this training module.

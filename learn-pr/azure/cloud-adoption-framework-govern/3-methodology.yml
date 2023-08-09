@@ -15,14 +15,14 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "Tailwind Traders currently has this policy in place: <i>Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets.</i> Is it a well-structured, scalable, and actionable policy?"
+  - content: "This policy is currently in place at Tailwind Traders: *Customer and financial data can only be hosted in a specific network segment of the existing datacenters, referred to as protected assets.* Is it a well-structured, scalable, and actionable policy?"
     choices:
     - content: "Yes"
       isCorrect: false
       explanation: Incorrect. The policy creates solution dependence and doesn't outline the actual concerns or risks.
     - content: "No"
       isCorrect: true
-      explanation: Correct! This policy is not well structured and would create a number of issues during cloud adoption.
+      explanation: Correct! This policy isn't well structured and would create many issues during cloud adoption.
   - content: Which part of the Govern methodology in the Cloud Adoption Framework should be the first step in addressing the existing policy?
     choices:
     - content: Deploy a governance foundation to set up governance tools in Azure.
@@ -31,6 +31,6 @@ quiz:
     - content: Advance the Security Baseline discipline to mimic the on-premises policy in Azure.
       isCorrect: false
       explanation: Incorrect. You might get close to meeting this policy requirement with a sound security baseline, but the team still would be bound to keep sensitive data and apps in the existing datacenter.
-    - content: Update the corporate policy to address the risks and concerns in non-technical terms.
+    - content: Update the corporate policy to address the risks and concerns in nontechnical terms.
       isCorrect: true
       explanation: Correct! Learning the tools and addressing security concerns are both important. But no amount of automated tooling can overcome poorly aligned corporate policies.

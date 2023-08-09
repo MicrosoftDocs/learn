@@ -1,5 +1,6 @@
 
 
+
 Scripts are ideal when you want to run machine learning workloads in production environments. Imagine you're a data scientist who has developed a machine learning model to predict diabetes. The model is performing as expected and you created a training script. The script is used to retrain the model every month when new data has been collected.
 
 You'll want to monitor the model's performance over time. You want to understand whether the new data every month benefits the model. Next to tracking models that are trained in notebooks, you can also use **MLflow** to track models in scripts. 

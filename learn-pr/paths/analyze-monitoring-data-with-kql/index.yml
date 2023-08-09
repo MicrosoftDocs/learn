@@ -1,0 +1,50 @@
+### YamlMime:LearningPath
+uid: learn.analyze-monitoring-data-with-kql
+title: Analyze monitoring data with Kusto Query Language
+summary: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+metadata:
+  title: Analyze monitoring data with Kusto Query Language
+  description: Learn how to analyze data in Azure Monitor using Kusto Query Language (KQL).
+  ms.date: 07/03/2023
+  author: guywi-ms
+  ms.author: guywild
+  ms.topic: interactive-tutorial
+  ms.service: azure-monitor
+prerequisites: Familiarity with database structures like tables, columns, and rows.
+iconUrl: /training/achievements/generic-trophy.svg
+levels:
+- beginner
+- intermediate
+- advanced
+roles:
+- business-analyst
+- data-analyst
+- data-engineer 
+- data-scientist
+- developer
+- devops-engineer
+- security-operations-analyst
+- technology-manager 
+products:
+- azure
+- azure-log-analytics
+- azure-monitor
+- azure-portal
+- azure-sentinel
+- microsoft-defender
+subjects:
+- cloud-computing
+- data-ai
+- data-analytics
+- data-science
+- data-visualization
+- infrastructure
+modules:
+- learn.azure.explore-fundamentals-kql
+- learn.write-first-query-kusto-query-language
+- learn.azure.gain-insights-data-kql
+- learn.multi-table-queries-with-kusto-query-language
+- learn.analyze-infrastructure-with-azure-monitor-logs
+- learn.analyze-logs-with-kql
+trophy:
+  uid: learn.analyze-monitoring-data-with-kql.trophy

@@ -1,0 +1,81 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: Knowledge check
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 7
+quiz:
+  title: Check your knowledge
+  questions:
+  - content: "Which deployment tool should you choose for multiple cloud deployments that include Azure and Amazon Web Services (AWS)?"
+    choices:
+    - content: "Azure CLI"
+      explanation: "Incorrect: Azure CLI is intended to facilitate scripted deployment of Azure resources."
+      isCorrect: false
+    - content: "Bicep"
+      isCorrect: false
+      explanation: "Incorrect: Bicep is intended to facilitate template-based deployment of Azure resources."
+    - content: "Terraform"
+      isCorrect: true
+      explanation: "Correct: Azure Terraform supports deployments targeting multiple cloud environments."
+  - content: "Which deployment tool should you choose for declarative deployments to Azure if you want to maximize the platform integration capabilities?"
+    choices:
+    - content: "Azure CLI"
+      explanation: "Incorrect: Azure CLI offers an imperative, rather than declarative deployment functionality."
+      isCorrect: false
+    - content: "Bicep"
+      isCorrect: true
+      explanation: "Correct: Bicep is an Azure-native declarative provisioning tool with a wide range of platform integration capabilities."
+    - content: "Terraform"
+      isCorrect: false
+      explanation: "Incorrect: Terraform supports declarative provisioning in Azure and other cloud environments, but its degree of integration with Azure isn't as far reaching as Bicep."
+  - content: "Which tool can you use to run Azure CLI commands without having to add or install any software on your computer?"
+    choices:
+    - content: "Bicep"
+      explanation: "Incorrect: Bicep doesn't provide direct support to run Azure CLI commands and requires an installation."
+      isCorrect: false
+    - content: "Cloud Shell"
+      isCorrect: true
+      explanation: "Correct: Cloud Shell is a browser-based tool that includes built-in support for Azure CLI."
+    - content: "Terraform"
+      isCorrect: false
+      explanation: "Incorrect: Terraform doesn't provide direct support to run Azure CLI commands and requires adding the Terraform executable."
+  - content: "Which parameter of the Azure CLI az vm image command should you use to list all images from the same vendor?"
+    choices:
+    - content: "`--sku`"
+      explanation: "Incorrect: SKU represents an individual image version from a given publisher, and the same offer."
+      isCorrect: false
+    - content: "`--offer`"
+      isCorrect: false
+      explanation: "Incorrect: Offer represents an individual group of different image versions from the same publisher."
+    - content: "`--publisher`"
+      isCorrect: true
+      explanation: "Correct: Publisher represents an individual vendor, including all its offers and the corresponding images."
+  - content: "Which Azure resource is a prerequisite when deploying an Azure virtual machine, regardless of the provisioning method?"
+    choices:
+    - content: "Public IP address"
+      explanation: "Incorrect: A public IP address is optional when creating an Azure virtual machine."
+      isCorrect: false
+    - content: "Storage account"
+      isCorrect: false
+      explanation: "Incorrect: Although Azure virtual machine disks reside in Azure Storage, you don't need to create a storage account when using managed disks."
+    - content: "Virtual network"
+      isCorrect: true
+      explanation: "Correct: You must create a virtual network first before provisioning an Azure virtual machine."
+  - content: "What is the benefit of using Bicep templates over the Azure Resource Manager templates?"
+    choices:
+    - content: "Declarative provisioning"
+      explanation: "Incorrect: Both Bicep and Azure Resource Manager templates use declarative provisioning."
+      isCorrect: false
+    - content: "Simpler syntax"
+      isCorrect: true
+      explanation: "Correct: Bicep offers simplified, more compact syntax."
+    - content: "Standard JSON format"
+      isCorrect: false
+      explanation: "Incorrect: Bicep uses a domain-specific language, rather than JSON."

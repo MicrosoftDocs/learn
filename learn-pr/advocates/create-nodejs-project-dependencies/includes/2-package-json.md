@@ -5,7 +5,7 @@ The package.json file is a manifest file for your Node.js project. It contains m
 A package.json file isn't something you author by hand. It's the result of running the npm `init` command. There are two main ways to run this command:
 
 - `npm init`: This command starts a wizard that prompts you for information about a project's name, version, description, entry point, test command, Git repository, keywords, author, and license.
-- `npm init -y`: This command uses the `-y` flag, and is a faster version of the `npm init` command because it's *not* interactive. Instead, this command automatically assigns default values for all values you're prompted to enter by using the `npm init`.
+- `npm init -y`: This command uses the `-y` flag and is a faster version of the `npm init` command because it's *not* interactive. Instead, this command automatically assigns default values for all values you're prompted to enter by using the `npm init`.
 
 The `npm init` and `npm init -y` commands both generate a package.json file. Here's an example:
 
@@ -38,7 +38,7 @@ You can think of all the possible properties in the package.json file as belongi
 
 You're likely to want to have a way to run, test, and build any project, whether by using Node.js or not. The Node.js runtime recognizes this need and provides guidance about how to name your scripts. The idea is to ensure that all Node.js projects use consistent script names. It's a better developer experience to be able to move among Node.js projects and quickly orient yourself because you see a consistent set of actions. Various tools for DevOps and instrumentation can take advantage of this naming consistency.
 
-You should set up four scripts and name them in a specific way. The following specific names are expected by the developer community and various tools:
+You should set up four scripts and name them in a specific way. The developer community and various tools expect the following specific names:
 
 - `start`: Invokes the `node` command with the entry file as an argument. An example might be `node ./src/index.js`. This action invokes the `node` command and uses the entry file `index.js`.
 - `build`: Describes how to build your project. The build process should produce something that you can ship. For example, a build command could run a TypeScript compiler to produce the JavaScript version of the project that you want to ship.
@@ -76,4 +76,4 @@ You invoke actions by entering the command `npm run <action>`. For example, `npm
 
 The `start` and `test` action are *special* in that you can omit the word `run` in the command. Rather than entering the command `npm run start`, you can enter `npm start`.
 
-These four actions are a good starting point for any Node.js project, but each project will probably have a few more scripts that are specific to the project itself. 
+These four actions are a good starting point for any Node.js project, but each project will probably have a few more scripts that are specific to the project itself.

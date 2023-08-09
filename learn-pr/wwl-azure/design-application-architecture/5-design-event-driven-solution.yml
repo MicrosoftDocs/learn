@@ -4,13 +4,11 @@ title: Design an event-driven solution
 metadata:
   title: Design an event-driven solution
   description: "Design an event-driven solution"
-  ms.date: 03/14/2023
+  ms.date: 05/10/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/5-design-event-driven-solution.md)]

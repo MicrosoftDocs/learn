@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore device management with device twins and direct methods
 summary: This module provides you with experience implementing device management tasks using a combination of direct methods and device twin properties.
 abstract: |
@@ -41,3 +40,4 @@ units:
 - learn.wwl.explore-device-management-device-twins-direct-methods.summary
 badge:
   uid: learn.wwl.explore-device-management-device-twins-direct-methods.badge
+hidden: true

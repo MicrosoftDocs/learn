@@ -4,11 +4,11 @@ title: Examine the Visual Studio Code user interface
 metadata:
   title: Examine the Visual Studio Code user interface
   description: "Examine the Visual Studio Code user interface"
-  ms.date: 04/13/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
 durationInMinutes: 4
 content: |
   [!include[](includes/3-examine-visual-studio-code-user-interface.md)]

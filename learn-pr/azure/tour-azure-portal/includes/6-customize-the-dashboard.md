@@ -90,7 +90,7 @@ Some tiles have editable settings. For example, with the clock tile, you can sel
 
 ![Screenshot showing the Edit clock settings for the clock tile.](../media/6-edit-clock.png)
 
-For multi-national or transcontinental companies, you could add several clocks, each with a different time zone.
+For multi-national/regional or transcontinental companies, you could add several clocks, each with a different time zone.
 
 ### Accepting your edits
 

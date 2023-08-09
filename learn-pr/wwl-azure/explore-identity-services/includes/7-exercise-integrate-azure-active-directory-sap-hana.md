@@ -1,5 +1,6 @@
 
 
+
 Integrating SAP HANA with Azure AD provides you with the following benefits:
 
 - You can control in Azure AD who has access to SAP HANA.

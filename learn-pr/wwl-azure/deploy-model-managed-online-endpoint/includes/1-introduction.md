@@ -6,7 +6,7 @@ Whenever you train a model, you ultimately will want to consume the model. You w
 
 To consume the model, you need to **deploy** it. One way to deploy a model is to integrate it with a service that allows applications to request instant, or **real-time**, predictions for individual or small sets of data points.
 
-:::image type="content" source="../media/07-01-real-time.jpg" alt-text="Diagram of an application requesting an instant prediction of a model.":::
+:::image type="content" source="../media/07-01-real-time.jpg" alt-text="Diagram showing an application requesting an instant prediction of a model.":::
 
 In Azure Machine Learning, you can use **online endpoints** to deploy and consume your model.
 

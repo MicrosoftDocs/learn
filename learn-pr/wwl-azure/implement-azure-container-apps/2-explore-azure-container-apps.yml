@@ -4,11 +4,11 @@ title: Explore Azure Container Apps
 metadata:
   title: Explore Azure Container Apps
   description: "Explore Azure Container Apps"
-  ms.date: 04/19/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/2-explore-azure-container-apps.md)]

@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.intro-to-azure-operator-nexus
+hidden: true
+metadata:
+  title: Introduction to Azure Operator Nexus
+  description: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
+  ms.date: 05/05/2023
+  author: lnyswonger
+  ms.author: lnyswonger
+  ms.topic: interactive-tutorial
+  ms.service: operator-nexus
+title: Introduction to Azure Operator Nexus
+summary: "Learn the functionalities of Azure Operator Nexus, which enables you to execute applications within a local infrastructure while offering access to Azure services within a Telco operator's data center."
+abstract: |
+  After completing this module, you'll be able to:
+  - Describe Operator Nexus hybrid systems architecture.
+  - Explain Operator Nexus deployment options. 
+  - Describe Operator Nexus Resource Providers.
+
+prerequisites: |
+  - Conceptual knowledge of Azure compute solutions.
+  - Working experience with virtual machines, containers, and virtual networks.
+  - Knowledge of AZ-900, AZ-104, AZ-305.
+iconUrl: /training/achievements/intro-to-operator-nexus.svg
+levels:
+  - intermediate
+roles:
+  - business-user
+  - solution-architect
+  - technology-manager
+  - support-engineer
+  - functional-consultant
+products:
+  - azure
+subjects:
+  - cloud-computing
+  - networking
+units:
+- learn.intro-to-azure-operator-nexus.introduction
+- learn.intro-to-azure-operator-nexus.what-is-operator-nexus
+- learn.intro-to-azure-operator-nexus.integrate-hybrid-cloud-consistency
+- learn.intro-to-azure-operator-nexus.operator-nexus-systems
+- learn.intro-to-azure-operator-nexus.operator-nexus-on-premises-infrastructure
+- learn.intro-to-azure-operator-nexus.resource-providers-for-operator-nexus
+- learn.intro-to-azure-operator-nexus.knowledge-check
+- learn.intro-to-azure-operator-nexus.summary
+badge:
+  uid: learn.intro-to-azure-operator-nexus.badge

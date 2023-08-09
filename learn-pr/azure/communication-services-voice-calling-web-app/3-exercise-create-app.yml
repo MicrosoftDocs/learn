@@ -4,10 +4,12 @@ title: Exercise - Scaffolding a voice calling web app
 metadata:
   title: Exercise - Scaffolding a voice calling web app
   description: Creating the scaffolding for an Azure Communication Services calling web app.
-  author: ProbablePrime
-  ms.author: rifox
+  author: rmcmurray
+  ms.author: robmcm
   ms.date: 04/20/2022
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

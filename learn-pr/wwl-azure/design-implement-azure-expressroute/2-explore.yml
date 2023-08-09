@@ -4,13 +4,12 @@ title: Explore Azure ExpressRoute
 metadata:
   title: Explore Azure ExpressRoute
   description: "Explore Azure ExpressRoute"
-  ms.date: 03/02/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 22
 content: |
   [!include[](includes/2-explore.md)]
@@ -30,7 +29,7 @@ quiz:
       explanation: "Incorrect. Azure ExpressRoute isn't used to connect data center services internal to an organization."
   - content: "What is the benefit of Bidirectional forwarding?"
     choices:
-    - content: "Bidirectional forwarding reduces the failure deduction time."
+    - content: "Bidirectional forwarding reduces the failure detection time."
       isCorrect: true
       explanation: "Correct. Enabling BFD over an ExpressRoute circuit can reduce the failure deduction time from a few tens of seconds to less than a second."
     - content: "Bidirectional forwarding allows traffic to flow in both directions."

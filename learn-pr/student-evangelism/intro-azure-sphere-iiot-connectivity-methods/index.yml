@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: azure-sphere
 title: "Introduction to Azure Sphere for industrial IoT connectivity"
 summary: "Characterize the types of connectivity options available to the Azure Sphere in an Industrial IoT scenario. Describe the functionality of each of the connectivity options and show how they can be combined to solve complex industrial IoT problems. "
 abstract: |

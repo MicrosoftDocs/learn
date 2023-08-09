@@ -12,7 +12,7 @@ Power Virtual Agents (PVA) is built on the Microsoft Power Platform, and enables
 Some features of the Azure Bot service aren't available in the PVA app, and require using Bot Framework Composer (which can be launched directly from the PVA web app) to integrate those features.
 
 > [!NOTE]
-> Terminology of concepts between PVA and Composer is different, so if you are planning to use the PVA app check out the correlation of [concepts for Composer users](/power-virtual-agents/preview/composer-concepts)
+> Terminology of concepts between PVA and Composer is different, so if you are planning to use the PVA app check out the correlation of [concepts for Composer users](/power-virtual-agents/composer-concepts-preview)
 
 For the AI Engineer course, PVA as an authoring tool isn't covered. If you'd like to learn or build with PVA, take a look at their [documentation pages](/power-virtual-agents/fundamentals-what-is-power-virtual-agents).
 

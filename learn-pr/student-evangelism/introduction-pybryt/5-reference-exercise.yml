@@ -8,7 +8,7 @@ metadata:
   ms.author: leestott
   ms.date: 10/27/2021
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 sandbox: true
 notebook: https://raw.githubusercontent.com/MicrosoftDocs/mslearn-introduction-to-pybryt/main/5-reference-exercise.ipynb

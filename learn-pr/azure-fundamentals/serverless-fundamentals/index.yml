@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Choose the best Azure serverless technology for your business scenario
 summary: Examine Azure serverless technologies, and choose the right service for your business scenario.
 abstract: |

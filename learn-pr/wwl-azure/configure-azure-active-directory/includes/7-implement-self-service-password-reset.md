@@ -1,5 +1,6 @@
 
 
+
 Many helpdesk calls are requests to reset passwords for users. The Azure Active Directory **self-service password reset** (SSPR) feature lets you give users the ability to bypass helpdesk and reset their own passwords.
 
 ### Things to know about the Azure AD SSPR feature

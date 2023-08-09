@@ -1,4 +1,5 @@
 
+
 Organizations need to know their data to identify important information across the estate and ensure that data is handled in line with compliance requirements. Admins can enable their organization to know its data through data classification capabilities and tools in the Microsoft Purview compliance portal, such as sensitive information types, trainable classifiers, content explorer, and activity explorer.
 
 Identifying and classifying sensitive items that are under your organization's control is the first step in the Information Protection discipline. Microsoft Purview provides three ways of identifying items so that they can be classified:
@@ -92,7 +93,7 @@ Admins can use more than 30 filters for data including:
 - Sensitivity label
 - Retention label
 
-The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](/microsoft-365/compliance/data-loss-prevention-policies?view=o365-worldwide), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
+The value of understanding what actions are being taken with sensitive content is that admins can see if the controls that they've already put in place, such as [data loss prevention policies](/microsoft-365/compliance/dlp-create-deploy-policy?view=o365-worldwide), are effective or not. For example, if it’s discovered that a large number of items labeled *Highly Confidential* have suddenly been downgraded to *Public*, admins can update policies and act to restrict undesired behavior as a response.
 
 ## Explore data classification in the compliance portal
 

@@ -9,7 +9,7 @@ Your goal here is to create a Linux VM and attach a new virtual hard disk (VHD) 
 
 The Azure CLI lets you set default values so you don't have to repeat them each time you run a command.
 
-Here, you'll specify the default Azure location, or region. This is the location where your Azure VM will be placed.
+You'll specify the default Azure location, or region. This is the location where your Azure VM will be placed.
 
 Ideally, this location would be close to your clients. In this case, select the closest region to you from the locations available to the Azure sandbox.
 

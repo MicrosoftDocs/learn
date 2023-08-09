@@ -1,6 +1,6 @@
-In the motor vehicle department system, you decide to run the web app on two servers. You'll implement each server using a virtual machine.
+In the motor vehicle department system, you decide to run the web app on two servers. You implement each server using a virtual machine.
 
-In this exercise, you'll create a pair of virtual machines and install the vehicle registration web app. You'll also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you'll deploy the license renewal web site to an instance of Azure App Service.
+In this exercise, you create a pair of virtual machines and install the vehicle registration web app. You also configure a virtual network that Application Gateway can use to connect to the virtual machines. Finally, you deploy the license renewal web site to an instance of Azure App Service.
 
 ![Diagram showing the resources that will be deployed.](../media/3-resources.svg)
 
@@ -18,7 +18,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     az group create --name $RG --location <location>
     ```
 
-1. In the Cloud Shell window, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet will contain the virtual machines.
+1. In the Cloud Shell window, run the following command. This command uses the Azure command-line interface to create a virtual network named `vehicleappvnet`. It's a private network that provides addresses in the range 10.0.0.0 to 10.0.255.255. The command also creates a subnet called `webServerSubnet`, with the address range 10.0.1.0 to 10.0.1.255. This subnet contains the virtual machines.
 
     ```azurecli
     az network vnet create \
@@ -86,7 +86,7 @@ In this exercise, you'll create a pair of virtual machines and install the vehic
     webServer2    MyResourceGroup    VM running                          southcentralus
     ```
 
-You've now created the virtual machines running the vehicle registration web app. Both virtual machines are identical and are part of the same virtual network.
+You have now created the virtual machines running the vehicle registration web app. Both virtual machines are identical and are part of the same virtual network.
 
 ## Create App Service and deploy the license renewal site
 
@@ -96,7 +96,7 @@ You've now created the virtual machines running the vehicle registration web app
     APPSERVICE="licenserenewal$RANDOM"
     ```
 
-1. Next, to create the App Service plan the web app will use, run the following command:
+1. Next, to create the App Service plan the web app uses, run the following command:
 
     ```azurecli
     az appservice plan create \
@@ -113,7 +113,7 @@ You've now created the virtual machines running the vehicle registration web app
         --name $APPSERVICE \
         --plan vehicleAppServicePlan \
         --deployment-source-url https://github.com/MicrosoftDocs/mslearn-load-balance-web-traffic-with-application-gateway \
-        --deployment-source-branch appService --runtime "DOTNETCORE|3.1" 
+        --deployment-source-branch appService 
     ```
 
 Now, let's take a closer look at configuring Application Gateway.

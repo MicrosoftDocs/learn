@@ -4,8 +4,8 @@ metadata:
   title: Plan your Azure migration
   description:  An overview of the considerations and methods you can use to plan for your migration to Azure.
   ms.date: 04/13/2023
-  author: v-ksreedevan
-  ms.author: v-ksreedevan
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Plan your Azure migration

@@ -1,0 +1,30 @@
+### YamlMime:ModuleUnit
+uid: learn.owasp-top-10-for-dotnet-developers.security-misconfiguration
+title: Security misconfiguration
+metadata:
+  title: security-misconfiguration
+  description: "OWASP Top 10 for .NET Developers. Security misconfiguration."
+  ms.date: 06/12/2023
+  author: obrocki
+  ms.author: dawidobrocki
+  ms.topic: interactive-tutorial
+  ms.custom: devx-track-dotnet
+  ms.prod: introduction-to-owasp-top-ten-for-dotnet-developers
+durationInMinutes: 3
+content: |
+  [!include[](includes/7-security-misconfiguration.md)]
+
+quiz:
+  title: Check your knowledge  
+  questions:
+  - content: "In context of Secure DevOps, what does SDL stand for?"
+    choices:
+    - content: "Schema Definition Language."
+      isCorrect: false
+      explanation: "Not quite"
+    - content: "Security Development Lifecycle."
+      isCorrect: true
+      explanation: "Correct! You may come across similar acronym SDLC, which means the same."
+    - content: "Supplier Document List."
+      isCorrect: false
+      explanation: "Almost there!"

@@ -4,10 +4,12 @@ title: String methods in Python
 metadata:
   title: String methods in Python
   description: In this unit, you use the most common string methods in Python to manipulate strings, from simple transformations to more advanced search-and-replace operations.
-  ms.date: 12/02/2021
+  ms.date: 06/02/2023
   author: alfredodeza
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-python
   ms.topic: interactive-tutorial
   ms.prod: learning-language
 durationInMinutes: 3

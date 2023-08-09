@@ -45,13 +45,15 @@ You can create files by using the `fs.writeFile` method. This method takes in a 
 For instance, this code creates a file called *greeting.txt* with the text "Hello World!" inside.
 
 ```javascript
-await fs.writeFile(path.join(__dirname, "greeting.txt", "Hello World!"));
+const pathToFile = path.join(__dirname, "greeting.txt");
+await fs.writeFile(pathToFile, "Hello World!");
 ```
 
-If you omit the third parameter, which is the data to be written to the file, Node.js writes "undefined" to the file. That situation is probably *not* what you would ever want. To write an empty file, pass an empty string. An even better option would be to pass the `String` function, which effectively does the same thing without leaving empty quotes in your code.
+If you omit the last parameter, which is the data to be written to the file, Node.js writes "undefined" to the file. That situation is probably *not* what you would ever want. To write an empty file, pass an empty string. An even better option would be to pass the `String` function, which effectively does the same thing without leaving empty quotes in your code.
 
 ```javascript
-await fs.writeFile(path.join(__dirname, "greeting.txt", String()));
+const pathToFile = path.join(__dirname, "greeting.txt");
+await fs.writeFile(pathToFile, String());
 ```
 
 In the next exercise, you'll use your knowledge of how to create files and directories to extend the program to create a directory that will store the total of all sales files.

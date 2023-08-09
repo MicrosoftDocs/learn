@@ -4,9 +4,9 @@ title: 'Exercise: Resolve site-to-site VPN gateway connection'
 metadata:
   title: 'Exercise: Resolve site-to-site VPN gateway connection'
   description: "Exercise: Resolve site-to-site VPN gateway connection"
-  ms.date: 03/22/2023
-  author: wwlpublish
-  ms.author: lauraalv
+  ms.date: 04/27/2023
+  author: fabianomira
+  ms.author: famira
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 9

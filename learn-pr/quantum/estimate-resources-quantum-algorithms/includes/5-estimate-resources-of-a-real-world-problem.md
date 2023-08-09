@@ -8,7 +8,10 @@ Some of today’s classical cryptographic schemes are based on assumptions of th
 
 ## Estimate the resources with Azure Quantum
 
-In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For the tolerated error budget, you'll use $\epsilon = 1/3$.
+In the following exercise, you calculate the resource estimates for the factoring of a 2,048-bit integer. For this application, you compute the physical resource estimates directly from precomputed logical resource estimates. For more information, see [Use known estimates for an operation](/azure/quantum/how-to-work-with-re#use-known-estimates-for-an-operation).For the tolerated error budget, you use $\epsilon = 1/3$.
+
+> [!TIP]
+> You can use this example as a blueprint to estimate the physical resources required of any application for which you already have computed logical estimates.
 
 ### Get started
 
@@ -20,21 +23,20 @@ In your Azure Quantum workspace, create a new notebook:
 1. Enter a name for the file, for example, *factoringResourceEstimator.ipynb*.
 1. Select **Create file**.
 
-First, you need to import several Python classes and functions from `azure.quantum` and `qiskit`. You aren't using Qiskit to build quantum circuits, but you'll use `AzureQuantumJob` and `job_monitor`, which are built on top of the Qiskit ecosystem.
+First, you need to import some Python classes from `azure.quantum` to create a workspace and the resource estimator target. 
 
 Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-from azure.quantum.qiskit import AzureQuantumProvider
-from azure.quantum.qiskit.job import AzureQuantumJob
-
-from qiskit.tools.monitor import job_monitor
+from azure.quantum import Workspace
+from azure.quantum.target.microsoft import MicrosoftEstimator, QubitParams, QECScheme
+import qsharp
 ```
 
 To connect to the Azure Quantum workspace, select **Code**, and then enter and run the following code:  
 
 ```python
-provider = AzureQuantumProvider (
+workspace = Workspace (
     resource_id = "",
     location = ""
 )
@@ -42,192 +44,63 @@ provider = AzureQuantumProvider (
 
 ### Extract resource estimates from logical resource counts
 
-Next, implement a generic function that takes as input the Azure Quantum provider and the QIR bitcode of the quantum program. The result it returns is an Azure Quantum job. Resource estimation input parameters can be passed via keyword arguments to the function.
+Then, you create a Q# program that describes the algorithm in terms of precomputed logical resource estimates. If you already know some estimates for an operation, the Resource Estimator allows you to incorporate the known estimates into the overall cost of the program to reduce the execution time. For this end, you use the `AccountForEstimates` Q# operation. 
 
 Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-from azure.quantum.qiskit import AzureQuantumProvider
+%%qsharp
+open Microsoft.Quantum.ResourceEstimation;
 
-def resource_estimation_job_from_qir(provider: AzureQuantumProvider, bitcode: bytes, **kwargs):
-    """A generic function to create a resource estimation job from QIR bitcode"""
-
-    # Find the Azure Quantum Resource Estimator target from the provider
-    backend = provider.get_backend('microsoft.estimator')
-
-    # You can provide a name for the job via keyword arguments
-    # Or use QIR job as a default name
-    name = kwargs.pop("name", "QIR job")
-
-    # Extract some job-specific arguments from the back end's configuration
-    config = backend.configuration()
-    blob_name = config.azure["blob_name"]
-    content_type = config.azure["content_type"]
-    provider_id = config.azure["provider_id"]
-    output_data_format = config.azure["output_data_format"]
-
-    # Finally, create the Azure Quantum JSON object and return it
-    return AzureQuantumJob(
-        backend=backend,
-        target=backend.name(),
-        name=name,
-        input_data=bitcode,
-        blob_name=blob_name,
-        content_type=content_type,
-        provider_id=provider_id,
-        input_data_format="qir.v1",
-        output_data_format=output_data_format,
-        input_params=kwargs,
-        metadata={}
-    )
-```
-
-Based on this function, you create another function that creates a resource estimation job directly from precomputed logical resource estimates. This function internally creates a small QIR program that uses the low-level QIR function `__quantum__qis__applyunimplemented__body`. You use the function to inject logical resource counts into a list of qubits.
-
-Select **Code** to add a new cell, and then enter and run the following code:
-
-```python
-def resource_estimation_job_from_logical_counts(
-    provider: AzureQuantumProvider,
-    qubit_count: int = 0,
-    t_count: int = 0,
-    rotation_count: int = 0,
-    rotation_depth: int = 0,
-    ccz_count: int = 0,
-    measurement_count: int = 0,
-    **kwargs
-):
-    from pyqir.generator import ir_to_bitcode
-    import textwrap
-
-    ir = f"""
-        %Array = type opaque
-        %Qubit = type opaque
-        attributes #1 = {{ "EntryPoint" }}
-        declare %Array* @__quantum__rt__qubit_allocate_array(i64)
-        declare void @__quantum__rt__qubit_release_array(%Array*)
-        declare void @__quantum__qis__applyunimplemented__body(i64, i64, i64, i64, i64, %Array*)
-        define void @Project__Program() #1 {{
-        entry:
-            %target = call %Array* @__quantum__rt__qubit_allocate_array(i64 {qubit_count})
-            call void @__quantum__qis__applyunimplemented__body(i64 {t_count}, i64 {rotation_count}, i64 {rotation_depth}, i64 {ccz_count}, i64 {measurement_count}, %Array* %target)
-            call void @__quantum__rt__qubit_release_array(%Array* %target)
-            ret void
-        }}
-        """
-
-    bitcode = ir_to_bitcode(textwrap.dedent(ir))
+operation FactoringFromLogicalCounts() : Unit {
+    use qubits = Qubit[12581];
     
-    return resource_estimation_job_from_qir(provider, bitcode, **kwargs)
+    AccountForEstimates([TCount(12), RotationCount(12), RotationDepth(12), CczCount(3731607428), MeasurementCount(1078154040)], PSSPCLayout(), qubits);
+}
 ```
-
 ### Run experiments
 
-A resource estimation job consists of two types of job parameters:
+As configurations for your experiment, you use all six predefined qubit parameters. As a predefined QEC scheme, use `surface_code` with gate-based qubit parameters and `floquet_code` with Majorana-based qubit parameters. 
 
-- [Target parameters](/azure/quantum/overview-resources-estimator#target-parameters): Qubit model, QEC schemes, and error budget.
-- Operation arguments (optional): Arguments that can be passed to the QIR program.
+So, you have 6 different items of configurations. In the Azure Quantum Resource Estimator, you can submit jobs that have multiple configurations of job parameters, or multiple *items*, as a single job to avoid rerunning multiple jobs on the same quantum program.
 
-In the Azure Quantum Resource Estimator, you can submit jobs that have multiple configurations of job parameters, or multiple *items*, as a single job to avoid rerunning multiple jobs on the same quantum program.
-
-As configurations for your experiment, you use all six predefined qubit parameters. As a predefined QEC scheme, use `surface_code` with gate-based qubit parameters and `floquet_code` with Majorana-based qubit parameters. For all experiments, assume an error budget of 1/3. So, you have six different items of configurations.
+To create a batching job with 6 items, you can use the `make_params` function and set `num_items` to 6. The `error_budget` is set globally for all items as 1/3. The names for `qubit_params` and `qec_scheme` are set individually for each item.
 
 Select **Code** to add a new cell, and then enter or paste the following code:
 
 ```python
+estimator = MicrosoftEstimator(workspace) 
+
 labels = ["Gate-based µs, 10⁻³", "Gate-based µs, 10⁻⁴", "Gate-based ns, 10⁻³", "Gate-based ns, 10⁻⁴", "Majorana ns, 10⁻⁴", "Majorana ns, 10⁻⁶"]
 
-items = [
-    {"qubitParams": {"name": "qubit_gate_us_e3"}, "errorBudget": 0.333},
-    {"qubitParams": {"name": "qubit_gate_us_e4"}, "errorBudget": 0.333},
-    {"qubitParams": {"name": "qubit_gate_ns_e3"}, "errorBudget": 0.333},
-    {"qubitParams": {"name": "qubit_gate_ns_e4"}, "errorBudget": 0.333},
-    {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e4"}, "errorBudget": 0.333},
-    {"qecScheme": {"name": "floquet_code"}, "qubitParams": {"name": "qubit_maj_ns_e6", "tGateErrorRate": 0.01}, "errorBudget": 0.333}
-]
+params = estimator.make_params(num_items=6)
+params.error_budget = 0.333
+params.items[0].qubit_params.name = QubitParams.GATE_US_E3
+params.items[1].qubit_params.name = QubitParams.GATE_US_E4
+params.items[2].qubit_params.name = QubitParams.GATE_NS_E3
+params.items[3].qubit_params.name = QubitParams.GATE_NS_E4
+params.items[4].qubit_params.name = QubitParams.MAJ_NS_E4
+params.items[4].qec_scheme.name = QECScheme.FLOQUET_CODE
+params.items[5].qubit_params.name = QubitParams.MAJ_NS_E6
+params.items[5].qec_scheme.name = QECScheme.FLOQUET_CODE
 ```
 
-Next, create a resource estimation job for all items based on logical resource counts that you've extracted and precomputed for the 2,048-bit factoring instance.
-
-Select **Code** to add a new cell, and then enter and run the following code:
+Next, you submit the resource estimation job based on the Q# operation `FactoringFromLogicalCounts`. Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-job = resource_estimation_job_from_logical_counts(provider,
-    qubit_count=12581,
-    t_count=12,
-    rotation_count=12,
-    rotation_depth=12,
-    ccz_count=3731607428,
-    measurement_count=1078154040,
-    items=items
-)
-job_monitor(job)
-results = job.result()
+job = estimator.submit(FactoringFromLogicalCounts, input_params=params)
+results = job.get_results()
 ```
 
 ### Understand the results
 
-Finally, you present the experimental results by using built-in resource estimation tables and a custom summary table. Write a reusable `dashboard` function that creates an HTML display from a pandas DataFrame and the resource estimation tables.
-
-Select **Code** to add a new cell, and then enter and run the following code:
+Finally, you present the experimental results in a summary table using the `summary_data_frame` function. Select **Code** to add a new cell, and then enter and run the following code:
 
 ```python
-def dashboard(results):
-    def get_row(result):
-        # Extract raw data from the result dictionary
-        logical_qubits = result["physicalCounts"]["breakdown"]["algorithmicLogicalQubits"]
-        logical_depth = result["physicalCounts"]["breakdown"]["logicalDepth"]
-        num_tstates = result["physicalCounts"]["breakdown"]["numTstates"]
-        code_distance = result["logicalQubit"]["codeDistance"]
-        num_tfactories = result["physicalCounts"]["breakdown"]["numTfactories"]
-        tfactory_fraction = (result["physicalCounts"]["breakdown"]["physicalQubitsForTfactories"] / result["physicalCounts"]["physicalQubits"]) * 100
-        physical_qubits = result["physicalCounts"]["physicalQubits"]
-        runtime = result["physicalCounts"]["runtime"]
-
-        # Format some entries
-        logical_depth_formatted = f"{logical_depth:.1e}"
-        num_tstates_formatted = f"{num_tstates:.1e}"
-        tfactory_fraction_formatted = f"{tfactory_fraction:.1f}%"
-        physical_qubits_formatted = f"{physical_qubits / 1e6:.2f}M"
-
-        # Make runtime human-readable; find the largest units for which the
-        # runtime has a value that is larger than 1.0.  For that unit, 
-        # round the value and append the unit suffix.
-        units = [("nanosecs", 1), ("microsecs", 1000), ("millisecs", 1000), ("secs", 1000), ("mins", 60), ("hours", 60), ("days", 24), ("years", 365)]
-        runtime_formatted = runtime
-        for idx in range(1, len(units)):
-            if runtime_formatted / units[idx][1] < 1.0:
-                runtime_formatted = f"{round(runtime_formatted) % units[idx][1]} {units[idx - 1][0]}"
-                break
-            else:
-                runtime_formatted = runtime_formatted / units[idx][1]
-
-        # Special case for years
-        if isinstance(runtime_formatted, float):
-            runtime_formatted = f"{round(runtime_formatted)} {units[-1][0]}"
-
-        # Append all extracted and formatted data to a data array
-        return (logical_qubits, logical_depth_formatted, num_tstates_formatted, code_distance, num_tfactories, tfactory_fraction_formatted, physical_qubits_formatted, runtime_formatted)
-
-    data = [get_row(results.data(index)) for index in range(len(results))]
-
-    # Create a DataFrame with explicit column names and configuration names extracted from the array
-    import pandas as pd
-    df = pd.DataFrame(data, columns=["Logical qubits", "Logical depth", "T states", "Code distance", "T factories", "T factory fraction", "Physical qubits", "Physical runtime"], index=labels)
-
-    from IPython.display import HTML
-
-    html = f"""
-    Summary{df.to_html()}
-    Details{results._repr_html_()}
-    """
-    
-    return HTML(html)
-
-dashboard(results)
+results.summary_data_frame(labels=labels)
 ```
 
-The output looks similar to this example:
+Your output should look similar to this example:
 
 **Summary**
 

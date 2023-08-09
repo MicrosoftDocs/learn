@@ -6,9 +6,10 @@ metadata:
   ms.date: 03/24/2023
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-dotnet
   ms.custom: team=nextgen
+  ms.devlang: fsharp
 title: Store and apply operations on list data in F#
 summary: Learn how to write programs by using lists, and learn how to use the list properties and list functions that are specified in the list module.
 abstract: |

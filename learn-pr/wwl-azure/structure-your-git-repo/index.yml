@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Structure your Git Repo
 summary: This module examines Git repositories structure, explains the differences between mono versus multiple repos, and helps you create a changelog.
 abstract: |

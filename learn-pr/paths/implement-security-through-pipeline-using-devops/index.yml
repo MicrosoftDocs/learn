@@ -1,0 +1,58 @@
+### YamlMime:LearningPath
+uid: learn.wwl.implement-security-through-pipeline-using-devops
+metadata:
+  title: Implement security through a pipeline using Azure DevOps
+  description: 'Implement security through a pipeline using Azure DevOps'
+  ms.date: 01/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: 'Implement security through a pipeline using Azure DevOps'
+summary: |
+  This learning path helps you prepare for the Implement security through a pipeline assessment using Azure DevOps. Learn how to configure and secure Azure Pipelines. You'll also get opportunities to practice hands-on skills. These skills include configuring secure access to pipeline resources, configuring, and validating permissions, configuring a project and repository structure, extending a pipeline, configuring pipelines to use variables and parameters securely, and managing identity for projects, pipelines, and agents.
+  > [!NOTE]
+  > [!INCLUDE [](../../includes/azure-subscription-prerequisite.md)]
+prerequisites: |
+  - An Azure Subscription. You need to bring your own subscription.
+  - Basic knowledge of Azure DevOps.
+  - Basic knowledge of security concepts like identities and permissions.
+  - Experience using the Azure portal to create resources like Azure Key Vault and set permissions.
+iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
+levels:
+  - intermediate
+roles:
+  - administrator
+  - developer
+  - devops-engineer
+  - security-engineer
+  - security-operations-analyst
+  - solution-architect
+  - student
+  - support-engineer
+products:
+  - azure
+  - azure-artifacts
+  - azure-cloud-services
+  - azure-devops
+  - azure-pipelines
+  - azure-repos
+subjects:
+  - devops
+  - cloud-computing
+  - cloud-security
+  - key-management
+  - information-protection-governance
+  - identity-access
+  - compliance
+modules:
+  - learn.wwl.configure-project-repository-structure-support-secure-pipelines
+  - learn.wwl.manage-identity-projects-pipelines-agents
+  - learn.wwl.configure-secure-access-pipeline-resources
+  - learn.wwl.configure-validate-permissions
+  - learn.wwl.extend-pipeline-use-multiple-templates
+  - learn.wwl.configure-secure-access-azure-repos-from-pipelines
+  - learn.wwl.configure-pipelines-securely-use-variables-parameters
+trophy:
+  uid: learn.wwl.implement-security-through-pipeline-using-devops.trophy

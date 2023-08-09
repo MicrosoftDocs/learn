@@ -4,8 +4,8 @@ title: What is Azure Functions
 metadata:
   title: What is Azure Functions
   description: In this unit, you learn about Azure Functions and when it best fits your architectural needs.
-  author: saifeemustafaq
-  ms.author: msaifee
+  author: rmcmurray
+  ms.author: robmcm
   ms.date: 04/14/2020
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
