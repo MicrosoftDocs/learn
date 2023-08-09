@@ -25542,6 +25542,11 @@
       "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/7-what-is-azure-china-21vianet.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
