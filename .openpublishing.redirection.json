@@ -24794,6 +24794,296 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/2-enable-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/3-exercise-enable-application-insights.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/4-view-application-insights-metrics.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/5-exercise-use-the-portal-to-visualize-page-load-times.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/capture-page-load-times-application-insights/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-logging/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-logging/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-logging/2-exercise-setup-app-deploy-resources.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-logging/3-aspnet-log-overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-logging/4-exercise-aspnet-log.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/aspnet-logging/5-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/2-install-application-insights-sdk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/3-exercise-install-application-insights-sdk.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/4-instrument-the-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/5-instrument-the-application.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/instrument-web-app-code-with-application-insights/6-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/monitor-app-performance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/azure-app-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/azure-container-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/azure-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/azure-virtual-machines.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/overview.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/windows-virtual-desktop.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-big-data-analytics.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-cosmos-db.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-mysql-database.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-postgresql-database.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-sql-database.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/azure-sql-managed-instance.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/exercise-create-sql-database.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-database-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/azure-virtual-network-fundamentals.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/azure-virtual-network-settings.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/azure-vpn-gateway-fundamentals.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/express-route-fundamentals.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-networking-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-blob-container-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-disk-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-file-storage.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-storage-accounts.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/azure-storage-tiers.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/index.md",
       "redirect_url": "https://learn.microsoft.com/en-us/training/modules/introduction-to-azure-iot-central/",
       "redirect_document_id": false
