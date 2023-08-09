@@ -40,7 +40,6 @@ subjects:
 - storage
 modules:
 - learn.introduction-to-azure-virtual-machines
-- learn.azure.azure-storage-fundamentals
 - learn.choose-storage-approach-in-azure
 - learn.create-azure-storage-account
 - learn.choose-the-right-disk-storage-for-vm-workload
