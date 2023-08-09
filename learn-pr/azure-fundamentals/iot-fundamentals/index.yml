@@ -34,7 +34,6 @@ subjects:
 units:
 - learn.azure.iot-fundamentals.introduction
 - learn.azure.iot-fundamentals.identify-product-options
-- learn.azure.iot-fundamentals.analyze-decision-criteria
 - learn.azure.iot-fundamentals.use-iot-hub
 - learn.azure.iot-fundamentals.use-iot-central
 - learn.azure.iot-fundamentals.use-azure-sphere
