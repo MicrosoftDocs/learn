@@ -35,7 +35,6 @@ subjects:
 - security
 - compliance
 units:
-- learn.azure.examine-privacy-compliance-data-protection-standards.2-explore-compliance-terms-requirements
 - learn.azure.examine-privacy-compliance-data-protection-standards.3-access-microsoft-privacy-statement
 - learn.azure.examine-privacy-compliance-data-protection-standards.4-explore-trust-center
 - learn.azure.examine-privacy-compliance-data-protection-standards.5-access-azure-compliance-documentation
