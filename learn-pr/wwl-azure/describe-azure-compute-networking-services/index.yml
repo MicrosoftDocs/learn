@@ -41,7 +41,7 @@ units:
 - learn.wwl.describe-azure-compute-networking-services.containers
 - learn.wwl.describe-azure-compute-networking-services.functions
 - learn.wwl.describe-azure-compute-networking-services.describe-application-hosting-options
-- learn.wwl.describe-azure-compute-networking-services.virtual-network
+- learn.wwl.describe-azure-compute-networking-services.virtual-networking
 - learn.wwl.describe-azure-compute-networking-services.exercise-configure-network-access
 - learn.wwl.describe-azure-compute-networking-services.virtual-private-networks
 - learn.wwl.describe-azure-compute-networking-services.expressroute
