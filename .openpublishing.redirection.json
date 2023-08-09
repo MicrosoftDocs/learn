@@ -25497,6 +25497,11 @@
       "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/4-use-azure-functions.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/5-use-azure-logic-apps.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
     }
   ]
 }
