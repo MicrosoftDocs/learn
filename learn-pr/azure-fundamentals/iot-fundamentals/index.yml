@@ -32,6 +32,5 @@ products:
 subjects:
 - iot
 units:
-- learn.azure.iot-fundamentals.use-iot-hub
 badge:
   uid: learn.azure.iot-fundamentals.badge
