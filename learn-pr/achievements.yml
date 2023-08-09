@@ -2032,3 +2032,8 @@ achievements:
   title: Instrument server-side web application code with Application Insights
   summary: Obtain comprehensive diagnostic information from a web app by adding the Application Insights SDK to your server-side code.
   iconUrl: /training/achievements/instrument-web-app-code-with-application-insights.svg
+- uid: learn.azure.azure-compute-fundamentals.badge
+  type: badge
+  title: Explore Azure compute services
+  summary: In this module, you'll learn how to take advantage of several virtualization services in Azure compute, which can help your applications scale out quickly and efficiently to meet increasing demands.
+  iconUrl: /training/achievements/azure-compute-fundamentals.svg
