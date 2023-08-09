@@ -33,7 +33,6 @@ products:
 subjects:
 - threat-protection
 units:
-- learn.azure.protect-against-security-threats-azure.5-manage-password-key-vault
 - learn.azure.protect-against-security-threats-azure.6-host-virtual-machines-dedicated-hosts
 - learn.azure.protect-against-security-threats-azure.7-knowledge-check
 - learn.azure.protect-against-security-threats-azure.8-summary
