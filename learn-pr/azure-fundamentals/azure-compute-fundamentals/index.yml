@@ -41,7 +41,6 @@ units:
 - learn.azure.azure-compute-fundamentals.introduction
 - learn.azure.azure-compute-fundamentals.overview
 - learn.azure.azure-compute-fundamentals.azure-virtual-machines
-- learn.azure.azure-compute-fundamentals.azure-app-services
 - learn.azure.azure-compute-fundamentals.azure-container-services
 - learn.azure.azure-compute-fundamentals.azure-functions
 - learn.azure.azure-compute-fundamentals.windows-virtual-desktop
