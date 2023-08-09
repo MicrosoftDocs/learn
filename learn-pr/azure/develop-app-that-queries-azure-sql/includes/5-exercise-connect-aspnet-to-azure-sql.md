@@ -1,4 +1,4 @@
-Your database is created. Now you'll configure and deploy a web application that academic advisors can use to discuss courses and plans of study with students. The app will use the `System.Data.SqlClient` library to retrieve and display the details of courses and modules that a student must pass to complete a course.
+Your database is created. Now you can configure and deploy a web application that academic advisors can use to discuss courses and plans of study with students. The app uses the `System.Data.SqlClient` library to retrieve and display the details of courses and modules that a student must pass to complete a course.
 
 To save time, you'll work with a pre-existing web application. You'll add the code that connects this app to your database. The following diagram shows the primary components of this app:
 
@@ -30,7 +30,7 @@ You'll do the following things:
         --name $WEBAPPNAME
     ```
 
-1. When the web application has been deployed, the output will show an *App_url* with the URL of the web site. Open this site in a new tab.
+1. When the web application has been deployed, the output shows an *App_url* with the URL of the web site. Open this site in a new tab.
 
     :::image type="content" source="../media/5-web-app-no-data.png" alt-text="The education web app running. Currently, no data is displayed." loc-scope="other"::: <!-- no-loc -->
 
@@ -76,7 +76,7 @@ Now let's add to the application the code to retrieve course data from the datab
     public int Sequence { get; }
     ```
 
-    This code defines a set of read-only fields that will contain the data for each row that's displayed by the web app.
+    This code defines a set of read-only fields that contain the data for each row displayed by the web app.
 
 1. Replace the comment `// TODO: Create a constructor that initializes the fields behind the properties` with the following constructor.
 
@@ -118,7 +118,7 @@ Now let's add to the application the code to retrieve course data from the datab
     code DataAccessController.cs
     ```
 
-    This file contains a class that's named `DataAccessController`. This class will contain the data access logic to connect to the database and retrieve the course and module data. It will populate a list of `CoursesAndModules` objects with this data.
+    This file contains a class that's named `DataAccessController`. This class contains the data access logic to connect to the database and retrieve the course and module data. It populates a list of `CoursesAndModules` objects with this data.
 
     ```C#
     using Microsoft.Extensions.Options;
@@ -306,7 +306,7 @@ The application can now retrieve the course data. Now, update the app to display
     code Index.cshtml.cs
     ```
 
-    This file contains code that the index page runs when it's displayed. The code defines a class `CoursesAndModulesModel`. The index page will use this model to display the details of courses and modules. In this file, you need to add the code that uses a `DataAccessController` object to fetch that data.
+    This file contains code that the index page runs when it's displayed. The code defines a class `CoursesAndModulesModel`. The index page uses this model to display the details of courses and modules. In this file, you need to add the code that uses a `DataAccessController` object to fetch that data.
 
     ```C#
     using System;
