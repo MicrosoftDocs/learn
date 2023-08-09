@@ -33,7 +33,6 @@ products:
 subjects:
 - threat-protection
 units:
-- learn.azure.protect-against-security-threats-azure.7-knowledge-check
 - learn.azure.protect-against-security-threats-azure.8-summary
 badge:
   uid: learn.azure.protect-against-security-threats-azure.badge
