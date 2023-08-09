@@ -33,7 +33,6 @@ products:
 subjects:
 - cloud-computing
 units:
-- learn.azure.serverless-fundamentals.introduction
 - learn.azure.serverless-fundamentals.use-azure-functions
 - learn.azure.serverless-fundamentals.use-azure-logic-apps
 - learn.azure.serverless-fundamentals.knowledge-check
