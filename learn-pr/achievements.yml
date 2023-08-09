@@ -2082,3 +2082,8 @@ achievements:
   title: Choose the best tools to help organizations build better solutions
   summary: Learn about Microsoft tools and services that help developers and operations engineers build modern solutions for the cloud and on-premises.
   iconUrl: /training/achievements/azure-devops-devtest-labs.svg
+- uid: learn.azure.serverless-fundamentals.badge
+  type: badge
+  title: Choose the best Azure serverless technology for your business scenario
+  summary: Examine Azure serverless technologies, and choose the right service for your business scenario.
+  iconUrl: /training/achievements/serverless-fundamentals.svg
