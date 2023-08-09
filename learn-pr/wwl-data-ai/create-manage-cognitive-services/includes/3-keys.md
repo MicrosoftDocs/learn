@@ -1,4 +1,4 @@
-When you provision a cognitive service resource in your Azure subscription, you are defining an endpoint through which the service can be consumed by an application.
+When you provision an Azure AI service resource in your Azure subscription, you are defining an endpoint through which the service can be consumed by an application.
 
 To consume the service through the endpoint, applications require the following information:
 
