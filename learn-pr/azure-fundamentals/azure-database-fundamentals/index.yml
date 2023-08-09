@@ -43,7 +43,6 @@ subjects:
 - database
 - data-analytics
 units:
-- learn.azure.azure-database-fundamentals.knowledge-check
 - learn.azure.azure-database-fundamentals.summary
 badge:
   uid: learn.azure.azure-database-fundamentals.badge
