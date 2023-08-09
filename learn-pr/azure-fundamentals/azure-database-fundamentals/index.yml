@@ -50,7 +50,6 @@ units:
 - learn.azure.azure-database-fundamentals.azure-mysql-database
 - learn.azure.azure-database-fundamentals.azure-postgresql-database
 - learn.azure.azure-database-fundamentals.azure-sql-managed-instance
-- learn.azure.azure-database-fundamentals.azure-big-data-analytics
 - learn.azure.azure-database-fundamentals.knowledge-check
 - learn.azure.azure-database-fundamentals.summary
 badge:
