@@ -7,8 +7,11 @@ metadata:
   description: "Summary of the consuming REST services with .NET MAUI module"
   ms.date: 04/29/2022
   author: codemillmatt  
-  ms.author: masoucou 
+  ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-languages
 durationInMinutes: 2
 content: |

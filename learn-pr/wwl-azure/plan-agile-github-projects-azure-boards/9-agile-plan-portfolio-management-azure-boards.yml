@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.plan-agile-github-projects-azure-boards.agile-plan-portfolio-management-azure-boards
-title: Agile plan and portfolio management with Azure Boards
+title: Agile Plan and Portfolio Management with Azure Boards
 metadata:
-  title: Agile plan and portfolio management with Azure Boards
-  description: "Agile plan and portfolio management with Azure Boards"
-  ms.date: 11/16/2022
+  title: Agile Plan and Portfolio Management with Azure Boards
+  description: "Agile Plan and Portfolio Management with Azure Boards"
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 60
+  ms.service: azure-devops
+durationInMinutes: 57
 content: |
   [!include[](includes/9-agile-plan-portfolio-management-azure-boards.md)]

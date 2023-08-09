@@ -3,8 +3,8 @@ uid: learn.azure.improve-api-performance-with-apim-caching-policy.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, you will learn about a business problem that you can solve by using a caching policy in Azure API Management.
-  ms.date: 05/15/2022
+  description: In this unit, you learn about a business problem that you can solve by using a caching policy in Azure API Management.
+  ms.date: 07/11/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial

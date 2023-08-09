@@ -7,8 +7,8 @@ metadata:
   author: shreyan1999
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
+  ms.service: healthbot
 title: Channelized Azure Health Bot 
 summary: In the previous module, you integrated a bot with a database hosted on Azure. This module shows you how to make the bot available on Teams and build a basic app.
 abstract: |

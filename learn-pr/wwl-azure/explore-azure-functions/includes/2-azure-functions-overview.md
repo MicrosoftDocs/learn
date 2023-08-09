@@ -1,15 +1,18 @@
 
-Azure Functions are a great solution for processing data, integrating systems, working with the internet-of-things (IoT), and building simple APIs and microservices. Consider Functions for tasks like image or order processing, file maintenance, or for any tasks that you want to run on a schedule. Functions provides templates to get you started with key scenarios.
+
+Azure **Functions** is a serverless solution that allows you to write less code, maintain less infrastructure, and save on costs. Instead of worrying about deploying and maintaining servers, the cloud infrastructure provides all the up-to-date resources needed to keep your applications running.
+
+We often build systems to react to a series of critical events. Whether you're building a web API, responding to database changes, processing IoT data streams, or even managing message queues - every application needs a way to run some code as these events occur.
 
 Azure Functions supports *triggers*, which are ways to start execution of your code, and *bindings*, which are ways to simplify coding for input and output data. There are other integration and automation services in Azure and they all can solve integration problems and automate business processes. They can all define input, actions, conditions, and output. 
 
 ## Compare Azure Functions and Azure Logic Apps
 
-Both Functions and Logic Apps enable serverless workloads. Azure Functions is a serverless compute service, whereas Azure Logic Apps provides serverless workflows. Both can create complex orchestrations. An orchestration is a collection of functions or steps, called actions in Logic Apps, that are executed to accomplish a complex task.
+Both Functions and Logic Apps are Azure Services that enable serverless workloads. Azure Functions is a serverless compute service, whereas Azure Logic Apps is a serverless workflow integration platform. Both can create complex *orchestrations*. An orchestration is a collection of functions or steps, called actions in Logic Apps, that are executed to accomplish a complex task.
 
-For Azure Functions, you develop orchestrations by writing code and using the Durable Functions extension. For Logic Apps, you create orchestrations by using a GUI or editing configuration files.
+For Azure Functions, you develop orchestrations by writing code and using the [Durable Functions extension](/azure/azure-functions/durable/durable-functions-overview). For Logic Apps, you create orchestrations by using a GUI or editing configuration files.
 
-You can mix and match services when you build an orchestration, calling functions from logic apps and calling logic apps from functions. The following table lists some of the key differences between these:
+The following table lists some of the key differences between Functions and Logic Apps:
 
 |  | Azure Functions | Logic Apps |
 |--|--|--|
@@ -18,7 +21,7 @@ You can mix and match services when you build an orchestration, calling function
 | **Actions** | Each activity is an Azure function; write code for activity functions | Large collection of ready-made actions |
 | **Monitoring** | Azure Application Insights | Azure portal, Azure Monitor logs |
 | **Management** | REST API, Visual Studio | Azure portal, REST API, PowerShell, Visual Studio |
-| **Execution context** | Can run locally or in the cloud | Supports run-anywhere scenarios |
+| **Execution context** | Runs in Azure, or locally | Runs in Azure, locally, or on premises |
 
 ## Compare Functions and WebJobs
 

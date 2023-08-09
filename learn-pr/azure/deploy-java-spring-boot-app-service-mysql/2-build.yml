@@ -9,7 +9,10 @@ metadata:
   ms.author: ropreddy
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-azurecli
+    - devx-track-extended-java
   ms.contributors: ropreddy-11202020
 durationInMinutes: 2
 content: |

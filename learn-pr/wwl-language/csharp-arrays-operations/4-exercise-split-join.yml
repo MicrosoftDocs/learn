@@ -4,11 +4,10 @@ title: Exercise - Discover Split() and Join()
 metadata:
   title: Exercise - Discover Split() and Join()
   description: "Exercise - Discover Split() and Join()"
-  ms.date: 04/25/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/4-exercise-split-join.md)]

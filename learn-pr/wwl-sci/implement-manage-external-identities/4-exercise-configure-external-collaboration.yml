@@ -4,11 +4,11 @@ title: Exercise - configure external collaboration
 metadata:
   title: Exercise - configure external collaboration
   description: "Exercise - configure external collaboration"
-  ms.date: 02/03/2023
+  ms.date: 07/10/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

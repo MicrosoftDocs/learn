@@ -2,12 +2,13 @@
 uid: learn.wwl.implementing-backup-restore-for-azure-cosmos-db-sql-api
 metadata:
   title: Implement backup and restore for Azure Cosmos DB for NoSQL
-  description: "We will learn to use the two backup models Azure Cosmos DB provides."
-  ms.date: 10/18/2022
+  description: "<div|We will learn to use the two backup models Azure Cosmos DB provides.  </div|"
+  ms.date: 05/17/2023
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
+  ms.subservice: nosql
 title: Implement backup and restore for Azure Cosmos DB for NoSQL
 summary: We will learn to use the two backup models Azure Cosmos DB provides.
 abstract: |

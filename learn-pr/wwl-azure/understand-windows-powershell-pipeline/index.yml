@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Understand the Windows PowerShell pipeline
 summary: This module explains about the Windows PowerShell pipeline and some basic techniques for running multiple commands in it.
 abstract: |

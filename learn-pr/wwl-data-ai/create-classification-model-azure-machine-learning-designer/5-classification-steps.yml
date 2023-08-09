@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-classification-model-with-azure-machine-learning-designer.create-training-pipeline
+title: Understand steps for classification
+metadata:
+  title: Understand steps for classification
+  description: "Understand steps for classification"
+  ms.date: 06/27/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 8
+content: |
+  [!include[](includes/5-classification-steps.md)]

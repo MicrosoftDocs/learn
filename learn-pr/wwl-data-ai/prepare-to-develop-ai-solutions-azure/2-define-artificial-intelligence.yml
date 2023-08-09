@@ -4,11 +4,11 @@ title: Define artificial intelligence
 metadata:
   title: Define artificial intelligence
   description: "Define artificial intelligence"
-  ms.date: 07/14/2022
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 3

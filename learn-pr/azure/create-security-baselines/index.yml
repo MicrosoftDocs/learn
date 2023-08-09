@@ -7,7 +7,6 @@ metadata:
   author: msmbaldwin
   ms.author: mbaldwin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Create security baselines
 summary: Learn how to create security baselines for your Azure services by ensuring that your settings meet the minimum requirements described in CIS Benchmarks for Azure v. 1.3.0.
 abstract: | 

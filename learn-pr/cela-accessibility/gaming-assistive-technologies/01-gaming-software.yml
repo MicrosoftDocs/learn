@@ -15,17 +15,17 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: "What is the primary purpose of a text-to-speech chat tool or setting?"
+  - content: "What is the primary purpose of a text to speech chat tool or setting?"
     choices:
     - content: "To narrate menu text aloud via synthesized speech."
       isCorrect: false
       explanation: "Incorrect. This option describes one of the functionalities of a screen reader."
     - content: "To read the text of a player's typed message aloud to other players in the voice channel via synthesized audio."
       isCorrect: true
-      explanation: "Correct. Text-to-speech chat refers to the text a player enters into a form field, which is then read aloud to other players in the chat voice channel."
+      explanation: "Correct. Text to speech chat refers to the text a player enters into a form field, which is then read aloud to other players in the chat voice channel."
     - content: "To transcribe what other players have said aloud in the voice channel into text that players can read onscreen in real time."
       isCorrect: false
-      explanation: "Incorrect. This option describes the speech-to-text chat tool."
+      explanation: "Incorrect. This option describes the speech to text chat tool."
   - content: "What approach can developers take if their game isn't compatible with third-party or platform-provided assistive technologies?"
     choices:
     - content: "Assume third-party or platform developers will eventually create assistive technologies that will seamlessly work with all game titles."

@@ -2,6 +2,8 @@
 
 
 
+
+
 Breakpoints are used during the debug process pause execution. This enables you to track variables and examine the sequence in which your code is executed. Breakpoints are a great way to start your debug process.
 
 ## Set a breakpoint

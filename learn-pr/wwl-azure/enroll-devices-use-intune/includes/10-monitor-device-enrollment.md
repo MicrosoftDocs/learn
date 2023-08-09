@@ -1,11 +1,12 @@
 
+
 As an Intune administrator, you must ensure that managed devices are providing the resources that your users need to do their work, while protecting that data from risk.
 
 The Devices workload gives you insights into the devices you manage, and lets you perform remote tasks on those devices.
 
 #### Monitoring enrolled devices
 
-1.  Sign in to the **Endpoint Manager admin center**.
+1.  Sign in to the **Microsoft Intune admin center**.
 2.  Select **Devices**. This view shows detailed information about the individual devices, and what you can do with them, including:
     
      -  **Overview** shows a visual snapshot of the enrolled devices, and also shows how many devices are using the different platforms, including Android, iOS, and more.
@@ -29,7 +30,7 @@ The Devices workload gives you insights into the devices you manage, and lets yo
 
 #### Monitoring Azure AD-joined devices
 
-Not all devices will be necessarily listed in the Endpoint Manager admin center, only devices that are enrolled in Intune. For devices that are joined to the domain, but haven't been enrolled in Intune, you can view these devices in the Azure portal.
+Not all devices will be necessarily listed in the Microsoft Intune admin center, only devices that are enrolled in Intune. For devices that are joined to the domain, but haven't been enrolled in Intune, you can view these devices in the Azure portal.
 
 1.  Sign in to the Azure portal.
 2.  Select **Azure Active Directory**, and then select **Devices**.

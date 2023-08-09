@@ -13,16 +13,16 @@ durationInMinutes: 3
 content: |
 quiz:
   questions:
-  - content: "What do you need in order to test a generative AI model using the Azure OpenAI Service Studio?"
+  - content: "What Azure OpenAI base model can you deploy to access the capabilities of ChatGPT?"
     choices:
-    - content: "A deployed model name and Azure command line interface."
+    - content: "text-davinci-003"
       isCorrect: false
-      explanation: "You would use the Studio in place of the Azure command line interface, not in combination."
-    - content: "An Azure OpenAI resource and an Azure Cognitive Services resource."
-      isCorrect: false
-      explanation: "In this case, you do not need an Azure Cognitive Services resource."
-    - content: "An Azure OpenAI resource, a deployed model, and a playground."
+      explanation: ""
+    - content: "gpt-35-turbo"
       isCorrect: true
+      explanation: ""
+    - content: "text-embedding-ada-002 (Version 2)"
+      isCorrect: false
       explanation: ""
   - content: "Which parameter could you adjust to change the randomness or creativeness of the completions returned?"
     choices:
@@ -37,7 +37,7 @@ quiz:
       explanation: ""
   - content: "Which Azure OpenAI Studio playground is able to support conversation-in, message-out scenarios?"
     choices:
-    - content: "GPT-3"
+    - content: "Completions"
       isCorrect: false
       explanation: ""
     - content: "Chat"

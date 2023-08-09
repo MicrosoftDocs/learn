@@ -2,7 +2,7 @@ Knowing the number of pods and nodes is essential before we can assess how many 
 
 ## Sizing the virtual network subnet
 
-We now know that we want a maximum of seven virtual machines for our Kubernetes cluster nodes. When you upgrade an Azure Kubernetes Service cluster, an extra node gets added to the cluster temporarily. So, we need to add that to our total and make our network sizing calculations based on eight virtual machines.
+We now know that we want a maximum of seven virtual machines for our Kubernetes cluster nodes. When you upgrade an Azure Kubernetes Service cluster, an extra node gets added to the cluster temporarily. So, we need to add that to our total and make our network size calculations based on eight virtual machines.
 
 **Maximum 7 virtual machines, plus 1 additional virtual machine for upgrades = 8 node IP addresses**
 
@@ -13,11 +13,11 @@ By default, an Azure Kubernetes Service cluster using the Azure CNI network plug
 > [!NOTE]
 > Today, the Azure CNI pre-allocates IP addresses for pods. So, if the default value of 30 pods per node is used, then 30 IP addresses will be pre-allocated in the subnet for each node. A new version of Azure CNI is currently in preview which will support dynamic IP address allocation.
 
-We're going to need 8 IP addresses for nodes and 240 IP addresses for pods. Simple addition gives us a requirement of 248 IP addresses. 
+We're going to need 8 IP addresses for nodes and 240 IP addresses for pods. Simple addition gives us a requirement of 248 IP addresses.
 > [!TIP]
 > If you plan to use an internal Azure Load Balancer with your cluster, this will also require an IP address. It's a common practice to use a dedicated subnet for load balancers, but if you plan to use the same subnet as your nodes, then you'll need to account for that.
 
-In this design, we've decided to stay with the default node pool configuration. The default uses a single System Mode node pool that runs everything. If we wanted to ensure that we isolate system components from applications, then we would need at least two node pools and should adjust our IP address range calculations to include that.
+In this design, we've decided to stay with the default node pool configuration. The default uses a single System Mode node pool that runs everything. If we want to ensure that we isolate system components from applications, then we need at least two node pools. We should adjust our IP address range calculations to include that.
 
 So, you can now approach the team responsible for network allocation in your organization and request a subnet supporting 248 IP addresses. When you create a subnet in an Azure Virtual Network, five IP addresses are reserved for system use. A /24 address range would have 251 usable IP addresses, which would make it a good fit for our cluster.
 
@@ -35,14 +35,14 @@ The rules for selecting a service address range are straightforward:
 - It must not overlap with any IP address range you use in on-premises networks.
 - It must not be in the IP address ranges 169.254.0.0/16, 172.30.0.0/16, 172.31.0.0/16, or 192.0.2.0/24.
 
-You don't normally need many IP addresses for services within a cluster. Typically, you'll have one service in front of a group of pods that run multiple replicas of an application. In our case, we have eight different services that form our application, so we'll only need eight service IP addresses.
+You don't normally need many IP addresses for services within a cluster. Typically, you have one service in front of a group of pods that run multiple replicas of an application. In our case, we have eight different services that form our application, so we only need eight service IP addresses.
 
 Other services running in your cluster, such as an Ingress Controller or a Service Mesh might consume more service IP addresses. It's best to factor in some room for other services you could be using now or in the future.
 
-The service address range is only ever used within the cluster. It's safe and generally a good idea to use a fairly generous address range. A /24 address range will provide plenty of space for the cluster to work with.
+The service address range is only ever used within the cluster. It's safe and generally a good idea to use a fairly generous address range. A /24 address range provides plenty of space for the cluster to work with.
 
 ## Selecting a DNS service IP address
 
-Kubernetes uses a built-in DNS service to provide service discovery features within the cluster. The DNS service needs an IP address that should be within the Kubernetes Service address range described above. The only other rule is that you can't use the first IP address from the Kubernetes Service Address range. But any other value will do.
+Kubernetes uses a built-in DNS service to provide service discovery features within the cluster. The DNS service needs an IP address that should be within the Kubernetes Service address range described previously. The only other rule is that you can't use the first IP address from the Kubernetes Service address range. But any other value is acceptable.
 
 The virtual network subnet size has been determined. A Kubernetes service address range has been defined. A DNS service IP address has been selected. We now have all the information we need to deploy our cluster.

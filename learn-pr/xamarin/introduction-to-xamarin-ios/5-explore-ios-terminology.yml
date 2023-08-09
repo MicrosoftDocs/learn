@@ -7,8 +7,9 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-xamarin
-  
 title: Explore iOS terminology
 durationInMinutes: 10
 content: |

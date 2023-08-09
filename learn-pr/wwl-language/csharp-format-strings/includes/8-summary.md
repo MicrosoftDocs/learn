@@ -1,6 +1,7 @@
 
 
 
+
 Your company needed to create a personalized marketing message to promote a new financial product to your customers. Using C#, you were able to write code that combined string and numeric data about your current customers.
 
 You exercised different techniques for merging a string template with variables using composite formatting and string interpolation. The various specifiers allow you to properly format large numbers, currency, and percentages. The built-in methods on variables of type string allowed you to add padding to left and right align data.

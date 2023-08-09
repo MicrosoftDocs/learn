@@ -4,11 +4,10 @@ uid: learn.games-and-platforms
 metadata:
   title: Accessibility best practices for games and platforms
   description: Learn about foundational accessibility best practice principles that you can use to guide the development of games and platforms. Also learn how to use the Xbox Accessibility Guidelines, a free online resource for developers that provides a comprehensive list of best practices organized by specific game elements and features. 
-  ms.date: 11/23/2021
+  ms.date: 04/30/2023
   author: kaitlynjones
   ms.author: kaitlynjones
   ms.topic: interactive-tutorial
-  ms.prod: learning-gaming-accessibility
   showCreativeCommonsFooter: true
 title: Accessibility best practices for games and platforms
 summary: Learn about foundational accessibility best practice concepts that you can use to guide the development of games and platforms. Also learn about the Xbox Accessibility Guidelines, a free online resource for developers that provides a comprehensive list of best practices organized by specific game elements and features. 

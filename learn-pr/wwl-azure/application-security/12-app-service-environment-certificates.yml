@@ -4,12 +4,11 @@ title: App Service Environment Certificates
 metadata:
   title: App Service Environment Certificates
   description: "App Service Environment Certificates"
-  ms.date: 02/24/2023
+  ms.date: 05/26/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 10
 content: |
   [!include[](includes/12-app-service-environment-certificates.md)]

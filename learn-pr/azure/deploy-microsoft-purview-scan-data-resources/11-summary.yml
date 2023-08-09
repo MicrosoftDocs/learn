@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.deploy-microsoft-purview-scan-data-resources.summary
+title: Summary
+metadata:
+  unitType: summary
+  title: summary
+  description: "This summary describes the basics of deploying a Microsoft Purview account in the Azure portal, registering an Azure Storage data source, and scanning the data into the Microsoft Purview Data Map."
+  ms.date: 04/27/2023
+  author: whhender
+  ms.author: whhender
+  ms.topic: interactive-tutorial
+  ms.service: azure
+durationInMinutes: 1
+content: |
+  [!include[](includes/11-summary.md)]

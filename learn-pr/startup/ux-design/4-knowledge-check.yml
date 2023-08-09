@@ -1,0 +1,56 @@
+﻿### YamlMime:ModuleUnit
+uid: learn.startup.ux-design.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: 'This content is part of the “Foundations of user experience and design thinking” module.'
+  ms.date: 04/19/2023
+  author: Obi-Akpuda
+  ms.author: obiakpuda
+  ms.topic: interactive-tutorial
+  ms.prod: learning-consumer
+durationInMinutes : 5
+
+quiz:
+  questions:
+  - content: "User Experience can be best described as ____."
+    choices:
+    - content: "How a user feels about their personal experience."
+      isCorrect: false
+      explanation: "Although the operative word in this sentence is experience, User Experience isn't to be confused with a user's personal experience."
+    - content: "How a user interacts with and experiences a product or service."
+      isCorrect: true
+      explanation: "At its core, UX is how a product feels to your user while they interact with your product. The full experience from a user's first contact until its last."
+    - content: "A product's level of usability based on the user's opinion."
+      isCorrect: false
+      explanation: "When discussing a product's level of usability, there will be a certain level of objectivity tied to the opinion(s) of other users, which is why it's important to have as much research conducted and tested as possible to yield the best vantage points."
+
+  - content: "In the Ideate phase of the design thinking process, which of the following best describes the goal of this phase?"
+    choices:
+    - content: "Defining your users."
+      isCorrect: false
+      explanation: "To be able to deliver the best product or experiences, you first need to understand who your users are and what they need. What are their tendencies? What is their current experience in the space that you're looking to provide a new product or solution?"
+    - content: "Understanding the problem."
+      isCorrect: false
+      explanation: "At this point, you want to start to formulate a clear problem statement that will guide you throughout the design process. What are the users' biggest pain points and their most common problems?"
+    - content: "Generating and testing ideas."
+      isCorrect: true
+      explanation: "After you've identified your target users and what they want, this phase can be broken down into two steps, generating and deciding the ideas – remember, “bad ideas are welcomed”."
+    - content: "Creating solutions."
+      isCorrect: false
+      explanation: "It's imperative that once you've successfully defined your users, have a deep understanding of the problem, and generated a preliminary set of ideas, then you can start to build a solution in iteration."
+
+  - content: "Suppose you're the VP of Product at a startup, KrashAIO, an automation software for checking out online items. You have been tasked with piloting and leading a new product launch in the next 12 weeks. Since you know you and your team will have your work cut out for you, and you already have more than 10 years of experience in the consumer retail industry, you decide that you have a good idea of what you feel like the user should want from a feature standpoint, and you figure it would be best to just start brainstorming ideas without consulting any users. Which one of the following phases of the design thinking process did you omit?"
+    choices:
+    - content: "Define"
+      isCorrect: false
+      explanation: "Now that you've gathered all your findings and insights from gaining a deeper understanding of the user(s). At this point, you want to start to define a clear problem statement that will guide you throughout the design process."
+    - content: "Empathize"
+      isCorrect: true
+      explanation: "To avoid operating under assumptions, it's best to spend as much time observing, engaging, and talking to potential users to gain better insight as to what an optimal solution looks like for them."
+    - content: "Ideate"
+      isCorrect: false
+      explanation: "For this phase, you'll first need to have already identified your users, their habits and most importantly their biggest problem(s) or pain points. From there, you'll be able to take those insights and start to develop better, more data-informed ideas regarding what you could deliver as a solution."
+    - content: "Prototype"
+      isCorrect: false
+      explanation: "Note that this phase is best executed once you've gained insights about your users. The goal of this stage is to take the ideas from the ideation phase and start turning them into something tangible that you can put in front of actual users."

@@ -4,11 +4,11 @@ title: Identify Azure Machine Learning assets
 metadata:
   title: Identify Azure Machine Learning assets
   description: "Identify Azure Machine Learning assets"
-  ms.date: 01/05/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning
 durationInMinutes: 7
 content: |
   [!include[](includes/4-identify-assets.md)]

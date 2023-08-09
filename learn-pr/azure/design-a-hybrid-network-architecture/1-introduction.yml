@@ -7,7 +7,7 @@ metadata:
   author: duongau
   ms.author: duau
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
   ms.custom: e2e-hybrid
 title: Introduction
 durationInMinutes: 5

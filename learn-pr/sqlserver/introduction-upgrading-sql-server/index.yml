@@ -3,21 +3,21 @@ uid: learn-sqlserver.introduction-upgrading-sql-server
 metadata:
   title: Introduction to upgrading SQL Server 
   description: Introduction to Upgrading SQL Server
-  ms.date: 01/31/2019
+  ms.date: 05/10/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
 title: Introduction to upgrading SQL Server
 summary: Microsoft Assessment and Planning (MAP) tool, Data Migration Assistant (DMA), and Database Experimentation Assistant (DEA) combine to provide full-cover assistance for start to finish SQL Server database upgrades. You can install all three tools on your local machine and connect them to the SQL Servers within your business landscape to discover old databases requiring upgrade, identify compatibility issues before you begin, upgrade a database to a target version, and then verify the performance of business-critical queries. This module shows you how to begin documenting your landscape, plan the most appropriate upgrade path, and test your migrated databases.
 abstract: |
  In this module, you will:
- - Identify databases for upgrade to a newer version of SQL Server
- - Document the databases in your environment
- - Choose the appropriate method for upgrading a database
- - Test a database following an upgrade
- - Tune queries after migration to maintain performance
+ - Identify databases for upgrade to a newer version of SQL Server.
+ - Document the databases in your environment.
+ - Choose the appropriate method for upgrading a database.
+ - Test a database following an upgrade.
+ - Tune queries after migration to maintain performance.
 prerequisites: | 
   - Experience administering SQL Server databases
   - Knowledge of backups and failure methodologies

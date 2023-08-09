@@ -1,6 +1,7 @@
 
 
 
+
 Code challenges reinforce what you've learned and help you gain some confidence before continuing.
 
 This module features two code challenges. This first challenge forces you to split up the data depending on its type and either concatenate or add the data accordingly.

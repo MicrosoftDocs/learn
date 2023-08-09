@@ -4,15 +4,15 @@ metadata:
   moduleType: introduction
   title: Introduction to Red Hat on Azure
   description: Evaluate whether to use Red Hat on Azure to migrate and/or modernize your Linux workload in the cloud.
-  ms.date: 06/15/2021
+  ms.date: 06/21/2023
   author: yenchiho
   ms.author: yenchiho
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-redhat-openshift
 title: Introduction to Red Hat on Azure
 summary: Explore the pros and cons of using Red Hat on Azure to run your Linux workloads in the cloud. This module covers Red Hat Enterprise Linux (RHEL), Azure Red Hat OpenShift (ARO), and JBoss.
 abstract: |
-  By the end of this module, you'll be able to:
+  By the end of this module, you're able to:
 
   - Evaluate whether to use Red Hat on Azure to migrate and/or modernize your Linux workload in the cloud.
   - Describe the different Red Hat Linux solutions on Azure and how you can apply them to your business needs.

@@ -7,7 +7,10 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.service: azure
 title: Create computer vision solutions with Azure Cognitive Services
 prerequisites: |
   Before starting this learning path, you should already have:
@@ -23,7 +26,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 - azure-computer-vision
 - azure-custom-vision
 - azure-face

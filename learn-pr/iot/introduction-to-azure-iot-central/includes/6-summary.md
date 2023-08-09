@@ -1,8 +1,3 @@
-Our goal was to help you evaluate whether Azure IoT Central can be used to build your organization's IoT solutions. The following criteria were developed to help guide your decision:
+Our company wanted to maintain pleasant conditions within their stores for the comfort of their customers, and it needed a solution to *connect*, *monitor*, and *manage* environmental monitoring devices. We determined that Azure IoT Central could help us quickly evaluate the IoT scenario and assess the opportunities it can create for the company.
 
-- Experience
-- Customization
-
-We applied these criteria to our fictitious national grocery store chain scenario to evaluate if Azure IoT Central was suitable for its IoT needs. We concluded that Azure IoT Central could be used to connect the different types of IoT devices the company wanted to use. With Azure IoT Central, they could monitor device data in real-time and analyze historical data to identify store trends. These capabilities of Azure IoT Central will allow local store managers to better fulfill their staffing needs to improve shopper experience.
-
-Likewise, these criteria can be used to help you determine if Azure IoT Central is the appropriate choice for your organization's IoT solution. They'll help focus your attention on areas that should be considered during the planning stage of a new IoT project to avoid common setbacks and ensure a successful outcome.
+To help guide the decision we applied the criteria **experience** and **customization** on the retail company scenario and concluded that IoT Central accounts for lack of skills and experience, can integrate with custom notification systems, and allow us to build a solid evidence of the business impact with a no-code experience.

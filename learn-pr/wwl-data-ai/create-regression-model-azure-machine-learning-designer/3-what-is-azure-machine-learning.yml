@@ -4,11 +4,11 @@ title: What is Azure Machine Learning?
 metadata:
   title: What is Azure Machine Learning?
   description: "What is Azure Machine Learning?"
-  ms.date: 01/27/2023
+  ms.date: 06/01/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5

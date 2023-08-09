@@ -1,6 +1,6 @@
-Your company is experiencing increased demand for its video rendering service because of its international expansion. They have already found a way to scale the application, but the cluster was not keeping up with the demand. You want to understand how to use the cluster autoscaler to do it without too many changes in your infrastructure.
+Your company is experiencing increased demand for its video rendering service because of its international expansion. They have already found a way to scale the application, but the cluster wasn't keeping up with the demand. You want to understand how to use the cluster autoscaler to do it without too many changes in your infrastructure.
 
-By using AKS cluster autoscaler feature, you can automatically scale up and down your nodes so the node can keep up with the application scalability and all the users of the website are served well and it's all done transparently.
+By using the AKS cluster autoscaler feature, you were able to automatically scale up and down the number of nodes in your cluster. You configured the cluster autoscaler to watch for unscheduled pods with resource constraints, and it automatically increased and decreased the number of nodes in a cluster to meet those requirements. You've seen how the feature could allow your company to keep up with application scalability and transparently serve the users of your company's website.
 
 ## Clean up resources
 
@@ -11,7 +11,7 @@ In this module, you created resources by using your Azure subscription. The foll
     > [!div class="nextstepaction"]
     > [Azure portal](https://portal.azure.com?azure-portal=true)
 
-1. Select **Resource groups** on the left.
+1. Select **Resource groups** in the left-hand menu.
 
 1. Find the **learn-aks-cluster-scalability** resource group, or the resource group name you used, and select it.
 

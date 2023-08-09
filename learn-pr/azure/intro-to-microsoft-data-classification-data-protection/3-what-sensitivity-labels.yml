@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.3-what-sensitivity-labels
-title: What are sensitivity labels?
+title: Sensitivity labels and labeling
 metadata:
-  title: What are sensitivity labels?
-  description: What are sensitivity labels?
+  title: Sensitivity labels?
+  description: Learn about sensitivity labels to classify and help protect information, and how to create and configure labels.
   ms.date: 03/25/2021
   author: cwatson-cat
   ms.author: cwatson

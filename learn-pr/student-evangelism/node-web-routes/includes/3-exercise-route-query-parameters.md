@@ -23,13 +23,11 @@ This exercise teaches both techniques.
    cd node-essentials/nodejs-http/exercise-express-routing/parameters
    ```
 
-   The outline of the directory should look like this:
+  The *parameters* directory should contain these files:
 
-   ```bash
-   -| app.js
-   -| package.json
-   -| package-lock.json
-   ```
+  - app.js
+  - package.json
+  - package-lock.json
 
 1. The *package.json* file contains the dependency `express`. In the terminal, run the following command to install it:
 
@@ -38,6 +36,9 @@ This exercise teaches both techniques.
     ```
 
     `npm` reads from the `dependencies` section in *package.json*.
+
+   > [!NOTE]
+   > If you see a warning about an old version of `npm`, follow the instructions to fix the issue before you move to the next step.
 
 1. Open *app.js* to inspect it. The file should look like this:
 
@@ -64,16 +65,16 @@ This exercise teaches both techniques.
    },
    ];
 
-   app.get('/', (req, res) => res.send('Hello API!'))
+   app.get('/', (req, res) => res.send('Hello API!'));
 
-   app.get("/products/:id", (req, res) => {
-     res.json(products.find(p => p.id === +req.params.id));
-   });
+   app.get("/products/:id", (req, res) => {});
 
-   app.get('/products', (req, res) => {})
+   app.get('/products', (req, res) => {});
 
-   app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+   app.listen(port, () => console.log(`Example app listening on port ${port}!`));
    ```
+
+   The *app.js* file shows a skeleton of a program. Your next job is to implement the routes.
 
 ## Implement two routes
 
@@ -82,7 +83,7 @@ The code contains an Express application. The next step is to implement two rout
 - `/products/:id`: This route should return a single product.
 - `/products`: This route should return all products, or as many products that query parameters ask for.
 
-1. To implement the route `/products/:id`, locate the following code:
+1. To implement the route `/products/:id`, locate the following code in the *app.js* file in the *parameters* directory:
 
    ```javascript
    app.get("/products/:id", (req, res) => {});
@@ -117,13 +118,13 @@ The code contains an Express application. The next step is to implement two rout
 1. To implement the route `/products`, locate the following code:
 
    ```javascript
-   app.get('/products', (req, res) => {})
+   app.get("/products", (req, res) => {});
    ```
 
    Replace it with this code:
 
    ```javascript
-   app.get('/products', (req, res) => {
+   app.get("/products", (req, res) => {
      const page = +req.query.page;
      const pageSize = +req.query.pageSize;
   
@@ -134,7 +135,7 @@ The code contains an Express application. The next step is to implement two rout
      } else {
        res.json(products);
      }
-   })
+   });
    ```
 
 1. In the terminal, run the following command to start the app and test the code:
@@ -170,6 +171,6 @@ The code contains an Express application. The next step is to implement two rout
    }]
    ```
 
-   Because there are only three records, the second page should contain only one record. 
+   Because the code contains only three records, the second page should contain only one record. 
    
    You've now successfully applied query parameters to limit the response.

@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Implement canary releases and dark launching
 summary: This module describes deployment strategies around canary releases and dark launching and examines traffic managers.
 abstract: |

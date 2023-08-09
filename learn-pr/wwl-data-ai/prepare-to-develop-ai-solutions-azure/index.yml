@@ -3,11 +3,11 @@ uid: learn.wwl.prepare-to-develop-ai-solutions-azure
 metadata:
   title: Prepare to develop AI solutions on Azure
   description: "Prepare to develop AI solutions on Azure"
-  ms.date: 07/14/2022
+  ms.date: 05/11/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
 title: Prepare to develop AI solutions on Azure
 summary: As an aspiring Azure AI Engineer, you should understand core concepts and principles of AI development, and the capabilities of Azure services used in AI solutions.
 abstract: |
@@ -30,6 +30,7 @@ roles:
 - developer
 products:
 - azure
+- ai-services
 subjects:
 - artificial-intelligence
 units:

@@ -1,6 +1,6 @@
 NFS evolved from the enterprise. It's designed to handle concurrent file access at growing scale. But there's an upper bound to the performance and scale that you can get with NFS solutions. There are also classes of workloads that require far greater parallel access to files, including the ability for multiple concurrent processes to write to some section of a file. 
 
-The need to read and write at large scales has grown significantly during the past two decades. Parallel file system solutions are the main choice for accelerating the largest high-performance workloads. Parallel file systems originated in supercomputing centers. They're now widely deployed for various scenarios, like seismic processing and interpretation solutions used by major oil and gas companies and secondary/tertiary analysis of genomic data.
+The need to read and write at large scales has grown significantly during the past two decades. Parallel file system solutions are the main choice for accelerating the largest high-performance workloads. Parallel file systems originated in supercomputing centers. They're now widely deployed for various scenarios. For example, seismic processing and interpretation solutions used by major oil and gas companies, and the secondary/tertiary analysis of genomic data.
 
 This unit presents a light treatment of parallel file systems. If you've been running such workloads, you're probably well acquainted with the drivers, need, and architecture of these solutions. There's a gray area between distributed NAS solutions that serve NFS and parallel file systems. The use of parallel file systems might better satisfy your requirements.
 
@@ -10,7 +10,7 @@ Parallel file systems have historically been a full class of capability that req
 
 ## Distributed NAS (NFS) vs. parallel file systems ##
 
-Both Distributed NAS and parallel file systems are shared file systems. Files can be read by multiple clients concurrently, files can be written to and locked, metadata can be modified, and more.
+Both Distributed NAS and parallel file systems are shared file systems. Multiple clients read files concurrently, files are written to and locked, metadata can be modified, and more.
 
 You can scale both of these systems by adding or upgrading storage hardware technologies, adding front-end servers to scale client access, or improving network connectivity.
 
@@ -38,7 +38,7 @@ Parallel file systems, by contrast, typically implement strategies to better sca
 
 ### Block size ###
 
-We discussed block size earlier, in the context of NFS. Parallel file system block sizes can be much larger than NFS block sizes. The default rsize/wsize for NFS clients is usually 64,000. Lustre, for example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. But parallel file systems offer little advantage when file sizes are small and the number files is large.
+We discussed block size earlier, in the context of NFS. Parallel file system block sizes can be larger than NFS block sizes. The default rsize/wsize for NFS clients is usually 64,000. Lustre, for example, has block sizes in the MBs. This larger size has two effects. First, the reading/writing of large files is superior in a parallel file system. But parallel file systems offer little advantage when file sizes are small and the number of files is large.
 
 ### Complexity ###
 

@@ -92,7 +92,7 @@ You need to find all the files in only the topmost location: the *stores* folder
    }
    ```
 
-   This new method `findFiles` is created inside the main `findSalesMethod` method so that it can run as many times as necessary to find all the sales files and populate the `salesFiles` array. The `folderName` value is the path to the current folder.
+   This new method `findFiles` is created inside the main `findSalesFiles` method so that it can run as many times as necessary to find all the sales files and populate the `salesFiles` array. The `folderName` value is the path to the current folder.
 
 1. Inside the `findFiles` method, read the `currentFolder` path with the `readdirsync` method.
 
@@ -231,7 +231,7 @@ async function findSalesFiles(folderName) {
 
   async function findFiles(folderName) {
     // read all the items in the current folder
-    const items = await fs.readdirSync(folderName, { withFileTypes: true });
+    const items = await fs.readdir(folderName, { withFileTypes: true });
 
     // iterate over each found item
     for (item of items) {

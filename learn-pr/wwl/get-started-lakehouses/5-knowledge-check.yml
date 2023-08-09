@@ -1,0 +1,53 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.get-started-lakehouses.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is a Microsoft Fabric Lakehouse?"
+    choices:
+    - content: "A relational database based on the Microsoft SQL Server database engine."
+      isCorrect: false
+      explanation: "Incorrect. Lakehouses aren't based on SQL Server."
+    - content: "A hierarchy of folders and files in Azure Data Lake Store Gen2."
+      isCorrect: false
+      explanation: "Incorrect. Lakehouses aren't folders in Azure Data Lake Store Gen2."
+    - content: "An analytical store that combines the file storage flexibility of a data lake with the SQL-based query capabilities of a data warehouse."
+      isCorrect: true
+      explanation: "Correct. Lakehouses combine data lake and data warehouse features."
+  - content: "You want to include data in an external Azure Data Lake Store Gen2 location in your lakehouse, without the requirement to copy the data. What should you do?"
+    choices:
+    - content: "Create a Data pipeline that uses a Copy Data activity to load the external data into a file."
+      isCorrect: false
+      explanation: "Incorrect. A Copy Data activity in a pipeline copies the data."
+    - content: "Create a shortcut."
+      isCorrect: true
+      explanation: "Correct. A shortcut enables you to include external data in the lakehouse."
+    - content: "Create a Dataflow (Gen2) that extracts the data and loads it into a table."
+      isCorrect: false
+      explanation: "Incorrect. A dataflow that loads the data into a table would copy the data."
+  - content: "You want to use Apache Spark to interactively explore data in a file in the lakehouse. What should you do?"
+    choices:
+    - content: "Create a notebook."
+      isCorrect: true
+      explanation: "Correct. A notebook enables interactive Spark coding."
+    - content: "Switch to the SQL Endpoint mode."
+      isCorrect: false
+      explanation: "Incorrect. The SQL Endpoint mode doesn't support interactive Spark code."
+    - content: "Create a Dataflow (Gen2)."
+      isCorrect: false
+      explanation: "Incorrect. A dataflow doesn't provide an interactive Spark coding interface."

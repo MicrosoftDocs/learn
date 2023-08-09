@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.learn-windows-on-arm
+metadata:
+  title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
+  description: "Learn about Windows on Arm, its benefits and capabilities and how to add an Arm configuration build to an existing .NET application."               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 7/19/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: mattwojo
+  ms.author: mattwoj
+  ms.topic: module-standard-task-based
+  ms.prod: windows
+  ms.technology: arm
+title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
+summary: "This module describes how Windows operating system supports devices powered by Arm processors and how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This guidance will also cover testing, debugging, and troubleshooting the new Arm-based version of your Windows app."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Describe Windows on Arm.
+    - Understand why providing an Arm-native build for Windows applications is important.
+    - Configure an Arm64 build using Visual Studio.
+    - Test an Arm64 build on an Arm virtual machine.
+    - Debug an Arm64 build using Visual Studio remote debugging.
+    - Troubleshoot common issues experienced with Arm builds.
+
+prerequisites: |
+  Before completing this module, you should have the following prerequisite tooling, knowledge and experience:
+    - Familiarity with Visual Studio and compiling source code at a beginner level.
+    - Visual Studio 2022 installed with the .NET desktop development workload and .NET 6.0 SDK. 
+    - Familiarity with processor architectures such as Intel-based x86, x64 as well as Arm32 and Arm64 at a beginner level.
+    - Have an Azure subscription and beginner-level familiarity with creating and connecting to a virtual machine. *(Optional for testing).*
+iconUrl: /learn/achievements/add-arm-support-to-your-windows-app.svg
+levels:
+  - beginner
+roles:
+  - developer
+products:
+  ['vs', 'windows-11', 'dotnet']
+subjects:
+  - custom-app-development
+units:
+- learn.learn-windows-on-arm.introduction
+- learn.learn-windows-on-arm.introduction-to-windows-applications-on-arm
+- learn.learn-windows-on-arm.exercise-add-an-arm64-build-configuration-to-a-windows-application
+- learn.learn-windows-on-arm.exercise-test-an-arm-application-on-an-arm-virtual-machine
+- learn.learn-windows-on-arm.exercise-debug-an-arm-application-using-remote-debugger-in-visual-studio
+- learn.learn-windows-on-arm.troubleshoot-common-arm-support-issues
+- learn.learn-windows-on-arm.knowledge-check
+- learn.learn-windows-on-arm.summary
+badge:
+  uid: learn.learn-windows-on-arm.badge

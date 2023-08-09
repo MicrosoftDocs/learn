@@ -1,0 +1,41 @@
+### YamlMime:Module
+uid: learn.wwl.intro-to-iot-central
+metadata:
+  title: Intro to IoT Central
+  description: "This module introduces you to the features, capabilities, and UI components presented by the Azure IoT Central application platform, the underlying architecture built on Azure IoT services, and other support considerations."
+  ms.date: 07/14/2022
+  author: wwlpublish
+  ms.author: cahowd
+  ms.topic: interactive-tutorial
+  ms.service: iot-central
+title: Intro to IoT Central
+summary: This module provides an introduction to Azure IoT Central components and capabilities, the architecture that it provides, and describes support for device security and industry vertical implementations.
+abstract: |
+  After you complete this module, you will be able to:
+  - Describe the components and capabilities of Azure IoT Central.
+  - Describe the Azure IoT Central architecture.
+  - Describe the industry support and device security provided by Azure IoT Central.
+prerequisites: |
+  Ability to:
+  - Demonstrate a general understanding of cloud-based solutions, Azure, and Azure services.
+  - Describe the features, capabilities, and data workflows of an IoT solution.
+iconUrl: /training/achievements/iot-central-introduction.svg
+levels:
+- intermediate
+roles:
+- developer
+products:
+- azure
+- azure-iot-central
+subjects:
+- iot
+units:
+- learn.wwl.intro-to-iot-central.introduction
+- learn.wwl.intro-to-iot-central.what-is-azure-iot-central
+- learn.wwl.intro-to-iot-central.azure-iot-central-architecture
+- learn.wwl.intro-to-iot-central.introduction-to-application-templates
+- learn.wwl.intro-to-iot-central.connecting-devices
+- learn.wwl.intro-to-iot-central.knowledge-check
+- learn.wwl.intro-to-iot-central.summary
+badge:
+  uid: learn.wwl.intro-to-iot-central.badge

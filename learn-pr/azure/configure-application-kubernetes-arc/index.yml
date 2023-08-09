@@ -7,7 +7,9 @@ metadata:
   author: mijacobs
   ms.author: mijacobs
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-arc
+  ms.subservice: azure-arc-kubernetes
+  manager: mijacobs
 title: Implement Azure App Service on Kubernetes with Arc
 summary: Azure App Service on Kubernetes with Azure Arc enables implementation of Azure application-platform services on customer-managed, Arc-onboarded Kubernetes clusters. 
 abstract: | 

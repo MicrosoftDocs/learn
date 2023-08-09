@@ -8,7 +8,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Introduction to PowerShell
 summary: Learn about the basics of PowerShell. This cross-platform command-line shell and scripting language is built for task automation and configuration management. You'll learn basics like what PowerShell is, what it's used for, and how to use it.

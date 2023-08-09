@@ -254,4 +254,4 @@
 
     Notice the significant difference between the space used by `CLUSTERED COLUMNSTORE` and `HEAP` or `CLUSTERED` tables. This provides a clear indication on the significant advantages columnstore indexes have.
 
-    Also notice the slight increase of storage space for ordered clustered columnstore index (CCI) table (`Sale_Hash_Ordered`).
+    Also notice the slight decrease of storage space for ordered clustered columnstore index (CCI) table (`Sale_Hash_Ordered`).

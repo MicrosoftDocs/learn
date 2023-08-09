@@ -1,19 +1,20 @@
 ### YamlMime:Module
 uid: learn.iot.connect-iot-edge-device-to-iot-central
 metadata:
-  title: Connect an IoT Edge device to your IoT Central application
-  description: In this module, you'll learn how to connect an IoT Edge device to your IoT Central application
+  title: Connect an Azure IoT Edge device to your Azure IoT Central application
+  description: Prepare your IoT Central application to connect an IoT Edge device and use Azure Functions to filter data before sending it to the cloud.
   author: dominicbetts
   ms.author: dobett
-  ms.date: 01/11/2023
+  ms.date: 05/24/2023
   ms.reviewer: rangv
   manager: lizross
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Connect an IoT Edge device to your IoT Central application
-summary: In this module, you'll prepare an IoT Central application to connect an IoT Edge device to. You'll add some dashboards that enable an operator to manage the IoT Edge device. You'll deploy an IoT Edge device to virtual machine and connect the device to your IoT Central application. You'll use Azure Functions to add filtering capabilities to the IoT Edge device.
+  ms.custom: engagement-fy23
+  ms.topic: module-standard-task-based
+  ms.prod: azure-iot-central
+title: Connect an Azure IoT Edge device to your Azure IoT Central application
+summary: Prepare your IoT Central application to connect an IoT Edge device and use Azure Functions to filter data before sending it to the cloud. You'll add dashboards to IoT Central and deploy an IoT Edge device to a virtual machine.
 abstract:  | 
-  In this module, you will:
+  After you complete this module, you'll be able to:
   - Create an IoT Central application
   - Import and IoT Edge deployment manifest into IoT Central
   - Add an IoT Edge device template to your application
@@ -24,24 +25,25 @@ abstract:  |
   - Manage the IoT Edge device from IoT Central
   - Deploy an Azure function to the IoT Edge device
 prerequisites: |
-  - Ability to create an IoT Central application using the web UI. 
-  - Ability to use Azure CLI at the beginner level. 
+  - Ability to create an IoT Central application using the web UI
+  - Ability to use Azure CLI at the beginner level
   - Experience using IoT Edge at the beginner level
   - Experience administering an IoT Central application using the web UI at the intermediate level
   - Experience managing device templates and devices in an IoT central application using the web UI at the intermediate level
-iconUrl: /training/achievements/connect-iot-edge-device-to-iot-central.svg
+iconUrl: /training/achievements/iot/connect-iot-edge-device-to-iot-central.svg
 levels:
 - intermediate
 roles:
+- administrator
 - developer
 - solution-architect
 products:
-- azure
+- azure-iot
 - azure-iot-central
 - azure-iot-edge
 - azure-functions
 subjects:
-- device-management
+- iot
 units:
 - learn.iot.connect-iot-edge-device-to-iot-central.introduction
 - learn.iot.connect-iot-edge-device-to-iot-central.implement-iot-application-with-edge-pattern

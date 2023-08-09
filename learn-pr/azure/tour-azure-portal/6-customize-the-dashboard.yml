@@ -9,6 +9,6 @@ metadata:
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 content: |
   [!include[](includes/6-customize-the-dashboard.md)]
