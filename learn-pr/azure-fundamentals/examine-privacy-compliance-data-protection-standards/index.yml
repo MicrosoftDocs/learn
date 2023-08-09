@@ -35,6 +35,5 @@ subjects:
 - security
 - compliance
 units:
-- learn.azure.examine-privacy-compliance-data-protection-standards.9-summary
 badge:
   uid: learn.azure.examine-privacy-compliance-data-protection-standards.badge
