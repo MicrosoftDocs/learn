@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-to-arc-enabled-kubernetes.8-summary
+metadata:
+  title: Summary
+  description: In this module, you learned how Azure Arc-enabled Kubernetes clusters can help customers like Contoso to optimize and simplify their operations.
+  ms.date: 08/07/2023
+  author: JnHs
+  ms.author: jenhayes
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.custom:
+  - e2e-hybrid
+  - event-tier1-build-2022
+title: Summary
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

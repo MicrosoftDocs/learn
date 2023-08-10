@@ -9,8 +9,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.service: azure-javascript
+  ms.devlang: nodejs, javascript
+  devlang: nodejs, javascript
 title: Introduction to Node.js
-summary: "Learn about Node.js: what it is, how it works, and when to use it."
+summary: "Learn about Node.js: what it is, how it works, and when to use it. This module uses JavaScript in the Node.js runtime."
 abstract: |
   By the end of this module, you'll be able to:
   - Explain what Node.js is
