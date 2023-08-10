@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-storage-services.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 11/29/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/10/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  zone_pivot_groups: azure-interface
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
@@ -50,3 +48,4 @@ quiz:
     - content: "Azure Disks"
       isCorrect: false
       explanation: "Azure Disks is a block-level storage volume for Azure VMs."
+interactive: bash
