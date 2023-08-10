@@ -13,7 +13,7 @@ metadata:
   ms.prod: aspnet-core
 durationInMinutes: 4
 content: |
-  [!include[](includes/6-knowledge-check.md)]
+  [!include[](includes/8-knowledge-check.md)]
 quiz:
   title: Check your knowledge
   questions:

@@ -84,7 +84,7 @@ At this point, you have a front-end app with static data inside of the app. You 
    Done
     
    Resources
-   http://localhost:5000/pizzas
+   http://localhost:5000/pizza
     
    Home
    http://localhost:5000

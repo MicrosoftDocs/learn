@@ -38,6 +38,14 @@ There's more than one SPA framework out there, and you want to select a framewor
 - **Svelte:** Svelte is relatively new in this context, but it does a great job of looking like you're only working in HTML, JavaScript, and CSS. Its compiler is powerful and able to _hide_ the framework parts to a high degree.
 - **Next.js:** Next.js allows for hybrid static and server-side rendering, and is a great choice for a hybrid app. 
 
+### What is a bundler? 
+
+A bundler is a tool that takes JavaScript, CSS, images, and other artifacts and combines them into bundled files. This is useful because it reduces the number of files and file sizes that the browser needs to download. There are a few popular bundlers:
+
+- **Webpack:** Webpack is a popular bundler that's used by many frameworks. It has a lot of features and is very configurable. 
+- **Parcel:** Parcel is a newer bundler that's easy to use and provides a lot of features out of the box with no configuration.
+- **Vite:** Vite is a newer bundler focusing on speed and simplicity. It provides configured templates from many frameworks.
+
 ### Component-based React example
 
 All of the SPA frameworks mentioned in the previous section use components. A _component_ is a logically separated part that does one thing well. For example, a component might display data, edit data, or show a piece of content that you want to promote. Components usually contain HTML markup, JavaScript, and CSS. Another nice benefit of using a component is that you can reuse it wherever you need to in your application. The component only rerenders if the data sent to it changes, for efficiency.
@@ -111,6 +119,10 @@ const Detail = ({ item, setItem }) =>
   </>
 ```
 
-## Master detail pattern
+## Data binding and state management
 
-A common pattern to use is something referred to as the *master-detail* pattern. For example, you might have a main view that shows your resources as a list. From that view, you can drill down to get into the details of a resource. The details might be available on the master view itself, or in a special detail view.
+In order to have effiient component rendering, you need to plan state management. State management is the process of managing the data that's used by your components. 
+
+There are state management systems that you can use, such as Redux, but for simpler apps such as this Pizza, you can also use the built-in React state management system. The built-in system is called `useState`, and it's a hook that you can use in your components. Hooks are functions that you can use in your components to add functionality. The `useState` hook allows you to create state variables that you can use in your components.
+
+To manage state for the Pizza app, create a parent component, _Pizza_, then use a child component, _PizzaList_, to display the list of pizzas. The _PizzaList_ component will need to be able to add a pizza to the list, so it will need to send a message to the _Pizza_ component. The _Pizza_ component will then update the list of pizzas, and send the updated list back to the _PizzaList_ component. The _PizzaList_ component will then rerender with the updated list of pizzas.

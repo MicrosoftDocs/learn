@@ -13,7 +13,7 @@ metadata:
   ms.devlang: javascript, aspx-csharp
   devlang: javascript, aspx-csharp
 title: Create a full stack application by using React and minimal API for ASP.NET Core
-summary: Learn how to create a full stack application by using React with JavaScript and minimal API for ASP.NET Core.
+summary: Learn how to create a full stack application by using React with JavaScript and minimal API for ASP.NET Core 6.
 abstract: |
   In this module you will:
   - Construct a front-end app by using a single-page application (SPA) framework.
@@ -40,6 +40,8 @@ units:
   - learn.aspnetcore.build-web-api-minimal-spa.introduction
   - learn.aspnetcore.build-web-api-minimal-spa.design-front-end
   - learn.aspnetcore.build-web-api-minimal-spa.exercise-create-front-end
+  - learn.aspnetcore.build-web-api-minimal-spa.design-style
+  - learn.aspnetcore.build-web-api-minimal-spa.install-design-system
   - learn.aspnetcore.build-web-api-minimal-spa.design-api
   - learn.aspnetcore.build-web-api-minimal-spa.exercise-create-api
   - learn.aspnetcore.build-web-api-minimal-spa.knowledge-check

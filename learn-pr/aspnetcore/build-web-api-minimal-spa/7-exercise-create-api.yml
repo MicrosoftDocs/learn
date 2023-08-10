@@ -13,5 +13,5 @@ metadata:
   ms.prod: aspnet-core
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-exercise-create-api.md)]
+  [!include[](includes/7-exercise-create-api.md)]
   
