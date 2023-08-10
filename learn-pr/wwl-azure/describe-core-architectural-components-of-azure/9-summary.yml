@@ -4,12 +4,12 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 08/08/2023
+  ms.date: 08/09/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
 durationInMinutes: 2
 content: |
   [!include[](includes/9-summary.md)]
-interactive: bash
