@@ -1,5 +1,3 @@
-
-
 Azure Computer Vision Image Analysis 4.0 provides a rich collection of features for extracting information from visual inputs. By incorporating Microsoft's Florence foundation model, Vision Services enables developers to create cutting-edge computer vision applications to seamlessly digitize, analyze, and connect their visual data to natural-language interactions, unlocking powerful insights from their image and video content.
 
 The new Image Analysis service improves content discoverability with automatic captioning, smart cropping, classifying, object detection, background removal, and searching for images.

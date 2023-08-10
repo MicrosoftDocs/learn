@@ -1,5 +1,3 @@
-
-
 Computer vision is a core area of artificial intelligence (AI), focused on understanding the information contained within visual data sources, such as images and videos. This branch of AI aims to emulate human visual perception by using advanced algorithms to recognize the content and context of optical inputs.
 
 **Azure Computer Vision** equips developers with a unified service for accessing multiple state-of-the-art computer vision capabilities. Updated to take advantage of significant improvements offered by Microsoft's Florence foundation model, Vision Services greatly enhances image analysis functionality and provides groundbreaking customization capabilities.

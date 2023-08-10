@@ -1,5 +1,3 @@
-
-
 The Azure Computer Vision Image Analysis 4.0 service is designed to enable the extraction of a vast assortment of visual elements from images, drawing from more than 10,000 concepts and objects to detect, classify, caption, and generate insights. Powered by Microsoft's Florence foundation model, the updated Image Analysis service uses state-of-the-art algorithms to process images and interpret visual information. For example, the service can be used to find all the people in an image, categorize the content of images, and describe a picture with a complete English sentence.
 
 ## Analyze images with Image Analysis 4.0

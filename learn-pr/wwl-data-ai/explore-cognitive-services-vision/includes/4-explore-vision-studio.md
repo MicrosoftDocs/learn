@@ -1,5 +1,3 @@
-
-
 ## What is Vision Studio?
 
 Vision Studio is Azure Computer Vision's newest tool, which provides a unified portal experience for exploring, building, and integrating functionality from Image Analysis 4.0 using a set of UI-based components. The platform features a host of demo experiences accessible from a web browser. It allows developers to explore and interact with existing Vision capabilities to understand how specific operations work.
