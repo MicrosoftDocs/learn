@@ -105,13 +105,13 @@ Let's create the database and server to store the data for the app.
 
 1. From the Azure portal menu, under **Azure services**, select **Create a resource**.
 
-    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
+    :::image type="content" source="../media/2-create-a-resource.png" alt-text="Screenshot of Azure portal menu and Create a resource option.":::
 
     The **Create a resource** pane appears.
 
 1. In the left menu pane, select **Databases**, and under *Popular Azure services*, select **SQL Database**.
 
-    ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
+    :::image type="content" source="../media/2-databases-sql-database.png" alt-text="Screenshot of the Databases and SQL Database options.":::
 
     The **Create SQL Database** pane appears.
 
