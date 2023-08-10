@@ -416,23 +416,113 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/2-choose-run-sql-server-2017-linux-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/5-exercise-create-custom-docker-image.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/6-use-docker-compose-deploy-multiple-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/7-exercise-use-docker-compose-deploy-multiple-containers.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/8-summary.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/run-sql-server-2017-linux-containers/index.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.run-sql-server-2017-linux-containers.badge.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/3-create-custom-images.md",
-      "redirect_url": "/training/modules/run-sql-server-2017-linux-containers/3-exercise-run-sql-server-2017-linux-containers",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-sqlserver/run-sql-server-2017-linux-containers/4-use-docker-compose-deploy-multiple-containers.md",
-      "redirect_url": "/training/modules/run-sql-server-2017-linux-containers/4-create-custom-images",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/1-introduction.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/2-monitor-sql-performance-linux.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/3-choose-use-query-store-automatic-tuning.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/4-exercise-monitor-sql-performance-linux.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/5-exercise-configure-sql-server-use-query-store-autotuning.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/6-summary.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/sqlserver/automatically-tune-sql-server-linux/index.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/achievements/learn-sqlserver.automatically-tune-sql-server-linux.badge.yml",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.3-choose-use-query-store-automatic-tuning.md",
-      "redirect_url": "/training/modules/automatically-tune-sql-server-linux/3-exercise-monitor-sql-performance-linux",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-sqlserver.automatically-tune-sql-server-linux.4-exercise-monitor-sql-performance-linux.md",
-      "redirect_url": "/training/modules/automatically-tune-sql-server-linux/4-choose-use-query-store-automatic-tuning",
+      "redirect_url": "/training/modules/introduction-sql-server-linux",
       "redirect_document_id": false
     },
     {
@@ -24894,6 +24984,26 @@
       "redirect_document_id": false
     },
     {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/2-considerations-sql-server.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-virtual-machines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/3-azure-virtual-machine-migration-options.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-virtual-machines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/4-application-configuration-optimization.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-virtual-machines",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/migrate-sql-workloads-azure-virtual-machines/5-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/training/modules/migrate-sql-workloads-azure-virtual-machines",
+      "redirect_document_id": false
+    },
+    {
       "source_path": "learn-pr/azure-fundamentals/azure-compute-fundamentals/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
@@ -25080,6 +25190,466 @@
     },
     {
       "source_path": "learn-pr/azure-fundamentals/azure-storage-fundamentals/summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/2-what-are-service-level-agreements.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/3-define-application-sla.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/4-design-application-meet-sla.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/5-access-preview-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/choose-azure-services-sla-lifecycle/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/2-protect-threats-security-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/3-detect-respond-threats-sentinel.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/4-manage-secrets-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/5-manage-password-key-vault.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/6-host-virtual-machines-dedicated-hosts.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/protect-against-security-threats-azure/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/2-what-is-defense-in-depth.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/3-protect-network-azure-firewall.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/4-protect-attacks-azure-ddos-protection.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/5-filter-traffic-network-security-groups.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/6-configure-access-network-security-group.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/7-combine-services-complete-solution.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-network-connectivity-azure/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/6-use-azure-sphere.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/5-use-iot-central.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/4-use-iot-hub.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/5-use-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/6-use-bot-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/4-use-machine-learning.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/4-use-azure-devops.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/6-use-azure-devtest-labs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/5-use-github.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/4-use-azure-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/5-use-azure-logic-apps.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/2-explore-compliance-terms-requirements.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/3-access-microsoft-privacy-statement.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/4-explore-trust-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/5-access-azure-compliance-documentation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/6-what-is-azure-government.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/7-what-is-azure-china-21vianet.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/6-use-azure-cli.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/7-use-azure-mobile-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/4-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/5-use-azure-powershell.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/8-use-azure-resource-manager.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/4-use-azure-advisor.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/5-use-azure-monitor.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/6-use-azure-service-health.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
     },

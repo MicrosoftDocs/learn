@@ -3,14 +3,11 @@ uid: learn.wwl.explore-cognitive-services-vision
 metadata:
   title: Explore Cognitive Services for Vision (preview)
   description: "Cognitive Services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities."
-  ms.date: 05/03/2023
+  ms.date: 08/10/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
-  ms.custom:
-    - build-2023
-    - build-2023-dataai
 title: Explore Cognitive Services for Vision (preview)
 summary: Cognitive Services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
 abstract: |
@@ -23,13 +20,13 @@ prerequisites: |
   Before starting this module, you should have:
   - Ability to navigate the Azure portal
   - Experience using Visual Studio Code at an intermediate level
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/explore-cognitive-services-for-vision-preview.svg
 levels:
 - intermediate
 roles:
 - ai-engineer
 products:
-- ai-services
+- azure-cognitive-services
 subjects:
 - artificial-intelligence
 units:

@@ -8,8 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/12-domain-name-system.md)]
-interactive: bash
