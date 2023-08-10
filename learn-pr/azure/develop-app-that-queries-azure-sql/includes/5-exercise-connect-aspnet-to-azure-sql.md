@@ -1,10 +1,10 @@
 Your database is created. Now you can configure and deploy a web application that academic advisors can use to discuss courses and plans of study with students. The app uses the `System.Data.SqlClient` library to retrieve and display the details of courses and modules that a student must pass to complete a course.
 
-To save time, you'll work with a pre-existing web application. You'll add the code that connects this app to your database. The following diagram shows the primary components of this app:
+To save time, we use a pre-existing web application and show you how to add the code that connects this app to your database. The following diagram shows the primary components of this app:
 
 ![High-level view of the application structure.](../media/5-diagram.svg)
 
-You'll do the following things:
+To configure the web application, do the following things:
 
 - Create a *class* that holds the course name, module title, and sequence for each module in the database.
 - Create a *data access controller class* that retrieves the information from the database.

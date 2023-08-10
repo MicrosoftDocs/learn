@@ -10,8 +10,8 @@ SQL Database currently supports three deployment options: single, elastic pool, 
 
 In this module, you will:
 
-- Create, configure, and populate a single database in SQL Database
-- Configure an ASP.NET application to query the database
+- Create, configure, and populate a single database in SQL Database.
+- Configure an ASP.NET application to query the database.
 
 ## Prerequisites
 
