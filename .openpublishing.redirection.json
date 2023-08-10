@@ -25652,6 +25652,51 @@
       "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/6-use-azure-service-health.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/2-what-is-azure-iot-central.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/3-azure-iot-central-architecture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/4-introduction-to-application-templates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/5-connecting-devices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-low-touch-iot-solutions-by-using-azure-iot-central/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
+      "redirect_document_id": false
     }
   ]
 }
