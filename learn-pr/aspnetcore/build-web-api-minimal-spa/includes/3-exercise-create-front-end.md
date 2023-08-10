@@ -1,4 +1,4 @@
-In this exercise, you build the front-end app. You start with a scaffold, and then you build out the view you need and add data to the app.
+In this exercise, you build the front-end app. You start with a scaffold, and then you build out the components you need to add data to the app.
 
 ## Scaffold an app
 
@@ -7,17 +7,23 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 1. In a command terminal (with all the prerequisites installed), create the app by using `npx create vite@latest pizza-web --template react`:
 
     ```bash
-    npx create vite@latest pizza-client --template react
+    npx create vite@latest PizzaClient --template react
     ```
 
-    What you get is a directory, _pizza-web_, that contains your scaffolded React app.
+    What you get is a directory, _PizzaClient_, that contains your scaffolded React app. While the code and project are TypeScript, there's little TypeScript used in the project. 
 
 1. Start the app by calling `npm run dev`:
 
    ```bash
    cd pizza-client
-   npm run dev
    ```
+
+1. Open `tsconfig.json` and add the following entry to your `compilerOptions`. This allows the code to run with implied types, which is effectively what JavaScript does. 
+
+    ```json
+    "noImplicitAny": false
+    ```
+
 
 1. In your browser, go to `http://localhost:5173`.
 
@@ -39,85 +45,7 @@ Build the parent component that manages state for the pizza list.
 
 1. Create a file in the _src_ subdirectory named  _Pizza.jsx_ and give it the following content:
 
-    ```javascript
-    import { useState, useEffect } from 'react';
-    import PizzaList from './PizzaList';
-    
-    const term = "Pizza";
-    const API_URL = '/pizza';
-    const headers = {
-      'Content-Type': 'application/json',
-    };
-    
-    type PizzaType = {
-      id: string;
-      name: string;
-      description: string;
-    };
-    
-    function Pizza() {
-      const [data, setData] = useState<PizzaType[]>([]);
-      const [error, setError] = useState(null);
-    
-      useEffect(() => {
-        fetch(API_URL)
-          .then(response => response.json())
-          .then(data => setData(data))
-          .catch(error => setError(error));
-      }, []);
-    
-      const handleCreate = (item) => {
-    
-        console.log(`add item: ${JSON.stringify(item)}`)
-    
-        fetch(API_URL, {
-          method: 'POST',
-          headers,
-          body: JSON.stringify({ ...item } as PizzaType),
-        })
-          .then(response => response.json())
-          .then(returnedItem => setData([...data, returnedItem] as any[]))
-          .catch(error => setError(error));
-      };
-    
-      const handleUpdate = (updatedItem) => {
-    
-        console.log(`update item: ${JSON.stringify(updatedItem)}`)
-    
-        fetch(`${API_URL}/${updatedItem.id}`, {
-          method: 'PUT',
-          headers,
-          body: JSON.stringify(updatedItem),
-        })
-          .then(() => setData(data.map(item => item.id === updatedItem.id ? updatedItem : item)))
-          .catch(error => setError(error));
-      };
-    
-      const handleDelete = (id) => {
-        fetch(`${API_URL}/${id}`, {
-          method: 'DELETE',
-          headers,
-        })
-          .then(() => setData(data.filter(item => item.id !== id)))
-          .catch(error => console.error('Error deleting item:', error));
-      };
-    
-      return (
-        <div>
-          <PizzaList
-            name={term}
-            data={data}
-            error={error}
-            onCreate={handleCreate}
-            onUpdate={handleUpdate}
-            onDelete={handleDelete}
-          />
-        </div>
-      );
-    }
-    
-    export default Pizza;
-    ```
+    :::code language="typescript" source="../code/pizza.tsx":::
 
     This component is responsible for fetching the data from the back end and passing it to the `PizzaList` component. It also handles the `create`, `update`, and `delete` operations. This component has no visible UI. The `PizzaList` component renders the UI.
 
@@ -127,113 +55,38 @@ Build the parent component that manages state for the pizza list.
 
 Create a file in the _src_ subdirectory named  _PizzaList.js_ and give it the following content:
 
-```javascript
-import { useState, useEffect } from 'react';
+:::code language="typescript" source="../code/pizzalist.tsx" :::
 
-function PizzaList({ name, data, onCreate, onUpdate, onDelete, error }) {
+This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state:
 
-    console.log(`PizzaList: ${JSON.stringify(data)}`);
-    
-    const [formData, setFormData] = useState({ id: '', name: '', description: '' });
-    const [editingId, setEditingId] = useState(null);
-    
-    useEffect(() => {
-       if (editingId === null) {
-          setFormData({ id: '', name: '', description: '' });
-       } else {
-          const currentItem = data.find(item => item.id === editingId);
-          setFormData(currentItem);
-       }
-    }, [editingId, data]);
-    
-    const handleFormChange = (event) => {
-    
-       console.log(`handleFormChange: ${event.target.name} ${event.target.value}`)
-    
-       const { name, value } = event.target;
-       setFormData(prevData => ({
-          ...prevData,
-          [name]: value,
-       }));
-    };
-    
-    const handleSubmit = (event) => {
-       event.preventDefault();
-    
-       console.log(`formData: ${JSON.stringify(formData)}`)
-    
-       if (editingId !== null) {
-          console.log(`update item: ${JSON.stringify(formData)}`)
-          onUpdate(formData);
-       } else {
-          console.log(`crreate item: ${JSON.stringify(formData)}`)
-          onCreate(formData);
-       }
-    
-       setFormData({ id: '', name: '', description: '' });
-       setEditingId(null);
-    };
-    
-    const handleEdit = (item) => {
-       console.log(`edit item: ${JSON.stringify(item)}`)
-       setEditingId(item.id);
-    };
-    
-    const handleCancelEdit = () => {
-       console.log(`cancel edit`)
-       setEditingId(null);
-    };
-    
-    const handleDelete = (id) => {
-       console.log(`delete item: ${id}`)
-       onDelete(id);
-    };
-    
-    return (
-       <div>
-          <h2>New {name}</h2>
-          <form onSubmit={handleSubmit}>
-          <input
-             type="text"
-             name="name"
-             placeholder="Name"
-             value={formData.name}
-             onChange={handleFormChange}
-          />
-          <input
-             type="text"
-             name="description"
-             placeholder="Description"
-             value={formData.description}
-             onChange={handleFormChange}
-          />
-          <button type="submit">{editingId !== null ? 'Update' : 'Create'}</button>
-          {editingId !== null && <button type="button" onClick={handleCancelEdit}>Cancel</button>}
-          </form>
-          {error && <div>{error}</div>}
-    
-          <h2>{name}s</h2>
-          <ul>
-          {data.map(item => (
-             <li key={item.id}>
-                <div>{item.id}: {item.name} - {item.description}</div>
-                <div>
-                <button onClick={() => handleEdit(item)}>Edit</button>
-                <button onClick={() => handleDelete(item.id)}>Delete</button>
-                </div>
-             </li>
-          ))}
-          </ul>
-       </div>
-    );
-}
+* The `handleFormChange` function updates the form data when the user types in the input fields. 
+* The `handleSubmit` function creates or updates a pizza item depending on whether the editingId state is null or not. 
+* The `handleEdit` function sets the editingId state to the id of the item being edited. 
+* The `handleCancelEdit` function resets the form data and the editingId state. 
+* The `handleDelete` function deletes a pizza item by calling the `onDelete` prop with the item id.
 
-export default PizzaList;
-```
+The PizzaList component renders a form with two input fields for the pizza `name` and `description`, and two buttons for creating or updating a pizza item. 
 
-This component is responsible for rendering the list of pizzas. It also handles the `create`, `update`, and `delete` actions submitted by the user.
+* Edit mode: If the `editingId` state isn't null, the form is in edit mode and the button label is "Update". 
+* Otherwise, the form is in create mode and the button label is "Create". 
 
-## What you have at this point are two components:
+## Add Pizza to your app
 
-- **Pizza:** This component manages the state of the data and manages API calls.
-- **PizzaList:** This component renders the data and allows users to interact with it.
+Open the `main.tsx` and replace the code with the following so the **Pizza** component is included.
+
+:::code language="typescript" source="../code/main.tsx":::
+
+## Run the app
+
+1. Run the following command to start the app:
+
+    ```bash
+    npm run dev
+    ```
+
+1. Open a browser and navigate to `http://localhost:5173`.
+
+    :::image type="content" source="./media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
+    
+
+    The form isn't styled and the buttons aren't aligned. The form isn't engaging. 

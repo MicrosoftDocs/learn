@@ -8,20 +8,27 @@ A design system specifies the look and feel of an application, and the way that 
 
 You don't have to use a design system. You can create your own CSS and components. However, using a design system is a great way to get started quickly and to ensure that your application has a consistent look and feel.
 
-Design systems are made up of two parts:
+Design systems are made up of many parts:
 
-* **Design tokens:** Design tokens are the visual design atoms of the design system. They're named entities that store visual design attributes used in place of hard-coded values to maintain a scalable and consistent design. 
-
-* **Component library:** A component library is a set of building blocks that allow developers to build applications quickly. Examples of components are buttons, form elements, and typography.
+* Component Library - A collection of reusable components that can be assembled together to build any number of applications.
+* Pattern Library - A collection of components organized in particular ways to solve specific problems consistently.
+* Brand Style Guide - A set of rules and guidelines for how to use the brand's visual identity.
+* Brand Values - A set of ideas that guide to align teams on the overall design meant to result in specific emotions for users within the site.
+* Design Principles - A set of ideas that guide the design of the site.
+* Icon Library - A collection of icons that can be used in the site.
+* Content Guidelines - A set of rules and guidelines for how to write content for the site.
+* Accessibility Guidelines - A set of rules and guidelines for how to make the site accessible to all users.
+* Design Tokens - A set of names meant to represent hard-coded values for visual elements such as spacing, color, typography, and more.
 
 ## Common frontend design systems
 
 There are many frontend design systems available. Here are some of the most popular:
 
-* [Bootstrap](https://getbootstrap.com/)
 * [Material Design](https://material.io/)
+* [Bootstrap](https://getbootstrap.com/)
 * [Fluent UI](https://developer.microsoft.com/en-us/fluentui#/)
 * [Chakra UI](https://chakra-ui.com/)
+
 
 ## Using a design system
 
@@ -31,83 +38,46 @@ Once you select your design system, add the packages, select your core CSS value
 
 This typically means adding class names to your HTML elements and/or renaming the HTML elements to use the system's components. For example, an HTML button is `button`, and a design system will use `Button` or `PrimaryButton`. 
 
-## An example CSS file
 
-A CSS file can specify site and brand colors. This provides consistency throughout the site. 
+## CSS Styles defined
 
-```css
-/* Design token: color palette */
-:root {
-  --primary-color: #007bff;
-  --secondary-color: #6c757d;
-  --success-color: #28a745;
-  --danger-color: #dc3545;
-  --warning-color: #ffc107;
-  --info-color: #17a2b8;
-  --light-color: #f8f9fa;
-  --dark-color: #343a40;
-}
+A style is defined with CSS syntax. It can appear in a *.css file, be transpiled into a *.css file (such as with SASS), or be defined in a JavaScript file (such as with styled-components).
 
-/* Typography */
-body {
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  line-height: 1.5;
-}
+Styled components are a way to use CSS in JavaScript. They're a popular way to use CSS in React.
 
-/* Headings */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  margin-top: 0;
-  margin-bottom: 0.5rem;
-}
-
-/* all buttons with class `button-success */
-button .button-success {
-    background-color: var(--primary-color);
-}
-/* all buttons with class `button-danger */
-button .button-danger {
-    background-color: var(--danger-color);
-}
-```
 
 ## Apply a design system to your React app
 
 Design systems can provide either default themes or custom themes. Because a theme is meant to apply to the entire site, you add it at the top React component. This is typically in main.jsx or index.jsx.
 
 ```javascript
-/* Import the UI Framework */
-import React from 'react'
-import ReactDOM from 'react-dom/client'
+import * as React from 'react';
+import * as ReactDOM from 'react-dom/client';
 
-/* Import the UI design system */
-import {
-      FluentProvider,
-      webLightTheme
-} from "@fluentui/react-components";
+import { ThemeProvider } from '@emotion/react';
+import { CssBaseline } from '@mui/material';
+const theme = createTheme();
 
-/* Import your customer styles from CSS file */
-import './index.css'
+import Pizza from './Pizza'
 
-/* Attach to Document Ojbect Model (DOM) */
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
   <React.StrictMode>
-    <FluentProvider theme={webLightTheme}>
-        <Pizza />
-    </FluentProvider>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
+      <Pizza />
+    </ThemeProvider>
   </React.StrictMode>,
-)
+);
 ```
 
 ## Apply a design system to your React component
 
-Let's apply a design system component from _Fluent_ to an HTML button. Replace the `button` element with the _Fluent_ `PrimaryButton`.
+Let's apply a design system component to an HTML button. Replace the `button` element with the design system `Button`.
 
 Include the component in your component's page: 
 
 ```javascript
-import { PrimaryButton } from '@fluentui/react';
+import Button from '@mui/material/Button';
 ```
 
 **Find your HTML button**:
@@ -116,10 +86,10 @@ import { PrimaryButton } from '@fluentui/react';
 <button onClick={incrementCounter}>Increment</button>
 ```
 
-**Replace with the _Fluent_ design system `PrimaryButton`**:
+**Replace with the design system `Button`**:
 
 ```jsx
-<PrimaryButton className="button-success" onClick={incrementCounter}>Increment</PrimaryButton>
+<Button className="button-success" onClick={incrementCounter}>Increment</Button>
 ```
 
 If you chose not to name the class or create your own CSS, many design systems have default styles, which are more engaging than HTML without a design system.

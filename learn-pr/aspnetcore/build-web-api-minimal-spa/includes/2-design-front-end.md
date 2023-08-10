@@ -46,6 +46,10 @@ A bundler is a tool that takes JavaScript, CSS, images, and other artifacts and 
 - **Parcel:** Parcel is a newer bundler that's easy to use and provides a lot of features out of the box with no configuration.
 - **Vite:** Vite is a newer bundler focusing on speed and simplicity. It provides configured templates from many frameworks.
 
+### The React UI framework
+
+This module uses the React UI framework. React is a UI framework that uses a virtual DOM to manipulate the web application's user interface. It creates a tree of components that represent the UI elements and updates them efficiently based on changes in the application's data. This makes React a popular choice for building complex web applications with a responsive and dynamic user interface.
+
 ### Component-based React example
 
 All of the SPA frameworks mentioned in the previous section use components. A _component_ is a logically separated part that does one thing well. For example, a component might display data, edit data, or show a piece of content that you want to promote. Components usually contain HTML markup, JavaScript, and CSS. Another nice benefit of using a component is that you can reuse it wherever you need to in your application. The component only rerenders if the data sent to it changes, for efficiency.

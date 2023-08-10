@@ -1,77 +1,49 @@
-### Install Fluent UI
+Use the Fluent UI design system to improve the appearance of your app.
 
-To install Fluent UI, run the following command:
+## Install Material UI
+
+To install Material UI, run the following command:
 
 ```bash
-npm install @fluentui/react-components
+npm install @mui/material @mui/icons-material
 ```
 
-### Import Fluent UI
+## Import Material UI
 
-To import Fluent UI, add the following line to the top of the `Counter.js` file:
+To import Material UI to your React app, replace `main.tsx` with the following code:
 
-```jsx
-import { PrimaryButton } from '@fluentui/react';
-```
+:::code language="typescript" source="../code/main-with-material-ui.tsx":::
 
+The code imports the ThemeProvider and createTheme components from Material UI and creates a default theme using the createTheme function. The ThemeProvider component is then used to wrap the Pizza component and apply the default theme to the app. Additionally, the CssBaseline component is imported and used to apply a baseline CSS to the app.
 
-## Add some CSS
+Because the `pizza.tsx` file controls state but doesn't control rendering the pizza list, you don't need to add styles to this page.
 
-It's always great to improve the appearance of the UI. There's more than one way to do so for React. In this case, you use the `styled-components` library.
+## Add Material UI to the PizzaList component
 
-1. Run `yarn add` to add the `styled-components` library:
+Material UI provides a lot of functionality. For this unit, change the Pizza List to be more engaging with styles and icons. Open `PizzaList.tsx` and replace the code with the following code. Notice that only the `return ()` section is changed.
 
-   ```bash
-   yarn add styled-components
-   ```
+:::code language="typescript" source="../code/pizzalist-with-material-ui.tsx" highlight="61-88":::
 
-1. Configure _package.json_ by adding the following entry:
+In the `PizzaList` component, the Material UI components TextField, Button, Box, List, ListItem, ListItemText, ListItemSecondaryAction, and IconButton are imported and used to create a list of pizza items. 
 
-   ```json
-   "resolutions": {
-      "styled-components": "^5"
-   }
-   ```
+* The **Box** component is used to wrap the form elements and add spacing between them. 
+* The **List** component is used to display the list of pizza items. 
+* The **ListItem** component is used to display each pizza item in the list. 
+* The **ListItemText** component is used to display the name and description of each pizza item. 
+* The **ListItemSecondaryAction** component is used to display the edit and delete buttons for each pizza item. 
+* The **IconButton** component is used to create the edit and delete buttons. 
+* The **TextField** component is used to create the input fields for the name and description of each pizza item. 
+* The **Button** component is used to create the create, update, and cancel buttons.
 
-   This entry will remove lots of warnings that you would otherwise get.
+## Run the app
 
-1. Make the following changes to _Main.js_ (the changes are highlighted):
+1. Run the following command to start the app:
 
-   :::code language="javascript" source="../code/minimal-spa-add-some-css.js" highlight="2, 4-31, 55, 57, 60, 63, 65":::
+    ```bash
+    npm run dev
+    ```
 
-   Now, you have components that render with a decent appearance. Next, ensure that your program is using this component.
+1. Open a browser and navigate to `http://localhost:5173`.
 
-1. Open _src/App.js_, and ensure that it has the following content:
-
-   ```javascript
-    import './App.css';
-
-    import Main from './Main.js';
+    :::image type="content" source="./media/design-system-form.png" alt-text="Screenshoot of Pizza form with styled components.":::
     
-    function App() {
-      return (
-        <div className="App">
-          <Main />
-        </div>
-      );
-    }
-    
-    export default App;
-   ```
-
-1. Open a terminal window in Visual Studio Code by pressing **Ctrl**+**\`**.
-1. Save all your changes and run `yarn start` to run the app:
-
-   ```bash
-   yarn start
-   ```
-
-   You should see the following image:
-
-   :::image type="content" source="../media/ui.png" alt-text="Screenshot of the rendered Pizza app.":::
-
-1. Type in an input field. It should mark it as *dirty*, and the **Save** button for that item should appear.
-
-   :::image type="content" source="../media/ui-changed.png" alt-text="Screenshot that shows editing an item in the Pizza app.":::
-
-1. Return to the terminal window and press **Ctrl+C** to end execution.
