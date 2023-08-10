@@ -38,7 +38,7 @@ In this section, you'll create a Blob container and upload a picture
     
     > [!NOTE]
     > Step 4 will need an image. If you want to upload an image you already have on your computer, continue to Step 4. Otherwise, open a new browser window and search Bing for an image of a flower. Save the image to your computer.
-4.  Back in the Azure portal select the container you created, then select Upload.
+4.  Back in the Azure portal, select the container you created, then select Upload.
 5.  Browse for the image file you want to upload. Select it and then select upload.
 
     > [!NOTE]
