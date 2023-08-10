@@ -3,7 +3,7 @@ uid: learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-s
 metadata:
   title: '6-Get tips and tricks for teaching DP-100: Designing and Implementing a Data Science Solution on Azure'
   description: "Learn tips and tricks about preparing for your first teaching session, which labs to use, when and how to introduce technical topics, as well as other resources and materials."
-  ms.date: 08/09/2023
+  ms.date: 08/10/2023
   author: wwlpublish
   ms.author: tsheppard
   ms.topic: interactive-tutorial
@@ -28,18 +28,18 @@ units:
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.introduction
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-objective-domains
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.learning-path-best-practices
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-1
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-2
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-3
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-4
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-5
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-6
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-7
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-8
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-9
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-10
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-11
-- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-DP-100-Learning-Path-12
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-1
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-2
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-3
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-4
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-5
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-6
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-7
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-8
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-9
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-10
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-11
+- learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.explore-best-practices-dp-100-learning-path-12
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.bring-it-all-together
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.knowledge-check
 - learn.wwl.get-tips-tricks-for-teaching-dp-100-designing-implementing-data-science-solution.summary

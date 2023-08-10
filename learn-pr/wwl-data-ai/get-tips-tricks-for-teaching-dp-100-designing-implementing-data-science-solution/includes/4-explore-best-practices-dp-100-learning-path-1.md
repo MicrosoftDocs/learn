@@ -30,4 +30,4 @@ Learning Path 1 Labs
 
 - [Lab 1.1: Design a data ingestion strategy](https://microsoftlearning.github.io/mslearn-aml-design/Instructions/start-01-data.html)
 - [Lab 1.2: Design a model training strategy](https://microsoftlearning.github.io/mslearn-aml-design/Instructions/start-02-training.html)
-- Import solution (optional)
+- Import solution (optional) 

@@ -4,7 +4,7 @@ DP-100: Learning Path 7 Track model training in Jupyter notebooks with MLflow
 
 Learning Path 7 Overview
 
-As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students will learn about tracking model training in Jupyter notebooks with MLflow and how to use MLflow for tracking models and experimenting in Jupyter notebooks.
+As you begin to teach this learning path, get familiar with what the students will learn during the learning path. In this learning path students learn about tracking model training in Jupyter notebooks with MLflow and how to use MLflow for tracking models and experimenting in Jupyter notebooks.
 
 This learning path consists of one module:
 
