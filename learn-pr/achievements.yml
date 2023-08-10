@@ -2087,3 +2087,28 @@ achievements:
   title: Choose the best Azure serverless technology for your business scenario
   summary: Examine Azure serverless technologies, and choose the right service for your business scenario.
   iconUrl: /training/achievements/serverless-fundamentals.svg
+- uid: learn.azure.examine-privacy-compliance-data-protection-standards.badge
+  type: badge
+  title: Examine privacy, compliance, and data protection standards on Azure
+  summary: Learn about Microsoft's commitment to privacy and how Azure adheres to common regulatory and compliance standards.
+  iconUrl: /training/achievements/examine-privacy-compliance-data-protection-standards.svg
+- uid: learn.azure.management-fundamentals.badge
+  type: badge
+  title: Choose the best tools for managing and configuring your Azure environment
+  summary: Explore the Azure management, administration, and reporting tools, and choose the ones that best meet your organization's needs.
+  iconUrl: /training/achievements/management-fundamentals.svg
+- uid: learn.azure.monitoring-fundamentals.badge
+  type: badge
+  title: Choose the best monitoring service for visibility, insight, and outage mitigation
+  summary: Learn about solutions that can give your IT organization insight into the health and performance of its cloud-based applications.
+  iconUrl: /training/achievements/monitoring-fundamentals.svg
+- uid: learn.wwl.intro-to-iot-central.badge
+  type: badge
+  title: Intro to IoT Central
+  summary: This module introduces you to the features, capabilities, and UI components presented by the Azure IoT Central application platform, the underlying architecture built on Azure IoT services, and other support considerations.
+  iconUrl: /training/achievements/iot-central-introduction.svg
+- uid: learn.wwl.build-low-touch-iot-solutions-by-using-azure-iot-central.trophy
+  type: trophy
+  title: Build low touch IoT solutions by using Azure IoT Central
+  summary: You will learn about the Azure IoT Central application platform and the support that it provides to companies with limited budgets and technical resources who are interested in developing, managing, and maintaining IoT solutions.
+  iconUrl: /training/achievements/iot-low-touch-iot-central.svg
