@@ -32,7 +32,6 @@ products:
 subjects:
 - identity-access
 modules:
-- learn.azure.protect-against-security-threats-azure
 - learn.create-azure-account
 - learn.azure-security.manage-users-and-groups-in-aad
 - learn.azure.create-users-and-groups-in-azure-active-directory
