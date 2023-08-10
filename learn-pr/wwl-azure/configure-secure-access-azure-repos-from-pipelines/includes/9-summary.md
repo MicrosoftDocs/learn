@@ -3,7 +3,7 @@ In this module, we covered the steps to configure secure access to packages and 
 You learned how to:
 
 - Configure pipeline access to packages.
-- Configure credential secrets, and secrets for services.
+- Configure credential secrets and secrets for services.
 - Ensure that the secrets are in the Azure Key Vault.
 - Ensure that secrets are not in the logs.
 

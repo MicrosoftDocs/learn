@@ -53,7 +53,7 @@ In this unit, you go through the steps to configure Secure Files in Azure DevOps
 
 4. Save and commit your YAML pipeline.
 
-    ![Screenshot of Azure Pipelines showing the steps to download Secure Files and copy it to a folder.](../media/download-secure-file.png)
+    ![Screenshot of Azure Pipelines showing the steps to download Secure Files and copy them to a folder.](../media/download-secure-file.png)
 
 5. (Optional) Run the pipeline. If you see the message:
 
@@ -61,7 +61,7 @@ In this unit, you go through the steps to configure Secure Files in Azure DevOps
 
     ![Screenshot of Azure Pipelines showing how to authorize Secure Files usage.](../media/authorize-secure-file.png)
 
-6. (Optional) Click on the Authorize Resources button to allow the Secure File usage by the pipeline.
+6. (Optional) Click on the Authorize Resources button to allow usage of the Secure File by the pipeline.
 
 7. (Optional) Click to rerun failed jobs, or run new.
 

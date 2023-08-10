@@ -65,7 +65,7 @@ In this unit, you'll learn how to secure your pipeline secrets using Azure DevOp
     ```
 
     > [!NOTE]
-    > The variable use will be the same, but one is coming from Variable Groups, and other from Variables from your pipeline UI.
+    > The variable use will be the same, but one is coming from Variable Groups, and others from Variables from your pipeline UI.
 
 7. Save your YAML file.
 
@@ -80,7 +80,7 @@ You must decide whether to use the Variable Groups or the pipeline UI variables.
 ## Challenge yourself
 
 - Create a pipeline that retrieves a password from Azure DevOps Variable Group.
-- Store a variable using secret variable and use in your pipeline.
+- Store a variable using a secret variable and use it in your pipeline.
 - Override the variable of your variable in your pipeline with the secret variable at queue time.
 
 For more information about secret variables, see:
