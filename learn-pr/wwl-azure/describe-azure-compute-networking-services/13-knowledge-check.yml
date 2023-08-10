@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-compute-networking-services.knowledge-check
-title: Knowledge Check
+title: Knowledge check
 metadata:
-  title: Knowledge Check
-  description: "Knowledge Check"
+  title: Knowledge check
+  description: "Knowledge check"
   ms.date: 08/09/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/13-knowledge-check.md)]
@@ -37,4 +38,3 @@ quiz:
     - content: "Azure Container Instances"
       isCorrect: false
       explanation: "Azure Container Instances lets you provision containers in the cloud, but doesn’t provide access to a cloud-hosted version of windows available from most modern browsers."
-interactive: bash
