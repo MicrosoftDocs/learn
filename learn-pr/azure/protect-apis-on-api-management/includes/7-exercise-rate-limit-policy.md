@@ -2,7 +2,7 @@ In API Management, you use policies to implement throttling (rate limiting).
 
 Recall that your government agency would like to prevent the abuse of their APIs, such as large volumes of requests.
 
-In this unit, you learn how to set limits on the frequency that your Census API can be called. You also learn how these limits can be applied globally to all of your census endpoints or granularly to each client.
+In this unit, you learn how to set a limit on the frequency that your Census API can be called. In this example, the limit is applied globally to all of your Census API endpoints.
 
 ## Apply a rate limit policy
 

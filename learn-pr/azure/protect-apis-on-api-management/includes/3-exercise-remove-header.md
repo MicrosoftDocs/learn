@@ -97,7 +97,7 @@ The next step in this exercise is to create an API gateway in the Azure portal. 
 
 Now, import the Census API into the API Management gateway:
 
-1. In the left menu pane of your API Management instance, Under **APIs**, select **APIs**, and then **+ Add API**.
+1. In the left menu pane of your API Management instance, under APIs, selects **APIs**, and then **+ Add API**.
 
 1. Under **Create from definition**, select **OpenAPI**. The **Create from OpenAPI specification** dialog box appears.
 
@@ -106,7 +106,7 @@ Now, import the Census API into the API Management gateway:
    :::image type="content" source="../media/3-import-api.png" alt-text="Screenshot of the Create from OpenAPI specification dialog box with the swagger JSON URL entered.":::
 
    > [!NOTE]
-   > You will notice that, when you tab out of the box, some of the other fields are populated for you. This is because you have used OpenAPI which specifies all of the required connection details.
+   > You will notice that, when you tab out of the box, some of the other fields are populated for you. This is because you have used OpenAPI which specifies most of the required connection details.
 
 1. Leave the other settings at their defaults, and then select **Create**.
 
@@ -140,7 +140,7 @@ Now we add a policy to remove the **x-powered-by** header from responses sent by
 
     ```XML
     <outbound>
-       <set-header name="X-Powered-By" exists-action="delete" />
+       <set-header name="x-powered-by" exists-action="delete" />
        <base />
     </outbound>
     ```

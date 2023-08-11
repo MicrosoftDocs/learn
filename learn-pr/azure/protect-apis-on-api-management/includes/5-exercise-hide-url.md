@@ -1,6 +1,6 @@
 If you host an API that includes its original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
 
-The government Census API includes its URL in this way. You want to make sure that all requests go through API Management.
+The Census API example includes its URL in this way. You want to make sure that all requests go through API Management.
 
 In this unit, you learn how to mask some of the data returned in the body of the Census API. You use a transformation policy to rewrite the URL data exposed in the body of the response.
 
