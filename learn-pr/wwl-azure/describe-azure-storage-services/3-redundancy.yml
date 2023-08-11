@@ -4,12 +4,12 @@ title: Describe Azure storage redundancy
 metadata:
   title: Describe Azure storage redundancy
   description: "Describe Azure storage redundancy"
-  ms.date: 08/10/2023
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
 durationInMinutes: 6
 content: |
   [!include[](includes/3-redundancy.md)]
-interactive: bash

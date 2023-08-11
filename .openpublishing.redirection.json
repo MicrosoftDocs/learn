@@ -25687,6 +25687,48 @@
       "source_path": "learn-pr/paths/build-low-touch-iot-solutions-by-using-azure-iot-central/index.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
       "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/2-choose-secure-consent-setting.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/3-exercise-enable-admin-consent-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/4-manage-evaluate-consent-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/5-exercise-review-admin-consent-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
     }
   ]
 }
