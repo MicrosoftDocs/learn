@@ -36,7 +36,7 @@ Policy details will vary based on the customer and the resource types you're mon
 
 Your company provides different kinds of managed services for customers, so you'll manage a variety of resources. You can use the Azure Diagnostics Policy Generator community tool to apply policies across many different Azure resource types at the same time. The tool is [available on GitHub](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/tools/azure-diagnostics-policy-generator). There's a process you must follow to configure and use this tool. At a higher level, perform the following steps:
 
-1. Run the **Create-AzDiagPolicy.PS1** script using Azure PowerShell. This script creates policies for any Azure resource types that support Azure Diagnostics metrics and logging, and feeds data into Log Analytics or Event Hub for you. Run the following command in Azure PowerShell to execute this script and ensure diagnostics are always fed into Log Analytics:
+1. Run the **Create-AzDiagPolicy.PS1** script using Azure PowerShell. This script creates policies for any Azure resource types that support Azure Diagnostics metrics and logging, and feeds data into Log Analytics or Event Hubs for you. Run the following command in Azure PowerShell to execute this script and ensure diagnostics are always fed into Log Analytics:
 
     ```azurepowershell
     .\Create-AzDiagPolicy.ps1 -ExportAll -ExportLA -ValidateJSON -ManagementGroup -AllRegions -ExportInitiative -InitiativeDisplayName "Azure Diagnostics Policy Initiative for a Log Analytics Workspace" -TemplateFileName 'YourTemplate'
@@ -81,7 +81,7 @@ In the following video, you’ll see how to create a new workbook using the Azur
 
 ### Use multiple Log Analytics alerts
 
-You can have multiple simultaneous Log Analytics alerts in place for different events. In your case, you want to ensure that an alert is raised any time there’s suspicious activity on an Azure Key Vault, or if someone tries to submit a bad template for deployment.
+You can have multiple simultaneous Log Analytics alerts in place for different events. In your case, you want to ensure that an alert is raised anytime there’s suspicious activity on an Azure Key Vault, or if someone tries to submit a bad template for deployment.
 
 There's a template that creates multiple alerts based on Kusto Query Language (KQL) queries. Use the multiple Log Analytics alerts [template on GitHub](https://github.com/Azure/Azure-Lighthouse-samples/tree/master/templates/multiple-loganalytics-alerts). It defines both types of alerts for you.
 
@@ -93,13 +93,13 @@ You can use Azure’s activity log to monitor for delegation activity from custo
 
 ### Enable access to tenant scoped data
 
-You must have an account in Azure that's assigned with the *Monitoring Reader* built-in role set at the root scope of the managing tenant to access activity log data. TAny administrator user who has the Global administrator role can assign this type of role, along with elevated access.
+You must have an account in Azure that's assigned with the *Monitoring Reader* built-in role set at the root scope of the managing tenant to access activity log data. Any administrator user who has the Global administrator role can assign this type of role, along with elevated access.
 
 If you're a Global administrator, you can elevate access by enabling **Access management for Azure resources** in the **Properties** pane of your Azure Active Directory tenant.
 
 :::image type="content" source="../media/3-elevate-access.png" alt-text="Elevate access.":::
 
-You can then assign the *Monitoring Reader* role to the account you want to allow to access tenant-level data. You can assign the role by using tools like Azure CLI or Azure PowerShell. To assign a role using Azure PowerShell, run the following command:
+You can then assign the *Monitoring Reader* role to the account you want to allow access to tenant-level data. You can assign the role by using tools like Azure CLI or Azure PowerShell. To assign a role using Azure PowerShell, run the following command:
 
 ```powershell
 # Log in first with Connect-AzAccount if you're not using Cloud Shell
