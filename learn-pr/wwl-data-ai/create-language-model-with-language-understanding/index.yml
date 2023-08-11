@@ -30,7 +30,6 @@ products:
 - azure
 - azure-bot-service
 - ai-services
-- azure-language-understanding
 - azure-sdks
 subjects:
 - natural-language-processing
