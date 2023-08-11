@@ -3,7 +3,7 @@ uid: learn.protect-apis-on-api-management.1-introduction
 title: Introduction
 metadata:
   title: Introduction
-  description: In this unit, you will learn about a business scenario that you can solve by using API protection policies in Azure API Management.
+  description: In this unit, you'll learn about a business scenario that you can solve by using API protection policies in Azure API Management.
   ms.date: 08/10/2023
   author: dlepow
   ms.author: danlep
