@@ -4,7 +4,7 @@ Lamna Healthcare has seen great results with Azure Lighthouse so far. Your compa
 
 Lamna Healthcare uses Azure Lighthouse to provision and manage role-based access control (RBAC) so Relecloud users can access their Azure environments. The company prefers Azure Lighthouse to Azure Active Directory B2B. By using Azure delegated resource management, managed service providers (MSPs) like Relecloud no longer need to create administrator accounts (including contributor, security administrator, backup administrator, and more) in your company's tenants. This enables MSPs like Relecloud to manage the lifecycle of delegated administrators within their own Microsoft Azure Active Directory (Azure AD) tenant. MSPs can also add user accounts to the user group in their Azure AD tenant while, at Lamna Healthcare, you make sure those groups have the required access to manage their resources. To revoke access when an employee leaves the MSP’s organization, you remove the user from the specific group access they'd been delegated.
 
-You can manage and view information on Relecloud and other service providers managing your subscriptions and resources. You can also can delegate specific resources and browse for the newest service provider offers, all within a single pane.
+You can manage and view information on Relecloud and other service providers managing your subscriptions and resources. You can also delegate specific resources and browse for the newest service provider offers, all within a single pane.
 
 You use controls within Azure Lighthouse to understand if your service providers are using Azure Active Directory Privileged Identity Management (Azure AD PIM) or Multi-Factor Authentication (MFA) for their users.
 
@@ -12,7 +12,7 @@ You use controls within Azure Lighthouse to understand if your service providers
 
 To consolidate the management experience, you can view all of the service providers that have access to your subscriptions or resource groups through Azure delegated resource management. You do this in the Azure portal by searching for **Azure Lighthouse** and selecting **View service provider offers**.
 
-:::image type="content" source="../media/2-search-azure-lighthouse.png" alt-text="Screenshot of searching for Azure Lighthouse .":::
+:::image type="content" source="../media/2-search-azure-lighthouse.png" alt-text="Screenshot of searching for Azure Lighthouse.":::
 
 The Service providers pane in the Azure portal is where you’ll view information about your company's service providers. From the same location, you can also shop for new service provider offers and delegate specific resources to service providers.
 
