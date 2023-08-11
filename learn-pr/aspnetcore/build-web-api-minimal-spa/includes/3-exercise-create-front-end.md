@@ -51,7 +51,7 @@ Build the parent component that manages state for the pizza list.
 
 1. Create a file in the _src_ subdirectory named  _Pizza.jsx_ and give it the following content:
 
-    :::code language="javascript" source="../code/with-components/Pizza.jsx":::
+    :::code language="javascript" source="../code/with-components-and-static-data/Pizza.jsx":::
 
     This component is responsible for managing the data and passing it to the `PizzaList` component. It also handles the `create`, `update`, and `delete` operations. This component has no visible UI. The `PizzaList` component renders the UI.
 
@@ -61,7 +61,7 @@ Build the parent component that manages state for the pizza list.
 
 Create a file in the _src_ subdirectory named  _PizzaList.jsx_ and give it the following content:
 
-:::code language="javascript" source="../code/with-components/PizzaList.jsx" :::
+:::code language="javascript" source="../code/with-components-and-static-data/PizzaList.jsx" :::
 
 This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state:
 
@@ -80,7 +80,7 @@ The PizzaList component renders a form with two input fields for the pizza `name
 
 Open the `main.jsx` and replace the code with the following so the **Pizza** component is included.
 
-:::code language="javascript" source="../code/with-components/main.jsx":::
+:::code language="javascript" source="../code/with-components-and-static-data/main.jsx":::
 
 ## Test the app
 
