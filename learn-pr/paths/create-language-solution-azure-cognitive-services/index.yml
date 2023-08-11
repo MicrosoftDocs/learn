@@ -27,7 +27,6 @@ roles:
 - developer
 products:
 - ai-services
-- azure-language-understanding
 subjects:
 - natural-language-processing
 modules:
