@@ -30,11 +30,11 @@ subjects:
 - cloud-computing
 units:
 - learn.azure.open-ai-dotnet-text-completions.1-introduction
-- learn.open-ai-dotnet-text-completions.2-azure-openai-text-completions-overview
-- learn.open-ai-dotnet-text-completions.3-exercise-install-sdk-create-completion
-- learn.open-ai-dotnet-text-completions.4-improve-completion-quality
-- learn.open-ai-dotnet-text-completions.5-exercise-improve-completion-quality
-- learn.open-ai-dotnet-text-completions.6-summary
+- learn.azure.open-ai-dotnet-text-completions.2-azure-openai-text-completions-overview
+- learn.azure.open-ai-dotnet-text-completions.3-exercise-install-sdk-create-completion
+- learn.azure.open-ai-dotnet-text-completions.4-improve-completion-quality
+- learn.azure.open-ai-dotnet-text-completions.5-exercise-improve-completion-quality
+- learn.azure.open-ai-dotnet-text-completions.6-summary
 
 badge:
   uid: learn.open-ai-dotnet-text-completions.badge

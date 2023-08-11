@@ -6,7 +6,7 @@ You decide you need to use classification and translation completions of the Azu
 
 ## Create the Azure OpenAI resource
 
-The first step is to create the Azure OpenAI resource and deploy the model. Let's use the [GPT-3 Curie model](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models#curie) in this exercise. As the documentation notes, Curie works great for text sentiment and language translation that is what our application needs.
+The first step is to create the Azure OpenAI resource and deploy the model. Let's use the [GPT-3 Curie model](/azure/cognitive-services/openai/concepts/models#curie) in this exercise. As the documentation notes, Curie works great for text sentiment and language translation that is what our application needs.
 
 ### Prerequisites
 
@@ -14,11 +14,11 @@ The first step is to create the Azure OpenAI resource and deploy the model. Let'
 * Access granted to Azure OpenAI in the desired subscription
 
     Currently, access to this service is granted only by application. You can apply for access to Azure OpenAI by completing the form at [https://aka.ms/oai/access](https://aka.ms/oai/access).
-* [Azure CLI installed](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
+* [Azure CLI installed](/cli/azure/install-azure-cli)
 
 ### Create a resource and deploying a model
 
-Creating the resource and deploying the model is a multi-step process. Use the Azure CLI as it can be quicker than using the Azure portal. But note you can use the [Azure portal if you wish](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
+Creating the resource and deploying the model is a multi-step process. Use the Azure CLI as it can be quicker than using the Azure portal. But note you can use the [Azure portal if you wish](/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
 
 1. Run the `az login` command to sign-in if you haven't already.
 1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **LearnPetStore** but you can substitute the name of your choice, or use an existing group's name.
@@ -133,7 +133,7 @@ Let's create a prompt for the model that shows it how to classify product review
 
 Now let's have the model generate a sentiment.
 
-1. To use the Azure OpenAI SDK, we first must define a `CompletionOptions` object that defines how we want the model to react. The exact meanings of the values of `CompletionOptions` are a bit out of scope for the module, but you can [learn more about them](https://learn.microsoft.com/dotnet/api/azure.ai.openai.completionsoptions?view=azure-dotnet-preview).
+1. To use the Azure OpenAI SDK, we first must define a `CompletionOptions` object that defines how we want the model to react. The exact meanings of the values of `CompletionOptions` are a bit out of scope for the module, but you can [learn more about them](/dotnet/api/azure.ai.openai.completionsoptions).
 
     ```csharp
     var completionOptions = new CompletionsOptions

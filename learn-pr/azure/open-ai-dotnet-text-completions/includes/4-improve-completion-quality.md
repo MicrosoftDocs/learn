@@ -6,7 +6,7 @@ In this unit, we'll talk about the general concepts and patterns that can be use
 
 ## Basics
 
-Text prompts are how users interact with GPT models. Generative language models attempt to produce the next series of words that are most likely to follow from the previous text. It's as if we're saying _What is the first thing that comes to your mind when I say <prompt>?_
+Text prompts are how users interact with GPT models. Generative language models attempt to produce the next series of words that are most likely to follow from the previous text. It's as if we're saying _What is the first thing that comes to your mind when I say &lt;prompt&gt;?_
 
 As you develop complex prompts, it's helpful to keep this fundamental behavior in mind. Regardless of the prompt, the model is simply responding with what it determines is most likely to follow from the prompt.
 

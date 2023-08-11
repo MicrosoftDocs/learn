@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.open-ai-dotnet-text-completions.1-introduction
+uid: learn.azure.open-ai-dotnet-text-completions.1-introduction
 title: Introduction
 metadata:
   title: Introduction to text completions with .NET and Azure OpenAI
