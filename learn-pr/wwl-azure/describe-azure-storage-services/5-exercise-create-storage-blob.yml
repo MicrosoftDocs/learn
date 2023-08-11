@@ -4,11 +4,12 @@ title: Exercise - Create a storage blob
 metadata:
   title: Exercise - Create a storage blob
   description: "Exercise - Create a storage blob"
-  ms.date: 08/10/2023
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: true
+labModal: false
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-create-storage-blob.md)]
