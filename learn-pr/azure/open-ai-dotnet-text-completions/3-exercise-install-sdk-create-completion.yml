@@ -4,7 +4,7 @@ title: Exercise - Install the .NET SDK for Azure OpenAI and create your first ap
 metadata:
   title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
   description: Install the .NET SDK for Azure OpenAI and create your first app with text completions
-  ms.date: 05/19/2023
+  ms.date: 08/11/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial

@@ -3,8 +3,8 @@ uid: learn.open-ai-dotnet-text-completions.6-summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary of how to ask questions of your data with .NET and Azure OpenAI text completions
-  ms.date: 05/19/2023
+  description: Summary of using text completions and prompt engineering with .NET and Azure OpenAI
+  ms.date: 08/11/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial

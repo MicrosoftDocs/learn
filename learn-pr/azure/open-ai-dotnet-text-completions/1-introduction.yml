@@ -4,7 +4,7 @@ title: Introduction
 metadata:
   title: Introduction to text completions with .NET and Azure OpenAI
   description: An introduction to text completions using the .NET SDK to access the Azure OpenAI service
-  ms.date: 05/19/2023
+  ms.date: 08/11/2023
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
