@@ -2,7 +2,7 @@ Relecloud wants to ensure that resources and data for customers like Lamna Healt
 
 ## Couple Microsoft Sentinel with Azure Lighthouse
 
-With Azure Lighthouse, you can use Microsoft Sentinel to build a sophisticated Security as a service offering. Microsoft Sentinel provides features such as threat intelligence, alert detection, security analytics, and more. You couple Azure Lighthouse with Microsoft Sentinel to manage multiple Microsoft Sentinel customer workspaces simultaneously.
+With Azure Lighthouse, you can use Microsoft Sentinel to build a sophisticated Security as a service offering. Microsoft Sentinel provides features such as threat intelligence, alert detection, security analytics, and more. You can couple Azure Lighthouse with Microsoft Sentinel to manage multiple Microsoft Sentinel customer workspaces simultaneously.
 
 You can then run queries through multiple customer workspaces, or provide insights by creating workbooks that you use to monitor and visualize data across customer data sources. Playbooks, queries, and other intellectual property stay in your Azure tenant, but can make actions on customers’ tenants.
 
