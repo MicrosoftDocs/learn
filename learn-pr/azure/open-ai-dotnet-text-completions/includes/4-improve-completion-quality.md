@@ -1,5 +1,7 @@
 Prompt construction can be difficult. In practice, the prompt acts to configure the model weights to complete the desired task, but it's more of an art than a science, often requiring experience and intuition to craft a successful prompt.
 
+When you send well-constructed prompts to the model, the model will return better completions.
+
 In this unit we'll talk about the general concepts and patterns that can be used to construct prompts and look at some techniques that can be used to improve the quality of the completions.
 
 ## Basics

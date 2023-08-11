@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.open-ai-dotnet-text-completions.4-improve-completion-quality
-title: Tips to improve completion quality
+title: Understand prompts to improve completion quality
 metadata:
-  title: Improve completion quality by creating better prompts
+  title: Understand prompts to improve completion quality
   description: How to improve prompts to increase the quality of the text completion results
   ms.date: 05/19/2023
   author: codemillmatt
