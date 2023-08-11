@@ -1,6 +1,6 @@
 Now that you've created a virtual machine (VM), you want to check its health quickly. You decide to save some metric charts to a new dashboard on the portal.
 
-In this unit, you'll see how to build rich charts by using the Virtual Machine Host metrics, and then pin these charts to a new dashboard.
+In this unit, you see how to build rich charts by using the Virtual Machine Host metrics, and then pin these charts to a new dashboard.
 
 ## Metrics
 
@@ -12,11 +12,11 @@ The following table lists a few of the Virtual Machine Host metrics that are ava
 |---------|---------|---------|
 | CPU     | CPU Credits Consumed [or Remaining]  | Number of credits consumed, or number of credits available to burst       |
 |      | Percentage CPU        | Percentage of allocated compute units that are currently in use        |
-| OS Disk     | OS Disk Queue Depth        |  Length of the queue to be written to the OS disk (will increase when the disk is being throttled)       |
+| OS Disk     | OS Disk Queue Depth        |  Length of the queue to be written to the OS disk (increases when the disk is being throttled)       |
 |      | OS Disk Read [or Write] Bytes/Sec       | Reads [or writes] from the OS disk during the monitoring period in bytes per second       |
 |      | OS Disk Read [or Write] Operations/Sec        |  Reads [or writes] from the OS disk during the monitoring period in IOPS       |
 |      | Premium OS Disk Cache Read Hit [or Miss]       | Frequency that data is read from the cache versus the OS disk        |
-| Data Disk     | Data Disk Queue Depth       | Length of the queue to be written to the data disk (will increase when the disk is being throttled)         |
+| Data Disk     | Data Disk Queue Depth       | Length of the queue to be written to the data disk (increases when the disk is being throttled)         |
 |      | Data Disk Read [or Write] Bytes/Sec       | Reads [or writes] from the data disk during the monitoring period in bytes per second        |
 |      | Data Disk Read [or Write] Operations/Sec        | Reads [or writes] from the data disk during the monitoring period in IOPS        |
 |      | Premium Data Disk Cache Read Hit [or Miss]      | Frequency that data is read from the cache versus the data disk        |
@@ -47,7 +47,7 @@ You can have greater control, with more options, by creating a custom key perfor
 
 You can reuse the prebuilt graph for network traffic. However, the average CPU usage isn't the most useful metric. The maximum CPU usage is a better metric to use.
 
-In the **Monitor** > **Metrics** section of the VM, you'll create a new maximum CPU graph, and pin it to a new shared dashboard. Now that you have a KPI dashboard, you pin the network (total) graph to that dashboard. You can add more, but with these two graphs you have a quick way to view the performance of your VM.
+In the **Monitor** > **Metrics** section of the VM, you can create a new maximum CPU graph, and pin it to a new shared dashboard. Now that you have a KPI dashboard, you pin the network (total) graph to that dashboard. You can add more, but with these two graphs you have a quick way to view the performance of your VM.
 
 The dashboard also allows you to change the time range shown on both graphs at the same time. It has many more options than what's on the **Overview** page **Monitoring** tab.
 
