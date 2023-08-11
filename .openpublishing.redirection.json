@@ -5196,8 +5196,18 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/aspnetcore/build-web-api-net-core/index.md",
-      "redirect_url": "/training/modules/build-web-api-aspnet-core",
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/6-knowledge-check.md",
+      "redirect_url": "/training/modules/build-web-api-minimal-spa/8-knowledge-check",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/7-summary.md",
+      "redirect_url": "/training/modules/build-web-api-minimal-spa/9-summary",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/6-knowledge-check.md",
+      "redirect_url": "/training/modules/build-web-api-minimal-spa/8-knowledge-check",
       "redirect_document_id": false
     },
     {

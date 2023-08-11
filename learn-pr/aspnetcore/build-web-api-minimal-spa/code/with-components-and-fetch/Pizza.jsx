@@ -12,11 +12,16 @@ function Pizza() {
   const [error, setError] = useState(null);
 
   useEffect(() => {
+    fetchPizzaData();
+  }, []);
+
+  const fetchPizzaData = () => {
     fetch(API_URL)
       .then(response => response.json())
       .then(data => setData(data))
       .catch(error => setError(error));
-  }, []);
+    setData(pizzaData);
+  };
 
   const handleCreate = (item) => {
 
@@ -53,6 +58,7 @@ function Pizza() {
       .then(() => setData(data.filter(item => item.id !== id)))
       .catch(error => console.error('Error deleting item:', error));
   };
+
 
   return (
     <div>

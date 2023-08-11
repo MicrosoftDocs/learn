@@ -19,15 +19,11 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
     What you get is a directory, _PizzaClient_, that contains your scaffolded React app. While the code and project are TypeScript, there's little TypeScript used in the project. 
 
-1. Update the `vite.config.js` to provide a consistent front end port and proxy to backend. Replace the contents of `./vite.config.js` with the following code:
+1. Update the `vite.config.js` to provide a consistent front end port. Replace the contents of `./vite.config.js` with the following code:
 
     :::code language="javascript" source="../code/vite.config.js" highlight="8-11":::
 
     * **PORT**: The port is set to 3000, a common port number used for front end apps..
-    * **PROXY**: The route value should be the route to your API app. For example, if your API app is available at `http://localhost:5059/pizza`, 
-        * The **route** is `/pizza`.
-        * The **target** is: `http://localhost:5059`
-
 
 1. Start the app by calling `npm run dev`:
 
@@ -57,9 +53,9 @@ Build the parent component that manages state for the pizza list.
 
     :::code language="javascript" source="../code/with-components/Pizza.jsx":::
 
-    This component is responsible for fetching the data from the back end and passing it to the `PizzaList` component. It also handles the `create`, `update`, and `delete` operations. This component has no visible UI. The `PizzaList` component renders the UI.
+    This component is responsible for managing the data and passing it to the `PizzaList` component. It also handles the `create`, `update`, and `delete` operations. This component has no visible UI. The `PizzaList` component renders the UI.
 
-    The `Pizza` component uses the `useState` and `useEffect` hooks to manage state. The `useState` hook is used to manage the `data` and `error` state. The `useEffect` hook is used to fetch the data from the back end on the initial page request. The `Pizza` component passes the `data` and `error` state to the `PizzaList` component.
+    The `Pizza` component uses the `useState` and `useEffect` hooks to create data state. The `useState` hook is used to manage the `data` and `maxId`. The `useEffect` hook is used to set the data on the initial page request. The `Pizza` component passes the `data` to the `PizzaList` component.
 
 ## Build a Pizza list component
 
@@ -82,7 +78,7 @@ The PizzaList component renders a form with two input fields for the pizza `name
 
 ## Add Pizza to your app
 
-Open the `main.tsx` and replace the code with the following so the **Pizza** component is included.
+Open the `main.jsx` and replace the code with the following so the **Pizza** component is included.
 
 :::code language="javascript" source="../code/with-components/main.jsx":::
 

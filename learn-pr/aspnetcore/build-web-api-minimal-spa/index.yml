@@ -40,10 +40,10 @@ units:
   - learn.aspnetcore.build-web-api-minimal-spa.introduction
   - learn.aspnetcore.build-web-api-minimal-spa.design-front-end
   - learn.aspnetcore.build-web-api-minimal-spa.exercise-create-front-end
-  - learn.aspnetcore.build-web-api-minimal-spa.design-style
-  - learn.aspnetcore.build-web-api-minimal-spa.exercise-use-design-system
   - learn.aspnetcore.build-web-api-minimal-spa.design-api
   - learn.aspnetcore.build-web-api-minimal-spa.exercise-create-api
+  - learn.aspnetcore.build-web-api-minimal-spa.design-style
+  - learn.aspnetcore.build-web-api-minimal-spa.exercise-use-design-system
   - learn.aspnetcore.build-web-api-minimal-spa.knowledge-check
   - learn.aspnetcore.build-web-api-minimal-spa.summary
 badge:

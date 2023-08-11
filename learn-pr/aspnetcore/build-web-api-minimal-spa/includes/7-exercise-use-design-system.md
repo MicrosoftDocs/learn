@@ -10,7 +10,7 @@ npm install @mui/material @emotion/react @emotion/styled @mui/icons-material
 
 ## Import Material UI
 
-To import Material UI to your React app, replace `main.tsx` with the following code:
+To import Material UI to your React app, replace the code in `main.jsx` with the following code:
 
 :::code language="javascript" source="../code/with-components-with-style/main.jsx":::
 
@@ -18,7 +18,7 @@ The code imports the ThemeProvider and createTheme components from Material UI a
 
 ## Pizza component
 
-Because the `pizza.tsx` file controls state but doesn't control rendering the pizza list, you don't need to add styles to this page.
+Because the `pizza.jsx` file controls state but doesn't apply styles or components to rendering the pizza list, you don't need to add anything to this page.
 
 ## PizzaList component
 
@@ -37,9 +37,9 @@ In the `PizzaList` component, the Material UI components TextField, Button, Box,
 * The **TextField** component is used to create the input fields for the name and description of each pizza item. 
 * The **Button** component is used to create the create, update, and cancel buttons.
 
-## Run the app
+## Test the new design
 
-1. If you stopped your app in the previous unit, run the following command to start the app:
+1. If you stopped your front end app, run the following command to start the app:
 
     ```bash
     npm run dev
@@ -48,4 +48,3 @@ In the `PizzaList` component, the Material UI components TextField, Button, Box,
 1. Open a browser and navigate to `http://localhost:3000`.
 
     :::image type="content" source="./media/design-system-form.png" alt-text="Screenshoot of Pizza form with styled components.":::
-    

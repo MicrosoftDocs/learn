@@ -13,4 +13,4 @@ metadata:
   ms.prod: aspnet-core
 durationInMinutes: 3
 content: |
-  [!include[](includes/4-design-style.md)]
+  [!include[](includes/6-design-style.md)]

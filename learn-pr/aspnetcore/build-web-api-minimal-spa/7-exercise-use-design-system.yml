@@ -15,4 +15,4 @@ metadata:
   ms.prod: aspnet-core
 durationInMinutes: 8
 content: |
-  [!include[](includes/5-exercise-use-design-system.md)]
+  [!include[](includes/7-exercise-use-design-system.md)]
