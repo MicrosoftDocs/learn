@@ -4,10 +4,11 @@ title: Explore high availability of SAP ASCS-SCS instances
 metadata:
   title: Explore high availability of SAP ASCS-SCS instances
   description: "Explore high availability of SAP ASCS-SCS instances"
-  ms.date: 08/09/2023
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.service: sap-on-azure
 durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-high-availability-sap-ascs-scs-instances.md)]

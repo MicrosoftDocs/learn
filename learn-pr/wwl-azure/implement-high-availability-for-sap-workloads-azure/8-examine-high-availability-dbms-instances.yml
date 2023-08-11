@@ -4,10 +4,11 @@ title: Examine high availability of DBMS instances
 metadata:
   title: Examine high availability of DBMS instances
   description: "Examine high availability of DBMS instances"
-  ms.date: 08/09/2023
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
+  ms.service: sap-on-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/8-examine-high-availability-dbms-instances.md)]
