@@ -26,20 +26,20 @@ quiz:
     - content: Servers running Windows Server
       isCorrect: false
       explanation: Servers running Windows Server, including older versions like 2008 R2, are compatible with Azure.
-    - content: All of the above are compatible with Azure
+    - content: All of these assets are compatible with Azure
       isCorrect: true
       explanation: Azure can host VMware, Windows, Linux, and various other technical assets.
   - content: What risks might prevent Tailwind Traders from successfully migrating two datacenters in the next 18 to 24 months?
     choices:
     - content: Effort and time to migrate the portfolio
       isCorrect: false
-      explanation: Realistic expectations about the work, plans, and skills required are important. This isn't the only risk to migration.
+      explanation: Realistic expectations about the work, plans, and skills required are important, but isn't the only risk to migration.
     - content: Controls to operate the migrated assets
       isCorrect: false
-      explanation: Governance, security, and operations controls are required to migrate whole datacenters. This isn't the only risk.
+      explanation: Governance, security, and operations controls are required to migrate whole datacenters, but aren't the only risk to migration.
     - content: Organization of people, teams, and responsibilities
       isCorrect: false
-      explanation: Multiple functions are required to successfully migrate production workloads. As adoption continues, the alignment of teams will become more important.
-    - content: It depends; all of the above
+      explanation: Multiple functions are required to successfully migrate production workloads. As adoption continues, the alignment of teams becomes more important.
+    - content: It depends; all of these risks might apply
       isCorrect: true
-      explanation: At different stages of cloud adoption, the risks and roadblocks will change. The next module in this series will help you detect and address each of these common risks.
+      explanation: At different stages of cloud adoption, the risks and roadblocks change. The next module in this series will help you detect and address each of these common risks.

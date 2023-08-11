@@ -7,7 +7,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design cloud solutions for the public sector
 summary: Governments around the world are in the process of a digital transformation. Explore digital solutions and select architectures that allow you to move your workload into the cloud while keeping data of all classification levels safe. As you consider the features and services the cloud has to offer, explore how you can integrate various Azure solutions. These solutions can bring value to your agency while maintaining control of your data.
 abstract: | 

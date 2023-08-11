@@ -7,7 +7,7 @@ metadata:
   author: garvct
   ms.author: cogarvey
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: virtual-machines
 title: Optimizing tightly coupled HPC applications on HBv2, HC, and HB series virtual machines
 summary: This module provides you with guidance on choosing the right SKU for your high-performance computing (HPC) applications, and how to build and run highly optimized and tightly coupled HPC applications.
 abstract: |

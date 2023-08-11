@@ -7,7 +7,7 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot platform-as-a-service issues in Microsoft Azure
 summary: To benefit from Azure PaaS services, you must be able to troubleshoot connectivity issues quickly and effectively both from an on-premises user to an Azure PaaS service and between PaaS services.
 abstract: |

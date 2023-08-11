@@ -7,7 +7,7 @@ metadata:
   author: cherylmc
   ms.author: cherylmc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: bastion
 title: Connect to virtual machines through the Azure portal by using Azure Bastion
 summary: Evaluate Azure Bastion. Deploy Azure Bastion to securely connect to Azure virtual machines directly within the Azure portal, to effectively replace an existing jumpbox solution. Monitor remote sessions by using diagnostic logs. Manage remote sessions by disconnecting a user session.
 abstract: | 

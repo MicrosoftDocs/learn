@@ -7,7 +7,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Choose a client application to use in a Privileged Access Workstation (PAW) with threat modeling
 summary: Learn how to use the foundation of threat modeling to assess a client application for security risks and find ways to reduce or eliminate them before installing it into a privileged environment.
 abstract: |
@@ -20,7 +19,6 @@ prerequisites: |
   - Threat modeling security fundamentals
 iconUrl: /training/achievements/threat-modeling-secured-environment.svg
 levels:
-- beginner
 - intermediate
 roles:
 - administrator
@@ -31,9 +29,9 @@ roles:
 products:
 - azure
 - azure-iot-security-center
-- azure-security-center
+- defender-for-cloud
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 - virtual-machine

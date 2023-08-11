@@ -42,7 +42,7 @@ By default, all users who are assigned an Intune license are allowed to enroll t
     
      -  Minimum version
      -  Maximum version
- -  Restrict enrollment of personally owned devices. You can configure this restriction for iOS, Android, Android work profile, and macOS devices only; this restriction isn't available for Windows devices.
+ -  Restrict enrollment of personally owned devices. You can configure this restriction for iOS, Android, Android work profile, macOS, and personally owned devices for Windows 10/11.
 
 :::image type="content" source="../media/configure-platform-326ebf7a.png" alt-text="Screenshot of the Configure platforms screen.":::
 

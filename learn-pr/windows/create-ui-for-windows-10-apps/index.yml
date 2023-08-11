@@ -7,7 +7,8 @@ metadata:
   ms.author: quradic
   ms.date: 04/27/2023
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: w10
+  manager: jken
 title: Create a user interface (UI) for Windows 10 apps
 summary: Learn the fundamentals of creating a UI for Windows 10 apps, on the UWP or WPF platforms.
 abstract: |

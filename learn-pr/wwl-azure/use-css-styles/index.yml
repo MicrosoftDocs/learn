@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Use CSS styles in a webpage
 summary: Demonstrates how to apply formatting to basic HTML by using styles and Cascading Style Sheets.
 abstract: |
@@ -26,7 +25,7 @@ roles:
 - k-12-educator
 - student
 products:
-- return-to-school
+- industry-solutions
 - return-to-workplace
 subjects:
 - cloud-computing

@@ -4,11 +4,10 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 05/04/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 3
 quiz:
   title: ""
@@ -35,7 +34,7 @@ quiz:
     - content: "'`Console.WriteLine(@\"My value: [value]\");`'"
       isCorrect: false
       explanation: "Incorrect. This line uses the at `@` symbol instead of the dollar `$` symbol, and square brackets instead of curly braces for the interpolation expression."
-  - content: "Unicode characters where embedded in the C# strings for a console application to present a greeting message in Thai. However, the message is only displayed as question mark characters.  What is a possible cause?"
+  - content: "Unicode characters were embedded in the C# strings for a console application to present a greeting message in Thai. However, the message is only displayed as question mark characters.  What is a possible cause?"
     choices:
     - content: "A missing \\u escape sequence for Unicode characters."
       isCorrect: false

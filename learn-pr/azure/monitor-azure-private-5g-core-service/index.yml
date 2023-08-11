@@ -7,7 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.service: learning-private-5g-core
+  ms.service: private-5g-core 
 title: Monitor the Azure Private 5G Core service
 summary: Learn about the network monitoring capabilities of Azure Private 5G Core, the use of relevant monitoring tools, and the techniques to troubleshoot and resolve network issues.
 abstract: |

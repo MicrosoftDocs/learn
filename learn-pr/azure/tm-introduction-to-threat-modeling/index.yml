@@ -7,7 +7,6 @@ metadata:
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Introduction to threat modeling
 summary: Threat modeling is an effective way to help secure your systems, applications, networks, and services. It's an engineering technique that identifies potential threats and recommendations to help reduce risk and meet security objectives earlier in the development lifecycle.
 abstract: |
@@ -27,10 +26,10 @@ roles:
 - security-engineer
 - solution-architect
 products:
-- azure-iot-security-center
+- azure
 - azure-security-center
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

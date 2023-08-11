@@ -8,7 +8,7 @@ Azure Pipelines attempts to scrub secrets from logs wherever possible. This filt
 
 ## Use the audit service
 
-Many pipeline events are recorded in the Auditing service. Review the audit log periodically to ensure no malicious changes have slipped past. Visit https://dev.azure.com/ORG-NAME/_settings/audit to get started.
+Many pipeline events are recorded in the Auditing service. Review the audit log periodically to ensure no malicious changes have slipped past. Visit `https://dev.azure.com/ORG-NAME/_settings/audit` to get started.
 
 ## Ways to restrict agent logging of secrets
 

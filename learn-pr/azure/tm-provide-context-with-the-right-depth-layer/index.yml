@@ -7,7 +7,6 @@ metadata:
   author: rodsan
   ms.author: rodsan
   ms.topic: interactive-tutorial
-  ms.prod: learning-threat-modeling
 title: Provide context with the right depth layer
 summary: Threat models can get complex if all parties involved can't agree on a data-flow diagram depth layer that provides enough context to satisfy requirements
 abstract: |
@@ -25,10 +24,10 @@ roles:
 - security-engineer
 - solution-architect
 products:
-- azure-iot-security-center
+- azure
 - azure-security-center
 - m365-security-center
-- m365-ems-cloud-app-security
+- defender-for-cloud-apps
 subjects:
 - threat-protection
 units:

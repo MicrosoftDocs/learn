@@ -9,12 +9,11 @@ Currently you need to [apply](https://aka.ms/oaiapply?azure-portal=true) for acc
 
 In the [Azure OpenAI Studio](https://oai.azure.com/portal?azure-portal=true), you can build AI models and deploy them for public consumption in software applications. Azure OpenAI's capabilities are made possible by specific generative AI models. Different models are optimized for different tasks; some models excel at summarization and providing general unstructured responses, and others are built to generate code or unique images from text input.
 
-These Azure OpenAI models fall into a few main families:
-- GPT-4
-- GPT-3
-- Codex
-- [Embeddings](/azure/cognitive-services/openai/concepts/understand-embeddings?azure-portal=true)
-- DALL-E
+These Azure OpenAI models include:
+- **GPT-4** models that represent the latest generative models for natural language and code.
+- **GPT-3.5** models that can generate natural language and code responses based on prompts.
+- **Embeddings** models that convert text to numeric vectors for analysis - for example comparing sources of text for similarity.
+- **DALL-E** models that generate images based on natural language descriptions.
 
 Azure OpenAI's AI models can all be trained and customized with fine-tuning. We won't go into custom models here, but you can learn more on the [fine-tuning your model](/azure/cognitive-services/openai/how-to/fine-tuning?pivots=programming-language-studio?azure-portal=true) Azure documentation.
 

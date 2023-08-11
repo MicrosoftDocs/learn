@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Create tables, views, and temporary objects
 summary: Learn how to use Transact-SQL to create tables, views, and temporary objects for your databases.
 abstract: |

@@ -7,7 +7,7 @@ metadata:
   author: Erikre
   ms.author: erikre
   ms.topic: interactive-tutorial
-  ms.prod: learning-endpoint-manager
+  ms.service: microsoft-intune
 title: Introduction to Microsoft Intune
 summary: Microsoft Intune is your strategic infrastructure for managing and protecting your organization's devices, apps, and data. In addition, Microsoft Intune helps to ensure your end users have the best experience for productivity. This module helps explain endpoints that you need to protect, as well as the products and services that encompass Microsoft Intune.
 abstract: | 

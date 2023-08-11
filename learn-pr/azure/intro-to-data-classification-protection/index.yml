@@ -7,7 +7,6 @@ metadata:
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Intro to data classification and protection 
 summary: Learners should know and be able to describe data classification and data protection key concepts.
 abstract: |
@@ -32,7 +31,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - security
 - classification-analysis

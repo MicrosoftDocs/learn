@@ -4,12 +4,11 @@ title: Deploy disk encryption
 metadata:
   title: Deploy disk encryption
   description: "Deploy disk encryption"
-  ms.date: 05/04/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 7
 content: |
   [!include[](includes/8-disk-encryption.md)]

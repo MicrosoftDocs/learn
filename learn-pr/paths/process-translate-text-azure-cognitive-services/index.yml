@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Process and translate text with Azure Cognitive Services
 prerequisites: |
   Before starting this learning path, you'll need
@@ -22,7 +22,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
+- ai-services
 subjects:
 - data-ai
 modules:

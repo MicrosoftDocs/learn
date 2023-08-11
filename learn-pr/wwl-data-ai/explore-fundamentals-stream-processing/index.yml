@@ -3,20 +3,18 @@ uid: learn.wwl.explore-fundamentals-of-stream-processing
 metadata:
   title: Explore fundamentals of real-time analytics
   description: "Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions."
-  ms.date: 05/04/2023
+  ms.date: 06/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Explore fundamentals of real-time analytics
 summary: Learn about the basics of stream processing, and the services in Microsoft Azure that you can use to implement real-time analytics solutions.
 abstract: |
-  In this module, you'll learn how to:
   - Compare batch and stream processing
   - Describe common elements of streaming data solutions
   - Describe features and capabilities of Azure Stream Analytics
   - Describe features and capabilities of Spark Structured Streaming on Azure
-  - Describe features and capabilities of Azure Synapse Data Explorer
 prerequisites: |
   Before starting this module, you should have some conceptual understanding of modern data warehousing and analytics, and you should be familiar with Azure services for data workloads, including Azure Storage, Azure SQL Database, and Azure Synapse Analytics.
 iconUrl: /training/achievements/2-explore-fundamentals-of-real-time-analytics.svg
@@ -38,7 +36,6 @@ units:
 - learn.wwl.explore-fundamentals-of-stream-processing.exercise-analyze-streaming-data
 - learn.wwl.explore-fundamentals-of-stream-processing.explore-apache-spark-microsoft-azure
 - learn.wwl.explore-fundamentals-of-stream-processing.exercise-process-streaming-data-using-spark
-- learn.wwl.explore-fundamentals-of-stream-processing.data-explorer
 - learn.wwl.explore-fundamentals-of-stream-processing.knowledge-check
 - learn.wwl.explore-fundamentals-of-stream-processing.summary
 badge:

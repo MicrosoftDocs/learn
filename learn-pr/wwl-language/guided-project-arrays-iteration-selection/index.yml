@@ -3,11 +3,11 @@ uid: learn.wwl.guided-project-arrays-iteration-selection
 metadata:
   title: Guided project - Develop foreach and if-elseif-else structures to process array data in C#
   description: "Gain experience developing a console app that implements arrays, foreach loops, and if statements to achieve app specifications."
-  ms.date: 05/02/2023
+  ms.date: 06/02/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Guided project - Develop foreach and if-elseif-else structures to process array data in C#
 summary: Gain experience developing a console app that implements arrays, foreach loops, and if statements to achieve app specifications.
 abstract: |
@@ -18,7 +18,7 @@ prerequisites: |
   *   Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
   *   Experience using if statements in C# to evaluate an expression and branch code accordingly.
   *   Experience using a foreach loop to access elements of array variables.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/guided-project-arrays-iteration-selection.svg
 levels:
 - beginner
 roles:

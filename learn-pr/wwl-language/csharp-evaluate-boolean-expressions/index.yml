@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Evaluate Boolean expressions to make decisions in C#
 summary: Learn the operators and techniques required to evaluate and compare values in your decision statements.
 abstract: |

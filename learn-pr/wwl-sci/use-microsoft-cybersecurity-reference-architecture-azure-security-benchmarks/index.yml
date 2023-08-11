@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: hrasheed
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Recommend security best practices using Microsoft Cybersecurity Reference Architectures (MCRA) and Microsoft Cloud Security Benchmarks
 summary: You'll learn how to use guidance in Microsoft Cybersecurity Reference Architectures and Microsoft Cloud Security Benchmarks to help an organization apply Zero Trust principles and secure their infrastructure.
 abstract: |

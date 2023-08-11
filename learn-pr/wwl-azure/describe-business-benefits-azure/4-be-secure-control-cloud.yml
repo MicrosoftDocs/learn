@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-business-benefits-azure.be-secure-control-cloud
+title: Be secure and in control in the cloud
+metadata:
+  title: Be secure and in control in the cloud
+  description: "Be secure and in control in the cloud"
+  ms.date: 07/11/2023
+  author: wwlpublish
+  ms.author: robbarefoot
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-be-secure-control-cloud.md)]
+interactive: bash

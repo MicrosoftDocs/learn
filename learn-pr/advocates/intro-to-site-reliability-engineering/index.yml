@@ -7,9 +7,9 @@ metadata:
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: dnb-01102020
+  ms.service: site-reliability-engineering 
 title: Introduction to Site Reliability Engineering (SRE)
 summary: Organizations large and small have started to realize just how crucial system and application reliability is to their business. They have also learned the difficulty of maintaining that reliability while iterating at the speed demanded by the marketplace. Site Reliability Engineering (SRE) is a proven approach to this challenge.
 abstract: |

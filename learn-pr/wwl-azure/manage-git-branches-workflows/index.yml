@@ -3,11 +3,11 @@ uid: learn.wwl.manage-git-branches-workflows
 metadata:
   title: Manage Git branches and workflows
   description: "Manage Git branches and workflows"
-  ms.date: 04/28/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 title: Manage Git branches and workflows
 summary: This module explores Git branching types, concepts, and models for the continuous delivery process. It helps companies defining their branching strategy and organization.
 abstract: |

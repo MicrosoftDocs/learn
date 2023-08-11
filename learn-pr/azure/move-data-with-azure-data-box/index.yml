@@ -7,8 +7,8 @@ metadata:
   author: alkohli
   ms.author: alkohli
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: intro-internal
+  ms.service: databox
 title: Move large amounts of data to the cloud by using Azure Data Box family
 summary: Evaluate Azure Data Box family to import terabytes (TBs) of data from a local computer to Azure Blob storage. Order disks. Copy data to disks and return them. Verify that the data is uploaded to Azure.
 abstract: | 

@@ -10,7 +10,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: machine-learning
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - build-2023
+    - build-2023-dataai
   ms.contributors:
   - cassieb-04262021
 durationInMinutes: 8
@@ -35,13 +37,13 @@ quiz:
           explanation: "A `DataSet` is designed for retrieval of _individual_ data items while a `DataLoader` is designed to work with _batches_ of data."
     - content: "Transforms in PyTorch are designed to:"
       choices:
-        - content: "perform some manipulation of the data to make it suitable for training"
+        - content: "Perform some manipulation of the data to make it suitable for training."
           isCorrect: true
-          explanation: "This is correct!"
-        - content: "convert input tensors into an output tensor that contains a prediction"
+          explanation: "Correct!"
+        - content: "Convert input tensors into an output tensor that contains a prediction."
           isCorrect: false
-          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training"
-        - content: "convert data items into visual representations"
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training."
+        - content: "Convert data items into visual representations."
           isCorrect: false
-          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training"
+          explanation: "Incorrect, transforms perform some manipulation of the data to make it suitable for training."
           

@@ -7,7 +7,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Authenticate apps to Azure services by using service principals and managed identities for Azure resources
 summary: Securely authenticate applications to Azure to manage and access Azure services. Service principals and managed identities for Azure resources give your app an Azure Active Directory identity.
 abstract: | 

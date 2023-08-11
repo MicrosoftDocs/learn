@@ -3,26 +3,25 @@ uid: learn.wwl.guided-project-calculate-print-student-grades
 metadata:
   title: Guided project - Calculate and print student grades
   description: "Learn to develop an application that will calculate and display results based on given data."
-  ms.date: 05/04/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Guided project - Calculate and print student grades
 summary: Learn to develop an application that will calculate and display results based on given data.
 abstract: |
   After you complete this module, you'll be able to:
-  * Learn to develop basic applications by breaking down the work into smaller parts
-  * Identify appropriate data types for storing and working with variables
-  * Perform mathematical operations to determine results
-  * Apply formatting techniques to display output
+  *   Learn to develop basic applications by breaking down the work into smaller parts
+  *   Identify appropriate data types for storing and working with variables
+  *   Perform mathematical operations to determine results
+  *   Apply formatting techniques to display output
 prerequisites: |
-  * Beginner level experience with basic C# syntax rules
-  * Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
-  * Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
-  * Beginner level experience with string concatenation and string interpolation
-  * Beginner level experience with performing basic operations on numbers
-iconUrl: /training/achievements/generic-badge.svg
+  *   Beginner level experience with basic C# syntax rules
+  *   Beginner level experience with displaying a message to a console using the Console.WriteLine() and Console.Write() methods
+  *   Beginner level experience with creating literal values and declare variables of basic data types like string, int, and decimal
+  *   Beginner level experience with string concatenation and string interpolation
+  *   Beginner level experience with performing basic operations on numbers
+iconUrl: /training/achievements/guided-project-calculate-print-student-grades.svg
 levels:
 - beginner
 roles:

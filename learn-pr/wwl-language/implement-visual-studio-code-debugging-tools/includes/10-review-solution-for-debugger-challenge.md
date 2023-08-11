@@ -3,6 +3,7 @@
 
 
 
+
 The following example of a debug process is one possible solution for the challenge from the previous unit.
 
 ## Implement the C# debugger tools to identify the issue

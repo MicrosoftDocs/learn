@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Modify the content of strings using built-in string data type methods in C#
 summary: Use built in methods to extract, remove, or replace data in strings.
 abstract: |

@@ -3,13 +3,13 @@ uid: learn.azure.cloud-adoption-framework-getting-started
 metadata:
   title: Getting started with the Microsoft Cloud Adoption Framework for Azure
   description: Use the Cloud Adoption Framework getting-started guides to unblock your organization's cloud adoption efforts.
-  ms.date: 11/16/2022
+  ms.date: 05/17/2023
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cloud-adoption-framework
 title: Getting started with the Microsoft Cloud Adoption Framework for Azure
-summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you'll encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
+summary: The Microsoft Cloud Adoption Framework for Azure is a guide to the full lifecycle of cloud adoption. Along your organization's journey to the cloud, you encounter roadblocks that can be easily removed through common approaches that thousands of customers share.
 abstract: |
   In this module, you will:
   - Understand common roadblocks that prevent adoption success.

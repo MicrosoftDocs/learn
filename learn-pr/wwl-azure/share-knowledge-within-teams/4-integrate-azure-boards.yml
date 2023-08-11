@@ -4,11 +4,11 @@ title: Integrate with Azure Boards
 metadata:
   title: Integrate with Azure Boards
   description: "Integrate with Azure Boards"
-  ms.date: 04/28/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
 durationInMinutes: 7
 content: |
   [!include[](includes/4-integrate-azure-boards.md)]

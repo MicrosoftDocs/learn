@@ -4,17 +4,17 @@ metadata:
   moduleType: standard
   title: Deploy disaster recovery using VMware Site Recovery Manager and Azure VMware Solution
   description: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware VMs.
-  ms.date: 12/28/2021
+  ms.date: 07/14/2023
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-vmware
 title: Deploy disaster recovery using VMware Site Recovery Manager and Azure VMware Solution
 summary: You can use VMware SRM and vSphere Replication with Azure VMware Solution for disaster recovery of VMware virtual machines (VMs).
 abstract: |
   By the end of this module, you'll be able to:
-  -	Describe how to set up a disaster recovery solution for on-premises VMware to back up to Azure a VMware Solution private cloud.
-  - Describe how to set up a primary Azure VMware Solution to back up to a secondary Azure VMware Solution for private cloud disaster recovery.
+  -	Describe how to set up a disaster-recovery solution for on-premises VMware to back up to Azure a VMware Solution private cloud.
+  - Describe how to set up a primary Azure VMware Solution to back up to a secondary Azure VMware Solution for private-cloud disaster recovery.
   - Install and configure VMware SRM from Azure VMware Solution Portal on Azure.
 
 prerequisites: |

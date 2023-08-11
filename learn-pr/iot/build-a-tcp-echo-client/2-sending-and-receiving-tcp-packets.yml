@@ -5,11 +5,11 @@ metadata:
   title: Sending and receiving TCP packets
   description: Sending and receiving TCP packets.
   ms.date: 03/08/2023
-  author: edlamie80
-  ms.author: liydu
+  author: timlt
+  ms.author: timlt
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 durationInMinutes: 2
 content: |
   [!include[](includes/2-sending-and-receiving-tcp-packets.md)]

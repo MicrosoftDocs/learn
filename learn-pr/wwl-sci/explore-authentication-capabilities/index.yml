@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
+  ms.service: active-directory
 title: Describe the authentication capabilities of Azure AD
 summary: Learn about the authentication capabilities of Azure AD, multi-factor authentication, and how it improves security. You'll also learn about the password protection and management capabilities of Azure AD.
 abstract: |

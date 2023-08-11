@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 03/06/2023
+  ms.date: 07/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
@@ -39,14 +39,3 @@ quiz:
     - content: "The ClusterIP service"
       isCorrect: true
       explanation: "Correct. The ClusterIP service creates an internal IP address for use within the Azure Kubernetes Service cluster."
-  - content: "What component of Azure Kubernetes Service contributes to the monthly Azure charge?"
-    choices:
-    - content: "Per node virtual machine"
-      isCorrect: true
-      explanation: "Correct. Kubernetes organizations pay only for the virtual machine instances, storage, and networking resources consumed by the cluster."
-    - content: "Primary node"
-      isCorrect: false
-      explanation: "Incorrect. In an Azure Kubernetes Service cluster, the primary node is free and there's no charge for cluster management."
-    - content: "Per deployed pod"
-      isCorrect: false
-      explanation: "Incorrect. Deploying and running pods on an Azure Kubernetes Service cluster is free."

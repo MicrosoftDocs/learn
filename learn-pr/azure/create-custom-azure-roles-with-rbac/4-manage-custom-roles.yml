@@ -8,7 +8,10 @@ metadata:
   author: rolyon
   ms.author: rolyon
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
 durationInMinutes: 7
 content: |
   [!include[](includes/4-manage-custom-roles.md)]

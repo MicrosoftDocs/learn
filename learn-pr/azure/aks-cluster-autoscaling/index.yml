@@ -8,7 +8,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-kubernetes-service
 title: Cluster autoscaling with AKS
 summary: Explore how to go further with AKS availability by scaling your AKS cluster using the cluster autoscaler tool
 abstract: |

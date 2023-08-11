@@ -1,21 +1,24 @@
 ### YamlMime:LearningPath
 uid: learn.wwl.develop-ai-solutions-azure-openai
 metadata:
-  title: Develop AI solutions with Azure OpenAI
-  description: Develop AI solutions with Azure OpenAI
+  title: Develop Generative AI solutions with Azure OpenAI Service
+  description: Develop Generative AI solutions with Azure OpenAI Service
   ms.date: 03/30/2023
   author: ivorb
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-title: Develop AI solutions with Azure OpenAI
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+  ms.service: azure
+title: Develop Generative AI solutions with Azure OpenAI Service
 prerequisites: |
   Before starting this learning path, you should already have:
   *   Familiarity with Azure and the Azure portal.
   *   Experience programming with C# or Python.
   If you have no previous programming experience, we recommend you complete the [Take your first steps with C#](/training/paths/csharp-first-steps/) or [Take your first steps with Python](/training/paths/python-first-steps/) learning path before starting this one.
 summary: |
-  Azure OpenAI Service provides access to OpenAI's powerful large language models such as GPT, Codex, and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure OpenAI Studio.
+  Azure OpenAI Service provides access to OpenAI's powerful large language models such as ChatGPT, GPT, Codex, and Embeddings models. These models enable various natural language processing (NLP) solutions to understand, converse, and generate content. Users can access the service through REST APIs, SDKs, and Azure OpenAI Studio.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
 - intermediate
@@ -24,7 +27,7 @@ roles:
 - developer
 products:
 - azure
-- azure-language-understanding
+- ai-services
 - azure-sdks
 subjects:
 - artificial-intelligence
@@ -32,5 +35,9 @@ modules:
 - learn.wwl.get-started-openai
 - learn.wwl.build-language-solution-azure-openai
 - learn.wwl.apply-prompt-engineering-azure-openai
+- learn.wwl.generate-code-azure-openai
+- learn.wwl.generate-images-azure-openai
+- learn.wwl.use-own-data-azure-openai
+- learn.wwl.responsible-generative-ai
 trophy:
   uid: learn.wwl.develop-ai-solutions-azure-openai.trophy

@@ -3,11 +3,10 @@ uid: learn.wwl.configure-storage-accounts
 metadata:
   title: Configure storage accounts
   description: "Learn how to configure storage accounts, including replication and endpoints."
-  ms.date: 05/08/2023
+  ms.date: 06/13/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure storage accounts
 summary: Learn how to configure storage accounts, including replication and endpoints.
 abstract: |

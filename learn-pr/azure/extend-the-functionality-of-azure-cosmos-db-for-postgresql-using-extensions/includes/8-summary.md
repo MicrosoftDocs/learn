@@ -9,12 +9,13 @@ Now that you've completed this module, you should be able to:
 
 ## Clean up
 
-It's essential that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used. If you didn't delete your resource group in Unit 6 - Exercise - Work with data files in Azure Blob Storage directly from Azure Cosmos DB for PostgreSQL, follow these instructions:
+It's essential that you clean up any unused resources. You're charged for the configured capacity, not how much the database is used. If you didn't delete your resource group in Unit 6, follow these instructions:
 
 1. Open a web browser and navigate to the [Azure portal](https://portal.azure.com/).
-2. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 3.
-3. In the **Overview** pane, select **Delete resource group**.
-4. Enter the name of the resource group you created to confirm and then select **Delete**.
+1. In the left-hand navigation menu, select **Resource Groups**, and then select the resource group you created as part of the exercise in Unit 3.
+1. In the **Overview** pane, select **Delete resource group**.
+1. Enter the name of the resource group you created to confirm and then select **Delete**.
+1. Select **Delete** again to confirm deletion.
 
 ## Use these resources to discover more
 

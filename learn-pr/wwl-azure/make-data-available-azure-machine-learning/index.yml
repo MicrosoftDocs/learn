@@ -3,7 +3,7 @@ uid: learn.wwl.make-data-available-azure-machine-learning
 metadata:
   title: Make data available in Azure Machine Learning
   description: "Learn about how to connect to data from the Azure Machine Learning workspace. You'll be introduced to datastores and data assets."
-  ms.date: 05/11/2023
+  ms.date: 05/18/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -27,6 +27,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.make-data-available-azure-machine-learning.introduction
+- learn.wwl.make-data-available-azure-machine-learning.video
 - learn.wwl.make-data-available-azure-machine-learning.understand-uris
 - learn.wwl.make-data-available-azure-machine-learning.create-datastore
 - learn.wwl.make-data-available-azure-machine-learning.create-data-asset

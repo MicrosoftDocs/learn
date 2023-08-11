@@ -8,6 +8,9 @@ metadata:
   author: roygara
   ms.author: rogarana
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
   ms.prod: learning-azure
 durationInMinutes: 10
 content: |

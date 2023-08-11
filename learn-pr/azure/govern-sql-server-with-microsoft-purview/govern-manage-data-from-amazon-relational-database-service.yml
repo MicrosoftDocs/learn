@@ -10,7 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/govern-manage-data-from-amazon-relational-database-service.md)]

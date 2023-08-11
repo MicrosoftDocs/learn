@@ -135,7 +135,7 @@ The `Remove-AzVM` command *just deletes the VM*. It doesn't clean up any of the 
     $vm | Remove-AzNetworkInterface –Force
     ```
 
-1. Delete the managed OS disks and storage account:
+1. Delete the managed OS disks:
 
     ```powershell
     Get-AzDisk -ResourceGroupName $vm.ResourceGroupName -DiskName $vm.StorageProfile.OSDisk.Name | Remove-AzDisk -Force

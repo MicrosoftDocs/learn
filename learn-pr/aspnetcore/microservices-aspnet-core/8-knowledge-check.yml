@@ -2,10 +2,11 @@
 uid: learn.microservices-aspnet-core.8-knowledge-check
 metadata:
   title: Knowledge check
-  description: Check what you've learned about creating and deploying an ASP.NET Core microservice that is native to the cloud.
+  description: Check what you've learned about creating and deploying a cloud-native ASP.NET Core microservice.
   ms.date: 05/27/2020
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 title: Knowledge check
@@ -16,34 +17,34 @@ quiz:
   questions:
     - content: "In a microservices architecture, how do individual services access their data?"
       choices:
-      - content: "Data is stored in a master data store with which all microservices interact."
+      - content: "Data is stored in a master data store that all microservices interact with."
         isCorrect: false
-        explanation: "The shared data store doesn't provide autonomy. Applying data schema updates can cause runtime conflicts for services accessing the same resources."
+        explanation: "A shared data store doesn't provide autonomy, and applying data schema updates can cause runtime conflicts for services that access the same resources."
       - content: "Each microservice implements its own data store that's best optimized for its workload, storage needs, and read/write patterns."
         isCorrect: true
-        explanation: "The data isolation gives every microservice the autonomy to independently apply data schema updates, without breaking any other service in the production environment."
-      - content: "Services don't directly store data. They send data to an event bus and it's processed by a data repository service."
+        explanation: "Data isolation gives every microservice the autonomy to independently apply data schema updates, without affecting other services in the production environment."
+      - content: "Services don't store data directly. The services send data to an event bus and a data repository service then processes it."
         isCorrect: false
-        explanation: "The event bus is used for inter-service communication, not data persistence."
-    - content: "For the ASP.NET Core Health Checks middleware, the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices` serves what purpose?"
+        explanation: "The event bus is used for interservice communication, not data persistence."
+    - content: "In the ASP.NET Core health checks middleware, what is the purpose of the code `services.AddHealthChecks().AddCheck(\"coupon-self\", () => HealthCheckResult.Healthy());` in `Startup.ConfigureServices`?"
       choices:
-      - content: "Configures a Kubernetes liveness probe using HTTP GET."
+      - content: "It configures a Kubernetes liveness probe by using HTTP `GET`."
         isCorrect: false
-        explanation: "A Kubernetes liveness probe that uses HTTP GET is configured in the Kubernetes configuration YAML file."
-      - content: "Registers a health check, named `coupon-self`, that returns the HTTP success code to the endpoint configured in the `Startup.Configure` method."
+        explanation: "The Kubernetes liveness probe that uses HTTP `GET` is configured in the Kubernetes configuration YAML file."
+      - content: "It registers a health check named `coupon-self` that returns the HTTP success code to the endpoint configured in the `Startup.Configure` method."
         isCorrect: true
-        explanation: "For many apps, a basic health probe that reports the app's availability to process requests is sufficient. In the code example, the health check always returns a healthy state."
-      - content: "Maps a health endpoint that is accessible at `<your-service>/liveness`."
+        explanation: "A basic health probe that reports the app's availability to process requests is sufficient for many apps. This example always returns a healthy state."
+      - content: "It maps a health check endpoint that is accessible at `<your-service>/liveness`."
         isCorrect: false
         explanation: "To map health check endpoints in ASP.NET Core, call `endpoints.MapHealthChecks(\"/liveness\");` in the `Startup.Configure` method."
-    - content: "What is the benefit of using Azure Container Registry?"
+    - content: "What's the benefit of using Azure Container Registry?"
       choices:
-      - content: "Container Registry allows public access to container images. Consequently, developers can access the images without authenticating."
+      - content: "Container Registry allows public access to container images, so developers can access the images without authenticating."
         isCorrect: false
         explanation: "Container Registry is a private registry. Images can't be accessed without authentication."
-      - content: "Container Registry is a private container registry and provides granular access control for development teams."
+      - content: "Container Registry is a private container registry that provides granular access control for development teams."
         isCorrect: true
-        explanation: "Container Registry provides Azure service principals as an authentication method. They provide granular access to container images in Container Registry. For example, you can specify read-only access or full access to the container registry."
+        explanation: "Container Registry provides Azure service principals as an authentication method to provide granular access to container images. For example, you can specify read-only access or full access to the container registry."
       - content: "Container Registry can support both public and private container registries."
         isCorrect: false
         explanation: "Container Registry supports private registries only."

@@ -7,7 +7,7 @@ metadata:
   author: fabianomira
   ms.author: famira
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Troubleshoot VPN gateways in Microsoft Azure
 summary: Network configuration and the use of Virtual Private Networks (VPNs) is integral to the success of collaborative working. In this module, we look at how to monitor and troubleshoot site-to-site and point-to-site VPNs.
 abstract: |

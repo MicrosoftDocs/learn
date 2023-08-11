@@ -3,11 +3,10 @@ uid: learn.integrate-vnets-with-vnet-peering
 metadata:
   title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
   description: Use virtual network peering to enable communication across virtual networks in a way that's secure and minimally complex.
-  ms.date: 10/05/2022
+  ms.date: 05/27/2023
   author: asudbring
   ms.author: allensu
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Distribute your services across Azure virtual networks and integrate them by using virtual network peering
 summary: Use virtual network peering to enable communication across virtual networks in a way that's secure and minimally complex.
 abstract: | 

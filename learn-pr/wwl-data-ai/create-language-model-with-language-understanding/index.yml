@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: language-understanding 
 title: Create a language model with Conversational Language Understanding
 summary: In this module, we'll introduce you to Conversational Language Understanding, and show how to create applications that understand language.
 abstract: |
@@ -28,7 +29,7 @@ roles:
 products:
 - azure
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 - azure-language-understanding
 - azure-sdks
 subjects:

@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: language-understanding 
 title: Publish and use a Language Understanding app
 summary: After creating a Language Understanding app, you can publish it and consume it from client applications.
 abstract: |
@@ -28,8 +29,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 subjects:
 - artificial-intelligence
 - cloud-computing

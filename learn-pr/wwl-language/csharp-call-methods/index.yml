@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Call methods from the .NET Class Library using C#
 summary: Use functionality in the .NET Class Library by calling methods that return values, accept input parameters, and more.
 abstract: |

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Automate Deployment of SAP on Azure
 summary: After this module, you will be able to run automated deployments of SAP on Azure infrastructure.
 abstract: |

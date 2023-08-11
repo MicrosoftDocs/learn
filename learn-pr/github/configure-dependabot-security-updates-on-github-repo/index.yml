@@ -8,7 +8,6 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure Dependabot security updates on your GitHub repo
 summary: Manage your dependencies with GitHub Dependabot
 abstract: | 

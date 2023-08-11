@@ -7,7 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot-central
 title: Build an IoT service for your cloud-native apps by using IoT Central
 summary: This module describes how to extend your cloud-native application to provide IoT functionality by integrating its components with Azure IoT services and using Cosmos DB to provide a persistent data store.
 abstract: |

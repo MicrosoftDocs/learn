@@ -1,5 +1,4 @@
 
-
 Windows 10, Windows Server 2019, and Windows Server 2016 include key security features. They are Windows Defender Credential Guard, Windows Defender Device Guard, and Windows Defender Application Control.
 
 ## Windows Defender Credential Guard

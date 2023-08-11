@@ -37,8 +37,6 @@ In this task, you'll review the code that's provided as a Starter project for th
 1. Notice that the top portion of your code begins with a `Using` statement and a list of variable declarations.  
 
     ```c#
-    using System;
-
     // initialize variables - graded assignments 
     int currentAssignments = 5;
     

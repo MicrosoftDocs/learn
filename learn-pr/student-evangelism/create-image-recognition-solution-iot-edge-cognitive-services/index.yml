@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: iot-edge
 title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
 summary: "Create a computer vision solution on the IoT Edge using Azure Cognitive Services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
 abstract: |

@@ -4,11 +4,11 @@ title: Recognize virtual machine images and disks
 metadata:
   title: Recognize virtual machine images and disks
   description: "Recognize virtual machine images and disks"
-  ms.date: 04/20/2023
+  ms.date: 08/08/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 durationInMinutes: 5
 content: |
   [!include[](includes/5-recognize-virtual-machine-images-disks.md)]

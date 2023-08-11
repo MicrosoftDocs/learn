@@ -10,8 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 azureSandbox: false
-labId: 110077
-labModal: true
+# labId: 110077
+labModal: false
 durationInMinutes: 60
 content: |
   [!include[](includes/2-configure-iot-hub-monitoring.md)]

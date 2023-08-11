@@ -10,7 +10,7 @@ Bulk Copy Program (bcp) is a common tool for connecting to Azure SQL from on-pre
 
 ### Bulk insert
 
-Bulk insert operations are similar to what's available in SQL Server on-premises. But instead of loading data from a file (or multiple files) on your machine, you load data from Azure Blob storage. The next exercise will walk through an example of how.  
+Bulk insert operations are similar to what's available in SQL Server on-premises, but instead of loading data from a file (or multiple files) on your machine, you load data from Azure Blob storage. The next exercise will walk through an example of how.  
 
 ### SSIS packages
 
@@ -22,6 +22,6 @@ Other interesting options include using technologies like Spark or Azure Data Fa
 
 ## Considerations for loading data
 
-The biggest difference between loading data on-premises and loading data into Azure SQL is that the data you want to load needs to be hosted in Azure. The data can't be hosted in files on-premises. These files and file systems on-premises can be stored in Azure Blob storage as an alternative. This strategy will also increase your efficiency in loading your files in and setting up ETL jobs.
+The biggest difference between loading data on-premises and loading data into Azure SQL is that the data you want to load needs to be hosted in Azure. The data can't be hosted in files on-premises. You can store the on-premises files and file systems in Azure Blob storage as an alternative. This strategy will also increase your efficiency in loading your files in and setting up ETL jobs.
 
-Also keep in mind that minimal logging isn't supported, so you're always running in full recovery mode. Because of full recovery mode and limits around log throughput, you might be affected by log governance as you're loading data. Techniques like using batches and appropriately sizing them become important during a bulk load. You'll see more tips in the following exercise. Loading into a clustered columnstore index might help in avoiding transaction log limits, depending on your scenario.
+Also keep in mind that minimal logging isn't supported, so you're always running in full recovery mode. Because of full recovery mode and limits around log throughput, you might be affected by log governance as you're loading data. Techniques like using batches and appropriately sizing them become important during a bulk load. You'll get more tips in the following exercise. Loading into a clustered columnstore index might help in avoiding transaction log limits, depending on your scenario.

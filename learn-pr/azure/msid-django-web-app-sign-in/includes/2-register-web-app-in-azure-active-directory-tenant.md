@@ -1,39 +1,39 @@
-Organizations often want to keep their data safe from unauthenticated and unauthorized users. Developers can use Microsoft identity to add authentication to web apps, enabling users to sign in and obtain tokens. In our banking company example, users need to authenticate themselves to access protected data. In order for a web app to use Microsoft's identity platform, you must register a new app with Azure Active Directory (Azure AD). In this unit, you'll learn about registering a web app in an Azure AD tenant.
+Organizations want to keep their data safe from unauthenticated and unauthorized users. Developers can use the Microsoft identity platform to add authentication to web apps, so that users can sign in and obtain tokens. 
+
+In our example of a banking company, users need to authenticate themselves to access protected data. To ensure that a web app can use the Microsoft identity platform, you must register the app with Azure Active Directory (Azure AD). In this unit, you learn about registering a web app in an Azure AD tenant.
 
 ## Azure AD tenants and user accounts
 
-An Azure AD tenant is used to represent an organization. An Azure AD tenant is also the context within which you will register and manage your apps.
+An Azure AD tenant represents an organization. You register and manage your apps in an Azure AD tenant. To use the Microsoft identity platform for identity and access management, you need access to the Azure AD tenant.
 
-You need access to an Azure AD tenant to use the Microsoft identity platform for identity and access management. 
+Each Azure AD tenant has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant allows authentications only from accounts within your tenant (single-tenant apps) or from all tenants (multitenant apps).
 
-Each Azure AD tenant has its own representation of work and school identities, consumer identities (if it's an Azure AD B2C tenant), and app registrations. An app registration inside your tenant allows authentications only from accounts within your tenant (single tenant apps) or from all tenants (multi-tenant apps).
+The Microsoft identity platform helps you build applications that your users and customers can sign in to by using several identity types. These identities include:
 
-The Microsoft identity platform helps you build applications your users and customers can sign in to using several identity types. These identities include:
+- Work or school accounts, provisioned through Azure AD.
+- Personal Microsoft accounts, like Skype, Xbox, and Outlook.com.
+- Social or local accounts, by using Azure AD B2C.
 
-- Work or school accounts, provisioned through Azure AD
-- Personal Microsoft account, like Skype, Xbox, and Outlook.com
-- Social or local accounts, by using Azure AD B2C
+This module focuses on authenticating a work or school accounts provisioned through Azure AD.
 
-In this module, we focus on authenticating a work or school accounts provisioned through Azure AD.
-
-:::image type="content" source="../media/02-azure-active-directory-tenants-and-users.png" alt-text="Screenshot of Azure portal showing page to manage users and tenants." :::
+:::image type="content" source="../media/02-azure-active-directory-tenants-and-users.png" alt-text="Screenshot of the Azure portal that shows the page for managing users and tenants.":::
 
 ## Azure AD app registration
 
-In order for a web app to use Microsoft identity to enable users to authenticate, you must register a new app with Azure AD. This can be done on the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant.
+For a web app to use the Microsoft identity platform to enable user authentication, you must register a new app with Azure AD. You can do this in the [Azure portal](https://portal.azure.com/). Your web app should live in an Azure AD tenant.
 
-When registering a web app in Azure AD, ensure the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI provided by the app when the authentication process is started. The authorization code will be sent to this endpoint, which means you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
+When you register a web app in Azure AD, ensure that the redirect URI of the app points to the callback URL of the web app. This URL must match the redirect URI that the app provides when the authentication process starts. The authorization code will be sent to this endpoint, so you need to configure any authentication libraries and/or middleware to listen on this endpoint to receive the authorization code.
 
-A sign-out URL should also be specified so the authentication libraries and/or middleware deletes any cached tokens or other data that is only needed for signed in users.
+You should also specify a sign-out URL so that the authentication libraries and/or middleware deletes any cached tokens or other data that's needed only for signed-in users.
 
-:::image type="content" source="../media/02-azure-active-directory-portal-new-app-details.png" alt-text="Screenshot of Azure portal showing web app registration form." :::
+:::image type="content" source="../media/02-azure-active-directory-portal-new-app-details.png" alt-text="Screenshot of the Azure portal that shows a web app registration form.":::
 
-The web app will also need a client secret to sign in with Azure AD to exchange the authorization code for an access token.
+The web app also needs a client secret to sign in with Azure AD to exchange the authorization code for an access token.
 
-:::image type="content" source="../media/02-azure-active-directory-portal-new-app-secret.png" alt-text="Screenshot of Azure portal showing page to create a new app secret." :::
+:::image type="content" source="../media/02-azure-active-directory-portal-new-app-secret.png" alt-text="Screenshot of Azure portal that shows the page for creating a new app secret.":::
 
-There are three things you'll need from the Azure AD app registration:
+You need three things from the Azure AD app registration:
 
-- **Tenant ID**: ID of your Azure AD directory
-- **Client ID**: unique autogenerated ID of the app (this is also referred to as the application ID)
-- **Client secret**: secret you created during app registration
+- **Tenant ID**: ID of your Azure AD directory.
+- **Client ID**: Unique autogenerated ID of the app. This is also called the application ID.
+- **Client secret**: Secret that you created during app registration.

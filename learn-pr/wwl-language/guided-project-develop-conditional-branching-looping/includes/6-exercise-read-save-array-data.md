@@ -165,6 +165,10 @@ In this task, you create a `do` loop that iterates until the user enters either 
     {
         validEntry = int.TryParse(animalAge, out petAge);
     }
+    else
+    {
+        validEntry = true;
+    }
     ```
 
 1. Compare your completed age data entry loop with the following code:
@@ -182,6 +186,10 @@ In this task, you create a `do` loop that iterates until the user enters either 
             if (animalAge != "?")
             {
                 validEntry = int.TryParse(animalAge, out petAge);
+            }
+            else
+            {
+                validEntry = true;
             }
         }
     } while (validEntry == false);

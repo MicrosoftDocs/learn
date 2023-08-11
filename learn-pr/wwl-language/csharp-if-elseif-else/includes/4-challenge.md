@@ -1,5 +1,6 @@
 
 
+
 Code challenges will reinforce what you've learned and help you gain some confidence before proceeding.
 
 ## Challenge: Improve renewal rate of subscriptions
@@ -58,7 +59,7 @@ You've been asked to add a feature to your company's software. The feature is in
     ```
 
     >[!NOTE]
-    > Be sure to substitute the value stored in the variable `daysUntilExpiration` for `_` in your message.
+    > Be sure to replace the `_` character displayed in the message above with the value stored in the variable `daysUntilExpiration` when you construct your message output.
 
 1. Rule 4: If the user's subscription will expire in one day, display the messages:
 
@@ -79,12 +80,12 @@ You've been asked to add a feature to your company's software. The feature is in
 
 ## Implement your solution code using `if` statements
 
-Your solution must use two separate if statements to implement the business rules.
+Your solution must use separate `if` and `if-else` statements to implement the business rules. The `if-else` statement can include multiple `else if` parts.
 
-1. Create an `if` statement that displays a message about when the subscription will expire.
+1. Create an `if-else` statement that displays a message about when the subscription will expire.
 
     > [!TIP]
-    > Branch or nest three checks in this first if statement.
+    > Use an `else if` to ensure each experation rule is accounted for.
 
 1. Create a separate `if` statement that displays a discount offer.
 

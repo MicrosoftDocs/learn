@@ -4,11 +4,12 @@ metadata:
   title: Prepare your development environment for Azure development
   description: Learn how to choose and install the appropriate IDE for your requirements to help you build, deploy, monitor, and scale cloud-hosted solutions.
   ms.date: 04/27/2023
-  author: rmcmurray
-  ms.author: robmcm
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  author: alexwolfmsft
+  ms.author: alexwolf
+  ms.topic: module-standard-task-based
   ms.custom: vscode-azure-extension-update-completed
+  ms.prod: azure
+  manager: mcleans
   #ms.learn-contact: adsteven
 title: Prepare your development environment for Azure development
 summary: Set up your local development environment with several popular IDEs.

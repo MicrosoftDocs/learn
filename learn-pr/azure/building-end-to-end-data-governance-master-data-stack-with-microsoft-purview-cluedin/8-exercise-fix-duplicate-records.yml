@@ -8,7 +8,7 @@ metadata:
   author: whhender
   ms.author: whhender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure # Edit as appropriate for your portfolio area
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/8-exercise-fix-duplicate-records.md)]

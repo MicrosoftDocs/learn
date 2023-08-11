@@ -4,13 +4,12 @@ title: Connect geographically dispersed networks with ExpressRoute global reach
 metadata:
   title: Connect geographically dispersed networks with ExpressRoute global reach
   description: "Connect geographically dispersed networks with ExpressRoute global reach"
-  ms.date: 03/02/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 6
 content: |
   [!include[](includes/8-connect-geographically-dispersed-networks-expressroute-global-reach.md)]

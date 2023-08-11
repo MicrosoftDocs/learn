@@ -4,11 +4,10 @@ title: Exercise - Complete a challenge activity to apply business rules
 metadata:
   title: Exercise - Complete a challenge activity to apply business rules
   description: "Exercise - Complete a challenge activity to apply business rules"
-  ms.date: 05/04/2023
+  ms.date: 07/26/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 12
 content: |
   [!include[](includes/4-challenge.md)]

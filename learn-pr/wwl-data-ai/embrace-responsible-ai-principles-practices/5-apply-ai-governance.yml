@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.embrace-responsible-ai-principles-practices.apply-ai-governance
+title: Applying systems for AI governance
+metadata:
+  title: Applying systems for AI governance
+  description: "Applying systems for AI governance"
+  ms.date: 06/29/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 3
+content: |
+  [!include[](includes/5-apply-ai-governance.md)]

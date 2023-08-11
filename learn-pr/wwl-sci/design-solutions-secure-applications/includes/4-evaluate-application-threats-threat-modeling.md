@@ -43,7 +43,7 @@ Microsoft Security Development Lifecycle uses STRIDE and provides a tool to assi
 
 Integrate threat modeling through automation using secure operations. Here are some resources:
 - Toolkit for [Secure DevOps on Azure](https://azsk.azurewebsites.net/).
-- [Guidance on DevOps pipeline security](https://www.owasp.org/index.php/OWASP_AppSec_Pipeline#tab=Main) by OWASP.
+- [Guidance on DevOps pipeline security](https://owasp.org/www-project-devsecops-guideline/) by OWASP.
 
 ## 3- Mitigate the identified threats
 

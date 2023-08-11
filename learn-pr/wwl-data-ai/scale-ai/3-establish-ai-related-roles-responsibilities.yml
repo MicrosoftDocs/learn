@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.scale-ai.establish-ai-related-roles-responsibilities
+title: Establish AI-related roles and responsibilities
+metadata:
+  title: Establish AI-related roles and responsibilities
+  description: "Establish AI-related roles and responsibilities"
+  ms.date: 06/29/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+  ms.service: microsoft-365
+durationInMinutes: 10
+content: |
+  [!include[](includes/3-establish-ai-related-roles-responsibilities.md)]

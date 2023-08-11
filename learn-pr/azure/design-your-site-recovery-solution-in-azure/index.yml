@@ -2,18 +2,18 @@
 uid: learn.design-your-site-recovery-solution-in-azure
 metadata:
   title: Design your site recovery solution in Azure
-  description: Protect your applications and data from disasters with a well-designed site recovery solution.
+  description: Help protect your applications and data from disasters with a well-designed site recovery solution.
   ms.date: 05/10/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: site-recovery
 title: Design your site recovery solution in Azure
-summary: Protect your applications and data from disasters with a well-designed site recovery solution.
+summary: Help protect your applications and data from disasters with a well-designed site recovery solution.
 abstract: |
   In this module, you will:
-  - Define the site recovery requirements for your applications
-  - Select the proper solutions to provide site recovery for your applications
+  - Define site recovery requirements for your applications.
+  - Select solutions to provide site recovery for your applications.
 prerequisites: |
   - Basic knowledge of business continuity and disaster recovery practices
 iconUrl: /training/achievements/design-your-site-recovery-solution-on-azure.svg

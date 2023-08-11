@@ -4,12 +4,11 @@ title: Microsoft cloud security benchmark in Defender for Cloud
 metadata:
   title: Microsoft cloud security benchmark in Defender for Cloud
   description: "Microsoft cloud security benchmark in Defender for Cloud"
-  ms.date: 05/04/2023
+  ms.date: 05/19/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 8
 content: |
   [!include[](includes/11-microsoft-cloud-security-benchmark.md)]

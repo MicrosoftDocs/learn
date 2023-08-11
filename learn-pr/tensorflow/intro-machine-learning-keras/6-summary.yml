@@ -3,12 +3,11 @@ uid: learn.tensorflow.intro-machine-learning-keras.summary
 title: Summary
 metadata:
   title: Summary
-  description: Summary of material learned
-  ms.date: 07/07/2021
+  description: Review what you learned about Keras and TensorFlow machine learning models.
+  ms.date: 07/17/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial
-  ms.prod: learning-tensorflow
   ms.product: learning-tensorflow
   ms.contributors: bstollnitz-08202021
   ms.custom: team=cloud_advocates

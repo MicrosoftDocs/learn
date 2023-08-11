@@ -3,11 +3,11 @@ uid: learn.wwl.implement-initial-configuration-of-azure-active-directory
 metadata:
   title: Implement initial configuration of Azure Active Directory
   description: "Learn to create an initial Azure Active Directory configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure an Azure AD system."
-  ms.date: 02/03/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: identity-and-access
 title: Implement initial configuration of Azure Active Directory
 summary: Learn to create an initial Azure Active Directory configuration to ensure all the identity solutions available in Azure are ready to use. This module explores how to build and configure an Azure AD system.
 abstract: |

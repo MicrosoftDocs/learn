@@ -45,6 +45,6 @@ Although you assign apps to either devices or to users, the options for how you 
 | Assign an app as Available                             | Yes                           | Yes                               |
 | Assign an app as Required                              | Yes                           | No                                |
 | Uninstall an app                                       | Yes                           | No                                |
+| Receive app updates from Intune                        | Yes                           | No                                |
 | User install of an app from the Company Portal app     | Yes                           | No                                |
-| User install of an app from the Company Portal website | Yes                           | No                                |
-
+| User install of an app from the Company Portal website | Yes                           | Yes                               |

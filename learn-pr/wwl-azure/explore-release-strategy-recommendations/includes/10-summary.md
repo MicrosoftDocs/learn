@@ -1,3 +1,5 @@
+
+
 This module explored the critical release strategy recommendations that organizations must consider when designing automated deployments.
 
 It explained how to define components of a release pipeline and artifact sources, create approves, and configure release gates.

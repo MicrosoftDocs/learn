@@ -7,9 +7,10 @@ metadata:
   author: yoshioterada
   ms.author: yoterada
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=cloud_advocates
   ms.contributors: yoterada-03082021
+  ms.service: app-service 
+  ms.subservice: web-apps
 title: Deploy a Java web app to Azure App Service
 summary: In this module, you'll look at practices to create and deploy a Java web application on Azure App Service.
 abstract: |

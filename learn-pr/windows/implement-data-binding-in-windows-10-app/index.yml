@@ -7,7 +7,8 @@ metadata:
   author: QuinnRadich
   ms.author: quradic
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: windows
+  manager: jken
 title: Implement data binding in your Windows application
 summary: Learn about the relation between UI and data in Windows apps, and implement data binding in your applications.
 abstract: |

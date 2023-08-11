@@ -4,12 +4,10 @@ title: Self-managed Active Directory Domain Services, Azure Active Directory, an
 metadata:
   title: Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services
   description: "Self-managed Active Directory Domain Services, Azure Active Directory, and managed Azure Active Directory Domain Services"
-  ms.date: 04/04/2023
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 5
 content: |
   [!include[](includes/3-compare.md)]

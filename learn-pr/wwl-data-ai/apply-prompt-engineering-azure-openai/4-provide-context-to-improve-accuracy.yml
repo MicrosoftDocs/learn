@@ -11,6 +11,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - devx-track-python
 durationInMinutes: 15
 content: |
   [!include[](includes/4-provide-context-to-improve-accuracy.md)]

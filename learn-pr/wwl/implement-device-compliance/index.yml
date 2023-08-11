@@ -3,7 +3,7 @@ uid: learn.wwl.implement-device-compliance
 metadata:
   title: MD-102 3-Implement device compliance
   description: "This module describes how to use compliance and conditional access policies to help protect access to organizational resources."
-  ms.date: 05/10/2023
+  ms.date: 05/23/2023
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial

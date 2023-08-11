@@ -7,7 +7,8 @@ metadata:
   author: alvinashcraft
   ms.author: aashcraft
   ms.topic: interactive-tutorial
-  ms.prod: learning-windows
+  ms.prod: w10
+  manager: jken
 title: Integrate adaptive cards into Windows 10 Timeline
 summary: Learn how to use an adaptive card as the image in Windows 10 Timeline.
 abstract: |

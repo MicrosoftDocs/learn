@@ -7,7 +7,8 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-devops-pipelines
+  manager: mijacobs
 title: Automate Python deployments with Azure Pipelines
 summary: Implement a CI/CD pipeline for Python.
 abstract: |

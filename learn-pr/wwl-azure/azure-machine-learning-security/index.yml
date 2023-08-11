@@ -4,10 +4,10 @@ metadata:
   title: Explore security concepts in Azure Machine Learning
   description: "Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate."
   ms.date: 04/28/2023
-  author: wwlpublish
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Explore security concepts in Azure Machine Learning
 summary: Explore and experiment with securing a machine learning environment to ensure data remains private and models are accurate.
 abstract: |

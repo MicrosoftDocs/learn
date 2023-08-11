@@ -6,9 +6,10 @@ metadata:
   ms.date: 05/02/2023
   author: dlepow
   ms.author: danlep
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ms.custom: engagement-fy23  
+  ms.service: api-management
+  manager: mcleans
 title: Publish and manage your APIs with Azure API Management
 summary: Use API management to control who uses your APIs, to enforce usage policies, and to present a professional front-end to developers using the API.
 abstract: | 

@@ -4,13 +4,13 @@ title: Design and implement Azure load balancer using the Azure portal
 metadata:
   title: Design and implement Azure load balancer using the Azure portal
   description: "Design and implement Azure load balancer using the Azure portal"
-  ms.date: 04/27/2023
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: load-balancer
+  ms.custom:
+  - references_regions
 durationInMinutes: 17
 content: |
   [!include[](includes/3-design-implement-azure-load-balancer-using-azure-portal.md)]

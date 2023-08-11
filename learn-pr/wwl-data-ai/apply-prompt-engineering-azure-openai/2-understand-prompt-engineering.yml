@@ -10,6 +10,9 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: cognitive-services
   ms.subservice: openai 
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 durationInMinutes: 6
 content: |
   [!include[](includes/2-understand-prompt-engineering.md)]

@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Create readable code with conventions, whitespace, and comments in C#
 summary: Write code that is easier to read, update and support using naming conventions, comments and whitespace.
 abstract: |

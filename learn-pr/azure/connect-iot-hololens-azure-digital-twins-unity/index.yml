@@ -7,7 +7,7 @@ metadata:
   author: JBrentJ
   ms.author: jejacks
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: digital-twins
 title: Connect IoT data to mixed reality with Azure Digital Twin and Unity
 summary: Stream simulated operational telemetry data from physical assets to Azure Digital Twin and visualize data in Unity and mixed reality.
 abstract: |
@@ -39,7 +39,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 - azure-digital-twins
 - azure-iot
 - azure-iot-hub

@@ -8,7 +8,7 @@ metadata:
   author: bandersmsft
   ms.author: banders
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Knowledge check
 durationInMinutes: 2
 quiz:

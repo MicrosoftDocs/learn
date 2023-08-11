@@ -1,5 +1,4 @@
 
-
 Before diving into configuring VM policies and templates, you need to understand the features and functionality of Azure Resource Manager.
 
 Resource Manager is the deployment and management service for your Azure subscription. It provides a consistent management layer that allows you to create, update, and delete resources in your Azure subscription. You can use its access control, auditing, and tagging features to help secure and organize your resources after deployment.

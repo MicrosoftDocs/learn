@@ -9,7 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom:
   - event-tier1-build-2022
-  ms.prod: learning-azure
+  ms.service: purview
 title: 'Govern multicloud relational databases using Microsoft Purview'
 summary: Govern your relational databases where they are using Microsoft Purview.
 abstract:  | 

@@ -8,7 +8,8 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-stack
+  ms.subservice: azure-stack-hci
 title: Plan for and deploy SDN infrastructure on Azure Stack HCI
 summary: "This module explores the architecture and core capabilities of Software Defined Networking (SDN) on Azure Stack HCI. It also includes a couple of demonstrations illustrating a sample deployment of SDN on Azure Stack HCI."
 abstract: |

@@ -7,7 +7,6 @@ metadata:
   author: mbender-ms
   ms.author: mbender
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Configure the network for your virtual machines
 summary: Learn how to configure networking in a secure way for your Azure virtual machines.
 abstract: |

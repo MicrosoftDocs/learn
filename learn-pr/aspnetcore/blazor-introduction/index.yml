@@ -7,8 +7,10 @@ metadata:
   ms.date: 09/01/2022             # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: csharpfritz      # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: jefritz           # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.manager: markl
   ms.topic: interactive-tutorial  # Do not edit: value must be "interactive-tutorial"
-  ms.prod: learning-blazor         # Edit as appropriate for your portfolio area
+  ms.prod: dotnet-architecture # Edit as appropriate for your portfolio area
+  ms.technology: blazor 
 title: Introduction to Web Development with Blazor
 summary: "Discover the key features of the Blazor framework, pages, and components to make your next application.  "
 abstract: |

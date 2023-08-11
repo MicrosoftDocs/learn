@@ -1,5 +1,4 @@
 
-
 Use this Try-This exercises to get some hands-on experience with Azure.
 
 In this demonstration, we'll configure the Bastion service, virtual machine updates, virtual machine extensions, and disk encryption. Optionally, we'll use RDP to connect to a Windows virtual machine and SSH to connect to a Linux machine.

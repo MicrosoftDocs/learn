@@ -7,7 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: vs-code
 title: "Introduction to GitHub in Visual Studio Code"
 summary: Learn to use the GitHub integration in Visual Studio Code, including authentication, publishing repos, and viewing your repo timeline.
 abstract: |

@@ -8,7 +8,8 @@ metadata:
   author: martinekuan
   ms.author: martinek
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cloud-adoption-framework
+  ms.subservice: organize
 title: Use the Cloud Adoption Framework to manage organizational alignment
 summary: |
   Moving from an on-premises datacenter environment to the cloud requires an organization to reevaluate its IT structure. What works on-premises—typically a centralized control model—doesn't necessarily work in a cloud environment. The good news is that migrating to the cloud can enable automation that gives IT professionals in your organization more freedom to innovate. The Cloud Adoption Framework provides guidance for this modernization journey.  

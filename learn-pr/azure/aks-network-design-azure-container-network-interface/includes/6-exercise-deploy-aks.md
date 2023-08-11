@@ -2,7 +2,7 @@
 
 We're now going to use the information we collected in the previous modules to deploy an Azure Kubernetes Service cluster.
 
-In this unit, you'll deploy virtual networks, subnets, and identities and then deploy an Azure Kubernetes Service cluster using the Azure CNI networking plug-in.
+In this unit, you deploy virtual networks, subnets, and identities and then deploy an Azure Kubernetes Service cluster using the Azure CNI networking plug-in.
 
 We've approached our company's IT department. We've provided the information we've gathered about our application's requirements, virtual machine size, and network size. The IT department has provided some network address ranges that we can use for our Azure Kubernetes Service cluster. The following table lists our requirements and the IP addresses provided by our IT department in response.
 
@@ -20,7 +20,7 @@ DNS service IP address | Must be in the Kubernetes service subnet, but can't be 
 
 ## Create the virtual network and subnet
 
-For this exercise, we'll create a virtual network and subnet. In a real world environment, you may have a team in your IT department responsible for managing networks and they may create these resources for you.
+For this exercise, we create a virtual network and subnet. In a real world environment, you may have a team in your IT department responsible for managing networks and they may create these resources for you.
 
 First, run the following command in Azure Cloud Shell to sign in to your Azure account:
 
@@ -28,7 +28,7 @@ First, run the following command in Azure Cloud Shell to sign in to your Azure a
 az login
 ```
 
-In Azure Cloud Shell, run the following command to create a resource group that you'll use to hold all the resources in this exercise:
+In Azure Cloud Shell, run the following command to create a resource group that you use to hold all the resources in this exercise:
 
 ```bash
 az group create --location westeurope --name AKSlearn
@@ -56,7 +56,7 @@ az network vnet subnet create \
 
 ## Create an Azure Managed Identity
 
-We need to create an Azure Managed Identity. The Azure Kubernetes Service uses this identity to access resources within the Azure subscription. The following two commands will create an Azure Managed Identity, then store its unique ID value in an environment variable for later use.
+We need to create an Azure Managed Identity. The Azure Kubernetes Service uses this identity to access resources within the Azure subscription. The following two commands create an Azure Managed Identity, then store its unique ID value in an environment variable for later use.
 
 ```bash
 az identity create \
@@ -72,7 +72,7 @@ identityId=$(az identity show \
 
 ## Create the Azure Kubernetes Service cluster
 
-Now we'll create the AKS cluster and will pass in the values we've determined previously to configure the cluster as required.
+Now we create the AKS cluster and pass in the values that we determined previously to configure the cluster as required.
 
 We need to know the resource ID of the subnet we created previously. We can store it in an environment variable that we can use later.
 
@@ -106,7 +106,7 @@ Let's walk through what the above command is doing:
 
 Command fragment | Description
 --- | ---
-az aks create | Command to create an AKS cluster instance.
+`az aks create` | Command to create an AKS cluster instance.
 --name **AKSCluster** | The name of the cluster being created.
 --resource-group **AKSlearn** | The resource group where the cluster should be created.
 --location **westeurope** | The Azure region where the cluster should be created.
@@ -155,7 +155,7 @@ az network vnet subnet list \
 
 This command uses a JMESPath query string to determine how many `ipConfigurations` are defined in the subnet. The answer should be **93**. 
 
-We've deployed three nodes to start with, so each node has one IP address each. We've left the maximum pods value at its default setting of 30, so each node has 30 IP addresses pre-allocated for pods to use. The total number of IP addresses that has been allocated so far is **3 x nodes + (30 pods * 3 nodes) = 93**
+We've deployed three nodes to start with, so each node has one IP address each. We've left the maximum pods value at its default setting of 30, so each node has 30 IP addresses preallocated for pods to use. The total number of IP addresses that has been allocated so far is **3 x nodes + (30 pods * 3 nodes) = 93**
 
 ## Add an extra node to the cluster
 
@@ -195,4 +195,4 @@ az network vnet subnet list \
     --output table
 ```
 
-This time, the result is **124**, which is 31 more than last time. That's one more IP address for the new node, plus another 30 IP addresses pre-allocated for the pods that will run on that node.
+This time, the result is **124**, which is 31 more than last time. That's one more IP address for the new node, plus another 30 IP addresses preallocated for the pods that run on that node.

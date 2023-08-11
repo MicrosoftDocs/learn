@@ -66,8 +66,7 @@ Enterprise edition builds on the features of the Pro edition, with extra feature
 
 Some of the features Enterprise edition provides:
 
- -  **AppLocker:** AppLocker is a feature of Windows that enables administrators to control which applications can act on a computer, including limiting access so that only specific versions of an application can run.
- -  **Universal Print:** Organizations can use a modern print solution to manage their print infrastructure through cloud services from Microsoft using printers that support Universal Print.
+  -  **Universal Print:** Organizations can use a modern print solution to manage their print infrastructure through cloud services from Microsoft using printers that support Universal Print.
  -  **Start menu layout control:** This feature enables you to use MDM policies or Group Policies to customize the appearance and content of the start menu.
  -  **Microsoft Defender Credential Guard:** Virtualization-based security isolates secrets, so only privileged users can access them.
  -  **Microsoft Defender Application Control:** Controls what applications run within your environment to help block against malware and untrusted apps.
@@ -75,7 +74,7 @@ Some of the features Enterprise edition provides:
  -  **Microsoft Application Virtualization (App-V):** Enables organizations to deliver Win32 applications to users as virtual applications.
  -  **Microsoft User Experience Virtualization (UE-V):** Capture user-customized Windows and application settings and store them on a centrally managed network.
  -  **License rights:** For virtual desktops and edition step-up from Pro edition using cloud activation.
- -  **DirectAccess:** While this feature is supported, it’s recommended that organizations use “Always On VPN,” which is available in Home, Pro, Enterprise, and Education editions.
+ -  **DirectAccess:** While this feature is supported, it’s recommended that organizations use “Always On VPN,” which is available in Pro, Enterprise, and Education editions.
 
 #### Enterprise LTSC
 

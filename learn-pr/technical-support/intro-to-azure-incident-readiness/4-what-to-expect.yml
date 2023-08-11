@@ -1,0 +1,39 @@
+### YamlMime:ModuleUnit
+uid: learn.intro-to-azure-incident-readiness.what-to-expect
+title: Understand where to go and what to expect during an incident
+metadata:
+  title: Understand where to go and what to expect during an incident
+  description: "In this unit, you'll gain a clear understanding of how Microsoft and Azure communicate incident details and to where, a focus on transparency, regular updates, and accessing support when needed, enabling you to effectively manage incidents that may impact you."
+  ms.date: 6/25/2023
+  author: rmcmurray
+  ms.author: keall
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: azure
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-what-to-expect.md)]
+quiz:
+  questions:
+  - content: "If you haven't configured the relevant service health alerts yet and you're noticing issues, where's the first place you should check whether this Azure or not?"
+    choices:
+    - content: "Our public Status Page (azure.status.microsoft)"
+      isCorrect: false
+    - content: "Azure Service Health"
+      isCorrect: true
+    - content: "@AzureSupport on Twitter"
+      isCorrect: false
+    - content: "Microsoft Teams"
+      isCorrect: false
+  - content: "True or False: Most of our service issue communications are provided on our public Status Page (azure.status.microsoft)."
+    choices:
+    - content: "True"
+      isCorrect: false
+    - content: "False"
+      isCorrect: true
+  - content: "True or False: Following @AzureSupport on Twitter is the best way to know there's an Azure incident and to keep informed."
+    choices:
+    - content: "True"
+      isCorrect: false
+    - content: "False"
+      isCorrect: true

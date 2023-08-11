@@ -4,11 +4,11 @@ title: Choose the right consistency level
 metadata:
   title: Choose the right consistency level
   description: "Choose the right consistency level"
-  ms.date: 04/25/2023
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
 durationInMinutes: 3
 content: |
   [!include[](includes/5-choose-cosmos-db-consistency-level.md)]

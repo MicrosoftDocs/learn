@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: rstearman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Generate inventory and compliance reports
 summary: This module describes how to use Microsoft Endpoint Manager and Power BI to create compliance and custom reports.
 abstract: |

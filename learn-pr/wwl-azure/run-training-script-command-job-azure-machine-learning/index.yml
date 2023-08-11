@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: machine-learning 
 title: Run a training script as a command job in Azure Machine Learning
 summary: Learn how to convert your code to a script and run it as a command job in Azure Machine Learning.
 abstract: |
@@ -28,6 +28,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.run-training-script-command-job-azure-machine-learning.introduction
+- learn.wwl.run-training-script-command-job-azure-machine-learning.video
 - learn.wwl.run-training-script-command-job-azure-machine-learning.convert-notebook-script
 - learn.wwl.run-training-script-command-job-azure-machine-learning.run-script-command-job
 - learn.wwl.run-training-script-command-job-azure-machine-learning.use-parameters-command-job

@@ -4,11 +4,10 @@ title: Exercise - Calculate the sum of each student's assignment scores
 metadata:
   title: Exercise - Calculate the sum of each student's assignment scores
   description: "Exercise - Calculate the sum of each student's assignment scores"
-  ms.date: 05/04/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-store-data.md)]

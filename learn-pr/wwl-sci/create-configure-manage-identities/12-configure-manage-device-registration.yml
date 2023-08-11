@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-configure-manage-identities.configure-manage-device-registration
+title: Configure and manage device registration
+metadata:
+  title: Configure and manage device registration
+  description: "Configure and manage device registration"
+  ms.date: 08/04/2023
+  author: wwlpublish
+  ms.author: roberts
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
+content: |
+  [!include[](includes/12-configure-manage-device-registration.md)]

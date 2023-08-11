@@ -3,11 +3,10 @@ uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics
 metadata:
   title: Analyze and optimize data warehouse storage in Azure Synapse Analytics
   description: "<div|Analyze and optimize data warehouse storage in Azure Synapse Analytics  </div|"
-  ms.date: 03/23/2023
+  ms.date: 06/05/2023
   author: wwlpublish
   ms.author: jamesh
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Analyze and optimize data warehouse storage in Azure Synapse Analytics
 summary: In this module, you'll learn to analyze information used to optimize a data warehouse in Azure Synapse Analytics.
 abstract: |
@@ -18,7 +17,7 @@ abstract: |
   *   Describe the impact of materialized views
   *   Understand rules for minimally logged operations
 prerequisites: |
-  *   It is recommended that students understand how Azure Synapse Analytics works
+  *   It's recommended that students understand how Azure Synapse Analytics works
 iconUrl: /training/achievements/azure-synaps-analytics-optimize-data-warehouse.svg
 levels:
 - advanced

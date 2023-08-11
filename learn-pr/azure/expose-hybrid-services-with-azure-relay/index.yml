@@ -7,7 +7,7 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: service-bus-relay
 title: Expose hybrid services securely with Azure Relay
 summary: Securely expose services that run in your on-premises network to clients in the cloud, without having to open a port on your firewall or make intrusive changes to your corporate network infrastructure.
 abstract: | 

@@ -4,11 +4,10 @@ title: Exercise - Store the numeric grade values for each course
 metadata:
   title: Exercise - Store the numeric grade values for each course
   description: "Exercise - Store the numeric grade values for each course"
-  ms.date: 05/04/2023
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: buzahid
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-store-data.md)]

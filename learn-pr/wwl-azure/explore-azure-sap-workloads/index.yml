@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: sap-on-azure
 title: Explore Azure for SAP workloads
 summary: Explore the expanded partnership between Microsoft and SAP. This partnership allows you to run fully supported SAP applications across development, test, and production scenarios in Azure alongside other Microsoft components.
 abstract: |

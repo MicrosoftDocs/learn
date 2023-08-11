@@ -7,7 +7,7 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: backup
 title: Protect your virtual machines by using Azure Backup
 summary: Use Azure Backup to help protect the data for on-premises servers, virtual machines, virtualized workloads such as SQL Server or SAP HANA running in Azure VMs, Azure file shares, and more.
 abstract: | 

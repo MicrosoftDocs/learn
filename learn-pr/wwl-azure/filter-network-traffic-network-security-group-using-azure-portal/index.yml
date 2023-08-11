@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal
+metadata:
+  title: Filter network traffic with a network security group using the Azure portal
+  description: "Learn to regulate network traffic to your Azure resources by configuring and applying network security groups in the Azure portal, improving your network's security posture."
+  ms.date: 07/31/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Filter network traffic with a network security group using the Azure portal
+summary: In this module, we will focus on filtering network traffic using Network Security Groups (NSGs) in the Azure portal. Learn how to create, configure, and apply NSGs for improved network security.
+abstract: |
+  By the end of this training module, participants will:
+  - Understand the purpose and benefits of using Azure NSG to filter network traffic.
+  - Learn how to create and configure NSGs to enforce access controls for Azure resources.
+  - Gain insights into how NSGs can be used to allow or deny specific types of traffic based on source, destination, and port.
+  - Understand how to prioritize NSG rules and leverage Azure NSG flow logs for monitoring and troubleshooting.
+  - Recognize the role of NSGs in implementing network security best practices in Azure.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-portal
+- azure-virtual-machines
+- azure-virtual-machines-windows
+- azure-virtual-network
+units:
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.introduction
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-resource-group-azure-portal
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-virtual-networking-infrastructure
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.create-network-security-group
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.application-security-groups
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.knowledge-check
+- learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.summary
+badge:
+  uid: learn.wwl.filter-network-traffic-network-security-group-using-azure-portal.badge
