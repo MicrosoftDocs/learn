@@ -1,17 +1,12 @@
-Through this module series, you'll learn how to use head-related transfer function (HRTF) offload on HoloLens 2 and how to enable reverb when using HRTF offload. Spatial audio is a way of creating sound in 360 degrees around a listener. Sound can come from any place in a sphere. It takes two forms - binaural and object-based. Binaural sound is used in headphones. Object-based sound is for television, radio and loudspeaker listening.
+Through this module series, you'll learn how to use the Microsoft Spatializer plugin to add spatial audio to your app. Spatial audio is a way of creating sound in 360 degrees around a listener. Sound can come from any place in a sphere. It takes two forms - binaural and object-based. Binaural sound is used in headphones. Object-based sound is for television, radio and loudspeaker listening.
 
 ## Learning objectives
 
-* Importing and Enabling Microsoft spatializer plugin
-* Enabling Spatial audio on your developer workstation
-* Add and Spatialize the button click sounds
-* Import a video and add a Video Player
-* Play the video onto a quadrangle
-* Route audio from the video to the quadrangle, and spatialize the audio
-* Add a new script to control spatialization on a game object
-* Drive the spatialization control script from button actions
+* Importing and enabling Microsoft Spatializer plugin
+* Enabling spatial audio on your developer workstation
+* Add and spatialize the button click sounds
+* Route audio from a video and spatialize the audio
 * Improve perceived distance of sound sources by adding reverb
-* Control perceived distance of the sound using the listener's distance to the hologram
 
 ## Prerequisites
 

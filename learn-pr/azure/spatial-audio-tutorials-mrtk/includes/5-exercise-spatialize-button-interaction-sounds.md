@@ -17,7 +17,7 @@ In this module, you'll learn how to spatialize the button interaction sounds and
 
 ## Spatialize button feedback
 
-In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see spatial sound design
+In this step, you'll spatialize the audio feedback for the button. For related design suggestions, see [spatial sound design.](/windows/mixed-reality/spatial-sound-design).
 
 In the **Audio Mixer** window you'll define destinations called **Mixer Groups**, for audio playback from **Audio Source** components.
 
@@ -27,7 +27,12 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
 2. Create a **Mixer** by clicking the '+' next to **Mixers** and enter a suitable name to the Mixer for example, _Spatial Audio Mixer_. The new mixer will include a default **Group** called **Master**.
 
     :::image type="content" source="../media/first-mixer.png" alt-text="Mixer panel with first mixer." lightbox="../media/first-mixer.png":::
-3. In the Hierarchy window, select the **PressableButton_32x32mm_IconAndTextUnder** then in the Inspector window
+
+3. Open the mixer and right-click, then select **Add effect at bottom > Microsoft Spatializer Mixer.**
+
+    :::image type="content" source="../media/add-effect.png" alt-text="Mixer panel with first mixer." lightbox="../media/first-mixer.png":::
+
+4. In the Hierarchy window, select the **PressableButton_32x32mm_IconAndTextUnder** then in the Inspector window
   find the **Audio Source** component and Configure the Audio Source component as follows:
 
     1) For the **Output** property, click the selector and choose the **Mixer** that you created
@@ -37,7 +42,7 @@ In the **Audio Mixer** window you'll define destinations called **Mixer Groups**
    :::image type="content" source="../media/button-audio-source.png" alt-text="Screenshot of Button audio source." lightbox="../media/button-audio-source.png":::
 
   > [!NOTE]
-  > If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
+> If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.
 
 ## Adjust the volume curve
 

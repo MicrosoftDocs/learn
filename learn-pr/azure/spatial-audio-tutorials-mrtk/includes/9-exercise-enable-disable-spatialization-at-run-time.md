@@ -1,4 +1,4 @@
-In this module, you'll learn how to Enable and disable spatialization at run time and test this in the unity editor and HoloLens 2.
+In this module, you'll learn how to enable and disable spatialization at run time and test this in the Unity editor and HoloLens 2.
 
 ## Add spatialization control script
 
@@ -72,15 +72,11 @@ In this module, you'll learn how to Enable and disable spatialization at run tim
 
     :::image type="content" source="../media/script-quad.png" alt-text="Screenshot of Add script to quad." lightbox="../media/script-quad.png":::
 
-2. In the Hierarchy locate **PressableButton_32x32mm_IconAndTextUnder** > **TextLabelUnder**.
+2. In the Hierarchy locate **PressableButton_32x32mm_IconAndTextUnder** > **TextLabelUnder**. With the **Quad** object still selected in the Hierarchy, in the Inspector window, locate the **Spatialize On Off (Script)** component and drag and drop **TextLabelUnder** Component of the **PressableButton_32x32mm_IconAndTextUnder**.
 
-3. With the **Quad** object still selected in the Hierarchy, in the Inspector window, locate the **Spatialize On Off (Script)** component and drag and drop **TextLabelUnder** Component of the **PressableButton_32x32mm_IconAndTextUnder**.
+    :::image type="content" source="../media/assign-button.png" alt-text="Screenshot of Find the Quad object in the hierarchy, with the SpatialierOnOff component." lightbox="../media/pressable-button-hololens-2.png":::
 
-    :::image type="content" source="../media/pressable-button-hololens-2.png" alt-text="Screenshot of Find the PressableButton_32x32mm_IconAndTextUnder object in the hierarchy." lightbox="../media/pressable-button-hololens-2.png":::
-
-4. To set the button to call the **SpatializeOnOff** script when the button is released, you need to configure interactable script.
-
-5. In the Hierarchy window, select the **PressableButton_32x32mm_IconAndTextUnder**. In the Inspector window, locate the **Pressable Button** component and click on + icon under OnClicked () event.
+3. To set the button to call the **SpatializeOnOff** script when the button is released, you need to configure interactable script. In the Hierarchy window, select the **PressableButton_32x32mm_IconAndTextUnder**. In the Inspector window, locate the **Pressable Button** component and click on + icon under OnClicked () event.
 
     1) With the **PressableButton_32x32mm_IconAndTextUnder** object still selected in the Hierarchy window, click-and-drag the **Quad** object from the Hierarchy window into the empty **None (Object)** field of the event you just added to make the ButtonParent object listen for button click event from this button:
 

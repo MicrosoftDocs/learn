@@ -1,4 +1,4 @@
-In this module, you'll learn how to spatialize audio from an video source and test this in the unity editor and HoloLens 2.
+In this module, you'll learn how to spatialize audio from a video source and test this in the Unity editor and HoloLens 2.
 
 ## Import a video and add a video player to the scene
 
@@ -7,7 +7,7 @@ For this module use You can use [this video](https://github.com/microsoft/spatia
 1. To import Video into the unity project. in the Unity menu select **Asset** > **Import New Asset**
 
     :::image type="content" source="../media/import-asset.png" alt-text="Screenshot of Importing Asset." lightbox="../media/import-asset.png":::
-2. In the **Import New Asset...** window, select the **Microsoft HoloLens - Spatial Sound-PTPvx7mDon4** file you downloaded and click the **Open** button to import the asset into the project:
+2. In the **Import New Asset...** window, select the **Microsoft HoloLens - Spatial Sound-PTPvx7mDon4** file you downloaded and click the **Import** button to import the asset into the project:
 
     :::image type="content" source="../media/select-asset.png" alt-text="Screenshot of Selecting Asset." lightbox="../media/select-asset.png":::
 3. Adjusting the quality settings on the video clip can ensure smooth playback on HoloLens 2. Select the video file in the **Project** window and in the Inspector window of the video file, **override** the settings for **Windows Store Apps**, and:
@@ -63,7 +63,7 @@ The **Video Player** object needs a textured game object to render the video.
 1. In the Hierarchy window, select **Quad** object, then in the Inspector window, use the **Add Component** button to add **Audio Source** to which you'll route the audio from the video.
 
     In the **Audio Source**:
-
+ 1. 
     1) Set **Output** to the **Spatial Audio Mixer**
     2) Check the **Spatialize** box
     3) Move the **Spatial Blend** slider to 1 (3D)
