@@ -70,7 +70,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 1. Press <kbd>Ctrl+S</kbd> to save the file, and press <kbd>Ctrl+Q</kbd> to close the code editor.
 
-1. Make sure you are still in the project directory (~/mslearn-secure-app-with-oidc-and-azure-ad/app), and then run the following command to build and deploy the initial web app.
+1. Make sure you're still in the project directory (~/mslearn-secure-app-with-oidc-and-azure-ad/app), and then run the following command to build and deploy the initial web app.
 
     ```azurecli
     az webapp up \
