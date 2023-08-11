@@ -47,4 +47,4 @@ In the `PizzaList` component, the Material UI components TextField, Button, Box,
 
 1. Open a browser and navigate to `http://localhost:3000`.
 
-    :::image type="content" source="./media/design-system-form.png" alt-text="Screenshoot of Pizza form with styled components.":::
+    :::image type="content" source="../media/design-system-form.png" alt-text="Screenshoot of Pizza form with styled components.":::
