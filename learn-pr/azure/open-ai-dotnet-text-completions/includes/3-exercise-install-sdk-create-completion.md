@@ -206,7 +206,7 @@ Ok, our proof-of-concept application is now successfully classifying product rev
     Console.WriteLine(translation);
     ```
 
-The output we received this time (and your may vary):
+The output we received this time (and yours may vary):
 
 ```console
 El gato nunca entró en el catio-tent.
