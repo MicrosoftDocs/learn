@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom/client'
 
 import Pizza from './Pizza'
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <Pizza />
   </React.StrictMode>,
 )
+

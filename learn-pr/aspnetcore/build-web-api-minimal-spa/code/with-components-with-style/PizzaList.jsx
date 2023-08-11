@@ -59,7 +59,7 @@ function PizzaList({ name, data, onCreate, onUpdate, onDelete, error }) {
   };
 
   return (
-    <Box sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
+    <Box className="Box" sx={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
       <h2>{name}</h2>
       <form onSubmit={handleSubmit} style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', gap: 8}}>
         <TextField label="Name" name="name" value={formData.name} onChange={handleFormChange} />

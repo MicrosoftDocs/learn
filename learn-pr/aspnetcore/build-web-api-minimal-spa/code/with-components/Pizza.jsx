@@ -7,14 +7,8 @@ const headers = {
   'Content-Type': 'application/json',
 };
 
-type PizzaType = {
-  id: string;
-  name: string;
-  description: string;
-};
-
 function Pizza() {
-  const [data, setData] = useState<PizzaType[]>([]);
+  const [data, setData] = useState([]);
   const [error, setError] = useState(null);
 
   useEffect(() => {
@@ -34,7 +28,7 @@ function Pizza() {
       body: JSON.stringify({name: item.name, description: item.description}),
     })
       .then(response => response.json())
-      .then(returnedItem => setData([...data, returnedItem] as any[]))
+      .then(returnedItem => setData([...data, returnedItem]))
       .catch(error => setError(error));
   };
 

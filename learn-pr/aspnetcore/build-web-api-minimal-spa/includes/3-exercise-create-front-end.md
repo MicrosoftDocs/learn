@@ -7,29 +7,39 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 1. In a command terminal (with all the prerequisites installed), create the app by using `npx create vite@latest pizza-web --template react`:
 
     ```bash
-    npx create vite@latest PizzaClient --template react
+    npm create vite@latest PizzaClient --template react
+    cd PizzaClient
     ```
 
+    Answer the CLI prompts as follows:
+
+    * **Package name**: `PizzaClient`
+    * **Select a framework**: `React`
+    * **Select a variant**: `Javascript`
+
     What you get is a directory, _PizzaClient_, that contains your scaffolded React app. While the code and project are TypeScript, there's little TypeScript used in the project. 
+
+1. Update the `vite.config.js` to provide a consistent front end port and proxy to backend. Replace the contents of `./vite.config.js` with the following code:
+
+    :::code language="javascript" source="../code/vite.config.js" highlight="8-11":::
+
+    * **PORT**: The port is set to 3000, a common port number used for front end apps..
+    * **PROXY**: The route value should be the route to your API app. For example, if your API app is available at `http://localhost:5059/pizza`, 
+        * The **route** is `/pizza`.
+        * The **target** is: `http://localhost:5059`
+
 
 1. Start the app by calling `npm run dev`:
 
    ```bash
-   cd pizza-client
+   npm run dev
    ```
 
-1. Open `tsconfig.json` and add the following entry to your `compilerOptions`. This allows the code to run with implied types, which is effectively what JavaScript does. 
-
-    ```json
-    "noImplicitAny": false
-    ```
-
-
-1. In your browser, go to `http://localhost:5173`.
+1. In your browser, go to `http://localhost:3000`.
 
    You should see the page render like this example:
 
-   :::image type="content" source="../media/react.png" alt-text="Screenshot that shows a rendered SPA app.":::
+   :::image type="content" source="../media/vite-orginal" alt-text="Screenshot that shows a rendered SPA app.":::
 
    Press **Ctrl+C** to end execution.
 
@@ -45,7 +55,7 @@ Build the parent component that manages state for the pizza list.
 
 1. Create a file in the _src_ subdirectory named  _Pizza.jsx_ and give it the following content:
 
-    :::code language="typescript" source="../code/pizza.tsx":::
+    :::code language="javascript" source="../code/with-components/Pizza.jsx":::
 
     This component is responsible for fetching the data from the back end and passing it to the `PizzaList` component. It also handles the `create`, `update`, and `delete` operations. This component has no visible UI. The `PizzaList` component renders the UI.
 
@@ -53,40 +63,33 @@ Build the parent component that manages state for the pizza list.
 
 ## Build a Pizza list component
 
-Create a file in the _src_ subdirectory named  _PizzaList.js_ and give it the following content:
+Create a file in the _src_ subdirectory named  _PizzaList.jsx_ and give it the following content:
 
-:::code language="typescript" source="../code/pizzalist.tsx" :::
+:::code language="javascript" source="../code/with-components/PizzaList.jsx" :::
 
 This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state:
 
 * The `handleFormChange` function updates the form data when the user types in the input fields. 
 * The `handleSubmit` function creates or updates a pizza item depending on whether the editingId state is null or not. 
-* The `handleEdit` function sets the editingId state to the id of the item being edited. 
+* The `handleEdit` function sets the editingId state to the ID of the item being edited. 
 * The `handleCancelEdit` function resets the form data and the editingId state. 
-* The `handleDelete` function deletes a pizza item by calling the `onDelete` prop with the item id.
+* The `handleDelete` function deletes a pizza item by calling the `onDelete` prop with the item ID.
 
 The PizzaList component renders a form with two input fields for the pizza `name` and `description`, and two buttons for creating or updating a pizza item. 
 
-* Edit mode: If the `editingId` state isn't null, the form is in edit mode and the button label is "Update". 
+* Edit mode: If the `editingId` state isn't null, the form is in edit mode, and the button label is "Update". 
 * Otherwise, the form is in create mode and the button label is "Create". 
 
 ## Add Pizza to your app
 
 Open the `main.tsx` and replace the code with the following so the **Pizza** component is included.
 
-:::code language="typescript" source="../code/main.tsx":::
+:::code language="javascript" source="../code/with-components/main.jsx":::
 
-## Run the app
+## Test the app
 
-1. Run the following command to start the app:
+1. Open a browser and navigate to `http://localhost:3000`.
 
-    ```bash
-    npm run dev
-    ```
+    :::image type="content" source="../media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
 
-1. Open a browser and navigate to `http://localhost:5173`.
-
-    :::image type="content" source="./media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
-    
-
-    The form isn't styled and the buttons aren't aligned. The form isn't engaging. 
+    The form works to add, update, or delete a pizza but isn't styled. In the next section, learn how to make the form more engaging. 
