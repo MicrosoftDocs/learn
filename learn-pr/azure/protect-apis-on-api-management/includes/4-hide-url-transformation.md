@@ -1,6 +1,6 @@
 Organizations may need to adjust the information that an API publishes at short notice. For example, to comply with a change of legislation or address a new security threat.
 
-The government census API exposes details about the URL from which the API is being called. This information could allow a malicious user to attempt to access the census data by bypassing the API Management gateway and exposing a less secure endpoint. As lead developer, you want to mask these URLs within the response body of the API.
+The government Census API exposes details about the URL from which the API is being called. This information could allow a malicious user to attempt to access the census data by bypassing the API Management gateway and exposing a less secure endpoint. As lead developer, you want to mask these URLs within the response body of the API.
 
 Here, you learn how to use API Management policies that manipulate the content of API response headers and bodies.
 
@@ -27,12 +27,12 @@ A transformation policy modifies the content of an API call. Some transformation
 | **Convert XML to JSON** | Converts a request or response body from XML to JSON. |
 | **Find and replace string in body** | Finds a request or response substring and replaces it with a different substring. |
 | **Mask URLs in content** | Rewrites links in the response body so that they point to the equivalent link through the gateway. |
-|**Set backend service** | Changes the back-end service for an incoming request. |
-|**Set body** | Sets the message body for incoming and outgoing requests. |
+|**Set backend service** | Changes the backend service for an incoming request. |
+|**Set body** | Sets the message body for incoming requests or outgoing responses. |
 | **Set HTTP header** | Assigns a value to an existing response or request header, or adds a new response or request header. |
 | **Set query string parameter** | Adds, replaces the value of, or deletes a request query string parameter. |
 | **Rewrite URL** | Converts a request URL from its public form to the form expected by the web service. |
 | **Transform XML using an XSLT** | Applies an XSL transformation to the XML in the request or response body. |
 | | |
 
-In the following exercise, you use the **Mask URLs in Content** transform to alter the links.
+In the following exercise, you use the **Mask URLs in content** transform to alter the links.

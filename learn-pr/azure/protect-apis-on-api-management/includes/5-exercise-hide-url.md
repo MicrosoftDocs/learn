@@ -1,8 +1,8 @@
 If you host an API that includes its original URL in responses, clients may be able to bypass your API Management policies by connecting directly to the API. You can prevent that by masking the original URL in API responses.
 
-The government census API includes its URL in this way. You want to make sure that all requests go through API Management.
+The government Census API includes its URL in this way. You want to make sure that all requests go through API Management.
 
-In this unit, you learn how to mask some of the data returned in the body of the census API. You use a transformation policy to rewrite the URL data exposed in the body of the response.
+In this unit, you learn how to mask some of the data returned in the body of the Census API. You use a transformation policy to rewrite the URL data exposed in the body of the response.
 
 ## Mask URLs
 
@@ -10,15 +10,15 @@ The following exercise demonstrates how to apply the **Mask URL** transformation
 
 :::image type="content" source="../media/3-remove-header.png" alt-text="Screenshot of the Design tab with the Policies icon highlighted in the Outbound processing section.":::
 
-1. Sign into the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true) using the same account you activated the sandbox with.
+1. Sign into the [Azure portal](https://portal.azure.com/) using the same account you used in the previous exercise.
 
-1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API gateway.
+1. On the Azure portal menu or from the **Home** page, select **All Resources**, and then select your API Management instance.
 
 1. In the left menu pane, Under **APIs**, select **APIs**, and in the middle pane, select **Census Data**.
 
 1. In the top menu bar, select the **Design** tab, and then select **All operations**.
 
-1. In the **Outbound** processing section, select the **</>** icon.
+1. In the **Outbound** processing section, select the **</>** icon. The XML policy editor appears.
 
 1. Inside the `<outbound>` element, below the `<set-header-name>` element you added previously, add the following element:
 
