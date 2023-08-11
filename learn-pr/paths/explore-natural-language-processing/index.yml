@@ -27,7 +27,6 @@ roles:
 - student
 products:
 - ai-services
-- azure-language-understanding
 - azure-portal
 subjects:
 - natural-language-processing
