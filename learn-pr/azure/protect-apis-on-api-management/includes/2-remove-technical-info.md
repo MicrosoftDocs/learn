@@ -20,7 +20,7 @@ In the Census API example, it's important that you remove the following header:
 
 | Header | Detail |
 |---------|---------|
-| X-Powered-By | This header allows callers to see the technology stack being used. It could allow a malicious user to attempt to exploit any bugs within that stack. |
+| x-powered-by | This header allows callers to see the technology stack being used. It could allow a malicious user to attempt to exploit any bugs within that stack. |
 
 ## API Management setup
 
