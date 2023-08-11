@@ -1,4 +1,4 @@
-Now we have an understanding of the components of a prompt and how to use those to construct a prompt to generate high-quality completions. 
+Now we have an understanding of the components of a prompt and how to use the components to construct a prompt to generate high-quality completions. 
 
 Let's update the application we started in the previous exercise to incorporate some of those techniques.
 
@@ -10,7 +10,7 @@ When classifying a product review, we only want the model to tell us if the revi
 
 1. Open up the **PetReviewAI** project you created earlier.
 1. In the **Program.cs** file, locate where you created the first prompt that asks the model to classify the sentiment of a review.
-1. We want to add a cue to this prompt, or text that will help direct the model to the desired output. Update the `propmpt` variable to look like the following:
+1. We want to add a cue to this prompt, or text that helps direct the model to the desired output. Update the `propmpt` variable to look like the following:
 
     ```csharp
     string prompt = $"""
@@ -18,11 +18,11 @@ When classifying a product review, we only want the model to tell us if the revi
     """;
     ```
 
-    _Note that we haven't included the `exampleReview` variable yet, we'll still build upon this prompt in the next section._
+    _We haven't included the `exampleReview` variable yet, we'll still build upon this prompt in the next section._
 
 ### Add examples
 
-Next we'll add some examples to help the model give us the output we want to see in a technique called few-shot learning.
+Next add some examples to help the model give us the output we want to see in a technique called few-shot learning.
 
 1. Update the prompt to include an example for a positive, neutral, and negative review.
 
@@ -44,7 +44,7 @@ Next we'll add some examples to help the model give us the output we want to see
     """;
     ```
 
-1. Now finally at the very end of the `prompt` string, add the `exampleReview` variable in as the last review and put a placeholder in for the **Sentiment:**. This will let the model know you want it to complete with what it thinks should come next.
+1. Now finally at the very end of the `prompt` string, add the `exampleReview` variable in as the last review and put a placeholder in for the **Sentiment:**. This lets the model know you want it to complete with what it thinks should come next.
 
     ```csharp
     string prompt = $"""
@@ -62,12 +62,12 @@ Next we'll add some examples to help the model give us the output we want to see
 
 Here we want to give the model an out or let it know it's OK if it doesn't know how to do something.
 
-In the case, there is not a direct translation of _catio-tent_ from English to Spanish. So let's create a prompt that lets the model tell us that.
+In the case, there isn't a direct translation of _catio-tent_ from English to Spanish. So let's create a prompt that lets the model tell us that.
 
 ### Provide an alternative output
 
 1. Make sure the `exampleReview` variable is initialized to `"The cat never got into the catio-tent."`.
-1. Find the `promptForTranslation` variable and update it so that the model has a chance to say if the review to translate does not make sense.
+1. Find the `promptForTranslation` variable and update it so that the model has a chance to say if the review to translate doesn't make sense.
 
     ```csharp
     string promptForTranslation = $"""

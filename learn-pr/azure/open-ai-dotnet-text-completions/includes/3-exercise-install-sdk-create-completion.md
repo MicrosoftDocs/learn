@@ -2,11 +2,11 @@ Now that we have an understanding of the different type of text completions, let
 
 You're working for an e-commerce company that sells pet products. Each product could have many reviews and you need to create an application that extracts insights from and localizes the reviews into different languages.
 
-You decide you'll need to use classification and translation completions of the Azure OpenAI service to do so. Let's prototype things out using a .NET console application.
+You decide you need to use classification and translation completions of the Azure OpenAI service to do so. Let's prototype things out using a .NET console application.
 
 ## Create the Azure OpenAI resource
 
-The first step will be to create the Azure OpenAI resource and deploy the model. We'll work with the [GPT-3 Curie model](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models#curie) in this exercise. As the documentation notes, Curie works great for text sentiment and language translation which is what our application needs.
+The first step is to create the Azure OpenAI resource and deploy the model. Let's use the [GPT-3 Curie model](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/concepts/models#curie) in this exercise. As the documentation notes, Curie works great for text sentiment and language translation that is what our application needs.
 
 ### Prerequisites
 
@@ -18,10 +18,10 @@ The first step will be to create the Azure OpenAI resource and deploy the model.
 
 ### Create a resource and deploying a model
 
-Creating the resource and deploying the model is a multi-step process. We'll use the Azure CLI as it can be quicker than using the Azure portal. But note you can use the [Azure portal if you wish](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
+Creating the resource and deploying the model is a multi-step process. Use the Azure CLI as it can be quicker than using the Azure portal. But note you can use the [Azure portal if you wish](https://learn.microsoft.com/azure/cognitive-services/openai/how-to/create-resource?pivots=web-portal).
 
-1. Run the `az login` command to sign-in if you have not already.
-1. When you create a new Azure resource, you have the option to create a new resource group or use an existing one. This command shows you how to create a new resource group. We'll use the name **LearnPetStore** but you can substitute the name of your choice, or use an existing group's name.
+1. Run the `az login` command to sign-in if you haven't already.
+1. When you create a new Azure resource, you can create a new resource group or use an existing one. This command shows you how to create a new resource group. Use the name **LearnPetStore** but you can substitute the name of your choice, or use an existing group's name.
 
     ```azurecli
     az group create \
@@ -29,7 +29,7 @@ Creating the resource and deploying the model is a multi-step process. We'll use
     --location eastus
     ```
 
-1. Run the following command to create an OpenAI resource in the **LearnPetStore** resource group. The name of the OpenAI resource will be **PetStoreOpenAI**.
+1. Run the following command to create an OpenAI resource in the **LearnPetStore** resource group. Name the OpenAI resource **PetStoreOpenAI**.
 
     ```azurecli
     az cognitiveserices account create \
@@ -40,7 +40,7 @@ Creating the resource and deploying the model is a multi-step process. We'll use
     --sku s0
     ```
 
-1. Next we want to deploy the Curie model to the OpenAI resource we just created. We'll call the model deployment **PetStoreCurieDeploy**. Note we're using **LearnPetStore** as the resource group name, **PetStoreOpenAI** as the OpenAI resource name, if you used different values make sure you substitute those.
+1. Next we want to deploy the Curie model to the OpenAI resource we created. Call the model deployment **PetStoreCurieDeploy**. Note we're using **LearnPetStore** as the resource group name, **PetStoreOpenAI** as the OpenAI resource name, if you used different values make sure you substitute those values.
 
     ```azurecli
     az cognitiveservices account deployment create \
@@ -53,7 +53,7 @@ Creating the resource and deploying the model is a multi-step process. We'll use
     --scale-settings-scale-type "Standard"
     ```
 
-1. Once the resource and model have been created, we'll need to get the base URL and access keys so the .NET SDK can access the Azure OpenAI resource. Use these commands to get the endpoint and primary API keys and make note of them for later use:
+1. Once the resource and model have been created, we need to get the base URL and access keys so the .NET SDK can access the Azure OpenAI resource. Use these commands to get the endpoint and primary API keys and make note of them for later use:
 
     **The endpoint**
 
@@ -75,7 +75,7 @@ Creating the resource and deploying the model is a multi-step process. We'll use
 
 ## Create the console application and add the OpenAI SDK
 
-Next up we'll want to create a bare bones .NET Console application and add the Azure OpenAI SDK.
+Next up we want to create a bare bones .NET Console application and add the Azure OpenAI SDK.
 
 1. Run the following to create a new .NET application named **PetReviewAI**.
 
@@ -98,7 +98,7 @@ Next up we'll want to create a bare bones .NET Console application and add the A
 1. Open the project in VS Code or Visual Studio.
 1. In the **Program.cs** file, delete all the existing code.
 1. Add `using Azure.AI.OpenAI;` to the top of **Program.cs**.
-1. Add in 3 class-level variables that will hold references to the Azure OpenAI resource's endpoint, the primary API key, and the name of the model you deployed.
+1. Add in three class-level variables that hold references to the Azure OpenAI resource's endpoint, the primary API key, and the name of the model you deployed.
 
     ```csharp
     string openAIEndpoint = "<YOUR ENDPOINT URL VALUE>";
@@ -106,8 +106,8 @@ Next up we'll want to create a bare bones .NET Console application and add the A
     readonly string openAIDeploymentName = "PetStoreCurieDeploy";
     ```
 
-    In the steps above we named the deployement **PetStoreCurieDeploy**, if you used a different value make sure you use that instead.
-1. Finally, we'll instantiate the class needed to communicate with the Azure OpenAI resource.
+    In the steps above, we named the deployment **PetStoreCurieDeploy**, if you used a different value make sure you use that instead.
+1. Finally, instantiate the class needed to communicate with the Azure OpenAI resource.
 
     ```csharp
     var endpoint = new Uri(openAIEndpoint);
@@ -117,7 +117,7 @@ Next up we'll want to create a bare bones .NET Console application and add the A
 
 ## Create the prompt
 
-Let's create a prompt for the model that will show it how to classify product reviews.
+Let's create a prompt for the model that shows it how to classify product reviews.
 
 1. The first step is to create a prompt that instructs the model that you'd like to classify the sentiment of a product review.
 
@@ -147,7 +147,7 @@ Now let's have the model generate a sentiment.
     };
     ```
 
-1. Next call the `GetCompletionsAsync` function of the `OpenAIClient` class. You'll pass in the deployment name of the model you wish to use along with the `CompletionOptions`.
+1. Next call the `GetCompletionsAsync` function of the `OpenAIClient` class. You pass in the deployment name of the model you wish to use along with the `CompletionOptions`.
 
     ```csharp
     Completions response = await openAIClient.GetCompletionsAsync(openAIDeploymentName, completionOptions);
@@ -172,13 +172,13 @@ The reviewer is not happy with the product.
 The sentiment of this review is negative.
 ```
 
-You may receive something different as the model is non-deterministic, or may produce a different output even with the same input.
+You may receive something different as the model is nondeterministic, or may produce a different output even with the same input.
 
 ## Generate translation completions
 
 Ok, our proof-of-concept application is now successfully classifying product review sentiment. Let's translate the review into Spanish while we're at it.
 
-1. We're using the same example review from above, but this time constructing the prompt to tell the model to translate it into Spanish.
+1. We're using the same example review as before, but this time constructing the prompt to tell the model to translate it into Spanish.
 
     ```csharp
     string promptForTranslation = $"""

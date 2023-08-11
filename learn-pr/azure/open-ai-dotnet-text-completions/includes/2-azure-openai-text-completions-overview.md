@@ -1,18 +1,18 @@
 Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3, GPT-4, and ChatGPT model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
 
-In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we'll be using to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
+In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we will use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
 
 ## Azure OpenAI overview
 
-Azure OpenAI Service gives customers advanced language AI with OpenAI GPT-4, GPT-3, Codex, and DALL-E models with the security and enterprise promise of Azure. Azure OpenAI co-develops the APIs with OpenAI, ensuring compatibility and a smooth transition from one to the other.
+Azure OpenAI Service gives customers advanced language AI with OpenAI GPT-4, GPT-3, Codex, and DALL-E models with the security and enterprise promise of Azure. Azure OpenAI codevelops the APIs with OpenAI, ensuring compatibility and a smooth transition from one to the other.
 
 With Azure OpenAI, customers get the security capabilities of Microsoft Azure while running the same models as OpenAI. Azure OpenAI offers private networking, regional availability, and responsible AI content filtering.
 
-The completions endpoint is the core component of the API service. This API provides access to the model's text-in, text-out interface. Users simply need to provide an input **prompt** containing the English text command, and the model will generate a text **completion**.
+The completions endpoint is the core component of the API service. This API provides access to the model's text-in, text-out interface. Users simply need to provide an input **prompt** containing the English text command, and the model generates a text **completion**.
 
 ## Text completions
 
-The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model will generate a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it will return the completion " I am" with high probability.
+The completions endpoint can be used for a wide variety of tasks. It provides a simple but powerful text-in, text-out interface to any of the Azure OpenAI models. You input some text as a prompt, and the model generates a text completion that attempts to match whatever context or pattern you gave it. For example, if you give the API the prompt, "As Descartes said, I think, therefore", it returns the completion " I am" with high probability.
 
 The actual completion results you see may differ because the API is stochastic by default. In other words, you might get a slightly different completion every time you call it, even if your prompt stays the same.
 
@@ -22,13 +22,13 @@ We'll take a look at how to write a good prompt a bit later, but for now let's l
 
 ## Types of Azure OpenAI completions
 
-As mentioned, you pass in a prompt to the Azure OpenAI API that provides instructions on what you want it to do. And you can make it do things like classify text, generate  ideas, or even translate text into emojis.
+As mentioned, you pass in a prompt to the Azure OpenAI API that provides instructions on what you want it to do. And you can make it do things like classify text, generate ideas, or even translate text into emojis.
 
 ### Classification
 
 For this first completion type, let's dive deep into how to "program" the model with instructions.
 
-You can tell the model you want it to sort data into predefined categories. This is known as **Classification**.
+You can tell the model you want it to sort data into predefined categories. This completion type is known as **Classification**.
 
 For example, you can pass instructions, or a prompt, similar to following to the completion API:
 
@@ -72,13 +72,13 @@ Examples sentiment ratings:
 1.
 ```
 
-After showing the API how the examples are classified by sentiment we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from the first example how it is supposed to be classified. In the second example it sees how to apply this to the list. This allows the API to rate five (and even more) examples in just one API call.
+After showing the API how the examples are classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from the first example how it's supposed to be classified. In the second example, it sees how to apply this to the list. This allows the API to rate five (and even more) examples in just one API call.
 
 You can begin to see how the prompt, or the text passed to the API is the programming language.
 
 ### Generation
 
-One of the most powerful yet simplest tasks you can accomplish with the API is generating new ideas or versions of input. You can give the API a list of a few story ideas and it will try to add to that list. We've seen it create business plans, character descriptions and marketing slogans just by providing it a handful of examples.
+One of the most powerful yet simplest tasks you can accomplish with the API is generating new ideas or versions of input. You can give the API a list of a few story ideas and it tries to add to that list. We've seen it create business plans, character descriptions and marketing slogans just by providing it a handful of examples.
 
 ### Conversation
 
@@ -122,13 +122,13 @@ Vertical farming provides a novel solution for producing food locally, reducing 
 
 ### Factual responses
 
-The API has a lot of knowledge that it's learned from the data it was trained on. It also has the ability to provide responses that sound very real but are in fact made up. There are two ways to limit the likelihood of the API making up an answer.
+The API has a lot of knowledge that it's learned from the data it was trained on. It also has the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of the API making up an answer.
 
-**1. Provide a ground truth for the API** If you provide the API with a body of text to answer questions about (like a Wikipedia entry) it will be less likely to confabulate a response.
+**1. Provide a ground truth for the API** If you provide the API with a body of text to answer questions about (like a Wikipedia entry) it is less likely to confabulate a response.
 
-**2. Use a low probability and show the API how to say "I don't know"** If the API understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it will be less inclined to make up answers.
+**2. Use a low probability and show the API how to say "I don't know"** If the API understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it is less inclined to make up answers.
 
-In this example we give the API examples of questions and answers it knows and then examples of things it wouldn't know and provide question marks. We also set the probability to zero so the API is more likely to respond with a "?" if there's any doubt.
+In this example, we give the API examples of questions and answers it knows and then examples of things it wouldn't know and provide question marks. We also set the probability to zero so the API is more likely to respond with a "?" if there's any doubt.
 
 ```
 Q: Who is Batman?
@@ -150,4 +150,4 @@ Azure OpenAI Service provides REST API access to OpenAI's powerful language mode
 
 One of the most useful features from the OpenAI language models is text completion. You pass in a **prompt** or a plain language description of what you want the model to do, and it can perform tasks such as text classification, text generation, or text summarization.
 
-In the next unit we'll create our .NET application, the Azure OpenAI resource, and complete our first text completion.
+In the next unit, we'll create our .NET application, the Azure OpenAI resource, and complete our first text completion.
