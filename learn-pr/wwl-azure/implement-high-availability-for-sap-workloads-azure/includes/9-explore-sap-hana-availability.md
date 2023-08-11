@@ -1,5 +1,3 @@
-
-
 ## Replicate backups to a second virtual machine
 
 One of the most rudimentary methods to provide a basic level of resiliency for SAP HANA is to use backups. You might have transaction log backups shipped from one Azure VM to another. In this setup, you're responsible for scripting the process of scheduled backups that are performed on the first VM and then copied to the second VM. If you need to use the second VM, you must restore the full, incremental/differential, and transaction log backups.
