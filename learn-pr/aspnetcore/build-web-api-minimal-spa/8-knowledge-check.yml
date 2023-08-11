@@ -23,7 +23,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. React is a front end only framework.
         - content: React is used to build the front end of a full stack app, while .NET 6 is used to build the back end.
-          isCorrect: correct
+          isCorrect: true
           explanation: React, as a front end framework, expediates the local development of a front end application. It provides tools, settings, functionality to help with that.
         - content: React provides the programming language to develop the front end application.
           isCorrect: false
@@ -56,7 +56,7 @@ quiz:
           isCorrect: false
           explanation: Incorrect. Design systems don't provide text translation but could provide the elements that display text translation. 
         - content: You can offer the backend application the same consistent look and feel. 
-          isCorrect: 
+          isCorrect: false 
           explanation: Incorrect. The backend APIs only deal in data. There are no UI elements involved.
         - content: A design system provides a cohesive design for your app including standards, components, and styles. 
           isCorrect: true

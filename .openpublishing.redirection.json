@@ -5206,11 +5206,6 @@
       "redirect_document_id": false
     },
     {
-      "source_path": "learn-pr/aspnetcore/build-web-api-minimal-spa/6-knowledge-check.md",
-      "redirect_url": "/training/modules/build-web-api-minimal-spa/8-knowledge-check",
-      "redirect_document_id": false
-    },
-    {
       "source_path": "learn-pr/aspnetcore/build-web-api-net-core/1-introduction.md",
       "redirect_url": "/training/modules/build-web-api-aspnet-core/1-introduction",
       "redirect_document_id": false

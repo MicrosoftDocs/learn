@@ -35,7 +35,7 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
    You should see the page render like this example:
 
-   :::image type="content" source="../media/vite-orginal" alt-text="Screenshot that shows a rendered SPA app.":::
+   :::image type="content" source="../media/vite-orginal.png" alt-text="Screenshot that shows a rendered SPA app.":::
 
    Press **Ctrl+C** to end execution.
 
