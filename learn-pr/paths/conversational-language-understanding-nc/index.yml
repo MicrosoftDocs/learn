@@ -29,7 +29,6 @@ roles:
 - developer
 products:
 - azure
-- azure-language-understanding
 - ai-services
 - azure-sdks
 subjects:
