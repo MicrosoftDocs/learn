@@ -1,8 +1,8 @@
-Azure enables you to take action on the metrics you're capturing. You can create alerts that email you, or start automations with runbooks.
+Azure enables you to take action on the metrics you're capturing. You can create alerts that email you, or start automations with Runbooks.
 
-Now, you'll create an alert based on your web server's CPU usage. If the CPU usage goes above the set threshold of 90 percent for five minutes, you get an email.
+Now, let's create an alert based on your web server's CPU usage. If the CPU usage goes above the set threshold of 90 percent for five minutes, you get an email.
 
-In this unit, you'll add an alert for your virtual machine (VM). Next, you'll cause the VM CPU usage to spike, and receive the alert email.
+In this unit, you add an alert for your virtual machine (VM). Next, you cause the VM CPU usage to spike, and receive the alert email.
 
 ## Create an alert based on CPU usage
 
@@ -20,7 +20,7 @@ If CPU usage goes above 90 percent for one minute, you'd like to get a notificat
 
     :::image type="content" source="../media/8-metrics-new-alert-rule-button.png" alt-text="Screenshot that shows the menu selections for opening the Alerts pane and creating an Alert Rule for a virtual machine.":::
 
-The **Create an alert rule** pane appears with the **Select a signal** pane open on the right.
+The **Create an alert rule** pane appears with the **Condition** tab open.
 
 ### Select the resource
 
@@ -36,13 +36,11 @@ To set a different resource, you would choose **Select scope** and make the sett
 
 ### Create the condition
 
-1. On the **Create an alert rule** pane, open the **Condition** tab, the **Select a signal** pane opens on the right.
+1. On the **Create an alert rule** pane, open the **Condition** tab.
   
-1. In the search box, search for and select **Percentage CPU**.
+1. In the **Signal name** search box, search for and select **Percentage CPU**.
 
     :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows 'Percentage CPU' selected as the signal name.":::
-
-    The **Create an alert rule** pane reappears.
 
 1. Under **Alert logic**, confirm or enter the following values.
 
@@ -57,7 +55,7 @@ To set a different resource, you would choose **Select scope** and make the sett
 
 ### Add an action
 
-1. On the **Create an alert rule** pane, open the **Actions** tab and select **Create action group**. The **Create an action group** pane appears.
+1. On the **Create an alert rule** pane, open the **Actions** tab and select **Create action group**. The **Create action group** pane appears.
 
 1. On the **Basics** tab, enter the following values for each setting.
 
@@ -69,6 +67,7 @@ To set a different resource, you would choose **Select scope** and make the sett
     | Region  | Global |
     | **Instance details** |
     | Action group name | *Email alerts* |
+    | Display name | *Email alerts* |
 
     :::image type="content" source="../media/8-create-action-group-basics.png" alt-text="Screenshot that shows the 'Add action group' pane filled out.":::
 
