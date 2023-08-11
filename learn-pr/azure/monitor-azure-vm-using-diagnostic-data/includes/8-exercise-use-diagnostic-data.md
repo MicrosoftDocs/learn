@@ -40,8 +40,6 @@ To set a different resource, you would choose **Select scope** and make the sett
   
 1. In the **Signal name** search box, search for and select **Percentage CPU**.
 
-    :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows 'Percentage CPU' selected as the signal name.":::
-
 1. Under **Alert logic**, confirm or enter the following values.
 
    | Setting | Value  |
@@ -51,7 +49,7 @@ To set a different resource, you would choose **Select scope** and make the sett
    | Operator |    Greater than or equal to     |
    | Threshold value   |    90     |
 
-    :::image type="content" source="../media/8-alert-logic.png" alt-text="Screenshot that shows the section for alert logic filled out.":::
+    :::image type="content" source="../media/8-configure-signal-logic-percentage-cpu.png" alt-text="Screenshot that shows 'Percentage CPU' selected as the signal name and the section for alert logic filled out.":::
 
 ### Add an action
 
@@ -112,13 +110,13 @@ To set a different resource, you would choose **Select scope** and make the sett
 
 1. Under step 4 on the **Connect** page, copy the **azureuser**@ and IP address that follows.
 
-1. In Azure Cloud Shell to the right, enter *SSH*, and paste what you copied in the previous step. It should look like the following command.
+1. Open **Azure Cloud Shell (Bash)**, enter *SSH*, and paste what you copied in the previous step. It should look like the following command.
 
     ```bash
     ssh azureuser@<ipaddress>
     ```
 
-    If Cloud Shell times out, select **Reconnect**.
+    If Cloud Shell has timed out, select **Reconnect**.
 
 1. When you're prompted, enter *yes* to connect to the VM.
 
