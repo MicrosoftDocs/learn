@@ -27,7 +27,7 @@ products:
 - azure-active-directory
 - active-directory-federation-services
 - azure-active-directory-connect
-- azure-active-directory-priviledged-identity-management
+- entra
 - azure-active-directory-pass-through-authentication
 subjects:
 - identity-access

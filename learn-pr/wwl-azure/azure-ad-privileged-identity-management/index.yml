@@ -27,7 +27,7 @@ roles:
 products:
 - azure
 - azure-active-directory
-- azure-active-directory-priviledged-identity-management
+- entra
 subjects:
 - identity-access
 units:
