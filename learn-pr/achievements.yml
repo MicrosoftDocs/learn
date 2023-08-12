@@ -2112,3 +2112,8 @@ achievements:
   title: Build low touch IoT solutions by using Azure IoT Central
   summary: You will learn about the Azure IoT Central application platform and the support that it provides to companies with limited budgets and technical resources who are interested in developing, managing, and maintaining IoT solutions.
   iconUrl: /training/achievements/iot-low-touch-iot-central.svg
+- uid: learn.configure-admin-consent-workflow.badge
+  type: badge
+  title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
+  summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
+  iconUrl: /training/achievements/configure-admin-consent-workflow.svg
