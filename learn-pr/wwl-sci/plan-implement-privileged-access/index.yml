@@ -31,7 +31,6 @@ products:
 - azure
 - azure-active-directory
 - azure-active-directory-domain
-- azure-active-directory-priviledged-identity-management
 - entra
 - entra-identity-governance
 subjects:

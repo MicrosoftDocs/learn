@@ -25,7 +25,6 @@ products:
 - azure-active-directory
 - azure-active-directory-domain
 - defender-identity
-- azure-active-directory-priviledged-identity-management
 - entra
 - entra-identity-governance
 subjects:
