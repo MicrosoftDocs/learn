@@ -1,4 +1,4 @@
-Through this module series, you'll learn how to use spatial audio on HoloLens 2 with the Microsoft Spatializer plugin.
+Through this module series, you'll learn how to use spatial audio on HoloLens 2 with the Microsoft Spatializer plugin. The [MixedRealityLearning repository](https://github.com/marlenaklein-msft/MixedRealityLearning) has a completed Unity project of this tutorial sequence.
 
 ## Create and prepare the Unity project
 
