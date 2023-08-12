@@ -44,6 +44,6 @@ Networks have a many-to-one relationship with the [NetworkFabric RoutingDomain].
 - **Layer-3 Network Resource**
   - A Layer-3 Network represents the L3 isolation-domain that is leveraged by NAKS workloads and Operator Nexus VMs to represent network attachments. Examples might include having an L3 isolation-domain to support North-South traffic for external connectivity.
 - **Trunked Network Resource**
-  - A Trunked Network represents a trunking of VLANs across multiple L3IsolationDomain and L2IsolationDomains and doesn't support IPAM.
+  - A Trunked Network represents trunking of VLANs across multiple L3IsolationDomain and L2IsolationDomains and doesn't support IPAM.
 
-Azure Resource providers list: [Resource providers by Azure services - Azure Resource Manager | Microsoft Learn](https://learn.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers)
+Azure Resource providers list: [Resource providers by Azure services - Azure Resource Manager](https://learn.microsoft.com/azure/azure-resource-manager/management/azure-services-resource-providers)
