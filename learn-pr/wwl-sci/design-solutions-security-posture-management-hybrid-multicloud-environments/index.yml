@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   - Advanced experience and knowledge in identity and access, platform protection, security operations, securing data, and securing applications.
   - Experience with hybrid and cloud implementations.
+iconUrl: /training/wwl-sci/design-solutions-security-posture-management-hybrid-multicloud-environments/media/defender-for-cloud-pillars.png
 levels:
 - advanced
 roles:
