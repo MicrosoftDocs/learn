@@ -9,6 +9,7 @@ metadata:
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   zone_pivot_groups: azure-interface
+durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
 quiz:
@@ -32,7 +33,7 @@ quiz:
       explanation: "Incorrect. Migrating a small sample to the cloud may help you estimate the costs of a future full-migration, but consider using the total cost of ownership calculator for an even early estimate."
     - content: "Use the Total Cost of Ownership calculator to estimate expected costs."
       isCorrect: true
-      explanation: "Correct. The Total Cost of Ownership calculator lets you input your current infrastructure and requirements and provides you an estimate for running in the cloud."
+      explanation: "Correct. The Total Cost of Ownership calculator lets you input your current infrastructure and requirements and provides you with an estimate for running in the cloud."
     - content: "Migrate to the cloud, but track usage closely using tags to rapidly understand costs."
       isCorrect: false
       explanation: "Incorrect. While you would get the most accurate information with this approach, it would also be the most expensive and would entail a full migration."

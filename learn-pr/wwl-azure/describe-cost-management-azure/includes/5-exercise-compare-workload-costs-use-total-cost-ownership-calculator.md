@@ -20,7 +20,7 @@ Let's say that:
 
 Recall that the TCO Calculator involves three steps:
 
-:::image type="content" source="../media/total-cost-ownership-calculator-steps-76e927a5.png" alt-text="A visual representation of the three steps, define your workloads, adjust assumptions, and view the report.":::
+:::image type="content" source="../media/total-cost-ownership-calculator-steps-76e927a5.png" alt-text="Illustration of the three steps: define your workloads, adjust assumptions, and view the report.":::
 
 
 ## Define your workloads
