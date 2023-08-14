@@ -193,7 +193,7 @@ Ok, our proof-of-concept application is now successfully classifying product rev
         Prompts = { promptForTranslation },
         MaxTokens = 64,
         Temperature = 0f,
-        FrequencyPenalty=0.0f,
+        FrequencyPenalty = 0.0f,
         PresencePenalty = 0.0f,
         NucleusSamplingFactor = 1
     };
