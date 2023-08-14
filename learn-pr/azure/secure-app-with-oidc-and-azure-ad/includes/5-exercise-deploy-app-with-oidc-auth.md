@@ -2,7 +2,7 @@ You can use Azure CLI to deploy and test an application that uses OpenID Connect
 
 In the previous exercise, you registered an application in Azure Active Directory (Azure AD). You can now deploy and run the application and see if authentication works.
 
-In this exercise, you'll configure an application to authenticate users against your Azure AD tenant, and to deploy the web app.
+In this exercise, you'll configure an application to authenticate users against your Azure AD tenant and deploy the web app.
 
 ## Configure and deploy the application that uses OpenID Connect to authenticate users
 
@@ -12,7 +12,7 @@ In this exercise, you'll configure an application to authenticate users against 
 
 1. In Cloud Shell, select **Bash**.
 
-1. Create a resource group by running the following command where you replace the placeholders with a location like centralus and resource group name like learn-openid-connect-rg.
+1. Create a resource group by running the following command where you replace the placeholders with a location like **centralus** and resource group name like **learn-openid-connect-rg**.
 
     ```azurecli
     LOCATION=<region>
@@ -70,12 +70,12 @@ In this exercise, you'll configure an application to authenticate users against 
 
 1. Press <kbd>Ctrl+S</kbd> to save the file, and press <kbd>Ctrl+Q</kbd> to close the code editor.
 
-1. Make sure you are still in the project directory (~/mslearn-secure-app-with-oidc-and-azure-ad/app), and then run the following command to build and deploy the initial web app.
+1. Make sure you're still in the project directory (~/mslearn-secure-app-with-oidc-and-azure-ad/app), and then run the following command to build and deploy the initial web app.
 
     ```azurecli
     az webapp up \
-        --resource-group <rgn>[resource group]</rgn> \
-        --location centralus \
+        --resource-group $RESOURCEGROUP \
+        --location $LOCATION \
         --sku F1 \
         --name educationapp-$RANDOM
     ```
@@ -86,12 +86,12 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL for the web service.
 
-1. In the [Azure portal](https://portal.azure.com?azure-portal=true), verify that you are signed in to **Learn Module AAD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), verify that you're signed in to **Learn Module Azure AD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module Azure AD Tenant** directory that you created earlier. Sign in if you're prompted.
 
-1. From the **Home** page or the resource menu, select **Azure Active Directory**. The **Learn Module AAD Tenant** Azure Active Directory Overview pane appears.
+1. From the **Home** page or the resource menu, select **Azure Active Directory**. The **Learn Module Azure AD Tenant** Azure Active Directory Overview pane appears.
 
 1. In the menu, under **Manage**, select **App registrations**. The **App registrations pane appears.
- 
+
 1. From the list of applications, select the **WebApp-OpenIDConnect-DotNet** application that you created in the previous exercise.
 
 1. In the menu, under **Manage**, select **Authentication**.
@@ -116,7 +116,7 @@ Now let's configure the app registration to authorize the URL for the web servic
 
     :::image type="content" source="../media/5-request-consent.png" alt-text="Screenshot of the dialog box that requests consent.":::
 
-1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating that you've been successfully logged in with the identity in the Learn Module AAD Tenant directory.
+1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating that you've been successfully logged in with the identity in the Learn Module Azure AD Tenant directory.
 
     :::image type="content" source="../media/5-webapp.png" alt-text="Screenshot of the web app with your credentials.":::
 
