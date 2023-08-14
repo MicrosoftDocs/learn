@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
 durationInMinutes: 7
 content: |
   [!include[](includes/2-describe-factors-affect-costs-azure.md)]

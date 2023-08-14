@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.md)]
