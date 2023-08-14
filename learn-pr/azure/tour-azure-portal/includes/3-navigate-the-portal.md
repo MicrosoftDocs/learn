@@ -1,10 +1,12 @@
-With an Azure account, you can sign into the **Azure portal**. The portal is a web-based administration site that lets you interact with all of your subscriptions and resources you have created. Almost everything you do with Azure can be done through this web interface.
+With an Azure account, you can sign into the **Azure portal**. The portal is a web-based administration site that lets you interact with Azure services and the resources you've created. Almost everything you do with Azure can be done through this web interface.
 
 ## Azure portal layout
 
-The Azure portal is the primary graphical user interface (GUI) for controlling Microsoft Azure. You can carry out the majority of management actions in the portal, and it is typically the best interface for carrying out single tasks, or when you want to look at the configuration options in detail.
+When you first sign in to the Azure portal, the default page is **Home**.
 
-![Screenshot of the Azure portal showing the left-hand sidebar and right-hand dashboard.](../media/3-portal.png)
+:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot showing the Home page of the Azure portal.":::
+
+You can change your default view to the customizable **Dashboard** in the portal's settings. You'll learn more about dashboards later in this module.
 
 :::row:::
     :::column:::
@@ -13,47 +15,41 @@ The Azure portal is the primary graphical user interface (GUI) for controlling M
     :::column span="3":::
     **Portal menu**
 
-    In the left-hand sidebar of the portal is the portal menu, which lists the main resource types. Note that Azure has more resource types than just those shown. The resources listed are part of your *favorites*.
+    In the left-hand sidebar of the portal is the portal menu, which lists different Azure services and resource types. Azure has many more services than what's shown in this menu. The services listed are the ones in your **Favorites**.
 
-    You can customize this with the specific resource types you tend to create or administer most often.
+    You can customize your **Favorites** with the specific resource types you tend to create or administer most often.
     :::column-end:::
 :::row-end:::
 
-The remainder of the portal view is for the specific elements you are working with. The default (main) page is **Home**, but you can change your default view to the customizable **Dashboard** from **Settings**. We'll cover settings later in this unit.
+## Azure portal global controls
 
-## What is the Azure Marketplace?
+The Azure portal displays several icons in the status bar at the top right of the screen. These icons are global controls that are always available, no matter what service you're working with. Each icon provides quick access to useful functionality, such as configuring settings or viewing notifications about portal activity.
 
-The *Azure Marketplace* is often where you start when creating new resources in Azure. The Marketplace allows customers to find, try, purchase, and provision applications and services from hundreds of leading service providers, all certified to run on Azure.
+:::image type="content" source="../media/5-portal-icon-bar.png" alt-text="Screenshot of the global control icons at the top of the Azure portal.":::
 
-The solution catalog spans several industry categories, including but not limited to open-source container platforms, virtual machine images, databases, application build and deployment software, developer tools, threat detection, and blockchain. Using Azure Marketplace, you can provision end-to-end solutions quickly and reliably, hosted in your own Azure environment. At the time of writing, this listing included over 8,000 listings.
+If you are viewing the Azure portal on a screen with reduced horizontal space, you may need to expand an ellipsis (**...**) menu to view the global controls.
 
-While Azure Marketplace is designed for IT professionals and cloud developers interested in commercial and IT software, Microsoft Partners also use it as a launch point for all joint Go-To-Market activities.
-
-## Configuring settings in the Azure portal
-
-The Azure portal displays several configuration options, mostly in the status bar at the top-right of the screen.
-
-If you are viewing the Azure portal on a screen with reduced horizontal space, the following icons may be made available through an ellipsis (**...**) menu.
+Let's walk through each of these controls to understand them better.
 
 ### Cloud Shell
 
-If you select the **Cloud Shell** icon (>_), you create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources. It provides the flexibility of choosing the shell experience that best suits the way you work. Linux users can opt for a Bash experience, while Windows users can opt for PowerShell. This browser-based terminal lets you control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal.
+Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. Recall that Azure Cloud Shell is an interactive shell for managing Azure resources. This browser-based terminal lets you control and administer your Azure resources through a command-line interface built right into the portal.
 
 ### Directories and subscriptions
 
-Select the **Book and Filter** icon to show the **Directories + subscriptions** pane.
+Select the **book and filter** icon to show the **Directories + subscriptions** pane.
 
-Azure allows you to have more than one subscription associated with one directory. On the **Directory + subscription** pane, you can change between subscriptions. Here, you can change your subscription or change to another directory.
+In some cases, you may have access to more than one Azure subscription. The **Directory + subscription** pane lets you change the subscription you're working in, or change to a different directory.
 
 ![Screenshot of the Directory and subscription pane.](../media/3-directory-pane.png)
 
 ### Notifications
 
-Selecting the bell icon displays the **Notifications** pane. This pane lists the last actions that have been carried out, along with their status.
+Selecting the bell icon displays the **Notifications** pane. This pane lists the most recent actions that have been carried out, along with their status.
 
 ### Settings
 
-Select the **Gear** icon to change the Azure portal settings. In the tabs at the left, you'll find options such as:
+Select the **gear** icon to change the Azure portal settings. In the tabs at the left, you'll find options such as:
 
 - Inactivity sign out delay
 - Default view when you first sign in
@@ -65,23 +61,13 @@ Select the **Gear** icon to change the Azure portal settings. In the tabs at the
 
 ### Help pane
 
-Select the **question mark** icon to show the **Help** pane. Here you choose from several options, including:
+Select the **question mark** icon to show the **Help** pane. This pane includes several sections you can access, depending on what type of help you need:
 
-- Help + support
-- Service health
-- Support resources
+- **Service health**: Displays information about the status of various Azure services.
+- **Support resources**: Provides links to read official documentation, find answers from the Azure community, or explore other helpful resources.
+- **Help + support**: Lets you create a support request if you're having problems, or view existing requests.
 
-#### Help and support options
-
-**Help + support** opens the main help and support area for the Azure portal and includes documentation options for a variety of common questions. Near the top of the page you'll see **Create a support request**. This is how you can open a support ticket with the Azure team.
-
-All Azure customers can access support for billing, quota, and subscription management. The availability of support for other issues depends on the support plan you have.
-
-When you open a support ticket, you'll complete the form by using provided dropdown lists and text-entry fields.
-
-Once you've filled out the form, select **Create** to submit your support request. The Azure support team will contact you after you submit your request.
-
-You can then check the status and details of your support request, by going to **Help** > **Help +support** > **All support requests**.
+When you select **Help + support**, you'll see a link to  **Create a support request** near the top of the page. When you open a support request, you'll complete the form by using provided dropdown lists and text-entry fields. After you finish and submit the request, the Azure support team will investigate the issue, based on the details you provided.
 
 ### Feedback pane
 
@@ -103,18 +89,18 @@ Select the "..." button on the right-hand side for options to:
 
 If you select "..." and then **View my bill**, Azure takes you to the **Cost Management + Billing - Overview** page, which helps you analyze where Azure is generating costs.
 
+### Azure Marketplace
+
+The *Azure Marketplace* is often where you start when creating new resources in Azure. The Marketplace lets you find, try, purchase, and provision applications and services from hundreds of leading service providers, all certified to run on Azure.
+
+The solution catalog spans thousands of offerings across multiple industry categories, such as open-source container platforms, virtual machine images, databases, developer tools, and blockchain. Using Azure Marketplace, you can deploy end-to-end solutions hosted in your own Azure environment.
+
 ### Azure Advisor
 
-Finally, the Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and looks for ways to improve your environment across those areas. You can view recommendations in the portal or download them in PDF or CSV format.
-
-With Azure Advisor, you can:
-
-- Get proactive, actionable, and personalized best practices recommendations.
-- Improve the performance, security, and high availability of your resources as you identify opportunities to reduce your overall Azure costs.
-- Get recommendations with proposed actions inline.
+Finally, the Azure Advisor is a free service built into Azure that provides recommendations on high availability, security, performance, operational excellence, and cost. Advisor analyzes your deployed services and suggests ways to improve your environment across those areas. You can view recommendations in the portal or download them in PDF or CSV format.
 
 You can access Azure Advisor by selecting **Advisor** from the navigation menu, or search for it in the **All Services** menu.
 
-![Azure Advisor Dashboard displayed in the Azure portal displaying recommendations for High Availability, Security, Performance, and Cost.](../media/3-advisordashboard.png)
+:::image type="content" source="../media/3-advisordashboard.png" alt-text="Screenshot of the Azure Advisor Overview page in the Azure portal.":::
 
-Let's try some of these features out!
+Now let's try some of these features out!

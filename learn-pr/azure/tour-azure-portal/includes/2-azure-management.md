@@ -13,7 +13,7 @@ When you're starting out with Azure, you'll probably use the Azure portal most o
 
 The [Azure portal](https://portal.azure.com) is a public website you can access with any web browser. Once you sign in with your Azure account, you can create, manage, and monitor Azure services and resources. In the Azure portal, you can use search to find different types of services and get links for help on a topic. The Azure portal also guides you through complex administrative tasks using wizards and tooltips.
 
-:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot of the Azure portal Home page." lightbox="../media/2-azure-portal.png":::
+:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot of the Azure portal Home page.":::
 
 The Azure portal is often the best interface for carrying out single tasks, or when you want to look at configuration options in detail.
 
