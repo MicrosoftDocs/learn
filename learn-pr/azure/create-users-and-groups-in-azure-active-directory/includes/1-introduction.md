@@ -10,4 +10,4 @@ At the end of this module, you'll be able to:
 
 ## Prerequisites
 
-None
+- An Azure account with an [active subscription](https://azure.microsoft.com/free)

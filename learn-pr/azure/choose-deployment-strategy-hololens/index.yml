@@ -1,0 +1,50 @@
+### YamlMime:Module
+uid: learn.choose-deployment-strategy-hololens
+metadata:
+  title: Choose a deployment scenario for HoloLens device management
+  description: "Learn how to choose a deployment scenario for managing HoloLens devices."
+  ms.date: 7/12/2023
+  author: aprilspeight
+  ms.author: apspeigh
+  ms.topic: interactive-tutorial
+  ms.prod: hololens
+title: Choose a deployment scenario for HoloLens device management
+summary: "Explore and evaluate common deployment scenarios for HoloLens 2 device management."
+abstract: |
+  By the end of this module, you'll be able to:
+    - Understand the common deployment scenarios for HoloLens 2 devices
+    - Assess your organization's specific needs and requirements for deploying HoloLens devices
+    - Evaluate which deployment scenario is best suited for your organization
+
+prerequisites: "Although this module has no requirements, you're encouraged to have a HoloLens 2 device (or devices) ready for deployment."
+iconUrl: /learn/achievements/generic-badge.svg
+levels:
+  - beginner
+roles:
+  - technology-manager
+products: 
+  - hololens
+subjects:
+  - infrastructure
+units:
+- learn.choose-deployment-strategy-hololens.introduction
+
+- learn.choose-deployment-strategy-hololens.deployment-scenarios
+
+- learn.choose-deployment-strategy-hololens.analyze-decision-criteria
+
+- learn.choose-deployment-strategy-hololens.use-cloud-connected-deployment
+
+- learn.choose-deployment-strategy-hololens.use-corporate-connected-deployment
+
+- learn.choose-deployment-strategy-hololens.use-restricted-offline-deployment
+
+- learn.choose-deployment-strategy-hololens.use-near-offline-isolated-deployment
+
+- learn.choose-deployment-strategy-hololens.knowledge-check
+
+- learn.choose-deployment-strategy-hololens.summary
+
+badge:
+  uid: |
+    learn.choose-deployment-strategy-hololens.badge

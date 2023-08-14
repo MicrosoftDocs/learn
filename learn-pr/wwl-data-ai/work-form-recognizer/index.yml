@@ -31,7 +31,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 units:
 - learn.wwl.work-with-form-recognizer.introduction
 - learn.wwl.work-with-form-recognizer.what-form-recognizer

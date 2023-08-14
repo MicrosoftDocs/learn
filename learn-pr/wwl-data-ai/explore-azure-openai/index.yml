@@ -11,8 +11,7 @@ metadata:
   ms.subservice: openai
   ms.custom:
     - build-2023
-    - build-2023-dataai
-  ms.prod: learning-azure         # Edit as appropriate for your portfolio area
+    - build-2023-dataai  
 title: Introduction to Azure OpenAI Service
 summary: "Get to know the connection between artificial intelligence (AI), Responsible AI, and text, code, and image generation. Understand how you can use Azure OpenAI to build solutions against AI models within Azure."
 abstract: |
@@ -33,7 +32,7 @@ roles:
 - student
 products:
 - azure-bot-service
-- azure-cognitive-services
+- ai-services
 - azure-machine-learning
 subjects:
 - artificial-intelligence
@@ -46,6 +45,7 @@ units:
 - learn.wwl.explore-azure-openai.understand-openai-code-generation
 - learn.wwl.explore-azure-openai.understand-openai-image-generation
 - learn.wwl.explore-azure-openai.describe-openai-responsible-ai
+- learn.wwl.explore-azure-openai.exercise-openai
 - learn.wwl.explore-azure-openai.knowledge-check
 - learn.wwl.explore-azure-openai.summary
 badge:

@@ -4,11 +4,11 @@ title: Understand resources for building a language understanding model
 metadata:
   title: Understand resources for building a language understanding model
   description: "Understand resources for building a language understanding model"
-  ms.date: 10/12/2022
+  ms.date: 07/20/2023
   author: wwlpublish
   ms.author: berryivor
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 9

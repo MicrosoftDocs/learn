@@ -1,6 +1,7 @@
 
 
-Data comes in many formats. In this challenge you have to parse the individual "Order IDs", and output the "OrderIDs" sorted and tagged as "Error" if they are not exactly four characters in length.
+
+Data comes in many formats. In this challenge you have to parse the individual "Order IDs", and output the "OrderIDs" sorted and tagged as "Error" if they aren't exactly four characters in length.
 
 1. Select and delete all code lines in the Visual Studio Code Editor.
 
@@ -14,7 +15,7 @@ Data comes in many formats. In this challenge you have to parse the individual "
 
 1. Add code below the previous code to parse the "Order IDs" from the `string` of incoming orders and store the "Order IDs" in an array
 
-1. Add code to output each "Order ID" in sorted order and tag orders that are not exactly four characters in length as "- Error"
+1. Add code to output each "Order ID" in sorted order and tag orders that aren't exactly four characters in length as "- Error"
 
 1. Save and run your code
 

@@ -2,17 +2,17 @@ The university needs a location to store data that's currently in text files. Th
 
 ## Create a single database by using the Azure portal
 
-SQL Database is a relational database service that's based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is an easy-to-use, high-performance database that's reliable and highly secure. You can use SQL Database to build new apps, websites, and microservices in the programming language of your choice, and you won't have to manage infrastructure.
+SQL Database is a relational database service that's based on the latest stable version of Microsoft SQL Server Database Engine. SQL Database is an easy-to-use, high-performance database that's reliable and highly secure. You can use SQL Database to build new apps, websites, and microservices in the programming language of your choice, and you don't have to manage infrastructure.
 
 You can create a single database through the Azure portal or by using Azure PowerShell or CLI.
 
 1. From the Azure portal menu, select **Create a resource**.
 
-    ![Screenshot of Azure portal menu and Create a resource option.](../media/2-create-a-resource.png)
+    :::image type="content" source="../media/2-create-a-resource.png" alt-text="Screenshot of Azure portal menu and Create a resource option.":::
 
 1. Select **Databases**, and then select **SQL Database**.
 
-    ![Screenshot of the Databases and SQL Database options.](../media/2-databases-sql-database.png)
+    :::image type="content" source="../media/2-databases-sql-database.png" alt-text="Screenshot of the Databases and SQL Database options.":::
 
 1. To use CLI, run the `az sql server create` and `az sql db create` commands.
 
@@ -20,7 +20,7 @@ You can create a single database through the Azure portal or by using Azure Powe
 
 When you create a single database, you're prompted to specify the server to manage it. You can create a new server or use an existing server.
 
-When you create a new server and choose to use SQL authentication, you're prompted to specify a server admin user name and password. You'll use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. You can also choose to use both SQL and Azure AD authentication, but you must always set an admin or create an admin account when you create a new server, then grant access to accounts that are stored in Azure AD.
+When you create a new server and choose to use SQL authentication, you're prompted to specify a server admin user name and password. Use these credentials to connect to the server to do administrative tasks and to access the databases that the server controls. SQL Database also supports Azure Active Directory (Azure AD) authentication. You can also choose to use both SQL and Azure AD authentication. But, you must always set an admin or create an admin account when you create a new server. Then, grant access to accounts that are stored in Azure AD.
 
 Each database server is protected by a firewall to block potentially malicious processes. You can open the firewall to other Azure services. And you can selectively enable access to other computers based on their IP address or address range. SQL Database also provides advanced data security that enables you to:
 
@@ -32,7 +32,7 @@ You configure resources by using the virtual core (vCore) model, which specifies
 
 If you have multiple databases and the resource needs of the databases fluctuate, you can use SQL elastic pool. This feature enables sharing a pool of resources among pooled databases as demand requires.
 
-When you create a database, you also specify how the data will be collated. A *collation* defines the rules that the database uses for sorting and comparing data. It also specifies the character set to use for text data. You can change the collation after you've created the database, but it's best not to change it after the database contains data.
+When you create a database, you also specify how the data is collated. A *collation* defines the rules that the database uses for sorting and comparing data. It also specifies the character set to use for text data. You can change the collation after you've created the database, but it's best not to change it after the database contains data.
 
 ## Create tables
 
@@ -42,7 +42,7 @@ You can use any of these tools to create tables:
 - The `sqlcmd` utility and Cloud Shell
 - SQL Server Management Studio
 
-Whichever tool you choose, you define the table by using the `CREATE TABLE` Transact-SQL (T-SQL) command. SQL Database supports primary keys, foreign keys, indexes, and triggers on tables. The following sample code creates a pair of related tables and a non-clustered index. You can run these commands as a batch in the query editor or in the `sqlcmd` utility.
+Whichever tool you choose, you define the table by using the `CREATE TABLE` Transact-SQL (T-SQL) command. SQL Database supports primary keys, foreign keys, indexes, and triggers on tables. The following sample code creates a pair of related tables and a nonclustered index. You can run these commands as a batch in the query editor or in the `sqlcmd` utility.
 
 ```SQL
 CREATE TABLE MyTable
@@ -62,7 +62,7 @@ CREATE TABLE MyTable2
 CREATE INDEX cci ON MyTable2(AnotherColumn3);
 ```
 
-To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You'll be prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Active Directory password authentication** and provide the credentials of an authorized user in Azure AD. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
+To access the query editor in the Azure portal, go to the page for your database and select **Query editor**. You're prompted for credentials. You can set the **Authorization type** to **SQL Server authentication** and enter the user name and password that you set up when you created the database. Or you can select **Active Directory password authentication** and provide the credentials of an authorized user in Azure AD. If Active Directory single sign-on is enabled, you can connect by using your Azure identity.
 
 ![The SQL Database sign-in page in the Azure portal.](../media/2-sign-in-annotated.png)
 
@@ -76,7 +76,7 @@ To use the `sqlcmd` utility, go to Cloud Shell and run the following command. Re
 sqlcmd -S <server>.database.windows.net -d <database> -U <username> -P <password>
 ```
 
-If the sign-in command succeeds, you'll see a `1>` prompt. You can enter T-SQL commands on several lines and then type `GO` to run them.
+If the sign-in command succeeds, you see a `1>` prompt. You can enter T-SQL commands on several lines and then type `GO` to run them.
 
 ## Bulk import data with bcp
 
@@ -88,11 +88,11 @@ Microsoft provides several tools that you can use to upload data to your SQL dat
  
 The `bcp` utility is often used because it's convenient and can be easily scripted to import data into multiple tables. The `bcp` utility is a command-line tool that you can use to import and export data from a database. To import data, `bcp` requires these three things:
 
-- The source data to upload
-- An existing table in the destination database
-- A *format file* that defines the format of the data and how to map the data to columns in the destination table
+- The source data to upload.
+- An existing table in the destination database.
+- A *format file* that defines the format of the data and how to map the data to columns in the destination table.
 
-The `bcp` utility is flexible. The source data can be in almost any structured format. The format file indicates the layout of the data, whether it's binary or character-based, the type and length of each item, how the data is separated, and so on. The format file also specifies how to map each item in the file to a column in the table. It's important to define the contents of this file correctly. Otherwise, your data might not be imported, or the data might be read into the wrong columns.
+The `bcp` utility is flexible. The source data can be in almost any structured format. The format file indicates the layout of the data and whether the data is binary or character-based. It also specifies the type and length of each item, and how the data is separated. The format file also specifies how to map each item in the file to a column in the table. It's important to define the contents of this file correctly. Otherwise, your data might not be imported, or the data might be read into the wrong columns.
 
 Suppose that you have the following data in the file *mydata.csv*, and you want to import this data into the *MyTable* table that we created earlier.
 
@@ -105,7 +105,7 @@ Column1,Column2
 33,a final bit of text
 ```
 
-The first line contains field names that aren't the same as the columns in the table. The data is comma-separated, and  each row is terminated by a newline character. Keep in mind that the order of the columns in the file might be different from the table. In this example, the first column in the table is numeric, and the second column is a string, as follows:
+The first line contains field names that aren't the same as the columns in the table. The data is comma-separated, and each row is terminated with a newline character. Keep in mind that the order of the columns in the file might be different from the table. In this example, the first column in the table is numeric, and the second column is a string, as follows:
 
 ```SQL
 CREATE TABLE MyTable
@@ -131,7 +131,7 @@ The `bcp` utility has several parameters that control the functionality of the u
 
 For full syntax and command-line parameters for the utility, see the [help documentation](/sql/tools/bcp-utility?azure-portal=true).
 
-The contents of the *mytable.fmt* format file that's generated by this command look like this:
+The command generates the *mytable.fmt* format file with contents that look like this:
 
 ```text
 14.0
@@ -142,7 +142,7 @@ The contents of the *mytable.fmt* format file that's generated by this command l
 
 The first line shows the internal version number of SQL Database. The second line shows the number of columns in the source table. The final two lines indicate how to map data in the source file to those columns.
 
-Both lines start with a number. These are the column numbers in the table. The second field (SQLCHAR) specifies that when we use this format file to import data, each field in the source file contains character data. The `bcp` utility will try to convert this data to the appropriate type for the corresponding column in the table. The next field (12 and 50) is the length of the data in each column in the database. *Don't change this!* The following items ("," and "\n") are the field terminator in the source file and the newline character, respectively. The next column is the field number in the source file. The second to last field (MyColumn1 and MyColumn2) is the name of the column in the database. The last field is the collation to use, which only applies to character data in the database.
+Both lines start with a number that is the column number in the table. The second field (SQLCHAR) specifies that when we use this format file to import data, each field in the source file contains character data. The `bcp` utility tries to convert this data to the appropriate type for the corresponding column in the table. The next field (12 and 50) is the length of the data in each column in the database. *Don't change this field!* The following items ("," and "\n") are the field terminator in the source file and the newline character, respectively. The next column is the field number in the source file. The second to last field (MyColumn1 and MyColumn2) is the name of the column in the database. The last field is the collation to use, which only applies to character data in the database.
 
 Remember that the fields in the source file are in a different order than the columns in the database. So you should edit the format file and change the field numbers, as shown here:
 
@@ -153,7 +153,7 @@ Remember that the fields in the source file are in a different order than the co
 2       SQLCHAR             0       50      "\n"   1     MyColumn2                                SQL_Latin1_General_CP1_CI_AS
 ```
 
-The data in field 2 in the source file will be mapped to the first column in the database. Field 1 will be mapped to the second column.
+The data in field 2 in the source file is mapped to the first column in the database. Field 1 is mapped to the second column.
 
 You can now use the `bcp` command to import the data, as follows:
 
@@ -173,7 +173,7 @@ Network packet size (bytes): 4096
 Clock Time (ms.) Total     : 46     Average : (108.7 rows per sec.)
 ```
 
-The important line is "5 rows copied." This reports the number of lines in the source file that contain data that was imported. If this number is different (or 0), your format file may be incorrect.
+The important line in the output is "5 rows copied." The number of lines in the source file that contain data that was imported. If this number is different (or 0), your format file may be incorrect.
 
 ## Query data
 

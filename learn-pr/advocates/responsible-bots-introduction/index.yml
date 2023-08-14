@@ -3,6 +3,7 @@ uid: learn.advocates.responsible-bots-introduction
 metadata:
   title: Introduction to responsible bots
   description: Learn about responsible bots. Understand the principles of responsible conversational AI, and find out how to implement those principles in bots.
+  ms.service: cognitive-services
   ms.date: 02/06/2023
   author: JKirsch1
   ms.author: chnoring
@@ -23,7 +24,7 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 prerequisites: |
   - None
 subjects:

@@ -59,7 +59,7 @@ You've been asked to add a feature to your company's software. The feature is in
     ```
 
     >[!NOTE]
-    > Be sure to substitute the value stored in the variable `daysUntilExpiration` for `_` in your message.
+    > Be sure to replace the `_` character displayed in the message above with the value stored in the variable `daysUntilExpiration` when you construct your message output.
 
 1. Rule 4: If the user's subscription will expire in one day, display the messages:
 
