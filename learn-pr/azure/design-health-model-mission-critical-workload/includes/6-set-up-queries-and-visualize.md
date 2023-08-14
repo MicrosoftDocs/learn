@@ -24,7 +24,7 @@ For individual services that calculate the health status, see the following samp
 
 ### Catalog API
 
-The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
+The following sample demonstrates a Catalog API query:
 
 ```kusto
 
@@ -62,7 +62,7 @@ avgProcessingTime
 
 ### Azure Key Vault
 
-The following sample demonstrates an [Azure Key Vault query](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql):
+The following sample demonstrates an Azure Key Vault query:
 
 ```kusto
 let _maxAge = 2d; // Include data only from the last two days
@@ -97,7 +97,7 @@ failureStats
 
 ### Catalog Service health score
 
-Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/feature/reactflowtest/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql):
+Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a Catalog Service health score:
 
 ```kusto
 CatalogServiceHealthStatus()
@@ -110,10 +110,6 @@ CatalogServiceHealthStatus()
 | extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization
 | order by TimeGenerated desc
 ```
-
-> [!TIP]
->
-> See more [query examples](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest/src/infra/monitoring/queries) in the [Azure Mission-Critical Online](https://github.com/Azure/Mission-Critical-Online/tree/feature/reactflowtest) GitHub repository.
 
 ## Set up query-based alerts
 
