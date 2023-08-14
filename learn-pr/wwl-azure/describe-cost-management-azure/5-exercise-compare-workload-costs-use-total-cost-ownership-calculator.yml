@@ -12,4 +12,3 @@ metadata:
 durationInMinutes: 10
 content: |
   [!include[](includes/5-exercise-compare-workload-costs-use-total-cost-ownership-calculator.md)]
-interactive: bash

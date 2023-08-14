@@ -37,4 +37,3 @@ quiz:
     - content: "Migrate to the cloud, but track usage closely using tags to rapidly understand costs."
       isCorrect: false
       explanation: "Incorrect. While you would get the most accurate information with this approach, it would also be the most expensive and would entail a full migration."
-interactive: bash

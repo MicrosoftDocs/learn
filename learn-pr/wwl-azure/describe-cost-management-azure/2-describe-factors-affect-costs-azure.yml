@@ -12,4 +12,3 @@ metadata:
 durationInMinutes: 7
 content: |
   [!include[](includes/2-describe-factors-affect-costs-azure.md)]
-interactive: bash
