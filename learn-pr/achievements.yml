@@ -1459,7 +1459,7 @@ achievements:
   iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
 - uid: learn.train-package-azure-ml-model.badge
   type: badge
-  title: Train and package an Azure machine learning module for deployment to IoT Edge device
+  title: Train and package an Azure machine Learning module for deployment to IoT Edge device
   summary: Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT Edge device. You'll check that your container image was successfully created and stored in the Azure container registry. You'll view the data from the deployed module from the IoT Edge.
   iconUrl: /training/achievements/student-evangelism/train-and-package-an-azure-machine-learning-module-for-deployment-to-iot-edge.svg
 - uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.badge
@@ -2112,6 +2112,11 @@ achievements:
   title: Build low touch IoT solutions by using Azure IoT Central
   summary: You will learn about the Azure IoT Central application platform and the support that it provides to companies with limited budgets and technical resources who are interested in developing, managing, and maintaining IoT solutions.
   iconUrl: /training/achievements/iot-low-touch-iot-central.svg
+- uid: learn.wwl.explore-device-management-device-twins-direct-methods.badge
+  type: badge
+  title: Explore device management with device twins and direct methods
+  summary: This module provides you with experience implementing device management tasks using a combination of direct methods and device twin properties.
+  iconUrl: /training/achievements/device-management-twins-method.svg
 - uid: learn.configure-admin-consent-workflow.badge
   type: badge
   title: Manage consent requests to apps through admin consent workflow in Azure Active Directory

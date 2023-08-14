@@ -16,7 +16,7 @@ prerequisites: |
   - Describe the Azure IoT SDKs for devices and services, and how Visual Studio Code, Azure CLI, and the Azure Cloud Shell can be used to configure and develop components of an IoT solution.
   - Describe the concept of device twins and how devices twins are used.
 summary: |
-  You will learn about device management patterns and the capabilities for device management, including bulk device management, that can be implemented using features of IoT Hub and by developing code.
+  You will learn about device management patterns and the capabilities for device management, including bulk device management that can be implemented using features of IoT Hub and by developing code.
 iconUrl: /training/achievements/iot-hub-devices-apps.svg
 levels:
 - intermediate
@@ -34,7 +34,6 @@ modules:
 - learn.wwl.examine-device-management-concepts-methods
 - learn.wwl.examine-device-management-tools
 - learn.wwl.examine-approaches-to-device-management-at-scale
-- learn.wwl.explore-device-management-device-twins-direct-methods
 - learn.wwl.explore-iot-hub-automatic-device-management
 trophy:
   uid: learn.wwl.manage-iot-devices-by-using-iot-hub-apps.trophy

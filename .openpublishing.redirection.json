@@ -25739,6 +25739,51 @@
       "source_path": "learn-pr/azure/configure-admin-consent-workflow/7-summary.yml",
       "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/index.md",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/1-introduction.yml",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/2-manage-devices-using-device-twins-direct-methods.yml",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/3-knowledge-check.yml",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/4-summary.yml",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/includes/1-introduction.md",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/includes/2-manage-devices-using-device-twins-direct-methods.md",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/includes/3-knowledge-check.md",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/explore-device-management-device-twins-direct-methods/includes/4-summary.md",
+      "redirect_url": "/training/paths/use-iot-hub-apps-manage-iot-devices",
+      "redirect_document_id": false
     }
   ]
 }
