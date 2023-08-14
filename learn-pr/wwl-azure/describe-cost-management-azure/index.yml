@@ -3,11 +3,10 @@ uid: learn.wwl.describe-cost-management-azure
 metadata:
   title: Describe cost management in Azure
   description: "Describe cost management in Azure"
-  ms.date: 02/02/2023
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.service: azure 
 title: Describe cost management in Azure
 summary: This module explores methods to estimate, track, and manage costs in Azure.
 abstract: |

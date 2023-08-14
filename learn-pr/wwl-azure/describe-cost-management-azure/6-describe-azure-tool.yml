@@ -4,13 +4,11 @@ title: Describe the Azure Cost Management tool
 metadata:
   title: Describe the Azure Cost Management tool
   description: "Describe the Azure Cost Management tool"
-  ms.date: 02/02/2023
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/6-describe-azure-tool.md)]
+interactive: bash

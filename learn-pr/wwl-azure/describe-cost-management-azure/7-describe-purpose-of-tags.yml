@@ -4,13 +4,11 @@ title: Describe the purpose of tags
 metadata:
   title: Describe the purpose of tags
   description: "Describe the purpose of tags"
-  ms.date: 02/02/2023
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/7-describe-purpose-of-tags.md)]
+interactive: bash

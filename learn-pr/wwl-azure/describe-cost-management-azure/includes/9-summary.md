@@ -1,8 +1,3 @@
----
-interactive:bash
-zone_pivot_groups:azure-interface
-title:Summary
----
 In this module, you learned about factors that impact costs in Azure and tools to help you both predict potential costs and monitor and control costs.
 
 ## Learning objectives
