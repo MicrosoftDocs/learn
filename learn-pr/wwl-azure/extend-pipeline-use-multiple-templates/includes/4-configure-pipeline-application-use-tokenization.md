@@ -11,7 +11,7 @@ Azure Key Vault, Service Principal and YAML Pipeline. Follow the steps to create
 One way to use Azure Key Vault with YAML pipeline templates is to create a variable group that references the Key Vault. Here are the steps:
 
 1. In Azure DevOps, click on Library under Pipelines.
-2. Create a new variable group, or use existing groups.
+2. Create a new variable group or use existing groups.
 3. Give the variable group a name and description.
 4. Under Variables, add a new variable and set its value to `$(keyVaultSecret)`. Use this variable to retrieve the secret from Azure Key Vault.
 5. Under Link secrets, link the variable group to your Azure Key Vault and grant read access to the service principal that will be used to access the Key Vault.
