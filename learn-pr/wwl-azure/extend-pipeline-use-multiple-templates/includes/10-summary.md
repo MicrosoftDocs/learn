@@ -1,6 +1,6 @@
 In this module, you learned the importance of extending a pipeline to multiple templates and how to do it using Azure DevOps. The module covered fundamental concepts and best practices for creating nested templates, rewriting the main deployment pipeline, configuring the pipeline and the application to use tokenization, removing plain text secrets, restricting agent logging, and identifying and conditionally removing script tasks.
 
-You learned how to describe the benefits and usage of:
+You learned how to:
 
 - Create nested templates.
 - Rewrite the main deployment pipeline.
