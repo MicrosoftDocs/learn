@@ -1,0 +1,118 @@
+### YamlMime:Module
+uid: |
+  learn.introduction-to-azure-iot
+metadata:
+  title: |
+    Introduction to Azure IoT            # Do not edit: title must be "Introduction to (product)"
+  description: "TODO"               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 8/14/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  author: dominicbetts        # GitHub ID of the Microsoft employee either authoring or project-managing this content
+  ms.author: dobett             # Alias     of the Microsoft employee either authoring or project-managing this content
+  ms.topic: module-intro-to-product # Please don't edit, used for our analytics
+  ms.service: iot
+title: |
+  Introduction to Azure IoT
+###########################################################################
+###
+### Summary
+###
+### Length:
+###   - Write 2 sentences.
+###   - Total length should be 20-25 words; up to 35 is acceptable.
+###   - To keep it brief, avoid teaching, omit motivation, and remove "learn", "in this module", and title words.
+###
+### Sentence 1:
+###   Goal: Describe how the module will achieve the 'evaluate' task.
+###   Pattern: "Characterize the types of (problem) that (product) can (solve)".
+###   Example 1: "Characterize the types of (business processes) that (Logic Apps) can (automate)."
+###   Example 2: "Determine the types of (software projects) for which (GitHub) is a (good development platform)."
+###
+### Sentence 2:
+###   Goal: List key features of the product covered here. Omit less-important parts or group low-level parts into one higher-level element.
+###   Pattern: "Describe the (list of covered features) that (perform the key product use-case)."
+###   Example 1: "Describe the function of (connectors, triggers, and actions) and show how you (combine them to create an app)."
+###   Example 2: "Survey GitHub (notifications, branches, commits, and pull requests) that help you (collaborate, build, and deploy software)."
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
+###
+summary: ""
+###########################################################################
+###
+### Learning Objectives
+###
+### Write 2 Learning Objectives, one that fits each pattern shown below.
+###
+### Learning Objective 1:
+###   Goal: Express that 'evaluate' is the terminal learning objective of an "Introduction to (product)" module.
+###   Pattern: "Evaluate whether (product) is right for (general-type-of-problem-solved-by-product)."
+###   Example: "Evaluate whether (Logic Apps) is appropriate to (automate your business processes)."
+###
+### Learning Objective 2:
+###   Goal: Express that the learner will be able to describe how the product works to perform a task.
+###   Pattern: "Describe how (feature(s)) of (product) (solve problem)."
+###   Example: "Describe how (the components) of a (Logic App) work together to (launch your app and implement your business logic)."
+###
+### Notes:
+###   - The YAML element name here is 'abstract' but it must contain your Learning Objectives.
+###   - Do not edit the lead-in sentence ("By the end of this module, you'll be able to:").
+###   - Start each objective with an upper-case letter.
+###   - End each objective with a period.
+###
+### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main
+###
+abstract: |
+  By the end of this module, you'll be able to:
+    - Evaluate whether Azure IoT is appropriate to (general product use case).
+    - Describe how (features) of Azure IoT work to (solve problem).
+###########################################################################
+###
+### Prerequisites
+###   - List the skills learners need to have before starting this module.
+###
+### Guidance summary:
+###   - Do not require any knowledge of the product being covered.
+###   - Even though this is an "Introduction to..." module, you'll likely need at least 2 prerequisites.
+###   - Avoid ambiguity, e.g. say "Ability to write HTML at a novice level" rather than "Familiarity with HTML".
+###   - Be concrete: e.g. say "Familiarity with programming concepts such as loops, conditionals and variables" rather than "Familiarity with programming concepts".
+###   - Do not mention or link to other content that teaches the required prerequisite skills.
+###   - If needed, include software setup requirements with setup links.
+###
+### Detailed guidance:
+###   https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main
+###
+### Example:
+###   Module title: "Introduction to Azure Logic Apps"
+###   Prerequisite 1: "Familiarity with programming concepts such as conditional logic and loops"
+###   Prerequisite 2: "Basic knowledge of REST services and APIs"
+###
+prerequisites: |
+  - TODO prerequisite 1
+  - TODO prerequisite 2
+  - TODO prerequisite 3
+iconUrl: /learn/achievements/introduction-to-azure-iot.svg
+levels:
+  - beginner
+###########################################################################
+###
+roles:
+  - administrator
+  - developer
+  - business-owner
+products:
+- azure-iot
+subjects:
+  - digital-application-innovation
+units:
+- learn.introduction-to-azure-iot.introduction
+- learn.introduction-to-azure-iot.what-is-azure-iot
+- learn.introduction-to-azure-iot.how-azure-iot-works
+- learn.introduction-to-azure-iot.when-to-use-azure-iot
+- learn.introduction-to-azure-iot.knowledge-check
+- learn.introduction-to-azure-iot.summary
+###########################################################################
+###
+### TODO verify your badge
+###
+badge:
+  uid: |
+    learn.introduction-to-azure-iot.badge
