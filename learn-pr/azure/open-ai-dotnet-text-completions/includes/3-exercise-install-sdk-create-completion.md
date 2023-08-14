@@ -102,8 +102,8 @@ Next up we want to create a bare bones .NET Console application and add the Azur
 
     ```csharp
     string openAIEndpoint = "<YOUR ENDPOINT URL VALUE>";
-    readonly string openAIAPIKey = "<YOUR PRIMARY API KEY VALUE>";
-    readonly string openAIDeploymentName = "PetStoreCurieDeploy";
+    string openAIAPIKey = "<YOUR PRIMARY API KEY VALUE>";
+    string openAIDeploymentName = "PetStoreCurieDeploy";
     ```
 
     In the steps above, we named the deployment **PetStoreCurieDeploy**, if you used a different value make sure you use that instead.
