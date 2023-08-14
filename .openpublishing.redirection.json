@@ -1,6 +1,41 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/index.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/1-introduction.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/2-modern-auth-for-your-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/3-create-aad-register-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/4-exercise-create-aad-register-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/5-exercise-deploy-app-with-oidc-auth.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/6-summary.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": true
+    },
+    {
       "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/index.yml",
       "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/",
       "redirect_document_id": true
