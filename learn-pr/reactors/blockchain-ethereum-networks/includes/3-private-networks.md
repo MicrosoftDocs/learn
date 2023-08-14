@@ -31,7 +31,7 @@ Besu runs, maintains, debugs, and monitors nodes in an Ethereum network. The API
 
 Besu is a popular Ethereum client. It's unique it can be used in either public networks or private, consortium-based networks. 
 
-Besu can be deployed in various [ways](https://besu.hyperledger.org/en/stable/HowTo/Get-Started/Installation-Options/Install-Binaries/?azure-portal=true). For more information about configuring and deploying, see the [Hyperledger Besu website](https://besu.hyperledger.org).
+Besu can be deployed in various [ways](https://besu.hyperledger.org/development/public-networks?azure-portal=true). For more information about configuring and deploying, see the [Hyperledger Besu website](https://besu.hyperledger.org).
 
 
 ### R3 Corda
