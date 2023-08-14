@@ -13,7 +13,7 @@ In order to apply a resource lock, you have to have a resource created in Azure.
 1.  Sign in to the Azure portal at https://portal.azure.com
 2.  Select Create a resource.
 3.  Under Categories, select Storage.
-4.  Unders Storage Account, select Create.
+4.  Under Storage Account, select Create.
 5.  On the Basics tab of the Create storage account blade, fill in the following information. Leave the defaults for everything else.
     
     | **Setting**          | **Value**                           |
