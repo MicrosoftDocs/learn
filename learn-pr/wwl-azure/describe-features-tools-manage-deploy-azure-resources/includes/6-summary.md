@@ -4,13 +4,13 @@ In this module, you were introduced to features and tools for managing and deplo
 
 You should now be able to:
 
- -  Describe Azure portal
- -  Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell
- -  Describe the purpose of Azure Arc
- -  Describe Azure Resource Manager (ARM) and Azure ARM templates
+ -  Describe Azure portal.
+ -  Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell.
+ -  Describe the purpose of Azure Arc.
+ -  Describe Azure Resource Manager (ARM), ARM templates, and Bicep.
 
 ## Additional resources
 
 The following resources provide more information on topics in this module or related to this module.
 
- -  [Implement resource management security](/training/paths/implement-resource-mgmt-security/) in Azure is a Microsoft Learn learning path that provides more information on managing Azure resources.
+ -  [Implement resource management security](/learn/paths/implement-resource-mgmt-security/) in Azure is a Microsoft Learn learning path that provides more information on managing Azure resources.

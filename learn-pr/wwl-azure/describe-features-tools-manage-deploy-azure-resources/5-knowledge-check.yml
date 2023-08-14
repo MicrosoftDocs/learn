@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-features-tools-manage-deploy-azure-resources.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 09/23/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/5-knowledge-check.md)]
 quiz:
@@ -30,12 +27,13 @@ quiz:
       explanation: "Incorrect. Azure Arc is best suited to managing on-premises or multi-cloud environments."
   - content: "What two components could you use to implement a “infrastructure as code” deployment?"
     choices:
-    - content: "Azure Blueprints and ARM Templates"
+    - content: "Bicep and ARM Templates"
       isCorrect: true
-      explanation: "Correct. Azure Blueprints applies policies in an automated fashion and ARM Templates allow you to deploy your resource as code. Using the two together helps ensure that you’re deploying consistent, compliant resources."
+      explanation: "Correct. Bicep and ARM Templates allow you to deploy your resource as code."
     - content: "Azure Policy and Azure Arc"
       isCorrect: false
       explanation: "Incorrect. Azure Blueprints and ARM templates are the best choice for implementing an “infrastructure as code deployment”."
     - content: "Azure Monitor and Azure Arc"
       isCorrect: false
       explanation: "Incorrect. Azure Blueprints and ARM templates are the best choice for implementing an “infrastructure as code deployment”."
+interactive: bash

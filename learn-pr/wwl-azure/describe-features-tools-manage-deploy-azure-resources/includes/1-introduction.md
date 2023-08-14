@@ -4,7 +4,7 @@ In this module, you’ll be introduced to features, tools for managing, and depl
 
 After completing this module, you’ll be able to:
 
- -  Describe Azure portal
- -  Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell
- -  Describe the purpose of Azure Arc
- -  Describe Azure Resource Manager (ARM) and Azure ARM templates
+ -  Describe Azure portal.
+ -  Describe Azure Cloud Shell, including Azure CLI and Azure PowerShell.
+ -  Describe the purpose of Azure Arc.
+ -  Describe Azure Resource Manager (ARM), ARM templates, and Bicep.
