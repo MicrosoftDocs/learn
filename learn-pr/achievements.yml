@@ -1350,7 +1350,7 @@ achievements:
 - uid: learn.wwl.deploy-sap-certified-offerings.badge
   type: badge
   title: Deploy SAP certified offerings on Azure
-  summary: In this module, you explore the platform compliance criteria that are stipulated by SAP for deploying SAP solutions in Azure. In addition, you will look at the options for deploying SAP in Azure.
+  summary: In this module, you explore the platform compliance criteria that is stipulated by SAP for deploying SAP solutions in Azure. In addition, you will look at the options for deploying SAP in Azure.
   iconUrl: /training/achievements/deploy-sap-certified-offerings-for-azure.svg
 - uid: learn.wwl.introduction-azure-sap-workloads.badge
   type: badge
@@ -1459,7 +1459,7 @@ achievements:
   iconUrl: /training/achievements/serve-the-data-from-azure-synapse-serverless-sql-pool.svg
 - uid: learn.train-package-azure-ml-model.badge
   type: badge
-  title: Train and package an Azure Machine Learning module for deployment to IoT Edge device
+  title: Train and package an Azure machine Learning module for deployment to IoT Edge device
   summary: Deploy a trained machine learning module to the edge using a container. The machine learning module you create will be deployed to an IoT Edge device. You'll check that your container image was successfully created and stored in the Azure container registry. You'll view the data from the deployed module from the IoT Edge.
   iconUrl: /training/achievements/student-evangelism/train-and-package-an-azure-machine-learning-module-for-deployment-to-iot-edge.svg
 - uid: learn.azure.advanced-modeling-patterns-azure-cosmos-db.badge
