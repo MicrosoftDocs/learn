@@ -8,7 +8,6 @@ metadata:
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
 durationInMinutes: 3
 content: |
   [!include[](includes/6-describe-purpose-of-service-trust-portal.md)]
