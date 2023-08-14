@@ -6,5 +6,5 @@ After completing this module, you’ll be able to:
 
  -  Describe factors that can affect costs in Azure.
  -  Compare the Pricing calculator and Total Cost of Ownership (TCO) calculator.
- -  Describe Azure Cost Management Tool.
+ -  Describe the Microsoft Cost Management Tool.
  -  Describe the purpose of tags.
