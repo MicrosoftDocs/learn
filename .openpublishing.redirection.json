@@ -1,6 +1,11 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.secure-app-with-oidc-and-azure-ad.badge.yml",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/index.md",
       "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
       "redirect_document_id": false
