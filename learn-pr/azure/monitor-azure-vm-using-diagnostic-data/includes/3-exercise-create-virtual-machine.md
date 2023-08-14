@@ -2,7 +2,7 @@ When you run your virtual machine (VM) on Azure, you can view basic metrics with
 
 You want to move to a new version of Ubuntu, so you deploy a new VM. You need to monitor only the basic metrics. So you're going to create only a VM and a storage account.
 
-In this exercise, you'll deploy a Linux VM and enable boot diagnostics. After the VM is created, you'll quickly set up a graph to view the CPU usage and inbound traffic. You'll also check that the boot diagnostics are working correctly.
+In this exercise, you deploy a Linux VM and enable boot diagnostics. After the VM is created, you quickly set up a graph to view the CPU usage and inbound traffic. You also check that the boot diagnostics are working correctly.
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 

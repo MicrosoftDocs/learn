@@ -17,13 +17,13 @@ quiz:
   questions:
   - content: "A supplier management program gives me the ability to"
     choices:
-    - content: "Check how popular the application is"
+    - content: "Check how popular the application is."
       isCorrect: false
       explanation: "The supplier management program is geared more towards security-related areas."
-    - content: "Understand how long they take to fix a hypothetical security issue"
+    - content: "Understand how long they take to fix a hypothetical security issue."
       isCorrect: true
       explanation: "A supplier management program is designed to show you how many days it takes for the supplier to fix a security issue."
-    - content: "How much I'll have to pay"
+    - content: "Find out how much I have to pay."
       isCorrect: false
       explanation: "The supplier management program helps you identify security promises and existing security issues with the supplier, not necessarily financial details."
   - content: "What can you find out by asking questions from the Operations category?"
@@ -31,7 +31,7 @@ quiz:
     - content: "How often machines are patched."
       isCorrect: true
       explanation: "Patches and security updates are part of operations."
-    - content: "The firewall rules in place."
+    - content: "The firewall rules that are in place."
       isCorrect: false
       explanation: "Firewall appliances and rules are part of the Network category, not operations."
     - content: "How long to keep financial documents for."

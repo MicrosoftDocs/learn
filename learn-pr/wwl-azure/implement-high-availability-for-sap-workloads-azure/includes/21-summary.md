@@ -1,5 +1,3 @@
-
-
 Now you have:
 
 - Explored high availability and disaster recovery support of Azure for SAP workloads.
@@ -45,11 +43,11 @@ Now you have:
 - [Service Level Agreement Estimator sample app](https://github.com/mspnp/samples/tree/master/Reliability/SLAEstimator)
 - [SLA for Traffic Manager](https://azure.microsoft.com/support/legal/sla/traffic-manager/v1_0/)
 - [Traffic Manager endpoint monitoring](/azure/traffic-manager/traffic-manager-monitoring)
-- [SAP Note \#1928533](https://launchpad.support.sap.com/#/notes/1928533)
+- [SAP Note \#1928533](https://aka.ms/az-120-sapnote-1928533)
 - [SAP Note \#2513384](https://launchpad.support.sap.com/#/notes/2513384)
 - [SAP Note \#2694118](https://launchpad.support.sap.com/#/notes/2694118)
 - [SAP Note \#965908](https://launchpad.support.sap.com/#/notes/965908)
 - [SAP Note \#1772688](https://launchpad.support.sap.com/#/notes/1772688)
 - [SAP Note \#2039619](https://launchpad.support.sap.com/#/notes/2039619)
-- [SAP Note \#500235](https://launchpad.support.sap.com/#/notes/500235)
+- [SAP Note \#500235](https://aka.ms/az-120-sapnote-500235)
 - [SAP Note \#1100926](https://launchpad.support.sap.com/#/notes/1100926)

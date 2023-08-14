@@ -29,10 +29,6 @@ modules:
 - learn-wwl.microsoft-cloud-adoption-framework-for-azure-v1-1
 - learn.azure-well-architected-introduction
 - learn.azure.secure-access-azure-identity-services
-- learn.azure.azure-compute-fundamentals
 - learn.wwl.discover-azure-message-queue
-- learn.azure.azure-networking-fundamentals
-- learn.azure.azure-storage-fundamentals
-- learn.azure.azure-database-fundamentals
 trophy:
   uid: learn.wwl.microsoft-azure-architect-design-prerequisites.trophy

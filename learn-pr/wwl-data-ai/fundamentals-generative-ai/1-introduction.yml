@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.fundamentals-generative-ai.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction to generative AI applications with examples of what generative AI can do."
+  ms.date: 6/27/2023
+  author: sherzyang
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: azure
+  ms.subservice: openai
+durationInMinutes: 1
+content: |
+  [!include[](includes/1-introduction.md)]
