@@ -4,13 +4,11 @@ title: Describe the purpose of Azure Policy
 metadata:
   title: Describe the purpose of Azure Policy
   description: "Describe the purpose of Azure Policy"
-  ms.date: 10/14/2022
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/3-describe-purpose-of-azure-policy.md)]
+interactive: bash

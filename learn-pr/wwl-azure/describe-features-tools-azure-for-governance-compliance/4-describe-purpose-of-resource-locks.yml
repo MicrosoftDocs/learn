@@ -4,13 +4,11 @@ title: Describe the purpose of resource locks
 metadata:
   title: Describe the purpose of resource locks
   description: "Describe the purpose of resource locks"
-  ms.date: 10/14/2022
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/4-describe-purpose-of-resource-locks.md)]
+interactive: bash

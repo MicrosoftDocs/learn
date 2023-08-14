@@ -1,17 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-features-tools-azure-for-governance-compliance.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 10/14/2022
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/7-knowledge-check.md)]
 quiz:
@@ -39,3 +36,4 @@ quiz:
     - content: "Azure Resource Monitor"
       isCorrect: false
       explanation: "Incorrect. Azure Policy is the best way to ensure that resource are created based on a set policy or group of policies."
+interactive: bash
