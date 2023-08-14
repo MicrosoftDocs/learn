@@ -86,9 +86,9 @@ In this exercise, you'll configure an application to authenticate users against 
 
 Now let's configure the app registration to authorize the URL for the web service.
 
-1. In the [Azure portal](https://portal.azure.com?azure-portal=true), verify that you're signed in to **Learn Module AAD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module AAD Tenant** directory that you created earlier. Sign in if you're prompted.
+1. In the [Azure portal](https://portal.azure.com?azure-portal=true), verify that you're signed in to **Learn Module Azure AD Tenant**. If not, select your user name in the upper-right corner, select **Switch directory**, and then select the **Learn Module Azure AD Tenant** directory that you created earlier. Sign in if you're prompted.
 
-1. From the **Home** page or the resource menu, select **Azure Active Directory**. The **Learn Module AAD Tenant** Azure Active Directory Overview pane appears.
+1. From the **Home** page or the resource menu, select **Azure Active Directory**. The **Learn Module Azure AD Tenant** Azure Active Directory Overview pane appears.
 
 1. In the menu, under **Manage**, select **App registrations**. The **App registrations pane appears.
 
@@ -116,7 +116,7 @@ Now let's configure the app registration to authorize the URL for the web servic
 
     :::image type="content" source="../media/5-request-consent.png" alt-text="Screenshot of the dialog box that requests consent.":::
 
-1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating that you've been successfully logged in with the identity in the Learn Module AAD Tenant directory.
+1. Select **Accept**. The web app then appears. The title bar includes your authenticated username, indicating that you've been successfully logged in with the identity in the Learn Module Azure AD Tenant directory.
 
     :::image type="content" source="../media/5-webapp.png" alt-text="Screenshot of the web app with your credentials.":::
 
