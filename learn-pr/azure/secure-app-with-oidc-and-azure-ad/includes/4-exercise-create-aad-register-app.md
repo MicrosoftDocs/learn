@@ -10,7 +10,7 @@ To start, you'll use the Azure portal to create a new Azure AD tenant.
 1. From the resource menu or from the **Home** page, select **Create a resource**. The **Create a resource** page appears.
 1. In the Create a Resource menu, select **Identity**, and then, in the *Search services and marketplace* search box, search for and select **Azure Active Directory**. The **Azure Active Directory** pane appears.
 1. Select **Create**. The **Create tenant** pane appears.
-1. On the **Basics** tab, enter the following values for each setting.
+1. On the **Basics** tab, enter the following values for each setting:
 
     | Setting | Value |
     | --- | --- |
@@ -18,18 +18,18 @@ To start, you'll use the Azure portal to create a new Azure AD tenant.
     | Select a tenant type | Azure Active Directory |
 
 1. Select **Next : Configuration**.
-1. On the **Configuration** tab, enter the following values for each setting.
+1. On the **Configuration** tab, enter the following values for each setting:
 
     | Setting | Value |
     | --- | --- |
     | **Directory details** |
-    | Organization name | This is a friendly name for your tenant. For this exercise, enter *Learn Module AAD Tenant*. |
+    | Organization name | This is a friendly name for your tenant. For this exercise, enter *Learn Module Azure AD Tenant*. |
     | Initial domain name | Enter a unique name for your tenant. |
     | Country or region | Select your preferred region. |
 
-1. Select **Review + create**, and after validation passes, select **Create**. The **Help us prove you're not a robot** pane appears.
-1. Address the query, and select **Submit**.  
-1. When tenant creation is complete, select the **Learn Module AAD Tenant** link. The **Overview** page  for your  **Learn Module AAD Tenant** Azure Active Directory appears.
+1. Select **Next: Review + create**, and after validation passes, select **Create**. The **Help us prove you're not a robot** pane appears.
+1. Address the query and select **Submit**.  
+1. When tenant creation is complete, select the **Learn Module Azure AD Tenant** link. The **Overview** page for your  **Learn Module Azure AD Tenant** Azure Active Directory appears.
 
 ## Register an application
 
@@ -43,11 +43,11 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
     | --- | --- |
     | Name | WebApp-OpenIDConnect-DotNet |
     | **Supported account types** |
-    | Who can use this application or access this API? | Accounts in this organizational directory only (Learn Module AAD Tenant only - Single tenant) |
+    | Who can use this application or access this API? | Accounts in this organizational directory only (Learn Module Azure AD Tenant only - Single tenant) |
     | **Redirect URI (optional)** |
     | Web | `https://localhost:5000/signin-oidc` |
 
-    ![Registering an application.](../media/4-register-application.png)
+    ![Screenshot of the Register an application flow.](../media/4-register-application.png)
 
    The URL `https://localhost:5000/signin-oidc` is a placeholder that you'll change after you've deployed your application.
 
@@ -55,6 +55,6 @@ Next, let's create a new registration in the Azure AD tenant for the web app. By
 
 1. Hover over the **Application (client) ID** value and copy to a secure location. Do the same for **Directory (tenant) ID** value. Save these values for later. You'll need these to complete the configuration file in the next exercise.
 
-    ![Recording the application (client) ID.](../media/4-application-client-id.png)
+    ![Screenshot of the Application ID and Directory ID in the Azure portal.](../media/4-application-client-id.png)
 
-You've now configured the Azure AD tenant, and performed the initial application registration to enable your application to communicate with your Azure AD tenant.
+You've now configured the Azure AD tenant and performed the initial application registration to enable your application to communicate with your Azure AD tenant.
