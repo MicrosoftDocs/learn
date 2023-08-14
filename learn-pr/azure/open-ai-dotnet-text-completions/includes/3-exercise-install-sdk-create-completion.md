@@ -182,8 +182,8 @@ Ok, our proof-of-concept application is now successfully classifying product rev
 
     ```csharp
     string promptForTranslation = $"""
-    Translate the following sentence into Spanish: {exampleReview}
-    """;
+        Translate the following sentence into Spanish: {exampleReview}
+        """;
     ```
 
 1. Then we need to create a `CompletionsOptions` object, call the same `GetCompletionsAsync` function as before, and then read the result.
