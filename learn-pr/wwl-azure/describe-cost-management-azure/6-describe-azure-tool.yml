@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-cost-management-azure.describe-azure-tool
-title: Describe the Azure Cost Management tool
+title: Describe the Microsoft Cost Management tool
 metadata:
-  title: Describe the Azure Cost Management tool
-  description: "Describe the Azure Cost Management tool"
+  title: Describe the Microsoft Cost Management tool
+  description: "Describe the Microsoft Cost Management tool"
   ms.date: 08/14/2023
   author: wwlpublish
   ms.author: robbarefoot
@@ -12,4 +12,3 @@ metadata:
 durationInMinutes: 4
 content: |
   [!include[](includes/6-describe-azure-tool.md)]
-interactive: bash
