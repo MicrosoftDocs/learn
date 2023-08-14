@@ -14,8 +14,11 @@ When classifying a product review, we only want the model to tell us if the revi
 
     ```csharp
     string prompt = $"""
-    Product reviews are a key component in how our online business decides whether to include stock products in the future. You will help us make those decisions by classifying a product review as positive, neutral, or negative.
-    """;
+        Product reviews are a key component in how our online business decides 
+        whether to include stock products in the future. You will help us make 
+        those decisions by classifying a product review as positive, neutral, 
+        or negative.
+        """;
     ```
 
     _We haven't included the `exampleReview` variable yet, we'll still build upon this prompt in the next section._
