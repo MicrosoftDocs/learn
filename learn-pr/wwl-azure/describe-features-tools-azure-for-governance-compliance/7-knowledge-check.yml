@@ -37,4 +37,3 @@ quiz:
     - content: "Azure resource locks"
       isCorrect: true
       explanation: "Correct. A resource lock can be used to prevent a resource from accidentally being deleted."
-interactive: bash

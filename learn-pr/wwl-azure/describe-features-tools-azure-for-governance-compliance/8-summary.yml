@@ -12,4 +12,3 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/8-summary.md)]
-interactive: bash
