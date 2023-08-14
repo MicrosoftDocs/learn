@@ -20,7 +20,7 @@ The following video provides an overview of how you can use different Azure tool
 
 ## Infrastructure as code
 
-Infrastructure as code is a concept where you manage your infrastructure as lines of code. At an introductory level, it's things like using Azure Cloud Shell, Azure PowerShell, or the Azure CLI to manage and configure your resources. As you get more comfortable in the cloud, you can use the infrastrcture as code concept to manage entire deployments using repeatable templates and configurations. ARM templates and Bicep are two examples of using infrastrcture as code with the Azure Resource Manager to maintain your environment.
+Infrastructure as code is a concept where you manage your infrastructure as lines of code. At an introductory level, it's things like using Azure Cloud Shell, Azure PowerShell, or the Azure CLI to manage and configure your resources. As you get more comfortable in the cloud, you can use the infrastructure as code concept to manage entire deployments using repeatable templates and configurations. ARM templates and Bicep are two examples of using infrastructure as code with the Azure Resource Manager to maintain your environment.
 
 ### ARM templates
 
@@ -40,7 +40,7 @@ ARM templates provide many benefits when planning for deploying Azure resources.
 
 ### Bicep
 
-Bicep is a language that uses declarative syntax to deploy Azure resources. Working with Azure Resource Manager, a Bicep file defines the infrastructure and configuration you want to deploy. Then, ARM deploys that environment based on your Bicep file. While similar to an ARM template, which is written in JSON, Bicep files tend to use a simpler, more concise style.
+Bicep is a language that uses declarative syntax to deploy Azure resources. A Bicep file defines the infrastructure and configuration. Then, ARM deploys that environment based on your Bicep file. While similar to an ARM template, which is written in JSON, Bicep files tend to use a simpler, more concise style.
 
 Some benefits of Bicep are:
 
