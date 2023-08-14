@@ -1,5 +1,3 @@
-
-
 When you create an object in code, you can initialize it with any data the object will need to do its job. The way you initialize an object is to define one or more constructors in the class, passing data into it as parameters. It is interesting to note that when you create an object, if you have not explicitly put a constructor in your code, the Common Language Runtime (CLR) automatically calls an implicit constructor!
 
 The important thing to remember here is that constructors are methods used to initialize your object with any initial values required by your object. Although most objects have constructors, they aren't required to create an object. If you don't defined a constructor in your class, C# calls an implicit for its own housekeeping purposes. Typically, however, you define a constructor for the objects you create.
