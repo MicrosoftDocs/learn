@@ -196,7 +196,6 @@ Ok, our proof-of-concept application is now successfully classifying product rev
         FrequencyPenalty=0.0f,
         PresencePenalty = 0.0f,
         NucleusSamplingFactor = 1
-    
     };
 
     Completions translatedResponse = await openAIClient.GetCompletionsAsync(openAIDeploymentName, translationCompletionOptions);
