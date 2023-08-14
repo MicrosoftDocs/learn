@@ -12,4 +12,3 @@ metadata:
 durationInMinutes: 2
 content: |
   [!include[](includes/3-describe-azure-service-health.md)]
-interactive: bash
