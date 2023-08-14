@@ -1,4 +1,4 @@
-Microsoft offers previews of Azure features for evaluation purposes. With *Azure Preview Features*, you can test beta and other pre-release features, products, services, software, and regions.
+Microsoft offers previews of Azure features for evaluation purposes. With *Azure Preview Features*, you can try out beta and other pre-release features and services.
 
 Some of the common areas you will see previews for include:
 
@@ -7,40 +7,29 @@ Some of the common areas you will see previews for include:
 - New or enhanced integration with other platforms
 - New APIs for services
 
-Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Also, some previews are not covered by customer support.
+Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Some previews are not covered by customer support.
 
 Once a feature has been evaluated and tested successfully, it might be released to customers as part of Azure's default product set. This release is referred to as **General Availability** (GA).
 
-### Feature preview categories
+## Find preview features
 
-There are two types of previews available:
+You can discover preview features through the [preview features page](https://azure.microsoft.com/services/preview/?azure-portal=true). This page lists the preview features that are available for evaluation. To access a preview feature, select its entry on this page and learn more about how to evaluate it. You can also use the **RSS Feed** button on this page to subscribe to notifications and stay informed.
 
-- **Private Preview**. An Azure feature marked "private preview" is available to *specific* Azure customers for evaluation purposes. This is typically by invite only, and issued directly by the product team responsible for the feature or service.
-- **Public Preview**. An Azure feature marked "public preview" is available to *all* Azure customers for evaluation purposes. These previews can be turned on through the preview features page as detailed below.
+You can also find Azure preview features in the portal by searching for *Preview*, then selecting **Preview features**.
 
-### Finding preview features
+## Azure portal preview
 
-You can learn about preview features through the [preview features page](https://azure.microsoft.com/services/preview/?azure-portal=true). This page lists the preview features that are available for evaluation. To access a preview feature, select its entry on this page and learn more about how to evaluate it. You can also use the **RSS Feed** button on this page to subscribe to notifications and stay informed.
+You can also try out upcoming functionality for the portal as a whole. To do so, use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com?azure-portal=true) (notice the **preview** prefix).
 
-You can also find Azure preview features in the portal as follows:
-
-- Sign in to Azure portal.
-- Enter *Preview* into the search box, then select **Preview features**.
-- A list of available preview features is displayed.
-
-## Azure portal preview features
-
-Another preview area you can try is the next version of the Azure portal. Use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com?azure-portal=true) (notice the **preview** prefix).
-
-Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you are in the preview portal.
+Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you're using the preview portal.
 
 ## Provide feedback on preview features
 
-If you use the preview portal or a preview feature, Microsoft wants to hear about your experience. You can provide feedback by using the **Feedback** icon in the portal.
+If you use the preview portal or a preview feature, Microsoft wants to hear about your experience. You can provide feedback by using the **Feedback** icon that you learned about earlier in this module.
 
-## Get notified about GA releases
+## General availability feature releases
 
-You can use the [Azure Updates](https://azure.microsoft.com/updates?azure-portal=true) page to get a list of recent updates you can periodically check to see what's changed in Azure. This page provides additional information and features, including:
+The [Azure Updates](https://azure.microsoft.com/updates?azure-portal=true) page lists recent updates in Azure. On this page, you can:
 
 - Filter selections for which updates are in general availability, preview, or development
 - Browse updates by product category or update type, by using the provided dropdown lists

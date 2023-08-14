@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
 # interactive: azure-portal
-durationInMinutes: 5
+durationInMinutes: 4
 content: |
   [!include[](includes/8-preview-features.md)]
