@@ -9,6 +9,7 @@ metadata:
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   zone_pivot_groups: azure-interface
+durationInMinutes: 2
 content: |
   [!include[](includes/6-summary.md)]
 interactive: bash

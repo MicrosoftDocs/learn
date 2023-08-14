@@ -9,6 +9,7 @@ metadata:
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
   zone_pivot_groups: azure-interface
+durationInMinutes: 3
 content: |
   [!include[](includes/4-describe-azure-monitor.md)]
 interactive: bash
