@@ -9,6 +9,6 @@ metadata:
   ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 1
 content: |
   [!include[](includes/1-introduction.md)]
