@@ -35,7 +35,7 @@ quiz:
     - content: "SubscriptionName"
       isCorrect: false
       explanation: "Incorrect. You do not need to specify the Azure subscription name."
-  - content: "You plan to use the language detection functionality of the Language cognitive service in a container. Which container image should you deploy?"
+  - content: "You plan to use the language detection functionality of Azure AI Language in a container. Which container image should you deploy?"
     choices:
     - content: "mcr.microsoft.com/azure-cognitive-services/textanalytics"
       isCorrect: false
