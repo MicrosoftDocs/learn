@@ -2,7 +2,7 @@ You're confident that the software defined networking (SDN) distributed firewall
 
 ## Implement Datacenter Firewall
 
-The basic procedure for implementing a Datacenter Firewall policy consists of the following steps. You can do these steps by using PowerShell, Windows Admin Center, or Microsoft System Center Virtual Machine Manager (VMM).
+The basic procedure for implementing a Datacenter Firewall policy consists of the following steps. You can do these steps by using PowerShell, Windows Admin Center, or System Center Virtual Machine Manager (VMM).
 
 1. Create an Access Control List (ACL) object.
 1. Within the ACL, define one or more inbound and outbound rules that allow or deny East-West and North-South network traffic based on any of the following criteria:
@@ -10,12 +10,12 @@ The basic procedure for implementing a Datacenter Firewall policy consists of th
    - **Protocol** representing the layer 4 protocol and set to **TCP**, **UDP**, or **ALL**. **ALL** includes  Internet Control Message Protocol (ICMP) in addition to TCP and UDP.
    - **Source Address Prefix** representing the IP address prefix of the origin of an incoming or outgoing network packet. An asterisk `*` is a wild card denoting all IP addresses.
    - **Source Port Range** representing one or more port numbers from which an incoming or outgoing network packet originates. An asterisk `*` is a wild card denoting all port numbers.
-   - **Destination Address Prefix** representing the IP address prefix of the destination of an incoming or outgoing network packet. An asterisk `*` is a wild card denoting all IP addresses.
+   - **Destination Address Prefix** representing the IP address prefix of the destination of an incoming or outgoing network packet. An asterisk `*` is a wild card denoting all IP address prefixes.
    - **Destination Port Range** representing one or more port numbers that an incoming or outgoing network packet targets. An asterisk `*` is a wild card denoting all port numbers.
 
-1. For each rule, also specify the following settings:
+1. For each rule, specify the following settings:
 
-   - **Action** representing the outcome or the rule in case a match is found and set to either **Allow** or **Deny**.
+   - **Action** representing the outcome or the rule in case a match is found, and set to either **Allow** or **Deny**.
    - **Priority** representing the precedence of the rule in relation to other rules within the same ACL. Each rule within the same ACL must have a unique priority that can be set to any value between 100 and 65000. A lower numerical value designates a higher priority.
 
 1. Optionally, enable logging for individual firewall rules.
@@ -26,16 +26,16 @@ The basic procedure for implementing a Datacenter Firewall policy consists of th
    - A logical network subnet.
    - A network interface of a virtual machine (VM) connected to a virtual or logical network subnet.
 
-> [!NOTE]
-> Applying ACLs to virtual or logical network subnets simplifies administration, but sometimes you might want to make the constraints more granular. If so, you can assign an ACL to an individual VM network interface. In case of multiple ACLs between the source and destination, the resulting constraints depend on the network traffic direction. For inbound traffic, the subnet ACL applies before the one assigned to the network interface ACL. For outbound traffic, that sequence is reversed.
+   >[!NOTE]
+   >Applying ACLs to virtual or logical network subnets simplifies administration, but sometimes you might want to make the constraints more granular. If so, you can assign an ACL to an individual VM network interface.
+   >
+   >In case of multiple ACLs between the source and destination, the resulting constraints depend on the network traffic direction. For inbound traffic, the subnet ACL applies before the one assigned to the network interface ACL. For outbound traffic, that sequence is reversed.
 
 ## Evaluate Datacenter Firewall functionality
 
-Without any custom ACL rules applied, the default behavior of a network interface is to allow all outbound traffic but block all inbound traffic. To evaluate Datacenter Firewall functionality, create an ACL containing a rule that allows all inbound network traffic.
+Without any custom ACL rules applied, the default behavior of a network interface is to allow all outbound traffic but block all inbound traffic. To evaluate Datacenter Firewall functionality, first create an ACL with a rule that allows all inbound network traffic targeting the scope the ACL applies to. Then, identify and restrict certain ingress traffic. Finally, apply the ACL to the target virtual network subnet.
 
-- **AllowAllInbound**. Allows all ingress traffic that targets the scope the ACL applies to.
-
-1. Apply the following settings to create the rule:
+1. After you create the ACL, add an **allow-all** rule with the following settings that allow all ingress traffic:
 
    |Source address prefix|Destination address prefix|Protocol|Source port|Destination port|Type|Action|Priority|
    |--|--|--|--|--|--|--|--|
@@ -47,7 +47,7 @@ Without any custom ACL rules applied, the default behavior of a network interfac
 
 1. After you allow all inbound traffic, identify the types of traffic you want to block.
 
-   For example, you might want to restrict connectivity via Windows Remote Management (WinRM) across subnets. This type of restriction limits the impact of an exploit that moves laterally after a compromise of a single VM. You still permit WinRM connectivity within the same subnet.
+   For example, you might want to restrict connectivity via Windows Remote Management (WinRM) across subnets. This type of restriction can limit the impact of an exploit that moves laterally after a compromise of a single VM. You still permit WinRM connectivity within the same subnet.
 
    Apply the following settings to create the new rule, based on the assumption that the originating subnet has the IP address range **192.168.0.0/24**.
 
@@ -64,4 +64,4 @@ Without any custom ACL rules applied, the default behavior of a network interfac
 
    :::image type="content" source="../media/3-azure-stack-hci-windows-admin-center-assign-acl-subnet.png" alt-text="Screenshot of the Windows Admin Center virtual networks pane with the virtual subnet ACL assignment being created." lightbox="../media/3-azure-stack-hci-windows-admin-center-assign-acl-subnet.png":::
 
-1. After you complete your evaluation, remove the ACL assignments from the target scope to revert to the default filtering behavior.
+1. After you complete your evaluation, remove the ACL assignment from the target scope to revert to the default filtering behavior.

@@ -15,10 +15,9 @@ summary: Learn how Azure Stack HCI software defined networking (SDN) helps imple
 abstract: |
   - Describe and implement Datacenter Firewall and Software Load Balancer on Azure Stack HCI.
 prerequisites: |
-  - Good understanding of Windows networking technologies and their implementation.
-  - General familiarity with software defined networking (SDN) concepts.
-  - Experience implementing Azure Stack HCI.
-  - Familiarity with SDN on Azure Stack HCI.
+  - Understanding of Windows networking technologies and their implementation.
+  - Familiarity with software defined networking (SDN) concepts.
+  - Experience implementing Azure Stack HCI, and familiarity with SDN on Azure Stack HCI.
 iconUrl: /training/achievements/generic-badge.svg
 levels:
   - advanced

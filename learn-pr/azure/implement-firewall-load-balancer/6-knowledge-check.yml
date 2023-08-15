@@ -36,7 +36,7 @@ quiz:
     - content: "Network subnet"
       isCorrect: true
       explanation: "Correct. You can assign an ACL to a logical network subnet or a virtual network subnet."
-  - content: "What's the most granular level to which you can assign Datacenter Firewall logging for auditing?"
+  - content: "What's the most granular level to which you can assign Datacenter Firewall logging?"
     choices:
     - content: "An ACL rule"
       isCorrect: true
@@ -47,11 +47,11 @@ quiz:
     - content: "A network subnet"
       isCorrect: false
       explanation: "Incorrect. You can enable logging on individual ACL rules, not a network subnet."
-  - content: "Which mechanism does Network Controller use to advertise virtual IPs (VIPs) assigned to Software Load Balancing multiplexer VMs to datacenter routers?"
+  - content: "Which mechanism does Network Controller use to advertise virtual IPs (VIPs) assigned to Software Load Balancing Multiplexer VMs to datacenter routers?"
     choices:
     - content: "Border Gateway Protocol"
       isCorrect: true
-      explanation: "Correct. Network Controller assigns VIPs to Software Load Balancing multiplexer VMs, which use Border Gateway Protocol to advertise VIPs to datacenter routers as individual /32 routes."
+      explanation: "Correct. Network Controller assigns VIPs to Software Load Balancing Multiplexer VMs, which use Border Gateway Protocol to advertise VIPs to datacenter routers as individual /32 routes."
     - content: "Open Shortest Path First"
       isCorrect: false
       explanation: "Incorrect. Azure Stack HCI software defined networking doesn't rely on Open Shortest Path First."
@@ -60,15 +60,15 @@ quiz:
       explanation: "Incorrect. Azure Stack HCI software defined networking doesn't rely on Routing Information Protocol."
   - content: "Which layer of the Open Systems Interconnection (OSI) model does software defined networking Software Load Balancing operate on?"
     choices:
-    - content: "Three"
+    - content: "Layer 3"
       isCorrect: false
       explanation: "Incorrect. Software defined networking Software Load Balancing doesn't provide Layer 3 load balancing."
-    - content: "Four"
+    - content: "Layer 4"
       isCorrect: true
       explanation: "Correct. Software defined networking Software Load Balancing provides Layer 4 load balancing for North-South and East-West TCP/UDP traffic."
-    - content: "Seven"
+    - content: "Layer 7"
       isCorrect: false
-      explanation: "Incorrect. Software defined networking Software Load Balancing doesn’t provide Layer 7 load balancing."
+      explanation: "Incorrect. Software defined networking Software Load Balancing doesn't provide Layer 7 load balancing."
   - content: "Which of the following tasks doesn't require creating a health probe object?"
     choices:
     - content: "Implementing inbound network address translation (NAT)"
