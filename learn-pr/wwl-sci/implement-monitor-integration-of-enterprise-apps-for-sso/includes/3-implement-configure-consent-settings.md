@@ -5,7 +5,7 @@ Before an application can access the organization's data, a user must grant the 
 By allowing users to grant apps access to data, users can easily acquire useful applications and be productive. However, in some situations this configuration can represent a risk if it isn't carefully monitored and controlled.
 
 > [!IMPORTANT]
-> To reduce the risk of malicious applications attempting to trick users into granting them access to your organization's data, it is recommended that you allow user consent only for applications that have been published by a [verified publisher](/content/dam/wwl/learn-paths/sc-300/azure/active-directory/develop/publisher-verification-overview).
+> To reduce the risk of malicious applications attempting to trick users into granting them access to your organization's data, it is recommended that you allow user consent only for applications that have been published by a verified publisher.
 
 ## User consent settings
 
