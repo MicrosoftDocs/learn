@@ -4,11 +4,11 @@ title: Exercise configure Privileged Identity Management for Azure Active Direct
 metadata:
   title: Exercise configure Privileged Identity Management for Azure Active Directory roles
   description: "Exercise configure Privileged Identity Management for Azure Active Directory roles"
-  ms.date: 02/07/2023
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

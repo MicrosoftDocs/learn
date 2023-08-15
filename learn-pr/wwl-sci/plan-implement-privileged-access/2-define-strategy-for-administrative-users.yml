@@ -4,11 +4,11 @@ title: Define a privileged access strategy for administrative users
 metadata:
   title: Define a privileged access strategy for administrative users
   description: "Define a privileged access strategy for administrative users"
-  ms.date: 02/07/2023
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

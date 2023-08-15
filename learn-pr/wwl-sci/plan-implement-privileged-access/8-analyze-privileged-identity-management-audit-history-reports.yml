@@ -4,11 +4,11 @@ title: Analyze Privileged Identity Management audit history and reports
 metadata:
   title: Analyze Privileged Identity Management audit history and reports
   description: "Analyze Privileged Identity Management audit history and reports"
-  ms.date: 02/07/2023
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 8
