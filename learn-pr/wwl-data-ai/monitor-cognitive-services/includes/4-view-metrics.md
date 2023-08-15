@@ -6,7 +6,7 @@ You can view metrics for an individual resource in the Azure portal by selecting
 
 For example, the following image shows the **Metrics** page for an Azure AI Services resource, showing the count of total calls to the service over a period of time.
 
-![Metrics for an Azure AI Services resource.](../media/metric.png)
+![Screenshot of metrics for an Azure AI Services resource.](../media/metric.png)
 
 You can add multiple metrics to a chart and choose appropriate aggregations and chart types. When you're satisfied with chart, you can *share* it by exporting it to Excel or copying a link to it, and you can *clone* it to create a duplicate chart in the **Metrics** page - potentially as a starting point for a new chart that shows the same metrics in a different way.
 

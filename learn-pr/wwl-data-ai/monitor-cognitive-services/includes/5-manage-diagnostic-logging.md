@@ -19,13 +19,13 @@ With your log destinations in place, you can configure diagnostic settings for y
 
 In the following example, the diagnostic settings store all available log data and metrics in Azure Log Analytics and Azure Storage.
 
-![Diagnostic settings for an Azure AI Services resource](../media/diagnostic-settings.png)
+![Screenshot of diagnostic settings for an Azure AI Services resource.](../media/diagnostic-settings.png)
 
 ## View log data in Azure Log Analytics
 
 It can take an hour or more before diagnostic data starts flowing to the destinations, but when the data has been captured, you can view it in your Azure log Analytics resource by running queries, as shown in this example.
 
-![An Azure log Analytics query returning diagnostic data logged for an Azure AI Services resource](../media/azure-log-analytics.png).
+![Screenshot of an Azure log Analytics query returning diagnostic data logged for an Azure AI Services resource.](../media/azure-log-analytics.png).
 
 > [!NOTE]
 > For more information, see [Enable diagnostic logging for Azure AI Services](/azure/ai-services/diagnostic-logging) in the Azure AI Services documentation.

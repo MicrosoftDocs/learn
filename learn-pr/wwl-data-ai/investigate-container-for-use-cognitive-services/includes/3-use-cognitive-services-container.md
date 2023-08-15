@@ -7,7 +7,7 @@ To deploy and use an Azure AI Services container, the following three activities
 2. Client applications submit data to the endpoint provided by the containerized service, and retrieve results just as they would from an Azure AI Services cloud resource in Azure.
 3. Periodically, usage metrics for the containerized service are sent to an Azure AI Services resource in Azure in order to calculate billing for the service.
 
-![An Azure AI Services container deployed to a container host and consumed by a client application](../media/cognitive-services-container.png)
+![Diagram of an Azure AI Services container deployed to a container host and consumed by a client application.](../media/cognitive-services-container.png)
 
 Even when using a container, you must provision an Azure AI Services resource in Azure for billing purposes. Client applications send their requests to the containerized service, meaning that potentially sensitive data is not sent to the Azure AI Services endpoint in Azure; but the container must be able to connect to the Azure AI Services resource in Azure periodically to send usage metrics for billing.
 

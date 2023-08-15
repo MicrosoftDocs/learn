@@ -4,7 +4,7 @@ Network security is an important measure to ensure unauthorized users cannot rea
 
 By default, Azure AI Services are accessible from all networks. Some individual Azure AI Services resources (such as **Text Analytics**, **Face**, **Computer Vision**, and others) can be configured to restrict access to specific network addresses - either public Internet addresses or addresses on virtual networks.
 
-![Network configuration for an Azure AI service, restricting access to a range of IP addresses](../media/network-access.png)
+![Screenshot of a network configuration for an Azure AI service, restricting access to a range of IP addresses.](../media/network-access.png)
 
 With network restrictions enabled, a client trying to connect from an IP address that is not allowed will receive an **Access Denied** error.
 

@@ -13,7 +13,7 @@ summary: Azure AI Services enable developers to easily add AI capabilities into 
 abstract: |
   After completing this module, you will be able to:
   - Provision Azure AI Services resources in an Azure subscription.
-  - Identify endpoints, keys, and locations required to consume a Azure AI Services resource.
+  - Identify endpoints, keys, and locations required to consume an Azure AI Services resource.
   - Use a REST API to consume an Azure AI service.
   - Use an SDK to consume an Azure AI service.
 prerequisites: |
