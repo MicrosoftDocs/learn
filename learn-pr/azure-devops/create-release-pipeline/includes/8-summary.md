@@ -10,7 +10,7 @@ Here are some additional resources to learn more about Azure resources, App Serv
 
 In this module, you deployed a website to App Service. You can use Azure Pipelines to deploy to just about any kind of environment, including a virtual machine or containerized environment.
 
-The [Describe Azure compute services](training/modules/describe-azure-compute-networking-services/) module goes into further detail about the kinds of compute options Azure provides.
+The [Describe Azure compute services](/training/modules/describe-azure-compute-networking-services/) module goes into further detail about the kinds of compute options Azure provides.
 
 The [Deploy a website to Azure with Azure App Service](../../../paths/deploy-a-website-with-azure-app-service/index.yml?azure-portal=true) learning path is also a great resource to learn more about Azure App Service.
 
