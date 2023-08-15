@@ -17,7 +17,7 @@ One of the most important developments in NLP research has been tokenization. **
 :::image type="content" source="../media/tokenization-pipeline.gif" alt-text="Animation showing the pipeline of tokenization of a sentence.":::
 
 1. Start with the text you want to **tokenize**.
-1. **Split** the words in a text based on a rule. For example, split the words where there's a white space.
+1. **Split** the words in the text based on a rule. For example, split the words where there's a white space.
 1. **Stemming**. Merge similar words by removing the end of a word.
 1. **Stop word removal**. Remove noisy words that have little meaning like `the` and `a`. A dictionary of these words is provided to structurally remove them from the text.
 1. **Assign a number** to each unique token.
