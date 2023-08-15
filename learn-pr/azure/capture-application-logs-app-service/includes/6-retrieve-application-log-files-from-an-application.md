@@ -70,7 +70,7 @@ To download the log files from Windows apps:
 
 ### Azure Storage browser
 
-To access Windows logs saved to an Azure Blob Storage container, you can use the Azure portal. To view and download the contents of the log file container, select **Storage accounts** from the portal menu. Select your storage account and then select **Storage browser**. Open the type of storage (for example, **Blob storage**) and then the name of the log file container. Inside the container, open the relevant year, month, date, and hour folder, then double-click a CSV file to download it to your computer.
+To access Windows logs saved to an Azure Blob Storage container, you can use the Azure portal. To view and download the contents of the log file container, select **Storage accounts** from the portal menu. Select your storage account and then select **Storage browser**. Open the type of storage container (for example, **Blob containers**), and select the name of the blob container that contains the log file. Inside the container, open the relevant year, month, date, and hour folder, then double-click a CSV file to download it to your computer.
 
    :::image type="content" source="../media/6-blob-logs.png" alt-text="Screenshot of the Storage browser to download Windows app logs from blob containers.":::
 
