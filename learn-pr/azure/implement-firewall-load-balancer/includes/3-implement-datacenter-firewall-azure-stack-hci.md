@@ -58,7 +58,7 @@ Without any custom ACL rules applied, the default behavior of a network interfac
 
    The following screenshot shows the Windows Admin Center access control list entry pane with the **deny-winrm** rule being created.
 
-   :::image type="content" source="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-deny-winrm.png" alt-text="Screenshot of the Windows Admin Center ACL entry pane with a deny-winrm rule being created." lightbox="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-deny-winrm.png:::
+   :::image type="content" source="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-deny-winrm.png" alt-text="Screenshot of the Windows Admin Center ACL entry pane with a deny-winrm rule being created." lightbox="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-deny-winrm.png":::
 
 1. Now assign the ACL to the example target virtual network subnet, which has the IP address prefix of **192.168.100.0/24**.
 

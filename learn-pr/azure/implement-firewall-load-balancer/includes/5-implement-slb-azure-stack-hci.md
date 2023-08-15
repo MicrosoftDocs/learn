@@ -50,4 +50,4 @@ To implement inbound NAT from an external network to one or more designated VMs 
 
 1. Create an inbound NAT rule for traffic arriving at a specific port on the front-end VIP. Relay the traffic to a designated port of the dynamic IP assigned to the network interface of the target VM.
 
-   :::image type="content" source="../media/5-azure-stack-hci-slb-private-vip-public-nat-completed.png" alt-text="Screenshot of the Windows Admin Center Load balancers pane with the two load balancers created. lightbox="../media/5-azure-stack-hci-slb-private-vip-public-nat-completed.png":::
+   :::image type="content" source="../media/5-azure-stack-hci-slb-private-vip-public-nat-completed.png" alt-text="Screenshot of the Windows Admin Center Load balancers pane with the two load balancers created." lightbox="../media/5-azure-stack-hci-slb-private-vip-public-nat-completed.png":::
