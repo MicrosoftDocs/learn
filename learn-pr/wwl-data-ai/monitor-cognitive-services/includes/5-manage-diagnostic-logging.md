@@ -2,7 +2,7 @@ Diagnostic logging enables you to capture rich operational data for an Azure AI 
 
 ## Create resources for diagnostic log storage
 
-To capture diagnostic logs for an Azure AI Services resource, you need a destination for the log data. You can use Azure Event Hub as a destination in order to then forward the data on to a custom telemetry solution, and you can connect directly to some third-party solutions; but in most cases you'll use one (or both) of the following kinds of resource within your Azure subscription:
+To capture diagnostic logs for an Azure AI Services resource, you need a destination for the log data. You can use Azure Event Hubs as a destination in order to then forward the data on to a custom telemetry solution, and you can connect directly to some third-party solutions; but in most cases you'll use one (or both) of the following kinds of resource within your Azure subscription:
 
 - **Azure Log Analytics** -  a service that enables you to query and visualize log data within the Azure portal.
 - **Azure Storage** - a cloud-based data store that you can use to store log archives (which can be exported for analysis in other tools as needed).
