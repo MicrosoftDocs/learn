@@ -26,6 +26,17 @@ quiz:
     - content: "A third-party store image for accelerating networking for HPC workloads"
       isCorrect: false
       explanation: "Azure HPC Cache is a Microsoft technology that often reduces WAN bandwidth, but it isn't a network accelerator."
+  - content: "To reach on-premises NFS storage, which two permissions are required to create Azure HPC Cache?"
+    choices:
+    - content: "Azure permissions to create NICs and storage permissions like `no_root_squash`"
+      isCorrect: true
+      explanation: "Correct. The Azure user needs to have permissions to create NICs. And for on-premises access, `no_root_squash` must be enabled on the storage target's exports."
+    - content: "An Azure account owner to create resource groups and a domain admin to join the cache to Active Directory"
+      isCorrect: false
+      explanation: "Azure HPC Cache doesn't require Azure account ownership and doesn't join Active Directory."
+    - content: "A storage admin to create local exports and root squash to deny unauthorized users"
+      isCorrect: false
+      explanation: "Exports aren't needed for Azure HPC Cache. And root squash must be disabled on the storage target exports."
   - content: "When you create the cache, which sizing option is best?"
     choices:
     - content: "Cache sizes slightly smaller than the working set are best in order to best use resources."
