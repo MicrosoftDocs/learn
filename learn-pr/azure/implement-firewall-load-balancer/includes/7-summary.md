@@ -1,6 +1,6 @@
-You explored the architecture and core functionality of the Datacenter Firewall and Software Load Balancer software defined networking (SDN) features on Azure Stack HCI. You also reviewed the process of deploying both of these SDN components on Azure Stack HCI.
+In this module, you explored the architecture and core functionality of the Datacenter Firewall and Software Load Balancer software defined networking (SDN) features on Azure Stack HCI. You also reviewed the process of deploying both of these SDN components on Azure Stack HCI.
 
-You learned how Azure Stack HCI-based SDN can help improve the security and resiliency of your infrastructure. You conclude that Datacenter Firewall and Software Load Balancer on Azure Stack HCI can help your company accommodate customer needs and satisfy regulatory requirements.
+You learned how Azure Stack HCI-based SDN can help improve the security and resiliency of your infrastructure. You're convinced that Datacenter Firewall and Software Load Balancer on Azure Stack HCI can help your company accommodate customer needs and satisfy regulatory requirements.
 
 ## Learn more
 

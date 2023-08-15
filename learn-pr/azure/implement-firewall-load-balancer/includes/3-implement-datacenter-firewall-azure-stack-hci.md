@@ -15,7 +15,7 @@ The basic procedure for implementing a Datacenter Firewall policy consists of th
 
 1. For each rule, specify the following settings:
 
-   - **Action** representing the outcome or the rule in case a match is found, and set to either **Allow** or **Deny**.
+   - **Action** representing the outcome of the rule in case a match is found, and set to either **Allow** or **Deny**.
    - **Priority** representing the precedence of the rule in relation to other rules within the same ACL. Each rule within the same ACL must have a unique priority that can be set to any value between 100 and 65000. A lower numerical value designates a higher priority.
 
 1. Optionally, enable logging for individual firewall rules.
@@ -41,7 +41,7 @@ Without any custom ACL rules applied, the default behavior of a network interfac
    |--|--|--|--|--|--|--|--|
    |\*|\*|ALL|\*|\*|Inbound|Allow|1000|
 
-   The following screenshot shows the Windows Admin Center access control list entry pane with the **allow-all** rule being created.
+   The following screenshot shows the Windows Admin Center **Access Control Rule** entry pane with the **allow-all** rule being created.
 
    :::image type="content" source="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-allow-all.png" alt-text="Screenshot of the Windows Admin Center ACL entry pane with an allow-all rule being created." lightbox="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-allow-all.png":::
 
@@ -56,7 +56,7 @@ Without any custom ACL rules applied, the default behavior of a network interfac
    |192.168.0.0/24|\*|TCP|\*|5985,5986|Inbound|Block|500|
    |\*|\*|ALL|\*|\*|Inbound|Allow|1000|
 
-   The following screenshot shows the Windows Admin Center access control list entry pane with the **deny-winrm** rule being created.
+   The following screenshot shows the Windows Admin Center **Access Control Rule** entry pane with the **deny-winrm** rule being created.
 
    :::image type="content" source="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-deny-winrm.png" alt-text="Screenshot of the Windows Admin Center ACL entry pane with a deny-winrm rule being created." lightbox="../media/3-azure-stack-hci-windows-admin-center-new-acl-rule-deny-winrm.png":::
 
