@@ -9,6 +9,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom: compute-cost-fy24
 durationInMinutes: 2
 content: |
   [!include[](includes/7-knowledge-check.md)]

@@ -8,6 +8,7 @@ metadata:
   ms.author: rknapp
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom: compute-cost-fy24
 durationInMinutes: 11
 content: |
   [!include[](includes/6-manage-minimize-total-cost.md)]
