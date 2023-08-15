@@ -1,4 +1,4 @@
-In this module, you will create a multistage pipeline to build and deploy your application to Azure App Service. You will learn how to:
+In this module, you'll create a multistage pipeline to build and deploy your application to Azure App Service. You'll learn how to:
 
 > [!div class="checklist"]
 > * Create an App Service instance to host your web application.
@@ -11,7 +11,7 @@ In this module, you will create a multistage pipeline to build and deploy your a
 
 1. Select **App Services** from the left pane.
 
-1. Select **Create** to create a new Web App.
+1. Select **Create** > **Web App** to create a new Web App.
 
 1. On the **Basics** tab, enter the following values.
 
@@ -23,12 +23,12 @@ In this module, you will create a multistage pipeline to build and deploy your a
     | **Instance Details** |
     | Name | Provide a unique name, such as *tailspin-space-game-1234*. This name must be unique across Azure. It becomes part of the domain name. In practice, choose a name that describes your service. Note the name for later. |
     | Publish  | Code |
-    | Runtime stack | .NET 6 |
+    | Runtime stack | .NET 6 (LTS) |
     | Operating System | Linux |
     | Region | Select a region, preferably one close to you.|
     | **Pricing plans** |
     | Linux Plan | Accept the default.                                                                       |
-    | Pricing plan | Select the dropdown menu, and then select the **Basic B1** pricing tier. |
+    | Pricing plan | Select the **Basic B1** pricing tier from the drop-down menu. |
 
 1. Select **Review + create**, review the form and then select **Create**. The deployment takes a few moments to complete.
 
@@ -69,11 +69,11 @@ In this module, you will create a multistage pipeline to build and deploy your a
 
 1. Ensure that **Grant access permission to all pipelines** is selected.
 
-1. Select **Save** when you are done.
+1. Select **Save**.
 
 ## Add the Build stage to your pipeline
 
-A *multistage pipeline* enables you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this module, you define one stage to perform the build. You define a second stage to deploy the web application to App Service.
+A *multistage pipeline* allows you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this section, you'll define one stage to perform the build. You define a second stage to deploy the web application to App Service.
 
 To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration, and then you add one or more `stage` section for each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
@@ -129,7 +129,7 @@ Although you could hard-code this name in your pipeline configuration, defining 
 
 1. Enter *WebAppName* for the variable name and your App Service instance's name for its value: e.g. *tailspin-space-game-web-1234*.
 
-1. Select **Save** when you are done.
+1. Select **Save**.
 
 ## Add the deployment stage to your pipeline
 
@@ -159,7 +159,7 @@ We will extend our pipeline by adding a deployment stage to deploy the *Space Ga
 
 ## View the deployed website on App Service
 
-1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in Azure Portal and select the instance's **URL**: e.g. *`https://tailspin-space-game-web-1234.azurewebsites.net`*
+1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in Azure Portal and select the instance's **URL**: for example, *`https://tailspin-space-game-web-1234.azurewebsites.net`*
 
     :::image type="content" source="../media/5-app-service-details.png" alt-text="Screenshot showing deployment details.":::
 
