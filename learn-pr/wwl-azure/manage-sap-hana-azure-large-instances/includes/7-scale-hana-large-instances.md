@@ -20,7 +20,7 @@ You can purchase additional storage in 1 TB units. This additional storage can b
 
 ## SAP HANA data tiering and extension nodes
 
-SAP supports a data tiering model for SAP BW of different SAP NetWeaver releases and SAP BW/4HANA. With HANA Large Instance, you can use option-1 configuration of SAP HANA extension nodes as explained in SAP BW/4HANA and SAP BW-on-HANA with SAP HANA Extension Nodes. Option-2 configurations can be set up with the following HANA Large Instance SKUs: S72m, S192, S192m, S384, and S384m.
+SAP supports a data tiering model for SAP BW of different SAP NetWeaver releases and SAP BW/4HANA. With HANA Large Instance, you can use option-1 configuration of SAP HANA extension nodes as explained in [SAP BW/4HANA and SAP BW-on-HANA with SAP HANA Extension Nodes](https://www.sap.com/documents/2018/05/9878c71f-037d-0010-87a3-c30de2ffd8ff.html?url_id=text-glo-404-reclink). Option-2 configurations can be set up with the following HANA Large Instance SKUs: S72m, S192, S192m, S384, and S384m.
 
 When you look at the documentation, the advantage might not be visible immediately. But when you look at the SAP sizing guidelines, you can see an advantage by using option-1 and option-2 SAP HANA extension nodes. Here are examples:
 
