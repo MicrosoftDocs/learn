@@ -92,4 +92,3 @@ GIT_PASSWORD=<git-PAT>
 For reference, see the following information:
 
  -  [Guidance on config server setup](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/spring-cloud/quickstart-setup-config-server.md)
- -  [Guidance for a private repo with basic authentication](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/spring-cloud/how-to-config-server.md)
