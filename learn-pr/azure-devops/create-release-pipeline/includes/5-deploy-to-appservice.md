@@ -75,7 +75,7 @@ In this module, you'll create a multistage pipeline to build and deploy your app
 
 A *multistage pipeline* allows you to define distinct phases that your change passes through as it's promoted through the pipeline. Each stage defines the agent, variables, and steps required to carry out that phase of the pipeline. In this section, you'll define one stage to perform the build. You define a second stage to deploy the web application to App Service.
 
-To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration, and then you add one or more `stage` section for each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
+To convert your existing build configuration to a multistage pipeline, you add a `stages` section to your configuration, and then you add one or more `stage` sections for each phase of your pipeline. Stages break down into jobs, which are a series of steps that run sequentially as a unit.
 
 1. From your project in Visual Studio Code, open *azure-pipelines.yml* and replace its contents with this code:
 
@@ -159,7 +159,7 @@ We will extend our pipeline by adding a deployment stage to deploy the *Space Ga
 
 ## View the deployed website on App Service
 
-1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in Azure Portal and select the instance's **URL**: for example, *`https://tailspin-space-game-web-1234.azurewebsites.net`*
+1. If you still have your App Service tab open, simply refresh the page. Otherwise, navigate to your Azure App Service in the Azure portal and select the instance's **URL**: for example, *`https://tailspin-space-game-web-1234.azurewebsites.net`*
 
     :::image type="content" source="../media/5-app-service-details.png" alt-text="Screenshot showing deployment details.":::
 
