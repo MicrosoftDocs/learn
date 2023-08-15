@@ -88,7 +88,3 @@ GIT_PASSWORD=<git-PAT>
     
     > [!NOTE]
     > Note: Wait for the operation to complete, about 2 minutes.
-
-For reference, see the following information:
-
- -  [Guidance on config server setup](https://github.com/MicrosoftDocs/azure-docs/blob/main/articles/spring-cloud/quickstart-setup-config-server.md)
