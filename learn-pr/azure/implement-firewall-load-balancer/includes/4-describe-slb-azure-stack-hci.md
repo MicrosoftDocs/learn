@@ -56,6 +56,6 @@ Software Load Balancer architecture consists of the following infrastructure com
 
 - **Management applications**. Tools such as PowerShell, Windows Admin Center, and VMM that are capable of communicating with the northbound API of Network Controller and the corresponding SLB infrastructure.
 
-The following diagram shows the the architectural components of Azure Stack HCI Software Load Balancer.
+The following diagram shows the architectural components of Azure Stack HCI Software Load Balancer.
 
 :::image type="content" source="../media/4-azure-stack-hci-slb-architecture.png" alt-text="Diagram depicting the architectural components of an Azure Stack HCI SLB." border="false" lightbox="../media/4-azure-stack-hci-slb-architecture.png":::

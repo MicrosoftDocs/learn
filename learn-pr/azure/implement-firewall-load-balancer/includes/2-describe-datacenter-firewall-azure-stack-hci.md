@@ -1,6 +1,6 @@
 Azure Stack HCI software-defined networking (SDN) Datacenter Firewall functionality can potentially help enhance your environment's security. Datacenter Firewall can also minimize the sprawl of hardware devices to support your company's consolidation initiatives. You need to ensure that Datacenter Firewall capabilities extend beyond virtual networking to provide integration with your existing virtual local area network (VLAN) environment.
 
-Like traditional on-premises datacenters use physical firewall appliances to restrict network connectivity, SDN environments must be able to control connectivity. Distributed Datacenter Firewall provides this functionality and, along with Software Load Balancing and Remote Access Server (RAS) Gateway, serves as a core component of SDN. Network Controller provides a central management and monitoring interface for Datacenter Firewall to help protect virtualized workloads from unauthorized network access.
+Like traditional on-premises datacenters that use physical firewall appliances to restrict network connectivity, SDN environments must be able to control connectivity. Distributed Datacenter Firewall provides this functionality and, along with Software Load Balancing and Remote Access Server (RAS) Gateway, serves as a core component of SDN. Network Controller provides a central management and monitoring interface for Datacenter Firewall to help protect virtualized workloads from unauthorized network access.
 
 ## Benefits of Datacenter Firewall
 

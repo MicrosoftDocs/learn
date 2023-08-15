@@ -60,13 +60,13 @@ quiz:
       explanation: "Incorrect. Azure Stack HCI software defined networking doesn't rely on Routing Information Protocol."
   - content: "Which layer of the Open Systems Interconnection (OSI) model does software defined networking Software Load Balancing operate on?"
     choices:
-    - content: "3"
+    - content: "Three"
       isCorrect: false
       explanation: "Incorrect. Software defined networking Software Load Balancing doesn't provide Layer 3 load balancing."
-    - content: "4"
+    - content: "Four"
       isCorrect: true
       explanation: "Correct. Software defined networking Software Load Balancing provides Layer 4 load balancing for North-South and East-West TCP/UDP traffic."
-    - content: "7"
+    - content: "Seven"
       isCorrect: false
       explanation: "Incorrect. Software defined networking Software Load Balancing doesn’t provide Layer 7 load balancing."
   - content: "Which of the following tasks doesn't require creating a health probe object?"

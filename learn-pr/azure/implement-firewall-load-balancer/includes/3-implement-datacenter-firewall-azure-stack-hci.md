@@ -5,7 +5,7 @@ You're confident that the software defined networking (SDN) distributed firewall
 The basic procedure for implementing a Datacenter Firewall policy consists of the following steps. You can do these steps by using PowerShell, Windows Admin Center, or Microsoft System Center Virtual Machine Manager (VMM).
 
 1. Create an Access Control List (ACL) object.
-1. Within the ACL, define one or more inbound and outbound rules that allow or deny East-West and North-South network traffic based on any of the following criteria for the traffic the rule applies to.
+1. Within the ACL, define one or more inbound and outbound rules that allow or deny East-West and North-South network traffic based on any of the following criteria:
 
    - **Protocol** representing the layer 4 protocol and set to **TCP**, **UDP**, or **ALL**. **ALL** includes  Internet Control Message Protocol (ICMP) in addition to TCP and UDP.
    - **Source Address Prefix** representing the IP address prefix of the origin of an incoming or outgoing network packet. An asterisk `*` is a wild card denoting all IP addresses.

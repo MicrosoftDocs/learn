@@ -6,10 +6,10 @@ To implement Software Load Balancer, you first deploy the Network Controller and
 
 You can configure SLB to provide the following functionality:
 
-- Load-balance incoming external traffic to VMs on a virtual network. This is also called the public virtual IP (VIP) load balancing.
-- Load-balance incoming traffic from VMs in the same virtual network or a peered private network. This is also called the internal or private VIP load balancing.
-- Forward outgoing network traffic from VMs on a virtual network to external destinations by using NAT. This is also called the outbound NAT.
-- Forward incoming external traffic to a specific VM. This is also called the inbound NAT.
+- Load-balance incoming external traffic to VMs on a virtual network, also called the public virtual IP (VIP) load balancing.
+- Load-balance incoming traffic from VMs in the same virtual network or a peered private network, also called the internal or private VIP load balancing.
+- Forward outgoing network traffic from VMs on a virtual network to external destinations by using NAT, also called the outbound NAT.
+- Forward incoming external traffic to a specific VM, also called the inbound NAT.
 
 To implement these scenarios, you create the following different types of load balancers:
 
@@ -48,6 +48,6 @@ To implement inbound NAT from an external network to one or more designated VMs 
 
 1. Create a backend pool that contains the dynamic IPs assigned to the network interfaces of the VMs you intend to connect to via NAT.
 
-1. Create an inbound NAT rule that relays traffic arriving at a specific port on the front-end VIP to a designated port of the dynamic IP assigned to the network interface of the target VM.
+1. Create an inbound NAT rule for traffic arriving at a specific port on the front-end VIP. Relay the traffic to a designated port of the dynamic IP assigned to the network interface of the target VM.
 
    :::image type="content" source="../media/5-azure-stack-hci-slb-private-vip-public-nat-completed.png" alt-text="Screenshot of the Windows Admin Center Load balancers pane with the two load balancers created. lightbox="../media/5-azure-stack-hci-slb-private-vip-public-nat-completed.png":::
