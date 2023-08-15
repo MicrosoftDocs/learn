@@ -1,6 +1,6 @@
-If the back-end and front-end of your app live in two different places, you need to configure something called *cross-origin resource sharing*, or CORS.
+Connect the front-end app to data in order to developer the UI. 
 
-## Connect to a back-end
+## Connect to a back-end API
 
 You have a front-end app. What do you need to think about for the back-end application? Well, you're either:
 
@@ -11,9 +11,9 @@ You have a front-end app. What do you need to think about for the back-end appli
 
 As you build your front-end app, you know that a back-end team will be done building the API at some point. Do you wait for the back-end team to finish, before you build the corresponding view? There are different approaches you can take here:
 
-- **Build a vertical:** In this approach, you work closely with the person building the back-end. You build your front-end part, and then the back-end developer builds their part. When both parts work, you have a _full vertical_, and you can continue to the next feature. This approach is viable, but it does force the teams to be very in sync.
+- **Build a vertical:** In this approach, you work closely with the person building the back-end API. You build your front-end part, and then the back-end developer builds their part. When both parts work, you have a _full vertical_, and you can continue to the next feature. This approach is viable, but it does force the teams to be very in sync.
 
-- **Mock the data:** This approach has fewer requirements for close coordination between teams. In this scenario, the front-end developer negotiates with the back-end team, about what the response from the back-end looks like. When you agree, you start creating mock data, static files that the front-end team uses instead. The front-end team can now move at any desired development speed. At some point, you do need to synchronize with the back-end team, to ensure that the back-end was built according to what you agreed on.
+- **Mock the data:** This approach has fewer requirements for close coordination between teams. In this scenario, the front-end developer negotiates with the back-end team, about what the response from the back-end API looks like. When you agree, you start creating mock data, static files that the front-end team uses instead. The front-end team can now move at any desired development speed. At some point, you do need to synchronize with the back-end team, to ensure that the back-end API was built according to what you agreed on.
 
 ### Use correctly formatted JSON
 
@@ -86,19 +86,19 @@ Instead of making requests toward `http://localhost:5000/pizza`, you can now mak
 
 After the real API is finished, you should have the front-end app make requests toward that API, instead of the mocked API. Doing so helps ensure that everything is working as it should.
 
-However, when you first try to talk to your real back-end, you might get an error that looks something like the following:
+However, when you first try to talk to your real back-end API, you might get an error that looks something like the following:
 
 ```output
 Access to fetch at http://localhost:5000 from origin 'http://localhost:3000' has been blocked by CORS policy...
 ```
 
-This error tells you that the front-end app isn't allowed to call the back-end, because the front-end comes from a different place than the back-end is residing. This difference includes both the domain name and the port of each app. The good news is that you can fix this error by implementing CORS on the back-end.  
+This error tells you that the front-end app isn't allowed to call the back-end API, because the front-end app comes from a different place than the back-end API is residing. This difference includes both the domain name and the port of each app. The good news is that you can fix this error by implementing CORS on the back-end API.  
 
 ## CORS
 
-CORS is a protocol that allows a back-end to accept requests from domains (and ports) other than the one it's currently running on. This is a security feature.
+CORS is a protocol that allows a back-end API to accept requests from domains (and ports) other than the one it's currently running on. This is a security feature.
 
-Suppose the calling client makes a request toward a back-end, and starts by sending a preflight request by using the `OPTIONS` verb. Essentially, the calling client is asking the back-end what it can perform toward a resource. The back-end can approve or deny the request, at which point the actual request (such as `GET` or `POST`) goes through. Imagine the following flow below:
+Suppose the calling client makes a request toward a back-end API, and starts by sending a preflight request by using the `OPTIONS` verb. Essentially, the calling client is asking the back-end API what it can perform toward a resource. The back-end API can approve or deny the request, at which point the actual request (such as `GET` or `POST`) goes through. Imagine the following flow below:
 
 ```output
 client> OPTIONS, can I do POST on /pizza?
@@ -111,10 +111,15 @@ Another more successful attempt might look like the following:
 ```output
 client> OPTIONS, can I do GET on /pizza
 server> you can do GET on /pizza
-client> receives data from back-end
+client> receives data from back end
 ```
 
 ### Configure CORS on the server
+
+In this example app, the API and front-end app are both hosted from the same IP (`localhost`) but are served from different ports: 
+
+- The API is served from port 5000
+- The front-end app is served from port 3000
 
 The CORS configuration is the responsibility of the server. How that's configured depends on the runtime the server is using. Here's how you can do it in your .NET Core _Program.cs_ file:
 
@@ -130,7 +135,7 @@ builder.Services.AddCors(options =>
       builder =>
       {
           builder.WithOrigins(
-            "http://example.com");
+            "http://example.com", "*");
       });
 });
 // 3) use the capability

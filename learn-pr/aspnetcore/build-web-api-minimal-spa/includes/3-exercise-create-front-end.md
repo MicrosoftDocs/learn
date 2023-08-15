@@ -17,13 +17,20 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
     * **Select a framework**: `React`
     * **Select a variant**: `Javascript`
 
-    What you get is a directory, _PizzaClient_, that contains your scaffolded React app. While the code and project are TypeScript, there's little TypeScript used in the project. 
+    What you get is a directory, _PizzaClient_, that contains your scaffolded React app.
+
+1. Open the app directory in Visual Studio Code.
+
+   ```bash
+   code .
+   ```
 
 1. Update the `vite.config.js` to provide a consistent front-end port. Replace the contents of `./vite.config.js` with the following code:
 
-    :::code language="javascript" source="../code/vite.config.js" highlight="8-11":::
+    :::code language="javascript" source="../code/vite.config.js" :::
 
     * **PORT**: The port is set to 3000, a common port number used for front-end apps..
+
 
 1. Start the app by calling `npm run dev`:
 
@@ -43,12 +50,6 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
 Build the parent component that manages state for the pizza list.
 
-1. Open the app directory in Visual Studio Code.
-
-   ```bash
-   code .
-   ```
-
 1. Create a file in the _src_ subdirectory named  _Pizza.jsx_ and give it the following content:
 
     :::code language="javascript" source="../code/with-components-and-static-data/Pizza.jsx":::
@@ -63,7 +64,7 @@ Create a file in the _src_ subdirectory named  _PizzaList.jsx_ and give it the f
 
 :::code language="javascript" source="../code/with-components-and-static-data/PizzaList.jsx" :::
 
-This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state:
+This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state.
 
 The PizzaList component renders a form with two input fields for the pizza `name` and `description`, and two buttons for creating or updating a pizza item. 
 
@@ -78,5 +79,3 @@ Open the `main.jsx` and replace the code with the following so the **Pizza** com
 1. Open a browser and navigate to `http://localhost:3000`.
 
     :::image type="content" source="../media/form-without-design-system.png" alt-text="Screenshoot of Pizza form without styled components.":::
-
-    The form works to add, update, or delete a pizza but isn't styled. In the next section, learn how to make the form more engaging. 

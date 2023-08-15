@@ -1,4 +1,4 @@
-Use the Fluent UI design system to improve the appearance of your app.
+Use a design system to improve the appearance of your app.
 
 ## Install Material UI
 

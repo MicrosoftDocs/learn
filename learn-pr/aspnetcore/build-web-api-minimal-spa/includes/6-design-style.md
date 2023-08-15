@@ -18,9 +18,9 @@ Design systems are made up of many parts, some of which are:
 * **Icon Library**: A collection of icons for use in the site.
 * **Design Tokens**: Names that represent hard-coded values for visual elements like spacing, color, and typography.
 
-## Common frontend design systems
+## Common front-end design systems
 
-There are many frontend design systems available. Here are some of the most popular:
+There are many front-end design systems available. Here are some of the most popular:
 
 * [Material Design](https://material.io/)
 * [Bootstrap](https://getbootstrap.com/)

@@ -6,7 +6,7 @@ As a front-end developer, you have different concerns than the back-end team. Yo
 - What layout do I need?
 - What's the user's interaction flow?
 
-You also need to consider how to work with the backend team, particularly if you're working faster than them. Can you progress independently, or do you have to wait for the back-end team to deliver?
+You also need to consider how to work with the back-end team, particularly if you're working faster than them. Can you progress independently, or do you have to wait for the back-end team to deliver?
 
 You sit down with your team to figure out the answers. The team consists of a user experience person, a JavaScript specialist, and a designer. Together, you start planning out the app.
 
