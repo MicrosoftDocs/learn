@@ -1,5 +1,5 @@
 
-There are container images for Azure Azure AI Services in the Microsoft Container Registry that you can use to deploy a containerized service that encapsulates an individual Azure AI service API.
+There are container images for Azure AI Services in the Microsoft Container Registry that you can use to deploy a containerized service that encapsulates an individual Azure AI service API.
 
 To deploy and use an Azure AI Services container, the following three activities must occur:
 
@@ -26,9 +26,9 @@ For the Language service, each of the three core features maps to a separate ima
 > [!NOTE]
 > Sentiment Analysis supports other languages by replacing the *en* in the image with the correct language code
 
-You can use the Docker *pull* command to download container images to work with them directly from your machine. Some of the containers are in a "Gated" public preview state, and you need to explicitly request access to use them. Otherwise the containers are available for anyone to use with their Azure Azure AI Services deployment.
+You can use the Docker *pull* command to download container images to work with them directly from your machine. Some of the containers are in a "Gated" public preview state, and you need to explicitly request access to use them. Otherwise the containers are available for anyone to use with their Azure AI Services deployment.
 
-For a full list of currently available Azure AI Services container images, and specific notes for each one, see [Azure Azure AI Services container images](/azure/ai-services/cognitive-services-container-support).
+For a full list of currently available Azure AI Services container images, and specific notes for each one, see [Azure AI Services container images](/azure/ai-services/cognitive-services-container-support).
 
 ## Azure AI Services container configuration
 
@@ -36,8 +36,8 @@ When you deploy an Azure AI Services container image to a host, you must specify
 
 | Setting | Description |
 |---|---|
-| ApiKey | Key from your deployed Azure Azure AI Service; used for billing. |
-| Billing | Endpoint URI from your deployed Azure Azure AI Service; used for billing. |
+| ApiKey | Key from your deployed Azure AI Service; used for billing. |
+| Billing | Endpoint URI from your deployed Azure AI Service; used for billing. |
 | Eula | Value of **accept** to state you accept the license for the container. |
 
 ## Consuming Azure AI Services from a Container
