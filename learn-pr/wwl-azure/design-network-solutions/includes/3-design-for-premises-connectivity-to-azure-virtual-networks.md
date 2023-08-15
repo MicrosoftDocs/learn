@@ -1,3 +1,4 @@
+
 For a successful migration, it's critical to connect on-premises corporate networks to Azure. This method creates an always-on connection known as a _hybrid-cloud network_, where services are provided from the Azure cloud to corporate users.
 
 Let's examine Azure services that provide connectivity between Azure resources, connectivity from an on-premises network to Azure resources, and branch to branch connectivity in Azure. We'll compare options for connecting an on-premises network to an Azure virtual network.
@@ -6,7 +7,7 @@ Let's examine Azure services that provide connectivity between Azure resources, 
 
 An [Azure VPN Gateway](/azure/vpn-gateway/vpn-gateway-about-vpngateways) connection is a type of virtual network gateway that sends encrypted traffic between an Azure virtual network and an on-premises location. The encrypted traffic goes over the public internet. There are different configurations available for VPN Gateway connections, such as, site-to-site, point-to-site, or virtual network-to-network.
 
-**Reference architecture**: [Hybrid network with Azure VPN Gateway](/azure/architecture/reference-architectures/hybrid-networking/vpn)
+**Reference architecture**: [Hybrid network with Azure VPN Gateway](/azure/architecture/reference-architectures/hybrid-networking/#vpn-connection)
 
 ### Azure ExpressRoute
 
