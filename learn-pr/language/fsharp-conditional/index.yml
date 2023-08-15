@@ -6,6 +6,7 @@ metadata:
   ms.date: 11/23/2022
   author: softchris
   ms.author: chnoring
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.custom: team=nextgen
   ms.devlang: fsharp

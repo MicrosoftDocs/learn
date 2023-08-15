@@ -2,7 +2,7 @@
 
 To get a better understanding of the behavior of thread activities in the Hello World project, we'll collect timing data for each cycle of activities performed by the threads. We'll compute and display the total number of cycles each thread completed and the average time for each cycle.
 
-To accomplish this purpose, we'll modify the code for the Hello World Project by adding several ThreadX time and timer facilities. We'll call this modified project ProjectAnalyze.
+To accomplish this purpose, we'll modify the code for the Hello World project by adding several ThreadX time and timer facilities. We'll call this modified project ProjectAnalyze.
 
 ## Learning objectives
 

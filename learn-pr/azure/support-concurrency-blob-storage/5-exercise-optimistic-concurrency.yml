@@ -3,8 +3,8 @@ uid: learn.support-concurrency-blob-storage.5-exercise-optimistic-concurrency
 title: Exercise - Implement optimistic concurrency
 metadata:
   title: Exercise - Implement optimistic concurrency
-  description: In this hands-on exercise, you'll implement optimistic concurrency to resolve the storage conflicts
-  ms.date: 04/06/2019
+  description: In this hands-on exercise, you implement optimistic concurrency to resolve the storage conflicts
+  ms.date: 06/22/2023
   author: tamram
   ms.author: tamram
   ms.topic: interactive-tutorial

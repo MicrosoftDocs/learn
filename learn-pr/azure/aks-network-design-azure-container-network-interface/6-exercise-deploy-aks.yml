@@ -7,6 +7,8 @@ metadata:
   author: markwme
   ms.author: mawhitby
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 title: Exercise - Deploy an Azure Kubernetes Service cluster with Azure CNI
 durationInMinutes: 15

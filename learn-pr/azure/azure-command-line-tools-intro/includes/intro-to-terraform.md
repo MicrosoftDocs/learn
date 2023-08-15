@@ -1,30 +1,28 @@
-# Terraform
-
-Terraform is an open source Infrastructure as Code (IaC) tool created by HashiCorp. It enables you
-to define and provision cloud infrastructure using a high-level configuration language known as
+The Terraform open-source IaC tool enables you
+to define and provision cloud infrastructure by using a high-level configuration language known as
 HashiCorp Configuration Language (HCL). Terraform codifies infrastructure in configuration files
-that describe the desired state for your infrastructure. Terraform can manage any infrastructure
-such as public clouds, private clouds, and SaaS services using Terraform providers.
+that describe the desired state for your infrastructure. Terraform can manage any infrastructure--such
+as public clouds, private clouds, and SaaS services--by using Terraform providers.
 
 ## Terraform providers for Azure infrastructure
 
-There are several Terraform providers that enable the management of Azure infrastructure:
+Several Terraform providers enable the management of Azure infrastructure:
 
-- AzureRM: Manage Azure resources such as virtual machines, storage accounts, and networking
+- **AzureRM**: Manage Azure Resource Manager resources such as virtual machines, storage accounts, and network
   interfaces.
-- AzureAD: Manage Azure Active directory resources such as groups, users, service principals, and
+- **AzureAD**: Manage Azure Active Directory resources such as groups, users, service principals, and
   applications.
-- AzureDevOps: Manage Azure DevOps resources such as agents, repositories, projects, pipelines, and
+- **AzureDevOps**: Manage Azure DevOps resources such as agents, repositories, projects, pipelines, and
   queries.
-- AzAPI: Manage Azure resources using the Azure Resource Manager APIs directly. This provider
-  compliments the AzureRM provider by enabling the management of the newest Azure resources.
-- Azure Stack: Manage Azure Stack resources such as virtual machines, DNS, VNet, and storage.
+- **AzAPI**: Manage Azure resources by using the Azure Resource Manager APIs directly. This provider
+  complements the AzureRM provider by enabling the management of the newest Azure resources.
+- **Azure Stack**: Manage Azure Stack resources such as virtual machines, DNS, virtual networks, and storage.
 
 ## Create a storage account
 
-All Terraform configurations must contain a `provider` block. In the following HCL code, the Azure
-Resource Manager provider (**azurerm**) is specified. An Azure resource group named
-**storageaccountexamplerg** is defined in the **eastus** location. Finally, an Azure storage account
+All Terraform configurations must contain a `provider` block. The following HCL code specifies the Azure
+Resource Manager provider (`azurerm`). An Azure resource group named
+`storageaccountexamplerg` is defined in the `eastus` location. An Azure storage account
 is created within the resource group. The storage account name is the first 24 characters of a
 number generated via the `md5` function.
 
@@ -60,22 +58,21 @@ resource "azurerm_storage_account" "example" {
 
 ## Run the Terraform code
 
-Run `terraform init` to download the Azure modules required to manage your Azure resources.
+Run `terraform init` to download the required Azure modules for managing your Azure resources:
 
 ```console
 terraform init
 ```
 
-Run `terraform plan` to determines what actions are necessary to create the configuration specified
-in your configuration files. An execution plan is created, but it is not applied. This pattern
-allows you to verify if the execution plan matches your expectations before making any changes to
+Run `terraform plan` to determine what actions are necessary to create the configuration that you specified in your configuration files. Running the command creates an execution plan but doesn't apply it. This pattern
+allows you to verify if the execution plan matches your expectations before you make any changes to
 actual resources.
 
 ```console
 terraform plan -out main.tfplan
 ```
 
-Once you've verified the execution plan, run `terraform apply` to apply the plan, which creates the
+After you verify the execution plan, run `terraform apply` to apply the plan. This command creates the
 defined resources.
 
 ```console
@@ -87,8 +84,7 @@ terraform apply main.tfplan
 To verify the Azure storage account, you can use the `terraform state show` command. This command
 shows the current state of the specified resource.
 
-In the case of the storage account you created in this module, you'll see the generated name as well
-as a complete list of storage account attributes and their values.
+In the case of the storage account that you created in this module, the command shows the generated name, along with a complete list of storage account attributes and their values.
 
 ```console
 terraform state show 'azurerm_storage_account.example'
@@ -96,14 +92,14 @@ terraform state show 'azurerm_storage_account.example'
 
 ## Clean up resources
 
-When you no longer need the resources created in this module, run `terraform apply` with the
-`-destroy` flag.
+When you no longer need the resources that you created in this module, run `terraform apply` with the
+`-destroy` flag:
 
 ```console
 terraform plan -destroy -out main.destroy.tfplan
 ```
 
-Run `terraform apply` to apply the execution plan.
+Run `terraform apply` to apply the execution plan:
 
 ```console
 terraform apply main.destroy.tfplan

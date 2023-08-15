@@ -4,11 +4,11 @@ title: Configure and manage custom domains
 metadata:
   title: Configure and manage custom domains
   description: "Configure and manage custom domains"
-  ms.date: 02/03/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: identity-and-access
 azureSandbox: false
 labModal: false
 durationInMinutes: 10

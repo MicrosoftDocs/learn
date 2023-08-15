@@ -10,7 +10,8 @@ metadata:
   ms.author: nickoman
   ms.topic: interactive-tutorial
   ms.service: azure
-
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 10
 content: |
   [!include[](includes/3-exercise-node-pools.md)]

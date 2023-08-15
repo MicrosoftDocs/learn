@@ -4,11 +4,10 @@ title: Examine the launch configurations file
 metadata:
   title: Examine the launch configurations file
   description: "Examine the launch configurations file"
-  ms.date: 06/01/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 11
 content: |
   [!include[](includes/6-examine-launch-configurations.md)]

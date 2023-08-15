@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/design-consistent-xaml-pages-with-shared-resources-and-styles-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

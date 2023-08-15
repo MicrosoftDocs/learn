@@ -28,6 +28,7 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.introduction
+- learn.wwl.explore-azure-machine-learning-workspace-resources-assets.video
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.provision
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-resources
 - learn.wwl.explore-azure-machine-learning-workspace-resources-assets.identify-assets

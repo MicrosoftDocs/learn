@@ -4,13 +4,11 @@ title: Explore Azure container-related services
 metadata:
   title: Explore Azure container-related services
   description: "Explore Azure container-related services"
-  ms.date: 05/17/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 1
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/7-explore-azure-container-related-services.md)]

@@ -9,8 +9,8 @@ In this unit, you'll learn how to set up and manage pipeline permissions using A
 Organization-level pipeline permissions control who can create, edit, delete, or view pipelines across all projects in your organization. You can set these permissions for Azure DevOps groups or individual users.
 
 1. Sign in to your organization.
-2. Click on Organization Settings at the bottom left and in Permissions under Security section.
-3. Select a group or a user from the list, or use the search box to find one.
+2. Click on Organization Settings at the bottom left and in Permissions under the Security section.
+3. Select a group or user from the list, or use the search box to find one.
 4. Select Permissions and then find Pipelines.
 5. Modify the permissions as needed, such as allowing or denying manage pipeline policies, view build resources, etc.
 
@@ -28,8 +28,8 @@ To set project-level pipeline permissions:
 
     ![Screenshot of Azure Pipelines showing how to manage security.](../media/manage-security-pipeline.png)
 
-4. Modify the groups or user permissions as you need.
-5. Select Allow or Deny for the permission for a security group or an individual user, and then exit the screen.
+4. Modify the group or user permissions as you need.
+5. Select Allow or Deny the permission for a security group or an individual user, and then exit the screen.
 
     ![Screenshot of Azure Pipelines showing how to manage security for groups and users in the pipeline.](../media/group-user-permissions-pipeline.png)
 

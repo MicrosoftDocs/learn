@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.connect-syslog-data-sources-to-azure-sentinel.plan-for-syslog-connector
-title: Plan for the syslog connector
+title: Plan for syslog data collection
 metadata:
-  title: Plan for the syslog connector
-  description: "Plan for the syslog connector"
+  title: Plan for syslog data collection
+  description: "Plan for syslog data collection"
   ms.date: 06/27/2022
   author: wwlpublish
   ms.author: kelawson

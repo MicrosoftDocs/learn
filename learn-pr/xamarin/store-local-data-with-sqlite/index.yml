@@ -6,6 +6,7 @@ metadata:
   ms.date: 3/19/2019
   author: codemillmatt
   ms.author: masoucou
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: xamarin
   ms.subservice: xamarin-forms
@@ -20,6 +21,7 @@ prerequisites: |
   [!include[](../../includes/prerequisites.md)]
   - Basic knowledge of SQL and relational databases
 iconUrl: /training/achievements/xamarin/store-local-data-with-sqlite-badge.svg
+hidden: true
 levels: 
 - intermediate
 roles: 

@@ -8,6 +8,7 @@ metadata:
   ms.date: 09/28/2021
   author: IEvangelist
   ms.author: dapine
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 durationInMinutes: 8

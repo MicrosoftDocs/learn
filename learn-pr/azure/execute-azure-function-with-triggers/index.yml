@@ -9,6 +9,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.custom: engagement-fy23
   ms.service: azure-functions
+  manager: mijacobs
 title: Execute an Azure Function with triggers
 summary: A trigger is responsible for executing an Azure function and there are dozens of triggers to choose from. This module will you show you some of the most common types of triggers and how to configure them to execute your logic.
 abstract:  | 

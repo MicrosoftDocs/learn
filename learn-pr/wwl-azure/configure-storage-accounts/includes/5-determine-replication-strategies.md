@@ -15,7 +15,7 @@ Locally redundant storage is the lowest-cost replication option and offers the l
 
 - Your application stores data that can be easily reconstructed if data loss occurs.
 - Your data is constantly changing like in a live feed, and storing the data isn't essential.
-- Your application is restricted to replicating data only within a country due to data governance requirements.
+- Your application is restricted to replicating data only within a country/region due to data governance requirements.
 
 ### Zone redundant storage
 

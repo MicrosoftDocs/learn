@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.introduction-data-protection-privacy.3-what-are-privacy-regulations
-title: What are privacy regulations?
+title: Data privacy regulations
 metadata:
-  title: What are privacy laws and regulations?
-  description: What are privacy laws and regulations?
+  title: Data privacy regulations
+  description: Learn about data privacy concepts and terminology, and how Microsoft supports and commits to data privacy.
   ms.date: 03/24/2021
   author: cwatson-cat
   ms.author: cwatson

@@ -7,8 +7,9 @@ metadata:
   author: codemillmatt
   ms.author: masoucou
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-xamarin
-  
 title: What is Xamarin.Android?
 durationInMinutes: 6
 content: |

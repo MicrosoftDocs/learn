@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn-wwl.migrate-sql-workloads-azure-virtual-machines.review-data-migration-assistant
+title: Understand Data Migration Assistant
+metadata:
+  title: Understand Data Migration Assistant
+  description: "Learn how to use Data Migration Assistant to migrate databases to SQL Server on Azure Virtual Machine."
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: jupadrao
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+azureSandbox: false
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-review-data-migration-assistant.md)]

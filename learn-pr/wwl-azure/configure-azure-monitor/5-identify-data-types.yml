@@ -4,11 +4,10 @@ title: Identify monitoring data and tiers
 metadata:
   title: Identify monitoring data and tiers
   description: "Identify monitoring data and tiers"
-  ms.date: 05/25/2023
+  ms.date: 06/25/2023
   author: wwlpublish
   ms.author: cynthist
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 2
 content: |
   [!include[](includes/5-identify-data-types.md)]

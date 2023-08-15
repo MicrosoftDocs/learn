@@ -6,10 +6,12 @@ metadata:
   ms.date: 01/06/2023
   author: aaronpowell
   ms.author: aapowell
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - aapowell-09162020
 title: Exercise - Create an Azure Functions project

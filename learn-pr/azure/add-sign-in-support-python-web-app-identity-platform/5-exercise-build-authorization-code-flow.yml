@@ -10,6 +10,8 @@ metadata:
   ms.author: dmwendia
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 12
 content: |
   [!include[](includes/5-exercise-build-authorization-code-flow.md)]

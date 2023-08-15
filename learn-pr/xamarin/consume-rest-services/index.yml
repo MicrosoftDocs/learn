@@ -19,6 +19,7 @@ prerequisites: |
   [!include[](../../includes/prerequisites.md)]
   - Basic knowledge of REST
 iconUrl: /training/achievements/xamarin/consume-rest-services-badge.svg
+hidden: true
 levels: 
 - beginner
 roles: 

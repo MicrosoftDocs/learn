@@ -8,6 +8,8 @@ metadata:
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: module-choose-best-product
+  ms.custom:
+    - devx-track-bicep
   ms.prod: learning-azure
 title: Introduction to Bicep
 durationInMinutes: 3

@@ -30,7 +30,7 @@ In the *Assistant setup*, you can provide few-shot examples of what the user inp
 
 #### Chat playground parameters
 
-The Chat playground includes the Temperature parameter, and others not available in the Completions playground.  These include:
+The Chat playground, like the Completions playground, also includes the Temperature parameter. The Chat playground also supports other parameters *not* available in the Completions playground. These include:
 
 - **Max response**: Set a limit on the number of tokens per model response. The API supports a maximum of 4000 tokens shared between the prompt (including system message, examples, message history, and user query) and the model's response. One token is roughly four characters for typical English text.
 - **Top P**: Similar to temperature, this controls randomness but uses a different method. Lowering Top P narrows the model’s token selection to likelier tokens. Increasing Top P lets the model choose from tokens with both high and low likelihood. Try adjusting temperature or Top P but not both.

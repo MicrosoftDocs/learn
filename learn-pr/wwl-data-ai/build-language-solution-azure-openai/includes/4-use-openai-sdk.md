@@ -63,7 +63,7 @@ import openai
 openai.api_key = '<YOUR_API_KEY>'
 openai.api_base =  '<YOUR_ENDPOINT_NAME>' 
 openai.api_type = 'azure' # Necessary for using the OpenAI library with Azure OpenAI
-openai.api_version = '2022-12-01' # This likely will change with future releases
+openai.api_version = '20xx-xx-xx' # Latest / target version of the API
 
 deployment_name = '<YOUR_DEPLOYMENT_NAME>' # SDK calls this "engine", but naming
                                            # it "deployment_name" for clarity

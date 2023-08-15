@@ -1,7 +1,3 @@
-
-
-
-
 Microsoft Azure offers multiple ways to deploy VM-based solutions. One of the primary considerations is the approach to installing the operating system and the associated SAP workloads. In general, there are three options to choose from:
 
 ## Azure Marketplace images
@@ -30,7 +26,7 @@ If the result is different, STOP deploying SAP and investigate why the setup com
 
 ## Custom images
 
-This approach involves deploying VMs based on customer-specific images, in cases where Azure Marketplace images might not fit your needs. The process of preparing such images is operating system–specific. For details, refer to :
+This approach involves deploying VMs based on customer-specific images, in cases where Azure Marketplace images might not fit your needs. The process of preparing such images is operating system–specific. For details, refer to:
 
 - Windows: [Upload a generalized VHD and use it to create new VMs in Azure](/azure/virtual-machines/windows/upload-generalized-managed)
 - Linux:
@@ -39,7 +35,7 @@ This approach involves deploying VMs based on customer-specific images, in cases
   - Red Hat: [Prepare a Red Hat-based virtual machine for Azure](/azure/virtual-machines/linux/redhat-create-upload-vhd)
   - Oracle Linux: [Prepare an Oracle Linux virtual machine for Azure](/azure/virtual-machines/linux/oracle-create-upload-vhd)
 
-If you have already installed SAP content in your on-premises VM (especially for 2-Tier systems), you can adapt the SAP system settings after the deployment of the Azure VM through the instance rename procedure supported by the SAP Software Provisioning Manager ([SAP Note \#1619720](https://launchpad.support.sap.com/#/notes/1619720) ).
+If you have already installed SAP content in your on-premises VM (especially for 2-Tier systems), you can adapt the SAP system settings after the deployment of the Azure VM through the instance rename procedure supported by the SAP Software Provisioning Manager ([SAP Note \#1619720](https://aka.ms/az-120-sapnote-1619720) ).
 
 Note that in this case, you also have the option of installing and configuring SAP workloads manually or in an automated manner, by using the same configuration management tools listed earlier.
 

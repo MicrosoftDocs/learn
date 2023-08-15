@@ -1,3 +1,5 @@
+
+
 There are two main points to consider in an implementation plan for [Azure Blob Storage](/azure/storage/blobs/storage-blobs-overview). First, you need to identify which Azure _blob access tier_ satisfies your organization's storage availability, latency, and cost requirements. The second consideration is to decide if you need access to immutable storage.
 
 There are four access options: Premium Blob Storage, and the Hot, Cool, and Archive access tiers. All four options support availability and latency, but they have differing costs depending on the level of support. All options also support immutable storage, but the storage is implemented differently for the Hot, Cool, and Archive access tiers.

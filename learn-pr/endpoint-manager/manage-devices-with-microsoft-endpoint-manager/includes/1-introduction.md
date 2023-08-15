@@ -13,7 +13,7 @@ The following interactive guide steps you through the Microsoft Intune admin cen
 
 Suppose that you're the administrator of a company with several thousand employees. Your company requires that all new devices be set up to easily connect to your corporate network before they reach the respective employee. Also, each device must be enrolled into a mobile device management solution so it can be protected. In addition, all of these devices must meet your company's security requirements. These requirements must be implemented for all devices that access your corporate data, whether the device is company owned or personally owned.
 
-Here, you'll learn about provisioning and well as managing devices throughout the device lifecycle so that end users can be as productive and organization data can be protected.
+Here, you learn about provisioning as well as managing devices throughout the device lifecycle, so that end users can be productive and organization data can be protected.
 
 ## Learning objectives
 

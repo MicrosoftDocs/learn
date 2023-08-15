@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: cognitive-services
 title: Create a bot with the Bot Framework SDK
 summary: Learn how to build a bot by using the Microsoft Bot Framework SDK.
 abstract: |

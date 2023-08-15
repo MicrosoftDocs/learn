@@ -1,4 +1,4 @@
-Woodgrove Bank has asked you to optimize the performance of the contactless payment application's user analytics workloads and queries. Applying the information you learned in Unit 6, you're ready to examine how to execute queries against distributed data.
+Woodgrove Bank has asked you to optimize the performance of the contactless-payment application's user analytics workloads and queries. Applying the information you learned in Unit 6, you're ready to examine how to execute queries against distributed data.
 
 You typically issue queries using standard PostgreSQL `SELECT` queries against the coordinator node in Azure Cosmos DB for PostgreSQL. It handles parallelizing `SELECT` queries involving complex selections, groupings, orderings, and JOINs to optimize and speed up query performance.
 
@@ -18,13 +18,13 @@ For the more complex aggregations and queries associated with Woodgrove Bank's a
 
 Aggregates execute using one of three methods, in this order of preference:
 
-1. When the aggregate is grouped by a table's distribution column, the coordinator can push down the execution of the entire query to each worker. All aggregates are supported in this situation and execute in parallel on the worker nodes. For example, counting the number of events, by type, per user in the contactless payments app can be accomplished using the following query:
+1. When the aggregate is grouped by a table's distribution column, the coordinator can push down the execution of the entire query to each worker. All aggregates are supported in this situation and execute in parallel on the worker nodes. For example, you can count the number of events, by type, per user in the contactless-payments app by using the following query:
 
     ```sql
     SELECT user_id, event_type, count(*) FROM payment_events GROUP By user_id, event_type;
     ```
 
-    This query runs quickly since the coordinator can push query execution down to each worker node. Push-down execution is possible because the `GROUP BY` clause contains the table's distribution column. Running the same query using the `EXPLAIN VERBOSE` statement allows you to see the query execution plan and how it's distributed across worker nodes to parallelize query execution.
+    This query runs quickly because the coordinator can push query execution down to each worker node. Push-down execution is possible because the `GROUP BY` clause contains the table's distribution column. Running the same query using the `EXPLAIN VERBOSE` statement allows you to see the query execution plan and how it's distributed across worker nodes to parallelize query execution.
 
 1. When the aggregate isn't grouped by a table's distribution column, the coordinator can still optimize on a case-by-case basis. Internal rules for specific aggregates like `sum()`, `avg()`, and `count(distinct)` allow queries to be rewritten for partial aggregation on workers. For instance, to calculate an average, the coordinator obtains a sum and a count from each worker, and then the coordinator node computes the final average.
 
@@ -49,7 +49,7 @@ When two tables are colocated, they can be joined efficiently on their common di
 The coordinator uses its metadata tables to determine which shards of the colocated tables might match with shards of the other table. This process allows the coordinator to prune away shard pairs that can't produce matching join keys. Joins between the remaining shard pairs are executed in parallel on the worker nodes, and the results are returned to the coordinator.
 
 > [!NOTE]
-> Be sure that the tables are distributed into the same number of shards and that the distribution columns of each table have exactly matching types. Attempting to join on columns of slightly different types such as int and bigint can cause problems.
+> Be sure that the tables are distributed into the same number of shards and that the distribution columns of each table have exactly matching types. Attempting to join on columns of slightly different types such as `int` and `bigint` can cause problems.
 
 For the contactless payment app, you colocated the `payment_events` and `payment_users` data by using the same distribution column, `user_id`. Performing a join between these two tables on the `user_id` column allows the coordinator to use the metadata tables to efficiently determine the rows with matching keys and parallelize query execution across worker nodes.
 
@@ -61,7 +61,7 @@ SELECT u.user_id, login, event_type, merchant_id, event_details FROM payment_eve
 
 Sometimes, you may need to join two tables on columns other than the distribution column. For such cases, Azure Cosmos DB for PostgreSQL allows joining on non-distribution key columns by dynamically repartitioning the tables for the query. Repartition joins require cross-shard shuffling of data, so they're less efficient than colocated joins. It would be best if you tried to distribute your tables by common join keys whenever possible.
 
-In such cases, the table(s) to be partitioned are determined by the query optimizer based on the distribution columns, join keys, and sizes. With repartitioned tables, only relevant shard pairs are joined with each other, drastically reducing the amount of data transferred across the network.
+In such cases, the query optimizer determines the table(s) to be partitioned based on the distribution columns, join keys, and sizes. With repartitioned tables, only relevant shard pairs are joined with each other, drastically reducing the amount of data transferred across the network.
 
 There are numerous queries Woodgrove Bank uses in their analytics workloads that will require repartition queries, so you need to configure the database to allow these types of queries. You can enable the execution of repartition queries by running the following command:
 
@@ -85,7 +85,7 @@ LIMIT 5;
 
 ### Reference table joins
 
-[Reference Tables](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables) can be used as "dimension" tables to join efficiently with large "fact" tables. Reference tables are replicated across all worker nodes, allowing a reference join to be decomposed into local joins on each worker and performed in parallel. A reference join is like a more flexible version of a colocated join because reference tables aren't distributed on any particular column and are free to join on any of their columns.
+You can use [reference tables](/azure/postgresql/hyperscale/concepts-nodes#type-2-reference-tables) as "dimension" tables to join efficiently with large "fact" tables. Reference tables are replicated across all worker nodes, allowing a reference join to be decomposed into local joins on each worker and performed in parallel. A reference join is like a more flexible version of a colocated join because reference tables aren't distributed on any particular column and are free to join on any of their columns.
 
 To populate a dashboard for Woodgrove Bank's contactless payment application, you've been asked to write a query to count the number of transactions by type for each merchant. This query requires joining the `payment_events` distributed table with the `payment_merchants` reference table on the `merchant_id` column.
 
@@ -105,7 +105,7 @@ Reference tables can also join with [local tables](/azure/postgresql/hyperscale/
 
 ## Modify data in distributed tables
 
-Executing `UPDATE` and `DELETE` commands against distributed tables is accomplished using the standard PostgreSQL UPDATE and DELETE commands. They can be completed without specifying the distribution column in a `WHERE` clause but will run more efficiently if included.
+Executing `UPDATE` and `DELETE` commands against distributed tables is accomplished using the standard PostgreSQL `UPDATE` and `DELETE` commands. They can be completed without specifying the distribution column in a `WHERE` clause, but will run more efficiently if it's included.
 
 ### Update rows in a distributed table
 
@@ -116,7 +116,7 @@ UPDATE payment_events
 SET event_details = jsonb_set(event_details, '{user_id}', CAST(user_id as text)::jsonb);
 ```
 
-When the updates affect multiple shards, as in the above example, the default behavior is to use a one-phase commit protocol. This behavior means that each worker sends a "done" message to the coordinator and then waits for a commit or abort message from the coordinator. Once all workers have finished executing the query and sent a "done" message, the coordinator decides whether to commit or abort the transaction.
+When the updates affect multiple shards, as in the preceding example, the default behavior is to use a one-phase commit protocol. This behavior means that each worker sends a "done" message to the coordinator and then waits for a commit or abort message from the coordinator. Once all workers have finished executing the query and sent a "done" message, the coordinator decides whether to commit or abort the transaction.
 
 For greater safety, you can enable [two-phase commit](https://www.citusdata.com/blog/2017/11/22/how-citus-executes-distributed-transactions/) by setting the `citus.multi_shard_commit_protocol` value to `2pc`, as follows:
 

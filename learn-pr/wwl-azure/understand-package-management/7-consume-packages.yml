@@ -4,13 +4,11 @@ title: Consume packages
 metadata:
   title: Consume packages
   description: "Consume packages"
-  ms.date: 05/18/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 4
 content: |
   [!include[](includes/7-consume-packages.md)]

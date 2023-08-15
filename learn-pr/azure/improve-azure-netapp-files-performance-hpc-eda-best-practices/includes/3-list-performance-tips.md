@@ -1,18 +1,18 @@
-In this module, we'll discuss mount options and client VM configurations that improve performance when you're running HPC or EDA applications on Azure NetApp Files.
+In this module, we discuss mount options and client VM configurations that improve performance when you're running HPC or EDA applications on Azure NetApp Files.
 
 >[!NOTE]
->Best practices for NFS clients depend on the applications being used. The following suggestions are not absolute and can be overridden by application recommendations or by workload testing. We highly recommend that you test those practices before deploying in production.
+>Best practices for NFS clients depend on the applications being used. The following suggestions are not absolute and can be overridden by application recommendations or by workload testing. We highly recommend that you test these practices before deploying in production.
 
 ## Use actimeo and nocto mount options to improve performance
 
 You can use the following mount options to improve performance in relatively static datasets and massive read scenarios:
 
 - `actimeo`: Controls the NFS client cache attributes of a directory. If you don't specify it, the NFS client uses a 60-second maximum.
-- `nocto`: Stands for "no close-to-open," which means a file can close before a write has finished to save time. By default, `nocto` is not set. That means all files will wait to finish writes before allowing a close.
+- `nocto`: Stands for "no close-to-open," which means a file can close before a write has finished to save time. By default, `nocto` isn't set. That means all files wait to finish writes before allowing a close.
 
 Most HPC applications, including EDA in our scenario, have relatively static datasets. In that case, you can use `nocto` and `actimeo` to reduce `getattr` or access operations to storage and speed up the application.
 
-For example, we recommend setting `"nocto,actimeo=600"` for EDA tools and library volumes. Because those files aren't changing, there's no cache coherency to maintain. Setting those mount options will eliminate metadata calls and improve overall performance.
+For example, we recommend setting `"nocto,actimeo=600"` for EDA tools and library volumes. Because those files aren't changing, there's no cache coherency to maintain. Setting those mount options eliminates metadata calls and improves overall performance.
 
 ## Tune system parameters for optimal performance
 
@@ -79,15 +79,15 @@ sudo sysctl -P
 
 ## Use the nconnect mount option to expand network connections when applicable
 
-The `nconnect` NFS mount option has entered general availability in the Linux kernel 5.3 or later. To check your client VM's Linux kernel, run:
+The `nconnect` NFS mount option entered general availability in the Linux kernel 5.3 or later. To check your client VM's Linux kernel, run:
 
 ```bash
 uname -r
 ```
 
-The purpose of `nconnect` is to provide multiple transport connections per TCP connection or mount points on a client. This technique helps increase parallelism and performance for NFS mounts. 
+The purpose of `nconnect` is to provide multiple transport connections per TCP connection or mount points on a client. This technique helps increase parallelism and performance for NFS mounts.
 
-The lower the number of clients, the more value `nconnect` provides in  helping to boost performance, because it can potentially utilize all network bandwidth. And its value gradually diminishes when the number of clients increases, because there's only a certain amount of bandwidth in total to go around.
+The lower the number of clients, the more value `nconnect` provides in  helping to boost performance, because it can potentially utilize all network bandwidth. Its value gradually diminishes when the number of clients increases, because there's only a certain amount of bandwidth in total to go around.
 
 Consider setting `sunrpc.tpc_max_slot_table_entries=256` or `512` if you're using `nconnect=8` or `16`.
 
@@ -98,11 +98,11 @@ Consider setting `sunrpc.tpc_max_slot_table_entries=256` or `512` if you're usin
 
 Azure NetApp Files supports both NFSv3 and NFSv4.1. You should validate what version your application requires and create your volume by using the appropriate version.
 
-When you're considering only performance, remember that NFSv3 will perform better than NFSv4.1 in most of the HPC and EDA applications.  
+When you're considering only performance, remember that NFSv3 performs better than NFSv4.1 in most of the HPC and EDA applications.  
 
 ## Choose the proper size of the rsize and wsize mount options
 
-The mount options `rsize` and `wsize` determine how much data is sent between the NFS client and server for each packet sent. This might help optimize performance for specific applications, because what's best for one application might not be best for other applications.
+The mount options `rsize` and `wsize` determine how much data is sent between the NFS client and server for each packet sent. Setting these options might help optimize performance for specific applications, because what's best for one application might not be best for other applications.
 
 The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the same value. We generally recommend that you set both `rsize` and `wsize` values as `262144(256 K)` in the mount options.
 
@@ -111,7 +111,7 @@ The best practice for Azure NetApp Files is to set `rsize` and `wsize` to the sa
 The `hard` and `soft` mount options specify whether the program that's using a file that uses NFS should take one of the following actions:
 
 - Stop and wait (`hard`) for the server to come back online if the NFS server is unavailable.
-- Report an error (`soft`). 
+- Report an error (`soft`).
 
 The `intr` mount option allows NFS processes to be interrupted when a mount is specified as a `hard` mount. We recommend using `intr` with `hard` mounts when applicable.
 

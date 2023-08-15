@@ -7,7 +7,7 @@ metadata:
   author: normesta
   ms.author: normesta
   ms.topic: interactive-tutorial
-  ms.service: blobs
+  ms.service: azure-blob-storage
 title: Access Metrics from your Azure Blob Storage Containers Programmatically
 summary: Learn how to write C# code that accesses Azure Blob Storage metrics from Azure Monitor.
 abstract: |

@@ -26,7 +26,7 @@ products:
 - azure
 - microsoft-sentinel
 - windows-security
-- windows-sysinternals
+- sysinternals
 - azure-policy
 subjects:
 - threat-protection

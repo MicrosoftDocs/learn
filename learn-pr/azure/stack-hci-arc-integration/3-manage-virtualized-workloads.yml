@@ -8,7 +8,9 @@ metadata:
   ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
-  ms.custom: e2e-hybrid
+  ms.custom:
+    - e2e-hybrid
+    - devx-track-arm-template
 title: Manage Azure Stack HCI-based virtualized workloads with Azure Arc
 durationInMinutes: 5
 content: |

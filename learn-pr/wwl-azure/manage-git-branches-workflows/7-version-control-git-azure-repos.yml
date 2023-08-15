@@ -4,13 +4,11 @@ title: Version Control with Git in Azure Repos
 metadata:
   title: Version Control with Git in Azure Repos
   description: "Version Control with Git in Azure Repos"
-  ms.date: 04/28/2023
+  ms.date: 06/29/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
 durationInMinutes: 60
 content: |
   [!include[](includes/7-version-control-git-azure-repos.md)]

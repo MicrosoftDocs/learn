@@ -18,26 +18,26 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following can you use to get limits for compute resources for any Azure service?'
+  - content: 'What can you use to get limits for compute resources for any Azure service?'
     choices:
     - content: 'Azure Monitor'
       isCorrect: false
-      explanation: 'Azure Monitor is not used to retrieve the limits for compute resources.'
-    - content: 'List Usage endpoint'
+      explanation: "Azure Monitor isn't used to retrieve the limits for compute resources."
+    - content: 'Usage - List endpoint'
       isCorrect: true
       explanation: 'Correct.'
-    - content: 'CosmosDB'
+    - content: 'Cosmos DB'
       isCorrect: false
-      explanation: 'CosmosDB is a storage system. It does not help you retrieve limits for compute resources.'
+      explanation: "Cosmos DB is a storage system. It doesn't help you retrieve limits for compute resources."
       
   - content: 'Before scaling out resources, you should:'
     choices:
-    - content: 'find the bugs in your application or service'
+    - content: 'Find the bugs in your application or service.'
       isCorrect: true
       explanation: 'Correct. You may find you need to scale out less.'
-    - content: 'scale up'
+    - content: 'Scale up.'
       isCorrect: false
-      explanation: 'It is best to first determine if there are issues in your application and service because you may find you do not need to scale.'
-    - content: 'increase soft service limits'
+      explanation: "It's best to first determine if there are issues in your application and service because you may find you don't need to scale."
+    - content: 'Increase soft service limits.'
       isCorrect: false
-      explanation: 'It is best to first determine if issues in your application or service are causing you to consume more resources than you need.'
+      explanation: "It's best to first determine if issues in your application or service are causing you to consume more resources than you need."

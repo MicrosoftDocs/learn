@@ -22,7 +22,7 @@ roles:
 products:
 - azure
 - azure-log-analytics
-- azure-sentinel
+- microsoft-sentinel
 subjects:
 - cloud-security
 modules:
