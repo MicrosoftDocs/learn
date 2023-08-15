@@ -46,7 +46,7 @@ A bundler is a tool that takes JavaScript, CSS, images, and other artifacts and 
 - **Parcel:** Parcel is a newer bundler that's easy to use and provides a lot of features out of the box with no configuration.
 - **Vite:** Vite is a newer bundler focusing on speed and simplicity. It provides configured templates from many frameworks.
 
-## What is a front end development server?
+## What is a front-end development server?
 
 When using a SPA framework, the framework can either provide a local HTTP server to serve the app or you may need to provide that server. A framework like **Vite** provides that server, and allows you to configure the server to help support your development work. 
 

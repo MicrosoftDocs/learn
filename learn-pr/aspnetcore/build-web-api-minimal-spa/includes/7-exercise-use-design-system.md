@@ -39,7 +39,7 @@ In the `PizzaList` component, the Material UI components TextField, Button, Box,
 
 ## Test the new design
 
-1. If you stopped your front end app, run the following command to start the app:
+1. If you stopped your front-end app, run the following command to start the app:
 
     ```bash
     npm run dev

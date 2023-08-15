@@ -20,7 +20,6 @@ function Pizza() {
     ];
     setData(pizzaData);
     setMaxId(Math.max(...pizzaData.map(pizza => pizza.id)));
-
   };
 
   const handleCreate = (item) => {

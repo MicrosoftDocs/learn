@@ -19,11 +19,11 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
     What you get is a directory, _PizzaClient_, that contains your scaffolded React app. While the code and project are TypeScript, there's little TypeScript used in the project. 
 
-1. Update the `vite.config.js` to provide a consistent front end port. Replace the contents of `./vite.config.js` with the following code:
+1. Update the `vite.config.js` to provide a consistent front-end port. Replace the contents of `./vite.config.js` with the following code:
 
     :::code language="javascript" source="../code/vite.config.js" highlight="8-11":::
 
-    * **PORT**: The port is set to 3000, a common port number used for front end apps..
+    * **PORT**: The port is set to 3000, a common port number used for front-end apps..
 
 1. Start the app by calling `npm run dev`:
 
@@ -65,16 +65,7 @@ Create a file in the _src_ subdirectory named  _PizzaList.jsx_ and give it the f
 
 This is a React component called `PizzaList` that renders a form to create and edit pizza items. The component receives props and uses the useState and useEffect hooks to manage the form data and the editing state:
 
-* The `handleFormChange` function updates the form data when the user types in the input fields. 
-* The `handleSubmit` function creates or updates a pizza item depending on whether the editingId state is null or not. 
-* The `handleEdit` function sets the editingId state to the ID of the item being edited. 
-* The `handleCancelEdit` function resets the form data and the editingId state. 
-* The `handleDelete` function deletes a pizza item by calling the `onDelete` prop with the item ID.
-
 The PizzaList component renders a form with two input fields for the pizza `name` and `description`, and two buttons for creating or updating a pizza item. 
-
-* Edit mode: If the `editingId` state isn't null, the form is in edit mode, and the button label is "Update". 
-* Otherwise, the form is in create mode and the button label is "Create". 
 
 ## Add Pizza to your app
 

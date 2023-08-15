@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.aspnetcore.build-web-api-minimal-spa.design-style
-title: Incorporate consistent style with a design system 
+title: Design the user interface (UI)
 metadata:
-  title: Incorporate consistent style with a design system 
+  title: Design the user experience
   description: Learn how to use a design system, components, and css to provide a consistent and maintainable style for your site.
   ms.date: 08/11/2023
   author: softchris
