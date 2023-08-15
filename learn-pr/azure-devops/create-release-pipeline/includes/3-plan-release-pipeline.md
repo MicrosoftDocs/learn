@@ -97,7 +97,7 @@ Here's an example configuration that you'll run later in this module. This confi
 
 #### Jobs
 
-A _job_ is a series of steps, or tasks, that run sequentially as a unit. Every pipeline stage has one job by default, even when that stage doesn't use the `job` keyword.
+A _job_ is a series of steps—or tasks—that run sequentially as a unit. Every pipeline stage has one job by default, even when that stage doesn't use the `job` keyword.
 
 A job can run in an agent pool, on a container, or directly on the Azure DevOps server. The example job shown here runs on a Microsoft-hosted Ubuntu agent.
 
