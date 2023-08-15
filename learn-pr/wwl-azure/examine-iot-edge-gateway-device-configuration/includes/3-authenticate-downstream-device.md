@@ -256,12 +256,3 @@ Code samples for other coding languages are available as follows:
 https://github.com/Azure/azure-iot-sdk-node/blob/main/device/samples/javascript/simple_sample_device_x509.js
   :::column-end:::
 :::row-end:::
-:::row:::
-  :::column:::
-    Python
-  :::column-end:::
-  :::column:::
-    send\_message\_x509.py
-[https://github.com/Azure/azure-iot-sdk-python/blob/main/samples/async-hub-scenarios/send\_message\_x509.py](https://github.com/Azure/azure-iot-sdk-python/blob/main/samples/async-hub-scenarios/send_message_x509.py)
-  :::column-end:::
-:::row-end:::
