@@ -1,7 +1,3 @@
-
-
-
-
 The C# programming language relies on data types extensively. Data types restrict the kinds of values that can be stored in a given variable, which can be helpful when trying to create error free code. As a developer, you confidently perform operations on your variables because you know in advance that it only stores valid values.
 
 Suppose your job is to build a new application that must retrieve, manipulate, and store many different kinds of data, including individual numeric values and sequences of numeric and text values. Choosing the right data types is critical to the success of your software development efforts. But what are your options, and what criteria should you use when faced with several data types that seem similar?
