@@ -28,7 +28,7 @@ Ideally, you have a best-guess estimate of the amount of data needed for your HP
 
 In summary, you want to choose a size that can store the working set of your data. For example, your storage might have 100 TB of data, but your HPC workload only reads about 8 TB.
 
-Begin by choosing a a cache type and maximum throughput. Higher throughput values correspond to faster and more expensive resources.
+Begin by choosing a cache type and maximum throughput. Higher throughput values correspond to faster and more expensive resources.
 
 :::image type="content" source="../media/4-create-the-cache-03-cache-tab.png" alt-text="Diagram showing the Cache tab of the Azure HPC Cache creation wizard.":::
 
@@ -54,7 +54,7 @@ Select **Next: Review + Create** to move to the last page of the wizard.
 
 ## Review + Create
 
-The **Review + Create** page is the final step in creating the cache. It checks all the user input to better insure a successful cache creation.
+The **Review + Create** page is the final step in creating the cache. It checks all the user input to better ensure a successful cache creation.
 
 On this page, an automated validation check is performed. This check verifies that the information provided on the previous pages will create a valid cache.
 
