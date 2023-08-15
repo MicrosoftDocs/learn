@@ -67,7 +67,7 @@ In this procedure, you open the verbose logs that were saved into your Azure Blo
 
 1. In the middle menu pane, select **Storage browser**. The **Storage browser** pane appears.
 
-1. Expand **Blob containers**, and then select **asplogs**.
+1. Expand **Blob containers**, and then select **appsrvplogs**.
 
 1. In the container pane, double-click **contosofashions\<_your-number_\>**, then double-click each of the year, month, and date folders.
 

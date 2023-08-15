@@ -52,17 +52,17 @@ In this task, you use the Azure portal to enable app logging for the file system
 
 1. Select **contosofashionsNNNNN**, where NNNNN represents the random number generated for your app. The Overview pane for your App Service appears.
 
-1. In the **Essentials** section, copy the **default domain** and paste it in a new browser tab (For example, https&#58;//contosofashionsNNNNN.azurewebsites.net). The home page for *Contoso Fashions* should appear.
+1. In the **Essentials** section, copy the **default domain** and paste it in a new browser tab (For example,  contosofashionsNNNNN.azurewebsites.net). The home page for *Contoso Fashions* should appear.
 
    Let's set up app logging.
 
-1. In the Azure portal, in the *App Services* menu, scroll down to **Monitoring**, and then select **App Service logs**. The **App Service logs** pane appears.
+1. In the Azure portal, in the *App Services* menu, scroll down to the **Monitoring** section and select **App Service logs**. The **App Service logs** pane appears.
 
 1. Under **Application Logging (Filesystem)**, select **On**, and in the **Level** box dropdown list, select **Error**.
 
 1. Under **Application Logging (Blob)**, select **On**, and in the **Level** box dropdown list, select **Verbose**.
 
-1. Select the link under **Storage Containers**. The **Storage accounts** pane appears. 
+1. Select the **0** link under **Storage Containers**. The **Storage accounts** pane appears. 
 
     > [!NOTE]
     > If a notification **Storage not configured** appears, select that text, and complete the previous 3 steps.
@@ -71,9 +71,9 @@ In this task, you use the Azure portal to enable app logging for the file system
 
 1. In the command bar, select **Container**. The **New container** pane appears.
 
-1. In the **Name** box, enter *asplogs*, and then select **Create**.
+1. In the **Name** box, enter *appsrvplogs*, and then select **Create**.
 
-1. In the **Containers** pane, select **asplogs**, and then choose **Select**. The **App Service logs** pane appears.
+1. In the **Containers** pane, select **appsrvplogs**, and then choose **Select**. The **App Service logs** pane appears.
 
 1. In the **Retention Period (Days)** box, enter **5**.
 
