@@ -265,12 +265,3 @@ https://github.com/Azure/azure-iot-sdk-node/blob/main/device/samples/javascript/
 [https://github.com/Azure/azure-iot-sdk-python/blob/main/samples/async-hub-scenarios/send\_message\_x509.py](https://github.com/Azure/azure-iot-sdk-python/blob/main/samples/async-hub-scenarios/send_message_x509.py)
   :::column-end:::
 :::row-end:::
-:::row:::
-  :::column:::
-    Java
-  :::column-end:::
-  :::column:::
-    SendEventX509.java
-[https://github.com/Azure/azure-iot-sdk-java/tree/main/device/iot-device-samples/send-event-x509](https://github.com/Azure/azure-iot-sdk-java/tree/main/device/iot-device-samples/send-event-x509)
-  :::column-end:::
-:::row-end:::
