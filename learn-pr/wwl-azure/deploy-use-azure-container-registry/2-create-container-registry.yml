@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-use-azure-container-registry.create-container-registry
-title: Create a container registry
+title: Try-This exercise - Create a container registry
 metadata:
-  title: Create a container registry
-  description: "Create a container registry"
-  ms.date: 07/30/2023
+  title: Try-This exercise - Create a container registry
+  description: "Try-This exercise - Create a container registry"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

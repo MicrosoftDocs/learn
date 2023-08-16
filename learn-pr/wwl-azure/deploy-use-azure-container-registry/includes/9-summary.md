@@ -1,4 +1,3 @@
-
 In this module, you learned how to:<br>
 
  -  Create an Azure container registry instance with the Azure portal.

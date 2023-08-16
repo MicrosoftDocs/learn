@@ -1,4 +1,3 @@
-
 This module covers the creation of an Azure Container Registry instance with the Azure portal.
 
 ## Scenario

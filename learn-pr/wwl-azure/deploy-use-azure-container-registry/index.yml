@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-use-azure-container-registry
 metadata:
   title: Deploy and use Azure Container Registry
   description: "Deploy and use Azure Container Registry"
-  ms.date: 07/30/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -21,6 +21,7 @@ abstract: |
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:

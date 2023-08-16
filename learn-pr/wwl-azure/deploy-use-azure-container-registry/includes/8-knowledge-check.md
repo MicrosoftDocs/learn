@@ -1,4 +1,3 @@
-
 ## Multiple Choice
 What is the purpose of Azure Container Registry?
 ( ) To create and manage virtual machines {{Incorrect. Azure Container Registry is not used to create and manage virtual machines.}}

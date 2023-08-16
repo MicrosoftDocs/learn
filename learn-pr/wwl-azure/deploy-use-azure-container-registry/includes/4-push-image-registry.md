@@ -1,3 +1,11 @@
+Use this Try-This exercise to gain some hands-on experience with Azure Kubernetes Service.
+
+For this exercise, Docker commands are used to push a container image into the registry, and finally pull and run the image from your registry.
+
+You must also have Docker installed locally and running. Docker provides packages that easily configure Docker on any [Mac](https://docs.docker.com/docker-for-mac/), [Windows](https://docs.docker.com/docker-for-windows/), or [Linux](https://docs.docker.com/engine/installation/#supported-platforms) system.
+
+> [!NOTE]
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 To push an image to an Azure Container registry, you must first have an image. If you don't yet have any local container images, run the following [docker pull](https://docs.docker.com/engine/reference/commandline/pull/) command to pull an existing public image.
 
@@ -25,7 +33,7 @@ docker tag mcr.microsoft.com/hello-world newregistryapl.azurecr.io/hello-world:v
 :::image type="content" source="../media/tag-registry-command-line-39dcbb2b.png" alt-text="Displays a screenshot of the docker tag.":::
 
 
-Use [docker push](https://docs.docker.com/engine/reference/commandline/push/) to push the image to the registry instance. Replace **`<login-server>`** with the sign-in server name of your registry instance. This example creates the **hello-world** repository, containing the **`hello-world:v1 image`**.<br>
+Use [docker push](https://docs.docker.com/engine/reference/commandline/push/) to push the image to the registry instance. Replace `<login-server>` with the sign-in server name of your registry instance. This example creates the **hello-world** repository, containing the `hello-world:v1 image`.<br>
 
 ```azurecli
 docker push <login-server>/hello-world:v1

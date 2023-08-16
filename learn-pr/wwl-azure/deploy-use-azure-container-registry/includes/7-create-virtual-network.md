@@ -1,8 +1,12 @@
+Use this Try-This exercise to gain some hands-on experience with Azure Kubernetes Service.
 
-This unit shows you how to create a virtual network by using the Azure portal. A virtual network is the basis for private networks in Azure. Azure Virtual Network enables Azure resources like VMs to securely communicate with each other and the internet.
+This exercise shows you how to create a virtual network by using the Azure portal. A virtual network is the basis for private networks in Azure. Azure Virtual Network enables Azure resources like VMs to securely communicate with each other and the internet.
 
 :::image type="content" source="../media/virtual-network-overview-111535e7.png" alt-text="Diagram showing how to create a virtual network.":::
 
+
+> [!NOTE]
+> To complete this exercise you'll need an [Azure Subscripton](https://azure.microsoft.com/free/).
 
 ## Sign in to Azure
 

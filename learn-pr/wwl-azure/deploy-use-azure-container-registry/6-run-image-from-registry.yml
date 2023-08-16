@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-use-azure-container-registry.run-image-from-registry
-title: Run an image from the registry
+title: Try-This exercise - Run an image from the registry
 metadata:
-  title: Run an image from the registry
-  description: "Run an image from the registry"
-  ms.date: 07/30/2023
+  title: Try-This exercise - Run an image from the registry
+  description: "Try-This exercise - Run an image from the registry"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
