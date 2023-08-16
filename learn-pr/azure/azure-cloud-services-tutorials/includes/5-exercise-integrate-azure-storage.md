@@ -70,9 +70,6 @@ With everything prepared, it's time to create a *Tracked Object*.
 
 ## Upload and download images from Azure Blob Storage
 
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
-
 In this section, you'll use Azure Blob Storage to upload and download images to use as thumbnails for *Tracked Objects*.
 
 > [!NOTE]
@@ -83,9 +80,6 @@ In this section, you'll use Azure Blob Storage to upload and download images to 
 2. Now rerun the application and search for the *Tracked Object* and the previously uploaded image should appear as thumbnail.
 
 ## Delete images from Azure Blob Storage
-
-> [!Note]
-> Building and testing on HoloLens 2 is not mandatory. You can test on the [HoloLens 2 Emulator](/windows/mixed-reality/develop/advanced-concepts/using-the-hololens-emulator) if you don't have a HoloLens device. You can purchase devices at [HoloLens.com](http://hololens.com/).
 
 In the previous section, you uploaded new images to Azure Blob Storage. In this section, you'll delete an image thumbnail for your *Tracked Objects*.
 

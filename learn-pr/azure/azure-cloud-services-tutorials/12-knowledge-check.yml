@@ -25,7 +25,7 @@ quiz:
         - content: "Both PaaS and IaaS"
           isCorrect: true
           explanation: Includes both PaaS and IaaS
-    - content: "Which of the following elements is a nonrelational storage system for large-scale storage?"
+    - content: "Which of the following elements has a nonrelational storage system for large-scale storage?"
       choices:
         - content: "Application"
           isCorrect: false
