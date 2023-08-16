@@ -1,6 +1,6 @@
 The last time your band went on tour, your website went down while your fans were trying to buy tickets. You're not sure if the web server ran out of memory, or if the virtual machine (VM) wasn't the right size. For your new tour, you'd like a dashboard to keep track of the VM's traffic, memory, and CPU usage.
 
-In this exercise, you'll install the Azure Monitor Agent on your new VM to collect near real-time metrics at the guest OS level. After you install the agent, you'll create a KPI dashboard to view the new metrics being captured.
+In this exercise, you install the Azure Monitor Agent on your new VM to collect near real-time metrics at the guest OS level. After you install the agent, you create a KPI dashboard to view the new metrics being captured.
 
 ## Install the Azure Monitor agent by using data collection rules
 
@@ -28,7 +28,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
 
     :::image type="content" source="../media/6-dcr-add-resources.png" alt-text="Screenshot of the data collection rules resources" lightbox="../media/6-dcr-add-resources.png":::
 
-1. On the **Collect and deliver** tab, select **Add data source** to configure the data to be collected and the destination where it will be sent.
+1. On the **Collect and deliver** tab, select **Add data source** to configure the data to be collected and the destination to send it to.
 
     You have different configuration options depending on the OS installed on the VM. At the basic level, these options are performance counters (CPU, Memory, Disk and Network) which can be sent to Azure Monitor Metrics and/or Azure Monitor Logs. However, you can also choose to collect custom metrics like percentage of free disk space on Windows, or the amount of swap available on Linux.
 
@@ -43,7 +43,7 @@ In this exercise, you'll install the Azure Monitor Agent on your new VM to colle
     Confirm your settings include a destination type of Azure Monitor metrics.
 
 1. On the bottom of the pane, select **Add data source**.
-1. Select **Review and create** > **Create**. This command installs the Azure Monitor Agent on the selected VM, and starts data collection with the parameters defined in the rule created above.
+1. Select **Review and create** > **Create**. This command installs the Azure Monitor Agent on the selected VM, and starts data collection with the parameters defined in the rule you created.
 
 ## Confirm that the agent is installed on the VM
 

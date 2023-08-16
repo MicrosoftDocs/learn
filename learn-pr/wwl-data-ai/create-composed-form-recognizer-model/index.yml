@@ -25,7 +25,7 @@ roles:
 - ai-engineer
 products:
 - azure-cognitive-search
-- azure-form-recognizer
+- document-intelligence
 subjects:
 - artificial-intelligence
 units:

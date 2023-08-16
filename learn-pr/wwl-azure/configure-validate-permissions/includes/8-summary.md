@@ -1,10 +1,10 @@
-In this module, you learned the key concepts and best practices for configuring and validating permissions in Azure DevOps. You learned to configure user permissions, pipeline permissions, approval, branch checks, and auditing and managing permissions.
+In this module, you learned the key concepts and best practices for configuring and validating permissions in Azure DevOps. You learned to configure user permissions, pipeline permissions, approvals, branch checks, and auditing and managing permissions.
 
-You learned how to describe the benefits and usage of:
+You learned how to:
 
 - Configure and validate user permissions
 - Configure and validate pipeline permissions
-- Configure and validate approval and branch checks
+- Configure and validate approvals and branch checks
 - Manage and audit permissions in Azure DevOps
 
 ## Learn more

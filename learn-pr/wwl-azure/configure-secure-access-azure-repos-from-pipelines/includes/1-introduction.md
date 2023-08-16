@@ -1,6 +1,6 @@
-It's essential to have a secure environment where pipelines can access resources, such as packages, secrets, and services, without exposing sensitive information. In this module, you'll learn the best practices and ensure secure access to resources when working with Azure DevOps.
+It's essential to have a secure environment where pipelines can access resources, such as packages, secrets, and services, without exposing sensitive information. In this module, you'll learn the best practices to ensure secure access to resources when working with Azure DevOps.
 
-In this module, we cover the steps to configure secure access to packages, configure credential secrets and secrets for services in Azure DevOps. Finally, we cover how to use the service connection in a YAML pipeline to access packages securely.
+In this module, we cover the steps to configure secure access to packages and configure credential secrets and secrets for services in Azure DevOps. Finally, we cover how to use the service connection in a YAML pipeline to access packages securely.
 
 ### Learning objectives
 
@@ -13,7 +13,7 @@ After completing this module, students and professionals can:
 
 ### Prerequisites
 
-You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have them yet, see:
 
 - [Create an organization - Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization)
 - [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
