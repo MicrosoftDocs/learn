@@ -1,14 +1,16 @@
-
 In this exercise, you step through the process of applying pod security settings to an AKS cluster by using Azure Policy. The exercise consists of the following tasks:
 
- -  Provision an AKS cluster
- -  Install the Azure Policy add-on for AKS
- -  Assign an Azure Policy initiative to an AKS cluster
- -  Validate the effect of Azure Policy
+ -  Deploy an AKS cluster.
+ -  Install the Azure Policy add-on for AKS.
+ -  Assign an Azure Policy initiative to an AKS cluster.
+ -  Validate the effect of Azure Policy.
 
-### Provision an AKS cluster
+### Deploy an AKS cluster.
 
-In this task, you provision an AKS cluster. You use this cluster throughout all exercises in the module. While you could provision a cluster by using the Azure portal, you rely on Azure CLI instead for the simplicity sake.
+In this exercise, you deploy an AKS cluster. You use this cluster throughout all exercises in the module. While you can deploy a cluster using the Azure portal, you can use on Azure CLI instead for simplicity.
+
+> [!NOTE]
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).
 
 4.  From your computer, open a web browser window and navigate to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 5.  In the Azure portal, select the **Azure Cloud Shell** icon.
@@ -46,7 +48,7 @@ az aks create --resource-group $AKSRG --name $AKSNAME --enable-managed-identity 
     
     The output of the command should include the listing of the AKS nodes.
 
-### Install the Azure Policy add-on for AKS
+### Install the Azure Policy add-on for AKS.
 
 In this task, you install the Azure Policy add-on for AKS.
 
@@ -57,13 +59,13 @@ In this task, you install the Azure Policy add-on for AKS.
     az provider show --namespace Microsoft.PolicyInsights --output table
     ```
 
-2.  Review the output and, if necessary, wait until the provider status changes to registered (you can re-run the second command to display the updated status).
+2.  Review the output and, if necessary, wait until the provider status changes to registered (you can run the second command to display the updated status).
 3.  To install the add-on, run the following commands:
     
     ```azurecli
     AKSRG='aks-01-RG'
     AKSNAME='aks-01'
-    az aks enable-addons --addons azure-policy --name $AKSNAME --resource-group $AKSRG
+    az ads enable-addons --addons azure-policy --name $AKSNAME --resource-group $AKSRG
     ```
     
     > [!NOTE]
@@ -84,7 +86,7 @@ In this task, you install the Azure Policy add-on for AKS.
 
 The command should generate output `No resources found.`
 
-### Assign an Azure Policy initiative to an AKS cluster
+### Assign an Azure Policy initiative to an AKS cluster.
 
 In this task, you assign an Azure Policy initiative to an AKS cluster. You use one of the built-in initiatives named *Kubernetes cluster pod security baseline standards for Linux-based workloads*.
 
@@ -93,17 +95,17 @@ In this task, you assign an Azure Policy initiative to an AKS cluster. You use o
 3.  From the **Category** dropdown list box, use **Select all** to clear the filter and then select **Kubernetes**.
 4.  In the **Definition type** dropdown list, select **Initiative**.
 5.  In the list of the filtered policies, select the policy initiative named **Kubernetes cluster pod security baseline standards for Linux-based workloads**, and then select the **Assign initiative**.
-6.  On the **Basics** tab of the **Assign initiative** page, set the **Scope** to your Azure subscription and the resource group named **aks-01-RG**, which hosts the newly deployed AKS cluster
+6.  On the **Basics** tab of the **Assign initiative** page, set the **Scope** to your Azure subscription and the resource group named **aks-01-RG**, which hosts the newly deployed AKS cluster.
 7.  Ensure that the **Policy enforcement** is set to **Enabled**, and then select **Next**.
 8.  On the **Basics** tab of the **Assign initiative** page, select **Next**.
 9.  On the **Advanced** tab, select **Next**.
-10. On the **Parameters** tab, uncheck the checkbox **Only show parameters that need input or review.** Next, in the **Effect drop-down** list, select **Deny** and then select **Review + create**.
+10. On the Parameters tab, remove the **Only show parameters that need input or review** parameter**.** Next, in the **Effect drop-down** list, select **Deny** and then select **Review + create**.
     
     > [!NOTE]
     > You can apply exclusions and inclusions to individual namespaces.
 
 10. On the **Review + create** tab, select **Create.**
-11. Wait until the assignment takes effect (about 20 minutes). In the Azure portal, navigate to the **Azure Policy** page, select **Compliance**, and check if it displays the compliance status for the newly created policy assignment. Alternatively, you can rerun the kubectl get constrainttemplates command.
+11. Wait until the assignment takes effect (about 20 minutes). In the Azure portal, navigate to the **Azure Policy** page, select **Compliance**, and check if it displays the compliance status for the newly created policy assignment. Alternatively, you can rerun the kubectl get constraint templates command.
 
 ### Validate the effect of Azure Policy
 

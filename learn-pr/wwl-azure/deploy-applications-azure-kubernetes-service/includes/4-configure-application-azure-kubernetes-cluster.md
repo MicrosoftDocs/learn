@@ -1,4 +1,3 @@
-
 To optimize container orchestration environments, your organization needs to be able to control platform-level capabilities, including not only compute but also storage. Choosing the most suitable storage solution must account for many factors, including performance, availability, recoverability, security, and cost.
 
 AKS supports both stateless and stateful workloads. Stateful workloads typically require a storage solution for storing and retrieving data. To accommodate this requirement, you can apply a range of native Azure services, including managed databases, disks, and file and blob storage. Each of these options offers different SKUs, sizes, and performance characteristics. Selecting the right option requires careful consideration.

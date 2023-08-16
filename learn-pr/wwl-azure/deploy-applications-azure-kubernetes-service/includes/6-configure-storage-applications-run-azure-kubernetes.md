@@ -1,4 +1,3 @@
-
 So far, you've been provisioning individual pods to illustrate the security and storage related AKS concepts. However, the recommended approach to provisioning pods relies on using deployments. In this unit, we examine the differences between pods and deployments and describe the benefits associated with the latter.
 
 ### Explore Kubernetes pods

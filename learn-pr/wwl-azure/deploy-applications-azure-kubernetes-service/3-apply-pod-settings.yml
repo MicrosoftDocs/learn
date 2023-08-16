@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-applications-azure-kubernetes-service.apply-pod-settings
-title: Exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
+title: Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
 metadata:
-  title: Exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
-  description: "Exercise - Apply Azure Kubernetes Service pod settings using Azure Policy"
-  ms.date: 07/30/2023
+  title: Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy
+  description: "Try-This exercise - Apply Azure Kubernetes Service pod settings using Azure Policy"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

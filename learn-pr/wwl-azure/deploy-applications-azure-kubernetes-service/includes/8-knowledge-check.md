@@ -1,4 +1,3 @@
-
 ## Multiple Choice
 What is the benefit of using Kubernetes Deployments instead of scheduling individual pods?
 ( ) Deployments allow for more resource allocation to each pod {{Incorrect. Deployments do not allocate more resources to each pod, but rather manage a group of identical pods.}}

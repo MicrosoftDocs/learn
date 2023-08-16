@@ -1,5 +1,7 @@
-
 In this exercise, you walk through the process of creating and updating a deployment in an Azure Kubernetes Service cluster. You use the cluster you provisioned in the first exercise of this module.
+
+> [!NOTE]
+> To complete this exercise, you need an [Azure Subscription](https://azure.microsoft.com/free/).
 
 ### Prepare for creating a deployment to an Azure Kubernetes Service cluster.
 

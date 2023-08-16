@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
  -  Provision an AKS cluster

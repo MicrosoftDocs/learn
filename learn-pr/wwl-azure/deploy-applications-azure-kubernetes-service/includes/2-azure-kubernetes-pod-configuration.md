@@ -1,4 +1,3 @@
-
 You can apply and enforce security settings on Azure Kubernetes Service cluster-hosted pods by using Azure Policy. Azure Policy helps enforce organizational standards and assess compliance at-scale. After you install the Azure Policy add-on for AKS, you can assign built-in and custom policy definitions either individually or in groups referred to as policy initiatives.
 
 ### Explore Azure Policy add-on for AKS
