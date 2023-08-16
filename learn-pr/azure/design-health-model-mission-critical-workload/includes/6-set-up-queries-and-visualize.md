@@ -62,7 +62,7 @@ avgProcessingTime
 
 ### Azure Key Vault
 
-The following sample demonstrates an Azure Key Vault query:
+The following sample demonstrates an [Azure Key Vault query](https://github.com/Azure/Mission-Critical-Online/blob/main/src/infra/monitoring/queries/stamp/KeyvaultHealthStatus.kql):
 
 ```kusto
 let _maxAge = 2d; // Include data only from the last two days
