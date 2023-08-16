@@ -3,7 +3,7 @@ uid: learn.wwl.configure-scaling-azure-kubernetes-service
 metadata:
   title: Configure scaling in Azure Kubernetes Service
   description: "Configure scaling in Azure Kubernetes Service"
-  ms.date: 07/30/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -20,6 +20,7 @@ abstract: |
 prerequisites: |
   None
 iconUrl: /training/achievements/generic-badge.svg
+hidden: true
 levels:
 - intermediate
 roles:

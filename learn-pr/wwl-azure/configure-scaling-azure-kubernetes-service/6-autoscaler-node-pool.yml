@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-scaling-azure-kubernetes-service.autoscaler-node-pool
-title: Exercise - Scale the node count in an Azure Kubernetes Service cluster
+title: Try-This exercise - Scale the node count in an Azure Kubernetes Service cluster
 metadata:
-  title: Exercise - Scale the node count in an Azure Kubernetes Service cluster
-  description: "Exercise - Scale the node count in an Azure Kubernetes Service cluster"
-  ms.date: 07/30/2023
+  title: Try-This exercise - Scale the node count in an Azure Kubernetes Service cluster
+  description: "Try-This exercise - Scale the node count in an Azure Kubernetes Service cluster"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

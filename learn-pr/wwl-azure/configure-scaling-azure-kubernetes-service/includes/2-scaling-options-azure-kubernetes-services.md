@@ -1,4 +1,3 @@
-
 When running applications in Azure Kubernetes Service (AKS), you may need to increase or decrease the amount of compute resources. As you change the number of application instances you have, you may need to change the number of underlying Kubernetes nodes. You also may need to provision a larger number of application instances.
 
 This module summarizes the core AKS application scaling concepts, including:

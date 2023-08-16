@@ -1,4 +1,3 @@
-
 This module covers the scaling applications in Azure Kubernetes Service (AKS), including manually scaling pods or nodes and integrating with Azure Container Instances (ACI).
 
 ## Scenario

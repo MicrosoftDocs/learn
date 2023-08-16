@@ -1,4 +1,3 @@
-
 ## Multiple Choice
 What is the purpose of the Horizontal Pod Autoscaler in Azure Kubernetes Service?
 ( ) To provision a larger number of application instances {{Incorrect. Provisioning a larger number of application instances is a separate concept from the purpose of the Horizontal Pod Autoscaler.}}
