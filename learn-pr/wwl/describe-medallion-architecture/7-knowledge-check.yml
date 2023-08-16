@@ -1,0 +1,48 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-medallion-architecture.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 3
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "Which of the following sets of layers are typically associated with the Medallion Architecture for data management?"
+    choices:
+    - content: "Raw, Polished, Refined"
+      isCorrect: false
+      explanation: "Incorrect. These terms don't align with the specific layers commonly used in the medallion architecture."
+    - content: "Bronze, Silver, Gold"
+      isCorrect: true
+      explanation: "Correct. This is the correct sequence of layers typically used in the medallion architecture. Data flows from the raw and unrefined state (Bronze) to a curated and validated state (Silver), and finally to an enriched and well-structured presentation state (Gold)."
+    - content: "Initial, Intermediate, Final"
+      isCorrect: false
+      explanation: "Incorrect. While these terms suggest a progression, they don't correspond to the widely recognized layers of the medallion architecture."
+  - content: "Which tool is best suited for data transformation in Fabric when dealing with large-scale data that will continue to grow?"
+    choices:
+    - content: "Dataflows (Gen2)"
+      isCorrect: false
+      explanation: "Incorrect. Dataflows (Gen2) are effective for smaller datasets."
+    - content: "Pipelines"
+      isCorrect: false
+      explanation: "Incorrect. Pipelines are primarily used for data orchestration, moving data between different layers and processes within the medallion architecture."
+    - content: "Notebooks"
+      isCorrect: true
+      explanation: "Correct. Notebooks are a more suitable tool for data transformation with big data in Fabric."
+  - content: "Question 3?"
+    choices:
+    - content: "To grant access to all items within a workspace."
+      isCorrect: false
+      explanation: "Incorrect. Item permissions only grant access to specific items."
+    - content: "To grant access to specific columns within a table."
+      isCorrect: false
+      explanation: "Incorrect. Item permissions relate to accessing data within a warehouse, but don't pertain to specific columns within tables."
+    - content: "To grant access to individual warehouses for downstream consumption."
+      isCorrect: true
+      explanation: "Correct.  By granting access to a single data warehouse using item permissions, you can enable downstream consumption of data."

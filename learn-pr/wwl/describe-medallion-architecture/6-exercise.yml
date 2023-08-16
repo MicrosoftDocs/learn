@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.describe-medallion-architecture.exercise
+title: Exercise - Organize your Fabric lakehouse using a medallion architecture
+metadata:
+  title: Exercise - Organize your Fabric lakehouse using a medallion architecture
+  description: "Exercise - Organize your Fabric lakehouse using a medallion architecture"
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+durationInMinutes: 30
+content: |
+  [!include[](includes/6-exercise.md)]
