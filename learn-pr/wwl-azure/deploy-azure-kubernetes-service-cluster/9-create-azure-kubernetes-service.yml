@@ -1,15 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.deploy-azure-kubernetes-service-cluster.create-azure-kubernetes-service
-title: 'Exercise: Create a Azure Kubernetes Service cluster'
+title: Try-This exercise - Create a Azure Kubernetes Service cluster
 metadata:
-  title: 'Exercise: Create a Azure Kubernetes Service cluster'
-  description: "Exercise: Create a Azure Kubernetes Service cluster"
-  ms.date: 07/30/2023
+  title: Try-This exercise - Create a Azure Kubernetes Service cluster
+  description: "Try-This exercise - Create a Azure Kubernetes Service cluster"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 17
 content: |
   [!include[](includes/9-create-azure-kubernetes-service.md)]

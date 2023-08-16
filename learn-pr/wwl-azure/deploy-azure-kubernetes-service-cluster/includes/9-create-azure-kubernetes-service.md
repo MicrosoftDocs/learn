@@ -1,9 +1,11 @@
-
 Azure Kubernetes Service (AKS) simplifies deploying a managed Kubernetes cluster in Azure by offloading the operational overhead to Azure. As a hosted Kubernetes service, Azure handles critical tasks, like health monitoring and maintenance. When you create an AKS cluster, a control plane is automatically created and configured. This control plane is provided at no cost as a managed Azure resource abstracted from the user.<br>
 
 AKS nodes run on Azure virtual machines (VMs). With AKS nodes, you can connect storage to nodes and pods, upgrade cluster components, and use GPUs. AKS supports Kubernetes clusters that run multiple node pools to support mixed operating systems and Windows Server containers.
 
-When you deploy an AKS cluster, you specify the number and size of the nodes, and AKS deploys and configures the Kubernetes control plane and nodes. [Advanced networking](/azure/aks/concepts-network), [Azure Active Directory (Azure AD) integration](/azure/aks/managed-azure-ad), [monitoring](/azure/aks/monitor-aks), and other features can be configured during the deployment process.
+When you deploy an AKS cluster, you specify the number and size of the nodes, and AKS deploys and configures the Kubernetes control plane and nodes.
+
+> [!NOTE]
+> To complete this procedure, you need an [Azure subscription](https://azure.microsoft.com/free/).
 
 1.  Sign in to the Azure portal at [https://portal.azure.com](https://portal.azure.com/).
 2.  On the Azure portal menu or from the **Home** page, select **Create a resource.**

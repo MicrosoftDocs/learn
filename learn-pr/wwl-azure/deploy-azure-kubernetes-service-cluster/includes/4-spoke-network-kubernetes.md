@@ -1,4 +1,3 @@
-
 The address space of the virtual network should be large enough to hold all subnets. Account for all entities that receives traffic. IP addresses for the entities are allocated from the subnet address space.
 
 ## Upgrade

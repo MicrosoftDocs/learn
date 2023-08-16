@@ -1,4 +1,3 @@
-
 This module covers the deployment of a managed Kubernetes cluster in Azure using Azure Kubernetes Service (AKS).
 
 ## Scenario

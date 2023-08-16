@@ -1,4 +1,3 @@
-
 In AKS, each node pool maps to a Virtual Machine Scale Set. Nodes are VMs in each node pool. Consider using a smaller VM size for the system node pool to minimize costs. This reference implementation deploys the system node pool with three DS2\_v2 nodes. That size is sufficient to meet the expected load of the system pods. The OS disk is 512 GB.
 
 For the user node pool, here are some considerations:

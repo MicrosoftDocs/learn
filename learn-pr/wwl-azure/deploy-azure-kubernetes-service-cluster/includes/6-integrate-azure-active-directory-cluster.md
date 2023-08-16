@@ -1,4 +1,3 @@
-
 Securing access to and from the cluster is critical. Think from the cluster's perspective when you're making security choices:
 
  -  **Inside-out access**. AKS access to Azure components such as networking infrastructure, Azure Container Registry, and Azure Key Vault. Authorize only those resources that the cluster is allowed access.

@@ -1,4 +1,3 @@
-
 ## Multiple Choice
 What is the recommended approach for scaling Kubernetes clusters?
 ( ) Cluster autoscaling {{Incorrect. Cluster autoscaling is an AKS add-on component that scales the number of nodes in a node pool.}}

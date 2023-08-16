@@ -1,4 +1,3 @@
-
 Network flow can be categorized as:
 
  -  **Ingress traffic:** From the client, to the workload running in the cluster.

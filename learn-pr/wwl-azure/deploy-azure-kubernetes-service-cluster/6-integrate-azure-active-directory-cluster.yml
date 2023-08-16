@@ -4,12 +4,12 @@ title: Integrate Azure Active Directory for the cluster
 metadata:
   title: Integrate Azure Active Directory for the cluster
   description: "Integrate Azure Active Directory for the cluster"
-  ms.date: 07/30/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: azure
   ms.service: azure
-durationInMinutes: 3
+durationInMinutes: 4
 content: |
   [!include[](includes/6-integrate-azure-active-directory-cluster.md)]
