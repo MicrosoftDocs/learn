@@ -110,6 +110,9 @@ CatalogServiceHealthStatus()
 | extend ComponentName = "CatalogService", Dependencies="AKSCluster,Keyvault,EventHub" // These values are added to build the dependency visualization
 | order by TimeGenerated desc
 ```
+> [!TIP]
+>
+> See more [query examples](https://github.com/Azure/Mission-Critical-Online/tree/main/src/infra/monitoring/queries) in the [Azure Mission-Critical Online](https://github.com/Azure/Mission-Critical-Online/) GitHub repository.
 
 ## Set up query-based alerts
 
