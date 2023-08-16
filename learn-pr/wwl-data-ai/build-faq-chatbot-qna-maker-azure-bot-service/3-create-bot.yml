@@ -4,13 +4,11 @@ title: Exercise - Explore question answering
 metadata:
   title: Exercise - Explore question answering
   description: "Exercise - Explore question answering"
-  ms.date: 04/29/2023
-  author: benjiang
-  ms.author: gmalc
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: bot-service
 durationInMinutes: 20
 content: |
   [!include[](includes/3-create-bot.md)]
