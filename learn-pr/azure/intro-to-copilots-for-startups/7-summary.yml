@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.intro-build-copilots-for-startups.summary
+title: Summary
+metadata:
+  title: Summary
+  description: This content is part of the "Introduction to building copilots for startups" module.
+  ms.date: 08/03/2023
+  author: amit7200
+  ms.author: amsvarze
+  ms.topic: module-intro-to-product
+  ms.prod: azure
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

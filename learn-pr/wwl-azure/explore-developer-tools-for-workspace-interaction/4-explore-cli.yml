@@ -8,6 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
+  ms.custom: devx-track-azurecli
 durationInMinutes: 8
 content: |
   [!include[](includes/4-explore-cli.md)]

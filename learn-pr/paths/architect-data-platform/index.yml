@@ -27,7 +27,6 @@ products:
 subjects:
 - architecture
 modules:
-- learn.azure.azure-database-fundamentals
 - learn.provision-azure-sql-db
 - learn.azure-scale-azure-sql-dbs-elastic-pools
 - learn-wwl.migrate-sql-workloads-azure-sql-databases
