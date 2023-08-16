@@ -2,7 +2,7 @@
 uid: learn.monitor-cognitive-services.knowledge-check
 title: Knowledge check
 metadata:
-  title: Demo-Introduction
+  title: Knowledge check
   description: "Knowledge check"
   ms.date: 05/29/2023
   author: wwlpublish
@@ -14,7 +14,7 @@ labModal: false
 durationInMinutes: 3
 quiz:
   questions:
-  - content: "How should you collect telemetry for your Azure Cognitive Services resource for later analysis?"
+  - content: "How should you collect telemetry for your Azure AI Services resource for later analysis?"
     choices:
     - content: "Create an alert."
       isCorrect: false
@@ -25,18 +25,18 @@ quiz:
     - content: "Create a dashboard."
       isCorrect: false
       explanation: "Incorrect. A dashboard enables you to view near-realtime metrics."
-  - content: "You are defining an alert that notifies you when a key regeneration event is recorded in the activity log for your Cognitive Services resource. What should you do?"
+  - content: "You are defining an alert that notifies you when a key regeneration event is recorded in the activity log for your Azure AI Services resource. What should you do?"
     choices:
     - content: "Specify a Scope of Activity Log."
       isCorrect: false
-      explanation: "Incorrect. The scope determines the Azure resource to which the alert applies - in this case, the Cognitive Services resource."
+      explanation: "Incorrect. The scope determines the Azure resource to which the alert applies - in this case, the Azure AI Services resource."
     - content: "Specify an Action that uses an Azure Logic App to read the activity log."
       isCorrect: false
       explanation: "Incorrect. Actions are performed when the alert is triggered."
     - content: "Specify a Condition with a Signal Type of Activity Log."
       isCorrect: true
       explanation: "Correct. The Regenerate Key event is an Activity Log signal."
-  - content: "You are viewing a metric for your Cognitive Services resource in a chart. You want to combine the chart with visualizations of other resources and data. What should you do?"
+  - content: "You are viewing a metric for your Azure AI Services resource in a chart. You want to combine the chart with visualizations of other resources and data. What should you do?"
     choices:
     - content: "Add the chart to a dashboard."
       isCorrect: true
