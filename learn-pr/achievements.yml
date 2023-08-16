@@ -2122,3 +2122,28 @@ achievements:
   title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
   summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
   iconUrl: /training/achievements/configure-admin-consent-workflow.svg
+- uid: learn.wwl.introduction-iot-solution-architecture.badge
+  type: badge
+  title: Examine the architecture of an IoT solution
+  summary: This module introduces you to the architecture, subsystems, and workflows of an Azure IoT solution.
+  iconUrl: /training/achievements/iot-architecture-solution.svg
+- uid: learn.wwl.examine-components-of-iot-solution.badge
+  type: badge
+  title: Examine the components of an IoT solution
+  summary: This module introduces you to the device hardware, device software, and Azure service options that are used within an Azure IoT solution.
+  iconUrl: /training/achievements/iot-components-of-solution.svg
+- uid: learn.wwl.explore-azure-portal.badge
+  type: badge
+  title: Explore the Azure portal
+  summary: This module introduces you to features of the Azure portal and provides you with experience configuring, navigating, and customizing the Azure portal UI.
+  iconUrl: /training/achievements/azure-portal-explore.svg
+- uid: learn.wwl.explore-azure-iot-services.badge
+  type: badge
+  title: Explore Azure IoT services
+  summary: This module introduces you to features of IoT Hub and IoT Hub Device Provisioning Service resources, and provides you with experience creating these services.
+  iconUrl: /training/achievements/iot-explore-services.svg
+- uid: learn.wwl.create-azure-iot-services-azure-portal.trophy
+  type: trophy
+  title: Create Azure IoT services in the Azure portal
+  summary: Learners will become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners will step through the process of creating IoT Hub and Device Provisioning Service resources.
+  iconUrl: /training/achievements/azure-iot-azure-portal.svg
