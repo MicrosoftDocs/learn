@@ -3,11 +3,12 @@ uid: learn.wwl.migrate-premises-windows-server-instances-to-azure-iaas-vms
 metadata:
   title: Migrate on-premises Windows Server instances to Azure IaaS virtual machines
   description: "You'll be able to plan a migration and select appropriate server migration tools. You will also learn how to use Azure Migrate, how to assess physical servers, and how to migrate those servers."
-  ms.date: 09/24/2020
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
   ms.prod: windows-server
+  ms.contributors: orthomas-08152023
 title: Migrate on-premises Windows Server instances to Azure IaaS virtual machines
 summary: You'll be able to plan a migration and select appropriate server migration tools. You will also learn how to use Azure Migrate, how to assess physical servers, and how to migrate those servers.
 abstract: |

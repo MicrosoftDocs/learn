@@ -33,7 +33,7 @@ After completing this module, students and professionals can:
 - Configure service connections.
 - Manage environments.
 - Secure repositories.
-- Ensure that the secrets are in the Azure Key Vault.
+- Ensure that secrets are in the Azure Key Vault.
 - Configure and validate user and pipeline permissions.
 - Configure and validate approval and branch checks.
 - Manage and audit permissions in Azure DevOps.
@@ -44,7 +44,7 @@ After completing this module, students and professionals can:
 
 ### Prerequisites
 
-You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have them yet, see:
 
 - [Create an organization - Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization).
 - [Create a project in Azure DevOps](https://learn.microsoft.com/azure/devops/organizations/projects/create-project).
