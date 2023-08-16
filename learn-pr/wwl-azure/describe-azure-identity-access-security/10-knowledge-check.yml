@@ -4,11 +4,10 @@ title: Knowledge Check
 metadata:
   title: Knowledge Check
   description: "Knowledge Check"
-  ms.date: 08/08/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
 durationInMinutes: 4
 content: |
   [!include[](includes/10-knowledge-check.md)]
@@ -48,4 +47,3 @@ quiz:
     - content: "Read and write"
       isCorrect: true
       explanation: "Role-based access control, using an allow model, grants all of the permissions assigned in all of the assigned roles."
-interactive: bash
