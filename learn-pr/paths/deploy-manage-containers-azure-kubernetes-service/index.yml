@@ -3,7 +3,7 @@ uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service
 metadata:
   title: APL-1001 Deploy and manage containers using Azure Kubernetes Service
   description: APL-1001 Deploy and manage containers using Azure Kubernetes Service
-  ms.date: 07/31/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
@@ -19,6 +19,7 @@ summary: |
   In this learning path, you practice deploying containers, container orchestration, and managing clusters on Azure Kubernetes Service.
   The skills validated include deploying, configuring, and scaling an Azure Kubernetes Service cluster. Also, deploying an Azure Container Registry instance and deploying an application into an Azure Kubernetes Service cluster.
 iconUrl: /training/achievements/generic-trophy.svg
+hidden: true
 levels:
 - intermediate
 roles:
@@ -32,5 +33,6 @@ modules:
 - learn.wwl.configure-azure-kubernetes-service-cluster
 - learn.wwl.deploy-applications-azure-kubernetes-service
 - learn.wwl.configure-scaling-azure-kubernetes-service
+- learn.wwl.project-deploy-applications-azure-kubernetes-service
 trophy:
   uid: learn.wwl.deploy-manage-containers-azure-kubernetes-service.trophy
