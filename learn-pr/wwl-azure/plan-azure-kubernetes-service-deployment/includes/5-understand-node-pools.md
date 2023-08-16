@@ -1,4 +1,3 @@
-
 Creating an Azure Kubernetes Service (AKS) cluster automatically creates and configures the control plane, which provides [core Kubernetes services](https://kubernetes.io/docs/concepts/overview/components) and application workload orchestration. The Azure platform provides the AKS control plane at no cost as a managed Azure resource. The control plane and its resources exist only in the region where you created the cluster.
 
 The nodes, also called *agent nodes* or *worker nodes*, host the workloads and applications. In AKS, customers fully manage and pay for the agent nodes attached to the AKS cluster.

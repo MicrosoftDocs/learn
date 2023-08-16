@@ -4,12 +4,12 @@ title: Monitoring and logging for Azure Kubernetes Service
 metadata:
   title: Monitoring and logging for Azure Kubernetes Service
   description: "Monitoring and logging for Azure Kubernetes Service"
-  ms.date: 07/30/2023
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   ms.service: azure
-durationInMinutes: 7
+durationInMinutes: 6
 content: |
   [!include[](includes/8-monitoring-logging.md)]

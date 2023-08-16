@@ -1,4 +1,3 @@
-
 Kubernetes uses *pods* to run an instance of your application. A pod represents a single instance of your application.
 
 Pods typically have a 1:1 mapping with a container. In advanced scenarios, a pod may contain multiple containers. Multi-container pods are scheduled together on the same node, and allow containers to share related resources.

@@ -1,4 +1,3 @@
-
 At the highest level, Kubernetes is organized as a cluster of virtual or on-premises machines. These machines—called nodes—share compute, network, and storage resources. Each cluster has one master node connected to one or more worker nodes. The worker nodes are responsible for running groups of containerized applications and workloads, known as pods, and the master node manages which pods run on which worker nodes.
 
 :::image type="content" source="../media/overview-cluster-nodes-bad6d19a.png" alt-text="Diagram showing how nodes and pods make up a cluster.":::

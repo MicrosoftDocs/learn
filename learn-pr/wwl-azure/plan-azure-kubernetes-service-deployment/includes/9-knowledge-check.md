@@ -1,4 +1,3 @@
-
 ## Multiple Choice
 What does Kubernetes provide for managing container-based applications?
 ( ) Kubernetes focuses on the underlying infrastructure components. {{Incorrect. Kubernetes focuses on the application workloads, not the underlying infrastructure components.}}

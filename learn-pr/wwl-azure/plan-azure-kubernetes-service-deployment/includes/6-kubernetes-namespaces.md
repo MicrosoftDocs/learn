@@ -1,4 +1,3 @@
-
 Kubernetes resources, such as pods and deployments, are logically grouped into a *namespace* to divide an AKS cluster and create, view, or manage access to resources. For example, you can create namespaces to separate business groups. Users can only interact with resources within their assigned namespaces.
 
 :::image type="content" source="../media/namespaces-kubernetes-overview-5ff9e09d.png" alt-text="Diagram that shows Kubernetes namespaces to logically divide resources and applications.":::

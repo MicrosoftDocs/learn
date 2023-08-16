@@ -1,7 +1,6 @@
-
 In this module, you learned about:
 
- -  Control plane nodes, node pools, and workload resources like pods, deployments, and sets.
+ -  Control plane nodes, node pools, and workload resources like pods, deployments, and sets. 
  -  Scheduling of fault-tolerant application workloads using Azure Kubernetes Service.
  -  Managing deployment and core management tasks, like upgrade coordination using Azure Kubernetes Service.
  -  Clustering of virtual or on-premises machines called nodes that share compute, network, and storage resources.

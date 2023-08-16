@@ -1,4 +1,3 @@
-
 This module covers the core infrastructure components of Kubernetes and how they're used in Azure Kubernetes Service (AKS).
 
 ## Scenario
@@ -18,4 +17,4 @@ This module includes:
 
 ## Goals
 
-The goal of this module is to provide an understanding of the core infrastructure components of Kubernetes and how they're used in Azure Kubernetes Service (AKS). In this module, you deploy and manage container-based applications using Azure Kubernetes Service. You use Azure Kubernetes Service to orchestrate and manage the availability of the application components.
+The goal of this module is to provide an understanding of the core infrastructure components of Kubernetes and how they're used in Azure Kubernetes Service (AKS).
