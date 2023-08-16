@@ -1,9 +1,9 @@
 ### YamlMime:Module
 uid: learn.azure.render-a-model-with-azure-remote-rendering-and-unity
 metadata:
-  title: Render a model with Azure Remote Rendering
-  description: Create an Azure Remote Rendering session and render a 3D model to experience the power of mixed reality. You will create this project in Unity and can deploy to HoloLens. You can also integrate MRTK features where appropriate.
-  ms.date: 02/01/2021
+  title: Render a 3D model with Azure Remote Rendering
+  description: Use Azure Remote Rendering to render a 3D model in a Unity project. You can deploy the model to HoloLens 2 or use the power of mixed reality with the MRTK.
+  ms.date: 07/31/2023
   author: aprilspeight
   ms.author: apspeigh
   ms.topic: interactive-tutorial
@@ -12,21 +12,20 @@ metadata:
   ms.contributors:
   - apspeigh-03262021
   ms.service: azure-remote-rendering 
-title: Render a model with Azure Remote Rendering
+title: Render a 3D model with Azure Remote Rendering
 summary: >
-  Create an Azure Remote Rendering session and render a 3D model.
+  Use Azure Remote Rendering to render a 3D model in a Unity project. You can deploy the model to HoloLens 2 or use the power of mixed reality with the MRTK.
 abstract: | 
-  By the end of this module, you'll be able to:
-  - Create an Azure Remote Rendering session
-  - Load a 3D model
-  - Render a 3D model 
+  - Learn about Remote Rendering and managing sessions.
+  - Create a Remote Rendering account.
+  - Load a project and 3D model in Unity.
+  - Use Remote Rendering to render the 3D model.
 prerequisites: |
-  - A Windows 10 PC that meets the [system requirements](/azure/remote-rendering/overview/system-requirements) and is configured with [the correct tools](/windows/mixed-reality/install-the-tools)
-  - Windows 10 SDK 10.0.18362.0 or later
-  - Unity Hub with Unity 2019.4.X installed
-  - Familiarity with [setting up a Unity project for Windows Mixed Reality](/training/modules/mixed-reality-toolkit-project-unity)
-  - Basic familiarity with Unity: interface, scene creation, package import, and addition of GameObjects to a scene
-  - Basic familiarity with C# and Unity scripting
+  - Windows 10 version 1903 or higher, or Windows 11.
+  - Windows 10 SDK 10.0.18362.0 or later, or Windows 11 SDK.
+  - Unity 2019.4.X or higher installed, with Unity Hub.
+  - Visual Studio 2019 or higher with the necessary workloads installed.
+  - Ideally, some familiarity with C# and Unity scripting and development.
 iconUrl: /training/achievements/render-model-azure-remote-rendering-unity.svg
 levels:
 - beginner

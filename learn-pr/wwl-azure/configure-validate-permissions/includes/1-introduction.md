@@ -15,7 +15,7 @@ After completing this module, students and professionals can:
 
 ### Prerequisites
 
-You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have it yet, see:
+You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have them yet, see:
 
 - [Create an organization - Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization)
 - [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
