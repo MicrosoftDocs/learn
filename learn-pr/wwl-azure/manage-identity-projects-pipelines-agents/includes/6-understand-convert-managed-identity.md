@@ -22,14 +22,14 @@ Create your Managed Identity in Azure and assign the appropriate permissions to 
 
 3. Assign the necessary permissions to the Managed Identity, following the principle of least privilege.
 4. In Azure DevOps, navigate to your organization and select Organization settings.
-5. Click Users under general.
+5. Click on Users under General.
 6. Add the Managed Identity as a user.
 
     ![Screenshot of users tab in Azure DevOps adding the new managed identity DevOpsSecurity user.](../media/add-managed-user-devops.png)
 
 7. Choose the appropriate access level for the Managed Identity and projects.
 8. Click to Add.
-9. Click in Security under Pipelines.
+9. Click on Security under Pipelines.
 10. Click to Add a new security group or choose an existing one.
 11. Add the Managed Identity to the security group.
 
@@ -39,8 +39,8 @@ Create your Managed Identity in Azure and assign the appropriate permissions to 
 
 To convert an existing service connection to use a managed identity, follow these steps:
 
-1. Navigate to your Azure DevOps project, and then go to 'Project settings' then 'Service connections.'
-2. Identify the service connection you want to convert to use a managed identity. Click in Edit and make a note of its settings, such as the scope and roles assigned to it. Also, make sure you know the pipelines using this service connection.
+1. Navigate to your Azure DevOps project, go to 'Project settings' and then 'Service connections.'
+2. Identify the service connection you want to convert to use a managed identity. Click on Edit and make a note of its settings, such as the scope and roles assigned to it. Also, make sure you know the pipelines using this service connection.
 3. Delete the existing service connection by clicking on the ellipsis (three dots) next to the service connection and selecting 'Delete.'
 4. Create a new service connection by clicking on 'New service connection' and selecting 'Azure Resource Manager' as the connection type (or choose the connection you need).
 5. In the 'Authentication method' section, select 'Managed identity.'

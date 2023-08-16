@@ -17,7 +17,7 @@ The inbound ports aren't opened and the gateway is acting as an intelligent reve
 
 Azure Virtual Desktop hosts the client on the session hosts running on Azure. Microsoft manages portions of the services on the customer's behalf and provides secure endpoints for connecting clients and session hosts. The diagram below gives a high-level overview of the network connections used by Azure Virtual Desktop.
 
-:::image type="content" source="../media/azure-virtual-desktop-network-connections-f75bb615.png" alt-text="Diagram showing how Azure Virtual Desktop network connections works":::
+:::image type="content" source="../media/azure-virtual-desktop-network-connection-82f668a5.png" alt-text="Diagram showing how Azure Virtual Desktop network connections works":::
 
 
 ## Session connectivity
@@ -45,7 +45,7 @@ Client connection sequence described below:
 7.  When a user selects the resource to connect, the client uses the associated rdp file and establishes the secure TLS 1.2 connection to the closest Azure Virtual Desktop gateway instance.
 8.  Azure Virtual Desktop gateway validates the request and asks the Azure Virtual Desktop broker to orchestrate the connection.
 9.  Azure Virtual Desktop broker identifies the session host and uses the previously established persistent communication channel to initialize the connection.
-10. Remote Desktop stack initiates the TLS 1.2 connection to the same Azure Virtual Desktop gateway instance as used by the client..
+10. Remote Desktop stack initiates the TLS 1.2 connection to the same Azure Virtual Desktop gateway instance as used by the client.
 11. After both client and session host connected to the gateway, the gateway starts relaying the raw data between both endpoints. Establishing the base reverse connect transport for the RDP.
 12. After the base transport is set, the client starts the RDP handshake.
 

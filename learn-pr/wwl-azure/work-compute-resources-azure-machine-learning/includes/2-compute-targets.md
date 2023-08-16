@@ -1,5 +1,6 @@
 
 
+
 In Azure Machine Learning, *compute targets* are physical or virtual computers on which jobs are run.
 
 ## Understand the available types of compute

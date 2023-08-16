@@ -1,21 +1,21 @@
 ![Rendering of a square representing the External Entity Element.](../media/external-entity.png)
 
-Depicted by a square, an external entity can be a process, data store, or even a full-fledged system outside of your direct control.
+The **external entity element** is depicted as a square. The external entity can be a process, data store, or even a full-fledged system outside of your direct control.
 
 Examples include:
 
-- A user interacting with your service
-- Tight integration with a third-party authentication service
-- Services created by other teams within your organization
+- A user interacting with your service.
+- Tight integration with a third-party authentication service.
+- Services created by other teams within your organization.
 
 ## When to use the external entity element
 
-- To represent what you can't directly modify
-- Data stores and external entities start the data flow, so verify you have either one in place
+- When representing an entity that you can't directly modify.
+- Data stores and external entities start the data flow, so verify you have either one in place.
 
 ## Include context
 
-Include the following context to each external entity element:
+Include the following context with each external entity element:
 
 |Context|Questions|
 |-------|---------|

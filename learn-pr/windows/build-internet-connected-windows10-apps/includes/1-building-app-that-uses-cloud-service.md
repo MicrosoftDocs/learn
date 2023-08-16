@@ -20,7 +20,7 @@ zone_pivot_groups: platform-apps
 
 ::: zone-end
 
-In this unit, use the Azure Cognitive Services [Image Search](/azure/cognitive-services/bing-image-search/) feature to write part of an app that helps teach English as a second language. The finished app automatically provides a picture for any word within a block of text. For example, imagine that the user is reading about different types of food, and they come across a word they don't know. With this app, they can select the word **soup** and see a picture of some soup.
+In this unit, use the Azure Cognitive Services [Image Search](/azure/cognitive-services/bing-image-search/overview) feature to write part of an app that helps teach English as a second language. The finished app automatically provides a picture for any word within a block of text. For example, imagine that the user is reading about different types of food, and they come across a word they don't know. With this app, they can select the word **soup** and see a picture of some soup.
 
 ::: zone pivot="uwp"
 
