@@ -14,7 +14,7 @@ Your company's specialist expertise is in retail, not in identity protection. It
 
 ## What are risks?
 
-Risks are categorized in two ways: as *user risks* and *sign-in risks*. User risks can be described as suspicious activity and actions by users when they sign in, and sign-in risks as actions that users take after signing in.
+Risks are categorized in two ways: as *user risks* and *sign-in risks*. We can describe user risks as actions that users take after signing in, and sign-in risks as suspicious activity and actions by users when they sign in.
 
 ### User risk
 

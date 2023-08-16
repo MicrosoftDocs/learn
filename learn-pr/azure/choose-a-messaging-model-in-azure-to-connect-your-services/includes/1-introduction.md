@@ -7,6 +7,7 @@ You've observed that at times of high demand, some music files aren't successful
 Here, you'll learn how to choose the right messaging technology in Azure for each communication task in a distributed application.
 
 ## Learning objectives
+
 In this module, you will:
 
 - Describe events and messages, and the challenges you can use them to solve in a distributed application.
