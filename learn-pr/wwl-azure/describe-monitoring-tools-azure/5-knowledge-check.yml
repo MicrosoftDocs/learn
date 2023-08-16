@@ -36,4 +36,3 @@ quiz:
     - content: "Resource health"
       isCorrect: true
       explanation: "Correct. Resource Health is a tailored view of your actual Azure resources. It provides information about the health of your individual cloud resources"
-interactive: bash
