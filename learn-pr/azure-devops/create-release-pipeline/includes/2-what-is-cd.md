@@ -1,4 +1,4 @@
-Here you follow the Tailspin team as they discuss how a continuous delivery (CD) pipeline can help them with their upcoming release.
+Here, you'll follow the Tailspin team as they discuss how a continuous delivery (CD) pipeline can help them with their upcoming release.
 
 The Tailspin team is starting to feel better about their build process. They have an automated process running on Azure Pipelines, which means the build environment is stable. Amita knows immediately when she needs to test an artifact. She finds fewer bugs because Andy and Mara have started to add unit tests and code quality tests. Life is looking good. Let's check in with the team.
 
@@ -16,7 +16,7 @@ The team is in the meeting room waiting for Irwin, the product manager, who want
 
 **Irwin:** What's a CD pipeline?
 
-Mara begins to explain but is interrupted when Irwin's cell phone beeps. Irwin reads a text message and mutters under his breath.
+Mara begins to explain, but is interrupted when Irwin's cell phone beeps. Irwin reads a text message and mutters under his breath.
 
 **Irwin:** I'm sorry, but this is urgent. I have to go. Why don't you all figure out this CD business and get back to me soon?
 
@@ -30,15 +30,15 @@ Andy and the rest of the team head to the coffee shop to create a plan.
 
 The team is meeting over coffee to figure how to set up a continuous delivery workflow.
 
-**Andy**:Mara, can you tell us what you know about continuous delivery?
+**Andy:** Mara, can you tell us what you know about continuous delivery?
 
 **Mara:** To me, CD and DevOps are inseparable. Remember that we defined DevOps as the union of people, processes, and products to enable continuous delivery of value to our end users.
 
-CD by itself is a set of processes, tools, and techniques that enable rapid, reliable, and continuous delivery of software. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment, where:
+CD by itself is a set of processes, tools, and techniques that enable rapid, reliable, and continuous delivery of software. So CD isn't only about setting up a pipeline, although that part is important. CD is about setting up a working environment where:
 
 * We have a reliable and repeatable process for releasing and deploying software.
 * We automate as much as possible.
-* We don't put off doing something that's difficult or painful. Instead, we do it more often so that we figure out how to make it routine.
+* We don't put off doing something that's difficult or painful; instead, we do it more often so that we figure out how to make it routine.
 * We keep everything in source control.
 * We all agree that *done* means *released*.
 * We build quality into the process. Quality is never an afterthought.
@@ -55,7 +55,7 @@ Let's continue to listen in on the team as they talk this out.
 
 **Andy:** Thanks, Mara. We need CD because, as we all know, the world has changed. New features are being released faster. Updates and bug fixes need to be available right away. It isn't just our management that wants to speed up our releases. Management is simply reacting to the demands of our customers. If customers can't get what they want from us, they'll go somewhere else.
 
-**Tim:** Agree! I can't wait to get started.
+**Tim:** Agreed! I can't wait to get started.
 
 **Andy:** Thanks, everyone. I'm going to propose that Mara and I put together a simple proof of concept (POC). I think everything will be a lot easier to understand if you can see a CD pipeline in action.
 
@@ -67,7 +67,7 @@ The team leaves Andy and Mara to work out the details.
 
 Many development tools provide ways to publish your application directly to some target environment, such as Microsoft Internet Information Services (IIS) or Azure. For example, you can [Publish an ASP.NET Core app to Azure by using Visual Studio](/aspnet/core/tutorials/publish-to-azure-webapp-using-vs?azure-portal=true). This process is sometimes called *right-click publishing*.
 
-Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. But this technique has limitations.
+Right-click publishing is a great way to quickly build a prototype. For example, you might right-click publish your application to Azure so that you can share a new idea with your team. However, this technique has limitations.
 
 Continuous delivery provides a consistent way for you and your team to continuously test, deploy, and monitor your application each time you check in your code. When you right-click publish your application, there's no guarantee that the code was properly tested, or will behave as expected under real-world usage.
 
@@ -87,7 +87,7 @@ After the meeting ends, Andy and Mara plan the next steps. They use Azure Pipeli
 
 **Mara:** Where do you want to start?
 
-**Andy:** First we need to agree on our release management tool. Let's make sure the tool we choose:
+**Andy:** First, we need to agree on our release-management tool. Let's make sure the tool we choose:
 
 * Supports our version control system.
 * Can deploy to multiple environments so that we can test and validate our work.
@@ -98,7 +98,7 @@ After the meeting ends, Andy and Mara plan the next steps. They use Azure Pipeli
 
 These tools have similarities, but each of them also has particular strengths. Some of these tools are open source, some are free, and some you have to pay for. They also provide built-in integrations with other software tools.
 
-For example, Jenkins is open source. It has many plug-ins, and many companies use it. You can run Circle CI in the cloud or on-premises. I think we would need to customize it. GitLab is a single application for the entire software development life cycle. It might be bigger than we want right now. We can keep using Azure Pipelines.
+For example, Jenkins is open source. It has many plug-ins, and many companies use it. You can run Circle CI in the cloud or on-premises. I think we'd need to customize it. GitLab is a single application for the entire software development life cycle. It might be bigger than we want right now. We can keep using Azure Pipelines.
 
 Here's a short video where Abel talks about using DevOps best practices to deploy code to Azure.
 
