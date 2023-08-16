@@ -29,8 +29,8 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
-- azure-form-recognizer
+- ai-services
+- document-intelligence
 subjects:
 - classification-analysis
 units:

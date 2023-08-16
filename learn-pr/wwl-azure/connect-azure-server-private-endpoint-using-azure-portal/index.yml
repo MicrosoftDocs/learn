@@ -1,0 +1,48 @@
+### YamlMime:Module
+uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal
+metadata:
+  title: Connect an Azure SQL server using an Azure Private Endpoint using the Azure portal
+  description: "Learn how to securely connect an Azure SQL server using an Azure Private Endpoint via the Azure portal, ensuring private and safe communication with your SQL server."
+  ms.date: 07/31/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Connect an Azure SQL server using an Azure Private Endpoint using the Azure portal
+summary: This module will guide you on securely connecting an Azure SQL server via Azure Private Endpoint in the Azure portal, enhancing data communication security.
+abstract: |
+  By the end of this training module, participants will:
+  - Understand the importance of using Azure Private Endpoint to establish secure connections to Azure SQL Server.
+  - Learn how to configure and create an Azure Private Endpoint for Azure SQL Server in the Azure portal.
+  - Gain insights into the network architecture and components involved in setting up an Azure Private Endpoint.
+  - Understand how to validate and test the connection between the Azure Private Endpoint and Azure SQL Server.
+  - Recognize the benefits of using Azure Private Endpoint for securing database connections and isolating network traffic.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-portal
+- azure-private-link
+- azure-sql-database
+- azure-sql-managed-instance
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- azure-virtual-machines
+- azure-virtual-machines-windows
+- azure-virtual-network
+- defender-for-cloud
+- sql-server
+units:
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.introduction
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.azure-private-endpoint
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.azure-private-link
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.knowledge-check
+- learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.summary
+badge:
+  uid: learn.wwl.connect-azure-server-private-endpoint-using-azure-portal.badge

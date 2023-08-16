@@ -1,5 +1,3 @@
-
-
 The following principles apply to maximizing high availability of the SAP NetWeaver system in Azure:
 
 - The complete system is deployed on Azure (required - DBMS layer, (A)SCS instance and complete application layer need to run in the same location).
@@ -33,8 +31,8 @@ Availability Sets can be used in the following scenarios in SAP systems:
 Considerations while setting up an Availability Set:
 
 - Each virtual machine in an Availability Set is assigned an update domain and a fault domain by the underlying Azure platform.
-- Each Availability Sets can have 2 or 3 Fault domains; know when to use each (match your application topology). and 20 update domains.
-- When more than five virtual machines are configured within a single Availability Set, the sixth virtual machine is placed into the same update domain as the first virtual machine, the seventh in the same update domain as the second virtual machine, and so on.
+- Each Availability Sets can have two or three Fault domains; know when to use each (match your application topology). and 20 update domains.
+- When more than five virtual machines are configured within a single Availability Set, the sixth virtual machine is placed into the same update domain as the first virtual machine. The seventh virtual machine is placed into the same update domain as the second virtual machine, and so on.
 - VMs are also aligned with disk fault domains. This alignment ensures that all the managed disks attached to a VM are within the same fault domains.
 - Know the difference in SLA between Availability Set clusters, non-Availability Set clusters, and Availability Zones.
 - Be sure to understand the interplay with Proximity Placement Groups.
@@ -43,18 +41,18 @@ Considerations while setting up an Availability Set:
 
 In a single-VM scenario, you create an Azure VM for the SAP deployment. You use Azure Premium Storage to host the operating system disk and all your data disks. The Azure uptime SLA of 99.9 percent and the SLAs of other Azure components are enough for you to fulfill your availability SLAs for your customers. In this scenario, you have no need to use an Azure Availability Set. Instead, you rely on two different features:
 
-- Azure VM auto-restart (also referred to as Azure service healing)
-- SAP auto-restart
+- Azure VM automatic restart (also referred to as Azure service healing)
+- SAP automatic restart
 
 Azure VM auto restart, or service healing, is a functionality in Azure that works on two levels:
 
 - The server host checks the health of its guest VMs.
 - The Azure fabric controller monitors the health and availability of the server host.
 
-A health check functionality monitors the health of every VM that is hosted on an Azure server host. If a VM falls into a non-healthy state, a reboot of the VM can be initiated by the Azure host agent that checks the health of the VM. The fabric controller checks the health of the host by checking many different parameters that might indicate issues with the host hardware. It also checks on the accessibility of the host via the network. An indication of problems with the host can lead to the following events:
+A health check functionality monitors the health of every VM that is hosted on an Azure server host. If a VM falls into an unhealthy state, a reboot of the VM can be initiated by the Azure host agent that checks the health of the VM. The fabric controller checks the health of the host by checking many different parameters that might indicate issues with the host hardware. It also checks on the accessibility of the host via the network. An indication of problems with the host can lead to the following events:
 
 - If the host signals a bad health state, a reboot of the host and a restart of the VMs that were running on the host is triggered.
-- If the host isn't in a healthy state after successful reboot, a redeployment of the VMs that were originally on the now unhealthy node onto a healthy host server is initiated. In this case, the original host is marked as not healthy. It won't be used for further deployments until it's cleared or replaced.
+- If the host isn't in a healthy state after successful reboot, a redeployment of the VMs that were originally on the now unhealthy node onto a healthy host server is initiated. In this case, the original host is marked as not healthy. It's not used for further deployments until it's cleared or replaced.
 - If the unhealthy host has problems during the reboot process, an immediate restart of the VMs on a healthy host is triggered.
 
 With the host and VM monitoring provided by Azure, Azure VMs that experience host issues are automatically restarted on a healthy Azure host.

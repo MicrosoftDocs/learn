@@ -26,7 +26,7 @@ The repository is organized the following way:
 
 To import the repository to your Azure DevOps organization, follow these steps:
 
-1. From Azure DevOps organization, choose the project you want to import the eShopOnWeb application.
+1. From your Azure DevOps organization, choose the project you want to import the eShopOnWeb application into.
 2. Open the Repos tab and click on Import repository.
 3. On the Import a repository page, click on Import a repository link (below the page title).
 4. Add the following information:
@@ -92,12 +92,12 @@ The next step is to create a new variable group in Azure DevOps to store the tok
         - **IdentityConnectionToken**: Server=MYSERVER;Integrated Security=true;Initial Catalog=Microsoft.eShopOnWeb.Identity;
         - **ReleaseVersionToken**: 1.1
     ![Screenshot of Azure DevOps showing the creation of a new variable group.](../media/variable-group-file-transform.png)
-4. Make sure click on the "Lock" icon to secure the variable.
+4. Make sure to click on the "Lock" icon to secure the variable.
 5. Click on "Save" to create the variable group.
 
 ## Create a YAML pipeline and import the variable group
 
-The next step is to create a YAML pipeline in Azure Pipelines, or use existing definitions. This pipeline builds your application and references the tokens you created in Step 1.
+The next step is to create a YAML pipeline in Azure Pipelines or use existing definitions. This pipeline builds your application and references the tokens you created in Step 1.
 
 1. Open Azure DevOps and navigate to your project.
 2. Click on "Pipelines" and then "New pipeline."
@@ -149,7 +149,7 @@ The last step is to run your release pipeline to build your application and repl
     ![Screenshot of Azure DevOps showing the pipeline log with tokens replaced.](../media/log-replaced-variables.png)
 
     > [!IMPORTANT]
-    > In this example we did not encrypted the variable `CatalogConnectionToken` to show the value in the log. In a real scenario, you need encrypt the variable to avoid exposing the value in the log.
+    > In this example we did not encrypt the variable `CatalogConnectionToken` to show the value in the log. In a real scenario, you need to encrypt the variable to avoid exposing the value in the log.
 
 4. Open the Artifacts from your pipeline execution results and download the **`Web.zip`** file.
 
