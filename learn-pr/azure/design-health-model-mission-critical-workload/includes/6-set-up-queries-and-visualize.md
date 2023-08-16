@@ -24,7 +24,7 @@ For individual services that calculate the health status, see the following samp
 
 ### Catalog API
 
-The following sample demonstrates a Catalog API query:
+The following sample demonstrates a [Catalog API query](https://github.com/Azure/Mission-Critical-Online/blob/main/src/infra/monitoring/queries/stamp/CatalogServiceHealthStatus.kql):
 
 ```kusto
 
