@@ -97,7 +97,7 @@ failureStats
 
 ### Catalog Service health score
 
-Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a Catalog Service health score:
+Eventually, you can tie together various health *status* queries to calculate a health *score* of a component. The following sample query shows how to calculate a [Catalog Service health score](https://github.com/Azure/Mission-Critical-Online/blob/main/src/infra/monitoring/queries/stamp/CatalogServiceHealthScore.kql):
 
 ```kusto
 CatalogServiceHealthStatus()
