@@ -21,6 +21,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/introduction-to-xamarin-android-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

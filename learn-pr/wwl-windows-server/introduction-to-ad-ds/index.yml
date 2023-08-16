@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: tonyj
   ms.topic: interactive-tutorial
-  ms.service: active-directory-ds
+  ms.service: active-directory
+  ms.subservice: domain-services
 title: Introduction to AD DS
 summary: Learn about the fundamentals of Active Directory Domain Services (AD DS) in Windows Server 2019, including forests, domains, sites, domain controllers, organizational units (OUs), users, and groups.
 abstract: |

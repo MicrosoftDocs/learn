@@ -64,7 +64,7 @@ In this task, you'll replicate the two VMs that you created in the previous unit
 
 You can review the progress of your site recovery job by selecting **Notifications** in the global controls in the upper right corner of your Azure portal.
 
-1. In the **Notifications** pane, you will see that **Enabling replication for 2 vm(s)** is still running. Select the link.
+1. In the **Notifications** pane, you will see that **Enabling replication for 2 vm(s)** is still running. Select the notification link.
 
 1. The **Site Recovery jobs** lists all site recovery actions you have completed in this module.
 

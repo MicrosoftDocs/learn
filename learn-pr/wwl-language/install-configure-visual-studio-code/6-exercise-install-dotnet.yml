@@ -4,10 +4,12 @@ title: Exercise - Install the .NET SDK
 metadata:
   title: Exercise - Install the .NET SDK
   description: "Exercise - Install the .NET SDK"
-  ms.date: 06/08/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: vs-code
 durationInMinutes: 5
 content: |

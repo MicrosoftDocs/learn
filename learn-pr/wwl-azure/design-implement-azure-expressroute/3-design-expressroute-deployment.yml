@@ -4,13 +4,12 @@ title: Design an ExpressRoute deployment
 metadata:
   title: Design an ExpressRoute deployment
   description: "Design an ExpressRoute deployment"
-  ms.date: 06/13/2023
+  ms.date: 07/11/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.custom:
+  - N/A
 durationInMinutes: 7
 content: |
   [!include[](includes/3-design-expressroute-deployment.md)]

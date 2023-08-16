@@ -4,11 +4,10 @@ title: Explore Azure Active Directory (Azure AD)
 metadata:
   title: Explore Azure Active Directory (Azure AD)
   description: "Explore Azure Active Directory (Azure AD)"
-  ms.date: 04/21/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 6
 content: |
   [!include[](includes/3-explore-azure-active-directory.md)]

@@ -15,6 +15,7 @@ metadata:
   ms.custom:
     - build-2023
     - build-2023-dataai
+    - devx-track-azurecli
   ms.service: azure
 durationInMinutes: 10
 content: |

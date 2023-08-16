@@ -10,6 +10,7 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure-devops-pipelines
   ms.subservice: azure-devops-pipelines-build
+  manager: mijacobs
 title: Create a build pipeline with Azure Pipelines
 summary: Set up a continuous integration (CI) pipeline that automates the process of building your application.
 abstract: |

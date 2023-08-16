@@ -11,7 +11,9 @@ metadata:
   ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
-  ms.custom: team=nextgen
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
 durationInMinutes: 2
 content: |
   [!include[](includes/7-exercise-consume-model-builder.md)]

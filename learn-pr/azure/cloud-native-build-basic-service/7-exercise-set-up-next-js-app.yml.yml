@@ -1,4 +1,4 @@
-﻿### YamlMime:ModuleUnit
+### YamlMime:ModuleUnit
 uid: learn.azure.cna-build-basic-service.exercise-set-up-next-js-app.yml
 title: Exercise - Set up a Next.js management web app
 metadata:
@@ -8,6 +8,9 @@ metadata:
   author: rmcmurray
   ms.author: robmcm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-js
   ms.prod: learning-azure
 durationInMinutes: 20
 content: |

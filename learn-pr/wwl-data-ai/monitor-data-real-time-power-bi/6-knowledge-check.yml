@@ -39,7 +39,7 @@ quiz:
     - content: "Set up incremental refresh for the dataset and enable the DirectQuery partition."
       isCorrect: false
       explanation: "Incorrect. Incremental refresh isn’t possible for a DirectQuery table."
-  - content: "Fiafia is a developer at Adventure Works who is needs to deliver a real-time Power BI dashboard. It should present real-time manufacturing data with the lowest possible latency. The dashboard only shows manufacturing events for the past hour. The solution should use the minimum of Power BI resources. What type of dataset should Fiafia develop?"
+  - content: "Fiafia is a developer at Adventure Works who needs to deliver a real-time Power BI dashboard. It should present real-time manufacturing data with the lowest possible latency. The dashboard only shows manufacturing events for the past hour. The solution should use the minimum of Power BI resources. What type of dataset should Fiafia develop?"
     choices:
     - content: "DirectQuery dataset."
       isCorrect: false

@@ -21,6 +21,7 @@ prerequisites: |
   [!include[](../../includes/prerequisites.md)]
   - Basic knowledge of SQL and relational databases
 iconUrl: /training/achievements/xamarin/store-local-data-with-sqlite-badge.svg
+hidden: true
 levels: 
 - intermediate
 roles: 

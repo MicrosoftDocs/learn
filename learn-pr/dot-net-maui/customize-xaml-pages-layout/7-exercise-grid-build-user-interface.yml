@@ -10,6 +10,8 @@ metadata:
   ms.manager: markl
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
 durationInMinutes: 10
 azureSandbox: false
 content: |

@@ -4,14 +4,12 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 06/07/2023
+  ms.date: 07/06/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 4
+  ms.service: azure-devops
+durationInMinutes: 5
 content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
@@ -39,7 +37,7 @@ quiz:
     - content: "OWASP."
       isCorrect: false
       explanation: "Incorrect. Mend Bolt can be used to assess open-source security and licensing compliance."
-  - content: "Which of the following situations GitHub Dependabot detects vulnerable dependencies and sends Dependabot alerts about them?"
+  - content: "Which of the following situations GitHub Dependabot detects vulnerable dependencies and send Dependabot alerts about them?"
     choices:
     - content: "A new vulnerability is added to the GitHub Advisory database."
       isCorrect: true

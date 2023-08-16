@@ -9,6 +9,9 @@ metadata:
   ms.author: jenhayes
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
+    - devx-track-azurepowershell
 durationInMinutes: 7
 content: |
   [!include[](includes/2-azure-management.md)]

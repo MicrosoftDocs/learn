@@ -8,6 +8,8 @@ metadata:
   ms.author: scaddie
   ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: aspnet-core
 title: Summary
 durationInMinutes: 3

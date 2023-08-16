@@ -4,11 +4,13 @@ title: Exercise - Route custom events to web endpoint by using Azure CLI
 metadata:
   title: Exercise - Route custom events to web endpoint by using Azure CLI
   description: "Exercise - Route custom events to web endpoint by using Azure CLI"
-  ms.date: 04/24/2023
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.service: event-grid
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 3
 content: |
   [!include[](includes/8-event-grid-custom-events.md)]

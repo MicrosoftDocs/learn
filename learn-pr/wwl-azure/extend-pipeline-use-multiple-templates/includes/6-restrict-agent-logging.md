@@ -4,19 +4,19 @@ In this unit, learn and review how to configure Azure Pipelines and YAML pipelin
 
 ## Log of secrets
 
-Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way that secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
+Azure Pipelines attempts to scrub secrets from logs wherever possible. This filtering is on a best-effort basis and can't catch every way in which secrets can be leaked. Avoid echoing secrets to the console, using them in command line parameters, or logging them to files.
 
 ## Use the audit service
 
-Many pipeline events are recorded in the Auditing service. Review the audit log periodically to ensure no malicious changes have slipped past. Visit https://dev.azure.com/ORG-NAME/_settings/audit to get started.
+Many pipeline events are recorded in the Auditing service. Review the audit log periodically to ensure no malicious changes have slipped past. Visit `https://dev.azure.com/ORG-NAME/_settings/audit` to get started.
 
 ## Ways to restrict agent logging of secrets
 
-When working with Azure Pipelines, it's common to use service connections, which add a new layer of security for sensitive information such as usernames, passwords, and API keys. If not using service connections or other best practices left unsecured, this information can be easily accessed and exposed in pipeline logs, leading to potential data breaches and security risks.
+When working with Azure Pipelines, it's common to use service connections, which add a new layer of security for sensitive information such as usernames, passwords, and API keys. Without service connections or other best practices, pipelines are left unsecured and their information can be easily accessed and exposed in pipeline logs, leading to potential data breaches and security risks.
 
 By following these suggestions and the ones we covered in other units, you can ensure that your sensitive information is kept safe and your pipeline remains a trusted and reliable tool for your organization.
 
-- **Use Azure Key Vault:** Using Azure Key Vault, you can store sensitive information, such as passwords and API keys, separately from your pipeline. You can reference these secrets in your pipeline without revealing them in the pipeline logs. To use Azure Key Vault, you can create a new Azure Key Vault instance, add your secrets to the vault, and then reference them in your pipeline using the Azure Key Vault task.
+- **Use Azure Key Vault:** You can store sensitive information, such as passwords and API keys, separately from your pipeline in Azure Key Vault. You can reference these secrets in your pipeline without revealing them in the pipeline logs. To use Azure Key Vault, you can create a new Azure Key Vault instance, add your secrets to the vault, and then reference them in your pipeline using the Azure Key Vault task.
 - **Use Variable Groups:** Variable Groups are a convenient way to store and manage variables used across multiple pipelines. You can create a new variable group, add sensitive information as variables, and then reference them in your pipeline. By marking these variables as "secret," you can ensure they aren't displayed in the pipeline logs.
 - **Use Environment Variables:** You can also use environment variables to store your sensitive information. Environment variables are a way to store data that can be accessed by processes running on the same machine. In Azure Pipelines, you can define pipeline, job, or task environment variables. By marking these variables as "secret," you can ensure they aren't displayed in the pipeline logs.
 
@@ -35,7 +35,7 @@ To use agent-level logging restrictions, follow these steps:
 4. Save the new variable.
 5. Run your pipeline to see the logs.
 
-The setting `System.Debug=False` turns off verbose logs for all runs. With the Enable system diagnostics checkbox, you can also configure verbose logs for a single run. See For more information, see [Review logs to diagnose pipeline issues.](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/review-logs)
+The setting `System.Debug=False` turns off verbose logs for all runs. With the Enable system diagnostics checkbox, you can also configure verbose logs for a single run. For more information, see [Review logs to diagnose pipeline issues.](https://learn.microsoft.com/azure/devops/pipelines/troubleshooting/review-logs)
 
 ## Use the issecret parameter
 

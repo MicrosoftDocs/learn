@@ -1,3 +1,4 @@
+
 You can think of the steps to train and evaluate a classification machine learning model as: 
 1. **Prepare data**: Identify the features and label in a dataset. Pre-process, or clean and transform, the data as needed.   
 2. **Train model**: Split the data into two groups, a training and a validation set. Train a machine learning model using the training data set. Test the machine learning model for performance using the validation data set. 
@@ -39,7 +40,7 @@ In a binary classification model where you're predicting one of two possible val
 
 ![Screenshot of a confusion matrix terms showing true and false positives, as well as true and false negatives.](../media/confusion-matrix-terms.png)
 
-Suppose you have data for 100 patients. You create a model that predicts a patient doesn't have diabetes 15% of the time, so it *predicts* 15 people have diabetes and *predicts* 85 people do not have diabetes. In actuality, suppose 25 people *actually* do have diabetes and 75 people *actually* do not have diabetes. This information can be presented in a confusion matrix such as the one below: 
+Suppose you have data for 100 patients. You create a model that predicts a patient does have diabetes 15% of the time, so it *predicts* 15 people have diabetes and *predicts* 85 people do not have diabetes. In actuality, suppose 25 people *actually* do have diabetes and 75 people *actually* do not have diabetes. This information can be presented in a confusion matrix such as the one below: 
 
 ![Screenshot of a confusion matrix showing actual and predicted value counts.](../media/confusion-matrix.png)
 

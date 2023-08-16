@@ -8,6 +8,8 @@ metadata:
   author: spelluru
   ms.author: spelluru
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 azureSandbox: true
 durationInMinutes: 10

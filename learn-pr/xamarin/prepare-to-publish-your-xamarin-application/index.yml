@@ -18,6 +18,7 @@ abstract: |
 prerequisites: |
   [!include[](../../includes/prerequisites.md)]
 iconUrl: /training/achievements/xamarin/prepare-to-publish-your-xamarin-application-badge.svg
+hidden: true
 levels:
 - beginner
 roles:

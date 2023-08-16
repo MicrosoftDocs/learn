@@ -9,6 +9,6 @@ metadata:
   ms.author: kelawson
   ms.topic: interactive-tutorial
   ms.service: azure
-durationInMinutes: 7
+durationInMinutes: 15
 content: |
   [!include[](includes/2-exercise-setup.md)]

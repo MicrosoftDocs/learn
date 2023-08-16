@@ -7,7 +7,7 @@ metadata:
   author: kendownie
   ms.author: kendownie
   ms.topic: interactive-tutorial
-  ms.service: files
+  ms.service: azure-file-storage
 title: Introduction to Azure Files
 summary: Azure Files offers fully managed file shares in the cloud that are accessible via the industry standard Server Message Block (SMB) and Network File System (NFS) protocols, and provides programmatic access via the Azure Files REST API. In this module, you'll learn how you can meet your storage needs using Azure Files and Azure File Sync.
 abstract: |
@@ -26,6 +26,7 @@ roles:
 - developer
 products:
 - azure
+- azure-files
 units:
 - learn.introduction-to-azure-files.introduction
 - learn.introduction-to-azure-files.what-is-azure-files

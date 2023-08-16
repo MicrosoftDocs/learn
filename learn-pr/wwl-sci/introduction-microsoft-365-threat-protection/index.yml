@@ -26,7 +26,6 @@ products:
 - defender-for-cloud-apps
 - defender-identity
 - m365
-- m365-threat-protection
 - m365-defender
 subjects:
 - cloud-security

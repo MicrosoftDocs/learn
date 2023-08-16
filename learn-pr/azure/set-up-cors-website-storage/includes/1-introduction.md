@@ -14,4 +14,4 @@ In this module, you will:
 ## Prerequisites
 
   - Familiarity with Azure Storage
-  - Familiarity with REST APIs, the Azure CLI, and PowerShell
+  - Familiarity with the Azure CLI and PowerShell

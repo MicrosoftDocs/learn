@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.create-your-first-text-to-speech-app.create-text-to-speech-app-using-text
-title: Create a text to speech application using a text file
+title: Create a text-to-speech application using a text file
 metadata:
-  title: Create a text to speech application using a text file
-  description: Learn how to create a text to speech application using a text file.
+  title: Create a text-to-speech application using a text file
+  description: Learn how to create a text-to-speech application using a text file.
   ms.date: 09/15/2022
   author: rmcmurray
   ms.author: robmcm

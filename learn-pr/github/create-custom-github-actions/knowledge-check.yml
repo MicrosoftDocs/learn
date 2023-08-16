@@ -33,27 +33,27 @@ quiz:
     choices:
     - content: "name, runs, composite"
       isCorrect: false
-      explanation: "Composite is not a required keyword for a valid `action.yml` file."
+      explanation: "Composite isn't a required keyword for a valid `action.yml` file."
     - content: "name, runs, description"
       isCorrect: true
-      explanation: "These are the 3 required keywords for a valid `action.yml` file."
+      explanation: "These are the three required keywords for a valid `action.yml` file."
     - content: "name, description, branding"
       isCorrect: false
-      explanation: "Branding is not a required keyword for a valid `action.yml` file."
+      explanation: "Branding isn't a required keyword for a valid `action.yml` file."
     - content: "name, description, composite"
       isCorrect: false
-      explanation: "Composite is not a required keyword for a valid `action.yml` file."
+      explanation: "Composite isn't a required keyword for a valid `action.yml` file."
   - content: "Which workflow command would set the debug message to **This is an error message**?"
     choices:
     - content: echo "::error::This is an error message"
       isCorrect: true
-      explanation: "This is the correct syntax for this workflow command."
+      explanation: "This syntax is correct for this workflow command."
     - content: echo "error=This is an error message"
       isCorrect: false
-      explanation: "This is improper syntax for a workflow command."
+      explanation: "This syntax is improper for a workflow command."
     - content: echo "::error::message=This is an error message"
       isCorrect: false
-      explanation: "This is improper syntax for a workflow command."
+      explanation: "This syntax is improper for a workflow command."
     - content: echo "::error::This is an error message::"
       isCorrect: false
-      explanation: "This is improper syntax for a workflow command."
+      explanation: "This syntax is improper for a workflow command."

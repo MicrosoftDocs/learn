@@ -16,27 +16,30 @@ To perform this exercise, you need:
 
 ## Create an Azure IoT Central application
 
-1. Start a web browser and navigate to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
-1. On the **Welcome to IoT Central** page, select the avatar icon in the upper right corner.
-1. When prompted, sign in to access the Azure subscription you're using for this module.
-1. On the **Welcome to IoT Central** page, expand the vertical menu, and then select the **My apps** menu entry.
-1. On the **My apps** page, select **+ New application**.
-1. On the **Build your IoT application** page, ensure that the **Retail** tab is selected, review the available application, and in the **In-store analytics - condition monitoring** tile, select **Create app**.
+1. Navigate to the [Create IoT Central Application](https://portal.azure.com/#create/Microsoft.IoTCentral) page in the Azure portal. If prompted, sign in with your Azure account.
 
-   :::image type="content" source="../media/6-iot-central-create-app-using-template.png" alt-text="Screenshot of the built-in templates on the Build your IoT application page in the IoT Central Application portal.":::
+1. Enter the following information:
 
-1. On the **New application** page, configure the following settings, and then select **Create**.
+    | Field | Description |
+    | ----- | ----------- |
+    | Subscription | The Azure subscription you want to use. |
+    | Resource group | The resource group you want to use.  You can create a new resource group or use an existing one. |
+    | Resource name | A valid Azure resource name such as *adatum-iot-custom-application*. |
+    | Application URL | A URL subdomain for your application such as *adatum-iot-custom-application*. The URL for an IoT Central application looks like `https://adatum-iot-custom-application.azureiotcentral.com`. |
+    | Template | **In-store application - Condition Monitoring** |
+    | Region | The Azure region you want to use. |
+    | Pricing plan | Select one of the standard pricing plans. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
 
-   | Setting | Configuration |
-   | --- | --- |
-   | Application Name | Enter **adatum-iot-sample-application**. |
-   | Application URL | Enter a unique name consisting of lower-case letters, digits, or dashes, and starting with a letter. |
-   | Pricing plan | Select one of the standard pricing plans. Select your **Directory**, **Azure subscription**, and **Location**. To learn about creating IoT Central applications, see [Create an IoT Central application](/azure/iot-central/core/howto-create-iot-central-application). To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
+1. Select **Review + create**. Then select **Create**.
 
-   :::image type="content" source="../media/6-iot-new-application.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
+When the app is ready, you can navigate to it from the Azure portal:
 
-   > [!NOTE]
-   > This will display the **Dashboard** page. This might take a few minutes. Review telemetry and analytics of the sample Azure IoT Central application.
+:::image type="content" source="../media/6-view-app-portal.png" alt-text="Screenshot that shows the IoT Central application resource in the Azure portal. The application URL is highlighted.":::
+
+> [!TIP]
+> To list all the IoT Central applications you have access to, navigate to [IoT Central Applications](https://apps.azureiotcentral.com/myapps).
+
+This will display the **Dashboard** page. This might take a few minutes. Review telemetry and analytics of the sample Azure IoT Central application:
 
 1. On the **Dashboard** page of the IoT Central Application portal, in the vertical menu, select **Devices**.
 1. In the **Thermostat** section, select **Thermostat-Zone1**.

@@ -4,11 +4,11 @@ title: Plan, design, and implement Azure Active Directory Connect
 metadata:
   title: Plan, design, and implement Azure Active Directory Connect
   description: "Plan, design, and implement Azure Active Directory Connect"
-  ms.date: 02/03/2023
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: roberts
   ms.topic: interactive-tutorial
-  ms.service: azure
+  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 12

@@ -10,6 +10,8 @@ metadata:
   ms.author: duau
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-azurecli
 durationInMinutes: 15
 content: |
   [!include[](includes/3-exercise-create-web-sites.md)]

@@ -4,13 +4,11 @@ title: Exercise - Add Application Insights to an ASP.NET core application
 metadata:
   title: Exercise - Add Application Insights to an ASP.NET core application
   description: "Exercise - Add Application Insights to an ASP.NET core application"
-  ms.date: 05/31/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 3
+  ms.prod: azure
+durationInMinutes: 30
 content: |
   [!include[](includes/8-exercise-add-application-insights-asp-net-core-application.md)]

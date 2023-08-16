@@ -12,7 +12,7 @@ metadata:
   ms.technology: aspnetcore-blazer
 title: Build a web app with Blazor
 summary: Learn how to set up your development environment and build your first web app with Blazor, Visual Studio Code, and C#.
-abstract: | 
+abstract: |
   In this module, you will:
   - Configure your local environment for Blazor development with Visual Studio Code
   - Create a new Blazor project
@@ -30,9 +30,7 @@ roles:
 - developer
 products:
 - azure
-- dotnet
 - aspnet-core
-- dotnet-core
 - blazor
 subjects:
 - development-tools

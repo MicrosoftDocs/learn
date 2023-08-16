@@ -2,12 +2,14 @@
 uid: learn.persist-data-ef-core.summary
 metadata:
   title: Summary
-  description: Summary
+  description: Summary.
   ms.date: 12/13/2021
   author: camsoper
   ms.author: casoper
   ms.manager: markl
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-dotnet
 title: Summary
 durationInMinutes: 2

@@ -1,3 +1,4 @@
+
 Several tools are available from third parties to help assess software packages' security and license rating.
 
 As discussed in the previous section, one approach by these tools is to provide a centralized artifact repository.

@@ -11,7 +11,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-dotnet
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - masoucou-11032020
 durationInMinutes: 1

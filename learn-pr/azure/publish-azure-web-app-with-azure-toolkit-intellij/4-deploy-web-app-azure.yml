@@ -8,6 +8,8 @@ metadata:
   author: bmitchell287
   ms.author: brendm
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 4
 content: |

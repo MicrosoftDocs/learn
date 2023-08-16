@@ -4,15 +4,15 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 07/06/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: cognitive-services
+  ms.subservice: language-service
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
   - content: "You want to use the Language service to determine the key talking points in a text document. Which feature of the service should you use?"
     choices:

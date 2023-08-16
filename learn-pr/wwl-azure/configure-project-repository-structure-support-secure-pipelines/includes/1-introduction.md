@@ -9,14 +9,14 @@ After completing this module, you’ll be able to:
 - Separate a project into team projects and repositories
 - Separate secure files between projects
 - Move the security repository away from a project
-- Assign project and repositories permissions
+- Assign project and repository permissions
 - Organize a project and repository structure
 
 ### Prerequisites
 
 You must create an Azure DevOps Organization and a Team Project for some exercises. If you don't have them yet, see:
 
-- [Create an organization - Azure DevOps.](https://docs.microsoft.com/azure/devops/organizations/accounts/create-organization)
+- [Create an organization - Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/accounts/create-organization)
 - [Create a project in Azure DevOps.](https://learn.microsoft.com/azure/devops/organizations/projects/create-project)
 
 To get the most out of this course, we recommend that you understand Azure DevOps and pipeline management.

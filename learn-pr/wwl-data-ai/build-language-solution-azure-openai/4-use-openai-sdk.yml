@@ -10,6 +10,8 @@ metadata:
   ms.author: berryivor
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 7
 content: |
   [!include[](includes/4-use-openai-sdk.md)]

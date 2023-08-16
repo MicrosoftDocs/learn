@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.shift-express-api-azure-functions.2-analyze-migration-serverless
 metadata:
-  title: Analyze a migration to serverless
-  description: Analyze a Migration to Serverless
+  title: Evaluate a migration to serverless
+  description: Consider the benefits of a serverless architecture and how you can easily migrate a sample Express Node.js app to Azure Functions.
   ms.date: 04/10/2020
   author: johnpapa
   ms.author: jopapa
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-js
   ms.prod: learning-azure
-title: Analyze a migration to serverless
+title: Evaluate a migration to serverless
 durationInMinutes: 3
 content: |
   [!include[](includes/2-analyze-migration-serverless.md)]

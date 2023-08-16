@@ -28,9 +28,7 @@ roles:
   - developer
   - solution-architect
 products:
-  - dotnet
   - aspnet-core
-  - dotnet-core
   - azure
   - azure-cache-redis
   - azure-container-registry

@@ -24,8 +24,8 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- document-intelligence
+- ai-services
 subjects:
 - artificial-intelligence
 modules:

@@ -10,6 +10,8 @@ metadata:
   ms.author: henrymbugua
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 7
 content: |
   [!include[](includes/3-exercise-register-azure-ad-app.md)]

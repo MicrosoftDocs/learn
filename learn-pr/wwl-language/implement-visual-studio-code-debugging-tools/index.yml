@@ -3,11 +3,11 @@ uid: learn.wwl.implement-visual-studio-code-debugging-tools
 metadata:
   title: Implement the Visual Studio Code debugging tools for C#
   description: "This module explores the tools and processes used to debug C# console applications in Visual Studio Code.  Hands-on activities provide experience using breakpoints, conditional breakpoints, and the debugging resources in the RUN AND DEBUG view."
-  ms.date: 06/01/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Implement the Visual Studio Code debugging tools for C#
 summary: Learn how to effectively debug C# programs in Visual Studio Code using breakpoints and the other debugging tools, such as resources in the RUN AND DEBUG view.
 abstract: |

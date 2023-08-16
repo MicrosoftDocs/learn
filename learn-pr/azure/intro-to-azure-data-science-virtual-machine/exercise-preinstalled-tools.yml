@@ -6,8 +6,11 @@ metadata:
   ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
   ms.service: machine-learning
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure
 azureSandbox: true
 title: Exercise - Use the preinstalled tools

@@ -3,7 +3,7 @@ uid: learn.design-your-site-recovery-solution-in-azure.4-build-resilient-applica
 title: Build resilient application services
 metadata:
   title: Build resilient application services
-  description: Build resilient application services
+  description: Build resilient application services.
   ms.date: 05/10/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
@@ -15,26 +15,26 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: As illustrated in the previous diagram, you're running your infrastructure partially in the cloud and partially on-premises. How could you enable real-time switching of traffic if there are future power issues?
+  - content: As illustrated in the previous diagram, you're running your infrastructure partially in the cloud and partially on-premises. How can you enable real-time switching of traffic if there are future power interruptions?
     choices:
     - content: Use Azure Traffic Manager to probe the health of the endpoints.
       isCorrect: true
       explanation: Azure Traffic Manager can automatically redirect all traffic to a health endpoint.
     - content: Use Azure Backup to probe the health of the endpoints.
       isCorrect: false
-      explanation: Azure Backup isn't used to monitor endpoints. It's used to back up workloads into Azure.
-    - content: Use Azure Monitor in order to probe the health of the endpoints.
+      explanation: Azure Backup isn't for monitoring endpoints. It's for backing up workloads in Azure.
+    - content: Use Azure Monitor to probe the health of the endpoints.
       isCorrect: false
-      explanation: Azure Monitor can't automatically redirect traffic for you.
-  - content: Your company is launching in a new region, how can you ensure there aren't performance issues for the new region?
+      explanation: Azure Monitor can't automatically redirect traffic.
+  - content: Your company is launching in a new region. How can you prevent performance issues for the new region?
     choices:
     - content: Set up monitoring, notifications, and autoscaling.
       isCorrect: true
-      explanation: You should monitor your region, and configure notifications for alerts and set up autoscaling to respond to demand. 
-    - content: Set up monitoring, and increase your recovery time objectives.
+      explanation: You should monitor your region, configure notifications for alerts, and set up autoscaling to respond to demand. 
+    - content: Set up monitoring, and increase your recovery time objective.
       isCorrect: false
-      explanation: You should be decreasing your recovery time objective as it is how long it takes for your region to be up and running again. In addition, you aren't addressing performance issues by just setting up monitoring. You must respond to performance issues by scaling or other means.
-    - content: Set up notifications, then fail over and fail back for your applications.
+      explanation: You should decrease your recovery time objective, which is how long it takes for your region to be up and running again. In addition, you aren't addressing performance issues by just setting up monitoring. You must respond to performance issues by scaling or other means.
+    - content: Set up notifications, and then fail over and fail back for your applications.
       isCorrect: false
       explanation: Failing over and back again is for when a failure occurs. If your workloads aren't performing well, this solution wouldn't necessarily address the performance issues because you're replicating the same environment in another location.
   - content: Which of the following resources can be restored from backups?
@@ -44,7 +44,7 @@ quiz:
       explanation: Azure Backup backs up virtual machines, but not network security groups or Traffic Manager.
     - content: Virtual machines, databases, disks.
       isCorrect: true
-      explanation: With Azure Backup and SQL server backup, you can back up all of these resources and restore them. You're able to run your workloads again as long as you have these resources backed up.
-    - content: Load balancers, subnets, VPN Gateway.
+      explanation: With Azure Backup and SQL Server backup, you can back up all of these resources and restore them. You can run your workloads again, as long as you have these resources backed up.
+    - content: Load balancers, subnets, VPN gateway.
       isCorrect: false
       explanation: Azure Backup doesn't back up these resources.

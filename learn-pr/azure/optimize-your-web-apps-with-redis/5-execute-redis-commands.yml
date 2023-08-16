@@ -9,6 +9,9 @@ metadata:
   ms.author: franlanglois
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 10
 content: |

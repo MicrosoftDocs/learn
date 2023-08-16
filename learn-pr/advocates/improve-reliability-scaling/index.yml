@@ -4,7 +4,7 @@ title: "Improve your reliability with modern operations practices: Capacity plan
 metadata:
   title: "Improve your reliability with modern operations practices: Capacity planning and scaling"
   description: Learn about capacity planning and scaling practices that can help you sustainably achieve the appropriate level of reliability in your systems, services, and products.
-  ms.date: 05/07/2020
+  ms.date: 06/23/2023
   author: dnblankedelman
   ms.author: dnb
   ms.topic: interactive-tutorial
@@ -13,18 +13,16 @@ metadata:
 summary: Success and the growth that comes with it can be just as much a challenge to your reliability as any other factor. Learn ways to plan for, handle, and estimate costs for your success while still retaining th reliability you need.
 abstract: |
   In this module you will:
-  -   Learn about scalability and the scalability/reliability relationship
-  -   Understand the role of capacity planning in preparing for growth
-  -   Learn basic concepts and fundamental terms related to scaling
-  -   Eliminate single points of failure
-  -   Understand the different kinds of growth and how to respond to them
-  -   Be able to measure capacity in the cloud
-  -   Catch issues with service limits and quotas before they emerge using Azure tools
-  -   Understand important steps to take before beginning work on scaling
-  -   List techniques for making an application more scalable including
-      decoupling, queues, in-memory caching and database sharding
-  -   Learn about the Azure tools that make it possible to take your
-      application or service global
+  - Learn about scalability and the scalability/reliability relationship.
+  - Understand the role of capacity planning in preparing for growth.
+  - Learn basic concepts and fundamental terms related to scaling.
+  - Eliminate single points of failure.
+  - Understand the different kinds of growth and how to respond to them.
+  - Be able to measure capacity in the cloud.
+  - Catch issues with service limits and quotas before they emerge using Azure tools.
+  - Understand important steps to take before beginning work on scaling.
+  - List techniques for making an application more scalable including decoupling, queues, in-memory caching and database sharding.
+  - Learn about the Azure tools that make it possible to take your application or service global.
 iconUrl: /training/achievements/improve-reliability-scaling.svg
 levels:
 - beginner

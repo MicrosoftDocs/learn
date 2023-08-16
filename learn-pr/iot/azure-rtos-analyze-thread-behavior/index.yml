@@ -3,10 +3,9 @@ uid: learn.iot.azure-rtos-analyze-thread-behavior
 metadata:
   title: Azure RTOS ThreadX — Analyze thread behavior with timing facilities
   description: Now that you have created your first Hello World project, have you thought about analyzing the behavior of your system? If so, this is the module you should investigate.
-  ms.date: 04/19/2022
+  ms.date: 06/16/2023
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
   ms.service: rtos

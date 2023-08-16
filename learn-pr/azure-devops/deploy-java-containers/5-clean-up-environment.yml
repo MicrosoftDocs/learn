@@ -1,15 +1,17 @@
 ### YamlMime:ModuleUnit
 uid: learn.azdo.deploy-java-containers.5-clean-up-environment
-title: Exercise - Clean up your Azure DevOps environment
+title: Exercise - Clean up Azure and Azure DevOps
 metadata:
-  title: Exercise - Clean up your Azure DevOps environment
-  description: Clean up your Azure DevOps project and your Azure resources.
+  title: Exercise - Clean up Azure and Azure DevOps
+  description: Remove your Azure and Azure DevOps resources to avoid incurring charges and using up your free minutes.
   ms.date: 08/26/2022
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
   ms.service: azure
-  ms.custom: devdivchpfy22
+  ms.custom:
+    - devdivchpfy22
+    - devx-track-extended-java
 durationInMinutes: 7
 content: |
   [!include[](includes/5-clean-up-environment.md)]

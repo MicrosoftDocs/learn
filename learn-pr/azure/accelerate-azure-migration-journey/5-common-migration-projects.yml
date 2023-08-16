@@ -8,6 +8,9 @@ metadata:
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

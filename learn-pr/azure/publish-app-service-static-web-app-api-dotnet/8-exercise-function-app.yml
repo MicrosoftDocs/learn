@@ -10,7 +10,8 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
   ms.custom:
-  - team=cloud_advocates
+    - team=cloud_advocates
+    - devx-track-dotnet
   ms.contributors:
   - aapowell-09162020
 title: Exercise - Create an Azure Functions project
