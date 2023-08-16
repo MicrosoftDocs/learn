@@ -22,7 +22,7 @@ Example: Implement security through a pipeline using DevOps Build Service (conto
 
 ## Consume packages from Azure Artifacts in a pipeline
 
-In Azure Pipelines, you can use the classic editor or the YAML tasks to publish your NuGet, or other packages within your pipeline to your Azure Artifacts feed or public registries such as nuget.org.
+In Azure Pipelines, you can use the classic editor or the YAML tasks to publish your NuGet or other packages within your pipeline to your Azure Artifacts feed or public registries such as nuget.org.
 
 To configure pipeline access to packages stored in Azure Artifacts repositories using YAML:
 
@@ -37,7 +37,7 @@ steps:
 
 ```
 
-Replace to your Azure Artifacts feed name with the name of your Azure Artifacts feed and your solution file.sln with the name of your solution file.
+Replace your Azure Artifacts feed name with the name of your Azure Artifacts feed and your solution file.sln with the name of your solution file.
 
 ![Screenshot of Azure Pipelines showing how to add the task to restore NuGet from Azure Artifacts.](../media/package-restore-artifacts.png)
 
