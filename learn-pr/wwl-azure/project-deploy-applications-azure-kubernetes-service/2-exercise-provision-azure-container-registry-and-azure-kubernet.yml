@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---provision-azure-container-registry-and-azure-kubernetes
+title: Exercise - Provision Azure Container Registry and Azure Kubernetes Service
+metadata:
+  title: Exercise - Provision Azure Container Registry and Azure Kubernetes Service
+  description: "Exercise - Provision Azure Container Registry and Azure Kubernetes Service"
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 15
+content: |
+  [!include[](includes/2-exercise-provision-azure-container-registry-and-azure-kubernet.md)]

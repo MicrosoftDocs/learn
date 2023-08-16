@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Summary"
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
+content: |
+  [!include[](includes/7-summary.md)]

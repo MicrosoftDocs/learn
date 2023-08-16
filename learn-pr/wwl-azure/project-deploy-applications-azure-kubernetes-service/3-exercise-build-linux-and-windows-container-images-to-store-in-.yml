@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---build-linux-and-windows-container-images-to-store-in-
+title: Exercise - Build Linux and Windows container images to store in the registry
+metadata:
+  title: Exercise - Build Linux and Windows container images to store in the registry
+  description: "Exercise - Build Linux and Windows container images to store in the registry"
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+azureSandbox: false
+labModal: false
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-exercise-build-linux-and-windows-container-images-to-store-in-.md)]

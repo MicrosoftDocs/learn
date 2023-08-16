@@ -1,0 +1,39 @@
+### YamlMime:Module
+uid: learn.wwl.project-deploy-applications-azure-kubernetes-service
+metadata:
+  title: Guided Project - Deploy applications to Azure Kubernetes Service
+  description: "Guided Project - Deploy applications to Azure Kubernetes Service"
+  ms.date: 08/16/2023
+  author: wwlpublish
+  ms.author: bradj
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+  ms.service: azure
+title: Guided Project - Deploy applications to Azure Kubernetes Service
+summary: In this module, you practice configuring Azure Container Registry (ACR) and Azure Kubernetes Service (AKS). You build container images and deploy them to Azure Kubernetes Service. The lab combines both learning and hands-on practice.
+abstract: |
+  MUST UPDATE: After completing this module, you'll be able to:
+  Manually scaling pods or nodes
+  Using the Horizontal pod autoscaler
+  Using the Cluster autoscaler
+  Integrating with Azure Container Instances (ACI)
+prerequisites: |
+  None
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- administrator
+products:
+- azure
+- azure-kubernetes-service
+units:
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.introduction
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---provision-azure-container-registry-and-azure-kubernetes
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---build-linux-and-windows-container-images-to-store-in-
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.exercise---deploy-container-images-to-azure-container-registr
+- learn.wwl.project-deploy-applications-azure-kubernetes-service. exercise---review-the-deployment-and-remove-resources
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.knowledge-check
+- learn.wwl.project-deploy-applications-azure-kubernetes-service.summary
+badge:
+  uid: learn.wwl.project-deploy-applications-azure-kubernetes-service.badge
