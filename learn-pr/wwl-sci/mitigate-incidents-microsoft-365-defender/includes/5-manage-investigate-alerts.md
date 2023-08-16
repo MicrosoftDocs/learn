@@ -38,7 +38,12 @@ So, for example:
 
 ### Categories
 
-The alert categories align with the enterprise attack tactics in the MITRE ATT&CK matrix.  The categories are:
+The alert categories align closely with the attack tactics and techniques in the MITRE ATT&CK Enterprise matrix.
+
+> [!NOTE]
+> The alert categories also include items (like `Unwanted Software`) that are not part of the ATT&CK matrices.
+
+The categories are:
 
 - **Collection** - Locating and collecting data for exfiltration
 
