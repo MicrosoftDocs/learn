@@ -96,6 +96,6 @@ If you prefer to use another language, you can call Form Recognizer by using its
 ## Learn more
 
 - [What is Azure Form Recognizer?](/azure/applied-ai-services/form-recognizer/overview)
-- [Guidance for integration and responsible use with Form Recognizer](/legal/cognitive-services/form-recognizer/fr-guidance-integration-responsible-use)
+- [Guidance for integration and responsible use with Form Recognizer](/legal/cognitive-services/document-intelligence/guidance-integration-responsible-use?toc=%2Fazure%2Fai-services%2Fdocument-intelligence%2Ftoc.json&bc=%2Fazure%2Fai-services%2Fdocument-intelligence%2Fbreadcrumb%2Ftoc.json)
 - [Form Recognizer models](/azure/applied-ai-services/form-recognizer/concept-model-overview)
 - [Form Recognizer Studio (preview)](/azure/applied-ai-services/form-recognizer/concept-form-recognizer-studio)
