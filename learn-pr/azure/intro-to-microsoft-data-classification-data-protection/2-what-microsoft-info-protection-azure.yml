@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.2-what-microsoft-info-protection-azure
-title: What is Microsoft Information Protection and Azure Information Protection?
+title: Information protection overview
 metadata:
-  title: What is Microsoft Information Protection and Azure Information Protection?
-  description: What is Microsoft Information Protection and Azure Information Protection?
+  title: Information protection overview
+  description: Learn about how information protection works, and the capabilities of Microsoft Purview Information Protection and Azure Information Protection.
   ms.date: 03/25/2021
   author: cwatson-cat
   ms.author: cwatson

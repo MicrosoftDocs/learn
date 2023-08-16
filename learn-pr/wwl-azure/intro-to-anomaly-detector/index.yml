@@ -31,7 +31,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 subjects:
 - data-analytics
 units:
