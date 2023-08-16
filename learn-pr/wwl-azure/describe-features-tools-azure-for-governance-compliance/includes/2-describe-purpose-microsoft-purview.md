@@ -1,4 +1,4 @@
-Microsoft Purview is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multi-cloud, and software-as-a-service data together.
+Microsoft Purview is a family of data governance, risk, and compliance solutions that helps you get a single, unified view into your data. Microsoft Purview brings insights about your on-premises, multicloud, and software-as-a-service data together.
 
 With Microsoft Purview, you can stay up-to-date on your data landscape thanks to:
 
@@ -21,7 +21,7 @@ Microsoft 365 features as a core component of the Microsoft Purview risk and com
 
 ## Unified data governance<br>
 
-Microsoft Purview has robust, unified data governance solutions that help manage your on-premises, multi-cloud, and software as a service data. Microsoft Purview’s robust data governance capabilities enable you to manage your data stored in Azure, SQL and Hive databases, locally, and even in other clouds like Amazon S3.
+Microsoft Purview has robust, unified data governance solutions that help manage your on-premises, multicloud, and software as a service data. Microsoft Purview’s robust data governance capabilities enable you to manage your data stored in Azure, SQL and Hive databases, locally, and even in other clouds like Amazon S3.
 
 Microsoft Purview’s unified data governance helps your organization:
 
