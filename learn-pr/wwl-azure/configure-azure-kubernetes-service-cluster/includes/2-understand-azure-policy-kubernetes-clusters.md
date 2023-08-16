@@ -1,4 +1,3 @@
-
 Azure Policy extends Gatekeeper v3, an *admission controller webhook* for Open Policy Agent (OPA), to apply at-scale enforcements and safeguards on your clusters in a centralized, consistent manner. Azure Policy makes it possible to manage and report on the compliance state of your Kubernetes clusters from one place. The add-on enacts the following functions:
 
  -  Checks with Azure Policy service for policy assignments to the cluster.

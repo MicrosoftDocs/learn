@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.configure-azure-kubernetes-service-cluster.install-azure-policy-add-azure-kubernetes-service
-title: Enable Azure Policy add on for Azure Kubernetes Service
+title: Try-This exercise - Enable Azure Policy add on for Azure Kubernetes Service
 metadata:
-  title: Enable Azure Policy add on for Azure Kubernetes Service
-  description: "Enable Azure Policy add on for Azure Kubernetes Service"
-  ms.date: 07/30/2023
+  title: Try-This exercise - Enable Azure Policy add on for Azure Kubernetes Service
+  description: "Try-This exercise - Enable Azure Policy add on for Azure Kubernetes Service"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial

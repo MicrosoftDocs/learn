@@ -1,4 +1,3 @@
-
 Azure Policy is an add-on that enables centralized, consistent enforcement of policies and safeguards on Kubernetes clusters at scale.
 
 ## Scenario

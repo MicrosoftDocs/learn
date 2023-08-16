@@ -1,5 +1,9 @@
+Use this Try-This exercise to gain some hands-on experience with Azure Kubernetes Service.
 
-&lt;boilerplate intro for Azure policy... installing Azure policy add-on, and verifying the resource provider&gt;
+This exercise you enable Azure Policy add on for an Azure Kubernetes Service cluster and verify the assignment is being enforced.
+
+> [!NOTE]
+> To complete this exercise you'll need an [Azure Subscripton](https://azure.microsoft.com/free/).
 
 1.  Sign in to the [Azure portal](https://portal.azure.com/).
 2.  Select the Kubernetes cluster.

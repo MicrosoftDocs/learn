@@ -1,4 +1,3 @@
-
 Kubernetes resources, such as pods and deployments, are logically grouped into a namespace to divide an AKS cluster and create, view, or manage access to resources. For example, you can create namespaces to separate business groups. Users can only interact with resources within their assigned namespaces.
 
 Namespaces are intended for environments with multiple users spanning multiple teams or organizations. Namespaces are suited medium, large, and enterprise organizations that have hundreds or thousands of users to manage.

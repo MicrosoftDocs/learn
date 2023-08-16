@@ -1,4 +1,3 @@
-
 ## Multiple Choice
 What is the purpose of Azure Policy in relation to Kubernetes clusters?
 ( ) Azure Policy is used to manage and report on the compliance state of your Kubernetes clusters from multiple places. {{Incorrect. Azure Policy allows for centralized management and reporting of compliance state.}}

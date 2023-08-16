@@ -1,4 +1,3 @@
-
 In this module, you learned how to:
 
  -  Enable and configure Azure Policy for Azure Kubernetes Service.
