@@ -25827,152 +25827,152 @@
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/index.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/1-introduction.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/2-subsystems-iot-architecture.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/3-data-flow-processing.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/4-cross-cutting-architectural-concerns.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/5-knowledge-check.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/introduction-iot-solution-architecture/6-summary.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/index.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/1-introduction.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/2-iot-hardware-components.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/3-azure-iot-services-technologies.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/4-introduction-iot-device-software.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/5-cloud-service-components-iot-solution.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/6-knowledge-check.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/examine-components-iot-solution/7-summary.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-portal/index.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-portal/1-introduction.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-portal/2-examine-azure-portal.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-portal/3-customize-azure-portal.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-portal/4-knowledge-check.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-portal/5-summary.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/index.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/1-introduction.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/2-features-azure-iot-hub.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/3-features-azure-iot-hub-device-provisioning-service.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/4-resources-unique-names.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/5-create-azure-iot-resources.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/6-knowledge-check.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/wwl-azure/explore-azure-iot-services/7-summary.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     },
     {
       "source_path": "learn-pr/paths/create-azure-iot-services-azure-portal/index.md",
-      "redirect_url": "/training/paths/introduction-to-iot-hub/",
+      "redirect_url": "/training/modules/introduction-to-iot-hub/",
       "redirect_document_id": false
     }
   ]
