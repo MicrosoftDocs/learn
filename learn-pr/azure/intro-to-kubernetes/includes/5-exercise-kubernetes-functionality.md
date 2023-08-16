@@ -200,7 +200,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     sudo kubectl get nodes
     ```
 
-    The result will be similar to the following example, which shows you that there's only one node in the cluster with the name microk8s-vm. Notice that the node is in a ready state. The ready state indicates that the control plane might schedule workloads on this node.
+    The result is similar to the following example, which shows you that there's only one node in the cluster with the name microk8s-vm. Notice that the node is in a ready state. The ready state indicates that the control plane might schedule workloads on this node.
 
     ```output
     NAME          STATUS   ROLES    AGE   VERSION
@@ -213,7 +213,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     sudo kubectl get nodes -o wide
     ```
 
-    The result will be similar to the following example. Notice that you now can see the internal IP address of the node, the OS running on the node, the kernel version, and the container runtime.
+    The result is similar to the following example. Notice that you now can see the internal IP address of the node, the OS running on the node, the kernel version, and the container runtime.
 
     ```output
     NAME          STATUS   ROLES    AGE   VERSION   INTERNAL-IP      EXTERNAL-IP   OS-IMAGE             KERNEL-VERSION      CONTAINER-RUNTIME
@@ -226,7 +226,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     sudo kubectl get services -o wide
     ```
 
-    The result will be similar to the following example, but notice that only one service is listed. You installed add-ons on the cluster earlier, and you'd expect to see these services as well.
+    The result is similar to the following example, but notice that only one service is listed. You installed add-ons on the cluster earlier, and you'd expect to see these services as well.
 
     ```output
     NAME         TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE   SELECTOR
@@ -241,7 +241,7 @@ Recall from earlier that a Kubernetes cluster exists out of control planes and w
     sudo kubectl get services -o wide --all-namespaces
     ```
 
-    The result will be similar to the following example. Notice that you have three namespaces in your cluster. They're the default, `container-registry`, and `kube-system` namespaces. Here, you can see the `registry`, `kube-dns`, and `kubernetes-dashboard` instances that you installed. You'll also see the supporting services that were installed alongside some of the add-ons.
+    The result is similar to the following example. Notice that you have three namespaces in your cluster. They're the default, `container-registry`, and `kube-system` namespaces. Here, you can see the `registry`, `kube-dns`, and `kubernetes-dashboard` instances that you installed. You'll also see the supporting services that were installed alongside some of the add-ons.
 
     ```output
     NAMESPACE            NAME                        TYPE        CLUSTER-IP       EXTERNAL-IP   PORT(S)                  AGE   SELECTOR
@@ -271,7 +271,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     sudo kubectl create deployment nginx --image=nginx
     ```
 
-    The result will be similar to the following example:
+    The result is similar to the following example:
 
     ```output
     deployment.apps/nginx created
@@ -283,7 +283,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     sudo kubectl get deployments
     ```
 
-    The result will be similar to the following example. Notice that the name of the deployment matches the name you gave it, and that one deployment with this name is in a ready state and available.
+    The result is similar to the following example. Notice that the name of the deployment matches the name you gave it, and that one deployment with this name is in a ready state and available.
 
     ```output
     NAME    READY   UP-TO-DATE   AVAILABLE   AGE
@@ -296,7 +296,7 @@ Even though the use of `kubectl` is handy, using manifest files is a best practi
     sudo kubectl get pods
     ```
 
-    The result will be similar to the following example. Notice that the name of the pod is a generated value prefixed with the name of the deployment, and the pod has a status of *Running*.
+    The result is similar to the following example. Notice that the name of the pod is a generated value prefixed with the name of the deployment, and the pod has a status of *Running*.
 
     ```output
     NAME                     READY   STATUS    RESTARTS   AGE
@@ -313,7 +313,7 @@ Test the NGINX installation by connecting to the web server through the pod's IP
     sudo kubectl get pods -o wide
     ```
 
-    The result will be similar to the following example. Notice that the command returns both the IP address of the node, and the node name on which the workload is scheduled.
+    The result is similar to the following example. Notice that the command returns both the IP address of the node, and the node name on which the workload is scheduled.
 
     ```output
     NAME                     READY   STATUS    RESTARTS   AGE     IP           NODE          NOMINATED NODE   READINESS GATES
@@ -326,7 +326,7 @@ Test the NGINX installation by connecting to the web server through the pod's IP
     wget 10.1.83.10
     ```
 
-    The result will be similar to the following example:
+    The result is similar to the following example:
 
     ```output
     --2020-03-16 13:34:17--  http://10.1.83.10/
@@ -352,7 +352,7 @@ To scale the number of replicas in your deployment, run the `kubectl scale` comm
     sudo kubectl scale --replicas=3 deployments/nginx
     ```
 
-    The result will be similar to the following example:
+    The result is similar to the following example:
 
     ```output
     deployment.apps/nginx scaled
@@ -366,7 +366,7 @@ To scale the number of replicas in your deployment, run the `kubectl scale` comm
     sudo kubectl get pods -o wide
     ```
 
-    The result will be similar to the following example. Notice that you now see three running pods, each with a unique IP address.
+    The result is similar to the following example. Notice that you now see three running pods, each with a unique IP address.
 
     ```output
     NAME                     READY   STATUS    RESTARTS   AGE     IP           NODE          NOMINATED NODE   READINESS GATES
@@ -376,7 +376,7 @@ To scale the number of replicas in your deployment, run the `kubectl scale` comm
     ubuntu@microk8s-vm:~$
     ```
 
-You'd need to apply several additional configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future.
+You'd need to apply several more configurations to the cluster to effectively expose your website as a public-facing website. Examples include installing a load balancer and mapping node IP addresses. This type of configuration forms part of advanced aspects that you'll explore in the future.
 
 ## Uninstall MicroK8s
 
@@ -394,7 +394,7 @@ To recover space on your development machine, you can remove everything you've d
     sudo snap remove microk8s
     ```
 
-If you want to remove the Multipass VM manager from your machine, there are a few additional steps to take on Windows and macOS.
+If you want to remove the Multipass VM manager from your machine, there are a few extra steps to take on Windows and macOS.
 
 1. To exit the VM, run the `exit` command:
 
