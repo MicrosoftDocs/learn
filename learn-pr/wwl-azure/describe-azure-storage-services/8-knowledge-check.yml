@@ -1,15 +1,13 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-azure-storage-services.knowledge-check
-title: Knowledge check
+title: Knowledge Check
 metadata:
-  title: Knowledge check
-  description: "Knowledge check"
-  ms.date: 08/11/2023
+  title: Knowledge Check
+  description: "Knowledge Check"
+  ms.date: 08/16/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-azureSandbox: false
-labModal: false
 durationInMinutes: 4
 content: |
   [!include[](includes/8-knowledge-check.md)]
