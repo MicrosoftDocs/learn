@@ -1,16 +1,12 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-session-host-image.modify
+uid: learn.wwl.create-manage-session-host-image.modify-session-host-image
 title: Modify a session host image
 metadata:
   title: Modify a session host image
   description: "Modify a session host image"
-  ms.date: 06/02/2023
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 6
 content: |
   [!include[](includes/3-modify-session-host-image.md)]

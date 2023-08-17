@@ -4,14 +4,11 @@ title: Create an Azure Virtual Desktop image by using VM Image Builder
 metadata:
   title: Create an Azure Virtual Desktop image by using VM Image Builder
   description: "Create an Azure Virtual Desktop image by using VM Image Builder"
-  ms.date: 06/02/2023
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.custom:
-    - devx-track-azurepowershell
-azureSandbox: false
-labModal: false
-durationInMinutes: 7
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/6-create-azure-virtual-desktop-image-image-builder.md)]
+interactive: bash

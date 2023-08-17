@@ -1,16 +1,14 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-session-host-image.create-use-shared-image-gallery-sig-using-portal
-title: Create and use an Azure Compute Gallery using the portal
+uid: learn.wwl.create-manage-session-host-image.create-shared-image-gallery-portal
+title: Create and use an Azure Compute Gallery using the Azure portal
 metadata:
-  title: Create and use an Azure Compute Gallery using the portal
-  description: "Create and use an Azure Compute Gallery using the portal"
-  ms.date: 06/02/2023
+  title: Create and use an Azure Compute Gallery using the Azure portal
+  description: "Create and use an Azure Compute Gallery using the Azure portal"
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 10
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/5-create-shared-image-gallery-portal.md)]
+interactive: bash

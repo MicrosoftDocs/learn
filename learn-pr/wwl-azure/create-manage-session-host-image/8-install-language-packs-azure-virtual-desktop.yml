@@ -4,13 +4,11 @@ title: Install language packs in Azure Virtual Desktop
 metadata:
   title: Install language packs in Azure Virtual Desktop
   description: "Install language packs in Azure Virtual Desktop"
-  ms.date: 06/02/2023
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
-durationInMinutes: 9
+  zone_pivot_groups: azure-interface
 content: |
   [!include[](includes/8-install-language-packs-azure-virtual-desktop.md)]
+interactive: bash
