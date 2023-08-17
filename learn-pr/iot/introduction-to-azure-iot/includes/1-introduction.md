@@ -10,8 +10,7 @@
 
     [Introduction unit guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-introductions?branch=main#rule-use-the-standard-module-introduction-format)
 -->
-TODO: add your topic sentences(s)
-TODO: add your visual element
+The Azure Internet of Things (IoT) is a collection of Microsoft-managed cloud services, edge components, and SDKs that let you build solutions to connect, monitor, and control your IoT assets at scale. In simpler terms, an IoT solution is made up of IoT devices that communicate with one or more Azure cloud services.
 
 <!-- 2. Scenario -----------------------------------------------------------------------------------------
 
@@ -26,8 +25,8 @@ TODO: add your visual element
     [Scenario guidance](https://review.docs.microsoft.com/learn-docs/docs/id-guidance-scenarios)
  -->
 ## Example scenario
-TODO: add your scenario
-TODO: add your image
+
+Suppose you work at a coffee machine company as the IT expert. Your company plans to launch a range IoT enabled coffee machines. Your company wants to monitor these coffee machines and be able to manage issues remotely. For example, if a coffee machine is in warranty and the water temperature is outside the expected range then the maintenance department should be notified.
 
 <!-- 3. Prose table-of-contents --------------------------------------------------------------------------
 
@@ -41,8 +40,12 @@ TODO: add your image
                 * **Branch**: what types of business logic can you add to your app?"
 
  -->
-## What will we be doing?
-TODO: add your activities
+## What will you be doing?
+
+You'll learn about the:
+
+- The typical components and architecture of an IoT solution.
+- The capabilities of the various Azure IoT services and SDKs.
 
 <!-- 4. Terminal learning objective ----------------------------------------------------------------------
 
@@ -58,6 +61,7 @@ TODO: add your activities
 
  -->
 ## What is the main goal?
-By the end of this session, you'll be able to (TODO)
+
+By the end of this session, you'll be able to decide whether the Azure IoT services are appropriate to your specific IoT scenario.
 
 <!-- Do **not** include any other content like learning objectives, prerequisites, unit summary, "next unit" lead-in, or references. -->

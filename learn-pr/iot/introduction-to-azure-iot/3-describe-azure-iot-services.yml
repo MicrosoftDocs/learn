@@ -1,12 +1,12 @@
 ### YamlMime:ModuleUnit
 uid: |
-  learn.introduction-to-azure-iot.when-to-use-azure-iot
+  learn.introduction-to-azure-iot.describe-azure-iot-services
 title: |
-  When to use Azure IoT
+  What is Azure IoT
 metadata:
   title: |
-    When to use Azure IoT
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+    What is Azure IoT
+  description: "A typical IoT solution consists of on-premises devices and gateways, IoT specific cloud services to ingest IoT data into the cloud, and generic cloud services to provide capabilities such as storage and visualizations."
   ms.date: 8/14/2023
   author: dominicbetts
   ms.author: dobett
@@ -22,6 +22,6 @@ metadata:
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: iot
-durationInMinutes: 1
+durationInMinutes: 5
 content: |
-  [!include[](includes/4-when-to-use-azure-iot.md)]
+  [!include[](includes/3-describe-azure-iot-services.md)]

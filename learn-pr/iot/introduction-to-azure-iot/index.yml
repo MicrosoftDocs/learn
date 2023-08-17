@@ -4,7 +4,7 @@ uid: |
 metadata:
   title: |
     Introduction to Azure IoT            # Do not edit: title must be "Introduction to (product)"
-  description: "TODO"               # Copy your 'evaluate' Learning Objective here (see below)
+  description: "Evaluate whether the Azure IoT services are appropriate to your IoT scenario."               # Copy your 'evaluate' Learning Objective here (see below)
   ms.date: 8/14/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: dominicbetts        # GitHub ID of the Microsoft employee either authoring or project-managing this content
   ms.author: dobett             # Alias     of the Microsoft employee either authoring or project-managing this content
@@ -35,7 +35,7 @@ title: |
 ###
 ### Detailed guidance: https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main
 ###
-summary: ""
+summary: "Characterize the types of business processes that Azure IoT can add value to. Survey Azure IoT services such as IoT Hub and IoT Central that help you build IoT solutions."
 ###########################################################################
 ###
 ### Learning Objectives
@@ -62,8 +62,8 @@ summary: ""
 ###
 abstract: |
   By the end of this module, you'll be able to:
-    - Evaluate whether Azure IoT is appropriate to (general product use case).
-    - Describe how (features) of Azure IoT work to (solve problem).
+    - Evaluate whether the Azure IoT services are appropriate to your IoT scenario.
+    - Describe how features of the Azure IoT services work to implement your IoT scenario.
 ###########################################################################
 ###
 ### Prerequisites
@@ -86,9 +86,8 @@ abstract: |
 ###   Prerequisite 2: "Basic knowledge of REST services and APIs"
 ###
 prerequisites: |
-  - TODO prerequisite 1
-  - TODO prerequisite 2
-  - TODO prerequisite 3
+  - Basic familiarity with IoT terms and concepts
+  - Familiarity with Azure cloud concepts such as services,security, and communications protocols
 iconUrl: /learn/achievements/introduction-to-azure-iot.svg
 levels:
   - beginner
@@ -105,8 +104,8 @@ subjects:
 units:
 - learn.introduction-to-azure-iot.introduction
 - learn.introduction-to-azure-iot.what-is-azure-iot
+- learn.introduction-to-azure-iot.describe-azure-iot-services
 - learn.introduction-to-azure-iot.how-azure-iot-works
-- learn.introduction-to-azure-iot.when-to-use-azure-iot
 - learn.introduction-to-azure-iot.knowledge-check
 - learn.introduction-to-azure-iot.summary
 ###########################################################################

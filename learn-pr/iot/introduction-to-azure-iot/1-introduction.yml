@@ -6,7 +6,7 @@ title: |
 metadata:
   title: |
     Introduction
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "An Azure IoT solution typically uses multiple services such as as IoT Hub, IoT Central, and the Device Provisioning service. Device clients are implemented by using one of the Azure IoT device SDKs."
   ms.date: 8/14/2023
   author: dominicbetts
   ms.author: dobett

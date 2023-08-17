@@ -6,7 +6,7 @@ title: |
 metadata:
   title: |
     How Azure IoT works
-  description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the unit; include relevant search keywords."
+  description: "A typical IoT solution has capabilities and components such as devices, gateways, message processing and routing, analysis, visualization, security, and scalability."
   ms.date: 8/14/2023
   author: dominicbetts
   ms.author: dobett
@@ -21,8 +21,7 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
-durationInMinutes: 1
+  ms.service: iot
+durationInMinutes: 5
 content: |
-  [!include[](includes/3-how-azure-iot-works.md)]
+  [!include[](includes/4-how-azure-iot-works.md)]
