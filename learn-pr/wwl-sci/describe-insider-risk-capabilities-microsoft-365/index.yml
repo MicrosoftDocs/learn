@@ -14,7 +14,6 @@ abstract: |
   After completing this module, you'll be able to:
   - Describe insider risk management
   - Describe communication compliance
-  - Describe information barriers
 prerequisites: |
   - General understanding of networking and cloud computing concepts.
   - General IT knowledge or any general experience working in an IT environment.
@@ -34,7 +33,6 @@ units:
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.introduction
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.management-solution
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-communication-compliance
-- learn.wwl.describe-insider-risk-capabilities-microsoft-365.describe-information-barriers
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.knowledge-check
 - learn.wwl.describe-insider-risk-capabilities-microsoft-365.summary-resources
 badge:

@@ -11,7 +11,7 @@ metadata:
   ms.prod: learning-m365
 durationInMinutes: 2
 content: |
-  [!include[](includes/7-knowledge-check.md)]
+  [!include[](includes/4-knowledge-check.md)]
 quiz:
   title: "Check your knowledge"
   questions:
@@ -34,17 +34,6 @@ quiz:
     - content: "Use Microsoft Purview Communication Compliance."
       isCorrect: true
       explanation: "Correct. Microsoft Purview Communication Compliance helps minimize communication risks by enabling you to detect, capture, and take remediation actions for inappropriate messages in the organization."
-    - content: "Use Microsoft Purview Information Barriers."
+    - content: "Use Microsoft Insider Risk Management."
       isCorrect: false
-      explanation: "Incorrect. You don't use Microsoft Purview Information Barriers to scan for offensive language. Instead, use Microsoft Purview Communication Compliance."
-  - content: "Your organization has many departments that collaborate through Microsoft Teams. To comply with business policies, the IT organization needs to make sure that users from one particular department are limited in their access and interactions with other departments. What solution can address this need?"
-    choices:
-    - content: "Use Microsoft Purview Communication Compliance."
-      isCorrect: false
-      explanation: "Incorrect. You don't use Microsoft Purview Communication Compliance to block information from being accessed across departments. Instead, use Microsoft Purview Information Barriers."
-    - content: "Use activity explorer."
-      isCorrect: false
-      explanation: "Incorrect. Activity explorer won't enable you to do this. Activity explorer provides visibility into what content has been discovered and labeled, and where that content is. Instead, use information barriers to block information from being accessed across departments."
-    - content: "Use Microsoft Purview Information Barriers."
-      isCorrect: true
-      explanation: "Correct. With Microsoft Purview Information Barriers, you're able to restrict communications among specific groups of users when necessary."
+      explanation: "Incorrect. You don't use Microsoft Insider Risk Management to scan for offensive language. Instead, use Microsoft Purview Communication Compliance."
