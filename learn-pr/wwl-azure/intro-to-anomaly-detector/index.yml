@@ -1,25 +1,22 @@
 ### YamlMime:Module
 uid: learn.azure.intro-to-anomaly-detector
 metadata:
-  title: Introduction to Anomaly Detector
-  description: "Discover the Anomaly Detector service that is part of the Azure Decision services offerings. Anomaly detection is an artificial intelligence technique used to determine whether values in a series are within expected parameters."
-  ms.date: 02/01/2023
+  title: Introduction Azure AI Anomaly Detector
+  description: "Discover Azure AI Anomaly Detector, a service used to determine whether values in a series are within expected parameters."
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-  ms.subservice: anomaly-detector
-title: Introduction to Anomaly Detector
+  ms.prod: azure
+title: Introduction Azure AI Anomaly Detector
 summary: Discover the services available on Azure to detect anomalies in your time-series, or real-time data.
 abstract: |
   After completing this module, you will be able to:
-    - Describe the Anomaly Detector service
-    - Briefly describe how Anomaly Detector works
-    - Describe when to use Anomaly Detector
+    - Describe Azure AI Anomaly Detector and how it works
+    - Describe when to use Azure AI Anomaly Detector
 prerequisites: |
-  - Basic familiarity with Azure
   - Ability to navigate the Azure portal
-  - Basic familiarity with Azure Cognitive Services
+  - Basic familiarity with Azure AI services
 iconUrl: /training/achievements/anomaly-detector.svg
 levels:
 - beginner
@@ -31,7 +28,6 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- ai-services
 subjects:
 - data-analytics
 units:
