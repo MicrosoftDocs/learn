@@ -46,6 +46,6 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
 The script deploys a modified version of the *:::no-loc text="eShopOnContainers":::* [reference app](https://github.com/dotnet-architecture/eshoponcontainers). The solution architecture of the app is pictured in the following diagram:
 
-:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="eShopOnContainers solution architecture diagram." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
+:::image type="content" source="../../media/microservices/eshop-architecture.png" alt-text="Diagram of the eShopOnContainers solution architecture." border="true" lightbox="../../media/microservices/eshop-architecture.png":::
 
 This module explores data services implemented in the *:::no-loc text="eShopOnContainers":::* app. The deployment script takes several minutes to complete. While the script is running, continue to the next unit to review microservices data store concepts.
