@@ -121,8 +121,7 @@ for (int i = 0; i < stringsCount; i++)
 
         Console.WriteLine(mySentence);
     }
-
-    // the remaining portion of speciesToListSelection is the final species name 
+ 
     mySentence = myString.Trim();
     Console.WriteLine(mySentence);
 }
