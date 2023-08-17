@@ -175,7 +175,7 @@ When all the health checks return to a healthy status, sign out of the app, then
 
     :::image type="content" source="../media/basket-api-heath-check.png" alt-text="Screenshot of the health checks status dashboard." border="true" lightbox="../media/basket-api-heath-check.png":::
 
-1. Browse the **:::no-loc text="Web SPA application":::** and verify that you are able to add catalog items to the shopping cart.
+1. Browse the **:::no-loc text="Web SPA application":::** and verify that you're able to add catalog items to the shopping cart.
 
     :::image type="content" source="../media/eshop-spa-shopping-bag.png" alt-text="Screenshot of the shopping cart with .NET Blue Hoodie." border="true" lightbox="../media/eshop-spa-shopping-bag.png":::
 
