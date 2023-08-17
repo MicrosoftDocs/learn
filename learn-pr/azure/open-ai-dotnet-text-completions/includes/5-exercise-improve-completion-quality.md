@@ -31,7 +31,10 @@ Next add some examples to help the model give us the output we want to see in a 
 
     ```csharp
     string prompt = $"""
-      Product reviews are a key component in how our online business decides whether to include stock products in the future. You will help us make those decisions by classifying a product review as positive, neutral, or negative.
+      Product reviews are a key component in how our online business decides 
+      whether to include stock products in the future. You will help us make 
+      those decisions by classifying a product review as positive, neutral, 
+      or negative.
   
       Here are a few examples you can use:
   
