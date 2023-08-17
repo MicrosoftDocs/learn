@@ -8,6 +8,9 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
 content: |
   [!include[](includes/9-knowledge-check.md)]
 quiz:

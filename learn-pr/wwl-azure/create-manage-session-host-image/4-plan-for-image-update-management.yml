@@ -8,7 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 10
 content: |
   [!include[](includes/4-plan-for-image-update-management.md)]
-interactive: bash

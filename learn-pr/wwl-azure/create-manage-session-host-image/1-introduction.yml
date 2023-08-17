@@ -8,5 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
+azureSandbox: false
+labModal: false
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

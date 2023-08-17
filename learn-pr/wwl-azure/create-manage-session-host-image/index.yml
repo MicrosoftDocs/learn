@@ -32,10 +32,10 @@ subjects:
 - virtual-machine
 units:
 - learn.wwl.create-manage-session-host-image.introduction
-- learn.wwl.create-manage-session-host-image.create-managed-virtual-machine-image
-- learn.wwl.create-manage-session-host-image.modify-session-host-image
+- learn.wwl.create-manage-session-host-image.create-managed-vm-image
+- learn.wwl.create-manage-session-host-image.modify
 - learn.wwl.create-manage-session-host-image.plan-for-image-update-management
-- learn.wwl.create-manage-session-host-image.create-shared-image-gallery-portal
+- learn.wwl.create-manage-session-host-image.create-use-shared-image-gallery-sig-using-portal
 - learn.wwl.create-manage-session-host-image.create-azure-virtual-desktop-image-image-builder
 - learn.wwl.create-manage-session-host-image.install-office-master-image
 - learn.wwl.create-manage-session-host-image.install-language-packs-azure-virtual-desktop

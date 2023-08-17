@@ -8,7 +8,8 @@ metadata:
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 9
 content: |
   [!include[](includes/8-install-language-packs-azure-virtual-desktop.md)]
-interactive: bash

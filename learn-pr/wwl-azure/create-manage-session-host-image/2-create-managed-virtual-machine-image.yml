@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
-uid: learn.wwl.create-manage-session-host-image.create-managed-virtual-machine-image
-title: Create a managed virtual machine image
+uid: learn.wwl.create-manage-session-host-image.create-managed-vm-image
+title: Create a managed virtual machine (VM) image
 metadata:
-  title: Create a managed virtual machine image
-  description: "Create a managed virtual machine image"
+  title: Create a managed virtual machine (VM) image
+  description: "Create a managed virtual machine (VM) image"
   ms.date: 08/17/2023
   author: wwlpublish
   ms.author: bradj
   ms.topic: interactive-tutorial
-  zone_pivot_groups: azure-interface
+azureSandbox: false
+labModal: false
+durationInMinutes: 6
 content: |
   [!include[](includes/2-create-managed-virtual-machine-image.md)]
-interactive: bash
