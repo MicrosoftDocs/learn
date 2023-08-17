@@ -37,4 +37,4 @@ One of the most significant advantages of PWABuilder is its ability to package P
 
 ## Windows packaging
 
-For Windows, PWABuilder generates a Microsoft Store-compatible package, allowing your PWA to be discovered, installed, and updated through the Microsoft Store on Windows devices. Packaging your PWA for Windows allows you to take advantage of platform-specific features such as Live Tiles and deep integration with the Windows operating system.
+For Windows, PWABuilder generates a Microsoft Store-compatible package, allowing your PWA to be discovered, installed, and updated through the Microsoft Store on Windows devices. Packaging your PWA for Windows allows you to take advantage of platform-specific features such as pinning to task bar, showing in Start menu, and deep integration with the Windows operating system.
