@@ -83,5 +83,5 @@ In the case, there isn't a direct translation of _catio-tent_ from English to Sp
     ```
 
 1. Run the application. It should give you a translation.
-1. Change `exampleReview` to be `"The tent ate the cat`.
+1. Change `exampleReview` to be `"The tent ate the cat"`.
 1. Run the application again, and it should output: `No es una buena forma de hablar español.`.
