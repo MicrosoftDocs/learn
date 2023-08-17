@@ -58,6 +58,8 @@ az vm create \
 
 Both shells support Azure CLI and Azure PowerShell. Bash defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell Core within Linux by typing `pwsh`. The PowerShell environment has both CLI tools pre-installed. The Cloud Shell has many additional developer tools available, such as text editors, source control tools, databases, and more.
 
+You can access Azure Cloud Shell from within the Azure portal or by navigating to <https://shell.azure.com>.
+
 Many of the interactive exercises across Microsoft Learn use the Cloud Shell to try out Azure features.
 
 ## Azure mobile app
