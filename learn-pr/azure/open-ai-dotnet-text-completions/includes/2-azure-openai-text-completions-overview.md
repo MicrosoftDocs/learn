@@ -1,6 +1,6 @@
 Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3, GPT-4, and ChatGPT model series. These models can be easily adapted to your specific task including but not limited to content generation, summarization, semantic search, and natural language to code translation.
 
-In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we will use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
+In addition to the REST API access, a .NET SDK exists to access Azure OpenAI Service. And that's what we will use to build our application. But before building the application, let's learn a bit more about what Azure OpenAI is and what text completions are. Knowing that give us the foundation we need to build amazing applications with AI.
 
 ## Azure OpenAI overview
 
