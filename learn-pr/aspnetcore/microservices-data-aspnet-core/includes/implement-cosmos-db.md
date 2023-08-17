@@ -97,7 +97,7 @@ Upon submitting the order, the *order* service updates the status of the order t
 Use the Azure portal's **Data Explorer** tab to inspect the stored documents using the following steps:
 
 1. In another browser tab, sign into the [Azure portal](https://portal.azure.com?azure-portal=true) with the same account and directory as the Azure CLI.
-1. Use the search box to find and open the CosmosDB resource prefixed with *:::no-loc text="eshoplearn":::*.
+1. Use the search box to find and open the Cosmos DB resource prefixed with *:::no-loc text="eshoplearn":::*.
 1. Select **Data explorer** from the menu on the left.
 1. Expand **CouponDb**.
 1. Expand **Coupon Collection**.
