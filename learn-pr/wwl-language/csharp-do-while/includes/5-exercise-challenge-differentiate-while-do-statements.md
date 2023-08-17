@@ -1,5 +1,3 @@
-
-
 Code challenges will reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Examine the difference between do and while statement iterations  

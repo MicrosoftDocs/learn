@@ -2,7 +2,7 @@ How can you be sure to implement data modeling best practices as you design and 
 
 ## Describe Tabular Editor
 
-[Tabular Editor](https://tabulareditor.github.io/) is an alternative tool for authoring tabular models for Analysis Services and Power BI. Tabular Editor 2 is an open-source project that can edit a BIM file without accessing any data in the model. Tabular editor enables users to easily manipulate tabular models and can be used in a few different ways. Tabular Editor can be used to:
+Tabular Editor is an alternative tool for authoring tabular models for Analysis Services and Power BI. Tabular Editor 2 is an open-source project that can edit a BIM file without accessing any data in the model. Tabular editor enables users to easily manipulate tabular models and can be used in a few different ways. Tabular Editor can be used to:
 - quickly edit data models
 - automate repetitive tasks using scripting
 - incorporate DevOps with tabular models
