@@ -70,7 +70,7 @@ CEF is always a superior choice because the log data is parsed into predefined f
 
 ### Connector architecture options
 
-To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must deploy on a dedicated Azure virtual machine (VM) or an on-premises system to support the appliance's communication with Microsoft Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is connected to Azure Arc or is a Virtual Machine in Azure.
+To connect the CEF or Syslog Collector to Microsoft Sentinel, the agent must be deployed on a dedicated Azure virtual machine (VM) or an on-premises system to support the appliance's communication with Microsoft Sentinel. You can deploy the agent automatically or manually. Automatic deployment is only available if your dedicated machine is connected to Azure Arc or is a Virtual Machine in Azure.
 
 The following diagram illustrates on-premises systems sending Syslog data to a dedicated Azure VM running the Microsoft Sentinel agent.
 
