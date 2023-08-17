@@ -92,7 +92,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
 1. Then add the Azure Open AI SDK.
 
     ```dotnetcli
-    dotnet add package Azure.AI.OpenAI --version 1.0.0-beta.5
+    dotnet add package Azure.AI.OpenAI --preview
     ```
 
 1. Open the project in VS Code or Visual Studio.
