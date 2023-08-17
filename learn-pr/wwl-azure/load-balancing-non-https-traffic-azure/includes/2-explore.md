@@ -1,5 +1,3 @@
-
-
 The term load balancing refers to the even distribution of workloads (that is, incoming network traffic), across a group of backend computing resources or servers. Load balancing aims to optimize resource use, maximize throughput, minimize response time, and avoid overloading any single resource. It can also improve availability by sharing a workload across redundant computing resources.
 
 ## Load Balancing options for Azure
@@ -34,7 +32,7 @@ The table below summarizes these categorizations for each Azure load balancing s
 | Azure Front Door    | Global          | HTTP(S)             |
 | Traffic Manager     | Global          | non-HTTP(S)         |
 | Application Gateway | Regional        | HTTP(S)             |
-| Azure Load Balancer | Regional        | non-HTTP(S)         |
+| Azure Load Balancer | Regional or Global        | non-HTTP(S)         |
 
 
 ## Choosing a load balancing option for Azure
