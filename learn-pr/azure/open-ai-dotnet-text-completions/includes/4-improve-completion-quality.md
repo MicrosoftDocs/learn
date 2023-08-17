@@ -53,7 +53,7 @@ The following example shows a single cue to summarize an email message.
 
 ### Supporting content
 
-Supporting content is information that the model can utilize to influence the output in some way. It differs from primary content in that it isn't the main target of task, but it's typically used along with primary content. Common examples include contextual information such as the current date, the name of the user, user preferences, and so on.
+Supporting content is information that the model can utilize to influence the output in some way. It differs from primary content in that it isn't the main target or task, but it's typically used along with primary content. Common examples include contextual information such as the current date, the name of the user, user preferences, and so on.
 
 ## Best practices
 
