@@ -146,9 +146,9 @@ Your **Bookmarks** container has five items. In this scenario, if a request arri
 
 1. Go to the function app that you created in the preceding unit. In the resource menu, select **Home**, and in the **Recent resources** section, you should see your function app (**Type** equals **Function App**). Select your function app. The **Function App** pane appears.
 
-1. In the Function App menu on the left, under **Functions**, select **Functions**. The **Functions** pane appears. You should have one function, **HttpTrigger1**.
+1. In the **Functions** tab on the **Overview** page, you should have one function, **HttpTrigger1**.
 
-1. Let's create another function. From the command bar, select **Create**. The **Create function** pane appears, listing templates for supported triggers.
+1. Let's create another function. Select **Create** on the **Functions** tab. The **Create function** pane appears, listing templates for supported triggers.
 
 1. In the **Select a template** section, select **HTTP trigger**.
 

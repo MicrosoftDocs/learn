@@ -1,4 +1,4 @@
-In this unit, we'll examine benchmark results to verify the performance tips that we just discussed. We'll focus on using the SPEC SFS benchmark suite to spawn multiple threads, to simulate EDA production-like workloads. We'll also show FIO results to examine some performance practices.
+Now, we examine benchmark results to verify the performance tips that we discussed in the previous unit. Specifically, we focus on using the SPEC SFS benchmark suite to spawn multiple threads that simulate EDA production-like workloads. Also, we show FIO results to examine some performance practices.
 
 ## Overview of the two benchmark tools
 
@@ -18,9 +18,9 @@ When all three of the preceding practices are applied, the I/O operations per se
 
 ![Diagram that shows the SPEC E D A results, where the I O boost still maintains low latency when all three practices are applied.](../media/4-benchmarking-results-01.png)
 
-The following graph demonstrates that NFSv3 performs much better than NFSv4.1.
+The following graph demonstrates that NFSv3 performs better than NFSv4.1.
 
-![Diagram that shows the SPEC E D A results to demonstrate that N F S version 3 performs much better than N F S version 4.1.](../media/4-benchmarking-results-02.png)
+![Diagram that shows the SPEC E D A results to demonstrate that N F S version 3 performs better than N F S version 4.1.](../media/4-benchmarking-results-02.png)
 
 The following graph demonstrates that `rsize=wsize=262144(256 K)` performs better than other settings.
 

@@ -2,7 +2,7 @@ Use the completed data-flow diagram, answers from the security assessment, and e
 
 In this example, we used many [security services](/azure/security/fundamentals/overview) available in Azure.
 
-Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn about each security category and associated requirements published for public use.
+Visit [Microsoft cloud security benchmark](/azure/security/benchmarks/overview) to learn about each security category and associated requirements published for public use.
 
 ## Access control
 
@@ -23,7 +23,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 |Issue|Solution|
 |-----|--------|
-|No SDL practices found|Implement [Microsoft SDL](https://www.microsoft.com/securityengineering/sdl), [operational security assurance](https://www.microsoft.com/securityengineering/osa), and [secure devops](https://www.microsoft.com/securityengineering/devsecops) practices. Move all development to cloud build servers, like GitHub enterprise, which can be used on-prem and on the cloud. It also has [valuable security features](https://github.com/features/security).|
+|No SDL practices found|Implement [Microsoft SDL](https://www.microsoft.com/securityengineering/sdl), [operational security assurance](https://www.microsoft.com/securityengineering/osa), and [secure devops](https://www.microsoft.com/securityengineering/devsecops) practices. Move all development to cloud build servers, like GitHub enterprise, which can be used on-premises and on the cloud. It also has [valuable security features](https://github.com/features/security).|
 
 ## Business continuity
 
@@ -42,7 +42,7 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 
 |Issue|Solution|
 |-----|--------|
-|Use of self-signed certificates on dev environment|Use [Azure Directory Services](/windows-server/identity/identity-and-access) to manage your on-premise Public Key Infrastructure (PKI) and [Azure Key-Vault](https://azure.microsoft.com/services/key-vault/) to manage APIs, passwords, certificates, and other secrets.|
+|Use of self-signed certificates on dev environment|Use [Azure Directory Services](/windows-server/identity/identity-and-access) to manage your on-premises Public Key Infrastructure (PKI) and [Azure Key-Vault](https://azure.microsoft.com/services/key-vault/) to manage APIs, passwords, certificates, and other secrets.|
 |No key rotation|Use [Azure Key-Vault](https://azure.microsoft.com/services/key-vault/) for key rotation.|
 
 ## Asset management
@@ -52,11 +52,11 @@ Visit [Azure security benchmark](/azure/security/benchmarks/overview) to learn a
 |Issue|Solution|
 |-----|--------|
 |No data retention policy|Use [Azure data retention](/azure/azure-sql-edge/data-retention-overview) practices and [Azure time series insights](/azure/time-series-insights/time-series-insights-concepts-retention). You may also need to create a security policy for the enterprise highlighting how long to keep each resource. Use [long-term retention](/azure/azure-sql/database/long-term-retention-overview) with Azure SQL.|
-|No data classification or labeling|Use [Azure data discovery & classification](/azure/azure-sql/database/data-discovery-and-classification-overview), [Azure information protection](/azure/information-protection/what-is-information-protection) for emails and documents, [Azure purview](/azure/purview/apply-classifications), and built-in capabilities in Azure SQL Database, like [dynamic data masking](/azure/azure-sql/database/dynamic-data-masking-overview). Also, check out [data encryption guidance](/azure/security/fundamentals/data-encryption-best-practices)|
+|No data classification or labeling|Use [Azure data discovery & classification](/azure/azure-sql/database/data-discovery-and-classification-overview), [Azure information protection](/azure/information-protection/what-is-information-protection) for emails and documents. Also, [Microsoft Purview](/azure/purview/apply-classifications), and built-in capabilities in Azure SQL Database, like [dynamic data masking](/azure/azure-sql/database/dynamic-data-masking-overview). Also, check out [data security and encryption guidance](/azure/security/fundamentals/data-encryption-best-practices)|
 |No folder restrictions|Assign file level permissions using [role-based access control](/mem/configmgr/core/understand/fundamentals-of-role-based-administration).|
 |No asset disposal or deprecation plan|Use [Azure inventory and asset management](/azure/security/benchmarks/security-control-inventory-asset-management) guidelines to come up with an asset disposal or deprecation plan.|
 |No data encryption on shared drives and servers|Follow [data encryption guidance](/azure/security/fundamentals/data-encryption-best-practices).|
-|No Data Leakage Prevention (DLP)|Use [data leakage prevention practices](/cloud-app-security/governance-actions)and [data loss prevention compliance guidelines](/microsoft-365/compliance/dlp-learn-about-dlp).|
+|No Data Loss Prevention (DLP)|Use [data loss prevention compliance guidelines](/microsoft-365/compliance/dlp-learn-about-dlp).|
 |NAS used for both backups and file shares|First, separate the NAS by either migrating file shares completely to OneDrive, or adding a secondary NAS just for file sharing. You may also use [Azure backup](https://azure.microsoft.com/services/backup/) for your backup needs.|
 |OneDrive not fully adopted|Develop and enforce timelines to give teams time to move their files. You may also use the [migration center tool](/sharepointmigration/migrating-content-to-onedrive-for-business). Share the [adoption guidelines](https://adoption.microsoft.com/onedrive/) with teams.|
 |No disk encryption on enterprise machines|Follow [data encryption guidance](/azure/security/fundamentals/data-encryption-best-practices).|
@@ -82,7 +82,7 @@ No other action needed.
 
 |Issue|Solution|
 |-----|--------|
-|No network segmentation|Segment the network into multiple subnets. If needed, consider adding a perimeter network to secure more sensitive resources. Visit [Azure segmentation](/azure/architecture/framework/security/design-segmentation) for information on segmenting your infrastructure in Azure.|
+|No network segmentation|Segment the network into multiple subnets. If needed, consider adding a perimeter network to secure more sensitive resources. Visit [segmentation strategies](/azure/architecture/framework/security/design-segmentation) for information on segmenting your infrastructure in Azure.|
 |No custom firewall rules|Harden firewall rules by identifying and setting only outbound rules. Check out [firewall design guidelines](/windows/security/threat-protection/windows-firewall/basic-firewall-policy-design) and consider implementing a [firewall in Azure](/azure/security/fundamentals/network-best-practices) using a hub vnet.|
 |Weak VPN authentication mechanism|Connect to Azure using a [site-to-site VPN](/microsoft-365/enterprise/connect-an-on-premises-network-to-a-microsoft-azure-virtual-network). Upgrade your VPN to a [validated device](/azure/vpn-gateway/vpn-gateway-about-vpn-devices). Check out the [Azure VPN gateway](https://azure.microsoft.com/services/vpn-gateway/) service. Most importantly, enforce a zero-trust mindset across the company and secure workstation connections with VPN.|
 |Limited data encryption|Enforce [secure communication protocols](/azure/storage/common/transport-layer-security-configure-minimum-version) in Azure, like TLS 1.2.|
@@ -93,10 +93,10 @@ No other action needed.
 
 |Issue|Solution|
 |-----|--------|
-|No automated process for security patches and updates|Use [Azure automatic update manager](/azure/virtual-machines/automatic-vm-guest-patching) or [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Integrate with [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center) for the ultimate protection.|
-|No Antivirus (AV) enforcement|Use [Microsoft defender advanced threat protection](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection).|
+|No automated process for security patches and updates|Use [Automatic VM guest patching for Azure VMs](/azure/virtual-machines/automatic-vm-guest-patching) or [Microsoft Intune](/mem/intune/fundamentals/what-is-intune). Integrate with [Microsoft Defender for Cloud](https://azure.microsoft.com/services/security-center) for the ultimate protection.|
+|No Antivirus (AV) enforcement|Use [Microsoft Defender for Endpoint](/mem/configmgr/protect/deploy-use/defender-advanced-threat-protection) for advanced threat protection.|
 |No timeout session enforcement on machines|Enforce [Azure group policy](/azure/active-directory-domain-services/manage-group-policy).|
-|No Mobile Device Management (MDM) solution|Implement [Microsoft endpoint manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which includes solutions like [Microsoft endpoint configuration manager](/mem/configmgr/) and [Microsoft Intune](/mem/intune/). It manages and monitors mobile devices, desktop computers, virtual machines, embedded devices, and servers.|
+|No Mobile Device Management (MDM) solution|Implement [Microsoft Configuration manager](https://www.microsoft.com/microsoft-365/microsoft-endpoint-manager), which includes solutions like [Microsoft Intune](/mem/intune/). It manages and monitors mobile devices, desktop computers, virtual machines, embedded devices, and servers.|
 |Limited logging and monitoring|Use Azure Monitor [Log analytics](/azure/azure-monitor/log-query/log-query-overview) and follow [Azure logging guidelines](/azure/security/fundamentals/log-audit).|
 |No intelligence platform or analytics service|Use [Microsoft Sentinel](https://azure.microsoft.com/services/azure-sentinel/), Microsoft's Security Information and Event Management (SIEM) solution.|
 |Limited logging history|Follow [Azure logging guidelines](/azure/security/fundamentals/log-audit).|
@@ -110,7 +110,7 @@ No other action needed.
 |IT room is unlocked|Add a lock to the IT room. Examples include lock and key, code entry, and key fobs. As you continue with your investigation, consider adding a lock that also provides a logging mechanism to keep track of traffic.|
 |No cameras or access records for the IT room|Consider adding a camera pointed directly at the IT room. It works well if combined with a lock that keeps a log of all entries.|
 |Building owner has access to all rooms and floors|Depending on the contract signed by the company, consider excluding access to the IT room. If that's not possible, add locked cages to the network equipment to prevent unauthorized access.|
-|No building cameras or guards|Consider adding cameras pointed at each exit. It not already implemented, add doors that automatically lock upon exit.|
+|No building cameras or guards|Consider adding cameras pointed at each exit. If not already implemented, add doors that automatically lock upon exit.|
 |No formal visitor registration process|Create a logging system to keep track of all visitors, their sponsors, and reason for visit. Consider using visitor badges to distinguish them from employees.|
 
 ## Governance

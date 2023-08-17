@@ -20,8 +20,8 @@ Here are some steps to identify insecure use of parameters and variables in Azur
 
 Here are some steps to restrict the insecure use of parameters and variables in Azure Pipelines:
 
-- Define your parameters and variables as secure pipeline inputs, such as a secure file, secret variables or variable group.
-- Use Azure Key Vault to store sensitive data, such as connection strings or API keys, certificates and then reference them in your pipeline script.
+- Define your parameters and variables as secure pipeline inputs, such as a secure file, secret variables, or variable group.
+- Use Azure Key Vault to store sensitive data, such as connection strings, API keys, or certificates and then reference them in your pipeline script.
 - Link your Azure Key Vault to your Azure DevOps organization and then use the Azure Key Vault task to retrieve the secrets from your Azure Key Vault and use them in your pipeline.
 - Use service connections with service principal authentication.
 - Restrict access to sensitive data by setting appropriate permissions and access control policies. For example, limit access to pipeline variables and parameters to specific users or groups.

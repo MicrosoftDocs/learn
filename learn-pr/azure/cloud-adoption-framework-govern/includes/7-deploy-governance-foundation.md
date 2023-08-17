@@ -2,7 +2,7 @@ Deploying a cloud-governance foundation accelerates your ability to govern your 
 
 ## What will you configure?
 
-This unit assumes that you've already deployed assets to Azure. Now, you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you'll understand *why* and *how* to configure management groups, subscription design, resource groups, and tagging.
+This unit assumes that you've already deployed assets to Azure. Now, you want to configure the environment to better organize, track, and govern those assets. When you finish this unit, you understand *why* and *how* to configure management groups, subscription design, resource groups, and tagging.
 
 ## Strategic considerations
 
@@ -24,9 +24,9 @@ The basic foundation of all governance is consistent resource organization.
 
 The three main components of resource organization are:
 
-- *Management groups*, which reflect security, operations, and business or accounting hierarchies
-- *Subscriptions*, which group similar resources into logical boundaries
-- *Resource groups*, which further group applications or workloads into deployment and operations units
+- *Management groups*, which reflect security, operations, and business or accounting hierarchies.
+- *Subscriptions*, which group similar resources into logical boundaries.
+- *Resource groups*, which further group applications or workloads into deployment and operations units.
 
 ## Governance design consideration
 
@@ -39,7 +39,7 @@ To accommodate long-term governance needs, design a high-level hierarchy, but im
 The following components are in descending levels in the management group hierarchy shown in Figure 2:
 
 - **Management group**: Business unit, geography, and environment
-- **Subscription**: Per application category, pre-production, development environments, and production
+- **Subscription**: Per application category, preproduction, development environments, and production
 - **Resource groups**: Per application
 
 ### Exercise: Configure your first management group hierarchy
@@ -52,8 +52,8 @@ Start with a smaller hierarchy so you can experiment and quickly overcome initia
 
 In this smaller version, attempt the following configuration steps:
 
-- **Parent node**: Define a management group for corporate IT
-- **Child nodes**: Define child nodes for each production and nonproduction environment
+- **Parent node**: Define a management group for corporate IT.
+- **Child nodes**: Define child nodes for each production and nonproduction environment.
 
 For guidance on creating these management groups, reference the [quickstart guide for creating a management group in the Azure portal](/azure/governance/management-groups/create-management-group-portal?azure-portal=true).
 
@@ -67,7 +67,7 @@ A subscription is a logical container for all deployed assets. Subscriptions are
 
 ## Scaling with subscriptions
 
-There are several technical and non-technical reasons to scale with multiple subscriptions. Check out the [fundamental concepts article](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
+There are several technical and nontechnical reasons to scale with multiple subscriptions. Check out the [fundamental concepts article](/azure/cloud-adoption-framework/ready/azure-best-practices/scale-subscriptions?azure-portal=true) for an overview of common reasons to scale.
 
 The following questions might help illustrate reasons for you to scale your subscriptions:
 
@@ -78,7 +78,7 @@ The following questions might help illustrate reasons for you to scale your subs
   - Different customers
   - Different departments or business units
   - Different projects
-- Will you be able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Azure Active Directory, monitoring, or patching tools.)
+- Are you able to spread the cost of a shared infrastructure across application owners? (Often, a dedicated subscription is used for shared infrastructure, like Azure Active Directory, monitoring, or patching tools.)
 - Do you need to create clearer separation of duties through shared service subscriptions for operations management, security, identity sync, connectivity, or DevOps teams?
 
 ### Exercise: Add subscriptions to your management groups
@@ -112,15 +112,15 @@ You can apply Azure policies to all subscriptions in a management group. To unde
 
 For guidance on applying a policy, check out the tutorial on [creating and managing policies](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true)
 
-- Step 4 of the instructions for assigning a policy discusses scope. This is where you'll select the management group to ensure that the policies are applied to all subscriptions in the management group.
-- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62?azure-portal=true) will help establish a governance foundation.
+- Step 4 of the instructions for assigning a policy discusses scope. In this step, you select the management group to ensure that the policies are applied to all subscriptions in the management group.
+- Steps 6 and 7 discuss policy definition. From the list of **Built-in** policies, we suggest selecting one of the policies related to [tagging](/azure/governance/policy/samples/built-in-policies#tags). Specifically, the policy that requires a [tag on all resources](https://portal.azure.com/#blade/Microsoft_Azure_Policy/PolicyDetailBlade/definitionId/%2Fproviders%2FMicrosoft.Authorization%2FpolicyDefinitions%2F1e30110a-5ceb-460c-a204-c1c3969c6d62?azure-portal=true) helps establish a governance foundation.
 
 > [!IMPORTANT]
 > Step 9 in the [tutorial](/azure/governance/policy/tutorials/create-and-manage#assign-a-policy?azure-portal=true) illustrates **Policy enforcement**. As you learn about governance, be sure to set **Policy enforcement** to **Disabled**. When this setting is disabled, you can audit your environment without making any changes, and it won't prevent future deployments.
 
 ## Deployment acceleration
 
-Packaging all the governance change in a blueprint accelerates deployments and creates consistent governance application. When we assign a blueprint in the next exercise, governance is consistently applied to all subscriptions in the assigned management group and to all resource groups and assets in those subscriptions.
+Packaging all the governance change in a blueprint accelerates deployments and creates consistent governance application. When we assign a blueprint in the next exercise, governance is consistently applied to all subscriptions in the assigned management group. It's also applied to all resource groups and assets in those subscriptions.
 
 ### Exercise: Assign the CAF Foundation blueprint
 
@@ -146,7 +146,7 @@ Follow the prescribed steps to [publish and assign this sample blueprint to your
 
 ### Exercise: Evaluate a current environment
 
-Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the [Azure governance visualizer](https://github.com/microsoft/CloudAdoptionFramework/tree/master/govern/AzureGovernanceVisualizer?azure-portal=true) can provide insights about your current governance configuration.
+Customers commonly attempt to add governance to existing, mature adoption efforts across multiple subscriptions. As you mature your governance practices across a portfolio, the [Azure governance visualizer](https://github.com/azure/azure-governance-visualizer?azure-portal=true) can provide insights about your current governance configuration.
 
 :::image type="content" source="../media/visualizer.png" alt-text="Diagram of the Azure Governance Visualizer." border="false":::
 
