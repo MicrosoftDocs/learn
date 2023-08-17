@@ -134,4 +134,4 @@ For full details on this reference architecture, see [Monitor hybrid security us
 
 For an overview of some technologies which can help you secure hybrid and multicloud environments, view the following interactive guide.
 
-[:::image type="content" source="../media/secure-azure-hybrid-multi-cloud-interactive-guide.png" alt-text="Screenshot of an interactive guide with the title 'Secure your Azure, hybrid, and multicloud environment'." border="true":::](https://mslearn.cloudguides.com/guides/Secure%20your%20Azure%20hybrid%20and%20multi-cloud%20environment)
+:::image type="content" source="../media/secure-azure-hybrid-multi-cloud-interactive-guide.png" alt-text="Screenshot of an interactive guide with the title 'Secure your Azure, hybrid, and multicloud environment'." border="true":::
