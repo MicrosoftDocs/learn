@@ -2,15 +2,7 @@ To help you navigate the threat modeling process for an application to be used i
 
 ## Company background
 
-Woodgrove Bank is an online banking provider established in 2018, that gives customers the ability to conduct financial transactions and bill payments online. 
-
-With no physical locations, Woodgrove relies on an online portal and cross-platform applications for their daily operations.
-
-Customers can choose from free online transfers, high-interest yield savings accounts, and bill payment services. 
-
-Transactions are secured using best-in-class encryption, and customer service is available 24 hours a day, 7 days a week. 
-
-With transparent fees, real-time status updates, and money back guarantee, Woodgrove has what it takes to gain your business.
+Woodgrove Bank is an online banking provider established in 2018 that gives customers the ability to conduct financial transactions and bill payments online. With no physical locations, Woodgrove relies on an online portal and cross-platform applications for their daily operations. Customers can choose from free online transfers, high-interest yield savings accounts, and bill payment services. Transactions are secured using best-in-class encryption, and customer service is available 24 hours a day, 7 days a week. With transparent fees, real-time status updates, and money back guarantee, Woodgrove has what it takes to gain your business.
 
 Woodgrove Bank rolled out alternate identities and PAWs for the two IT administrators to work on their critical assets securely.
 

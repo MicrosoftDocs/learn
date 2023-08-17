@@ -1,10 +1,10 @@
 The threat modeling process for an application to be used in the secured environment begins with a set of security assessment questions.
 
-These questions help us in three different ways:
+These questions help us:
 
-- Uncover functionality and integration risks before installing the application,
-- Help visualize how the application integrates with the environment, and
-- Which security controls work best to help reduce or eliminate risks.
+- Uncover functionality and integration risks before installing the application.
+- Visualize how the application integrates with the environment.
+- Determine which security controls work best to help reduce or eliminate risks.
 
 The following questions are a great starting point. You may add more depending on your specific needs.
 

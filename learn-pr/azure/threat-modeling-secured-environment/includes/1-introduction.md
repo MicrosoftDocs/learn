@@ -56,7 +56,7 @@ A vulnerable application allows an attacker to access critical resources that ca
 
 ## Learning objectives
 
-In this module, you explore the four steps in the threat modeling process for an application to be used in a secured environment and be able to:
+In this module, you explore the four steps in the threat modeling process for an application to be used in a secured environment. By the end of this module, you can:
 
 - Understand the importance of a well defined, open-ended questionnaire to get a better view of the application.
 - Visualize how the application interacts with the secured environment with a detailed data-flow diagram.
