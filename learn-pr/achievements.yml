@@ -2147,3 +2147,28 @@ achievements:
   title: Create Azure IoT services in the Azure portal
   summary: Learners will become familiar with the Azure portal to the Azure resources that are available for an IoT solution. Learners will step through the process of creating IoT Hub and Device Provisioning Service resources.
   iconUrl: /training/achievements/azure-iot-azure-portal.svg
+- uid: learn.wwl.examine-iot-hub-properties.badge
+  type: badge
+  title: Examine IoT Hub properties
+  summary: This module introduces you to IoT Hub device communication features and capabilities that affect solution scaling, downstream service resources, and security.
+  iconUrl: /training/achievements/iot-hub-properties-examine.svg
+- uid: learn.wwl.examine-iot-device-lifecycle-concepts.badge
+  type: badge
+  title: Examine IoT device lifecycle concepts
+  summary: This module introduces you to the IoT device lifecycle, the concept of device twins, and the conditions under which devices may need to be retired.
+  iconUrl: /training/achievements/iot-lifecycle-concepts.svg
+- uid: learn.wwl.examine-iot-developer-tools.badge
+  type: badge
+  title: Examine the IoT developer tools
+  summary: This module introduces you to some of the coding tools that are used by developers to create apps and automate configuration tasks.
+  iconUrl: /training/achievements/iot-developer-tools.svg
+- uid: learn.wwl.explore-device-configuration-communication.badge
+  type: badge
+  title: Explore device configuration and communication
+  summary: This module introduces you to device communication options and tools, and provides you with experience implementing device-to-cloud communication using the Azure IoT SDK for devices.
+  iconUrl: /training/achievements/device-configuration-communication.svg
+- uid: learn.wwl.implement-iot-device-communication-by-using-azure-iot-sdks.trophy
+  type: trophy
+  title: Implement IoT device communication by using the Azure IoT SDKs
+  summary:  You will learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and then you will implement communication between an IoT device and IoT Hub.
+  iconUrl: /training/achievements/iot-device-communication.svg
