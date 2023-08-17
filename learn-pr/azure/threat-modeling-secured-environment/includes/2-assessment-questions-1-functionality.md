@@ -8,7 +8,7 @@ These questions allow you to:
 
 - Understand if the application runs on the cloud or on-premises.
 - Learn about the application, including features, use-case scenarios, and benefits.
-- Understand how the application will be used in the secured environment.
+- Understand how the application is used in the secured environment.
 - Identify the application owner or company to hold potential security discussions.
 - Access source code or security tooling scan reports to check out recent updates, issues, and fixes.
 - Verify if the proposed version introduces the least possible amount of risk.
