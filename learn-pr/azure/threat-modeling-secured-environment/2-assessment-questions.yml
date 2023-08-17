@@ -17,7 +17,7 @@ quiz:
   questions:
   - content: "If the application requires administrative or system level permissions to carry out basic functions, then"
     choices:
-    - content: "it is likely a good candidate for the PAW."
+    - content: "it's likely a good candidate for the PAW."
       isCorrect: false
       explanation: "PAW applications shouldn't require elevated permissions to run basic tasks and functions. It would be considered a red flag."
     - content: "there's potential risk for system level access."
@@ -30,4 +30,4 @@ quiz:
       explanation: "The functionality category helps you understand how the application works."
     - content: "How well it integrates with the PAW."
       isCorrect: false
-      explanation: "The functionality category only allows you to understand how the application works, not how it will integrate with the environment."
+      explanation: "The functionality category only allows you to understand how the application works, not how it integrates with the environment."
