@@ -13,7 +13,7 @@ In this unit, you'll use a script to deploy the existing *:::no-loc text="eShopO
 
     ![Screenshot of the explorer pane in Visual Studio Code. The context menu for the k8s folder is displayed, and Open in Integrated Terminal is selected.](../media/k8s-path.png)
 
-1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you are using Visual Studio Code, you may optionally omit the flag.
+1. In the new terminal pane, sign in to the Azure CLI. If using GitHub Codespaces, include the `--use-device-code` flag. If you're using Visual Studio Code, you may optionally omit the flag.
 
     ```azurecli
     az login --use-device-code
