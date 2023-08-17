@@ -1,6 +1,46 @@
 {
   "redirections": [
     {
+      "source_path_from_root": "/learn-pr/achievements/learn.secure-app-with-oidc-and-azure-ad.badge.yml",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/index.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/1-introduction.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/2-modern-auth-for-your-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/3-create-aad-register-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/4-exercise-create-aad-register-app.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/5-exercise-deploy-app-with-oidc-auth.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
+      "source_path_from_root": "/learn-pr/azure/secure-app-with-oidc-and-azure-ad/6-summary.md",
+      "redirect_url": "/azure/active-directory/develop/v2-protocols-oidc",
+      "redirect_document_id": false
+    },
+    {
       "source_path_from_root": "/learn-pr/partner-center/introduction-to-partner-center/index.yml",
       "redirect_url": "/training/modules/partner-center/introduction-to-partner-center/",
       "redirect_document_id": true
@@ -25371,6 +25411,378 @@
     {
       "source_path": "learn-pr/azure-fundamentals/iot-fundamentals/4-use-iot-hub.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/5-use-cognitive-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/6-use-bot-services.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/ai-machine-learning-fundamentals/4-use-machine-learning.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/4-use-azure-devops.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/6-use-azure-devtest-labs.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/azure-devops-devtest-labs/5-use-github.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/4-use-azure-functions.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/serverless-fundamentals/5-use-azure-logic-apps.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/2-explore-compliance-terms-requirements.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/3-access-microsoft-privacy-statement.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/4-explore-trust-center.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/5-access-azure-compliance-documentation.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/6-what-is-azure-government.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/7-what-is-azure-china-21vianet.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/8-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/examine-privacy-compliance-data-protection-standards/9-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/9-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/10-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/6-use-azure-cli.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/7-use-azure-mobile-app.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/4-use-azure-portal.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/5-use-azure-powershell.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/management-fundamentals/8-use-azure-resource-manager.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/3-analyze-decision-criteria.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/2-identify-product-options.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/7-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/8-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/4-use-azure-advisor.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/5-use-azure-monitor.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/monitoring-fundamentals/6-use-azure-service-health.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/azure-fundamentals-describe-azure-architecture-services/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/1-introduction.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/2-what-is-azure-iot-central.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/3-azure-iot-central-architecture.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/4-introduction-to-application-templates.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/5-connecting-devices.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/6-knowledge-check.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/iot/examine-azure-iot-central-application-architecture/7-summary.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/introduction-to-azure-iot-central/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/build-low-touch-iot-solutions-by-using-azure-iot-central/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/evaluate-iot-scenario-with-iot-central/",
+      "redirect_document_id": false
+    },
+
+
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/index.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/1-introduction.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/2-choose-secure-consent-setting.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/3-exercise-enable-admin-consent-workflow.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/configure-admin-consent-workflow/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/4-manage-evaluate-consent-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/5-exercise-review-admin-consent-requests.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/review-admin-consent-requests",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/6-knowledge-check.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure/configure-admin-consent-workflow/7-summary.yml",
+      "redirect_url": "https://learn.microsoft.com/azure/active-directory/manage-apps/admin-consent-workflow-overview/",
+      "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-of-azure-blueprints.md",
+      "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance",
       "redirect_document_id": false
     }
   ]

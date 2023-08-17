@@ -23,12 +23,12 @@ Most computer vision solutions are based on machine learning models that can be 
 
 ## Computer vision services in Microsoft Azure
 
-Microsoft Azure provides the following cognitive services to help you create computer vision solutions:
+Microsoft Azure provides the following Azure AI services to help you create computer vision solutions:
 
 | Service | Capabilities |
 | ------- | ------------ |
-| **Computer Vision** | You can use this service to analyze images and video, and extract descriptions, tags, objects, and text.|
-| **Custom Vision** | Use this service to train custom image classification and object detection models using your own images.|
-| **Face** | The Face service enables you to build face detection and facial recognition solutions.|
-| **Form Recognizer** | Use this service to extract information from scanned forms and invoices.|
+| **Azure AI Vision** | You can use this service to analyze images and video, and extract descriptions, tags, objects, and text.|
+| **Azure AI Custom Vision** | Use this service to train custom image classification and object detection models using your own images.|
+| **Azure AI Face** | The Azure AI Face service enables you to build face detection and facial recognition solutions.|
+| **Azure AI Document Intelligence** | Use this service to extract information from scanned forms and documents.|
 
