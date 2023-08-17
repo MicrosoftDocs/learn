@@ -25,7 +25,7 @@ The **Next hop type** column shows the network path taken by traffic sent to eac
 
 The following diagram shows an overview of system routes and shows how traffic flows among subnets and the internet by default. You can see from the diagram that traffic flows freely among the two subnets and the internet.
 
-![Traffic flowing among subnets and the internet.](../media/2-system-routes-subnets-internet.svg)
+:::image type="content" source="../media/2-system-routes-subnets-internet.svg" alt-text="Diagram of traffic flowing among subnets and the internet.":::
 
 Within Azure, there are other system routes. Azure will create these routes if the following capabilities are enabled:
 
@@ -40,13 +40,13 @@ Virtual network peering and service chaining let virtual networks within Azure b
 
 The following diagram shows two virtual networks with peering configured. The user-defined routes are configured to route traffic through an NVA or an Azure VPN gateway.
 
-![Virtual network peering with user-defined routes.](../media/2-virtual-network-peering-udrs.svg)
+:::image type="content" source="../media/2-virtual-network-peering-udrs.svg" alt-text="Diagram of virtual network peering with user-defined routes.":::
 
 ### Virtual network gateway
   
 Use a virtual network gateway to send encrypted traffic between Azure and on-premises over the internet and to send encrypted traffic between Azure networks. A virtual network gateway contains routing tables and gateway services.
 
-![The structure of a virtual network gateway.](../media/2-virtual-network-gateway.svg)
+:::image type="content" source="../media/2-virtual-network-gateway.svg" alt-text="Diagram of the structure of a virtual network gateway.":::
 
 ### Virtual network service endpoint
 
@@ -74,6 +74,10 @@ When creating user-defined routes, you can specify these next hop types:
 
 With user-defined routes, you can't specify the next hop type **VirtualNetworkServiceEndpoint**, which indicates virtual network peering.
 
+### Service Tags for user-defined routes
+
+You can specify a service tag as the address prefix for a user-defined route instead of an explicit IP range. A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change. Thus minimizing the complexity of frequent updates to user-defined routes and reducing the number of routes you need to create.
+
 ### Border gateway protocol
 
 A network gateway in your on-premises network can exchange routes with a virtual network gateway in Azure by using BGP. BGP is the standard routing protocol that is normally used to exchange routing and information among two or more networks. BGP is used to transfer data and information between different host gateways like on the internet or between autonomous systems.
@@ -82,7 +86,7 @@ You'll typically use BGP to advertise on-premises routes to Azure when you're co
 
 The following diagram shows a topology with paths that can pass data between Azure VPN Gateway and on-premises networks:
 
-![Diagram showing an example of using the Border Gateway Protocol.](../media/2-bgp.svg)
+:::image type="content" source="../media/2-bgp.svg" alt-text="Diagram showing an example of using the Border Gateway Protocol.":::
 
 BGP offers network stability, because routers can quickly change connections to send packets if a connection path goes down.
 

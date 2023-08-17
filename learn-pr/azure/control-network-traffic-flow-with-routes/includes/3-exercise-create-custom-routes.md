@@ -4,7 +4,7 @@ In the following exercise, you'll use a network virtual appliance (NVA) to help 
 
 You'll configure the network so that all traffic flowing from a public subnet to a private subnet will be routed through the NVA. To make this flow happen, you'll create a custom route for the public subnet to route this traffic to a perimeter-network subnet. Later, you'll deploy an NVA to the perimeter-network subnet.
 
-![Virtual network, subnets, and route table.](../media/3-virtual-network-subnets-route-table.svg)
+:::image type="content" source="../media/3-virtual-network-subnets-route-table.svg" alt-text="Diagram of virtual network, subnets, and route table.":::
 
 In this exercise, you'll create the route table, custom route, and subnets. You'll then associate the route table with a subnet.
 
@@ -12,8 +12,8 @@ In this exercise, you'll create the route table, custom route, and subnets. You'
 
 The first task is to create a new routing table and then add a custom route for all traffic intended for the private subnet.
 
-> [!NOTE] 
->  You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
+> [!NOTE]
+> You might get an error that reads: *This command is implicitly deprecated*. Please ignore this error for this learning module. We are working on it!
 
 1. In Azure Cloud Shell, run the following command to create a route table.
 
@@ -24,7 +24,7 @@ The first task is to create a new routing table and then add a custom route for 
         --disable-bgp-route-propagation false
 ```
 
-2. Run the following command in Cloud Shell to create a custom route.
+1. Run the following command in Cloud Shell to create a custom route.
 
 ```azurecli
     az network route-table route create \
@@ -51,7 +51,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
         --subnet-prefixes 10.0.0.0/24
 ```
 
-2. Run the following command in Cloud Shell to create the **privatesubnet** subnet.
+1. Run the following command in Cloud Shell to create the **privatesubnet** subnet.
 
 ```azurecli
     az network vnet subnet create \
@@ -61,7 +61,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
         --address-prefixes 10.0.1.0/24
 ```
 
-3. Run the following command to create the **dmzsubnet** subnet.
+1. Run the following command to create the **dmzsubnet** subnet.
 
 ```azurecli
     az network vnet subnet create \
@@ -71,7 +71,7 @@ The next task is to create the **vnet** virtual network and the three subnets yo
         --address-prefixes 10.0.2.0/24
 ```
 
-4. You should now have three subnets. Run the following command to show all of the subnets in the **vnet** virtual network.
+1. You should now have three subnets. Run the following command to show all of the subnets in the **vnet** virtual network.
 
 ```azurecli
     az network vnet subnet list \

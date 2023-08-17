@@ -4,7 +4,7 @@ You'll configure the appliance to forward IP traffic. If IP forwarding isn't ena
 
 In this exercise, you'll deploy the **nva** network appliance to the **dmzsubnet** subnet. Then you'll enable IP forwarding so that traffic from **publicsubnet** and traffic that uses the custom route is sent to the **privatesubnet** subnet.
 
-![Network virtual appliance with IP forwarding enabled.](../media/5-nva-ip-forwarding.svg)
+:::image type="content" source="../media/5-nva-ip-forwarding.svg" alt-text="Visualization of a Network virtual appliance with IP forwarding enabled.":::
 
 In the following steps, you'll deploy an NVA. You'll then update the Azure virtual NIC and the network settings within the appliance to enable IP forwarding.
 
