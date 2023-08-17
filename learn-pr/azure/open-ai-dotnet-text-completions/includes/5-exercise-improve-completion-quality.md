@@ -76,10 +76,10 @@ In the case, there isn't a direct translation of _catio-tent_ from English to Sp
 
     ```csharp
     string promptForTranslation = $"""
-    You are going to translate a product review from English into Spanish.
-    If the review is not a well-formed English sentence respond with the text in Spanish: 'Not a well-formed sentence'. Otherwise, respond with the translation.
-    The review to translate is: {exampleReview}
-    """;
+      You are going to translate a product review from English into Spanish.
+      If the review is not a well-formed English sentence respond with the text in Spanish: 'Not a well-formed sentence'. Otherwise, respond with the translation.
+      The review to translate is: {exampleReview}
+      """;
     ```
 
 1. Run the application. It should give you a translation.
