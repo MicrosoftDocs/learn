@@ -38,7 +38,7 @@ Though Naïve Bayes proved to be more effective than simple rule-based models fo
 
 ### Understanding TF-IDF
 
-The **TF-IDF** technique had a similar approach in that it compared the frequency of a word in one document with the frequency of the word in a whole **corpus** of documents. By understanding in which context a word was being used, documents could be classified based on certain topics. TF-IDF is often used for information retrieval, to help understand which relative words or tokens to search for.
+The **Term Frequency - Inverse Document Frequency** (**TF-IDF**) technique had a similar approach in that it compared the frequency of a word in one document with the frequency of the word in a whole **corpus** of documents. By understanding in which context a word was being used, documents could be classified based on certain topics. TF-IDF is often used for information retrieval, to help understand which relative words or tokens to search for.
 
 > [!Note]
 > In the context of NLP, a **corpus** refers to a large and structured collection of text documents that is used for machine learning tasks. Corpora (plural of corpus) serve as essential resources for training, testing, and evaluating various NLP models.
