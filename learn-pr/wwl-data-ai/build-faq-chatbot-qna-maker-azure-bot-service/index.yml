@@ -2,14 +2,14 @@
 uid: learn.wwl.build-faq-chatbot-qna-maker-azure-bot-service
 metadata:
   title: Build a bot with Azure AI Language and Azure AI Bot Service
-  description: "Build a bot with Azure AI Language and Azure AI Bot Service"
-  ms.date: 08/16/2023
+  description: "Use Azure AI Language and Azure AI Bot Service together to create a bot that answers custom questions."
+  ms.date: 08/18/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: bot-service
 title: Build a bot with Azure AI Language and Azure AI Bot Service
-summary: Bots are a popular way to provide support through multiple communication channels. This module describes how to create a custom question answering knowledge base with Azure AI Language and create a bot with Azure AI Bot Service that answers user questions.
+summary: Create a custom question answering knowledge base with Azure AI Language and create a bot with Azure AI Bot Service that answers user questions.
 abstract: |
   After completing this module, you'll be able to understand how to use Azure AI Language and Azure AI Bot Service to create a bot.
 prerequisites: |
