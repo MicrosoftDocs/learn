@@ -18,15 +18,15 @@ quiz:
 
   - content: "Which global control option lets you change the visual theme displayed in the Azure portal?"
     choices:
-    - content: "**Settings**"
+    - content: "Settings"
       isCorrect: true
       explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
-    - content: "**Support + troubleshooting**"
+    - content: "Support + troubleshooting"
       isCorrect: false
-      explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
-    - content: "**Directories + subscriptions**"
+      explanation: "The **Support + troubleshooting** tab of **Settings** lets you create support requests and find helpful info, but not apply different themes."
+    - content: "Directories + subscriptions"
       isCorrect: false
-      explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
+      explanation: "The **Directories + subscriptions** tab of **Settings** lets you switch directories or subscriptions, but not apply different themes."
 
   - content: "Azure Advisor provides advice on which of these topics?"
     choices:
@@ -44,10 +44,10 @@ quiz:
     choices:
     - content: XML
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are not stored as XML files."
     - content: JSON
       isCorrect: true
       explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
-    - content: PNG
+    - content: HTML
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "Azure dashboards are not stored as HTML files."
