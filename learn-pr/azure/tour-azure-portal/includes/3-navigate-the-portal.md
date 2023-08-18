@@ -4,13 +4,13 @@ With an Azure account, you can sign into the **Azure portal**. The portal is a w
 
 When you first sign in to the Azure portal, the default page is **Home**.
 
-:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot showing the Home page of the Azure portal.":::
+:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot showing the Home page of the Azure portal." lightbox="../media/2-azure-portal.png":::
 
 You can change your default view to the customizable **Dashboard** in the portal's settings. You'll learn more about dashboards later in this module.
 
 :::row:::
     :::column:::
-    ![Screenshot of the resources and favorites pane.](../media/3-favorites.png)
+    :::image type="content" source="../media/3-favorites.png" alt-text="Screenshot of the portal menu and Favorites in the Azure portal.":::
     :::column-end:::
     :::column span="3":::
     **Portal menu**
