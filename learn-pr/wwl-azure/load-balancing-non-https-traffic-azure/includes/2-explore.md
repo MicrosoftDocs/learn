@@ -32,7 +32,7 @@ The table below summarizes these categorizations for each Azure load balancing s
 | Azure Front Door    | Global          | HTTP(S)             |
 | Traffic Manager     | Global          | non-HTTP(S)         |
 | Application Gateway | Regional        | HTTP(S)             |
-| Azure Load Balancer | Regional or Global        | non-HTTP(S)         |
+| Azure Load Balancer | Regional or Global      | non-HTTP(S)         |
 
 
 ## Choosing a load balancing option for Azure
