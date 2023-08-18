@@ -39,7 +39,6 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.azure.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
 - learn.azure.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
 badge:
   uid: learn.azure.build-cloud-governance-strategy-azure.badge
