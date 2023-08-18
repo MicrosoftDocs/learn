@@ -4,34 +4,35 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 02/07/2023
+  ms.date: 08/18/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: artificial-intelligence
+  ms.subservice: document-intelligence
 durationInMinutes: 2
 quiz:
   title: ""
   questions:
-  - content: "You plan to use the Form Recognizer pre-built receipt model. Which kind of Azure resource should you create?"
+  - content: "You plan to use Azure AI Document Intelligence's prebuilt receipt model. Which kind of Azure resource should you create?"
     choices:
     - content: "Computer Vision resource"
       isCorrect: false
-      explanation: "Incorrect: The Computer Vision resource type does not include the Form Recognizer service"
-    - content: "Form Recognizer or Cognitive Services resource"
+      explanation: "Incorrect: The Computer Vision resource type does not include Azure AI Document Intelligence."
+    - content: "Form Recognizer or Azure AI services resource"
       isCorrect: true
-      explanation: "Correct: Both the Form Recognizer resource and Cognitive Services resource provide access to the Form Recognizer service"
+      explanation: "Correct: Both the Form Recognizer resource and Azure AI services resource provide access to Azure AI Document Intelligence."
     - content: "Only Form Recognizer resource"
       isCorrect: false
-      explanation: "Incorrect: The Cognitive Services resource also includes the Form Recognizer service"
-  - content: "You are using the Form Recognizer service to analyze receipts that you have scanned into JPG format images. What is the maximum file size of JPG file you can submit to the pre-built receipt model?"
+      explanation: "Incorrect: An Azure AI services resource also provides access to Azure AI Document Intelligence."
+  - content: "You are using Azure AI Document Intelligence to analyze receipts that you have scanned into JPG format images. What is the maximum file size of JPG file you can submit to the prebuilt receipt model?"
     choices:
     - content: "2 MB"
       isCorrect: false
-      explanation: "Incorrect: The maximum file size for the pre-built receipt model is 50 MB"
+      explanation: "Incorrect: The maximum file size for the prebuilt receipt model is 50 MB"
     - content: "50 MB"
       isCorrect: true
-      explanation: "Correct: The maximum file size for the pre-built receipt model is 50 MB"
+      explanation: "Correct: The maximum file size for the prebuilt receipt model is 50 MB"
     - content: "200 MB"
       isCorrect: false
-      explanation: "Incorrect: The maximum file size for the pre-built receipt model is 50 MB"
+      explanation: "Incorrect: The maximum file size for the prebuilt receipt model is 50 MB"

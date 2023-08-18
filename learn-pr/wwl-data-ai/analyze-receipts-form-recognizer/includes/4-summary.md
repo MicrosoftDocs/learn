@@ -1,7 +1,7 @@
 
-The pre-built receipt model is a part of the Form Recognizer service.  It is optimized to extract information from receipts.  Capable of reading from restaurant, retail, and gas company receipts, it can help automate expense workflows for businesses by extracting key data from the receipts.
+Azure AI Document Intelligence provides access to prebuilt and custom models for extracting text from various documents, such as receipts, invoices, IDs, and more. 
 
-You can find out more about reading text with the Computer Vision service in the [service documentation](/azure/cognitive-services/form-recognizer?azure-portal=true).
+You can continue to read about Azure AI Document Intelligence in the [service documentation](/azure/ai-services/document-intelligence/?view=doc-intel-3.1.0&viewFallbackFrom=doc-intel-3.1.0?azure-portal=true).
 
 ## Clean-up
 

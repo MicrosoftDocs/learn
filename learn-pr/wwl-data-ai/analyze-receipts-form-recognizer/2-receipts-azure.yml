@@ -4,11 +4,12 @@ title: Get started with receipt analysis on Azure
 metadata:
   title: Get started with receipt analysis on Azure
   description: "Get started with receipt analysis on Azure"
-  ms.date: 02/07/2023
+  ms.date: 08/18/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: artificial-intelligence
+  ms.subservice: document-intelligence
 durationInMinutes: 3
 content: |
   [!include[](includes/2-receipts-azure.md)]
