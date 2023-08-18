@@ -34,6 +34,5 @@ products:
 subjects:
 - identity-access
 units:
-- learn.azure.secure-access-azure-identity-services.6-summary
 badge:
   uid: learn.azure.secure-access-azure-identity-services.badge
