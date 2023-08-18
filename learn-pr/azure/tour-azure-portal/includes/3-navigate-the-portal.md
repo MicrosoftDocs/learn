@@ -16,9 +16,11 @@ You can change your default view to the customizable **Dashboard** in the portal
     :::column-end:::
     :::column span="3":::
 
-    In the left-hand sidebar of the portal is the portal menu, which lists different Azure services and resource types. Azure has many more services than what's shown in this menu. The services listed are the ones in your **Favorites**.
+    In the left-hand sidebar of the portal is the portal menu, which lists different Azure services and resource types.
 
-    You can customize your **Favorites** with the specific resource types you tend to create or administer most often.
+    Azure has many more services than what's shown in this menu. The services listed here are the ones in your **Favorites**.
+
+    You can customize your **Favorites** with the specific resource types that you tend to create or administer most often.
     :::column-end:::
 :::row-end:::
 
