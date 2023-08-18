@@ -22,10 +22,10 @@ quiz:
     choices:
     - content: 'Charts and tables'
       isCorrect: false
-      explanation: 'Azure monitor can display both charts and tables, but these are not data types.'
+      explanation: 'Azure monitor can display both charts and tables, but they are not data types.'
     - content: 'Metrics and logs'
       isCorrect: true 
       explanation: 'Correct, Azure Monitor works with metrics and logs.'
     - content: 'Counters and gauges'
       isCorrect: false
-      explanation: 'Azure monitor can ingest metrics from counters and gauges, but these are not the two major data types.'
+      explanation: 'Azure monitor can ingest metrics from counters and gauges, but they are not the two major data types.'
