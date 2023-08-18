@@ -34,7 +34,6 @@ products:
 subjects:
 - identity-access
 units:
-- learn.azure.secure-access-azure-identity-services.4-what-are-mfa-conditional-access
 - learn.azure.secure-access-azure-identity-services.5-knowledge-check
 - learn.azure.secure-access-azure-identity-services.6-summary
 badge:
