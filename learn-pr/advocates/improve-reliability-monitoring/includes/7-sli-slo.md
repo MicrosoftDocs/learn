@@ -105,7 +105,7 @@ requests
 
 There are two lines changed in this example from the previous one. The first defines the number we'll use for the SLO; the second tells KQL that the SLO should be included in the chart. The result looks like this:
 
-:::image type="content" source="../media/slo-example.png" alt-text="Graph showing an SLI and an SLO; graph shows SLI at 100% reliability, followed by several dips. THe SLO is a solid line at the 80% mark.":::
+:::image type="content" source="../media/slo-example.png" alt-text="Graph showing an SLI and an SLO; graph shows SLI at 100% reliability, followed by several dips. The SLO is a solid line at the 80% mark.":::
 
 In this chart, it's easy to see the time where we dipped below our availability objective.
 
