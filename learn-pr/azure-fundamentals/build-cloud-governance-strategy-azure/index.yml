@@ -39,7 +39,6 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.azure.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
 - learn.azure.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
 - learn.azure.build-cloud-governance-strategy-azure.7-organize-resource-tags
 - learn.azure.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
