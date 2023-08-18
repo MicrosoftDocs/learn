@@ -47,6 +47,5 @@ units:
 - learn.azure.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
 - learn.azure.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
 - learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
-- learn.azure.build-cloud-governance-strategy-azure.12-summary
 badge:
   uid: learn.azure.build-cloud-governance-strategy-azure.badge
