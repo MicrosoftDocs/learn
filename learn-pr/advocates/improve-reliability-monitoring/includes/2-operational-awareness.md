@@ -80,7 +80,7 @@ Let's look at final example for this section that nicely ties together two of th
 
 to your computer and then upload it to a dashboard, you should see something like this:
 
-:::image type="content" source="../media/azure-inventory-dashboard.png" alt-text="Dashboard displaying inventory of Azure resources, one resource per tile.":::
+:::image type="content" source="../media/azure-inventory-dashboard.png" alt-text="Screenshot of dashboard displaying inventory of Azure resources, one resource per tile.":::
 
 You now have a live dashboard that shows you a fairly comprehensible inventory of your resources in use in a subscription. This dashboard's data is coming from the same source as the Azure Resource Graph Explorer we looked at earlier. In fact, if you select one of tiles, you can see (and edit if desired) the exact query that'ss being run to yield the information show in that square. Excellent, no?
 
