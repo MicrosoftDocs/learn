@@ -45,7 +45,6 @@ units:
 - learn.azure.build-cloud-governance-strategy-azure.7-organize-resource-tags
 - learn.azure.build-cloud-governance-strategy-azure.8-control-audit-resources-azure-policy
 - learn.azure.build-cloud-governance-strategy-azure.9-restrict-location-azure-policy
-- learn.azure.build-cloud-governance-strategy-azure.2-accelerate-cloud-adoption-framework
 - learn.azure.build-cloud-governance-strategy-azure.3-create-subscription-governance-strategy
 badge:
   uid: learn.azure.build-cloud-governance-strategy-azure.badge
