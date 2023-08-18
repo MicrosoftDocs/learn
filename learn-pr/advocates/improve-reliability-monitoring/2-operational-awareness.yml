@@ -28,9 +28,9 @@ quiz:
       explanation: 'Cost management is definitely important, but first we need to know what is running in production.'
     - content: 'The process of training your staff to be able to operate your systems'
       isCorrect: false
-      explanation: 'Staff definitely have to understand your systems, but awareness is not just about the training process.'
+      explanation: 'Your staff definitely needs to understand your systems, but awareness is not just about the training process.'
 
-  - content: 'When gaining operational awareness for an application, which of these questions do we need to ask?'
+  - content: 'When we are gaining operational awareness for an application, which of these questions do we need to ask?'
     choices:
     - content: 'What are the component parts?'
       isCorrect: false
