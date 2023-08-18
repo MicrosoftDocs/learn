@@ -8,7 +8,7 @@ Let's look at some aspects of reliability now:
 
 :::image type="content" source="../media/diagram-availability.png" alt-text="Diagram with the word reliability in a circle in the middle connected to circles at the end of each spoke, with the word availability added to one circle.":::
 
-When people talk about reliability, they tend to start with availability. Is the system "up" or is it "down?" Can others reach your website or your service? Can they use the product when they expect to? It's important from the perspective of both external customers and internal users who depend on your service. Availability is probably the aspect of reliability you'll with which spend the most time working. It's a good starting point for discussing reliability, but it’s only one aspect.
+When people talk about reliability, they tend to start with availability. Is the system "up" or is it "down?" Can others reach your website or your service? Can they use the product when they expect to? It's important from the perspective of both external customers and internal users who depend on your service. Availability is probably the aspect of reliability with which you'll spend the most time working. It's a good starting point for discussing reliability, but it’s only one aspect.
 
 ## Latency
 
