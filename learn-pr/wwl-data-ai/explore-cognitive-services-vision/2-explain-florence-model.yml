@@ -3,7 +3,7 @@ uid: learn.wwl.explore-cognitive-services-vision.explain-florence-model
 title: Discuss Microsoft's Florence foundation model
 metadata:
   title: Discuss Microsoft's Florence foundation model
-  description: "This unit introduces Microsoft's Florence foundation model and how it improves the existing Azure AI computer vision services."
+  description: "This unit introduces Microsoft's Florence foundation model and how it improves the existing Azure AI Vision service."
   ms.date: 08/10/2023
   author: wwlpublish
   ms.author: sheryang

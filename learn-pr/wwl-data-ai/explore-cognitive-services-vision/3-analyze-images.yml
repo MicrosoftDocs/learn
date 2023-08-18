@@ -1,8 +1,8 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.explore-cognitive-services-vision.analyze-images
-title: Analyze images with Azure Computer Vision Image Analysis 4.0
+title: Analyze images with Azure AI Vision Image Analysis 4.0
 metadata:
-  title: Analyze images with Azure Computer Vision Image Analysis 4.0
+  title: Analyze images with Azure AI Vision Image Analysis 4.0
   description: "This unit covers how to analyze images using Image Analysis 4.0. Specifically, the unit explores how to retrieve images, detect objects, and more."
   ms.date: 08/10/2023
   author: wwlpublish
