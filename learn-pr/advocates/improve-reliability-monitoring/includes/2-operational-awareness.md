@@ -1,4 +1,4 @@
-In order for us begin to work on monitoring for reliability, there is a predecessor step we have to take. First, we need to make sure we have a reasonable level of operational awareness.
+In order for us begin to work on monitoring for reliability, there's a predecessor step we have to take. First, we need to make sure we have a reasonable level of operational awareness.
 
 The simplest way to say this is that in order to work towards the reliability of systems in production, we first have to have a decent understanding of those systems and how they're functioning in production.
 
