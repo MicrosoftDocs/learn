@@ -25869,6 +25869,11 @@
       "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/3-what-is-azure-active-directory.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/4-what-are-mfa-conditional-access.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
