@@ -2117,3 +2117,13 @@ achievements:
   title: Manage consent requests to apps through admin consent workflow in Azure Active Directory
   summary: "Admin consent workflow streamlines the process by which admins evaluate and respond to consent requests in Azure Active directory (Azure AD). Learn how to configure admin consent workflow to enable users of applications to request admin consent from the consent prompt. Learn how to properly evaluate consent requests and respond to them through the Azure portal."
   iconUrl: /training/achievements/configure-admin-consent-workflow.svg
+- uid: learn.azure.build-cloud-governance-strategy-azure.badge
+  type: badge
+  title: Build a cloud governance strategy on Azure
+  summary: Learn how access policies, resource locks, and tags, as well as Azure services such as Azure Policy and Azure Blueprints, can help you build a comprehensive cloud governance strategy.
+  iconUrl: /training/achievements/describe-azure-governance-methodologies.svg
+- uid: learn.azure.secure-access-azure-identity-services.badge
+  type: badge
+  title: Secure access to your applications by using Azure identity services
+  summary: Learn how Azure Active Directory helps you manage and secure identities. Also see how single sign-on, multifactor authentication, and Conditional Access enable your users to securely access resources and applications from your intranet and from public networks.
+  iconUrl: /training/achievements/examine-core-identity-services.svg
