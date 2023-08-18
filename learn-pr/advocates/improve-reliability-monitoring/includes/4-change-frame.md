@@ -6,7 +6,7 @@ Of all of the units in this module, this is certainly one of the most important.
 
 We previously discussed aspects of reliability we might want to consider monitoring, but that only seemed to expand possible set of things we might monitor. Here's one idea that can help you zero in on what you should monitor for improving your reliability:
 
-*Reliability has to be measured from the customers perspective, not the component perspective.*
+*Reliability has to be measured from the customer's perspective, not the component perspective.*
 
 That's really important. You may want to read it again because it is that important. In the past, people would advocate for "monitor all the things!" If we could read a counter from it, graph a statistic, or put it on a dashboard, we thought we should monitor it. "Measure from the customer's perspective" is a much more specific dictum.
 
