@@ -15,12 +15,9 @@ Learn how to make a [spatial anchor resource](/azure/spatial-anchors/quickstarts
 
 In this section, you'll learn how to configure the scene and make the necessary changes.
 
-1. Select **MRTK XR Rig** object in the Hierarchy window and use the **Add Component** button in the Inspector window to add the **AR Anchor Manager (Script)**
+1. Select **MRTK XR Rig > Camera Offset** object in the Hierarchy window and use the **Add Component** button in the Inspector window to add the **AR Anchor Manager (Script)**
 
-    :::image type="content" source="../media/add-anchor-manager-script.png" alt-text="Screenshot of Unity with AR AnchorManager script selected." lightbox="../media/add-anchor-manager-script.png":::
-
-    > [!NOTE]
-    > When you add the AR Anchor Manager (Script) component, the AR Session Origin (Script) component is automatically added because it is required by the AR Anchor Manager (Script) component.
+    :::image type="content" source="../media/add-anchor-manager-script-new.png" alt-text="Screenshot of Unity with AR AnchorManager script selected." lightbox="../media/add-anchor-manager-script.png":::
 
 2. In the Project window, navigate to **Assets > MRTK.Tutorials.AzureCloudServices > Prefabs > Manager**.
 
