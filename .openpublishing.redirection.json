@@ -25794,6 +25794,11 @@
       "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/8-govern-subscriptions-azure-blueprints.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
