@@ -8,12 +8,13 @@ When you first sign in to the Azure portal, the default page is **Home**.
 
 You can change your default view to the customizable **Dashboard** in the portal's settings. You'll learn more about dashboards later in this module.
 
+## Portal menu
+
 :::row:::
     :::column:::
     :::image type="content" source="../media/3-favorites.png" alt-text="Screenshot of the portal menu and Favorites in the Azure portal.":::
     :::column-end:::
     :::column span="3":::
-    **Portal menu**
 
     In the left-hand sidebar of the portal is the portal menu, which lists different Azure services and resource types. Azure has many more services than what's shown in this menu. The services listed are the ones in your **Favorites**.
 
