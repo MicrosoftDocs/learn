@@ -18,7 +18,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'Which of the following is one of the eight aspects of reliability discussed in this unit?'
+  - content: 'Which of these terms is one of the eight aspects of reliability discussed in this unit?'
     choices:
     - content: 'Latency'
       isCorrect: true
