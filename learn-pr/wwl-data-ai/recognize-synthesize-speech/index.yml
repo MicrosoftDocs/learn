@@ -2,11 +2,12 @@
 uid: learn.wwl.recognize-synthesize-speech
 metadata:
   title: Recognize and synthesize speech with Azure AI Speech
-  description: "Recognize and synthesize speech"
-  ms.date: 08/16/2023
+  description: "Learn how to use Azure AI services to recognize and synthesize speech."
+  ms.date: 08/18/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
+  ms.prod: azure
   ms.service: azure
 title: Recognize and synthesize speech with Azure AI Speech
 summary: Learn how to recognize and synthesize speech by using Azure AI Speech.
