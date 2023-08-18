@@ -26,13 +26,13 @@ But does that mean that the app has only one view? A single page doesn't mean th
 
 ### Do I need a framework?
 
-As with everything in technology, it depends. Front-end frameworks provide the scaffolding to allow you to keep most functionality and operations on the browser, with the user's compute. Some frameworks, such as Next.js, even allow a hybrid model, with trips to the API wrapped into the framework allowing statically generated or hybrid generated pages. App Frameworks can also expediate the front-end development but providing build systems, scaffolding, component libraries, and other user interface options. If your app needs to move between pages on the browser, collect user input data, and act like a client, then your app should use a SPA framework.
+As with everything in technology, it depends. Front-end frameworks provide the scaffolding to allow you to keep most functionality and operations on the browser, with the user's compute. Some frameworks, such as Next.js, even allow a hybrid model, with trips to the API wrapped into the framework allowing statically generated or hybrid generated pages. App Frameworks can also expediate the front-end development by providing build systems, scaffolding, component libraries, and other user interface options. If your app needs to move between pages on the browser, collect user input data, and act like a client, then your app should use a SPA framework.
 
 ### Which SPA framework do I choose?
 
-There's more than one SPA framework out there, and you want to select a framework that supports what you need to do. Additionally, you want to make sure the framework you select is popular and well-documented, because these aspects can be helpful for future hiring and support. Four major frameworks fulfill these criteria:
+There's more than one SPA framework out there, and you want to select a framework that supports what you need to do. Additionally, you want to make sure the framework you select is popular and well-documented, because these aspects can be helpful for future hiring and support. Several popular frameworks fulfill these criteria:
 
-- **React:** React is popular and you can use ES6 and TypeScript. Like Angular, it has great tooling.
+- **React:** React is popular and you can use ES6 and TypeScript. It has great tooling, community, and 3rd-party component offerings.
 - **Angular:** This framework has been around for many years and uses TypeScript heavily. TypeScript resembles C#, and the tooling is good for Angular.
 - **Vue.js:** Vue.js is also a good choice, and many people are using it.
 - **Svelte:** Svelte is relatively new in this context, but it does a great job of looking like you're only working in HTML, JavaScript, and CSS. Its compiler is powerful and able to _hide_ the framework parts to a high degree.
@@ -55,7 +55,7 @@ Common settings you may need to change are:
 * **Port:** The port the server listens on.
 * **Proxy:** Whether the server proxies requests to another server. In this module, you'll use a proxy to connect to the back-end API.
 
-If is important to configure these settings so all developers on the project have a consistent experience. Remember to check the configuration into source control so the settings stay with the app.
+It's important to configure these settings so all developers on the project have a consistent experience. Remember to check the configuration into source control so the settings stay with the app.
 
 ### The React UI framework
 
@@ -93,7 +93,7 @@ Here, you're passing in a JavaScript object that has the properties `title` and 
 
 At a high level, your user manages data. Regardless of whether the data are nuts and bolts, orders, or pizzas, the user needs to do things like:
 
-- **Create data:** Creating a data means that the user types in information on a data, and send that to a server app.
+- **Create data:** Creating data means that the user enters information that is sent to the server app.
 - **Read data:** You'll need to read the information from the server app, and present that to the user.
 - **Update data:** It's important that the user can update the information. The user might mistype the information, or the information might change over time.
 - **Delete data:** Sometimes, data isn't needed anymore, and the user must be able to remove it.
@@ -136,9 +136,9 @@ const Detail = ({ item, setItem }) =>
 
 ### Data binding and state management
 
-In order to have effiient component rendering, you need to plan state management. State management is the process of managing the data that's used by your components. 
+In order to have efficient component rendering, you need to plan state management. State management is the process of managing the data that's used by your components. 
 
-There are state management systems that you can use, such as Redux, but for simpler apps such as this Pizza, you can also use the built-in React state management system. The built-in system is called `useState`, and it's a hook that you can use in your components. Hooks are functions that you can use in your components to add functionality. The `useState` hook allows you to create state variables that you can use in your components.
+There are state management systems that you can use, such as Redux, but for simpler apps such as this training module's _Pizza app_, you can also use the built-in React state management system. The built-in system is called `useState`, and it's a hook that you can use in your components. Hooks are functions that you can use in your components which _hook into_ the life cycle of components to add functionality. The `useState` hook allows you to create state variables that you can use in your components.
 
 To manage state for the Pizza app, create a parent component, _Pizza_, then use a child component, _PizzaList_, to display the list of pizzas. The _PizzaList_ component will need to be able to add a pizza to the list, so it will need to send a message to the _Pizza_ component. The _Pizza_ component will then update the list of pizzas, and send the updated list back to the _PizzaList_ component. The _PizzaList_ component will then rerender with the updated list of pizzas.
 

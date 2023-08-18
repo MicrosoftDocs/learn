@@ -76,25 +76,7 @@ Icons are images that represent an object or action. They're used to communicate
 
 Design systems can provide either default themes or custom themes. Because a theme is meant to apply to the entire site, you add it at the top HTML element. In Reacht, this is typically in main.jsx or index.jsx. The following example uses Material UI to add a default theme to the app.
 
-```javascript
-import * as React from 'react';
-import * as ReactDOM from 'react-dom/client';
-
-import { ThemeProvider, createTheme } from '@mui/material/styles';
-import CssBaseline from '@mui/material/CssBaseline';
-const theme = createTheme();
-
-import Pizza from './Pizza'
-
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <CssBaseline />
-      <Pizza />
-    </ThemeProvider>
-  </React.StrictMode>,
-);
-```
+:::code language="javascript" source="../code/with-components-with-style/main.jsx" highlight="4-6, 12,13,15":::
 
 ## Apply a design system to your React component
 

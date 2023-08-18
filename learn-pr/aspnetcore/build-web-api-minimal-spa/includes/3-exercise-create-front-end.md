@@ -4,7 +4,7 @@ In this exercise, you build the front-end app. You start with a scaffold, and th
 
 To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call the scaffolder and have it create a working React app in a matter of seconds.
 
-1. In a command terminal (with all the prerequisites installed), create the app by using `npx create vite@latest pizza-web --template react`:
+1. In a command terminal (with all the prerequisites installed), create the app by using `npx create vite@latest PizzaClient --template react`:
 
     ```bash
     npm create vite@latest PizzaClient --template react
@@ -13,7 +13,7 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
     Answer the CLI prompts as follows:
 
-    * **Package name**: `PizzaClient`
+    * **Package name**: `pizzaclient`
     * **Select a framework**: `React`
     * **Select a variant**: `Javascript`
 
@@ -25,9 +25,15 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
    code .
    ```
 
+1. Install dependencies by calling `npm install`:
+
+   ```bash
+   npm install
+   ```
+
 1. Update the `vite.config.js` to provide a consistent front-end port. Replace the contents of `./vite.config.js` with the following code:
 
-    :::code language="javascript" source="../code/vite.config.js" :::
+    :::code language="javascript" source="../code/with-components-and-static-data/vite.config.js" :::
 
     * **PORT**: The port is set to 3000, a common port number used for front-end apps..
 
@@ -48,7 +54,7 @@ To scaffold an app, you use the `Vite` scaffolder. By using `npx`, you can call 
 
 ## Build the Pizza component
 
-Build the parent component that manages state for the pizza list.
+Build the parent component that manages state for the pizza list. The initial data is hard-coded in the component. Later, you'll move the data to a server.
 
 1. Create a file in the _src_ subdirectory named  _Pizza.jsx_ and give it the following content:
 
@@ -75,6 +81,12 @@ Open the `main.jsx` and replace the code with the following so the **Pizza** com
 :::code language="javascript" source="../code/with-components-and-static-data/main.jsx":::
 
 ## Test the app
+
+1. Start the app by calling `npm run dev`:
+
+   ```bash
+   npm run dev
+   ```
 
 1. Open a browser and navigate to `http://localhost:3000`.
 

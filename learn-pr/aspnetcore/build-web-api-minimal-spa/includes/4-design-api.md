@@ -56,7 +56,7 @@ If you make any requests toward this mocked API and change data, the static file
 
 ### What about the front-end app?
 
-Because this mocked API works exactly like a real API, you can make requests to it in your front-end code with a browser-native request object, **fetch** . For example:
+Because this mocked API works exactly like a real API, you can make requests to it in your front-end code with a browser-native request object, **fetch**. For example:
 
 ```javascript
 fetch("http://localhost:5000/pizza")
@@ -70,9 +70,7 @@ Use a proxy to make requests toward the mocked API.
 
 The **Vite** framework provides `vite.config.js` which allows you to configure how the app is run including the proxy. 
 
-    :::code language="javascript" source="../code/vite.config.js" highlight="8-11":::
-
-    * **PORT**: The port is set to 3000, a common port number used for front-end apps..
+:::code language="javascript" source="../code/vite.config.js" highlight="8-11":::
 
 If your front-end framework doesn't provide a proxy mechanism with its local server, you need to provide one. A standard way to set up a proxy is to set the `proxy` property in the _package.json_ with an entry like the following:
 
@@ -116,31 +114,14 @@ client> receives data from back end
 
 ### Configure CORS on the server
 
-In this example app, the API and front-end app are both hosted from the same IP (`localhost`) but are served from different ports: 
+In this example app used in this training module, the API and front-end app are both hosted from the same IP (`localhost`) but are served from different ports: 
 
 - The API is served from port 5000
 - The front-end app is served from port 3000
 
-The CORS configuration is the responsibility of the server. How that's configured depends on the runtime the server is using. Here's how you can do it in your .NET Core _Program.cs_ file:
+The CORS configuration is the responsibility of the server. How that's configured depends on the runtime the server is using. After you download the .NET sample API app in the next unit, you can update your CORS configuration in the .NET Core API's _Program.cs_ file:
 
-```csharp
-// 1) define a unique string
-readonly string MyAllowSpecificOrigins = "_myAllowSpecificOrigins";
-
-// 2) define allowed domains, in this case "http://example.com" and "*" = all
-//    domains, for testing purposes only.
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy(name: MyAllowSpecificOrigins,
-      builder =>
-      {
-          builder.WithOrigins(
-            "http://example.com", "*");
-      });
-});
-// 3) use the capability
-app.UseCors(MyAllowSpecificOrigins);
-```
+:::code language="csharp" source="../code/dot-net-server/Program-with-cors.cs":::
 
 The code snippet shows how to add a policy to an API that includes an allowlist of domains that are allowed to communicate with the API. In this example, the domain http://example.com is added to the allowlist. If you want to allow all domains, you can use * as the allowlist, which means that all possible domains are allowed.
 
