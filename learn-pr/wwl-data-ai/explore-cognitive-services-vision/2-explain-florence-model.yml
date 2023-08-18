@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.service: ai-services
 durationInMinutes: 2
 content: |
   [!include[](includes/2-explain-florence-model.md)]

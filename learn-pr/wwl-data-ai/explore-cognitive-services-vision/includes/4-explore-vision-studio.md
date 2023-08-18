@@ -4,7 +4,7 @@ Vision Studio is Azure AI Vision's newest tool, which provides a unified portal 
 
 ![Screenshot of the Get started with Vision page of Vision Studio, with the tiles of featured capabilities selected.](../media/04-vision-studio.png)
 
-Using Studio, you can experiment with the services and learn what they offer without writing any code. To use [Vision Studio](https://portal.vision.cognitive.azure.com/), you need an Azure subscription for authentication and a Cognitive Services resource to begin.
+Using Studio, you can experiment with the services and learn what they offer without writing any code. To use [Vision Studio](https://portal.vision.cognitive.azure.com/), you need an Azure subscription for authentication and an Azure AI services resource to begin.
 
 ## Try-it-out experiences
 
