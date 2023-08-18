@@ -7,9 +7,12 @@ metadata:
   ms.date: 03/16/2023
   author: ramiMSFT
   ms.author: rabououn
-  ms.custom: devdivchpfy22, engagement-fy23
+  ms.custom:
+    - devdivchpfy22
+    - engagement-fy23
+    - devx-track-azurecli
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/3-set-up-environment.md)]

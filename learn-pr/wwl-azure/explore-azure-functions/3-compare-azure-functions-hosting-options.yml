@@ -4,11 +4,11 @@ title: Compare Azure Functions hosting options
 metadata:
   title: Compare Azure Functions hosting options
   description: "Compare Azure Functions hosting options"
-  ms.date: 02/06/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: jeffko
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 3
 content: |
   [!include[](includes/3-compare-azure-functions-hosting-options.md)]

@@ -17,12 +17,12 @@ quiz:
   questions:
   - content: "Which one of these actions best describes a data-flow?"
     choices:
-    - content: "User credentials being transmitted from a process to an authentication service provider"
+    - content: "User credentials being transmitted from a process to an authentication service provider."
       isCorrect: true
-      explanation: "The act of transmitting data is a data-flow related event"
-    - content: "Session tokens being stored for later use"
+      explanation: "The act of transmitting data is a data-flow related event."
+    - content: "Session tokens being stored for later use."
       isCorrect: false
-      explanation: "The act of storing data is a data store related event"
-    - content: "Third-party API handling service analyzing request"
+      explanation: "The act of storing data is a data store related event."
+    - content: "A third-party API handling service analyzing a request."
       isCorrect: false
-      explanation: "The act of processing data is a process-related event"
+      explanation: "The act of processing data is a process-related event."

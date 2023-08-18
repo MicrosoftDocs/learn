@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: iot
 title: Explore Azure IoT services
 summary: This module introduces you to features of IoT Hub and IoT Hub Device Provisioning Service resources, and provides you with experience creating these services.
 abstract: |
@@ -41,3 +41,4 @@ units:
 - learn.wwl.explore-azure-iot-services.summary
 badge:
   uid: learn.wwl.explore-azure-iot-services.badge
+hidden: true

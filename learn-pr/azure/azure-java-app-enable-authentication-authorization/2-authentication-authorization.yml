@@ -9,6 +9,8 @@ metadata:
   author: navyasric
   ms.author: navyasric
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

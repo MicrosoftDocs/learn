@@ -8,6 +8,8 @@ metadata:
   author: AbbyMSFT
   ms.author: abbyweisberg
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
   sandbox: true
   interactive: bash

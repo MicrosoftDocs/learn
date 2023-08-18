@@ -1,4 +1,4 @@
- Your PIO wants to set up a virtual machine to serve as a web resource for local media outlets. It's imperative that this virtual machine is as protected as it can be to prevent unauthorized access. As part of your security profile, you want to implement Update Management on this VM so that you can ensure that it is always up-to-date with the latest security patches. 
+ Your PIO wants to set up a virtual machine to serve as a web resource for local media outlets. It's imperative that this virtual machine is as protected as it can be to prevent unauthorized access. As part of your security profile, you want to implement Update Management on this VM so that you can ensure that it's always up to- date with the latest security patches. 
 
 [!include[](../../../includes/azure-subscription-prerequisite.md)]
 
@@ -9,7 +9,7 @@ Here, you'll create a new virtual machine to serve as a web server for the local
 1. Sign in to the [Azure portal](https://portal.azure.com/?azure-portal=true).
 1. On the Azure portal menu or from the **Home** page, select **Create a resource**.
 1. In the *Search services and marketplace* box, search for and select **Virtual machine**, then select **Create**.
-1. In the **Create resource** pane, select **Windows Server 2019 Datacenter**. The **Create a virtual machine** pane appears.
+1. In the **Create resource** pane, select **Windows Server 2019 Datacenter - Gen2**. The **Create a virtual machine** pane appears.
 1. On the **Basics** tab, enter the following values for each setting.
 
     | Setting              | Value     |
@@ -60,7 +60,7 @@ Here, you'll enable Update Manager on the virtual machine you created.
 
    :::image type="content" source="../media/3-update-management-vm-configured.png" alt-text="Screenshot that shows a green check under Compliance and Update agent readiness fields.":::
 
-   Also, in this example, Update Management has identified that there are updates for Windows Server available. Under **Information link**, there's a link to the knowledge base article for update.
+   Also, in this example, Update Management has identified that there are updates for Windows Server available. In the **Information link** column, there's a link to the knowledge base article for update.
 
 ## Examine Hybrid Worker Groups
 

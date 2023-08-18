@@ -1,3 +1,4 @@
+
 Release gates give you more control over the start and completion of the deployment pipeline.
 
 They're often set up as pre-deployment and post-deployment conditions.

@@ -4,11 +4,10 @@ title: Describe sensitivity labels and policies
 metadata:
   title: Describe sensitivity labels and policies
   description: "Describe sensitivity labels and policies"
-  ms.date: 02/09/2023
+  ms.date: 06/16/2023
   author: wwlpublish
   ms.author: ceperezb
   ms.topic: interactive-tutorial
-  ms.prod: learning-m365
 durationInMinutes: 5
 content: |
   [!include[](includes/4-describe-sensitivity-labels-policies.md)]

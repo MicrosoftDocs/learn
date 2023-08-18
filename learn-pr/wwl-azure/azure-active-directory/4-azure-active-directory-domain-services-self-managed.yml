@@ -4,12 +4,10 @@ title: Azure AD DS and self-managed AD DS
 metadata:
   title: Azure AD DS and self-managed AD DS
   description: "Azure AD DS and self-managed AD DS"
-  ms.date: 04/04/2023
+  ms.date: 07/12/2023
   author: wwlpublish
   ms.author: serlingdavis
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  zone_pivot_groups: None
 durationInMinutes: 3
 content: |
   [!include[](includes/4-azure-active-directory-domain-services-self-managed.md)]

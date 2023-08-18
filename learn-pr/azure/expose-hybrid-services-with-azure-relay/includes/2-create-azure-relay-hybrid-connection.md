@@ -40,15 +40,15 @@ The following diagram shows how the connection is made:
 
 :::image type="content" source="../media/2-how-relay-works.png" alt-text="Diagram showing how Azure Relay exchanges messages.":::
 
-1. A listener requests a connection to Azure Relay. The request is sent to a relay gateway by Azure Load Balancer.
-1. The gateway creates an Azure relay in the gateway store. At this point, the listener is ready to receive messages.
-1. A sender requests a connection, which might be received by a different gateway.
-1. The gateway obtains information for the relay from the gateway store.
-1. The sender's gateway sends the connection request to the listener's gateway.
-1. The listener's gateway forwards the connection request to the listener. This request includes the identity of the sender's gateway.
-1. The listener makes a connection to the sender's gateway. At this point, the sender and listener can exchange messages.
-1. The sender's gateway forwards messages from the listener to the sender.
-1. The sender's gateway also forwards messages from the sender to the listener. 
+1. Listening client sends a listening request to the Azure Relay service. The Azure load balancer routes the request to one of the gateway nodes. 
+2. The Azure Relay service creates a relay in the gateway store. 
+3. Sending client sends a request to connect to the listening service. 
+4. The gateway that receives the request looks up for the relay in the gateway store. 
+5. The gateway forwards the connection request to the right gateway mentioned in the gateway store. 
+6. The gateway sends a request to the listening client for it to create a temporary channel to the gateway node that's closest to the sending client. 
+7. The listening client creates a temporary channel to the gateway that's closest to the sending client. Now that the connection is established between clients via a gateway, the clients can exchange messages with each other. 
+8. The gateway forwards any messages from the listening client to the sending client. 
+9. The gateway forwards any messages from the sending client to the listening client.  
 
 ## How to create a relay
 

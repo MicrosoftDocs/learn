@@ -2,8 +2,8 @@
 uid: learn.wwl.automate-machine-learning-model-selection-azure-machine-learning
 metadata:
   title: Automate machine learning model selection with Azure Machine Learning
-  description: Azure Machine Learning Python SDK v2
-  ms.date: 02/10/2023
+  description: Learn how to find the best model with automated machine learning (AutoML). Whether you're training a classification, regression, or forecasting model, you can use AutoML to quickly explore various featurization techniques and algorithms.
+  ms.date: 06/06/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -13,7 +13,7 @@ prerequisites: |
   None
 summary: |
   Learn how to find the best model with automated machine learning (AutoML). Whether you're training a classification, regression, or forecasting model, you can use AutoML to quickly explore various featurization techniques and algorithms.
-iconUrl: /training/achievements/generic-trophy.svg
+iconUrl: /training/achievements/automate-machine-learning-model-selection-azure-machine-learning.svg
 levels:
 - beginner
 roles:

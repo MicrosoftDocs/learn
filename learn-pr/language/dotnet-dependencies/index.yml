@@ -6,8 +6,9 @@ metadata:
   ms.date: 01/10/2023
   author: jamesmontemagno
   ms.author: jamont
+  ms.manager: markl
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: .net
 title: Create a new .NET project and work with dependencies  
 summary: Use dependencies from the NuGet registry to develop .NET applications faster. Learn how to manage dependencies for your project.
 abstract: |

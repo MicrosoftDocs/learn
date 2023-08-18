@@ -1,0 +1,13 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.create-business-value.discover-apply-ai-maturity-model-assessment
+title: Discover how to apply the AI Maturity Model Assessment to your business culture
+metadata:
+  title: Discover how to apply the AI Maturity Model Assessment to your business culture
+  description: "Discover how to apply the AI Maturity Model Assessment to your business culture"
+  ms.date: 06/28/2023
+  author: wwlpublish
+  ms.author: rcaper
+  ms.topic: interactive-tutorial
+durationInMinutes: 4
+content: |
+  [!include[](includes/4-discover-apply-ai-maturity-model-assessment.md)]

@@ -22,52 +22,52 @@ quiz:
       explanation: Incorrect. Governance tools can't address poorly defined corporate policy.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: true
-      explanation: Correct! Starting with sound corporate policy will make all downstream implementations smoother.
+      explanation: Correct! Starting with sound corporate policy makes all downstream implementations smoother.
     - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: Incorrect. It will be hard to address cost management without a clear set of policies and a governance foundation.
+      explanation: Incorrect. It's hard to address cost management without a clear set of policies and a governance foundation.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: Incorrect. It will be hard to address a security baseline without a clear set of policies and a governance foundation.
+      explanation: Incorrect. It's hard to address a security baseline without a clear set of policies and a governance foundation.
   - content: Which would you address second?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: true
-      explanation: Correct! A governance foundation will implement tools and references to begin building cloud governance solutions.
+      explanation: Correct! A governance foundation implements tools and references to begin building cloud governance solutions.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
       explanation: Incorrect. Corporate policy should be at the top of a list of things to address.
     - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: Incorrect. It will be hard to address cost management without a clear set of policies and a governance foundation.
+      explanation: Incorrect. It's hard to address cost management without a clear set of policies and a governance foundation.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
-      explanation: Incorrect. It will be hard to address a security baseline without a clear set of policies and a governance foundation.
-  - content: Which will deliver the most visible improvement based on existing corporate policy?
+      explanation: Incorrect. It's hard to address a security baseline without a clear set of policies and a governance foundation.
+  - content: Which step delivers the most visible improvement based on existing corporate policy?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: Incorrect. Implementing governance through Azure is one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team that creates it.
+      explanation: Incorrect. Implementing governance through Azure is one of the coolest tech accomplishments, but it doesn't show much value beyond the hands-on team that creates it.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
-      explanation: Incorrect. Corporate policy is important, but few will initially see the value of this exercise.
+      explanation: Incorrect. Corporate policy is important, but few see the value of this exercise initially.
     - content: Deploy cost management controls and processes.
       isCorrect: false
-      explanation: Incorrect. Although important, cost management won't help with the security concerns.
+      explanation: Incorrect. Although important, cost management doesn't help with the security concerns.
     - content: Deploy security baseline controls and processes.
       isCorrect: true
       explanation: Correct! In the customer narrative, the visible pain points can be addressed through an automated security baseline to reduce security risks.
-  - content: Which will increase confidence for the CIO?
+  - content: Which step increases confidence for the CIO?
     choices:
     - content: Implement a governance foundation in Azure.
       isCorrect: false
-      explanation: Incorrect. Implementing governance through Azure one of the coolest tech accomplishments, but it won't show much value beyond the hands-on team that creates it.
+      explanation: Incorrect. Implementing governance through Azure is one of the coolest tech accomplishments, but it doesn't show much value beyond the hands-on team that creates it.
     - content: Update the existing corporate policy to outline concerns, risks, triggers, and actions.
       isCorrect: false
       explanation: Incorrect. Corporate policy is important, but these aspects of governance don't address the concerns the CIO raises in the customer narrative.
     - content: Deploy cost management controls and processes.
       isCorrect: true
-      explanation: Correct! In this narrative, the CIO expresses concerns with cost. Addressing those concerns by adding cost management controls will build confidence.
+      explanation: Correct! In this narrative, the CIO expresses concerns with cost. Addressing those concerns by adding cost management controls builds confidence.
     - content: Deploy security baseline controls and processes.
       isCorrect: false
       explanation: Incorrect. The CIO added cost risks and concerns to the list, and the existing policy had nothing to do with cost. It's also a message that the CIO shares throughout the narrative.

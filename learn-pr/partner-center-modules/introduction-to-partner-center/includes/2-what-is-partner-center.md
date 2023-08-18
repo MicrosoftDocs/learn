@@ -19,7 +19,7 @@ Build your business profile to display your company's areas of expertise. Highli
 
 Through Partner Center, partners have increased access to marketing resources to help them accelerate time to market, generate leads, and grow their cloud business. The commercial marketplace product catalog, which includes Microsoft AppSource and Azure Marketplace, lets you offer information and in-product purchase experiences.
 
-Your solutions are listed in our online stores beside our own Microsoft solutions, connecting you with businesses, organizations, and government agencies around the world. To learn more about referrals, see [Manage leads](/partner-center/manage-leads). To learn more about your business profile, see [Create a business profile](/partner-center/create-a-marketing-profile).
+Your solutions are listed in our online stores next to our own Microsoft solutions, connecting you with businesses, organizations, and government agencies around the world. To learn more about referrals, see [Learn about leads](/partner-center/manage-leads). To learn more about your business profile, see [Create a business profile](/partner-center/create-a-marketing-profile).
 
 ## Co-sell with Microsoft and other partners
 
@@ -27,7 +27,7 @@ Co-sell is the path for partners to jointly sell with Microsoft and other partne
 
 ## Manage customer software needs
 
-As a trusted partner, you play a critical role in all stages of the customer lifecycle, regardless of how customers choose to purchase Microsoft software and services. If your customer gives you administrative privileges, you'll be able to deploy and manage subscriptions, maintain performance, set up users, and create support tickets on their behalf. Partner Center provides quick and easy access to Microsoft support on-demand to help you better solve challenges and meet customer needs. Learn more at [offering customer support](/partner-center/customer-support).
+As a trusted partner, you play a critical role in all stages of the customer lifecycle, regardless of how customers choose to purchase Microsoft software and services. If your customer gives you administrative privileges, you'll be able to deploy and manage subscriptions, maintain performance, set up users, and create support tickets on their behalf. Partner Center provides quick and easy access to Microsoft support on demand to help you better solve challenges and meet customer needs. Learn more at [Providing different types of support to your customers](/partner-center/customer-support).
 
 ## Maintain a secure environment
 

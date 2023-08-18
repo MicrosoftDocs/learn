@@ -8,6 +8,8 @@ metadata:
   author: tfitzmac
   ms.author: tomfitz
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
   ms.prod: learning-azure
 durationInMinutes: 3
 content: |

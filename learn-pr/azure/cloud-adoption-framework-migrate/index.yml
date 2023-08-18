@@ -7,7 +7,7 @@ metadata:
   author: jamcneil
   ms.author: jumcn
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: caf
 title: "Migrate to Azure through repeatable processes and common tools"
 summary: The Migrate methodology in the Cloud Adoption Framework guides you through migration to Azure by using repeatable processes and common tools.
 abstract: |

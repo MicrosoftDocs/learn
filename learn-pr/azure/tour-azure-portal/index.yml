@@ -7,7 +7,7 @@ metadata:
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-portal
 title: Manage services with the Azure portal
 summary: Tour the Azure portal features and services, and customize your portal.
 abstract: |

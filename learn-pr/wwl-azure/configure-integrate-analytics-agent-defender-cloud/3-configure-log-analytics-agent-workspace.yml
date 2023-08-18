@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.configure-integrate-analytics-agent-defender-cloud.configure-log-analytics-agent-workspace
+title: Configure the Log Analytics agent and workspace
+metadata:
+  title: Configure the Log Analytics agent and workspace
+  description: "Configure the Log Analytics agent and workspace"
+  ms.date: 08/01/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/3-configure-log-analytics-agent-workspace.md)]

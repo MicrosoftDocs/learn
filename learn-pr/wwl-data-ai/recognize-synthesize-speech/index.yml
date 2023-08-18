@@ -7,7 +7,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
 title: Recognize and synthesize speech
 summary: Learn how to recognize and synthesize speech by using Azure Cognitive Services.
 abstract: |
@@ -26,7 +26,7 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
+- ai-services
 - azure-sdks
 subjects:
 - artificial-intelligence

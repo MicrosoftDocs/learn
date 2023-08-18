@@ -1,14 +1,15 @@
 ### YamlMime:ModuleUnit
 uid: learn.microservices-devops-aspnet-core.4-build-github-action
 metadata:
-  title: Exercise - Create a GitHub Action to build a container image
-  description: Implement and test a GitHub Action to build and deploy a Docker image to ACR.
+  title: Exercise - Create a GitHub action to build a container image
+  description: Implement and test a GitHub action to build and deploy a Docker image to Azure Container Registry.
   ms.date: 09/16/2020
   author: scottaddie
   ms.author: scaddie
+  ms.manager: markl
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
-title: Exercise - Create a GitHub Action to build a container image
+title: Exercise - Create a GitHub action to build a container image
 durationInMinutes: 10
 content: |
   [!include[](includes/4-build-github-action.md)]

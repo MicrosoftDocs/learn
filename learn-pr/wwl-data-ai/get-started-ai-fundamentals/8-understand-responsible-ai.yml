@@ -4,13 +4,11 @@ title: Understand Responsible AI
 metadata:
   title: Understand Responsible AI
   description: "Understand Responsible AI"
-  ms.date: 04/03/2023
+  ms.date: 08/14/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure
 durationInMinutes: 10
 content: |
   [!include[](includes/8-understand-responsible-ai.md)]

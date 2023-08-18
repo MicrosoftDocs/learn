@@ -1,4 +1,3 @@
-
 On the surface, the `do-while` and `while` statements are yet *another* iteration statement that allows you to iterate through a code block and thereby change the flow of execution of your code. However, once we examine how each works, we can better identify the nuances of each iteration statement and when to use them.
 
 ## What is the do-while statement?

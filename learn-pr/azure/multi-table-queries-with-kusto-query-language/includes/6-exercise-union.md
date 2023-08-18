@@ -1,10 +1,10 @@
-In this exercise, you'll use the `union` operator to combine sales facts that were collected from various countries.
+In this exercise, you'll use the `union` operator to combine sales facts that were collected from various countries/regions.
 
 ## Use the `union` operator
 
-Your sales team asks you to create a single table that combines 10 arbitrary sales results from each of the following countries: Australia, the United Kingdom, and the United States.
+Your sales team asks you to create a single table that combines 10 arbitrary sales results from each of the following countries/regions: Australia, the United Kingdom, and the United States.
 
-You'll use the `let` statement to create three tabular expressions, each with 10 records from a specific country, in the *SalesFact* table, to represent sales data from three countries. You can think of them as three separate tables.
+You'll use the `let` statement to create three tabular expressions, each with 10 records from a specific country/region, in the *SalesFact* table, to represent sales data from three countries/regions. You can think of them as three separate tables.
 
 Examining these tables, you can see that they have the same columns. The only difference is the data in the `RegionCountryName` column that represents the country. You'll use the `union` operator to combine the sales facts tables for the United Kingdom and the United States with the sales facts table for Australia.
 
@@ -33,13 +33,13 @@ Examining these tables, you can see that they have the same columns. The only di
 
     :::image type="content" source="../media/6-union-1.png" alt-text="Screenshot of the union operator with tables that have the same columns, query, and results.":::
 
-1. Notice that you get all the rows from the three tables. Try modifying the query to add simulated data for France and combining it with the data from the other countries.
+1. Notice that you get all the rows from the three tables. Try modifying the query to add simulated data for France and combining it with the data from the other countries/regions.
 
 In the following sections, you use the `let` statement to create ad hoc tables that simulate data, with the columns required for the scenarios.
 
 ## Use the `union` operator with tables that have different columns
 
-The next month, your sales team again asks you to create the sales data from the three countries. When you examine the tables this time, you notice that they have different columns. The nice thing about the `union` operator is that it will combine tables even if they have different columns. For this query, you use the alternative syntax for the `union` operator, which doesn't require piped input.
+The next month, your sales team again asks you to create the sales data from the three countries/regions. When you examine the tables this time, you notice that they have different columns. The nice thing about the `union` operator is that it will combine tables even if they have different columns. For this query, you use the alternative syntax for the `union` operator, which doesn't require piped input.
 
 1. Run the following query.
 
@@ -72,7 +72,7 @@ The next month, your sales team again asks you to create the sales data from the
 
 ## Use the `union` operator with tables that have different columns and return only the columns that occur in all tables
 
-The following month, your sales team again asks you to create the sales data from the three countries, but this time they only want the columns that are common to all three tables. Previously, you saw that the `union` operator returns all the columns that occur in any of the tables. This is the default behavior of the `union` operator, called an outer union, though it's best practice to always explicitly specify the union kind for clarity.
+The following month, your sales team again asks you to create the sales data from the three countries/regions, but this time they only want the columns that are common to all three tables. Previously, you saw that the `union` operator returns all the columns that occur in any of the tables. This is the default behavior of the `union` operator, called an outer union, though it's best practice to always explicitly specify the union kind for clarity.
 
 To only return the columns that occur in all tables, you'll use an inner union on the same simulated data by specifying the `kind=inner` argument, as follows:
 

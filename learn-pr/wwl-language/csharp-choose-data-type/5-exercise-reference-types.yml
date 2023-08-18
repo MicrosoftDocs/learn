@@ -4,25 +4,24 @@ title: Exercise - Discover reference types
 metadata:
   title: Exercise - Discover reference types
   description: "Exercise - Discover reference types"
-  ms.date: 02/25/2023
+  ms.date: 08/15/2023
   author: wwlpublish
   ms.author: eric
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 durationInMinutes: 8
 content: |
   [!include[](includes/5-exercise-reference-types.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "Which data type is disposed of immediately after a .NET program completes and closes?"
+  - content: "What variable type is created if the `new` operator is used to create a variable?"
     choices:
-    - content: "reference"
-      isCorrect: false
-      explanation: "That’s incorrect. When the stack frame has finished executing, the values in the stack are removed."
     - content: "value"
-      isCorrect: true
-      explanation: "That’s correct. When the stack frame has finished executing, the values in the stack are removed."
-    - content: "string"
       isCorrect: false
-      explanation: "That’s incorrect. When the stack frame has finished executing, the string values in the stack are removed."
+      explanation: "That’s incorrect. The `new` operator isn't used to create value types on the stack."
+    - content: "reference"
+      isCorrect: true
+      explanation: "That’s correct. The `new` operator is used to allocate memory on the heap for a reference type."
+    - content: "integer type"
+      isCorrect: false
+      explanation: "That’s incorrect. The `new` operator isn't used to create an integer variable. Integers are value types."

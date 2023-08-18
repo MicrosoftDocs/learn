@@ -1,0 +1,17 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.administer-fabric.admin-role-tools
+title: Understand the Fabric administrator role
+metadata:
+  title: Understand the Fabric administrator role
+  description: "Understand the Fabric administrator role"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: powerbi
+  ms.custom:
+    - build-2023
+durationInMinutes: 6
+content: |
+  [!include[](includes/3-admin-role-tools.md)]

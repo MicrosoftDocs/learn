@@ -8,6 +8,8 @@ metadata:
   author: johnmarco
   ms.author: johnmarc
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-arm-template
   ms.prod: learning-azure
 durationInMinutes: 15
 content: |

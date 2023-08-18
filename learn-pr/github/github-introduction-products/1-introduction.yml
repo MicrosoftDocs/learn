@@ -5,8 +5,8 @@ metadata:
   title: Introduction
   description: Quick overview of what you'll learn in this module.
   ms.date: 02/09/2023
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 1

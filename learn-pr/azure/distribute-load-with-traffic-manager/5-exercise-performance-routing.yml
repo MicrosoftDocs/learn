@@ -3,11 +3,11 @@ uid: learn.distribute-load-with-traffic-manager.5-exercise-performance-routing
 metadata:
   title: Exercise - Optimize applications across regions by using performance routing
   description: In this hands-on exercise, you optimize applications across regions by using performance routing
-  ms.date: 04/15/2019
-  author: KumudD
-  ms.author: kumud
+  ms.date: 06/27/2023
+  author: greg-lindsay
+  ms.author: greglin
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Exercise - Optimize applications across regions by using performance routing
 interactive: bash
 azureSandbox: true

@@ -4,12 +4,12 @@ title: Exercise - Translate speech
 metadata:
   title: Exercise - Translate speech
   description: "Exercise - Translate speech"
-  ms.date: 12/09/2022
+  ms.date: 06/27/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
+  ms.service: cognitive-services
+  ms.subservice: speech-service
 labId: 96281
 labModal: true
 durationInMinutes: 30

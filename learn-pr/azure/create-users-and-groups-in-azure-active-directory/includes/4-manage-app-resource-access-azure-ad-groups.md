@@ -1,5 +1,4 @@
-
-You want to give the developers within your organization the same access. You also want to manage who is part of the developers' group and who isn't.
+You want to give the all developers within your organization the same access. You also want to manage who is part of the developers group and who isn't.
 
 Azure Active Directory (Azure AD) helps you to manage your cloud-based apps, on-premises apps, and resources by using your organization's groups. Your resources can be part of the Azure AD organization, like permissions to manage objects through roles. Or your resources can be external to the organization, like software as a service (SaaS) apps, Azure services, SharePoint sites, and on-premises resources.
 
@@ -18,4 +17,4 @@ There are different ways you can assign access rights:
 - **Group assignment**: Assign a group the required access rights, and members of the group will inherit those rights.
 - **Rule-based assignment**: Use rules to determine a group membership based on user or device properties. For a user account or device's group membership to be valid, the user or device must meet the rules. If the rules aren't met, the user account or device's group membership is no longer valid. The rules can be simple. You can select prewritten rules or write your own advanced rules.
 
-In the next unit, we assign users to an Azure AD group and use rule-based assignment to automatically manage their group membership.
+In the next unit, we'll assign users to an Azure AD group and use rule-based assignment to automatically manage their group membership.

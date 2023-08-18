@@ -4,10 +4,9 @@ metadata:
   title: Train and evaluate clustering models
   description: "Clustering is a kind of machine learning that is used to group similar items into clusters."
   ms.date: 01/04/2021
-  author: TomReidNZ
-  ms.author: jasdeb
+  author: s-polly
+  ms.author: scottpolly
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Train and evaluate clustering models
 summary: Clustering is a kind of machine learning that is used to group similar items into clusters.
 abstract: |

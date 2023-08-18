@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.microservices-aspnet-core.3-deploy-application
+metadata:
+  title: Exercise - Deploy the application
+  description: Deploy the starter sample application and review the code directories in the project.
+  ms.date: 05/27/2020
+  author: camsoper
+  ms.author: casoper
+  ms.manager: markl
+  ms.topic: interactive-tutorial
+  ms.prod: aspnet-core
+title: Exercise - Deploy the application
+durationInMinutes: 5
+content: |
+  [!include[](includes/3-deploy-application.md)]

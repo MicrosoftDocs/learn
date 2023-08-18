@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Examine Device Provisioning Service coding tools and access
 summary: This module introduces you to the Device Provisioning Service SDKs, Azure CLI support for DPS, and how to control access to the service.
 abstract: |

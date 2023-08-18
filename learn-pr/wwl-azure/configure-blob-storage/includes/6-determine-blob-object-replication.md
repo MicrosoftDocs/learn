@@ -1,3 +1,4 @@
+
 Object replication copies blobs in a container asynchronously according to policy rules that you configure. During the replication process, the following contents are copied from the source container to the destination container:
 - The blob contents
 - The blob metadata and properties

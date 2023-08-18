@@ -5,9 +5,12 @@ metadata:
   description: Summary
   author: camsoper
   ms.author: casoper
+  ms.manager: markl
   ms.date: 05/12/2021
   ms.prod: aspnet-core
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
 title: Summary
 durationInMinutes: 2
 content: |

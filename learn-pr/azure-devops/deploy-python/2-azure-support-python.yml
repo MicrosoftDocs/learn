@@ -8,7 +8,9 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-python
 durationInMinutes: 7
 content: |
   [!include[](includes/2-azure-support-python.md)]

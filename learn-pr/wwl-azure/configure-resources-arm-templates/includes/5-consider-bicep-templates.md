@@ -4,7 +4,7 @@ You can use Bicep instead of JSON to develop your Azure Resource Manager templat
 
 **How does Bicep work?**
 
-When you deploy a resource or series of resources to Azure, you submit the Bicep template to Resource Manager, which still requires JSON templates. The tooling that's built into Bicep converts your Bicep template into a JSON template. This process is known as transpilation. Transpilation is the process of converting source code written in one language into another language.
+When you deploy a resource or series of resources to Azure, the tooling that's built into Bicep converts your Bicep template into a JSON template. This process is known as transpilation. Transpilation is the process of converting source code written in one language into another language.
 
 :::image type="content" source="../media/bicep.png" alt-text="Bicep templates are converted to JSON templates..":::
 

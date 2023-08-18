@@ -8,7 +8,7 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: Exercise - Deploy an application on your Azure Kubernetes Service cluster
 sandbox: false
 # interactive: bash

@@ -1,0 +1,44 @@
+### YamlMime:Module
+uid: learn.wwl.get-started-kusto-fabric
+metadata:
+  title: Get started with Real-Time Analytics in Microsoft Fabric
+  description: "Get started with Real-Time Analytics in Microsoft Fabric"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
+    - build-2023-fabric
+title: Get started with Real-Time Analytics in Microsoft Fabric
+summary: Analysis of real-time data streams is a critical capability for any modern data analytics solution. You can use the Real-Time Analytics capabilities of Microsoft Fabric to ingest, query, and process streams of data.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe Real-Time Analytics in Microsoft Fabric
+  - Create Real-Time Analytics databases and tables
+  - Use KQL to query tables
+prerequisites: |
+  Before starting this module, you should be familiar with Microsoft Fabric.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- data-analyst
+- data-engineer
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.get-started-kusto-fabric.introduction
+- learn.wwl.get-started-kusto-fabric.define-real-time-analytics
+- learn.wwl.get-started-kusto-fabric.describe-kusto-databases-tables
+- learn.wwl.get-started-kusto-fabric.write-queries-kusto-query-language
+- learn.wwl.get-started-kusto-fabric.exercise-use-kusto-query-data-onelake
+- learn.wwl.get-started-kusto-fabric.knowledge-check
+- learn.wwl.get-started-kusto-fabric.summary
+badge:
+  uid: learn.wwl.get-started-kusto-fabric.badge

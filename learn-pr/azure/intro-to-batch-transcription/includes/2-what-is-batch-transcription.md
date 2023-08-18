@@ -14,7 +14,7 @@ Batch Transcription provides automated transcription using AI. Batch Transcripti
 
 ## Our call-center scenario
 
-Let’s think back to our call-center scenario. You’ve been looking into Batch Transcription and have found it might be the solution you need. It can quickly and accurately transcribe huge amounts of audio data without poor audio quality or the variety of accents and dialects being a problem.
+Let’s think back to our call-center scenario. You’ve been looking into Batch Transcription and have found it might be the solution you need. It can quickly and accurately transcribe huge amounts of audio data without poor audio quality or the variety of accents and regional languages being a problem.
 
 You’ve also found that Batch Transcription can be integrated with other Azure services to enable analysis of your audio data. This information can then be used to improve business practices in a deeper way than simple transcription is designed to achieve.
 

@@ -1,4 +1,4 @@
-The Speech service is the unification of speech-to-text, text-to-speech and speech translation into a single Azure subscription. It's easy to speech enable your applications, tools and devices with the Speech CLI, Speech SDK, Speech Devices SDK, Speech Studio, or REST APIs.
+The Speech service is the unification of speech to text, text to speech and speech translation into a single Azure subscription. It's easy to speech enable your applications, tools and devices with the Speech CLI, Speech SDK, Speech Devices SDK, Speech Studio, or REST APIs.
 
 ## Speech recognition
 

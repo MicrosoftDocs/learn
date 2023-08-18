@@ -1,19 +1,37 @@
-In this unit, you'll complete the following tasks:
+In this unit, you complete the following tasks:
 
-- Create a GitHub Action to implement a build pipeline
-- Modify the coupon service code to trigger the build workflow
-- Monitor the build workflow's progress in real time
-- Update a failing unit test to fix the build
+- Create a GitHub action to implement a build pipeline.
+- Modify the coupon service code to trigger the build workflow.
+- Monitor the build workflow's progress in real time.
+- Update a failing unit test to fix the build.
 
 ## Create the build action
 
-Create a GitHub Action for the build with the following steps:
+ The YAML code in this procedure defines a GitHub action that:
 
-1. Select the **:::no-loc text="Actions":::** tab in your repository and select the **:::no-loc text="set up a workflow yourself":::** link:
+- Triggers when a commit is pushed to the coupon service's source code or unit tests in the `main` branch.
+- Defines step-specific .NET Core CLI environment variables. For example, the `Run unit tests` step defines `DOTNET_CLI_TELEMETRY_OPTOUT` and `DOTNET_NOLOGO` environment variables to opt out of usage data collection and suppress the first-run telemetry message.
+- Has one *job*, or set of steps that execute on the same workflow runner, named `build-and-push-docker-image`.
 
-    :::image type="content" source="../media/4-build-github-action/set-up-custom-github-workflow.png" alt-text="Actions tab in the GitHub repository, highlighting the workflow creation link" border="true" lightbox="../media/4-build-github-action/set-up-custom-github-workflow.png":::
+The `build-and-push-docker-image` job in the GitHub action takes the following steps:
 
-1. Replace the YAML in the editor with the following YAML:
+- Executes the xUnit tests for the coupon service.
+- Builds the Docker image and pushes it to a private Azure Container Registry instance used for the modified coupon container image. You don't have permission to modify the Microsoft-owned container registry for the original image.
+- Runs three steps in an `ubuntu-latest` runner, two of which use the following actions available from the [GitHub Actions Marketplace](https://github.com/marketplace?type=actions):
+  - `Get code from the repository` uses the `actions/checkout@v1` action to check out the `main` branch.
+  - `Build and push Docker image` uses the `docker/build-push-action@v1.1.0` action to build the container image and push it to Container Registry.
+
+> [!IMPORTANT]
+> Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple in this example. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice would be kept in a separate repository.
+
+Complete the following steps to create the GitHub Actions build action:
+
+1. In your forked repository, select the **:::no-loc text="Actions":::** tab.
+1. On the **:::no-loc text="Get started with GitHub Actions":::** page, select the **:::no-loc text="set up a workflow yourself":::** link.
+
+    :::image type="content" source="../media/4-build-github-action/set-up-custom-github-workflow.png" alt-text="Screenshot that shows the Actions tab in the GitHub repository, highlighting the workflow creation link." lightbox="../media/4-build-github-action/set-up-custom-github-workflow.png":::
+
+1. On the next page, paste the following YAML code into the editor.
 
     ```yaml
     name: eShop build
@@ -53,84 +71,62 @@ Create a GitHub Action for the build with the following steps:
             push: true
     ```
 
-    The preceding YAML defines a GitHub Action that:
+1. Replace the default workflow **:::no-loc text="main.yml":::** file name with *:::no-loc text="build.yml":::*, and then select **:::no-loc text="Commit changes":::**.
 
-    - Is triggered when a commit is pushed to the coupon service's source code or unit tests in the `main` branch.
-    - Defines step-specific environment variables. For example, the `Run unit tests` step defines `DOTNET_CLI_TELEMETRY_OPTOUT` and `DOTNET_NOLOGO`. With regards to the .NET Core CLI, those environment variables opt out of usage data collection and suppress the first-run telemetry message, respectively.
-    - Has one job&mdash;a set of steps that execute on the same workflow runner&mdash;named `build-and-push-docker-image`. The job:
-        - Executes the xUnit tests for the coupon service.
-        - Builds the Docker image and pushes it to an ACR instance. ACR is a private container registry used for the modified coupon container image. You don't have permission to modify the Microsoft-owned container registry from which the original image was retrieved.
-        - Runs in an `ubuntu-latest` runner and has three steps, two of which use actions available from the [GitHub Actions marketplace](https://github.com/marketplace?type=actions):
-            - `Get code from the repository` uses the `actions/checkout@v1` action to check out the `main` branch.
-            - `Build and push Docker image` uses the `docker/build-push-action@v1.1.0` action to build the container image and push it to ACR.
+    :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="Screenshot of the GitHub action file name text box and Commit changes button." lightbox="../media/4-build-github-action/action-file-name.png":::
 
-    > [!IMPORTANT]
-    > Trigger conditions and other artifacts of GitHub Actions or workflows depend on the apps and environments. For ease of understanding, details are kept simple here. Both the build and the deploy workflows are scoped to coupon service changes because all the microservices are kept under a single repository. In an actual production scenario, each microservice is kept in a separate repository.
+1. On the **:::no-loc text="Commit changes":::** screen, select **:::no-loc text="Commit directly to the main branch":::** and then select **:::no-loc text="Commit changes":::**.
 
-1. Replace the default workflow file name of *:::no-loc text="main.yml":::* with *:::no-loc text="build.yml":::*:
+You've finished creating the build workflow for your CI/CD pipeline.
 
-    :::image type="content" source="../media/4-build-github-action/action-file-name.png" alt-text="GitHub Action file name text box." border="true" lightbox="../media/4-build-github-action/action-file-name.png":::
+## Trigger the build
 
-1. Select the **:::no-loc text="Start commit":::** button, select the **:::no-loc text="Commit directly to the `main` branch":::** radio button, and select **:::no-loc text="Commit new file":::** to save the workflow file.
+The Marketing department wants to start a campaign to track discount code usage, so they can better understand which discount codes are the most effective in boosting sales. To support this campaign, make the following changes in the code.
 
-## Trigger a build
+1. In your forked repository, select the **:::no-loc text="Code":::** tab, and navigate to and open the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file.
+1. Select the edit icon to open the file for editing.
 
-You've finished creating the build workflow for your CI/CD pipeline. The Marketing department wants to start a campaign to better track discount code usage. With this feature, Marketing can better understand which discount codes are most effective in boosting sales. To support this feature, make the following changes in the `main` branch:
+   :::image type="content" source="../media/4-build-github-action/edit-file-icon.png" alt-text="Screenshot of the GitHub edit file icon." lightbox="../media/4-build-github-action/edit-file-icon.png":::
 
-1. Select the **:::no-loc text="Code":::** tab in your fork of the repository.
-1. Select the edit icon to open the *:::no-loc text="src/Services/Coupon/Coupon.API/Controllers/CouponController.cs":::* file in the editor:
+1. Near the end of the file, replace the comment `// Add LogInformation call` with the following code that logs the discount code being applied.
 
-    :::image type="content" source="../media/4-build-github-action/edit-file-icon.png" alt-text="GitHub edit file icon." border="true" lightbox="../media/4-build-github-action/edit-file-icon.png":::
+   ```csharp
+   _logger.LogInformation("Applying coupon {CouponCode}", code);
+   ```
 
-1. Replace the comment `// Add LogInformation call` with the following code:
+1. Select **:::no-loc text="Commit changes":::**, select the **:::no-loc text="Commit directly to the main branch":::** radio button, and then select **:::no-loc text="Commit changes":::** again.
 
-    ```csharp
-    _logger.LogInformation("Applying coupon {CouponCode}", code);
-    ```
-
-    The preceding code logs the discount code being applied.
-1. Select the **:::no-loc text="Commit directly to the `main` branch":::** radio button and select the **:::no-loc text="Commit changes":::** button.
-
-    The build workflow is triggered automatically.
+   The build workflow triggers automatically.
 
 ## Monitor the build
 
-View the real-time progress of the build by completing the following steps:
+To view the real-time progress of the build:
 
-1. Select the **:::no-loc text="Actions":::** tab.
-1. Select the most recent workflow run listed for the **:::no-loc text="eShop build":::** workflow. The commit message used in the previous step becomes the run's name.
+1. In your repository, select the **:::no-loc text="Actions":::** tab.
+1. Select the most recent workflow run listed for the **:::no-loc text="eShop build":::** workflow. The name of the run is the commit message you used in the previous step.
 
-    :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="Screenshot that shows e Shop build selected on the workflows page." border="true" lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
+   :::image type="content" source="../media/4-build-github-action/eshop-build-workflow.png" alt-text="Screenshot that shows the most recent eShop build on the workflows page." lightbox="../media/4-build-github-action/eshop-build-workflow.png":::
 
 1. Select the **:::no-loc text="build-and-push-docker-image":::** task.
-1. Wait a few minutes. Notice that:
+1. Wait a few minutes. Observe that the build fails on the `Run unit tests` step, and the `Build and push Docker image` step doesn't run because the previous step failed.
 
-    - The build fails on the `Run unit tests` step.
-    - The `Build and push Docker image` step doesn't run because the previous step failed.
-
-    :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="Screenshot that shows build and push docker image selected, and a failed check next to Run unit tests in the workflow steps." border="true" lightbox="../media/4-build-github-action/failed-unit-tests.png":::
+   :::image type="content" source="../media/4-build-github-action/failed-unit-tests.png" alt-text="Screenshot that shows build and push docker image selected, and a failure next to Run unit tests in the workflow steps." lightbox="../media/4-build-github-action/failed-unit-tests.png":::
 
 ## Fix the build
 
-1. From the **:::no-loc text="Code":::** tab, edit the *:::no-loc text="tests/Services/Coupon/Coupon.API.Tests/Controllers/CouponControllerTests.cs":::* file. In the *:::no-loc text="CouponControllerTests.cs":::* file, notice that `Assert.True(false);` causes the unit test to fail. Replace that line with the following code:
+1. From the **:::no-loc text="Code":::** tab, open the *:::no-loc text="tests/Services/Coupon/Coupon.API.Tests/Controllers/CouponControllerTests.cs":::* file for editing.
+1. The `Assert.True(false);` line causes the unit test to fail. Change that line to `Assert.True(true);`, and commit the change.
 
-    ```csharp
-    Assert.True(true);
-    ```
+   This edit causes the test to always pass. This test is for illustrative purposes only. Real tests should test actual functionality.
 
-    The preceding code causes the test to always pass. This test is for illustrative purposes only. Real tests should test actual functionality.
-1. Commit and push this change to the `main` branch.
+1. The build workflow triggers automatically. When the build completes successfully, all steps are prefixed with a check mark. Expand any task to show the output generated during its execution, as in the following example:
 
-    The build workflow is triggered automatically.
-
-When the build completes successfully, all steps are prefixed with a green check mark. Expand any task for the output generated during its execution. For example:
-
-:::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="page showing output for a successful build." border="true" lightbox="../media/4-build-github-action/build-workflow-success.png":::
+   :::image type="content" source="../media/4-build-github-action/build-workflow-success.png" alt-text="Screenshot showing output for a successful build." lightbox="../media/4-build-github-action/build-workflow-success.png":::
 
 > [!NOTE]
-> It's possible to move the `dotnet test` command to the *:::no-loc text="Dockerfile":::*. In this example, you're running `dotnet test` in the GitHub Action to:
+> You could move the `dotnet test` command to the *:::no-loc text="Dockerfile":::*. This example runs `dotnet test` in GitHub Actions so you can:
 >
-> - Understand how to execute .NET Core CLI commands in GitHub Actions.
+> - Understand how to run .NET Core CLI commands in GitHub Actions.
 > - Understand how the failure of a step can prevent execution of the remaining build steps.
 
-In this unit, you created a GitHub Action to build the coupon service. You added logging to the coupon service and saw how committing that code triggered the build workflow. Next, you fixed a failing unit test and triggered the build again. Finally, you learned how to monitor the build's progress in real time.
+In this unit, you used GitHub Actions to build the coupon service. You added logging to the coupon service, and saw how committing that code triggered the build workflow. You learned how to monitor the build's progress in real time. Finally, you fixed a failing unit test and triggered a successful build.

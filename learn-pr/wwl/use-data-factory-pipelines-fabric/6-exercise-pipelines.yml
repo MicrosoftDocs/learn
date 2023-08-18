@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.use-data-factory-pipelines-fabric.exercise-pipelines
+title: Exercise - Ingest data with a pipeline
+metadata:
+  title: Exercise - Ingest data with a pipeline
+  description: "Exercise - Ingest data with a pipeline"
+  ms.date: 05/10/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - build-2023
+  ms.prod: learning-azure
+durationInMinutes: 60
+content: |
+  [!include[](includes/6-exercise-pipelines.md)]

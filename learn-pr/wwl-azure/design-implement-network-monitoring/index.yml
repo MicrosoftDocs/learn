@@ -2,16 +2,15 @@
 uid: learn.wwl.design-implement-network-monitoring
 metadata:
   title: Design and implement network monitoring
-  description: "You will learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher."
-  ms.date: 10/17/2022
+  description: "You learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher."
+  ms.date: 04/28/2023
   author: wwlpublish
   ms.author: jileary
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Design and implement network monitoring
-summary: You will learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher.
+summary: You learn to design and implement network monitoring solutions such as Azure Monitor and Network watcher.
 abstract: |
-  At the end of this module, you will be able to:
+  At the end of this module, you are able to:
   - Configure network health alerts and logging by using Azure Monitor
   - Create and configure a Connection Monitor instance
   - Configure and use Traffic Analytics

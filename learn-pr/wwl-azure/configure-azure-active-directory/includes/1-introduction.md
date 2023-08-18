@@ -1,5 +1,6 @@
 
 
+
 Transitioning workloads to the cloud involves more than just moving servers, websites, and data. Companies need to think about how to secure their resources and identify authorized users.
 
 In this module, your company is planning to implement Azure Active Directory (Azure AD) and features like Azure AD Join and Self-Service Password Reset. You need to understand how to choose the Azure AD edition that works best for your organization, and explore how to implement required features.

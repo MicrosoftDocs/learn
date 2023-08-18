@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: applied-ai-services
+  ms.subservice: forms-recognizer 
 title: Use prebuilt Form Recognizer models
 summary: Learn what data you can analyze by choosing prebuilt Forms Analyzer models and how to deploy these models in a Form Analyzer solution.
 abstract: |
@@ -23,8 +24,8 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
-- azure-form-recognizer
+- document-intelligence
+- ai-services
 subjects:
 - artificial-intelligence
 units:

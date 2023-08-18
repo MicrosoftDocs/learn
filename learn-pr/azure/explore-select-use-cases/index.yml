@@ -7,7 +7,6 @@ metadata:
   author: softchris
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Explore the art of selecting use cases for winning Autonomous AI
 summary: In this module, you'll learn how to identify use cases that are a good fit to be solved using Machine Teaching for Autonomous AI.
 abstract: | 
@@ -15,7 +14,7 @@ abstract: |
   - Select use cases for Autonomous AI
   - Evaluate scenarios where you can use Autonomous AI
 
-  "***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***"
+  "***Produced in partnership with the University of Oxford – Ajit Jaokar Artificial Intelligence: Cloud and Edge Implementations course***"
 prerequisites: | 
   - Basic knowledge of Automated Intelligence
   - Basic knowledge of Autonomous Intelligence

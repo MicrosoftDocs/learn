@@ -10,3 +10,4 @@ To learn more about Azure Site Recovery, see the following articles:
 - [VMware disaster recovery overview](/azure/site-recovery/vmware-azure-about-disaster-recovery)
 - [Hyper-V to Azure disaster recovery architecture](/azure/site-recovery/hyper-v-azure-architecture)
 - [Physical server to Azure disaster recovery architecture](/azure/site-recovery/physical-azure-architecture)
+- [Protect your on-premises infrastructure from disasters with Azure Site Recovery](/training/modules/protect-on-premises-infrastructure-with-azure-site-recovery/)

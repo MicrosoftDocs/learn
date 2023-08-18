@@ -4,10 +4,12 @@ title: Get started with .NET Libraries
 metadata:
   title: Get started with .NET Libraries
   description: "Get started with .NET Libraries"
-  ms.date: 02/24/2023
+  ms.date: 05/05/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-dotnet
   ms.prod: learning-azure
 durationInMinutes: 6
 content: |

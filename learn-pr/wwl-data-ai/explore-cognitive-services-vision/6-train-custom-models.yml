@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-cognitive-services-vision.train-custom-models
+title: Train custom models with Image Analysis 4.0
+metadata:
+  title: Train custom models with Image Analysis 4.0
+  description: "Image Analysis 4.0 enables developers to train custom image classification and object detection models with training images unique to their specific use case, lowering costs and time to deliver models that match individual business demands at high precision and with just a handful of images."
+  ms.date: 08/10/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: cognitive-services
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-train-custom-models.md)]

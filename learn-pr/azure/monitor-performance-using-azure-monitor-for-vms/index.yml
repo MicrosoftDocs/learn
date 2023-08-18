@@ -4,15 +4,16 @@ title: Monitor performance of virtual machines by using Azure Monitor VM Insight
 metadata:
   description: Learn how to use Azure Monitor VM Insights to monitor your organization's Azure virtual machines.
   title: Monitor the performance of virtual machines using Azure Monitor VM Insights
-  author: sbkuehn
-  ms.author: shkuehn
-  ms.prod: learning-azure
+  author: guywi-ms
+  ms.author: guywild
   ms.topic: interactive-tutorial
   ms.date: 10/10/2022
   ms.custom:
   - team=cloud_advocates
   ms.contributors:
   - shkuehn-12042020
+  ms.service: azure-monitor
+  ms.subservice: insights
 summary: Deploy monitoring for workloads on virtual machines. Set up a log analytics workspace, onboard virtual machines to Azure Monitor VM Insights, and build log queries by using Kusto Query Language.
 abstract: |
   - Evaluate Azure Monitor Logs and Azure Monitor VM Insights.

@@ -1,6 +1,8 @@
 
 
 
+
+
 As you continue your development work for a logistics company, you will be building a series of small applications.  Combined, the applications take data from one partner's system, modify the data, then pass it to an internal system in the format it requires.
 
 To perform this transformation on the data, you'll need to accept incoming data as a string, parse it into smaller data elements, then manipulate it to match a different format. But how can you parse the string data into smaller data elements?

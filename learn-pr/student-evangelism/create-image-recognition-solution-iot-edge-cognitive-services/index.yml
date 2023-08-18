@@ -7,8 +7,8 @@ metadata:
   author: leestott
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure-iot-edge
   ms.custom: team=nextgen
+  ms.service: iot-edge
 title: "Create an image recognition solution with Azure IoT Edge and Azure Cognitive Services"
 summary: "Create a computer vision solution on the IoT Edge using Azure Cognitive Services and Azure Speech Services. The application will capture and identify scanned item and convert the name of the item to the speech."
 abstract: |
@@ -17,7 +17,7 @@ abstract: |
     - Deploy your solution to the IoT Edge using VS Code
     - Verify a module that running successfully
 
-    ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+    ***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***
 prerequisites: |
     - Basic knowledge of IoT Edge
     - Basic knowledge of Cognitive Services

@@ -2,6 +2,7 @@
 
 
 
+
 Code challenges in this module are used to reinforce what you've learned and help you gain some confidence before continuing on.
 
 ## Try-Catch challenge

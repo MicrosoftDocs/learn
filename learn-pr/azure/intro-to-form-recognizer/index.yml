@@ -8,7 +8,8 @@ metadata:
   ms.author: lajanuar
   manager: nitinme
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: applied-ai-services
+  ms.subservice: forms-recognizer 
 title: Introduction to Form Recognizer 
 summary: Form Recognizer enables automated data identification and extraction from your documents. You can use a programming language SDK or the REST API to easily retrieve and utilize your data.
 abstract: |
@@ -28,8 +29,8 @@ roles:
 - student
 products:
 - azure
-- azure-cognitive-services
-- azure-form-recognizer
+- ai-services
+- document-intelligence
 subjects:
 - classification-analysis
 units:

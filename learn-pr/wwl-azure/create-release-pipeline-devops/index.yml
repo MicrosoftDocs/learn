@@ -3,11 +3,13 @@ uid: learn.wwl.create-release-pipeline
 metadata:
   title: Create a release pipeline
   description: "Create a release pipeline"
-  ms.date: 12/09/2022
+  ms.date: 06/28/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.prod: azure
+  ms.service: azure-devops-pipelines
+  ms.subservice: azure-devops-pipelines-release
 title: Create a release pipeline
 summary: This module describes Azure Pipelines capabilities, build and release tasks.
 abstract: |
@@ -15,7 +17,8 @@ abstract: |
   *   Explain the terminology used in Azure DevOps and other Release Management Tooling
   *   Describe what a Build and Release task is, what it can do, and some available deployment tasks
   *   Implement release jobs
-prerequisites: ""
+prerequisites: |
+  None
 iconUrl: /training/achievements/1-create-a-release-pipeline.svg
 levels:
 - advanced

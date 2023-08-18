@@ -3,11 +3,11 @@ uid: learn.languages.csharp-code-blocks
 metadata:
   title: Control variable scope and logic using code blocks in C#
   description: "Use code blocks with more confidence, understanding how they impact the visibility and accessibility of both higher and lower-level constructs in your code."
-  ms.date: 02/24/2023
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.devlang: csharp
 title: Control variable scope and logic using code blocks in C#
 summary: Use code blocks with more confidence, understanding how they impact the visibility and accessibility of both higher and lower-level constructs in your code.
 abstract: |
@@ -24,9 +24,11 @@ levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
+- student
 products:
 - dotnet
-- dotnet-framework
 - vs-code
 subjects:
 - development-tools
