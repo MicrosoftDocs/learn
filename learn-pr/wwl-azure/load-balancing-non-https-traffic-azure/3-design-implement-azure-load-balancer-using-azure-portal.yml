@@ -35,7 +35,7 @@ quiz:
       explanation: "Correct, Standard SKU supports outbound rules through declarative outbound NAT configuration."
     - content: "Basic"
       isCorrect: false
-      explanation: "Incorrect, Basic SKU does not support outbound rules."
+      explanation: "Incorrect, Basic SKU doesn't support outbound rules."
     - content: "Either Standard or Basic"
       isCorrect: false
-      explanation: "Incorrect, Basic SKU does not support outbound rules."
+      explanation: "Incorrect, Basic SKU doesn't support outbound rules."
