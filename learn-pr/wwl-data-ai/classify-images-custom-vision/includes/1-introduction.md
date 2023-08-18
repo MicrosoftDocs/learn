@@ -1,4 +1,4 @@
-Image classification is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real-world items based on images.
+*Image classification* is a common workload in artificial intelligence (AI) applications. It harnesses the predictive power of machine learning to enable AI systems to identify real-world items based on images.
 
 ## Uses of image classification
 
@@ -9,8 +9,8 @@ Some potential uses for image classification include:
 - **Medical diagnosis**: evaluating images from X-ray or MRI devices could quickly classify specific issues found as cancerous tumors, or many other medical conditions related to medical imaging diagnosis.
 
 ## Learning objectives 
-Learn how to use the Custom Vision service to create an image classification solution. In this module you will: 
+Learn how to use Azure AI Custom Vision service to create an image classification solution. In this module you will: 
 - Identify image classification scenarios and technologies
-- Provision a Custom Vision resource and use the Custom Vision portal 
+- Provision a Azure AI Vision resource and use the Custom Vision portal 
 - Train an image classification model
 - Publish and consume an image classification model

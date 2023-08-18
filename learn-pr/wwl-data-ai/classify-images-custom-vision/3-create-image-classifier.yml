@@ -4,13 +4,12 @@ title: Exercise - Explore image classification
 metadata:
   title: Exercise - Explore image classification
   description: "Exercise - Explore image classification"
-  ms.date: 01/27/2023
-  author: benjiang
-  ms.author: gmalc
+  ms.date: 08/18/2023
+  author: wwlpublish
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: custom-vision
 durationInMinutes: 25
 content: |
   [!include[](includes/3-create-image-classifier.md)]

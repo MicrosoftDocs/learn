@@ -4,13 +4,12 @@ title: Understand classification
 metadata:
   title: Understand classification
   description: "Understand classification"
-  ms.date: 01/27/2023
+  ms.date: 08/18/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: custom-vision
 durationInMinutes: 3
 content: |
   [!include[](includes/1a-overview-classification.md)]
