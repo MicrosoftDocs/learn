@@ -25859,6 +25859,11 @@
       "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/1-introduction.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/2-compare-authentication-authorization.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
