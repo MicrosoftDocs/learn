@@ -57,9 +57,6 @@ When you use Triton Inference Server in Azure Machine Learning, Triton will opti
 
 Triton supports most machine-learning frameworks like TensorFlow, PyTorch, and ONNX Runtime. Triton does however, require a specific model repository structure to understand the necessary model details. 
 
-> [!NOTE]
-> Learn more about [creating the appropriate folder structure for your model](https://github.com/triton-inference-server/server/blob/main/docs/model_repository.md#model-files).
-
 A quick and easy way to deploy your model with Triton is by using the no-code deployment in Azure Machine Learning. If you use no-code deployment, you don't need to specify the scoring script or environment when creating the endpoint, as you'll use the Triton server after the model is deployed to help you with real-time inferencing. 
 
 To use Triton for real-time inferencing, set `model_format` to Triton. You can configure the model format in the YAML file when using the `az ml model create` command when you work with the CLI (v2).
