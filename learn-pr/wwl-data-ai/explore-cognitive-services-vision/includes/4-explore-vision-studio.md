@@ -1,10 +1,10 @@
 ## What is Vision Studio?
 
-Vision Studio is Azure Computer Vision's newest tool, which provides a unified portal experience for exploring, building, and integrating functionality from Image Analysis 4.0 using a set of UI-based components. The platform features a host of demo experiences accessible from a web browser. It allows developers to explore and interact with existing Vision capabilities to understand how specific operations work.
+Vision Studio is Azure AI Vision's newest tool, which provides a unified portal experience for exploring, building, and integrating functionality from Image Analysis 4.0 using a set of UI-based components. The platform features a host of demo experiences accessible from a web browser. It allows developers to explore and interact with existing Vision capabilities to understand how specific operations work.
 
 ![Screenshot of the Get started with Vision page of Vision Studio, with the tiles of featured capabilities selected.](../media/04-vision-studio.png)
 
-Using Studio, you can experiment with the services and learn what they offer without writing any code. To use [Vision Studio](https://portal.vision.cognitive.azure.com/), you need an Azure subscription for authentication and a Cognitive Services resource to begin.
+Using Studio, you can experiment with the services and learn what they offer without writing any code. To use [Vision Studio](https://portal.vision.cognitive.azure.com/), you need an Azure subscription for authentication and an Azure AI services resource to begin.
 
 ## Try-it-out experiences
 
