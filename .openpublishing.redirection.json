@@ -25829,6 +25829,11 @@
       "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/3-prevent-changes-resource-locks.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/4-protect-storage-account-resource-lock.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
