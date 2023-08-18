@@ -40,7 +40,7 @@ Select the **Cloud Shell** icon (>_) to create a new Azure Cloud Shell session. 
 
 ### Directories and subscriptions
 
-Select the **book and filter** icon to show the **Directories + subscriptions** pane.
+Select the book and filter icon to show the **Directories + subscriptions** pane.
 
 In some cases, you may have access to more than one Azure subscription. The **Directory + subscription** pane lets you change the subscription you're working in, or change to a different directory.
 
@@ -52,7 +52,7 @@ Selecting the bell icon displays the **Notifications** pane. This pane lists the
 
 ### Settings
 
-Select the **gear** icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings for:
+Select the gear icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings for:
 
 - Inactivity sign out delay
 - Default view when you first sign in
@@ -64,7 +64,7 @@ Select the **gear** icon to change the Azure portal settings. In the tabs at the
 
 ### Help pane
 
-Select the **question mark** icon to show the **Help** pane. This pane includes several sections you can access, depending on what type of help you need:
+Select the question mark icon to show the **Help** pane. This pane includes several sections you can access, depending on what type of help you need:
 
 - **Service health**: Displays information about the status of various Azure services.
 - **Support resources**: Provides links to read official documentation, find answers from the Azure community, or explore other helpful resources.

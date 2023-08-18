@@ -4,7 +4,7 @@ Let's look at some of the more common areas you'll typically use in the Azure po
 
 1. In the top left-hand corner of the Azure portal, select the **Show portal menu** icon.
 
-   :::image type="content" source="../media/5-show-portal-icon.png" alt-text="Screenshot of the Show portal menu option in the Azure portal.":::.
+   :::image type="content" source="../media/5-show-portal-icon.png" alt-text="Screenshot of the Show portal menu option in the Azure portal.":::
 
    Selecting this icon expands the portal menu on the left-hand side of the screen.
 
@@ -74,7 +74,7 @@ The Azure Cloud Shell is available in the Sandbox environment that we're using f
 
 ![Icon representing the settings option on the global control menu in the Azure portal.](../media/5-settings-icon.png)
 
-1. Select the **Settings** (cog) icon to open the **Portal settings** pane. The **Directories + subscriptions** section is shown by default.
+1. Select the **Settings** (gear) icon to open the **Portal settings** pane. The **Directories + subscriptions** section is shown by default.
 
 1. Select the **Signing out + notifications** tab at the left. In the **Sign me out when inactive** drop-down menu, select **After one hour**.
 
