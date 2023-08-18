@@ -22,11 +22,17 @@ When using a `Console.ReadLine()` statement to obtain user input, it's common pr
 
 ```csharp
 string? readResult;
-Console.WriteLine("Enter your name:");
+Console.WriteLine("Enter a string:");
 do
 {
     readResult = Console.ReadLine();
-} while (readResult != null)
+} while (readResult != null) 
+```
+
+The Boolean expression evaluated by the `while` statement can be used to help validate user input. For example, if a prompt asks the user to enter a string that includes at least three characters, the following expression could be used:
+
+```csharp
+while (readResult.Length < 3);
 ```
 
 The `Console.ReadLine()` statement returns a string value. If you want to use `ReadLine()` input as numeric values, you need to convert the string value to a numeric type.
