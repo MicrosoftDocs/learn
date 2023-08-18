@@ -39,7 +39,6 @@ products:
 subjects:
 - infrastructure
 units:
-- learn.azure.build-cloud-governance-strategy-azure.1-introduction
 - learn.azure.build-cloud-governance-strategy-azure.4-control-access-azure-rbac
 - learn.azure.build-cloud-governance-strategy-azure.5-prevent-changes-resource-locks
 - learn.azure.build-cloud-governance-strategy-azure.6-protect-storage-account-resource-lock
