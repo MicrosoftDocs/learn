@@ -4,39 +4,40 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/25/2023
+  ms.date: 08/18/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.prod: azure
+  ms.service: artificial-intelligence
+  ms.subservice: vision
 durationInMinutes: 2
 quiz:
+  title: "Check your knowledge"
   questions:
-  - content: "You want to use the Computer Vision service to analyze images. You also want to use the Language service to analyze text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
+  - content: "You want to use the Azure AI Vision service to analyze images. You also want to use the Azure AI Language service to analyze text. You want developers to require only one key and endpoint to access all of your services. What kind of resource should you create in your Azure subscription?"
     choices:
-    - content: "Computer Vision"
+    - content: "Azure AI Vision"
       isCorrect: false
-      explanation: "Incorrect. This resource type only supports image analysis. A separate Language resource (with its own key and endpoint) would be required for text analytics."
-    - content: "Cognitive Services"
+      explanation: "Incorrect. This resource type only supports image analysis. A separate Azure AI Language resource (with its own key and endpoint) would be required for text analytics."
+    - content: "Azure AI services"
       isCorrect: true
-      explanation: "Correct. A Cognitive Services resource supports both Computer Vision and Language."
-    - content: "Custom Vision"
+      explanation: "Correct. An Azure AI Services resource supports both Azure AI Vision and Azure AI Language."
+    - content: "Azure AI Custom Vision"
       isCorrect: false
-      explanation: "Incorrect. The Custom Vision service is for image classification and object detection, and does not support image analysis or text analysis."
-  - content: "You want to use the Computer Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?"
+      explanation: "Incorrect. The Azure AI Custom Vision service is for image classification and object detection, and does not support image analysis or text analysis."
+  - content: "You want to use the Azure AI Vision service to identify the location of individual items in an image. Which of the following features should you retrieve?"
     choices:
     - content: "Objects"
       isCorrect: true
-      explanation: "Correct. Computer Vision returns objects with a bounding box to indicate their location in the image."
+      explanation: "Correct. Azure AI Vision returns objects with a bounding box to indicate their location in the image."
     - content: "Tags"
       isCorrect: false
       explanation: "Incorrect. Tags indicate the items in an image, but not their location."
     - content: "Categories"
       isCorrect: false
       explanation: "Incorrect. Categories provide suggested categorizations for the image as a whole, not individual items in it."
-  - content: "You want to use the Computer Vision service to analyze images of locations and identify well-known buildings. What should you do?"
+  - content: "You want to use the Azure AI Vision service to analyze images of locations and identify well-known buildings. What should you do?"
     choices:
     - content: "Retrieve the objects in the image."
       isCorrect: false
