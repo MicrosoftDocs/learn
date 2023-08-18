@@ -13,7 +13,7 @@ When you're starting out with Azure, you'll probably use the Azure portal most o
 
 The [Azure portal](https://portal.azure.com) is a public website you can access with any web browser. Once you sign in with your Azure account, you can create, manage, and monitor Azure services and resources. In the Azure portal, you can use search to find different types of services and get links for help on a topic. The Azure portal also guides you through complex administrative tasks using wizards and tooltips.
 
-:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot of the Azure portal Home page.":::
+:::image type="content" source="../media/2-azure-portal.png" alt-text="Screenshot of the Azure portal Home page." lightbox="../media/2-azure-portal.png":::
 
 The Azure portal is often the best interface for carrying out single tasks, or when you want to look at configuration options in detail.
 
@@ -54,7 +54,7 @@ az vm create \
 
 [Azure Cloud Shell](https://shell.azure.com/) is an interactive, authenticated, browser-accessible shell for managing Azure resources using scripting tools like Azure CLI or Azure PowerShell. You can choose the shell experience that best suits the way you work: Bash or PowerShell.
 
-:::image type="content" source="../media/2-cloud-shell.png" alt-text="Screenshot of an Azure Cloud Shell instance using Bash within a Microsoft Edge browser window." lightbox="../media/2-cloud-shell.png" :::
+:::image type="content" source="../media/2-cloud-shell.png" alt-text="Screenshot of an Azure Cloud Shell instance using Bash within a Microsoft Edge browser window.":::
 
 Both shells support Azure CLI and Azure PowerShell. Bash defaults to the Azure CLI (with the `az` command preinstalled), but you can switch to PowerShell Core within Linux by typing `pwsh`.
 
