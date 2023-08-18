@@ -34,20 +34,20 @@ quiz:
     choices:
     - content: 'What are the component parts?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
     - content: 'What are the dependencies?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
     - content: 'What was the past performance?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
     - content: 'Who are the stakeholders?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
     - content: 'How did it get to production?'
       isCorrect: false
-      explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'All of the above'
+      explanation: 'We definitely need to know this, but operational awareness requires more information.'
+    - content: 'All of these'
       isCorrect: true
       explanation: 'Correct, operational awareness requires an understanding of all of the socio-technical aspects.'
 
@@ -59,9 +59,9 @@ quiz:
     - content: 'Dashboards'
       isCorrect: false
       explanation: 'Dashboards can help display information that assists with gaining operational awareness.'
-    - content: 'Azure CosmosDB'
+    - content: 'Azure Cosmos DB'
       isCorrect: true
-      explanation: 'Correct, CosmosDB is an excellent place to store data, but it is not directly useful for operational awareness.'
+      explanation: 'Correct, Cosmos DB is an excellent place to store data, but it is not directly useful for operational awareness.'
     - content: 'Azure Resource Graph Explorer'
       isCorrect: false
       explanation: 'Resource Graph Explorer provides a query environment that can show us exactly what resources we have in play.'
