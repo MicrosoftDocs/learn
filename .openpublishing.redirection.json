@@ -25784,6 +25784,11 @@
       "source_path": "learn-pr/wwl-azure/describe-features-tools-azure-for-governance-compliance/2-describe-purpose-of-azure-blueprints.md",
       "redirect_url": "https://learn.microsoft.com/training/modules/describe-features-tools-azure-for-governance-compliance",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/index.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
