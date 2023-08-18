@@ -56,7 +56,9 @@ az vm create \
 
 :::image type="content" source="../media/2-cloud-shell.png" alt-text="Screenshot of an Azure Cloud Shell instance using Bash within a Microsoft Edge browser window.":::
 
-Both shells support Azure CLI and Azure PowerShell. Bash defaults to the Azure CLI (with the `az` command pre-installed), but you can switch to PowerShell Core within Linux by typing `pwsh`. The PowerShell environment has both CLI tools pre-installed. The Cloud Shell has many additional developer tools available, such as text editors, source control tools, databases, and more.
+Both shells support Azure CLI and Azure PowerShell. Bash defaults to the Azure CLI (with the `az` command preinstalled), but you can switch to PowerShell Core within Linux by typing `pwsh`.
+
+ The Cloud Shell also has many other developer tools available, such as text editors, source control tools, databases, and more.
 
 You can access Azure Cloud Shell from within the Azure portal or by navigating to <https://shell.azure.com>.
 
@@ -78,7 +80,7 @@ The [Microsoft Azure mobile app](https://aka.ms/azuremobileapp/) allows you to a
 - Start, stop and restart virtual machines or web apps
 - Connect to your virtual machines
 - Manage permissions with role-based access control (RBAC)
-- Use the Azure Cloud Shell to run saved scripts or perform ad hoc administrative tasks
+- Use the Azure Cloud Shell to run saved scripts or perform administrative tasks
   :::column-end:::
 :::row-end:::
 

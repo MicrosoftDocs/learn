@@ -1,13 +1,13 @@
-Microsoft offers previews of Azure features for evaluation purposes. With *Azure Preview Features*, you can try out beta and other pre-release features and services.
+Microsoft offers previews of Azure features for evaluation purposes. With *Azure Preview Features*, you can try out prerelease features and services before they are rolled out to everyone.
 
-Some of the common areas you will see previews for include:
+Some common types of previews that you might see include:
 
 - New storage types
 - New Azure services, such as Machine Learning enhancements
 - New or enhanced integration with other platforms
 - New APIs for services
 
-Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Some previews are not covered by customer support.
+Azure feature previews are available under certain terms and conditions that are specific to each particular Azure preview. Some previews aren't covered by customer support.
 
 Once a feature has been evaluated and tested successfully, it might be released to customers as part of Azure's default product set. This release is referred to as **General Availability** (GA).
 
@@ -21,7 +21,7 @@ You can also find Azure preview features in the portal by searching for *Preview
 
 You can also try out upcoming functionality for the portal as a whole. To do so, use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com) (notice the **preview** prefix).
 
-Portal preview features typically offer performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you're using the preview portal.
+Portal preview features typically offer performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal is branded with **Microsoft Azure (Preview)** in the top bar, so you can tell you're using the preview portal.
 
 ## Provide feedback on preview features
 

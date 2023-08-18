@@ -6,9 +6,9 @@ In this unit, you'll learn how to create and find different types of resources i
 
 1. Once it's activated, sign in to the [Azure portal](https://portal.azure.com/learn.docs.microsoft.com?azure-portal=true). Make sure to use the same account with which you activated the sandbox.
 
-## Explore how to create resources with the Marketplace
+## Explore how to create resources
 
-Once you're logged into the Azure portal, we can start exploring how to create resources in Azure. We won't actually create any Azure resources in this exercise.
+Now let's start exploring how to create resources in Azure. We won't actually create any Azure resources in this exercise.
 
 1. On the home page, select **Create a resource**.
 

@@ -36,7 +36,7 @@ Let's create a new dashboard and add some tiles to it.
 
 1. From the Tile Gallery, drag the **Resource Groups** tile onto the workspace. Place it underneath the **All resources** tile.
 
-1. Frp, the Tile Gallery, select the **Metrics chart** tile, and drag it onto the workspace. Place it to the right of the **All resources** tile.
+1. From the Tile Gallery, select the **Metrics chart** tile, and drag it onto the workspace. Place it to the right of the **All resources** tile.
 
 1. Continue to add the following tiles, rearranging them to fit as needed:
 

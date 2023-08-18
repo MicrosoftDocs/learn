@@ -24,7 +24,7 @@ At the top of the dashboard are the controls that let you create, upload, edit, 
 
 At the top of the toolbar on the far left, next to the dashboard's name, is the dashboard selection drop-down control. Selecting this control lets you choose from dashboards that you have already defined for your account. This control makes it simple for you to switch between multiple dashboards for different purposes.
 
-Dashboards that you create will initially be private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We'll look at that option shortly.
+Dashboards that you create will initially be private; that is, only you can see them. To make a dashboard available across your enterprise, you need to share it. We'll explore that option later.
 
 ## Create a new dashboard
 

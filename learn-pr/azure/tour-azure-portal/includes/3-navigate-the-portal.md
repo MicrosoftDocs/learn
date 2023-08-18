@@ -49,7 +49,7 @@ Selecting the bell icon displays the **Notifications** pane. This pane lists the
 
 ### Settings
 
-Select the **gear** icon to change the Azure portal settings. In the tabs at the left, you'll find options such as:
+Select the **gear** icon to change the Azure portal settings. In the tabs at the left, there are multiple options that let you change settings for:
 
 - Inactivity sign out delay
 - Default view when you first sign in
@@ -67,7 +67,7 @@ Select the **question mark** icon to show the **Help** pane. This pane includes 
 - **Support resources**: Provides links to read official documentation, find answers from the Azure community, or explore other helpful resources.
 - **Help + support**: Lets you create a support request if you're having problems, or view existing requests.
 
-When you select **Help + support**, you'll see a link to  **Create a support request** near the top of the page. When you open a support request, you'll complete the form by using provided dropdown lists and text-entry fields. After you finish and submit the request, the Azure support team will investigate the issue, based on the details you provided.
+When you select **Help + support**, a link to  **Create a support request** appears near the top of the pane. When you select this link to open a support request, you complete the form by using provided dropdown lists and text-entry fields. After you finish and submit your request, the Azure support team will investigate the issue, based on the details you provided.
 
 ### Feedback pane
 
