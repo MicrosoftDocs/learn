@@ -20,12 +20,12 @@ quiz:
 
   - content: 'Which of the following is one of the eight aspects of reliability discussed in this unit?'
     choices:
-    - content: 'latency'
+    - content: 'Latency'
       isCorrect: true
       explanation: 'Correct, latency can be an important aspect of reliability to monitor.'
-    - content: 'consistency'
+    - content: 'Consistency'
       isCorrect: false
       explanation: 'Consistency could be an important thing to monitor but it was not one of the items in this unit.'
-    - content: 'repeatability'
+    - content: 'Repeatability'
       isCorrect: false
       explanation: 'Repeatability could be interesting to monitor under some circumstances, but it was not one of the items in this unit.'  

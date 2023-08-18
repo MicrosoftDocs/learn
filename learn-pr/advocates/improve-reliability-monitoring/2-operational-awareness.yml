@@ -20,34 +20,34 @@ quiz:
 
   - content: 'What is operational awareness?'
     choices:
-    - content: 'an understanding of the systems we have in production and how they are functioning'
+    - content: 'An understanding of the systems we have in production and how they are functioning'
       isCorrect: true
       explanation: "Correct, we can't begin to work on reliability if we don\\'t know what is actually running in production."
     - content: 'a comprehensive accounting for how much we are paying for our infrastructure'
       isCorrect: false
       explanation: 'Cost management is definitely important, but first we need to know what is running in production.'
-    - content: 'the process of training your staff to be able to operate your systems'
+    - content: 'The process of training your staff to be able to operate your systems'
       isCorrect: false
       explanation: 'Staff definitely have to understand your systems, but awareness is not just about the training process.'
 
   - content: 'When gaining operational awareness for an application, which of these questions do we need to ask?'
     choices:
-    - content: 'what are the component parts?'
+    - content: 'What are the component parts?'
       isCorrect: false
       explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'what are the dependencies?'
+    - content: 'What are the dependencies?'
       isCorrect: false
       explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'what was the past performance?'
+    - content: 'What was the past performance?'
       isCorrect: false
       explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'who are the stakeholders?'
+    - content: 'Who are the stakeholders?'
       isCorrect: false
       explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'how did it get to production?'
+    - content: 'How did it get to production?'
       isCorrect: false
       explanation: 'This is definitely one of the things we need to know, but operational awareness requires more information.'
-    - content: 'all of the above'
+    - content: 'All of the above'
       isCorrect: true
       explanation: 'Correct, operational awareness requires an understanding of all of the socio-technical aspects.'
 
