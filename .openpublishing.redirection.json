@@ -25814,6 +25814,11 @@
       "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/9-accelerate-cloud-adoption-framework.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/10-create-subscription-governance-strategy.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
