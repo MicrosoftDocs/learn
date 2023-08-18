@@ -3,7 +3,7 @@ uid: learn.wwl.describe-how-git-manages-source-control
 metadata:
   title: Describe how Git manages source control
   description: "Shallow dive into how Git, as a technology, manages source control."
-  ms.date: 06/06/2023
+  ms.date: 07/31/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
@@ -17,7 +17,7 @@ abstract: |
   *   Explain the function of intermediate Git commands.
 prerequisites: |
   A personal computer running Windows, macOS, or Linux.
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/describe-how-git-manages-source-control.svg
 levels:
 - beginner
 roles:

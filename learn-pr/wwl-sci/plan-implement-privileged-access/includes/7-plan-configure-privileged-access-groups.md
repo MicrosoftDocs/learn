@@ -1,9 +1,6 @@
 In Privileged Identity Management (PIM), you can now assign eligibility for membership or ownership of privileged access groups. You can assign Azure Active Directory (Azure AD) built-in roles to cloud groups and use PIM to manage group member and owner eligibility and activation. With the privileged access groups preview, you can give workload-specific administrators quick access to multiple roles with a single just-in-time request.
 
-```
- - Example - Your **Tier 0 Office Admins* might need just-in-time access to the **Exchange Admin**, **Office Apps Admin**, **Teams Admin**, and **Search Admin** roles to thoroughly investigate incidents daily.
-
-```
+**Example**: Your **Tier 0 Office Admins** might need just-in-time access to the **Exchange Admin**, **Office Apps Admin**, **Teams Admin**, and **Search Admin** roles to thoroughly investigate incidents daily.
 
 You can create a role-assignable group called “Tier 0 Office Admins”, and make it eligible for assignment to the four roles previously mentioned (or any Azure AD built-in roles). Then you enable it for Privileged Access in the group’s Activity section. Once enabled for privileged access, you can assign your admins and owners to the group. When the admins elevate the group into the roles, your staff will have permissions from all four Azure AD roles.
 

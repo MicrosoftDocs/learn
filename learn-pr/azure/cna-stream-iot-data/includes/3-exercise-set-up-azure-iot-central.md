@@ -13,21 +13,28 @@ In this exercise, you'll:
 
 ## Create an Azure IoT Central application
 
-1. On a web browser, go to the [Welcome to IoT Central](https://apps.azureiotcentral.com/?azure-portal=true) page.
-1. On the **Welcome to IoT Central** page, select the avatar icon in the top-right corner.
-1. When prompted, sign in to access the Azure subscription you'll be using in this module.
-1. Select **Build app** in the bottom-right corner of the page.
-1. On the **Build your IoT application** page, review the available application templates, and then on the **Custom app** tile, select **Create app**.
-1. On the **New application** page, configure the following settings, and then select **Create**.
+1. Navigate to the [Create IoT Central Application](https://portal.azure.com/#create/Microsoft.IoTCentral) page in the Azure portal. If prompted, sign in with your Azure account.
 
-   | Setting | Configuration |
-   | --- | --- |
-   | Application Name | Enter **adatum-iot-custom-application**. |
-   | Application URL | Enter a unique name that consists of lower-case letters, digits or dashes, and starts with a letter. |
-   | Application template | Select **Custom application**. |
-   | Pricing plan | Select one of the standard pricing plans. Select your **Directory**, **Azure subscription**, and **Location**. To learn about creating IoT Central applications, see [Create an IoT Central application](/azure/iot-central/core/howto-create-iot-central-application). To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/).. |
+1. Enter the following information:
 
-   :::image type="content" source="../media/3-azure-iot-build-app-page.png" alt-text="Screenshot of the New application page in the IoT Central Application portal.":::
+    | Field | Description |
+    | ----- | ----------- |
+    | Subscription | The Azure subscription you want to use. |
+    | Resource group | The resource group you want to use.  You can create a new resource group or use an existing one. |
+    | Resource name | A valid Azure resource name such as *adatum-iot-custom-application*. |
+    | Application URL | A URL subdomain for your application such as *adatum-iot-custom-application*. The URL for an IoT Central application looks like `https://adatum-iot-custom-application.azureiotcentral.com`. |
+    | Template | **Custom application** |
+    | Region | The Azure region you want to use. |
+    | Pricing plan | Select one of the standard pricing plans. To learn about pricing, see [Azure IoT Central pricing](https://azure.microsoft.com/pricing/details/iot-central/). |
+
+1. Select **Review + create**. Then select **Create**.
+
+When the app is ready, you can navigate to it from the Azure portal:
+
+:::image type="content" source="../media/3-view-app-portal.png" alt-text="Screenshot that shows the IoT Central application resource in the Azure portal. The application URL is highlighted.":::
+
+> [!TIP]
+> To list all the IoT Central applications you have access to, navigate to [IoT Central Applications](https://apps.azureiotcentral.com/myapps).
 
 ## Create an IoT device template
 

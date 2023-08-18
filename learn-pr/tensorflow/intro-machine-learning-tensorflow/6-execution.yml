@@ -3,8 +3,8 @@ uid: learn.tensorflow.intro-machine-learning-tensorflow.execution
 title: Eager execution and graph execution
 metadata:
   title: Eager execution and graph execution
-  description: Learn about TensorFlow's two execution modes, eager execution and graph execution
-  ms.date: 07/07/2021
+  description: Learn about TensorFlow's two execution modes, eager execution and graph execution.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial

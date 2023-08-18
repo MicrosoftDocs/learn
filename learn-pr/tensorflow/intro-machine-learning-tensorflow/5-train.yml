@@ -1,10 +1,10 @@
 ### YamlMime:ModuleUnit
 uid: learn.tensorflow.intro-machine-learning-tensorflow.train
-title: Training and testing the neural network
+title: Train and test the neural network
 metadata:
-  title: Training and testing the neural network
-  description: Learn how you can use TensorFlow's automatic differentiation features to train and evaluate a neural network
-  ms.date: 07/07/2021
+  title: Train and test the neural network
+  description: Learn how to use TensorFlow's automatic differentiation features to train and evaluate a neural network.
+  ms.date: 07/24/2023
   author: bstollnitz
   ms.author: bstollnitz
   ms.topic: interactive-tutorial

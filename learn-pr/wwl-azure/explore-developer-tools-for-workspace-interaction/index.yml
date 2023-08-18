@@ -3,7 +3,7 @@ uid: learn.wwl.explore-developer-tools-for-workspace-interaction
 metadata:
   title: Explore developer tools for workspace interaction
   description: "Learn how you can interact with the Azure Machine Learning workspace. You can use the Azure Machine Learning studio, the Python SDK (v2), or the Azure CLI (v2)."
-  ms.date: 06/06/2023
+  ms.date: 07/28/2023
   author: wwlpublish
   ms.author: madiepev
   ms.topic: interactive-tutorial
@@ -27,7 +27,6 @@ subjects:
 - machine-learning
 units:
 - learn.wwl.explore-developer-tools-for-workspace-interaction.introduction
-- learn.wwl.explore-developer-tools-for-workspace-interaction.video
 - learn.wwl.explore-developer-tools-for-workspace-interaction.explore-studio
 - learn.wwl.explore-developer-tools-for-workspace-interaction.explore-python-sdk
 - learn.wwl.explore-developer-tools-for-workspace-interaction.explore-cli

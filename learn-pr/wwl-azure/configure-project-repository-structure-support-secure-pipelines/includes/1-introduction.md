@@ -9,7 +9,7 @@ After completing this module, you’ll be able to:
 - Separate a project into team projects and repositories
 - Separate secure files between projects
 - Move the security repository away from a project
-- Assign project and repositories permissions
+- Assign project and repository permissions
 - Organize a project and repository structure
 
 ### Prerequisites

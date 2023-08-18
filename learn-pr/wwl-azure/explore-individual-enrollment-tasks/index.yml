@@ -26,7 +26,6 @@ roles:
 - developer
 products:
 - azure
-- azure-iot-dps
 - azure-iot-hub
 - azure-iot-sdk
 - azure-portal
@@ -39,3 +38,4 @@ units:
 - learn.wwl.explore-individual-enrollment-tasks.summary
 badge:
   uid: learn.wwl.explore-individual-enrollment-tasks.badge
+hidden: true

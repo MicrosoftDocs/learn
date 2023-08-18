@@ -1,3 +1,4 @@
+
 While you can use a question answering knowledge store in any sort of application, they are commonly used to support bots.
 
 A *bot* is a conversational application that enables users to interact using natural language through one or more *channels*, such as email, web chat, voice messaging, or social media platform such as Microsoft Teams.

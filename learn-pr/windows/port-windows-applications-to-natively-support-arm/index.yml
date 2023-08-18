@@ -1,15 +1,15 @@
 ### YamlMime:Module
 uid: learn.learn-windows-on-arm
 metadata:
-  title: Port Windows applications to natively support Arm-based processors  # Do not edit: title must be "Introduction to (product)"
-  description: "Learn about Windows on Arm, its benefits and capabilities and how to add an Arm configuration build to an existing application."               # Copy your 'evaluate' Learning Objective here (see below)
-  ms.date: 5/6/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
+  title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
+  description: "Learn about Windows on Arm, its benefits and capabilities and how to add an Arm configuration build to an existing .NET application."               # Copy your 'evaluate' Learning Objective here (see below)
+  ms.date: 7/19/2023               # Date of commit to GitHub (do not use target publication date, cannot be in the future)
   author: mattwojo
   ms.author: mattwoj
   ms.topic: module-standard-task-based
   ms.prod: windows
   ms.technology: arm
-title: Port Windows applications to natively support Arm-based processors
+title: Introduction to Windows on Arm - Port a .NET application to natively support Arm-based processors
 summary: "This module describes how Windows operating system supports devices powered by Arm processors and how to add a build configuration for Arm64 architecture to improve the experience of using your Windows application on Arm-based devices. This guidance will also cover testing, debugging, and troubleshooting the new Arm-based version of your Windows app."
 abstract: |
   By the end of this module, you'll be able to:

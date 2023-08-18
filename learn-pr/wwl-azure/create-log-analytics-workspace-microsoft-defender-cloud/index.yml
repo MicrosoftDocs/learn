@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud
+metadata:
+  title: Create a Log Analytics workspace for Microsoft Defender for Cloud
+  description: "Learn to create a Log Analytics workspace within the Azure portal, enabling robust data collection and analysis for Microsoft Defender for Cloud to enhance your security posture."
+  ms.date: 07/28/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Create a Log Analytics workspace for Microsoft Defender for Cloud
+summary: In this module, you'll discover how to create a Log Analytics workspace in the Azure portal for Microsoft Defender for Cloud, improving data collection and security analysis.
+abstract: |
+  By the end of this training module, participants will:
+  - Understand the importance of a centralized logging solution like Azure Log Analytics workspace for Microsoft Defender for Cloud.
+  - Learn how to create and configure a Log Analytics workspace in Azure.
+  - Gain insights into collecting and analyzing security data from Microsoft Defender for Cloud within the Log Analytics workspace.
+  - Understand how to create custom queries and alerts to proactively detect security threats and incidents.
+  - Recognize the benefits of integrating Log Analytics workspace with other Azure services and tools.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-log-analytics
+- azure-monitor
+- azure-portal
+- azure-virtual-machines
+- azure-virtual-machines-windows
+- defender-for-cloud
+units:
+- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.introduction
+- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.enable-defender-cloud-azure-subscription
+- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.knowledge-check
+- learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.summary
+badge:
+  uid: learn.wwl.create-log-analytics-workspace-microsoft-defender-cloud.badge
