@@ -2,9 +2,13 @@ Let's look at some of the more common areas you'll typically use in the Azure po
 
 ## All services
 
-1. In the top left-hand corner of the Azure portal, select **Show portal menu** :::image type="content" source="../media/5-show-portal-menu.png" alt-text="Screenshot of the Show portal menu option in the Azure portal."::: to expand the portal menu on the left-hand side of the screen.
+1. In the top left-hand corner of the Azure portal, select the **Show portal menu** icon.
 
-    ![Screenshot of the portal menu option on the left-hand side of the portal.](../media/5-show-portal-menu.png)
+   :::image type="content" source="../media/5-show-portal-icon.png" alt-text="Screenshot of the Show portal menu option in the Azure portal.":::.
+
+   Selecting this icon expands the portal menu on the left-hand side of the screen.
+
+   ![Screenshot of the portal menu option on the left-hand side of the portal.](../media/5-show-portal-menu.png)
 
 1. Select **All services**. Take a minute to browse through the list to get an idea of how many services Azure offers. You can filter the services that appear by using the search box near the top of the pane.
 
