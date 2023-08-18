@@ -33,4 +33,4 @@ Once the data is in Azure Monitor, there's a suite of tools that lets us analyze
 
 :::image type="content" source="../media/azure-monitor-overview-full.png" alt-text="Diagram of the overview of the data sources, data types, and offerings in Azure monitor.":::
 
-In our next unit, we're going to exploreo ne of the most useful tools for working with reliability in more detail: Log Analytics.
+In our next unit, we're going to explore one of the most useful tools for working with reliability in more detail: Log Analytics.
