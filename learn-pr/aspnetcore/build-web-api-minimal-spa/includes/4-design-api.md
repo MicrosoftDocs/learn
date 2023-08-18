@@ -36,12 +36,12 @@ You may notice that this JSON uses double quotes for the property names. In Java
 To use `json-server`, you use an executable `npx` that comes with your Node.js installation. You start your mock API by calling the executable `npx`, the name of the package `json-server`, and the name of the static file containing your API data. Here's an example:
 
 ```bash
-npx json-server --watch db.json --port 5000
+npx json-server --watch db.json --port 5100
 ```
 
 ### How does this work?
 
-At this point, your mocked API starts to be served on a certain port (for example, "5000"). Furthermore, you can interact with it as though it were a real API. It supports requests like the following:
+At this point, your mocked API starts to be served on a certain port (for example, "5100"). Furthermore, you can interact with it as though it were a real API. It supports requests like the following:
 
 ```output
 GET    /pizza
@@ -59,7 +59,7 @@ If you make any requests toward this mocked API and change data, the static file
 Because this mocked API works exactly like a real API, you can make requests to it in your front-end code with a browser-native request object, **fetch**. For example:
 
 ```javascript
-fetch("http://localhost:5000/pizza")
+fetch("http://localhost:5100/pizza")
   .then(response => response.json())
   .then(data => console.log(data)) // outputs mocked data 
 ```
@@ -75,10 +75,10 @@ The **Vite** framework provides `vite.config.js` which allows you to configure h
 If your front-end framework doesn't provide a proxy mechanism with its local server, you need to provide one. A standard way to set up a proxy is to set the `proxy` property in the _package.json_ with an entry like the following:
 
 ```json
-"proxy": "http://localhost:5000"
+"proxy": "http://localhost:5100"
 ```
 
-Instead of making requests toward `http://localhost:5000/pizza`, you can now make them toward `/pizza`, which resolves to `http://localhost:5000/pizza` when you make requests. 
+Instead of making requests toward `http://localhost:5100/pizza`, you can now make them toward `/pizza`, which resolves to `http://localhost:5100/pizza` when you make requests. 
 
 ## Talk to a real API
 
@@ -87,7 +87,7 @@ After the real API is finished, you should have the front-end app make requests 
 However, when you first try to talk to your real back-end API, you might get an error that looks something like the following:
 
 ```output
-Access to fetch at http://localhost:5000 from origin 'http://localhost:3000' has been blocked by CORS policy...
+Access to fetch at http://localhost:5100 from origin 'http://localhost:3000' has been blocked by CORS policy...
 ```
 
 This error tells you that the front-end app isn't allowed to call the back-end API, because the front-end app comes from a different place than the back-end API is residing. This difference includes both the domain name and the port of each app. The good news is that you can fix this error by implementing CORS on the back-end API.  
@@ -116,7 +116,7 @@ client> receives data from back end
 
 In this example app used in this training module, the API and front-end app are both hosted from the same IP (`localhost`) but are served from different ports: 
 
-- The API is served from port 5000
+- The API is served from port 5100
 - The front-end app is served from port 3000
 
 The CORS configuration is the responsibility of the server. How that's configured depends on the runtime the server is using. After you download the .NET sample API app in the next unit, you can update your CORS configuration in the .NET Core API's _Program.cs_ file:

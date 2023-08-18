@@ -16,7 +16,7 @@ At this point, you have a front-end app with static data inside of the app. You 
 
    The above is a JSON representation of the deleted JavaScript array.
  
-1. Run `npx json-server --watch --port 5000 db.json` in a separate terminal. Running this code starts the mock server, and output similar to the following appears:
+1. Run `npx json-server --watch --port 5100 db.json` in a separate terminal. Running this code starts the mock server, and output similar to the following appears:
 
    ```output
    \{^_^}/ hi!
@@ -24,10 +24,10 @@ At this point, you have a front-end app with static data inside of the app. You 
    Done
     
    Resources
-   http://localhost:5000/pizza
+   http://localhost:5100/pizza
     
    Home
-   http://localhost:5000
+   http://localhost:5100
    ```
 
 1. Open the `vite.config.json` and replace it with the following to allow for a proxy to the mock server.
@@ -67,14 +67,16 @@ Suppose the back-end team has now finished building the server. To use the serve
 
    The changes will configure CORS. You'll be able to read and write toward the API, despite the front-end app and API running on different ports.
 
-1. Save all your changes, and then start the API in the terminal with `dotnet run`.
+1. Save all your changes, and then start the API in the terminal. The server runs on port 5100.
 
-   The server runs on port 5000.
+    ```dotnetcli
+    dotnet run
+    ```
    
 1. Modify the proxy property in _package.json_ so the front-end app uses the correct server port:
 
    ```
-   "proxy": "http://localhost:5000",
+   "proxy": "http://localhost:5100",
    ```
 
 1. In the terminal running the front-end app, stop the app with **Ctrl**+**C**. Restart the front-end app with `npm run dev`.
