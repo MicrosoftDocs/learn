@@ -4,7 +4,7 @@ title: Summary
 metadata:
   title: Summary
   description: Summary
-  ms.date: 08/15/2023
+  ms.date: 08/18/2023
   author: JnHs
   ms.author: jenhayes
   ms.topic: interactive-tutorial
@@ -16,7 +16,7 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: "Which global control option lets you change the visual **Theme** displayed in the Azure portal?"
+  - content: "Which global control option lets you change the visual theme displayed in the Azure portal?"
     choices:
     - content: "**Settings**"
       isCorrect: true
