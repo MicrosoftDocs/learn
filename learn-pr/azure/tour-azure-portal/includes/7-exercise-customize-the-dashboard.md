@@ -103,4 +103,4 @@ You now want to make this dashboard available to other users. In the sandbox env
 
 1. Close your browser.
 
-Congratulations! You have now created and edited dashboards, shared them, deleted them, and finally, reset them to the default state. You now understand how to use dashboards to create efficient interfaces showing appropriate information for different roles within an organization.
+You have created and edited dashboards, shared them, deleted them, and finally, reset them to the default state. Now you understand how to use dashboards to create efficient interfaces showing appropriate information for different roles within an organization.
