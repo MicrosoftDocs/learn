@@ -67,7 +67,7 @@ Alternatively, right-click the tile and then specify the size you want.
 
 ### Change tile settings
 
-Some tiles have editable settings. For example, with the clock tile, you can select **Edit** to open the **Edit clock** pane. You can then set the time zone and choose whether the time displays in 12- or 24-hour format.
+Some tiles have editable settings. For example, with the **Clock** tile, you can select **Edit** to open the **Edit clock** pane. You can then set the time zone and choose whether the time displays in 12- or 24-hour format.
 
 :::image type="content" source="../media/6-edit-clock.png" alt-text="Screenshot showing the Edit clock settings for the Clock tile in the Azure portal.":::
 

@@ -19,19 +19,19 @@ You can also find Azure preview features in the portal by searching for *Preview
 
 ## Azure portal preview
 
-You can also try out upcoming functionality for the portal as a whole. To do so, use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com?azure-portal=true) (notice the **preview** prefix).
+You can also try out upcoming functionality for the portal as a whole. To do so, use the URL [https://preview.portal.azure.com](https://preview.portal.azure.com) (notice the **preview** prefix).
 
-Typical portal preview features provide performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you're using the preview portal.
+Portal preview features typically offer performance, navigation, and accessibility improvements to the Azure portal interface. When using the preview URL, the portal will be branded with **Microsoft Azure (Preview)** in the top bar, so you will know you're using the preview portal.
 
 ## Provide feedback on preview features
 
 If you use the preview portal or a preview feature, Microsoft wants to hear about your experience. You can provide feedback by using the **Feedback** icon that you learned about earlier in this module.
 
-## General availability feature releases
+## View General Availability feature releases
 
 The [Azure Updates](https://azure.microsoft.com/updates?azure-portal=true) page lists recent updates in Azure. On this page, you can:
 
 - Filter selections for which updates are in general availability, preview, or development
-- Browse updates by product category or update type, by using the provided dropdown lists
+- Browse updates by product category or update type, using the provided dropdown lists
 - Search for updates by keyword by entering search terms into a text-entry field
 - Subscribe to get Azure update notifications by RSS

@@ -10,6 +10,6 @@ metadata:
   ms.topic: interactive-tutorial
   ms.service: azure
 azureSandbox: true
-durationInMinutes: 10
+durationInMinutes: 8
 content: |
   [!include[](includes/7-exercise-customize-the-dashboard.md)]

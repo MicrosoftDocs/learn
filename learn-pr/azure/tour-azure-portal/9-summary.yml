@@ -16,19 +16,19 @@ quiz:
   title: Check your knowledge
   questions:
 
-  - content: 'An Azure dashboard is stored as which type of file?'
+  - content: "Which global control option lets you change the visual **Theme** displayed in the Azure portal?"
     choices:
-    - content: XML
-      isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
-    - content: JSON
+    - content: "**Settings**"
       isCorrect: true
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
-    - content: PNG
+      explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
+    - content: "**Support + troubleshooting**"
       isCorrect: false
-      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+      explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
+    - content: "**Directories + subscriptions**"
+      isCorrect: false
+      explanation: "The **Appearance + startup views** tab of **Settings** lets you apply different themes to the portal."
 
-  - content: "Azure Advisor provides advice on which of these topics:"
+  - content: "Azure Advisor provides advice on which of these topics?"
     choices:
     - content: "Creating an Azure account"
       isCorrect: false
@@ -40,11 +40,14 @@ quiz:
       isCorrect: false
       explanation: "Azure Advisor is accessed from the Azure portal, but doesn't provide guidance on using the portal."
 
-  - content: 'True or false: Azure Cloud Shell is an interactive, browser-accessible shell for managing Azure resources?'
+  - content: "An Azure dashboard is stored as which type of file?"
     choices:
-    - content: "True"
-      isCorrect: true
-      explanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
-    - content: "False"
+    - content: XML
       isCorrect: false
-      explanation: "Azure Cloud Shell is an interactive shell for managing Azure resources. You can control and administer all of your Azure resources in the current subscription through a command-line interface built right into the portal."
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: JSON
+      isCorrect: true
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
+    - content: PNG
+      isCorrect: false
+      explanation: "Azure dashboards are stored as JSON files, which allow them to be uploaded and downloaded to share with other members of the Azure directory."
