@@ -25844,6 +25844,11 @@
       "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/6-control-audit-resources-azure-policy.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/azure-fundamentals/build-cloud-governance-strategy-azure/7-restrict-location-azure-policy.md",
+      "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
+      "redirect_document_id": false
     }
   ]
 }
