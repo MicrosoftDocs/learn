@@ -3,20 +3,18 @@ uid: learn.wwl.explore-computer-vision-microsoft-azure
 metadata:
   title: 'Microsoft Azure AI Fundamentals: Explore computer vision'
   description: 'Microsoft Azure AI Fundamentals: Explore computer vision'
-  ms.date: 11/08/2021
+  ms.date: 08/18/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
   ms.service: azure
+  ms.subservice: ai-services
 title: 'Microsoft Azure AI Fundamentals: Explore computer vision'
 prerequisites: |
   Ability to navigate the Azure portal
-video:
-  title: "Explore computer vision"
-  url: https://www.microsoft.com/videoplayer/embed/RWxEMc
 summary: |
-  Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, though cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many cognitive services in Microsoft Azure.
-iconUrl: /training/achievements/explore-computer-vision-microsoft-azure.svg
+  Computer vision is an area of artificial intelligence (AI) in which software systems are designed to perceive the world visually, though cameras, images, and video. There are multiple specific types of computer vision problem that AI engineers and data scientists can solve using a mix of custom machine learning models and platform-as-a-service (PaaS) solutions - including many AI services in Microsoft Azure.
+iconUrl: /learn/achievements/explore-computer-vision-microsoft-azure.svg
 levels:
 - beginner
 roles:
@@ -26,7 +24,7 @@ roles:
 - solution-architect
 - student
 products:
-- ai-services
+- azure
 subjects:
 - artificial-intelligence
 modules:
