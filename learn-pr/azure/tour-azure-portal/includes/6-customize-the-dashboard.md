@@ -10,27 +10,15 @@ Dashboards are stored as JavaScript Object Notation (JSON) files. This format me
 
 ## Explore the default dashboard
 
-The default dashboard is named "Dashboard". When you log into the portal for the first time and select **Dashboard** from the portal menu, you are presented with this dashboard containing five tiles.
+The default dashboard is named "Dashboard". When you sign in to the Azure portal and select **Dashboard** from the portal menu, you see this dashboard containing five tiles.
 
-![Screenshot showing the default dashboard with different parts numbered and highlighted.](../media/6-dashboard-default-webparts.png)
-
-These default web parts are
-
-1. Dashboard controls
-
-1. All resources tile
-
-1. Quickstarts + tutorials tile
-
-1. Service Health tile
-
-1. Marketplace tile
+:::image type="content" source="../media/6-dashboard-default-webparts.png" alt-text="Screenshot showing the default dashboard in the Azure portal.":::
 
 ## Creating and managing dashboards
 
-At the top of the dashboard are the controls that let you create, upload, download, edit, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
+At the top of the dashboard are the controls that let you create, upload, edit, export, and share a dashboard. You can also switch a dashboard to full screen, clone it, or delete it.
 
-![Screenshot showing the Customize dashboard controls.](../media/6-customise-dashboard-controls.png)
+:::image type="content" source="../media/6-customise-dashboard-controls.png" alt-text="Screenshot of the dashboard controls in the Azure portal.":::
 
 ## Select dashboard
 
@@ -71,17 +59,17 @@ In edit mode, the dashboard work area is divided into squares. Each tile must oc
 
 Some tiles have a set size, and you can only edit their size  programmatically. However, if a tile has a gray bottom right-hand corner, you can resize it by dragging the corner indicator.
 
-![Screenshot of a tile with the corner indicator highlighted.](../media/6-resizable-tile.png)
+:::image type="content" source="../media/6-resizable-tile.png" alt-text="Screenshot of a tile with the resizable corner indicator highlighted.":::
 
 Alternatively, right-click the tile and then specify the size you want.
 
-![Screenshot of the tile with the context menu displaying different sizing options.](../media/6-tile-size.png)
+:::image type="content" source="../media/6-tile-size.png" alt-text="Screenshot of a tile with the context menu displaying different sizing options.":::
 
 ### Change tile settings
 
 Some tiles have editable settings. For example, with the clock tile, you can select **Edit** to open the **Edit clock** pane. You can then set the time zone and choose whether the time displays in 12- or 24-hour format.
 
-![Screenshot showing the Edit clock settings for the clock tile.](../media/6-edit-clock.png)
+:::image type="content" source="../media/6-edit-clock.png" alt-text="Screenshot showing the Edit clock settings for the Clock tile in the Azure portal.":::
 
 For multi-national/regional or transcontinental companies, you could add several clocks, each with a different time zone.
 
@@ -95,11 +83,9 @@ When you define a new dashboard, it is private and visible only to your account.
 
 As with any other Azure resource, you need to specify a new resource group (or use an existing resource group) in which to store shared dashboards. If you do not have an existing resource group, Azure will create a *dashboards* resource group in whichever location you specify.
 
-![Screenshot of the Sharing and access control pane before the dashboard is shared.](../media/6-share-dashboards-default.png)
+:::image type="content" source="../media/6-share-dashboards-default.png" alt-text="Screenshot of the Sharing + access control pane before a dashboard is shared.":::
 
-When you have shared the template, you'll see a **Manage sharing** link in place of **Share**. From here, you can unshare the dashboard, or select **Access control** to specify who can view and edit the dashboard.
-
-![Screenshot of the Sharing and access control pane after the dashboard is shared.](../media/6-share-dashboards-access-control.png)
+After you've shared the dashboard, you'll see a **Manage sharing** link at the top of the dashboard, instead of **Share**. From here, you can unshare the dashboard, or select **Access control** to specify who can view and edit the dashboard.
 
 ## Clone a dashboard
 
