@@ -1,91 +1,84 @@
-In the previous unit, you specified the container options as arguments to the `az container create` Azure CLI command, such as the Virtual Network or the environment variables. However, this isn't your only choice; you can specify the Azure Container Instance properties in YAML format as well. YAML allows you to specify more sophisticated configuration in your Azure Container Instance. YAML stands for "Yet Another Markup Language," and it was born to provide a more human-readable description language than XML or JSON. It avoids using delimiters such as curly and square brackets, which make human readability difficult. Instead, it relies on a prescriptive usage of indentation to structure information in a hierarchy.
+In the previous unit, you used Azure CLI commands like `az container create` and their arguments to specify Azure Container Instances options. In this unit, you learn to use YAML markup to specify Container Instances properties. YAML lets you specify more sophisticated configurations for Azure container instances.
 
-Kubernetes is a container orchestration system that uses YAML to describe its objects. The popularity of Kubernetes has driven YAML to become a *de facto* standard for declarative definitions of containers structures. If you are already familiar with Kubernetes YAML, you will recognize many of the constructs used in Azure Container Instances YAML.
+YAML stands for "Yet Another Markup Language," and provides a more human-readable description language than XML or JSON. YAML avoids using delimiters such as curly and square brackets that make human readability difficult, but relies on indentation to structure information in a hierarchy. Another benefit of YAML-based configurations is that you can store them in version-control systems and treat them the same as application code.
 
-YAML is one of the different ways in which you can declaratively deploy Azure Container Instances; ARM templates and Terraform are additional alternative methods. There isn't a specific reason why one would be better than the other, but YAML tends to be convenient when working with more complex container groups, such as the sidecar pattern you will deploy in this unit.
+Kubernetes is a container orchestration system that uses YAML to describe its objects, and its popularity means that YAML has become a de facto standard for declarative container definitions. Kubernetes YAML uses many of the same constructs as Container Instances YAML. 
 
-## Extract YAML code out of an existing container group
+Azure Resource Manager (ARM) templates and Terraform are alternative methods to declaratively deploy Azure Container Instances. There isn't a specific reason why one method is better than others, but YAML is convenient for working with more complex container groups, such as the sidecar pattern you deploy in this module.
 
-1. If you deleted your Azure Container Instance as instructed by the previous unit, you can recreate it with the following Azure CLI command. If you did not delete it, you can skip this step.
+## Extract YAML code out of an existing container
 
-    ```azurecli
-    # Create Azure Container if not existing
-    az container create -n $aci_name -g $rg -e "SQL_SERVER_USERNAME=$sql_username" \
-      "SQL_SERVER_PASSWORD=$sql_password" \
-      "SQL_SERVER_FQDN=${sql_server_fqdn}" \
-      --image erjosito/sqlapi:1.0 \
-      --ip-address private --ports 8080 --vnet $vnet_id --subnet $aci_subnet_id
-    ```
+You can inspect properties of your existing Azure container instance in YAML format, and save the YAML code to a file for later reference. In Cloud Shell in the Azure portal, run the following Azure CLI command:
 
-2. You can inspect properties of your existing Azure Container Instance in YAML format with the Azure CLI, and save the YAML code to a file for later reference:
+```azurecli
+# Browse YAML
+az container export -n $aci_name -g $rg -f /tmp/aci.yaml
+more /tmp/aci.yaml
+```
 
-    ```azurecli
-    # Browse YAML
-    az container export -n $aci_name -g $rg -f /tmp/aci.yaml
-    more /tmp/aci.yaml
-    ```
+You should see something similar to the following sample output when you inspect the generated YAML code, for example by using `cat /tmp/aci.yaml`.
 
-    Here a sample output, you should see something similar when inspecting the generated YAML code--for example with `cat /tmp/aci.yaml`:
-
-    ```yml
-    additional_properties: {}
-    apiVersion: '2018-10-01'
-    identity: null
-    location: westeurope
-    name: learnaci
+```yml
+additional_properties: {}
+apiVersion: '2018-10-01'
+identity: null
+location: westeurope
+name: learnaci
+properties:
+  containers:
+  - name: learnaci
     properties:
-      containers:
-      - name: learnaci
-        properties:
-          environmentVariables:
-          - name: SQL_SERVER_USERNAME
-            value: azure
-          - name: SQL_SERVER_PASSWORD
-            value: Microsoft123!
-          - name: SQL_SERVER_FQDN
-            value: sqlserver5441.database.windows.net
-          image: erjosito/sqlapi:1.0
-          ports:
-          - port: 8080
-            protocol: TCP
-          resources:
-            requests:
-              cpu: 1.0
-              memoryInGB: 1.5
-      ipAddress:
-        ip: 192.168.2.4
-        ports:
-        - port: 8080
-          protocol: TCP
-        type: Private
-      networkProfile:
-        id: /subscriptions/<<subscriptionid>>/resourceGroups/acilab/providers/Microsoft.Network/networkProfiles/aci-network-profile-acivnet-aci
-      osType: Linux
-      restartPolicy: Always
-    tags: {}
-    type: Microsoft.ContainerInstance/containerGroups
-    ```
+      environmentVariables:
+      - name: SQL_SERVER_USERNAME
+        value: azure
+      - name: SQL_SERVER_PASSWORD
+        value: Microsoft123!
+      - name: SQL_SERVER_FQDN
+        value: sqlserver5441.database.windows.net
+      image: erjosito/sqlapi:1.0
+      ports:
+      - port: 8080
+        protocol: TCP
+      resources:
+        requests:
+          cpu: 1.0
+          memoryInGB: 1.5
+  ipAddress:
+    ip: 192.168.2.4
+    ports:
+    - port: 8080
+      protocol: TCP
+    type: Private
+  networkProfile:
+    id: /subscriptions/<<subscriptionid>>/resourceGroups/acilab/providers/Microsoft.Network/networkProfiles/aci-network-profile-acivnet-aci
+  osType: Linux
+  restartPolicy: Always
+tags: {}
+type: Microsoft.ContainerInstance/containerGroups
+```
 
-    > [!NOTE]
-    > The sections in the auto-generated YAML file are ordered alphabetically.
+> [!NOTE]
+> The sections in the auto-generated YAML file are ordered alphabetically.
 
-    There are some interesting characteristics of this YAML description that are worth highlighting:
+Note the following characteristics of this YAML description:
 
-    - Note that YAML is very sensitive to indentation. If you remove or add a blank space in the previous file, it won't be syntactically correct. Only spaces are supported for indentation (no tabs), so be careful with your text editor.
-    - Properties and attributes are specified hierarchically in key-value pairs.
-    - If you are familiar with Kubernetes, you will recognize many of the labels. For example, resource requests follow the same syntax. However, do not expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes would use the `env` key word.
-    - If you look into the environment variables, you see them in clear text. While this is probably acceptable for most environment variables, others should not be written in the open, such as the SQL password used in this example. A better way of defining this sensitive information would be with ACI Secure Values. In your case, you don't want your customer to be able to see the database password, so you need to mask it.
+- YAML is very sensitive to indentation. Removing or adding a blank space before a line makes it syntactically incorrect. Only spaces, not tabs, are supported for indentation, so be careful with your text editor.
+- Properties and attributes are specified hierarchically in key-value pairs.
+- Many of the labels are familiar from Kubernetes. For example, resource requests follow the same syntax. However, don't expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes uses the `env` keyword.
+- The environment variables are in clear text. This is probably acceptable for most environment variables, but others, such as the SQL password used in this example, shouldn't be visible openly. A better way to define this sensitive information is with secure values.
 
-## Modify and deploy YAML file
+## Modify and deploy the YAML file
 
-1. While you could change the environment variable for the SQL password into a secure environment variable using the Azure CLI, you will use YAML in preparation for future requirements. In order to generate the required YAML, you can manually edit the file automatically generated in this unit and redeploy it to create the modified Azure Container Instance. Use your favorite text editor to change line 13 of `/tmp/aci.yaml` from `        value: Microsoft123!` into `        secureValue: Microsoft123!` (do not change indentation). Instead, you can use the online text editor `sed` to perform the change:
+You don't want your customer to be able to see the SQL database password, so you need to mask it. To generate the required YAML, you manually edit the file automatically generated in the preceding step and redeploy it to create a modified container instance. While you could change the environment variable into a secure environment variable by using the Azure CLI, you use YAML in preparation for future requirements.
+
+1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br><br>`        value: Microsoft123!` <br><br>to <br><br>`        secureValue: Microsoft123!`. Be careful not to change indentation. You can also use the online text editor `sed` to make the change:
 
     ```bash
     # Modify auto-generated YAML
     sed -i 's/        value: Microsoft123!/        secureValue: Microsoft123!/g' /tmp/aci.yaml
     ```
 
-1. After modifying the file, you can redeploy the new YAML. The Azure CLI command `az container create` takes the argument `--file` where you can input the YAML description of the container to be created. Note that you only need to specify the resource group where the new Azure Container Instance should be created, since all other information is contained in the YAML file, including the Azure Container Instance name:
+1. After modifying the file, run the following commands to delete the old container and redeploy the new YAML. The Azure CLI command `az container create` takes the argument `--file`, where you can input the YAML description of the container to create. You only need to specify the resource group, because all the other information is contained in the YAML file, including the container instance name.
 
     ```azurecli
     # Recreate container using updated YAML
@@ -93,7 +86,7 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     az container create -g $rg --file /tmp/aci.yaml
     ```
 
-1. If you export the new Azure Container Instance to a different YAML file `/tmp/aci2.yaml`, you will note that the changes you did to the YAML are now in effect: the SQL password is not exposed anymore as clear text.
+1. Export the new container instance to a different YAML file */tmp/aci2.yaml*, and note that the changes you made to the YAML are now in effect. The SQL password is no longer5 exposed as clear text.
 
     ```bash
     # Recreate container
@@ -101,7 +94,7 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     more /tmp/aci2.yaml
     ```
 
-    You can find additional properties that can be used in Azure Container Instances YAML declarations in the ACI YAML reference.
+You can find more properties to use in Container Instances YAML declarations in the Azure Container Instances YAML reference.
 
 1. Delete the container created in this unit, so that we can move on to the next one.
 
@@ -110,6 +103,3 @@ YAML is one of the different ways in which you can declaratively deploy Azure Co
     az container delete -n $aci_name -g $rg -y
     ```
 
-## Summary
-
-You exported the properties of an existing Azure Container Instance to YAML format. You modified the YAML file to change some of its attributes and deployed a new Azure Container Instance with updated properties.

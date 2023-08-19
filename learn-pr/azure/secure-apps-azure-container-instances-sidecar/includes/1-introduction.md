@@ -1,22 +1,26 @@
-With Azure Container Instances, you can launch single containers in Azure and use advanced functionality to address sophisticated networking and security requirements. 
+In this module, you learn to use Azure Container Instances to launch APIs in single containers. You deploy inside of virtual networks to increase security, and use advanced tools to address sophisticated networking and security requirements.
 
-Suppose you work at a network provider, and you're responsible for creating Application Programmable Interface (APIs) for your customers. These APIs are a premium service for which you charge your customers, so they need to be able to launch and stop their APIs on-demand. Once a customer has started an API, they're responsible for its life cycle. A critical requirement is that APIs are not exposed to the public Internet, and that a specific customer only has access to their own API.
+You manage Application Programmable Interface (API) development at a network provider that creates and deploys APIs for its customers as a for-charge premium service. These APIs must fulfill the following requirements:
 
-Azure Container Instances offer an ideal platform for this type of applications:
+- Once a customer starts an API, they're responsible for its lifecycle.
+- Customers can launch and stop their APIs on demand.
+- APIs aren't exposed to the public internet.
+- A specific customer can access only their own APIs.
 
-- They're a purely on-demand infrastructure, offering very granular per-second billing
-- Azure Container Instances offer quick startup times
-- Azure Container Instances allow for very granular sizing
-- Both Windows and Linux container images are supported
+You choose Container Instances as the ideal platform to meet these requirements, because it offers:
 
-In this module, you'll learn some advanced tools that you can use with Azure Container Instances.
+- Quick startup times.
+- Granular sizing.
+- Per-second billing.
+- On-demand infrastructure.
+- Windows and Linux support.
 
 ## Learning objectives
 
-By the end of this module, you'll be able to:
+In this module, you implement the following advanced Container Instances capabilities:
 
-- Deploy Azure Container Instances in Azure Virtual Networks
-- Configure the Azure Container Instances using YAML (Yet Another Markup Language)
-- Include sidecar containers in the YAML definition
-- Include initialization containers in the YAML definition
-- Integrate with an Azure PaaS service using Private Link
+- Deploy Container Instances in Azure Virtual Networks.
+- Provision Container Instances by using Azure CLI, or use YAML for greater flexibility and similarity to Kubernetes YAML manifests.
+- Enhance existing applications with sidecar containers, to add functionality in a separate container without having to modify the original application code.
+- Use Azure Private Link to connect to Azure platform-as-a-service (PaaS) resources by using private IP addressing.
+- Do initialization tasks with initialization containers, such as notifying other systems of a container instance's IP address by modifying the Domain Name System (DNS).
