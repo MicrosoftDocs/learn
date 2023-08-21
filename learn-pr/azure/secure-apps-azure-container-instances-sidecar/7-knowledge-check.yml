@@ -14,58 +14,58 @@ durationInMinutes: 05
 content: |
 quiz:
   questions:
-  - content: "What Azure Container Instance feature can you use to perform initialization tasks required by your application?"
+  - content: "What's the best Azure Container Instances feature to do initialization tasks that an application requires?"
     choices:
-    - content: Other Azure Container Instances running in parallel
+    - content: Other Azure container instances running in parallel.
       isCorrect: false
-      explanation: "Init containers are better suited, since the application containers will always wait for the init container(s) to finish before starting."
-    - content: Init Containers
+      explanation: "Init containers are better suited, because application containers wait for the init containers to finish before starting."
+    - content: Init containers.
       isCorrect: true
-      explanation: "Init Containers are always run before application containers. They can be used to perform initialization tasks or make sure that application requirements are fulfilled."
-    - content: Modify the application code to perform initialization
+      explanation: "Init containers always run before application containers, to do initialization tasks or make sure application requirements are fulfilled."
+    - content: Modify the application code to do initialization.
       isCorrect: false
-      explanation: "While modifying the application is a possibility, init containers offer a much more modular approach."
-  - content: "How do sidecar containers communicate with the main application container?"
+      explanation: "Init containers offer a more modular approach that doesn't require modification of the application code."
+  - content: "How can sidecar containers communicate with other containers in the same container group?"
     choices:
-    - content: "Sidecar containers can communicate with other containers in the same container group using 127.0.0.1 as the destination IP address."
+    - content: "Use `127.0.0.1` as the destination IP address."
       isCorrect: true
-      explanation: "Sidecar containers, or containers running in the same container group, share the same IP address and networking stack"
-    - content: "Sidecar containers can use the DNS to find out the address of others containers in the container group."
+      explanation: "All containers running in the same container group share the same IP address and networking stack."
+    - content: "Use the Domain Name System (DNS) to find out the addresses of other containers in the group."
       isCorrect: false
-      explanation: "This is not required, since all containers in a container group share the same networking stack"
-    - content: "Not possible, because containers in a container group are isolated from each other."
+      explanation: "Finding out the addresses isn't required, because all containers in a container group share the same networking stack."
+    - content: "They can't, because containers in a container group are isolated from each other."
       isCorrect: false
       explanation: "Containers in a container group share the same networking stack, and can communicate with each other."
-  - content: "Which images can be used for sidecar containers?"
+  - content: "Which images can you use to create sidecar containers?"
     choices:
-    - content: "Sidecar containers can be created from the same image as the main application container."
+    - content: "Only the same image as the main application container."
       isCorrect: false
-      explanation: "Sidecar containers in one container group can be instantiated from completely different container images."
-    - content: "Sidecar containers can be created from any container image from any image repository."
+      explanation: "Sidecar containers can use completely different container images from the application container."
+    - content: "Any container image from any image repository."
       isCorrect: true
-      explanation: "Containers in one container group can be instantiated from completely different container images, even from different repositories"
-    - content: "Sidecar containers can be created from any container image, but all containers in the container group need to be instantiated from the same image repository."
+      explanation: "Containers in one container group can be instantiated from completely different container images, even from different repositories."
+    - content: "Any container image that's from the same image repository as the application container."
       isCorrect: false
       explanation: "Containers in one container group can be instantiated from different image repositories."
-  - content: "Which IP address will an Azure Container Instance receive when deployed in a Virtual Network?"
+  - content: "What IP address(es) does an Azure container instance receive when it's deployed in a virtual network?"
     choices:
-    - content: "The Azure Container Instance will receive a private IP address in the subnet where it is deployed and a public IP address."
+    - content: "Both a public IP address and a private IP address in the subnet where it's deployed."
       isCorrect: false
-      explanation: "The Azure Container Instance will only receive a private IP address, but no public IP address."
-    - content: "The Azure Container Instance will receive a public IP address."
+      explanation: "The container instance receives only a private IP address, no public IP address."
+    - content: "Only a public IP address."
       isCorrect: false
-      explanation: "The Azure Container Instance will receive a private IP address in the subnet where it is deployed."
-    - content: "The Azure Container Instance will receive a private IP address in the subnet where it is deployed."
+      explanation: "The container instance receives a private IP address in the subnet where it's deployed, no public IP address."
+    - content: "Only a private IP address in the subnet where it's deployed."
       isCorrect: true
-      explanation: "The Azure Container Instance will be fully integrated in the Virtual Network."
-  - content: "From where can Azure Container Instances deployed in a Virtual Network be accessed?"
+      explanation: "The container instance is fully integrated in the virtual network."
+  - content: "Where can Azure container instances deployed in a virtual network be accessed from?"
     choices:
-    - content: "Only from inside the Virtual Network."
+    - content: "Only from inside the virtual network."
       isCorrect: false
-      explanation: "Other peered Virtual Networks and on-premises networks can access the Azure Container Instance too."
-    - content: "From inside the Virtual Network and from other peered Virtual Networks."
+      explanation: "Peered virtual networks and on-premises networks can also access the container instance."
+    - content: "Only from inside the virtual network and peered virtual networks."
       isCorrect: false
-      explanation: "On-premises networks can access the Azure Container Instance too."
-    - content: "From inside the Virtual Network, from other peered Virtual Networks, and from on-premises network connected over VPN or ExpressRoute."
+      explanation: "On-premises networks can also access the container instance."
+    - content: "From inside the virtual network, peered virtual networks, and on-premises networks connected over VPN or ExpressRoute."
       isCorrect: true
-      explanation: "Azure Container Instances deployed in Virtual Networks have the same connectivity as other resources such as virtual machines."
+      explanation: "Azure container instances deployed in virtual networks have the same connectivity as other resources, such as virtual machines."
