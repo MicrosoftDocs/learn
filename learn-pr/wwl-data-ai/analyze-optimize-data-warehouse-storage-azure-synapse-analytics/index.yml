@@ -34,7 +34,6 @@ units:
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-column-store-storage-details
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-view-column-store-storage-details
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-impact-of-wrong-choices-for-column-data-types
-- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-compare-storage-requirements-between-optimal-sub-optimal-column-data-ty
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-improve-execution-plan-of-query-with-materialized-view
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-rules-for-minimally-logged-operations
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-optimize-delete-operation
