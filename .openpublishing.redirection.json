@@ -25884,6 +25884,11 @@
       "source_path": "learn-pr/azure-fundamentals/secure-access-azure-identity-services/6-summary.md",
       "redirect_url": "https://learn.microsoft.com/training/paths/describe-azure-management-governance/",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/index.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
     }
   ]
 }
