@@ -2172,3 +2172,33 @@ achievements:
   title: Implement IoT device communication by using the Azure IoT SDKs
   summary:  You will learn about the IoT Hub service properties and limitations, the IoT device lifecycle, Azure IoT developer tools, and then you will implement communication between an IoT device and IoT Hub.
   iconUrl: /training/achievements/iot-device-communication.svg
+- uid: learn.wwl.examine-business-integration-for-iot-solutions.badge
+  type: badge
+  title: Examine business integration for IoT solutions
+  summary: This module introduces you to business integration goals for IoT solutions, the Azure services that are used to enable downstream message processing, and the configuration options for Azure Event Grid and Azure Logic Apps.
+  iconUrl: /training/achievements/iot-business-integration.svg
+- uid: learn.wwl.examine-azure-time-series-insights.badge
+  type: badge
+  title: Examine Azure Time Series Insights
+  summary: This module introduces you to the Azure Time Series Insights service, the capabilities that the service provides, how to configure Time Series Insights, and how to integrate Time Series Insights with IoT Hub.
+  iconUrl: /training/achievements/time-series-insights-examine.svg
+- uid: learn.wwl.examine-data-visualizations-power-bi.badge
+  type: badge
+  title: Examine data visualizations with Power BI
+  summary: This module introduces you to the capabilities of Microsoft Power BI, how Power BI can be connected to your IoT solution, and how Power BI can be used to develop and share insights.
+  iconUrl: /training/achievements/powerbi-examine-data-visualization.svg
+- uid: learn.wwl.explore-event-grid-integration.badge
+  type: badge
+  title: Explore Event Grid integration
+  summary: This module provides you with experience configuring a solution to use IoT Hub events and built-in Event Grid integration to trigger downstream business processes and deliver event-based notifications using Logic Apps.
+  iconUrl: /training/achievements/event-grid-integration.svg
+- uid: learn.wwl.explore-time-series-insights-integration.badge
+  type: badge
+  title: Explore Time Series Insights integration
+  summary: This module provides you with experience configuring the IoT Hub built-in endpoint for use with Time Series Insights and using Time Series Insights to view and analyze time series data.
+  iconUrl: /training/achievements/time-series-insights-integration.svg
+- uid: learn.wwl.develop-data-insights-business-integrations.trophy
+  type: trophy
+  title: Develop data insights and business integrations
+  summary: You will learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
+  iconUrl: /training/achievements/data-insights-business-integration.svg
