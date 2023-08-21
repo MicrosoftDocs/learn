@@ -1,18 +1,18 @@
-Microsoft Azure offers both speech recognition and speech synthesis capabilities through the **Speech** cognitive service, which includes the following application programming interfaces (APIs):
+Microsoft Azure offers both speech recognition and speech synthesis capabilities through **Azure AI Speech** service, which includes the following application programming interfaces (APIs):
 
 - The **Speech to text** API
 - The **Text to speech** API
 
-## Azure resources for the Speech service
+## Azure resources for Azure AI Speech
 
-To use the Speech service in an application, you must create an appropriate resource in your Azure subscription. You can choose to create either of the following types of resource:
+To use Azure AI Speech in an application, you must create an appropriate resource in your Azure subscription. You can choose to create either of the following types of resource:
 
-- A **Speech** resource - choose this resource type if you only plan to use the Speech service, or if you want to manage access and billing for the resource separately from other services.
-- A **Cognitive Services** resource - choose this resource type if you plan to use the Speech service in combination with other cognitive services, and you want to manage access and billing for these services together.
+- A **Speech** resource - choose this resource type if you only plan to use Azure AI Speech, or if you want to manage access and billing for the resource separately from other services.
+- An **Azure AI services** resource - choose this resource type if you plan to use Azure AI Speech in combination with other Azure AI services, and you want to manage access and billing for these services together.
 
 ## The Speech to text API
 
-You can use the Speech to text API to perform real-time or batch transcription of audio into a text format. The audio source for transcription can be a real-time audio stream from a microphone or an audio file.
+You can use Azure AI Speech to text API to perform real-time or batch transcription of audio into a text format. The audio source for transcription can be a real-time audio stream from a microphone or an audio file.
 
 The model that is used by the Speech to text API, is based on the Universal Language Model that was trained by Microsoft.  The data for the model is Microsoft-owned and deployed to Microsoft Azure.  The model is optimized for two scenarios, conversational and dictation. You can also create and train your own custom models including acoustics, language, and pronunciation if the pre-built models from Microsoft do not provide what you need.
 
@@ -42,5 +42,5 @@ The service includes multiple pre-defined voices with support for multiple langu
 
 Both the speech to text and text to speech APIs support a variety of languages. Use the links below to find details about the supported languages:
 
-- [Speech to text languages](/azure/cognitive-services/speech-service/language-support#speech-to-text).
-- [Text to speech languages](/azure/cognitive-services/speech-service/language-support#text-to-speech).
+- [Speech to text languages](/azure/ai-services/speech-service/language-support?tabs=stt#speech-to-text?azure-portal=true).
+- [Text to speech languages](/azure/ai-services/speech-service/language-support?tabs=tts#text-to-speech?azure-portal=true).
