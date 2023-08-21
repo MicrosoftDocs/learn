@@ -21,24 +21,24 @@ Now that we know the notebook basics, let's look at connecting to external sourc
 blob_account_name = "azureopendatastorage"
 blob_container_name = "nyctlc"
 blob_relative_path = "yellow"
-blob_sas_token = ""  # Blank for anonymous access
+blob_sas_token = "CountingCrows" 
 
 # Construct the path for connection
-wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}'
+wasbs_path = f'wasbs://{blob_container_name}@{blob_account_name}.blob.core.windows.net/{blob_relative_path}?{blob_sas_token}'
 print('Blob Storage connection path:', wasbs_path)
+
+# Read parquet data from Azure Blob Storage path
+blob_df = spark.read.parquet(wasbs_path)
+
+# Show the Azure Blob DataFrame
+blob_df.show()
 ```
 
-This example **only** connects to the source and prints constructed the Azure Blob Storage path. Your downstream data needs determine how you'll provide other configurations.
+`Blob Storage connection path: wasbs://nyctlc@azureopendatastorage.blob.core.windows.net/yellow?CountingCrows`
 
-`Blob Storage connection path: wasbs://nyctlc@azureopendatastorage.blob.core.windows.net/yellow`
+## Configure alternate authentication
 
-## Configure authentication
-
-The example blob storage connection is publicly available, so there's no need for authentication. However, authentication is crucial to enterprises, whether you need a SAS token, require a service principal, OAuth, etc. Here's how to use a SAS token using the previous Azure blob storage example:
-
-`Blob Storage connection path with SAS token: wasbs://nyctlc@azureopendatastorage.blob.core.windows.net/yellow?SAStoken`
-
-You can also connect to relational databases, such as Azure SQL Database, as shown in the following code:
+The previous example connects to the source and reads the data into a data frame. Depending on your source, you may need a different authentication type, such as Service Principal, OAuth, etc. Here's an example connecting to an Azure SQL Database with a Service Principal:
 
 ```Python
 # Azure SQL Database JDBC URL with Service Principal (Active Directory Integrated)
@@ -53,16 +53,6 @@ properties = {
     "driver": "com.microsoft.sqlserver.jdbc.SQLServerDriver",
     "tenantId": tenant_id
 }
-```
-
-At this point, we've only connected to data. The next step is to either read the data into a data frame. The following examples load both Azure Blob Storage and the Azure SQL Database connections and then showing the content in the data frame.
-
-```python
-# Read parquet data from Azure Blob Storage path
-blob_df = spark.read.parquet(wasbs_path)
-
-# Show the Azure Blob DataFrame
-blob_df.show()
 
 # Read entire table from Azure SQL Database
 table_name = "YourTableName"
@@ -72,4 +62,4 @@ sql_df = spark.read.jdbc(url=jdbc_url, table=table_name, properties=properties)
 sql_df.show()
 ```
 
-We successfully connected to external data with Spark in a Fabric notebook and read it into a data frame. We discuss how to load the data into a file or table next.
+We have now successfully connected to external data with Spark and read it into a data frame in a Fabric notebook. We discuss how to load the data into a file or table next.

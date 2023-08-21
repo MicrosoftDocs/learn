@@ -11,5 +11,39 @@ metadata:
   ms.prod: learning-azure
   ms.service: fabric
 durationInMinutes: 3
-content: |
-  [!include[](includes/6-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the benefit of using Fabric notebooks over manual uploads for data ingestion?"
+    choices:
+    - content: "Notebooks provide automation, ensuring a smooth and systematic approach to ingestion and transformation"
+      isCorrect: true
+      explanation: "Correct. Fabric notebooks provide automation for ingestion and transformation, ensuring a smooth and systematic approach."
+    - content: "Pipelines allow you to orchestrate the Copy Data and transformations"
+      isCorrect: false
+      explanation: "Incorrect. Pipelines may require dataflows or notebooks for transformations, but they do not provide automation for ingestion like notebooks do."
+    - content: "Fabric notebooks offer a UI experience for large datasets"
+      isCorrect: false
+      explanation: "Incorrect. Dataflows offer a UI experience, but they are not as performant with large datasets."
+  - content: "What is the purpose of V-Order and Optimize Write in Delta tables?"
+    choices:
+    - content: "To enable faster and more efficient writes by various compute engines."
+      isCorrect: false
+      explanation: "Incorrect. V-Order enables faster and more efficient reads, not writes."
+    - content: "To improve the performance and reliability of Delta tables by applying special sorting, distribution, encoding, and compression on parquet files at write-time, and reducing the number of files written and increasing their size."
+      isCorrect: true
+      explanation: "Correct. V-Order and Optimize Write are used to improve the performance and reliability of Delta tables by applying special sorting, distribution, encoding, and compression on parquet files at write-time, and reducing the number of files written and increasing their size."
+    - content: "To reduce the size of Delta tables and increase their number of files."
+      isCorrect: false
+      explanation: "Incorrect. Optimize Write reduces the number of files written and increases their size, but it's not used to reduce the size of Delta tables."
+  - content: "What is the purpose of doing basic cleaning when loading data into Fabric lakehouse?"
+    choices:
+    - content: "To remove all null values and empty entries from the data"
+      isCorrect: false
+      explanation: "Incorrect. Basic cleaning involves removing duplicates, handling errors, and converting null values, but not necessarily getting rid of empty entries."
+    - content: "To ensure data quality and consistency"
+      isCorrect: true
+      explanation: "Correct. Basic cleaning is done to ensure data quality and consistency before moving on to transformation and modelling steps."
+    - content: "To make the data more complex for data scientists to explore"
+      isCorrect: false
+      explanation: "Incorrect. Basic cleaning is done to ensure data quality and consistency."
