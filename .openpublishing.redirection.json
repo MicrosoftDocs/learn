@@ -26349,6 +26349,11 @@
       "source_path": "learn-pr/wwl-azure/explore-time-series-insights-integration/4-summary.md",
       "redirect_url": "/training/browse/?products=azure&terms=iot",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/paths/develop-data-insights-business-integrations/index.md",
+      "redirect_url": "/training/browse/?products=azure&terms=iot",
+      "redirect_document_id": false
     }
   ]
 }
