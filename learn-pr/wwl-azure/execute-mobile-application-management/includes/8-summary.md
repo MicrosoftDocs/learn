@@ -6,6 +6,6 @@ The main takeaways from this module are that MAM is a crucial aspect of mobile d
 
 ### Learn more
 
-- [Mobile Application Management (MAM) with Microsoft Intune](/mem/intune/apps/mobile-application-management-policies-with-microsoft-intune)
+- [Mobile Application Management (MAM) with Microsoft Intune](/mem/intune/fundamentals/deployment-guide-enrollment-mamwe)
 - [App protection policies in Microsoft Intune](/mem/intune/apps/app-protection-policy)
 
