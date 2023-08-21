@@ -1,10 +1,10 @@
-Azure Computer Vision Image Analysis 4.0 provides a rich collection of features for extracting information from visual inputs. By incorporating Microsoft's Florence foundation model, Vision Services enables developers to create cutting-edge computer vision applications to seamlessly digitize, analyze, and connect their visual data to natural-language interactions, unlocking powerful insights from their image and video content.
+Azure AI Vision Image Analysis 4.0 provides a rich collection of features for extracting information from visual inputs. By incorporating Microsoft's Florence foundation model, Vision Services enables developers to create cutting-edge computer vision applications to seamlessly digitize, analyze, and connect their visual data to natural-language interactions, unlocking powerful insights from their image and video content.
 
 The new Image Analysis service improves content discoverability with automatic captioning, smart cropping, classifying, object detection, background removal, and searching for images.
 
 Now that you have completed this module, you should be able to:
 
-- Describe the capabilities available in Azure Computer Vision.
+- Describe the capabilities available in Azure AI Vision.
 - Understand the benefits provided by Microsoft's Florence large foundation model.
 - Analyze images using Image Analysis 4.0.
 - Use Vision Studio to create a custom object detection model.
@@ -22,12 +22,11 @@ You must clean up any Azure resources created during the exercises in this modul
 
 Use these resources to discover more:
 
-- [What is Computer Vision?](/azure/cognitive-services/computer-vision/overview)
-- [Getting started using Vision Studio](/azure/cognitive-services/computer-vision/overview-vision-studio#get-started-using-vision-studio)
-- [Image Analysis](/azure/cognitive-services/computer-vision/overview-image-analysis?tabs=4-0)
-- [Getting started with Image Analysis 4.0](/azure/cognitive-services/computer-vision/quickstarts-sdk/image-analysis-client-library-40)
-- [Create a custom Image Analysis model](/azure/cognitive-services/computer-vision/how-to/model-customization?tabs=python)
-- [Use the Image Analysis 4.0 Analyze API](/azure/cognitive-services/computer-vision/how-to/call-analyze-image-40?tabs=csharp)
+- [What is Azure AI Vision?](/azure/ai-services/computer-vision/overview?azure-portal=true)
+- [Getting started using Vision Studio](/azure/ai-services/computer-vision/overview-vision-studio#get-started-using-vision-studio)
+- [Image Analysis](/azure/ai-services/computer-vision/overview-image-analysis?tabs=4-0)
+- [Getting started with Image Analysis 4.0](/azure/ai-services/computer-vision/quickstarts-sdk/image-analysis-client-library-40)
+- [Create a custom Image Analysis model](/azure/ai-services/computer-vision/how-to/model-customization?tabs=python)
 - [Project Florence (AI)](https://www.microsoft.com/research/project/projectflorence/)
 - [Microsoft's Florence foundation model](https://azure.microsoft.com/blog/announcing-a-renaissance-in-computer-vision-ai-with-microsofts-florence-foundation-model/)
 - [Florence: A New Foundation Model for Computer Vision](https://www.microsoft.com/research/publication/florence-a-new-foundation-model-for-computer-vision/)
