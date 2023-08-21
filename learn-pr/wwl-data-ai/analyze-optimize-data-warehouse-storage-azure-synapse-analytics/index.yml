@@ -30,6 +30,5 @@ subjects:
 - storage
 units:
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-skewed-data-space-usage
-- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-rules-for-minimally-logged-operations
 badge:
   uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.badge
