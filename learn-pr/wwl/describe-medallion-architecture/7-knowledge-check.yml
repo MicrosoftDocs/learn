@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/16/2023
+  ms.date: 08/21/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -35,14 +35,14 @@ quiz:
     - content: "Notebooks"
       isCorrect: true
       explanation: "Correct. Notebooks are a more suitable tool for data transformation with big data in Fabric."
-  - content: "Question 3?"
+  - content: "What is the benefit of storing different layers of your lakehouse in separate workspaces?"
     choices:
-    - content: "To grant access to all items within a workspace."
-      isCorrect: false
-      explanation: "Incorrect. Item permissions only grant access to specific items."
-    - content: "To grant access to specific columns within a table."
-      isCorrect: false
-      explanation: "Incorrect. Item permissions relate to accessing data within a warehouse, but don't pertain to specific columns within tables."
-    - content: "To grant access to individual warehouses for downstream consumption."
+    - content: "It can enhance security, manage capacity use, and optimize cost-effectiveness."
       isCorrect: true
-      explanation: "Correct.  By granting access to a single data warehouse using item permissions, you can enable downstream consumption of data."
+      explanation: "Correct. Storing different layers of your lakehouse in separate workspaces enhances security and optimizes cost-effectiveness."
+    - content: "It makes it easier to share data with colleagues."
+      isCorrect: false
+      explanation: "Incorrect. Storing different layers of your lakehouse in separate workspaces does not make it easier to share data with colleagues."
+    - content: "There is no benefit of storing different layers of your lakehouse in separate workspaces."
+      isCorrect: false
+      explanation: "Incorrect.  There is a benefit of storing different layers of your lakehouse in separate workspaces."
