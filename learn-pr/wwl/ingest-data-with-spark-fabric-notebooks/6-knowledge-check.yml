@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/21/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+durationInMinutes: 3
+content: |
+  [!include[](includes/6-knowledge-check.md)]

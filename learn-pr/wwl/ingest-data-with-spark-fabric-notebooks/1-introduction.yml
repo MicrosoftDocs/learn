@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks.introduction
+title: Introduction
+metadata:
+  title: Introduction
+  description: "Introduction"
+  ms.date: 08/21/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+durationInMinutes: 2
+content: |
+  [!include[](includes/1-introduction.md)]

@@ -1,0 +1,45 @@
+### YamlMime:Module
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks
+metadata:
+  title: Ingest data with Spark and Microsoft Fabric notebooks
+  description: "Ingest data with Spark and Microsoft Fabric notebooks"
+  ms.date: 08/21/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+title: Ingest data with Spark and Microsoft Fabric notebooks
+summary: Discover how to use Spark and Fabric notebooks to ingest external data to a Microsoft Fabric lakehouse.
+abstract: |
+  By the end of this module, you’ll be able to:
+  *   Ingest external data to Fabric lakehouses using Spark
+  *   Configure external source authentication and optimization
+  *   Load data into lakehouse as files or as Delta tables
+prerequisites: |
+  * Experience with Apache Spark and Python
+  * Basic understanding of extracting, transforming, and loading data
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- intermediate
+roles:
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-ai
+- data-analytics
+- data-engineering
+- data-integration
+units:
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.introduction
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.connect-authenticate
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.write-optimize
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.considerations
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.exercise
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.knowledge-check
+- learn.wwl.ingest-data-with-spark-fabric-notebooks.summary
+badge:
+  uid: learn.wwl.ingest-data-with-microsoft-fabric-notebooks.badge

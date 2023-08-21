@@ -1,0 +1,15 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.ingest-data-with-spark-fabric-notebooks.connect-authenticate
+title: Connect to data with Spark
+metadata:
+  title: Connect to data with Spark
+  description: "Connect to data with Spark"
+  ms.date: 08/21/2023
+  author: wwlpublish
+  ms.author: anrudduc
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+  ms.service: fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/2-connect-authenticate.md)]
