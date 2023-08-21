@@ -8,7 +8,7 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
+  ms.service: ai-services
 durationInMinutes: 60
 content: |
   [!include[](includes/7-exercise-train-custom-object-detection-model.md)]
