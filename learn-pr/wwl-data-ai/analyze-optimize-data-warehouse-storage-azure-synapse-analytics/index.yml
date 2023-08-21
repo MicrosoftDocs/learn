@@ -31,7 +31,6 @@ subjects:
 units:
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.introduction
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-skewed-data-space-usage
-- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-check-for-skewed-data-space-usage
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-column-store-storage-details
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.exercise-view-column-store-storage-details
 - learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-impact-of-wrong-choices-for-column-data-types
