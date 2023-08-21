@@ -62,10 +62,10 @@ type: Microsoft.ContainerInstance/containerGroups
 
 Notice the following characteristics of the YAML description:
 
-- YAML is very sensitive to indentation. Removing or adding a blank space before a line makes it syntactically incorrect. Only spaces, not tabs, are supported for indentation, so be careful with your text editor.
+- YAML is quite sensitive to indentation. Removing or adding a blank space before a line makes it syntactically incorrect. Only spaces, not tabs, are supported for indentation, so be careful with your text editor.
 - Properties and attributes are specified hierarchically in key-value pairs.
 - Many of the labels are familiar from Kubernetes. For example, resource requests follow the same syntax. However, don't expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes uses the `env` keyword.
-- The environment variables are in clear text. This is probably acceptable for most environment variables, but others, such as the SQL password in this example, shouldn't be visible openly. A better way to define this sensitive information is with a secure value, which you implement in the next section.
+- The environment variables are in clear text. Clear text is probably acceptable for most environment variables, but others, such as the SQL password in this example, shouldn't be visible openly. A better way to define this sensitive information is with a secure value, which you implement in the next section.
 
 ## Modify and deploy the YAML file
 

@@ -68,7 +68,7 @@ Azure SQL databases with configured private links use the intermediate domain `p
     > az container create --resource-group $rg --file $aci_yaml_file
     > ```
 
-1. You can verify that Container Instances is up and running with the `api/healthcheck` endpoint. Verify the correct name resolution to a private IP address with the `api/dns` endpoint, and verify database reachability with the `api/sqlversion` and `api/sqlsrcip` endpoints.
+1. You can verify that the container instance is up and running with the `api/healthcheck` endpoint. Verify the correct name resolution to a private IP address with the `api/dns` endpoint, and verify database reachability with the `api/sqlversion` and `api/sqlsrcip` endpoints.
 
     ```azurecli
     # Test

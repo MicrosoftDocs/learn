@@ -1,8 +1,8 @@
-Sometimes you need to do certain tasks before an application starts. For example, you might need to configure certain services to accept inbound connectivity from the container, or inject secrets from Azure Key Vault into a volume. You can implement prerequisite validation or initialization tasks in Initialization (init) containers.
+Sometimes you need to do certain tasks before an application starts. For example, you might need to configure certain services to accept inbound connectivity from the container, or inject secrets from Azure Key Vault into a volume. You can implement these prerequisite validation or initialization tasks in Initialization (init) containers.
 
 Init containers are an example of the sidecar pattern you used in a previous unit, but init containers run before any other container in the container group starts. The actual application containers in the application group only start after any defined init containers successfully complete their tasks. Azure Container Instances init containers are the same concept as Kubernetes init containers.
 
-Your customer wants to reach their API by using a Fully Qualified Domain Name (FQDN) instead of an IP address, and to make sure that the FQDN doesn't change if the container is recreated. You can use an init container to provide this functionality. In this unit, you use an init container to update the Domain Name System (DNS) so customers can always access the API by using a domain name instead of an IP address.
+Your customer wants to reach their API by using a Fully Qualified Domain Name (FQDN) instead of an IP address. They also want to make sure that the FQDN doesn't change if they recreate the container. You can use an init container to provide this functionality. In this unit, you use an init container to update the Domain Name System (DNS) so customers can always access the API by using a domain name instead of an IP address.
 
 The following diagram shows the topology of the Container Instances init container:
 
@@ -172,7 +172,7 @@ You can now create a YAML file that builds on the ones you used in previous unit
     more $aci_yaml_file
     ```
     
-1. Create the container instances. The instances take awhile longer to create because the init container runs before the application and NGINX containers start.
+1. Create the container instances. These instances take a while longer to create because the init container runs before the application and NGINX containers start.
 
     ```azurecli
     # Deploy ACI
@@ -197,7 +197,7 @@ You can now create a YAML file that builds on the ones you used in previous unit
     az container logs -n $aci_name -g $rg --container-name azcli
     ```
     
-1. To avoid continued charges, delete the Azur resource group to clean up all the resources you created for this unit and module.
+1. To avoid continued charges, delete the Azure resource group to clean up all the resources you created for this unit and module.
 
     ```azurecli
     # Clean up module

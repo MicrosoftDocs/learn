@@ -40,10 +40,10 @@ quiz:
     choices:
     - content: "Only the same image as the main application container."
       isCorrect: false
-      explanation: "Sidecar containers can use completely different container images from the application container."
+      explanation: "Sidecar containers can use different container images from the application container."
     - content: "Any container image from any image repository."
       isCorrect: true
-      explanation: "Containers in one container group can be instantiated from completely different container images, even from different repositories."
+      explanation: "Containers in one container group can be instantiated from different container images, even from different repositories."
     - content: "Any container image that's from the same image repository as the application container."
       isCorrect: false
       explanation: "Containers in one container group can be instantiated from different image repositories."

@@ -2,7 +2,7 @@ In this unit, you create an Azure Container Instances container inside of a virt
 
 Because the application is only reachable from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working. Using an Azure Virtual Machine as a jump host, you verified the correct operation of the container and the connectivity from the Azure Container Instance to an Azure SQL Database.
 
-Virtual networks are isolated networking segments where workloads can be deployed so that they are only accessible privately and, optionally, over the public internet. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks. An Azure container instance deployed to a virtual network receives a private IP address from the virtual network range. The private IP is only reachable from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute.
+Virtual networks are isolated networking segments where workloads can be deployed so that they're only accessible privately and, optionally, over the public internet. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks. An Azure container instance deployed to a virtual network receives a private IP address from the virtual network range. The private IP is only reachable from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute.
 
 The following diagram shows the topology you deploy in this unit:
 
@@ -69,7 +69,7 @@ The following diagram shows the topology you deploy in this unit:
 
 ## Create a container instance in the virtual network
 
-Now that you have all the required components, you can deploy the Azure container instance. You specify the Azure SQL database Fully-Qualified Domain Name (FQDN) and credentials in environment variables, so the container instance can connect to it.
+Now that you have all the required components, you can deploy the Azure container instance. You specify the Azure SQL database Fully Qualified Domain Name (FQDN) and credentials in environment variables, so the container instance can connect to it.
 
 1. Run the following Azure CLI command to deploy the Azure container instance. Retry the command if you get an error on the first attempt.
 
@@ -102,7 +102,7 @@ The Azure SQL firewall rules must be updated to allow API access before the appl
 
 The egress IP address for an Azure container instance isn't trivial to obtain. The application endpoint `api/ip` shows some of its networking attributes, including its public egress IP address. In this case, the API code itself finds out and uses the obtained egress IP to update the Azure SQL database.
 
-The application should then be able to access the Azure SQL database. You can verify that the application has access by using the application endpoint `api/sqlversion` to show the version of the target database.
+The application should then be able to access the Azure SQL database. You can verify that the application can access the database by using the application endpoint `api/sqlversion` to show the database version.
 
 Run the following code to update the firewall rules and test API access:
 
