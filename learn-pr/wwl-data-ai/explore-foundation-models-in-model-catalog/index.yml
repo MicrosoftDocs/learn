@@ -6,8 +6,8 @@ metadata:
     Explore foundation models in the model catalog
   description: "TODO this field is for search engine optimization and is not user-visible; use 2-3 complete, grammatically correct sentences to describe the module; include relevant search keywords."
   ms.date: 7/24/2023
-  author: {{githubUsername}}
-  ms.author: {{msUser}}
+  author: madiepev
+  ms.author: madiepev
   ms.topic: module-standard-task-based # Please don't edit, used for our analytics
 ###########################################################################
 ###
@@ -19,43 +19,37 @@ metadata:
 ### The list of approved ms.prod values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msprod
 ### The list of approved ms.service values is here: https://review.learn.microsoft.com/help/platform/metadata-taxonomies?branch=main#msservice
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
-  ms.prod: TODO
-  ms.service: TODO
+  ms.service: machine-learning
 title: |
   Explore foundation models in the model catalog
 summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
 abstract: |
   By the end of this module, you'll be able to:
-    - "TODO learning objective 1"
-    - "TODO learning objective 2"
-    - "TODO learning objective 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-learning-objectives?branch=main)"
+    - Understand the developments that have led to foundation models.
+    - Explore the different types of foundation models available in the model catalog.
+    - Use a foundation model.
 prerequisites: |
-  - "TODO prerequisite 1"
-  - "TODO prerequisite 2"
-  - "TODO prerequisite 3 (if needed; see https://review.docs.microsoft.com/help/learn/id-guidance-prerequisites?branch=main"
+  - Familiarity with Azure and the Azure portal.
 iconUrl: /learn/achievements/generic-badge.svg
 levels: # see level taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#level
-  - TODO
+  - intermediate
 roles: # see role taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#role
-  - TODO
+  - data-scientist
 products: # see product taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#product
-  {{products}}
+  - azure-machine-learning
 subjects: # see subject taxonomy https://review.docs.microsoft.com/help/contribute/metadata-taxonomies?branch=main#subject
-  - TODO
+  - cloud-computing
+  - artificial-intelligence
+  - machine-learning
+  - natural-language-processing
 units:
 - learn.explore-foundation-models-in-model-catalog.introduction
-
 - learn.explore-foundation-models-in-model-catalog.statistical-techniques
-
 - learn.explore-foundation-models-in-model-catalog.deep-learning
-
 - learn.explore-foundation-models-in-model-catalog.transformers
-
-- undefined.explore-foundation-models-in-the-model-catalog {{learnRepo}}.{{moduleName}}.{{unitName}}
+- learn.explore-foundation-models-in-model-catalog.explore-foundation-models
 - learn.explore-foundation-models-in-model-catalog.exercise
-
 - learn.explore-foundation-models-in-model-catalog.knowledge-check
-
 - learn.explore-foundation-models-in-model-catalog.summary
 
 badge:
