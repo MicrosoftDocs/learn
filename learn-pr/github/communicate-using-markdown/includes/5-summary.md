@@ -1,10 +1,10 @@
-In this module, you learned about Markdown and GitHub-flavored Markdown so you could communicate more expressively throughout GitHub.
+In this module, you learned about Markdown and GitHub-flavored Markdown to communicate more expressively throughout GitHub.
 
-You learned about:
+You learned:
 
-- Using Markdown to add lists, images, and links in a comment or text file.
-- Determining where and how to use Markdown in a GitHub repository.
-- Learning about syntax extensions available in GitHub (GitHub-flavored Markdown).
+- How to use Markdown to add lists, images, and links in a comment or text file.
+- Where and how to use Markdown in a GitHub repository.
+- Syntax extensions available in GitHub (GitHub-flavored Markdown).
 
 Now that you know how to use Markdown on GitHub, learn to [Create and host web sites by using GitHub Pages](/training/modules/create-host-web-sites-github-pages/).
 

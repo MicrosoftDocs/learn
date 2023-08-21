@@ -3,12 +3,11 @@ uid: learn.github.communicate-using-markdown.2-what-is-markdown
 title: What is Markdown?
 metadata:
   title: What is Markdown?
-  description: Learn to use common Markdown features to enhance your GitHub communications.
+  description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 8
 content: |
   [!include[](includes/2-what-is-markdown.md)]

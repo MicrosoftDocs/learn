@@ -49,7 +49,7 @@ There are several free GitHub products, in addition to the paid ones:
 
 GitHub Free provides the basics for individuals and organizations. Anyone can sign up for the free version of GitHub.
 
-**GitHub Free for personal accounts**
+#### GitHub Free for personal accounts
 
 Signing up for GitHub Free gives a new user a *personal user account*. A personal user account includes unlimited public and private repositories and unlimited collaborators.
 
@@ -65,7 +65,7 @@ With GitHub Free, a personal account includes:
   - 2,000 minutes per month
   - Deployment protection rules for public repositories
 
-**GitHub Free for organizations**
+#### GitHub Free for organizations
 
 With GitHub Free for organizations, you can work with unlimited collaborators on unlimited public repositories with a full feature set or unlimited private repositories with a limited feature set.
 
@@ -92,7 +92,7 @@ GitHub Pro accounts include all of the features of a GitHub Free account, plus t
   - Autolinked references
   - GitHub Pages
   - Wikis
-  - Repository insights graphs: pulse, contributors, traffic, commits, code frequency, network, and forks
+  - Repository insight graphs for pulse, contributors, traffic, commits, code frequency, network, and forks
 
 ### GitHub Team
 
@@ -113,7 +113,7 @@ Let's go over the extra features in GitHub Team that help with team collaboratio
     - Scheduled reminders
     - GitHub Pages
     - Wikis
-  -	Repository insights graphs: pulse, contributors, traffic, commits, code frequency, network, and forks
+  -	Repository insight graphs for pulse, contributors, traffic, commits, code frequency, network, and forks
   -	The option to enable or disable GitHub Codespaces
 
 ### GitHub Enterprise

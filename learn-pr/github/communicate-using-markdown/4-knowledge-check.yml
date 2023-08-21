@@ -3,12 +3,11 @@ uid: learn.github.communicate-using-markdown.4-knowledge-check
 title: Knowledge check
 metadata:
   title: Knowledge check
-  description: Check what you've learned.
+  description: This content is part of the "Communicate effectively on GitHub using Markdown" module.
   ms.date: 06/26/2020
   author: a-a-ron
   ms.author: aastewar
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: training-unit
 durationInMinutes: 3
 content: |
   [!include[](includes/4-knowledge-check.md)]
@@ -25,7 +24,7 @@ quiz:
       explanation: "Incorrect. This snippet would produce **Hello, *world*!**."
     - content: "`*Hello, **world**!*`"
       isCorrect: true
-      explanation: "Correct! Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
+      explanation: "Correct. Remember that you can also use underscores (`_`) instead of asterisks if you prefer."
     - content: "`### Hello, world!`"
       isCorrect: False
       explanation: "Incorrect. This snippet would produce ### Hello, world!"

@@ -16,6 +16,7 @@ abstract: |
   - Determine where and how to use Markdown in a GitHub repository.
   - Learn about syntax extensions available in GitHub (GitHub-flavored Markdown).
 prerequisites: |
+  - Basic understanding of GitHub
   - A GitHub account
   - The ability to navigate and edit files in GitHub
 iconUrl: /training/achievements/github/communicate-using-markdown.svg
