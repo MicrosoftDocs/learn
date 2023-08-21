@@ -2,7 +2,6 @@ In this unit, you create an Azure Container Instances container inside of a virt
 
 Because the application is only reachable from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working. Using an Azure Virtual Machine as a jump host, you verified the correct operation of the container and the connectivity from the Azure Container Instance to an Azure SQL Database.
 
-
 Virtual networks are isolated networking segments where workloads can be deployed so that they are only accessible privately and, optionally, over the public internet. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks. An Azure container instance deployed to a virtual network receives a private IP address from the virtual network range. The private IP is only reachable from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute.
 
 The following diagram shows the topology you deploy in this unit:
@@ -12,8 +11,6 @@ The following diagram shows the topology you deploy in this unit:
 1. You deploy the container instance that contains the customer API inside an Azure virtual network.
 1. You deploy a VM inside the same virtual network, which you use to test the API. You need the VM because, per the business requirements, the container instance deployed in the virtual network isn't reachable via the public internet.
 1. You create an Azure SQL database that the customer API needs to operate. In this example, the container instance reaches the Azure SQL database over the public internet.
-
-[!include[](../../../includes/azure-exercise-subscription-prerequisite.md)]
 
 ## Create the environment
 
@@ -117,7 +114,7 @@ ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -s http://$aci
 ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -s http://$aci_ip:8080/api/sqlsrcip"
 ```
 
-The last command of the previous code block calls the application's endpoint `api/sqlsrcip`, which sends a SQL query to the backend database asking for the source IP address as seen by the database. You can verify that Azure SQL Database sees the application coming from its public IP address.
+The last command of the preceding code block calls the application's endpoint `api/sqlsrcip`, which sends a SQL query to the backend database asking for the source IP address as seen by the database. You can verify that Azure SQL Database sees the application coming from its public IP address.
 
 1. You can delete the container created in this unit, so that we can move on to the next one.
 

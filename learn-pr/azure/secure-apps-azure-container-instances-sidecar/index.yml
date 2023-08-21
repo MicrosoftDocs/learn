@@ -1,22 +1,23 @@
 ### YamlMime:Module
 uid: learn.azure.azure-container-instances-sidecar
 metadata:
-  title: Secure apps with Azure Container Instances
-  description: Use YAML and Azure CLI to code Container Instances with sidecar and initialization containers to secure your apps. Use Private Link to access Azure resources.
-  ms.date: 08/18/2023
+  title: Use advanced Azure Container Instances features
+  description: 
+  ms.date: 08/21/2023
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
   ms.service: container-instances
-title: Secure apps with Azure Container Instances
-summary: Use YAML and Azure CLI to code Container Instances with sidecar and initialization containers to secure your apps. Use Private Link to access Azure resources.
+title: Use advanced Azure Container Instances features
+summary: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
 abstract: |
-  - Deploy Azure Container Instances in Azure Virtual Networks.
-  - Configure Container Instances by using Azure CLI or YAML.
-  - Create sidecar and initialization container definitions by using YAML.
-  - Integrate with Azure services by using Azure Private Link.
+  - Deploy Container Instances in Azure Virtual Networks by using Azure CLI.
+  - Learn to define containers with YAML, for greater flexibility and similarity to Kubernetes YAML manifests.
+  - Enhance an existing application with a sidecar container, to add functionality without having to modify the original application code.
+  - Use Azure Private Link to connect to Azure platform-as-a-service (PaaS) resources with private IP addressing.
+  - Use initialization containers to do initialization tasks.
 prerequisites: |
-  - Access to an Azure subscription with permission to create resources.
+  - Access to an Azure subscription with resource creation and role assignment permissions.
 iconUrl: /training/achievements/secure-apps-azure-container-instances-sidecar.svg
 levels:
 - intermediate
