@@ -41,7 +41,7 @@ There may be text that is ambiguous in nature, or that has mixed language conten
 
 The text analytics capabilities in Azure AI Language can evaluate text and return sentiment scores and labels for each sentence. This capability is useful for detecting positive and negative sentiment in social media, customer reviews, discussion forums and more.
 
-Using a prebuilt machine learning classification model, Azure AI Language evaluates the text and returns a sentiment score in the range of 0 to 1, with values closer to 1 being a positive sentiment. Scores that are close to the middle of the range (0.5) are considered neutral or indeterminate.
+Azure AI Language uses a prebuilt machine learning classification model to evaluate the text. The service returns a sentiment score in the range of 0 to 1. Values closer to 1 represent a positive sentiment. Scores that are close to the middle of the range (0.5) are considered neutral or indeterminate.
 
 For example, the following two restaurant reviews could be analyzed for sentiment:
 
