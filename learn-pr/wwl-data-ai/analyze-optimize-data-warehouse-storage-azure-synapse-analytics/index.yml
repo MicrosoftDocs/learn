@@ -29,6 +29,5 @@ subjects:
 - data-warehousing
 - storage
 units:
-- learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.understand-skewed-data-space-usage
 badge:
   uid: learn.wwl.analyze-optimize-data-warehouse-storage-azure-synapse-analytics.badge
