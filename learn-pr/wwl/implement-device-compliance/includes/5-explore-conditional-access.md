@@ -1,4 +1,5 @@
 
+
 Conditional access is a feature of Enterprise Mobility + Security (EMS). It provides granular access control to organizational data while allowing users to work from essentially any device and location. Conditional access helps to protect your company’s email and data from the security risks posed by devices that are noncompliant.
 
 Intune and Azure AD work together to enable conditional access for mobile devices. Intune provides information about device compliance with Azure AD. When Azure AD receives a request to access resources, it compares this information to conditional access policies.

@@ -6,10 +6,11 @@ metadata:
   ms.date: 12/04/2020
   author: burkeholland
   ms.author: buhollan
-  ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.topic: module-standard-task-based
   ms.custom: team=cloud_advocates
   ms.contributors: buhollan-01092020
+  ms.service: azure-functions
+  manager: mijacobs
 title: Build Serverless APIs with Azure Functions
 summary: Use Visual Studio Code and Azure Functions to rapidly create a serverless API, implement a RESTful architecture and safely store secure information like connection strings.
 abstract: |

@@ -2,7 +2,7 @@ You can use Microsoft Intune to manage the apps that your company's workforce us
 
 ## Video - Interactive guide to managing devices
 
-The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect devices.
+The following interactive guide steps you through the Microsoft Intune admin center to show you how to manage and protect mobile and desktop applications.
 
 </p>
 <div align=”center”>

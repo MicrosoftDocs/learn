@@ -7,7 +7,6 @@ metadata:
   author: wwlpublish
   ms.author: calopez
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Plan Resource Requirements
 summary: Familiarize yourself with the various configuration options for a new Azure Cosmos DB for NoSQL account.
 abstract: |

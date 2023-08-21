@@ -1,16 +1,19 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.intro-to-data-science-virtual-machine.exercise-preinstalled-tools
 metadata:
-  title: "Exercise: Use the preinstalled tools"
-  description: Use the preinstalled tools in the Data Science Virtual Machine to perform data science.
-  ms.date: 12/14/2022
+  title: Exercise - Use the preinstalled tools
+  description: Learn how to use the preinstalled tools in the Data Science Virtual Machine to perform data science.
+  ms.date: 06/02/2023
   author: jesscioffi
   ms.author: jcioffi
+  ms.reviewer: franksolomon 
   ms.topic: interactive-tutorial
   ms.service: machine-learning
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure
 azureSandbox: true
-title: "Exercise: Use the preinstalled tools"
+title: Exercise - Use the preinstalled tools
 durationInMinutes: 15
 content: |
   [!include[](includes/exercise-preinstalled-tools.md)]

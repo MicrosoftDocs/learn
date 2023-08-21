@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: applied-ai-services
+  ms.subservice: forms-recognizer
 title: Extract data from forms with Form Recognizer
 summary: Form Recognizer uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Form Recognizer* cognitive service.
 abstract: |
@@ -30,7 +31,7 @@ roles:
 - solution-architect
 - student
 products:
-- azure-cognitive-services
+- ai-services
 units:
 - learn.wwl.work-with-form-recognizer.introduction
 - learn.wwl.work-with-form-recognizer.what-form-recognizer

@@ -2,6 +2,7 @@
 
 
 
+
 Earlier in this module you learned that runtime errors in C# are called exceptions and that you need to "catch" them before they crash your application. Really? Catching exceptions before they can crash your application sounds more like a video game than writing an application. So what exactly does it mean to "catch" an exception? To answer that question, you need to start by taking a closer look at what an exception is.
 
 ## What are exceptions?

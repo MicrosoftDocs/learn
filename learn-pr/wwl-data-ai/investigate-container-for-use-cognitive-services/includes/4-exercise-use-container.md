@@ -1,3 +1,4 @@
+
 > [!NOTE]
 >To complete this exercise, you will need a Microsoft Azure subscription. If you don't already have one, you can sign up for a free trial at [https://azure.com/free](https://azure.com/free?azure-portal=true).
 >
@@ -8,4 +9,4 @@
 When you finish the exercise, end the lab to close the VM. Don't forget to come back and complete the knowledge check to earn points for completing this module!
 
 > [!TIP]
-> After completing the exercise, if you've finished exploring Azure cognitive services, delete the Azure resources that you created during the exercise.
+> After completing the exercise, if you've finished exploring Azure AI services, delete the Azure resources that you created during the exercise.

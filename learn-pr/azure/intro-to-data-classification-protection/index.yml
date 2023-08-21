@@ -3,15 +3,14 @@ uid: learn.azure.classification-and-protection
 metadata:
   title: Intro to data classification and protection
   description: Learners should know and be able to describe data classification and data protection key concepts.
-  ms.date: 03/25/2021
+  ms.date: 05/03/2023
   author: cwatson-cat
   ms.author: cwatson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Intro to data classification and protection 
 summary: Learners should know and be able to describe data classification and data protection key concepts.
 abstract: |
-  By the end of this module, you will be able to answer:
+  By the end of this module, you're able to answer:
   - What is a sensitive information type?
   - What is data classification?
   - What is data classification in the context of data governance and privacy compliance?
@@ -32,7 +31,6 @@ roles:
 products:
 - azure
 - azure-active-directory
-- m365-information-protection
 subjects:
 - security
 - classification-analysis

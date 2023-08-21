@@ -3,11 +3,11 @@ uid: learn.quantum.get-started-azure-quantum
 metadata:
   title: Get started with Azure Quantum
   description: Learn how to get started with Azure Quantum and create an Azure Quantum workspace.
-  ms.date: 01/01/2021
+  ms.date: 05/23/2023
   author: aviviano
   ms.author: amvivian
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure-quantum
 title: Get started with Azure Quantum
 summary: Learn how to get started with Azure Quantum, what it has to offer, and how to create an Azure Quantum workspace to run jobs in the cloud.
 abstract: |
@@ -34,7 +34,6 @@ units:
 - learn.quantum.get-started-azure-quantum.3-create-quantum-workspace
 - learn.quantum.get-started-azure-quantum.get-started-jupyter-notebook
 - learn.quantum.get-started-azure-quantum.4-case-study-quantum-computing
-- learn.quantum.get-started-azure-quantum.5-case-study-optimization
 - learn.quantum.get-started-azure-quantum.6-knowledge-check
 - learn.quantum.get-started-azure-quantum.7-summary
 badge:

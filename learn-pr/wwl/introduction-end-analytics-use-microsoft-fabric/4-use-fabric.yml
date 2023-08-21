@@ -1,0 +1,18 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric.use-fabric
+title: Enable and use Microsoft Fabric
+metadata:
+  title: Enable and use Microsoft Fabric
+  description: "Enable and use Microsoft Fabric"
+  ms.date: 07/20/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.service: fabric
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+durationInMinutes: 6
+content: |
+  [!include[](includes/4-use-fabric.md)]

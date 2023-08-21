@@ -3,8 +3,8 @@ uid: learn.design-your-site-recovery-solution-in-azure.2-develop-bcdr-plan
 title: Develop a business continuity and disaster recovery plan
 metadata:
   title: Develop a business continuity and disaster recovery plan
-  description: Develop a business continuity and disaster recovery plan
-  ms.date: 11/18/2019
+  description: Develop a business continuity and disaster recovery plan.
+  ms.date: 05/10/2023
   author: ankitaduttaMSFT
   ms.author: ankitadutta
   ms.topic: interactive-tutorial
@@ -15,25 +15,25 @@ content: |
 quiz:
   title: Check your knowledge
   questions:
-  - content: List the differences between Azure Backup and Azure Site Recovery, and identify a scenario where Azure Backup or Azure Site Recovery should be used.
+  - content: What's the difference between Azure Backup and Azure Site Recovery?
     choices:
-    - content: Azure Site Recovery can be used to protect Azure VMs, Azure Backup is only used to protect on-premises targets. You would use Azure Site Recovery to trigger a failover from on-premises virtual machines to an Azure environment.
+    - content: Azure Site Recovery helps protect Azure VMs, whereas Azure Backup helps protect only on-premises targets. You would use Azure Site Recovery to trigger a failover from on-premises virtual machines to an Azure environment.
       isCorrect: false
-      explanation: Azure Backup can back up your Azure virtual machines.
-    - content: Azure Site Recovery can be used to keep your workloads running, Azure Backup is used for keeping your data safe.
+      explanation: Azure Backup can back up Azure virtual machines.
+    - content: Azure Site Recovery can help keep workloads running, whereas Azure Backup can help keep data safe.
       isCorrect: true
-      explanation: Azure Site Recovery and Azure Backup are used together to ensure you have a good business continuity and disaster recovery process in place. You would use Azure Site Recovery to trigger a failover from on-premises virtual machines to an Azure environment.
-    - content: Azure Site Recovery can be used for retaining long-term data, Azure Backup is only used for short-term data retention. You would use Azure Backup to trigger a test failover on from on-premises infrastructure to an Azure infrastructure.
+      explanation: You can use Azure Site Recovery and Azure Backup together to help ensure that you have a good business continuity and disaster recovery process in place. You would use Azure Site Recovery to trigger a failover from on-premises virtual machines to an Azure environment.
+    - content: Azure Site Recovery is for retaining long-term data, whereas Azure Backup is for retaining short-term data. You would use Azure Backup to trigger a test failover from an on-premises infrastructure to an Azure infrastructure.
       isCorrect: false
-      explanation: Azure Site Recovery isn't used for long-term retention of data. Azure Backup is used for long-term data retention. You have 9999 retention points. Daily usage would mean you wouldn't run out of retention points for 27 years. You also wouldn't use Azure Backup to trigger a test failover to another site, you would use Azure Site Recovery.
+      explanation: Azure Site Recovery isn't for long-term data retention. Azure Backup is for long-term data retention. You have 9,999 retention points. With daily usage, you wouldn't run out of retention points for 27 years. You also wouldn't use Azure Backup to trigger a test failover to another site. Instead, you would use Azure Site Recovery.
   - content: What are some Azure features that contribute to high availability of virtual machines?
     choices:
-    - content: Availability Sets, Recovery Zones.
+    - content: Availability sets, recovery zones.
       isCorrect: false
-      explanation: Recovery zones don't exist in Azure. Availability Zones do however exist, and they can help increase the availability of your virtual machines.
-    - content: Availability Zones, Region pairing.
+      explanation: Recovery zones don't exist in Azure. Availability zones do exist, and they can help increase the availability of virtual machines.
+    - content: Availability zones, region pairing.
       isCorrect: true
-      explanation: Availability Zones and Region pairing used together, increases the availability of your virtual machines.
-    - content: Availability Points, Region Pairing.
+      explanation: Using availability zones and region pairing together increases the availability of virtual machines.
+    - content: Availability points, region pairing.
       isCorrect: false
-      explanation: Availability Points don't exist in Azure. You can however use Availability Sets and Availability Zones, to increase the availability of your virtual machines.
+      explanation: Availability points don't exist in Azure. You can use availability sets and availability zones to increase the availability of virtual machines.

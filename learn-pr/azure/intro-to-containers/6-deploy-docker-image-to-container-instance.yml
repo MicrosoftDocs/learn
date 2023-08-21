@@ -8,6 +8,8 @@ metadata:
   author: MGoedtel
   ms.author: magoedte
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
   ms.prod: learning-azure
 durationInMinutes: 5
 content: |

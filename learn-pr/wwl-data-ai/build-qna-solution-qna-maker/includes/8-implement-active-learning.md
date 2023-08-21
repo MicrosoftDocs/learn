@@ -1,3 +1,4 @@
+
 After creating and testing a knowledge base, you can improve its performance with *active learning* and by defining *synonyms*.
 
 ## Use active learning

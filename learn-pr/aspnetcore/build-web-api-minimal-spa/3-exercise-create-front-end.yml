@@ -7,7 +7,10 @@ metadata:
   ms.date: 11/04/2021
   author: softchris
   ms.author: chnoring
-  ms.custom: team=nextgen
+  ms.manager: markl
+  ms.custom:
+    - team=nextgen
+    - devx-track-dotnet
   ms.topic: interactive-tutorial
   ms.prod: aspnet-core
 durationInMinutes: 8

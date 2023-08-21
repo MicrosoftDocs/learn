@@ -2,12 +2,11 @@
 uid: learn.wwl.describe-monitoring-tools-azure
 metadata:
   title: Describe monitoring tools in Azure
-  description: "Describe monitoring tools in Azure"
-  ms.date: 10/12/2022
+  description: "This module describes tools that help monitor Azure utilization and status."
+  ms.date: 08/17/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 title: Describe monitoring tools in Azure
 summary: This module covers tools that you can use to monitor your Azure environment.
 abstract: |

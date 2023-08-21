@@ -4,13 +4,11 @@ title: Summary
 metadata:
   title: Summary
   description: "Summary"
-  ms.date: 01/10/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure-devops
 durationInMinutes: 1
 content: |
   [!include[](includes/6-summary.md)]

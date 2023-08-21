@@ -1,0 +1,16 @@
+### YamlMime:ModuleUnit
+uid: learn.provision-linux-virtual-machine-in-azure.provision-linux-virtual-machine-using-azure-cli
+title: Provision a Linux virtual machine by using Azure CLI
+metadata:
+  title: Provision a Linux virtual machine by using Azure CLI
+  description: Learn how to provision by using Azure CLI.
+  ms.date: 05/01/2023
+  author: chasecrum
+  ms.author: chasecrum
+  ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-azurecli
+  ms.prod: learning-azure
+durationInMinutes: 13
+content: |
+  [!include[](includes/3-provision-linux-virtual-machine-using-azure-cli.md)]

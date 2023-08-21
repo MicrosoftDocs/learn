@@ -34,6 +34,6 @@ The following image illustrates an HB60 SKU with 15 NUMA domains and 60 cores.
 
 ## Memory bandwidth bound applications
 
-If you have an application that is bound by memory bandwidth, you might get better performance on the VM by reducing the number of parallel processes and threads in each NUMA node domain. This can provide more memory bandwidth per process and possibly reduce wall clock time.
+If you have an application that's bound by memory bandwidth, you might get better performance on the VM by reducing the number of parallel processes and threads in each NUMA node domain. This can provide more memory bandwidth per process and possibly reduce wall clock time.
 
 For example, if you're using HB120_v2 SKU with 30 NUMA node domains, you can try running 1, 2, and 3 processes and threads per NUMA node domain (for example: 30, 60, and 90 processes and threads per VM). You can then see which configuration gives the best performance.

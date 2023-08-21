@@ -1,23 +1,33 @@
-Azure and Azure DevOps support development of just about any kind of application, including Java. Use Azure DevOps to build and deploy anywhere. On Azure, you can deploy to a virtual machine, an app service, a serverless solution, or as a container. You can even deploy your application from Azure DevOps to another cloud or on-premises.
+Azure and Azure DevOps support developing almost any kind of application, including Java. With Azure DevOps, you can build and deploy a Java application to an Azure virtual machine, app service, serverless solution, or container, to another cloud, or on-premises.
 
-In this module, you create an automated CI/CD pipeline for a Java application that you deploy as a Docker container. You learn how a project can begin in GitHub and flow through Azure Pipelines to build, publish, and deploy to Azure App Service.
+In this module, you create an automated pipeline that deploys a Java application in a Docker container to Azure App Service. You begin a Java project in GitHub and set up a continuous integration/continuous deployment (CI/CD) flow through Azure Pipelines to build, publish, and deploy to Azure.
 
-This module focuses on the core tasks that are required to build and deploy your app. It's important to understand that all of the other features of Azure Pipelines are still available for Java applications. You can integrate testing, define multiple stages, and perform other tasks just like you would for your existing applications. We omit these tasks here to keep things focused.
+This module focuses on the core tasks to build and deploy the example app, but Java applications can use all the same Azure Pipelines features as other apps. You can integrate testing, define multiple stages, and do the same tasks as for your existing apps. This module omits those features to focus on the learning path.
 
 ## Learning objectives
 
-After completing this module, you'll be able to:
-
-* Explain how Azure and Azure DevOps support Java applications.
-* Create a project in Azure Pipelines that builds and deploys a basic Java application to Azure.
-* Trigger the pipeline and see your application be built and deployed to Azure.
+- Understand how Azure and Azure DevOps support Java applications.
+- Use a project in GitHub that builds and deploys a containerized Java web app.
+- Create an automated Azure Pipelines CI/CD pipeline that builds and deploys your containerized app to App Service.
 
 ## Prerequisites
 
-This module is self-contained so that you can complete it on its own. However, we strongly recommend that you familiarize yourself with how Azure DevOps works and the kind of deployment environments that are available to you on Azure, such as Azure App Service. If you're new to Azure or Azure DevOps, we have an extensive series of learning paths to help guide you:
+To complete this module, you need the following prerequisites:
+
+- A GitHub account.
+- Access to an Azure subscription with **Owner** role. If you don't have one, [get an Azure account for free](https://azure.microsoft.com/free/?azure-portal=true).
+- An Azure DevOps organization with [Project Collection Administrators](/azure/devops/organizations/security/change-organization-collection-level-permissions) group membership or collection-level **Create new projects** permission. Organization owners are automatically members of the **Project Collection Administrators** group. If you don't have an Azure DevOps organization, [create one](/azure/devops/organizations/accounts/create-organization).
+
+The module is self-contained so you can complete it on its own, but assumes some familiarity with the following technologies:
+
+- Java language and programming
+- Azure deployment environments like App Service
+- Azure DevOps components and processes
+
+If you're new to Azure DevOps, see the following learning path series for guidance:
 
 * [Get started with Azure DevOps](../../../paths/evolve-your-devops-practices/index.yml?azure-portal=true)
 * [Build applications with Azure DevOps](../../../paths/build-applications-with-azure-devops/index.yml?azure-portal=true)
 * [Deploy applications with Azure DevOps](../../../paths/deploy-applications-with-azure-devops/index.yml?azure-portal=true)
 
-This module also assumes you're already familiar with Java, although that isn't a requirement for completing the steps involved.
+In the next unit, you set up your GitHub repo and Azure resources for this module.

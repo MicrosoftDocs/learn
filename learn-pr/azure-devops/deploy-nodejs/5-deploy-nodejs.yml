@@ -8,8 +8,8 @@ metadata:
   author: juliakm
   ms.author: jukullam
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-  ms.custom: devdivchpfy22, engagement-fy23
+  ms.service: azure
+  ms.custom: devdivchpfy22, engagement-fy23, devx-track-js
 durationInMinutes: 15
 content: |
   [!include[](includes/5-deploy-nodejs.md)]

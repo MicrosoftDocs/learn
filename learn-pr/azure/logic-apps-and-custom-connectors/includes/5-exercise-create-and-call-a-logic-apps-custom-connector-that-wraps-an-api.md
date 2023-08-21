@@ -8,8 +8,6 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
 
 1. In the left menu pane, select **Integration**, then find and select **Logic App**.
 
-1. On the **Logic App** pane, select **Create**.
-
 1. On the **Create Logic App** pane, under **Basics**, enter the following values for each setting.
 
    | Setting | Value |
@@ -21,9 +19,11 @@ In this exercise, you'll create a custom connector for the Print Framer API and 
    | Logic App name | Provide a unique name. Remember the name for later use. |
    | Publish | Workflow |
    | Region | Select a region near you. |
-   | Enable log analytics | No |    
+   | Enable log analytics | No |
    | **Plan** |
    | Plan type | Consumption |
+   | **Zone redundancy** |
+   | Zone redundancy | Leave as default (disables) |
    | | |
 
    [!include[](../../../includes/azure-sandbox-regions-first-mention-note-friendly.md)]
@@ -64,7 +64,7 @@ We now have a basic logic app workflow. Let's add a custom connector so that we 
    | --- | --- |
    | **Project details** |
    | Subscription | Concierge Subscription |
-   | Resource group | Select **Use existing**, and choose *<rgn>Sandbox resource group </rgn>* |
+   | Resource group | Select *<rgn>Sandbox resource group </rgn>* |
    | **Instance details** |
    | Custom connector name | PrintFramerConnector |
    | Region | Select a region that's near you and also supported by the sandbox. |
@@ -93,7 +93,7 @@ The OpenAPI file tells the custom connector about the operations that are availa
 
 1. In the **General Information** section, in the **Description** box, enter **Obtain an estimate for a picture frame**. You might have to scroll down to see this part of the configuration pane.
 
-1. In the **Host** textbox, enter the URL that you noted earlier.
+1. In the **Host** textbox, enter the Example URL that you noted earlier.
 
 1. On the **Security** pane, make sure that **No Authentication** is selected.
 
@@ -123,7 +123,7 @@ Now, you can use the custom connector in your logic app workflow.
 
 1. In the **Estimate the cost of a picture frame** box, put your cursor in the **Height** field. From the dynamic content list that opens, select **height**.
 
-   The following screenshot illustrates this selection.
+   The following screenshot illustrates this selection:
 
    ![Screenshot shows the custom connector and the "height" parameter selected in the dynamic content list.](../media/5-bind-height-parameter.png)
 
@@ -143,7 +143,7 @@ Finally, the workflow needs a way to display the results. You can use the Respon
 
 1. In the dynamic content list that opens, select **Body** from the **Estimate the cost of a picture frame** section.
 
-   The following screenshot shows this selection.
+   The following screenshot shows this selection:
 
    ![Screenshot shows setup for the "Response" action.](../media/5-configure-http-response.png)
 
@@ -157,7 +157,7 @@ The workflow is now complete and will call the Web API using the custom connecto
 
 1. Next to the **HTTP GET URL** field, select **Copy URL**.
 
-1. Open a new browser tab, and paste the URL into the address bar.
+1. Open a new browser tab and paste the URL into the address bar.
 
 1. In the pasted URL, replace the **{height}** parameter with **10**. Replace the **{width}** parameter with **4**. Press <kbd>Enter</kbd>.
 

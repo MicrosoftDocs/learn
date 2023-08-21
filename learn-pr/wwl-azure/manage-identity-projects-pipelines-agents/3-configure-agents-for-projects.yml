@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.manage-identity-projects-pipelines-agents.configure-agents-for-projects
+title: Configure agents for projects
+metadata:
+  title: Configure agents for projects
+  description: "Configure agents for projects."
+  ms.date: 1/25/2023
+  author: LuizMacedo
+  ms.author: lumac
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+durationInMinutes: 4
+content: |
+  [!include[](includes/3-configure-agents-for-projects.md)]

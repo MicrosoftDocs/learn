@@ -8,7 +8,11 @@ metadata:
   author: flang-msft
   ms.author: franlanglois
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - devx-track-dotnet
+    - devx-track-extended-java
+    - devx-track-js
   zone_pivot_groups: dev-lang-csharp-javascript
 interactive: bash
 azureSandbox: true

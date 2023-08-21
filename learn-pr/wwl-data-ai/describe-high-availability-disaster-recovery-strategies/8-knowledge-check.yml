@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 07/13/2022
+  ms.date: 06/21/2023
   author: wwlpublish
   ms.author: jupadrao
   ms.topic: interactive-tutorial
@@ -19,13 +19,13 @@ quiz:
     choices:
     - content: "The number of nodes in a cluster"
       isCorrect: false
-      explanation: "That's incorrect. It is not the recovery point objective."
+      explanation: "That's incorrect. It isn't the recovery point objective."
     - content: "The point to which data needs to be recovered after a failure"
       isCorrect: true
       explanation: "That's correct. RPO is the point in time to which a database should be recovered and equates to the maximum amount of data loss that the business is willing to accept."
-    - content: "A partial database restore"
+    - content: "A partial database restores"
       isCorrect: false
-      explanation: "That's incorrect. While a partial restore may meet your RTO, it is not the correct answer."
+      explanation: "That's incorrect. While a partial restore may meet your RTO, it isn't the correct answer."
   - content: "What is a hybrid solution?"
     choices:
     - content: "A solution that has resources both in Azure as well as on premises or in another cloud provider"
@@ -33,18 +33,18 @@ quiz:
       explanation: "That's correct. Hybrid solutions span both on premises and Azure, or possibly Azure to another public cloud."
     - content: "A solution that uses two different database engines, for example, MySQL and SQL Server"
       isCorrect: false
-      explanation: "That's incorrect. A solution that uses two different database engines, for example, MySQL and SQL Server, is known as a polyglot persistent solution. It is not hybrid."
+      explanation: "That's incorrect. A solution that uses two different database engines, for example, MySQL and SQL Server, is known as a polyglot persistent solution. It isn't hybrid."
     - content: "A solution that spans two different versions of SQL Server"
       isCorrect: false
-      explanation: "That's incorrect. A solution that spans two different versions of SQL Server is is also not an example of a hybrid solution."
+      explanation: "That's incorrect. A solution that spans two different versions of SQL Server is also not an example of a hybrid solution."
   - content: "What is available after failover with database-level protection in SQL Server?"
     choices:
     - content: "Logins, Databases, and SQL Server Agent Job"
       isCorrect: false
-      explanation: "That's incorrect. The MSDB and Master database are not protected so this data is not transferred."
+      explanation: "That's incorrect. The MSDB and Master database aren't protected so this data isn't transferred."
     - content: "Databases and SQL Server Agent jobs"
       isCorrect: false
-      explanation: "That's incorrect. Agent jobs are not protected."
+      explanation: "That's incorrect. Agent jobs aren't protected."
     - content: "Whatever is in the databases; anything outside must be dealt with manually"
       isCorrect: true
-      explanation: "That's correct. Database-level protection means that anything that is captured in the transaction log for a user or application database is accounted for as part of the availability feature. Anything that exists outside of the database or that is not captured as part of the transaction log such as SQL Server Agent jobs and linked servers must be manually dealt with to ensure the destination server can function like the primary in the event of a planned or unplanned failover event."
+      explanation: "That's correct. Database-level protection means that anything that is captured in the transaction log for a user or application database is accounted for as part of the availability feature. Anything that exists outside of the database or that isn't captured as part of the transaction log such as SQL Server Agent jobs and linked servers must be manually dealt with to ensure the destination server can function like the primary in the event of a planned or unplanned failover event."

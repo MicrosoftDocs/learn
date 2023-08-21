@@ -32,7 +32,7 @@ The signature is signed with your storage account key when you create a service 
 
 Because your company provides access to third parties, you can't use Azure AD to create service principals for each third party that requires access to medical images. Your app uses a storage account key for each individual file. The following steps show how to accomplish these steps in code.
 
-#### Create a blob container to connect to the storage account on Azure
+#### Create a blob container client to connect to the storage account on Azure
 
 ```csharp
 BlobContainerClient container = new BlobContainerClient( "ConnectionString", "Container" );

@@ -1,0 +1,59 @@
+### YamlMime:ModuleUnit
+uid: learn.azure.explore-fundamentals-kql.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "A knowledge check about Kusto Query Language (KQL) and how it's used to query data in Microsoft services, including various Azure services, for monitoring and real-time analytics."
+  ms.date: 3/26/2023
+  author: YaelSchuster
+  ms.author: yaschust
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 5
+content: |
+quiz:
+  questions:
+  - content: "What are the strengths of Kusto Query Language (KQL) as a query language?" 
+    choices:
+    - content: "KQL is efficient at retrieving and processing data in near real-time."
+      isCorrect: true
+      explanation: "KQL is designed specifically for large data sets and outperforms many other query languages. It returns query results without modifying the stored data or metadata."
+    - content: "KQL can be used to retrieve, update, and delete data."
+      isCorrect: false
+      explanation: " KQL is for querying only. Unlike SQL, KQL doesn't update or delete data."
+    - content: "KQL is good for use cases other than cybersecurity while SQL is primarily used for security-related queries."
+      isCorrect: false
+      explanation: "KQL is primarily used for near-real-time analytics and monitoring and is ideal for querying data related to reliability, performance, and security."
+  - content: "How is a KQL query built?"
+    choices:
+    - content: "A KQL query is stated in plain text, using a data-flow model designed to make the syntax easy to author and automate."
+      isCorrect: true
+      explanation: "KQL is organized around the way data is processed. Beginning with the data source, each introduces new logic, conditions, and filters."
+    - content: "KQL queries are case-insensitive, except for operators."
+      isCorrect: false
+      explanation: "KQL is always case-sensitive."
+    - content: "The order of operations in a KQL query doesn't matter."
+      isCorrect: false
+      explanation: "The piping of information from one operator to another is sequential in a KQL query. Therefore, the query operator order can affect both results and performance."
+  - content: "What's a good way to reuse KQL queries or parts of queries?"
+    choices:
+    - content: "Save them as files and import them as needed."
+      isCorrect: false
+      explanation: "While you can technically save KQL queries as files on your computer, this method is not efficient and can lead to errors."
+    - content: "Save them as functions."
+      isCorrect: true
+      explanation: "You can use a function as a standalone saved query or as a command as part of another query. Use functions to simplify complex queries, reuse common query patterns, and improve query readability."
+    - content: "Save them as operators."
+      isCorrect: false
+      explanation: "KQL operators are used to manipulate data in a query, not to reuse saved queries. Some common KQL operators include `count`, `take`, `project`, `distinct`, `where`, `sort`, `top`, and `summarize`."
+  - content: "In which of the following services can you not use KQL?"
+    choices:
+    - content: "Azure Data Explorer"
+      isCorrect: false
+      explanation: "KQL was developed as part of Azure Data Explorer."
+    - content: "Azure Monitor"
+      isCorrect: false
+      explanation: "Azure Monitor Logs is based on Azure Data Explorer, and uses the same KQL, with some minor differences."
+    - content: "Azure Cosmos DB"
+      isCorrect: true
+      explanation: "Azure Cosmos DB is a globally distributed, multi-model database service that has a built-in query syntax."

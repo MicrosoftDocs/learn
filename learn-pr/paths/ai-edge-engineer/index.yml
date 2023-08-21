@@ -8,7 +8,7 @@ metadata:
   author: leestott
   ms.author: leestott
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 title: AI edge engineer
 summary: |
   The interplay between AI, cloud, and edge is a rapidly evolving domain. Currently, many IoT solutions are based on basic telemetry. The telemetry function captures data from edge devices and stores it in a data store. Our approach extends beyond basic telemetry. We aim to model problems in the real world through machine learning and deep learning algorithms and implement the model through AI and Cloud on to edge devices. The model is trained in the cloud and deployed on the edge device. The deployment to the edge provides a feedback loop to improve the business process (digital transformation).
@@ -39,7 +39,7 @@ summary: |
     - Learn the process of implementing models to edge devices using containers
     - Explore the use of DevOps for edge devices
 
-  ***Produced in partnership with the University of Oxford – Ajit Jaokar [Artificial Intelligence: Cloud and Edge Implementations course](https://www.conted.ox.ac.uk/courses/artificial-intelligence-cloud-and-edge-implementations)***
+  ***Produced in partnership with the University of Oxford – Ajit Jaokar, Artificial Intelligence: Cloud and Edge Implementations course.***
 
 prerequisites: None
 iconUrl: /training/achievements/ai-edge-engineer.svg

@@ -6,8 +6,8 @@ metadata:
   title: "Responding to security alerts"
   description: "In this unit, you'll learn the importance of responding to security alerts and what that response should look like. You'll also see GitHub functionality that enables you to quickly react to these alerts." # user input: a description for site search and SEO
   ms.date: 1/28/2022
-  author: davenowell
-  ms.author: dapolite
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial 
   ms.prod: learning-azure
 durationInMinutes: 3

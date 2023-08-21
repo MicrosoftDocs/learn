@@ -3,20 +3,20 @@ uid: learn-sqlserver.sql-server-discovery-using-map
 metadata:
   title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit 
   description: SQL Server Discovery using MAP
-  ms.date: 01/31/2019
+  ms.date: 06/07/2023
   author: rwestmsft
   ms.author: randolphwest
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-sqlserver
+  ms.prod: sql
 title: SQL Server Discovery using the Microsoft Assessment and Planning (MAP) toolkit
 summary: Microsoft Assessment and Planning toolkit is a standalone application that automates the inventory of the Microsoft Platform. You can discover information about your Windows deployments, Microsoft 365 installations, and SQL Server instances. This module shows you how to install MAP on your client machine, and then use it to discover SQL Server instances within your corporate environment.
 abstract: |
  In this module, you will:
- - Decide if MAP is the best tool to use for a given administration task
- - Install MAP on your client machine
- - Connect to instances of SQL Server 
- - Automate the collection of inventory data about your database landscape
+ - Decide if MAP is the best tool to use for a given administration task.
+ - Install MAP on your client machine.
+ - Connect to instances of SQL Server.
+ - Automate the collection of inventory data about your database landscape.
 prerequisites: | 
   - Experience administering SQL Server databases
   - Knowledge of SQL Server editions and versions

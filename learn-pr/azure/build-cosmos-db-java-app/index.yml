@@ -8,7 +8,7 @@ metadata:
   ms.author: sidandrews
   manager: jroth
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cosmos-db
 title: Build a Java app with cloud-scale NoSQL Cosmos DB
 summary: Learn how to build a Java-language database app to store and query data in Azure Cosmos DB.
 abstract: |

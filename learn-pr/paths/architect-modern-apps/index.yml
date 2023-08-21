@@ -4,9 +4,9 @@ metadata:
   title: Architect modern applications in Azure learning path
   description: Learn how to build modern applications using PaaS services for applications, caching, containers and Kubernetes in Azure.
   brand: azure
-  ms.date: 10/23/2019
-  author: jboeshart
-  ms.author: jaboes
+  ms.date: 06/09/2023
+  author: rmcmurray
+  ms.author: robmcm
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 title: Architect modern applications in Azure
@@ -32,6 +32,6 @@ modules:
 - learn.host-a-web-application-with-azure-web-apps
 - learn.azure.deploy-run-container-app-service
 - learn.intro-to-azure-kubernetes-service
-- learn.work-with-mutable-and-partial-data-in-a-redis-cache
+# - learn.work-with-mutable-and-partial-data-in-a-redis-cache
 trophy:
   uid: learn.architect-modern-apps.trophy

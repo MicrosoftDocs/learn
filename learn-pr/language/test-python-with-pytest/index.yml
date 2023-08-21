@@ -8,7 +8,6 @@ metadata:
   author: alfredodeza
   ms.author: alfredodeza
   ms.topic: interactive-tutorial
-  ms.prod: learning-language
 title: Testing with Pytest
 summary: Improve your testing experience with Pytest, a great choice to write, run, and extend tests in Python. Get exposed to useful patterns and the basics of testing with Pytest.
 abstract: |

@@ -7,7 +7,6 @@ metadata:
   author: drguthals
   ms.author: chnoring
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
   ms.custom: team=nextgen
 title: Classify types of space rocks in random photos by using artificial intelligence
 summary: Learn how to build an artificial intelligence model to predict types of space rocks in images. Train and test your model by using random photos.

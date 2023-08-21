@@ -14,10 +14,11 @@ print(demo_int)
 
 demo_float = float('215.3')
 print(demo_float)
+```
 
-# Output:
-# 215
-# 215.3
+```Output
+215
+215.3
 ```
 
 > [!IMPORTANT]
@@ -28,8 +29,8 @@ print(demo_float)
 An absolute value in math is the non-negative number without its sign. Using an absolute value can be useful in different situations, including our example of looking to determine distance between two planets. Consider the following math:
 
 ```python
-39 - 16
-16 - 39
+print(39 - 16)
+print(16 - 39)
 ```
 
 Notice the difference between the two equations is that the numbers are reversed. The answers are `23` and `-23`, respectively. When you're determining the distance between two planets, the order in which you enter the numbers doesn't matter, because the absolute answer is the same.
@@ -39,21 +40,22 @@ Convert the negative value to be its absolute value by using `abs`. If you perfo
 ```python
 print(abs(39 - 16))
 print(abs(16 - 39))
+```
 
-# Output
-# 23
-# 23
+```Output
+23
+23
 ```
 
 ## Rounding
 
-The built-in Python function called `round` is also helpful. Use it to round up to the nearest integer if the decimal value is `.5` or greater, or down if it's less than `.5`.
+The built-in Python function called `round` is also helpful. Use it to round up to the nearest integer if the decimal value is greater than `.5`, or down if it's less than or equal to `.5`.
 
 ```python
 print(round(14.5))
-
-# Output: 15
 ```
+
+Output: 14
 
 ## Math library
 
@@ -69,8 +71,9 @@ print(round_up)
 
 round_down = floor(12.5)
 print(round_down)
+```
 
-# Output
-# 13
-# 12
+```Output
+13
+12
 ```

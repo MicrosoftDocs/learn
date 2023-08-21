@@ -12,7 +12,7 @@ Finally, in this module you've seen how you can take advantage of a base class t
 
 The model, in our small sample, is well exemplified by the `ColorDescriptor` class. The data stored about a real-world object or concept is, in this case, color.
 
-The view is our XAML code, **MainPage.xaml** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml**, along with their codebehind files, **MainPage.xaml.cs** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml.cs**.
+The view is our XAML code, **MainPage.xaml** (UWP) / **MainWindow.xaml** (WPF) and **ColorList.xaml**, along with their code-behind files, **MainPage.xaml.cs** (UWP) / **MainWindow.xaml.cs** (WPF) and **ColorList.xaml.cs**.
 
 The viewmodel is the actual business logic driving the UI, making decisions (for example, whether a button should be enabled). In our UWP sample, the `MainPageLogic` and `ColorListLogic` classes are essentially viewmodel classes. In the WPF sample, the `MainWindowDataContext`, the `Clock`, and the `ColorListDataContext` classes are the viewmodels.
 

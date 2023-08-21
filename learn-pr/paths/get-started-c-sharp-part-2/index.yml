@@ -3,7 +3,7 @@ uid: learn.wwl.get-started-c-sharp-part-2
 metadata:
   title: Create and run simple C# console applications (Get started with C#, Part 2)
   description: Use Visual Studio Code to develop C# console applications that implement arrays, foreach loops, and if statements.
-  ms.date: 02/27/2023
+  ms.date: 05/29/2023
   author: wwlpublish
   ms.author: cahowd
   ms.topic: interactive-tutorial
@@ -18,12 +18,12 @@ summary: |
   
   :::row:::
   :::column:::
-    <img src="/training/achievements/csharp-first-steps.svg" width="101" alt="Screenshot of the trophy for the Write your first code using C# (Get started with C#, Part 1) learning path." role="presentation"></img>
+    <img src="/training/achievements/get-started-c-sharp-part-1.svg" width="101" alt="Screenshot of the trophy for the Write your first code using C# (Get started with C#, Part 1) learning path." role="presentation"></img>
     
     [Write your first code using C# (Get started with C#, Part 1)](../get-started-c-sharp-part-1/index.yml)
   :::column-end:::
   :::column:::
-    <img src="/training/achievements/csharp-logic.svg" width="101" alt="Screenshot of the trophy for the Create and run simple C# console applications (Get started with C#, Part 2) learning path." role="presentation"></img>
+    <img src="/training/achievements/get-started-c-sharp-part-2.svg" width="101" alt="Screenshot of the trophy for the Create and run simple C# console applications (Get started with C#, Part 2) learning path." role="presentation"></img>
     
     Create and run simple C# console applications (Get started with C#, Part 2)
   :::column-end:::
@@ -33,7 +33,6 @@ summary: |
     [Add logic to C# console applications (Get started with C#, Part 3)](../get-started-c-sharp-part-3/index.yml) 
   :::column-end:::
   :::row-end:::
-
   :::row:::
    :::column:::
     <img src="/training/achievements/csharp-data.svg" width="101" alt="Screenshot of the trophy for the Work with variable data in C# console applications (Get started with C#, Part 4) learning path." role="presentation"></img>
@@ -51,11 +50,13 @@ summary: |
     [Debug C# console applications (Get started with C#, Part 6)](../get-started-c-sharp-part-6/index.yml)
   :::column-end:::
   :::row-end:::
-iconUrl: /training/achievements/csharp-logic.svg
+iconUrl: /training/achievements/get-started-c-sharp-part-2.svg
 levels:
 - beginner
 roles:
 - developer
+- higher-ed-educator
+- k-12-educator
 - student
 products:
 - dotnet

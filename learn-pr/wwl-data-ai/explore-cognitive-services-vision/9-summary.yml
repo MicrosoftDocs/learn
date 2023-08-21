@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.explore-cognitive-services-vision.summary
+title: Summary
+metadata:
+  title: Summary
+  description: "Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities."
+  ms.date: 08/10/2023
+  author: wwlpublish
+  ms.author: sheryang
+  ms.topic: interactive-tutorial
+  ms.service: ai-services
+durationInMinutes: 2
+content: |
+  [!include[](includes/9-summary.md)]

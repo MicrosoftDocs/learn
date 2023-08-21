@@ -1,45 +1,45 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.incident-management-sentinel.5-manage-incidents
-title: Manage incidents
+title: Incident management
 metadata:
-  title: Manage incidents
-  description: "Manage incidents in Microsoft Sentinel"
-  ms.date: 01/26/2023
+  title: Incident management
+  description: Learn about incident management in Microsoft Sentinel.
+  ms.date: 05/22/2023
   author: wwlpublish
   ms.author: kelawson
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 durationInMinutes: 5
 content: |
   [!include[](includes/5-manage-incidents.md)]
 quiz:
   title: "Check your knowledge"
   questions:
-  - content: "A member of Contoso's security team wants to escalate an incident to a member of the Contoso tier 2 security team. Which incident parameter should you change?"
+  - content: "To escalate an incident to the next tier security team, which incident parameter should you change?"
     choices:
-    - content: "Severity"
+    - content: "Severity."
       isCorrect: false
       explanation: "Severity doesn't change incident ownership."
     - content: "Status"
       isCorrect: false
       explanation: "Status doesn't change incident ownership."
-    - content: "Owner"
+    - content: "Owner."
       isCorrect: true
-      explanation: "You should change the owner parameter to the user account for the member of the tier 2 security team."
-    - content: "Username"
+      explanation: "You should change the owner parameter to a user account for a member of the next tier security team."
+    - content: "Username."
       isCorrect: false
       explanation: "Username is an incident entity and can't be changed."
-  - content: "What Microsoft Sentinel interface enables someone to view timelines and relationships between incident resources?"
+  - content: "Which Microsoft Sentinel interface lets you view timelines and relationships between incident resources?"
     choices:
-    - content: "Investigation graph"
+    - content: "Investigation graph."
       isCorrect: true
-      explanation: "The investigation graph enables you to view timelines and relationships between incident resources."
-    - content: "**Incident details** page"
+      explanation: "The investigation graph lets you view timelines and relationships between incident resources."
+    - content: "**Incident details** page."
       isCorrect: false
-      explanation: "The **Incident details** page doesn't enable you to view timelines and relationships between incident resources."
-    - content: "**Resource relationships** page"
+      explanation: "The **Incident details** page doesn't let you view timelines and relationships between incident resources."
+    - content: "**Resource relationships** page."
       isCorrect: false
-      explanation: "There isn't an interface in Sentinel named **Resource relationships**."
-    - content: "Incident status"
+      explanation: "There's no Resource relationships page in Microsoft Sentinel."
+    - content: "Incident status."
       isCorrect: false
-      explanation: "Viewing incident status doesn't enable you to view timelines and relationships between incident resources."
+      explanation: "Viewing incident status doesn't let you see timelines and relationships between incident resources."

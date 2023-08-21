@@ -1,5 +1,6 @@
 
 
+
 Windows 10 and 11 have similar requirements. Many computers in enterprises today easily meet the minimum hardware requirements.
 
 ### OS requirements

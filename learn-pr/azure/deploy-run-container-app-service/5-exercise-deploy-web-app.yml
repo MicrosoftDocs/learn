@@ -8,6 +8,9 @@ metadata:
   author: msangapu-msft
   ms.author: msangapu
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-extended-java
+    - devx-track-js
   ms.prod: learning-azure
   zone_pivot_groups: dev-lang-csharp-javascript
 durationInMinutes: 10

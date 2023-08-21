@@ -1,0 +1,42 @@
+### YamlMime:Module
+uid: learn.wwl.introduction-end-analytics-use-microsoft-fabric
+metadata:
+  title: Introduction to end-to-end analytics using Microsoft Fabric
+  description: "Discover how Microsoft Fabric can meet your enterprise's analytics needs in one platform. Discover the capabilities Fabric has to offer, understand how it works, and identify how you can use Fabric for your analytics needs."
+  ms.date: 07/20/2023
+  author: wwlpublish
+  ms.author: shlindsay
+  ms.topic: interactive-tutorial
+  ms.custom:
+  - build-2023
+  - build-2023-dataai
+  - build-2023-fabric
+  ms.service: fabric
+title: Introduction to end-to-end analytics using Microsoft Fabric
+summary: Discover how Microsoft Fabric can meet your enterprise's analytics needs in one platform. Learn about Microsoft Fabric, how it works, and identify how you can use it for your analytics needs.
+abstract: |
+  In this module, you'll learn how to:
+  - Describe end-to-end analytics in Microsoft Fabric
+prerequisites: |
+  You should be familiar with basic data concepts and terminology.
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- business-analyst
+- data-analyst
+- data-engineer
+- data-scientist
+products:
+- fabric
+subjects:
+- data-analytics
+units:
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric.introduction
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric.explore-analytics-fabric
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric.data-team
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric.use-fabric
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric.knowledge-check
+- learn.wwl.introduction-end-analytics-use-microsoft-fabric.summary
+badge:
+  uid: learn.wwl.introduction-end-analytics-using-fabric.badge

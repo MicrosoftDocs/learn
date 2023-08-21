@@ -41,3 +41,4 @@ modules:
 - learn.wwl.explore-iot-edge-offline-support
 trophy:
   uid: learn.wwl.develop-deploy-custom-iot-edge-modules.trophy
+hidden: true

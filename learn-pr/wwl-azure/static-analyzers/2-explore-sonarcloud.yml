@@ -4,13 +4,11 @@ title: Explore SonarCloud
 metadata:
   title: Explore SonarCloud
   description: "Explore SonarCloud"
-  ms.date: 01/10/2023
+  ms.date: 06/30/2023
   author: wwlpublish
   ms.author: lumac
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure-devops
 durationInMinutes: 2
 content: |
   [!include[](includes/2-explore-sonarcloud.md)]

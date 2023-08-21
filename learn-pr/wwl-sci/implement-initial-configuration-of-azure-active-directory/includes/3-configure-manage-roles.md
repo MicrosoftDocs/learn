@@ -99,20 +99,20 @@ This section describes how to create new custom roles in Azure AD. For the basic
 
 Custom roles can be created in the [Roles and administrators](https://portal.azure.com/) tab on the Azure AD overview page.
 
-1. Select **Azure Active Directory** \- **Roles and administrators** \- **New custom role**.
+1.  Select **Azure Active Directory** \- **Roles and administrators** \- **New custom role**.
     
     :::image type="content" source="../media/new-custom-role-3acee266.png" alt-text="Screenshot of Create or edit custom roles from the Roles and administrators page.":::
     
-1. On the **Basics** tab, provide a name and description for the role and then select **Next**.
+2.  On the **Basics** tab, provide a name and description for the role and then select **Next**.
     
     :::image type="content" source="../media/basics-tab-4558ef75.png" alt-text="Screenshot of the basics tab. You provide a name and description for a custom role on the Basics tab.":::
     
-1. On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
-1. First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update` permission.
+3.  On the **Permissions** tab, select the permissions necessary to manage basic properties and credential properties of app registrations.
+4.  First, enter "credentials" in the search bar and select the `microsoft.directory/applications/credentials/update` permission.
     
     :::image type="content" source="../media/permissions-tab-e1f5602e.png" alt-text="Screenshot of the Select the permissions for a custom role on the Permissions tab.":::
     
-1. Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then select **Next**.
-1. On the **Review + create** tab, review the permissions and select **Create**.
+5.  Next, enter "basic" in the search bar, select the `microsoft.directory/applications/basic/update` permission, and then select **Next**.
+6.  On the **Review + create** tab, review the permissions and select **Create**.
 
 Your custom role will show up in the list of available roles to assign.

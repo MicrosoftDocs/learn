@@ -4,13 +4,11 @@ title: 'Exercise: Explore Spark Streaming in Azure Synapse Analytics'
 metadata:
   title: 'Exercise: Explore Spark Streaming in Azure Synapse Analytics'
   description: "Exercise: Explore Spark Streaming in Azure Synapse Analytics"
-  ms.date: 08/31/2022
+  ms.date: 06/15/2023
   author: wwlpublish
   ms.author: rcaper
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
-azureSandbox: false
-labModal: false
+  ms.service: azure
 durationInMinutes: 15
 content: |
   [!include[](includes/7-exercise-spark-streaming.md)]

@@ -10,7 +10,10 @@ metadata:
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
   zone_pivot_groups: azure-devops-actions
-  ms.custom: team=cloud_advocates
+  ms.custom:
+    - team=cloud_advocates
+    - devx-track-extended-java
+    - devx-track-terraform
   ms.contributors: ropreddy-04092021
 durationInMinutes: 3
 content: |

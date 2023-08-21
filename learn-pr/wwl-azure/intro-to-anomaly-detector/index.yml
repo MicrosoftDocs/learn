@@ -7,7 +7,8 @@ metadata:
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: cognitive-services
+  ms.subservice: anomaly-detector
 title: Introduction to Anomaly Detector
 summary: Discover the services available on Azure to detect anomalies in your time-series, or real-time data.
 abstract: |
@@ -30,7 +31,7 @@ roles:
 products:
 - azure
 - azure-cloud-services
-- azure-cognitive-services
+- ai-services
 subjects:
 - data-analytics
 units:

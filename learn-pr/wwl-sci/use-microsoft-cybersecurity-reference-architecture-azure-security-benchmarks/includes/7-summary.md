@@ -1,3 +1,4 @@
+
 - **Best practices** are recommended ways to do things that have been found to be most effective or efficient. Best practices help you avoid mistakes and ensure that your resources and effort aren't wasted.
 
 - **Follow best practices unless you have a reason not to.** - Organizations should follow well-defined and well-reasoned best practices unless there's a specific reason to avoid them. Best practices aren't perfectly applicable to all situations, but they've been proven to work elsewhere so you shouldn't ignore or alter them without good reason.

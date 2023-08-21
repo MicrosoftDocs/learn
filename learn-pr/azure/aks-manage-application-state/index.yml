@@ -7,7 +7,10 @@ metadata:
   author: nickomang
   ms.author: nickoman
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
+  ms.custom:
+    - build-2023
+    - build-2023-dataai
 title: Deploy and manage a stateful application by using Azure Cosmos DB and Azure Kubernetes Service
 summary: Learn how to create a stateful application managed by an external data source with Azure Cosmos DB and AKS with the best architecture practices.
 abstract: |

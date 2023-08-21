@@ -6,10 +6,9 @@ metadata:
   ms.date: 04/19/2022
   author: timlt
   ms.author: timlt
-  ms.reviewer: liydu
   manager: lizross
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: rtos
 title: Use event-chaining to suspend multiple objects in ThreadX
 summary: Learn how to use event-chaining to suspend multiple objects in Azure RTOS ThreadX.
 abstract: |

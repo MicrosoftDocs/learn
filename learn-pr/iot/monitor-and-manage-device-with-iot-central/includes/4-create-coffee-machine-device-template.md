@@ -6,7 +6,7 @@ Here, you'll create and publish the **Connected Coffee Machine** device template
 
 ## Create a device template
 
-The [Sample code for Azure IoT Central Documentation](https://github.com/Azure-Samples/iot-central-docs-samples) GitHub repository contains the sample code. Copy the JSON from [iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.json) and save it on your local machine in a file called *CoffeeMaker.json*. This is the device capability model for the coffee machine.
+The [Sample code for Azure IoT Central Documentation](https://github.com/Azure-Samples/iot-central-docs-samples) GitHub repository contains the sample code. Copy the JSON from [iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.json](https://raw.githubusercontent.com/Azure-Samples/iot-central-docs-samples/main/monitor-manage-device-with-iotcentral/CoffeeMaker.json) and save it on your local machine in a file called *CoffeeMaker.json*. This JSON is the device capability model for the coffee machine.
 
 1. Browse to the URL for your IoT application that you created in the previous exercise, such as `https://coffee-maker-1234.azureiotcentral.com`.
 
@@ -34,15 +34,15 @@ To create a view that lets you visualize the telemetry from your coffee machine:
 
 1. Select **Start with devices** and add the following tiles:
 
-    - Select **Cup Detected** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Last Known Value** and size to **2 x 1**.
+    - Select **Cup Detected** in the **Telemetry** category and then **Add tile**. Change the tile visualization to **Last Known Value** and size to **2 x 1**.
 
-    - Select **Brewing** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Last Known Value** and size to **2 x 1**.
+    - Select **Brewing** in the **Telemetry** category and then **Add tile**. Change the tile visualization to **Last Known Value** and size to **2 x 1**.
 
-    - Select **Water Temperature** and **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **Line chart** and size to **2 x 2** then select **Edit**. Change **Title** to *Telemetry* and confirm the **Display range** is set to **Past 30 minutes**. Select **Update**.
+    - Select **Water Temperature** and **Air Humidity** in the **Telemetry** category and then **Add tile**. Change the tile visualization to **Line chart** and size to **2 x 2** then select **Edit**. Change **Title** to *Telemetry* and confirm the **Display range** is set to **Past 30 minutes**. Select **Update**.
 
-    - Select **Water Temperature** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Water Temperature* and select **Past 12 hours** in **Time range**. Select **Update**.
+    - Select **Water Temperature** in the **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Water Temperature* and select **Past 12 hours** in **Time range**. Select **Update**.
 
-    - Select **Air Humidity** in **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Air Humidity* and select **Past 12 hours** in **Time range**. Select **Update**.
+    - Select **Air Humidity** in the **Telemetry** category and then **Add tile**. Change the tile visualization to **KPI** and size to **1 x 1** then select **Edit**. Change **Title** to *Air Humidity* and select **Past 12 hours** in **Time range**. Select **Update**.
 
 1. Save your changes.
 
@@ -70,7 +70,7 @@ Before you can connect a coffee machine device to your IoT Central application, 
 
 ## Check your work
 
-To verify that the device template was published and is ready to use:
+Verify that the device template was published and is ready to use:
 
 1. Navigate to the **Devices** page in your Azure IoT Central application.
 

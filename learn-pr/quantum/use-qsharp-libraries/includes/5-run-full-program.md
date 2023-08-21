@@ -1,10 +1,11 @@
 In the previous unit, you defined the operation `IsbnOracle`. That operation takes as an argument the qubit register for our search space. It ultimately applies a phase factor of -1 to the number state $|x \rangle$, which satisfies the condition $(9 + 6 \cdot x) \bmod 11$. 
 
-You also defined the operation `ComputeIsbnCheck`, which is used inside `IsbnOracle` and performs the necessary arithmetic mapping to a second qubit register. In addition, you wrote the function `GetIsbnCheckConstants` to determine the check condition constants $a$ and $b$ for $(b + a \cdot x) \bmod 11$ from any arbitrary ISBN with a single digit missing. 
+You also defined the operation `ComputeIsbnCheck`, which is used inside `IsbnOracle` and performs the necessary arithmetic mapping to a second qubit register. In addition, you wrote the function `GetIsbnCheckConstants` to determine the check condition constants $a$ and $b$ for $(b + a \cdot x) \bmod 11$ from any arbitrary ISBN with a single digit missing.
 
-We'll continue below with our use of the generalized code, passing these constants to the oracle.
+We'll continue in this unit with our use of the generalized code, passing these constants to the oracle.
 
 Recall that the general process of Grover's algorithm works by applying a certain number of "Grover iterations." Each iteration consists of:
+
 1. Applying the oracle.
 2. Reflecting about the uniform superposition of states.
 
@@ -28,12 +29,11 @@ You can think of this operation as analogous to the previous module's use of `Ap
 
 :::code language="qsharp" source="../code/5-program-2.qs":::
 
-
 ## Step 2. Determine the number of Grover iterations
 
 Each Grover iteration will consist of one application of `IsbnOracle` followed by `ReflectAboutUniform`.
 
-The ideal number of Grover iterations to perform is provided by the number of possible solutions and the total number of states. In this case, we have a single possible solution, so we define the function `NIterations`. That function takes the total number of states as an argument:
+The number of possible solutions and the total number of states provide the ideal number of Grover iterations to perform. In this case, we have a single possible solution, so we define the function `NIterations`. That function takes the total number of states as an argument:
 
 :::code language="qsharp" source="../code/5-program-3.qs":::
 
@@ -45,14 +45,13 @@ To run Grover's algorithm, we can wrap everything into the single operation `Run
 
 :::code language="qsharp" source="../code/5-program-4.qs":::
 
-This operation is general for any phase oracle, so you can introduce as
-an argument the oracle that you defined in the previous unit.
+This operation is general for any phase oracle, so you can introduce the oracle that you defined in the previous unit as an argument.
 
 ## Step 4. Check the result
 
 Recall that in most situations, Grover's algorithm is probabilistic. Although it typically returns a correct answer with a very high probability, there's often a finite chance that the measurement results in an incorrect solution. This is because it merely amplifies the amplitude of the "good" states, so the "bad" states will often retain small amplitudes.
 
-To account for this, we simply check whether the result is correct and then repeat the algorithm if the result is incorrect. In our scenario, we define the classical *function* `IsIsbnValid` to check whether the returned missing digit $x$ provides a valid ISBN. 
+To account for this, we simply check whether the result is correct and then repeat the algorithm if the result is incorrect. In our scenario, we define the classical *function* `IsIsbnValid` to check whether the returned missing digit $x$ provides a valid ISBN.
 
 To keep things a little more general, let's use the general form for the ISBN validity (introduced at the beginning of the previous unit):
 $$
@@ -63,8 +62,7 @@ Our function takes an array of integers that correspond to our ISBN. In our exam
 
 :::code language="qsharp" source="../code/5-program-5.qs":::
 
-
-Our full program simply repeats Grover's algorithm until this condition is met, indicating that the returned digit correctly completes the ISBN. 
+Our full program simply repeats Grover's algorithm until this condition is met, indicating that the returned digit correctly completes the ISBN.
 
 ### Obtain the full ISBN
 
@@ -72,10 +70,9 @@ Recall that the incomplete ISBNs are provided as 10-integer arrays with the miss
 
 :::code language="qsharp" source="../code/5-program-6.qs":::
 
-
 ## Step 5. Run the full program
 
-You need to have access to all the operations, so be sure to include the `open` statements as follows. (We include the corresponding operations that they provide in case you're curious.) 
+You need to have access to all the operations, so be sure to include the `open` statements as follows. (We include the corresponding operations that they provide in case you're curious.)
 
 :::code language="qsharp" source="../code/5-program-7.qs":::
 
@@ -86,13 +83,13 @@ Your program file should look like the following:
 :::code language="qsharp" source="../code/5-program-8.qs":::
 
 > [!NOTE]
-> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `MeasureInteger` requires a QPU with [full computation profile](/azure/quantum/concepts-targets-in-azure-quantum#quantum-processing-units-qpu-different-profiles).
+> This code snippet does not currently run on any available Azure Quantum hardware targets, as the callable `MeasureInteger` requires a QPU with [full computation profile](/azure/quantum/quantum-computing-target-profiles#create-and-run-applications-for--profile-targets).
 >
 > Learn module code that does not feature such a notice is executable on current hardware targets.
 
 ## Find your missing digit
 
-In the command line, enter `dotnet run` and you should see the following output:
+Enter `dotnet run` in the command line, and you should see the following output:
 
 ```output
 ISBN with missing digit: [0,3,0,6,-1,0,6,1,5,2]

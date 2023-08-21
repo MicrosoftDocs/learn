@@ -2,14 +2,15 @@
 uid: learn.monitor-cognitive-services.diagnostic-logging
 title: Manage diagnostic logging
 metadata:
-  title: Demo-Introduction
+  title: Manage diagnostic logging
   description: "Manage diagnostic logging"
-  ms.date: 08/16/2021
+  ms.date: 05/29/2023
   author: wwlpublish
   ms.author: gmalc
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
+  ms.service: azure
 azureSandbox: false
+labModal: false
 durationInMinutes: 3
 content: |
   [!include[](includes/5-manage-diagnostic-logging.md)]

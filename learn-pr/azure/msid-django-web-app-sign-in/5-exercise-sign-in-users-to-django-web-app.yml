@@ -1,14 +1,16 @@
 ### YamlMime:ModuleUnit
 uid: learn.msid-django-web-app-sign-in.exercise-sign-in-users-to-django-web-app
-title: Exercise - Sign in user to a Django web app using Azure AD
+title: Exercise - Sign in users to a Django web app by using Azure AD
 metadata:
   unitType: exercise
-  title: Exercise - Sign in user to a Django web app using Azure AD
-  description: Step by step exercise to sign in users to your Django web app on the Microsoft identity platform. Use Python MSAL library to authenticate users and acquire ID token.
-  ms.date: 10/18/2022
+  title: Exercise - Sign in users to a Django web app by using Azure AD
+  description: In this step-by-step exercise, sign in users to your Django web app on the Microsoft identity platform. Use the Python MSAL library to authenticate users and acquire an ID token.
+  ms.date: 05/09/2023
   author: SHERMANOUKO
   ms.author: shermanouko
   ms.topic: interactive-tutorial
+  ms.custom:
+    - devx-track-python
   ms.prod: learning-azure # Edit as appropriate for your portfolio area
 durationInMinutes: 8
 content: |

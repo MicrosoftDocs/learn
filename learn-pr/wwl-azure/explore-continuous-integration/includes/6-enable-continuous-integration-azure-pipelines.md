@@ -1,18 +1,21 @@
+
 **Estimated time:** 45 minutes.
 
 **Lab files:** none.
 
 ## Scenario
 
-This lab will teach you how to configure continuous integration (CI) and continuous deployment (CD) for your applications using Build and Release in Azure Pipelines. This scriptable CI/CD system is web-based and cross-platform while also providing a modern interface for visualizing sophisticated workflows. Although we won’t demonstrate all of the cross-platform possibilities in this lab, it's essential to point out that you can also build for iOS, Android, Java (using Ant, Maven, or Gradle), and Linux.
+In this lab, you will learn how to define build pipelines in Azure DevOps using YAML. The pipelines will be used in two scenarios:
+
+ -  As part of Pull Request validation process.
+ -  As part of the Continuous Integration implementation.
 
 ## Objectives
 
 After completing this lab, you'll be able to:
 
- -  Create a basic build pipeline from a template.
- -  Track and review a build.
- -  Invoke a continuous integration build.
+ -  Include build validation as part of a Pull Request.
+ -  Configure CI pipeline as code with YAML.
 
 ## Requirements
 
@@ -24,7 +27,8 @@ After completing this lab, you'll be able to:
 During this lab, you'll complete the following exercises:
 
  -  Exercise 0: Configure the lab prerequisites.
- -  Exercise 1: Introduction to Azure DevOps Build.
+ -  Exercise 1: Include build validation as part of a Pull Request.
+ -  Exercise 2: Configure CI Pipeline as Code with YAML.
 
 [:::image type="content" source="../media/launch-exercise-25d42425.png" alt-text="Screenshot of a launch button which will take you to the lab.":::
-](https://microsoftlearning.github.io/AZ400-DesigningandImplementingMicrosoftDevOpsSolutions/Instructions/Labs/AZ400_M03_L05_Enabling_Continuous_Integration_with_Azure_Pipelines.html)
+](https://aka.ms/az-400-enable-continuous-integration-with-azure-pipelines)
