@@ -3,38 +3,39 @@ uid: learn.github.github-introduction-products
 metadata:
   title: Introduction to GitHub's products
   description: Overview of GitHub's products, associated features, and licensing of per-use and metered features.
-  ms.date: 02/09/2023
+  ms.date: 08/21/2023
   author: rmcmurray
   ms.author: robmcm
-  ms.topic: interactive-tutorial
+  ms.topic: module-intro-to-product
+  ms.prod: github
 title: Introduction to GitHub's products
 summary: Overview of GitHub's products, associated features, and licensing of per-use and metered features.
 abstract: |
   After completing this module, you'll be able to:
-  - Explain the difference between each GitHub product, and which features are available with each product.
-  - Make key distinctions between plans, account types, teams, repository permissions, organization permission levels, and so on.
-  - Describe licensing terms for GitHub Actions, GitHub Packages, and Codespaces.
+  - Define the difference between the different types of GitHub accounts: Personal, Organization, and Enterprise.
+  - Explain each GitHub plan: GitHub Free for personal accounts and organizations, GitHub Pro for personal accounts, GitHub Team, and GitHub Enterprise.
+  - Distinguish the features associated with accessing GitHub on GitHub Mobile and GitHub Desktop.
+  - State a brief overview of GitHub payments and billing.
 prerequisites: |
-  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required
-  - A high-level familiarity with GitHub's product plans and features would be helpful, but isn't required
-ratingEnabled: true
+  - Familiarity with GitHub, repositories, and the basics of managing individual accounts is required.
+ratingEnabled: false
 iconUrl: /training/achievements/github-introduction-products.svg
 levels:
-- intermediate
+  - intermediate
 roles:
-- administrator
-- devops-engineer
-- technology-manager
+  - administrator
+  - devops-engineer
+  - technology-manager
 products:
-- github
+  - github
 subjects:
-- devops
+  - devops
 units:
-- learn.github.github-introduction-products.introduction
-- learn.github.github-introduction-products.what-are-github-products
-- learn.github.github-introduction-products.how-licensing-works
-- learn.github.github-introduction-products.knowledge-check
-- learn.github.github-introduction-products.summary
-
+  - learn.github.github-introduction-products.introduction
+  - learn.github.github-introduction-products.what-are-github-products
+  - learn.github.github-introduction-products.mobile-versus-desktop
+  - learn.github.github-introduction-products.github-billing
+  - learn.github.github-introduction-products.knowledge-check
+  - learn.github.github-introduction-products.summary
 badge:
   uid: learn.github.github-introduction-products.badge

@@ -12,7 +12,7 @@ Now that you know how to use Markdown on GitHub, learn to [Create and host web s
 
 Here are some links to more information on the topics we discussed in this module.
 
-- [Markdown syntax description](https://daringfireball.net/projects/markdown/syntax?azure-portal=true)
+- [Basic writing and formatting syntax](https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax)
 - [GitHub-Flavored Markdown Spec](https://github.github.com/gfm/?azure-portal=true)
 - [Writing on GitHub](https://help.github.com/en/github/writing-on-github?azure-portal=true)
 - [GitHub markdown emojis](https://gist.github.com/rxaviers/7360908?azure-portal=true)
