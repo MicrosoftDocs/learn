@@ -2,7 +2,7 @@
 uid: learn.arm-template-whatif
 metadata:
   title: Preview Azure deployment changes by using what-if
-  description: Apply the what-if command to see the impact of a deployment before it's applied.
+  description: Apply the what-if command to see the effect of a deployment before it's applied.
   ms.date: 05/20/2021
   author: davidsmatlak
   ms.author: davidsmatlak
@@ -14,7 +14,7 @@ summary: |
 abstract: |
   After completing this module, you'll be able to:
   - Describe the two deployment modes in Azure and their effects
-  - Preview what changes will happen before you deploy by using the what-if operation
+  - Preview the changes that will happen before you deploy by using the what-if operation
 iconUrl: /training/achievements/bicep/arm-template-whatif.svg
 levels:
   - intermediate
@@ -33,7 +33,7 @@ prerequisites: |
   - Creating and deploying basic ARM templates, using either Bicep or JSON.
   - Azure, including the Azure portal, subscriptions, resource groups, and resource definitions.
 
-  To follow along with the exercises in the module, you'll need:
+  To follow along with the exercises in the module, you need:
   - [Visual Studio Code](https://code.visualstudio.com?azure-portal=true) installed locally.
   - Either:
     - The [Bicep extension for Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep) installed locally.

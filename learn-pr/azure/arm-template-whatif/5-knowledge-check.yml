@@ -27,7 +27,7 @@ quiz:
       explanation: Incorrect. The what-if operation evaluates the effects the deployment of the template against the target environment without making *any* changes to the environment.
   - content: What's the effect of using *complete mode* when deploying?
     choices:
-    - content: Resources that are not specified in the template are removed.
+    - content: Resources that aren't specified in the template are removed.
       isCorrect: true
       explanation: Correct. In complete mode, Resource Manager will delete any resources that aren't declared in the template.
     - content: Existing resources are left unchanged, even if they're not specified in the template.
@@ -35,10 +35,10 @@ quiz:
       explanation: Incorrect. This behavior is called *incremental mode* and is the opposite of complete mode.
     - content: You're asked to complete the deployment with a yes/no prompt.
       isCorrect: false
-      explanation: This is the role of the *confirm switch*.
+      explanation: Incorrect. The *confirm switch* generates this prompt.
     - content: A resource is waiting for another resource to finish deploying before deployment can begin.
       isCorrect: false
-      explanation: Incorrect. Resource Manager figures this out by itself, most of the time.
+      explanation: Incorrect. Resource Manager handles this situation itself, most of the time.
   - content: |
       You have a resource group that contains a storage account named `storageaccount1`.
       You have a template file that declares a storage account named `storageaccount2`.
@@ -53,4 +53,4 @@ quiz:
       explanation: Correct. The what-if command will detect that `storageaccount1` is already deployed to the resource group but isn't in the template. Because you specified the incremental deployment mode, it will return the Ignore change type for `storageaccount1`.
     - content: NoChange
       isCorrect: false
-      explanation: Incorrect. The NoChange change type is returned when a resource is already deployed to the resource group, and the resource is also defined in the template.
+      explanation: Incorrect. The NoChange change type is returned when a resource defined in the template is already deployed in the resource group.
