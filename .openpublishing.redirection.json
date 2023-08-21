@@ -25904,6 +25904,11 @@
       "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/7-exercise-compare-storage-requirements.md",
       "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
       "redirect_document_id": false
+    },
+    {
+      "source_path": "learn-pr/wwl-data-ai/analyze-optimize-data-warehouse-storage-azure-synapse-analytics/9-exercise-improve-execution-plan-of-query-materialized-view.md",
+      "redirect_url": "https://learn.microsoft.com/azure/synapse-analytics/sql-data-warehouse/sql-data-warehouse-workload-management",
+      "redirect_document_id": false
     }
   ]
 }
