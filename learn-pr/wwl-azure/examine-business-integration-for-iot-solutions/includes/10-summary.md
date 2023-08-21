@@ -1,1 +1,0 @@
-Your team will be supporting downstream business integration and efforts to generate insights from IoT data. Understanding how Azure tools like Event Grid and Logic Apps can be used to integrate with downstream services will help to ensure the team's success when implementation begins.
