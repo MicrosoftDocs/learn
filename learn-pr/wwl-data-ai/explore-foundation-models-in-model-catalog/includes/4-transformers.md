@@ -22,34 +22,24 @@ Whenever a new sentence is presented like `Shakespeare's work has influenced man
 
 ### Using the scaled dot-product to compute the attention function
 
-To calculate the attention function, the query, keys, and values are all encoded to vectors. The attention function then computes the scaled dot-product between the query vector and the keys vectors to find the key that most aligns with the query. 
+To calculate the attention function, the query, keys, and values are all encoded to vectors. The attention function then computes the scaled dot-product between the query vector and the keys vectors. The dot-product calculates the angle between vectors, with the product being larger when the vectors are more aligned. The softmax function is used within the attention function, over the scaled dot-product of the vectors, to create a probability distribution with possible outcomes. In other words, the softmax function's output includes which keys are closest to the query. The key with the highest probability is then selected, and the associated value is the output of the attention function.
 
-The attention function finds the key that best aligns with the encoded query. When encoding both the key and query, a vector is created to represent the encoded token. By calculating the scaled dot-product between the query and each key, you'll find the two vectors that are most aligned, or the key that is most similar to the query.
-
-
-- Keys: 
-- Values:
-- Queries
-
-An attention function can be described as mapping a query and a set of key-value pairs to an output,
-where the query, keys, values, and output are all vectors. The
-
-Three kinds of attention:
-
-- Attention over input sentence.
-- Output sentence is encoded.
-- Top right is most important attention. Source is combined with target sentence.
-
-Key connections to the third are the:
-
-- Keys
-- Values: output by the encoding part of the source sentence
-- Queries: output by the encoding part of target sentence
-
-Calculates dot product of Query and Keys. Dot product gives angle between vectors. Dot product is larger the more aligned the vectors are.
-Each key is associated with a value.
-A query is a vector. Use dot product to find the key that is closest to the query.
-Soft max to make the numbers more different from each other (almost 1 or almost 0).
-
+The Transformer architecture uses multi-headed attention, which means tokens are processed by the attention function several times in parallel. By doing so, a word or sentence can be processed multiple times, in various ways, to extract different kinds of information from the sentence.
 
 ## Explore the Transformer architecture
+
+Within the Transformer architecture, attention is used three times:
+
+- After using positional encoding on the source sentence.
+- After encoding the (incomplete) target sentence.
+- On the combined output of the source and target sentence, to compute the eventual output.
+
+:::image type="content" source="../media/transformer-architecture.jpg" alt-text="Diagram the sentence tokenized to present the most important words in a sentence as individual tokens.":::
+
+Let's imagine the following sentence as input for the model:
+
+```Vincent Van Gogh was a painter most known for creating stunning and emotionally expressive artworks, including ...```, including ...```
+
+To predict the next word, the architecture will take tokens from the sentence and use positional encoding to encode the tokens. To simplify how the three attention mechanisms are used, let's assume that the first, the source sentence is encoded and processed with an attention function: `Vincent Van Gogh was a painter`. The incomplete target sentence to encode may then be `most known for creating stunning and emotionally expressive artworks, including ...`.
+
+The outputted keys and values of the source sentence are combined with the query from the incomplete target sentence to the last attention mechanism. Using the learned information from the source, the model can then use the attention function to find which key is closest to the encoded query from the target sentence. In the example, we can align the information about artworks with Vincent van Gogh the painter, and therefore reason that the next word in the target sentence must be something like the famous paintings `Starry night` or `Sunflowers`.

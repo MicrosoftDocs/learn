@@ -46,7 +46,6 @@ quiz:
       explanation: "Incorrect. While RNNs have been historically used for sequence data like text, they suffer from issues like vanishing gradients and struggle to capture long-range dependencies in text. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
     - content: "Long Short-Term Memory (LSTM)"
       isCorrect: false
-      
       explanation: "Incorrect. LSTMs are a type of recurrent neural network designed to handle sequences by effectively capturing long-range dependencies. However, Transformers have shown to be more efficient at processing large amounts of text compared to RNNs."
     - content: "Transformer"
       isCorrect: true
