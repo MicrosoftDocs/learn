@@ -381,7 +381,7 @@ You then enter the required information on the **Add endpoint** page.
 :::row-end:::
 :::row:::
   :::column:::
-    Fully-qualified domain name (FQDN) or IP **(for External endpoints only)**
+    fully qualified domain name (FQDN) or IP **(for External endpoints only)**
   :::column-end:::
   :::column:::
     Specify the FQDN or IP address for the external endpoint.

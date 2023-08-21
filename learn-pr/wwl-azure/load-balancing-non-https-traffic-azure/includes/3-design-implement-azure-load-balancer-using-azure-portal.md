@@ -30,7 +30,7 @@ A Load Balancer can either be zone redundant, zonal, or non-zonal. To configure 
 
 In a region with Availability Zones, a Standard Load Balancer can be zone-redundant. This traffic is served by a single IP address.
 
-A single frontend IP address survive zone failure. The frontend IP may be used to reach all (non-impacted) backend pool members no matter the zone. One or more availability zones can fail and the data path survives as long as one zone in the region remains healthy.
+A single frontend IP address survives zone failure. The frontend IP may be used to reach all (non-impacted) backend pool members no matter the zone. One or more availability zones can fail and the data path survives as long as one zone in the region remains healthy.
 
 The frontend's IP address is served simultaneously by multiple independent infrastructure deployments in multiple availability zones. Any retries or reestablishment will succeed in other zones not affected by the zone failure.
 
