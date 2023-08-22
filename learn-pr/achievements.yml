@@ -2202,3 +2202,33 @@ achievements:
   title: Develop data insights and business integrations
   summary: You will learn about the tools and services that can be used to develop data insights and implement business integration, including Azure Event Grid, Azure Logic Apps, and Azure Time Series Insights.
   iconUrl: /training/achievements/data-insights-business-integration.svg
+- uid: learn.wwl.examine-azure-iot-edge-environment.badge
+  type: badge
+  title: Examine the Azure IoT Edge environment
+  summary: This module introduces you to Azure IoT Edge and the benefits of bringing cloud-compute capabilities to the device, the IoT Edge runtime modules and module twin properties, and IoT Edge security manager implementation.
+  iconUrl: /training/achievements/iot-edge-environment.svg
+- uid: learn.wwl.examine-iot-edge-device-deployment.badge
+  type: badge
+  title: Examine IoT Edge device deployment
+  summary: This module introduces you to IoT Edge device deployment concepts, the IoT Edge deployment manifest, and other considerations when preparing for IoT Edge device deployments.
+  iconUrl: /training/achievements/iot-edge-device-deployment.svg
+- uid: learn.wwl.examine-iot-edge-gateway-device-configuration.badge
+  type: badge
+  title: Examine IoT Edge gateway device configuration
+  summary: This module introduces you to the IoT Edge device gateway patterns, configuring support for downstream devices and device authentication, and details for configuring a transparent gateway device that has child devices.
+  iconUrl: /training/achievements/iot-edge-device-gateway-configuration.svg
+- uid: learn.wwl.explore-iot-edge-module-deployment.badge
+  type: badge
+  title: Explore IoT Edge module deployment
+  summary: This module provides you with experience deploying, configuring, and running IoT Edge devices and IoT Edge modules in a test environment.
+  iconUrl: /training/achievements/iot-edge-module-development.svg
+- uid: learn.wwl.explore-iot-edge-gateway-configuration.badge
+  type: badge
+  title: Explore IoT Edge gateway configuration
+  summary: This module provides you with experience deploying IoT Edge devices, configuring IoT Edge devices as gateway and downstream child devices, and communicating child device messages to IoT Hub using the gateway device.
+  iconUrl: /training/achievements/iot-edge-gateway-configuration.svg
+- uid: learn.wwl.deploy-azure-iot-edge-devices-modules.trophy
+  type: trophy
+  title: Deploy Azure IoT Edge devices and modules
+  summary:   You will learn about the benefits provided by Azure IoT Edge, the IoT Edge runtime environment, IoT Edge device deployments, and IoT Edge gateway device patterns and capabilities.
+  iconUrl: /training/achievements/iot-edge-deploy-devices-modules.svg
