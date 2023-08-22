@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.wwl.explore-cognitive-services-vision
 metadata:
-  title: Explore Cognitive Services for Vision (preview)
-  description: "Cognitive Services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities."
+  title: Explore Azure AI services for Vision (preview)
+  description: "Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities."
   ms.date: 08/10/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: cognitive-services
-title: Explore Cognitive Services for Vision (preview)
-summary: Cognitive Services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
+  ms.service: ai-services
+title: Explore Azure AI services for Vision (preview)
+summary: Azure AI services for Vision, powered by Microsoft’s Florence large foundation model, incorporates significant improvements to image analysis and groundbreaking customization capabilities.
 abstract: |
   After completing this module, you'll be able to:
-  - Describe the capabilities available in Azure Cognitive Services for Vision.
+  - Describe the capabilities available in Azure AI services for Vision.
   - Understand the benefits provided by Microsoft's Florence foundation model.
   - Analyze images using Image Analysis 4.0.
   - Use Vision Studio to create a custom object detection model.
@@ -26,7 +26,7 @@ levels:
 roles:
 - ai-engineer
 products:
-- azure-cognitive-services
+- azure
 subjects:
 - artificial-intelligence
 units:
