@@ -30,10 +30,10 @@ A [development container](https://containers.dev/) environment is available with
     >
     > :::image type="content" source="../media/open-terminal-option.png" lightbox="../media/open-terminal-option.png" alt-text="Screenshot of the codespaces menu option to open a new terminal.":::
 
-1. Validate that .NET 6 is installed in your environment:
+1. Validate that Node.js is installed in your environment:
 
     ```bash
-    dotnet --list-sdks
+    node --version
     ```
 1. Close the terminal.
 1. The remaining exercises in this project take place in the context of this development container.
@@ -58,9 +58,9 @@ The [Dev Containers extension](https://marketplace.visualstudio.com/items?itemNa
     > Visual Studio Code might automatically prompt you to reopen the existing folder within a development container. This is functionally equivalent to using the command palette to reopen the current workspace in a container.
     >
     > :::image type="content" source="../media/codespaces/reopen-container-toast.png" alt-text="Screenshot of a toast notification to reopen the current folder within the context of a development container.":::
-1. Validate that .NET 6 is installed in your environment:
+1. Validate that Node.js is installed in your environment:
     ```bash
-    dotnet --list-sdks
+    node --version
     ```
 1. Close the terminal.
 1. The remaining exercises in this project take place in the context of this development container.
