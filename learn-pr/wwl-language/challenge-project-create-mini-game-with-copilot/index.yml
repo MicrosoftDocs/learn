@@ -1,0 +1,43 @@
+### YamlMime:Module
+uid: learn.wwl.challenge-project-create-mini-game
+metadata:
+  title: Challenge project - Create a mini-game
+  description: "Use methods with parameters and return values to develop the features of a console mini-game."
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: cyzanon
+  ms.topic: interactive-tutorial
+  ms.prod: learning-azure
+title: Challenge project - Create a mini-game
+summary: Demonstrate your ability to create and use different methods to develop features for a console mini-game.
+abstract: |
+  - Use Visual Studio Code to develop a C# console application that uses methods to implement logical workflows.
+  - Understand existing code and make informed changes to design.
+  - Create return values as well as required and optional parameters in methods.
+prerequisites: |
+  - Experience using Visual Studio Code to develop, build, and run C# console applications that include console I/O and access the methods of .NET classes.
+  - Experience using C# data types including `int`, `string`, and arrays
+  - Experience using `switch` statements, if-else statements, and `for` loops
+  - Experience using the `Random` class to generate a random number.
+  - Basic understanding of C# methods
+iconUrl: /training/achievements/generic-badge.svg
+levels:
+- beginner
+roles:
+- developer
+- higher-ed-educator
+- k-12-educator
+- student
+products:
+- dotnet
+- vs-code
+units:
+- learn.wwl.challenge-project-create-mini-game.introduction
+- learn.wwl.challenge-project-create-mini-game.prepare
+- learn.wwl.challenge-project-create-mini-game.exercise-add-code-to-end-game
+- learn.wwl.challenge-project-create-mini-game.exercise-make-player-consume-food
+- learn.wwl.challenge-project-create-mini-game.exercise-add-code-modify-movement
+- learn.wwl.challenge-project-create-mini-game.knowledge-check
+- learn.wwl.challenge-project-create-mini-game.summary
+badge:
+  uid: learn.wwl.challenge-project-create-mini-game.badge
