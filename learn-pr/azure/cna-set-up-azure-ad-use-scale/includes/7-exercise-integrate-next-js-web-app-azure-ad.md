@@ -262,26 +262,26 @@ You're ready to validate the Azure AD integration of the app. You could containe
     ```
 
     > [!NOTE]
-    > This will automatically open a browser window displaying the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page.
+    > This will automatically open a browser window displaying the **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page.
 
-1. Close the web browser window displaying **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
-1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
+1. Close the web browser window displaying **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page, start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
+1. On the **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
 
-    :::image type="content" source="../media/7-azure-ad-next-js-app-sign-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Sign in using Popup menu option.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-sign-in-popup.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart page with the Sign in using Popup menu option.":::
 
 1. When prompted to sign in, authenticate by using the **adatumuser1** **userPrincipalName** and its password **Pa55w.rd1234**.
 
     > [!NOTE]
     > You created this user account in the first exercise of this module.
 
-1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Request Profile Information**.
+1. On the **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page, select **Request Profile Information**.
 
-    :::image type="content" source="../media/7-azure-ad-next-js-app-request-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the Request Profile Information button.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-request-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart page with the Request Profile Information button.":::
 
     > [!NOTE]
     > Verify that the output includes the Email, Id, and the access token of the **adatumuser1** Azure AD user account.
 
-    :::image type="content" source="../media/7-azure-ad-next-js-app-displayed-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For Javascript - React Quickstart page with the adatumuser1 profile information.":::
+    :::image type="content" source="../media/7-azure-ad-next-js-app-displayed-profile-info.png" alt-text="Screenshot of the Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart page with the adatumuser1 profile information.":::
 
 1. Open another browser tab in the same web browser window and navigate to the web application you deployed in the previous exercise.
 
@@ -302,7 +302,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > Now, you will repeat the same sequence of steps as the **contosouser1** and verify that you also can access the inventory data and display set of records corresponding to the second tenant.
 
 1. Start another web browser window in the Incognito/InPrivate mode, and navigate to the **http://localhost:3000** URL.
-1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
+1. On the **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page, select **Sign In**, and then in the expanding menu, select **Sign in using Popup**.
 1. When prompted to sign in, authenticate by using the **contosouser1** **userPrincipalName** and its password **Pa55w.rd1234**.
 
     > [!NOTE]
@@ -311,7 +311,7 @@ You're ready to validate the Azure AD integration of the app. You could containe
     > [!NOTE]
     > If prompted, accept an access request and change the password of the **contosouser1** account.
 
-1. On the **Welcome to the Microsoft Authentication Library For Javascript - React Quickstart** page, select **Request Profile Information**.
+1. On the **Welcome to the Microsoft Authentication Library For JavaScript - React Quickstart** page, select **Request Profile Information**.
 
     > [!NOTE]
     > Verify that the output includes the Email, Id, and the access token of the **contosouser1** Azure AD user account.
