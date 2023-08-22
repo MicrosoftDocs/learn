@@ -5,17 +5,11 @@ The online retailer needs their application to have some basic security. The web
 Most applications have parts that anyone can access. But, some parts need to be protected. There are different ways to protect an application. In this exercise, you'll implement a simple protection system to understand how the mechanism of *middleware* works in the Express framework.
 
 
-## Clone the project repo
+## Use the dev container sample project
 
 In this exercise, you'll use an example project that has product files and starter application code. You'll fill in the missing parts of the project to complete the app updates for the customer.
 
-1. In a terminal, clone the sample repo for this example by running the following command:
-
-   ```bash
-   git clone https://github.com/MicrosoftDocs/node-essentials
-   ```
-
-1. Inspect the cloned repo by changing to the **exercise-express-middleware** folder of the project:
+1. Inspect the **node-essentials/nodejs-http/exercise-express-middleware** folder:
 
    ```bash
    cd node-essentials/nodejs-http/exercise-express-middleware
@@ -275,3 +269,37 @@ Congratulations! You learned how to use the middleware construct in Express to a
 
 > [!CAUTION]
 > Be aware that an authentication/authorization meant for real world use needs to be a bit more robust than our example. It's worth looking up concepts such as OAuth, JSON Web Tokens, JWT and the library **bcrypt** to make sure your app has a decent level of protection.
+
+## Cleanup development container
+
+After completing the project, you may wish to clean up your development environment or return it to its typical state.
+
+### [GitHub Codespaces](#tab/github-codespaces)
+
+Deleting the GitHub Codespaces environment ensures that you can maximize the amount of free per-core hours entitlement you get for your account.
+
+> [!IMPORTANT]
+> For more information about your GitHub account's entitlements, see [GitHub Codespaces monthly included storage and core hours](https://docs.github.com/billing/managing-billing-for-github-codespaces/about-billing-for-github-codespaces#monthly-included-storage-and-core-hours-for-personal-accounts).
+
+1. Sign into the GitHub Codespaces dashboard (<https://github.com/codespaces>).
+
+1. Locate your currently running codespaces sourced from the [`azure-samples/node-essentials`](https://github.com/azure-samples/node-essentials) GitHub repository.
+
+    :::image type="content" source="../media/codespaces/codespace-dashboard.png" alt-text="Screenshot of all the running codespaces including their status and templates.":::
+
+1. Open the context menu for the codespace and select **Delete**.
+
+    :::image type="content" source="../media/codespaces/codespace-delete.png" alt-text="Screenshot of the context menu for a single codespace with the delete option highlighted.":::
+
+#### [Visual Studio Code](#tab/visual-studio-code)
+
+You aren't necessarily required to clean up your local environment, but you can stop the running development container and return to running Visual Studio Code in the context of a local workspace.
+
+1. Open the **Command Palette**, search for the **Dev Containers** commands, and then select **Dev Containers: Reopen Folder Locally**.
+
+    :::image type="content" source="../media/codespaces/reopen-local-command-palette.png" alt-text="Screenshot of the Command Palette option to reopen the current folder within your local environment.":::
+
+> [!TIP]
+> Visual Studio Code will stop the running development container, but the container still exists in Docker in a stopped state. You always have the option to deleting the container instance, container image, and volumes from Docker to free up more space on your local machine.
+
+---
