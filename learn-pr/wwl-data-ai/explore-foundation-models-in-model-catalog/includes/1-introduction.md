@@ -22,11 +22,3 @@ Foundation models use deep learning techniques and these pretrained **Large Lang
 1. **Text summarization**. For example, generate a short one-paragraph summary from a multi-page document.
 
 In this module, you learn how developments in artificial intelligence and natural language processing have led to LLMs and foundation models. You explore and use foundation models in the model catalog, available in Azure Machine Learning.
-
-## Learning objectives
-
-In this module, you learn how to:
-
-- Understand the developments that have led to foundation models.
-- Explore the different types of foundation models available in the model catalog.
-- Use a foundation model.
