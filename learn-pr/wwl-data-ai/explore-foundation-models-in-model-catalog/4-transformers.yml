@@ -1,6 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: |
-  learn.explore-foundation-models-in-model-catalog.transformers
+uid: learn.explore-foundation-models-in-model-catalog.transformers
 title: |
   Understand the transformer architecture used for natural language processing
 metadata:
