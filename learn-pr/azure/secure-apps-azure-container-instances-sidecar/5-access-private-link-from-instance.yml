@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-container-instances-sidecar.access-private-link-enabled-services
-title: Access private link enabled services from Azure Container Instances
+title: Use Azure Private Link to access services
 metadata:
-  title: Access private link enabled services from Azure Container Instances
-  description: Access private link enabled services from Azure Container Instances
+  title: Use Azure Private Link to access services
+  description: Set up a private endpoint for Azure Container Instances to access Azure platform services.
   ms.date: 04/27/2022
   author: erjosito
   ms.author: jomore

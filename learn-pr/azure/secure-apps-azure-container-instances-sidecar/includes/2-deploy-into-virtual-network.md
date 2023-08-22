@@ -1,16 +1,14 @@
-In this unit, you create an Azure Container Instances container inside of a virtual network, so the containerized application is accessible only to a customer with virtual network access. The application consists of an API that accesses an external database, which you deploy as an Azure SQL database.
+In this unit, you create an Azure Container Instances container inside of a virtual network, so the containerized application is accessible only to a customer with virtual network access. The application consists of an API that accesses an external database, which you deploy as an Azure SQL database. Because the application is reachable only from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working.
 
-Because the application is only reachable from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working. Using an Azure Virtual Machine as a jump host, you verified the correct operation of the container and the connectivity from the Azure Container Instance to an Azure SQL Database.
-
-Virtual networks are isolated networking segments where workloads can be deployed so that they're only accessible privately and, optionally, over the public internet. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks. An Azure container instance deployed to a virtual network receives a private IP address from the virtual network range. The private IP is only reachable from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute.
+Virtual networks are isolated networking segments where you can deploy workloads so they're only accessible privately, or optionally also over the public internet. An Azure resource deployed to a virtual network receives a private IP address from the virtual network range. The private IP is reachable only from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks.
 
 The following diagram shows the topology you deploy in this unit:
 
 ![Diagram that shows an overview of the topology.](../media/2-vnet-overview.png)
 
 1. You deploy the container instance that contains the customer API inside an Azure virtual network.
-1. You deploy a VM inside the same virtual network, which you use to test the API. You need the VM because, per the business requirements, the container instance deployed in the virtual network isn't reachable via the public internet.
-1. You create an Azure SQL database that the customer API needs to operate. In this example, the container instance reaches the Azure SQL database over the public internet.
+1. You deploy a VM inside the same virtual network to use to test the API. You need the VM because, per your customer's business requirements, the container instance deployed in this virtual network isn't reachable via the public internet.
+1. You create the Azure SQL database that the customer API needs to operate. For this example, the container instance reaches the Azure SQL database over the public internet.
 
 ## Create the environment
 
@@ -54,7 +52,7 @@ The following diagram shows the topology you deploy in this unit:
     exit
     ```
 
-1. Run the following Azure CLI commands to create the database that the application connects to. In this example, you use the smallest Azure SQL Database SKU (Basic) to reduce costs. This size isn't recommended for production environments:
+1. Run the following Azure CLI commands to create the database that the application connects to. In this example, you use the smallest Azure SQL Database SKU (Basic) to reduce costs. This size isn't recommended for production environments.
 
     ```azurecli
     # Create database
@@ -69,7 +67,7 @@ The following diagram shows the topology you deploy in this unit:
 
 ## Create a container instance in the virtual network
 
-Now that you have all the required components, you can deploy the Azure container instance. You specify the Azure SQL database Fully Qualified Domain Name (FQDN) and credentials in environment variables, so the container instance can connect to it.
+Now that you have all the required components, you can deploy the Azure container instance. You specify the Azure SQL database Fully Qualified Domain Name (FQDN) and credentials in environment variables, so the container instance can connect to the database.
 
 1. Run the following Azure CLI command to deploy the Azure container instance. Retry the command if you get an error on the first attempt.
 
@@ -85,7 +83,7 @@ Now that you have all the required components, you can deploy the Azure containe
       --ip-address private --ports 8080 --vnet $vnet_id --subnet $aci_subnet_id
     ```
 
-1. Connect to the test VM and verify connectivity from the VM. First, you retrieve the IP address of the container instance with the `az container show` command. This IP address is private, so you need to access it from the test VM. The deployed API has an endpoint `/api/healthcheck` that returns the value `OK` if the container is up and running.
+1. Connect to the test VM to verify connectivity. First, you retrieve the IP address of the container instance with the `az container show` command. You need to be on the test VM to access this private IP address. The deployed API has an endpoint `/api/healthcheck` that returns the value `OK` if the container is up and running.
 
     ```bash
     # Test container reachability
@@ -98,7 +96,7 @@ Now that you have all the required components, you can deploy the Azure containe
 
 ## Update the Azure SQL firewall rules
 
-The Azure SQL firewall rules must be updated to allow API access before the application can connect to the backend database. The connection uses public IP addresses, so it's important to know which source IP address the application uses to access the internet.
+Before the application can connect to the backend database, the Azure SQL firewall rules must be updated to allow API access. The connection uses public IP addresses, so it's important to know which source IP address the application uses to access the internet.
 
 The egress IP address for an Azure container instance isn't trivial to obtain. The application endpoint `api/ip` shows some of its networking attributes, including its public egress IP address. In this case, the API code itself finds out and uses the obtained egress IP to update the Azure SQL database.
 
@@ -114,12 +112,13 @@ ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -s http://$aci
 ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -s http://$aci_ip:8080/api/sqlsrcip"
 ```
 
-The last command of the preceding code block calls the application's endpoint `api/sqlsrcip`, which sends a SQL query to the backend database asking for the source IP address as seen by the database. You can verify that Azure SQL Database sees the application coming from its public IP address.
+The last command of the preceding code block calls the application's endpoint `api/sqlsrcip`, which sends a SQL query to the backend database asking for the source IP address the database sees. You can verify that the database sees the application coming from its public IP address.
 
-1. You can delete the container created in this unit, so that we can move on to the next one.
+<!--1. You can delete the container created in this unit, so that we can move on to the next one.
 
     ```azurecli
     # Cleanup unit 2
     az container delete -n $aci_name -g $rg -y
     ```
 
+-->

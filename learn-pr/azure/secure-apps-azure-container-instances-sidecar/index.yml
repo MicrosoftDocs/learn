@@ -14,7 +14,7 @@ abstract: |
   - Deploy Container Instances in Azure Virtual Networks by using Azure CLI.
   - Learn to define containers with YAML, for greater flexibility and similarity to Kubernetes YAML manifests.
   - Enhance an existing application with a sidecar container, to add functionality without having to modify the original application code.
-  - Use Azure Private Link to connect to Azure platform-as-a-service (PaaS) resources with private IP addressing.
+  - Use Azure Private Link to connect containers to Azure platform-as-a-service (PaaS) resources with private IP addressing.
   - Use initialization containers to do initialization tasks.
 prerequisites: |
   - Access to an Azure subscription with resource creation and role assignment permissions.

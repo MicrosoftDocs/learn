@@ -58,7 +58,7 @@ quiz:
     - content: "Only a private IP address in the subnet where it's deployed."
       isCorrect: true
       explanation: "The container instance is fully integrated in the virtual network."
-  - content: "Where can Azure container instances deployed in a virtual network be accessed from?"
+  - content: "From where can you access Azure container instances deployed in a virtual network?"
     choices:
     - content: "Only from inside the virtual network."
       isCorrect: false

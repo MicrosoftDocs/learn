@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-container-instances-sidecar.deploy-into-virtual-network
-title: Deploy Container Instances in a virtual network 
+title: Deploy Azure Container Instances in a virtual network 
 metadata:
-  title: Deploy Container Instances in a virtual network
-  description: Deploy Azure Container Instances into a virtual network
+  title: Deploy Azure Container Instances in a virtual network
+  description: Use Azure CLI in Azure Cloud Shell to deploy an Azure container instance with associated resources into a virtual network and secure private strings.
   ms.date: 04/27/2022
   author: erjosito
   ms.author: jomore

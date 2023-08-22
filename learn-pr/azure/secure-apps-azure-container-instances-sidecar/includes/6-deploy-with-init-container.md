@@ -1,8 +1,8 @@
-Sometimes you need to do certain tasks before an application starts. For example, you might need to configure certain services to accept inbound connectivity from the container, or inject secrets from Azure Key Vault into a volume. You can implement these prerequisite validation or initialization tasks in Initialization (init) containers.
+Sometimes you need to do certain tasks before an application starts. For example, you might need to configure certain services to accept inbound connectivity from the container, or inject secrets from Azure Key Vault into a volume. You can implement these prerequisite validation or initialization tasks in initialization (init) containers.
 
-Init containers are an example of the sidecar pattern you used in a previous unit, but init containers run before any other container in the container group starts. The actual application containers in the application group only start after any defined init containers successfully complete their tasks. Azure Container Instances init containers are the same concept as Kubernetes init containers.
+Init containers are an example of the sidecar pattern you used in a previous unit, but init containers run before any other containers in the container group start. The application containers in the application group start only after any defined init containers successfully complete their tasks. Azure Container Instances init containers are the same concept as Kubernetes init containers.
 
-Your customer wants to reach their API by using a Fully Qualified Domain Name (FQDN) instead of an IP address. They also want to make sure that the FQDN doesn't change if they recreate the container. You can use an init container to provide this functionality. In this unit, you use an init container to update the Domain Name System (DNS) so customers can always access the API by using a domain name instead of an IP address.
+Your customer wants to reach their API by using a Fully Qualified Domain Name (FQDN) instead of an IP address. They also want to make sure that the FQDN doesn't change if they recreate the container group. You can use an init container to provide this functionality. In this unit, you use an init container to update the Domain Name System (DNS) so customers can always access the API by using the domain name instead of an IP address.
 
 The following diagram shows the topology of the Container Instances init container:
 
@@ -14,9 +14,9 @@ The init container retrieves the IP address allocated to the application contain
 
 First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS. In this example, you assign the service principal **Contributor** access for simplicity. In production environments, you might want to be more restrictive.
 
-1. In Azure Cloud Shell in the Azure portal, run the following code to crate the service principal:
+1. In Azure Cloud Shell in the Azure portal, run the following code to create the service principal:
 
-    ```bash
+    ```azurecli
     # Create SP
     scope=$(az group show -n $rg --query id -o tsv)
     new_sp=$(az ad sp create-for-rbac --scopes $scope --role Contributor --name acilab -o json)
@@ -63,7 +63,7 @@ First, you create an Azure service principal that the init container uses to ret
 
 ## Deploy the container group with init container
 
-You can now create a YAML file that builds on the ones you used in previous units. Note these items in the following YAML code:
+You can now create a YAML file that builds on the files you used in previous units. Note these items in the following YAML code:
 
 - There's now a `initContainers` section.
 - The `initContainer` uses the `microsoft/azure-cli:latest` image, which already has Azure CLI installed.
@@ -167,7 +167,7 @@ You can now create a YAML file that builds on the ones you used in previous unit
     
 1. Verify the generated YAML file to check that variable substitution worked correctly.
 
-    ```azurecli
+    ```bash
     # Check YAML file
     more $aci_yaml_file
     ```
@@ -181,7 +181,7 @@ You can now create a YAML file that builds on the ones you used in previous unit
     
 1. Use the SQL API endpoints to test that the container is reachable. You use the domain name to access the container, not its IP address.
 
-    ```azurecli
+    ```bash
     # Test
     aci_fqdn=${aci_name}.${dns_zone_name} && echo $aci_fqdn
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "nslookup $aci_fqdn"
@@ -190,7 +190,7 @@ You can now create a YAML file that builds on the ones you used in previous unit
     ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -ks https://$aci_fqdn/api/sqlsrcip"
     ```
     
-1. You can inspect the individual Container Instances logs for each container. For example, run the following code to access the init container logs:
+1. You can inspect the individual container instance logs for each container. For example, run the following code to access the init container logs:
 
     ```azurecli
     # Init container logs
