@@ -21,8 +21,8 @@ metadata:
 ### If you need to request new values, follow the process here: https://review.learn.microsoft.com/en-us/help/platform/metadata-allowlist-requests?branch=main
   ms.service: machine-learning
 title: |
-  Explore foundation models in the model catalog
-summary: "TODO 2 sentences, 20-35 words, don't teach or motivate, avoid using 'learn', don't duplicate the title; see https://review.docs.microsoft.com/help/learn/id-guidance-introductory-summaries?branch=main"
+  Explore Large Language Models as foundation models in Azure Machine Learning's model catalog
+summary: "Learn about the history of Natural Language Processing (NLP), including how the Transformer architecture revolutionized the field and helped us create Large Language Models (LLMs). Work with LLMs in Azure Machine Learning through the foundation models in the model catalog."
 abstract: |
   By the end of this module, you'll be able to:
     - Understand the developments that have led to foundation models.
