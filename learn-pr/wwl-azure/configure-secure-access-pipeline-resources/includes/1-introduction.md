@@ -1,4 +1,4 @@
-In this module, learn how to configure and manage secure access to the resources used by your Azure DevOps pipelines. You'll explore the concepts and best practices for securing your pipeline resources, such as service connections, agent pools, variable groups, and secure files. Also, learn how to use Azure Key Vault to store and retrieve your pipelines' secrets to authenticate and authorize access to your pipeline resources.
+In this module, learn how to configure and manage secure access to the resources used by your Azure Pipelines. You'll explore the concepts and best practices for securing your pipeline resources, such as service connections, agent pools, variable groups, and secure files. Also, learn how to use Azure Key Vault to store and retrieve your pipelines' secrets to authenticate and authorize access to your pipeline resources.
 
 ### Learning objectives
 
