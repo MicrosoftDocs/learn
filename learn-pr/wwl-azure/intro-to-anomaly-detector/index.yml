@@ -3,7 +3,7 @@ uid: learn.azure.intro-to-anomaly-detector
 metadata:
   title: Introduction Azure AI Anomaly Detector
   description: "Discover Azure AI Anomaly Detector, a service used to determine whether values in a series are within expected parameters."
-  ms.date: 08/17/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
