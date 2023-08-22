@@ -12,14 +12,15 @@ Imagine you train a model on a large corpus of text data. During the training pr
 
 The model learns that the two words are often found in similar contexts and therefore plots the word vectors for `bike` and `car` close to each other in the vector space.
 
-Imagine we have a 3D vector space where each dimension corresponds to a semantic feature. In this case, let's say the dimensions represent factors like *vehicle type*, *mode of transportation*, and *activity*. We can then assign hypothetical vectors to the words based on their semantic relationships:
+Imagine we have a three-dimensional vector space where each dimension corresponds to a semantic feature. In this case, let's say the dimensions represent factors like *vehicle type*, *mode of transportation*, and *activity*. We can then assign hypothetical vectors to the words based on their semantic relationships:
 
 :::image type="content" source="../media/word-embeddings-vectors.png" alt-text="Diagram showing word embeddings for bike and car in a vector space, compared to drive and shop.":::
 
-1. `Boat` is closer to `drive` and `shop` in the *activity* dimension, reflecting that you can drive a boat and visit shops near bodies of water.
-1. `Car` is closer to `drive` and somewhat to `shop` in the *activity* dimension. It's also close to `bike` in the *vehicle type* dimension.
-1. `Bike` is closer to `drive` in the *activity* dimension and close to `car` in the *vehicle type* dimension. `Drive` is closer to `boat` and `bike` in the *vehicle type* dimension, reflecting different ways to drive.
-1. `Shop` is closer to `boat` and `drive` in the *activity* dimension, as you can drive to a shop and sometimes take a boat to a shop.
+1. `Boat` [2, 1, 4] is close to `drive` and `shop`, reflecting that you can drive a boat and visit shops near bodies of water.
+1. `Car` [7, 5, 1] closer to `bike` than `boat` as cars and bikes are both used on land rather than on water.
+1. `Bike` [6, 8, 0] is closer to `drive` in the *activity* dimension and close to `car` in the *vehicle type* dimension.
+1. `Drive` [8, 4, 3] is close to `boat`, `car` and `bike`, but far from `shop` as it describes a different kind of activity.
+1. `Shop` [1, 3, 5] is closest to `bike` as these words are most commonly used together.
 
 > [!Note]
 > In the example, a three-dimensional plane is used to describe word embeddings and vector spaces in simple terms. Vector spaces are often multidimensional planes with vectors representing a position in that space, similar to coordinates in a two-dimensional plane.
