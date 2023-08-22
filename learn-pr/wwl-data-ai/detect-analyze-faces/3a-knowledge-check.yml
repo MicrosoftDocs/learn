@@ -4,17 +4,17 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 01/27/2023
+  ms.date: 08/21/2023
   author: wwlpublish
-  ms.author: gmalc
+  ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: azure
-azureSandbox: false
-labModal: false
+  ms.service: artificial-intelligence
+  ms.subservice: face-api
 durationInMinutes: 2
 quiz:
+  title: ""
   questions:
-  - content: "You plan to use Face to detect human faces in an image. How does the service indicate the location of the faces it detects?"
+  - content: "You plan to use Azure AI Face to detect human faces in an image. How does the service indicate the location of the faces it detects?"
     choices:
     - content: "A pair of coordinates for each face, indicating the center of the face"
       isCorrect: false

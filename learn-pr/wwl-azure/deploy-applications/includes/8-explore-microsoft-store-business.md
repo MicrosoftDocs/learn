@@ -1,5 +1,3 @@
-
-
 The Microsoft Store for Business platform enables you to procure apps for your organization, either individually or in bulk. You can manage apps procured in volume from the portal by linking the store to Microsoft Intune. This includes the ability to:
 - Synchronize the list of purchased (or free) apps from the store with Intune.
 - View the synchronized apps in the Microsoft Intune admin center and assign them like any other app.
