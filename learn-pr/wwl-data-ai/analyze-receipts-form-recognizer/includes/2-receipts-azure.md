@@ -11,7 +11,7 @@ Azure AI Document Intelligence supports automated document processing through:
 - **Custom models**, which enable you to extract what are known as key/value pairs and table data from forms. Custom models are trained using your own data, which helps to tailor this model to your specific forms.  Starting with a few samples of your forms, you can train the custom model. After the first training exercise, you can evaluate the results and consider if you need to add more samples and re-train.
 
 > [!NOTE]
-> The next hands-on exercise will only step through **a prebuilt receipt model**. If you would like to train a **custom model** you can refer to the [Azure AI Document Intelligence documentation](/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model?view=doc-intel-3.1.0?azure-portal=true) for quickstarts. 
+> The next hands-on exercise will only step through **a prebuilt receipt model**. If you would like to train a **custom model** you can refer to the [Azure AI Document Intelligence documentation](/azure/ai-services/document-intelligence/how-to-guides/build-a-custom-model?azure-portal=true) for quickstarts. 
 
 ## Azure resources to access Azure AI Document Intelligence
 
@@ -21,7 +21,7 @@ After the resource has been created, you can create client applications that use
 
 ## Using the prebuilt receipt model
 
-Currently the prebuilt receipt model is designed to recognize common receipts, in English, that are common to the USA.  Examples are receipts used at restaurants, retail locations, and gas stations. The model is able to extract key information from the receipt slip:
+Currently the prebuilt receipt model is designed to recognize common receipts in English that are common to the USA.  Examples are receipts used at restaurants, retail locations, and gas stations. The model is able to extract key information from the receipt slip:
 
 - time of transaction
 - date of transaction

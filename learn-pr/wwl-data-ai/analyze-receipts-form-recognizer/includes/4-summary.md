@@ -1,7 +1,7 @@
 
 Azure AI Document Intelligence provides access to prebuilt and custom models for extracting text from various documents, such as receipts, invoices, IDs, and more. 
 
-You can continue to read about Azure AI Document Intelligence in the [service documentation](/azure/ai-services/document-intelligence/overview?view=doc-intel-3.1.0?azure-portal=true).
+You can continue to read about Azure AI Document Intelligence in the [service documentation](/azure/ai-services/document-intelligence/overview?azure-portal=true).
 
 ## Clean-up
 
