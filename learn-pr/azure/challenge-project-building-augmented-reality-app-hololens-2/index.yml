@@ -22,7 +22,7 @@ abstract: |
     - Understand the fundamentals needed for a project document for your prototype.
 prerequisites: |
   - "[Introduction to Mixed Reality (optional)](/training/modules/intro-to-mixed-reality/)"
-iconUrl: /learn/achievements/generic-badge.svg
+iconUrl: /learn/achievements/challenge-project-building-augmented-reality-app-hololens-two.svg
 levels: 
   - beginner
 roles: 
@@ -42,4 +42,4 @@ units:
   - learn.challenge-project-building-augmented-reality-app-hololens-two.summary
 
 badge:
-  uid: learn.challenge-project-building-augmented-reality-app-hololens-2.badge
+  uid: learn.challenge-project-building-augmented-reality-app-hololens-two.badge
