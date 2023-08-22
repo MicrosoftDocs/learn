@@ -21,3 +21,4 @@ After completing this module, you'll be able to:
 
 - Ability to navigate the Azure portal
 - Foundational knowledge of Azure services
+
