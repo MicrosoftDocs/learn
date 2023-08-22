@@ -1,4 +1,4 @@
-You've successfully assessed the role of Azure AD in controlling access to your application and its PostgreSQL data store. You're confident that this functionality will allow you to offer the application to customers that rely on Azure AD for authentication and authorization. 
+You've successfully assessed the role of Azure AD in controlling access to your application and its PostgreSQL data store. You're confident that this functionality allows you to offer the application to customers that rely on Azure AD for authentication and authorization. 
 
 In this module, you learned about the characteristics and functionality of Azure AD and its integration with cloud-native applications and their data stores. You started by creating Azure AD tenants and user, guest, and group accounts. Next, you created and configured Azure Database for PostgreSQL, integrated it with Azure AD, and implemented a simple Node.js-based application that queries the database by relying on Azure AD authentication. Finally, you implemented a simple Next.js-based application that provided the equivalent functionality.
 
