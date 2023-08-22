@@ -21,7 +21,7 @@ quiz:
       explanation: Incorrect. The what-if operation lets you see how resources will change if you deploy the template. To check your template for recommended practices, use the Bicep linter for Bicep files, or the ARM Template Test Toolkit (ARM-TTK) for JSON ARM templates.
     - content: To verify the effects and impact of the deployment of the template.
       isCorrect: true
-      explanation: Correct. The what-if operation lets you see how resources will change if you deploy the template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes that will happen if the specified template is deployed.
+      explanation: Correct. The what-if operation lets you see how resources will change if you deploy the template. The what-if operation doesn't make any changes to existing resources. Instead, it predicts the changes if the specified template is deployed.
     - content: To deploy the template in a sandbox environment in order to validate if the results of the deployment match expected results.
       isCorrect: false
       explanation: Incorrect. The what-if operation evaluates the effects the deployment of the template against the target environment without making *any* changes to the environment.
@@ -29,7 +29,7 @@ quiz:
     choices:
     - content: Resources that aren't specified in the template are removed.
       isCorrect: true
-      explanation: Correct. In complete mode, Resource Manager will delete any resources that aren't declared in the template.
+      explanation: Correct. In complete mode, Resource Manager deletes any resources that aren't declared in the template.
     - content: Existing resources are left unchanged, even if they're not specified in the template.
       isCorrect: false
       explanation: Incorrect. This behavior is called *incremental mode* and is the opposite of complete mode.
@@ -43,14 +43,14 @@ quiz:
       You have a resource group that contains a storage account named `storageaccount1`.
       You have a template file that declares a storage account named `storageaccount2`.
       You execute a what-if operation and use the incremental deployment mode.
-      Which of these change types will the what-if operation detect?
+      Which of these change types does the what-if operation detect?
     choices:
     - content: Delete
       isCorrect: false
       explanation: Incorrect. The Delete change type is returned when the deployment runs in complete mode.
     - content: Ignore
       isCorrect: true
-      explanation: Correct. The what-if command will detect that `storageaccount1` is already deployed to the resource group but isn't in the template. Because you specified the incremental deployment mode, it will return the Ignore change type for `storageaccount1`.
+      explanation: Correct. The what-if command detects that `storageaccount1` is already deployed to the resource group but isn't in the template. Because you specified the incremental deployment mode, it returns the Ignore change type for `storageaccount1`.
     - content: NoChange
       isCorrect: false
       explanation: Incorrect. The NoChange change type is returned when a resource defined in the template is already deployed in the resource group.
