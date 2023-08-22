@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.data-classification-and-data-protection.7-what-encryption-customer-key
-title: What is service encryption with Customer Key? 
+title: Service encryption and Customer Key
 metadata:
-  title: What is service encryption with Customer Key?
-  description: What is service encryption with Customer Key?
+  title: Service encryption and Customer Key
+  description: Learn about Microsoft encryption tools for data at rest, including BitLocker and DKM, service encryption, and Microsoft Purview Customer Key.
   ms.date: 03/25/2021
   author: cwatson-cat
   ms.author: cwatson

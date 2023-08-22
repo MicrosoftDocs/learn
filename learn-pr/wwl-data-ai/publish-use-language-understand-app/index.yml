@@ -29,8 +29,7 @@ roles:
 - ai-engineer
 - developer
 products:
-- azure-cognitive-services
-- azure-language-understanding
+- ai-services
 subjects:
 - artificial-intelligence
 - cloud-computing

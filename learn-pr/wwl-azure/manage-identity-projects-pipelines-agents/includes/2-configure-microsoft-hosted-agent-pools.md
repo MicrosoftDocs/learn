@@ -26,8 +26,8 @@ To configure permissions for Microsoft-hosted agent pools:
 
 1. In Azure DevOps, navigate to the Organization settings.
 2. Under Pipelines, select Agent pools.
-3. Select on the agent pool for which you want to configure permissions.
-4. Select on the Security tab.
+3. Select the agent pool for which you want to configure permissions.
+4. Select the Security tab.
 5. Here, you can add users or groups and assign them specific roles like "Administrator," "User," or "Reader." Make sure to grant the least privilege necessary for each team member to perform their tasks.
 6. You can also configure permissions for specific pipelines by clicking on the Pipelines tab and selecting the pipeline for which you want to configure permissions.
 

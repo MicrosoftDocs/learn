@@ -24,7 +24,6 @@ roles:
 products:
 - azure
 - azure-iot
-- azure-iot-dps
 - azure-iot-hub
 subjects:
 - architecture
@@ -38,3 +37,4 @@ units:
 - learn.wwl.introduction-iot-solution-architecture.summary
 badge:
   uid: learn.wwl.introduction-iot-solution-architecture.badge
+hidden: true

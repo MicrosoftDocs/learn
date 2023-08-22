@@ -4,12 +4,12 @@ title: Exercise - Mask URLs with a transformation policy
 metadata:
   title: Exercise - Mask URLs with a transformation policy
   description: In this module, you use a policy to hide the URL of the hosted URL to ensure that its location is not passed to users.
-  ms.date: 05/17/2019
+  ms.date: 08/10/2023
   author: dlepow
   ms.author: danlep
   ms.topic: interactive-tutorial
   ms.prod: learning-azure
 durationInMinutes: 5
-azureSandbox: true
+azureSandbox: false
 content: |
   [!include[](includes/5-exercise-hide-url.md)]

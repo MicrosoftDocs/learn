@@ -1,5 +1,4 @@
-
-The Azure Computer Vision Image Analysis 4.0 service is designed to enable the extraction of a vast assortment of visual elements from images, drawing from more than 10,000 concepts and objects to detect, classify, caption, and generate insights. Powered by Microsoft's Florence foundation model, the updated Image Analysis service uses state-of-the-art algorithms to process images and interpret visual information. For example, the service can be used to find all the people in an image, categorize the content of images, and describe a picture with a complete English sentence.
+The Azure AI Vision Image Analysis 4.0 service is designed to enable the extraction of a vast assortment of visual elements from images, drawing from more than 10,000 concepts and objects to detect, classify, caption, and generate insights. Powered by Microsoft's Florence foundation model, the updated Image Analysis service uses state-of-the-art algorithms to process images and interpret visual information. For example, the service can be used to find all the people in an image, categorize the content of images, and describe a picture with a complete English sentence.
 
 ## Analyze images with Image Analysis 4.0
 
@@ -29,7 +28,7 @@ Tagging images involves using AI to identify content within an image, such as ob
 
 | Image | Tags |
 | :-----: | :----: |
-| ![A photograph of a building which is used as an example of the input to Image Analysis 4.0.](../media/03-building-original-image.png) |![A screenshot of the generated tags that Image Analysis 4.0 provides for the image of a building.](../media/03-building-tags.png) |
+| ![A screenshot of a building which is used as an example of the input to Image Analysis 4.0.](../media/03-building-original-image.png) |![A screenshot of the generated tags that Image Analysis 4.0 provides for the image of a building.](../media/03-building-tags.png) |
 
 Image tagging evaluates all image content, not just the main subject, such as a person in the foreground. Tags are generated for image contents, such as the setting (indoor or outdoor), activities, landscapes, landmarks, colors, plants, animals, and other detected objects and actions.
 
@@ -45,7 +44,7 @@ Image Analysis 4.0 enables developers to extract printed or handwritten text fro
 
 | Image   | Extracted text |
 | :-----: | :------------: |
-| ![An image of a receipt with bounding boxes surrounding the items listed.](../media/03-receipt-with-bounding-boxes.png) |![A screenshot of the generated tags that Image Analysis 4.0 provides for the image of a receipt](../media/03-ocr-text.png) |
+| ![An screenshot of a receipt with bounding boxes surrounding the items listed.](../media/03-receipt-with-bounding-boxes.png) |![A screenshot of the generated tags that Image Analysis 4.0 provides for the image of a receipt.](../media/03-ocr-text.png) |
 
 The new unified performance-enhanced API in Image Analysis 4.0 provides a fast, synchronous API for scenarios that include running OCR on single images that aren't text-heavy, allowing OCR to be embedded in near real-time user experiences to enrich content understanding and follow-up user actions with rapid turn-around times.
 
@@ -67,6 +66,6 @@ People detection doesn't attempt to distinguish faces within the image or predic
 
 | Original image | Background removed | Alpha matte |
 | :------------: | :----------------: | :---------: |
-| ![An image of a giraffe used as an example of an input for Image Analysis 4.0.](../media/03-giraffe-original-image.jpeg) |![A screenshot of the way Image Analysis 4.0 can remove the background of an image of a giraffe.](../media/03-giraffe-background-removal.png) |![A screenshot of the way Image Analysis 4.0 can complete foreground matting. Image is of the giraffe as a solid white block, against a solid black background.](../media/03-giraffe-foreground-matting.png) |
+| ![An screenshot of a giraffe used as an example of an input for Image Analysis 4.0.](../media/03-giraffe-original-image.jpeg) |![A screenshot of the way Image Analysis 4.0 can remove the background of an image of a giraffe.](../media/03-giraffe-background-removal.png) |![A screenshot of the way Image Analysis 4.0 can complete foreground matting. Image is of the giraffe as a solid white block, against a solid black background.](../media/03-giraffe-foreground-matting.png) |
 
 When analyzing images, it can often be helpful to isolate essential elements of an image from the "background" of the picture. Separating image components by identifying the image subjects and isolating them from an image's background allows you to analyze the most critical features while ignoring background noise.
