@@ -8,7 +8,7 @@ Your team has developed a refrigerator-inventory service that businesses can use
 
 While your application satisfied all the requirements specified at that time, its use cases didn't account for the need to accommodate multitenant scenarios, where different businesses might need to have their own display of their respective inventories and be able to access them securely.
 
-In this module, you'll explore how Azure AD helps you to address this need. While Azure AD natively supports multi-tenancy, integrating it into your existing application will require some changes to individual application components and data stores.
+In this module, you'll explore how Azure AD helps you to address this need. While Azure AD natively supports multitenancy, integrating it into your existing application will require some changes to individual application components and data stores.
 
 ## Prerequisites
 
