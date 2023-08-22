@@ -2,12 +2,14 @@ In your customer's current API, the traffic to the application API runs unencryp
 
 An alternative is to use a *sidecar* container that enhances the application with the required SSL functionality without having to modify the application code. The sidecar pattern is a powerful concept in container-based architectures that lets you decompose application functionality into different container images that run together in the same container group.
 
-In an Azure Container Instances container group, each container can take over part of the functionality the application requires. Containers in the same container group share some properties, such as the underlying network stack. Sidecar containers can use different container images from the application container, even from different image repositories.
+In an Azure Container Instances container group, each container can take over part of the functionality the application requires. Sidecar containers can use different container images from the application container, even from different image repositories. Containers in the same container group share some properties, such as the underlying network stack.
 
 > [!NOTE]
 > The concept of container group is equivalent to *pods* in Kubernetes.
 
 In this unit, you deploy a container group where one of the containers does secure socket layer (SSL) encryption and decryption, and the other container provides the application API functionality. To offload secure socket layer (SSL) functionality, you use NGINX, an open-source web server, as a reverse proxy in front of the web application. Encrypted traffic enters the Azure Container Instances container group in the NGINX container, and NGINX hands over the decrypted traffic to the actual application container.
+
+The following diagram shows this topology:
 
 ![Diagram that shows topology of Azure Container Instances with NGINX sidecar.](../media/3-nginx-sidecar.png)
 

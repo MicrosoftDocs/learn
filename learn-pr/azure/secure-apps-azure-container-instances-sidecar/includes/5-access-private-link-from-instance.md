@@ -12,7 +12,7 @@ The following diagram shows an overview of the network connections for this scen
 
 Create a new subnet in the virtual network, and create an Azure SQL Database private endpoint in that subnet.
 
-1. In Cloud Shell in the Azure portal, run the following code:
+1. In Cloud Shell in the Azure portal, run the following code to create the endpoint:
 
    ```azurecli
    # Create new subnet for the SQL private endpoint

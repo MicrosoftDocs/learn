@@ -1,18 +1,18 @@
 ### YamlMime:Module
 uid: learn.azure.azure-container-instances-sidecar
 metadata:
-  title: Use Azure Container Instances sidecar and init containers and private addressing
+  title: Use Azure Container Instances sidecar containers and private addressing
   description: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
-  ms.date: 08/21/2023
+  ms.date: 08/22/2023
   author: erjosito
   ms.author: jomore
   ms.topic: interactive-tutorial
   ms.service: container-instances
-title: Use Azure Container Instances sidecar and init containers and private addressing
+title: Use Azure Container Instances sidecar containers and private addressing
 summary: Learn to use YAML to define container instances, add functionality with sidecar and initialization containers, and use Azure Private Link for greater security.
 abstract: |
   - Deploy Container Instances in Azure Virtual Networks by using Azure CLI.
-  - Learn to define containers with YAML, for greater flexibility and similarity to Kubernetes YAML manifests.
+  - Learn to define containers with YAML for greater flexibility.
   - Enhance an existing application with a sidecar container.
   - Use Azure Private Link to privately address Azure platform-as-a-service (PaaS) resources.
   - Use initialization containers to do initialization tasks.
