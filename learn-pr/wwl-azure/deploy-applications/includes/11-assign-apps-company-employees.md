@@ -1,5 +1,3 @@
-
-
 After you've added an app to Microsoft Intune, you can assign the app to users and devices. It's important to note that you can deploy an app to a device whether or not the device is managed by Intune.
 
 > [!IMPORTANT]
