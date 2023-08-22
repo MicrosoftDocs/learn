@@ -3,12 +3,12 @@ uid: learn.wwl.explore-cognitive-services-vision.explore-vision-studio
 title: Explore Vision Studio
 metadata:
   title: Explore Vision Studio
-  description: "Vision Studio is a set of UI-based tools that allows you to explore, build, and integrate features from Azure AI Vision."
-  ms.date: 08/10/2023
+  description: "Vision Studio is a set of UI-based tools that allows you to explore, build, and integrate features from Azure Computer Vision."
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: sheryang
   ms.topic: interactive-tutorial
-  ms.service: ai-services
+  ms.service: artificial-intelligence
 durationInMinutes: 2
 content: |
   [!include[](includes/4-explore-vision-studio.md)]
