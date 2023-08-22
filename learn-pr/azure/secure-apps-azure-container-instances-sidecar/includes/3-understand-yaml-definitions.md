@@ -1,6 +1,6 @@
 In the previous unit, you used Azure CLI commands like `az container create` and their arguments to specify Azure Container Instances options. In this unit, you learn to use YAML markup to specify more sophisticated configurations for container instances.
 
-YAML stands for "Yet Another Markup Language," and provides a more human-readable description language than XML or JSON. YAML avoids delimiters such as curly and square brackets that make human readability difficult, but relies on indentation to structure information in a hierarchy. A benefit of YAML-based configurations is that you can store them in version-control systems and treat them the same as application code.
+YAML stands for "Yet Another Markup Language," and provides a more human-readable description language than XML or JSON. YAML avoids delimiters such as curly and square brackets that make human readability difficult, but relies on indentation to structure information in a hierarchy. An advantage of YAML-based configurations is that you can store them in version-control systems and treat them the same as application code.
 
 Kubernetes is a container orchestration system that uses YAML to describe its objects, and its popularity means that YAML has become a de facto standard for declarative container definitions. Kubernetes YAML uses many of the same constructs as Container Instances YAML.
 
@@ -65,20 +65,20 @@ Notice the following characteristics of the YAML description:
 - YAML is sensitive to indentation. Removing or adding a blank space before a line makes it syntactically incorrect. Only spaces, not tabs, are supported for indentation, so be careful with your text editor.
 - Properties and attributes are specified hierarchically in key-value pairs.
 - Many of the labels are familiar from Kubernetes. For example, resource requests follow the same syntax. However, don't expect all properties to be identical with Kubernetes. For example, ACI environment variables are defined in the `environmentVariables` property, while Kubernetes uses the `env` keyword.
-- The environment variables are in clear text. Clear text is probably acceptable for most environment variables, but others, such as the SQL password in this example, shouldn't be visible openly. A better way to define this sensitive information is with a secure value, which you implement in the next section.
+- The environment variables are in clear text. Clear text is probably acceptable for most environment variables, but others, such as the SQL password in this example, shouldn't be openly visible. A better way to define this sensitive information is with a secure value, which you implement in the next section.
 
 ## Modify and deploy the YAML file
 
 You don't want the SQL database password to be visible to customers, so you need to mask it. To generate the required YAML, you manually edit the automatically generated YAML file and redeploy it to create a modified container instance. While you could change the environment variable into a secure environment variable by using the Azure CLI, you use YAML in preparation for future requirements.
 
-1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: Microsoft123!` <br>to <br>`        secureValue: Microsoft123!`. Be careful not to change indentation. You can also use the online text editor `sed` to make the change:
+1. Use your favorite text editor to change line 13 of */tmp/aci.yaml* from <br>`        value: Microsoft123!` <br>to <br>`        secureValue: Microsoft123!`.<br>Be careful not to change indentation. You can also use the online text editor `sed` to make the change:
 
     ```bash
     # Modify auto-generated YAML
     sed -i 's/        value: Microsoft123!/        secureValue: Microsoft123!/g' /tmp/aci.yaml
     ```
 
-1. After modifying the file, run the following commands to delete the old container and redeploy the new YAML. The Azure CLI command `az container create` takes the argument `--file`, where you can input the YAML description of the container to create. You only need to specify the resource group, because all the other information is contained in the YAML file, including the container instance name.
+1. After modifying the file, run the following commands to delete your old container and redeploy the new YAML. The Azure CLI command `az container create` takes the argument `--file`, where you can input the YAML description of the container to create. You only need to specify the resource group, because all the other information is contained in the YAML file, including the container instance name.
 
     ```azurecli
     # Recreate container using updated YAML

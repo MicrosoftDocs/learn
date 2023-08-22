@@ -14,7 +14,7 @@ durationInMinutes: 05
 content: |
 quiz:
   questions:
-  - content: "What's the best Azure Container Instances feature to do initialization tasks that an application requires?"
+  - content: "What Azure Container Instances feature should you use to do initialization tasks that an application requires?"
     choices:
     - content: Other Azure container instances running in parallel.
       isCorrect: false
@@ -66,6 +66,6 @@ quiz:
     - content: "Only from inside the virtual network and peered virtual networks."
       isCorrect: false
       explanation: "On-premises networks can also access the container instance."
-    - content: "From inside the virtual network, peered virtual networks, and on-premises networks connected over VPN or ExpressRoute."
+    - content: "Only from inside the virtual network, peered virtual networks, and on-premises networks connected over VPN or ExpressRoute."
       isCorrect: true
       explanation: "Azure container instances deployed in virtual networks have the same connectivity as other resources, such as virtual machines."

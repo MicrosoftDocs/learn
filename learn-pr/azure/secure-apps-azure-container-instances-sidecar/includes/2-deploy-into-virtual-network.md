@@ -1,6 +1,8 @@
 In this unit, you create an Azure Container Instances container inside of a virtual network, so the containerized application is accessible only to a customer with virtual network access. The application consists of an API that accesses an external database, which you deploy as an Azure SQL database. Because the application is reachable only from inside the virtual network, you create a test virtual machine (VM) as a jump host to simulate customer access and verify that the application is working.
 
-Virtual networks are isolated networking segments where you can deploy workloads so they're only accessible privately, or optionally also over the public internet. An Azure resource deployed to a virtual network receives a private IP address from the virtual network range. The private IP is reachable only from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks.
+Virtual networks are isolated networking segments where you can deploy workloads so they're only accessible privately, or optionally also over the public internet. Virtual networks typically host VMs, but you can also deploy other Azure resources like container instances to virtual networks.
+
+An Azure resource deployed to a virtual network receives a private IP address from the virtual network range. The private IP is reachable only from inside the virtual network, from peered virtual networks, or from on-premises networks connected via Site-to-Site VPN or Azure ExpressRoute.
 
 The following diagram shows the topology you deploy in this unit:
 
@@ -83,7 +85,7 @@ Now that you have all the required components, you can deploy the Azure containe
       --ip-address private --ports 8080 --vnet $vnet_id --subnet $aci_subnet_id
     ```
 
-1. Connect to the test VM to verify connectivity. First, you retrieve the IP address of the container instance with the `az container show` command. You need to be on the test VM to access this private IP address. The deployed API has an endpoint `/api/healthcheck` that returns the value `OK` if the container is up and running.
+1. Retrieve the IP address of the container instance with the `az container show` command, and then connect to the test VM to verify connectivity. You need to be on the test VM to access the private IP address. The deployed API has an endpoint `/api/healthcheck` that returns the value `OK` if the container is up and running.
 
     ```bash
     # Test container reachability
@@ -96,9 +98,9 @@ Now that you have all the required components, you can deploy the Azure containe
 
 ## Update the Azure SQL firewall rules
 
-Before the application can connect to the backend database, the Azure SQL firewall rules must be updated to allow API access. The connection uses public IP addresses, so it's important to know which source IP address the application uses to access the internet.
+Before the application can connect to the backend database, the Azure SQL firewall rules must be updated to allow the API access. The connection uses the public IP address, so it's important to know which source IP address the application uses to access the internet.
 
-The egress IP address for an Azure container instance isn't trivial to obtain. The application endpoint `api/ip` shows some of its networking attributes, including its public egress IP address. In this case, the API code itself finds out and uses the obtained egress IP to update the Azure SQL database.
+The egress IP address for an Azure container instance isn't trivial to obtain. The application endpoint `api/ip` shows some of the networking attributes, including the public egress IP address. In this case, the API code itself finds out the egress IP and uses it to update the Azure SQL database firewall rules.
 
 The application should then be able to access the Azure SQL database. You can verify that the application can access the database by using the application endpoint `api/sqlversion` to show the database version.
 
@@ -112,7 +114,7 @@ ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -s http://$aci
 ssh -n -o BatchMode=yes -o StrictHostKeyChecking=no $vm_pip "curl -s http://$aci_ip:8080/api/sqlsrcip"
 ```
 
-The last command of the preceding code block calls the application's endpoint `api/sqlsrcip`, which sends a SQL query to the backend database asking for the source IP address the database sees. You can verify that the database sees the application coming from its public IP address.
+The last command of the preceding code block calls the application's endpoint `api/sqlsrcip`, which sends a SQL query to the backend database asking for the source IP address the database sees. You can verify that the database sees the application's public IP address.
 
 <!--1. You can delete the container created in this unit, so that we can move on to the next one.
 

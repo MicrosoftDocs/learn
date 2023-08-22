@@ -1,9 +1,9 @@
 ### YamlMime:ModuleUnit
 uid: learn.azure.azure-container-instances-sidecar.deploy-sidecar
-title: Deploy Azure Container Instances a with sidecar container
+title: Deploy Azure Container Instances with a sidecar container
 metadata:
-  title: Deploy Azure Container Instances with sidecar container
-  description: Deploy Azure Container Instances with a sidecar container
+  title: Deploy Azure Container Instances with a sidecar container
+  description: Deploy Azure Container Instances with a sidecar container to enhance application functionality without having to modify the application code.
   ms.date: 04/27/2022
   author: erjosito
   ms.author: jomore

@@ -1,8 +1,8 @@
-Sometimes you need to do certain tasks before an application starts. For example, you might need to configure certain services to accept inbound connectivity from the container, or inject secrets from Azure Key Vault into a volume. You can implement these prerequisite validation or initialization tasks in initialization (init) containers.
+Sometimes you need to do certain tasks before an application starts. For example, you might need to configure certain services to accept inbound connectivity from the container, or inject secrets from Azure Key Vault into a volume. You can implement these prerequisite validation or initialization tasks with initialization (init) containers.
 
-Init containers are an example of the sidecar pattern you used in a previous unit, but init containers run before any other containers in the container group start. The application containers in the application group start only after any defined init containers successfully complete their tasks. Azure Container Instances init containers are the same concept as Kubernetes init containers.
+Init containers are an example of the sidecar pattern, but init containers run before any other containers in the container group start. The application containers in the container group start only after any defined init containers successfully complete their tasks. Azure Container Instances init containers are the same concept as Kubernetes init containers.
 
-Your customer wants to reach their API by using a Fully Qualified Domain Name (FQDN) instead of an IP address. They also want to make sure that the FQDN doesn't change if they recreate the container group. You can use an init container to provide this functionality. In this unit, you use an init container to update the Domain Name System (DNS) so customers can always access the API by using the domain name instead of an IP address.
+Your customer wants to reach their API by using a Fully Qualified Domain Name (FQDN) instead of an IP address. They also want to make sure that the FQDN doesn't change if they recreate the container group. In this unit, you use an init container to update the Domain Name System (DNS) so customers can always access the API by using the domain name instead of an IP address.
 
 The following diagram shows the topology of the Container Instances init container:
 
@@ -12,7 +12,7 @@ The init container retrieves the IP address allocated to the application contain
 
 ## Create the initialization script and DNS zone
 
-First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS. In this example, you assign the service principal **Contributor** access for simplicity. In production environments, you might want to be more restrictive.
+First, you create an Azure service principal that the init container uses to retrieve the application's IP address and update the DNS. In this example, you assign the service principal **Contributor** role for simplicity. In production environments, you might want to be more restrictive.
 
 1. In Azure Cloud Shell in the Azure portal, run the following code to create the service principal:
 
@@ -61,7 +61,7 @@ First, you create an Azure service principal that the init container uses to ret
     
     The initialization script uses Azure CLI to run the commands that find out the IP address of the container instance and create an A-record in the private DNS zone. The script authenticates by using the service principal application ID and secret that it expects to find as environment variables.
 
-## Deploy the container group with init container
+## Deploy the container group with the init container
 
 You can now create a YAML file that builds on the files you used in previous units. Note these items in the following YAML code:
 
