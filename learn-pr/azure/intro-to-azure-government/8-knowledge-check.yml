@@ -66,7 +66,7 @@ quiz:
       explanation: This is not a valid URL.
     - content: portal.azure.us
       isCorrect: true
-      explanation: The Azure Government portal can be accessed at https://portal.azure.us
+      explanation: The Azure Government portal can be accessed at https://portal.azure.us.
     - content: portal.azure.fed
       isCorrect: false
       explanation: This is not a valid URL.

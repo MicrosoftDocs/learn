@@ -1,4 +1,4 @@
-Azure Government is a cloud environment specifically built to meet compliance and security requirements for US government. This mission-critical cloud delivers  breakthrough innovation to U.S. government customers and their partners. Azure Government applies to government at any level — from state and local governments to federal agencies including Department of Defense agencies. 
+Azure Government is a cloud environment specifically built to meet compliance and security requirements for the United States government. This mission-critical cloud delivers breakthrough innovation to U.S. government customers and their partners. Azure Government applies to government at any level — from state and local governments to federal agencies including Department of Defense agencies. 
 
 While there are multiple cloud providers in the public sector, not many can offer the unique capabilities required by state and local and federal government agencies. Azure Government provides hybrid flexibility, deep security, and broad compliance coverage across regulatory standards.
 
@@ -19,7 +19,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
    :::column span="3":::
      A **Physically separated** instance of Microsoft Azure.
 
-     Microsoft Azure Government is a separate, physical instance of Azure. It has an advanced infrastructure with robust networking in eight announced regions across the United States. Those regions include two regions at DoD Impact Level 5. Azure Government also offers data replication across regions for business continuity. All are connected via private dark fiber.
+     Microsoft Azure Government is a standalone physical instance of Azure. It has an advanced infrastructure with robust networking in eight announced regions across the United States. Those regions include two regions at DoD Impact Level 5. Azure Government also offers data replication across regions for business continuity. All are connected via private dark fiber.
 
      ExpressRoute provides choice and convenience when connecting between on-premises and virtual resources in the cloud and enables reliable connection for scenarios like data migration, disaster recovery, or other high-availability needs. ExpressRoute locations are in Chicago, Dallas, New York, Phoenix, San Antonio, Seattle, Silicon Valley, and Washington DC.
 
@@ -34,7 +34,7 @@ Before we go further, let's highlight the key benefits of using Azure Government
      ![An icon representing a government building.](../media/gov-icon.png)
    :::column-end:::
    :::column span="3":::
-     The only hyper-scale cloud built **specifically for U.S. government**.
+     The only hyper-scale cloud built **specifically for the U.S. government**.
 
      Azure Government serves thousands of government customers within Federal, state and local agencies. Many Federal cabinet level agencies are represented, as well as the Army, Navy, Air Force, and Marine Corps.
    :::column-end:::
