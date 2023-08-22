@@ -74,7 +74,7 @@ When creating user-defined routes, you can specify these next hop types:
 
 With user-defined routes, you can't specify the next hop type **VirtualNetworkServiceEndpoint**, which indicates virtual network peering.
 
-### Service Tags for user-defined routes
+### Service tags for user-defined routes
 
 You can specify a service tag as the address prefix for a user-defined route instead of an explicit IP range. A service tag represents a group of IP address prefixes from a given Azure service. Microsoft manages the address prefixes encompassed by the service tag and automatically updates the service tag as addresses change. Thus minimizing the complexity of frequent updates to user-defined routes and reducing the number of routes you need to create.
 
