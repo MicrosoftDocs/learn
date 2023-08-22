@@ -38,7 +38,7 @@ Within the Transformer architecture, attention is used three times:
 
 Let's imagine the following sentence as input for the model:
 
-```Vincent Van Gogh was a painter most known for creating stunning and emotionally expressive artworks, including ...```, including ...```
+`Vincent Van Gogh was a painter most known for creating stunning and emotionally expressive artworks, including ..., including ...`
 
 To predict the next word, the architecture will take tokens from the sentence and use positional encoding to encode the tokens. To simplify how the three attention mechanisms are used, let's assume that the first, the source sentence is encoded and processed with an attention function: `Vincent Van Gogh was a painter`. The incomplete target sentence to encode may then be `most known for creating stunning and emotionally expressive artworks, including ...`.
 
