@@ -34,8 +34,6 @@ By default, when Node.js is started with the `--inspect` option, it listens on h
 
 As an alternative, you can use the `--inspect-brk` option. It works the same as `--inspect`, but it breaks code execution just before the start of your code. This allows you to attach the debugger and take your time to set breakpoints and step through your code to identify the root cause of the issue. You would use `--inspect-brk` when you need to debug a race condition or an intermittent issue that's difficult to reproduce.
 
-
-
 After Node.js is started with inspect mode enabled, you can use any compatible debugger clients to connect to your Node.js process.
 
 ### Timeout error from node inspect 
