@@ -21,7 +21,7 @@ abstract: |
 prerequisites: |
   - Experience with IoT concepts such as devices and event data at the beginner level
   - Experience with SQL-style query concepts such as SELECT, FROM, and WHERE clauses at the beginner level
-iconUrl: /training/achievements/generic-badge.svg
+iconUrl: /training/achievements/introduction-to-azure-digital-twins.svg
 ratingEnabled: false
 levels:
 - beginner
