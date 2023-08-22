@@ -1,14 +1,14 @@
 ### YamlMime:ModuleUnit
 uid: learn.wwl.describe-medallion-architecture.secure-govern
-title: Ensure security within your medallion architecture
+title: Considerations for managing your lakehouse
 metadata:
-  title: Ensure security within your medallion architecture
-  description: "Ensure security within your medallion architecture"
-  ms.date: 08/21/2023
+  title: Considerations for managing your lakehouse
+  description: "Considerations for managing your lakehouse"
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
   ms.service: fabric
-durationInMinutes: 6
+durationInMinutes: 3
 content: |
   [!include[](includes/5-secure-govern.md)]

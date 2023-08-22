@@ -4,11 +4,11 @@ title: Introduction
 metadata:
   title: Introduction
   description: "Introduction"
-  ms.date: 08/21/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
   ms.service: fabric
-durationInMinutes: 3
+durationInMinutes: 2
 content: |
   [!include[](includes/1-introduction.md)]

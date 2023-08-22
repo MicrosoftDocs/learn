@@ -4,7 +4,7 @@ title: Knowledge check
 metadata:
   title: Knowledge check
   description: "Knowledge check"
-  ms.date: 08/21/2023
+  ms.date: 08/22/2023
   author: wwlpublish
   ms.author: shlindsay
   ms.topic: interactive-tutorial
@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. These terms don't align with the specific layers commonly used in the medallion architecture."
     - content: "Bronze, Silver, Gold"
       isCorrect: true
-      explanation: "Correct. This is the correct sequence of layers typically used in the medallion architecture. Data flows from the raw and unrefined state (Bronze) to a curated and validated state (Silver), and finally to an enriched and well-structured presentation state (Gold)."
+      explanation: "Correct. Bronze, silver, gold is the correct sequence of layers typically used in the medallion architecture. Data flows from the raw and unrefined state (bronze) to a curated and validated state (silver), and finally to an enriched and well-structured presentation state (gold)."
     - content: "Initial, Intermediate, Final"
       isCorrect: false
       explanation: "Incorrect. While these terms suggest a progression, they don't correspond to the widely recognized layers of the medallion architecture."
@@ -43,6 +43,6 @@ quiz:
     - content: "It makes it easier to share data with colleagues."
       isCorrect: false
       explanation: "Incorrect. Storing different layers of your lakehouse in separate workspaces does not make it easier to share data with colleagues."
-    - content: "There is no benefit of storing different layers of your lakehouse in separate workspaces."
+    - content: "There's no benefit of storing different layers of your lakehouse in separate workspaces."
       isCorrect: false
       explanation: "Incorrect.  There is a benefit of storing different layers of your lakehouse in separate workspaces."
