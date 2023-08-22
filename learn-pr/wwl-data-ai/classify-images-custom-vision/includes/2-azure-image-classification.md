@@ -15,7 +15,7 @@ The simplest approach is to use a general Azure AI services resource for both tr
 
 If you choose to create a Custom Vision resource, you will be prompted to choose *training*, *prediction*, or *both* - and it's important to note that if you choose "both", then ***two*** resources are created - one for training and one for prediction.
 
-It's also possible to take a mix-and-match approach in which you use a dedicated Custom Vision resource for training, but deploy your model to a Azure AI services resource for prediction. For this to work, the training and prediction resources must be created in the same region.
+It's also possible to take a mix-and-match approach in which you use a dedicated Custom Vision resource for training, but deploy your model to an Azure AI services resource for prediction. For this to work, the training and prediction resources must be created in the same region.
 
 ## Model training
 

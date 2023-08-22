@@ -2,9 +2,9 @@ You can use a machine learning *classification* technique to predict which categ
 
 For example, the features of a flower might include the measurements of its petals, stem, sepals, and other quantifiable characteristics. A machine learning model could be trained by applying an algorithm to these measurements that calculates the most likely species of the flower - its class.
 
-![Training a classification model with flower measurements as features and species as classes](../media/train-classification.png)
+![Diagram that shows a classification model with flower measurements as features and species as classes.](../media/train-classification.png)
 
-![Classifying a flower based on measurements as features and species as classes](../media/classification.png)
+![Diagram that shows flower classification based on measurements as features and species as classes.](../media/classification.png)
 
 ## Understand image classification 
 
@@ -12,7 +12,7 @@ For example, the features of a flower might include the measurements of its peta
 
 To create an image classification model, you need data that consists of features and their labels. The existing data is a set of categorized images. Digital images are made up of an array of pixel values, and these are used as features to train the model based on the known image classes.
 
-![Classifying photos based on pixels as features and fruit as classes](../media/train-image-classification.png)
+![Screenshot of classifying photos based on pixels as features and fruit as classes.](../media/train-image-classification.png)
 
 The model is trained to match the patterns in the pixel values to a set of class labels. After the model has been trained, you can use it with new sets of features to predict unknown label values.
 

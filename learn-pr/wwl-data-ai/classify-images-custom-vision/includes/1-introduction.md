@@ -11,6 +11,6 @@ Some potential uses for image classification include:
 ## Learning objectives 
 Learn how to use Azure AI Custom Vision service to create an image classification solution. In this module you will: 
 - Identify image classification scenarios and technologies
-- Provision a Azure AI Vision resource and use the Custom Vision portal 
+- Provision an Azure AI Vision resource and use the Custom Vision portal 
 - Train an image classification model
 - Publish and consume an image classification model
