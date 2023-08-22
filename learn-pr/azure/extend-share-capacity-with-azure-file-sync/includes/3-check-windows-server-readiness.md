@@ -20,7 +20,7 @@ You can use the Azure File Sync evaluation tool to evaluate the system's OS and 
 
 Azure File Sync has these system requirements for your local file server:
 
-- **Operating system**: Windows Server 2012 R2, Windows Server 2016, or Windows Server 2019, in either Datacenter or Standard edition in full or core deployments.
+- **Operating system**: Windows Server 2012 R2, Windows Server 2016, Windows Server 2019, or Windows Server 2022, in either Datacenter or Standard edition in full or core deployments.
 - **Memory**: 2 GB of RAM or more.
 - **Patches**: Latest Windows patches applied.
 - **Storage**: Locally attached volume formatted in the NTFS file format. Remote storage connected by USB isn't supported.

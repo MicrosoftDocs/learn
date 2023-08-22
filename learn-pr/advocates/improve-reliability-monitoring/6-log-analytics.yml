@@ -44,12 +44,12 @@ quiz:
 
   - content: 'Where is data in Log Analytics stored and queried from in most KQL queries?'
     choices:
-      - content: 'databases'
+      - content: 'Databases'
         isCorrect: false
         explanation: 'Data is stored in tables.'
-      - content: 'documents'
+      - content: 'Documents'
         isCorrect: false
         explanation: 'Data is stored in tables.'
-      - content: 'tables'
+      - content: 'Tables'
         isCorrect: true
         explanation: 'Correct, most KQL queries start with a table as a data source.'

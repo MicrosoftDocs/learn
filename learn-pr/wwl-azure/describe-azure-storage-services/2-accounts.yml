@@ -4,11 +4,10 @@ title: Describe Azure storage accounts
 metadata:
   title: Describe Azure storage accounts
   description: "Describe Azure storage accounts"
-  ms.date: 11/29/2022
+  ms.date: 08/11/2023
   author: wwlpublish
   ms.author: robbarefoot
   ms.topic: interactive-tutorial
-  ms.prod: learning-azure
 azureSandbox: false
 labModal: false
 durationInMinutes: 5
