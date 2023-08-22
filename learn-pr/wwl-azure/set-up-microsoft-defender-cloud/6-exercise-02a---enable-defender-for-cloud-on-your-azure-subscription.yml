@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.exercise-02a---enable-defender-for-cloud-on-your-azure-subscription
+title: Exercise 02a - Enable Defender for Cloud on your Azure subscription
+metadata:
+  title: Exercise 02a - Enable Defender for Cloud on your Azure subscription
+  description: "Exercise 02a - Enable Defender for Cloud on your Azure subscription"
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 10
+content: |
+  [!include[](includes/6-exercise-02a---enable-defender-for-cloud-on-your-azure-subscription.md)]

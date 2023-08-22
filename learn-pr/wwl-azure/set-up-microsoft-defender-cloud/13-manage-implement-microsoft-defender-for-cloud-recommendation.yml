@@ -1,0 +1,14 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.manage-implement-microsoft-defender-for-cloud-recommendation
+title: Manage and implement Microsoft Defender for Cloud recommendations
+metadata:
+  title: Manage and implement Microsoft Defender for Cloud recommendations
+  description: "Manage and implement Microsoft Defender for Cloud recommendations"
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/13-manage-implement-microsoft-defender-for-cloud-recommendation.md)]

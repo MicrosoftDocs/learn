@@ -1,0 +1,65 @@
+### YamlMime:Module
+uid: learn.wwl.set-up-microsoft-defender-cloud
+metadata:
+  title: Set up Microsoft Defender for Cloud
+  description: "Discover how to leverage Microsoft Defender for Cloud through the Azure portal to ensure the security of your Azure services and workloads, offering continuous threat detection and prevention."
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+title: Set up Microsoft Defender for Cloud
+summary: In this module, you'll learn how to implement Microsoft Defender for Cloud using the Azure portal, to strengthen security and threat detection in your Azure environment.
+abstract: |
+  By the end of this training module, participants will:
+  - Understand the features and benefits of Microsoft Defender for Cloud, Microsoft Security Benchmark, Security Recommendations, and Defender for Cloud Secure Score.
+  - Learn how to leverage these tools to monitor, protect, and improve the security of cloud environments.
+  - Explore the MITRE Attack Matrix to identify common attack techniques and prioritize security efforts.
+  - Understand the concept of Brute Force Attacks and the importance of implementing preventive measures.
+  - Familiarize yourself with Just in Time Virtual Machine to implement fine-grained access controls for enhanced security.
+prerequisites: ""
+iconUrl: /training/achievements/generic-badge.svg
+hidden: true
+levels:
+- intermediate
+roles:
+- administrator
+- security-engineer
+products:
+- azure
+- azure-arc
+- azure-log-analytics
+- azure-portal
+- azure-sql-database
+- azure-sql-virtual-machines
+- azure-sqlserver-vm
+- azure-storage
+- azure-storage-accounts
+- azure-virtual-machines
+- azure-virtual-machines-windows
+- azure-virtual-network
+- defender-for-cloud
+units:
+- learn.wwl.set-up-microsoft-defender-cloud.introduction
+- learn.wwl.set-up-microsoft-defender-cloud.implement-microsoft-defender-for-cloud
+- learn.wwl.set-up-microsoft-defender-cloud.security-posture
+- learn.wwl.set-up-microsoft-defender-cloud.workload-protections
+- learn.wwl.set-up-microsoft-defender-cloud.deploy-microsoft-defender-for-cloud
+- learn.wwl.set-up-microsoft-defender-cloud.exercise-02a---enable-defender-for-cloud-on-your-azure-subscription
+- learn.wwl.set-up-microsoft-defender-cloud.azure-arc
+- learn.wwl.set-up-microsoft-defender-cloud.azure-arc-capabilities
+- learn.wwl.set-up-microsoft-defender-cloud.microsoft-cloud-security-benchmark
+- learn.wwl.set-up-microsoft-defender-cloud.improve-your-regulatory-compliance
+- learn.wwl.set-up-microsoft-defender-cloud.configure-microsoft-defender-for-cloud-policies
+- learn.wwl.set-up-microsoft-defender-cloud.view-edit-security-policies
+- learn.wwl.set-up-microsoft-defender-cloud.manage-implement-microsoft-defender-for-cloud-recommendation
+- learn.wwl.set-up-microsoft-defender-cloud.explore-secure-score
+- learn.wwl.set-up-microsoft-defender-cloud.mitre-attack-matrix
+- learn.wwl.set-up-microsoft-defender-cloud.define-brute-force-attacks
+- learn.wwl.set-up-microsoft-defender-cloud.understand-just-in-time-vm-access
+- learn.wwl.set-up-microsoft-defender-cloud.implement-just-in-time-vm-access
+- learn.wwl.set-up-microsoft-defender-cloud.exercise-02b---enable-just-in-time-access-on-vms
+- learn.wwl.set-up-microsoft-defender-cloud.knowledge-check
+- learn.wwl.set-up-microsoft-defender-cloud.summary
+badge:
+  uid: learn.wwl.set-up-microsoft-defender-cloud.badge

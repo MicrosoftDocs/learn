@@ -1,0 +1,61 @@
+### YamlMime:ModuleUnit
+uid: learn.wwl.set-up-microsoft-defender-cloud.knowledge-check
+title: Knowledge check
+metadata:
+  title: Knowledge check
+  description: "Knowledge check"
+  ms.date: 08/22/2023
+  author: wwlpublish
+  ms.author: serlingdavis
+  ms.topic: interactive-tutorial
+  ms.prod: azure
+durationInMinutes: 3
+content: |
+  [!include[](includes/20-knowledge-check.md)]
+quiz:
+  title: "Check your knowledge"
+  questions:
+  - content: "What is the role of Microsoft Defender for Cloud?"
+    choices:
+    - content: "Securing cloud workloads and services"
+      isCorrect: true
+      explanation: "Correct. Microsoft Defender for Cloud is a cloud-native security solution that focuses on securing cloud workloads and services. It provides threat detection, vulnerability management, and incident response capabilities specifically tailored for cloud environments."
+    - content: "Managing network infrastructure devices"
+      isCorrect: false
+      explanation: "Incorrect. This is the role of network management solutions like Azure Network Security Groups."
+    - content: "Analyzing network traffic for anomalies"
+      isCorrect: false
+      explanation: "Incorrect. This is the role of network traffic analysis solutions like Azure Network Watcher."
+  - content: "What does the Microsoft Security Benchmark provide?"
+    choices:
+    - content: "Best practices for securing Azure services"
+      isCorrect: true
+      explanation: "Correct. The Microsoft Security Benchmark provides prescriptive best practices and recommendations for improving the security of workloads, data, and services on Azure. It focuses on cloud-centric control areas and includes guidance on securing Azure services and infrastructure."
+    - content: "A comprehensive list of network security controls"
+      isCorrect: false
+      explanation: "Incorrect. While network security controls may be part of the benchmark, it covers a broader range of security areas."
+    - content: "Guidelines for securing Microsoft Office applications"
+      isCorrect: false
+      explanation: "Incorrect. Microsoft Office applications have their own security guidelines, but they are not the focus of the Security Benchmark."
+  - content: "What is the goal of Defender for Cloud Secure Score?"
+    choices:
+    - content: "To measure the compliance of cloud services"
+      isCorrect: false
+      explanation: "Incorrect. Compliance measurement is not the primary focus of Secure Score, although it may indirectly contribute to compliance."
+    - content: "To evaluate the effectiveness of security controls"
+      isCorrect: true
+      explanation: "Correct. Defender for Cloud Secure Score assesses the effectiveness of security controls implemented in an Azure environment. It provides a score and recommendations to improve the security posture based on security best practices and industry standards."
+    - content: "To analyze user behavior for potential threats"
+      isCorrect: false
+      explanation: "Incorrect. User behavior analysis is part of threat detection solutions like Microsoft Defender for Endpoint, but not the main goal of Secure Score."
+  - content: "Which technique does the MITRE Attack Matrix describe?"
+    choices:
+    - content: "Server configuration hardening"
+      isCorrect: false
+      explanation: "Incorrect. Server configuration hardening focuses on securing server settings and access controls, but it is not the primary focus of the MITRE Attack Matrix."
+    - content: "Exploiting software vulnerabilities"
+      isCorrect: true
+      explanation: "Correct. The MITRE Attack Matrix provides a framework for categorizing and describing various techniques used by attackers. It focuses on tactics and techniques for exploiting software vulnerabilities to gain unauthorized access or perform malicious activities."
+    - content: "Network traffic monitoring"
+      isCorrect: false
+      explanation: "Incorrect. Network traffic monitoring is related to detecting and analyzing network activities, but it is not the primary focus of the MITRE Attack Matrix."
