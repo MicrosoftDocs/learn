@@ -17,6 +17,5 @@ metadata:
   zone_pivot_groups: os
 durationInMinutes: 5
 interactive: "bash"
-azureSandbox: true
 content: |
   [!include[](includes/5-try.md)]
