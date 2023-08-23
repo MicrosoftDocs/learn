@@ -66,4 +66,4 @@ quiz:
       explanation: "That's correct. Organizations can estimate their expected monthly bills by using the pricing calculator to track their actual account usage and bills at any time on the billing portal."
     - content: "Microsoft Cost Management."
       isCorrect: false
-      explanation: "That's incorrect. Organizations can use the Microsoft Cost Management tool to use and manage Azure and other cloud resources through a multiplecloud cost management solution."
+      explanation: "That's incorrect. Organizations can use the Microsoft Cost Management tool to use and manage Azure and other cloud resources through a multiple-cloud cost management solution."
