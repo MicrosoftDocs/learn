@@ -9,7 +9,7 @@ In this module, you develop the classic rock, paper, scissors minigame, with the
 
 If you're new to GitHub platforms, we have some resources to help you get started:
 
-- [Introduction to GitHub Copilot](https://learn.microsoft.com/training/modules/introduction-to-github-copilot/).
+- [Introduction to GitHub Copilot](/training/modules/introduction-to-github-copilot/?WT.mc_id=academic-105496-cyzanon).
 - [Introduction To Codespaces](https://aka.ms/CodespacesVideoTutorial).
 
 ## About the challenge
