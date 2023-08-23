@@ -1,8 +1,8 @@
-In the previous exercise, you learned how to create an Azure Cognitive Services account using the Azure Command Line Interface (CLI).
+In the previous exercise, you learned how to create an Azure AI services account using the Azure CLI.
 
-Now that you have an Azure Cognitive Services account with which to work, you can begin working on your text-to-speech application.
+Now that you have an Azure AI services account with which to work, you can begin working on your text to speech application.
 
-In this module, we're going to focus on two ways to pass text to Azure Cognitive Services's text to speech engine:
+In this module, we're going to focus on two ways to pass text to Azure AI services's text to speech engine:
 
 | Text Format | Description |
 |---|---|
@@ -13,13 +13,13 @@ In the unit after the next exercise, we'll take an in-depth look at working with
 
 ## Creating a text to speech application for text files
 
-To create an application that will convert text to speech using Azure Cognitive Services, your application will have to accomplish all of the following tasks:
+To create an application that will convert text to speech using Azure AI Speech, your application will have to accomplish all of the following tasks:
 
 - Include the `Microsoft.CognitiveServices.Speech` package.
 
 - Read text from a file.
 
-- Create a `SpeechConfig` class using the API key from your Azure Cognitive Services account.
+- Create a `SpeechConfig` class using the API key from your Azure AI services account.
 
 - Create a `SpeechSynthesizer` class using the `SpeechConfig` class.
 

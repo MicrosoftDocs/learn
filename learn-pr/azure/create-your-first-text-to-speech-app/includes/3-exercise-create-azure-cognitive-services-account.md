@@ -1,10 +1,12 @@
-In the previous unit, you learned how to use the Azure portal to create an Azure Cognitive Services account.
+In the previous unit, you learned how to use the Azure portal to create an Azure AI services account.
 
-In this exercise, you'll create an Azure Cognitive Services account using the Azure Command Line Interface (CLI).
+In this exercise, you'll create an Azure AI services account using the Azure CLI.
 
-The applications that you'll create in the upcoming exercises use this account to perform the text-to-speech operations.
+The applications that you'll create in the upcoming exercises use this account to perform the text to speech operations.
 
-## Create an Azure Cognitive Services account
+<a name='create-an-azure-cognitive-services-account'></a>
+
+## Create an Azure AI services account
 
 1. In the Cloud Shell on the right, create a variable to hold the name of the resource group that was created for you when you activated the Learn sandbox:
 
@@ -30,7 +32,7 @@ The applications that you'll create in the upcoming exercises use this account t
     ACCOUNT=learn-account-$RANDOM
     ```
 
-1. Create your Azure Cognitive Services account:
+1. Create your Azure AI services account:
 
     ```azurecli
     az cognitiveservices account create \
@@ -46,10 +48,10 @@ The applications that you'll create in the upcoming exercises use this account t
 
     | Value | Description |
     | --- | --- |
-    | **name** | Specifies the unique name for your Azure Cognitive Services account. |
+    | **name** | Specifies the unique name for your Azure AI services account. |
     | <nobr>**resource-group**</nobr> | Specifies the name of your resource group. |
-    | **kind** | Specifies the account type, which is _SpeechServices_ for this exercise because we'll be creating a text-to-speech application.<br /><br />See `az cognitiveservices account list-kinds` for a list of account types. |
-    | **sku** | Specifies the SKU for the account, which is the free _F0_ tier for this exercise.<br /><br />See `az cognitiveservices account list-skus` for a list of account SKUs.  |
+    | **kind** | Specifies the account type, which is *SpeechServices* for this exercise because we'll be creating a text to speech application.<br /><br />See `az cognitiveservices account list-kinds` for a list of account types. |
+    | **sku** | Specifies the SKU for the account, which is the free *F0* tier for this exercise.<br /><br />See `az cognitiveservices account list-skus` for a list of account SKUs.  |
     | **location** | Specifies the location for the account. |
     | **yes** | Suppresses the prompt for terms confirmation. |
 
@@ -79,9 +81,11 @@ The applications that you'll create in the upcoming exercises use this account t
     }
     ```
 
-## Retrieve the keys for your Azure Cognitive Services account
+<a name='retrieve-the-keys-for-your-azure-cognitive-services-account'></a>
 
-When your Azure Cognitive Services account has been created, use the following command to list the keys:
+## Retrieve the keys for your Azure AI services account
+
+When your Azure AI services account has been created, use the following command to list the keys:
 
 ```azurecli
 az cognitiveservices account keys list \
