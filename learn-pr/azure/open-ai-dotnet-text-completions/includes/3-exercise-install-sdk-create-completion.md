@@ -61,7 +61,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     az cognitiveservices account show \
     -g LearnPetStore \
     -n PetStoreOpenAI \
-    | jq -r .properties.endpoint
+    --query ".properties.endpoint"
     ```
 
     **The primary API key**
@@ -70,7 +70,7 @@ Creating the resource and deploying the model is a multi-step process. Use the A
     az cognitiveservices account keys list \
     -g LearnPetStore \
     -n PetStoreOpenAI \
-    | jq -r .key1
+    --query "key1"
     ```
 
 ## Create the console application and add the OpenAI SDK
@@ -92,7 +92,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
 1. Then add the Azure Open AI SDK.
 
     ```dotnetcli
-    dotnet add package Azure.AI.OpenAI --version 1.0.0-beta.5
+    dotnet add package Azure.AI.OpenAI --prerelease
     ```
 
 1. Open the project in VS Code or Visual Studio.

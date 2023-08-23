@@ -61,18 +61,22 @@ Examples sentiment ratings:
 4: Neutral
 5: Positive
 
-Examples:
+Create sentiments for:
 1. "I can't stand homework"
 2. "This sucks. I'm bored 😠"
 3. "I can't wait for Halloween!!!"
 4. "My cat is adorable ❤️❤️"
 5. "I hate chocolate"
 
-Examples sentiment ratings:
+Sentiment classifications:
 1.
 ```
 
-After showing the API how the examples are classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from the first example how it's supposed to be classified. In the second example, it sees how to apply this to the list. This allows the API to rate five (and even more) examples in just one API call.
+After showing the API 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it is supposed to output the classified sentiments.
+
+And that leads us to what we want the API to do: we give it 5 sentiments for it to classify and then it should output the classification of each in an ordered list.
+
+This allows the API to rate five (and even more) examples in just one API call.
 
 You can begin to see how the prompt, or the text passed to the API is the programming language.
 
@@ -95,6 +99,8 @@ The API already has a grasp of many languages, such as French, so you do not nee
 #### Conversion
 
 In this example we convert the name of a movie into emoji. This shows the adaptability of the API to picking up patterns and working with other characters.
+
+Here we expect the output to be an emoji representation of the Spider-Man movie.
 
 ```
 Back to Future: 👨👴🚗🕒
