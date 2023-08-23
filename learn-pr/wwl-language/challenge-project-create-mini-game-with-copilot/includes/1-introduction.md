@@ -3,10 +3,11 @@
 
 Creating a minigame can help you practice your programming skills and improve your ability to create console applications in Python.
 
-In this module, you will develop the classic rock, paper, scissors minigame, with the help of GitHub Codespaces and GitHub Copilot. That is, you won't have to worry about setting up the development environment, and you can focus on developing the application and rely on a code assistant.
+In this module, you develop the classic rock, paper, scissors minigame, with the help of GitHub Codespaces and GitHub Copilot. That is, you don't need to worry about configuring the development environment, being able to focus on application development and rely on a code assistant.
 
 ## Learn before you code
-If this is your first time using the GitHub platforms? No problem! We have a few resources to help you get started.
+
+If you're new to GitHub platforms, we have some resources to help you get started:
 
 - [Introduction to GitHub Copilot](https://learn.microsoft.com/training/modules/introduction-to-github-copilot/).
 - [Introduction To Codespaces](https://aka.ms/CodespacesVideoTutorial).
