@@ -6,7 +6,7 @@ Your formulations and manufacturing processes are trade secrets. The spreadsheet
 
 You also have a sales group that creates cookie recipes and baking videos to promote your products to consumers. Your priority for this data is low cost, rather than redundancy or location. This storage must be billed to the sales team.
 
-Here, you'll see how to handle these types of business requirements by creating multiple Azure storage accounts. Each storage account will have the appropriate settings for the data it holds.
+By using Azure Storage accounts, you can handle these types of business requirements. Here, you learn how to create multiple Azure storage accounts, with each one having the appropriate settings for the data it holds.
 
 ## Learning objectives
 

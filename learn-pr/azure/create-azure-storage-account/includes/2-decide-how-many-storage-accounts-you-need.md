@@ -1,4 +1,4 @@
-Organizations often have multiple storage accounts to enable them to implement different sets of requirements. In the chocolate-manufacturer example, there will be one storage account for private business data and one storage account for consumer-facing files. In this unit, you learn the policy factors that are controlled by each type of storage account, which will help you decide how many accounts you need.
+Organizations often have multiple storage accounts to enable them to implement different sets of requirements. In the chocolate-manufacturer example, there's one storage account for private business data and one storage account for consumer-facing files. In this unit, you learn the policy factors that each type of storage account controls, which helps you decide how many accounts you need.
 
 ## What is Azure Storage?
 
@@ -30,7 +30,7 @@ Other Azure data services, such as Azure SQL and Azure Cosmos DB, are managed as
 
 A storage account defines a policy that applies to all the storage services in the account. For example, you could specify that all the contained services will be stored in the West US datacenter, accessible only over https, and billed to the sales department's subscription.
 
-The settings that are defined by a storage account are:
+A storage account defines the following settings:
 
 - **Subscription**: The Azure subscription that's billed for the services in the account.
 
@@ -54,7 +54,7 @@ A storage account represents a collection of settings like location, replication
 
 ![Illustration showing two storage accounts with different settings.](../media/2-multiple-storage-accounts.png)
 
-The number of storage accounts you need is typically determined by your data diversity, cost sensitivity, and tolerance for management overhead.
+Typically, your data diversity, cost sensitivity, and tolerance for management overhead, determines the number of storage accounts you need.
 
 ### Data diversity
 
