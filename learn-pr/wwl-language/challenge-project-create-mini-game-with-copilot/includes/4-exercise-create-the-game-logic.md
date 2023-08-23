@@ -1,35 +1,57 @@
 
 
 
-Your goal is to develop a mini-game application. The mini-game displays food that the player can consume. You need to detect if the player has successfully consumed the food, and if so, redisplay the food. You also want to change the player appearance depending on what food was consumed.
+With Codespaces configured and GitHub Copilot installed, your goal is to develop the Python console minigame. You'll need to create the game logic following the specifications and use GitHub Copilot to help create the methods.
 
 ## Specification
 
-In this challenge exercise, you need to create a method that determines if the player has consumed the food that was displayed. If the food was consumed, you want to update the player's appearance and redisplay the food.
+In this challenge exercise, you'll need to define the elements that will be used in the minigame, create the repetition structure to allow the user to play several times, create the decision logic to determine the winner, and display the result.
 
-### Check if the player consumed the food
+### Game rules
 
-- Create a method that uses the existing position variables of the player and food 
-- The method should return a value
-- After the user moves the character, call your method to determine the following:
-    - Whether or not to use the existing method that changes player appearance
-    - Whether or not to use the existing method to redisplay the food
+The winner of the game is determined by a simple set of rules:
+
+- Rock beats scissors (breaking it).
+- Scissors beat paper (cutting it).
+- Paper beat rock (wrapping it).
+
+### Interaction with the player
+
+The console will be used to interact with the player. The player can choose one of the three options: `rock`, `paper, or `scissors`. The player can also choose whether to play again or not, be warned if they enter an invalid option, and know their score at the end of the game.
+
+### Definitions for the game
+
+- Import the random module to use the `choice` function, which will play the role of our opponent.
+- Create a list called `options` with the game options: `rock`, `paper` and `scissors`
+- Create the variables:
+    - `rounds_played` to store the number of rounds
+    - `score` to store player wins
+- Use `while` to create a repetition structure that allows the user to play several times.
+- Create a variable called `random_choice` to store the opponent player's option, using the `choice` function of the `random` module.
+
+### Validation of user input
+
+- At each round, the player must enter one of the options in the list and be informed if they won, lost, or tied with the opponent.
+- The minigame must handle user inputs, putting them in lowercase and informing the user if the option is invalid.
+- By the end of each round, the player must answer whether they want to play again or not.
 
 ## Check your work
 
-To validate that your code satisfies the specified requirements, complete the following steps:
+1. Run the minigame on the console with the `python app.py` command.
+2. At the prompt, type one of the game options: `rock`, `paper, or `scissors.
+3. The minigame should inform the player whether the player won, lost, or tied with the opponent.
+4. Choose to continue playing.
+5. At the prompt, type `screen.
+5. The minigame should inform the player if the option entered by the player is invalid.
+6. Repeat steps 2 and 4 to play a few rounds and choose not to continue playing.
+7. Check if the minigame is terminated and if it will display your score, informing you of the number of wins and rounds.
 
-1. Use Visual Studio Code to build and run your app.
+Congratulations if you did well in this challenge exercise! You've created a Python console minigame using GitHub Copilot.
 
-    > [!NOTE]
-    > You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
+## Next steps
 
-1. At the Terminal command prompt, press directional keys to move the player.
+To continue learning, you can explore new Python learning resources on Microsoft Learn:
 
-1. Move the player across the displayed food string.
-
-1. Verify that a new food string is displayed.
-
-1. Verify that the player appearance changes depending on which food string was consumed.
-
-Once you've validated the results for this exercise, proceed to the next exercise in this challenge.
+- [Build real world applications with Python](https://docs.microsoft.com/learn/paths/python-language/)
+- [Host a web application with Azure App Service](https://docs.microsoft.com/learn/paths/host-a-web-application-with-azure-app-service/)
+- [Build a machine learning model with Python](https://docs.microsoft.com/learn/paths/build-python-machine-learning-model-fundamentals/)

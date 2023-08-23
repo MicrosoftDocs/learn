@@ -1,66 +1,45 @@
 
 
 
-Your goal is to develop a mini-game application. You need the game to end if the user resized the Console window the game is running in. You also want to add an option for the game to end if the user enters any nondirectional character.
+Your goal is to develop a Python console minigame application using GitHub Copilot. As you're working in a Codespace, you'll need to install the GitHub Copilot extension by updating the dev container configuration file.
+
+## What is a Dev Container?
+Development containers, or dev containers, are Docker containers that are specifically configured to provide a fully featured development environment. Whenever you work in a codespace, you are using a dev container on a virtual machine.
+
+You can configure the dev container for a repository so that codespaces created for that repository give you a tailored development environment, complete with all the tools and runtimes you need to work on a specific project.
+
+The diagram below, taken directly from the official [Visual Studio Code docs](https://code.visualstudio.com/docs/remote/containers), illustrates this:
+
+![Dev Container Diagram](./media/dev-container.png)
 
 ## Specification
+In this challenge exercise, you'll need to open the `devcontainer` folder and update the `devcontainer.json` JSON file to add the GitHub Copilot extension.
 
-In this challenge exercise, you need to update the existing code to support an option to terminate the gameplay if a nondirectional character is entered. You also want to terminate the game if the terminal window was resized. You need to locate the correct methods for your code to use.
+- Codespaces identify the extensions that should be installed by the Visual Studio Code marketplace `id`.
+- The GitHub Copilot extension identification is `GitHub.copilot`.
 
-### Terminate on resize
-
-This feature must:
-
-- Determine if the terminal was resized before allowing the game to continue
-- Clear the Console and end the game if the terminal was resized
-- Display the following message before ending the program:
-    `Console was resized. Program exiting.`
-
-### Add optional termination 
-
-- Modify the existing `Move` method to support an optional parameter
-- If enabled, the optional parameter should detect nondirectional key input
-- If nondirectional input is detected, allow the game to terminate
+By adding the GitHub Copilot extension to this file, you're ensuring that it is installed in the development container and available for use in the Codespace.
 
 ## Check your work
 
-To validate that your code satisfies the specified requirements, complete the following steps:
+1. Access your Codespaces and open the `app.py` file in Visual Studio Code.
+2. Start typing the comment:
 
-1. Enable the optional parameter.
-
-1. Use Visual Studio Code to build and run your app.
-
-    > [!NOTE]
-    > You can exit the verification test before completing all of the verification steps if see a result that does not satisfy the specification requirements. To force an exit from the running program, in the Terminal panel, press **Ctrl-C**. After exiting the running app, complete the edits that you believe will address the issue you are working on, save your updates to the Program.cs file, and then re-build and run your code.
-
-1. At the Terminal command prompt, resize the window. 
-
-1. Enter a directional key.
-
-1. Verify that the program ends after displaying the following message:
-
-    ```Output
-    Console was resized. Program exiting.
+    ```python
+    # write 'hello world' to the console
     ```
 
-1. Run the app again.
+3. GitHub Copilot should complete the code for you. The result should be similar to the following:
 
-1. At the Terminal command prompt, press directional keys to move the player.
+    ```python
+    # write 'hello world' to the console
+    print('hello world')
+    ```
 
-1. Press a nondirectional key.
+4. Run the application with the `python app.py` command in the terminal and check if the result is similar to the following:
 
-1. Verify that the program ends.
+    ```bash
+    hello world
+    ```
 
-1. Disable the optional parameter, then build and run the app.
-
-1. At the Terminal command prompt, press directional keys to move the player.
-
-1. Press a nondirectional key.
-
-1. Verify that the program continues.
-
-1. Resize the Terminal window.
-
-1. Verify that the program ends.
-
-Once you've validated the results for this exercise, proceed to the next exercise in this challenge.
+After validating the results of this exercise, proceed to the next exercise in this challenge.
