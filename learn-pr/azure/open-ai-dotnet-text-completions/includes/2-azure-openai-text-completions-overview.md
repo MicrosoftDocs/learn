@@ -72,33 +72,33 @@ Sentiment classifications:
 1.
 ```
 
-After showing the API 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it is supposed to output the classified sentiments.
+After showing the model 4 examples of a sentence classified by sentiment, we then provide it a list of examples and then a list of sentiment ratings with the same number index. The API is able to pick up from this how it is supposed to output the classified sentiments.
 
-And that leads us to what we want the API to do: we give it 5 sentiments for it to classify and then it should output the classification of each in an ordered list.
+And that leads us to what we want the model to do: we give it 5 sentiments for it to classify and then it should output the classification of each in an ordered list.
 
-This allows the API to rate five (and even more) examples in just one API call.
+This allows the model to rate five (and even more) examples in just one call to it.
 
-You can begin to see how the prompt, or the text passed to the API is the programming language.
+You can begin to see how the prompt, or the text passed to the model is the programming language.
 
 ### Generation
 
-One of the most powerful yet simplest tasks you can accomplish with the API is generating new ideas or versions of input. You can give the API a list of a few story ideas and it tries to add to that list. We've seen it create business plans, character descriptions and marketing slogans just by providing it a handful of examples.
+One of the most powerful yet simplest tasks you can accomplish with the various GPT models is generating new ideas or versions of input. You can give the model a list of a few story ideas and it tries to add to that list. We've seen it create business plans, character descriptions and marketing slogans just by providing it a handful of examples.
 
 ### Conversation
 
-The API is extremely adept at carrying on conversations with humans and even with itself. With just a few lines of instruction, we've seen the API perform as a customer service chatbot that intelligently answers questions without ever getting flustered or a wise-cracking conversation partner that makes jokes and puns.
+The model is extremely adept at carrying on conversations with humans and even with itself. With just a few lines of instruction, we've seen the model perform as a customer service chatbot that intelligently answers questions without ever getting flustered or a wise-cracking conversation partner that makes jokes and puns.
 
 ### Transformation
 
-The API is a language model that is familiar with a variety of ways that words and characters can be used to express information. This ranges from natural language text to code and languages other than English. The API is also able to understand content on a level that allows it to summarize, convert and express it in different ways.
+The model is a language model that is familiar with a variety of ways that words and characters can be used to express information. This ranges from natural language text to code and languages other than English. The model is also able to understand content on a level that allows it to summarize, convert and express it in different ways.
 
 #### Translation
 
-The API already has a grasp of many languages, such as French, so you do not need to teach it. Instead you just need to provide it enough examples of the translation in the prompt so it understands that it is translating from one language to another.
+The model already has a grasp of many languages, such as French, so you do not need to teach it. Instead you just need to provide it enough examples of the translation in the prompt so it understands that it is translating from one language to another.
 
 #### Conversion
 
-In this example we convert the name of a movie into emoji. This shows the adaptability of the API to picking up patterns and working with other characters.
+In this example we convert the name of a movie into emoji. This shows the adaptability of the model to picking up patterns and working with other characters.
 
 Here we expect the output to be an emoji representation of the Spider-Man movie.
 
@@ -116,11 +116,11 @@ Spider-Man:
 
 ### Summarization
 
-The API is able to grasp the context of text and rephrase it in different ways. For example, the API can take a block of text and create an explanation a child would understand.
+The model is able to grasp the context of text and rephrase it in different ways. For example, it can take a block of text and create an explanation a child would understand.
 
 ### Completion
 
-While all prompts result in completions, it can be helpful to think of text completion as its own task in instances where you want the API to pick up where you left off. For example, if given this prompt, the API will continue the train of thought about vertical farming.
+While all prompts result in completions, it can be helpful to think of text completion as its own task in instances where you want the model to pick up where you left off. For example, if given this prompt, the model will continue the train of thought about vertical farming.
 
 ```
 Vertical farming provides a novel solution for producing food locally, reducing transportation costs and
@@ -128,13 +128,13 @@ Vertical farming provides a novel solution for producing food locally, reducing 
 
 ### Factual responses
 
-The API has a lot of knowledge that it's learned from the data it was trained on. It also has the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of the API making up an answer.
+Large language models (LLMs) have a lot of knowledge that they've learned from the data they trained on. They also has the ability to provide responses that sound real but are in fact made up. There are two ways to limit the likelihood of LLMs making up an answer.
 
-**1. Provide a ground truth for the API** If you provide the API with a body of text to answer questions about (like a Wikipedia entry) it is less likely to confabulate a response.
+**1. Provide a ground truth for the API** If you provide the model with a body of text to answer questions about (like a Wikipedia entry) it is less likely to confabulate a response.
 
-**2. Use a low probability and show the API how to say "I don't know"** If the API understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it is less inclined to make up answers.
+**2. Use a low probability and show the API how to say "I don't know"** If the model understands that in cases where it's less certain about a response that saying "I don't know" or some variation is appropriate, it is less inclined to make up answers.
 
-In this example, we give the API examples of questions and answers it knows and then examples of things it wouldn't know and provide question marks. We also set the probability to zero so the API is more likely to respond with a "?" if there's any doubt.
+In this example, we give the model examples of questions and answers it knows and then examples of things it wouldn't know and provide question marks. We also set the probability to zero so the model is more likely to respond with a "?" if there's any doubt.
 
 ```
 Q: Who is Batman?

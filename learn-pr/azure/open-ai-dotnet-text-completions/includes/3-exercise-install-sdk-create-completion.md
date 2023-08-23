@@ -98,6 +98,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
 1. Open the project in VS Code or Visual Studio.
 1. In the **Program.cs** file, delete all the existing code.
 1. Add `using Azure.AI.OpenAI;` to the top of **Program.cs**.
+1. Add `using Azure;` to the top of **Program.cs**.
 1. Add in three class-level variables that hold references to the Azure OpenAI resource's endpoint, the primary API key, and the name of the model you deployed.
 
     ```csharp
@@ -111,7 +112,7 @@ Next up we want to create a bare bones .NET Console application and add the Azur
 
     ```csharp
     var endpoint = new Uri(openAIEndpoint);
-    var credentials = new Azure.AzureKeyCredential(openAIAPIKey);
+    var credentials = new AzureKeyCredential(openAIAPIKey);
     var openAIClient = new OpenAIClient(endpoint, credentials);
     ```
 
