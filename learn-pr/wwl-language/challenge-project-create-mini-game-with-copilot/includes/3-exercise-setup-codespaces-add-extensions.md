@@ -18,7 +18,7 @@ The diagram taken directly from the official [Visual Studio Code docs](https://c
 
 In this challenge exercise, you need to open the `devcontainer` folder and update the `devcontainer.json` JSON file to add the GitHub Copilot extension.
 
-- Codespaces identify the extensions requered using their Visual Studio Code marketplace `id`.
+- Codespaces identify the extensions required using their Visual Studio Code marketplace `id`.
 - The GitHub Copilot extension identification is `GitHub.copilot`.
 
 By adding the GitHub Copilot extension to this file, you're ensuring that it's installed in the development container and available for use in the Codespace.
