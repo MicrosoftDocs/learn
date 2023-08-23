@@ -20,7 +20,7 @@ quiz:
       explanation: "Incorrect. The random module is used to generate random possibilities based in previous choices."
     - content: "Be the user's opponent."
       isCorrect: true
-      explanation: "Correct! The random module is used to generate random numbers, in this case, the random module is used to generate a random choice for the computer, which will be the opponent of the user."
+      explanation: "Correct! The random module is used to generate random numbers, in this case, the random module is used to generate a random choice for the computer become the opponent of the user."
     - content: "Calculate the score of the game."
       isCorrect: false
       explanation: "Incorrect. The random module is used to generate random possibilities based in previous choices."
@@ -28,7 +28,7 @@ quiz:
     choices:
     - content: "Put the user's option in lowercase."
       isCorrect: true
-      explanation: "Correct! The lower method is used to put the user's input in lowercase, so that the user can type the option in uppercase or lowercase and the program will recognize it."
+      explanation: "Correct! The lower method is used to put the user's input in lowercase, so that the user can type the option in uppercase or lowercase."
     - content: "Calculate the score of the game."
       isCorrect: false
       explanation: "Incorrect. The lower method is used to manipulate the user's input and not mathematical operations or list creation."
