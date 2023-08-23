@@ -110,7 +110,9 @@ In this section, you'll connect *SceneManager*, *DataManager*, and *RootMenu* to
 
     :::image type="content" source="../media/scene-controller.png" alt-text="Screenshot of Unity with SceneController configured." lightbox="../media/scene-controller.png":::
 
-6. Now your scene is ready for the upcoming tutorials. Don't forget to save it to your project.
+6. In the Hierarchy window, select the **MRTK XR Rig** object. Ensure that the **MRTK Speech** child object is enabled. This will allow you to open the menu by saying 'Open Menu'. 
+
+7. Now your scene is ready for the upcoming tutorials. Don't forget to save it to your project.
 
 ## Prepare project build pipeline
 
