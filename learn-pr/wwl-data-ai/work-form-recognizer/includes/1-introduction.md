@@ -12,7 +12,7 @@ Consider some of the instances when a person needs to process form data:
 
 Without AI services, people need to manually sort through form documents to identify important information and then manually reenter data to record it. Some may also need to complete these tasks in real-time with a customer. 
 
-Azure Document Intelligence services provide the building blocks for automation by using intelligent services to extract data at scale and with accuracy. *Azure Azure Document Intelligence* is a Vision API that extracts key-value pairs and table data from form documents.
+Azure Document Intelligence services provide the building blocks for automation by using intelligent services to extract data at scale and with accuracy. *Azure Document Intelligence* is a Vision API that extracts key-value pairs and table data from form documents.
 
 **Uses of the Azure Document Intelligence service include**: 
 - Process automation 

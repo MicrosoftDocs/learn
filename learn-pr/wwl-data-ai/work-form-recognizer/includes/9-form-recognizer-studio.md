@@ -14,14 +14,14 @@ The Azure Document Intelligence Studio currently supports the following projects
 ### Build Document analysis model projects
 To extract text, tables, structure, key-value pairs, and named entities with document analysis models:
 
-- Create a Azure Document Intelligence or Azure AI Services resource
+- Create an Azure Document Intelligence or Azure AI Services resource
 - Select either "Read", "Layout", or "General Documents" under the Document analysis models category 
 - Analyze your document. You will need your Azure Document Intelligence or Azure AI service endpoint and key.
 
 ### Build prebuilt model projects
 To extract data from common forms with prebuilt models:
 
-- Create a Azure Document Intelligence or Azure AI Services resource
+- Create an Azure Document Intelligence or Azure AI Services resource
 - Select one of the "prebuilt models" including W-2s, Invoices, Receipts, ID documents, Health insurance, vaccination, and business cards.
 - Analyze your document. You will need your Azure Document Intelligence or Azure AI service endpoint and key.
 
@@ -32,7 +32,7 @@ When you use Azure Document Intelligence Studio to build custom models, the **oc
 
 To train a custom model and use it to extract data with custom models:
 
-- Create a Azure Document Intelligence or Azure AI Services resource
+- Create an Azure Document Intelligence or Azure AI Services resource
 - Collect at least 5-6 sample forms for training and upload them to your storage account container.
 - Configure cross-domain resource sharing (CORS). CORS enables Azure Document Intelligence Studio to store labeled files in your storage container.
 - Create a custom model project in Azure Document Intelligence Studio. You will need to provide configurations linking your storage container and Azure Document Intelligence or Azure AI Service resource to the project.

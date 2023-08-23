@@ -2,7 +2,7 @@
 uid: learn.wwl.work-with-form-recognizer
 metadata:
   title: Extract data from forms with Azure Document Intelligence
-  description: "Azure Document Intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Azure Document Intelligence vision API."
+  description: "Azure Document Intelligence extracts data at scale to enable the submission of documents in real time, at scale, with accuracy. This module gives users the tools to use the Azure Document Intelligence vision API."
   ms.date: 05/17/2022
   author: wwlpublish
   ms.author: sheryang
@@ -10,7 +10,7 @@ metadata:
   ms.service: applied-ai-services
   ms.subservice: forms-recognizer
 title: Extract data from forms with Azure Document Intelligence
-summary: Azure Document Intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Azure Document Intelligence* Azure AI service.
+summary: Azure Document Intelligence uses machine learning technology to identify and extract key-value pairs and table data from form documents with accuracy, at scale. This module teaches you how to use the *Azure Document Intelligence* Azure AI service.
 abstract: |
   In this module, you'll learn how to:
   - Identify how Azure Document Intelligence's layout service, prebuilt models, and custom service can automate processes

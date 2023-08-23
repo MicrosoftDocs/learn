@@ -11,7 +11,7 @@ You can access Azure Document Intelligence services via:
 - A **Azure Document Intelligence resource**: a single-service subscription key (used only with a specific Azure AI Service) 
  
 >[!NOTE]
->Create a Azure AI Services resource if you plan to access multiple Azure AI services under a single endpoint/key. For Azure Document Intelligence access only, create a Azure Document Intelligence resource. Please note that you'll need a single-service resource if you intend to use Azure Active Directory authentication.
+>Create an Azure AI Services resource if you plan to access multiple Azure AI services under a single endpoint/key. For Azure Document Intelligence access only, create an Azure Document Intelligence resource. Please note that you'll need a single-service resource if you intend to use Azure Active Directory authentication.
 
 You can subscribe to a service in the Azure portal or with the Azure Command Line Interface (CLI). You can learn more about the CLI commands [here](/cli/azure/cognitiveservices/account?view=azure-cli-latest#commands). 
 

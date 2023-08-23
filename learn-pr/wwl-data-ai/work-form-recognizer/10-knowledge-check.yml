@@ -16,7 +16,7 @@ content: |
   [!include[](includes/10-knowledge-check.md)]
 quiz:
   questions:
-  - content: "A person plans to use a Azure Document Intelligence prebuilt invoice model. To extract form data using the model, what are two calls they need to make to the REST API?"
+  - content: "A person plans to use an Azure Document Intelligence prebuilt invoice model. To extract form data using the model, what are two calls they need to make to the REST API?"
     choices:
     - content: "Train Model and Get Model Labels"
       isCorrect: false
@@ -26,7 +26,7 @@ quiz:
       explanation: "Correct: The Analyze Invoice function starts the form analysis and returns a result ID, which they can pass in a subsequent call to the Get Analyze Invoice Result function to retrieve the results."
     - content: "Create Azure Document Intelligence and Get Analyze Invoice Result"
       isCorrect: false
-      explanation: "Incorrect: While they do need to create a Azure Document Intelligence or Azure AI Service resource to use Azure Document Intelligence services, Create Azure Document Intelligence is not one of the REST API calls used to extract data."
+      explanation: "Incorrect: While they do need to create an Azure Document Intelligence or Azure AI Service resource to use Azure Document Intelligence services, Create Azure Document Intelligence is not one of the REST API calls used to extract data."
   - content: "A person needs to build an application that submits expense claims and extracts the merchant, date, and total from scanned receipts. What's the **best** way to do this?"
     choices:
     - content: "Use the Read API of the Computer Vision service."
