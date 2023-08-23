@@ -52,6 +52,6 @@ Congratulations if you did well in this challenge exercise! You've created a Pyt
 
 To continue learning, you can explore new Python learning resources on Microsoft Learn:
 
-- [Build real world applications with Python](https://docs.microsoft.com/learn/paths/python-language/)
-- [Host a web application with Azure App Service](https://docs.microsoft.com/learn/paths/host-a-web-application-with-azure-app-service/)
-- [Build a machine learning model with Python](https://docs.microsoft.com/learn/paths/build-python-machine-learning-model-fundamentals/)
+- [Build real world applications with Python](/learn/paths/python-language/?WT.mc_id=academic-105496-cyzanon)
+- [Host a web application with Azure App Service](/learn/paths/host-a-web-application-with-azure-app-service/?WT.mc_id=academic-105496-cyzanon)
+- [Build a machine learning model with Python](/learn/paths/build-python-machine-learning-model-fundamentals/?WT.mc_id=academic-105496-cyzanon)
