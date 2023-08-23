@@ -1,4 +1,3 @@
-
 Once you understand the basic Git commands, you can start using Git as a source and version control platform. If you’re working by yourself, or as part of a small team where everyone has their own files that they’re responsible for, you may not even need to go much past the basic Git commands. However, for more complex repositories, working together with multiple people on the same branch, and managing the history of branches, you’ll need a few more advanced Git commands in your toolbelt.
 
 ## git pull

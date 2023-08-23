@@ -1,4 +1,3 @@
-
 Reviewing all of the possible Git commands is overwhelming. There are over 100 commands, and even trying to keep track of them, much less know how to use them correctly, is daunting.
 
 While all of the commands have a use, you can effectively use Git for collaboration and development with a handful of basic commands. Having an understanding of how and when to use these basic commands will get you headed in the right direction.
@@ -77,7 +76,7 @@ To create a new branch based on the current branch you’re working within, you 
 
 ## git checkout
 
-`git checkout` lets you quickly change between different branches in your Git repository. When you’re working “within” a branch, all of the files you access will be as they are in that branch. When you change branches, the content of the files on your computer changes to match the branch you to which you changed.
+`git checkout` lets you quickly change between different branches in your Git repository. When you’re working “within” a branch, all of the files you access will be as they are in that branch. When you change branches, the content of the files on your computer changes to match the branch to which you changed.
 
 If you’re working on a new feature, and then need to go work on bugs for a while, you might have to:
 
