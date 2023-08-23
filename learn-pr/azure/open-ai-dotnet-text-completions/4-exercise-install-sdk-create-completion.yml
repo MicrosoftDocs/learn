@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.open-ai-dotnet-text-completions.3-exercise-install-sdk-create-completion
+uid: learn.azure.open-ai-dotnet-text-completions.4-exercise-install-sdk-create-completion
 title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
 metadata:
   title: Exercise - Install the .NET SDK for Azure OpenAI and create your first app
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/3-exercise-install-sdk-create-completion.md)]
+  [!include[](includes/4-exercise-install-sdk-create-completion.md)]

@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.open-ai-dotnet-text-completions.4-improve-completion-quality
+uid: learn.azure.open-ai-dotnet-text-completions.5-improve-completion-quality
 title: Understand prompts to improve completion quality
 metadata:
   title: Understand prompts to improve completion quality
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/4-improve-completion-quality.md)]
+  [!include[](includes/5-improve-completion-quality.md)]

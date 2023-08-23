@@ -155,5 +155,3 @@ A: George Lucas is American film director and producer famous for creating Star 
 Azure OpenAI Service provides REST API access to OpenAI's powerful language models including the GPT-3.5 and GPT-4 model series. It also gives you the security and enterprise features you've come to rely from the Azure cloud.
 
 One of the most useful features from the OpenAI language models is text completion. You pass in a **prompt** or a plain language description of what you want the model to do, and it can perform tasks such as text classification, text generation, or text summarization.
-
-In the next unit, we'll create our .NET application, the Azure OpenAI resource, and complete our first text completion.

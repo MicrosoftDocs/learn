@@ -1,5 +1,5 @@
 ### YamlMime:ModuleUnit
-uid: learn.azure.open-ai-dotnet-text-completions.5-exercise-improve-completion-quality
+uid: learn.azure.open-ai-dotnet-text-completions.6-exercise-improve-completion-quality
 title: Exercise - Improve completion quality
 metadata:
   title: Use prompt engineering to improve the text completion result quality
@@ -11,4 +11,4 @@ metadata:
   ms.prod: learning-azure
 durationInMinutes: 2
 content: |
-  [!include[](includes/5-exercise-improve-completion-quality.md)]
+  [!include[](includes/6-exercise-improve-completion-quality.md)]
