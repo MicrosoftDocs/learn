@@ -34,6 +34,34 @@ You can think of all the possible properties in the package.json file as belongi
 - **Dependencies**: There are two properties that describe the libraries being used: `dependencies` and `devDependencies`. Later in the module, you'll learn how to use these properties to install, update, and separate dependencies.
 - **Scripts**: In this section, you can list scripts for project tasks, such as start, build, test, and lint.
 
+## Module Systems
+
+Node.js has two module systems: CommonJS modules and ECMAScript modules. 
+
+### CommonJS modules
+
+CommonJS modules are the original way to package JavaScript code for Node.js. Node.js also supports the ECMAScript modules standard used by browsers and other JavaScript runtimes.
+
+To include code from other files in CommonJS, use the **require** function.
+
+```javascript
+const circle = require('./circle.js');
+console.log(`The area of a circle of radius 4 is ${circle.area(4)}`); 
+```
+
+### ECMAScript modules 
+
+Authors can tell Node.js to use the ECMAScript (ES6) modules loader via the .mjs file extension, the package.json "type" field, or the --input-type flag. Outside of those cases, Node.js will use the CommonJS module loader. See Determining module system for more details.
+
+ECMAScript modules are the official standard format to package JavaScript code for reuse. Modules are defined using a variety of import and export statements.
+
+To include code from other files in ES6, use the **import** function.
+
+```javascript
+import { area } from './circle.js';
+console.log(`The area of a circle of radius 4 is ${circle.area(4)}`); 
+```
+
 ### Scripts for managing your project
 
 You're likely to want to have a way to run, test, and build any project, whether by using Node.js or not. The Node.js runtime recognizes this need and provides guidance about how to name your scripts. The idea is to ensure that all Node.js projects use consistent script names. It's a better developer experience to be able to move among Node.js projects and quickly orient yourself because you see a consistent set of actions. Various tools for DevOps and instrumentation can take advantage of this naming consistency.
